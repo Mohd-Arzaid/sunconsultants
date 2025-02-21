@@ -7,7 +7,7 @@ function App() {
     <Navbar/>
     <HeroSection/>
     <div>
-     Just for checking branch
+     Just for checking branch updated
     </div>
 
   </div>
