@@ -7,10 +7,7 @@ function App() {
     <Navbar/>
     <HeroSection/>
     <div>
-      hyy
-      djkbcwe
-      wqd
-      ef
+     Just for checking branch
     </div>
 
   </div>
