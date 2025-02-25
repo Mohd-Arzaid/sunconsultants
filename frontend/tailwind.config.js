@@ -7,6 +7,12 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			roboto: ['Roboto', 'serif'],
+			inter: ['Inter', 'serif'],
+			playfair: ['Playfair Display', 'serif'],
+			poppins: ['Poppins', 'serif'],
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
