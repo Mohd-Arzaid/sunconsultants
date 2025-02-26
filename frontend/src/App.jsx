@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <main className="relative pb-24 pt-12  custom-radial-gradient overflow-x-hidden ">
-         {/* Background gradient */}
+        {/* Background gradient */}
         <div className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-2"></div>
 
         <div className="max-w-[84rem] w-full mx-auto ">
@@ -17,7 +17,7 @@ function App() {
               <img
                 src={HeroImage}
                 alt="Hero Image "
-                className="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+                className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)]"
               />
               <div className="absolute inset-0 flex items-center justify-center transform translate-x-[575px]">
                 <div className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
@@ -39,23 +39,26 @@ function App() {
 
               <div className="absolute shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] flex inset-0 w-[160px] h-[80px] transform translate-x-[70px] translate-y-[475px]">
                 <div className="w-full h-full bg-white flex items-center justify-center ">
-                  
                   <button>
-                  <img src={ArrowOne} alt="Arrow One" />
-                    </button>
+                    <img src={ArrowOne} alt="Arrow One" />
+                  </button>
                 </div>
-                <div className="w-full h-full bg-[#7CC8E2] flex items-center justify-center ">
+                <div className="w-full h-full bg-[#64bfdd] flex items-center justify-center ">
                   <button>
-
-                  <img src={ArrowTwo} alt="Arrow Two" />
+                    <img src={ArrowTwo} alt="Arrow Two" />
                   </button>
                 </div>
               </div>
 
-              <div className="absolute z-10 bg-red-500 w-[219px] h-[27px]">
-              
-              </div>
+              <div className=" flex items-center justify-between absolute inset-0  w-[219px] h-[27px] transform translate-x-[553.5px] translate-y-[525px]">
+                <div className="font-poppins text-[#313131] text-xl">01</div>
+                <div className="w-[135px] h-[10px] bg-white">
+                  <div className="w-[52px] h-full bg-[#64bfdd]"></div>
 
+                  <div></div>
+                </div>
+                <div className="font-poppins text-[#313131] text-xl">10</div>
+              </div>
             </div>
           </div>
         </div>
