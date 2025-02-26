@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <div className="z-[50] sticky top-0 w-full border-b bg-white border-b border-neutral-200 ">
+    <div className="z-[50] sticky top-0 w-full border-b bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
       <div className="flex items-center justify-between px-8 h-20 max-w-[88rem] mx-auto">
         <div className=" selection:bg-emerald-600 flex items-center justify-center space-x-2.5 
         text-2xl font-bold py-6 text-center text-neutral-600 mr-10">
