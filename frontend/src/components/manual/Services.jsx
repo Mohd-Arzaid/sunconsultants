@@ -1,11 +1,11 @@
 import { Separator } from "../ui/separator";
-import BISImage from "../../assets/images/BIS.jpg"
-import CDSCO from "../../assets/images/CDSCO.jpg"
-import BISCRS from "../../assets/images/BISCRS.jpg"
-import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg"
-import EPRCertificate from "../../assets/images/EPRCertificate.jpg"
-import LMPC from "../../assets/images/LMPC.jpg"
-import ISIMark from "../../assets/images/ISIMark.jpg"
+import BISImage from "../../assets/images/BIS.jpg";
+import CDSCO from "../../assets/images/CDSCO.jpg";
+import BISCRS from "../../assets/images/BISCRS.jpg";
+import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
+import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
+import LMPC from "../../assets/images/LMPC.jpg";
+import ISIMark from "../../assets/images/ISIMark.jpg";
 
 const Services = () => {
   return (
@@ -25,69 +25,93 @@ const Services = () => {
         </div>
 
         <div className="mt-24 grid grid-cols-4 gap-x-10 gap-y-24">
-            <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <img src={BISImage} alt="BIS" className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain" />
+          <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <img
+              src={BISImage}
+              alt="BIS"
+              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+            />
             <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-            BIS Mark (ISI License)
-            for Foreign Manufacture
+              BIS Mark (ISI License) for Foreign Manufacture
             </p>
-            </div>
+          </div>
 
-            <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <img src={CDSCO} alt="CDSCO" className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain" />
+          <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <img
+              src={CDSCO}
+              alt="CDSCO"
+              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+            />
             <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-            CDSCO Registration
-            Certification
+              CDSCO Registration Certification
             </p>
-            </div>
+          </div>
 
-            <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <img src={BISCRS} alt="BISCRS" className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain" />
+          <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <img
+              src={BISCRS}
+              alt="BISCRS"
+              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+            />
             <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-            BIS (CRS)
-            Registration
+              BIS (CRS) Registration
             </p>
-            </div>
+          </div>
 
-            <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <img src={PlasticWasteManagement} alt="PlasticWasteManagement" className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain" />
+          <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <img
+              src={PlasticWasteManagement}
+              alt="PlasticWasteManagement"
+              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+            />
             <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-            Plastic Waste 
-            Management
+              Plastic Waste Management
             </p>
-            </div>
+          </div>
 
-            <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <img src={EPRCertificate} alt="EPRCertificate" className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain" />
+          <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <img
+              src={EPRCertificate}
+              alt="EPRCertificate"
+              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+            />
             <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-            EPR Certificate 
-            Consultants
+              EPR Certificate Consultants
             </p>
-            </div>
+          </div>
 
-            <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <img src={LMPC} alt="LMPC" className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain" />
+          <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <img
+              src={LMPC}
+              alt="LMPC"
+              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+            />
             <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-            LMPC Certificate 
-            Consultants
+              LMPC Certificate Consultants
             </p>
-            </div>
+          </div>
 
-            <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <img src={BISImage} alt="BIS" className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain" />
+          <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <img
+              src={BISImage}
+              alt="BIS"
+              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+            />
             <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-            BIS Registration
-            Certificate
+              BIS Registration Certificate
             </p>
-            </div>
+          </div>
 
-            <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <img src={ISIMark} alt="ISIMark" className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain" />
+          <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <img
+              src={ISIMark}
+              alt="ISIMark"
+              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+            />
             <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-            ISI MARK (BIS)
-            for Indian Manufactures
+              ISI MARK (BIS) for Indian Manufactures
             </p>
-            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import ArrowTwo from "../../assets/images/ArrowTwo.png";
 const Hero = () => {
   return (
       <main className="relative pb-24 pt-12  custom-radial-gradient overflow-x-hidden ">
+      
         {/* Background gradient */}
         <div className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-2"></div>
 
