@@ -1,12 +1,14 @@
 import Navbar from "./common/Navbar";
 import HeroImage from "./assets/images/PlaceHolder.png";
-import { Button } from "./components/ui/button";
+import ArrowOne from "./assets/images/ArrowOne.png";
+import ArrowTwo from "./assets/images/ArrowTwo.png";
+
 function App() {
   return (
     <>
       <Navbar />
-      <div className="relative pb-20 pt-16  custom-radial-gradient overflow-x-hidden ">
-        {/* gradient div */}
+      <main className="relative pb-24 pt-12  custom-radial-gradient overflow-x-hidden ">
+         {/* Background gradient */}
         <div className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-2"></div>
 
         <div className="max-w-[84rem] w-full mx-auto ">
@@ -32,20 +34,34 @@ function App() {
                     manufacturers in obtaining essential government
                     certifications for the Indian market.
                   </div>
-                  {/* <div className="flex w-full justify-end items-center">
-                    <Button className="px-5 py-6 text-lg bg-[#16C9BF] font-poppins tracking-wide hover:bg-[#16C9BF]/80 ">
-                      Book An Appointment
-                    </Button>
-                  </div> */}
-        
                 </div>
               </div>
+
+              <div className="absolute shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] flex inset-0 w-[160px] h-[80px] transform translate-x-[70px] translate-y-[475px]">
+                <div className="w-full h-full bg-white flex items-center justify-center ">
+                  
+                  <button>
+                  <img src={ArrowOne} alt="Arrow One" />
+                    </button>
+                </div>
+                <div className="w-full h-full bg-[#7CC8E2] flex items-center justify-center ">
+                  <button>
+
+                  <img src={ArrowTwo} alt="Arrow Two" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="absolute z-10 bg-red-500 w-[219px] h-[27px]">
+              
+              </div>
+
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
-      <div>hyy</div>
+      <div className="h-28 bg-[#6DC5E3]"></div>
     </>
   );
 }
