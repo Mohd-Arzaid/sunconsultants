@@ -7,6 +7,7 @@ import LogoTwo from "./assets/images/TwoLogo.png";
 import LogoThree from "./assets/images/ThreeLogo.png";
 import LogoFour from "./assets/images/FourLogo.png";
 import LogoFive from "./assets/images/FiveLogo.png";
+import LogoSix from "./assets/images/SixLogo.png";
 import { motion } from "motion/react";
 
 function App() {
@@ -91,11 +92,29 @@ function App() {
               <img src={LogoThree} alt="Logo Three" />
               <img src={LogoFour} alt="Logo Four" />
               <img src={LogoFive} alt="Logo Five" />
+
+              <img src={LogoSix} alt="Logo Six" />
+
               <img src={LogoOne} alt="Logo One" />
               <img src={LogoTwo} alt="Logo Two" />
               <img src={LogoThree} alt="Logo Three" />
               <img src={LogoFour} alt="Logo Four" />
               <img src={LogoFive} alt="Logo Five" />
+              <img src={LogoSix} alt="Logo Six" />
+
+              <img src={LogoOne} alt="Logo One" />
+              <img src={LogoTwo} alt="Logo Two" />
+              <img src={LogoThree} alt="Logo Three" />
+              <img src={LogoFour} alt="Logo Four" />
+              <img src={LogoFive} alt="Logo Five" />
+              <img src={LogoSix} alt="Logo Six" />
+                      
+              <img src={LogoOne} alt="Logo One" />
+              <img src={LogoTwo} alt="Logo Two" />
+              <img src={LogoThree} alt="Logo Three" />
+              <img src={LogoFour} alt="Logo Four" />
+              <img src={LogoFive} alt="Logo Five" />
+              <img src={LogoSix} alt="Logo Six" />
             </motion.div>
           </div>
         </div>
