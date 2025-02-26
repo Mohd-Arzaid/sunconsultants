@@ -7,6 +7,7 @@
 @tailwind utilities;
 
 
+
 .custom-radial-gradient {
   background: radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%);
 }

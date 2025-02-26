@@ -2,11 +2,18 @@ import Navbar from "./common/Navbar";
 import HeroImage from "./assets/images/PlaceHolder.png";
 import ArrowOne from "./assets/images/ArrowOne.png";
 import ArrowTwo from "./assets/images/ArrowTwo.png";
+import LogoOne from "./assets/images/OneLogo.png";
+import LogoTwo from "./assets/images/TwoLogo.png";
+import LogoThree from "./assets/images/ThreeLogo.png";
+import LogoFour from "./assets/images/FourLogo.png";
+import LogoFive from "./assets/images/FiveLogo.png";
+import { motion } from "motion/react";
 
 function App() {
   return (
     <>
       <Navbar />
+      {/* Hero Section */}
       <main className="relative pb-24 pt-12  custom-radial-gradient overflow-x-hidden ">
         {/* Background gradient */}
         <div className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-2"></div>
@@ -64,7 +71,35 @@ function App() {
         </div>
       </main>
 
-      <div className="h-28 bg-[#6DC5E3]"></div>
+      {/* Logo Section */}
+      <div className="h-28 bg-[#B9DEEB]">
+        <div className="max-w-[84rem] mx-auto h-full ">
+          <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+            <motion.div
+              animate={{
+                translateX: "-50%",
+              }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                ease: "linear",
+                repeatType: "loop",
+              }}
+              className="flex gap-14 pr-14 items-center justify-center flex-none"
+            >
+              <img src={LogoOne} alt="Logo One" />
+              <img src={LogoThree} alt="Logo Three" />
+              <img src={LogoFour} alt="Logo Four" />
+              <img src={LogoFive} alt="Logo Five" />
+              <img src={LogoOne} alt="Logo One" />
+              <img src={LogoTwo} alt="Logo Two" />
+              <img src={LogoThree} alt="Logo Three" />
+              <img src={LogoFour} alt="Logo Four" />
+              <img src={LogoFive} alt="Logo Five" />
+            </motion.div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
