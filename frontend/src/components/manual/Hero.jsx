@@ -1,4 +1,4 @@
-import HeroImage from "../../assets/images/PlaceHolder.png";
+import HeroImage from "../../assets/images/Placeholder.png";
 import ArrowOne from "../../assets/images/ArrowOne.png";        
 import ArrowTwo from "../../assets/images/ArrowTwo.png";
 
