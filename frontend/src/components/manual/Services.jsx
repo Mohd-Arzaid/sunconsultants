@@ -6,6 +6,7 @@ import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.j
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
 import LMPC from "../../assets/images/LMPC.jpg";
 import ISIMark from "../../assets/images/ISIMark.jpg";
+import { MagicCard } from "../magicui/magic-card";
 
 const Services = () => {
   return (
@@ -25,6 +26,8 @@ const Services = () => {
         </div>
 
         <div className="mt-24 grid grid-cols-4 gap-x-10 gap-y-24">
+       
+   
           <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <img
               src={BISImage}
@@ -35,6 +38,7 @@ const Services = () => {
               BIS Mark (ISI License) for Foreign Manufacture
             </p>
           </div>
+
 
           <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <img
