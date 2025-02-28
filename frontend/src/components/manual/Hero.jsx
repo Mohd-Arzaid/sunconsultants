@@ -1,8 +1,14 @@
 import HeroImage from "../../assets/images/Placeholder.png";
 import ArrowOne from "../../assets/images/ArrowOne.png";        
 import ArrowTwo from "../../assets/images/ArrowTwo.png";
+// import { ImagesSlider } from "../ui/images-slider";
 
 const Hero = () => {
+  // const images = [
+  //   "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   HeroImage
+  // ];
+  
   return (
       <main className="relative pb-24 pt-12  custom-radial-gradient overflow-x-hidden ">
       
@@ -15,8 +21,9 @@ const Hero = () => {
               <img
                 src={HeroImage}
                 alt="Hero Image "
-                className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)]"
+                className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover"
               />
+                {/* <ImagesSlider   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover" images={images}></ImagesSlider> */}
               <div className="absolute inset-0 flex items-center justify-center transform translate-x-[575px]">
                 <div className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                   <div className="relative max-w-96">

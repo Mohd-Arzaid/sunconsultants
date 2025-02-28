@@ -12,11 +12,14 @@ function App() {
      
       <Hero />
    
+
       <LogoTicker />
+
 
       <Services/>
 
       <Contact/>
+
 
       <LatestNews />
     </>
