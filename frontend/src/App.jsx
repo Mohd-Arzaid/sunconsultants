@@ -1,4 +1,5 @@
 import Navbar from "./common/Navbar";
+import Client from "./components/manual/Client";
 import Contact from "./components/manual/Contact";
 import Hero from "./components/manual/Hero";
 import LatestNews from "./components/manual/LatestNews";
@@ -9,19 +10,20 @@ function App() {
   return (
     <>
       <Navbar />
-     
+
       <Hero />
-   
 
       <LogoTicker />
 
+      <Services />
 
-      <Services/>
-
-      <Contact/>
-
+      <Contact />
 
       <LatestNews />
+
+      <Client/>
+    
+     
     </>
   );
 }
