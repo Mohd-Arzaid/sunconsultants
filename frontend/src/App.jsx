@@ -1,29 +1,17 @@
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./common/Navbar";
-import Client from "./components/manual/Client";
-import Contact from "./components/manual/Contact";
-import Hero from "./components/manual/Hero";
-import LatestNews from "./components/manual/LatestNews";
-import LogoTicker from "./components/manual/LogoTicker";
-import Services from "./components/manual/Services";
+import Home from "./pages/Home";
+import CDSCO from "./pages/CDSCO";
+
 
 function App() {
   return (
     <>
-      <Navbar />
-
-      <Hero />
-
-      <LogoTicker />
-
-      <Services />
-
-      <Contact />
-
-      <LatestNews />
-
-      <Client/>
-    
-     
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/cdsco-registration-certification" element={<CDSCO />} />
+    </Routes>
     </>
   );
 }
