@@ -31,7 +31,7 @@ const Navbar = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem >
-                <Link to="/">
+                <Link to="/cdsco-registration-certification">
                   <Button
                     variant="link"
                     className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
