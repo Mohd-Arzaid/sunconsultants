@@ -7,21 +7,55 @@ export default {
   ],
   theme: {
   	extend: {
-		animation: {
-			move: "move 5s linear infinite",
-		  },
-		  keyframes: {
-			move: {
-			  "0%": { transform: "translateX(-200px)" },
-			  "100%": { transform: "translateX(200px)" },
-			},
-		  },
-		fontFamily: {
-			roboto: ['Roboto', 'serif'],
-			inter: ['Inter', 'serif'],
-			playfair: ['Playfair Display', 'serif'],
-			poppins: ['Poppins', 'serif'],
-		  },
+  		animation: {
+  			move: 'move 5s linear infinite',
+  			marquee: 'marquee var(--duration) infinite linear',
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
+  		},
+  		keyframes: {
+  			move: {
+  				'0%': {
+  					transform: 'translateX(-200px)'
+  				},
+  				'100%': {
+  					transform: 'translateX(200px)'
+  				}
+  			},
+  			marquee: {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(calc(-100% - var(--gap)))'
+  				}
+  			},
+  			'marquee-vertical': {
+  				from: {
+  					transform: 'translateY(0)'
+  				},
+  				to: {
+  					transform: 'translateY(calc(-100% - var(--gap)))'
+  				}
+  			}
+  		},
+  		fontFamily: {
+  			roboto: [
+  				'Roboto',
+  				'serif'
+  			],
+  			inter: [
+  				'Inter',
+  				'serif'
+  			],
+  			playfair: [
+  				'Playfair Display',
+  				'serif'
+  			],
+  			poppins: [
+  				'Poppins',
+  				'serif'
+  			]
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
@@ -71,6 +105,6 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('tailwind-scrollbar-hide')],
 }
 

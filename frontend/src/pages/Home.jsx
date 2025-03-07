@@ -1,5 +1,6 @@
 import Client from "@/components/manual/Client";
 import Contact from "@/components/manual/Contact";
+import Countries from "@/components/manual/Countries";
 import Hero from "@/components/manual/Hero";
 import LatestNews from "@/components/manual/LatestNews";
 import LogoTicker from "@/components/manual/LogoTicker";
@@ -20,6 +21,10 @@ const Home = () => {
       <LatestNews />
 
       <Client />
+
+      <LogoTicker />
+      
+      <Countries/>
     </>
   );
 };

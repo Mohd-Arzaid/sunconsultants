@@ -6,6 +6,7 @@ import TestimonialImageThree from "../../assets/images/TestimonialImageThree.png
 import Vector from "../../assets/images/Vector.png";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState } from "react";
+import { BlurFade } from "../magicui/blur-fade";
 
 const Client = () => {
   const slideData = [
@@ -53,7 +54,7 @@ const Client = () => {
   };
 
   return (
-    <div className=" pt-10 pb-4 custom-radial-gradient overflow-x-hidden ">
+    <div className=" pt-10 pb-8 custom-radial-gradient overflow-x-hidden ">
       <div className="max-w-[88rem] px-8 w-full mx-auto overflow-hidden relative">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -90,11 +91,13 @@ const Client = () => {
               }}
             >
                 <div className="flex flex-col items-center justify-center gap-3">
+              
                   <img
                     src={slide.image}
                     className="rounded-[52px] w-[235px] h-[284.58px] object-cover"
                     alt="Testimonial"
                   />
+               
 
                   <div className="flex flex-col items-center justify-center">
                     <div className="text-[27px] font-semibold font-roboto text-black tracking-wide">
