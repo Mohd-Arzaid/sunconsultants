@@ -8,8 +8,15 @@ import Italy from "../../assets/images/Italy.png";
 import Colombia from "../../assets/images/Colombia.png";
 import Qatar from "../../assets/images/Qatar.png";
 import India from "../../assets/images/India.png";
+import { useState } from "react";
 
 const Countries = () => {
+  const [current, setCurrent] = useState(0);
+
+  const handlePreviousClick = () => {};
+
+  const handleNextClick = () => {};
+
   return (
     <div className="relative custom-radial-gradient  ">
       <div className=" max-w-[88rem] mx-auto w-full px-8">
@@ -33,27 +40,34 @@ const Countries = () => {
 
             <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
               <div className="flex gap-4 items-center ">
-                <div className="rounded-full w-[48px] h-[48px] flex items-center justify-center border-2 border-[#160E34]">
+                <button
+                  onClick={handlePreviousClick}
+                  className="rounded-full w-[48px] h-[48px] flex items-center justify-center border-2 border-[#160E34]"
+                >
                   <ChevronLeft />
-                </div>
+                </button>
 
-                <div className="rounded-full w-[48px] h-[48px] flex items-center justify-center bg-[#160E34] border-2 border-[#160E34]">
+                <button
+                  onClick={handleNextClick}
+                  className="rounded-full w-[48px] h-[48px] flex items-center justify-center bg-[#160E34] border-2 border-[#160E34]"
+                >
                   <ChevronRight className="text-white" />
-                </div>
+                </button>
               </div>
             </BoxReveal>
           </div>
 
-          <div className="w-full px-10 p-20 overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
-            <div className="flex gap-[22px] w-max">
-
-          
-
+          <div className="w-full  px-10 py-20 overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
+            <div className=" flex gap-[22px] w-max">
               {/* Thailand */}
 
               <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
-                  <img src={Thailand} alt="Thailand"  className="w-full h-full object-cover"/>
+                  <img
+                    src={Thailand}
+                    alt="Thailand"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className=" mt-4 px-2  flex items-center justify-between w-full">
                   <span className="flex text-xl items-center font-bold justify-center gap-2">
@@ -72,7 +86,7 @@ const Countries = () => {
               {/* Vietnam */}
               <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
-                  <img src={Vietnam} alt="Thailand"  />
+                  <img src={Vietnam} alt="Thailand" />
                 </div>
                 <div className=" mt-4 px-2  flex items-center justify-between w-full">
                   <span className="flex text-xl items-center font-bold justify-center gap-2">
@@ -91,7 +105,7 @@ const Countries = () => {
               {/* Canada */}
               <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
-                  <img src={Canada} alt="Canada"  />
+                  <img src={Canada} alt="Canada" />
                 </div>
                 <div className=" mt-4 px-2  flex items-center justify-between w-full">
                   <span className="flex text-xl items-center font-bold justify-center gap-2">
@@ -185,9 +199,8 @@ const Countries = () => {
                 </div>
               </div>
 
-
-                  {/* India */}
-                  <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              {/* India */}
+              <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img src={India} alt="India" />
                 </div>
@@ -204,7 +217,6 @@ const Countries = () => {
                   </span>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
