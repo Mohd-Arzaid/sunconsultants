@@ -2,6 +2,12 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { BoxReveal } from "../magicui/box-reveal";
 import Thailand from "../../assets/images/Thailand.png";
 import Vietnam from "../../assets/images/Vietnam.png";
+import Canada from "../../assets/images/Canada.png";
+import China from "../../assets/images/China.png";
+import Italy from "../../assets/images/Italy.png";
+import Colombia from "../../assets/images/Colombia.png";
+import Qatar from "../../assets/images/Qatar.png";
+import India from "../../assets/images/India.png";
 
 const Countries = () => {
   return (
@@ -38,11 +44,17 @@ const Countries = () => {
             </BoxReveal>
           </div>
 
-          <div className="w-full px-10 p-20 overflow-hidden scrollbar-hide [mask-image:linear-gradient(to_right,black_90%,transparent)]">
+          <div className="w-full px-10 p-20 overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
             <div className="flex gap-[22px] w-max">
 
-              <div className="min-w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
-                <img src={Thailand} alt="Thailand" className="w-[384px] h-[284px] object-cover " />
+          
+
+              {/* Thailand */}
+
+              <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={Thailand} alt="Thailand"  className="w-full h-full object-cover"/>
+                </div>
                 <div className=" mt-4 px-2  flex items-center justify-between w-full">
                   <span className="flex text-xl items-center font-bold justify-center gap-2">
                     <Star
@@ -57,8 +69,11 @@ const Countries = () => {
                 </div>
               </div>
 
-              <div className="min-w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
-                <img src={Vietnam} alt="Thailand" className="object-cover " />
+              {/* Vietnam */}
+              <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={Vietnam} alt="Thailand"  />
+                </div>
                 <div className=" mt-4 px-2  flex items-center justify-between w-full">
                   <span className="flex text-xl items-center font-bold justify-center gap-2">
                     <Star
@@ -73,9 +88,11 @@ const Countries = () => {
                 </div>
               </div>
 
-
-              <div className="min-w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
-                <img src={Thailand} alt="Thailand" className="object-cover " />
+              {/* Canada */}
+              <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={Canada} alt="Canada"  />
+                </div>
                 <div className=" mt-4 px-2  flex items-center justify-between w-full">
                   <span className="flex text-xl items-center font-bold justify-center gap-2">
                     <Star
@@ -84,14 +101,110 @@ const Countries = () => {
                     />
 
                     <h1 className="tracking-widest text-[#160E34]  uppercase">
-                      Thailand
+                      Canada
+                    </h1>
+                  </span>
+                </div>
+              </div>
+
+              {/* China */}
+
+              <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={China} alt="China" />
+                </div>
+                <div className=" mt-4 px-2  flex items-center justify-between w-full">
+                  <span className="flex text-xl items-center font-bold justify-center gap-2">
+                    <Star
+                      className="  fill-current text-[#160E34] "
+                      size={20}
+                    />
+
+                    <h1 className="tracking-widest text-[#160E34]  uppercase">
+                      China
+                    </h1>
+                  </span>
+                </div>
+              </div>
+
+              {/* Italy */}
+              <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={Italy} alt="Italy" />
+                </div>
+                <div className=" mt-4 px-2  flex items-center justify-between w-full">
+                  <span className="flex text-xl items-center font-bold justify-center gap-2">
+                    <Star
+                      className="  fill-current text-[#160E34] "
+                      size={20}
+                    />
+
+                    <h1 className="tracking-widest text-[#160E34]  uppercase">
+                      Italy
+                    </h1>
+                  </span>
+                </div>
+              </div>
+
+              {/* Colombia */}
+              <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={Colombia} alt="Colombia" />
+                </div>
+                <div className=" mt-4 px-2  flex items-center justify-between w-full">
+                  <span className="flex text-xl items-center font-bold justify-center gap-2">
+                    <Star
+                      className="  fill-current text-[#160E34] "
+                      size={20}
+                    />
+
+                    <h1 className="tracking-widest text-[#160E34]  uppercase">
+                      Colombia
+                    </h1>
+                  </span>
+                </div>
+              </div>
+
+              {/* Qatar */}
+
+              <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={Qatar} alt="Qatar" />
+                </div>
+                <div className=" mt-4 px-2  flex items-center justify-between w-full">
+                  <span className="flex text-xl items-center font-bold justify-center gap-2">
+                    <Star
+                      className="  fill-current text-[#160E34] "
+                      size={20}
+                    />
+
+                    <h1 className=" tracking-widest text-[#160E34]  uppercase">
+                      Qatar
                     </h1>
                   </span>
                 </div>
               </div>
 
 
-            
+                  {/* India */}
+                  <div className="w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img src={India} alt="India" />
+                </div>
+                <div className=" mt-4 px-2  flex items-center justify-between w-full">
+                  <span className="flex text-xl items-center font-bold justify-center gap-2">
+                    <Star
+                      className="  fill-current text-[#160E34] "
+                      size={20}
+                    />
+
+                    <h1 className=" tracking-widest text-[#160E34]  uppercase">
+                      India
+                    </h1>
+                  </span>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
