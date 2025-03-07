@@ -20,7 +20,7 @@ const Countries = () => {
   return (
     <div className="relative custom-radial-gradient  ">
       <div className=" max-w-[88rem] mx-auto w-full px-8">
-        <div className="flex items-center  justify-between ">
+        <div className="flex items-center  justify-between gap-[18px] ">
           {/* Left Side */}
           <div className="max-w-[383px] flex flex-col gap-[30px] ">
             <div className="flex flex-col gap-[20px]">
@@ -57,7 +57,7 @@ const Countries = () => {
             </BoxReveal>
           </div>
 
-          <div className="w-full  px-10 py-20 overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
+          <div className="w-full px-[22px] py-20 overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
             <div className=" flex gap-[22px] w-max">
               {/* Thailand */}
 
