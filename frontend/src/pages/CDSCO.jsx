@@ -103,11 +103,17 @@ const CDSCO = () => {
             "Consulting",
             "FAQs",
           ].map((item) => (
-            <div key={item} className="relative cursor-pointer group">
-              <div className="text-base font-bold font-roboto tracking-wider text-blue-950 uppercase transition-colors duration-300 group-hover:text-blue-900">
+            <div key={item} className={`relative cursor-pointer group ${
+              item === "Overview" ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900" : ""
+            }`}>
+              <div className={`text-base font-bold font-roboto tracking-wider uppercase transition-colors duration-300 ${
+                item === "Overview" ? "text-blue-900" : "text-blue-950 group-hover:text-blue-900"
+              }`}>
                 {item}
               </div>
-              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+              {item !== "Overview" && (
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+              )}
             </div>
           ))}
         </div>
