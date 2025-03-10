@@ -76,9 +76,9 @@ const CDSCO = () => {
         </div>
       </div>
 
-      <div className="w-full  overflow-x-hidden py-12 ">
+      <div className="w-full custom-radial-gradient-3  overflow-x-hidden py-12 ">
         <div className="max-w-[88rem] flex gap-[48px] mx-auto px-12">
-          <div className="flex-1 ">
+          <div className="flex-1  ">
             <div className="flex w-full items-center gap-3">
               <span className="uppercase  font-poppins font-semibold text-[20px] text-[#008080]">
                 Overview
@@ -90,12 +90,12 @@ const CDSCO = () => {
               CDSCO License Details
             </h3>
 
-            <p className="font-medium font-poppins text-[20px]  text-[#996C6C]">
+            <p className="font-medium font-poppins text-[20px]  text-blue-950">
               CDSCO Registration can be obtained through online portal
               registration
             </p>
 
-            <div className=" mt-6 relative text-sm sm:text-xl text-zinc-500 tracking-wide mb-8 text-left max-w-full  leading-loose">
+            <div className=" mt-6 relative text-sm sm:text-lg text-[#20817] tracking-wide mb-8 text-left max-w-full  leading-loose">
               CDSCO stands for Central Drugs Standard Control Organisation
               (which comes under the Ministry of Health and Family Welfare),
               headquartered in Delhi and has 6 zonal offices in India namely at
@@ -106,66 +106,70 @@ const CDSCO = () => {
 
             <div className="flex  items-center justify-between">
               <div className="flex flex-col gap-2">
-                <p className="font-medium font-poppins text-[20px]  text-[#996C6C]">
-                  Different divisions of the CDSCO are as below:
+               <div  className="flex items-center gap-2">
+            
+
+                <p className="font-medium font-poppins text-[20px]  text-blue-950">
+                 Different divisions of the CDSCO are as below
                 </p>
+               </div>
                 <div className="flex flex-col gap-2">
                   <div className="flex gap-3 items-center break-words flex-wrap">
-                    <div className="bg-green-500/10 p-2 rounded-full">
-                      <Check size={12} />
+                    <div className="bg-green-500/10 p-2  rounded-full">
+                      <Check size={12}  className="text-[#020817]"/>
                     </div>
 
-                    <p className=" font-base text-sm sm:text-lg text-zinc-500 tracking-wide  text-left max-w-full  leading-loose">
+                    <p className=" font-base text-sm sm:text-lg text-[#020817] tracking-wide  text-left max-w-full  leading-loose">
                       Medical device division ( Drugs )
                     </p>
                   </div>
 
                   <div className="flex gap-3 items-center break-words flex-wrap">
                     <div className="bg-green-500/10 p-2 rounded-full">
-                      <Check size={12} />
+                      <Check size={12} className="text-[#020817]" />
                     </div>
 
-                    <p className=" font-base text-sm sm:text-lg text-zinc-500 tracking-wide  text-left max-w-full  leading-loose">
+                    <p className=" font-base text-sm sm:text-lg text-[#020817] tracking-wide  text-left max-w-full  leading-loose">
                       Drugs
                     </p>
                   </div>
 
                   <div className="flex gap-3 items-center break-words flex-wrap">
                     <div className="bg-green-500/10 p-2 rounded-full">
-                      <Check size={12} />
+                      <Check size={12} className="text-[#020817]" />
                     </div>
 
-                    <p className=" font-base text-sm sm:text-lg text-zinc-500 tracking-wide  text-left max-w-full  leading-loose">
+                    <p className=" font-base text-sm sm:text-lg text-[#20817] tracking-wide  text-left max-w-full  leading-loose">
                       Cosmetics
                     </p>
                   </div>
 
                   <div className="flex gap-3 items-center break-words flex-wrap">
                     <div className="bg-green-500/10 p-2 rounded-full">
-                      <Check size={12} />
+                      <Check size={12}  className="text-[#020817]"/>
                     </div>
 
-                    <p className=" font-base text-sm sm:text-lg text-zinc-500 tracking-wide  text-left max-w-full  leading-loose">
+                    <p className=" font-base text-sm sm:text-lg text-[#020817] tracking-wide  text-left max-w-full  leading-loose">
                       Clinical Trial on medical devices division
                     </p>
                   </div>
 
                   <div className="flex gap-3 items-center break-words flex-wrap">
                     <div className="bg-green-500/10 p-2 rounded-full">
-                      <Check size={12} />
+                      <Check size={12} className="text-[#020817]" />
                     </div>
 
-                    <p className=" font-base text-sm sm:text-lg text-zinc-500 tracking-wide  text-left max-w-full  leading-loose">
+                    <p className=" font-base text-sm sm:text-lg text-[#020817] tracking-wide  text-left max-w-full  leading-loose">
                       Vaccines
                     </p>
                   </div>
 
                   <div className="flex gap-3 items-center break-words flex-wrap">
                     <div className="bg-green-500/10 p-2 rounded-full">
-                      <Check size={12} />
+                      <Check size={12} className="text-[#020817]" />
                     </div>
 
-                    <p className=" font-base text-sm sm:text-lg text-zinc-500 tracking-wide  text-left max-w-full  leading-loose">
+                    <p className=" font-base text-sm sm:text-lg text-[#020817] tracking-wide  text-left max-w-full  leading-loose">
                       BA/BE
                     </p>
                   </div>
@@ -182,51 +186,46 @@ const CDSCO = () => {
             </div>
           </div>
 
-          <div className="w-[360px] rounded-xl border border-border p-5 shadow-sm ">
+          <div className="w-[360px] rounded-xl border-2 border-blue-950/20  p-5 ">
             <h1 className="text-xl font-semibold tracking-tight text-foreground">
               Latest Blogs
             </h1>
             <div className="mt-4 space-y-5 ">
               {blogPosts.map((post, index) => (
-               
-               <div  key={index}>
-                <div
-                  className=" group flex gap-4  transition-all duration-300"
-                >
+                <div key={index}>
+                  <div className=" group flex gap-4  transition-all duration-300">
+                    <img
+                      src={post.image || "/placeholder.svg"}
+                      alt="Post Image"
+                      className="h-20 w-20 object-cover shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105 "
+                    />
 
-                  <img
-                    src={post.image || "/placeholder.svg"}
-                    alt="Post Image"
-                    className="h-20 w-20 object-cover shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105 "
-                  />
+                    <div className=" h-20 w-20 flex flex-1 flex-col justify-between">
+                      <div className="space-y-2">
+                        <Badge
+                          variant="outline"
+                          className=" bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
+                        >
+                          {post.category}
+                        </Badge>
+                        <p className="line-clamp-2 text-sm font-normal text-zinc-900">
+                          {post.title}
+                        </p>
 
-                  <div className=" h-20 w-20 flex flex-1 flex-col justify-between">
-                    <div className="space-y-2">
-                      <Badge
-                        variant="outline"
-                        className=" bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
-                      >
-                        {post.category}
-                      </Badge>
-                      <p className="line-clamp-2 text-sm font-normal text-zinc-900">
-                        {post.title}
-                      </p>
-
-                      <Button
-                        variant="link"
-                        className="text-blue-900 hover:text-blue-950 p-0 h-auto font-normal text-sm"
-                      >
-                        Read More
-                        <ArrowRightIcon className="-ml-1 mt-0.5 w-2 h-2" />
-                      </Button>
+                        <Button
+                          variant="link"
+                          className="text-blue-900 hover:text-blue-950 p-0 h-auto font-normal text-sm"
+                        >
+                          Read More
+                          <ArrowRightIcon className="-ml-1 mt-0.5 w-2 h-2" />
+                        </Button>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {index < blogPosts.length - 1 && (
-              <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
-            )}
-            
+                  {index < blogPosts.length - 1 && (
+                    <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
+                  )}
                 </div>
               ))}
             </div>
