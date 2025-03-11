@@ -20,6 +20,17 @@
   background: radial-gradient(circle, #FFFFFF 7%, #FBFEFF 100%);
 }
 
+.custom-linear-gradient-4 {
+  background: linear-gradient(to right, #2600FC 0%, #4D2249 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #2600FC 0%, #4D2249 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 
 
 
