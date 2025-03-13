@@ -54,7 +54,9 @@ export default {
   			poppins: [
   				'Poppins',
   				'serif'
-  			]
+  			],
+  			geist: ['Geist Variable', 'sans-serif'],
+  			'geist-mono': ['Geist Mono Variable', 'monospace'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

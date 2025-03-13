@@ -6,7 +6,7 @@ import { Separator } from '../ui/separator'
 
 const CDSCOHero = () => {
   return (
-    <main className="relative  pt-[104px] pb-[106px]  overflow-x-hidden ">
+    <main className="relative bg-[#f7f7f8] pt-[104px] pb-[106px]  overflow-x-hidden ">
     {/* Background gradient */}
     {/* <div className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-2"></div> */}
 
