@@ -1,11 +1,10 @@
-import React from "react";
 import { Separator } from "../ui/separator";
-import { Check, CircleAlert } from "lucide-react";
+import { Check } from "lucide-react";
 import CDSCOOne from "../../assets/images/CDSCOOne.png";
 
 const CDSCOContentLeft = () => {
   return (
-    <div className=" flex-1">
+    <div className=" flex-1 ">
       <div className="flex flex-col gap-[40px]">
         {/* Overview Section */}
         <OverviewSection />
@@ -20,6 +19,30 @@ const CDSCOContentLeft = () => {
 
         {/* Classification Section */}
         <ClassificationSection />
+
+        {/* Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        {/* Documents Section */}
+        <Documents />
+
+        {/* Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        {/* Registration Section */}
+        <Registration />
+
+        {/* Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        {/* Licensing Section */}
+        <Licensing />
+
+        {/* Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        {/* Licensing Section */}
+        <Consulting />
       </div>
     </div>
   );
@@ -249,6 +272,235 @@ const ClassificationSection = () => {
           Class D
         </span>{" "}
         require a license from CDSCO.
+      </div>
+    </section>
+  );
+};
+
+const Documents = () => {
+  return (
+    <section className="flex flex-col ">
+      {/* Documents */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+          Documents
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+        Required Documents for CDSCO LICENSE
+      </h3>
+
+      <div className="flex mt-[24px] gap-10">
+        {/* Points */}
+        <PointsListTwo
+          points={[
+            "Drugs license of importer (Required only for foreign manufacturer)",
+            "Free sales certificate (Required only for foreign manufacturer)",
+            "ISO certificate (Required only for foreign manufacturer)",
+            "List of products to be registered",
+            "Basic details about the product (example: storage temperature, shelf life, model number, etc.)",
+          ]}
+          heading="CDSCO registration for Class A products ( non-sterile and non-measuring )"
+        />
+      </div>
+
+      <div className="flex mt-[24px] gap-10">
+        {/* Points */}
+        <PointsListTwo
+          points={[
+            "Plant Master File (PMF)",
+            "Device Master File (DMF)",
+            "Manufacturing process flowchart",
+            "Labels and user manual",
+            "Design verification and validation",
+            "Stability validation data",
+            "Challan of the government fee paid",
+          ]}
+          heading="Class A ( sterile or measuring ), Class B, Class C and Class D"
+        />
+      </div>
+    </section>
+  );
+};
+
+const Registration = () => {
+  return (
+    <section className="flex flex-col ">
+      {/* Registration */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+          Registration
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+        Class A Product Registration Process
+      </h3>
+
+      {/* Description */}
+      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+        Process for CDSCO registration for Class A products ( non-sterile and
+        non-measuring )
+      </p>
+
+      {/* Important Points And Image */}
+      <div className="flex mt-[24px] gap-7">
+        {/* Points */}
+        <PointsList
+          points={[
+            "Generation of login Credentials",
+            "Registration of Indian / foreign manufacturer",
+            "Registration of importer ( in case of import only )",
+            "Addition of product details",
+            "Submission of details to CDSCO",
+            "Grant of registration",
+          ]}
+        />
+
+        {/* Image */}
+        <img
+          src={CDSCOOne}
+          alt="CDSCO One Image"
+          className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
+            ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
+            hover:ring-gray-900/12.5 w-[400px] h-[240px] mt-5
+            "
+        />
+      </div>
+
+      <div className="mt-[46px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 ">
+          TIMELINE
+        </span>
+        CDSCO registration processwill take 1 day after the documents are
+        submitted to us.
+      </div>
+
+      <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
+        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+          NOTE
+        </span>
+        After the registration is completed, a unique file number is generated,
+        which has to be mentioned on the product / packaging, in case of
+        registration there is no certificate
+      </div>
+    </section>
+  );
+};
+
+const Licensing = () => {
+  return (
+    <section className="flex flex-col ">
+      {/* Licensing */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+          Licensing
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+        Process For CDSCO License
+      </h3>
+
+      {/* Points */}
+      <PointsListTwo
+        points={[
+          "Identifying the class of the medical device",
+          "Making groups as per the guidelines mentioned as per CDSCO guidelines",
+          "Creation of login credentials for the manufacturer",
+          "Collection of documents from the overseas manufacturer",
+          "Collection of documents from Indian importer",
+          "Checking and vetting of documents as per the rules",
+          "Payment of government fees",
+          "Submission of Application online",
+          "Clearing of queries ( if any )",
+          "Audit of the firm",
+          "Clearing of queries ( if any ) after the audit",
+          "Grant of license",
+          "Generation of CDSCO certificate",
+        ]}
+      />
+
+      <div className="mt-[28px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 ">
+          TIMELINE
+        </span>
+        Approx 6-8 weeks after submission of application.
+      </div>
+
+      <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
+        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+          VALIDITY
+        </span>
+        It is granted for 5 years initially and renewed thereafter by paying the
+        government fees.
+      </div>
+
+      <div className="flex mt-[10px] gap-10">
+        {/* Points */}
+        <PointsListTwo
+          points={[
+            "In case of CDSCO import license, AUDIT OF THE FOREIGN MANUFACTURER IS NOT CONDUCTED, and rest of the procedure remains the same.",
+            "License number mentioned on the CDSCO registration certificate has to be mentioned on the products / packaging.",
+            "Test license is also required in case of Indian manufacturers.",
+          ]}
+        />
+      </div>
+
+      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
+        <span className="font-semibold uppercase text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+          Specialized Licenses
+        </span>
+        If you are applying for a license for a new drug, biological product, or
+        innovative medical device, additional approvals such as clinical trials
+        or safety testing may be required.
+      </div>
+
+      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+        For further assistance or to ensure proper filing, you can consult a
+        regulatory consultant experienced in CDSCO processes.
+      </div>
+    </section>
+  );
+};
+
+const Consulting = () => {
+  return (
+    <section className="flex flex-col ">
+      {/* Consulting */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+          Consulting
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+        CDSCO License Consulting Services
+      </h3>
+
+      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+        As CDSCO registration consultants, our job is to ensure that the tiring
+        procedures listed above become a cakewalk for you. Right from the
+        beginning, i.e., from the stage of collection of documents from foreign
+        manufacturers or preparation of documents for Indian manufacturers,
+        conducting thorough compliance checks, coordinating submissions,
+        addressing department queries, and following up with the department for
+        the grant of a license, everything is under our scope of work.
+      </div>
+
+      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+        We are one of the most experienced CDSCO consultants in the field of
+        medical products,we provide apex quality of services possible to all our
+        national and international clients.
       </div>
     </section>
   );
