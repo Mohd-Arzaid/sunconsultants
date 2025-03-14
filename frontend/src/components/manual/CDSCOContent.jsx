@@ -8,6 +8,7 @@ const CDSCOContent = () => {
       <div className="max-w-[88rem] mx-auto p-12">
         <div className="flex gap-[48px] w-full">
             {/* Left Side */}
+            
             <CDSCOContentLeft/>
 
             {/* Right Side */}
