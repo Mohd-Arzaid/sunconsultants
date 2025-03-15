@@ -1,11 +1,11 @@
 import { Separator } from "../ui/separator";
 import { Check } from "lucide-react";
 import CDSCOOne from "../../assets/images/CDSCOOne.png";
-import { ScrollArea } from "../ui/scroll-area";
+
 
 const CDSCOContentLeft = () => {
   return (
-    <ScrollArea className="h-72 w-48 rounded-md border">
+   
       <div className=" flex-1 ">
         <div className="flex flex-col gap-[40px]">
           {/* Overview Section */}
@@ -47,7 +47,7 @@ const CDSCOContentLeft = () => {
         <Consulting />
       </div>
     </div>
-    </ScrollArea>
+  
   
   );
 };
@@ -56,7 +56,7 @@ export default CDSCOContentLeft;
 
 const OverviewSection = () => {
   return (
-    <section className="flex flex-col ">
+    <section id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
@@ -165,7 +165,7 @@ const PointsListTwo = ({ points, heading }) => {
 
 const EligibilitySection = () => {
   return (
-    <section className="flex flex-col ">
+    <section id="eligibility" className="flex flex-col scroll-mt-20">
       {/* Eligibility */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
@@ -207,7 +207,7 @@ const EligibilitySection = () => {
 
 const ClassificationSection = () => {
   return (
-    <section className="flex flex-col ">
+    <section id="classification" className="flex flex-col scroll-mt-20">
       {/* Classification */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
@@ -283,7 +283,7 @@ const ClassificationSection = () => {
 
 const Documents = () => {
   return (
-    <section className="flex flex-col ">
+    <section id="documents" className="flex flex-col scroll-mt-20">
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
@@ -332,7 +332,7 @@ const Documents = () => {
 
 const Registration = () => {
   return (
-    <section className="flex flex-col ">
+    <section id="registration" className="flex flex-col scroll-mt-20">
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
@@ -399,7 +399,7 @@ const Registration = () => {
 
 const Licensing = () => {
   return (
-    <section className="flex flex-col ">
+    <section id="licensing" className="flex flex-col scroll-mt-20">
       {/* Licensing */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
@@ -477,7 +477,7 @@ const Licensing = () => {
 
 const Consulting = () => {
   return (
-    <section className="flex flex-col ">
+    <section id="consulting" className="flex flex-col scroll-mt-20">
       {/* Consulting */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
@@ -502,7 +502,7 @@ const Consulting = () => {
       </div>
 
       <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        We are one of the most experienced CDSCO consultants in the field of
+        We are one of the most experienced CDSCO consultants in the field of
         medical products,we provide apex quality of services possible to all our
         national and international clients.
       </div>
