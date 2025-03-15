@@ -1,12 +1,14 @@
 import { Separator } from "../ui/separator";
 import { Check } from "lucide-react";
 import CDSCOOne from "../../assets/images/CDSCOOne.png";
+import { ScrollArea } from "../ui/scroll-area";
 
 const CDSCOContentLeft = () => {
   return (
-    <div className=" flex-1 ">
-      <div className="flex flex-col gap-[40px]">
-        {/* Overview Section */}
+    <ScrollArea className="h-72 w-48 rounded-md border">
+      <div className=" flex-1 ">
+        <div className="flex flex-col gap-[40px]">
+          {/* Overview Section */}
         <OverviewSection />
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
@@ -45,6 +47,8 @@ const CDSCOContentLeft = () => {
         <Consulting />
       </div>
     </div>
+    </ScrollArea>
+  
   );
 };
 
