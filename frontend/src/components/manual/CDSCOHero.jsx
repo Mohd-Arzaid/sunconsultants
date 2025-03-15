@@ -10,7 +10,7 @@ const CDSCOHero = () => {
 
       {/* Decorative elements */}
       <div
-        className="absolute top-[20%] right-[15%] w-[20px] h-[20px] rounded-full bg-[#1A8781]/30 animate-float"
+        className="absolute top-[20%] z-[10] right-[15%] w-[20px] h-[20px] rounded-full bg-[#1A8781]/30 animate-float"
         style={{ animationDelay: "1s" }}
       ></div>
 
