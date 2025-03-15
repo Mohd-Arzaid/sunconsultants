@@ -17,6 +17,12 @@
   background: radial-gradient(circle, #D8E6EF 8%, #C5E2F0 100%);
 }
 
+.custom-radial-gradient-cdsco {
+  background: radial-gradient(circle, #D8E6EF 8%, #ecedef 100%);
+}
+
+
+
 .custom-radial-gradient-3 {
   background: radial-gradient(circle, #FFFFFF 7%, #FBFEFF 100%);
 }
