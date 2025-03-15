@@ -40,10 +40,10 @@ const CDSCOHero = () => {
 
           <div className="flex items-center -mt-2">
             <div className="flex items-center cursor-pointer group">
-              <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781] transition-all duration-300 mr-3">
-                <div className="w-3 h-3 border-t-2 border-r-2 border-[#1A8781] rotate-45 translate-x-[-1px]"></div>
+              <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3">
+                <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
-              <span className="font-geist text-[18px] text-[#1A8781] font-medium group-hover:translate-x-1 transition-all duration-300">
+              <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
                 View Services
               </span>
             </div>
