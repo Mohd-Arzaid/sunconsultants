@@ -63,7 +63,7 @@ const Index = () => {
             }`}
           >
             <div
-              className={`text-base font-bold font-roboto tracking-wider uppercase transition-colors duration-300 ${
+              className={`text-base font-semibold font-geist  tracking-wider uppercase transition-colors duration-300 ${
                 item === "Overview"
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
