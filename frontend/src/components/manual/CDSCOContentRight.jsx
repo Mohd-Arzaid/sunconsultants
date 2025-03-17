@@ -1,4 +1,4 @@
-import { AlignLeft, ArrowRightIcon, Star } from "lucide-react";
+import { AlignLeft, ArrowRightIcon, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import BlogImageOne from "../../assets/images/BlogImageOne.png";
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
@@ -10,6 +10,7 @@ const CDSCOContentRight = () => {
       {/* Latest Blogs */}
       <LatestBlog />
       <OurServices />
+      <ClientTestimonial />
     </div>
   );
 };
@@ -184,4 +185,47 @@ const OurServices = () => {
   )
 }
 
+const ClientTestimonial = () => {
+
+  return (
+    <div
+      className="w-[360px] rounded-lg overflow-hidden bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]"
+
+    >
+
+
+      <div className="flex items-center justify-between px-6 py-3 bg-gray-50 border-t border-gray-100">
+        <div className="flex space-x-1.5">
+
+          <button
+
+            className=
+            "transition-all duration-300 ease-in-out rounded-full w-6 h-1.5 bg-blue-600"
+
+
+
+          />
+
+        </div>
+
+        <div className="flex space-x-2">
+          <button
+
+            className="h-8 w-8 rounded-full flex items-center justify-center bg-white border border-gray-200 hover:bg-gray-100 transition-colors"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <button
+
+            className="h-8 w-8 rounded-full flex items-center justify-center bg-white border border-gray-200 hover:bg-gray-100 transition-colors"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
 
