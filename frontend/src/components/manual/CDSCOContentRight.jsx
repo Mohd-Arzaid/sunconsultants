@@ -12,7 +12,7 @@ const CDSCOContentRight = () => {
       <OurServices />
       <ClientTestimonial />
       <OurEvents />
-      <LatestNotfication />
+      <LatestNotification />
       <FreeCallBack />
     </div>
   );
@@ -399,7 +399,7 @@ const OurEvents = () => {
 };
 
 
-const LatestNotfication = () => {
+const LatestNotification = () => {
   const notifications = [
     {
       id: 1,
