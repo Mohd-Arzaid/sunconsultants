@@ -1,4 +1,4 @@
-import { AlignLeft, ArrowRightIcon, ChevronLeft, ChevronRight, Languages, Star, Calendar, CalendarDays, MapPin, Bell, FileText, ExternalLink, ChevronDown } from "lucide-react";
+import { AlignLeft, ArrowRightIcon, ChevronLeft, ChevronRight, Languages, Star, Calendar, CalendarDays, MapPin, Bell, FileText, ExternalLink, ChevronDown, ThumbsUp, Share2, CheckCircle, Phone, User, Mail, PhoneCall, SendHorizontal, MessageCircle } from "lucide-react";
 import BlogImageOne from "../../assets/images/BlogImageOne.png";
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
@@ -11,8 +11,9 @@ const CDSCOContentRight = () => {
       <LatestBlog />
       <OurServices />
       <ClientTestimonial />
-      <OurEvents/>
-      <LatestNotfication/>
+      <OurEvents />
+      <LatestNotfication />
+      <FreeCallBack />
     </div>
   );
 };
@@ -199,12 +200,12 @@ const ClientTestimonial = () => {
   return (
     <div className="w-[360px] rounded-lg overflow-hidden bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       <div className="pt-6 px-6 pb-4">
-      <div className="flex gap-2 items-center">
-        <Languages className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold text-[#232327]">
-          Client Testimonials
-        </h1>
-      </div>
+        <div className="flex gap-2 items-center">
+          <Languages className="text-[#232327]" />
+          <h1 className="text-xl font-geist font-semibold text-[#232327]">
+            Client Testimonials
+          </h1>
+        </div>
         <div className="mt-8 mb-5 rounded-lg">
           {
             testimonials.map((testimonial, index) => (
@@ -308,8 +309,8 @@ const OurEvents = () => {
       {events.filter(event => event.isHighlighted).map(event => (
         <div key={event.id} className="mt-5 overflow-hidden rounded-lg border border-gray-200 group">
           <div className="relative h-36 overflow-hidden">
-            <img 
-              src={event.image} 
+            <img
+              src={event.image}
               alt={event.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
@@ -320,24 +321,24 @@ const OurEvents = () => {
             </div>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent h-1/2" />
           </div>
-          
+
           <div className="p-4">
             <div className="flex justify-between items-start mb-2">
               <h3 className="font-geist font-medium text-gray-900 text-base">{event.title}</h3>
             </div>
-            
+
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-gray-600">
                 <CalendarDays className="h-4 w-4" />
                 <span className="text-sm font-geist">{event.date} • {event.time}</span>
               </div>
-              
+
               <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="h-4 w-4" />
                 <span className="text-sm font-geist">{event.location}</span>
               </div>
             </div>
-            
+
             <Button className="w-full mt-4 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white">
               Register Now
               <ArrowRightIcon />
@@ -360,7 +361,7 @@ const OurEvents = () => {
                   {event.date.split(' ')[1]}
                 </span>
               </div>
-              
+
               {/* Event Details */}
               <div className="flex-1">
                 <Badge className="mb-1 bg-gray-100 text-gray-700 border-0 hover:bg-gray-200 font-geist">
@@ -372,7 +373,7 @@ const OurEvents = () => {
                   <span className="text-xs font-geist">{event.location}</span>
                 </div>
               </div>
-              
+
               {/* Action Button */}
               <div className="flex items-center">
                 <Button variant="ghost" size="sm" className="rounded-full h-8 w-8 p-0">
@@ -380,14 +381,14 @@ const OurEvents = () => {
                 </Button>
               </div>
             </div>
-            
+
             {index < events.filter(event => !event.isHighlighted).length - 1 && (
               <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
             )}
           </div>
         ))}
       </div>
-      
+
       {/* View All Button */}
       <Button variant="outline" className="w-full mt-5 font-geist border-gray-300 text-gray-700 hover:bg-gray-100">
         View All Events
@@ -460,7 +461,7 @@ const LatestNotfication = () => {
               {notification.isNew && (
                 <div className="absolute -right-2 -top-2 h-4 w-4 rounded-full bg-red-500 ring-2 ring-white animate-pulse" />
               )}
-              
+
               {/* Card Content */}
               <div className="rounded-lg border border-gray-200 bg-white p-4 transition-all duration-300 hover:border-gray-300 hover:shadow-md">
                 <div className="flex justify-between items-start mb-2">
@@ -469,13 +470,13 @@ const LatestNotfication = () => {
                   </Badge>
                   <span className="text-xs text-gray-500 font-geist">{notification.date}</span>
                 </div>
-                
+
                 <h3 className="font-geist font-medium text-gray-900 mb-2">{notification.title}</h3>
-                
+
                 <p className="text-sm text-gray-600 font-geist mb-3 line-clamp-2">
                   {notification.description}
                 </p>
-                
+
                 <div className="flex justify-between items-center">
                   <Button
                     variant="link"
@@ -484,10 +485,10 @@ const LatestNotfication = () => {
                     <FileText className="h-3.5 w-3.5" />
                     View Document
                   </Button>
-                  
-                  <Button 
-                    variant="ghost" 
-                    size="sm" 
+
+                  <Button
+                    variant="ghost"
+                    size="sm"
                     className="rounded-full h-8 w-8 p-0 hover:bg-gray-100"
                   >
                     <ExternalLink className="h-4 w-4 text-gray-600" />
@@ -495,21 +496,124 @@ const LatestNotfication = () => {
                 </div>
               </div>
             </div>
-            
+
             {index < notifications.length - 1 && (
               <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-5" />
             )}
           </div>
         ))}
       </div>
-      
+
       {/* View All Button */}
       <div className="mt-5 flex justify-center">
         <Button variant="outline" className="font-geist border-gray-300 text-gray-700 hover:bg-gray-100">
-          View All Notifications 
+          View All Notifications
           <ChevronDown className="ml-1 h-4 w-4" />
         </Button>
       </div>
+    </div>
+  );
+};
+
+const FreeCallBack = () => {
+  return (
+    <div className="w-[360px] p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+      {/* Header */}
+      <div className="flex gap-2 items-center">
+        <PhoneCall className="text-[#232327]" />
+        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+          Request a Free Callback
+        </h1>
+      </div>
+
+      {/* Intro Text */}
+      <p className="mt-3 text-sm text-gray-600 font-geist">
+        Leave your details below and our experts will call you back within 24 hours to discuss your regulatory compliance needs.
+      </p>
+
+      {/* Form */}
+      <div className="mt-5 space-y-4">
+        {/* Name Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <User className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Phone Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <Phone className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Email Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <Mail className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Service Selection */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <FileText className="h-5 w-5 text-gray-400" />
+          </div>
+          <select className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg appearance-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+            <option value="" disabled selected>Select Service</option>
+            <option value="cdsco">CDSCO Registration</option>
+            <option value="bis">BIS & ISI Mark Certification</option>
+            <option value="epr">EPR & PWM Certification</option>
+            <option value="lmpc">LMPC & BIS CRS</option>
+          </select>
+          <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <ChevronDown className="h-4 w-4 text-gray-400" />
+          </div>
+        </div>
+
+        {/* Message Field */}
+        <div className="relative">
+          <div className="absolute top-3 left-3 pointer-events-none">
+            <MessageCircle className="h-5 w-5 text-gray-400" />
+          </div>
+          <textarea
+            placeholder="Your Message (Optional)"
+            rows="3"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          ></textarea>
+        </div>
+      </div>
+
+      {/* Submit Button */}
+      <Button className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden">
+        <span className="relative z-10 flex items-center">
+          Request Callback
+          <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </span>
+        <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </Button>
+
+      {/* Privacy Note */}
+      <p className="mt-3 text-xs text-center text-gray-500 font-geist">
+        By submitting this form, you agree to our <a href="#" className="text-blue-600 hover:underline">Privacy Policy</a> and consent to being contacted.
+      </p>
+
+
     </div>
   );
 };
