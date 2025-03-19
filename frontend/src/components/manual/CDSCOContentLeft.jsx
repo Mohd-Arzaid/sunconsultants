@@ -5,10 +5,10 @@ import CDSCOOne from "../../assets/images/CDSCOOne.png";
 
 const CDSCOContentLeft = () => {
   return (
-   
-      <div className=" flex-1 ">
-        <div className="flex flex-col gap-[40px]">
-          {/* Overview Section */}
+
+    <div className=" flex-1 ">
+      <div className="flex flex-col gap-[40px]">
+        {/* Overview Section */}
         <OverviewSection />
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
@@ -45,10 +45,13 @@ const CDSCOContentLeft = () => {
 
         {/* Licensing Section */}
         <Consulting />
+
+        {/* Review Section */}
+        <ReviewSection />
       </div>
     </div>
-  
-  
+
+
   );
 };
 
@@ -505,6 +508,47 @@ const Consulting = () => {
         We are one of the most experienced CDSCO consultants in the field of
         medical products,we provide apex quality of services possible to all our
         national and international clients.
+      </div>
+    </section>
+  );
+};
+
+const ReviewSection = () => {
+  return (
+    <section>
+      <span className="font-geist text-[25px] font-semibold text-[#131316] tracking-normal">
+        What did you think of this content?
+      </span>
+      <div className="flex items-center mt-2 justify-between">
+
+        <div className="flex gap-6 ">
+          <label className="flex cursor-pointer items-center gap-3 font-geist text-sm sm:text-lg text-[#42434d] ">
+            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
+              className="w-6 h-6 text-gray-700">
+              <path fillOpacity="0.15" strokeWidth="0" d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z" />
+              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5" />
+            </svg>
+
+            <span>It was helpful</span>
+          </label>
+
+          <label className="flex cursor-pointer items-center gap-3 font-geist text-sm sm:text-lg text-[#42434d] ">
+            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
+              className="w-6 h-6 text-gray-700">
+              <path fillOpacity="0.15" strokeWidth="0" d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z" />
+              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5" />
+            </svg>
+
+            <span>It was not helpful</span>
+          </label>
+
+        </div>
+
+
+        <p className="font-geist text-[17px] text-[#5e5f6e] tracking-normal">
+          Last updated on Mar 19, 2025
+        </p>
+
       </div>
     </section>
   );
