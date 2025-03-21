@@ -7,7 +7,7 @@ const Index = () => {
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
     if (element) {
-      element.scrollIntoView({ 
+      element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -22,9 +22,9 @@ const Index = () => {
         const isAtTop = rect.top <= 1; // Added small buffer
         setIsSticky(!entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1));
       },
-      { 
+      {
         threshold: [0, 1],  // Observe both when fully visible and when starting to intersect
-        rootMargin: '-1px 0px 0px 0px' 
+        rootMargin: '-1px 0px 0px 0px'
       }
     );
 
@@ -36,11 +36,10 @@ const Index = () => {
   }, []);
 
   return (
-    <div 
+    <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-20 ${
-        isSticky ? 'bg-white/70 backdrop-blur-lg' : 'bg-[#B9DEEB]'
-      }`}
+      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-20 ${isSticky ? 'bg-white/70 backdrop-blur-lg' : 'bg-[#B9DEEB]'
+        }`}
     >
       <div className="flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto">
         {[
@@ -56,18 +55,16 @@ const Index = () => {
           <div
             key={item}
             onClick={() => handleItemClick(item)}
-            className={`relative cursor-pointer group ${
-              item === "Overview"
+            className={`relative cursor-pointer group ${item === "Overview"
                 ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
                 : ""
-            }`}
+              }`}
           >
             <div
-              className={`text-base font-semibold font-geist  tracking-wider uppercase transition-colors duration-300 ${
-                item === "Overview"
+              className={`text-base font-semibold font-geist  tracking-wider uppercase transition-colors duration-300 ${item === "Overview"
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
-              }`}
+                }`}
             >
               {item}
             </div>
