@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="bg-[#b9deeb] pt-16 pb-6">
       <div className="max-w-[88rem] mx-auto px-12">
         {/* Main Footer Content */}
-        <div className="flex  justify-between h-[380px] ">
+        <div className="flex  justify-between h-[360px] ">
           {/* Company Logo */}
           <div className="flex flex-col gap-[25px]">
             <div
