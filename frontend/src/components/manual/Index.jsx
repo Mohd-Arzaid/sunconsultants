@@ -6,7 +6,9 @@ const Index = () => {
   const stickyRef = useRef(null)
 
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase());
+    // Special case for "FAQs" to match with element id
+    const elementId = item === "FAQs" ? "faqs" : item.toLowerCase();
+    const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
@@ -53,9 +55,14 @@ const Index = () => {
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            // Convert id like "overview" to "Overview"
-            const sectionName = entry.target.id.charAt(0).toUpperCase() + entry.target.id.slice(1);
-            setActiveSection(sectionName);
+            // Special handling for FAQs section
+            if (entry.target.id === "faqs") {
+              setActiveSection("FAQs");
+            } else {
+              // Convert id like "overview" to "Overview"
+              const sectionName = entry.target.id.charAt(0).toUpperCase() + entry.target.id.slice(1);
+              setActiveSection(sectionName);
+            }
           }
         });
       },
@@ -64,7 +71,9 @@ const Index = () => {
     
     // Observe each section
     sections.forEach(section => {
-      const element = document.getElementById(section.toLowerCase());
+      // Special case for "FAQs" to match with element id
+      const elementId = section === "FAQs" ? "faqs" : section.toLowerCase();
+      const element = document.getElementById(elementId);
       if (element) {
         sectionObserver.observe(element);
       }
