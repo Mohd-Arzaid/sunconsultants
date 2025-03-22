@@ -1,4 +1,5 @@
 // import { ScrollArea } from "../ui/scroll-area";
+import Footer from "@/common/Footer";
 import {
   Accordion,
   AccordionContent,
@@ -23,7 +24,7 @@ const CDSCOContent = () => {
       </div>
       <ServiceFaq />
       {/* Footer */}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };
