@@ -54,8 +54,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-[50px]">
-          <div className="flex w-[240px] flex-col gap-[15px]">
+          <div className="flex gap-[50px] ">
+            <div className="flex w-[240px] flex-col gap-[15px]">
               <span className="text-neutral-900 text-[18px] font-geist font-medium">
                 Address
               </span>
@@ -144,7 +144,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-          <div className="border border-[#7eafd9]"></div>
+        <div className="border border-[#7eafd9]"></div>
         <div className="flex items-center mt-4 mb-4 justify-between">
           <div className="flex gap-3 flex-wrap items-center">
             <a

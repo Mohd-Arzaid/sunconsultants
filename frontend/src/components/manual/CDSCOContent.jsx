@@ -8,6 +8,7 @@ import {
 } from "../ui/accordion";
 import CDSCOContentLeft from "./CDSCOContentLeft";
 import CDSCOContentRight from "./CDSCOContentRight";
+// import { BoxReveal } from "../magicui/box-reveal";
 
 const CDSCOContent = () => {
   return (
@@ -35,7 +36,10 @@ const ServiceFaq = () => {
   return (
     <div id="faqs" className="py-2 bg-gray-50 scroll-mt-20">
       <div className="max-w-[88rem] mx-auto p-12">
+     
+     
         <h2 className="text-[48px] text-center font-geist font-semibold text-[#181818]">
+      
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[20px] font-geist">

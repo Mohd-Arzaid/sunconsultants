@@ -1,6 +1,7 @@
 import { Separator } from "../ui/separator";
 import { Check } from "lucide-react";
 import CDSCOOne from "../../assets/images/CDSCOOne.png";
+import { BoxReveal } from "../magicui/box-reveal";
 
 
 const CDSCOContentLeft = () => {
@@ -61,22 +62,31 @@ const OverviewSection = () => {
   return (
     <section id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
           Overview
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
+      </BoxReveal>
 
       {/* Title */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
         CDSCO License Details
       </h3>
+      </BoxReveal>
 
       {/* Description */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <p className="font-semibold font-geist text-[20px]  text-[#131316]">
         CDSCO Registration can be obtained through online portal registration
       </p>
+      </BoxReveal>
 
       {/* Overview Content */}
 
@@ -170,23 +180,32 @@ const EligibilitySection = () => {
   return (
     <section id="eligibility" className="flex flex-col scroll-mt-20">
       {/* Eligibility */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
           Eligibility
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
+      </BoxReveal>
 
       {/* Title */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
         CDSCO Certificate Eligibility
       </h3>
+      </BoxReveal>
 
       {/* Description */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <p className="font-semibold font-geist text-[20px]  text-[#131316]">
         Eligibility for a CDSCO Certificate requires meeting regulatory
         guidelines.
       </p>
+      </BoxReveal>
 
       {/* Eligibility Content */}
       <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
@@ -212,16 +231,22 @@ const ClassificationSection = () => {
   return (
     <section id="classification" className="flex flex-col scroll-mt-20">
       {/* Classification */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
           Classification
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
+      </BoxReveal>
       {/* Title */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
         CDSCO Device Classification
       </h3>
+      </BoxReveal>
 
       {/* Important Points */}
       <div className="flex mt-[24px] gap-10">
@@ -288,17 +313,23 @@ const Documents = () => {
   return (
     <section id="documents" className="flex flex-col scroll-mt-20">
       {/* Documents */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
           Documents
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
+      </BoxReveal>
 
       {/* Title */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
         Required Documents for CDSCO LICENSE
       </h3>
+      </BoxReveal>
 
       <div className="flex mt-[24px] gap-10">
         {/* Points */}
@@ -337,23 +368,32 @@ const Registration = () => {
   return (
     <section id="registration" className="flex flex-col scroll-mt-20">
       {/* Registration */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
           Registration
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
+      </BoxReveal>
 
       {/* Title */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
         Class A Product Registration Process
       </h3>
+      </BoxReveal>
 
       {/* Description */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <p className="font-semibold font-geist text-[20px]  text-[#131316]">
         Process for CDSCO registration for Class A products ( non-sterile and
         non-measuring )
       </p>
+      </BoxReveal>
 
       {/* Important Points And Image */}
       <div className="flex mt-[24px] gap-7">
@@ -404,17 +444,23 @@ const Licensing = () => {
   return (
     <section id="licensing" className="flex flex-col scroll-mt-20">
       {/* Licensing */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
           Licensing
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
+      </BoxReveal>
 
       {/* Title */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
         Process For CDSCO License
       </h3>
+      </BoxReveal>
 
       {/* Points */}
       <PointsListTwo
@@ -482,17 +528,23 @@ const Consulting = () => {
   return (
     <section id="consulting" className="flex flex-col scroll-mt-20">
       {/* Consulting */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <div className="flex w-full items-center gap-3">
         <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
           Consulting
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
+      </BoxReveal>
 
       {/* Title */}
+      <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+
       <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
         CDSCO License Consulting Services
       </h3>
+      </BoxReveal>
 
       <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
         As CDSCO registration consultants, our job is to ensure that the tiring
