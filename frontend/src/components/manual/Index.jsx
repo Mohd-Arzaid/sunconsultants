@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 
 const Index = () => {
   const [isSticky, setIsSticky] = useState(false)
+  const [activeSection, setActiveSection] = useState("Overview")
   const stickyRef = useRef(null)
 
   const handleItemClick = (item) => {
@@ -11,6 +12,7 @@ const Index = () => {
         behavior: 'smooth',
         block: 'start'
       });
+      setActiveSection(item);
     }
   }
 
@@ -35,6 +37,42 @@ const Index = () => {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const sections = [
+      "Overview",
+      "Eligibility",
+      "Classification",
+      "Documents",
+      "Registration",
+      "Licensing",
+      "Consulting",
+      "FAQs",
+    ];
+    
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            // Convert id like "overview" to "Overview"
+            const sectionName = entry.target.id.charAt(0).toUpperCase() + entry.target.id.slice(1);
+            setActiveSection(sectionName);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    
+    // Observe each section
+    sections.forEach(section => {
+      const element = document.getElementById(section.toLowerCase());
+      if (element) {
+        sectionObserver.observe(element);
+      }
+    });
+    
+    return () => sectionObserver.disconnect();
+  }, []);
+
   return (
     <div
       ref={stickyRef}
@@ -55,22 +93,20 @@ const Index = () => {
           <div
             key={item}
             onClick={() => handleItemClick(item)}
-            className={`relative cursor-pointer group ${item === "Overview"
-                ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
-                : ""
-              }`}
+            className="relative cursor-pointer group"
           >
             <div
-              className={`text-base font-semibold font-geist  tracking-wider uppercase transition-colors duration-300 ${item === "Overview"
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection ? "text-blue-900" : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
-            {item !== "Overview" && (
-              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
-            )}
+            <div 
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+              }`} 
+            />
           </div>
         ))}
       </div>
