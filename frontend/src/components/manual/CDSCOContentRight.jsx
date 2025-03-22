@@ -25,25 +25,25 @@ const LatestBlog = () => {
     {
       image: BlogImageOne,
       category: "CDSCO",
-      title: "QCO Notification for Work Chairs",
+      title: "Medical Device QCO Update",
       url: "#",
     },
     {
-      image: BlogImageOne,
+      image: "https://images.unsplash.com/photo-1587854680352-936b22b91030",
       category: "CDSCO",
-      title: "QCO Notification for Work Chairs",
+      title: "Drug Import Guidelines",
       url: "#",
     },
     {
-      image: BlogImageOne,
+      image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88",
       category: "CDSCO",
-      title: "QCO Notification for Work Chairs",
+      title: "Quality Standards Revision",
       url: "#",
     },
     {
-      image: BlogImageOne,
+      image: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5",
       category: "CDSCO",
-      title: "QCO Notification for Work Chairs",
+      title: "Equipment Certification Changes",
       url: "#",
     },
   ];
