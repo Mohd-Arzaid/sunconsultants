@@ -82,7 +82,7 @@ const Navbar = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem >
-                <Link to="/">
+                <Link to="/contact">
                   <Button
                     variant="link"
                     className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"

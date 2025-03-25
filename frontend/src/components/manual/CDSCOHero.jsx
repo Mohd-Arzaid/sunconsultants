@@ -52,6 +52,7 @@ const CDSCOHero = () => {
         
         {/* Right Side */}
         <div className="z-20 w-[580px] h-[435px] flex flex-col">
+        
           <div className="flex w-full items-center gap-3">
             <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
               Contact Us
