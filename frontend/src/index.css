@@ -42,6 +42,10 @@
   background: radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%);
 }
 
+.custom-radial-gradient-updates {
+  background: radial-gradient(circle, #ffffff 7%, #f2f1ed 100%);
+}
+
 .custom-radial-gradient-2 {
   background: radial-gradient(circle, #D8E6EF 8%, #C5E2F0 100%);
 }
