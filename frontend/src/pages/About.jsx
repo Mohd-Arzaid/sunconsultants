@@ -1,77 +1,104 @@
-import React from "react";
-import AboutImage from "../assets/images/about.png";
-import ContactArrow from "../assets/images/contactarrow.png";
-import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-
+import LogoTicker from "@/components/manual/LogoTicker";
 
 const About = () => {
-    const people = [
-        {
-          id: 1,
-          name: "John Doe",
-          designation: "Software Engineer",
-          image:
-            "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-        },
-        {
-          id: 2,
-          name: "Robert Johnson",
-          designation: "Product Manager",
-          image:
-            "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-        },
-        {
-          id: 3,
-          name: "Jane Smith",
-          designation: "Data Scientist",
-          image:
-            "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-        },
-        {
-          id: 4,
-          name: "Emily Davis",
-          designation: "UX Designer",
-          image:
-            "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-        }
-      ];
- 
-      
   return (
-    <>
-      <div
-        className="w-full h-[648px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${AboutImage})` }}
-      >
-        <div className="max-w-[88rem] h-full   mx-auto px-12 flex items-center ">
-          {/* Left Side */}
-          <div className="w-[576.96px]">
-            <h1 className="font-roboto text-7xl mb-5 font-bold text-left ">
-              Sun Consultants And{" "}
-              <span className="text-gradient">Engineers</span>
-            </h1>
+    <div className="overflow-hidden bg-[#F9F7F2]">
+      <AboutHero />
+      <LogoTicker/>
+      <AboutService/>
+      
 
-            <p className=" text-sm sm:text-xl text-zinc-500  tracking-wide mb-7 text-left  antialiased leading-loose w-[500px]">
-              Your trusted partner for BIS, LMPC, EPR, ISI Mark, WPC, and TEC
-              certifications in India.
-            </p>
-
-            <button className="rounded-[50px] mb-8 custom-linear-gradient-4 w-[224.75px] h-[66px] flex items-center justify-center gap-[8px]">
-              <span className="text-white font-inter text-[17px] font-bold uppercase">
-                Contact Us
-              </span>
-              <img src={ContactArrow} alt="Contact Arrow"  />
-            </button>
-
-            <div className="flex flex-row items-center  mb-10 w-full">
-      <AnimatedTooltip items={people} />
+    
     </div>
- 
-          </div>
-        </div>
-      </div>
-    </>
   );
 };
 
 export default About;
+
+const AboutHero = () => {
+  return (
+    <div className="relative h-[654px] overflow-x-hidden ">
+      {/* Decorative elements */}
+
+      {/* <div className="absolute inset-0 overflow-hidden opacity-20">
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-1/2 -right-24 w-80 h-80 bg-indigo-500 rounded-full filter blur-3xl"></div>
+      </div> */}
+
+      {/* Larger circle with slower animation */}
+      <div
+        className="absolute top-[8%] left-[8%] w-[50px] h-[50px] rounded-full bg-[#1A8781]/20 animate-float-slow"
+        style={{ animationDelay: "0s" }}
+      ></div>
+
+      {/* Square element with rotation */}
+      <div
+        className="absolute top-[70%] left-[42%] w-[42px] h-[42px] bg-[#1A8781]/15 animate-spin-slow"
+        style={{ animationDuration: "15s" }}
+      ></div>
+
+      <div className="max-w-[84rem]  flex items-center justify-center h-full w-full mx-auto">
+        {/* Left Side */}
+        <div className="relative flex flex-col gap-8 w-[640px]   items-start">
+          <div className="inline-flex items-center">
+            <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
+            <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
+              About Us
+            </span>
+          </div>
+
+          <h1 className="leading-[70px] z-[10] font-playfair font-bold text-[52px] text-[#1E1E1E] -mt-2">
+            <span className="relative">
+              India's Best Certification
+              <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
+            </span>{" "}
+            Consultant
+          </h1>
+
+          <p className="font-poppins text-[#332156] w-[490px] text-[20px] leading-[40px] ">
+            We are a Consulting Firm for BIS Certification, LMPC certificate,
+            EPR and various other certifications which will help you enter /
+            sell in the Indian market.
+          </p>
+
+          <div className="flex items-center ">
+            <div className="flex items-center cursor-pointer group">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3">
+                <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
+              </div>
+              <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
+                View Services
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side */}
+        <div className="w-[580px]  h-[435px] flex flex-col">
+          <div className="relative">
+            <div className="bg-indigo-700 bg-opacity-40 backdrop-filter backdrop-blur-sm  rounded-xl border border-indigo-500 border-opacity-30 shadow-2xl h-[435px] flex items-center justify-center">
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGNvbXB1dGVyfGVufDB8fDB8fHww"
+                alt="Professional business team discussing certification"
+                className="w-full h-full object-cover rounded-xl opacity-90"
+              />
+            </div>
+
+            {/* Floating elements */}
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 bg-opacity-20 rounded-lg rotate-12 backdrop-filter backdrop-blur-sm border border-blue-500 border-opacity-30"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-500 bg-opacity-20 rounded-lg -rotate-12 backdrop-filter backdrop-blur-sm border border-blue-500 border-opacity-30"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const AboutService = () => {
+  return (
+   <div className="">
+    
+   </div>
+  )
+}
+
