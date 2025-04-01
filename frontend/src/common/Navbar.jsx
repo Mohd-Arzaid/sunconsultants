@@ -9,26 +9,114 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+import {
+  BookText,
+  CheckCircle,
+  Radiation,
+  Battery,
+  Recycle,
+  Scale,
+  Award,
+  FileWarning,
+  Flame,
+  Radio,
+  Wifi,
+  Zap,
+  ShieldCheck,
+  Cpu,
+} from "lucide-react";
 
 export const categories = [
-  { name: "CDSCO Registration", link: "/cdsco-registration-certification" },
-  { name: "BIS Mark (Foreign)", link: "/services/bis-mark-foreign" },
-  { name: "ISI Mark (Indian)", link: "/services/isi-mark-indian" },
-  { name: "EPR Registration", link: "/services/epr-registration" },
-  { name: "Battery Waste", link: "/services/battery-waste" },
-  { name: "LMPC Registration", link: "/services/lmpc-registration" },
-  { name: "Plastic Waste", link: "/services/plastic-waste" },
-  { name: "LEGAL METROLOGY", link: "/services/legal-metrology" },
-  { name: "BIS Certification", link: "/services/bis-certification" },
-  { name: "CRS Registration", link: "/services/crs-registration" },
-  { name: "PESO", link: "/services/peso" },
-  { name: "TEC", link: "/services/tec" },
-  { name: "WPC", link: "/services/wpc" },
-  { name: "ROHS", link: "/services/rohs" },
-  { name: "BEE", link: "/services/bee" },
-  { name: "CE CERTIFICATION", link: "/services/ce-certification" },
-  { name: "EMI/EMC", link: "/services/emi-emc" },
-  { name: "CB CERTIFICATION", link: "/services/cb-certification" },
+  {
+    name: "CDSCO Registration",
+    link: "/cdsco-registration-certification",
+    icon: <FileWarning className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "BIS Mark (Foreign)",
+    link: "/services/bis-mark-foreign",
+    icon: <CheckCircle className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "ISI Mark (Indian)",
+    link: "/services/isi-mark-indian",
+    icon: <Award className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "EPR Registration",
+    link: "/services/epr-registration",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "Battery Waste",
+    link: "/services/battery-waste",
+    icon: <Battery className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "LMPC Registration",
+    link: "/services/lmpc-registration",
+    icon: <BookText className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "Plastic Waste",
+    link: "/services/plastic-waste",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "Legal Metrology",
+    link: "/services/legal-metrology",
+    icon: <Scale className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "BIS Certification",
+    link: "/services/bis-certification",
+    icon: <CheckCircle className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "CRS Registration",
+    link: "/services/crs-registration",
+    icon: <ShieldCheck className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "PESO",
+    link: "/services/peso",
+    icon: <Flame className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "TEC",
+    link: "/services/tec",
+    icon: <Radio className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "WPC",
+    link: "/services/wpc",
+    icon: <Wifi className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "ROHS",
+    link: "/services/rohs",
+    icon: <Radiation className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "BEE",
+    link: "/services/bee",
+    icon: <Zap className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "CE Certification",
+    link: "/services/ce-certification",
+    icon: <ShieldCheck className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "EMI/EMC",
+    link: "/services/emi-emc",
+    icon: <Cpu className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "CB Certification",
+    link: "/services/cb-certification",
+    icon: <Award className="w-4 h-4 mr-2" />,
+  },
 ];
 
 const Navbar = () => {
@@ -69,14 +157,11 @@ const Navbar = () => {
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid grid-cols-3 gap-2 w-[680px] p-6">
+                  <div className="grid grid-cols-3 gap-2 w-[700px] p-6">
                     {categories.map((category, index) => (
-                      <Link
-                        key={index}
-                        to={category.link}
-                        className="block"
-                      >
-                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors uppercase block hover:bg-black/10 hover:rounded-md w-full p-2 text-left ">
+                      <Link key={index} to={category.link} className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors  block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          {category.icon}
                           {category.name}
                         </div>
                       </Link>
@@ -84,13 +169,30 @@ const Navbar = () => {
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
 
+          <NavigationMenu>
+            <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
                   Latest Updates
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  {/* Add dropdown content here */}
+                  <div className="p-4 w-60">
+                    <Link to="/latest-notifications" className="block">
+                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                        <BookText className="w-4 h-4 mr-2" />
+                        Latest Notification
+                      </div>
+                    </Link>
+                    <Link to="/ministry-updates" className="block">
+                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                        <FileWarning className="w-4 h-4 mr-2" />
+                        Ministry Updates
+                      </div>
+                    </Link>
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
