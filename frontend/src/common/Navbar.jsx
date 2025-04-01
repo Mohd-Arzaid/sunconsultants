@@ -29,7 +29,7 @@ import {
 export const categories = [
   {
     name: "CDSCO Registration",
-    link: "/cdsco-registration-certification",
+    link: "/services/cdsco-registration-certification",
     icon: <FileWarning className="w-4 h-4 mr-2" />,
   },
   {
