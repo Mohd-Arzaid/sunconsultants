@@ -1,4 +1,4 @@
-import React from "react";
+
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import {
@@ -24,6 +24,7 @@ import {
   Zap,
   ShieldCheck,
   Cpu,
+  Presentation,
 } from "lucide-react";
 
 export const categories = [
@@ -174,6 +175,7 @@ const Navbar = () => {
 
           <NavigationMenu>
             <NavigationMenuList>
+
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
                   Latest Updates
@@ -196,12 +198,26 @@ const Navbar = () => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
+              </NavigationMenuList>
+              </NavigationMenu>
+
+  <NavigationMenu>
+            <NavigationMenuList>
+
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
                   Gallery
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  {/* Add dropdown content here */}
+               <div className="p-4 w-60">
+                    <Link to="/webinar" className="block">
+                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                        <Presentation className="w-4 h-4 mr-2" />
+                        Webinar
+                      </div>
+                    </Link>
+  
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 

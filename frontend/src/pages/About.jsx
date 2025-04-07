@@ -1,6 +1,6 @@
 import { Bike, Globe, Play, User } from "lucide-react";
 import whychooseus from "../assets/images/whychooseus.jpg";
-import React from "react";
+import React, { useState } from "react";
 
 const About = () => {
   return (
@@ -112,10 +112,10 @@ const WhyChooseUs = () => {
       {/* Features Grid */}
       <div className="grid grid-cols-3 gap-8">
         {/* Feature Card 1 */}
-        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden">
+        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform hover:-translate-y-4">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A8781]/10 rounded-bl-full -mr-10 -mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60  p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <User className="w-7 h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
@@ -128,16 +128,16 @@ const WhyChooseUs = () => {
             deep industry knowledge to every certification challenge.
           </p>
 
-          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60  flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <div className="w-2 h-2 border-t-2  border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
+          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+            <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
           </div>
         </div>
 
         {/* Feature Card 2 */}
-        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden">
+        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform hover:-translate-y-4">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A8781]/10 rounded-bl-full -mr-10 -mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60  p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <Bike className="w-7 h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
@@ -151,16 +151,16 @@ const WhyChooseUs = () => {
             process so you can focus on your core business.
           </p>
 
-          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60  flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <div className="w-2 h-2 border-t-2  border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
+          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+            <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
           </div>
         </div>
 
         {/* Feature Card 3 */}
-        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden">
+        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform hover:-translate-y-4">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A8781]/10 rounded-bl-full -mr-10 -mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60  p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <Globe className="w-7 h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
@@ -174,8 +174,8 @@ const WhyChooseUs = () => {
             India, China, Malaysia, Thailand and beyond.{" "}
           </p>
 
-          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60  flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <div className="w-2 h-2 border-t-2  border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
+          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+            <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
           </div>
         </div>
       </div>
@@ -225,7 +225,7 @@ const Stats = () => {
 
 const VideoShowcase = () => {
   return (
-    <div className="max-w-[84rem] mx-auto px-12 pb-20">
+    <div className="max-w-[84rem] mx-auto px-12 ">
       <div className="relative rounded-3xl shadow-2xl overflow-hidden group">
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 z-10"></div>
@@ -258,7 +258,6 @@ const VideoShowcase = () => {
 const OurServices = () => {
   const services = [
     {
-      id: 1,
       title: "BIS Certification",
       description:
         "Bureau of Indian Standards certification for products to ensure quality, safety and reliability in the Indian market.",
@@ -301,7 +300,7 @@ const OurServices = () => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const nextSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % services.length);
@@ -318,14 +317,14 @@ const OurServices = () => {
   };
 
   return (
-    <div className="py-24 bg-gradient-to-b from-[#F9F7F2] to-white">
+    <div className="py-20 bg-gradient-to-b from-[#F9F7F2] to-white">
       <div className="max-w-[84rem] mx-auto px-12">
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="font-playfair text-5xl font-bold text-[#1e1e1e] mb-6">
-            Comprehensive Certification Services
+        <div className="text-center mb-12">
+          <h2 className="font-playfair text-5xl font-bold text-[#1e1e1e] mb-4">
+            Our Certification Services
           </h2>
-          <p className="text-lg font-geist text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg font-geist text-gray-600 max-w-2xl mx-auto">
             We offer end-to-end solutions for all your certification needs to
             enter and thrive in the Indian market.
           </p>
