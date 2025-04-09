@@ -123,9 +123,7 @@ export const categories = [
 ];
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null);
   const buttonRef = useRef(null);
 
   const toggleMenu = () => {
@@ -267,21 +265,36 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
-             ref={buttonRef}
-             onClick={toggleMenu}
-           className="text-black focus:outline-none"
+            ref={buttonRef}
+            onClick={toggleMenu}
+            className="text-black focus:outline-none"
           >
-{isOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && <MobileNavbarMenu />}
     </div>
   );
 };
 
 export default Navbar;
+
+const MobileNavbarMenu = () => {
+  return (
+    <div className="md:hidden bg-white border-t border-neutral-200">
+      <div className="px-4 py-3 space-y-2">
+        <Link to="/">
+          <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors p-2 hover:bg-black/5 rounded-md">
+            Home
+          </div>
+        </Link>
+
+
+
+      </div>
+    </div>
+  );
+};
