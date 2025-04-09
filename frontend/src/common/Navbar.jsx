@@ -1,4 +1,3 @@
-
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import {
@@ -25,6 +24,7 @@ import {
   ShieldCheck,
   Cpu,
   Presentation,
+  Menu,
 } from "lucide-react";
 
 export const categories = [
@@ -123,23 +123,23 @@ export const categories = [
 const Navbar = () => {
   return (
     <div className="z-[50] sticky top-0 w-full border-b bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
-      <div className="flex items-center justify-between px-8 h-20 max-w-[88rem] mx-auto">
+      <div className="flex items-center justify-between px-4 md:px-8 h-20 max-w-[88rem] mx-auto">
         <div
           className=" selection:bg-emerald-600 flex items-center justify-center space-x-2.5 
-        text-2xl font-bold py-6 text-center text-neutral-600 mr-10"
+        text-2xl font-bold py-6 text-center text-neutral-600 md:mr-10"
         >
-          <img src={Logo} alt="logo" className="w-12 h-12" />
+          <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
           <Link to="/" className="py-2 text-center">
-            <h1 className="font-roboto text-black uppercase tracking-wider text-xl font-bold">
+            <h1 className="font-roboto text-black uppercase tracking-wider text-base md:text-xl font-bold">
               Sun Consultants & Engineers
             </h1>
-            <p className="text-foreground/80 text-xs uppercase font-normal">
+            <p className="text-foreground/80 text-xs uppercase font-normal ">
               Your Complete Certification Partner
             </p>
           </Link>
         </div>
 
-        <div className="flex items-center justify-end">
+        <div className="hidden  md:flex items-center justify-end">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -175,7 +175,6 @@ const Navbar = () => {
 
           <NavigationMenu>
             <NavigationMenuList>
-
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
                   Latest Updates
@@ -197,26 +196,23 @@ const Navbar = () => {
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
 
-              </NavigationMenuList>
-              </NavigationMenu>
-
-  <NavigationMenu>
+          <NavigationMenu>
             <NavigationMenuList>
-
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
                   Gallery
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-               <div className="p-4 w-60">
+                  <div className="p-4 w-60">
                     <Link to="/webinar" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <Presentation className="w-4 h-4 mr-2" />
                         Webinar
                       </div>
                     </Link>
-  
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -256,6 +252,17 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button
+          
+           className="text-black focus:outline-none"
+          >
+ <Menu className="w-6 h-6" />
+          </button>
+        </div>
+
       </div>
     </div>
   );
