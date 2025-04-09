@@ -25,7 +25,9 @@ import {
   Cpu,
   Presentation,
   Menu,
+  X,
 } from "lucide-react";
+import { useRef, useState } from "react";
 
 export const categories = [
   {
@@ -121,6 +123,15 @@ export const categories = [
 ];
 
 const Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="z-[50] sticky top-0 w-full border-b bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
       <div className="flex items-center justify-between px-4 md:px-8 h-20 max-w-[88rem] mx-auto">
@@ -129,14 +140,14 @@ const Navbar = () => {
         text-2xl font-bold py-6 text-center text-neutral-600 md:mr-10"
         >
           <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
-          {/* <Link to="/" className="py-2 text-center">
+          <Link to="/" className="py-2 text-center">
             <h1 className="font-roboto text-black uppercase tracking-wider leading-normal text-[14px] md:text-xl font-bold">
               Sun Consultants & Engineers
             </h1>
             <p className="text-foreground/80 text-[10px] md:text-xs leading-normal uppercase font-normal  ">
               Your Complete Certification Partner
             </p>
-          </Link> */}
+          </Link>
         </div>
 
         <div className="hidden  md:flex items-center justify-end">
@@ -256,10 +267,15 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
-          
+             ref={buttonRef}
+             onClick={toggleMenu}
            className="text-black focus:outline-none"
           >
- <Menu className="w-6 h-6" />
+{isOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
