@@ -283,17 +283,28 @@ const Navbar = () => {
 export default Navbar;
 
 const MobileNavbarMenu = () => {
+  const menuRef = useRef(null);
+
   return (
-    <div className="md:hidden bg-white border-t border-neutral-200">
-      <div className="px-4 py-3 space-y-2">
-        <Link to="/">
-          <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors p-2 hover:bg-black/5 rounded-md">
-            Home
-          </div>
-        </Link>
-
-
-
+    <div
+      ref={menuRef}
+      className="md:hidden bg-white border-t border-neutral-200 "
+    >
+      <div className="px-4 py-2 space-y-2 w-full">
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <Link to="/">
+                <Button
+                  variant="link"
+                  className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors w-full justify-start"
+                >
+                  Home
+                </Button>
+              </Link>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
       </div>
     </div>
   );
