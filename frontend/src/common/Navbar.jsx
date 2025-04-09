@@ -129,14 +129,14 @@ const Navbar = () => {
         text-2xl font-bold py-6 text-center text-neutral-600 md:mr-10"
         >
           <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
-          <Link to="/" className="py-2 text-center">
+          {/* <Link to="/" className="py-2 text-center">
             <h1 className="font-roboto text-black uppercase tracking-wider leading-normal text-[14px] md:text-xl font-bold">
               Sun Consultants & Engineers
             </h1>
             <p className="text-foreground/80 text-[10px] md:text-xs leading-normal uppercase font-normal  ">
               Your Complete Certification Partner
             </p>
-          </Link>
+          </Link> */}
         </div>
 
         <div className="hidden  md:flex items-center justify-end">
