@@ -130,10 +130,10 @@ const Navbar = () => {
         >
           <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
           <Link to="/" className="py-2 text-center">
-            <h1 className="font-roboto text-black uppercase tracking-wider text-base md:text-xl font-bold">
+            <h1 className="font-roboto text-black uppercase tracking-wider text-[14px] md:text-xl font-bold">
               Sun Consultants & Engineers
             </h1>
-            <p className="text-foreground/80 text-xs uppercase font-normal ">
+            <p className="text-foreground/80 text-xs uppercase font-normal hidden md:block ">
               Your Complete Certification Partner
             </p>
           </Link>
