@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
@@ -38,7 +38,7 @@ function App() {
         <Route path="/services/plastic-waste" element={<PlasticWaste />} />
         <Route path="/services/legal-metrology" element={<LegalMetrology />} />
         <Route path="/webinar" element={<Webinar />} />
-      </Routes>
+      </Routes> */}
     </>
   );
 }
