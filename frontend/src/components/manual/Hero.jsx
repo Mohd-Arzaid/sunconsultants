@@ -74,19 +74,19 @@ const Hero = () => {
 
       {/* For Mobile Device */}
       <main className="md:hidden flex flex-col gap-5 w-full min-h-screen">
-        <div className="bg-gray-100 w-full flex flex-col justify-center p-4">
+        <div className="bg-[#f9f7f2] w-full flex flex-col justify-center p-4">
           <div className="flex justify-between flex-col items-center w-full m-auto">
             <div className="flex flex-col gap-8 mt-10 mb-16">
               <WordPullUp
                 words="Sun Consultants And Engineers"
-                className="text-4xl font-geist font-bold text-left max-w-3xl break-words"
+                className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
               />
               <div className="max-w-2xl">
                 <FadeText
                   text="
              Trusted consultants for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
               "
-                  className="font-geist"
+                  className="font-geist text-zinc-500"
                   direction="left"
                 />
               </div>
@@ -98,7 +98,7 @@ const Hero = () => {
                 />
                 <BlurIn
                   word="Contact Us"
-                  className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
+                  className="border-2 font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
                 />
               </div>
             </div>
