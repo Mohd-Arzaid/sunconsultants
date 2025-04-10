@@ -75,7 +75,7 @@ const Hero = () => {
       {/* For Mobile Device */}
       <main className="md:hidden flex flex-col gap-5 w-full min-h-screen">
         <div className="bg-[#f9f7f2] w-full flex flex-col justify-center p-4">
-          <div className="flex justify-between flex-col items-center w-full m-auto">
+          <div className="flex justify-between flex-col items-center w-full m-auto pb-10">
             <div className="flex flex-col gap-8 mt-10 mb-16">
               <WordPullUp
                 words="Sun Consultants And Engineers"
