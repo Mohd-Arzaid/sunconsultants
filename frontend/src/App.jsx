@@ -18,9 +18,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/latest-notifications" element={<Notification />} />
         <Route path="/clients" element={<AllClients />} />
@@ -37,8 +37,8 @@ function App() {
         <Route path="/services/lmpc-registration" element={<LMPC />} />
         <Route path="/services/plastic-waste" element={<PlasticWaste />} />
         <Route path="/services/legal-metrology" element={<LegalMetrology />} />
-        <Route path="/webinar" element={<Webinar />} />
-      </Routes> */}
+        <Route path="/webinar" element={<Webinar />} /> */}
+      </Routes>
     </>
   );
 }

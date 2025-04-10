@@ -291,6 +291,7 @@ const MobileNavbarMenu = () => {
       className="md:hidden bg-white border-t border-neutral-200 "
     >
       <div className="px-4 py-2 space-y-2 w-full">
+        
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -305,16 +306,10 @@ const MobileNavbarMenu = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+        
 
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
-                Services
-              </NavigationMenuTrigger>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+
+
 
         
       </div>

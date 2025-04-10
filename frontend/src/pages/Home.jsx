@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-
+{/* 
       <LogoTicker />
 
       <Services />
@@ -25,7 +25,7 @@ const Home = () => {
 
       <LogoTicker />
 
-      <Countries />
+      <Countries /> */}
 
       {/* <div className="relative custom-radial-gradient">
         <div className="w-[768px] py-16 mx-auto">
@@ -146,7 +146,7 @@ const Home = () => {
       </div> */}
 
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
