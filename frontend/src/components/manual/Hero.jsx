@@ -102,9 +102,11 @@ const Hero = () => {
                 />
               </div>
             </div>
+            <img src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg" alt="Hero Image" className="md:w-1/2 w-96" />
           </div>
         </div>
       </main>
+
     </>
   );
 };
