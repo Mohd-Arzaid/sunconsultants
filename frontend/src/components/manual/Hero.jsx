@@ -1,6 +1,9 @@
 import HeroImage from "../../assets/images/Placeholder.png";
 import ArrowOne from "../../assets/images/ArrowOne.png";
 import ArrowTwo from "../../assets/images/ArrowTwo.png";
+import WordPullUp from "../ui/word-pull-up";
+import { FadeText } from "../ui/fade-text";
+import { BlurIn } from "../ui/blur-in";
 // import { ImagesSlider } from "../ui/images-slider";
 
 const Hero = () => {
@@ -70,50 +73,34 @@ const Hero = () => {
       </main>
 
       {/* For Mobile Device */}
-      <main className="md:hidden pb-16 pt-6 custom-radial-gradient overflow-hidden">
-        <div className="w-full px-4 mx-auto">
-          <div className="flex flex-col items-center">
-            <img
-              src={HeroImage}
-              alt="Hero Image"
-              className="shadow-lg w-full h-auto object-cover mb-6"
-            />
-            
-            <div className="py-5 px-4 bg-white/70 backdrop-blur-lg shadow-lg w-full">
-              <div className="relative">
-                <h1 className="text-3xl font-bold font-playfair text-center text-black leading-tight">
-                  Sun Consultants And Engineers
-                </h1>
-                <div className="w-12 h-1.5 bg-black mx-auto mt-2"></div>
+      <main className="md:hidden flex flex-col gap-5 w-full min-h-screen">
+        <div className="bg-gray-100  w-full flex flex-col justify-center p-4">
+          <div className="flex justify-between flex-col items-center w-full m-auto">
+            <div className="flex flex-col gap-8 mt-20 mb-20">
+              <WordPullUp
+                words="Sun Consultants And Engineers"
+                className="text-4xl font-geist font-bold text-left max-w-3xl break-words"
+              />
+              <div className="max-w-2xl">
+                <FadeText
+                  text="
+             Trusted consultants for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
+              "
+                  className="font-geist"
+                  direction="left"
+                />
               </div>
 
-              <div className="mt-4 text-sm text-zinc-500 mb-5 text-center">
-                Trusted consultants for BIS, LMPC, EPR, and WPC
-                certifications since 2013. We assist both Indian and foreign
-                manufacturers in obtaining essential government
-                certifications for the Indian market.
+              <div className="flex gap-3 flex-wrap items-center">
+                <BlurIn
+                  word="Our Services"
+                  className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
+                />
+                <BlurIn
+                  word="Contact Us"
+                  className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
+                />
               </div>
-            </div>
-            
-            <div className="flex w-full max-w-[280px] h-[60px] mt-6 shadow-md">
-              <div className="w-full h-full bg-white flex items-center justify-center">
-                <button>
-                  <img src={ArrowOne} alt="Arrow One" className="w-6 h-6" />
-                </button>
-              </div>
-              <div className="w-full h-full bg-[#64bfdd] flex items-center justify-center">
-                <button>
-                  <img src={ArrowTwo} alt="Arrow Two" className="w-6 h-6" />
-                </button>
-              </div>
-            </div>
-            
-            <div className="flex items-center justify-between w-full max-w-[200px] mt-4">
-              <div className="font-poppins text-[#313131] text-lg">01</div>
-              <div className="w-[100px] h-[8px] bg-white">
-                <div className="w-[38px] h-full bg-[#64bfdd]"></div>
-              </div>
-              <div className="font-poppins text-[#313131] text-lg">10</div>
             </div>
           </div>
         </div>
