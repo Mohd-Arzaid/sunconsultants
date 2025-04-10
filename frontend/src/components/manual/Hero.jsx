@@ -98,7 +98,7 @@ const Hero = () => {
                 />
                 <BlurIn
                   word="Contact Us"
-                  className="border-2 font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
+                  className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
                 />
               </div>
             </div>
