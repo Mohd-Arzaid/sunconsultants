@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <>
       <Hero />
-{/* 
+
       <LogoTicker />
 
-      <Services />
+      {/* <Services />
 
       <Contact />
 
