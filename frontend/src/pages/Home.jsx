@@ -15,9 +15,9 @@ const Home = () => {
 
       <LogoTicker />
 
-      {/* <Services />
+      <Services />
 
-      <Contact />
+      {/* <Contact />
 
       <LatestNews />
 

@@ -12,18 +12,18 @@ import { BoxReveal } from "../magicui/box-reveal";
 const Services = () => {
   return (
 
-    <div className=" pt-12 pb-16 custom-radial-gradient overflow-x-hidden ">
+    <div className="pt-10 md:pt-12 pb-16 custom-radial-gradient overflow-x-hidden ">
       <div className="max-w-[84rem] w-full mx-auto">
  
         <div className="flex flex-col items-center justify-center">
         <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-          <h2 className="text-[48px] font-bold font-roboto  text-center text-[#1E1E1E] ">
+          <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-roboto  text-center text-[#1E1E1E] ">
             Our Services
           </h2>
           </BoxReveal>
           
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-          <div className="flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+          <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
               India's Best Certificate Consultant
@@ -34,7 +34,7 @@ const Services = () => {
         </div>
 
 
-        <div className="mt-24 grid grid-cols-4 gap-x-10 gap-y-24">
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 gap-y-24">
        
    
           <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
