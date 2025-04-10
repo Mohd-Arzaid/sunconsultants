@@ -86,7 +86,7 @@ const Hero = () => {
                   text="
              Trusted consultants for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
               "
-                  className="font-geist text-zinc-500"
+                  className="font-geist text-gray-600"
                   direction="left"
                 />
               </div>
