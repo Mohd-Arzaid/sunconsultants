@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 
 const LogoTicker = () => {
   return (
-    <div className="h-28 bg-[#B9DEEB]">
+    <div className="h-20 md:h-28 bg-[#B9DEEB]">
     <div className="max-w-[84rem] mx-auto h-full ">
       <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
         <motion.div
@@ -24,19 +24,19 @@ const LogoTicker = () => {
           }}
           className="flex gap-14 pr-14 items-center justify-center flex-none"
         >
-          <img src={LogoOne} alt="Logo One" />
-          <img src={LogoThree} alt="Logo Three" />
-          <img src={LogoFour} alt="Logo Four" />
-          <img src={LogoFive} alt="Logo Five" />
+          <img src={LogoOne} alt="Logo One"      />
+          <img src={LogoThree} alt="Logo Three"  />
+          <img src={LogoFour} alt="Logo Four"    />
+          <img src={LogoFive} alt="Logo Five"    />
 
-          <img src={LogoSix} alt="Logo Six" />
+          <img src={LogoSix} alt="Logo Six"       />
 
-          <img src={LogoOne} alt="Logo One" />
-          <img src={LogoTwo} alt="Logo Two" />
-          <img src={LogoThree} alt="Logo Three" />
-          <img src={LogoFour} alt="Logo Four" />
-          <img src={LogoFive} alt="Logo Five" />
-          <img src={LogoSix} alt="Logo Six" />
+          <img src={LogoOne} alt="Logo One"        />
+          <img src={LogoTwo} alt="Logo Two"        />
+          <img src={LogoThree} alt="Logo Three"     />
+          <img src={LogoFour} alt="Logo Four"       />
+          <img src={LogoFive} alt="Logo Five"      />
+          <img src={LogoSix} alt="Logo Six"      />
 
           <img src={LogoOne} alt="Logo One" />
           <img src={LogoTwo} alt="Logo Two" />
