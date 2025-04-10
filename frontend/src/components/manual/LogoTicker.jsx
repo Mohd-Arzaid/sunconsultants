@@ -45,12 +45,12 @@ const LogoTicker = () => {
           <img src={LogoFive} alt="Logo Five" />
           <img src={LogoSix} alt="Logo Six" />
                   
-          <img src={LogoOne} alt="Logo One" />
-          <img src={LogoTwo} alt="Logo Two" />
-          <img src={LogoThree} alt="Logo Three" />
-          <img src={LogoFour} alt="Logo Four" />
-          <img src={LogoFive} alt="Logo Five" />
-          <img src={LogoSix} alt="Logo Six" />
+          <img src={LogoOne} alt="Logo One"  className="hidden md:block"/>
+          <img src={LogoTwo} alt="Logo Two" className="hidden md:block"/>
+          <img src={LogoThree} alt="Logo Three" className="hidden md:block" />
+          <img src={LogoFour} alt="Logo Four" className="hidden md:block" />
+          <img src={LogoFive} alt="Logo Five" className="hidden md:block" />
+          <img src={LogoSix} alt="Logo Six" className="hidden md:block" />
         </motion.div>
       </div>
     </div>
