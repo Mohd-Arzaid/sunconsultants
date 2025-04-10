@@ -76,7 +76,7 @@ const Hero = () => {
       <main className="md:hidden flex flex-col gap-5 w-full min-h-screen">
         <div className="bg-gray-100  w-full flex flex-col justify-center p-4">
           <div className="flex justify-between flex-col items-center w-full m-auto">
-            <div className="flex flex-col gap-8 mt-16 mb-12">
+            <div className="flex flex-col gap-8 mt-20 mb-16">
               <WordPullUp
                 words="Sun Consultants And Engineers"
                 className="text-4xl font-geist font-bold text-left max-w-3xl break-words"
