@@ -34,16 +34,16 @@ const Services = () => {
         </div>
 
 
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 gap-y-24">
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-5 md:px-0 gap-y-28 md:gap-y-24">
        
    
           <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <img
               src={BISImage}
               alt="BIS"
-              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+              className=" absolute inset-0 transform translate-x-[100px]  md:translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
             />
-            <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-lg  md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               BIS Mark (ISI License) for Foreign Manufacture
             </p>
           </div>
@@ -53,9 +53,9 @@ const Services = () => {
             <img
               src={CDSCO}
               alt="CDSCO"
-              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
-            />
-            <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              className=" absolute inset-0 transform translate-x-[100px]  md:translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+             />
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               CDSCO Registration Certification
             </p>
           </div>
@@ -64,9 +64,9 @@ const Services = () => {
             <img
               src={BISCRS}
               alt="BISCRS"
-              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
-            />
-            <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              className=" absolute inset-0 transform translate-x-[100px]  md:translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+           />
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               BIS (CRS) Registration
             </p>
           </div>
@@ -75,9 +75,9 @@ const Services = () => {
             <img
               src={PlasticWasteManagement}
               alt="PlasticWasteManagement"
-              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
-            />
-            <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              className=" absolute inset-0 transform translate-x-[100px]  md:translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+              />
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               Plastic Waste Management
             </p>
           </div>
@@ -86,9 +86,9 @@ const Services = () => {
             <img
               src={EPRCertificate}
               alt="EPRCertificate"
-              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
-            />
-            <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              className=" absolute inset-0 transform translate-x-[100px]  md:translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+              />
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               EPR Certificate Consultants
             </p>
           </div>
@@ -97,9 +97,9 @@ const Services = () => {
             <img
               src={LMPC}
               alt="LMPC"
-              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
-            />
-            <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              className=" absolute inset-0 transform translate-x-[100px]  md:translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+              />
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               LMPC Certificate Consultants
             </p>
           </div>
@@ -108,9 +108,9 @@ const Services = () => {
             <img
               src={BISImage}
               alt="BIS"
-              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
-            />
-            <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              className=" absolute inset-0 transform translate-x-[100px]  md:translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+              />
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               BIS Registration Certificate
             </p>
           </div>
@@ -119,9 +119,9 @@ const Services = () => {
             <img
               src={ISIMark}
               alt="ISIMark"
-              className=" absolute inset-0 transform translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
-            />
-            <p className="text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              className=" absolute inset-0 transform translate-x-[100px]  md:translate-x-[89px] translate-y-[-60px] w-[130px] h-[130px] rounded-full object-contain"
+              />
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               ISI MARK (BIS) for Indian Manufactures
             </p>
           </div>
