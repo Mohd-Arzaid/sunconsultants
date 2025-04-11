@@ -8,7 +8,7 @@ import { BoxReveal } from "../magicui/box-reveal";
 
 const Contact = () => {
   return (
-    <div className=" pt-6 md:pt-12 pb-16 custom-radial-gradient overflow-x-hidden ">
+    <div className=" pt-8 md:pt-12 pb-8 md:pb-16 custom-radial-gradient overflow-x-hidden ">
       <div className="max-w-[88rem] px-4 md:px-8 w-full flex flex-col md:flex-row  items-center justify-between mx-auto">
         <div className="w-full md:w-1/2">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
