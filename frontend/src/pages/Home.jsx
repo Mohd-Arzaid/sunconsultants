@@ -21,9 +21,9 @@ const Home = () => {
 
       <LatestNews />
 
-      {/* <Client />
+      <Client />
 
-      <LogoTicker />
+      {/* <LogoTicker />
 
       <Countries /> */}
 

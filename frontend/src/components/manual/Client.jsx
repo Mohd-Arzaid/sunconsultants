@@ -6,7 +6,7 @@ import TestimonialImageThree from "../../assets/images/TestimonialImageThree.png
 import Vector from "../../assets/images/Vector.png";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState } from "react";
-import { BlurFade } from "../magicui/blur-fade";
+
 
 const Client = () => {
   const slideData = [
@@ -54,17 +54,17 @@ const Client = () => {
   };
 
   return (
-    <div className=" pt-10 pb-8 custom-radial-gradient overflow-x-hidden ">
-      <div className="max-w-[88rem] px-8 w-full mx-auto overflow-hidden relative">
+    <div className=" pt-5 md:pt-10 pb-8 custom-radial-gradient overflow-x-hidden ">
+      <div className="max-w-[88rem] px-4 md:px-8 w-full mx-auto overflow-hidden relative">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[48px] font-bold font-roboto  text-center text-[#1E1E1E] ">
+            <h2 className="text-[30px] md:text-[48px] font-bold font-roboto  text-center text-[#1E1E1E] ">
               Our Clients
             </h2>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <div className="flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
                 What our clients have to say
@@ -75,7 +75,7 @@ const Client = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="w-full flex items-center justify-between mt-10  ">
+        <div className="hidden md:flex w-full flex items-center justify-between mt-10  ">
           {[-1, 0, 1].map((offset) => {
             const index =
               (current + offset + slideData.length) % slideData.length;
