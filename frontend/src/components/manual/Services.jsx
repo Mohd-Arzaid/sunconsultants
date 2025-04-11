@@ -12,12 +12,12 @@ import { BoxReveal } from "../magicui/box-reveal";
 const Services = () => {
   return (
 
-    <div className="pt-10 md:pt-12 pb-16 custom-radial-gradient overflow-x-hidden ">
+    <div className="pt-10 md:pt-12 pb-12  md:pb-16 custom-radial-gradient overflow-x-hidden ">
       <div className="max-w-[84rem] w-full mx-auto">
  
         <div className="flex flex-col items-center justify-center">
         <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-          <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-roboto  text-center text-[#1E1E1E] ">
+          <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
             Our Services
           </h2>
           </BoxReveal>

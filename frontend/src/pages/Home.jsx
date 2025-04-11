@@ -17,9 +17,9 @@ const Home = () => {
 
       <Services />
 
-      {/* <Contact />
+      <Contact />
 
-      <LatestNews />
+      {/* <LatestNews />
 
       <Client />
 
