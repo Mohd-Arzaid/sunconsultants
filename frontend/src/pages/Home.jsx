@@ -19,9 +19,9 @@ const Home = () => {
 
       <Contact />
 
-      {/* <LatestNews />
+      <LatestNews />
 
-      <Client />
+      {/* <Client />
 
       <LogoTicker />
 
