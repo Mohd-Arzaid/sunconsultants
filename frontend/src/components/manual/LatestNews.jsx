@@ -35,7 +35,7 @@ const LatestNews = () => {
   }, []);
 
   return (
-    <div className="h-28  bg-[#B9DEEB]">
+    <div className="h-20 md:h-28  bg-[#B9DEEB]">
       <div className="max-w-[84rem] mx-auto h-full flex justify-between items-center px-4 md:px-0 ">
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-[20px] md:text-[35px] font-bold font-roboto text-center">
