@@ -34,7 +34,7 @@ const Services = () => {
         </div>
 
 
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-5 md:px-0 gap-y-28 md:gap-y-24">
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
        
    
           <div className="relative  col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
