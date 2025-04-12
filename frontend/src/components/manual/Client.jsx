@@ -7,7 +7,6 @@ import Vector from "../../assets/images/Vector.png";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState } from "react";
 
-
 const Client = () => {
   const slideData = [
     {
@@ -74,6 +73,33 @@ const Client = () => {
           </BoxReveal>
         </div>
 
+        {/* Mobile Testimonials */}
+        <div className="md:hidden mt-8">
+          <div className="relative shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-[#B5DDEB] rounded-[30px] p-6 ">
+            <div className="flex flex-col items-center gap-4">
+              <img
+                src={slideData[current].image}
+                className="rounded-full w-24 h-24 object-cover border-4 border-white"
+                alt="Testimonial"
+              />
+              <div className="flex flex-col items-center justify-center text-center">
+                <div className="text-xl font-semibold font-roboto text-black tracking-wide">
+                  {slideData[current].name}
+                </div>
+                <span className="text-base font-roboto text-[#181040] tracking-wide">
+                  {slideData[current].designation}
+                </span>
+              </div>
+              <p className="text-base font-poppins text-[#5a4a4a] text-center ">
+                {slideData[current].description}
+              </p>
+            </div>
+            <div className="absolute top-4 right-4">
+              <img src={Vector} alt="Vector" className="w-10 h-10 opacity-50" />
+            </div>
+          </div>
+        </div>
+
         {/* Testimonials */}
         <div className="hidden md:flex w-full flex items-center justify-between mt-10  ">
           {[-1, 0, 1].map((offset) => {
@@ -83,21 +109,19 @@ const Client = () => {
 
             return (
               <div
-              key={index}
-              className="relative shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-[#B5DDEB] flex gap-7 rounded-[47px] p-8 transition-all duration-300 ease-in-out"
-              style={{
-                opacity: offset === 0 ? 1 : 0.7,
-                transform: `scale(${offset === 0 ? 1 : 0.9})`,
-              }}
-            >
+                key={index}
+                className="relative shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-[#B5DDEB] flex gap-7 rounded-[47px] p-8 transition-all duration-300 ease-in-out"
+                style={{
+                  opacity: offset === 0 ? 1 : 0.7,
+                  transform: `scale(${offset === 0 ? 1 : 0.9})`,
+                }}
+              >
                 <div className="flex flex-col items-center justify-center gap-3">
-              
                   <img
                     src={slide.image}
                     className="rounded-[52px] w-[235px] h-[284.58px] object-cover"
                     alt="Testimonial"
                   />
-               
 
                   <div className="flex flex-col items-center justify-center">
                     <div className="text-[27px] font-semibold font-roboto text-black tracking-wide">
