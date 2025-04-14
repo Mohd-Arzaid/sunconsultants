@@ -185,38 +185,42 @@ const WhyChooseUs = () => {
 
 const Stats = () => {
   return (
-    <div className="max-w-[84rem] mx-auto  px-12 pb-20">
-      <div className="grid grid-cols-4 gap-8 ">
+    <div className="max-w-[84rem] mx-auto  px-4 md:px-12 pb-16 md:pb-20">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8 ">
         <div className="text-center">
-          <h4 className="text-5xl font-bold font-geist text-[#1A8781] mb-2">
+          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             4,999+
           </h4>
-          <p className="text-gray-600 font-medium font-geist">
+          <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Projects Completed
           </p>
         </div>
 
         <div className="text-center">
-          <h4 className="text-5xl font-bold font-geist text-[#1A8781] mb-2">
+          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             1,299+
           </h4>
-          <p className="text-gray-600 font-medium font-geist">Happy Clients</p>
+          <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
+            Happy Clients
+          </p>
         </div>
 
         <div className="text-center">
-          <h4 className="text-5xl font-bold font-geist text-[#1A8781] mb-2">
+          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             20+
           </h4>
-          <p className="text-gray-600 font-medium font-geist">
+          <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Countries Served
           </p>
         </div>
 
         <div className="text-center">
-          <h4 className="text-5xl font-bold font-geist text-[#1A8781] mb-2">
+          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             100%
           </h4>
-          <p className="text-gray-600 font-medium font-geist">Success Rate</p>
+          <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
+            Success Rate
+          </p>
         </div>
       </div>
     </div>
@@ -225,27 +229,28 @@ const Stats = () => {
 
 const VideoShowcase = () => {
   return (
-    <div className="max-w-[84rem] mx-auto px-12 ">
-      <div className="relative rounded-3xl shadow-2xl overflow-hidden group">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 ">
+      <div className="relative rounded-3xl shadow-xl md:shadow-2xl overflow-hidden group">
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 z-10"></div>
 
         <img
           src={whychooseus}
           alt="Team working"
-          className="w-full h-[600px] object-cover group-hover:scale-105 transition-all duration-700"
+          className="w-full h-[450px] md:h-[600px] object-cover group-hover:scale-105 transition-all duration-700"
         />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 p-8">
-          <h3 className="text-white text-4xl font-bold font-playfair mb-6 text-center max-w-2xl">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 p-6 md:p-8">
+          <h3 className="text-white text-3xl md:text-4xl font-bold font-playfair mb-5 md:mb-6 text-center max-w-xs md:max-w-2xl">
             Experience Our Certification Excellence
           </h3>
 
-          <button className="flex items-center gap-3 bg-white/90 backdrop-blur-sm py-4 px-6 rounded-full shadow-xl hover:bg-white transition-all duration-300 group/btn">
-            <div className="w-12 h-12 bg-[#1A8781] rounded-full flex items-center justify-center">
-              <Play className="w-5 h-5 text-white ml-1" />
+          <button className="flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-sm py-3 md:py-4 px-4 md:px-6 rounded-full shadow-xl hover:bg-white transition-all duration-300 group/btn">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1A8781] rounded-full flex items-center justify-center">
+              <Play className="w-4 h-4 md:w-5 md:h-5 text-white ml-1" />
             </div>
-            <span className="font-medium text-lg text-gray-800 group-hover/btn:text-[#1A8781] transition-colors duration-300">
+
+            <span className="font-medium text-base md:text-lg text-gray-800 group-hover/btn:text-[#1A8781] transition-colors duration-300">
               Watch Our Story
             </span>
           </button>
@@ -317,14 +322,14 @@ const OurServices = () => {
   };
 
   return (
-    <div className="py-20 bg-gradient-to-b from-[#F9F7F2] to-white">
-      <div className="max-w-[84rem] mx-auto px-12">
+    <div className="py-16 md:py-20 bg-gradient-to-b from-[#F9F7F2] to-white">
+      <div className="max-w-[84rem] mx-auto px-4 md:px-12">
         {/* Heading */}
-        <div className="text-center mb-12">
-          <h2 className="font-playfair text-5xl font-bold text-[#1e1e1e] mb-4">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
             Our Certification Services
           </h2>
-          <p className="text-lg font-geist text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg font-geist text-gray-600  max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
             We offer end-to-end solutions for all your certification needs to
             enter and thrive in the Indian market.
           </p>
@@ -332,6 +337,7 @@ const OurServices = () => {
 
         {/* Carousel */}
         <div className="relative">
+          
           {/* Main carousel display */}
           <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px] bg-gradient-to-br from-[#1A8781]/5 to-[#1A8781]/20 border border-[#1A8781]/30">
             <div
@@ -344,6 +350,7 @@ const OurServices = () => {
                   className="min-w-full h-full flex items-center p-12"
                 >
                   <div className="grid grid-cols-2 gap-12 items-center">
+                
                     {/* Left content */}
                     <div className="flex flex-col gap-6">
                       <div className="bg-white/80 backdrop-blur-sm w-24 h-24 rounded-2xl flex items-center justify-center shadow-lg text-5xl">
@@ -374,11 +381,16 @@ const OurServices = () => {
                         </div>
                       </div>
                     </div>
+
+
+
                   </div>
                 </div>
               ))}
             </div>
           </div>
+
+
 
           {/* Indicators */}
           <div className="flex justify-center mt-8 gap-3">
