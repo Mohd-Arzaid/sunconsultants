@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
+
 import { ChevronLeft, ChevronRight, FileText } from "lucide-react";
 
 const Notification = () => {
@@ -16,26 +16,26 @@ export default Notification;
 const NotificationMainContent = () => {
   return (
     <div className=" bg-[#f9f7f2]">
-      <div className=" max-w-[88rem] mx-auto p-12">
+      <div className=" max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         {/* Heading */}
-        <div className="text-center mb-10">
-          <h1 className="font-playfair text-5xl font-bold text-[#1e1e1e] mb-4">
+        <div className="text-center mb-6 md:mb-10">
+          <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
             DRAFT QCO Notifications
           </h1>
-          <p className="text-lg font-geist text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg font-geist text-gray-600 max-w-2xl mx-auto">
             Stay updated with the latest Quality Control Order notifications and
             certification requirements
           </p>
         </div>
 
         {/* Search Bar */}
-        <div className=" mb-20 max-w-2xl mx-auto">
+        <div className=" mb-12 md:mb-20 max-w-2xl mx-auto">
           <div className="relative">
             <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
             <input
               type="text"
               placeholder="Search for Government Notification/QCO Updates"
-              className="w-full pl-12 placeholder:font-geist placeholder:text-[18px] pr-4 py-4 rounded-full shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] border-2 border-transparent bg-white focus:border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-100 transition-all duration-200"
+              className="w-full pl-11 md:pl-12 placeholder:font-geist  placeholder:text-[17px] sm:placeholder:text-[18px] pr-4 py-3 md:py-4 rounded-full shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] border-2 border-transparent bg-white focus:border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-100 transition-all duration-200"
             />
           </div>
         </div>
@@ -44,7 +44,7 @@ const NotificationMainContent = () => {
         <NotificationCard />
       </div>
 
-      <div className="pb-12 flex items-center justify-center">
+      <div className="pb-8 md:pb-12 flex items-center justify-center">
         {/* Pagination */}
         <Pagination />
       </div>
@@ -147,7 +147,7 @@ const NotificationCard = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 ">
       {notifications.map((notification) => (
         <NotificationCardItem
           key={notification.id}
@@ -165,8 +165,8 @@ const NotificationCard = () => {
 const NotificationCardItem = ({ color, tagType, date, title, description }) => {
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-[0_15px_30px_-10px_rgba(0,0,0,0.1)]">
-      <div className="h-4" style={{ backgroundColor: color }}></div>
-      <div className="p-8">
+      <div className="h-3 md:h-4" style={{ backgroundColor: color }}></div>
+      <div className="p-5 md:p-8">
         <div className="flex items-center justify-between mb-5">
           <span
             className="px-4 py-1.5 font-geist font-medium text-sm rounded-full"
