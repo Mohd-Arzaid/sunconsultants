@@ -338,7 +338,7 @@ const OurServices = () => {
         {/* Carousel */}
         <div className="relative">
           {/* Main carousel display */}
-          <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px] bg-gradient-to-br from-[#1A8781]/5 to-[#1A8781]/20 border border-[#1A8781]/30">
+          <div className="relative overflow-hidden rounded-3xl shadow-2xl h-auto md:h-[500px] bg-gradient-to-br from-[#1A8781]/5 to-[#1A8781]/20 border border-[#1A8781]/30">
             <div
               className="flex transition-transform duration-500 h-full"
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
@@ -346,22 +346,22 @@ const OurServices = () => {
               {services.map((service) => (
                 <div
                   key={service.id}
-                  className="min-w-full h-full flex items-center p-12"
+                  className="min-w-full h-full flex items-center p-6 md:p-12"
                 >
-                  <div className="grid grid-cols-2 gap-12 items-center">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-center w-full">
                     {/* Left content */}
-                    <div className="flex flex-col gap-6">
-                      <div className="bg-white/80 backdrop-blur-sm w-24 h-24 rounded-2xl flex items-center justify-center shadow-lg text-5xl">
+                    <div className="flex flex-col gap-4 md:gap-6 order-2 md:order-1">
+                      <div className="hidden md:block bg-white/80 backdrop-blur-sm w-16 h-16 md:w-24 md:h-24 rounded-2xl flex items-center justify-center shadow-lg text-4xl md:text-5xl mx-auto md:mx-0">
                         {service.icon}
                       </div>
-                      <h3 className="font-playfair text-4xl font-bold text-[#1e1e1e]">
+                      <h3 className="font-playfair text-2xl md:text-4xl font-bold text-[#1e1e1e] text-center md:text-left">
                         {service.title}
                       </h3>
-                      <p className="text-xl font-geist text-gray-700 leading-relaxed">
+                      <p className="text-base md:text-xl font-geist text-gray-700 leading-relaxed text-center md:text-left">
                         {service.description}
                       </p>
-                      <button className="flex items-center gap-3 bg-[#1A8781] text-white py-3 px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-4 group">
-                        <span className="font-medium">Learn More</span>
+                      <button className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-2 md:mt-4 group mx-auto md:mx-0">
+                        <span className="font-medium text-sm md:text-base">Learn More</span>
                         <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30">
                           <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45"></div>
                         </div>
@@ -369,12 +369,12 @@ const OurServices = () => {
                     </div>
 
                     {/* Right illustration */}
-                    <div className="relative">
-                      <div className="absolute -top-10 -left-10 w-40 h-40 bg-[#1A8781]/10 rounded-full"></div>
-                      <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-[#1A8781]/15 rounded-full"></div>
+                    <div className="relative order-1 md:order-2">
+                      <div className="hidden md:block absolute -top-10 -left-10 w-40 h-40 bg-[#1A8781]/10 rounded-full"></div>
+                      <div className="hidden md:block absolute -bottom-10 -right-10 w-60 h-60 bg-[#1A8781]/15 rounded-full"></div>
 
-                      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[350px] flex items-center justify-center">
-                        <div className="text-9xl flex items-center justify-center">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[200px] sm:h-[250px] md:h-[350px] flex items-center justify-center mb-6 md:mb-0">
+                        <div className="text-7xl md:text-9xl flex items-center justify-center">
                           {service.icon}
                         </div>
                       </div>
