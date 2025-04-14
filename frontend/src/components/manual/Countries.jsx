@@ -97,7 +97,7 @@ const Countries = () => {
 
               {/* Desktop */}
               {/* Thailand */}
-              <div className="hidden md:block w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              <div className="hidden  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img
                     src={Thailand}
@@ -120,7 +120,7 @@ const Countries = () => {
               </div>
 
               {/* Vietnam */}
-              <div className="hidden md:block  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              <div className="hidden   w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img src={Vietnam} alt="Thailand" />
                 </div>
@@ -139,7 +139,7 @@ const Countries = () => {
               </div>
 
               {/* Canada */}
-              <div className="hidden md:block  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              <div className="hidden  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img src={Canada} alt="Canada" />
                 </div>
@@ -158,7 +158,7 @@ const Countries = () => {
               </div>
 
               {/* China */}
-              <div className="hidden md:block  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              <div className="hidden  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img src={China} alt="China" />
                 </div>
@@ -177,7 +177,7 @@ const Countries = () => {
               </div>
 
               {/* Italy */}
-              <div className="hidden md:block  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              <div className="hidden  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img src={Italy} alt="Italy" />
                 </div>
@@ -196,7 +196,7 @@ const Countries = () => {
               </div>
 
               {/* Colombia */}
-              <div className="hidden md:block  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              <div className="hidden  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img src={Colombia} alt="Colombia" />
                 </div>
@@ -215,7 +215,7 @@ const Countries = () => {
               </div>
 
               {/* Qatar */}
-              <div className="hidden md:block  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              <div className="hidden  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img src={Qatar} alt="Qatar" />
                 </div>
@@ -234,7 +234,7 @@ const Countries = () => {
               </div>
 
               {/* India */}
-              <div className="hidden md:block  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 flex flex-col items-center justify-center ">
+              <div className="hidden  w-[380px] h-[380px]  bg-[#B5DDEB]  shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center ">
                 <div className="w-full h-full flex items-center justify-center">
                   <img src={India} alt="India" />
                 </div>
