@@ -337,7 +337,6 @@ const OurServices = () => {
 
         {/* Carousel */}
         <div className="relative">
-          
           {/* Main carousel display */}
           <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px] bg-gradient-to-br from-[#1A8781]/5 to-[#1A8781]/20 border border-[#1A8781]/30">
             <div
@@ -350,7 +349,6 @@ const OurServices = () => {
                   className="min-w-full h-full flex items-center p-12"
                 >
                   <div className="grid grid-cols-2 gap-12 items-center">
-                
                     {/* Left content */}
                     <div className="flex flex-col gap-6">
                       <div className="bg-white/80 backdrop-blur-sm w-24 h-24 rounded-2xl flex items-center justify-center shadow-lg text-5xl">
@@ -381,24 +379,19 @@ const OurServices = () => {
                         </div>
                       </div>
                     </div>
-
-
-
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-
-
           {/* Indicators */}
-          <div className="flex justify-center mt-8 gap-3">
+          <div className="flex justify-center mt-6 md:mt-8 gap-2 md:gap-3">
             {services.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                   activeIndex === index
                     ? "bg-[#1A8781] w-10"
                     : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
@@ -409,20 +402,22 @@ const OurServices = () => {
         </div>
 
         {/* Service thumbnails */}
-        <div className="mt-16 grid grid-cols-6 gap-4">
+        <div className="mt-12 md:mt-16 grid grid-cols-3 sm:grid-cols-6 gap-3 md:gap-4">
           {services.map((service, index) => (
             <div
-              key={service.id}
+              key={service.id || index}
               onClick={() => goToSlide(index)}
-              className={`cursor-pointer rounded-xl p-4 transition-all duration-300 border ${
+              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${
                 activeIndex === index
                   ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
                   : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
               }`}
             >
-              <div className="flex flex-col items-center text-center gap-2">
-                <div className="text-3xl mb-1">{service.icon}</div>
-                <h4 className="font-geist font-medium text-sm">
+              <div className="flex flex-col items-center text-center gap-1 md:gap-2">
+                <div className="text-2xl md:text-3xl mb-0.5 md:mb-1">
+                  {service.icon}
+                </div>
+                <h4 className="font-geist font-medium text-xs md:text-sm leading-tight">
                   {service.title}
                 </h4>
               </div>
