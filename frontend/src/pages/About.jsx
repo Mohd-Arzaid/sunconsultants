@@ -97,84 +97,84 @@ export default About;
 
 const WhyChooseUs = () => {
   return (
-    <div className=" max-w-[84rem] mx-auto px-12 pt-12 pb-24">
+    <div className=" max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-16 md:pb-24">
       {/* Heading */}
-      <div className="text-center mb-10">
-        <h1 className="font-playfair text-5xl font-bold text-[#1e1e1e] mb-4">
+      <div className="text-center mb-8 md:mb-10">
+        <h1 className="font-playfair text-4xl  md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
           Why Choose Us?{" "}
         </h1>
-        <p className="text-lg font-geist text-gray-600 max-w-2xl mx-auto">
+        <p className=" text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
           We simplify certification by managing compliance, saving you time and
           effort to focus on business growth.{" "}
         </p>
       </div>
 
       {/* Features Grid */}
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-8">
         {/* Feature Card 1 */}
-        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform hover:-translate-y-4">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A8781]/10 rounded-bl-full -mr-10 -mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+        <div className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform md:hover:-translate-y-4">
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <User className="w-7 h-7 text-[#1A8781] group-hover:text-[#131316]" />
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-3 md:p-4 rounded-full h-fit w-fit mb-4 md:mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
+            <User className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
-          <h3 className="font-geist font-semibold text-[#131316] text-xl mb-3">
+          <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-2 md:mb-3">
             Comprehensive Certification Solutions
           </h3>
 
-          <p className="text-gray-600 font-geist ">
+          <p className="text-gray-600 font-geist text-sm md:text-base">
             With 4,999+ projects executed and 1,299+ happy clients, we bring
             deep industry knowledge to every certification challenge.
           </p>
 
-          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
           </div>
         </div>
 
         {/* Feature Card 2 */}
-        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform hover:-translate-y-4">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A8781]/10 rounded-bl-full -mr-10 -mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+        <div className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform md:hover:-translate-y-4">
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <Bike className="w-7 h-7 text-[#1A8781] group-hover:text-[#131316]" />
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-3 md:p-4 rounded-full h-fit w-fit mb-4 md:mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
+            <Bike className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
-          <h3 className="font-geist font-semibold text-[#131316] text-xl mb-3">
+          <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-2 md:mb-3">
             {" "}
             Fast & Efficient Process
           </h3>
 
-          <p className="text-gray-600 font-geist ">
+          <p className="text-gray-600 font-geist text-sm md:text-base">
             Our dedicated team ensures a smooth and time-efficient certification
             process so you can focus on your core business.
           </p>
 
-          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
           </div>
         </div>
 
         {/* Feature Card 3 */}
-        <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform hover:-translate-y-4">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A8781]/10 rounded-bl-full -mr-10 -mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+        <div className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform md:hover:-translate-y-4">
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-4 rounded-full h-fit w-fit mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <Globe className="w-7 h-7 text-[#1A8781] group-hover:text-[#131316]" />
+          <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-3 md:p-4 rounded-full h-fit w-fit mb-4 md:mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
+            <Globe className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
-          <h3 className="font-geist font-semibold text-[#131316] text-xl mb-3">
+          <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-2 md:mb-3">
             {" "}
             Global Reach
           </h3>
 
-          <p className="text-gray-600 font-geist ">
+          <p className="text-gray-600 font-geist text-sm md:text-base">
             We assist manufacturers and exporters from 20+ countries, including
             India, China, Malaysia, Thailand and beyond.{" "}
           </p>
 
-          <div className="mt-6 w-10 h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
           </div>
         </div>

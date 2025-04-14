@@ -20,8 +20,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/about" element={<About />} />
+       {/* <Route path="/contact" element={<ContactUs />} />
         <Route path="/latest-notifications" element={<Notification />} />
         <Route path="/clients" element={<AllClients />} />
         <Route
