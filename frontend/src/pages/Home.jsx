@@ -23,9 +23,9 @@ const Home = () => {
 
       <Client />
 
-      {/* <LogoTicker />
+      <LogoTicker />
 
-      <Countries /> */}
+      <Countries />
 
       {/* <div className="relative custom-radial-gradient">
         <div className="w-[768px] py-16 mx-auto">
