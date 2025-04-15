@@ -9,6 +9,12 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
   BookText,
   CheckCircle,
   Radiation,
@@ -275,43 +281,173 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && <MobileNavbarMenu />}
+      {isOpen && <MobileNavbarMenu closeMenu={toggleMenu} />}
     </div>
   );
 };
 
 export default Navbar;
 
-const MobileNavbarMenu = () => {
+const MobileNavbarMenu = ({ closeMenu }) => {
   const menuRef = useRef(null);
+
+  const handleLinkClick = () => {
+    if (closeMenu) {
+      closeMenu();
+    }
+  };
 
   return (
     <div
       ref={menuRef}
-      className="md:hidden bg-white border-t border-neutral-200 "
+      className="md:hidden absolute top-full left-0 w-full bg-white border-t border-b border-neutral-200 shadow-md z-40"
     >
-      <div className="px-4 py-2 space-y-2 w-full">
-        
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <Link to="/">
-                <Button
-                  variant="link"
-                  className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors w-full justify-start"
-                >
-                  Home
-                </Button>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-        
+      <div className="px-4 py-4 space-y-1">
+        <Link
+          to="/"
+          className="block w-full"
+          onClick={handleLinkClick}
+        >
+          <Button
+            variant="ghost"
+            className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
+          >
+            Home
+          </Button>
+        </Link>
 
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="item-1" className="border-b-0">
+            <AccordionTrigger className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:no-underline transition-colors w-full justify-between py-3 px-4 hover:bg-neutral-100 rounded-md">
+              Services
+            </AccordionTrigger>
+            <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
+              <ul className="flex flex-col space-y-1 py-1">
+                {categories.map((category, index) => (
+                  <li key={index} className="w-full">
+                    <Link
+                      to={category.link}
+                      className="block w-full"
+                      onClick={handleLinkClick}
+                    >
+                      <Button
+                        variant="ghost"
+                        className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                      >
+                        {category.icon}
+                        {category.name}
+                      </Button>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </AccordionContent>
+          </AccordionItem>
 
+          <AccordionItem value="item-2" className="border-b-0">
+            <AccordionTrigger className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:no-underline transition-colors w-full justify-between py-3 px-4 hover:bg-neutral-100 rounded-md">
+              Latest Updates
+            </AccordionTrigger>
+            <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
+              <ul className="flex flex-col space-y-1 py-1">
+                <li className="w-full">
+                  <Link
+                    to="/latest-notifications"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <BookText className="w-4 h-4 mr-2" />
+                      Latest Notification
+                    </Button>
+                  </Link>
+                </li>
+                <li className="w-full">
+                  <Link
+                    to="/ministry-updates"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <FileWarning className="w-4 h-4 mr-2" />
+                      Ministry Updates
+                    </Button>
+                  </Link>
+                </li>
+              </ul>
+            </AccordionContent>
+          </AccordionItem>
 
+          <AccordionItem value="item-3" className="border-b-0">
+            <AccordionTrigger className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:no-underline transition-colors w-full justify-between py-3 px-4 hover:bg-neutral-100 rounded-md">
+              Gallery
+            </AccordionTrigger>
+            <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
+              <ul className="flex flex-col space-y-1 py-1">
+                <li className="w-full">
+                  <Link
+                    to="/webinar"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <Presentation className="w-4 h-4 mr-2" />
+                      Webinar
+                    </Button>
+                  </Link>
+                </li>
+              </ul>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
 
-        
+        <Link
+          to="/about"
+          className="block w-full"
+          onClick={handleLinkClick}
+        >
+          <Button
+            variant="ghost"
+            className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
+          >
+            About
+          </Button>
+        </Link>
+
+        <Link
+          to="/contact"
+          className="block w-full"
+          onClick={handleLinkClick}
+        >
+          <Button
+            variant="ghost"
+            className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
+          >
+            Contact
+          </Button>
+        </Link>
+
+        <Link
+          to="/"
+          className="block w-full"
+          onClick={handleLinkClick}
+        >
+          <Button
+            variant="ghost"
+            className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
+          >
+            FAQs
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -21,10 +21,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/contact" element={<ContactUs />} /> */}
+        <Route path="/contact" element={<ContactUs />} />
          <Route path="/latest-notifications" element={<Notification />} />
-       {/* <Route path="/clients" element={<AllClients />} /> */}
-         {/* <Route
+       <Route path="/clients" element={<AllClients />} />
+         <Route
           path="/services/cdsco-registration-certification"
           element={<CDSCO />}
         />
@@ -36,7 +36,7 @@ function App() {
         />
         <Route path="/services/lmpc-registration" element={<LMPC />} />
         <Route path="/services/plastic-waste" element={<PlasticWaste />} />
-        <Route path="/services/legal-metrology" element={<LegalMetrology />} /> */}
+        <Route path="/services/legal-metrology" element={<LegalMetrology />} />
         <Route path="/webinar" element={<Webinar />} /> 
       </Routes>
     </>
