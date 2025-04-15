@@ -14,13 +14,13 @@ export default Webinar;
 
 const WebinarHero = () => {
   return (
-    <div className=" max-w-[84rem] mx-auto px-12 pt-12 pb-24">
+    <div className=" max-w-[84rem] mx-auto px-4 md:px-12 pt-8 md:pt-12 pb-10 md:pb-20">
       {/* Heading */}
-      <div className="text-center mb-9">
-        <h1 className="font-playfair text-5xl font-bold text-[#1e1e1e] mb-4">
+      <div className="text-center mb-8 md:mb-9">
+        <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
           Our Certification Webinars{" "}
         </h1>
-        <p className="text-lg font-geist text-gray-600 max-w-3xl mx-auto">
+        <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-3xl mx-auto ">
           Join our expert-led webinars to gain valuable insights into
           certification processes, regulatory updates, and industry best
           practices for the Indian market.
@@ -28,20 +28,20 @@ const WebinarHero = () => {
       </div>
 
       {/* Button */}
-      <div className="flex items-center justify-center gap-6 mb-12">
-        <button className="flex items-center gap-3 bg-[#1A8781] text-white py-3 px-8 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 group">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-10 md:mb-12">
+        <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#1A8781] text-white py-3 px-8 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 group">
           <span className="font-medium">Register Now</span>
           <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30">
             <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45"></div>
           </div>
         </button>
 
-        <button className="flex items-center gap-3 border-2 border-[#1A8781]/30 text-[#1A8781] py-3 px-8 rounded-full hover:border-[#1A8781] hover:bg-[#1A8781]/5 transition-all duration-300">
+        <button className="w-full md:w-auto items-center gap-3 border-2 border-[#1A8781]/30 text-[#1A8781] py-3 px-8 rounded-full hover:border-[#1A8781] hover:bg-[#1A8781]/5 transition-all duration-300">
           <span className="font-medium">View Schedule</span>
         </button>
       </div>
 
-      <div className="relative rounded-3xl shadow-2xl overflow-hidden group h-[500px]">
+      <div className="relative rounded-2xl md:rounded-3xl shadow-lg md:shadow-2xl overflow-hidden group h-[400px] md:h-[500px]">
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 z-10"></div>
 
@@ -51,23 +51,23 @@ const WebinarHero = () => {
           className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
         />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 p-8">
-          <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20 mb-8">
-            <div className="text-white font-semibold text-lg">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 p-4 md:p-8">
+          <div className="bg-white/10 backdrop-blur-md px-4 md:px-6 py-2 md:py-4 rounded-xl md:rounded-2xl border border-white/20 mb-6 md:mb-8">
+            <div className="text-white font-semibold text-base md:text-lg">
               Join Our Upcoming Webinar
             </div>
           </div>
 
-          <h3 className="text-white text-4xl font-bold font-playfair mb-6 text-center max-w-3xl">
+          <h3 className="text-white text-2xl md:text-4xl font-bold font-playfair mb-5 md:mb-6 text-center max-w-xs  md:max-w-3xl">
             Complete Certification Process and Documentation Guide
           </h3>
 
-          <button className="flex items-center gap-3 bg-white/90 backdrop-blur-sm py-3 px-6 rounded-full shadow-xl hover:bg-white transition-all duration-300 group/btn">
-            <span className="font-medium text-lg text-gray-800 group-hover/btn:text-[#1A8781] transition-colors duration-300">
+          <button className="flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-sm py-2 px-4 md:py-3 md:px-6 rounded-full shadow-xl hover:bg-white transition-all duration-300 group/btn">
+            <span className="font-medium text-base md:text-lg text-gray-800 group-hover/btn:text-[#1A8781] transition-colors duration-300">
               Register Now
             </span>
-            <div className="w-12 h-12 bg-[#1A8781] rounded-full flex items-center justify-center">
-              <ChevronRight className="w-5 h-5 text-white ml-1" />
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1A8781] rounded-full flex items-center justify-center">
+              <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-white ml-1" />
             </div>
           </button>
         </div>
@@ -114,27 +114,26 @@ const PastWebinars = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#F9F7F2] to-white pb-20">
-      <div className="max-w-[84rem] mx-auto px-12">
+    <div className="bg-gradient-to-b from-[#F9F7F2] to-white pb-12 md:pb-20">
+      <div className="max-w-[84rem] mx-auto px-4 md:px-12">
         {/* Heading */}
-        <div className=" flex flex-col gap-2  mb-12">
-          <h2 className="font-playfair text-4xl font-bold text-[#1e1e1e]">
+        <div className=" flex flex-col gap-2 mb-8 md:mb-12">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1e1e1e]">
             Past Webinars
           </h2>
-          <p className="text-lg font-geist text-gray-600 max-w-2xl">
+          <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl">
             Access our library of past webinars to learn at your own pace.
           </p>
         </div>
 
         {/* Webinar Cards */}
-
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {upcomingWebinars.map((webinar) => (
             <div
               key={webinar.id}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/10 hover:border-[#1A8781]/30 "
+              className="group bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/10 hover:border-[#1A8781]/30 "
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-40 md:h-48 overflow-hidden">
                 <img
                   src={webinar.image}
                   alt={webinar.title}
@@ -145,12 +144,12 @@ const PastWebinars = () => {
                 </div>
               </div>
 
-              <div className="p-6">
-                <h3 className="font-geist font-semibold text-[#131316] text-xl mb-3 line-clamp-2">
+              <div className="p-4 md:p-6">
+                <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-3 line-clamp-2">
                   {webinar.title}
                 </h3>
 
-                <div className="flex flex-col gap-3 mb-6">
+                <div className="flex flex-col gap-2 md:gap-3 mb-5 md:mb-6">
                   <div className="flex items-center gap-2 text-gray-600">
                     <Clock className="w-4 h-4 text-[#1A8781]" />
                     <span className="text-sm">
@@ -165,12 +164,12 @@ const PastWebinars = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <button className="flex items-center gap-2 bg-[#1A8781]/10 text-[#1A8781] py-2 px-4 rounded-full hover:bg-[#1A8781]/20 transition-all duration-300">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                 <button className="w-full md:w-auto flex items-center justify-center gap-2 bg-[#1A8781]/10 text-[#1A8781] py-2 px-4 rounded-full hover:bg-[#1A8781]/20 transition-all duration-300">
                     <Calendar className="w-4 h-4" />
                     <span className="font-medium">Register</span>
                   </button>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 self-end sm:self-center">
                     <div className="w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
                       <img
                         src="https://randomuser.me/api/portraits/men/32.jpg"
@@ -192,64 +191,64 @@ const PastWebinars = () => {
   );
 };
 
-
 const WebinarBenefits = () => {
   const benefits = [
     {
       title: "Expert-Led Sessions",
-      description: "Learn directly from our certification specialists with years of industry experience.",
-      icon: "👨‍🏫"
+      description:
+        "Learn directly from our certification specialists with years of industry experience.",
+      icon: "👨‍🏫",
     },
     {
       title: "Interactive Q&A",
-      description: "Get your specific certification questions answered in real-time during our sessions.",
-      icon: "💬"
+      description:
+        "Get your specific certification questions answered in real-time during our sessions.",
+      icon: "💬",
     },
     {
       title: "Latest Regulatory Updates",
-      description: "Stay informed about the newest changes in certification requirements and regulations.",
-      icon: "📋"
+      description:
+        "Stay informed about the newest changes in certification requirements and regulations.",
+      icon: "📋",
     },
     {
       title: "Case Studies",
-      description: "Learn from real-world examples and success stories of companies entering the Indian market.",
-      icon: "📊"
-    }
+      description:
+        "Learn from real-world examples and success stories of companies entering the Indian market.",
+      icon: "📊",
+    },
   ];
 
   return (
-    <div className="max-w-[84rem] mx-auto px-12 pb-20 pt-16">
-      <div className="text-center mb-16">
-        <h2 className="font-playfair text-4xl font-bold text-[#1e1e1e] mb-4">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pb-12 md:pb-20 pt-16">
+      <div className="text-center mb-12 md:mb-16">
+        <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1e1e1e] mb-4">
           Why Attend Our Webinars?
         </h2>
-        <p className="text-lg font-geist text-gray-600 max-w-2xl mx-auto">
-          Our certification webinars are designed to provide valuable insights and practical knowledge.
+        <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto">
+          Our certification webinars are designed to provide valuable insights
+          and practical knowledge.
         </p>
       </div>
 
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
         {benefits.map((benefit, index) => (
-          <div 
+          <div
             key={index}
-            className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform hover:-translate-y-2"
+            className="group bg-white rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform hover:-translate-y-2"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A8781]/10 rounded-bl-full -mr-10 -mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-            <div className="text-5xl mb-6">{benefit.icon}</div>
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6">{benefit.icon}</div>
 
-            <h3 className="font-geist font-semibold text-[#131316] text-xl mb-3">
+            <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-3">
               {benefit.title}
             </h3>
 
-            <p className="text-gray-600 font-geist">
-              {benefit.description}
-            </p>
+            <p className="text-gray-600 font-geist text-sm md:text-base">{benefit.description}</p>
           </div>
         ))}
       </div>
     </div>
   );
 };
-
-
