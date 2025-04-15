@@ -146,7 +146,7 @@ const Home = () => {
       </div> */}
 
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
