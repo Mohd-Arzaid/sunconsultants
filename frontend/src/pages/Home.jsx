@@ -28,12 +28,12 @@ const Home = () => {
       <Countries />
 
       <div className="relative custom-radial-gradient">
-        <div className="w-[768px] py-16 mx-auto">
-          <h3 className="text-center font-geist text-[48px]  text-[#181818] leading-[48px] font-semibold  ">
+        <div className="w-full max-w-[768px] px-4 pb-8 md:pt-16 md:pb-16 mx-auto">
+          <h3 className="text-center font-geist text-3xl md:text-[48px] text-[#181818] leading-tight md:leading-[48px] font-semibold">
             Have questions, feedback or anything to say?
           </h3>
 
-          <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
+          <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
               info@sunconsultants.co.in
@@ -42,7 +42,7 @@ const Home = () => {
             two.
           </div>
 
-          <div className="flex items-center my-[30px]">
+          <div className="flex items-center my-6 md:my-[30px]">
             <div className="h-px w-full bg-neutral-300  grow"></div>
             <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
               or
@@ -137,14 +137,8 @@ const Home = () => {
               </a>
             </div>
           </div>
-
-
-
-
         </div>
-
       </div>
-
 
       <Footer />
     </>
