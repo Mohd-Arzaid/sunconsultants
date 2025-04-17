@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="relative custom-radial-gradient">
-        <div className="w-full max-w-[768px] px-4 pb-12 md:pt-16 md:pb-16 mx-auto">
+        <div className="w-full max-w-[768px] px-4 pb-12  pt-8 md:pt-16 md:pb-16 mx-auto">
           <h3 className="text-center font-geist text-3xl md:text-[48px] text-[#181818] leading-tight md:leading-[48px] font-semibold">
             Have questions, feedback or anything to say?
           </h3>
