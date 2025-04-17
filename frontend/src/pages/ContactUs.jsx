@@ -25,7 +25,7 @@ const ContactUs = () => {
 
         <div className="max-w-[84rem] z-[100] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
           {/* Left Side */}
-          <div className="w-full md:w-[600px] flex flex-col items-center justify-center">
+          <div className="w-full md:w-[600px] flex flex-col items-center justify-center order-2 md:order-1">
             <h3 className="text-[32px] md:text-[48px] font-geist font-bold text-[#1E1E1E] text-center">
               Contact US
             </h3>
@@ -70,7 +70,7 @@ const ContactUs = () => {
           </div>
 
           {/* Right side */}
-          <div className="z-20 w-full md:w-[580px] flex flex-col">
+          <div className="z-20 w-full md:w-[580px] flex flex-col order-1 md:order-2">
             <img
               src="https://almondztrade.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontact_banner.7c465060.png&w=1920&q=75"
               alt="Software Solutions"
@@ -112,19 +112,17 @@ const ContactUs = () => {
             </p>
           </div>
 
-
           <Separator
             orientation="vertical"
             className="bg-[#005065] h-[3px] md:h-[109px] w-full md:w-[3px] rounded-xl hidden md:block"
           />
 
-<Separator
+          <Separator
             orientation="horizontal"
             className="bg-[#005065] h-[3px] w-full rounded-xl md:hidden"
           />
 
-
-        <div className="w-full flex flex-col items-center justify-center">
+          <div className="w-full flex flex-col items-center justify-center">
             <h4 className="font-geist text-[24px] md:text-[30px] leading-tight text-[#1E1E1E] font-bold text-center">
               Phone Number
             </h4>
@@ -132,8 +130,6 @@ const ContactUs = () => {
               +91-9315973373
             </p>
           </div>
-
-          
         </div>
       </div>
     </>
