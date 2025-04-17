@@ -7,8 +7,8 @@ const CDSCO = () => {
   return (
     <>
     <CDSCOHero />
-    {/* <Index/> */}
-    {/* <CDSCOContent/> */}
+    <Index/>
+    <CDSCOContent/>
     </>
   )
 }
