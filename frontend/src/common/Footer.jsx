@@ -325,11 +325,11 @@ const Footer = () => {
             </span>
 
             <div className="md:hidden flex items-center gap-2">
-              <span className="text-[#2a5075] font-geist text-xs md:text-base">
+              <span className="text-[#2a5075] font-geist text-[13px] md:text-base">
                 Privacy Policy
               </span>
               <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
-              <span className="text-[#2a5075] font-geist text-xs md:text-base">
+              <span className="text-[#2a5075] font-geist text-[13px] md:text-base">
                 Terms of Service
               </span>
             </div>
