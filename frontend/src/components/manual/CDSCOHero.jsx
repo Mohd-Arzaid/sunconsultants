@@ -4,9 +4,9 @@ import { Separator } from "../ui/separator";
 
 const CDSCOHero = () => {
   return (
-    <main className="relative pt-[60px] md:pt-[104px] pb-[60px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
-       {/* Background gradient */}
-       <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
+    <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+      {/* Background gradient */}
+      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
 
       {/* Decorative elements */}
       <div
@@ -15,7 +15,6 @@ const CDSCOHero = () => {
       ></div>
 
       <div className="max-w-[84rem] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
-       
         {/* Left Side */}
         <div className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
           <div className="inline-flex items-center">
@@ -49,7 +48,7 @@ const CDSCOHero = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Right Side */}
         <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
           <div className="flex w-full items-center gap-3">
@@ -59,49 +58,49 @@ const CDSCOHero = () => {
             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
           </div>
 
-          <h3 className="text-[36px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+          <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
             Make an Appointment
           </h3>
 
-          <p className="font-medium font-poppins text-[20px] text-[#996C6C]">
+          <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
             Want to contact our team and book a call?
             <span className="text-black"> Try it now</span>
           </p>
 
           <div className="flex flex-col mt-5 gap-5">
-            <div className="flex items-center justify-between gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-5">
               <Input
                 placeholder="Full Name"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
 
               <Input
                 placeholder="Email Address"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
             </div>
 
-            <div className="flex items-center justify-between gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-5">
               <Input
                 placeholder="Contact Number"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
 
               <Input
                 placeholder="Company Name"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
             </div>
 
-            <div className="flex items-center justify-between gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-5">
               <Input
                 placeholder="Product Name"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
 
               <Input
                 placeholder="Type Message"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[14px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
             </div>
 
