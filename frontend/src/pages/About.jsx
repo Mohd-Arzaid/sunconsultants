@@ -1,6 +1,7 @@
 import { Bike, Globe, Play, User } from "lucide-react";
 import whychooseus from "../assets/images/whychooseus.jpg";
 import React, { useState } from "react";
+import Footer from "@/common/Footer";
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
       <Stats />
       <VideoShowcase />
       <OurServices />
+      <Footer />
     </div>
   );
 };
