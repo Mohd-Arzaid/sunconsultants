@@ -263,7 +263,7 @@ const Footer = () => {
 
           {/* Bottom Bar */}
           <div className="border border-[#7eafd9] mt-8 md:mt-0"></div>
-          <div className="flex flex-col md:flex-row  items-center mt-4 mb-4 gap-4 md:gap-0 md:justify-between">
+          <div className="flex flex-col md:flex-row  items-center mt-6 md:mt-4 mb-4 gap-4 md:gap-0 md:justify-between">
             <div className="flex gap-3 flex-wrap items-center justify-center">
               <a
                 href="https://github.com/Mohd-Arzaid"
