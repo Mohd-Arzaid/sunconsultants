@@ -1,11 +1,12 @@
 import { Calendar, ChevronRight, Clock, Users } from "lucide-react";
-
+import Footer from "@/common/Footer";
 const Webinar = () => {
   return (
     <div className="overflow-hidden bg-[#F9F7F2]">
       <WebinarHero />
       <PastWebinars />
       <WebinarBenefits />
+      <Footer />
     </div>
   );
 };

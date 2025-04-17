@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
-
+import Footer from "@/common/Footer";
 import { ChevronLeft, ChevronRight, FileText } from "lucide-react";
 
 const Notification = () => {
   return (
     <>
       <NotificationMainContent />
+      <Footer />
     </>
   );
 };
