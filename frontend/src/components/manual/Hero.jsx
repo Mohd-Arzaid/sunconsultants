@@ -73,7 +73,7 @@ const Hero = () => {
       </main>
 
       {/* For Mobile Device */}
-      <main className="md:hidden flex flex-col gap-5 w-full min-h-screen">
+      <main className="md:hidden flex flex-col gap-5 w-full ">
         <div className="custom-radial-gradient w-full flex flex-col justify-center p-4">
           <div className="flex justify-between flex-col items-center w-full m-auto pb-12">
             <div className="flex flex-col gap-8 mt-10 mb-16">
