@@ -43,7 +43,7 @@ const LatestBlog = () => {
     {
       image: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5",
       category: "CDSCO",
-      title: "Equipment Certification Changes",
+      title: "Equipment Certification",
       url: "#",
     },
   ];
