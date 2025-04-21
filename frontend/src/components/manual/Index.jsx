@@ -17,6 +17,7 @@ const Index = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const stickyRef = useRef(null)
   const mobileMenuRef = useRef(null)
+  const toggleButtonRef = useRef(null)
 
   // Helper function to convert section name to element ID
   const getSectionElementId = (section) => section === "FAQs" ? "faqs" : section.toLowerCase();
@@ -34,10 +35,19 @@ const Index = () => {
     }
   }
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(prevState => !prevState);
+  };
+
   // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+      if (
+        mobileMenuRef.current && 
+        !mobileMenuRef.current.contains(event.target) &&
+        toggleButtonRef.current && 
+        !toggleButtonRef.current.contains(event.target)
+      ) {
         setIsMobileMenuOpen(false);
       }
     };
@@ -112,7 +122,8 @@ const Index = () => {
           {activeSection}
         </div>
         <button 
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          ref={toggleButtonRef}
+          onClick={toggleMobileMenu}
           className="p-2 rounded-md hover:bg-blue-100 transition-colors"
           aria-label="Toggle menu"
         >
