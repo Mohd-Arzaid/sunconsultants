@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
-import BISSRimg from "../../assets/images/BISSRimg.png"
+import BISSRimg from "../../assets/images/BISSRimg.png";
 
 import {
   Accordion,
@@ -28,9 +28,9 @@ export const BISFM = () => {
 // BIS Hero Section
 const BISFMHero = () => {
   return (
-    <main className="relative pt-[104px] pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+    <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
-      <div className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
+      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
 
       {/* Decorative elements */}
       <div
@@ -38,10 +38,10 @@ const BISFMHero = () => {
         style={{ animationDelay: "1s" }}
       ></div>
 
-      <div className="max-w-[84rem] gap-[90px] flex items-center justify-center h-full w-full mx-auto">
+      <div className="max-w-[84rem] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
         {/* Left Side */}
 
-        <div className="relative flex flex-col gap-8 w-[533px] items-start">
+        <div className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
@@ -49,7 +49,7 @@ const BISFMHero = () => {
             </span>
           </div>
 
-          <h1 className="leading-[70px] z-[10] font-playfair font-bold text-[52px] text-[#1E1E1E] -mt-2">
+          <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
               BIS Certificate
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
@@ -57,7 +57,7 @@ const BISFMHero = () => {
             For Foreign Manufactures
           </h1>
 
-          <p className="font-poppins text-[20px] z-[10] leading-[40px] text-[#332156] max-w-[490px] -mt-2">
+          <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
             Foreign manufacturers need ISI mark for exports to India. Covers
             1,000+ mandatory & 20,000+ voluntary products.
           </p>
@@ -75,61 +75,61 @@ const BISFMHero = () => {
         </div>
 
         {/* Right Side */}
-        <div className="z-20 w-[580px] h-[435px] flex flex-col">
+        <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
           <div className="flex w-full items-center gap-3">
-            <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+            <span className="uppercase font-poppins font-semibold text-[18px] md:text-[20px] text-[#008080]">
               Contact Us
             </span>
             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
           </div>
 
-          <h3 className="text-[48px] font-inter font-bold text-[#1E1E1E]">
+          <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
             Make an Appointment
           </h3>
 
-          <p className="font-medium font-poppins text-[20px] text-[#996C6C]">
+          <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
             Want to contact our team and book a call?
             <span className="text-black"> Try it now</span>
           </p>
 
           <div className="flex flex-col mt-5 gap-5">
-            <div className="flex items-center justify-between gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-5">
               <Input
                 placeholder="Full Name"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[15px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
 
               <Input
                 placeholder="Email Address"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[15px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
             </div>
 
-            <div className="flex items-center justify-between gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-5">
               <Input
                 placeholder="Contact Number"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[15px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
 
               <Input
                 placeholder="Company Name"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[15px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
             </div>
 
-            <div className="flex items-center justify-between gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-5">
               <Input
                 placeholder="Product Name"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[15px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
 
               <Input
                 placeholder="Type Message"
-                className="focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold text-[15px] md:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
               />
             </div>
 
-            <Button className="mt-1 w-[218px] h-[60px] bg-[#1A8781] hover:bg-[#1A8781]/90 rounded-[5px] text-[15px] font-poppins tracking-wide leading-[28px] shadow-elegant transition-all duration-300 hover:translate-y-[-2px]">
+            <Button className="mt-1 w-[218px] h-[50px] md:h-[60px] bg-[#1A8781] hover:bg-[#1A8781]/90 rounded-[5px] text-[15px] md:text-[15px] font-poppins tracking-wide leading-[28px] shadow-elegant transition-all duration-300 hover:translate-y-[-2px]">
               Book Appointment
             </Button>
           </div>
@@ -142,7 +142,22 @@ const BISFMHero = () => {
 // BIS Index Section
 const BISFMIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [activeSection, setActiveSection] = useState("Nomination");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const stickyRef = useRef(null);
+  const mobileMenuRef = useRef(null);
+  const toggleButtonRef = useRef(null);
+
+  const SECTIONS = [
+    "Nomination",
+    "Documents",
+    "Process",
+    "Validity",
+    "Payment",
+    "Surveillance",
+    "Consulting",
+    "FAQs",
+  ];
 
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
@@ -151,21 +166,44 @@ const BISFMIndex = () => {
         behavior: "smooth",
         block: "start",
       });
+      setActiveSection(item);
+      setIsMobileMenuOpen(false);
     }
   };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prevState) => !prevState);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target) &&
+        toggleButtonRef.current &&
+        !toggleButtonRef.current.contains(event.target)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
         const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
+        const isAtTop = rect.top <= 1;
         setIsSticky(
           !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
         );
       },
       {
-        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
+        threshold: [0, 1],
         rootMargin: "-1px 0px 0px 0px",
       }
     );
@@ -177,45 +215,125 @@ const BISFMIndex = () => {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            if (entry.target.id === "faqs") {
+              setActiveSection("FAQs");
+            } else {
+              const sectionName =
+                entry.target.id.charAt(0).toUpperCase() +
+                entry.target.id.slice(1);
+              setActiveSection(sectionName);
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    SECTIONS.forEach((section) => {
+      const element = document.getElementById(section.toLowerCase());
+      if (element) {
+        sectionObserver.observe(element);
+      }
+    });
+
+    return () => sectionObserver.disconnect();
+  }, []);
+
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
-      <div className="flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto">
-        {[
-          "Nomination",
-          "Documents",
-          "Process",
-          "Validity",
-          "Payment",
-          "Surveillance",
-          "Consulting",
-          "FAQs",
-        ].map((item) => (
+      {/* Mobile Menu Button */}
+      <div className="md:hidden flex items-center justify-between px-4 h-20">
+        <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
+          {activeSection}
+        </div>
+        <button
+          ref={toggleButtonRef}
+          onClick={toggleMobileMenu}
+          className="p-2 rounded-md hover:bg-blue-100 transition-colors"
+          aria-label="Toggle menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-blue-900"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            {isMobileMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div
+          ref={mobileMenuRef}
+          className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
+        >
+          <div className="flex flex-col py-2">
+            {SECTIONS.map((item) => (
+              <div
+                key={item}
+                onClick={() => handleItemClick(item)}
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
+                  }`}
+              >
+                <div className="font-geist tracking-wider uppercase">
+                  {item}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto overflow-x-auto">
+        {SECTIONS.map((item) => (
           <div
             key={item}
             onClick={() => handleItemClick(item)}
-            className={`relative cursor-pointer group ${
-              item === "Overview"
-                ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
-                : ""
-            }`}
+            className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist  tracking-wider uppercase transition-colors duration-300 ${
-                item === "Overview"
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
-              }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
+                }`}
             >
               {item}
             </div>
-            {item !== "Overview" && (
-              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
-            )}
+            <div
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
+                }`}
+            />
           </div>
         ))}
       </div>
@@ -227,8 +345,8 @@ const BISFMIndex = () => {
 const BISFMContent = () => {
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="max-w-[88rem] mx-auto p-12">
-        <div className="flex gap-[48px] w-full">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side */}
 
           <BISFMContentLeft />
@@ -246,24 +364,24 @@ const BISFMContent = () => {
 const ServiceFaq = () => {
   return (
     <div id="faqs" className="my-2 bg-gray-50 scroll-mt-20">
-      <div className="max-w-[88rem] mx-auto p-12">
-        <h2 className="text-[48px] text-center font-geist font-semibold text-[#181818]">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Frequently Asked Questions
         </h2>
-        <p className="text-[#52525b] text-center text-[20px] font-geist">
+        <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can't find the answer you are looking for?{" "}
           <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
             Reach out to us!
           </span>
         </p>
 
-        <div className="w-full max-w-[1104px] mt-[24px] mx-auto">
+        <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 What services do you offer for CDSCO compliance?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 We offer comprehensive CDSCO regulatory compliance services
                 including product registration, license applications, regulatory
                 strategy, documentation preparation, and post-approval
@@ -273,10 +391,10 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-2">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 How long does the CDSCO approval process typically take?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
@@ -286,10 +404,10 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-3">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 What documents are required for CDSCO registration?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Required documents include product dossiers, manufacturing
                 information, stability data, clinical trial results (if
                 applicable), Good Manufacturing Practice (GMP) certificates,
@@ -300,10 +418,10 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-4">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 Do you assist with clinical trial approvals in India?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Yes, we provide end-to-end support for clinical trial
                 applications in India, including protocol development, ethics
                 committee submissions, CDSCO applications, site selection
@@ -314,10 +432,10 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-5">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 What are the costs associated with CDSCO registrations?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 CDSCO registration costs include official government fees (which
                 vary by product type), testing fees, consultant fees, and
                 potential inspection costs. We provide transparent quotations
@@ -327,10 +445,10 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-6">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 How do you handle post-approval regulatory requirements?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Our post-approval services include pharmacovigilance support,
                 periodic safety update reports, variation applications, renewal
                 submissions, compliance with labeling requirements, adverse
@@ -340,11 +458,11 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-7">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 Can you help with import licenses for pharmaceuticals and
                 medical devices?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Yes, we specialize in obtaining Import Licenses (Form 10) for
                 drugs and Registration Certificates for medical devices. Our
                 services include preparing all necessary documentation,
@@ -355,11 +473,11 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-8">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 What experience does your consulting team have with CDSCO
                 regulations?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Our consulting team consists of regulatory experts with 10+
                 years of experience in Indian pharmaceutical regulations. Team
                 members include former regulatory professionals, pharmacists,
@@ -370,11 +488,11 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-9">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 How do recent regulatory changes affect pharmaceutical
                 registrations in India?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Recent regulatory changes include the New Drugs and Clinical
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
@@ -385,10 +503,10 @@ const ServiceFaq = () => {
             </AccordionItem>
 
             <AccordionItem value="item-10">
-              <AccordionTrigger className="font-geist text-[18px] text-[#3f3f46] font-medium">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                 Do you offer support for manufacturing facility inspections?
               </AccordionTrigger>
-              <AccordionContent className="font-geist text-[18px] text-[#5e5f6e]">
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Yes, we provide comprehensive support for CDSCO manufacturing
                 facility inspections, including pre-inspection readiness
                 assessments, gap analysis, preparation of required
@@ -400,7 +518,7 @@ const ServiceFaq = () => {
           </Accordion>
         </div>
 
-        <div className="w-[768px] mt-14  mx-auto">
+        {/* <div className="w-[768px] mt-14  mx-auto">
           <h3 className="text-center font-geist text-[48px]  text-[#181818] leading-[48px] font-semibold  ">
             Have questions, feedback or anything to say?
           </h3>
@@ -513,7 +631,7 @@ const ServiceFaq = () => {
           <div>
             <div></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -522,7 +640,7 @@ const ServiceFaq = () => {
 const BISFMContentLeft = () => {
   return (
     <div className=" flex-1 ">
-      <div className="flex flex-col gap-[40px]">
+      <div className="flex flex-col gap-[20px] md:gap-[40px]">
         {/* Nomination Section */}
         <NominationSection />
         {/* Divider */}
@@ -557,17 +675,17 @@ const BISFMContentLeft = () => {
 
 const PointsList = ({ points, heading }) => {
   return (
-    <div className="flex flex-col w-[441px]">
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+    <div className="flex flex-col w-full md:w-[441px]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         {heading}
       </p>
-      <div className="flex flex-col mt-[24px] gap-2 ">
+      <div className="flex flex-col mt-[16px] md:mt-[24px] gap-2">
         {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2 ">
+          <div key={index} className="flex items-center gap-2">
             <div className="bg-green-500/10 p-2 rounded-full">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className=" font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
               {point}
             </p>
           </div>
@@ -579,17 +697,17 @@ const PointsList = ({ points, heading }) => {
 
 const PointsListTwo = ({ points, heading }) => {
   return (
-    <div className="flex flex-col ">
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+    <div className="flex flex-col w-full">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         {heading}
       </p>
-      <div className="flex flex-col mt-[20px] gap-2 ">
+      <div className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
         {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2 ">
+          <div key={index} className="flex items-center gap-2">
             <div className="bg-green-500/10 p-2 rounded-full">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className=" font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
               {point}
             </p>
           </div>
@@ -604,28 +722,29 @@ const NominationSection = () => {
     <section id="nomination" className="flex flex-col scroll-mt-20">
       {/* Nomination */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Nomination
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Authorized Indian Representative Nomination
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Pre-requisites of nomination of an Authorized Indian Representative
       </p>
 
       {/* Nomination Content */}
 
-      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         In case of FMCS certificate , the foreign manufacturer has to
         mandatorily appoint an{" "}
-        <span className="font-medium text-gray-950  underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950 ">
+        <span className="font-medium text-gray-950 underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950">
           Authorized Indian Representative ( Also known as AIR )
         </span>{" "}
         who is the official representative of the firm to BIS, the following
@@ -633,28 +752,31 @@ const NominationSection = () => {
       </div>
 
       {/* Important Points And Image */}
-      <div className="flex mt-[24px] gap-10">
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         {/* Points */}
-        <PointsList
-          points={[
-            "Must be an Indian resident.",
-            "Should have a basic educational background to understand procedures.",
-            "Well-versed with the BIS certification process.",
-            "Must have a valid address for certificate documentation.",
-          ]}
-          heading="Eligibility Criteria for AIR in BIS Certification"
-        />
+        <div className="w-full md:w-auto">
+          <PointsList
+            points={[
+              "Must be an Indian resident.",
+              "Should have a basic educational background to understand procedures.",
+              "Well-versed with the BIS certification process.",
+              "Must have a valid address for certificate documentation.",
+            ]}
+            heading="Eligibility Criteria for AIR in BIS Certification"
+          />
+        </div>
 
         {/* Image */}
-
-        <img
-          src={BISSRimg}
-          alt="Medical laboratory equipment"
-          className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
+        <div className="w-full md:w-auto">
+          <img
+            src={BISSRimg}
+            alt="Medical laboratory equipment"
+            className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
           ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
           hover:ring-gray-900/12.5 w-[400px] h-[250px] mt-2.5
           "
-        />
+          />
+        </div>
       </div>
     </section>
   );
@@ -665,48 +787,53 @@ const DocumentsSection = () => {
     <section id="documents" className="flex flex-col scroll-mt-20">
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Documents
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Documents Required For FMCS BIS Certification
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         BIS Certification Documents | Sun Consultants & Engineers
       </p>
 
       {/* Eligibility Content */}
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         Majority of the documents required for application are from the
         manufacturers and and a few documents of Indian representative are
         required, the{" "}
-        <span className="font-medium text-gray-950  underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950 ">
+        <span className="font-medium text-gray-950 underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950">
           list of documents are as follows:
         </span>
-        <div className="flex mt-[24px] gap-10">
+
+        <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           {/* Points */}
-          <PointsListTwo
-            points={[
-              "Application form",
-              "List of plant and machinery",
-              "List of raw materials",
-              "List of test equipments in factory as per Indian Standard issued by BIS",
-              "Calibration certificates for all the instruments",
-              "Plant layout",
-              "Test certificates of raw materials",
-              "Details of Quality in-charge appointed in the factory",
-              "Bank Guarantee, etc.",
-            ]}
-            heading="Essential Documents for BIS Certification Application :"
-          />
+          <div className="w-full md:w-auto">
+            <PointsListTwo
+              points={[
+                "Application form",
+                "List of plant and machinery",
+                "List of raw materials",
+                "List of test equipments in factory as per Indian Standard issued by BIS",
+                "Calibration certificates for all the instruments",
+                "Plant layout",
+                "Test certificates of raw materials",
+                "Details of Quality in-charge appointed in the factory",
+                "Bank Guarantee, etc.",
+              ]}
+              heading="Essential Documents for BIS Certification Application :"
+            />
+          </div>
+
         </div>
-        <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
           All of the above documents are required in certain formats given by
           BIS which are to be submitted during the application. As FMCS
           consultants, we at Sun Consultants and Engineers are experts for
@@ -735,25 +862,25 @@ const ProcessSection = () => {
     <section id="process" className="flex flex-col scroll-mt-20">
       {/* Process */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
-          Process
+      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+      Process
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
-        BIS License Process for Foreign Manufacturers
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      BIS License Process for Foreign Manufacturers
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
-        BIS FMCS Process: Application, audit, testing, and approval. Contact us!
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      BIS FMCS Process: Application, audit, testing, and approval. Contact us!
       </p>
 
       {/* Eligibility Content */}
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        <div className="flex mt-[-20px] gap-10">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+         <div className="flex mt-[-20px] gap-10">
           {/* Points */}
           <PointsListTwo
             points={[
@@ -809,20 +936,20 @@ const ValiditySection = () => {
     <section id="validity" className="flex flex-col scroll-mt-20">
       {/* Validity */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
-          Validity
+      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+      Validity
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
-        BIS License Validity, Renewal & Fees
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      BIS License Validity, Renewal & Fees
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
-        Valid for 1 or 2 years, renewal requires documents & fees. Late
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      Valid for 1 or 2 years, renewal requires documents & fees. Late
         applications incur a fee.
       </p>
 
@@ -845,19 +972,19 @@ const PaymentSection = () => {
     <section id="payment" className="flex flex-col scroll-mt-20">
       {/* Payment */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
-          Payment
+      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+      Payment
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
-        Stages of payment of BIS fees:
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      Stages of payment of BIS fees:
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         BIS Fees: Application, audit, and license fees, paid in USD. Contact us!
       </p>
 
@@ -894,38 +1021,38 @@ const SurveillanceSection = () => {
     <section id="surveillance" className="flex flex-col scroll-mt-20">
       {/* Surveillance */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
-          Surveillance
+      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+      Surveillance
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
-        BIS Certificate Surveillance Process :
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      BIS Certificate Surveillance Process :
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
-        BIS Surveillance: Routine checks ensure compliance; failures risk
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      BIS Surveillance: Routine checks ensure compliance; failures risk
         cancellation.
       </p>
 
-      <div className=" font-semibold mt-[24px] font-geist text-[#131316] tracking-wide  text-left max-w-full  leading-tight text-[20px]">
-        BIS conducts surveillance on the manufacturers to ensure that the
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      BIS conducts surveillance on the manufacturers to ensure that the
         standards are being followed as per the guidelines.
       </div>
 
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           This is done in 2 ways:
         </span>
       </div>
 
-      <div className=" font-semibold mt-[24px] font-geist text-[#131316] tracking-wide  text-left max-w-full  leading-tight text-[20px]">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         1. Market surveillance:
       </div>
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
         This is done twice yearly. Samples are randomly picked from market and
         sent to government labs for testing as per the standards, If the sample
         passes, no problem, but if the sample fails , the manufacturer is
@@ -933,10 +1060,10 @@ const SurveillanceSection = () => {
         market sample can lead to suspension or cancellation of the licence.
       </div>
 
-      <div className=" font-semibold mt-[24px] font-geist text-[#131316] tracking-wide  text-left max-w-full  leading-tight text-[20px]">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
         2. Factory surveillance:
       </div>
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
         After obtaining the licence, there are certain formalities like
         maintenance of test records, regular testing of the product and so on.To
         keep a check that all the protocols are followed, BIS conducts random
@@ -953,37 +1080,37 @@ const ConsultingSection = () => {
     <section id="consulting" className="flex flex-col scroll-mt-20">
       {/* Consulting */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
-          Consulting
+      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+      Consulting
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Role of Sun Consultants & Engineers?
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Sun Consultants & Engineers ensure hassle-free BIS FMCS licensing
       </p>
 
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
         From collection of documents to getting the final license, it is a
         exhaustive and tedious procedure, and requires technical know-how and
         experience. Being a FMCS Consultant, this is exactly where Sun
         Consultants and Engineers come into the picture.
       </div>
 
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
         With over 10 years of experience in this field and after providing
         assistance to numerous manufacturers and importers we can help you in
         smoothening of this process, by complete hand-holding solution, right
         from the beginning of the procedure to the grant of BIS license.
       </div>
 
-      <div className="flex mt-[20px] gap-10">
+        <div className="flex mt-[16px] md:mt-[24px] gap-10">
         {/* Points */}
         <PointsListTwo
           points={[
