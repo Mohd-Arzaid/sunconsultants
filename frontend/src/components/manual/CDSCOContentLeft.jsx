@@ -69,7 +69,7 @@ const OverviewSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         CDSCO License Details
       </h3>
 
@@ -180,7 +180,7 @@ const EligibilitySection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         CDSCO Certificate Eligibility
       </h3>
 
@@ -222,7 +222,7 @@ const ClassificationSection = () => {
       </div>
       
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         CDSCO Device Classification
       </h3>
 
@@ -301,7 +301,7 @@ const Documents = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Required Documents for CDSCO LICENSE
       </h3>
 
@@ -354,7 +354,7 @@ const Registration = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Class A Product Registration Process
       </h3>
 
@@ -425,7 +425,7 @@ const Licensing = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Process For CDSCO License
       </h3>
 
@@ -507,7 +507,7 @@ const Consulting = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         CDSCO License Consulting Services
       </h3>
 

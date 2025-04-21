@@ -44,8 +44,8 @@ const ServiceFaq = () => {
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can't find the answer you are looking for?{" "}
-          <span className="text-[#27272a] font-geist text-[16px] md:text-[20px] font-medium underline underline-offset-4">
-            Reach out to us!
+          <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
+          Reach out to us!
           </span>
         </p>
 
