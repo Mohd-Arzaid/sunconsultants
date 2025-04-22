@@ -11,6 +11,7 @@ const About = () => {
       <Stats />
       <VideoShowcase />
       <OurServices />
+      <Testimonials />
       <Footer />
     </div>
   );
@@ -353,7 +354,7 @@ const OurServices = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-center w-full">
                     {/* Left content */}
                     <div className="flex flex-col gap-4 md:gap-6 order-2 md:order-1">
-                      <div className="hidden md:block bg-white/80 backdrop-blur-sm w-16 h-16 md:w-24 md:h-24 rounded-2xl flex items-center justify-center shadow-lg text-4xl md:text-5xl mx-auto md:mx-0">
+                      <div className="hidden md:flex bg-white/80 backdrop-blur-sm w-16 h-16 md:w-24 md:h-24 rounded-2xl items-center justify-center shadow-lg text-4xl md:text-5xl mx-auto md:mx-0">
                         {service.icon}
                       </div>
                       <h3 className="font-playfair text-2xl md:text-4xl font-bold text-[#1e1e1e] text-center md:text-left">
@@ -430,3 +431,12 @@ const OurServices = () => {
     </div>
   );
 };
+
+
+const Testimonials = () => {
+  return(
+    <div className="">
+      
+    </div>
+  )
+}
