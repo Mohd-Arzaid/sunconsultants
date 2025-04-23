@@ -716,6 +716,9 @@ const EPRContentLeft = () => {
 
         <ConsultingSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        {/* Review Section */}
+        <ReviewSection />
       </div>
     </div>
   );
@@ -1078,6 +1081,55 @@ const ConsultingSection = () => {
         We are one of the most experienced EPR consultants in the field of
         E-waste management,we provide apex quality of services possible to all
         our national and international clients.
+      </div>
+    </section>
+  );
+};
+
+const ReviewSection = () => {
+  return (
+    <section>
+      <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
+        What did you think of this content?
+      </span>
+      <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
+
+        <div className="flex gap-6">
+          <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group">
+            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
+              <path fillOpacity="0.15" strokeWidth="0"
+                className="group-hover:text-blue-500 transition-colors duration-200"
+                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z" />
+              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                className="group-hover:text-blue-500 transition-colors duration-200"
+                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5" />
+            </svg>
+
+            <span>It was helpful</span>
+          </button>
+
+          <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
+            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
+              <path fillOpacity="0.15" strokeWidth="0"
+                className="group-hover:text-red-500 transition-colors duration-200"
+                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z" />
+              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                className="group-hover:text-red-500 transition-colors duration-200"
+                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5" />
+            </svg>
+
+            <span>It was not helpful</span>
+          </button>
+
+        </div>
+
+
+        <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
+          Last updated on Mar 19, 2025
+        </p>
+
       </div>
     </section>
   );
