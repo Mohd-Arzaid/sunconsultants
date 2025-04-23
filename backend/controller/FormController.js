@@ -3,14 +3,16 @@ const FormModel = require("../model/FormModel");
 
 exports.GetSubmitForm = async (req, res) => {
     try{
-        const { name, email, phone, message, FormSource } = req.body;
-        const form = new FormModel({
-            name,
-            email,
-            phone,
-            message,
-            FormSource
-        });
+        const FormData = req.body;
+        const createfrom = await FormModel.create({FormData});
+        if (!createfrom) {
+            return res.status(400).json({
+                success: false,
+                message: "Form submission failed",
+            });
+        }
+        
+        
         await form.save();
         res.status(200).json({ message: "Form submitted successfully" });
 
