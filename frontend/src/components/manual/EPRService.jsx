@@ -359,10 +359,10 @@ const EPRContent = () => {
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side */}
 
-          {/* <EPRContentLeft /> */}
+          <EPRContentLeft />
 
           {/* Right Side */}
-          {/* <ServiceContentRight /> */}
+          <ServiceContentRight />
         </div>
       </div>
       <ServiceFaq />
@@ -692,9 +692,9 @@ const PointsListTwo = ({ points, heading }) => {
 
 const EPRContentLeft = () => {
   return (
-    <div className=" flex-1 ">
-      <div className="flex flex-col gap-[40px]">
-        {/* Nomination Section */}
+    <div className="flex-1">
+      <div className="flex flex-col gap-[20px] md:gap-[40px]">
+        {/* Overview Section */}
         <OverviewSection />
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
@@ -726,25 +726,24 @@ const OverviewSection = () => {
     <section id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Overview
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         E-Waste Management & EPR Certification
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         E-Waste Management & EPR Certification for CPCB compliance.
       </p>
 
-      {/* Nomination Content */}
-
-      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      {/* Overview Content */}
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         E-waste" is a popular, informal name for electronic products nearing the
         end of their "useful life. "E-wastes are considered dangerous, as
         certain components of some electronic products contain materials that
@@ -762,18 +761,20 @@ const OverviewSection = () => {
       </div>
 
       {/* Important Points And Image */}
-      <div className="flex mt-[24px] gap-10">
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         {/* Points */}
-        <PointsListTwo
-          points={[
-            "Mandatory by CPCB for e-waste management in India.",
-            "Applies to manufacturers & importers of electronic products.",
-            "Requires a future disposal plan for e-waste submission to CPCB.",
-            "Tie-up with authorized recyclers for proper disposal.",
-            "Submit estimated e-waste quantity & disposal methods for EPR approval.",
-          ]}
-          heading="Eligibility Criteria for AIR in BIS Certification"
-        />
+        <div className="w-full md:w-auto">
+          <PointsListTwo
+            points={[
+              "Mandatory by CPCB for e-waste management in India.",
+              "Applies to manufacturers & importers of electronic products.",
+              "Requires a future disposal plan for e-waste submission to CPCB.",
+              "Tie-up with authorized recyclers for proper disposal.",
+              "Submit estimated e-waste quantity & disposal methods for EPR approval.",
+            ]}
+            heading="Eligibility Criteria for AIR in BIS Certification"
+          />
+        </div>
       </div>
     </section>
   );
@@ -784,26 +785,25 @@ const EligibilitySection = () => {
     <section id="eligibility" className="flex flex-col scroll-mt-20">
       {/* Eligibility */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Eligibility
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Who can Apply
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         EPR certification is required for electronics makers & importers via
         CPCB.
       </p>
 
-      {/* Nomination Content */}
-
-      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      {/* Eligibility Content */}
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         All manufacturers, whether of Indian or foreign origin, as well as
         importers of electronics, are required to apply for an EPR certificate
         under the E-waste Management Rules. This application must be submitted
@@ -818,65 +818,69 @@ const EWasteSection = () => {
     <section id="e-waste" className="flex flex-col scroll-mt-20">
       {/* E-Waste */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           E-Waste
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         E-waste Item List
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         E-Waste Management & EPR Certification for CPCB compliance.
       </p>
 
-      <div className="flex mt-[24px] gap-10">
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         {/* Points */}
-        <PointsList
-          points={[
-            "LCD and LED Television Sets; ",
-            "Refrigerators;",
-            "Washing Machines;",
-            " Air-Conditioners excluding Centralized Air conditioning plants;",
-            "Fluorescent and other Mercury containig lamps;",
-          ]}
-          heading="Consumer Electrical & Electronics"
-        />
+        <div className="w-full md:w-auto">
+          <PointsList
+            points={[
+              "LCD and LED Television Sets; ",
+              "Refrigerators;",
+              "Washing Machines;",
+              " Air-Conditioners excluding Centralized Air conditioning plants;",
+              "Fluorescent and other Mercury containig lamps;",
+            ]}
+            heading="Consumer Electrical & Electronics"
+          />
+        </div>
 
         <img
           src={BISSRimg}
           alt="Medical laboratory equipment"
           className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
           ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
-          hover:ring-gray-900/12.5 w-[400px] h-[250px] mt-2.5
+          hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
           "
         />
       </div>
 
       {/* Important Points  */}
-      <div className="flex mt-[24px] gap-10">
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         {/* Points */}
-        <PointsListTwo
-          points={[
-            "Centralized Data Processing: Mainframe , Mini-Computer, Personal Computer, Laptop, Notebook Computer and accessories, Notepad; ",
-            "Printers including components;",
-            " Copying Equipment;",
-            "Electrical and Electronic Typewriters;",
-            "User terminal and systems;",
-            "Facsimile;",
-            "Telex;",
-            "Telephones;",
-            "Pay Telephones;",
-            "Cordless Telephones;",
-            "Cellular Telephones;",
-            "Answering Systems;",
-          ]}
-          heading="Information Technology & Telecommunication Equipment"
-        />
+        <div className="w-full md:w-auto">
+          <PointsListTwo
+            points={[
+              "Centralized Data Processing: Mainframe , Mini-Computer, Personal Computer, Laptop, Notebook Computer and accessories, Notepad; ",
+              "Printers including components;",
+              " Copying Equipment;",
+              "Electrical and Electronic Typewriters;",
+              "User terminal and systems;",
+              "Facsimile;",
+              "Telex;",
+              "Telephones;",
+              "Pay Telephones;",
+              "Cordless Telephones;",
+              "Cellular Telephones;",
+              "Answering Systems;",
+            ]}
+            heading="Information Technology & Telecommunication Equipment"
+          />
+        </div>
       </div>
     </section>
   );
@@ -887,25 +891,24 @@ const DocumentsSection = () => {
     <section id="documents" className="flex flex-col scroll-mt-20">
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Documents
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Vital Documents Required for :
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         E-Waste Management & EPR Certification for CPCB compliance.
       </p>
 
-      {/* Nomination Content */}
-
-      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      {/* Documents Content */}
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         We require duly signed and stamped document in hard copies so that we
         can submit in E-waste Management-Office for the further process.
         importe's Name , Product Name, Model Number and Docments should be
@@ -913,20 +916,22 @@ const DocumentsSection = () => {
       </div>
 
       {/* Important Points And Image */}
-      <div className="flex mt-[24px] gap-10">
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         {/* Points */}
-        <PointsListTwo
-          points={[
-            "23 Letter Heads of the company",
-            "GSTIN",
-            "PAN Details",
-            "Incorporation Certificate",
-            "Copy IEC in case of importers",
-            "Copy of Aadhar Card",
-            "Product Details",
-          ]}
-          heading="Eligibility Criteria for AIR in BIS Certification"
-        />
+        <div className="w-full md:w-auto">
+          <PointsListTwo
+            points={[
+              "23 Letter Heads of the company",
+              "GSTIN",
+              "PAN Details",
+              "Incorporation Certificate",
+              "Copy IEC in case of importers",
+              "Copy of Aadhar Card",
+              "Product Details",
+            ]}
+            heading="Eligibility Criteria for AIR in BIS Certification"
+          />
+        </div>
       </div>
     </section>
   );
@@ -937,26 +942,25 @@ const SynopsisSection = () => {
     <section id="synopsis" className="flex flex-col scroll-mt-20">
       {/* Synopsis */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Synopsis
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Synopsis for control of E-waste
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Control materials & track inventory to reduce waste in manufacturing.
         CPCB.
       </p>
 
-      {/* Nomination Content */}
-
-      <div className="mt-[24px]   font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      {/* Synopsis Content */}
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         Proper control over the materials used in the manufacturing process is
         an important way to reduce waste generation (Freeman, 1989). By reducing
         both the quantity of hazardous materials used in the process and the
@@ -986,50 +990,51 @@ const ProcessSection = () => {
     <section id="process" className="flex flex-col scroll-mt-20">
       {/* Process */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Process
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Process for EPR license and post compliances :
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         EPR registration involves CPCB application, certification, recycling,
         and yearly renewal.
       </p>
 
-      {/* Nomination Content */}
-
-      <div className="flex mt-[24px] gap-10">
+      {/* Process Content */}
+      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         {/* Points */}
-        <PointsListTwo
-          points={[
-            "Identifying if the product falls under EPR E-waste guidelines.",
-            "Creating data as to how much E-waste is generated by the firm",
-            "Filing online application on the CPCB portal",
-            "Payment of requisite fees to the govt.",
-            "Final submission of application",
-            "Generation of EPR certificate",
-            "Getting the products re-cycled as per the plan",
-            "Submission of re-cycling certificate on yearly/quarterly basis.",
-          ]}
-          heading="EPR Registration Process for E-Waste Compliance"
-        />
+        <div className="w-full md:w-auto">
+          <PointsListTwo
+            points={[
+              "Identifying if the product falls under EPR E-waste guidelines.",
+              "Creating data as to how much E-waste is generated by the firm",
+              "Filing online application on the CPCB portal",
+              "Payment of requisite fees to the govt.",
+              "Final submission of application",
+              "Generation of EPR certificate",
+              "Getting the products re-cycled as per the plan",
+              "Submission of re-cycling certificate on yearly/quarterly basis.",
+            ]}
+            heading="EPR Registration Process for E-Waste Compliance"
+          />
+        </div>
       </div>
 
-      <div className="mt-[46px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 ">
+      <div className="mt-[30px] md:mt-[46px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Timeline
         </span>
         Approx 1-2 weeks after submission of application
       </div>
-      <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 ">
+      <div className="mt-[16px] md:mt-[20px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Validity
         </span>
         It is granted for 1 year initially and has to be renewed after that by
@@ -1044,23 +1049,23 @@ const ConsultingSection = () => {
     <section id="consultancy" className="flex flex-col scroll-mt-20">
       {/* Consultancy */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase  font-semibold font-geist text-[20px] text-gray-700">
-        Consultancy
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Consultancy
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[40px] font-roboto font-bold text-[#131316]">
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Role of Sun Consultants & Engineers?
       </h3>
 
       {/* Description */}
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
-        Sun Consultants & Engineers ensure hassle-free  EPR licensing
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Sun Consultants & Engineers ensure hassle-free EPR licensing
       </p>
 
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         As EPR registration consultants, our job is to ensure that the tiring
         procedures that we have listed above become a cake-walk for you. Right
         from the beginning i.e. from the stage of collection of documents from
@@ -1069,13 +1074,11 @@ const ConsultingSection = () => {
         is under our scope.
       </div>
 
-      <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         We are one of the most experienced EPR consultants in the field of
         E-waste management,we provide apex quality of services possible to all
         our national and international clients.
       </div>
-
-      
     </section>
   );
 };

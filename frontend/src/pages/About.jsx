@@ -11,7 +11,7 @@ const About = () => {
       <Stats />
       <VideoShowcase />
       <OurServices />
-      <Testimonials />
+    
       <Footer />
     </div>
   );
@@ -364,7 +364,9 @@ const OurServices = () => {
                         {service.description}
                       </p>
                       <button className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-2 md:mt-4 group mx-auto md:mx-0">
-                        <span className="font-medium text-sm md:text-base">Learn More</span>
+                        <span className="font-medium text-sm md:text-base">
+                          Learn More
+                        </span>
                         <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30">
                           <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45"></div>
                         </div>
@@ -432,11 +434,3 @@ const OurServices = () => {
   );
 };
 
-
-const Testimonials = () => {
-  return(
-    <div className="">
-      
-    </div>
-  )
-}
