@@ -584,6 +584,12 @@ const WPCHero = () => {
 
           <ProcessSection />
           <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+          <ConsultantsSection />
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+          <RegulationsSection />
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
      
           <ReviewSection />
         </div>
@@ -961,6 +967,109 @@ const WPCHero = () => {
           <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
             Last updated on Mar 19, 2025
           </p>
+        </div>
+      </section>
+    );
+  };
+  
+  const ConsultantsSection = () => {
+    return (
+      <section id="consultants" className="flex flex-col scroll-mt-20">
+        {/* Consultants */}
+        <div className="flex w-full items-center gap-3">
+          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+            Consultants
+          </span>
+          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        </div>
+
+        {/* Title */}
+        <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+          WPC License Consulting Services
+        </h3>
+
+        {/* Description */}
+        <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+          Expert guidance for WPC license and ETA certification process.
+        </p>
+
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          Our team of experienced WPC consultants provides comprehensive support throughout the entire certification process. We understand the complexities of wireless device regulations and help you navigate the WPC approval process efficiently.
+        </div>
+
+        <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+          {/* Points */}
+          <PointsListTwo
+            points={[
+              "Expert consultation on WPC license requirements",
+              "Document preparation and verification",
+              "Liaison with WPC authorities",
+              "Test report coordination and validation",
+              "Application submission and follow-up",
+              "Query resolution and compliance support",
+              "Post-approval assistance and renewal support",
+            ]}
+            heading="Our Consulting Services Include"
+          />
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          With years of experience in wireless device certification, our consultants ensure that your products meet all regulatory requirements while minimizing time-to-market. We maintain strong relationships with WPC authorities and testing laboratories, enabling us to provide efficient and reliable services.
+        </div>
+      </section>
+    );
+  };
+
+  const RegulationsSection = () => {
+    return (
+      <section id="regulations" className="flex flex-col scroll-mt-20">
+        {/* Regulations */}
+        <div className="flex w-full items-center gap-3">
+          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+            Regulations
+          </span>
+          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        </div>
+
+        {/* Title */}
+        <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+          WPC Regulatory Framework
+        </h3>
+
+        {/* Description */}
+        <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+          Understanding the regulatory requirements for wireless devices in India.
+        </p>
+
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          The Wireless Planning and Coordination (WPC) wing operates under the Ministry of Communications and regulates the use of radio frequency spectrum in India. The regulatory framework ensures that wireless devices comply with technical standards and do not cause harmful interference.
+        </div>
+
+        <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
+          {/* Points */}
+          <PointsListTwo
+            points={[
+              "Indian Wireless Telegraphy Act, 1933",
+              "Indian Telegraph Act, 1885",
+              "WPC Guidelines for Equipment Type Approval",
+              "Frequency Allocation and Usage Rules",
+              "Technical Standards for Wireless Equipment",
+              "Import and Manufacturing Regulations",
+              "Spectrum Management Guidelines",
+            ]}
+            heading="Key Regulatory Documents"
+          />
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          The WPC regulatory framework is designed to ensure the efficient use of radio frequency spectrum while protecting against interference. All wireless devices must comply with these regulations to be legally imported, manufactured, or sold in India. Our consultants help you understand and comply with these requirements.
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+            IMPORTANT
+          </span>
+          Non-compliance with WPC regulations can result in penalties, confiscation of equipment, and legal consequences. It's crucial to ensure your wireless devices meet all regulatory requirements before entering the Indian market.
         </div>
       </section>
     );
