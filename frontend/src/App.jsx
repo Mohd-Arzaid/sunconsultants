@@ -17,6 +17,7 @@ import CRSRegistration from "./pages/CRSRegistration";
 import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
 import WPC from "./pages/WPC";
+import ROHS from "./pages/ROHS";
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
         <Route path="/services/peso" element={<Peso />} />
         <Route path="/services/tec" element={<Tec />} />
         <Route path="/services/wpc" element={<WPC />} />
+        <Route path="/services/rohs" element={<ROHS />} />
+
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
     </>
