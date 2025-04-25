@@ -14,6 +14,7 @@ import { PlasticWaste } from "./components/manual/PlasticWaste";
 import { LegalMetrology } from "./components/manual/LegalMetrology";
 import Webinar from "./pages/Webinar";
 import CRSRegistration from "./pages/CRSRegistration";
+import Peso from "./pages/Peso";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/services/plastic-waste" element={<PlasticWaste />} />
         <Route path="/services/legal-metrology" element={<LegalMetrology />} />
         <Route path="/services/crs-registration" element={<CRSRegistration />} />
+        <Route path="/services/peso" element={<Peso />} />
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
     </>
