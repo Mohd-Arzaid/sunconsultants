@@ -13,6 +13,7 @@ import { LMPC } from "./components/manual/LMPC";
 import { PlasticWaste } from "./components/manual/PlasticWaste";
 import { LegalMetrology } from "./components/manual/LegalMetrology";
 import Webinar from "./pages/Webinar";
+import CRSRegistration from "./pages/CRSRegistration";
 
 function App() {
   return (
@@ -22,9 +23,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
-         <Route path="/latest-notifications" element={<Notification />} />
-       <Route path="/clients" element={<AllClients />} />
-         <Route
+        <Route path="/latest-notifications" element={<Notification />} />
+        <Route path="/clients" element={<AllClients />} />
+        <Route
           path="/services/cdsco-registration-certification"
           element={<CDSCO />}
         />
@@ -37,7 +38,8 @@ function App() {
         <Route path="/services/lmpc-registration" element={<LMPC />} />
         <Route path="/services/plastic-waste" element={<PlasticWaste />} />
         <Route path="/services/legal-metrology" element={<LegalMetrology />} />
-        <Route path="/webinar" element={<Webinar />} /> 
+        <Route path="/services/crs-registration" element={<CRSRegistration />} />
+        <Route path="/webinar" element={<Webinar />} />
       </Routes>
     </>
   );
