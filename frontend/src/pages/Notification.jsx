@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import Footer from "@/common/Footer";
 import { ChevronLeft, ChevronRight, FileText } from "lucide-react";
+import { useState } from "react";
 
 const Notification = () => {
   return (
@@ -15,6 +16,12 @@ const Notification = () => {
 export default Notification;
 
 const NotificationMainContent = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value.toLowerCase());
+  };
+
   return (
     <div className=" bg-[#f9f7f2]">
       <div className=" max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
@@ -35,6 +42,8 @@ const NotificationMainContent = () => {
             <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
             <input
               type="text"
+              value={searchQuery}
+              onChange={handleSearch}
               placeholder="Search for Government Notification/QCO Updates"
               className="w-full pl-11 md:pl-12 placeholder:font-geist  placeholder:text-[17px] sm:placeholder:text-[18px] pr-4 py-3 md:py-4 rounded-full shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] border-2 border-transparent bg-white focus:border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-100 transition-all duration-200"
             />
@@ -42,7 +51,7 @@ const NotificationMainContent = () => {
         </div>
 
         {/* Notifications */}
-        <NotificationCard />
+        <NotificationCard searchQuery={searchQuery} />
       </div>
 
       <div className="pb-8 md:pb-12 flex items-center justify-center">
@@ -53,7 +62,7 @@ const NotificationMainContent = () => {
   );
 };
 
-const NotificationCard = () => {
+const NotificationCard = ({ searchQuery }) => {
   const notifications = [
     {
       id: 1,
@@ -147,18 +156,35 @@ const NotificationCard = () => {
     },
   ];
 
+  const filteredNotifications = notifications.filter((notification) => {
+    const searchLower = searchQuery.toLowerCase();
+    return (
+      notification.title.toLowerCase().includes(searchLower) ||
+      notification.description.toLowerCase().includes(searchLower) ||
+      notification.tagType.toLowerCase().includes(searchLower)
+    );
+  });
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 ">
-      {notifications.map((notification) => (
-        <NotificationCardItem
-          key={notification.id}
-          color={notification.color}
-          tagType={notification.tagType}
-          date={notification.date}
-          title={notification.title}
-          description={notification.description}
-        />
-      ))}
+      {filteredNotifications.length > 0 ? (
+        filteredNotifications.map((notification) => (
+          <NotificationCardItem
+            key={notification.id}
+            color={notification.color}
+            tagType={notification.tagType}
+            date={notification.date}
+            title={notification.title}
+            description={notification.description}
+          />
+        ))
+      ) : (
+        <div className="col-span-2 text-center py-12">
+          <p className="text-gray-600 font-geist text-lg">
+            No notifications found matching your search criteria.
+          </p>
+        </div>
+      )}
     </div>
   );
 };
