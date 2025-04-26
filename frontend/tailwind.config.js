@@ -16,6 +16,7 @@ export default {
         "subtle-pulse": "subtle-pulse 4s ease-in-out infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out forwards",
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        'bounce-slow': 'bounce-slow 2s infinite',
       },
       keyframes: {
         move: {
@@ -83,6 +84,10 @@ export default {
         pulse: {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.5" },
+        },
+        'bounce-slow': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
       },
       fontFamily: {

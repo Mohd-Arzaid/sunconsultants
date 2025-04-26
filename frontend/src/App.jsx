@@ -19,6 +19,7 @@ import Tec from "./pages/Tec";
 import WPC from "./pages/WPC";
 import ROHS from "./pages/ROHS";
 import BEE from "./pages/BEE";
+import CECertification from "./pages/CECertification";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/services/wpc" element={<WPC />} />
         <Route path="/services/rohs" element={<ROHS />} />
         <Route path="/services/bee" element={<BEE />} />
+        <Route path="/services/ce-certification" element={<CECertification />} />
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
     </>
