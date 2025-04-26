@@ -18,6 +18,7 @@ import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
 import WPC from "./pages/WPC";
 import ROHS from "./pages/ROHS";
+import BEE from "./pages/BEE";
 
 function App() {
   return (
@@ -47,7 +48,7 @@ function App() {
         <Route path="/services/tec" element={<Tec />} />
         <Route path="/services/wpc" element={<WPC />} />
         <Route path="/services/rohs" element={<ROHS />} />
-
+        <Route path="/services/bee" element={<BEE />} />
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
     </>
