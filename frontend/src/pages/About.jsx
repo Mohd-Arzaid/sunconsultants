@@ -11,6 +11,7 @@ const About = () => {
       <Stats />
       <VideoShowcase />
       <OurServices />
+      <Testimonials />
     
       <Footer />
     </div>
@@ -425,6 +426,105 @@ const OurServices = () => {
                 <h4 className="font-geist font-medium text-xs md:text-sm leading-tight">
                   {service.title}
                 </h4>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Testimonials = () => {
+  const testimonials = [
+    {
+      id: 1,
+      name: "Rajesh Kumar",
+      role: "CEO, Tech Solutions Inc.",
+      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      content: "Sun Consultant made our BIS certification process seamless. Their expertise and dedication helped us enter the Indian market with confidence.",
+      rating: 5
+    },
+    {
+      id: 2,
+      name: "Priya Sharma",
+      role: "Director, Global Exports",
+      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      content: "The team's professionalism and attention to detail in handling our LMPC certification was outstanding. Highly recommended!",
+      rating: 5
+    },
+    {
+      id: 3,
+      name: "Michael Chen",
+      role: "Operations Manager, Electronics Corp",
+      image: "https://randomuser.me/api/portraits/men/67.jpg",
+      content: "As an international company, we needed reliable certification partners in India. Sun Consultant exceeded our expectations.",
+      rating: 5
+    }
+  ];
+
+  return (
+    <div className="pt-16 pb-16 md:pt-8 md:pb-8  bg-gradient-to-b from-white to-[#F9F7F2]">
+      <div className="max-w-[84rem] mx-auto px-4 md:px-12">
+        {/* Heading */}
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
+            What Our Clients Say
+          </h2>
+          <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
+            Hear from businesses that have successfully navigated the certification process with our expert guidance.
+          </p>
+        </div>
+
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+          {testimonials.map((testimonial) => (
+            <div
+              key={testimonial.id}
+              className="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden group"
+            >
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A8781]/10 rounded-bl-full -mr-8 -mt-8 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+              
+              {/* Rating */}
+              <div className="flex gap-1 mb-4">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <svg
+                    key={i}
+                    className="w-5 h-5 text-[#1A8781]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+
+              {/* Content */}
+              <p className="text-gray-600 font-geist text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                "{testimonial.content}"
+              </p>
+
+              {/* Author */}
+              <div className="flex items-center gap-4">
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30"
+                />
+                <div>
+                  <h4 className="font-geist font-semibold text-[#1e1e1e]">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-gray-500 text-sm">
+                    {testimonial.role}
+                  </p>
+                </div>
+              </div>
+
+              {/* Quote icon */}
+              <div className="absolute bottom-0 right-0 text-[#1A8781]/10 text-7xl md:text-8xl font-playfair -mb-4 -mr-4">
+                "
               </div>
             </div>
           ))}
