@@ -4,6 +4,7 @@ import ArrowTwo from "../../assets/images/ArrowTwo.png";
 import WordPullUp from "../ui/word-pull-up";
 import { FadeText } from "../ui/fade-text";
 import { BlurIn } from "../ui/blur-in";
+import { Link } from "react-router-dom";
 // import { ImagesSlider } from "../ui/images-slider";
 
 const Hero = () => {
@@ -92,14 +93,18 @@ const Hero = () => {
               </div>
 
               <div className="flex gap-3 flex-wrap items-center">
+                <Link to="/about">
                 <BlurIn
-                  word="Our Services"
+                  word="About Us"
                   className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
                 />
-                <BlurIn
-                  word="Contact Us"
-                  className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
-                />
+                </Link>
+                <Link to="/contact">
+                  <BlurIn
+                    word="Contact Us"
+                    className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
+                  />
+                </Link>
               </div>
             </div>
             <img 
