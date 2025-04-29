@@ -33,7 +33,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export const categories = [
   {
@@ -131,10 +131,44 @@ export const categories = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const buttonRef = useRef(null);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target) && 
+          buttonRef.current && !buttonRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    const handleScroll = () => {
+      setIsOpen(false);
+    };
+
+    const handleMouseLeave = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.relatedTarget)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('scroll', handleScroll);
+    if (menuRef.current) {
+      menuRef.current.addEventListener('mouseleave', handleMouseLeave);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('scroll', handleScroll);
+      if (menuRef.current) {
+        menuRef.current.removeEventListener('mouseleave', handleMouseLeave);
+      }
+    };
+  }, []);
 
   return (
     <div className="z-[50] sticky top-0 w-full border-b bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
@@ -281,16 +315,14 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && <MobileNavbarMenu closeMenu={toggleMenu} />}
+      {isOpen && <MobileNavbarMenu closeMenu={toggleMenu} menuRef={menuRef} />}
     </div>
   );
 };
 
 export default Navbar;
 
-const MobileNavbarMenu = ({ closeMenu }) => {
-  const menuRef = useRef(null);
-
+const MobileNavbarMenu = ({ closeMenu, menuRef }) => {
   const handleLinkClick = () => {
     if (closeMenu) {
       closeMenu();
