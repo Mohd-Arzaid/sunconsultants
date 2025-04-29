@@ -462,11 +462,49 @@ const Testimonials = () => {
       image: "https://randomuser.me/api/portraits/men/67.jpg",
       content: "As an international company, we needed reliable certification partners in India. Sun Consultant exceeded our expectations.",
       rating: 5
+    },
+    {
+      id: 4,
+      name: "Anita Patel",
+      role: "Quality Manager, Pharma Solutions",
+      image: "https://randomuser.me/api/portraits/women/68.jpg",
+      content: "Their expertise in CDSCO registration helped us navigate complex regulatory requirements with ease. Truly professional team!",
+      rating: 5
+    },
+    {
+      id: 5,
+      name: "David Wilson",
+      role: "Head of Compliance, Global Tech",
+      image: "https://randomuser.me/api/portraits/men/75.jpg",
+      content: "Sun Consultant's support in WPC certification was invaluable. They made the entire process smooth and efficient.",
+      rating: 5
+    },
+    {
+      id: 6,
+      name: "Sneha Reddy",
+      role: "Export Manager, Electronics Ltd",
+      image: "https://randomuser.me/api/portraits/women/33.jpg",
+      content: "The team's knowledge of TEC certification requirements saved us months of work. Excellent service and support!",
+      rating: 5
+    },
+    {
+      id: 7,
+      name: "James Anderson",
+      role: "Sustainability Director, GreenTech",
+      image: "https://randomuser.me/api/portraits/men/45.jpg",
+      content: "Their guidance on EPR authorization was comprehensive and helped us meet all environmental compliance requirements.",
+      rating: 5
+    },
+    {
+      id: 8,
+      name: "Meera Kapoor",
+      role: "Product Manager, Consumer Goods",
+      image: "https://randomuser.me/api/portraits/women/22.jpg",
+      content: "Sun Consultant's end-to-end certification support has been crucial for our market entry strategy. Highly professional team!",
+      rating: 5
     }
+    
   ];
-
-  // Duplicate testimonials for seamless scrolling
-  const allTestimonials = [...testimonials, ...testimonials];
 
   return (
     <div className=" pb-6 md:pt-1 md:pb-16 bg-gradient-to-b from-white to-[#F9F7F2]">
@@ -486,7 +524,7 @@ const Testimonials = () => {
           <motion.div
             className="flex gap-8 md:gap-10 py-8"
             animate={{
-              x: ["0%", "-50%"],
+              x: ["0%", "-100%"],
             }}
             transition={{
               duration: 10,
@@ -495,9 +533,9 @@ const Testimonials = () => {
               repeatType: "loop",
             }}
           >
-            {allTestimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial, index) => (
               <div
-                key={`${testimonial.id}-${index}`}
+                key={testimonial.id}
                 className="min-w-[300px] md:min-w-[400px] bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/60 hover:border-[#1A8781]/80 relative overflow-hidden group"
                 style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)' }}
               >
@@ -539,11 +577,6 @@ const Testimonials = () => {
                     </p>
                   </div>
                 </div>
-
-                {/* Quote icon */}
-                {/* <div className="absolute bottom-0 right-0 text-[#1A8781]/10 text-7xl md:text-8xl font-playfair -mb-4 -mr-4">
-                  "
-                </div> */}
               </div>
             ))}
           </motion.div>
