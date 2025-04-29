@@ -24,11 +24,13 @@ import EMIEMC from "./pages/EMIEMC";
 import CBCertification from "./pages/CBCertification";
 import ISIMark from "./pages/ISIMark";
 import BatteryWaste from "./pages/BatteryWaste";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

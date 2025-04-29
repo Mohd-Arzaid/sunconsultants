@@ -7,6 +7,7 @@ import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
 import LMPC from "../../assets/images/LMPC.jpg";
 import ISIMark from "../../assets/images/ISIMark.jpg";
 import { BoxReveal } from "../magicui/box-reveal";
+import { Link } from "react-router-dom";
 
 
 const Services = () => {
@@ -37,7 +38,7 @@ const Services = () => {
         <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
        
    
-          <div className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/bis-mark-foreign" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
@@ -48,10 +49,10 @@ const Services = () => {
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               BIS Mark (ISI License) for Foreign Manufacture
             </p>
-          </div>
+          </Link>
 
 
-          <div className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/cdsco-registration-certification" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
@@ -62,9 +63,9 @@ const Services = () => {
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               CDSCO Registration Certification
             </p>
-          </div>
+          </Link>
 
-          <div className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/crs-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
@@ -75,9 +76,9 @@ const Services = () => {
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               BIS (CRS) Registration
             </p>
-          </div>
+          </Link>
 
-          <div className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/plastic-waste" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
@@ -88,9 +89,9 @@ const Services = () => {
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               Plastic Waste Management
             </p>
-          </div>
+          </Link>
 
-          <div className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/epr-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={EPRCertificate}
@@ -101,9 +102,9 @@ const Services = () => {
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               EPR Certificate Consultants
             </p>
-          </div>
+          </Link>
 
-          <div className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/lmpc-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
@@ -114,9 +115,9 @@ const Services = () => {
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               LMPC Certificate Consultants
             </p>
-          </div>
+          </Link>
 
-          <div className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/bis-certification" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
@@ -127,9 +128,9 @@ const Services = () => {
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               BIS Registration Certificate
             </p>
-          </div>
+          </Link>
 
-          <div className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/isi-mark-indian" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMark}
@@ -140,7 +141,7 @@ const Services = () => {
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               ISI MARK (BIS) for Indian Manufactures
             </p>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
