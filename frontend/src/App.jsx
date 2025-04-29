@@ -22,6 +22,8 @@ import BEE from "./pages/BEE";
 import CECertification from "./pages/CECertification";
 import EMIEMC from "./pages/EMIEMC";
 import CBCertification from "./pages/CBCertification";
+import ISIMark from "./pages/ISIMark";
+import BatteryWaste from "./pages/BatteryWaste";
 
 function App() {
   return (
@@ -46,6 +48,8 @@ function App() {
         <Route path="/services/lmpc-registration" element={<LMPC />} />
         <Route path="/services/plastic-waste" element={<PlasticWaste />} />
         <Route path="/services/legal-metrology" element={<LegalMetrology />} />
+        <Route path="/services/isi-mark-indian" element={<ISIMark />} />
+        <Route path="/services/battery-waste" element={<BatteryWaste />} />
         <Route path="/services/crs-registration" element={<CRSRegistration />} />
         <Route path="/services/peso" element={<Peso />} />
         <Route path="/services/tec" element={<Tec />} />
