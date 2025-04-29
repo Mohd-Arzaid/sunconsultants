@@ -20,6 +20,8 @@ import WPC from "./pages/WPC";
 import ROHS from "./pages/ROHS";
 import BEE from "./pages/BEE";
 import CECertification from "./pages/CECertification";
+import EMIEMC from "./pages/EMIEMC";
+import CBCertification from "./pages/CBCertification";
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
         <Route path="/services/rohs" element={<ROHS />} />
         <Route path="/services/bee" element={<BEE />} />
         <Route path="/services/ce-certification" element={<CECertification />} />
+        <Route path="/services/emi-emc" element={<EMIEMC />} />
+        <Route path="/services/cb-certification" element={<CBCertification />} />
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
     </>

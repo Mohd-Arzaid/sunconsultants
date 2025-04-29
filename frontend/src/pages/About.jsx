@@ -464,7 +464,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="pt-16 pb-16 md:pt-8 md:pb-8  bg-gradient-to-b from-white to-[#F9F7F2]">
+    <div className="pt-16 pb-16 md:pt-1 md:pb-16 bg-gradient-to-b from-white to-[#F9F7F2]">
       <div className="max-w-[84rem] mx-auto px-4 md:px-12">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">

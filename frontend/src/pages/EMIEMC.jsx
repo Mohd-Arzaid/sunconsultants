@@ -2,6 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import React, { useState, useEffect, useRef } from "react";
+
 import {
   Accordion,
   AccordionContent,
@@ -12,20 +13,20 @@ import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
 
-const CECertification = () => {
+const EMIEMC = () => {
   return (
     <>
-      <CEHero />
-      <CEIndex />
-      <CEContent />
+      <EMIHero />
+      <EMIIndex />
+      <EMIContent />
       <Footer />
     </>
   );
 };
 
-export default CECertification;
+export default EMIEMC;
 
-const CEHero = () => {
+const EMIHero = () => {
   return (
     <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
@@ -49,15 +50,16 @@ const CEHero = () => {
 
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              CE Mark
+              EMI/EMC Certification
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
-            Certification
+            Guide
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            CE Marking certifies product safety, quality, and compliance for
-            goods sold in the European Economic Area (EEA).
+            EMI Metrology ensures accurate and standardized weighing and
+            measuring practices as per government regulations, safeguarding
+            public trust and measurement accuracy.
           </p>
 
           <div className="flex items-center -mt-2">
@@ -137,7 +139,7 @@ const CEHero = () => {
   );
 };
 
-const CEIndex = () => {
+const EMIIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("Overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -257,10 +259,10 @@ const CEIndex = () => {
           <div className="flex flex-col py-2">
             {[
               "Overview",
-              "Services",
-              "Classification",
+              "Standardization",
+              "Authority",
               "Registration",
-              "Compliance",
+              "Verification",
               "FAQs",
             ].map((item) => (
               <div
@@ -285,10 +287,10 @@ const CEIndex = () => {
       <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto">
         {[
           "Overview",
-          "Services",
-          "Classification",
+          "Standardization",
+          "Authority",
           "Registration",
-          "Compliance",
+          "Verification",
           "FAQs",
         ].map((item) => (
           <div
@@ -319,13 +321,14 @@ const CEIndex = () => {
   );
 };
 
-const CEContent = () => {
+const EMIContent = () => {
   return (
     <div className="w-full overflow-x-hidden">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side */}
-          <CEContentLeft />
+
+          <EMIContentLeft />
 
           {/* Right Side */}
           <ServiceContentRight />
@@ -340,16 +343,13 @@ const ServiceFaq = () => {
   return (
     <div id="faqs" className="py-2 bg-gray-50 scroll-mt-20">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-     
-     
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-      
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can't find the answer you are looking for?{" "}
           <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
-          Reach out to us!
+            Reach out to us!
           </span>
         </p>
 
@@ -497,119 +497,119 @@ const ServiceFaq = () => {
         </div>
 
         {/* <div className="w-[768px] mt-14  mx-auto">
-          <h3 className="text-center font-geist text-[48px]  text-[#181818] leading-[48px] font-semibold  ">
-            Have questions, feedback or anything to say?
-          </h3>
-
-          <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
-            Email us at{" "}
-            <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@sunconsultants.co.in
-            </span>{" "}
-            or use one of the options below. We usually get back within a day or
-            two.
-          </div>
-
-          <div className="flex items-center my-[30px]">
-            <div className="h-px w-full bg-neutral-300  grow"></div>
-            <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
-              or
-            </span>
-            <div className="h-px w-full bg-neutral-300 grow"></div>
-          </div>
-
-          <div className="flex justify-center w-full">
-            <div className="flex gap-x-6">
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="mailto:info@sunconsultants.co.in"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
-                </svg>
-                <span className="sr-only">Email</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.github.com/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path>
-                </svg>
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://x.com/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"
-                    className=""
-                  ></path>
-                </svg>
-                <span className="sr-only">Twitter / X</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.linkedin.com/company/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path>
-                </svg>
-                <span className="sr-only">LinkedIn</span>
-              </a>
+            <h3 className="text-center font-geist text-[48px]  text-[#181818] leading-[48px] font-semibold  ">
+              Have questions, feedback or anything to say?
+            </h3>
+  
+            <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
+              Email us at{" "}
+              <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
+                info@sunconsultants.co.in
+              </span>{" "}
+              or use one of the options below. We usually get back within a day or
+              two.
             </div>
-          </div>
-
-          <div>
-            <div></div>
-          </div>
-        </div> */}
+  
+            <div className="flex items-center my-[30px]">
+              <div className="h-px w-full bg-neutral-300  grow"></div>
+              <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
+                or
+              </span>
+              <div className="h-px w-full bg-neutral-300 grow"></div>
+            </div>
+  
+            <div className="flex justify-center w-full">
+              <div className="flex gap-x-6">
+                <a
+                  className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
+                  href="mailto:info@sunconsultants.co.in"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    className="size-6"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
+                  </svg>
+                  <span className="sr-only">Email</span>
+                </a>
+                <a
+                  className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
+                  href="https://www.github.com/sunconsultants"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    className="size-6"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path>
+                  </svg>
+                  <span className="sr-only">GitHub</span>
+                </a>
+                <a
+                  className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
+                  href="https://x.com/sunconsultants"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    className="size-6"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"
+                      className=""
+                    ></path>
+                  </svg>
+                  <span className="sr-only">Twitter / X</span>
+                </a>
+                <a
+                  className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
+                  href="https://www.linkedin.com/company/sunconsultants"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    className="size-6"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path>
+                  </svg>
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+              </div>
+            </div>
+  
+            <div>
+              <div></div>
+            </div>
+          </div> */}
       </div>
     </div>
   );
@@ -659,7 +659,7 @@ const PointsListTwo = ({ points, heading }) => {
   );
 };
 
-const CEContentLeft = () => {
+const EMIContentLeft = () => {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
@@ -668,24 +668,16 @@ const CEContentLeft = () => {
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-        {/* Services Section */}
-        <ServicesSection />
+        <StandardizationSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-        {/* Classification Section */}
-        <ClassificationSection />
+        <AuthoritySection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-        {/* Registration Section */}
         <RegistrationSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-        {/* Necessity Section */}
-        <NecessitySection />
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        {/* Compliance Section */}
-        <ComplianceSection />
+        <VerificationSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
       </div>
     </div>
@@ -705,105 +697,75 @@ const OverviewSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        CE Marking Certification Overview
+        What is EMI Metrology?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        CE marking shows a product meets basic EU safety and quality standards.
+        EMI Metrology ensures accurate weighing and measuring as per EMI standards.
       </p>
 
       {/* Overview Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Getting a certified product or safe product is a right and wish of every
-        customer around the world. CE is kind of certification mark on the
-        products that are related to health, safety, and environment. It is
-        originated in Europe. In Europe, there is a regulating authority called
-        the EEA that means the European Economic Area. The EEA authenticates the
-        quality of their listed products. Products located within the European
-        Economic Area have to mandatorily obtain CE marking certification.
-        Importers, as well as the manufacturer of the goods, need to ascertain
-        that EC marked goods are up to the standards. Today, in this article we
-        will tell you about the basic of CE Marking Certification, How to get CE
-        marking Certification, and the kinds of the CE Marking Certification.
-        The EEA is bundled with European Countries like Iceland, Liechtenstein,
-        and Norway. It is also considered as the EEA single market. CE stands
-        for the "Conformite Europeenne." The literal meaning of the CE is the
-        European Conformity but later it changed it to CE mark in 1993. The
-        products which are exported to EEA by the other countries can also have
-        the CE marking as the EEA standards is a sign of guarantee.
+        Means that part Metrology which treats units of weighment and measurement, methods of weighing & measuring and weighing and measuring instruments in relation to the mandatory technical and EMI requirement which have the object of ensuring public guarantee from the point of view of security and accuracy of the details mentioned on or measured by the product.
       </div>
     </section>
   );
 };
 
-const ServicesSection = () => {
+const StandardizationSection = () => {
   return (
-    <section id="services" className="flex flex-col scroll-mt-20">
-      {/* Services */}
+    <section id="standardization" className="flex flex-col scroll-mt-20">
+      {/* Standardization */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Services
+          Standardization
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Services Provided Under CE Mark Certification
+        Ensuring Standard Weight and Measurement
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        CE marking ensures trusted, globally accepted product standards.
+        Weighing instruments must meet standards and be sealed for accuracy.
       </p>
 
-      {/* Services Content */}
+      {/* Standardization Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Logo has a substantial value of a standard on which people trusts
-        and to make that trust more strong the CE technical experts is matching
-        step by step with the changing trends of different products and making
-        it more competitive to pass the level. They also act as an advisory to
-        the manufacturers. CE is a standard of the international standard
-        because many products are sold outside the EEA.
+        Every instrument that weighs & measures must be manufactured as per the specification and model laid down by the Government of India. Weight & measures used by the traders are verified & stamped by the Inspector of the EMI Metrology Department, after due verification, with a seal for ensuring the integrity of the stamp of Inspector and quarter in which it is verified.
       </div>
     </section>
   );
 };
 
-const ClassificationSection = () => {
+const AuthoritySection = () => {
   return (
-    <section id="classification" className="flex flex-col scroll-mt-20">
-      {/* Classification */}
+    <section id="authority" className="flex flex-col scroll-mt-20">
+      {/* Authority */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Classification
+          Authority
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        CE Marking and ISO Certification Service
+        Authority Responsible for Granting License
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        CE and ISO marks boost product trust and quality.
+        The Controller of EMI Metrology grants licenses after inspection by the Inspector.
       </p>
 
-      {/* Classification Content */}
+      {/* Authority Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The CE Marking is one of the finest and most acknowledged standards that
-        is brought forth by EEA and permits the manufacturer to use the mark to
-        lighten the standard. Now, ISO Certification is an International non-
-        government organization that independently controls or manages the
-        quality management system with some standard. The ISO mark silently
-        changes the mind of the customer from not trusting a product to trust
-        the product after the ISO mark. It also increases the value and trust in
-        the product. There is no mandatory or necessary rope attached to the
-        product to get this certification but it just makes a product of minimum
-        standard to a high standard after theISO mark
+        Controller of EMI Metrology Department is the competent authority to grant the license. Application for license should be submitted to the Inspector of EMI metrology who will inspect the firm and forward the same to Controller of EMI Metrology with recommendation for consideration for grant of license.
       </div>
     </section>
   );
@@ -822,113 +784,46 @@ const RegistrationSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        CDSCO Device Classification
+        Authority for Weights & Measures Registration
       </h3>
+
+      {/* Description */}
+      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Register with EMI Metrology for import/export.
+      </p>
 
       {/* Registration Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The CE Marking is one of the finest and most acknowledged standards that
-        is brought forth by EEA and permits the manufacturer to use the mark to
-        lighten the standard. Now, ISO Certification is an International non-
-        government organization that independently controls or manages the
-        quality management system with some standard. The ISO mark silently
-        changes the mind of the customer from not trusting a product to trust
-        the product after the ISO mark. It also increases the value and trust in
-        the product. There is no mandatory or necessary rope attached to the
-        product to get this certification but it just makes a product of minimum
-        standard to a high standard after theISO mark
+        Any person who intends to import/export any weight & measure needs to register himself with Department of EMI Metrology, Government of India as importer, packer or manufacturer. If You are Looking for top EMI Metrology consultants in India then SUN CONSULTANTS & ENGINEERS is your ultimate destination to resolve all your queries pertaining to EMI metrology compliances. We are a team of dedicated professionals offering premium EMI Metrology consultancy services in India. As a team we are well-versed with the procedures laid down by the Government and help your business through the entire registration process and knowledge support wherever required. We assure you of complete satisfaction for EMI Metrology Consultancy in India because of the reason that we have extensive experience of working with EMI Metrology Department of Consumer Affairs and EMI Metrology Food & Supplies Department.
       </div>
     </section>
   );
 };
 
-const NecessitySection = () => {
+const VerificationSection = () => {
   return (
-    <section id="necessity" className="flex flex-col scroll-mt-20">
-      {/* Necessity */}
+    <section id="verification" className="flex flex-col scroll-mt-20">
+      {/* Verification */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Necessity
+          Verification
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Why CE Rating is Required?
+        Certificate Display Requirement
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        CE certificate proves product energy efficiency and boosts trust.
+        Display the verification certificate at the usage site.
       </p>
 
-      {/* Necessity Content */}
+      {/* Verification Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The European Commission lifts the curtain from the harmonized conformity
-        with the EU EMC that puts all their attention in checking the quality,
-        safety and non- health hazardous substance in the products. The EC made
-        CE marking mandatory stamp for the production of electronic and
-        electrical equipment that is sold in EEA. This made a particular
-        standard of the above equipment safe and ready to use and make the
-        product less harmful to the mankind of the users.
-      </div>
-    </section>
-  );
-};
-
-const ComplianceSection = () => {
-  return (
-    <section id="compliance" className="flex flex-col scroll-mt-20">
-      {/* Compliance */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Compliance
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Why CE Rating is Required?
-      </h3>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        CE certificate proves product energy efficiency and boosts trust.
-      </p>
-
-      <div className="flex mt-[16px] md:mt-[24px] gap-10">
-        {/* Points */}
-        <PointsListTwo
-          points={[
-            "Energy Compliance",
-            "Efficiency Rating",
-            "Power Certification",
-            "Star Labeling",
-            "Energy Approval",
-            "Eco Compliance",
-            "Performance Rating",
-            "Sustainability Mark",
-            "Green Certification",
-            "Energy Validation",
-          ]}
-          heading="Mandatory CE-Labeled Products"
-        />
-      </div>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          Validity
-        </span>
-        Validity of CDSCO online registration is perpetual i.e. no end date and
-        requires no renewal. <br /> <br />
-        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          Note
-        </span>
-        After the registration is completed, a unique file number is generated,
-        which has to be mentioned on the product / packaging, in case of
-        registration there is no certificate
+        It is necessary to display every certificate of verification granted under the Act at a conspicuous place in the premises where such weights or measures are being, or intended or likely to be used in any transaction or for protection.
       </div>
     </section>
   );
