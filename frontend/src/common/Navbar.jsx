@@ -281,18 +281,21 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && <MobileNavbarMenu closeMenu={toggleMenu} />}
+      {isOpen && <MobileNavbarMenu closeMenu={toggleMenu} buttonRef={buttonRef} />}
     </div>
   );
 };
 
 export default Navbar;
 
-const MobileNavbarMenu = ({ closeMenu }) => {
+const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
   const menuRef = useRef(null);
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
+      if (buttonRef && buttonRef.current && buttonRef.current.contains(event.target)) {
+        return;
+      }
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         closeMenu();
       }
@@ -313,7 +316,7 @@ const MobileNavbarMenu = ({ closeMenu }) => {
       document.removeEventListener('touchstart', handleOutsideClick);
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [closeMenu]);
+  }, [closeMenu, buttonRef]);
 
   const handleLinkClick = () => {
     if (closeMenu) {
