@@ -196,18 +196,18 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
-                    <Link to="/latest-notifications" className="block">
+                    <a href="/latest-notifications" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <BookText className="w-4 h-4 mr-2" />
                         Latest Notification
                       </div>
-                    </Link>
-                    <Link to="/ministry-updates" className="block">
+                    </a>
+                    <a href="/ministry-updates" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <FileWarning className="w-4 h-4 mr-2" />
                         Ministry Updates
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -222,12 +222,12 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
-                    <Link to="/webinar" className="block">
+                    <a href="/webinar" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <Presentation className="w-4 h-4 mr-2" />
                         Webinar
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
