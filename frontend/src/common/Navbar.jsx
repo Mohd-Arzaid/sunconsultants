@@ -300,7 +300,7 @@ const MobileNavbarMenu = ({ closeMenu }) => {
   return (
     <div
       ref={menuRef}
-      className="md:hidden absolute top-full left-0 w-full bg-white border-t border-b border-neutral-200 shadow-md z-40"
+      className="md:hidden absolute top-full left-0 w-full bg-white border-t border-b border-neutral-200 shadow-md z-40 max-h-[80vh] overflow-y-auto scrollbar-hide"
     >
       <div className="px-4 py-4 space-y-1">
         <Link to="/" className="block w-full" onClick={handleLinkClick}>
@@ -318,7 +318,7 @@ const MobileNavbarMenu = ({ closeMenu }) => {
               Services
             </AccordionTrigger>
             <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
-              <ul className="flex flex-col space-y-1 py-1">
+              <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto scrollbar-hide">
                 {categories.map((category, index) => (
                   <li key={index} className="w-full">
                     <Link
@@ -345,7 +345,8 @@ const MobileNavbarMenu = ({ closeMenu }) => {
               Latest Updates
             </AccordionTrigger>
             <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
-              <ul className="flex flex-col space-y-1 py-1">
+              <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto">
+
                 <li className="w-full">
                   <Link
                     to="/latest-notifications"
@@ -385,7 +386,7 @@ const MobileNavbarMenu = ({ closeMenu }) => {
               Gallery
             </AccordionTrigger>
             <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
-              <ul className="flex flex-col space-y-1 py-1">
+              <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto">
                 <li className="w-full">
                   <Link
                     to="/webinar"
