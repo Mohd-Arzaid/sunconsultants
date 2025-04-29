@@ -3,6 +3,7 @@ import { Send } from "lucide-react";
 import ContactVector from "../assets/images/ContactVector.png";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
+import Footer from "@/common/Footer";
 
 const ContactUs = () => {
   return (
@@ -13,7 +14,7 @@ const ContactUs = () => {
           className="hidden md:block absolute top-[20%] z-10 right-[15%] w-[20px] h-[20px] rounded-full bg-blue-800/30 animate-float"
           style={{ animationDelay: "1s" }}
         ></div>
-
+{/* 
         <div className="hidden md:block absolute inset-0 translate-x-[780px] translate-y-[180px]">
           <img
             src={ContactVector}
@@ -21,7 +22,7 @@ const ContactUs = () => {
             className="animate-float"
             style={{ animationDelay: "1s" }}
           />
-        </div>
+        </div> */}
 
         <div className="max-w-[84rem] z-[100] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
           {/* Left Side */}
@@ -132,6 +133,8 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
