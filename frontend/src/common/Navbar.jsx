@@ -175,12 +175,12 @@ const Navbar = () => {
                 <NavigationMenuContent>
                   <div className="grid grid-cols-3 gap-2 w-[700px] p-6">
                     {categories.map((category, index) => (
-                      <Link key={index} to={category.link} className="block">
+                      <a key={index} href={category.link} className="block">
                         <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors  block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                           {category.icon}
                           {category.name}
                         </div>
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </NavigationMenuContent>
@@ -303,11 +303,7 @@ const MobileNavbarMenu = ({ closeMenu }) => {
       className="md:hidden absolute top-full left-0 w-full bg-white border-t border-b border-neutral-200 shadow-md z-40"
     >
       <div className="px-4 py-4 space-y-1">
-        <Link
-          to="/"
-          className="block w-full"
-          onClick={handleLinkClick}
-        >
+        <Link to="/" className="block w-full" onClick={handleLinkClick}>
           <Button
             variant="ghost"
             className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
@@ -410,11 +406,7 @@ const MobileNavbarMenu = ({ closeMenu }) => {
           </AccordionItem>
         </Accordion>
 
-        <Link
-          to="/about"
-          className="block w-full"
-          onClick={handleLinkClick}
-        >
+        <Link to="/about" className="block w-full" onClick={handleLinkClick}>
           <Button
             variant="ghost"
             className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
@@ -423,11 +415,7 @@ const MobileNavbarMenu = ({ closeMenu }) => {
           </Button>
         </Link>
 
-        <Link
-          to="/contact"
-          className="block w-full"
-          onClick={handleLinkClick}
-        >
+        <Link to="/contact" className="block w-full" onClick={handleLinkClick}>
           <Button
             variant="ghost"
             className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
@@ -436,11 +424,7 @@ const MobileNavbarMenu = ({ closeMenu }) => {
           </Button>
         </Link>
 
-        <Link
-          to="/"
-          className="block w-full"
-          onClick={handleLinkClick}
-        >
+        <Link to="/" className="block w-full" onClick={handleLinkClick}>
           <Button
             variant="ghost"
             className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
