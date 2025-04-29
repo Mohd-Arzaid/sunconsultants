@@ -33,7 +33,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export const categories = [
   {
@@ -290,6 +290,30 @@ export default Navbar;
 
 const MobileNavbarMenu = ({ closeMenu }) => {
   const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        closeMenu();
+      }
+    };
+
+    const handleScroll = () => {
+      closeMenu();
+    };
+
+    // Add event listeners
+    document.addEventListener('mousedown', handleOutsideClick);
+    document.addEventListener('touchstart', handleOutsideClick);
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('touchstart', handleOutsideClick);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [closeMenu]);
 
   const handleLinkClick = () => {
     if (closeMenu) {
