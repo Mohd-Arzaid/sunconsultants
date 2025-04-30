@@ -3,6 +3,7 @@ import whychooseus from "../assets/images/whychooseus.jpg";
 import React, { useState } from "react";
 import Footer from "@/common/Footer";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 
 const About = () => {
@@ -267,12 +268,15 @@ const VideoShowcase = () => {
 };
 
 const OurServices = () => {
+  const navigate = useNavigate();
+  
   const services = [
     {
       title: "BIS Certification",
       description:
         "Bureau of Indian Standards certification for products to ensure quality, safety and reliability in the Indian market.",
       icon: "📋",
+      path: "/services/bis-certification"
     },
     {
       id: 2,
@@ -280,6 +284,7 @@ const OurServices = () => {
       description:
         "Legal Metrology Packaged Commodities certification ensuring accurate measurement and proper labeling of packaged goods.",
       icon: "⚖️",
+      path: "/services/lmpc-registration"
     },
     {
       id: 3,
@@ -287,6 +292,7 @@ const OurServices = () => {
       description:
         "Central Drugs Standard Control Organization approval for medical devices and pharmaceuticals in India.",
       icon: "💊",
+      path: "/services/cdsco-registration-certification"
     },
     {
       id: 4,
@@ -294,6 +300,7 @@ const OurServices = () => {
       description:
         "Extended Producer Responsibility compliance for managing plastic waste and environmental sustainability.",
       icon: "♻️",
+      path: "/services/epr-registration"
     },
     {
       id: 5,
@@ -301,6 +308,7 @@ const OurServices = () => {
       description:
         "Wireless Planning & Coordination approval for wireless equipment and radio communication devices.",
       icon: "📡",
+      path: "/services/wpc"
     },
     {
       id: 6,
@@ -308,6 +316,7 @@ const OurServices = () => {
       description:
         "Telecommunication Engineering Center certification for telecom equipment in the Indian market.",
       icon: "📱",
+      path: "/services/tec"
     },
   ];
 
@@ -366,7 +375,10 @@ const OurServices = () => {
                       <p className="text-base md:text-xl font-geist text-gray-700 leading-relaxed text-center md:text-left">
                         {service.description}
                       </p>
-                      <button className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-2 md:mt-4 group mx-auto md:mx-0">
+                      <button 
+                        onClick={() => navigate(service.path)}
+                        className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-2 md:mt-4 group mx-auto md:mx-0"
+                      >
                         <span className="font-medium text-sm md:text-base">
                           Learn More
                         </span>

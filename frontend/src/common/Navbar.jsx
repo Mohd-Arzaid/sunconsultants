@@ -281,7 +281,9 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && <MobileNavbarMenu closeMenu={toggleMenu} buttonRef={buttonRef} />}
+      {isOpen && (
+        <MobileNavbarMenu closeMenu={toggleMenu} buttonRef={buttonRef} />
+      )}
     </div>
   );
 };
@@ -293,7 +295,11 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (buttonRef && buttonRef.current && buttonRef.current.contains(event.target)) {
+      if (
+        buttonRef &&
+        buttonRef.current &&
+        buttonRef.current.contains(event.target)
+      ) {
         return;
       }
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -306,15 +312,15 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
     };
 
     // Add event listeners
-    document.addEventListener('mousedown', handleOutsideClick);
-    document.addEventListener('touchstart', handleOutsideClick);
-    window.addEventListener('scroll', handleScroll);
+    document.addEventListener("mousedown", handleOutsideClick);
+    document.addEventListener("touchstart", handleOutsideClick);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup
     return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
-      document.removeEventListener('touchstart', handleOutsideClick);
-      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("touchstart", handleOutsideClick);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [closeMenu, buttonRef]);
 
@@ -373,7 +379,6 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
             </AccordionTrigger>
             <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
               <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto">
-
                 <li className="w-full">
                   <Link
                     to="/latest-notifications"
