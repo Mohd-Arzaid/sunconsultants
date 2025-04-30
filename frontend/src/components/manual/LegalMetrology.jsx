@@ -14,6 +14,7 @@ import {
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
+import ScrollToTopButton from "../common/ScrollToTop";
 
 export const LegalMetrology = () => {
   return (
@@ -21,6 +22,7 @@ export const LegalMetrology = () => {
       <LMCHero />
       <LMCIndex />
      <LMCContent />
+     <ScrollToTopButton />
      {/*   <Footer/> */}
     </>
   );

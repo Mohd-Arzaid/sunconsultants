@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
+import ScrollToTopButton from "@/components/common/ScrollToTop";
 
 const BEE = () => {
   return (
@@ -19,6 +20,7 @@ const BEE = () => {
       <BEEIndex />
       <BEEContent />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 };

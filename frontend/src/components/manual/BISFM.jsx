@@ -13,6 +13,7 @@ import {
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
+import ScrollToTopButton from "../common/ScrollToTop";
 
 export const BISFM = () => {
   return (
@@ -21,6 +22,7 @@ export const BISFM = () => {
       <BISFMIndex />
       <BISFMContent />
       <Footer/>
+      <ScrollToTopButton />
     </>
   );
 };

@@ -13,6 +13,7 @@ import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/common/Footer";
+import ScrollToTopButton from "@/components/common/ScrollToTop";
 
 const CRSRegistration = () => {
   return (
@@ -21,6 +22,7 @@ const CRSRegistration = () => {
       <BISCRSIndex />
       <BISCRSContent />
       <Footer/>
+      <ScrollToTopButton />
     </>
   );
 };

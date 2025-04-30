@@ -14,6 +14,7 @@ import {
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
+import ScrollToTopButton from "../common/ScrollToTop";
 
 export const LMPC = () => {
   return (
@@ -22,6 +23,7 @@ export const LMPC = () => {
       <LMPCIndex />
       <LMPCContent />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 };

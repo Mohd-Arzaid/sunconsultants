@@ -12,6 +12,7 @@ import {
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
+import ScrollToTopButton from "@/components/common/ScrollToTop";
 
 const ROHS = () => {
   return (
@@ -20,6 +21,7 @@ const ROHS = () => {
       <ROHSIndex />
       <ROHSContent />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 };

@@ -14,6 +14,7 @@ import {
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
+import ScrollToTopButton from "../common/ScrollToTop";
 
 export const PlasticWaste = () => {
   return (
@@ -22,6 +23,7 @@ export const PlasticWaste = () => {
       <PWMRIndex />
       <PWMRContent />
       <Footer/>
+      <ScrollToTopButton />
     </>
   );
 };

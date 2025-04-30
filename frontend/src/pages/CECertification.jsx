@@ -11,6 +11,7 @@ import {
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
+import ScrollToTopButton from "@/components/common/ScrollToTop";
 
 const CECertification = () => {
   return (
@@ -19,6 +20,7 @@ const CECertification = () => {
       <CEIndex />
       <CEContent />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 };
