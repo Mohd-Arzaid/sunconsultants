@@ -12,8 +12,13 @@ import { useState } from "react";
 
 const Countries = () => {
   const [current, setCurrent] = useState(0);
-  const handlePreviousClick = () => {};
-  const handleNextClick = () => {};
+  const handlePreviousClick = () => {
+
+  };
+  
+  const handleNextClick = () => {
+
+  };
 
   const countriesData = [
     { name: "Thailand", img: Thailand },
