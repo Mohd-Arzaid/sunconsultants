@@ -4,7 +4,7 @@ import { Phone, MessageCircle, Mail } from 'lucide-react';
 
 const MobileNav = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 md:hidden z-[60]">
+    <div className="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md border-t border-gray-200/50 md:hidden z-[60] shadow-lg">
       <div className="flex justify-around items-center h-16">
         <a
           href="tel:+919999999999"
