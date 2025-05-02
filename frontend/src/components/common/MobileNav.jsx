@@ -10,7 +10,7 @@ const MobileNav = () => {
           href="tel:+919999999999"
           className="flex flex-col items-center text-blue-700"
         >
-          <Phone className="h-6 w-6" />
+          <Phone className="h-7 w-7" />
           <span className="font-geist text-xs mt-1">Call</span>
         </a>
         
@@ -20,7 +20,7 @@ const MobileNav = () => {
           rel="noopener noreferrer"
           className="flex flex-col items-center text-green-700"
         >
-          <MessageCircle className="h-6 w-6" />
+          <MessageCircle className="h-7 w-7" />
           <span className="font-geist text-xs mt-1">WhatsApp</span>
         </a>
         
@@ -28,7 +28,7 @@ const MobileNav = () => {
           to="/contact"
           className="flex flex-col items-center text-gray-700"
         >
-          <Mail className="h-6 w-6" />
+          <Mail className="h-7 w-7" />
           <span className="font-geist text-xs mt-1">Contact</span>
         </Link>
       </div>
