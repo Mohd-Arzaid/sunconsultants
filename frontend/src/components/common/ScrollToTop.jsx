@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
         <div >
         <button
           onClick={scrollToTop}
-          className="  md:hidden fixed bottom-8 right-8 z-[9999] flex items-center justify-center w-14 h-14 rounded-full bg-[#1A8781] text-white shadow-lg hover:bg-[#1A8781]/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group"
+          className="  md:hidden fixed bottom-20 right-8 z-[9999] flex items-center justify-center w-14 h-14 rounded-full bg-[#1A8781] text-white shadow-lg hover:bg-[#1A8781]/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group"
           aria-label="Scroll to top"
         >
           <ChevronUp size={28} className="group-hover:-translate-y-1 transition-transform duration-300" />
