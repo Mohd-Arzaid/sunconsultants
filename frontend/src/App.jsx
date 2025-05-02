@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./common/Navbar";
+import MobileNav from "./components/common/MobileNav";
 import Home from "./pages/Home";
 import CDSCO from "./pages/CDSCO";
 import About from "./pages/About";
@@ -66,6 +67,7 @@ function App() {
         <Route path="/services/cb-certification" element={<CBCertification />} />
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
+      <MobileNav />
     </>
   );
 }
