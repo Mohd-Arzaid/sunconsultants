@@ -5,31 +5,31 @@ import { Phone, MessageCircle, Mail } from 'lucide-react';
 const MobileNav = () => {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md border-t border-gray-200/50 md:hidden z-[60] shadow-lg">
-      <div className="flex justify-around items-center h-16">
+      <div className="flex justify-around items-center h-20">
         <a
           href="tel:+919999999999"
-          className="flex flex-col items-center text-blue-600"
+          className="flex flex-col items-center text-blue-700"
         >
           <Phone className="h-6 w-6" />
-          <span className="text-xs mt-1">Call</span>
+          <span className="font-geist text-xs mt-1">Call</span>
         </a>
         
         <a
           href="https://wa.me/919999999999"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center text-green-600"
+          className="flex flex-col items-center text-green-700"
         >
           <MessageCircle className="h-6 w-6" />
-          <span className="text-xs mt-1">WhatsApp</span>
+          <span className="font-geist text-xs mt-1">WhatsApp</span>
         </a>
         
         <Link
           to="/contact"
-          className="flex flex-col items-center text-gray-600"
+          className="flex flex-col items-center text-gray-700"
         >
           <Mail className="h-6 w-6" />
-          <span className="text-xs mt-1">Contact</span>
+          <span className="font-geist text-xs mt-1">Contact</span>
         </Link>
       </div>
     </div>
