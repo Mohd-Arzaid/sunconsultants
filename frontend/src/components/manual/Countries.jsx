@@ -13,14 +13,24 @@ import { useState } from "react";
 const Countries = () => {
   const [current, setCurrent] = useState(0);
   const handlePreviousClick = () => {
-
+    setCountriesData( prev =>{
+      const newArray = [...prev];
+      const lastItem = newArray.pop();
+      newArray.unshift(lastItem);
+      return newArray;
+    });
   };
   
   const handleNextClick = () => {
-
+    setCountriesData(prev => {
+      const newArray = [...prev];
+      const firstItem = newArray.shift();
+      newArray.push(firstItem);
+      return newArray;
+    });
   };
 
-  const countriesData = [
+  const [countriesData, setCountriesData] = useState([
     { name: "Thailand", img: Thailand },
     { name: "Vietnam", img: Vietnam },
     { name: "Canada", img: Canada },
@@ -29,7 +39,7 @@ const Countries = () => {
     { name: "Colombia", img: Colombia },
     { name: "Qatar", img: Qatar },
     { name: "India", img: India },
-  ];
+  ]);
 
   return (
     <div className="relative custom-radial-gradient py-12 md:py-0">
