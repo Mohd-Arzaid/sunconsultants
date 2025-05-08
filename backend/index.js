@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./utils/db.js";
+import contactRoute from "./routes/contact.route.js";
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 });
 
 //Api's
+app.use("/api/v1/contact",contactRoute);
 
 // Listening to the server
 app.listen(PORT, () => {
