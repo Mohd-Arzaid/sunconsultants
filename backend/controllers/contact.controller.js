@@ -1,4 +1,5 @@
 import { Contact } from "../model/contact.model.js";
+import { appendToSheet } from "../utils/googleSheet.js";
 
 // submit contact form
 export const submitContact = async (req, res) => {
@@ -42,19 +43,21 @@ export const submitContact = async (req, res) => {
     const dateStr = `${day}/${month}/${year}`;
     const timeStr = `${hour}:${min}:${sec}`;
 
-    // Save to MongoDB
-    const contact = new Contact({
+    const contactData = {
       fullName,
       email,
       phoneNumber,
       message,
       Date: dateStr,
       time: timeStr
-    });
+    };
+
+    // Save to MongoDB
+    const contact = new Contact(contactData);
     await contact.save();
 
     // Save to Google Sheets
-    // thodi der m krunga
+    await appendToSheet(contactData);
 
     return res.status(201).json({
       success: true,
