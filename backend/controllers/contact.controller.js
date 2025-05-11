@@ -4,12 +4,21 @@ import { appendToSheet } from "../utils/googleSheet.js";
 // submit contact form
 export const submitContact = async (req, res) => {
   try {
-    const { fullName, email, phoneNumber, message } = req.body;
+    const { fullName, email, phoneNumber, message, pageUrl, pageName } = req.body;
 
-    if (!fullName || !email || !phoneNumber || !message) {
+    if (!fullName || !email || !phoneNumber || !message || !pageUrl || !pageName) {
       return res.status(400).json({
         message: "Please fill up All the required fields",
         success: false,
+      });
+    }
+
+    // validate full name
+    const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
+    if (!nameRegex.test(fullName)) {
+      return res.status(400).json({
+        success: false,
+        message: "Please Enter a valid Full Name.",
       });
     }
 
@@ -18,28 +27,28 @@ export const submitContact = async (req, res) => {
     if (!emailRegex.test(email)) {
       return res.status(400).json({
         success: false,
-        message: "Invalid Email Format",
+        message: "Please Enter a valid Email Address.",
       });
     }
 
     // validate phone number
-    const phoneRegex = /^[0-9]{10}$/;
+    const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
     if (!phoneRegex.test(phoneNumber)) {
       return res.status(400).json({
         success: false,
-        message: "Phone Number must be 10 digits",
+        message:
+          "Please Enter a Valid Phone number (8-15 digits)",
       });
     }
 
-    
     // Get current date and time
     const now = new Date();
-    const day = String(now.getDate()).padStart(2, '0');
-    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, "0");
+    const month = String(now.getMonth() + 1).padStart(2, "0");
     const year = now.getFullYear();
-    const hour = String(now.getHours()).padStart(2, '0');
-    const min = String(now.getMinutes()).padStart(2, '0');
-    const sec = String(now.getSeconds()).padStart(2, '0');
+    const hour = String(now.getHours()).padStart(2, "0");
+    const min = String(now.getMinutes()).padStart(2, "0");
+    const sec = String(now.getSeconds()).padStart(2, "0");
     const dateStr = `${day}/${month}/${year}`;
     const timeStr = `${hour}:${min}:${sec}`;
 
@@ -48,8 +57,10 @@ export const submitContact = async (req, res) => {
       email,
       phoneNumber,
       message,
+      pageUrl,
+      pageName,
       Date: dateStr,
-      time: timeStr
+      time: timeStr,
     };
 
     // Save to MongoDB
@@ -64,7 +75,6 @@ export const submitContact = async (req, res) => {
       contact,
       message: "Contact Form Submitted Successfully !",
     });
-
   } catch (error) {
     console.error("Error Submitting Contact Form:", error);
     return res.status(500).json({

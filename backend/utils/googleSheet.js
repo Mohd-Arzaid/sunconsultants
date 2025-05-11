@@ -17,7 +17,7 @@ export const appendToSheet = async (contactData) => {
     // Append the contact data as a new row in the specified Google Sheet
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID, // Sheet ID from .env
-      range: "Sheet1!A:F", // Target range (columns A to F)
+      range: "Sheet1!A:H", // Updated range to include page name (columns A to H)
       valueInputOption: "USER_ENTERED", // Data will be treated as if entered by user
       resource: {
         values: [
@@ -26,6 +26,8 @@ export const appendToSheet = async (contactData) => {
             contactData.email,      // Email
             contactData.phoneNumber,// Phone Number
             contactData.message,    // Message
+            contactData.pageUrl,    // Page URL
+            contactData.pageName,   // Page Name
             contactData.Date,       // Date
             contactData.time,       // Time
           ],

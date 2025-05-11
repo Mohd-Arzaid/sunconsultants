@@ -4,8 +4,89 @@ import ContactVector from "../assets/images/ContactVector.png";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/common/Footer";
+import { useState } from "react";
+import axios from "axios";
+import { toast } from "sonner";
+import { ClockLoader } from "react-spinners";
+
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const ContactUs = () => {
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+    pageUrl: window.location.href,
+    pageName: "Contact Page",
+  });
+
+  const { fullName, email, phoneNumber, message } = formData;
+
+  const handleOnChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Full name validation
+    const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
+    if (!nameRegex.test(fullName)) {
+      toast.error("Please Enter a valid Full Name.");
+      setLoading(false);
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.error("Please Enter a valid Email Address.");
+      setLoading(false);
+      return;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      toast.error("Please Enter a Valid Phone number (8-15 digits)");
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await axios.post(
+        `${BASE_URL}/contact/submit-contact`,
+        formData
+      );
+
+      if (!response.data.success) {
+        throw new Error(response.data.message);
+      }
+      toast.success("Contact form submit successfully!");
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+        pageUrl: window.location.href,
+        pageName: "Contact Page",
+      });
+    } catch (error) {
+      const errorMessage =
+        error.response?.data?.message || "Something went wrong";
+      toast.error(errorMessage || "Failed to submit contact form details!");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <main className="w-full pt-[30px] md:pt-[50px] pb-[50px] md:pb-[90px]  relative overflow-hidden bg-gradient-to-b from-white to-[#D2DCFF] ">
@@ -14,7 +95,7 @@ const ContactUs = () => {
           className="hidden md:block absolute top-[20%] z-10 right-[15%] w-[20px] h-[20px] rounded-full bg-blue-800/30 animate-float"
           style={{ animationDelay: "1s" }}
         ></div>
-{/* 
+        {/* 
         <div className="hidden md:block absolute inset-0 translate-x-[780px] translate-y-[180px]">
           <img
             src={ContactVector}
@@ -39,35 +120,70 @@ const ContactUs = () => {
               <Separator className="hidden md:block w-[94.46px]  h-[2px] bg-[#008080]" />
             </div>
 
-            <div className="flex flex-col mt-4 gap-5 w-full">
+            <form
+              onSubmit={handleFormSubmit}
+              className="flex flex-col mt-4 gap-5 w-full"
+            >
               <Input
+                name="fullName"
+                value={fullName}
+                onChange={handleOnChange}
+                disabled={loading}
                 placeholder="Please Enter Your Full Name"
-                className="font-geist focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[14px] md:placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="
+                font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100
+                
+                "
               />
 
               <Input
+                name="phoneNumber"
+                value={phoneNumber}
+                onChange={handleOnChange}
+                disabled={loading}
                 placeholder="Please Enter Your Phone Number"
-                className="font-geist focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[14px] md:placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="
+               font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
               />
 
               <Input
+                name="email"
+                value={email}
+                onChange={handleOnChange}
+                disabled={loading}
                 placeholder="Please Enter Your Email Address"
-                className="font-geist focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[14px] md:placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide px-5"
+                className="
+            font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
               />
 
               <Textarea
+                name="message"
+                value={message}
+                onChange={handleOnChange}
+                disabled={loading}
                 placeholder="Enter Your Message"
-                className="font-geist focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-48 md:h-64 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:text-[14px] md:placeholder:text-[16px] placeholder:leading-[24px] placeholder:tracking-wide p-5 resize-none"
+                className="
+                font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-48 md:h-64 placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold  font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide p-5 resize-none disabled:opacity-100"
               ></Textarea>
 
               <button
                 type="submit"
-                className="flex justify-center font-geist text-white bg-blue-800 items-center gap-3 boxshadowbtn "
+                disabled={loading}
+                className="flex justify-center font-geist text-white bg-blue-800 items-center gap-3 boxshadowbtn h-[50px] md:h-[58px]  disabled:opacity-100"
               >
-                <Send />
-                SUBMIT
+                {loading ? (
+                  <div className="flex gap-3 items-center justify-center">
+                    <ClockLoader size={22} color="#fff" />
+                    <span>Sending</span>
+                  </div>
+                ) : (
+                  <div className="flex gap-3 items-center justify-center">
+                    <Send />
+                    <span>SUBMIT</span>
+                  </div>
+                )}
               </button>
-            </div>
+            </form>
           </div>
 
           {/* Right side */}

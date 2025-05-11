@@ -24,6 +24,16 @@ const contactSchema = new mongoose.Schema(
             required: true,
             trim: true
           },
+          pageUrl: {
+            type: String,
+            required: true,
+            trim: true
+          },
+          pageName: {
+            type: String,
+            required: true,
+            trim: true
+          },
           Date: {
             type: String,
             required: true
