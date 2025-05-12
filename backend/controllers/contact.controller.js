@@ -43,14 +43,10 @@ export const submitContact = async (req, res) => {
 
     // Get current date and time
     const now = new Date();
-    const day = String(now.getDate()).padStart(2, "0");
-    const month = String(now.getMonth() + 1).padStart(2, "0");
-    const year = now.getFullYear();
-    const hour = String(now.getHours()).padStart(2, "0");
-    const min = String(now.getMinutes()).padStart(2, "0");
-    const sec = String(now.getSeconds()).padStart(2, "0");
-    const dateStr = `${day}/${month}/${year}`;
-    const timeStr = `${hour}:${min}:${sec}`;
+    const options = { timeZone: "Asia/Kolkata", hour12: false };
+    const dateTimeStr = now.toLocaleString("en-IN", options);
+
+    const [dateStr, timeStr] = dateTimeStr.split(", ");
 
     const contactData = {
       fullName,
