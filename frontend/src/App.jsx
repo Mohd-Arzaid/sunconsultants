@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./common/Navbar";
+import TopBar from "./common/TopBar";
 import MobileNav from "./components/common/MobileNav";
 import Home from "./pages/Home";
 import CDSCO from "./pages/CDSCO";
@@ -31,6 +32,7 @@ import MinistryUpdates from "./pages/MinistryUpdates";
 function App() {
   return (
     <>
+      <TopBar />
       <Navbar />
       <ScrollToTop />
       <Routes>
