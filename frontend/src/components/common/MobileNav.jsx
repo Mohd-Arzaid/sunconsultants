@@ -1,6 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Phone, MessageCircle, Mail } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Phone, MessageCircle, Mail } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
 
 const MobileNav = () => {
   return (
@@ -13,7 +21,7 @@ const MobileNav = () => {
           className="flex flex-col items-center text-green-600"
         >
           <MessageCircle className="h-7 w-7" />
-          <span className="font-geist text-sm mt-1">WhatsApp</span>
+          <span className="font-geist text-sm mt-0.5">WhatsApp</span>
         </a>
 
         <a
@@ -21,19 +29,21 @@ const MobileNav = () => {
           className="flex flex-col items-center text-blue-600"
         >
           <Phone className="h-7 w-7" />
-          <span className="font-geist text-sm mt-1">Call</span>
+          <span className="font-geist text-sm mt-0.5">Call</span>
         </a>
-        
-        <Link
-          to="/contact"
-          className="flex flex-col items-center text-gray-600"
-        >
-          <Mail className="h-7 w-7" />
-          <span className="font-geist text-sm mt-1">Contact</span>
-        </Link>
+
+        <Dialog>
+          <DialogTrigger asChild>
+            <button className="flex flex-col items-center text-gray-600">
+              <Mail className="h-7 w-7" />
+              <span className="font-geist text-sm mt-0.5">Contact</span>
+            </button>
+          </DialogTrigger>
+          <DialogContent></DialogContent>
+        </Dialog>
       </div>
     </div>
   );
 };
 
-export default MobileNav; 
+export default MobileNav;
