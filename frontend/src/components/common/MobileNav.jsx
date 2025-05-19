@@ -120,7 +120,7 @@ const MobileNav = () => {
               <span className="font-geist text-sm mt-0.5">Contact</span>
             </button>
           </DialogTrigger>
-          <DialogContent className=" px-6  py-8">
+          <DialogContent className="px-6 py-8 z-[9999]">
             <DialogHeader>
               <DialogTitle className="text-2xl font-bold text-[#1E1E1E] font-geist">Contact Us</DialogTitle>
               <DialogDescription className="text-[#996C6C] font-geist text-base ">
