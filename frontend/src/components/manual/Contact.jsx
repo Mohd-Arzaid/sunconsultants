@@ -138,7 +138,7 @@ const Contact = () => {
               className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
                 focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
        text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
-              placeholder="Full Name"
+              placeholder="Full Name *"
             ></Input>
 
             <Input
@@ -151,7 +151,7 @@ const Contact = () => {
               className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
           focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
     text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold            placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
-              placeholder="Email Address"
+              placeholder="Email Address *"
             />
 
             <Input
@@ -164,7 +164,7 @@ const Contact = () => {
               className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
           focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
    text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold             placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
-              placeholder="Phone Number"
+              placeholder="Phone Number *"
             />
 
             <Input
@@ -177,7 +177,7 @@ const Contact = () => {
               className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
            focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
        text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold         placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
-              placeholder="Type Message"
+              placeholder="Type Message *"
             />
 
             <Button

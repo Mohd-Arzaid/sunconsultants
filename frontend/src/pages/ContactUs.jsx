@@ -129,7 +129,7 @@ const ContactUs = () => {
                 value={fullName}
                 onChange={handleOnChange}
                 disabled={loading}
-                placeholder="Please Enter Your Full Name"
+                placeholder="Please Enter Your Full Name *"
                 className="
                 font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100
                 
@@ -141,7 +141,7 @@ const ContactUs = () => {
                 value={phoneNumber}
                 onChange={handleOnChange}
                 disabled={loading}
-                placeholder="Please Enter Your Phone Number"
+                placeholder="Please Enter Your Phone Number *"
                 className="
                font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
               />
@@ -151,7 +151,7 @@ const ContactUs = () => {
                 value={email}
                 onChange={handleOnChange}
                 disabled={loading}
-                placeholder="Please Enter Your Email Address"
+                placeholder="Please Enter Your Email Address *"
                 className="
             font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] md:h-[58px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
               />
@@ -161,7 +161,7 @@ const ContactUs = () => {
                 value={message}
                 onChange={handleOnChange}
                 disabled={loading}
-                placeholder="Enter Your Message"
+                placeholder="Enter Your Message *"
                 className="
                 font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-48 md:h-64 placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold  font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide p-5 resize-none disabled:opacity-100"
               ></Textarea>

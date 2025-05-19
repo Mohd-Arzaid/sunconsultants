@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 import { Phone, MessageCircle, Mail } from "lucide-react";
 import {
   Dialog,
@@ -25,7 +25,7 @@ const MobileNav = () => {
     phoneNumber: "",
     message: "",
     pageUrl: "Mobile Device Pop-up",
-    pageName: window.location.pathname === "/" ? "Home Page" : "Other Page"
+    pageName: window.location.pathname === "/" ? "Home Page" : "Other Page",
   });
 
   const { fullName, email, phoneNumber, message } = formData;
@@ -81,7 +81,7 @@ const MobileNav = () => {
         phoneNumber: "",
         message: "",
         pageUrl: "Mobile Device Pop-up",
-        pageName: window.location.pathname === "/" ? "Home Page" : "Other Page"
+        pageName: window.location.pathname === "/" ? "Home Page" : "Other Page",
       });
     } catch (error) {
       const errorMessage =
@@ -122,7 +122,9 @@ const MobileNav = () => {
           </DialogTrigger>
           <DialogContent className="px-6 py-8 z-[9999]">
             <DialogHeader>
-              <DialogTitle className="text-2xl font-bold text-[#1E1E1E] font-geist">Contact Us</DialogTitle>
+              <DialogTitle className="text-2xl font-bold text-[#1E1E1E] font-geist">
+                Contact Us
+              </DialogTitle>
               <DialogDescription className="text-[#996C6C] font-geist text-base ">
                 Want to contact our team? Fill out the form below.
               </DialogDescription>
@@ -136,7 +138,7 @@ const MobileNav = () => {
                 value={fullName}
                 onChange={handleOnChange}
                 className="h-12 rounded-lg focus-visible:ring-1 focus-visible:ring-blue-500 font-geist text-base"
-                placeholder="Full Name"
+                placeholder="Full Name *"
               />
               <Input
                 disabled={loading}
@@ -146,7 +148,7 @@ const MobileNav = () => {
                 value={email}
                 onChange={handleOnChange}
                 className="h-12 rounded-lg focus-visible:ring-1 focus-visible:ring-blue-500 font-geist text-base"
-                placeholder="Email Address"
+                placeholder="Email Address *"
               />
               <Input
                 disabled={loading}
@@ -156,7 +158,7 @@ const MobileNav = () => {
                 value={phoneNumber}
                 onChange={handleOnChange}
                 className="h-12 rounded-lg focus-visible:ring-1 focus-visible:ring-blue-500 font-geist text-base"
-                placeholder="Phone Number"
+                placeholder="Phone Number *"
               />
               <Input
                 disabled={loading}
@@ -166,7 +168,7 @@ const MobileNav = () => {
                 value={message}
                 onChange={handleOnChange}
                 className="h-12 rounded-lg focus-visible:ring-1 focus-visible:ring-blue-500 font-geist text-base"
-                placeholder="Type Message"
+                placeholder="Type Message *"
               />
               <Button
                 disabled={loading}
