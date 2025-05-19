@@ -120,14 +120,14 @@ const MobileNav = () => {
               <span className="font-geist text-sm mt-0.5">Contact</span>
             </button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px] px-6 py-8">
+          <DialogContent className=" px-6  py-8">
             <DialogHeader>
               <DialogTitle className="text-2xl font-bold text-[#1E1E1E] font-geist">Contact Us</DialogTitle>
-              <DialogDescription className="text-[#996C6C] font-geist text-base mt-2">
+              <DialogDescription className="text-[#996C6C] font-geist text-base ">
                 Want to contact our team? Fill out the form below.
               </DialogDescription>
             </DialogHeader>
-            <form onSubmit={handleFormSubmit} className="mt-6 space-y-4">
+            <form onSubmit={handleFormSubmit} className="mt-2 space-y-4">
               <Input
                 disabled={loading}
                 required
