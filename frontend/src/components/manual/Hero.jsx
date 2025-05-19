@@ -59,7 +59,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className=" flex items-center justify-between absolute inset-0  w-[219px] h-[27px] transform translate-x-[553.5px] translate-y-[525px]">
+              {/* <div className=" flex items-center justify-between absolute inset-0  w-[219px] h-[27px] transform translate-x-[553.5px] translate-y-[525px]">
                 <div className="font-poppins text-[#313131] text-xl">01</div>
                 <div className="w-[135px] h-[10px] bg-white">
                   <div className="w-[52px] h-full bg-[#64bfdd]"></div>
@@ -67,7 +67,7 @@ const Hero = () => {
                   <div></div>
                 </div>
                 <div className="font-poppins text-[#313131] text-xl">10</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

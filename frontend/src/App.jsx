@@ -58,15 +58,24 @@ function App() {
         <Route path="/services/legal-metrology" element={<LegalMetrology />} />
         <Route path="/services/isi-mark-indian" element={<ISIMark />} />
         <Route path="/services/battery-waste" element={<BatteryWaste />} />
-        <Route path="/services/crs-registration" element={<CRSRegistration />} />
+        <Route
+          path="/services/crs-registration"
+          element={<CRSRegistration />}
+        />
         <Route path="/services/peso" element={<Peso />} />
         <Route path="/services/tec" element={<Tec />} />
         <Route path="/services/wpc" element={<WPC />} />
         <Route path="/services/rohs" element={<ROHS />} />
         <Route path="/services/bee" element={<BEE />} />
-        <Route path="/services/ce-certification" element={<CECertification />} />
+        <Route
+          path="/services/ce-certification"
+          element={<CECertification />}
+        />
         <Route path="/services/emi-emc" element={<EMIEMC />} />
-        <Route path="/services/cb-certification" element={<CBCertification />} />
+        <Route
+          path="/services/cb-certification"
+          element={<CBCertification />}
+        />
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
       <MobileNav />
