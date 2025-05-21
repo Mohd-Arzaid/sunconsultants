@@ -1,0 +1,233 @@
+import {
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+  PhoneCall,
+  SendHorizontal,
+  User,
+} from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+
+const NotificationDetail = () => {
+  return (
+    // <div className=" bg-[#f9f7f2]">
+    <div className=" bg-white">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+          {/* Left Side - Content and PDF */}
+          <NotificationDetailLeft />
+
+          {/* Right Side */}
+          <NotificationDetailRight />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NotificationDetail;
+
+const NotificationDetailLeft = () => {
+  return (
+    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+      {/* Notification Header */}
+      <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center">
+              <Mail className="h-7 w-7 text-blue-600" />
+            </div>
+
+            <div className="flex justify-center flex-col gap-0.5">
+              <h2 className="font-playfair  font-bold text-[#1e1e1e] text-2xl">
+                QCO Notification for Work Chairs
+              </h2>
+
+              <p className="text-base font-medium text-gray-600 font-geist flex items-center gap-2">
+                <span className="inline-block w-3 h-3 rounded-full bg-blue-400 animate-pulse"></span>
+                Regulatory Compliance
+              </p>
+            </div>
+          </div>
+
+          <div className=" flex flex-col items-end justify-center gap-0.5">
+            <div className="text-base font-medium text-gray-600 font-geist">
+              13 February 2025
+            </div>
+
+            <div className="flex items-center font-medium gap-2 text-gray-600">
+              <MapPin className="text-gray-600 w-5 h-5" />
+              <span className="text-base font-geist">New Delhi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Notification Content */}
+      <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+        <h3 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Important Update on Mandatory BIS Certification for Manufacturers and
+          Importers of{" "}
+          <span className="font-medium text-[#1e1e1e] underline decoration-blue-400  decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
+            " Work Chairs.
+          </span>{" "}
+        </h3>
+
+        <p className="text-gray-600 text-base font-geist mb-4">Dear Reader,</p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <span className="font-medium text-[#1e1e1e] underline decoration-blue-400  decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
+            MINISTRY OF COMMERCE AND INDUSTRY
+          </span>{" "}
+          has prepared a Quality Control Order in respect of Work Chairs in
+          Consultation with BIS in order to bring it under mandatory BIS
+          Certification keeping in view the Human Safety and for ensuring the
+          optimum quality of Product. The QCO for above said Product is attached
+          below :
+        </p>
+
+        <div className="mb-4">
+          <h4 className="text-xl font-geist font-medium ttext-[#1e1e1e] mb-2">
+            QCO notification Work chairs under is 17631 : 2022 is as below :
+          </h4>
+          <p className="text-base text-gray-600 mb-2">
+            The Notification was Released on 13th Feb 2025 and It will be
+            Implemented from :
+          </p>
+          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1">
+            <li>
+              13th Feb 2026 for Medium and Large enterprises (Annual turnover{" "}
+              {">"}50 crores)
+            </li>
+            <li>
+              13th Aug 2026 for Small enterprises (Annual Turnover between 5 to
+              50 crores)
+            </li>
+            <li>
+              13th Aug 2026 for Micro enterprises (Annual turnover {"<"}5
+              crores)
+            </li>
+          </ul>
+        </div>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Please review the attached document, If you have any questions or need
+          assistance, Our Team is here to Help.
+        </p>
+      </div>
+
+      {/* Pdf */}
+      <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+        <iframe
+          src="/pdf/sample.pdf"
+          title="PDF Viewer"
+          className="w-full h-[800px] bg-white"
+          style={{
+            boxShadow:
+              "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+          }}
+        />
+      </div>
+    </div>
+  );
+};
+
+const NotificationDetailRight = () => {
+  return (
+    <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+      {/* Header */}
+      <div className="flex gap-2 items-center">
+        <PhoneCall className="text-[#232327]" />
+        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+          Request a Free Callback
+        </h1>
+      </div>
+
+      {/* Intro Text */}
+      <p className="mt-3 text-sm text-gray-600 font-geist">
+        Leave your details below and our experts will call you back within 24
+        hours to discuss your regulatory compliance needs.
+      </p>
+
+      {/* Form */}
+      <form className="mt-5 space-y-4">
+        {/* Name Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <User className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="text"
+            name="fullName"
+            required
+            placeholder="Your Name"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Phone Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <Phone className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="tel"
+            name="phoneNumber"
+            required
+            placeholder="Phone Number"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Email Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <Mail className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Email Address"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Message Field */}
+        <div className="relative">
+          <div className="absolute top-3 left-3 pointer-events-none">
+            <MessageCircle className="h-5 w-5 text-gray-400" />
+          </div>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="3"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          ></textarea>
+        </div>
+
+        <Button
+          type="submit"
+          className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden"
+        >
+          <span className="relative z-10 flex items-center">
+            Request Callback
+            <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </span>
+          <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </Button>
+      </form>
+
+      {/* Privacy Note */}
+      <p className="mt-3 text-xs text-center text-gray-500 font-geist">
+        By submitting this form, you agree to our{" "}
+        <a href="#" className="text-blue-600 hover:underline">
+          Privacy Policy
+        </a>{" "}
+        and consent to being contacted.
+      </p>
+    </div>
+  );
+};

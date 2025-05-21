@@ -28,6 +28,7 @@ import ISIMark from "./pages/ISIMark";
 import BatteryWaste from "./pages/BatteryWaste";
 import ScrollToTop from "./components/ScrollToTop";
 import MinistryUpdates from "./pages/MinistryUpdates";
+import NotificationDetail from "./pages/NotificationDetail";
 
 function App() {
   return (
@@ -36,10 +37,12 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/latest-notifications" element={<Notification />} />
+        <Route path="/latest-notification" element={<NotificationDetail />} />
         <Route path="/ministry-updates" element={<MinistryUpdates />} />
 
         <Route path="/clients" element={<AllClients />} />
