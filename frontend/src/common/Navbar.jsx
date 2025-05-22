@@ -32,6 +32,9 @@ import {
   Presentation,
   Menu,
   X,
+  FileCheck,
+  GalleryHorizontal,
+  Laptop,
 } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
@@ -208,6 +211,14 @@ const Navbar = () => {
                         Ministry Updates
                       </div>
                     </a>
+                    
+                    <a href="/webinar" className="block">
+                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                        <Presentation className="w-4 h-4 mr-2" />
+                        Webinar Updates
+                      </div>
+                    </a>
+
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -222,10 +233,22 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
-                    <a href="/webinar" className="block">
+                     <a href="/international-audits" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <Presentation className="w-4 h-4 mr-2" />
-                        Webinar
+                        <FileCheck className="w-4 h-4 mr-2" />
+                        International Audits
+                      </div>
+                    </a>
+                    <a href="/exhibition" className="block">
+                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                        <GalleryHorizontal className="w-4 h-4 mr-2" />
+                        Exhibition
+                      </div>
+                    </a>
+                    <a href="/seminar" className="block">
+                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                        <Laptop className="w-4 h-4 mr-2" />
+                        Webinar/Seminar
                       </div>
                     </a>
                   </div>

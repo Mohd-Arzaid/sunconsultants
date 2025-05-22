@@ -7,9 +7,10 @@ import { Button } from "../ui/button";
 import { BoxReveal } from "../magicui/box-reveal";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
-import { toast } from "sonner";
-const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+import { toast } from "@/hooks/use-toast";
+// import { toast } from "sonner";
 
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -30,7 +31,7 @@ const Contact = () => {
     phoneNumber: "",
     message: "",
     pageUrl: window.location.href,
-    pageName: getPageName()
+    pageName: getPageName(),
   });
 
   const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
@@ -49,15 +50,32 @@ const Contact = () => {
     // Full name validation
     const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
     if (!nameRegex.test(fullName)) {
-      toast.error("Please Enter a valid Full Name.");
+      // toast.error("Please Enter a valid Full Name.");
+      toast({
+        variant: "destructive",
+        title: "Please Enter a valid Full Name.",
+        description: "Name Should only Contain Letters and Spaces.",
+      });
       setLoading(false);
       return;
     }
 
     // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      toast.error("Please Enter a valid Email Address.");
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const commonDomains = [
+      "gmail.com",
+      "yahoo.com",
+      "hotmail.com",
+      "outlook.com",
+    ];
+    const domain = email.split("@")[1];
+
+    if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
+      toast({
+        variant: "destructive",
+        title: "Please Enter a valid Email Address.",
+        description: "Check if Your Email Format is Correct",
+      });
       setLoading(false);
       return;
     }
@@ -65,7 +83,12 @@ const Contact = () => {
     // Phone number validation
     const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
     if (!phoneRegex.test(phoneNumber)) {
-      toast.error("Please Enter a Valid Phone number (8-15 digits)");
+      // toast.error("Please Enter a Valid Phone number (8-15 digits)");
+      toast({
+        variant: "destructive",
+        title: "Please Enter a Valid Phone Number",
+        description: "Phone Number Should be (8-15 digits)",
+      });
       setLoading(false);
       return;
     }
@@ -79,7 +102,12 @@ const Contact = () => {
       if (!response.data.success) {
         throw new Error(response.data.message);
       }
-      toast.success("Contact form submit successfully!");
+      // toast.success("Contact form submit successfully!");
+      toast({
+        title: "Contact form submit successfully!",
+        description:
+          "Thank you for Contacting Us. Our Team will Reach out to you Shortly.",
+      });
 
       setFormData({
         fullName: "",
@@ -87,12 +115,18 @@ const Contact = () => {
         phoneNumber: "",
         message: "",
         pageUrl: window.location.href,
-        pageName: getPageName()
+        pageName: getPageName(),
       });
     } catch (error) {
       const errorMessage =
         error.response?.data?.message || "Something went wrong";
-      toast.error(errorMessage || "Failed to submit contact form details!");
+      // toast.error(errorMessage || "Failed to submit contact form details!");
+      toast({
+        variant: "destructive",
+        title: errorMessage || "Failed to submit contact form details!",
+        description:
+          "Something Went Wrong. Please Check Your Details and Try Again.",
+      });
     } finally {
       setLoading(false);
     }

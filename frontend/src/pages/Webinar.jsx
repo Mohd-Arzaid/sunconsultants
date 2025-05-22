@@ -31,14 +31,14 @@ const WebinarHero = () => {
       {/* Button */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-10 md:mb-12">
         <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#1A8781] text-white py-3 px-8 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 group">
-          <span className="font-medium">Register Now</span>
+          <span className="font-medium font-geist">Register Now</span>
           <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30">
             <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45"></div>
           </div>
         </button>
 
         <button className="w-full md:w-auto items-center gap-3 border-2 border-[#1A8781]/30 text-[#1A8781] py-3 px-8 rounded-full hover:border-[#1A8781] hover:bg-[#1A8781]/5 transition-all duration-300">
-          <span className="font-medium">View Schedule</span>
+          <span className="font-medium font-geist">View Schedule</span>
         </button>
       </div>
 

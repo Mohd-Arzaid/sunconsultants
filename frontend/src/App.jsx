@@ -29,6 +29,9 @@ import BatteryWaste from "./pages/BatteryWaste";
 import ScrollToTop from "./components/ScrollToTop";
 import MinistryUpdates from "./pages/MinistryUpdates";
 import NotificationDetail from "./pages/NotificationDetail";
+import InternationalAudits from "./pages/InternationalAudits";
+import Seminar from "./pages/Seminar";
+import Exhibition from "./pages/Exhibition";
 
 function App() {
   return (
@@ -44,6 +47,9 @@ function App() {
         <Route path="/latest-notifications" element={<Notification />} />
         <Route path="/latest-notification" element={<NotificationDetail />} />
         <Route path="/ministry-updates" element={<MinistryUpdates />} />
+        <Route path="/international-audits" element={<InternationalAudits />} />
+        <Route path="/exhibition" element={<Exhibition />} />
+        <Route path="/seminar" element={<Seminar />} />
 
         <Route path="/clients" element={<AllClients />} />
         <Route
