@@ -1,10 +1,4 @@
-import { Mail,MailPlus, Phone } from "lucide-react";
-
-import {
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-  TwitterLogoIcon,
-} from "@radix-ui/react-icons";
+import { Mail, Phone } from "lucide-react";
 
 const TopBar = () => {
   return (
