@@ -1,11 +1,13 @@
 import React from 'react'
 import { Calendar } from "lucide-react";
+import Footer from '@/common/Footer';
 
 const Exhibition = () => {
   return (
     <div className="bg-[#F9F7F2]">
       <ExhibitionHero />
       <ExhibitionGallery />
+      <Footer />
     </div>
   )
 }
@@ -34,7 +36,7 @@ const ExhibitionHero = () => {
         </button>
 
         <button className="w-full md:w-auto items-center gap-3 border-2 border-[#1A8781]/30 text-[#1A8781] py-3 px-8 rounded-full hover:border-[#1A8781] hover:bg-[#1A8781]/5 transition-all duration-300">
-          <span className="font-medium font-geist">Book Your Space</span>
+          <span className="font-medium font-geist">Contact Us</span>
         </button>
       </div>
 
@@ -92,7 +94,7 @@ const ExhibitionGallery = () => {
 
   return (
     <div className="max-w-[88rem] mx-auto px-4 pb-12 md:px-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-16 md:pb-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {exhibitionImages.map((item) => (
           <div
             key={item.id}
