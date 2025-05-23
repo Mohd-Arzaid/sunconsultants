@@ -6,8 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/common/Footer";
 import { useState } from "react";
 import axios from "axios";
-import { toast } from "sonner";
+// import { toast } from "sonner";
 import { ClockLoader } from "react-spinners";
+import { toast } from "@/hooks/use-toast";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -38,26 +39,55 @@ const ContactUs = () => {
     // Full name validation
     const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
     if (!nameRegex.test(fullName)) {
-      toast.error("Please Enter a valid Full Name.");
+      // toast.error("Please Enter a valid Full Name.");
+      toast({
+        variant: "destructive",
+        title: "Please Enter a valid Full Name.",
+        description: "Name Should only Contain Letters and Spaces.",
+      });
       setLoading(false);
       return;
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      toast.error("Please Enter a valid Email Address.");
-      setLoading(false);
-      return;
-    }
+   
 
     // Phone number validation
     const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
     if (!phoneRegex.test(phoneNumber)) {
-      toast.error("Please Enter a Valid Phone number (8-15 digits)");
+      // toast.error("Please Enter a Valid Phone number (8-15 digits)");
+      toast({
+        variant: "destructive",
+        title: "Please Enter a Valid Phone Number",
+        description: "Phone Number Should be (8-15 digits)",
+      });
       setLoading(false);
       return;
     }
+
+
+       
+    
+     // Email validation
+     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+     const commonDomains = [
+       "gmail.com",
+       "yahoo.com",
+       "hotmail.com",
+       "outlook.com",
+     ];
+     const domain = email.split("@")[1];
+ 
+     if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
+       toast({
+         variant: "destructive",
+         title: "Please Enter a valid Email Address.",
+         description: "Check if Your Email Format is Correct",
+       });
+       setLoading(false);
+       return;
+     }
+
+
 
     try {
       const response = await axios.post(
@@ -68,7 +98,12 @@ const ContactUs = () => {
       if (!response.data.success) {
         throw new Error(response.data.message);
       }
-      toast.success("Contact form submit successfully!");
+      // toast.success("Contact form submit successfully!");
+      toast({
+        title: "Contact form submit successfully!",
+        description:
+          "Thank you for Contacting Us. Our Team will Reach out to you Shortly.",
+      });
 
       setFormData({
         fullName: "",
@@ -81,7 +116,13 @@ const ContactUs = () => {
     } catch (error) {
       const errorMessage =
         error.response?.data?.message || "Something went wrong";
-      toast.error(errorMessage || "Failed to submit contact form details!");
+      // toast.error(errorMessage || "Failed to submit contact form details!");
+      toast({
+        variant: "destructive",
+        title: errorMessage || "Failed to submit contact form details!",
+        description:
+          "Something Went Wrong. Please Check Your Details and Try Again.",
+      });      
     } finally {
       setLoading(false);
     }
