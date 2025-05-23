@@ -108,7 +108,7 @@ const AuditGallery = () => {
 
   return (
     <div className="max-w-[88rem] mx-auto px-4  pb-12 md:px-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-16 md:pb-0">
         {galleryImages.map((item) => (
           <div
             key={item.id}
