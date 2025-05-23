@@ -432,6 +432,21 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
                     </Button>
                   </Link>
                 </li>
+                <li className="w-full">
+                  <Link
+                    to="/webinar"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <Presentation className="w-4 h-4 mr-2" />
+                      Webinar Updates
+                    </Button>
+                  </Link>
+                </li>
               </ul>
             </AccordionContent>
           </AccordionItem>
@@ -444,7 +459,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
               <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto">
                 <li className="w-full">
                   <Link
-                    to="/webinar"
+                    to="/international-audits"
                     className="block w-full"
                     onClick={handleLinkClick}
                   >
@@ -452,8 +467,38 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
                       variant="ghost"
                       className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
                     >
-                      <Presentation className="w-4 h-4 mr-2" />
-                      Webinar
+                      <FileCheck className="w-4 h-4 mr-2" />
+                      International Audits
+                    </Button>
+                  </Link>
+                </li>
+                <li className="w-full">
+                  <Link
+                    to="/exhibition"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <GalleryHorizontal className="w-4 h-4 mr-2" />
+                      Exhibition
+                    </Button>
+                  </Link>
+                </li>
+                <li className="w-full">
+                  <Link
+                    to="/seminar"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <Laptop className="w-4 h-4 mr-2" />
+                      Webinar/Seminar
                     </Button>
                   </Link>
                 </li>
