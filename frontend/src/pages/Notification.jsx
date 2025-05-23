@@ -3,6 +3,7 @@ import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import Footer from "@/common/Footer";
 import { ChevronLeft, ChevronRight, FileText, Phone, Send } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Notification = () => {
   return (
@@ -17,9 +18,12 @@ export default Notification;
 
 const NotificationMainContent = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value.toLowerCase());
+    setCurrentPage(1); // Reset to first page on new search
   };
 
   return (
@@ -39,8 +43,10 @@ const NotificationMainContent = () => {
         {/* Search Bar */}
         <div className=" mb-12 md:mb-20 max-w-2xl mx-auto">
           <div className="relative">
+            <label htmlFor="search" className="sr-only">Search notifications</label>
             <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
             <input
+              id="search"
               type="text"
               value={searchQuery}
               onChange={handleSearch}
@@ -51,111 +57,297 @@ const NotificationMainContent = () => {
         </div>
 
         {/* Notifications */}
-        <NotificationCard searchQuery={searchQuery} />
+        <NotificationCard searchQuery={searchQuery} currentPage={currentPage} itemsPerPage={itemsPerPage} />
       </div>
 
       <div className="pb-8 md:pb-12 flex items-center justify-center">
         {/* Pagination */}
-        <Pagination />
+        <Pagination 
+          currentPage={currentPage} 
+          setCurrentPage={setCurrentPage}
+          totalItems={notifications.length}
+          itemsPerPage={itemsPerPage}
+        />
       </div>
     </div>
   );
 };
 
-const NotificationCard = ({ searchQuery }) => {
-  const notifications = [
-    {
-      id: 1,
-      color: "#1A8781",
-      tagType: "New QCO",
-      date: "March 15, 2023",
-      title: "Medical Devices Quality Control Order 2023",
-      description:
-        "New regulations for medical device manufacturing and certification requirements have been published. These focus on improved safety standards and quality assurance protocols.",
-    },
-    {
-      id: 2,
-      color: "#C86A31",
-      tagType: "Update",
-      date: "February 28, 2023",
-      title: "Electronic Goods Certification Revision",
-      description:
-        "The existing Quality Control Order for electronic goods has been revised with updated technical specifications and compliance requirements for manufacturers and importers.",
-    },
-    {
-      id: 3,
-      color: "#5B63E6",
-      tagType: "Draft",
-      date: "April 10, 2023",
-      title: "Pharmaceutical Products Draft QCO",
-      description:
-        "A new draft Quality Control Order for pharmaceutical products has been issued for public consultation. Stakeholders are invited to provide feedback before implementation.",
-    },
-    {
-      id: 4,
-      color: "#1A8781",
-      tagType: "Draft",
-      date: "March 22, 2023",
-      title: "Textile Products Standards Implementation",
-      description:
-        "The implementation timeline for the Textile Products Quality Control Order has been announced. Companies have until October 2023 to ensure compliance with the new standards.",
-    },
-    {
-      id: 5,
-      color: "#C86A31",
-      tagType: "Update",
-      date: "May 5, 2023",
-      title: "Automotive Components QCO Amendment",
-      description:
-        "Amendments to the Automotive Components Quality Control Order have been released, focusing on enhanced safety features and emissions control components for all vehicle categories.",
-    },
-    {
-      id: 6,
-      color: "#5B63E6",
-      tagType: "Draft",
-      date: "April 28, 2023",
-      title: "Food Processing Equipment Standards",
-      description:
-        "New draft standards for food processing equipment certification have been published. The proposed regulations aim to improve hygiene standards and material safety for consumer protection.",
-    },
-    {
-      id: 7,
-      color: "#1A8781",
-      tagType: "New QCO",
-      date: "June 12, 2023",
-      title: "Solar Panel Quality Control Requirements",
-      description:
-        "The Ministry has issued a new Quality Control Order for solar panels and photovoltaic systems. The standards focus on efficiency ratings, durability, and safety compliance for domestic and commercial installations.",
-    },
-    {
-      id: 8,
-      color: "#C86A31",
-      tagType: "Update",
-      date: "May 19, 2023",
-      title: "Toys and Children's Products Safety Standards",
-      description:
-        "Updated certification requirements for toys and children's products have been announced. The revised standards include stricter testing for hazardous materials and enhanced durability requirements.",
-    },
-    {
-      id: 9,
-      color: "#5B63E6",
-      tagType: "Draft",
-      date: "June 3, 2023",
-      title: "Construction Materials Quality Control Proposal",
-      description:
-        "A comprehensive draft for construction materials certification has been released for industry feedback. The proposed regulations cover cement, steel reinforcement, and structural components.",
-    },
-    {
-      id: 10,
-      color: "#1A8781",
-      tagType: "New QCO",
-      date: "June 30, 2023",
-      title: "Personal Protective Equipment Standards",
-      description:
-        "New Quality Control Order for personal protective equipment (PPE) has been implemented. The regulations establish mandatory testing and certification procedures for all PPE manufactured or imported into the country.",
-    },
-  ];
+// Move notifications array outside component
+const notifications = [
+  {
+    id: 1,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "March 15, 2023",
+    title: "Medical Devices Quality Control Order 2023",
+    description:
+      "New regulations for medical device manufacturing and certification requirements have been published. These focus on improved safety standards and quality assurance protocols.",
+  },
+  {
+    id: 2,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "February 28, 2023",
+    title: "Electronic Goods Certification Revision",
+    description:
+      "The existing Quality Control Order for electronic goods has been revised with updated technical specifications and compliance requirements for manufacturers and importers.",
+  },
+  {
+    id: 3,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "April 10, 2023",
+    title: "Pharmaceutical Products Draft QCO",
+    description:
+      "A new draft Quality Control Order for pharmaceutical products has been issued for public consultation. Stakeholders are invited to provide feedback before implementation.",
+  },
+  {
+    id: 4,
+    color: "#1A8781",
+    tagType: "Draft",
+    date: "March 22, 2023",
+    title: "Textile Products Standards Implementation",
+    description:
+      "The implementation timeline for the Textile Products Quality Control Order has been announced. Companies have until October 2023 to ensure compliance with the new standards.",
+  },
+  {
+    id: 5,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "May 5, 2023",
+    title: "Automotive Components QCO Amendment",
+    description:
+      "Amendments to the Automotive Components Quality Control Order have been released, focusing on enhanced safety features and emissions control components for all vehicle categories.",
+  },
+  {
+    id: 6,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "April 28, 2023",
+    title: "Food Processing Equipment Standards",
+    description:
+      "New draft standards for food processing equipment certification have been published. The proposed regulations aim to improve hygiene standards and material safety for consumer protection.",
+  },
+  {
+    id: 7,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "June 12, 2023",
+    title: "Solar Panel Quality Control Requirements",
+    description:
+      "The Ministry has issued a new Quality Control Order for solar panels and photovoltaic systems. The standards focus on efficiency ratings, durability, and safety compliance for domestic and commercial installations.",
+  },
+  {
+    id: 8,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "May 19, 2023",
+    title: "Toys and Children's Products Safety Standards",
+    description:
+      "Updated certification requirements for toys and children's products have been announced. The revised standards include stricter testing for hazardous materials and enhanced durability requirements.",
+  },
+  {
+    id: 9,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "June 3, 2023",
+    title: "Construction Materials Quality Control Proposal",
+    description:
+      "A comprehensive draft for construction materials certification has been released for industry feedback. The proposed regulations cover cement, steel reinforcement, and structural components.",
+  },
+  {
+    id: 10,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "June 30, 2023",
+    title: "Personal Protective Equipment Standards",
+    description:
+      "New Quality Control Order for personal protective equipment (PPE) has been implemented. The regulations establish mandatory testing and certification procedures for all PPE manufactured or imported into the country.",
+  },
+  {
+    id: 11,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "July 15, 2023",
+    title: "Agricultural Machinery QCO Revision",
+    description:
+      "Updated standards for agricultural machinery and equipment have been released. The revision focuses on safety features, efficiency metrics, and environmental compliance for farming equipment.",
+  },
+  {
+    id: 12,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "July 28, 2023",
+    title: "Renewable Energy Equipment Standards",
+    description:
+      "New draft QCO for renewable energy equipment has been published. The standards cover wind turbines, hydroelectric components, and related infrastructure requirements.",
+  },
+  {
+    id: 13,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "August 10, 2023",
+    title: "Industrial Safety Equipment Certification",
+    description:
+      "Comprehensive QCO for industrial safety equipment has been implemented. The order establishes mandatory testing protocols for safety gear used in hazardous environments.",
+  },
+  {
+    id: 14,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "August 25, 2023",
+    title: "Telecommunications Equipment Standards",
+    description:
+      "Revised QCO for telecommunications equipment has been announced. The update includes new specifications for 5G infrastructure and network security requirements.",
+  },
+  {
+    id: 15,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "September 5, 2023",
+    title: "Smart Home Devices Certification",
+    description:
+      "Draft QCO for smart home devices and IoT equipment has been released. The proposed standards focus on data security, interoperability, and energy efficiency.",
+  },
+  {
+    id: 16,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "September 20, 2023",
+    title: "Medical Laboratory Equipment Standards",
+    description:
+      "New QCO for medical laboratory equipment has been implemented. The standards establish requirements for accuracy, calibration, and quality control in diagnostic equipment.",
+  },
+  {
+    id: 17,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "October 8, 2023",
+    title: "Food Packaging Materials Revision",
+    description:
+      "Updated QCO for food packaging materials has been released. The revision includes new requirements for recyclable materials and food safety compliance.",
+  },
+  {
+    id: 18,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "October 25, 2023",
+    title: "Electric Vehicle Components Standards",
+    description:
+      "Draft QCO for electric vehicle components has been published. The proposed standards cover battery systems, charging infrastructure, and safety requirements.",
+  },
+  {
+    id: 19,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "November 12, 2023",
+    title: "Industrial Automation Equipment",
+    description:
+      "New QCO for industrial automation equipment has been implemented. The standards establish requirements for robotics, control systems, and safety protocols.",
+  },
+  {
+    id: 20,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "November 28, 2023",
+    title: "Building Materials Certification",
+    description:
+      "Revised QCO for building materials has been announced. The update includes new requirements for sustainable materials and energy efficiency standards.",
+  },
+  {
+    id: 21,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "December 5, 2023",
+    title: "Waste Management Equipment",
+    description:
+      "Draft QCO for waste management equipment has been released. The proposed standards cover recycling machinery, waste processing systems, and environmental compliance.",
+  },
+  {
+    id: 22,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "December 15, 2023",
+    title: "Digital Payment Systems",
+    description:
+      "New QCO for digital payment systems and equipment has been implemented. The standards establish security requirements and interoperability protocols.",
+  },
+  {
+    id: 23,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "January 10, 2024",
+    title: "Educational Equipment Standards",
+    description:
+      "Updated QCO for educational equipment has been released. The revision includes new requirements for digital learning tools and laboratory equipment.",
+  },
+  {
+    id: 24,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "January 25, 2024",
+    title: "Sports Equipment Certification",
+    description:
+      "Draft QCO for sports equipment has been published. The proposed standards cover safety requirements and performance metrics for various sports gear.",
+  },
+  {
+    id: 25,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "February 8, 2024",
+    title: "Maritime Equipment Standards",
+    description:
+      "New QCO for maritime equipment has been implemented. The standards establish requirements for navigation systems, safety equipment, and vessel components.",
+  },
+  {
+    id: 26,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "February 20, 2024",
+    title: "Aviation Components Revision",
+    description:
+      "Revised QCO for aviation components has been announced. The update includes new specifications for aircraft parts and maintenance equipment.",
+  },
+  {
+    id: 27,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "March 5, 2024",
+    title: "Railway Infrastructure Equipment",
+    description:
+      "Draft QCO for railway infrastructure equipment has been released. The proposed standards cover signaling systems, track components, and safety equipment.",
+  },
+  {
+    id: 28,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "March 18, 2024",
+    title: "Mining Equipment Standards",
+    description:
+      "New QCO for mining equipment has been implemented. The standards establish safety requirements and performance metrics for mining machinery.",
+  },
+  {
+    id: 29,
+    color: "#C86A31",
+    tagType: "Update",
+    date: "March 30, 2024",
+    title: "Chemical Processing Equipment",
+    description:
+      "Updated QCO for chemical processing equipment has been released. The revision includes new safety protocols and environmental compliance requirements.",
+  },
+  {
+    id: 30,
+    color: "#5B63E6",
+    tagType: "Draft",
+    date: "April 12, 2024",
+    title: "Defense Equipment Standards",
+    description:
+      "Draft QCO for defense equipment has been published. The proposed standards cover security requirements and technical specifications for defense systems.",
+  }
+];
 
+const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   const filteredNotifications = notifications.filter((notification) => {
     const searchLower = searchQuery.toLowerCase();
     return (
@@ -165,10 +357,15 @@ const NotificationCard = ({ searchQuery }) => {
     );
   });
 
+  // Calculate pagination
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredNotifications.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 ">
-      {filteredNotifications.length > 0 ? (
-        filteredNotifications.map((notification) => (
+      {currentItems.length > 0 ? (
+        currentItems.map((notification) => (
           <NotificationCardItem
             key={notification.id}
             color={notification.color}
@@ -261,49 +458,75 @@ const NotificationCardItem = ({ color, tagType, date, title, description }) => {
             </span>
           </div>
 
-          <Button
-            variant="outline"
-            className="transition-all duration-200"
-            style={{
-              borderColor: color,
-              color: color,
-              "&:hover": {
-                backgroundColor: color,
-                color: "white",
-              },
-            }}
-          >
-            Read More
-          </Button>
+          <Link to="/latest-notification">
+            <Button
+              variant="outline"
+              className="transition-all duration-200"
+              style={{
+                borderColor: color,
+                color: color,
+                "&:hover": {
+                  backgroundColor: color,
+                  color: "white",
+                },
+              }}
+            >
+              Read More
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-const Pagination = () => {
+const Pagination = ({ currentPage, setCurrentPage, totalItems, itemsPerPage }) => {
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    if (pageNumber >= 1 && pageNumber <= totalPages) {
+      setCurrentPage(pageNumber);
+    }
+  };
+
   return (
-    <div className="flex items-center justify-center gap-4">
+    <div className="flex items-center justify-center gap-4" role="navigation" aria-label="Pagination">
       {/* Previous Button */}
-      <button className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 text-gray-700 hover:border-[#1A8781] hover:text-[#1A8781] transition-all duration-200">
+      <button 
+        onClick={() => handlePageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 text-gray-700 hover:border-[#1A8781] hover:text-[#1A8781] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+        aria-label="Previous page"
+      >
         <ChevronLeft className="h-5 w-5" />
       </button>
 
       {/* Page Numbers */}
       <div className="flex items-center justify-center gap-2">
-        <button className="h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all  bg-[#1A8781] text-white">
-          1
-        </button>
-        <button className="h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all  text-gray-700 hover:bg-gray-200">
-          2
-        </button>
-        <button className="h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all  text-gray-700 hover:bg-gray-200">
-          3
-        </button>
+        {[...Array(totalPages)].map((_, index) => (
+          <button
+            key={index + 1}
+            onClick={() => handlePageChange(index + 1)}
+            className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${
+              currentPage === index + 1
+                ? 'bg-[#1A8781] text-white'
+                : 'text-gray-700 hover:bg-gray-200'
+            }`}
+            aria-label={`Page ${index + 1}`}
+            aria-current={currentPage === index + 1 ? 'page' : undefined}
+          >
+            {index + 1}
+          </button>
+        ))}
       </div>
 
       {/* Next Button */}
-      <button className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 text-gray-700 hover:border-[#1A8781] hover:text-[#1A8781] transition-all duration-200">
+      <button 
+        onClick={() => handlePageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 text-gray-700 hover:border-[#1A8781] hover:text-[#1A8781] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+        aria-label="Next page"
+      >
         <ChevronRight className="h-5 w-5" />
       </button>
     </div>
