@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useAnimationControls } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const LatestNews = () => {
   const controls = useAnimationControls();
@@ -78,21 +79,31 @@ const LatestNews = () => {
             >
               {[...Array(4)].map((_, index) => (
                 <>
-                  <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                    🔥 Breaking: Tesla unveils next-generation electric vehicle
-                  </span>
-                  <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                    📱 Apple announces iPhone 15 with revolutionary features
-                  </span>
-                  <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069]  hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                    💰 S&P 500 reaches all-time high amid tech rally
-                  </span>
-                  <span className="font-roboto tracking-wide text-lg md:text-xlfont-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                    🏢 Microsoft launches new AI-powered cloud services
-                  </span>
-                  <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                    🌍 Global climate summit announces major initiatives
-                  </span>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      🔥 Breaking: Tesla unveils next-generation electric vehicle
+                    </span>
+                  </Link>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      📱 Apple announces iPhone 15 with revolutionary features
+                    </span>
+                  </Link>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      💰 S&P 500 reaches all-time high amid tech rally
+                    </span>
+                  </Link>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      🏢 Microsoft launches new AI-powered cloud services
+                    </span>
+                  </Link>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      🌍 Global climate summit announces major initiatives
+                    </span>
+                  </Link>
                 </>
               ))}
             </motion.div>

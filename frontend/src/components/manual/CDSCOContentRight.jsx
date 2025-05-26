@@ -30,6 +30,7 @@ import axios from "axios";
 // import { toast } from "sonner";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const CDSCOContentRight = () => {
@@ -54,25 +55,25 @@ const LatestBlog = () => {
       image: BlogImageOne,
       category: "CDSCO",
       title: "Medical Device QCO Update",
-      url: "#",
+      url: "/latest-notifications",
     },
     {
       image: "https://images.unsplash.com/photo-1587854680352-936b22b91030",
       category: "CDSCO",
       title: "Drug Import Guidelines",
-      url: "#",
+      url: "/latest-notifications",
     },
     {
       image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88",
       category: "CDSCO",
       title: "Quality Standards Revision",
-      url: "#",
+      url: "/latest-notifications",
     },
     {
       image: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5",
       category: "CDSCO",
       title: "Equipment Certification",
-      url: "#",
+      url: "/latest-notifications",
     },
   ];
 
@@ -107,13 +108,15 @@ const LatestBlog = () => {
                     {post.title}
                   </p>
 
-                  <Button
-                    variant="link"
-                    className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
-                  >
-                    Read More
-                    <ArrowRightIcon className="-ml-1 mt-0.5" />
-                  </Button>
+                  <Link to={post.url}>
+                    <Button
+                      variant="link"
+                      className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
+                    >
+                      Read More
+                      <ArrowRightIcon className="-ml-1 mt-0.5" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -135,24 +138,28 @@ const OurServices = () => {
       title: "BIS & ISI Mark Certification",
       description:
         "Complete assistance for BIS Registration and ISI Mark certification for both Indian and Foreign manufacturers",
+      link: "/services/bis-mark-foreign"
     },
     {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
       title: "CDSCO Registration",
       description:
         "Expert consultation for CDSCO Registration certification for medical devices and pharmaceuticals",
+      link: "/services/cdsco-registration-certification"
     },
     {
       image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
       title: "EPR & PWM Certification",
       description:
         "Comprehensive support for EPR Certificate and Plastic Waste Management compliance",
+      link: "/services/epr-registration"
     },
     {
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
       title: "LMPC & BIS CRS",
       description:
         "Professional guidance for LMPC Certificate and BIS CRS Registration processes",
+      link: "/services/lmpc-registration"
     },
   ];
   return (
@@ -188,10 +195,12 @@ const OurServices = () => {
                 {service.description}
               </p>
 
-              <Button className="w-full  font-geist bg-[#212126] hover:bg-[#212126]/90 text-white">
-                Learn More
-                <ArrowRightIcon />
-              </Button>
+              <Link to={service.link}>
+                <Button className="w-full font-geist bg-[#212126] hover:bg-[#212126]/90 text-white">
+                  Learn More
+                  <ArrowRightIcon />
+                </Button>
+              </Link>
             </div>
             {index < services.length - 1 && (
               <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-2" />
@@ -362,10 +371,12 @@ const OurEvents = () => {
                 </div>
               </div>
 
+<Link to="/webinar">
               <Button className="w-full mt-4 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white">
                 Register Now
                 <ArrowRightIcon />
               </Button>
+</Link>
             </div>
           </div>
         ))}
@@ -634,21 +645,20 @@ const FreeCallBack = () => {
       return;
     }
 
-       // Phone number validation
-       const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
-       if (!phoneRegex.test(phoneNumber)) {
-         // toast.error("Please Enter a Valid Phone number (8-15 digits)");
-         toast({
-           variant: "destructive",
-           title: "Please Enter a Valid Phone Number",
-           description: "Phone Number Should be (8-15 digits)",
-         });
-         setLoading(false);
-         return;
-       }
-       
+    // Phone number validation
+    const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      // toast.error("Please Enter a Valid Phone number (8-15 digits)");
+      toast({
+        variant: "destructive",
+        title: "Please Enter a Valid Phone Number",
+        description: "Phone Number Should be (8-15 digits)",
+      });
+      setLoading(false);
+      return;
+    }
 
-      // Email validation
+    // Email validation
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const commonDomains = [
       "gmail.com",
@@ -667,9 +677,6 @@ const FreeCallBack = () => {
       setLoading(false);
       return;
     }
-
-
- 
 
     try {
       const response = await axios.post(
