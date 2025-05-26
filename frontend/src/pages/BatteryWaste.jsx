@@ -24,6 +24,7 @@ const BatteryWaste = () => {
       <EPRHero />
        <EPRIndex />
      <EPRContent />
+     <Footer />
      <ScrollToTopButton />
       {/* <Footer/> */}
     </>

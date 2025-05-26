@@ -23,6 +23,7 @@ export const LegalMetrology = () => {
       <LMCHero />
       <LMCIndex />
      <LMCContent />
+     <Footer />
      <ScrollToTopButton />
      {/*   <Footer/> */}
     </>

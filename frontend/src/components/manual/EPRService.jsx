@@ -22,6 +22,7 @@ export const EPRService = () => {
       <EPRHero />
        <EPRIndex />
      <EPRContent />
+     <Footer />
      <ScrollToTopButton />
       {/* <Footer/> */}
     </>

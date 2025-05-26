@@ -22,6 +22,7 @@ const WPC = () => {
     <WPCHero />
     <WPCIndex />
   <WPCContent />
+  <Footer />
   <ScrollToTopButton />
  {/*      <Footer/> */}
   </>
