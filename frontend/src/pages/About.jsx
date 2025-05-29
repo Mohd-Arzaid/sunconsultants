@@ -122,6 +122,7 @@ const WhyChooseUs = () => {
         <div className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform md:hover:-translate-y-4">
           <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
+        
           <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-3 md:p-4 rounded-full h-fit w-fit mb-4 md:mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <User className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
@@ -135,9 +136,9 @@ const WhyChooseUs = () => {
             deep industry knowledge to every certification challenge.
           </p>
 
-          <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          {/* <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
-          </div>
+          </div> */}
         </div>
 
         {/* Feature Card 2 */}
@@ -158,15 +159,15 @@ const WhyChooseUs = () => {
             process so you can focus on your core business.
           </p>
 
-          <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          {/* <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
-          </div>
+          </div> */}
         </div>
 
         {/* Feature Card 3 */}
         <div className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform md:hover:-translate-y-4">
           <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
-
+          
           <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-3 md:p-4 rounded-full h-fit w-fit mb-4 md:mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <Globe className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
@@ -181,9 +182,9 @@ const WhyChooseUs = () => {
             India, China, Malaysia, Thailand and beyond.{" "}
           </p>
 
-          <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
+          {/* <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

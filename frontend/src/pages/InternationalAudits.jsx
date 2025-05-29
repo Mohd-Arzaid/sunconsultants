@@ -109,21 +109,36 @@ const AuditGallery = () => {
   ];
 
   return (
-    <div className="max-w-[88rem] mx-auto px-4  pb-12 md:px-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+    <div className="max-w-[88rem] mx-auto px-4 pb-12 md:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {galleryImages.map((item) => (
           <div
             key={item.id}
-            className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl"
+            className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white"
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110 group-hover:brightness-75"
+                className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110 md:group-hover:brightness-75"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            {/* Mobile View  */}
+            <div className="block md:hidden p-5 bg-white">
+              <div className="flex items-center  mb-1">
+              {/* <span className="inline-block w-3 h-3 rounded-full bg-[#1A8781] animate-pulse"></span> */}
+
+                <h3 className="text-neutral-800 font-inter text-xl leading-tight font-semibold ">
+                  {item.title}
+                </h3>
+              </div>
+              <p className=" text-neutral-600 font-geist text-sm leading-relaxed ">
+                {item.description}
+              </p>
+              
+            </div>
+            {/* Desktop View - Hover effect */}
+            <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="text-white font-playfair text-xl font-semibold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                   {item.title}

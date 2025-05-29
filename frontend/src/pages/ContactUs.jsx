@@ -202,7 +202,7 @@ const ContactUs = () => {
                 value={message}
                 onChange={handleOnChange}
                 disabled={loading}
-                placeholder="Enter Your Message *"
+                placeholder="Which Certification is required ? *"
                 className="
                 font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-48 md:h-64 placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold  font-semibold placeholder:text-[14px] text-[14px] md:placeholder:text-[16px] md:text-[16px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide p-5 resize-none disabled:opacity-100"
               ></Textarea>

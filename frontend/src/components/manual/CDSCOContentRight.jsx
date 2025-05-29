@@ -747,7 +747,7 @@ const FreeCallBack = () => {
             onChange={handleOnChange}
             disabled={loading}
             required
-            placeholder="Your Name"
+            placeholder="Your Name*"
             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
           />
         </div>
@@ -764,7 +764,7 @@ const FreeCallBack = () => {
             onChange={handleOnChange}
             disabled={loading}
             required
-            placeholder="Phone Number"
+            placeholder="Phone Number*"
             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
           />
         </div>
@@ -781,7 +781,7 @@ const FreeCallBack = () => {
             onChange={handleOnChange}
             disabled={loading}
             required
-            placeholder="Email Address"
+            placeholder="Email Address*"
             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
           />
         </div>
@@ -797,7 +797,7 @@ const FreeCallBack = () => {
             onChange={handleOnChange}
             disabled={loading}
             required
-            placeholder="Your Message"
+            placeholder="Required Certification*"
             rows="3"
             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
           ></textarea>
