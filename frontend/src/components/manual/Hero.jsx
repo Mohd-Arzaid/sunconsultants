@@ -5,6 +5,7 @@ import WordPullUp from "../ui/word-pull-up";
 import { FadeText } from "../ui/fade-text";
 import { BlurIn } from "../ui/blur-in";
 import { Link } from "react-router-dom";
+
 // import { ImagesSlider } from "../ui/images-slider";
 
 const Hero = () => {

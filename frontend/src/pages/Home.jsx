@@ -1,12 +1,69 @@
 import Footer from "@/common/Footer";
-import Client from "@/components/manual/Client";
-import Contact from "@/components/manual/Contact";
-import Countries from "@/components/manual/Countries";
-import Hero from "@/components/manual/Hero";
-import LatestNews from "@/components/manual/LatestNews";
-import LogoTicker from "@/components/manual/LogoTicker";
-import Services from "@/components/manual/Services";
-import React from "react";
+
+// Hero Section  Import
+import HeroImage from "../assets/images/Placeholder.png";
+import ArrowOne from "../assets/images/ArrowOne.png";
+import ArrowTwo from "../assets/images/ArrowTwo.png";
+import WordPullUp from "@/components/ui/word-pull-up";
+import { FadeText } from "@/components/ui/fade-text";
+import { BlurIn } from "@/components/ui/blur-in";
+import { Link } from "react-router-dom";
+
+// Logo Ticker Import
+import LogoOne from "../assets/images/OneLogo.png";
+import LogoTwo from "../assets/images/TwoLogo.png";
+import LogoThree from "../assets/images/ThreeLogo.png";
+import LogoFour from "../assets/images/FourLogo.png";
+import LogoFive from "../assets/images/FiveLogo.png";
+import LogoSix from "../assets/images/SixLogo.png";
+import { motion } from "motion/react";
+
+// Services Import
+import BISImage from "../assets/images/BIS.jpg";
+import CDSCO from "../assets/images/CDSCO.jpg";
+import BISCRS from "../assets/images/BISCRS.jpg";
+import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg";
+import EPRCertificate from "../assets/images/EPRCertificate.jpg";
+import LMPC from "../assets/images/LMPC.jpg";
+import ISIMark from "../assets/images/ISIMark.jpg";
+import { BoxReveal } from "@/components/magicui/box-reveal";
+import { Separator } from "@/components/ui/separator";
+
+
+// Contact Import 
+import { useState } from "react";
+import { Input } from "@/components/ui/input";
+import ContactUs from "../assets/images/ContactUs.png";
+import ContactChild from "../assets/images/ContactChild.png";
+import { Button } from "@/components/ui/button";
+import { ClockLoader } from "react-spinners";
+import axios from "axios";
+import { toast } from "@/hooks/use-toast";
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+
+// Latest New Import 
+import { useEffect } from "react";
+import {useAnimationControls } from "framer-motion";
+
+// Client Import 
+import TestimonialImage from "../assets/images/TestimonialImage.png";
+import TestimonialImageSecond from "../assets/images/TestimonialImageSecond.png";
+import TestimonialImageThree from "../assets/images/TestimonialImageThree.png";
+import Vector from "../assets/images/Vector.png";
+import { IconArrowNarrowRight } from "@tabler/icons-react";
+
+// Countries Import
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+
+import Thailand from "../assets/images/Thailand.png";
+import Vietnam from "../assets/images/Vietnam.png";
+import Canada from "../assets/images/Canada.png";
+import China from "../assets/images/China.png";
+import Italy from "../assets/images/Italy.png";
+import Colombia from "../assets/images/Colombia.png";
+import Qatar from "../assets/images/Qatar.png";
+import India from "../assets/images/India.png";
+
 
 const Home = () => {
   return (
@@ -27,122 +84,968 @@ const Home = () => {
 
       <Countries />
 
-      {/* <div className="relative custom-radial-gradient">
-        <div className="w-full max-w-[768px] px-4 pb-12 md:pt-16 md:pb-16 mx-auto">
-          <h3 className="text-center font-geist text-3xl md:text-[48px] text-[#181818] leading-tight md:leading-[48px] font-semibold">
-            Have questions, feedback or anything to say?
-          </h3>
-
-          <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
-            Email us at{" "}
-            <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@sunconsultants.co.in
-            </span>{" "}
-            or use one of the options below. We usually get back within a day or
-            two.
-          </div>
-
-          <div className="flex items-center my-6 md:my-[30px]">
-            <div className="h-px w-full bg-neutral-300  grow"></div>
-            <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
-              or
-            </span>
-            <div className="h-px w-full bg-neutral-300 grow"></div>
-          </div>
-
-          <div className="flex justify-center w-full">
-            <div className="flex gap-x-6">
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="mailto:info@sunconsultants.co.in"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
-                </svg>
-                <span className="sr-only">Email</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.github.com/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path>
-                </svg>
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://x.com/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"
-                    className=""
-                  ></path>
-                </svg>
-                <span className="sr-only">Twitter / X</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.linkedin.com/company/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path>
-                </svg>
-                <span className="sr-only">LinkedIn</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <Footer />
     </>
   );
 };
 
 export default Home;
+
+
+// Hero Section
+const Hero = () => {
+  // const images = [
+  //   "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   HeroImage
+  // ];
+
+  return (
+    <>
+      <main className="hidden md:block relative pb-24 pt-12  custom-radial-gradient overflow-x-hidden ">
+        {/* Background gradient */}
+        <div className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-2"></div>
+
+        <div className="max-w-[84rem] w-full mx-auto ">
+          <div className="flex flex-col items-start">
+            <div className="relative px-8 z-20 ">
+              <img
+                src={HeroImage}
+                alt="Hero Image "
+                className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover"
+              />
+              {/* <ImagesSlider   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover" images={images}></ImagesSlider> */}
+              <div className="absolute inset-0 flex items-center justify-center transform translate-x-[575px]">
+                <div className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+                  <div className="relative max-w-96">
+                    <h1 className="text-5xl font-bold font-playfair text-left text-black leading-[52px]">
+                      Sun Consultants And Engineers
+                    </h1>
+                    <div className="w-[52px] h-[8px] bg-black inset-0 absolute transform translate-x-[380px] translate-y-7"></div>
+                  </div>
+
+                  <div className="mt-5 text-sm sm:text-xl text-zinc-500 tracking-wide mb-7 text-left max-w-2xl">
+                    Trusted consultants for BIS, LMPC, EPR, and WPC
+                    certifications since 2013. We assist both Indian and foreign
+                    manufacturers in obtaining essential government
+                    certifications for the Indian market.
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] flex inset-0 w-[160px] h-[80px] transform translate-x-[70px] translate-y-[475px]">
+                <div className="w-full h-full bg-white flex items-center justify-center ">
+                  <button>
+                    <img src={ArrowOne} alt="Arrow One" />
+                  </button>
+                </div>
+                <div className="w-full h-full bg-[#64bfdd] flex items-center justify-center ">
+                  <button>
+                    <img src={ArrowTwo} alt="Arrow Two" />
+                  </button>
+                </div>
+              </div>
+
+              {/* <div className=" flex items-center justify-between absolute inset-0  w-[219px] h-[27px] transform translate-x-[553.5px] translate-y-[525px]">
+                <div className="font-poppins text-[#313131] text-xl">01</div>
+                <div className="w-[135px] h-[10px] bg-white">
+                  <div className="w-[52px] h-full bg-[#64bfdd]"></div>
+
+                  <div></div>
+                </div>
+                <div className="font-poppins text-[#313131] text-xl">10</div>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </main>
+
+      {/* For Mobile Device */}
+      <main className="md:hidden flex flex-col gap-5 w-full ">
+        <div className="custom-radial-gradient w-full flex flex-col justify-center p-4">
+          <div className="flex justify-between flex-col items-center w-full m-auto pb-12">
+            <div className="flex flex-col gap-8 mt-10 mb-16">
+              <WordPullUp
+                words="Sun Consultants And Engineers"
+                className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
+              />
+              <div className="max-w-2xl">
+                <FadeText
+                  text="
+             Trusted consultants for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
+              "
+                  className="font-geist text-gray-600"
+                  direction="left"
+                />
+              </div>
+
+              <div className="flex gap-3 flex-wrap items-center">
+                <Link to="/about">
+                <BlurIn
+                  word="About Us"
+                  className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
+                />
+                </Link>
+                <Link to="/contact">
+                  <BlurIn
+                    word="Contact Us"
+                    className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
+                  />
+                </Link>
+              </div>
+            </div>
+            <img 
+                src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg" 
+                alt="Hero Image" 
+                className="w-80 md:w-96 drop-shadow-xl" 
+              />
+          </div>
+        </div>
+      </main>
+
+    </>
+  );
+};
+
+
+// Logo Ticker
+const LogoTicker = () => {
+  return (
+    <div className="h-20 md:h-28 bg-[#B9DEEB]">
+    <div className="max-w-[84rem] mx-auto h-full ">
+      <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+        <motion.div
+          animate={{
+            translateX: "-50%",
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear",
+            repeatType: "loop",
+          }}
+          className="flex gap-14 pr-14 items-center justify-center flex-none"
+        >
+          <img src={LogoOne} alt="Logo One"      />
+          <img src={LogoThree} alt="Logo Three"  />
+          <img src={LogoFour} alt="Logo Four"    />
+          <img src={LogoFive} alt="Logo Five"    />
+
+          <img src={LogoSix} alt="Logo Six"       />
+
+          <img src={LogoOne} alt="Logo One"        />
+          <img src={LogoTwo} alt="Logo Two"        />
+          <img src={LogoThree} alt="Logo Three"     />
+          <img src={LogoFour} alt="Logo Four"       />
+          <img src={LogoFive} alt="Logo Five"      />
+          <img src={LogoSix} alt="Logo Six"      />
+
+          <img src={LogoOne} alt="Logo One" />
+          <img src={LogoTwo} alt="Logo Two" />
+          <img src={LogoThree} alt="Logo Three" />
+          <img src={LogoFour} alt="Logo Four" />
+          <img src={LogoFive} alt="Logo Five" />
+          <img src={LogoSix} alt="Logo Six" />
+                  
+          <img src={LogoOne} alt="Logo One"  className="hidden md:block"/>
+          <img src={LogoTwo} alt="Logo Two" className="hidden md:block"/>
+          <img src={LogoThree} alt="Logo Three" className="hidden md:block" />
+          <img src={LogoFour} alt="Logo Four" className="hidden md:block" />
+          <img src={LogoFive} alt="Logo Five" className="hidden md:block" />
+          <img src={LogoSix} alt="Logo Six" className="hidden md:block" />
+        </motion.div>
+      </div>
+    </div>
+  </div>
+  )
+}
+
+// Services 
+const Services = () => {
+  return (
+
+    <div className="pt-10 md:pt-12 pb-12  md:pb-16 custom-radial-gradient overflow-x-hidden ">
+      <div className="max-w-[84rem] w-full mx-auto">
+ 
+        <div className="flex flex-col items-center justify-center">
+        <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+          <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
+            Our Services
+          </h2>
+          </BoxReveal>
+          
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+          <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+              India's Best Certificate Consultant
+            </span>
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+          </div>
+          </BoxReveal>
+        </div>
+
+
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
+       
+   
+          <Link to="/services/bis-mark-foreign" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={BISImage}
+                alt="BIS"
+                className="w-[130px] h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              BIS Mark (ISI License) for Foreign Manufacture
+            </p>
+          </Link>
+
+
+          <Link to="/services/cdsco-registration-certification" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={CDSCO}
+                alt="CDSCO"
+                className="w-[130px] h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              CDSCO Registration Certification
+            </p>
+          </Link>
+
+          <Link to="/services/crs-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={BISCRS}
+                alt="BISCRS"
+                className="w-[130px] h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              BIS (CRS) Registration
+            </p>
+          </Link>
+
+          <Link to="/services/plastic-waste" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={PlasticWasteManagement}
+                alt="PlasticWasteManagement"
+                className="w-[130px] h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              Plastic Waste Management
+            </p>
+          </Link>
+
+          <Link to="/services/epr-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={EPRCertificate}
+                alt="EPRCertificate"
+                className="w-[130px] h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              EPR Certificate Consultants
+            </p>
+          </Link>
+
+          <Link to="/services/lmpc-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={LMPC}
+                alt="LMPC"
+                className="w-[130px] h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              LMPC Certificate Consultants
+            </p>
+          </Link>
+
+          <Link to="/services/bis-certification" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={BISImage}
+                alt="BIS"
+                className="w-[130px] h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              BIS Registration Certificate
+            </p>
+          </Link>
+
+          <Link to="/services/isi-mark-indian" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={ISIMark}
+                alt="ISIMark"
+                className="w-[130px] h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              ISI MARK (BIS) for Indian Manufactures
+            </p>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Contact 
+const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
+  // Function to get page name based on URL
+  const getPageName = () => {
+    const path = window.location.pathname;
+    if (path === "/") return "Home Page";
+    if (path === "/about") return "About Page";
+    if (path === "/services") return "Services Page";
+    if (path === "/contact") return "Contact Page";
+    return "Other Page";
+  };
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+    pageUrl: window.location.href,
+    pageName: getPageName(),
+  });
+
+  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+
+  const handleOnChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Full name validation
+    const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
+    if (!nameRegex.test(fullName)) {
+      // toast.error("Please Enter a valid Full Name.");
+      toast({
+        variant: "destructive",
+        title: "Please Enter a valid Full Name.",
+        description: "Name Should only Contain Letters and Spaces.",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const commonDomains = [
+      "gmail.com",
+      "yahoo.com",
+      "hotmail.com",
+      "outlook.com",
+    ];
+    const domain = email.split("@")[1];
+
+    if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
+      toast({
+        variant: "destructive",
+        title: "Please Enter a valid Email Address.",
+        description: "Check if Your Email Format is Correct",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      // toast.error("Please Enter a Valid Phone number (8-15 digits)");
+      toast({
+        variant: "destructive",
+        title: "Please Enter a Valid Phone Number",
+        description: "Phone Number Should be (8-15 digits)",
+      });
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await axios.post(
+        `${BASE_URL}/contact/submit-contact`,
+        formData
+      );
+
+      if (!response.data.success) {
+        throw new Error(response.data.message);
+      }
+      // toast.success("Contact form submit successfully!");
+      toast({
+        title: "Contact form submit successfully!",
+        description:
+          "Thank you for Contacting Us. Our Team will Reach out to you Shortly.",
+      });
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+        pageUrl: window.location.href,
+        pageName: getPageName(),
+      });
+    } catch (error) {
+      const errorMessage =
+        error.response?.data?.message || "Something went wrong";
+      // toast.error(errorMessage || "Failed to submit contact form details!");
+      toast({
+        variant: "destructive",
+        title: errorMessage || "Failed to submit contact form details!",
+        description:
+          "Something Went Wrong. Please Check Your Details and Try Again.",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className=" pt-8 md:pt-12 pb-8 md:pb-16 custom-radial-gradient overflow-x-hidden ">
+      <div className="max-w-[88rem] px-4 md:px-8 w-full flex flex-col md:flex-row  items-center justify-between mx-auto">
+        <div className="w-full md:w-1/2">
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <div className="hidden md:flex w-full items-center gap-3">
+              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+                India's Best Certificate Consultant
+              </span>
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            </div>
+          </BoxReveal>
+
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <h3 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
+              Contact Us
+            </h3>
+          </BoxReveal>
+
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <p className="font-medium font-poppins text-[17px]  md:text-[20px]  text-[#996C6C]">
+              Want to contact our team and book a call?
+              <span className="text-black"> Try it now</span>
+            </p>
+          </BoxReveal>
+
+          <form
+            onSubmit={handleFormSubmit}
+            className="mt-6 flex flex-col gap-4"
+          >
+            <Input
+              disabled={loading}
+              required
+              type="text"
+              name="fullName"
+              value={fullName}
+              onChange={handleOnChange}
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
+                focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+       text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              placeholder="Full Name *"
+            ></Input>
+
+            <Input
+              disabled={loading}
+              required
+              type="email"
+              name="email"
+              value={email}
+              onChange={handleOnChange}
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
+          focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+    text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold            placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              placeholder="Email Address *"
+            />
+
+            <Input
+              disabled={loading}
+              required
+              type="tel"
+              name="phoneNumber"
+              value={phoneNumber}
+              onChange={handleOnChange}
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
+          focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+   text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold             placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              placeholder="Phone Number *"
+            />
+
+            <Input
+              disabled={loading}
+              required
+              type="text"
+              name="message"
+              value={message}
+              onChange={handleOnChange}
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
+           focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+       text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold         placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              placeholder="Which Certification is required ? *"
+            />
+
+            <Button
+              disabled={loading}
+              type="submit"
+              className="w-full md:w-[600px] mt-2 h-14 md:h-[72px] rounded-xl md:rounded-[15px] bg-[#20B2AA] hover:bg-[#20CFC6] text-white text-[17px] md:text-[20px] font-poppins font-semibold disabled:opacity-100"
+            >
+              {loading ? (
+                <div className="flex gap-3 items-center justify-center">
+                  <ClockLoader size={22} color="#fff" />
+                  <span>Sending</span>
+                </div>
+              ) : (
+                <div className="flex gap-3 items-center justify-center">
+                  <span>Get Started</span>
+                </div>
+              )}
+            </Button>
+          </form>
+        </div>
+
+        <div className="hidden md:block relative w-[600px] h-[539px] mr-5 mt-16 ">
+          <img
+            src={ContactUs}
+            alt="ContactUs"
+            className="absolute right-0 w-[475.99px] h-[539px] object-cover  "
+          />
+
+          <img
+            src={ContactChild}
+            alt="ContactChild"
+            className=" 
+          absolute inset-0 w-[350px] h-[350px] -translate-x-[70px] translate-y-[180px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Latest News 
+const LatestNews = () => {
+  const controls = useAnimationControls();
+
+  useEffect(() => {
+    controls.start({
+      translateX: "-50%",
+      transition: {
+        duration: 60,
+        repeat: Infinity,
+        ease: "linear",
+        repeatType: "loop",
+      },
+    });
+  }, [controls]);
+
+  let interval;
+
+  const words = ["Updates", "News"];
+  const [currentWord, setCurrentWord] = useState(words[0]);
+
+  const startAnimation = () => {
+    let i = 0;
+    interval = setInterval(() => {
+      i = i === words.length - 1 ? 0 : i + 1;
+      setCurrentWord(words[i]);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    startAnimation();
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="h-20 md:h-28  bg-[#B9DEEB]">
+      <div className="max-w-[84rem] mx-auto h-full flex justify-between items-center px-4 md:px-0 ">
+        <div className="flex flex-col items-center justify-center">
+          <h2 className="text-[20px] md:text-[35px] font-bold font-roboto text-center">
+            Latest{" "}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                type: "spring",
+                damping: 8,
+                stiffness: 100,
+              }}
+              key={currentWord}
+              className="inline-block bg-gradient-to-r from-blue-900 to-purple-900 bg-clip-text text-transparent"
+            >
+              {currentWord}
+            </motion.div>
+          </h2>
+        </div>
+
+        <div className="flex w-[50%] md:w-[82%]">
+          <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent_0%,black_15%,black_85%,transparent_100%)]">
+            <motion.div
+              animate={controls}
+              initial={{ translateX: "0%" }}
+              onMouseEnter={() => controls.stop()}
+              onMouseLeave={() => {
+                controls.start({
+                  translateX: "-50%",
+                  transition: {
+                    duration: 60,
+                    repeat: Infinity,
+                    ease: "linear",
+                    repeatType: "loop",
+                  },
+                });
+              }}
+              className="flex gap-14 pr-14 items-center  justify-center flex-none"
+            >
+              {[...Array(4)].map((_, index) => (
+                <>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      🔥 Breaking: Tesla unveils next-generation electric vehicle
+                    </span>
+                  </Link>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      📱 Apple announces iPhone 15 with revolutionary features
+                    </span>
+                  </Link>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      💰 S&P 500 reaches all-time high amid tech rally
+                    </span>
+                  </Link>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      🏢 Microsoft launches new AI-powered cloud services
+                    </span>
+                  </Link>
+                  <Link to="/latest-notifications" className="no-underline">
+                    <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                      🌍 Global climate summit announces major initiatives
+                    </span>
+                  </Link>
+                </>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+// Client
+const Client = () => {
+  const slideData = [
+    {
+      image: TestimonialImage,
+      name: "Priya Sharma",
+      designation: "Web Designer",
+      description:
+        "Working with this certification consultancy was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
+    },
+    {
+      image: TestimonialImageSecond,
+      name: "Rajeev Kumar",
+      designation: "Web Developer",
+      description:
+        "Outstanding support for our EPR certification process. The team's in-depth knowledge and prompt responses made the entire certification journey smooth. They truly understand both Indian and international compliance requirements.",
+    },
+    {
+      image: TestimonialImageThree,
+      name: "Ragini Singh",
+      designation: "App Developer",
+      description:
+        "Their expertise in LMPC certification was invaluable for our product launch in India. The consultants provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Uday Chaudhary",
+      designation: "Marketing Manager",
+      description:
+        "Their comprehensive support for our BIS certification was crucial for entering the Indian market. The team's detailed analysis and strategic guidance ensured we met all necessary standards without delays.",
+    },
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  const handlePreviousClick = () => {
+    const previous = current - 1;
+    setCurrent(previous < 0 ? slideData.length - 1 : previous);
+  };
+
+  const handleNextClick = () => {
+    const next = current + 1;
+    setCurrent(next === slideData.length ? 0 : next);
+  };
+
+  return (
+    <div className=" pt-5 md:pt-10 pb-8 custom-radial-gradient overflow-x-hidden ">
+      <div className="max-w-[88rem] px-4 md:px-8 w-full mx-auto overflow-hidden relative">
+        <div className="flex flex-col items-center justify-center">
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <h2 className="text-[30px] md:text-[48px] font-bold font-roboto  text-center text-[#1E1E1E] ">
+              Our Clients
+            </h2>
+          </BoxReveal>
+
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+                What our clients have to say
+              </span>
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            </div>
+          </BoxReveal>
+        </div>
+
+        {/* Mobile Testimonials */}
+        <div className="md:hidden mt-8">
+          <div className="relative shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-[#B5DDEB] rounded-[30px] p-6 ">
+            <div className="flex flex-col items-center gap-4">
+              <img
+                src={slideData[current].image}
+                className="rounded-full w-24 h-24 object-cover border-4 border-white"
+                alt="Testimonial"
+              />
+              <div className="flex flex-col items-center justify-center text-center">
+                <div className="text-xl font-semibold font-roboto text-black tracking-wide">
+                  {slideData[current].name}
+                </div>
+                <span className="text-base font-roboto text-[#181040] tracking-wide">
+                  {slideData[current].designation}
+                </span>
+              </div>
+              <p className="text-base font-poppins text-[#5a4a4a] text-center ">
+                {slideData[current].description}
+              </p>
+            </div>
+            <div className="absolute top-4 right-4">
+              <img src={Vector} alt="Vector" className="w-10 h-10 opacity-50" />
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonials */}
+        <div className="hidden md:flex w-full flex items-center justify-between mt-10  ">
+          {[-1, 0, 1].map((offset) => {
+            const index =
+              (current + offset + slideData.length) % slideData.length;
+            const slide = slideData[index];
+
+            return (
+              <div
+                key={index}
+                className="relative shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-[#B5DDEB] flex gap-7 rounded-[47px] p-8 transition-all duration-300 ease-in-out"
+                style={{
+                  opacity: offset === 0 ? 1 : 0.7,
+                  transform: `scale(${offset === 0 ? 1 : 0.9})`,
+                }}
+              >
+                <div className="flex flex-col items-center justify-center gap-3">
+                  <img
+                    src={slide.image}
+                    className="rounded-[52px] w-[235px] h-[284.58px] object-cover"
+                    alt="Testimonial"
+                  />
+
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="text-[27px] font-semibold font-roboto text-black tracking-wide">
+                      {slide.name}
+                    </div>
+                    <span className="text-[18px] font-roboto text-black tracking-wide text-[#181040]">
+                      {slide.designation}
+                    </span>
+                  </div>
+                </div>
+
+                {offset === 0 && (
+                  <>
+                    <div className="py-2 text-[19px] font-poppins text-[#785F5F] text-left max-w-xs">
+                      {slide.description}
+                    </div>
+
+                    <div className="absolute inset-0  translate-x-[480px] translate-y-[300px] ">
+                      <img src={Vector} alt="Vector" />
+                    </div>
+                  </>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="flex items-center justify-center gap-4 my-5">
+          {/* Previous Button */}
+          <button
+            className="w-10 h-10 flex items-center justify-center bg-neutral-300  rounded-full hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200"
+            onClick={handlePreviousClick}
+          >
+            <IconArrowNarrowRight className="text-neutral-700  rotate-180" />
+          </button>
+
+          {/* Next Button */}
+          <button
+            className="w-10 h-10 flex items-center justify-center bg-neutral-300 rounded-full hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200"
+            onClick={handleNextClick}
+          >
+            <IconArrowNarrowRight className="text-neutral-700 " />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Countries 
+const Countries = () => {
+  const [current, setCurrent] = useState(0);
+  const handlePreviousClick = () => {
+    setCountriesData((prev) => {
+      const newArray = [...prev];
+      const lastItem = newArray.pop();
+      newArray.unshift(lastItem);
+      return newArray;
+    });
+  };
+
+  const handleNextClick = () => {
+    setCountriesData((prev) => {
+      const newArray = [...prev];
+      const firstItem = newArray.shift();
+      newArray.push(firstItem);
+      return newArray;
+    });
+  };
+
+  const [countriesData, setCountriesData] = useState([
+    { name: "Thailand", img: Thailand },
+    { name: "Vietnam", img: Vietnam },
+    { name: "Canada", img: Canada },
+    { name: "China", img: China },
+    { name: "Italy", img: Italy },
+    { name: "Colombia", img: Colombia },
+    { name: "Qatar", img: Qatar },
+    { name: "India", img: India },
+  ]);
+
+  return (
+    <div className="relative custom-radial-gradient py-12 md:py-0">
+      <div className=" max-w-[88rem] mx-auto w-full px-4 md:px-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-[18px] ">
+          {/* Left Side */}
+          <div className="w-full md:max-w-[383px] flex flex-col gap-[30px] items-center text-center md:items-start md:text-left ">
+            <div className="flex flex-col gap-2 md:gap-[20px]">
+              <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+                <h1 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
+                  Countries We Serve Worldwide
+                </h1>
+              </BoxReveal>
+
+              <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+                <p className="font-poppins font-medium text-base md:text-[19px] text-[#008080]">
+                  Expanding our services across multiple nations, delivering
+                  excellence everywhere.
+                </p>
+              </BoxReveal>
+            </div>
+
+            <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+              <div className="flex gap-4 items-center ">
+                <button
+                  onClick={handlePreviousClick}
+                  className="rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#160E34]"
+                >
+                  <ChevronLeft className="hidden md:block" />
+                  <ChevronLeft className="block md:hidden size={20}" />
+                </button>
+
+                <button
+                  onClick={handleNextClick}
+                  className="rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center bg-[#160E34] border-2 border-[#160E34]"
+                >
+                  <ChevronRight className="hidden md:block text-white" />
+                  <ChevronRight className="block md:hidden size-4 text-white" />
+                </button>
+              </div>
+            </BoxReveal>
+          </div>
+
+          <div className="w-full px-0 md:px-[22px] py-3 md:py-20 overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
+            <div className=" flex gap-4 md:gap-[22px] w-max ">
+              {/* Mobile */}
+              {countriesData.map((country, index) => (
+                <div
+                  key={index}
+                  className=" md:hidden w-[280px] h-[280px] bg-[#B5DDEB] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  rounded-[12px] p-4 flex flex-col items-center justify-center flex-shrink-0"
+                >
+                  <div className="w-full h-full flex items-center justify-center overflow-hidden">
+                    <img
+                      src={country.img}
+                      alt={country.name}
+                      className="w-auto h-full object-contain"
+                    />
+                  </div>
+
+                  <div className="mt-3 px-1 flex items-center justify-between w-full">
+                    <span className="flex text-base items-center font-bold justify-center gap-1">
+                      <Star className="fill-current text-[#160E34]" size={16} />
+                      <h1 className="tracking-wider  text-[#160E34] uppercase">
+                        {country.name}
+                      </h1>
+                    </span>
+                  </div>
+                </div>
+              ))}
+
+              {/* Desktop */}
+              {countriesData.map((country, index) => (
+                <div
+                  key={index}
+                  className="hidden w-[380px] h-[380px] bg-[#B5DDEB] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center"
+                >
+                  <div className="w-full h-full flex items-center justify-center">
+                    <img
+                      src={country.img}
+                      alt={country.name}
+                      className={country.name === "Thailand" ? "w-full h-full object-cover" : ""}
+                    />
+                  </div>
+                  <div className="mt-4 px-2 flex items-center justify-between w-full">
+                    <span className="flex text-xl items-center font-bold justify-center gap-2">
+                      <Star className="fill-current text-[#160E34]" size={20} />
+                      <h1 className="tracking-widest text-[#160E34] uppercase">
+                        {country.name}
+                      </h1>
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
