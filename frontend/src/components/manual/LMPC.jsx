@@ -2,6 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import React, { useState, useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 
 import LMPCimg from "../../assets/images/LMPCimg.jpg";
 
@@ -20,11 +21,106 @@ import ServiceContactForm from "@/common/ServiceContactForm";
 export const LMPC = () => {
   return (
     <>
-      <LMPCHero />
-      <LMPCIndex />
-      <LMPCContent />
-      <Footer />
-      <ScrollToTopButton />
+      <Helmet>
+        <title>LMPC Certificate Guide | Legal Metrology Packaged Commodities | Sun Consultants</title>
+        <meta
+          name="description"
+          content="Complete guide to LMPC certification for importers, manufacturers & packers. Get expert assistance with Legal Metrology Packaged Commodities registration in India."
+        />
+        <meta
+          name="keywords"
+          content="LMPC certificate, Legal Metrology, packaged commodities, importers registration, manufacturers registration, packers registration"
+        />
+        <meta name="author" content="Sun Consultants & Engineers" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph Tags */}
+        <meta
+          property="og:title"
+          content="LMPC Certificate Guide | Legal Metrology Packaged Commodities"
+        />
+        <meta
+          property="og:description"
+          content="Complete guide to LMPC certification for importers, manufacturers & packers. Get expert assistance with Legal Metrology Packaged Commodities registration."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:site_name" content="Sun Consultants & Engineers" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ConsultantsSun" />
+        <meta
+          name="twitter:title"
+          content="LMPC Certificate Guide | Legal Metrology Packaged Commodities"
+        />
+        <meta
+          name="twitter:description"
+          content="Complete guide to LMPC certification for importers, manufacturers & packers."
+        />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href={window.location.href} />
+        <meta name="robots" content="index, follow" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "LMPC Certification",
+            provider: {
+              "@type": "Organization",
+              name: "Sun Consultants & Engineers",
+              url: window.location.href,
+              logo: "https://sunconsultants.com/logo.png",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "India",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "LMPC Services",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "LMPC Registration for Importers",
+                    description: "Registration services for importers of packaged commodities",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "LMPC Registration for Manufacturers",
+                    description: "Registration services for manufacturers of packaged commodities",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "LMPC Registration for Packers",
+                    description: "Registration services for packers of packaged commodities",
+                  },
+                },
+              ],
+            },
+          })}
+        </script>
+      </Helmet>
+
+      <article className="lmpc-page">
+        <LMPCHero />
+        <LMPCIndex />
+        <LMPCContent />
+        <Footer />
+        <ScrollToTopButton />
+      </article>
     </>
   );
 };
@@ -32,21 +128,22 @@ export const LMPC = () => {
 // LMPC Hero Section
 const LMPCHero = () => {
   return (
-    <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+    <header className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
-      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
+      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco" aria-hidden="true"></div>
 
       {/* Decorative elements */}
       <div
         className="absolute top-[20%] z-[10] right-[15%] w-[20px] h-[20px] rounded-full bg-[#1A8781]/30 animate-float"
         style={{ animationDelay: "1s" }}
+        aria-hidden="true"
       ></div>
 
       <div className="max-w-[84rem] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
         {/* Left Side */}
         <div className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
           <div className="inline-flex items-center">
-            <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
+            <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4" aria-hidden="true"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
               Certified Expertise
             </span>
@@ -55,7 +152,7 @@ const LMPCHero = () => {
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
               LMPC Certificate Guide for
-              <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
+              <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full" aria-hidden="true"></span>
             </span>{" "}
             Importers and Manufacturers
           </h1>
@@ -67,7 +164,7 @@ const LMPCHero = () => {
 
           <div className="flex items-center -mt-2">
             <div className="flex items-center cursor-pointer group">
-              <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3" aria-hidden="true">
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
@@ -78,9 +175,9 @@ const LMPCHero = () => {
         </div>
 
         {/* Right Side */}
-        <ServiceContactForm/>
+        <ServiceContactForm />
       </div>
-    </main>
+    </header>
   );
 };
 
@@ -226,10 +323,20 @@ const LMPCIndex = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-    {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+            {isMobileMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             )}
           </svg>
         </button>
@@ -313,16 +420,16 @@ const LMPCContent = () => {
 // LMPC FAQs Section
 const ServiceFaq = () => {
   return (
-    <div id="faqs" className="my-2 bg-gray-50 scroll-mt-20">
+    <section id="faqs" className="my-2 bg-gray-50 scroll-mt-20" aria-labelledby="faq-title">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 id="faq-title" className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can't find the answer you are looking for?{" "}
-          <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
+          <a href="#contact" className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
             Reach out to us!
-          </span>
+          </a>
         </p>
 
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
@@ -468,7 +575,7 @@ const ServiceFaq = () => {
           </Accordion>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -558,19 +665,19 @@ const PointsListTwo = ({ points, heading }) => {
 
 const OverviewSection = () => {
   return (
-    <section id="overview" className="flex flex-col scroll-mt-20">
+    <section id="overview" className="flex flex-col scroll-mt-20" aria-labelledby="overview-title">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Overview
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 id="overview-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         What is LMPC Certification? A Complete Overview
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -635,16 +742,20 @@ const OverviewSection = () => {
         </div>
 
         {/* Image */}
-        <div className="w-full md:w-auto">
+        <figure className="w-full md:w-auto">
           <img
             src={LMPCimg}
-            alt="Medical laboratory equipment"
+            alt="LMPC certification process and documentation requirements for importers and manufacturers"
+            loading="lazy"
+            width="400"
+            height="250"
             className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
             ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
             hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
             "
           />
-        </div>
+          <figcaption className="sr-only">LMPC certification documentation and process overview</figcaption>
+        </figure>
       </div>
     </section>
   );
@@ -1057,28 +1168,54 @@ const ReviewSection = () => {
       <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
         <div className="flex gap-6">
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group">
-            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
-              <path fillOpacity="0.15" strokeWidth="0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+            >
+              <path
+                fillOpacity="0.15"
+                strokeWidth="0"
                 className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z" />
-              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z"
+              />
+              <path
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5" />
+                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5"
+              />
             </svg>
 
             <span>It was helpful</span>
           </button>
 
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
-            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
-              <path fillOpacity="0.15" strokeWidth="0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+            >
+              <path
+                fillOpacity="0.15"
+                strokeWidth="0"
                 className="group-hover:text-red-500 transition-colors duration-200"
-                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z" />
-              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z"
+              />
+              <path
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 className="group-hover:text-red-500 transition-colors duration-200"
-                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5" />
+                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5"
+              />
             </svg>
 
             <span>It was not helpful</span>

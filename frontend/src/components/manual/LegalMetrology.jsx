@@ -1,7 +1,7 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+
 import { Separator } from "@/components/ui/separator";
 import React, { useState, useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 
 import PWMRimg from "../../assets/images/PWMRimg.png";
 
@@ -20,12 +20,98 @@ import ServiceContactForm from "@/common/ServiceContactForm";
 export const LegalMetrology = () => {
   return (
     <>
-      <LMCHero />
-      <LMCIndex />
-     <LMCContent />
-     <Footer />
-     <ScrollToTopButton />
-     {/*   <Footer/> */}
+      <Helmet>
+        <title>Legal Metrology Certification Services | Weights & Measures | Sun Consultants</title>
+        <meta
+          name="description"
+          content="Expert Legal Metrology certification services for weights and measures. Get certification for weighing and measuring instruments. Trusted since 2013."
+        />
+        <meta
+          name="keywords"
+          content="Legal Metrology, weights and measures, metrology certification, weighing instruments, measuring instruments"
+        />
+        <meta name="author" content="Sun Consultants & Engineers" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph Tags */}
+        <meta
+          property="og:title"
+          content="Legal Metrology Certification Services | Weights & Measures"
+        />
+        <meta
+          property="og:description"
+          content="Expert Legal Metrology certification services for weights and measures. Get certification for weighing and measuring instruments."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:site_name" content="Sun Consultants & Engineers" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ConsultantsSun" />
+        <meta
+          name="twitter:title"
+          content="Legal Metrology Certification Services | Weights & Measures"
+        />
+        <meta
+          name="twitter:description"
+          content="Expert Legal Metrology certification services for weights and measures."
+        />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href={window.location.href} />
+        <meta name="robots" content="index, follow" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "Legal Metrology Certification",
+            provider: {
+              "@type": "Organization",
+              name: "Sun Consultants & Engineers",
+              url: window.location.href,
+              logo: "https://sunconsultants.com/logo.png",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "India",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Legal Metrology Services",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Weights and Measures Certification",
+                    description: "Certification for weighing and measuring instruments",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Legal Metrology Registration",
+                    description: "Registration for weights and measures manufacturers",
+                  },
+                },
+              ],
+            },
+          })}
+        </script>
+      </Helmet>
+
+      <article className="legal-metrology-page">
+        <LMCHero />
+        <LMCIndex />
+        <LMCContent />
+        <Footer />
+        <ScrollToTopButton />
+      </article>
     </>
   );
 };
@@ -34,12 +120,13 @@ const LMCHero = () => {
   return (
     <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
-      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
+      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco" aria-hidden="true"></div>
 
       {/* Decorative elements */}
       <div
         className="absolute top-[20%] z-[10] right-[15%] w-[20px] h-[20px] rounded-full bg-[#1A8781]/30 animate-float"
         style={{ animationDelay: "1s" }}
+        aria-hidden="true"
       ></div>
 
       <div className="max-w-[84rem] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
@@ -537,7 +624,7 @@ const LMCContentLeft = () => {
 
 const OverviewSection = () => {
   return (
-    <section id="overview" className="flex flex-col scroll-mt-20">
+    <section id="overview" className="flex flex-col scroll-mt-20" aria-labelledby="overview-title">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -547,9 +634,9 @@ const OverviewSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 id="overview-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Plastic Waste Management & Recycling
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -572,7 +659,7 @@ const OverviewSection = () => {
 
 const EligibilitySection = () => {
   return (
-    <section id="eligibility" className="flex flex-col scroll-mt-20">
+    <section id="eligibility" className="flex flex-col scroll-mt-20" aria-labelledby="eligibility-title">
       {/* Eligibility */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -582,9 +669,9 @@ const EligibilitySection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 id="eligibility-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Plastic License Eligibility
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -608,7 +695,7 @@ const EligibilitySection = () => {
 
 const ComplianceSection = () => {
   return (
-    <section id="compliance" className="flex flex-col scroll-mt-20">
+    <section id="compliance" className="flex flex-col scroll-mt-20" aria-labelledby="compliance-title">
       {/* Compliance*/}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -618,9 +705,9 @@ const ComplianceSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 id="compliance-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Businesses That Need Plastic Waste Certification
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -643,6 +730,9 @@ const ComplianceSection = () => {
         <img
           src={PWMRimg}
           alt="Medical laboratory equipment"
+          loading="lazy"
+          width="400"
+          height="250"
           className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
           ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
           hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
@@ -655,7 +745,7 @@ const ComplianceSection = () => {
 
 const ProcessSection = () => {
   return (
-    <section id="process" className="flex flex-col scroll-mt-20">
+    <section id="process" className="flex flex-col scroll-mt-20" aria-labelledby="process-title">
       {/* Process */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -665,9 +755,9 @@ const ProcessSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 id="process-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Plastic Waste Management Rules 2016
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -707,7 +797,7 @@ const ProcessSection = () => {
 
 const DocumentsSection = () => {
   return (
-    <section id="documents" className="flex flex-col scroll-mt-20">
+    <section id="documents" className="flex flex-col scroll-mt-20" aria-labelledby="documents-title">
       {/* Documents*/}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -717,9 +807,9 @@ const DocumentsSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Process for EPR license and post compliances :
-      </h3>
+      <h2 id="documents-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+        Process for EPR license and post compliances
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -765,7 +855,7 @@ const DocumentsSection = () => {
 
 const ConsultingSection = () => {
   return (
-    <section id="consultancy" className="flex flex-col scroll-mt-20">
+    <section id="consultancy" className="flex flex-col scroll-mt-20" aria-labelledby="consultancy-title">
       {/* Consultancy */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -775,9 +865,9 @@ const ConsultingSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 id="consultancy-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Sun Consultants: Plastic Waste License Experts
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -801,10 +891,10 @@ const ConsultingSection = () => {
 
 const ReviewSection = () => {
   return (
-    <section>
-      <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
+    <section aria-labelledby="review-title">
+      <h2 id="review-title" className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
         What did you think of this content?
-      </span>
+      </h2>
       <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
         <div className="flex gap-6">
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group">

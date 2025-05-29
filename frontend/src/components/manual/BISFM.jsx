@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import BISSRimg from "../../assets/images/BISSRimg.png";
+import { Helmet } from 'react-helmet-async';
 
 import {
   Accordion,
@@ -19,11 +20,129 @@ import ServiceContactForm from "@/common/ServiceContactForm";
 export const BISFM = () => {
   return (
     <>
-      <BISFMHero />
-      <BISFMIndex />
-      <BISFMContent />
-      <Footer/>
-      <ScrollToTopButton />
+      <Helmet>
+        <title>BIS FMCS Certification | Foreign Manufacturer Certification Scheme | Sun Consultants</title>
+        <meta name="description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. Trusted BIS consultants since 2013. ✓ Fast Processing ✓ Expert Guidance" />
+        <meta name="keywords" content="BIS FMCS, Foreign Manufacturer Certification Scheme, ISI Mark for foreign manufacturers, BIS certification for exports, BIS license for foreign companies, BIS compliance, Indian Standards certification" />
+        <meta name="author" content="Sun Consultants & Engineers" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="BIS FMCS Certification | Foreign Manufacturer Certification Scheme" />
+        <meta property="og:description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:site_name" content="Sun Consultants & Engineers" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:image" content="https://sunconsultants.com/og-image.jpg" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ConsultantsSun" />
+        <meta name="twitter:title" content="BIS FMCS Certification | Foreign Manufacturer Certification Scheme" />
+        <meta name="twitter:description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India." />
+        <meta name="twitter:image" content="https://sunconsultants.com/twitter-image.jpg" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={window.location.href} />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "BIS FMCS Certification",
+            "provider": {
+              "@type": "Organization",
+              "name": "Sun Consultants & Engineers",
+              "url": window.location.href,
+              "logo": "https://sunconsultants.com/logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-9315973373",
+                "contactType": "customer service",
+                "email": "info@sunconsultants.co.in"
+              }
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "India"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "BIS FMCS Certification Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "BIS FMCS Certification",
+                    "description": "BIS certification for foreign manufacturers exporting to India"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "AIR Nomination",
+                    "description": "Authorized Indian Representative nomination services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "BIS Compliance Support",
+                    "description": "Ongoing BIS compliance and surveillance support"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is BIS FMCS Certification?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "BIS FMCS (Foreign Manufacturer Certification Scheme) is mandatory for foreign manufacturers exporting products to India. It ensures products meet Indian Standards and requires ISI Mark certification."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does BIS FMCS certification take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The BIS FMCS certification process typically takes approximately 3 months from application submission to license grant, including testing and factory audit."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What documents are required for BIS FMCS certification?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Required documents include application form, plant and machinery list, raw materials list, test equipment details, calibration certificates, plant layout, and quality control documentation."
+                }
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+
+      <main className="w-full" role="main">
+        <BISFMHero />
+        <BISFMIndex />
+        <BISFMContent />
+        <Footer />
+        <ScrollToTopButton />
+      </main>
     </>
   );
 };
@@ -31,7 +150,7 @@ export const BISFM = () => {
 // BIS Hero Section
 const BISFMHero = () => {
   return (
-    <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+    <section className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]" aria-label="BIS FMCS Certification Hero">
       {/* Background gradient */}
       <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
 
@@ -43,8 +162,7 @@ const BISFMHero = () => {
 
       <div className="max-w-[84rem] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
         {/* Left Side */}
-
-        <div className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
+        <article className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
@@ -57,7 +175,7 @@ const BISFMHero = () => {
               BIS Certificate
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
-            For Foreign Manufactures
+            For Foreign Manufacturers
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
@@ -65,7 +183,7 @@ const BISFMHero = () => {
             1,000+ mandatory & 20,000+ voluntary products.
           </p>
 
-          <div className="flex items-center -mt-2">
+          <nav className="flex items-center -mt-2">
             <div className="flex items-center cursor-pointer group">
               <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3">
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
@@ -74,13 +192,13 @@ const BISFMHero = () => {
                 View Services
               </span>
             </div>
-          </div>
-        </div>
+          </nav>
+        </article>
 
         {/* Right Side */}
-     <ServiceContactForm/>
+        <ServiceContactForm />
       </div>
-    </main>
+    </section>
   );
 };
 
@@ -279,35 +397,33 @@ const BISFMIndex = () => {
 // BIS Content Section
 const BISFMContent = () => {
   return (
-    <div className="w-full overflow-x-hidden">
+    <section className="w-full overflow-x-hidden" aria-label="BIS FMCS Certification Content">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side */}
-
           <BISFMContentLeft />
-
           {/* Right Side */}
           <ServiceContentRight />
         </div>
       </div>
       <ServiceFaq />
-    </div>
+    </section>
   );
 };
 
 // BIS FAQs Section
 const ServiceFaq = () => {
   return (
-    <div id="faqs" className="my-2 bg-gray-50 scroll-mt-20">
+    <section id="faqs" className="my-2 bg-gray-50 scroll-mt-20" aria-label="Frequently Asked Questions">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can't find the answer you are looking for?{" "}
-          <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
+          <a href="/contact" className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors">
             Reach out to us!
-          </span>
+          </a>
         </p>
 
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
@@ -452,266 +568,86 @@ const ServiceFaq = () => {
             </AccordionItem>
           </Accordion>
         </div>
-
-        {/* <div className="w-[768px] mt-14  mx-auto">
-          <h3 className="text-center font-geist text-[48px]  text-[#181818] leading-[48px] font-semibold  ">
-            Have questions, feedback or anything to say?
-          </h3>
-
-          <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
-            Email us at{" "}
-            <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@sunconsultants.co.in
-            </span>{" "}
-            or use one of the options below. We usually get back within a day or
-            two.
-          </div>
-
-          <div className="flex items-center my-[30px]">
-            <div className="h-px w-full bg-neutral-300  grow"></div>
-            <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
-              or
-            </span>
-            <div className="h-px w-full bg-neutral-300 grow"></div>
-          </div>
-
-          <div className="flex justify-center w-full">
-            <div className="flex gap-x-6">
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="mailto:info@sunconsultants.co.in"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
-                </svg>
-                <span className="sr-only">Email</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.github.com/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path>
-                </svg>
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://x.com/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"
-                    className=""
-                  ></path>
-                </svg>
-                <span className="sr-only">Twitter / X</span>
-              </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.linkedin.com/company/sunconsultants"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path>
-                </svg>
-                <span className="sr-only">LinkedIn</span>
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <div></div>
-          </div>
-        </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 
 const BISFMContentLeft = () => {
   return (
-    <div className=" flex-1 ">
+    <article className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-        {/* Nomination Section */}
         <NominationSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <DocumentsSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <ProcessSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <ValiditySection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <PaymentSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <SurveillanceSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <ConsultingSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
       </div>
-    </div>
-  );
-};
-
-const PointsList = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col w-full md:w-[441px]">
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[16px] md:mt-[24px] gap-2">
-        {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2">
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-              {point}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const PointsListTwo = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col w-full">
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
-        {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2">
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-              {point}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
+    </article>
   );
 };
 
 const NominationSection = () => {
   return (
-    <section id="nomination" className="flex flex-col scroll-mt-20">
-      {/* Nomination */}
-      <div className="flex w-full items-center gap-3">
+    <section 
+      id="nomination" 
+      className="flex flex-col scroll-mt-20" 
+      aria-label="Authorized Indian Representative Nomination"
+    >
+      <header className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Nomination
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
+      </header>
 
-      {/* Title */}
-
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
         Authorized Indian Representative Nomination
-      </h3>
+      </h2>
 
-      {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Pre-requisites of nomination of an Authorized Indian Representative
       </p>
 
-      {/* Nomination Content */}
+      <article className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        In case of FMCS certificate, the foreign manufacturer has to mandatorily appoint an{" "}
+        <strong className="font-medium text-gray-950 underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950">
+          Authorized Indian Representative (Also known as AIR)
+        </strong>{" "}
+        who is the official representative of the firm to BIS, the following points must be checked by the manufacturer before appointing an AIR:
+      </article>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        In case of FMCS certificate , the foreign manufacturer has to
-        mandatorily appoint an{" "}
-        <span className="font-medium text-gray-950 underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950">
-          Authorized Indian Representative ( Also known as AIR )
-        </span>{" "}
-        who is the official representative of the firm to BIS, the following
-        points must be checked by the manufacturer before appointing an AIR:
-      </div>
-
-      {/* Important Points And Image */}
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsList
-            points={[
-              "Must be an Indian resident.",
-              "Should have a basic educational background to understand procedures.",
-              "Well-versed with the BIS certification process.",
-              "Must have a valid address for certificate documentation.",
-            ]}
-            heading="Eligibility Criteria for AIR in BIS Certification"
-          />
-        </div>
+        <PointsList
+          points={[
+            "Must be an Indian resident.",
+            "Should have a basic educational background to understand procedures.",
+            "Well-versed with the BIS certification process.",
+            "Must have a valid address for certificate documentation.",
+          ]}
+          heading="Eligibility Criteria for AIR in BIS Certification"
+        />
 
-        {/* Image */}
-        <div className="w-full md:w-auto">
+        <figure className="w-full md:w-auto">
           <img
             src={BISSRimg}
-            alt="Medical laboratory equipment"
-            className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
-          ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
-          hover:ring-gray-900/12.5 w-[400px] h-[250px] mt-2.5
-          "
+            alt="BIS Certification Process Flow Diagram"
+            loading="lazy"
+            width="400"
+            height="250"
+            className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/12.5 w-[400px] h-[250px] mt-2.5"
           />
-        </div>
+          <figcaption className="sr-only">BIS Certification Process Flow Diagram</figcaption>
+        </figure>
       </div>
     </section>
   );
@@ -1062,5 +998,49 @@ const ConsultingSection = () => {
         />
       </div>
     </section>
+  );
+};
+
+const PointsList = ({ points, heading }) => {
+  return (
+    <div className="flex flex-col w-full md:w-[441px]" role="list">
+      <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {heading}
+      </h3>
+      <ul className="flex flex-col mt-[16px] md:mt-[24px] gap-2" role="list">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-center gap-2" role="listitem">
+            <div className="bg-green-500/10 p-2 rounded-full" aria-hidden="true">
+              <Check size={12} className="text-[#020817]" />
+            </div>
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+              {point}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const PointsListTwo = ({ points, heading }) => {
+  return (
+    <div className="flex flex-col w-full">
+      <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {heading}
+      </h3>
+      <ul className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-center gap-2">
+            <div className="bg-green-500/10 p-2 rounded-full">
+              <Check size={12} className="text-[#020817]" />
+            </div>
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+              {point}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
