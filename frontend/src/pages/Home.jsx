@@ -1,4 +1,5 @@
 import Footer from "@/common/Footer";
+import { Helmet } from 'react-helmet-async';
 
 // Hero Section  Import
 import HeroImage from "../assets/images/Placeholder.png";
@@ -31,7 +32,7 @@ import { Separator } from "@/components/ui/separator";
 
 
 // Contact Import 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import ContactUs from "../assets/images/ContactUs.png";
 import ContactChild from "../assets/images/ContactChild.png";
@@ -67,25 +68,161 @@ import India from "../assets/images/India.png";
 
 const Home = () => {
   return (
-    <>
-      <Hero />
+    <main className="w-full">
+      <Helmet>
+        <title>BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO - Sun Consultants & Engineers</title>
+        <meta name="description" content="Sun Consultants is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license. Trusted since 2013." />
+        <meta name="keywords" content="BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license, ISI mark, BIS registration" />
+        <meta name="author" content="Sun Consultants & Engineers" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="BIS Certification consultants, LMPC certificate, EPR Certificate, CDSCO" />
+        <meta property="og:description" content="Sun Consultants is the best BIS certification consultant in India. We provide comprehensive certification services for Indian and foreign manufacturers." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:site_name" content="Sun Consultants & Engineers" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@ConsultantsSun" />
+        <meta name="twitter:title" content="BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO" />
+        <meta name="twitter:description" content="Sun Consultants is the best BIS certification consultant in India." />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={window.location.href} />
+        <meta name="robots" content="index, follow" />
 
-      <LogoTicker />
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Sun Consultants & Engineers",
+            "url": "https://sunconsultants.co.in",
+            "logo": "https://sunconsultants.co.in/assets/img/suncons.png",
+            "description": "Sun Consultants is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "505, PLOT NO-E-1,2,3, AGGARWAL MILLENNIUM TOWER-1 PITAMPURA",
+              "addressLocality": "NETAJI SUBHASH PLACE WEST DELHI",
+              "addressRegion": "DELHI",
+              "postalCode": "110034",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-9315973373",
+              "contactType": "customer service",
+              "email": "info@sunconsultants.co.in"
+            },
+            "sameAs": [
+              "https://twitter.com/ConsultantsSun"
+            ]
+          })}
+        </script>
 
-      <Services />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Certification Services",
+            "provider": {
+              "@type": "Organization",
+              "name": "Sun Consultants & Engineers"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "India"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Certification Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "BIS Certification"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "CDSCO Registration"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "LMPC Certificate"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "EPR Certificate"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
 
-      <Contact />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What is BIS Certification?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BIS Certification is a mandatory certification for products sold in India..."
+              }
+            }]
+          })}
+        </script>
+      </Helmet>
+      
+      <section aria-label="Hero Section" className="w-full">
+        <Hero />
+      </section>
 
-      <LatestNews />
+      <section aria-label="Partner Logos" className="w-full">
+        <LogoTicker />
+      </section>
 
-      <Client />
+      <section aria-label="Our Services" className="w-full">
+        <Services />
+      </section>
 
-      <LogoTicker />
+      <section aria-label="Contact Form" className="w-full">
+        <Contact />
+      </section>
 
-      <Countries />
+      <section aria-label="Latest News" className="w-full">
+        <LatestNews />
+      </section>
+
+      <section aria-label="Client Testimonials" className="w-full">
+        <Client />
+      </section>
+
+      <section aria-label="Partner Logos" className="w-full">
+        <LogoTicker />
+      </section>
+
+      <section aria-label="Countries We Serve" className="w-full">
+        <Countries />
+      </section>
 
       <Footer />
-    </>
+    </main>
   );
 };
 
@@ -108,42 +245,55 @@ const Hero = () => {
         <div className="max-w-[84rem] w-full mx-auto ">
           <div className="flex flex-col items-start">
             <div className="relative px-8 z-20 ">
-              <img
-                src={HeroImage}
-                alt="Hero Image "
-                className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover"
-              />
-              {/* <ImagesSlider   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover" images={images}></ImagesSlider> */}
+              <figure className="m-0">
+                <img
+                  src={HeroImage}
+                  alt="Sun Consultants And Engineers - Professional Certification Services"
+                  width="740"
+                  height="515"
+                  loading="lazy"
+                  className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover"
+                />
+                {/* <ImagesSlider   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover" images={images}></ImagesSlider> */}
+              </figure>
               <div className="absolute inset-0 flex items-center justify-center transform translate-x-[575px]">
-                <div className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
-                  <div className="relative max-w-96">
+                <article className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+                  <header className="relative max-w-96">
                     <h1 className="text-5xl font-bold font-playfair text-left text-black leading-[52px]">
                       Sun Consultants And Engineers
                     </h1>
                     <div className="w-[52px] h-[8px] bg-black inset-0 absolute transform translate-x-[380px] translate-y-7"></div>
-                  </div>
+                  </header>
 
-                  <div className="mt-5 text-sm sm:text-xl text-zinc-500 tracking-wide mb-7 text-left max-w-2xl">
+                  <p className="mt-5 text-sm sm:text-xl text-zinc-500 tracking-wide mb-7 text-left max-w-2xl">
                     Trusted consultants for BIS, LMPC, EPR, and WPC
                     certifications since 2013. We assist both Indian and foreign
                     manufacturers in obtaining essential government
                     certifications for the Indian market.
-                  </div>
-                </div>
+                  </p>
+                </article>
               </div>
 
-              <div className="absolute shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] flex inset-0 w-[160px] h-[80px] transform translate-x-[70px] translate-y-[475px]">
-                <div className="w-full h-full bg-white flex items-center justify-center ">
-                  <button>
-                    <img src={ArrowOne} alt="Arrow One" />
+              <nav className="absolute shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] flex inset-0 w-[160px] h-[80px] transform translate-x-[70px] translate-y-[475px]" aria-label="Hero navigation">
+                <div className="w-full h-full bg-white flex items-center justify-center">
+                  <button aria-label="Previous slide">
+                    <img
+                      src={ArrowOne}
+                      alt="Previous slide navigation"
+                      loading="lazy"
+                    />
                   </button>
                 </div>
-                <div className="w-full h-full bg-[#64bfdd] flex items-center justify-center ">
-                  <button>
-                    <img src={ArrowTwo} alt="Arrow Two" />
+                <div className="w-full h-full bg-[#64bfdd] flex items-center justify-center">
+                  <button aria-label="Next slide">
+                    <img
+                      src={ArrowTwo}
+                      alt="Next slide navigation"
+                      loading="lazy"
+                    />
                   </button>
                 </div>
-              </div>
+              </nav>
 
               {/* <div className=" flex items-center justify-between absolute inset-0  w-[219px] h-[27px] transform translate-x-[553.5px] translate-y-[525px]">
                 <div className="font-poppins text-[#313131] text-xl">01</div>
@@ -164,11 +314,13 @@ const Hero = () => {
         <div className="custom-radial-gradient w-full flex flex-col justify-center p-4">
           <div className="flex justify-between flex-col items-center w-full m-auto pb-12">
             <div className="flex flex-col gap-8 mt-10 mb-16">
-              <WordPullUp
-                words="Sun Consultants And Engineers"
-                className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
-              />
-              <div className="max-w-2xl">
+              <header>
+                <WordPullUp
+                  words="Sun Consultants And Engineers"
+                  className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
+                />
+              </header>
+              <article className="max-w-2xl">
                 <FadeText
                   text="
              Trusted consultants for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
@@ -176,14 +328,14 @@ const Hero = () => {
                   className="font-geist text-gray-600"
                   direction="left"
                 />
-              </div>
+              </article>
 
-              <div className="flex gap-3 flex-wrap items-center">
+              <nav className="flex gap-3 flex-wrap items-center" aria-label="Mobile navigation">
                 <Link to="/about">
-                <BlurIn
-                  word="About Us"
-                  className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
-                />
+                  <BlurIn
+                    word="About Us"
+                    className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
+                  />
                 </Link>
                 <Link to="/contact">
                   <BlurIn
@@ -191,13 +343,15 @@ const Hero = () => {
                     className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
                   />
                 </Link>
-              </div>
+              </nav>
             </div>
-            <img 
+            <figure className="m-0">
+              <img 
                 src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg" 
-                alt="Hero Image" 
+                alt="Sun Consultants And Engineers - Professional Certification Services" 
                 className="w-80 md:w-96 drop-shadow-xl" 
               />
+            </figure>
           </div>
         </div>
       </main>
@@ -225,33 +379,176 @@ const LogoTicker = () => {
           }}
           className="flex gap-14 pr-14 items-center justify-center flex-none"
         >
-          <img src={LogoOne} alt="Logo One"      />
-          <img src={LogoThree} alt="Logo Three"  />
-          <img src={LogoFour} alt="Logo Four"    />
-          <img src={LogoFive} alt="Logo Five"    />
+          <figure className="m-0">
+            <img
+              src={LogoOne}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoThree}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoFour}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoFive}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoSix}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
 
-          <img src={LogoSix} alt="Logo Six"       />
+          <figure className="m-0">
+            <img
+              src={LogoOne}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoTwo}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoThree}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoFour}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoFive}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoSix}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
 
-          <img src={LogoOne} alt="Logo One"        />
-          <img src={LogoTwo} alt="Logo Two"        />
-          <img src={LogoThree} alt="Logo Three"     />
-          <img src={LogoFour} alt="Logo Four"       />
-          <img src={LogoFive} alt="Logo Five"      />
-          <img src={LogoSix} alt="Logo Six"      />
-
-          <img src={LogoOne} alt="Logo One" />
-          <img src={LogoTwo} alt="Logo Two" />
-          <img src={LogoThree} alt="Logo Three" />
-          <img src={LogoFour} alt="Logo Four" />
-          <img src={LogoFive} alt="Logo Five" />
-          <img src={LogoSix} alt="Logo Six" />
+          <figure className="m-0">
+            <img
+              src={LogoOne}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoTwo}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoThree}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoFour}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoFive}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoSix}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              loading="lazy"
+            />
+          </figure>
                   
-          <img src={LogoOne} alt="Logo One"  className="hidden md:block"/>
-          <img src={LogoTwo} alt="Logo Two" className="hidden md:block"/>
-          <img src={LogoThree} alt="Logo Three" className="hidden md:block" />
-          <img src={LogoFour} alt="Logo Four" className="hidden md:block" />
-          <img src={LogoFive} alt="Logo Five" className="hidden md:block" />
-          <img src={LogoSix} alt="Logo Six" className="hidden md:block" />
+          <figure className="m-0">
+            <img
+              src={LogoOne}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              className="hidden md:block"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoTwo}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              className="hidden md:block"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoThree}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              className="hidden md:block"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoFour}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              className="hidden md:block"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoFive}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              className="hidden md:block"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="m-0">
+            <img
+              src={LogoSix}
+              alt="Sun Consultants And Engineers - Trusted Partner Company"
+              className="hidden md:block"
+              loading="lazy"
+            />
+          </figure>
         </motion.div>
       </div>
     </div>
@@ -288,28 +585,30 @@ const Services = () => {
         <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
        
    
-          <Link to="/services/bis-mark-foreign" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+          <Link to="/services/bis-mark-foreign" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20" aria-label="BIS Mark for Foreign Manufacturers">
+            <figure className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 m-0">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Certification Services - Professional ISI License for Foreign Manufacturers"
                 className="w-[130px] h-[130px] rounded-full object-contain"
+                loading="lazy"
               />
-            </div>
+            </figure>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               BIS Mark (ISI License) for Foreign Manufacture
             </p>
           </Link>
 
 
-          <Link to="/services/cdsco-registration-certification" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+          <Link to="/services/cdsco-registration-certification" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20" aria-label="CDSCO Registration Certification">
+            <figure className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 m-0">
               <img
                 src={CDSCO}
-                alt="CDSCO"
+                alt="CDSCO Registration Certification - Medical Device and Drug Registration Services"
                 className="w-[130px] h-[130px] rounded-full object-contain"
+                loading="lazy"
               />
-            </div>
+            </figure>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
               CDSCO Registration Certification
             </p>
@@ -321,6 +620,7 @@ const Services = () => {
                 src={BISCRS}
                 alt="BISCRS"
                 className="w-[130px] h-[130px] rounded-full object-contain"
+                loading="lazy"
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -334,6 +634,7 @@ const Services = () => {
                 src={PlasticWasteManagement}
                 alt="PlasticWasteManagement"
                 className="w-[130px] h-[130px] rounded-full object-contain"
+                loading="lazy"
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -347,6 +648,7 @@ const Services = () => {
                 src={EPRCertificate}
                 alt="EPRCertificate"
                 className="w-[130px] h-[130px] rounded-full object-contain"
+                loading="lazy"
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -360,6 +662,7 @@ const Services = () => {
                 src={LMPC}
                 alt="LMPC"
                 className="w-[130px] h-[130px] rounded-full object-contain"
+                loading="lazy"
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -373,6 +676,7 @@ const Services = () => {
                 src={BISImage}
                 alt="BIS"
                 className="w-[130px] h-[130px] rounded-full object-contain"
+                loading="lazy"
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -386,6 +690,7 @@ const Services = () => {
                 src={ISIMark}
                 alt="ISIMark"
                 className="w-[130px] h-[130px] rounded-full object-contain"
+                loading="lazy"
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -533,9 +838,9 @@ const Contact = () => {
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h3 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
+            <h2 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
               Contact Us
-            </h3>
+            </h2>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -624,7 +929,8 @@ const Contact = () => {
           <img
             src={ContactUs}
             alt="ContactUs"
-            className="absolute right-0 w-[475.99px] h-[539px] object-cover  "
+            className="absolute right-0 w-[475.99px] h-[539px] object-cover"
+            loading="lazy"
           />
 
           <img
@@ -632,6 +938,7 @@ const Contact = () => {
             alt="ContactChild"
             className=" 
           absolute inset-0 w-[350px] h-[350px] -translate-x-[70px] translate-y-[180px] object-cover"
+            loading="lazy"
           />
         </div>
       </div>
@@ -674,8 +981,8 @@ const LatestNews = () => {
   }, []);
 
   return (
-    <div className="h-20 md:h-28  bg-[#B9DEEB]">
-      <div className="max-w-[84rem] mx-auto h-full flex justify-between items-center px-4 md:px-0 ">
+    <div className="h-20 md:h-28 bg-[#B9DEEB]">
+      <div className="max-w-[84rem] mx-auto h-full flex justify-between items-center px-4 md:px-0">
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-[20px] md:text-[35px] font-bold font-roboto text-center">
             Latest{" "}
@@ -713,10 +1020,10 @@ const LatestNews = () => {
                   },
                 });
               }}
-              className="flex gap-14 pr-14 items-center  justify-center flex-none"
+              className="flex gap-14 pr-14 items-center justify-center flex-none"
             >
               {[...Array(4)].map((_, index) => (
-                <>
+                <React.Fragment key={`news-item-${index}`}>
                   <Link to="/latest-notifications" className="no-underline">
                     <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
                       🔥 Breaking: Tesla unveils next-generation electric vehicle
@@ -742,7 +1049,7 @@ const LatestNews = () => {
                       🌍 Global climate summit announces major initiatives
                     </span>
                   </Link>
-                </>
+                </React.Fragment>
               ))}
             </motion.div>
           </div>
@@ -828,6 +1135,7 @@ const Client = () => {
                 src={slideData[current].image}
                 className="rounded-full w-24 h-24 object-cover border-4 border-white"
                 alt="Testimonial"
+                loading="lazy"
               />
               <div className="flex flex-col items-center justify-center text-center">
                 <div className="text-xl font-semibold font-roboto text-black tracking-wide">
@@ -842,7 +1150,7 @@ const Client = () => {
               </p>
             </div>
             <div className="absolute top-4 right-4">
-              <img src={Vector} alt="Vector" className="w-10 h-10 opacity-50" />
+              <img src={Vector} alt="Vector" className="w-10 h-10 opacity-50" loading="lazy" />
             </div>
           </div>
         </div>
@@ -868,6 +1176,7 @@ const Client = () => {
                     src={slide.image}
                     className="rounded-[52px] w-[235px] h-[284.58px] object-cover"
                     alt="Testimonial"
+                    loading="lazy"
                   />
 
                   <div className="flex flex-col items-center justify-center">
@@ -887,7 +1196,7 @@ const Client = () => {
                     </div>
 
                     <div className="absolute inset-0  translate-x-[480px] translate-y-[300px] ">
-                      <img src={Vector} alt="Vector" />
+                      <img src={Vector} alt="Vector" loading="lazy" />
                     </div>
                   </>
                 )}
@@ -958,9 +1267,9 @@ const Countries = () => {
           <div className="w-full md:max-w-[383px] flex flex-col gap-[30px] items-center text-center md:items-start md:text-left ">
             <div className="flex flex-col gap-2 md:gap-[20px]">
               <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-                <h1 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
+                <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
                   Countries We Serve Worldwide
-                </h1>
+                </h2>
               </BoxReveal>
 
               <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1005,6 +1314,7 @@ const Countries = () => {
                       src={country.img}
                       alt={country.name}
                       className="w-auto h-full object-contain"
+                      loading="lazy"
                     />
                   </div>
 
@@ -1030,6 +1340,7 @@ const Countries = () => {
                       src={country.img}
                       alt={country.name}
                       className={country.name === "Thailand" ? "w-full h-full object-cover" : ""}
+                      loading="lazy"
                     />
                   </div>
                   <div className="mt-4 px-2 flex items-center justify-between w-full">
