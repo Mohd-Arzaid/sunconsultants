@@ -168,7 +168,7 @@ const MobileNav = () => {
                 value={message}
                 onChange={handleOnChange}
                 className="h-12 rounded-lg focus-visible:ring-1 focus-visible:ring-blue-500 font-geist text-base"
-                placeholder="Type Message *"
+                placeholder="Which Certification is required? *"
               />
               <Button
                 disabled={loading}
