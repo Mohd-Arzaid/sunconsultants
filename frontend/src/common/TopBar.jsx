@@ -2,7 +2,7 @@ import { Mail, Phone } from "lucide-react";
 
 const TopBar = () => {
   return (
-    <div className="bg-[#0A4394] hidden md:block text-white py-2">
+    <div className="bg-[#0A4394] hidden md:block text-white py-2.5">
       <div className="max-w-[88rem] mx-auto px-4 md:px-11">
         <div className="flex items-center justify-center">
           <div className="flex items-center gap-8">
