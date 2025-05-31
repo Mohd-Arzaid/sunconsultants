@@ -52,39 +52,24 @@ function App() {
         <Route path="/seminar" element={<Seminar />} />
 
         <Route path="/clients" element={<AllClients />} />
-        <Route
-          path="/services/cdsco-registration-certification"
-          element={<CDSCO />}
-        />
-        <Route path="/services/bis-mark-foreign" element={<BISFM />} />
-        <Route path="/services/epr-registration" element={<EPRService />} />
-        <Route
-          path="/services/bis-certification"
-          element={<BISCertification />}
-        />
-        <Route path="/services/lmpc-registration" element={<LMPC />} />
-        <Route path="/services/plastic-waste" element={<PlasticWaste />} />
-        <Route path="/services/legal-metrology" element={<LegalMetrology />} />
-        <Route path="/services/isi-mark-indian" element={<ISIMark />} />
-        <Route path="/services/battery-waste" element={<BatteryWaste />} />
-        <Route
-          path="/services/crs-registration"
-          element={<CRSRegistration />}
-        />
-        <Route path="/services/peso" element={<Peso />} />
-        <Route path="/services/tec" element={<Tec />} />
-        <Route path="/services/wpc" element={<WPC />} />
-        <Route path="/services/rohs" element={<ROHS />} />
-        <Route path="/services/bee" element={<BEE />} />
-        <Route
-          path="/services/ce-certification"
-          element={<CECertification />}
-        />
-        <Route path="/services/emi-emc" element={<EMIEMC />} />
-        <Route
-          path="/services/cb-certification"
-          element={<CBCertification />}
-        />
+        <Route path="/cdsco-registration-certification" element={<CDSCO />} />
+        <Route path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" element={<BISFM />} />
+        <Route path="/a-guide-on-how-to-obtain-epr-certificate" element={<EPRService />} />
+        <Route path="/a-guide-to-bis-certification-indian-bis" element={<BISCertification />} />
+        <Route path="/a-guide-on-how-to-obtain-lmpc-certificate" element={<LMPC />} />
+        <Route path="/epr-certificate-for-plastic-waste-management-pwm" element={<PlasticWaste />} />
+        <Route path="/what-is-legal-metrology-or-lmpc-certificate" element={<LegalMetrology />} />
+        <Route path="/what-is-bis-certificate-indian-bis" element={<ISIMark />} />
+        <Route path="/epr-certificate-for-battery-waste-management-bwm" element={<BatteryWaste />} />
+        <Route path="/what-is-crs-bis-or-crs-registration" element={<CRSRegistration />} />
+        <Route path="/peso-certification-india" element={<Peso />} />
+        <Route path="/tec-certification-approval" element={<Tec />} />
+        <Route path="/wpc-certification-approval" element={<WPC />} />
+        <Route path="/rohs-certification" element={<ROHS />} />
+        <Route path="/bee-certification" element={<BEE />} />
+        <Route path="/ce-certification" element={<CECertification />} />
+        <Route path="/emi-emc-certification" element={<EMIEMC />} />
+        <Route path="/cb-certification" element={<CBCertification />} />
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
       <MobileNav />
