@@ -1334,7 +1334,7 @@ const Countries = () => {
                 {/* <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
                   Countries We Serve Worldwide
                 </h2> */}
-  <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
+  <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[40px]">
   Glimpse of the Countries we have Served In
                 </h2>
 
@@ -1343,7 +1343,7 @@ const Countries = () => {
 
               <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
                 <p className="font-poppins font-medium text-base md:text-[19px] text-[#008080]">
-                  Expanding our services across multiple nations, delivering
+                  Delivering
                   excellence everywhere.
                 </p>
               </BoxReveal>
@@ -1529,7 +1529,7 @@ const WhatsOurCustomersSaySection = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-roboto  text-center text-[#1E1E1E] ">
-              Our Clients
+              Our Testimonials
             </h2>
           </BoxReveal>
 

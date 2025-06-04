@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <div className="relative custom-radial-gradient">
+      <div className="relative ">
         <div className="w-full max-w-[768px] px-4 pb-12  pt-8 md:pt-16 md:pb-16 mx-auto">
           <h3 className="text-center font-geist text-3xl md:text-[48px] text-[#181818] leading-tight md:leading-[48px] font-semibold">
             Have questions, feedback or anything to say?
@@ -22,8 +22,7 @@ const Footer = () => {
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
               info@sunconsultants.co.in
             </span>{" "}
-            or use one of the options below. We usually get back within a day or
-            two.
+            or use one of the options below. We usually get back within 24 hours.
           </div>
 
           <div className="flex items-center my-6 md:my-[30px]">
