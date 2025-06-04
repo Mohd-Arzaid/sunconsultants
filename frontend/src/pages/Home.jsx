@@ -230,9 +230,13 @@ const Home = () => {
         <LatestNews />
       </section>
 
-      <section aria-label="Client Testimonials" className="w-full">
-        <Client />
+      <section aria-label="What Our Customers Say" className="w-full">
+        <WhatsOurCustomersSaySection />
       </section>
+
+      {/* <section aria-label="Client Testimonials" className="w-full">
+        <Client />
+      </section> */}
 
       <section aria-label="Partner Logos" className="w-full">
         <LogoTicker />
@@ -245,10 +249,6 @@ const Home = () => {
       {/* <section aria-label="Subscribe Our Channel" className="w-full">
         <SubscribeOurChannel />
       </section> */}
-
-      <section aria-label="What Our Customers Say" className="w-full">
-        <WhatsOurCustomersSaySection />
-      </section>
 
       <Footer />
     </main>
@@ -294,7 +294,12 @@ const Hero = () => {
                   </header>
 
                   <p className="mt-5 text-sm sm:text-xl text-zinc-500 tracking-wide mb-7 text-left max-w-2xl">
-                  Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.
+                    Sun Certifications was founded in 2013, and for more than a
+                    decade, we have been assisting companies to comply with
+                    various kinds of Indian certifications like BIS certificate
+                    for Indian manufacturers, BIS certification for
+                    foreign/global manufacturers, BIS Scheme X certification,
+                    LMPC certificate, EPR certificate, WPC certificate, etc.
                   </p>
                 </article>
               </div>
@@ -545,27 +550,37 @@ const LogoTicker = () => {
 // Services
 const Services = () => {
   return (
-    <div className="pt-10 md:pt-12 pb-12  md:pb-16 custom-radial-gradient overflow-x-hidden ">
+    <div className="pt-10 md:pt-12 pb-12  md:pb-16 bg-white overflow-x-hidden ">
       <div className="max-w-[84rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
+            {/* <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
+              Our Services
+            </h2> */}
+            <h2 className="text-[25px] uppercase md:text-[36px] font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
               Our Services
             </h2>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+            {/* <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center"> */}
+            <div className="hidden md:flex items-center w-[760px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+              {/* <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
                 India's Best Certificate Consultant
+              </span> */}
+
+              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+                India's most trusted partner for certifications
               </span>
+
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
           </BoxReveal>
         </div>
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
+          {/* 1 */}
           <Link
             to="/services/bis-mark-foreign"
             className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
@@ -575,7 +590,7 @@ const Services = () => {
               <img
                 src={BISImage}
                 alt="BIS Certification Services - Professional ISI License for Foreign Manufacturers"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
                 loading="lazy"
               />
             </figure>
@@ -583,6 +598,104 @@ const Services = () => {
               BIS Mark (ISI License) for Foreign Manufacture
             </p>
           </Link>
+
+          {/* 2 */}
+          <Link
+            to="/services/bis-certification"
+            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={BISImage}
+                alt="BIS"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              BIS Registration Certificate
+            </p>
+          </Link>
+
+
+ {/* 3 */}
+ <Link
+            to="/services/isi-mark-indian"
+            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={ISIMark}
+                alt="ISIMark"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              ISI MARK (BIS) for Indian Manufactures
+            </p>
+          </Link>
+
+
+          {/* 4 */}
+
+          <Link
+            to="/services/crs-registration"
+            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={BISCRS}
+                alt="BISCRS"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              BIS (CRS) Registration
+            </p>
+          </Link>
+         
+
+          {/* 5 */}
+
+          <Link
+            to="/services/epr-registration"
+            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={EPRCertificate}
+                alt="EPRCertificate"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              EPR Certificate Consultants
+            </p>
+          </Link>
+
+       
+          {/* 6 */}
+          <Link
+            to="/services/lmpc-registration"
+            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={LMPC}
+                alt="LMPC"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              LMPC Certificate Consultants
+            </p>
+          </Link>
+
+          {/* 7 */}
 
           <Link
             to="/services/cdsco-registration-certification"
@@ -593,7 +706,7 @@ const Services = () => {
               <img
                 src={CDSCO}
                 alt="CDSCO Registration Certification - Medical Device and Drug Registration Services"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
                 loading="lazy"
               />
             </figure>
@@ -602,23 +715,7 @@ const Services = () => {
             </p>
           </Link>
 
-          <Link
-            to="/services/crs-registration"
-            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
-          >
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img
-                src={BISCRS}
-                alt="BISCRS"
-                className="w-[130px] h-[130px] rounded-full object-contain"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              BIS (CRS) Registration
-            </p>
-          </Link>
-
+          {/* 8 */}
           <Link
             to="/services/plastic-waste"
             className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
@@ -627,7 +724,7 @@ const Services = () => {
               <img
                 src={PlasticWasteManagement}
                 alt="PlasticWasteManagement"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
                 loading="lazy"
               />
             </div>
@@ -636,73 +733,8 @@ const Services = () => {
             </p>
           </Link>
 
-          <Link
-            to="/services/epr-registration"
-            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
-          >
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img
-                src={EPRCertificate}
-                alt="EPRCertificate"
-                className="w-[130px] h-[130px] rounded-full object-contain"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              EPR Certificate Consultants
-            </p>
-          </Link>
 
-          <Link
-            to="/services/lmpc-registration"
-            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
-          >
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img
-                src={LMPC}
-                alt="LMPC"
-                className="w-[130px] h-[130px] rounded-full object-contain"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              LMPC Certificate Consultants
-            </p>
-          </Link>
-
-          <Link
-            to="/services/bis-certification"
-            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
-          >
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img
-                src={BISImage}
-                alt="BIS"
-                className="w-[130px] h-[130px] rounded-full object-contain"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              BIS Registration Certificate
-            </p>
-          </Link>
-
-          <Link
-            to="/services/isi-mark-indian"
-            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
-          >
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img
-                src={ISIMark}
-                alt="ISIMark"
-                className="w-[130px] h-[130px] rounded-full object-contain"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              ISI MARK (BIS) for Indian Manufactures
-            </p>
-          </Link>
+      
         </div>
       </div>
     </div>
@@ -831,20 +863,24 @@ const Contact = () => {
   };
 
   return (
-    <div className=" pt-8 md:pt-12 pb-8 md:pb-16 custom-radial-gradient overflow-x-hidden ">
+    // <div className=" pt-8 md:pt-12 pb-8 md:pb-16 custom-radial-gradient overflow-x-hidden ">
+    <div className=" pt-8 md:pt-12 pb-8 md:pb-16 overflow-x-hidden ">
       <div className="max-w-[88rem] px-4 md:px-8 w-full flex flex-col md:flex-row  items-center justify-between mx-auto">
         <div className="w-full md:w-1/2">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <div className="hidden md:flex w-full items-center gap-3">
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
+              India's most trusted partner for certifications
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
+            {/* <h2 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
+              Contact Us
+            </h2> */}
+              <h2 className="text-[25px] uppercase md:text-[36px]  font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
               Contact Us
             </h2>
           </BoxReveal>
@@ -867,9 +903,13 @@ const Contact = () => {
               name="fullName"
               value={fullName}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
-                focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
-       text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              //         className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px]
+              //           focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+              //  text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
+      focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Full Name *"
             ></Input>
 
@@ -880,9 +920,13 @@ const Contact = () => {
               name="email"
               value={email}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
-          focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
-    text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold            placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              //           className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px]
+              //       focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+              // text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold            placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
+    focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Email Address *"
             />
 
@@ -893,9 +937,13 @@ const Contact = () => {
               name="phoneNumber"
               value={phoneNumber}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
-          focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
-   text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold             placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              //             className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px]
+              //         focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+              //  text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold             placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
+  focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Phone Number *"
             />
 
@@ -906,9 +954,13 @@ const Contact = () => {
               name="message"
               value={message}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] 
-           focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
-       text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold         placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              //         className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px]
+              //      focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+              //  text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold         placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
+      focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Which Certification is required ? *"
             />
 
@@ -924,7 +976,7 @@ const Contact = () => {
                 </div>
               ) : (
                 <div className="flex gap-3 items-center justify-center">
-                  <span>Get Started</span>
+                  <span>Submit</span>
                 </div>
               )}
             </Button>
@@ -1271,16 +1323,22 @@ const Countries = () => {
   ]);
 
   return (
-    <div className="relative custom-radial-gradient py-12 md:py-0">
+    // <div className="relative custom-radial-gradient py-12 md:py-0">
+    <div className="relative bg-white py-12 md:py-0">
       <div className=" max-w-[88rem] mx-auto w-full px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-[18px] ">
           {/* Left Side */}
           <div className="w-full md:max-w-[383px] flex flex-col gap-[30px] items-center text-center md:items-start md:text-left ">
             <div className="flex flex-col gap-2 md:gap-[20px]">
               <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-                <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
+                {/* <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
                   Countries We Serve Worldwide
+                </h2> */}
+  <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
+  Glimpse of the Countries we have Served In
                 </h2>
+
+
               </BoxReveal>
 
               <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1455,7 +1513,7 @@ const WhatsOurCustomersSaySection = () => {
         "Their comprehensive support for our BIS certification was crucial for entering the Indian market. The team's detailed analysis and strategic guidance ensured we met all necessary standards without delays.",
     },
     {
-      id:10,
+      id: 10,
       name: "Priya Sharma",
       role: "Designer",
       image: TestimonialImage,
@@ -1465,7 +1523,8 @@ const WhatsOurCustomersSaySection = () => {
   ];
 
   return (
-    <div className="custom-radial-gradient pt-10 pb-8 ">
+    <div className="bg-white pt-10 pb-8 ">
+      {/* <div className="custom-radial-gradient pt-10 pb-8 "> */}
       <div className="max-w-[88rem] px-8 w-full mx-auto ">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1502,9 +1561,8 @@ const WhatsOurCustomersSaySection = () => {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-              className="min-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative"
+                className="min-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative"
               >
-              
                 <div className="flex items-center gap-4 mb-6">
                   <img
                     src={testimonial.image}
@@ -1515,7 +1573,9 @@ const WhatsOurCustomersSaySection = () => {
                     <h4 className="font-roboto font-bold text-xl leading-tight drop-shadow-lg text-neutral-800">
                       {testimonial.name}
                     </h4>
-                    <p className="font-roboto text-neutral-700">{testimonial.role}</p>
+                    <p className="font-roboto text-neutral-700">
+                      {testimonial.role}
+                    </p>
                   </div>
 
                   <div className="ml-auto absolute top-8 right-8 ">
