@@ -208,7 +208,7 @@ const Navbar = () => {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
-                  Latest Updates
+                  Updates
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
