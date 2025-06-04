@@ -40,7 +40,6 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
-
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
@@ -53,19 +52,58 @@ function App() {
 
         <Route path="/clients" element={<AllClients />} />
         <Route path="/cdsco-registration-certification" element={<CDSCO />} />
-        <Route path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" element={<BISFM />} />
-        <Route path="/a-guide-on-how-to-obtain-epr-certificate" element={<EPRService />} />
-        <Route path="/a-guide-to-bis-certification-indian-bis" element={<BISCertification />} />
-        <Route path="/a-guide-on-how-to-obtain-lmpc-certificate" element={<LMPC />} />
-        <Route path="/epr-certificate-for-plastic-waste-management-pwm" element={<PlasticWaste />} />
-        <Route path="/what-is-legal-metrology-or-lmpc-certificate" element={<LegalMetrology />} />
-        <Route path="/what-is-bis-certificate-indian-bis" element={<ISIMark />} />
-        <Route path="/epr-certificate-for-battery-waste-management-bwm" element={<BatteryWaste />} />
-        <Route path="/what-is-crs-bis-or-crs-registration" element={<CRSRegistration />} />
-        <Route path="/peso-certification-india" element={<Peso />} />
-        <Route path="/tec-certification-approval" element={<Tec />} />
-        <Route path="/wpc-certification-approval" element={<WPC />} />
-        <Route path="/rohs-certification" element={<ROHS />} />
+        <Route
+          path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+          element={<BISFM />}
+        />
+        <Route
+          path="/a-guide-on-how-to-obtain-epr-certificate"
+          element={<EPRService />}
+        />
+        <Route
+          path="/a-guide-to-bis-certification-indian-bis"
+          element={<BISCertification />}
+        />
+        <Route
+          path="/a-guide-on-how-to-obtain-lmpc-certificate"
+          element={<LMPC />}
+        />
+        <Route
+          path="/epr-certificate-for-plastic-waste-management-pwm"
+          element={<PlasticWaste />}
+        />
+        <Route
+          path="/what-is-legal-metrology-or-lmpc-certificate"
+          element={<LegalMetrology />}
+        />
+        <Route
+          path="/what-is-bis-certificate-indian-bis"
+          element={<ISIMark />}
+        />
+        <Route
+          path="/epr-certificate-for-battery-waste-management-bwm"
+          element={<BatteryWaste />}
+        />
+        <Route
+          path="/what-is-crs-bis-or-crs-registration"
+          element={<CRSRegistration />}
+        />
+        <Route
+          path="/information-about-peso-certification-peso-license-india"
+          element={<Peso />}
+        />
+        <Route
+          path="/information-about-tec-certificate-mtcte"
+          element={<Tec />}
+        />
+        <Route
+          path="/information-about-wpc-certificate-eta-approval"
+          element={<WPC />}
+        />
+        <Route
+          path="/restriction-of-hazardous-substance-rohs-certificate"
+          element={<ROHS />}
+        />
         <Route path="/bee-certification" element={<BEE />} />
         <Route path="/ce-certification" element={<CECertification />} />
         <Route path="/emi-emc-certification" element={<EMIEMC />} />
