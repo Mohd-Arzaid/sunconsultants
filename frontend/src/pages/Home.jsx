@@ -286,18 +286,15 @@ const Hero = () => {
               </figure>
               <div className="absolute inset-0 flex items-center justify-center transform translate-x-[575px]">
                 <article className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
-                  <header className="relative max-w-96">
+                  <header className="relative max-w-[600px]">
                     <h1 className="text-5xl font-bold font-playfair text-left text-black leading-[52px]">
-                      Sun Consultants And Engineers
+                      Sun Certifications And Engineers
                     </h1>
-                    <div className="w-[52px] h-[8px] bg-black inset-0 absolute transform translate-x-[380px] translate-y-7"></div>
+                    {/* <div className="w-[52px] h-[8px] bg-black inset-0 absolute transform translate-x-[380px] translate-y-7"></div> */}
                   </header>
 
                   <p className="mt-5 text-sm sm:text-xl text-zinc-500 tracking-wide mb-7 text-left max-w-2xl">
-                    Trusted consultants for BIS, LMPC, EPR, and WPC
-                    certifications since 2013. We assist both Indian and foreign
-                    manufacturers in obtaining essential government
-                    certifications for the Indian market.
+                  Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.
                   </p>
                 </article>
               </div>

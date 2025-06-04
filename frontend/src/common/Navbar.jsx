@@ -35,6 +35,8 @@ import {
   FileCheck,
   GalleryHorizontal,
   Laptop,
+  MessageSquare,
+  MessageCircle,
 } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
@@ -140,7 +142,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="z-[50] sticky top-0 w-full border-b bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
+    <div className="z-[50] sticky top-0 w-full bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
       <div className="flex items-center justify-between px-4 md:px-8 h-20 max-w-[88rem] mx-auto">
         <div
           className=" selection:bg-emerald-600 flex items-center justify-center space-x-2.5 
@@ -149,7 +151,7 @@ const Navbar = () => {
           <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
           <Link to="/" className="py-2 text-center">
             <h1 className="font-roboto text-black uppercase tracking-wider leading-normal text-[14px] md:text-xl font-bold">
-              Sun Consultants & Engineers
+              Sun Certifications And Engineers
             </h1>
             <p className="text-foreground/80 text-[10px] md:text-xs leading-normal uppercase font-normal  ">
               Your Complete Certification Partner
@@ -164,7 +166,7 @@ const Navbar = () => {
                 <Link to="/">
                   <Button
                     variant="link"
-                    className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
+                    className="text-base text-foreground/60 font-roboto uppercase tracking-wide hover:text-foreground/80 transition-colors"
                   >
                     Home
                   </Button>
@@ -172,7 +174,18 @@ const Navbar = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
+                <Link to="/about">
+                  <Button
+                    variant="link"
+                    className="text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
+                  >
+                    About
+                  </Button>
+                </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -194,7 +207,7 @@ const Navbar = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
+                <NavigationMenuTrigger className="text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
                   Latest Updates
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -202,7 +215,7 @@ const Navbar = () => {
                     <a href="/latest-notifications" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <BookText className="w-4 h-4 mr-2" />
-                        Latest Notification
+                        Latest Notifications
                       </div>
                     </a>
                     <a href="/ministry-updates" className="block">
@@ -215,7 +228,7 @@ const Navbar = () => {
                     <a href="/webinar" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <Presentation className="w-4 h-4 mr-2" />
-                        Webinar Updates
+                        Upcoming Webinars
                       </div>
                     </a>
                   </div>
@@ -227,7 +240,7 @@ const Navbar = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
+                <NavigationMenuTrigger className="text-base  uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
                   Gallery
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -253,34 +266,39 @@ const Navbar = () => {
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
 
+          <NavigationMenu>
+            <NavigationMenuList>
               <NavigationMenuItem>
-                <Link to="/about">
-                  <Button
-                    variant="link"
-                    className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
-                  >
-                    About
-                  </Button>
-                </Link>
-              </NavigationMenuItem>
+                <NavigationMenuTrigger className="text-base  uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
+                  Contact US
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="p-4 w-60">
+                    <a href="/contact" className="block">
+                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                        <MessageSquare className="w-4 h-4 mr-2" />
+                        Contact Us
+                      </div>
+                    </a>
 
-              <NavigationMenuItem>
-                <Link to="/contact">
-                  <Button
-                    variant="link"
-                    className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
-                  >
-                    Contact
-                  </Button>
-                </Link>
+                    <a href="/feedback" className="block">
+                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                        <MessageCircle className="w-4 h-4 mr-2" />
+                        Feedback
+                      </div>
+                    </a>
+                  </div>
+                </NavigationMenuContent>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <Link to="/">
                   <Button
                     variant="link"
-                    className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
+                    className="text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
                   >
                     FAQs
                   </Button>
