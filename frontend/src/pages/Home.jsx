@@ -656,7 +656,7 @@ const LogoTicker = () => {
   return (
     <div className="h-20 md:h-28 bg-[#B9DEEB]">
       <div className="max-w-[84rem] mx-auto h-full ">
-        <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+      <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent_0%,black_5%,black_95%,transparent_100%)]">
           <motion.div
             animate={{
               translateX: "-50%",
