@@ -847,7 +847,8 @@ const Services = () => {
           >
             <figure className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 m-0">
               <img
-                src={BISImage}
+                // src={BISImage}
+                src={ISIMark}
                 alt="BIS Certification Services - Professional ISI License for Foreign Manufacturers"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
                 loading="lazy"
@@ -865,14 +866,15 @@ const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={BISImage}
+                // src={BISImage}
+                src={BISCRS}
                 alt="BIS"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
                 loading="lazy"
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              BIS Registration Certificate
+              Scheme X
             </p>
           </Link>
 
