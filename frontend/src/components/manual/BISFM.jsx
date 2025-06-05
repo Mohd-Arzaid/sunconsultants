@@ -180,7 +180,7 @@ const BISFMHero = () => {
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
             Foreign manufacturers need ISI mark for exports to India. Covers
-            1,000+ mandatory & 20,000+ voluntary products.
+            600+ mandatory & 20,000+ voluntary products.
           </p>
 
           <nav className="flex items-center -mt-2">

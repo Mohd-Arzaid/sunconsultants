@@ -38,14 +38,22 @@ const TopBar = () => {
           </div>
         </div>
 
-        <a
-          href="https://wa.me/919315973373"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute right-12 top-1/2 -translate-y-1/2 flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-all duration-300 hover:scale-110 hover:rotate-12"
-        >
-          <FontAwesomeIcon icon={faWhatsapp} className="w-6 h-6" />
-        </a>
+        <div className="absolute right-12 top-1/2 -translate-y-1/2 flex items-center gap-4">
+          <a
+            href="tel:+919315973373"
+            className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-all duration-300 hover:scale-110"
+          >
+            <Phone className="w-6 h-6" />
+          </a>
+          <a
+            href="https://wa.me/919315973373"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-all duration-300 hover:scale-110 hover:rotate-12"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} className="w-6 h-6" />
+          </a>
+        </div>
       </div>
     </div>
   );
