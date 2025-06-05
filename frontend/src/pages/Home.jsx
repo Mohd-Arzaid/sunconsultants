@@ -243,6 +243,9 @@ const Home = () => {
         <Countries />
       </section>
 
+      {/* Certification and Achievements */}
+
+
       <section aria-label="What Our Customers Say" className="w-full">
         <WhatsOurCustomersSaySection />
       </section>
@@ -836,8 +839,8 @@ const Services = () => {
         </div>
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
-          {/* 1 */}
-          <Link
+         {/* 1 */}
+         <Link
             to="/services/bis-mark-foreign"
             className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
             aria-label="BIS Mark for Foreign Manufacturers"
@@ -913,43 +916,6 @@ const Services = () => {
           {/* 5 */}
 
           <Link
-            to="/services/epr-registration"
-            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
-          >
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img
-                src={EPRCertificate}
-                alt="EPRCertificate"
-                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              EPR Certificate Consultants
-            </p>
-          </Link>
-
-          {/* 6 */}
-          <Link
-            to="/services/lmpc-registration"
-            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
-          >
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img
-                src={LMPC}
-                alt="LMPC"
-                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              LMPC Certificate Consultants
-            </p>
-          </Link>
-
-          {/* 7 */}
-
-          <Link
             to="/services/cdsco-registration-certification"
             className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
             aria-label="CDSCO Registration Certification"
@@ -967,7 +933,7 @@ const Services = () => {
             </p>
           </Link>
 
-          {/* 8 */}
+          {/* 6*/}
           <Link
             to="/services/plastic-waste"
             className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
@@ -984,6 +950,44 @@ const Services = () => {
               Plastic Waste Management
             </p>
           </Link>
+
+          {/* 7*/}
+
+          <Link
+            to="/services/epr-registration"
+            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={EPRCertificate}
+                alt="EPRCertificate"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              EPR Certificate Consultants
+            </p>
+          </Link>
+
+          {/* 8 */}
+          <Link
+            to="/services/lmpc-registration"
+            className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={LMPC}
+                alt="LMPC"
+                className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+              LMPC Certificate Consultants
+            </p>
+          </Link>
+
         </div>
       </div>
     </div>
