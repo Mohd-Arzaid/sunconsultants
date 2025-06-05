@@ -63,6 +63,7 @@ import Italy from "../assets/images/Italy.png";
 import Colombia from "../assets/images/Colombia.png";
 import Qatar from "../assets/images/Qatar.png";
 import India from "../assets/images/India.png";
+import { Marquee } from "@/components/magicui/marquee";
 
 const Home = () => {
   return (
@@ -246,6 +247,11 @@ const Home = () => {
         <Countries />
       </section>
 
+      <section aria-label="Countries We Serve" className="w-full">
+        <AuditsMarquee />
+      </section>
+
+
       {/* <section aria-label="Subscribe Our Channel" className="w-full">
         <SubscribeOurChannel />
       </section> */}
@@ -256,6 +262,84 @@ const Home = () => {
 };
 
 export default Home;
+
+
+const AuditsMarquee = () => {
+  // Gallery images from InternationalAudits.jsx
+  const galleryImages = [
+    {
+      id: 1,
+      image:
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+      title: "Medical Chennai 2023",
+    },
+    {
+      id: 2,
+      image:
+        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+      title: "Medical Kolkata 2022",
+    },
+    {
+      id: 3,
+      image:
+        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+      title: "Narela Association Seminar Footwear",
+    },
+    {
+      id: 4,
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
+      title: "Delhi Footwear Exhibition Audits",
+    },
+    {
+      id: 5,
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
+      title: "Karol Bagh Association Footwear Seminar",
+    },
+    {
+      id: 6,
+      image:
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+      title: "Medical 2023",
+    },
+  ];
+
+  return (
+    <div className="bg-white py-14">
+      <div className="max-w-[88rem] mx-auto px-4">
+        <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+          International Audit Glimpses
+        </h2>
+        {/* Marquee for desktop, scroll for mobile */}
+        <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <Marquee className="flex gap-12 md:gap-16 items-center py-6 [--duration:30s]">
+            {galleryImages.map((item) => (
+              <div
+                key={item.id}
+                className="relative min-w-[340px] max-w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
+                style={{ boxShadow: '0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)' }}
+              >
+                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  {/* Gradient overlay for title */}
+                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
+                    <span className="w-full text-center px-4 pb-3 text-lg md:text-2xl font-bold font-playfair text-white drop-shadow-lg tracking-wide">
+                      {item.title}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 // Hero Section
 const Hero = () => {

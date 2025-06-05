@@ -7,8 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .boxshadowbtn {
   padding: 12px;
   width: 100%;
@@ -18,17 +16,12 @@
   transition: all ease-in 0.2s !important;
 }
 
-
 @media(max-width: 768px) {
-
 
   .boxshadowbtn {
     width: 100%;
   }
 }
-
-
-
 
 .boxshadowbtn:hover {
   box-shadow: none;
@@ -36,8 +29,6 @@
   transition: all ease-in 0.2s;
   opacity: 1 !important;
 }
-
-
 
 .custom-radial-gradient {
   background: radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%);
@@ -55,8 +46,6 @@
   background: radial-gradient(circle, #D8E6EF 8%, #ecedef 100%);
 }
 
-
-
 .custom-radial-gradient-3 {
   background: radial-gradient(circle, #FFFFFF 7%, #FBFEFF 100%);
 }
@@ -71,10 +60,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
-
-
-
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
@@ -118,7 +103,6 @@
 .transition-transform {
   transition: transform 0.3s ease-out;
 }
-
 
 @layer base {
   :root {
@@ -175,6 +159,10 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%
   }
+  .theme {
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  }
 }
 
 @layer base {
@@ -196,10 +184,6 @@
     @apply bg-background text-foreground;
   }
 }
-
-
-
-
 
 .client-logo-container {
   --s: 20px;
@@ -254,4 +238,21 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
+@theme inline {
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}

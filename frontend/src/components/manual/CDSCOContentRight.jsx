@@ -12,9 +12,6 @@ import {
   FileText,
   ExternalLink,
   ChevronDown,
-  ThumbsUp,
-  Share2,
-  CheckCircle,
   Phone,
   User,
   Mail,
@@ -31,6 +28,7 @@ import axios from "axios";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
+import { Marquee } from "@/components/magicui/marquee";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const CDSCOContentRight = () => {
@@ -40,7 +38,8 @@ const CDSCOContentRight = () => {
       <LatestBlog />
       <OurServices />
       <ClientTestimonial />
-      <OurEvents />
+      {/* <OurEvents /> */}
+      <WhyChooseUs />
       <LatestNotification />
       <FreeCallBack />
     </div>
@@ -48,6 +47,14 @@ const CDSCOContentRight = () => {
 };
 
 export default CDSCOContentRight;
+
+const WhyChooseUs = () => {
+  return (
+    <div>
+    
+    </div>
+  );
+};
 
 const LatestBlog = () => {
   const blogPosts = [
@@ -85,47 +92,48 @@ const LatestBlog = () => {
           Latest Blogs
         </h1>
       </div>
+      <div className="relative h-[400px] overflow-hidden mt-5">
+        <Marquee vertical className="[--duration:10s]">
+          {blogPosts.map((post, index) => (
+            <div key={index} className="mb-5">
+              <div className=" group flex gap-4  transition-all duration-300">
+                <img
+                  src={post.image || "/placeholder.svg"}
+                  alt="Post Image"
+                  className="h-20 w-20 object-cover shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105 "
+                />
 
-      <div className="mt-5 space-y-5">
-        {blogPosts.map((post, index) => (
-          <div key={index}>
-            <div className=" group flex gap-4  transition-all duration-300">
-              <img
-                src={post.image || "/placeholder.svg"}
-                alt="Post Image"
-                className="h-20 w-20 object-cover shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105 "
-              />
-
-              <div className=" h-20 w-20 flex flex-1 flex-col justify-between">
-                <div className="space-y-2">
-                  <Badge
-                    variant="outline"
-                    className=" bg-emerald-50 font-geist text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
-                  >
-                    {post.category}
-                  </Badge>
-                  <p className="line-clamp-2 font-geist text-sm font-normal text-zinc-900">
-                    {post.title}
-                  </p>
-
-                  <Link to={post.url}>
-                    <Button
-                      variant="link"
-                      className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
+                <div className=" h-20 w-20 flex flex-1 flex-col justify-between">
+                  <div className="space-y-2">
+                    <Badge
+                      variant="outline"
+                      className=" bg-emerald-50 font-geist text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
                     >
-                      Read More
-                      <ArrowRightIcon className="-ml-1 mt-0.5" />
-                    </Button>
-                  </Link>
+                      {post.category}
+                    </Badge>
+                    <p className="line-clamp-2 font-geist text-sm font-normal text-zinc-900">
+                      {post.title}
+                    </p>
+
+                    <Link to={post.url}>
+                      <Button
+                        variant="link"
+                        className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
+                      >
+                        Read More
+                        <ArrowRightIcon className="-ml-1 mt-0.5" />
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {index < blogPosts.length - 1 && (
-              <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
-            )}
-          </div>
-        ))}
+              {index < blogPosts.length - 1 && (
+                <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
+              )}
+            </div>
+          ))}
+        </Marquee>
       </div>
     </div>
   );
@@ -135,31 +143,59 @@ const OurServices = () => {
   const services = [
     {
       image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d",
-      title: "BIS & ISI Mark Certification",
+      title: "BIS Mark (ISI License) for Foreign Manufacture",
       description:
-        "Complete assistance for BIS Registration and ISI Mark certification for both Indian and Foreign manufacturers",
+        "Expert assistance for obtaining BIS Mark (ISI License) for foreign manufacturers, ensuring compliance with Indian standards.",
       link: "/services/bis-mark-foreign"
     },
     {
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
-      title: "CDSCO Registration",
-      description:
-        "Expert consultation for CDSCO Registration certification for medical devices and pharmaceuticals",
-      link: "/services/cdsco-registration-certification"
-    },
-    {
       image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
-      title: "EPR & PWM Certification",
+      title: "BIS Registration Certificate",
       description:
-        "Comprehensive support for EPR Certificate and Plastic Waste Management compliance",
-      link: "/services/epr-registration"
+        "Comprehensive support for BIS Registration Certificate for electronic and IT products as per Indian regulations.",
+      link: "/services/bis-certification"
     },
     {
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
-      title: "LMPC & BIS CRS",
+      title: "ISI MARK (BIS) for Indian Manufactures",
       description:
-        "Professional guidance for LMPC Certificate and BIS CRS Registration processes",
+        "Guidance for Indian manufacturers to obtain ISI Mark (BIS) certification for various products.",
+      link: "/services/isi-mark-indian"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b",
+      title: "BIS (CRS) Registration",
+      description:
+        "Professional help for BIS (CRS) Registration for electronic and IT goods under Compulsory Registration Scheme.",
+      link: "/services/crs-registration"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
+      title: "EPR Certificate Consultants",
+      description:
+        "Consultancy for EPR (Extended Producer Responsibility) Certificate for e-waste, plastic waste, and battery waste management.",
+      link: "/services/epr-registration"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+      title: "LMPC Certificate Consultants",
+      description:
+        "Expert guidance for obtaining LMPC (Legal Metrology Packaged Commodities) Certificate for importers and manufacturers.",
       link: "/services/lmpc-registration"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
+      title: "CDSCO Registration Certification",
+      description:
+        "Specialized consultation for CDSCO Registration Certification for medical devices and pharmaceuticals.",
+      link: "/services/cdsco-registration-certification"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
+      title: "Plastic Waste Management",
+      description:
+        "Support for compliance and certification in Plastic Waste Management as per Indian environmental regulations.",
+      link: "/services/plastic-waste"
     },
   ];
   return (
@@ -221,6 +257,34 @@ const ClientTestimonial = () => {
       content:
         "The service provided was exceptional. The team's expertise in CDSCO registration made the entire process smooth and hassle-free.",
     },
+    {
+      name: "Amit Verma",
+      role: "Regulatory Manager, MedEquip",
+      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      content:
+        "Prompt, professional, and knowledgeable. Highly recommend for anyone needing regulatory support in India.",
+    },
+    {
+      name: "Priya Singh",
+      role: "Director, PharmaPlus",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      content:
+        "Their guidance on BIS and CDSCO compliance saved us a lot of time and effort. Excellent team!",
+    },
+    {
+      name: "John Lee",
+      role: "COO, HealthFirst",
+      avatar: "https://randomuser.me/api/portraits/men/65.jpg",
+      content:
+        "Very responsive and detail-oriented. We felt supported at every step of the certification process.",
+    },
+    {
+      name: "Meera Patel",
+      role: "Quality Lead, BioGenix",
+      avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+      content:
+        "A reliable partner for regulatory affairs. Their expertise in Indian regulations is unmatched.",
+    },
   ];
   return (
     <div className="w-full md:w-[360px] rounded-lg overflow-hidden bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
@@ -231,53 +295,35 @@ const ClientTestimonial = () => {
             Client Testimonials
           </h1>
         </div>
-        <div className="mt-8 mb-5 rounded-lg">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="group">
-              <div className="flex items-start gap-4 ">
-                <img
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-14 h-14 rounded-full object-cover ring-2 ring-gray-100"
-                />
+        <div className="mt-8 mb-5 rounded-lg h-60 overflow-hidden">
+          <Marquee vertical repeat={2} className="[--duration:18s]">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="group mb-8">
+                <div className="flex items-start gap-4 ">
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    className="w-14 h-14 rounded-full object-cover ring-2 ring-gray-100"
+                  />
 
-                <div className="flex-1">
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-geist font-medium text-gray-900">
-                      {testimonial.name}
-                    </h3>
-                    <span className="text-sm text-gray-500">•</span>
-                    <p className="text-sm text-gray-500 font-geist">
-                      {testimonial.role}
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-geist font-medium text-gray-900">
+                        {testimonial.name}
+                      </h3>
+                      <span className="text-sm text-gray-500">•</span>
+                      <p className="text-sm text-gray-500 font-geist">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                    <p className="mt-2 italic text-gray-600 font-geist text-sm leading-relaxed">
+                      &ldquo;{testimonial.content}&rdquo;
                     </p>
                   </div>
-                  <p className="mt-2 italic text-gray-600 font-geist text-sm leading-relaxed">
-                    " {testimonial.content} "
-                  </p>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="flex items-center justify-between px-6 py-3 bg-gray-200 border-t border-gray-300">
-        <div className="flex space-x-1.5">
-          {[...Array(3)].map((_, i) => (
-            <button
-              key={i}
-              className={`transition-all duration-300 ease-in-out rounded-full w-6 h-1.5 ${
-                i === 0 ? "bg-[#212126]" : "bg-gray-200"
-              }`}
-            />
-          ))}
-        </div>
-        <div className="flex space-x-2">
-          <button className="h-8 w-8 rounded-full flex items-center justify-center bg-white border border-gray-200 hover:bg-gray-100 transition-colors">
-            <ChevronLeft className="h-4 w-4" />
-          </button>
-          <button className="h-8 w-8 rounded-full flex items-center justify-center bg-white border border-gray-200 hover:bg-gray-100 transition-colors">
-            <ChevronRight className="h-4 w-4" />
-          </button>
+            ))}
+          </Marquee>
         </div>
       </div>
     </div>

@@ -577,6 +577,23 @@ const BISFMContentLeft = () => {
   return (
     <article className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
+        <section className="flex flex-col gap-2 md:gap-4 mb-6" aria-label="BIS Certificate for Foreign Manufacturers">
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+            BIS Certificate for Foreign or Overseas Manufacturers under BIS FMCS Scheme
+          </h2>
+          <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2 md:mt-3">
+            <span className="font-semibold text-[#1A8781]">Foreign Manufacturer Certification Scheme (FMCS)</span> refers to the scheme of BIS in which product certification for ISI mark is granted for all the foreign manufacturers who want to export their products to India. This scheme was started by the Bureau of Indian Standards in 2000 and till date there are <span className="font-semibold">1,650+ licensees</span> under FMCS certification under various Indian Standards. The department concerned for FMCS is <span className="font-semibold">Foreign Manufacturer Certification Department (FMCD)</span> and is present at the headquarters of BIS in New Delhi.
+          </p>
+          <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2">
+            Foreign manufacturers can take FMCS certification for the products falling under mandatory or voluntary scheme as applicable. As on date, over <span className="font-semibold">600+ products</span> fall under the mandatory list and <span className="font-semibold">20,000+ products</span> under the voluntary list. Once the certification is obtained by the manufacturer, they have to mention their licence number (or <span className="font-semibold">CM/L No:</span>) along with other standard details as mentioned in the Indian standard.
+          </p>
+          <div className="bg-[#F9F7F2] border-l-4 border-[#1A8781] p-4 mt-2 md:mt-4 rounded-md shadow-sm">
+            <h4 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] mb-1">Is obtaining an ISI mark for Indian importers mandatory?</h4>
+            <p className="font-geist text-[16px] md:text-[20px] text-[#42434d]">
+              For the products falling under the mandatory list, FMCS BIS certification is mandatory. The list of mandatory products can be accessed on this <a href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/" target="_blank" rel="noopener noreferrer" className="text-[#125E5A] underline hover:text-[#1A8781] transition-colors">link</a>.
+            </p>
+          </div>
+        </section>
         <NominationSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <DocumentsSection />
@@ -721,7 +738,7 @@ const DocumentsSection = () => {
           <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
             Phone
           </span>
-          +91-9315973373 , +91-7303745057
+          +91-9315973373 , +91-8010505057
         </div>
       </div>
     </section>
@@ -789,7 +806,7 @@ const ProcessSection = () => {
 
         <div className="mt-[12px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
           <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-            IMP
+            IMPORTANT
           </span>
           The BIS license legibly and clearly marks the scope in the license,
           mentioning the products on which you can mention the license number,
@@ -1009,11 +1026,11 @@ const PointsList = ({ points, heading }) => {
       </h3>
       <ul className="flex flex-col mt-[16px] md:mt-[24px] gap-2" role="list">
         {points.map((point, index) => (
-          <li key={index} className="flex items-center gap-2" role="listitem">
+          <li key={index} className="flex items-start gap-2" role="listitem">
             <div className="bg-green-500/10 p-2 rounded-full" aria-hidden="true">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
               {point}
             </p>
           </li>
@@ -1031,11 +1048,11 @@ const PointsListTwo = ({ points, heading }) => {
       </h3>
       <ul className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
         {points.map((point, index) => (
-          <li key={index} className="flex items-center gap-2">
+          <li key={index} className="flex items-start gap-2">
             <div className="bg-green-500/10 p-2 rounded-full">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
               {point}
             </p>
           </li>
