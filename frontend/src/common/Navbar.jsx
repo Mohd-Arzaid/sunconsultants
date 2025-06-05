@@ -42,29 +42,27 @@ import { useRef, useState, useEffect } from "react";
 
 export const categories = [
   {
-    name: "CDSCO Registration",
-    link: "/cdsco-registration-certification",
-    icon: <FileWarning className="w-4 h-4 mr-2" />,
-  },
-  {
     name: "BIS Mark (Foreign)",
     link: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
     icon: <CheckCircle className="w-4 h-4 mr-2" />,
   },
+  
   {
     name: "ISI Mark (Indian)",
     link: "/a-guide-to-bis-certification-indian-bis",
     icon: <Award className="w-4 h-4 mr-2" />,
   },
+
   {
-    name: "EPR Registration",
-    link: "/a-guide-on-how-to-obtain-epr-certificate",
-    icon: <Recycle className="w-4 h-4 mr-2" />,
+    name: "BIS Certification",
+    link: "/what-is-bis-certificate-indian-bis",
+    icon: <CheckCircle className="w-4 h-4 mr-2" />,
   },
+
   {
-    name: "Battery Waste",
-    link: "/epr-certificate-for-battery-waste-management-bwm",
-    icon: <Battery className="w-4 h-4 mr-2" />,
+    name: "CDSCO Registration",
+    link: "/cdsco-registration-certification",
+    icon: <FileWarning className="w-4 h-4 mr-2" />,
   },
   {
     name: "LMPC Registration",
@@ -72,39 +70,54 @@ export const categories = [
     icon: <BookText className="w-4 h-4 mr-2" />,
   },
   {
-    name: "Plastic Waste",
-    link: "/epr-certificate-for-plastic-waste-management-pwm",
-    icon: <Recycle className="w-4 h-4 mr-2" />,
-  },
-  {
     name: "Legal Metrology",
     link: "/what-is-legal-metrology-or-lmpc-certificate",
     icon: <Scale className="w-4 h-4 mr-2" />,
   },
-  {
-    name: "BIS Certification",
-    link: "/what-is-bis-certificate-indian-bis",
-    icon: <CheckCircle className="w-4 h-4 mr-2" />,
-  },
+
   {
     name: "CRS Registration",
     link: "/what-is-crs-bis-or-crs-registration",
     icon: <ShieldCheck className="w-4 h-4 mr-2" />,
   },
+
+  {
+    name: "EPR Registration",
+    link: "/a-guide-on-how-to-obtain-epr-certificate",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "Plastic Waste",
+    link: "/epr-certificate-for-plastic-waste-management-pwm",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
+
+
+
+  {
+    name: "Battery Waste",
+    link: "/epr-certificate-for-battery-waste-management-bwm",
+    icon: <Battery className="w-4 h-4 mr-2" />,
+  },
+
+
+
+
   {
     name: "PESO",
     link: "/information-about-peso-certification-peso-license-india",
     icon: <Flame className="w-4 h-4 mr-2" />,
   },
   {
-    name: "TEC",
-    link: "/information-about-tec-certificate-mtcte",
-    icon: <Radio className="w-4 h-4 mr-2" />,
-  },
-  {
     name: "WPC",
     link: "/information-about-wpc-certificate-eta-approval",
     icon: <Wifi className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "CE Certification",
+    link: "/ce-certification",
+    icon: <ShieldCheck className="w-4 h-4 mr-2" />,
   },
   {
     name: "ROHS",
@@ -112,20 +125,25 @@ export const categories = [
     icon: <Radiation className="w-4 h-4 mr-2" />,
   },
   {
-    name: "BEE",
-    link: "/bee-certification",
-    icon: <Zap className="w-4 h-4 mr-2" />,
-  },
-  {
-    name: "CE Certification",
-    link: "/ce-certification",
-    icon: <ShieldCheck className="w-4 h-4 mr-2" />,
-  },
-  {
     name: "EMI/EMC",
     link: "/emi-emc-certification",
     icon: <Cpu className="w-4 h-4 mr-2" />,
   },
+  
+  {
+    name: "TEC",
+    link: "/information-about-tec-certificate-mtcte",
+    icon: <Radio className="w-4 h-4 mr-2" />,
+  },
+
+
+  {
+    name: "BEE",
+    link: "/bee-certification",
+    icon: <Zap className="w-4 h-4 mr-2" />,
+  },
+
+
   {
     name: "CB Certification",
     link: "/cb-certification",
