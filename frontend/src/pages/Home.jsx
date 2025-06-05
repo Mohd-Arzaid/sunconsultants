@@ -223,38 +223,43 @@ const Home = () => {
         <Services />
       </section>
 
+      <section aria-label="Countries We Serve" className="w-full">
+        <AuditsMarquee />
+      </section>
+
       <section aria-label="Contact Form" className="w-full">
         <Contact />
+      </section>
+
+      <section aria-label="Countries We Serve" className="w-full">
+        <WebinarSeminarMarquee />
       </section>
 
       <section aria-label="Latest News" className="w-full">
         <LatestNews />
       </section>
 
+      <section aria-label="Countries We Serve" className="w-full">
+        <Countries />
+      </section>
+
+
       <section aria-label="What Our Customers Say" className="w-full">
         <WhatsOurCustomersSaySection />
       </section>
 
-      {/* <section aria-label="Client Testimonials" className="w-full">
-        <Client />
-      </section> */}
+
 
       <section aria-label="Partner Logos" className="w-full">
         <LogoTicker />
       </section>
 
-      <section aria-label="Countries We Serve" className="w-full">
-        <Countries />
-      </section>
-
-      <section aria-label="Countries We Serve" className="w-full">
-        <AuditsMarquee />
-      </section>
 
 
-      {/* <section aria-label="Subscribe Our Channel" className="w-full">
-        <SubscribeOurChannel />
-      </section> */}
+
+
+
+  
 
       <Footer />
     </main>
@@ -262,6 +267,86 @@ const Home = () => {
 };
 
 export default Home;
+
+const WebinarSeminarMarquee = () => {
+  // Gallery images from InternationalAudits.jsx
+  const galleryImages = [
+    {
+      id: 1,
+      image:
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+      title: "Medical Chennai 2023",
+    },
+    {
+      id: 2,
+      image:
+        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+      title: "Medical Kolkata 2022",
+    },
+    {
+      id: 3,
+      image:
+        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+      title: "Narela Association Seminar Footwear",
+    },
+    {
+      id: 4,
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
+      title: "Delhi Footwear Exhibition Audits",
+    },
+    {
+      id: 5,
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
+      title: "Karol Bagh Association Footwear Seminar",
+    },
+    {
+      id: 6,
+      image:
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+      title: "Medical 2023",
+    },
+  ];
+
+  return (
+    <div className="bg-white pt-8 pb-2">
+    <div className="max-w-[88rem] mx-auto px-4">
+      <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+        Webinar And Seminar Glimpse
+      </h2>
+      {/* Marquee for desktop, scroll for mobile */}
+      <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
+          {galleryImages.map((item) => (
+            <div
+              key={item.id}
+              className="relative min-w-[340px] max-w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
+              style={{
+                boxShadow:
+                  "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
+              }}
+            >
+              <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+                {/* Gradient overlay for title */}
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
+                  <span className="w-full text-center px-4 pb-3 text-lg md:text-2xl font-bold font-playfair text-white drop-shadow-lg tracking-wide">
+                    {item.title}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Marquee>
+      </div>
+    </div>
+  </div>
+  );
+};
 
 
 const AuditsMarquee = () => {
@@ -304,14 +389,14 @@ const AuditsMarquee = () => {
   ];
 
   return (
-    <div className="bg-white py-14">
+    <div className="bg-white pt-8">
     <div className="max-w-[88rem] mx-auto px-4">
       <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
         International Audit Glimpse
       </h2>
       {/* Marquee for desktop, scroll for mobile */}
       <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <Marquee className="flex  items-center py-6 [--duration:30s]">
+        <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
           {galleryImages.map((item) => (
             <div
               key={item.id}
@@ -637,7 +722,7 @@ const LogoTicker = () => {
 // Services
 const Services = () => {
   return (
-    <div className="pt-10 md:pt-12 pb-12  md:pb-16 bg-white overflow-x-hidden ">
+    <div className="pt-10 md:pt-12 pb-12  md:pb-8 bg-white overflow-x-hidden ">
       <div className="max-w-[84rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -951,7 +1036,7 @@ const Contact = () => {
 
   return (
     // <div className=" pt-8 md:pt-12 pb-8 md:pb-16 custom-radial-gradient overflow-x-hidden ">
-    <div className=" pt-8 md:pt-12 pb-8 md:pb-16 overflow-x-hidden ">
+    <div className=" pt-8 md:pt-8 pb-8 md:pb-8 overflow-x-hidden ">
       <div className="max-w-[88rem] px-4 md:px-8 w-full flex flex-col md:flex-row  items-center justify-between mx-auto">
         <div className="w-full md:w-1/2">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1126,7 +1211,7 @@ const LatestNews = () => {
   }, []);
 
   return (
-    <div className="h-20 md:h-28 bg-[#B9DEEB]">
+    <div className="h-20 md:h-28 border-2 my-8 bg-[#B9DEEB]">
       <div className="max-w-[84rem] mx-auto h-full flex justify-between items-center px-4 md:px-0">
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-[20px] md:text-[35px] font-bold font-roboto text-center">
@@ -1205,177 +1290,6 @@ const LatestNews = () => {
   );
 };
 
-// Client
-const Client = () => {
-  const slideData = [
-    {
-      image: TestimonialImage,
-      name: "Priya Sharma",
-      designation: "Web Designer",
-      description:
-        "Working with this certification consultancy was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
-    },
-    {
-      image: TestimonialImageSecond,
-      name: "Rajeev Kumar",
-      designation: "Web Developer",
-      description:
-        "Outstanding support for our EPR certification process. The team's in-depth knowledge and prompt responses made the entire certification journey smooth. They truly understand both Indian and international compliance requirements.",
-    },
-    {
-      image: TestimonialImageThree,
-      name: "Ragini Singh",
-      designation: "App Developer",
-      description:
-        "Their expertise in LMPC certification was invaluable for our product launch in India. The consultants provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      name: "Uday Chaudhary",
-      designation: "Marketing Manager",
-      description:
-        "Their comprehensive support for our BIS certification was crucial for entering the Indian market. The team's detailed analysis and strategic guidance ensured we met all necessary standards without delays.",
-    },
-  ];
-
-  const [current, setCurrent] = useState(0);
-
-  const handlePreviousClick = () => {
-    const previous = current - 1;
-    setCurrent(previous < 0 ? slideData.length - 1 : previous);
-  };
-
-  const handleNextClick = () => {
-    const next = current + 1;
-    setCurrent(next === slideData.length ? 0 : next);
-  };
-
-  return (
-    <div className=" pt-5 md:pt-10 pb-8 custom-radial-gradient overflow-x-hidden ">
-      <div className="max-w-[88rem] px-4 md:px-8 w-full mx-auto overflow-hidden relative">
-        <div className="flex flex-col items-center justify-center">
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-roboto  text-center text-[#1E1E1E] ">
-              Our Clients
-            </h2>
-          </BoxReveal>
-
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                What our clients have to say
-              </span>
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-            </div>
-          </BoxReveal>
-        </div>
-
-        {/* Mobile Testimonials */}
-        <div className="md:hidden mt-8">
-          <div className="relative shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-[#B5DDEB] rounded-[30px] p-6 ">
-            <div className="flex flex-col items-center gap-4">
-              <img
-                src={slideData[current].image}
-                className="rounded-full w-24 h-24 object-cover border-4 border-white"
-                alt="Testimonial"
-                loading="lazy"
-              />
-              <div className="flex flex-col items-center justify-center text-center">
-                <div className="text-xl font-semibold font-roboto text-black tracking-wide">
-                  {slideData[current].name}
-                </div>
-                <span className="text-base font-roboto text-[#181040] tracking-wide">
-                  {slideData[current].designation}
-                </span>
-              </div>
-              <p className="text-base font-poppins text-[#5a4a4a] text-center ">
-                {slideData[current].description}
-              </p>
-            </div>
-            <div className="absolute top-4 right-4">
-              <img
-                src={Vector}
-                alt="Vector"
-                className="w-10 h-10 opacity-50"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Testimonials */}
-        <div className="hidden md:flex w-full flex items-center justify-between mt-10  ">
-          {[-1, 0, 1].map((offset) => {
-            const index =
-              (current + offset + slideData.length) % slideData.length;
-            const slide = slideData[index];
-
-            return (
-              <div
-                key={index}
-                className="relative shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-[#B5DDEB] flex gap-7 rounded-[47px] p-8 transition-all duration-300 ease-in-out"
-                style={{
-                  opacity: offset === 0 ? 1 : 0.7,
-                  transform: `scale(${offset === 0 ? 1 : 0.9})`,
-                }}
-              >
-                <div className="flex flex-col items-center justify-center gap-3">
-                  <img
-                    src={slide.image}
-                    className="rounded-[52px] w-[235px] h-[284.58px] object-cover"
-                    alt="Testimonial"
-                    loading="lazy"
-                  />
-
-                  <div className="flex flex-col items-center justify-center">
-                    <div className="text-[27px] font-semibold font-roboto text-black tracking-wide">
-                      {slide.name}
-                    </div>
-                    <span className="text-[18px] font-roboto text-black tracking-wide text-[#181040]">
-                      {slide.designation}
-                    </span>
-                  </div>
-                </div>
-
-                {offset === 0 && (
-                  <>
-                    <div className="py-2 text-[19px] font-poppins text-[#785F5F] text-left max-w-xs">
-                      {slide.description}
-                    </div>
-
-                    <div className="absolute inset-0  translate-x-[480px] translate-y-[300px] ">
-                      <img src={Vector} alt="Vector" loading="lazy" />
-                    </div>
-                  </>
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="flex items-center justify-center gap-4 my-5">
-          {/* Previous Button */}
-          <button
-            className="w-10 h-10 flex items-center justify-center bg-neutral-300  rounded-full hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200"
-            onClick={handlePreviousClick}
-          >
-            <IconArrowNarrowRight className="text-neutral-700  rotate-180" />
-          </button>
-
-          {/* Next Button */}
-          <button
-            className="w-10 h-10 flex items-center justify-center bg-neutral-300 rounded-full hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200"
-            onClick={handleNextClick}
-          >
-            <IconArrowNarrowRight className="text-neutral-700 " />
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 // Countries
 const Countries = () => {
@@ -1457,7 +1371,7 @@ const Countries = () => {
             </BoxReveal>
           </div>
 
-          <div className="w-full px-0 md:px-[22px] py-3 md:py-20 overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
+          <div className="w-full px-0 md:px-[22px] py-3 md:pt-14 md:pb-10  overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
             <div className=" flex gap-4 md:gap-[22px] w-max ">
               {/* Mobile */}
               {countriesData.map((country, index) => (
@@ -1610,7 +1524,7 @@ const WhatsOurCustomersSaySection = () => {
   ];
 
   return (
-    <div className="bg-white pt-10 pb-8 ">
+    <div className="bg-white pt-5  pb-8 ">
       {/* <div className="custom-radial-gradient pt-10 pb-8 "> */}
       <div className="max-w-[88rem] px-8 w-full mx-auto ">
         <div className="flex flex-col items-center justify-center">
@@ -1634,7 +1548,7 @@ const WhatsOurCustomersSaySection = () => {
         {/* Testimonials Scroll Container */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <motion.div
-            className="flex gap-8 md:gap-6 pt-10 pb-16"
+            className="flex gap-8 md:gap-6 pt-10 pb-12"
             animate={{
               x: ["0%", "-100%"],
             }}
