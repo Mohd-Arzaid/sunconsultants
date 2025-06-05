@@ -55,6 +55,9 @@ import { IconArrowNarrowRight } from "@tabler/icons-react";
 // Countries Import
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
+// Certification Import 
+import CertificationImage from "../assets/images/certone.jpg";
+
 import Thailand from "../assets/images/Thailand.png";
 import Vietnam from "../assets/images/Vietnam.png";
 import Canada from "../assets/images/Canada.png";
@@ -274,35 +277,35 @@ const CertificationAndAchievements = () => {
     {
       id: 1,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+      CertificationImage,
       title: "Medical Chennai 2023",
     },
     {
       id: 2,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+      CertificationImage,
       title: "Medical Kolkata 2022",
     },
     {
       id: 3,
       image:
-        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+      CertificationImage,
       title: "Narela Association Seminar Footwear",
     },
     {
       id: 4,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
+      image: CertificationImage,
       title: "Delhi Footwear Exhibition Audits",
     },
     {
       id: 5,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
+      image: CertificationImage,
       title: "Karol Bagh Association Footwear Seminar",
     },
     {
       id: 6,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+      CertificationImage,
       title: "Medical 2023",
     },
   ];
@@ -315,17 +318,17 @@ const CertificationAndAchievements = () => {
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
+          <Marquee className="flex items-center pb-8 [--duration:30s]">
             {galleryImages.map((item) => (
               <div
                 key={item.id}
-                className="relative min-w-[340px] max-w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
+                className="relative min-w-[200px] max-w-[220px] bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
                 style={{
                   boxShadow:
                     "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
                 }}
               >
-                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
+                <div className="relative w-full h-[140px] md:h-[160px] overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
@@ -333,11 +336,11 @@ const CertificationAndAchievements = () => {
                     loading="lazy"
                   />
                   {/* Gradient overlay for title */}
-                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
-                    <span className="w-full text-center px-4 pb-3 text-lg md:text-2xl font-bold font-playfair text-white drop-shadow-lg tracking-wide">
+                  {/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
+                    <span className="w-full text-center px-2 pb-2 text-sm md:text-base font-bold font-playfair text-white drop-shadow-lg tracking-wide">
                       {item.title}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
@@ -347,6 +350,9 @@ const CertificationAndAchievements = () => {
     </div>
   );
 };
+
+
+
 const VideoSection = () => {
   const videos = [
     {
