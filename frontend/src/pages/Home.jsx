@@ -57,6 +57,8 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 // Certification Import 
 import CertificationImage from "../assets/images/certone.jpg";
+import CertificationImageTwo from "../assets/images/certtwo.jpg";
+
 
 import Thailand from "../assets/images/Thailand.png";
 import Vietnam from "../assets/images/Vietnam.png";
@@ -283,7 +285,7 @@ const CertificationAndAchievements = () => {
     {
       id: 2,
       image:
-      CertificationImage,
+      CertificationImageTwo,
       title: "Medical Kolkata 2022",
     },
     {
@@ -294,7 +296,7 @@ const CertificationAndAchievements = () => {
     },
     {
       id: 4,
-      image: CertificationImage,
+      image: CertificationImageTwo,
       title: "Delhi Footwear Exhibition Audits",
     },
     {
@@ -305,7 +307,7 @@ const CertificationAndAchievements = () => {
     {
       id: 6,
       image:
-      CertificationImage,
+      CertificationImageTwo,
       title: "Medical 2023",
     },
   ];
