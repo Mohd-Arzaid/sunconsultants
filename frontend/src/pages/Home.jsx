@@ -243,23 +243,17 @@ const Home = () => {
         <Countries />
       </section>
 
-
       <section aria-label="What Our Customers Say" className="w-full">
         <WhatsOurCustomersSaySection />
       </section>
-
-
 
       <section aria-label="Partner Logos" className="w-full">
         <LogoTicker />
       </section>
 
-
-
-
-
-
-  
+      <section aria-label="Partner Logos" className="w-full">
+        <VideoSection />
+      </section>
 
       <Footer />
     </main>
@@ -267,6 +261,97 @@ const Home = () => {
 };
 
 export default Home;
+
+const VideoSection = () => {
+  const videos = [
+    {
+      id: 1,
+      embedId: "wcMNd8KWRBc",
+    },
+    {
+      id: 2,
+      embedId: "iafdcHwzojY",
+    },
+    {
+      id: 3,
+      embedId: "iafdcHwzojY",
+    },
+  ];
+
+  return (
+    <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:pt-16 md:pb-2 bg-white">
+      <div className="text-center mb-6 md:mb-8">
+        <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+          Video Showcase
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {videos.map((item) => (
+          <div
+            key={item.id}
+            className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white"
+          >
+            <div
+              className={
+                item.embedUrl
+                  ? "aspect-[9/16] overflow-hidden"
+                  : "aspect-[4/3] overflow-hidden"
+              }
+            >
+              {item.embedUrl ? (
+                <div
+                  style={{
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    position: "relative",
+                  }}
+                >
+                  <iframe
+                    src={item.embedUrl}
+                    style={{
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      position: "absolute",
+                      border: 0,
+                    }}
+                    allowFullScreen
+                    scrolling="no"
+                    allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;"
+                  ></iframe>
+                </div>
+              ) : (
+                <iframe
+                  className="w-full h-full object-cover"
+                  src={`https://www.youtube.com/embed/${item.embedId}?si=bpOWvyUZWKVzkwyz`}
+                  title={item.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              )}
+            </div>
+            {/* Mobile View  */}
+            <div className="block md:hidden p-5 bg-white">
+              <div className="flex items-center mb-1">
+                <h3 className="text-neutral-800 font-inter text-xl leading-tight font-semibold">
+                  {item.title}
+                </h3>
+              </div>
+              <p className="text-neutral-600 font-geist text-sm leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const WebinarSeminarMarquee = () => {
   // Gallery images from InternationalAudits.jsx
@@ -309,45 +394,44 @@ const WebinarSeminarMarquee = () => {
 
   return (
     <div className="bg-white pt-8 pb-2">
-    <div className="max-w-[88rem] mx-auto px-4">
-      <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
-        Webinar And Seminar Glimpse
-      </h2>
-      {/* Marquee for desktop, scroll for mobile */}
-      <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
-          {galleryImages.map((item) => (
-            <div
-              key={item.id}
-              className="relative min-w-[340px] max-w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
-              style={{
-                boxShadow:
-                  "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
-              }}
-            >
-              <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                />
-                {/* Gradient overlay for title */}
-                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
-                  <span className="w-full text-center px-4 pb-3 text-lg md:text-2xl font-bold font-playfair text-white drop-shadow-lg tracking-wide">
-                    {item.title}
-                  </span>
+      <div className="max-w-[88rem] mx-auto px-4">
+        <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+          Webinar And Seminar Glimpse
+        </h2>
+        {/* Marquee for desktop, scroll for mobile */}
+        <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
+            {galleryImages.map((item) => (
+              <div
+                key={item.id}
+                className="relative min-w-[340px] max-w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
+                style={{
+                  boxShadow:
+                    "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
+                }}
+              >
+                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  {/* Gradient overlay for title */}
+                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
+                    <span className="w-full text-center px-4 pb-3 text-lg md:text-2xl font-bold font-playfair text-white drop-shadow-lg tracking-wide">
+                      {item.title}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Marquee>
+            ))}
+          </Marquee>
+        </div>
       </div>
     </div>
-  </div>
   );
 };
-
 
 const AuditsMarquee = () => {
   // Gallery images from InternationalAudits.jsx
@@ -390,42 +474,42 @@ const AuditsMarquee = () => {
 
   return (
     <div className="bg-white pt-8">
-    <div className="max-w-[88rem] mx-auto px-4">
-      <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
-        International Audit Glimpse
-      </h2>
-      {/* Marquee for desktop, scroll for mobile */}
-      <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
-          {galleryImages.map((item) => (
-            <div
-              key={item.id}
-              className="relative min-w-[340px] max-w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
-              style={{
-                boxShadow:
-                  "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
-              }}
-            >
-              <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                />
-                {/* Gradient overlay for title */}
-                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
-                  <span className="w-full text-center px-4 pb-3 text-lg md:text-2xl font-bold font-playfair text-white drop-shadow-lg tracking-wide">
-                    {item.title}
-                  </span>
+      <div className="max-w-[88rem] mx-auto px-4">
+        <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+          International Audit Glimpse
+        </h2>
+        {/* Marquee for desktop, scroll for mobile */}
+        <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
+            {galleryImages.map((item) => (
+              <div
+                key={item.id}
+                className="relative min-w-[340px] max-w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
+                style={{
+                  boxShadow:
+                    "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
+                }}
+              >
+                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  {/* Gradient overlay for title */}
+                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
+                    <span className="w-full text-center px-4 pb-3 text-lg md:text-2xl font-bold font-playfair text-white drop-shadow-lg tracking-wide">
+                      {item.title}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Marquee>
+            ))}
+          </Marquee>
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
@@ -789,9 +873,8 @@ const Services = () => {
             </p>
           </Link>
 
-
- {/* 3 */}
- <Link
+          {/* 3 */}
+          <Link
             to="/services/isi-mark-indian"
             className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
           >
@@ -807,7 +890,6 @@ const Services = () => {
               ISI MARK (BIS) for Indian Manufactures
             </p>
           </Link>
-
 
           {/* 4 */}
 
@@ -827,7 +909,6 @@ const Services = () => {
               BIS (CRS) Registration
             </p>
           </Link>
-         
 
           {/* 5 */}
 
@@ -848,7 +929,6 @@ const Services = () => {
             </p>
           </Link>
 
-       
           {/* 6 */}
           <Link
             to="/services/lmpc-registration"
@@ -904,9 +984,6 @@ const Services = () => {
               Plastic Waste Management
             </p>
           </Link>
-
-
-      
         </div>
       </div>
     </div>
@@ -1042,7 +1119,7 @@ const Contact = () => {
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <div className="hidden md:flex w-full items-center gap-3">
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-              India's most trusted partner for certifications
+                India's most trusted partner for certifications
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -1052,7 +1129,7 @@ const Contact = () => {
             {/* <h2 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
               Contact Us
             </h2> */}
-              <h2 className="text-[25px] uppercase md:text-[36px]  font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
+            <h2 className="text-[25px] uppercase md:text-[36px]  font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
               Contact Us
             </h2>
           </BoxReveal>
@@ -1290,7 +1367,6 @@ const LatestNews = () => {
   );
 };
 
-
 // Countries
 const Countries = () => {
   const [current, setCurrent] = useState(0);
@@ -1335,17 +1411,14 @@ const Countries = () => {
                 {/* <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
                   Countries We Serve Worldwide
                 </h2> */}
-  <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[40px]">
-  Glimpse of the Countries we have Served In
+                <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[40px]">
+                  Glimpse of the Countries we have Served In
                 </h2>
-
-
               </BoxReveal>
 
               <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
                 <p className="font-poppins font-medium text-base md:text-[19px] text-[#008080]">
-                  Delivering
-                  excellence everywhere.
+                  Delivering excellence everywhere.
                 </p>
               </BoxReveal>
             </div>
@@ -1436,7 +1509,7 @@ const Countries = () => {
 };
 
 // Subscribe Our Channel
-// const SubscribeOurChannel = () =>{
+// const SubscribeOurChannel = ()=>{
 //   return(
 //     <div className="">
 
