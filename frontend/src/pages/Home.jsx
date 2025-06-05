@@ -307,7 +307,7 @@ const AuditsMarquee = () => {
     <div className="bg-white py-14">
       <div className="max-w-[88rem] mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
-          International Audit Glimpses
+          International Audit Glimpse
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
