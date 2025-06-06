@@ -1399,15 +1399,17 @@ const LatestNews = () => {
                 damping: 8,
                 stiffness: 100,
               }}
-              key={currentWord}
+              // key={currentWord}
               className="inline-block bg-gradient-to-r from-blue-900 to-purple-900 bg-clip-text text-transparent"
             >
-              {currentWord}
+              {/* {currentWord} */}
+              Updates
             </motion.div>
+            <span className="ml-1">📢</span>
           </h2>
         </div>
 
-        <div className="flex w-[50%] md:w-[82%]">
+        <div className="flex w-[50%] md:w-[77%]">
           <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent_0%,black_15%,black_85%,transparent_100%)]">
             <motion.div
               animate={controls}
