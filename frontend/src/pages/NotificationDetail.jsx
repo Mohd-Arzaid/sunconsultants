@@ -1,4 +1,5 @@
 import {
+  AlignLeft,
   Mail,
   MapPin,
   MessageCircle,
@@ -6,10 +7,14 @@ import {
   PhoneCall,
   SendHorizontal,
   User,
+  ArrowRightIcon,
 } from "lucide-react";
-
+import { Marquee } from "@/components/magicui/marquee";
 import { Button } from "@/components/ui/button";
 import Footer from "@/common/Footer";
+import BlogImageOne from "../assets/images/BlogImageOne.png";
+import { Link } from "react-router-dom";
+import { Badge } from "@/components/ui/badge";
 
 const NotificationDetail = () => {
   return (
@@ -22,11 +27,9 @@ const NotificationDetail = () => {
 
           {/* Right Side */}
           <NotificationDetailRight />
-
-        
         </div>
       </div>
-        <Footer/>
+      <Footer />
     </div>
   );
 };
@@ -139,99 +142,181 @@ const NotificationDetailLeft = () => {
 };
 
 const NotificationDetailRight = () => {
+  const blogPosts = [
+    {
+      image: BlogImageOne,
+      category: "CDSCO",
+      title: "Medical Device QCO Update",
+      url: "/latest-notifications",
+    },
+    {
+      image: "https://images.unsplash.com/photo-1587854680352-936b22b91030",
+      category: "CDSCO",
+      title: "Drug Import Guidelines",
+      url: "/latest-notifications",
+    },
+    {
+      image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88",
+      category: "CDSCO",
+      title: "Quality Standards Revision",
+      url: "/latest-notifications",
+    },
+    {
+      image: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5",
+      category: "CDSCO",
+      title: "Equipment Certification",
+      url: "/latest-notifications",
+    },
+  ];
+
   return (
-    <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-      {/* Header */}
-      <div className="flex gap-2 items-center">
-        <PhoneCall className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold text-[#232327]">
-          Request a Free Callback
-        </h1>
+    <div className="flex flex-col gap-6 w-full md:w-[360px] ">
+      {/* Latest Blog */}
+      <div className="w-full md:w-[360px] p-6 rounded-lg bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+        <div className="flex gap-2 items-center ">
+          <AlignLeft className="text-[#232327]" />
+          <h1 className="text-xl font-geist font-semibold  text-[#232327]">
+            Latest Blogs
+          </h1>
+        </div>
+        <div className="relative h-[400px] overflow-hidden mt-5">
+          <Marquee vertical className="[--duration:10s]">
+            {blogPosts.map((post, index) => (
+              <div key={index} className="mb-5">
+                <div className=" group flex gap-4  transition-all duration-300">
+                  <img
+                    src={post.image || "/placeholder.svg"}
+                    alt="Post Image"
+                    className="h-20 w-20 object-cover shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105 "
+                  />
+
+                  <div className=" h-20 w-20 flex flex-1 flex-col justify-between">
+                    <div className="space-y-2">
+                      <Badge
+                        variant="outline"
+                        className=" bg-emerald-50 font-geist text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
+                      >
+                        {post.category}
+                      </Badge>
+                      <p className="line-clamp-2 font-geist text-sm font-normal text-zinc-900">
+                        {post.title}
+                      </p>
+
+                      <Link to={post.url}>
+                        <Button
+                          variant="link"
+                          className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
+                        >
+                          Read More
+                          <ArrowRightIcon className="-ml-1 mt-0.5" />
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                {index < blogPosts.length - 1 && (
+                  <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
+                )}
+              </div>
+            ))}
+          </Marquee>
+        </div>
       </div>
 
-      {/* Intro Text */}
-      <p className="mt-3 text-sm text-gray-600 font-geist">
-        Leave your details below and our experts will call you back within 24
-        hours to discuss your regulatory compliance needs.
-      </p>
-
-      {/* Form */}
-      <form className="mt-5 space-y-4">
-        {/* Name Field */}
-        <div className="relative">
-          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <User className="h-5 w-5 text-gray-400" />
-          </div>
-          <input
-            type="text"
-            name="fullName"
-            required
-            placeholder="Your Name*"
-            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-          />
+      <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+        {/* Header */}
+        <div className="flex gap-2 items-center">
+          <PhoneCall className="text-[#232327]" />
+          <h1 className="text-xl font-geist font-semibold text-[#232327]">
+            Request a Free Callback
+          </h1>
         </div>
 
-        {/* Phone Field */}
-        <div className="relative">
-          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <Phone className="h-5 w-5 text-gray-400" />
+        {/* Intro Text */}
+        <p className="mt-3 text-sm text-gray-600 font-geist">
+          Leave your details below and our experts will call you back within 24
+          hours to discuss your regulatory compliance needs.
+        </p>
+
+        {/* Form */}
+        <form className="mt-5 space-y-4">
+          {/* Name Field */}
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <User className="h-5 w-5 text-gray-400" />
+            </div>
+            <input
+              type="text"
+              name="fullName"
+              required
+              placeholder="Your Name*"
+              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+            />
           </div>
-          <input
-            type="tel"
-            name="phoneNumber"
-            required
-            placeholder="Phone Number*"
-            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-          />
-        </div>
 
-        {/* Email Field */}
-        <div className="relative">
-          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <Mail className="h-5 w-5 text-gray-400" />
+          {/* Phone Field */}
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <Phone className="h-5 w-5 text-gray-400" />
+            </div>
+            <input
+              type="tel"
+              name="phoneNumber"
+              required
+              placeholder="Phone Number*"
+              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+            />
           </div>
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder="Email Address*"
-            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-          />
-        </div>
 
-        {/* Message Field */}
-        <div className="relative">
-          <div className="absolute top-3 left-3 pointer-events-none">
-            <MessageCircle className="h-5 w-5 text-gray-400" />
+          {/* Email Field */}
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <Mail className="h-5 w-5 text-gray-400" />
+            </div>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Email Address*"
+              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+            />
           </div>
-          <textarea
-            name="message"
-            placeholder="Required Certification*"
-            rows="3"
-            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-          ></textarea>
-        </div>
 
-        <Button
-          type="submit"
-          className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden"
-        >
-          <span className="relative z-10 flex items-center">
-            Request Callback
-            <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </span>
-          <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-        </Button>
-      </form>
+          {/* Message Field */}
+          <div className="relative">
+            <div className="absolute top-3 left-3 pointer-events-none">
+              <MessageCircle className="h-5 w-5 text-gray-400" />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Required Certification*"
+              rows="3"
+              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+            ></textarea>
+          </div>
 
-      {/* Privacy Note */}
-      <p className="mt-3 text-xs text-center text-gray-500 font-geist">
-        By submitting this form, you agree to our{" "}
-        <a href="#" className="text-blue-600 hover:underline">
-          Privacy Policy
-        </a>{" "}
-        and consent to being contacted.
-      </p>
+          <Button
+            type="submit"
+            className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden"
+          >
+            <span className="relative z-10 flex items-center">
+              Request Callback
+              <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </span>
+            <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+          </Button>
+        </form>
+
+        {/* Privacy Note */}
+        <p className="mt-3 text-xs text-center text-gray-500 font-geist">
+          By submitting this form, you agree to our{" "}
+          <a href="#" className="text-blue-600 hover:underline">
+            Privacy Policy
+          </a>{" "}
+          and consent to being contacted.
+        </p>
+      </div>
     </div>
   );
 };
