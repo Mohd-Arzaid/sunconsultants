@@ -609,10 +609,10 @@ const AuditsMarquee = () => {
 
 // Hero Section
 const Hero = () => {
-  const images = [
-    "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    HeroImage
-  ];
+  // const images = [
+  //   "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   HeroImage
+  // ];
 
   return (
     <>
@@ -624,15 +624,15 @@ const Hero = () => {
           <div className="flex flex-col items-start">
             <div className="relative px-8 z-20 ">
               <figure className="m-0">
-                {/* <img
+                <img
                   src={HeroImage}
                   alt="Sun Consultants And Engineers - Professional Certification Services"
                   width="740"
                   height="515"
                   loading="lazy"
                   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover"
-                /> */}
-                <ImagesSlider   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover" images={images}></ImagesSlider>
+                />
+                {/* <ImagesSlider   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover" images={images}></ImagesSlider> */}
               </figure>
               <div className="absolute inset-0 flex items-center justify-center transform translate-x-[575px]">
                 <article className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
