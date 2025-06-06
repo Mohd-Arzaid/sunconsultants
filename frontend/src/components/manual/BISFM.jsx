@@ -16,6 +16,7 @@ import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
+import { BISCProductTable } from "./BISCertification";
 
 export const BISFM = () => {
   return (
@@ -406,6 +407,9 @@ const BISFMContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+
+      <BISCProductTable />
+
       <ServiceFaq />
     </section>
   );
@@ -414,7 +418,7 @@ const BISFMContent = () => {
 // BIS FAQs Section
 const ServiceFaq = () => {
   return (
-    <section id="faqs" className="my-2 bg-gray-50 scroll-mt-20" aria-label="Frequently Asked Questions">
+    <section id="faqs" className="my-2  scroll-mt-20" aria-label="Frequently Asked Questions">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Frequently Asked Questions

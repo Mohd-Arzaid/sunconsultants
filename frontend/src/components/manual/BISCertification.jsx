@@ -537,7 +537,7 @@ const productsData = [
   { id: 400, isNumber: "IS 17266:2019", product: "Viscose Staple Fibres" },
 ];
 
-const BISCProductTable = () => {
+export const BISCProductTable = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 20;

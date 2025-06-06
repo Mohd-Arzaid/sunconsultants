@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
+import { BISCProductTable } from "@/components/manual/BISCertification";
 
 const CRSRegistration = () => {
   return (
@@ -308,6 +309,7 @@ const BISCRSContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+      <BISCProductTable />
       <ServiceFaq />
     </div>
   );
@@ -315,7 +317,7 @@ const BISCRSContent = () => {
 
 const ServiceFaq = () => {
   return (
-    <div id="faqs" className="my-2 bg-gray-50 scroll-mt-20">
+    <div id="faqs" className="my-2 scroll-mt-20">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Frequently Asked Questions
