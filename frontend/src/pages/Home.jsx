@@ -39,6 +39,8 @@ import { Button } from "@/components/ui/button";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import { toast } from "@/hooks/use-toast";
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 // Latest New Import
@@ -1119,6 +1121,14 @@ const Contact = () => {
     }));
   };
 
+  // Handle phone input change
+  const handlePhoneChange = (value) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      phoneNumber: value,
+    }));
+  };
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -1156,14 +1166,12 @@ const Contact = () => {
       return;
     }
 
-    // Phone number validation
-    const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
-    if (!phoneRegex.test(phoneNumber)) {
-      // toast.error("Please Enter a Valid Phone number (8-15 digits)");
+    // Phone number validation - simplified since react-phone-input-2 handles formatting
+    if (!phoneNumber || phoneNumber.length < 8) {
       toast({
         variant: "destructive",
         title: "Please Enter a Valid Phone Number",
-        description: "Phone Number Should be (8-15 digits)",
+        description: "Phone Number is required",
       });
       setLoading(false);
       return;
@@ -1266,32 +1274,98 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
               name="email"
               value={email}
               onChange={handleOnChange}
-              //           className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px]
-              //       focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
-              // text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold            placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
-
               className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
     focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
 text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Email Address *"
             />
 
-            <Input
-              disabled={loading}
-              required
-              type="tel"
-              name="phoneNumber"
-              value={phoneNumber}
-              onChange={handleOnChange}
-              //             className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px]
-              //         focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
-              //  text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold             placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
-
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
-  focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
-text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
-              placeholder="Phone Number *"
-            />
+            <div className="w-full md:w-[600px]">
+              <style dangerouslySetInnerHTML={{ __html: `
+                .react-tel-input .form-control {
+                  width: 100%;
+                  height: 56px;
+                  font-size: 17px;
+                  border-radius: 12px;
+                  border: 1px solid rgba(59, 130, 246, 0.4);
+                  font-family: 'Poppins', sans-serif;
+                  color: #7E7E7E;
+                  font-weight: 600;
+                  padding-left: 60px !important;
+                }
+                
+                @media (min-width: 768px) {
+                  .react-tel-input .form-control {
+                    height: 72px;
+                    font-size: 20px;
+                    border-radius: 15px;
+                  }
+                }
+                
+                .react-tel-input .flag-dropdown {
+                  background-color: transparent;
+                  border: 1px solid rgba(59, 130, 246, 0.4);
+                  border-right: none;
+                  border-top-left-radius: 12px;
+                  border-bottom-left-radius: 12px;
+                }
+                
+                @media (min-width: 768px) {
+                  .react-tel-input .flag-dropdown {
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                  }
+                }
+                
+                .react-tel-input .selected-flag {
+                  padding: 0 16px 0 16px;
+                  height: 54px;
+                  background-color: transparent;
+                }
+                
+                @media (min-width: 768px) {
+                  .react-tel-input .selected-flag {
+                    height: 70px;
+                  }
+                }
+                
+                .react-tel-input .country-list {
+                  border-radius: 8px;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                  border: 1px solid rgba(59, 130, 246, 0.4);
+                  margin-top: 6px;
+                }
+                
+                .react-tel-input .country-list .search-box {
+                  margin: 10px;
+                }
+                
+                .react-tel-input .country-list .search-box input {
+                  border-radius: 6px;
+                  border: 1px solid rgba(59, 130, 246, 0.4);
+                  font-family: 'Poppins', sans-serif;
+                  padding: 8px;
+                }
+                
+                .react-tel-input .country-list .country.highlight,
+                .react-tel-input .country-list .country:hover {
+                  background-color: rgba(59, 130, 246, 0.1);
+                }
+              `}} />
+              <PhoneInput
+                country={'in'}
+                value={phoneNumber}
+                onChange={handlePhoneChange}
+                inputProps={{
+                  name: 'phoneNumber',
+                  required: true,
+                  disabled: loading,
+                  placeholder: "Phone Number *",
+                }}
+                enableSearch={true}
+                disableSearchIcon={false}
+              />
+            </div>
 
             <Input
               disabled={loading}

@@ -740,7 +740,7 @@ const BISFMHero = () => {
   
         {/* Description */}
         <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-          BIS Certification Documents | Sun Consultants & Engineers
+          BIS Certification Documents | Sun Certifications And Engineers
         </p>
   
         {/* Eligibility Content */}
@@ -776,7 +776,7 @@ const BISFMHero = () => {
           <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             All of the above documents are required in certain formats given by
             BIS which are to be submitted during the application. As FMCS
-            consultants, we at Sun Consultants and Engineers are experts for
+            consultants, we at Sun Certifications And Engineers are experts for
             preparation of all the documents above in formats prescribed by BIS,
             contact us for more details at
             <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
@@ -1028,19 +1028,19 @@ const BISFMHero = () => {
   
         {/* Title */}
         <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-          Role of Sun Consultants & Engineers?
+          Role of Sun Certifications And Engineers?
         </h3>
   
         {/* Description */}
         <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-          Sun Consultants & Engineers ensure hassle-free BIS FMCS licensing
+          Sun Certifications And Engineers ensure hassle-free BIS FMCS licensing
         </p>
   
         <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
           From collection of documents to getting the final license, it is a
           exhaustive and tedious procedure, and requires technical know-how and
           experience. Being a FMCS Consultant, this is exactly where Sun
-          Consultants and Engineers come into the picture.
+          Certifications And Engineers come into the picture.
         </div>
   
         <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
@@ -1063,7 +1063,7 @@ const BISFMHero = () => {
               "Technical assistance for the setup of in-house lab as per the standard requirements",
               "Assisting the manufacturer in understanding the post license compliances to be followed",
             ]}
-            heading="Below is the scope of work of Sun Consultants & Engineers:"
+            heading="Below is the scope of work of Sun Certifications And Engineers:"
           />
         </div>
       </section>

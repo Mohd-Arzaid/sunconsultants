@@ -97,7 +97,7 @@ const Footer = () => {
                 />
                 <Link to="/" className="text-center">
                   <h1 className="font-roboto text-black uppercase tracking-wider text-xl font-bold">
-                    Sun Consultants & Engineers
+                    Sun Certifications And Engineers
                   </h1>
                   <p className="text-foreground/80 text-xs uppercase font-normal">
                     Your Complete Certification Partner
@@ -280,7 +280,7 @@ const Footer = () => {
             </button>
 
             <span className="text-[#2a5075] font-geist text-[13px] md:text-base text-center">
-              Copyright © 2025 Sun Consultants & Engineers. All Rights Reserved.
+              Copyright © 2025 Sun Certifications And Engineers. All Rights Reserved.
             </span>
 
             <div className="md:hidden flex items-center gap-2">

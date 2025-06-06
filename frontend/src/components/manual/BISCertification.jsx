@@ -20,7 +20,7 @@ export const BISCertification = () => {
     <>
       <Helmet>
         <title>
-          BIS Certification Services | ISI Mark | BIS License | Sun Consultants
+          BIS Certification Services | ISI Mark | BIS License | Sun Certifications And Engineers
         </title>
         <meta
           name="description"
@@ -30,7 +30,7 @@ export const BISCertification = () => {
           name="keywords"
           content="BIS certification, ISI Mark, BIS License, BIS registration, Indian Standards, product certification"
         />
-        <meta name="author" content="Sun Consultants & Engineers" />
+        <meta name="author" content="Sun Certifications And Engineers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}
@@ -44,7 +44,7 @@ export const BISCertification = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Consultants & Engineers" />
+        <meta property="og:site_name" content="Sun Certifications And Engineers" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter Card Tags */}
@@ -71,7 +71,7 @@ export const BISCertification = () => {
             serviceType: "BIS Certification",
             provider: {
               "@type": "Organization",
-              name: "Sun Consultants & Engineers",
+              name: "Sun Certifications And Engineers",
               url: window.location.href,
               logo: "https://sunconsultants.com/logo.png",
             },
