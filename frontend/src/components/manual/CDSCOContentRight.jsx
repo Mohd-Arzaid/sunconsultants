@@ -1,7 +1,6 @@
 import {
   AlignLeft,
   ArrowRightIcon,
-  ChevronLeft,
   ChevronRight,
   Languages,
   Star,
@@ -18,6 +17,12 @@ import {
   PhoneCall,
   SendHorizontal,
   MessageCircle,
+  Shield,
+  Clock,
+  Award,
+  HeartHandshake,
+  Lightbulb,
+  BarChart,
 } from "lucide-react";
 import BlogImageOne from "../../assets/images/BlogImageOne.png";
 import { Button } from "../ui/button";
@@ -49,9 +54,102 @@ const CDSCOContentRight = () => {
 export default CDSCOContentRight;
 
 const WhyChooseUs = () => {
+  const reasons = [
+    {
+      icon: <Shield className="h-8 w-8 text-blue-600" />,
+      title: "Expert Guidance",
+      description: "Our team brings 15+ years of experience in CDSCO and BIS compliance."
+    },
+    {
+      icon: <Clock className="h-8 w-8 text-emerald-600" />,
+      title: "Time Efficient",
+      description: "We reduce approval time by up to 40% with streamlined processes."
+    },
+    {
+      icon: <Award className="h-8 w-8 text-amber-600" />,
+      title: "Proven Success",
+      description: "99% success rate with 500+ successful registrations."
+    },
+    {
+      icon: <HeartHandshake className="h-8 w-8 text-purple-600" />,
+      title: "Client-Centric",
+      description: "Dedicated account manager ensuring personalized service."
+    }
+  ];
+
   return (
-    <div>
-    
+    <div className="w-full md:w-[360px] p-5 rounded-lg bg-gradient-to-br from-slate-50 to-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+      {/* Header with Animation */}
+      <div className="flex gap-2 items-center">
+        <Lightbulb className="text-[#232327]" />
+        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+          Why Choose Us
+        </h1>
+      </div>
+
+      {/* Highlight Stats */}
+      <div className="mt-4 grid grid-cols-3 gap-2">
+        <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-blue-200">
+          <h3 className="text-2xl font-bold text-blue-600 font-geist">15+</h3>
+          <p className="text-xs text-gray-600 font-geist">Years Exp.</p>
+        </div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-emerald-200">
+          <h3 className="text-2xl font-bold text-emerald-600 font-geist">500+</h3>
+          <p className="text-xs text-gray-600 font-geist">Registrations</p>
+        </div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-amber-200">
+          <h3 className="text-2xl font-bold text-amber-600 font-geist">99%</h3>
+          <p className="text-xs text-gray-600 font-geist">Success Rate</p>
+        </div>
+      </div>
+
+      {/* Reasons List */}
+      <div className="mt-4 space-y-3">
+        {reasons.map((reason, index) => (
+          <div 
+            key={index} 
+            className="group bg-white rounded-lg p-3 border border-gray-200 hover:border-blue-200"
+          >
+            <div className="flex gap-3 items-start">
+              <div className="p-1.5 bg-gray-50 rounded-lg group-hover:bg-blue-50">
+                {reason.icon}
+              </div>
+              <div>
+                <h3 className="font-geist font-semibold text-gray-900 text-sm">{reason.title}</h3>
+                <p className="text-xs text-gray-600 font-geist">{reason.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Simple Performance */}
+      <div className="mt-4 bg-blue-50 rounded-lg p-3 border border-blue-100">
+        <div className="flex items-center gap-1 mb-2">
+          <BarChart className="h-4 w-4 text-blue-600" />
+          <span className="text-sm font-medium text-gray-900 font-geist">Our Performance</span>
+        </div>
+        <div className="grid grid-cols-3 gap-2">
+          <div className="text-center">
+            <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
+              <div className="h-full bg-blue-600 rounded-full" style={{width: "95%"}}></div>
+            </div>
+            <span className="text-xs text-gray-600 font-geist">Speed</span>
+          </div>
+          <div className="text-center">
+            <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
+              <div className="h-full bg-emerald-600 rounded-full" style={{width: "99%"}}></div>
+            </div>
+            <span className="text-xs text-gray-600 font-geist">Success</span>
+          </div>
+          <div className="text-center">
+            <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
+              <div className="h-full bg-amber-600 rounded-full" style={{width: "98%"}}></div>
+            </div>
+            <span className="text-xs text-gray-600 font-geist">Satisfaction</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
