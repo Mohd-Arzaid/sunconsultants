@@ -207,12 +207,12 @@ const Navbar = () => {
                 <NavigationMenuContent>
                   <div className="grid grid-cols-3 gap-2 w-[700px] p-6">
                     {categories.map((category, index) => (
-                      <a key={index} href={category.link} className="block">
+                      <Link key={index} to={category.link} className="block">
                         <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors  block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                           {category.icon}
                           {category.name}
                         </div>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </NavigationMenuContent>
@@ -228,25 +228,25 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
-                    <a href="/latest-notifications" className="block">
+                    <Link to="/latest-notifications" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <BookText className="w-4 h-4 mr-2" />
                         Latest Notifications
                       </div>
-                    </a>
-                    <a href="/ministry-updates" className="block">
+                    </Link>
+                    <Link to="/ministry-updates" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <FileWarning className="w-4 h-4 mr-2" />
                         Ministry Updates
                       </div>
-                    </a>
+                    </Link>
 
-                    <a href="/webinar" className="block">
+                    <Link to="/webinar" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <Presentation className="w-4 h-4 mr-2" />
                         Upcoming Webinars
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -261,24 +261,24 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
-                    <a href="/international-audits" className="block">
+                    <Link to="/international-audits" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <FileCheck className="w-4 h-4 mr-2" />
                         International Audits
                       </div>
-                    </a>
-                    <a href="/exhibition" className="block">
+                    </Link>
+                    <Link to="/exhibition" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <GalleryHorizontal className="w-4 h-4 mr-2" />
                         Exhibition
                       </div>
-                    </a>
-                    <a href="/seminar" className="block">
+                    </Link>
+                    <Link to="/seminar" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <Laptop className="w-4 h-4 mr-2" />
                         Webinar/Seminar
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -293,19 +293,19 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
-                    <a href="/contact" className="block">
+                    <Link to="/contact" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <MessageSquare className="w-4 h-4 mr-2" />
                         Contact Us
                       </div>
-                    </a>
+                    </Link>
 
-                    <a href="/feedback" className="block">
+                    <Link to="/feedback" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <MessageCircle className="w-4 h-4 mr-2" />
                         Feedback
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
