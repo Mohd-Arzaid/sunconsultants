@@ -299,7 +299,7 @@ const NotificationDetailLeft = () => {
 
         <div className="mb-4">
           <h4 className="text-xl font-geist font-medium ttext-[#1e1e1e] mb-2">
-            QCO notification Work chairs under is 17631 : 2022 is as below :
+            QCO notification Work chairs under IS 17631 : 2022 is as below :
           </h4>
           <p className="text-base text-gray-600 mb-2">
             The Notification was Released on 13th Feb 2025 and It will be
