@@ -199,7 +199,7 @@ const Stats = () => {
 
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
-            500+
+            1500+
           </h4>
           <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Our Clients
