@@ -251,7 +251,7 @@ const NotificationDetailLeft = () => {
 
             <div className="flex justify-center flex-col gap-0.5">
               <h2 className="font-playfair  font-bold text-[#1e1e1e] text-2xl">
-                QCO Notification for Work Chairs
+                BIS Notification for Work Chairs
               </h2>
 
               <p className="text-base font-medium text-gray-600 font-geist flex items-center gap-2">
