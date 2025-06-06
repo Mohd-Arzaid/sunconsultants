@@ -46,8 +46,8 @@ const AuditHero = () => {
       </div>
 
       <h2 className="text-3xl md:text-4xl text-center mb-4">
-        <span className="text-[#0A4394] font-geist font-medium mr-1 ">/</span>
-        <span className="font-playfair font-bold text-[#1e1e1e]">Glimpses</span>
+        {/* <span className="text-[#0A4394] font-geist font-medium mr-1 ">/</span> */}
+        <span className="font-playfair font-bold text-[#1e1e1e]">Audit Glimpse</span>
       </h2>
 
       <p className="text-base md:text-lg text-center font-geist text-gray-600 max-w-xl md:max-w-xl mx-auto leading-relaxed">
