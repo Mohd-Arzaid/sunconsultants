@@ -15,7 +15,7 @@ const SocialFloatingButtons = () => {
 
   return (
     <div 
-      className={`fixed bottom-4 left-4 md:bottom-6 md:left-6 flex flex-col gap-3 md:gap-4 z-50 transition-all duration-700 ${
+      className={`hidden md:flex fixed bottom-4 left-4 md:bottom-6 md:left-6  flex-col gap-3 md:gap-4 z-50 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
