@@ -364,7 +364,7 @@ const OurServices = () => {
         {/* Heading */}
         <div className="text-center mb-10 md:mb-12">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
-            Our Certification Services
+            Our Services
           </h2>
           <p className="text-base md:text-lg font-geist text-gray-600  max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
             We offer end-to-end solutions for all your certification needs to
