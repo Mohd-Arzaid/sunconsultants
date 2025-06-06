@@ -358,6 +358,9 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
       ) {
         return;
       }
+      if (event.target.closest('[role="dialog"]')) {
+        return;
+      }
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         closeMenu();
       }

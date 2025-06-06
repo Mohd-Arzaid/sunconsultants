@@ -14,7 +14,6 @@ const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const ContactFormPopup = () => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const location = useLocation();
   const [formData, setFormData] = useState({
     fullName: "",
@@ -28,35 +27,19 @@ const ContactFormPopup = () => {
   const { fullName, email, phoneNumber, message } = formData;
 
   useEffect(() => {
-    // Track window resize
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
     // Don't show the popup on the contact page
     if (location.pathname === "/contact") {
       return;
     }
     
-    // Only show popup on medium and larger screens (≥768px)
-    if (screenWidth >= 768) {
-      // Set a timeout to open the popup after 7 seconds
-      const timer = setTimeout(() => {
-        setOpen(true);
-      }, 5000);
+    // Set a timeout to open the popup after 5 seconds
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 5000);
 
-      // Clean up the timer when component unmounts
-      return () => clearTimeout(timer);
-    } else {
-      // Close popup if screen is resized to mobile
-      setOpen(false);
-    }
-  }, [location.pathname, screenWidth]);
+    // Clean up the timer when component unmounts
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({
@@ -146,8 +129,8 @@ const ContactFormPopup = () => {
     }
   };
 
-  // Don't render anything on the contact page or on mobile devices
-  if (location.pathname === "/contact" || screenWidth < 768) {
+  // Don't render anything on the contact page
+  if (location.pathname === "/contact") {
     return null;
   }
 
