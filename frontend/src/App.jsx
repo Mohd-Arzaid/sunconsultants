@@ -110,7 +110,7 @@ function App() {
         <Route path="/emi-emc-certification" element={<EMIEMC />} />
         <Route path="/cb-certification" element={<CBCertification />} />
         <Route path="/webinar" element={<Webinar />} />
-      </Routes>
+      </Routes> 
       <MobileNav />
       <SocialFloatingButtons />
     </>

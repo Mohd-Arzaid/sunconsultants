@@ -107,7 +107,7 @@ const WhyChooseUs = () => {
     <div className=" max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-16 md:pb-24">
       {/* Heading */}
       <div className="text-center mb-8 md:mb-10">
-        <h1 className="font-playfair text-4xl  md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
+        <h1 className="font-playfair text-4xl uppercase  md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
           Why Choose Us?{" "}
         </h1>
         <p className=" text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
@@ -195,6 +195,18 @@ const Stats = () => {
   return (
     <div className="max-w-[84rem] mx-auto  px-4 md:px-12 pb-16 md:pb-20">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8 ">
+       
+
+        <div className="text-center">
+          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
+            500+
+          </h4>
+          <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
+            Our Clients
+          </p>
+        </div>
+
+
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             4,999+
@@ -204,14 +216,6 @@ const Stats = () => {
           </p>
         </div>
 
-        <div className="text-center">
-          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
-            1,299+
-          </h4>
-          <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
-            Happy Clients
-          </p>
-        </div>
 
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
@@ -273,51 +277,68 @@ const OurServices = () => {
   
   const services = [
     {
-      title: "BIS Certification",
+      id: 1,
+      title: "BIS Mark (ISI License) for Foreign Manufacturers",
       description:
-        "Bureau of Indian Standards certification for products to ensure quality, safety and reliability in the Indian market.",
-      icon: "📋",
-      path: "/services/bis-certification"
+        "Comprehensive ISI licensing solution for foreign manufacturers looking to enter the Indian market with quality-certified products.",
+      icon: "🏭",
+      path: "/services/bis-foreign-manufacturers"
     },
     {
       id: 2,
-      title: "LMPC Certificate",
+      title: "Scheme X",
       description:
-        "Legal Metrology Packaged Commodities certification ensuring accurate measurement and proper labeling of packaged goods.",
-      icon: "⚖️",
-      path: "/services/lmpc-registration"
+        "Specialized certification program for specific product categories requiring compliance with advanced quality and safety standards.",
+      icon: "🔍",
+      path: "/services/scheme-x"
     },
     {
       id: 3,
-      title: "CDSCO Registration",
+      title: "ISI Mark BIS for Indian Manufacturers",
+      description:
+        "Domestic certification for Indian manufacturers ensuring products meet Bureau of Indian Standards quality and safety requirements.",
+      icon: "🇮🇳",
+      path: "/services/bis-indian-manufacturers"
+    },
+    {
+      id: 4,
+      title: "BIS CRS Registration",
+      description:
+        "Compulsory Registration Scheme certification for electronic and IT products ensuring safety and quality compliance.",
+      icon: "💻",
+      path: "/services/bis-crs-registration"
+    },
+    {
+      id: 5,
+      title: "CDSCO Registration Certification",
       description:
         "Central Drugs Standard Control Organization approval for medical devices and pharmaceuticals in India.",
       icon: "💊",
       path: "/services/cdsco-registration-certification"
     },
     {
-      id: 4,
-      title: "EPR Authorization",
-      description:
-        "Extended Producer Responsibility compliance for managing plastic waste and environmental sustainability.",
-      icon: "♻️",
-      path: "/services/epr-registration"
-    },
-    {
-      id: 5,
-      title: "WPC Certification",
-      description:
-        "Wireless Planning & Coordination approval for wireless equipment and radio communication devices.",
-      icon: "📡",
-      path: "/services/wpc"
-    },
-    {
       id: 6,
-      title: "TEC Certification",
+      title: "Plastic Waste Management",
       description:
-        "Telecommunication Engineering Center certification for telecom equipment in the Indian market.",
-      icon: "📱",
-      path: "/services/tec"
+        "Comprehensive solutions for plastic waste management compliance, helping businesses meet environmental regulations.",
+      icon: "🌱",
+      path: "/services/plastic-waste-management"
+    },
+    {
+      id: 7,
+      title: "EPR Certificate",
+      description:
+        "Extended Producer Responsibility certification for sustainable waste management and environmental compliance.",
+      icon: "♻️",
+      path: "/services/epr-certificate"
+    },
+    {
+      id: 8,
+      title: "LMPC Certificate",
+      description:
+        "Legal Metrology Packaged Commodities certification ensuring accurate measurement and proper labeling of packaged goods.",
+      icon: "⚖️",
+      path: "/services/lmpc-registration"
     },
   ];
 
@@ -423,7 +444,7 @@ const OurServices = () => {
         </div>
 
         {/* Service thumbnails */}
-        <div className="mt-12 md:mt-16 grid grid-cols-3 sm:grid-cols-6 gap-3 md:gap-4">
+        <div className="mt-12 md:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
           {services.map((service, index) => (
             <div
               key={service.id || index}
