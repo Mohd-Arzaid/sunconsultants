@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./common/Navbar";
 import TopBar from "./common/TopBar";
 import MobileNav from "./components/common/MobileNav";
+import SocialFloatingButtons from "./components/common/SocialFloatingButtons";
 import Home from "./pages/Home";
 import CDSCO from "./pages/CDSCO";
 import About from "./pages/About";
@@ -111,6 +112,7 @@ function App() {
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
       <MobileNav />
+      <SocialFloatingButtons />
     </>
   );
 }

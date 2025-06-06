@@ -17,6 +17,7 @@ export default {
         "fade-in-up": "fade-in-up 0.6s ease-out forwards",
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         'bounce-slow': 'bounce-slow 2s infinite',
+        "ping-slow": "ping 3s cubic-bezier(0, 0, 0.2, 1) infinite",
       },
       keyframes: {
         move: {
