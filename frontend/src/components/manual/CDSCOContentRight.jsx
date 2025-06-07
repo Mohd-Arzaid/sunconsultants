@@ -41,12 +41,12 @@ const CDSCOContentRight = () => {
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
       {/* Latest Blogs */}
-      {/* <LatestBlog /> */}
+      <LatestBlog />
       {/* <OurServices /> */}
-      {/* <ClientTestimonial /> */}
+      <ClientTestimonial />
       {/* <OurEvents /> */}
-      {/* <WhyChooseUs /> */}
-      {/* <LatestNotification /> */}
+      <WhyChooseUs />
+      <LatestNotification />
       <FreeCallBack />
     </div>
   );

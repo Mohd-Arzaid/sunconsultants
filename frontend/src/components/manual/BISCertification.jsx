@@ -2237,7 +2237,7 @@ const BISCIndex = () => {
 const BISCContent = () => {
   return (
     <section className="" aria-label="BIS Certification Content">
-     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side */}
           <BISCContentLeft />
@@ -2345,7 +2345,7 @@ const ServiceFaq = () => {
 const BISCContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
-      <div className="flex flex-col  overflow-hidden gap-[20px] md:gap-[40px]">
+      <div className="flex flex-col  gap-[20px] md:gap-[40px]">
         {/* Nomination Section */}
         <OverviewSection />
         {/* Divider */}
