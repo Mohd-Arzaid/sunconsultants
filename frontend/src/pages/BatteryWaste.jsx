@@ -16,6 +16,7 @@ import {
   import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
+import { Services } from "./Home";
 
   
 const BatteryWaste = () => {
@@ -316,6 +317,7 @@ const EPRHero = () => {
             <ServiceContentRight />
           </div>
         </div>
+        <Services />
         <ServiceFaq />
       </div>
     );

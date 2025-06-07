@@ -17,6 +17,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "./BISCertification";
+import { Services } from "@/pages/Home";
 
 export const BISFM = () => {
   return (
@@ -407,7 +408,7 @@ const BISFMContent = () => {
           <ServiceContentRight />
         </div>
       </div>
-
+      <Services />
       <BISCProductTable />
 
       <ServiceFaq />

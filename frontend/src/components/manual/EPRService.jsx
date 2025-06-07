@@ -14,6 +14,7 @@ import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
+import { Services } from "@/pages/Home";
 
 export const EPRService = () => {
   return (
@@ -310,6 +311,7 @@ const EPRContent = () => {
           {/* </aside>. */}
         </div>
       </div>
+      <Services />
       <ServiceFaq />
     </main>
   );

@@ -16,6 +16,7 @@ import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
+import { Services } from "@/pages/Home";
 
 export const PlasticWaste = () => {
   return (
@@ -300,6 +301,7 @@ const PWMRContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+      <Services />
       <ServiceFaq />
     </div>
   );

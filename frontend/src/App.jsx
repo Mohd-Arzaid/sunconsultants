@@ -53,6 +53,8 @@ function App() {
         <Route path="/seminar" element={<Seminar />} />
 
         <Route path="/clients" element={<AllClients />} />
+
+        
         <Route path="/cdsco-registration-certification" element={<CDSCO />} />
         <Route
           path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"

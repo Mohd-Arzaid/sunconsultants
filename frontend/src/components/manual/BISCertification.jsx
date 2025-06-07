@@ -23,6 +23,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import PropTypes from "prop-types";
+import { Services } from "@/pages/Home";
 
 export const BISCertification = () => {
   return (
@@ -2246,6 +2247,9 @@ const BISCContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+
+      <Services />
+
       <BISCProductTable />
       <ServiceFaq />
     </section>

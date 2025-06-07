@@ -16,6 +16,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
+import { Services } from "./Home";
 
 const CRSRegistration = () => {
   return (
@@ -309,6 +310,7 @@ const BISCRSContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+      <Services />
       <BISCProductTable />
       <ServiceFaq />
     </div>

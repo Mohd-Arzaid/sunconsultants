@@ -15,6 +15,7 @@ import { Separator } from "@/components/ui/separator";
 import { Check } from "lucide-react";
 import CDSCOOne from "../assets/images/CDSCOOne.png";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
+import { Services } from "./Home";
 
 const CDSCO = () => {
   return (
@@ -321,6 +322,7 @@ const CDSCOContent = () => {
           {/* </aside> */}
         </div>
       </div>
+      <Services />
       <ServiceFaq />
       <Footer />
     </main>

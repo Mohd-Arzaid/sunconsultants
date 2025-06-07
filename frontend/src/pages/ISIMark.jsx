@@ -16,6 +16,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
+import { Services } from "./Home";
 
 
 const ISIMark = () => {
@@ -296,6 +297,7 @@ const BISFMHero = () => {
             <ServiceContentRight />
           </div>
         </div>
+        <Services />
         <BISCProductTable />
         <ServiceFaq />
       </div>

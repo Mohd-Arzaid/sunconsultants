@@ -14,6 +14,7 @@ import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
+import { Services } from "./Home";
 
 const EMIEMC = () => {
   return (
@@ -269,6 +270,7 @@ const EMIContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+      <Services />
       <ServiceFaq />
     </div>
   );
