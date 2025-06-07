@@ -299,15 +299,15 @@ const EPRIndex = () => {
 
 const EPRContent = () => {
   return (
-    <main className="w-full overflow-x-hidden">
+    <main className="">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-          <nav className="flex-1" aria-label="EPR Content Navigation">
+          {/* <nav className="flex-1" aria-label="EPR Content Navigation"> */}
             <EPRContentLeft />
-          </nav>
-          <aside className="w-full md:w-[400px]">
+          {/* </nav> */}
+          {/* <aside className="w-full md:w-[400px]"> */}
             <ServiceContentRight />
-          </aside>
+          {/* </aside>. */}
         </div>
       </div>
       <ServiceFaq />

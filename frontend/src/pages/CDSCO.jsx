@@ -310,15 +310,15 @@ const Index = () => {
 // CDSCOContent
 const CDSCOContent = () => {
   return (
-    <main className="w-full overflow-x-hidden">
-      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+    <main className="">
+     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-          <nav className="flex-1" aria-label="CDSCO Content Navigation">
+            {/* <nav className="flex-1" aria-label="CDSCO Content Navigation"> */}
             <CDSCOContentLeft />
-          </nav>
-          <aside className="w-full md:w-[400px]">
+          {/* </nav> */}
+          {/* <aside className="w-full md:w-[400px]"> */}
             <CDSCOContentRight />
-          </aside>
+          {/* </aside> */}
         </div>
       </div>
       <ServiceFaq />
