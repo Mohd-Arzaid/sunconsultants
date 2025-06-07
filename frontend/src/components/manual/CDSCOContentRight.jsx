@@ -39,14 +39,14 @@ const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const CDSCOContentRight = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-6 w-full md:w-[360px] ">
       {/* Latest Blogs */}
-      <LatestBlog />
-      <OurServices />
-      <ClientTestimonial />
+      {/* <LatestBlog /> */}
+      {/* <OurServices /> */}
+      {/* <ClientTestimonial /> */}
       {/* <OurEvents /> */}
-      <WhyChooseUs />
-      <LatestNotification />
+      {/* <WhyChooseUs /> */}
+      {/* <LatestNotification /> */}
       <FreeCallBack />
     </div>
   );
@@ -59,23 +59,25 @@ const WhyChooseUs = () => {
     {
       icon: <Shield className="h-8 w-8 text-blue-600" />,
       title: "Expert Guidance",
-      description: "Our team brings 15+ years of experience in CDSCO and BIS compliance."
+      description:
+        "Our team brings 15+ years of experience in CDSCO and BIS compliance.",
     },
     {
       icon: <Clock className="h-8 w-8 text-emerald-600" />,
       title: "Time Efficient",
-      description: "We reduce approval time by up to 40% with streamlined processes."
+      description:
+        "We reduce approval time by up to 40% with streamlined processes.",
     },
     {
       icon: <Award className="h-8 w-8 text-amber-600" />,
       title: "Proven Success",
-      description: "99% success rate with 500+ successful registrations."
+      description: "99% success rate with 500+ successful registrations.",
     },
     {
       icon: <HeartHandshake className="h-8 w-8 text-purple-600" />,
       title: "Client-Centric",
-      description: "Dedicated account manager ensuring personalized service."
-    }
+      description: "Dedicated account manager ensuring personalized service.",
+    },
   ];
 
   return (
@@ -95,7 +97,9 @@ const WhyChooseUs = () => {
           <p className="text-xs text-gray-600 font-geist">Years Exp.</p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-emerald-200">
-          <h3 className="text-2xl font-bold text-emerald-600 font-geist">500+</h3>
+          <h3 className="text-2xl font-bold text-emerald-600 font-geist">
+            500+
+          </h3>
           <p className="text-xs text-gray-600 font-geist">Registrations</p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-amber-200">
@@ -107,8 +111,8 @@ const WhyChooseUs = () => {
       {/* Reasons List */}
       <div className="mt-4 space-y-3">
         {reasons.map((reason, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="group bg-white rounded-lg p-3 border border-gray-200 hover:border-blue-200"
           >
             <div className="flex gap-3 items-start">
@@ -116,8 +120,12 @@ const WhyChooseUs = () => {
                 {reason.icon}
               </div>
               <div>
-                <h3 className="font-geist font-semibold text-gray-900 text-sm">{reason.title}</h3>
-                <p className="text-xs text-gray-600 font-geist">{reason.description}</p>
+                <h3 className="font-geist font-semibold text-gray-900 text-sm">
+                  {reason.title}
+                </h3>
+                <p className="text-xs text-gray-600 font-geist">
+                  {reason.description}
+                </p>
               </div>
             </div>
           </div>
@@ -128,26 +136,39 @@ const WhyChooseUs = () => {
       <div className="mt-4 bg-blue-50 rounded-lg p-3 border border-blue-100">
         <div className="flex items-center gap-1 mb-2">
           <BarChart className="h-4 w-4 text-blue-600" />
-          <span className="text-sm font-medium text-gray-900 font-geist">Our Performance</span>
+          <span className="text-sm font-medium text-gray-900 font-geist">
+            Our Performance
+          </span>
         </div>
         <div className="grid grid-cols-3 gap-2">
           <div className="text-center">
             <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
-              <div className="h-full bg-blue-600 rounded-full" style={{width: "95%"}}></div>
+              <div
+                className="h-full bg-blue-600 rounded-full"
+                style={{ width: "95%" }}
+              ></div>
             </div>
             <span className="text-xs text-gray-600 font-geist">Speed</span>
           </div>
           <div className="text-center">
             <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
-              <div className="h-full bg-emerald-600 rounded-full" style={{width: "99%"}}></div>
+              <div
+                className="h-full bg-emerald-600 rounded-full"
+                style={{ width: "99%" }}
+              ></div>
             </div>
             <span className="text-xs text-gray-600 font-geist">Success</span>
           </div>
           <div className="text-center">
             <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
-              <div className="h-full bg-amber-600 rounded-full" style={{width: "98%"}}></div>
+              <div
+                className="h-full bg-amber-600 rounded-full"
+                style={{ width: "98%" }}
+              ></div>
             </div>
-            <span className="text-xs text-gray-600 font-geist">Satisfaction</span>
+            <span className="text-xs text-gray-600 font-geist">
+              Satisfaction
+            </span>
           </div>
         </div>
       </div>
@@ -155,7 +176,7 @@ const WhyChooseUs = () => {
   );
 };
 
-const LatestBlog = () => {
+export const LatestBlog = () => {
   const blogPosts = [
     {
       image: BlogImageOne,
@@ -192,7 +213,7 @@ const LatestBlog = () => {
         </h1>
       </div>
       <div className="relative h-[400px] overflow-hidden mt-5">
-        <Marquee vertical className="[--duration:10s]">
+        <Marquee vertical pauseOnHover={true} className="[--duration:10s]">
           {blogPosts.map((post, index) => (
             <div key={index} className="mb-5">
               <div className=" group flex gap-4  transition-all duration-300">
@@ -234,6 +255,19 @@ const LatestBlog = () => {
           ))}
         </Marquee>
       </div>
+
+      {/* View More Button */}
+      <div className="mt-5 w-full  flex justify-center">
+        <Link to="/latest-notifications" className="w-full">
+          <Button
+            variant="outline"
+            className="font-geist w-full bg-[#212126] hover:bg-[#212126]/90 text-white border-gray-300  hover:bg-gray-100"
+          >
+            View All Blogs
+            <ArrowRightIcon className="ml-1 h-4 w-4" />
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 };
@@ -245,56 +279,56 @@ const OurServices = () => {
       title: "BIS Mark (ISI License) for Foreign Manufacture",
       description:
         "Expert assistance for obtaining BIS Mark (ISI License) for foreign manufacturers, ensuring compliance with Indian standards.",
-      link: "/services/bis-mark-foreign"
+      link: "/services/bis-mark-foreign",
     },
     {
       image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
       title: "BIS Registration Certificate",
       description:
         "Comprehensive support for BIS Registration Certificate for electronic and IT products as per Indian regulations.",
-      link: "/services/bis-certification"
+      link: "/services/bis-certification",
     },
     {
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
       title: "ISI MARK (BIS) for Indian Manufactures",
       description:
         "Guidance for Indian manufacturers to obtain ISI Mark (BIS) certification for various products.",
-      link: "/services/isi-mark-indian"
+      link: "/services/isi-mark-indian",
     },
     {
       image: "https://images.unsplash.com/photo-1464983953574-0892a716854b",
       title: "BIS (CRS) Registration",
       description:
         "Professional help for BIS (CRS) Registration for electronic and IT goods under Compulsory Registration Scheme.",
-      link: "/services/crs-registration"
+      link: "/services/crs-registration",
     },
     {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
       title: "EPR Certificate Consultants",
       description:
         "Consultancy for EPR (Extended Producer Responsibility) Certificate for e-waste, plastic waste, and battery waste management.",
-      link: "/services/epr-registration"
+      link: "/services/epr-registration",
     },
     {
       image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
       title: "LMPC Certificate Consultants",
       description:
         "Expert guidance for obtaining LMPC (Legal Metrology Packaged Commodities) Certificate for importers and manufacturers.",
-      link: "/services/lmpc-registration"
+      link: "/services/lmpc-registration",
     },
     {
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
       title: "CDSCO Registration Certification",
       description:
         "Specialized consultation for CDSCO Registration Certification for medical devices and pharmaceuticals.",
-      link: "/services/cdsco-registration-certification"
+      link: "/services/cdsco-registration-certification",
     },
     {
       image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca",
       title: "Plastic Waste Management",
       description:
         "Support for compliance and certification in Plastic Waste Management as per Indian environmental regulations.",
-      link: "/services/plastic-waste"
+      link: "/services/plastic-waste",
     },
   ];
   return (
@@ -395,7 +429,12 @@ const ClientTestimonial = () => {
           </h1>
         </div>
         <div className="mt-8 mb-5 rounded-lg h-60 overflow-hidden">
-          <Marquee vertical repeat={2} className="[--duration:18s]">
+          <Marquee
+            vertical
+            repeat={2}
+            pauseOnHover={true}
+            className="[--duration:18s]"
+          >
             {testimonials.map((testimonial, index) => (
               <div key={index} className="group mb-8">
                 <div className="flex items-start gap-4 ">
@@ -516,12 +555,12 @@ const OurEvents = () => {
                 </div>
               </div>
 
-<Link to="/webinar">
-              <Button className="w-full mt-4 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white">
-                Register Now
-                <ArrowRightIcon />
-              </Button>
-</Link>
+              <Link to="/webinar">
+                <Button className="w-full mt-4 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white">
+                  Register Now
+                  <ArrowRightIcon />
+                </Button>
+              </Link>
             </div>
           </div>
         ))}
@@ -863,7 +902,7 @@ const FreeCallBack = () => {
   };
 
   return (
-    <div className="w-full md:w-[360px] p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+    <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       {/* Header */}
       <div className="flex gap-2 items-center">
         <PhoneCall className="text-[#232327]" />

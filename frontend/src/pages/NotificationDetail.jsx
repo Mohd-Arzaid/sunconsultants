@@ -16,6 +16,7 @@ import BlogImageOne from "../assets/images/BlogImageOne.png";
 import { Link, useNavigate } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
+import { LatestBlog } from "@/components/manual/CDSCOContentRight";
 
 const NotificationDetail = () => {
   return (
@@ -344,87 +345,12 @@ const NotificationDetailLeft = () => {
 };
 
 const NotificationDetailRight = () => {
-  const blogPosts = [
-    {
-      image: BlogImageOne,
-      category: "CDSCO",
-      title: "Medical Device QCO Update",
-      url: "/latest-notifications",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1587854680352-936b22b91030",
-      category: "CDSCO",
-      title: "Drug Import Guidelines",
-      url: "/latest-notifications",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88",
-      category: "CDSCO",
-      title: "Quality Standards Revision",
-      url: "/latest-notifications",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5",
-      category: "CDSCO",
-      title: "Equipment Certification",
-      url: "/latest-notifications",
-    },
-  ];
+
 
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
-      {/* Latest Blog */}
-      <div className="w-full md:w-[360px] p-6 rounded-lg bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        <div className="flex gap-2 items-center ">
-          <AlignLeft className="text-[#232327]" />
-          <h1 className="text-xl font-geist font-semibold  text-[#232327]">
-            Latest Blogs
-          </h1>
-        </div>
-        <div className="relative h-[400px] overflow-hidden mt-5">
-          <Marquee vertical className="[--duration:10s]">
-            {blogPosts.map((post, index) => (
-              <div key={index} className="mb-5">
-                <div className=" group flex gap-4  transition-all duration-300">
-                  <img
-                    src={post.image || "/placeholder.svg"}
-                    alt="Post Image"
-                    className="h-20 w-20 object-cover shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105 "
-                  />
-
-                  <div className=" h-20 w-20 flex flex-1 flex-col justify-between">
-                    <div className="space-y-2">
-                      <Badge
-                        variant="outline"
-                        className=" bg-emerald-50 font-geist text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
-                      >
-                        {post.category}
-                      </Badge>
-                      <p className="line-clamp-2 font-geist text-sm font-normal text-zinc-900">
-                        {post.title}
-                      </p>
-
-                      <Link to={post.url}>
-                        <Button
-                          variant="link"
-                          className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
-                        >
-                          Read More
-                          <ArrowRightIcon className="-ml-1 mt-0.5" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {index < blogPosts.length - 1 && (
-                  <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
-                )}
-              </div>
-            ))}
-          </Marquee>
-        </div>
-      </div>
+   
+      <LatestBlog/>
 
       <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Header */}

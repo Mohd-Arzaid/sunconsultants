@@ -1,9 +1,9 @@
-import ScrollToTopButton from "@/components/common/ScrollToTop"
-// CDSCO Hero Import 
+import ScrollToTopButton from "@/components/common/ScrollToTop";
+// CDSCO Hero Import
 import ServiceContactForm from "@/common/ServiceContactForm";
-// Index Import 
-import { useState, useEffect, useRef } from 'react'
-// CDSCOContent Import 
+// Index Import
+import { useState, useEffect, useRef } from "react";
+// CDSCOContent Import
 import Footer from "@/common/Footer";
 import {
   Accordion,
@@ -16,27 +16,28 @@ import { Check } from "lucide-react";
 import CDSCOOne from "../assets/images/CDSCOOne.png";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 
-
 const CDSCO = () => {
   return (
     <article className="cdsco-page">
       <CDSCOHero />
-      <Index/>
-      <CDSCOContent/>
+      <Index />
+      <CDSCOContent />
       <ScrollToTopButton />
     </article>
-  )
-}
+  );
+};
 
-export default CDSCO
+export default CDSCO;
 
-
-// CDSCOHero 
+// CDSCOHero
 const CDSCOHero = () => {
   return (
     <header className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
-      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco" aria-hidden="true"></div>
+      <div
+        className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"
+        aria-hidden="true"
+      ></div>
 
       {/* Decorative elements */}
       <div
@@ -49,7 +50,10 @@ const CDSCOHero = () => {
         {/* Left Side */}
         <div className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
           <div className="inline-flex items-center">
-            <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4" aria-hidden="true"></div>
+            <div
+              className="h-[3px] w-[40px] bg-[#1A8781] mr-4"
+              aria-hidden="true"
+            ></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
               Certified Expertise
             </span>
@@ -81,8 +85,7 @@ const CDSCOHero = () => {
         </div>
 
         {/* Right Side */}
-      <ServiceContactForm/>
-      
+        <ServiceContactForm />
       </div>
     </header>
   );
@@ -101,49 +104,50 @@ const SECTIONS = [
 
 // Index
 const Index = () => {
-  const [isSticky, setIsSticky] = useState(false)
-  const [activeSection, setActiveSection] = useState("Overview")
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const stickyRef = useRef(null)
-  const mobileMenuRef = useRef(null)
-  const toggleButtonRef = useRef(null)
+  const [isSticky, setIsSticky] = useState(false);
+  const [activeSection, setActiveSection] = useState("Overview");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const stickyRef = useRef(null);
+  const mobileMenuRef = useRef(null);
+  const toggleButtonRef = useRef(null);
 
   // Helper function to convert section name to element ID
-  const getSectionElementId = (section) => section === "FAQs" ? "faqs" : section.toLowerCase();
+  const getSectionElementId = (section) =>
+    section === "FAQs" ? "faqs" : section.toLowerCase();
 
   const handleItemClick = (item) => {
     const elementId = getSectionElementId(item);
     const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
       setActiveSection(item);
       setIsMobileMenuOpen(false); // Close mobile menu after clicking
     }
-  }
+  };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(prevState => !prevState);
+    setIsMobileMenuOpen((prevState) => !prevState);
   };
 
   // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        mobileMenuRef.current && 
+        mobileMenuRef.current &&
         !mobileMenuRef.current.contains(event.target) &&
-        toggleButtonRef.current && 
+        toggleButtonRef.current &&
         !toggleButtonRef.current.contains(event.target)
       ) {
         setIsMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -153,11 +157,13 @@ const Index = () => {
         // Check if the element is intersecting and its position relative to viewport
         const rect = entry.boundingClientRect;
         const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(!entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1));
+        setIsSticky(
+          !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
+        );
       },
       {
-        threshold: [0, 1],  // Observe both when fully visible and when starting to intersect
-        rootMargin: '-1px 0px 0px 0px'
+        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
+        rootMargin: "-1px 0px 0px 0px",
       }
     );
 
@@ -171,13 +177,15 @@ const Index = () => {
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
             if (entry.target.id === "faqs") {
               setActiveSection("FAQs");
             } else {
               // Convert id like "overview" to "Overview"
-              const sectionName = entry.target.id.charAt(0).toUpperCase() + entry.target.id.slice(1);
+              const sectionName =
+                entry.target.id.charAt(0).toUpperCase() +
+                entry.target.id.slice(1);
               setActiveSection(sectionName);
             }
           }
@@ -187,7 +195,7 @@ const Index = () => {
     );
 
     // Observe each section
-    SECTIONS.forEach(section => {
+    SECTIONS.forEach((section) => {
       const elementId = getSectionElementId(section);
       const element = document.getElementById(elementId);
       if (element) {
@@ -202,7 +210,7 @@ const Index = () => {
     <div
       ref={stickyRef}
       className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? 'bg-white/70 backdrop-blur-lg' : 'bg-[#B9DEEB]'
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
       }`}
     >
       {/* Mobile Menu Button */}
@@ -210,23 +218,33 @@ const Index = () => {
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
           {activeSection}
         </div>
-        <button 
+        <button
           ref={toggleButtonRef}
           onClick={toggleMobileMenu}
           className="p-2 rounded-md hover:bg-blue-100 transition-colors"
           aria-label="Toggle menu"
         >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="h-6 w-6 text-blue-900" 
-            fill="none" 
-            viewBox="0 0 24 24" 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-blue-900"
+            fill="none"
+            viewBox="0 0 24 24"
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             )}
           </svg>
         </button>
@@ -234,7 +252,7 @@ const Index = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           ref={mobileMenuRef}
           className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
         >
@@ -244,8 +262,8 @@ const Index = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection 
-                    ? "bg-blue-50 text-blue-900 font-semibold" 
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
                 }`}
               >
@@ -268,22 +286,26 @@ const Index = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection ? "text-blue-900" : "text-blue-950 group-hover:text-blue-900"
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
               }`}
             >
               {item}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
               }`}
             />
           </div>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 // CDSCOContent
 const CDSCOContent = () => {
@@ -300,21 +322,31 @@ const CDSCOContent = () => {
         </div>
       </div>
       <ServiceFaq />
-      <Footer/>
+      <Footer />
     </main>
   );
 };
 
 const ServiceFaq = () => {
   return (
-    <section id="faqs" className="py-2 bg-gray-50 scroll-mt-20" aria-labelledby="faq-title">
+    <section
+      id="faqs"
+      className="py-2 bg-gray-50 scroll-mt-20"
+      aria-labelledby="faq-title"
+    >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h2 id="faq-title" className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2
+          id="faq-title"
+          className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]"
+        >
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can't find the answer you are looking for?{" "}
-          <a href="#contact" className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
+          <a
+            href="#contact"
+            className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4"
+          >
             Reach out to us!
           </a>
         </p>
@@ -466,11 +498,9 @@ const ServiceFaq = () => {
   );
 };
 
-
 // CDSCOContentLeft
 const CDSCOContentLeft = () => {
   return (
-
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         {/* Overview Section */}
@@ -515,26 +545,32 @@ const CDSCOContentLeft = () => {
         <ReviewSection />
       </div>
     </div>
-
-
   );
 };
 
-
-
 const OverviewSection = () => {
   return (
-    <section id="overview" className="flex flex-col scroll-mt-20" aria-labelledby="overview-title">
+    <section
+      id="overview"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="overview-title"
+    >
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Overview
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
+        <Separator
+          className="w-[94.46px] h-[1.5px] bg-gray-700"
+          aria-hidden="true"
+        />
       </div>
-      
+
       {/* Title */}
-      <h2 id="overview-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="overview-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         CDSCO Overview
       </h2>
 
@@ -578,7 +614,9 @@ const OverviewSection = () => {
               hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
               "
           />
-          <figcaption className="sr-only">CDSCO organizational structure and divisions</figcaption>
+          <figcaption className="sr-only">
+            CDSCO organizational structure and divisions
+          </figcaption>
         </figure>
       </div>
     </section>
@@ -631,23 +669,34 @@ const PointsListTwo = ({ points, heading }) => {
 
 const EligibilitySection = () => {
   return (
-    <section id="eligibility" className="flex flex-col scroll-mt-20" aria-labelledby="eligibility-title">
+    <section
+      id="eligibility"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="eligibility-title"
+    >
       {/* Eligibility */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Eligibility
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
+        <Separator
+          className="w-[94.46px] h-[1.5px] bg-gray-700"
+          aria-hidden="true"
+        />
       </div>
-      
+
       {/* Title */}
-      <h2 id="eligibility-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="eligibility-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         CDSCO Certificate Eligibility
       </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Eligibility for a CDSCO Certificate requires meeting regulatory guidelines.
+        Eligibility for a CDSCO Certificate requires meeting regulatory
+        guidelines.
       </p>
 
       {/* Eligibility Content */}
@@ -672,17 +721,27 @@ const EligibilitySection = () => {
 
 const ClassificationSection = () => {
   return (
-    <section id="classification" className="flex flex-col scroll-mt-20" aria-labelledby="classification-title">
+    <section
+      id="classification"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="classification-title"
+    >
       {/* Classification */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Classification
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
+        <Separator
+          className="w-[94.46px] h-[1.5px] bg-gray-700"
+          aria-hidden="true"
+        />
       </div>
-      
+
       {/* Title */}
-      <h2 id="classification-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="classification-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         CDSCO Device Classification
       </h2>
 
@@ -739,17 +798,27 @@ const ClassificationSection = () => {
 
 const Documents = () => {
   return (
-    <section id="documents" className="flex flex-col scroll-mt-20" aria-labelledby="documents-title">
+    <section
+      id="documents"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="documents-title"
+    >
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Documents
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
+        <Separator
+          className="w-[94.46px] h-[1.5px] bg-gray-700"
+          aria-hidden="true"
+        />
       </div>
 
       {/* Title */}
-      <h2 id="documents-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="documents-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         Required Documents for CDSCO LICENSE
       </h2>
 
@@ -792,23 +861,34 @@ const Documents = () => {
 
 const Registration = () => {
   return (
-    <section id="registration" className="flex flex-col scroll-mt-20" aria-labelledby="registration-title">
+    <section
+      id="registration"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="registration-title"
+    >
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Registration
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
+        <Separator
+          className="w-[94.46px] h-[1.5px] bg-gray-700"
+          aria-hidden="true"
+        />
       </div>
 
       {/* Title */}
-      <h2 id="registration-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="registration-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         Class A Product Registration Process
       </h2>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Process for CDSCO registration for Class A products ( non-sterile and non-measuring )
+        Process for CDSCO registration for Class A products ( non-sterile and
+        non-measuring )
       </p>
 
       {/* Important Points And Image */}
@@ -837,7 +917,9 @@ const Registration = () => {
               hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[240px] mt-2.5 md:mt-5
               "
           />
-          <figcaption className="sr-only">CDSCO registration process flow diagram</figcaption>
+          <figcaption className="sr-only">
+            CDSCO registration process flow diagram
+          </figcaption>
         </figure>
       </div>
 
@@ -845,7 +927,8 @@ const Registration = () => {
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           TIMELINE
         </span>
-        CDSCO registration process will take 1 day after the documents are submitted to us.
+        CDSCO registration process will take 1 day after the documents are
+        submitted to us.
       </div>
     </section>
   );
@@ -859,7 +942,10 @@ const Licensing = () => {
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Licensing
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
+        <Separator
+          className="w-[94.46px] h-[1.5px] bg-gray-700"
+          aria-hidden="true"
+        />
       </div>
 
       {/* Title */}
@@ -941,7 +1027,10 @@ const Consulting = () => {
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Consulting
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
+        <Separator
+          className="w-[94.46px] h-[1.5px] bg-gray-700"
+          aria-hidden="true"
+        />
       </div>
 
       {/* Title */}
@@ -971,45 +1060,77 @@ const Consulting = () => {
 const ReviewSection = () => {
   return (
     <section aria-labelledby="review-title">
-      <h2 id="review-title" className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
+      <h2
+        id="review-title"
+        className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal"
+      >
         What did you think of this content?
       </h2>
       <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
         <div className="flex gap-6">
-          <button 
+          <button
             className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group"
             aria-label="Mark content as helpful"
           >
-            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
-              <path fillOpacity="0.15" strokeWidth="0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+            >
+              <path
+                fillOpacity="0.15"
+                strokeWidth="0"
                 className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z" />
-              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z"
+              />
+              <path
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5" />
+                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5"
+              />
             </svg>
             <span>It was helpful</span>
           </button>
 
-          <button 
+          <button
             className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group"
             aria-label="Mark content as not helpful"
           >
-            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
-              <path fillOpacity="0.15" strokeWidth="0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+            >
+              <path
+                fillOpacity="0.15"
+                strokeWidth="0"
                 className="group-hover:text-red-500 transition-colors duration-200"
-                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z" />
-              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z"
+              />
+              <path
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 className="group-hover:text-red-500 transition-colors duration-200"
-                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5" />
+                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5"
+              />
             </svg>
             <span>It was not helpful</span>
           </button>
         </div>
 
-        <time className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal" dateTime="2025-03-19">
+        <time
+          className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal"
+          dateTime="2025-03-19"
+        >
           Last updated on Mar 19, 2025
         </time>
       </div>
