@@ -8,6 +8,8 @@ import Italy from "../../assets/images/Italy.png";
 import Colombia from "../../assets/images/Colombia.png";
 import Qatar from "../../assets/images/Qatar.png";
 import India from "../../assets/images/India.png";
+import Indonesia from "../../assets/images/Indonesia.png";
+
 import { useState } from "react";
 
 const Countries = () => {
@@ -39,6 +41,7 @@ const Countries = () => {
     { name: "Colombia", img: Colombia },
     { name: "Qatar", img: Qatar },
     { name: "India", img: India },
+    { name: "Indonesia", img: Indonesia },
   ]);
 
   return (

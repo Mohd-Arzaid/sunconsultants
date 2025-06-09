@@ -70,8 +70,24 @@ import Italy from "../assets/images/Italy.png";
 import Colombia from "../assets/images/Colombia.png";
 import Qatar from "../assets/images/Qatar.png";
 import India from "../assets/images/India.png";
+import Indonesia from "../assets/images/Indonesia.png";
+import Malaysia from "../assets/images/Malaysia.png";
+import Russia from "../assets/images/Russia.png";
+import Bahrain from "../assets/images/Bahrain.png";
+import UAE from "../assets/images/UAE.png";
+import Nepal from "../assets/images/Nepal.png";
 import { Marquee } from "@/components/magicui/marquee";
-import { ImagesSlider } from "@/components/ui/images-slider";
+import SriLanka from "../assets/images/SriLanka.png";
+import France from "../assets/images/France.png";
+import Germany from "../assets/images/Germany.png";
+import Sweden from "../assets/images/Sweden.png";
+import Slovenia from "../assets/images/Slovenia.png";
+import Austria from "../assets/images/Austria.png";
+import USA from "../assets/images/USA.png";
+import Denmark from "../assets/images/Denmark.png";
+
+
+// import { ImagesSlider } from "@/components/ui/images-slider";
 
 const Home = () => {
   return (
@@ -1542,7 +1558,7 @@ const LatestNews = () => {
 
 // Countries
 const Countries = () => {
-  const [current, setCurrent] = useState(0);
+  // const [current, setCurrent] = useState(0);
   const handlePreviousClick = () => {
     setCountriesData((prev) => {
       const newArray = [...prev];
@@ -1570,6 +1586,20 @@ const Countries = () => {
     { name: "Colombia", img: Colombia },
     { name: "Qatar", img: Qatar },
     { name: "India", img: India },
+    { name: "Indonesia", img: Indonesia },
+    { name: "Malaysia", img: Malaysia },
+    { name: "Russia", img: Russia },
+    { name: "Bahrain", img: Bahrain },
+    { name: "UAE", img: UAE },
+    { name: "Nepal", img: Nepal },
+    { name: "Sri Lanka", img: SriLanka },
+    { name: "France", img: France },
+    { name: "Germany", img: Germany },
+    { name: "Sweden", img: Sweden },
+    { name: "Slovenia", img: Slovenia },
+    { name: "Austria", img: Austria },
+    { name: "USA", img: USA },
+    { name: "Denmark", img: Denmark },
   ]);
 
   return (
