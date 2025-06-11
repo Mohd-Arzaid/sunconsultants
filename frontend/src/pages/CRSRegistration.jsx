@@ -17,6 +17,92 @@ import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
 import { Services } from "./Home";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHeader,
+  TableRow,
+  TableHead,
+} from "@/components/ui/table";
+import { Search } from "lucide-react";
+
+const productsData = [
+  { id: 1, product: "AMPLIFIERS WITH INPUT POWER 2000W AND ABOVE", isNumber: "IS 616:2017", date: "03 July 2013" },
+  { id: 2, product: "AUTOMATIC DATA PROCESSING MACHINE", isNumber: "IS 13252(Part 1):2010", date: "03 July 2013" },
+  { id: 3, product: "ELECTRONIC CLOCKS WITH MAINS POWER", isNumber: "IS 302-2-26:2014", date: "03 July 2013" },
+  { id: 4, product: "ELECTRONIC GAMES (VIDEO)", isNumber: "IS 616:2017", date: "03 July 2013" },
+  { id: 5, product: "ELECTRONIC MUSICAL SYSTEMS WITH INPUT POWER 200W AND ABOVE", isNumber: "IS 616:2017", date: "03 July 2013" },
+  { id: 6, product: "LAPTOP/NOTEBOOK/TABLET", isNumber: "IS 13252(Part 1):2010", date: "03 July 2013" },
+  { id: 7, product: "MICROWAVE OVENS", isNumber: "IS 302-2-25:2014", date: "03 July 2013" },
+  { id: 8, product: "OPTICAL DISC PLAYERS WITH BUILT IN AMPLIFIERS OF INPUT POWER 200W AND ABOVE", isNumber: "IS 616:2017", date: "03 July 2013" },
+  { id: 9, product: "PLASMA/LCD/LED TELEVISIONS OF SCREEN SIZE 32\"; AND ABOVE", isNumber: "IS 616:2017", date: "03 July 2013" },
+  { id: 10, product: "PRINTERS, PLOTTERS", isNumber: "IS 13252(Part 1):2010", date: "03 July 2013" },
+  { id: 11, product: "SCANNERS", isNumber: "IS 13252(Part 1):2010", date: "03 July 2013" },
+  { id: 12, product: "SET TOP BOX", isNumber: "IS 13252(Part 1):2010", date: "03 July 2013" },
+  { id: 13, product: "TELEPHONE ANSWERING MACHINES", isNumber: "IS 13252(Part 1):2010", date: "03 July 2013" },
+  { id: 14, product: "VISUAL DISPLAY UNITS, VIDEOS MONITORS OF SCREEN SIZE 32\" AND ABOVE", isNumber: "IS 13252(Part 1):2010", date: "03 July 2013" },
+  { id: 15, product: "WIRELESS KEYBOARDS", isNumber: "IS 13252(Part 1):2010", date: "03 July 2013" },
+  { id: 16, product: "CASH REGISTERS", isNumber: "IS 13252(Part 1):2010", date: "13 May 2015" },
+  { id: 17, product: "COPYING MACHINES/DUPLICATORS", isNumber: "IS 13252(Part 1):2010", date: "13 May 2015" },
+  { id: 18, product: "PASSPORT READER", isNumber: "IS 13252(Part 1):2010", date: "13 May 2015" },
+  { id: 19, product: "POINT OF SALE TERMINALS", isNumber: "IS 13252(Part 1):2010", date: "13 May 2015" },
+  { id: 20, product: "MAIL PROCESSING MACHINES/POSTAGE MACHINES/FRANKING MACHINES", isNumber: "IS 13252(Part 1):2010", date: "13 May 2015" },
+  { id: 21, product: "POWER BANKS FOR USE IN PORTABLE APPLICATIONS", isNumber: "IS 13252(Part 1):2010", date: "13 May 2015" },
+  { id: 22, product: "SMART CARD READER", isNumber: "IS 13252(Part 1):2010", date: "13 May 2015" },
+  { id: 23, product: "MOBILE PHONES", isNumber: "IS 13252(Part 1):2010", date: "13 September 2015" },
+  { id: 24, product: "SELF-BALLASTED LED LAMPS FOR GENERAL LIGHTING SERVICES", isNumber: "IS 16102(Part 1):2012", date: "13 September 2015" },
+  { id: 25, product: "DC OR AC SUPPLIED ELECTRONIC CONTROLGEAR FOR LED MODULES", isNumber: "IS 15885(Part 2/Sec 13):2012", date: "01 December 2015" },
+  { id: 26, product: "POWER ADAPTORS FOR AUDIO,VIDEO & SIMILAR ELECTRONIC APPARATUS", isNumber: "IS 616:2010", date: "01 December 2015" },
+  { id: 27, product: "POWER ADAPTORS FOR IT EQUIPMENTS", isNumber: "IS 13252(Part 1):2010", date: "01 December 2015" },
+  { id: 28, product: "FIXED GENERAL PURPOSE LED LUMINAIRES", isNumber: "IS 10322(Part 5/Sec 1):2012", date: "01 March 2016" },
+  { id: 29, product: "UPS/INVERTORS OF RATING <= 5KVA", isNumber: "IS 16242(Part 1):2014", date: "01 March 2016" },
+  { id: 30, product: "SEALED SECONDARY CELLS/BATTERIES CONTAINING ALKALINE OR OTHER NON-ACID ELECTROLYTES FOR USE IN PORTABLE APPLICATIONS PART 1 NICKEL SYSTEMS", isNumber: "IS 16046(Part 1): 2018", date: "01 June 2016" },
+  { id: 31, product: "SEALED SECONDARY CELLS/BATTERIES CONTAINING ALKALINE OR OTHER NON-ACID ELECTROLYTES FOR USE IN PORTABLE APPLICATIONS PART 2 LITHIUM SYSTEMS", isNumber: "IS 16046(Part 2): 2018", date: "01 June 2016" },
+  { id: 32, product: "INDIAN LANGUAGE SUPPORT FOR MOBILE PHONE HANDSETS", isNumber: "IS 16333 (Part 3) : 2022", date: "01 May 2018" },
+  { id: 33, product: "Recessed LED Luminaries", isNumber: "IS 10322 (Part 5/Section 2) : 2012", date: "23 May 2018" },
+  { id: 34, product: "LED Luminaires for Road and Street lighting", isNumber: "IS 10322 (Part 5/Section 3) : 2012", date: "23 May 2018" },
+  { id: 35, product: "LED Flood Lights", isNumber: "IS 10322 (Part 5/Section 5) : 2013", date: "23 May 2018" },
+  { id: 36, product: "LED Hand lamps", isNumber: "IS 10322 (Part 5/Section 6) : 2013", date: "23 May 2018" },
+  { id: 37, product: "LED Lighting Chains", isNumber: "IS 10322 (Part 5/Section 7) : 2017", date: "23 May 2018" },
+  { id: 38, product: "LED Luminaires for Emergency Lighting", isNumber: "IS 10322 (Part 5/Section 8) : 2013", date: "23 May 2018" },
+  { id: 39, product: "UPS/Inverters of rating <= 10kVA", isNumber: "IS 16242 (Part 1) : 2014", date: "23 May 2018" },
+  { id: 40, product: "Plasma/ LCD/LED Television of screen size up-to 32", isNumber: "IS 616 : 2017", date: "23 May 2018" },
+  { id: 41, product: "Visual Display Units, Video Monitors of screen size upto 32", isNumber: "IS 13252 (Part 1) : 2010", date: "23 May 2018" },
+  { id: 42, product: "CCTV Cameras/CCTV Recorders", isNumber: "IS 13252 (Part 1) : 2010, Essential Requirement(s) for Security of CCTV", date: "23 May 2018" },
+  { id: 43, product: "Adapters for household and similar electrical appliances", isNumber: "IS 302 (Part 1) : 2008", date: "23 May 2018" },
+  { id: 44, product: "USB driven Barcode readers, barcode scanners, Iris scanners, Optical fingerprint scanners", isNumber: "IS 13252 (Part 1) : 2010", date: "23 May 2018" },
+  { id: 45, product: "Smart watches", isNumber: "IS 13252 (Part 1) : 2010", date: "23 May 2018" },
+  { id: 46, product: "Crystalline Silicon Terrestrial Photovoltaic (PV) modules (Si wafer based)", isNumber: "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004", date: "31 March 2019" },
+  { id: 47, product: "Thin-Film Terrestrial Photovoltaic (PV) Modules (a-Si, CiGs and CdTe)", isNumber: "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004", date: "31 March 2019" },
+  { id: 48, product: "Power converters for use in photovoltaic power system", isNumber: "IS 16221 (Part 2) : 2015 / IEC 62109-2 : 2011", date: "30 June 2021" },
+  { id: 49, product: "Utility-Interconnected Photovoltaic inverters", isNumber: "IS 16221 (Part 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008", date: "30 June 2021" },
+  { id: 50, product: "Storage battery", isNumber: "IS 16270 : 2014", date: "01 January 2019" },
+  { id: 51, product: "Independent LED Modules for General Lighting", isNumber: "IS 16103 (Part 1) : 2012", date: "01 April 2021" },
+  { id: 52, product: "Lighting Chain (Rope Lights)", isNumber: "IS 10322 (Part 5/Sec 9) : 2017", date: "01 April 2021" },
+  { id: 53, product: "Keyboard", isNumber: "IS 13252 (Part 1) : 2010", date: "01 April 2021" },
+  { id: 54, product: "Induction Stove", isNumber: "IS 302-2-6 : 2009", date: "01 April 2021" },
+  { id: 55, product: "Automatic Teller Cash dispensing machines", isNumber: "IS 13252 (Part 1) : 2010", date: "01 April 2021" },
+  { id: 56, product: "USB Type External Hard Disk Drive", isNumber: "IS 13252 (Part 1) : 2010", date: "01 April 2021" },
+  { id: 57, product: "Wireless Headphone and Earphone", isNumber: "IS 616 : 2017", date: "01 April 2021" },
+  { id: 58, product: "USB Type External Solid-State Storage Devices (above 256 GB capacity)", isNumber: "IS 13252 (Part 1) : 2010", date: "01 April 2021" },
+  { id: 59, product: "Electronic Musical System with input power below 200 Watts", isNumber: "IS 616 : 2017", date: "01 April 2021" },
+  { id: 60, product: "Standalone Switch Mode Power Supplies (SMPS) with output voltage 48V (max)", isNumber: "IS 13252 (Part 1) : 2010", date: "01 April 2021" },
+  { id: 61, product: "Television other than Plasma/ LCD/LED TVs", isNumber: "IS 616 : 2017", date: "01 April 2021" },
+  { id: 62, product: "Rice Cooker", isNumber: "IS 302-2-15 : 2009", date: "01 April 2021" },
+  { id: 63, product: "Wireless Microphone", isNumber: "IS 616 : 2017", date: "01 October 2021" },
+  { id: 64, product: "Digital Camera", isNumber: "IS 13252 (Part 1) : 2010", date: "01 October 2021" },
+  { id: 65, product: "Video Camera", isNumber: "IS 616 : 2017", date: "01 October 2021" },
+  { id: 66, product: "Webcam (Finished Product)", isNumber: "IS 616 : 2017", date: "01 October 2021" },
+  { id: 67, product: "Smart Speakers (with and without Display)", isNumber: "IS 616 : 2017", date: "01 October 2021" },
+  { id: 68, product: "Dimmers for LED products", isNumber: "IS 60669-2-1: 2008", date: "01 October 2021" },
+  { id: 69, product: "Bluetooth Speakers", isNumber: "IS 616 : 2017", date: "01 October 2021" },
+  { id: 70, product: "Ortho Phosphoric Acid", isNumber: "IS 798 : 2020", date: "12 December 2021" },
+  { id: 71, product: "Polyphosphoric Acid", isNumber: "IS 17439:2020", date: "24 December 2021" },
+  { id: 72, product: "Cotton Bales", isNumber: "IS 12171:2019", date: "03 March 2023" },
+  { id: 73, product: "Trimethyl Phosphite Technical Grade", isNumber: "IS 17412:2020", date: "03 March 2023" },
+  { id: 74, product: "Television Sets", isNumber: "IS 18112:2022", date: "26 April 2023" }
+];
 
 const CRSRegistration = () => {
   return (
@@ -24,7 +110,7 @@ const CRSRegistration = () => {
       <BISCRSHero />
       <BISCRSIndex />
       <BISCRSContent />
-      <Footer/>
+      <Footer />
       <ScrollToTopButton />
     </>
   );
@@ -80,7 +166,7 @@ const BISCRSHero = () => {
         </div>
 
         {/* Right Side */}
-       <ServiceContactForm/>
+        <ServiceContactForm />
       </div>
     </main>
   );
@@ -121,9 +207,9 @@ const BISCRSIndex = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        mobileMenuRef.current && 
+        mobileMenuRef.current &&
         !mobileMenuRef.current.contains(event.target) &&
-        toggleButtonRef.current && 
+        toggleButtonRef.current &&
         !toggleButtonRef.current.contains(event.target)
       ) {
         setIsMobileMenuOpen(false);
@@ -195,29 +281,28 @@ const BISCRSIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
           {activeSection}
         </div>
-        <button 
+        <button
           ref={toggleButtonRef}
           onClick={toggleMobileMenu}
           className="p-2 rounded-md hover:bg-blue-100 transition-colors"
           aria-label="Toggle menu"
         >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="h-6 w-6 text-blue-900" 
-            fill="none" 
-            viewBox="0 0 24 24" 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-blue-900"
+            fill="none"
+            viewBox="0 0 24 24"
             stroke="currentColor"
           >
-   {isMobileMenuOpen ? (
+            {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             ) : (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -228,7 +313,7 @@ const BISCRSIndex = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           ref={mobileMenuRef}
           className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
         >
@@ -246,11 +331,10 @@ const BISCRSIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection 
-                    ? "bg-blue-50 text-blue-900 font-semibold" 
-                    : "text-blue-950 hover:bg-blue-50"
-                }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -279,16 +363,14 @@ const BISCRSIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection ? "text-blue-900" : "text-blue-950 group-hover:text-blue-900"
-              }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection ? "text-blue-900" : "text-blue-950 group-hover:text-blue-900"
+                }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-              }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                }`}
             />
           </div>
         ))}
@@ -311,9 +393,139 @@ const BISCRSContent = () => {
         </div>
       </div>
       <Services />
-      <BISCProductTable />
+      <CISProductTable />
       <ServiceFaq />
     </div>
+  );
+};
+
+const CISProductTable = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 20;
+
+  const filteredProducts = productsData.filter(
+    (product) =>
+      product.product.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      product.isNumber.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery]);
+
+  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = filteredProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  return (
+    <section className="w-full pb-12">
+      <div className="max-w-[88rem] mx-auto px-4 md:px-12">
+        <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mb-4">
+          Products Under BIS CRS Registration
+        </h2>
+
+        <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-8">
+          The following table lists products that require BIS CRS registration in India along with their applicable Indian Standard (IS) numbers and implementation dates.
+        </p>
+
+        <div className="relative mb-6">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+            <Search className="w-5 h-5 text-gray-400" />
+          </div>
+          <input
+            type="text"
+            placeholder="Search for Products by name or IS number..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
+          />
+        </div>
+
+        <div className="rounded-md border bg-white shadow-sm">
+          <Table>
+            <TableHeader>
+              <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
+                  S.No
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
+                  Product
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
+                  IS No.
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
+                  Date of Implementation
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {currentProducts.map((item) => (
+                <TableRow key={item.id}>
+                  <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
+                    {item.id}
+                  </TableCell>
+                  <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
+                    {item.product}
+                  </TableCell>
+                  <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
+                    {item.isNumber}
+                  </TableCell>
+                  <TableCell className="font-geist text-base md:text-lg text-left">
+                    {item.date}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+        {totalPages > 1 && (
+          <div className="flex justify-between items-center mt-6">
+            <div className="font-geist text-sm text-gray-700">
+              Showing {indexOfFirstProduct + 1} to{" "}
+              {Math.min(indexOfLastProduct, filteredProducts.length)} of{" "}
+              {filteredProducts.length} results
+            </div>
+            <div className="flex items-center">
+              <button
+                onClick={handlePrevPage}
+                disabled={currentPage === 1}
+                className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Previous
+              </button>
+              <span className="px-4 py-2 font-geist text-sm">
+                Page {currentPage} of {totalPages}
+              </span>
+              <button
+                onClick={handleNextPage}
+                disabled={currentPage === totalPages}
+                className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
   );
 };
 
@@ -332,10 +544,10 @@ const ServiceFaq = () => {
         </p>
 
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
-        <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-            <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-            What services do you offer for CDSCO compliance?
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                What services do you offer for CDSCO compliance?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
                 We offer comprehensive CDSCO regulatory compliance services
@@ -668,10 +880,10 @@ const BISCRSContentLeft = () => {
 
         <ServicesSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-     
-         {/* Review Section */}
-         <ReviewSection />
-     
+
+        {/* Review Section */}
+        <ReviewSection />
+
       </div>
     </div>
   );

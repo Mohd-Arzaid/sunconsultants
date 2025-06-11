@@ -937,7 +937,7 @@ const LogoTicker = () => {
 export const Services = () => {
   return (
     <div className="pt-10 md:pt-8 pb-8  md:pb-16 bg-white overflow-x-hidden ">
-      <div className="max-w-[84rem] w-full mx-auto">
+      <div className="max-w-[82rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             {/* <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
