@@ -23,28 +23,28 @@ export const BISFM = () => {
   return (
     <>
       <Helmet>
-        <title>BIS FMCS Certification | Foreign Manufacturer Certification Scheme | Sun Consultants</title>
-        <meta name="description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. Trusted BIS consultants since 2013. ✓ Fast Processing ✓ Expert Guidance" />
+        <title>BIS FMCS Certification | Foreign Manufacturer Certification Scheme | Sun Certifications</title>
+        <meta name="description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. Trusted BIS Certifications since 2013. ✓ Fast Processing ✓ Expert Guidance" />
         <meta name="keywords" content="BIS FMCS, Foreign Manufacturer Certification Scheme, ISI Mark for foreign manufacturers, BIS certification for exports, BIS license for foreign companies, BIS compliance, Indian Standards certification" />
-        <meta name="author" content="Sun Consultants & Engineers" />
+        <meta name="author" content="Sun Certifications & Engineers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
+
         {/* Open Graph Tags */}
         <meta property="og:title" content="BIS FMCS Certification | Foreign Manufacturer Certification Scheme" />
         <meta property="og:description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Consultants & Engineers" />
+        <meta property="og:site_name" content="Sun Certifications & Engineers" />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:image" content="https://sunconsultants.com/og-image.jpg" />
-        
+
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@ConsultantsSun" />
+        <meta name="twitter:site" content="@CertificationsSun" />
         <meta name="twitter:title" content="BIS FMCS Certification | Foreign Manufacturer Certification Scheme" />
         <meta name="twitter:description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India." />
         <meta name="twitter:image" content="https://sunconsultants.com/twitter-image.jpg" />
-        
+
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
         <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -57,7 +57,7 @@ export const BISFM = () => {
             "serviceType": "BIS FMCS Certification",
             "provider": {
               "@type": "Organization",
-              "name": "Sun Consultants & Engineers",
+              "name": "Sun Certifications & Engineers",
               "url": window.location.href,
               "logo": "https://sunconsultants.com/logo.png",
               "contactPoint": {
@@ -454,7 +454,7 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our consultants work to expedite these
+                registrations 2-4 months. Our Certifications work to expedite these
                 timelines through proper documentation and regulatory strategy.
               </AccordionContent>
             </AccordionItem>
@@ -493,7 +493,7 @@ const ServiceFaq = () => {
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, consultant fees, and
+                vary by product type), testing fees, Certifications fees, and
                 potential inspection costs. We provide transparent quotations
                 based on your specific product and requirements, with options
                 for different service levels to fit various budgets.
@@ -553,7 +553,7 @@ const ServiceFaq = () => {
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
                 streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our consultants keep
+                safety monitoring and quality control. Our Certifications keep
                 abreast of all changes and adjust strategies accordingly.
               </AccordionContent>
             </AccordionItem>
@@ -620,9 +620,9 @@ const BISFMContentLeft = () => {
 
 const NominationSection = () => {
   return (
-    <section 
-      id="nomination" 
-      className="flex flex-col scroll-mt-20" 
+    <section
+      id="nomination"
+      className="flex flex-col scroll-mt-20"
       aria-label="Authorized Indian Representative Nomination"
     >
       <header className="flex w-full items-center gap-3">
@@ -693,7 +693,7 @@ const DocumentsSection = () => {
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        BIS Certification Documents | Sun Consultants & Engineers
+        BIS Certification Documents | Sun Certifications & Engineers
       </p>
 
       {/* Eligibility Content */}
@@ -729,7 +729,7 @@ const DocumentsSection = () => {
         <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
           All of the above documents are required in certain formats given by
           BIS which are to be submitted during the application. As FMCS
-          consultants, we at Sun Consultants and Engineers are experts for
+          Certifications, we at Sun Certifications and Engineers are experts for
           preparation of all the documents above in formats prescribed by BIS,
           contact us for more details at
           <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
@@ -755,25 +755,25 @@ const ProcessSection = () => {
     <section id="process" className="flex flex-col scroll-mt-20">
       {/* Process */}
       <div className="flex w-full items-center gap-3">
-      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-      Process
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Process
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-      BIS License Process for Foreign Manufacturers
+        BIS License Process for Foreign Manufacturers
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      BIS FMCS Process: Application, audit, testing, and approval. Contact us!
+        BIS FMCS Process: Application, audit, testing, and approval. Contact us!
       </p>
 
       {/* Eligibility Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-         <div className="flex mt-[-20px] gap-10">
+        <div className="flex mt-[-20px] gap-10">
           {/* Points */}
           <PointsListTwo
             points={[
@@ -829,20 +829,20 @@ const ValiditySection = () => {
     <section id="validity" className="flex flex-col scroll-mt-20">
       {/* Validity */}
       <div className="flex w-full items-center gap-3">
-      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-      Validity
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Validity
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-      BIS License Validity, Renewal & Fees
+        BIS License Validity, Renewal & Fees
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Valid for 1 or 2 years, renewal requires documents & fees. Late
+        Valid for 1 or 2 years, renewal requires documents & fees. Late
         applications incur a fee.
       </p>
 
@@ -865,15 +865,15 @@ const PaymentSection = () => {
     <section id="payment" className="flex flex-col scroll-mt-20">
       {/* Payment */}
       <div className="flex w-full items-center gap-3">
-      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-      Payment
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Payment
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-      Stages of payment of BIS fees:
+        Stages of payment of BIS fees:
       </h3>
 
       {/* Description */}
@@ -914,30 +914,30 @@ const SurveillanceSection = () => {
     <section id="surveillance" className="flex flex-col scroll-mt-20">
       {/* Surveillance */}
       <div className="flex w-full items-center gap-3">
-      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-      Surveillance
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Surveillance
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-      BIS Certificate Surveillance Process :
+        BIS Certificate Surveillance Process :
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      BIS Surveillance: Routine checks ensure compliance; failures risk
+        BIS Surveillance: Routine checks ensure compliance; failures risk
         cancellation.
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      BIS conducts surveillance on the manufacturers to ensure that the
+        BIS conducts surveillance on the manufacturers to ensure that the
         standards are being followed as per the guidelines.
       </div>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           This is done in 2 ways:
         </span>
       </div>
@@ -973,27 +973,27 @@ const ConsultingSection = () => {
     <section id="consulting" className="flex flex-col scroll-mt-20">
       {/* Consulting */}
       <div className="flex w-full items-center gap-3">
-      <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-      Consulting
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Consulting
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Role of Sun Consultants & Engineers?
+        Role of Sun Certifications & Engineers?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Sun Consultants & Engineers ensure hassle-free BIS FMCS licensing
+        Sun Certifications & Engineers ensure hassle-free BIS FMCS licensing
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
         From collection of documents to getting the final license, it is a
         exhaustive and tedious procedure, and requires technical know-how and
-        experience. Being a FMCS Consultant, this is exactly where Sun
-        Consultants and Engineers come into the picture.
+        experience. Being a FMCS Certifications, this is exactly where Sun
+        Certifications and Engineers come into the picture.
       </div>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
@@ -1003,7 +1003,7 @@ const ConsultingSection = () => {
         from the beginning of the procedure to the grant of BIS license.
       </div>
 
-        <div className="flex mt-[16px] md:mt-[24px] gap-10">
+      <div className="flex mt-[16px] md:mt-[24px] gap-10">
         {/* Points */}
         <PointsListTwo
           points={[
@@ -1016,7 +1016,7 @@ const ConsultingSection = () => {
             "Technical assistance for the setup of in-house lab as per the standard requirements",
             "Assisting the manufacturer in understanding the post license compliances to be followed",
           ]}
-          heading="Below is the scope of work of Sun Consultants & Engineers:"
+          heading="Below is the scope of work of Sun Certifications & Engineers:"
         />
       </div>
     </section>

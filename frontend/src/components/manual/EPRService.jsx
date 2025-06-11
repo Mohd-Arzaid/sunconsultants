@@ -1,4 +1,3 @@
-
 import { Separator } from "@/components/ui/separator";
 import React, { useState, useEffect, useRef } from "react";
 import BISSRimg from "../../assets/images/BISSRimg.png"
@@ -77,7 +76,7 @@ const EPRHero = () => {
         </div>
 
         {/* Right Side */}
-        <ServiceContactForm/>
+        <ServiceContactForm />
       </div>
     </header>
   );
@@ -112,9 +111,9 @@ const EPRIndex = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        mobileMenuRef.current && 
+        mobileMenuRef.current &&
         !mobileMenuRef.current.contains(event.target) &&
-        toggleButtonRef.current && 
+        toggleButtonRef.current &&
         !toggleButtonRef.current.contains(event.target)
       ) {
         setIsMobileMenuOpen(false);
@@ -192,29 +191,28 @@ const EPRIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
           {activeSection}
         </div>
-        <button 
+        <button
           ref={toggleButtonRef}
           onClick={toggleMobileMenu}
           className="p-2 rounded-md hover:bg-blue-100 transition-colors"
           aria-label="Toggle menu"
         >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="h-6 w-6 text-blue-900" 
-            fill="none" 
-            viewBox="0 0 24 24" 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-blue-900"
+            fill="none"
+            viewBox="0 0 24 24"
             stroke="currentColor"
           >
-             {isMobileMenuOpen ? (
+            {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             ) : (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -225,7 +223,7 @@ const EPRIndex = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           ref={mobileMenuRef}
           className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
         >
@@ -243,11 +241,10 @@ const EPRIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection 
-                    ? "bg-blue-50 text-blue-900 font-semibold" 
-                    : "text-blue-950 hover:bg-blue-50"
-                }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -273,18 +270,16 @@ const EPRIndex = () => {
           <div
             key={item}
             onClick={() => handleItemClick(item)}
-            className={`relative cursor-pointer group ${
-              item === activeSection
-                ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
-                : ""
-            }`}
+            className={`relative cursor-pointer group ${item === activeSection
+              ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
+              : ""
+              }`}
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
-              }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
+                }`}
             >
               {item}
             </div>
@@ -304,10 +299,10 @@ const EPRContent = () => {
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* <nav className="flex-1" aria-label="EPR Content Navigation"> */}
-            <EPRContentLeft />
+          <EPRContentLeft />
           {/* </nav> */}
           {/* <aside className="w-full md:w-[400px]"> */}
-            <ServiceContentRight />
+          <ServiceContentRight />
           {/* </aside>. */}
         </div>
       </div>
@@ -354,7 +349,7 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our consultants work to expedite these
+                registrations 2-4 months. Our Certifications work to expedite these
                 timelines through proper documentation and regulatory strategy.
               </AccordionContent>
             </AccordionItem>
@@ -393,7 +388,7 @@ const ServiceFaq = () => {
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, consultant fees, and
+                vary by product type), testing fees, Certifications fees, and
                 potential inspection costs. We provide transparent quotations
                 based on your specific product and requirements, with options
                 for different service levels to fit various budgets.
@@ -453,7 +448,7 @@ const ServiceFaq = () => {
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
                 streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our consultants keep
+                safety monitoring and quality control. Our Certifications keep
                 abreast of all changes and adjust strategies accordingly.
               </AccordionContent>
             </AccordionItem>
@@ -895,16 +890,16 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Role of Sun Consultants & Engineers?
+        Role of Sun Certifications & Engineers?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Sun Consultants & Engineers ensure hassle-free EPR licensing
+        Sun Certifications & Engineers ensure hassle-free EPR licensing
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As EPR registration consultants, our job is to ensure that the tiring
+        As EPR registration Certifications, our job is to ensure that the tiring
         procedures that we have listed above become a cake-walk for you. Right
         from the beginning i.e. from the stage of collection of documents from
         the foreign manufacturers or preparation of documents for the Indian
@@ -913,7 +908,7 @@ const ConsultingSection = () => {
       </div>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        We are one of the most experienced EPR consultants in the field of
+        We are one of the most experienced EPR Certifications in the field of
         E-waste management,we provide apex quality of services possible to all
         our national and international clients.
       </div>
@@ -929,7 +924,7 @@ const ReviewSection = () => {
       </h2>
       <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
         <div className="flex gap-6">
-          <button 
+          <button
             className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group"
             aria-label="Mark content as helpful"
           >
@@ -945,7 +940,7 @@ const ReviewSection = () => {
             <span>It was helpful</span>
           </button>
 
-          <button 
+          <button
             className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group"
             aria-label="Mark content as not helpful"
           >

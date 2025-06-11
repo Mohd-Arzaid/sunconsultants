@@ -24,7 +24,7 @@ export const PlasticWaste = () => {
       <PWMRHero />
       <PWMRIndex />
       <PWMRContent />
-      <Footer/>
+      <Footer />
       <ScrollToTopButton />
     </>
   );
@@ -79,7 +79,7 @@ const PWMRHero = () => {
         </div>
 
         {/* Right Side */}
-   <ServiceContactForm/>
+        <ServiceContactForm />
       </div>
     </main>
   );
@@ -201,9 +201,8 @@ const PWMRIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -223,7 +222,7 @@ const PWMRIndex = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-         {isMobileMenuOpen ? (
+            {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             ) : (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -243,11 +242,10 @@ const PWMRIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
-                }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -267,20 +265,18 @@ const PWMRIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
-              }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
+                }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
-              }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
+                }`}
             />
           </div>
         ))}
@@ -344,7 +340,7 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our consultants work to expedite these
+                registrations 2-4 months. Our Certifications work to expedite these
                 timelines through proper documentation and regulatory strategy.
               </AccordionContent>
             </AccordionItem>
@@ -383,7 +379,7 @@ const ServiceFaq = () => {
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, consultant fees, and
+                vary by product type), testing fees, Certifications fees, and
                 potential inspection costs. We provide transparent quotations
                 based on your specific product and requirements, with options
                 for different service levels to fit various budgets.
@@ -783,7 +779,7 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Sun Consultants: Plastic Waste License Experts
+        Sun Certifications: Plastic Waste License Experts
       </h3>
 
       {/* Description */}
@@ -792,7 +788,7 @@ const ConsultingSection = () => {
       </p>
 
       <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        As Plastic Waste Management registration consultants, our job is to
+        As Plastic Waste Management registration Certifications, our job is to
         ensure that the tiring procedures that we have listed above become a
         cake-walk for you. Right from the beginning, i.e. from the stage of
         collection of documents from the foreign manufacturers or preparation of

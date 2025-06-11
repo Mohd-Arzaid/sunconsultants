@@ -15,29 +15,29 @@ const Services = () => {
 
     <div className="pt-10 md:pt-12 pb-12  md:pb-16 custom-radial-gradient overflow-x-hidden ">
       <div className="max-w-[84rem] w-full mx-auto">
- 
+
         <div className="flex flex-col items-center justify-center">
-        <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-          <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
-            Our Services
-          </h2>
-          </BoxReveal>
-          
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-          <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
-            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-            <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-              India's Best Certificate Consultant
-            </span>
-            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-          </div>
+            <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
+              Our Services
+            </h2>
+          </BoxReveal>
+
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+                India's Best Certificate Consultant
+              </span>
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            </div>
           </BoxReveal>
         </div>
 
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
-       
-   
+
+
           <Link to="/services/bis-mark-foreign" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img

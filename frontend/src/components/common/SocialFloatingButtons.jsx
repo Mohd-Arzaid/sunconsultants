@@ -14,10 +14,9 @@ const SocialFloatingButtons = () => {
   }, []);
 
   return (
-    <div 
-      className={`hidden md:flex fixed bottom-4 left-4 md:bottom-6 md:left-6  flex-col gap-3 md:gap-4 z-50 transition-all duration-700 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+    <div
+      className={`hidden md:flex fixed bottom-4 left-4 md:bottom-6 md:left-6  flex-col gap-3 md:gap-4 z-[80] transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
     >
       <a
         href="https://wa.me/yourphonenumber" // Replace with your WhatsApp number
@@ -32,7 +31,7 @@ const SocialFloatingButtons = () => {
           Chat on WhatsApp
         </span>
       </a>
-      
+
       <a
         href="tel:yourphonenumber" // Replace with your phone number
         className="group flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-blue-400/50 relative overflow-hidden"

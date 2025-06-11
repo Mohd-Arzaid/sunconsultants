@@ -39,8 +39,8 @@ import { Button } from "@/components/ui/button";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import { toast } from "@/hooks/use-toast";
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 // Latest New Import
@@ -57,10 +57,9 @@ import { IconArrowNarrowRight } from "@tabler/icons-react";
 // Countries Import
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
-// Certification Import 
+// Certification Import
 import CertificationImage from "../assets/images/certone.jpg";
 import CertificationImageTwo from "../assets/images/certtwo.jpg";
-
 
 import Thailand from "../assets/images/Thailand.png";
 import Vietnam from "../assets/images/Vietnam.png";
@@ -85,7 +84,7 @@ import Slovenia from "../assets/images/Slovenia.png";
 import Austria from "../assets/images/Austria.png";
 import USA from "../assets/images/USA.png";
 import Denmark from "../assets/images/Denmark.png";
-
+import { OurServices } from "./About";
 
 // import { ImagesSlider } from "@/components/ui/images-slider";
 
@@ -94,44 +93,43 @@ const Home = () => {
     <main className="w-full">
       <Helmet>
         <title>
-          BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO - Sun
-          Consultants & Engineers
+          BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO - Sun Certifications & Engineers
         </title>
         <meta
           name="description"
-          content="Sun Consultants is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license. Trusted since 2013."
+          content="Sun Certifications is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license. Trusted since 2013."
         />
         <meta
           name="keywords"
           content="BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license, ISI mark, BIS registration"
         />
-        <meta name="author" content="Sun Consultants & Engineers" />
+        <meta name="author" content="Sun Certifications & Engineers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}
         <meta
           property="og:title"
-          content="BIS Certification consultants, LMPC certificate, EPR Certificate, CDSCO"
+          content="BIS Certification Certifications, LMPC certificate, EPR Certificate, CDSCO"
         />
         <meta
           property="og:description"
-          content="Sun Consultants is the best BIS certification consultant in India. We provide comprehensive certification services for Indian and foreign manufacturers."
+          content="Sun Certifications is the best BIS certification Certifications in India. We provide comprehensive certification services for Indian and foreign manufacturers."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Consultants & Engineers" />
+        <meta property="og:site_name" content="Sun Certifications & Engineers" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@ConsultantsSun" />
+        <meta name="twitter:site" content="@CertificationsSun" />
         <meta
           name="twitter:title"
           content="BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO"
         />
         <meta
           name="twitter:description"
-          content="Sun Consultants is the best BIS certification consultant in India."
+          content="Sun Certifications is the best BIS certification Certifications in India."
         />
 
         {/* Canonical URL */}
@@ -143,11 +141,11 @@ const Home = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Sun Consultants & Engineers",
+            name: "Sun Certifications & Engineers",
             url: "https://sunconsultants.co.in",
             logo: "https://sunconsultants.co.in/assets/img/suncons.png",
             description:
-              "Sun Consultants is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license.",
+              "Sun Certifications is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license.",
             address: {
               "@type": "PostalAddress",
               streetAddress:
@@ -163,7 +161,7 @@ const Home = () => {
               contactType: "customer service",
               email: "info@sunconsultants.co.in",
             },
-            sameAs: ["https://twitter.com/ConsultantsSun"],
+            sameAs: ["https://twitter.com/CertificationsSun"],
           })}
         </script>
 
@@ -174,7 +172,7 @@ const Home = () => {
             serviceType: "Certification Services",
             provider: {
               "@type": "Organization",
-              name: "Sun Consultants & Engineers",
+              name: "Sun Certifications & Engineers",
             },
             areaServed: {
               "@type": "Country",
@@ -244,7 +242,8 @@ const Home = () => {
       </section>
 
       <section aria-label="Our Services" className="w-full">
-        <Services />
+        <OurServices />
+        {/* <Services /> */}
       </section>
 
       <section aria-label="Countries We Serve" className="w-full">
@@ -290,27 +289,36 @@ const Home = () => {
 
 export default Home;
 
-
-
 const CertificationAndAchievements = () => {
+  const controls = useAnimationControls();
+
+  useEffect(() => {
+    controls.start({
+      translateX: "-50%",
+      transition: {
+        duration: 30, // Adjust duration as needed
+        repeat: Infinity,
+        ease: "linear",
+        repeatType: "loop",
+      },
+    });
+  }, [controls]);
+
   // Gallery images from InternationalAudits.jsx
   const galleryImages = [
     {
       id: 1,
-      image:
-      CertificationImage,
+      image: CertificationImage,
       title: "Medical Chennai 2023",
     },
     {
       id: 2,
-      image:
-      CertificationImageTwo,
+      image: CertificationImageTwo,
       title: "Medical Kolkata 2022",
     },
     {
       id: 3,
-      image:
-      CertificationImage,
+      image: CertificationImage,
       title: "Narela Association Seminar Footwear",
     },
     {
@@ -325,8 +333,7 @@ const CertificationAndAchievements = () => {
     },
     {
       id: 6,
-      image:
-      CertificationImageTwo,
+      image: CertificationImageTwo,
       title: "Medical 2023",
     },
   ];
@@ -335,44 +342,55 @@ const CertificationAndAchievements = () => {
     <div className="bg-white pt-8 py-1">
       <div className="max-w-[88rem] mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
-        Certification And Achievements
+          Certification And Achievements
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <Marquee className="flex items-center pb-8 [--duration:30s]">
-            {galleryImages.map((item) => (
-              <div
-                key={item.id}
-                className="relative min-w-[200px] max-w-[220px] bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)]"
-                style={{
-                  boxShadow:
-                    "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
-                }}
-              >
-                <div className="relative w-full h-[140px] md:h-[160px] overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                  {/* Gradient overlay for title */}
-                  {/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
-                    <span className="w-full text-center px-2 pb-2 text-sm md:text-base font-bold font-playfair text-white drop-shadow-lg tracking-wide">
-                      {item.title}
-                    </span>
-                  </div> */}
-                </div>
-              </div>
+          <motion.div
+            animate={controls}
+            onMouseEnter={() => controls.stop()}
+            onMouseLeave={() => {
+              controls.start({
+                translateX: "-50%",
+                transition: {
+                  duration: 30,
+                  repeat: Infinity,
+                  ease: "linear",
+                  repeatType: "loop",
+                },
+              });
+            }}
+            className="flex items-center pb-8 [--duration:30s]"
+          >
+            {[...Array(2)].map((_, i) => (
+              <React.Fragment key={i}>
+                {galleryImages.map((item) => (
+                  <div
+                    key={item.id}
+                    className="relative min-w-[200px] max-w-[220px] bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)] mx-4" // Added mx-4 for spacing
+                    style={{
+                      boxShadow:
+                        "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
+                    }}
+                  >
+                    <div className="relative w-full h-[140px] md:h-[160px] overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </React.Fragment>
             ))}
-          </Marquee>
+          </motion.div>
         </div>
       </div>
     </div>
   );
 };
-
-
 
 const VideoSection = () => {
   const videos = [
@@ -512,7 +530,7 @@ const WebinarSeminarMarquee = () => {
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
+          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]" pauseOnHover={true}>
             {galleryImages.map((item) => (
               <div
                 key={item.id}
@@ -592,7 +610,7 @@ const AuditsMarquee = () => {
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]">
+          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]" pauseOnHover={true}>
             {galleryImages.map((item) => (
               <div
                 key={item.id}
@@ -644,7 +662,7 @@ const Hero = () => {
               <figure className="m-0">
                 <img
                   src={HeroImage}
-                  alt="Sun Consultants And Engineers - Professional Certification Services"
+                  alt="Sun Certifications And Engineers - Professional Certification Services"
                   width="740"
                   height="515"
                   loading="lazy"
@@ -717,7 +735,7 @@ const Hero = () => {
             <div className="flex flex-col gap-8 mt-10 mb-16">
               <header>
                 <WordPullUp
-                  words="Sun Consultants And Engineers"
+                  words="Sun Certifications And Engineers"
                   className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
                 />
               </header>
@@ -752,7 +770,7 @@ const Hero = () => {
             <figure className="m-0">
               <img
                 src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg"
-                alt="Sun Consultants And Engineers - Professional Certification Services"
+                alt="Sun Certifications And Engineers - Professional Certification Services"
                 className="w-80 md:w-96 drop-shadow-xl"
               />
             </figure>
@@ -768,7 +786,7 @@ const LogoTicker = () => {
   return (
     <div className="h-20 md:h-28 bg-[#B9DEEB]">
       <div className="max-w-[84rem] mx-auto h-full ">
-      <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent_0%,black_5%,black_95%,transparent_100%)]">
+        <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent_0%,black_5%,black_95%,transparent_100%)]">
           <motion.div
             animate={{
               translateX: "-50%",
@@ -784,35 +802,35 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoOne}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoThree}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoFour}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoFive}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoSix}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
@@ -820,42 +838,42 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoOne}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoTwo}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoThree}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoFour}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoFive}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoSix}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
@@ -863,7 +881,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoOne}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -871,7 +889,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoTwo}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -879,7 +897,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoThree}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -887,7 +905,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoFour}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -895,7 +913,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoFive}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -903,7 +921,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoSix}
-                alt="Sun Consultants And Engineers - Trusted Partner Company"
+                alt="Sun Certifications And Engineers - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -948,8 +966,8 @@ export const Services = () => {
         </div>
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
-         {/* 1 */}
-         <Link
+          {/* 1 */}
+          <Link
             to="/services/bis-mark-foreign"
             className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20"
             aria-label="BIS Mark for Foreign Manufacturers"
@@ -1077,7 +1095,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              EPR Certificate Consultants
+              EPR Certificate Certifications
             </p>
           </Link>
 
@@ -1095,10 +1113,9 @@ export const Services = () => {
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              LMPC Certificate Consultants
+              LMPC Certificate Certifications
             </p>
           </Link>
-
         </div>
       </div>
     </div>
@@ -1297,90 +1314,117 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             />
 
             <div className="w-full md:w-[600px]">
-              <style dangerouslySetInnerHTML={{ __html: `
-                .react-tel-input .form-control {
-                  width: 100%;
-                  height: 56px;
-                  font-size: 17px;
-                  border-radius: 12px;
-                  border: 1px solid rgba(59, 130, 246, 0.4);
-                  font-family: 'Poppins', sans-serif;
-                  color: #7E7E7E;
-                  font-weight: 600;
-                  padding-left: 60px !important;
-                }
-                
-                @media (min-width: 768px) {
-                  .react-tel-input .form-control {
-                    height: 72px;
-                    font-size: 20px;
-                    border-radius: 15px;
-                  }
-                }
-                
-                .react-tel-input .flag-dropdown {
-                  background-color: transparent;
-                  border: 1px solid rgba(59, 130, 246, 0.4);
-                  border-right: none;
-                  border-top-left-radius: 12px;
-                  border-bottom-left-radius: 12px;
-                }
-                
-                @media (min-width: 768px) {
-                  .react-tel-input .flag-dropdown {
-                    border-top-left-radius: 15px;
-                    border-bottom-left-radius: 15px;
-                  }
-                }
-                
-                .react-tel-input .selected-flag {
-                  padding: 0 16px 0 16px;
-                  height: 54px;
-                  background-color: transparent;
-                }
-                
-                @media (min-width: 768px) {
-                  .react-tel-input .selected-flag {
-                    height: 70px;
-                  }
-                }
-                
-                .react-tel-input .country-list {
-                  border-radius: 8px;
-                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-                  border: 1px solid rgba(59, 130, 246, 0.4);
-                  margin-top: 6px;
-                }
-                
-                .react-tel-input .country-list .search-box {
-                  margin: 10px;
-                }
-                
-                .react-tel-input .country-list .search-box input {
-                  border-radius: 6px;
-                  border: 1px solid rgba(59, 130, 246, 0.4);
-                  font-family: 'Poppins', sans-serif;
-                  padding: 8px;
-                }
-                
-                .react-tel-input .country-list .country.highlight,
-                .react-tel-input .country-list .country:hover {
-                  background-color: rgba(59, 130, 246, 0.1);
-                }
-              `}} />
-              <PhoneInput
-                country={'in'}
-                value={phoneNumber}
-                onChange={handlePhoneChange}
-                inputProps={{
-                  name: 'phoneNumber',
-                  required: true,
-                  disabled: loading,
-                  placeholder: "Phone Number *",
+              <style
+                dangerouslySetInnerHTML={{
+                  __html: `
+    .react-tel-input {
+      width: 100%;
+    }
+    .react-tel-input .form-control {
+      width: 100%;
+      height: 56px;
+      font-size: 17px;
+      border-radius: 12px;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      font-family: 'Poppins', sans-serif;
+      color: #7E7E7E;
+      font-weight: 600;
+      padding-left: 56px !important;
+      background: #fff;
+      box-shadow: none;
+      transition: border 0.2s;
+    }
+    @media (min-width: 768px) {
+      .react-tel-input .form-control {
+        height: 72px;
+        font-size: 20px;
+        border-radius: 15px;
+      }
+    }
+    .react-tel-input .flag-dropdown {
+      background: #fff;
+      border: none;
+      border-radius: 12px 0 0 12px;
+      box-shadow: none;
+      width: 56px;
+      height: 56px;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    @media (min-width: 768px) {
+      .react-tel-input .flag-dropdown {
+        border-radius: 15px 0 0 15px;
+        width: 72px;
+        height: 72px;
+      }
+    }
+    .react-tel-input .selected-flag {
+      height: 100%;
+      padding: 0 0 0 16px;
+      background: transparent;
+      border-radius: 12px 0 0 12px;
+      display: flex;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .react-tel-input .selected-flag {
+        border-radius: 15px 0 0 15px;
+      }
+    }
+    .react-tel-input .country-list {
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      margin-top: 6px;
+      font-family: 'Poppins', sans-serif;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+    }
+    .react-tel-input .country-list::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+    .react-tel-input .country-list .search-box {
+      margin: 10px;
+    }
+    .react-tel-input .country-list .search-box input {
+      border-radius: 6px;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      font-family: 'Poppins', sans-serif;
+      padding: 8px;
+    }
+    .react-tel-input .country-list .country.highlight,
+    .react-tel-input .country-list .country:hover {
+      background-color: rgba(59, 130, 246, 0.1);
+    }
+    .react-tel-input .form-control:focus {
+      border: 1.5px solid #3b82f6;
+      outline: none;
+      box-shadow: 0 0 0 2px #b5ddeb33;
+    }
+  `,
                 }}
-                enableSearch={true}
-                disableSearchIcon={false}
               />
+
+              <div className="w-full md:w-[600px]">
+                {/* ...style block here... */}
+                <PhoneInput
+                  country={"in"}
+                  value={phoneNumber}
+                  onChange={handlePhoneChange}
+                  inputProps={{
+                    name: "phoneNumber",
+                    required: true,
+                    disabled: loading,
+                    placeholder: "Phone Number *",
+                    autoComplete: "tel",
+                  }}
+                  enableSearch={true}
+                  disableSearchIcon={false}
+                  inputClass="!bg-white !shadow-none"
+                  buttonClass="!bg-white"
+                />
+              </div>
             </div>
 
             <Input
@@ -1495,7 +1539,60 @@ const LatestNews = () => {
               {/* {currentWord} */}
               Updates
             </motion.div>
-            <span className="ml-1">📢</span>
+            {/* <span className="ml-1">📢</span> */}
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 511.995 511.995"
+              xmlSpace="preserve"
+              fill="#000000"
+              className="w-16 h-16 inline-block  align-center"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  className="fill-[#522087]"
+                  d="M386.05,181.439c11.98,10.72,21.281,25.537,26.167,37.832c9.616,24.118,11.507,51.862,2.523,76.768 c-5.833,16.079-10.877,24.591-23.487,39.566l15.606,15.133c32-29.32,40.197-78.976,33.103-116.493 c-1.419-7.093-3.94-15.921-7.093-23.33c-7.409-17.183-15.764-30.424-31.369-45.399l-15.29,15.921h-0.158V181.439z M321.734,227.31 c20.019,20.177,18.443,51.862,2.049,66.05l15.764,15.448c25.064-22.542,26.325-70.779-2.838-97.576l-14.818,16.079h-0.157V227.31z M353.892,204.453c31.212,29.478,32.946,76.138,3.468,110.345l15.606,15.133c17.813-14.187,28.216-48.709,27.429-71.566 c-0.946-23.33-11.35-54.069-31.685-69.99L353.892,204.453z"
+                ></path>
+                <path
+                  className="fill-[#522087]"
+                  d="M420.414,258.049c0.473,12.769-1.419,25.695-5.833,37.832c-5.833,16.079-10.877,24.591-23.487,39.566 l15.606,15.133c25.537-23.33,35.941-59.744,35.468-92.532h-21.596L420.414,258.049L420.414,258.049z M335.921,258.049h22.069 c1.104,19.389-5.517,38.778-18.759,50.758l-15.764-15.448C332.611,285.321,337.182,271.921,335.921,258.049z M378.168,258.049 h21.911v0.158c0.946,22.857-9.458,57.379-27.271,71.566l-15.606-15.133c14.66-17.024,21.596-37.202,21.123-56.749L378.168,258.049z"
+                ></path>
+                <path
+                  className="fill-[#ffffff]"
+                  d="M131.468,197.518h55.488v105.773c0,6.148-5.044,11.192-11.192,11.192h-44.295 c-6.148,0-11.192-5.044-11.192-11.192v-94.581C120.276,202.562,125.32,197.518,131.468,197.518z"
+                ></path>
+                <path
+                  className="fill-[#522087]"
+                  d="M120.276,303.921C92.532,303.763,69.833,282.325,69.833,256l0,0c0-26.325,22.7-47.763,50.443-47.921 C120.276,208.078,120.276,303.921,120.276,303.921z"
+                ></path>
+                <path
+                  className="fill-[#522087]"
+                  d="M259.783,132.413l-72.67,65.103v116.966l72.67,65.103c6.306,5.674,34.207,8.197,34.207,1.261V130.995 c0-6.936-27.901-4.414-34.207,1.261V132.413z"
+                ></path>
+                <path
+                  className="fill-[#ffffff]"
+                  d="M186.956,255.999v47.921c0,5.833-5.044,10.561-11.192,10.561h-44.295 c-6.148,0-11.192-4.729-11.192-10.561V256L186.956,255.999L186.956,255.999z"
+                ></path>
+                <g>
+                  <path
+                    className="fill-[#522087]"
+                    d="M120.276,303.921C92.532,303.763,69.833,282.325,69.833,256l0,0h50.443 C120.276,256,120.276,303.921,120.276,303.921z"
+                  ></path>
+                  <path
+                    className="fill-[#522087]"
+                    d="M186.956,255.999v58.483l72.67,65.103c6.306,5.674,34.207,8.197,34.207,1.261V255.842H186.798 L186.956,255.999z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
           </h2>
         </div>
 
@@ -1722,6 +1819,20 @@ const Countries = () => {
 
 // What Our Customers Say Section
 const WhatsOurCustomersSaySection = () => {
+  const controls = useAnimationControls(); // Initialize controls
+
+  useEffect(() => {
+    controls.start({
+      x: ["0%", "-100%"], // Animation for horizontal scroll
+      transition: {
+        duration: 20, // Adjust duration for desired speed
+        repeat: Infinity,
+        ease: "linear",
+        repeatType: "loop",
+      },
+    });
+  }, [controls]);
+
   const testimonials = [
     {
       id: 1,
@@ -1729,7 +1840,7 @@ const WhatsOurCustomersSaySection = () => {
       role: "Designer",
       image: TestimonialImage,
       content:
-        "Working with Sun Consultants was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
+        "Working with Sun Certifications was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
     },
     {
       id: 2,
@@ -1745,7 +1856,7 @@ const WhatsOurCustomersSaySection = () => {
       role: "App Developer",
       image: TestimonialImageThree,
       content:
-        "Their expertise in LMPC certification was invaluable for our product launch in India. The consultants provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
+        "Their expertise in LMPC certification was invaluable for our product launch in India. The Certifications provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
     },
     {
       id: 4,
@@ -1762,7 +1873,7 @@ const WhatsOurCustomersSaySection = () => {
       role: "Designer",
       image: TestimonialImage,
       content:
-        "Working with Sun Consultants was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
+        "Working with Sun Certifications was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
     },
     {
       id: 7,
@@ -1778,7 +1889,7 @@ const WhatsOurCustomersSaySection = () => {
       role: "App Developer",
       image: TestimonialImageThree,
       content:
-        "Their expertise in LMPC certification was invaluable for our product launch in India. The consultants provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
+        "Their expertise in LMPC certification was invaluable for our product launch in India. The Certifications provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
     },
     {
       id: 9,
@@ -1795,7 +1906,7 @@ const WhatsOurCustomersSaySection = () => {
       role: "Designer",
       image: TestimonialImage,
       content:
-        "Working with Sun Consultants was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
+        "Working with Sun Certifications was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
     },
   ];
 
@@ -1824,52 +1935,61 @@ const WhatsOurCustomersSaySection = () => {
         {/* Testimonials Scroll Container */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <motion.div
-            className="flex gap-8 md:gap-6 pt-10 pb-12"
-            animate={{
-              x: ["0%", "-100%"],
+            animate={controls} // Use controls here
+            onMouseEnter={() => controls.stop()} // Pause on hover
+            onMouseLeave={() => {
+              // Restart animation on mouse leave
+              controls.start({
+                x: ["0%", "-100%"],
+                transition: {
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear",
+                  repeatType: "loop",
+                },
+              });
             }}
-            transition={{
-              duration: 10,
-              repeat: Infinity,
-              ease: "linear",
-              repeatType: "loop",
-            }}
+            className="flex gap-8 md:gap-6 pt-10 pb-12" // Removed 'group' class
           >
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="min-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative"
-              >
-                <div className="flex items-center gap-4 mb-6">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30"
-                  />
-                  <div className="flex flex-col justify-center">
-                    <h4 className="font-roboto font-bold text-xl leading-tight drop-shadow-lg text-neutral-800">
-                      {testimonial.name}
-                    </h4>
-                    <p className="font-roboto text-neutral-700">
-                      {testimonial.role}
+            {[...Array(2)].map((_, i) => (
+              <React.Fragment key={i}>
+                {testimonials.map((testimonial) => (
+                  <div
+                    key={testimonial.id}
+                    className="min-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative" // Removed 'group-hover:[animation-play-state:paused]'
+                  >
+                    <div className="flex items-center gap-4 mb-6">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30"
+                      />
+                      <div className="flex flex-col justify-center">
+                        <h4 className="font-roboto font-bold text-xl leading-tight drop-shadow-lg text-neutral-800">
+                          {testimonial.name}
+                        </h4>
+                        <p className="font-roboto text-neutral-700">
+                          {testimonial.role}
+                        </p>
+                      </div>
+
+                      <div className="ml-auto absolute top-8 right-8 ">
+                        <svg
+                          className="w-10 h-10 text-[#64bfdd]"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <p className="font-poppins text-[#5a4a4a] leading-relaxed text-base">
+                      {testimonial.content}
                     </p>
                   </div>
-
-                  <div className="ml-auto absolute top-8 right-8 ">
-                    <svg
-                      className="w-10 h-10 text-[#64bfdd]"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                    </svg>
-                  </div>
-                </div>
-
-                <p className="font-poppins text-[#5a4a4a] leading-relaxed text-base">
-                  {testimonial.content}
-                </p>
-              </div>
+                ))}
+              </React.Fragment>
             ))}
           </motion.div>
         </div>

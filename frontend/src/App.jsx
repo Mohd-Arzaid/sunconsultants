@@ -50,7 +50,7 @@ function App() {
         <Route path="/ministry-updates" element={<MinistryUpdates />} />
         <Route path="/international-audits" element={<InternationalAudits />} />
         <Route path="/exhibition" element={<Exhibition />} />
-        <Route path="/seminar" element={<Seminar />} />
+        <Route path="/seminar" element={<Seminar />} /> 
 
         <Route path="/clients" element={<AllClients />} />
 
@@ -107,7 +107,7 @@ function App() {
         <Route
           path="/restriction-of-hazardous-substance-rohs-certificate"
           element={<ROHS />}
-        />
+        /> 
         <Route path="/bee-certification" element={<BEE />} />
         <Route path="/ce-certification" element={<CECertification />} />
         <Route path="/emi-emc-certification" element={<EMIEMC />} />
@@ -116,7 +116,7 @@ function App() {
       </Routes> 
       <MobileNav />
       <SocialFloatingButtons />
-      <ContactFormPopup />
+      {/* <ContactFormPopup /> */}
     </>
   );
 }

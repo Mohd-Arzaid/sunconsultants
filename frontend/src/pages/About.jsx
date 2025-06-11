@@ -1,4 +1,4 @@
-import { Bike, Globe, Play, User } from "lucide-react";
+import { Bike, Globe, Play, User, ChevronLeft, ChevronRight } from "lucide-react";
 import whychooseus from "../assets/images/whychooseus.jpg";
 import React, { useState } from "react";
 import Footer from "@/common/Footer";
@@ -15,7 +15,7 @@ const About = () => {
       <VideoShowcase />
       <OurServices />
       <Testimonials />
-    
+
       <Footer />
     </div>
   );
@@ -60,7 +60,7 @@ export default About;
 //               India's Best Certification
 //               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
 //             </span>{" "}
-//             Consultant
+//             Certifications
 //           </h1>
 
 //           <p className="font-poppins text-[#332156] w-[490px] text-[20px] leading-[40px] ">
@@ -122,7 +122,7 @@ const WhyChooseUs = () => {
         <div className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform md:hover:-translate-y-4">
           <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-        
+
           <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-3 md:p-4 rounded-full h-fit w-fit mb-4 md:mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <User className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
@@ -167,7 +167,7 @@ const WhyChooseUs = () => {
         {/* Feature Card 3 */}
         <div className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform md:hover:-translate-y-4">
           <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
-          
+
           <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-3 md:p-4 rounded-full h-fit w-fit mb-4 md:mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <Globe className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
@@ -195,7 +195,7 @@ const Stats = () => {
   return (
     <div className="max-w-[84rem] mx-auto  px-4 md:px-12 pb-16 md:pb-20">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8 ">
-       
+
 
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
@@ -272,9 +272,9 @@ const VideoShowcase = () => {
   );
 };
 
-const OurServices = () => {
+export const OurServices = () => {
   const navigate = useNavigate();
-  
+
   const services = [
     {
       id: 1,
@@ -374,6 +374,22 @@ const OurServices = () => {
 
         {/* Carousel */}
         <div className="relative">
+          {/* Left Arrow */}
+          <button
+            onClick={prevSlide}
+            className="absolute top-1/2 left-2 md:-left-6 -translate-y-1/2 z-20 rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#1A8781] bg-white/80 hover:bg-[#1A8781]/10 transition-all duration-300 shadow-lg"
+            aria-label="Previous"
+          >
+            <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781]" />
+          </button>
+          {/* Right Arrow */}
+          <button
+            onClick={nextSlide}
+            className="absolute top-1/2 right-2 md:-right-6 -translate-y-1/2 z-20 rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#1A8781] bg-[#1A8781] hover:bg-[#125E5A] transition-all duration-300 shadow-lg"
+            aria-label="Next"
+          >
+            <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-white" />
+          </button>
           {/* Main carousel display */}
           <div className="relative overflow-hidden rounded-3xl shadow-2xl h-auto md:h-[500px] bg-gradient-to-br from-[#1A8781]/5 to-[#1A8781]/20 border border-[#1A8781]/30">
             <div
@@ -397,7 +413,7 @@ const OurServices = () => {
                       <p className="text-base md:text-xl font-geist text-gray-700 leading-relaxed text-center md:text-left">
                         {service.description}
                       </p>
-                      <button 
+                      <button
                         onClick={() => navigate(service.path)}
                         className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-2 md:mt-4 group mx-auto md:mx-0"
                       >
@@ -433,11 +449,10 @@ const OurServices = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
-                  activeIndex === index
-                    ? "bg-[#1A8781] w-10"
-                    : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${activeIndex === index
+                  ? "bg-[#1A8781] w-10"
+                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                  }`}
               ></button>
             ))}
           </div>
@@ -449,11 +464,10 @@ const OurServices = () => {
             <div
               key={service.id || index}
               onClick={() => goToSlide(index)}
-              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${
-                activeIndex === index
-                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-              }`}
+              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${activeIndex === index
+                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+                }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
                 <div className="text-2xl md:text-3xl mb-0.5 md:mb-1">
@@ -494,7 +508,7 @@ const Testimonials = () => {
       name: "Michael Chen",
       role: "Operations Manager, Electronics Corp",
       image: "https://randomuser.me/api/portraits/men/67.jpg",
-      content: "As an international company, we needed reliable certification partners in India. Sun Consultant exceeded our expectations.",
+      content: "As an international company, we needed reliable certification partners in India. Sun Certifications exceeded our expectations.",
       rating: 5
     },
     {
@@ -510,7 +524,7 @@ const Testimonials = () => {
       name: "David Wilson",
       role: "Head of Compliance, Global Tech",
       image: "https://randomuser.me/api/portraits/men/75.jpg",
-      content: "Sun Consultant's support in WPC certification was invaluable. They made the entire process smooth and efficient.",
+      content: "Sun Certifications's support in WPC certification was invaluable. They made the entire process smooth and efficient.",
       rating: 5
     },
     {
@@ -534,10 +548,10 @@ const Testimonials = () => {
       name: "Meera Kapoor",
       role: "Product Manager, Consumer Goods",
       image: "https://randomuser.me/api/portraits/women/22.jpg",
-      content: "Sun Consultant's end-to-end certification support has been crucial for our market entry strategy. Highly professional team!",
+      content: "Sun Certifications's end-to-end certification support has been crucial for our market entry strategy. Highly professional team!",
       rating: 5
     }
-    
+
   ];
 
   return (
@@ -575,7 +589,7 @@ const Testimonials = () => {
               >
                 {/* Decorative elements */}
                 <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A8781]/10 rounded-bl-full -mr-8 -mt-8 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
-                
+
                 {/* Rating */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (

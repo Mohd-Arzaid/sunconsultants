@@ -95,10 +95,10 @@ const Hero = () => {
 
               <div className="flex gap-3 flex-wrap items-center">
                 <Link to="/about">
-                <BlurIn
-                  word="About Us"
-                  className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
-                />
+                  <BlurIn
+                    word="About Us"
+                    className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
+                  />
                 </Link>
                 <Link to="/contact">
                   <BlurIn
@@ -108,11 +108,11 @@ const Hero = () => {
                 </Link>
               </div>
             </div>
-            <img 
-                src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg" 
-                alt="Hero Image" 
-                className="w-80 md:w-96 drop-shadow-xl" 
-              />
+            <img
+              src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg"
+              alt="Hero Image"
+              className="w-80 md:w-96 drop-shadow-xl"
+            />
           </div>
         </div>
       </main>

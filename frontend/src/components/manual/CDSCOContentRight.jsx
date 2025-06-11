@@ -610,8 +610,8 @@ const OurEvents = () => {
 
               {index <
                 events.filter((event) => !event.isHighlighted).length - 1 && (
-                <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
-              )}
+                  <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
+                )}
             </div>
           ))}
       </div>
