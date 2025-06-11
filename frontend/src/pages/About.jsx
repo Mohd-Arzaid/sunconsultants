@@ -16,7 +16,7 @@ const About = () => {
       <Stats />
       <VideoShowcase />
       {/* <OurServices /> */}
-      <Services/>
+      <Services />
       <Testimonials />
       <Footer />
     </div>
@@ -475,7 +475,7 @@ export const OurServices = () => {
                 <div className="text-2xl md:text-3xl mb-0.5 md:mb-1">
                   {service.icon}
                 </div>
-                <h4 className="font-geist font-medium text-xs md:text-sm leading-tight">
+                <h4 className="font-geist font-medium text-xs md:text-base leading-tight">
                   {service.title}
                 </h4>
               </div>
