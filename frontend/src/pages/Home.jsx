@@ -610,7 +610,7 @@ const AuditsMarquee = () => {
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]" pauseOnHover={true}>
+          <Marquee className="flex items-center pt-4 pb-8 [--duration:30s]" pauseOnHover={true}>
             {galleryImages.map((item) => (
               <div
                 key={item.id}

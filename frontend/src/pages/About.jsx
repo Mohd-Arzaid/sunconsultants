@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Footer from "@/common/Footer";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import Services from "@/components/manual/Services";
+
 
 
 const About = () => {
@@ -13,9 +15,9 @@ const About = () => {
       <WhyChooseUs />
       <Stats />
       <VideoShowcase />
-      <OurServices />
+      {/* <OurServices /> */}
+      <Services/>
       <Testimonials />
-
       <Footer />
     </div>
   );

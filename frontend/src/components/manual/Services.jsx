@@ -10,11 +10,11 @@ import { BoxReveal } from "../magicui/box-reveal";
 import { Link } from "react-router-dom";
 
 
-const Services = () => {
+export const Services = () => {
   return (
 
-    <div className="pt-10 md:pt-12 pb-12  md:pb-16 custom-radial-gradient overflow-x-hidden ">
-      <div className="max-w-[84rem] w-full mx-auto">
+    <div className="pt-10 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
+      <div className="max-w-[80rem] w-full mx-auto">
 
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
