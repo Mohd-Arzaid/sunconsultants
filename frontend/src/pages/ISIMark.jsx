@@ -298,7 +298,7 @@ const BISFMHero = () => {
           </div>
         </div>
         <Services />
-        <BISCProductTable />
+        {/* <BISCProductTable /> */}
         <ServiceFaq />
       </div>
     );

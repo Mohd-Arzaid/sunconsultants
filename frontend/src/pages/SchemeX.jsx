@@ -539,15 +539,15 @@ const productDataTableThird = [
 export const SchemeX = () => {
 
     return (
-        // <div className="w-full">
-        <>
+        <div className="w-full h-screen">
+        
             <SchemeXHero />
             <BISFMIndex />
             <SchemeXContent />
             <Footer />
             <ScrollToTopButton />
-        </>
-        // </div>
+        
+        </div>
     );
 };
 
