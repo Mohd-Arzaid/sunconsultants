@@ -7,6 +7,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .boxshadowbtn {
   padding: 12px;
   width: 100%;
@@ -159,6 +182,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%
   }
+
   .theme {
     --animate-marquee: marquee var(--duration) infinite linear;
     --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
@@ -212,7 +236,7 @@
   outline: calc(var(--w)/2) solid rgb(229, 231, 235);
   outline-offset: calc(var(--w)/-2 - 2*var(--s));
   background: linear-gradient(var(--g)) 50%/100% 100% no-repeat,
-  linear-gradient(90deg, var(--g)) 50%/100% 100% no-repeat;
+    linear-gradient(90deg, var(--g)) 50%/100% 100% no-repeat;
 }
 
 .client-logo-container img {
@@ -240,19 +264,44 @@ input:-webkit-autofill:active {
 
 @theme inline {
   @keyframes marquee {
-  from {
-    transform: translateX(0);
+    from {
+      transform: translateX(0);
     }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
+
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
     }
   }
+
   @keyframes marquee-vertical {
-  from {
-    transform: translateY(0);
+    from {
+      transform: translateY(0);
     }
-  to {
-    transform: translateY(calc(-100% - var(--gap)));
+
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
     }
   }
+}
+
+
+/* Phone Input */
+.phone-input-custom {
+  @apply w-full h-[72px] text-[17px] text-[#7E7E7E] font-poppins font-semibold rounded-xl border border-blue-500/90 px-4;
+}
+
+.phone-input-custom-button {
+  @apply border border-blue-500/90 rounded-l-xl;
+}
+
+.react-tel-input .form-control {
+  @apply w-full h-[72px] text-[17px] text-[#7E7E7E] font-poppins font-semibold rounded-xl border border-blue-500/90 px-4;
+}
+
+.react-tel-input .flag-dropdown {
+  @apply border border-blue-500/90 rounded-l-xl;
+}
+
+.react-tel-input .selected-flag {
+  @apply rounded-l-xl;
 }

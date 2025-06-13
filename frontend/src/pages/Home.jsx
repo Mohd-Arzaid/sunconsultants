@@ -93,7 +93,8 @@ const Home = () => {
     <main className="w-full">
       <Helmet>
         <title>
-          BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO - Sun Certifications & Engineers
+          BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO - Sun
+          Certifications & Engineers
         </title>
         <meta
           name="description"
@@ -117,7 +118,10 @@ const Home = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Certifications & Engineers" />
+        <meta
+          property="og:site_name"
+          content="Sun Certifications & Engineers"
+        />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter Card Tags */}
@@ -530,7 +534,10 @@ const WebinarSeminarMarquee = () => {
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <Marquee className="flex  items-center pt-4 pb-8 [--duration:30s]" pauseOnHover={true}>
+          <Marquee
+            className="flex  items-center pt-4 pb-8 [--duration:30s]"
+            pauseOnHover={true}
+          >
             {galleryImages.map((item) => (
               <div
                 key={item.id}
@@ -610,7 +617,10 @@ const AuditsMarquee = () => {
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <Marquee className="flex items-center pt-4 pb-8 [--duration:30s]" pauseOnHover={true}>
+          <Marquee
+            className="flex items-center pt-4 pb-8 [--duration:30s]"
+            pauseOnHover={true}
+          >
             {galleryImages.map((item) => (
               <div
                 key={item.id}
@@ -1294,7 +1304,7 @@ const Contact = () => {
               //           focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
               //  text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
 
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/90
       focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
 text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Full Name *"
@@ -1307,125 +1317,35 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
               name="email"
               value={email}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/90
     focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
 text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Email Address *"
             />
 
-            <div className="w-full md:w-[600px]">
-              <style
-                dangerouslySetInnerHTML={{
-                  __html: `
-    .react-tel-input {
-      width: 100%;
-    }
-    .react-tel-input .form-control {
-      width: 100%;
-      height: 56px;
-      font-size: 17px;
-      border-radius: 12px;
-      border: 1px solid rgba(59, 130, 246, 0.4);
-      font-family: 'Poppins', sans-serif;
-      color: #7E7E7E;
-      font-weight: 600;
-      padding-left: 56px !important;
-      background: #fff;
-      box-shadow: none;
-      transition: border 0.2s;
-    }
-    @media (min-width: 768px) {
-      .react-tel-input .form-control {
-        height: 72px;
-        font-size: 20px;
-        border-radius: 15px;
-      }
-    }
-    .react-tel-input .flag-dropdown {
-      background: #fff;
-      border: none;
-      border-radius: 12px 0 0 12px;
-      box-shadow: none;
-      width: 56px;
-      height: 56px;
-      top: 0;
-      left: 0;
-      z-index: 2;
-    }
-    @media (min-width: 768px) {
-      .react-tel-input .flag-dropdown {
-        border-radius: 15px 0 0 15px;
-        width: 72px;
-        height: 72px;
-      }
-    }
-    .react-tel-input .selected-flag {
-      height: 100%;
-      padding: 0 0 0 16px;
-      background: transparent;
-      border-radius: 12px 0 0 12px;
-      display: flex;
-      align-items: center;
-    }
-    @media (min-width: 768px) {
-      .react-tel-input .selected-flag {
-        border-radius: 15px 0 0 15px;
-      }
-    }
-    .react-tel-input .country-list {
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      border: 1px solid rgba(59, 130, 246, 0.4);
-      margin-top: 6px;
-      font-family: 'Poppins', sans-serif;
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* IE and Edge */
-    }
-    .react-tel-input .country-list::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
-    }
-    .react-tel-input .country-list .search-box {
-      margin: 10px;
-    }
-    .react-tel-input .country-list .search-box input {
-      border-radius: 6px;
-      border: 1px solid rgba(59, 130, 246, 0.4);
-      font-family: 'Poppins', sans-serif;
-      padding: 8px;
-    }
-    .react-tel-input .country-list .country.highlight,
-    .react-tel-input .country-list .country:hover {
-      background-color: rgba(59, 130, 246, 0.1);
-    }
-    .react-tel-input .form-control:focus {
-      border: 1.5px solid #3b82f6;
-      outline: none;
-      box-shadow: 0 0 0 2px #b5ddeb33;
-    }
-  `,
-                }}
-              />
 
-              <div className="w-full md:w-[600px]">
-                {/* ...style block here... */}
-                <PhoneInput
-                  country={"in"}
-                  value={phoneNumber}
-                  onChange={handlePhoneChange}
-                  inputProps={{
-                    name: "phoneNumber",
-                    required: true,
-                    disabled: loading,
-                    placeholder: "Phone Number *",
-                    autoComplete: "tel",
-                  }}
-                  enableSearch={true}
-                  disableSearchIcon={false}
-                  inputClass="!bg-white !shadow-none"
-                  buttonClass="!bg-white"
-                />
-              </div>
-            </div>
+             <Input
+              disabled={loading}
+              required
+              type="phoneNumber"
+              name="phoneNumber"
+              value={phoneNumber}
+              onChange={handleOnChange}
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/90
+    focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
+text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
+              placeholder="Phone Number *"
+            />
+
+
+            {/* <PhoneInput
+              country={'in'}
+              enableSearch={true}
+              searchPlaceholder="Search Country"
+              value={phoneNumber}
+              onChange={handlePhoneChange}
+              containerClass="w-full md:w-[600px]"
+            /> */}
 
             <Input
               disabled={loading}
@@ -1438,7 +1358,7 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
               //      focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
               //  text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold         placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
 
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/40
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/90
       focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
 text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Which Certification is required ? *"

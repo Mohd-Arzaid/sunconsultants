@@ -116,7 +116,7 @@ function App() {
       </Routes> 
       <MobileNav />
       <SocialFloatingButtons />
-      {/* <ContactFormPopup /> */}
+      <ContactFormPopup />
     </>
   );
 }
