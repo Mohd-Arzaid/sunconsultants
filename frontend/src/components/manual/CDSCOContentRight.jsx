@@ -37,7 +37,7 @@ import { Link } from "react-router-dom";
 import { Marquee } from "@/components/magicui/marquee";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
-const CDSCOContentRight = () => {
+export const CDSCOContentRight = () => {
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
       {/* Latest Blogs */}

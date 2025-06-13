@@ -205,7 +205,7 @@ const BISFMHero = () => {
 };
 
 // BIS Index Section
-const BISFMIndex = () => {
+export const BISFMIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("Nomination");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -417,7 +417,7 @@ const BISFMContent = () => {
 };
 
 // BIS FAQs Section
-const ServiceFaq = () => {
+export const ServiceFaq = () => {
   return (
     <section id="faqs" className="my-2  scroll-mt-20" aria-label="Frequently Asked Questions">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
@@ -578,7 +578,7 @@ const ServiceFaq = () => {
   );
 };
 
-const BISFMContentLeft = () => {
+export const BISFMContentLeft = () => {
   return (
     <article className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">

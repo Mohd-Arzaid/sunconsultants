@@ -8,6 +8,12 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
+import ServiceContactForm from "@/common/ServiceContactForm";
+import { BISFMContentLeft, BISFMIndex, ServiceFaq } from "@/components/manual/BISFM";
+import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
+import { Services } from "./Home";
+import Footer from "@/common/Footer";
+import ScrollToTopButton from "@/components/common/ScrollToTop";
 
 const productsData = [
     {
@@ -531,6 +537,99 @@ const productDataTableThird = [
 ];
 
 export const SchemeX = () => {
+
+    return (
+        // <div className="w-full">
+        <>
+            <SchemeXHero />
+            <BISFMIndex />
+            <SchemeXContent />
+            <Footer />
+            <ScrollToTopButton />
+        </>
+        // </div>
+    );
+};
+
+
+const SchemeXContent = () => {
+    return (
+        <section className="" aria-label="BIS FMCS Certification Content">
+            <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+                    {/* Left Side */}
+                    <BISFMContentLeft />
+                    {/* Right Side */}
+                    <CDSCOContentRight />
+                </div>
+            </div>
+            <Services />
+            <SchemeXTables />
+
+            <ServiceFaq />
+        </section>
+    )
+}
+const SchemeXHero = () => {
+    return (
+        <section className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]" aria-label="BIS FMCS Certification Hero">
+
+            {/* Background gradient */}
+            <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
+            {/* Decorative elements */}
+            <div
+                className="absolute top-[20%] z-[10] right-[15%] w-[20px] h-[20px] rounded-full bg-[#1A8781]/30 animate-float"
+                style={{ animationDelay: "1s" }}
+            ></div>
+
+            <div className="max-w-[84rem] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
+
+                {/* Left Side */}
+                <article className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
+                    <div className="inline-flex items-center">
+                        <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
+                        <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
+                            Certified Expertise
+                        </span>
+                    </div>
+
+                    <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
+                        <span className="relative">
+                            Scheme X
+                            <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
+                        </span>{" "}
+
+                    </h1>
+
+                    <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
+                        Under Scheme X, foreign manufacturers must obtain approval to export to India. The scheme covers over 600 mandatory and 20,000+ voluntary products.
+
+                    </p>
+
+                    <nav className="flex items-center -mt-2">
+                        <div className="flex items-center cursor-pointer group">
+                            <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3">
+                                <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
+                            </div>
+                            <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
+                                View Services
+                            </span>
+                        </div>
+                    </nav>
+                </article>
+
+
+
+                {/* Right Side */}
+                <ServiceContactForm />
+
+
+            </div>
+        </section>
+    )
+}
+
+const SchemeXTables = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const table1Ref = useRef(null);
     const table2Ref = useRef(null);
@@ -547,10 +646,10 @@ export const SchemeX = () => {
     );
 
     return (
-        <div className="w-full pb-12">
+        <div className="w-full pb-12 borde">
             <div className="max-w-[88rem] mx-auto px-4 md:px-12">
                 {/* Navigation Buttons */}
-                <div className="flex gap-6 mt-8 justify-center items-center">
+                <div className="flex gap-6 mb-12 justify-center items-center">
                     <button
                         onClick={() => scrollToTable(table1Ref)}
                         className="px-6 py-3 bg-[#1A8781] text-white rounded-lg font-geist text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -635,8 +734,8 @@ export const SchemeX = () => {
                 <TypeCTable />
             </div>
         </div>
-    );
-};
+    )
+}
 
 const TypeBTable = () => {
     const [currentPage, setCurrentPage] = useState(1);
