@@ -1,8 +1,8 @@
 import { Bike, Globe, Play, User, ChevronLeft, ChevronRight } from "lucide-react";
 import whychooseus from "../assets/images/whychooseus.jpg";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "@/common/Footer";
-import { motion } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Services from "@/components/manual/Services";
 
@@ -488,6 +488,20 @@ export const OurServices = () => {
 };
 
 const Testimonials = () => {
+  const controls = useAnimationControls(); // Initialize controls
+
+  useEffect(() => {
+    controls.start({
+      x: ["0%", "-100%"], // Animation for horizontal scroll
+      transition: {
+        duration: 20, // Adjust duration for desired speed
+        repeat: Infinity,
+        ease: "linear",
+        repeatType: "loop",
+      },
+    });
+  }, [controls]);
+
   const testimonials = [
     {
       id: 1,
@@ -572,62 +586,71 @@ const Testimonials = () => {
         {/* Testimonials Scroll Container */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <motion.div
+            animate={controls}
+            onMouseEnter={() => controls.stop()} // Pause on hover
+            onMouseLeave={() => {
+              // Restart animation on mouse leave
+              controls.start({
+                x: ["0%", "-100%"],
+                transition: {
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear",
+                  repeatType: "loop",
+                },
+              });
+            }}
             className="flex gap-8 md:gap-10 py-8"
-            animate={{
-              x: ["0%", "-100%"],
-            }}
-            transition={{
-              duration: 10,
-              repeat: Infinity,
-              ease: "linear",
-              repeatType: "loop",
-            }}
           >
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={testimonial.id}
-                className="min-w-[300px] md:min-w-[400px] bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/60 hover:border-[#1A8781]/80 relative overflow-hidden group"
-                style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)' }}
-              >
-                {/* Decorative elements */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A8781]/10 rounded-bl-full -mr-8 -mt-8 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+            {[...Array(2)].map((_, i) => (
+              <React.Fragment key={i}>
+                {testimonials.map((testimonial) => (
+                  <div
+                    key={testimonial.id}
+                    className="min-w-[300px] md:min-w-[400px] bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/60 hover:border-[#1A8781]/80 relative overflow-hidden group"
+                    style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)' }}
+                  >
+                    {/* Decorative elements */}
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A8781]/10 rounded-bl-full -mr-8 -mt-8 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-                {/* Rating */}
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <svg
-                      key={i}
-                      className="w-5 h-5 text-[#1A8781]"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
+                    {/* Rating */}
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <svg
+                          key={i}
+                          className="w-5 h-5 text-[#1A8781]"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
 
-                {/* Content */}
-                <p className="text-gray-600 font-geist text-base md:text-lg leading-relaxed mb-6 md:mb-8">
-                  "{testimonial.content}"
-                </p>
-
-                {/* Author */}
-                <div className="flex items-center gap-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30"
-                  />
-                  <div>
-                    <h4 className="font-geist font-semibold text-[#1e1e1e]">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-gray-500 text-sm">
-                      {testimonial.role}
+                    {/* Content */}
+                    <p className="text-gray-600 font-geist text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                      "{testimonial.content}"
                     </p>
+
+                    {/* Author */}
+                    <div className="flex items-center gap-4">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30"
+                      />
+                      <div>
+                        <h4 className="font-geist font-semibold text-[#1e1e1e]">
+                          {testimonial.name}
+                        </h4>
+                        <p className="text-gray-500 text-sm">
+                          {testimonial.role}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                ))}
+              </React.Fragment>
             ))}
           </motion.div>
         </div>

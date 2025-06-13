@@ -1738,7 +1738,7 @@ const Countries = () => {
 // }
 
 // What Our Customers Say Section
-const WhatsOurCustomersSaySection = () => {
+export const WhatsOurCustomersSaySection = () => {
   const controls = useAnimationControls(); // Initialize controls
 
   useEffect(() => {
