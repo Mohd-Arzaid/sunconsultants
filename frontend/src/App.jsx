@@ -34,6 +34,7 @@ import NotificationDetail from "./pages/NotificationDetail";
 import InternationalAudits from "./pages/InternationalAudits";
 import Seminar from "./pages/Seminar";
 import Exhibition from "./pages/Exhibition";
+import SchemeX from "./pages/SchemeX";
 
 function App() {
   return (
@@ -51,11 +52,14 @@ function App() {
         <Route path="/international-audits" element={<InternationalAudits />} />
         <Route path="/exhibition" element={<Exhibition />} />
         <Route path="/seminar" element={<Seminar />} /> 
+        
 
         <Route path="/clients" element={<AllClients />} />
 
+
         
         <Route path="/cdsco-registration-certification" element={<CDSCO />} />
+        <Route path="/schemeX" element={<SchemeX />} />
         <Route
           path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
           element={<BISFM />}
