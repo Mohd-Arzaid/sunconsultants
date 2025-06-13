@@ -1,12 +1,14 @@
 import React from 'react'
 import { Calendar } from "lucide-react";
 import Footer from '@/common/Footer';
+import { Services } from './Home';
 
 const Exhibition = () => {
   return (
     <div className="bg-[#F9F7F2]">
       <ExhibitionHero />
       <ExhibitionGallery />
+      <Services />
       <Footer />
     </div>
   )

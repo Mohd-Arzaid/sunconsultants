@@ -1,6 +1,7 @@
 import Footer from "@/common/Footer";
 import { Globe } from "lucide-react";
 import React from "react";
+import { Services } from "./Home";
 
 const InternationalAudits = () => {
   return (
@@ -8,6 +9,7 @@ const InternationalAudits = () => {
       {/* Audit Hero */}
       <AuditHero />
       <AuditGallery />
+      <Services/>
       <Footer />
     </div>
   );

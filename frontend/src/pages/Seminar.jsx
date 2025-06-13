@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from "@/common/Footer";
 import { GraduationCap } from "lucide-react";
+import { Services } from './Home';
 
 const Seminar = () => {
   return (
@@ -8,6 +9,7 @@ const Seminar = () => {
       {/* Seminar Hero */}
       <SeminarHero />
       <SeminarGallery />
+      <Services/>
       <Footer />
     </div>
   );
