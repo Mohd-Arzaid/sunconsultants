@@ -78,48 +78,48 @@ const AuditGallery = () => {
     },
     {
       id: 2,
-      image: IndonesiaAudit,
-      title: "Indonesia",
-    },
-    {
-      id: 3,
-      image: ItalyAudit,
-      title: "Italy",
-    },
-    {
-      id: 4,
-      image: MalaysiaAudit,
-      title: "Malaysia",
-    },
-    {
-      id: 5,
-      image: SloveniaAudit,
-      title: "Slovenia",
-    },
-    {
-      id: 6,
-      image: ThailandAudit,
-      title: "Thailand",
-    },
-    {
-      id: 7,
       image: VietnamAudit,
       title: "Vietnam",
     },
     {
-      id: 8,
+      id: 3,
+      image: IndonesiaAudit,
+      title: "Indonesia",
+    },
+    {
+      id: 4,
       image: Vietnam2Audit,
       title: "Vietnam",
     },
     {
-      id: 9,
+      id: 5,
+      image: ItalyAudit,
+      title: "Italy",
+    },
+    {
+      id: 6,
       image: Vietnam3Audit,
       title: "Vietnam",
     },
     {
-      id: 10,
+      id: 7,
+      image: MalaysiaAudit,
+      title: "Malaysia",
+    },
+    {
+      id: 8,
+      image: SloveniaAudit,
+      title: "Slovenia",
+    },
+    {
+      id: 9,
       image: Vietnam4Audit,
       title: "Vietnam",
+    },
+    {
+      id: 10,
+      image: ThailandAudit,
+      title: "Thailand",
     },
   ];
 
