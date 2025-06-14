@@ -266,7 +266,7 @@ const ContactUs = () => {
               Email
             </h4>
             <p className="font-geist text-[#3C3C48] text-[16px] md:text-[20px] font-medium text-center">
-              info@suncertifications.co.in
+              info@sunconsultants.co.in
             </p>
           </div>
 

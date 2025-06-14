@@ -204,8 +204,8 @@ const EMIIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -231,14 +231,14 @@ const EMIIndex = () => {
             key={item}
             onClick={() => handleItemClick(item)}
             className={`relative cursor-pointer group ${item === activeSection
-                ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
-                : ""
+              ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
+              : ""
               }`}
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {item}
@@ -437,7 +437,7 @@ const ServiceFaq = () => {
             <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
               Email us at{" "}
               <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-                info@suncertifications.co.in
+                info@sunconsultants.co.in
               </span>{" "}
               or use one of the options below. We usually get back within a day or
               two.
@@ -455,7 +455,7 @@ const ServiceFaq = () => {
               <div className="flex gap-x-6">
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="mailto:info@suncertifications.co.in"
+                  href="mailto:info@sunconsultants.co.in"
                   rel="noreferrer noopener"
                   target="_blank"
                 >

@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@suncertifications.co.in
+              info@sunconsultants.co.in
             </span>{" "}
             or use one of the options below. We usually get back within 24 hours.
           </div>

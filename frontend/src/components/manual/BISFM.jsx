@@ -64,7 +64,7 @@ export const BISFM = () => {
                 "@type": "ContactPoint",
                 "telephone": "+91-9315973373",
                 "contactType": "customer service",
-                "email": "info@suncertifications.co.in"
+                "email": "info@sunconsultants.co.in"
               }
             },
             "areaServed": {
@@ -731,7 +731,7 @@ const DocumentsSection = () => {
             <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
               Email
             </span>
-            info@suncertifications.co.in , suncertificationsinfo@gmail.com
+            info@sunconsultants.co.in , sunconsultantsinfo@gmail.com
           </div>
         </div>
         <div className="mt-[12px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">

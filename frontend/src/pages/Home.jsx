@@ -163,7 +163,7 @@ const Home = () => {
               "@type": "ContactPoint",
               telephone: "+91-9315973373",
               contactType: "customer service",
-              email: "info@suncertifications.co.in",
+              email: "info@sunconsultants.co.in",
             },
             sameAs: ["https://twitter.com/CertificationsSun"],
           })}
