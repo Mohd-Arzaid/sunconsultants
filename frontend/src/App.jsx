@@ -46,6 +46,7 @@ function App() {
       <Navbar />
       <ScrollToTopButton hide={popupOpen} />
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
@@ -55,17 +56,14 @@ function App() {
         <Route path="/international-audits" element={<InternationalAudits />} />
         <Route path="/exhibition" element={<Exhibition />} />
         <Route path="/seminar" element={<Seminar />} />
-
-
         <Route path="/clients" element={<AllClients />} />
 
-
-
+        {/* Services Pages */}
         <Route path="/cdsco-registration-certification" element={<CDSCO />} />
-        <Route path="/schemeX" element={<SchemeX />} />
+        <Route path="/schemeX" element={<SchemeX />} /> 
         <Route
           path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-          element={<BISFM />}
+          element={<BISFM />} 
         />
         <Route
           path="/a-guide-on-how-to-obtain-epr-certificate"
@@ -119,6 +117,8 @@ function App() {
         <Route path="/ce-certification" element={<CECertification />} />
         <Route path="/emi-emc-certification" element={<EMIEMC />} />
         <Route path="/cb-certification" element={<CBCertification />} />
+        {/* Service Page End */}
+
         <Route path="/webinar" element={<Webinar />} />
       </Routes>
       <MobileNav />

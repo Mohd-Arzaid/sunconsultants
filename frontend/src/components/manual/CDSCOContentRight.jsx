@@ -33,20 +33,34 @@ import axios from "axios";
 // import { toast } from "sonner";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Marquee } from "@/components/magicui/marquee";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 export const CDSCOContentRight = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  // List of paths where LatestBlog and LatestNotification should be shown
+  const allowedPaths = [
+    '/schemeX',
+    '/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis',
+    '/a-guide-to-bis-certification-indian-bis',
+    '/what-is-bis-certificate-indian-bis',
+    '/what-is-crs-bis-or-crs-registration'
+  ];
+
+  const shouldShowComponents = allowedPaths.includes(currentPath);
+
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
       {/* Latest Blogs */}
-      <LatestBlog />
+      {shouldShowComponents && <LatestBlog />}
       {/* <OurServices /> */}
       <ClientTestimonial />
       {/* <OurEvents /> */}
       <WhyChooseUs />
-      <LatestNotification />
+      {shouldShowComponents && <LatestNotification />}
       <FreeCallBack />
     </div>
   );
