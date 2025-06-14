@@ -1,7 +1,16 @@
 import Footer from "@/common/Footer";
-import { Globe } from "lucide-react";
-import React from "react";
 import { Services } from "./Home";
+
+import BahrainAudit from "../assets/auditImages/Bahrain.png"
+import IndonesiaAudit from "../assets/auditImages/Indonesia.png"
+import ItalyAudit from "../assets/auditImages/Italy-2.png"
+import MalaysiaAudit from "../assets/auditImages/Malaysia.png"
+import SloveniaAudit from "../assets/auditImages/Slovenia.png"
+import ThailandAudit from "../assets/auditImages/Thailand.png"
+import Vietnam2Audit from "../assets/auditImages/Vietnam-2.png"
+import Vietnam3Audit from "../assets/auditImages/Vietnam-3.png"
+import Vietnam4Audit from "../assets/auditImages/Vietnam-4.png"
+import VietnamAudit from "../assets/auditImages/Vietnam.png"
 
 const InternationalAudits = () => {
   return (
@@ -107,6 +116,66 @@ const AuditGallery = () => {
       title: "Medical 2023",
       description:
         "Conducting comprehensive medical device quality audits at India's premier medical equipment expo.",
+    },
+    {
+      id: 7,
+      image: BahrainAudit,
+      title: "Bahrain Audit",
+      description: "International audit and certification services in Bahrain.",
+    },
+    {
+      id: 8,
+      image: IndonesiaAudit,
+      title: "Indonesia Audit",
+      description: "Comprehensive audit services in Indonesia.",
+    },
+    {
+      id: 9,
+      image: ItalyAudit,
+      title: "Italy Audit",
+      description: "Quality certification and audit services in Italy.",
+    },
+    {
+      id: 10,
+      image: MalaysiaAudit,
+      title: "Malaysia Audit",
+      description: "International standards compliance in Malaysia.",
+    },
+    {
+      id: 11,
+      image: SloveniaAudit,
+      title: "Slovenia Audit",
+      description: "European compliance and certification in Slovenia.",
+    },
+    {
+      id: 12,
+      image: ThailandAudit,
+      title: "Thailand Audit",
+      description: "Quality management system audits in Thailand.",
+    },
+    {
+      id: 13,
+      image: VietnamAudit,
+      title: "Vietnam Audit",
+      description: "Comprehensive audit services in Vietnam.",
+    },
+    {
+      id: 14,
+      image: Vietnam2Audit,
+      title: "Vietnam Audit 2",
+      description: "Additional audit services in Vietnam.",
+    },
+    {
+      id: 15,
+      image: Vietnam3Audit,
+      title: "Vietnam Audit 3",
+      description: "Extended audit coverage in Vietnam.",
+    },
+    {
+      id: 16,
+      image: Vietnam4Audit,
+      title: "Vietnam Audit 4",
+      description: "Complete audit solutions in Vietnam.",
     },
   ];
 
