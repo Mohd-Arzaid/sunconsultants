@@ -25,7 +25,7 @@ import honeywell from "../assets/images/honeywell.png"
 import Ikea from "../assets/images/Ikea.png"
 import LeaderArt from "../assets/images/LeaderArt.png"
 import Misumi from "../assets/images/Misumi.png"
-"
+import nobilia from "../assets/images/nobilia.png"
   
 
 
@@ -1060,6 +1060,18 @@ const LogoTicker = () => {
                 loading="lazy"
               />
             </figure>
+
+
+ <figure className="m-0">
+              <img
+                src={nobilia}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+       
 
 
 
