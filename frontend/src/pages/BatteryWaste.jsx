@@ -987,12 +987,12 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Role of Sun certifications & Engineers?
+        Role of Sun Certifications India?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Sun certifications & Engineers ensure hassle-free EPR licensing
+        Sun Certifications India ensure hassle-free EPR licensing
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">

@@ -32,7 +32,7 @@ export const LMPC = () => {
           name="keywords"
           content="LMPC certificate, Legal Metrology, packaged commodities, importers registration, manufacturers registration, packers registration"
         />
-        <meta name="author" content="Sun Certifications & Engineers" />
+        <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}
@@ -46,7 +46,7 @@ export const LMPC = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Certifications & Engineers" />
+        <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter Card Tags */}
@@ -73,7 +73,7 @@ export const LMPC = () => {
             serviceType: "LMPC Certification",
             provider: {
               "@type": "Organization",
-              name: "Sun Certifications & Engineers",
+              name: "Sun Certifications India",
               url: window.location.href,
               logo: "https://suncertifications.com/logo.png",
             },

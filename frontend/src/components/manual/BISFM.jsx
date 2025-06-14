@@ -26,7 +26,7 @@ export const BISFM = () => {
         <title>BIS FMCS Certification | Foreign Manufacturer Certification Scheme | Sun Certifications</title>
         <meta name="description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. Trusted BIS Certifications since 2013. ✓ Fast Processing ✓ Expert Guidance" />
         <meta name="keywords" content="BIS FMCS, Foreign Manufacturer Certification Scheme, ISI Mark for foreign manufacturers, BIS certification for exports, BIS license for foreign companies, BIS compliance, Indian Standards certification" />
-        <meta name="author" content="Sun Certifications & Engineers" />
+        <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}
@@ -34,7 +34,7 @@ export const BISFM = () => {
         <meta property="og:description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Certifications & Engineers" />
+        <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:image" content="https://suncertifications.com/og-image.jpg" />
 
@@ -57,7 +57,7 @@ export const BISFM = () => {
             "serviceType": "BIS FMCS Certification",
             "provider": {
               "@type": "Organization",
-              "name": "Sun Certifications & Engineers",
+              "name": "Sun Certifications India",
               "url": window.location.href,
               "logo": "https://suncertifications.com/logo.png",
               "contactPoint": {
@@ -688,7 +688,7 @@ const DocumentsSection = () => {
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        BIS Certification Documents | Sun Certifications & Engineers
+        BIS Certification Documents | Sun Certifications India
       </p>
 
       {/* Eligibility Content */}
@@ -976,12 +976,12 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Role of Sun Certifications & Engineers?
+        Role of Sun Certifications India?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Sun Certifications & Engineers ensure hassle-free BIS FMCS licensing
+        Sun Certifications India ensure hassle-free BIS FMCS licensing
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
@@ -1011,7 +1011,7 @@ const ConsultingSection = () => {
             "Technical assistance for the setup of in-house lab as per the standard requirements",
             "Assisting the manufacturer in understanding the post license compliances to be followed",
           ]}
-          heading="Below is the scope of work of Sun Certifications & Engineers:"
+          heading="Below is the scope of work of Sun Certifications India:"
         />
       </div>
     </section>

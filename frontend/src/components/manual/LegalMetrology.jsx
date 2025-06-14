@@ -30,7 +30,7 @@ export const LegalMetrology = () => {
           name="keywords"
           content="Legal Metrology, weights and measures, metrology certification, weighing instruments, measuring instruments"
         />
-        <meta name="author" content="Sun certifications & Engineers" />
+        <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}
@@ -44,7 +44,7 @@ export const LegalMetrology = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun certifications & Engineers" />
+        <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter Card Tags */}
@@ -71,7 +71,7 @@ export const LegalMetrology = () => {
             serviceType: "Legal Metrology Certification",
             provider: {
               "@type": "Organization",
-              name: "Sun certifications & Engineers",
+              name: "Sun Certifications India",
               url: window.location.href,
               logo: "https://suncertifications.com/logo.png",
             },

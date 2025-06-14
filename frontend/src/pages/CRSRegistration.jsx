@@ -1230,7 +1230,7 @@ const SupportSection = () => {
 
       {/* Description */}
       <p className="font-semibold font-geist text-[14px] md:text-[20px] text-[#131316]">
-        Sun certifications & Engineers ensure a hassle-free BIS CRS registration
+        Sun Certifications India ensure a hassle-free BIS CRS registration
         process.
       </p>
 
@@ -1262,12 +1262,12 @@ const ServicesSection = () => {
 
       {/* Title */}
       <h3 className="text-[24px] md:text-[40px] font-roboto font-bold text-[#131316] leading-tight md:leading-normal">
-        Scope of Work: Sun certifications & Engineers
+        Scope of Work: Sun Certifications India
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[14px] md:text-[20px] text-[#131316]">
-        Sun certifications & Engineers ensure hassle-free BIS CRS registration and
+        Sun Certifications India ensure hassle-free BIS CRS registration and
         compliance.
       </p>
 
@@ -1281,7 +1281,7 @@ const ServicesSection = () => {
             "Follow-up with the test lab for releasing test reports as per IS.",
             "Checking if the manufacturer's labels comply with BIS guidelines.",
           ]}
-          heading="BIS CRS Registration Process by Sun certifications & Engineers"
+          heading="BIS CRS Registration Process by Sun Certifications India"
         />
       </div>
     </section>

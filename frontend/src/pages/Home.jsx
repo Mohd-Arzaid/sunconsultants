@@ -109,7 +109,7 @@ const Home = () => {
           name="keywords"
           content="BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license, ISI mark, BIS registration"
         />
-        <meta name="author" content="Sun Certifications & Engineers" />
+        <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}
@@ -125,7 +125,7 @@ const Home = () => {
         <meta property="og:url" content={window.location.href} />
         <meta
           property="og:site_name"
-          content="Sun Certifications & Engineers"
+          content="Sun Certifications India"
         />
         <meta property="og:locale" content="en_IN" />
 
@@ -150,7 +150,7 @@ const Home = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Sun Certifications & Engineers",
+            name: "Sun Certifications India",
             url: "https://sunconsultants.co.in",
             logo: "https://sunconsultants.co.in/assets/img/suncons.png",
             description:
@@ -181,7 +181,7 @@ const Home = () => {
             serviceType: "Certification Services",
             provider: {
               "@type": "Organization",
-              name: "Sun Certifications & Engineers",
+              name: "Sun Certifications India",
             },
             areaServed: {
               "@type": "Country",
@@ -850,7 +850,7 @@ const LogoTicker = () => {
               />
             </figure>
 
-             <figure className="m-0">
+            <figure className="m-0">
               <img
                 src={ametek}
                 alt="Sun Certifications India - Trusted Partner Company"
@@ -867,7 +867,7 @@ const LogoTicker = () => {
               />
             </figure>
 
-            
+
             <figure className="m-0">
               <img
                 src={Aqua}
@@ -877,7 +877,7 @@ const LogoTicker = () => {
             </figure>
 
 
-       <figure className="m-0">
+            <figure className="m-0">
               <img
                 src={Daiki}
                 alt="Sun Certifications India - Trusted Partner Company"
@@ -890,7 +890,7 @@ const LogoTicker = () => {
 
 
 
-  
+
           </motion.div>
         </div>
       </div>

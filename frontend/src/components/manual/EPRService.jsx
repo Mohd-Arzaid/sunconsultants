@@ -188,7 +188,7 @@ const EPRIndex = () => {
       className={`sticky top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
-      
+
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
@@ -867,12 +867,12 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Role of Sun Certifications & Engineers?
+        Role of Sun Certifications India?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Sun Certifications & Engineers ensure hassle-free EPR licensing
+        Sun Certifications India ensure hassle-free EPR licensing
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">

@@ -1441,7 +1441,7 @@ const CertificationsSection = () => {
         you in the BIS certification process right from the start till the BIS
         license is granted. <br />
         <br />
-        We at Sun Certifications & Engineers ( Best BIS Certifications in India ),
+        We at Sun Certifications India ( Best BIS Certifications in India ),
         being in this field for over a decade now, have the greatest possible
         knowledge, resources, manpower and technical know-how to assist our
         clients , and ensure them a feeling of cake-walk while going through the
