@@ -21,6 +21,8 @@ import ametek from "../assets/images/ametek.png"
 import Ansell from "../assets/images/Ansell.png"
 import Daiki from "../assets/images/Daiki.png"
 import Aqua from "../assets/images/Aqua.png"
+import honeywell from "../assets/images/honeywell.png"
+
 
 import { motion } from "motion/react";
 
@@ -799,7 +801,8 @@ const Hero = () => {
 // Logo Ticker
 const LogoTicker = () => {
   return (
-    <div className="h-20 md:h-28 bg-[#B9DEEB]">
+    // <div className="h-20 md:h-28 bg-[#B9DEEB]">
+    <div className="h-20 md:h-28 bg-white">
       <div className="max-w-[84rem] mx-auto h-full ">
         <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent_0%,black_5%,black_95%,transparent_100%)]">
           <motion.div
@@ -884,6 +887,19 @@ const LogoTicker = () => {
                 loading="lazy"
               />
             </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={honeywell}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+
+
 
 
 
