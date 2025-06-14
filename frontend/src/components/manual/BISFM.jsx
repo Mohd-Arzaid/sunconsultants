@@ -206,12 +206,12 @@ const BISFMHero = () => {
 
 // BIS Index Section
 export const BISFMIndex = () => {
-  const [isSticky, setIsSticky] = useState(false);
-  const [activeSection, setActiveSection] = useState("Nomination");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const stickyRef = useRef(null);
-  const mobileMenuRef = useRef(null);
-  const toggleButtonRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(false)
+  const [activeSection, setActiveSection] = useState("Overview")
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const stickyRef = useRef(null)
+  const mobileMenuRef = useRef(null)
+  const toggleButtonRef = useRef(null)
 
   const SECTIONS = [
     "Nomination",
@@ -224,24 +224,20 @@ export const BISFMIndex = () => {
     "FAQs",
   ];
 
-  // Helper function to convert section name to element ID
-  const getSectionElementId = (section) => section === "FAQs" ? "faqs" : section.toLowerCase();
-
   const handleItemClick = (item) => {
-    const elementId = getSectionElementId(item);
-    const element = document.getElementById(elementId);
+    const element = document.getElementById(item.toLowerCase());
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false); // Close mobile menu after clicking
+      setIsMobileMenuOpen(false);
     }
-  };
+  }
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(prevState => !prevState);
+    setIsMobileMenuOpen((prevState) => !prevState);
   };
 
   // Close mobile menu when clicking outside
@@ -257,43 +253,40 @@ export const BISFMIndex = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(!entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1));
-      },
-      {
-        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
             if (entry.target.id === "faqs") {
               setActiveSection("FAQs");
             } else {
-              // Convert id like "nomination" to "Nomination"
-              const sectionName = entry.target.id.charAt(0).toUpperCase() + entry.target.id.slice(1);
+              const sectionName =
+                entry.target.id.charAt(0).toUpperCase() +
+                entry.target.id.slice(1);
               setActiveSection(sectionName);
             }
           }
@@ -302,10 +295,8 @@ export const BISFMIndex = () => {
       { threshold: 0.5 }
     );
 
-    // Observe each section
-    SECTIONS.forEach(section => {
-      const elementId = getSectionElementId(section);
-      const element = document.getElementById(elementId);
+    SECTIONS.forEach((section) => {
+      const element = document.getElementById(section.toLowerCase());
       if (element) {
         sectionObserver.observe(element);
       }
@@ -314,10 +305,13 @@ export const BISFMIndex = () => {
     return () => sectionObserver.disconnect();
   }, []);
 
+
+
+
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky  top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}
