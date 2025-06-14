@@ -19,6 +19,7 @@ import LogoFive from "../assets/images/FiveLogo.png";
 import LogoSix from "../assets/images/SixLogo.png";
 import ametek from "../assets/images/ametek.png"
 import Ansell from "../assets/images/Ansell.png"
+import Aqua from "../assets/images/Aqua.png"
 
 import { motion } from "motion/react";
 
@@ -865,135 +866,19 @@ const LogoTicker = () => {
               />
             </figure>
 
-
-
-
-            <figure className="m-0">
-              <img
-                src={LogoOne}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoTwo}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoThree}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoFour}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoFive}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoSix}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-            <figure className="m-0">
-              <img
-                src={ametek}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-            <figure className="m-0">
-              <img
-                src={Ansell}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-            <figure className="m-0">
-              <img
-                src={LogoOne}
-                alt="Sun Certifications India - Trusted Partner Company"
-                className="hidden md:block"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoTwo}
-                alt="Sun Certifications India - Trusted Partner Company"
-                className="hidden md:block"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoThree}
-                alt="Sun Certifications India - Trusted Partner Company"
-                className="hidden md:block"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoFour}
-                alt="Sun Certifications India - Trusted Partner Company"
-                className="hidden md:block"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoFive}
-                alt="Sun Certifications India - Trusted Partner Company"
-                className="hidden md:block"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoSix}
-                alt="Sun Certifications India - Trusted Partner Company"
-                className="hidden md:block"
-                loading="lazy"
-              />
-
-                <figure className="m-0">
-              <img
-                src={ametek}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-            <figure className="m-0">
-              <img
-                src={Ansell}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
             
+            <figure className="m-0">
+              <img
+                src={Aqua}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
             </figure>
+
+
+
+
+  
           </motion.div>
         </div>
       </div>
