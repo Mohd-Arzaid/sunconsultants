@@ -59,24 +59,20 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(!entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1));
-      },
-      {
-        threshold: [0, 1],  // Observe both when fully visible and when starting to intersect
-        rootMargin: '-1px 0px 0px 0px'
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -112,7 +108,7 @@ const Index = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? 'bg-white/70 backdrop-blur-lg' : 'bg-[#B9DEEB]'
+      className={`sticky top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? 'bg-white/70 backdrop-blur-lg' : 'bg-[#B9DEEB]'
         }`}
     >
       {/* Mobile Menu Button */}
