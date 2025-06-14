@@ -33,34 +33,20 @@ import axios from "axios";
 // import { toast } from "sonner";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Marquee } from "@/components/magicui/marquee";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
-export const CDSCOContentRight = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
-
-  // List of paths where LatestBlog and LatestNotification should be shown
-  const allowedPaths = [
-    '/schemeX',
-    '/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis',
-    '/a-guide-to-bis-certification-indian-bis',
-    '/what-is-bis-certificate-indian-bis',
-    '/what-is-crs-bis-or-crs-registration'
-  ];
-
-  const shouldShowComponents = allowedPaths.includes(currentPath);
-
+const CDSCOContentRight = () => {
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
       {/* Latest Blogs */}
-      {shouldShowComponents && <LatestBlog />}
+      <LatestBlog />
       {/* <OurServices /> */}
       <ClientTestimonial />
       {/* <OurEvents /> */}
       <WhyChooseUs />
-      {shouldShowComponents && <LatestNotification />}
+      <LatestNotification />
       <FreeCallBack />
     </div>
   );
@@ -193,29 +179,135 @@ const WhyChooseUs = () => {
 export const LatestBlog = () => {
   const blogPosts = [
     {
-      image: BlogImageOne,
-      category: "CDSCO",
-      title: "Medical Device QCO Update",
-      url: "/latest-notifications",
+      image: "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "BIS certification for Work chairs",
+      url: "/latest-notification/work-chairs",
     },
     {
-      image: "https://images.unsplash.com/photo-1587854680352-936b22b91030",
-      category: "CDSCO",
-      title: "Drug Import Guidelines",
-      url: "/latest-notifications",
+      image: "https://www.housingunits.co.uk/blog/2024/01/matching-bar-stools-dining-chairs/comerenowithmeb/",
+      category: "BIS",
+      title: "BIS certification for Chairs and stools",
+      url: "/latest-notification/and-stools",
     },
     {
-      image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88",
-      category: "CDSCO",
-      title: "Quality Standards Revision",
-      url: "/latest-notifications",
+      image: "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
+      category: "BIS",
+      title: "BIS Notification for Tables and desks",
+      url: "/latest-notification/and-desks",
     },
     {
-      image: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5",
-      category: "CDSCO",
-      title: "Equipment Certification",
-      url: "/latest-notifications",
+      image: "https://alephindia.in/images/isi/furniture-storage-units.png",
+      category: "BIS",
+      title: "BIS Notification for Storage units",
+      url: "/latest-notification/storage-units",
     },
+    {
+      image: "https://alephindia.in/images/isi/furniture-bunk-beds.png",
+      category: "BIS",
+      title: "BIS Notification for Bunk beds",
+      url: "/latest-notification/bunk-beds",
+    },
+
+
+    {
+      image: "https://jharkhandstatenews.com/assets/admin/uploads/topstory_img/199879_1693229978.jpg",
+      category: "BIS",
+      title: "BIS Notification for Solar DC Cable and Fire Survival Cable",
+      url: "/latest-notification/survival-cable",
+    },
+
+    {
+      image: "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
+      category: "BIS",
+      title: "BIS Notification for Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
+      url: "/latest-notification/and-forgings",
+    },
+
+    {
+      image: "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "BIS Notification for H Acid",
+      url: "/latest-notification/h-acid",
+    },
+
+    {
+      image: "https://images.unsplash.com/photo-1617155093730-a8bf47be792d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "BIS Notification for K Acid",
+      url: "/latest-notification/k-acid",
+    },
+
+    {
+      image: "https://media.istockphoto.com/id/940248330/photo/potassium-permanganate-sodium-sulfate-mixture.jpg?s=612x612&w=0&k=20&c=lhxvzbD2cVVOJKQyLIOqSaq9dlJTtDH07kHoBT5q7_4=",
+      category: "BIS",
+      title: "BIS Notification for Vinyl Sulphone",
+      url: "/latest-notification/vinyl-sulphone",
+    },
+
+
+    {
+      image: "https://m.media-amazon.com/images/I/71qI8OoNdtL._AC_UF1000,1000_QL80_.jpg",
+      category: "BIS",
+      title: "BIS Notification for Electric Fence Energizers",
+      url: "/latest-notification/fence-energizers",
+    },
+
+    {
+      image: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "BIS Notification for Clothes Washing Machines",
+      url: "/latest-notification/washing-machines",
+    },
+
+
+    {
+      image: "https://m.media-amazon.com/images/I/31waXELONZL.jpg",
+      category: "BIS",
+      title: "BIS Notification for Gypsum Plaster Boards",
+      url: "/latest-notification/plaster-boards",
+    },
+
+
+    {
+      image: "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
+      category: "BIS",
+      title: "BIS Notification for Aluminium alloy tubes for irrigation purposes -welded tubes",
+      url: "/latest-notification/-welded-tubes",
+    },
+
+    {
+      image: "https://www.sunnysteel.com/img/extruded-finned-tube.jpg",
+      category: "BIS",
+      title: "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
+      url: "/latest-notification/extruded-tube",
+    },
+
+    {
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
+      category: "BIS",
+      title: "BIS Notification for EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
+      url: "/latest-notification/and-rolling",
+    },
+
+    {
+      image: "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
+      category: "BIS",
+      title: "BIS Notification for Wrought aluminium and aluminium alloy bars, rods and sections",
+      url: "/latest-notification/and-sections",
+    },
+
+
+    {
+      image: "https://5.imimg.com/data5/SELLER/Default/2023/3/EC/HR/GU/184505254/regular-gypsum-plasterboard.jpg",
+      category: "BIS",
+      title: "BIS Notification for Gypsum Plaster Boards",
+      url: "/latest-notification/plaster-boards",
+    },
+
+
+
+
   ];
 
   return (
@@ -227,7 +319,7 @@ export const LatestBlog = () => {
         </h1>
       </div>
       <div className="relative h-[400px] overflow-hidden mt-5">
-        <Marquee vertical pauseOnHover={true} className="[--duration:10s]">
+        <Marquee vertical pauseOnHover={true} className="[--duration:20s]">
           {blogPosts.map((post, index) => (
             <div key={index} className="mb-5">
               <div className=" group flex gap-4  transition-all duration-300">
@@ -249,7 +341,7 @@ export const LatestBlog = () => {
                       {post.title}
                     </p>
 
-                    <Link to={post.url}>
+                    <a href={post.url}>
                       <Button
                         variant="link"
                         className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
@@ -257,7 +349,7 @@ export const LatestBlog = () => {
                         Read More
                         <ArrowRightIcon className="-ml-1 mt-0.5" />
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -318,14 +410,14 @@ const OurServices = () => {
     },
     {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
-      title: "EPR Certificate certifications",
+      title: "EPR Certificate Consultants",
       description:
         "Consultancy for EPR (Extended Producer Responsibility) Certificate for e-waste, plastic waste, and battery waste management.",
       link: "/services/epr-registration",
     },
     {
       image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-      title: "LMPC Certificate certifications",
+      title: "LMPC Certificate Consultants",
       description:
         "Expert guidance for obtaining LMPC (Legal Metrology Packaged Commodities) Certificate for importers and manufacturers.",
       link: "/services/lmpc-registration",
