@@ -58,37 +58,37 @@ const ExhibitionGallery = () => {
   const exhibitionImages = [
     {
       id: 1,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-1.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-1.png",
       title: "International Trade Fair 2024",
       description: "Join us at the largest gathering of industry leaders and innovators in the heart of the city.",
     },
     {
       id: 2,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-2.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
       title: "Tech Innovation Summit",
       description: "Experience cutting-edge technology and breakthrough innovations from leading companies.",
     },
     {
       id: 3,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-3.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
       title: "Global Business Forum",
       description: "Connect with international business leaders and explore new market opportunities.",
     },
     {
       id: 4,
-      image: "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+      image: "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
       title: "Healthcare Excellence Expo",
       description: "Showcasing the latest advancements in medical technology and healthcare solutions.",
     },
     {
       id: 5,
-      image: "https://suncertifications.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+      image: "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
       title: "Sustainable Development Conference",
       description: "Learn about eco-friendly innovations and sustainable business practices.",
     },
     {
       id: 6,
-      image: "https://suncertifications.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+      image: "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
       title: "Industry 4.0 Exhibition",
       description: "Discover the future of manufacturing and industrial automation.",
     },
