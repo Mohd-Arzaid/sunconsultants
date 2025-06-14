@@ -454,6 +454,19 @@ const BISCIndex = () => {
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
+  const SECTIONS = [
+    "Overview",
+    "Benefits",
+    "Schemes",
+    "Types",
+    "Documents",
+    "Procedure",
+    "Process",
+    "Cost",
+    "Certifications",
+    "FAQs",
+  ];
+
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
     if (element) {
@@ -462,7 +475,7 @@ const BISCIndex = () => {
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false); // Close mobile menu after clicking
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -490,32 +503,55 @@ const BISCIndex = () => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(
-          !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
-        );
-      },
-      {
-        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            if (entry.target.id === "faqs") {
+              setActiveSection("FAQs");
+            } else {
+              const sectionName =
+                entry.target.id.charAt(0).toUpperCase() +
+                entry.target.id.slice(1);
+              setActiveSection(sectionName);
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
     );
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    SECTIONS.forEach((section) => {
+      const element = document.getElementById(section.toLowerCase());
+      if (element) {
+        sectionObserver.observe(element);
+      }
+    });
 
-    return () => observer.disconnect();
+    return () => sectionObserver.disconnect();
   }, []);
 
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}
@@ -537,19 +573,9 @@ const BISCIndex = () => {
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 15l7-7 7 7"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             )}
           </svg>
         </button>
@@ -562,18 +588,7 @@ const BISCIndex = () => {
           className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
         >
           <div className="flex flex-col py-2">
-            {[
-              "Overview",
-              "Benefits",
-              "Schemes",
-              "Types",
-              "Documents",
-              "Procedure",
-              "Process",
-              "Cost",
-              "Certifications",
-              "FAQs",
-            ].map((item) => (
+            {SECTIONS.map((item) => (
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
@@ -593,18 +608,7 @@ const BISCIndex = () => {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto overflow-x-auto">
-        {[
-          "Overview",
-          "Benefits",
-          "Schemes",
-          "Types",
-          "Documents",
-          "Procedure",
-          "Process",
-          "Cost",
-          "Certifications",
-          "FAQs",
-        ].map((item) => (
+        {SECTIONS.map((item) => (
           <div
             key={item}
             onClick={() => handleItemClick(item)}
