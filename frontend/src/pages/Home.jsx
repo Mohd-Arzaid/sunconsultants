@@ -146,8 +146,8 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Sun Certifications & Engineers",
-            url: "https://suncertifications.co.in",
-            logo: "https://suncertifications.co.in/assets/img/suncons.png",
+            url: "https://sunconsultants.co.in",
+            logo: "https://sunconsultants.co.in/assets/img/suncons.png",
             description:
               "Sun Certifications is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license.",
             address: {
@@ -493,35 +493,35 @@ const WebinarSeminarMarquee = () => {
     {
       id: 1,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
       title: "Medical Chennai 2023",
     },
     {
       id: 2,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
       title: "Medical Kolkata 2022",
     },
     {
       id: 3,
       image:
-        "https://suncertifications.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
       title: "Narela Association Seminar Footwear",
     },
     {
       id: 4,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-2.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
       title: "Delhi Footwear Exhibition Audits",
     },
     {
       id: 5,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-3.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
       title: "Karol Bagh Association Footwear Seminar",
     },
     {
       id: 6,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
       title: "Medical 2023",
     },
   ];
@@ -576,35 +576,35 @@ const AuditsMarquee = () => {
     {
       id: 1,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
       title: "Medical Chennai 2023",
     },
     {
       id: 2,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
       title: "Medical Kolkata 2022",
     },
     {
       id: 3,
       image:
-        "https://suncertifications.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
       title: "Narela Association Seminar Footwear",
     },
     {
       id: 4,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-2.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
       title: "Delhi Footwear Exhibition Audits",
     },
     {
       id: 5,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-3.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
       title: "Karol Bagh Association Footwear Seminar",
     },
     {
       id: 6,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
       title: "Medical 2023",
     },
   ];

@@ -65,7 +65,7 @@ const AuditGallery = () => {
     {
       id: 1,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
       title: "Medical Chennai 2023",
       description:
         "Conducting comprehensive medical device quality audits at India's premier medical equipment expo.",
@@ -73,7 +73,7 @@ const AuditGallery = () => {
     {
       id: 2,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
       title: "Medical Kolkata 2022",
       description:
         "Ensuring compliance and certification standards for healthcare providers and manufacturers.",
@@ -81,21 +81,21 @@ const AuditGallery = () => {
     {
       id: 3,
       image:
-        "https://suncertifications.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
       title: "Narela Association Seminar Footwear",
       description:
         "Providing expert guidance on international standards for footwear manufacturing.",
     },
     {
       id: 4,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-2.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
       title: "Delhi Footwear Exhibition Audits",
       description:
         "Specialized training session on implementing ISO standards across various industries.",
     },
     {
       id: 5,
-      image: "https://suncertifications.co.in/photo-event/2023/sun-3.png",
+      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
       title: "Karol Bagh Association Footwear Seminar",
       description:
         "Auditing healthcare products and providing certification guidance to manufacturers.",
@@ -103,7 +103,7 @@ const AuditGallery = () => {
     {
       id: 6,
       image:
-        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
       title: "Medical 2023",
       description:
         "Conducting comprehensive medical device quality audits at India's premier medical equipment expo.",
