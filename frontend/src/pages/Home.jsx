@@ -28,6 +28,8 @@ import Misumi from "../assets/images/Misumi.png"
 import nobilia from "../assets/images/nobilia.png"
 import Panasonic from "../assets/images/Panasonic.png"
 import cuty from "../assets/images/cuty.png"
+import raumplus from "../assets/images/raumplus.png"
+import remsa from "../assets/images/remsa.png"
 
   
 
@@ -958,9 +960,30 @@ const LogoTicker = () => {
 
 
 
+            <figure className="m-0">
+              <img
+                src={raumplus}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
 
 
 
+
+
+
+            <figure className="m-0">
+              <img
+                src={remsa}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            
+            
 
 
 
@@ -1007,88 +1030,7 @@ const LogoTicker = () => {
               />
             </figure>
 
-            <figure className="m-0">
-              <img
-                src={ametek}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-            <figure className="m-0">
-              <img
-                src={Ansell}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-            <figure className="m-0">
-              <img
-                src={Aqua}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-            <figure className="m-0">
-              <img
-                src={Daiki}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-            <figure className="m-0">
-              <img
-                src={honeywell}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-
-            <figure className="m-0">
-              <img
-                src={Ikea}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-
-            <figure className="m-0">
-              <img
-                src={LeaderArt}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
-            <figure className="m-0">
-              <img
-                src={Misumi}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
-
- <figure className="m-0">
-              <img
-                src={nobilia}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-
+           
 
        
 
