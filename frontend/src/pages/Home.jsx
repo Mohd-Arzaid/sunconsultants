@@ -17,8 +17,8 @@ import LogoThree from "../assets/images/ThreeLogo.png";
 import LogoFour from "../assets/images/FourLogo.png";
 import LogoFive from "../assets/images/FiveLogo.png";
 import LogoSix from "../assets/images/SixLogo.png";
-
 import ametek from "../assets/images/ametek.png"
+import Ansell from "../assets/images/Ansell.png"
 
 import { motion } from "motion/react";
 
@@ -859,6 +859,17 @@ const LogoTicker = () => {
 
             <figure className="m-0">
               <img
+                src={Ansell}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+
+
+            <figure className="m-0">
+              <img
                 src={LogoOne}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
@@ -895,6 +906,23 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoSix}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure className="m-0">
+              <img
+                src={ametek}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Ansell}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
@@ -947,6 +975,24 @@ const LogoTicker = () => {
                 className="hidden md:block"
                 loading="lazy"
               />
+
+                <figure className="m-0">
+              <img
+                src={ametek}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Ansell}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+            
             </figure>
           </motion.div>
         </div>
