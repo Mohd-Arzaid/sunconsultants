@@ -27,6 +27,7 @@ import LeaderArt from "../assets/images/LeaderArt.png"
 import Misumi from "../assets/images/Misumi.png"
 import nobilia from "../assets/images/nobilia.png"
 import Panasonic from "../assets/images/Panasonic.png"
+import cuty from "../assets/images/cuty.png"
 
   
 
@@ -945,6 +946,14 @@ const LogoTicker = () => {
             </figure>
 
 
+
+            <figure className="m-0">
+              <img
+                src={cuty}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
 
 
 
