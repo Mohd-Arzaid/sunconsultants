@@ -1,7 +1,8 @@
 import { FaWhatsapp, FaPhone } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
-const SocialFloatingButtons = () => {
+const SocialFloatingButtons = ({ hide }) => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -12,6 +13,8 @@ const SocialFloatingButtons = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  if (hide) return null;
 
   return (
     <div
@@ -48,6 +51,10 @@ const SocialFloatingButtons = () => {
       <div className="absolute -z-10 bottom-6 left-6 w-10 h-10 md:w-12 md:h-12 bg-green-500/20 rounded-full animate-ping-slow"></div>
     </div>
   );
+};
+
+SocialFloatingButtons.propTypes = {
+  hide: PropTypes.bool,
 };
 
 export default SocialFloatingButtons; 

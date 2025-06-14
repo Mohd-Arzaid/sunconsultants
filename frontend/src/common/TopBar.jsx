@@ -4,7 +4,8 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const TopBar = () => {
   return (
-    <div className="bg-[#0A4394] hidden md:block text-white py-2.5">
+    // <div className="bg-[#0A4394] hidden md:block text-white py-2.5">
+    <div className="bg-[#0A4394] hidden md:block text-white py-2.5 sticky top-0 z-[50]">
       <div className="max-w-[88rem] mx-auto px-4 md:px-11 relative">
         <div className="flex items-center justify-center">
           <div className="flex items-center gap-8">

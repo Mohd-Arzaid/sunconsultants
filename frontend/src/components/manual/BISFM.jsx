@@ -259,25 +259,20 @@ export const BISFMIndex = () => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1;
-        setIsSticky(
-          !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
-        );
-      },
-      {
-        threshold: [0, 1],
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -312,7 +307,7 @@ export const BISFMIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky  top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}

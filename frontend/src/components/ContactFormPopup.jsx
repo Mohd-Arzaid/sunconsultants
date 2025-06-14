@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
@@ -11,8 +12,7 @@ import { useLocation } from "react-router-dom";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
-const ContactFormPopup = () => {
-  const [open, setOpen] = useState(false);
+const ContactFormPopup = ({ open, setOpen }) => {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
   const [formData, setFormData] = useState({
@@ -27,19 +27,15 @@ const ContactFormPopup = () => {
   const { fullName, email, phoneNumber, message } = formData;
 
   useEffect(() => {
-    // Don't show the popup on the contact page
     if (location.pathname === "/contact") {
       return;
     }
-    
     // Set a timeout to open the popup after 5 seconds
     const timer = setTimeout(() => {
       setOpen(true);
     }, 5000);
-
-    // Clean up the timer when component unmounts
     return () => clearTimeout(timer);
-  }, [location.pathname]);
+  }, [location.pathname, setOpen]);
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({
@@ -97,7 +93,7 @@ const ContactFormPopup = () => {
       if (!response.data.success) {
         throw new Error(response.data.message);
       }
-      
+
       toast({
         title: "Contact form submit successfully!",
         description:
@@ -112,7 +108,7 @@ const ContactFormPopup = () => {
         pageUrl: window.location.href,
         pageName: document.title,
       });
-      
+
       // Close the dialog after successful submission
       setOpen(false);
     } catch (error) {
@@ -123,7 +119,7 @@ const ContactFormPopup = () => {
         title: errorMessage || "Failed to submit contact form details!",
         description:
           "Something Went Wrong. Please Check Your Details and Try Again.",
-      });      
+      });
     } finally {
       setLoading(false);
     }
@@ -136,7 +132,7 @@ const ContactFormPopup = () => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="sm:max-w-[600px] max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-[600px] max-h-[90vh] z-[2147483647] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-[28px] font-geist font-bold text-[#1E1E1E] text-center">
             Contact US
@@ -149,7 +145,7 @@ const ContactFormPopup = () => {
             <Separator className="hidden md:block w-[70px] h-[2px] bg-[#008080]" />
           </div>
         </DialogHeader>
-        
+
         <form
           onSubmit={handleFormSubmit}
           className="flex flex-col mt-4 gap-4 w-full"
@@ -211,6 +207,11 @@ const ContactFormPopup = () => {
       </DialogContent>
     </Dialog>
   );
+};
+
+ContactFormPopup.propTypes = {
+  open: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired,
 };
 
 export default ContactFormPopup;

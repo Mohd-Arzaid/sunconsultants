@@ -28,20 +28,23 @@ import EMIEMC from "./pages/EMIEMC";
 import CBCertification from "./pages/CBCertification";
 import ISIMark from "./pages/ISIMark";
 import BatteryWaste from "./pages/BatteryWaste";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopButton from "./components/common/ScrollToTop";
 import MinistryUpdates from "./pages/MinistryUpdates";
 import NotificationDetail from "./pages/NotificationDetail";
 import InternationalAudits from "./pages/InternationalAudits";
 import Seminar from "./pages/Seminar";
 import Exhibition from "./pages/Exhibition";
 import SchemeX from "./pages/SchemeX";
+import { useState } from "react";
 
 function App() {
+  const [popupOpen, setPopupOpen] = useState(false);
+
   return (
     <>
       <TopBar />
       <Navbar />
-      <ScrollToTop />
+      <ScrollToTopButton hide={popupOpen} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -51,13 +54,13 @@ function App() {
         <Route path="/ministry-updates" element={<MinistryUpdates />} />
         <Route path="/international-audits" element={<InternationalAudits />} />
         <Route path="/exhibition" element={<Exhibition />} />
-        <Route path="/seminar" element={<Seminar />} /> 
-        
+        <Route path="/seminar" element={<Seminar />} />
+
 
         <Route path="/clients" element={<AllClients />} />
 
 
-        
+
         <Route path="/cdsco-registration-certification" element={<CDSCO />} />
         <Route path="/schemeX" element={<SchemeX />} />
         <Route
@@ -111,16 +114,16 @@ function App() {
         <Route
           path="/restriction-of-hazardous-substance-rohs-certificate"
           element={<ROHS />}
-        /> 
+        />
         <Route path="/bee-certification" element={<BEE />} />
         <Route path="/ce-certification" element={<CECertification />} />
         <Route path="/emi-emc-certification" element={<EMIEMC />} />
         <Route path="/cb-certification" element={<CBCertification />} />
         <Route path="/webinar" element={<Webinar />} />
-      </Routes> 
+      </Routes>
       <MobileNav />
-      <SocialFloatingButtons />
-      <ContactFormPopup />
+      <SocialFloatingButtons hide={popupOpen} />
+      <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />
     </>
   );
 }
