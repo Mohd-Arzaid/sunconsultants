@@ -447,6 +447,7 @@ const BISCHero = () => {
 
 // BISC Index Section
 const BISCIndex = () => {
+
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("Overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -551,7 +552,7 @@ const BISCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky  top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}

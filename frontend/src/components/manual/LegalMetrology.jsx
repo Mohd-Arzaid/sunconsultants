@@ -1,4 +1,3 @@
-
 import { Separator } from "@/components/ui/separator";
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
@@ -167,7 +166,7 @@ const LMCHero = () => {
         </div>
 
         {/* Right Side */}
-        <ServiceContactForm/>
+        <ServiceContactForm />
       </div>
     </main>
   );
@@ -191,76 +190,69 @@ const LMCIndex = () => {
     "FAQs",
   ];
 
-  // Helper function to convert section name to element ID
-  const getSectionElementId = (section) => section === "FAQs" ? "faqs" : section.toLowerCase();
-
   const handleItemClick = (item) => {
-    const elementId = getSectionElementId(item);
-    const element = document.getElementById(elementId);
+    const element = document.getElementById(item.toLowerCase());
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false); // Close mobile menu after clicking
+      setIsMobileMenuOpen(false);
     }
   };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(prevState => !prevState);
+    setIsMobileMenuOpen((prevState) => !prevState);
   };
 
   // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        mobileMenuRef.current && 
+        mobileMenuRef.current &&
         !mobileMenuRef.current.contains(event.target) &&
-        toggleButtonRef.current && 
+        toggleButtonRef.current &&
         !toggleButtonRef.current.contains(event.target)
       ) {
         setIsMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(!entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1));
-      },
-      {
-        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
             if (entry.target.id === "faqs") {
               setActiveSection("FAQs");
             } else {
-              // Convert id like "overview" to "Overview"
-              const sectionName = entry.target.id.charAt(0).toUpperCase() + entry.target.id.slice(1);
+              const sectionName =
+                entry.target.id.charAt(0).toUpperCase() +
+                entry.target.id.slice(1);
               setActiveSection(sectionName);
             }
           }
@@ -269,10 +261,8 @@ const LMCIndex = () => {
       { threshold: 0.5 }
     );
 
-    // Observe each section
-    SECTIONS.forEach(section => {
-      const elementId = getSectionElementId(section);
-      const element = document.getElementById(elementId);
+    SECTIONS.forEach((section) => {
+      const element = document.getElementById(section.toLowerCase());
       if (element) {
         sectionObserver.observe(element);
       }
@@ -284,29 +274,28 @@ const LMCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
           {activeSection}
         </div>
-        <button 
+        <button
           ref={toggleButtonRef}
           onClick={toggleMobileMenu}
           className="p-2 rounded-md hover:bg-blue-100 transition-colors"
           aria-label="Toggle menu"
         >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="h-6 w-6 text-blue-900" 
-            fill="none" 
-            viewBox="0 0 24 24" 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-blue-900"
+            fill="none"
+            viewBox="0 0 24 24"
             stroke="currentColor"
           >
-        {isMobileMenuOpen ? (
+            {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             ) : (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -317,7 +306,7 @@ const LMCIndex = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           ref={mobileMenuRef}
           className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
         >
@@ -326,11 +315,10 @@ const LMCIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection 
-                    ? "bg-blue-50 text-blue-900 font-semibold" 
-                    : "text-blue-950 hover:bg-blue-50"
-                }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -350,16 +338,18 @@ const LMCIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection ? "text-blue-900" : "text-blue-950 group-hover:text-blue-900"
-              }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
+                }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-              }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
+                }`}
             />
           </div>
         ))}
@@ -371,9 +361,9 @@ const LMCIndex = () => {
 const LMCContent = () => {
   return (
     <div className="">
-    <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
-      <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-        {/* Left Side */}
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+          {/* Left Side */}
 
           <LMCContentLeft />
 
@@ -390,22 +380,22 @@ const LMCContent = () => {
 const ServiceFaq = () => {
   return (
     <div id="faqs" className="my-2 bg-gray-50 scroll-mt-20">
-    <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-      <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-        Frequently Asked Questions
-      </h2>
-      <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-        Can't find the answer you are looking for?{" "}
-        <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
-          Reach out to us!
-        </span>
-      </p>
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+          Frequently Asked Questions
+        </h2>
+        <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
+          Can't find the answer you are looking for?{" "}
+          <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
+            Reach out to us!
+          </span>
+        </p>
 
-      <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
-      <Accordion type="single" collapsible className="w-full">
+        <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
+          <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-            <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-            What services do you offer for CDSCO compliance?
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                What services do you offer for CDSCO compliance?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
                 We offer comprehensive CDSCO regulatory compliance services

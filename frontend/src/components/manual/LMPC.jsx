@@ -204,20 +204,15 @@ const LMPCIndex = () => {
     "FAQs",
   ];
 
-  // Helper function to convert section name to element ID
-  const getSectionElementId = (section) =>
-    section === "FAQs" ? "faqs" : section.toLowerCase();
-
   const handleItemClick = (item) => {
-    const elementId = getSectionElementId(item);
-    const element = document.getElementById(elementId);
+    const element = document.getElementById(item.toLowerCase());
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false); // Close mobile menu after clicking
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -245,26 +240,20 @@ const LMPCIndex = () => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(
-          !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
-        );
-      },
-      {
-        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -275,7 +264,6 @@ const LMPCIndex = () => {
             if (entry.target.id === "faqs") {
               setActiveSection("FAQs");
             } else {
-              // Convert id like "overview" to "Overview"
               const sectionName =
                 entry.target.id.charAt(0).toUpperCase() +
                 entry.target.id.slice(1);
@@ -287,10 +275,8 @@ const LMPCIndex = () => {
       { threshold: 0.5 }
     );
 
-    // Observe each section
     SECTIONS.forEach((section) => {
-      const elementId = getSectionElementId(section);
-      const element = document.getElementById(elementId);
+      const element = document.getElementById(section.toLowerCase());
       if (element) {
         sectionObserver.observe(element);
       }
@@ -302,7 +288,7 @@ const LMPCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}
@@ -324,19 +310,9 @@ const LMPCIndex = () => {
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 15l7-7 7 7"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             )}
           </svg>
         </button>

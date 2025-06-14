@@ -224,22 +224,27 @@ export const BISFMIndex = () => {
     "FAQs",
   ];
 
+  // Helper function to convert section name to element ID
+  const getSectionElementId = (section) => section === "FAQs" ? "faqs" : section.toLowerCase();
+
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase());
+    const elementId = getSectionElementId(item);
+    const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false);
+      setIsMobileMenuOpen(false); // Close mobile menu after clicking
     }
   };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen((prevState) => !prevState);
+    setIsMobileMenuOpen(prevState => !prevState);
   };
 
+  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -252,40 +257,43 @@ export const BISFMIndex = () => {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (stickyRef.current) {
-        const rect = stickyRef.current.getBoundingClientRect();
-        setIsSticky(rect.top <= 44);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Check if the element is intersecting and its position relative to viewport
+        const rect = entry.boundingClientRect;
+        const isAtTop = rect.top <= 1; // Added small buffer
+        setIsSticky(!entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1));
+      },
+      {
+        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
+        rootMargin: "-1px 0px 0px 0px",
       }
-    };
+    );
 
-    window.addEventListener('scroll', handleScroll);
-    // Initial check
-    handleScroll();
+    if (stickyRef.current) {
+      observer.observe(stickyRef.current);
+    }
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
+        entries.forEach(entry => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
             if (entry.target.id === "faqs") {
               setActiveSection("FAQs");
             } else {
-              const sectionName =
-                entry.target.id.charAt(0).toUpperCase() +
-                entry.target.id.slice(1);
+              // Convert id like "nomination" to "Nomination"
+              const sectionName = entry.target.id.charAt(0).toUpperCase() + entry.target.id.slice(1);
               setActiveSection(sectionName);
             }
           }
@@ -294,8 +302,10 @@ export const BISFMIndex = () => {
       { threshold: 0.5 }
     );
 
-    SECTIONS.forEach((section) => {
-      const element = document.getElementById(section.toLowerCase());
+    // Observe each section
+    SECTIONS.forEach(section => {
+      const elementId = getSectionElementId(section);
+      const element = document.getElementById(elementId);
       if (element) {
         sectionObserver.observe(element);
       }
@@ -307,7 +317,7 @@ export const BISFMIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky  top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}
@@ -371,17 +381,13 @@ export const BISFMIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection ? "text-blue-900" : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                 }`}
             />
           </div>
