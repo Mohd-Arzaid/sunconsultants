@@ -1238,7 +1238,7 @@ const SupportSection = () => {
       <div className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         From collection of documents to getting the final registration / license
         is an exhaustive and tedious procedure, and requires technical know-how
-        and experience, this is exactly where Sun certifications and Engineers come
+        and experience, this is exactly where Sun Certifications India come
         into the picture.With over 10 years of experience in this field and
         after providing assistance to numerous manufacturers and importers , we
         can help you in smoothening of this process, by complete hand-holding
