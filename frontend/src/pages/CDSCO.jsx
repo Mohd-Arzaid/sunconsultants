@@ -105,29 +105,24 @@ const SECTIONS = [
 
 // Index
 const Index = () => {
-  const [isSticky, setIsSticky] = useState(false);
-  const [activeSection, setActiveSection] = useState("Overview");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const stickyRef = useRef(null);
-  const mobileMenuRef = useRef(null);
-  const toggleButtonRef = useRef(null);
-
-  // Helper function to convert section name to element ID
-  const getSectionElementId = (section) =>
-    section === "FAQs" ? "faqs" : section.toLowerCase();
+  const [isSticky, setIsSticky] = useState(false)
+  const [activeSection, setActiveSection] = useState("Overview")
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const stickyRef = useRef(null)
+  const mobileMenuRef = useRef(null)
+  const toggleButtonRef = useRef(null)
 
   const handleItemClick = (item) => {
-    const elementId = getSectionElementId(item);
-    const element = document.getElementById(elementId);
+    const element = document.getElementById(item.toLowerCase());
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false); // Close mobile menu after clicking
+      setIsMobileMenuOpen(false);
     }
-  };
+  }
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
@@ -153,26 +148,20 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(
-          !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
-        );
-      },
-      {
-        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -183,7 +172,6 @@ const Index = () => {
             if (entry.target.id === "faqs") {
               setActiveSection("FAQs");
             } else {
-              // Convert id like "overview" to "Overview"
               const sectionName =
                 entry.target.id.charAt(0).toUpperCase() +
                 entry.target.id.slice(1);
@@ -195,10 +183,8 @@ const Index = () => {
       { threshold: 0.5 }
     );
 
-    // Observe each section
     SECTIONS.forEach((section) => {
-      const elementId = getSectionElementId(section);
-      const element = document.getElementById(elementId);
+      const element = document.getElementById(section.toLowerCase());
       if (element) {
         sectionObserver.observe(element);
       }
@@ -206,13 +192,12 @@ const Index = () => {
 
     return () => sectionObserver.disconnect();
   }, []);
-
+ 
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky  top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -262,11 +247,10 @@ const Index = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
-                }`}
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -286,20 +270,18 @@ const Index = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
-              }`}
+                }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
-              }`}
+                }`}
             />
           </div>
         ))}
@@ -312,13 +294,13 @@ const Index = () => {
 const CDSCOContent = () => {
   return (
     <main className="">
-     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-            {/* <nav className="flex-1" aria-label="CDSCO Content Navigation"> */}
-            <CDSCOContentLeft />
+          {/* <nav className="flex-1" aria-label="CDSCO Content Navigation"> */}
+          <CDSCOContentLeft />
           {/* </nav> */}
           {/* <aside className="w-full md:w-[400px]"> */}
-            <CDSCOContentRight />
+          <CDSCOContentRight />
           {/* </aside> */}
         </div>
       </div>
