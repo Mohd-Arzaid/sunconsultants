@@ -24,7 +24,8 @@ import Aqua from "../assets/images/Aqua.png"
 import honeywell from "../assets/images/honeywell.png"
 import Ikea from "../assets/images/Ikea.png"
 import LeaderArt from "../assets/images/LeaderArt.png"
-
+import Misumi from "../assets/images/Misumi.png"
+"
   
 
 
@@ -913,7 +914,7 @@ const LogoTicker = () => {
 
 
 
- <figure className="m-0">
+            <figure className="m-0">
               <img
                 src={LeaderArt}
                 alt="Sun Certifications India - Trusted Partner Company"
@@ -922,7 +923,19 @@ const LogoTicker = () => {
             </figure>
 
 
+    <figure className="m-0">
+              <img
+                src={Misumi}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+            
+
        
+
+
+          
 
 
             
