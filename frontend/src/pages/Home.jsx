@@ -26,6 +26,8 @@ import Ikea from "../assets/images/Ikea.png"
 import LeaderArt from "../assets/images/LeaderArt.png"
 import Misumi from "../assets/images/Misumi.png"
 import nobilia from "../assets/images/nobilia.png"
+import Panasonic from "../assets/images/Panasonic.png"
+
   
 
 
@@ -933,6 +935,14 @@ const LogoTicker = () => {
             
 
        
+
+ <figure className="m-0">
+              <img
+                src={Panasonic}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
 
 
 
