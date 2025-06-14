@@ -73,109 +73,53 @@ const AuditGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
-      title: "Medical Chennai 2023",
-      description:
-        "Conducting comprehensive medical device quality audits at India's premier medical equipment expo.",
+      image: BahrainAudit,
+      title: "Bahrain",
     },
     {
       id: 2,
-      image:
-        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
-      title: "Medical Kolkata 2022",
-      description:
-        "Ensuring compliance and certification standards for healthcare providers and manufacturers.",
+      image: IndonesiaAudit,
+      title: "Indonesia",
     },
     {
       id: 3,
-      image:
-        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
-      title: "Narela Association Seminar Footwear",
-      description:
-        "Providing expert guidance on international standards for footwear manufacturing.",
+      image: ItalyAudit,
+      title: "Italy",
     },
     {
       id: 4,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
-      title: "Delhi Footwear Exhibition Audits",
-      description:
-        "Specialized training session on implementing ISO standards across various industries.",
+      image: MalaysiaAudit,
+      title: "Malaysia",
     },
     {
       id: 5,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
-      title: "Karol Bagh Association Footwear Seminar",
-      description:
-        "Auditing healthcare products and providing certification guidance to manufacturers.",
+      image: SloveniaAudit,
+      title: "Slovenia",
     },
     {
       id: 6,
-      image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
-      title: "Medical 2023",
-      description:
-        "Conducting comprehensive medical device quality audits at India's premier medical equipment expo.",
+      image: ThailandAudit,
+      title: "Thailand",
     },
     {
       id: 7,
-      image: BahrainAudit,
-      title: "Bahrain Audit",
-      description: "International audit and certification services in Bahrain.",
+      image: VietnamAudit,
+      title: "Vietnam",
     },
     {
       id: 8,
-      image: IndonesiaAudit,
-      title: "Indonesia Audit",
-      description: "Comprehensive audit services in Indonesia.",
+      image: Vietnam2Audit,
+      title: "Vietnam",
     },
     {
       id: 9,
-      image: ItalyAudit,
-      title: "Italy Audit",
-      description: "Quality certification and audit services in Italy.",
+      image: Vietnam3Audit,
+      title: "Vietnam",
     },
     {
       id: 10,
-      image: MalaysiaAudit,
-      title: "Malaysia Audit",
-      description: "International standards compliance in Malaysia.",
-    },
-    {
-      id: 11,
-      image: SloveniaAudit,
-      title: "Slovenia Audit",
-      description: "European compliance and certification in Slovenia.",
-    },
-    {
-      id: 12,
-      image: ThailandAudit,
-      title: "Thailand Audit",
-      description: "Quality management system audits in Thailand.",
-    },
-    {
-      id: 13,
-      image: VietnamAudit,
-      title: "Vietnam Audit",
-      description: "Comprehensive audit services in Vietnam.",
-    },
-    {
-      id: 14,
-      image: Vietnam2Audit,
-      title: "Vietnam Audit 2",
-      description: "Additional audit services in Vietnam.",
-    },
-    {
-      id: 15,
-      image: Vietnam3Audit,
-      title: "Vietnam Audit 3",
-      description: "Extended audit coverage in Vietnam.",
-    },
-    {
-      id: 16,
       image: Vietnam4Audit,
-      title: "Vietnam Audit 4",
-      description: "Complete audit solutions in Vietnam.",
+      title: "Vietnam",
     },
   ];
 
@@ -191,32 +135,15 @@ const AuditGallery = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110 md:group-hover:brightness-75"
+                className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
               />
             </div>
-            {/* Mobile View  */}
-            <div className="block md:hidden p-5 bg-white">
-              <div className="flex items-center  mb-1">
-                {/* <span className="inline-block w-3 h-3 rounded-full bg-[#1A8781] animate-pulse"></span> */}
-
-                <h3 className="text-neutral-800 font-inter text-xl leading-tight font-semibold ">
-                  {item.title}
-                </h3>
-              </div>
-              <p className=" text-neutral-600 font-geist text-sm leading-relaxed ">
-                {item.description}
-              </p>
-
-            </div>
-            {/* Desktop View - Hover effect */}
-            <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            {/* Country Name Overlay - Always Visible */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white font-playfair text-xl font-semibold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="text-white font-playfair text-2xl md:text-3xl font-bold transform transition-all duration-500 group-hover:scale-105">
                   {item.title}
                 </h3>
-                <p className="text-white font-geist text-sm mt-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                  {item.description}
-                </p>
               </div>
             </div>
           </div>
