@@ -19,6 +19,7 @@ import LogoFive from "../assets/images/FiveLogo.png";
 import LogoSix from "../assets/images/SixLogo.png";
 import ametek from "../assets/images/ametek.png"
 import Ansell from "../assets/images/Ansell.png"
+import Daiki from "../assets/images/Daiki.png"
 import Aqua from "../assets/images/Aqua.png"
 
 import { motion } from "motion/react";
@@ -874,6 +875,17 @@ const LogoTicker = () => {
                 loading="lazy"
               />
             </figure>
+
+
+       <figure className="m-0">
+              <img
+                src={Daiki}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
 
 
 
