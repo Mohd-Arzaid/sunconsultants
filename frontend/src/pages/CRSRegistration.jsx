@@ -180,28 +180,37 @@ const BISCRSIndex = () => {
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
-  const handleItemClick = (item) => {
-    // Map specific cases for section IDs
-    const sectionMap = {
-      ELabelling: "E-labellingSection",
-      // Add other special cases here if needed
-    };
+      // Observe each section
+    const SECTIONS = [
+      "overview",
+      "products",
+      "eligibility",
+      "documents",
+      "process",
+      "E-labellingSection",
+      "support",
+      "services"
+    ];
 
-    const elementId = sectionMap[item] || item.toLowerCase().replace(/\s+/g, "-");
-    const element = document.getElementById(elementId);
+
+  const handleItemClick = (item) => {
+    const element = document.getElementById(item.toLowerCase().replace(/\s+/g, "-"));
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false); // Close mobile menu after clicking
+      setIsMobileMenuOpen(false);
     }
   };
 
+
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(prevState => !prevState);
+    setIsMobileMenuOpen((prevState) => !prevState);
   };
+
+
 
   // Close mobile menu when clicking outside
   useEffect(() => {
@@ -216,60 +225,52 @@ const BISCRSIndex = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(!entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1));
-      },
-      {
-        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+
+
 
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            const sectionName = entry.target.id.split('-')[0].charAt(0).toUpperCase() + entry.target.id.split('-')[0].slice(1);
-            setActiveSection(sectionName);
+            if (entry.target.id === "faqs") {
+              setActiveSection("FAQs");
+            } else {
+              const sectionName =
+                entry.target.id.charAt(0).toUpperCase() +
+                entry.target.id.slice(1);
+              setActiveSection(sectionName);
+            }
           }
         });
       },
       { threshold: 0.5 }
     );
 
-    // Observe each section
-    const sections = [
-      "overview",
-      "products",
-      "eligibility",
-      "documents",
-      "process",
-      "E-labellingSection",
-      "support",
-      "services"
-    ];
-
-    sections.forEach(section => {
-      const element = document.getElementById(section);
+    SECTIONS.forEach((section) => {
+      const element = document.getElementById(section.toLowerCase().replace(/\s+/g, "-"));
       if (element) {
         sectionObserver.observe(element);
       }
@@ -278,10 +279,11 @@ const BISCRSIndex = () => {
     return () => sectionObserver.disconnect();
   }, []);
 
+
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}
