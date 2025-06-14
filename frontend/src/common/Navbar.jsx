@@ -268,16 +268,10 @@ const Navbar = () => {
                         International Audits
                       </div>
                     </a>
-                    <a href="/exhibition" className="block">
+                    <a href="/seminars-and-exhibitions" className="block">
                       <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                         <GalleryHorizontal className="w-4 h-4 mr-2" />
-                        Exhibition
-                      </div>
-                    </a>
-                    <a href="/seminar" className="block">
-                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <Laptop className="w-4 h-4 mr-2" />
-                        Webinar/Seminar
+                        Seminars/Exhibitions
                       </div>
                     </a>
                   </div>

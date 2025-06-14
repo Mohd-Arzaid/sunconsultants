@@ -54,8 +54,7 @@ function App() {
         <Route path="/latest-notification/:notificationName" element={<NotificationDetail />} />
         <Route path="/ministry-updates" element={<MinistryUpdates />} />
         <Route path="/international-audits" element={<InternationalAudits />} />
-        <Route path="/exhibition" element={<Exhibition />} />
-        <Route path="/seminar" element={<Seminar />} />
+        <Route path="/seminars-and-exhibitions" element={<Exhibition />} />
         <Route path="/clients" element={<AllClients />} />
 
         {/* Services Pages */}

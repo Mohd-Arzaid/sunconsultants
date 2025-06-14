@@ -1,7 +1,24 @@
-import React from 'react'
 import { Calendar } from "lucide-react";
 import Footer from '@/common/Footer';
 import { Services } from './Home';
+import Exhibition1 from "../assets/seminarImages/Exhibition-1.jpg"
+import Exhibition2 from "../assets/seminarImages/Exhibition-2.jpg"
+import Exhibition3 from "../assets/seminarImages/Exhibition-3.jpg"
+import Seimar82 from "../assets/seminarImages/Seimar-8-2.png"
+import Seminar4 from "../assets/seminarImages/Seminar-4.jpg"
+import Seminar5 from "../assets/seminarImages/Seminar-5.jpg"
+import Seminar62 from "../assets/seminarImages/Seminar-6-2.jpg"
+import Seminar6 from "../assets/seminarImages/Seminar-6.jpg"
+import Seminar72 from "../assets/seminarImages/Seminar-7-2.jpg"
+import Seminar7 from "../assets/seminarImages/Seminar-7.jpg"
+import Seminar8 from "../assets/seminarImages/Seminar-8.png"
+import Seminar9 from "../assets/seminarImages/Seminar-9.jpg"
+import Seminar102 from "../assets/seminarImages/Seminar-10-2.jpg"
+import Seminar103 from "../assets/seminarImages/Seminar-10-3.jpg"
+import Seminar10 from "../assets/seminarImages/Seminar-10.jpg"
+import Seminar11 from "../assets/seminarImages/Seminar-11.jpg"
+import Seminar12 from "../assets/seminarImages/Seminar-12.jpg"
+
 
 const Exhibition = () => {
   return (
@@ -58,39 +75,88 @@ const ExhibitionGallery = () => {
   const exhibitionImages = [
     {
       id: 1,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-1.png",
-      title: "International Trade Fair 2024",
-      description: "Join us at the largest gathering of industry leaders and innovators in the heart of the city.",
+      image: Exhibition1,
+      // title: "Exhibition 1",
     },
     {
       id: 2,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
-      title: "Tech Innovation Summit",
-      description: "Experience cutting-edge technology and breakthrough innovations from leading companies.",
+      image: Seminar4,
+      // title: "Seminar 4",
     },
     {
       id: 3,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
-      title: "Global Business Forum",
-      description: "Connect with international business leaders and explore new market opportunities.",
+      image: Exhibition2,
+      // title: "Exhibition 2",
     },
     {
       id: 4,
-      image: "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
-      title: "Healthcare Excellence Expo",
-      description: "Showcasing the latest advancements in medical technology and healthcare solutions.",
+      image: Seminar5,
+      // title: "Seminar 5",
     },
     {
       id: 5,
-      image: "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
-      title: "Sustainable Development Conference",
-      description: "Learn about eco-friendly innovations and sustainable business practices.",
+      image: Exhibition3,
+      // title: "Exhibition 3",
     },
     {
       id: 6,
-      image: "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
-      title: "Industry 4.0 Exhibition",
-      description: "Discover the future of manufacturing and industrial automation.",
+      image: Seminar6,
+      // title: "Seminar 6",
+    },
+    {
+      id: 7,
+      image: Seimar82,
+      // title: "Seimar 8-2",
+    },
+    {
+      id: 8,
+      image: Seminar7,
+      // title: "Seminar 7",
+    },
+    {
+      id: 9,
+      image: Seminar8,
+      // title: "Seminar 8",
+    },
+    {
+      id: 10,
+      image: Seminar9,
+      // title: "Seminar 9",
+    },
+    {
+      id: 11,
+      image: Seminar10,
+      // title: "Seminar 10",
+    },
+    {
+      id: 12,
+      image: Seminar11,
+      // title: "Seminar 11",
+    },
+    {
+      id: 13,
+      image: Seminar12,
+      // title: "Seminar 12",
+    },
+    {
+      id: 14,
+      image: Seminar62,
+      // title: "Seminar 6-2",
+    },
+    {
+      id: 15,
+      image: Seminar72,
+      // title: "Seminar 7-2",
+    },
+    {
+      id: 16,
+      image: Seminar102,
+      // title: "Seminar 10-2",
+    },
+    {
+      id: 17,
+      image: Seminar103,
+      // title: "Seminar 10-3",
     },
   ];
 
@@ -100,23 +166,21 @@ const ExhibitionGallery = () => {
         {exhibitionImages.map((item) => (
           <div
             key={item.id}
-            className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl"
+            className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white"
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110 group-hover:brightness-75"
+                className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            {/* Title Overlay - Always Visible */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white font-playfair text-xl font-semibold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="text-white font-playfair text-2xl md:text-3xl font-bold transform transition-all duration-500 group-hover:scale-105">
                   {item.title}
                 </h3>
-                <p className="text-white font-geist text-sm mt-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                  {item.description}
-                </p>
               </div>
             </div>
           </div>
