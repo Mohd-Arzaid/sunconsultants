@@ -31,6 +31,7 @@ import cuty from "../assets/images/cuty.png"
 import raumplus from "../assets/images/raumplus.png"
 import remsa from "../assets/images/remsa.png"
 import SEDOVINA from "../assets/images/SEDOVINA.png"
+import Thantawan from "../assets/images/Thantawan.png"
   
 
 
@@ -993,6 +994,17 @@ const LogoTicker = () => {
             </figure>
 
             
+              <figure className="m-0">
+              <img
+                src={Thantawan}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+
+
 
 
 
