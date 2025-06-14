@@ -21,7 +21,7 @@ export const LegalMetrology = () => {
   return (
     <>
       <Helmet>
-        <title>Legal Metrology Certification Services | Weights & Measures | Sun Consultants</title>
+        <title>Legal Metrology Certification Services | Weights & Measures | Sun certifications</title>
         <meta
           name="description"
           content="Expert Legal Metrology certification services for weights and measures. Get certification for weighing and measuring instruments. Trusted since 2013."
@@ -30,7 +30,7 @@ export const LegalMetrology = () => {
           name="keywords"
           content="Legal Metrology, weights and measures, metrology certification, weighing instruments, measuring instruments"
         />
-        <meta name="author" content="Sun Consultants & Engineers" />
+        <meta name="author" content="Sun certifications & Engineers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}
@@ -44,12 +44,12 @@ export const LegalMetrology = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Consultants & Engineers" />
+        <meta property="og:site_name" content="Sun certifications & Engineers" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@ConsultantsSun" />
+        <meta name="twitter:site" content="@certificationsSun" />
         <meta
           name="twitter:title"
           content="Legal Metrology Certification Services | Weights & Measures"
@@ -71,9 +71,9 @@ export const LegalMetrology = () => {
             serviceType: "Legal Metrology Certification",
             provider: {
               "@type": "Organization",
-              name: "Sun Consultants & Engineers",
+              name: "Sun certifications & Engineers",
               url: window.location.href,
-              logo: "https://sunconsultants.com/logo.png",
+              logo: "https://suncertifications.com/logo.png",
             },
             areaServed: {
               "@type": "Country",
@@ -144,7 +144,7 @@ const LMCHero = () => {
               Legal Metrology Certification
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
-            Consultants
+            certifications
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
@@ -414,7 +414,7 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our consultants work to expedite these
+                registrations 2-4 months. Our certifications work to expedite these
                 timelines through proper documentation and regulatory strategy.
               </AccordionContent>
             </AccordionItem>
@@ -513,7 +513,7 @@ const ServiceFaq = () => {
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
                 streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our consultants keep
+                safety monitoring and quality control. Our certifications keep
                 abreast of all changes and adjust strategies accordingly.
               </AccordionContent>
             </AccordionItem>
@@ -858,7 +858,7 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h2 id="consultancy-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Sun Consultants: Plastic Waste License Experts
+        Sun certifications: Plastic Waste License Experts
       </h2>
 
       {/* Description */}
@@ -867,7 +867,7 @@ const ConsultingSection = () => {
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As Plastic Waste Management registration consultants, our job is to
+        As Plastic Waste Management registration certifications, our job is to
         ensure that the tiring procedures that we have listed above become a
         cake-walk for you. Right from the beginning, i.e. from the stage of
         collection of documents from the foreign manufacturers or preparation of

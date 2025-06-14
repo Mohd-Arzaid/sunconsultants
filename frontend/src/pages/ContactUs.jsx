@@ -49,7 +49,7 @@ const ContactUs = () => {
       return;
     }
 
-   
+
 
     // Phone number validation
     const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
@@ -65,27 +65,27 @@ const ContactUs = () => {
     }
 
 
-       
-    
-     // Email validation
-     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-     const commonDomains = [
-       "gmail.com",
-       "yahoo.com",
-       "hotmail.com",
-       "outlook.com",
-     ];
-     const domain = email.split("@")[1];
- 
-     if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
-       toast({
-         variant: "destructive",
-         title: "Please Enter a valid Email Address.",
-         description: "Check if Your Email Format is Correct",
-       });
-       setLoading(false);
-       return;
-     }
+
+
+    // Email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const commonDomains = [
+      "gmail.com",
+      "yahoo.com",
+      "hotmail.com",
+      "outlook.com",
+    ];
+    const domain = email.split("@")[1];
+
+    if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
+      toast({
+        variant: "destructive",
+        title: "Please Enter a valid Email Address.",
+        description: "Check if Your Email Format is Correct",
+      });
+      setLoading(false);
+      return;
+    }
 
 
 
@@ -122,7 +122,7 @@ const ContactUs = () => {
         title: errorMessage || "Failed to submit contact form details!",
         description:
           "Something Went Wrong. Please Check Your Details and Try Again.",
-      });      
+      });
     } finally {
       setLoading(false);
     }
@@ -266,7 +266,7 @@ const ContactUs = () => {
               Email
             </h4>
             <p className="font-geist text-[#3C3C48] text-[16px] md:text-[20px] font-medium text-center">
-              info@sunconsultants.co.in
+              info@suncertifications.co.in
             </p>
           </div>
 

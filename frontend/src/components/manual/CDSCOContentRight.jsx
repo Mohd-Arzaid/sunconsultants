@@ -318,14 +318,14 @@ const OurServices = () => {
     },
     {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
-      title: "EPR Certificate Consultants",
+      title: "EPR Certificate certifications",
       description:
         "Consultancy for EPR (Extended Producer Responsibility) Certificate for e-waste, plastic waste, and battery waste management.",
       link: "/services/epr-registration",
     },
     {
       image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-      title: "LMPC Certificate Consultants",
+      title: "LMPC Certificate certifications",
       description:
         "Expert guidance for obtaining LMPC (Legal Metrology Packaged Commodities) Certificate for importers and manufacturers.",
       link: "/services/lmpc-registration",

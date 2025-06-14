@@ -28,7 +28,7 @@ const Client = () => {
       name: "Ragini Singh",
       designation: "App Developer",
       description:
-        "Their expertise in LMPC certification was invaluable for our product launch in India. The consultants provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
+        "Their expertise in LMPC certification was invaluable for our product launch in India. The certifications provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
     },
     {
       image:

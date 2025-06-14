@@ -9,7 +9,7 @@ const Seminar = () => {
       {/* Seminar Hero */}
       <SeminarHero />
       <SeminarGallery />
-      <Services/>
+      <Services />
       <Footer />
     </div>
   );
@@ -61,37 +61,37 @@ const SeminarGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-1.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-1.png",
       title: "Quality Management Workshop",
       description: "Comprehensive training on implementing and maintaining quality management systems.",
     },
     {
       id: 2,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-2.png",
       title: "ISO Standards Training",
       description: "Expert-led sessions on understanding and implementing ISO standards.",
     },
     {
       id: 3,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-3.png",
       title: "Industry Best Practices",
       description: "Learn about the latest industry standards and best practices.",
     },
     {
       id: 4,
-      image: "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+      image: "https://suncertifications.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
       title: "Footwear Industry Seminar",
       description: "Specialized training for footwear manufacturers and suppliers.",
     },
     {
       id: 5,
-      image: "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+      image: "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
       title: "Healthcare Standards",
       description: "Training on healthcare industry standards and compliance.",
     },
     {
       id: 6,
-      image: "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+      image: "https://suncertifications.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
       title: "Medical Device Training",
       description: "Comprehensive training on medical device regulations and standards.",
     },

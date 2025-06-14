@@ -77,7 +77,7 @@ const TECHero = () => {
         </div>
 
         {/* Right Side */}
-       <ServiceContactForm/>
+        <ServiceContactForm />
       </div>
     </main>
   );
@@ -188,7 +188,7 @@ const TECIndex = () => {
         }`}
     >
 
-      
+
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
@@ -207,7 +207,7 @@ const TECIndex = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
- {isMobileMenuOpen ? (
+            {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             ) : (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -227,11 +227,10 @@ const TECIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
-                }`}
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -251,20 +250,18 @@ const TECIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
-              }`}
+                }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
-              }`}
+                }`}
             />
           </div>
         ))}
@@ -328,7 +325,7 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our consultants work to expedite these
+                registrations 2-4 months. Our certifications work to expedite these
                 timelines through proper documentation and regulatory strategy.
               </AccordionContent>
             </AccordionItem>
@@ -427,7 +424,7 @@ const ServiceFaq = () => {
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
                 streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our consultants keep
+                safety monitoring and quality control. Our certifications keep
                 abreast of all changes and adjust strategies accordingly.
               </AccordionContent>
             </AccordionItem>
@@ -524,9 +521,9 @@ const TECContentLeft = () => {
         {/* Consultancy Section */}
         <ConsultancySection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-      
-            {/* Review Section */}
-            <ReviewSection />
+
+        {/* Review Section */}
+        <ReviewSection />
       </div>
     </div>
   );
@@ -616,7 +613,7 @@ const ProductsSection = () => {
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Leading TEC consultants in India, ensuring seamless telecom
+        Leading TEC certifications in India, ensuring seamless telecom
         certification.
       </p>
 
@@ -647,8 +644,8 @@ const ProductsSection = () => {
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         The Department of Telecom has made mandatory Telecom products
         certification in India, for which we are one of the most prominent TEC
-        consultants in India. As one of the Telecom product certification
-        consultants we assist all the telecom manufacturers to adhere to their
+        certifications in India. As one of the Telecom product certification
+        certifications we assist all the telecom manufacturers to adhere to their
         licence requirements in india.
       </div>
     </section>
@@ -835,7 +832,7 @@ const ConsultancySection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        TEC Consultancy by Sun Consultants
+        TEC Consultancy by Sun certifications
       </h3>
 
       {/* Description */}
@@ -844,7 +841,7 @@ const ConsultancySection = () => {
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As TEC registration consultants, our job is to ensure that the tiring
+        As TEC registration certifications, our job is to ensure that the tiring
         procedures that we have listed above become a cake-walk for you. Right
         from the beginning i.e. from the stage of collection of documents from
         the foreign manufacturers or preparation of documents for the Indian
@@ -852,7 +849,7 @@ const ConsultancySection = () => {
         is under our scope.
         <br />
         <br />
-        We are one of the most experienced TEC consultants in the field of
+        We are one of the most experienced TEC certifications in the field of
         medical products,we provide apex quality of services possible to all our
         national and international clients.
       </div>

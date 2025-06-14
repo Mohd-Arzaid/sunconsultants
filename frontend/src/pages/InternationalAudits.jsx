@@ -9,7 +9,7 @@ const InternationalAudits = () => {
       {/* Audit Hero */}
       <AuditHero />
       <AuditGallery />
-      <Services/>
+      <Services />
       <Footer />
     </div>
   );
@@ -65,7 +65,7 @@ const AuditGallery = () => {
     {
       id: 1,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
       title: "Medical Chennai 2023",
       description:
         "Conducting comprehensive medical device quality audits at India's premier medical equipment expo.",
@@ -73,7 +73,7 @@ const AuditGallery = () => {
     {
       id: 2,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+        "https://suncertifications.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
       title: "Medical Kolkata 2022",
       description:
         "Ensuring compliance and certification standards for healthcare providers and manufacturers.",
@@ -81,21 +81,21 @@ const AuditGallery = () => {
     {
       id: 3,
       image:
-        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+        "https://suncertifications.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
       title: "Narela Association Seminar Footwear",
       description:
         "Providing expert guidance on international standards for footwear manufacturing.",
     },
     {
       id: 4,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-2.png",
       title: "Delhi Footwear Exhibition Audits",
       description:
         "Specialized training session on implementing ISO standards across various industries.",
     },
     {
       id: 5,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-3.png",
       title: "Karol Bagh Association Footwear Seminar",
       description:
         "Auditing healthcare products and providing certification guidance to manufacturers.",
@@ -103,7 +103,7 @@ const AuditGallery = () => {
     {
       id: 6,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
       title: "Medical 2023",
       description:
         "Conducting comprehensive medical device quality audits at India's premier medical equipment expo.",
@@ -128,7 +128,7 @@ const AuditGallery = () => {
             {/* Mobile View  */}
             <div className="block md:hidden p-5 bg-white">
               <div className="flex items-center  mb-1">
-              {/* <span className="inline-block w-3 h-3 rounded-full bg-[#1A8781] animate-pulse"></span> */}
+                {/* <span className="inline-block w-3 h-3 rounded-full bg-[#1A8781] animate-pulse"></span> */}
 
                 <h3 className="text-neutral-800 font-inter text-xl leading-tight font-semibold ">
                   {item.title}
@@ -137,7 +137,7 @@ const AuditGallery = () => {
               <p className=" text-neutral-600 font-geist text-sm leading-relaxed ">
                 {item.description}
               </p>
-              
+
             </div>
             {/* Desktop View - Hover effect */}
             <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">

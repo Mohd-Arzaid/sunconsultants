@@ -154,7 +154,7 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our consultants work to expedite these
+                registrations 2-4 months. Our certifications work to expedite these
                 timelines through proper documentation and regulatory strategy.
               </AccordionContent>
             </AccordionItem>
@@ -253,7 +253,7 @@ const ServiceFaq = () => {
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
                 streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our consultants keep
+                safety monitoring and quality control. Our certifications keep
                 abreast of all changes and adjust strategies accordingly.
               </AccordionContent>
             </AccordionItem>
@@ -282,7 +282,7 @@ const ServiceFaq = () => {
             <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
               Email us at{" "}
               <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-                info@sunconsultants.co.in
+                info@suncertifications.co.in
               </span>{" "}
               or use one of the options below. We usually get back within a day or
               two.
@@ -300,7 +300,7 @@ const ServiceFaq = () => {
               <div className="flex gap-x-6">
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="mailto:info@sunconsultants.co.in"
+                  href="mailto:info@suncertifications.co.in"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
@@ -320,7 +320,7 @@ const ServiceFaq = () => {
                 </a>
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="https://www.github.com/sunconsultants"
+                  href="https://www.github.com/suncertifications"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
@@ -340,7 +340,7 @@ const ServiceFaq = () => {
                 </a>
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="https://x.com/sunconsultants"
+                  href="https://x.com/suncertifications"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
@@ -363,7 +363,7 @@ const ServiceFaq = () => {
                 </a>
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="https://www.linkedin.com/company/sunconsultants"
+                  href="https://www.linkedin.com/company/suncertifications"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
@@ -556,7 +556,7 @@ const DocumentsSection = () => {
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        BIS Certification Documents | Sun Certifications And Engineers
+        BIS Certification Documents | Sun Certifications India
       </p>
 
       {/* Eligibility Content */}
@@ -592,14 +592,14 @@ const DocumentsSection = () => {
         <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
           All of the above documents are required in certain formats given by
           BIS which are to be submitted during the application. As FMCS
-          consultants, we at Sun Certifications And Engineers are experts for
+          certifications, we at Sun Certifications India are experts for
           preparation of all the documents above in formats prescribed by BIS,
           contact us for more details at
           <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
             <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
               Email
             </span>
-            info@sunconsultants.co.in , sunconsultantsinfo@gmail.com
+            info@suncertifications.co.in , suncertificationsinfo@gmail.com
           </div>
         </div>
         <div className="mt-[12px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
@@ -844,12 +844,12 @@ const ConsultingSection = () => {
 
       {/* Title */}
       <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Role of Sun Certifications And Engineers?
+        Role of Sun Certifications India?
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Sun Certifications And Engineers ensure hassle-free BIS FMCS licensing
+        Sun Certifications India ensure hassle-free BIS FMCS licensing
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
@@ -879,7 +879,7 @@ const ConsultingSection = () => {
             "Technical assistance for the setup of in-house lab as per the standard requirements",
             "Assisting the manufacturer in understanding the post license compliances to be followed",
           ]}
-          heading="Below is the scope of work of Sun Certifications And Engineers:"
+          heading="Below is the scope of work of Sun Certifications India:"
         />
       </div>
     </section>

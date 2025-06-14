@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@sunconsultants.co.in
+              info@suncertifications.co.in
             </span>{" "}
             or use one of the options below. We usually get back within 24 hours.
           </div>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
 
           <div className="flex justify-center w-full">
-          <div className="flex gap-6 flex-wrap items-center justify-center">
+            <div className="flex gap-6 flex-wrap items-center justify-center">
               <a
                 href="https://wa.me/919876543210"
                 target="_blank"
@@ -75,7 +75,7 @@ const Footer = () => {
               </a>
             </div>
 
-       
+
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ const Footer = () => {
                 />
                 <Link to="/" className="text-center">
                   <h1 className="font-roboto text-black uppercase tracking-wider text-xl font-bold">
-                    Sun Certifications And Engineers
+                    Sun Certifications India
                   </h1>
                   <p className="text-foreground/80 text-xs uppercase font-normal">
                     Your Complete Certification Partner
@@ -163,11 +163,11 @@ const Footer = () => {
                   <Link to="/services/rohs" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
                     ROHS
                   </Link>
-                  
-                  <Link  to="/services/wpc" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+
+                  <Link to="/services/wpc" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
                     WPC
                   </Link >
-                
+
                 </div>
               </div>
 
@@ -280,7 +280,7 @@ const Footer = () => {
             </button>
 
             <span className="text-[#2a5075] font-geist text-[13px] md:text-base text-center">
-              Copyright © 2025 Sun Certifications And Engineers. All Rights Reserved.
+              Copyright © 2025 Sun Certifications India. All Rights Reserved.
             </span>
 
             <div className="md:hidden flex items-center gap-2">

@@ -180,17 +180,17 @@ const BISCRSIndex = () => {
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
-      // Observe each section
-    const SECTIONS = [
-      "overview",
-      "products",
-      "eligibility",
-      "documents",
-      "process",
-      "E-labellingSection",
-      "support",
-      "services"
-    ];
+  // Observe each section
+  const SECTIONS = [
+    "overview",
+    "products",
+    "eligibility",
+    "documents",
+    "process",
+    "E-labellingSection",
+    "support",
+    "services"
+  ];
 
 
   const handleItemClick = (item) => {
@@ -568,7 +568,7 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our consultants work to expedite these
+                registrations 2-4 months. Our certifications work to expedite these
                 timelines through proper documentation and regulatory strategy.
               </AccordionContent>
             </AccordionItem>
@@ -667,7 +667,7 @@ const ServiceFaq = () => {
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
                 streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our consultants keep
+                safety monitoring and quality control. Our certifications keep
                 abreast of all changes and adjust strategies accordingly.
               </AccordionContent>
             </AccordionItem>
@@ -696,7 +696,7 @@ const ServiceFaq = () => {
           <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@sunconsultants.co.in
+              info@suncertifications.co.in
             </span>{" "}
             or use one of the options below. We usually get back within a day or
             two.
@@ -714,7 +714,7 @@ const ServiceFaq = () => {
             <div className="flex gap-x-6">
               <a
                 className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="mailto:info@sunconsultants.co.in"
+                href="mailto:info@suncertifications.co.in"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -734,7 +734,7 @@ const ServiceFaq = () => {
               </a>
               <a
                 className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.github.com/sunconsultants"
+                href="https://www.github.com/suncertifications"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -754,7 +754,7 @@ const ServiceFaq = () => {
               </a>
               <a
                 className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://x.com/sunconsultants"
+                href="https://x.com/suncertifications"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -777,7 +777,7 @@ const ServiceFaq = () => {
               </a>
               <a
                 className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.linkedin.com/company/sunconsultants"
+                href="https://www.linkedin.com/company/suncertifications"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -1225,12 +1225,12 @@ const SupportSection = () => {
 
       {/* Title */}
       <h3 className="text-[24px] md:text-[40px] font-roboto font-bold text-[#131316] leading-tight md:leading-normal">
-        Sun Consultants: BIS CRS Expert
+        Sun certifications: BIS CRS Expert
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[14px] md:text-[20px] text-[#131316]">
-        Sun Consultants & Engineers ensure a hassle-free BIS CRS registration
+        Sun certifications & Engineers ensure a hassle-free BIS CRS registration
         process.
       </p>
 
@@ -1238,7 +1238,7 @@ const SupportSection = () => {
       <div className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         From collection of documents to getting the final registration / license
         is an exhaustive and tedious procedure, and requires technical know-how
-        and experience, this is exactly where Sun Consultants and Engineers come
+        and experience, this is exactly where Sun certifications and Engineers come
         into the picture.With over 10 years of experience in this field and
         after providing assistance to numerous manufacturers and importers , we
         can help you in smoothening of this process, by complete hand-holding
@@ -1262,12 +1262,12 @@ const ServicesSection = () => {
 
       {/* Title */}
       <h3 className="text-[24px] md:text-[40px] font-roboto font-bold text-[#131316] leading-tight md:leading-normal">
-        Scope of Work: Sun Consultants & Engineers
+        Scope of Work: Sun certifications & Engineers
       </h3>
 
       {/* Description */}
       <p className="font-semibold font-geist text-[14px] md:text-[20px] text-[#131316]">
-        Sun Consultants & Engineers ensure hassle-free BIS CRS registration and
+        Sun certifications & Engineers ensure hassle-free BIS CRS registration and
         compliance.
       </p>
 
@@ -1281,7 +1281,7 @@ const ServicesSection = () => {
             "Follow-up with the test lab for releasing test reports as per IS.",
             "Checking if the manufacturer's labels comply with BIS guidelines.",
           ]}
-          heading="BIS CRS Registration Process by Sun Consultants & Engineers"
+          heading="BIS CRS Registration Process by Sun certifications & Engineers"
         />
       </div>
     </section>

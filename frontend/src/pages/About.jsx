@@ -508,7 +508,7 @@ const Testimonials = () => {
       name: "Rajesh Kumar",
       role: "CEO, Tech Solutions Inc.",
       image: "https://randomuser.me/api/portraits/men/32.jpg",
-      content: "Sun Certifications And Engineers made our BIS certification process seamless. Their expertise and dedication helped us enter the Indian market with confidence.",
+      content: "Sun Certifications India made our BIS certification process seamless. Their expertise and dedication helped us enter the Indian market with confidence.",
       rating: 5
     },
     {

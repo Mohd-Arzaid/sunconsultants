@@ -146,8 +146,8 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Sun Certifications & Engineers",
-            url: "https://sunconsultants.co.in",
-            logo: "https://sunconsultants.co.in/assets/img/suncons.png",
+            url: "https://suncertifications.co.in",
+            logo: "https://suncertifications.co.in/assets/img/suncons.png",
             description:
               "Sun Certifications is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license.",
             address: {
@@ -163,7 +163,7 @@ const Home = () => {
               "@type": "ContactPoint",
               telephone: "+91-9315973373",
               contactType: "customer service",
-              email: "info@sunconsultants.co.in",
+              email: "info@suncertifications.co.in",
             },
             sameAs: ["https://twitter.com/CertificationsSun"],
           })}
@@ -493,35 +493,35 @@ const WebinarSeminarMarquee = () => {
     {
       id: 1,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
       title: "Medical Chennai 2023",
     },
     {
       id: 2,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+        "https://suncertifications.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
       title: "Medical Kolkata 2022",
     },
     {
       id: 3,
       image:
-        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+        "https://suncertifications.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
       title: "Narela Association Seminar Footwear",
     },
     {
       id: 4,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-2.png",
       title: "Delhi Footwear Exhibition Audits",
     },
     {
       id: 5,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-3.png",
       title: "Karol Bagh Association Footwear Seminar",
     },
     {
       id: 6,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
       title: "Medical 2023",
     },
   ];
@@ -576,35 +576,35 @@ const AuditsMarquee = () => {
     {
       id: 1,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
+        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
       title: "Medical Chennai 2023",
     },
     {
       id: 2,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
+        "https://suncertifications.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
       title: "Medical Kolkata 2022",
     },
     {
       id: 3,
       image:
-        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
+        "https://suncertifications.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
       title: "Narela Association Seminar Footwear",
     },
     {
       id: 4,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-2.png",
       title: "Delhi Footwear Exhibition Audits",
     },
     {
       id: 5,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
+      image: "https://suncertifications.co.in/photo-event/2023/sun-3.png",
       title: "Karol Bagh Association Footwear Seminar",
     },
     {
       id: 6,
       image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
+        "https://suncertifications.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
       title: "Medical 2023",
     },
   ];
@@ -672,7 +672,7 @@ const Hero = () => {
               <figure className="m-0">
                 <img
                   src={HeroImage}
-                  alt="Sun Certifications And Engineers - Professional Certification Services"
+                  alt="Sun Certifications India - Professional Certification Services"
                   width="740"
                   height="515"
                   loading="lazy"
@@ -684,7 +684,7 @@ const Hero = () => {
                 <article className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                   <header className="relative max-w-[600px]">
                     <h1 className="text-5xl font-bold font-playfair text-left text-black leading-[52px]">
-                      Sun Certifications And Engineers
+                      Sun Certifications India
                     </h1>
                     {/* <div className="w-[52px] h-[8px] bg-black inset-0 absolute transform translate-x-[380px] translate-y-7"></div> */}
                   </header>
@@ -745,14 +745,14 @@ const Hero = () => {
             <div className="flex flex-col gap-8 mt-10 mb-16">
               <header>
                 <WordPullUp
-                  words="Sun Certifications And Engineers"
+                  words="Sun Certifications India"
                   className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
                 />
               </header>
               <article className="max-w-2xl">
                 <FadeText
                   text="
-             Trusted consultants for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
+             Trusted certifications for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
               "
                   className="font-geist text-gray-600"
                   direction="left"
@@ -780,7 +780,7 @@ const Hero = () => {
             <figure className="m-0">
               <img
                 src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg"
-                alt="Sun Certifications And Engineers - Professional Certification Services"
+                alt="Sun Certifications India - Professional Certification Services"
                 className="w-80 md:w-96 drop-shadow-xl"
               />
             </figure>
@@ -812,35 +812,35 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoOne}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoThree}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoFour}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoFive}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoSix}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
@@ -848,42 +848,42 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoOne}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoTwo}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoThree}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoFour}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoFive}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
             <figure className="m-0">
               <img
                 src={LogoSix}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
@@ -891,7 +891,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoOne}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -899,7 +899,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoTwo}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -907,7 +907,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoThree}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -915,7 +915,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoFour}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -923,7 +923,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoFive}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -931,7 +931,7 @@ const LogoTicker = () => {
             <figure className="m-0">
               <img
                 src={LogoSix}
-                alt="Sun Certifications And Engineers - Trusted Partner Company"
+                alt="Sun Certifications India - Trusted Partner Company"
                 className="hidden md:block"
                 loading="lazy"
               />
@@ -1324,7 +1324,7 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             />
 
 
-             <Input
+            <Input
               disabled={loading}
               required
               type="phoneNumber"

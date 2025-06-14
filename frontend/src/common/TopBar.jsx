@@ -10,21 +10,21 @@ const TopBar = () => {
         <div className="flex items-center justify-center">
           <div className="flex items-center gap-8">
             <a
-              href="mailto:info@sunconsultants.co.in"
+              href="mailto:info@suncertifications.co.in"
               className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
             >
               <Mail className="w-4 h-4 mr-2" />
-              info@sunconsultants.co.in
+              info@suncertifications.co.in
             </a>
 
             <div className="w-px h-5 bg-white/30"></div>
 
             <a
-              href="mailto:support@sunconsultants.co.in"
+              href="mailto:support@suncertifications.co.in"
               className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
             >
               <Mail className="w-4 h-4 mr-2" />
-              sunconsultantsinfo@gmail.com
+              suncertificationsinfo@gmail.com
             </a>
 
             <div className="w-px h-5 bg-white/30"></div>

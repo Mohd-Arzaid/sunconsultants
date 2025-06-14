@@ -425,7 +425,7 @@ const ServiceFaq = () => {
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
                 streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our consultants keep
+                safety monitoring and quality control. Our certifications keep
                 abreast of all changes and adjust strategies accordingly.
               </AccordionContent>
             </AccordionItem>

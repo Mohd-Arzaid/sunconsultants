@@ -40,7 +40,7 @@ const NotificationDetail = () => {
         </div>
       </div>
       {/* <OurServices /> */}
-      <Services/>
+      <Services />
       <Footer />
     </div>
   );
@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@sunconsultants.co.in
+              info@suncertifications.co.in
             </span>{" "}
             or use one of the options below. We usually get back within 24 hours.
           </div>
@@ -135,7 +135,7 @@ const Footer = () => {
                 />
                 <Link to="/" className="text-center">
                   <h1 className="font-roboto text-black uppercase tracking-wider text-xl font-bold">
-                    Sun Certifications And Engineers
+                    Sun Certifications India
                   </h1>
                   <p className="text-foreground/80 text-xs uppercase font-normal">
                     Your Complete Certification Partner
@@ -318,7 +318,7 @@ const Footer = () => {
             </button>
 
             <span className="text-[#2a5075] font-geist text-[13px] md:text-base text-center">
-              Copyright © 2025 Sun Certifications And Engineers. All Rights Reserved.
+              Copyright © 2025 Sun Certifications India. All Rights Reserved.
             </span>
 
             <div className="md:hidden flex items-center gap-2">
@@ -353,7 +353,7 @@ export default NotificationDetail;
 
 const OurServices = () => {
   const navigate = useNavigate();
-  
+
   const services = [
     {
       id: 1,
@@ -476,7 +476,7 @@ const OurServices = () => {
                       <p className="text-base md:text-xl font-geist text-gray-700 leading-relaxed text-center md:text-left">
                         {service.description}
                       </p>
-                      <button 
+                      <button
                         onClick={() => navigate(service.path)}
                         className="flex items-center gap-3 bg-[#1A8781] text-white py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-2 md:mt-4 group mx-auto md:mx-0"
                       >
@@ -512,11 +512,10 @@ const OurServices = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
-                  activeIndex === index
-                    ? "bg-[#1A8781] w-10"
-                    : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${activeIndex === index
+                  ? "bg-[#1A8781] w-10"
+                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                  }`}
               ></button>
             ))}
           </div>
@@ -528,11 +527,10 @@ const OurServices = () => {
             <div
               key={service.id || index}
               onClick={() => goToSlide(index)}
-              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${
-                activeIndex === index
-                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-              }`}
+              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${activeIndex === index
+                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+                }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
                 <div className="text-2xl md:text-3xl mb-0.5 md:mb-1">
@@ -661,8 +659,8 @@ const NotificationDetailRight = () => {
 
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
-   
-      <LatestBlog/>
+
+      <LatestBlog />
 
       <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Header */}

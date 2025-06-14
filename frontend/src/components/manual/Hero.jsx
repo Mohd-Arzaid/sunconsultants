@@ -33,13 +33,13 @@ const Hero = () => {
                 <div className="py-6 px-8 bg-white w-[650px] h-[380px] bg-white/70 backdrop-blur-lg shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                   <div className="relative max-w-96">
                     <h1 className="text-5xl font-bold font-playfair text-left text-black leading-[52px]">
-                      Sun Consultants And Engineers
+                      Sun certifications And Engineers
                     </h1>
                     <div className="w-[52px] h-[8px] bg-black inset-0 absolute transform translate-x-[380px] translate-y-7"></div>
                   </div>
 
                   <div className="mt-5 text-sm sm:text-xl text-zinc-500 tracking-wide mb-7 text-left max-w-2xl">
-                    Trusted consultants for BIS, LMPC, EPR, and WPC
+                    Trusted certifications for BIS, LMPC, EPR, and WPC
                     certifications since 2013. We assist both Indian and foreign
                     manufacturers in obtaining essential government
                     certifications for the Indian market.
@@ -80,13 +80,13 @@ const Hero = () => {
           <div className="flex justify-between flex-col items-center w-full m-auto pb-12">
             <div className="flex flex-col gap-8 mt-10 mb-16">
               <WordPullUp
-                words="Sun Consultants And Engineers"
+                words="Sun certifications And Engineers"
                 className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
               />
               <div className="max-w-2xl">
                 <FadeText
                   text="
-             Trusted consultants for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
+             Trusted certifications for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
               "
                   className="font-geist text-gray-600"
                   direction="left"

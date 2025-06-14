@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@sunconsultants.co.in
+              info@suncertifications.co.in
             </span>{" "}
             or use one of the options below. We usually get back within 24 hours.
           </div>
@@ -113,7 +113,7 @@ const Footer = () => {
                 />
                 <Link to="/" className="text-center">
                   <h1 className="font-roboto text-black uppercase tracking-wider text-xl font-bold">
-                    Sun Certifications And Engineers
+                    Sun Certifications India
                   </h1>
                   <p className="text-foreground/80 text-xs uppercase font-normal">
                     Your Complete Certification Partner
@@ -296,7 +296,7 @@ const Footer = () => {
             </button>
 
             <span className="text-[#2a5075] font-geist text-[13px] md:text-base text-center">
-              Copyright © 2025 Sun Certifications And Engineers. All Rights Reserved.
+              Copyright © 2025 Sun Certifications India. All Rights Reserved.
             </span>
 
             <div className="md:hidden flex items-center gap-2">

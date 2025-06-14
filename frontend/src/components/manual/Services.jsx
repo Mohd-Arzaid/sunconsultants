@@ -100,7 +100,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              EPR Certificate Consultants
+              EPR Certificate certifications
             </p>
           </Link>
 
@@ -113,7 +113,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
-              LMPC Certificate Consultants
+              LMPC Certificate certifications
             </p>
           </Link>
 

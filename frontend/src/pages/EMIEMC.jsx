@@ -79,7 +79,7 @@ const EMIHero = () => {
         </div>
 
         {/* Right Side */}
-       <ServiceContactForm/>
+        <ServiceContactForm />
       </div>
     </main>
   );
@@ -155,9 +155,8 @@ const EMIIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -177,7 +176,7 @@ const EMIIndex = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
- {isMobileMenuOpen ? (
+            {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
             ) : (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -204,11 +203,10 @@ const EMIIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
-                }`}
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -232,18 +230,16 @@ const EMIIndex = () => {
           <div
             key={item}
             onClick={() => handleItemClick(item)}
-            className={`relative cursor-pointer group ${
-              item === activeSection
+            className={`relative cursor-pointer group ${item === activeSection
                 ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
                 : ""
-            }`}
+              }`}
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
-              }`}
+                }`}
             >
               {item}
             </div>
@@ -313,7 +309,7 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our consultants work to expedite these
+                registrations 2-4 months. Our certifications work to expedite these
                 timelines through proper documentation and regulatory strategy.
               </AccordionContent>
             </AccordionItem>
@@ -412,7 +408,7 @@ const ServiceFaq = () => {
                 Trials Rules (2019), Medical Device Rules (2017), and ongoing
                 updates to the Drugs and Cosmetics Act. These changes have
                 streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our consultants keep
+                safety monitoring and quality control. Our certifications keep
                 abreast of all changes and adjust strategies accordingly.
               </AccordionContent>
             </AccordionItem>
@@ -441,7 +437,7 @@ const ServiceFaq = () => {
             <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
               Email us at{" "}
               <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-                info@sunconsultants.co.in
+                info@suncertifications.co.in
               </span>{" "}
               or use one of the options below. We usually get back within a day or
               two.
@@ -459,7 +455,7 @@ const ServiceFaq = () => {
               <div className="flex gap-x-6">
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="mailto:info@sunconsultants.co.in"
+                  href="mailto:info@suncertifications.co.in"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
@@ -479,7 +475,7 @@ const ServiceFaq = () => {
                 </a>
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="https://www.github.com/sunconsultants"
+                  href="https://www.github.com/suncertifications"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
@@ -499,7 +495,7 @@ const ServiceFaq = () => {
                 </a>
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="https://x.com/sunconsultants"
+                  href="https://x.com/suncertifications"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
@@ -522,7 +518,7 @@ const ServiceFaq = () => {
                 </a>
                 <a
                   className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                  href="https://www.linkedin.com/company/sunconsultants"
+                  href="https://www.linkedin.com/company/suncertifications"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
@@ -731,7 +727,7 @@ const RegistrationSection = () => {
 
       {/* Registration Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Any person who intends to import/export any weight & measure needs to register himself with Department of EMI Metrology, Government of India as importer, packer or manufacturer. If You are Looking for top EMI Metrology consultants in India then SUN CONSULTANTS & ENGINEERS is your ultimate destination to resolve all your queries pertaining to EMI metrology compliances. We are a team of dedicated professionals offering premium EMI Metrology consultancy services in India. As a team we are well-versed with the procedures laid down by the Government and help your business through the entire registration process and knowledge support wherever required. We assure you of complete satisfaction for EMI Metrology Consultancy in India because of the reason that we have extensive experience of working with EMI Metrology Department of Consumer Affairs and EMI Metrology Food & Supplies Department.
+        Any person who intends to import/export any weight & measure needs to register himself with Department of EMI Metrology, Government of India as importer, packer or manufacturer. If You are Looking for top EMI Metrology certifications in India then SUN certifications & ENGINEERS is your ultimate destination to resolve all your queries pertaining to EMI metrology compliances. We are a team of dedicated professionals offering premium EMI Metrology consultancy services in India. As a team we are well-versed with the procedures laid down by the Government and help your business through the entire registration process and knowledge support wherever required. We assure you of complete satisfaction for EMI Metrology Consultancy in India because of the reason that we have extensive experience of working with EMI Metrology Department of Consumer Affairs and EMI Metrology Food & Supplies Department.
       </div>
     </section>
   );

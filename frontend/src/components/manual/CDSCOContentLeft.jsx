@@ -508,7 +508,7 @@ const Consulting = () => {
       </h3>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As CDSCO registration consultants, our job is to ensure that the tiring
+        As CDSCO registration certifications, our job is to ensure that the tiring
         procedures listed above become a cakewalk for you. Right from the
         beginning, i.e., from the stage of collection of documents from foreign
         manufacturers or preparation of documents for Indian manufacturers,
@@ -518,7 +518,7 @@ const Consulting = () => {
       </div>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        We are one of the most experienced CDSCO consultants in the field of
+        We are one of the most experienced CDSCO certifications in the field of
         medical products,we provide apex quality of services possible to all our
         national and international clients.
       </div>

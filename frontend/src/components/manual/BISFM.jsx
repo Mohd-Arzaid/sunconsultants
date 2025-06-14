@@ -36,14 +36,14 @@ export const BISFM = () => {
         <meta property="og:url" content={window.location.href} />
         <meta property="og:site_name" content="Sun Certifications & Engineers" />
         <meta property="og:locale" content="en_IN" />
-        <meta property="og:image" content="https://sunconsultants.com/og-image.jpg" />
+        <meta property="og:image" content="https://suncertifications.com/og-image.jpg" />
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@CertificationsSun" />
         <meta name="twitter:title" content="BIS FMCS Certification | Foreign Manufacturer Certification Scheme" />
         <meta name="twitter:description" content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India." />
-        <meta name="twitter:image" content="https://sunconsultants.com/twitter-image.jpg" />
+        <meta name="twitter:image" content="https://suncertifications.com/twitter-image.jpg" />
 
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
@@ -59,12 +59,12 @@ export const BISFM = () => {
               "@type": "Organization",
               "name": "Sun Certifications & Engineers",
               "url": window.location.href,
-              "logo": "https://sunconsultants.com/logo.png",
+              "logo": "https://suncertifications.com/logo.png",
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+91-9315973373",
                 "contactType": "customer service",
-                "email": "info@sunconsultants.co.in"
+                "email": "info@suncertifications.co.in"
               }
             },
             "areaServed": {
@@ -724,14 +724,14 @@ const DocumentsSection = () => {
         <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
           All of the above documents are required in certain formats given by
           BIS which are to be submitted during the application. As FMCS
-          Certifications, we at Sun Certifications and Engineers are experts for
+          Certifications, we at Sun Certifications India are experts for
           preparation of all the documents above in formats prescribed by BIS,
           contact us for more details at
           <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
             <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
               Email
             </span>
-            info@sunconsultants.co.in , sunconsultantsinfo@gmail.com
+            info@suncertifications.co.in , suncertificationsinfo@gmail.com
           </div>
         </div>
         <div className="mt-[12px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
