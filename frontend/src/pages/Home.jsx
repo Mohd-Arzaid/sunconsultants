@@ -30,7 +30,7 @@ import Panasonic from "../assets/images/Panasonic.png"
 import cuty from "../assets/images/cuty.png"
 import raumplus from "../assets/images/raumplus.png"
 import remsa from "../assets/images/remsa.png"
-
+import SEDOVINA from "../assets/images/SEDOVINA.png"
   
 
 
@@ -983,6 +983,19 @@ const LogoTicker = () => {
 
 
             
+
+            <figure className="m-0">
+              <img
+                src={SEDOVINA}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+            
+
+
+
             
 
 
