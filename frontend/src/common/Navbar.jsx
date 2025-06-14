@@ -191,14 +191,14 @@ const Navbar = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link to="/about">
+                <a href="/about">
                   <Button
                     variant="link"
                     className="text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
                   >
                     About
                   </Button>
-                </Link>
+                </a>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
