@@ -107,6 +107,24 @@ import { OurServices } from "./About";
 
 // import { ImagesSlider } from "@/components/ui/images-slider";
 
+
+
+// Audit Marquee 
+import BahrainAudit from "../assets/auditImages/Bahrain.png"
+import IndonesiaAudit from "../assets/auditImages/Indonesia.png"
+import ItalyAudit from "../assets/auditImages/Italy-2.png"
+import MalaysiaAudit from "../assets/auditImages/Malaysia.png"
+import SloveniaAudit from "../assets/auditImages/Slovenia.png"
+import ThailandAudit from "../assets/auditImages/Thailand.png"
+import Vietnam2Audit from "../assets/auditImages/Vietnam-2.png"
+import Vietnam3Audit from "../assets/auditImages/Vietnam-3.png"
+import Vietnam4Audit from "../assets/auditImages/Vietnam-4.png"
+import VietnamAudit from "../assets/auditImages/Vietnam.png"
+
+
+// Seminar & Exhibition Images
+
+
 const Home = () => {
   return (
     <main className="w-full">
@@ -549,7 +567,7 @@ const WebinarSeminarMarquee = () => {
     <div className="bg-white pt-8 pb-2">
       <div className="max-w-[88rem] mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-bold uppercase font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
-          Seminars
+          Seminars & Exhibitions 
         </h2>
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
@@ -594,37 +612,53 @@ const AuditsMarquee = () => {
   const galleryImages = [
     {
       id: 1,
-      image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-1.png",
-      title: "Medical Chennai 2023",
+      image: BahrainAudit,
+      title: "Bahrain Audit",
     },
     {
       id: 2,
-      image:
-        "https://sunconsultants.co.in/photo-event/Medicall-Kolkata-2022/Kolkata-2022-3.png",
-      title: "Medical Kolkata 2022",
+      image: IndonesiaAudit,
+      title: "Indonesia Audit",
     },
     {
       id: 3,
-      image:
-        "https://sunconsultants.co.in/photo-event/Narela-association-seminar-footwear/Narela-association-seminar-footwear-3.png",
-      title: "Narela Association Seminar Footwear",
+      image: ItalyAudit,
+      title: "Italy Audit",
     },
     {
       id: 4,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-2.png",
-      title: "Delhi Footwear Exhibition Audits",
+      image: MalaysiaAudit,
+      title: "Malaysia Audit",
     },
     {
       id: 5,
-      image: "https://sunconsultants.co.in/photo-event/2023/sun-3.png",
-      title: "Karol Bagh Association Footwear Seminar",
+      image: SloveniaAudit,
+      title: "Slovenia Audit",
     },
     {
       id: 6,
-      image:
-        "https://sunconsultants.co.in/photo-event/Medicall-chennai-2023/Medicall-chennai-2023-2.png",
-      title: "Medical 2023",
+      image: ThailandAudit,
+      title: "Thailand Audit",
+    },
+    {
+      id: 7,
+      image: VietnamAudit,
+      title: "Vietnam Audit",
+    },
+    {
+      id: 8,
+      image: Vietnam2Audit,
+      title: "Vietnam Audit 2",
+    },
+    {
+      id: 9,
+      image: Vietnam3Audit,
+      title: "Vietnam Audit 3",
+    },
+    {
+      id: 10,
+      image: Vietnam4Audit,
+      title: "Vietnam Audit 4",
     },
   ];
 
