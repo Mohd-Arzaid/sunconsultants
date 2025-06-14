@@ -104,15 +104,14 @@ const PESOIndex = () => {
   ];
 
   const handleItemClick = (item) => {
-    const elementId = item.toLowerCase().replace(/\s+/g, "-");
-    const element = document.getElementById(elementId);
+    const element = document.getElementById(item.toLowerCase().replace(/\s+/g, "-"));
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false); // Close mobile menu after clicking
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -140,25 +139,20 @@ const PESOIndex = () => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1;
-        setIsSticky(
-          !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
-        );
-      },
-      {
-        threshold: [0, 1],
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -169,10 +163,9 @@ const PESOIndex = () => {
             if (entry.target.id === "faqs") {
               setActiveSection("FAQs");
             } else {
-              const sectionName = entry.target.id
-                .split("-")
-                .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(" ");
+              const sectionName =
+                entry.target.id.charAt(0).toUpperCase() +
+                entry.target.id.slice(1);
               setActiveSection(sectionName);
             }
           }
@@ -181,10 +174,8 @@ const PESOIndex = () => {
       { threshold: 0.5 }
     );
 
-    // Observe each section
     SECTIONS.forEach((section) => {
-      const elementId = section.toLowerCase().replace(/\s+/g, "-");
-      const element = document.getElementById(elementId);
+      const element = document.getElementById(section.toLowerCase().replace(/\s+/g, "-"));
       if (element) {
         sectionObserver.observe(element);
       }
@@ -196,10 +187,10 @@ const PESOIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
+      
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
