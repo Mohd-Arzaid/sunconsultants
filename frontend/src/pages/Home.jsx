@@ -935,6 +935,134 @@ const LogoTicker = () => {
        
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <figure className="m-0">
+              <img
+                src={LogoOne}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+            <figure className="m-0">
+              <img
+                src={LogoThree}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+            <figure className="m-0">
+              <img
+                src={LogoFour}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+            <figure className="m-0">
+              <img
+                src={LogoFive}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+            <figure className="m-0">
+              <img
+                src={LogoSix}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure className="m-0">
+              <img
+                src={ametek}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Ansell}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Aqua}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Daiki}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={honeywell}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+
+            <figure className="m-0">
+              <img
+                src={Ikea}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+
+            <figure className="m-0">
+              <img
+                src={LeaderArt}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Misumi}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+
           
 
 
