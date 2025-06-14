@@ -11,12 +11,12 @@ import { BlurIn } from "@/components/ui/blur-in";
 import { Link } from "react-router-dom";
 
 // Logo Ticker Import
-import LogoOne from "../assets/images/OneLogo.png";
+// import LogoOne from "../assets/images/OneLogo.png";
 import LogoTwo from "../assets/images/TwoLogo.png";
-import LogoThree from "../assets/images/ThreeLogo.png";
-import LogoFour from "../assets/images/FourLogo.png";
-import LogoFive from "../assets/images/FiveLogo.png";
-import LogoSix from "../assets/images/SixLogo.png";
+// import LogoThree from "../assets/images/ThreeLogo.png";
+// import LogoFour from "../assets/images/FourLogo.png";
+// import LogoFive from "../assets/images/FiveLogo.png";
+// import LogoSix from "../assets/images/SixLogo.png";
 import ametek from "../assets/images/ametek.png"
 import Ansell from "../assets/images/Ansell.png"
 import Daiki from "../assets/images/Daiki.png"
@@ -32,7 +32,8 @@ import raumplus from "../assets/images/raumplus.png"
 import remsa from "../assets/images/remsa.png"
 import SEDOVINA from "../assets/images/SEDOVINA.png"
 import Thantawan from "../assets/images/Thantawan.png"
-  
+import titus from "../assets/images/titus.png"
+
 
 
 import { motion } from "motion/react";
@@ -828,37 +829,10 @@ const LogoTicker = () => {
             }}
             className="flex gap-14 pr-14 items-center justify-center flex-none"
           >
+
             <figure className="m-0">
               <img
-                src={LogoOne}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoThree}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoFour}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoFive}
-                alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
-              />
-            </figure>
-            <figure className="m-0">
-              <img
-                src={LogoSix}
+                src={LogoTwo}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
@@ -909,16 +883,13 @@ const LogoTicker = () => {
             </figure>
 
 
-
- <figure className="m-0">
+            <figure className="m-0">
               <img
                 src={Ikea}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
-
-
 
             <figure className="m-0">
               <img
@@ -929,18 +900,15 @@ const LogoTicker = () => {
             </figure>
 
 
-    <figure className="m-0">
+            <figure className="m-0">
               <img
                 src={Misumi}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
-            
 
-       
-
- <figure className="m-0">
+            <figure className="m-0">
               <img
                 src={Panasonic}
                 alt="Sun Certifications India - Trusted Partner Company"
@@ -959,8 +927,6 @@ const LogoTicker = () => {
             </figure>
 
 
-
-
             <figure className="m-0">
               <img
                 src={raumplus}
@@ -968,11 +934,6 @@ const LogoTicker = () => {
                 loading="lazy"
               />
             </figure>
-
-
-
-
-
 
             <figure className="m-0">
               <img
@@ -983,8 +944,6 @@ const LogoTicker = () => {
             </figure>
 
 
-            
-
             <figure className="m-0">
               <img
                 src={SEDOVINA}
@@ -993,8 +952,8 @@ const LogoTicker = () => {
               />
             </figure>
 
-            
-              <figure className="m-0">
+
+            <figure className="m-0">
               <img
                 src={Thantawan}
                 alt="Sun Certifications India - Trusted Partner Company"
@@ -1004,11 +963,31 @@ const LogoTicker = () => {
 
 
 
+            <figure className="m-0">
+              <img
+                src={titus}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
 
 
 
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1021,50 +1000,169 @@ const LogoTicker = () => {
 
             <figure className="m-0">
               <img
-                src={LogoOne}
+                src={LogoTwo}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
+
             <figure className="m-0">
               <img
-                src={LogoThree}
+                src={ametek}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
+
+
             <figure className="m-0">
               <img
-                src={LogoFour}
+                src={Ansell}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
+
+
             <figure className="m-0">
               <img
-                src={LogoFive}
+                src={Aqua}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
+
+
             <figure className="m-0">
               <img
-                src={LogoSix}
+                src={Daiki}
                 alt="Sun Certifications India - Trusted Partner Company"
                 loading="lazy"
               />
             </figure>
 
-           
 
-       
+            <figure className="m-0">
+              <img
+                src={honeywell}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Ikea}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure className="m-0">
+              <img
+                src={LeaderArt}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Misumi}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure className="m-0">
+              <img
+                src={Panasonic}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
 
 
 
-          
+            <figure className="m-0">
+              <img
+                src={cuty}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
 
 
-            
+            <figure className="m-0">
+              <img
+                src={raumplus}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure className="m-0">
+              <img
+                src={remsa}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={SEDOVINA}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+            <figure className="m-0">
+              <img
+                src={Thantawan}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+
+            <figure className="m-0">
+              <img
+                src={titus}
+                alt="Sun Certifications India - Trusted Partner Company"
+                loading="lazy"
+              />
+            </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
