@@ -1,7 +1,5 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import {
   Accordion,
@@ -80,7 +78,7 @@ const BEEHero = () => {
   );
 };
 
-const BEE_SECTIONS = [
+const SECTIONS = [
   "Overview",
   "Eligibility",
   "Classification",
@@ -91,19 +89,15 @@ const BEE_SECTIONS = [
 ];
 
 const BEEIndex = () => {
-  const [isSticky, setIsSticky] = useState(false);
-  const [activeSection, setActiveSection] = useState(BEE_SECTIONS[0]);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const stickyRef = useRef(null);
-  const mobileMenuRef = useRef(null);
-  const toggleButtonRef = useRef(null);
-
-  const getSectionElementId = (section) =>
-    section === "FAQs" ? "faqs" : section.toLowerCase();
+  const [isSticky, setIsSticky] = useState(false)
+  const [activeSection, setActiveSection] = useState("Overview")
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const stickyRef = useRef(null)
+  const mobileMenuRef = useRef(null)
+  const toggleButtonRef = useRef(null)
 
   const handleItemClick = (item) => {
-    const elementId = getSectionElementId(item);
-    const element = document.getElementById(elementId);
+    const element = document.getElementById(item.toLowerCase());
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -112,12 +106,13 @@ const BEEIndex = () => {
       setActiveSection(item);
       setIsMobileMenuOpen(false);
     }
-  };
+  }
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
   };
 
+  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -137,28 +132,19 @@ const BEEIndex = () => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1;
-        setIsSticky(
-          !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
-        );
-      },
-      {
-        threshold: [0, 1],
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
     return () => {
-      if (stickyRef.current) {
-        observer.unobserve(stickyRef.current);
-      }
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -181,29 +167,20 @@ const BEEIndex = () => {
       { threshold: 0.5 }
     );
 
-    BEE_SECTIONS.forEach((section) => {
-      const elementId = getSectionElementId(section);
-      const element = document.getElementById(elementId);
+    SECTIONS.forEach((section) => {
+      const element = document.getElementById(section.toLowerCase());
       if (element) {
         sectionObserver.observe(element);
       }
     });
 
-    return () => {
-      BEE_SECTIONS.forEach((section) => {
-        const elementId = getSectionElementId(section);
-        const element = document.getElementById(elementId);
-        if (element) {
-          sectionObserver.unobserve(element);
-        }
-      });
-    };
+    return () => sectionObserver.disconnect();
   }, []);
 
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky  top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}
@@ -240,7 +217,7 @@ const BEEIndex = () => {
           className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
         >
           <div className="flex flex-col py-2">
-            {BEE_SECTIONS.map((item) => (
+            {SECTIONS.map((item) => (
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
@@ -260,7 +237,7 @@ const BEEIndex = () => {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto overflow-x-auto">
-        {BEE_SECTIONS.map((item) => (
+        {SECTIONS.map((item) => (
           <div
             key={item}
             onClick={() => handleItemClick(item)}

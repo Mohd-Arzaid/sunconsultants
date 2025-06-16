@@ -19,11 +19,13 @@ import { Services } from "./Home";
 const ROHS = () => {
   return (
     <>
-      <ROHSHero />
-      <ROHSIndex />
-      <ROHSContent />
-      <Footer />
-      <ScrollToTopButton />
+      <main className="w-full">
+        <ROHSHero />
+        <ROHSIndex />
+        <ROHSContent />
+        <Footer />
+        <ScrollToTopButton />
+      </main>
     </>
   );
 };
@@ -85,25 +87,34 @@ const ROHSHero = () => {
 };
 
 const ROHSIndex = () => {
-  const [isSticky, setIsSticky] = useState(false);
-  const [activeSection, setActiveSection] = useState("Overview");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const stickyRef = useRef(null);
-  const mobileMenuRef = useRef(null);
-  const toggleButtonRef = useRef(null);
+  // Observe each section
+  const SECTIONS = [
+    "overview",
+    "standardization",
+    "authority",
+    "registration",
+    "verification",
+    "faqs",
+  ];
+
+  const [isSticky, setIsSticky] = useState(false)
+  const [activeSection, setActiveSection] = useState("Overview")
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const stickyRef = useRef(null)
+  const mobileMenuRef = useRef(null)
+  const toggleButtonRef = useRef(null)
 
   const handleItemClick = (item) => {
-    const elementId = item.toLowerCase().replace(/\s+/g, "-");
-    const element = document.getElementById(elementId);
+    const element = document.getElementById(item.toLowerCase());
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
       setActiveSection(item);
-      setIsMobileMenuOpen(false); // Close mobile menu after clicking
+      setIsMobileMenuOpen(false);
     }
-  };
+  }
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
@@ -129,26 +140,20 @@ const ROHSIndex = () => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if the element is intersecting and its position relative to viewport
-        const rect = entry.boundingClientRect;
-        const isAtTop = rect.top <= 1; // Added small buffer
-        setIsSticky(
-          !entry.isIntersecting || (isAtTop && entry.intersectionRatio < 1)
-        );
-      },
-      {
-        threshold: [0, 1], // Observe both when fully visible and when starting to intersect
-        rootMargin: "-1px 0px 0px 0px",
+    const handleScroll = () => {
+      if (stickyRef.current) {
+        const rect = stickyRef.current.getBoundingClientRect();
+        setIsSticky(rect.top <= 44);
       }
-    );
+    };
 
-    if (stickyRef.current) {
-      observer.observe(stickyRef.current);
-    }
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -156,29 +161,22 @@ const ROHSIndex = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            const sectionName = entry.target.id
-              .split("-")
-              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(" ");
-            setActiveSection(sectionName);
+            if (entry.target.id === "faqs") {
+              setActiveSection("FAQs");
+            } else {
+              const sectionName =
+                entry.target.id.charAt(0).toUpperCase() +
+                entry.target.id.slice(1);
+              setActiveSection(sectionName);
+            }
           }
         });
       },
       { threshold: 0.5 }
     );
 
-    // Observe each section
-    const sections = [
-      "overview",
-      "standardization",
-      "authority",
-      "registration",
-      "verification",
-      "faqs",
-    ];
-
-    sections.forEach((section) => {
-      const element = document.getElementById(section);
+    SECTIONS.forEach((section) => {
+      const element = document.getElementById(section.toLowerCase());
       if (element) {
         sectionObserver.observe(element);
       }
@@ -190,9 +188,10 @@ const ROHSIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 z-[60] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky  top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
+
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
@@ -293,7 +292,7 @@ const ROHSContent = () => {
     <div className="">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-          {/* Left Side */}
+           {/* Left Side */}
 
           <ROHSContentLeft />
 
@@ -514,8 +513,8 @@ const PointsListTwo = ({ points, heading }) => {
 
 const ROHSContentLeft = () => {
   return (
-    <div className="flex-1">
-      <div className="flex flex-col gap-[20px] md:gap-[40px]">
+    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+      <div className="flex flex-col  gap-[20px] md:gap-[40px]">
         {/* Overview Section */}
         <OverviewSection />
         {/* Divider */}

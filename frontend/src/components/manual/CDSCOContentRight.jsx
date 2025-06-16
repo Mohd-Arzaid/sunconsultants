@@ -24,8 +24,6 @@ import {
   Lightbulb,
   BarChart,
 } from "lucide-react";
-import BlogImageOne from "../../assets/images/BlogImageOne.png";
-
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { useState } from "react";
@@ -33,20 +31,36 @@ import axios from "axios";
 // import { toast } from "sonner";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Marquee } from "@/components/magicui/marquee";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const CDSCOContentRight = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  // List of paths where LatestBlog and LatestNotification should be shown
+  const showComponentsPaths = [
+    '/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis',
+    '/a-guide-to-bis-certification-indian-bis',
+    '/what-is-bis-certificate-indian-bis',
+    '/what-is-crs-bis-or-crs-registration',
+    '/schemeX'
+  ];
+
+  // Check if current path should show these components
+  const shouldShowComponents = showComponentsPaths.includes(currentPath);
+
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
-      {/* Latest Blogs */}
-      <LatestBlog />
+      {/* Latest Blogs - Only show on specific paths */}
+      {shouldShowComponents && <LatestBlog />}
       {/* <OurServices /> */}
       <ClientTestimonial />
       {/* <OurEvents /> */}
       <WhyChooseUs />
-      <LatestNotification />
+      {/* Latest Notification - Only show on specific paths */}
+      {shouldShowComponents && <LatestNotification />}
       <FreeCallBack />
     </div>
   );
