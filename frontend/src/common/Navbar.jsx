@@ -171,7 +171,7 @@ const Navbar = () => {
               Sun Certifications India
             </h1>
             <p className="text-foreground/80 text-[10px] md:text-xs leading-normal uppercase font-normal  ">
-              Your Complete Certification Partner
+              Simplifying Certifications
             </p>
           </Link>
         </div>

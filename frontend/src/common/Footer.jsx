@@ -100,7 +100,7 @@ const Footer = () => {
                     Sun Certifications India
                   </h1>
                   <p className="text-foreground/80 text-xs uppercase font-normal">
-                    Your Complete Certification Partner
+                    Simplifying Certifications
                   </p>
                 </Link>
               </div>
