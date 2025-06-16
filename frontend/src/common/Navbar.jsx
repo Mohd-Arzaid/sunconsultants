@@ -283,26 +283,14 @@ const Navbar = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base  uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
-                  Contact US
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="p-4 w-60">
-                    <a href="/contact" className="block">
-                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <MessageSquare className="w-4 h-4 mr-2" />
-                        Contact Us
-                      </div>
-                    </a>
-
-                    <a href="/feedback" className="block">
-                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <MessageCircle className="w-4 h-4 mr-2" />
-                        Feedback
-                      </div>
-                    </a>
-                  </div>
-                </NavigationMenuContent>
+                <Link to="/contact">
+                  <Button
+                    variant="link"
+                    className="text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
+                  >
+                    Contact Us
+                  </Button>
+                </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
@@ -317,6 +305,10 @@ const Navbar = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+
+      
+
+
         </div>
 
         {/* Mobile Menu Button */}

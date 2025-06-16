@@ -56,7 +56,7 @@ const CDSCOContentRight = () => {
       {/* Latest Blogs - Only show on specific paths */}
       {shouldShowComponents && <LatestBlog />}
       {/* <OurServices /> */}
-      <ClientTestimonial />
+      {/* <ClientTestimonial /> */}
       {/* <OurEvents /> */}
       <WhyChooseUs />
       {/* Latest Notification - Only show on specific paths */}

@@ -35,7 +35,9 @@ import InternationalAudits from "./pages/InternationalAudits";
 import Seminar from "./pages/Seminar";
 import Exhibition from "./pages/Exhibition";
 import SchemeX from "./pages/SchemeX";
+import Sitemap from "./pages/Sitemap";
 import { useState } from "react";
+import TableTesting from "./pages/TableTesting";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -46,8 +48,8 @@ function App() {
       <Navbar />
       <ScrollToTopButton hide={popupOpen} />
       <Routes>
-
         <Route path="/" element={<Home />} />
+        <Route path="/table" element={<TableTesting />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/latest-notifications" element={<Notification />} />
@@ -56,13 +58,14 @@ function App() {
         <Route path="/international-audits" element={<InternationalAudits />} />
         <Route path="/seminars-and-exhibitions" element={<Exhibition />} />
         <Route path="/clients" element={<AllClients />} />
+        <Route path="/sitemap" element={<Sitemap />} />
 
         {/* Services Pages */}
         <Route path="/cdsco-registration-certification" element={<CDSCO />} />
-        <Route path="/schemeX" element={<SchemeX />} /> 
+        <Route path="/schemeX" element={<SchemeX />} />
         <Route
           path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-          element={<BISFM />} 
+          element={<BISFM />}
         />
         <Route
           path="/a-guide-on-how-to-obtain-epr-certificate"

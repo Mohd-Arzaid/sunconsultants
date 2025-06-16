@@ -1,5 +1,4 @@
 import {
-  GitHubLogoIcon,
   InstagramLogoIcon,
   LinkedInLogoIcon,
   TwitterLogoIcon,
@@ -96,12 +95,12 @@ const Footer = () => {
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />
                 <Link to="/" className="text-center">
-                 <h1 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
-              Sun Certifications India
-            </h1>
-            <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
-              Simplifying Certifications
-            </p>
+                  <h1 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
+                    Sun Certifications India
+                  </h1>
+                  <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
+                    Simplifying Certifications
+                  </p>
                 </Link>
               </div>
 
@@ -186,11 +185,11 @@ const Footer = () => {
                     Clients
                   </span>
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    FAQ's
+                    FAQ&apos;s
                   </span>
-                  <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link to="/sitemap" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
                     Sitemap
-                  </span>
+                  </Link>
                 </div>
               </div>
 

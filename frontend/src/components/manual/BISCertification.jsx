@@ -159,7 +159,6 @@ export const BISCertification = () => {
 
 // BISC Product Table Section
 const productsData = [
-  // Cement (any variety of cement manufactured or sold in India)
   { id: 1, isNumber: "IS 12330", product: "Sulphate Resisting Portland Cement", notificationText: "1. Cement (Quality Control) Order, 2003\nS.O. No. 191(E) Dt. 17 Feb 2003", notificationLink: "https://bis.gov.in/wp-content/uploads/2018/11/S.O.-191E-dated-17.02.2003.pdf" },
   { id: 2, isNumber: "IS 12600", product: "Low heat Portland Cement", notificationText: "", notificationLink: "" },
   { id: 3, isNumber: "IS 1489 (Part 1)", product: "Portland Pozzolana Cement-Part1 Fly-ash based", notificationText: "", notificationLink: "" },

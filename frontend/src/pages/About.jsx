@@ -17,7 +17,7 @@ const About = () => {
       <VideoShowcase />
       {/* <OurServices /> */}
       <Services />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </div>
   );
