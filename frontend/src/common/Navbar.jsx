@@ -167,10 +167,10 @@ const Navbar = () => {
         >
           <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
           <Link to="/" className="py-2 text-center">
-            <h1 className="font-roboto text-black uppercase tracking-wider leading-normal text-[14px] md:text-xl font-bold">
+            <h1 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
               Sun Certifications India
             </h1>
-            <p className="text-foreground/80 text-[10px] md:text-xs leading-normal uppercase font-normal  ">
+            <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
               Simplifying Certifications
             </p>
           </Link>
