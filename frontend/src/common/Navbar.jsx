@@ -159,7 +159,7 @@ const Navbar = () => {
 
   return (
     // <div className="z-[50] sticky top-0 w-full bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
-    <div className="z-[50] sticky top-0 sm:top-[44px] w-full bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
+    <div className="z-[50] sticky top-0 md:top-[44px] w-full bg-white/70 backdrop-blur-lg border-b border-neutral-200 ">
       <div className="flex items-center justify-between px-4 md:px-8 h-20 max-w-[88rem] mx-auto">
         <div
           className=" selection:bg-emerald-600 flex items-center justify-center space-x-2.5 

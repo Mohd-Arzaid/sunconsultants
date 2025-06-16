@@ -188,7 +188,7 @@ const ROHSIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky  top-0 sm:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
 
@@ -292,7 +292,7 @@ const ROHSContent = () => {
     <div className="">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-           {/* Left Side */}
+          {/* Left Side */}
 
           <ROHSContentLeft />
 
