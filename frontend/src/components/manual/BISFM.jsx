@@ -1,6 +1,9 @@
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
+import ISIMARKImage from "../../assets/servicesImages/ISIMARK.png"
+import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
+
 import {
   Table,
   TableHeader,
@@ -1024,7 +1027,7 @@ const StandardizationSection = () => {
       </div>
 
       <img
-        src="/src/assets/servicesImages/ISIMARK.png"
+        src={ISIMARKImage}
         alt="ISI Mark"
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
         loading="lazy"
@@ -1874,7 +1877,7 @@ const ProcessSection = () => {
       </div>
 
       <img
-        src="src/assets/bisfmpageimage/biscertificate.png"
+        src={BISCertificateImage}
         alt="BIS Certificate Process Flow"
         className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
       />
