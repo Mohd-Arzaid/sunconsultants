@@ -722,7 +722,7 @@ const ComplianceSection = () => {
         <img
           src={PWMRimg}
           alt="Medical laboratory equipment"
-          loading="lazy"
+
           width="400"
           height="250"
           className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1

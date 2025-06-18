@@ -149,6 +149,108 @@ export const categories = [
   },
 ];
 
+export const categoriesMobile = [
+  {
+    name: "BIS Mark (Foreign)",
+    link: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    icon: <CheckCircle className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "ISI Mark (Indian)",
+    link: "/a-guide-to-bis-certification-indian-bis",
+    icon: <Award className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "BIS Certification",
+    link: "/what-is-bis-certificate-indian-bis",
+    icon: <CheckCircle className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "CDSCO Registration",
+    link: "/cdsco-registration-certification",
+    icon: <FileWarning className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "LMPC Registration",
+    link: "/a-guide-on-how-to-obtain-lmpc-certificate",
+    icon: <BookText className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "Legal Metrology",
+    link: "/what-is-legal-metrology-or-lmpc-certificate",
+    icon: <Scale className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "CRS Registration",
+    link: "/what-is-crs-bis-or-crs-registration",
+    icon: <ShieldCheck className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "EPR Registration",
+    link: "/a-guide-on-how-to-obtain-epr-certificate",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "Plastic Waste",
+    link: "/epr-certificate-for-plastic-waste-management-pwm",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "Battery Waste",
+    link: "/epr-certificate-for-battery-waste-management-bwm",
+    icon: <Battery className="w-4 h-4 mr-2" />,
+  },
+
+  {
+    name: "PESO",
+    link: "/information-about-peso-certification-peso-license-india",
+    icon: <Flame className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "WPC",
+    link: "/information-about-wpc-certificate-eta-approval",
+    icon: <Wifi className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "CE Certification",
+    link: "/ce-certification",
+    icon: <ShieldCheck className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "ROHS",
+    link: "/restriction-of-hazardous-substance-rohs-certificate",
+    icon: <Radiation className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "EMI/EMC",
+    link: "/emi-emc-certification",
+    icon: <Cpu className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "TEC",
+    link: "/information-about-tec-certificate-mtcte",
+    icon: <Radio className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "BEE",
+    link: "/bee-certification",
+    icon: <Zap className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "CB Certification",
+    link: "/cb-certification",
+    icon: <Award className="w-4 h-4 mr-2" />,
+  },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const buttonRef = useRef(null);
@@ -305,10 +407,6 @@ const Navbar = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-
-      
-
-
         </div>
 
         {/* Mobile Menu Button */}
@@ -388,6 +486,16 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
           </Button>
         </Link>
 
+        <Link to="/about" className="block w-full" onClick={handleLinkClick}>
+          <Button
+            variant="ghost"
+            className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
+          >
+            About
+          </Button>
+        </Link>
+        
+
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1" className="border-b-0">
             <AccordionTrigger className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:no-underline transition-colors w-full justify-between py-3 px-4 hover:bg-neutral-100 rounded-md">
@@ -395,7 +503,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
             </AccordionTrigger>
             <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
               <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto scrollbar-hide">
-                {categories.map((category, index) => (
+                {categoriesMobile.map((category, index) => (
                   <li key={index} className="w-full">
                     <Link
                       to={category.link}
@@ -418,7 +526,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
 
           <AccordionItem value="item-2" className="border-b-0">
             <AccordionTrigger className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:no-underline transition-colors w-full justify-between py-3 px-4 hover:bg-neutral-100 rounded-md">
-              Latest Updates
+              Updates
             </AccordionTrigger>
             <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
               <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto">
@@ -463,7 +571,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
                       className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
                     >
                       <Presentation className="w-4 h-4 mr-2" />
-                      Webinar Updates
+                     Upcoming Webinars
                     </Button>
                   </Link>
                 </li>
@@ -494,7 +602,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
                 </li>
                 <li className="w-full">
                   <Link
-                    to="/exhibition"
+                    to="/seminars-and-exhibitions"
                     className="block w-full"
                     onClick={handleLinkClick}
                   >
@@ -503,22 +611,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
                       className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
                     >
                       <GalleryHorizontal className="w-4 h-4 mr-2" />
-                      Exhibition
-                    </Button>
-                  </Link>
-                </li>
-                <li className="w-full">
-                  <Link
-                    to="/seminar"
-                    className="block w-full"
-                    onClick={handleLinkClick}
-                  >
-                    <Button
-                      variant="ghost"
-                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
-                    >
-                      <Laptop className="w-4 h-4 mr-2" />
-                      Webinar/Seminar
+                      Seminars/Exhibitions
                     </Button>
                   </Link>
                 </li>
@@ -527,21 +620,14 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
           </AccordionItem>
         </Accordion>
 
-        <Link to="/about" className="block w-full" onClick={handleLinkClick}>
-          <Button
-            variant="ghost"
-            className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
-          >
-            About
-          </Button>
-        </Link>
+      
 
         <Link to="/contact" className="block w-full" onClick={handleLinkClick}>
           <Button
             variant="ghost"
             className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
           >
-            Contact
+            Contact Us
           </Button>
         </Link>
 

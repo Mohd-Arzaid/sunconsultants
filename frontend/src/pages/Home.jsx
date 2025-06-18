@@ -436,7 +436,7 @@ const CertificationAndAchievements = () => {
                         src={item.image}
                         alt={item.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                        loading="lazy"
+
                       />
                     </div>
                   </div>
@@ -657,7 +657,7 @@ const WebinarSeminarMarquee = () => {
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
+
                   />
                   {/* Gradient overlay for title */}
                   <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
@@ -756,7 +756,7 @@ const AuditsMarquee = () => {
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
+
                   />
                   {/* Gradient overlay for title */}
                   <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
@@ -796,7 +796,7 @@ const Hero = () => {
                   alt="Sun Certifications India - Professional Certification Services"
                   width="740"
                   height="515"
-                  loading="lazy"
+
                   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover"
                 />
                 {/* <ImagesSlider   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover" images={images}></ImagesSlider> */}
@@ -830,7 +830,7 @@ const Hero = () => {
                     <img
                       src={ArrowOne}
                       alt="Previous slide navigation"
-                      loading="lazy"
+
                     />
                   </button>
                 </div>
@@ -839,7 +839,7 @@ const Hero = () => {
                     <img
                       src={ArrowTwo}
                       alt="Next slide navigation"
-                      loading="lazy"
+
                     />
                   </button>
                 </div>
@@ -936,7 +936,7 @@ const LogoTicker = () => {
               <img
                 src={LogoTwo}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -944,7 +944,7 @@ const LogoTicker = () => {
               <img
                 src={ametek}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -953,7 +953,7 @@ const LogoTicker = () => {
               <img
                 src={Ansell}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -962,7 +962,7 @@ const LogoTicker = () => {
               <img
                 src={Aqua}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -971,7 +971,7 @@ const LogoTicker = () => {
               <img
                 src={Daiki}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -980,7 +980,7 @@ const LogoTicker = () => {
               <img
                 src={honeywell}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -989,7 +989,7 @@ const LogoTicker = () => {
               <img
                 src={Ikea}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -997,7 +997,7 @@ const LogoTicker = () => {
               <img
                 src={LeaderArt}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1006,7 +1006,7 @@ const LogoTicker = () => {
               <img
                 src={Misumi}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1014,7 +1014,7 @@ const LogoTicker = () => {
               <img
                 src={Panasonic}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1024,7 +1024,7 @@ const LogoTicker = () => {
               <img
                 src={cuty}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1033,7 +1033,7 @@ const LogoTicker = () => {
               <img
                 src={raumplus}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1041,7 +1041,7 @@ const LogoTicker = () => {
               <img
                 src={remsa}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1050,7 +1050,7 @@ const LogoTicker = () => {
               <img
                 src={SEDOVINA}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1059,7 +1059,7 @@ const LogoTicker = () => {
               <img
                 src={Thantawan}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1069,7 +1069,7 @@ const LogoTicker = () => {
               <img
                 src={titus}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1104,7 +1104,7 @@ const LogoTicker = () => {
               <img
                 src={LogoTwo}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1112,7 +1112,7 @@ const LogoTicker = () => {
               <img
                 src={ametek}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1121,7 +1121,7 @@ const LogoTicker = () => {
               <img
                 src={Ansell}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1130,7 +1130,7 @@ const LogoTicker = () => {
               <img
                 src={Aqua}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1139,7 +1139,7 @@ const LogoTicker = () => {
               <img
                 src={Daiki}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1148,7 +1148,7 @@ const LogoTicker = () => {
               <img
                 src={honeywell}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1157,7 +1157,7 @@ const LogoTicker = () => {
               <img
                 src={Ikea}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1165,7 +1165,7 @@ const LogoTicker = () => {
               <img
                 src={LeaderArt}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1174,7 +1174,7 @@ const LogoTicker = () => {
               <img
                 src={Misumi}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1182,7 +1182,7 @@ const LogoTicker = () => {
               <img
                 src={Panasonic}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1192,7 +1192,7 @@ const LogoTicker = () => {
               <img
                 src={cuty}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1201,7 +1201,7 @@ const LogoTicker = () => {
               <img
                 src={raumplus}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1209,7 +1209,7 @@ const LogoTicker = () => {
               <img
                 src={remsa}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1218,7 +1218,7 @@ const LogoTicker = () => {
               <img
                 src={SEDOVINA}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1227,7 +1227,7 @@ const LogoTicker = () => {
               <img
                 src={Thantawan}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1237,7 +1237,7 @@ const LogoTicker = () => {
               <img
                 src={titus}
                 alt="Sun Certifications India - Trusted Partner Company"
-                loading="lazy"
+
               />
             </figure>
 
@@ -1328,7 +1328,7 @@ export const Services = () => {
                 src={ISIMark}
                 alt="BIS Certification Services - Professional ISI License for Foreign Manufacturers"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
+
               />
             </figure>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1347,7 +1347,7 @@ export const Services = () => {
                 src={BISCRS}
                 alt="BIS"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
+
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1365,7 +1365,7 @@ export const Services = () => {
                 src={ISIMark}
                 alt="ISIMark"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
+
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1384,7 +1384,7 @@ export const Services = () => {
                 src={BISCRS}
                 alt="BISCRS"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
+
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1404,7 +1404,7 @@ export const Services = () => {
                 src={CDSCO}
                 alt="CDSCO Registration Certification - Medical Device and Drug Registration Services"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
+
               />
             </figure>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1422,7 +1422,7 @@ export const Services = () => {
                 src={PlasticWasteManagement}
                 alt="PlasticWasteManagement"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
+
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1441,7 +1441,7 @@ export const Services = () => {
                 src={EPRCertificate}
                 alt="EPRCertificate"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
+
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1459,7 +1459,7 @@ export const Services = () => {
                 src={LMPC}
                 alt="LMPC"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-                loading="lazy"
+
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1728,7 +1728,7 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             src={ContactUs}
             alt="ContactUs"
             className="absolute right-0 w-[475.99px] h-[539px] object-cover"
-            loading="lazy"
+
           />
 
           <img
@@ -1736,7 +1736,7 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             alt="ContactChild"
             className=" 
           absolute inset-0 w-[350px] h-[350px] -translate-x-[70px] translate-y-[180px] object-cover"
-            loading="lazy"
+
           />
         </div>
       </div>
@@ -2017,7 +2017,7 @@ const Countries = () => {
                       src={country.img}
                       alt={country.name}
                       className="w-auto h-full object-contain"
-                      loading="lazy"
+
                     />
                   </div>
 
@@ -2047,7 +2047,7 @@ const Countries = () => {
                           ? "w-full h-full object-cover"
                           : ""
                       }
-                      loading="lazy"
+
                     />
                   </div>
                   <div className="mt-4 px-2 flex items-center justify-between w-full">
