@@ -12,6 +12,21 @@
 
 
 
+.mainHeading {
+  @apply text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0;
+}
+
+.normalHeading {
+  @apply mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]
+}
+
+.simpleParagraph {
+  @apply mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose
+}
+
+.pointList {
+  @apply flex flex-col md:flex-row gap-6 md:gap-10;
+}
 
 
 

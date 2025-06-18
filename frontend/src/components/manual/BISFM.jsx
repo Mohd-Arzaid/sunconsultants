@@ -261,9 +261,7 @@ export const BISFMIndex = () => {
     "Surveillance",
     "Facilitator",
   ];
-
-
-
+  
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
     if (element) {

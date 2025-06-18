@@ -72,7 +72,7 @@ function App() {
           element={<EPRService />}
         />
         <Route
-          path="/a-guide-to-bis-certification-indian-bis"
+          path="/what-is-bis-certificate-indian-bis"
           element={<BISCertification />}
         />
         <Route
@@ -88,7 +88,7 @@ function App() {
           element={<LegalMetrology />}
         />
         <Route
-          path="/what-is-bis-certificate-indian-bis"
+          path="a-guide-to-bis-certification-indian-bis" 
           element={<ISIMark />}
         />
         <Route
