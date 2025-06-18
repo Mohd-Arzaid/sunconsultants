@@ -261,7 +261,7 @@ export const BISFMIndex = () => {
     "Surveillance",
     "Facilitator",
   ];
-  
+
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
     if (element) {
@@ -316,7 +316,7 @@ export const BISFMIndex = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = SECTIONS.map(section => {
+      const sections = SECTIONS.map((section) => {
         const element = document.getElementById(section.toLowerCase());
         if (element) {
           const rect = element.getBoundingClientRect();
@@ -324,7 +324,7 @@ export const BISFMIndex = () => {
             id: section,
             top: rect.top,
             bottom: rect.bottom,
-            element
+            element,
           };
         }
         return null;
@@ -332,7 +332,7 @@ export const BISFMIndex = () => {
 
       // Find the section that's currently most visible in viewport
       // Check which section's top is closest to the top of viewport (with some offset)
-      const currentSection = sections.find(section => {
+      const currentSection = sections.find((section) => {
         return section.top <= 150 && section.bottom > 150;
       });
 
@@ -355,17 +355,18 @@ export const BISFMIndex = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Initial check
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -415,10 +416,11 @@ export const BISFMIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -438,18 +440,20 @@ export const BISFMIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              }`}
             />
           </div>
         ))}
@@ -504,10 +508,14 @@ export const ServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is BIS certification and why is it important for foreign manufacturers to obtain Indian BIS?
+                What is BIS certification and why is it important for foreign
+                manufacturers to obtain Indian BIS?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                BIS certification is a regulatory process conducted by the Bureau of Indian Standards to ensure products meet Indian standards. It is essential for foreign manufacturers to gain market access, customs clearance, and consumer trust in India.
+                BIS certification is a regulatory process conducted by the
+                Bureau of Indian Standards to ensure products meet Indian
+                standards. It is essential for foreign manufacturers to gain
+                market access, customs clearance, and consumer trust in India.
               </AccordionContent>
             </AccordionItem>
 
@@ -516,7 +524,9 @@ export const ServiceFaq = () => {
                 What does the ISI mark represent?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The ISI mark indicates conformity to a specific Indian Standard. It is mandatory for products under the BIS certification and must be printed on packaging and products.
+                The ISI mark indicates conformity to a specific Indian Standard.
+                It is mandatory for products under the BIS certification and
+                must be printed on packaging and products.
               </AccordionContent>
             </AccordionItem>
 
@@ -525,7 +535,9 @@ export const ServiceFaq = () => {
                 Is BIS certification mandatory for all imports to India?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                No. BIS certification is mandatory for products listed under the mandatory Indian BIS certification scheme. However, voluntary certification is available for other products.
+                No. BIS certification is mandatory for products listed under the
+                mandatory Indian BIS certification scheme. However, voluntary
+                certification is available for other products.
               </AccordionContent>
             </AccordionItem>
 
@@ -534,7 +546,9 @@ export const ServiceFaq = () => {
                 Who can apply for BIS certification under FMCS?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Only actual foreign manufacturers (not importers or traders) can apply. An Authorized Indian Representative (AIR) is mandatory to represent them in India.
+                Only actual foreign manufacturers (not importers or traders) can
+                apply. An Authorized Indian Representative (AIR) is mandatory to
+                represent them in India.
               </AccordionContent>
             </AccordionItem>
 
@@ -543,7 +557,9 @@ export const ServiceFaq = () => {
                 How long does it take to get a BIS certificate?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The average BIS certification process under FMCS takes 120 days, depending on document readiness, audit scheduling, and testing turnaround times.
+                The average BIS certification process under FMCS takes 120 days,
+                depending on document readiness, audit scheduling, and testing
+                turnaround times.
               </AccordionContent>
             </AccordionItem>
 
@@ -552,7 +568,9 @@ export const ServiceFaq = () => {
                 What are the major costs involved in BIS certification?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Costs include application fees, audit charges, lab testing fees, license and marking fees, and a Performance Bank Guarantee (PBG) from an RBI-approved Indian bank.
+                Costs include application fees, audit charges, lab testing fees,
+                license and marking fees, and a Performance Bank Guarantee (PBG)
+                from an RBI-approved Indian bank.
               </AccordionContent>
             </AccordionItem>
 
@@ -561,7 +579,9 @@ export const ServiceFaq = () => {
                 Can the BIS license be renewed?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes. The BIS license is generally valid for 1–2 years and can be renewed upon meeting compliance and document update requirements.
+                Yes. The BIS license is generally valid for 1–2 years and can be
+                renewed upon meeting compliance and document update
+                requirements.
               </AccordionContent>
             </AccordionItem>
 
@@ -570,7 +590,9 @@ export const ServiceFaq = () => {
                 What happens if the product fails during BIS lab testing?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                If a product fails, BIS may allow corrective action and re-testing. Persistent failure can result in rejection of the application.
+                If a product fails, BIS may allow corrective action and
+                re-testing. Persistent failure can result in rejection of the
+                application.
               </AccordionContent>
             </AccordionItem>
 
@@ -579,7 +601,9 @@ export const ServiceFaq = () => {
                 Is it necessary to hire a BIS certification consultant?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                It&apos;s not mandatory but highly recommended. A consultant helps reduce delays, manage compliance, and improve approval chances by ensuring full alignment with BIS protocols.
+                It&apos;s not mandatory but highly recommended. A consultant
+                helps reduce delays, manage compliance, and improve approval
+                chances by ensuring full alignment with BIS protocols.
               </AccordionContent>
             </AccordionItem>
 
@@ -588,7 +612,8 @@ export const ServiceFaq = () => {
                 Can a BIS license be suspended or cancelled?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes. BIS may suspend or cancel a license for non-compliance, product failure, misuse of the ISI logo, or audit discrepancies.
+                Yes. BIS may suspend or cancel a license for non-compliance,
+                product failure, misuse of the ISI logo, or audit discrepancies.
               </AccordionContent>
             </AccordionItem>
 
@@ -597,7 +622,9 @@ export const ServiceFaq = () => {
                 What documents are needed for the BIS certification process?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Documents include the FMCS application form, test reports, equipment lists, calibration certificates, factory layout, AIR appointment letter, and proof of fee payment.
+                Documents include the FMCS application form, test reports,
+                equipment lists, calibration certificates, factory layout, AIR
+                appointment letter, and proof of fee payment.
               </AccordionContent>
             </AccordionItem>
 
@@ -606,7 +633,9 @@ export const ServiceFaq = () => {
                 Can one AIR represent multiple BIS applications?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, provided they are authorized for each project and have the bandwidth to handle documentation, audits, and communication for each certification.
+                Yes, provided they are authorized for each project and have the
+                bandwidth to handle documentation, audits, and communication for
+                each certification.
               </AccordionContent>
             </AccordionItem>
 
@@ -615,7 +644,9 @@ export const ServiceFaq = () => {
                 What is the role of a Performance Bank Guarantee?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                A PBG assures BIS that the manufacturer will comply with Indian standards. It is refundable upon license cancellation and mandatory for all FMCS applications obtaining Indian BIS.
+                A PBG assures BIS that the manufacturer will comply with Indian
+                standards. It is refundable upon license cancellation and
+                mandatory for all FMCS applications obtaining Indian BIS.
               </AccordionContent>
             </AccordionItem>
 
@@ -624,7 +655,9 @@ export const ServiceFaq = () => {
                 Is BIS certification recognized outside India?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                While the BIS certificate is an Indian standard, it is respected in trade contexts in many regions that accept Indian compliance, especially in Asia and Africa.
+                While the BIS certificate is an Indian standard, it is respected
+                in trade contexts in many regions that accept Indian compliance,
+                especially in Asia and Africa.
               </AccordionContent>
             </AccordionItem>
 
@@ -633,7 +666,9 @@ export const ServiceFaq = () => {
                 How do I know if my product requires BIS certification?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Check the updated list on the official BIS website or consult with a BIS consultant to verify whether your product falls under mandatory certification.
+                Check the updated list on the official BIS website or consult
+                with a BIS consultant to verify whether your product falls under
+                mandatory certification.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -2039,7 +2074,6 @@ const FacilitatorSection = () => {
         step of the process. Their core responsibilities include:
       </p>
 
-
       <div className="mt-[16px] md:mt-[24px]">
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
           <TableHeader className="bg-[#F9F7F2]">
@@ -2106,9 +2140,9 @@ const FacilitatorSection = () => {
       </div>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        They act as your strategic partner, often doubling as your Authorized Indian Representative (AIR).
+        They act as your strategic partner, often doubling as your Authorized
+        Indian Representative (AIR).
       </p>
-
     </section>
   );
 };

@@ -898,6 +898,7 @@ const BISCIndex = () => {
     };
   }, []);
 
+  // Sticky behavior detection
   useEffect(() => {
     const handleScroll = () => {
       if (stickyRef.current) {
@@ -907,33 +908,43 @@ const BISCIndex = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    // Initial check
-    handleScroll();
+    handleScroll(); // Initial check
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  // Active section detection using Intersection Observer
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            if (entry.target.id === "faqs") {
-              setActiveSection("FAQs");
-            } else {
-              const sectionName =
-                entry.target.id.charAt(0).toUpperCase() +
-                entry.target.id.slice(1);
-              setActiveSection(sectionName);
-            }
+        // Filter entries that are intersecting and sort by intersection ratio
+        const intersectingEntries = entries
+          .filter(entry => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (intersectingEntries.length > 0) {
+          const mostVisibleEntry = intersectingEntries[0];
+          const targetId = mostVisibleEntry.target.id;
+
+          // Handle special case for FAQs
+          if (targetId === "faqs") {
+            setActiveSection("FAQs");
+          } else {
+            // Capitalize first letter for other sections
+            const sectionName = targetId.charAt(0).toUpperCase() + targetId.slice(1);
+            setActiveSection(sectionName);
           }
-        });
+        }
       },
-      { threshold: 0.5 }
+      {
+        threshold: [0.1, 0.3, 0.5, 0.7, 0.9], // Multiple thresholds for better detection
+        rootMargin: "-20% 0px -70% 0px" // Only trigger when section is in the middle portion of viewport
+      }
     );
 
+    // Observe all sections
     SECTIONS.forEach((section) => {
       const element = document.getElementById(section.toLowerCase());
       if (element) {
@@ -947,7 +958,7 @@ const BISCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}
@@ -1040,6 +1051,7 @@ const BISCIndex = () => {
     </div>
   );
 };
+
 
 // BISC Content Section
 const BISCContent = () => {
