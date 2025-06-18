@@ -2855,6 +2855,587 @@ const productTableData = [
       linkText: "S.O. 1960(E), dated 27/04/2022",
     },
   },
+  {
+    id: 275,
+    sno: 275,
+    isNumber: "IS 10931 : 1984",
+    product: "Lauric Acid",
+    notification: {
+      title: "69. Lauric Acid (Quality Control) Order, 2022",
+      link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Notification-for-08-QCOs-from-DCPC-27042022.pdf",
+      linkText: "(S.O. 1961(E), dated 27/04/2022)",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Extension-for-date-of-implementation-of-06-QCOs.pdf",
+          text: "Lauric Acid(Quality Control) Amendment Order, 2022 (Amendment order for various Chemicals, dated 21 October 2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Gazette_Notification_for_extension_of_QCO_for_7_Chemicals.pdf",
+          text: "Lauric Acid (Quality Control) Amendment Order, 2023 (S.O. 1864(E), dated 24/04/2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Amendment-in-06-Chemical-QCO.pdf",
+          text: "Lauric Acid (Quality Control) Amendment Order, 2023 (S.O. 4608(E), dated 19th October, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Amendment-order-of-Lauric-acid-Acid-oil-Palm-fatty-acid-Rice-bran-fatty-acidCoconut-fatty-acid-and-Hydrogenated-rice-bran-fatty-acids.pdf",
+          text: "Lauric Acid (Quality Control) Amendment Order, 2024 S.O. 1136(E), dated 07th March 2024",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Amendment-in-Quality-Control-Order-of-06-Chemicals.pdf",
+          text: "Lauric Acid (Quality Control) Second Amendment Order, 2024 S.O. 4611(E), dated 22nd October 2024",
+        },
+      ],
+    },
+  },
+  {
+    id: 276,
+    sno: 276,
+    isNumber: "IS 12029 : 1986",
+    product: "Acid Oil",
+    notification: {
+      title: "70. Acid Oil (Quality Control) Order, 2022",
+      link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Notification-for-08-QCOs-from-DCPC-27042022.pdf",
+      linkText: "(S.O. 1961(E), dated 27/04/2022)",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Extension-for-date-of-implementation-of-06-QCOs.pdf",
+          text: "Acid Oil (Quality Control) Amendment Order, 2022 (Amendment order for various Chemicals, dated 21 October 2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Gazette_Notification_for_extension_of_QCO_for_7_Chemicals.pdf",
+          text: "Acid Oil (Quality Control) Amendment Order, 2023 (S.O. 1865(E), dated 24/04/2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Amendment-in-06-Chemical-QCO.pdf",
+          text: "Acid Oil(Quality Control) Amendment Order, 2023 (S.O. 4609(E), 19th October, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Amendment-order-of-Lauric-acid-Acid-oil-Palm-fatty-acid-Rice-bran-fatty-acidCoconut-fatty-acid-and-Hydrogenated-rice-bran-fatty-acids.pdf",
+          text: "Acid Oil (Quality Control) Amendment Order, 2024 S.O. 1137(E), dated 07th March 2024",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Amendment-in-Quality-Control-Order-of-06-Chemicals.pdf",
+          text: "Acid Oil (Quality Control) Second Amendment Order, 2024 S.O. 4612(E), dated 22nd October 2024",
+        },
+      ],
+    },
+  },
+  {
+    id: 277,
+    sno: 277,
+    isNumber: "IS 12067: 1987",
+    product: "Palm Fatty Acids",
+    notification: {
+      title: "71. Palm Fatty Acids (Quality Control) Order, 2022",
+      link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Notification-for-08-QCOs-from-DCPC-27042022.pdf",
+      linkText: "(S.O. 1961(E), dated 27/04/2022)",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Extension-for-date-of-implementation-of-06-QCOs.pdf",
+          text: "Palm Fatty Acids (Quality Control) Amendment Order, 2022 (Amendment order for various Chemicals, dated 21 October 2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Gazette_Notification_for_extension_of_QCO_for_7_Chemicals.pdf",
+          text: "Palm Fatty Acids (Quality Control) Amendment Order, 2023 (S.O. 1866(E), dated 24/04/2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Amendment-in-06-Chemical-QCO.pdf",
+          text: "Palm Fatty Acids (Quality Control) Amendment Order, 2023 (S.O. 4610(E), 19th October, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Amendment-order-of-Lauric-acid-Acid-oil-Palm-fatty-acid-Rice-bran-fatty-acidCoconut-fatty-acid-and-Hydrogenated-rice-bran-fatty-acids.pdf",
+          text: "Palm Fatty Acids (Quality Control) Amendment Order, 2024 S.O. 1138(E), dated 07th March 2024",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Amendment-in-Quality-Control-Order-of-06-Chemicals.pdf",
+          text: "Palm Fatty Acids (Quality Control) Second Amendment Order, 2024 S.O. 4613(E), dated 22nd October 2024",
+        },
+      ],
+    },
+  },
+  {
+    id: 278,
+    sno: 278,
+    isNumber: "IS 12068 :1987",
+    product: "Rice Bran Fatty Acids",
+    notification: {
+      title: "72. Rice Bran Fatty Acids (Quality Control) Order, 2022",
+      link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Notification-for-08-QCOs-from-DCPC-27042022.pdf",
+      linkText: "(S.O. 1961(E), dated 27/04/2022)",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Extension-for-date-of-implementation-of-06-QCOs.pdf",
+          text: "Rice Bran Fatty Acids (Quality Control) Amendment Order, 2022 (Amendment order for various Chemicals, dated 21 October 2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Gazette_Notification_for_extension_of_QCO_for_7_Chemicals.pdf",
+          text: "Rice Bran Fatty Acids (Quality Control) Amendment Order, 2023 (S.O. 1867(E), dated 24/04/2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Amendment-in-06-Chemical-QCO.pdf",
+          text: "Rice Bran Fatty Acids (Quality Control) Amendment Order, 2023 (S.O. 4611(E), 19th October, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Amendment-order-of-Lauric-acid-Acid-oil-Palm-fatty-acid-Rice-bran-fatty-acidCoconut-fatty-acid-and-Hydrogenated-rice-bran-fatty-acids.pdf",
+          text: "Rice Bran Fatty Acids (Quality Control) Amendment Order, 2024 S.O. 1139(E), dated 07th March 2024",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Amendment-in-Quality-Control-Order-of-06-Chemicals.pdf",
+          text: "Rice Bran Fatty Acids (Quality Control) Second Amendment Order, 2024 S.O. 4614(E), dated 22nd October 2024",
+        },
+      ],
+    },
+  },
+  {
+    id: 279,
+    sno: 279,
+    isNumber: "IS 12069 : 1987",
+    product: "Coconut Fatty Acids",
+    notification: {
+      title: "73. Coconut Fatty Acids (Quality Control) Order, 2022",
+      link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Notification-for-08-QCOs-from-DCPC-27042022.pdf",
+      linkText: "(S.O. 1961(E), dated 27/04/2022)",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Extension-for-date-of-implementation-of-06-QCOs.pdf",
+          text: "Coconut Fatty Acids (Quality Control) Amendment Order, 2022 (Amendment order for various Chemicals, dated 21 October 2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Gazette_Notification_for_extension_of_QCO_for_7_Chemicals.pdf",
+          text: "Coconut Fatty Acids (Quality Control) Amendment Order, 2023 (S.O. 1868(E), dated 24/04/2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Amendment-in-06-Chemical-QCO.pdf",
+          text: "Coconut Fatty Acids (Quality Control) Amendment Order, 2023 (S.O. 4612(E), 19th October, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Amendment-order-of-Lauric-acid-Acid-oil-Palm-fatty-acid-Rice-bran-fatty-acidCoconut-fatty-acid-and-Hydrogenated-rice-bran-fatty-acids.pdf",
+          text: "Coconut Fatty Acids (Quality Control) Amendment Order, 2024 S.O. 1140(E), dated 07th March 2024",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Amendment-in-Quality-Control-Order-of-06-Chemicals.pdf",
+          text: "Coconut Fatty Acids (Quality Control) Second Amendment Order, 2024 S.O. 4615(E), dated 22nd October 2024",
+        },
+      ],
+    },
+  },
+  {
+    id: 280,
+    sno: 280,
+    isNumber: "IS 12124 : 1987",
+    product: "Rubberseed Fatty Acids",
+    notification: {
+      title: "74. Rubberseed Fatty Acids (Quality Control) Order, 2022",
+      link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Notification-for-08-QCOs-from-DCPC-27042022.pdf",
+      linkText: "(S.O. 1961(E), dated 27/04/2022)",
+    },
+  },
+  {
+    id: 281,
+    sno: 281,
+    isNumber: "IS 12361 :1988",
+    product: "Hydrogenated Rice Bran Fatty Acids",
+    notification: {
+      title: "75. Hydrogenated Rice Bran Fatty Acids (Quality Control) Order, 2022",
+      link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Notification-for-08-QCOs-from-DCPC-27042022.pdf",
+      linkText: "(S.O. 1961(E), dated 27/04/2022)",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Extension-for-date-of-implementation-of-06-QCOs.pdf",
+          text: "Hydrogenated Rice Bran Fatty Acids (Quality Control) Amendment Order, 2022 (Amendment order for various Chemicals, dated 21 October 2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Gazette_Notification_for_extension_of_QCO_for_7_Chemicals.pdf",
+          text: "Hydrogenated Rice Bran Fatty Acids (Quality Control) Amendment Order, 2023 (S.O. 1869(E), dated 24/04/2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Amendment-in-06-Chemical-QCO.pdf",
+          text: "Hydrogenated Rice Bran Fatty Acids (Quality Control) Amendment Order, 2023 (S.O. 4613(E), 19th October, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Amendment-order-of-Lauric-acid-Acid-oil-Palm-fatty-acid-Rice-bran-fatty-acidCoconut-fatty-acid-and-Hydrogenated-rice-bran-fatty-acids.pdf",
+          text: "Hydrogenated Rice Bran Fatty Acids (Quality Control) Amendment Order, 2024 S.O. 1141(E), dated 07th March 2024",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Amendment-in-Quality-Control-Order-of-06-Chemicals.pdf",
+          text: "Hydrogenated Rice Bran Fatty Acids (Quality Control) Second Amendment Order, 2024 S.O. 4616(E), dated 22nd October 2024",
+        },
+      ],
+    },
+  },
+  {
+    id: 282,
+    sno: 282,
+    isNumber: "IS 302 (Part 2/ Section 14)",
+    product: "Hand-held Blender",
+    notification: {
+      title: "76. Bureau of Indian Standards Kitchen Appliances (Quality Control) Order, 2018",
+      link: "https://www.bis.gov.in/MandatoryProducts/QCOrder/QCO_dated_10th_Oct2018.pdf",
+      linkText: "S.O. 5243(E) dated 10th October, 2018",
+    },
+  },
+  {
+    id: 283,
+    sno: 283,
+    isNumber: "IS 4250",
+    product: "Domestic Electric Food Mixer (Liquidizers and Grinders) and Centrifugal Juicer",
+    notification: {
+      title: "76. Bureau of Indian Standards Kitchen Appliances (Quality Control) Order, 2018",
+      link: "https://www.bis.gov.in/MandatoryProducts/QCOrder/QCO_dated_10th_Oct2018.pdf",
+      linkText: "S.O. 5243(E) dated 10th October, 2018",
+    },
+  },
+  {
+    id: 284,
+    sno: 284,
+    isNumber: "IS 15558",
+    product: "Instantaneous Domestic Water Heater for use with Liquefied Petroleum Gas",
+    notification: {
+      title: "77. Bureau of Indian Standards Domestic Water Heater for Use with Liquefied Petroleum Gas (Quality Control) Order, 2018",
+      link: "https://www.bis.gov.in/MandatoryProducts/QCOrder/QCO_dated_10th_Oct2018.pdf",
+      linkText: "S.O. 5244(E) dated 10th October, 2018",
+    },
+  },
+  {
+    id: 285,
+    sno: 285,
+    isNumber: "IS 1391 (Part-1): 2017",
+    product: "Room Air Conditioners- Specification Part 1 Unitary Air Conditioners",
+    notification: {
+      title: "78. Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2019/12/Air-Conditioner-QCO.pdf",
+      linkText: "S.O. 4354(E) dated 05th December, 2019",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/06/Extension-notification-AC-QCO.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2020 (S.O. 1518(E) dated 18th May, 2020)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Air-Conditioner-and-its-related-Parts-Hermetic-Compressor-and-Temperature-Sensing-Controls-Quality-Control-Second-Amendment-Order-2020.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Second Amendment Order, 2020",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/01/Air-conditioner-QCO-extension-order.pdf",
+          text: "Air Conditioner and its related parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2021 S.O. 5095(E), dated 08 December, 2021",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/12/Extension-of-Date-of-implementation-of-AC-QCOpdf-1.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressors and Temperature Sensing Controls (Quality Control) Amendment Order, 2022 (S.O. 5972(E), dated 21/12/2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/01/Air-Conditioner-and-its-related-parts.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2023 (S.O. 32(E), dated 29th December, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2025/02/Air-Conditioner-QCO-Amendment-Order-2025.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2025 S.O. 695(E) Dated 11 February, 2025",
+        },
+      ],
+    },
+  },
+  {
+    id: 286,
+    sno: 286,
+    isNumber: "IS 1391 (Part-2): 2018",
+    product: "Room Air Conditioners- Specification Part 2 Split Air Conditioners",
+    notification: {
+      title: "78. Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2019/12/Air-Conditioner-QCO.pdf",
+      linkText: "S.O. 4354(E) dated 05th December, 2019",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/06/Extension-notification-AC-QCO.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2020 (S.O. 1518(E) dated 18th May, 2020)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Air-Conditioner-and-its-related-Parts-Hermetic-Compressor-and-Temperature-Sensing-Controls-Quality-Control-Second-Amendment-Order-2020.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Second Amendment Order, 2020",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/01/Air-conditioner-QCO-extension-order.pdf",
+          text: "Air Conditioner and its related parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2021 S.O. 5095(E), dated 08 December, 2021",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/12/Extension-of-Date-of-implementation-of-AC-QCOpdf-1.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressors and Temperature Sensing Controls (Quality Control) Amendment Order, 2022 (S.O. 5972(E), dated 21/12/2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/01/Air-Conditioner-and-its-related-parts.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2023 (S.O. 32(E), dated 29th December, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2025/02/Air-Conditioner-QCO-Amendment-Order-2025.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2025 S.O. 695(E) Dated 11 February, 2025",
+        },
+      ],
+    },
+  },
+  {
+    id: 287,
+    sno: 287,
+    isNumber: "IS 8148:2018",
+    product: "Ducted and Package Air Conditioners",
+    notification: {
+      title: "78. Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2019/12/Air-Conditioner-QCO.pdf",
+      linkText: "S.O. 4354(E) dated 05th December, 2019",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/06/Extension-notification-AC-QCO.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2020 (S.O. 1518(E) dated 18th May, 2020)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Air-Conditioner-and-its-related-Parts-Hermetic-Compressor-and-Temperature-Sensing-Controls-Quality-Control-Second-Amendment-Order-2020.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Second Amendment Order, 2020",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/01/Air-conditioner-QCO-extension-order.pdf",
+          text: "Air Conditioner and its related parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2021 S.O. 5095(E), dated 08 December, 2021",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/12/Extension-of-Date-of-implementation-of-AC-QCOpdf-1.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressors and Temperature Sensing Controls (Quality Control) Amendment Order, 2022 (S.O. 5972(E), dated 21/12/2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/01/Air-Conditioner-and-its-related-parts.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2023 (S.O. 32(E), dated 29th December, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2025/02/Air-Conditioner-QCO-Amendment-Order-2025.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2025 S.O. 695(E) Dated 11 February, 2025",
+        },
+      ],
+    },
+  },
+  {
+    id: 288,
+    sno: 288,
+    isNumber: "IS 11329:2018",
+    product: "Finned type Heat Exchanger for Room Air Conditioner",
+    notification: {
+      title: "78. Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2019/12/Air-Conditioner-QCO.pdf",
+      linkText: "S.O. 4354(E) dated 05th December, 2019",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/06/Extension-notification-AC-QCO.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2020 (S.O. 1518(E) dated 18th May, 2020)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Air-Conditioner-and-its-related-Parts-Hermetic-Compressor-and-Temperature-Sensing-Controls-Quality-Control-Second-Amendment-Order-2020.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Second Amendment Order, 2020",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/01/Air-conditioner-QCO-extension-order.pdf",
+          text: "Air Conditioner and its related parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2021 S.O. 5095(E), dated 08 December, 2021",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/12/Extension-of-Date-of-implementation-of-AC-QCOpdf-1.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressors and Temperature Sensing Controls (Quality Control) Amendment Order, 2022 (S.O. 5972(E), dated 21/12/2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/01/Air-Conditioner-and-its-related-parts.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2023 (S.O. 32(E), dated 29th December, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2025/02/Air-Conditioner-QCO-Amendment-Order-2025.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2025 S.O. 695(E) Dated 11 February, 2025",
+        },
+      ],
+    },
+  },
+  {
+    id: 289,
+    sno: 289,
+    isNumber: "IS 10617:2018",
+    product: "Hermetic compressor\nHermetic Compressors-Specification",
+    notification: {
+      title: "78. Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2019/12/Air-Conditioner-QCO.pdf",
+      linkText: "S.O. 4354(E) dated 05th December, 2019",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/06/Extension-notification-AC-QCO.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2020 (S.O. 1518(E) dated 18th May, 2020)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Air-Conditioner-and-its-related-Parts-Hermetic-Compressor-and-Temperature-Sensing-Controls-Quality-Control-Second-Amendment-Order-2020.pdf",
+          text: "The Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Second Amendment Order, 2020",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2023/01/Air-conditioner-QCO-extension-order.pdf",
+          text: "Air Conditioner and its related parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2021 S.O. 5095(E), dated 08 December, 2021",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2022/12/Extension-of-Date-of-implementation-of-AC-QCOpdf-1.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressors and Temperature Sensing Controls (Quality Control) Amendment Order, 2022 (S.O. 5972(E), dated 21/12/2022)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2024/01/Air-Conditioner-and-its-related-parts.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2023 (S.O. 32(E), dated 29th December, 2023)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2025/02/Air-Conditioner-QCO-Amendment-Order-2025.pdf",
+          text: "Air Conditioner and its related Parts, Hermetic Compressor and Temperature Sensing Controls (Quality Control) Amendment Order, 2025 S.O. 695(E) Dated 11 February, 2025",
+        },
+      ],
+    },
+  },
+  {
+    id: 290,
+    sno: 290,
+    isNumber: "IS 1293 : 2005",
+    product: "Plugs and socket-outlets of Rated Voltage up to and including 250 Volts and Rated current up to and including 16 amperes",
+    notification: {
+      title: "Plugs and Socket-Outlets and Alternating Current Direct Connected Static Prepayment Meters for Active Energy (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2019/12/Plug-and-socket-QCO.pdf",
+      linkText: "S.O. 4353(E) dated 04th December, 2019",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/06/Extension-Notification-Plug-and-Socket.pdf",
+          text: "The Plugs and Socket-Outlets and Alternating Current Direct Connected Static Prepayment Meters for Active Energy (Quality Control) Amendment Order, 2020 (S.O. 1517(E) dated 18th May, 2020)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Plugs-and-Socket-Outlets-and-AC-Direct-Connected-Static-Prepayment-Meters-for-Active-Energy-Quality-Control-Order-2021.pdf",
+          text: "Superseded by Plugs and Socket-Outlets and AC Direct Connected Static Prepayment Meters for Active Energy (Quality Control) Order, 2021",
+        },
+      ],
+    },
+  },
+  {
+    id: 291,
+    sno: 291,
+    isNumber: "IS 15884:2010",
+    product: "Alternating Current Direct Connected Static Prepayment Meters for Active Energy (Class1 and 2)",
+    notification: {
+      title: "Plugs and Socket-Outlets and Alternating Current Direct Connected Static Prepayment Meters for Active Energy (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2019/12/Plug-and-socket-QCO.pdf",
+      linkText: "S.O. 4353(E) dated 04th December, 2019",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/06/Extension-Notification-Plug-and-Socket.pdf",
+          text: "The Plugs and Socket-Outlets and Alternating Current Direct Connected Static Prepayment Meters for Active Energy (Quality Control) Amendment Order, 2020 (S.O. 1517(E) dated 18th May, 2020)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Plugs-and-Socket-Outlets-and-AC-Direct-Connected-Static-Prepayment-Meters-for-Active-Energy-Quality-Control-Order-2021.pdf",
+          text: "Superseded by Plugs and Socket-Outlets and AC Direct Connected Static Prepayment Meters for Active Energy (Quality Control) Order, 2021",
+        },
+      ],
+    },
+  },
+  {
+    id: 292,
+    sno: 292,
+    isNumber: "IS 4246: 2002",
+    product: "Domestic Gas Stoves for use with Liquefied Petroleum Gases",
+    notification: {
+      title: "80. Domestic Gas Stoves for use with Liquefied Petroleum Gases (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2019/12/QCO-LPG-Stoves.pdf",
+      linkText: "S.O. 4345(E) dated 03th December, 2019",
+    },
+  },
+  {
+    id: 293,
+    sno: 293,
+    isNumber: "IS 14900: 2018",
+    product: "Transparent Float Glass",
+    notification: {
+      title: "Transparent Float Glass (Quality Control) Order, 2019",
+      link: "https://www.bis.gov.in/wp-content/uploads/2020/01/QCO-on-transparent-float-glass.pdf",
+      linkText: "(S.O. 03 (E) dated 31/12/2019",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/07/Extension-Order-Float-Glass.pdf",
+          text: "Transparent Float Glass (Quality Control) (Amendment) Order, 2020 (S.O.2016(E) dated 23/06/2020)",
+        },
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Transparent-Float-Glass-Quality-Control-Order-2021.pdf",
+          text: "81.Superseded by Transparent Float Glass (Quality Control) Order, 2021 (S.O. 1928 (E) dated 17.05.2021)",
+        },
+      ],
+    },
+  },
+
+  {
+    id: 294,
+    sno: 294,
+    isNumber: "IS 2347:2017",
+    product: "Domestic Pressure Cooker",
+    notification: {
+      title: "82. Domestic Pressure Cooker (Quality Control) Order, 2020",
+      link: "https://www.bis.gov.in/wp-content/uploads/2020/01/Pressure_cooker_QCO.pdf",
+      linkText: "(S.O. 294 (E) dated 21/01/2020)",
+      amendments: [
+        {
+          link: "https://www.bis.gov.in/wp-content/uploads/2020/07/Extension-Order-Pressure-Cooker.pdf",
+          text: "Domestic Pressure Cooker (Quality Control) (Amendment) Order, 2020 (S.O.2019(E) dated 23/06/2020)",
+        },
+      ],
+    },
+  },
+  {
+    id: 295,
+    sno: 295,
+    isNumber: "IS 1554(Part 1) : 1988",
+    product: "Specification for PVC Insulated (Heavy Duty) Electric Cables Part 1 For Working Voltages up to and Including 1100 V",
+    notification: {
+      title: "83. Cables (Quality Control) Order, 2020",
+      link: "https://www.bis.gov.in/wp-content/uploads/2020/01/Cables_28012020.pdf",
+      linkText: "(S.O. 294 (E) dated 21/01/2020 )",
+    },
+  },
+  {
+    id: 296,
+    sno: 296,
+    isNumber: "IS 1554(Part 2) : 1988",
+    product: "Specification for PVC Insulated (Heavy Duty) Electric Cables Part 2 For Working Voltages from 3.3 kV up to and Including 11 kV",
+    notification: {
+      title: "83. Cables (Quality Control) Order, 2020",
+      link: "https://www.bis.gov.in/wp-content/uploads/2020/01/Cables_28012020.pdf",
+      linkText: "(S.O. 294 (E) dated 21/01/2020 )",
+    },
+  },
+  {
+    id: 297,
+    sno: 297,
+    isNumber: "IS 7098 (Part 1) : 1988",
+    product: "Specification for Crosslinked Polyethylene Insulated PVC Sheathed Cables Part 1 for working voltages up to and including 1100 V",
+    notification: {
+      title: "83. Cables (Quality Control) Order, 2020",
+      link: "https://www.bis.gov.in/wp-content/uploads/2020/01/Cables_28012020.pdf",
+      linkText: "(S.O. 294 (E) dated 21/01/2020 )",
+    },
+  },
+  {
+    id: 298,
+    sno: 298,
+    isNumber: "IS 7098 (Part 2) : 2011",
+    product: "Crosslinked polyethylene insulated Thermoplastics sheathed cables – Specification Part 2 for working voltages from 3.3 kV up to and including 33 kV",
+    notification: {
+      title: "83. Cables (Quality Control) Order, 2020",
+      link: "https://www.bis.gov.in/wp-content/uploads/2020/01/Cables_28012020.pdf",
+      linkText: "(S.O. 294 (E) dated 21/01/2020 )",
+    },
+  },
+  {
+    id: 299,
+    sno: 299,
+    isNumber: "IS 7098 (Part 3) : 1993",
+    product: "Cross-Linked Polyethylene Insulated Thermoplastics Sheathed Cables Part 3 For Working Voltages from 66 kV Up to and Including 220 kV",
+    notification: {
+      title: "83. Cables (Quality Control) Order, 2020",
+      link: "https://www.bis.gov.in/wp-content/uploads/2020/01/Cables_28012020.pdf",
+      linkText: "(S.O. 294 (E) dated 21/01/2020 )",
+    },
+  },
+  {
+    id: 300,
+    sno: 300,
+    isNumber: "IS 14255 : 1995",
+    product: "Aerial Bunched Cables – For Working Voltages Up to and Including 1100 Volts – Specification"
+  }
+
 ];
 
 const TableTesting = () => {
@@ -3007,7 +3588,7 @@ const TableTesting = () => {
                                 >
                                   {amendment.text}
                                   {index <
-                                  item.notification.amendments.length - 1
+                                    item.notification.amendments.length - 1
                                     ? ", "
                                     : ""}
                                 </a>

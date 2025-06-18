@@ -139,7 +139,7 @@ import Seminar102 from "../assets/seminarImages/Seminar-10-2.jpg"
 import Seminar103 from "../assets/seminarImages/Seminar-10-3.jpg"
 import Seminar10 from "../assets/seminarImages/Seminar-10.jpg"
 import Seminar11 from "../assets/seminarImages/Seminar-11.jpg"
-import Seminar12 from "../assets/seminarImages/Seminar-12.jpg"
+// import Seminar12 from "../assets/seminarImages/Seminar-12.jpg"
 
 
 const Home = () => {
@@ -624,11 +624,11 @@ const WebinarSeminarMarquee = () => {
       image: Seminar11,
       title: "Seminar 11",
     },
-    {
-      id: 17,
-      image: Seminar12,
-      title: "Seminar 12",
-    },
+    // {
+    //   id: 17,
+    //   image: Seminar12,
+    //   title: "Seminar 12",
+    // },
   ];
 
   return (

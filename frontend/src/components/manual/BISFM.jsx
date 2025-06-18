@@ -255,11 +255,11 @@ export const BISFMIndex = () => {
     "Overview",
     "Standardization",
     "Representation",
-    "Validity",
-    "Payment",
+    "Document",
+    "Process",
+    "Costing",
     "Surveillance",
-    "Consulting",
-    "FAQs",
+    "Facilitator",
   ];
 
   const handleItemClick = (item) => {
@@ -346,9 +346,8 @@ export const BISFMIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -398,11 +397,10 @@ export const BISFMIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
-                }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -422,20 +420,18 @@ export const BISFMIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
-              }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
+                }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
-              }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
+                }`}
             />
           </div>
         ))}
@@ -473,9 +469,9 @@ export const ServiceFaq = () => {
       aria-label="Frequently Asked Questions"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Frequently Asked Questions
-        </h2>
+        </h4>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can&apos;t find the answer you are looking for?{" "}
           <a
@@ -490,141 +486,136 @@ export const ServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What services do you offer for CDSCO compliance?
+                What is BIS certification and why is it important for foreign manufacturers to obtain Indian BIS?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                We offer comprehensive CDSCO regulatory compliance services
-                including product registration, license applications, regulatory
-                strategy, documentation preparation, and post-approval
-                compliance monitoring for pharmaceuticals, medical devices, and
-                cosmetics in India.
+                BIS certification is a regulatory process conducted by the Bureau of Indian Standards to ensure products meet Indian standards. It is essential for foreign manufacturers to gain market access, customs clearance, and consumer trust in India.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does the CDSCO approval process typically take?
+                What does the ISI mark represent?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO approval timelines vary based on product category and
-                application type. Typically, drug approvals take 6-12 months,
-                medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our Certifications work to expedite
-                these timelines through proper documentation and regulatory
-                strategy.
+                The ISI mark indicates conformity to a specific Indian Standard. It is mandatory for products under the BIS certification and must be printed on packaging and products.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are required for CDSCO registration?
+                Is BIS certification mandatory for all imports to India?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Required documents include product dossiers, manufacturing
-                information, stability data, clinical trial results (if
-                applicable), Good Manufacturing Practice (GMP) certificates,
-                Certificate of Pharmaceutical Product (CoPP), and various
-                application forms specific to your product category. Our team
-                assists in preparing all necessary documentation.
+                No. BIS certification is mandatory for products listed under the mandatory Indian BIS certification scheme. However, voluntary certification is available for other products.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you assist with clinical trial approvals in India?
+                Who can apply for BIS certification under FMCS?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide end-to-end support for clinical trial
-                applications in India, including protocol development, ethics
-                committee submissions, CDSCO applications, site selection
-                assistance, and regulatory compliance throughout the trial
-                process. We also help navigate the New Drugs and Clinical Trials
-                Rules, 2019.
+                Only actual foreign manufacturers (not importers or traders) can apply. An Authorized Indian Representative (AIR) is mandatory to represent them in India.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the costs associated with CDSCO registrations?
+                How long does it take to get a BIS certificate?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, Certifications fees, and
-                potential inspection costs. We provide transparent quotations
-                based on your specific product and requirements, with options
-                for different service levels to fit various budgets.
+                The average BIS certification process under FMCS takes 120 days, depending on document readiness, audit scheduling, and testing turnaround times.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do you handle post-approval regulatory requirements?
+                What are the major costs involved in BIS certification?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our post-approval services include pharmacovigilance support,
-                periodic safety update reports, variation applications, renewal
-                submissions, compliance with labeling requirements, adverse
-                event reporting, and ongoing regulatory intelligence to keep you
-                informed of regulatory changes affecting your products.
+                Costs include application fees, audit charges, lab testing fees, license and marking fees, and a Performance Bank Guarantee (PBG) from an RBI-approved Indian bank.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can you help with import licenses for pharmaceuticals and
-                medical devices?
+                Can the BIS license be renewed?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we specialize in obtaining Import Licenses (Form 10) for
-                drugs and Registration Certificates for medical devices. Our
-                services include preparing all necessary documentation,
-                coordinating with Indian authorized agents, liaising with CDSCO,
-                and handling post-approval compliance requirements for imported
-                products.
+                Yes. The BIS license is generally valid for 1–2 years and can be renewed upon meeting compliance and document update requirements.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-8">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What experience does your consulting team have with CDSCO
-                regulations?
+                What happens if the product fails during BIS lab testing?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Our consulting team consists of regulatory experts with 10+
-                years of experience in Indian pharmaceutical regulations. Team
-                members include former regulatory professionals, pharmacists,
-                and industry specialists who maintain close relationships with
-                regulatory authorities and stay updated on the latest regulatory
-                developments.
+                If a product fails, BIS may allow corrective action and re-testing. Persistent failure can result in rejection of the application.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-9">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do recent regulatory changes affect pharmaceutical
-                registrations in India?
+                Is it necessary to hire a BIS certification consultant?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Recent regulatory changes include the New Drugs and Clinical
-                Trials Rules (2019), Medical Device Rules (2017), and ongoing
-                updates to the Drugs and Cosmetics Act. These changes have
-                streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our Certifications keep
-                abreast of all changes and adjust strategies accordingly.
+                It&apos;s not mandatory but highly recommended. A consultant helps reduce delays, manage compliance, and improve approval chances by ensuring full alignment with BIS protocols.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-10">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you offer support for manufacturing facility inspections?
+                Can a BIS license be suspended or cancelled?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide comprehensive support for CDSCO manufacturing
-                facility inspections, including pre-inspection readiness
-                assessments, gap analysis, preparation of required
-                documentation, mock inspections, training of personnel, and
-                assistance during actual inspections to ensure a successful
-                outcome.
+                Yes. BIS may suspend or cancel a license for non-compliance, product failure, misuse of the ISI logo, or audit discrepancies.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-11">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                What documents are needed for the BIS certification process?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                Documents include the FMCS application form, test reports, equipment lists, calibration certificates, factory layout, AIR appointment letter, and proof of fee payment.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-12">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                Can one AIR represent multiple BIS applications?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                Yes, provided they are authorized for each project and have the bandwidth to handle documentation, audits, and communication for each certification.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-13">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                What is the role of a Performance Bank Guarantee?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                A PBG assures BIS that the manufacturer will comply with Indian standards. It is refundable upon license cancellation and mandatory for all FMCS applications obtaining Indian BIS.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-14">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                Is BIS certification recognized outside India?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                While the BIS certificate is an Indian standard, it is respected in trade contexts in many regions that accept Indian compliance, especially in Asia and Africa.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-15">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                How do I know if my product requires BIS certification?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                Check the updated list on the official BIS website or consult with a BIS consultant to verify whether your product falls under mandatory certification.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -686,26 +677,28 @@ export const BISFMContentLeft = () => {
           </div> */}
         </section>
 
-        <NominationSection />
+        <OverviewSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        <DocumentsSection />
+        <StandardizationSection />
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        <RepresentationSection />
+        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        <DocumentSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <ProcessSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        <ValiditySection />
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        <PaymentSection />
+        <CostingSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <SurveillanceSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        <ConsultingSection />
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        <FacilitatorSection />
       </div>
     </article>
   );
 };
 
-const NominationSection = () => {
+const OverviewSection = () => {
   return (
     <section
       id="overview"
@@ -924,7 +917,7 @@ const NominationSection = () => {
   );
 };
 
-const DocumentsSection = () => {
+const StandardizationSection = () => {
   return (
     <section id="standardization" className="flex flex-col scroll-mt-20">
       {/* Documents */}
@@ -1294,7 +1287,7 @@ const DocumentsSection = () => {
   );
 };
 
-const ProcessSection = () => {
+const RepresentationSection = () => {
   return (
     <section id="representation" className="flex flex-col scroll-mt-20">
       {/* Process */}
@@ -1306,148 +1299,648 @@ const ProcessSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        BIS License Process for Foreign Manufacturers
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        Role of Authorized Indian Representative (AIR) in BIS Certification
       </h3>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        BIS FMCS Process: Application, audit, testing, and approval. Contact us!
+      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        What is an Authorized Indian Representative (AIR)?
       </p>
 
-      {/* Eligibility Content */}
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <div className="flex mt-[-20px] gap-10">
-          {/* Points */}
-          <PointsListTwo
-            points={[
-              "Stage-1: Submission of application to BIS in hard copy",
-              "Stage-2: The application will be scrutinized by BIS officials in-line with the Indian standard (IS) and then the shortcomings will be communicated",
-              "Stage-3: Clearing of queries (if any) by submitting the reply to BIS",
-              "Stage-4: Assignment of the BIS auditor for conducting audit at the manufacturing premises",
-              "Stage-5: Finalization of audit date with mutual consent of the manufacturer",
-              "Stage-6: Conduction of audit at the manufacturing premises in foreign and sealing of samples by the auditor",
-              "Stage-7: Testing of sample as per the Indian Standard at the manufacturer's in house test lab",
-              "Stage-8: Sending of the sealed sample to selected BIS lab in India",
-              "Stage-9: Clearing of queries (if any) raised during the audit",
-              "Stage-10: After BIS receives the test report of the sample sent for testing, the license is granted",
-            ]}
-          />
-        </div>
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        An Authorized Indian Representative (AIR) is a crucial intermediary
+        appointed by a foreign manufacturer seeking BIS certification under the
+        FMCS registration scheme. The AIR serves as the official liaison between
+        the Bureau of Indian Standards (BIS) and the manufacturer, ensuring
+        smooth communication, documentation handling, and coordination of the
+        certification process.
+      </p>
 
-        <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-          <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
-            <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-              Note
-            </span>
-            1) Performance Bank guarantee must be issued by any bank worldwide
-            that has a RBI approved branch in India.
-          </div>
-        </div>
+      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Legal Requirement for AIR Appointment
+      </p>
 
-        <div className="mt-[12px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
-          <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-            Note
-          </span>
-          2) Time to obtain BIS certification for foreign manufacturers is
-          approx. 3 months
-        </div>
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        As per BIS guidelines, any foreign manufacturer who does not have a
+        registered office in India must appoint an AIR. This requirement ensures
+        that BIS has a reliable, accessible point of contact within Indian
+        jurisdiction.
+      </p>
 
-        <div className="mt-[12px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
-          <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-            IMPORTANT
-          </span>
-          The BIS license legibly and clearly marks the scope in the license,
-          mentioning the products on which you can mention the license number,
-          Violation of the same ensures stringent actions like license being
-          cancelled. There are provisions of upto imprisonment in BIS
-          regulations.
-        </div>
+      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Key Responsibilities of the AIR
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The AIR&rsquo;s role spans the entire BIS certification process, from
+        documentation and application submission to audit coordination and
+        post-certification compliance:
+      </p>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+          <TableHeader className="bg-[#F9F7F2]">
+            <TableRow className="bg-[#1A8781]/10">
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
+                Responsibility
+              </TableHead>
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody className="bg-white divide-y divide-gray-200">
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Communication
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Acts as the point of contact with BIS officers and departments
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Application Support
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Assists in filling forms, compiling documents, and submitting
+                the application
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Audit Coordination
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Coordinates factory inspection schedules and addresses auditor
+                queries
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Compliance Monitoring
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Ensures all testing and certification activities meet BIS norms
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Renewal Management
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Oversies BIS licence renewal, documentation updates, and fee
+                payments
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
       </div>
+
+      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Eligibility Criteria to Become an AIR
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        To serve as an AIR, an individual or organization must :
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Be an Indian citizen or a legally registered business entity in India",
+            "Have a physical address in India with a valid postal code",
+            "Be capable of communicating fluently in English and local languages",
+            "Understand the certification scheme, BIS documentation protocols, and regulatory expectations",
+            "Be able to respond to audits and correspondence promptly on behalf of the foreign manufacturer",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Why the AIR Role is Vital
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The AIR ensures continuity and accountability throughout the BIS
+        certification process. Without an AIR:
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "BIS has no jurisdiction to act against a non-complying foreign manufacturer",
+            "Time-sensitive queries and audit schedules may get delayed",
+            "The certification process can get stuck, revoked, or rejected",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        A proactive and experienced AIR significantly increases the chance of
+        successful BIS certification.
+      </p>
     </section>
   );
 };
 
-const ValiditySection = () => {
+const DocumentSection = () => {
   return (
-    <section id="validity" className="flex flex-col scroll-mt-20">
+    <section id="document" className="flex flex-col scroll-mt-20">
       {/* Validity */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Validity
+          Document
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        BIS License Validity, Renewal & Fees
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        Documentation Required for BIS Certification under FMCS
       </h3>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Valid for 1 or 2 years, renewal requires documents & fees. Late
-        applications incur a fee.
+      <div className="mt-[16px] md:mt-[24px]">
+        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+          <TableHeader className="bg-[#F9F7F2]">
+            <TableRow className="bg-[#1A8781]/10">
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
+                Document Type
+              </TableHead>
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                Purpose
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody className="bg-white divide-y divide-gray-200">
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                FMCS Application Form
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Official request for certification
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Manufacturing Equipment List
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Shows production capabilities
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Raw Materials List
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Ensures input material quality
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Testing Equipment List
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Evaluates testing and compliance readiness
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Calibration Certificates
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Proves test equipment accuracy
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Factory Layout & Process Flow
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Helps auditors understand manufacturing stages
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Test Certificates
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Proves quality of raw materials and final product
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Quality Control Profile
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Verifies staff qualifications and SOPs
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Payment Proof
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Validates fee submission to BIS
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Performance Bank Guarantee
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Acts as financial assurance for BIS
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Detailed Breakdown of Each document required to Indian BIS certification
       </p>
 
-      <div className="mt-[-5px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
-          BIS license initially can be granted for 1 or 2 years, depending upon
-          the request of the manufacturer, and it has to be renewed after
-          that.During renewal various mandatory documents have to be submitted
-          along with the payment of minimum marking fee and licence free. If the
-          application is submitted after the due date, late fee is also
-          applicable.
-        </div>
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        1. FMCS Application Form
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        This document provides general details about the foreign manufacturer,
+        including:
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Product details (type, category, model)",
+            "Intended Indian Standard",
+            "Contact details of factory and AIR",
+            "Manufacturing capacity and testing scope",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        2. List of Manufacturing Equipment
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Machine name and make",
+            "Production capacity",
+            "Contact details of factory and AIR",
+            "Maintenance records (if applicable)",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        3. List of Raw Materials
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Source of procurement",
+            "Grades and specifications",
+            "Testing protocol (if any)",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        4. List of Testing Equipment
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Equipment name and manufacturer",
+            "Compliance with test parameters in Indian Standard",
+            "Location within the factory",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        5. Calibration Certificates
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Date of last calibration",
+            "Validity period",
+            "Certificate number",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        6. Factory Layout & Process Flow Diagram
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Entry and exit points",
+            "Testing lab areas",
+            "QC checkpoints",
+            "Storage and packaging sections",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        7. Performance Bank Guarantee
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Issued by an RBI-approved Indian bank, the Performance Bank Guarantee
+        (PBG) covers liability in case of non-compliance. This document must:
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Be on official bank letterhead",
+            "Indicate guarantee period and amount",
+            "Be signed and sealed",
+          ]}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Common documentation mistakes to avoid while applying for BIS
+        certificate or Indian BIS.
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={[
+            "Mismatch between form data and factory reality",
+            "Submitting expired calibration reports",
+            "Missing BIS fee proof",
+            "Incomplete or vague process flows",
+            "Naming inconsistencies between documents",
+          ]}
+        />
       </div>
     </section>
   );
 };
 
-const PaymentSection = () => {
+const ProcessSection = () => {
   return (
-    <section id="payment" className="flex flex-col scroll-mt-20">
-      {/* Payment */}
+    <section id="process" className="flex flex-col scroll-mt-20">
+      {/* Process */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Payment
+          Process
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Stages of payment of BIS fees:
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        Step-by-Step BIS Certification Process Under FMCS
       </h3>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        BIS Fees: Application, audit, and license fees, paid in USD. Contact us!
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Overview of the BIS Certification Journey
       </p>
 
-      {/* Eligibility Content */}
-      <div className="mt-[35px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        <div className="flex mt-[-20px] gap-10">
-          {/* Points */}
-          <PointsListTwo
-            points={[
-              "Payment of application fee during the submission of application",
-              "Payment of Audit charges after allotment of the auditor (Eg: Man day charges, Per diem fees, Officer travel charges, etc.)",
-              "Payment of Minimum marking fee and license fee before the grant of licence",
-            ]}
-            heading="Eligibility Criteria for AIR in BIS Certification"
-          />
-        </div>
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The BIS certification process under the Foreign Manufacturers
+        Certification Scheme (FMCS) is methodical, structured, and multi-phased.
+        It ensures that products comply with applicable Indian standards,
+        manufacturing processes are robust, and testing is accurate.
+      </p>
 
-        <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-          <div className="mt-[20px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose ">
-            <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-              Note
-            </span>
-            All the payments have to be done by the manufacturer directly to
-            BIS' bank account in USD
-          </div>
-        </div>
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Step-by-Step Process Summary Table
+      </p>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+          <TableHeader className="bg-[#F9F7F2]">
+            <TableRow className="bg-[#1A8781]/10">
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
+                Step
+              </TableHead>
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody className="bg-white divide-y divide-gray-200">
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                1
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Application Submission to BIS FMCD
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                2
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Documentation Scrutiny and Initial Review
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                3
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Query Resolution & Clarification Submission
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                4
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Nomination of BIS Technical Auditor
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                5
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Factory Audit Scheduling & Coordination via AIR
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                6
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Factory Inspection & Sample Sealing by BIS Auditor
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                7
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                In-House Product Testing (if applicable)
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                8
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Testing of Sealed Samples in BIS-Approved Labs in India
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                9
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Review of Test Reports & Audit Findings
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                10
+              </TableCell>
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Issuance of BIS License and Use of ISI Mark
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      <img
+        src="src/assets/bisfmpageimage/biscertificate.png"
+        alt="BIS Certificate Process Flow"
+        className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
+      />
+
+      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Timeframe to Obtain BIS Certificate
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Typical Duration from Application to Certificate
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The BIS certification process under FMCS generally takes about 120
+        working days (approximately 3–4 months) from the date of correct
+        application submission. Delays often occur when documents are unclear or
+        if the factory isn’t audit ready.
+      </p>
+    </section>
+  );
+};
+
+const CostingSection = () => {
+  return (
+    <section id="costing" className="flex flex-col scroll-mt-20">
+      {/* Costing */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Costing
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        BIS Certification Cost Structure Explained
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Overview of BIS Certification Costs
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Securing a BIS certificate under the Foreign Manufacturers Certification
+        Scheme (FMCS) involves several types of costs. These cover everything
+        from application submission and audits to product testing and mark
+        usage.
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Foreign manufacturers must budget adequately to ensure timely payments,
+        as failure to pay can lead to rejection of BIS certification mid-way.
+      </p>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+          <TableHeader className="bg-[#F9F7F2]">
+            <TableRow className="bg-[#1A8781]/10">
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
+                Cost Category
+              </TableHead>
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody className="bg-white divide-y divide-gray-200">
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Application Fee (INR 1000)
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Paid during submission of the FMCS application form for
+                obtaining Indian BIS
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Audit Charges (INR 7000)
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Covers BIS auditor travel, man-day rates, and related expenses
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Product Testing Fees (As per product)
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                For testing sealed samples at BIS-recognized labs in India
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                License Fee (INR 1000)
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                One-time fee paid upon grant of BIS certificate
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Marking Fee (As per product)
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Annual fee for usage of the ISI mark on certified products
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Performance Bank Guarantee (USD 10,000)
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Financial guarantee deposited via Indian bank to ensure
+                compliance
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
       </div>
     </section>
   );
@@ -1465,132 +1958,167 @@ const SurveillanceSection = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        BIS Certificate Surveillance Process :
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        Post BIS Certification Surveillance and Compliance Requirements
       </h3>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        BIS Surveillance: Routine checks ensure compliance; failures risk
-        cancellation.
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Overview
       </p>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        BIS conducts surveillance on the manufacturers to ensure that the
-        standards are being followed as per the guidelines.
-      </div>
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Once a BIS certificate is granted, the responsibility doesn’t end there.
+        The BIS certification includes an ongoing surveillance and compliance
+        system to ensure continuous adherence to Indian standards. This
+        post-certification phase is crucial to maintaining your BIS license,
+        retaining the right to use the ISI mark, and avoiding legal penalties or
+        suspensions.
+      </p>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          This is done in 2 ways:
-        </span>
-      </div>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        1. Market surveillance:
-      </div>
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        This is done twice yearly. Samples are randomly picked from market and
-        sent to government labs for testing as per the standards, If the sample
-        passes, no problem, but if the sample fails , the manufacturer is
-        informed and they have to take corrective action.Subsequent failure of
-        market sample can lead to suspension or cancellation of the licence.
-      </div>
-
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        2. Factory surveillance:
-      </div>
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        After obtaining the licence, there are certain formalities like
-        maintenance of test records, regular testing of the product and so on.To
-        keep a check that all the protocols are followed, BIS conducts random
-        factory surveillance twice in a year to keep a check on the
-        manufacturer. If subsequent mistakes are observed during several visits,
-        the license is liable to be suspended / cancelled.
-      </div>
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Key Surveillance Components after obtaining BIS certificate Market
+        Surveillance : Random product sampling from the Indian market for
+        independent lab testing , if the sample fails the BIS certificate is
+        suspended. It is done twice every year.
+      </p>
     </section>
   );
 };
 
-const ConsultingSection = () => {
+const FacilitatorSection = () => {
   return (
-    <section id="consulting" className="flex flex-col scroll-mt-20">
-      {/* Consulting */}
+    <section id="facilitator" className="flex flex-col scroll-mt-20">
+      {/* Surveillance */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Consulting
+          Facilitator
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        Role of Sun Certifications India?
+      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        Why Choose a BIS Certification Consultant?
       </h3>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Sun Certifications India ensure hassle-free BIS FMCS licensing
+      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Introduction
       </p>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        From collection of documents to getting the final license, it is a
-        exhaustive and tedious procedure, and requires technical know-how and
-        experience. Being a FMCS Certifications, this is exactly where Sun
-        Certifications and Engineers come into the picture.
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        The BIS certification under the FMCS registration scheme is intricate,
+        highly technical, and time-sensitive. While it is possible to pursue
+        certification independently, most successful foreign manufacturers rely
+        on BIS consultants to streamline the journey and minimize risks.
+      </p>
+
+      <p className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        What Does a BIS Consultant Do?
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        A BIS certification consultant provides end-to-end guidance across every
+        step of the process. Their core responsibilities include:
+      </p>
+
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+          <TableHeader className="bg-[#F9F7F2]">
+            <TableRow className="bg-[#1A8781]/10">
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
+                Task
+              </TableHead>
+              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody className="bg-white divide-y divide-gray-200">
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Documentation
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Prepares, reviews, and formats all required documents
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Application Support
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Submits and tracks your BIS application
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Audit Preparation
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Guides factory teams to ensure audit readiness
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Sample Coordination
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Manages sealing and shipment of samples to India
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Testing Assistance
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Liaises with labs and helps interpret results
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                Renewal & Surveillance
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                Oversees license extensions and compliance checks
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
       </div>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-        With over 10 years of experience in this field and after providing
-        assistance to numerous manufacturers and importers we can help you in
-        smoothening of this process, by complete hand-holding solution, right
-        from the beginning of the procedure to the grant of BIS license.
-      </div>
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        They act as your strategic partner, often doubling as your Authorized Indian Representative (AIR).
+      </p>
 
-      <div className="flex mt-[16px] md:mt-[24px] gap-10">
-        {/* Points */}
-        <PointsListTwo
-          points={[
-            "Preparation of documents as per BIS guidelines",
-            "Submission of application to the department",
-            "Clearing the queries from BIS (if any)",
-            "Coordinating with the BIS official and the manufacturer for audit dates",
-            "Assistance during the audit",
-            "Follow-up with the department for grant of license",
-            "Technical assistance for the setup of in-house lab as per the standard requirements",
-            "Assisting the manufacturer in understanding the post license compliances to be followed",
-          ]}
-          heading="Below is the scope of work of Sun Certifications India:"
-        />
-      </div>
     </section>
   );
 };
 
-const PointsList = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col w-full md:w-[441px]" role="list">
-      <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {heading}
-      </h3>
-      <ul className="flex flex-col mt-[16px] md:mt-[24px] gap-2" role="list">
-        {points.map((point, index) => (
-          <li key={index} className="flex items-start gap-2" role="listitem">
-            <div
-              className="bg-green-500/10 p-2 rounded-full"
-              aria-hidden="true"
-            >
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
-              {point}
-            </p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+// const PointsList = ({ points, heading }) => {
+//   return (
+//     <div className="flex flex-col w-full md:w-[441px]" role="list">
+//       <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+//         {heading}
+//       </h3>
+//       <ul className="flex flex-col mt-[16px] md:mt-[24px] gap-2" role="list">
+//         {points.map((point, index) => (
+//           <li key={index} className="flex items-start gap-2" role="listitem">
+//             <div
+//               className="bg-green-500/10 p-2 rounded-full"
+//               aria-hidden="true"
+//             >
+//               <Check size={12} className="text-[#020817]" />
+//             </div>
+//             <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
+//               {point}
+//             </p>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// };
 
 const PointsListTwo = ({ points, heading }) => {
   return (
