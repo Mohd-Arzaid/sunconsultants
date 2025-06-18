@@ -262,6 +262,8 @@ export const BISFMIndex = () => {
     "Facilitator",
   ];
 
+
+
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
     if (element) {
@@ -315,38 +317,56 @@ export const BISFMIndex = () => {
   }, []);
 
   useEffect(() => {
-    const sectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            if (entry.target.id === "faqs") {
-              setActiveSection("FAQs");
-            } else {
-              const sectionName =
-                entry.target.id.charAt(0).toUpperCase() +
-                entry.target.id.slice(1);
-              setActiveSection(sectionName);
-            }
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+    const handleScroll = () => {
+      const sections = SECTIONS.map(section => {
+        const element = document.getElementById(section.toLowerCase());
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return {
+            id: section,
+            top: rect.top,
+            bottom: rect.bottom,
+            element
+          };
+        }
+        return null;
+      }).filter(Boolean);
 
-    SECTIONS.forEach((section) => {
-      const element = document.getElementById(section.toLowerCase());
-      if (element) {
-        sectionObserver.observe(element);
+      // Find the section that's currently most visible in viewport
+      // Check which section's top is closest to the top of viewport (with some offset)
+      const currentSection = sections.find(section => {
+        return section.top <= 150 && section.bottom > 150;
+      });
+
+      if (currentSection) {
+        setActiveSection(currentSection.id);
+      } else {
+        // If no section is in the sweet spot, find the one closest to top
+        const closestSection = sections.reduce((closest, section) => {
+          if (!closest) return section;
+
+          const currentDistance = Math.abs(section.top - 150);
+          const closestDistance = Math.abs(closest.top - 150);
+
+          return currentDistance < closestDistance ? section : closest;
+        }, null);
+
+        if (closestSection) {
+          setActiveSection(closestSection.id);
+        }
       }
-    });
+    };
 
-    return () => sectionObserver.disconnect();
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div
       ref={stickyRef}
-      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
         }`}
     >
       {/* Mobile Menu Button */}
@@ -364,7 +384,7 @@ export const BISFMIndex = () => {
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-blue-900"
             fill="none"
-            viewBox="0 0 24 24"
+            viewBox="0 24 24"
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
@@ -398,8 +418,8 @@ export const BISFMIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -421,16 +441,16 @@ export const BISFMIndex = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {item}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
                 }`}
             />
           </div>
