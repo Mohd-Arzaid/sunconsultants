@@ -60,7 +60,7 @@ const CDSCOContentRight = () => {
       {/* <OurEvents /> */}
       <WhyChooseUs />
       {/* Latest Notification - Only show on specific paths */}
-      {shouldShowComponents && <LatestNotification />}
+      {/* {shouldShowComponents && <LatestNotification />} */}
       <FreeCallBack />
     </div>
   );
