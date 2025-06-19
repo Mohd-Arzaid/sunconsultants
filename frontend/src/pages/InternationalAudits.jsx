@@ -163,24 +163,22 @@ const AuditGallery = () => {
           </div>
         ))}
 
-        {/* Coming Soon Card */}
+        {/* Many More Audits Images Coming Soon Card */}
         <div className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300">
           <div className="aspect-[4/3] flex items-center justify-center">
             <div className="text-center p-6">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#1A8781]/10 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-colors duration-300">
-                <div className="w-8 h-8 border-2 border-[#1A8781]/40 rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-[#1A8781]/60 rounded-full animate-pulse"></div>
-                </div>
-              </div>
-              <h3 className="text-gray-600 font-playfair text-xl md:text-2xl font-bold mb-2 group-hover:text-[#1A8781] transition-colors duration-300">
-                More Audits
+              <h3 className="text-gray-800 font-geist text-lg md:text-xl font-bold mb-1 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
+                Many More Audits Images
               </h3>
-              <p className="text-gray-500 font-geist text-sm">
+              <p className="text-gray-500 font-geist text-xs md:text-sm font-medium uppercase tracking-widest">
                 Coming Soon
               </p>
             </div>
           </div>
         </div>
+
+
+
       </div>
     </div>
   );
