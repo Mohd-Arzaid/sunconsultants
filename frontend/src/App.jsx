@@ -28,11 +28,10 @@ import EMIEMC from "./pages/EMIEMC";
 import CBCertification from "./pages/CBCertification";
 import ISIMark from "./pages/ISIMark";
 import BatteryWaste from "./pages/BatteryWaste";
-import ScrollToTopButton from "./components/common/ScrollToTop";
+import ScrollToTopButton, { ScrollToTop } from "./components/common/ScrollToTop";
 import MinistryUpdates from "./pages/MinistryUpdates";
 import NotificationDetail from "./pages/NotificationDetail";
 import InternationalAudits from "./pages/InternationalAudits";
-import Seminar from "./pages/Seminar";
 import Exhibition from "./pages/Exhibition";
 import SchemeX from "./pages/SchemeX";
 import Sitemap from "./pages/Sitemap";
@@ -47,6 +46,7 @@ function App() {
       <TopBar />
       <Navbar />
       <ScrollToTopButton hide={popupOpen} />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/table" element={<TableTesting />} />
@@ -88,7 +88,7 @@ function App() {
           element={<LegalMetrology />}
         />
         <Route
-          path="a-guide-to-bis-certification-indian-bis" 
+          path="a-guide-to-bis-certification-indian-bis"
           element={<ISIMark />}
         />
         <Route

@@ -494,7 +494,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
             About
           </Button>
         </Link>
-        
+
 
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1" className="border-b-0">
@@ -571,7 +571,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
                       className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
                     >
                       <Presentation className="w-4 h-4 mr-2" />
-                     Upcoming Webinars
+                      Upcoming Webinars
                     </Button>
                   </Link>
                 </li>
@@ -620,7 +620,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
           </AccordionItem>
         </Accordion>
 
-      
+
 
         <Link to="/contact" className="block w-full" onClick={handleLinkClick}>
           <Button

@@ -1,6 +1,18 @@
 import { ChevronUp } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
+
+// Component that automatically scrolls to top on route change
+export const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const ScrollToTopButton = ({ hide }) => {
   const [showScrollTop, setShowScrollTop] = useState(false);

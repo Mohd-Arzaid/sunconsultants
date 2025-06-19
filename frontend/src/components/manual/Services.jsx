@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 export const Services = () => {
   return (
 
-    <div className="pt-10 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
+    <div className="pt-6 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
 
         <div className="flex flex-col items-center justify-center">

@@ -26,7 +26,8 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "./BISCertification";
-import { Services } from "@/pages/Home";
+import Services from "./Services";
+
 
 export const BISFM = () => {
   return (
