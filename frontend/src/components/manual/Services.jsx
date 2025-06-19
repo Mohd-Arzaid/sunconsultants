@@ -27,7 +27,7 @@ export const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
+                India&apos;s Best Certificate Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -35,110 +35,110 @@ export const Services = () => {
         </div>
 
 
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
+        <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-10 px-4 md:px-0 gap-y-16 md:gap-y-24">
 
 
-          <Link to="/services/bis-mark-foreign" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/bis-mark-foreign" className="relative col-span-1 h-[200px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
                 alt="BIS"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-sm md:text-xl w-full mt-16 md:mt-28 px-2 md:px-0 text-center font-roboto tracking-wide font-semibold text-black leading-tight">
               BIS Mark (ISI License) for Foreign Manufacture
             </p>
           </Link>
 
 
-          <Link to="/services/cdsco-registration-certification" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/cdsco-registration-certification" className="relative col-span-1 h-[200px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
                 alt="CDSCO"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-sm md:text-xl w-full mt-16 md:mt-28 px-2 md:px-0 text-center font-roboto tracking-wide font-semibold text-black leading-tight">
               CDSCO Registration Certification
             </p>
           </Link>
 
-          <Link to="/services/crs-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/crs-registration" className="relative col-span-1 h-[200px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
                 alt="BISCRS"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-sm md:text-xl w-full mt-16 md:mt-28 px-2 md:px-0 text-center font-roboto tracking-wide font-semibold text-black leading-tight">
               BIS (CRS) Registration
             </p>
           </Link>
 
-          <Link to="/services/plastic-waste" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/plastic-waste" className="relative col-span-1 h-[200px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
                 alt="PlasticWasteManagement"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-sm md:text-xl w-full mt-16 md:mt-28 px-2 md:px-0 text-center font-roboto tracking-wide font-semibold text-black leading-tight">
               Plastic Waste Management
             </p>
           </Link>
 
-          <Link to="/services/epr-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/epr-registration" className="relative col-span-1 h-[200px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={EPRCertificate}
                 alt="EPRCertificate"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-sm md:text-xl w-full mt-16 md:mt-28 px-2 md:px-0 text-center font-roboto tracking-wide font-semibold text-black leading-tight">
               EPR Certificate certifications
             </p>
           </Link>
 
-          <Link to="/services/lmpc-registration" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/lmpc-registration" className="relative col-span-1 h-[200px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
                 alt="LMPC"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-sm md:text-xl w-full mt-16 md:mt-28 px-2 md:px-0 text-center font-roboto tracking-wide font-semibold text-black leading-tight">
               LMPC Certificate certifications
             </p>
           </Link>
 
-          <Link to="/services/bis-certification" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/bis-certification" className="relative col-span-1 h-[200px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
                 alt="BIS"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-sm md:text-xl w-full mt-16 md:mt-28 px-2 md:px-0 text-center font-roboto tracking-wide font-semibold text-black leading-tight">
               BIS Registration Certificate
             </p>
           </Link>
 
-          <Link to="/services/isi-mark-indian" className="relative col-span-1 h-[240px] bg-[#B5DDEB] rounded-[20px] shadow-2xl shadow-blue-500/20">
+          <Link to="/services/isi-mark-indian" className="relative col-span-1 h-[200px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20">
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMark}
                 alt="ISIMark"
-                className="w-[130px] h-[130px] rounded-full object-contain"
+                className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
+            <p className="text-sm md:text-xl w-full mt-16 md:mt-28 px-2 md:px-0 text-center font-roboto tracking-wide font-semibold text-black leading-tight">
               ISI MARK (BIS) for Indian Manufactures
             </p>
           </Link>
