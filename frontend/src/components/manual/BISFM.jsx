@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
-import ISIMARKImage from "../../assets/servicesImages/ISIMARK.png"
+import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg"
 import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
 
 import {
