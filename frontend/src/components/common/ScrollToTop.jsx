@@ -8,7 +8,16 @@ export const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Use setTimeout to ensure DOM is fully rendered before scrolling
+    const timer = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant' // Use instant for immediate scroll on route change
+      });
+    }, 0);
+
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   return null;

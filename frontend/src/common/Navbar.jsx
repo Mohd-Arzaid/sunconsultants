@@ -4,6 +4,7 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
+  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
@@ -310,12 +311,14 @@ const Navbar = () => {
                 <NavigationMenuContent>
                   <div className="grid grid-cols-3 gap-2 w-[700px] p-6">
                     {categories.map((category, index) => (
-                      <a key={index} href={category.link} className="block">
-                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors  block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                          {category.icon}
-                          {category.name}
-                        </div>
-                      </a>
+                      <NavigationMenuLink key={index} asChild>
+                        <Link to={category.link} className="block">
+                          <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors  block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                            {category.icon}
+                            {category.name}
+                          </div>
+                        </Link>
+                      </NavigationMenuLink>
                     ))}
                   </div>
                 </NavigationMenuContent>
@@ -331,25 +334,31 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
-                    <a href="/latest-notifications" className="block">
-                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <BookText className="w-4 h-4 mr-2" />
-                        Latest Notifications
-                      </div>
-                    </a>
-                    <a href="/ministry-updates" className="block">
-                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <FileWarning className="w-4 h-4 mr-2" />
-                        Ministry Updates
-                      </div>
-                    </a>
+                    <NavigationMenuLink asChild>
+                      <Link to="/latest-notifications" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <BookText className="w-4 h-4 mr-2" />
+                          Latest Notifications
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/ministry-updates" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <FileWarning className="w-4 h-4 mr-2" />
+                          Ministry Updates
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
 
-                    <a href="/webinar" className="block">
-                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <Presentation className="w-4 h-4 mr-2" />
-                        Upcoming Webinars
-                      </div>
-                    </a>
+                    <NavigationMenuLink asChild>
+                      <Link to="/webinar" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <Presentation className="w-4 h-4 mr-2" />
+                          Upcoming Webinars
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -364,18 +373,22 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
-                    <a href="/international-audits" className="block">
-                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <FileCheck className="w-4 h-4 mr-2" />
-                        International Audits
-                      </div>
-                    </a>
-                    <a href="/seminars-and-exhibitions" className="block">
-                      <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
-                        <GalleryHorizontal className="w-4 h-4 mr-2" />
-                        Seminars/Exhibitions
-                      </div>
-                    </a>
+                    <NavigationMenuLink asChild>
+                      <Link to="/international-audits" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <FileCheck className="w-4 h-4 mr-2" />
+                          International Audits
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/seminars-and-exhibitions" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <GalleryHorizontal className="w-4 h-4 mr-2" />
+                          Seminars/Exhibitions
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
