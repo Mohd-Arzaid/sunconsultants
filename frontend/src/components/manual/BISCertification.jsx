@@ -1675,7 +1675,7 @@ const TypesSection = () => {
         it meets national regulatory norms and is safe for use. This contributes
         significantly to consumer confidence and brand reputation. The ISI mark
         also helps regulatory bodies enforce quality control across industries.
-        Whether you’re applying for a new BIS certification or renewing a BIS
+        Whether you're applying for a new BIS certification or renewing a BIS
         licence, ensuring that your product qualifies for the ISI mark is
         crucial. For any business aiming to operate successfully in India,
         compliance with Indian BIS standards and use of the ISI mark is
@@ -1754,7 +1754,7 @@ const TypesSection = () => {
         and exporters. By holding a valid BIS licence, businesses demonstrate
         their commitment to fair trade practices. Whether you're a small jeweler
         or a large manufacturer, securing a BIS certificate through hallmarking
-        is essential for legal compliance and consumer satisfaction in India’s
+        is essential for legal compliance and consumer satisfaction in India's
         precious metals market.
       </p>
 

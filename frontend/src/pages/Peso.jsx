@@ -66,7 +66,18 @@ const PESOHero = () => {
           </p>
 
           <div className="flex items-center -mt-2">
-            <div className="flex items-center cursor-pointer group">
+            <div
+              className="flex items-center cursor-pointer group"
+              onClick={() => {
+                const servicesSection = document.getElementById("services");
+                if (servicesSection) {
+                  servicesSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              }}
+            >
               <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3">
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
@@ -285,7 +296,9 @@ const PESOContent = () => {
           <ServiceContentRight />
         </div>
       </div>
-      <Services />
+      <div id="services">
+        <Services />
+      </div>
       <ServiceFaq />
     </div>
   );
