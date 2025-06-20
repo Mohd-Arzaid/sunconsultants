@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
-import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg"
+import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg";
 import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
 
 import {
@@ -27,7 +27,6 @@ import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
 import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
-
 
 export const BISFM = () => {
   return (
@@ -232,11 +231,11 @@ const BISFMHero = () => {
             <div
               className="flex items-center cursor-pointer group"
               onClick={() => {
-                const servicesSection = document.getElementById('services');
+                const servicesSection = document.getElementById("services");
                 if (servicesSection) {
                   servicesSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                    behavior: "smooth",
+                    block: "start",
                   });
                 }
               }}
@@ -380,8 +379,9 @@ export const BISFMIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -431,10 +431,11 @@ export const BISFMIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -454,18 +455,20 @@ export const BISFMIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -486,15 +489,14 @@ const BISFMContent = () => {
           <ServiceContentRight />
         </div>
       </div>
-      <div id="services">
-        <Services />
-      </div>
-      {/* <BISCProductTable /> */}
+      <ServiceFaq />
       <div id="product-table">
         <BISFMProductTable />
       </div>
 
-      <ServiceFaq />
+      <div id="services">
+        <Services />
+      </div>
     </section>
   );
 };
@@ -1044,7 +1046,6 @@ const StandardizationSection = () => {
         src={ISIMARKImage}
         alt="ISI Mark"
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
-
       />
 
       <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -1166,11 +1167,11 @@ const StandardizationSection = () => {
         <span
           className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
           onClick={() => {
-            const productTable = document.getElementById('product-table');
+            const productTable = document.getElementById("product-table");
             if (productTable) {
               productTable.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+                behavior: "smooth",
+                block: "start",
               });
             }
           }}
@@ -1361,11 +1362,11 @@ const StandardizationSection = () => {
         <span
           className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
           onClick={() => {
-            const productTable = document.getElementById('product-table');
+            const productTable = document.getElementById("product-table");
             if (productTable) {
               productTable.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+                behavior: "smooth",
+                block: "start",
               });
             }
           }}
@@ -2235,5 +2236,5 @@ const PointsListTwo = ({ points, heading }) => {
 
 PointsListTwo.propTypes = {
   points: PropTypes.arrayOf(PropTypes.string).isRequired,
-  heading: PropTypes.string
+  heading: PropTypes.string,
 };
