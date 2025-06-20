@@ -36,7 +36,7 @@ import Exhibition from "./pages/Exhibition";
 import SchemeX from "./pages/SchemeX";
 import Sitemap from "./pages/Sitemap";
 import { useState } from "react";
-import TableTesting from "./pages/TableTesting";
+// import TableTesting from "./pages/TableTesting";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -49,7 +49,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/table" element={<TableTesting />} />
+        {/* <Route path="/table" element={<TableTesting />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/latest-notifications" element={<Notification />} />

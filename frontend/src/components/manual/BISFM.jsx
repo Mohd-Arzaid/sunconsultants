@@ -27,6 +27,7 @@ import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "./BISCertification";
 import Services from "./Services";
+import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
 
 
 export const BISFM = () => {
@@ -489,7 +490,9 @@ const BISFMContent = () => {
       <div id="services">
         <Services />
       </div>
-      <BISCProductTable />
+      {/* <BISCProductTable /> */}
+      <BISFMProductTable />
+
 
       <ServiceFaq />
     </section>

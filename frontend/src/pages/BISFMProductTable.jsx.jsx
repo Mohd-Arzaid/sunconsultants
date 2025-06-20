@@ -8709,7 +8709,7 @@ const productTableData = [
   },
 ];
 
-const TableTesting = () => {
+const BISFMProductTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [entriesPerPage, setEntriesPerPage] = useState(5);
   const [searchTerm, setSearchTerm] = useState("");
@@ -8857,7 +8857,7 @@ const TableTesting = () => {
       : Math.min(currentPage * entriesPerPage, totalEntries);
 
   return (
-    <div className="max-w-[88rem] mx-auto px-4 md:px-12 py-10">
+    <div className="max-w-[88rem] mx-auto px-4 md:px-12 py-6">
       {/* Search and Entries Per Page Controls */}
       <div className="flex flex-col md:flex-row gap-4 mb-6">
         {/* Search Bar */}
@@ -9166,4 +9166,4 @@ const TableTesting = () => {
   );
 };
 
-export default TableTesting;
+export default BISFMProductTable;
