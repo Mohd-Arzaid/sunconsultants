@@ -3673,36 +3673,37 @@ const productTableData = [
     isNumber: "IS/ISO 6742-2:2015",
     product: "Retro-reflective Devices",
     notification: {
-      title: "91. Bicycles- Retro Reflective Devices (Quality Control) Order, 2020",
+      title:
+        "91. Bicycles- Retro Reflective Devices (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/07/QCO-CoC-Bycycle-DPIIT.pdf",
       linkText: "(S.O. 2290(E) dated 07/07/2020)",
       additionalLinks: [
         {
           text: "Superseded by Bicycles- Retro Reflective Devices (Quality Control) Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Bicycles-Retro-Reflective-Devices-Quality-Control-Order-2021.pdf",
-          linkText: "(S.O. 2028 (E) dated 25.05.2021)"
+          linkText: "(S.O. 2028 (E) dated 25.05.2021)",
         },
         {
           text: "Bicycles- Retro Reflective Devices (Quality Control) Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/12/Bicycle.pdf",
-          linkText: "(S.O. 5400(E), dated 24 December 2021)"
+          linkText: "(S.O. 5400(E), dated 24 December 2021)",
         },
         {
           text: "Bicycles- Retro-Reflective Devices (Quality Control) Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/03/Extension-of-DOI-of-Bicycles-Retro-Reflective-Devices-Quality-Control-Order-2021.pdf",
-          linkText: "(S.O. 882(E), dated 23 February 2023)"
+          linkText: "(S.O. 882(E), dated 23 February 2023)",
         },
         {
           text: "Corrigendum for Bicycles Retro-Reflective Devices (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Corrigndum-for-Bicycyle-reflector-27032023.pdf",
-          linkText: "(S.O. 1441(E), dated 27 March 2023)"
+          linkText: "(S.O. 1441(E), dated 27 March 2023)",
         },
         {
           text: "Bicycles- Retro Reflective Devices (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Bicycles-Retro-Reflective-Devices-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 4569(E), dated 18th October 2024"
-        }
-      ]
+          linkText: "S.O. 4569(E), dated 18th October 2024",
+        },
+      ],
     },
   },
   {
@@ -3722,38 +3723,44 @@ const productTableData = [
     isNumber: "IS 2052 : 2009",
     product: "Compounded Feeds for Cattle",
     notification: {
-      title: "93. FSSAI Direction vide File No. 1-95/Std/Misc/SP(LC&A)/FSSAI-2015-Pt-1c dated 27.01.2020",
+      title:
+        "93. FSSAI Direction vide File No. 1-95/Std/Misc/SP(LC&A)/FSSAI-2015-Pt-1c dated 27.01.2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/07/Direction_Meat_Milk_Feed_27_01_2020.pdf",
-      linkText: "FSSAI Direction vide File No. 1-95/Std/Misc/SP(LC&A)/FSSAI-2015-Pt-1c dated 27.01.2020",
+      linkText:
+        "FSSAI Direction vide File No. 1-95/Std/Misc/SP(LC&A)/FSSAI-2015-Pt-1c dated 27.01.2020",
       additionalLinks: [
         {
           text: "Corrigendum dated 30.01.2020",
           link: "https://www.bis.gov.in/wp-content/uploads/2020/07/Corrigendum_Direction_Meat_Milk_Feed_30_01_2020.pdf",
-          linkText: "Corrigendum dated 30.01.2020"
+          linkText: "Corrigendum dated 30.01.2020",
         },
         {
           text: "Extension of timeline for compliance with the direction dated 27th January, 2020",
           link: "https://www.bis.gov.in/wp-content/uploads/2020/07/Extension_TimeLine_Feeds_24_07_20202-1.pdf",
-          linkText: "Extension of timeline for compliance with the direction dated 27th January, 2020"
+          linkText:
+            "Extension of timeline for compliance with the direction dated 27th January, 2020",
         },
         {
           text: "Extension of timeline for compliance with the direction dated 01 January, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/01/Extension-of-time-line-for-compliance-dated-01.01.2021.pdf",
-          linkText: "Extension of timeline for compliance with the direction dated 01 January, 2021"
+          linkText:
+            "Extension of timeline for compliance with the direction dated 01 January, 2021",
         },
         {
           text: "Extension of timeline for compliance with the direction dated 27th Jan. 2020 issued under 16 (5) of Food Safety and Standards Act, 2006",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/08/Extension-of-timeline-for-compliance-with-the-direction-dated-27th-Jan.-2020-issued-under-16-5-of-Food-Safety-and-Standards-Act-2006.pdf",
-          linkText: "Extension of timeline for compliance with the direction dated 27th Jan. 2020 issued under 16 (5) of Food Safety and Standards Act, 2006"
-        }
-      ]
+          linkText:
+            "Extension of timeline for compliance with the direction dated 27th Jan. 2020 issued under 16 (5) of Food Safety and Standards Act, 2006",
+        },
+      ],
     },
   },
   {
     id: 324,
     sno: 324,
     isNumber: "IS: 16192 (Part 1)",
-    product: "Automotive Vehicles Wheel Rims for Two and Three Wheeled Vehicles Part 1 Light Alloy Wheel Rims Method of Tests and Requirements",
+    product:
+      "Automotive Vehicles Wheel Rims for Two and Three Wheeled Vehicles Part 1 Light Alloy Wheel Rims Method of Tests and Requirements",
     notification: {
       title: "94. Automobile Wheel Rim Component (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/09/Wheel-Rim-QCO.pdf",
@@ -3762,36 +3769,38 @@ const productTableData = [
         {
           text: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Automobile-Wheel-Rim-Component-Quality-Control-Amendment-Order-2021.pdf",
-          linkText: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021"
+          linkText:
+            "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Second Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/12/Automobile-Wheel-Rim-Component-Quality-Control-Order-2020.pdf",
-          linkText: "(S.O. 4493(E), dated 22 October 2021)"
+          linkText: "(S.O. 4493(E), dated 22 October 2021)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Whell-rim-QCO-amendment-2022.pdf",
-          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)"
+          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/06/246575.pdf",
-          linkText: "(S.O. 2657 (E), dated 15th June 2023)"
+          linkText: "(S.O. 2657 (E), dated 15th June 2023)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order- II, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Automobile-Wheel-Rim-Component.pdf",
-          linkText: "(S.O. 5379(E), dated 19th December, 2023)"
-        }
-      ]
+          linkText: "(S.O. 5379(E), dated 19th December, 2023)",
+        },
+      ],
     },
   },
   {
     id: 325,
     sno: 325,
     isNumber: "IS: 16192 (Part 2)",
-    product: "Automotive Vehicles Wheel Rims for Two and Three Wheeled Vehicles Part 2 Sheet Metal Wheel Rims Method of Tests and Requirements",
+    product:
+      "Automotive Vehicles Wheel Rims for Two and Three Wheeled Vehicles Part 2 Sheet Metal Wheel Rims Method of Tests and Requirements",
     notification: {
       title: "94. Automobile Wheel Rim Component (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/09/Wheel-Rim-QCO.pdf",
@@ -3800,36 +3809,38 @@ const productTableData = [
         {
           text: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Automobile-Wheel-Rim-Component-Quality-Control-Amendment-Order-2021.pdf",
-          linkText: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021"
+          linkText:
+            "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Second Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/12/Automobile-Wheel-Rim-Component-Quality-Control-Order-2020.pdf",
-          linkText: "(S.O. 4493(E), dated 22 October 2021)"
+          linkText: "(S.O. 4493(E), dated 22 October 2021)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Whell-rim-QCO-amendment-2022.pdf",
-          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)"
+          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/06/246575.pdf",
-          linkText: "(S.O. 2657 (E), dated 15th June 2023)"
+          linkText: "(S.O. 2657 (E), dated 15th June 2023)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order- II, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Automobile-Wheel-Rim-Component.pdf",
-          linkText: "(S.O. 5379(E), dated 19th December, 2023)"
-        }
-      ]
+          linkText: "(S.O. 5379(E), dated 19th December, 2023)",
+        },
+      ],
     },
   },
   {
     id: 326,
     sno: 326,
     isNumber: "IS: 16192 (Part 3)",
-    product: "Automotive Vehicles Wheel Rims for Two and Three Wheeled Vehicles Part 3 Spoke Wheel Rims Method of Tests and Requirements",
+    product:
+      "Automotive Vehicles Wheel Rims for Two and Three Wheeled Vehicles Part 3 Spoke Wheel Rims Method of Tests and Requirements",
     notification: {
       title: "94. Automobile Wheel Rim Component (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/09/Wheel-Rim-QCO.pdf",
@@ -3838,36 +3849,38 @@ const productTableData = [
         {
           text: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Automobile-Wheel-Rim-Component-Quality-Control-Amendment-Order-2021.pdf",
-          linkText: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021"
+          linkText:
+            "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Second Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/12/Automobile-Wheel-Rim-Component-Quality-Control-Order-2020.pdf",
-          linkText: "(S.O. 4493(E), dated 22 October 2021)"
+          linkText: "(S.O. 4493(E), dated 22 October 2021)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Whell-rim-QCO-amendment-2022.pdf",
-          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)"
+          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/06/246575.pdf",
-          linkText: "(S.O. 2657 (E), dated 15th June 2023)"
+          linkText: "(S.O. 2657 (E), dated 15th June 2023)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order- II, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Automobile-Wheel-Rim-Component.pdf",
-          linkText: "(S.O. 5379(E), dated 19th December, 2023)"
-        }
-      ]
+          linkText: "(S.O. 5379(E), dated 19th December, 2023)",
+        },
+      ],
     },
   },
   {
     id: 327,
     sno: 327,
     isNumber: "IS: 9436",
-    product: "Performance Requirements and Methods of Tests for Wheels for Passenger Cars",
+    product:
+      "Performance Requirements and Methods of Tests for Wheels for Passenger Cars",
     notification: {
       title: "94. Automobile Wheel Rim Component (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/09/Wheel-Rim-QCO.pdf",
@@ -3876,36 +3889,38 @@ const productTableData = [
         {
           text: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Automobile-Wheel-Rim-Component-Quality-Control-Amendment-Order-2021.pdf",
-          linkText: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021"
+          linkText:
+            "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Second Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/12/Automobile-Wheel-Rim-Component-Quality-Control-Order-2020.pdf",
-          linkText: "(S.O. 4493(E), dated 22 October 2021)"
+          linkText: "(S.O. 4493(E), dated 22 October 2021)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Whell-rim-QCO-amendment-2022.pdf",
-          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)"
+          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/06/246575.pdf",
-          linkText: "(S.O. 2657 (E), dated 15th June 2023)"
+          linkText: "(S.O. 2657 (E), dated 15th June 2023)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order- II, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Automobile-Wheel-Rim-Component.pdf",
-          linkText: "(S.O. 5379(E), dated 19th December, 2023)"
-        }
-      ]
+          linkText: "(S.O. 5379(E), dated 19th December, 2023)",
+        },
+      ],
     },
   },
   {
     id: 328,
     sno: 328,
     isNumber: "IS: 9438",
-    product: "Performance Requirements and Methods of Tests for Wheels or Rims for Trucks and Buses",
+    product:
+      "Performance Requirements and Methods of Tests for Wheels or Rims for Trucks and Buses",
     notification: {
       title: "94. Automobile Wheel Rim Component (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/09/Wheel-Rim-QCO.pdf",
@@ -3914,29 +3929,30 @@ const productTableData = [
         {
           text: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/06/Automobile-Wheel-Rim-Component-Quality-Control-Amendment-Order-2021.pdf",
-          linkText: "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021"
+          linkText:
+            "Superseded by Automobile Wheel Rim Component (Quality Control) Amendment Order,2021",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Second Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/12/Automobile-Wheel-Rim-Component-Quality-Control-Order-2020.pdf",
-          linkText: "(S.O. 4493(E), dated 22 October 2021)"
+          linkText: "(S.O. 4493(E), dated 22 October 2021)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Whell-rim-QCO-amendment-2022.pdf",
-          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)"
+          linkText: "(Amendment order S.O.2634(E), dated 8th June 2022)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/06/246575.pdf",
-          linkText: "(S.O. 2657 (E), dated 15th June 2023)"
+          linkText: "(S.O. 2657 (E), dated 15th June 2023)",
         },
         {
           text: "Automobile Wheel Rim Component (Quality Control) Amendment Order- II, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Automobile-Wheel-Rim-Component.pdf",
-          linkText: "(S.O. 5379(E), dated 19th December, 2023)"
-        }
-      ]
+          linkText: "(S.O. 5379(E), dated 19th December, 2023)",
+        },
+      ],
     },
   },
   {
@@ -3950,51 +3966,52 @@ const productTableData = [
     isNumber: "IS 5557: 2004",
     product: "Industrial and protective rubber knee and ankle boots",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
       additionalLinks: [
         {
           text: "Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Amendment Order, 2020",
           link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Footwear-made-from-all-Rubber-and-all-Polymeric-material-and-its-components-Quality-Control-Amendment-Order-2020.pdf",
-          linkText: "(S.O. 4378 (E) dated 04/12/2020)"
+          linkText: "(S.O. 4378 (E) dated 04/12/2020)",
         },
         {
           text: "Footwear made from all Rubber and all Polymeric material and its components (Quality Control) Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/07/Footwear-made-from-all-Rubber-and-all-Polymeric-material-and-its-components-Quality-Control-Amendment-Order-2021.pdf",
-          linkText: "(Quality Control) Amendment Order, 2021"
+          linkText: "(Quality Control) Amendment Order, 2021",
         },
         {
           text: "Rescind order for the Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Rescind-order-for-Footwear-made-from-all-Rubber-all-Polymeric-material-and-its-component-QCO-2020.pdf",
-          linkText: "(S.O. 2597(E), dated 3rd June 2022)"
+          linkText: "(S.O. 2597(E), dated 3rd June 2022)",
         },
         {
           text: "Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Leather-Footwear-QCO-2022.pdf",
-          linkText: "(S.O. 2600(E), dated 3rd June 2022)"
+          linkText: "(S.O. 2600(E), dated 3rd June 2022)",
         },
         {
           text: "Footwear Made from all Rubber and all Polymeric Material and its Components (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Footwear-made-from-all-rubber-and-all-Polymeric-material-Amend.-QCO-2022.pdf",
-          linkText: "S.O. 3880(E), dated 11 August 2022"
+          linkText: "S.O. 3880(E), dated 11 August 2022",
         },
         {
           text: "Footwear made from all Rubber and all Polymeric Material and its Components (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Gazette-Notification-.pdf",
-          linkText: "S.O.3893(E), dated 1st September, 2023"
+          linkText: "S.O.3893(E), dated 1st September, 2023",
         },
         {
           text: "Footwear made from All Rubber and all Polymeric Material and its Components (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Footwear-made-from-All-Rubber-and-all-Polymeric-Materials-and-its-Components-QCO-2024.pdf",
-          linkText: "S.O. 1422(E), dated 15th March 2024"
+          linkText: "S.O. 1422(E), dated 15th March 2024",
         },
         {
           text: "Footwear made from All Rubber and all Polymeric Material and its Components (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Footwear-made-from-All-Rubber-and-all-Polymeric-Material-and-its-QCO.pdf",
-          linkText: "S.O. 3701(E), dated 30th August 2024"
-        }
-      ]
+          linkText: "S.O. 3701(E), dated 30th August 2024",
+        },
+      ],
     },
   },
   {
@@ -4003,51 +4020,52 @@ const productTableData = [
     isNumber: "IS 5557 (Part 2): 2018",
     product: "All rubber gum boots and ankle boots",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
       additionalLinks: [
         {
           text: "Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Amendment Order, 2020",
           link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Footwear-made-from-all-Rubber-and-all-Polymeric-material-and-its-components-Quality-Control-Amendment-Order-2020.pdf",
-          linkText: "(S.O. 4378 (E) dated 04/12/2020)"
+          linkText: "(S.O. 4378 (E) dated 04/12/2020)",
         },
         {
           text: "Footwear made from all Rubber and all Polymeric material and its components (Quality Control) Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/07/Footwear-made-from-all-Rubber-and-all-Polymeric-material-and-its-components-Quality-Control-Amendment-Order-2021.pdf",
-          linkText: "(Quality Control) Amendment Order, 2021"
+          linkText: "(Quality Control) Amendment Order, 2021",
         },
         {
           text: "Rescind order for the Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Rescind-order-for-Footwear-made-from-all-Rubber-all-Polymeric-material-and-its-component-QCO-2020.pdf",
-          linkText: "(S.O. 2597(E), dated 3rd June 2022)"
+          linkText: "(S.O. 2597(E), dated 3rd June 2022)",
         },
         {
           text: "Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Leather-Footwear-QCO-2022.pdf",
-          linkText: "(S.O. 2600(E), dated 3rd June 2022)"
+          linkText: "(S.O. 2600(E), dated 3rd June 2022)",
         },
         {
           text: "Footwear Made from all Rubber and all Polymeric Material and its Components (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/11/Footwear-made-from-all-rubber-and-all-Polymeric-material-Amend.-QCO-2022.pdf",
-          linkText: "S.O. 3880(E), dated 11 August 2022"
+          linkText: "S.O. 3880(E), dated 11 August 2022",
         },
         {
           text: "Footwear made from all Rubber and all Polymeric Material and its Components (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Gazette-Notification-.pdf",
-          linkText: "S.O.3893(E), dated 1st September, 2023"
+          linkText: "S.O.3893(E), dated 1st September, 2023",
         },
         {
           text: "Footwear made from All Rubber and all Polymeric Material and its Components (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Footwear-made-from-All-Rubber-and-all-Polymeric-Materials-and-its-Components-QCO-2024.pdf",
-          linkText: "S.O. 1422(E), dated 15th March 2024"
+          linkText: "S.O. 1422(E), dated 15th March 2024",
         },
         {
           text: "Footwear made from All Rubber and all Polymeric Material and its Components (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Footwear-made-from-All-Rubber-and-all-Polymeric-Material-and-its-QCO.pdf",
-          linkText: "S.O. 3701(E), dated 30th August 2024"
-        }
-      ]
+          linkText: "S.O. 3701(E), dated 30th August 2024",
+        },
+      ],
     },
   },
   {
@@ -4056,31 +4074,32 @@ const productTableData = [
     isNumber: "IS 5676: 1995",
     product: "Moulded solid rubber soles and heels",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
       additionalLinks: [
         {
           text: "Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Amendment Order, 2020",
           link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Footwear-made-from-all-Rubber-and-all-Polymeric-material-and-its-components-Quality-Control-Amendment-Order-2020.pdf",
-          linkText: "(S.O. 4378 (E) dated 04/12/2020)"
+          linkText: "(S.O. 4378 (E) dated 04/12/2020)",
         },
         {
           text: "Footwear made from all Rubber and all Polymeric material and its components (Quality Control) Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/07/Footwear-made-from-all-Rubber-and-all-Polymeric-material-and-its-components-Quality-Control-Amendment-Order-2021.pdf",
-          linkText: "(Quality Control) Amendment Order, 2021"
+          linkText: "(Quality Control) Amendment Order, 2021",
         },
         {
           text: "Rescind order for the Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Rescind-order-for-Footwear-made-from-all-Rubber-all-Polymeric-material-and-its-component-QCO-2020.pdf",
-          linkText: "(S.O. 2597(E), dated 3rd June 2022)"
+          linkText: "(S.O. 2597(E), dated 3rd June 2022)",
         },
         {
           text: "Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/06/Leather-Footwear-QCO-2022.pdf",
-          linkText: "(S.O. 2600(E), dated 3rd June 2022)"
-        }
-      ]
+          linkText: "(S.O. 2600(E), dated 3rd June 2022)",
+        },
+      ],
     },
   },
   {
@@ -4089,7 +4108,8 @@ const productTableData = [
     isNumber: "IS 6664: 1992",
     product: "Rubber microcellular sheets for soles and heels",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4100,7 +4120,8 @@ const productTableData = [
     isNumber: "IS 6719: 1972",
     product: "Solid PVC soles and heels",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4111,7 +4132,8 @@ const productTableData = [
     isNumber: "IS 6721: 1972",
     product: "PVC sandal",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4122,7 +4144,8 @@ const productTableData = [
     isNumber: "IS 10702: 1992",
     product: "Rubber Hawai Chappal",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4133,7 +4156,8 @@ const productTableData = [
     isNumber: "IS 12254: 1993",
     product: "Polyvinyl chloride(PVC) industrial boots",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4144,7 +4168,8 @@ const productTableData = [
     isNumber: "IS 13893: 1994",
     product: "Polyurethane sole, semirigid",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4155,7 +4180,8 @@ const productTableData = [
     isNumber: "IS 13995: 1995",
     product: "Unlined moulded rubber boots",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4164,9 +4190,11 @@ const productTableData = [
     id: 339,
     sno: 339,
     isNumber: "IS 16645: 2018",
-    product: "Moulded plastics footwear- Lined or Unlined polyurethane boots for general industrial use",
+    product:
+      "Moulded plastics footwear- Lined or Unlined polyurethane boots for general industrial use",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4177,7 +4205,8 @@ const productTableData = [
     isNumber: "IS 16994: 2018",
     product: "Footwear for men and women for municipal scavenging work",
     notification: {
-      title: "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
+      title:
+        "95. Footwear made from all-Rubber and all Polymeric material and its components (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Footwear-QualityControlOrder-2020-29October2020.pdf",
       linkText: "(S.O. No. 3858 (E) 27/10/2020)",
     },
@@ -4186,7 +4215,8 @@ const productTableData = [
     id: 359,
     sno: 359,
     isNumber: "IS 4296 (Part 2):2016",
-    product: "Tools for Pressing Part 2 Punches with Cylindrical Head and Straight or Reduced Shank",
+    product:
+      "Tools for Pressing Part 2 Punches with Cylindrical Head and Straight or Reduced Shank",
     notification: {
       title: "98. Press Tool- Punches (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Punch-QCO.pdf",
@@ -4197,7 +4227,8 @@ const productTableData = [
     id: 360,
     sno: 360,
     isNumber: "IS 4296 (Part 3):2016",
-    product: "Tools for Pressing Part 3 Round Punches with 60 Degrees Conical Head and Reduced Shank",
+    product:
+      "Tools for Pressing Part 3 Round Punches with 60 Degrees Conical Head and Reduced Shank",
     notification: {
       title: "98. Press Tool- Punches (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/11/Punch-QCO.pdf",
@@ -4215,7 +4246,8 @@ const productTableData = [
     isNumber: "IS 4151: 2015",
     product: "Helmet for riders of Two Wheeler Motor Vehicles",
     notification: {
-      title: "99. Helmet for riders of Two Wheeler Motor Vehicles (Quality Control) Order, 2020",
+      title:
+        "99. Helmet for riders of Two Wheeler Motor Vehicles (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Helmet-for-riders-of-Two-Wheeler-Motor-Vehicles-Quality-Control-Order-2020.pdf",
       linkText: "(S.O. No. 4252 (E) 26/11/2020)",
     },
@@ -4229,7 +4261,8 @@ const productTableData = [
     id: 362,
     sno: 362,
     isNumber: "IS 17550 (Part 1): 2021",
-    product: "Household Refrigerating Appliances- Characteristics and Test Methods part-1 General Requirements",
+    product:
+      "Household Refrigerating Appliances- Characteristics and Test Methods part-1 General Requirements",
     notification: {
       title: "100. Refrigerating Appliances (Quality Control) Order, 2020",
       link: "https://www.bis.gov.in/wp-content/uploads/2020/12/Refrigerating-Appliances-Quality-Control-Order-2020.pdf",
@@ -4238,19 +4271,19 @@ const productTableData = [
         {
           text: "Refrigerating Appliances (Quality Control) Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/12/Refrigerating-Appliances-Quality-Control-Amendemnt-Order-2021.pdf",
-          linkText: "(S.O. 5339(E), dated 22 December 2021)"
+          linkText: "(S.O. 5339(E), dated 22 December 2021)",
         },
         {
           text: "Refrigerating Appliances (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/12/e-Gazette-notification.pdf",
-          linkText: "S.O. 5850(E), dated 14 December, 2022"
+          linkText: "S.O. 5850(E), dated 14 December, 2022",
         },
         {
           text: "Refrigerating Appliances (Quality Control) Amendment Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Refrigerating-Appliances-QCO-2025.pdf",
-          linkText: "S.O. 358(E), dated 21st January 2025"
-        }
-      ]
+          linkText: "S.O. 358(E), dated 21st January 2025",
+        },
+      ],
     },
   },
   {
@@ -4266,19 +4299,19 @@ const productTableData = [
         {
           text: "Refrigerating Appliances (Quality Control) Amendment Order, 2021",
           link: "https://www.bis.gov.in/wp-content/uploads/2021/12/Refrigerating-Appliances-Quality-Control-Amendemnt-Order-2021.pdf",
-          linkText: "(S.O. 5339(E), dated 22 December 2021)"
+          linkText: "(S.O. 5339(E), dated 22 December 2021)",
         },
         {
           text: "Refrigerating Appliances (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2022/12/e-Gazette-notification.pdf",
-          linkText: "S.O. 5850(E), dated 14 December, 2022"
+          linkText: "S.O. 5850(E), dated 14 December, 2022",
         },
         {
           text: "Refrigerating Appliances (Quality Control) Amendment Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Refrigerating-Appliances-QCO-2025.pdf",
-          linkText: "S.O. 358(E), dated 21st January 2025"
-        }
-      ]
+          linkText: "S.O. 358(E), dated 21st January 2025",
+        },
+      ],
     },
   },
   {
@@ -4290,9 +4323,11 @@ const productTableData = [
     id: 364,
     sno: 364,
     isNumber: "IS 1536: 2001",
-    product: "Centrifugally cast (Spun) iron pressure pipes for water, gas and sewage",
+    product:
+      "Centrifugally cast (Spun) iron pressure pipes for water, gas and sewage",
     notification: {
-      title: "101. Centrifugally Cast (Spun) Iron Pipes (Quality Control) Order, 2021",
+      title:
+        "101. Centrifugally Cast (Spun) Iron Pipes (Quality Control) Order, 2021",
       link: "https://www.bis.gov.in/wp-content/uploads/2021/01/Centrifugally-Cast-Spun-Iron-Pipes-Quality-Control-Order-2021.pdf",
       linkText: "(S.O. No. 116 (E) 12/01/2021)",
     },
@@ -4301,9 +4336,11 @@ const productTableData = [
     id: 365,
     sno: 365,
     isNumber: "IS 3989: 2009",
-    product: "Centrifugally cast (Spun) iron spigot and socket soil, waste, ventilating and rainwater pipes, fittings and accessories",
+    product:
+      "Centrifugally cast (Spun) iron spigot and socket soil, waste, ventilating and rainwater pipes, fittings and accessories",
     notification: {
-      title: "101. Centrifugally Cast (Spun) Iron Pipes (Quality Control) Order, 2021",
+      title:
+        "101. Centrifugally Cast (Spun) Iron Pipes (Quality Control) Order, 2021",
       link: "https://www.bis.gov.in/wp-content/uploads/2021/01/Centrifugally-Cast-Spun-Iron-Pipes-Quality-Control-Order-2021.pdf",
       linkText: "(S.O. No. 116 (E) 12/01/2021)",
     },
@@ -4312,9 +4349,11 @@ const productTableData = [
     id: 366,
     sno: 366,
     isNumber: "IS 15905: 2011",
-    product: "Hubless centrifugally cast (Spun) iron pipes, fittings and accessories – Spigot series",
+    product:
+      "Hubless centrifugally cast (Spun) iron pipes, fittings and accessories – Spigot series",
     notification: {
-      title: "101. Centrifugally Cast (Spun) Iron Pipes (Quality Control) Order, 2021",
+      title:
+        "101. Centrifugally Cast (Spun) Iron Pipes (Quality Control) Order, 2021",
       link: "https://www.bis.gov.in/wp-content/uploads/2021/01/Centrifugally-Cast-Spun-Iron-Pipes-Quality-Control-Order-2021.pdf",
       linkText: "(S.O. No. 116 (E) 12/01/2021)",
     },
@@ -4328,9 +4367,11 @@ const productTableData = [
     id: 367,
     sno: 367,
     isNumber: "IS 15769:2008",
-    product: "Flux Cored (Tubular) Electrodes for Gas Shielded and Self-Shielded Metal Welding of Carbon or Carbon- Manganese Steel",
+    product:
+      "Flux Cored (Tubular) Electrodes for Gas Shielded and Self-Shielded Metal Welding of Carbon or Carbon- Manganese Steel",
     notification: {
-      title: "102. Flux Cored (Tubular) Electrodes (Quality Control) Order, 2021",
+      title:
+        "102. Flux Cored (Tubular) Electrodes (Quality Control) Order, 2021",
       link: "https://www.bis.gov.in/wp-content/uploads/2021/03/Flux-Cored-Tubular-Electrodes-Quality-Control-Order-2021.pdf",
       linkText: "(S.O. No. 1203 (E) 12/03/2021)",
     },
@@ -4360,18 +4401,20 @@ const productTableData = [
     id: 369,
     sno: 369,
     isNumber: "IS 16240 : 2023",
-    product: "Reverse Osmosis Based Point of Use Water Treatment System for Drinking Purposes",
+    product:
+      "Reverse Osmosis Based Point of Use Water Treatment System for Drinking Purposes",
     notification: {
       title: "104. Environment (Protection) 115 Amendment Rules, 2021",
       link: "https://www.bis.gov.in/wp-content/uploads/2021/10/Environment-Protection-115-Amendment-Rules-2021.pdf",
-      linkText: "(Notification of water Purification system G.S.R.724(E) dated 04.10.2021)",
+      linkText:
+        "(Notification of water Purification system G.S.R.724(E) dated 04.10.2021)",
       additionalLinks: [
         {
           text: "Water Purification System (Regulation of USE) Rules, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Water-purification-System-Regulation-of-UseRules-2023-Amendment.pdf",
-          linkText: "G.S.R. 833(E), dated 10th November, 2023"
-        }
-      ]
+          linkText: "G.S.R. 833(E), dated 10th November, 2023",
+        },
+      ],
     },
   },
   {
@@ -4463,9 +4506,9 @@ const productTableData = [
         {
           text: "Viscose Staple Fibre (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/03/SO_443_VSF-QCO-Extension-order27012023.pdf",
-          linkText: "(S.O. 443(E), dated 27/01/2023)"
-        }
-      ]
+          linkText: "(S.O. 443(E), dated 27/01/2023)",
+        },
+      ],
     },
   },
   {
@@ -4477,7 +4520,8 @@ const productTableData = [
     id: 377,
     sno: 377,
     isNumber: "IS 15351 : 2015",
-    product: "Laminated High Density Polyethylene (HDPE) Woven Geomembrane for Water Proof Lining",
+    product:
+      "Laminated High Density Polyethylene (HDPE) Woven Geomembrane for Water Proof Lining",
     notification: {
       title: "107. Geo Textiles (Quality Control) Order, 2022",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Geo-textiles-QCO-1.pdf",
@@ -4486,14 +4530,14 @@ const productTableData = [
         {
           text: "Geo Textiles (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Geo-Textiles-Quality-ControlAmendment-Order-2023.pdf",
-          linkText: "(S.O. 2331(E), dated 24th May, 2023)"
+          linkText: "(S.O. 2331(E), dated 24th May, 2023)",
         },
         {
           text: "Ministry of Textiles Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Ministry-of-Textiles-Order-2023.pdf",
-          linkText: "No. 6/1/2021 - R&D (Pt.) , dated 06 October, 2023"
-        }
-      ]
+          linkText: "No. 6/1/2021 - R&D (Pt.) , dated 06 October, 2023",
+        },
+      ],
     },
   },
   {
@@ -4509,14 +4553,14 @@ const productTableData = [
         {
           text: "Geo Textiles (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Geo-Textiles-Quality-ControlAmendment-Order-2023.pdf",
-          linkText: "(S.O. 2331(E), dated 24th May, 2023)"
+          linkText: "(S.O. 2331(E), dated 24th May, 2023)",
         },
         {
           text: "Ministry of Textiles Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Ministry-of-Textiles-Order-2023.pdf",
-          linkText: "No. 6/1/2021 - R&D (Pt.) , dated 06 October, 2023"
-        }
-      ]
+          linkText: "No. 6/1/2021 - R&D (Pt.) , dated 06 October, 2023",
+        },
+      ],
     },
   },
   {
@@ -4600,7 +4644,8 @@ const productTableData = [
     id: 386,
     sno: 386,
     isNumber: "IS 16362 : 2020",
-    product: "Geotextiles used in Sub-grade Stabilisation in pavement structures",
+    product:
+      "Geotextiles used in Sub-grade Stabilisation in pavement structures",
     notification: {
       title: "107. Geo Textiles (Quality Control) Order, 2022",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Geo-textiles-QCO-1.pdf",
@@ -4655,7 +4700,8 @@ const productTableData = [
     id: 391,
     sno: 391,
     isNumber: "IS 17372:2020",
-    product: "Polymeric strip or geostrip used as soil reinforcement in retaining structures",
+    product:
+      "Polymeric strip or geostrip used as soil reinforcement in retaining structures",
     notification: {
       title: "107. Geo Textiles (Quality Control) Order, 2022",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Geo-textiles-QCO-1.pdf",
@@ -4677,7 +4723,8 @@ const productTableData = [
     id: 393,
     sno: 393,
     isNumber: "IS 17374:2020",
-    product: "Reinforced HDPE membrane for effluents and chemical resistance lining",
+    product:
+      "Reinforced HDPE membrane for effluents and chemical resistance lining",
     notification: {
       title: "107. Geo Textiles (Quality Control) Order, 2022",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Geo-textiles-QCO-1.pdf",
@@ -4710,7 +4757,8 @@ const productTableData = [
     id: 396,
     sno: 396,
     isNumber: "IS 17880 :2022",
-    product: "Geosynthetics — Synthetic Polymer RopeGabions for Coastal and Waterways Protection — Specification",
+    product:
+      "Geosynthetics — Synthetic Polymer RopeGabions for Coastal and Waterways Protection — Specification",
     notification: {
       title: "108. Geotextiles (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Geotextiles-QCO-2024-1.pdf",
@@ -4735,14 +4783,14 @@ const productTableData = [
         {
           text: "Protective Textiles (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Protective-Textiles-Quality-ControlAmendment-Order-2023.pdf",
-          linkText: "(S.O. 2332(E), 24th May, 2023)"
+          linkText: "(S.O. 2332(E), 24th May, 2023)",
         },
         {
           text: "Protective Textiles (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Protective-Textiles-QCO-amendment-2024.pdf",
-          linkText: "S.O. 3896(E), dated 12th September 2024"
-        }
-      ]
+          linkText: "S.O. 3896(E), dated 12th September 2024",
+        },
+      ],
     },
   },
   {
@@ -4758,14 +4806,14 @@ const productTableData = [
         {
           text: "Protective Textiles (Quality Control) Amendment Order, 2022",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Protective-Textiles-Quality-ControlAmendment-Order-2023.pdf",
-          linkText: "(S.O. 2332(E), 24th May, 2023)"
+          linkText: "(S.O. 2332(E), 24th May, 2023)",
         },
         {
           text: "Protective Textiles (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Protective-Textiles-QCO-amendment-2024.pdf",
-          linkText: "S.O. 3896(E), dated 12th September 2024"
-        }
-      ]
+          linkText: "S.O. 3896(E), dated 12th September 2024",
+        },
+      ],
     },
   },
   {
@@ -4794,7 +4842,8 @@ const productTableData = [
     id: 401,
     sno: 401,
     isNumber: "IS 15742 : 2007",
-    product: "Clothing made of limited flame spread materials and material assemblies affording protection against heat and flame",
+    product:
+      "Clothing made of limited flame spread materials and material assemblies affording protection against heat and flame",
     notification: {
       title: "109. Protective Textiles (Quality Control) Order, 2022",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Protective-textiles-QCO-1.pdf",
@@ -4838,7 +4887,8 @@ const productTableData = [
     id: 405,
     sno: 405,
     isNumber: "IS 16726 : 2018",
-    product: "Pouch for ammunition and grenades made of disruptive pattern nylon-66",
+    product:
+      "Pouch for ammunition and grenades made of disruptive pattern nylon-66",
     notification: {
       title: "109. Protective Textiles (Quality Control) Order, 2022",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/04/Protective-textiles-QCO-1.pdf",
@@ -4878,7 +4928,8 @@ const productTableData = [
     isNumber: "IS 15768 : 2008",
     product: "Upholstered composites used for non-domestic furniture",
     notification: {
-      title: "110. Protective Textiles Quality Control (Upholstered Composites used for Non-Domestic Furniture) Order, 2024",
+      title:
+        "110. Protective Textiles Quality Control (Upholstered Composites used for Non-Domestic Furniture) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Protextive-Textiles-QC-upholstered-Composites-used-fror-non-domestic-Furniture-Order-2024.pdf",
       linkText: "S.O. 3916(E), dated 12th September 2024",
     },
@@ -4901,9 +4952,9 @@ const productTableData = [
         {
           text: "Flame- Producing Lighters (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Flame-Producing-Lighters-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 4230(E), dated 24th September 2024"
-        }
-      ]
+          linkText: "S.O. 4230(E), dated 24th September 2024",
+        },
+      ],
     },
   },
   {
@@ -4919,9 +4970,9 @@ const productTableData = [
         {
           text: "Flame- Producing Lighters (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Flame-Producing-Lighters-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 4230(E), dated 24th September 2024"
-        }
-      ]
+          linkText: "S.O. 4230(E), dated 24th September 2024",
+        },
+      ],
     },
   },
   {
@@ -4942,14 +4993,14 @@ const productTableData = [
         {
           text: "Potable Water Bottles (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Potable-Water-Bottles-Quality-ControlOrder-2024.pdf",
-          linkText: "S.O. 1071(E), dated 05th March 2024"
+          linkText: "S.O. 1071(E), dated 05th March 2024",
         },
         {
           text: "Potable Water Bottles (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Potable-Water-Bottles-QCO.pdf",
-          linkText: "S.O. 3702(E), dated 29th August 2024"
-        }
-      ]
+          linkText: "S.O. 3702(E), dated 29th August 2024",
+        },
+      ],
     },
   },
   {
@@ -4961,7 +5012,8 @@ const productTableData = [
     id: 412,
     sno: 412,
     isNumber: "IS 814 : 2004",
-    product: "Covered electrodes for manual metal arc welding of carbon and carbon manganese steel",
+    product:
+      "Covered electrodes for manual metal arc welding of carbon and carbon manganese steel",
     notification: {
       title: "113. Welding Rods and Electrodes (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Welding-Rod-Electrode-QCO.pdf",
@@ -4972,7 +5024,8 @@ const productTableData = [
     id: 413,
     sno: 413,
     isNumber: "IS 6419 : 1996",
-    product: "Welding rode and bare electrodes for gas shielded arc welding of structural steel",
+    product:
+      "Welding rode and bare electrodes for gas shielded arc welding of structural steel",
     notification: {
       title: "113. Welding Rods and Electrodes (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Welding-Rod-Electrode-QCO.pdf",
@@ -4999,7 +5052,8 @@ const productTableData = [
     id: 415,
     sno: 415,
     isNumber: "IS 16444 Part 2",
-    product: "A.C. Static Transformer Operated Watt Hour and Var-Hour Smart Meters, Class 0.2S, 0.5S and 1.0S",
+    product:
+      "A.C. Static Transformer Operated Watt Hour and Var-Hour Smart Meters, Class 0.2S, 0.5S and 1.0S",
     notification: {
       title: "114. Smart Meters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Smart-Meter-QCO.pdf",
@@ -5017,21 +5071,22 @@ const productTableData = [
     isNumber: "IS 17790 : 2022",
     product: "Insulated Flask for Domestic Use",
     notification: {
-      title: "115. Insulated Flask, Bottles and Containers for Domestic Use (Quality Control) Order, 2023",
+      title:
+        "115. Insulated Flask, Bottles and Containers for Domestic Use (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Insulated-Flask-Botles-and-Containers-for-Domestic-Use-QCO-2023.pdf",
       linkText: "S.O. 3140(E), dated 14th July 2023",
       additionalLinks: [
         {
           text: "Insulated Flask, Bottles and Containers for Domestic Use (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Insulated-Flask-Bottles-and-Containers-for-Domestic-Use-QCO.pdf",
-          linkText: "S.O. 1072(E), dated 05th March 2024"
+          linkText: "S.O. 1072(E), dated 05th March 2024",
         },
         {
           text: "Insulated Flask, Bottles and Containers for Domestic Use (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Insulated-Flask-Bottles-and-Containers-for-Domestic-Use-QCO-29.pdf",
-          linkText: "S.O. 3705(E), dated 29th August 2024"
-        }
-      ]
+          linkText: "S.O. 3705(E), dated 29th August 2024",
+        },
+      ],
     },
   },
   {
@@ -5040,7 +5095,8 @@ const productTableData = [
     isNumber: "IS 17526 : 2021",
     product: "Domestic Stainless steel vacuum flask/bottle",
     notification: {
-      title: "115. Insulated Flask, Bottles and Containers for Domestic Use (Quality Control) Order, 2023",
+      title:
+        "115. Insulated Flask, Bottles and Containers for Domestic Use (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Insulated-Flask-Botles-and-Containers-for-Domestic-Use-QCO-2023.pdf",
       linkText: "S.O. 3140(E), dated 14th July 2023",
     },
@@ -5051,7 +5107,8 @@ const productTableData = [
     isNumber: "IS 17569: 2021",
     product: "Insulated Container for Food Storage",
     notification: {
-      title: "115. Insulated Flask, Bottles and Containers for Domestic Use (Quality Control) Order, 2023",
+      title:
+        "115. Insulated Flask, Bottles and Containers for Domestic Use (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Insulated-Flask-Botles-and-Containers-for-Domestic-Use-QCO-2023.pdf",
       linkText: "S.O. 3140(E), dated 14th July 2023",
     },
@@ -5060,27 +5117,31 @@ const productTableData = [
     id: 419,
     sno: 419,
     isNumber: "IS 3513 (Part 1) : 1989",
-    product: "Resin treated compressed wood laminates (compregs) - For electrical purposes",
+    product:
+      "Resin treated compressed wood laminates (compregs) - For electrical purposes",
     notification: {
-      title: "116. Resin treated compressed wood laminates (Quality Control) Order, 2023",
+      title:
+        "116. Resin treated compressed wood laminates (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Resin-treated-compressed-wood-laminates-QCO-2023.pdf",
       linkText: "S.O. 3139(E), dated 14th July 2023",
       additionalLinks: [
         {
           text: "Resin Treated Compressed Wood Laminates (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Resin-Treated-Compressed-Wood-Laminates-QCO-2024.pdf",
-          linkText: "S.O. 1018(E), dated 29th February 2024"
-        }
-      ]
+          linkText: "S.O. 1018(E), dated 29th February 2024",
+        },
+      ],
     },
   },
   {
     id: 420,
     sno: 420,
     isNumber: "IS 3513 (Part 2) : 1989",
-    product: "Resin treated compressed wood laminates (compregs) - For chemical purposes",
+    product:
+      "Resin treated compressed wood laminates (compregs) - For chemical purposes",
     notification: {
-      title: "116. Resin treated compressed wood laminates (Quality Control) Order, 2023",
+      title:
+        "116. Resin treated compressed wood laminates (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Resin-treated-compressed-wood-laminates-QCO-2023.pdf",
       linkText: "S.O. 3139(E), dated 14th July 2023",
     },
@@ -5089,9 +5150,11 @@ const productTableData = [
     id: 421,
     sno: 421,
     isNumber: "IS 3513 (Part 3) : 1989",
-    product: "Resin treated compressed wood laminates (compregs) - For general purposes",
+    product:
+      "Resin treated compressed wood laminates (compregs) - For general purposes",
     notification: {
-      title: "116. Resin treated compressed wood laminates (Quality Control) Order, 2023",
+      title:
+        "116. Resin treated compressed wood laminates (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/Resin-treated-compressed-wood-laminates-QCO-2023.pdf",
       linkText: "S.O. 3139(E), dated 14th July 2023",
     },
@@ -5105,7 +5168,8 @@ const productTableData = [
     id: 422,
     sno: 422,
     isNumber: "IS 1363 (Part 1) :2019",
-    product: "Hexagon Head Bolts, Screws and Nuts of product Grade C Hexagon Head Bolts (Size Range M 5 to M 64)",
+    product:
+      "Hexagon Head Bolts, Screws and Nuts of product Grade C Hexagon Head Bolts (Size Range M 5 to M 64)",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5114,9 +5178,9 @@ const productTableData = [
         {
           text: "Bolts, Nuts and Fasteners (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Bolts-Nuts-and-Fateners-QCO-2024.pdf",
-          linkText: "S.O. 2771(E), dated 12th July 2024"
-        }
-      ]
+          linkText: "S.O. 2771(E), dated 12th July 2024",
+        },
+      ],
     },
   },
   {
@@ -5134,7 +5198,8 @@ const productTableData = [
     id: 424,
     sno: 424,
     isNumber: "IS 1363 (Part 3) :2018",
-    product: "Hexagon Head Bolts, Screws and Nuts of product Grade C - Hexagon Nuts (Size Range M5 to M64)",
+    product:
+      "Hexagon Head Bolts, Screws and Nuts of product Grade C - Hexagon Nuts (Size Range M5 to M64)",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5145,7 +5210,8 @@ const productTableData = [
     id: 425,
     sno: 425,
     isNumber: "IS 1364 (Part 1) :2018",
-    product: "Hexagon Head Bolts, Screws and Nuts of product Grades A and B - Hexagon Head Bolts (Size Range M 1.6 To M 64)",
+    product:
+      "Hexagon Head Bolts, Screws and Nuts of product Grades A and B - Hexagon Head Bolts (Size Range M 1.6 To M 64)",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5156,7 +5222,8 @@ const productTableData = [
     id: 426,
     sno: 426,
     isNumber: "IS 1364 (Part 2) :2018",
-    product: "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B - Hexagon Head Screws (Size Range M 1.6 to M 64)",
+    product:
+      "Hexagon Head Bolts, Screws and Nuts of Product Grades A and B - Hexagon Head Screws (Size Range M 1.6 to M 64)",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5189,7 +5256,8 @@ const productTableData = [
     id: 429,
     sno: 429,
     isNumber: "IS 10238:2001",
-    product: "Fasteners - Threaded Steel Fastener - Step Bolts for Steel Structures",
+    product:
+      "Fasteners - Threaded Steel Fastener - Step Bolts for Steel Structures",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5200,7 +5268,8 @@ const productTableData = [
     id: 430,
     sno: 430,
     isNumber: "IS 12427 : 2001",
-    product: "Fasteners - Threaded Steel Fasteners - Hexagon Head Transmission Tower Bolts",
+    product:
+      "Fasteners - Threaded Steel Fasteners - Hexagon Head Transmission Tower Bolts",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5244,7 +5313,8 @@ const productTableData = [
     id: 434,
     sno: 434,
     isNumber: "IS 15834 : 2022",
-    product: "Stainless Steel Sliding Door Bolts (Aldrops) for use With Padlocks",
+    product:
+      "Stainless Steel Sliding Door Bolts (Aldrops) for use With Padlocks",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5255,7 +5325,8 @@ const productTableData = [
     id: 435,
     sno: 435,
     isNumber: "IS 2681 : 1993",
-    product: "Non-ferrous metal sliding door bolts (aldrops) for use with padlocks",
+    product:
+      "Non-ferrous metal sliding door bolts (aldrops) for use with padlocks",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5288,7 +5359,8 @@ const productTableData = [
     id: 438,
     sno: 438,
     isNumber: "IS 1284 : 1975",
-    product: "Wrought Aluminium Alloy Bolt and Screw Stock for General Engineering purposes",
+    product:
+      "Wrought Aluminium Alloy Bolt and Screw Stock for General Engineering purposes",
     notification: {
       title: "117. Bolts, Nuts and Fasteners (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/07/The-Bolts-Nuts-Fastners-QCO-2023-1.pdf",
@@ -5335,19 +5407,19 @@ const productTableData = [
         {
           text: "Cookware, Utensils and Cans for foods and beverages (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Cookware-Utensils-and-cans-for-foods-and-beverages-QCO-2024.pdf",
-          linkText: "S.O. 1365(E), dated 14th March 2024"
+          linkText: "S.O. 1365(E), dated 14th March 2024",
         },
         {
           text: "Cookware, Utensils and Cans for Foods and Beverages (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Cookware-Utensils-and-cans-for-food-and-beverages-QCO-2024.pdf",
-          linkText: "S.O. 4494(E), dated 14th October 2024"
+          linkText: "S.O. 4494(E), dated 14th October 2024",
         },
         {
           text: "Cookware, Utensils and Cans for Foods and Beverages (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Cookware-Utensils-and-cans-for-food-and-beverages-QCO-2024-1.pdf",
-          linkText: "S.O. 4494(E), dated 14th October 2024"
-        }
-      ]
+          linkText: "S.O. 4494(E), dated 14th October 2024",
+        },
+      ],
     },
   },
   {
@@ -5405,7 +5477,8 @@ const productTableData = [
     isNumber: "IS 17153:2019",
     product: "Domestic Gas Stoves for use with Piped Natural Gas (PNG)",
     notification: {
-      title: "119. Domestic Gas Stoves for use with Piped Natural Gas (Quality Control) Order, 2023",
+      title:
+        "119. Domestic Gas Stoves for use with Piped Natural Gas (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/08/Domestic-Gas-Stoves-for-use-with-PNG-QCO-2023.pdf",
       linkText: "S.O. 3584(E), dated 9th August 2023",
     },
@@ -5471,16 +5544,17 @@ const productTableData = [
         {
           text: "Wood Based Products (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Extension-of-Wood-Based-Products-QCO.pdf",
-          linkText: "S.O. No. 1307(E), dated 12th March 2024"
-        }
-      ]
+          linkText: "S.O. No. 1307(E), dated 12th March 2024",
+        },
+      ],
     },
   },
   {
     id: 451,
     sno: 451,
     isNumber: "IS 12823:2015",
-    product: "Prelaminated particle boards from wood and other Lignocellulosic material",
+    product:
+      "Prelaminated particle boards from wood and other Lignocellulosic material",
     notification: {
       title: "122. Wood Based Boards (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/08/Wood-based-Board-QCO-2023.pdf",
@@ -5491,7 +5565,8 @@ const productTableData = [
     id: 452,
     sno: 452,
     isNumber: "IS 3087:2005",
-    product: "Particle boards of wood and other lignocellulosic materials (medium density) for general purpose",
+    product:
+      "Particle boards of wood and other lignocellulosic materials (medium density) for general purpose",
     notification: {
       title: "122. Wood Based Boards (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/08/Wood-based-Board-QCO-2023.pdf",
@@ -5538,16 +5613,17 @@ const productTableData = [
         {
           text: "Cast Iron Products (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/06/Cast-Iron-Products.pdf",
-          linkText: "S.O. 2287(E), dated 13th June 2024"
-        }
-      ]
+          linkText: "S.O. 2287(E), dated 13th June 2024",
+        },
+      ],
     },
   },
   {
     id: 456,
     sno: 456,
     isNumber: "IS 1729:2002",
-    product: "Cast iron/ductile iron drainage pipes and pipe fittings for over ground non-pressure pipelines socket and spigot series",
+    product:
+      "Cast iron/ductile iron drainage pipes and pipe fittings for over ground non-pressure pipelines socket and spigot series",
     notification: {
       title: "123. Cast Iron Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/08/Cast-Iron-Products-QCO-2023.pdf",
@@ -5607,9 +5683,11 @@ const productTableData = [
     id: 461,
     sno: 461,
     isNumber: "IS 17293:2020",
-    product: "Electric Cable for Photovoltic Systems for rated voltage 1500V DC",
+    product:
+      "Electric Cable for Photovoltic Systems for rated voltage 1500V DC",
     notification: {
-      title: "124. Solar DC Cable and Fire Survival Cable (Quality Control) Order, 2023",
+      title:
+        "124. Solar DC Cable and Fire Survival Cable (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/08/Solar-DC-Cable-and-Fire-Survival-Cable-QCO-2023.pdf",
       linkText: "S.O. 3807(E), dated 24th August 2023",
     },
@@ -5618,9 +5696,11 @@ const productTableData = [
     id: 462,
     sno: 462,
     isNumber: "IS 17505(Part 1): 2021",
-    product: "Thermosetting Insulated, Fire Survival Cables for working voltage upto and including 1100V AC and 1500V DC",
+    product:
+      "Thermosetting Insulated, Fire Survival Cables for working voltage upto and including 1100V AC and 1500V DC",
     notification: {
-      title: "124. Solar DC Cable and Fire Survival Cable (Quality Control) Order, 2023",
+      title:
+        "124. Solar DC Cable and Fire Survival Cable (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/08/Solar-DC-Cable-and-Fire-Survival-Cable-QCO-2023.pdf",
       linkText: "S.O. 3807(E), dated 24th August 2023",
     },
@@ -5634,32 +5714,36 @@ const productTableData = [
     id: 463,
     sno: 463,
     isNumber: "IS 617:1994",
-    product: "Cast aluminium and its alloys – Ingots and castings for general engineering purposes",
+    product:
+      "Cast aluminium and its alloys – Ingots and castings for general engineering purposes",
     notification: {
-      title: "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
+      title:
+        "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Aluminium-Aluminium-Alloy-QCO-2023.pdf",
       linkText: "S.O. 3846(E), dated 31st August 2023",
       additionalLinks: [
         {
           text: "Aluminium and Aluminium Alloys (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Aluminium-Amended-QCO-2023.pdf",
-          linkText: "(S.O. 5090(E), dated 30th November, 2023)"
+          linkText: "(S.O. 5090(E), dated 30th November, 2023)",
         },
         {
           text: "Aluminium and Aluminium Alloys (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Al-and-Al-Alloys-QCOAmendment2024.pdf",
-          linkText: "S.O. 1902(E), dated 03rd May 2024"
-        }
-      ]
+          linkText: "S.O. 1902(E), dated 03rd May 2024",
+        },
+      ],
     },
   },
   {
     id: 464,
     sno: 464,
     isNumber: "IS 11890 : 1987",
-    product: "High purity primary aluminum ingot for remelting for special applications",
+    product:
+      "High purity primary aluminum ingot for remelting for special applications",
     notification: {
-      title: "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
+      title:
+        "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Aluminium-Aluminium-Alloy-QCO-2023.pdf",
       linkText: "S.O. 3846(E), dated 31st August 2023",
     },
@@ -5668,9 +5752,11 @@ const productTableData = [
     id: 465,
     sno: 465,
     isNumber: "IS 6754:1972",
-    product: "Aluminum alloy ingots for remelting for general engineering purpose",
+    product:
+      "Aluminum alloy ingots for remelting for general engineering purpose",
     notification: {
-      title: "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
+      title:
+        "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Aluminium-Aluminium-Alloy-QCO-2023.pdf",
       linkText: "S.O. 3846(E), dated 31st August 2023",
     },
@@ -5679,9 +5765,11 @@ const productTableData = [
     id: 466,
     sno: 466,
     isNumber: "IS 2590 : 1987",
-    product: "Primary aluminium ingots for remelting for general engineering purpose",
+    product:
+      "Primary aluminium ingots for remelting for general engineering purpose",
     notification: {
-      title: "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
+      title:
+        "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Aluminium-Aluminium-Alloy-QCO-2023.pdf",
       linkText: "S.O. 3846(E), dated 31st August 2023",
     },
@@ -5692,7 +5780,8 @@ const productTableData = [
     isNumber: "IS 4026 : 2023",
     product: "Aluminum ingots billets and wire bars (EC GRADE)",
     notification: {
-      title: "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
+      title:
+        "125. Aluminium and Aluminium Alloys (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Aluminium-Aluminium-Alloy-QCO-2023.pdf",
       linkText: "S.O. 3846(E), dated 31st August 2023",
     },
@@ -5710,14 +5799,14 @@ const productTableData = [
         {
           text: "Copper (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Copper-Quality-Control-Amendment-Order-2023.pdf",
-          linkText: "(S.O. 4796(E), dated 3rd November, 2023)"
+          linkText: "(S.O. 4796(E), dated 3rd November, 2023)",
         },
         {
           text: "Copper (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Copper-QCOAmendment-2024.pdf",
-          linkText: "S.O. 1901(E), dated 03rd May 2024"
-        }
-      ]
+          linkText: "S.O. 1901(E), dated 03rd May 2024",
+        },
+      ],
     },
   },
   {
@@ -5733,14 +5822,14 @@ const productTableData = [
         {
           text: "Nickel (Quality Control) Amendment Order, 2023",
           link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Nickle-QCO-Amnd-Order-2023.pdf",
-          linkText: "(S.O. 5091(E), dated 30th November, 2023)"
+          linkText: "(S.O. 5091(E), dated 30th November, 2023)",
         },
         {
           text: "Nickel (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Nickel-QCO-Amendment2024.pdf",
-          linkText: "S.O. 1900(E), dated 03rd May 2024"
-        }
-      ]
+          linkText: "S.O. 1900(E), dated 03rd May 2024",
+        },
+      ],
     },
   },
   {
@@ -5754,25 +5843,28 @@ const productTableData = [
     isNumber: "IS 303 : 1989",
     product: "Plywood for general purposes",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
       additionalLinks: [
         {
           text: "Plywood and Wooden flush door shutters (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Plywood-and-Wooden-flush-door-shutters-QCO-2024.pdf",
-          linkText: "S.O. 1377(E), dated 15th March 2024"
-        }
-      ]
+          linkText: "S.O. 1377(E), dated 15th March 2024",
+        },
+      ],
     },
   },
   {
     id: 471,
     sno: 471,
     isNumber: "IS 2202 (Part 1) : 1999",
-    product: "Wooden flush door shutters (solid core type) – Plywood face panels",
+    product:
+      "Wooden flush door shutters (solid core type) – Plywood face panels",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5783,7 +5875,8 @@ const productTableData = [
     isNumber: "IS 710 : 2010",
     product: "Marine plywood",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5794,7 +5887,8 @@ const productTableData = [
     isNumber: "IS 5509 : 2021",
     product: "Fire retardant plywood",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5805,7 +5899,8 @@ const productTableData = [
     isNumber: "IS 1328 : 1996",
     product: "Veneered decorative plywood",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5814,9 +5909,11 @@ const productTableData = [
     id: 475,
     sno: 475,
     isNumber: "IS 2191 (Part 2): 2022",
-    product: "Wooden flush door shutters (cellular and hollow core type) – Particle board and hardboard face panels",
+    product:
+      "Wooden flush door shutters (cellular and hollow core type) – Particle board and hardboard face panels",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5825,9 +5922,11 @@ const productTableData = [
     id: 476,
     sno: 476,
     isNumber: "IS 2191 (Part 1): 2022",
-    product: "Wooden flush door shutters (cellular and hollow core type) – Plywood face panels",
+    product:
+      "Wooden flush door shutters (cellular and hollow core type) – Plywood face panels",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5836,9 +5935,11 @@ const productTableData = [
     id: 477,
     sno: 477,
     isNumber: "IS 2202 (Part 2): 2022",
-    product: "Wooden Flush Door Shutters (Solid core type) – Particle board, High Density Fibre Board, Medium Density Fibre Board and Fibre Hardboard Face Panels",
+    product:
+      "Wooden Flush Door Shutters (Solid core type) – Particle board, High Density Fibre Board, Medium Density Fibre Board and Fibre Hardboard Face Panels",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5849,7 +5950,8 @@ const productTableData = [
     isNumber: "IS 4990 : 2011",
     product: "Plywood for concrete shuttering works - Specification",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5860,7 +5962,8 @@ const productTableData = [
     isNumber: "IS 10701 : 2012",
     product: "Structural plywood - Specification",
     notification: {
-      title: "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
+      title:
+        "128. Plywood and Wooden flush door shutters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/09/Notified-Plywood-and-Wooden-flush-door-shutters-Quality-Control-Order-2023-in-e-Gazette.pdf",
       linkText: "S.O. 3841(E), dated 29th August 2023",
     },
@@ -5890,7 +5993,8 @@ const productTableData = [
     id: 481,
     sno: 481,
     isNumber: "IS 15155 : 2020",
-    product: "Bar or wire Wrapped Steel Cylinder Pipes with Mortar Lining and Coating Including Specials",
+    product:
+      "Bar or wire Wrapped Steel Cylinder Pipes with Mortar Lining and Coating Including Specials",
     notification: {
       title: "130. Miscellaneous Steel Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/QCO-for-Miscellaneous-Steel-Products.pdf",
@@ -5901,7 +6005,8 @@ const productTableData = [
     id: 482,
     sno: 482,
     isNumber: "IS 16651 : 2017",
-    product: "High Strength deformed stainless steel bars and wires for concrete reinforcement",
+    product:
+      "High Strength deformed stainless steel bars and wires for concrete reinforcement",
     notification: {
       title: "130. Miscellaneous Steel Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/QCO-for-Miscellaneous-Steel-Products.pdf",
@@ -5941,21 +6046,22 @@ const productTableData = [
     isNumber: "IS 7092 (Part 1):1992",
     product: "Aluminium alloy tubes for irrigation purposes -welded tubes",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
       additionalLinks: [
         {
           text: "Aluminum and Aluminum Alloy Products (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Aluminum-and-Aluminium-Products-QC-Amend-Order-2024.pdf",
-          linkText: "S.O. 1512(E), dated 22nd March 2024"
+          linkText: "S.O. 1512(E), dated 22nd March 2024",
         },
         {
           text: "Aluminium and Aluminium Alloy Products (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Al-and-Al-Alloys-QCO-2024.pdf",
-          linkText: "S.O. 4696(E), dated 28th October 2024"
-        }
-      ]
+          linkText: "S.O. 4696(E), dated 28th October 2024",
+        },
+      ],
     },
   },
   {
@@ -5964,7 +6070,8 @@ const productTableData = [
     isNumber: "IS 7092 (Part 2):1987",
     product: "Aluminium alloy tube for irrigation purposes - extruded tube",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -5973,9 +6080,11 @@ const productTableData = [
     id: 487,
     sno: 487,
     isNumber: "IS 5484:1997",
-    product: "EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
+    product:
+      "EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -5984,9 +6093,11 @@ const productTableData = [
     id: 488,
     sno: 488,
     isNumber: "IS 733:1983",
-    product: "Wrought aluminium and aluminium alloy bars, rods and sections (For General Engineering Purposes)",
+    product:
+      "Wrought aluminium and aluminium alloy bars, rods and sections (For General Engineering Purposes)",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -5995,9 +6106,11 @@ const productTableData = [
     id: 489,
     sno: 489,
     isNumber: "IS 734:1975",
-    product: "Wrought aluminium and aluminium alloys, forging stock and forgings for general engineering purposes",
+    product:
+      "Wrought aluminium and aluminium alloys, forging stock and forgings for general engineering purposes",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6006,9 +6119,11 @@ const productTableData = [
     id: 490,
     sno: 490,
     isNumber: "IS 736:1986",
-    product: "Wrought aluminium and aluminium alloy plate for general engineering purposes",
+    product:
+      "Wrought aluminium and aluminium alloy plate for general engineering purposes",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6017,9 +6132,11 @@ const productTableData = [
     id: 491,
     sno: 491,
     isNumber: "IS 737:2008",
-    product: "Wrought aluminium and aluminium alloy sheet and strip for general engineering purposes",
+    product:
+      "Wrought aluminium and aluminium alloy sheet and strip for general engineering purposes",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6028,9 +6145,11 @@ const productTableData = [
     id: 492,
     sno: 492,
     isNumber: "IS 739:1992",
-    product: "Wrought aluminium and aluminium alloy wire for general engineering purposes",
+    product:
+      "Wrought aluminium and aluminium alloy wire for general engineering purposes",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6039,9 +6158,11 @@ const productTableData = [
     id: 493,
     sno: 493,
     isNumber: "IS 740:1977",
-    product: "Wrought aluminium and aluminium alloy rivet stock for general engineering purposes",
+    product:
+      "Wrought aluminium and aluminium alloy rivet stock for general engineering purposes",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6050,9 +6171,11 @@ const productTableData = [
     id: 494,
     sno: 494,
     isNumber: "IS 5082:1998",
-    product: "Wrought aluminium and aluminium alloy bars, rods, tubes, sections, plates and sheets for electrical applications",
+    product:
+      "Wrought aluminium and aluminium alloy bars, rods, tubes, sections, plates and sheets for electrical applications",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6063,7 +6186,8 @@ const productTableData = [
     isNumber: "IS 16011:2012",
     product: "Aluminium and aluminium alloy foil for pharmaceutical packaging",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6074,7 +6198,8 @@ const productTableData = [
     isNumber: "IS 17682:2021",
     product: "Aluminium composite panel",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6083,9 +6208,11 @@ const productTableData = [
     id: 497,
     sno: 497,
     isNumber: "IS 1285:2002",
-    product: "Wrought aluminium  and aluminium alloys- Extruded round tube and hollow sections for general engineering purposes",
+    product:
+      "Wrought aluminium  and aluminium alloys- Extruded round tube and hollow sections for general engineering purposes",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6096,7 +6223,8 @@ const productTableData = [
     isNumber: "IS 2067:1975",
     product: "Wrought Aluminium Wire for Electrical Purposes",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6105,9 +6233,11 @@ const productTableData = [
     id: 499,
     sno: 499,
     isNumber: "IS 21:1992",
-    product: "Wrought aluminium and aluminium alloys for manufacture of utensils",
+    product:
+      "Wrought aluminium and aluminium alloys for manufacture of utensils",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6118,7 +6248,8 @@ const productTableData = [
     isNumber: "IS 1254:2007",
     product: "Corrugated Aluminium Sheet",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6127,9 +6258,11 @@ const productTableData = [
     id: 501,
     sno: 501,
     isNumber: "IS 7902:2001",
-    product: "Aluminium alloy forging stock and forgings (Alloy 24345) for aerospace applications",
+    product:
+      "Aluminium alloy forging stock and forgings (Alloy 24345) for aerospace applications",
     notification: {
-      title: "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
+      title:
+        "131. Aluminium and Aluminium Alloy Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Aluminum-and-Aluminum-alloy-products-QCO.pdf",
       linkText: "S.O. 4241(E), dated 25th September 2023",
     },
@@ -6137,24 +6270,27 @@ const productTableData = [
   {
     id: "precision-roller-bush-chains-section",
     isSectionHeader: true,
-    sectionTitle: "Precision Roller and Bush Chains, attachments and associated chain sprockets",
+    sectionTitle:
+      "Precision Roller and Bush Chains, attachments and associated chain sprockets",
   },
   {
     id: 502,
     sno: 502,
     isNumber: "IS 2403 :2014 / ISO 606 : 2004",
-    product: "Short – Pitch Transmission Precision Roller and Bush Chains, Attachments and Associated Chain Sprockets",
+    product:
+      "Short – Pitch Transmission Precision Roller and Bush Chains, Attachments and Associated Chain Sprockets",
     notification: {
-      title: "132. Precision Roller and Bush Chains, attachments and associated chain sprockets (Quality Control) Order, 2023",
+      title:
+        "132. Precision Roller and Bush Chains, attachments and associated chain sprockets (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Precision-Roller-and-Bush-Chains-attachments-QCO.pdf",
       linkText: "S.O. 4242(E), dated 25th September 2023",
       additionalLinks: [
         {
           text: "Precision Roller and Bush Chains, attachments and associated Chains sprockets (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/06/Precision-Roller-and-Bush-ChainsAttachments-and-Associated-Chains-Sprockets-QCO-2024.pdf",
-          linkText: "S.O. 2174(E), dated 03rd  June 2024"
-        }
-      ]
+          linkText: "S.O. 2174(E), dated 03rd  June 2024",
+        },
+      ],
     },
   },
   {
@@ -6166,18 +6302,20 @@ const productTableData = [
     id: 503,
     sno: 503,
     isNumber: "IS 1475 (Part 1) : 2001",
-    product: "Self- Contained Drinking Water Coolers – Energy Consumption and Performance",
+    product:
+      "Self- Contained Drinking Water Coolers – Energy Consumption and Performance",
     notification: {
-      title: "133. Self- Contained Drinking Water Coolers (Quality Control) Order, 2023",
+      title:
+        "133. Self- Contained Drinking Water Coolers (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Drinking-Water-Cooler-QCO.pdf",
       linkText: "S.O. 4243(E), dated 25th September 2023",
       additionalLinks: [
         {
           text: "Self-Contained Drinking Water Cooler (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Self-Contained-Drinking-Water-Cooler-QCO-2024.pdf",
-          linkText: "S.O. 2112(E), dated 24th  May 2024"
-        }
-      ]
+          linkText: "S.O. 2112(E), dated 24th  May 2024",
+        },
+      ],
     },
   },
   {
@@ -6198,19 +6336,19 @@ const productTableData = [
         {
           text: "Medical Textiles (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Medical-Textiles-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "(S.O. 830(E), dated 22nd  February, 2024)"
+          linkText: "(S.O. 830(E), dated 22nd  February, 2024)",
         },
         {
           text: "Medical Textiles (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Medical-Textiles-QCO-2024.pdf",
-          linkText: "S.O. 4634(E), dated 23rd October 2024"
+          linkText: "S.O. 4634(E), dated 23rd October 2024",
         },
         {
           text: "Medical Textiles (Quality Control) Amendment Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Medical-Textiles-Quality-Control-Amendment-Order-2025.pdf",
-          linkText: "S.O. 04(E), dated 02nd January 2025"
-        }
-      ]
+          linkText: "S.O. 04(E), dated 02nd January 2025",
+        },
+      ],
     },
   },
   {
@@ -6277,7 +6415,8 @@ const productTableData = [
     id: 510,
     sno: 510,
     isNumber: "IS 16718 : 2021",
-    product: "Polypropylene Spun Bonded Non—Woven Crop Cover and Fruit Skirting Bags for Agriculture and Horticulture Applications",
+    product:
+      "Polypropylene Spun Bonded Non—Woven Crop Cover and Fruit Skirting Bags for Agriculture and Horticulture Applications",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6286,9 +6425,9 @@ const productTableData = [
         {
           text: "Agro Textiles (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/04/Agro-Textiles.pdf",
-          linkText: "S.O. 1579(E), dated 28th  March 2024"
-        }
-      ]
+          linkText: "S.O. 1579(E), dated 28th  March 2024",
+        },
+      ],
     },
   },
   {
@@ -6350,7 +6489,8 @@ const productTableData = [
     id: 516,
     sno: 516,
     isNumber: "IS 16190 : 2014",
-    product: "High Density Polyethylene (HDPE) laminated woven lay flat tube for irrigation purpose",
+    product:
+      "High Density Polyethylene (HDPE) laminated woven lay flat tube for irrigation purpose",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6372,7 +6512,8 @@ const productTableData = [
     id: 518,
     sno: 518,
     isNumber: "IS 16627 : 2017",
-    product: "High density polyethylene (HDPE) laminated woven lay flat tube for use in mains and submains of drip irrigation system",
+    product:
+      "High density polyethylene (HDPE) laminated woven lay flat tube for use in mains and submains of drip irrigation system",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6383,7 +6524,8 @@ const productTableData = [
     id: 519,
     sno: 519,
     isNumber: "IS 17355 : 2020",
-    product: "Propylene Spun bonded non—woven mulch mat for agriculture and horticulture applications",
+    product:
+      "Propylene Spun bonded non—woven mulch mat for agriculture and horticulture applications",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6416,7 +6558,8 @@ const productTableData = [
     id: 522,
     sno: 522,
     isNumber: "IS 17358 (Part 1) : 2020",
-    product: "Fencing nets for agriculture and horticulture purposes - made from  extruded polymer mesh",
+    product:
+      "Fencing nets for agriculture and horticulture purposes - made from  extruded polymer mesh",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6427,7 +6570,8 @@ const productTableData = [
     id: 523,
     sno: 523,
     isNumber: "IS 17358 (Part 2) : 2020",
-    product: "Fencing nets for agriculture and horticulture purposes -made from mono filament yarns and combination of tape and mono filament yarns",
+    product:
+      "Fencing nets for agriculture and horticulture purposes -made from mono filament yarns and combination of tape and mono filament yarns",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6449,7 +6593,8 @@ const productTableData = [
     id: 525,
     sno: 525,
     isNumber: "IS 17728 : 2021",
-    product: "High Density Polyethylene (HDPE) Laminated Woven Lay Flat Tube and Fittings for use in Rain Irrigation System",
+    product:
+      "High Density Polyethylene (HDPE) Laminated Woven Lay Flat Tube and Fittings for use in Rain Irrigation System",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6460,7 +6605,8 @@ const productTableData = [
     id: 526,
     sno: 526,
     isNumber: "IS 17729 : 2021",
-    product: "Flexible Water Storage Tank for Agriculture and Horticulture Purposes",
+    product:
+      "Flexible Water Storage Tank for Agriculture and Horticulture Purposes",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6471,7 +6617,8 @@ const productTableData = [
     id: 527,
     sno: 527,
     isNumber: "IS 17730 (Part 1) : 2021",
-    product: "Hail Protection Nets for Agriculture and Horticulture Purposes-  Warp Knitted Hail Protection Nets",
+    product:
+      "Hail Protection Nets for Agriculture and Horticulture Purposes-  Warp Knitted Hail Protection Nets",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6482,7 +6629,8 @@ const productTableData = [
     id: 528,
     sno: 528,
     isNumber: "IS 17730 (Part 2) : 2021",
-    product: "Hail Protection Nets for Agriculture and Horticulture Purposes - Woven Hail Protection Nets",
+    product:
+      "Hail Protection Nets for Agriculture and Horticulture Purposes - Woven Hail Protection Nets",
     notification: {
       title: "135. Agro Textiles (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Agro-Textiles-QCO-2023.pdf",
@@ -6518,14 +6666,14 @@ const productTableData = [
         {
           text: "Copper Products (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/04/Copper-Products-Quality-Control-2024.pdf",
-          linkText: "S.O. 1801(E), dated 25th April 2024"
+          linkText: "S.O. 1801(E), dated 25th April 2024",
         },
         {
           text: "Copper Product (Quality Control) Amendment Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/02/Copper-Product-Quality-Control-Amendment-Order-2025.pdf",
-          linkText: "S.O. 884(E) Dated 19 February, 2025"
-        }
-      ]
+          linkText: "S.O. 884(E) Dated 19 February, 2025",
+        },
+      ],
     },
   },
   {
@@ -6565,7 +6713,8 @@ const productTableData = [
     id: 534,
     sno: 534,
     isNumber: "IS 1545: 1994",
-    product: "Solid drawn copper and copper alloy tubes for condensers and heat exchangers",
+    product:
+      "Solid drawn copper and copper alloy tubes for condensers and heat exchangers",
     notification: {
       title: "136. Copper Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Copper-Products-QCO-2023.pdf",
@@ -6598,7 +6747,8 @@ const productTableData = [
     id: 537,
     sno: 537,
     isNumber: "IS 10773:1995",
-    product: "Wrought Copper Tubes for Refrigeration and Air- Conditioning Purpose",
+    product:
+      "Wrought Copper Tubes for Refrigeration and Air- Conditioning Purpose",
     notification: {
       title: "136. Copper Products (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Copper-Products-QCO-2023.pdf",
@@ -6691,7 +6841,8 @@ const productTableData = [
     id: 545,
     sno: 545,
     isNumber: "IS 10325:2000",
-    product: "Square Tins - 15 Kilograms or litre for Ghee, Vanaspati, Edible Oils and Bakery",
+    product:
+      "Square Tins - 15 Kilograms or litre for Ghee, Vanaspati, Edible Oils and Bakery",
     notification: {
       title: "137. Drums and Tins (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Drums-Tins-QCO-2023.pdf",
@@ -6707,7 +6858,8 @@ const productTableData = [
     id: 546,
     sno: 546,
     isNumber: "IS 6343:1982",
-    product: "Door closers (pneumatically regulated) for light doors weighing up to 40 kg",
+    product:
+      "Door closers (pneumatically regulated) for light doors weighing up to 40 kg",
     notification: {
       title: "138. Door Fittings (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Door-Fittings-QCO-2023.pdf",
@@ -6798,15 +6950,16 @@ const productTableData = [
         {
           text: "Bottled Water Dispensers (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/06/Bottled-Water-Dispensers-Quality-ControlOrder2024.pdf",
-          linkText: "S.O. 2173(E), dated 03rd  June 2024"
-        }
-      ]
+          linkText: "S.O. 2173(E), dated 03rd  June 2024",
+        },
+      ],
     },
   },
   {
     id: "helmet-police-civil-defence-section",
     isSectionHeader: true,
-    sectionTitle: "Helmet for Police Force, Civil Defence and Personal Protection",
+    sectionTitle:
+      "Helmet for Police Force, Civil Defence and Personal Protection",
   },
   {
     id: 554,
@@ -6814,7 +6967,8 @@ const productTableData = [
     isNumber: "IS 2745:1983",
     product: "Non-metal helmet for firemen and civil defence personnel",
     notification: {
-      title: "140. Helmet for Police Force, Civil Defence and Personal Protection (Quality Control) Order, 2023",
+      title:
+        "140. Helmet for Police Force, Civil Defence and Personal Protection (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Helmet-for-Police-Force-Civil-Defence-Personal-Protection-QCO-2023.pdf",
       linkText: "S.O. 4649(E), dated 23rd  October 2023",
     },
@@ -6825,7 +6979,8 @@ const productTableData = [
     isNumber: "IS 2925:1984",
     product: "Industrial safety helmets",
     notification: {
-      title: "140. Helmet for Police Force, Civil Defence and Personal Protection (Quality Control) Order, 2023",
+      title:
+        "140. Helmet for Police Force, Civil Defence and Personal Protection (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Helmet-for-Police-Force-Civil-Defence-Personal-Protection-QCO-2023.pdf",
       linkText: "S.O. 4649(E), dated 23rd  October 2023",
     },
@@ -6836,7 +6991,8 @@ const productTableData = [
     isNumber: "IS 9562:1980",
     product: "Non- metal helmet for Police Force",
     notification: {
-      title: "140. Helmet for Police Force, Civil Defence and Personal Protection (Quality Control) Order, 2023",
+      title:
+        "140. Helmet for Police Force, Civil Defence and Personal Protection (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/10/Helmet-for-Police-Force-Civil-Defence-Personal-Protection-QCO-2023.pdf",
       linkText: "S.O. 4649(E), dated 23rd  October 2023",
     },
@@ -6852,16 +7008,17 @@ const productTableData = [
     isNumber: "IS 2266 : 2019",
     product: "Steel Wire Ropes for General Engineering Purposes",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
       additionalLinks: [
         {
           text: "Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-and-wire-mesh-QCO-2024.pdf",
-          linkText: "S.O. 2581(E), dated 03rd  July 2024"
-        }
-      ]
+          linkText: "S.O. 2581(E), dated 03rd  July 2024",
+        },
+      ],
     },
   },
   {
@@ -6870,7 +7027,8 @@ const productTableData = [
     isNumber: "IS 2365 : 2018",
     product: "Steel Wire Suspension Ropes for Lifts, Elevators and Hoists",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
     },
@@ -6879,9 +7037,11 @@ const productTableData = [
     id: 559,
     sno: 559,
     isNumber: "IS 1855:2022",
-    product: "Stranded steel wire ropes for winding and man –riding haulages in mines",
+    product:
+      "Stranded steel wire ropes for winding and man –riding haulages in mines",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
     },
@@ -6892,7 +7052,8 @@ const productTableData = [
     isNumber: "IS 1856:2005",
     product: "Steel Wire Rope forhaulage",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
     },
@@ -6903,7 +7064,8 @@ const productTableData = [
     isNumber: "IS 2141:20005",
     product: "Hot Dip Galvanized Stay Strand",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
     },
@@ -6914,7 +7076,8 @@ const productTableData = [
     isNumber: "IS 4521:2001",
     product: "Wire Ropes Used in Oil Wells and Oil Well Drilling",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
     },
@@ -6925,7 +7088,8 @@ const productTableData = [
     isNumber: "IS 6590:1972",
     product: "Braided Nylon Ropes for Mountaineering Purposes",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
     },
@@ -6936,7 +7100,8 @@ const productTableData = [
     isNumber: "IS 278:2009",
     product: "Galvanized Steel Barbed Wire for Fencing",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
     },
@@ -6945,9 +7110,11 @@ const productTableData = [
     id: 565,
     sno: 565,
     isNumber: "IS 16014:2018",
-    product: "Mechanically Woven, Double- Twisted, Hexagonal Wire Mesh Gabions, Revet Mattresses and Rock Fall Netting and Other Rock Fall Netting and Other Products for Civil Engineering Purposes (Galvanized Steel Wire or Galvanized Steel Wire with polymer coating)",
+    product:
+      "Mechanically Woven, Double- Twisted, Hexagonal Wire Mesh Gabions, Revet Mattresses and Rock Fall Netting and Other Rock Fall Netting and Other Products for Civil Engineering Purposes (Galvanized Steel Wire or Galvanized Steel Wire with polymer coating)",
     notification: {
-      title: "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
+      title:
+        "141. Steel Wires or Strands, Nylon or Wire Ropes and Wire mesh (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Steel-Wires-or-Strands-Nylon-or-Wire-Ropes-QCO-2023.pdf",
       linkText: "S.O. 5022(E), dated 21st November 2023",
     },
@@ -6961,9 +7128,11 @@ const productTableData = [
     id: 566,
     sno: 566,
     isNumber: "IS 1269(Part 1) : 1997",
-    product: "Legal Metrology - Material Measure of length - Woven metallic and glass fibre tape measures",
+    product:
+      "Legal Metrology - Material Measure of length - Woven metallic and glass fibre tape measures",
     notification: {
-      title: "142. Legal Metrology - Material Measures of Length (Quality Control) Order, 2023",
+      title:
+        "142. Legal Metrology - Material Measures of Length (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Legal-Metrology-Material-Measures-of-Length-QCO-2023.pdf",
       linkText: "S.O. 5029(E), dated 21st November 2023",
     },
@@ -6972,9 +7141,11 @@ const productTableData = [
     id: 567,
     sno: 567,
     isNumber: "IS 1269(Part 2) : 1997",
-    product: "Legal Metrology - Material Measure of length - Steel tape measures",
+    product:
+      "Legal Metrology - Material Measure of length - Steel tape measures",
     notification: {
-      title: "142. Legal Metrology - Material Measures of Length (Quality Control) Order, 2023",
+      title:
+        "142. Legal Metrology - Material Measures of Length (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/11/Legal-Metrology-Material-Measures-of-Length-QCO-2023.pdf",
       linkText: "S.O. 5029(E), dated 21st November 2023",
     },
@@ -6988,83 +7159,91 @@ const productTableData = [
     id: 568,
     sno: 568,
     isNumber: "IS 9755 : 2021",
-    product: "Textiles—High Density Polyethylene (HDPE) /Polypropylene (PP) Woven Sacks for Packaging Fertilizers",
+    product:
+      "Textiles—High Density Polyethylene (HDPE) /Polypropylene (PP) Woven Sacks for Packaging Fertilizers",
     notification: {
-      title: "143. Textiles—High Density Polyethylene (HDPE) /Polypropylene (PP) Woven Sacks for Packaging Fertilizers (Quality Control) Order, 2023",
+      title:
+        "143. Textiles—High Density Polyethylene (HDPE) /Polypropylene (PP) Woven Sacks for Packaging Fertilizers (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Polyethylene-woven-Sacks-QCO.pdf",
       linkText: "S.O. 5177(E), dated 06th December 2023",
       additionalLinks: [
         {
           text: "Textiles—High Density Polyethylene (HDPE) /Polypropylene (PP) Woven Sacks for Packaging Fertilizers (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/06/Textiles—High-Density-Polyethylene-HDPEPolypropylenePP-Woven-sacks-Amendment-Order2024.pdf",
-          linkText: "S.O. 2180(E), dated 04th  June 2024"
-        }
-      ]
+          linkText: "S.O. 2180(E), dated 04th  June 2024",
+        },
+      ],
     },
   },
   {
     id: 569,
     sno: 569,
     isNumber: "IS 11652 : 2017",
-    product: "Textiles — High Density Polyethylene (HDPE)/ Polypropylene (PP) Woven Sacks for Packaging of 50 kg Cement",
+    product:
+      "Textiles — High Density Polyethylene (HDPE)/ Polypropylene (PP) Woven Sacks for Packaging of 50 kg Cement",
     notification: {
-      title: "144. Textiles—High Density Polyethylene (HDPE) /Polypropylene (PP) Woven Sacks for Packaging of 50 kg Cement (Quality Control) Order, 2023",
+      title:
+        "144. Textiles—High Density Polyethylene (HDPE) /Polypropylene (PP) Woven Sacks for Packaging of 50 kg Cement (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Polyethylene-woven-Sacks-QCO.pdf",
       linkText: "S.O. 5178(E), dated 06th December 2023",
       additionalLinks: [
         {
           text: "Textiles — High Density Polyethylene (HDPE)/ Polypropylene (PP) Woven Sacks for Packaging of 50 kg Cement (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/06/Textiles—High-Density-Polyethylene-HDPEPolypropylenePP-Woven-sacks-Amendment-Order2024.pdf",
-          linkText: "S.O. 2181(E), dated 04th  June 2024"
+          linkText: "S.O. 2181(E), dated 04th  June 2024",
         },
         {
           text: "Textiles — High Density Polyethylene (HDPE) /Polypropylene (PP) Woven Sacks for Packaging of 50 kg Cement (Quality Control) Second Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Textiles-Woven-sacks-QCO.pdf",
-          linkText: "S.O. 3938(E), dated 13th  September 2024"
+          linkText: "S.O. 3938(E), dated 13th  September 2024",
         },
         {
           text: "Textiles — High Density Polyethylene (HDPE)/ Polypropylene (PP) Woven Sacks for Packaging of 50 kg Cement (Quality Control) Third Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/3-different-types-of-Woven-sacks-QCO-2024.pdf",
-          linkText: "S.O. 5261(E), dated 06th  December 2024"
-        }
-      ]
+          linkText: "S.O. 5261(E), dated 06th  December 2024",
+        },
+      ],
     },
   },
   {
     id: 570,
     sno: 570,
     isNumber: "IS 16709 : 2017",
-    product: "Textiles — Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement",
+    product:
+      "Textiles — Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement",
     notification: {
-      title: "145. Textiles—Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement (Quality Control) Order, 2023",
+      title:
+        "145. Textiles—Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Polyethylene-woven-Sacks-QCO.pdf",
       linkText: "S.O. 5179(E), dated 06th December 2023",
       additionalLinks: [
         {
           text: "Textiles — Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/06/Textiles—High-Density-Polyethylene-HDPEPolypropylenePP-Woven-sacks-Amendment-Order2024.pdf",
-          linkText: "S.O. 2182(E), dated 04th  June 2024"
+          linkText: "S.O. 2182(E), dated 04th  June 2024",
         },
         {
           text: "Textiles — Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement (Quality Control) Second Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Textiles-Woven-sacks-QCO.pdf",
-          linkText: "S.O. 3939(E), dated 13th  September 2024"
+          linkText: "S.O. 3939(E), dated 13th  September 2024",
         },
         {
           text: "Textiles — Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement (Quality Control) Third Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/3-different-types-of-Woven-sacks-QCO-2024.pdf",
-          linkText: "S.O. 5262(E), dated 06th  December 2024"
-        }
-      ]
+          linkText: "S.O. 5262(E), dated 06th  December 2024",
+        },
+      ],
     },
   },
   {
     id: 571,
     sno: 571,
     isNumber: "IS 16703 : 2017",
-    product: "Textiles — High Density Polyethylene (HDPE) Polypropylene (PP) Woven Sacks for Packaging of 25 kg Polymer Materials",
+    product:
+      "Textiles — High Density Polyethylene (HDPE) Polypropylene (PP) Woven Sacks for Packaging of 25 kg Polymer Materials",
     notification: {
-      title: "146. Textiles— High Density Polyethylene (HDPE) Polypropylene (PP) Woven Sacks for Packaging of 25 kg  Polymer Materials (Quality Control) Order, 2023",
+      title:
+        "146. Textiles— High Density Polyethylene (HDPE) Polypropylene (PP) Woven Sacks for Packaging of 25 kg  Polymer Materials (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Polyethylene-woven-Sacks-QCO.pdf",
       linkText: "S.O. 5180(E), dated 06th December 2023",
     },
@@ -7073,28 +7252,30 @@ const productTableData = [
     id: 572,
     sno: 572,
     isNumber: "IS 17399 : 2020",
-    product: "Textiles — Polypropylene (PP)/ High Density Polyethylene (HDPE) Laminated Woven Sacks for Mail Sorting, Storage, Transport and Distribution",
+    product:
+      "Textiles — Polypropylene (PP)/ High Density Polyethylene (HDPE) Laminated Woven Sacks for Mail Sorting, Storage, Transport and Distribution",
     notification: {
-      title: "147. Textiles— Polypropylene (PP)/High Density Polyethylene (HDPE) Laminated Woven Sacks  for Mail Sorting, Storage, Transport and Distribution (Quality Control) Order, 2023",
+      title:
+        "147. Textiles— Polypropylene (PP)/High Density Polyethylene (HDPE) Laminated Woven Sacks  for Mail Sorting, Storage, Transport and Distribution (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Polyethylene-woven-Sacks-QCO.pdf",
       linkText: "S.O. 5181(E), dated 06th December 2023",
       additionalLinks: [
         {
           text: "Textiles — Polypropylene (PP)/High Density Polyethylene (HDPE) Laminated Woven Sacks for Mail Sorting, Storage, Transport and Distribution (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/06/Textiles—High-Density-Polyethylene-HDPEPolypropylenePP-Woven-sacks-Amendment-Order2024.pdf",
-          linkText: "S.O. 2183(E), dated 04th  June 2024"
+          linkText: "S.O. 2183(E), dated 04th  June 2024",
         },
         {
           text: "Textiles — Polypropylene (PP)/ High Density Polyethylene (HDPE) Laminated Woven Sacks for Mail Sorting, Storage, Transport and Distribution (Quality Control) Second Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Textiles-Woven-sacks-QCO.pdf",
-          linkText: "S.O. 3940(E), dated 13th  September 2024"
+          linkText: "S.O. 3940(E), dated 13th  September 2024",
         },
         {
           text: "Textiles — Polypropylene (PP) Woven, Laminated, Block Bottom Valve Sacks for Packaging of 50 kg Cement (Quality Control) Third Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/3-different-types-of-Woven-sacks-QCO-2024.pdf",
-          linkText: "S.O. 5263(E), dated 06th  December 2024"
-        }
-      ]
+          linkText: "S.O. 5263(E), dated 06th  December 2024",
+        },
+      ],
     },
   },
   {
@@ -7108,7 +7289,8 @@ const productTableData = [
     isNumber: "IS 550 (Part 1) : 2014",
     product: "Safes",
     notification: {
-      title: "148. Safes, Safe Deposit Locker Cabinets and key locks (Quality Control) Order, 2023",
+      title:
+        "148. Safes, Safe Deposit Locker Cabinets and key locks (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Safes-Safe-Deposit-locker-cabinets-and-key-locks-QCO.pdf",
       linkText: "S.O. 5293(E), dated 08th December 2023",
     },
@@ -7119,7 +7301,8 @@ const productTableData = [
     isNumber: "IS 5244 : 2020",
     product: "Safe deposit locker cabinets",
     notification: {
-      title: "148. Safes, Safe Deposit Locker Cabinets and key locks (Quality Control) Order, 2023",
+      title:
+        "148. Safes, Safe Deposit Locker Cabinets and key locks (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Safes-Safe-Deposit-locker-cabinets-and-key-locks-QCO.pdf",
       linkText: "S.O. 5293(E), dated 08th December 2023",
     },
@@ -7130,7 +7313,8 @@ const productTableData = [
     isNumber: "IS 17566 : 2021",
     product: "Key locks for security equipment",
     notification: {
-      title: "148. Safes, Safe Deposit Locker Cabinets and key locks (Quality Control) Order, 2023",
+      title:
+        "148. Safes, Safe Deposit Locker Cabinets and key locks (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Safes-Safe-Deposit-locker-cabinets-and-key-locks-QCO.pdf",
       linkText: "S.O. 5293(E), dated 08th December 2023",
     },
@@ -7153,9 +7337,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7171,9 +7355,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7189,9 +7373,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7207,9 +7391,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7225,9 +7409,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7243,9 +7427,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7261,9 +7445,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7279,9 +7463,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7297,9 +7481,9 @@ const productTableData = [
         {
           text: "Hinges (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/07/Hinges-QCO.pdf-26-July.pdf",
-          linkText: " S.O. 2982(E), dated 26th  July 2024"
-        }
-      ]
+          linkText: " S.O. 2982(E), dated 26th  July 2024",
+        },
+      ],
     },
   },
   {
@@ -7313,7 +7497,8 @@ const productTableData = [
     isNumber: "IS 2414:2005",
     product: "Cycle and Rickshaw Pneumatic Tyres",
     notification: {
-      title: "150. Cycle and Rickshaw Tyres and Tubes (Quality Control) Order, 2023",
+      title:
+        "150. Cycle and Rickshaw Tyres and Tubes (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Cycle-and-Rickshaw-tyres-and-Tubes.pdf",
       linkText: "S.O. 5323(E), dated 11th December 2023",
     },
@@ -7324,7 +7509,8 @@ const productTableData = [
     isNumber: "IS 2415 :2015",
     product: "Cycle - Rubber Tubes (Moulded or Jointed)",
     notification: {
-      title: "150. Cycle and Rickshaw Tyres and Tubes (Quality Control) Order, 2023",
+      title:
+        "150. Cycle and Rickshaw Tyres and Tubes (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Cycle-and-Rickshaw-tyres-and-Tubes.pdf",
       linkText: "S.O. 5323(E), dated 11th December 2023",
     },
@@ -7340,7 +7526,8 @@ const productTableData = [
     isNumber: "IS 7466 :1994",
     product: "Rubber Gaskets for Pressure Cookers",
     notification: {
-      title: "151. Rubber Gaskets for Pressure Cookers (Quality Control) Order, 2023",
+      title:
+        "151. Rubber Gaskets for Pressure Cookers (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2023/12/Rubber-Gaskets-for-Pressure-Cookers.pdf",
       linkText: "S.O. 5371(E), dated 14th December 2023",
     },
@@ -7363,9 +7550,9 @@ const productTableData = [
         {
           text: "Laboratory Glassware (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/Laboratory-Glassware-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 5358(E), dated 11th  December 2024"
-        }
-      ]
+          linkText: "S.O. 5358(E), dated 11th  December 2024",
+        },
+      ],
     },
   },
   {
@@ -7381,9 +7568,9 @@ const productTableData = [
         {
           text: "Laboratory Glassware (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/Laboratory-Glassware-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 5358(E), dated 11th  December 2024"
-        }
-      ]
+          linkText: "S.O. 5358(E), dated 11th  December 2024",
+        },
+      ],
     },
   },
   {
@@ -7399,9 +7586,9 @@ const productTableData = [
         {
           text: "Laboratory Glassware (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/Laboratory-Glassware-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 5358(E), dated 11th  December 2024"
-        }
-      ]
+          linkText: "S.O. 5358(E), dated 11th  December 2024",
+        },
+      ],
     },
   },
   {
@@ -7417,9 +7604,9 @@ const productTableData = [
         {
           text: "Laboratory Glassware (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/Laboratory-Glassware-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 5358(E), dated 11th  December 2024"
-        }
-      ]
+          linkText: "S.O. 5358(E), dated 11th  December 2024",
+        },
+      ],
     },
   },
   {
@@ -7435,9 +7622,9 @@ const productTableData = [
         {
           text: "Laboratory Glassware (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/Laboratory-Glassware-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 5358(E), dated 11th  December 2024"
-        }
-      ]
+          linkText: "S.O. 5358(E), dated 11th  December 2024",
+        },
+      ],
     },
   },
   {
@@ -7449,7 +7636,8 @@ const productTableData = [
     id: 593,
     sno: 593,
     isNumber: "IS 14772: 2020",
-    product: "Boxes and Enclosures for Electrical Accessories for Household and Similar Fixed Electrical Installations",
+    product:
+      "Boxes and Enclosures for Electrical Accessories for Household and Similar Fixed Electrical Installations",
     notification: {
       title: "153. Electrical Accessories (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/01/Electrical-Accessories1.pdf",
@@ -7460,7 +7648,8 @@ const productTableData = [
     id: 594,
     sno: 594,
     isNumber: "IS 14927 (Part 2): 2001",
-    product: "Cable Trunking and Ducting Systems for Electrical Installations - Cable Trunking and Ducting Systems Intended for Mounting on Walls or Ceiling",
+    product:
+      "Cable Trunking and Ducting Systems for Electrical Installations - Cable Trunking and Ducting Systems Intended for Mounting on Walls or Ceiling",
     notification: {
       title: "153. Electrical Accessories (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/01/Electrical-Accessories1.pdf",
@@ -7515,7 +7704,8 @@ const productTableData = [
     id: 599,
     sno: 599,
     isNumber: "IS 7809 (Part3/ Sec1): 1986",
-    product: "Specification for Pressure sensitive adhesive insulating tapes for electrical purposes- Part 3 requirements or individual materials – Sec 1 plasticized polyvinylchloride tapes with non- Thermosetting adhesive",
+    product:
+      "Specification for Pressure sensitive adhesive insulating tapes for electrical purposes- Part 3 requirements or individual materials – Sec 1 plasticized polyvinylchloride tapes with non- Thermosetting adhesive",
     notification: {
       title: "153. Electrical Accessories (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/01/Electrical-Accessories1.pdf",
@@ -7544,21 +7734,22 @@ const productTableData = [
     isNumber: "IS 17658:2021",
     product: "Poly Vinyl Chloride (PVC) Homopolymers",
     notification: {
-      title: "154. Poly Vinyl Chloride (PVC) Homopolymers (Quality Control) Order, 2024",
+      title:
+        "154. Poly Vinyl Chloride (PVC) Homopolymers (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/PVC-Homopolymers-PP-Materials-for-Moulding-and-Extrusion-and-Diesel-Engine-NOx-Reduction-agent-AUS-32-QCO.pdf",
       linkText: "S.O. 920(E), dated 26th  February 2024",
       additionalLinks: [
         {
           text: "Poly Vinyl Chloride (PVC) Homopolymers (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/08/Poly-Vinyl-Chloride-PVC-Homopolymers-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 3595(E), dated 23rd  August 2024"
+          linkText: "S.O. 3595(E), dated 23rd  August 2024",
         },
         {
           text: "Poly Vinyl Chloride (PVC) Homopolymers (Quality Control) Order Third Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/Poly-Vinyl-Chloride-PVC-Homopolymers-QCO-2024.pdf",
-          linkText: "S.O. 5552(E), dated 24th   December 2024"
-        }
-      ]
+          linkText: "S.O. 5552(E), dated 24th   December 2024",
+        },
+      ],
     },
   },
   {
@@ -7572,21 +7763,22 @@ const productTableData = [
     isNumber: "IS 10951: 2020",
     product: "Polypropylene (PP) Materials for Moulding and Extrusion",
     notification: {
-      title: "155. Polypropylene (PP) Materials for Moulding and Extrusion (Quality Control) Order, 2024",
+      title:
+        "155. Polypropylene (PP) Materials for Moulding and Extrusion (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/PVC-Homopolymers-PP-Materials-for-Moulding-and-Extrusion-and-Diesel-Engine-NOx-Reduction-agent-AUS-32-QCO.pdf",
       linkText: "S.O. 921(E), dated 26th  February 2024",
       additionalLinks: [
         {
           text: "Polypropylene (PP) Materials for Moulding and Extrusion (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/08/Polypropylene-PP-Materials-for-moulding-and-extrusion-Quality-Control-Amendment-Order-2024.pdf",
-          linkText: "S.O. 3594(E), dated 23rd  August 2024"
+          linkText: "S.O. 3594(E), dated 23rd  August 2024",
         },
         {
           text: "Polypropylene (PP) Materials for Mouldingand Extrusion (Quality Control) Order Third Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/12/Polypropylene-PP-Materials-for-Moulding-and-Extrusion-QCO-2024.pdf",
-          linkText: " S.O. 5553(E), dated 24th   December 2024 "
-        }
-      ]
+          linkText: " S.O. 5553(E), dated 24th   December 2024 ",
+        },
+      ],
     },
   },
   {
@@ -7600,7 +7792,8 @@ const productTableData = [
     isNumber: "IS 17042 (Part-1): 2018",
     product: "Diesel Engines – NOx Reduction Agent AUS 32",
     notification: {
-      title: "156. Diesel Engines – NOx Reduction Agent AUS 32 (Quality Control) Order, 2024",
+      title:
+        "156. Diesel Engines – NOx Reduction Agent AUS 32 (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/PVC-Homopolymers-PP-Materials-for-Moulding-and-Extrusion-and-Diesel-Engine-NOx-Reduction-agent-AUS-32-QCO.pdf",
       linkText: "S.O. 922(E), dated 26th  February 2024",
     },
@@ -7623,16 +7816,17 @@ const productTableData = [
         {
           text: "Air Cooler and Air Filters (Quality Control) Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Air-Cooler-and-Air-Filters-Quality-Control-2025.pdf",
-          linkText: "S.O. 529(E), dated 30th January 2025"
-        }
-      ]
+          linkText: "S.O. 529(E), dated 30th January 2025",
+        },
+      ],
     },
   },
   {
     id: 605,
     sno: 605,
     isNumber: "IS 17570 (Part 1): 2021 ISO 16890-2: 2016",
-    product: "Air Filters for general ventilation - Technical specifications requirements and classification system based upon particulate matter efficiency (ePM)",
+    product:
+      "Air Filters for general ventilation - Technical specifications requirements and classification system based upon particulate matter efficiency (ePM)",
     notification: {
       title: "157. Air Cooler and Air Filters (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Air-Cooler-and-Air-Filters-Quality-Control-2023.pdf",
@@ -7641,9 +7835,9 @@ const productTableData = [
         {
           text: "Air Cooler and Air Filters (Quality Control) Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Air-Cooler-and-Air-Filters-Quality-Control-2025.pdf",
-          linkText: "S.O. 529(E), dated 30th January 2025"
-        }
-      ]
+          linkText: "S.O. 529(E), dated 30th January 2025",
+        },
+      ],
     },
   },
   {
@@ -7655,9 +7849,11 @@ const productTableData = [
     id: 606,
     sno: 606,
     isNumber: "IS 302 (Part 2/Sec 9): 2009",
-    product: "Safety of household and similar electrical appliances - particular requirements - toasters, grills, roasters and similar appliances",
+    product:
+      "Safety of household and similar electrical appliances - particular requirements - toasters, grills, roasters and similar appliances",
     notification: {
-      title: "158. Electrical Appliances for Kitchen (Quality Control) Order, 2023",
+      title:
+        "158. Electrical Appliances for Kitchen (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-Kitchen-QCO-2023.pdf",
       linkText: "S.O. 1128(E), dated 05th  March 2024",
     },
@@ -7666,9 +7862,11 @@ const productTableData = [
     id: 607,
     sno: 607,
     isNumber: "IS 302 (Part 2/Sec 31): 2009",
-    product: "Safety of household and similar electrical appliances - particular requirements - range hoods",
+    product:
+      "Safety of household and similar electrical appliances - particular requirements - range hoods",
     notification: {
-      title: "158. Electrical Appliances for Kitchen (Quality Control) Order, 2023",
+      title:
+        "158. Electrical Appliances for Kitchen (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-Kitchen-QCO-2023.pdf",
       linkText: "S.O. 1128(E), dated 05th  March 2024",
     },
@@ -7677,9 +7875,11 @@ const productTableData = [
     id: 608,
     sno: 608,
     isNumber: "IS 302 (Part 2/Sec 23): 2009",
-    product: "Safety of household and similar electrical appliances - particular requirements - appliances for skin or hair care",
+    product:
+      "Safety of household and similar electrical appliances - particular requirements - appliances for skin or hair care",
     notification: {
-      title: "159. Electrical Appliances for Skin or Hair care (Quality Control) Order, 2023",
+      title:
+        "159. Electrical Appliances for Skin or Hair care (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-Skin-or-Hair-care-QCO-2023.pdf",
       linkText: "S.O. 1125(E), dated 05th  March 2024",
     },
@@ -7688,7 +7888,8 @@ const productTableData = [
     id: 609,
     sno: 609,
     isNumber: "IS 302 (Part 2/ Sec 80): 2017",
-    product: "Household and similar electrical appliances - Safety - particular requirements for fans",
+    product:
+      "Household and similar electrical appliances - Safety - particular requirements for fans",
     notification: {
       title: "160. Electrical appliance fans (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-appliance-fans-QCO-2023.pdf",
@@ -7699,36 +7900,40 @@ const productTableData = [
     id: 610,
     sno: 610,
     isNumber: "IS 302 (Part 2/Sec 75): 2018",
-    product: "Safety of Household and Similar Electrical Appliances - Particular Requirements - Commercial Dispensing Appliances and Vending Machines",
+    product:
+      "Safety of Household and Similar Electrical Appliances - Particular Requirements - Commercial Dispensing Appliances and Vending Machines",
     notification: {
-      title: "161. Electrical appliance for commercial dispensing and vending (Quality Control) Order, 2023",
+      title:
+        "161. Electrical appliance for commercial dispensing and vending (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-appliance-for-commercial-dispensing-and-vending-QCO-2023.pdf",
       linkText: "S.O. 1127(E), dated 05th  March 2024",
       additionalLinks: [
         {
           text: "Electrical Appliances for Commercial Dispensing and Vending (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Electrical-Appliances-for-Commercial-Dispensing-and-Vending-QCO-2024.pdf",
-          linkText: "S.O. 4568(E), dated 18th  October 2024"
-        }
-      ]
+          linkText: "S.O. 4568(E), dated 18th  October 2024",
+        },
+      ],
     },
   },
   {
     id: 611,
     sno: 611,
     isNumber: "IS 302 (Part 2/Sec 7): 2010",
-    product: "Safety of household and similar electrical appliances - particular requirements - domestic electric clothes washing machines",
+    product:
+      "Safety of household and similar electrical appliances - particular requirements - domestic electric clothes washing machines",
     notification: {
-      title: "162. Electrical appliance for domestic clothes washing (Quality Control) Order, 2023",
+      title:
+        "162. Electrical appliance for domestic clothes washing (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-appliance-for-domestic-clothes-washing-QCO-2023.pdf",
       linkText: "S.O. 1126(E), dated 05th  March 2024",
       additionalLinks: [
         {
           text: "Electrical appliances for domestic clothes washing (Quality Control) Order 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/11/Electrical-appliance-for-domestic-clothes-washing-QCO-2024.pdf",
-          linkText: "S.O. 4815(E), dated 05th  November 2024"
-        }
-      ]
+          linkText: "S.O. 4815(E), dated 05th  November 2024",
+        },
+      ],
     },
   },
   {
@@ -7742,7 +7947,8 @@ const productTableData = [
     isNumber: "IS 459:1992",
     product: "Corrugated and Semi - Corrugated Asbestos Cement Sheets",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7753,7 +7959,8 @@ const productTableData = [
     isNumber: "IS 1592:2003",
     product: "Asbestos Cement Pressure Pipes and Joints",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7764,7 +7971,8 @@ const productTableData = [
     isNumber: "IS 2096:1992",
     product: "Asbestos Cement Flat Sheets",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7775,7 +7983,8 @@ const productTableData = [
     isNumber: "IS 2098:1997",
     product: "Asbestos Cement Building Boards",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7786,7 +7995,8 @@ const productTableData = [
     isNumber: "IS 6908:1991",
     product: "Asbestos - Cement Pipes and Fittings for Sewerage and Drainage",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7797,7 +8007,8 @@ const productTableData = [
     isNumber: "IS 13000:1990",
     product: "Silica-Asbestos-Cement Flat Sheets",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7808,7 +8019,8 @@ const productTableData = [
     isNumber: "IS 8870:1978",
     product: "Asbestos Cement Cable Conduits and Troughs",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7819,7 +8031,8 @@ const productTableData = [
     isNumber: "IS 9627:1980",
     product: "Asbestos Cement Pressure Pipes (Light Duty)",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7830,7 +8043,8 @@ const productTableData = [
     isNumber: "IS 13008:1990",
     product: "Shallow Corrugated Asbestos Cement Sheets",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7841,7 +8055,8 @@ const productTableData = [
     isNumber: "IS 14862:2000",
     product: "Fibre Cement Flat Sheets",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7850,9 +8065,11 @@ const productTableData = [
     id: 622,
     sno: 622,
     isNumber: "IS 14871:2000",
-    product: "Fibre Reinforced Cement Products – Long Corrugated or Asymmetrical Section Sheets and Fittings for Roofing and Cladding",
+    product:
+      "Fibre Reinforced Cement Products – Long Corrugated or Asymmetrical Section Sheets and Fittings for Roofing and Cladding",
     notification: {
-      title: "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
+      title:
+        "163. Asbestos or Fibre Cement based Products (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Asbestos-or-Fibre-Cement-based-products-QCO-2024.pdf",
       linkText: "S.O. 1152(E), dated 06th  March 2024",
     },
@@ -7904,23 +8121,25 @@ const productTableData = [
     id: 626,
     sno: 626,
     isNumber: "IS 2095 (Part 1):2011",
-    product: "Gypsum plaster boards - Specification: Part 1 plain gypsum plaster boards",
+    product:
+      "Gypsum plaster boards - Specification: Part 1 plain gypsum plaster boards",
     notification: {
-      title: "165. Gypsum based Building Materials (Quality Control) Order, 2024",
+      title:
+        "165. Gypsum based Building Materials (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Gypsum-based-Building-Materials-QCO-2024.pdf",
       linkText: "S.O. 1153(E), dated 06th  March 2024",
       additionalLinks: [
         {
           text: "Corrigendum of Gypsum based Building Materials (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Corrigendum-of-Gypsum-based-Building-Materials-Quality-Control-Order-2024.pdf",
-          linkText: "S.O. 2007(E), dated 14th  May 2024"
+          linkText: "S.O. 2007(E), dated 14th  May 2024",
         },
         {
           text: "Gypsum based Building Materials (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/11/Gypsum-based-Building-Materials-Amendment-QCO-2024.pdf",
-          linkText: "S.O. 5058(E), dated 25th November 2024"
-        }
-      ]
+          linkText: "S.O. 5058(E), dated 25th November 2024",
+        },
+      ],
     },
   },
   {
@@ -7929,21 +8148,22 @@ const productTableData = [
     isNumber: "IS 17400:2021",
     product: "Glass Fibre Reinforced Gypsum Panels",
     notification: {
-      title: "165. Gypsum based Building Materials (Quality Control) Order, 2024",
+      title:
+        "165. Gypsum based Building Materials (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Gypsum-based-Building-Materials-QCO-2024.pdf",
       linkText: "S.O. 1153(E), dated 06th  March 2024",
       additionalLinks: [
         {
           text: "Corrigendum of Gypsum based Building Materials (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Corrigendum-of-Gypsum-based-Building-Materials-Quality-Control-Order-2024.pdf",
-          linkText: "S.O. 2007(E), dated 14th  May 2024"
+          linkText: "S.O. 2007(E), dated 14th  May 2024",
         },
         {
           text: "Gypsum based Building Materials (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/11/Gypsum-based-Building-Materials-Amendment-QCO-2024.pdf",
-          linkText: "S.O. 5058(E), dated 25th November 2024"
-        }
-      ]
+          linkText: "S.O. 5058(E), dated 25th November 2024",
+        },
+      ],
     },
   },
   {
@@ -7952,44 +8172,47 @@ const productTableData = [
     isNumber: "IS 2095 (Part 2): 2022",
     product: "Gypsum Plaster Boards - Coated/ Laminated Gypsum Plaster Boards",
     notification: {
-      title: "165. Gypsum based Building Materials (Quality Control) Order, 2024",
+      title:
+        "165. Gypsum based Building Materials (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Gypsum-based-Building-Materials-QCO-2024.pdf",
       linkText: "S.O. 1153(E), dated 06th  March 2024",
       additionalLinks: [
         {
           text: "Corrigendum of Gypsum based Building Materials (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Corrigendum-of-Gypsum-based-Building-Materials-Quality-Control-Order-2024.pdf",
-          linkText: "S.O. 2007(E), dated 14th  May 2024"
+          linkText: "S.O. 2007(E), dated 14th  May 2024",
         },
         {
           text: "Gypsum based Building Materials (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/11/Gypsum-based-Building-Materials-Amendment-QCO-2024.pdf",
-          linkText: "S.O. 5058(E), dated 25th November 2024"
-        }
-      ]
+          linkText: "S.O. 5058(E), dated 25th November 2024",
+        },
+      ],
     },
   },
   {
     id: 629,
     sno: 629,
     isNumber: "IS 2095 (Part 3):2022",
-    product: "Gypsum Plaster Boards - Reinforced Gypsum Plaster Boards and Ceiling Tiles",
+    product:
+      "Gypsum Plaster Boards - Reinforced Gypsum Plaster Boards and Ceiling Tiles",
     notification: {
-      title: "165. Gypsum based Building Materials (Quality Control) Order, 2024",
+      title:
+        "165. Gypsum based Building Materials (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Gypsum-based-Building-Materials-QCO-2024.pdf",
       linkText: "S.O. 1153(E), dated 06th  March 2024",
       additionalLinks: [
         {
           text: "Corrigendum of Gypsum based Building Materials (Quality Control) Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Corrigendum-of-Gypsum-based-Building-Materials-Quality-Control-Order-2024.pdf",
-          linkText: "S.O. 2007(E), dated 14th  May 2024"
+          linkText: "S.O. 2007(E), dated 14th  May 2024",
         },
         {
           text: "Gypsum based Building Materials (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/11/Gypsum-based-Building-Materials-Amendment-QCO-2024.pdf",
-          linkText: "S.O. 5058(E), dated 25th November 2024"
-        }
-      ]
+          linkText: "S.O. 5058(E), dated 25th November 2024",
+        },
+      ],
     },
   },
   {
@@ -8003,16 +8226,17 @@ const productTableData = [
     isNumber: "IS 302 (Part 2/Sec 21): 2018",
     product: "Appliances for stationary storage type electric water heaters",
     notification: {
-      title: "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
+      title:
+        "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-domestic-water-heating-Quality-Control-Order-2023.pdf",
       linkText: "S.O. 1253(E), dated 05th March 2024",
       additionalLinks: [
         {
           text: "Electrical Appliances for domestic water heating (Quality Control) Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Electrical-Appliances-for-domestic-water-heating-QCO-2025.pdf",
-          linkText: "S.O. 355(E), dated 21st January 2025"
-        }
-      ]
+          linkText: "S.O. 355(E), dated 21st January 2025",
+        },
+      ],
     },
   },
   {
@@ -8021,16 +8245,17 @@ const productTableData = [
     isNumber: "IS 302 (Part 2/Sec 35): 2017",
     product: "Appliances for electric instantaneous water heaters",
     notification: {
-      title: "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
+      title:
+        "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-domestic-water-heating-Quality-Control-Order-2023.pdf",
       linkText: "S.O. 1253(E), dated 05th March 2024",
       additionalLinks: [
         {
           text: "Electrical Appliances for domestic water heating (Quality Control) Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Electrical-Appliances-for-domestic-water-heating-QCO-2025.pdf",
-          linkText: "S.O. 355(E), dated 21st January 2025"
-        }
-      ]
+          linkText: "S.O. 355(E), dated 21st January 2025",
+        },
+      ],
     },
   },
   {
@@ -8039,16 +8264,17 @@ const productTableData = [
     isNumber: "IS 368: 2014",
     product: "Electric Immersion Water Heaters",
     notification: {
-      title: "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
+      title:
+        "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-domestic-water-heating-Quality-Control-Order-2023.pdf",
       linkText: "S.O. 1253(E), dated 05th March 2024",
       additionalLinks: [
         {
           text: "Electrical Appliances for domestic water heating (Quality Control) Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Electrical-Appliances-for-domestic-water-heating-QCO-2025.pdf",
-          linkText: "S.O. 355(E), dated 21st January 2025"
-        }
-      ]
+          linkText: "S.O. 355(E), dated 21st January 2025",
+        },
+      ],
     },
   },
   {
@@ -8057,16 +8283,17 @@ const productTableData = [
     isNumber: "IS 2082: 2018",
     product: "Stationary storage type electric water heaters",
     notification: {
-      title: "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
+      title:
+        "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-domestic-water-heating-Quality-Control-Order-2023.pdf",
       linkText: "S.O. 1253(E), dated 05th March 2024",
       additionalLinks: [
         {
           text: "Electrical Appliances for domestic water heating (Quality Control) Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Electrical-Appliances-for-domestic-water-heating-QCO-2025.pdf",
-          linkText: "S.O. 355(E), dated 21st January 2025"
-        }
-      ]
+          linkText: "S.O. 355(E), dated 21st January 2025",
+        },
+      ],
     },
   },
   {
@@ -8075,16 +8302,17 @@ const productTableData = [
     isNumber: "IS 17150: 2019",
     product: "Mini domestic water heater for use with piped natural gas (PNG)s",
     notification: {
-      title: "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
+      title:
+        "166. Electrical Appliances for domestic water heating (Quality Control) Order, 2023",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/Electrical-Appliances-for-domestic-water-heating-Quality-Control-Order-2023.pdf",
       linkText: "S.O. 1253(E), dated 05th March 2024",
       additionalLinks: [
         {
           text: "Electrical Appliances for domestic water heating (Quality Control) Order, 2025",
           link: "https://www.bis.gov.in/wp-content/uploads/2025/01/Electrical-Appliances-for-domestic-water-heating-QCO-2025.pdf",
-          linkText: "S.O. 355(E), dated 21st January 2025"
-        }
-      ]
+          linkText: "S.O. 355(E), dated 21st January 2025",
+        },
+      ],
     },
   },
   {
@@ -8096,7 +8324,8 @@ const productTableData = [
     id: 635,
     sno: 635,
     isNumber: "IS 2494 (Part 1): 1994",
-    product: "V-Belts - Endless V-Belts for Industrial Purposes - General Purpose",
+    product:
+      "V-Belts - Endless V-Belts for Industrial Purposes - General Purpose",
     notification: {
       title: "167. V-Belt (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/V-Belt-Quality-Control-Order-2024.pdf",
@@ -8105,16 +8334,17 @@ const productTableData = [
         {
           text: "V-Belt (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/11/V-Belt-QCO-2024.pdf",
-          linkText: "S.O. 4880(E), dated 12 November 2024"
-        }
-      ]
+          linkText: "S.O. 4880(E), dated 12 November 2024",
+        },
+      ],
     },
   },
   {
     id: 636,
     sno: 636,
     isNumber: "IS 2494 (Part 2): 1993",
-    product: "V-Belts - Endless V-Belts for Industrial Purposes – fire resistant and antistatic V-Belts",
+    product:
+      "V-Belts - Endless V-Belts for Industrial Purposes – fire resistant and antistatic V-Belts",
     notification: {
       title: "167. V-Belt (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/V-Belt-Quality-Control-Order-2024.pdf",
@@ -8123,16 +8353,17 @@ const productTableData = [
         {
           text: "V-Belt (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/11/V-Belt-QCO-2024.pdf",
-          linkText: "S.O. 4880(E), dated 12 November 2024"
-        }
-      ]
+          linkText: "S.O. 4880(E), dated 12 November 2024",
+        },
+      ],
     },
   },
   {
     id: 637,
     sno: 637,
     isNumber: "IS 14261: 1995",
-    product: "Transmission Devices – V – Belts endless narrow V-Belts for industrial use",
+    product:
+      "Transmission Devices – V – Belts endless narrow V-Belts for industrial use",
     notification: {
       title: "167. V-Belt (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/03/V-Belt-Quality-Control-Order-2024.pdf",
@@ -8141,9 +8372,9 @@ const productTableData = [
         {
           text: "V-Belt (Quality Control) Amendment Order, 2024",
           link: "https://www.bis.gov.in/wp-content/uploads/2024/11/V-Belt-QCO-2024.pdf",
-          linkText: "S.O. 4880(E), dated 12 November 2024"
-        }
-      ]
+          linkText: "S.O. 4880(E), dated 12 November 2024",
+        },
+      ],
     },
   },
   {
@@ -8157,7 +8388,8 @@ const productTableData = [
     isNumber: "IS 17954:2023",
     product: "Telescopic Ball Bearing Drawer Slide",
     notification: {
-      title: "168. Telescopic Ball Bearing Drawer Slide (Quality Control) Order, 2024",
+      title:
+        "168. Telescopic Ball Bearing Drawer Slide (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/05/Telescopic-Ball-Bearing-Drawer-Slide-Quality-Control-Order-2024.pdf",
       linkText: "S.O. 1962(E), dated 02nd  May 2024 ",
     },
@@ -8171,7 +8403,8 @@ const productTableData = [
     id: 639,
     sno: 639,
     isNumber: "IS 18471 (Part 1) : 2023/ ISO 15481:1999",
-    product: "Fasteners - Cross Recessed Drilling Screws with Tapping Screw Thread Part 1 Pan Head",
+    product:
+      "Fasteners - Cross Recessed Drilling Screws with Tapping Screw Thread Part 1 Pan Head",
     notification: {
       title: "169. Cross Recessed Screws (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -8182,7 +8415,8 @@ const productTableData = [
     id: 640,
     sno: 640,
     isNumber: "IS 18471 (Part 2) :2023/ ISO 15482:1999",
-    product: "Fasteners - Cross Recessed Drilling Screws with Tapping Screw Thread Part 2 Countersunk Head",
+    product:
+      "Fasteners - Cross Recessed Drilling Screws with Tapping Screw Thread Part 2 Countersunk Head",
     notification: {
       title: "169. Cross Recessed Screws (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -8193,7 +8427,8 @@ const productTableData = [
     id: 641,
     sno: 641,
     isNumber: "IS 18471 (Part 3) :2023/ ISO 15483:1999",
-    product: "Fasteners - Cross Recessed Drilling Screws with Tapping Screw Thread Part 3 Raised Countersunk Head",
+    product:
+      "Fasteners - Cross Recessed Drilling Screws with Tapping Screw Thread Part 3 Raised Countersunk Head",
     notification: {
       title: "169. Cross Recessed Screws (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -8204,7 +8439,8 @@ const productTableData = [
     id: 642,
     sno: 642,
     isNumber: "IS 18476 : 2023/ ISO 15480:2019",
-    product: "Fasteners - Hexagon Washer Head Drilling Screws with Tapping Screw Thread",
+    product:
+      "Fasteners - Hexagon Washer Head Drilling Screws with Tapping Screw Thread",
     notification: {
       title: "169. Cross Recessed Screws (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -8248,7 +8484,8 @@ const productTableData = [
     id: 646,
     sno: 646,
     isNumber: "IS 7483 : 2018/ ISO 7045 : 2011",
-    product: "Pan Head Screws With Type H or Type Z Cross Recess – Product Grade A",
+    product:
+      "Pan Head Screws With Type H or Type Z Cross Recess – Product Grade A",
     notification: {
       title: "169. Cross Recessed Screws (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -8259,7 +8496,8 @@ const productTableData = [
     id: 647,
     sno: 647,
     isNumber: "IS 7485 (Part 1) : 2018/ ISO 7046 -1 : 2011",
-    product: "Countersunk Flat Head Screws (Common head Style) With Type H or Type Z Cross Recess - Product Grade A Part 1 Steel Screws of Property Class 4.8",
+    product:
+      "Countersunk Flat Head Screws (Common head Style) With Type H or Type Z Cross Recess - Product Grade A Part 1 Steel Screws of Property Class 4.8",
     notification: {
       title: "169. Cross Recessed Screws (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -8270,7 +8508,8 @@ const productTableData = [
     id: 648,
     sno: 648,
     isNumber: "7485 (Part 2) : 2018/ISO 7046-2 : 2011",
-    product: "Countersunk flat head screws (common head style) with type H or Type Z Cross Recess - Product Grade A part 2 Steel Screws of Property Class 8.8, Stainless Steel Screws and Non - Ferrous Metal Screws",
+    product:
+      "Countersunk flat head screws (common head style) with type H or Type Z Cross Recess - Product Grade A part 2 Steel Screws of Property Class 8.8, Stainless Steel Screws and Non - Ferrous Metal Screws",
     notification: {
       title: "169. Cross Recessed Screws (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -8281,7 +8520,8 @@ const productTableData = [
     id: 649,
     sno: 649,
     isNumber: "IS 7486 : 2018/ ISO 7047 : 2011",
-    product: "Raised countersunk head screws (Common Head Style) with type H or type Z cross recess - Product grade A",
+    product:
+      "Raised countersunk head screws (Common Head Style) with type H or type Z cross recess - Product grade A",
     notification: {
       title: "169. Cross Recessed Screws (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Cross-Recessed-Screws-Quality-Control-Order2024.pdf",
@@ -8324,15 +8564,18 @@ const productTableData = [
   {
     id: "safety-household-electrical-appliances-section",
     isSectionHeader: true,
-    sectionTitle: "Safety of Household, Commercial and Similar Electrical Appliances",
+    sectionTitle:
+      "Safety of Household, Commercial and Similar Electrical Appliances",
   },
   {
     id: 653,
     sno: 653,
     isNumber: "IS 302 (Part 1) : 2008",
-    product: "All Electrical Appliances - Vacuum Cleaners and Water Suction Cleaning Appliances, Spin Extractors, Cooking Ranges, Hobs, Ovens and Similar Appliances, Electrical Shavers Hair, Clippers and Similar Appliances, Tumbler Dryers, Warming Plates and Similar Appliances, Frying Pans, Deep Fat Fryers and similar appliances, Appliances for Heating Liquids, Massage Appliances, Electric Forced Convection Ovens, Steam Cookers and Steam-Convection Ovens, Electric Heating Tools, Electric Steam Cookers, Insect Killers, Electric Fence Energizers, Electric Call Bells and Buzzers for Indoor Use, Electric Water Boilers, Electric Coffee Makers, Electric Bean Slicers, Electric Berryjuice Extractors, Electric Can Openers, Electric Centrifugal Juicers, Electric Churn, Electric Citrusfruit Squeezers, Electric Coffee Mills not exceeding 500g hopper capacity, Electric Cream Whippers, Electric Egg Beaters, Electric Food Processors, Electric Grain Grinders not exceeding 3l hopper capacity, Electric Graters, Electric IceCream Machines including those for use in refrigerators and freezers, Electric Knife Sharpeners, Electric Knives, Electric Noodle Makers, Electric Potato Peelers, Electric Shredders, Electric Sieving Machines, Slicing Machines, Electric Hot Plates, Single Walled Baking Ovens, Low Speed Food Grinding Machines, Dishwashers, Floor Treatment Machines and Wet Scrubbing Machines, Food Waste Disposers, Blankets Pads Clothing and Similar Flexible Heating Appliances, Appliances for Skin Exposure to Optical Radiation, Commercial Electric Cooking Ranges Ovens Hobs and Hob Elements, Commercial Electric Doughnut Fryers and Deep Fat Fryers",
+    product:
+      "All Electrical Appliances - Vacuum Cleaners and Water Suction Cleaning Appliances, Spin Extractors, Cooking Ranges, Hobs, Ovens and Similar Appliances, Electrical Shavers Hair, Clippers and Similar Appliances, Tumbler Dryers, Warming Plates and Similar Appliances, Frying Pans, Deep Fat Fryers and similar appliances, Appliances for Heating Liquids, Massage Appliances, Electric Forced Convection Ovens, Steam Cookers and Steam-Convection Ovens, Electric Heating Tools, Electric Steam Cookers, Insect Killers, Electric Fence Energizers, Electric Call Bells and Buzzers for Indoor Use, Electric Water Boilers, Electric Coffee Makers, Electric Bean Slicers, Electric Berryjuice Extractors, Electric Can Openers, Electric Centrifugal Juicers, Electric Churn, Electric Citrusfruit Squeezers, Electric Coffee Mills not exceeding 500g hopper capacity, Electric Cream Whippers, Electric Egg Beaters, Electric Food Processors, Electric Grain Grinders not exceeding 3l hopper capacity, Electric Graters, Electric IceCream Machines including those for use in refrigerators and freezers, Electric Knife Sharpeners, Electric Knives, Electric Noodle Makers, Electric Potato Peelers, Electric Shredders, Electric Sieving Machines, Slicing Machines, Electric Hot Plates, Single Walled Baking Ovens, Low Speed Food Grinding Machines, Dishwashers, Floor Treatment Machines and Wet Scrubbing Machines, Food Waste Disposers, Blankets Pads Clothing and Similar Flexible Heating Appliances, Appliances for Skin Exposure to Optical Radiation, Commercial Electric Cooking Ranges Ovens Hobs and Hob Elements, Commercial Electric Doughnut Fryers and Deep Fat Fryers",
     notification: {
-      title: "170. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
+      title:
+        "170. Safety of Household, Commercial and Similar Electrical Appliances (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/09/Safety-of-Household-Commercial-and-Similar-Electrical-Appliances-QCO-2024.pdf",
       linkText: "S.O. 4098(E), dated 20th  September 2024",
     },
@@ -8434,7 +8677,8 @@ const productTableData = [
     id: 662,
     sno: 662,
     isNumber: "IS 15041:2001",
-    product: "Textiles – Flat woven webbing slings made of man-made fibres for general services",
+    product:
+      "Textiles – Flat woven webbing slings made of man-made fibres for general services",
     notification: {
       title: "172. Indutech (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Indutech-QCO-2024.pdf",
@@ -8516,7 +8760,8 @@ const productTableData = [
     id: 669,
     sno: 669,
     isNumber: "IS 5175:2022",
-    product: "Fibre Ropes — Polypropylene Split Film, Monofilament And Multifilament ( PP2 ) and Polypropylene High-Tenacity Multifilament ( PP3 ) —3-, 4-, 8- and 12- Strand Ropes",
+    product:
+      "Fibre Ropes — Polypropylene Split Film, Monofilament And Multifilament ( PP2 ) and Polypropylene High-Tenacity Multifilament ( PP3 ) —3-, 4-, 8- and 12- Strand Ropes",
     notification: {
       title: "173. Ropes and Cordages (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Ropes-and-Cordages-QCO-2024-1.pdf",
@@ -8556,7 +8801,8 @@ const productTableData = [
     isNumber: "IS 12933 (Part 1): 2003, IS 12933 (Part 2): 2003",
     product: "Solar Flat Plate Collector for Solar Water Heating Systems",
     notification: {
-      title: "174. Solar Thermal Systems, Devices and Components (Quality Control) Order, 2024",
+      title:
+        "174. Solar Thermal Systems, Devices and Components (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Solar-Thermal-Systems-Devices-and-Components-QCO-2024.pdf",
       linkText: "S.O. 4485(E), dated 14th  October 2024",
     },
@@ -8567,7 +8813,8 @@ const productTableData = [
     isNumber: "IS 16544: 2016",
     product: "All Glass Evacuated Tubes Solar Water Heating System",
     notification: {
-      title: "174. Solar Thermal Systems, Devices and Components (Quality Control) Order, 2024",
+      title:
+        "174. Solar Thermal Systems, Devices and Components (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Solar-Thermal-Systems-Devices-and-Components-QCO-2024.pdf",
       linkText: "S.O. 4485(E), dated 14th  October 2024",
     },
@@ -8576,9 +8823,11 @@ const productTableData = [
     id: 674,
     sno: 674,
     isNumber: "IS 16542: 2016",
-    product: "Storage Water Tank for All Glass Evacuated Tubes Solar Water Heating Systems",
+    product:
+      "Storage Water Tank for All Glass Evacuated Tubes Solar Water Heating Systems",
     notification: {
-      title: "174. Solar Thermal Systems, Devices and Components (Quality Control) Order, 2024",
+      title:
+        "174. Solar Thermal Systems, Devices and Components (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/10/Solar-Thermal-Systems-Devices-and-Components-QCO-2024.pdf",
       linkText: "S.O. 4485(E), dated 14th  October 2024",
     },
@@ -8630,7 +8879,8 @@ const productTableData = [
     id: 678,
     sno: 678,
     isNumber: "IS 302-2-76:1999",
-    product: "Safety of Household and similar electrical appliances - Part 2 particular requirement Sec 76 electric fence energizers",
+    product:
+      "Safety of Household and similar electrical appliances - Part 2 particular requirement Sec 76 electric fence energizers",
     notification: {
       title: "178. Electric Fence Energizers (Quality Control) Order, 2024",
       link: "https://www.bis.gov.in/wp-content/uploads/2024/11/Electric-Fence-Energizer-QCO-2024.pdf",
@@ -8664,7 +8914,8 @@ const productTableData = [
     isNumber: "IS 17875: 2022",
     product: "Stainless Steel Seamless pipes and tubes for general service",
     notification: {
-      title: "180. Stainless Steel Pipes and Tubes (Quality Control) Order, 2025",
+      title:
+        "180. Stainless Steel Pipes and Tubes (Quality Control) Order, 2025",
       link: "https://www.bis.gov.in/wp-content/uploads/2025/02/Stainless-Steel-Pipes-and-Tubes-QCO-2025.pdf",
       linkText: "S.O. 693(E), dated 11th February 2025",
     },
@@ -8675,7 +8926,8 @@ const productTableData = [
     isNumber: "IS 17876: 2022",
     product: "Stainless Steel Welded pipes and tubes for general service",
     notification: {
-      title: "180. Stainless Steel Pipes and Tubes (Quality Control) Order, 2025",
+      title:
+        "180. Stainless Steel Pipes and Tubes (Quality Control) Order, 2025",
       link: "https://www.bis.gov.in/wp-content/uploads/2025/02/Stainless-Steel-Pipes-and-Tubes-QCO-2025.pdf",
       linkText: "S.O. 693(E), dated 11th February 2025",
     },
@@ -8858,6 +9110,11 @@ const BISFMProductTable = () => {
 
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 py-6">
+      {/* Page Heading */}
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mb-4">
+        Products Under BIS Certification as per Indian Standards
+      </h2>
+
       {/* Search and Entries Per Page Controls */}
       <div className="flex flex-col md:flex-row gap-4 mb-6">
         {/* Search Bar */}
@@ -9095,7 +9352,7 @@ const BISFMProductTable = () => {
                                   >
                                     {amendment.text}
                                     {index <
-                                      item.notification.amendments.length - 1
+                                    item.notification.amendments.length - 1
                                       ? ", "
                                       : ""}
                                   </a>
@@ -9140,10 +9397,11 @@ const BISFMProductTable = () => {
                 <button
                   key={pageNum}
                   onClick={() => goToPage(pageNum)}
-                  className={`px-3 py-2 font-medium font-geist text-sm rounded-lg ${pageNum === currentPage
-                    ? "bg-[#1A8781] text-white"
-                    : "text-gray-700 bg-white border border-gray-300 hover:bg-gray-50"
-                    }`}
+                  className={`px-3 py-2 font-medium font-geist text-sm rounded-lg ${
+                    pageNum === currentPage
+                      ? "bg-[#1A8781] text-white"
+                      : "text-gray-700 bg-white border border-gray-300 hover:bg-gray-50"
+                  }`}
                 >
                   {pageNum}
                 </button>

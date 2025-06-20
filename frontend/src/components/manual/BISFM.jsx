@@ -25,7 +25,6 @@ import { Check } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
-import { BISCProductTable } from "./BISCertification";
 import Services from "./Services";
 import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
 
@@ -491,8 +490,9 @@ const BISFMContent = () => {
         <Services />
       </div>
       {/* <BISCProductTable /> */}
-      <BISFMProductTable />
-
+      <div id="product-table">
+        <BISFMProductTable />
+      </div>
 
       <ServiceFaq />
     </section>
@@ -1163,7 +1163,18 @@ const StandardizationSection = () => {
         Each category requires adherence to its corresponding Indian standard,
         which is tested during the BIS certification process, complete list of
         the products can be reached by{" "}
-        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+        <span
+          className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
+          onClick={() => {
+            const productTable = document.getElementById('product-table');
+            if (productTable) {
+              productTable.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }}
+        >
           Clicking Here
         </span>
       </p>
@@ -1347,7 +1358,18 @@ const StandardizationSection = () => {
       </h2>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
+        <span
+          className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
+          onClick={() => {
+            const productTable = document.getElementById('product-table');
+            if (productTable) {
+              productTable.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }}
+        >
           Click here
         </span>{" "}
         to check if your product covered under mandatory Indian BIS
