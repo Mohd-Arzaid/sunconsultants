@@ -1,4 +1,11 @@
-import { Bike, Globe, Play, User, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  Bike,
+  Globe,
+  Play,
+  User,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import whychooseus from "../assets/images/whychooseus.jpg";
 import React, { useState, useEffect } from "react";
 import Footer from "@/common/Footer";
@@ -6,7 +13,14 @@ import { motion, useAnimationControls } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Services from "@/components/manual/Services";
 
-
+// Import images for services
+import BISImage from "../assets/images/BIS.jpg";
+import CDSCO from "../assets/images/CDSCO.jpg";
+import BISCRS from "../assets/images/BISCRS.jpg";
+import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg";
+import EPRCertificate from "../assets/images/EPRCertificate.jpg";
+import LMPC from "../assets/images/LMPC.jpg";
+import ISIMark from "../assets/images/ISIMark.jpg";
 
 const About = () => {
   return (
@@ -124,7 +138,6 @@ const WhyChooseUs = () => {
         <div className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/30 hover:border-[#1A8781]/60 relative overflow-hidden transform md:hover:-translate-y-4">
           <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-
           <div className="bg-[#1A8781]/10 border border-[#1A8781]/30 group-hover:border-[#1A8781]/60 p-3 md:p-4 rounded-full h-fit w-fit mb-4 md:mb-6 group-hover:bg-[#1A8781]/20 transition-all duration-300">
             <User className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
@@ -197,8 +210,6 @@ const Stats = () => {
   return (
     <div className="max-w-[84rem] mx-auto  px-4 md:px-12 pb-16 md:pb-20">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8 ">
-
-
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             1500+
@@ -208,7 +219,6 @@ const Stats = () => {
           </p>
         </div>
 
-
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             4,999+
@@ -217,7 +227,6 @@ const Stats = () => {
             Projects Completed
           </p>
         </div>
-
 
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
@@ -283,64 +292,64 @@ export const OurServices = () => {
       title: "BIS Mark (ISI License) for Foreign Manufacturers",
       description:
         "Comprehensive ISI licensing solution for foreign manufacturers looking to enter the Indian market with quality-certified products.",
-      icon: "🏭",
-      path: "/services/bis-foreign-manufacturers"
+      icon: BISImage,
+      path: "/services/bis-foreign-manufacturers",
     },
     {
       id: 2,
       title: "Scheme X",
       description:
         "Specialized certification program for specific product categories requiring compliance with advanced quality and safety standards.",
-      icon: "🔍",
-      path: "/services/scheme-x"
+      icon: ISIMark,
+      path: "/services/scheme-x",
     },
     {
       id: 3,
       title: "ISI Mark BIS for Indian Manufacturers",
       description:
         "Domestic certification for Indian manufacturers ensuring products meet Bureau of Indian Standards quality and safety requirements.",
-      icon: "🇮🇳",
-      path: "/services/bis-indian-manufacturers"
+      icon: ISIMark,
+      path: "/services/bis-indian-manufacturers",
     },
     {
       id: 4,
       title: "BIS CRS Registration",
       description:
         "Compulsory Registration Scheme certification for electronic and IT products ensuring safety and quality compliance.",
-      icon: "💻",
-      path: "/services/bis-crs-registration"
+      icon: BISCRS,
+      path: "/services/bis-crs-registration",
     },
     {
       id: 5,
       title: "CDSCO Registration Certification",
       description:
         "Central Drugs Standard Control Organization approval for medical devices and pharmaceuticals in India.",
-      icon: "💊",
-      path: "/services/cdsco-registration-certification"
+      icon: CDSCO,
+      path: "/services/cdsco-registration-certification",
     },
     {
       id: 6,
       title: "Plastic Waste Management",
       description:
         "Comprehensive solutions for plastic waste management compliance, helping businesses meet environmental regulations.",
-      icon: "🌱",
-      path: "/services/plastic-waste-management"
+      icon: PlasticWasteManagement,
+      path: "/services/plastic-waste-management",
     },
     {
       id: 7,
       title: "EPR Certificate",
       description:
         "Extended Producer Responsibility certification for sustainable waste management and environmental compliance.",
-      icon: "♻️",
-      path: "/services/epr-certificate"
+      icon: EPRCertificate,
+      path: "/services/epr-certificate",
     },
     {
       id: 8,
       title: "LMPC Certificate",
       description:
         "Legal Metrology Packaged Commodities certification ensuring accurate measurement and proper labeling of packaged goods.",
-      icon: "⚖️",
-      path: "/services/lmpc-registration"
+      icon: LMPC,
+      path: "/services/lmpc-registration",
     },
   ];
 
@@ -406,8 +415,12 @@ export const OurServices = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-center w-full">
                     {/* Left content */}
                     <div className="flex flex-col gap-4 md:gap-6 order-2 md:order-1">
-                      <div className="hidden md:flex bg-white/80 backdrop-blur-sm w-16 h-16 md:w-24 md:h-24 rounded-2xl items-center justify-center shadow-lg text-4xl md:text-5xl mx-auto md:mx-0">
-                        {service.icon}
+                      <div className="hidden md:flex bg-white/80 backdrop-blur-sm w-16 h-16 md:w-24 md:h-24 rounded-2xl items-center justify-center shadow-lg mx-auto md:mx-0">
+                        <img
+                          src={service.icon}
+                          alt={service.title}
+                          className="w-12 h-12 md:w-20 md:h-20 rounded-full object-contain"
+                        />
                       </div>
                       <h3 className="font-playfair text-2xl md:text-4xl font-bold text-[#1e1e1e] text-center md:text-left">
                         {service.title}
@@ -434,9 +447,11 @@ export const OurServices = () => {
                       <div className="hidden md:block absolute -bottom-10 -right-10 w-60 h-60 bg-[#1A8781]/15 rounded-full"></div>
 
                       <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[200px] sm:h-[250px] md:h-[350px] flex items-center justify-center mb-6 md:mb-0">
-                        <div className="text-7xl md:text-9xl flex items-center justify-center">
-                          {service.icon}
-                        </div>
+                        <img
+                          src={service.icon}
+                          alt={service.title}
+                          className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 rounded-full object-contain"
+                        />
                       </div>
                     </div>
                   </div>
@@ -451,10 +466,11 @@ export const OurServices = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${activeIndex === index
-                  ? "bg-[#1A8781] w-10"
-                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
-                  }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
+                  activeIndex === index
+                    ? "bg-[#1A8781] w-10"
+                    : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                }`}
               ></button>
             ))}
           </div>
@@ -466,14 +482,19 @@ export const OurServices = () => {
             <div
               key={service.id || index}
               onClick={() => goToSlide(index)}
-              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${activeIndex === index
-                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-                }`}
+              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${
+                activeIndex === index
+                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+              }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
-                <div className="text-2xl md:text-3xl mb-0.5 md:mb-1">
-                  {service.icon}
+                <div className="mb-0.5 md:mb-1">
+                  <img
+                    src={service.icon}
+                    alt={service.title}
+                    className="w-8 h-8 md:w-12 md:h-12 rounded-full object-contain mx-auto"
+                  />
                 </div>
                 <h4 className="font-geist font-medium text-xs md:text-base leading-tight">
                   {service.title}
@@ -508,66 +529,73 @@ const Testimonials = () => {
       name: "Rajesh Kumar",
       role: "CEO, Tech Solutions Inc.",
       image: "https://randomuser.me/api/portraits/men/32.jpg",
-      content: "Sun Certifications India made our BIS certification process seamless. Their expertise and dedication helped us enter the Indian market with confidence.",
-      rating: 5
+      content:
+        "Sun Certifications India made our BIS certification process seamless. Their expertise and dedication helped us enter the Indian market with confidence.",
+      rating: 5,
     },
     {
       id: 2,
       name: "Priya Sharma",
       role: "Director, Global Exports",
       image: "https://randomuser.me/api/portraits/women/44.jpg",
-      content: "The team's professionalism and attention to detail in handling our LMPC certification was outstanding. Highly recommended!",
-      rating: 5
+      content:
+        "The team's professionalism and attention to detail in handling our LMPC certification was outstanding. Highly recommended!",
+      rating: 5,
     },
     {
       id: 3,
       name: "Michael Chen",
       role: "Operations Manager, Electronics Corp",
       image: "https://randomuser.me/api/portraits/men/67.jpg",
-      content: "As an international company, we needed reliable certification partners in India. Sun Certifications exceeded our expectations.",
-      rating: 5
+      content:
+        "As an international company, we needed reliable certification partners in India. Sun Certifications exceeded our expectations.",
+      rating: 5,
     },
     {
       id: 4,
       name: "Anita Patel",
       role: "Quality Manager, Pharma Solutions",
       image: "https://randomuser.me/api/portraits/women/68.jpg",
-      content: "Their expertise in CDSCO registration helped us navigate complex regulatory requirements with ease. Truly professional team!",
-      rating: 5
+      content:
+        "Their expertise in CDSCO registration helped us navigate complex regulatory requirements with ease. Truly professional team!",
+      rating: 5,
     },
     {
       id: 5,
       name: "David Wilson",
       role: "Head of Compliance, Global Tech",
       image: "https://randomuser.me/api/portraits/men/75.jpg",
-      content: "Sun Certifications's support in WPC certification was invaluable. They made the entire process smooth and efficient.",
-      rating: 5
+      content:
+        "Sun Certifications's support in WPC certification was invaluable. They made the entire process smooth and efficient.",
+      rating: 5,
     },
     {
       id: 6,
       name: "Sneha Reddy",
       role: "Export Manager, Electronics Ltd",
       image: "https://randomuser.me/api/portraits/women/33.jpg",
-      content: "The team's knowledge of TEC certification requirements saved us months of work. Excellent service and support!",
-      rating: 5
+      content:
+        "The team's knowledge of TEC certification requirements saved us months of work. Excellent service and support!",
+      rating: 5,
     },
     {
       id: 7,
       name: "James Anderson",
       role: "Sustainability Director, GreenTech",
       image: "https://randomuser.me/api/portraits/men/45.jpg",
-      content: "Their guidance on EPR authorization was comprehensive and helped us meet all environmental compliance requirements.",
-      rating: 5
+      content:
+        "Their guidance on EPR authorization was comprehensive and helped us meet all environmental compliance requirements.",
+      rating: 5,
     },
     {
       id: 8,
       name: "Meera Kapoor",
       role: "Product Manager, Consumer Goods",
       image: "https://randomuser.me/api/portraits/women/22.jpg",
-      content: "Sun Certifications's end-to-end certification support has been crucial for our market entry strategy. Highly professional team!",
-      rating: 5
-    }
-
+      content:
+        "Sun Certifications's end-to-end certification support has been crucial for our market entry strategy. Highly professional team!",
+      rating: 5,
+    },
   ];
 
   return (
@@ -579,7 +607,8 @@ const Testimonials = () => {
             What Our Clients Say
           </h2>
           <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
-            Hear from businesses that have successfully navigated the certification process with our expert guidance.
+            Hear from businesses that have successfully navigated the
+            certification process with our expert guidance.
           </p>
         </div>
 
@@ -608,7 +637,10 @@ const Testimonials = () => {
                   <div
                     key={testimonial.id}
                     className="min-w-[300px] md:min-w-[400px] bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/60 hover:border-[#1A8781]/80 relative overflow-hidden group"
-                    style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)' }}
+                    style={{
+                      boxShadow:
+                        "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                    }}
                   >
                     {/* Decorative elements */}
                     <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A8781]/10 rounded-bl-full -mr-8 -mt-8 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
@@ -658,4 +690,3 @@ const Testimonials = () => {
     </div>
   );
 };
-
