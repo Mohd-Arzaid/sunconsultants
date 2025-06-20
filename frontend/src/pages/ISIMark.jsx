@@ -16,7 +16,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
-import { Services } from "./Home";
+import Services from "../components/manual/Services";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const ISIMark = () => {
@@ -72,7 +72,18 @@ const BISISIHero = () => {
           </p>
 
           <div className="flex items-center -mt-2">
-            <div className="flex items-center cursor-pointer group">
+            <div
+              className="flex items-center cursor-pointer group"
+              onClick={() => {
+                const servicesSection = document.getElementById("services");
+                if (servicesSection) {
+                  servicesSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              }}
+            >
               <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3">
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
@@ -255,8 +266,8 @@ const BISISIIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -278,16 +289,16 @@ const BISISIIndex = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {item}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
                 }`}
             />
           </div>
@@ -311,9 +322,14 @@ const BISISIContent = () => {
           <ServiceContentRight />
         </div>
       </div>
-      <Services />
-      <BISCProductTable />
       <ServiceFaq />
+      <div id="product-table">
+        <BISCProductTable />
+      </div>
+
+      <div id="services">
+        <Services />
+      </div>
     </div>
   );
 };
