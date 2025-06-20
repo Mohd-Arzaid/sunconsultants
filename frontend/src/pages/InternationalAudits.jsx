@@ -61,8 +61,8 @@ const AuditHero = () => {
           </div>
         </button>
 
-        <a href="/contact">
-          <button className="w-full md:w-auto items-center gap-3 border-2 border-[#1A8781]/30 text-[#1A8781] py-3 px-8 rounded-full hover:border-[#1A8781] hover:bg-[#1A8781]/5 transition-all duration-300">
+        <a href="/contact" className="w-full md:w-auto">
+          <button className="w-full md:w-auto flex items-center justify-center gap-3 border-2 border-[#1A8781]/30 text-[#1A8781] py-3 px-8 rounded-full hover:border-[#1A8781] hover:bg-[#1A8781]/5 transition-all duration-300">
             <span className="font-medium font-geist">Contact Us</span>
           </button>
         </a>
@@ -167,11 +167,14 @@ const AuditGallery = () => {
         <div className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300">
           <div className="aspect-[4/3] flex items-center justify-center">
             <div className="text-center p-6">
-              <h3 className="text-gray-800 font-geist text-lg md:text-xl font-bold mb-1 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
-                Many More Audits Images
+              <h3 className="text-gray-800 font-geist text-lg md:text-xl font-bold mb-2 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
+                Many More Audits
               </h3>
-              <p className="text-gray-500 font-geist text-xs md:text-sm font-medium uppercase tracking-widest">
-                Coming Soon
+              <p className="text-gray-500 font-geist text-xs md:text-sm font-medium uppercase tracking-widest mb-1">
+                Conducted Worldwide
+              </p>
+              <p className="text-gray-400 font-geist text-xs italic">
+                Showcasing our extensive audit portfolio
               </p>
             </div>
           </div>
