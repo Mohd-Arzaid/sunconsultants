@@ -1808,7 +1808,7 @@ const LatestNews = () => {
               viewBox="0 0 511.995 511.995"
               xmlSpace="preserve"
               fill="#000000"
-              className="w-16 h-16 inline-block  align-center"
+              className="hidden md:block w-16 h-16 inline-block  align-center"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
