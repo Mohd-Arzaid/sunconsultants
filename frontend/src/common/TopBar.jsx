@@ -10,44 +10,35 @@ const TopBar = () => {
         <div className="flex items-center justify-center">
           <div className="flex items-center gap-8">
             <a
-              href="mailto:info@sunconsultants.co.in"
+              href="mailto:admin@indiancertifications.com"
               className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
             >
               <Mail className="w-4 h-4 mr-2" />
-              info@sunconsultants.co.in
+              admin@indiancertifications.com
             </a>
 
             <div className="w-px h-5 bg-white/30"></div>
 
-            <a
-              href="mailto:support@sunconsultants.co.in"
-              className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
-            >
-              <Mail className="w-4 h-4 mr-2" />
-              sunconsultantsinfo@gmail.com
-            </a>
-
-            <div className="w-px h-5 bg-white/30"></div>
 
             <a
-              href="tel:+919315973373"
+              href="tel:+918010505057"
               className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
             >
               <Phone className="w-4 h-4 mr-2" />
-              +91 93159 73373
+              +91 80105 05057
             </a>
           </div>
         </div>
 
         <div className="absolute right-12 top-1/2 -translate-y-1/2 flex items-center gap-4">
           <a
-            href="tel:+919315973373"
+            href="tel:+918010505057"
             className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-all duration-300 hover:scale-110"
           >
             <Phone className="w-6 h-6" />
           </a>
           <a
-            href="https://wa.me/919315973373"
+            href="https://wa.me/918010505057"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-all duration-300 hover:scale-110 hover:rotate-12"

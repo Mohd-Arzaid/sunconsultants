@@ -215,9 +215,9 @@ const Home = () => {
             },
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+91-9315973373",
+              telephone: "+91-8010505057",
               contactType: "customer service",
-              email: "info@sunconsultants.co.in",
+              email: "admin@indiancertifications.com",
             },
             sameAs: ["https://twitter.com/CertificationsSun"],
           })}

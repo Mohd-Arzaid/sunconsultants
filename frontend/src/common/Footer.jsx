@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              info@sunconsultants.co.in
+              admin@indiancertifications.com
             </span>{" "}
             or use one of the options below. We usually get back within 24 hours.
           </div>
@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="flex justify-center w-full">
             <div className="flex gap-6 flex-wrap items-center justify-center">
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/918010505057"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -55,7 +55,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="tel:+919876543210"
+                href="tel:+918010505057"
                 rel="noreferrer noopener"
               >
                 <svg
@@ -249,7 +249,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:arzaid010103@gmail.com?body=Hello"
+                href="mailto:admin@indiancertifications.com?body=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
               >

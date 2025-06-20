@@ -99,9 +99,9 @@ export const BISFM = () => {
               logo: "https://suncertifications.com/logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+91-9315973373",
+                telephone: "+91-8010505057",
                 contactType: "customer service",
-                email: "info@sunconsultants.co.in",
+                email: "admin@indiancertifications.com",
               },
             },
             areaServed: {

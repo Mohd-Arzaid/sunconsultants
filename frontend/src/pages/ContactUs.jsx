@@ -266,7 +266,7 @@ const ContactUs = () => {
               Email
             </h4>
             <p className="font-geist text-[#3C3C48] text-[16px] md:text-[20px] font-medium text-center">
-              info@sunconsultants.co.in
+              admin@indiancertifications.com
             </p>
           </div>
 
@@ -285,7 +285,7 @@ const ContactUs = () => {
               Phone Number
             </h4>
             <p className="font-geist text-[#3C3C48] text-[16px] md:text-[20px] font-medium text-center">
-              +91-9315973373
+              +91-8010505057
             </p>
           </div>
         </div>

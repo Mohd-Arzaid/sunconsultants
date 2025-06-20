@@ -951,12 +951,12 @@ const DocumentsSection = () => {
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Email
         </span>
-        info@sunconsultants.co.in | sunconsultantsinfo@gmail.com
+        admin@indiancertifications.com
         <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Phone
         </span>
-        +91-9315973373, 7303745057
+        +91-8010505057
       </div>
     </section>
   );
