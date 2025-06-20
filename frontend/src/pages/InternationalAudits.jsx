@@ -1,5 +1,5 @@
 import Footer from "@/common/Footer";
-import { Services } from "./Home";
+import Services from "../components/manual/Services";
 
 import BahrainAudit from "../assets/auditImages/Bahrain.png";
 import IndonesiaAudit from "../assets/auditImages/Indonesia.png";

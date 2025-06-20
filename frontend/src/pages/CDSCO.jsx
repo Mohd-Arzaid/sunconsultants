@@ -15,7 +15,7 @@ import { Separator } from "@/components/ui/separator";
 import { Check } from "lucide-react";
 import CDSCOOne from "../assets/images/CDSCOOne.png";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
-import { Services } from "./Home";
+import Services from "../components/manual/Services";
 
 const CDSCO = () => {
   return (

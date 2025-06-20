@@ -1,6 +1,6 @@
 import { Calendar } from "lucide-react";
 import Footer from '@/common/Footer';
-import { Services } from './Home';
+import Services from '../components/manual/Services';
 import Exhibition1 from "../assets/seminarImages/Exhibition-1.jpg"
 import Exhibition2 from "../assets/seminarImages/Exhibition-2.jpg"
 import Exhibition3 from "../assets/seminarImages/Exhibition-3.jpg"

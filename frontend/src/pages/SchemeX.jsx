@@ -11,7 +11,7 @@ import {
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISFMContentLeft, BISFMIndex, ServiceFaq } from "@/components/manual/BISFM";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
-import { Services } from "./Home";
+import Services from "../components/manual/Services";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 
@@ -540,13 +540,13 @@ export const SchemeX = () => {
 
     return (
         <div className="w-full h-screen">
-        
+
             <SchemeXHero />
             <BISFMIndex />
             <SchemeXContent />
             <Footer />
             <ScrollToTopButton />
-        
+
         </div>
     );
 };

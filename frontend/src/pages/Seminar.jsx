@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from "@/common/Footer";
 import { GraduationCap } from "lucide-react";
-import { Services } from './Home';
+import Services from '../components/manual/Services';
 
 const Seminar = () => {
   return (
