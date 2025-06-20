@@ -388,7 +388,7 @@ export const OurServices = () => {
           {/* Left Arrow */}
           <button
             onClick={prevSlide}
-            className="absolute top-1/2 left-2 md:-left-6 -translate-y-1/2 z-20 rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#1A8781] bg-white/80 hover:bg-[#1A8781]/10 transition-all duration-300 shadow-lg"
+            className="absolute top-1/2 -left-5 md:-left-6 -translate-y-1/2 z-20 rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#1A8781] bg-white/80 hover:bg-[#1A8781]/10 transition-all duration-300 shadow-lg"
             aria-label="Previous"
           >
             <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781]" />
@@ -396,7 +396,7 @@ export const OurServices = () => {
           {/* Right Arrow */}
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 right-2 md:-right-6 -translate-y-1/2 z-20 rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#1A8781] bg-[#1A8781] hover:bg-[#125E5A] transition-all duration-300 shadow-lg"
+            className="absolute top-1/2 -right-5 md:-right-6 -translate-y-1/2 z-20 rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#1A8781] bg-[#1A8781] hover:bg-[#125E5A] transition-all duration-300 shadow-lg"
             aria-label="Next"
           >
             <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-white" />
@@ -466,11 +466,10 @@ export const OurServices = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
-                  activeIndex === index
-                    ? "bg-[#1A8781] w-10"
-                    : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${activeIndex === index
+                  ? "bg-[#1A8781] w-10"
+                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                  }`}
               ></button>
             ))}
           </div>
@@ -482,11 +481,10 @@ export const OurServices = () => {
             <div
               key={service.id || index}
               onClick={() => goToSlide(index)}
-              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${
-                activeIndex === index
-                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-              }`}
+              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${activeIndex === index
+                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+                }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
                 <div className="mb-0.5 md:mb-1">
