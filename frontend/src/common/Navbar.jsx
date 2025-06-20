@@ -35,9 +35,6 @@ import {
   X,
   FileCheck,
   GalleryHorizontal,
-  Laptop,
-  MessageSquare,
-  MessageCircle,
 } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
@@ -398,6 +395,56 @@ const Navbar = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-base  uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors">
+                  FAQs
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="p-4 w-[265px]">
+                    <NavigationMenuLink asChild>
+                      <Link to="/faq-bis-licence" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <Award className="w-4 h-4 mr-2" />
+                          BIS Licence
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/faq-bis-registration" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <CheckCircle className="w-4 h-4 mr-2" />
+                          BIS Registration
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/faq-cdsco-licence" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <FileCheck className="w-4 h-4 mr-2" />
+                          CDSCO Licence
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/faq-cdsco-registration" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <BookText className="w-4 h-4 mr-2" />
+                          CDSCO Registration
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link to="/faq-foreign-manufacturer-bis" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors  hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <ShieldCheck className="w-4 h-4 mr-2 " />
+                          <span>Foreign Manufacturer BIS</span>
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
                 <Link to="/contact">
                   <Button
                     variant="link"
@@ -408,16 +455,6 @@ const Navbar = () => {
                 </Link>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <Link to="/">
-                  <Button
-                    variant="link"
-                    className="text-base uppercase text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors"
-                  >
-                    FAQs
-                  </Button>
-                </Link>
-              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -631,9 +668,92 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
               </ul>
             </AccordionContent>
           </AccordionItem>
+
+          <AccordionItem value="item-4" className="border-b-0">
+            <AccordionTrigger className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:no-underline transition-colors w-full justify-between py-3 px-4 hover:bg-neutral-100 rounded-md">
+              FAQs
+            </AccordionTrigger>
+            <AccordionContent className="pt-1 pb-0 pl-4 pr-0">
+              <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto">
+                <li className="w-full">
+                  <Link
+                    to="/faq-bis-licence"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <Award className="w-4 h-4 mr-2" />
+                      BIS Licence
+                    </Button>
+                  </Link>
+                </li>
+                <li className="w-full">
+                  <Link
+                    to="/faq-bis-registration"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <CheckCircle className="w-4 h-4 mr-2" />
+                      BIS Registration
+                    </Button>
+                  </Link>
+                </li>
+                <li className="w-full">
+                  <Link
+                    to="/faq-cdsco-licence"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <FileCheck className="w-4 h-4 mr-2" />
+                      CDSCO Licence
+                    </Button>
+                  </Link>
+                </li>
+                <li className="w-full">
+                  <Link
+                    to="/faq-cdsco-registration"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <BookText className="w-4 h-4 mr-2" />
+                      CDSCO Registration
+                    </Button>
+                  </Link>
+                </li>
+                <li className="w-full">
+                  <Link
+                    to="/faq-foreign-manufacturer-bis"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <ShieldCheck className="w-4 h-4 mr-2" />
+                      Foreign Manufacturer BIS
+                    </Button>
+                  </Link>
+                </li>
+              </ul>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
-
-
 
         <Link to="/contact" className="block w-full" onClick={handleLinkClick}>
           <Button
@@ -641,15 +761,6 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
             className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
           >
             Contact Us
-          </Button>
-        </Link>
-
-        <Link to="/" className="block w-full" onClick={handleLinkClick}>
-          <Button
-            variant="ghost"
-            className="text-base text-foreground/80 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-3"
-          >
-            FAQs
           </Button>
         </Link>
       </div>
