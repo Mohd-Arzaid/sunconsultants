@@ -288,10 +288,10 @@ const BEEContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+      <ServiceFaq />
       <div id="services">
         <Services />
       </div>
-      <ServiceFaq />
     </div>
   );
 };

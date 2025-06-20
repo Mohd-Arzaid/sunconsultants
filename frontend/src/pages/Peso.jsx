@@ -296,10 +296,10 @@ const PESOContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+      <ServiceFaq />
       <div id="services">
         <Services />
       </div>
-      <ServiceFaq />
     </div>
   );
 };

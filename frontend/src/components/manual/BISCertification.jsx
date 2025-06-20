@@ -1452,14 +1452,14 @@ const PointsList = ({ points, heading }) => {
       </p>
       <div className="flex flex-col mt-[16px] md:mt-[24px] gap-2">
         {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2">
+          <li key={index} className="flex items-start gap-2">
             <div className="bg-green-500/10 p-2 rounded-full">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
               {point}
             </p>
-          </div>
+          </li>
         ))}
       </div>
     </div>
@@ -1479,14 +1479,14 @@ const PointsListTwo = ({ points, heading }) => {
       </p>
       <div className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
         {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2">
+          <li key={index} className="flex items-start gap-2">
             <div className="bg-green-500/10 p-2 rounded-full">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
               {point}
             </p>
-          </div>
+          </li>
         ))}
       </div>
     </div>

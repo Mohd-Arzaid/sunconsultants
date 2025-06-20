@@ -405,11 +405,11 @@ const BISCRSContent = () => {
           <ServiceContentRight />
         </div>
       </div>
+      <ServiceFaq />
+      <CISProductTable />
       <div id="services">
         <Services />
       </div>
-      <CISProductTable />
-      <ServiceFaq />
     </div>
   );
 };

@@ -563,12 +563,11 @@ const SchemeXContent = () => {
                     <CDSCOContentRight />
                 </div>
             </div>
+            <ServiceFaq />
+            <SchemeXTables />
             <div id="services">
                 <Services />
             </div>
-            <SchemeXTables />
-
-            <ServiceFaq />
         </section>
     )
 }

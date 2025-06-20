@@ -293,10 +293,10 @@ const CBContent = () => {
           <ServiCBContentRight />
         </div>
       </div>
+      <ServiCBFaq />
       <div id="services">
         <Services />
       </div>
-      <ServiCBFaq />
     </div>
   );
 };
