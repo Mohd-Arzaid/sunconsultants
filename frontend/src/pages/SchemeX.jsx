@@ -14,6 +14,7 @@ import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 import Services from "../components/manual/Services";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
+import AboutAuthor from "../components/common/AboutAuthor";
 
 const productsData = [
     {
@@ -567,6 +568,9 @@ const SchemeXContent = () => {
             <SchemeXTables />
             <div id="services">
                 <Services />
+            </div>
+            <div className="max-w-[88rem] mx-auto px-4 md:px-12">
+                <AboutAuthor />
             </div>
         </section>
     )

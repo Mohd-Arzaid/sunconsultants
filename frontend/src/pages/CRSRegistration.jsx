@@ -17,6 +17,7 @@ import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
 import Services from "../components/manual/Services";
+import AboutAuthor from "../components/common/AboutAuthor";
 import {
   Table,
   TableBody,
@@ -898,6 +899,8 @@ const BISCRSContentLeft = () => {
 
         {/* Review Section */}
         <ReviewSection />
+
+        <AboutAuthor />
 
       </div>
     </div>

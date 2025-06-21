@@ -17,6 +17,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
+import AboutAuthor from "../common/AboutAuthor";
 
 export const PlasticWaste = () => {
   return (
@@ -533,6 +534,9 @@ const PWMRContentLeft = () => {
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
         <ReviewSection />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        <AboutAuthor />
       </div>
     </div>
   );

@@ -14,6 +14,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "../components/manual/Services";
+import AboutAuthor from "../components/common/AboutAuthor";
 
 const CBCertification = () => {
   return (
@@ -649,6 +650,8 @@ const CBContentLeft = () => {
         {/* Compliance Section */}
         <ComplianceSection />
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        <AboutAuthor />
       </div>
     </div>
   );

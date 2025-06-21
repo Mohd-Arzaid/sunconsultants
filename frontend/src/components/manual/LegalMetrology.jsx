@@ -16,6 +16,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
+import AboutAuthor from "../common/AboutAuthor";
 
 export const LegalMetrology = () => {
   return (
@@ -622,6 +623,8 @@ const LMCContentLeft = () => {
 
         {/* Review Section */}
         <ReviewSection />
+
+        <AboutAuthor />
       </div>
     </div>
   );

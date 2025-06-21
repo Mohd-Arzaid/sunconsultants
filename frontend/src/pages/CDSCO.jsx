@@ -16,6 +16,7 @@ import { Check } from "lucide-react";
 import CDSCOOne from "../assets/images/CDSCOOne.png";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 import Services from "../components/manual/Services";
+import AboutAuthor from "../components/common/AboutAuthor";
 
 const CDSCO = () => {
   return (
@@ -540,6 +541,8 @@ const CDSCOContentLeft = () => {
 
         {/* Review Section */}
         <ReviewSection />
+
+        <AboutAuthor />
       </div>
     </div>
   );

@@ -24,6 +24,7 @@ import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import PropTypes from "prop-types";
 import Services from "./Services";
+import AboutAuthor from "../common/AboutAuthor";
 
 
 export const BISCertification = () => {
@@ -1439,6 +1440,10 @@ const BISCContentLeft = () => {
 
         {/* Review Section */}
         <ReviewSection />
+
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        <AboutAuthor />
       </div>
     </div>
   );

@@ -15,6 +15,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "../components/manual/Services";
+import AboutAuthor from "../components/common/AboutAuthor";
 
 const Peso = () => {
   return (
@@ -543,6 +544,8 @@ const PESOContentLeft = () => {
 
         {/* Review Section */}
         <ReviewSection />
+
+        <AboutAuthor />
       </div>
     </div>
   );

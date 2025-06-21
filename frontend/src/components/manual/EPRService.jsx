@@ -14,6 +14,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
+import AboutAuthor from "../common/AboutAuthor";
 
 export const EPRService = () => {
   return (
@@ -536,6 +537,8 @@ const EPRContentLeft = () => {
 
         {/* Review Section */}
         <ReviewSection />
+
+        <AboutAuthor />
       </div>
     </div>
   );

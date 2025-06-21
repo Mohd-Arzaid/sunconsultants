@@ -18,6 +18,7 @@ import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
 import Services from "../components/manual/Services";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import AboutAuthor from "../components/common/AboutAuthor";
 
 const ISIMark = () => {
   return (
@@ -539,6 +540,8 @@ const BISISIContentLeft = () => {
         <CostingSection />
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+        <AboutAuthor />
       </div>
     </article>
   );
