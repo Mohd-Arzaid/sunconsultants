@@ -640,7 +640,7 @@ const WebinarSeminarMarquee = () => {
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <Marquee
-            className="flex  items-center pt-4 pb-8 [--duration:35s]"
+            className="flex  items-center pt-4 pb-8 [--duration:70s]"
             pauseOnHover={true}
           >
             {galleryImages.map((item) => (
@@ -739,7 +739,7 @@ const AuditsMarquee = () => {
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <Marquee
-            className="flex items-center pt-4 pb-8 [--duration:30s]"
+            className="flex items-center pt-4 pb-8 [--duration:60s]"
             pauseOnHover={true}
           >
             {galleryImages.map((item) => (
