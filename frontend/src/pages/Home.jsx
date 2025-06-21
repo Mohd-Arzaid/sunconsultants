@@ -46,7 +46,7 @@ import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg"
 import EPRCertificate from "../assets/images/EPRCertificate.jpg";
 import LMPC from "../assets/images/LMPC.jpg";
 import ISIMark from "../assets/images/ISIMark.jpg";
-import { BoxReveal } from "@/components/magicui/box-reveal";
+
 import { Separator } from "@/components/ui/separator";
 
 // Contact Import
@@ -1289,30 +1289,26 @@ export const Services = () => {
     <div className="pt-10 md:pt-8 pb-8  md:pb-16 bg-white overflow-x-hidden ">
       <div className="max-w-[82rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            {/* <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
+          {/* <h2 className="text-[30px] md:text-[48px] font-bold font-roboto md:font-roboto  text-center text-[#1E1E1E] ">
               Our Services
             </h2> */}
-            <h2 className="text-[25px] uppercase md:text-[36px] font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
-              Our Services
-            </h2>
-          </BoxReveal>
+          <h2 className="text-[25px] uppercase md:text-[36px] font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
+            Our Services
+          </h2>
 
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            {/* <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center"> */}
-            <div className="hidden md:flex items-center w-[760px] gap-3 h-[35px] mx-auto justify-center">
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-              {/* <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+          {/* <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center"> */}
+          <div className="hidden md:flex items-center w-[760px] gap-3 h-[35px] mx-auto justify-center">
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            {/* <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
                 India's Best Certificate Consultant
               </span> */}
 
-              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's most trusted partner for certifications
-              </span>
+            <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+              India's most trusted partner for certifications
+            </span>
 
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-            </div>
-          </BoxReveal>
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+          </div>
         </div>
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-4 gap-x-10 px-4 md:px-0 gap-y-28 md:gap-y-24">
@@ -1604,30 +1600,24 @@ const Contact = () => {
     <div className=" pt-8 md:pt-8 pb-8 md:pb-8 overflow-x-hidden ">
       <div className="max-w-[88rem] px-4 md:px-8 w-full flex flex-col md:flex-row  items-center justify-between mx-auto">
         <div className="w-full md:w-1/2">
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <div className="hidden md:flex w-full items-center gap-3">
-              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's most trusted partner for certifications
-              </span>
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-            </div>
-          </BoxReveal>
+          <div className="hidden md:flex w-full items-center gap-3">
+            <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+              India's most trusted partner for certifications
+            </span>
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+          </div>
 
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            {/* <h2 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
+          {/* <h2 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
               Contact Us
             </h2> */}
-            <h2 className="text-[25px] uppercase md:text-[36px]  font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
-              Contact Us
-            </h2>
-          </BoxReveal>
+          <h2 className="text-[25px] uppercase md:text-[36px]  font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
+            Contact Us
+          </h2>
 
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <p className="font-medium font-poppins text-[17px]  md:text-[20px]  text-[#996C6C]">
-              Want to contact our team and book a call?
-              <span className="text-black"> Try it now</span>
-            </p>
-          </BoxReveal>
+          <p className="font-medium font-poppins text-[17px]  md:text-[20px]  text-[#996C6C]">
+            Want to contact our team and book a call?
+            <span className="text-black"> Try it now</span>
+          </p>
 
           <form
             onSubmit={handleFormSubmit}
@@ -1967,41 +1957,35 @@ const Countries = () => {
           {/* Left Side */}
           <div className="w-full md:max-w-[383px] flex flex-col gap-[30px] items-center text-center md:items-start md:text-left ">
             <div className="flex flex-col gap-2 md:gap-[20px]">
-              <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-                {/* <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
+              {/* <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[43px]">
                   Countries We Serve Worldwide
                 </h2> */}
-                <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[40px]">
-                  Glimpse of the Countries we have Served In
-                </h2>
-              </BoxReveal>
+              <h2 className="font-roboto leading-tight font-bold text-[30px] md:text-[40px]">
+                Glimpse of the Countries we have Served In
+              </h2>
 
-              <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-                <p className="font-poppins font-medium text-base md:text-[19px] text-[#008080]">
-                  Delivering excellence everywhere.
-                </p>
-              </BoxReveal>
+              <p className="font-poppins font-medium text-base md:text-[19px] text-[#008080]">
+                Delivering excellence everywhere.
+              </p>
             </div>
 
-            <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-              <div className="flex gap-4 items-center ">
-                <button
-                  onClick={handlePreviousClick}
-                  className="rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#160E34]"
-                >
-                  <ChevronLeft className="hidden md:block" />
-                  <ChevronLeft className="block md:hidden size={20}" />
-                </button>
+            <div className="flex gap-4 items-center ">
+              <button
+                onClick={handlePreviousClick}
+                className="rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#160E34]"
+              >
+                <ChevronLeft className="hidden md:block" />
+                <ChevronLeft className="block md:hidden size={20}" />
+              </button>
 
-                <button
-                  onClick={handleNextClick}
-                  className="rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center bg-[#160E34] border-2 border-[#160E34]"
-                >
-                  <ChevronRight className="hidden md:block text-white" />
-                  <ChevronRight className="block md:hidden size-4 text-white" />
-                </button>
-              </div>
-            </BoxReveal>
+              <button
+                onClick={handleNextClick}
+                className="rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center bg-[#160E34] border-2 border-[#160E34]"
+              >
+                <ChevronRight className="hidden md:block text-white" />
+                <ChevronRight className="block md:hidden size-4 text-white" />
+              </button>
+            </div>
           </div>
 
           <div className="w-full px-0 md:px-[22px] py-3 md:pt-14 md:pb-10  overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
@@ -2175,21 +2159,17 @@ export const WhatsOurCustomersSaySection = () => {
       {/* <div className="custom-radial-gradient pt-10 pb-8 "> */}
       <div className="max-w-[88rem] px-8 w-full mx-auto ">
         <div className="flex flex-col items-center justify-center">
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-roboto  text-center text-[#1E1E1E] ">
-              Our Testimonials
-            </h2>
-          </BoxReveal>
+          <h2 className="text-[30px] md:text-[48px] font-bold font-roboto  text-center text-[#1E1E1E] ">
+            Our Testimonials
+          </h2>
 
-          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                What our clients have to say
-              </span>
-              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
-            </div>
-          </BoxReveal>
+          <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+              What our clients have to say
+            </span>
+            <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+          </div>
         </div>
 
         {/* Testimonials Scroll Container */}
