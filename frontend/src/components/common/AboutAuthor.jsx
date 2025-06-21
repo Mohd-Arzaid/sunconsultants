@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Award, Clock } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 const AboutAuthor = () => {
     return (
@@ -11,9 +11,6 @@ const AboutAuthor = () => {
                 <div className="relative z-10">
                     {/* Header */}
                     <div className="flex items-center gap-3 mb-4">
-                        <div className="w-6 h-6 bg-gradient-to-br from-[#1A8781] to-[#125E5A] rounded-lg flex items-center justify-center">
-                            <Award className="w-4 h-4 text-white" />
-                        </div>
                         <h3 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781]">
                             About the Author
                         </h3>
@@ -34,14 +31,12 @@ const AboutAuthor = () => {
                         {/* Experience and achievements with subtle cards */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
                             <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
-                                <Clock className="w-4 h-4 text-[#1A8781] flex-shrink-0" />
                                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
                                     <span className="font-medium">Experience:</span> 10+ years & Handled 1000+ projects
                                 </p>
                             </div>
 
                             <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
-                                <Award className="w-4 h-4 text-[#1A8781] flex-shrink-0" />
                                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
                                     Awarded by many Indian and International organisations
                                 </p>
