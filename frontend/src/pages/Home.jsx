@@ -1610,7 +1610,7 @@ const Contact = () => {
           {/* <h2 className="text-[30px]  md:text-[48px] font-bold font-roboto text-[#1E1E1E] ">
               Contact Us
             </h2> */}
-          <h2 className="text-[25px] uppercase md:text-[36px]  font-bold font-inter md:font-roboto  text-center text-[#1E1E1E] ">
+          <h2 className="text-[25px] uppercase md:text-[36px]  font-bold font-inter md:font-roboto text-[#1E1E1E] ">
             Contact Us
           </h2>
 
