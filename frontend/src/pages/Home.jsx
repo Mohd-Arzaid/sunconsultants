@@ -431,12 +431,21 @@ const CertificationAndAchievements = () => {
                         "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
                     }}
                   >
-                    <div className="relative w-full h-[140px] md:h-[160px] overflow-hidden">
+                    <div className="relative w-full h-[140px] md:h-[160px] overflow-hidden bg-gray-200">
                       <img
                         src={item.image}
                         alt={item.title}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-
+                        style={{
+                          imageRendering: "auto",
+                          opacity: "0",
+                          transition: "opacity 0.3s ease-in-out",
+                        }}
+                        onLoad={(e) => {
+                          e.target.style.opacity = "1";
+                        }}
                       />
                     </div>
                   </div>
@@ -652,12 +661,21 @@ const WebinarSeminarMarquee = () => {
                     "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
                 }}
               >
-                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
+                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden bg-gray-200">
                   <img
                     src={item.image}
                     alt={item.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-
+                    style={{
+                      imageRendering: "auto",
+                      opacity: "0",
+                      transition: "opacity 0.3s ease-in-out",
+                    }}
+                    onLoad={(e) => {
+                      e.target.style.opacity = "1";
+                    }}
                   />
                   {/* Gradient overlay for title */}
                   <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
@@ -739,7 +757,7 @@ const AuditsMarquee = () => {
         {/* Marquee for desktop, scroll for mobile */}
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <Marquee
-            className="flex items-center pt-4 pb-8 [--duration:60s]"
+            className="flex items-center pt-4 pb-8 [--duration:80s]"
             pauseOnHover={true}
           >
             {galleryImages.map((item) => (
@@ -751,12 +769,21 @@ const AuditsMarquee = () => {
                     "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
                 }}
               >
-                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden">
+                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden bg-gray-200">
                   <img
                     src={item.image}
                     alt={item.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-
+                    style={{
+                      imageRendering: "auto",
+                      opacity: "0",
+                      transition: "opacity 0.3s ease-in-out",
+                    }}
+                    onLoad={(e) => {
+                      e.target.style.opacity = "1";
+                    }}
                   />
                   {/* Gradient overlay for title */}
                   <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
