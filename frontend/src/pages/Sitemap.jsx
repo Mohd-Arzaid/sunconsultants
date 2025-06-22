@@ -42,6 +42,7 @@ const sitemapSections = [
             { name: "Contact Us", path: "/contact" },
             { name: "Privacy Policy", path: "/privacy-policy" },
             { name: "Terms and Conditions", path: "/terms-and-conditions" },
+            { name: "404 Error Page", path: "/404" },
         ],
     },
     {
