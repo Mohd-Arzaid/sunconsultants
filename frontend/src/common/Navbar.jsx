@@ -50,11 +50,11 @@ export const categories = [
     link: "/what-is-crs-bis-or-crs-registration",
     icon: <ShieldCheck className="w-4 h-4 mr-2" />,
   },
-  // {
-  //   name: "CE Certification",
-  //   link: "/ce-certification",
-  //   icon: <ShieldCheck className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "CE Certification",
+    link: "/ce-certification",
+    icon: <ShieldCheck className="w-4 h-4 mr-2" />,
+  },
 
   {
     name: "ISI Mark (Indian)",
@@ -62,17 +62,17 @@ export const categories = [
     icon: <Award className="w-4 h-4 mr-2" />,
   },
 
-  // {
-  //   name: "EPR Registration",
-  //   link: "/a-guide-on-how-to-obtain-epr-certificate",
-  //   icon: <Recycle className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "EPR Registration",
+    link: "/a-guide-on-how-to-obtain-epr-certificate",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "ROHS",
-  //   link: "/restriction-of-hazardous-substance-rohs-certificate",
-  //   icon: <Radiation className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "ROHS",
+    link: "/restriction-of-hazardous-substance-rohs-certificate",
+    icon: <Radiation className="w-4 h-4 mr-2" />,
+  },
 
   {
     name: "BIS Certification",
@@ -80,71 +80,71 @@ export const categories = [
     icon: <CheckCircle className="w-4 h-4 mr-2" />,
   },
 
-  // {
-  //   name: "Plastic Waste",
-  //   link: "/epr-certificate-for-plastic-waste-management-pwm",
-  //   icon: <Recycle className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "Plastic Waste",
+    link: "/epr-certificate-for-plastic-waste-management-pwm",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "EMI/EMC",
-  //   link: "/emi-emc-certification",
-  //   icon: <Cpu className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "EMI/EMC",
+    link: "/emi-emc-certification",
+    icon: <Cpu className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "CDSCO Registration",
-  //   link: "/cdsco-registration-certification",
-  //   icon: <FileWarning className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "CDSCO Registration",
+    link: "/cdsco-registration-certification",
+    icon: <FileWarning className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "Battery Waste",
-  //   link: "/epr-certificate-for-battery-waste-management-bwm",
-  //   icon: <Battery className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "Battery Waste",
+    link: "/epr-certificate-for-battery-waste-management-bwm",
+    icon: <Battery className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "TEC",
-  //   link: "/information-about-tec-certificate-mtcte",
-  //   icon: <Radio className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "TEC",
+    link: "/information-about-tec-certificate-mtcte",
+    icon: <Radio className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "LMPC Registration",
-  //   link: "/a-guide-on-how-to-obtain-lmpc-certificate",
-  //   icon: <BookText className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "LMPC Registration",
+    link: "/a-guide-on-how-to-obtain-lmpc-certificate",
+    icon: <BookText className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "PESO",
-  //   link: "/information-about-peso-certification-peso-license-india",
-  //   icon: <Flame className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "PESO",
+    link: "/information-about-peso-certification-peso-license-india",
+    icon: <Flame className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "BEE",
-  //   link: "/bee-certification",
-  //   icon: <Zap className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "BEE",
+    link: "/bee-certification",
+    icon: <Zap className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "Legal Metrology",
-  //   link: "/what-is-legal-metrology-or-lmpc-certificate",
-  //   icon: <Scale className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "Legal Metrology",
+    link: "/what-is-legal-metrology-or-lmpc-certificate",
+    icon: <Scale className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "WPC",
-  //   link: "/information-about-wpc-certificate-eta-approval",
-  //   icon: <Wifi className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "WPC",
+    link: "/information-about-wpc-certificate-eta-approval",
+    icon: <Wifi className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "CB Certification",
-  //   link: "/cb-certification",
-  //   icon: <Award className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "CB Certification",
+    link: "/cb-certification",
+    icon: <Award className="w-4 h-4 mr-2" />,
+  },
 ];
 
 export const categoriesMobile = [
@@ -166,87 +166,87 @@ export const categoriesMobile = [
     icon: <CheckCircle className="w-4 h-4 mr-2" />,
   },
 
-  // {
-  //   name: "CDSCO Registration",
-  //   link: "/cdsco-registration-certification",
-  //   icon: <FileWarning className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "CDSCO Registration",
+    link: "/cdsco-registration-certification",
+    icon: <FileWarning className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "LMPC Registration",
-  //   link: "/a-guide-on-how-to-obtain-lmpc-certificate",
-  //   icon: <BookText className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "LMPC Registration",
+    link: "/a-guide-on-how-to-obtain-lmpc-certificate",
+    icon: <BookText className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "Legal Metrology",
-  //   link: "/what-is-legal-metrology-or-lmpc-certificate",
-  //   icon: <Scale className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "Legal Metrology",
+    link: "/what-is-legal-metrology-or-lmpc-certificate",
+    icon: <Scale className="w-4 h-4 mr-2" />,
+  },
 
   {
     name: "CRS Registration",
     link: "/what-is-crs-bis-or-crs-registration",
     icon: <ShieldCheck className="w-4 h-4 mr-2" />,
   },
-  // {
-  //   name: "EPR Registration",
-  //   link: "/a-guide-on-how-to-obtain-epr-certificate",
-  //   icon: <Recycle className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "EPR Registration",
+    link: "/a-guide-on-how-to-obtain-epr-certificate",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "Plastic Waste",
-  //   link: "/epr-certificate-for-plastic-waste-management-pwm",
-  //   icon: <Recycle className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "Plastic Waste",
+    link: "/epr-certificate-for-plastic-waste-management-pwm",
+    icon: <Recycle className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "Battery Waste",
-  //   link: "/epr-certificate-for-battery-waste-management-bwm",
-  //   icon: <Battery className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "Battery Waste",
+    link: "/epr-certificate-for-battery-waste-management-bwm",
+    icon: <Battery className="w-4 h-4 mr-2" />,
+  },
 
-  // {
-  //   name: "PESO",
-  //   link: "/information-about-peso-certification-peso-license-india",
-  //   icon: <Flame className="w-4 h-4 mr-2" />,
-  // },
-  // {
-  //   name: "WPC",
-  //   link: "/information-about-wpc-certificate-eta-approval",
-  //   icon: <Wifi className="w-4 h-4 mr-2" />,
-  // },
-  // {
-  //   name: "CE Certification",
-  //   link: "/ce-certification",
-  //   icon: <ShieldCheck className="w-4 h-4 mr-2" />,
-  // },
-  // {
-  //   name: "ROHS",
-  //   link: "/restriction-of-hazardous-substance-rohs-certificate",
-  //   icon: <Radiation className="w-4 h-4 mr-2" />,
-  // },
-  // {
-  //   name: "EMI/EMC",
-  //   link: "/emi-emc-certification",
-  //   icon: <Cpu className="w-4 h-4 mr-2" />,
-  // },
-  // {
-  //   name: "TEC",
-  //   link: "/information-about-tec-certificate-mtcte",
-  //   icon: <Radio className="w-4 h-4 mr-2" />,
-  // },
-  // {
-  //   name: "BEE",
-  //   link: "/bee-certification",
-  //   icon: <Zap className="w-4 h-4 mr-2" />,
-  // },
-  // {
-  //   name: "CB Certification",
-  //   link: "/cb-certification",
-  //   icon: <Award className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "PESO",
+    link: "/information-about-peso-certification-peso-license-india",
+    icon: <Flame className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "WPC",
+    link: "/information-about-wpc-certificate-eta-approval",
+    icon: <Wifi className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "CE Certification",
+    link: "/ce-certification",
+    icon: <ShieldCheck className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "ROHS",
+    link: "/restriction-of-hazardous-substance-rohs-certificate",
+    icon: <Radiation className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "EMI/EMC",
+    link: "/emi-emc-certification",
+    icon: <Cpu className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "TEC",
+    link: "/information-about-tec-certificate-mtcte",
+    icon: <Radio className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "BEE",
+    link: "/bee-certification",
+    icon: <Zap className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "CB Certification",
+    link: "/cb-certification",
+    icon: <Award className="w-4 h-4 mr-2" />,
+  },
 ];
 
 const Navbar = () => {

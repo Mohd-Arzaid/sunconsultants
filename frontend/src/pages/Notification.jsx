@@ -2638,7 +2638,7 @@ const NotificationCardItem = ({
             </span>
           </a>
 
-          <Link to={`/latest-notification/bis-certificate-for-${getUrlSlug(title)}`}>
+          <Link to={`/bis-qco-updates/bis-certificate-for-${getUrlSlug(title)}`}>
             <Button
               variant="outline"
               className="transition-all duration-200"

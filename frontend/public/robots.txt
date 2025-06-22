@@ -1,3 +1,20 @@
 User-agent: *
 Allow: /
+
+# Disallow crawling of inactive/commented service pages
+Disallow: /cdsco-registration-certification
+Disallow: /a-guide-on-how-to-obtain-epr-certificate
+Disallow: /epr-certificate-for-plastic-waste-management-pwm
+Disallow: /epr-certificate-for-battery-waste-management-bwm
+Disallow: /a-guide-on-how-to-obtain-lmpc-certificate
+Disallow: /what-is-legal-metrology-or-lmpc-certificate
+Disallow: /information-about-peso-certification-peso-license-india
+Disallow: /information-about-tec-certificate-mtcte
+Disallow: /information-about-wpc-certificate-eta-approval
+Disallow: /restriction-of-hazardous-substance-rohs-certificate
+Disallow: /bee-certification
+Disallow: /ce-certification
+Disallow: /emi-emc-certification
+Disallow: /cb-certification
+
 Sitemap: https://biscertifications.com/sitemap.xml 
