@@ -17,4 +17,4 @@ Disallow: /ce-certification
 Disallow: /emi-emc-certification
 Disallow: /cb-certification
 
-Sitemap: https://biscertifications.com/sitemap.xml 
+Sitemap: https://bis-certifications.com/sitemap.xml 
