@@ -332,10 +332,10 @@ const Navbar = () => {
                 <NavigationMenuContent>
                   <div className="p-4 w-60">
                     <NavigationMenuLink asChild>
-                      <Link to="/latest-notifications" className="block">
+                      <Link to="/bis-qco-updates" className="block">
                         <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
                           <BookText className="w-4 h-4 mr-2" />
-                          Latest Notifications
+                          BIS QCO UPDATES
                         </div>
                       </Link>
                     </NavigationMenuLink>
@@ -582,7 +582,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
               <ul className="flex flex-col space-y-1 py-1 max-h-[60vh] overflow-y-auto">
                 <li className="w-full">
                   <Link
-                    to="/latest-notifications"
+                    to="/bis-qco-updates"
                     className="block w-full"
                     onClick={handleLinkClick}
                   >
@@ -591,7 +591,7 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
                       className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
                     >
                       <BookText className="w-4 h-4 mr-2" />
-                      Latest Notification
+                      BIS QCO UPDATES
                     </Button>
                   </Link>
                 </li>

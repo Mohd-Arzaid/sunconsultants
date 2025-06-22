@@ -52,7 +52,7 @@ function App() {
         {/* <Route path="/table" element={<TableTesting />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/latest-notifications" element={<Notification />} />
+        <Route path="/bis-qco-updates" element={<Notification />} />
         <Route path="/latest-notification/:notificationName" element={<NotificationDetail />} />
         <Route path="/ministry-updates" element={<MinistryUpdates />} />
         <Route path="/international-audits" element={<InternationalAudits />} />
