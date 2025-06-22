@@ -108,16 +108,6 @@ const OurServices = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const nextSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % services.length);
-  };
-
-  const prevSlide = () => {
-    setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + services.length) % services.length
-    );
-  };
-
   const goToSlide = (index) => {
     setActiveIndex(index);
   };
@@ -273,33 +263,33 @@ const NotificationDetailLeft = ({ notificationName }) => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Notification Header */}
-      <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center">
-              <Mail className="h-7 w-7 text-blue-600" />
+      <div className="p-4 md:p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+              <Mail className="h-6 w-6 md:h-7 md:w-7 text-blue-600" />
             </div>
 
-            <div className="flex justify-center flex-col gap-0.5">
-              <h2 className="font-playfair  font-bold text-[#1e1e1e] text-2xl">
+            <div className="flex flex-col gap-0.5 min-w-0 flex-1">
+              <h2 className="font-playfair font-bold text-[#1e1e1e] text-lg md:text-2xl leading-tight">
                 {notification.title}
               </h2>
 
-              <p className="text-base font-medium text-gray-600 font-geist flex items-center gap-2">
-                <span className="inline-block w-3 h-3 rounded-full bg-blue-400 animate-pulse"></span>
-                Regulatory Compliance
+              <p className="text-sm md:text-base font-medium text-gray-600 font-geist flex items-center gap-2">
+                <span className="inline-block w-3 h-3 rounded-full bg-blue-400 animate-pulse flex-shrink-0"></span>
+                <span className="truncate">Regulatory Compliance</span>
               </p>
             </div>
           </div>
 
-          <div className=" flex flex-col items-end justify-center gap-0.5">
-            <div className="text-base font-medium text-gray-600 font-geist">
+          <div className="flex flex-col items-start md:items-end justify-center gap-1 md:gap-0.5 flex-shrink-0">
+            <div className="text-sm md:text-base font-medium text-gray-600 font-geist whitespace-nowrap">
               {notification.date}
             </div>
 
             <div className="flex items-center font-medium gap-2 text-gray-600">
-              <MapPin className="text-gray-600 w-5 h-5" />
-              <span className="text-base font-geist">
+              <MapPin className="text-gray-600 w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
+              <span className="text-sm md:text-base font-geist whitespace-nowrap">
                 {notification.location}
               </span>
             </div>
