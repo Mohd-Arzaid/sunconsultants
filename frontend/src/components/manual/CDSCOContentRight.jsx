@@ -56,7 +56,7 @@ const CDSCOContentRight = () => {
       {/* Latest Blogs - Only show on specific paths */}
       {shouldShowComponents && <LatestBlog />}
       {/* <OurServices /> */}
-      {/* <ClientTestimonial /> */}
+      <ClientTestimonial />
       {/* <OurEvents /> */}
       <WhyChooseUs />
       {/* Latest Notification - Only show on specific paths */}
@@ -504,39 +504,34 @@ const OurServices = () => {
 const ClientTestimonial = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO, TechCorp",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+      name: "Ms.Eliyawati",
+      role: "PT Quty Karunia, BIS Licensee in Vietnam",
       content:
-        "The service provided was exceptional. The team's expertise in CDSCO registration made the entire process smooth and hassle-free.",
+        "Sun Certifications India provided excellent BIS Certification services. Their unparalleled service and sincerity gained our trust.",
     },
     {
-      name: "Amit Verma",
-      role: "Regulatory Manager, MedEquip",
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      name: "Ms.Belle",
+      role: "Thantawan Industries Ltd, BIS Licensee in Thailand",
       content:
-        "Prompt, professional, and knowledgeable. Highly recommend for anyone needing regulatory support in India.",
+        "Sun Certifications India supported us throughout the BIS certification process. Their responsive customer service is exceptional.",
     },
     {
-      name: "Priya Singh",
-      role: "Director, PharmaPlus",
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      name: "Ms.Jun Min Sim",
+      role: "Leaderart Industries, BIS Licensee in Malaysia",
       content:
-        "Their guidance on BIS and CDSCO compliance saved us a lot of time and effort. Excellent team!",
+        "Sun Certifications India helped us acquire BIS Certification, doubling our engagement in India. Their services are genuine and up-to-date.",
     },
     {
-      name: "John Lee",
-      role: "COO, HealthFirst",
-      avatar: "https://randomuser.me/api/portraits/men/65.jpg",
+      name: "Ms.Eliyawati",
+      role: "PT Quty Karunia, BIS Licensee in Vietnam",
       content:
-        "Very responsive and detail-oriented. We felt supported at every step of the certification process.",
+        "One of the best BIS consultants in India! Their expertise made the entire process seamless for us.",
     },
     {
-      name: "Meera Patel",
-      role: "Quality Lead, BioGenix",
-      avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+      name: "Ms.Belle",
+      role: "Thantawan Industries Ltd, BIS Licensee in Thailand",
       content:
-        "A reliable partner for regulatory affairs. Their expertise in Indian regulations is unmatched.",
+        "Highly recommend Sun Certifications India for hassle-free BIS certification. Professional and punctual service.",
     },
   ];
   return (
@@ -556,28 +551,19 @@ const ClientTestimonial = () => {
             className="[--duration:18s]"
           >
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="group mb-8">
-                <div className="flex items-start gap-4 ">
-                  <img
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="w-14 h-14 rounded-full object-cover ring-2 ring-gray-100"
-                  />
-
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <h3 className="font-geist font-medium text-gray-900">
-                        {testimonial.name}
-                      </h3>
-                      <span className="text-sm text-gray-500">•</span>
-                      <p className="text-sm text-gray-500 font-geist">
-                        {testimonial.role}
-                      </p>
-                    </div>
-                    <p className="mt-2 italic text-gray-600 font-geist text-sm leading-relaxed">
-                      &ldquo;{testimonial.content}&rdquo;
+              <div key={index} className="group mb-6">
+                <div className="bg-white p-4 rounded-lg border border-gray-300 shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <div className="mb-3">
+                    <h3 className="font-geist font-bold text-neutral-800 text-base">
+                      {testimonial.name}
+                    </h3>
+                    <p className="text-sm text-neutral-600 font-geist mt-1">
+                      {testimonial.role}
                     </p>
                   </div>
+                  <p className="italic text-neutral-700 font-geist text-sm leading-relaxed font-medium">
+                    &ldquo;{testimonial.content}&rdquo;
+                  </p>
                 </div>
               </div>
             ))}
