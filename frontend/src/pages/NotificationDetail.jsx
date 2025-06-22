@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Footer from "@/common/Footer";
 import { useNavigate, useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LatestBlog } from "@/components/manual/CDSCOContentRight";
 import { notifications } from "./Notification";
 
@@ -234,6 +234,8 @@ const OurServices = () => {
 };
 
 const NotificationDetailLeft = ({ notificationName }) => {
+  const navigate = useNavigate();
+
   // Function to convert title to URL slug (same as in Notification.jsx)
   const getUrlSlug = (title) => {
     // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
@@ -257,8 +259,15 @@ const NotificationDetailLeft = ({ notificationName }) => {
     return slug === notificationName.replace('bis-certificate-for-', '');
   });
 
+  // If notification not found, redirect to home
+  useEffect(() => {
+    if (!notification) {
+      navigate('/', { replace: true });
+    }
+  }, [notification, navigate]);
+
   if (!notification) {
-    return <div>Notification not found</div>;
+    return <div>Redirecting...</div>;
   }
 
   return (
