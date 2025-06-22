@@ -14,26 +14,26 @@ const ServiceContactForm = () => {
   // Function to get page name based on URL
   const getPageName = () => {
     const path = window.location.pathname;
-    
+
     // Service pages
-    if (path.includes("/services/cdsco-registration-certification")) return "CDSCO Registration";
-    if (path.includes("/services/bis-mark-foreign")) return "BIS Mark Foreign";
-    if (path.includes("/services/epr-registration")) return "EPR Registration";
-    if (path.includes("/services/bis-certification")) return "BIS Certification";
-    if (path.includes("/services/lmpc-registration")) return "LMPC Registration";
-    if (path.includes("/services/plastic-waste")) return "Plastic Waste";
-    if (path.includes("/services/legal-metrology")) return "Legal Metrology";
-    if (path.includes("/services/isi-mark-indian")) return "ISI Mark Indian";
-    if (path.includes("/services/battery-waste")) return "Battery Waste";
-    if (path.includes("/services/crs-registration")) return "CRS Registration";
-    if (path.includes("/services/peso")) return "PESO";
-    if (path.includes("/services/tec")) return "TEC";
-    if (path.includes("/services/wpc")) return "WPC";
-    if (path.includes("/services/rohs")) return "ROHS";
-    if (path.includes("/services/bee")) return "BEE";
-    if (path.includes("/services/ce-certification")) return "CE Certification";
-    if (path.includes("/services/emi-emc")) return "EMI EMC";
-    if (path.includes("/services/cb-certification")) return "CB Certification";
+    if (path.includes("/cdsco-registration-certification")) return "CDSCO Registration";
+    if (path.includes("/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis")) return "BIS Mark Foreign";
+    if (path.includes("/a-guide-on-how-to-obtain-epr-certificate")) return "EPR Registration";
+    if (path.includes("/what-is-bis-certificate-indian-bis")) return "BIS Certification";
+    if (path.includes("/a-guide-on-how-to-obtain-lmpc-certificate")) return "LMPC Registration";
+    if (path.includes("/epr-certificate-for-plastic-waste-management-pwm")) return "Plastic Waste";
+    if (path.includes("/what-is-legal-metrology-or-lmpc-certificate")) return "Legal Metrology";
+    if (path.includes("a-guide-to-bis-certification-indian-bis")) return "ISI Mark Indian";
+    if (path.includes("/epr-certificate-for-battery-waste-management-bwm")) return "Battery Waste";
+    if (path.includes("/what-is-crs-bis-or-crs-registration")) return "CRS Registration";
+    if (path.includes("/information-about-peso-certification-peso-license-india")) return "PESO";
+    if (path.includes("/information-about-tec-certificate-mtcte")) return "TEC";
+    if (path.includes("/information-about-wpc-certificate-eta-approval")) return "WPC";
+    if (path.includes("/restriction-of-hazardous-substance-rohs-certificate")) return "ROHS";
+    if (path.includes("/bee-certification")) return "BEE";
+    if (path.includes("/ce-certification")) return "CE Certification";
+    if (path.includes("/emi-emc-certification")) return "EMI EMC";
+    if (path.includes("/cb-certification")) return "CB Certification";
   };
 
   const [formData, setFormData] = useState({
@@ -54,8 +54,6 @@ const ServiceContactForm = () => {
     companyName,
     productName,
     message,
-    pageUrl,
-    pageName,
   } = formData;
 
   const handleOnChange = (e) => {
@@ -68,6 +66,8 @@ const ServiceContactForm = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+    // console.log("Form Data:", formData);
 
     // Full name validation
     const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
