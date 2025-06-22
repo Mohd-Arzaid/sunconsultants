@@ -2583,11 +2583,19 @@ const NotificationCardItem = ({
 }) => {
   // Function to convert title to URL slug
   const getUrlSlug = (title) => {
-    // Get the last two words from the title
-    const words = title.split(" ");
-    const lastTwoWords = words.slice(-2).join(" ");
+    // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
+    let cleanTitle = title
+      .replace(/^BIS\s+(certification|notification)\s+for\s+/i, '') // Remove "BIS certification for" or "BIS Notification for"
+      .replace(/^QCO\s+notification\s+for\s+/i, '') // Remove "QCO notification for"
+      .trim();
+
     // Convert to kebab-case
-    return lastTwoWords.toLowerCase().replace(/\s+/g, "-");
+    return cleanTitle
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
+      .replace(/\s+/g, "-")      // Replace spaces with hyphens
+      .replace(/-+/g, "-")       // Replace multiple hyphens with single hyphen
+      .trim();                   // Remove leading/trailing spaces
   };
 
   return (
@@ -2630,7 +2638,7 @@ const NotificationCardItem = ({
             </span>
           </a>
 
-          <Link to={`/latest-notification/${getUrlSlug(title)}`}>
+          <Link to={`/latest-notification/bis-certificate-for-${getUrlSlug(title)}`}>
             <Button
               variant="outline"
               className="transition-all duration-200"
@@ -2689,8 +2697,8 @@ const Pagination = ({
             key={index + 1}
             onClick={() => handlePageChange(index + 1)}
             className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${currentPage === index + 1
-                ? "bg-[#1A8781] text-white"
-                : "text-gray-700 hover:bg-gray-200"
+              ? "bg-[#1A8781] text-white"
+              : "text-gray-700 hover:bg-gray-200"
               }`}
             aria-label={`Page ${index + 1}`}
             aria-current={currentPage === index + 1 ? "page" : undefined}

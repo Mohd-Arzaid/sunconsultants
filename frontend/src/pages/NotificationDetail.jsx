@@ -198,8 +198,8 @@ const OurServices = () => {
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${activeIndex === index
-                    ? "bg-[#1A8781] w-10"
-                    : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                  ? "bg-[#1A8781] w-10"
+                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
                   }`}
               ></button>
             ))}
@@ -213,8 +213,8 @@ const OurServices = () => {
               key={service.id || index}
               onClick={() => goToSlide(index)}
               className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${activeIndex === index
-                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
                 }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
@@ -234,12 +234,27 @@ const OurServices = () => {
 };
 
 const NotificationDetailLeft = ({ notificationName }) => {
+  // Function to convert title to URL slug (same as in Notification.jsx)
+  const getUrlSlug = (title) => {
+    // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
+    let cleanTitle = title
+      .replace(/^BIS\s+(certification|notification)\s+for\s+/i, '') // Remove "BIS certification for" or "BIS Notification for"
+      .replace(/^QCO\s+notification\s+for\s+/i, '') // Remove "QCO notification for"
+      .trim();
+
+    // Convert to kebab-case
+    return cleanTitle
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
+      .replace(/\s+/g, "-")      // Replace spaces with hyphens
+      .replace(/-+/g, "-")       // Replace multiple hyphens with single hyphen
+      .trim();                   // Remove leading/trailing spaces
+  };
+
   // Find the notification based on the URL slug
   const notification = notifications.find((notif) => {
-    const words = notif.title.split(" ");
-    const lastTwoWords = words.slice(-2).join(" ");
-    const slug = lastTwoWords.toLowerCase().replace(/\s+/g, "-");
-    return slug === notificationName;
+    const slug = getUrlSlug(notif.title);
+    return slug === notificationName.replace('bis-certificate-for-', '');
   });
 
   if (!notification) {
