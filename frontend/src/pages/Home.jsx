@@ -17,24 +17,22 @@ import LogoTwo from "../assets/images/TwoLogo.png";
 // import LogoFour from "../assets/images/FourLogo.png";
 // import LogoFive from "../assets/images/FiveLogo.png";
 // import LogoSix from "../assets/images/SixLogo.png";
-import ametek from "../assets/images/ametek.png"
-import Ansell from "../assets/images/Ansell.png"
-import Daiki from "../assets/images/Daiki.png"
-import Aqua from "../assets/images/Aqua.png"
-import honeywell from "../assets/images/honeywell.png"
-import Ikea from "../assets/images/Ikea.png"
-import LeaderArt from "../assets/images/LeaderArt.png"
-import Misumi from "../assets/images/Misumi.png"
-import nobilia from "../assets/images/nobilia.png"
-import Panasonic from "../assets/images/Panasonic.png"
-import cuty from "../assets/images/cuty.png"
-import raumplus from "../assets/images/raumplus.png"
-import remsa from "../assets/images/remsa.png"
-import SEDOVINA from "../assets/images/SEDOVINA.png"
-import Thantawan from "../assets/images/Thantawan.png"
-import titus from "../assets/images/titus.png"
-
-
+import ametek from "../assets/images/ametek.png";
+import Ansell from "../assets/images/Ansell.png";
+import Daiki from "../assets/images/Daiki.png";
+import Aqua from "../assets/images/Aqua.png";
+import honeywell from "../assets/images/honeywell.png";
+import Ikea from "../assets/images/Ikea.png";
+import LeaderArt from "../assets/images/LeaderArt.png";
+import Misumi from "../assets/images/Misumi.png";
+import nobilia from "../assets/images/nobilia.png";
+import Panasonic from "../assets/images/Panasonic.png";
+import cuty from "../assets/images/cuty.png";
+import raumplus from "../assets/images/raumplus.png";
+import remsa from "../assets/images/remsa.png";
+import SEDOVINA from "../assets/images/SEDOVINA.png";
+import Thantawan from "../assets/images/Thantawan.png";
+import titus from "../assets/images/titus.png";
 
 import { motion } from "motion/react";
 
@@ -107,52 +105,50 @@ import { OurServices } from "./About";
 
 // import { ImagesSlider } from "@/components/ui/images-slider";
 
-
-
-// Audit Marquee 
-import BahrainAudit from "../assets/auditImages/Bahrain.png"
-import IndonesiaAudit from "../assets/auditImages/Indonesia.png"
-import ItalyAudit from "../assets/auditImages/Italy-2.png"
-import MalaysiaAudit from "../assets/auditImages/Malaysia.png"
-import SloveniaAudit from "../assets/auditImages/Slovenia.png"
-import ThailandAudit from "../assets/auditImages/Thailand.png"
-import Vietnam2Audit from "../assets/auditImages/Vietnam-2.png"
-import Vietnam3Audit from "../assets/auditImages/Vietnam-3.png"
-import Vietnam4Audit from "../assets/auditImages/Vietnam-4.png"
-import VietnamAudit from "../assets/auditImages/Vietnam.png"
-
+// Audit Marquee
+import BahrainAudit from "../assets/auditImages/Bahrain.png";
+import IndonesiaAudit from "../assets/auditImages/Indonesia.png";
+import ItalyAudit from "../assets/auditImages/Italy-2.png";
+import MalaysiaAudit from "../assets/auditImages/Malaysia.png";
+import SloveniaAudit from "../assets/auditImages/Slovenia.png";
+import ThailandAudit from "../assets/auditImages/Thailand.png";
+import Vietnam2Audit from "../assets/auditImages/Vietnam-2.png";
+import Vietnam3Audit from "../assets/auditImages/Vietnam-3.png";
+import Vietnam4Audit from "../assets/auditImages/Vietnam-4.png";
+import VietnamAudit from "../assets/auditImages/Vietnam.png";
 
 // Seminar & Exhibition Images
-import Exhibition1 from "../assets/seminarImages/Exhibition-1.jpg"
-import Exhibition2 from "../assets/seminarImages/Exhibition-2.jpg"
-import Exhibition3 from "../assets/seminarImages/Exhibition-3.jpg"
-import Seimar82 from "../assets/seminarImages/Seimar-8-2.png"
-import Seminar4 from "../assets/seminarImages/Seminar-4.jpg"
-import Seminar5 from "../assets/seminarImages/Seminar-5.jpg"
-import Seminar62 from "../assets/seminarImages/Seminar-6-2.jpg"
-import Seminar6 from "../assets/seminarImages/Seminar-6.jpg"
-import Seminar72 from "../assets/seminarImages/Seminar-7-2.jpg"
-import Seminar7 from "../assets/seminarImages/Seminar-7.jpg"
-import Seminar8 from "../assets/seminarImages/Seminar-8.png"
-import Seminar9 from "../assets/seminarImages/Seminar-9.jpg"
-import Seminar102 from "../assets/seminarImages/Seminar-10-2.jpg"
-import Seminar103 from "../assets/seminarImages/Seminar-10-3.jpg"
-import Seminar10 from "../assets/seminarImages/Seminar-10.jpg"
-import Seminar11 from "../assets/seminarImages/Seminar-11.jpg"
+import Exhibition1 from "../assets/seminarImages/Exhibition-1.jpg";
+import Exhibition2 from "../assets/seminarImages/Exhibition-2.jpg";
+import Exhibition3 from "../assets/seminarImages/Exhibition-3.jpg";
+import Seimar82 from "../assets/seminarImages/Seimar-8-2.png";
+import Seminar4 from "../assets/seminarImages/Seminar-4.jpg";
+import Seminar5 from "../assets/seminarImages/Seminar-5.jpg";
+import Seminar62 from "../assets/seminarImages/Seminar-6-2.jpg";
+import Seminar6 from "../assets/seminarImages/Seminar-6.jpg";
+import Seminar72 from "../assets/seminarImages/Seminar-7-2.jpg";
+import Seminar7 from "../assets/seminarImages/Seminar-7.jpg";
+import Seminar8 from "../assets/seminarImages/Seminar-8.png";
+import Seminar9 from "../assets/seminarImages/Seminar-9.jpg";
+import Seminar102 from "../assets/seminarImages/Seminar-10-2.jpg";
+import Seminar103 from "../assets/seminarImages/Seminar-10-3.jpg";
+import Seminar10 from "../assets/seminarImages/Seminar-10.jpg";
+import Seminar11 from "../assets/seminarImages/Seminar-11.jpg";
 // import Seminar12 from "../assets/seminarImages/Seminar-12.jpg"
-
 
 const Home = () => {
   return (
     <main className="w-full">
       <Helmet>
         <title>
-          BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO - Sun
-          Certifications & Engineers
+          About all schemes of Indian bis certifications for Indian and foreign
+          manufacturers
         </title>
         <meta
           name="description"
-          content="Sun Certifications is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license. Trusted since 2013."
+          content="
+     Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.
+          "
         />
         <meta
           name="keywords"
@@ -164,7 +160,8 @@ const Home = () => {
         {/* Open Graph Tags */}
         <meta
           property="og:title"
-          content="BIS Certification Certifications, LMPC certificate, EPR Certificate, CDSCO"
+          content=" Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.
+          "
         />
         <meta
           property="og:description"
@@ -172,10 +169,7 @@ const Home = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
-        <meta
-          property="og:site_name"
-          content="Sun Certifications India"
-        />
+        <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter Card Tags */}
@@ -185,9 +179,20 @@ const Home = () => {
           name="twitter:title"
           content="BIS Certification| FMCS | ISI Mark | LMPC | EPR | CDSCO"
         />
+        {/* Twitter Title : Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.
+        
+        */}
+
+
+        {/* OG desciption :  
+              content="Sun Certifications is the best BIS certification Certifications in India. We provide comprehensive certification services for Indian and foreign manufacturers."
+        */}
+
+
         <meta
           name="twitter:description"
-          content="Sun Certifications is the best BIS certification Certifications in India."
+          content="Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.
+          "
         />
 
         {/* Canonical URL */}
@@ -198,12 +203,12 @@ const Home = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": "WebSite",
             name: "Sun Certifications India",
-            url: "https://sunconsultants.co.in",
-            logo: "https://sunconsultants.co.in/assets/img/suncons.png",
+            url: "https://bis-certifications.com",
+            logo: "https://bis-certifications.com/Logo.png",
             description:
-              "Sun Certifications is a consulting firm in India for certifications like BIS certification, CDSCO, LMPC certificate, EPR certificate, FMCS license, PESO license.",
+              "Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.",
             address: {
               "@type": "PostalAddress",
               streetAddress:
@@ -823,7 +828,6 @@ const Hero = () => {
                   alt="Sun Certifications India - Professional Certification Services"
                   width="740"
                   height="515"
-
                   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover"
                 />
                 {/* <ImagesSlider   className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-[740px] h-[515px] object-cover" images={images}></ImagesSlider> */}
@@ -854,20 +858,12 @@ const Hero = () => {
               >
                 <div className="w-full h-full bg-white flex items-center justify-center">
                   <button aria-label="Previous slide">
-                    <img
-                      src={ArrowOne}
-                      alt="Previous slide navigation"
-
-                    />
+                    <img src={ArrowOne} alt="Previous slide navigation" />
                   </button>
                 </div>
                 <div className="w-full h-full bg-[#64bfdd] flex items-center justify-center">
                   <button aria-label="Next slide">
-                    <img
-                      src={ArrowTwo}
-                      alt="Next slide navigation"
-
-                    />
+                    <img src={ArrowTwo} alt="Next slide navigation" />
                   </button>
                 </div>
               </nav>
@@ -958,12 +954,10 @@ const LogoTicker = () => {
             }}
             className="flex gap-14 pr-14 items-center justify-center flex-none"
           >
-
             <figure className="m-0">
               <img
                 src={LogoTwo}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
 
@@ -971,52 +965,41 @@ const LogoTicker = () => {
               <img
                 src={ametek}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Ansell}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Aqua}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Daiki}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={honeywell}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Ikea}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
 
@@ -1024,16 +1007,13 @@ const LogoTicker = () => {
               <img
                 src={LeaderArt}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Misumi}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
 
@@ -1041,26 +1021,20 @@ const LogoTicker = () => {
               <img
                 src={Panasonic}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
-
 
             <figure className="m-0">
               <img
                 src={cuty}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={raumplus}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
 
@@ -1068,70 +1042,34 @@ const LogoTicker = () => {
               <img
                 src={remsa}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={SEDOVINA}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Thantawan}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
-
 
             <figure className="m-0">
               <img
                 src={titus}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <figure className="m-0">
               <img
                 src={LogoTwo}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
 
@@ -1139,52 +1077,41 @@ const LogoTicker = () => {
               <img
                 src={ametek}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Ansell}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Aqua}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Daiki}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={honeywell}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Ikea}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
 
@@ -1192,16 +1119,13 @@ const LogoTicker = () => {
               <img
                 src={LeaderArt}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Misumi}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
 
@@ -1209,26 +1133,20 @@ const LogoTicker = () => {
               <img
                 src={Panasonic}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
-
 
             <figure className="m-0">
               <img
                 src={cuty}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={raumplus}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
 
@@ -1236,73 +1154,29 @@ const LogoTicker = () => {
               <img
                 src={remsa}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={SEDOVINA}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
 
             <figure className="m-0">
               <img
                 src={Thantawan}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
-
 
             <figure className="m-0">
               <img
                 src={titus}
                 alt="Sun Certifications India - Trusted Partner Company"
-
               />
             </figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           </motion.div>
         </div>
       </div>
@@ -1351,7 +1225,6 @@ export const Services = () => {
                 src={ISIMark}
                 alt="BIS Certification Services - Professional ISI License for Foreign Manufacturers"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-
               />
             </figure>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1370,7 +1243,6 @@ export const Services = () => {
                 src={BISCRS}
                 alt="BIS"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1388,7 +1260,6 @@ export const Services = () => {
                 src={ISIMark}
                 alt="ISIMark"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1407,7 +1278,6 @@ export const Services = () => {
                 src={BISCRS}
                 alt="BISCRS"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1427,7 +1297,6 @@ export const Services = () => {
                 src={CDSCO}
                 alt="CDSCO Registration Certification - Medical Device and Drug Registration Services"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-
               />
             </figure>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1445,7 +1314,6 @@ export const Services = () => {
                 src={PlasticWasteManagement}
                 alt="PlasticWasteManagement"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1464,7 +1332,6 @@ export const Services = () => {
                 src={EPRCertificate}
                 alt="EPRCertificate"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1482,7 +1349,6 @@ export const Services = () => {
                 src={LMPC}
                 alt="LMPC"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
-
               />
             </div>
             <p className="text-lg md:text-xl w-full mt-28 text-center font-roboto tracking-wide font-semibold text-black">
@@ -1680,7 +1546,6 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
               placeholder="Email Address *"
             />
 
-
             <Input
               disabled={loading}
               required
@@ -1693,7 +1558,6 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
 text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Phone Number *"
             />
-
 
             {/* <PhoneInput
               country={'in'}
@@ -1745,7 +1609,6 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             src={ContactUs}
             alt="ContactUs"
             className="absolute right-0 w-[475.99px] h-[539px] object-cover"
-
           />
 
           <img
@@ -1753,7 +1616,6 @@ text-[#7E7E7E]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             alt="ContactChild"
             className=" 
           absolute inset-0 w-[350px] h-[350px] -translate-x-[70px] translate-y-[180px] object-cover"
-
           />
         </div>
       </div>
@@ -2028,7 +1890,6 @@ const Countries = () => {
                       src={country.img}
                       alt={country.name}
                       className="w-auto h-full object-contain"
-
                     />
                   </div>
 
@@ -2058,7 +1919,6 @@ const Countries = () => {
                           ? "w-full h-full object-cover"
                           : ""
                       }
-
                     />
                   </div>
                   <div className="mt-4 px-2 flex items-center justify-between w-full">
@@ -2130,7 +1990,7 @@ export const WhatsOurCustomersSaySection = () => {
 
   // Helper function to generate avatar URL
   const getAvatarUrl = (name) => {
-    const [firstName, lastName] = name.split(' ');
+    const [firstName, lastName] = name.split(" ");
     return `https://api.dicebear.com/5.x/initials/svg?seed=${firstName} ${lastName}`;
   };
 

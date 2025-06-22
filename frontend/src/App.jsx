@@ -36,6 +36,8 @@ import Exhibition from "./pages/Exhibition";
 import SchemeX from "./pages/SchemeX";
 import Sitemap from "./pages/Sitemap";
 import { useState } from "react";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 // import TableTesting from "./pages/TableTesting";
 
 function App() {
@@ -122,6 +124,9 @@ function App() {
         {/* Service Page End */}
 
         <Route path="/webinar" element={<Webinar />} />
+
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
         {/* Catch-all route - redirects any unmatched URLs to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
