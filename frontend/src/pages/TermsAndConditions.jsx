@@ -33,7 +33,7 @@ const TermsAndConditions = () => {
                     {/* Introduction */}
                     <div className="mb-10 md:mb-12">
                         <p className="text-lg md:text-xl text-neutral-600 font-geist leading-relaxed">
-                            These Terms and Conditions govern your use of Sun Certifications India's services and website. By using our services, you accept these terms in full.
+                            These Terms and Conditions govern your use of Sun Certifications India&apos;s services and website. By using our services, you accept these terms in full.
                         </p>
                     </div>
 
@@ -61,7 +61,7 @@ const TermsAndConditions = () => {
                             <li className="flex items-start">
                                 <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
                                 <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    To transmit, or procure the sending of, any advertising or promotional material, including any "junk mail," "chain letter," "spam," or any other similar solicitation
+                                    To transmit, or procure the sending of, any advertising or promotional material, including any &quot;junk mail,&quot; &quot;chain letter,&quot; &quot;spam,&quot; or any other similar solicitation
                                 </span>
                             </li>
                             <li className="flex items-start">
@@ -144,7 +144,7 @@ const TermsAndConditions = () => {
                             7. Changes to the Terms
                         </h2>
                         <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4">
-                            We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+                            We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 30 days&apos; notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
                         </p>
                         <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
                             By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Service.
