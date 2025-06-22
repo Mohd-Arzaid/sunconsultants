@@ -1,148 +1,722 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
   <url>
-    <loc>https://indiancertifications.com/</loc>
+    <loc>https://biscertifications.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/about</loc>
+    <loc>https://biscertifications.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/contact</loc>
+    <loc>https://biscertifications.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/latest-notifications</loc>
+    <loc>https://biscertifications.com/latest-notifications</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service Pages - Active -->
+  <url>
+    <loc>https://biscertifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/latest-notification</loc>
+    <loc>https://biscertifications.com/what-is-crs-bis-or-crs-registration</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/ministry-updates</loc>
+    <loc>https://biscertifications.com/a-guide-to-bis-certification-indian-bis</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/international-audits</loc>
+    <loc>https://biscertifications.com/what-is-bis-certificate-indian-bis</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/exhibition</loc>
+    <loc>https://biscertifications.com/schemeX</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Service Pages - Commented Out (Inactive) -->
+  <!-- <url>
+    <loc>https://biscertifications.com/cdsco-registration-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/a-guide-on-how-to-obtain-epr-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/epr-certificate-for-plastic-waste-management-pwm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/epr-certificate-for-battery-waste-management-bwm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/a-guide-on-how-to-obtain-lmpc-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/what-is-legal-metrology-or-lmpc-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/information-about-peso-certification-peso-license-india</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/information-about-tec-certificate-mtcte</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/information-about-wpc-certificate-eta-approval</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/restriction-of-hazardous-substance-rohs-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/bee-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/ce-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/emi-emc-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- <url>
+    <loc>https://biscertifications.com/cb-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+
+  <!-- Notification Pages (ID 1-65) -->
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Work-Chairs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/seminar</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-General-purpose-chairs-and-stools</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/clients</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Tables-and-desks</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/cdsco-registration-certification</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Storage-units</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Bunk-beds</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/a-guide-on-how-to-obtain-epr-certificate</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Beds</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/a-guide-to-bis-certification-indian-bis</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electric-Cable-for-Photovoltic</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/a-guide-on-how-to-obtain-lmpc-certificate</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-Aluminium-and-Aluminium-Alloys-Forging-Stock-and-Forgings</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/epr-certificate-for-plastic-waste-management-pwm</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-H-Acid</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/what-is-legal-metrology-or-lmpc-certificate</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-K-Acid</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/what-is-bis-certificate-indian-bis</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Vinyl-Sulphone</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/epr-certificate-for-battery-waste-management-bwm</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electric-Fence-Energizers</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/what-is-crs-bis-or-crs-registration</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Clothes-Washing-Machines</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/peso-certification-india</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Gypsum-Plaster-Boards</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/tec-certification-approval</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Aluminium-alloy-tubes-for-irrigation-purposes-welded-tubes</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/wpc-certification-approval</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Aluminium-alloy-tube-for-irrigation-purposes-extruded-tube</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/rohs-certification</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-EC-Grade-Aluminium-Rod-produced-by-Continuous-Casting-and-Rolling</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/bee-certification</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/ce-certification</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloys-forging-stock-and-forgings</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/emi-emc-certification</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloy-plate-for-general-engineering-purposes</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/cb-certification</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloy-sheet-and-strip</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indiancertifications.com/webinar</loc>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloy-wire</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-</urlset> 
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloy-rivet-stock</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloy-for-electrical-applications</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Aluminium-and-aluminium-alloy-foil</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Aluminium-composite-panel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloys-Extruded-round-tube-and-hollow</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-Aluminium-Wire-for-Electrical-Purposes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrought-aluminium-and-aluminium-alloys-for-manufacture-of-utensils</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Corrugated-Aluminium-Sheet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Aluminium-alloy-forging-stock-and-forgings</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Solar-Flat-Plate-Collector</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Solar-Water-Heating-System</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Storage-Water-Tank</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Flat-woven-webbing-slings</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Textiles-Manila-Ropes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fibre-Ropes-Polyester</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Synthetic-Fibre-Ropes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Mixed-Polyolefin-Fibre-Ropes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Steel-wire-ropes-Fibre-main-cores</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fibre-Ropes-Polyamide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fibre-Ropes-Polypropylene</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fibre-Ropes-Polyethylene</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fibre-Ropes-dual-Fibres</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Countersunk-flat-head-screws</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Wrapped-Steel-Cylinder-Pipes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Deformed-stainless-steel-bars-and-wires</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Steel-Pipe-Flanges</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Stainless-steel-tubes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Chipboard-Screws-Specification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Cross-recessed-Countersunk-Head-Wood-Screws-Specification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fasteners-Pan-Head-Drilling-Screws</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fasteners-Cross-Recessed-Drilling-Screws-with-Tapping-Screw-Thread-Part-3-Raised-Countersunk-Head</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Cross-Recessed-Tapping-Screw-Part-3-Raised-Countersunk-Oval-Head</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Cross-Recessed-Tapping-Screws-Part-2-Countersunk-Flat-Head</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Cross-Recessed-Tapping-Screws-Part-1-Pan-Head</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Drywall-Screws-Specification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fasteners-Cross-Recessed-Drilling-Screws-with-Tapping-Screw-Thread-Part-2-Countersunk-Head</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fasteners-Hexagon-Washer-Head-Drilling-Screws-with-Tapping-Screw-Thread</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Countersunk-Flat-Head-Screws-Common-head-Style-With-Type-H-or-Type-Z-Cross-Recess</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Gypsum-Based-Building-Materials</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Raised-countersunk-head-screws-Common-Head-Style-with-type-H-or-type-Z-cross-recess</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Pan-Head-Screws-With-Type-H-or-Type-Z-Cross-Recess</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Flux-Cored-Solder-Wire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Chain-Pipe-Wrenches</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Open-Ended-Slugging-Wrenches</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Ring-Slugging-Wrenches</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Open-jaw-Adjustable-Wrenches</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Open-Jaw-Wrenches</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Ring-Wrenches</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Pipe-Wrenches-General-Purpose</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Pipe-Wrenches-Heavy-Duty</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Cutting-Pliers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Safety-of-Household-Commercial-and-Similar-Electrical-Appliances</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electrical-Appliances-for-Skin-and-Hair-care</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electrical-Appliances-for-Kitchen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Water-Meter-and-Accessories</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Poly-Vinyl-Chloride-PVC-Homopolymers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Polypropylene-PP-Materials-for-Moulding-and-Extrusion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Baby-Diaper</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Bedsheet-and-Pillow-Cover</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Dental-bib-Napkins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Self-Contained-Drinking-Water-Cooler</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Reusable-Sanitary-Pad-Sanitary-Napkin-Period-Panties</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Sanitary-napkins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Shoe-covers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electrical-Accessories</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Laboratory-Glassware</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Cycle-and-Rickshaw-Tyres-Tubes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Safe-Deposit-Locker-Cabinets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-HDPE-PP-Woven-Sacks-for-Packaging-of-25-kg-Polymer-Materials</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Material-Measures-of-Length</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Door-Fittings</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Drums-and-Tins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Helmets-for-Police-Force-Civil-Defence-and-Personal-Protection</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Bottled-Water-Dispensers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Tables-and-Desks-Specification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Rubber-Gaskets-for-Pressure-Cookers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electric-Cable-for-Photovoltaic</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Plywood-for-general-purposes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Plywood-face-panels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Marine-plywood</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fire-retardant-plywood</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Veneered-decorative-plywood</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Particle-board-and-hardboard-face-panels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Plywood-face-panels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Fibre-Hardboard-Face-Panels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Plywood-for-concrete-shuttering-works</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Structural-plywood</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-V-Belts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Glass-Fibre-Reinforced-Gypsum-Panels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Reinforced-Gypsum-Plaster-Boards-and-Ceiling-Tiles</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Evaporative-Air-Coolers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Asbestos-or-Fibre-Cement-based-Products</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Diesel-Engines</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electrical-appliance-for-commercial-dispensing-and-vending</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url> 
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electrical-appliance-for-domestic-clothes-washing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electrical-appliance-fans</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biscertifications.com/latest-notifications/BIS-certificate-for-Electric-Water-Heaters</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
