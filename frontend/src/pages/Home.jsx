@@ -329,7 +329,7 @@ const Home = () => {
       </section>
 
       <section aria-label="What Our Customers Say" className="w-full">
-        {/* <WhatsOurCustomersSaySection /> */}
+        <WhatsOurCustomersSaySection />
       </section>
 
       <section aria-label="Partner Logos" className="w-full">
@@ -2107,79 +2107,32 @@ export const WhatsOurCustomersSaySection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Priya Sharma",
-      role: "Designer",
-      image: TestimonialImage,
+      name: "Ms.Eliyawati",
+      role: "PT Quty Karunia, BIS Licensee in Vietnam",
       content:
-        "Working with Sun Certifications was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
+        "Sun Certifications India provided excellent BIS Certification services. Their unparalleled service and sincerity gained our trust. One of the best BIS consultants in India!",
     },
     {
       id: 2,
-      name: "Rajeev Kumar",
-      role: "Real Estate Agent",
-      image: TestimonialImageSecond,
+      name: "Ms.Belle",
+      role: "Thantawan Industries Ltd, BIS Licensee in Thailand",
       content:
-        "Outstanding support for our EPR certification process. The team's in-depth knowledge and prompt responses made the entire certification journey smooth. They truly understand both Indian and international compliance requirements.",
+        "Sun Certifications India supported us throughout the BIS certification process. Their responsive customer service and punctuality are exceptional. Highly recommend for hassle-free BIS certification.",
     },
     {
       id: 3,
-      name: "Ragini Singh",
-      role: "App Developer",
-      image: TestimonialImageThree,
+      name: "Ms.Jun Min Sim",
+      role: "Leaderart Industries , BIS Licensee in Malaysia",
       content:
-        "Their expertise in LMPC certification was invaluable for our product launch in India. The Certifications provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
-    },
-    {
-      id: 4,
-      name: "Uday Chaudhary",
-      role: "Marketing Manager",
-      image:
-        "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content:
-        "Their comprehensive support for our BIS certification was crucial for entering the Indian market. The team's detailed analysis and strategic guidance ensured we met all necessary standards without delays.",
-    },
-    {
-      id: 6,
-      name: "Priya Sharma",
-      role: "Designer",
-      image: TestimonialImage,
-      content:
-        "Working with Sun Certifications was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
-    },
-    {
-      id: 7,
-      name: "Rajeev Kumar",
-      role: "Real Estate Agent",
-      image: TestimonialImageSecond,
-      content:
-        "Outstanding support for our EPR certification process. The team's in-depth knowledge and prompt responses made the entire certification journey smooth. They truly understand both Indian and international compliance requirements.",
-    },
-    {
-      id: 8,
-      name: "Ragini Singh",
-      role: "App Developer",
-      image: TestimonialImageThree,
-      content:
-        "Their expertise in LMPC certification was invaluable for our product launch in India. The Certifications provided clear guidance throughout the process and helped us meet all regulatory requirements well within our timeline.",
-    },
-    {
-      id: 9,
-      name: "Uday Chaudhary",
-      role: "Marketing Manager",
-      image:
-        "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content:
-        "Their comprehensive support for our BIS certification was crucial for entering the Indian market. The team's detailed analysis and strategic guidance ensured we met all necessary standards without delays.",
-    },
-    {
-      id: 10,
-      name: "Priya Sharma",
-      role: "Designer",
-      image: TestimonialImage,
-      content:
-        "Working with Sun Certifications was a seamless experience. Their expertise in BIS and WPC certifications helped us navigate the complex regulatory landscape efficiently. Highly recommended for their professional approach.",
+        "Sun Certifications India helped us acquire BIS Certification, doubling our engagement in India. Their services are fast, genuine, and up-to-date with latest BIS norms.",
     },
   ];
+
+  // Helper function to generate avatar URL
+  const getAvatarUrl = (name) => {
+    const [firstName, lastName] = name.split(' ');
+    return `https://api.dicebear.com/5.x/initials/svg?seed=${firstName} ${lastName}`;
+  };
 
   return (
     <div className="bg-white pt-5  pb-8 ">
@@ -2225,32 +2178,35 @@ export const WhatsOurCustomersSaySection = () => {
                     key={testimonial.id}
                     className="min-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative" // Removed 'group-hover:[animation-play-state:paused]'
                   >
-                    <div className="flex items-center gap-4 mb-6">
+                    {/* Quote Icon */}
+                    <div className="absolute top-6 right-6">
+                      <svg
+                        className="w-9 h-9 text-[#64bfdd] opacity-70"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                      </svg>
+                    </div>
+
+                    {/* User Info */}
+                    <div className="flex items-center gap-4 mb-6 pr-12">
                       <img
-                        src={testimonial.image}
+                        src={getAvatarUrl(testimonial.name)}
                         alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30"
+                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30 flex-shrink-0"
                       />
-                      <div className="flex flex-col justify-center">
-                        <h4 className="font-roboto font-bold text-xl leading-tight drop-shadow-lg text-neutral-800">
+                      <div className="flex flex-col justify-center min-w-0">
+                        <h4 className="font-roboto font-bold text-lg leading-tight text-neutral-800 truncate">
                           {testimonial.name}
                         </h4>
-                        <p className="font-roboto text-neutral-700">
+                        <p className="font-roboto text-sm text-neutral-600 leading-snug">
                           {testimonial.role}
                         </p>
                       </div>
-
-                      <div className="ml-auto absolute top-8 right-8 ">
-                        <svg
-                          className="w-10 h-10 text-[#64bfdd]"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                        </svg>
-                      </div>
                     </div>
 
+                    {/* Testimonial Content */}
                     <p className="font-poppins text-[#5a4a4a] leading-relaxed text-base">
                       {testimonial.content}
                     </p>
