@@ -31,7 +31,7 @@ const About = () => {
       <VideoShowcase />
       {/* <OurServices /> */}
       <Services />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Footer />
     </div>
   );
@@ -524,74 +524,50 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Rajesh Kumar",
-      role: "CEO, Tech Solutions Inc.",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      name: "Ms.Eliyawati",
+      role: "PT Quty Karunia, BIS Licensee in Vietnam",
       content:
-        "Sun Certifications India made our BIS certification process seamless. Their expertise and dedication helped us enter the Indian market with confidence.",
+        "Sun Certifications India provided excellent BIS Certification services. Their unparalleled service and sincerity gained our trust. One of the best BIS consultants in India!",
       rating: 5,
     },
     {
       id: 2,
-      name: "Priya Sharma",
-      role: "Director, Global Exports",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      name: "Ms.Belle",
+      role: "Thantawan Industries Ltd, BIS Licensee in Thailand",
       content:
-        "The team's professionalism and attention to detail in handling our LMPC certification was outstanding. Highly recommended!",
+        "Sun Certifications India supported us throughout the BIS certification process. Their responsive customer service and punctuality are exceptional. Highly recommend for hassle-free BIS certification.",
       rating: 5,
     },
     {
       id: 3,
-      name: "Michael Chen",
-      role: "Operations Manager, Electronics Corp",
-      image: "https://randomuser.me/api/portraits/men/67.jpg",
+      name: "Ms.Jun Min Sim",
+      role: "Leaderart Industries, BIS Licensee in Malaysia",
       content:
-        "As an international company, we needed reliable certification partners in India. Sun Certifications exceeded our expectations.",
+        "Sun Certifications India helped us acquire BIS Certification, doubling our engagement in India. Their services are fast, genuine, and up-to-date with latest BIS norms.",
       rating: 5,
     },
     {
       id: 4,
-      name: "Anita Patel",
-      role: "Quality Manager, Pharma Solutions",
-      image: "https://randomuser.me/api/portraits/women/68.jpg",
+      name: "Ms.Eliyawati",
+      role: "PT Quty Karunia, BIS Licensee in Vietnam",
       content:
-        "Their expertise in CDSCO registration helped us navigate complex regulatory requirements with ease. Truly professional team!",
+        "Sun Certifications India provided excellent BIS Certification services. Their unparalleled service and sincerity gained our trust. One of the best BIS consultants in India!",
       rating: 5,
     },
     {
       id: 5,
-      name: "David Wilson",
-      role: "Head of Compliance, Global Tech",
-      image: "https://randomuser.me/api/portraits/men/75.jpg",
+      name: "Ms.Belle",
+      role: "Thantawan Industries Ltd, BIS Licensee in Thailand",
       content:
-        "Sun Certifications's support in WPC certification was invaluable. They made the entire process smooth and efficient.",
+        "Sun Certifications India supported us throughout the BIS certification process. Their responsive customer service and punctuality are exceptional. Highly recommend for hassle-free BIS certification.",
       rating: 5,
     },
     {
       id: 6,
-      name: "Sneha Reddy",
-      role: "Export Manager, Electronics Ltd",
-      image: "https://randomuser.me/api/portraits/women/33.jpg",
+      name: "Ms.Jun Min Sim",
+      role: "Leaderart Industries, BIS Licensee in Malaysia",
       content:
-        "The team's knowledge of TEC certification requirements saved us months of work. Excellent service and support!",
-      rating: 5,
-    },
-    {
-      id: 7,
-      name: "James Anderson",
-      role: "Sustainability Director, GreenTech",
-      image: "https://randomuser.me/api/portraits/men/45.jpg",
-      content:
-        "Their guidance on EPR authorization was comprehensive and helped us meet all environmental compliance requirements.",
-      rating: 5,
-    },
-    {
-      id: 8,
-      name: "Meera Kapoor",
-      role: "Product Manager, Consumer Goods",
-      image: "https://randomuser.me/api/portraits/women/22.jpg",
-      content:
-        "Sun Certifications's end-to-end certification support has been crucial for our market entry strategy. Highly professional team!",
+        "Sun Certifications India helped us acquire BIS Certification, doubling our engagement in India. Their services are fast, genuine, and up-to-date with latest BIS norms.",
       rating: 5,
     },
   ];
@@ -634,7 +610,7 @@ const Testimonials = () => {
                 {testimonials.map((testimonial) => (
                   <div
                     key={testimonial.id}
-                    className="min-w-[300px] md:min-w-[400px] bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/60 hover:border-[#1A8781]/80 relative overflow-hidden group"
+                    className="min-w-[320px] md:min-w-[400px] h-auto bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/60 hover:border-[#1A8781]/80 relative overflow-hidden group flex flex-col"
                     style={{
                       boxShadow:
                         "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
@@ -644,7 +620,7 @@ const Testimonials = () => {
                     <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A8781]/10 rounded-bl-full -mr-8 -mt-8 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
                     {/* Rating */}
-                    <div className="flex gap-1 mb-4">
+                    <div className="flex gap-1 mb-4 justify-start">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <svg
                           key={i}
@@ -662,21 +638,14 @@ const Testimonials = () => {
                       "{testimonial.content}"
                     </p>
 
-                    {/* Author */}
-                    <div className="flex items-center gap-4">
-                      <img
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30"
-                      />
-                      <div>
-                        <h4 className="font-geist font-semibold text-[#1e1e1e]">
-                          {testimonial.name}
-                        </h4>
-                        <p className="text-gray-500 text-sm">
-                          {testimonial.role}
-                        </p>
-                      </div>
+                    {/* Author - Fixed at bottom */}
+                    <div className="mt-auto pt-2 border-t border-gray-200">
+                      <h4 className="font-geist font-bold text-neutral-800 text-lg ">
+                        {testimonial.name}
+                      </h4>
+                      <p className="text-neutral-600 text-sm ">
+                        {testimonial.role}
+                      </p>
                     </div>
                   </div>
                 ))}
