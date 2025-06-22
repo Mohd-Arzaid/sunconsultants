@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./common/Navbar";
 import TopBar from "./common/TopBar";
 import MobileNav from "./components/common/MobileNav";
@@ -122,6 +122,10 @@ function App() {
         {/* Service Page End */}
 
         <Route path="/webinar" element={<Webinar />} />
+
+        {/* Catch-all route - redirects any unmatched URLs to home */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+
       </Routes>
       <MobileNav />
       <SocialFloatingButtons hide={popupOpen} />
