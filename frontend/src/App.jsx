@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./common/Navbar";
 import TopBar from "./common/TopBar";
 import MobileNav from "./components/common/MobileNav";
@@ -38,6 +38,7 @@ import Sitemap from "./pages/Sitemap";
 import { useState } from "react";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import Error404 from "./pages/404Error";
 // import TableTesting from "./pages/TableTesting";
 
 function App() {
@@ -128,8 +129,8 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
-        {/* Catch-all route - redirects any unmatched URLs to home */}
-        <Route path="*" element={<Navigate to="/" replace />} />
+        {/* Catch-all route - shows 404 error page for unmatched URLs */}
+        <Route path="*" element={<Error404 />} />
 
       </Routes>
       <MobileNav />
