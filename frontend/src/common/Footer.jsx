@@ -312,26 +312,38 @@ const Footer = () => {
             </span>
 
             <div className="md:hidden flex items-center gap-2">
-              <span className="text-[#2a5075] font-geist text-[13px] md:text-base">
+              <Link
+                to="/privacy-policy"
+                className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
+              >
                 Privacy Policy
-              </span>
+              </Link>
               <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
-              <span className="text-[#2a5075] font-geist text-[13px] md:text-base">
+              <Link
+                to="/terms-and-conditions"
+                className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
+              >
                 Terms of Service
-              </span>
+              </Link>
             </div>
 
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
 
-            <span className="hidden md:block text-[#2a5075] font-geist">
+            <Link
+              to="/privacy-policy"
+              className="hidden md:block text-[#2a5075] font-geist hover:underline"
+            >
               Privacy Policy
-            </span>
+            </Link>
 
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
 
-            <span className="hidden md:block text-[#2a5075] font-geist">
+            <Link
+              to="/terms-and-conditions"
+              className="hidden md:block text-[#2a5075] font-geist hover:underline"
+            >
               Terms of Service
-            </span>
+            </Link>
           </div>
         </div>
       </div>

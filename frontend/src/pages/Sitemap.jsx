@@ -29,7 +29,7 @@ const getUrlSlug = (title) => {
 // Generate notification pages from actual notifications array
 const notificationPages = notifications.map((notification) => ({
     name: notification.title,
-    path: `/latest-notification/bis-certificate-for-${getUrlSlug(notification.title)}`
+    path: `/bis-qco-updates/bis-certificate-for-${getUrlSlug(notification.title)}`
 }));
 
 // Define sitemap sections and their pages
@@ -40,6 +40,8 @@ const sitemapSections = [
             { name: "Home", path: "/" },
             { name: "About Us", path: "/about" },
             { name: "Contact Us", path: "/contact" },
+            { name: "Privacy Policy", path: "/privacy-policy" },
+            { name: "Terms and Conditions", path: "/terms-and-conditions" },
         ],
     },
     {
@@ -102,7 +104,7 @@ const sitemapSections = [
     {
         title: "Updates",
         pages: [
-            { name: "Latest Notifications", path: "/latest-notifications" },
+            { name: "BIS QCO Updates", path: "/bis-qco-updates" },
             { name: "Ministry Updates", path: "/ministry-updates" },
             { name: "Upcoming Webinars", path: "/webinar" },
         ],
