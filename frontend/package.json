@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build:analyze": "vite build --mode analyze",
+    "preview": "vite preview",
+    "analyze": "npx vite-bundle-analyzer dist/",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.2",

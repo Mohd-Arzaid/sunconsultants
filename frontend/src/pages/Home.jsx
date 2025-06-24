@@ -1,7 +1,8 @@
 import Footer from "@/common/Footer";
 import { Helmet } from "react-helmet-async";
+import { Suspense } from "react";
 
-// Hero Section  Import
+// Critical above-the-fold imports (loaded immediately)
 import HeroImage from "../assets/images/Placeholder.png";
 import ArrowOne from "../assets/images/ArrowOne.png";
 import ArrowTwo from "../assets/images/ArrowTwo.png";
@@ -9,6 +10,13 @@ import WordPullUp from "@/components/ui/word-pull-up";
 import { FadeText } from "@/components/ui/fade-text";
 import { BlurIn } from "@/components/ui/blur-in";
 import { Link } from "react-router-dom";
+
+// Loading component for sections
+const SectionLoader = () => (
+  <div className="py-8 flex items-center justify-center">
+    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-red-600"></div>
+  </div>
+);
 
 // Logo Ticker Import
 // import LogoOne from "../assets/images/OneLogo.png";
@@ -298,44 +306,59 @@ const Home = () => {
       </Helmet>
 
       <section aria-label="Hero Section" className="w-full">
-        <Hero />
+      <Hero />
       </section>
-
+      
       <section aria-label="Partner Logos" className="w-full">
         <LogoTicker />
       </section>
 
       <section aria-label="Our Services" className="w-full">
-        <OurServices />
-        {/* <Services /> */}
+        <Suspense fallback={<SectionLoader />}>
+          <OurServices />
+        </Suspense>
       </section>
 
       <section aria-label="Countries We Serve" className="w-full">
-        <AuditsMarquee />
+        <Suspense fallback={<SectionLoader />}>
+          <AuditsMarquee />
+        </Suspense>
       </section>
 
       <section aria-label="Contact Form" className="w-full">
-        <Contact />
+        <Suspense fallback={<SectionLoader />}>
+          <Contact />
+        </Suspense>
       </section>
 
       <section aria-label="Countries We Serve" className="w-full">
-        <WebinarSeminarMarquee />
+        <Suspense fallback={<SectionLoader />}>
+          <WebinarSeminarMarquee />
+        </Suspense>
       </section>
 
       <section aria-label="Latest News" className="w-full">
-        <LatestNews />
+        <Suspense fallback={<SectionLoader />}>
+          <LatestNews />
+        </Suspense>
       </section>
-
+      
       <section aria-label="Countries We Serve" className="w-full">
-        <Countries />
+        <Suspense fallback={<SectionLoader />}>
+          <Countries />
+        </Suspense>
       </section>
 
       <section aria-label="Certification and Achievements" className="w-full">
-        <CertificationAndAchievements />
+        <Suspense fallback={<SectionLoader />}>
+          <CertificationAndAchievements />
+        </Suspense>
       </section>
 
       <section aria-label="What Our Customers Say" className="w-full">
-        <WhatsOurCustomersSaySection />
+        <Suspense fallback={<SectionLoader />}>
+          <WhatsOurCustomersSaySection />
+        </Suspense>
       </section>
 
       <section aria-label="Partner Logos" className="w-full">
@@ -345,7 +368,7 @@ const Home = () => {
       <section aria-label="Partner Logos" className="w-full">
         <VideoSection />
       </section>
-
+      
       <Footer />
     </main>
   );
@@ -441,7 +464,7 @@ const CertificationAndAchievements = () => {
                       <img
                         src={item.image}
                         alt={item.title}
-                        loading="lazy"
+              loading="lazy"
                         decoding="async"
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         style={{
@@ -452,8 +475,8 @@ const CertificationAndAchievements = () => {
                         onLoad={(e) => {
                           e.target.style.opacity = "1";
                         }}
-                      />
-                    </div>
+            />
+          </div>
                   </div>
                 ))}
               </React.Fragment>
