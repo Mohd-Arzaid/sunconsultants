@@ -12,7 +12,7 @@ import Footer from "@/common/Footer";
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { LatestBlog } from "@/components/manual/CDSCOContentRight";
-import { notifications } from "./Notification";
+import { notifications } from "../data/notificationsData.js";
 
 const NotificationDetail = () => {
   const { notificationName } = useParams();
