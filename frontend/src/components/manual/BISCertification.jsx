@@ -1592,6 +1592,7 @@ const TypesSection = () => {
       {/* Title */}
 
       <h2 className="mainHeading">Types of BIS Certification</h2>
+    
       <p className="simpleParagraph">
         There are various types of BIS certification issued by the Indian BIS,
         each designed to cater to different product categories and market needs

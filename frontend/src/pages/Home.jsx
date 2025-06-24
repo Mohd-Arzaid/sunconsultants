@@ -102,6 +102,7 @@ import Austria from "../assets/images/Austria.png";
 import USA from "../assets/images/USA.png";
 import Denmark from "../assets/images/Denmark.png";
 import { OurServices } from "./About";
+import YouTubeFacade from "@/components/ui/youtube-facade";
 
 // import { ImagesSlider } from "@/components/ui/images-slider";
 
@@ -469,14 +470,20 @@ const VideoSection = () => {
     {
       id: 1,
       embedId: "wcMNd8KWRBc",
+      title: "BIS Certification Process Guide",
+      description: "Learn about the complete BIS certification process for Indian manufacturers."
     },
     {
       id: 2,
       embedId: "iafdcHwzojY",
+      title: "CDSCO Registration Explained",
+      description: "Understanding CDSCO registration requirements and procedures."
     },
     {
       id: 3,
       embedId: "iafdcHwzojY",
+      title: "EPR Certificate Guide",
+      description: "Everything you need to know about EPR certificate for waste management."
     },
   ];
 
@@ -494,50 +501,15 @@ const VideoSection = () => {
             key={item.id}
             className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white"
           >
-            <div
-              className={
-                item.embedUrl
-                  ? "aspect-[9/16] overflow-hidden"
-                  : "aspect-[4/3] overflow-hidden"
-              }
-            >
-              {item.embedUrl ? (
-                <div
-                  style={{
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    position: "relative",
-                  }}
-                >
-                  <iframe
-                    src={item.embedUrl}
-                    style={{
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                      position: "absolute",
-                      border: 0,
-                    }}
-                    allowFullScreen
-                    scrolling="no"
-                    allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;"
-                  ></iframe>
-                </div>
-              ) : (
-                <iframe
-                  className="w-full h-full object-cover"
-                  src={`https://www.youtube.com/embed/${item.embedId}?si=bpOWvyUZWKVzkwyz`}
-                  title={item.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              )}
-            </div>
-            {/* Mobile View  */}
+            <YouTubeFacade
+              videoId={item.embedId}
+              title={item.title}
+              aspectRatio="aspect-video"
+              thumbnailQuality="hqdefault"
+              className="w-full"
+              autoplay={false}
+            />
+            {/* Mobile View Content */}
             <div className="block md:hidden p-5 bg-white">
               <div className="flex items-center mb-1">
                 <h3 className="text-neutral-800 font-inter text-xl leading-tight font-semibold">
