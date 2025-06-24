@@ -1,6 +1,7 @@
 import HeroImage from "../../assets/images/Placeholder.png";
 import ArrowOne from "../../assets/images/ArrowOne.png";
 import ArrowTwo from "../../assets/images/ArrowTwo.png";
+import HeroAgreementSvg from "../../assets/images/hero-agreement.svg";
 import WordPullUp from "../ui/word-pull-up";
 import { FadeText } from "../ui/fade-text";
 import { BlurIn } from "../ui/blur-in";
@@ -109,9 +110,12 @@ const Hero = () => {
               </div>
             </div>
             <img
-              src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg"
+              src={HeroAgreementSvg}
               alt="Hero Image"
               className="w-80 md:w-96 drop-shadow-xl"
+              loading="eager"
+              fetchPriority="high"
+              decoding="sync"
             />
           </div>
         </div>

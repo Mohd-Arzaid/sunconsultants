@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import HeroImage from "../assets/images/Placeholder.png";
 import ArrowOne from "../assets/images/ArrowOne.png";
 import ArrowTwo from "../assets/images/ArrowTwo.png";
+import HeroAgreementSvg from "../assets/images/hero-agreement.svg";
 import WordPullUp from "@/components/ui/word-pull-up";
 import { FadeText } from "@/components/ui/fade-text";
 import { BlurIn } from "@/components/ui/blur-in";
@@ -918,9 +919,12 @@ const Hero = () => {
             </div>
             <figure className="m-0">
               <img
-                src="https://gitcs-brain.vercel.app/assets/undraw_agreement_re_d4dv-CXonPu7G.svg"
+                src={HeroAgreementSvg}
                 alt="Sun Certifications India - Professional Certification Services"
                 className="w-80 md:w-96 drop-shadow-xl"
+                loading="eager"
+                fetchPriority="high"
+                decoding="sync"
               />
             </figure>
           </div>
