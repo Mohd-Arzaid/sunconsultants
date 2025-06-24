@@ -7,7 +7,7 @@ import { MailPlus, Search } from "lucide-react";
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import { useState, useMemo } from "react";
-import { notifications } from "./Notification";
+import { notifications } from "../data/notificationsData.js";
 
 // Function to convert title to URL slug (same as in Notification.jsx)
 const getUrlSlug = (title) => {
