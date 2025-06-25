@@ -6,10 +6,26 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { notifications } from "../data/notificationsData.js";
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 
 const Notification = () => {
   return (
     <>
+      <Helmet>
+        <title>Latest BIS Notifications & QCO Updates - Sun Certifications</title>
+        <meta name="description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Latest BIS Notifications & QCO Updates - Sun Certifications" />
+        <meta property="og:description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
+        <meta property="og:site_name" content="Sun Certifications India" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Latest BIS Notifications & QCO Updates - Sun Certifications" />
+        <meta name="twitter:description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
+      </Helmet>
       <NotificationMainContent />
       <Footer />
     </>
