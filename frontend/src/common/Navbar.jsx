@@ -35,6 +35,7 @@ import {
   X,
   FileCheck,
   GalleryHorizontal,
+  Video,
 } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
@@ -341,7 +342,7 @@ const Navbar = () => {
                   Updates
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="p-4 w-60">
+                  <div className="p-4 w-[300px]">
                     <NavigationMenuLink asChild>
                       <Link to="/bis-qco-updates" className="block">
                         <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
@@ -367,6 +368,16 @@ const Navbar = () => {
                         </div>
                       </Link>
                     </NavigationMenuLink>
+
+                        <NavigationMenuLink asChild>
+                        <Link to="/videos-about-bis-certification" className="block">
+                        <div className="text-base text-foreground/60 font-roboto tracking-wide hover:text-foreground/80 transition-colors block hover:bg-black/10 hover:rounded-md w-full p-2 text-left flex items-center">
+                          <Video className="w-4 h-4 mr-2" />
+                           Video About BIS Certification
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -400,6 +411,8 @@ const Navbar = () => {
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+
+    
             </NavigationMenuList>
           </NavigationMenu>
 
@@ -636,6 +649,21 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
                     </Button>
                   </Link>
                 </li>
+                <li className="w-full">
+                  <Link
+                    to="/videos-about-bis-certification"
+                    className="block w-full"
+                    onClick={handleLinkClick}
+                  >
+                    <Button
+                      variant="ghost"
+                      className="text-sm text-foreground/70 font-roboto tracking-wide hover:text-foreground hover:bg-neutral-100 transition-colors w-full justify-start py-2 pl-4"
+                    >
+                      <Video className="w-4 h-4 mr-2" />
+                      Video About BIS Certification
+                    </Button>
+                  </Link>
+                </li>
               </ul>
             </AccordionContent>
           </AccordionItem>
@@ -765,6 +793,8 @@ const MobileNavbarMenu = ({ closeMenu, buttonRef }) => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+
 
         <Link to="/contact" className="block w-full" onClick={handleLinkClick}>
           <Button

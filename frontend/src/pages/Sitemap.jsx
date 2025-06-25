@@ -108,8 +108,10 @@ const sitemapSections = [
             { name: "BIS QCO Updates", path: "/bis-qco-updates" },
             { name: "Ministry Updates", path: "/ministry-updates" },
             { name: "Upcoming Webinars", path: "/webinar" },
+            { name: "Video About BIS Certification", path: "/videos-about-bis-certification" },
         ],
     },
+   
     {
         title: "Gallery",
         pages: [

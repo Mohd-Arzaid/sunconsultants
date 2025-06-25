@@ -112,6 +112,7 @@ import USA from "../assets/images/USA.png";
 import Denmark from "../assets/images/Denmark.png";
 import { OurServices } from "./About";
 import YouTubeFacade from "@/components/ui/youtube-facade";
+import { videosData } from "../data/videosData.js";
 
 // import { ImagesSlider } from "@/components/ui/images-slider";
 
@@ -490,27 +491,6 @@ const CertificationAndAchievements = () => {
 };
 
 const VideoSection = () => {
-  const videos = [
-    {
-      id: 1,
-      embedId: "wcMNd8KWRBc",
-      title: "BIS Certification Process Guide",
-      description: "Learn about the complete BIS certification process for Indian manufacturers."
-    },
-    {
-      id: 2,
-      embedId: "iafdcHwzojY",
-      title: "CDSCO Registration Explained",
-      description: "Understanding CDSCO registration requirements and procedures."
-    },
-    {
-      id: 3,
-      embedId: "iafdcHwzojY",
-      title: "EPR Certificate Guide",
-      description: "Everything you need to know about EPR certificate for waste management."
-    },
-  ];
-
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:pt-16 md:pb-2 bg-white">
       <div className="text-center mb-6 md:mb-8">
@@ -520,30 +500,19 @@ const VideoSection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {videos.map((item) => (
+        {videosData.map((video) => (
           <div
-            key={item.id}
+            key={video.id}
             className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white"
           >
             <YouTubeFacade
-              videoId={item.embedId}
-              title={item.title}
+              videoId={video.embedId}
               aspectRatio="aspect-video"
               thumbnailQuality="hqdefault"
               className="w-full"
               autoplay={false}
             />
-            {/* Mobile View Content */}
-            <div className="block md:hidden p-5 bg-white">
-              <div className="flex items-center mb-1">
-                <h3 className="text-neutral-800 font-inter text-xl leading-tight font-semibold">
-                  {item.title}
-                </h3>
-              </div>
-              <p className="text-neutral-600 font-geist text-sm leading-relaxed">
-                {item.description}
-              </p>
-            </div>
+           
           </div>
         ))}
       </div>

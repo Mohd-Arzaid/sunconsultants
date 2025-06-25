@@ -21,6 +21,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Error404 from "./pages/404Error";
 import Webinar from "./pages/Webinar";
+import Videos from "./pages/Videos";
 
 // Service pages - direct imports
 import CDSCO from "./pages/CDSCO";
@@ -130,6 +131,7 @@ function App() {
         {/* Service Page End */}
 
         <Route path="/webinar" element={<Webinar />} />
+        <Route path="/videos-about-bis-certification" element={<Videos />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
