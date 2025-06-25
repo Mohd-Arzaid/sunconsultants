@@ -41,11 +41,11 @@ const CDSCOContentRight = () => {
 
   // List of paths where LatestBlog and LatestNotification should be shown
   const showComponentsPaths = [
-    '/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis',
-    '/a-guide-to-bis-certification-indian-bis',
-    '/what-is-bis-certificate-indian-bis',
-    '/what-is-crs-bis-or-crs-registration',
-    '/schemeX'
+    "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/a-guide-to-bis-certification-indian-bis",
+    "/what-is-bis-certificate-indian-bis",
+    "/what-is-crs-bis-or-crs-registration",
+    "/schemeX",
   ];
 
   // Check if current path should show these components
@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
       icon: <Shield className="h-8 w-8 text-blue-600" />,
       title: "Expert Guidance",
       description:
-        "Our team brings 15+ years of experience in CDSCO and BIS compliance.",
+        "Our team brings 12+ years of experience in CDSCO and BIS compliance.",
     },
     {
       icon: <Clock className="h-8 w-8 text-emerald-600" />,
@@ -85,7 +85,7 @@ const WhyChooseUs = () => {
     {
       icon: <Award className="h-8 w-8 text-amber-600" />,
       title: "Proven Success",
-      description: "99% success rate with 500+ successful registrations.",
+      description: "100% success rate with 1500+ successful registrations.",
     },
     {
       icon: <HeartHandshake className="h-8 w-8 text-purple-600" />,
@@ -105,20 +105,24 @@ const WhyChooseUs = () => {
       </div>
 
       {/* Highlight Stats */}
-      <div className="mt-4 grid grid-cols-3 gap-2">
+      <div className="mt-4 grid grid-cols-2 gap-2">
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-blue-200">
-          <h3 className="text-2xl font-bold text-blue-600 font-geist">15+</h3>
+          <h3 className="text-2xl font-bold text-blue-600 font-geist">12+</h3>
           <p className="text-xs text-gray-600 font-geist">Years Exp.</p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-emerald-200">
           <h3 className="text-2xl font-bold text-emerald-600 font-geist">
-            500+
+            1500+
           </h3>
-          <p className="text-xs text-gray-600 font-geist">Registrations</p>
+          <p className="text-xs text-gray-600 font-geist">Our Clients</p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-amber-200">
-          <h3 className="text-2xl font-bold text-amber-600 font-geist">99%</h3>
+          <h3 className="text-2xl font-bold text-amber-600 font-geist">100%</h3>
           <p className="text-xs text-gray-600 font-geist">Success Rate</p>
+        </div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-purple-200">
+          <h3 className="text-2xl font-bold text-purple-600 font-geist">20+</h3>
+          <p className="text-xs text-gray-600 font-geist">Countries Served</p>
         </div>
       </div>
 
@@ -193,19 +197,22 @@ const WhyChooseUs = () => {
 export const LatestBlog = () => {
   const blogPosts = [
     {
-      image: "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "BIS",
       title: "BIS certification for Work chairs",
       url: "/latest-notification/work-chairs",
     },
     {
-      image: "https://www.housingunits.co.uk/blog/2024/01/matching-bar-stools-dining-chairs/comerenowithmeb/",
+      image:
+        "https://www.housingunits.co.uk/blog/2024/01/matching-bar-stools-dining-chairs/comerenowithmeb/",
       category: "BIS",
       title: "BIS certification for Chairs and stools",
       url: "/latest-notification/and-stools",
     },
     {
-      image: "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
+      image:
+        "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
       category: "BIS",
       title: "BIS Notification for Tables and desks",
       url: "/latest-notification/and-desks",
@@ -223,57 +230,62 @@ export const LatestBlog = () => {
       url: "/latest-notification/bunk-beds",
     },
 
-
     {
-      image: "https://jharkhandstatenews.com/assets/admin/uploads/topstory_img/199879_1693229978.jpg",
+      image:
+        "https://jharkhandstatenews.com/assets/admin/uploads/topstory_img/199879_1693229978.jpg",
       category: "BIS",
       title: "BIS Notification for Solar DC Cable and Fire Survival Cable",
       url: "/latest-notification/survival-cable",
     },
 
     {
-      image: "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
       category: "BIS",
-      title: "BIS Notification for Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
+      title:
+        "BIS Notification for Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
       url: "/latest-notification/and-forgings",
     },
 
     {
-      image: "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "BIS",
       title: "BIS Notification for H Acid",
       url: "/latest-notification/h-acid",
     },
 
     {
-      image: "https://images.unsplash.com/photo-1617155093730-a8bf47be792d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1617155093730-a8bf47be792d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "BIS",
       title: "BIS Notification for K Acid",
       url: "/latest-notification/k-acid",
     },
 
     {
-      image: "https://media.istockphoto.com/id/940248330/photo/potassium-permanganate-sodium-sulfate-mixture.jpg?s=612x612&w=0&k=20&c=lhxvzbD2cVVOJKQyLIOqSaq9dlJTtDH07kHoBT5q7_4=",
+      image:
+        "https://media.istockphoto.com/id/940248330/photo/potassium-permanganate-sodium-sulfate-mixture.jpg?s=612x612&w=0&k=20&c=lhxvzbD2cVVOJKQyLIOqSaq9dlJTtDH07kHoBT5q7_4=",
       category: "BIS",
       title: "BIS Notification for Vinyl Sulphone",
       url: "/latest-notification/vinyl-sulphone",
     },
 
-
     {
-      image: "https://m.media-amazon.com/images/I/71qI8OoNdtL._AC_UF1000,1000_QL80_.jpg",
+      image:
+        "https://m.media-amazon.com/images/I/71qI8OoNdtL._AC_UF1000,1000_QL80_.jpg",
       category: "BIS",
       title: "BIS Notification for Electric Fence Energizers",
       url: "/latest-notification/fence-energizers",
     },
 
     {
-      image: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "BIS",
       title: "BIS Notification for Clothes Washing Machines",
       url: "/latest-notification/washing-machines",
     },
-
 
     {
       image: "https://m.media-amazon.com/images/I/31waXELONZL.jpg",
@@ -282,46 +294,48 @@ export const LatestBlog = () => {
       url: "/latest-notification/plaster-boards",
     },
 
-
     {
-      image: "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
+      image:
+        "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
       category: "BIS",
-      title: "BIS Notification for Aluminium alloy tubes for irrigation purposes -welded tubes",
+      title:
+        "BIS Notification for Aluminium alloy tubes for irrigation purposes -welded tubes",
       url: "/latest-notification/-welded-tubes",
     },
 
     {
       image: "https://www.sunnysteel.com/img/extruded-finned-tube.jpg",
       category: "BIS",
-      title: "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
+      title:
+        "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
       url: "/latest-notification/extruded-tube",
     },
 
     {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
       category: "BIS",
-      title: "BIS Notification for EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
+      title:
+        "BIS Notification for EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
       url: "/latest-notification/and-rolling",
     },
 
     {
-      image: "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
+      image:
+        "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
       category: "BIS",
-      title: "BIS Notification for Wrought aluminium and aluminium alloy bars, rods and sections",
+      title:
+        "BIS Notification for Wrought aluminium and aluminium alloy bars, rods and sections",
       url: "/latest-notification/and-sections",
     },
 
-
     {
-      image: "https://5.imimg.com/data5/SELLER/Default/2023/3/EC/HR/GU/184505254/regular-gypsum-plasterboard.jpg",
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2023/3/EC/HR/GU/184505254/regular-gypsum-plasterboard.jpg",
       category: "BIS",
       title: "BIS Notification for Gypsum Plaster Boards",
       url: "/latest-notification/plaster-boards",
     },
-
-
-
-
   ];
 
   return (
@@ -716,8 +730,8 @@ const OurEvents = () => {
 
               {index <
                 events.filter((event) => !event.isHighlighted).length - 1 && (
-                  <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
-                )}
+                <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
+              )}
             </div>
           ))}
       </div>

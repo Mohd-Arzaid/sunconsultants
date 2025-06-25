@@ -61,7 +61,11 @@ export const categories = [
     link: "/a-guide-to-bis-certification-indian-bis",
     icon: <Award className="w-4 h-4 mr-2" />,
   },
-
+  {
+    name: "Scheme X",
+    link: "/schemeX",
+    icon: <Cpu className="w-4 h-4 mr-2" />,
+  },
   {
     name: "EPR Registration",
     link: "/a-guide-on-how-to-obtain-epr-certificate",
@@ -189,6 +193,11 @@ export const categoriesMobile = [
     link: "/what-is-crs-bis-or-crs-registration",
     icon: <ShieldCheck className="w-4 h-4 mr-2" />,
   },
+    {
+    name: "Scheme X",
+    link: "/schemeX",
+    icon: <Cpu className="w-4 h-4 mr-2" />,
+  },
   {
     name: "EPR Registration",
     link: "/a-guide-on-how-to-obtain-epr-certificate",
@@ -265,7 +274,9 @@ const Navbar = () => {
           className=" selection:bg-emerald-600 flex items-center justify-center space-x-2.5 
         text-2xl font-bold py-6 text-center text-neutral-600 md:mr-10"
         >
-          <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
+          <Link to="/">
+            <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
+          </Link>
           <Link to="/" className="py-2 text-center">
             <h1 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
               Sun Certifications India

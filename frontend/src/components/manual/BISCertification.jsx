@@ -1515,13 +1515,11 @@ const OverviewSection = () => {
       </div>
 
       <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-        Complete Guide to BIS Certification in India – For Manufacturers &
-        Importers
+      What Is BIS Certificate? A Complete Guide to the Indian BIS Certification for Indian & Foreign Manufacturers.
       </h1>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Complete guide on BIS Certification in India: Ensuring Quality with ISI
-        Mark
+      BIS Certification in India: Ensuring Quality with ISI Mark
       </h2>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
@@ -1592,7 +1590,6 @@ const TypesSection = () => {
       {/* Title */}
 
       <h2 className="mainHeading">Types of BIS Certification</h2>
-    
       <p className="simpleParagraph">
         There are various types of BIS certification issued by the Indian BIS,
         each designed to cater to different product categories and market needs
@@ -1612,7 +1609,7 @@ const TypesSection = () => {
         />
       </div>
 
-      <h3 className="normalHeading">FMCS Scheme under Indian BIS</h3>
+      <h2 className="normalHeading">FMCS Scheme under Indian BIS</h2>
 
       <p className="simpleParagraph">
         The Foreign Manufacturers Certification Scheme (FMCS) is a special BIS
@@ -1636,9 +1633,9 @@ const TypesSection = () => {
         regulatory and quality benchmarks under Indian standards.
       </p>
 
-      <h3 className="normalHeading">
+      <h2 className="normalHeading">
         BIS License for Domestic Manufacturer (Indian BIS)
-      </h3>
+      </h2>
 
       <div className="simpleParagraph">
         Domestic manufacturers must obtain BIS certification through the Indian
@@ -1664,7 +1661,7 @@ const TypesSection = () => {
         mandatory for business success.
       </div>
 
-      <h3 className="normalHeading">What is ISI Mark ?</h3>
+      <h2 className="normalHeading">What is ISI Mark ?</h2>
 
       <p className="simpleParagraph">
         The ISI mark is one of the most recognized symbols of quality in India
@@ -1688,9 +1685,9 @@ const TypesSection = () => {
         non-negotiable.
       </p>
 
-      <h3 className="normalHeading">
+      <h2 className="normalHeading">
         What is Scheme X ? ( Omnibus Technical Regulation )
-      </h3>
+      </h2>
 
       <p className="simpleParagraph">
         It is a streamlined BIS certification scheme launched by the Indian BIS
@@ -1715,7 +1712,7 @@ const TypesSection = () => {
         efficient pathways to secure a BIS certificate in India.
       </p>
 
-      <h3 className="normalHeading">Compulsory Registration Scheme ( CRS )</h3>
+      <h2 className="normalHeading">Compulsory Registration Scheme ( CRS )</h2>
 
       <p className="simpleParagraph">
         The Compulsory Registration Scheme (CRS) is a specialized BIS
@@ -1739,7 +1736,7 @@ const TypesSection = () => {
         market reach for electronics manufacturers.
       </p>
 
-      <h3 className="normalHeading">Hallmarking</h3>
+      <h2 className="normalHeading">Hallmarking</h2>
 
       <p className="simpleParagraph">
         Hallmarking under BIS certification is mandatory for gold and silver
@@ -1764,7 +1761,7 @@ const TypesSection = () => {
         precious metals market.
       </p>
 
-      <h3 className="normalHeading">Eco Mark</h3>
+      <h2 className="normalHeading">Eco Mark</h2>
 
       <p className="simpleParagraph">
         Eco Mark is a unique certification under the BIS certification system
@@ -1790,9 +1787,9 @@ const TypesSection = () => {
         under the umbrella of BIS certification.
       </p>
 
-      <h3 className="normalHeading">
+      <h2 className="normalHeading">
         Management Systems Certification Scheme (MSCS)
-      </h3>
+      </h2>
 
       <p className="simpleParagraph">
         The Management Systems Certification Scheme (MSCS) by the Bureau of
@@ -1818,7 +1815,7 @@ const TypesSection = () => {
         infrastructure.
       </p>
 
-      <h3 className="simpleParagraph">LRS (Lab Recognition Scheme)</h3>
+      <h2 className="normalHeading">LRS (Lab Recognition Scheme)</h2>
 
       <div className="simpleParagraph">
         The LRS (Lab Recognition Scheme) of the Bureau of Indian Standards (BIS)
@@ -1837,11 +1834,41 @@ const TypesSection = () => {
         product quality ecosystem. BIS regularly monitors these labs through
         audits, proficiency testing, and surveillance to maintain global
         standards. By promoting transparency and trust, the LRS scheme
-        contributes to faster processing of BIS certifications, ensuring that
-        only safe and standard-compliant products enter the Indian market. For
+        contributes to faster processing of BIS certifications, ensuring that 
+        only safe and standard-compliant products enter the Indian market. For 
         any business aiming to obtain a BIS certificate, partnering with an
         LRS-recognized lab is an essential first step toward compliance.
       </div>
+
+      <h2 className="normalHeading">Products under BIS Certification</h2>
+
+      <div className="simpleParagraph">
+      Many products in India require BIS certification to ensure they conform to safety and performance benchmarks established by Indian BIS. These products span various industries such as electronics, electrical appliances, cement, automotive parts, steel, kitchenware, and more. All these categories must meet specific Indian standards, and companies must secure a BIS licence or BIS certificate before they can be sold in the Indian market. Products certified under the ISI mark scheme include items like electric cables, switches, packaged drinking water, and LPG cylinders, where quality control is critical. The CRS scheme applies to electronic products like LED lights, mobile phones, and power adapters. Even environmental and industrial goods, such as pumps and transformers, are included under Scheme X. Each product type has a specific standard, and BIS registration ensures that these products are verified through testing and inspection. The Indian BIS updates its product list periodically to keep up with technological and market developments. Securing BIS certification is not just a regulatory requirement—it is essential for market access, brand trust, and consumer safety. Without a valid BIS licence, businesses cannot legally manufacture, import, or sell these products, making certification vital for compliance and growth.
+      </div>
+
+
+      <h2 className="normalHeading">Benefits of BIS Certification</h2>
+
+      <div className="simpleParagraph">
+      Obtaining BIS certification offers multiple benefits for manufacturers, consumers, and the broader Indian economy. For businesses, a valid BIS licence or BIS certificate allows legal sale and distribution of regulated products within India. The ISI mark, granted through BIS registration, assures customers of the product’s safety, reliability, and compliance with Indian standards. For consumers, BIS certification provides confidence that the product they are purchasing is of tested quality and free from defects or safety hazards. The Indian BIS plays a vital role in ensuring that certified products undergo strict testing, regular audits, and continuous surveillance to maintain quality. For exporters and foreign manufacturers, BIS certification acts as a market gateway and boosts their brand’s credibility among Indian consumers. It also helps avoid penalties, import restrictions, or legal issues arising from non-compliance. Environmental certifications like the Eco Mark and specialized schemes like Scheme X further enhance product acceptability. Whether under CRS, FMCS, or ISI mark schemes, obtaining a BIS licence enables smoother trade operations and builds trust with distributors and retailers. Thus, the benefits of BIS certification go far beyond compliance—they foster brand loyalty, improve safety, and ensure adherence to Indian standards across various sectors.
+      </div>
+
+      <h2 className="normalHeading">Documents Required for BIS Certificate</h2>
+
+      <div className="simpleParagraph">
+      To apply for a BIS certificate, businesses must prepare a comprehensive set of documents that demonstrate compliance with Indian standards and eligibility for BIS certification. Key documents include the company’s business license, manufacturing layout, list of machinery, raw material sources, product technical details, and quality control manual. If applying under the ISI mark scheme, the applicant must also provide test reports from BIS-recognized labs. A valid trademark certificate is required for brand protection during BIS registration. For foreign manufacturers, an Authorized Indian Representative (AIR) must submit additional documentation like proof of representation and identity. The Indian BIS uses these documents to assess whether the product and facility meet the criteria for a BIS licence. Incomplete or inaccurate submissions can delay the BIS certification process or lead to outright rejection. Depending on the product category, additional documents may be needed under CRS, FMCS, or what is Scheme X guidelines. Accurate documentation ensures a smooth audit, reduces approval time, and facilitates faster market access. By compiling all required paperwork correctly, businesses demonstrate their commitment to product quality and safety. Hence, preparing the right documents is a critical step in securing a valid BIS licence and succeeding in the Indian market under BIS certification norms.
+      </div>
+
+     
+
+
+
+
+
+
+
+
+
     </section>
   );
 };
