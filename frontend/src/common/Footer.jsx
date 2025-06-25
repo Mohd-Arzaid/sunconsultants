@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              admin@indiancertifications.com
+              admin@bis-certifications.com
             </span>{" "}
             or use one of the options below. We usually get back within 24 hours.
           </div>
@@ -74,7 +74,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/dhruv-aggarwal-44b116155/"
+                href="https://www.linkedin.com/company/sun-consultants-engineers/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -269,7 +269,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:admin@indiancertifications.com?body=Hello"
+                href="mailto:admin@bis-certifications.com?body=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
               >

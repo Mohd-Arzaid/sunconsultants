@@ -710,7 +710,7 @@ const ServiceFaq = () => {
           <div className="text-center mt-[16px] text-[20px] leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
-              admin@indiancertifications.com
+              admin@bis-certifications.com
             </span>{" "}
             or use one of the options below. We usually get back within a day or
             two.
@@ -728,7 +728,7 @@ const ServiceFaq = () => {
             <div className="flex gap-x-6">
               <a
                 className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="mailto:admin@indiancertifications.com"
+                href="mailto:admin@bis-certifications.com"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -791,7 +791,7 @@ const ServiceFaq = () => {
               </a>
               <a
                 className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://www.linkedin.com/company/suncertifications"
+                href="https://www.linkedin.com/company/sun-consultants-engineers/"
                 rel="noreferrer noopener"
                 target="_blank"
               >

@@ -1,8 +1,6 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
-import BISSRimg from "../assets/images/BISSRimg.png";
+import PropTypes from "prop-types";
 
 import {
   Accordion,
@@ -17,7 +15,14 @@ import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
 import Services from "../components/manual/Services";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import AboutAuthor from "../components/common/AboutAuthor";
 
 const ISIMark = () => {
@@ -215,8 +220,9 @@ const BISISIIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -266,10 +272,11 @@ const BISISIIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -289,18 +296,20 @@ const BISISIIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -344,9 +353,10 @@ export const ServiceFaq = () => {
       aria-label="Frequently Asked Questions"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Frequently Asked Questions
-        </h4>
+        </h2>
+
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can&apos;t find the answer you are looking for?{" "}
           <a
@@ -356,12 +366,11 @@ export const ServiceFaq = () => {
             Reach out to us!
           </a>
         </p>
-
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is BIS certification and why is it important?
+                <h3>What is BIS certification and why is it important?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 BIS certification is issued by the Bureau of Indian Standards to
@@ -373,7 +382,9 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is the difference between BIS license and ISI mark?
+                <h2>
+                  What is the difference between BIS license and ISI mark?
+                </h2>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 The BIS license is a legal document that authorizes a
@@ -384,7 +395,7 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does it take to get BIS certification?
+                <h3>How long does it take to get BIS certification?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Typically, 6–10 weeks depending on product type, testing
@@ -394,7 +405,7 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is the validity period of a BIS license?
+                <h3>What is the validity period of a BIS license?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Usually 1 to 2 years, after which it must be renewed. Renewal
@@ -404,7 +415,7 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is the cost of BIS certification?
+                <h3>What is the cost of BIS certification?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Costs vary but can range from ₹25,000 to ₹100,000+, including
@@ -414,7 +425,7 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Is BIS certification mandatory for all products?
+                <h3>Is BIS certification mandatory for all products?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 No. It is mandatory only for products listed under the scheme 1
@@ -424,7 +435,7 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How can I find the right IS standard for my product?
+                <h3>How can I find the right IS standard for my product?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Visit the BIS website or consult with BIS-recognized testing
@@ -434,7 +445,7 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-8">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can foreign manufacturers apply for BIS certification?
+                <h3>Can foreign manufacturers apply for BIS certification?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 Yes. Through the Foreign Manufacturers Certification Scheme
@@ -445,7 +456,7 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-9">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What happens if my product fails BIS testing?
+                <h3>What happens if my product fails BIS testing?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 You’ll need to correct the issues and re-submit for testing.
@@ -456,7 +467,7 @@ export const ServiceFaq = () => {
 
             <AccordionItem value="item-10">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Is BIS certification needed for export?
+                <h3>Is BIS certification needed for export?</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                 While not always mandatory for exports, BIS certification boosts
@@ -547,29 +558,9 @@ const BISISIContentLeft = () => {
   );
 };
 
-const PointsList = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col w-full md:w-[441px]">
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[16px] md:mt-[24px] gap-2">
-        {points.map((point, index) => (
-          <li key={index} className="flex items-start gap-2">
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
-              {point}
-            </p>
-          </li>
-        ))}
-      </div>
-    </div>
-  );
-};
+const PointsListTwo = ({ points, heading, tagType = "h3" }) => {
+  const TagComponent = tagType;
 
-const PointsListTwo = ({ points, heading }) => {
   return (
     <div className="flex flex-col w-full">
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -581,14 +572,20 @@ const PointsListTwo = ({ points, heading }) => {
             <div className="bg-green-500/10 p-2 rounded-full">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
+            <TagComponent className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
               {point}
-            </p>
+            </TagComponent>
           </li>
         ))}
       </div>
     </div>
   );
+};
+
+PointsListTwo.propTypes = {
+  points: PropTypes.arrayOf(PropTypes.string).isRequired,
+  heading: PropTypes.string,
+  tagType: PropTypes.oneOf(["h1", "h2", "h3", "h4", "h5", "h6", "p", "span"]),
 };
 
 const OverviewSection = () => {
@@ -625,9 +622,9 @@ const OverviewSection = () => {
         performance, and reliability standards.
       </p>
 
-      <div className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Common ISI mark products include:
-      </div>
+      </h2>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <PointsListTwo
@@ -687,9 +684,9 @@ const OverviewSection = () => {
         sold in India.
       </p>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Key Differences Between ISI Mark and BIS License:
-      </h3>
+      </h2>
 
       <div className="mt-[16px] md:mt-[24px]">
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
@@ -1099,6 +1096,7 @@ const DocumentsSection = () => {
             "15. Declaration of Conformity to Standards",
             "16. Undertaking Regarding Non-Standard Products",
           ]}
+          tagType="h4"
         />
       </div>
     </section>
@@ -1196,7 +1194,6 @@ const CostingSection = () => {
           </TableBody>
         </Table>
       </div>
-
     </section>
   );
 };

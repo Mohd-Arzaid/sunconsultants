@@ -232,7 +232,7 @@ const Home = () => {
               "@type": "ContactPoint",
               telephone: "+91-8010505057",
               contactType: "customer service",
-              email: "admin@indiancertifications.com",
+              email: "admin@bis-certifications.com",
             },
             sameAs: ["https://twitter.com/CertificationsSun"],
           })}

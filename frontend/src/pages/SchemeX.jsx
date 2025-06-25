@@ -726,7 +726,7 @@ export const SchemeX = () => {
                 "@type": "ContactPoint",
                 telephone: "+91-8010505057",
                 contactType: "customer service",
-                email: "admin@indiancertifications.com",
+                email: "admin@bis-certifications.com",
               },
             },
             areaServed: {

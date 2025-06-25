@@ -10,11 +10,11 @@ const TopBar = () => {
         <div className="flex items-center justify-center">
           <div className="flex items-center gap-8">
             <a
-              href="mailto:admin@indiancertifications.com"
+              href="mailto:admin@bis-certifications.com"
               className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
             >
               <Mail className="w-4 h-4 mr-2" />
-              admin@indiancertifications.com
+              admin@bis-certifications.com
             </a>
 
             <div className="w-px h-5 bg-white/30"></div>
