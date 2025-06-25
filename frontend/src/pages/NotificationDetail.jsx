@@ -13,6 +13,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { LatestBlog } from "@/components/manual/CDSCOContentRight";
 import { notifications } from "../data/notificationsData.js";
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet-async';
 
 const NotificationDetail = () => {
   const { notificationName } = useParams();
@@ -260,111 +262,155 @@ const NotificationDetailLeft = ({ notificationName }) => {
     return <div>Redirecting...</div>;
   }
 
+  // SEO data for meta tags
+  const seoData = {
+    title: `BIS Certification guide for ${notification.subHeading}`,
+    ogTitle: `BIS Certification guide for ${notification.subHeading}`,
+    twitterTitle: `BIS Certification guide for ${notification.subHeading}`,
+    metaDescription: `Complete guide on how to obtain BIS license for ${notification.subHeading} for Indian and foreign manufacturers`,
+    ogDescription: `Complete guide on how to obtain BIS certificate for ${notification.subHeading} for Indian and foreign manufacturers`,
+    twitterDescription: `Complete guide on how to obtain BIS registration for ${notification.subHeading} for Indian and foreign manufacturers`,
+    metaKeywords: `indian bis, bis certification, bis certificate, bis licence, isi mark, bis license, certification scheme, bis certification scheme, bis certificate scheme, bis standard mark, bis licence certificate, process of BIS, cost of BIS Certification, BIS Certification for ${notification.subHeading}`,
+    websiteName: "Sun Certifications India",
+    type: "article",
+    url: `https://bis-certifications.com/bis-qco-updates/bis-certificate-for-${getUrlSlug(notification.title)}`
+  };
+
   return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
-      {/* Notification Header */}
-      <div className="p-4 md:p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
-            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-              <Mail className="h-6 w-6 md:h-7 md:w-7 text-blue-600" />
+    <>
+      {/* SEO Meta Tags - Not visible to users, only for search engines */}
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.metaDescription} />
+        <meta name="keywords" content={seoData.metaKeywords} />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={seoData.ogTitle} />
+        <meta property="og:description" content={seoData.ogDescription} />
+        <meta property="og:type" content={seoData.type} />
+        <meta property="og:url" content={seoData.url} />
+        <meta property="og:site_name" content={seoData.websiteName} />
+        
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seoData.twitterTitle} />
+        <meta name="twitter:description" content={seoData.twitterDescription} />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Sun Certifications India" />
+        <link rel="canonical" href={seoData.url} />
+      </Helmet>
+
+      <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+        {/* Notification Header */}
+        <div className="p-4 md:p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                <Mail className="h-6 w-6 md:h-7 md:w-7 text-blue-600" />
+              </div>
+
+              <div className="flex flex-col gap-0.5 min-w-0 flex-1">
+                <h1 className="font-playfair font-bold text-[#1e1e1e] text-lg md:text-2xl leading-tight">
+                  {notification.title}
+                </h1>
+
+                <p className="text-sm md:text-base font-medium text-gray-600 font-geist flex items-center gap-2">
+                  <span className="inline-block w-3 h-3 rounded-full bg-blue-400 animate-pulse flex-shrink-0"></span>
+                  <span className="truncate">Regulatory Compliance</span>
+                </p>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-0.5 min-w-0 flex-1">
-              <h2 className="font-playfair font-bold text-[#1e1e1e] text-lg md:text-2xl leading-tight">
-                {notification.title}
-              </h2>
+            <div className="flex flex-col items-start md:items-end justify-center gap-1 md:gap-0.5 flex-shrink-0">
+              <div className="text-sm md:text-base font-medium text-gray-600 font-geist whitespace-nowrap">
+                {notification.date}
+              </div>
 
-              <p className="text-sm md:text-base font-medium text-gray-600 font-geist flex items-center gap-2">
-                <span className="inline-block w-3 h-3 rounded-full bg-blue-400 animate-pulse flex-shrink-0"></span>
-                <span className="truncate">Regulatory Compliance</span>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-start md:items-end justify-center gap-1 md:gap-0.5 flex-shrink-0">
-            <div className="text-sm md:text-base font-medium text-gray-600 font-geist whitespace-nowrap">
-              {notification.date}
-            </div>
-
-            <div className="flex items-center font-medium gap-2 text-gray-600">
-              <MapPin className="text-gray-600 w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
-              <span className="text-sm md:text-base font-geist whitespace-nowrap">
-                {notification.location}
-              </span>
+              <div className="flex items-center font-medium gap-2 text-gray-600">
+                <MapPin className="text-gray-600 w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
+                <span className="text-sm md:text-base font-geist whitespace-nowrap">
+                  {notification.location}
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Notification Content */}
-      <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        <h3 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Important Update on Mandatory BIS Certification for Manufacturers and
-          Importers of{" "}
-          <span className="font-medium text-[#1e1e1e] underline decoration-blue-400  decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
-            {notification.subHeading}
-          </span>{" "}
-        </h3>
+        {/* Notification Content */}
+        <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+            Important Update on Mandatory BIS Certification for Manufacturers and
+            Importers of{" "}
+            <span className="font-medium text-[#1e1e1e] underline decoration-blue-400  decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
+              {notification.subHeading}
+            </span>{" "}
+          </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">Dear Reader,</p>
+          <p className="text-gray-600 text-base font-geist mb-4">Dear Reader,</p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <span className="font-medium text-[#1e1e1e] underline decoration-blue-400  decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
-            MINISTRY OF COMMERCE AND INDUSTRY
-          </span>{" "}
-          has prepared a Quality Control Order in respect of{" "}
-          {notification.subHeading} in Consultation with BIS in order to bring
-          it under mandatory BIS Certification keeping in view the Human Safety
-          and for ensuring the optimum quality of Product. The QCO for above
-          said Product is attached below :
-        </p>
-
-        <div className="mb-4">
-          <h4 className="text-xl font-geist font-medium ttext-[#1e1e1e] mb-2">
-            QCO notification {notification.subHeading} under{" "}
-            {notification.ISNumber} is as below :
-          </h4>
-          <p className="text-base text-gray-600 mb-2">
-            The Notification was Released on {notification.date} and It will be
-            Implemented from :
+          <p className="text-gray-600 text-base font-geist mb-4">
+            <span className="font-medium text-[#1e1e1e] underline decoration-blue-400  decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
+              MINISTRY OF COMMERCE AND INDUSTRY
+            </span>{" "}
+            has prepared a Quality Control Order in respect of{" "}
+            {notification.subHeading} in Consultation with BIS in order to bring
+            it under mandatory BIS Certification keeping in view the Human Safety
+            and for ensuring the optimum quality of Product. The QCO for above
+            said Product is attached below :
           </p>
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1">
-            <li>
-              {notification.Date1} for Medium and Large enterprises (Annual
-              turnover {">"}50 crores)
-            </li>
-            <li>
-              {notification.Date2} for Small enterprises (Annual Turnover
-              between 5 to 50 crores)
-            </li>
-            <li>
-              {notification.Date3} for Micro enterprises (Annual turnover {"<"}5
-              crores)
-            </li>
-          </ul>
+
+          <div className="mb-4">
+            <h3 className="text-xl font-geist font-medium text-[#1e1e1e] mb-2">
+              QCO notification {notification.subHeading} under{" "}
+              {notification.ISNumber} is as below :
+            </h3>
+            <p className="text-base text-gray-600 mb-2 font-geist">
+              The Notification was Released on {notification.date} and It will be
+              Implemented from :
+            </p>
+            <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1">
+              <li>
+                {notification.Date1} for Medium and Large enterprises (Annual
+                turnover {">"}50 crores)
+              </li>
+              <li>
+                {notification.Date2} for Small enterprises (Annual Turnover
+                between 5 to 50 crores)
+              </li>
+              <li>
+                {notification.Date3} for Micro enterprises (Annual turnover {"<"}5
+                crores)
+              </li>
+            </ul>
+          </div>
+
+          <p className="text-gray-600 text-base font-geist mb-4">
+            Please review the attached document, If you have any questions or need
+            assistance, Our Team is here to Help.
+          </p>
         </div>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Please review the attached document, If you have any questions or need
-          assistance, Our Team is here to Help.
-        </p>
+        {/* Pdf */}
+        <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+          <iframe
+            src={notification.pdfUrl}
+            title="PDF Viewer"
+            className="w-full h-[800px] bg-white"
+            style={{
+              boxShadow:
+                "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+            }}
+          />
+        </div>
       </div>
-
-      {/* Pdf */}
-      <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        <iframe
-          src={notification.pdfUrl}
-          title="PDF Viewer"
-          className="w-full h-[800px] bg-white"
-          style={{
-            boxShadow:
-              "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-          }}
-        />
-      </div>
-    </div>
+    </>
   );
+};
+
+NotificationDetailLeft.propTypes = {
+  notificationName: PropTypes.string.isRequired,
 };
 
 const NotificationDetailRight = () => {

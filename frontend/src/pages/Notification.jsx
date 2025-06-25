@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, FileText, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { notifications } from "../data/notificationsData.js";
+import PropTypes from 'prop-types';
 
 const Notification = () => {
   return (
@@ -72,15 +73,13 @@ const NotificationMainContent = () => {
         <Pagination
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
-          totalItems={notifications.length}
           itemsPerPage={itemsPerPage}
+          searchQuery={searchQuery}
         />
       </div>
     </div>
   );
 };
-
-
 
 const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   const filteredNotifications = notifications.filter((notification) => {
@@ -123,7 +122,7 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
                 No notifications found matching your Search Criteria.
               </p>
               <p className="text-gray-600 font-geist text-base sm:text-lg">
-                Don't worry! We're here to help you find what you're looking
+                Don&apos;t worry! We&apos;re here to help you find what you&apos;re looking
                 for.
               </p>
 
@@ -166,6 +165,12 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   );
 };
 
+NotificationCard.propTypes = {
+  searchQuery: PropTypes.string.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  itemsPerPage: PropTypes.number.isRequired,
+};
+
 const NotificationCardItem = ({
   color,
   tagType,
@@ -173,7 +178,6 @@ const NotificationCardItem = ({
   title,
   description,
   pdfUrl,
-  id,
 }) => {
   // Function to convert title to URL slug
   const getUrlSlug = (title) => {
@@ -254,19 +258,44 @@ const NotificationCardItem = ({
   );
 };
 
+NotificationCardItem.propTypes = {
+  color: PropTypes.string.isRequired,
+  tagType: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  pdfUrl: PropTypes.string.isRequired,
+};
+
 const Pagination = ({
   currentPage,
   setCurrentPage,
-  totalItems,
   itemsPerPage,
+  searchQuery,
 }) => {
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  // Filter notifications based on search query to get correct total count
+  const filteredNotifications = notifications.filter((notification) => {
+    if (!searchQuery) return true;
+    const searchLower = searchQuery.toLowerCase();
+    return (
+      notification.title.toLowerCase().includes(searchLower) ||
+      notification.description.toLowerCase().includes(searchLower) ||
+      notification.tagType.toLowerCase().includes(searchLower)
+    );
+  });
+  
+  const totalPages = Math.ceil(filteredNotifications.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
     if (pageNumber >= 1 && pageNumber <= totalPages) {
       setCurrentPage(pageNumber);
     }
   };
+
+  // Don't show pagination if there are no pages
+  if (totalPages <= 1) {
+    return null;
+  }
 
   return (
     <div
@@ -313,4 +342,11 @@ const Pagination = ({
       </button>
     </div>
   );
+};
+
+Pagination.propTypes = {
+  currentPage: PropTypes.number.isRequired,
+  setCurrentPage: PropTypes.func.isRequired,
+  itemsPerPage: PropTypes.number.isRequired,
+  searchQuery: PropTypes.string,
 };
