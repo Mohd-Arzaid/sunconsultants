@@ -1,3 +1,10 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "redirects": [
+    {
+      "source": "/latest-notification/bis-certificate-for-:slug",
+      "destination": "/bis-qco-updates/bis-certificate-for-:slug",
+      "permanent": true
+    }
+  ]
 }

@@ -8,28 +8,12 @@ import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import { useState, useMemo } from "react";
 import { notifications } from "../data/notificationsData.js";
-
-// Function to convert title to URL slug (same as in Notification.jsx)
-const getUrlSlug = (title) => {
-    // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
-    let cleanTitle = title
-        .replace(/^BIS\s+(certification|notification)\s+for\s+/i, '') // Remove "BIS certification for" or "BIS Notification for"
-        .replace(/^QCO\s+notification\s+for\s+/i, '') // Remove "QCO notification for"
-        .trim();
-
-    // Convert to kebab-case
-    return cleanTitle
-        .toLowerCase()
-        .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
-        .replace(/\s+/g, "-")      // Replace spaces with hyphens
-        .replace(/-+/g, "-")       // Replace multiple hyphens with single hyphen
-        .trim();                   // Remove leading/trailing spaces
-};
+import { getNotificationDetailUrl } from "@/utils/urlUtils";
 
 // Generate notification pages from actual notifications array
 const notificationPages = notifications.map((notification) => ({
     name: notification.title,
-    path: `/bis-qco-updates/bis-certificate-for-${getUrlSlug(notification.title)}`
+    path: getNotificationDetailUrl(notification.title)
 }));
 
 // Define sitemap sections and their pages

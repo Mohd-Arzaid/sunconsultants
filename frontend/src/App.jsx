@@ -137,6 +137,9 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
+        {/* Explicit 404 route */}
+        <Route path="/404" element={<Error404 />} />
+        
         {/* Catch-all route - shows 404 error page for unmatched URLs */}
         <Route path="*" element={<Error404 />} />
       </Routes>

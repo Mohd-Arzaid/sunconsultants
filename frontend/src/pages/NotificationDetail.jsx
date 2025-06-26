@@ -9,24 +9,35 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Footer from "@/common/Footer";
-import { useNavigate, useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useParams, Navigate } from "react-router-dom";
 import { LatestBlog } from "@/components/manual/CDSCOContentRight";
 import { notifications } from "../data/notificationsData.js";
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 import { Services } from "@/components/manual/Services";
 import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
+import { getUrlSlug, getNotificationCanonicalUrl } from "@/utils/urlUtils";
 
 const NotificationDetail = () => {
   const { notificationName } = useParams();
 
+  // Find the notification based on the URL slug
+  const notification = notifications.find((notif) => {
+    const slug = getUrlSlug(notif.title);
+    return slug === notificationName.replace('bis-certificate-for-', '');
+  });
+
+  // If notification not found, redirect to 404 page
+  if (!notification) {
+    return <Navigate to="/404" replace />;
+  }
+
   return (
-    <div className=" bg-white">
+    <div className="bg-white">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side - Content and PDF */}
-          <NotificationDetailLeft notificationName={notificationName} />
+          <NotificationDetailLeft notification={notification} />
 
           {/* Right Side */}
           <NotificationDetailRight />
@@ -40,57 +51,28 @@ const NotificationDetail = () => {
 
 export default NotificationDetail;
 
-
-
-const NotificationDetailLeft = ({ notificationName }) => {
-  const navigate = useNavigate();
-
-  // Function to convert title to URL slug (same as in Notification.jsx)
-  const getUrlSlug = (title) => {
-    // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
-    let cleanTitle = title
-      .replace(/^BIS\s+(certification|notification)\s+for\s+/i, '') // Remove "BIS certification for" or "BIS Notification for"
-      .replace(/^QCO\s+notification\s+for\s+/i, '') // Remove "QCO notification for"
-      .trim();
-
-    // Convert to kebab-case
-    return cleanTitle
-      .toLowerCase()
-      .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
-      .replace(/\s+/g, "-")      // Replace spaces with hyphens
-      .replace(/-+/g, "-")       // Replace multiple hyphens with single hyphen
-      .trim();                   // Remove leading/trailing spaces
-  };
-
-  // Find the notification based on the URL slug
-  const notification = notifications.find((notif) => {
-    const slug = getUrlSlug(notif.title);
-    return slug === notificationName.replace('bis-certificate-for-', '');
-  });
-
-  // If notification not found, redirect to home
-  useEffect(() => {
-    if (!notification) {
-      navigate('/', { replace: true });
-    }
-  }, [notification, navigate]);
-
-  if (!notification) {
-    return <div>Redirecting...</div>;
-  }
+const NotificationDetailLeft = ({ notification }) => {
+  // Base URL for canonical links
+  const baseUrl = 'https://bis-certifications.com';
+  
+  // Generate canonical URL
+  const canonicalUrl = getNotificationCanonicalUrl(notification.title);
 
   // SEO data for meta tags
   const seoData = {
-    title: `BIS Certification guide for ${notification.subHeading}`,
-    ogTitle: `BIS Certification guide for ${notification.subHeading}`,
-    twitterTitle: `BIS Certification guide for ${notification.subHeading}`,
-    metaDescription: `Complete guide on how to obtain BIS license for ${notification.subHeading} for Indian and foreign manufacturers`,
-    ogDescription: `Complete guide on how to obtain BIS certificate for ${notification.subHeading} for Indian and foreign manufacturers`,
-    twitterDescription: `Complete guide on how to obtain BIS registration for ${notification.subHeading} for Indian and foreign manufacturers`,
-    metaKeywords: `indian bis, bis certification, bis certificate, bis licence, isi mark, bis license, certification scheme, bis certification scheme, bis certificate scheme, bis standard mark, bis licence certificate, process of BIS, cost of BIS Certification, BIS Certification for ${notification.subHeading}`,
+    title: `BIS Certification guide for ${notification.subHeading} - Sun Certifications`,
+    ogTitle: `BIS Certification guide for ${notification.subHeading} - Sun Certifications`,
+    twitterTitle: `BIS Certification guide for ${notification.subHeading} - Sun Certifications`,
+    metaDescription: `Complete guide on how to obtain BIS license for ${notification.subHeading}. Learn about mandatory certification requirements, process, and compliance for Indian and foreign manufacturers.`,
+    ogDescription: `Complete guide on how to obtain BIS certificate for ${notification.subHeading}. Learn about mandatory certification requirements, process, and compliance for Indian and foreign manufacturers.`,
+    twitterDescription: `Complete guide on how to obtain BIS registration for ${notification.subHeading}. Learn about mandatory certification requirements, process, and compliance for Indian and foreign manufacturers.`,
+    metaKeywords: `indian bis, bis certification, bis certificate, bis licence, isi mark, bis license, certification scheme, bis certification scheme, bis certificate scheme, bis standard mark, bis licence certificate, process of BIS, cost of BIS Certification, BIS Certification for ${notification.subHeading}, ${notification.ISNumber}`,
     websiteName: "Sun Certifications India",
     type: "article",
-    url: `https://bis-certifications.com/bis-qco-updates/bis-certificate-for-${getUrlSlug(notification.title)}`
+    url: canonicalUrl,
+    publishedTime: notification.date,
+    modifiedTime: new Date().toISOString(),
+    imageUrl: `${baseUrl}/images/bis-certification-banner.jpg`,
   };
 
   return (
@@ -98,11 +80,14 @@ const NotificationDetailLeft = ({ notificationName }) => {
       {/* SEO Breadcrumbs - Structured Data Only */}
       <SEOBreadcrumbs customTitle={seoData.title} />
       
-      {/* SEO Meta Tags - Not visible to users, only for search engines */}
+      {/* SEO Meta Tags */}
       <Helmet>
         <title>{seoData.title}</title>
         <meta name="description" content={seoData.metaDescription} />
         <meta name="keywords" content={seoData.metaKeywords} />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={canonicalUrl} />
         
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={seoData.ogTitle} />
@@ -110,16 +95,51 @@ const NotificationDetailLeft = ({ notificationName }) => {
         <meta property="og:type" content={seoData.type} />
         <meta property="og:url" content={seoData.url} />
         <meta property="og:site_name" content={seoData.websiteName} />
+        <meta property="og:image" content={seoData.imageUrl} />
+        <meta property="article:published_time" content={seoData.publishedTime} />
+        <meta property="article:modified_time" content={seoData.modifiedTime} />
         
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seoData.twitterTitle} />
         <meta name="twitter:description" content={seoData.twitterDescription} />
+        <meta name="twitter:image" content={seoData.imageUrl} />
         
         {/* Additional SEO Meta Tags */}
         <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Sun Certifications India" />
-        <link rel="canonical" href={seoData.url} />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "${seoData.title}",
+              "description": "${seoData.metaDescription}",
+              "image": "${seoData.imageUrl}",
+              "author": {
+                "@type": "Organization",
+                "name": "Sun Certifications India"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Sun Certifications India",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "${baseUrl}/images/logo.png"
+                }
+              },
+              "datePublished": "${seoData.publishedTime}",
+              "dateModified": "${seoData.modifiedTime}",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "${canonicalUrl}"
+              }
+            }
+          `}
+        </script>
       </Helmet>
 
       <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
@@ -230,7 +250,20 @@ const NotificationDetailLeft = ({ notificationName }) => {
 };
 
 NotificationDetailLeft.propTypes = {
-  notificationName: PropTypes.string.isRequired,
+  notification: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subHeading: PropTypes.string.isRequired,
+    ISNumber: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    Date1: PropTypes.string.isRequired,
+    Date2: PropTypes.string.isRequired,
+    Date3: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    pdfUrl: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    tagType: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 const NotificationDetailRight = () => {

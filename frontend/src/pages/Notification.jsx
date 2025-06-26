@@ -6,25 +6,61 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { notifications } from "../data/notificationsData.js";
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+import { getNotificationDetailUrl } from "@/utils/urlUtils";
 
 const Notification = () => {
+  const baseUrl = 'https://bis-certifications.com';
+  const currentUrl = `${baseUrl}/bis-qco-updates`;
+
   return (
     <>
       <Helmet>
         <title>Latest BIS Notifications & QCO Updates - Sun Certifications</title>
         <meta name="description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
         
+        {/* Canonical URL */}
+        <link rel="canonical" href={currentUrl} />
+        
         {/* Open Graph / Facebook */}
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Latest BIS Notifications & QCO Updates - Sun Certifications" />
         <meta property="og:description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
+        <meta property="og:url" content={currentUrl} />
         <meta property="og:site_name" content="Sun Certifications India" />
+        <meta property="og:image" content={`${baseUrl}/images/bis-certification-banner.jpg`} />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Latest BIS Notifications & QCO Updates - Sun Certifications" />
         <meta name="twitter:description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
+        <meta name="twitter:image" content={`${baseUrl}/images/bis-certification-banner.jpg`} />
+
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "headline": "Latest BIS Notifications & QCO Updates",
+              "description": "Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements.",
+              "url": "${currentUrl}",
+              "image": "${baseUrl}/images/bis-certification-banner.jpg",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Sun Certifications India",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "${baseUrl}/images/logo.png"
+                }
+              }
+            }
+          `}
+        </script>
       </Helmet>
       <NotificationMainContent />
       <Footer />
@@ -212,6 +248,9 @@ const NotificationCardItem = ({
       .trim();                   // Remove leading/trailing spaces
   };
 
+  const slug = getUrlSlug(title);
+  const detailUrl = getNotificationDetailUrl(slug);
+
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-[0_15px_30px_-10px_rgba(0,0,0,0.1)]">
       <div className="h-3 md:h-4" style={{ backgroundColor: color }}></div>
@@ -252,7 +291,10 @@ const NotificationCardItem = ({
             </span>
           </a>
 
-          <Link to={`/bis-qco-updates/bis-certificate-for-${getUrlSlug(title)}`}>
+          <Link 
+            to={detailUrl}
+            className="relative"
+          >
             <Button
               variant="outline"
               className="transition-all duration-200"
