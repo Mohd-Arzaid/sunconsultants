@@ -16,6 +16,7 @@ import { notifications } from "../data/notificationsData.js";
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 import { Services } from "@/components/manual/Services";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const NotificationDetail = () => {
   const { notificationName } = useParams();
@@ -94,6 +95,9 @@ const NotificationDetailLeft = ({ notificationName }) => {
 
   return (
     <>
+      {/* SEO Breadcrumbs - Structured Data Only */}
+      <SEOBreadcrumbs customTitle={seoData.title} />
+      
       {/* SEO Meta Tags - Not visible to users, only for search engines */}
       <Helmet>
         <title>{seoData.title}</title>

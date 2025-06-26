@@ -12,6 +12,8 @@ import Footer from "@/common/Footer";
 import { motion, useAnimationControls } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Services from "@/components/manual/Services";
+import { Helmet } from "react-helmet-async";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 // Import images for services
 import BISImage from "../assets/images/BIS.jpg";
@@ -25,6 +27,14 @@ import ISIMark from "../assets/images/ISIMark.jpg";
 const About = () => {
   return (
     <div className="overflow-hidden bg-[#F9F7F2]">
+      <SEOBreadcrumbs customTitle="About Sun Certifications India" />
+      <Helmet>
+        <title>About Sun Certifications India - BIS Certification Experts</title>
+        <meta name="description" content="Learn about Sun Certifications India, founded in 2013. We are India's leading BIS certification consultants with 4,999+ projects and 1,299+ happy clients worldwide." />
+        <meta name="keywords" content="about sun certifications, bis certification company, indian certification experts, bis consultants india" />
+        <link rel="canonical" href="https://bis-certifications.com/about" />
+      </Helmet>
+      
       {/* <AboutHero /> */}
       <WhyChooseUs />
       <Stats />

@@ -6,6 +6,7 @@ import MobileNav from "./components/common/MobileNav";
 import SocialFloatingButtons from "./components/common/SocialFloatingButtons";
 import ContactFormPopup from "./components/ContactFormPopup";
 import ScrollToTopButton, { ScrollToTop } from "./components/common/ScrollToTop";
+import SEOBreadcrumbs from "./components/common/SEOBreadcrumbs";
 
 // Direct imports for instant navigation - no lazy loading
 import Home from "./pages/Home";
@@ -56,6 +57,7 @@ function App() {
       <Navbar />
       <ScrollToTopButton hide={popupOpen} />
       <ScrollToTop />
+      <SEOBreadcrumbs />
       
       <Routes>
         <Route path="/" element={<Home />} />
@@ -97,7 +99,7 @@ function App() {
           element={<LegalMetrology />}
         />
         <Route
-          path="a-guide-to-bis-certification-indian-bis"
+          path="/a-guide-to-bis-certification-indian-bis"
           element={<ISIMark />}
         />
         <Route

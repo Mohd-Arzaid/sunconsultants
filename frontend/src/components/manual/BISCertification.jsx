@@ -25,6 +25,7 @@ import ServiceContactForm from "@/common/ServiceContactForm";
 import PropTypes from "prop-types";
 import Services from "./Services";
 import AboutAuthor from "../common/AboutAuthor";
+import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
 
 
 export const BISCertification = () => {
@@ -146,6 +147,7 @@ export const BISCertification = () => {
       </Helmet>
 
       <main className="w-full">
+        <SEOBreadcrumbs customTitle="BIS Certification Services | ISI Mark | BIS License" />
         <BISCHero />
         <BISCIndex />
         <BISCContent />
