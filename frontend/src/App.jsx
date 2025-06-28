@@ -47,6 +47,7 @@ import { BISCertification } from "./components/manual/BISCertification";
 import { LMPC } from "./components/manual/LMPC";
 import { PlasticWaste } from "./components/manual/PlasticWaste";
 import { LegalMetrology } from "./components/manual/LegalMetrology";
+import LHSCable from "./pages/LHSCable";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -130,6 +131,7 @@ function App() {
         <Route path="/ce-certification" element={<CECertification />} />
         <Route path="/emi-emc-certification" element={<EMIEMC />} />
         <Route path="/cb-certification" element={<CBCertification />} />
+        <Route path="/lhscable" element={<LHSCable />} />
         {/* Service Page End */}
 
         <Route path="/webinar" element={<Webinar />} />
@@ -142,6 +144,7 @@ function App() {
         
         {/* Catch-all route - shows 404 error page for unmatched URLs */}
         <Route path="*" element={<Error404 />} />
+
       </Routes>
       
       <MobileNav />
