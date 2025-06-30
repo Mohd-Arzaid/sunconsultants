@@ -194,11 +194,9 @@ const Home = () => {
         
         */}
 
-
         {/* OG desciption :  
               content="Sun Certifications is the best BIS certification Certifications in India. We provide comprehensive certification services for Indian and foreign manufacturers."
         */}
-
 
         <meta
           name="twitter:description"
@@ -308,9 +306,9 @@ const Home = () => {
       </Helmet>
 
       <section aria-label="Hero Section" className="w-full">
-      <Hero />
+        <Hero />
       </section>
-      
+
       <section aria-label="Partner Logos" className="w-full">
         <LogoTicker />
       </section>
@@ -344,7 +342,7 @@ const Home = () => {
           <LatestNews />
         </Suspense>
       </section>
-      
+
       <section aria-label="Countries We Serve" className="w-full">
         <Suspense fallback={<SectionLoader />}>
           <Countries />
@@ -370,7 +368,7 @@ const Home = () => {
       <section aria-label="Partner Logos" className="w-full">
         <VideoSection />
       </section>
-      
+
       <Footer />
     </main>
   );
@@ -466,7 +464,7 @@ const CertificationAndAchievements = () => {
                       <img
                         src={item.image}
                         alt={item.title}
-              loading="lazy"
+                        loading="lazy"
                         decoding="async"
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         style={{
@@ -477,8 +475,8 @@ const CertificationAndAchievements = () => {
                         onLoad={(e) => {
                           e.target.style.opacity = "1";
                         }}
-            />
-          </div>
+                      />
+                    </div>
                   </div>
                 ))}
               </React.Fragment>
@@ -512,7 +510,6 @@ const VideoSection = () => {
               className="w-full"
               autoplay={false}
             />
-           
           </div>
         ))}
       </div>
@@ -849,54 +846,52 @@ const Hero = () => {
 
       {/* For Mobile Device */}
       <main className="md:hidden flex flex-col gap-5 w-full ">
-        <div className="custom-radial-gradient w-full flex flex-col justify-center p-4">
-          <div className="flex justify-between flex-col items-center w-full m-auto pb-12">
-            <div className="flex flex-col gap-8 mt-10 mb-16">
-              <header>
-                <WordPullUp
-                  words="Sun Certifications India"
-                  className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
-                />
-              </header>
-              <article className="max-w-2xl">
-                <FadeText
-                  text="
+        <div className="flex justify-between flex-col items-center w-full m-auto pb-12">
+          <div className="flex flex-col gap-8 mt-10 mb-16">
+            <header>
+              <WordPullUp
+                words="Sun Certifications India"
+                className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
+              />
+            </header>
+            <article className="max-w-2xl">
+              <FadeText
+                text="
              Trusted certifications for BIS, LMPC, EPR, and WPC certifications since 2013. We assist both Indian and foreign manufacturers in obtaining essential government certifications for the Indian market.
               "
-                  className="font-geist text-gray-600"
-                  direction="left"
-                />
-              </article>
-
-              <nav
-                className="flex gap-3 flex-wrap items-center"
-                aria-label="Mobile navigation"
-              >
-                <Link to="/about">
-                  <BlurIn
-                    word="About Us"
-                    className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
-                  />
-                </Link>
-                <Link to="/contact">
-                  <BlurIn
-                    word="Contact Us"
-                    className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
-                  />
-                </Link>
-              </nav>
-            </div>
-            <figure className="m-0">
-              <img
-                src={HeroAgreementSvg}
-                alt="Sun Certifications India - Professional Certification Services"
-                className="w-80 md:w-96 drop-shadow-xl"
-                loading="eager"
-                fetchPriority="high"
-                decoding="sync"
+                className="font-geist text-gray-600"
+                direction="left"
               />
-            </figure>
+            </article>
+
+            <nav
+              className="flex gap-3 flex-wrap items-center"
+              aria-label="Mobile navigation"
+            >
+              <Link to="/about">
+                <BlurIn
+                  word="About Us"
+                  className="bg-black text-white text-sm font-geist py-3 rounded-md flex gap-2 justify-center items-center px-8"
+                />
+              </Link>
+              <Link to="/contact">
+                <BlurIn
+                  word="Contact Us"
+                  className="border font-geist text-sm bg-white text-black flex justify-center gap-4 items-center py-3 rounded-md px-8"
+                />
+              </Link>
+            </nav>
           </div>
+          <figure className="m-0">
+            <img
+              src={HeroAgreementSvg}
+              alt="Sun Certifications India - Professional Certification Services"
+              className="w-80 md:w-96 drop-shadow-xl"
+              loading="eager"
+              fetchPriority="high"
+              decoding="sync"
+            />
+          </figure>
         </div>
       </main>
     </>
