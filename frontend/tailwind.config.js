@@ -5,90 +5,14 @@ export default {
   theme: {
     extend: {
       animation: {
-        move: "move 5s linear infinite",
-        marquee: "marquee var(--duration) infinite linear",
-        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        float: "float 6s ease-in-out infinite",
-        "float-slow": "float 10s ease-in-out infinite",
-        "spin-slow": "spin 20s linear infinite",
-        "subtle-pulse": "subtle-pulse 4s ease-in-out infinite",
-        "fade-in-up": "fade-in-up 0.6s ease-out forwards",
-        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "bounce-slow": "bounce-slow 2s infinite",
-        "ping-slow": "ping 3s cubic-bezier(0, 0, 0.2, 1) infinite",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
-        move: {
-          "0%": {
-            transform: "translateX(-200px)",
-          },
-          "100%": {
-            transform: "translateX(200px)",
-          },
-        },
-        marquee: {
-          from: {
-            transform: "translateX(0)",
-          },
+        scroll: {
           to: {
-            transform: "translateX(calc(-100% - var(--gap)))",
+            transform: "translate(calc(-50% - 0.5rem))",
           },
-        },
-        "marquee-vertical": {
-          from: {
-            transform: "translateY(0)",
-          },
-          to: {
-            transform: "translateY(calc(-100% - var(--gap)))",
-          },
-        },
-        "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
-        },
-        "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
-        },
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-20px)" },
-        },
-        "subtle-pulse": {
-          "0%, 100%": {
-            opacity: "1",
-          },
-          "50%": {
-            opacity: "0.8",
-          },
-        },
-        "fade-in-up": {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(20px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
-        },
-        pulse: {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.5" },
-        },
-        "bounce-slow": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
         },
       },
       fontFamily: {

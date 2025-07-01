@@ -1,15 +1,21 @@
-import { memo } from 'react';
 import { cn } from "@/lib/utils";
 import { Mail, Phone } from "lucide-react";
 
-const TopBar = memo(() => {
+const Container = ({ children, className }) => {
+  return (
+    <div className={cn("w-full max-w-[88rem]  mx-auto", className)}>
+      {children}
+    </div>
+  );
+};
+
+const TopBar = () => {
   return (
     <div className="bg-[#0A4394] text-white py-2.5 sticky top-0 z-50 hidden md:block">
       <Container className="relative flex items-center justify-center gap-8">
         <a
           href="mailto:admin@bis-certifications.com"
           className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
-          aria-label="Email admin@bis-certifications.com"
         >
           <Mail className="w-4 h-4 mr-2" />
           admin@bis-certifications.com
@@ -20,7 +26,6 @@ const TopBar = memo(() => {
         <a
           href="tel:+918010505057"
           className="flex items-center font-inter tracking-wide text-base hover:text-emerald-100 transition-colors duration-200"
-          aria-label="Call +91 80105 05057"
         >
           <Phone className="w-4 h-4 mr-2" />
           +91 80105 05057
@@ -30,7 +35,6 @@ const TopBar = memo(() => {
           <a
             href="tel:+918010505057"
             className="flex items-center text-white hover:text-emerald-100 transition-all duration-300 hover:scale-110"
-            aria-label="Call Now"
           >
             <Phone className="w-6 h-6" />
           </a>
@@ -39,29 +43,31 @@ const TopBar = memo(() => {
             href="https://wa.me/918010505057"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-white hover:text-emerald-100 transition-all duration-300 hover:scale-110 hover:rotate-12"
-            aria-label="WhatsApp Chat"
+            className="flex items-center text-white hover:text-emerald-100 transition-all duration-300 hover:scale-110"
           >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-label="WhatsApp">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            <svg
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>whatsapp</title>
+                <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"></path>
+              </g>
             </svg>
           </a>
         </div>
       </Container>
     </div>
   );
-});
-
-TopBar.displayName = 'TopBar';
+};
 
 export default TopBar;
-
-const Container = memo(({ children, className }) => {
-  return (
-    <div className={cn("w-full max-w-[88rem]  mx-auto", className)}>
-      {children}
-    </div>
-  );
-});
-
-Container.displayName = 'Container';
