@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import companyLogo from "../assets/company-logo/company-logo.png";
+import companyLogo from "../assets/company-logo/company-logo.webp";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -133,8 +133,6 @@ const Navbar = () => {
             className="w-10 h-10 md:w-12 md:h-12"
             loading="eager"
             decoding="async"
-            width="48"
-            height="48"
           />
           <div className="py-2 text-center">
             <h1 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
