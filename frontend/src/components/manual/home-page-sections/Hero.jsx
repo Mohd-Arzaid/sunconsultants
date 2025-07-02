@@ -122,8 +122,8 @@ const MobileHero = () => {
               decoding="sync"
               fetchPriority="high"
               className="w-80 h-auto drop-shadow-xl"
-              width="320"
-              height="240"
+              // width="320"
+              // height="240"
             />
           </figure>
         </div>
