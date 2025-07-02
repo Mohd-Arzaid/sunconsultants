@@ -903,8 +903,6 @@ const AuditsMarquee = () => {
 
 // Logo Ticker
 
-
-
 // const LogoTicker = () => {
 //   return (
 //     // <div className="h-20 md:h-28 bg-[#B9DEEB]">

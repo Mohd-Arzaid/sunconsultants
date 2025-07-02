@@ -54,8 +54,8 @@ const DesktopHero = () => (
               alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
               className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-full max-w-[740px] h-auto object-cover"
               loading="eager"
+              decoding="async"
               fetchPriority="high"
-              decoding="sync"
               width="740"
               height="480"
             />
@@ -137,8 +137,8 @@ const MobileHero = () => {
               src={HeroImageMobile}
               alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
               loading="eager"
+              decoding="async"
               fetchPriority="high"
-              decoding="sync"
               className="w-80 md:w-96 drop-shadow-xl"
               width="320"
               height="240"

@@ -12,6 +12,25 @@
       content="usCbLql5w15HfQAw3u-SAn1HrigVaNY_740hzjO_Ahs"
     />
 
+    <!-- Critical Image Preloading for LCP optimization -->
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/hero-image/hero-image.webp"
+      type="image/webp"
+      media="(min-width: 768px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/hero-image/hero-mobile.svg"
+      type="image/svg+xml"
+      media="(max-width: 767px)"
+      fetchpriority="high"
+    />
+    
+
     <!-- Preload the LCP image to improve loading performance -->
     <link
       rel="preload"
