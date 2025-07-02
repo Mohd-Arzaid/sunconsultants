@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Favicon: Using Logo.png as favicon -->
-    <link rel="icon" type="image/png" href="/src/assets/images/Logo.png" />
-    <!-- Image content: This is the company logo used as favicon -->
+    <!-- Favicon: Company logo as favicon -->
+    <link rel="icon" type="image/webp" href="/company-logo/company-logo.webp" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -12,7 +11,7 @@
       content="usCbLql5w15HfQAw3u-SAn1HrigVaNY_740hzjO_Ahs"
     />
 
-    <!-- Critical Image Preloading for LCP optimization -->
+    <!-- Critical LCP Image Preloading - HIGHEST PRIORITY -->
     <link
       rel="preload"
       as="image"
@@ -30,66 +29,27 @@
       fetchpriority="high"
     />
 
-    <!-- Preload Audit Images for International Audits Marquee -->
+    <!-- Preload Only First Few Visible Audit Images (Reduced for LCP Performance) -->
     <link
       rel="preload"
       as="image"
       href="/auditImages/Bahrain.webp"
       type="image/webp"
+      fetchpriority="low"
     />
     <link
       rel="preload"
       as="image"
       href="/auditImages/Indonesia.webp"
       type="image/webp"
+      fetchpriority="low"
     />
     <link
       rel="preload"
       as="image"
       href="/auditImages/Italy-2.webp"
       type="image/webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/auditImages/Malaysia.webp"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/auditImages/Slovenia.webp"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/auditImages/Thailand.webp"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/auditImages/Vietnam.webp"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/auditImages/Vietnam-2.webp"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/auditImages/Vietnam-3.webp"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/auditImages/Vietnam-4.webp"
-      type="image/webp"
+      fetchpriority="low"
     />
 
     <title>BIS Certification | FMCS | ISI MARK | LMPC | EPR | CDSCO</title>
