@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import HeroImage from "@/assets/hero-image/hero-image.webp";
 import HeroImageMobile from "@/assets/hero-image/hero-mobile.svg";
 import { BlurIn } from "@/components/ui/blur-in";
@@ -6,43 +5,21 @@ import { FadeText } from "@/components/ui/fade-text";
 import WordPullUp from "@/components/ui/word-pull-up";
 import { Link } from "react-router-dom";
 
-// Custom hook for media query with debouncing
-const useMediaQuery = (query) => {
-  const [matches, setMatches] = useState(() => {
-    if (typeof window !== "undefined") {
-      return window.matchMedia(query).matches;
-    }
-    return false;
-  });
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const mediaQuery = window.matchMedia(query);
-    let timeoutId;
-
-    const handleChange = () => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        setMatches(mediaQuery.matches);
-      }, 100); // Debounce resize events
-    };
-
-    mediaQuery.addEventListener("change", handleChange);
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-      clearTimeout(timeoutId);
-    };
-  }, [query]);
-
-  return matches;
-};
-
 // Simple Desktop Hero Component
 const DesktopHero = () => (
-  <main className="relative pb-24 pt-12 custom-radial-gradient overflow-x-hidden">
+  <main
+    style={{
+      background: "radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%)",
+    }}
+    className="relative pb-24 pt-12 overflow-x-hidden"
+  >
     {/* Background gradient */}
-    <div className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-hero"></div>
+    <div
+      style={{
+        background: "radial-gradient(circle, #D8E6EF 8%, #C5E2F0 100%)",
+      }}
+      className="absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 "
+    ></div>
 
     {/* Hero Content */}
     <div className="max-w-[84rem] w-full mx-auto">
@@ -94,7 +71,12 @@ const MobileHero = () => {
 
   return (
     <main className="flex flex-col gap-5 w-full">
-      <div className="custom-radial-gradient w-full flex flex-col justify-center p-4">
+      <div
+        style={{
+          background: "radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%)",
+        }}
+        className=" w-full flex flex-col justify-center p-4"
+      >
         <div className="flex justify-between flex-col items-center w-full m-auto pb-12">
           <div className="flex flex-col gap-8 mt-10 mb-16">
             <header>
@@ -137,7 +119,7 @@ const MobileHero = () => {
               src={HeroImageMobile}
               alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
               loading="eager"
-              decoding="async"
+              decoding="sync"
               fetchPriority="high"
               className="w-80 md:w-96 drop-shadow-xl"
               width="320"
@@ -151,21 +133,19 @@ const MobileHero = () => {
 };
 
 const Hero = () => {
-  const isMobile = useMediaQuery("(max-width: 767px)");
+  return (
+    <>
+      {/* Desktop Hero - Hidden on mobile */}
+      <div className="hidden md:block">
+        <DesktopHero />
+      </div>
 
-  // Add image preloading for better UX
-  useEffect(() => {
-    const preloadImage = (src) => {
-      const img = new Image();
-      img.src = src;
-    };
-
-    preloadImage(HeroImage);
-    preloadImage(HeroImageMobile);
-  }, []);
-
-  // Simple conditional render
-  return isMobile ? <MobileHero /> : <DesktopHero />;
+      {/* Mobile Hero - Hidden on desktop */}
+      <div className="block md:hidden">
+        <MobileHero />
+      </div>
+    </>
+  );
 };
 
 export default Hero;
