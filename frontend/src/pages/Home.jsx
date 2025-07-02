@@ -1,15 +1,6 @@
 import Footer from "@/common/Footer";
 import { Helmet } from "react-helmet-async";
 import { Suspense } from "react";
-
-// Critical above-the-fold imports (loaded immediately)
-import HeroImage from "../assets/images/Placeholder.png";
-import ArrowOne from "../assets/images/ArrowOne.png";
-import ArrowTwo from "../assets/images/ArrowTwo.png";
-import HeroAgreementSvg from "../assets/images/hero-agreement.svg";
-import WordPullUp from "@/components/ui/word-pull-up";
-import { FadeText } from "@/components/ui/fade-text";
-import { BlurIn } from "@/components/ui/blur-in";
 import { Link } from "react-router-dom";
 
 // Loading component for sections
@@ -19,34 +10,10 @@ const SectionLoader = () => (
   </div>
 );
 
-// Logo Ticker Import
-// import LogoOne from "../assets/images/OneLogo.png";
-import LogoTwo from "../assets/images/TwoLogo.png";
-// import LogoThree from "../assets/images/ThreeLogo.png";
-// import LogoFour from "../assets/images/FourLogo.png";
-// import LogoFive from "../assets/images/FiveLogo.png";
-// import LogoSix from "../assets/images/SixLogo.png";
-import ametek from "../assets/images/ametek.png";
-import Ansell from "../assets/images/Ansell.png";
-import Daiki from "../assets/images/Daiki.png";
-import Aqua from "../assets/images/Aqua.png";
-import honeywell from "../assets/images/honeywell.png";
-import Ikea from "../assets/images/Ikea.png";
-import LeaderArt from "../assets/images/LeaderArt.png";
-import Misumi from "../assets/images/Misumi.png";
-import nobilia from "../assets/images/nobilia.png";
-import Panasonic from "../assets/images/Panasonic.png";
-import cuty from "../assets/images/cuty.png";
-import raumplus from "../assets/images/raumplus.png";
-import remsa from "../assets/images/remsa.png";
-import SEDOVINA from "../assets/images/SEDOVINA.png";
-import Thantawan from "../assets/images/Thantawan.png";
-import titus from "../assets/images/titus.png";
 
 import { motion } from "motion/react";
 
-// Services Import
-import BISImage from "../assets/images/BIS.jpg";
+
 import CDSCO from "../assets/images/CDSCO.jpg";
 import BISCRS from "../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg";
@@ -65,20 +32,14 @@ import { Button } from "@/components/ui/button";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import { toast } from "@/hooks/use-toast";
-import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/style.css";
+
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 // Latest New Import
 import { useEffect } from "react";
 import { useAnimationControls } from "framer-motion";
 
-// Client Import
-import TestimonialImage from "../assets/images/TestimonialImage.png";
-import TestimonialImageSecond from "../assets/images/TestimonialImageSecond.png";
-import TestimonialImageThree from "../assets/images/TestimonialImageThree.png";
-import Vector from "../assets/images/Vector.png";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
+
 
 // Countries Import
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
