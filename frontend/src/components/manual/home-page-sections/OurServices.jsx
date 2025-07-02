@@ -1,13 +1,16 @@
-import BISImage from "@/assets/services-images/BIS.jpg";
-import CDSCO from "@/assets/services-images/CDSCO.jpg";
-import BISCRS from "@/assets/services-images/BISCRS.jpg";
-import PlasticWasteManagement from "@/assets/services-images/PlasticWasteManagement.jpg";
-import EPRCertificate from "@/assets/services-images/EPRCertificate.jpg";
-import LMPC from "@/assets/services-images/LMPC.jpg";
-import ISIMark from "@/assets/services-images/ISIMark.jpg";
 import { useNavigate } from "react-router-dom";
 import { useState, useCallback, useMemo } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
+
+const BISImage = "/services-images/BIS.jpg";
+const CDSCOImage = "/services-images/CDSCO.jpg";
+const BISCRSImage = "/services-images/BISCRS.jpg";
+const PlasticWasteManagementImage = "/services-images/PlasticWasteManagement.jpg";
+const EPRCertificateImage = "/services-images/EPRCertificate.jpg";
+const LMPCImage = "/services-images/LMPC.jpg";
+const ISIMarkImage = "/services-images/ISIMark.jpg";
+
 
 const services = [
   {
@@ -23,7 +26,7 @@ const services = [
     title: "Scheme X",
     description:
       "Specialized certification program for specific product categories requiring compliance with advanced quality and safety standards.",
-    image: ISIMark,
+    image: ISIMarkImage,
     path: "/schemeX",
   },
   {
@@ -31,7 +34,7 @@ const services = [
     title: "ISI Mark BIS for Indian Manufacturers",
     description:
       "Domestic certification for Indian manufacturers ensuring products meet Bureau of Indian Standards quality and safety requirements.",
-    image: ISIMark,
+    image: ISIMarkImage,
     path: "/a-guide-to-bis-certification-indian-bis",
   },
   {
@@ -39,7 +42,7 @@ const services = [
     title: "BIS CRS Registration",
     description:
       "Compulsory Registration Scheme certification for electronic and IT products ensuring safety and quality compliance.",
-    image: BISCRS,
+    image: BISCRSImage,
     path: "/what-is-crs-bis-or-crs-registration",
   },
   {
@@ -47,7 +50,7 @@ const services = [
     title: "CDSCO Registration Certification",
     description:
       "Central Drugs Standard Control Organization approval for medical devices and pharmaceuticals in India.",
-    image: CDSCO,
+    image: CDSCOImage,
     path: "/cdsco-registration-certification",
   },
   {
@@ -55,7 +58,7 @@ const services = [
     title: "Plastic Waste Management",
     description:
       "Comprehensive solutions for plastic waste management compliance, helping businesses meet environmental regulations.",
-    image: PlasticWasteManagement,
+    image: PlasticWasteManagementImage,
     path: "/epr-certificate-for-plastic-waste-management-pwm",
   },
   {
@@ -63,7 +66,7 @@ const services = [
     title: "EPR Certificate",
     description:
       "Extended Producer Responsibility certification for sustainable waste management and environmental compliance.",
-    image: EPRCertificate,
+    image: EPRCertificateImage,
     path: "/a-guide-on-how-to-obtain-epr-certificate",
   },
   {
@@ -71,7 +74,7 @@ const services = [
     title: "LMPC Certificate",
     description:
       "Legal Metrology Packaged Commodities certification ensuring accurate measurement and proper labeling of packaged goods.",
-    image: LMPC,
+    image: LMPCImage,
     path: "/a-guide-on-how-to-obtain-lmpc-certificate",
   },
 ];

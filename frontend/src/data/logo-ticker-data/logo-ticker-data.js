@@ -1,10 +1,10 @@
-// Import all SVG assets properly for Vite build
-import honeywellLogo from "@/assets/client-logos/honeywell.svg";
-import ikeaLogo from "@/assets/client-logos/ikea.svg";
-import panasonicLogo from "@/assets/client-logos/panasonic.svg";
-import ansellLogo from "@/assets/client-logos/ansell.svg";
-import ametekLogo from "@/assets/client-logos/ametek.svg";
-import boschLogo from "@/assets/client-logos/bosch.svg";
+const honeywellLogo = "/client-logos/honeywell.svg";
+const ikeaLogo = "/client-logos/ikea.svg";
+const panasonicLogo = "/client-logos/panasonic.svg";
+const ansellLogo = "/client-logos/ansell.svg";
+const ametekLogo = "/client-logos/ametek.svg";
+const boschLogo = "/client-logos/bosch.svg";
+
 
 export const COMPANY_LOGOS = [
   {

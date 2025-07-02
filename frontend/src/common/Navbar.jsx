@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import companyLogo from "../assets/company-logo/company-logo.webp";
+
+const companyLogo = "/company-logo/company-logo.webp";
+
 import {
   NavigationMenu,
   NavigationMenuContent,

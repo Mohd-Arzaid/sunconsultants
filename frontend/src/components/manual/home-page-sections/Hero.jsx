@@ -1,5 +1,7 @@
-import HeroImage from "@/assets/hero-image/hero-image.webp";
-import HeroImageMobile from "@/assets/hero-image/hero-mobile.svg";
+
+const HeroImage = "/hero-image/hero-image.webp";
+const HeroImageMobile = "/hero-image/hero-mobile.svg";
+
 import { BlurIn } from "@/components/ui/blur-in";
 import { FadeText } from "@/components/ui/fade-text";
 import WordPullUp from "@/components/ui/word-pull-up";

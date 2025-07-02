@@ -1,16 +1,16 @@
 import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
 
-import BahrainAudit from "../assets/auditImages/Bahrain.png";
-import IndonesiaAudit from "../assets/auditImages/Indonesia.png";
-import ItalyAudit from "../assets/auditImages/Italy-2.png";
-import MalaysiaAudit from "../assets/auditImages/Malaysia.png";
-import SloveniaAudit from "../assets/auditImages/Slovenia.png";
-import ThailandAudit from "../assets/auditImages/Thailand.png";
-import Vietnam2Audit from "../assets/auditImages/Vietnam-2.png";
-import Vietnam3Audit from "../assets/auditImages/Vietnam-3.png";
-import Vietnam4Audit from "../assets/auditImages/Vietnam-4.png";
-import VietnamAudit from "../assets/auditImages/Vietnam.png";
+import BahrainAudit from "@/assets/auditImages/Bahrain.webp";
+import IndonesiaAudit from "@/assets/auditImages/Indonesia.webp";
+import ItalyAudit from "@/assets/auditImages/Italy-2.webp";
+import MalaysiaAudit from "@/assets/auditImages/Malaysia.webp";
+import SloveniaAudit from "@/assets/auditImages/Slovenia.webp";
+import ThailandAudit from "@/assets/auditImages/Thailand.webp";
+import Vietnam2Audit from "@/assets/auditImages/Vietnam-2.webp";
+import Vietnam3Audit from "@/assets/auditImages/Vietnam-3.webp";
+import Vietnam4Audit from "@/assets/auditImages/Vietnam-4.webp";
+import VietnamAudit from "@/assets/auditImages/Vietnam.webp";
 
 const InternationalAudits = () => {
   return (

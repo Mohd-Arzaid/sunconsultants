@@ -26,7 +26,6 @@ const Home = () => {
   return (
     <main className="w-full">
       <HomeSEO />
-
       <section aria-label="Hero Section" className="w-full">
         <Hero />
       </section>

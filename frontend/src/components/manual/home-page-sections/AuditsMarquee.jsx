@@ -1,16 +1,16 @@
 import { Marquee } from "@/components/magicui/marquee";
 
-// Audit Marquee Images
-import BahrainAudit from "../../../assets/auditImages/Bahrain.png";
-import IndonesiaAudit from "../../../assets/auditImages/Indonesia.png";
-import ItalyAudit from "../../../assets/auditImages/Italy-2.png";
-import MalaysiaAudit from "../../../assets/auditImages/Malaysia.png";
-import SloveniaAudit from "../../../assets/auditImages/Slovenia.png";
-import ThailandAudit from "../../../assets/auditImages/Thailand.png";
-import Vietnam2Audit from "../../../assets/auditImages/Vietnam-2.png";
-import Vietnam3Audit from "../../../assets/auditImages/Vietnam-3.png";
-import Vietnam4Audit from "../../../assets/auditImages/Vietnam-4.png";
-import VietnamAudit from "../../../assets/auditImages/Vietnam.png";
+// Audit Marquee Images - Using public folder for better deployment compatibility
+const BahrainAudit = "/auditImages/Bahrain.webp";
+const IndonesiaAudit = "/auditImages/Indonesia.webp";
+const ItalyAudit = "/auditImages/Italy-2.webp";
+const MalaysiaAudit = "/auditImages/Malaysia.webp";
+const SloveniaAudit = "/auditImages/Slovenia.webp";
+const ThailandAudit = "/auditImages/Thailand.webp";
+const Vietnam2Audit = "/auditImages/Vietnam-2.webp";
+const Vietnam3Audit = "/auditImages/Vietnam-3.webp";
+const Vietnam4Audit = "/auditImages/Vietnam-4.webp";
+const VietnamAudit = "/auditImages/Vietnam.webp";
 
 const AuditsMarquee = () => {
   // Gallery images from InternationalAudits.jsx
