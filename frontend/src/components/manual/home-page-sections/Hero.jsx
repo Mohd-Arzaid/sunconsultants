@@ -121,7 +121,7 @@ const MobileHero = () => {
               loading="eager"
               decoding="sync"
               fetchPriority="high"
-              className="w-80 md:w-96 drop-shadow-xl"
+              className="w-80 h-auto drop-shadow-xl"
               width="320"
               height="240"
             />
