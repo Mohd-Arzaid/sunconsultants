@@ -1,16 +1,17 @@
 import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
 
-import BahrainAudit from "@/assets/auditImages/Bahrain.webp";
-import IndonesiaAudit from "@/assets/auditImages/Indonesia.webp";
-import ItalyAudit from "@/assets/auditImages/Italy-2.webp";
-import MalaysiaAudit from "@/assets/auditImages/Malaysia.webp";
-import SloveniaAudit from "@/assets/auditImages/Slovenia.webp";
-import ThailandAudit from "@/assets/auditImages/Thailand.webp";
-import Vietnam2Audit from "@/assets/auditImages/Vietnam-2.webp";
-import Vietnam3Audit from "@/assets/auditImages/Vietnam-3.webp";
-import Vietnam4Audit from "@/assets/auditImages/Vietnam-4.webp";
-import VietnamAudit from "@/assets/auditImages/Vietnam.webp";
+// Audit Images - Using public folder for better deployment compatibility
+const BahrainAudit = "/auditImages/Bahrain.webp";
+const IndonesiaAudit = "/auditImages/Indonesia.webp";
+const ItalyAudit = "/auditImages/Italy-2.webp";
+const MalaysiaAudit = "/auditImages/Malaysia.webp";
+const SloveniaAudit = "/auditImages/Slovenia.webp";
+const ThailandAudit = "/auditImages/Thailand.webp";
+const Vietnam2Audit = "/auditImages/Vietnam-2.webp";
+const Vietnam3Audit = "/auditImages/Vietnam-3.webp";
+const Vietnam4Audit = "/auditImages/Vietnam-4.webp";
+const VietnamAudit = "/auditImages/Vietnam.webp";
 
 const InternationalAudits = () => {
   return (
@@ -179,9 +180,6 @@ const AuditGallery = () => {
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   );
