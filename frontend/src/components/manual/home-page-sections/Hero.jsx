@@ -31,7 +31,7 @@ const DesktopHero = () => (
               alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
               className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-full max-w-[740px] h-auto object-cover"
               loading="eager"
-              decoding="async"
+              decoding="sync"
               fetchPriority="high"
               width="740"
               height="480"
@@ -39,7 +39,7 @@ const DesktopHero = () => (
           </figure>
 
           <div className="absolute inset-0 flex items-center justify-center transform translate-x-[575px]">
-            <article className="py-6 px-8 bg-white/70 backdrop-blur-lg w-[650px] h-[380px] shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+            <article className="py-6 px-8 bg-white/80 backdrop-blur-md w-[650px] h-[380px] shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
               <header className="relative max-w-[600px]">
                 <h1 className="text-5xl font-bold font-playfair text-left text-black leading-[52px]">
                   Sun Certifications India
