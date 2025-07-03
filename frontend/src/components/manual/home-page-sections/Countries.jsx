@@ -1,30 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
-// Country Images
-import Thailand from "/countries-images/Thailand.webp";
-import Vietnam from "/countries-images/Vietnam.webp";
-import Canada from "/countries-images/Canada.webp";
-import China from "/countries-images/China.webp";
-import Italy from "/countries-images/Italy.webp";
-import Colombia from "/countries-images/Colombia.webp";
-import Qatar from "/countries-images/Qatar.webp";
-import India from "/countries-images/India.webp";
-import Indonesia from "/countries-images/Indonesia.webp";
-import Malaysia from "/countries-images/Malaysia.webp";
-import Russia from "/countries-images/Russia.webp";
-import Bahrain from "/countries-images/Bahrain.webp";
-import UAE from "/countries-images/UAE.webp";
-import Nepal from "/countries-images/Nepal.webp";
-import SriLanka from "/countries-images/SriLanka.webp";
-import France from "/countries-images/France.webp";
-import Germany from "/countries-images/Germany.webp";
-import Sweden from "/countries-images/Sweden.webp";
-import Slovenia from "/countries-images/Slovenia.webp";
-import Austria from "/countries-images/Austria.webp";
-import USA from "/countries-images/USA.webp";
-import Denmark from "/countries-images/Denmark.webp";
-
 // Countries
 const Countries = () => {
   const handlePreviousClick = () => {
@@ -46,28 +22,28 @@ const Countries = () => {
   };
 
   const [countriesData, setCountriesData] = useState([
-    { name: "Thailand", img: Thailand },
-    { name: "Vietnam", img: Vietnam },
-    { name: "Canada", img: Canada },
-    { name: "China", img: China },
-    { name: "Italy", img: Italy },
-    { name: "Colombia", img: Colombia },
-    { name: "Qatar", img: Qatar },
-    { name: "India", img: India },
-    { name: "Indonesia", img: Indonesia },
-    { name: "Malaysia", img: Malaysia },
-    { name: "Russia", img: Russia },
-    { name: "Bahrain", img: Bahrain },
-    { name: "UAE", img: UAE },
-    { name: "Nepal", img: Nepal },
-    { name: "Sri Lanka", img: SriLanka },
-    { name: "France", img: France },
-    { name: "Germany", img: Germany },
-    { name: "Sweden", img: Sweden },
-    { name: "Slovenia", img: Slovenia },
-    { name: "Austria", img: Austria },
-    { name: "USA", img: USA },
-    { name: "Denmark", img: Denmark },
+    { name: "Thailand", img: "/countries-images/Thailand.webp" },
+    { name: "Vietnam", img: "/countries-images/Vietnam.webp" },
+    { name: "Canada", img: "/countries-images/Canada.webp" },
+    { name: "China", img: "/countries-images/China.webp" },
+    { name: "Italy", img: "/countries-images/Italy.webp" },
+    { name: "Colombia", img: "/countries-images/Colombia.webp" },
+    { name: "Qatar", img: "/countries-images/Qatar.webp" },
+    { name: "India", img: "/countries-images/India.webp" },
+    { name: "Indonesia", img: "/countries-images/Indonesia.webp" },
+    { name: "Malaysia", img: "/countries-images/Malaysia.webp" },
+    { name: "Russia", img: "/countries-images/Russia.webp" },
+    { name: "Bahrain", img: "/countries-images/Bahrain.webp" },
+    { name: "UAE", img: "/countries-images/UAE.webp" },
+    { name: "Nepal", img: "/countries-images/Nepal.webp" },
+    { name: "Sri Lanka", img: "/countries-images/SriLanka.webp" },
+    { name: "France", img: "/countries-images/France.webp" },
+    { name: "Germany", img: "/countries-images/Germany.webp" },
+    { name: "Sweden", img: "/countries-images/Sweden.webp" },
+    { name: "Slovenia", img: "/countries-images/Slovenia.webp" },
+    { name: "Austria", img: "/countries-images/Austria.webp" },
+    { name: "USA", img: "/countries-images/USA.webp" },
+    { name: "Denmark", img: "/countries-images/Denmark.webp" },
   ]);
 
   return (
