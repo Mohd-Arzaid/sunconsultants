@@ -1,22 +1,22 @@
 import { Marquee } from "@/components/magicui/marquee";
 
 // Seminar & Exhibition Images
-import Exhibition1 from "../../../assets/seminarImages/Exhibition-1.jpg";
-import Exhibition2 from "../../../assets/seminarImages/Exhibition-2.jpg";
-import Exhibition3 from "../../../assets/seminarImages/Exhibition-3.jpg";
-import Seimar82 from "../../../assets/seminarImages/Seimar-8-2.png";
-import Seminar4 from "../../../assets/seminarImages/Seminar-4.jpg";
-import Seminar5 from "../../../assets/seminarImages/Seminar-5.jpg";
-import Seminar62 from "../../../assets/seminarImages/Seminar-6-2.jpg";
-import Seminar6 from "../../../assets/seminarImages/Seminar-6.jpg";
-import Seminar72 from "../../../assets/seminarImages/Seminar-7-2.jpg";
-import Seminar7 from "../../../assets/seminarImages/Seminar-7.jpg";
-import Seminar8 from "../../../assets/seminarImages/Seminar-8.png";
-import Seminar9 from "../../../assets/seminarImages/Seminar-9.jpg";
-import Seminar102 from "../../../assets/seminarImages/Seminar-10-2.jpg";
-import Seminar103 from "../../../assets/seminarImages/Seminar-10-3.jpg";
-import Seminar10 from "../../../assets/seminarImages/Seminar-10.jpg";
-import Seminar11 from "../../../assets/seminarImages/Seminar-11.jpg";
+import Exhibition1 from "../../../assets/seminarImages/Exhibition-1.webp";
+import Exhibition2 from "../../../assets/seminarImages/Exhibition-2.webp";
+import Exhibition3 from "../../../assets/seminarImages/Exhibition-3.webp";
+import Seimar82 from "../../../assets/seminarImages/Seimar-8-2.webp";
+import Seminar4 from "../../../assets/seminarImages/Seminar-4.webp";
+import Seminar5 from "../../../assets/seminarImages/Seminar-5.webp";
+import Seminar62 from "../../../assets/seminarImages/Seminar-6-2.webp";
+import Seminar6 from "../../../assets/seminarImages/Seminar-6.webp";
+import Seminar72 from "../../../assets/seminarImages/Seminar-7-2.webp";
+import Seminar7 from "../../../assets/seminarImages/Seminar-7.webp";
+import Seminar8 from "../../../assets/seminarImages/Seminar-8.webp";
+import Seminar9 from "../../../assets/seminarImages/Seminar-9.webp";
+import Seminar102 from "../../../assets/seminarImages/Seminar-10-2.webp";
+import Seminar103 from "../../../assets/seminarImages/Seminar-10-3.webp";
+import Seminar10 from "../../../assets/seminarImages/Seminar-10.webp";
+import Seminar11 from "../../../assets/seminarImages/Seminar-11.webp";
 
 const WebinarSeminarMarquee = () => {
   // Gallery images from InternationalAudits.jsx
