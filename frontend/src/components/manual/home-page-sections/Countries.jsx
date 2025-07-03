@@ -65,6 +65,7 @@ const Countries = () => {
             <div className="flex gap-4 items-center ">
               <button
                 onClick={handlePreviousClick}
+                aria-label="Previous countries"
                 className="rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center border-2 border-[#160E34]"
               >
                 <ChevronLeft className="hidden md:block" />
@@ -73,6 +74,7 @@ const Countries = () => {
 
               <button
                 onClick={handleNextClick}
+                aria-label="Next countries"
                 className="rounded-full w-[40px] h-[40px] md:w-[48px] md:h-[48px] flex items-center justify-center bg-[#160E34] border-2 border-[#160E34]"
               >
                 <ChevronRight className="hidden md:block text-white" />

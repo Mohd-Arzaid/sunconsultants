@@ -239,6 +239,7 @@ const Navbar = () => {
         <button
           className="md:hidden text-black focus:outline-none"
           onClick={() => (isOpen ? closeMobileMenu() : setIsOpen(true))}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
