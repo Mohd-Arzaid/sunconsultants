@@ -2,8 +2,8 @@
 export const videosData = [
   {
     id: 1,
-    embedId: "wcMNd8KWRBc",
-   
+    embedId: "4JDVsoWSY3I",
+
     category: "BISFM",
     tags: [
       "BISFM",
@@ -13,12 +13,10 @@ export const videosData = [
       "Manufacturing",
       "Compliance",
     ],
-    
   },
   {
     id: 2,
-    embedId: "iafdcHwzojY",
-   
+    embedId: "_LBccl6LiOM",
 
     category: "ISI Mark",
     tags: [
@@ -29,12 +27,11 @@ export const videosData = [
       "Manufacturing",
       "Compliance",
     ],
-   
   },
   {
     id: 3,
-    embedId: "iafdcHwzojY",
-   
+    embedId: "JxYwTtj4wfQ",
+
     category: "Scheme X",
     tags: [
       "Scheme X",
@@ -44,6 +41,5 @@ export const videosData = [
       "Business Operations",
       "Documentation",
     ],
-   
   },
 ];
