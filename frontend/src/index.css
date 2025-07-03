@@ -1,16 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Risque&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Risque&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Risque&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Risque&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'non.geist/font-faces/Geist-Bold.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-
-
 
 .mainHeading {
   @apply text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0;
@@ -28,23 +19,6 @@
   @apply flex flex-col md:flex-row gap-6 md:gap-10;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .boxshadowbtn {
   padding: 12px;
   width: 100%;
@@ -55,7 +29,6 @@
 }
 
 @media(max-width: 768px) {
-
   .boxshadowbtn {
     width: 100%;
   }
@@ -262,9 +235,6 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: #7E7E7E !important;
   transition: background-color 5000s ease-in-out 0s;
 }
-
-
-
 
 /* Phone Input */
 .phone-input-custom {

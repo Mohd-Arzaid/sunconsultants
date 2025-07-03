@@ -67,7 +67,16 @@ export default defineConfig({
 
         // Optimize entry and asset file names
         entryFileNames: "assets/[name]-[hash].js",
-        assetFileNames: "assets/[name]-[hash].[ext]",
+        assetFileNames: (assetInfo) => {
+          // Separate fonts from other assets
+          if (
+            assetInfo.name &&
+            assetInfo.name.match(/\.(woff|woff2|ttf|otf|eot)$/)
+          ) {
+            return "fonts/[name]-[hash][extname]";
+          }
+          return "assets/[name]-[hash][extname]";
+        },
       },
     },
 
@@ -82,6 +91,10 @@ export default defineConfig({
 
     // Target modern browsers for better optimization
     target: "es2020",
+
+    // Add CSS optimization
+    cssCodeSplit: true,
+    cssMinify: true,
   },
 
   // Optimize dependencies
