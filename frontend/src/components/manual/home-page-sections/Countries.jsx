@@ -2,28 +2,28 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 // Country Images
-import Thailand from "../../../assets/images/Thailand.png";
-import Vietnam from "../../../assets/images/Vietnam.png";
-import Canada from "../../../assets/images/Canada.png";
-import China from "../../../assets/images/China.png";
-import Italy from "../../../assets/images/Italy.png";
-import Colombia from "../../../assets/images/Colombia.png";
-import Qatar from "../../../assets/images/Qatar.png";
-import India from "../../../assets/images/India.png";
-import Indonesia from "../../../assets/images/Indonesia.png";
-import Malaysia from "../../../assets/images/Malaysia.png";
-import Russia from "../../../assets/images/Russia.png";
-import Bahrain from "../../../assets/images/Bahrain.png";
-import UAE from "../../../assets/images/UAE.png";
-import Nepal from "../../../assets/images/Nepal.png";
-import SriLanka from "../../../assets/images/SriLanka.png";
-import France from "../../../assets/images/France.png";
-import Germany from "../../../assets/images/Germany.png";
-import Sweden from "../../../assets/images/Sweden.png";
-import Slovenia from "../../../assets/images/Slovenia.png";
-import Austria from "../../../assets/images/Austria.png";
-import USA from "../../../assets/images/USA.png";
-import Denmark from "../../../assets/images/Denmark.png";
+import Thailand from "/countries-images/Thailand.webp";
+import Vietnam from "/countries-images/Vietnam.webp";
+import Canada from "/countries-images/Canada.webp";
+import China from "/countries-images/China.webp";
+import Italy from "/countries-images/Italy.webp";
+import Colombia from "/countries-images/Colombia.webp";
+import Qatar from "/countries-images/Qatar.webp";
+import India from "/countries-images/India.webp";
+import Indonesia from "/countries-images/Indonesia.webp";
+import Malaysia from "/countries-images/Malaysia.webp";
+import Russia from "/countries-images/Russia.webp";
+import Bahrain from "/countries-images/Bahrain.webp";
+import UAE from "/countries-images/UAE.webp";
+import Nepal from "/countries-images/Nepal.webp";
+import SriLanka from "/countries-images/SriLanka.webp";
+import France from "/countries-images/France.webp";
+import Germany from "/countries-images/Germany.webp";
+import Sweden from "/countries-images/Sweden.webp";
+import Slovenia from "/countries-images/Slovenia.webp";
+import Austria from "/countries-images/Austria.webp";
+import USA from "/countries-images/USA.webp";
+import Denmark from "/countries-images/Denmark.webp";
 
 // Countries
 const Countries = () => {
