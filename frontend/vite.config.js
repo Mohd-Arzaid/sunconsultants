@@ -1,9 +1,24 @@
 import path from "path";
+import { fileURLToPath } from "url";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import { VitePWA } from "vite-plugin-pwa";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: "autoUpdate",
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,webp}"],
+      },
+      devOptions: {
+        enabled: false,
+      },
+    }),
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -68,6 +83,10 @@ export default defineConfig({
         // Optimize entry and asset file names
         entryFileNames: "assets/[name]-[hash].js",
         assetFileNames: (assetInfo) => {
+          // Separate CSS files for better caching
+          if (assetInfo.name && assetInfo.name.endsWith(".css")) {
+            return "assets/css/[name]-[hash][extname]";
+          }
           // Separate fonts from other assets
           if (
             assetInfo.name &&

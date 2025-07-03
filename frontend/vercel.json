@@ -14,6 +14,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
         }
       ]
     },
@@ -23,6 +27,36 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        }
+      ]
+    },
+    {
+      "source": "/pages/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        }
+      ]
+    },
+    {
+      "source": "/components/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
         }
       ]
     },
@@ -32,15 +66,23 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
         }
       ]
     },
     {
-      "source": "/(.*\\.(jpg|jpeg|png|gif|ico|svg|webp))",
+      "source": "/(.*\\.(webp|jpg|jpeg|png|gif|ico|svg))",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
         }
       ]
     },
@@ -50,15 +92,54 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
         }
       ]
     },
     {
-      "source": "/(.*)\\.(woff|woff2|eot|ttf|otf)",
+      "source": "/(.*\\.(woff|woff2|eot|ttf|otf))",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(pdf))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
         }
       ]
     },
