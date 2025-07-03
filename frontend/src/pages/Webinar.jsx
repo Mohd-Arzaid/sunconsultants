@@ -1,8 +1,185 @@
 import { Calendar, ChevronRight, Clock, Users } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import Footer from "@/common/Footer";
+
 const Webinar = () => {
+  // SEO data
+  const seoData = {
+    title:
+      "Certification Webinars | Expert-Led BIS & Compliance Training | Sun Certifications India",
+    description:
+      "Join our expert-led certification webinars on BIS, LMPC, EPR compliance, and more. Learn from industry specialists with interactive Q&A sessions and latest regulatory updates.",
+    keywords:
+      "certification webinars, BIS training, LMPC webinar, EPR compliance, certification training, regulatory updates, industry experts, online certification course",
+    ogTitle: "Expert Certification Webinars - Learn From Industry Specialists",
+    ogDescription:
+      "Attend our comprehensive certification webinars covering BIS, LMPC, EPR, and other compliance requirements. Interactive sessions with expert guidance.",
+    twitterTitle: "Join Our Certification Webinars - Expert Training Sessions",
+    twitterDescription:
+      "Expert-led webinars on BIS certification, LMPC compliance, EPR regulations and more. Interactive Q&A with industry specialists.",
+    canonicalUrl: "https://bis-certifications.com/webinar",
+    lastModified: new Date().toISOString(),
+  };
+
+  // Structured data for webinar events
+  const webinarStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Certification Webinars",
+    description: "Expert-led webinars on certification and compliance topics",
+    numberOfItems: 3,
+    itemListElement: [
+      {
+        "@type": "Event",
+        name: "BIS Certification: Complete Process and Documentation Guide",
+        startDate: "2025-02-15T11:00:00+05:30",
+        endDate: "2025-02-15T12:30:00+05:30",
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+        location: {
+          "@type": "VirtualLocation",
+          url: "https://bis-certifications.com/webinar",
+        },
+        description:
+          "Comprehensive guide to BIS certification process, documentation requirements, and compliance strategies for Indian and foreign manufacturers.",
+        organizer: {
+          "@type": "Organization",
+          name: "Sun Certifications India",
+          url: "https://bis-certifications.com",
+        },
+        offers: {
+          "@type": "Offer",
+          url: "https://bis-certifications.com/webinar",
+          price: "0",
+          priceCurrency: "INR",
+          availability: "https://schema.org/InStock",
+        },
+      },
+      {
+        "@type": "Event",
+        name: "LMPC Certification: Navigating Legal Metrology Requirements",
+        startDate: "2025-02-22T14:00:00+05:30",
+        endDate: "2025-02-22T15:00:00+05:30",
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+        location: {
+          "@type": "VirtualLocation",
+          url: "https://bis-certifications.com/webinar",
+        },
+        description:
+          "Master the legal metrology requirements and LMPC certification process for measuring instruments and weighing machines.",
+        organizer: {
+          "@type": "Organization",
+          name: "Sun Certifications India",
+          url: "https://bis-certifications.com",
+        },
+        offers: {
+          "@type": "Offer",
+          url: "https://bis-certifications.com/webinar",
+          price: "0",
+          priceCurrency: "INR",
+          availability: "https://schema.org/InStock",
+        },
+      },
+      {
+        "@type": "Event",
+        name: "EPR Compliance: Environmental Regulations for Manufacturers",
+        startDate: "2025-03-05T10:00:00+05:30",
+        endDate: "2025-03-05T11:15:00+05:30",
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+        location: {
+          "@type": "VirtualLocation",
+          url: "https://bis-certifications.com/webinar",
+        },
+        description:
+          "Comprehensive overview of EPR compliance requirements for plastic waste, battery waste, and environmental regulations.",
+        organizer: {
+          "@type": "Organization",
+          name: "Sun Certifications India",
+          url: "https://bis-certifications.com",
+        },
+        offers: {
+          "@type": "Offer",
+          url: "https://bis-certifications.com/webinar",
+          price: "0",
+          priceCurrency: "INR",
+          availability: "https://schema.org/InStock",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="overflow-hidden bg-[#F9F7F2]">
+      <Helmet>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <link rel="canonical" href={seoData.canonicalUrl} />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="last-modified" content={seoData.lastModified} />
+
+        {/* Open Graph tags */}
+        <meta property="og:title" content={seoData.ogTitle} />
+        <meta property="og:description" content={seoData.ogDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={seoData.canonicalUrl} />
+        <meta
+          property="og:image"
+          content="https://bis-certifications.com/hero-image/hero-image.webp"
+        />
+        <meta property="og:site_name" content="Sun Certifications India" />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seoData.twitterTitle} />
+        <meta name="twitter:description" content={seoData.twitterDescription} />
+        <meta
+          name="twitter:image"
+          content="https://bis-certifications.com/hero-image/hero-image.webp"
+        />
+
+        {/* Additional meta tags */}
+        <meta name="author" content="Sun Certifications India" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(webinarStructuredData)}
+        </script>
+
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Sun Certifications India",
+            url: "https://bis-certifications.com",
+            logo: "https://bis-certifications.com/company-logo/company-logo.webp",
+            description:
+              "Leading certification consultancy for BIS, LMPC, EPR, and other compliance requirements in India",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Delhi",
+              addressRegion: "Delhi",
+              postalCode: "110042",
+              addressCountry: "IN",
+            },
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+91-8010505057",
+              contactType: "customer service",
+            },
+          })}
+        </script>
+      </Helmet>
+
       <WebinarHero />
       <PastWebinars />
       <WebinarBenefits />
@@ -19,12 +196,13 @@ const WebinarHero = () => {
       {/* Heading */}
       <div className="text-center mb-8 md:mb-9">
         <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
-          Our Certification Webinars{" "}
+          Expert Certification Webinars
         </h1>
         <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-3xl mx-auto ">
-          Join our expert-led webinars to gain valuable insights into
-          certification processes, regulatory updates, and industry best
-          practices for the Indian market.
+          Join our expert-led webinars to gain valuable insights into BIS
+          certification, LMPC compliance, EPR regulations, and other
+          certification processes for the Indian market. Interactive sessions
+          with industry specialists.
         </p>
       </div>
 
@@ -48,7 +226,7 @@ const WebinarHero = () => {
 
         <img
           src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          alt="Webinar session"
+          alt="Expert certification webinar session with industry professionals"
           className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
         />
 
@@ -59,9 +237,9 @@ const WebinarHero = () => {
             </div>
           </div>
 
-          <h3 className="text-white text-2xl md:text-4xl font-bold font-playfair mb-5 md:mb-6 text-center max-w-xs  md:max-w-3xl">
-            Complete Certification Process and Documentation Guide
-          </h3>
+          <h2 className="text-white text-2xl md:text-4xl font-bold font-playfair mb-5 md:mb-6 text-center max-w-xs  md:max-w-3xl">
+            Complete BIS Certification Process and Documentation Guide
+          </h2>
 
           <button className="flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-sm py-2 px-4 md:py-3 md:px-6 rounded-full shadow-xl hover:bg-white transition-all duration-300 group/btn">
             <span className="font-medium text-base md:text-lg text-gray-800 group-hover/btn:text-[#1A8781] transition-colors duration-300">
@@ -78,39 +256,46 @@ const WebinarHero = () => {
 };
 
 const PastWebinars = () => {
+  // Updated webinar data with current dates
   const upcomingWebinars = [
     {
       id: 1,
       title: "BIS Certification: Complete Process and Documentation Guide",
-      date: "August 15, 2023",
+      date: "February 15, 2025",
       time: "11:00 AM IST",
       duration: "90 min",
       host: "Rahul Sharma",
       attendees: 540,
       image:
         "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      description:
+        "Comprehensive guide to BIS certification process, documentation requirements, and compliance strategies for Indian and foreign manufacturers.",
     },
     {
       id: 2,
       title: "LMPC Certification: Navigating Legal Metrology Requirements",
-      date: "August 22, 2023",
+      date: "February 22, 2025",
       time: "2:00 PM IST",
       duration: "60 min",
       host: "Priya Patel",
       attendees: 320,
       image:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      description:
+        "Master the legal metrology requirements and LMPC certification process for measuring instruments and weighing machines.",
     },
     {
       id: 3,
       title: "EPR Compliance: Environmental Regulations for Manufacturers",
-      date: "September 5, 2023",
+      date: "March 5, 2025",
       time: "10:00 AM IST",
       duration: "75 min",
       host: "Dr. Arjun Singh",
       attendees: 410,
       image:
         "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+      description:
+        "Comprehensive overview of EPR compliance requirements for plastic waste, battery waste, and environmental regulations.",
     },
   ];
 
@@ -120,10 +305,11 @@ const PastWebinars = () => {
         {/* Heading */}
         <div className=" flex flex-col gap-2 mb-8 md:mb-12">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1e1e1e]">
-            Past Webinars
+            Upcoming Certification Webinars
           </h2>
           <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl">
-            Access our library of past webinars to learn at your own pace.
+            Register for our upcoming expert-led webinars covering various
+            certification topics and compliance requirements.
           </p>
         </div>
 
@@ -137,7 +323,7 @@ const PastWebinars = () => {
               <div className="relative h-40 md:h-48 overflow-hidden">
                 <img
                   src={webinar.image}
-                  alt={webinar.title}
+                  alt={`${webinar.title} - Certification webinar`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-[#1A8781]">
@@ -149,6 +335,10 @@ const PastWebinars = () => {
                 <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-3 line-clamp-2">
                   {webinar.title}
                 </h3>
+
+                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  {webinar.description}
+                </p>
 
                 <div className="flex flex-col gap-2 md:gap-3 mb-5 md:mb-6">
                   <div className="flex items-center gap-2 text-gray-600">
@@ -166,7 +356,7 @@ const PastWebinars = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                 <button className="w-full md:w-auto flex items-center justify-center gap-2 bg-[#1A8781]/10 text-[#1A8781] py-2 px-4 rounded-full hover:bg-[#1A8781]/20 transition-all duration-300">
+                  <button className="w-full md:w-auto flex items-center justify-center gap-2 bg-[#1A8781]/10 text-[#1A8781] py-2 px-4 rounded-full hover:bg-[#1A8781]/20 transition-all duration-300">
                     <Calendar className="w-4 h-4" />
                     <span className="font-medium">Register</span>
                   </button>
@@ -174,7 +364,7 @@ const PastWebinars = () => {
                     <div className="w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
                       <img
                         src="https://randomuser.me/api/portraits/men/32.jpg"
-                        alt="Host"
+                        alt={`${webinar.host} - Webinar host`}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -197,25 +387,25 @@ const WebinarBenefits = () => {
     {
       title: "Expert-Led Sessions",
       description:
-        "Learn directly from our certification specialists with years of industry experience.",
+        "Learn directly from our certification specialists with over 10 years of industry experience in BIS, LMPC, and EPR compliance.",
       icon: "👨‍🏫",
     },
     {
       title: "Interactive Q&A",
       description:
-        "Get your specific certification questions answered in real-time during our sessions.",
+        "Get your specific certification questions answered in real-time during our sessions with detailed explanations and practical examples.",
       icon: "💬",
     },
     {
       title: "Latest Regulatory Updates",
       description:
-        "Stay informed about the newest changes in certification requirements and regulations.",
+        "Stay informed about the newest changes in BIS notifications, LMPC requirements, EPR regulations, and other certification standards.",
       icon: "📋",
     },
     {
-      title: "Case Studies",
+      title: "Real Case Studies",
       description:
-        "Learn from real-world examples and success stories of companies entering the Indian market.",
+        "Learn from actual success stories and challenges faced by companies during their certification journey in the Indian market.",
       icon: "📊",
     },
   ];
@@ -224,11 +414,11 @@ const WebinarBenefits = () => {
     <div className="max-w-[84rem] mx-auto px-4 md:px-12 pb-12 md:pb-20 pt-16">
       <div className="text-center mb-12 md:mb-16">
         <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1e1e1e] mb-4">
-          Why Attend Our Webinars?
+          Why Attend Our Certification Webinars?
         </h2>
         <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto">
-          Our certification webinars are designed to provide valuable insights
-          and practical knowledge.
+          Our certification webinars are designed to provide valuable insights,
+          practical knowledge, and expert guidance for your compliance journey.
         </p>
       </div>
 
@@ -240,13 +430,17 @@ const WebinarBenefits = () => {
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A8781]/10 rounded-bl-full -mr-10 -mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-            <div className="text-4xl md:text-5xl mb-4 md:mb-6">{benefit.icon}</div>
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6">
+              {benefit.icon}
+            </div>
 
             <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-3">
               {benefit.title}
             </h3>
 
-            <p className="text-gray-600 font-geist text-sm md:text-base">{benefit.description}</p>
+            <p className="text-gray-600 font-geist text-sm md:text-base">
+              {benefit.description}
+            </p>
           </div>
         ))}
       </div>
