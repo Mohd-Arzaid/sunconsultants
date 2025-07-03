@@ -1,104 +1,86 @@
 import { Marquee } from "@/components/magicui/marquee";
 
-// Seminar & Exhibition Images
-import Exhibition1 from "../../../assets/seminarImages/Exhibition-1.webp";
-import Exhibition2 from "../../../assets/seminarImages/Exhibition-2.webp";
-import Exhibition3 from "../../../assets/seminarImages/Exhibition-3.webp";
-import Seimar82 from "../../../assets/seminarImages/Seimar-8-2.webp";
-import Seminar4 from "../../../assets/seminarImages/Seminar-4.webp";
-import Seminar5 from "../../../assets/seminarImages/Seminar-5.webp";
-import Seminar62 from "../../../assets/seminarImages/Seminar-6-2.webp";
-import Seminar6 from "../../../assets/seminarImages/Seminar-6.webp";
-import Seminar72 from "../../../assets/seminarImages/Seminar-7-2.webp";
-import Seminar7 from "../../../assets/seminarImages/Seminar-7.webp";
-import Seminar8 from "../../../assets/seminarImages/Seminar-8.webp";
-import Seminar9 from "../../../assets/seminarImages/Seminar-9.webp";
-import Seminar102 from "../../../assets/seminarImages/Seminar-10-2.webp";
-import Seminar103 from "../../../assets/seminarImages/Seminar-10-3.webp";
-import Seminar10 from "../../../assets/seminarImages/Seminar-10.webp";
-import Seminar11 from "../../../assets/seminarImages/Seminar-11.webp";
-
 const WebinarSeminarMarquee = () => {
   // Gallery images from InternationalAudits.jsx
   const galleryImages = [
     {
       id: 1,
-      image: Exhibition1,
+      image: "/seminarImages/Exhibition-1.webp",
       title: "Exhibition 1",
     },
     {
       id: 2,
-      image: Exhibition2,
+      image: "/seminarImages/Exhibition-2.webp",
       title: "Exhibition 2",
     },
     {
       id: 3,
-      image: Exhibition3,
+      image: "/seminarImages/Exhibition-3.webp",
       title: "Exhibition 3",
     },
     {
       id: 4,
-      image: Seminar4,
+      image: "/seminarImages/Seminar-4.webp",
       title: "Seminar 4",
     },
     {
       id: 5,
-      image: Seminar5,
+      image: "/seminarImages/Seminar-5.webp",
       title: "Seminar 5",
     },
     {
       id: 6,
-      image: Seminar6,
+      image: "/seminarImages/Seminar-6.webp",
       title: "Seminar 6",
     },
     {
       id: 7,
-      image: Seminar62,
+      image: "/seminarImages/Seminar-6-2.webp",
       title: "Seminar 6-2",
     },
     {
       id: 8,
-      image: Seminar7,
+      image: "/seminarImages/Seminar-7.webp",
       title: "Seminar 7",
     },
     {
       id: 9,
-      image: Seminar72,
+      image: "/seminarImages/Seminar-7-2.webp",
       title: "Seminar 7-2",
     },
     {
       id: 10,
-      image: Seminar8,
+      image: "/seminarImages/Seminar-8.webp",
       title: "Seminar 8",
     },
     {
       id: 11,
-      image: Seimar82,
+      image: "/seminarImages/Seimar-8-2.webp"   ,
       title: "Seminar 8-2",
     },
     {
       id: 12,
-      image: Seminar9,
+      image: "/seminarImages/Seminar-9.webp",
       title: "Seminar 9",
     },
     {
       id: 13,
-      image: Seminar10,
+      image: "/seminarImages/Seminar-10.webp",
       title: "Seminar 10",
     },
     {
       id: 14,
-      image: Seminar102,
+      image: "/seminarImages/Seminar-10-2.webp",
       title: "Seminar 10-2",
     },
     {
       id: 15,
-      image: Seminar103,
+      image: "/seminarImages/Seminar-10-3.webp",
       title: "Seminar 10-3",
     },
     {
       id: 16,
-      image: Seminar11,
+      image: "/seminarImages/Seminar-11.webp",
       title: "Seminar 11",
     },
     // {

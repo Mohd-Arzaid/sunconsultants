@@ -1,17 +1,8 @@
 import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
 
-// Audit Images - Using public folder for better deployment compatibility
-const BahrainAudit = "/auditImages/Bahrain.webp";
-const IndonesiaAudit = "/auditImages/Indonesia.webp";
-const ItalyAudit = "/auditImages/Italy-2.webp";
-const MalaysiaAudit = "/auditImages/Malaysia.webp";
-const SloveniaAudit = "/auditImages/Slovenia.webp";
-const ThailandAudit = "/auditImages/Thailand.webp";
-const Vietnam2Audit = "/auditImages/Vietnam-2.webp";
-const Vietnam3Audit = "/auditImages/Vietnam-3.webp";
-const Vietnam4Audit = "/auditImages/Vietnam-4.webp";
-const VietnamAudit = "/auditImages/Vietnam.webp";
+
+
 
 const InternationalAudits = () => {
   return (
@@ -88,52 +79,52 @@ const AuditGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      image: BahrainAudit,
+      image: "/auditImages/Bahrain.webp",
       title: "Bahrain",
     },
     {
       id: 2,
-      image: VietnamAudit,
+      image: "/auditImages/Vietnam.webp",
       title: "Vietnam",
     },
     {
       id: 3,
-      image: IndonesiaAudit,
+      image: "/auditImages/Indonesia.webp",
       title: "Indonesia",
     },
     {
       id: 4,
-      image: Vietnam2Audit,
+      image: "/auditImages/Vietnam-2.webp",
       title: "Vietnam",
     },
     {
       id: 5,
-      image: ItalyAudit,
+      image: "/auditImages/Italy-2.webp",
       title: "Italy",
     },
     {
       id: 6,
-      image: Vietnam3Audit,
+      image: "/auditImages/Vietnam-3.webp",
       title: "Vietnam",
     },
     {
       id: 7,
-      image: MalaysiaAudit,
+      image: "/auditImages/Malaysia.webp",
       title: "Malaysia",
     },
     {
       id: 8,
-      image: SloveniaAudit,
+      image: "/auditImages/Slovenia.webp",
       title: "Slovenia",
     },
     {
       id: 9,
-      image: Vietnam4Audit,
+      image: "/auditImages/Vietnam-4.webp",
       title: "Vietnam",
     },
     {
       id: 10,
-      image: ThailandAudit,
+      image: "/auditImages/Thailand.webp",
       title: "Thailand",
     },
   ];
