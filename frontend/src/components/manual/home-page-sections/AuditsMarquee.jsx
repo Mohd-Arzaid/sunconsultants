@@ -1,68 +1,68 @@
 import { Marquee } from "@/components/magicui/marquee";
 
 // Audit Marquee Images - Using public folder for better deployment compatibility
-const BahrainAudit = "/auditImages/Bahrain.webp";
-const IndonesiaAudit = "/auditImages/Indonesia.webp";
-const ItalyAudit = "/auditImages/Italy-2.webp";
-const MalaysiaAudit = "/auditImages/Malaysia.webp";
-const SloveniaAudit = "/auditImages/Slovenia.webp";
-const ThailandAudit = "/auditImages/Thailand.webp";
-const Vietnam2Audit = "/auditImages/Vietnam-2.webp";
-const Vietnam3Audit = "/auditImages/Vietnam-3.webp";
-const Vietnam4Audit = "/auditImages/Vietnam-4.webp";
-const VietnamAudit = "/auditImages/Vietnam.webp";
+// const BahrainAudit = "/auditImages/Bahrain.webp";
+// const IndonesiaAudit = "/auditImages/Indonesia.webp";
+// const ItalyAudit = "/auditImages/Italy-2.webp";
+// const MalaysiaAudit = "/auditImages/Malaysia.webp";
+// const SloveniaAudit = "/auditImages/Slovenia.webp";
+// const ThailandAudit = "/auditImages/Thailand.webp";
+// const Vietnam2Audit = "/auditImages/Vietnam-2.webp";
+// const Vietnam3Audit = "/auditImages/Vietnam-3.webp";
+// const Vietnam4Audit = "/auditImages/Vietnam-4.webp";
+// const VietnamAudit = "/auditImages/Vietnam.webp";
 
 const AuditsMarquee = () => {
   // Gallery images from InternationalAudits.jsx
   const galleryImages = [
     {
       id: 1,
-      image: BahrainAudit,
+      image: "/auditImages/Bahrain.webp",
       title: "Bahrain Audit",
     },
     {
       id: 2,
-      image: IndonesiaAudit,
+      image: "/auditImages/Indonesia.webp",
       title: "Indonesia Audit",
     },
     {
       id: 3,
-      image: ItalyAudit,
+      image: "/auditImages/Italy-2.webp",
       title: "Italy Audit",
     },
     {
       id: 4,
-      image: MalaysiaAudit,
+      image: "/auditImages/Malaysia.webp",
       title: "Malaysia Audit",
     },
     {
       id: 5,
-      image: SloveniaAudit,
+      image: "/auditImages/Slovenia.webp",
       title: "Slovenia Audit",
     },
     {
       id: 6,
-      image: ThailandAudit,
+      image: "/auditImages/Thailand.webp",
       title: "Thailand Audit",
     },
     {
       id: 7,
-      image: VietnamAudit,
+      image: "/auditImages/Vietnam.webp",
       title: "Vietnam Audit",
     },
     {
       id: 8,
-      image: Vietnam2Audit,
+      image: "/auditImages/Vietnam-2.webp",
       title: "Vietnam Audit 2",
     },
     {
       id: 9,
-      image: Vietnam3Audit,
+      image: "/auditImages/Vietnam-3.webp",
       title: "Vietnam Audit 3",
     },
     {
       id: 10,
-      image: Vietnam4Audit,
+      image: "/auditImages/Vietnam-4.webp",
       title: "Vietnam Audit 4",
     },
   ];
