@@ -21,12 +21,21 @@ const LogoTicker = ({
     setStart(true);
   }, []);
 
-  // Memoize animation styles to prevent unnecessary recalculations
+  // Memoize animation styles - iOS compatible version
   const animationStyles = useMemo(() => {
-    const animationDirection = direction === "left" ? "forwards" : "reverse";
+    const animationDirection = direction === "left" ? "normal" : "reverse";
+    const animationDuration = ANIMATION_SPEEDS[speed];
+
     return {
-      "--animation-direction": animationDirection,
-      "--animation-duration": ANIMATION_SPEEDS[speed],
+      animation: `logoScroll ${animationDuration} linear infinite ${animationDirection}`,
+      // iOS-specific optimizations
+      WebkitAnimation: `logoScroll ${animationDuration} linear infinite ${animationDirection}`,
+      // GPU acceleration for iOS
+      transform: "translate3d(0, 0, 0)",
+      WebkitTransform: "translate3d(0, 0, 0)",
+      // Prevent flickering on iOS
+      WebkitBackfaceVisibility: "hidden",
+      backfaceVisibility: "hidden",
     };
   }, [direction, speed]);
 
@@ -36,45 +45,101 @@ const LogoTicker = ({
   }, []);
 
   return (
-    <div className="bg-white w-full py-3 md:py-5">
-      <div className="max-w-[84rem] mx-auto px-2 md:px-4">
-        <div
-          className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]"
-          style={animationStyles}
-        >
-          <ul
-            className={cn(
-              "flex w-max min-w-full shrink-0 flex-nowrap gap-1 md:gap-6",
-              // Animation only starts when start is true - exactly like original
-              start && "animate-scroll",
-              // GPU acceleration optimization
-              "[will-change:transform]",
-              // Pause on hover functionality
-              pauseOnHover && "hover:[animation-play-state:paused]"
-            )}
+    <>
+      {/* Add CSS directly to head for iOS compatibility */}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+          @keyframes logoScroll {
+            0% {
+              transform: translate3d(0, 0, 0);
+            }
+            100% {
+              transform: translate3d(calc(-50% - 0.5rem), 0, 0);
+            }
+          }
+          
+          @-webkit-keyframes logoScroll {
+            0% {
+              -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+            }
+            100% {
+              -webkit-transform: translate3d(calc(-50% - 0.5rem), 0, 0);
+              transform: translate3d(calc(-50% - 0.5rem), 0, 0);
+            }
+          }
+          
+          /* iOS-specific optimizations */
+          .logo-ticker-container {
+            -webkit-overflow-scrolling: touch;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+          
+          .logo-ticker-pause:hover {
+            animation-play-state: paused !important;
+            -webkit-animation-play-state: paused !important;
+          }
+        `,
+        }}
+      />
+
+      <div className="bg-white w-full py-3 md:py-5">
+        <div className="max-w-[84rem] mx-auto px-2 md:px-4">
+          <div
+            className="overflow-hidden"
+            style={{
+              // iOS-compatible mask with fallback
+              maskImage:
+                "linear-gradient(to right, transparent, white 10%, white 90%, transparent)",
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent, white 10%, white 90%, transparent)",
+              // Fallback for older iOS versions that don't support mask
+              background: "transparent",
+            }}
           >
-            {duplicatedLogos.map((logo, index) => (
-              <li
-                key={`${logo.name}-${index}`} // Stable unique keys - proper React pattern
-                className="flex items-center justify-center px-3 md:px-6 py-2 md:py-4 shrink-0"
-              >
-                <img
-                  className="mx-auto w-fit scale-[0.8] md:scale-100"
-                  src={logo.src}
-                  alt={logo.alt}
-                  height={logo.height}
-                  width="auto"
-                  style={{ height: `${logo.height}px` }} // Simple inline style - fast & clean
-                  // Performance optimization: prevent layout shift
-                  loading="eager"
-                  decoding="sync"
-                />
-              </li>
-            ))}
-          </ul>
+            <ul
+              className={cn(
+                "flex w-max min-w-full shrink-0 flex-nowrap gap-1 md:gap-6 logo-ticker-container",
+                // Add pause on hover class conditionally
+                pauseOnHover && "logo-ticker-pause"
+              )}
+              style={start ? animationStyles : {}}
+            >
+              {duplicatedLogos.map((logo, index) => (
+                <li
+                  key={`${logo.name}-${index}`} // Stable unique keys - proper React pattern
+                  className="flex items-center justify-center px-3 md:px-6 py-2 md:py-4 shrink-0"
+                >
+                  <img
+                    className="mx-auto w-fit scale-[0.8] md:scale-100"
+                    src={logo.src}
+                    alt={logo.alt}
+                    height={logo.height}
+                    width="auto"
+                    style={{
+                      height: `${logo.height}px`,
+                      // iOS-specific image optimizations
+                      WebkitBackfaceVisibility: "hidden",
+                      backfaceVisibility: "hidden",
+                      WebkitPerspective: "1000px",
+                      perspective: "1000px",
+                      // Prevent image flickering on iOS
+                      WebkitTransform: "translate3d(0, 0, 0)",
+                      transform: "translate3d(0, 0, 0)",
+                    }}
+                    // Performance optimization: prevent layout shift
+                    loading="eager"
+                    decoding="sync"
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
