@@ -5,7 +5,9 @@ import TopBar from "./common/TopBar";
 import MobileNav from "./components/common/MobileNav";
 import SocialFloatingButtons from "./components/common/SocialFloatingButtons";
 import ContactFormPopup from "./components/ContactFormPopup";
-import ScrollToTopButton, { ScrollToTop } from "./components/common/ScrollToTop";
+import ScrollToTopButton, {
+  ScrollToTop,
+} from "./components/common/ScrollToTop";
 import SEOBreadcrumbs from "./components/common/SEOBreadcrumbs";
 
 // Direct imports for instant navigation - no lazy loading
@@ -59,13 +61,16 @@ function App() {
       <ScrollToTopButton hide={popupOpen} />
       <ScrollToTop />
       <SEOBreadcrumbs />
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/bis-qco-updates" element={<Notification />} />
-        <Route path="/bis-qco-updates/:notificationName" element={<NotificationDetail />} />
+        <Route
+          path="/bis-qco-updates/:notificationName"
+          element={<NotificationDetail />}
+        />
         <Route path="/ministry-updates" element={<MinistryUpdates />} />
         <Route path="/international-audits" element={<InternationalAudits />} />
         <Route path="/seminars-and-exhibitions" element={<Exhibition />} />
@@ -141,12 +146,11 @@ function App() {
 
         {/* Explicit 404 route */}
         <Route path="/404" element={<Error404 />} />
-        
+
         {/* Catch-all route - shows 404 error page for unmatched URLs */}
         <Route path="*" element={<Error404 />} />
-
       </Routes>
-      
+
       <MobileNav />
       <SocialFloatingButtons hide={popupOpen} />
       <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />

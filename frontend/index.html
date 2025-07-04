@@ -76,19 +76,23 @@
 
     <title>BIS Certification | FMCS | ISI MARK | LMPC | EPR | CDSCO</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-G25K7V10E9"
-    ></script>
+    <!-- Optimized Google Tag Manager - Deferred loading -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      // Defer GTM loading to improve initial page load
+      window.addEventListener("load", function () {
+        var gtmScript = document.createElement("script");
+        gtmScript.src =
+          "https://www.googletagmanager.com/gtag/js?id=G-G25K7V10E9";
+        gtmScript.async = true;
+        document.head.appendChild(gtmScript);
 
-      gtag("config", "G-G25K7V10E9");
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-G25K7V10E9");
+      });
     </script>
   </head>
   <body>

@@ -4,7 +4,7 @@ import TestimonialImage from "../../assets/images/TestimonialImage.png";
 import TestimonialImageSecond from "../../assets/images/TestimonialImageSecond.png";
 import TestimonialImageThree from "../../assets/images/TestimonialImageThree.png";
 import Vector from "../../assets/images/Vector.png";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
+import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const Client = () => {
@@ -155,7 +155,7 @@ const Client = () => {
             className="w-10 h-10 flex items-center justify-center bg-neutral-300  rounded-full hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200"
             onClick={handlePreviousClick}
           >
-            <IconArrowNarrowRight className="text-neutral-700  rotate-180" />
+            <ArrowRight className="text-neutral-700  rotate-180" />
           </button>
 
           {/* Next Button */}
@@ -163,7 +163,7 @@ const Client = () => {
             className="w-10 h-10 flex items-center justify-center bg-neutral-300 rounded-full hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200"
             onClick={handleNextClick}
           >
-            <IconArrowNarrowRight className="text-neutral-700 " />
+            <ArrowRight className="text-neutral-700 " />
           </button>
         </div>
       </div>
