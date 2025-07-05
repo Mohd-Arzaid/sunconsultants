@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
@@ -156,7 +161,7 @@ const ContactFormPopup = ({ open, setOpen }) => {
             onChange={handleOnChange}
             disabled={loading}
             placeholder="Please Enter Your Full Name *"
-            className="font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
+            className="font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] placeholder:text-[#666666] text-[#1E1E1E] placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
           />
 
           <Input
@@ -165,7 +170,7 @@ const ContactFormPopup = ({ open, setOpen }) => {
             onChange={handleOnChange}
             disabled={loading}
             placeholder="Please Enter Your Phone Number *"
-            className="font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
+            className="font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] placeholder:text-[#666666] text-[#1E1E1E] placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
           />
 
           <Input
@@ -174,7 +179,7 @@ const ContactFormPopup = ({ open, setOpen }) => {
             onChange={handleOnChange}
             disabled={loading}
             placeholder="Please Enter Your Email Address *"
-            className="font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
+            className="font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[50px] placeholder:text-[#666666] text-[#1E1E1E] placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide px-5 disabled:opacity-100"
           />
 
           <Textarea
@@ -183,7 +188,7 @@ const ContactFormPopup = ({ open, setOpen }) => {
             onChange={handleOnChange}
             disabled={loading}
             placeholder="Which Certification is required? *"
-            className="font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-32 placeholder:text-[#7E7E7E]/90 text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide p-5 resize-none disabled:opacity-100"
+            className="font-poppins focus-visible:ring-1 w-full focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-32 placeholder:text-[#666666] text-[#1E1E1E] placeholder:font-poppins placeholder:font-semibold font-semibold placeholder:text-[14px] text-[14px] placeholder:leading-[24px] leading-[24px] placeholder:tracking-wide tracking-wide p-5 resize-none disabled:opacity-100"
           ></Textarea>
 
           <button

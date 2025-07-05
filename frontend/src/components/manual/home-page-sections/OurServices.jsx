@@ -2,15 +2,14 @@ import { useNavigate } from "react-router-dom";
 import { useState, useCallback, useMemo } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-
 const BISImage = "/services-images/BIS.jpg";
 const CDSCOImage = "/services-images/CDSCO.jpg";
 const BISCRSImage = "/services-images/BISCRS.jpg";
-const PlasticWasteManagementImage = "/services-images/PlasticWasteManagement.jpg";
+const PlasticWasteManagementImage =
+  "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificateImage = "/services-images/EPRCertificate.jpg";
 const LMPCImage = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
-
 
 const services = [
   {
@@ -137,6 +136,7 @@ const OurServices = () => {
           {/* Left Arrow */}
           <button
             onClick={prevSlide}
+            aria-label="Previous service"
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-30 rounded-full w-[48px] h-[48px] flex items-center justify-center border border-[#1A8781] bg-white hover:bg-[#1A8781]/5 transition-all duration-300 shadow-md hover:shadow-lg backdrop-blur-sm"
           >
             <ChevronLeft className="w-7 h-7 text-[#1A8781]" />
@@ -145,6 +145,7 @@ const OurServices = () => {
           {/* Right Arrow */}
           <button
             onClick={nextSlide}
+            aria-label="Next service"
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-30 rounded-full w-[48px] h-[48px] flex items-center justify-center border border-[#1A8781] bg-white hover:bg-[#1A8781]/5 transition-all duration-300 shadow-md hover:shadow-lg backdrop-blur-sm"
           >
             <ChevronRight className="w-7 h-7 text-[#1A8781]" />
@@ -224,6 +225,7 @@ const OurServices = () => {
             <button
               key={idx}
               onClick={() => goToSlide(idx)}
+              aria-label={`Go to service ${idx + 1}`}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 activeIndex === idx
                   ? "bg-[#1A8781] w-10"
@@ -239,6 +241,14 @@ const OurServices = () => {
             <div
               key={service.id}
               onClick={() => handleThumbnailClick(index)}
+              role="button"
+              tabIndex={0}
+              aria-label={`Select ${service.title}`}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  handleThumbnailClick(index);
+                }
+              }}
               className={`rounded-xl p-3 md:p-4 transition-all duration-300 border ${
                 activeThumbnail === index
                   ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"

@@ -16,20 +16,39 @@ const ServiceContactForm = () => {
     const path = window.location.pathname;
 
     // Service pages
-    if (path.includes("/cdsco-registration-certification")) return "CDSCO Registration";
-    if (path.includes("/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis")) return "BIS Mark Foreign";
-    if (path.includes("/a-guide-on-how-to-obtain-epr-certificate")) return "EPR Registration";
-    if (path.includes("/what-is-bis-certificate-indian-bis")) return "BIS Certification";
-    if (path.includes("/a-guide-on-how-to-obtain-lmpc-certificate")) return "LMPC Registration";
-    if (path.includes("/epr-certificate-for-plastic-waste-management-pwm")) return "Plastic Waste";
-    if (path.includes("/what-is-legal-metrology-or-lmpc-certificate")) return "Legal Metrology";
-    if (path.includes("a-guide-to-bis-certification-indian-bis")) return "ISI Mark Indian";
-    if (path.includes("/epr-certificate-for-battery-waste-management-bwm")) return "Battery Waste";
-    if (path.includes("/what-is-crs-bis-or-crs-registration")) return "CRS Registration";
-    if (path.includes("/information-about-peso-certification-peso-license-india")) return "PESO";
+    if (path.includes("/cdsco-registration-certification"))
+      return "CDSCO Registration";
+    if (
+      path.includes(
+        "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+    if (path.includes("/a-guide-on-how-to-obtain-epr-certificate"))
+      return "EPR Registration";
+    if (path.includes("/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/a-guide-on-how-to-obtain-lmpc-certificate"))
+      return "LMPC Registration";
+    if (path.includes("/epr-certificate-for-plastic-waste-management-pwm"))
+      return "Plastic Waste";
+    if (path.includes("/what-is-legal-metrology-or-lmpc-certificate"))
+      return "Legal Metrology";
+    if (path.includes("a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+    if (path.includes("/epr-certificate-for-battery-waste-management-bwm"))
+      return "Battery Waste";
+    if (path.includes("/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+    if (
+      path.includes("/information-about-peso-certification-peso-license-india")
+    )
+      return "PESO";
     if (path.includes("/information-about-tec-certificate-mtcte")) return "TEC";
-    if (path.includes("/information-about-wpc-certificate-eta-approval")) return "WPC";
-    if (path.includes("/restriction-of-hazardous-substance-rohs-certificate")) return "ROHS";
+    if (path.includes("/information-about-wpc-certificate-eta-approval"))
+      return "WPC";
+    if (path.includes("/restriction-of-hazardous-substance-rohs-certificate"))
+      return "ROHS";
     if (path.includes("/bee-certification")) return "BEE";
     if (path.includes("/ce-certification")) return "CE Certification";
     if (path.includes("/emi-emc-certification")) return "EMI EMC";
@@ -47,14 +66,8 @@ const ServiceContactForm = () => {
     pageName: getPageName(),
   });
 
-  const {
-    fullName,
-    email,
-    phoneNumber,
-    companyName,
-    productName,
-    message,
-  } = formData;
+  const { fullName, email, phoneNumber, companyName, productName, message } =
+    formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({
@@ -114,7 +127,6 @@ const ServiceContactForm = () => {
       setLoading(false);
       return;
     }
-
 
     try {
       const response = await axios.post(

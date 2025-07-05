@@ -38,6 +38,7 @@ const Footer = () => {
                 href="https://wa.me/918010505057"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Contact us on WhatsApp"
               >
                 <svg
                   stroke="currentColor"
@@ -54,7 +55,11 @@ const Footer = () => {
                 <span className="sr-only">WhatsApp</span>
               </a>
 
-              <a href="tel:+918010505057" rel="noreferrer noopener">
+              <a
+                href="tel:+918010505057"
+                rel="noreferrer noopener"
+                aria-label="Call us at +91 80105 05057"
+              >
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -74,6 +79,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/sun-consultants-engineers/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit our LinkedIn page"
               >
                 <svg
                   stroke="currentColor"
@@ -289,32 +295,40 @@ const Footer = () => {
                 href="https://github.com/Mohd-Arzaid"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit our GitHub profile"
               >
                 <LinkedInLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
+                <span className="sr-only">GitHub</span>
               </a>
 
               <a
                 href="https://x.com/__Arzaid__"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow us on X (formerly Twitter)"
               >
                 <TwitterLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
+                <span className="sr-only">X (Twitter)</span>
               </a>
 
               <a
                 href="mailto:admin@bis-certifications.com?body=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Send us an email"
               >
                 <MailPlus className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
+                <span className="sr-only">Email</span>
               </a>
 
               <a
                 href="https://instagram.com/arzaid._.xd"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow us on Instagram"
               >
                 <InstagramLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
+                <span className="sr-only">Instagram</span>
               </a>
             </div>
 

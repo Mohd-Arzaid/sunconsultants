@@ -112,9 +112,9 @@ export const WhatsOurCustomersSaySection = () => {
                         className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30 flex-shrink-0"
                       />
                       <div className="flex flex-col justify-center min-w-0">
-                        <h4 className="font-roboto font-bold text-lg leading-tight text-neutral-800 truncate">
+                        <h3 className="font-roboto font-bold text-lg leading-tight text-neutral-800 truncate">
                           {testimonial.name}
-                        </h4>
+                        </h3>
                         <p className="font-roboto text-sm text-neutral-600 leading-snug">
                           {testimonial.role}
                         </p>
