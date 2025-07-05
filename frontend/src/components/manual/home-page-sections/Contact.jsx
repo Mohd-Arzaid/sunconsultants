@@ -145,7 +145,7 @@ const Contact = () => {
             Contact Us
           </h2>
 
-          <p className="font-medium font-poppins text-[17px]  md:text-[20px]  text-[#996C6C]">
+          <p className="font-medium font-poppins text-[17px]  md:text-[20px]  text-[#664747]">
             Want to contact our team and book a call?
             <span className="text-black"> Try it now</span>
           </p>

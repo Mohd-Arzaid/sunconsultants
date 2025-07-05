@@ -4,7 +4,6 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
-import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -21,7 +20,8 @@ const Footer = () => {
             <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
               admin@bis-certifications.com
             </span>{" "}
-            or use one of the options below. We usually get back within 24 hours.
+            or use one of the options below. We usually get back within 24
+            hours.
           </div>
 
           <div className="flex items-center my-6 md:my-[30px]">
@@ -54,10 +54,7 @@ const Footer = () => {
                 <span className="sr-only">WhatsApp</span>
               </a>
 
-              <a
-                href="tel:+918010505057"
-                rel="noreferrer noopener"
-              >
+              <a href="tel:+918010505057" rel="noreferrer noopener">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -93,8 +90,6 @@ const Footer = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -110,7 +105,7 @@ const Footer = () => {
                  text-2xl font-bold text-center text-neutral-600"
               >
                 <img
-                  src={Logo}
+                  src="/company-logo/company-logo.webp"
                   alt="logo"
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />
@@ -167,26 +162,43 @@ const Footer = () => {
                 </span>
 
                 <div className="flex flex-col transition-colors gap-[10px]">
-                  <Link to="/services/tec" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/services/tec"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     TEC
                   </Link>
-                  <Link to="/services/isi-mark-indian" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/services/isi-mark-indian"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     ISI MARK
                   </Link>
-                  <Link to="/services/ce-certification" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/services/ce-certification"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     CE CERTIFICATION
                   </Link>
-                  <Link to="/services/epr-registration" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/services/epr-registration"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     EPR
-                  </Link >
-                  <Link to="/services/rohs" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  </Link>
+                  <Link
+                    to="/services/rohs"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     ROHS
                   </Link>
 
-                  <Link to="/services/wpc" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/services/wpc"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     WPC
-                  </Link >
-
+                  </Link>
                 </div>
               </div>
 
@@ -195,10 +207,16 @@ const Footer = () => {
                   Company
                 </span>
                 <div className="flex flex-col transition-colors gap-[10px]">
-                  <Link to="/about" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/about"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     About
                   </Link>
-                  <Link to="/contact" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/contact"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     Contact Us
                   </Link>
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
@@ -213,7 +231,7 @@ const Footer = () => {
                     onClick={() => {
                       // Scroll to top after a small delay to ensure route change
                       setTimeout(() => {
-                        window.scrollTo({ top: 0, behavior: 'instant' });
+                        window.scrollTo({ top: 0, behavior: "instant" });
                       }, 100);
                     }}
                   >
@@ -228,19 +246,34 @@ const Footer = () => {
                 </span>
 
                 <div className="flex flex-col transition-colors gap-[10px]">
-                  <Link to="/latest-notifications" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/latest-notifications"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     Blogs
                   </Link>
-                  <Link to="/latest-notifications" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/latest-notifications"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     Latest Updates
                   </Link>
-                  <Link to="/ministry-updates" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/ministry-updates"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     Ministry Updates
                   </Link>
-                  <Link to="/webinar" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/webinar"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     Webinar Updates
                   </Link>
-                  <Link to="/international-audits" className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
+                  <Link
+                    to="/international-audits"
+                    className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
+                  >
                     Gallery
                   </Link>
                 </div>
