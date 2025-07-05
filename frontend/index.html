@@ -11,18 +11,6 @@
       content="usCbLql5w15HfQAw3u-SAn1HrigVaNY_740hzjO_Ahs"
     />
 
-    <!-- Critical Resource Hints -->
-    <link rel="preconnect" href="https://bis-certifications.com" crossorigin />
-    <link rel="preload" href="/assets/index-renPa_gY.css" as="style" />
-    <link
-      rel="preload"
-      href="/assets/Geist_wgh….woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link rel="modulepreload" href="/assets/index-l6GmgQWw.js" />
-
     <!-- Font Optimization: Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,18 +18,6 @@
     <!-- Additional Resource Hints -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-
-    <!-- Optimized Google Fonts: Inline critical font-face declarations -->
-    <style>
-      /* Inline critical font-face declarations */
-      @font-face {
-        font-family: "Geist";
-        font-style: normal;
-        font-weight: normal;
-        font-display: swap;
-        src: url("/assets/Geist_wgh….woff2") format("woff2");
-      }
-    </style>
 
     <!-- Optimized Google Fonts: Async loading with font-display: swap -->
     <link
@@ -55,28 +31,6 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet"
       />
-    </noscript>
-
-    <!-- Critical CSS Inline -->
-    <style>
-      /* Add any critical above-the-fold CSS here */
-      body {
-        margin: 0;
-      }
-      #root {
-        min-height: 100vh;
-      }
-    </style>
-
-    <!-- Load non-critical CSS -->
-    <link
-      rel="stylesheet"
-      href="/assets/index-renPa_gY.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="/assets/index-renPa_gY.css" />
     </noscript>
 
     <!-- Critical LCP Image Preloading - HIGHEST PRIORITY -->
@@ -124,33 +78,21 @@
 
     <!-- Optimized Google Tag Manager - Deferred loading -->
     <script>
-      // Defer GTM loading using requestIdleCallback for better performance
-      const loadGTM = () => {
-        const gtmScript = document.createElement("script");
+      // Defer GTM loading to improve initial page load
+      window.addEventListener("load", function () {
+        var gtmScript = document.createElement("script");
         gtmScript.src =
           "https://www.googletagmanager.com/gtag/js?id=G-G25K7V10E9";
         gtmScript.async = true;
         document.head.appendChild(gtmScript);
 
         window.dataLayer = window.dataLayer || [];
-        window.gtag = function () {
-          window.dataLayer.push(arguments);
-        };
+        function gtag() {
+          dataLayer.push(arguments);
+        }
         gtag("js", new Date());
-        gtag("config", "G-G25K7V10E9", {
-          // Minimize layout thrashing by disabling features that cause reflows
-          optimize_window_stats: false,
-          force_client_hints: false,
-        });
-      };
-
-      // Use requestIdleCallback to load GTM during browser idle time
-      if ("requestIdleCallback" in window) {
-        requestIdleCallback(loadGTM, { timeout: 5000 });
-      } else {
-        // Fallback for browsers that don't support requestIdleCallback
-        window.addEventListener("load", () => setTimeout(loadGTM, 100));
-      }
+        gtag("config", "G-G25K7V10E9");
+      });
     </script>
   </head>
   <body>
