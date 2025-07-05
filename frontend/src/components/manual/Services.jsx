@@ -9,13 +9,10 @@ import ISIMark from "../../assets/images/ISIMark.jpg";
 import { BoxReveal } from "../magicui/box-reveal";
 import { Link } from "react-router-dom";
 
-
 export const Services = () => {
   return (
-
     <div className="pt-6 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
-
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
@@ -34,11 +31,11 @@ export const Services = () => {
           </BoxReveal>
         </div>
 
-
         <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-10 px-4 md:px-0 gap-y-12 md:gap-y-24">
-
-
-          <Link to="/services/bis-mark-foreign" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
@@ -51,8 +48,10 @@ export const Services = () => {
             </p>
           </Link>
 
-
-          <Link to="/services/cdsco-registration-certification" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/cdsco-registration-certification"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
@@ -65,7 +64,10 @@ export const Services = () => {
             </p>
           </Link>
 
-          <Link to="/services/crs-registration" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/what-is-crs-bis-or-crs-registration"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
@@ -78,7 +80,10 @@ export const Services = () => {
             </p>
           </Link>
 
-          <Link to="/services/plastic-waste" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/epr-certificate-for-plastic-waste-management-pwm"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
@@ -91,7 +96,10 @@ export const Services = () => {
             </p>
           </Link>
 
-          <Link to="/services/epr-registration" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/a-guide-on-how-to-obtain-epr-certificate"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={EPRCertificate}
@@ -104,7 +112,10 @@ export const Services = () => {
             </p>
           </Link>
 
-          <Link to="/services/lmpc-registration" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/a-guide-on-how-to-obtain-lmpc-certificate"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
@@ -117,7 +128,10 @@ export const Services = () => {
             </p>
           </Link>
 
-          <Link to="/services/bis-certification" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
@@ -130,7 +144,10 @@ export const Services = () => {
             </p>
           </Link>
 
-          <Link to="/services/isi-mark-indian" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/a-guide-to-bis-certification-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMark}
