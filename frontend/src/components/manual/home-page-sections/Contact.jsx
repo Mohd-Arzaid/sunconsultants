@@ -209,7 +209,7 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             <Button
               disabled={loading}
               type="submit"
-              className="w-full md:w-[600px] mt-2 h-14 md:h-[72px] rounded-xl md:rounded-[15px] border-2 border-[#20B2AA] bg-[#218681] hover:bg-[#17b1a9] text-white text-[17px] md:text-[20px] font-poppins font-semibold disabled:opacity-100"
+              className="w-full md:w-[600px] mt-2 h-14 md:h-[72px] rounded-xl md:rounded-[15px] bg-[#218681] hover:bg-[#17b1a9] text-white text-[17px] md:text-[20px] font-poppins font-semibold disabled:opacity-100"
             >
               {loading ? (
                 <div className="flex gap-3 items-center justify-center">
