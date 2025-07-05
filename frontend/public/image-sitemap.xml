@@ -407,4 +407,389 @@
         </image:image>
     </url>
 
+    <!-- Assets - Local Images -->
+    <url>
+        <loc>https://bis-certifications.com/assets</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/company-logo/company-logo.webp</image:loc>
+            <image:title>Company Logo</image:title>
+            <image:caption>Sun Consultants Company Logo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/BISCRS-CDSYSVMT.jpg</image:loc>
+            <image:title>BIS CRS System</image:title>
+            <image:caption>BIS Compulsory Registration Scheme System</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/BIS-FOBRA_TJ.jpg</image:loc>
+            <image:title>BIS FOBRA</image:title>
+            <image:caption>BIS Foreign Branch Office Registration</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/CDSCO-SysGSMPdf.jpg</image:loc>
+            <image:title>CDSCO System</image:title>
+            <image:caption>Central Drugs Standard Control Organisation System</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/BISCRS-DSPB1LT.jpg</image:loc>
+            <image:title>BIS CRS DSPB</image:title>
+            <image:caption>BIS CRS Digital Signature Process</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/BISCRS-DSPBNT.jpg</image:loc>
+            <image:title>BIS CRS DSPB NT</image:title>
+            <image:caption>BIS CRS Digital Signature Process NT</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/EPRCertificate.jpg</image:loc>
+            <image:title>EPR Certificate</image:title>
+            <image:caption>Extended Producer Responsibility Certificate</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/LMPC-LDLZkXSf.jpg</image:loc>
+            <image:title>LMPC System</image:title>
+            <image:caption>Legal Metrology Package Commodities</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/PlasticWaste.jpg</image:loc>
+            <image:title>Plastic Waste Management</image:title>
+            <image:caption>Plastic Waste Management Certification</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/CDSCO-SysCSYS.jpg</image:loc>
+            <image:title>CDSCO System</image:title>
+            <image:caption>CDSCO Certification System</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Client Logos Section -->
+    <url>
+        <loc>https://bis-certifications.com/clients</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/client-logos/honeywell.svg</image:loc>
+            <image:title>Honeywell Logo</image:title>
+            <image:caption>Honeywell - Our Client</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/client-logos/ametek.svg</image:loc>
+            <image:title>Ametek Logo</image:title>
+            <image:caption>Ametek - Our Client</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/client-logos/panasonic.svg</image:loc>
+            <image:title>Panasonic Logo</image:title>
+            <image:caption>Panasonic - Our Client</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/client-logos/bosch.svg</image:loc>
+            <image:title>Bosch Logo</image:title>
+            <image:caption>Bosch - Our Client</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/client-logos/ikea.svg</image:loc>
+            <image:title>IKEA Logo</image:title>
+            <image:caption>IKEA - Our Client</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Hero Section -->
+    <url>
+        <loc>https://bis-certifications.com/</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/hero-image/hero-mobile.svg</image:loc>
+            <image:title>Mobile Hero Image</image:title>
+            <image:caption>Hero section for mobile devices</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/hero-image/hero-image.webp</image:loc>
+            <image:title>Desktop Hero Image</image:title>
+            <image:caption>Main hero section image</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Service Sections -->
+    <url>
+        <loc>https://bis-certifications.com/services</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/LMPCimg.jpg</image:loc>
+            <image:title>LMPC Service</image:title>
+            <image:caption>Legal Metrology Package Commodities service section</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/PWMRimg.jpg</image:loc>
+            <image:title>PWMR Service</image:title>
+            <image:caption>Plastic Waste Management Rules service section</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/servicesImages/ISIMARKUpdated.jpg</image:loc>
+            <image:title>ISI Mark Updated</image:title>
+            <image:caption>Updated ISI Mark certification details</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/servicesImages/SchemeXImage.jpg</image:loc>
+            <image:title>Scheme X</image:title>
+            <image:caption>Scheme X certification details</image:caption>
+        </image:image>
+    </url>
+
+    <!-- BIS FM Section -->
+    <url>
+        <loc>https://bis-certifications.com/bis-fm</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/assets/biscertificate.jpg</image:loc>
+            <image:title>BIS Certificate</image:title>
+            <image:caption>BIS FM related certification</image:caption>
+        </image:image>
+    </url>
+
+    <!-- International Audits -->
+    <url>
+        <loc>https://bis-certifications.com/international-audits</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/auditImages/Bahrain.webp</image:loc>
+            <image:title>Bahrain Audit</image:title>
+            <image:caption>International Audit in Bahrain</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/auditImages/Vietnam.webp</image:loc>
+            <image:title>Vietnam Audit</image:title>
+            <image:caption>International Audit in Vietnam</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/auditImages/Indonesia.webp</image:loc>
+            <image:title>Indonesia Audit</image:title>
+            <image:caption>International Audit in Indonesia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/auditImages/Malaysia.webp</image:loc>
+            <image:title>Malaysia Audit</image:title>
+            <image:caption>International Audit in Malaysia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/auditImages/Vietnam-2.webp</image:loc>
+            <image:title>Vietnam Audit 2</image:title>
+            <image:caption>Second International Audit in Vietnam</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/auditImages/Vietnam-3.webp</image:loc>
+            <image:title>Vietnam Audit 3</image:title>
+            <image:caption>Third International Audit in Vietnam</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/auditImages/Slovenia.webp</image:loc>
+            <image:title>Slovenia Audit</image:title>
+            <image:caption>International Audit in Slovenia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/auditImages/Thailand.webp</image:loc>
+            <image:title>Thailand Audit</image:title>
+            <image:caption>International Audit in Thailand</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Exhibition and Seminar Images -->
+    <url>
+        <loc>https://bis-certifications.com/seminars-exhibitions</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Exhibition-1.webp</image:loc>
+            <image:title>Exhibition 1</image:title>
+            <image:caption>Exhibition showcase</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Exhibition-2.webp</image:loc>
+            <image:title>Exhibition 2</image:title>
+            <image:caption>Exhibition event</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Exhibition-3.webp</image:loc>
+            <image:title>Exhibition 3</image:title>
+            <image:caption>Exhibition presentation</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-1.webp</image:loc>
+            <image:title>Seminar 1</image:title>
+            <image:caption>Certification seminar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-2.webp</image:loc>
+            <image:title>Seminar 2</image:title>
+            <image:caption>Industry seminar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-3.webp</image:loc>
+            <image:title>Seminar 3</image:title>
+            <image:caption>Technical seminar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-4.webp</image:loc>
+            <image:title>Seminar 4</image:title>
+            <image:caption>Compliance seminar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-5.webp</image:loc>
+            <image:title>Seminar 5</image:title>
+            <image:caption>Standards seminar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-6.webp</image:loc>
+            <image:title>Seminar 6</image:title>
+            <image:caption>Regulatory seminar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-7.webp</image:loc>
+            <image:title>Seminar 7</image:title>
+            <image:caption>Quality assurance seminar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-7-2.webp</image:loc>
+            <image:title>Seminar 7-2</image:title>
+            <image:caption>Quality assurance workshop</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-8.webp</image:loc>
+            <image:title>Seminar 8</image:title>
+            <image:caption>Certification workshop</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-8-2.webp</image:loc>
+            <image:title>Seminar 8-2</image:title>
+            <image:caption>Certification training</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-9.webp</image:loc>
+            <image:title>Seminar 9</image:title>
+            <image:caption>Industry standards seminar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-10.webp</image:loc>
+            <image:title>Seminar 10</image:title>
+            <image:caption>Compliance workshop</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-10-2.webp</image:loc>
+            <image:title>Seminar 10-2</image:title>
+            <image:caption>Compliance training</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/seminarImages/Seminar-11.webp</image:loc>
+            <image:title>Seminar 11</image:title>
+            <image:caption>Standards workshop</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Countries Section -->
+    <url>
+        <loc>https://bis-certifications.com/countries</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Austria.webp</image:loc>
+            <image:title>Austria</image:title>
+            <image:caption>Certification services in Austria</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Bahrain.webp</image:loc>
+            <image:title>Bahrain</image:title>
+            <image:caption>Certification services in Bahrain</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Canada.webp</image:loc>
+            <image:title>Canada</image:title>
+            <image:caption>Certification services in Canada</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/China.webp</image:loc>
+            <image:title>China</image:title>
+            <image:caption>Certification services in China</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Colombia.webp</image:loc>
+            <image:title>Colombia</image:title>
+            <image:caption>Certification services in Colombia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Denmark.webp</image:loc>
+            <image:title>Denmark</image:title>
+            <image:caption>Certification services in Denmark</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/France.webp</image:loc>
+            <image:title>France</image:title>
+            <image:caption>Certification services in France</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Germany.webp</image:loc>
+            <image:title>Germany</image:title>
+            <image:caption>Certification services in Germany</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/India.webp</image:loc>
+            <image:title>India</image:title>
+            <image:caption>Certification services in India</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Indonesia.webp</image:loc>
+            <image:title>Indonesia</image:title>
+            <image:caption>Certification services in Indonesia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Italy.webp</image:loc>
+            <image:title>Italy</image:title>
+            <image:caption>Certification services in Italy</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Malaysia.webp</image:loc>
+            <image:title>Malaysia</image:title>
+            <image:caption>Certification services in Malaysia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Nepal.webp</image:loc>
+            <image:title>Nepal</image:title>
+            <image:caption>Certification services in Nepal</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Qatar.webp</image:loc>
+            <image:title>Qatar</image:title>
+            <image:caption>Certification services in Qatar</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Russia.webp</image:loc>
+            <image:title>Russia</image:title>
+            <image:caption>Certification services in Russia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Slovenia.webp</image:loc>
+            <image:title>Slovenia</image:title>
+            <image:caption>Certification services in Slovenia</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/SriLanka.webp</image:loc>
+            <image:title>Sri Lanka</image:title>
+            <image:caption>Certification services in Sri Lanka</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Sweden.webp</image:loc>
+            <image:title>Sweden</image:title>
+            <image:caption>Certification services in Sweden</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Thailand.webp</image:loc>
+            <image:title>Thailand</image:title>
+            <image:caption>Certification services in Thailand</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/UAE.webp</image:loc>
+            <image:title>UAE</image:title>
+            <image:caption>Certification services in UAE</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/USA.webp</image:loc>
+            <image:title>USA</image:title>
+            <image:caption>Certification services in USA</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://bis-certifications.com/countries-images/Vietnam.webp</image:loc>
+            <image:title>Vietnam</image:title>
+            <image:caption>Certification services in Vietnam</image:caption>
+        </image:image>
+    </url>
+
 </urlset> 

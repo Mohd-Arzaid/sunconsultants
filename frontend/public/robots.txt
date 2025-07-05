@@ -5,28 +5,7 @@ Allow: /
 Sitemap: https://bis-certifications.com/sitemap.xml
 Sitemap: https://bis-certifications.com/image-sitemap.xml
 
-# Disallow paths
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /draft/
-Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: /*?*
-
-# Allow specific file types
-Allow: /*.html$
-Allow: /*.htm$
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.gif$
-Allow: /*.svg$
-Allow: /*.webp$
-
-# Disallow crawling of inactive/commented service pages
+# Disallow specific service pages
 Disallow: /cdsco-registration-certification
 Disallow: /a-guide-on-how-to-obtain-epr-certificate
 Disallow: /epr-certificate-for-plastic-waste-management-pwm
