@@ -78,21 +78,33 @@
 
     <!-- Optimized Google Tag Manager - Deferred loading -->
     <script>
-      // Defer GTM loading to improve initial page load
-      window.addEventListener("load", function () {
-        var gtmScript = document.createElement("script");
+      // Defer GTM loading using requestIdleCallback for better performance
+      const loadGTM = () => {
+        const gtmScript = document.createElement("script");
         gtmScript.src =
           "https://www.googletagmanager.com/gtag/js?id=G-G25K7V10E9";
         gtmScript.async = true;
         document.head.appendChild(gtmScript);
 
         window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
+        window.gtag = function () {
+          window.dataLayer.push(arguments);
+        };
         gtag("js", new Date());
-        gtag("config", "G-G25K7V10E9");
-      });
+        gtag("config", "G-G25K7V10E9", {
+          // Minimize layout thrashing by disabling features that cause reflows
+          optimize_window_stats: false,
+          force_client_hints: false,
+        });
+      };
+
+      // Use requestIdleCallback to load GTM during browser idle time
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(loadGTM, { timeout: 5000 });
+      } else {
+        // Fallback for browsers that don't support requestIdleCallback
+        window.addEventListener("load", () => setTimeout(loadGTM, 100));
+      }
     </script>
   </head>
   <body>
