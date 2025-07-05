@@ -167,7 +167,7 @@ const OurServices = () => {
                       <div className="flex items-center justify-center bg-white/80 backdrop-blur-sm w-24 h-24 rounded-2xl shadow-lg">
                         <img
                           src={service.image}
-                          alt={service.title}
+                          alt={`Icon representing ${service.title}`}
                           className="w-20 h-20 rounded-full object-contain"
                           width="80"
                           height="80"
@@ -204,7 +204,7 @@ const OurServices = () => {
                       <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[350px] flex items-center justify-center">
                         <img
                           src={service.image}
-                          alt={service.title}
+                          alt={`Service icon for ${service.title}`}
                           className="w-48 h-48 rounded-full object-contain"
                           width="192"
                           height="192"
@@ -259,16 +259,16 @@ const OurServices = () => {
                 <div className="mb-0.5 md:mb-1">
                   <img
                     src={service.image}
-                    alt={service.title}
+                    alt={`Small icon for ${service.title}`}
                     className="w-8 h-8 md:w-12 md:h-12 rounded-full object-contain mx-auto"
                     width="48"
                     height="48"
                     loading="lazy"
                   />
                 </div>
-                <h4 className="font-geist font-medium text-xs md:text-base leading-tight">
+                <h3 className="font-geist font-medium text-xs md:text-base leading-tight">
                   {service.title}
-                </h4>
+                </h3>
               </div>
             </div>
           ))}
