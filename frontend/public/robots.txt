@@ -1,4 +1,30 @@
 User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://bis-certifications.com/sitemap.xml
+Sitemap: https://bis-certifications.com/image-sitemap.xml
+
+# Disallow paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /draft/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*?*
+
+# Allow specific file types
+Allow: /*.html$
+Allow: /*.htm$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
 
 # Disallow crawling of inactive/commented service pages
 Disallow: /cdsco-registration-certification
@@ -14,6 +40,4 @@ Disallow: /restriction-of-hazardous-substance-rohs-certificate
 Disallow: /bee-certification
 Disallow: /ce-certification
 Disallow: /emi-emc-certification
-Disallow: /cb-certification
-
-Sitemap: https://bis-certifications.com/sitemap.xml 
+Disallow: /cb-certification 
