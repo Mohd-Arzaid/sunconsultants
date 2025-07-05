@@ -48,7 +48,7 @@ const SocialFloatingButtons = ({ hide }) => {
       </a>
 
       {/* Pulsing effect behind the icons */}
-      <div className="absolute -z-10 bottom-6 left-6 w-10 h-10 md:w-12 md:h-12 bg-green-500/20 rounded-full animate-ping-slow"></div>
+      {/* <div className="absolute -z-10 bottom-6 left-6 w-10 h-10 md:w-12 md:h-12 bg-green-500/20 rounded-full animate-ping-slow"></div> */}
     </div>
   );
 };
