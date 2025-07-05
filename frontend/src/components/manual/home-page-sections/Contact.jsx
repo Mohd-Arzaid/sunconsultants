@@ -161,7 +161,7 @@ const Contact = () => {
               name="fullName"
               value={fullName}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/90
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border-2 border-blue-500/90
       focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
 text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Full Name *"
@@ -174,7 +174,7 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
               name="email"
               value={email}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/90
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border-2 border-blue-500/90
     focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
 text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Email Address *"
@@ -187,7 +187,7 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
               name="phoneNumber"
               value={phoneNumber}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/90
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border-2 border-blue-500/90
     focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
 text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Phone Number *"
@@ -200,7 +200,7 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
               name="message"
               value={message}
               onChange={handleOnChange}
-              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border border-blue-500/90
+              className="w-full md:w-[600px] h-14  md:h-[72px] rounded-xl  md:rounded-[15px] border-2 border-blue-500/90
       focus-visible:ring-1  focus-visible:ring-blue-500 focus-visible:ring-offset-0
 text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold   placeholder:text-[#7E7E7E] placeholder:text-[17px]  md:placeholder:text-[20px] placeholder:font-poppins placeholder:font-semibold px-6 md:px-8 disabled:opacity-100"
               placeholder="Which Certification is required ? *"
@@ -209,7 +209,7 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             <Button
               disabled={loading}
               type="submit"
-              className="w-full md:w-[600px] mt-2 h-14 md:h-[72px] rounded-xl md:rounded-[15px] bg-[#20B2AA] hover:bg-[#20CFC6] text-white text-[17px] md:text-[20px] font-poppins font-semibold disabled:opacity-100"
+              className="w-full md:w-[600px] mt-2 h-14 md:h-[72px] rounded-xl md:rounded-[15px] border-2 border-[#20B2AA] bg-[#218681] hover:bg-[#17b1a9] text-white text-[17px] md:text-[20px] font-poppins font-semibold disabled:opacity-100"
             >
               {loading ? (
                 <div className="flex gap-3 items-center justify-center">
@@ -217,7 +217,7 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
                   <span>Sending</span>
                 </div>
               ) : (
-                <div className="flex gap-3 items-center justify-center">
+                <div className="flex gap-3 text-2xl items-center justify-center">
                   <span>Submit</span>
                 </div>
               )}
