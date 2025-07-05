@@ -1,4 +1,3 @@
-
 const HeroImage = "/hero-image/hero-image.webp";
 const HeroImageMobile = "/hero-image/hero-mobile.svg";
 
