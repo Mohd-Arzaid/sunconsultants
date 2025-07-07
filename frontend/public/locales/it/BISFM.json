@@ -5,5 +5,51 @@
     "titlePart2": "per Produttori Stranieri",
     "description": "I produttori stranieri hanno bisogno del marchio ISI per le esportazioni in India. Copre 600+ prodotti obbligatori e 20.000+ prodotti volontari.",
     "viewServices": "Visualizza Servizi"
+  },
+  "contactForm": {
+    "badge": "Contattaci",
+    "title": "Prendi un Appuntamento",
+    "subtitle": "Vuoi contattare il nostro team e prenotare una chiamata?",
+    "tryNow": "Provalo ora",
+    "placeholders": {
+      "fullName": "Nome Completo *",
+      "email": "Indirizzo Email *",
+      "phoneNumber": "Numero di Contatto *",
+      "companyName": "Nome Azienda *",
+      "productName": "Nome Prodotto *",
+      "certification": "Certificazione Richiesta*"
+    },
+    "button": "Prenota Appuntamento",
+    "sending": "Invio in corso",
+    "messages": {
+      "success": "Modulo di contatto inviato con successo!",
+      "successDesc": "Grazie per averci contattato. Il nostro team ti contatterà a breve.",
+      "nameError": "Inserisci un Nome Completo valido.",
+      "nameErrorDesc": "Il nome dovrebbe contenere solo lettere e spazi.",
+      "emailError": "Inserisci un Indirizzo Email valido.",
+      "emailErrorDesc": "Controlla se il formato della tua email è corretto",
+      "phoneError": "Inserisci un Numero di Telefono valido",
+      "phoneErrorDesc": "Il numero di telefono dovrebbe essere (8-15 cifre)",
+      "generalError": "Impossibile inviare i dettagli del modulo di contatto!",
+      "generalErrorDesc": "Qualcosa è andato storto. Controlla i tuoi dettagli e riprova."
+    }
+  },
+  "sections": {
+    "overview": "Panoramica",
+    "standardization": "Standardizzazione",
+    "representation": "Rappresentanza",
+    "document": "Documenti",
+    "process": "Processo",
+    "costing": "Costi",
+    "surveillance": "Sorveglianza",
+    "facilitator": "Facilitatore"
+  },
+  "overview": {
+    "mainTitle": "Informazioni complete sulla certificazione BIS indiana nell'ambito del Sistema FMCS",
+    "whatIsBIS": {
+      "title": "Cos'è il BIS indiano?",
+      "description1": "Il Bureau of Indian Standards (BIS) è l'ente nazionale di standardizzazione dell'India sotto il Ministero degli Affari dei Consumatori, Alimentazione e Distribuzione Pubblica. Istituito ai sensi della Legge BIS del 1986 e rivisto nel 2016, il BIS svolge un ruolo fondamentale nella standardizzazione, marcatura e certificazione di qualità dei beni. Mira a garantire la qualità, la sicurezza e l'affidabilità dei prodotti offerti ai consumatori indiani.",
+      "description2": "Il BIS opera attraverso vari schemi che includono la certificazione dei prodotti, la marchiatura per i gioielli, i servizi di test e i programmi di formazione. Tuttavia, uno dei suoi quadri più significativi a livello internazionale è il Sistema di Certificazione dei Produttori Esteri (FMCS)."
+    }
   }
 }

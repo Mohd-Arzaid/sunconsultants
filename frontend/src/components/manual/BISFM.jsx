@@ -31,6 +31,8 @@ import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
 import AboutAuthor from "../common/AboutAuthor";
 
 export const BISFM = () => {
+  const { t } = useTranslation("BISFM");
+
   return (
     <>
       <Helmet>
@@ -262,22 +264,23 @@ const BISFMHero = () => {
 
 // BIS Index Section
 export const BISFMIndex = () => {
+  const { t } = useTranslation("BISFM");
   const [isSticky, setIsSticky] = useState(false);
-  const [activeSection, setActiveSection] = useState("Overview");
+  const [activeSection, setActiveSection] = useState("overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const stickyRef = useRef(null);
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
   const SECTIONS = [
-    "Overview",
-    "Standardization",
-    "Representation",
-    "Document",
-    "Process",
-    "Costing",
-    "Surveillance",
-    "Facilitator",
+    "overview",
+    "standardization",
+    "representation",
+    "document",
+    "process",
+    "costing",
+    "surveillance",
+    "facilitator",
   ];
 
   const handleItemClick = (item) => {
@@ -389,7 +392,7 @@ export const BISFMIndex = () => {
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
-          {activeSection}
+          {t(`sections.${activeSection}`)}
         </div>
         <button
           ref={toggleButtonRef}
@@ -441,7 +444,7 @@ export const BISFMIndex = () => {
                 }`}
               >
                 <div className="font-geist tracking-wider uppercase">
-                  {item}
+                  {t(`sections.${item}`)}
                 </div>
               </div>
             ))}
@@ -464,7 +467,7 @@ export const BISFMIndex = () => {
                   : "text-blue-950 group-hover:text-blue-900"
               }`}
             >
-              {item}
+              {t(`sections.${item}`)}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
@@ -701,6 +704,8 @@ export const ServiceFaq = () => {
 };
 
 export const BISFMContentLeft = () => {
+  const { t } = useTranslation("BISFM");
+  
   return (
     <article className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
@@ -709,39 +714,19 @@ export const BISFMContentLeft = () => {
           aria-label="BIS Certificate for Foreign Manufacturers"
         >
           <article className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-            Complete information on Indian BIS certification under FMCS Scheme
+            {t("overview.mainTitle")}
           </article>
 
           <h1 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] ">
-            What is Indian BIS?
+            {t("overview.whatIsBIS.title")}
           </h1>
 
           <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-1">
-            The Bureau of Indian Standards (BIS) is{" "}
-            <span className="font-semibold">
-              India&apos;s national standards
-            </span>{" "}
-            body under the Ministry of Consumer Affairs, Food and Public
-            Distribution. Established under the{" "}
-            <span className="font-semibold">
-              BIS Act 1986, and revised in 2016,
-            </span>{" "}
-            BIS plays a pivotal role in standardization, marking, and quality
-            certification of goods. It aims to ensure the quality, safety, and
-            reliability of products offered to Indian consumers.
+            {t("overview.whatIsBIS.description1")}
           </p>
 
           <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2">
-            BIS operates through various schemes that include{" "}
-            <span className="font-semibold">product certification</span>,{" "}
-            <span className="font-semibold">hallmarking for jewelry</span>,{" "}
-            <span className="font-semibold">testing services</span>, and{" "}
-            <span className="font-semibold">training programs</span>. However,
-            one of its most internationally significant frameworks is the{" "}
-            <span className="font-semibold">
-              Foreign Manufacturers Certification Scheme (FMCS)
-            </span>
-            .
+            {t("overview.whatIsBIS.description2")}
           </p>
 
           {/* <div className="bg-[#F9F7F2] border-l-4 border-[#1A8781] p-4 mt-2 md:mt-4 rounded-md shadow-sm">
@@ -1060,7 +1045,7 @@ const StandardizationSection = () => {
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <PointsListTwo
           points={[
-            "The stylized letters “ISI” inside a rectangle with rounded corners",
+            'The stylized letters "ISI" inside a rectangle with rounded corners',
             "The CM/L number displayed beneath or adjacent to the mark",
             "The reference Indian standard code number (e.g., IS 302 for electrical appliances)",
           ]}
@@ -1936,7 +1921,7 @@ const ProcessSection = () => {
         The BIS certification process under FMCS generally takes about 120
         working days (approximately 3–4 months) from the date of correct
         application submission. Delays often occur when documents are unclear or
-        if the factory isn’t audit ready.
+        if the factory isn't audit ready.
       </p>
     </section>
   );
@@ -2065,7 +2050,7 @@ const SurveillanceSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Once a BIS certificate is granted, the responsibility doesn’t end there.
+        Once a BIS certificate is granted, the responsibility doesn't end there.
         The BIS certification includes an ongoing surveillance and compliance
         system to ensure continuous adherence to Indian standards. This
         post-certification phase is crucial to maintaining your BIS license,

@@ -3,6 +3,7 @@ import { useParams, Outlet, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const SUPPORTED_LANGUAGES = [
+  "en",
   "it",
   "fr",
   "de",

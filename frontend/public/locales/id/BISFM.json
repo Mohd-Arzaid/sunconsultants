@@ -1,9 +1,55 @@
 {
   "hero": {
-    "badge": "Keahlian Bersertifikat",
+    "badge": "Keahlian Tersertifikasi",
     "titlePart1": "Sertifikat BIS",
     "titlePart2": "untuk Produsen Asing",
     "description": "Produsen asing memerlukan tanda ISI untuk ekspor ke India. Mencakup 600+ produk wajib dan 20.000+ produk sukarela.",
     "viewServices": "Lihat Layanan"
+  },
+  "contactForm": {
+    "badge": "Hubungi Kami",
+    "title": "Buat Janji",
+    "subtitle": "Ingin menghubungi tim kami dan menjadwalkan panggilan?",
+    "tryNow": "Coba Sekarang",
+    "placeholders": {
+      "fullName": "Nama Lengkap *",
+      "email": "Alamat Email *",
+      "phoneNumber": "Nomor Kontak *",
+      "companyName": "Nama Perusahaan *",
+      "productName": "Nama Produk *",
+      "certification": "Sertifikasi yang Diperlukan*"
+    },
+    "button": "Buat Janji",
+    "sending": "Mengirim",
+    "messages": {
+      "success": "Formulir kontak berhasil dikirim!",
+      "successDesc": "Terima kasih telah menghubungi kami. Tim kami akan segera menghubungi Anda.",
+      "nameError": "Silakan masukkan nama lengkap yang valid.",
+      "nameErrorDesc": "Nama hanya boleh berisi huruf dan spasi.",
+      "emailError": "Silakan masukkan alamat email yang valid.",
+      "emailErrorDesc": "Periksa apakah format email Anda benar",
+      "phoneError": "Silakan masukkan nomor telepon yang valid",
+      "phoneErrorDesc": "Nomor telepon harus (8-15 digit)",
+      "generalError": "Gagal mengirim detail formulir kontak!",
+      "generalErrorDesc": "Terjadi kesalahan. Silakan periksa detail Anda dan coba lagi."
+    }
+  },
+  "sections": {
+    "overview": "Ikhtisar",
+    "standardization": "Standardisasi",
+    "representation": "Perwakilan",
+    "document": "Dokumen",
+    "process": "Proses",
+    "costing": "Biaya",
+    "surveillance": "Pengawasan",
+    "facilitator": "Fasilitator"
+  },
+  "overview": {
+    "mainTitle": "Informasi lengkap tentang sertifikasi BIS India di bawah Skema FMCS",
+    "whatIsBIS": {
+      "title": "Apa itu BIS India?",
+      "description1": "Biro Standar India (BIS) adalah badan standar nasional India di bawah Kementerian Urusan Konsumen, Pangan dan Distribusi Publik. Didirikan berdasarkan Undang-undang BIS 1986, dan direvisi pada 2016, BIS memainkan peran penting dalam standardisasi, penandaan, dan sertifikasi kualitas barang. Bertujuan untuk memastikan kualitas, keamanan, dan keandalan produk yang ditawarkan kepada konsumen India.",
+      "description2": "BIS beroperasi melalui berbagai skema yang mencakup sertifikasi produk, hallmarking untuk perhiasan, layanan pengujian, dan program pelatihan. Namun, salah satu kerangka kerja yang paling signifikan secara internasional adalah Skema Sertifikasi Produsen Asing (FMCS)."
+    }
   }
 }

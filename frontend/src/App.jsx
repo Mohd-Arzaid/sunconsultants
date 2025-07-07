@@ -1,5 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import { Outlet } from "react-router-dom";
 import Navbar from "./common/Navbar";
 import TopBar from "./common/TopBar";
 import MobileNav from "./components/common/MobileNav";
@@ -52,6 +55,17 @@ import { PlasticWaste } from "./components/manual/PlasticWaste";
 import { LegalMetrology } from "./components/manual/LegalMetrology";
 import LHSCable from "./pages/LHSCable";
 
+// Component to set English language for default routes
+function EnglishWrapper() {
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage("en");
+  }, [i18n]);
+
+  return <Outlet />;
+}
+
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
 
@@ -65,7 +79,7 @@ function App() {
 
       <Routes>
         {/* Default routes without language prefix (English) */}
-        <Route path="/">
+        <Route path="/" element={<EnglishWrapper />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<ContactUs />} />

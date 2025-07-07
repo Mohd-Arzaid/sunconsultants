@@ -2,8 +2,54 @@
   "hero": {
     "badge": "Certified Expertise",
     "titlePart1": "BIS Certificate",
-    "titlePart2": "For Foreign Manufacturers",
-    "description": "Foreign manufacturers need ISI mark for exports to India. Covers 600+ mandatory & 20,000+ voluntary products.",
+    "titlePart2": "for Foreign Manufacturers",
+    "description": "Foreign manufacturers need ISI mark for exports to India. Covers 600+ mandatory products and 20,000+ voluntary products.",
     "viewServices": "View Services"
+  },
+  "contactForm": {
+    "badge": "Contact Us",
+    "title": "Book an Appointment",
+    "subtitle": "Want to contact our team and schedule a call?",
+    "tryNow": "Try Now",
+    "placeholders": {
+      "fullName": "Full Name *",
+      "email": "Email Address *",
+      "phoneNumber": "Contact Number *",
+      "companyName": "Company Name *",
+      "productName": "Product Name *",
+      "certification": "Required Certification*"
+    },
+    "button": "Book Appointment",
+    "sending": "Sending",
+    "messages": {
+      "success": "Contact form submitted successfully!",
+      "successDesc": "Thank you for contacting us. Our team will get back to you soon.",
+      "nameError": "Please enter a valid full name.",
+      "nameErrorDesc": "Name should only contain letters and spaces.",
+      "emailError": "Please enter a valid email address.",
+      "emailErrorDesc": "Check if your email format is correct",
+      "phoneError": "Please enter a valid phone number",
+      "phoneErrorDesc": "Phone number must be (8-15 digits)",
+      "generalError": "Failed to submit contact form details!",
+      "generalErrorDesc": "Something went wrong. Please check your details and try again."
+    }
+  },
+  "sections": {
+    "overview": "Overview",
+    "standardization": "Standardization",
+    "representation": "Representation",
+    "document": "Document",
+    "process": "Process",
+    "costing": "Costing",
+    "surveillance": "Surveillance",
+    "facilitator": "Facilitator"
+  },
+  "overview": {
+    "mainTitle": "Complete information on Indian BIS certification under FMCS Scheme",
+    "whatIsBIS": {
+      "title": "What is Indian BIS?",
+      "description1": "The Bureau of Indian Standards (BIS) is India's national standards body under the Ministry of Consumer Affairs, Food and Public Distribution. Established under the BIS Act 1986, and revised in 2016, BIS plays a pivotal role in standardization, marking, and quality certification of goods. It aims to ensure the quality, safety, and reliability of products offered to Indian consumers.",
+      "description2": "BIS operates through various schemes that include product certification, hallmarking for jewelry, testing services, and training programs. However, one of its most internationally significant frameworks is the Foreign Manufacturers Certification Scheme (FMCS)."
+    }
   }
 }

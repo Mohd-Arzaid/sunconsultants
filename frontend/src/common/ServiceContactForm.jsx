@@ -1,14 +1,16 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { useState } from "react";
+import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
-import { toast } from "@/hooks/use-toast";
-// import { toast } from "sonner";
-const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+import { useTranslation } from "react-i18next";
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const ServiceContactForm = () => {
+  const { t } = useTranslation("BISFM");
   const [loading, setLoading] = useState(false);
 
   // Function to get page name based on URL
@@ -88,8 +90,8 @@ const ServiceContactForm = () => {
       // toast.error("Please Enter a valid Full Name.");
       toast({
         variant: "destructive",
-        title: "Please Enter a valid Full Name.",
-        description: "Name Should only Contain Letters and Spaces.",
+        title: t("contactForm.messages.nameError"),
+        description: t("contactForm.messages.nameErrorDesc"),
       });
       setLoading(false);
       return;
@@ -108,8 +110,8 @@ const ServiceContactForm = () => {
     if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
       toast({
         variant: "destructive",
-        title: "Please Enter a valid Email Address.",
-        description: "Check if Your Email Format is Correct",
+        title: t("contactForm.messages.emailError"),
+        description: t("contactForm.messages.emailErrorDesc"),
       });
       setLoading(false);
       return;
@@ -121,8 +123,8 @@ const ServiceContactForm = () => {
       // toast.error("Please Enter a Valid Phone number (8-15 digits)");
       toast({
         variant: "destructive",
-        title: "Please Enter a Valid Phone Number",
-        description: "Phone Number Should be (8-15 digits)",
+        title: t("contactForm.messages.phoneError"),
+        description: t("contactForm.messages.phoneErrorDesc"),
       });
       setLoading(false);
       return;
@@ -139,9 +141,8 @@ const ServiceContactForm = () => {
       }
       // toast.success("Contact form submitted successfully!");
       toast({
-        title: "Contact form submit successfully!",
-        description:
-          "Thank you for Contacting Us. Our Team will Reach out to you Shortly.",
+        title: t("contactForm.messages.success"),
+        description: t("contactForm.messages.successDesc"),
       });
 
       setFormData({
@@ -160,9 +161,8 @@ const ServiceContactForm = () => {
       // toast.error(errorMessage || "Failed to submit contact form details!");
       toast({
         variant: "destructive",
-        title: errorMessage || "Failed to submit contact form details!",
-        description:
-          "Something Went Wrong. Please Check Your Details and Try Again.",
+        title: errorMessage || t("contactForm.messages.generalError"),
+        description: t("contactForm.messages.generalErrorDesc"),
       });
     } finally {
       setLoading(false);
@@ -173,18 +173,18 @@ const ServiceContactForm = () => {
     <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-poppins font-semibold text-[18px] md:text-[20px] text-[#008080]">
-          Contact Us
+          {t("contactForm.badge")}
         </span>
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
       <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
-        Make an Appointment
+        {t("contactForm.title")}
       </h3>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
-        Want to contact our team and book a call?
-        <span className="text-black"> Try it now</span>
+        {t("contactForm.subtitle")}
+        <span className="text-black"> {t("contactForm.tryNow")}</span>
       </p>
 
       <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
@@ -196,7 +196,7 @@ const ServiceContactForm = () => {
             name="fullName"
             value={fullName}
             onChange={handleOnChange}
-            placeholder="Full Name *"
+            placeholder={t("contactForm.placeholders.fullName")}
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -207,7 +207,7 @@ const ServiceContactForm = () => {
             name="email"
             value={email}
             onChange={handleOnChange}
-            placeholder="Email Address *"
+            placeholder={t("contactForm.placeholders.email")}
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -220,7 +220,7 @@ const ServiceContactForm = () => {
             name="phoneNumber"
             value={phoneNumber}
             onChange={handleOnChange}
-            placeholder="Contact Number *"
+            placeholder={t("contactForm.placeholders.phoneNumber")}
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -231,7 +231,7 @@ const ServiceContactForm = () => {
             name="companyName"
             value={companyName}
             onChange={handleOnChange}
-            placeholder="Company Name *"
+            placeholder={t("contactForm.placeholders.companyName")}
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -244,7 +244,7 @@ const ServiceContactForm = () => {
             name="productName"
             value={productName}
             onChange={handleOnChange}
-            placeholder="Product Name *"
+            placeholder={t("contactForm.placeholders.productName")}
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -255,7 +255,7 @@ const ServiceContactForm = () => {
             name="message"
             value={message}
             onChange={handleOnChange}
-            placeholder="Required Certification*"
+            placeholder={t("contactForm.placeholders.certification")}
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -268,11 +268,11 @@ const ServiceContactForm = () => {
           {loading ? (
             <div className="flex gap-3 items-center justify-center">
               <ClockLoader size={22} color="#fff" />
-              <span>Sending</span>
+              <span>{t("contactForm.sending")}</span>
             </div>
           ) : (
             <div className="flex gap-3 items-center justify-center">
-              <span> Book Appointment</span>
+              <span> {t("contactForm.button")}</span>
             </div>
           )}
         </Button>

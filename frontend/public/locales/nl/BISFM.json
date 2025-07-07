@@ -5,5 +5,51 @@
     "titlePart2": "voor Buitenlandse Fabrikanten",
     "description": "Buitenlandse fabrikanten hebben het ISI-merk nodig voor export naar India. Dekt 600+ verplichte en 20.000+ vrijwillige producten.",
     "viewServices": "Bekijk Services"
+  },
+  "contactForm": {
+    "badge": "Neem contact op",
+    "title": "Maak een Afspraak",
+    "subtitle": "Wilt u contact opnemen met ons team en een gesprek boeken?",
+    "tryNow": "Probeer het nu",
+    "placeholders": {
+      "fullName": "Volledige Naam *",
+      "email": "E-mailadres *",
+      "phoneNumber": "Contactnummer *",
+      "companyName": "Bedrijfsnaam *",
+      "productName": "Productnaam *",
+      "certification": "Vereiste Certificering*"
+    },
+    "button": "Afspraak Boeken",
+    "sending": "Verzenden",
+    "messages": {
+      "success": "Contactformulier succesvol verzonden!",
+      "successDesc": "Bedankt voor het contact met ons. Ons team zal binnenkort contact met u opnemen.",
+      "nameError": "Voer een geldige volledige naam in.",
+      "nameErrorDesc": "Naam mag alleen letters en spaties bevatten.",
+      "emailError": "Voer een geldig e-mailadres in.",
+      "emailErrorDesc": "Controleer of uw e-mailformaat correct is",
+      "phoneError": "Voer een geldig telefoonnummer in",
+      "phoneErrorDesc": "Telefoonnummer moet (8-15 cijfers) zijn",
+      "generalError": "Kan contactformulier details niet verzenden!",
+      "generalErrorDesc": "Er is iets misgegaan. Controleer uw gegevens en probeer opnieuw."
+    }
+  },
+  "sections": {
+    "overview": "Overzicht",
+    "standardization": "Standaardisatie",
+    "representation": "Vertegenwoordiging",
+    "document": "Document",
+    "process": "Proces",
+    "costing": "Kosten",
+    "surveillance": "Toezicht",
+    "facilitator": "Facilitator"
+  },
+  "overview": {
+    "mainTitle": "Volledige informatie over Indiase BIS-certificering onder het FMCS-schema",
+    "whatIsBIS": {
+      "title": "Wat is het Indiase BIS?",
+      "description1": "Het Bureau of Indian Standards (BIS) is India's nationale normalisatie-instantie onder het Ministerie van Consumentenzaken, Voedsel en Openbare Distributie. Opgericht onder de BIS-wet van 1986 en herzien in 2016, speelt BIS een centrale rol in de standaardisatie, markering en kwaliteitscertificering van goederen. Het streeft ernaar de kwaliteit, veiligheid en betrouwbaarheid van producten voor Indiase consumenten te waarborgen.",
+      "description2": "BIS werkt via verschillende regelingen, waaronder productcertificering, waarmerking voor sieraden, testdiensten en trainingsprogramma's. Een van de internationaal meest belangrijke kaders is echter het Certificeringsschema voor Buitenlandse Fabrikanten (FMCS)."
+    }
   }
 }

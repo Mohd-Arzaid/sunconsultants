@@ -5,5 +5,51 @@
     "titlePart2": "pour les Fabricants Étrangers",
     "description": "Les fabricants étrangers ont besoin de la marque ISI pour les exportations vers l'Inde. Couvre 600+ produits obligatoires et 20,000+ produits volontaires.",
     "viewServices": "Voir les Services"
+  },
+  "contactForm": {
+    "badge": "Contactez-nous",
+    "title": "Prendre un Rendez-vous",
+    "subtitle": "Vous voulez contacter notre équipe et réserver un appel?",
+    "tryNow": "Essayez maintenant",
+    "placeholders": {
+      "fullName": "Nom Complet *",
+      "email": "Adresse Email *",
+      "phoneNumber": "Numéro de Contact *",
+      "companyName": "Nom de l'Entreprise *",
+      "productName": "Nom du Produit *",
+      "certification": "Certification Requise*"
+    },
+    "button": "Réserver un Rendez-vous",
+    "sending": "Envoi en cours",
+    "messages": {
+      "success": "Formulaire de contact soumis avec succès!",
+      "successDesc": "Merci de nous avoir contactés. Notre équipe vous contactera sous peu.",
+      "nameError": "Veuillez entrer un nom complet valide.",
+      "nameErrorDesc": "Le nom ne doit contenir que des lettres et des espaces.",
+      "emailError": "Veuillez entrer une adresse email valide.",
+      "emailErrorDesc": "Vérifiez si le format de votre email est correct",
+      "phoneError": "Veuillez entrer un numéro de téléphone valide",
+      "phoneErrorDesc": "Le numéro de téléphone doit comporter (8-15 chiffres)",
+      "generalError": "Échec de la soumission des détails du formulaire de contact!",
+      "generalErrorDesc": "Quelque chose s'est mal passé. Veuillez vérifier vos détails et réessayer."
+    }
+  },
+  "sections": {
+    "overview": "Aperçu",
+    "standardization": "Normalisation",
+    "representation": "Représentation",
+    "document": "Document",
+    "process": "Processus",
+    "costing": "Coûts",
+    "surveillance": "Surveillance",
+    "facilitator": "Facilitateur"
+  },
+  "overview": {
+    "mainTitle": "Informations complètes sur la certification BIS indienne dans le cadre du programme FMCS",
+    "whatIsBIS": {
+      "title": "Qu'est-ce que le BIS indien ?",
+      "description1": "Le Bureau of Indian Standards (BIS) est l'organisme national de normalisation de l'Inde sous la tutelle du Ministère de la Consommation, de l'Alimentation et de la Distribution Publique. Établi en vertu de la loi BIS de 1986 et révisé en 2016, le BIS joue un rôle central dans la normalisation, le marquage et la certification de la qualité des marchandises. Il vise à garantir la qualité, la sécurité et la fiabilité des produits offerts aux consommateurs indiens.",
+      "description2": "Le BIS opère à travers divers programmes qui incluent la certification des produits, le poinçonnage des bijoux, les services d'essais et les programmes de formation. Cependant, l'un de ses cadres les plus importants au niveau international est le Programme de Certification des Fabricants Étrangers (FMCS)."
+    }
   }
 }

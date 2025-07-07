@@ -3,7 +3,53 @@
     "badge": "Experiencia Certificada",
     "titlePart1": "Certificado BIS",
     "titlePart2": "para Fabricantes Extranjeros",
-    "description": "Los fabricantes extranjeros necesitan la marca ISI para exportaciones a India. Cubre 600+ productos obligatorios y 20.000+ productos voluntarios.",
+    "description": "Los fabricantes extranjeros necesitan la marca ISI para exportar a India. Cubre 600+ productos obligatorios y 20,000+ productos voluntarios.",
     "viewServices": "Ver Servicios"
+  },
+  "contactForm": {
+    "badge": "Contáctenos",
+    "title": "Agendar una Cita",
+    "subtitle": "¿Desea contactar a nuestro equipo y programar una llamada?",
+    "tryNow": "Pruébelo ahora",
+    "placeholders": {
+      "fullName": "Nombre Completo *",
+      "email": "Correo Electrónico *",
+      "phoneNumber": "Número de Contacto *",
+      "companyName": "Nombre de la Empresa *",
+      "productName": "Nombre del Producto *",
+      "certification": "Certificación Requerida*"
+    },
+    "button": "Reservar Cita",
+    "sending": "Enviando",
+    "messages": {
+      "success": "¡Formulario de contacto enviado exitosamente!",
+      "successDesc": "Gracias por contactarnos. Nuestro equipo se pondrá en contacto con usted pronto.",
+      "nameError": "Por favor ingrese un nombre completo válido.",
+      "nameErrorDesc": "El nombre solo debe contener letras y espacios.",
+      "emailError": "Por favor ingrese un correo electrónico válido.",
+      "emailErrorDesc": "Verifique si el formato de su correo es correcto",
+      "phoneError": "Por favor ingrese un número de teléfono válido",
+      "phoneErrorDesc": "El número de teléfono debe tener (8-15 dígitos)",
+      "generalError": "¡Error al enviar los detalles del formulario de contacto!",
+      "generalErrorDesc": "Algo salió mal. Por favor revise sus detalles e intente nuevamente."
+    }
+  },
+  "sections": {
+    "overview": "Resumen",
+    "standardization": "Estandarización",
+    "representation": "Representación",
+    "document": "Documento",
+    "process": "Proceso",
+    "costing": "Costos",
+    "surveillance": "Vigilancia",
+    "facilitator": "Facilitador"
+  },
+  "overview": {
+    "mainTitle": "Información completa sobre la certificación BIS india bajo el Esquema FMCS",
+    "whatIsBIS": {
+      "title": "¿Qué es el BIS indio?",
+      "description1": "La Oficina de Normas de India (BIS) es el organismo nacional de normalización de India bajo el Ministerio de Asuntos del Consumidor, Alimentación y Distribución Pública. Establecida bajo la Ley BIS de 1986 y revisada en 2016, BIS juega un papel fundamental en la estandarización, marcado y certificación de calidad de productos. Su objetivo es garantizar la calidad, seguridad y fiabilidad de los productos ofrecidos a los consumidores indios.",
+      "description2": "BIS opera a través de varios esquemas que incluyen certificación de productos, marcado de joyería, servicios de pruebas y programas de capacitación. Sin embargo, uno de sus marcos más significativos internacionalmente es el Esquema de Certificación de Fabricantes Extranjeros (FMCS)."
+    }
   }
 }

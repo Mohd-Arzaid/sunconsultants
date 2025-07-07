@@ -3,7 +3,53 @@
     "badge": "Chuyên Môn Được Chứng Nhận",
     "titlePart1": "Chứng Chỉ BIS",
     "titlePart2": "cho Nhà Sản Xuất Nước Ngoài",
-    "description": "Các nhà sản xuất nước ngoài cần nhãn ISI để xuất khẩu sang Ấn Độ. Bao gồm 600+ sản phẩm bắt buộc và 20.000+ sản phẩm tự nguyện.",
+    "description": "Các nhà sản xuất nước ngoài cần dấu ISI để xuất khẩu sang Ấn Độ. Bao gồm 600+ sản phẩm bắt buộc và 20.000+ sản phẩm tự nguyện.",
     "viewServices": "Xem Dịch Vụ"
+  },
+  "contactForm": {
+    "badge": "Liên Hệ",
+    "title": "Đặt Lịch Hẹn",
+    "subtitle": "Bạn muốn liên hệ với đội ngũ của chúng tôi và đặt lịch gọi?",
+    "tryNow": "Thử Ngay",
+    "placeholders": {
+      "fullName": "Họ Tên *",
+      "email": "Địa Chỉ Email *",
+      "phoneNumber": "Số Điện Thoại *",
+      "companyName": "Tên Công Ty *",
+      "productName": "Tên Sản Phẩm *",
+      "certification": "Chứng Nhận Yêu Cầu*"
+    },
+    "button": "Đặt Lịch Hẹn",
+    "sending": "Đang Gửi",
+    "messages": {
+      "success": "Gửi biểu mẫu liên hệ thành công!",
+      "successDesc": "Cảm ơn bạn đã liên hệ với chúng tôi. Đội ngũ của chúng tôi sẽ sớm liên hệ lại với bạn.",
+      "nameError": "Vui lòng nhập họ tên hợp lệ.",
+      "nameErrorDesc": "Tên chỉ nên chứa chữ cái và khoảng trắng.",
+      "emailError": "Vui lòng nhập địa chỉ email hợp lệ.",
+      "emailErrorDesc": "Kiểm tra xem định dạng email của bạn có đúng không",
+      "phoneError": "Vui lòng nhập số điện thoại hợp lệ",
+      "phoneErrorDesc": "Số điện thoại phải có (8-15 chữ số)",
+      "generalError": "Không thể gửi chi tiết biểu mẫu liên hệ!",
+      "generalErrorDesc": "Đã xảy ra lỗi. Vui lòng kiểm tra thông tin của bạn và thử lại."
+    }
+  },
+  "sections": {
+    "overview": "Tổng Quan",
+    "standardization": "Tiêu Chuẩn Hóa",
+    "representation": "Đại Diện",
+    "document": "Tài Liệu",
+    "process": "Quy Trình",
+    "costing": "Chi Phí",
+    "surveillance": "Giám Sát",
+    "facilitator": "Người Hỗ Trợ"
+  },
+  "overview": {
+    "mainTitle": "Thông tin đầy đủ về chứng nhận BIS Ấn Độ theo Chương trình FMCS",
+    "whatIsBIS": {
+      "title": "BIS Ấn Độ là gì?",
+      "description1": "Cục Tiêu chuẩn Ấn Độ (BIS) là cơ quan tiêu chuẩn quốc gia của Ấn Độ trực thuộc Bộ Tiêu dùng, Thực phẩm và Phân phối Công cộng. Được thành lập theo Đạo luật BIS năm 1986 và sửa đổi năm 2016, BIS đóng vai trò quan trọng trong việc tiêu chuẩn hóa, đánh dấu và chứng nhận chất lượng hàng hóa. Mục tiêu là đảm bảo chất lượng, an toàn và độ tin cậy của sản phẩm cung cấp cho người tiêu dùng Ấn Độ.",
+      "description2": "BIS hoạt động thông qua nhiều chương trình bao gồm chứng nhận sản phẩm, đóng dấu đồ trang sức, dịch vụ kiểm tra và chương trình đào tạo. Tuy nhiên, một trong những khuôn khổ quan trọng nhất của nó ở cấp quốc tế là Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS)."
+    }
   }
 }

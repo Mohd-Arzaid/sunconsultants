@@ -5,5 +5,51 @@
     "titlePart2": "für Ausländische Hersteller",
     "description": "Ausländische Hersteller benötigen das ISI-Zeichen für Exporte nach Indien. Umfasst 600+ obligatorische und 20.000+ freiwillige Produkte.",
     "viewServices": "Services Anzeigen"
+  },
+  "contactForm": {
+    "badge": "Kontaktieren Sie uns",
+    "title": "Einen Termin vereinbaren",
+    "subtitle": "Möchten Sie unser Team kontaktieren und einen Anruf buchen?",
+    "tryNow": "Jetzt versuchen",
+    "placeholders": {
+      "fullName": "Vollständiger Name *",
+      "email": "E-Mail-Adresse *",
+      "phoneNumber": "Kontaktnummer *",
+      "companyName": "Firmenname *",
+      "productName": "Produktname *",
+      "certification": "Erforderliche Zertifizierung*"
+    },
+    "button": "Termin buchen",
+    "sending": "Wird gesendet",
+    "messages": {
+      "success": "Kontaktformular erfolgreich übermittelt!",
+      "successDesc": "Vielen Dank, dass Sie uns kontaktiert haben. Unser Team wird sich in Kürze bei Ihnen melden.",
+      "nameError": "Bitte geben Sie einen gültigen vollständigen Namen ein.",
+      "nameErrorDesc": "Der Name sollte nur Buchstaben und Leerzeichen enthalten.",
+      "emailError": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "emailErrorDesc": "Überprüfen Sie, ob Ihr E-Mail-Format korrekt ist",
+      "phoneError": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "phoneErrorDesc": "Die Telefonnummer sollte (8-15 Ziffern) haben",
+      "generalError": "Fehler beim Übermitteln der Kontaktformular-Details!",
+      "generalErrorDesc": "Etwas ist schief gelaufen. Bitte überprüfen Sie Ihre Angaben und versuchen Sie es erneut."
+    }
+  },
+  "sections": {
+    "overview": "Überblick",
+    "standardization": "Standardisierung",
+    "representation": "Vertretung",
+    "document": "Dokument",
+    "process": "Prozess",
+    "costing": "Kosten",
+    "surveillance": "Überwachung",
+    "facilitator": "Vermittler"
+  },
+  "overview": {
+    "mainTitle": "Vollständige Informationen zur indischen BIS-Zertifizierung im Rahmen des FMCS-Schemas",
+    "whatIsBIS": {
+      "title": "Was ist das indische BIS?",
+      "description1": "Das Bureau of Indian Standards (BIS) ist die nationale Normungsorganisation Indiens unter dem Ministerium für Verbraucherangelegenheiten, Lebensmittel und öffentliche Verteilung. Das BIS wurde gemäß dem BIS-Gesetz von 1986 gegründet und 2016 überarbeitet und spielt eine zentrale Rolle bei der Standardisierung, Kennzeichnung und Qualitätszertifizierung von Waren. Es zielt darauf ab, die Qualität, Sicherheit und Zuverlässigkeit der den indischen Verbrauchern angebotenen Produkte zu gewährleisten.",
+      "description2": "BIS arbeitet durch verschiedene Programme, die Produktzertifizierung, Hallmarking für Schmuck, Prüfdienstleistungen und Schulungsprogramme umfassen. Eines seiner international bedeutendsten Rahmenwerke ist jedoch das Zertifizierungssystem für ausländische Hersteller (FMCS)."
+    }
   }
 }

@@ -1,9 +1,55 @@
 {
   "hero": {
-    "badge": "인증된 전문 지식",
+    "badge": "인증된 전문성",
     "titlePart1": "BIS 인증서",
-    "titlePart2": "외국 제조업체용",
-    "description": "외국 제조업체는 인도로 수출하기 위해 ISI 마크가 필요합니다. 600개 이상의 필수 제품과 20,000개 이상의 자발적 제품을 다룹니다.",
+    "titlePart2": "해외 제조업체용",
+    "description": "해외 제조업체는 인도 수출을 위해 ISI 마크가 필요합니다. 600개 이상의 필수 제품과 20,000개 이상의 자발적 제품을 포함합니다.",
     "viewServices": "서비스 보기"
+  },
+  "contactForm": {
+    "badge": "문의하기",
+    "title": "예약하기",
+    "subtitle": "우리 팀에 연락하고 통화를 예약하시겠습니까?",
+    "tryNow": "지금 시도하기",
+    "placeholders": {
+      "fullName": "성명 *",
+      "email": "이메일 주소 *",
+      "phoneNumber": "연락처 번호 *",
+      "companyName": "회사명 *",
+      "productName": "제품명 *",
+      "certification": "필요한 인증*"
+    },
+    "button": "예약하기",
+    "sending": "전송 중",
+    "messages": {
+      "success": "문의 양식이 성공적으로 제출되었습니다!",
+      "successDesc": "문의해 주셔서 감사합니다. 우리 팀이 곧 연락드리겠습니다.",
+      "nameError": "유효한 성명을 입력해 주세요.",
+      "nameErrorDesc": "이름은 문자와 공백만 포함해야 합니다.",
+      "emailError": "유효한 이메일 주소를 입력해 주세요.",
+      "emailErrorDesc": "이메일 형식이 올바른지 확인하세요",
+      "phoneError": "유효한 전화번호를 입력해 주세요",
+      "phoneErrorDesc": "전화번호는 (8-15자리)여야 합니다",
+      "generalError": "문의 양식 세부 정보 제출 실패!",
+      "generalErrorDesc": "문제가 발생했습니다. 세부 정보를 확인하고 다시 시도해 주세요."
+    }
+  },
+  "sections": {
+    "overview": "개요",
+    "standardization": "표준화",
+    "representation": "대리",
+    "document": "문서",
+    "process": "프로세스",
+    "costing": "비용",
+    "surveillance": "감시",
+    "facilitator": "촉진자"
+  },
+  "overview": {
+    "mainTitle": "FMCS 제도에 따른 인도 BIS 인증에 대한 완전한 정보",
+    "whatIsBIS": {
+      "title": "인도 BIS란 무엇입니까?",
+      "description1": "인도표준국(BIS)은 소비자 문제, 식품 및 공공 배급 부처 산하의 인도 국가 표준 기관입니다. 1986년 BIS 법에 따라 설립되고 2016년에 개정된 BIS는 상품의 표준화, 마킹 및 품질 인증에서 중추적인 역할을 합니다. 인도 소비자에게 제공되는 제품의 품질, 안전성 및 신뢰성을 보장하는 것을 목표로 합니다.",
+      "description2": "BIS는 제품 인증, 보석류 홀마킹, 시험 서비스, 교육 프로그램 등 다양한 제도를 통해 운영됩니다. 그러나 국제적으로 가장 중요한 체계 중 하나는 해외 제조업체 인증 제도(FMCS)입니다."
+    }
   }
 }

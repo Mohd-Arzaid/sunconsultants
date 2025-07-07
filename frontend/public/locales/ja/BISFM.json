@@ -5,5 +5,51 @@
     "titlePart2": "外国メーカー向け",
     "description": "外国メーカーはインドへの輸出にISIマークが必要です。600以上の必須製品と20,000以上の任意製品をカバーしています。",
     "viewServices": "サービスを見る"
+  },
+  "contactForm": {
+    "badge": "お問い合わせ",
+    "title": "予約を取る",
+    "subtitle": "私たちのチームに連絡して通話を予約しますか？",
+    "tryNow": "今すぐ試す",
+    "placeholders": {
+      "fullName": "フルネーム *",
+      "email": "メールアドレス *",
+      "phoneNumber": "連絡先番号 *",
+      "companyName": "会社名 *",
+      "productName": "製品名 *",
+      "certification": "必要な認証*"
+    },
+    "button": "予約する",
+    "sending": "送信中",
+    "messages": {
+      "success": "お問い合わせフォームが正常に送信されました！",
+      "successDesc": "お問い合わせいただきありがとうございます。私たちのチームがまもなくご連絡いたします。",
+      "nameError": "有効なフルネームを入力してください。",
+      "nameErrorDesc": "名前は文字とスペースのみを含む必要があります。",
+      "emailError": "有効なメールアドレスを入力してください。",
+      "emailErrorDesc": "メールの形式が正しいかご確認ください",
+      "phoneError": "有効な電話番号を入力してください",
+      "phoneErrorDesc": "電話番号は（8-15桁）である必要があります",
+      "generalError": "お問い合わせフォームの詳細を送信できませんでした！",
+      "generalErrorDesc": "何かが間違っています。詳細を確認してもう一度お試しください。"
+    }
+  },
+  "sections": {
+    "overview": "概要",
+    "standardization": "標準化",
+    "representation": "代表",
+    "document": "文書",
+    "process": "プロセス",
+    "costing": "コスト",
+    "surveillance": "監視",
+    "facilitator": "ファシリテーター"
+  },
+  "overview": {
+    "mainTitle": "FMCSスキームに基づくインドBIS認証に関する完全な情報",
+    "whatIsBIS": {
+      "title": "インドBISとは？",
+      "description1": "インド規格局（BIS）は、消費者問題・食品・公共配給省の下にあるインドの国家規格機関です。1986年のBIS法に基づいて設立され、2016年に改正されたBISは、商品の標準化、マーキング、品質認証において重要な役割を果たしています。インドの消費者に提供される製品の品質、安全性、信頼性を確保することを目的としています。",
+      "description2": "BISは、製品認証、宝飾品のホールマーキング、試験サービス、トレーニングプログラムなど、様々なスキームを通じて運営されています。しかし、その国際的に最も重要な枠組みの1つが外国製造業者認証スキーム（FMCS）です。"
+    }
   }
 }

@@ -11,17 +11,17 @@ i18n
     debug: true,
     fallbackLng: "en",
     supportedLngs: [
-      "en",
-      "it",
-      "fr",
-      "de",
-      "nl",
-      "ja",
-      "th",
-      "ko",
-      "id",
-      "vi",
-      "es",
+      "de", // German
+      "en", // English
+      "es", // Spanish
+      "fr", // French
+      "id", // Indonesian
+      "it", // Italian
+      "ja", // Japanese
+      "ko", // Korean
+      "nl", // Dutch
+      "th", // Thai
+      "vi", // Vietnamese
     ],
     detection: {
       order: ["path"],
