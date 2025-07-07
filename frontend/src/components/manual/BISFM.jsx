@@ -705,7 +705,7 @@ export const ServiceFaq = () => {
 
 export const BISFMContentLeft = () => {
   const { t } = useTranslation("BISFM");
-  
+
   return (
     <article className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
@@ -761,6 +761,8 @@ export const BISFMContentLeft = () => {
 };
 
 const OverviewSection = () => {
+  const { t } = useTranslation("BISFM");
+  
   return (
     <section
       id="overview"
@@ -769,106 +771,65 @@ const OverviewSection = () => {
     >
       <header className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Overview
+          {t("overview.title")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </header>
 
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-        What is BIS certificate under FMCS?
+        {t("overview.mainHeading")}
       </h2>
 
-      {/* <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Pre-requisites of nomination of an Authorized Indian Representative
-      </p> */}
-
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Introduced in the year 2000,{" "}
-        {/* <strong className="font-medium text-gray-950 underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950"> */}
-        FMCS
-        {/* </strong>*/} is a mechanism by which foreign manufacturers can be
-        granted a BIS license to use the ISI mark on their products, indicating
-        conformity with Indian standards. The certification process FMCS enables
-        overseas entities to legally sell their products in India without
-        establishing a local manufacturing unit.
+        {t("overview.intro")}
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As of now, more than 1,650 foreign manufacturers are operating in India
-        under the BIS certification system through FMCS.
+        {t("overview.currentStats")}
       </p>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Why BIS Certification is Crucial ?
+        {t("overview.whyBISTitle")}
       </h2>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Obtaining a BIS certificate is more than a legal
-        requirement&mdash;it&apos;s a gateway to India&apos;s vast consumer
-        market. Here are a few key reasons why it&apos;s essential:
+        {t("overview.whyBISDesc")}
       </p>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={[
-            "Legal Compliance: Products must comply with relevant Indian standards.",
-            "Brand Credibility: The ISI mark serves as proof of quality and boosts consumer trust.",
-            "Customs Clearance: Without a valid BIS licence, products may be rejected at customs.",
-            "Market Access: Helps foreign brands gain seamless entry and widespread acceptance in India.",
-            "Risk Mitigation: Ensures that products are safe, thus avoiding potential recalls and liability issues.",
-          ]}
-        />
+        <PointsListTwo points={t("overview.whyBISPoints", { returnObjects: true })} />
       </div>
 
       <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Scope of Products Covered
+        {t("overview.scopeTitle")}
       </h2>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        BIS has listed over 600 products under mandatory certification, and over
-        20,000 items are eligible for voluntary BIS certificate. These span a
-        wide range of industries:{" "}
+        {t("overview.scopeDesc")}
       </p>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={[
-            "Electronics & IT hardware",
-            "Automotive parts",
-            "Household appliances",
-            "Steel products",
-            "Cement and construction materials etc.",
-          ]}
-        />
+        <PointsListTwo points={t("overview.scopePoints", { returnObjects: true })} />
       </div>
 
       <p className="mt-[12px] md:mt-[20px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The growing list indicates the increasing scope and relevance of BIS
-        certificate in global trade.{" "}
+        {t("overview.scopeEndNote")}
       </p>
 
       <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Objectives or benefits of BIS Certification for Foreign Manufacturers
+        {t("overview.objectivesTitle")}
       </h2>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The FMCS and BIS certificate regime aim to:
+        {t("overview.objectivesDesc")}
       </p>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={[
-            "Use of the ISI mark without a valid BIS license is punishable by law.",
-            "Certified products must display both the ISI logo and CM/L number (Certificate of Manufacturing License).",
-            "Violators may face product bans, fines, or even criminal prosecution.",
-            "Build trust between consumers and imported brands.",
-            "Facilitate fair trade and a level playing field.",
-          ]}
-        />
+        <PointsListTwo points={t("overview.objectivesPoints", { returnObjects: true })} />
       </div>
 
       <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Key Features of BIS certificate for foreign manufacturers
+        {t("overview.featuresTitle")}
       </h2>
 
       <div className="mt-[16px] md:mt-[24px]">
@@ -876,105 +837,27 @@ const OverviewSection = () => {
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                Feature
+                {t("overview.tableHeaders.feature")}
               </TableHead>
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                Description
+                {t("overview.tableHeaders.description")}
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody className="bg-white divide-y divide-gray-200">
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Applicability
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Foreign manufacturers only
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm  md:text-base font-geist text-[#42434d]">
-                Marking
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                ISI mark + CM/L number
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Audit Requirement
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Mandatory factory inspection
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Testing
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Conducted at BIS-approved Indian labs
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Validity
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                BIS license valid for 1–2 years
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Renewal
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Required upon expiry or product updates
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                AIR (Authorized Indian Representative)
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Must be appointed to liaise with BIS
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Performance Bank Guarantee
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base  font-geist text-[#42434d]">
-                Required from RBI-approved Indian bank
-              </TableCell>
-            </TableRow>
+            {t("overview.tableRows", { returnObjects: true }).map((row, index) => (
+              <TableRow key={index} className="hover:bg-gray-50">
+                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                  {row.feature}
+                </TableCell>
+                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                  {row.description}
+                </TableCell>
+              </TableRow>
+            ))}
           </TableBody>
         </Table>
       </div>
-
-      {/* <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        <PointsList
-          points={[
-            "Must be an Indian resident.",
-            "Should have a basic educational background to understand procedures.",
-            "Well-versed with the BIS certification process.",
-            "Must have a valid address for certificate documentation.",
-          ]}
-          heading="Eligibility Criteria for AIR in BIS Certification"
-        />
-
-        <figure className="w-full md:w-auto">
-          <img
-            src={BISSRimg}
-            alt="BIS Certification Process Flow Diagram"
-          
-            width="400"
-            height="250"
-            className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/12.5 w-[400px] h-[250px] mt-2.5"
-          />
-          <figcaption className="sr-only">BIS Certification Process Flow Diagram</figcaption>
-        </figure>
-      </div> */}
     </section>
   );
 };

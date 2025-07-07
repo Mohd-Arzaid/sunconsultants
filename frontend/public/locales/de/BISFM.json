@@ -45,11 +45,82 @@
     "facilitator": "Vermittler"
   },
   "overview": {
-    "mainTitle": "Vollständige Informationen zur indischen BIS-Zertifizierung im Rahmen des FMCS-Schemas",
+    "mainTitle": "Umfassende Informationen zur indischen BIS-Zertifizierung im Rahmen des FMCS-Programms",
     "whatIsBIS": {
       "title": "Was ist das indische BIS?",
-      "description1": "Das Bureau of Indian Standards (BIS) ist die nationale Normungsorganisation Indiens unter dem Ministerium für Verbraucherangelegenheiten, Lebensmittel und öffentliche Verteilung. Das BIS wurde gemäß dem BIS-Gesetz von 1986 gegründet und 2016 überarbeitet und spielt eine zentrale Rolle bei der Standardisierung, Kennzeichnung und Qualitätszertifizierung von Waren. Es zielt darauf ab, die Qualität, Sicherheit und Zuverlässigkeit der den indischen Verbrauchern angebotenen Produkte zu gewährleisten.",
-      "description2": "BIS arbeitet durch verschiedene Programme, die Produktzertifizierung, Hallmarking für Schmuck, Prüfdienstleistungen und Schulungsprogramme umfassen. Eines seiner international bedeutendsten Rahmenwerke ist jedoch das Zertifizierungssystem für ausländische Hersteller (FMCS)."
-    }
+      "description1": "Das Bureau of Indian Standards (BIS) ist die nationale Standardisierungsbehörde Indiens unter dem Ministerium für Verbraucherangelegenheiten, Lebensmittel und öffentliche Verteilung. Gegründet durch das BIS-Gesetz von 1986 und überarbeitet im Jahr 2016, spielt BIS eine wichtige Rolle bei der Standardisierung, Kennzeichnung und Qualitätszertifizierung von Waren. Ziel ist es, die Qualität, Sicherheit und Zuverlässigkeit von Produkten für indische Verbraucher zu gewährleisten.",
+      "description2": "BIS arbeitet durch verschiedene Programme, die Produktzertifizierung, Schmuck-Hallmarking, Prüfdienste und Schulungsprogramme umfassen. Eines der international bedeutendsten Rahmenwerke ist jedoch das Foreign Manufacturers Certification Scheme (FMCS)."
+    },
+    "title": "Überblick",
+    "mainHeading": "Was ist die BIS-Zertifizierung unter FMCS?",
+    "intro": "Das im Jahr 2000 eingeführte FMCS ist ein Mechanismus, durch den ausländische Hersteller eine BIS-Lizenz erhalten können, um das ISI-Zeichen auf ihren Produkten zu verwenden, was die Konformität mit indischen Standards anzeigt. Der FMCS-Zertifizierungsprozess ermöglicht es ausländischen Unternehmen, ihre Produkte legal in Indien zu verkaufen, ohne eine lokale Produktionseinheit einrichten zu müssen.",
+    "currentStats": "Derzeit sind über 1.650 ausländische Hersteller in Indien unter dem BIS-Zertifizierungssystem durch FMCS tätig.",
+    "whyBISTitle": "Warum ist die BIS-Zertifizierung wichtig?",
+    "whyBISDesc": "Eine BIS-Zertifizierung zu erhalten ist mehr als nur eine gesetzliche Anforderung—es ist das Tor zum großen indischen Verbrauchermarkt. Hier sind die wichtigsten Gründe, warum sie notwendig ist:",
+    "whyBISPoints": [
+      "Gesetzliche Konformität: Produkte müssen die relevanten indischen Standards erfüllen.",
+      "Markenglaubwürdigkeit: Das ISI-Zeichen dient als Qualitätsnachweis und stärkt das Verbrauchervertrauen.",
+      "Zollabfertigung: Ohne gültige BIS-Lizenz können Produkte am Zoll zurückgewiesen werden.",
+      "Marktzugang: Hilft ausländischen Marken, Eingang und breite Akzeptanz in Indien zu finden.",
+      "Risikominderung: Gewährleistet Produktsicherheit und vermeidet potenzielle Rückrufe und Haftungsprobleme."
+    ],
+    "scopeTitle": "Umfang der abgedeckten Produkte",
+    "scopeDesc": "BIS hat über 600 Produkte unter der obligatorischen Zertifizierung aufgelistet, und mehr als 20.000 Artikel kommen für die freiwillige BIS-Zertifizierung in Frage. Diese erstrecken sich über verschiedene Branchen:",
+    "scopePoints": [
+      "Elektronik und IT-Hardware",
+      "Automobilteile",
+      "Haushaltsgeräte",
+      "Stahlprodukte",
+      "Zement und Baumaterialien usw."
+    ],
+    "scopeEndNote": "Die wachsende Liste zeigt den zunehmenden Umfang und die Relevanz der BIS-Zertifizierung im globalen Handel.",
+    "objectivesTitle": "Ziele oder Vorteile der BIS-Zertifizierung für ausländische Hersteller",
+    "objectivesDesc": "Das FMCS-Regime und die BIS-Zertifizierung zielen darauf ab:",
+    "objectivesPoints": [
+      "Die Verwendung des ISI-Zeichens ohne gültige BIS-Lizenz ist gesetzlich strafbar.",
+      "Zertifizierte Produkte müssen sowohl das ISI-Logo als auch die CM/L-Nummer (Certificate of Manufacturing License) anzeigen.",
+      "Verstöße können zu Produktverboten, Geldstrafen oder sogar strafrechtlicher Verfolgung führen.",
+      "Aufbau von Vertrauen zwischen Verbrauchern und importierten Marken.",
+      "Förderung eines fairen Handels und gleicher Wettbewerbsbedingungen."
+    ],
+    "featuresTitle": "Hauptmerkmale der BIS-Zertifizierung für ausländische Hersteller",
+    "tableHeaders": {
+      "feature": "Merkmal",
+      "description": "Beschreibung"
+    },
+    "tableRows": [
+      {
+        "feature": "Anwendbarkeit",
+        "description": "Nur für ausländische Hersteller"
+      },
+      {
+        "feature": "Kennzeichnung",
+        "description": "ISI-Zeichen + CM/L-Nummer"
+      },
+      {
+        "feature": "Audit-Anforderungen",
+        "description": "Obligatorische Werksinspektion"
+      },
+      {
+        "feature": "Tests",
+        "description": "Durchführung in BIS-zugelassenen indischen Laboren"
+      },
+      {
+        "feature": "Gültigkeit",
+        "description": "BIS-Lizenz gültig für 1-2 Jahre"
+      },
+      {
+        "feature": "Erneuerung",
+        "description": "Erforderlich bei Ablauf oder Produktaktualisierung"
+      },
+      {
+        "feature": "AIR (Authorized Indian Representative)",
+        "description": "Muss für die Kommunikation mit BIS ernannt werden"
+      },
+      {
+        "feature": "Performance Bank Guarantee",
+        "description": "Erforderlich von RBI-zugelassener indischer Bank"
+      }
+    ]
   }
 }

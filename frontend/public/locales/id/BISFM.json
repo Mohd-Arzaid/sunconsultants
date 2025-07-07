@@ -45,11 +45,82 @@
     "facilitator": "Fasilitator"
   },
   "overview": {
-    "mainTitle": "Informasi lengkap tentang sertifikasi BIS India di bawah Skema FMCS",
+    "mainTitle": "Informasi lengkap tentang sertifikasi BIS India di bawah skema FMCS",
     "whatIsBIS": {
       "title": "Apa itu BIS India?",
-      "description1": "Biro Standar India (BIS) adalah badan standar nasional India di bawah Kementerian Urusan Konsumen, Pangan dan Distribusi Publik. Didirikan berdasarkan Undang-undang BIS 1986, dan direvisi pada 2016, BIS memainkan peran penting dalam standardisasi, penandaan, dan sertifikasi kualitas barang. Bertujuan untuk memastikan kualitas, keamanan, dan keandalan produk yang ditawarkan kepada konsumen India.",
-      "description2": "BIS beroperasi melalui berbagai skema yang mencakup sertifikasi produk, hallmarking untuk perhiasan, layanan pengujian, dan program pelatihan. Namun, salah satu kerangka kerja yang paling signifikan secara internasional adalah Skema Sertifikasi Produsen Asing (FMCS)."
-    }
+      "description1": "Biro Standar India (BIS) adalah badan standar nasional India di bawah Kementerian Urusan Konsumen, Pangan dan Distribusi Publik. Didirikan berdasarkan UU BIS 1986 dan direvisi pada 2016, BIS memainkan peran penting dalam standardisasi, penandaan, dan sertifikasi mutu barang. Tujuannya adalah untuk memastikan kualitas, keamanan, dan keandalan produk yang ditawarkan kepada konsumen India.",
+      "description2": "BIS beroperasi melalui berbagai skema yang mencakup sertifikasi produk, hallmarking perhiasan, layanan pengujian, dan program pelatihan. Namun, salah satu kerangka kerja yang paling signifikan secara internasional adalah Skema Sertifikasi Produsen Asing (FMCS)."
+    },
+    "title": "Ikhtisar",
+    "mainHeading": "Apa itu sertifikat BIS di bawah FMCS?",
+    "intro": "Diperkenalkan pada tahun 2000, FMCS adalah mekanisme di mana produsen asing dapat diberikan lisensi BIS untuk menggunakan tanda ISI pada produk mereka, menunjukkan kesesuaian dengan standar India. Proses sertifikasi FMCS memungkinkan entitas luar negeri untuk secara legal menjual produk mereka di India tanpa mendirikan unit produksi lokal.",
+    "currentStats": "Saat ini, lebih dari 1.650 produsen asing beroperasi di India di bawah sistem sertifikasi BIS melalui FMCS.",
+    "whyBISTitle": "Mengapa Sertifikasi BIS Penting?",
+    "whyBISDesc": "Mendapatkan sertifikat BIS lebih dari sekadar persyaratan hukum—ini adalah gerbang menuju pasar konsumen India yang luas. Berikut beberapa alasan utama mengapa ini penting:",
+    "whyBISPoints": [
+      "Kepatuhan hukum: Produk harus mematuhi standar India yang relevan.",
+      "Kredibilitas merek: Tanda ISI berfungsi sebagai bukti kualitas dan meningkatkan kepercayaan konsumen.",
+      "Bea Cukai: Tanpa lisensi BIS yang valid, produk dapat ditolak di bea cukai.",
+      "Akses pasar: Membantu merek asing mendapatkan masuk dan penerimaan luas di India.",
+      "Mitigasi risiko: Memastikan produk aman, sehingga menghindari potensi penarikan dan masalah kewajiban."
+    ],
+    "scopeTitle": "Cakupan Produk yang Tercakup",
+    "scopeDesc": "BIS telah mencantumkan lebih dari 600 produk di bawah sertifikasi wajib, dan lebih dari 20.000 item memenuhi syarat untuk sertifikasi BIS sukarela. Ini mencakup berbagai industri:",
+    "scopePoints": [
+      "Elektronik dan perangkat keras TI",
+      "Suku cadang otomotif",
+      "Peralatan rumah tangga",
+      "Produk baja",
+      "Semen dan bahan bangunan, dll."
+    ],
+    "scopeEndNote": "Daftar yang terus bertambah menunjukkan cakupan dan relevansi sertifikat BIS yang semakin meningkat dalam perdagangan global.",
+    "objectivesTitle": "Tujuan atau manfaat Sertifikasi BIS untuk Produsen Asing",
+    "objectivesDesc": "Rezim FMCS dan sertifikat BIS bertujuan untuk:",
+    "objectivesPoints": [
+      "Penggunaan tanda ISI tanpa lisensi BIS yang valid dapat dihukum menurut hukum.",
+      "Produk bersertifikat harus menampilkan logo ISI dan nomor CM/L (Sertifikat Lisensi Manufaktur).",
+      "Pelanggar dapat menghadapi larangan produk, denda, atau bahkan tuntutan pidana.",
+      "Membangun kepercayaan antara konsumen dan merek impor.",
+      "Memfasilitasi perdagangan yang adil dan lapangan bermain yang setara."
+    ],
+    "featuresTitle": "Fitur Utama sertifikat BIS untuk produsen asing",
+    "tableHeaders": {
+      "feature": "Fitur",
+      "description": "Deskripsi"
+    },
+    "tableRows": [
+      {
+        "feature": "Penerapan",
+        "description": "Hanya produsen asing"
+      },
+      {
+        "feature": "Penandaan",
+        "description": "Tanda ISI + nomor CM/L"
+      },
+      {
+        "feature": "Persyaratan Audit",
+        "description": "Inspeksi pabrik wajib"
+      },
+      {
+        "feature": "Pengujian",
+        "description": "Dilakukan di laboratorium India yang disetujui BIS"
+      },
+      {
+        "feature": "Validitas",
+        "description": "Lisensi BIS berlaku 1-2 tahun"
+      },
+      {
+        "feature": "Pembaruan",
+        "description": "Diperlukan saat kadaluarsa atau pembaruan produk"
+      },
+      {
+        "feature": "AIR (Perwakilan India Resmi)",
+        "description": "Harus ditunjuk untuk berhubungan dengan BIS"
+      },
+      {
+        "feature": "Jaminan Bank Kinerja",
+        "description": "Diperlukan dari bank India yang disetujui RBI"
+      }
+    ]
   }
 }

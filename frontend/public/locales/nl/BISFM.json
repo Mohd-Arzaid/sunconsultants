@@ -45,11 +45,82 @@
     "facilitator": "Facilitator"
   },
   "overview": {
-    "mainTitle": "Volledige informatie over Indiase BIS-certificering onder het FMCS-schema",
+    "mainTitle": "Uitgebreide informatie over Indiase BIS-certificering onder het FMCS-programma",
     "whatIsBIS": {
       "title": "Wat is het Indiase BIS?",
-      "description1": "Het Bureau of Indian Standards (BIS) is India's nationale normalisatie-instantie onder het Ministerie van Consumentenzaken, Voedsel en Openbare Distributie. Opgericht onder de BIS-wet van 1986 en herzien in 2016, speelt BIS een centrale rol in de standaardisatie, markering en kwaliteitscertificering van goederen. Het streeft ernaar de kwaliteit, veiligheid en betrouwbaarheid van producten voor Indiase consumenten te waarborgen.",
-      "description2": "BIS werkt via verschillende regelingen, waaronder productcertificering, waarmerking voor sieraden, testdiensten en trainingsprogramma's. Een van de internationaal meest belangrijke kaders is echter het Certificeringsschema voor Buitenlandse Fabrikanten (FMCS)."
-    }
+      "description1": "Het Bureau of Indian Standards (BIS) is de nationale standaardisatie-instantie van India onder het Ministerie van Consumentenzaken, Voedsel en Openbare Distributie. Opgericht onder de BIS-wet van 1986 en herzien in 2016, speelt BIS een cruciale rol bij de standaardisatie, markering en kwaliteitscertificering van goederen. Het doel is om de kwaliteit, veiligheid en betrouwbaarheid van producten voor Indiase consumenten te waarborgen.",
+      "description2": "BIS werkt via verschillende programma's die productcertificering, sieraden hallmarking, testdiensten en trainingsprogramma's omvatten. Een van de meest belangrijke internationale kaders is echter het Foreign Manufacturers Certification Scheme (FMCS)."
+    },
+    "title": "Overzicht",
+    "mainHeading": "Wat is BIS-certificering onder FMCS?",
+    "intro": "FMCS, geïntroduceerd in 2000, is een mechanisme waardoor buitenlandse fabrikanten een BIS-licentie kunnen krijgen om het ISI-merk op hun producten te gebruiken, wat conformiteit met Indiase normen aantoont. Het FMCS-certificeringsproces stelt buitenlandse entiteiten in staat om legaal hun producten in India te verkopen zonder een lokale productie-eenheid op te zetten.",
+    "currentStats": "Momenteel zijn er meer dan 1.650 buitenlandse fabrikanten actief in India onder het BIS-certificeringssysteem via FMCS.",
+    "whyBISTitle": "Waarom is BIS-certificering belangrijk?",
+    "whyBISDesc": "Het verkrijgen van BIS-certificering is meer dan alleen een wettelijke vereiste—het is de toegangspoort tot de grote Indiase consumentenmarkt. Hier zijn de belangrijkste redenen waarom het essentieel is:",
+    "whyBISPoints": [
+      "Wettelijke naleving: Producten moeten voldoen aan de relevante Indiase normen.",
+      "Merkgeloofwaardigheid: Het ISI-merk dient als bewijs van kwaliteit en verhoogt het consumentenvertrouwen.",
+      "Douane-inklaring: Zonder geldige BIS-licentie kunnen producten bij de douane worden geweigerd.",
+      "Markttoegang: Helpt buitenlandse merken om ingang en brede acceptatie in India te krijgen.",
+      "Risicovermindering: Zorgt voor productveiligheid en vermijdt potentiële terugroepacties en aansprakelijkheidsproblemen."
+    ],
+    "scopeTitle": "Reikwijdte van gedekte producten",
+    "scopeDesc": "BIS heeft meer dan 600 producten onder verplichte certificering vermeld, en meer dan 20.000 items komen in aanmerking voor vrijwillige BIS-certificering. Deze strekken zich uit over verschillende industrieën:",
+    "scopePoints": [
+      "Elektronica en IT-hardware",
+      "Auto-onderdelen",
+      "Huishoudelijke apparaten",
+      "Staalproducten",
+      "Cement en bouwmaterialen, etc."
+    ],
+    "scopeEndNote": "De groeiende lijst toont de toenemende reikwijdte en relevantie van BIS-certificering in de wereldhandel.",
+    "objectivesTitle": "Doelstellingen of voordelen van BIS-certificering voor buitenlandse fabrikanten",
+    "objectivesDesc": "Het FMCS-regime en BIS-certificering zijn gericht op:",
+    "objectivesPoints": [
+      "Het gebruik van het ISI-merk zonder geldige BIS-licentie is wettelijk strafbaar.",
+      "Gecertificeerde producten moeten zowel het ISI-logo als het CM/L-nummer (Certificate of Manufacturing License) tonen.",
+      "Overtreders kunnen te maken krijgen met productverboden, boetes of zelfs strafrechtelijke vervolging.",
+      "Opbouwen van vertrouwen tussen consumenten en geïmporteerde merken.",
+      "Bevorderen van eerlijke handel en een gelijk speelveld."
+    ],
+    "featuresTitle": "Belangrijkste kenmerken van BIS-certificering voor buitenlandse fabrikanten",
+    "tableHeaders": {
+      "feature": "Kenmerk",
+      "description": "Beschrijving"
+    },
+    "tableRows": [
+      {
+        "feature": "Toepasbaarheid",
+        "description": "Alleen voor buitenlandse fabrikanten"
+      },
+      {
+        "feature": "Markering",
+        "description": "ISI-merk + CM/L-nummer"
+      },
+      {
+        "feature": "Audit-vereisten",
+        "description": "Verplichte fabriekscontrole"
+      },
+      {
+        "feature": "Testen",
+        "description": "Uitgevoerd in BIS-goedgekeurde Indiase laboratoria"
+      },
+      {
+        "feature": "Geldigheid",
+        "description": "BIS-licentie geldig voor 1-2 jaar"
+      },
+      {
+        "feature": "Vernieuwing",
+        "description": "Vereist bij vervaldatum of productupdate"
+      },
+      {
+        "feature": "AIR (Geautoriseerde Indiase Vertegenwoordiger)",
+        "description": "Moet worden aangesteld voor communicatie met BIS"
+      },
+      {
+        "feature": "Prestatiebankgarantie",
+        "description": "Vereist van RBI-goedgekeurde Indiase bank"
+      }
+    ]
   }
 }

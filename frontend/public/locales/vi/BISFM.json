@@ -45,11 +45,82 @@
     "facilitator": "Người Hỗ Trợ"
   },
   "overview": {
-    "mainTitle": "Thông tin đầy đủ về chứng nhận BIS Ấn Độ theo Chương trình FMCS",
+    "mainTitle": "Thông tin đầy đủ về chứng nhận BIS Ấn Độ theo chương trình FMCS",
     "whatIsBIS": {
       "title": "BIS Ấn Độ là gì?",
-      "description1": "Cục Tiêu chuẩn Ấn Độ (BIS) là cơ quan tiêu chuẩn quốc gia của Ấn Độ trực thuộc Bộ Tiêu dùng, Thực phẩm và Phân phối Công cộng. Được thành lập theo Đạo luật BIS năm 1986 và sửa đổi năm 2016, BIS đóng vai trò quan trọng trong việc tiêu chuẩn hóa, đánh dấu và chứng nhận chất lượng hàng hóa. Mục tiêu là đảm bảo chất lượng, an toàn và độ tin cậy của sản phẩm cung cấp cho người tiêu dùng Ấn Độ.",
-      "description2": "BIS hoạt động thông qua nhiều chương trình bao gồm chứng nhận sản phẩm, đóng dấu đồ trang sức, dịch vụ kiểm tra và chương trình đào tạo. Tuy nhiên, một trong những khuôn khổ quan trọng nhất của nó ở cấp quốc tế là Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS)."
-    }
+      "description1": "Cục Tiêu chuẩn Ấn Độ (BIS) là cơ quan tiêu chuẩn quốc gia của Ấn Độ thuộc Bộ Tiêu dùng, Thực phẩm và Phân phối Công cộng. Được thành lập theo Đạo luật BIS năm 1986 và sửa đổi năm 2016, BIS đóng vai trò quan trọng trong việc tiêu chuẩn hóa, đánh dấu và chứng nhận chất lượng hàng hóa. Mục tiêu là đảm bảo chất lượng, an toàn và độ tin cậy của sản phẩm cung cấp cho người tiêu dùng Ấn Độ.",
+      "description2": "BIS hoạt động thông qua nhiều chương trình bao gồm chứng nhận sản phẩm, đánh dấu đồ trang sức, dịch vụ kiểm tra và chương trình đào tạo. Tuy nhiên, một trong những khuôn khổ quan trọng nhất về mặt quốc tế là Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS)."
+    },
+    "title": "Tổng quan",
+    "mainHeading": "Chứng nhận BIS theo FMCS là gì?",
+    "intro": "Được giới thiệu vào năm 2000, FMCS là cơ chế cho phép các nhà sản xuất nước ngoài được cấp giấy phép BIS để sử dụng dấu ISI trên sản phẩm của họ, cho thấy sự phù hợp với tiêu chuẩn Ấn Độ. Quy trình chứng nhận FMCS cho phép các đơn vị nước ngoài bán sản phẩm hợp pháp tại Ấn Độ mà không cần thành lập đơn vị sản xuất tại địa phương.",
+    "currentStats": "Hiện tại, hơn 1.650 nhà sản xuất nước ngoài đang hoạt động tại Ấn Độ theo hệ thống chứng nhận BIS thông qua FMCS.",
+    "whyBISTitle": "Tại sao chứng nhận BIS lại quan trọng?",
+    "whyBISDesc": "Việc có được chứng nhận BIS không chỉ là yêu cầu pháp lý—mà còn là cánh cửa dẫn đến thị trường tiêu dùng rộng lớn của Ấn Độ. Dưới đây là một số lý do chính tại sao nó cần thiết:",
+    "whyBISPoints": [
+      "Tuân thủ pháp luật: Sản phẩm phải tuân thủ các tiêu chuẩn Ấn Độ liên quan.",
+      "Uy tín thương hiệu: Dấu ISI là bằng chứng về chất lượng và tăng cường niềm tin của người tiêu dùng.",
+      "Thông quan: Không có giấy phép BIS hợp lệ, sản phẩm có thể bị từ chối tại hải quan.",
+      "Tiếp cận thị trường: Giúp các thương hiệu nước ngoài có được sự gia nhập và chấp nhận rộng rãi tại Ấn Độ.",
+      "Giảm thiểu rủi ro: Đảm bảo sản phẩm an toàn, tránh các vấn đề về thu hồi và trách nhiệm pháp lý."
+    ],
+    "scopeTitle": "Phạm vi sản phẩm được bao gồm",
+    "scopeDesc": "BIS đã liệt kê hơn 600 sản phẩm bắt buộc chứng nhận, và hơn 20.000 mặt hàng đủ điều kiện để chứng nhận BIS tự nguyện. Những sản phẩm này trải rộng trên nhiều ngành công nghiệp:",
+    "scopePoints": [
+      "Điện tử và phần cứng CNTT",
+      "Phụ tùng ô tô",
+      "Thiết bị gia dụng",
+      "Sản phẩm thép",
+      "Xi măng và vật liệu xây dựng, v.v."
+    ],
+    "scopeEndNote": "Danh sách ngày càng tăng cho thấy phạm vi và tầm quan trọng ngày càng lớn của chứng nhận BIS trong thương mại toàn cầu.",
+    "objectivesTitle": "Mục tiêu hoặc lợi ích của Chứng nhận BIS cho Nhà sản xuất Nước ngoài",
+    "objectivesDesc": "Chế độ FMCS và chứng nhận BIS nhằm mục đích:",
+    "objectivesPoints": [
+      "Việc sử dụng dấu ISI mà không có giấy phép BIS hợp lệ sẽ bị xử phạt theo pháp luật.",
+      "Sản phẩm được chứng nhận phải hiển thị cả logo ISI và số CM/L (Chứng nhận Giấy phép Sản xuất).",
+      "Người vi phạm có thể phải đối mặt với lệnh cấm sản phẩm, phạt tiền hoặc thậm chí bị truy tố hình sự.",
+      "Xây dựng niềm tin giữa người tiêu dùng và các thương hiệu nhập khẩu.",
+      "Tạo điều kiện thuận lợi cho thương mại công bằng và sân chơi bình đẳng."
+    ],
+    "featuresTitle": "Các đặc điểm chính của chứng nhận BIS cho nhà sản xuất nước ngoài",
+    "tableHeaders": {
+      "feature": "Đặc điểm",
+      "description": "Mô tả"
+    },
+    "tableRows": [
+      {
+        "feature": "Khả năng áp dụng",
+        "description": "Chỉ dành cho nhà sản xuất nước ngoài"
+      },
+      {
+        "feature": "Đánh dấu",
+        "description": "Dấu ISI + số CM/L"
+      },
+      {
+        "feature": "Yêu cầu kiểm toán",
+        "description": "Kiểm tra nhà máy bắt buộc"
+      },
+      {
+        "feature": "Kiểm tra",
+        "description": "Thực hiện tại phòng thí nghiệm Ấn Độ được BIS phê duyệt"
+      },
+      {
+        "feature": "Hiệu lực",
+        "description": "Giấy phép BIS có hiệu lực 1-2 năm"
+      },
+      {
+        "feature": "Gia hạn",
+        "description": "Yêu cầu khi hết hạn hoặc cập nhật sản phẩm"
+      },
+      {
+        "feature": "AIR (Đại diện Ấn Độ được Ủy quyền)",
+        "description": "Phải được chỉ định để liên lạc với BIS"
+      },
+      {
+        "feature": "Bảo lãnh ngân hàng thực hiện",
+        "description": "Yêu cầu từ ngân hàng Ấn Độ được RBI phê duyệt"
+      }
+    ]
   }
 }

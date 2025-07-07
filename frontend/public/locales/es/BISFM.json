@@ -45,11 +45,82 @@
     "facilitator": "Facilitador"
   },
   "overview": {
-    "mainTitle": "Información completa sobre la certificación BIS india bajo el Esquema FMCS",
+    "mainTitle": "Información completa sobre la certificación BIS india bajo el esquema FMCS",
     "whatIsBIS": {
       "title": "¿Qué es el BIS indio?",
-      "description1": "La Oficina de Normas de India (BIS) es el organismo nacional de normalización de India bajo el Ministerio de Asuntos del Consumidor, Alimentación y Distribución Pública. Establecida bajo la Ley BIS de 1986 y revisada en 2016, BIS juega un papel fundamental en la estandarización, marcado y certificación de calidad de productos. Su objetivo es garantizar la calidad, seguridad y fiabilidad de los productos ofrecidos a los consumidores indios.",
-      "description2": "BIS opera a través de varios esquemas que incluyen certificación de productos, marcado de joyería, servicios de pruebas y programas de capacitación. Sin embargo, uno de sus marcos más significativos internacionalmente es el Esquema de Certificación de Fabricantes Extranjeros (FMCS)."
-    }
+      "description1": "La Oficina de Normas de India (BIS) es el organismo nacional de normalización de India bajo el Ministerio de Asuntos del Consumidor, Alimentación y Distribución Pública. Establecido bajo la Ley BIS de 1986 y revisado en 2016, BIS juega un papel fundamental en la normalización, marcado y certificación de calidad de productos. Su objetivo es garantizar la calidad, seguridad y fiabilidad de los productos ofrecidos a los consumidores indios.",
+      "description2": "BIS opera a través de varios esquemas que incluyen certificación de productos, marcado de joyería, servicios de pruebas y programas de formación. Sin embargo, uno de sus marcos más significativos internacionalmente es el Esquema de Certificación de Fabricantes Extranjeros (FMCS)."
+    },
+    "title": "Descripción general",
+    "mainHeading": "¿Qué es el certificado BIS bajo FMCS?",
+    "intro": "Introducido en el año 2000, FMCS es un mecanismo por el cual los fabricantes extranjeros pueden obtener una licencia BIS para usar la marca ISI en sus productos, indicando conformidad con las normas indias. El proceso de certificación FMCS permite a las entidades extranjeras vender legalmente sus productos en India sin establecer una unidad de fabricación local.",
+    "currentStats": "Actualmente, más de 1,650 fabricantes extranjeros operan en India bajo el sistema de certificación BIS a través de FMCS.",
+    "whyBISTitle": "¿Por qué es crucial la certificación BIS?",
+    "whyBISDesc": "Obtener un certificado BIS es más que un requisito legal—es una puerta de entrada al vasto mercado de consumo indio. Aquí hay algunas razones clave por las que es esencial:",
+    "whyBISPoints": [
+      "Cumplimiento legal: Los productos deben cumplir con las normas indias relevantes.",
+      "Credibilidad de marca: La marca ISI sirve como prueba de calidad y aumenta la confianza del consumidor.",
+      "Despacho de aduanas: Sin una licencia BIS válida, los productos pueden ser rechazados en aduanas.",
+      "Acceso al mercado: Ayuda a las marcas extranjeras a obtener una entrada y aceptación generalizada en India.",
+      "Mitigación de riesgos: Asegura que los productos sean seguros, evitando así posibles retiros y problemas de responsabilidad."
+    ],
+    "scopeTitle": "Alcance de productos cubiertos",
+    "scopeDesc": "BIS ha listado más de 600 productos bajo certificación obligatoria, y más de 20,000 artículos son elegibles para certificación BIS voluntaria. Estos abarcan una amplia gama de industrias:",
+    "scopePoints": [
+      "Electrónica y hardware de TI",
+      "Partes automotrices",
+      "Electrodomésticos",
+      "Productos de acero",
+      "Cemento y materiales de construcción, etc."
+    ],
+    "scopeEndNote": "La lista creciente indica el alcance y la relevancia cada vez mayores del certificado BIS en el comercio global.",
+    "objectivesTitle": "Objetivos o beneficios de la certificación BIS para fabricantes extranjeros",
+    "objectivesDesc": "El régimen FMCS y el certificado BIS tienen como objetivo:",
+    "objectivesPoints": [
+      "El uso de la marca ISI sin una licencia BIS válida es punible por ley.",
+      "Los productos certificados deben mostrar tanto el logo ISI como el número CM/L (Certificado de Licencia de Fabricación).",
+      "Los infractores pueden enfrentar prohibiciones de productos, multas o incluso procesamiento penal.",
+      "Construir confianza entre consumidores y marcas importadas.",
+      "Facilitar el comercio justo y condiciones equitativas de competencia."
+    ],
+    "featuresTitle": "Características principales del certificado BIS para fabricantes extranjeros",
+    "tableHeaders": {
+      "feature": "Característica",
+      "description": "Descripción"
+    },
+    "tableRows": [
+      {
+        "feature": "Aplicabilidad",
+        "description": "Solo fabricantes extranjeros"
+      },
+      {
+        "feature": "Marcado",
+        "description": "Marca ISI + número CM/L"
+      },
+      {
+        "feature": "Requisito de auditoría",
+        "description": "Inspección obligatoria de fábrica"
+      },
+      {
+        "feature": "Pruebas",
+        "description": "Realizadas en laboratorios indios aprobados por BIS"
+      },
+      {
+        "feature": "Validez",
+        "description": "Licencia BIS válida por 1-2 años"
+      },
+      {
+        "feature": "Renovación",
+        "description": "Requerida al vencimiento o actualizaciones de productos"
+      },
+      {
+        "feature": "AIR (Representante Indio Autorizado)",
+        "description": "Debe ser nombrado para enlace con BIS"
+      },
+      {
+        "feature": "Garantía bancaria de desempeño",
+        "description": "Requerida de banco indio aprobado por RBI"
+      }
+    ]
   }
 }

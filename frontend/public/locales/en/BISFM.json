@@ -50,6 +50,77 @@
       "title": "What is Indian BIS?",
       "description1": "The Bureau of Indian Standards (BIS) is India's national standards body under the Ministry of Consumer Affairs, Food and Public Distribution. Established under the BIS Act 1986, and revised in 2016, BIS plays a pivotal role in standardization, marking, and quality certification of goods. It aims to ensure the quality, safety, and reliability of products offered to Indian consumers.",
       "description2": "BIS operates through various schemes that include product certification, hallmarking for jewelry, testing services, and training programs. However, one of its most internationally significant frameworks is the Foreign Manufacturers Certification Scheme (FMCS)."
-    }
+    },
+    "title": "Overview",
+    "mainHeading": "What is BIS certificate under FMCS?",
+    "intro": "Introduced in the year 2000, FMCS is a mechanism by which foreign manufacturers can be granted a BIS license to use the ISI mark on their products, indicating conformity with Indian standards. The certification process FMCS enables overseas entities to legally sell their products in India without establishing a local manufacturing unit.",
+    "currentStats": "As of now, more than 1,650 foreign manufacturers are operating in India under the BIS certification system through FMCS.",
+    "whyBISTitle": "Why BIS Certification is Crucial ?",
+    "whyBISDesc": "Obtaining a BIS certificate is more than a legal requirement—it's a gateway to India's vast consumer market. Here are a few key reasons why it's essential:",
+    "whyBISPoints": [
+      "Legal Compliance: Products must comply with relevant Indian standards.",
+      "Brand Credibility: The ISI mark serves as proof of quality and boosts consumer trust.",
+      "Customs Clearance: Without a valid BIS licence, products may be rejected at customs.",
+      "Market Access: Helps foreign brands gain seamless entry and widespread acceptance in India.",
+      "Risk Mitigation: Ensures that products are safe, thus avoiding potential recalls and liability issues."
+    ],
+    "scopeTitle": "Scope of Products Covered",
+    "scopeDesc": "BIS has listed over 600 products under mandatory certification, and over 20,000 items are eligible for voluntary BIS certificate. These span a wide range of industries:",
+    "scopePoints": [
+      "Electronics & IT hardware",
+      "Automotive parts",
+      "Household appliances",
+      "Steel products",
+      "Cement and construction materials etc."
+    ],
+    "scopeEndNote": "The growing list indicates the increasing scope and relevance of BIS certificate in global trade.",
+    "objectivesTitle": "Objectives or benefits of BIS Certification for Foreign Manufacturers",
+    "objectivesDesc": "The FMCS and BIS certificate regime aim to:",
+    "objectivesPoints": [
+      "Use of the ISI mark without a valid BIS license is punishable by law.",
+      "Certified products must display both the ISI logo and CM/L number (Certificate of Manufacturing License).",
+      "Violators may face product bans, fines, or even criminal prosecution.",
+      "Build trust between consumers and imported brands.",
+      "Facilitate fair trade and a level playing field."
+    ],
+    "featuresTitle": "Key Features of BIS certificate for foreign manufacturers",
+    "tableHeaders": {
+      "feature": "Feature",
+      "description": "Description"
+    },
+    "tableRows": [
+      {
+        "feature": "Applicability",
+        "description": "Foreign manufacturers only"
+      },
+      {
+        "feature": "Marking",
+        "description": "ISI mark + CM/L number"
+      },
+      {
+        "feature": "Audit Requirement",
+        "description": "Mandatory factory inspection"
+      },
+      {
+        "feature": "Testing",
+        "description": "Conducted at BIS-approved Indian labs"
+      },
+      {
+        "feature": "Validity",
+        "description": "BIS license valid for 1–2 years"
+      },
+      {
+        "feature": "Renewal",
+        "description": "Required upon expiry or product updates"
+      },
+      {
+        "feature": "AIR (Authorized Indian Representative)",
+        "description": "Must be appointed to liaise with BIS"
+      },
+      {
+        "feature": "Performance Bank Guarantee",
+        "description": "Required from RBI-approved Indian bank"
+      }
+    ]
   }
 }
