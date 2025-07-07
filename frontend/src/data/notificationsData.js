@@ -2446,6 +2446,38 @@ export const notifications = [
     Date2: "14th September 2024",
     Date3: "14th December 2024",
   },
+  {
+    id: 138,
+    color: "#1A8781",
+    tagType: "New QCO",
+    date: "15 June 2025",
+    title: "BIS Notification for “Writing and Printing Paper” ",
+    description:
+      "BIS certification is now mandatory for Writing and Printing Paper (IS 1848 Part 1:2018) from 17th October 2025. All manufacturers and importers must get a BIS license and use the ISI mark to sell in India.",
+    pdfUrl: "/pdf/sun-certification-writing-and-printing-paper.pdf",
+    location: "New Delhi",
+    subHeading: `Writing and Printing Paper`,
+    ISNumber: `under IS 1848 (Part 1):2018`,
+    Date1: "17th October 2025",
+    Date2: "17th October 2025",
+    Date3: "17th October 2025",
+  },
+  {
+    id: 139,
+    color: "#DC143C",
+    tagType: "New QCO",
+    date: "15 June 2025",
+    title: "BIS Notification for “Coated Papers and Board ( Art and Chrome )”",
+    description:
+      "BIS license now mandatory for Coated Papers & Board (Art and Chrome) from 17th Oct 2025. ISI mark required to sell in India.",
+    pdfUrl: "/pdf/sun-certification-coated-papers-and-board-art-and-chrome.pdf",
+    location: "New Delhi",
+    subHeading: `Coated Papers and Board ( Art and Chrome ) `,
+    ISNumber: `IS 4658:2019`,
+    Date1: "17th October 2025",
+    Date2: "17th October 2025",
+    Date3: "17th October 2025",
+  },
 ];
 
 // For now, we'll lazy load this data
@@ -2457,54 +2489,63 @@ export const loadNotificationsData = async () => {
 // Search function for notifications
 export const searchNotifications = (notifications, query) => {
   if (!query) return notifications;
-  
+
   const searchTerm = query.toLowerCase();
-  return notifications.filter(notification =>
-    notification.title?.toLowerCase().includes(searchTerm) ||
-    notification.description?.toLowerCase().includes(searchTerm) ||
-    notification.tagType?.toLowerCase().includes(searchTerm) ||
-    notification.subHeading?.toLowerCase().includes(searchTerm) ||
-    notification.ISNumber?.toLowerCase().includes(searchTerm)
+  return notifications.filter(
+    (notification) =>
+      notification.title?.toLowerCase().includes(searchTerm) ||
+      notification.description?.toLowerCase().includes(searchTerm) ||
+      notification.tagType?.toLowerCase().includes(searchTerm) ||
+      notification.subHeading?.toLowerCase().includes(searchTerm) ||
+      notification.ISNumber?.toLowerCase().includes(searchTerm)
   );
 };
 
 // Filter function for notifications
 export const filterNotifications = (notifications, filters) => {
   let filtered = notifications;
-  
+
   if (filters.tagType) {
-    filtered = filtered.filter(notification => 
-      notification.tagType?.toLowerCase().includes(filters.tagType.toLowerCase())
+    filtered = filtered.filter((notification) =>
+      notification.tagType
+        ?.toLowerCase()
+        .includes(filters.tagType.toLowerCase())
     );
   }
-  
+
   if (filters.dateRange) {
     // Add date filtering logic here
-    filtered = filtered.filter(notification => {
+    filtered = filtered.filter((notification) => {
       const notificationDate = new Date(notification.date);
-      return notificationDate >= filters.dateRange.start && 
-             notificationDate <= filters.dateRange.end;
+      return (
+        notificationDate >= filters.dateRange.start &&
+        notificationDate <= filters.dateRange.end
+      );
     });
   }
-  
+
   return filtered;
 };
 
 // Sort function for notifications
-export const sortNotifications = (notifications, sortBy = 'date', order = 'desc') => {
+export const sortNotifications = (
+  notifications,
+  sortBy = "date",
+  order = "desc"
+) => {
   return [...notifications].sort((a, b) => {
     let aValue = a[sortBy];
     let bValue = b[sortBy];
-    
-    if (sortBy === 'date') {
+
+    if (sortBy === "date") {
       aValue = new Date(aValue);
       bValue = new Date(bValue);
     }
-    
-    if (order === 'desc') {
+
+    if (order === "desc") {
       return bValue > aValue ? 1 : -1;
     } else {
       return aValue > bValue ? 1 : -1;
     }
   });
-}; 
+};

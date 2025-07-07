@@ -9,6 +9,7 @@ import ScrollToTopButton, {
   ScrollToTop,
 } from "./components/common/ScrollToTop";
 import SEOBreadcrumbs from "./components/common/SEOBreadcrumbs";
+import { LanguageWrapper } from "./components/common/LanguageWrapper";
 
 // Direct imports for instant navigation - no lazy loading
 import Home from "./pages/Home";
@@ -63,91 +64,182 @@ function App() {
       <SEOBreadcrumbs />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/bis-qco-updates" element={<Notification />} />
-        <Route
-          path="/bis-qco-updates/:notificationName"
-          element={<NotificationDetail />}
-        />
-        <Route path="/ministry-updates" element={<MinistryUpdates />} />
-        <Route path="/international-audits" element={<InternationalAudits />} />
-        <Route path="/seminars-and-exhibitions" element={<Exhibition />} />
-        <Route path="/clients" element={<AllClients />} />
-        <Route path="/sitemap" element={<Sitemap />} />
+        {/* Default routes without language prefix (English) */}
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<ContactUs />} />
+          <Route path="bis-qco-updates" element={<Notification />} />
+          <Route
+            path="bis-qco-updates/:notificationName"
+            element={<NotificationDetail />}
+          />
+          <Route path="ministry-updates" element={<MinistryUpdates />} />
+          <Route
+            path="international-audits"
+            element={<InternationalAudits />}
+          />
+          <Route path="seminars-and-exhibitions" element={<Exhibition />} />
+          <Route path="clients" element={<AllClients />} />
+          <Route path="sitemap" element={<Sitemap />} />
 
-        {/* Services Pages */}
-        <Route path="/cdsco-registration-certification" element={<CDSCO />} />
-        <Route path="/schemeX" element={<SchemeX />} />
-        <Route
-          path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-          element={<BISFM />}
-        />
-        <Route
-          path="/a-guide-on-how-to-obtain-epr-certificate"
-          element={<EPRService />}
-        />
-        <Route
-          path="/what-is-bis-certificate-indian-bis"
-          element={<BISCertification />}
-        />
-        <Route
-          path="/a-guide-on-how-to-obtain-lmpc-certificate"
-          element={<LMPC />}
-        />
-        <Route
-          path="/epr-certificate-for-plastic-waste-management-pwm"
-          element={<PlasticWaste />}
-        />
-        <Route
-          path="/what-is-legal-metrology-or-lmpc-certificate"
-          element={<LegalMetrology />}
-        />
-        <Route
-          path="/a-guide-to-bis-certification-indian-bis"
-          element={<ISIMark />}
-        />
-        <Route
-          path="/epr-certificate-for-battery-waste-management-bwm"
-          element={<BatteryWaste />}
-        />
-        <Route
-          path="/what-is-crs-bis-or-crs-registration"
-          element={<CRSRegistration />}
-        />
-        <Route
-          path="/information-about-peso-certification-peso-license-india"
-          element={<Peso />}
-        />
-        <Route
-          path="/information-about-tec-certificate-mtcte"
-          element={<Tec />}
-        />
-        <Route
-          path="/information-about-wpc-certificate-eta-approval"
-          element={<WPC />}
-        />
-        <Route
-          path="/restriction-of-hazardous-substance-rohs-certificate"
-          element={<ROHS />}
-        />
-        <Route path="/bee-certification" element={<BEE />} />
-        <Route path="/ce-certification" element={<CECertification />} />
-        <Route path="/emi-emc-certification" element={<EMIEMC />} />
-        <Route path="/cb-certification" element={<CBCertification />} />
-        <Route path="/lhscable" element={<LHSCable />} />
-        {/* Service Page End */}
+          {/* Services Pages */}
+          <Route path="cdsco-registration-certification" element={<CDSCO />} />
+          <Route path="schemeX" element={<SchemeX />} />
+          <Route
+            path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            element={<BISFM />}
+          />
+          <Route
+            path="a-guide-on-how-to-obtain-epr-certificate"
+            element={<EPRService />}
+          />
+          <Route
+            path="what-is-bis-certificate-indian-bis"
+            element={<BISCertification />}
+          />
+          <Route
+            path="a-guide-on-how-to-obtain-lmpc-certificate"
+            element={<LMPC />}
+          />
+          <Route
+            path="epr-certificate-for-plastic-waste-management-pwm"
+            element={<PlasticWaste />}
+          />
+          <Route
+            path="what-is-legal-metrology-or-lmpc-certificate"
+            element={<LegalMetrology />}
+          />
+          <Route
+            path="a-guide-to-bis-certification-indian-bis"
+            element={<ISIMark />}
+          />
+          <Route
+            path="epr-certificate-for-battery-waste-management-bwm"
+            element={<BatteryWaste />}
+          />
+          <Route
+            path="what-is-crs-bis-or-crs-registration"
+            element={<CRSRegistration />}
+          />
+          <Route
+            path="information-about-peso-certification-peso-license-india"
+            element={<Peso />}
+          />
+          <Route
+            path="information-about-tec-certificate-mtcte"
+            element={<Tec />}
+          />
+          <Route
+            path="information-about-wpc-certificate-eta-approval"
+            element={<WPC />}
+          />
+          <Route
+            path="restriction-of-hazardous-substance-rohs-certificate"
+            element={<ROHS />}
+          />
+          <Route path="bee-certification" element={<BEE />} />
+          <Route path="ce-certification" element={<CECertification />} />
+          <Route path="emi-emc-certification" element={<EMIEMC />} />
+          <Route path="cb-certification" element={<CBCertification />} />
+          <Route path="lhscable" element={<LHSCable />} />
 
-        <Route path="/webinar" element={<Webinar />} />
-        <Route path="/videos-about-bis-certification" element={<Videos />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="webinar" element={<Webinar />} />
+          <Route path="videos-about-bis-certification" element={<Videos />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="404" element={<Error404 />} />
+        </Route>
 
-        {/* Explicit 404 route */}
-        <Route path="/404" element={<Error404 />} />
+        {/* Language-specific routes for other languages */}
+        <Route path="/:lang" element={<LanguageWrapper />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<ContactUs />} />
+          <Route path="bis-qco-updates" element={<Notification />} />
+          <Route
+            path="bis-qco-updates/:notificationName"
+            element={<NotificationDetail />}
+          />
+          <Route path="ministry-updates" element={<MinistryUpdates />} />
+          <Route
+            path="international-audits"
+            element={<InternationalAudits />}
+          />
+          <Route path="seminars-and-exhibitions" element={<Exhibition />} />
+          <Route path="clients" element={<AllClients />} />
+          <Route path="sitemap" element={<Sitemap />} />
 
-        {/* Catch-all route - shows 404 error page for unmatched URLs */}
+          {/* Services Pages */}
+          <Route path="cdsco-registration-certification" element={<CDSCO />} />
+          <Route path="schemeX" element={<SchemeX />} />
+          <Route
+            path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            element={<BISFM />}
+          />
+          <Route
+            path="a-guide-on-how-to-obtain-epr-certificate"
+            element={<EPRService />}
+          />
+          <Route
+            path="what-is-bis-certificate-indian-bis"
+            element={<BISCertification />}
+          />
+          <Route
+            path="a-guide-on-how-to-obtain-lmpc-certificate"
+            element={<LMPC />}
+          />
+          <Route
+            path="epr-certificate-for-plastic-waste-management-pwm"
+            element={<PlasticWaste />}
+          />
+          <Route
+            path="what-is-legal-metrology-or-lmpc-certificate"
+            element={<LegalMetrology />}
+          />
+          <Route
+            path="a-guide-to-bis-certification-indian-bis"
+            element={<ISIMark />}
+          />
+          <Route
+            path="epr-certificate-for-battery-waste-management-bwm"
+            element={<BatteryWaste />}
+          />
+          <Route
+            path="what-is-crs-bis-or-crs-registration"
+            element={<CRSRegistration />}
+          />
+          <Route
+            path="information-about-peso-certification-peso-license-india"
+            element={<Peso />}
+          />
+          <Route
+            path="information-about-tec-certificate-mtcte"
+            element={<Tec />}
+          />
+          <Route
+            path="information-about-wpc-certificate-eta-approval"
+            element={<WPC />}
+          />
+          <Route
+            path="restriction-of-hazardous-substance-rohs-certificate"
+            element={<ROHS />}
+          />
+          <Route path="bee-certification" element={<BEE />} />
+          <Route path="ce-certification" element={<CECertification />} />
+          <Route path="emi-emc-certification" element={<EMIEMC />} />
+          <Route path="cb-certification" element={<CBCertification />} />
+          <Route path="lhscable" element={<LHSCable />} />
+
+          <Route path="webinar" element={<Webinar />} />
+          <Route path="videos-about-bis-certification" element={<Videos />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="404" element={<Error404 />} />
+          <Route path="*" element={<Error404 />} />
+        </Route>
+
+        {/* Catch-all route for 404 */}
         <Route path="*" element={<Error404 />} />
       </Routes>
 

@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg";
 import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
 
@@ -191,6 +192,8 @@ export const BISFM = () => {
 
 // BIS Hero Section
 const BISFMHero = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
@@ -211,21 +214,20 @@ const BISFMHero = () => {
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
-              Certified Expertise
+              {t("hero.badge")}
             </span>
           </div>
 
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              BIS Certificate
+              {t("hero.titlePart1")}
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
-            For Foreign Manufacturers
+            {t("hero.titlePart2")}
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Foreign manufacturers need ISI mark for exports to India. Covers
-            600+ mandatory & 20,000+ voluntary products.
+            {t("hero.description")}
           </p>
 
           <nav className="flex items-center -mt-2">
@@ -245,7 +247,7 @@ const BISFMHero = () => {
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
-                View Services
+                {t("hero.viewServices")}
               </span>
             </div>
           </nav>
@@ -380,8 +382,9 @@ export const BISFMIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -431,10 +434,11 @@ export const BISFMIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -454,18 +458,20 @@ export const BISFMIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}

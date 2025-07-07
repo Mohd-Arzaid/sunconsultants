@@ -7,6 +7,7 @@ import "non.geist";
 // import { Toaster } from 'sonner'
 import { Toaster } from "@/components/ui/toaster";
 import { HelmetProvider } from "react-helmet-async";
+import "./i18n/i18n.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

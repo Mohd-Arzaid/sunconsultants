@@ -12,8 +12,8 @@ import Footer from "@/common/Footer";
 import { useParams, Navigate } from "react-router-dom";
 import { LatestBlog } from "@/components/manual/CDSCOContentRight";
 import { notifications } from "../data/notificationsData.js";
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet-async';
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet-async";
 import { Services } from "@/components/manual/Services";
 import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 import { getUrlSlug, getNotificationCanonicalUrl } from "@/utils/urlUtils";
@@ -24,7 +24,7 @@ const NotificationDetail = () => {
   // Find the notification based on the URL slug
   const notification = notifications.find((notif) => {
     const slug = getUrlSlug(notif.title);
-    return slug === notificationName.replace('bis-certificate-for-', '');
+    return slug === notificationName.replace("bis-certificate-for-", "");
   });
 
   // If notification not found, redirect to 404 page
@@ -53,8 +53,8 @@ export default NotificationDetail;
 
 const NotificationDetailLeft = ({ notification }) => {
   // Base URL for canonical links
-  const baseUrl = 'https://bis-certifications.com';
-  
+  const baseUrl = "https://bis-certifications.com";
+
   // Generate canonical URL
   const canonicalUrl = getNotificationCanonicalUrl(notification.title);
 
@@ -79,16 +79,16 @@ const NotificationDetailLeft = ({ notification }) => {
     <>
       {/* SEO Breadcrumbs - Structured Data Only */}
       <SEOBreadcrumbs customTitle={seoData.title} />
-      
+
       {/* SEO Meta Tags */}
       <Helmet>
         <title>{seoData.title}</title>
         <meta name="description" content={seoData.metaDescription} />
         <meta name="keywords" content={seoData.metaKeywords} />
-        
+
         {/* Canonical URL */}
         <link rel="canonical" href={canonicalUrl} />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={seoData.ogTitle} />
         <meta property="og:description" content={seoData.ogDescription} />
@@ -96,15 +96,18 @@ const NotificationDetailLeft = ({ notification }) => {
         <meta property="og:url" content={seoData.url} />
         <meta property="og:site_name" content={seoData.websiteName} />
         <meta property="og:image" content={seoData.imageUrl} />
-        <meta property="article:published_time" content={seoData.publishedTime} />
+        <meta
+          property="article:published_time"
+          content={seoData.publishedTime}
+        />
         <meta property="article:modified_time" content={seoData.modifiedTime} />
-        
+
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seoData.twitterTitle} />
         <meta name="twitter:description" content={seoData.twitterDescription} />
         <meta name="twitter:image" content={seoData.imageUrl} />
-        
+
         {/* Additional SEO Meta Tags */}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
@@ -181,14 +184,16 @@ const NotificationDetailLeft = ({ notification }) => {
         {/* Notification Content */}
         <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            Important Update on Mandatory BIS Certification for Manufacturers and
-            Importers of{" "}
+            Important Update on Mandatory BIS Certification for Manufacturers
+            and Importers of{" "}
             <span className="font-medium text-[#1e1e1e] underline decoration-blue-400  decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
               {notification.subHeading}
             </span>{" "}
           </h2>
 
-          <p className="text-gray-600 text-base font-geist mb-4">Dear Reader,</p>
+          <p className="text-gray-600 text-base font-geist mb-4">
+            Dear Reader,
+          </p>
 
           <p className="text-gray-600 text-base font-geist mb-4">
             <span className="font-medium text-[#1e1e1e] underline decoration-blue-400  decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
@@ -196,9 +201,9 @@ const NotificationDetailLeft = ({ notification }) => {
             </span>{" "}
             has prepared a Quality Control Order in respect of{" "}
             {notification.subHeading} in Consultation with BIS in order to bring
-            it under mandatory BIS Certification keeping in view the Human Safety
-            and for ensuring the optimum quality of Product. The QCO for above
-            said Product is attached below :
+            it under mandatory BIS Certification keeping in view the Human
+            Safety and for ensuring the optimum quality of Product. The QCO for
+            above said Product is attached below :
           </p>
 
           <div className="mb-4">
@@ -207,8 +212,8 @@ const NotificationDetailLeft = ({ notification }) => {
               {notification.ISNumber} is as below :
             </h3>
             <p className="text-base text-gray-600 mb-2 font-geist">
-              The Notification was Released on {notification.date} and It will be
-              Implemented from :
+              The Notification was Released on {notification.date} and It will
+              be Implemented from :
             </p>
             <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1">
               <li>
@@ -220,15 +225,15 @@ const NotificationDetailLeft = ({ notification }) => {
                 between 5 to 50 crores)
               </li>
               <li>
-                {notification.Date3} for Micro enterprises (Annual turnover {"<"}5
-                crores)
+                {notification.Date3} for Micro enterprises (Annual turnover{" "}
+                {"<"}5 crores)
               </li>
             </ul>
           </div>
 
           <p className="text-gray-600 text-base font-geist mb-4">
-            Please review the attached document, If you have any questions or need
-            assistance, Our Team is here to Help.
+            Please review the attached document, If you have any questions or
+            need assistance, Our Team is here to Help.
           </p>
         </div>
 

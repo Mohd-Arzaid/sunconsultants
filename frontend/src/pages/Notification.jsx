@@ -5,36 +5,59 @@ import { ChevronLeft, ChevronRight, FileText, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { notifications } from "../data/notificationsData.js";
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet-async';
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet-async";
 import { getNotificationDetailUrl } from "@/utils/urlUtils";
 
 const Notification = () => {
-  const baseUrl = 'https://bis-certifications.com';
+  const baseUrl = "https://bis-certifications.com";
   const currentUrl = `${baseUrl}/bis-qco-updates`;
 
   return (
     <>
       <Helmet>
-        <title>Latest BIS Notifications & QCO Updates - Sun Certifications</title>
-        <meta name="description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
-        
+        <title>
+          Latest BIS Notifications & QCO Updates - Sun Certifications
+        </title>
+        <meta
+          name="description"
+          content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements."
+        />
+
         {/* Canonical URL */}
         <link rel="canonical" href={currentUrl} />
-        
+
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Latest BIS Notifications & QCO Updates - Sun Certifications" />
-        <meta property="og:description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
+        <meta
+          property="og:title"
+          content="Latest BIS Notifications & QCO Updates - Sun Certifications"
+        />
+        <meta
+          property="og:description"
+          content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements."
+        />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:site_name" content="Sun Certifications India" />
-        <meta property="og:image" content={`${baseUrl}/images/bis-certification-banner.jpg`} />
-        
+        <meta
+          property="og:image"
+          content={`${baseUrl}/images/bis-certification-banner.jpg`}
+        />
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Latest BIS Notifications & QCO Updates - Sun Certifications" />
-        <meta name="twitter:description" content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements." />
-        <meta name="twitter:image" content={`${baseUrl}/images/bis-certification-banner.jpg`} />
+        <meta
+          name="twitter:title"
+          content="Latest BIS Notifications & QCO Updates - Sun Certifications"
+        />
+        <meta
+          name="twitter:description"
+          content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements."
+        />
+        <meta
+          name="twitter:image"
+          content={`${baseUrl}/images/bis-certification-banner.jpg`}
+        />
 
         {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
@@ -134,7 +157,44 @@ const NotificationMainContent = () => {
 };
 
 const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
-  const filteredNotifications = notifications.filter((notification) => {
+  // Function to parse date string into Date object
+  const parseDate = (dateString) => {
+    try {
+      // Handle different date formats
+      const cleanDate = dateString.trim();
+
+      // Handle formats like "13 February 2025", "January 6, 2025", etc.
+      const date = new Date(cleanDate);
+
+      // If date is invalid, try alternative parsing
+      if (isNaN(date.getTime())) {
+        // Try to parse formats like "13 February 2025"
+        const parts = cleanDate.split(" ");
+        if (parts.length === 3) {
+          const day = parts[0];
+          const month = parts[1];
+          const year = parts[2];
+          const reformattedDate = `${month} ${day}, ${year}`;
+          return new Date(reformattedDate);
+        }
+      }
+
+      return date;
+    } catch (error) {
+      console.warn("Failed to parse date:", dateString);
+      return new Date(0); // Return epoch date as fallback
+    }
+  };
+
+  // Sort notifications by date in descending order (newest first)
+  const sortedNotifications = [...notifications].sort((a, b) => {
+    const dateA = parseDate(a.date);
+    const dateB = parseDate(b.date);
+    return dateB.getTime() - dateA.getTime(); // Descending order
+  });
+
+  // Filter sorted notifications based on search query
+  const filteredNotifications = sortedNotifications.filter((notification) => {
     const searchLower = searchQuery.toLowerCase();
     return (
       notification.title.toLowerCase().includes(searchLower) ||
@@ -174,8 +234,8 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
                 No notifications found matching your Search Criteria.
               </p>
               <p className="text-gray-600 font-geist text-base sm:text-lg">
-                Don&apos;t worry! We&apos;re here to help you find what you&apos;re looking
-                for.
+                Don&apos;t worry! We&apos;re here to help you find what
+                you&apos;re looking for.
               </p>
 
               <div className="mt-4 sm:mt-5 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -235,17 +295,17 @@ const NotificationCardItem = ({
   const getUrlSlug = (title) => {
     // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
     let cleanTitle = title
-      .replace(/^BIS\s+(certification|notification)\s+for\s+/i, '') // Remove "BIS certification for" or "BIS Notification for"
-      .replace(/^QCO\s+notification\s+for\s+/i, '') // Remove "QCO notification for"
+      .replace(/^BIS\s+(certification|notification)\s+for\s+/i, "") // Remove "BIS certification for" or "BIS Notification for"
+      .replace(/^QCO\s+notification\s+for\s+/i, "") // Remove "QCO notification for"
       .trim();
 
     // Convert to kebab-case
     return cleanTitle
       .toLowerCase()
-      .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
-      .replace(/\s+/g, "-")      // Replace spaces with hyphens
-      .replace(/-+/g, "-")       // Replace multiple hyphens with single hyphen
-      .trim();                   // Remove leading/trailing spaces
+      .replace(/[^\w\s-]/g, "") // Remove special characters except spaces and hyphens
+      .replace(/\s+/g, "-") // Replace spaces with hyphens
+      .replace(/-+/g, "-") // Replace multiple hyphens with single hyphen
+      .trim(); // Remove leading/trailing spaces
   };
 
   const slug = getUrlSlug(title);
@@ -291,10 +351,7 @@ const NotificationCardItem = ({
             </span>
           </a>
 
-          <Link 
-            to={detailUrl}
-            className="relative"
-          >
+          <Link to={detailUrl} className="relative">
             <Button
               variant="outline"
               className="transition-all duration-200"
@@ -331,8 +388,39 @@ const Pagination = ({
   itemsPerPage,
   searchQuery,
 }) => {
-  // Filter notifications based on search query to get correct total count
-  const filteredNotifications = notifications.filter((notification) => {
+  // Function to parse date string into Date object (same as above)
+  const parseDate = (dateString) => {
+    try {
+      const cleanDate = dateString.trim();
+      const date = new Date(cleanDate);
+
+      if (isNaN(date.getTime())) {
+        const parts = cleanDate.split(" ");
+        if (parts.length === 3) {
+          const day = parts[0];
+          const month = parts[1];
+          const year = parts[2];
+          const reformattedDate = `${month} ${day}, ${year}`;
+          return new Date(reformattedDate);
+        }
+      }
+
+      return date;
+    } catch (error) {
+      console.warn("Failed to parse date:", dateString);
+      return new Date(0);
+    }
+  };
+
+  // Sort notifications by date in descending order (newest first)
+  const sortedNotifications = [...notifications].sort((a, b) => {
+    const dateA = parseDate(a.date);
+    const dateB = parseDate(b.date);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  // Filter sorted notifications based on search query to get correct total count
+  const filteredNotifications = sortedNotifications.filter((notification) => {
     if (!searchQuery) return true;
     const searchLower = searchQuery.toLowerCase();
     return (
@@ -341,7 +429,7 @@ const Pagination = ({
       notification.tagType.toLowerCase().includes(searchLower)
     );
   });
-  
+
   const totalPages = Math.ceil(filteredNotifications.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
@@ -377,10 +465,11 @@ const Pagination = ({
           <button
             key={index + 1}
             onClick={() => handlePageChange(index + 1)}
-            className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${currentPage === index + 1
-              ? "bg-[#1A8781] text-white"
-              : "text-gray-700 hover:bg-gray-200"
-              }`}
+            className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${
+              currentPage === index + 1
+                ? "bg-[#1A8781] text-white"
+                : "text-gray-700 hover:bg-gray-200"
+            }`}
             aria-label={`Page ${index + 1}`}
             aria-current={currentPage === index + 1 ? "page" : undefined}
           >
