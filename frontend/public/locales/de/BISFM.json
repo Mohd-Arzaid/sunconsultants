@@ -122,5 +122,480 @@
         "description": "Erforderlich von RBI-zugelassener indischer Bank"
       }
     ]
+  },
+  "standardization": {
+    "title": "Standardisierung",
+    "mainHeading": "Was ist das indische BIS und warum ist es wichtig?",
+    "intro": "Das indische BIS ist das Gütesiegel für Qualität und Sicherheit, das vom Bureau of Indian Standards (BIS) vergeben wird. Heute wird das ISI-Zeichen ausschließlich für Produkte verwendet, die den indischen Standards im Rahmen des offiziellen BIS-Zertifizierungssystems entsprechen.",
+    "process": "Damit ein Produkt das indische BIS- oder ISI-Zeichen tragen darf, muss es einen strengen BIS-Zertifizierungsprozess durchlaufen, einschließlich Labortests, Werksinspektion, Dokumentenprüfung und Konformitätsprüfung nach BIS-Richtlinien.",
+    "legalStandingTitle": "Rechtlicher Status der BIS-Zertifizierung in Indien",
+    "legalStandingDesc": "Die BIS-Lizenz ist nicht nur ein Marketing-Instrument, sondern eine gesetzliche Anforderung für alle Produkte, die unter das obligatorische BIS-Zertifizierungssystem fallen.",
+    "bisActTitle": "Gemäß dem BIS-Gesetz von 2016:",
+    "bisActPoints": [
+      "Die Verwendung des ISI-Zeichens ohne gültige BIS-Lizenz ist gesetzlich strafbar.",
+      "Zertifizierte Produkte müssen sowohl das ISI-Logo als auch die CM/L-Nummer (Certificate of Manufacturing License) aufweisen.",
+      "Verstöße können zu Produktverboten, Geldstrafen oder sogar strafrechtlicher Verfolgung führen."
+    ],
+    "isiLogoTitle": "Das ISI-Logo besteht typischerweise aus:",
+    "isiLogoPoints": [
+      "Den stilisierten Buchstaben \"ISI\" in einem Rechteck mit abgerundeten Ecken",
+      "Der CM/L-Nummer unter oder neben dem Zeichen",
+      "Der Referenznummer des indischen Standards (z.B. IS 302 für Elektrogeräte)"
+    ],
+    "placementTitle": "Die Platzierung muss:",
+    "placementPoints": [
+      "Dauerhaft und deutlich sichtbar auf dem Produkt sein",
+      "Auf der Verpackung, wenn nicht auf dem Produkt möglich",
+      "In Benutzerhandbüchern bei bestimmten Produktkategorien"
+    ],
+    "productCategoriesTitle": "Produktkategorien, die eine BIS-Zertifizierung erfordern",
+    "productCategoriesDesc": "Mehr als 600 Produkte benötigen das ISI-Zeichen im Rahmen des obligatorischen Registrierungssystems Indiens. Beispiele sind:",
+    "productTable": {
+      "headers": {
+        "category": "Produktkategorie",
+        "code": "IS-Code",
+        "status": "Status"
+      },
+      "rows": [
+        {
+          "category": "Elektrische Geräte",
+          "code": "IS 302",
+          "status": "Obligatorisch"
+        },
+        {
+          "category": "Stahl & Eisen",
+          "code": "IS 2062",
+          "status": "Obligatorisch"
+        },
+        {
+          "category": "Lebensmittelbehälter",
+          "code": "IS 10146",
+          "status": "Obligatorisch"
+        },
+        {
+          "category": "Helme",
+          "code": "IS 4151",
+          "status": "Obligatorisch"
+        },
+        {
+          "category": "Zement",
+          "code": "IS 1489",
+          "status": "Obligatorisch"
+        }
+      ]
+    },
+    "productTableNote": "Jede Kategorie erfordert die Einhaltung des entsprechenden indischen Standards, der während des BIS-Zertifizierungsprozesses geprüft wird. Die vollständige Liste der Produkte finden Sie unter",
+    "clickHere": "Hier klicken",
+    "globalCertTitle": "Indisches BIS im Vergleich zu anderen globalen Zertifizierungen",
+    "globalCertDesc": "Vergleichen wir das ISI-Zeichen mit anderen internationalen Symbolen:",
+    "globalCertTable": {
+      "headers": {
+        "mark": "Zeichen",
+        "country": "Land",
+        "mandatory": "Obligatorisch?",
+        "focus": "Schwerpunkt"
+      },
+      "rows": [
+        {
+          "mark": "ISI",
+          "country": "Indien",
+          "mandatory": "Ja",
+          "focus": "Produktsicherheit und Qualität"
+        },
+        {
+          "mark": "CE",
+          "country": "EU",
+          "mandatory": "Ja (für bestimmte Kategorien)",
+          "focus": "Gesundheit, Sicherheit, Umwelt"
+        },
+        {
+          "mark": "UL",
+          "country": "USA",
+          "mandatory": "Nein",
+          "focus": "Sicherheitsstandards (freiwillig)"
+        },
+        {
+          "mark": "CCC",
+          "country": "China",
+          "mandatory": "Ja",
+          "focus": "Sicherheit von Elektrogeräten"
+        }
+      ]
+    },
+    "globalCertNote": "Im Gegensatz zu UL (freiwillig) oder CE (regionsspezifisch) ist das ISI-Zeichen im Rahmen des BIS-Registrierungssystems sowohl obligatorisch als auch lokal durchgesetzt.",
+    "importTitle": "Ist die BIS-Zertifizierung oder BIS-Lizenz für den Import nach Indien obligatorisch?",
+    "mandatoryNatureTitle": "Obligatorische Natur der BIS-Zertifizierung",
+    "mandatoryNatureDesc": "Die indische Regierung hat es für bestimmte Produkte verpflichtend gemacht, vom Bureau of Indian Standards (BIS) zertifiziert zu werden, bevor sie importiert, verkauft oder in Indien vertrieben werden dürfen. Diese Verpflichtung ergibt sich aus:",
+    "mandatoryNaturePoints": [
+      "Verbraucherschutzziele",
+      "Harmonisierung mit indischen Standards",
+      "Nationale Sicherheitsvorschriften"
+    ],
+    "importNote": "Wenn ein Produkt unter die obligatorische Anforderung des indischen BIS fällt, muss es ein BIS-Zertifikat haben und das ISI-Zeichen tragen, bevor es den indischen Zoll passieren kann.",
+    "onlyImportsTitle": "Ist die BIS-Zertifizierung nur für Importe erforderlich?",
+    "onlyImportsDesc": "Nein. Die BIS-Zertifizierung ist obligatorisch für:",
+    "onlyImportsPoints": [
+      "Inländische Hersteller, die regulierte Produkte produzieren",
+      "Ausländische Hersteller, die regulierte Produkte nach Indien exportieren"
+    ],
+    "onlyImportsNote1": "Ob Sie in Indien oder im Ausland ansässig sind, wenn Ihr Produkt auf der obligatorischen Liste steht, muss es eine BIS-Lizenz haben und das ISI-Zeichen tragen.",
+    "onlyImportsNote2": "Der indische Zoll verwendet jetzt fortschrittliche Datensysteme, um nicht konforme Sendungen automatisch zu kennzeichnen. Alle Waren in regulierten Kategorien werden auf das Vorhandensein eines gültigen BIS-Zertifikats geprüft.",
+    "exemptionsTitle": "Ausnahmen von der BIS-Zertifizierung",
+    "exemptionsDesc": "Die BIS-Zertifizierung ist in den meisten Fällen obligatorisch, aber Ausnahmen können in bestimmten Szenarien gewährt werden:",
+    "exemptionsPoints": [
+      "Für F&E-Prototypen oder Testmuster",
+      "Für persönliche Importe in begrenzter Menge"
+    ],
+    "exemptionsNote": "Diese sind jedoch selten und erfordern formelle Ausnahmebriefe von BIS oder zuständigen Ministerien.",
+    "checkProductTitle": "Wie erfahre ich, ob mein Produkt ein BIS-Zertifikat oder eine BIS-Lizenz benötigt?",
+    "checkProductDesc": "Klicken Sie hier, um zu prüfen, ob Ihr Produkt unter das obligatorische indische BIS-Zertifizierungssystem fällt."
+  },
+  "representation": {
+    "title": "Vertretung",
+    "mainHeading": "Rolle des autorisierten indischen Vertreters (AIR) bei der BIS-Zertifizierung",
+    "whatIsAIR": {
+      "title": "Was ist ein autorisierter indischer Vertreter (AIR)?",
+      "description": "Ein autorisierter indischer Vertreter (AIR) ist ein wichtiger Vermittler, der von einem ausländischen Hersteller ernannt wird, der eine BIS-Zertifizierung im Rahmen des FMCS-Registrierungssystems anstrebt. Der AIR dient als offizieller Verbindungsmann zwischen dem Bureau of Indian Standards (BIS) und dem Hersteller und gewährleistet eine reibungslose Kommunikation, Dokumentenabwicklung und Koordination des Zertifizierungsprozesses."
+    },
+    "legalRequirement": {
+      "title": "Gesetzliche Anforderung für die AIR-Ernennung",
+      "description": "Gemäß den BIS-Richtlinien muss jeder ausländische Hersteller, der keine eingetragene Niederlassung in Indien hat, einen AIR ernennen. Diese Anforderung stellt sicher, dass BIS einen zuverlässigen, erreichbaren Ansprechpartner innerhalb der indischen Gerichtsbarkeit hat."
+    },
+    "responsibilities": {
+      "title": "Hauptverantwortlichkeiten des AIR",
+      "description": "Die Rolle des AIR erstreckt sich über den gesamten BIS-Zertifizierungsprozess, von der Dokumentation und Antragseinreichung bis zur Audit-Koordination und Nachzertifizierungs-Compliance:",
+      "table": {
+        "headers": {
+          "responsibility": "Verantwortlichkeit",
+          "description": "Beschreibung"
+        },
+        "rows": [
+          {
+            "responsibility": "Kommunikation",
+            "description": "Fungiert als Ansprechpartner für BIS-Beamte und Abteilungen"
+          },
+          {
+            "responsibility": "Antragsunterstützung",
+            "description": "Unterstützt beim Ausfüllen von Formularen, Zusammenstellen von Dokumenten und Einreichen des Antrags"
+          },
+          {
+            "responsibility": "Audit-Koordination",
+            "description": "Koordiniert Werksinspektionstermine und beantwortet Prüferfragen"
+          },
+          {
+            "responsibility": "Compliance-Überwachung",
+            "description": "Stellt sicher, dass alle Prüf- und Zertifizierungsaktivitäten den BIS-Normen entsprechen"
+          },
+          {
+            "responsibility": "Erneuerungsmanagement",
+            "description": "Überwacht die BIS-Lizenzerneuerung, Dokumentationsaktualisierungen und Gebührenzahlungen"
+          }
+        ]
+      }
+    },
+    "eligibility": {
+      "title": "Zulassungskriterien für AIR",
+      "description": "Um als AIR zu fungieren, muss eine Person oder Organisation:",
+      "points": [
+        "Indischer Staatsbürger oder rechtlich registriertes Unternehmen in Indien sein",
+        "Eine physische Adresse in Indien mit gültiger Postleitzahl haben",
+        "Fähig sein, fließend in Englisch und lokalen Sprachen zu kommunizieren",
+        "Das Zertifizierungssystem, BIS-Dokumentationsprotokolle und regulatorische Erwartungen verstehen",
+        "In der Lage sein, zeitnah auf Audits und Korrespondenz im Namen des ausländischen Herstellers zu reagieren"
+      ]
+    },
+    "importance": {
+      "title": "Warum die AIR-Rolle wichtig ist",
+      "description": "Der AIR gewährleistet Kontinuität und Verantwortlichkeit während des gesamten BIS-Zertifizierungsprozesses. Ohne einen AIR:",
+      "points": [
+        "Hat BIS keine Zuständigkeit, gegen einen nicht konformen ausländischen Hersteller vorzugehen",
+        "Können zeitkritische Anfragen und Audit-Termine verzögert werden",
+        "Kann der Zertifizierungsprozess stecken bleiben, widerrufen oder abgelehnt werden"
+      ],
+      "conclusion": "Ein proaktiver und erfahrener AIR erhöht die Chancen auf eine erfolgreiche BIS-Zertifizierung deutlich."
+    }
+  },
+  "document": {
+    "title": "Dokument",
+    "mainHeading": "Erforderliche Dokumentation für die BIS-Zertifizierung im Rahmen des FMCS",
+    "table": {
+      "headers": {
+        "documentType": "Dokumententyp",
+        "purpose": "Zweck"
+      },
+      "rows": [
+        {
+          "type": "FMCS-Antragsformular",
+          "purpose": "Offizieller Antrag auf Zertifizierung"
+        },
+        {
+          "type": "Liste der Fertigungsausrüstung",
+          "purpose": "Zeigt Produktionskapazitäten"
+        },
+        {
+          "type": "Liste der Rohmaterialien",
+          "purpose": "Gewährleistet die Qualität der Eingangsmaterialien"
+        },
+        {
+          "type": "Liste der Prüfausrüstung",
+          "purpose": "Bewertet die Prüf- und Compliance-Bereitschaft"
+        },
+        {
+          "type": "Kalibrierungszertifikate",
+          "purpose": "Belegt die Genauigkeit der Prüfausrüstung"
+        },
+        {
+          "type": "Fabrik-Layout & Prozessablauf",
+          "purpose": "Hilft Prüfern, die Fertigungsstufen zu verstehen"
+        },
+        {
+          "type": "Prüfzertifikate",
+          "purpose": "Belegt die Qualität von Rohmaterialien und Endprodukt"
+        },
+        {
+          "type": "Qualitätskontrollprofil",
+          "purpose": "Überprüft Mitarbeiterqualifikationen und SOPs"
+        },
+        {
+          "type": "Zahlungsnachweis",
+          "purpose": "Bestätigt die Gebührenzahlung an BIS"
+        },
+        {
+          "type": "Leistungsbankgarantie",
+          "purpose": "Dient als finanzielle Absicherung für BIS"
+        }
+      ]
+    },
+    "detailedBreakdown": {
+      "title": "Detaillierte Aufschlüsselung der für die indische BIS-Zertifizierung erforderlichen Dokumente",
+      "fmcsForm": {
+        "title": "1. FMCS-Antragsformular",
+        "description": "Dieses Dokument enthält allgemeine Angaben zum ausländischen Hersteller, einschließlich:",
+        "points": [
+          "Produktdetails (Typ, Kategorie, Modell)",
+          "Beabsichtigter indischer Standard",
+          "Kontaktdaten von Fabrik und AIR",
+          "Fertigungskapazität und Prüfumfang"
+        ]
+      },
+      "manufacturingEquipment": {
+        "title": "2. Liste der Fertigungsausrüstung",
+        "points": [
+          "Maschinenname und Marke",
+          "Produktionskapazität",
+          "Kontaktdaten von Fabrik und AIR",
+          "Wartungsaufzeichnungen (falls zutreffend)"
+        ]
+      },
+      "rawMaterials": {
+        "title": "3. Liste der Rohmaterialien",
+        "points": [
+          "Beschaffungsquelle",
+          "Qualitäten und Spezifikationen",
+          "Prüfprotokoll (falls vorhanden)"
+        ]
+      },
+      "testingEquipment": {
+        "title": "4. Liste der Prüfausrüstung",
+        "points": [
+          "Name und Hersteller der Ausrüstung",
+          "Übereinstimmung mit Prüfparametern nach indischem Standard",
+          "Standort innerhalb der Fabrik"
+        ]
+      },
+      "calibration": {
+        "title": "5. Kalibrierungszertifikate",
+        "points": [
+          "Datum der letzten Kalibrierung",
+          "Gültigkeitsdauer",
+          "Zertifikatsnummer"
+        ]
+      },
+      "factoryLayout": {
+        "title": "6. Fabrik-Layout & Prozessablaufdiagramm",
+        "points": [
+          "Ein- und Ausgangspunkte",
+          "Prüflaborbereiche",
+          "QS-Kontrollpunkte",
+          "Lager- und Verpackungsbereiche"
+        ]
+      },
+      "bankGuarantee": {
+        "title": "7. Leistungsbankgarantie",
+        "description": "Ausgestellt von einer RBI-zugelassenen indischen Bank, deckt die Leistungsbankgarantie (PBG) die Haftung bei Nichteinhaltung ab. Dieses Dokument muss:",
+        "points": [
+          "Auf offiziellem Bankbriefkopf sein",
+          "Garantiezeitraum und -betrag angeben",
+          "Unterschrieben und gesiegelt sein"
+        ]
+      },
+      "commonMistakes": {
+        "title": "Häufige Dokumentationsfehler, die bei der Beantragung des BIS-Zertifikats oder des indischen BIS zu vermeiden sind",
+        "points": [
+          "Diskrepanz zwischen Formulardaten und Fabrikrealität",
+          "Einreichen abgelaufener Kalibrierungsberichte",
+          "Fehlender BIS-Gebührennachweis",
+          "Unvollständige oder vage Prozessabläufe",
+          "Inkonsistenzen bei der Namensgebung in Dokumenten"
+        ]
+      }
+    }
+  },
+  "process": {
+    "title": "Prozess",
+    "mainHeading": "Schrittweiser BIS-Zertifizierungsprozess nach FMCS",
+    "overview": {
+      "title": "Überblick über die BIS-Zertifizierungsreise",
+      "description": "Der BIS-Zertifizierungsprozess im Rahmen des Foreign Manufacturers Certification Scheme (FMCS) ist methodisch, strukturiert und mehrphasig. Er stellt sicher, dass Produkte den indischen Standards entsprechen, Herstellungsprozesse robust sind und Tests präzise durchgeführt werden."
+    },
+    "stepTable": {
+      "title": "Zusammenfassung der Prozessschritte",
+      "headers": {
+        "step": "Schritt",
+        "description": "Beschreibung"
+      },
+      "steps": [
+        {
+          "step": "1",
+          "description": "Einreichung des Antrags bei BIS FMCD"
+        },
+        {
+          "step": "2",
+          "description": "Dokumentenprüfung und erste Überprüfung"
+        },
+        {
+          "step": "3",
+          "description": "Klärung von Fragen & Einreichung von Erläuterungen"
+        },
+        {
+          "step": "4",
+          "description": "Ernennung des BIS-Technischen Prüfers"
+        },
+        {
+          "step": "5",
+          "description": "Planung und Koordination des Werksaudits über AIR"
+        },
+        {
+          "step": "6",
+          "description": "Werksinspektion & Probenversiegelung durch BIS-Prüfer"
+        },
+        {
+          "step": "7",
+          "description": "Interne Produktprüfung (falls zutreffend)"
+        },
+        {
+          "step": "8",
+          "description": "Prüfung der versiegelten Proben in BIS-zugelassenen Labors in Indien"
+        },
+        {
+          "step": "9",
+          "description": "Überprüfung der Testergebnisse & Audit-Ergebnisse"
+        },
+        {
+          "step": "10",
+          "description": "Ausstellung der BIS-Lizenz und Verwendung des ISI-Zeichens"
+        }
+      ]
+    },
+    "timeframe": {
+      "title": "Zeitrahmen für den Erhalt des BIS-Zertifikats",
+      "subtitle": "Typische Dauer von der Antragstellung bis zum Zertifikat",
+      "description": "Der BIS-Zertifizierungsprozess nach FMCS dauert in der Regel etwa 120 Arbeitstage (ca. 3-4 Monate) ab dem Datum der korrekten Antragstellung. Verzögerungen treten häufig auf, wenn Dokumente unklar sind oder das Werk nicht auditbereit ist."
+    }
+  },
+  "costing": {
+    "title": "Kosten",
+    "mainHeading": "BIS-Zertifizierungskostenstruktur erklärt",
+    "overview": {
+      "title": "Überblick über die BIS-Zertifizierungskosten",
+      "description1": "Die Erlangung eines BIS-Zertifikats im Rahmen des Foreign Manufacturers Certification Scheme (FMCS) beinhaltet verschiedene Kostenarten. Diese decken alles ab, von der Antragsstellung und Audits bis hin zur Produktprüfung und Kennzeichnungsnutzung.",
+      "description2": "Ausländische Hersteller müssen ausreichend Budget einplanen, um pünktliche Zahlungen sicherzustellen, da Zahlungsversäumnisse zur Ablehnung der BIS-Zertifizierung führen können."
+    },
+    "costTable": {
+      "headers": {
+        "category": "Kostenkategorie",
+        "description": "Beschreibung"
+      },
+      "rows": [
+        {
+          "category": "Antragsgebühr (INR 1000)",
+          "description": "Wird bei Einreichung des FMCS-Antragsformulars für die indische BIS-Zertifizierung gezahlt"
+        },
+        {
+          "category": "Auditgebühren (INR 7000)",
+          "description": "Deckt BIS-Prüfer-Reisekosten, Tagessätze und damit verbundene Ausgaben"
+        },
+        {
+          "category": "Produktprüfungsgebühren (Je nach Produkt)",
+          "description": "Für die Prüfung versiegelter Proben in BIS-anerkannten Labors in Indien"
+        },
+        {
+          "category": "Lizenzgebühr (INR 1000)",
+          "description": "Einmalige Gebühr bei Erteilung des BIS-Zertifikats"
+        },
+        {
+          "category": "Kennzeichnungsgebühr (Je nach Produkt)",
+          "description": "Jährliche Gebühr für die Verwendung des ISI-Zeichens auf zertifizierten Produkten"
+        },
+        {
+          "category": "Leistungsbankgarantie (USD 10.000)",
+          "description": "Über eine indische Bank hinterlegte finanzielle Garantie zur Sicherstellung der Einhaltung"
+        }
+      ]
+    }
+  },
+  "surveillance": {
+    "title": "Überwachung",
+    "mainHeading": "Überwachungs- und Compliance-Anforderungen nach BIS-Zertifizierung",
+    "overview": {
+      "title": "Überblick",
+      "description1": "Mit der Erteilung eines BIS-Zertifikats endet die Verantwortung nicht. Die BIS-Zertifizierung umfasst ein kontinuierliches Überwachungs- und Compliance-System, um die dauerhafte Einhaltung indischer Standards sicherzustellen. Diese Phase nach der Zertifizierung ist entscheidend für die Aufrechterhaltung Ihrer BIS-Lizenz, die Beibehaltung des Rechts zur Verwendung des ISI-Zeichens und die Vermeidung rechtlicher Strafen oder Aussetzungen.",
+      "description2": "Wichtige Überwachungskomponenten nach Erhalt des BIS-Zertifikats Marktüberwachung: Stichprobenartige Produktentnahme aus dem indischen Markt für unabhängige Labortests. Bei Nichtbestehen der Probe wird das BIS-Zertifikat ausgesetzt. Dies geschieht zweimal pro Jahr."
+    }
+  },
+  "facilitator": {
+    "title": "Berater",
+    "mainHeading": "Warum einen BIS-Zertifizierungsberater wählen?",
+    "intro": {
+      "title": "Einführung",
+      "description": "Die BIS-Zertifizierung im Rahmen des FMCS-Registrierungssystems ist komplex, hochgradig technisch und zeitkritisch. Während es möglich ist, die Zertifizierung eigenständig zu verfolgen, verlassen sich die meisten erfolgreichen ausländischen Hersteller auf BIS-Berater, um den Prozess zu optimieren und Risiken zu minimieren."
+    },
+    "consultantRole": {
+      "title": "Was macht ein BIS-Berater?",
+      "description": "Ein BIS-Zertifizierungsberater bietet umfassende Begleitung in jedem Schritt des Prozesses. Zu seinen Kernaufgaben gehören:"
+    },
+    "taskTable": {
+      "headers": {
+        "task": "Aufgabe",
+        "description": "Beschreibung"
+      },
+      "rows": [
+        {
+          "task": "Dokumentation",
+          "description": "Erstellt, überprüft und formatiert alle erforderlichen Dokumente"
+        },
+        {
+          "task": "Antragsunterstützung",
+          "description": "Reicht den BIS-Antrag ein und verfolgt ihn"
+        },
+        {
+          "task": "Audit-Vorbereitung",
+          "description": "Führt Werksteams zur Sicherstellung der Audit-Bereitschaft"
+        },
+        {
+          "task": "Probenkordination",
+          "description": "Verwaltet die Versiegelung und den Versand von Proben nach Indien"
+        },
+        {
+          "task": "Testunterstützung",
+          "description": "Steht in Verbindung mit Laboren und hilft bei der Interpretation der Ergebnisse"
+        },
+        {
+          "task": "Erneuerung & Überwachung",
+          "description": "Überwacht Lizenzverlängerungen und Compliance-Prüfungen"
+        }
+      ]
+    },
+    "conclusion": "Sie fungieren als Ihr strategischer Partner und oft auch als Ihr Autorisierter Indischer Vertreter (AIR)."
   }
 }

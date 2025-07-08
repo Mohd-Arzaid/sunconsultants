@@ -122,5 +122,480 @@
         "description": "Yêu cầu từ ngân hàng Ấn Độ được RBI phê duyệt"
       }
     ]
+  },
+  "standardization": {
+    "title": "Tiêu chuẩn hóa",
+    "mainHeading": "BIS Ấn Độ là gì và tại sao nó quan trọng?",
+    "intro": "BIS Ấn Độ là dấu hiệu chất lượng và an toàn do Cục Tiêu chuẩn Ấn Độ (BIS) cấp. Hiện nay, dấu ISI được sử dụng độc quyền để chỉ định các sản phẩm phù hợp với tiêu chuẩn Ấn Độ theo chương trình chứng nhận BIS chính thức.",
+    "process": "Để một sản phẩm mang dấu BIS hoặc ISI của Ấn Độ, nó phải trải qua quy trình chứng nhận BIS nghiêm ngặt, bao gồm thử nghiệm phòng thí nghiệm, kiểm tra nhà máy, kiểm toán tài liệu và kiểm tra tuân thủ với hướng dẫn BIS.",
+    "legalStandingTitle": "Địa vị pháp lý của chứng nhận BIS tại Ấn Độ",
+    "legalStandingDesc": "Giấy phép BIS không chỉ là công cụ tiếp thị mà còn là yêu cầu pháp lý đối với tất cả các sản phẩm thuộc chương trình chứng nhận BIS bắt buộc.",
+    "bisActTitle": "Theo Đạo luật BIS 2016:",
+    "bisActPoints": [
+      "Việc sử dụng dấu ISI mà không có giấy phép BIS hợp lệ sẽ bị truy cứu trách nhiệm pháp lý",
+      "Sản phẩm được chứng nhận phải hiển thị cả logo ISI và số CM/L (Chứng chỉ Giấy phép Sản xuất)",
+      "Vi phạm có thể dẫn đến cấm sản phẩm, phạt tiền hoặc thậm chí truy tố hình sự"
+    ],
+    "isiLogoTitle": "Logo ISI thường bao gồm:",
+    "isiLogoPoints": [
+      "Chữ \"ISI\" được tạo kiểu trong hình chữ nhật có góc bo tròn",
+      "Số CM/L bên dưới hoặc bên cạnh dấu",
+      "Số tham chiếu tiêu chuẩn Ấn Độ (ví dụ: IS 302 cho thiết bị điện)"
+    ],
+    "placementTitle": "Vị trí phải:",
+    "placementPoints": [
+      "Cố định và nhìn thấy rõ ràng trên sản phẩm",
+      "Trên bao bì nếu không thể trên sản phẩm",
+      "Trong hướng dẫn sử dụng cho một số loại sản phẩm nhất định"
+    ],
+    "productCategoriesTitle": "Các loại sản phẩm yêu cầu chứng nhận BIS",
+    "productCategoriesDesc": "Hơn 600 sản phẩm yêu cầu dấu ISI theo hệ thống đăng ký bắt buộc của Ấn Độ. Ví dụ bao gồm:",
+    "productTable": {
+      "headers": {
+        "category": "Loại sản phẩm",
+        "code": "Mã IS",
+        "status": "Trạng thái"
+      },
+      "rows": [
+        {
+          "category": "Thiết bị điện",
+          "code": "IS 302",
+          "status": "Bắt buộc"
+        },
+        {
+          "category": "Thép và Sắt",
+          "code": "IS 2062",
+          "status": "Bắt buộc"
+        },
+        {
+          "category": "Hộp đựng thực phẩm",
+          "code": "IS 10146",
+          "status": "Bắt buộc"
+        },
+        {
+          "category": "Mũ bảo hiểm",
+          "code": "IS 4151",
+          "status": "Bắt buộc"
+        },
+        {
+          "category": "Xi măng",
+          "code": "IS 1489",
+          "status": "Bắt buộc"
+        }
+      ]
+    },
+    "productTableNote": "Mỗi loại phải tuân thủ tiêu chuẩn Ấn Độ tương ứng, được xác minh trong quá trình chứng nhận BIS. Để xem danh sách đầy đủ sản phẩm",
+    "clickHere": "Nhấp vào đây",
+    "globalCertTitle": "BIS Ấn Độ so với các chứng nhận toàn cầu khác",
+    "globalCertDesc": "Hãy so sánh dấu ISI với các biểu tượng quốc tế khác:",
+    "globalCertTable": {
+      "headers": {
+        "mark": "Dấu",
+        "country": "Quốc gia",
+        "mandatory": "Bắt buộc?",
+        "focus": "Trọng tâm"
+      },
+      "rows": [
+        {
+          "mark": "ISI",
+          "country": "Ấn Độ",
+          "mandatory": "Có",
+          "focus": "An toàn và chất lượng sản phẩm"
+        },
+        {
+          "mark": "CE",
+          "country": "EU",
+          "mandatory": "Có (cho một số loại)",
+          "focus": "Sức khỏe, an toàn, môi trường"
+        },
+        {
+          "mark": "UL",
+          "country": "Hoa Kỳ",
+          "mandatory": "Không",
+          "focus": "Tiêu chuẩn an toàn (tự nguyện)"
+        },
+        {
+          "mark": "CCC",
+          "country": "Trung Quốc",
+          "mandatory": "Có",
+          "focus": "An toàn thiết bị điện"
+        }
+      ]
+    },
+    "globalCertNote": "Khác với UL (tự nguyện) hoặc CE (khu vực cụ thể), dấu ISI vừa bắt buộc vừa được thực thi tại địa phương theo hệ thống đăng ký BIS.",
+    "importTitle": "Chứng nhận BIS hoặc giấy phép BIS có bắt buộc để nhập khẩu vào Ấn Độ không?",
+    "mandatoryNatureTitle": "Tính chất bắt buộc của chứng nhận BIS",
+    "mandatoryNatureDesc": "Chính phủ Ấn Độ đã yêu cầu một số sản phẩm nhất định phải được chứng nhận bởi Cục Tiêu chuẩn Ấn Độ (BIS) trước khi được nhập khẩu, bán hoặc phân phối tại Ấn Độ. Yêu cầu này xuất phát từ:",
+    "mandatoryNaturePoints": [
+      "Mục tiêu bảo vệ người tiêu dùng",
+      "Hài hòa với tiêu chuẩn Ấn Độ",
+      "Quy định an ninh quốc gia"
+    ],
+    "importNote": "Nếu một sản phẩm thuộc yêu cầu bắt buộc của BIS Ấn Độ, nó phải có chứng nhận BIS và hiển thị dấu ISI trước khi có thể thông quan tại Ấn Độ.",
+    "onlyImportsTitle": "Chứng nhận BIS chỉ dành cho nhập khẩu?",
+    "onlyImportsDesc": "Không. Chứng nhận BIS là bắt buộc đối với:",
+    "onlyImportsPoints": [
+      "Nhà sản xuất trong nước sản xuất sản phẩm được quy định",
+      "Nhà sản xuất nước ngoài xuất khẩu sản phẩm được quy định sang Ấn Độ"
+    ],
+    "onlyImportsNote1": "Dù bạn đặt tại Ấn Độ hay nước ngoài, nếu sản phẩm của bạn nằm trong danh sách bắt buộc, nó phải có giấy phép BIS và hiển thị dấu ISI.",
+    "onlyImportsNote2": "Hải quan Ấn Độ hiện sử dụng hệ thống dữ liệu tiên tiến để tự động đánh dấu các lô hàng không tuân thủ. Tất cả hàng hóa trong các danh mục được quy định đều được quét để kiểm tra sự hiện diện của chứng nhận BIS hợp lệ.",
+    "exemptionsTitle": "Miễn trừ từ chứng nhận BIS",
+    "exemptionsDesc": "Chứng nhận BIS là bắt buộc trong hầu hết các trường hợp, nhưng có thể được miễn trừ trong các tình huống cụ thể:",
+    "exemptionsPoints": [
+      "Cho mẫu R&D hoặc thử nghiệm mẫu",
+      "Cho nhập khẩu cá nhân số lượng hạn chế"
+    ],
+    "exemptionsNote": "Tuy nhiên, những điều này hiếm khi xảy ra và yêu cầu thư miễn trừ chính thức từ BIS hoặc các bộ liên quan.",
+    "checkProductTitle": "Làm thế nào để biết sản phẩm của bạn cần chứng nhận BIS hoặc giấy phép BIS?",
+    "checkProductDesc": "Nhấp vào đây để kiểm tra xem sản phẩm của bạn có thuộc chương trình chứng nhận BIS bắt buộc của Ấn Độ không."
+  },
+  "representation": {
+    "title": "Đại diện",
+    "mainHeading": "Vai trò của Đại diện Ấn Độ được Ủy quyền (AIR) trong Chứng nhận BIS",
+    "whatIsAIR": {
+      "title": "Đại diện Ấn Độ được Ủy quyền (AIR) là gì?",
+      "description": "Đại diện Ấn Độ được Ủy quyền (AIR) là một trung gian quan trọng được chỉ định bởi nhà sản xuất nước ngoài đang tìm kiếm chứng nhận BIS theo chương trình đăng ký FMCS. AIR đóng vai trò là đầu mối liên lạc chính thức giữa Cục Tiêu chuẩn Ấn Độ (BIS) và nhà sản xuất, đảm bảo giao tiếp suôn sẻ, xử lý tài liệu và điều phối quy trình chứng nhận."
+    },
+    "legalRequirement": {
+      "title": "Yêu cầu Pháp lý cho việc Chỉ định AIR",
+      "description": "Theo hướng dẫn của BIS, bất kỳ nhà sản xuất nước ngoài nào không có văn phòng đăng ký tại Ấn Độ đều phải chỉ định một AIR. Yêu cầu này đảm bảo rằng BIS có một đầu mối liên lạc đáng tin cậy và có thể tiếp cận trong phạm vi quyền hạn của Ấn Độ."
+    },
+    "responsibilities": {
+      "title": "Trách nhiệm Chính của AIR",
+      "description": "Vai trò của AIR bao gồm toàn bộ quy trình chứng nhận BIS, từ tài liệu và nộp đơn đến điều phối kiểm toán và tuân thủ sau chứng nhận:",
+      "table": {
+        "headers": {
+          "responsibility": "Trách nhiệm",
+          "description": "Mô tả"
+        },
+        "rows": [
+          {
+            "responsibility": "Giao tiếp",
+            "description": "Đóng vai trò là đầu mối liên lạc với các cán bộ và phòng ban BIS"
+          },
+          {
+            "responsibility": "Hỗ trợ Đơn",
+            "description": "Giúp điền mẫu đơn, tập hợp tài liệu và nộp đơn"
+          },
+          {
+            "responsibility": "Điều phối Kiểm toán",
+            "description": "Điều phối lịch kiểm tra nhà máy và trả lời câu hỏi của kiểm toán viên"
+          },
+          {
+            "responsibility": "Giám sát Tuân thủ",
+            "description": "Đảm bảo tất cả hoạt động kiểm tra và chứng nhận tuân thủ tiêu chuẩn BIS"
+          },
+          {
+            "responsibility": "Quản lý Gia hạn",
+            "description": "Giám sát việc gia hạn giấy phép BIS, cập nhật tài liệu và thanh toán phí"
+          }
+        ]
+      }
+    },
+    "eligibility": {
+      "title": "Tiêu chí Đủ điều kiện để trở thành AIR",
+      "description": "Để làm AIR, cá nhân hoặc tổ chức phải:",
+      "points": [
+        "Là công dân Ấn Độ hoặc thực thể kinh doanh được đăng ký hợp pháp tại Ấn Độ",
+        "Có địa chỉ thực tế tại Ấn Độ với mã bưu chính hợp lệ",
+        "Có khả năng giao tiếp thông thạo bằng tiếng Anh và ngôn ngữ địa phương",
+        "Hiểu rõ chương trình chứng nhận, quy trình tài liệu BIS và yêu cầu quy định",
+        "Có khả năng phản hồi nhanh chóng với kiểm toán và thư từ thay mặt nhà sản xuất nước ngoài"
+      ]
+    },
+    "importance": {
+      "title": "Tại sao Vai trò AIR là Quan trọng",
+      "description": "AIR đảm bảo tính liên tục và trách nhiệm giải trình trong suốt quá trình chứng nhận BIS. Không có AIR:",
+      "points": [
+        "BIS không có quyền hạn để hành động đối với nhà sản xuất nước ngoài không tuân thủ",
+        "Các câu hỏi và lịch kiểm toán nhạy cảm về thời gian có thể bị trì hoãn",
+        "Quy trình chứng nhận có thể bị đình trệ, thu hồi hoặc từ chối"
+      ],
+      "conclusion": "Một AIR chủ động và có kinh nghiệm sẽ làm tăng đáng kể khả năng chứng nhận BIS thành công."
+    }
+  },
+  "document": {
+    "title": "Tài liệu",
+    "mainHeading": "Tài liệu Cần thiết cho Chứng nhận BIS theo FMCS",
+    "table": {
+      "headers": {
+        "documentType": "Loại Tài liệu",
+        "purpose": "Mục đích"
+      },
+      "rows": [
+        {
+          "type": "Mẫu Đơn FMCS",
+          "purpose": "Yêu cầu chứng nhận chính thức"
+        },
+        {
+          "type": "Danh sách Thiết bị Sản xuất",
+          "purpose": "Thể hiện năng lực sản xuất"
+        },
+        {
+          "type": "Danh sách Nguyên liệu",
+          "purpose": "Đảm bảo chất lượng nguyên liệu đầu vào"
+        },
+        {
+          "type": "Danh sách Thiết bị Kiểm tra",
+          "purpose": "Đánh giá sự sẵn sàng kiểm tra và tuân thủ"
+        },
+        {
+          "type": "Giấy chứng nhận Hiệu chuẩn",
+          "purpose": "Chứng minh độ chính xác của thiết bị kiểm tra"
+        },
+        {
+          "type": "Bố trí Nhà máy & Quy trình",
+          "purpose": "Giúp kiểm toán viên hiểu các bước sản xuất"
+        },
+        {
+          "type": "Giấy chứng nhận Kiểm tra",
+          "purpose": "Chứng minh chất lượng nguyên liệu và sản phẩm cuối"
+        },
+        {
+          "type": "Hồ sơ Kiểm soát Chất lượng",
+          "purpose": "Xác minh trình độ nhân viên và SOP"
+        },
+        {
+          "type": "Bằng chứng Thanh toán",
+          "purpose": "Xác nhận thanh toán phí cho BIS"
+        },
+        {
+          "type": "Bảo lãnh Ngân hàng Thực hiện",
+          "purpose": "Đóng vai trò bảo đảm tài chính cho BIS"
+        }
+      ]
+    },
+    "detailedBreakdown": {
+      "title": "Chi tiết Từng Tài liệu Cần thiết cho Chứng nhận BIS Ấn Độ",
+      "fmcsForm": {
+        "title": "1. Mẫu Đơn FMCS",
+        "description": "Tài liệu này cung cấp thông tin chung về nhà sản xuất nước ngoài, bao gồm:",
+        "points": [
+          "Chi tiết sản phẩm (loại, danh mục, mẫu)",
+          "Tiêu chuẩn Ấn Độ mục tiêu",
+          "Thông tin liên hệ nhà máy và AIR",
+          "Năng lực sản xuất và phạm vi kiểm tra"
+        ]
+      },
+      "manufacturingEquipment": {
+        "title": "2. Danh sách Thiết bị Sản xuất",
+        "points": [
+          "Tên máy và thương hiệu",
+          "Công suất sản xuất",
+          "Thông tin liên hệ nhà máy và AIR",
+          "Hồ sơ bảo trì (nếu có)"
+        ]
+      },
+      "rawMaterials": {
+        "title": "3. Danh sách Nguyên liệu",
+        "points": [
+          "Nguồn cung cấp",
+          "Cấp độ và thông số kỹ thuật",
+          "Quy trình kiểm tra (nếu có)"
+        ]
+      },
+      "testingEquipment": {
+        "title": "4. Danh sách Thiết bị Kiểm tra",
+        "points": [
+          "Tên thiết bị và nhà sản xuất",
+          "Tuân thủ thông số kiểm tra theo tiêu chuẩn Ấn Độ",
+          "Vị trí trong nhà máy"
+        ]
+      },
+      "calibration": {
+        "title": "5. Giấy chứng nhận Hiệu chuẩn",
+        "points": [
+          "Ngày hiệu chuẩn gần nhất",
+          "Thời hạn hiệu lực",
+          "Số chứng nhận"
+        ]
+      },
+      "factoryLayout": {
+        "title": "6. Bố trí Nhà máy & Sơ đồ Quy trình",
+        "points": [
+          "Điểm vào ra",
+          "Khu vực phòng thí nghiệm",
+          "Điểm kiểm soát chất lượng",
+          "Khu vực lưu trữ và đóng gói"
+        ]
+      },
+      "bankGuarantee": {
+        "title": "7. Bảo lãnh Ngân hàng Thực hiện",
+        "description": "Được phát hành bởi ngân hàng Ấn Độ được RBI phê duyệt, Bảo lãnh Ngân hàng Thực hiện (PBG) bảo đảm trách nhiệm trong trường hợp không tuân thủ. Tài liệu này phải:",
+        "points": [
+          "Trên tiêu đề chính thức của ngân hàng",
+          "Chỉ rõ thời hạn và số tiền bảo lãnh",
+          "Được ký và đóng dấu"
+        ]
+      },
+      "commonMistakes": {
+        "title": "Lỗi tài liệu phổ biến cần tránh khi đăng ký chứng nhận BIS hoặc BIS Ấn Độ",
+        "points": [
+          "Không khớp giữa dữ liệu biểu mẫu và thực tế nhà máy",
+          "Nộp báo cáo hiệu chuẩn hết hạn",
+          "Thiếu bằng chứng thanh toán phí BIS",
+          "Quy trình không đầy đủ hoặc mơ hồ",
+          "Không nhất quán tên giữa các tài liệu"
+        ]
+      }
+    }
+  },
+  "process": {
+    "title": "Quy Trình",
+    "mainHeading": "Quy Trình Chứng Nhận BIS Từng Bước Theo FMCS",
+    "overview": {
+      "title": "Tổng Quan về Hành Trình Chứng Nhận BIS",
+      "description": "Quy trình chứng nhận BIS theo Chương Trình Chứng Nhận Nhà Sản Xuất Nước Ngoài (FMCS) là một quy trình có phương pháp, có cấu trúc và nhiều giai đoạn. Nó đảm bảo rằng sản phẩm tuân thủ các tiêu chuẩn Ấn Độ, quy trình sản xuất vững chắc và việc kiểm tra chính xác."
+    },
+    "stepTable": {
+      "title": "Bảng Tóm Tắt Các Bước Quy Trình",
+      "headers": {
+        "step": "Bước",
+        "description": "Mô Tả"
+      },
+      "steps": [
+        {
+          "step": "1",
+          "description": "Nộp Đơn Đăng Ký cho BIS FMCD"
+        },
+        {
+          "step": "2",
+          "description": "Xem Xét Tài Liệu và Đánh Giá Ban Đầu"
+        },
+        {
+          "step": "3",
+          "description": "Giải Quyết Thắc Mắc & Nộp Giải Trình"
+        },
+        {
+          "step": "4",
+          "description": "Chỉ Định Kiểm Toán Viên Kỹ Thuật BIS"
+        },
+        {
+          "step": "5",
+          "description": "Lên Lịch & Phối Hợp Kiểm Tra Nhà Máy qua AIR"
+        },
+        {
+          "step": "6",
+          "description": "Kiểm Tra Nhà Máy & Niêm Phong Mẫu bởi Kiểm Toán Viên BIS"
+        },
+        {
+          "step": "7",
+          "description": "Kiểm Tra Sản Phẩm Nội Bộ (nếu áp dụng)"
+        },
+        {
+          "step": "8",
+          "description": "Kiểm Tra Mẫu Niêm Phong tại Phòng Thí Nghiệm Được BIS Chấp Thuận ở Ấn Độ"
+        },
+        {
+          "step": "9",
+          "description": "Xem Xét Báo Cáo Kiểm Tra & Kết Quả Kiểm Toán"
+        },
+        {
+          "step": "10",
+          "description": "Cấp Giấy Phép BIS và Sử Dụng Dấu ISI"
+        }
+      ]
+    },
+    "timeframe": {
+      "title": "Thời Gian Nhận Chứng Nhận BIS",
+      "subtitle": "Thời Gian Điển Hình từ Đăng Ký đến Chứng Nhận",
+      "description": "Quy trình chứng nhận BIS theo FMCS thường mất khoảng 120 ngày làm việc (khoảng 3-4 tháng) kể từ ngày nộp đơn đăng ký chính xác. Sự chậm trễ thường xảy ra khi tài liệu không rõ ràng hoặc nhà máy chưa sẵn sàng cho kiểm toán."
+    }
+  },
+  "costing": {
+    "title": "Chi Phí",
+    "mainHeading": "Giải Thích Cấu Trúc Chi Phí Chứng Nhận BIS",
+    "overview": {
+      "title": "Tổng Quan về Chi Phí Chứng Nhận BIS",
+      "description1": "Việc có được chứng nhận BIS theo Chương Trình Chứng Nhận Nhà Sản Xuất Nước Ngoài (FMCS) bao gồm nhiều loại chi phí khác nhau. Những chi phí này bao gồm tất cả mọi thứ, từ nộp đơn đăng ký và kiểm toán đến thử nghiệm sản phẩm và sử dụng nhãn hiệu.",
+      "description2": "Các nhà sản xuất nước ngoài phải lập ngân sách đầy đủ để đảm bảo thanh toán đúng hạn, vì việc không thanh toán có thể dẫn đến việc từ chối chứng nhận BIS."
+    },
+    "costTable": {
+      "headers": {
+        "category": "Danh Mục Chi Phí",
+        "description": "Mô Tả"
+      },
+      "rows": [
+        {
+          "category": "Phí Đăng Ký (INR 1000)",
+          "description": "Thanh toán trong quá trình nộp đơn đăng ký FMCS để có được BIS Ấn Độ"
+        },
+        {
+          "category": "Chi Phí Kiểm Toán (INR 7000)",
+          "description": "Bao gồm chi phí đi lại của kiểm toán viên BIS, mức phí theo ngày và các chi phí liên quan"
+        },
+        {
+          "category": "Phí Thử Nghiệm Sản Phẩm (Theo sản phẩm)",
+          "description": "Dành cho việc thử nghiệm mẫu niêm phong tại phòng thí nghiệm được BIS công nhận ở Ấn Độ"
+        },
+        {
+          "category": "Phí Giấy Phép (INR 1000)",
+          "description": "Phí một lần thanh toán khi được cấp chứng nhận BIS"
+        },
+        {
+          "category": "Phí Đánh Dấu (Theo sản phẩm)",
+          "description": "Phí hàng năm cho việc sử dụng nhãn hiệu ISI trên sản phẩm được chứng nhận"
+        },
+        {
+          "category": "Bảo Lãnh Thực Hiện (USD 10,000)",
+          "description": "Bảo lãnh tài chính được gửi thông qua ngân hàng Ấn Độ để đảm bảo tuân thủ"
+        }
+      ]
+    }
+  },
+  "surveillance": {
+    "title": "Giám sát",
+    "mainHeading": "Yêu Cầu Giám Sát và Tuân Thủ Sau Chứng Nhận BIS",
+    "overview": {
+      "title": "Tổng quan",
+      "description1": "Khi chứng nhận BIS được cấp, trách nhiệm không dừng lại ở đó. Chứng nhận BIS bao gồm hệ thống giám sát và tuân thủ liên tục để đảm bảo việc tuân thủ liên tục các tiêu chuẩn Ấn Độ. Giai đoạn sau chứng nhận này rất quan trọng để duy trì giấy phép BIS của bạn, giữ quyền sử dụng dấu ISI và tránh các hình phạt pháp lý hoặc đình chỉ.",
+      "description2": "Các thành phần giám sát chính sau khi nhận chứng nhận BIS Giám sát thị trường: Lấy mẫu sản phẩm ngẫu nhiên từ thị trường Ấn Độ để kiểm tra phòng thí nghiệm độc lập. Nếu mẫu không đạt, chứng nhận BIS sẽ bị đình chỉ. Điều này xảy ra hai lần một năm."
+    }
+  },
+  "facilitator": {
+    "title": "Người Hỗ Trợ",
+    "mainHeading": "Tại Sao Chọn Tư Vấn Chứng Nhận BIS?",
+    "intro": {
+      "title": "Giới Thiệu",
+      "description": "Chứng nhận BIS theo hệ thống đăng ký FMCS rất phức tạp, có tính kỹ thuật cao và nhạy cảm về thời gian. Mặc dù có thể tự theo đuổi chứng nhận, nhưng hầu hết các nhà sản xuất nước ngoài thành công đều dựa vào các tư vấn BIS để tối ưu hóa quy trình và giảm thiểu rủi ro."
+    },
+    "consultantRole": {
+      "title": "Tư Vấn BIS Làm Gì?",
+      "description": "Tư vấn chứng nhận BIS cung cấp hướng dẫn toàn diện trong mọi bước của quy trình. Trách nhiệm chính của họ bao gồm:"
+    },
+    "taskTable": {
+      "headers": {
+        "task": "Nhiệm Vụ",
+        "description": "Mô Tả"
+      },
+      "rows": [
+        {
+          "task": "Tài Liệu",
+          "description": "Chuẩn bị, xem xét và định dạng tất cả tài liệu cần thiết"
+        },
+        {
+          "task": "Hỗ Trợ Đơn",
+          "description": "Nộp và theo dõi đơn BIS của bạn"
+        },
+        {
+          "task": "Chuẩn Bị Kiểm Toán",
+          "description": "Hướng dẫn các đội nhà máy để đảm bảo sẵn sàng kiểm toán"
+        },
+        {
+          "task": "Điều Phối Mẫu",
+          "description": "Quản lý việc niêm phong và vận chuyển mẫu đến Ấn Độ"
+        },
+        {
+          "task": "Hỗ Trợ Kiểm Tra",
+          "description": "Liên lạc với phòng thí nghiệm và giúp giải thích kết quả"
+        },
+        {
+          "task": "Gia Hạn & Giám Sát",
+          "description": "Giám sát gia hạn giấy phép và kiểm tra tuân thủ"
+        }
+      ]
+    },
+    "conclusion": "Họ hoạt động như đối tác chiến lược của bạn, thường đóng vai trò là Đại Diện Ủy Quyền Ấn Độ (AIR) của bạn."
   }
 }
