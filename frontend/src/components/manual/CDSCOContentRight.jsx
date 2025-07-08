@@ -393,45 +393,16 @@ const OurServices = () => {
 };
 
 const ClientTestimonial = () => {
-  const testimonials = [
-    {
-      name: "Ms.Eliyawati",
-      role: "PT Quty Karunia, BIS Licensee in Vietnam",
-      content:
-        "Sun Certifications India provided excellent BIS Certification services. Their unparalleled service and sincerity gained our trust.",
-    },
-    {
-      name: "Ms.Belle",
-      role: "Thantawan Industries Ltd, BIS Licensee in Thailand",
-      content:
-        "Sun Certifications India supported us throughout the BIS certification process. Their responsive customer service is exceptional.",
-    },
-    {
-      name: "Ms.Jun Min Sim",
-      role: "Leaderart Industries, BIS Licensee in Malaysia",
-      content:
-        "Sun Certifications India helped us acquire BIS Certification, doubling our engagement in India. Their services are genuine and up-to-date.",
-    },
-    {
-      name: "Ms.Eliyawati",
-      role: "PT Quty Karunia, BIS Licensee in Vietnam",
-      content:
-        "One of the best BIS consultants in India! Their expertise made the entire process seamless for us.",
-    },
-    {
-      name: "Ms.Belle",
-      role: "Thantawan Industries Ltd, BIS Licensee in Thailand",
-      content:
-        "Highly recommend Sun Certifications India for hassle-free BIS certification. Professional and punctual service.",
-    },
-  ];
+  const { t } = useTranslation("ClientTestimonial");
+  const testimonials = t("testimonials", { returnObjects: true });
+
   return (
     <div className="w-full md:w-[360px] rounded-lg overflow-hidden bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       <div className="pt-6 px-6 pb-4">
         <div className="flex gap-2 items-center">
           <Languages className="text-[#232327]" />
           <h1 className="text-xl font-geist font-semibold text-[#232327]">
-            Client Testimonials
+            {t("title")}
           </h1>
         </div>
         <div className="mt-8 mb-5 rounded-lg h-60 overflow-hidden">

@@ -1,0 +1,30 @@
+{
+  "title": "Testimonios de Clientes",
+  "testimonials": [
+    {
+      "name": "Ms.Eliyawati",
+      "role": "PT Quty Karunia, Licenciatario BIS en Vietnam",
+      "content": "Sun Certifications India proporcionó excelentes servicios de certificación BIS. Su servicio incomparable y sinceridad ganaron nuestra confianza."
+    },
+    {
+      "name": "Ms.Belle",
+      "role": "Thantawan Industries Ltd, Licenciatario BIS en Tailandia",
+      "content": "Sun Certifications India nos apoyó durante todo el proceso de certificación BIS. Su servicio al cliente receptivo es excepcional."
+    },
+    {
+      "name": "Ms.Jun Min Sim",
+      "role": "Leaderart Industries, Licenciatario BIS en Malasia",
+      "content": "Sun Certifications India nos ayudó a obtener la certificación BIS, duplicando nuestro compromiso en India. Sus servicios son genuinos y actualizados."
+    },
+    {
+      "name": "Ms.Eliyawati",
+      "role": "PT Quty Karunia, Licenciatario BIS en Vietnam",
+      "content": "¡Uno de los mejores consultores BIS en India! Su experiencia hizo que todo el proceso fuera perfecto para nosotros."
+    },
+    {
+      "name": "Ms.Belle",
+      "role": "Thantawan Industries Ltd, Licenciatario BIS en Tailandia",
+      "content": "Recomiendo altamente Sun Certifications India para una certificación BIS sin problemas. Servicio profesional y puntual."
+    }
+  ]
+}

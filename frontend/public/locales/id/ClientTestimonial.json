@@ -1,0 +1,30 @@
+{
+  "title": "Testimoni Klien",
+  "testimonials": [
+    {
+      "name": "Ms.Eliyawati",
+      "role": "PT Quty Karunia, Pemegang Lisensi BIS di Vietnam",
+      "content": "Sun Certifications India memberikan layanan sertifikasi BIS yang sangat baik. Layanan dan ketulusan mereka yang tak tertandingi mendapatkan kepercayaan kami."
+    },
+    {
+      "name": "Ms.Belle",
+      "role": "Thantawan Industries Ltd, Pemegang Lisensi BIS di Thailand",
+      "content": "Sun Certifications India mendukung kami selama proses sertifikasi BIS. Layanan pelanggan mereka yang responsif sangat luar biasa."
+    },
+    {
+      "name": "Ms.Jun Min Sim",
+      "role": "Leaderart Industries, Pemegang Lisensi BIS di Malaysia",
+      "content": "Sun Certifications India membantu kami mendapatkan Sertifikasi BIS, menggandakan keterlibatan kami di India. Layanan mereka asli dan terkini."
+    },
+    {
+      "name": "Ms.Eliyawati",
+      "role": "PT Quty Karunia, Pemegang Lisensi BIS di Vietnam",
+      "content": "Salah satu konsultan BIS terbaik di India! Keahlian mereka membuat seluruh proses menjadi lancar bagi kami."
+    },
+    {
+      "name": "Ms.Belle",
+      "role": "Thantawan Industries Ltd, Pemegang Lisensi BIS di Thailand",
+      "content": "Sangat merekomendasikan Sun Certifications India untuk sertifikasi BIS yang lancar. Layanan profesional dan tepat waktu."
+    }
+  ]
+}
