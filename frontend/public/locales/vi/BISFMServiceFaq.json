@@ -1,0 +1,67 @@
+{
+  "title": "Câu Hỏi Thường Gặp",
+  "subtitle": "Không tìm thấy câu trả lời bạn đang tìm kiếm?",
+  "contactLink": "Liên hệ với chúng tôi!",
+  "faqs": [
+    {
+      "question": "Chứng nhận BIS là gì và tại sao các nhà sản xuất nước ngoài cần phải có BIS Ấn Độ?",
+      "answer": "Chứng nhận BIS là quy trình quản lý do Cục Tiêu chuẩn Ấn Độ thực hiện để đảm bảo sản phẩm đáp ứng tiêu chuẩn Ấn Độ. Điều này cần thiết cho các nhà sản xuất nước ngoài để tiếp cận thị trường, thông quan và có được niềm tin của người tiêu dùng tại Ấn Độ."
+    },
+    {
+      "question": "Dấu ISI đại diện cho điều gì?",
+      "answer": "Dấu ISI chỉ ra sự phù hợp với một tiêu chuẩn Ấn Độ cụ thể. Nó bắt buộc đối với các sản phẩm theo chứng nhận BIS và phải được in trên bao bì và sản phẩm."
+    },
+    {
+      "question": "Chứng nhận BIS có bắt buộc cho tất cả hàng nhập khẩu vào Ấn Độ không?",
+      "answer": "Không. Chứng nhận BIS chỉ bắt buộc đối với các sản phẩm được liệt kê trong chương trình chứng nhận BIS bắt buộc của Ấn Độ. Tuy nhiên, chứng nhận tự nguyện có sẵn cho các sản phẩm khác."
+    },
+    {
+      "question": "Ai có thể đăng ký chứng nhận BIS theo FMCS?",
+      "answer": "Chỉ các nhà sản xuất nước ngoài thực sự (không phải nhà nhập khẩu hoặc thương nhân) mới có thể đăng ký. Một Đại diện Ấn Độ được Ủy quyền (AIR) là bắt buộc để đại diện cho họ tại Ấn Độ."
+    },
+    {
+      "question": "Mất bao lâu để nhận được chứng nhận BIS?",
+      "answer": "Quy trình chứng nhận BIS trung bình theo FMCS mất 120 ngày, tùy thuộc vào việc chuẩn bị tài liệu, lịch kiểm toán và thời gian thử nghiệm."
+    },
+    {
+      "question": "Chi phí chính liên quan đến chứng nhận BIS là gì?",
+      "answer": "Chi phí bao gồm phí đăng ký, phí kiểm toán, phí thử nghiệm phòng thí nghiệm, phí giấy phép và đánh dấu, và Bảo lãnh Thực hiện Ngân hàng (PBG) từ ngân hàng Ấn Độ được RBI phê duyệt."
+    },
+    {
+      "question": "Giấy phép BIS có thể được gia hạn không?",
+      "answer": "Có. Giấy phép BIS thường có hiệu lực 1-2 năm và có thể được gia hạn bằng cách đáp ứng các yêu cầu tuân thủ và cập nhật tài liệu."
+    },
+    {
+      "question": "Điều gì xảy ra nếu sản phẩm không vượt qua thử nghiệm phòng thí nghiệm BIS?",
+      "answer": "Nếu sản phẩm thất bại, BIS có thể cho phép hành động khắc phục và thử nghiệm lại. Thất bại liên tục có thể dẫn đến việc từ chối đơn đăng ký."
+    },
+    {
+      "question": "Có cần thuê tư vấn chứng nhận BIS không?",
+      "answer": "Không bắt buộc nhưng được khuyến nghị cao. Tư vấn giúp giảm chậm trễ, quản lý tuân thủ và cải thiện cơ hội phê duyệt bằng cách đảm bảo phù hợp hoàn toàn với các quy trình BIS."
+    },
+    {
+      "question": "Giấy phép BIS có thể bị đình chỉ hoặc hủy bỏ không?",
+      "answer": "Có. BIS có thể đình chỉ hoặc hủy bỏ giấy phép vì không tuân thủ, thất bại sản phẩm, sử dụng sai logo ISI hoặc sai lệch trong kiểm toán."
+    },
+    {
+      "question": "Những tài liệu nào cần thiết cho quy trình chứng nhận BIS?",
+      "answer": "Tài liệu bao gồm mẫu đơn FMCS, báo cáo thử nghiệm, danh sách thiết bị, chứng nhận hiệu chuẩn, bố trí nhà máy, thư bổ nhiệm AIR và bằng chứng thanh toán."
+    },
+    {
+      "question": "Một AIR có thể đại diện cho nhiều đơn đăng ký BIS không?",
+      "answer": "Có, miễn là họ được ủy quyền cho mỗi dự án và có khả năng quản lý tài liệu, kiểm toán và giao tiếp cho mỗi chứng nhận."
+    },
+    {
+      "question": "Vai trò của Bảo lãnh Thực hiện Ngân hàng là gì?",
+      "answer": "PBG đảm bảo với BIS rằng nhà sản xuất sẽ tuân thủ tiêu chuẩn Ấn Độ. Nó có thể hoàn lại khi hủy giấy phép và bắt buộc cho tất cả đơn đăng ký FMCS nhận BIS Ấn Độ."
+    },
+    {
+      "question": "Chứng nhận BIS có được công nhận bên ngoài Ấn Độ không?",
+      "answer": "Mặc dù chứng nhận BIS là tiêu chuẩn Ấn Độ, nó được tôn trọng trong bối cảnh thương mại ở nhiều khu vực chấp nhận sự tuân thủ của Ấn Độ, đặc biệt là ở Châu Á và Châu Phi."
+    },
+    {
+      "question": "Làm thế nào để biết sản phẩm của tôi có cần chứng nhận BIS không?",
+      "answer": "Kiểm tra danh sách cập nhật trên trang web chính thức của BIS hoặc tham khảo ý kiến tư vấn BIS để xác minh xem sản phẩm của bạn có thuộc diện chứng nhận bắt buộc không."
+    }
+  ]
+}

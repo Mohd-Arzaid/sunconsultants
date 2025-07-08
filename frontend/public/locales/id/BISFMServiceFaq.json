@@ -1,0 +1,67 @@
+{
+  "title": "Pertanyaan yang Sering Diajukan",
+  "subtitle": "Tidak menemukan jawaban yang Anda cari?",
+  "contactLink": "Hubungi kami!",
+  "faqs": [
+    {
+      "question": "Apa itu sertifikasi BIS dan mengapa penting bagi produsen asing untuk mendapatkan BIS India?",
+      "answer": "Sertifikasi BIS adalah proses regulasi yang dilakukan oleh Bureau of Indian Standards untuk memastikan produk memenuhi standar India. Ini penting bagi produsen asing untuk mendapatkan akses pasar, izin bea cukai, dan kepercayaan konsumen di India."
+    },
+    {
+      "question": "Apa yang dimaksud dengan tanda ISI?",
+      "answer": "Tanda ISI menunjukkan kesesuaian dengan Standar India tertentu. Ini wajib untuk produk di bawah sertifikasi BIS dan harus dicetak pada kemasan dan produk."
+    },
+    {
+      "question": "Apakah sertifikasi BIS wajib untuk semua impor ke India?",
+      "answer": "Tidak. Sertifikasi BIS wajib untuk produk yang tercantum dalam skema sertifikasi BIS India yang wajib. Namun, sertifikasi sukarela tersedia untuk produk lainnya."
+    },
+    {
+      "question": "Siapa yang dapat mengajukan sertifikasi BIS di bawah FMCS?",
+      "answer": "Hanya produsen asing yang sebenarnya (bukan importir atau pedagang) yang dapat mengajukan. Perwakilan India yang Berwenang (AIR) wajib untuk mewakili mereka di India."
+    },
+    {
+      "question": "Berapa lama waktu yang dibutuhkan untuk mendapatkan sertifikat BIS?",
+      "answer": "Proses sertifikasi BIS rata-rata di bawah FMCS membutuhkan waktu 120 hari, tergantung pada kesiapan dokumen, penjadwalan audit, dan waktu pengujian."
+    },
+    {
+      "question": "Apa saja biaya utama yang terlibat dalam sertifikasi BIS?",
+      "answer": "Biaya meliputi biaya aplikasi, biaya audit, biaya pengujian laboratorium, biaya lisensi dan penandaan, serta Bank Garansi Kinerja (PBG) dari bank India yang disetujui RBI."
+    },
+    {
+      "question": "Apakah lisensi BIS dapat diperpanjang?",
+      "answer": "Ya. Lisensi BIS umumnya berlaku selama 1-2 tahun dan dapat diperpanjang setelah memenuhi persyaratan kepatuhan dan pembaruan dokumen."
+    },
+    {
+      "question": "Apa yang terjadi jika produk gagal selama pengujian laboratorium BIS?",
+      "answer": "Jika produk gagal, BIS dapat mengizinkan tindakan perbaikan dan pengujian ulang. Kegagalan yang terus-menerus dapat mengakibatkan penolakan aplikasi."
+    },
+    {
+      "question": "Apakah perlu menyewa konsultan sertifikasi BIS?",
+      "answer": "Tidak wajib tetapi sangat direkomendasikan. Konsultan membantu mengurangi keterlambatan, mengelola kepatuhan, dan meningkatkan peluang persetujuan dengan memastikan keselarasan penuh dengan protokol BIS."
+    },
+    {
+      "question": "Apakah lisensi BIS dapat ditangguhkan atau dibatalkan?",
+      "answer": "Ya. BIS dapat menangguhkan atau membatalkan lisensi karena ketidakpatuhan, kegagalan produk, penyalahgunaan logo ISI, atau penyimpangan audit."
+    },
+    {
+      "question": "Dokumen apa saja yang diperlukan untuk proses sertifikasi BIS?",
+      "answer": "Dokumen meliputi formulir aplikasi FMCS, laporan pengujian, daftar peralatan, sertifikat kalibrasi, tata letak pabrik, surat penunjukan AIR, dan bukti pembayaran biaya."
+    },
+    {
+      "question": "Apakah satu AIR dapat mewakili beberapa aplikasi BIS?",
+      "answer": "Ya, asalkan mereka diberi wewenang untuk setiap proyek dan memiliki kapasitas untuk menangani dokumentasi, audit, dan komunikasi untuk setiap sertifikasi."
+    },
+    {
+      "question": "Apa peran Bank Garansi Kinerja?",
+      "answer": "PBG menjamin BIS bahwa produsen akan mematuhi standar India. Ini dapat dikembalikan saat pembatalan lisensi dan wajib untuk semua aplikasi FMCS yang mendapatkan BIS India."
+    },
+    {
+      "question": "Apakah sertifikasi BIS diakui di luar India?",
+      "answer": "Meskipun sertifikat BIS adalah standar India, ini dihormati dalam konteks perdagangan di banyak wilayah yang menerima kepatuhan India, terutama di Asia dan Afrika."
+    },
+    {
+      "question": "Bagaimana saya tahu jika produk saya memerlukan sertifikasi BIS?",
+      "answer": "Periksa daftar terbaru di situs web resmi BIS atau konsultasikan dengan konsultan BIS untuk memverifikasi apakah produk Anda termasuk dalam sertifikasi wajib."
+    }
+  ]
+}

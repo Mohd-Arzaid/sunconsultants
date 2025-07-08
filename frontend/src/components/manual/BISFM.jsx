@@ -507,6 +507,8 @@ const BISFMContent = () => {
 
 // BIS FAQs Section
 export const ServiceFaq = () => {
+  const { t } = useTranslation("BISFMServiceFaq");
+
   return (
     <section
       id="faqs"
@@ -515,185 +517,30 @@ export const ServiceFaq = () => {
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          Frequently Asked Questions
+          {t("title")}
         </h4>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Can&apos;t find the answer you are looking for?{" "}
+          {t("subtitle")}{" "}
           <a
             href="/contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
           >
-            Reach out to us!
+            {t("contactLink")}
           </a>
         </p>
 
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is BIS certification and why is it important for foreign
-                manufacturers to obtain Indian BIS?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                BIS certification is a regulatory process conducted by the
-                Bureau of Indian Standards to ensure products meet Indian
-                standards. It is essential for foreign manufacturers to gain
-                market access, customs clearance, and consumer trust in India.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What does the ISI mark represent?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The ISI mark indicates conformity to a specific Indian Standard.
-                It is mandatory for products under the BIS certification and
-                must be printed on packaging and products.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Is BIS certification mandatory for all imports to India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                No. BIS certification is mandatory for products listed under the
-                mandatory Indian BIS certification scheme. However, voluntary
-                certification is available for other products.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Who can apply for BIS certification under FMCS?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Only actual foreign manufacturers (not importers or traders) can
-                apply. An Authorized Indian Representative (AIR) is mandatory to
-                represent them in India.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does it take to get a BIS certificate?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The average BIS certification process under FMCS takes 120 days,
-                depending on document readiness, audit scheduling, and testing
-                turnaround times.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the major costs involved in BIS certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Costs include application fees, audit charges, lab testing fees,
-                license and marking fees, and a Performance Bank Guarantee (PBG)
-                from an RBI-approved Indian bank.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can the BIS license be renewed?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes. The BIS license is generally valid for 1–2 years and can be
-                renewed upon meeting compliance and document update
-                requirements.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-8">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What happens if the product fails during BIS lab testing?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                If a product fails, BIS may allow corrective action and
-                re-testing. Persistent failure can result in rejection of the
-                application.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-9">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Is it necessary to hire a BIS certification consultant?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                It&apos;s not mandatory but highly recommended. A consultant
-                helps reduce delays, manage compliance, and improve approval
-                chances by ensuring full alignment with BIS protocols.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-10">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can a BIS license be suspended or cancelled?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes. BIS may suspend or cancel a license for non-compliance,
-                product failure, misuse of the ISI logo, or audit discrepancies.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-11">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are needed for the BIS certification process?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Documents include the FMCS application form, test reports,
-                equipment lists, calibration certificates, factory layout, AIR
-                appointment letter, and proof of fee payment.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-12">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can one AIR represent multiple BIS applications?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, provided they are authorized for each project and have the
-                bandwidth to handle documentation, audits, and communication for
-                each certification.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-13">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is the role of a Performance Bank Guarantee?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                A PBG assures BIS that the manufacturer will comply with Indian
-                standards. It is refundable upon license cancellation and
-                mandatory for all FMCS applications obtaining Indian BIS.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-14">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Is BIS certification recognized outside India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                While the BIS certificate is an Indian standard, it is respected
-                in trade contexts in many regions that accept Indian compliance,
-                especially in Asia and Africa.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-15">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do I know if my product requires BIS certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Check the updated list on the official BIS website or consult
-                with a BIS consultant to verify whether your product falls under
-                mandatory certification.
-              </AccordionContent>
-            </AccordionItem>
+            {t("faqs", { returnObjects: true }).map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
           </Accordion>
         </div>
       </div>
