@@ -1,0 +1,49 @@
+{
+  "title": "Demander un Rappel Gratuit",
+  "description": "Laissez vos coordonnées ci-dessous et nos experts vous rappelleront dans les 24 heures pour discuter de vos besoins en matière de conformité réglementaire.",
+  "form": {
+    "fullName": {
+      "placeholder": "Votre Nom*"
+    },
+    "phoneNumber": {
+      "placeholder": "Numéro de Téléphone*"
+    },
+    "email": {
+      "placeholder": "Adresse E-mail*"
+    },
+    "message": {
+      "placeholder": "Certification Requise*"
+    },
+    "submitButton": {
+      "default": "Demander un Rappel",
+      "loading": "Envoi en cours"
+    }
+  },
+  "validation": {
+    "fullName": {
+      "title": "Veuillez entrer un nom valide.",
+      "description": "Le nom ne doit contenir que des lettres et des espaces."
+    },
+    "phoneNumber": {
+      "title": "Veuillez entrer un numéro de téléphone valide",
+      "description": "Le numéro doit contenir entre 8 et 15 chiffres"
+    },
+    "email": {
+      "title": "Veuillez entrer une adresse e-mail valide.",
+      "description": "Vérifiez si le format de l'e-mail est correct"
+    }
+  },
+  "success": {
+    "title": "Formulaire de contact envoyé avec succès !",
+    "description": "Merci de nous avoir contactés. Notre équipe vous contactera prochainement."
+  },
+  "error": {
+    "title": "Échec de l'envoi du formulaire de contact !",
+    "description": "Une erreur s'est produite. Veuillez vérifier vos informations et réessayer."
+  },
+  "privacyNote": {
+    "text": "En soumettant ce formulaire, vous acceptez notre",
+    "link": "Politique de Confidentialité",
+    "consent": "et consentez à être contacté."
+  }
+}

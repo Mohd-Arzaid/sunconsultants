@@ -1,0 +1,49 @@
+{
+  "title": "무료 콜백 요청",
+  "description": "아래에 귀하의 정보를 남겨주시면 전문가가 24시간 이내에 규제 준수 요구사항에 대해 논의하기 위해 연락드리겠습니다.",
+  "form": {
+    "fullName": {
+      "placeholder": "이름*"
+    },
+    "phoneNumber": {
+      "placeholder": "전화번호*"
+    },
+    "email": {
+      "placeholder": "이메일 주소*"
+    },
+    "message": {
+      "placeholder": "필요한 인증*"
+    },
+    "submitButton": {
+      "default": "콜백 요청",
+      "loading": "전송 중"
+    }
+  },
+  "validation": {
+    "fullName": {
+      "title": "유효한 이름을 입력해주세요.",
+      "description": "이름은 문자와 공백만 포함해야 합니다."
+    },
+    "phoneNumber": {
+      "title": "유효한 전화번호를 입력해주세요",
+      "description": "전화번호는 8-15자리여야 합니다"
+    },
+    "email": {
+      "title": "유효한 이메일 주소를 입력해주세요.",
+      "description": "이메일 형식이 올바른지 확인해주세요"
+    }
+  },
+  "success": {
+    "title": "연락처 양식이 성공적으로 제출되었습니다!",
+    "description": "문의해 주셔서 감사합니다. 곧 담당자가 연락드리겠습니다."
+  },
+  "error": {
+    "title": "연락처 양식 제출에 실패했습니다!",
+    "description": "문제가 발생했습니다. 정보를 확인하고 다시 시도해주세요."
+  },
+  "privacyNote": {
+    "text": "이 양식을 제출함으로써 당사의",
+    "link": "개인정보 처리방침",
+    "consent": "에 동의하고 연락을 받는 것에 동의합니다."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Pourquoi Nous Choisir",
+  "stats": {
+    "experience": {
+      "value": "12+",
+      "label": "Ans d'Exp."
+    },
+    "clients": {
+      "value": "1500+",
+      "label": "Nos Clients"
+    },
+    "successRate": {
+      "value": "100%",
+      "label": "Taux de Réussite"
+    },
+    "countries": {
+      "value": "20+",
+      "label": "Pays Desservis"
+    }
+  },
+  "reasons": [
+    {
+      "title": "Expertise",
+      "description": "Notre équipe apporte plus de 12 ans d'expérience en conformité CDSCO et BIS."
+    },
+    {
+      "title": "Efficacité",
+      "description": "Nous réduisons le temps d'approbation jusqu'à 40% grâce à des processus optimisés."
+    },
+    {
+      "title": "Succès Prouvé",
+      "description": "100% de taux de réussite avec plus de 1500 enregistrements réussis."
+    },
+    {
+      "title": "Client au Centre",
+      "description": "Gestionnaire de compte dédié assurant un service personnalisé."
+    }
+  ],
+  "performance": {
+    "title": "Notre Performance",
+    "metrics": {
+      "speed": {
+        "label": "Rapidité",
+        "value": "95"
+      },
+      "success": {
+        "label": "Réussite",
+        "value": "99"
+      },
+      "satisfaction": {
+        "label": "Satisfaction",
+        "value": "98"
+      }
+    }
+  }
+}

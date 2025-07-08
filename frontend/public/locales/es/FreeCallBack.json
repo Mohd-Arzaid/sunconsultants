@@ -1,0 +1,49 @@
+{
+  "title": "Solicitar una Llamada Gratuita",
+  "description": "Deje sus datos a continuación y nuestros expertos le llamarán en 24 horas para discutir sus necesidades de cumplimiento normativo.",
+  "form": {
+    "fullName": {
+      "placeholder": "Su Nombre*"
+    },
+    "phoneNumber": {
+      "placeholder": "Número de Teléfono*"
+    },
+    "email": {
+      "placeholder": "Correo Electrónico*"
+    },
+    "message": {
+      "placeholder": "Certificación Requerida*"
+    },
+    "submitButton": {
+      "default": "Solicitar Llamada",
+      "loading": "Enviando"
+    }
+  },
+  "validation": {
+    "fullName": {
+      "title": "Por favor, ingrese un nombre válido.",
+      "description": "El nombre solo debe contener letras y espacios."
+    },
+    "phoneNumber": {
+      "title": "Por favor, ingrese un número de teléfono válido",
+      "description": "El número debe tener entre 8 y 15 dígitos"
+    },
+    "email": {
+      "title": "Por favor, ingrese un correo electrónico válido.",
+      "description": "Verifique si el formato del correo es correcto"
+    }
+  },
+  "success": {
+    "title": "¡Formulario de contacto enviado con éxito!",
+    "description": "Gracias por contactarnos. Nuestro equipo se pondrá en contacto con usted pronto."
+  },
+  "error": {
+    "title": "¡Error al enviar el formulario de contacto!",
+    "description": "Algo salió mal. Por favor, revise sus datos e inténtelo de nuevo."
+  },
+  "privacyNote": {
+    "text": "Al enviar este formulario, acepta nuestra",
+    "link": "Política de Privacidad",
+    "consent": "y consiente ser contactado."
+  }
+} 

@@ -1,0 +1,49 @@
+{
+  "title": "Richiedi una Richiamata Gratuita",
+  "description": "Lascia i tuoi dati qui sotto e i nostri esperti ti richiameranno entro 24 ore per discutere le tue esigenze di conformità normativa.",
+  "form": {
+    "fullName": {
+      "placeholder": "Il Tuo Nome*"
+    },
+    "phoneNumber": {
+      "placeholder": "Numero di Telefono*"
+    },
+    "email": {
+      "placeholder": "Indirizzo Email*"
+    },
+    "message": {
+      "placeholder": "Certificazione Richiesta*"
+    },
+    "submitButton": {
+      "default": "Richiedi Richiamata",
+      "loading": "Invio in corso"
+    }
+  },
+  "validation": {
+    "fullName": {
+      "title": "Inserisci un nome valido.",
+      "description": "Il nome deve contenere solo lettere e spazi."
+    },
+    "phoneNumber": {
+      "title": "Inserisci un numero di telefono valido",
+      "description": "Il numero deve contenere tra 8 e 15 cifre"
+    },
+    "email": {
+      "title": "Inserisci un indirizzo email valido.",
+      "description": "Verifica che il formato dell'email sia corretto"
+    }
+  },
+  "success": {
+    "title": "Modulo di contatto inviato con successo!",
+    "description": "Grazie per averci contattato. Il nostro team ti contatterà a breve."
+  },
+  "error": {
+    "title": "Invio del modulo di contatto fallito!",
+    "description": "Qualcosa è andato storto. Controlla i tuoi dati e riprova."
+  },
+  "privacyNote": {
+    "text": "Inviando questo modulo, accetti la nostra",
+    "link": "Informativa sulla Privacy",
+    "consent": "e acconsenti ad essere contattato."
+  }
+}

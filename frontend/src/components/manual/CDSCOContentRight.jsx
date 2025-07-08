@@ -81,30 +81,18 @@ const CDSCOContentRight = () => {
 export default CDSCOContentRight;
 
 const WhyChooseUs = () => {
-  const reasons = [
-    {
-      icon: <Shield className="h-8 w-8 text-blue-600" />,
-      title: "Expert Guidance",
-      description:
-        "Our team brings 12+ years of experience in CDSCO and BIS compliance.",
-    },
-    {
-      icon: <Clock className="h-8 w-8 text-emerald-600" />,
-      title: "Time Efficient",
-      description:
-        "We reduce approval time by up to 40% with streamlined processes.",
-    },
-    {
-      icon: <Award className="h-8 w-8 text-amber-600" />,
-      title: "Proven Success",
-      description: "100% success rate with 1500+ successful registrations.",
-    },
-    {
-      icon: <HeartHandshake className="h-8 w-8 text-purple-600" />,
-      title: "Client-Centric",
-      description: "Dedicated account manager ensuring personalized service.",
-    },
-  ];
+  const { t } = useTranslation("WhyChooseUs");
+
+  const reasons = t("reasons", { returnObjects: true });
+  const stats = t("stats", { returnObjects: true });
+  const performance = t("performance", { returnObjects: true });
+
+  const reasonIcons = {
+    0: <Shield className="h-8 w-8 text-blue-600" />,
+    1: <Clock className="h-8 w-8 text-emerald-600" />,
+    2: <Award className="h-8 w-8 text-amber-600" />,
+    3: <HeartHandshake className="h-8 w-8 text-purple-600" />,
+  };
 
   return (
     <div className="w-full md:w-[360px] p-5 rounded-lg bg-gradient-to-br from-slate-50 to-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
@@ -112,29 +100,43 @@ const WhyChooseUs = () => {
       <div className="flex gap-2 items-center">
         <Lightbulb className="text-[#232327]" />
         <h1 className="text-xl font-geist font-semibold text-[#232327]">
-          Why Choose Us
+          {t("title")}
         </h1>
       </div>
 
       {/* Highlight Stats */}
       <div className="mt-4 grid grid-cols-2 gap-2">
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-blue-200">
-          <h3 className="text-2xl font-bold text-blue-600 font-geist">12+</h3>
-          <p className="text-xs text-gray-600 font-geist">Years Exp.</p>
+          <h3 className="text-2xl font-bold text-blue-600 font-geist">
+            {stats.experience.value}
+          </h3>
+          <p className="text-xs text-gray-600 font-geist">
+            {stats.experience.label}
+          </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-emerald-200">
           <h3 className="text-2xl font-bold text-emerald-600 font-geist">
-            1500+
+            {stats.clients.value}
           </h3>
-          <p className="text-xs text-gray-600 font-geist">Our Clients</p>
+          <p className="text-xs text-gray-600 font-geist">
+            {stats.clients.label}
+          </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-amber-200">
-          <h3 className="text-2xl font-bold text-amber-600 font-geist">100%</h3>
-          <p className="text-xs text-gray-600 font-geist">Success Rate</p>
+          <h3 className="text-2xl font-bold text-amber-600 font-geist">
+            {stats.successRate.value}
+          </h3>
+          <p className="text-xs text-gray-600 font-geist">
+            {stats.successRate.label}
+          </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-purple-200">
-          <h3 className="text-2xl font-bold text-purple-600 font-geist">20+</h3>
-          <p className="text-xs text-gray-600 font-geist">Countries Served</p>
+          <h3 className="text-2xl font-bold text-purple-600 font-geist">
+            {stats.countries.value}
+          </h3>
+          <p className="text-xs text-gray-600 font-geist">
+            {stats.countries.label}
+          </p>
         </div>
       </div>
 
@@ -147,7 +149,7 @@ const WhyChooseUs = () => {
           >
             <div className="flex gap-3 items-start">
               <div className="p-1.5 bg-gray-50 rounded-lg group-hover:bg-blue-50">
-                {reason.icon}
+                {reasonIcons[index]}
               </div>
               <div>
                 <h3 className="font-geist font-semibold text-gray-900 text-sm">
@@ -167,7 +169,7 @@ const WhyChooseUs = () => {
         <div className="flex items-center gap-1 mb-2">
           <BarChart className="h-4 w-4 text-blue-600" />
           <span className="text-sm font-medium text-gray-900 font-geist">
-            Our Performance
+            {performance.title}
           </span>
         </div>
         <div className="grid grid-cols-3 gap-2">
@@ -175,29 +177,33 @@ const WhyChooseUs = () => {
             <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
               <div
                 className="h-full bg-blue-600 rounded-full"
-                style={{ width: "95%" }}
+                style={{ width: `${performance.metrics.speed.value}%` }}
               ></div>
             </div>
-            <span className="text-xs text-gray-600 font-geist">Speed</span>
+            <span className="text-xs text-gray-600 font-geist">
+              {performance.metrics.speed.label}
+            </span>
           </div>
           <div className="text-center">
             <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
               <div
                 className="h-full bg-emerald-600 rounded-full"
-                style={{ width: "99%" }}
+                style={{ width: `${performance.metrics.success.value}%` }}
               ></div>
             </div>
-            <span className="text-xs text-gray-600 font-geist">Success</span>
+            <span className="text-xs text-gray-600 font-geist">
+              {performance.metrics.success.label}
+            </span>
           </div>
           <div className="text-center">
             <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
               <div
                 className="h-full bg-amber-600 rounded-full"
-                style={{ width: "98%" }}
+                style={{ width: `${performance.metrics.satisfaction.value}%` }}
               ></div>
             </div>
             <span className="text-xs text-gray-600 font-geist">
-              Satisfaction
+              {performance.metrics.satisfaction.label}
             </span>
           </div>
         </div>
@@ -732,34 +738,134 @@ const LatestNotification = () => {
 };
 
 const FreeCallBack = () => {
+  const { t } = useTranslation("FreeCallBack");
   const [loading, setLoading] = useState(false);
 
   // Function to get page name based on URL
   const getPageName = () => {
     const path = window.location.pathname;
-
     // Service pages
-    if (path.includes("/services/cdsco-registration-certification"))
+    if (path.includes("/cdsco-registration-certification"))
       return "CDSCO Registration";
-    if (path.includes("/services/bis-mark-foreign")) return "BIS Mark Foreign";
-    if (path.includes("/services/epr-registration")) return "EPR Registration";
-    if (path.includes("/services/bis-certification"))
+    if (
+      path.includes(
+        "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+    if (
+      path.includes(
+        "/en/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/de/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/es/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/fr/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/id/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/it/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/it/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/ja/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/ko/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/nl/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/th/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/vi/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (path.includes("/a-guide-on-how-to-obtain-epr-certificate"))
+      return "EPR Registration";
+    if (path.includes("/what-is-bis-certificate-indian-bis"))
       return "BIS Certification";
-    if (path.includes("/services/lmpc-registration"))
+    if (path.includes("/a-guide-on-how-to-obtain-lmpc-certificate"))
       return "LMPC Registration";
-    if (path.includes("/services/plastic-waste")) return "Plastic Waste";
-    if (path.includes("/services/legal-metrology")) return "Legal Metrology";
-    if (path.includes("/services/isi-mark-indian")) return "ISI Mark Indian";
-    if (path.includes("/services/battery-waste")) return "Battery Waste";
-    if (path.includes("/services/crs-registration")) return "CRS Registration";
-    if (path.includes("/services/peso")) return "PESO";
-    if (path.includes("/services/tec")) return "TEC";
-    if (path.includes("/services/wpc")) return "WPC";
-    if (path.includes("/services/rohs")) return "ROHS";
-    if (path.includes("/services/bee")) return "BEE";
-    if (path.includes("/services/ce-certification")) return "CE Certification";
-    if (path.includes("/services/emi-emc")) return "EMI EMC";
-    if (path.includes("/services/cb-certification")) return "CB Certification";
+    if (path.includes("/epr-certificate-for-plastic-waste-management-pwm"))
+      return "Plastic Waste";
+    if (path.includes("/what-is-legal-metrology-or-lmpc-certificate"))
+      return "Legal Metrology";
+    if (path.includes("a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+    if (path.includes("/epr-certificate-for-battery-waste-management-bwm"))
+      return "Battery Waste";
+    if (path.includes("/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+    if (
+      path.includes("/information-about-peso-certification-peso-license-india")
+    )
+      return "PESO";
+    if (path.includes("/information-about-tec-certificate-mtcte")) return "TEC";
+    if (path.includes("/information-about-wpc-certificate-eta-approval"))
+      return "WPC";
+    if (path.includes("/restriction-of-hazardous-substance-rohs-certificate"))
+      return "ROHS";
+    if (path.includes("/bee-certification")) return "BEE";
+    if (path.includes("/ce-certification")) return "CE Certification";
+    if (path.includes("/emi-emc-certification")) return "EMI EMC";
+    if (path.includes("/cb-certification")) return "CB Certification";
   };
 
   const [formData, setFormData] = useState({
@@ -787,11 +893,10 @@ const FreeCallBack = () => {
     // Full name validation
     const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
     if (!nameRegex.test(fullName)) {
-      // toast.error("Please Enter a valid Full Name.");
       toast({
         variant: "destructive",
-        title: "Please Enter a valid Full Name.",
-        description: "Name Should only Contain Letters and Spaces.",
+        title: t("validation.fullName.title"),
+        description: t("validation.fullName.description"),
       });
       setLoading(false);
       return;
@@ -800,11 +905,10 @@ const FreeCallBack = () => {
     // Phone number validation
     const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
     if (!phoneRegex.test(phoneNumber)) {
-      // toast.error("Please Enter a Valid Phone number (8-15 digits)");
       toast({
         variant: "destructive",
-        title: "Please Enter a Valid Phone Number",
-        description: "Phone Number Should be (8-15 digits)",
+        title: t("validation.phoneNumber.title"),
+        description: t("validation.phoneNumber.description"),
       });
       setLoading(false);
       return;
@@ -823,12 +927,14 @@ const FreeCallBack = () => {
     if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
       toast({
         variant: "destructive",
-        title: "Please Enter a valid Email Address.",
-        description: "Check if Your Email Format is Correct",
+        title: t("validation.email.title"),
+        description: t("validation.email.description"),
       });
       setLoading(false);
       return;
     }
+
+    console.log(formData);
 
     try {
       const response = await axios.post(
@@ -839,11 +945,9 @@ const FreeCallBack = () => {
       if (!response.data.success) {
         throw new Error(response.data.message);
       }
-      // toast.success("Contact form submit successfully!");
       toast({
-        title: "Contact form submit successfully!",
-        description:
-          "Thank you for Contacting Us. Our Team will Reach out to you Shortly.",
+        title: t("success.title"),
+        description: t("success.description"),
       });
 
       setFormData({
@@ -855,14 +959,11 @@ const FreeCallBack = () => {
         pageName: getPageName(),
       });
     } catch (error) {
-      const errorMessage =
-        error.response?.data?.message || "Something went wrong";
-      // toast.error(errorMessage || "Failed to submit contact form details!");
+      const errorMessage = error.response?.data?.message || t("error.title");
       toast({
         variant: "destructive",
-        title: errorMessage || "Failed to submit contact form details!",
-        description:
-          "Something Went Wrong. Please Check Your Details and Try Again.",
+        title: errorMessage,
+        description: t("error.description"),
       });
     } finally {
       setLoading(false);
@@ -875,14 +976,13 @@ const FreeCallBack = () => {
       <div className="flex gap-2 items-center">
         <PhoneCall className="text-[#232327]" />
         <h1 className="text-xl font-geist font-semibold text-[#232327]">
-          Request a Free Callback
+          {t("title")}
         </h1>
       </div>
 
       {/* Intro Text */}
       <p className="mt-3 text-sm text-gray-600 font-geist">
-        Leave your details below and our experts will call you back within 24
-        hours to discuss your regulatory compliance needs.
+        {t("description")}
       </p>
 
       {/* Form */}
@@ -899,7 +999,7 @@ const FreeCallBack = () => {
             onChange={handleOnChange}
             disabled={loading}
             required
-            placeholder="Your Name*"
+            placeholder={t("form.fullName.placeholder")}
             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
           />
         </div>
@@ -916,7 +1016,7 @@ const FreeCallBack = () => {
             onChange={handleOnChange}
             disabled={loading}
             required
-            placeholder="Phone Number*"
+            placeholder={t("form.phoneNumber.placeholder")}
             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
           />
         </div>
@@ -933,7 +1033,7 @@ const FreeCallBack = () => {
             onChange={handleOnChange}
             disabled={loading}
             required
-            placeholder="Email Address*"
+            placeholder={t("form.email.placeholder")}
             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
           />
         </div>
@@ -949,7 +1049,7 @@ const FreeCallBack = () => {
             onChange={handleOnChange}
             disabled={loading}
             required
-            placeholder="Required Certification*"
+            placeholder={t("form.message.placeholder")}
             rows="3"
             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
           ></textarea>
@@ -965,11 +1065,11 @@ const FreeCallBack = () => {
             {loading ? (
               <div className="flex gap-3 items-center justify-center">
                 <ClockLoader size={22} color="#fff" />
-                <span>Sending</span>
+                <span>{t("form.submitButton.loading")}</span>
               </div>
             ) : (
               <>
-                Request Callback
+                {t("form.submitButton.default")}
                 <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </>
             )}
@@ -980,11 +1080,11 @@ const FreeCallBack = () => {
 
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
-        By submitting this form, you agree to our{" "}
+        {t("privacyNote.text")}{" "}
         <a href="#" className="text-blue-600 hover:underline">
-          Privacy Policy
+          {t("privacyNote.link")}
         </a>{" "}
-        and consent to being contacted.
+        {t("privacyNote.consent")}
       </p>
     </div>
   );

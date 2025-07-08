@@ -1,0 +1,49 @@
+{
+  "title": "Vraag een Gratis Terugbelverzoek",
+  "description": "Laat hieronder uw gegevens achter en onze experts bellen u binnen 24 uur terug om uw regelgevingseisen te bespreken.",
+  "form": {
+    "fullName": {
+      "placeholder": "Uw Naam*"
+    },
+    "phoneNumber": {
+      "placeholder": "Telefoonnummer*"
+    },
+    "email": {
+      "placeholder": "E-mailadres*"
+    },
+    "message": {
+      "placeholder": "Vereiste Certificering*"
+    },
+    "submitButton": {
+      "default": "Terugbelverzoek",
+      "loading": "Verzenden"
+    }
+  },
+  "validation": {
+    "fullName": {
+      "title": "Voer een geldige naam in.",
+      "description": "Naam mag alleen letters en spaties bevatten."
+    },
+    "phoneNumber": {
+      "title": "Voer een geldig telefoonnummer in",
+      "description": "Telefoonnummer moet 8-15 cijfers bevatten"
+    },
+    "email": {
+      "title": "Voer een geldig e-mailadres in.",
+      "description": "Controleer of het e-mailformaat correct is"
+    }
+  },
+  "success": {
+    "title": "Contactformulier succesvol verzonden!",
+    "description": "Bedankt voor uw bericht. Ons team neemt binnenkort contact met u op."
+  },
+  "error": {
+    "title": "Verzenden van contactformulier mislukt!",
+    "description": "Er is iets misgegaan. Controleer uw gegevens en probeer het opnieuw."
+  },
+  "privacyNote": {
+    "text": "Door dit formulier in te dienen, gaat u akkoord met ons",
+    "link": "Privacybeleid",
+    "consent": "en stemt u ermee in om gecontacteerd te worden."
+  }
+}

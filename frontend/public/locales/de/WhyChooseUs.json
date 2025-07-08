@@ -1,0 +1,56 @@
+{
+  "title": "Warum uns wählen",
+  "stats": {
+    "experience": {
+      "value": "12+",
+      "label": "Jahre Erfahrung"
+    },
+    "clients": {
+      "value": "1500+",
+      "label": "Unsere Kunden"
+    },
+    "successRate": {
+      "value": "100%",
+      "label": "Erfolgsquote"
+    },
+    "countries": {
+      "value": "20+",
+      "label": "Länder bedient"
+    }
+  },
+  "reasons": [
+    {
+      "title": "Expertenwissen",
+      "description": "Unser Team bringt 12+ Jahre Erfahrung in CDSCO- und BIS-Compliance mit."
+    },
+    {
+      "title": "Zeiteffizient",
+      "description": "Wir reduzieren die Genehmigungszeit durch optimierte Prozesse um bis zu 40%."
+    },
+    {
+      "title": "Bewährter Erfolg",
+      "description": "100% Erfolgsquote mit über 1500 erfolgreichen Registrierungen."
+    },
+    {
+      "title": "Kundenorientiert",
+      "description": "Dedizierter Account Manager für persönlichen Service."
+    }
+  ],
+  "performance": {
+    "title": "Unsere Leistung",
+    "metrics": {
+      "speed": {
+        "label": "Geschwindigkeit",
+        "value": "95"
+      },
+      "success": {
+        "label": "Erfolg",
+        "value": "99"
+      },
+      "satisfaction": {
+        "label": "Zufriedenheit",
+        "value": "98"
+      }
+    }
+  }
+}

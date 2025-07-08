@@ -1,0 +1,49 @@
+{
+  "title": "Minta Panggilan Balik Gratis",
+  "description": "Tinggalkan detail Anda di bawah ini dan ahli kami akan menghubungi Anda dalam 24 jam untuk membahas kebutuhan kepatuhan regulasi Anda.",
+  "form": {
+    "fullName": {
+      "placeholder": "Nama Lengkap*"
+    },
+    "phoneNumber": {
+      "placeholder": "Nomor Telepon*"
+    },
+    "email": {
+      "placeholder": "Alamat Email*"
+    },
+    "message": {
+      "placeholder": "Sertifikasi yang Diperlukan*"
+    },
+    "submitButton": {
+      "default": "Minta Panggilan Balik",
+      "loading": "Mengirim"
+    }
+  },
+  "validation": {
+    "fullName": {
+      "title": "Mohon masukkan nama yang valid.",
+      "description": "Nama hanya boleh berisi huruf dan spasi."
+    },
+    "phoneNumber": {
+      "title": "Mohon masukkan nomor telepon yang valid",
+      "description": "Nomor telepon harus berisi 8-15 digit"
+    },
+    "email": {
+      "title": "Mohon masukkan alamat email yang valid.",
+      "description": "Periksa apakah format email sudah benar"
+    }
+  },
+  "success": {
+    "title": "Formulir kontak berhasil dikirim!",
+    "description": "Terima kasih telah menghubungi kami. Tim kami akan segera menghubungi Anda."
+  },
+  "error": {
+    "title": "Gagal mengirim formulir kontak!",
+    "description": "Terjadi kesalahan. Mohon periksa detail Anda dan coba lagi."
+  },
+  "privacyNote": {
+    "text": "Dengan mengirimkan formulir ini, Anda menyetujui",
+    "link": "Kebijakan Privasi",
+    "consent": "kami dan menyetujui untuk dihubungi."
+  }
+}

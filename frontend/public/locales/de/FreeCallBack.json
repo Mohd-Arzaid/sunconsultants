@@ -1,0 +1,49 @@
+{
+  "title": "Kostenlosen Rückruf anfordern",
+  "description": "Hinterlassen Sie Ihre Daten und unsere Experten rufen Sie innerhalb von 24 Stunden zurück, um Ihre regulatorischen Compliance-Anforderungen zu besprechen.",
+  "form": {
+    "fullName": {
+      "placeholder": "Ihr Name*"
+    },
+    "phoneNumber": {
+      "placeholder": "Telefonnummer*"
+    },
+    "email": {
+      "placeholder": "E-Mail-Adresse*"
+    },
+    "message": {
+      "placeholder": "Erforderliche Zertifizierung*"
+    },
+    "submitButton": {
+      "default": "Rückruf anfordern",
+      "loading": "Wird gesendet"
+    }
+  },
+  "validation": {
+    "fullName": {
+      "title": "Bitte geben Sie einen gültigen Namen ein.",
+      "description": "Der Name sollte nur Buchstaben und Leerzeichen enthalten."
+    },
+    "phoneNumber": {
+      "title": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "description": "Die Telefonnummer sollte 8-15 Ziffern enthalten"
+    },
+    "email": {
+      "title": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "description": "Überprüfen Sie, ob das E-Mail-Format korrekt ist"
+    }
+  },
+  "success": {
+    "title": "Kontaktformular erfolgreich übermittelt!",
+    "description": "Vielen Dank für Ihre Kontaktaufnahme. Unser Team wird sich in Kürze bei Ihnen melden."
+  },
+  "error": {
+    "title": "Fehler beim Übermitteln des Kontaktformulars!",
+    "description": "Etwas ist schief gelaufen. Bitte überprüfen Sie Ihre Angaben und versuchen Sie es erneut."
+  },
+  "privacyNote": {
+    "text": "Mit dem Absenden dieses Formulars stimmen Sie unserer",
+    "link": "Datenschutzerklärung",
+    "consent": "zu und willigen in die Kontaktaufnahme ein."
+  }
+}

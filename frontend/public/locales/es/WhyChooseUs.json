@@ -1,0 +1,56 @@
+{
+  "title": "Por Qué Elegirnos",
+  "stats": {
+    "experience": {
+      "value": "12+",
+      "label": "Años Exp."
+    },
+    "clients": {
+      "value": "1500+",
+      "label": "Nuestros Clientes"
+    },
+    "successRate": {
+      "value": "100%",
+      "label": "Tasa de Éxito"
+    },
+    "countries": {
+      "value": "20+",
+      "label": "Países Atendidos"
+    }
+  },
+  "reasons": [
+    {
+      "title": "Guía Experta",
+      "description": "Nuestro equipo aporta más de 12 años de experiencia en cumplimiento CDSCO y BIS."
+    },
+    {
+      "title": "Eficiencia en Tiempo",
+      "description": "Reducimos el tiempo de aprobación hasta en un 40% con procesos optimizados."
+    },
+    {
+      "title": "Éxito Comprobado",
+      "description": "100% de tasa de éxito con más de 1500 registros exitosos."
+    },
+    {
+      "title": "Centrado en el Cliente",
+      "description": "Gerente de cuenta dedicado que asegura un servicio personalizado."
+    }
+  ],
+  "performance": {
+    "title": "Nuestro Rendimiento",
+    "metrics": {
+      "speed": {
+        "label": "Velocidad",
+        "value": "95"
+      },
+      "success": {
+        "label": "Éxito",
+        "value": "99"
+      },
+      "satisfaction": {
+        "label": "Satisfacción",
+        "value": "98"
+      }
+    }
+  }
+}

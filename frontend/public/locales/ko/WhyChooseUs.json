@@ -1,0 +1,56 @@
+{
+  "title": "우리를 선택하는 이유",
+  "stats": {
+    "experience": {
+      "value": "12+",
+      "label": "년의 경험"
+    },
+    "clients": {
+      "value": "1500+",
+      "label": "고객사"
+    },
+    "successRate": {
+      "value": "100%",
+      "label": "성공률"
+    },
+    "countries": {
+      "value": "20+",
+      "label": "서비스 국가"
+    }
+  },
+  "reasons": [
+    {
+      "title": "전문가 지도",
+      "description": "우리 팀은 CDSCO 및 BIS 규정 준수에서 12년 이상의 경험을 보유하고 있습니다."
+    },
+    {
+      "title": "시간 효율성",
+      "description": "최적화된 프로세스로 승인 시간을 최대 40% 단축합니다."
+    },
+    {
+      "title": "입증된 성공",
+      "description": "1500건 이상의 등록으로 100% 성공률 달성."
+    },
+    {
+      "title": "고객 중심",
+      "description": "전담 계정 관리자가 맞춤형 서비스를 보장합니다."
+    }
+  ],
+  "performance": {
+    "title": "우리의 성과",
+    "metrics": {
+      "speed": {
+        "label": "속도",
+        "value": "95"
+      },
+      "success": {
+        "label": "성공",
+        "value": "99"
+      },
+      "satisfaction": {
+        "label": "만족도",
+        "value": "98"
+      }
+    }
+  }
+}
