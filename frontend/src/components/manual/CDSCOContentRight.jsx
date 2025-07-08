@@ -33,6 +33,7 @@ import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
 import { Link, useLocation } from "react-router-dom";
 import { Marquee } from "@/components/magicui/marquee";
+import { useTranslation } from "react-i18next";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const CDSCOContentRight = () => {
@@ -42,6 +43,17 @@ const CDSCOContentRight = () => {
   // List of paths where LatestBlog and LatestNotification should be shown
   const showComponentsPaths = [
     "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/en/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/de/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/es/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/fr/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/id/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/it/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/ja/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/ko/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/nl/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/th/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/vi/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
     "/a-guide-to-bis-certification-indian-bis",
     "/what-is-bis-certificate-indian-bis",
     "/what-is-crs-bis-or-crs-registration",
@@ -195,173 +207,38 @@ const WhyChooseUs = () => {
 };
 
 export const LatestBlog = () => {
-  const blogPosts = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "BIS",
-      title: "BIS certification for Work chairs",
-      url: "/latest-notification/work-chairs",
-    },
-    {
-      image:
-        "https://www.housingunits.co.uk/blog/2024/01/matching-bar-stools-dining-chairs/comerenowithmeb/",
-      category: "BIS",
-      title: "BIS certification for Chairs and stools",
-      url: "/latest-notification/and-stools",
-    },
-    {
-      image:
-        "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
-      category: "BIS",
-      title: "BIS Notification for Tables and desks",
-      url: "/latest-notification/and-desks",
-    },
-    {
-      image: "https://alephindia.in/images/isi/furniture-storage-units.png",
-      category: "BIS",
-      title: "BIS Notification for Storage units",
-      url: "/latest-notification/storage-units",
-    },
-    {
-      image: "https://alephindia.in/images/isi/furniture-bunk-beds.png",
-      category: "BIS",
-      title: "BIS Notification for Bunk beds",
-      url: "/latest-notification/bunk-beds",
-    },
-
-    {
-      image:
-        "https://jharkhandstatenews.com/assets/admin/uploads/topstory_img/199879_1693229978.jpg",
-      category: "BIS",
-      title: "BIS Notification for Solar DC Cable and Fire Survival Cable",
-      url: "/latest-notification/survival-cable",
-    },
-
-    {
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
-      category: "BIS",
-      title:
-        "BIS Notification for Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
-      url: "/latest-notification/and-forgings",
-    },
-
-    {
-      image:
-        "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "BIS",
-      title: "BIS Notification for H Acid",
-      url: "/latest-notification/h-acid",
-    },
-
-    {
-      image:
-        "https://images.unsplash.com/photo-1617155093730-a8bf47be792d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "BIS",
-      title: "BIS Notification for K Acid",
-      url: "/latest-notification/k-acid",
-    },
-
-    {
-      image:
-        "https://media.istockphoto.com/id/940248330/photo/potassium-permanganate-sodium-sulfate-mixture.jpg?s=612x612&w=0&k=20&c=lhxvzbD2cVVOJKQyLIOqSaq9dlJTtDH07kHoBT5q7_4=",
-      category: "BIS",
-      title: "BIS Notification for Vinyl Sulphone",
-      url: "/latest-notification/vinyl-sulphone",
-    },
-
-    {
-      image:
-        "https://m.media-amazon.com/images/I/71qI8OoNdtL._AC_UF1000,1000_QL80_.jpg",
-      category: "BIS",
-      title: "BIS Notification for Electric Fence Energizers",
-      url: "/latest-notification/fence-energizers",
-    },
-
-    {
-      image:
-        "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "BIS",
-      title: "BIS Notification for Clothes Washing Machines",
-      url: "/latest-notification/washing-machines",
-    },
-
-    {
-      image: "https://m.media-amazon.com/images/I/31waXELONZL.jpg",
-      category: "BIS",
-      title: "BIS Notification for Gypsum Plaster Boards",
-      url: "/latest-notification/plaster-boards",
-    },
-
-    {
-      image:
-        "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
-      category: "BIS",
-      title:
-        "BIS Notification for Aluminium alloy tubes for irrigation purposes -welded tubes",
-      url: "/latest-notification/-welded-tubes",
-    },
-
-    {
-      image: "https://www.sunnysteel.com/img/extruded-finned-tube.jpg",
-      category: "BIS",
-      title:
-        "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
-      url: "/latest-notification/extruded-tube",
-    },
-
-    {
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
-      category: "BIS",
-      title:
-        "BIS Notification for EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
-      url: "/latest-notification/and-rolling",
-    },
-
-    {
-      image:
-        "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
-      category: "BIS",
-      title:
-        "BIS Notification for Wrought aluminium and aluminium alloy bars, rods and sections",
-      url: "/latest-notification/and-sections",
-    },
-
-    {
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/3/EC/HR/GU/184505254/regular-gypsum-plasterboard.jpg",
-      category: "BIS",
-      title: "BIS Notification for Gypsum Plaster Boards",
-      url: "/latest-notification/plaster-boards",
-    },
-  ];
+  const { t } = useTranslation("LatestBlog");
+  const blogPosts = t("posts", { returnObjects: true });
 
   return (
     <div className="w-full md:w-[360px] p-6 rounded-lg bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       <div className="flex gap-2 items-center ">
         <AlignLeft className="text-[#232327]" />
         <h1 className="text-xl font-geist font-semibold  text-[#232327]">
-          Latest Blogs
+          {t("title")}
         </h1>
       </div>
       <div className="relative h-[400px] overflow-hidden mt-5">
         <Marquee vertical pauseOnHover={true} className="[--duration:20s]">
           {blogPosts.map((post, index) => (
             <div key={index} className="mb-5">
-              <div className=" group flex gap-4  transition-all duration-300">
-                <img
-                  src={post.image || "/placeholder.svg"}
-                  alt="Post Image"
-                  className="h-20 w-20 object-cover shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105 "
-                />
+              <div className="group flex gap-4 transition-all duration-300">
+                <div className="h-20 w-20 overflow-hidden rounded-md">
+                  <img
+                    src={post.image || "/placeholder.svg"}
+                    alt={post.title}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    onError={(e) => {
+                      e.target.src = "/placeholder.svg";
+                    }}
+                  />
+                </div>
 
-                <div className=" h-20 w-20 flex flex-1 flex-col justify-between">
+                <div className="flex-1">
                   <div className="space-y-2">
                     <Badge
                       variant="outline"
-                      className=" bg-emerald-50 font-geist text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
+                      className="bg-emerald-50 font-geist text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
                     >
                       {post.category}
                     </Badge>
@@ -369,15 +246,15 @@ export const LatestBlog = () => {
                       {post.title}
                     </p>
 
-                    <a href={post.url}>
+                    <Link to={post.url}>
                       <Button
                         variant="link"
                         className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
                       >
-                        Read More
+                        {t("readMore")}
                         <ArrowRightIcon className="-ml-1 mt-0.5" />
                       </Button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -391,13 +268,13 @@ export const LatestBlog = () => {
       </div>
 
       {/* View More Button */}
-      <div className="mt-5 w-full  flex justify-center">
+      <div className="mt-5 w-full flex justify-center">
         <Link to="/latest-notifications" className="w-full">
           <Button
             variant="outline"
-            className="font-geist w-full bg-[#212126] hover:bg-[#212126]/90 text-white border-gray-300  hover:bg-gray-100"
+            className="font-geist w-full bg-[#212126] hover:bg-[#212126]/90 text-white border-gray-300 hover:bg-gray-100"
           >
-            View All Blogs
+            {t("viewAll")}
             <ArrowRightIcon className="ml-1 h-4 w-4" />
           </Button>
         </Link>

@@ -1,0 +1,22 @@
+{
+  "title": "Tentang Penulis",
+  "authorInfo": {
+    "name": "Dhruv Aggarwal",
+    "position": "Kepala Operasional di Sun Certifications India"
+  },
+  "experience": {
+    "title": "Pengalaman",
+    "details": "Lebih dari 10 tahun & Menangani lebih dari 1000 proyek"
+  },
+  "achievements": "Dianugerahi oleh banyak organisasi India dan Internasional",
+  "contact": {
+    "linkedin": {
+      "text": "Terhubung dengan saya",
+      "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+    },
+    "email": {
+      "label": "Kontak",
+      "address": "admin@bis-certifications.com"
+    }
+  }
+}

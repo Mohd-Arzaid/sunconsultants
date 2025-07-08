@@ -1,0 +1,22 @@
+{
+  "title": "저자 소개",
+  "authorInfo": {
+    "name": "드루브 아가르왈",
+    "position": "Sun Certifications India 운영 책임자"
+  },
+  "experience": {
+    "title": "경력",
+    "details": "10년 이상 & 1000개 이상의 프로젝트 수행"
+  },
+  "achievements": "다수의 인도 및 국제 기관으로부터 수상",
+  "contact": {
+    "linkedin": {
+      "text": "LinkedIn에서 연결하기",
+      "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+    },
+    "email": {
+      "label": "연락처",
+      "address": "admin@bis-certifications.com"
+    }
+  }
+}

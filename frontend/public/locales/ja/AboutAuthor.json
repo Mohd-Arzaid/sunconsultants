@@ -1,0 +1,22 @@
+{
+  "title": "著者について",
+  "authorInfo": {
+    "name": "ドルーブ・アガルワル",
+    "position": "Sun Certifications India オペレーション責任者"
+  },
+  "experience": {
+    "title": "経験",
+    "details": "10年以上の経験と1000件以上のプロジェクト実績"
+  },
+  "achievements": "インド国内外の多くの組織から表彰",
+  "contact": {
+    "linkedin": {
+      "text": "LinkedInでつながる",
+      "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+    },
+    "email": {
+      "label": "連絡先",
+      "address": "admin@bis-certifications.com"
+    }
+  }
+}

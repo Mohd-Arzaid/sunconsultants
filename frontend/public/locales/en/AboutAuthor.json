@@ -1,0 +1,22 @@
+{
+  "title": "About the Author",
+  "authorInfo": {
+    "name": "Dhruv Aggarwal",
+    "position": "Head of Operations at Sun Certifications India"
+  },
+  "experience": {
+    "title": "Experience",
+    "details": "10+ years & Handled 1000+ projects"
+  },
+  "achievements": "Awarded by many Indian and International organisations",
+  "contact": {
+    "linkedin": {
+      "text": "Connect with me",
+      "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+    },
+    "email": {
+      "label": "Contact",
+      "address": "admin@bis-certifications.com"
+    }
+  }
+}

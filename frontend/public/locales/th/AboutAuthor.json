@@ -1,0 +1,22 @@
+{
+  "title": "เกี่ยวกับผู้เขียน",
+  "authorInfo": {
+    "name": "ดรูฟ อักการ์วาล",
+    "position": "หัวหน้าฝ่ายปฏิบัติการที่ Sun Certifications India"
+  },
+  "experience": {
+    "title": "ประสบการณ์",
+    "details": "มากกว่า 10 ปี และดูแลโครงการมากกว่า 1000 โครงการ"
+  },
+  "achievements": "ได้รับรางวัลจากองค์กรในอินเดียและนานาชาติมากมาย",
+  "contact": {
+    "linkedin": {
+      "text": "เชื่อมต่อกับฉัน",
+      "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+    },
+    "email": {
+      "label": "ติดต่อ",
+      "address": "admin@bis-certifications.com"
+    }
+  }
+}

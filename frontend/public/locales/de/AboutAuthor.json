@@ -1,0 +1,22 @@
+{
+  "title": "Über den Autor",
+  "authorInfo": {
+    "name": "Dhruv Aggarwal",
+    "position": "Leiter der Geschäftsführung bei Sun Certifications India"
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "details": "Über 10 Jahre & Mehr als 1000 Projekte betreut"
+  },
+  "achievements": "Ausgezeichnet von vielen indischen und internationalen Organisationen",
+  "contact": {
+    "linkedin": {
+      "text": "Verbinden Sie sich mit mir",
+      "url": "https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+    },
+    "email": {
+      "label": "Kontakt",
+      "address": "admin@bis-certifications.com"
+    }
+  }
+}
