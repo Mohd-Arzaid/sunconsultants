@@ -615,8 +615,9 @@ const BISCRSHero = () => {
 };
 
 const BISCRSIndex = () => {
+  const { t } = useTranslation("BISCRSIndex");
   const [isSticky, setIsSticky] = useState(false);
-  const [activeSection, setActiveSection] = useState("Overview");
+  const [activeSection, setActiveSection] = useState("overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const stickyRef = useRef(null);
   const mobileMenuRef = useRef(null);
@@ -628,7 +629,7 @@ const BISCRSIndex = () => {
     "eligibility",
     "documents",
     "registration",
-    "feeStructure",
+    "financials",
     "elabelling",
     "expertise",
   ];
@@ -693,12 +694,9 @@ const BISCRSIndex = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
             if (entry.target.id === "faqs") {
-              setActiveSection("FAQs");
+              setActiveSection("faqs");
             } else {
-              const sectionName =
-                entry.target.id.charAt(0).toUpperCase() +
-                entry.target.id.slice(1);
-              setActiveSection(sectionName);
+              setActiveSection(entry.target.id);
             }
           }
         });
@@ -728,7 +726,7 @@ const BISCRSIndex = () => {
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
-          {activeSection}
+          {t(`menuItems.${activeSection}`)}
         </div>
         <button
           ref={toggleButtonRef}
@@ -769,15 +767,7 @@ const BISCRSIndex = () => {
           className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
         >
           <div className="flex flex-col py-2">
-            {[
-              "Overview",
-              "Eligibility",
-              "Documents",
-              "Registration",
-              "Financials",
-              "ELabelling",
-              "Expertise",
-            ].map((item) => (
+            {SECTIONS.map((item) => (
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
@@ -788,7 +778,7 @@ const BISCRSIndex = () => {
                 }`}
               >
                 <div className="font-geist tracking-wider uppercase">
-                  {item}
+                  {t(`menuItems.${item}`)}
                 </div>
               </div>
             ))}
@@ -798,15 +788,7 @@ const BISCRSIndex = () => {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto">
-        {[
-          "Overview",
-          "Eligibility",
-          "Documents",
-          "Registration",
-          "Financials",
-          "ELabelling",
-          "Expertise",
-        ].map((item) => (
+        {SECTIONS.map((item) => (
           <div
             key={item}
             onClick={() => handleItemClick(item)}
@@ -819,7 +801,7 @@ const BISCRSIndex = () => {
                   : "text-blue-950 group-hover:text-blue-900"
               }`}
             >
-              {item}
+              {t(`menuItems.${item}`)}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
