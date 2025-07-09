@@ -1,8 +1,7 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 
 import {
   Accordion,
@@ -12,11 +11,9 @@ import {
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check } from "lucide-react";
-import { Link } from "react-router-dom";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
-import { BISCProductTable } from "@/components/manual/BISCertification";
 import Services from "../components/manual/Services";
 import AboutAuthor from "../components/common/AboutAuthor";
 import {
@@ -552,6 +549,8 @@ const CRSRegistration = () => {
 export default CRSRegistration;
 
 const BISCRSHero = () => {
+  const { t } = useTranslation("BISCRSHero");
+
   return (
     <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
@@ -570,20 +569,19 @@ const BISCRSHero = () => {
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
-              Certified Expertise
+              {t("hero.badge")}
             </span>
           </div>
 
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              BIS CRS Registration
+              {t("hero.title")}
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Mandatory for electronic products to ensure safety & quality. Get
-            BIS approval with expert assistance!
+            {t("hero.description")}
           </p>
 
           <div className="flex items-center -mt-2">
@@ -603,7 +601,7 @@ const BISCRSHero = () => {
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
-                View Services
+                {t("hero.viewServices")}
               </span>
             </div>
           </div>
