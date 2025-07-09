@@ -73,5 +73,75 @@
         "Langdurig merkvertrouwen opbouwen bij Indiase consumenten"
       ]
     }
+  },
+  "eligibility": {
+    "sectionHeader": "Geschiktheid",
+    "title": "Geschiktheidscriteria voor BIS CRS-registratie",
+    "whoCanApply": {
+      "title": "Wie kan BIS-certificering aanvragen onder CRS?",
+      "description": "Om een BIS-certificaat te verkrijgen onder het Verplichte Registratieschema (CRS), moet de aanvrager voldoen aan specifieke geschiktheidseisen zoals vastgesteld door het Bureau of Indian Standards. Deze voorwaarden zorgen ervoor dat alleen echte fabrikanten gemachtigd zijn om producten te registreren en te labelen met het BIS CRS-logo."
+    },
+    "criteriaChecklist": {
+      "title": "Checklist geschiktheidscriteria",
+      "table": {
+        "headers": {
+          "requirement": "Vereiste",
+          "description": "Beschrijving"
+        },
+        "rows": {
+          "manufacturer": {
+            "requirement": "Aanvrager moet een fabrikant zijn",
+            "description": "Alleen de oorspronkelijke fabrikant (geen handelaar of wederverkoper) van het product komt in aanmerking voor aanvraag."
+          },
+          "location": {
+            "requirement": "Locatie kan Indiaas of buitenlands zijn",
+            "description": "Zowel Indiase fabrikanten als internationale merken kunnen aanvragen."
+          },
+          "air": {
+            "requirement": "AIR (Geautoriseerde Indiase Vertegenwoordiger)",
+            "description": "Buitenlandse fabrikanten moeten een AIR aanwijzen — ofwel hun Indiase vestiging of een formeel geautoriseerde derde partij."
+          },
+          "testReports": {
+            "requirement": "Testrapporten van BIS-goedgekeurde laboratoria",
+            "description": "Het product moet worden getest in een door BIS erkend laboratorium en voldoen aan de toepasselijke Indiase Standaard (IS)."
+          },
+          "documentation": {
+            "requirement": "Juiste documentatie",
+            "description": "Alle vereiste documenten moeten worden ingediend in voorgeschreven formaten (details in volgende sectie)."
+          },
+          "registration": {
+            "requirement": "Eén registratie per merk & locatie",
+            "description": "Een aparte aanvraag moet worden ingediend voor elk producttype, productielocatie en merknaam."
+          }
+        }
+      }
+    },
+    "air": {
+      "title": "Wat is een Geautoriseerde Indiase Vertegenwoordiger (AIR)?",
+      "description": "Als u een buitenlandse fabrikant bent, vereist BIS dat u een Geautoriseerde Indiase Vertegenwoordiger (AIR) aanwijst als uw officiële contactpersoon in India.",
+      "responsibilities": {
+        "heading": "AIR-verantwoordelijkheden:",
+        "points": [
+          "Handelt als wettelijke vertegenwoordiger van de buitenlandse aanvrager",
+          "Behandelt alle BIS-communicatie en verplichtingen namens de fabrikant",
+          "Neemt wettelijke verantwoordelijkheid voor naleving en documentatie",
+          "Mag geen handelaar of wederverkoper zijn tenzij expliciet aangewezen door de fabrikant"
+        ]
+      },
+      "agreement": "De AIR moet een door beide partijen ondertekende overeenkomst indienen en moet een Indiaas adres hebben."
+    },
+    "realWorldExample": {
+      "title": "Voorbeeld uit de praktijk:",
+      "scenario": {
+        "heading": "Bedrijf ABC wil een nieuw powerbank-model lanceren in India:",
+        "steps": [
+          "Bedrijf ABC is de fabrikant",
+          "Ze testen het product in een door BIS goedgekeurd laboratorium in India",
+          "Hun kantoor in Delhi is geregistreerd als AIR",
+          "Ze dienen de aanvraag in via het BIS-portaal met vereiste documenten"
+        ]
+      },
+      "result": "Resultaat: Een geldig BIS-certificaat wordt uitgegeven onder CRS."
+    }
   }
 }

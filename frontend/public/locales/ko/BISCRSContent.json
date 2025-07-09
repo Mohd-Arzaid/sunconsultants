@@ -73,5 +73,75 @@
         "인도 소비자와의 장기적 브랜드 신뢰 구축"
       ]
     }
+  },
+  "eligibility": {
+    "sectionHeader": "자격 요건",
+    "title": "BIS CRS 등록을 위한 자격 기준",
+    "whoCanApply": {
+      "title": "CRS 하에서 BIS 인증을 신청할 수 있는 대상은?",
+      "description": "의무 등록 제도(CRS) 하에서 BIS 인증서를 취득하려면, 신청자는 인도 표준청에서 정한 특정 자격 요건을 충족해야 합니다. 이러한 조건들은 진정한 제조업체만이 BIS CRS 로고로 제품을 등록하고 라벨링할 수 있도록 보장합니다."
+    },
+    "criteriaChecklist": {
+      "title": "자격 기준 체크리스트",
+      "table": {
+        "headers": {
+          "requirement": "요구사항",
+          "description": "설명"
+        },
+        "rows": {
+          "manufacturer": {
+            "requirement": "신청자는 제조업체여야 함",
+            "description": "제품의 원래 제조업체(무역업체 또는 재판매업체 아님)만 신청할 수 있습니다."
+          },
+          "location": {
+            "requirement": "위치는 인도 또는 해외일 수 있음",
+            "description": "인도 제조업체와 국제 브랜드 모두 신청할 수 있습니다."
+          },
+          "air": {
+            "requirement": "AIR (공인 인도 대리인)",
+            "description": "해외 제조업체는 AIR을 지정해야 합니다 — 인도 지사 또는 공식적으로 승인된 제3자."
+          },
+          "testReports": {
+            "requirement": "BIS 승인 실험실의 시험 보고서",
+            "description": "제품은 BIS 인정 실험실에서 시험을 받고 해당하는 인도 표준(IS)을 충족해야 합니다."
+          },
+          "documentation": {
+            "requirement": "적절한 문서",
+            "description": "모든 필수 문서는 규정된 형식으로 제출되어야 합니다(다음 섹션의 세부 사항)."
+          },
+          "registration": {
+            "requirement": "브랜드 및 위치당 하나의 등록",
+            "description": "각 제품 유형, 제조 위치 및 브랜드명에 대해 별도의 신청서를 제출해야 합니다."
+          }
+        }
+      }
+    },
+    "air": {
+      "title": "공인 인도 대리인(AIR)이란 무엇인가?",
+      "description": "해외 제조업체인 경우, BIS는 인도에서 공식 연락처로 공인 인도 대리인(AIR)을 지정하도록 요구합니다.",
+      "responsibilities": {
+        "heading": "AIR 책임사항:",
+        "points": [
+          "해외 신청자의 법적 대리인 역할",
+          "제조업체를 대신하여 모든 BIS 커뮤니케이션 및 의무 처리",
+          "규정 준수 및 문서화에 대한 법적 책임 부담",
+          "제조업체가 명시적으로 지정하지 않는 한 무역업체 또는 재판매업체가 되어서는 안 됨"
+        ]
+      },
+      "agreement": "AIR은 양 당사자가 서명한 계약서를 제출해야 하며 인도 주소가 있어야 합니다."
+    },
+    "realWorldExample": {
+      "title": "실제 사례:",
+      "scenario": {
+        "heading": "ABC 회사가 인도에서 새로운 파워뱅크 모델을 출시하려고 합니다:",
+        "steps": [
+          "ABC 회사는 제조업체입니다",
+          "인도의 BIS 승인 실험실에서 제품을 시험합니다",
+          "델리 사무소가 AIR로 등록됩니다",
+          "필요한 문서와 함께 BIS 포털을 통해 신청서를 제출합니다"
+        ]
+      },
+      "result": "결과: CRS 하에서 유효한 BIS 인증서가 발급됩니다."
+    }
   }
 }

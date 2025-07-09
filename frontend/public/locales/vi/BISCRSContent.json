@@ -73,5 +73,75 @@
         "Xây dựng niềm tin thương hiệu lâu dài với người tiêu dùng Ấn Độ"
       ]
     }
+  },
+  "eligibility": {
+    "sectionHeader": "Đủ điều kiện",
+    "title": "Tiêu chí đủ điều kiện đăng ký BIS CRS",
+    "whoCanApply": {
+      "title": "Ai có thể đăng ký chứng nhận BIS theo CRS?",
+      "description": "Để có được chứng chỉ BIS theo Chương trình Đăng ký Bắt buộc (CRS), người nộp đơn phải đáp ứng các yêu cầu đủ điều kiện cụ thể được nêu bởi Cục Tiêu chuẩn Ấn Độ. Các điều kiện này đảm bảo rằng chỉ các nhà sản xuất thực sự mới được phép đăng ký và dán nhãn sản phẩm với logo BIS CRS."
+    },
+    "criteriaChecklist": {
+      "title": "Danh sách kiểm tra tiêu chí đủ điều kiện",
+      "table": {
+        "headers": {
+          "requirement": "Yêu cầu",
+          "description": "Mô tả"
+        },
+        "rows": {
+          "manufacturer": {
+            "requirement": "Người nộp đơn phải là nhà sản xuất",
+            "description": "Chỉ nhà sản xuất gốc (không phải thương gia hoặc đại lý bán lại) của sản phẩm mới đủ điều kiện đăng ký."
+          },
+          "location": {
+            "requirement": "Vị trí có thể là Ấn Độ hoặc nước ngoài",
+            "description": "Cả nhà sản xuất Ấn Độ và thương hiệu quốc tế đều có thể đăng ký."
+          },
+          "air": {
+            "requirement": "AIR (Đại diện Ấn Độ được ủy quyền)",
+            "description": "Nhà sản xuất nước ngoài phải bổ nhiệm AIR — chi nhánh Ấn Độ của họ hoặc bên thứ ba được ủy quyền chính thức."
+          },
+          "testReports": {
+            "requirement": "Báo cáo thử nghiệm từ phòng thí nghiệm được BIS phê duyệt",
+            "description": "Sản phẩm phải được thử nghiệm tại phòng thí nghiệm được BIS công nhận và đáp ứng Tiêu chuẩn Ấn Độ (IS) có thể áp dụng."
+          },
+          "documentation": {
+            "requirement": "Tài liệu phù hợp",
+            "description": "Tất cả các tài liệu cần thiết phải được gửi theo định dạng quy định (chi tiết trong phần tiếp theo)."
+          },
+          "registration": {
+            "requirement": "Một đăng ký cho mỗi thương hiệu và địa điểm",
+            "description": "Phải nộp đơn riêng cho từng loại sản phẩm, địa điểm sản xuất và tên thương hiệu."
+          }
+        }
+      }
+    },
+    "air": {
+      "title": "Đại diện Ấn Độ được ủy quyền (AIR) là gì?",
+      "description": "Nếu bạn là nhà sản xuất nước ngoài, BIS yêu cầu bạn bổ nhiệm Đại diện Ấn Độ được ủy quyền (AIR) làm người liên hệ chính thức của bạn tại Ấn Độ.",
+      "responsibilities": {
+        "heading": "Trách nhiệm của AIR:",
+        "points": [
+          "Hoạt động như đại diện pháp lý của người nộp đơn nước ngoài",
+          "Xử lý tất cả các giao tiếp và nghĩa vụ BIS thay mặt nhà sản xuất",
+          "Chịu trách nhiệm pháp lý về tuân thủ và tài liệu",
+          "Không được là thương gia hoặc đại lý bán lại trừ khi được nhà sản xuất bổ nhiệm một cách rõ ràng"
+        ]
+      },
+      "agreement": "AIR phải nộp thỏa thuận ký bởi cả hai bên và phải có địa chỉ Ấn Độ."
+    },
+    "realWorldExample": {
+      "title": "Ví dụ thực tế:",
+      "scenario": {
+        "heading": "Công ty ABC muốn ra mắt mẫu power bank mới tại Ấn Độ:",
+        "steps": [
+          "Công ty ABC là nhà sản xuất",
+          "Họ thử nghiệm sản phẩm tại phòng thí nghiệm được BIS phê duyệt ở Ấn Độ",
+          "Văn phòng Delhi của họ được đăng ký làm AIR",
+          "Họ nộp đơn qua cổng BIS với các tài liệu cần thiết"
+        ]
+      },
+      "result": "Kết quả: Chứng chỉ BIS hợp lệ được cấp theo CRS."
+    }
   }
 }

@@ -1475,36 +1475,34 @@ const OverviewSection = () => {
 };
 
 const Eligibility = () => {
+  const { t } = useTranslation("BISCRSContent");
+
   return (
     <section id="eligibility" className="flex flex-col scroll-mt-20">
       {/* Products */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
-          Eligibility
+          {t("eligibility.sectionHeader")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h2 className="text-[24px] md:text-[40px] font-roboto font-bold text-[#131316] leading-tight md:leading-normal">
-        Eligibility Criteria for BIS CRS Registration
+        {t("eligibility.title")}
       </h2>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Who Can Apply for BIS Certification Under CRS?
+        {t("eligibility.whoCanApply.title")}
       </h3>
 
       {/* Content */}
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        To obtain a BIS certificate under the Compulsory Registration Scheme
-        (CRS), the applicant must meet specific eligibility requirements
-        outlined by the Bureau of Indian Standards. These conditions ensure that
-        only genuine manufacturers are permitted to register and label products
-        with the BIS CRS logo.
+        {t("eligibility.whoCanApply.description")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Eligibility Criteria Checklist
+        {t("eligibility.criteriaChecklist.title")}
       </h3>
 
       {/*  table for eligibility criteria */}
@@ -1515,71 +1513,84 @@ const Eligibility = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px] border-r border-gray-300">
-                  Requirement
+                  {t("eligibility.criteriaChecklist.table.headers.requirement")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  Description
+                  {t("eligibility.criteriaChecklist.table.headers.description")}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Applicant must be a Manufacturer
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.manufacturer.requirement"
+                  )}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Only the original manufacturer (not trader or reseller) of the
-                  product is eligible to apply.
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.manufacturer.description"
+                  )}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Location Can Be Indian or Foreign
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.location.requirement"
+                  )}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Both Indian manufacturers and international brands can apply.
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.location.description"
+                  )}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  AIR (Authorized Indian Representative)
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.air.requirement"
+                  )}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Foreign manufacturers{" "}
-                  <span className="font-semibold">must appoint an AIR</span> —
-                  either their Indian branch or a formally authorized third
-                  party.
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.air.description"
+                  )}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Test Reports from BIS-Approved Labs
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.testReports.requirement"
+                  )}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  The product must be tested at a{" "}
-                  <span className="font-semibold">BIS-recognized lab</span> and
-                  meet the Indian Standard (IS) applicable.
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.testReports.description"
+                  )}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Proper Documentation
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.documentation.requirement"
+                  )}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  All required documents must be submitted in prescribed formats
-                  (details in next section).
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.documentation.description"
+                  )}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  One Registration Per Brand & Location
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.registration.requirement"
+                  )}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  A separate application must be filed for each{" "}
-                  <span className="font-semibold">
-                    product type, manufacturing location, and brand name
-                  </span>
-                  .
+                  {t(
+                    "eligibility.criteriaChecklist.table.rows.registration.description"
+                  )}
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -1588,54 +1599,45 @@ const Eligibility = () => {
       </div>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Who is an Authorized Indian Representative (AIR)?
+        {t("eligibility.air.title")}
       </h2>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        If you're a foreign manufacturer, BIS requires you to appoint an
-        Authorized Indian Representative (AIR) as your official contact in
-        India.
+        {t("eligibility.air.description")}
       </p>
 
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <PointsListTwo
-            points={[
-              "Acts as the legal representative of the foreign applicant",
-              "Handles all BIS communications and obligations on behalf of the manufacturer",
-              "Takes legal responsibility for compliance and documentation",
-              "Must not be a trader or reseller unless explicitly appointed by the manufacturer",
-            ]}
-            heading="AIR Responsibilities:"
+            points={t("eligibility.air.responsibilities.points", {
+              returnObjects: true,
+            })}
+            heading={t("eligibility.air.responsibilities.heading")}
           />
         </div>
       </div>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        The AIR must submit an agreement signed by both parties and must have an
-        Indian address.
+        {t("eligibility.air.agreement")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Real-World Example:
+        {t("eligibility.realWorldExample.title")}
       </h3>
 
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <PointsListTwo
-            points={[
-              "Company ABC is the manufacturer",
-              "They test the product in a BIS-approved lab in India",
-              "Their Delhi office is registered as AIR",
-              "They submit the application through the BIS portal with required documents",
-            ]}
-            heading="Company ABC wants to launch a new power bank model in India:"
+            points={t("eligibility.realWorldExample.scenario.steps", {
+              returnObjects: true,
+            })}
+            heading={t("eligibility.realWorldExample.scenario.heading")}
           />
         </div>
       </div>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        Result: A valid BIS certificate is issued under CRS.
+        {t("eligibility.realWorldExample.result")}
       </p>
     </section>
   );

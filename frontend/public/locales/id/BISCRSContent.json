@@ -73,5 +73,75 @@
         "Membangun kepercayaan merek jangka panjang dengan konsumen India"
       ]
     }
+  },
+  "eligibility": {
+    "sectionHeader": "Kelayakan",
+    "title": "Kriteria Kelayakan untuk Pendaftaran BIS CRS",
+    "whoCanApply": {
+      "title": "Siapa yang dapat mengajukan sertifikasi BIS di bawah CRS?",
+      "description": "Untuk memperoleh sertifikat BIS di bawah Skema Pendaftaran Wajib (CRS), pemohon harus memenuhi persyaratan kelayakan khusus yang diuraikan oleh Biro Standar India. Kondisi-kondisi ini memastikan bahwa hanya produsen asli yang diizinkan untuk mendaftarkan dan melabeli produk dengan logo BIS CRS."
+    },
+    "criteriaChecklist": {
+      "title": "Daftar Periksa Kriteria Kelayakan",
+      "table": {
+        "headers": {
+          "requirement": "Persyaratan",
+          "description": "Deskripsi"
+        },
+        "rows": {
+          "manufacturer": {
+            "requirement": "Pemohon harus menjadi Produsen",
+            "description": "Hanya produsen asli (bukan pedagang atau penjual kembali) dari produk yang memenuhi syarat untuk mengajukan."
+          },
+          "location": {
+            "requirement": "Lokasi dapat berupa India atau Asing",
+            "description": "Baik produsen India maupun merek internasional dapat mengajukan."
+          },
+          "air": {
+            "requirement": "AIR (Perwakilan India Resmi)",
+            "description": "Produsen asing harus menunjuk AIR — baik cabang India mereka atau pihak ketiga yang resmi diotorisasi."
+          },
+          "testReports": {
+            "requirement": "Laporan Uji dari Laboratorium yang Disetujui BIS",
+            "description": "Produk harus diuji di laboratorium yang diakui BIS dan memenuhi Standar India (IS) yang berlaku."
+          },
+          "documentation": {
+            "requirement": "Dokumentasi yang Tepat",
+            "description": "Semua dokumen yang diperlukan harus diserahkan dalam format yang ditentukan (detail di bagian selanjutnya)."
+          },
+          "registration": {
+            "requirement": "Satu Pendaftaran per Merek & Lokasi",
+            "description": "Aplikasi terpisah harus diajukan untuk setiap jenis produk, lokasi manufaktur, dan nama merek."
+          }
+        }
+      }
+    },
+    "air": {
+      "title": "Apa itu Perwakilan India Resmi (AIR)?",
+      "description": "Jika Anda seorang produsen asing, BIS mengharuskan Anda menunjuk Perwakilan India Resmi (AIR) sebagai kontak resmi Anda di India.",
+      "responsibilities": {
+        "heading": "Tanggung Jawab AIR:",
+        "points": [
+          "Bertindak sebagai perwakilan hukum dari pemohon asing",
+          "Menangani semua komunikasi dan kewajiban BIS atas nama produsen",
+          "Mengambil tanggung jawab hukum untuk kepatuhan dan dokumentasi",
+          "Tidak boleh menjadi pedagang atau penjual kembali kecuali ditunjuk secara eksplisit oleh produsen"
+        ]
+      },
+      "agreement": "AIR harus menyerahkan perjanjian yang ditandatangani oleh kedua belah pihak dan harus memiliki alamat India."
+    },
+    "realWorldExample": {
+      "title": "Contoh Dunia Nyata:",
+      "scenario": {
+        "heading": "Perusahaan ABC ingin meluncurkan model power bank baru di India:",
+        "steps": [
+          "Perusahaan ABC adalah produsen",
+          "Mereka menguji produk di laboratorium yang disetujui BIS di India",
+          "Kantor Delhi mereka terdaftar sebagai AIR",
+          "Mereka mengajukan aplikasi melalui portal BIS dengan dokumen yang diperlukan"
+        ]
+      },
+      "result": "Hasil: Sertifikat BIS yang valid diterbitkan di bawah CRS."
+    }
   }
 }

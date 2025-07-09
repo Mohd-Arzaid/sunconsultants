@@ -73,5 +73,75 @@
         "Construir confianza de marca a largo plazo con los consumidores indios"
       ]
     }
+  },
+  "eligibility": {
+    "sectionHeader": "Elegibilidad",
+    "title": "Criterios de elegibilidad para el registro BIS CRS",
+    "whoCanApply": {
+      "title": "¿Quién puede solicitar la certificación BIS bajo CRS?",
+      "description": "Para obtener un certificado BIS bajo el Esquema de Registro Obligatorio (CRS), el solicitante debe cumplir con requisitos específicos de elegibilidad establecidos por el Bureau of Indian Standards. Estas condiciones aseguran que solo los fabricantes genuinos estén autorizados a registrar y etiquetar productos con el logo BIS CRS."
+    },
+    "criteriaChecklist": {
+      "title": "Lista de verificación de criterios de elegibilidad",
+      "table": {
+        "headers": {
+          "requirement": "Requisito",
+          "description": "Descripción"
+        },
+        "rows": {
+          "manufacturer": {
+            "requirement": "El solicitante debe ser un fabricante",
+            "description": "Solo el fabricante original (no comerciante o revendedor) del producto es elegible para aplicar."
+          },
+          "location": {
+            "requirement": "La ubicación puede ser india o extranjera",
+            "description": "Tanto fabricantes indios como marcas internacionales pueden aplicar."
+          },
+          "air": {
+            "requirement": "AIR (Representante Indio Autorizado)",
+            "description": "Los fabricantes extranjeros deben designar un AIR — ya sea su sucursal india o un tercero formalmente autorizado."
+          },
+          "testReports": {
+            "requirement": "Informes de prueba de laboratorios aprobados por BIS",
+            "description": "El producto debe ser probado en un laboratorio reconocido por BIS y cumplir con el Estándar Indio (IS) aplicable."
+          },
+          "documentation": {
+            "requirement": "Documentación adecuada",
+            "description": "Todos los documentos requeridos deben ser presentados en formatos prescritos (detalles en la siguiente sección)."
+          },
+          "registration": {
+            "requirement": "Un registro por marca y ubicación",
+            "description": "Se debe presentar una solicitud separada para cada tipo de producto, ubicación de fabricación y nombre de marca."
+          }
+        }
+      }
+    },
+    "air": {
+      "title": "¿Qué es un Representante Indio Autorizado (AIR)?",
+      "description": "Si eres un fabricante extranjero, BIS te exige designar un Representante Indio Autorizado (AIR) como tu contacto oficial en India.",
+      "responsibilities": {
+        "heading": "Responsabilidades del AIR:",
+        "points": [
+          "Actúa como representante legal del solicitante extranjero",
+          "Maneja todas las comunicaciones y obligaciones BIS en nombre del fabricante",
+          "Asume responsabilidad legal por el cumplimiento y documentación",
+          "No debe ser comerciante o revendedor a menos que sea designado explícitamente por el fabricante"
+        ]
+      },
+      "agreement": "El AIR debe presentar un acuerdo firmado por ambas partes y debe tener una dirección india."
+    },
+    "realWorldExample": {
+      "title": "Ejemplo del mundo real:",
+      "scenario": {
+        "heading": "La empresa ABC quiere lanzar un nuevo modelo de power bank en India:",
+        "steps": [
+          "La empresa ABC es el fabricante",
+          "Prueban el producto en un laboratorio aprobado por BIS en India",
+          "Su oficina de Delhi está registrada como AIR",
+          "Presentan la solicitud a través del portal BIS con los documentos requeridos"
+        ]
+      },
+      "result": "Resultado: Se emite un certificado BIS válido bajo CRS."
+    }
   }
 }

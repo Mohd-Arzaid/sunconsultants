@@ -73,5 +73,75 @@
         "Build long-term brand trust with Indian consumers"
       ]
     }
+  },
+  "eligibility": {
+    "sectionHeader": "Eligibility",
+    "title": "Eligibility Criteria for BIS CRS Registration",
+    "whoCanApply": {
+      "title": "Who Can Apply for BIS Certification Under CRS?",
+      "description": "To obtain a BIS certificate under the Compulsory Registration Scheme (CRS), the applicant must meet specific eligibility requirements outlined by the Bureau of Indian Standards. These conditions ensure that only genuine manufacturers are permitted to register and label products with the BIS CRS logo."
+    },
+    "criteriaChecklist": {
+      "title": "Eligibility Criteria Checklist",
+      "table": {
+        "headers": {
+          "requirement": "Requirement",
+          "description": "Description"
+        },
+        "rows": {
+          "manufacturer": {
+            "requirement": "Applicant must be a Manufacturer",
+            "description": "Only the original manufacturer (not trader or reseller) of the product is eligible to apply."
+          },
+          "location": {
+            "requirement": "Location Can Be Indian or Foreign",
+            "description": "Both Indian manufacturers and international brands can apply."
+          },
+          "air": {
+            "requirement": "AIR (Authorized Indian Representative)",
+            "description": "Foreign manufacturers must appoint an AIR — either their Indian branch or a formally authorized third party."
+          },
+          "testReports": {
+            "requirement": "Test Reports from BIS-Approved Labs",
+            "description": "The product must be tested at a BIS-recognized lab and meet the Indian Standard (IS) applicable."
+          },
+          "documentation": {
+            "requirement": "Proper Documentation",
+            "description": "All required documents must be submitted in prescribed formats (details in next section)."
+          },
+          "registration": {
+            "requirement": "One Registration Per Brand & Location",
+            "description": "A separate application must be filed for each product type, manufacturing location, and brand name."
+          }
+        }
+      }
+    },
+    "air": {
+      "title": "Who is an Authorized Indian Representative (AIR)?",
+      "description": "If you're a foreign manufacturer, BIS requires you to appoint an Authorized Indian Representative (AIR) as your official contact in India.",
+      "responsibilities": {
+        "heading": "AIR Responsibilities:",
+        "points": [
+          "Acts as the legal representative of the foreign applicant",
+          "Handles all BIS communications and obligations on behalf of the manufacturer",
+          "Takes legal responsibility for compliance and documentation",
+          "Must not be a trader or reseller unless explicitly appointed by the manufacturer"
+        ]
+      },
+      "agreement": "The AIR must submit an agreement signed by both parties and must have an Indian address."
+    },
+    "realWorldExample": {
+      "title": "Real-World Example:",
+      "scenario": {
+        "heading": "Company ABC wants to launch a new power bank model in India:",
+        "steps": [
+          "Company ABC is the manufacturer",
+          "They test the product in a BIS-approved lab in India",
+          "Their Delhi office is registered as AIR",
+          "They submit the application through the BIS portal with required documents"
+        ]
+      },
+      "result": "Result: A valid BIS certificate is issued under CRS."
+    }
   }
 }
