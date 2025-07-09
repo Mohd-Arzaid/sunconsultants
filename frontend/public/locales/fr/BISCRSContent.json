@@ -1,0 +1,77 @@
+{
+  "intro": {
+    "mainTitle": "Guide Complet de la Certification BIS et de l'Enregistrement CRS en Inde",
+    "whatIsBIS": {
+      "title": "Qu'est-ce que l'enregistrement BIS ?",
+      "paragraph1": "Le Bureau des normes indiennes (BIS) est l'organisme national de normalisation de l'Inde, fonctionnant sous le ministère des Affaires des consommateurs, de l'Alimentation et de la Distribution publique du gouvernement indien. Sa responsabilité principale est de s'assurer que les produits sur le marché indien sont conformes aux normes spécifiques de qualité, de sécurité et de performance définies dans les normes indiennes (IS).",
+      "paragraph2": "L'un des programmes les plus importants gérés par le BIS est le Schéma d'enregistrement obligatoire (CRS) — un cadre réglementaire exigeant l'enregistrement des produits pour certaines catégories, en particulier les biens électroniques et informatiques.",
+      "paragraph3": "La certification BIS fournit une garantie formelle que le produit est conforme aux normes de sécurité et de performance indiennes, ce qui aide à protéger les consommateurs indiens des produits dangereux ou de qualité inférieure."
+    }
+  },
+  "overview": {
+    "sectionHeader": "Aperçu",
+    "title": "Qu'est-ce que le CRS – Schéma d'Enregistrement Obligatoire ?",
+    "paragraph1": "Lancé en 2012, le Schéma d'Enregistrement Obligatoire (CRS) est un système d'enregistrement de produits sous BIS qui ciblait initialement les biens électroniques. Au fil des ans, il s'est élargi pour inclure une large gamme de catégories de produits tels que les appareils électriques, l'équipement solaire, les batteries et plus encore. Le CRS est obligatoire pour les produits notifiés par les Ordres de Contrôle de Qualité (QCO) émis par divers ministères.",
+    "paragraph2": "L'enregistrement CRS garantit que tout produit couvert par le schéma doit être enregistré auprès du BIS avant d'être vendu, importé ou distribué en Inde.",
+    "history": {
+      "title": "Histoire de la Certification CRS en Inde",
+      "heading": "Le premier QCO sous le schéma CRS a été publié en 2012, ciblant les équipements électroniques et informatiques. Depuis lors, des QCO supplémentaires ont été émis dans divers secteurs, notamment :",
+      "sectors": [
+        "Électronique Grand Public",
+        "Éclairage et LED",
+        "Batteries et Cellules",
+        "Dispositifs de Communication Sans Fil",
+        "Panneaux Solaires et Composants",
+        "Appareils Électroménagers"
+      ],
+      "conclusion": "La liste CRS continue de croître, ce qui rend critique pour les fabricants de rester à jour avec les nouvelles notifications."
+    },
+    "comparison": {
+      "title": "Enregistrement CRS vs Marque ISI : Quelle est la Différence ?",
+      "table": {
+        "headers": {
+          "feature": "Caractéristique",
+          "crs": "Enregistrement CRS",
+          "isi": "Marque ISI"
+        },
+        "rows": {
+          "nature": {
+            "feature": "Nature",
+            "crs": "Obligatoire (uniquement pour les produits listés QCO)",
+            "isi": "Volontaire ou Obligatoire (basé sur le produit)"
+          },
+          "scope": {
+            "feature": "Portée du Produit",
+            "crs": "Électronique, IT, Électrique, Batteries, etc.",
+            "isi": "Alimentation, ciment, acier, électriques, etc."
+          },
+          "application": {
+            "feature": "Application",
+            "crs": "En ligne, portail BIS CRS",
+            "isi": "Manuel + En ligne, système BIS ISI"
+          },
+          "flexibility": {
+            "feature": "Flexibilité",
+            "crs": "Uniquement pour les biens couverts par QCO",
+            "isi": "Peut être volontaire pour les biens non-QCO"
+          },
+          "labelling": {
+            "feature": "Étiquetage",
+            "crs": "Nécessite le logo BIS CRS et le numéro d'enregistrement",
+            "isi": "Nécessite le logo ISI avec le code standard"
+          }
+        }
+      }
+    },
+    "framework": {
+      "title": "Pourquoi Vous Devez Connaître le Cadre BIS CRS",
+      "heading": "Que vous soyez un fabricant en Inde ou une marque internationale cherchant à s'étendre sur le marché indien, comprendre le processus BIS CRS est essentiel. Cela vous aide à :",
+      "benefits": [
+        "Éviter les pénalités de non-conformité",
+        "Planifier les calendriers de production (en considérant la durée des tests en laboratoire)",
+        "Assurer un dédouanement plus fluide",
+        "Construire une confiance de marque à long terme avec les consommateurs indiens"
+      ]
+    }
+  }
+}

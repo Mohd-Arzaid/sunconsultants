@@ -1,0 +1,77 @@
+{
+  "intro": {
+    "mainTitle": "Guida Completa alla Certificazione BIS e Registrazione CRS in India",
+    "whatIsBIS": {
+      "title": "Cos'è la Registrazione BIS?",
+      "paragraph1": "Il Bureau of Indian Standards (BIS) è l'ente nazionale di normazione dell'India, che opera sotto il Ministero degli Affari dei Consumatori, Alimentazione e Distribuzione Pubblica del Governo dell'India. La sua responsabilità principale è garantire che i prodotti nel mercato indiano siano conformi agli standard specifici di qualità, sicurezza e prestazioni delineati negli Standard Indiani (IS).",
+      "paragraph2": "Uno dei programmi più importanti gestiti dal BIS è il Compulsory Registration Scheme (CRS) — un quadro normativo che impone la registrazione dei prodotti per certe categorie, in particolare prodotti elettronici e IT.",
+      "paragraph3": "La Certificazione BIS fornisce una garanzia formale che il prodotto è conforme agli standard indiani di sicurezza e prestazioni, il che aiuta a proteggere i consumatori indiani da prodotti non sicuri o di qualità inferiore."
+    }
+  },
+  "overview": {
+    "sectionHeader": "Panoramica",
+    "title": "Cos'è il CRS – Compulsory Registration Scheme?",
+    "paragraph1": "Lanciato nel 2012, il Compulsory Registration Scheme (CRS) è un sistema di registrazione prodotti sotto BIS che inizialmente mirava ai beni elettronici. Nel corso degli anni, si è espanso per includere una vasta gamma di categorie di prodotti come elettrodomestici, attrezzature solari, batterie e altro ancora. Il CRS è obbligatorio per i prodotti notificati attraverso Quality Control Orders (QCO) emessi da vari ministeri.",
+    "paragraph2": "La Registrazione CRS garantisce che qualsiasi prodotto coperto dal sistema deve essere registrato con BIS prima di essere venduto, importato o distribuito in India.",
+    "history": {
+      "title": "Storia della Certificazione CRS in India",
+      "heading": "Il primo QCO sotto il sistema CRS è stato rilasciato nel 2012, mirando ad attrezzature elettroniche e IT. Da allora, sono stati emessi QCO aggiuntivi in vari settori tra cui:",
+      "sectors": [
+        "Elettronica di Consumo",
+        "Illuminazione e LED",
+        "Batterie e Celle",
+        "Dispositivi di Comunicazione Wireless",
+        "Pannelli Solari e Componenti",
+        "Elettrodomestici"
+      ],
+      "conclusion": "L'elenco CRS continua a crescere, rendendo critico per i produttori rimanere aggiornati con le nuove notifiche."
+    },
+    "comparison": {
+      "title": "Registrazione CRS vs Marchio ISI: Qual è la Differenza?",
+      "table": {
+        "headers": {
+          "feature": "Caratteristica",
+          "crs": "Registrazione CRS",
+          "isi": "Marchio ISI"
+        },
+        "rows": {
+          "nature": {
+            "feature": "Natura",
+            "crs": "Obbligatorio (solo per prodotti elencati QCO)",
+            "isi": "Volontario o Obbligatorio (basato sul prodotto)"
+          },
+          "scope": {
+            "feature": "Ambito del Prodotto",
+            "crs": "Elettronica, IT, Elettrico, Batterie, ecc.",
+            "isi": "Alimentari, cemento, acciaio, elettrici, ecc."
+          },
+          "application": {
+            "feature": "Applicazione",
+            "crs": "Online, portale BIS CRS",
+            "isi": "Manuale + Online, sistema BIS ISI"
+          },
+          "flexibility": {
+            "feature": "Flessibilità",
+            "crs": "Solo per beni coperti da QCO",
+            "isi": "Può essere volontario per beni non-QCO"
+          },
+          "labelling": {
+            "feature": "Etichettatura",
+            "crs": "Richiede logo BIS CRS e numero di registrazione",
+            "isi": "Richiede logo ISI con codice standard"
+          }
+        }
+      }
+    },
+    "framework": {
+      "title": "Perché Devi Conoscere il Quadro BIS CRS",
+      "heading": "Che tu sia un produttore in India o un marchio internazionale che cerca di espandersi nel mercato indiano, comprendere il processo BIS CRS è essenziale. Ti aiuta a:",
+      "benefits": [
+        "Evitare penalità di non conformità",
+        "Pianificare tempistiche di produzione (considerando la durata dei test di laboratorio)",
+        "Garantire uno sdoganamento più fluido",
+        "Costruire fiducia del marchio a lungo termine con i consumatori indiani"
+      ]
+    }
+  }
+}

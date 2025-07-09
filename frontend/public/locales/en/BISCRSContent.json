@@ -1,0 +1,77 @@
+{
+  "intro": {
+    "mainTitle": "Complete Guide to BIS Certification & CRS Registration in India",
+    "whatIsBIS": {
+      "title": "What is BIS Registration?",
+      "paragraph1": "The Bureau of Indian Standards (BIS) is the national standards body of India, functioning under the Ministry of Consumer Affairs, Food & Public Distribution, Government of India. Its core responsibility is to ensure that products in the Indian market conform to specific quality, safety, and performance standards outlined in the Indian Standards (IS).",
+      "paragraph2": "One of the most important schemes governed by BIS is the Compulsory Registration Scheme (CRS) — a regulatory framework mandating product registration for certain categories, particularly electronic and IT goods.",
+      "paragraph3": "BIS Certification provides a formal guarantee that the product complies with Indian safety and performance standards, which helps protect Indian consumers from unsafe or substandard products."
+    }
+  },
+  "overview": {
+    "sectionHeader": "Overview",
+    "title": "What is CRS – Compulsory Registration Scheme?",
+    "paragraph1": "Launched in 2012, the Compulsory Registration Scheme (CRS) is a product registration scheme under BIS that initially targeted electronic goods. Over the years, it has expanded to include a wide array of product categories such as electrical appliances, solar equipment, batteries, and more CRS is mandatory for notified products through Quality Control Orders (QCOs) issued by various ministries.",
+    "paragraph2": "CRS Registration ensures that any product covered under the scheme must be registered with BIS before it is sold, imported, or distributed in India.",
+    "history": {
+      "title": "History of CRS Certification in India",
+      "heading": "The first QCO under the CRS scheme was released in 2012, targeting electronic and IT equipment. Since then, additional QCOs have been issued across sectors including:",
+      "sectors": [
+        "Consumer Electronics",
+        "Lighting & LEDs",
+        "Batteries & Cells",
+        "Wireless Communication Devices",
+        "Solar Panels and Components",
+        "Household Electrical Appliances"
+      ],
+      "conclusion": "The CRS list keeps growing, making it critical for manufacturers to stay updated with new notifications."
+    },
+    "comparison": {
+      "title": "CRS Registration vs ISI Mark: What's the Difference?",
+      "table": {
+        "headers": {
+          "feature": "Feature",
+          "crs": "CRS Registration",
+          "isi": "ISI Mark"
+        },
+        "rows": {
+          "nature": {
+            "feature": "Nature",
+            "crs": "Compulsory (only for QCO-listed products)",
+            "isi": "Voluntary or Compulsory (based on product)"
+          },
+          "scope": {
+            "feature": "Product Scope",
+            "crs": "Electronics, IT, Electrical, Batteries, etc.",
+            "isi": "Food, cement, steel, electricals, etc."
+          },
+          "application": {
+            "feature": "Application",
+            "crs": "Online, BIS CRS portal",
+            "isi": "Manual + Online, BIS ISI system"
+          },
+          "flexibility": {
+            "feature": "Flexibility",
+            "crs": "Only for QCO-covered goods",
+            "isi": "Can be voluntary for non-QCO goods"
+          },
+          "labelling": {
+            "feature": "Labelling",
+            "crs": "Requires BIS CRS logo and registration number",
+            "isi": "Requires ISI logo with standard code"
+          }
+        }
+      }
+    },
+    "framework": {
+      "title": "Why You Need to Know the BIS CRS Framework",
+      "heading": "Whether you're a manufacturer in India or an international brand looking to expand into the Indian market, understanding the BIS CRS process is essential. It helps you:",
+      "benefits": [
+        "Avoid non-compliance penalties",
+        "Plan for production timelines (considering lab testing duration)",
+        "Ensure smoother customs clearance",
+        "Build long-term brand trust with Indian consumers"
+      ]
+    }
+  }
+}

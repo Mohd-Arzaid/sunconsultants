@@ -1,0 +1,77 @@
+{
+  "intro": {
+    "mainTitle": "Volledige Gids voor BIS Certificering & CRS Registratie in India",
+    "whatIsBIS": {
+      "title": "Wat is BIS Registratie?",
+      "paragraph1": "Het Bureau of Indian Standards (BIS) is het nationale normalisatieorgaan van India, dat functioneert onder het Ministerie van Consumentenzaken, Voedsel & Openbare Distributie van de regering van India. Haar kernverantwoordelijkheid is ervoor te zorgen dat producten op de Indiase markt voldoen aan de specifieke kwaliteits-, veiligheids- en prestatienormen zoals uiteengezet in de Indian Standards (IS).",
+      "paragraph2": "Een van de belangrijkste programma's die door BIS wordt beheerd is het Compulsory Registration Scheme (CRS) — een regulatoir kader dat productregistratie verplicht stelt voor bepaalde categorieën, met name elektronische en IT-goederen.",
+      "paragraph3": "BIS Certificering biedt een formele garantie dat het product voldoet aan de Indiase veiligheids- en prestatienormen, wat helpt om Indiase consumenten te beschermen tegen onveilige of ondermaatse producten."
+    }
+  },
+  "overview": {
+    "sectionHeader": "Overzicht",
+    "title": "Wat is CRS – Compulsory Registration Scheme?",
+    "paragraph1": "Gelanceerd in 2012, is het Compulsory Registration Scheme (CRS) een productregistratiesysteem onder BIS dat aanvankelijk gericht was op elektronische goederen. Door de jaren heen is het uitgebreid tot een breed scala aan productcategorieën zoals elektrische apparaten, zonne-energie apparatuur, batterijen en meer. CRS is verplicht voor gemelde producten door Quality Control Orders (QCO's) uitgegeven door verschillende ministeries.",
+    "paragraph2": "CRS Registratie zorgt ervoor dat elk product dat onder het schema valt, geregistreerd moet worden bij BIS voordat het wordt verkocht, geïmporteerd of gedistribueerd in India.",
+    "history": {
+      "title": "Geschiedenis van CRS Certificering in India",
+      "heading": "De eerste QCO onder het CRS-schema werd uitgebracht in 2012, gericht op elektronische en IT-apparatuur. Sindsdien zijn er aanvullende QCO's uitgegeven in verschillende sectoren, waaronder:",
+      "sectors": [
+        "Consumentenelektronica",
+        "Verlichting & LED's",
+        "Batterijen & Cellen",
+        "Draadloze Communicatieapparaten",
+        "Zonnepanelen en Componenten",
+        "Huishoudelijke Elektrische Apparaten"
+      ],
+      "conclusion": "De CRS-lijst blijft groeien, waardoor het kritiek is voor fabrikanten om up-to-date te blijven met nieuwe meldingen."
+    },
+    "comparison": {
+      "title": "CRS Registratie vs ISI Merk: Wat is het Verschil?",
+      "table": {
+        "headers": {
+          "feature": "Kenmerk",
+          "crs": "CRS Registratie",
+          "isi": "ISI Merk"
+        },
+        "rows": {
+          "nature": {
+            "feature": "Aard",
+            "crs": "Verplicht (alleen voor QCO-gelistte producten)",
+            "isi": "Vrijwillig of Verplicht (gebaseerd op product)"
+          },
+          "scope": {
+            "feature": "Product Bereik",
+            "crs": "Elektronica, IT, Elektrisch, Batterijen, enz.",
+            "isi": "Voedsel, cement, staal, elektrisch, enz."
+          },
+          "application": {
+            "feature": "Toepassing",
+            "crs": "Online, BIS CRS portaal",
+            "isi": "Handmatig + Online, BIS ISI systeem"
+          },
+          "flexibility": {
+            "feature": "Flexibiliteit",
+            "crs": "Alleen voor QCO-gedekte goederen",
+            "isi": "Kan vrijwillig zijn voor niet-QCO goederen"
+          },
+          "labelling": {
+            "feature": "Labeling",
+            "crs": "Vereist BIS CRS logo en registratienummer",
+            "isi": "Vereist ISI logo met standaardcode"
+          }
+        }
+      }
+    },
+    "framework": {
+      "title": "Waarom U het BIS CRS Kader Moet Kennen",
+      "heading": "Of u nu een fabrikant in India bent of een internationaal merk dat wil uitbreiden naar de Indiase markt, het begrijpen van het BIS CRS proces is essentieel. Het helpt u:",
+      "benefits": [
+        "Niet-nalevingsboetes vermijden",
+        "Productieschema's plannen (rekening houdend met laboratoriumtestduur)",
+        "Zorgen voor soepelere douane-afhandeling",
+        "Langdurig merkvertrouwen opbouwen bij Indiase consumenten"
+      ]
+    }
+  }
+}

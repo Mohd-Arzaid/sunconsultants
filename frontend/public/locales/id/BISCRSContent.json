@@ -1,0 +1,77 @@
+{
+  "intro": {
+    "mainTitle": "Panduan Lengkap Sertifikasi BIS & Registrasi CRS di India",
+    "whatIsBIS": {
+      "title": "Apa itu Registrasi BIS?",
+      "paragraph1": "Bureau of Indian Standards (BIS) adalah badan standarisasi nasional India, yang beroperasi di bawah Kementerian Urusan Konsumen, Pangan & Distribusi Publik Pemerintah India. Tanggung jawab utamanya adalah memastikan bahwa produk di pasar India sesuai dengan standar kualitas, keamanan, dan kinerja spesifik yang diuraikan dalam Standar India (IS).",
+      "paragraph2": "Salah satu program terpenting yang dikelola oleh BIS adalah Compulsory Registration Scheme (CRS) — kerangka kerja regulasi yang mewajibkan registrasi produk untuk kategori tertentu, khususnya barang elektronik dan IT.",
+      "paragraph3": "Sertifikasi BIS memberikan jaminan formal bahwa produk mematuhi standar keamanan dan kinerja India, yang membantu melindungi konsumen India dari produk yang tidak aman atau berkualitas rendah."
+    }
+  },
+  "overview": {
+    "sectionHeader": "Ikhtisar",
+    "title": "Apa itu CRS – Compulsory Registration Scheme?",
+    "paragraph1": "Diluncurkan pada tahun 2012, Compulsory Registration Scheme (CRS) adalah skema registrasi produk di bawah BIS yang awalnya menargetkan barang elektronik. Selama bertahun-tahun, telah diperluas untuk mencakup berbagai kategori produk seperti peralatan listrik, peralatan surya, baterai, dan lainnya. CRS wajib untuk produk yang diberitahukan melalui Quality Control Orders (QCO) yang dikeluarkan oleh berbagai kementerian.",
+    "paragraph2": "Registrasi CRS memastikan bahwa setiap produk yang tercakup dalam skema harus didaftarkan dengan BIS sebelum dijual, diimpor, atau didistribusikan di India.",
+    "history": {
+      "title": "Sejarah Sertifikasi CRS di India",
+      "heading": "QCO pertama di bawah skema CRS dirilis pada tahun 2012, menargetkan peralatan elektronik dan IT. Sejak itu, QCO tambahan telah dikeluarkan di berbagai sektor termasuk:",
+      "sectors": [
+        "Elektronik Konsumen",
+        "Pencahayaan & LED",
+        "Baterai & Sel",
+        "Perangkat Komunikasi Nirkabel",
+        "Panel Surya dan Komponen",
+        "Peralatan Rumah Tangga Listrik"
+      ],
+      "conclusion": "Daftar CRS terus bertambah, membuat penting bagi produsen untuk tetap update dengan notifikasi baru."
+    },
+    "comparison": {
+      "title": "Registrasi CRS vs Tanda ISI: Apa Perbedaannya?",
+      "table": {
+        "headers": {
+          "feature": "Fitur",
+          "crs": "Registrasi CRS",
+          "isi": "Tanda ISI"
+        },
+        "rows": {
+          "nature": {
+            "feature": "Sifat",
+            "crs": "Wajib (hanya untuk produk yang terdaftar QCO)",
+            "isi": "Sukarela atau Wajib (berdasarkan produk)"
+          },
+          "scope": {
+            "feature": "Ruang Lingkup Produk",
+            "crs": "Elektronik, IT, Listrik, Baterai, dll.",
+            "isi": "Makanan, semen, baja, listrik, dll."
+          },
+          "application": {
+            "feature": "Aplikasi",
+            "crs": "Online, portal BIS CRS",
+            "isi": "Manual + Online, sistem BIS ISI"
+          },
+          "flexibility": {
+            "feature": "Fleksibilitas",
+            "crs": "Hanya untuk barang yang dicakup QCO",
+            "isi": "Dapat sukarela untuk barang non-QCO"
+          },
+          "labelling": {
+            "feature": "Pelabelan",
+            "crs": "Memerlukan logo BIS CRS dan nomor registrasi",
+            "isi": "Memerlukan logo ISI dengan kode standar"
+          }
+        }
+      }
+    },
+    "framework": {
+      "title": "Mengapa Anda Perlu Mengetahui Kerangka BIS CRS",
+      "heading": "Baik Anda produsen di India atau merek internasional yang ingin ekspansi ke pasar India, memahami proses BIS CRS sangat penting. Ini membantu Anda:",
+      "benefits": [
+        "Menghindari penalti ketidakpatuhan",
+        "Merencanakan jadwal produksi (mempertimbangkan durasi pengujian lab)",
+        "Memastikan izin bea cukai yang lebih lancar",
+        "Membangun kepercayaan merek jangka panjang dengan konsumen India"
+      ]
+    }
+  }
+}

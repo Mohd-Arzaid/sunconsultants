@@ -1,0 +1,77 @@
+{
+  "intro": {
+    "mainTitle": "Vollständiger Leitfaden zur BIS-Zertifizierung & CRS-Registrierung in Indien",
+    "whatIsBIS": {
+      "title": "Was ist die BIS-Registrierung?",
+      "paragraph1": "Das Bureau of Indian Standards (BIS) ist die nationale Normungsbehörde Indiens, die unter dem Ministerium für Verbraucherangelegenheiten, Lebensmittel und öffentliche Verteilung der indischen Regierung arbeitet. Ihre Hauptaufgabe besteht darin, sicherzustellen, dass Produkte auf dem indischen Markt den spezifischen Qualitäts-, Sicherheits- und Leistungsstandards entsprechen, die in den Indian Standards (IS) festgelegt sind.",
+      "paragraph2": "Eines der wichtigsten vom BIS verwalteten Programme ist das Compulsory Registration Scheme (CRS) – ein regulatorischer Rahmen, der die Produktregistrierung für bestimmte Kategorien, insbesondere elektronische und IT-Waren, vorschreibt.",
+      "paragraph3": "Die BIS-Zertifizierung bietet eine formelle Garantie dafür, dass das Produkt den indischen Sicherheits- und Leistungsstandards entspricht, was dazu beiträgt, indische Verbraucher vor unsicheren oder minderwertigen Produkten zu schützen."
+    }
+  },
+  "overview": {
+    "sectionHeader": "Überblick",
+    "title": "Was ist CRS – Compulsory Registration Scheme?",
+    "paragraph1": "Das 2012 eingeführte Compulsory Registration Scheme (CRS) ist ein Produktregistrierungssystem unter BIS, das ursprünglich auf elektronische Güter abzielte. Im Laufe der Jahre wurde es erweitert und umfasst nun eine breite Palette von Produktkategorien wie Elektrogeräte, Solarausrüstung, Batterien und mehr. CRS ist für benachrichtigte Produkte durch Quality Control Orders (QCOs) verschiedener Ministerien verpflichtend.",
+    "paragraph2": "Die CRS-Registrierung stellt sicher, dass jedes unter das Schema fallende Produkt bei BIS registriert werden muss, bevor es in Indien verkauft, importiert oder vertrieben wird.",
+    "history": {
+      "title": "Geschichte der CRS-Zertifizierung in Indien",
+      "heading": "Die erste QCO unter dem CRS-Schema wurde 2012 veröffentlicht und zielte auf elektronische und IT-Ausrüstung ab. Seitdem wurden zusätzliche QCOs in verschiedenen Sektoren herausgegeben, einschließlich:",
+      "sectors": [
+        "Unterhaltungselektronik",
+        "Beleuchtung & LEDs",
+        "Batterien & Zellen",
+        "Drahtlose Kommunikationsgeräte",
+        "Solarpaneele und Komponenten",
+        "Haushalts-Elektrogeräte"
+      ],
+      "conclusion": "Die CRS-Liste wächst kontinuierlich, was es für Hersteller kritisch macht, über neue Benachrichtigungen auf dem Laufenden zu bleiben."
+    },
+    "comparison": {
+      "title": "CRS-Registrierung vs ISI-Zeichen: Was ist der Unterschied?",
+      "table": {
+        "headers": {
+          "feature": "Merkmal",
+          "crs": "CRS-Registrierung",
+          "isi": "ISI-Zeichen"
+        },
+        "rows": {
+          "nature": {
+            "feature": "Natur",
+            "crs": "Verpflichtend (nur für QCO-gelistete Produkte)",
+            "isi": "Freiwillig oder Verpflichtend (basierend auf Produkt)"
+          },
+          "scope": {
+            "feature": "Produktbereich",
+            "crs": "Elektronik, IT, Elektrogeräte, Batterien, etc.",
+            "isi": "Lebensmittel, Zement, Stahl, Elektrogeräte, etc."
+          },
+          "application": {
+            "feature": "Anwendung",
+            "crs": "Online, BIS CRS Portal",
+            "isi": "Manuell + Online, BIS ISI System"
+          },
+          "flexibility": {
+            "feature": "Flexibilität",
+            "crs": "Nur für QCO-abgedeckte Güter",
+            "isi": "Kann freiwillig für Nicht-QCO-Güter sein"
+          },
+          "labelling": {
+            "feature": "Kennzeichnung",
+            "crs": "Erfordert BIS CRS Logo und Registrierungsnummer",
+            "isi": "Erfordert ISI Logo mit Standardcode"
+          }
+        }
+      }
+    },
+    "framework": {
+      "title": "Warum Sie das BIS CRS Framework kennen müssen",
+      "heading": "Ob Sie ein Hersteller in Indien oder eine internationale Marke sind, die auf den indischen Markt expandieren möchte, das Verständnis des BIS CRS Prozesses ist unerlässlich. Es hilft Ihnen:",
+      "benefits": [
+        "Compliance-Strafen vermeiden",
+        "Produktionszeitpläne planen (unter Berücksichtigung der Labortestdauer)",
+        "Reibungslosere Zollabfertigung gewährleisten",
+        "Langfristiges Markenvertrauen bei indischen Verbrauchern aufbauen"
+      ]
+    }
+  }
+}

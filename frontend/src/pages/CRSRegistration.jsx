@@ -1200,38 +1200,30 @@ const PointsListTwo = ({
 };
 
 const BISCRSContentLeft = () => {
+  const { t } = useTranslation("BISCRSContent");
+
   return (
     <div className=" flex-1 ">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <section className="flex flex-col gap-2 md:gap-4 mb-6">
           <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-            Complete Guide to BIS Certification & CRS Registration in India
+            {t("intro.mainTitle")}
           </h1>
 
           <h2 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] ">
-            What is BIS Registration?
+            {t("intro.whatIsBIS.title")}
           </h2>
 
           <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-1">
-            The Bureau of Indian Standards (BIS) is the national standards body
-            of India, functioning under the Ministry of Consumer Affairs, Food &
-            Public Distribution, Government of India. Its core responsibility is
-            to ensure that products in the Indian market conform to specific
-            quality, safety, and performance standards outlined in the Indian
-            Standards (IS).
+            {t("intro.whatIsBIS.paragraph1")}
           </p>
 
           <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2">
-            One of the most important schemes governed by BIS is the Compulsory
-            Registration Scheme (CRS) — a regulatory framework mandating product
-            registration for certain categories, particularly electronic and IT
-            goods.
+            {t("intro.whatIsBIS.paragraph2")}
           </p>
 
           <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2">
-            BIS Certification provides a formal guarantee that the product
-            complies with Indian safety and performance standards, which helps
-            protect Indian consumers from unsafe or substandard products.
+            {t("intro.whatIsBIS.paragraph3")}
           </p>
         </section>
 
@@ -1341,64 +1333,51 @@ const ReviewSection = () => {
 };
 
 const OverviewSection = () => {
+  const { t } = useTranslation("BISCRSContent");
+
   return (
     <section id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
-          Overview
+          {t("overview.sectionHeader")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h2 className="text-[24px] md:text-[40px] font-roboto font-bold text-[#131316] leading-tight md:leading-normal my-3 md:my-0">
-        What is CRS – Compulsory Registration Scheme?
+        {t("overview.title")}
       </h2>
 
       {/* Content */}
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        Launched in 2012, the Compulsory Registration Scheme (CRS) is a product
-        registration scheme under BIS that initially targeted electronic goods.
-        Over the years, it has expanded to include a wide array of product
-        categories such as electrical appliaxnces, solar equipment, batteries,
-        and more CRS is mandatory for notified products through Quality Control
-        Orders (QCOs) issued by various ministries.
+        {t("overview.paragraph1")}
       </p>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        CRS Registration ensures that any product covered under the scheme must
-        be registered with BIS before it is sold, imported, or distributed in
-        India.
+        {t("overview.paragraph2")}
       </p>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        History of CRS Certification in India
+        {t("overview.history.title")}
       </h2>
 
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <PointsListTwo
-            points={[
-              "Consumer Electronics",
-              "Lighting & LEDs",
-              "Batteries & Cells",
-              "Wireless Communication Devices",
-              "Solar Panels and Components",
-              "Household Electrical Appliances",
-            ]}
-            heading="The first QCO under the CRS scheme was released in 2012, targeting electronic and IT equipment. Since then, additional QCOs have been issued across sectors including:"
+            points={t("overview.history.sectors", { returnObjects: true })}
+            heading={t("overview.history.heading")}
           />
         </div>
       </div>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        The CRS list keeps growing, making it critical for manufacturers to stay
-        updated with new notifications.
+        {t("overview.history.conclusion")}
       </p>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        CRS Registration vs ISI Mark: What's the Difference?
+        {t("overview.comparison.title")}
       </h2>
 
       {/* Comparison Table */}
@@ -1408,70 +1387,70 @@ const OverviewSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[200px] border-r border-gray-300">
-                  Feature
+                  {t("overview.comparison.table.headers.feature")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px] border-r border-gray-300">
-                  CRS Registration
+                  {t("overview.comparison.table.headers.crs")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px]">
-                  ISI Mark
+                  {t("overview.comparison.table.headers.isi")}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Nature
+                  {t("overview.comparison.table.rows.nature.feature")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Compulsory (only for QCO-listed products)
+                  {t("overview.comparison.table.rows.nature.crs")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Voluntary or Compulsory (based on product)
+                  {t("overview.comparison.table.rows.nature.isi")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Product Scope
+                  {t("overview.comparison.table.rows.scope.feature")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Electronics, IT, Electrical, Batteries, etc.
+                  {t("overview.comparison.table.rows.scope.crs")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Food, cement, steel, electricals, etc.
+                  {t("overview.comparison.table.rows.scope.isi")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Application
+                  {t("overview.comparison.table.rows.application.feature")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Online, BIS CRS portal
+                  {t("overview.comparison.table.rows.application.crs")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Manual + Online, BIS ISI system
+                  {t("overview.comparison.table.rows.application.isi")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Flexibility
+                  {t("overview.comparison.table.rows.flexibility.feature")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Only for QCO-covered goods
+                  {t("overview.comparison.table.rows.flexibility.crs")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Can be voluntary for non-QCO goods
+                  {t("overview.comparison.table.rows.flexibility.isi")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Labelling
+                  {t("overview.comparison.table.rows.labelling.feature")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Requires BIS CRS logo and registration number
+                  {t("overview.comparison.table.rows.labelling.crs")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Requires ISI logo with standard code
+                  {t("overview.comparison.table.rows.labelling.isi")}
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -1480,19 +1459,14 @@ const OverviewSection = () => {
       </div>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Why You Need to Know the BIS CRS Framework
+        {t("overview.framework.title")}
       </h2>
 
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <PointsListTwo
-            points={[
-              "Avoid non-compliance penalties",
-              "Plan for production timelines (considering lab testing duration)",
-              "Ensure smoother customs clearance",
-              "Build long-term brand trust with Indian consumers",
-            ]}
-            heading="Whether you're a manufacturer in India or an international brand looking to expand into the Indian market, understanding the BIS CRS process is essential. It helps you:"
+            points={t("overview.framework.benefits", { returnObjects: true })}
+            heading={t("overview.framework.heading")}
           />
         </div>
       </div>

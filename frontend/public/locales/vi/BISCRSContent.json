@@ -1,0 +1,77 @@
+{
+  "intro": {
+    "mainTitle": "Hướng Dẫn Hoàn Chỉnh về Chứng Nhận BIS & Đăng Ký CRS tại Ấn Độ",
+    "whatIsBIS": {
+      "title": "Đăng Ký BIS là gì?",
+      "paragraph1": "Cục Tiêu Chuẩn Ấn Độ (BIS) là cơ quan tiêu chuẩn hóa quốc gia của Ấn Độ, hoạt động dưới sự quản lý của Bộ Vấn Đề Người Tiêu Dùng, Thực Phẩm & Phân Phối Công của Chính phủ Ấn Độ. Trách nhiệm cốt lõi của nó là đảm bảo rằng các sản phẩm trên thị trường Ấn Độ tuân thủ các tiêu chuẩn chất lượng, an toàn và hiệu suất cụ thể được nêu trong Tiêu Chuẩn Ấn Độ (IS).",
+      "paragraph2": "Một trong những chương trình quan trọng nhất được quản lý bởi BIS là Chương Trình Đăng Ký Bắt Buộc (CRS) — một khuôn khổ quy định yêu cầu đăng ký sản phẩm cho các danh mục nhất định, đặc biệt là hàng điện tử và IT.",
+      "paragraph3": "Chứng Nhận BIS cung cấp đảm bảo chính thức rằng sản phẩm tuân thủ các tiêu chuẩn an toàn và hiệu suất của Ấn Độ, giúp bảo vệ người tiêu dùng Ấn Độ khỏi các sản phẩm không an toàn hoặc dưới chuẩn."
+    }
+  },
+  "overview": {
+    "sectionHeader": "Tổng Quan",
+    "title": "CRS – Chương Trình Đăng Ký Bắt Buộc là gì?",
+    "paragraph1": "Ra mắt vào năm 2012, Chương Trình Đăng Ký Bắt Buộc (CRS) là một hệ thống đăng ký sản phẩm dưới BIS ban đầu nhắm vào hàng điện tử. Qua nhiều năm, nó đã được mở rộng để bao gồm một loạt các danh mục sản phẩm như thiết bị điện, thiết bị năng lượng mặt trời, pin và nhiều hơn nữa. CRS là bắt buộc đối với các sản phẩm được thông báo thông qua Lệnh Kiểm Soát Chất Lượng (QCO) do các bộ khác nhau ban hành.",
+    "paragraph2": "Đăng Ký CRS đảm bảo rằng bất kỳ sản phẩm nào thuộc chương trình phải được đăng ký với BIS trước khi được bán, nhập khẩu hoặc phân phối tại Ấn Độ.",
+    "history": {
+      "title": "Lịch Sử Chứng Nhận CRS tại Ấn Độ",
+      "heading": "QCO đầu tiên dưới chương trình CRS được phát hành vào năm 2012, nhắm vào thiết bị điện tử và IT. Kể từ đó, các QCO bổ sung đã được ban hành trong nhiều lĩnh vực khác nhau bao gồm:",
+      "sectors": [
+        "Điện Tử Tiêu Dùng",
+        "Chiếu Sáng & LED",
+        "Pin & Tế Bào",
+        "Thiết Bị Truyền Thông Không Dây",
+        "Tấm Pin Mặt Trời và Linh Kiện",
+        "Thiết Bị Điện Gia Dụng"
+      ],
+      "conclusion": "Danh sách CRS tiếp tục tăng trưởng, khiến việc cập nhật các thông báo mới trở nên quan trọng đối với các nhà sản xuất."
+    },
+    "comparison": {
+      "title": "Đăng Ký CRS so với Nhãn ISI: Sự Khác Biệt là gì?",
+      "table": {
+        "headers": {
+          "feature": "Đặc Điểm",
+          "crs": "Đăng Ký CRS",
+          "isi": "Nhãn ISI"
+        },
+        "rows": {
+          "nature": {
+            "feature": "Tính Chất",
+            "crs": "Bắt Buộc (chỉ cho sản phẩm được liệt kê QCO)",
+            "isi": "Tự Nguyện hoặc Bắt Buộc (dựa trên sản phẩm)"
+          },
+          "scope": {
+            "feature": "Phạm Vi Sản Phẩm",
+            "crs": "Điện tử, IT, Điện, Pin, v.v.",
+            "isi": "Thực phẩm, xi măng, thép, điện, v.v."
+          },
+          "application": {
+            "feature": "Ứng Dụng",
+            "crs": "Trực tuyến, cổng BIS CRS",
+            "isi": "Thủ công + Trực tuyến, hệ thống BIS ISI"
+          },
+          "flexibility": {
+            "feature": "Tính Linh Hoạt",
+            "crs": "Chỉ cho hàng hóa được QCO bao phủ",
+            "isi": "Có thể tự nguyện cho hàng hóa không phải QCO"
+          },
+          "labelling": {
+            "feature": "Ghi Nhãn",
+            "crs": "Yêu cầu logo BIS CRS và số đăng ký",
+            "isi": "Yêu cầu logo ISI với mã tiêu chuẩn"
+          }
+        }
+      }
+    },
+    "framework": {
+      "title": "Tại Sao Bạn Cần Biết Về Khuôn Khổ BIS CRS",
+      "heading": "Dù bạn là nhà sản xuất tại Ấn Độ hay thương hiệu quốc tế muốn mở rộng ra thị trường Ấn Độ, việc hiểu quy trình BIS CRS là điều cần thiết. Nó giúp bạn:",
+      "benefits": [
+        "Tránh phạt không tuân thủ",
+        "Lập kế hoạch lịch trình sản xuất (xem xét thời gian thử nghiệm phòng thí nghiệm)",
+        "Đảm bảo thông quan hải quan mượt mà hơn",
+        "Xây dựng niềm tin thương hiệu lâu dài với người tiêu dùng Ấn Độ"
+      ]
+    }
+  }
+}
