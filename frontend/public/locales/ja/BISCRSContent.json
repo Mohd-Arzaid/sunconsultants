@@ -143,5 +143,318 @@
       },
       "result": "結果：CRSの下で有効なBIS証明書が発行されます。"
     }
+  },
+  "documents": {
+    "sectionHeader": "書類",
+    "title": "BIS CRS登録に必要な書類",
+    "subtitle": "BIS CRS登録を取得するために必要な書類の一覧。",
+    "paragraph1": "BIS CRS登録プロセスは完全にオンラインですが、承認成功のために正確な文書化が必要です。フォーム、フォーマット、またはファイルタイプの軽微なエラーでも拒否や遅延を招く可能性があります。",
+    "paragraph2": "適切な文書化により、BIS証明書がより迅速に処理され、コンプライアンス監査、税関検査、マーケットプレイス承認において法的に有効であり続けることも保証されます。",
+    "masterChecklist": {
+      "title": "マスターチェックリスト：BIS CRS登録に必要な書類",
+      "table": {
+        "headers": {
+          "document": "書類",
+          "whoSubmits": "誰が提出？",
+          "notes": "注記"
+        },
+        "rows": {
+          "addressProof": {
+            "document": "製造業者の住所証明",
+            "whoSubmits": "製造業者",
+            "notes": "工場賃貸契約、公共料金請求書、またはライセンス"
+          },
+          "testReport": {
+            "document": "BIS承認ラボからのテストレポート",
+            "whoSubmits": "製造業者/ラボ",
+            "notes": "最新である必要があり（90日以内）、ISコードを参照"
+          },
+          "undertakings": {
+            "document": "誓約書（BISフォーマットに従う）",
+            "whoSubmits": "申請者",
+            "notes": "責任、コンプライアンス、製品責任を含む"
+          },
+          "trademark": {
+            "document": "商標証明書",
+            "whoSubmits": "製造業者",
+            "notes": "ブランドが登録されている場合必要"
+          },
+          "airAgreement": {
+            "document": "AIR契約（外国申請者向け）",
+            "whoSubmits": "外国製造業者およびAIR",
+            "notes": "署名および公証済み"
+          },
+          "affidavit": {
+            "document": "宣誓供述書",
+            "whoSubmits": "製造業者またはAIR",
+            "notes": "BISポータルからダウンロード可能なフォーマット"
+          },
+          "feeReceipt": {
+            "document": "手数料領収書",
+            "whoSubmits": "申請者",
+            "notes": "政府手数料の支払い証明"
+          },
+          "authorizationLetter": {
+            "document": "承認書",
+            "whoSubmits": "製造業者",
+            "notes": "AIRが代理で行動することを承認"
+          },
+          "companyRegistration": {
+            "document": "会社登録証明書",
+            "whoSubmits": "製造業者",
+            "notes": "事業登録の証明（GST、ROCなど）"
+          },
+          "productLabels": {
+            "document": "製品ラベル/マーキング",
+            "whoSubmits": "製造業者",
+            "notes": "BISロゴ、IS標準、登録スペースを表示する必要"
+          }
+        }
+      }
+    }
+  },
+  "registration": {
+    "sectionHeader": "登録",
+    "title": "BIS CRS登録プロセス：ステップバイステップガイド",
+    "overview": {
+      "title": "概要",
+      "description": "BIS CRS登録は、BIS登録ポータルを通じて行われる完全にオンラインのプロセスです。しかし、これは単に文書をアップロードするだけではありません。技術的精度、規制の理解、およびインド規格（IS）への厳格な準拠が必要です。"
+    },
+    "stepByStep": {
+      "title": "BIS CRSプロセスのステップバイステップ",
+      "description": "CRSの下でBIS認証の旅がどのように展開されるかは次のとおりです：",
+      "steps": {
+        "step1": {
+          "heading": "ステップ1：BIS認定ラボでの製品テスト",
+          "points": [
+            "BIS承認リストからラボを選択",
+            "関連するISの下でテストのために製品サンプルを提出",
+            "BIS要件に従ってフォーマットされた最終テストレポートを受信"
+          ]
+        },
+        "step2": {
+          "heading": "ステップ2：文書の準備",
+          "points": [
+            "必要なすべての文書を収集（セクション7で詳述）",
+            "正しい命名、フォーマット、署名、日付を確保",
+            "BISロゴスペース + IS規格を示す製品ラベルのモックアップを作成"
+          ]
+        },
+        "step3": {
+          "heading": "ステップ3：オンライン申請提出",
+          "points": [
+            "BIS CRSポータル（https://www.bis.org.in/）にログインまたは登録",
+            "主要フィールドを記入：製品、モデル番号、ブランド、製造ユニット、およびAIR（該当する場合）",
+            "すべての文書とテストレポートを正しいセクションにアップロード",
+            "政府手数料をオンラインで支払い"
+          ]
+        },
+        "step4": {
+          "heading": "ステップ4：BISによる申請審査",
+          "points": [
+            "BISが提出された文書を審査し、ラボレポートを検証",
+            "説明が必要な場合、ポータルを通じてクエリが提起される",
+            "適切な文書または説明で回答"
+          ]
+        },
+        "step5": {
+          "heading": "ステップ5：BIS登録の付与",
+          "points": [
+            "すべてが正常な場合、BISが登録証明書を発行",
+            "あなたの証明書には以下が記載されます：",
+            "この情報を製品ラベルに印刷するか、eラベルを適用する必要があります"
+          ],
+          "certificateDetails": [
+            "BIS登録番号",
+            "ブランド名",
+            "製品モデル",
+            "IS規格コード"
+          ]
+        },
+        "step6": {
+          "heading": "ステップ6：ラベリングと流通",
+          "points": [
+            "すべての認定製品は以下を表示する必要があります：",
+            "ラベルはBISガイドラインに従って印刷またはデジタル埋め込みが必要"
+          ],
+          "labelRequirements": [
+            "BIS CRSロゴ",
+            "製品に適用されるISコード",
+            "登録番号"
+          ]
+        }
+      },
+      "queryNote": "クエリは30日以内に解決する必要があり、そうでなければ申請は自動的に却下されます。"
+    },
+    "timeline": {
+      "title": "概算タイムライン",
+      "table": {
+        "headers": {
+          "activity": "活動",
+          "time": "推定時間"
+        },
+        "rows": {
+          "testing": {
+            "activity": "製品テスト",
+            "time": "7-10営業日"
+          },
+          "documents": {
+            "activity": "文書収集",
+            "time": "2-3日"
+          },
+          "submission": {
+            "activity": "申請提出",
+            "time": "1日"
+          },
+          "review": {
+            "activity": "BIS審査 + クエリ解決",
+            "time": "10-15営業日"
+          },
+          "certificate": {
+            "activity": "最終証明書発行",
+            "time": "2-4営業日"
+          },
+          "total": {
+            "activity": "合計",
+            "time": "〜4週間"
+          }
+        }
+      }
+    },
+    "feeStructure": {
+      "title": "CRS登録の料金構造",
+      "table": {
+        "headers": {
+          "feeType": "料金タイプ",
+          "amount": "金額"
+        },
+        "rows": {
+          "government": {
+            "feeType": "政府手数料",
+            "amount": "₹53,000 + 18% GST（テストレポートごと）"
+          },
+          "additional": {
+            "feeType": "同一アプリでの追加レポート",
+            "amount": "₹20,000 + 18% GST（レポートごと）"
+          },
+          "testing": {
+            "feeType": "テスト料金",
+            "amount": "₹10,000 – ₹20,000 + 18% GST（製品/ラボにより異なる）"
+          }
+        }
+      },
+      "note": "価格は更新される場合があります — BISポータルまたはコンサルタントに確認してください。"
+    },
+    "validity": {
+      "title": "CRS証明書の有効性と更新",
+      "table": {
+        "headers": {
+          "parameter": "パラメータ",
+          "details": "詳細"
+        },
+        "rows": {
+          "initial": {
+            "parameter": "初期有効性",
+            "details": "2年"
+          },
+          "renewal": {
+            "parameter": "更新期間",
+            "details": "最大5年（製品変更がない場合）"
+          },
+          "process": {
+            "parameter": "更新プロセス",
+            "details": "オンライン、新しい宣誓書 + 更新手数料に基づく"
+          },
+          "testing": {
+            "parameter": "再テストが必要？",
+            "details": "製品仕様/IS規格が変更されない限り不要"
+          }
+        }
+      }
+    }
+  },
+  "financials": {
+    "sectionHeader": "財務",
+    "title": "BIS CRS登録料金、有効性、更新ガイドライン",
+    "understanding": {
+      "title": "財務の理解",
+      "description": "義務登録制度（CRS）の下でBIS証明書を取得するには、政府が義務付けた料金と製品テスト料金の両方が必要です。プロセスはオンラインで合理化されていますが、支払い不足や誤った申請による遅延や拒否を避けるために正確に予算を立てることが重要です。"
+    },
+    "feeStructure": {
+      "title": "料金構造の内訳",
+      "governmentFees": "政府料金（BISに支払い）",
+      "table": {
+        "headers": {
+          "type": "タイプ",
+          "fee": "料金（INR）",
+          "gst": "GST（18%）",
+          "total": "合計（INR）"
+        },
+        "rows": {
+          "firstReport": {
+            "type": "最初のテストレポート",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          },
+          "additionalReport": {
+            "type": "追加テストレポート（同じアプリケーション）",
+            "fee": "₹20,000",
+            "gst": "₹3,600",
+            "total": "₹23,600"
+          },
+          "renewal": {
+            "type": "更新料",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          }
+        }
+      }
+    }
+  },
+  "eLabelling": {
+    "sectionHeader": "電子ラベリング",
+    "title": "BIS CRS認証製品の電子ラベリングガイドライン",
+    "whatIs": {
+      "title": "電子ラベリングとは何ですか？",
+      "description": "電子ラベリングとは、物理的な表面に印刷するのではなく、デバイス内で規制情報を電子的に表示する慣行を指します。BIS強制登録制度（CRS）の下では、特定の製品（特にコンパクトまたはデジタルデバイス）は、ソフトウェアインターフェースまたはデジタルパッケージを通じてBIS証明書の詳細、標準マーク、およびISコードを提示することができます。"
+    },
+    "guidelines": {
+      "title": "電子ラベリングに関するBIS公式ガイドライン（CMD 3/8:1/6975 2015年12月3日付）",
+      "coreRequirements": "電子ラベリングの基本要件：",
+      "table": {
+        "headers": {
+          "rule": "規則",
+          "description": "説明"
+        },
+        "rows": {
+          "physicalLabel": {
+            "rule": "パッケージへの物理ラベル",
+            "description": "製品ボックスまたは外部パッケージには、BIS CRSロゴと登録詳細を表示する必要があります。"
+          },
+          "removableLabels": {
+            "rule": "バルクパッケージ用の取り外し可能なラベル",
+            "description": "製品がバルクで出荷される場合、外部パッケージに取り外し可能な接着ラベルが受け入れられます。"
+          },
+          "noTools": {
+            "rule": "アクセスにツール不要",
+            "description": "ユーザーは、ツールやアクセサリを必要とせずに電子ラベル情報にアクセスできる必要があります（例：SIMカードの取り外しは許可されていません）。"
+          },
+          "secureProgramming": {
+            "rule": "セキュアプログラミング",
+            "description": "電子ラベル情報は、ファームウェア/ソフトウェアに組み込まれ、第三者による変更からロックされている必要があります。"
+          },
+          "menuAccess": {
+            "rule": "メニューベースのアクセス",
+            "description": "ユーザーは、デバイスのメニューインターフェースを通じて4ステップ以内で情報にアクセスできる必要があります。"
+          },
+          "instructions": {
+            "rule": "指示が必要",
+            "description": "電子ラベルの詳細にアクセスする方法の指示を提供する必要があります："
+          }
+        }
+      }
+    }
   }
 }

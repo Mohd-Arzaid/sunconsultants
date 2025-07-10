@@ -143,5 +143,318 @@
       },
       "result": "Hasil: Sertifikat BIS yang valid diterbitkan di bawah CRS."
     }
+  },
+  "documents": {
+    "sectionHeader": "Dokumen",
+    "title": "Dokumen yang Diperlukan untuk Registrasi BIS CRS",
+    "subtitle": "Daftar dokumen yang diperlukan untuk mendapatkan registrasi BIS CRS.",
+    "paragraph1": "Proses registrasi BIS CRS sepenuhnya online tetapi memerlukan dokumentasi yang tepat untuk persetujuan yang berhasil. Bahkan kesalahan kecil dalam formulir, format, atau jenis file dapat menyebabkan penolakan atau penundaan.",
+    "paragraph2": "Dokumentasi yang tepat juga memastikan sertifikat BIS Anda diproses lebih cepat dan tetap sah secara hukum dalam audit kepatuhan, pemeriksaan bea cukai, dan persetujuan marketplace.",
+    "masterChecklist": {
+      "title": "Daftar Utama: Dokumen yang Diperlukan untuk Registrasi BIS CRS",
+      "table": {
+        "headers": {
+          "document": "Dokumen",
+          "whoSubmits": "Siapa yang Mengajukan?",
+          "notes": "Catatan"
+        },
+        "rows": {
+          "addressProof": {
+            "document": "Bukti Alamat Produsen",
+            "whoSubmits": "Produsen",
+            "notes": "Sewa pabrik, tagihan listrik, atau izin"
+          },
+          "testReport": {
+            "document": "Laporan Uji dari Lab yang Disetujui BIS",
+            "whoSubmits": "Produsen/Lab",
+            "notes": "Harus terbaru (dalam 90 hari) dan mereferensikan kode IS"
+          },
+          "undertakings": {
+            "document": "Komitmen (sesuai Format BIS)",
+            "whoSubmits": "Pemohon",
+            "notes": "Termasuk tanggung jawab, kepatuhan, dan tanggung jawab produk"
+          },
+          "trademark": {
+            "document": "Sertifikat Merek Dagang",
+            "whoSubmits": "Produsen",
+            "notes": "Diperlukan jika merek terdaftar"
+          },
+          "airAgreement": {
+            "document": "Perjanjian AIR (Untuk pemohon asing)",
+            "whoSubmits": "Produsen Asing & AIR",
+            "notes": "Ditandatangani dan dinotaris"
+          },
+          "affidavit": {
+            "document": "Surat Pernyataan",
+            "whoSubmits": "Produsen atau AIR",
+            "notes": "Format dapat diunduh dari portal BIS"
+          },
+          "feeReceipt": {
+            "document": "Tanda Terima Biaya",
+            "whoSubmits": "Pemohon",
+            "notes": "Bukti pembayaran biaya pemerintah"
+          },
+          "authorizationLetter": {
+            "document": "Surat Otorisasi",
+            "whoSubmits": "Produsen",
+            "notes": "Mengotorisasi AIR untuk bertindak atas nama mereka"
+          },
+          "companyRegistration": {
+            "document": "Sertifikat Registrasi Perusahaan",
+            "whoSubmits": "Produsen",
+            "notes": "Bukti registrasi bisnis (GST, ROC, dll.)"
+          },
+          "productLabels": {
+            "document": "Label/Tanda Produk",
+            "whoSubmits": "Produsen",
+            "notes": "Harus menunjukkan logo BIS, standar IS, dan ruang registrasi"
+          }
+        }
+      }
+    }
+  },
+  "registration": {
+    "sectionHeader": "Registrasi",
+    "title": "Proses Registrasi BIS CRS: Panduan Langkah demi Langkah",
+    "overview": {
+      "title": "Ikhtisar",
+      "description": "Registrasi BIS CRS adalah proses yang sepenuhnya online yang dilakukan melalui Portal Registrasi BIS. Namun, ini bukan hanya tentang mengunggah dokumen — ini memerlukan presisi teknis, pemahaman regulasi, dan kepatuhan ketat terhadap Standar India (IS)."
+    },
+    "stepByStep": {
+      "title": "Proses BIS CRS Langkah demi Langkah",
+      "description": "Berikut cara perjalanan sertifikasi BIS berlangsung di bawah CRS:",
+      "steps": {
+        "step1": {
+          "heading": "Langkah 1: Pengujian Produk di Lab yang Diakui BIS",
+          "points": [
+            "Pilih lab dari daftar yang disetujui BIS",
+            "Kirimkan sampel produk Anda untuk pengujian di bawah IS yang relevan",
+            "Terima laporan tes akhir, diformat sesuai persyaratan BIS"
+          ]
+        },
+        "step2": {
+          "heading": "Langkah 2: Persiapan Dokumen",
+          "points": [
+            "Kumpulkan semua dokumen yang diperlukan (seperti yang dijelaskan di Bagian 7)",
+            "Pastikan penamaan, format, tanda tangan, dan tanggal yang benar",
+            "Buat mockup label produk yang menunjukkan ruang logo BIS + standar IS"
+          ]
+        },
+        "step3": {
+          "heading": "Langkah 3: Pengajuan Aplikasi Online",
+          "points": [
+            "Masuk atau daftar di Portal BIS CRS (https://www.bis.org.in/)",
+            "Isi bidang kunci: produk, nomor model, merek, unit manufaktur, dan AIR (jika berlaku)",
+            "Unggah semua dokumen dan laporan tes di bagian yang benar",
+            "Bayar biaya pemerintah secara online"
+          ]
+        },
+        "step4": {
+          "heading": "Langkah 4: Tinjauan Aplikasi oleh BIS",
+          "points": [
+            "BIS meninjau dokumen yang diserahkan dan memverifikasi laporan lab",
+            "Jika ada klarifikasi yang diperlukan, pertanyaan akan diajukan melalui portal",
+            "Tanggapi dengan dokumentasi atau penjelasan yang sesuai"
+          ]
+        },
+        "step5": {
+          "heading": "Langkah 5: Pemberian Registrasi BIS",
+          "points": [
+            "Jika semuanya sesuai, BIS mengeluarkan Sertifikat Registrasi",
+            "Sertifikat Anda akan menyebutkan:",
+            "Anda harus mencetak info ini pada label produk atau menerapkan e-labeling"
+          ],
+          "certificateDetails": [
+            "Nomor registrasi BIS",
+            "Nama merek",
+            "Model produk",
+            "Kode standar IS"
+          ]
+        },
+        "step6": {
+          "heading": "Langkah 6: Pelabelan dan Distribusi",
+          "points": [
+            "Semua produk bersertifikat harus membawa:",
+            "Label harus dicetak atau disematkan secara digital sesuai pedoman BIS"
+          ],
+          "labelRequirements": [
+            "Logo BIS CRS",
+            "Kode IS yang berlaku untuk produk",
+            "Nomor registrasi"
+          ]
+        }
+      },
+      "queryNote": "Pertanyaan harus diselesaikan dalam 30 hari atau aplikasi akan ditolak secara otomatis."
+    },
+    "timeline": {
+      "title": "Timeline Perkiraan",
+      "table": {
+        "headers": {
+          "activity": "Aktivitas",
+          "time": "Estimasi Waktu"
+        },
+        "rows": {
+          "testing": {
+            "activity": "Pengujian Produk",
+            "time": "7-10 hari kerja"
+          },
+          "documents": {
+            "activity": "Pengumpulan Dokumen",
+            "time": "2-3 hari"
+          },
+          "submission": {
+            "activity": "Pengajuan Aplikasi",
+            "time": "1 hari"
+          },
+          "review": {
+            "activity": "Tinjauan BIS + Resolusi Pertanyaan",
+            "time": "10-15 hari kerja"
+          },
+          "certificate": {
+            "activity": "Penerbitan Sertifikat Akhir",
+            "time": "2-4 hari kerja"
+          },
+          "total": {
+            "activity": "TOTAL",
+            "time": "~4 minggu"
+          }
+        }
+      }
+    },
+    "feeStructure": {
+      "title": "Struktur Biaya untuk Registrasi CRS",
+      "table": {
+        "headers": {
+          "feeType": "Jenis Biaya",
+          "amount": "Jumlah"
+        },
+        "rows": {
+          "government": {
+            "feeType": "Biaya Pemerintah",
+            "amount": "₹53,000 + 18% PPN per laporan tes"
+          },
+          "additional": {
+            "feeType": "Laporan Tambahan dalam App yang Sama",
+            "amount": "₹20,000 + 18% PPN per laporan"
+          },
+          "testing": {
+            "feeType": "Biaya Pengujian",
+            "amount": "₹10,000 – ₹20,000 + 18% PPN (bervariasi menurut produk/lab)"
+          }
+        }
+      },
+      "note": "Harga dapat berubah — konfirmasi di portal BIS atau dengan konsultan Anda."
+    },
+    "validity": {
+      "title": "Validitas & Pembaruan Sertifikat CRS",
+      "table": {
+        "headers": {
+          "parameter": "Parameter",
+          "details": "Detail"
+        },
+        "rows": {
+          "initial": {
+            "parameter": "Validitas Awal",
+            "details": "2 Tahun"
+          },
+          "renewal": {
+            "parameter": "Durasi Pembaruan",
+            "details": "Hingga 5 Tahun (jika tidak ada perubahan produk)"
+          },
+          "process": {
+            "parameter": "Proses Pembaruan",
+            "details": "Online, berdasarkan surat pernyataan baru + biaya pembaruan"
+          },
+          "testing": {
+            "parameter": "Pengujian Ulang Diperlukan?",
+            "details": "Tidak kecuali spesifikasi produk/standar IS berubah"
+          }
+        }
+      }
+    }
+  },
+  "financials": {
+    "sectionHeader": "Keuangan",
+    "title": "Biaya Registrasi BIS CRS, Validitas & Pedoman Pembaruan",
+    "understanding": {
+      "title": "Memahami Keuangan",
+      "description": "Mendapatkan sertifikat BIS di bawah Skema Registrasi Wajib (CRS) melibatkan biaya yang diwajibkan pemerintah dan biaya pengujian produk. Meskipun prosesnya online dan disederhanakan, penting untuk membuat anggaran secara akurat untuk menghindari keterlambatan atau penolakan karena pembayaran kurang atau aplikasi yang salah."
+    },
+    "feeStructure": {
+      "title": "Rincian Struktur Biaya",
+      "governmentFees": "Biaya Pemerintah (Dibayar ke BIS)",
+      "table": {
+        "headers": {
+          "type": "Jenis",
+          "fee": "Biaya (INR)",
+          "gst": "PPN (18%)",
+          "total": "Total (INR)"
+        },
+        "rows": {
+          "firstReport": {
+            "type": "Laporan Tes Pertama",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          },
+          "additionalReport": {
+            "type": "Laporan Tes Tambahan (Aplikasi Sama)",
+            "fee": "₹20,000",
+            "gst": "₹3,600",
+            "total": "₹23,600"
+          },
+          "renewal": {
+            "type": "Biaya Pembaruan",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          }
+        }
+      }
+    }
+  },
+  "eLabelling": {
+    "sectionHeader": "E-Labelling",
+    "title": "Pedoman E-Labelling untuk Produk Bersertifikat BIS CRS",
+    "whatIs": {
+      "title": "Apa itu E-Labelling?",
+      "description": "E-labelling mengacu pada praktik menampilkan informasi regulasi secara elektronik di dalam perangkat daripada mencetaknya pada permukaan fisik. Di bawah Skema Registrasi Wajib BIS (CRS), produk tertentu — khususnya perangkat kompak atau digital — dapat menyajikan detail sertifikat BIS, tanda standar, dan kode IS melalui antarmuka perangkat lunak atau kemasan digital mereka."
+    },
+    "guidelines": {
+      "title": "Pedoman Resmi BIS tentang E-Labelling (CMD 3/8:1/6975 tanggal 3 Des 2015)",
+      "coreRequirements": "Persyaratan Inti untuk E-Labelling:",
+      "table": {
+        "headers": {
+          "rule": "Aturan",
+          "description": "Deskripsi"
+        },
+        "rows": {
+          "physicalLabel": {
+            "rule": "Label Fisik pada Kemasan",
+            "description": "Kotak produk atau kemasan eksternal harus menampilkan logo BIS CRS dan detail registrasi."
+          },
+          "removableLabels": {
+            "rule": "Label yang Dapat Dilepas untuk Kemasan Curah",
+            "description": "Jika produk dikirim dalam jumlah besar, label perekat yang dapat dilepas pada paket luar dapat diterima."
+          },
+          "noTools": {
+            "rule": "Tidak Perlu Alat untuk Akses",
+            "description": "Pengguna harus dapat mengakses info e-label tanpa memerlukan alat atau aksesori (mis. pelepasan kartu SIM tidak diizinkan)."
+          },
+          "secureProgramming": {
+            "rule": "Pemrograman Aman",
+            "description": "Info e-label harus tertanam dalam firmware/perangkat lunak, terkunci dari modifikasi oleh pihak ketiga."
+          },
+          "menuAccess": {
+            "rule": "Akses Berbasis Menu",
+            "description": "Pengguna harus mengakses info dalam tidak lebih dari 4 langkah melalui antarmuka menu perangkat."
+          },
+          "instructions": {
+            "rule": "Instruksi Diperlukan",
+            "description": "Instruksi tentang cara mengakses detail e-label harus disediakan:"
+          }
+        }
+      }
+    }
   }
 }

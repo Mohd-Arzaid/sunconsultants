@@ -143,5 +143,318 @@
       },
       "result": "Ergebnis: Ein gültiges BIS-Zertifikat wird unter CRS ausgestellt."
     }
+  },
+  "documents": {
+    "sectionHeader": "Dokumente",
+    "title": "Erforderliche Dokumente für die BIS CRS-Registrierung",
+    "subtitle": "Liste der Dokumente, die für die Erlangung der BIS CRS-Registrierung erforderlich sind.",
+    "paragraph1": "Der BIS CRS-Registrierungsprozess erfolgt vollständig online, erfordert jedoch eine präzise Dokumentation für eine erfolgreiche Genehmigung. Selbst kleinere Fehler in Formularen, Formaten oder Dateitypen können zu Ablehnungen oder Verzögerungen führen.",
+    "paragraph2": "Eine ordnungsgemäße Dokumentation gewährleistet auch, dass Ihr BIS-Zertifikat schneller bearbeitet wird und bei Compliance-Audits, Zollkontrollen und Marktplatz-Genehmigungen rechtsgültig bleibt.",
+    "masterChecklist": {
+      "title": "Master-Checkliste: Erforderliche Dokumente für die BIS CRS-Registrierung",
+      "table": {
+        "headers": {
+          "document": "Dokument",
+          "whoSubmits": "Wer reicht ein?",
+          "notes": "Hinweise"
+        },
+        "rows": {
+          "addressProof": {
+            "document": "Adressnachweis des Herstellers",
+            "whoSubmits": "Hersteller",
+            "notes": "Fabrikpacht, Stromrechnung oder Lizenz"
+          },
+          "testReport": {
+            "document": "Testbericht von BIS-genehmigtem Labor",
+            "whoSubmits": "Hersteller/Labor",
+            "notes": "Muss aktuell sein (innerhalb von 90 Tagen) und IS-Code referenzieren"
+          },
+          "undertakings": {
+            "document": "Verpflichtungen (gemäß BIS-Format)",
+            "whoSubmits": "Antragsteller",
+            "notes": "Umfasst Haftung, Compliance und Produktverantwortung"
+          },
+          "trademark": {
+            "document": "Markenzertifikat",
+            "whoSubmits": "Hersteller",
+            "notes": "Erforderlich, wenn Marke registriert ist"
+          },
+          "airAgreement": {
+            "document": "AIR-Vereinbarung (für ausländische Antragsteller)",
+            "whoSubmits": "Ausländischer Hersteller & AIR",
+            "notes": "Unterzeichnet und notariell beglaubigt"
+          },
+          "affidavit": {
+            "document": "Eidesstattliche Erklärung",
+            "whoSubmits": "Hersteller oder AIR",
+            "notes": "Format vom BIS-Portal herunterladbar"
+          },
+          "feeReceipt": {
+            "document": "Gebührenquittung",
+            "whoSubmits": "Antragsteller",
+            "notes": "Zahlungsnachweis der Regierungsgebühr"
+          },
+          "authorizationLetter": {
+            "document": "Vollmachtsschreiben",
+            "whoSubmits": "Hersteller",
+            "notes": "Ermächtigt AIR, in ihrem Namen zu handeln"
+          },
+          "companyRegistration": {
+            "document": "Firmenregistrierungszertifikat",
+            "whoSubmits": "Hersteller",
+            "notes": "Nachweis der Geschäftsregistrierung (GST, ROC, etc.)"
+          },
+          "productLabels": {
+            "document": "Produktetiketten/Markierungen",
+            "whoSubmits": "Hersteller",
+            "notes": "Muss BIS-Logo, IS-Standard und Registrierungsplatz zeigen"
+          }
+        }
+      }
+    }
+  },
+  "registration": {
+    "sectionHeader": "Registrierung",
+    "title": "BIS CRS Registrierungsprozess: Schritt-für-Schritt-Anleitung",
+    "overview": {
+      "title": "Überblick",
+      "description": "Die BIS CRS-Registrierung ist ein vollständig online durchgeführter Prozess über das BIS-Registrierungsportal. Es geht jedoch nicht nur um das Hochladen von Dokumenten — es erfordert technische Präzision, regulatorisches Verständnis und strikte Einhaltung der Indischen Standards (IS)."
+    },
+    "stepByStep": {
+      "title": "Schritt-für-Schritt BIS CRS Prozess",
+      "description": "So verläuft die BIS-Zertifizierungsreise unter dem CRS:",
+      "steps": {
+        "step1": {
+          "heading": "Schritt 1: Produkttests in BIS-anerkanntem Labor",
+          "points": [
+            "Wählen Sie ein Labor aus der BIS-genehmigten Liste",
+            "Reichen Sie Ihre Produktprobe zur Prüfung unter dem relevanten IS ein",
+            "Erhalten Sie den finalen Testbericht, formatiert nach BIS-Anforderungen"
+          ]
+        },
+        "step2": {
+          "heading": "Schritt 2: Vorbereitung der Dokumente",
+          "points": [
+            "Sammeln Sie alle erforderlichen Dokumente (wie in Abschnitt 7 detailliert)",
+            "Stellen Sie korrekte Benennung, Formatierung, Unterschriften und Daten sicher",
+            "Erstellen Sie ein Produktetikett-Mockup, das BIS-Logo-Platz + IS-Standard zeigt"
+          ]
+        },
+        "step3": {
+          "heading": "Schritt 3: Online-Antragsstellung",
+          "points": [
+            "Melden Sie sich an oder registrieren Sie sich im BIS CRS Portal (https://www.bis.org.in/)",
+            "Füllen Sie Schlüsselfelder aus: Produkt, Modellnummer, Marke, Fertigungseinheit und AIR (falls zutreffend)",
+            "Laden Sie alle Dokumente und Testberichte in den korrekten Abschnitten hoch",
+            "Zahlen Sie die Regierungsgebühr online"
+          ]
+        },
+        "step4": {
+          "heading": "Schritt 4: Antragsüberprüfung durch BIS",
+          "points": [
+            "BIS überprüft eingereichte Dokumente und verifiziert Laborberichte",
+            "Falls Klärungen erforderlich sind, wird eine Anfrage über das Portal gestellt",
+            "Antworten Sie mit angemessener Dokumentation oder Erklärungen"
+          ]
+        },
+        "step5": {
+          "heading": "Schritt 5: Erteilung der BIS-Registrierung",
+          "points": [
+            "Wenn alles in Ordnung ist, stellt BIS das Registrierungszertifikat aus",
+            "Ihr Zertifikat wird erwähnen:",
+            "Sie müssen diese Informationen auf das Produktetikett drucken oder E-Labeling anwenden"
+          ],
+          "certificateDetails": [
+            "BIS-Registrierungsnummer",
+            "Markenname",
+            "Produktmodell",
+            "IS-Standardcode"
+          ]
+        },
+        "step6": {
+          "heading": "Schritt 6: Etikettierung und Vertrieb",
+          "points": [
+            "Alle zertifizierten Produkte müssen tragen:",
+            "Etikett muss nach BIS-Richtlinien gedruckt oder digital eingebettet sein"
+          ],
+          "labelRequirements": [
+            "BIS CRS Logo",
+            "IS-Code für das Produkt",
+            "Registrierungsnummer"
+          ]
+        }
+      },
+      "queryNote": "Anfragen müssen innerhalb von 30 Tagen geklärt werden oder der Antrag wird automatisch abgelehnt."
+    },
+    "timeline": {
+      "title": "Ungefährer Zeitplan",
+      "table": {
+        "headers": {
+          "activity": "Aktivität",
+          "time": "Geschätzte Zeit"
+        },
+        "rows": {
+          "testing": {
+            "activity": "Produkttests",
+            "time": "7-10 Arbeitstage"
+          },
+          "documents": {
+            "activity": "Dokumentensammlung",
+            "time": "2-3 Tage"
+          },
+          "submission": {
+            "activity": "Antragstellung",
+            "time": "1 Tag"
+          },
+          "review": {
+            "activity": "BIS-Überprüfung + Anfragenlösung",
+            "time": "10-15 Arbeitstage"
+          },
+          "certificate": {
+            "activity": "Finale Zertifikatsausstellung",
+            "time": "2-4 Arbeitstage"
+          },
+          "total": {
+            "activity": "GESAMT",
+            "time": "~4 Wochen"
+          }
+        }
+      }
+    },
+    "feeStructure": {
+      "title": "Gebührenstruktur für CRS-Registrierung",
+      "table": {
+        "headers": {
+          "feeType": "Gebührentyp",
+          "amount": "Betrag"
+        },
+        "rows": {
+          "government": {
+            "feeType": "Regierungsgebühr",
+            "amount": "₹53,000 + 18% MwSt. pro Testbericht"
+          },
+          "additional": {
+            "feeType": "Zusätzlicher Bericht in derselben App",
+            "amount": "₹20,000 + 18% MwSt. pro Bericht"
+          },
+          "testing": {
+            "feeType": "Testgebühren",
+            "amount": "₹10,000 – ₹20,000 + 18% MwSt. (variiert je nach Produkt/Labor)"
+          }
+        }
+      },
+      "note": "Preise können sich ändern — bestätigen Sie im BIS-Portal oder bei Ihrem Berater."
+    },
+    "validity": {
+      "title": "CRS-Zertifikatsgültigkeit & Erneuerung",
+      "table": {
+        "headers": {
+          "parameter": "Parameter",
+          "details": "Details"
+        },
+        "rows": {
+          "initial": {
+            "parameter": "Anfängliche Gültigkeit",
+            "details": "2 Jahre"
+          },
+          "renewal": {
+            "parameter": "Erneuerungsdauer",
+            "details": "Bis zu 5 Jahre (bei keinen Produktänderungen)"
+          },
+          "process": {
+            "parameter": "Erneuerungsprozess",
+            "details": "Online, basierend auf neuer eidesstattlicher Erklärung + Erneuerungsgebühr"
+          },
+          "testing": {
+            "parameter": "Erneute Tests erforderlich?",
+            "details": "Nicht, es sei denn, Produktspezifikationen/IS-Standard ändern sich"
+          }
+        }
+      }
+    }
+  },
+  "financials": {
+    "sectionHeader": "Finanzierung",
+    "title": "BIS CRS Registrierungsgebühren, Gültigkeit & Erneuerungsrichtlinien",
+    "understanding": {
+      "title": "Die Finanzierung verstehen",
+      "description": "Die Erlangung eines BIS-Zertifikats unter dem Compulsory Registration Scheme (CRS) umfasst sowohl behördlich vorgeschriebene Gebühren als auch Produkttestgebühren. Obwohl der Prozess online und optimiert ist, ist es wichtig, genau zu budgetieren, um Verzögerungen oder Ablehnungen aufgrund von Unterzahlungen oder falsch eingereichten Anträgen zu vermeiden."
+    },
+    "feeStructure": {
+      "title": "Aufschlüsselung der Gebührenstruktur",
+      "governmentFees": "Regierungsgebühren (Zahlbar an BIS)",
+      "table": {
+        "headers": {
+          "type": "Typ",
+          "fee": "Gebühr (INR)",
+          "gst": "MwSt. (18%)",
+          "total": "Gesamt (INR)"
+        },
+        "rows": {
+          "firstReport": {
+            "type": "Erster Testbericht",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          },
+          "additionalReport": {
+            "type": "Zusätzlicher Testbericht (Gleiche Anwendung)",
+            "fee": "₹20,000",
+            "gst": "₹3,600",
+            "total": "₹23,600"
+          },
+          "renewal": {
+            "type": "Erneuerungsgebühr",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          }
+        }
+      }
+    }
+  },
+  "eLabelling": {
+    "sectionHeader": "E-Kennzeichnung",
+    "title": "Richtlinien für E-Kennzeichnung für BIS CRS-zertifizierte Produkte",
+    "whatIs": {
+      "title": "Was ist E-Kennzeichnung?",
+      "description": "E-Kennzeichnung bezieht sich auf die Praxis, regulatorische Informationen elektronisch innerhalb eines Geräts anzuzeigen, anstatt sie auf physischen Oberflächen zu drucken. Unter dem BIS Obligatorischen Registrierungsschema (CRS) können bestimmte Produkte — insbesondere kompakte oder digitale Geräte — die BIS-Zertifikatdetails, Standardmarkierung und IS-Code durch ihre Software-Schnittstelle oder digitale Verpackung präsentieren."
+    },
+    "guidelines": {
+      "title": "Offizielle BIS-Richtlinien zur E-Kennzeichnung (CMD 3/8:1/6975 vom 3. Dezember 2015)",
+      "coreRequirements": "Kernauforderungen für E-Kennzeichnung:",
+      "table": {
+        "headers": {
+          "rule": "Regel",
+          "description": "Beschreibung"
+        },
+        "rows": {
+          "physicalLabel": {
+            "rule": "Physisches Etikett auf der Verpackung",
+            "description": "Produktverpackung oder externe Verpackung muss das BIS CRS-Logo und Registrierungsdetails anzeigen."
+          },
+          "removableLabels": {
+            "rule": "Abnehmbare Etiketten für Großverpackungen",
+            "description": "Wenn Produkte in großen Mengen versendet werden, ist ein abnehmbares Klebeetikett auf der äußeren Verpackung akzeptabel."
+          },
+          "noTools": {
+            "rule": "Keine Werkzeuge für Zugang erforderlich",
+            "description": "Benutzer müssen auf die E-Label-Informationen zugreifen können, ohne Werkzeuge oder Zubehör zu benötigen (z.B. SIM-Karten-Entfernung nicht erlaubt)."
+          },
+          "secureProgramming": {
+            "rule": "Sichere Programmierung",
+            "description": "E-Label-Informationen müssen in Firmware/Software eingebettet sein, vor Änderungen durch Dritte gesperrt."
+          },
+          "menuAccess": {
+            "rule": "Menübasierter Zugang",
+            "description": "Benutzer müssen auf die Informationen in nicht mehr als 4 Schritten über die Geräte-Menüschnittstelle zugreifen können."
+          },
+          "instructions": {
+            "rule": "Anweisungen erforderlich",
+            "description": "Anweisungen zum Zugriff auf E-Label-Details müssen bereitgestellt werden:"
+          }
+        }
+      }
+    }
   }
 }

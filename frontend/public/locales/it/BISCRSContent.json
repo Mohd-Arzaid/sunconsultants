@@ -143,5 +143,318 @@
       },
       "result": "Risultato: Viene rilasciato un certificato BIS valido sotto CRS."
     }
+  },
+  "documents": {
+    "sectionHeader": "Documenti",
+    "title": "Documenti Richiesti per la Registrazione BIS CRS",
+    "subtitle": "Elenco dei documenti richiesti per ottenere la registrazione BIS CRS.",
+    "paragraph1": "Il processo di registrazione BIS CRS è completamente online ma richiede documentazione precisa per un'approvazione di successo. Anche errori minori in moduli, formati o tipi di file possono portare a rifiuti o ritardi.",
+    "paragraph2": "Una documentazione appropriata assicura anche che il vostro certificato BIS sia elaborato più velocemente e rimanga legalmente valido durante audit di conformità, controlli doganali e approvazioni marketplace.",
+    "masterChecklist": {
+      "title": "Lista Principale: Documenti Richiesti per la Registrazione BIS CRS",
+      "table": {
+        "headers": {
+          "document": "Documento",
+          "whoSubmits": "Chi Presenta?",
+          "notes": "Note"
+        },
+        "rows": {
+          "addressProof": {
+            "document": "Prova di Indirizzo del Produttore",
+            "whoSubmits": "Produttore",
+            "notes": "Contratto di affitto fabbrica, bolletta o licenza"
+          },
+          "testReport": {
+            "document": "Rapporto di Test da Laboratorio Approvato BIS",
+            "whoSubmits": "Produttore/Laboratorio",
+            "notes": "Deve essere recente (entro 90 giorni) e riferire codice IS"
+          },
+          "undertakings": {
+            "document": "Impegni (secondo Formato BIS)",
+            "whoSubmits": "Richiedente",
+            "notes": "Include responsabilità, conformità e responsabilità prodotto"
+          },
+          "trademark": {
+            "document": "Certificato Marchio",
+            "whoSubmits": "Produttore",
+            "notes": "Richiesto se il marchio è registrato"
+          },
+          "airAgreement": {
+            "document": "Accordo AIR (Per richiedenti stranieri)",
+            "whoSubmits": "Produttore Straniero e AIR",
+            "notes": "Firmato e notarizzato"
+          },
+          "affidavit": {
+            "document": "Dichiarazione Giurata",
+            "whoSubmits": "Produttore o AIR",
+            "notes": "Formato scaricabile dal portale BIS"
+          },
+          "feeReceipt": {
+            "document": "Ricevuta Tasse",
+            "whoSubmits": "Richiedente",
+            "notes": "Prova di pagamento della tassa governativa"
+          },
+          "authorizationLetter": {
+            "document": "Lettera di Autorizzazione",
+            "whoSubmits": "Produttore",
+            "notes": "Autorizza AIR ad agire per loro conto"
+          },
+          "companyRegistration": {
+            "document": "Certificato di Registrazione Aziendale",
+            "whoSubmits": "Produttore",
+            "notes": "Prova di registrazione business (GST, ROC, ecc.)"
+          },
+          "productLabels": {
+            "document": "Etichette/Marcature Prodotto",
+            "whoSubmits": "Produttore",
+            "notes": "Deve mostrare logo BIS, standard IS e spazio registrazione"
+          }
+        }
+      }
+    }
+  },
+  "registration": {
+    "sectionHeader": "Registrazione",
+    "title": "Processo di Registrazione BIS CRS: Guida Passo dopo Passo",
+    "overview": {
+      "title": "Panoramica",
+      "description": "La registrazione BIS CRS è un processo completamente online condotto tramite il Portale di Registrazione BIS. Tuttavia, non si tratta solo di caricare documenti — richiede precisione tecnica, comprensione normativa e rigorosa aderenza agli Standard Indiani (IS)."
+    },
+    "stepByStep": {
+      "title": "Processo BIS CRS Passo dopo Passo",
+      "description": "Ecco come si svolge il percorso di certificazione BIS sotto il CRS:",
+      "steps": {
+        "step1": {
+          "heading": "Passo 1: Test del Prodotto in Laboratorio Riconosciuto BIS",
+          "points": [
+            "Scegli un laboratorio dalla lista approvata BIS",
+            "Invia il tuo campione di prodotto per i test sotto l'IS pertinente",
+            "Ricevi il rapporto di test finale, formattato secondo i requisiti BIS"
+          ]
+        },
+        "step2": {
+          "heading": "Passo 2: Preparazione dei Documenti",
+          "points": [
+            "Raccogli tutti i documenti richiesti (come dettagliato nella Sezione 7)",
+            "Assicurati nomenclatura, formattazione, firme e date corrette",
+            "Crea una bozza di etichetta del prodotto che mostri lo spazio del logo BIS + standard IS"
+          ]
+        },
+        "step3": {
+          "heading": "Passo 3: Presentazione Domanda Online",
+          "points": [
+            "Accedi o registrati sul Portale BIS CRS (https://www.bis.org.in/)",
+            "Compila i campi chiave: prodotto, numero modello, marca, unità di produzione e AIR (se applicabile)",
+            "Carica tutti i documenti e il rapporto di test nelle sezioni corrette",
+            "Paga la tassa governativa online"
+          ]
+        },
+        "step4": {
+          "heading": "Passo 4: Revisione Domanda da parte di BIS",
+          "points": [
+            "BIS esamina i documenti presentati e verifica i rapporti di laboratorio",
+            "Se è necessaria qualche chiarimento, verrà sollevata una query tramite il portale",
+            "Rispondi con documentazione o spiegazioni appropriate"
+          ]
+        },
+        "step5": {
+          "heading": "Passo 5: Concessione della Registrazione BIS",
+          "points": [
+            "Se tutto è in ordine, BIS rilascia il Certificato di Registrazione",
+            "Il tuo certificato menzionerà:",
+            "Devi stampare queste informazioni sull'etichetta del prodotto o applicare l'e-labeling"
+          ],
+          "certificateDetails": [
+            "Numero di registrazione BIS",
+            "Nome del marchio",
+            "Modello del prodotto",
+            "Codice standard IS"
+          ]
+        },
+        "step6": {
+          "heading": "Passo 6: Etichettatura e Distribuzione",
+          "points": [
+            "Tutti i prodotti certificati devono riportare:",
+            "L'etichetta deve essere stampata o incorporata digitalmente secondo le linee guida BIS"
+          ],
+          "labelRequirements": [
+            "Logo BIS CRS",
+            "Codice IS applicabile al prodotto",
+            "Numero di registrazione"
+          ]
+        }
+      },
+      "queryNote": "Le query devono essere risolte entro 30 giorni o la domanda sarà automaticamente rifiutata."
+    },
+    "timeline": {
+      "title": "Cronologia Approssimativa",
+      "table": {
+        "headers": {
+          "activity": "Attività",
+          "time": "Tempo Stimato"
+        },
+        "rows": {
+          "testing": {
+            "activity": "Test del Prodotto",
+            "time": "7-10 giorni lavorativi"
+          },
+          "documents": {
+            "activity": "Raccolta Documenti",
+            "time": "2-3 giorni"
+          },
+          "submission": {
+            "activity": "Presentazione Domanda",
+            "time": "1 giorno"
+          },
+          "review": {
+            "activity": "Revisione BIS + Risoluzione Query",
+            "time": "10-15 giorni lavorativi"
+          },
+          "certificate": {
+            "activity": "Emissione Certificato Finale",
+            "time": "2-4 giorni lavorativi"
+          },
+          "total": {
+            "activity": "TOTALE",
+            "time": "~4 settimane"
+          }
+        }
+      }
+    },
+    "feeStructure": {
+      "title": "Struttura delle Tariffe per la Registrazione CRS",
+      "table": {
+        "headers": {
+          "feeType": "Tipo di Tariffa",
+          "amount": "Importo"
+        },
+        "rows": {
+          "government": {
+            "feeType": "Tassa Governativa",
+            "amount": "₹53,000 + 18% IVA per rapporto di test"
+          },
+          "additional": {
+            "feeType": "Rapporto Aggiuntivo nella Stessa App",
+            "amount": "₹20,000 + 18% IVA per rapporto"
+          },
+          "testing": {
+            "feeType": "Costi di Test",
+            "amount": "₹10,000 – ₹20,000 + 18% IVA (varia per prodotto/lab)"
+          }
+        }
+      },
+      "note": "Prezzi soggetti ad aggiornamento — conferma sul portale BIS o con il tuo consulente."
+    },
+    "validity": {
+      "title": "Validità e Rinnovo del Certificato CRS",
+      "table": {
+        "headers": {
+          "parameter": "Parametro",
+          "details": "Dettagli"
+        },
+        "rows": {
+          "initial": {
+            "parameter": "Validità Iniziale",
+            "details": "2 Anni"
+          },
+          "renewal": {
+            "parameter": "Durata del Rinnovo",
+            "details": "Fino a 5 Anni (se nessun cambiamento del prodotto)"
+          },
+          "process": {
+            "parameter": "Processo di Rinnovo",
+            "details": "Online, basato su nuovo affidavit + tassa di rinnovo"
+          },
+          "testing": {
+            "parameter": "Nuovo Test Richiesto?",
+            "details": "Non a meno che le specifiche del prodotto/standard IS cambino"
+          }
+        }
+      }
+    }
+  },
+  "financials": {
+    "sectionHeader": "Finanze",
+    "title": "Tariffe di Registrazione BIS CRS, Validità e Linee Guida per il Rinnovo",
+    "understanding": {
+      "title": "Comprendere le Finanze",
+      "description": "Ottenere un certificato BIS sotto lo Schema di Registrazione Obbligatorio (CRS) comporta sia costi obbligatori del governo che tariffe per i test dei prodotti. Sebbene il processo sia online e semplificato, è importante fare un budget accurato per evitare ritardi o rifiuti dovuti a pagamenti insufficienti o applicazioni mal presentate."
+    },
+    "feeStructure": {
+      "title": "Ripartizione della Struttura delle Tariffe",
+      "governmentFees": "Tariffe Governative (Pagabili a BIS)",
+      "table": {
+        "headers": {
+          "type": "Tipo",
+          "fee": "Tariffa (INR)",
+          "gst": "IVA (18%)",
+          "total": "Totale (INR)"
+        },
+        "rows": {
+          "firstReport": {
+            "type": "Primo Rapporto di Test",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          },
+          "additionalReport": {
+            "type": "Rapporto di Test Aggiuntivo (Stessa Applicazione)",
+            "fee": "₹20,000",
+            "gst": "₹3,600",
+            "total": "₹23,600"
+          },
+          "renewal": {
+            "type": "Tariffa di Rinnovo",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          }
+        }
+      }
+    }
+  },
+  "eLabelling": {
+    "sectionHeader": "E-Etichettatura",
+    "title": "Linee Guida per l'E-Etichettatura dei Prodotti Certificati BIS CRS",
+    "whatIs": {
+      "title": "Cos'è l'E-Etichettatura?",
+      "description": "L'e-etichettatura si riferisce alla pratica di visualizzare le informazioni normative elettronicamente all'interno di un dispositivo piuttosto che stamparle su superfici fisiche. Sotto lo Schema di Registrazione Obbligatorio BIS (CRS), certi prodotti — in particolare dispositivi compatti o digitali — possono presentare i dettagli del certificato BIS, il marchio standard e il codice IS attraverso la loro interfaccia software o confezionamento digitale."
+    },
+    "guidelines": {
+      "title": "Linee Guida Ufficiali BIS sull'E-Etichettatura (CMD 3/8:1/6975 datato 3 Dic 2015)",
+      "coreRequirements": "Requisiti Essenziali per l'E-Etichettatura:",
+      "table": {
+        "headers": {
+          "rule": "Regola",
+          "description": "Descrizione"
+        },
+        "rows": {
+          "physicalLabel": {
+            "rule": "Etichetta Fisica sulla Confezione",
+            "description": "La scatola del prodotto o la confezione esterna deve mostrare il logo BIS CRS e i dettagli di registrazione."
+          },
+          "removableLabels": {
+            "rule": "Etichette Rimovibili per Confezionamento alla Rinfusa",
+            "description": "Se i prodotti vengono spediti alla rinfusa, è accettabile un'etichetta adesiva rimovibile sulla confezione esterna."
+          },
+          "noTools": {
+            "rule": "Nessuno Strumento Necessario per l'Accesso",
+            "description": "Gli utenti devono essere in grado di accedere alle informazioni dell'e-etichetta senza bisogno di strumenti o accessori (ad es., rimozione SIM card non consentita)."
+          },
+          "secureProgramming": {
+            "rule": "Programmazione Sicura",
+            "description": "Le informazioni dell'e-etichetta devono essere incorporate nel firmware/software, bloccate dalla modifica da parte di terzi."
+          },
+          "menuAccess": {
+            "rule": "Accesso Basato su Menu",
+            "description": "Gli utenti devono accedere alle informazioni in non più di 4 passaggi attraverso l'interfaccia del menu del dispositivo."
+          },
+          "instructions": {
+            "rule": "Istruzioni Richieste",
+            "description": "Devono essere fornite istruzioni su come accedere ai dettagli dell'e-etichetta:"
+          }
+        }
+      }
+    }
   }
 }

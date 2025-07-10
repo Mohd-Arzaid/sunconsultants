@@ -143,5 +143,318 @@
       },
       "result": "Result: A valid BIS certificate is issued under CRS."
     }
+  },
+  "documents": {
+    "sectionHeader": "Documents",
+    "title": "Documents Required for BIS CRS Registration",
+    "subtitle": "List of documents required to obtain BIS CRS registration.",
+    "paragraph1": "The BIS CRS registration process is completely online but demands precise documentation for successful approval. Even minor errors in forms, formats, or file types can lead to rejections or delays.",
+    "paragraph2": "Proper documentation also ensures your bis certificate is processed faster and remains legally valid across compliance audits, customs checks, and marketplace approvals.",
+    "masterChecklist": {
+      "title": "Master Checklist: Documents Required for BIS CRS Registration",
+      "table": {
+        "headers": {
+          "document": "Document",
+          "whoSubmits": "Who Submits?",
+          "notes": "Notes"
+        },
+        "rows": {
+          "addressProof": {
+            "document": "Manufacturer's Address Proof",
+            "whoSubmits": "Manufacturer",
+            "notes": "Factory lease, utility bill, or license"
+          },
+          "testReport": {
+            "document": "Test Report from BIS-Approved Lab",
+            "whoSubmits": "Manufacturer/Lab",
+            "notes": "Must be recent (within 90 days) and reference IS code"
+          },
+          "undertakings": {
+            "document": "Undertakings (as per BIS Format)",
+            "whoSubmits": "Applicant",
+            "notes": "Includes liability, compliance, and product responsibility"
+          },
+          "trademark": {
+            "document": "Trademark Certificate",
+            "whoSubmits": "Manufacturer",
+            "notes": "Required if brand is registered"
+          },
+          "airAgreement": {
+            "document": "AIR Agreement (For foreign applicants)",
+            "whoSubmits": "Foreign Manufacturer & AIR",
+            "notes": "Signed and notarized"
+          },
+          "affidavit": {
+            "document": "Affidavit",
+            "whoSubmits": "Manufacturer or AIR",
+            "notes": "Format downloadable from BIS portal"
+          },
+          "feeReceipt": {
+            "document": "Fee Receipt",
+            "whoSubmits": "Applicant",
+            "notes": "Payment proof of government fee"
+          },
+          "authorizationLetter": {
+            "document": "Authorization Letter",
+            "whoSubmits": "Manufacturer",
+            "notes": "Authorizes AIR to act on their behalf"
+          },
+          "companyRegistration": {
+            "document": "Company Registration Certificate",
+            "whoSubmits": "Manufacturer",
+            "notes": "Proof of business registration (GST, ROC, etc.)"
+          },
+          "productLabels": {
+            "document": "Product Labels/Markings",
+            "whoSubmits": "Manufacturer",
+            "notes": "Must show BIS logo, IS standard, and registration space"
+          }
+        }
+      }
+    }
+  },
+  "registration": {
+    "sectionHeader": "Registration",
+    "title": "BIS CRS Registration Process: Step-by-Step Guide",
+    "overview": {
+      "title": "Overview",
+      "description": "The BIS CRS registration is a fully online process conducted via the BIS Registration Portal. However, it's not just about uploading documents — it requires technical precision, regulatory understanding, and strict adherence to Indian Standards (IS)."
+    },
+    "stepByStep": {
+      "title": "Step-by-Step BIS CRS Process",
+      "description": "Here's how the BIS certification journey unfolds under the CRS:",
+      "steps": {
+        "step1": {
+          "heading": "Step 1: Product Testing at BIS-Recognized Lab",
+          "points": [
+            "Choose a lab from the BIS-approved list",
+            "Submit your product sample for testing under the relevant IS",
+            "Receive the final test report, formatted per BIS requirements"
+          ]
+        },
+        "step2": {
+          "heading": "Step 2: Preparation of Documents",
+          "points": [
+            "Gather all required documents (as detailed in Section 7)",
+            "Ensure correct naming, formatting, signatures, and dates",
+            "Create a product label mockup showing BIS logo space + IS standard"
+          ]
+        },
+        "step3": {
+          "heading": "Step 3: Online Application Filing",
+          "points": [
+            "Log in or register on the BIS CRS Portal (https://www.bis.org.in/)",
+            "Fill in key fields: product, model number, brand, manufacturing unit, and AIR (if applicable)",
+            "Upload all documents and test report in correct sections",
+            "Pay the government fee online"
+          ]
+        },
+        "step4": {
+          "heading": "Step 4: Application Review by BIS",
+          "points": [
+            "BIS reviews submitted documents and verifies lab reports",
+            "If any clarification is required, a query will be raised through the portal",
+            "Respond with appropriate documentation or explanations"
+          ]
+        },
+        "step5": {
+          "heading": "Step 5: Grant of BIS Registration",
+          "points": [
+            "If everything is in order, BIS issues the Registration Certificate",
+            "Your certificate will mention:",
+            "You must print this info on the product label or apply e-labelling"
+          ],
+          "certificateDetails": [
+            "BIS registration number",
+            "Brand name",
+            "Product model",
+            "IS standard code"
+          ]
+        },
+        "step6": {
+          "heading": "Step 6: Labeling and Distribution",
+          "points": [
+            "All certified products must carry the:",
+            "Label must be printed or digitally embedded as per BIS guidelines"
+          ],
+          "labelRequirements": [
+            "BIS CRS logo",
+            "IS code applicable to the product",
+            "Registration number"
+          ]
+        }
+      },
+      "queryNote": "Queries must be cleared within 30 days or application will be auto-rejected."
+    },
+    "timeline": {
+      "title": "Approximate Timeline",
+      "table": {
+        "headers": {
+          "activity": "Activity",
+          "time": "Estimated Time"
+        },
+        "rows": {
+          "testing": {
+            "activity": "Product Testing",
+            "time": "7-10 working days"
+          },
+          "documents": {
+            "activity": "Document Collection",
+            "time": "2-3 days"
+          },
+          "submission": {
+            "activity": "Application Submission",
+            "time": "1 day"
+          },
+          "review": {
+            "activity": "BIS Review + Query Resolution",
+            "time": "10-15 working days"
+          },
+          "certificate": {
+            "activity": "Final Certificate Issue",
+            "time": "2-4 working days"
+          },
+          "total": {
+            "activity": "TOTAL",
+            "time": "~4 weeks"
+          }
+        }
+      }
+    },
+    "feeStructure": {
+      "title": "Fee Structure for CRS Registration",
+      "table": {
+        "headers": {
+          "feeType": "Fee Type",
+          "amount": "Amount"
+        },
+        "rows": {
+          "government": {
+            "feeType": "Government Fee",
+            "amount": "₹53,000 + 18% GST per test report"
+          },
+          "additional": {
+            "feeType": "Additional Report in Same App",
+            "amount": "₹20,000 + 18% GST per report"
+          },
+          "testing": {
+            "feeType": "Testing Charges",
+            "amount": "₹10,000 – ₹20,000 + 18% GST (varies by product/lab)"
+          }
+        }
+      },
+      "note": "Prices subject to update — confirm on the BIS portal or with your consultant."
+    },
+    "validity": {
+      "title": "CRS Certificate Validity & Renewal",
+      "table": {
+        "headers": {
+          "parameter": "Parameter",
+          "details": "Details"
+        },
+        "rows": {
+          "initial": {
+            "parameter": "Initial Validity",
+            "details": "2 Years"
+          },
+          "renewal": {
+            "parameter": "Renewal Duration",
+            "details": "Upto 5 Years (if no product changes)"
+          },
+          "process": {
+            "parameter": "Renewal Process",
+            "details": "Online, based on new affidavit + renewal fee"
+          },
+          "testing": {
+            "parameter": "Re-testing Required?",
+            "details": "Not unless product specs/IS standard changes"
+          }
+        }
+      }
+    }
+  },
+  "financials": {
+    "sectionHeader": "Financials",
+    "title": "BIS CRS Registration Fees, Validity & Renewal Guidelines",
+    "understanding": {
+      "title": "Understanding the Financials",
+      "description": "Getting a BIS certificate under the Compulsory Registration Scheme (CRS) involves both government-mandated charges and product testing fees. While the process is online and streamlined, it's important to budget accurately to avoid delays or rejections due to underpayment or misfiled applications."
+    },
+    "feeStructure": {
+      "title": "Fee Structure Breakdown",
+      "governmentFees": "Government Fees (Payable to BIS)",
+      "table": {
+        "headers": {
+          "type": "Type",
+          "fee": "Fee (INR)",
+          "gst": "GST (18%)",
+          "total": "Total (INR)"
+        },
+        "rows": {
+          "firstReport": {
+            "type": "First Test Report",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          },
+          "additionalReport": {
+            "type": "Additional Test Report (Same Application)",
+            "fee": "₹20,000",
+            "gst": "₹3,600",
+            "total": "₹23,600"
+          },
+          "renewal": {
+            "type": "Renewal Fee",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          }
+        }
+      }
+    }
+  },
+  "eLabelling": {
+    "sectionHeader": "E-Labelling",
+    "title": "E-Labelling Guidelines for BIS CRS Certified Products",
+    "whatIs": {
+      "title": "What is E-Labelling?",
+      "description": "E-labelling refers to the practice of displaying regulatory information electronically within a device rather than printing it on physical surfaces. Under the BIS Compulsory Registration Scheme (CRS), certain products — particularly compact or digital devices — can present the BIS certificate details, standard mark, and IS code through their software interface or digital packaging."
+    },
+    "guidelines": {
+      "title": "Official BIS Guidelines on E-Labelling (CMD 3/8:1/6975 dated 3 Dec 2015)",
+      "coreRequirements": "Core Requirements for E-Labelling:",
+      "table": {
+        "headers": {
+          "rule": "Rule",
+          "description": "Description"
+        },
+        "rows": {
+          "physicalLabel": {
+            "rule": "Physical Label on Packaging",
+            "description": "Product box or external packaging must display the BIS CRS logo and registration details."
+          },
+          "removableLabels": {
+            "rule": "Removable Labels for Bulk Packaging",
+            "description": "If products are shipped in bulk, a removable adhesive label on the outer package is acceptable."
+          },
+          "noTools": {
+            "rule": "No Tools Needed for Access",
+            "description": "Users must be able to access the e-label info without needing tools or accessories (e.g., SIM card removal not allowed)."
+          },
+          "secureProgramming": {
+            "rule": "Secure Programming",
+            "description": "E-label info must be embedded in firmware/software, locked from modification by any third party."
+          },
+          "menuAccess": {
+            "rule": "Menu-Based Access",
+            "description": "Users must access the info in no more than 4 steps through the device's menu interface."
+          },
+          "instructions": {
+            "rule": "Instructions Required",
+            "description": "Instructions on how to access e-label details must be provided:"
+          }
+        }
+      }
+    }
   }
 }

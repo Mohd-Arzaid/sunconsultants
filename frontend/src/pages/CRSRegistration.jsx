@@ -1644,42 +1644,52 @@ const Eligibility = () => {
 };
 
 const Documents = () => {
+  const { t } = useTranslation("BISCRSContent");
+
+  // Table rows data from translation
+  const tableRows = [
+    "addressProof",
+    "testReport",
+    "undertakings",
+    "trademark",
+    "airAgreement",
+    "affidavit",
+    "feeReceipt",
+    "authorizationLetter",
+    "companyRegistration",
+    "productLabels",
+  ];
+
   return (
     <section id="documents" className="flex flex-col scroll-mt-20">
-      {/* Eligibility */}
+      {/* Documents */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
-          Documents
+          {t("documents.sectionHeader")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        Documents Required for BIS CRS Registration
+        {t("documents.title")}
       </h2>
 
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        List of documents required to obtain BIS CRS registration.
-      </h2>
+      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("documents.subtitle")}
+      </h3>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        The BIS CRS registration process is completely online but demands
-        precise documentation for successful approval. Even minor errors in
-        forms, formats, or file types can lead to rejections or delays.
+        {t("documents.paragraph1")}
       </p>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        Proper documentation also ensures your bis certificate is processed
-        faster and remains legally valid across compliance audits, customs
-        checks, and marketplace approvals.
+        {t("documents.paragraph2")}
       </p>
 
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Master Checklist: Documents Required for BIS CRS Registration
-      </h2>
-
-      {/* table for master checklist */}
+      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("documents.masterChecklist.title")}
+      </h3>
 
       {/* Master Checklist Table */}
       <div className="mt-[16px] md:mt-[24px] overflow-x-auto">
@@ -1688,127 +1698,46 @@ const Documents = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px] border-r border-gray-300">
-                  Document
+                  {t("documents.masterChecklist.table.headers.document")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
-                  Who Submits?
+                  {t("documents.masterChecklist.table.headers.whoSubmits")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  Notes
+                  {t("documents.masterChecklist.table.headers.notes")}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Manufacturer's Address Proof
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Manufacturer
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left">
-                  Factory lease, utility bill, or license
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Test Report from BIS-Approved Lab
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Manufacturer/Lab
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Must be recent (within 90 days) and reference IS code
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Undertakings (as per BIS Format)
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Applicant
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left">
-                  Includes liability, compliance, and product responsibility
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Trademark Certificate
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Manufacturer
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Required if brand is registered
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  AIR Agreement (For foreign applicants)
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Foreign Manufacturer & AIR
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left">
-                  Signed and notarized
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Affidavit
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Manufacturer or AIR
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Format downloadable from BIS portal
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Fee Receipt
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Applicant
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left">
-                  Payment proof of government fee
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Authorization Letter
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Manufacturer
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Authorizes AIR to act on their behalf
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Company Registration Certificate
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Manufacturer
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left">
-                  Proof of business registration (GST, ROC, etc.)
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Product Labels/Markings
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Manufacturer
-                </TableCell>
-                <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Must show BIS logo, IS standard, and registration space
-                </TableCell>
-              </TableRow>
+              {tableRows.map((rowKey, index) => (
+                <TableRow key={rowKey}>
+                  <TableCell
+                    className={`font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 ${
+                      index % 2 === 1 ? "bg-gray-50" : ""
+                    }`}
+                  >
+                    {t(
+                      `documents.masterChecklist.table.rows.${rowKey}.document`
+                    )}
+                  </TableCell>
+                  <TableCell
+                    className={`font-geist text-base md:text-lg text-left border-r border-gray-200 ${
+                      index % 2 === 1 ? "bg-gray-50" : ""
+                    }`}
+                  >
+                    {t(
+                      `documents.masterChecklist.table.rows.${rowKey}.whoSubmits`
+                    )}
+                  </TableCell>
+                  <TableCell
+                    className={`font-geist text-base md:text-lg text-left ${
+                      index % 2 === 1 ? "bg-gray-50" : ""
+                    }`}
+                  >
+                    {t(`documents.masterChecklist.table.rows.${rowKey}.notes`)}
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </div>
@@ -1818,48 +1747,45 @@ const Documents = () => {
 };
 
 const Registration = () => {
+  const { t } = useTranslation("BISCRSContent");
+
   return (
     <section id="registration" className="flex flex-col scroll-mt-20">
-      {/* Documents */}
+      {/* Registration */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
-          Registration
+          {t("registration.sectionHeader")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        BIS CRS Registration Process: Step-by-Step Guide
+        {t("registration.title")}
       </h2>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Overview
+        {t("registration.overview.title")}
       </h3>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        The BIS CRS registration is a fully online process conducted via the BIS
-        Registration Portal. However, it's not just about uploading documents —
-        it requires technical precision, regulatory understanding, and strict
-        adherence to Indian Standards (IS).
+        {t("registration.overview.description")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Step-by-Step BIS CRS Process
+        {t("registration.stepByStep.title")}
       </h3>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        Here's how the BIS certification journey unfolds under the CRS:
+        {t("registration.stepByStep.description")}
       </p>
 
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <PointsListTwo
-            points={[
-              "Choose a lab from the BIS-approved list",
-              "Submit your product sample for testing under the relevant IS",
-              "Receive the final test report, formatted per BIS requirements",
-            ]}
-            heading="Step 1: Product Testing at BIS-Recognized Lab"
+            points={t("registration.stepByStep.steps.step1.points", {
+              returnObjects: true,
+            })}
+            heading={t("registration.stepByStep.steps.step1.heading")}
             headingTag="h4"
             pointTag="h5"
           />
@@ -1869,12 +1795,10 @@ const Registration = () => {
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <PointsListTwo
-            points={[
-              "Gather all required documents (as detailed in Section 7)",
-              "Ensure correct naming, formatting, signatures, and dates",
-              "Create a product label mockup showing BIS logo space + IS standard",
-            ]}
-            heading="Step 2: Preparation of Documents"
+            points={t("registration.stepByStep.steps.step2.points", {
+              returnObjects: true,
+            })}
+            heading={t("registration.stepByStep.steps.step2.heading")}
             headingTag="h4"
             pointTag="h5"
           />
@@ -1884,13 +1808,10 @@ const Registration = () => {
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <PointsListTwo
-            points={[
-              "Log in or register on the BIS CRS Portal (https://www.bis.org.in/)", /// ye change karna hai
-              "Fill in key fields: product, model number, brand, manufacturing unit, and AIR (if applicable)",
-              "Upload all documents and test report in correct sections",
-              "Pay the government fee online",
-            ]}
-            heading="Step 3: Online Application Filing"
+            points={t("registration.stepByStep.steps.step3.points", {
+              returnObjects: true,
+            })}
+            heading={t("registration.stepByStep.steps.step3.heading")}
             headingTag="h4"
             pointTag="h5"
           />
@@ -1900,12 +1821,10 @@ const Registration = () => {
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <PointsListTwo
-            points={[
-              "BIS reviews submitted documents and verifies lab reports",
-              "If any clarification is required, a query will be raised through the portal",
-              "Respond with appropriate documentation or explanations",
-            ]}
-            heading="Step 4: Application Review by BIS"
+            points={t("registration.stepByStep.steps.step4.points", {
+              returnObjects: true,
+            })}
+            heading={t("registration.stepByStep.steps.step4.heading")}
             headingTag="h4"
             pointTag="h5"
           />
@@ -1913,15 +1832,14 @@ const Registration = () => {
       </div>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        Queries must be cleared within 30 days or application will be
-        auto-rejected.
+        {t("registration.stepByStep.queryNote")}
       </p>
 
       <div className="mt-[10px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <div className="flex flex-col">
             <h4 className="font-semibold font-geist text-[20px] text-[#131316]">
-              Step 5: Grant of BIS Registration
+              {t("registration.stepByStep.steps.step5.heading")}
             </h4>
             <ul className="flex flex-col mt-[20px] gap-2 list-none">
               <li className="flex items-start gap-3">
@@ -1929,8 +1847,7 @@ const Registration = () => {
                   <Check size={12} className="text-[#020817]" />
                 </div>
                 <h5 className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                  If everything is in order, BIS issues the Registration
-                  Certificate
+                  {t("registration.stepByStep.steps.step5.points.0")}
                 </h5>
               </li>
 
@@ -1940,33 +1857,20 @@ const Registration = () => {
                 </div>
                 <div className="flex flex-col">
                   <h5 className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                    Your certificate will mention:
+                    {t("registration.stepByStep.steps.step5.points.1")}
                   </h5>
                   <ul className="flex flex-col mt-2 gap-1 list-none ml-4">
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
-                      <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                        BIS registration number
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
-                      <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                        Brand name
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
-                      <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                        Product model
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
-                      <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                        IS standard code
-                      </span>
-                    </li>
+                    {t(
+                      "registration.stepByStep.steps.step5.certificateDetails",
+                      { returnObjects: true }
+                    ).map((detail, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
+                        <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+                          {detail}
+                        </span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </li>
@@ -1976,8 +1880,7 @@ const Registration = () => {
                   <Check size={12} className="text-[#020817]" />
                 </div>
                 <h5 className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                  You must print this info on the product label or apply
-                  e-labelling
+                  {t("registration.stepByStep.steps.step5.points.2")}
                 </h5>
               </li>
             </ul>
@@ -1989,7 +1892,7 @@ const Registration = () => {
         <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
           <div className="flex flex-col">
             <h4 className="font-semibold font-geist text-[20px] text-[#131316]">
-              Step 6: Labeling and Distribution
+              {t("registration.stepByStep.steps.step6.heading")}
             </h4>
             <ul className="flex flex-col mt-[20px] gap-2 list-none">
               <li className="flex items-start gap-3">
@@ -1998,27 +1901,20 @@ const Registration = () => {
                 </div>
                 <div className="flex flex-col">
                   <h5 className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                    All certified products must carry the:
+                    {t("registration.stepByStep.steps.step6.points.0")}
                   </h5>
                   <ul className="flex flex-col mt-2 gap-1 list-none ml-4">
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
-                      <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                        BIS CRS logo
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
-                      <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                        IS code applicable to the product
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
-                      <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                        Registration number
-                      </span>
-                    </li>
+                    {t(
+                      "registration.stepByStep.steps.step6.labelRequirements",
+                      { returnObjects: true }
+                    ).map((requirement, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <div className="w-2 h-2 bg-[#1A8781] rounded-full flex-shrink-0 mt-2"></div>
+                        <span className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+                          {requirement}
+                        </span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </li>
@@ -2028,8 +1924,7 @@ const Registration = () => {
                   <Check size={12} className="text-[#020817]" />
                 </div>
                 <h5 className="font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                  Label must be printed or digitally embedded as per BIS
-                  guidelines
+                  {t("registration.stepByStep.steps.step6.points.1")}
                 </h5>
               </li>
             </ul>
@@ -2038,7 +1933,7 @@ const Registration = () => {
       </div>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Approximate Timeline
+        {t("registration.timeline.title")}
       </h2>
 
       {/* Timeline Table */}
@@ -2048,60 +1943,60 @@ const Registration = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px] border-r border-gray-300">
-                  Activity
+                  {t("registration.timeline.table.headers.activity")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  Estimated Time
+                  {t("registration.timeline.table.headers.time")}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Product Testing
+                  {t("registration.timeline.table.rows.testing.activity")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  7-10 working days
+                  {t("registration.timeline.table.rows.testing.time")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Document Collection
+                  {t("registration.timeline.table.rows.documents.activity")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  2-3 days
+                  {t("registration.timeline.table.rows.documents.time")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Application Submission
+                  {t("registration.timeline.table.rows.submission.activity")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  1 day
+                  {t("registration.timeline.table.rows.submission.time")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  BIS Review + Query Resolution
+                  {t("registration.timeline.table.rows.review.activity")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  10-15 working days
+                  {t("registration.timeline.table.rows.review.time")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Final Certificate Issue
+                  {t("registration.timeline.table.rows.certificate.activity")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  2-4 working days
+                  {t("registration.timeline.table.rows.certificate.time")}
                 </TableCell>
               </TableRow>
               <TableRow className="bg-[#1A8781]/5">
                 <TableCell className="font-bold font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  TOTAL
+                  {t("registration.timeline.table.rows.total.activity")}
                 </TableCell>
                 <TableCell className="font-bold font-geist text-base md:text-lg text-left">
-                  ~4 weeks
+                  {t("registration.timeline.table.rows.total.time")}
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2110,7 +2005,7 @@ const Registration = () => {
       </div>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Fee Structure for CRS Registration
+        {t("registration.feeStructure.title")}
       </h2>
 
       {/* Fee Structure Table */}
@@ -2120,36 +2015,36 @@ const Registration = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px] border-r border-gray-300">
-                  Fee Type
+                  {t("registration.feeStructure.table.headers.feeType")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  Amount
+                  {t("registration.feeStructure.table.headers.amount")}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Government Fee
+                  {t("registration.feeStructure.table.rows.government.feeType")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  ₹53,000 + 18% GST per test report
+                  {t("registration.feeStructure.table.rows.government.amount")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Additional Report in Same App
+                  {t("registration.feeStructure.table.rows.additional.feeType")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  ₹20,000 + 18% GST per report
+                  {t("registration.feeStructure.table.rows.additional.amount")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Testing Charges
+                  {t("registration.feeStructure.table.rows.testing.feeType")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  ₹10,000 – ₹20,000 + 18% GST (varies by product/lab)
+                  {t("registration.feeStructure.table.rows.testing.amount")}
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2158,12 +2053,11 @@ const Registration = () => {
       </div>
 
       <p className="mt-4 font-geist text-sm md:text-base text-[#42434d] italic text-center">
-        Prices subject to update — confirm on the BIS portal or with your
-        consultant.
+        {t("registration.feeStructure.note")}
       </p>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        CRS Certificate Validity & Renewal
+        {t("registration.validity.title")}
       </h2>
 
       {/* Validity & Renewal Table */}
@@ -2173,44 +2067,44 @@ const Registration = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px] border-r border-gray-300">
-                  Parameter
+                  {t("registration.validity.table.headers.parameter")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  Details
+                  {t("registration.validity.table.headers.details")}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Initial Validity
+                  {t("registration.validity.table.rows.initial.parameter")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  2 Years
+                  {t("registration.validity.table.rows.initial.details")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Renewal Duration
+                  {t("registration.validity.table.rows.renewal.parameter")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Upto 5 Years (if no product changes)
+                  {t("registration.validity.table.rows.renewal.details")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Renewal Process
+                  {t("registration.validity.table.rows.process.parameter")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Online, based on new affidavit + renewal fee
+                  {t("registration.validity.table.rows.process.details")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Re-testing Required?
+                  {t("registration.validity.table.rows.testing.parameter")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Not unless product specs/IS standard changes
+                  {t("registration.validity.table.rows.testing.details")}
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2222,39 +2116,37 @@ const Registration = () => {
 };
 
 const Financials = () => {
+  const { t } = useTranslation("BISCRSContent");
+
   return (
     <section id="financials" className="flex flex-col scroll-mt-20">
       {/* Financials */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
-          Financials
+          {t("financials.sectionHeader")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        BIS CRS Registration Fees, Validity & Renewal Guidelines
+        {t("financials.title")}
       </h2>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Understanding the Financials
+        {t("financials.understanding.title")}
       </h3>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        Getting a BIS certificate under the Compulsory Registration Scheme (CRS)
-        involves both government-mandated charges and product testing fees.
-        While the process is online and streamlined, it's important to budget
-        accurately to avoid delays or rejections due to underpayment or misfiled
-        applications.
+        {t("financials.understanding.description")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Fee Structure Breakdown
+        {t("financials.feeStructure.title")}
       </h3>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        Government Fees (Payable to BIS)
+        {t("financials.feeStructure.governmentFees")}
       </p>
 
       {/* Government Fees Table */}
@@ -2264,60 +2156,64 @@ const Financials = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px] border-r border-gray-300">
-                  Type
+                  {t("financials.feeStructure.table.headers.type")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[150px] border-r border-gray-300">
-                  Fee (INR)
+                  {t("financials.feeStructure.table.headers.fee")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[150px] border-r border-gray-300">
-                  GST (18%)
+                  {t("financials.feeStructure.table.headers.gst")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  Total (INR)
+                  {t("financials.feeStructure.table.headers.total")}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  First Test Report
+                  {t("financials.feeStructure.table.rows.firstReport.type")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  ₹53,000
+                  {t("financials.feeStructure.table.rows.firstReport.fee")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  ₹9,540
+                  {t("financials.feeStructure.table.rows.firstReport.gst")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  ₹62,540
+                  {t("financials.feeStructure.table.rows.firstReport.total")}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Additional Test Report (Same Application)
+                  {t(
+                    "financials.feeStructure.table.rows.additionalReport.type"
+                  )}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  ₹20,000
+                  {t("financials.feeStructure.table.rows.additionalReport.fee")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  ₹3,600
+                  {t("financials.feeStructure.table.rows.additionalReport.gst")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  ₹23,600
+                  {t(
+                    "financials.feeStructure.table.rows.additionalReport.total"
+                  )}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Renewal Fee
+                  {t("financials.feeStructure.table.rows.renewal.type")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  ₹53,000
+                  {t("financials.feeStructure.table.rows.renewal.fee")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  ₹9,540
+                  {t("financials.feeStructure.table.rows.renewal.gst")}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  ₹62,540
+                  {t("financials.feeStructure.table.rows.renewal.total")}
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2329,39 +2225,37 @@ const Financials = () => {
 };
 
 const ELabelling = () => {
+  const { t } = useTranslation("BISCRSContent");
+  const eLabelling = t("eLabelling", { returnObjects: true });
+
   return (
     <section id="elabelling" className="flex flex-col scroll-mt-20">
       {/*E-Labelling*/}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
-          E-Labelling
+          {eLabelling.sectionHeader}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        E-Labelling Guidelines for BIS CRS Certified Products
+        {eLabelling.title}
       </h2>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        What is E-Labelling?
+        {eLabelling.whatIs.title}
       </h3>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        E-labelling refers to the practice of displaying regulatory information
-        electronically within a device rather than printing it on physical
-        surfaces. Under the BIS Compulsory Registration Scheme (CRS), certain
-        products — particularly compact or digital devices — can present the BIS
-        certificate details, standard mark, and IS code through their software
-        interface or digital packaging.
+        {eLabelling.whatIs.description}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Official BIS Guidelines on E-Labelling (CMD 3/8:1/6975 dated 3 Dec 2015)
+        {eLabelling.guidelines.title}
       </h3>
 
       <h4 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Core Requirements for E-Labelling:
+        {eLabelling.guidelines.coreRequirements}
       </h4>
 
       {/* E-Labelling Requirements Table */}
@@ -2371,73 +2265,63 @@ const ELabelling = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[300px] border-r border-gray-300">
-                  Rule
+                  {eLabelling.guidelines.table.headers.rule}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  Description
+                  {eLabelling.guidelines.table.headers.description}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Physical Label on Packaging
+                  {eLabelling.guidelines.table.rows.physicalLabel.rule}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Product box or external packaging{" "}
-                  <strong>
-                    must display the BIS CRS logo and registration details
-                  </strong>
-                  .
+                  {eLabelling.guidelines.table.rows.physicalLabel.description}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Removable Labels for Bulk Packaging
+                  {eLabelling.guidelines.table.rows.removableLabels.rule}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  If products are shipped in bulk, a{" "}
-                  <strong>removable adhesive label</strong> on the outer package
-                  is acceptable.
+                  {eLabelling.guidelines.table.rows.removableLabels.description}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  No Tools Needed for Access
+                  {eLabelling.guidelines.table.rows.noTools.rule}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Users must be able to access the e-label info{" "}
-                  <strong>without needing tools or accessories</strong> (e.g.,
-                  SIM card removal not allowed).
+                  {eLabelling.guidelines.table.rows.noTools.description}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Secure Programming
+                  {eLabelling.guidelines.table.rows.secureProgramming.rule}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  E-label info must be{" "}
-                  <strong>embedded in firmware/software</strong>, locked from
-                  modification by any third party.
+                  {
+                    eLabelling.guidelines.table.rows.secureProgramming
+                      .description
+                  }
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200 bg-gray-50">
-                  Menu-Based Access
+                  {eLabelling.guidelines.table.rows.menuAccess.rule}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left bg-gray-50">
-                  Users must access the info in{" "}
-                  <strong>no more than 4 steps</strong> through the device's
-                  menu interface.
+                  {eLabelling.guidelines.table.rows.menuAccess.description}
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                  Instructions Required
+                  {eLabelling.guidelines.table.rows.instructions.rule}
                 </TableCell>
                 <TableCell className="font-geist text-base md:text-lg text-left">
-                  Instructions on how to access e-label details must be
-                  provided:
+                  {eLabelling.guidelines.table.rows.instructions.description}
                 </TableCell>
               </TableRow>
             </TableBody>

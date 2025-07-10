@@ -143,5 +143,318 @@
       },
       "result": "Resultaat: Een geldig BIS-certificaat wordt uitgegeven onder CRS."
     }
+  },
+  "documents": {
+    "sectionHeader": "Documenten",
+    "title": "Vereiste Documenten voor BIS CRS Registratie",
+    "subtitle": "Lijst van documenten vereist voor het verkrijgen van BIS CRS registratie.",
+    "paragraph1": "Het BIS CRS registratieproces is volledig online maar vereist nauwkeurige documentatie voor succesvolle goedkeuring. Zelfs kleine fouten in formulieren, formaten of bestandstypes kunnen leiden tot afwijzingen of vertragingen.",
+    "paragraph2": "Juiste documentatie zorgt er ook voor dat uw BIS certificaat sneller wordt verwerkt en rechtsgeldig blijft tijdens compliance audits, douanecontroles en marktplaats goedkeuringen.",
+    "masterChecklist": {
+      "title": "Master Checklist: Vereiste Documenten voor BIS CRS Registratie",
+      "table": {
+        "headers": {
+          "document": "Document",
+          "whoSubmits": "Wie Dient In?",
+          "notes": "Opmerkingen"
+        },
+        "rows": {
+          "addressProof": {
+            "document": "Adresbewijs Fabrikant",
+            "whoSubmits": "Fabrikant",
+            "notes": "Fabrieksleasecontract, energierekening of licentie"
+          },
+          "testReport": {
+            "document": "Testrapport van BIS-Goedgekeurd Lab",
+            "whoSubmits": "Fabrikant/Lab",
+            "notes": "Moet recent zijn (binnen 90 dagen) en IS-code refereren"
+          },
+          "undertakings": {
+            "document": "Verbintenissen (volgens BIS Formaat)",
+            "whoSubmits": "Aanvrager",
+            "notes": "Omvat aansprakelijkheid, compliance en productverantwoordelijkheid"
+          },
+          "trademark": {
+            "document": "Handelsmerk Certificaat",
+            "whoSubmits": "Fabrikant",
+            "notes": "Vereist als merk geregistreerd is"
+          },
+          "airAgreement": {
+            "document": "AIR Overeenkomst (Voor buitenlandse aanvragers)",
+            "whoSubmits": "Buitenlandse Fabrikant & AIR",
+            "notes": "Ondertekend en notarieel bekrachtigd"
+          },
+          "affidavit": {
+            "document": "Beëdigde Verklaring",
+            "whoSubmits": "Fabrikant of AIR",
+            "notes": "Formaat downloadbaar van BIS portaal"
+          },
+          "feeReceipt": {
+            "document": "Tarief Ontvangstbewijs",
+            "whoSubmits": "Aanvrager",
+            "notes": "Bewijs van betaling overheidstarief"
+          },
+          "authorizationLetter": {
+            "document": "Autorisatiebrief",
+            "whoSubmits": "Fabrikant",
+            "notes": "Autoriseert AIR om namens hen te handelen"
+          },
+          "companyRegistration": {
+            "document": "Bedrijfsregistratie Certificaat",
+            "whoSubmits": "Fabrikant",
+            "notes": "Bewijs van bedrijfsregistratie (GST, ROC, enz.)"
+          },
+          "productLabels": {
+            "document": "Product Labels/Markeringen",
+            "whoSubmits": "Fabrikant",
+            "notes": "Moet BIS logo, IS standaard en registratieruimte tonen"
+          }
+        }
+      }
+    }
+  },
+  "registration": {
+    "sectionHeader": "Registratie",
+    "title": "BIS CRS Registratieproces: Stap-voor-Stap Gids",
+    "overview": {
+      "title": "Overzicht",
+      "description": "De BIS CRS registratie is een volledig online proces uitgevoerd via het BIS Registratieportaal. Het gaat echter niet alleen om het uploaden van documenten — het vereist technische precisie, begrip van regelgeving en strikte naleving van Indiase Standaarden (IS)."
+    },
+    "stepByStep": {
+      "title": "Stap-voor-Stap BIS CRS Proces",
+      "description": "Hier is hoe de BIS certificeringsreis zich ontvouwt onder de CRS:",
+      "steps": {
+        "step1": {
+          "heading": "Stap 1: Producttests in BIS-Erkend Lab",
+          "points": [
+            "Kies een lab uit de BIS-goedgekeurde lijst",
+            "Dien uw productmonster in voor tests onder de relevante IS",
+            "Ontvang het definitieve testrapport, geformatteerd volgens BIS-vereisten"
+          ]
+        },
+        "step2": {
+          "heading": "Stap 2: Voorbereiding van Documenten",
+          "points": [
+            "Verzamel alle vereiste documenten (zoals gedetailleerd in Sectie 7)",
+            "Zorg voor correcte naamgeving, formattering, handtekeningen en datums",
+            "Maak een productlabel mockup die BIS logo ruimte + IS standaard toont"
+          ]
+        },
+        "step3": {
+          "heading": "Stap 3: Online Aanvraag Indienen",
+          "points": [
+            "Log in of registreer op het BIS CRS Portaal (https://www.bis.org.in/)",
+            "Vul sleutelvelden in: product, modelnummer, merk, productie-eenheid en AIR (indien van toepassing)",
+            "Upload alle documenten en testrapporten in de juiste secties",
+            "Betaal de overheidskosten online"
+          ]
+        },
+        "step4": {
+          "heading": "Stap 4: Aanvraag Beoordeling door BIS",
+          "points": [
+            "BIS beoordeelt ingediende documenten en verifieert labrapporten",
+            "Als opheldering nodig is, wordt een vraag gesteld via het portaal",
+            "Reageer met juiste documentatie of uitleg"
+          ]
+        },
+        "step5": {
+          "heading": "Stap 5: Verlening van BIS Registratie",
+          "points": [
+            "Als alles in orde is, geeft BIS het Registratiecertificaat uit",
+            "Uw certificaat zal vermelden:",
+            "U moet deze info afdrukken op het productlabel of e-labeling toepassen"
+          ],
+          "certificateDetails": [
+            "BIS registratienummer",
+            "Merknaam",
+            "Productmodel",
+            "IS standaard code"
+          ]
+        },
+        "step6": {
+          "heading": "Stap 6: Labeling en Distributie",
+          "points": [
+            "Alle gecertificeerde producten moeten dragen:",
+            "Label moet gedrukt of digitaal ingebed zijn volgens BIS richtlijnen"
+          ],
+          "labelRequirements": [
+            "BIS CRS logo",
+            "IS code van toepassing op het product",
+            "Registratienummer"
+          ]
+        }
+      },
+      "queryNote": "Vragen moeten binnen 30 dagen worden opgelost of de aanvraag wordt automatisch afgewezen."
+    },
+    "timeline": {
+      "title": "Geschatte Tijdlijn",
+      "table": {
+        "headers": {
+          "activity": "Activiteit",
+          "time": "Geschatte Tijd"
+        },
+        "rows": {
+          "testing": {
+            "activity": "Producttests",
+            "time": "7-10 werkdagen"
+          },
+          "documents": {
+            "activity": "Documentenverzameling",
+            "time": "2-3 dagen"
+          },
+          "submission": {
+            "activity": "Aanvraag Indiening",
+            "time": "1 dag"
+          },
+          "review": {
+            "activity": "BIS Beoordeling + Vraag Oplossing",
+            "time": "10-15 werkdagen"
+          },
+          "certificate": {
+            "activity": "Definitieve Certificaat Uitgifte",
+            "time": "2-4 werkdagen"
+          },
+          "total": {
+            "activity": "TOTAAL",
+            "time": "~4 weken"
+          }
+        }
+      }
+    },
+    "feeStructure": {
+      "title": "Kostenstructuur voor CRS Registratie",
+      "table": {
+        "headers": {
+          "feeType": "Kostentype",
+          "amount": "Bedrag"
+        },
+        "rows": {
+          "government": {
+            "feeType": "Overheidskosten",
+            "amount": "₹53,000 + 18% BTW per testrapport"
+          },
+          "additional": {
+            "feeType": "Extra Rapport in Zelfde App",
+            "amount": "₹20,000 + 18% BTW per rapport"
+          },
+          "testing": {
+            "feeType": "Testkosten",
+            "amount": "₹10,000 – ₹20,000 + 18% BTW (varieert per product/lab)"
+          }
+        }
+      },
+      "note": "Prijzen onderhevig aan updates — bevestig op BIS portaal of met uw consultant."
+    },
+    "validity": {
+      "title": "CRS Certificaat Geldigheid & Verlenging",
+      "table": {
+        "headers": {
+          "parameter": "Parameter",
+          "details": "Details"
+        },
+        "rows": {
+          "initial": {
+            "parameter": "Initiële Geldigheid",
+            "details": "2 Jaar"
+          },
+          "renewal": {
+            "parameter": "Verlengingsduur",
+            "details": "Tot 5 Jaar (als geen productwijzigingen)"
+          },
+          "process": {
+            "parameter": "Verlengingsproces",
+            "details": "Online, gebaseerd op nieuwe beëdiging + verlengingskosten"
+          },
+          "testing": {
+            "parameter": "Hertest Vereist?",
+            "details": "Niet tenzij productspecificaties/IS standaard verandert"
+          }
+        }
+      }
+    }
+  },
+  "financials": {
+    "sectionHeader": "Financiën",
+    "title": "BIS CRS Registratiekosten, Geldigheid & Verlengingsrichtlijnen",
+    "understanding": {
+      "title": "Financiën Begrijpen",
+      "description": "Het verkrijgen van een BIS-certificaat onder het Verplichte Registratieschema (CRS) omvat zowel door de overheid verplichte kosten als producttest kosten. Hoewel het proces online en gestroomlijnd is, is het belangrijk om nauwkeurig te budgetteren om vertragingen of afwijzingen te voorkomen vanwege onderbetalingen of verkeerd ingediende aanvragen."
+    },
+    "feeStructure": {
+      "title": "Uitsplitsing Kostenstructuur",
+      "governmentFees": "Overheidskosten (Betaalbaar aan BIS)",
+      "table": {
+        "headers": {
+          "type": "Type",
+          "fee": "Kosten (INR)",
+          "gst": "BTW (18%)",
+          "total": "Totaal (INR)"
+        },
+        "rows": {
+          "firstReport": {
+            "type": "Eerste Testrapport",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          },
+          "additionalReport": {
+            "type": "Extra Testrapport (Zelfde Aanvraag)",
+            "fee": "₹20,000",
+            "gst": "₹3,600",
+            "total": "₹23,600"
+          },
+          "renewal": {
+            "type": "Verlengingskosten",
+            "fee": "₹53,000",
+            "gst": "₹9,540",
+            "total": "₹62,540"
+          }
+        }
+      }
+    }
+  },
+  "eLabelling": {
+    "sectionHeader": "E-Labeling",
+    "title": "E-Labeling Richtlijnen voor BIS CRS Gecertificeerde Producten",
+    "whatIs": {
+      "title": "Wat is E-Labeling?",
+      "description": "E-labeling verwijst naar de praktijk van het elektronisch weergeven van regelgevingsinformatie binnen een apparaat in plaats van het afdrukken op fysieke oppervlakken. Onder het BIS Verplichte Registratieschema (CRS) kunnen bepaalde producten — met name compacte of digitale apparaten — de BIS certificaatdetails, standaardmerk en IS-code presenteren via hun software-interface of digitale verpakking."
+    },
+    "guidelines": {
+      "title": "Officiële BIS Richtlijnen over E-Labeling (CMD 3/8:1/6975 gedateerd 3 dec 2015)",
+      "coreRequirements": "Kernvereisten voor E-Labeling:",
+      "table": {
+        "headers": {
+          "rule": "Regel",
+          "description": "Beschrijving"
+        },
+        "rows": {
+          "physicalLabel": {
+            "rule": "Fysiek Label op Verpakking",
+            "description": "Productdoos of externe verpakking moet het BIS CRS logo en registratiedetails weergeven."
+          },
+          "removableLabels": {
+            "rule": "Verwijderbare Labels voor Bulkverpakking",
+            "description": "Als producten in bulk worden verzonden, is een verwijderbaar kleefstof label op de buitenverpakking acceptabel."
+          },
+          "noTools": {
+            "rule": "Geen Gereedschap Nodig voor Toegang",
+            "description": "Gebruikers moeten toegang kunnen krijgen tot de e-label informatie zonder gereedschap of accessoires nodig te hebben (bijv. SIM-kaart verwijdering niet toegestaan)."
+          },
+          "secureProgramming": {
+            "rule": "Veilige Programmering",
+            "description": "E-label informatie moet ingebed zijn in firmware/software, vergrendeld tegen wijziging door derden."
+          },
+          "menuAccess": {
+            "rule": "Menu-gebaseerde Toegang",
+            "description": "Gebruikers moeten toegang krijgen tot de informatie in niet meer dan 4 stappen via de menu-interface van het apparaat."
+          },
+          "instructions": {
+            "rule": "Instructies Vereist",
+            "description": "Instructies over hoe toegang te krijgen tot e-label details moeten worden verstrekt:"
+          }
+        }
+      }
+    }
   }
 }
