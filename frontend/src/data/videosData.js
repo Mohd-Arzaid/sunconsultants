@@ -42,4 +42,32 @@ export const videosData = [
       "Documentation",
     ],
   },
+  {
+    id: 4,
+    embedId: "zq1nIBTh27w",
+
+    category: "BIS Certification",
+    tags: [
+      "BIS Certification",
+      "Quality Standards",
+      "Indian Standards",
+      "Product Certification",
+      "Manufacturing",
+      "Compliance",
+    ],
+  },
+  {
+    id: 5,
+    embedId: "5ppBDV76d6I",
+
+    category: "Standards Compliance",
+    tags: [
+      "Standards Compliance",
+      "Quality Assurance",
+      "Indian Standards",
+      "Regulatory Framework",
+      "Business Operations",
+      "Certification",
+    ],
+  },
 ];

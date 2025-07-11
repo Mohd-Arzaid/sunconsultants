@@ -1,0 +1,310 @@
+{
+  "hero": {
+    "badge": "Gecertificeerde Expertise",
+    "title": {
+      "part1": "BIS-certificering voor",
+      "part2": "Indiase Fabrikanten"
+    },
+    "description": "Als onderdeel van de 'Make in India'-visie helpt BIS-certificering fabrikanten om productveiligheid, kwaliteit en conformiteit te garanderen. Verkrijg certificering en laat uw merk groeien met vertrouwen.",
+    "viewServices": "Bekijk Diensten"
+  },
+  "navigation": {
+    "overview": "Overzicht",
+    "process": "Proces",
+    "document": "Document",
+    "costing": "Kosten",
+    "faqs": "FAQ",
+    "toggleMenu": "Menu Schakelen"
+  },
+  "process": {
+    "title": "Proces",
+    "mainHeading": "BIS Certificeringsproces voor Binnenlandse Fabrikanten",
+    "description": "Het verkrijgen van een BIS-certificering kan een game-changer zijn voor binnenlandse fabrikanten — maar het vereist navigatie door een goed gedefinieerd en gedetailleerd proces. Hieronder is een stap-voor-stap uitsplitsing van het BIS-licentieproces, specifiek toegesneden voor Indiase bedrijven.",
+    "step1": {
+      "title": "Stap 1: Identificeer Toepasselijke Indiase Standaard (IS)",
+      "description": "Voordat het BIS-registratieproces wordt gestart, moeten fabrikanten bepalen of hun product onder verplichte certificering valt. Zo ja, dan moeten ze de relevante Indiase Standaard (IS-code) identificeren die aan dat product is gekoppeld.",
+      "resources": "Bronnen:",
+      "list": [
+        "Bezoek de officiële BIS-website",
+        "Raadpleeg productspecifieke kennisgevingen",
+        "Raadpleeg BIS-erkende consultants of testlaboratoria"
+      ]
+    },
+    "step2": {
+      "title": "Stap 2: Bereid Vereiste Documentatie Voor",
+      "description": "Verzamel en dien essentiële documenten in, waaronder:",
+      "list": [
+        "Aanvraagformulier (Formulier V of VI, gebaseerd op schema)",
+        "Bedrijfsregistratiecertificaat",
+        "Fabriekslicentie",
+        "Lijst van productieapparatuur",
+        "Details van kwaliteitscontrolepersoneel",
+        "Stroomdiagram van productieproces",
+        "Layout van productie-eenheid"
+      ]
+    },
+    "step3": {
+      "title": "Stap 3: Producttests in BIS-Erkend Lab",
+      "description": "Fabrikanten moeten productmonsters naar een BIS-erkend laboratorium sturen voor testen. Het lab zal het product evalueren op basis van relevante IS-codes en een testrapport uitgeven.",
+      "tips": "Belangrijke Tips:",
+      "list": [
+        "Gebruik alleen door BIS geautoriseerde labs",
+        "Zorg ervoor dat monsterlabeling en verpakking BIS-normen volgen",
+        "Houd een record van alle testdocumentatie bij"
+      ]
+    },
+    "step4": {
+      "title": "Stap 4: Dien Online Aanvraag In",
+      "description1": "Met documenten en testrapporten in de hand, moeten fabrikanten aanvragen via het BIS-portaal. De aanvraag moet het volgende bevatten:",
+      "list": [
+        "Bedrijfsprofiel",
+        "Productie- en kwaliteitscontroledetails",
+        "Productspecificaties",
+        "Testcertificaten en andere documenten"
+      ],
+      "description2": "Het online proces maakt het uploaden van documenten en real-time statustracking mogelijk."
+    },
+    "step5": {
+      "title": "Stap 5: Fabrieksaudit door BIS-Functionarissen",
+      "description": "Na documentverificatie voeren BIS-functionarissen een ter plaatse inspectie uit van de productielocaties. Ze verifiëren:",
+      "list": [
+        "Productie-infrastructuur",
+        "Testapparatuur",
+        "Opslag van grondstoffen",
+        "In-proces en finale kwaliteitscontroleprocedures"
+      ],
+      "description2": "De audit zorgt voor naleving van BIS-standaarden en evalueert het vermogen om consistent conforme producten te produceren."
+    },
+    "step6": {
+      "title": "Stap 6: Verstrekking van BIS-Licentie",
+      "description": "Als het product de tests doorstaat en de fabrieksaudit bevredigend is, verleent BIS de licentie om het ISI-merk te gebruiken. De fabrikant ontvangt een officieel BIS-certificaat, geldig voor een of twee jaar afhankelijk van het schema."
+    },
+    "step7": {
+      "title": "Stap 7: Markering van ISI-Symbool",
+      "description": "Het ISI-merk moet worden aangebracht op elke producteenheid, verpakking, en soms in marketingliteratuur, volgens BIS-markeringsrichtlijnen."
+    },
+    "step8": {
+      "title": "Stap 8: Voortdurende Bewaking en Vernieuwing",
+      "description": "BIS-certificering is onderworpen aan:",
+      "list": [
+        "Bewakingsinspecties",
+        "Hertesten van monsters",
+        "Jaarlijkse vernieuwing"
+      ]
+    }
+  },
+  "document": {
+    "title": "Vereiste Documenten",
+    "mainHeading": "Vereiste Documenten voor BIS Registratie",
+    "description": "Het succes van uw BIS registratie hangt sterk af van nauwkeurige en volledige documentatie. Hieronder is een lijst van de belangrijkste documenten die binnenlandse fabrikanten moeten verzamelen en indienen tijdens het BIS certificeringsproces.",
+    "checklistTitle": "Algemene Documenten Checklist",
+    "documentsList": [
+      "1. Ingevuld Aanvraagformulier (Formulier V of VI afhankelijk van het schema)",
+      "2. Bedrijfsregistratiecertificaat (bijv. Udyam Registratie, MSME, GST Certificaat)",
+      "3. Fabriekslicentie of Gemeentelijke Handelslicentie",
+      "4. Lijst van Productieapparatuur",
+      "5. Productieproces Stroomdiagram",
+      "6. Lay-outplan van de Productielocaties",
+      "7. Details van Interne Kwaliteitscontrolepersoneel",
+      "8. Details van Testapparatuur",
+      "9. Overeenkomst van Technische Samenwerking (indien van toepassing)",
+      "10. Volmacht/Autorisatiebrief",
+      "11. Merknaam Autorisatiebrief (indien aanvragen onder een ander merk)",
+      "12. Testrapport van BIS-goedgekeurd laboratorium",
+      "13. Factuur van Grondstoffeninkoop",
+      "14. Foto's van Product en Verpakking",
+      "15. Verklaring van Conformiteit aan Normen",
+      "16. Verbintenis Betreffende Niet-Standaard Producten"
+    ]
+  },
+  "introduction": {
+    "title": "Introductie tot BIS-certificering in India voor Indiase Fabrikanten",
+    "paragraph1": "Het Indiase productie-ecosysteem ondergaat een dynamische transformatie, en met de stimulans van de overheid voor 'Make in India' is het waarborgen van productkwaliteit en naleving nog nooit zo belangrijk geweest. Een van de meest cruciale stappen voor elke binnenlandse fabrikant die wil gedijen op de Indiase markt, is het verkrijgen van de BIS-certificering.",
+    "paragraph2": "Het Bureau of Indian Standards (BIS) is het nationale orgaan dat verantwoordelijk is voor het vaststellen en handhaven van productkwaliteitsnormen. Het BIS-certificaat zorgt ervoor dat een product voldoet aan specifieke Indiase normen en veilig, betrouwbaar en van goede kwaliteit is.",
+    "paragraph3": "Voor binnenlandse fabrikanten is BIS-certificering niet alleen een wettelijke vereiste; het is een teken van vertrouwen. De BIS-licentie signaleert naleving, opent toegang tot bredere markten en verbetert de geloofwaardigheid van het merk. Met de wijdverspreide nadruk op kwaliteitsborging en klantveiligheid is het Indiase BIS-systeem uitgegroeid tot een regelgevende ruggengraat voor zowel industriële als consumentenproductsectoren.",
+    "paragraph4": "De BIS-certificering omvat ook het ISI-merk, een belangrijke indicator dat een product voldoet aan de specificaties van het Indian Standards Institute. ISI-gemarkeerde producten zijn vaak verplicht in sectoren zoals elektronica, cement, staal, auto-onderdelen en huishoudelijke artikelen. Voor fabrikanten kan het verkrijgen van het ISI-merk via BIS-registratie het verschil maken tussen marktsucces en regelgevende tegenslagen."
+  },
+  "overview": {
+    "title": "Wat is het ISI-keurmerk?",
+    "description": "Het ISI-keurmerk is het kwaliteits- en veiligheidskeurmerk voor producten die in India worden geproduceerd en verkocht. ISI, wat staat voor Indian Standards Institute, geeft aan dat een product voldoet aan de Indiase standaard (IS) zoals vastgesteld door BIS. Dit keurmerk garandeert consumenten dat het product is getest en gecertificeerd door een BIS-licentie en voldoet aan nationale veiligheids-, prestatie- en betrouwbaarheidsnormen.",
+    "commonProducts": {
+      "title": "Veelvoorkomende producten met ISI-keurmerk zijn onder andere:",
+      "list": [
+        "Elektrische apparaten zoals strijkijzers, kachels en waterkokers",
+        "Cement",
+        "Staalproducten",
+        "Snelkookpannen",
+        "Auto-onderdelen, etc."
+      ]
+    },
+    "mandatoryNote": "In veel gevallen is het hebben van het ISI-keurmerk verplicht volgens de Indiase wet. Producten die onder het Verplichte Certificeringsschema vallen, mogen niet in India worden verkocht zonder deze certificering.",
+    "bisLicense": {
+      "title": "Wat is een BIS-licentie?",
+      "description1": "Een BIS-licentie is de officiële autorisatie uitgegeven door het Bureau of Indian Standards die een fabrikant toestaat om het ISI-keurmerk op hun product te gebruiken. De licentie certificeert dat het product, het productieproces en de faciliteiten allemaal voldoen aan de strenge kwaliteitscontrolecriteria van BIS.",
+      "description2": "Om een BIS-licentie te verkrijgen, moet een fabrikant het BIS-registratieproces doorlopen, wat het indienen van documentatie, producttesten, fabriekscontroles en doorlopend toezicht omvat.",
+      "description3": "Na uitgifte is de licentie geldig voor een specifieke periode en moet deze voor het verlopen worden vernieuwd. Het niet naleven van BIS-normen kan leiden tot opschorting of intrekking van het BIS-certificaat."
+    },
+    "whyMatters": {
+      "title": "Waarom zijn het ISI-keurmerk en de BIS-licentie belangrijk?",
+      "description1": "Terwijl het ISI-keurmerk is wat de consument ziet en vertrouwt, is de BIS-licentie de back-end goedkeuring die fabrikanten in staat stelt om dit keurmerk legaal aan te brengen. Zonder geldige BIS-licentie is het gebruik van het ISI-keurmerk een wetsovertreding.",
+      "description2": "Dit maakt BIS-registratie niet alleen een regelgevende barrière, maar een fundamentele stap om ervoor te zorgen dat uw producten legaal kunnen worden vermarkt en verkocht in India."
+    },
+    "differences": {
+      "title": "Belangrijke verschillen tussen ISI-keurmerk en BIS-licentie:",
+      "table": {
+        "headers": {
+          "feature": "Kenmerk",
+          "isiMark": "ISI-keurmerk",
+          "bisLicense": "BIS-licentie"
+        },
+        "rows": {
+          "purpose": {
+            "label": "Doel",
+            "isiMark": "Kwaliteitskeurmerk op product",
+            "bisLicense": "Goedkeuring voor gebruik ISI-keurmerk"
+          },
+          "issuedBy": {
+            "label": "Uitgegeven door",
+            "isiMark": "Gebruikt onder BIS-autorisatie",
+            "bisLicense": "Uitgegeven door Bureau of Indian Standards"
+          },
+          "visibility": {
+            "label": "Zichtbaarheid",
+            "isiMark": "Zichtbaar op product",
+            "bisLicense": "Document in bezit van fabrikant"
+          },
+          "mandatory": {
+            "label": "Verplicht?",
+            "isiMark": "Ja, voor vermelde producten",
+            "bisLicense": "Ja, voor verkrijgen ISI-keurmerk"
+          },
+          "renewal": {
+            "label": "Vernieuwing",
+            "isiMark": "N.v.t.",
+            "bisLicense": "Periodiek vereist"
+          }
+        }
+      },
+      "note": "Het begrijpen van deze verschillen is essentieel voordat u begint met het BIS-licentieproces of uw BIS-certificeringskosten berekent. Beide spelen cruciale rollen in de naleving en geloofwaardigheid van binnenlandse productieactiviteiten."
+    },
+    "whyNeed": {
+      "title": "Waarom binnenlandse fabrikanten BIS-certificering nodig hebben",
+      "intro": "In India's competitieve productieomgeving is BIS-certificering niet alleen een regelgevende noodzaak — het is een strategisch bezit. Hier is waarom het verkrijgen van een BIS-certificaat onmisbaar is voor binnenlandse fabrikanten:",
+      "reasons": {
+        "legal": {
+          "title": "1. Wettelijke naleving",
+          "description": "Veel producten in India kunnen niet legaal worden verkocht zonder BIS-certificering. Overheidsvoorschriften vereisen dat fabrikanten een geldige BIS-licentie verkrijgen om het ISI-keurmerk op producten aan te brengen. Niet-naleving kan leiden tot zware boetes, productterugroepingen en verbodsbepalingen."
+        },
+        "quality": {
+          "title": "2. Kwaliteitsborging",
+          "description": "BIS-licentie bevestigt dat een fabrikant gestandaardiseerde kwaliteitsprotocollen volgt. BIS-certificering omvat routinematige producttesten en fabrieksaudits, wat ervoor zorgt dat alleen veilige en betrouwbare producten de consument bereiken. Voor binnenlandse fabrikanten verbetert dit de interne kwaliteitscontrole en vermindert het risico op defecten of aansprakelijkheid."
+        },
+        "credibility": {
+          "title": "3. Merkgeloofwaardigheid en consumentenvertrouwen",
+          "description": "Het tonen van het ISI-keurmerk op uw producten bouwt vertrouwen op onder consumenten. Het communiceert dat het product is gecertificeerd door de Indiase BIS — een teken van integriteit en betrouwbaarheid. Deze waargenomen waarde vertaalt zich in verhoogde verkoop en betere merktrouw."
+        },
+        "markets": {
+          "title": "4. Toegang tot bredere markten",
+          "description": "Met een BIS-certificaat kunnen fabrikanten hun goederen door heel India distribueren zonder wettelijke beperkingen. Retailers, groothandelaren en e-commerce platforms vereisen vaak BIS-gecertificeerde producten voordat ze deze opnemen. Voor exportgerichte eenheden kan BIS-certificering ook helpen om aan internationale kwaliteitsverwachtingen te voldoen."
+        },
+        "advantage": {
+          "title": "5. Concurrentievoordeel",
+          "description": "Het hebben van een BIS-licentie onderscheidt een fabrikant van niet-geregistreerde concurrenten. Het signaleert toewijding aan kwaliteit en naleving, wat bedrijven helpt bij het winnen van overheidscontracten, deelname aan aanbestedingen en het verkrijgen van preferentiële toegang in overheidsinkoopschema's."
+        },
+        "savings": {
+          "title": "6. Langetermijnbesparingen",
+          "description": "Hoewel de kosten van BIS-certificering aanvankelijk hoog kunnen lijken, wordt dit gecompenseerd door het minimaliseren van juridische risico's, productfalen en reputatieschade. Bovendien kunnen verbeterde productie-efficiëntie en minder klantklachten leiden tot operationele besparingen op lange termijn."
+        },
+        "support": {
+          "title": "7. Ondersteuning van overheidsinitatieven",
+          "description": "Door deel te nemen aan BIS-registratie dragen binnenlandse fabrikanten bij aan India's missie voor standaardisatie en kwaliteitsverbetering. Afstemming op nationale programma's zoals 'Make in India' of 'Aatmanirbhar Bharat' versterkt goodwill en overheidssteun."
+        }
+      }
+    }
+  },
+  "costing": {
+    "title": "Kosten",
+    "mainHeading": "Kosten van BIS Certificering (bis certificeringskosten)",
+    "description": "Het begrijpen van de financiële verplichting van BIS certificering is essentieel voor goede planning. De totale BIS certificeringskosten voor binnenlandse fabrikanten kunnen variëren op basis van producttype, schema, testvereisten en de grootte van de productie-eenheid. Hieronder is een gedetailleerde uitsplitsing van gangbare kostencomponenten.",
+    "breakdownTitle": "Standaard BIS Certificeringskosten Uitsplitsing",
+    "table": {
+      "headers": {
+        "component": "Kostencomponent",
+        "amount": "Geschat Bedrag (INR)"
+      },
+      "rows": [
+        {
+          "component": "Aanvraagkosten",
+          "amount": "₹1,000"
+        },
+        {
+          "component": "Producttestkosten (per product)",
+          "amount": "₹15,000 – ₹50,000"
+        },
+        {
+          "component": "Fabrieksinspectiekosten",
+          "amount": "₹7,000"
+        },
+        {
+          "component": "Licentiekosten (Initiële Verlening)",
+          "amount": "₹1,000"
+        },
+        {
+          "component": "Markeringskosten (per product/jaar)",
+          "amount": "Afhankelijk van product"
+        },
+        {
+          "component": "Verlengingskosten (tweejaarlijks/jaarlijks)",
+          "amount": "Afhankelijk van product"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "subtitle": "Kunt u het antwoord dat u zoekt niet vinden?",
+    "contactLink": "Neem contact met ons op!",
+    "questions": [
+      {
+        "question": "Wat is BIS-certificering en waarom is het belangrijk?",
+        "answer": "BIS-certificering wordt uitgegeven door het Bureau of Indian Standards om ervoor te zorgen dat producten voldoen aan Indiase veiligheids- en kwaliteitsnormen. Het is essentieel voor juridische naleving, consumentenvertrouwen en marktacceptatie."
+      },
+      {
+        "question": "Wat is het verschil tussen BIS-licentie en ISI-merk?",
+        "answer": "De BIS-licentie is een juridisch document dat een fabrikant autoriseert om het ISI-merk te gebruiken. Het ISI-merk is het zichtbare label op producten dat BIS-certificering aangeeft."
+      },
+      {
+        "question": "Hoe lang duurt het om BIS-certificering te krijgen?",
+        "answer": "Meestal 6–10 weken afhankelijk van producttype, testvereisten en auditresultaten"
+      },
+      {
+        "question": "Wat is de geldigheidsperiode van een BIS-licentie?",
+        "answer": "Meestal 1 tot 2 jaar, waarna deze moet worden vernieuwd. Vernieuwing moet ten minste 30 dagen voor verstrijking worden gestart."
+      },
+      {
+        "question": "Wat zijn de kosten van BIS-certificering?",
+        "answer": "Kosten variëren maar kunnen variëren van ₹25.000 tot ₹100.000+, inclusief test-, audit- en licentiekosten."
+      },
+      {
+        "question": "Is BIS-certificering verplicht voor alle producten?",
+        "answer": "Nee. Het is alleen verplicht voor producten die zijn opgenomen onder schema 1 van BIS-certificering."
+      },
+      {
+        "question": "Hoe kan ik de juiste IS-standaard voor mijn product vinden?",
+        "answer": "Bezoek de BIS-website of raadpleeg BIS-erkende testlaboratoria en consultants om de toepasselijke standaard te identificeren."
+      },
+      {
+        "question": "Kunnen buitenlandse fabrikanten BIS-certificering aanvragen?",
+        "answer": "Ja. Via het Foreign Manufacturers Certification Scheme (FMCS) kunnen buitenlandse entiteiten BIS-licenties verkrijgen voor ISI-merkgebruik."
+      },
+      {
+        "question": "Wat gebeurt er als mijn product de BIS-test niet doorstaat?",
+        "answer": "U moet de problemen corrigeren en opnieuw indienen voor testen. Aanvragen kunnen worden gepauzeerd totdat succesvolle naleving wordt aangetoond."
+      },
+      {
+        "question": "Is BIS-certificering nodig voor export?",
+        "answer": "Hoewel niet altijd verplicht voor export, verhoogt BIS-certificering de geloofwaardigheid en kan het internationale kopers of regelgevingsinstanties tevreden stellen."
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator";
-import React, { useState, useEffect, useRef } from "react";
-import BISSRimg from "../../assets/images/BISSRimg.png";
+import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import {
   Table,
   TableBody,
@@ -26,7 +26,6 @@ import PropTypes from "prop-types";
 import Services from "./Services";
 import AboutAuthor from "../common/AboutAuthor";
 import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
-
 
 export const BISCertification = () => {
   return (
@@ -789,6 +788,8 @@ export const BISCProductTable = () => {
 
 // BISC Hero Section
 const BISCHero = () => {
+  const { t } = useTranslation("BISCertification");
+
   return (
     <section
       className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
@@ -809,22 +810,20 @@ const BISCHero = () => {
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
-              Certified Expertise
+              {t("hero.badge")}
             </span>
           </div>
 
-          <h1 className="leading-[1.2] md:leading-[70px]  z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
+          <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              BIS Certification India
+              {t("hero.title.part1")}
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
-            for Importers, Manufacturer
+            {t("hero.title.part2")}
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            BIS Certification ensures product quality and safety in India. It is
-            mandatory for many products and requires testing, documentation, and
-            approval.
+            {t("hero.description")}
           </p>
 
           <nav className="flex items-center -mt-2">
@@ -844,7 +843,7 @@ const BISCHero = () => {
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
-                View Services
+                {t("hero.viewServices")}
               </span>
             </div>
           </nav>
@@ -865,16 +864,17 @@ const BISCIndex = () => {
   const stickyRef = useRef(null);
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
+  const { t } = useTranslation("BISCertification");
 
   const SECTIONS = [
-    "Overview",
-    "Types",
-    "Documents",
-    "Process",
-    "Cost",
-    "Role",
-    "Conclusion",
-    "FAQs",
+    "overview",
+    "types",
+    "documents",
+    "process",
+    "cost",
+    "role",
+    "conclusion",
+    "faqs",
   ];
 
   const handleItemClick = (item) => {
@@ -935,7 +935,7 @@ const BISCIndex = () => {
       (entries) => {
         // Filter entries that are intersecting and sort by intersection ratio
         const intersectingEntries = entries
-          .filter(entry => entry.isIntersecting)
+          .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
         if (intersectingEntries.length > 0) {
@@ -947,14 +947,15 @@ const BISCIndex = () => {
             setActiveSection("FAQs");
           } else {
             // Capitalize first letter for other sections
-            const sectionName = targetId.charAt(0).toUpperCase() + targetId.slice(1);
+            const sectionName =
+              targetId.charAt(0).toUpperCase() + targetId.slice(1);
             setActiveSection(sectionName);
           }
         }
       },
       {
         threshold: [0.1, 0.3, 0.5, 0.7, 0.9], // Multiple thresholds for better detection
-        rootMargin: "-20% 0px -70% 0px" // Only trigger when section is in the middle portion of viewport
+        rootMargin: "-20% 0px -70% 0px", // Only trigger when section is in the middle portion of viewport
       }
     );
 
@@ -972,19 +973,20 @@ const BISCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
-          {activeSection}
+          {t(`navigation.${activeSection.toLowerCase()}`)}
         </div>
         <button
           ref={toggleButtonRef}
           onClick={toggleMobileMenu}
           className="p-2 rounded-md hover:bg-blue-100 transition-colors"
-          aria-label="Toggle menu"
+          aria-label={t("navigation.toggleMenu")}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -1023,13 +1025,14 @@ const BISCIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection.toLowerCase()
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
-                  {item}
+                  {t(`navigation.${item}`)}
                 </div>
               </div>
             ))}
@@ -1046,18 +1049,20 @@ const BISCIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection.toLowerCase()
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
-              {item}
+              {t(`navigation.${item}`)}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection.toLowerCase()
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -1065,7 +1070,6 @@ const BISCIndex = () => {
     </div>
   );
 };
-
 
 // BISC Content Section
 const BISCContent = () => {
@@ -1094,6 +1098,8 @@ const BISCContent = () => {
 
 // BISC FAQs Section
 const ServiceFaq = () => {
+  const { t } = useTranslation("BISCertification");
+
   return (
     <section
       id="faqs"
@@ -1102,306 +1108,32 @@ const ServiceFaq = () => {
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          FAQs – BIS Certification in India
+          {t("faqs.title")}
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Can&apos;t find the answer you are looking for?{" "}
+          {t("faqs.subtitle")}{" "}
           <a
             href="/contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
           >
-            Reach out to us!
+            {t("faqs.reachOut")}
           </a>
         </p>
 
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is BIS certification in India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                BIS certification is a quality assurance certification issued by
-                the Bureau of Indian Standards (BIS) to ensure that products
-                comply with Indian standards for safety, performance, and
-                quality. It is mandatory for various product categories and
-                helps in consumer protection and regulatory compliance.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Why do I need a BIS certificate?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                A BIS certificate is essential to legally manufacture, import,
-                distribute, or sell certain products in India. It assures
-                consumers that the product meets the safety and quality
-                guidelines of Indian standards.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is the ISI mark under BIS certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The ISI mark is a certification symbol provided under the BIS
-                certification scheme. It indicates that a product complies with
-                Indian standards and has been certified by the Indian BIS
-                through proper testing and registration.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Who issues BIS licenses in India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                BIS licenses are issued by the Bureau of Indian Standards
-                (Indian BIS), the national standards body under the Ministry of
-                Consumer Affairs, Food and Public Distribution.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the different types of BIS certification schemes?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The major BIS certification schemes include the ISI mark scheme,
-                Compulsory Registration Scheme (CRS), Foreign Manufacturers
-                Certification Scheme (FMCS), Hallmarking for jewelry, Eco Mark
-                certification, and what is Scheme X for industrial machinery.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is Scheme X under BIS certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Scheme X is a simplified BIS certification process applicable to
-                industrial products like pumps, transformers, machine tools, and
-                cranes. It ensures quicker approval without compromising
-                compliance to Indian standards.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Which products require BIS certification in India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Products like electrical appliances, electronics, kitchenware,
-                cement, steel, gold jewelry, mobile phones, and transformers
-                require BIS certification as per the Indian BIS mandate.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-8">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Is BIS registration mandatory for all products?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                No, BIS registration is mandatory only for products listed in
-                the compulsory certification scheme. However, voluntary BIS
-                certification is also available to enhance product credibility.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-9">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long is a BIS licence valid?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                A BIS licence is typically valid for one to two years and must
-                be renewed before its expiry to continue using the ISI mark or
-                maintain BIS registration status.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-10">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the steps to get BIS certification in India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The BIS certification process includes identifying applicable
-                Indian standards, submitting an application, product testing,
-                factory inspection, and issuance of a BIS certificate upon
-                approval.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-11">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can foreign manufacturers apply for a BIS license?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, under the Foreign Manufacturers Certification Scheme
-                (FMCS), foreign companies can apply for a BIS license to sell
-                products in India. They must appoint an Authorized Indian
-                Representative (AIR).
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-12">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is the role of the AIR in BIS certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                An AIR (Authorized Indian Representative) acts as a liaison
-                between the foreign manufacturer and the Indian BIS. They are
-                responsible for documentation, communication, and compliance
-                with BIS certification requirements.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-13">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How can I apply for BIS registration online?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                You can apply for BIS registration online through the official
-                BIS portal. The process involves form submission, uploading
-                documents, test reports, and payment of fees.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-14">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are required for a BIS certificate?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Documents needed include business license, product
-                specifications, manufacturing process, lab test reports, factory
-                layout, quality manual, and authorization forms (for foreign
-                manufacturers).
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-15">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How much does BIS certification cost in India?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The cost of BIS certification depends on product type, testing
-                requirements, scheme type (ISI, CRS, FMCS), and whether the
-                applicant is domestic or foreign. Costs include application
-                fees, testing charges, and inspection expenses.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-16">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Is the ISI mark mandatory for all BIS-certified products?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                No, only products under the ISI scheme are required to carry the
-                ISI mark. Products under CRS or Hallmarking schemes follow
-                different labeling protocols as per BIS registration norms.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-17">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can I get BIS certification for eco-friendly products?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Yes, products that meet environmental standards can get BIS
-                certification under the Eco Mark scheme, which ensures
-                compliance with Indian standards for environmental safety.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-18">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is the difference between BIS certification and BIS
-                registration?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                BIS certification generally refers to the approval under ISI,
-                FMCS, or Hallmarking schemes, while BIS registration is commonly
-                associated with the CRS scheme for electronic products.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-19">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What is the Compulsory Registration Scheme (CRS)?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                CRS is a BIS registration program for IT and electronic goods
-                like LED lights, mobile phones, and power banks. It ensures
-                product compliance with safety-related Indian standards.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-20">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do ISI mark and BIS certificate mean the same thing?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Not exactly. The ISI mark is the symbol granted to certified
-                products under the BIS certification scheme. A BIS certificate
-                is the legal document issued to the manufacturer.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-21">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can one BIS license cover multiple products?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                No, a separate BIS licence is required for each product type and
-                each manufacturing location, even if the products are similar.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-22">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What happens if I sell products without BIS certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Selling products that require BIS certification without a valid
-                BIS licence is illegal in India and can lead to penalties,
-                product recalls, or bans.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-23">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does it take to get BIS certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                The BIS certification process generally takes 30 to 90 days,
-                depending on the product type, testing requirements, and whether
-                the applicant is domestic or foreign.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-24">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Is BIS certification accepted globally?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                While BIS certification is specific to India, it enhances global
-                credibility by showcasing compliance with stringent Indian
-                standards. Some BIS-certified products are also accepted under
-                mutual recognition agreements.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-25">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How often do I need to renew my BIS license?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                BIS licenses must be renewed annually or biennially.
-                Manufacturers must maintain compliance with Indian standards and
-                pass surveillance audits to renew their BIS certificate.
-              </AccordionContent>
-            </AccordionItem>
+            {Object.entries(t("faqs.questions", { returnObjects: true })).map(
+              ([key, value]) => (
+                <AccordionItem key={key} value={key}>
+                  <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                    {value.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                    {value.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              )
+            )}
           </Accordion>
         </div>
       </div>
@@ -1506,554 +1238,265 @@ PointsListTwo.propTypes = {
 };
 
 const OverviewSection = () => {
+  const { t } = useTranslation("BISCertification");
+
   return (
     <section id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Overview
+          {t("overview.title")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-      What Is BIS Certificate? A Complete Guide to the Indian BIS Certification for Indian & Foreign Manufacturers.
+      <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        {t("overview.mainHeading")}
       </h1>
 
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      BIS Certification in India: Ensuring Quality with ISI Mark
+        {t("overview.subHeading1")}
       </h2>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        BIS Certification in India is a mandatory quality standard issued by the
-        Bureau of Indian Standards (BIS), the national standardization body
-        under the Ministry of Consumer Affairs. A BIS certificate confirms that
-        a product complies with Indian safety, quality, and performance
-        benchmarks. Products that meet these standards are granted the ISI mark,
-        a symbol of trust and reliability for Indian consumers. BIS Certificate
-        or ISI mark not only boosts consumer confidence but also ensures that
-        manufacturers follow regulated production practices. For many product
-        categories, such as electrical appliances, cement, steel, and packaged
-        drinking water, BIS certification is compulsory under various government
-        regulations. Without this mark, the sale or import of such goods is
-        prohibited in India. The BIS certification process involves product
-        testing in BIS-recognized laboratories, factory audits, and continued
-        surveillance after the license is granted. Whether you're an Indian
-        manufacturer or a foreign company aiming to enter the Indian market,
-        obtaining the Indian BIS license is critical for compliance and market
-        access. With the growing emphasis on consumer safety and product
-        quality, the BIS certificate has become a key requirement across
-        industries. By obtaining BIS certificate or BIS licence, businesses not
-        only ensure legal compliance but also gain a competitive advantage in
-        the Indian marketplace.
+        {t("overview.description1")}
       </p>
 
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        BIS Certification Scheme
+      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("overview.subHeading2")}
       </h2>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The BIS certification scheme is a regulatory framework by the Indian BIS
-        to ensure products meet quality and safety benchmarks as per Indian
-        standards. Under this scheme, a BIS certificate or BIS licence is issued
-        after successful testing, factory inspection, and compliance
-        verification. The goal of BIS registration is to enhance consumer trust
-        and ensure that the product carries the ISI mark, a symbol of assured
-        quality. Whether you are an Indian or foreign manufacturer, BIS
-        certification is mandatory for many products, including electronics,
-        food-grade plastic, and construction materials. This scheme ensures
-        manufacturers comply with defined norms and helps avoid unsafe or
-        substandard goods in the Indian market. Getting a BIS certificate not
-        only enables market access but also demonstrates that the product aligns
-        with mandatory Indian standards. Through its surveillance mechanism and
-        periodic factory assessments, Indian BIS ensures continued compliance.
-        This organized and standardized approach helps streamline product
-        quality control across sectors. Ultimately, BIS certification safeguards
-        public health, promotes fair trade, and builds industrial
-        accountability. Without a valid BIS licence, companies risk legal
-        consequences and market exclusion in India, making BIS registration a
-        critical component of responsible manufacturing and importation in the
-        Indian economy.
+        {t("overview.description2")}
       </p>
     </section>
   );
 };
 
 const TypesSection = () => {
+  const { t } = useTranslation("BISCertification");
+
   return (
     <section id="types" className="flex flex-col scroll-mt-20">
       {/* Benefits */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Types
+          {t("types.label")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
       {/* Title */}
 
-      <h2 className="mainHeading">Types of BIS Certification</h2>
-      <p className="simpleParagraph">
-        There are various types of BIS certification issued by the Indian BIS,
-        each designed to cater to different product categories and market needs
-        under Indian standards.
-      </p>
+      <h2 className="mainHeading">{t("types.mainTitle")}</h2>
+      <p className="simpleParagraph">{t("types.description")}</p>
 
       <div className="pointList">
         <PointsListTwo
           points={[
-            "FMCS – Foreign Manufacturers Certification SchemeElectronics & IT hardware",
-            "Scheme X under Indian BIS",
-            "CRS – Compulsory Registration Scheme",
-            "Hallmarking Scheme (Jewellery & Precious Metals)",
-            "Cement and construction materials etc.",
-            "Eco Mark Certification",
+            t("types.certificationTypes.fmcs"),
+            t("types.certificationTypes.schemeX"),
+            t("types.certificationTypes.crs"),
+            t("types.certificationTypes.hallmarking"),
+            t("types.certificationTypes.cement"),
+            t("types.certificationTypes.ecoMark"),
           ]}
         />
       </div>
 
-      <h2 className="normalHeading">FMCS Scheme under Indian BIS</h2>
+      <h2 className="normalHeading">{t("types.fmcs.title")}</h2>
 
-      <p className="simpleParagraph">
-        The Foreign Manufacturers Certification Scheme (FMCS) is a special BIS
-        certification scheme designed by the Indian BIS for foreign
-        manufacturers who want to sell their products in the Indian market.
-        Under this scheme, overseas manufacturers must obtain a BIS licence or
-        BIS certificate to prove that their products meet applicable Indian
-        standards. Just like in the domestic scheme, the ISI mark is granted
-        after a detailed assessment that includes product sample testing and
-        factory inspections. FMCS is vital for ensuring that imported goods
-        align with safety and performance expectations in India. Without proper
-        BIS registration, foreign goods cannot legally enter the Indian market.
-        The FMCS process involves submitting an application, appointing an
-        Authorized Indian Representative (AIR), and undergoing a stringent
-        verification process. Compliance with BIS certification norms under this
-        scheme not only protects Indian consumers but also boosts credibility
-        for foreign companies. All certified products must display the ISI mark,
-        signifying trust and standard compliance. For any global business
-        looking to expand into India, the FMCS scheme under Indian BIS is a
-        crucial gateway to market entry, assuring that products fulfill both
-        regulatory and quality benchmarks under Indian standards.
-      </p>
+      <p className="simpleParagraph">{t("types.fmcs.description")}</p>
 
-      <h2 className="normalHeading">
-        BIS License for Domestic Manufacturer (Indian BIS)
-      </h2>
+      <h2 className="normalHeading">{t("types.domesticManufacturer.title")}</h2>
 
       <div className="simpleParagraph">
-        Domestic manufacturers must obtain BIS certification through the Indian
-        BIS to sell regulated products in India. This involves securing a valid
-        BIS certificate or BIS licence after meeting the criteria laid down
-        under Indian standards. For Indian manufacturers, getting BIS
-        registration means their products are tested and verified for safety,
-        quality, and reliability. Once certified, the products bear the ISI
-        mark, indicating they are compliant with national benchmarks. Indian BIS
-        conducts rigorous audits, including factory inspections and product
-        testing, before granting the certification. The scheme is essential for
-        ensuring only standard-compliant goods reach the Indian market. The
-        presence of the ISI mark helps consumers identify genuine, safe, and
-        government-approved products. Indian manufacturers benefit from enhanced
-        market credibility and consumer trust by acquiring a BIS licence.
-        Whether producing electronics, steel, plastic items, or construction
-        goods, manufacturers must follow the mandatory certification process.
-        The BIS certificate also facilitates participation in government tenders
-        and large-scale commercial contracts. Overall, BIS certification plays a
-        key role in quality control, consumer safety, and brand reputation for
-        Indian producers. Failing to comply with BIS registration norms can lead
-        to legal action and product bans in India, making this certification
-        mandatory for business success.
+        {t("types.domesticManufacturer.description")}
       </div>
 
-      <h2 className="normalHeading">What is ISI Mark ?</h2>
+      <h2 className="normalHeading">{t("types.isiMark.title")}</h2>
 
-      <p className="simpleParagraph">
-        The ISI mark is one of the most recognized symbols of quality in India
-        and is issued under the BIS certification scheme. Managed by the Indian
-        BIS, the ISI mark indicates that a product complies with the relevant
-        Indian standards for safety, performance, and quality. To obtain the ISI
-        mark, manufacturers—whether domestic or foreign—must secure a valid BIS
-        licence or BIS certificate through rigorous testing and factory audits.
-        Only after successful BIS registration can the mark be legally used on
-        products. The ISI mark is mandatory for numerous product categories like
-        electrical appliances, cement, LPG cylinders, and packaged drinking
-        water. Without it, companies cannot manufacture, import, or sell such
-        goods in India. A product carrying the ISI mark assures consumers that
-        it meets national regulatory norms and is safe for use. This contributes
-        significantly to consumer confidence and brand reputation. The ISI mark
-        also helps regulatory bodies enforce quality control across industries.
-        Whether you're applying for a new BIS certification or renewing a BIS
-        licence, ensuring that your product qualifies for the ISI mark is
-        crucial. For any business aiming to operate successfully in India,
-        compliance with Indian BIS standards and use of the ISI mark is
-        non-negotiable.
-      </p>
+      <p className="simpleParagraph">{t("types.isiMark.description")}</p>
 
-      <h2 className="normalHeading">
-        What is Scheme X ? ( Omnibus Technical Regulation )
-      </h2>
+      <h2 className="normalHeading">{t("types.schemeX.title")}</h2>
 
-      <p className="simpleParagraph">
-        It is a streamlined BIS certification scheme launched by the Indian BIS
-        to ease the process for certain manufacturers, especially in the
-        mechanical and industrial sectors. Scheme X simplifies documentation and
-        evaluation while ensuring products still meet all applicable Indian
-        standards. Under this scheme, the BIS certificate is granted after type
-        approval testing, factory audit, and conformity to mandatory guidelines.
-        What is Scheme X intended for? It is designed for industries such as
-        pumps, cranes, machine tools, and transformers etc. —sectors where
-        product standardization plays a vital role. Products certified under
-        Scheme X are eligible to bear the ISI mark, offering market credibility
-        and regulatory clearance. The scheme is particularly useful for
-        large-scale manufacturers and those dealing with complex industrial
-        goods. By reducing the time and cost associated with regular BIS
-        certification, Scheme X enables faster market entry and ensures
-        compliance with Indian BIS requirements. The simplified structure also
-        encourages innovation while maintaining strict quality control. A valid
-        BIS licence or BIS registration under Scheme X helps businesses align
-        with consumer expectations and regulatory demands. Understanding what is
-        Scheme X and how it functions is essential for manufacturers looking for
-        efficient pathways to secure a BIS certificate in India.
-      </p>
+      <p className="simpleParagraph">{t("types.schemeX.description")}</p>
 
-      <h2 className="normalHeading">Compulsory Registration Scheme ( CRS )</h2>
+      <h2 className="normalHeading">{t("types.crs.title")}</h2>
 
-      <p className="simpleParagraph">
-        The Compulsory Registration Scheme (CRS) is a specialized BIS
-        certification program implemented by the Indian BIS for electronic and
-        IT products. Under CRS, manufacturers must obtain a BIS certificate
-        before selling or importing products such as LED lights, mobile phones,
-        power banks, and laptops in India. This scheme ensures that such
-        high-risk products comply with Indian standards to ensure safety and
-        functionality. CRS is not as extensive as the ISI scheme, but it still
-        mandates testing in BIS-recognized labs and mandatory BIS registration
-        before products can enter the market. While products under CRS do not
-        carry the ISI mark, they still must display a BIS licence number and
-        comply with defined quality norms. The CRS program helps reduce unsafe
-        or counterfeit products in India, especially in the booming electronics
-        market. Foreign and Indian manufacturers both must appoint an Authorized
-        Indian Representative (AIR) and complete the BIS certification process
-        to ensure compliance. The Indian BIS routinely updates the list of
-        products under CRS to keep up with technological changes and emerging
-        safety concerns. Obtaining a BIS certificate under CRS not only ensures
-        regulatory approval but also boosts customer trust and enables broader
-        market reach for electronics manufacturers.
-      </p>
+      <p className="simpleParagraph">{t("types.crs.description")}</p>
 
-      <h2 className="normalHeading">Hallmarking</h2>
+      <h2 className="normalHeading">{t("types.hallmarking.title")}</h2>
 
-      <p className="simpleParagraph">
-        Hallmarking under BIS certification is mandatory for gold and silver
-        jewelry in India to ensure purity and authenticity. Managed by the
-        Indian BIS, hallmarking is a quality assurance process where precious
-        metal articles are tested and stamped with the ISI mark (or hallmark
-        symbol) once they meet the required Indian standards. Jewelers must
-        obtain a BIS licence or BIS certificate to legally sell hallmarked
-        products. This includes BIS registration, testing at BIS-approved
-        Assaying and Hallmarking Centers (AHCs), and regular audits. Hallmarked
-        jewelry gives consumers confidence about the purity and weight of the
-        metal, minimizing fraud and market malpractice. With gold being a major
-        investment for Indian consumers, BIS certification through hallmarking
-        plays a crucial role in maintaining transparency and trust. Every piece
-        marked is verified against Indian standards, and non-compliance can
-        result in severe penalties, including license suspension. Hallmarking
-        not only protects consumers but also boosts the credibility of jewelers
-        and exporters. By holding a valid BIS licence, businesses demonstrate
-        their commitment to fair trade practices. Whether you're a small jeweler
-        or a large manufacturer, securing a BIS certificate through hallmarking
-        is essential for legal compliance and consumer satisfaction in India's
-        precious metals market.
-      </p>
+      <p className="simpleParagraph">{t("types.hallmarking.description")}</p>
 
-      <h2 className="normalHeading">Eco Mark</h2>
+      <h2 className="normalHeading">{t("types.ecoMark.title")}</h2>
 
-      <p className="simpleParagraph">
-        Eco Mark is a unique certification under the BIS certification system
-        offered by the Indian BIS for environmentally friendly products. It is
-        granted to products that not only conform to Indian standards for
-        quality but also demonstrate minimal environmental impact throughout
-        their lifecycle. Products bearing the Eco Mark must undergo rigorous
-        testing and meet criteria related to energy efficiency, recyclability,
-        and reduced emissions. Just like the ISI mark, the Eco Mark is a
-        government-approved assurance symbol. To receive this mark,
-        manufacturers must obtain a valid BIS licence or BIS certificate and
-        complete the BIS registration process under the relevant standards. The
-        goal is to encourage sustainable manufacturing practices and promote
-        environmental responsibility among industries. The Indian BIS assesses
-        each application based on strict parameters, including biodegradability,
-        non-toxicity, and eco-friendliness of raw materials. By securing a BIS
-        certificate with an Eco Mark, businesses not only comply with legal
-        norms but also gain credibility among environmentally conscious
-        consumers. This form of BIS certification helps companies align with
-        global sustainability goals while promoting products that meet both
-        safety and ecological standards. The Eco Mark offers a competitive edge
-        to brands aiming to combine quality with environmental responsibility
-        under the umbrella of BIS certification.
-      </p>
+      <p className="simpleParagraph">{t("types.ecoMark.description")}</p>
 
-      <h2 className="normalHeading">
-        Management Systems Certification Scheme (MSCS)
-      </h2>
+      <h2 className="normalHeading">{t("types.mscs.title")}</h2>
 
-      <p className="simpleParagraph">
-        The Management Systems Certification Scheme (MSCS) by the Bureau of
-        Indian Standards (BIS) is a structured program designed to assess and
-        certify organizations that implement various internationally recognized
-        management systems. These systems include standards like ISO 9001
-        (Quality Management), ISO 14001 (Environmental Management), ISO 45001
-        (Occupational Health & Safety), among others. The MSCS ensures that
-        organizations maintain consistency in their operational processes,
-        comply with legal and regulatory requirements, and continually improve
-        performance and customer satisfaction. BIS, being a national standards
-        body, provides this third-party certification as a mark of trust and
-        compliance, enhancing an organization’s market credibility both
-        domestically and globally. Through rigorous audits, surveillance, and
-        recertification processes, the MSCS builds confidence among stakeholders
-        and promotes a culture of quality, safety, and sustainability. Moreover,
-        the certification aligns with government initiatives like Make in India
-        and Atmanirbhar Bharat, encouraging Indian businesses to meet global
-        benchmarks. The scheme also promotes fair trade, enhances consumer
-        trust, and contributes to a more transparent and competitive industrial
-        ecosystem. With a focus on competence, impartiality, and continual
-        improvement, BIS’s MSCS plays a vital role in shaping India’s quality
-        infrastructure.
-      </p>
+      <p className="simpleParagraph">{t("types.mscs.description")}</p>
 
-      <h2 className="normalHeading">LRS (Lab Recognition Scheme)</h2>
+      <h2 className="normalHeading">{t("types.lrs.title")}</h2>
 
+      <div className="simpleParagraph">{t("types.lrs.description")}</div>
+
+      <h2 className="normalHeading">{t("types.products.title")}</h2>
+
+      <div className="simpleParagraph">{t("types.products.description")}</div>
+
+      <h2 className="normalHeading">{t("types.benefits.title")}</h2>
+
+      <div className="simpleParagraph">{t("types.benefits.description")}</div>
+
+      <h2 className="normalHeading">{t("types.requiredDocuments.title")}</h2>
       <div className="simpleParagraph">
-        The LRS (Lab Recognition Scheme) of the Bureau of Indian Standards (BIS)
-        is a crucial mechanism to ensure the quality and credibility of testing
-        laboratories that evaluate products for BIS certification. Under this
-        scheme, laboratories are assessed and granted recognition by BIS based
-        on their technical competence, infrastructure, personnel, and compliance
-        with ISO/IEC 17025 standards. Laboratories recognized under LRS play a
-        key role in the BIS certification process, as their test reports are
-        accepted for product conformity assessments under schemes like the ISI
-        Mark and Compulsory Registration Scheme (CRS). Obtaining an LRS-approved
-        lab report is often a prerequisite for manufacturers—especially
-        importers and exporters—seeking a BIS certificate for regulated products
-        in India. The scheme ensures that only technically sound, reliable, and
-        impartial labs are involved in testing, thus strengthening India’s
-        product quality ecosystem. BIS regularly monitors these labs through
-        audits, proficiency testing, and surveillance to maintain global
-        standards. By promoting transparency and trust, the LRS scheme
-        contributes to faster processing of BIS certifications, ensuring that 
-        only safe and standard-compliant products enter the Indian market. For 
-        any business aiming to obtain a BIS certificate, partnering with an
-        LRS-recognized lab is an essential first step toward compliance.
+        {t("types.requiredDocuments.description")}
       </div>
-
-      <h2 className="normalHeading">Products under BIS Certification</h2>
-
-      <div className="simpleParagraph">
-      Many products in India require BIS certification to ensure they conform to safety and performance benchmarks established by Indian BIS. These products span various industries such as electronics, electrical appliances, cement, automotive parts, steel, kitchenware, and more. All these categories must meet specific Indian standards, and companies must secure a BIS licence or BIS certificate before they can be sold in the Indian market. Products certified under the ISI mark scheme include items like electric cables, switches, packaged drinking water, and LPG cylinders, where quality control is critical. The CRS scheme applies to electronic products like LED lights, mobile phones, and power adapters. Even environmental and industrial goods, such as pumps and transformers, are included under Scheme X. Each product type has a specific standard, and BIS registration ensures that these products are verified through testing and inspection. The Indian BIS updates its product list periodically to keep up with technological and market developments. Securing BIS certification is not just a regulatory requirement—it is essential for market access, brand trust, and consumer safety. Without a valid BIS licence, businesses cannot legally manufacture, import, or sell these products, making certification vital for compliance and growth.
-      </div>
-
-
-      <h2 className="normalHeading">Benefits of BIS Certification</h2>
-
-      <div className="simpleParagraph">
-      Obtaining BIS certification offers multiple benefits for manufacturers, consumers, and the broader Indian economy. For businesses, a valid BIS licence or BIS certificate allows legal sale and distribution of regulated products within India. The ISI mark, granted through BIS registration, assures customers of the product’s safety, reliability, and compliance with Indian standards. For consumers, BIS certification provides confidence that the product they are purchasing is of tested quality and free from defects or safety hazards. The Indian BIS plays a vital role in ensuring that certified products undergo strict testing, regular audits, and continuous surveillance to maintain quality. For exporters and foreign manufacturers, BIS certification acts as a market gateway and boosts their brand’s credibility among Indian consumers. It also helps avoid penalties, import restrictions, or legal issues arising from non-compliance. Environmental certifications like the Eco Mark and specialized schemes like Scheme X further enhance product acceptability. Whether under CRS, FMCS, or ISI mark schemes, obtaining a BIS licence enables smoother trade operations and builds trust with distributors and retailers. Thus, the benefits of BIS certification go far beyond compliance—they foster brand loyalty, improve safety, and ensure adherence to Indian standards across various sectors.
-      </div>
-
-      <h2 className="normalHeading">Documents Required for BIS Certificate</h2>
-
-      <div className="simpleParagraph">
-      To apply for a BIS certificate, businesses must prepare a comprehensive set of documents that demonstrate compliance with Indian standards and eligibility for BIS certification. Key documents include the company’s business license, manufacturing layout, list of machinery, raw material sources, product technical details, and quality control manual. If applying under the ISI mark scheme, the applicant must also provide test reports from BIS-recognized labs. A valid trademark certificate is required for brand protection during BIS registration. For foreign manufacturers, an Authorized Indian Representative (AIR) must submit additional documentation like proof of representation and identity. The Indian BIS uses these documents to assess whether the product and facility meet the criteria for a BIS licence. Incomplete or inaccurate submissions can delay the BIS certification process or lead to outright rejection. Depending on the product category, additional documents may be needed under CRS, FMCS, or what is Scheme X guidelines. Accurate documentation ensures a smooth audit, reduces approval time, and facilitates faster market access. By compiling all required paperwork correctly, businesses demonstrate their commitment to product quality and safety. Hence, preparing the right documents is a critical step in securing a valid BIS licence and succeeding in the Indian market under BIS certification norms.
-      </div>
-
-     
-
-
-
-
-
-
-
-
-
     </section>
   );
 };
 
 const DocumentsSection = () => {
+  const { t } = useTranslation("BISCertification");
+
   return (
     <section id="documents" className="flex flex-col scroll-mt-20">
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Documents
+          {t("navigation.documents")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h1 className="mainHeading">Documents Required for BIS Certificate</h1>
+      <h1 className="mainHeading">{t("types.requiredDocuments.title")}</h1>
 
       <p className="simpleParagraph">
-        To apply for a BIS certificate, businesses must prepare a comprehensive
-        set of documents that demonstrate compliance with Indian standards and
-        eligibility for BIS certification. Key documents include the company’s
-        business license, manufacturing layout, list of machinery, raw material
-        sources, product technical details, and quality control manual. If
-        applying under the ISI mark scheme, the applicant must also provide test
-        reports from BIS-recognized labs. A valid trademark certificate is
-        required for brand protection during BIS registration. For foreign
-        manufacturers, an Authorized Indian Representative (AIR) must submit
-        additional documentation like proof of representation and identity. The
-        Indian BIS uses these documents to assess whether the product and
-        facility meet the criteria for a BIS licence. Incomplete or inaccurate
-        submissions can delay the BIS certification process or lead to outright
-        rejection. Depending on the product category, additional documents may
-        be needed under CRS, FMCS, or what is Scheme X guidelines. Accurate
-        documentation ensures a smooth audit, reduces approval time, and
-        facilitates faster market access. By compiling all required paperwork
-        correctly, businesses demonstrate their commitment to product quality
-        and safety. Hence, preparing the right documents is a critical step in
-        securing a valid BIS licence and succeeding in the Indian market under
-        BIS certification norms.
+        {t("types.requiredDocuments.description")}
       </p>
     </section>
   );
 };
 
 const ProcessSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="process" className="flex flex-col scroll-mt-20">
       {/* Process*/}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Process
+          {t("BISCertification:process.title")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h2 className="mainHeading">Process of BIS Certification</h2>
+      <h2 className="mainHeading">
+        {t("BISCertification:process.mainHeading")}
+      </h2>
 
       <p className="simpleParagraph">
-        The BIS certification process follows a structured approach to ensure
-        products meet mandatory Indian standards for quality, safety, and
-        performance. Here's a comprehensive overview of the complete process:
+        {t("BISCertification:process.overview")}
       </p>
 
-      <h3 className="normalHeading">Purpose of BIS Certification</h3>
+      <h3 className="normalHeading">
+        {t("BISCertification:process.purpose.heading")}
+      </h3>
       <p className="simpleParagraph">
-        The BIS certification process is structured by the Indian BIS to ensure
-        products meet mandatory Indian standards for quality, safety, and
-        performance.
+        {t("BISCertification:process.purpose.description")}
       </p>
 
-      <h3 className="normalHeading">Identify Applicable Standard</h3>
+      <h3 className="normalHeading">
+        {t("BISCertification:process.identifyStandard.heading")}
+      </h3>
       <p className="simpleParagraph">
-        Manufacturers must first identify the relevant Indian standard and
-        determine the product category under the BIS scheme.
+        {t("BISCertification:process.identifyStandard.description")}
       </p>
 
-      <h3 className="normalHeading">Application Submission</h3>
+      <h3 className="normalHeading">
+        {t("BISCertification:process.application.heading")}
+      </h3>
       <p className="simpleParagraph">
-        Submit a formal application to the Indian BIS, including required
-        documents such as:
+        {t("BISCertification:process.application.description")}
       </p>
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
         <div className="w-full md:w-auto">
           <PointsListTwo
-            points={[
-              "Manufacturing flow chart",
-              "Quality control plan",
-              "Product test reports",
-            ]}
-            heading="Required Documents:"
+            points={t("BISCertification:process.application.documents.list", {
+              returnObjects: true,
+            })}
+            heading={t(
+              "BISCertification:process.application.documents.heading"
+            )}
           />
         </div>
       </div>
 
-      <h3 className="normalHeading">BIS Registration & Product Testing</h3>
+      <h3 className="normalHeading">
+        {t("BISCertification:process.registration.heading")}
+      </h3>
       <p className="simpleParagraph">
-        Apply for BIS registration and get the product tested in BIS-approved
-        laboratories. This step is mandatory under all BIS schemes, including
-        ISI, CRS, FMCS, and what is Scheme X.
+        {t("BISCertification:process.registration.description")}
       </p>
 
-      <h3 className="normalHeading">Factory Inspection</h3>
+      <h3 className="normalHeading">
+        {t("BISCertification:process.inspection.heading")}
+      </h3>
       <p className="simpleParagraph">
-        The Indian BIS conducts a factory inspection to assess the production
-        setup, quality control, and compliance with Indian standards.
+        {t("BISCertification:process.inspection.description")}
       </p>
 
-      <h3 className="normalHeading">Grant of BIS Certificate / BIS License</h3>
+      <h3 className="normalHeading">
+        {t("BISCertification:process.grant.heading")}
+      </h3>
       <p className="simpleParagraph">
-        After successful evaluation, the manufacturer is granted a BIS license
-        (or BIS licence) and can use the ISI mark on the product.
+        {t("BISCertification:process.grant.description")}
       </p>
     </section>
   );
 };
 
 const CostSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="cost" className="flex flex-col scroll-mt-20">
       {/* cost */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Cost
+          {t("BISCertification:cost.title")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h2 className="mainHeading">Cost of BIS Certification</h2>
+      <h2 className="mainHeading">{t("BISCertification:cost.mainHeading")}</h2>
 
       <div className="mt-[16px] md:mt-[24px]">
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                Cost Component
+                {t("BISCertification:cost.table.headers.component")}
               </TableHead>
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                Details
+                {t("BISCertification:cost.table.headers.details")}
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody className="bg-white divide-y divide-gray-200">
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Application Fee
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                One-time, non-refundable fee depending on product type
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Testing Charges
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Based on complexity; paid to BIS-recognized labs
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Annual License Fee
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Paid annually to maintain BIS license
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Inspection/Factory Audit Charges
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Charged if BIS officials visit factory (domestic or
-                international travel extra)
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Consultancy Charges (if applicable)
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Optional, for end-to-end compliance help from consultants
-              </TableCell>
-            </TableRow>
+            {t("BISCertification:cost.table.rows", { returnObjects: true }).map(
+              (row, index) => (
+                <TableRow key={index} className="hover:bg-gray-50">
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                    {row.component}
+                  </TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                    {row.details}
+                  </TableCell>
+                </TableRow>
+              )
+            )}
           </TableBody>
         </Table>
       </div>
@@ -2062,91 +1505,54 @@ const CostSection = () => {
 };
 
 const RoleSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="role" className="flex flex-col scroll-mt-20">
-      {/* cost */}
+      {/* role */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Role
+          {t("BISCertification:role.title")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h2 className="mainHeading">
-        What is the Role of Authorized Indian Representative (AIR)
-      </h2>
+      <h2 className="mainHeading">{t("BISCertification:role.mainHeading")}</h2>
 
       <p className="simpleParagraph">
-        The role of the Authorized Indian Representative (AIR) is crucial in the
-        BIS certification process for foreign manufacturers. As per Indian BIS
-        regulations, companies located outside India must appoint an AIR to act
-        as their official liaison with the BIS. The AIR is responsible for
-        submitting applications, managing BIS registration, communicating with
-        officials, and coordinating inspections or audits. They play a pivotal
-        role in ensuring that the foreign manufacturer meets all Indian
-        standards and complies with scheme-specific guidelines such as CRS,
-        FMCS, or what is Scheme X. Without a valid AIR, the BIS certificate
-        application cannot proceed. The AIR is also held accountable for
-        post-certification compliance, including surveillance audits and renewal
-        of the BIS licence. Appointing an experienced AIR can significantly
-        streamline the BIS certification process and reduce approval delays.
-        It’s essential that the AIR be an Indian citizen or entity with a
-        physical address in India. This makes communication between foreign
-        applicants and the Indian BIS transparent and efficient. In summary, the
-        AIR acts as the official channel for ensuring that all certification
-        steps—from testing to issuing the ISI mark—are completed without
-        complications, making them an indispensable part of the BIS registration
-        process.
+        {t("BISCertification:role.description")}
       </p>
     </section>
   );
 };
 
 const ConclusionSection = () => {
+  const { t } = useTranslation("BISCertification");
+
   return (
     <section id="conclusion" className="flex flex-col scroll-mt-20">
       {/* cost */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Conclusion
+          {t("conclusion.title")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h2 className="mainHeading">BIS Certification Summary & Key Takeaways</h2>
+      <h2 className="mainHeading">{t("conclusion.mainHeading")}</h2>
 
-      <p className="simpleParagraph">
-        In conclusion, BIS certification is a legal and strategic necessity for
-        manufacturers looking to access the Indian market. Issued by the Indian
-        BIS, this certification guarantees that a product complies with
-        established Indian standards for safety, performance, and quality.
-        Whether it's through the ISI Mark Scheme, CRS, FMCS, or what is Scheme
-        X, obtaining a BIS certificate enhances consumer trust and ensures
-        product reliability. From electronics and construction materials to gold
-        jewelry and eco-friendly products, BIS licence requirements span across
-        multiple sectors. The presence of the ISI mark signals adherence to
-        national regulations and serves as a mark of quality assurance. For
-        foreign manufacturers, an Authorized Indian Representative (AIR) plays a
-        crucial role in fulfilling compliance under the BIS certification
-        process. While the cost and documentation may appear extensive, the
-        long-term benefits of BIS registration far outweigh the initial
-        investment. Legal access to India’s vast market, improved brand
-        credibility, and reduced regulatory risks make the BIS licence
-        indispensable. Whether you’re a domestic producer or a global exporter,
-        aligning your products with Indian standards through proper BIS
-        certification ensures business sustainability, consumer safety, and
-        regulatory approval in one of the world's largest and most dynamic
-        markets.
-      </p>
+      <p className="simpleParagraph">{t("conclusion.description")}</p>
     </section>
   );
 };
 
 const ReviewSection = () => {
+  const { t } = useTranslation("BISCertification");
+
   return (
     <section>
       <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
-        What did you think of this content?
+        {t("review.title")}
       </span>
       <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
         <div className="flex gap-6">
@@ -2174,7 +1580,7 @@ const ReviewSection = () => {
               />
             </svg>
 
-            <span>It was helpful</span>
+            <span>{t("review.helpful")}</span>
           </button>
 
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
@@ -2201,12 +1607,12 @@ const ReviewSection = () => {
               />
             </svg>
 
-            <span>It was not helpful</span>
+            <span>{t("review.notHelpful")}</span>
           </button>
         </div>
 
         <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
-          Last updated on Mar 19, 2025
+          {t("review.lastUpdated")}
         </p>
       </div>
     </section>

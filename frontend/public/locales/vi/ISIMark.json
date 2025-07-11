@@ -1,0 +1,306 @@
+{
+  "hero": {
+    "badge": "Chuyên Môn Được Chứng Nhận",
+    "title": {
+      "part1": "Chứng Nhận BIS cho",
+      "part2": "Nhà Sản Xuất Ấn Độ"
+    },
+    "description": "Là một phần của tầm nhìn 'Make in India', chứng nhận BIS giúp các nhà sản xuất đảm bảo an toàn, chất lượng và sự phù hợp của sản phẩm. Nhận chứng nhận và phát triển thương hiệu của bạn một cách tự tin.",
+    "viewServices": "Xem Dịch Vụ"
+  },
+  "navigation": {
+    "overview": "Tổng Quan",
+    "process": "Quy Trình",
+    "document": "Tài Liệu",
+    "costing": "Chi Phí",
+    "faqs": "Câu Hỏi Thường Gặp",
+    "toggleMenu": "Chuyển Đổi Menu"
+  },
+  "process": {
+    "title": "Quy Trình",
+    "mainHeading": "Quy Trình Chứng Nhận BIS cho Nhà Sản Xuất Trong Nước",
+    "description": "Việc có được chứng nhận BIS có thể là yếu tố thay đổi cuộc chơi đối với các nhà sản xuất trong nước — nhưng đòi hỏi phải điều hướng qua một quy trình được xác định rõ ràng và chi tiết. Dưới đây là phân tích từng bước của quy trình cấp phép BIS, được điều chỉnh đặc biệt cho các doanh nghiệp Ấn Độ.",
+    "step1": {
+      "title": "Bước 1: Xác Định Tiêu Chuẩn Ấn Độ Áp Dụng (IS)",
+      "description": "Trước khi bắt đầu quy trình đăng ký BIS, các nhà sản xuất phải xác định liệu sản phẩm của họ có thuộc chứng nhận bắt buộc hay không. Nếu có, họ cần xác định Tiêu Chuẩn Ấn Độ có liên quan (mã IS) liên quan đến sản phẩm đó.",
+      "resources": "Tài Nguyên:",
+      "list": [
+        "Truy cập trang web chính thức của BIS",
+        "Tham khảo thông báo cụ thể sản phẩm",
+        "Tham khảo ý kiến các chuyên gia tư vấn được BIS công nhận hoặc phòng thí nghiệm kiểm tra"
+      ]
+    },
+    "step2": {
+      "title": "Bước 2: Chuẩn Bị Tài Liệu Cần Thiết",
+      "description": "Biên soạn và nộp các tài liệu cần thiết, bao gồm:",
+      "list": [
+        "Đơn đăng ký (Mẫu V hoặc VI, dựa trên lược đồ)",
+        "Giấy chứng nhận đăng ký doanh nghiệp",
+        "Giấy phép nhà máy",
+        "Danh sách thiết bị sản xuất",
+        "Chi tiết nhân viên kiểm soát chất lượng",
+        "Sơ đồ quy trình sản xuất",
+        "Bố cục đơn vị sản xuất"
+      ]
+    },
+    "step3": {
+      "title": "Bước 3: Kiểm Tra Sản Phẩm tại Phòng Thí Nghiệm Được BIS Công Nhận",
+      "description": "Các nhà sản xuất phải gửi mẫu sản phẩm đến phòng thí nghiệm được BIS công nhận để kiểm tra. Phòng thí nghiệm sẽ đánh giá sản phẩm dựa trên các mã IS có liên quan và ban hành báo cáo kiểm tra.",
+      "tips": "Mẹo Quan Trọng:",
+      "list": [
+        "Chỉ sử dụng các phòng thí nghiệm được BIS ủy quyền",
+        "Đảm bảo việc dán nhãn và đóng gói mẫu tuân theo các tiêu chuẩn BIS",
+        "Lưu giữ hồ sơ của tất cả tài liệu kiểm tra"
+      ]
+    },
+    "step4": {
+      "title": "Bước 4: Nộp Đơn Trực Tuyến",
+      "description1": "Với các tài liệu và báo cáo kiểm tra trong tay, các nhà sản xuất phải đăng ký qua cổng thông tin BIS. Đơn đăng ký nên bao gồm:",
+      "list": [
+        "Hồ sơ công ty",
+        "Chi tiết sản xuất và kiểm soát chất lượng",
+        "Thông số kỹ thuật sản phẩm",
+        "Chứng chỉ kiểm tra và các tài liệu khác"
+      ],
+      "description2": "Quy trình trực tuyến cho phép tải lên tài liệu và theo dõi tình trạng theo thời gian thực."
+    },
+    "step5": {
+      "title": "Bước 5: Kiểm Tra Nhà Máy bởi Các Quan Chức BIS",
+      "description": "Sau khi xác minh tài liệu, các quan chức BIS tiến hành kiểm tra tại chỗ cơ sở sản xuất. Họ xác minh:",
+      "list": [
+        "Cơ sở hạ tầng sản xuất",
+        "Thiết bị kiểm tra",
+        "Lưu trữ nguyên liệu thô",
+        "Quy trình kiểm soát chất lượng trong quá trình và cuối cùng"
+      ],
+      "description2": "Kiểm tra đảm bảo tuân thủ các tiêu chuẩn BIS và đánh giá khả năng sản xuất sản phẩm phù hợp một cách nhất quán."
+    },
+    "step6": {
+      "title": "Bước 6: Cấp Giấy Phép BIS",
+      "description": "Nếu sản phẩm vượt qua kiểm tra và kiểm tra nhà máy đạt yêu cầu, BIS cấp giấy phép sử dụng nhãn ISI. Nhà sản xuất nhận được chứng chỉ BIS chính thức, có hiệu lực trong một hoặc hai năm tùy thuộc vào lược đồ."
+    },
+    "step7": {
+      "title": "Bước 7: Đánh Dấu Ký Hiệu ISI",
+      "description": "Nhãn ISI phải được dán trên mỗi đơn vị sản phẩm, bao bì, và đôi khi trong tài liệu tiếp thị, theo hướng dẫn đánh dấu BIS."
+    },
+    "step8": {
+      "title": "Bước 8: Giám Sát Liên Tục và Gia Hạn",
+      "description": "Chứng nhận BIS tuân theo:",
+      "list": ["Kiểm tra giám sát", "Kiểm tra lại mẫu", "Gia hạn hàng năm"]
+    }
+  },
+  "costing": {
+    "title": "Chi Phí",
+    "mainHeading": "Chi Phí Chứng Nhận BIS (chi phí chứng nhận bis)",
+    "description": "Hiểu được cam kết tài chính của chứng nhận BIS là rất quan trọng cho việc lập kế hoạch phù hợp. Chi phí chứng nhận BIS tổng thể cho các nhà sản xuất trong nước có thể thay đổi dựa trên loại sản phẩm, lược đồ, yêu cầu kiểm tra và quy mô của đơn vị sản xuất. Dưới đây là phân tích chi tiết các thành phần chi phí phổ biến.",
+    "breakdownTitle": "Phân Tích Chi Phí Chứng Nhận BIS Tiêu Chuẩn",
+    "table": {
+      "headers": {
+        "component": "Thành Phần Chi Phí",
+        "amount": "Số Tiền Ước Tính (INR)"
+      },
+      "rows": [
+        {
+          "component": "Phí Đăng Ký",
+          "amount": "₹1,000"
+        },
+        {
+          "component": "Phí Kiểm Tra Sản Phẩm (mỗi sản phẩm)",
+          "amount": "₹15,000 – ₹50,000"
+        },
+        {
+          "component": "Phí Kiểm Tra Nhà Máy",
+          "amount": "₹7,000"
+        },
+        {
+          "component": "Phí Giấy Phép (Cấp Ban Đầu)",
+          "amount": "₹1,000"
+        },
+        {
+          "component": "Phí Đánh Dấu (mỗi sản phẩm/năm)",
+          "amount": "Tùy thuộc vào sản phẩm"
+        },
+        {
+          "component": "Phí Gia Hạn (hai năm/hàng năm)",
+          "amount": "Tùy thuộc vào sản phẩm"
+        }
+      ]
+    }
+  },
+  "document": {
+    "title": "Tài Liệu Cần Thiết",
+    "mainHeading": "Tài Liệu Cần Thiết cho Đăng Ký BIS",
+    "description": "Sự thành công của việc đăng ký BIS của bạn phụ thuộc rất nhiều vào tài liệu chính xác và đầy đủ. Dưới đây là danh sách các tài liệu chính mà các nhà sản xuất trong nước cần thu thập và nộp trong quá trình chứng nhận BIS.",
+    "checklistTitle": "Danh Sách Kiểm Tra Tài Liệu Chung",
+    "documentsList": [
+      "1. Mẫu Đơn Đăng Ký Hoàn Chỉnh (Mẫu V hoặc VI tùy thuộc vào lược đồ)",
+      "2. Giấy Chứng Nhận Đăng Ký Doanh Nghiệp (ví dụ: Đăng ký Udyam, MSME, Chứng chỉ GST)",
+      "3. Giấy Phép Nhà Máy hoặc Giấy Phép Thương Mại Thành phố",
+      "4. Danh Sách Máy Móc Sản Xuất",
+      "5. Sơ Đồ Quy Trình Sản Xuất",
+      "6. Kế Hoạch Bố Trí Cơ Sở Sản Xuất",
+      "7. Chi Tiết Nhân Viên Kiểm Soát Chất Lượng Nội Bộ",
+      "8. Chi Tiết Thiết Bị Kiểm Tra",
+      "9. Thỏa Thuận Hợp Tác Kỹ Thuật (nếu có)",
+      "10. Giấy Ủy Quyền/Thư Ủy Quyền",
+      "11. Thư Ủy Quyền Tên Thương Hiệu (nếu đăng ký dưới thương hiệu khác)",
+      "12. Báo Cáo Kiểm Tra từ phòng thí nghiệm được BIS phê duyệt",
+      "13. Hóa Đơn Mua Nguyên Liệu Thô",
+      "14. Ảnh Sản Phẩm và Bao Bì",
+      "15. Tuyên Bố Tuân Thủ Tiêu Chuẩn",
+      "16. Cam Kết Về Sản Phẩm Không Tiêu Chuẩn"
+    ]
+  },
+  "introduction": {
+    "title": "Giới Thiệu về Chứng Nhận BIS tại Ấn Độ cho Nhà Sản Xuất Ấn Độ",
+    "paragraph1": "Hệ sinh thái sản xuất của Ấn Độ đang trải qua sự chuyển đổi năng động, và với sự thúc đẩy của chính phủ về 'Make in India', việc đảm bảo chất lượng và sự tuân thủ sản phẩm chưa bao giờ quan trọng hơn thế. Một trong những bước quan trọng nhất đối với bất kỳ nhà sản xuất trong nước nào muốn phát triển mạnh trên thị trường Ấn Độ là việc có được chứng nhận BIS.",
+    "paragraph2": "Cục Tiêu chuẩn Ấn Độ (BIS) là cơ quan quốc gia chịu trách nhiệm thiết lập và duy trì các tiêu chuẩn chất lượng sản phẩm. Chứng nhận BIS đảm bảo rằng sản phẩm đáp ứng các tiêu chuẩn cụ thể của Ấn Độ và an toàn, đáng tin cậy và có chất lượng tốt.",
+    "paragraph3": "Đối với các nhà sản xuất trong nước, chứng nhận BIS không chỉ đơn thuần là yêu cầu pháp lý; đó là dấu hiệu của sự tin cậy. Giấy phép BIS thể hiện sự tuân thủ, mở rộng khả năng tiếp cận thị trường rộng lớn hơn và nâng cao uy tín thương hiệu. Với sự nhấn mạnh rộng rãi về đảm bảo chất lượng và an toàn khách hàng, hệ thống BIS của Ấn Độ đã trở thành xương sống quy định cho cả các lĩnh vực sản phẩm công nghiệp và tiêu dùng.",
+    "paragraph4": "Chứng nhận BIS cũng bao gồm dấu ISI, một chỉ báo quan trọng cho thấy sản phẩm tuân thủ các thông số kỹ thuật của Viện Tiêu chuẩn Ấn Độ. Các sản phẩm có dấu ISI thường bắt buộc trong các lĩnh vực như điện tử, xi măng, thép, linh kiện ô tô và hàng gia dụng. Đối với các nhà sản xuất, việc có được dấu ISI thông qua đăng ký BIS có thể tạo nên sự khác biệt giữa thành công thị trường và trở ngại quy định."
+  },
+  "overview": {
+    "title": "Dấu ISI là gì?",
+    "description": "Dấu ISI là biểu tượng của chất lượng và an toàn cho các sản phẩm được sản xuất và bán tại Ấn Độ. Viết tắt của Viện Tiêu chuẩn Ấn Độ (Indian Standards Institute), dấu ISI cho biết sản phẩm tuân thủ tiêu chuẩn Ấn Độ (IS) do BIS quy định. Dấu này đảm bảo với người tiêu dùng rằng sản phẩm đã được kiểm tra và chứng nhận bởi giấy phép BIS và tuân thủ các tiêu chuẩn quốc gia về an toàn, hiệu suất và độ tin cậy.",
+    "commonProducts": {
+      "title": "Các sản phẩm phổ biến có dấu ISI bao gồm:",
+      "list": [
+        "Thiết bị điện như bàn là, máy sưởi phòng và máy nước nóng",
+        "Xi măng",
+        "Sản phẩm thép",
+        "Nồi áp suất",
+        "Linh kiện ô tô, v.v."
+      ]
+    },
+    "mandatoryNote": "Trong nhiều trường hợp, việc có dấu ISI là bắt buộc theo luật pháp Ấn Độ. Các sản phẩm thuộc Chương trình Chứng nhận Bắt buộc không được phép bán tại Ấn Độ nếu không có chứng nhận này.",
+    "bisLicense": {
+      "title": "Giấy phép BIS là gì?",
+      "description1": "Giấy phép BIS là sự cho phép chính thức do Cục Tiêu chuẩn Ấn Độ cấp cho phép nhà sản xuất sử dụng dấu ISI trên sản phẩm của họ. Giấy phép chứng nhận rằng sản phẩm, quy trình sản xuất và cơ sở vật chất đều đáp ứng các tiêu chí kiểm soát chất lượng nghiêm ngặt của BIS.",
+      "description2": "Để có được giấy phép BIS, nhà sản xuất phải trải qua quy trình đăng ký BIS, bao gồm việc nộp tài liệu, kiểm tra sản phẩm, kiểm tra nhà máy và giám sát liên tục.",
+      "description3": "Sau khi được cấp, giấy phép có hiệu lực trong một thời gian cụ thể và phải được gia hạn trước khi hết hạn. Việc không tuân thủ các quy chuẩn BIS có thể dẫn đến việc đình chỉ hoặc hủy bỏ chứng chỉ BIS."
+    },
+    "whyMatters": {
+      "title": "Tại sao dấu ISI và giấy phép BIS quan trọng?",
+      "description1": "Trong khi dấu ISI là thứ người tiêu dùng nhìn thấy và tin tưởng, giấy phép BIS là sự phê duyệt phía sau cho phép nhà sản xuất gắn dấu này một cách hợp pháp. Việc sử dụng dấu ISI mà không có giấy phép BIS hợp lệ là vi phạm pháp luật.",
+      "description2": "Điều này khiến việc đăng ký BIS không chỉ là rào cản quy định mà còn là bước cơ bản để đảm bảo sản phẩm của bạn có thể được tiếp thị và bán hợp pháp tại Ấn Độ."
+    },
+    "differences": {
+      "title": "Những khác biệt chính giữa dấu ISI và giấy phép BIS:",
+      "table": {
+        "headers": {
+          "feature": "Đặc điểm",
+          "isiMark": "Dấu ISI",
+          "bisLicense": "Giấy phép BIS"
+        },
+        "rows": {
+          "purpose": {
+            "label": "Mục đích",
+            "isiMark": "Dấu chất lượng trên sản phẩm",
+            "bisLicense": "Phê duyệt sử dụng dấu ISI"
+          },
+          "issuedBy": {
+            "label": "Cấp bởi",
+            "isiMark": "Sử dụng dưới sự cho phép của BIS",
+            "bisLicense": "Cấp bởi Cục Tiêu chuẩn Ấn Độ"
+          },
+          "visibility": {
+            "label": "Khả năng hiển thị",
+            "isiMark": "Hiển thị trên sản phẩm",
+            "bisLicense": "Tài liệu do nhà sản xuất nắm giữ"
+          },
+          "mandatory": {
+            "label": "Bắt buộc?",
+            "isiMark": "Có, đối với sản phẩm được liệt kê",
+            "bisLicense": "Có, để có được dấu ISI"
+          },
+          "renewal": {
+            "label": "Gia hạn",
+            "isiMark": "Không áp dụng",
+            "bisLicense": "Yêu cầu định kỳ"
+          }
+        }
+      },
+      "note": "Việc hiểu những khác biệt này là cần thiết trước khi bắt đầu quy trình cấp giấy phép BIS hoặc tính toán chi phí chứng nhận BIS. Cả hai đều đóng vai trò quan trọng trong việc tuân thủ và độ tin cậy của hoạt động sản xuất trong nước."
+    },
+    "whyNeed": {
+      "title": "Tại sao nhà sản xuất trong nước cần chứng nhận BIS",
+      "intro": "Trong môi trường sản xuất cạnh tranh của Ấn Độ, chứng nhận BIS không chỉ là yêu cầu quy định — mà là tài sản chiến lược. Dưới đây là lý do tại sao việc có chứng chỉ BIS là không thể thiếu đối với nhà sản xuất trong nước:",
+      "reasons": {
+        "legal": {
+          "title": "1. Tuân thủ Pháp luật",
+          "description": "Nhiều sản phẩm tại Ấn Độ không thể được bán hợp pháp mà không có chứng nhận BIS. Quy định của chính phủ yêu cầu nhà sản xuất phải có giấy phép BIS hợp lệ để gắn dấu ISI lên sản phẩm. Việc không tuân thủ có thể dẫn đến phạt tiền nặng, thu hồi sản phẩm và lệnh cấm."
+        },
+        "quality": {
+          "title": "2. Đảm bảo Chất lượng",
+          "description": "Giấy phép BIS xác nhận rằng nhà sản xuất tuân theo các quy trình chất lượng tiêu chuẩn. Chứng nhận BIS liên quan đến việc kiểm tra sản phẩm thường xuyên và kiểm toán nhà máy, đảm bảo chỉ có sản phẩm an toàn và đáng tin cậy mới đến tay người tiêu dùng. Đối với nhà sản xuất trong nước, điều này cải thiện kiểm soát chất lượng nội bộ và giảm thiểu rủi ro về khiếm khuyết hoặc trách nhiệm pháp lý."
+        },
+        "credibility": {
+          "title": "3. Uy tín Thương hiệu và Niềm tin Người tiêu dùng",
+          "description": "Việc hiển thị dấu ISI trên sản phẩm của bạn xây dựng niềm tin trong người tiêu dùng. Nó truyền đạt rằng sản phẩm đã được chứng nhận bởi BIS Ấn Độ — một dấu hiệu của tính chính trực và độ tin cậy. Giá trị nhận thức này chuyển thành doanh số bán hàng tăng và lòng trung thành thương hiệu tốt hơn."
+        },
+        "markets": {
+          "title": "4. Tiếp cận Thị trường Rộng hơn",
+          "description": "Với chứng chỉ BIS, nhà sản xuất có thể phân phối hàng hóa của họ trên toàn Ấn Độ mà không có hạn chế pháp lý. Các nhà bán lẻ, bán sỉ và nền tảng thương mại điện tử thường yêu cầu sản phẩm được chứng nhận BIS trước khi đưa vào danh mục. Đối với các đơn vị hướng đến xuất khẩu, chứng nhận BIS cũng có thể giúp đáp ứng kỳ vọng chất lượng quốc tế."
+        },
+        "advantage": {
+          "title": "5. Lợi thế Cạnh tranh",
+          "description": "Việc có giấy phép BIS phân biệt nhà sản xuất với đối thủ chưa đăng ký. Nó thể hiện cam kết về chất lượng và tuân thủ, giúp doanh nghiệp giành được hợp đồng chính phủ, tham gia đấu thầu và có được quyền truy cập ưu tiên trong các chương trình mua sắm chính phủ."
+        },
+        "savings": {
+          "title": "6. Tiết kiệm Dài hạn",
+          "description": "Mặc dù chi phí chứng nhận BIS có thể cao ban đầu, nhưng nó được bù đắp bằng việc giảm thiểu rủi ro pháp lý, thất bại sản phẩm và thiệt hại danh tiếng. Hơn nữa, hiệu quả sản xuất được cải thiện và khiếu nại khách hàng giảm có thể dẫn đến tiết kiệm chi phí hoạt động dài hạn."
+        },
+        "support": {
+          "title": "7. Hỗ trợ Sáng kiến Chính phủ",
+          "description": "Bằng cách tham gia đăng ký BIS, nhà sản xuất trong nước đóng góp vào sứ mệnh tiêu chuẩn hóa và cải thiện chất lượng của Ấn Độ. Việc liên kết với các chương trình quốc gia như 'Make in India' hoặc 'Aatmanirbhar Bharat' tăng cường thiện chí và hỗ trợ chính phủ."
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Câu Hỏi Thường Gặp",
+    "subtitle": "Không tìm thấy câu trả lời bạn đang tìm kiếm?",
+    "contactLink": "Liên hệ với chúng tôi!",
+    "questions": [
+      {
+        "question": "Chứng nhận BIS là gì và tại sao nó quan trọng?",
+        "answer": "Chứng nhận BIS được cấp bởi Cục Tiêu chuẩn Ấn Độ để đảm bảo sản phẩm tuân thủ các tiêu chuẩn an toàn và chất lượng của Ấn Độ. Nó quan trọng đối với tuân thủ pháp lý, niềm tin của người tiêu dùng và sự chấp nhận của thị trường."
+      },
+      {
+        "question": "Sự khác biệt giữa giấy phép BIS và nhãn hiệu ISI là gì?",
+        "answer": "Giấy phép BIS là tài liệu pháp lý cho phép nhà sản xuất sử dụng nhãn hiệu ISI. Nhãn hiệu ISI là nhãn có thể nhìn thấy trên sản phẩm chỉ ra chứng nhận BIS."
+      },
+      {
+        "question": "Mất bao lâu để được chứng nhận BIS?",
+        "answer": "Thông thường, 6–10 tuần tùy thuộc vào loại sản phẩm, yêu cầu kiểm tra và kết quả kiểm toán"
+      },
+      {
+        "question": "Thời hạn hiệu lực của giấy phép BIS là bao lâu?",
+        "answer": "Thường là 1 đến 2 năm, sau đó phải được gia hạn. Việc gia hạn nên được bắt đầu ít nhất 30 ngày trước khi hết hạn."
+      },
+      {
+        "question": "Chi phí chứng nhận BIS là bao nhiêu?",
+        "answer": "Chi phí khác nhau nhưng có thể dao động từ ₹25,000 đến ₹100,000+, bao gồm phí kiểm tra, kiểm toán và giấy phép."
+      },
+      {
+        "question": "Chứng nhận BIS có bắt buộc cho tất cả sản phẩm không?",
+        "answer": "Không. Nó chỉ bắt buộc đối với các sản phẩm được liệt kê trong lược đồ 1 của chứng nhận BIS."
+      },
+      {
+        "question": "Làm thế nào để tôi tìm đúng tiêu chuẩn IS cho sản phẩm của mình?",
+        "answer": "Truy cập trang web BIS hoặc tham khảo ý kiến của các phòng thí nghiệm kiểm tra và tư vấn viên được BIS công nhận để xác định tiêu chuẩn áp dụng."
+      },
+      {
+        "question": "Các nhà sản xuất nước ngoài có thể xin chứng nhận BIS không?",
+        "answer": "Có. Thông qua Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS), các thực thể nước ngoài có thể có được giấy phép BIS để sử dụng nhãn hiệu ISI."
+      },
+      {
+        "question": "Điều gì xảy ra nếu sản phẩm của tôi không vượt qua kiểm tra BIS?",
+        "answer": "Bạn sẽ cần khắc phục các vấn đề và nộp lại để kiểm tra. Các ứng dụng có thể bị tạm dừng cho đến khi tuân thủ thành công được chứng minh."
+      },
+      {
+        "question": "Chứng nhận BIS có cần thiết cho xuất khẩu không?",
+        "answer": "Mặc dù không phải lúc nào cũng bắt buộc đối với xuất khẩu, chứng nhận BIS tăng cường độ tin cậy và có thể thỏa mãn người mua quốc tế hoặc cơ quan quản lý."
+      }
+    ]
+  }
+}
