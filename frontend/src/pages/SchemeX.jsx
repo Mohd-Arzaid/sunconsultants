@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 import SchemeXImage from "../assets/servicesImages/SchemeXImage.jpg";
 // import BISCertificateImage from "../assets/bisfmpageimage/biscertificate.png";
@@ -815,31 +816,53 @@ export const SchemeX = () => {
 };
 
 export const SchemeXIndex = () => {
+  const { t } = useTranslation("SchemeX");
   const [isSticky, setIsSticky] = useState(false);
-  const [activeSection, setActiveSection] = useState("Overview");
+  const [activeSection, setActiveSection] = useState("overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const stickyRef = useRef(null);
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
   const SECTIONS = [
-    "Overview",
-    "Certification",
-    "Procedure",
-    "Pricing",
-    "Representative",
-    "Benefits",
-    "Conclusion",
+    {
+      key: "overview",
+      label: t("navigation.overview"),
+    },
+    {
+      key: "certification",
+      label: t("navigation.certification"),
+    },
+    {
+      key: "procedure",
+      label: t("navigation.procedure"),
+    },
+    {
+      key: "pricing",
+      label: t("navigation.pricing"),
+    },
+    {
+      key: "representative",
+      label: t("navigation.representative"),
+    },
+    {
+      key: "benefits",
+      label: t("navigation.benefits"),
+    },
+    {
+      key: "conclusion",
+      label: t("navigation.conclusion"),
+    },
   ];
 
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase());
+    const element = document.getElementById(item.key);
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
-      setActiveSection(item);
+      setActiveSection(item.key);
       setIsMobileMenuOpen(false);
     }
   };
@@ -887,11 +910,11 @@ export const SchemeXIndex = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = SECTIONS.map((section) => {
-        const element = document.getElementById(section.toLowerCase());
+        const element = document.getElementById(section.key);
         if (element) {
           const rect = element.getBoundingClientRect();
           return {
-            id: section,
+            id: section.key,
             top: rect.top,
             bottom: rect.bottom,
             element,
@@ -931,6 +954,11 @@ export const SchemeXIndex = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Find current section label for mobile display
+  const currentSectionLabel =
+    SECTIONS.find((section) => section.key === activeSection)?.label ||
+    t("navigation.overview");
+
   return (
     <div
       ref={stickyRef}
@@ -941,7 +969,7 @@ export const SchemeXIndex = () => {
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
-          {activeSection}
+          {currentSectionLabel}
         </div>
         <button
           ref={toggleButtonRef}
@@ -984,16 +1012,16 @@ export const SchemeXIndex = () => {
           <div className="flex flex-col py-2">
             {SECTIONS.map((item) => (
               <div
-                key={item}
+                key={item.key}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection
+                  item.key === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
                 }`}
               >
                 <div className="font-geist tracking-wider uppercase">
-                  {item}
+                  {item.label}
                 </div>
               </div>
             ))}
@@ -1005,22 +1033,22 @@ export const SchemeXIndex = () => {
       <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto overflow-x-auto">
         {SECTIONS.map((item) => (
           <div
-            key={item}
+            key={item.key}
             onClick={() => handleItemClick(item)}
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
+                item.key === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
               }`}
             >
-              {item}
+              {item.label}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection
+                item.key === activeSection
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
               }`}
@@ -1056,114 +1084,63 @@ const SchemeXContent = () => {
 };
 
 export const SchemeXContentLeft = () => {
+  const { t } = useTranslation("SchemeX");
+
   return (
     <article className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <section
           className="flex flex-col gap-2 md:gap-4 mb-6"
-          aria-label="BIS Certificate for Foreign Manufacturers"
+          aria-label={t("overview.ariaLabel")}
         >
           <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-            A guide on BIS certification under Scheme X for product like
-            machines, pumps, compressors, switch gears, cranes, transformers,
-            all type of motors etc.
+            {t("overview.title")}
           </h1>
 
           <h2 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] ">
-            Scheme X: India's Strategic Leap in Global Compliance
+            {t("overview.subtitle")}
           </h2>
 
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            India is raising the bar for product safety and quality through
-            Scheme X, a major initiative under the BIS Conformity Assessment
-            Regulations, 2018, refined by the 2022 Amendment. Far from being a
-            routine compliance measure, Scheme X is a forward-looking conformity
-            assessment framework that aligns domestic and imported products with
-            international safety and technical standards. The focus is
-            especially sharp on machinery and electrical equipment, including
-            rotary electrical machines, pumps, compressors, transformers,
-            switchgear, and cranes. For such products, obtaining a BIS
-            certificate is now mandatory, signifying compliance with some of the
-            most stringent standards globally.
+            {t("overview.intro")}
           </p>
 
           <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-            Exemptions under scheme X of BIS certification
+            {t("overview.exemptionsTitle")}
           </h2>
 
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            Scheme X also casts a specialized lens on construction machinery,
-            especially those falling under the CMVR Rules, 1989. In partnership
-            with the Ministry of Road Transport and Highways (MoRTH), a
-            tailor-made conformity protocol has been introduced for these
-            heavy-duty machines. This ensures that even the most robust
-            equipment complies with exceptional safety and operational
-            standards, further strengthening India's regulatory framework. By
-            implementing Scheme X in sectors that impact public safety and
-            infrastructure, the Indian BIS is reinforcing its mission to elevate
-            domestic and imported product reliability.
+            {t("overview.exemptionsContent")}
           </p>
 
           <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-            Understanding the Omnibus Technical Regulation or Scheme X
-            Certification Under Indian BIS.
+            {t("overview.regulationTitle")}
           </h2>
 
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">   
-            The Omnibus Technical Regulation, officially titled "Machinery and
-            Electrical Equipment Safety (Omnibus Technical Regulation) Order,
-            2024", was notified by the Ministry of Heavy Industries on August
-            28, 2024. Set to be enforced from August 28, 2025, this regulation
-            mandates compliance with Scheme X certification under the Indian BIS
-            framework for a wide range of machinery and electrical equipment
-            manufactured or imported in India. The date of implementation was
-            further extended to 1st September 2026.
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            {t("overview.regulationParagraph1")}
           </p>
 
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            The Omnibus Technical Regulation is a transformative step toward
-            enhancing industrial safety and standardization. It applies to a
-            wide array of machinery and electrical equipment, including
-            assemblies, sub-assemblies, and components. From pumps and
-            compressors to centrifuges, transformers, and switchgear, all
-            covered products must obtain BIS certification under Scheme X to be
-            legally sold in India from 1st September 2026.
+            {t("overview.regulationParagraph2")}
           </p>
 
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            However, there are a few exceptions. Products already governed under
-            other orders issued via Section 16 of the Bureau of Indian Standards
-            Act, 2016 are excluded. Additionally, goods manufactured
-            specifically for export and construction equipment governed by the
-            CMVR Rules, 1989 under MoRTH (Ministry of Road Transport and
-            Highways), are also exempt.
+            {t("overview.regulationParagraph3")}
           </p>
 
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            Under Scheme X certification, manufacturers can obtain either a BIS
-            licence or a Certificate of Conformity (CoC) from the Bureau of
-            Indian Standards. This allows the usage of the BIS standard mark,
-            which is a strong symbol of trust and quality assurance. The BIS
-            licence under this scheme confirms that products meet all applicable
-            technical and safety standards.
+            {t("overview.regulationParagraph4")}
           </p>
 
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            The focus of the Indian BIS through this regulation is to ensure
-            that only safe, compliant, and high-performance machinery reaches
-            end users. By mandating BIS certification, the government ensures a
-            uniform benchmark for product safety.
+            {t("overview.regulationParagraph5")}
           </p>
 
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose"> 
-            The Omnibus Technical Regulation is not just a policy reform—it's a
-            catalyst for elevating the Indian manufacturing landscape. It
-            empowers local manufacturers to meet global standards while
-            strengthening the domestic compliance ecosystem. With Scheme X
-            certification, India is moving towards a future where product
-            quality, safety, and international compatibility are seamlessly
-            aligned.
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            {t("overview.regulationParagraph6")}
           </p>
+          <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
           {/* <div className="bg-[#F9F7F2] border-l-4 border-[#1A8781] p-4 mt-2 md:mt-4 rounded-md shadow-sm">
               <h4 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] mb-1">Is obtaining an ISI mark for Indian importers mandatory?</h4>
@@ -1175,7 +1152,7 @@ export const SchemeXContentLeft = () => {
 
         <OverviewSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        <Certification/>
+        <Certification />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <Procedure />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
@@ -1187,10 +1164,6 @@ export const SchemeXContentLeft = () => {
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <Conclusion />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-   
-        
-
-       
 
         <AboutAuthor />
       </div>
@@ -1199,77 +1172,55 @@ export const SchemeXContentLeft = () => {
 };
 
 const OverviewSection = () => {
+  const { t } = useTranslation("SchemeX");
+
   return (
     <section
       id="overview"
       className="flex flex-col scroll-mt-20"
-      aria-label="Authorized Indian Representative Nomination"
+      aria-label={t("overviewSection.ariaLabel")}
     >
       <header className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Overview
+          {t("overviewSection.headerTitle")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </header>
 
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-        Difference Between Scheme X and ISI Mark: Understanding Indian BIS
-        Certification Systems
+        {t("overviewSection.mainTitle")}
       </h2>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Overview
+        {t("overviewSection.overviewTitle")}
       </h3>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        When it comes to product safety and quality assurance in India, two key
-        terms often surface: Scheme X and the ISI mark. Both fall under the
-        umbrella of the Indian BIS (Bureau of Indian Standards), yet they serve
-        different roles in the BIS certification ecosystem. Understanding the
-        distinction is essential for manufacturers, importers, and businesses
-        seeking a BIS certificate or BIS licence.
+        {t("overviewSection.overviewContent")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        About ISI mark
+        {t("overviewSection.isiMarkTitle")}
       </h3>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The ISI mark is a part of the BIS certification process for products
-        conforming to specific Indian Standards. Products bearing the ISI mark
-        signify consistent compliance with safety, performance, and quality
-        benchmarks as specified in the relevant Indian standard. The ISI mark is
-        mandatory for various everyday consumer goods such as electrical
-        appliances, pressure cookers, helmets, and more.
+        {t("overviewSection.isiMarkContent")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        About Scheme X Certification
+        {t("overviewSection.schemeXTitle")}
       </h3>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        On the other hand, Scheme X is a more recent and advanced conformity
-        assessment framework introduced under the BIS Conformity Assessment
-        Regulations, 2018. Scheme X is designed specifically for machinery,
-        industrial products, and complex electrical equipment that require
-        rigorous technical scrutiny. Products certified under Scheme X must
-        obtain a BIS certificate or BIS license, confirming conformity with
-        high-level safety and technical specifications. This scheme offers both
-        the BIS licence and the Certificate of Conformity (CoC), making it ideal
-        for imported products as well.
+        {t("overviewSection.schemeXContent")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Conclusion
+        {t("overviewSection.conclusionTitle")}
       </h3>
 
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">   
-        While the ISI mark focuses on simple, standardized consumer goods,
-        Scheme X is tailored for specialized, often industrial-grade items where
-        detailed testing, factory inspections, and batch verification are
-        necessary. Both systems are managed by the Indian BIS, but the
-        procedures, product categories, and depth of assessment differ
-        significantly.
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overviewSection.conclusionContent")}
       </p>
 
       {/* table  */}
@@ -1279,70 +1230,70 @@ const OverviewSection = () => {
           <thead>
             <tr className="bg-gray-50">
               <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">
-                Feature
+                {t("overviewSection.table.feature")}
               </th>
               <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">
-                ISI Mark
+                {t("overviewSection.table.isiMark")}
               </th>
               <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">
-                Scheme X
+                {t("overviewSection.table.schemeX")}
               </th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
               <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                Managed by
+                {t("overviewSection.table.managedBy")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                Indian BIS
+                {t("overviewSection.table.indianBis")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                Indian BIS
+                {t("overviewSection.table.indianBis")}
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                Certification Type
+                {t("overviewSection.table.certificationType")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                BIS licence
+                {t("overviewSection.table.bisLicence")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                BIS certificate / BIS licence
+                {t("overviewSection.table.bisCertificateLicence")}
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                Target Products
+                {t("overviewSection.table.targetProducts")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                Consumer goods
+                {t("overviewSection.table.consumerGoods")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                Machinery & electrical equipment
+                {t("overviewSection.table.machineryElectrical")}
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                Mark Used
+                {t("overviewSection.table.markUsed")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                ISI mark
+                {t("overviewSection.table.isiMarkValue")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                BIS standard mark (under Scheme X)
+                {t("overviewSection.table.bisStandardMark")}
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                Compliance Level
+                {t("overviewSection.table.complianceLevel")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                Indian standard compliance
+                {t("overviewSection.table.indianStandardCompliance")}
               </td>
               <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                High-end technical and safety compliance
+                {t("overviewSection.table.highEndCompliance")}
               </td>
             </tr>
           </tbody>
@@ -1351,14 +1302,11 @@ const OverviewSection = () => {
 
       <img
         src={SchemeXImage}
-        alt="Scheme X"
+        alt={t("overviewSection.imageAlt")}
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      {/* Scheme X Certification
-  Product
-list 
- */}
+      {/* Scheme X Certification Product list */}
 
       <div className="mt-[16px] md:mt-[24px]">
         {/* Download Button */}
@@ -1367,94 +1315,42 @@ list
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                S.No
+                {t("overviewSection.tableSection.serialNumber")}
               </TableHead>
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                Description of Machinery and Electrical Equipment
+                {t("overviewSection.tableSection.description")}
               </TableHead>
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                HS Code
+                {t("overviewSection.tableSection.hsCode")}
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody className="bg-white divide-y divide-gray-200">
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                1
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of Pumps for handling liquids, liquid elevators and
-                (or)their assemblies /sub-assemblies /components
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                841340, 841350, 841360, 841370, 841381, 841382, 841391 and
-                841392
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                2
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of compressors and(or)their assemblies /sub-assemblies
-                /components.
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040
-                and 84149090
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                3
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of machinery for treatment of material by a process
-                involving a change of temperature and(or)their assemblies
-                /sub-assemblies /components
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                841932, 841939,841940, 841950, 841960,841981, 841989 and
-                84199090
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                4
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of centrifuges, filtering or purifying machinery for
-                liquid and gas and(or)their assemblies /sub-assemblies
-                /components
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                842111, 842112, 842119, 84212110, 84212190, 842122, 842129,
-                842131, 842139, 842191 and 842199
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                5
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of machinery for filling, closing, sealing, labelling
-                bottles, packing or wrapping and(or)their
-                assemblies/sub-assemblies/components
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                842220, 842230, 842240 and 842290
-              </TableCell>
-            </TableRow>
+            {t("overviewSection.tableSection.tableData", {
+              returnObjects: true,
+            }).map((row, index) => (
+              <TableRow key={index} className="hover:bg-gray-50">
+                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                  {row.serialNumber}
+                </TableCell>
+                <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                  {row.description}
+                </TableCell>
+                <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                  {row.hsCode}
+                </TableCell>
+              </TableRow>
+            ))}
           </TableBody>
         </Table>
 
         {/* Heading and Description */}
         <div className="mb-6">
           <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
-            Products Covered under Scheme X Certification
+            {t("overviewSection.tableSection.title")}
           </h3>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-          You can download the Scheme X product file from here.
+            {t("overviewSection.tableSection.description")}
           </p>
         </div>
 
@@ -1477,7 +1373,7 @@ list
                 d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
               />
             </svg>
-            Download PDF
+            {t("overviewSection.tableSection.downloadButton")}
           </button>
         </div>
       </div>
@@ -1486,33 +1382,32 @@ list
 };
 
 const Certification = () => {
+  const { t } = useTranslation("SchemeX");
+
   return (
     <section id="certification" className="flex flex-col scroll-mt-20">
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Certification
+          {t("certification.headerTitle")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-      Documents Required for BIS Scheme X Certification under the Omnibus Technical Regulation
+        {t("certification.title")}
       </h2>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      Manufacturers aiming to certify their machinery and electrical equipment under the Omnibus Technical Regulation must comply with Scheme X of the Indian BIS. This certification scheme ensures that industrial products meet stringent safety and performance benchmarks aligned with global and Indian Standards. To obtain a BIS certificate under Scheme X, manufacturers must submit specific documentation to the Bureau of Indian Standards (BIS) through the official Manak Online portal for Indian manufacturers and in hard copy at BIS HQ for foreign manufacturers.
+        {t("certification.intro")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-     Key Documents Required for BIS Certification Under Scheme X
+        {t("certification.keyDocumentsTitle")}
       </h3>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      To streamline the BIS certification process, manufacturers are required to gather and submit the following documents during the registration phase:
+        {t("certification.keyDocumentsContent")}
       </p>
-
-
-      
 
       {/* table for documents */}
       <div className="mt-[16px] md:mt-[24px]">
@@ -1520,13 +1415,13 @@ const Certification = () => {
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                Sl. No.
+                {t("certification.documentsTable.serialNumber")}
               </TableHead>
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                Document Required
+                {t("certification.documentsTable.documentRequired")}
               </TableHead>
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                Details
+                {t("certification.documentsTable.details")}
               </TableHead>
             </TableRow>
           </TableHeader>
@@ -1536,10 +1431,10 @@ const Certification = () => {
                 1
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Name and Address (Factory & Office)
+                {t("certification.documentsTable.row1.document")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Full legal name and physical addresses of the manufacturing site and office
+                {t("certification.documentsTable.row1.detail")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1547,10 +1442,10 @@ const Certification = () => {
                 2
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                PAN and GST Information
+                {t("certification.documentsTable.row2.document")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                <span className="font-semibold">Permanent Account Number (PAN)</span> and <span className="font-semibold">GST registration</span> details
+                {t("certification.documentsTable.row2.detail")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1558,10 +1453,10 @@ const Certification = () => {
                 3
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Contact Details
+                {t("certification.documentsTable.row3.document")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Email address, mobile number, and landline for official communications
+                {t("certification.documentsTable.row3.detail")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1569,10 +1464,10 @@ const Certification = () => {
                 4
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Management Details
+                {t("certification.documentsTable.row4.document")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Names, roles, and IDs of key executives and <span className="font-semibold">authorized signatory</span>
+                {t("certification.documentsTable.row4.detail")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1580,10 +1475,10 @@ const Certification = () => {
                 5
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Product Description
+                {t("certification.documentsTable.row5.document")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Details of machinery and equipment covered under the <span className="font-semibold">First Schedule</span> of the <span className="font-semibold">Omnibus Technical Regulation</span>
+                {t("certification.documentsTable.row5.detail")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1591,10 +1486,10 @@ const Certification = () => {
                 6
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Product Classification
+                {t("certification.documentsTable.row6.document")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Specific type, model, and variety for which <span className="font-semibold">BIS license</span> is being requested
+                {t("certification.documentsTable.row6.detail")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1602,254 +1497,182 @@ const Certification = () => {
                 7
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Technical file
+                {t("certification.documentsTable.row7.document")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All the technical details related to product and details about the manufacturing unit.
+                {t("certification.documentsTable.row7.detail")}
               </TableCell>
             </TableRow>
           </TableBody>
         </Table>
       </div>
 
-
-     
       <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Registration on Manak Online Portal
-      </h2>
-      
-
-      
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      All manufacturers must register via the Manak Online portal, the official digital interface of the Indian BIS. This portal has a dedicated section for OTR-based products covered under Scheme X. Once registered, the manufacturer can initiate the certification process to obtain the BIS licence or BIS certificate.
-      </p>
-
-
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Why BIS Certification and Scheme X Matter
+        {t("certification.registrationTitle")}
       </h2>
 
-
-
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      Under the Omnibus Technical Regulation, products like transformers, compressors, control gear, and pumps cannot be manufactured, sold, or imported in India without the proper BIS certification. Scheme X ensures that these products meet stringent technical and safety requirements, helping manufacturers establish credibility, build consumer trust, and access broader markets. Products certified under Scheme X are also authorized to carry the BIS standard mark, which should not be confused with the ISI mark, traditionally used for consumer goods.
-
+        {t("certification.registrationContent")}
       </p>
 
+      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("certification.whySchemeXTitle")}
+      </h2>
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-     
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("certification.whySchemeXContent")}
+      </p>
     </section>
   );
 };
 
 const Procedure = () => {
+  const { t } = useTranslation("SchemeX");
+
   return (
     <section id="procedure" className="flex flex-col scroll-mt-20">
       {/* Process */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-        Procedure
+          {t("procedure.headerTitle")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-      How to Get a BIS Certificate Under Scheme X: Step-by-Step Guide
+        {t("procedure.title")}
       </h2>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      For manufacturers looking to comply with the Omnibus Technical Regulation, obtaining a BIS certificate under Scheme X is essential. The Indian BIS has outlined a structured process to help domestic and international manufacturers gain access to the Indian market through legitimate BIS certification.
+        {t("procedure.intro")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Below is a clear step-by-step guide to completing the BIS registration and certification process under Scheme X:
+        {t("procedure.stepByStepTitle")}
       </h3>
-
 
       <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Check Product Applicability
+        {t("procedure.checkProductTitle")}
       </h3>
 
-      
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      Before initiating the process, manufacturers must first determine if their product falls under the scope of the Omnibus Technical Regulation and requires Scheme X certification. Not all products need a BIS license, so verifying eligibility based on Indian standards is the first step.
+        {t("procedure.checkProductContent")}
       </p>
 
-      
       <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-     Prepare Documentation
+        {t("procedure.prepareDocumentsTitle")}
       </h3>
 
-
       <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Key documents required include:
+        {t("procedure.keyDocumentsTitle")}
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "Company Registration Certificate",
-      "Factory Layout & Manufacturing Process Flow",
-      "Product Specifications and Design",
-      "Valid Test Reports from certified labs",
-      "Technical file"
-    ]}
-  />
-</div>
+        <PointsListTwo
+          points={t("procedure.documentsList", { returnObjects: true })}
+        />
+      </div>
 
-<p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-These are essential for initiating the BIS registration process and for assessment under Scheme X by the Indian BIS.
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("procedure.documentsImportance")}
       </p>
 
-
       <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-    Develop Technical File
+        {t("procedure.technicalFileTitle")}
       </h3>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      A critical component of BIS certification is the Technical File, which includes:
+        {t("procedure.technicalFileContent")}
       </p>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "Product design and features",
-      "Manufacturing process details",
-      "Quality checks and control documents",
-      "Raw materials, testing protocols, and sub-contracting details",
-      "Compliance documents to support conformity to relevant Indian Standards"
-    ]}
-  />
-</div>
-
-<p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-This file helps Indian BIS evaluate whether the product qualifies for a BIS licence under Scheme X.
-      </p>
-
-
-      
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Submit Application Online
-      </h3>
-
-   
-
-
+        <PointsListTwo
+          points={t("procedure.technicalFileItems", { returnObjects: true })}
+        />
+      </div>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      The application is submitted through the BIS registration portal (Manak Online). Along with uploading documents, applicants must pay the applicable fee. This is the formal initiation of the BIS certification process.
-
+        {t("procedure.technicalFileImportance")}
       </p>
-      
-
-
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      The process is completely offline for foreign manufacturers.
-      </p>
-  
 
       <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Factory Inspection
+        {t("procedure.submitApplicationTitle")}
       </h3>
 
-   
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      Once the application is accepted, Indian BIS officials will visit the manufacturing site. The inspection typically lasts:
+        {t("procedure.submitApplicationContent")}
       </p>
-     
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("procedure.foreignProcessNote")}
+      </p>
+
+      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("procedure.factoryInspectionTitle")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("procedure.factoryInspectionContent")}
+      </p>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "2 days for domestic manufacturers",
-      "3 days for foreign manufacturers"
-    ]}
-  />
-</div>
+        <PointsListTwo
+          points={t("procedure.inspectionDuration", { returnObjects: true })}
+        />
+      </div>
 
-<p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-Officials verify compliance with the Omnibus Technical Regulation, examine the technical file, check production quality, and witness in-house testing.
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("procedure.inspectionDetails")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Sample Testing
+        {t("procedure.sampleTestingTitle")}
       </h3>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      The product sample is tested either on-site or sent to a BIS-accredited lab. The tests confirm whether the product adheres to the required Indian standard.
+        {t("procedure.sampleTestingContent")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Issuance of BIS Certificate
+        {t("procedure.certificateIssuanceTitle")}
       </h3>
 
-
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      If the product passes testing and inspection, the Indian BIS grants a BIS license, authorizing the manufacturer to use the BIS standard mark on their products. While different from the ISI mark used on consumer goods, this mark confirms full compliance under Scheme X.
+        {t("procedure.certificateIssuanceContent")}
       </p>
-
-
-
-
-
-
-
-
-
-     
-
-    
-
-    
-     
     </section>
   );
 };
 
 const Pricing = () => {
+  const { t } = useTranslation("SchemeX");
+
   return (
     <section id="pricing" className="flex flex-col scroll-mt-20">
       {/* Validity */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Pricing
+          {t("pricing.headerTitle")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       {/* Title */}
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-     BIS Scheme X Certification Fee Structure: A Complete Cost Breakdown
+        {t("pricing.title")}
       </h2>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      Manufacturers planning to comply with the Omnibus Technical Regulation must understand the total cost of Scheme X certification. Issued under Schedule II, Paragraph 5 of the BIS Conformity Assessment Regulations, 2018, the Indian BIS has clearly defined the cost of BIS certificate and associated services. Whether you’re applying for a BIS licence or a Certificate of Conformity (CoC), knowing the applicable charges is crucial for budgeting and regulatory planning.
+        {t("pricing.intro")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Key Charges for BIS Certification Under Scheme X
-      </h3>  
+        {t("pricing.keyChargesTitle")}
+      </h3>
 
-        <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Below is a simplified overview of the official fee structure for obtaining a BIS certificate or BIS licence under Scheme X:
-      </p>    
-
-
-    
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("pricing.keyChargesContent")}
+      </p>
 
       {/* table for fee structure  */}
       <div className="mt-[16px] md:mt-[24px]">
@@ -1857,343 +1680,351 @@ const Pricing = () => {
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                Fee Type
+                {t("pricing.feeTable.feeType")}
               </TableHead>
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                Cost (INR)
+                {t("pricing.feeTable.cost")}
               </TableHead>
               <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                Description
+                {t("pricing.feeTable.description")}
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody className="bg-white divide-y divide-gray-200">
             <TableRow className="hover:bg-gray-50">
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Application Fee – BIS License
+                {t("pricing.feeTable.applicationFeeLicense.type")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                ₹2,000
+                {t("pricing.feeTable.applicationFeeLicense.cost")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Payable when applying for a new <span className="font-semibold">BIS licence</span>
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Application Fee – Certificate of Conformity (CoC)
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                ₹2,000
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Applicable for CoC under <span className="font-semibold">Scheme X</span>
+                {t("pricing.feeTable.applicationFeeLicense.description")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Certification Fee – BIS License
+                {t("pricing.feeTable.applicationFeeCoc.type")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                ₹25,000/year
+                {t("pricing.feeTable.applicationFeeCoc.cost")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Annual fee for maintaining a valid <span className="font-semibold">BIS licence</span>
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Certification Fee – CoC
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                ₹10,000
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Fixed fee for issuing a Certificate of Conformity
+                {t("pricing.feeTable.applicationFeeCoc.description")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Technical File Review Fee
+                {t("pricing.feeTable.certificationFeeLicense.type")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                ₹20,000 per file
+                {t("pricing.feeTable.certificationFeeLicense.cost")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Charged for reviewing files or when expanding/modifying product scope
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Inspection Fee (including surveillance)
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                ₹20,000 per man-day
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Covers factory visits for evaluation and monitoring under <span className="font-semibold">Scheme X</span>
+                {t("pricing.feeTable.certificationFeeLicense.description")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Sample Procurement Charges
+                {t("pricing.feeTable.certificationFeeCoc.type")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Based on actuals
+                {t("pricing.feeTable.certificationFeeCoc.cost")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Cost incurred while procuring product samples
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Testing Charges
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Based on actuals
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Laboratory charges for product testing under <span className="font-semibold">Indian Standards</span>
+                {t("pricing.feeTable.certificationFeeCoc.description")}
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Bank Guarantee
+                {t("pricing.feeTable.technicalFileReview.type")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                USD 10,000
+                {t("pricing.feeTable.technicalFileReview.cost")}
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Only for foreign applicants.
+                {t("pricing.feeTable.technicalFileReview.description")}
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.inspectionFee.type")}
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.inspectionFee.cost")}
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.inspectionFee.description")}
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.sampleProcurement.type")}
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.sampleProcurement.cost")}
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.sampleProcurement.description")}
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.testingCharges.type")}
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.testingCharges.cost")}
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.testingCharges.description")}
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50">
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.bankGuarantee.type")}
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.bankGuarantee.cost")}
+              </TableCell>
+              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                {t("pricing.feeTable.bankGuarantee.description")}
               </TableCell>
             </TableRow>
           </TableBody>
         </Table>
       </div>
-
-
-
-
-
-
-      
-
-
     </section>
   );
 };
 
 const Representative = () => {
+  const { t } = useTranslation("SchemeX");
+
   return (
     <section id="representative" className="flex flex-col scroll-mt-20">
       {/* Surveillance */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Representative
+          {t("representative.headerTitle")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-      Role of AIR (Authorized Indian Representative) in BIS Scheme X Certification
+        {t("representative.title")}
       </h2>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      For foreign manufacturers seeking BIS certification under Scheme X, the appointment of an Authorized Indian Representative (AIR) is a mandatory requirement set by the Indian BIS. The AIR serves as the local, legally responsible liaison between the foreign manufacturer and the Bureau of Indian Standards throughout the certification process.
+        {t("representative.intro")}
       </p>
 
       <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      Key Responsibilities of the AIR:
-      </h3> 
+        {t("representative.keyResponsibilitiesTitle")}
+      </h3>
 
       <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-      BIS Registration & Communication
-      </h4> 
-
-     
+        {t("representative.bisRegistrationTitle")}
+      </h4>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "The AIR is responsible for initiating and managing the BIS registration process on behalf of the foreign manufacturer.",
-      "All communication with the Indian BIS, including documentation, updates, and audits under Scheme X, is handled by the AIR."
-    ]}
-  />
-</div>
+        <PointsListTwo
+          points={t("representative.bisRegistrationPoints", {
+            returnObjects: true,
+          })}
+        />
+      </div>
 
-
-<h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-Submission of Documents
-      </h4> 
+      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("representative.submissionTitle")}
+      </h4>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "The AIR ensures timely and accurate submission of technical files, product details, compliance reports, and supporting documents necessary to obtain a BIS certificate or BIS licence under the Omnibus Technical Regulation."
-    ]}
-  />
-</div>
+        <PointsListTwo
+          points={t("representative.submissionPoints", { returnObjects: true })}
+        />
+      </div>
 
-
-<h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-Coordinating Factory Inspections
-      </h4> 
+      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("representative.coordinatingTitle")}
+      </h4>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "During factory inspections by Indian BIS officials, the AIR plays a coordinating role—scheduling visits, assisting auditors, and ensuring smooth operations during the audit."
-    ]}
-  />
-</div>
+        <PointsListTwo
+          points={t("representative.coordinatingPoints", {
+            returnObjects: true,
+          })}
+        />
+      </div>
 
-<h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-Managing Fees and Legal Accountability
-      </h4> 
-
-      
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "The AIR is authorized to pay applicable BIS certification and inspection fees. They are also legally accountable for any non-compliance issues arising from the certified products in India."
-    ]}
-  />
-</div>
-
-
-<h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-Post-Certification Compliance
-      </h4> 
+      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("representative.managingFeesTitle")}
+      </h4>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "Once the BIS licence or BIS certificate is granted, the AIR ensures ongoing compliance with relevant Indian Standards, including label usage and product traceability. They also handle renewals and scope expansion requests."
-    ]}
-  />
-</div>
+        <PointsListTwo
+          points={t("representative.managingFeesPoints", {
+            returnObjects: true,
+          })}
+        />
+      </div>
 
-<h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-Why the AIR is Critical for Scheme X
-      </h3> 
+      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("representative.postCertificationTitle")}
+      </h4>
 
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={t("representative.postCertificationPoints", {
+            returnObjects: true,
+          })}
+        />
+      </div>
+
+      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("representative.whyAirCriticalTitle")}
+      </h3>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      Under Scheme X, foreign manufacturers cannot directly engage with Indian BIS unless they have a registered AIR. Without an AIR, certification under the Omnibus Technical Regulation is not possible. The AIR bridges the regulatory gap, ensuring that all foreign products meet India's stringent safety and technical requirements.
+        {t("representative.whyAirCriticalContent")}
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-      It’s important to note that although the ISI mark is not applicable to Scheme X products, the AIR must still ensure the correct use of the BIS standard mark relevant to Scheme X certifications.
+        {t("representative.importantNote")}
       </p>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-     
     </section>
   );
 };
 
-const Benefits  = () => {
-    return (
-      <section id="benefits" className="flex flex-col scroll-mt-20">
-        {/* Surveillance */}
-        <div className="flex w-full items-center gap-3">
-          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-            Benefits
-          </span>
-          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-        </div>
-  
-        <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        Benefits of Complying with Scheme X Certification
-        </h2>
+const Benefits = () => {
+  const { t } = useTranslation("SchemeX");
 
-        <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-  <PointsListTwo
-    points={[
-      "1. Legal Market Entry and Compliance",
-      "2. Enhanced Brand Credibility and Trust",
-      "3. Improved Product Quality and Safety",
-      "4. Competitive Advantage",
-      "5. Increased Export Opportunities",
-    
-    ]}
-  />
-</div>
+  return (
+    <section id="benefits" className="flex flex-col scroll-mt-20">
+      {/* Header */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          {t("benefits.headerTitle")}
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
 
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        {t("benefits.title")}
+      </h2>
 
-  
-    
-  
-       
-  
-  
-  
-       
-      </section>
-    );
-  };
-
-
-  const  Conclusion = () => {
-    return (
-      <section id="conclusion" className="flex flex-col scroll-mt-20">
-        {/* Surveillance */}
-        <div className="flex w-full items-center gap-3">
-          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-            Conclusion
-          </span>
-          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-        </div>
-  
-        <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        Empowering Compliance Through Scheme X Certification
-        </h2>
-
-      
-
-        <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        In conclusion, Scheme X stands as a critical part of India’s regulatory framework, ensuring that machinery and electrical equipment meet high-level safety, quality, and technical standards. Under the guidance of the Indian BIS, this certification system—introduced through the Omnibus Technical Regulation—brings India in alignment with global conformity practices.
-      </p>
-      
-        <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        By obtaining a BIS certificate under Scheme X, manufacturers demonstrate their commitment to product safety, compliance, and performance. Whether you're a domestic producer or an international supplier, having a valid BIS licence is not just a regulatory necessity—it’s a market enabler. The use of the BIS standard mark, distinct from the ISI mark, allows you to validate your products against the applicable Indian Standards and enhance consumer trust.
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("benefits.intro")}
       </p>
 
-        <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        While the cost of BIS certificate and the certification process under Scheme X may seem detailed, the long-term benefits—legal compliance, enhanced credibility, improved product traceability, and competitive advantage—far outweigh the initial efforts. With structured steps including BIS registration, technical file submission, factory inspection, and product testing, the process is designed to be rigorous yet transparent.
+      {/* Manufacturing Benefits */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
+        {t("benefits.manufacturingBenefitsTitle")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("benefits.manufacturingBenefitsContent")}
       </p>
 
-        <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Ultimately, BIS certification under Scheme X is more than just a stamp of approval—it is a gateway to quality assurance, global trade readiness, and industrial excellence under the evolving leadership of the Indian BIS.
-      </p>
-  
-    
-  
-       
-  
-  
-  
-       
-      </section>
-    );
-  };
+      {/* Quality Benefits */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
+        {t("benefits.qualityBenefitsTitle")}
+      </h3>
 
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("benefits.qualityBenefitsContent")}
+      </p>
+
+      {/* Competitive Benefits */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
+        {t("benefits.competitiveBenefitsTitle")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("benefits.competitiveBenefitsContent")}
+      </p>
+
+      {/* Compliance Benefits */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
+        {t("benefits.complianceBenefitsTitle")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("benefits.complianceBenefitsContent")}
+      </p>
+
+      {/* Sustainability Benefits */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
+        {t("benefits.sustainabilityBenefitsTitle")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("benefits.sustainabilityBenefitsContent")}
+      </p>
+    </section>
+  );
+};
+
+const Conclusion = () => {
+  const { t } = useTranslation("SchemeX");
+
+  return (
+    <section id="conclusion" className="flex flex-col scroll-mt-20">
+      {/* Surveillance */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          {t("conclusion.headerTitle")}
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        {t("conclusion.title")}
+      </h2>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.paragraph1")}
+      </p>
+
+      {/* Exemptions Section */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
+        {t("conclusion.exemptionsTitle")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.exemptionsContent")}
+      </p>
+
+      {/* Regulation Section */}
+      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
+        {t("conclusion.regulationTitle")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.regulationParagraph1")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.regulationParagraph2")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.regulationParagraph3")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.regulationParagraph4")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.regulationParagraph5")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.regulationParagraph6")}
+      </p>
+    </section>
+  );
+};
 
 const PointsListTwo = ({ points, heading }) => {
   return (
@@ -2223,6 +2054,8 @@ PointsListTwo.propTypes = {
 };
 
 const SchemeXHero = () => {
+  const { t } = useTranslation("SchemeX");
+
   return (
     <section
       className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
@@ -2242,21 +2075,19 @@ const SchemeXHero = () => {
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
-              Certified Expertise
+              {t("hero.badge")}
             </span>
           </div>
 
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              Scheme X
+              {t("hero.title")}
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Under Scheme X, foreign manufacturers must obtain approval to export
-            to India. The scheme covers over 600 mandatory and 20,000+ voluntary
-            products.
+            {t("hero.description")}
           </p>
 
           <nav className="flex items-center -mt-2">
@@ -2276,7 +2107,7 @@ const SchemeXHero = () => {
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
-                View Services
+                {t("hero.viewServices")}
               </span>
             </div>
           </nav>
@@ -2290,6 +2121,7 @@ const SchemeXHero = () => {
 };
 
 const SchemeXTables = () => {
+  const { t } = useTranslation("SchemeX");
   const [searchQuery, setSearchQuery] = useState("");
   const table1Ref = useRef(null);
   const table2Ref = useRef(null);
@@ -2299,11 +2131,17 @@ const SchemeXTables = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const filteredProducts = productsData.filter(
-    (product) =>
-      product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.hsCode.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // Get table data from translations
+  const tableData = t("overviewSection.tableSection.tableData", {
+    returnObjects: true,
+  });
+
+  const filteredProducts =
+    tableData?.filter(
+      (product) =>
+        product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.hsCode.toLowerCase().includes(searchQuery.toLowerCase())
+    ) || [];
 
   return (
     <div className="w-full pb-12 borde">
@@ -2314,29 +2152,32 @@ const SchemeXTables = () => {
             onClick={() => scrollToTable(table1Ref)}
             className="px-6 py-3 bg-[#1A8781] text-white rounded-lg font-geist text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
           >
-            Product Table A
+            {t("overviewSection.tableSection.productTableA") ||
+              "Product Table A"}
           </button>
           <button
             onClick={() => scrollToTable(table2Ref)}
             className="px-6 py-3 bg-[#1A8781] text-white rounded-lg font-geist text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
           >
-            Product Table B
+            {t("overviewSection.tableSection.productTableB") ||
+              "Product Table B"}
           </button>
           <button
             onClick={() => scrollToTable(table3Ref)}
             className="px-6 py-3 bg-[#1A8781] text-white rounded-lg font-geist text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
           >
-            Product Table C
+            {t("overviewSection.tableSection.productTableC") ||
+              "Product Table C"}
           </button>
         </div>
 
         <div className="flex flex-col gap-2 mt-6">
           <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
-            Ministry of Heavy Industries Order
+            {t("overviewSection.tableSection.title")}
           </h2>
 
           <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-            List of Machinery and Electrical Equipment covered under this Order:
+            {t("overviewSection.tableSection.description")}
           </p>
         </div>
 
@@ -2346,7 +2187,10 @@ const SchemeXTables = () => {
           </div>
           <input
             type="text"
-            placeholder="Search by description or HS code..."
+            placeholder={
+              t("overviewSection.tableSection.searchPlaceholder") ||
+              "Search by description or HS code..."
+            }
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -2358,21 +2202,21 @@ const SchemeXTables = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                  S.No
+                  {t("overviewSection.tableSection.serialNumber")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                  Description of Machinery and Electrical Equipment
+                  {t("overviewSection.tableSection.description")}
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  HS Code
+                  {t("overviewSection.tableSection.hsCode")}
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              {filteredProducts.map((item) => (
-                <TableRow key={item.id}>
+              {filteredProducts.map((item, index) => (
+                <TableRow key={index}>
                   <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                    {item.id}
+                    {item.serialNumber}
                   </TableCell>
                   <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
                     {item.description}
@@ -2556,18 +2400,21 @@ const TypeCTable = () => {
 
 // SchemeX FAQs Section
 export const ServiceFaq = () => {
+  const { t } = useTranslation("SchemeX");
+  const faqData = t("faq.questions", { returnObjects: true }) || [];
+
   return (
     <section
       id="faqs"
-      className="my-2  scroll-mt-20"
+      className="my-2 scroll-mt-20"
       aria-label="Frequently Asked Questions"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          Frequently Asked Questions
+          {t("faq.title")}
         </h4>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Can&apos;t find the answer you are looking for?{" "}
+          {t("faq.intro")}{" "}
           <a
             href="/contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
@@ -2578,142 +2425,16 @@ export const ServiceFaq = () => {
 
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              1. What is Scheme X under BIS certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              Scheme X is a conformity assessment scheme introduced by the Indian BIS for machinery and electrical equipment. It ensures compliance with stringent safety and technical standards as specified in the Omnibus Technical Regulation.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              2. Is Scheme X different from the ISI mark certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              Yes. The ISI mark is generally for consumer goods and basic product compliance, while Scheme X applies to complex and industrial-grade products that require advanced testing and certification through a BIS certificate or BIS license.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              3. Who needs to apply for Scheme X certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              Manufacturers and importers of machinery and electrical equipment listed under the Omnibus Technical Regulation must apply for Scheme X and obtain a valid BIS certification to legally sell or distribute their products in India. Global manufacturers or foreign manufacturers intending to sell product in India must also comply with these regulations.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              4. What is the cost of BIS Scheme X certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at admin@bis-certifications.com.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              5. How long does it take to get a BIS licence under Scheme X?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              The timeline varies depending on documentation, testing requirements, and factory inspections. Typically, it takes 4–6 weeks from the date of successful BIS registration and application submission for Indian manufacturers and 60-90 days for foreign manufacturers.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              6. Can MSMEs also apply for BIS certification under Scheme X?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              Absolutely. In fact, the Indian BIS encourages MSMEs to apply for a BIS licence or certificate of conformity under Scheme X to boost quality, compliance, and competitiveness in the industrial sector.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              7. Is BIS certification under Scheme X mandatory for exports?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              No. Products manufactured exclusively for export are exempt under the Omnibus Technical Regulation. However, products meant for Indian markets must be certified under Scheme X.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-8">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              8. What is the validity of the BIS license under Scheme X?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              A BIS licence under Scheme X is generally valid for 3-6 years and must be renewed accordingly. Renewal involves payment of the annual BIS certification fee and may require re-evaluation depending on changes in product scope or standards.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-9">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              9. Can foreign manufacturers apply for Scheme X certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              Yes, foreign manufacturers can apply for Scheme X certification through an authorized Indian representative. The Indian BIS requires a factory inspection, which may take 3 days for foreign applicants, along with standard BIS registration and testing processes.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-10">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-            10. What is a Technical File and why is it required?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              A Technical File is a detailed compliance dossier required under Scheme X. It includes manufacturing processes, product details, test reports, and quality control documents. It supports the product’s conformity to relevant Indian Standards during the BIS certification process.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-11">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              11. How is Scheme X related to the Omnibus Technical Regulation?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              The Omnibus Technical Regulation mandates the use of Scheme X for specific categories of machinery and electrical equipment in India. Products listed under the regulation must be certified under Scheme X to obtain a valid BIS certificate or BIS licence.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-12">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              12. Can a BIS certificate under Scheme X be revoked?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              Yes. The Indian BIS can suspend or cancel a BIS licence or certificate under Scheme X if non-compliance is found during surveillance or if the product fails to meet required Indian Standards.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-13">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              13. What is the difference between BIS license and BIS certificate under Scheme X?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              A BIS license is typically issued to Indian manufacturers, while a BIS certificate of conformity (CoC) is often issued to foreign manufacturers or for specific cases. Both serve the same purpose—ensuring product compliance under Scheme X.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-14">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-              14. Is the ISI mark allowed for products certified under Scheme X?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-              No. Products under Scheme X do not carry the ISI mark. Instead, they display the BIS standard mark relevant to the certification scheme, as governed by the Indian BIS.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-15">
-              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do I know if my machinery requires Scheme X certification?
-              </AccordionTrigger>
-              <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                Check the official list in the Omnibus Technical Regulation or
-                consult with a BIS consultant to verify if your machinery falls
-                under mandatory Scheme X certification requirements.
-              </AccordionContent>
-            </AccordionItem>
+            {faqData.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
           </Accordion>
         </div>
       </div>

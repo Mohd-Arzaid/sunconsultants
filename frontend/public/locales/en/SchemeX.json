@@ -1,0 +1,372 @@
+{
+  "hero": {
+    "badge": "Certified Expertise",
+    "title": "Scheme X",
+    "description": "Under Scheme X, foreign manufacturers must obtain approval to export to India. The scheme covers over 600 mandatory and 20,000+ voluntary products.",
+    "viewServices": "View Services"
+  },
+  "navigation": {
+    "overview": "Overview",
+    "certification": "Certification",
+    "procedure": "Procedure",
+    "pricing": "Pricing",
+    "representative": "Representative",
+    "benefits": "Benefits",
+    "conclusion": "Conclusion"
+  },
+  "overview": {
+    "ariaLabel": "BIS Certificate for Foreign Manufacturers",
+    "title": "A guide on BIS certification under Scheme X for product like machines, pumps, compressors, switch gears, cranes, transformers, all type of motors etc.",
+    "subtitle": "Scheme X: India's Strategic Leap in Global Compliance",
+    "intro": "India is raising the bar for product safety and quality through Scheme X, a major initiative under the BIS Conformity Assessment Regulations, 2018, refined by the 2022 Amendment. Far from being a routine compliance measure, Scheme X is a forward-looking conformity assessment framework that aligns domestic and imported products with international safety and technical standards. The focus is especially sharp on machinery and electrical equipment, including rotary electrical machines, pumps, compressors, transformers, switchgear, and cranes. For such products, obtaining a BIS certificate is now mandatory, signifying compliance with some of the most stringent standards globally.",
+    "exemptionsTitle": "Exemptions under scheme X of BIS certification",
+    "exemptionsContent": "Scheme X also casts a specialized lens on construction machinery, especially those falling under the CMVR Rules, 1989. In partnership with the Ministry of Road Transport and Highways (MoRTH), a tailor-made conformity protocol has been introduced for these heavy-duty machines. This ensures that even the most robust equipment complies with exceptional safety and operational standards, further strengthening India's regulatory framework. By implementing Scheme X in sectors that impact public safety and infrastructure, the Indian BIS is reinforcing its mission to elevate domestic and imported product reliability.",
+    "regulationTitle": "Understanding the Omnibus Technical Regulation or Scheme X Certification Under Indian BIS.",
+    "regulationParagraph1": "The Omnibus Technical Regulation, officially titled \"Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order, 2024\", was notified by the Ministry of Heavy Industries on August 28, 2024. Set to be enforced from August 28, 2025, this regulation mandates compliance with Scheme X certification under the Indian BIS framework for a wide range of machinery and electrical equipment manufactured or imported in India. The date of implementation was further extended to 1st September 2026.",
+    "regulationParagraph2": "The Omnibus Technical Regulation is a transformative step toward enhancing industrial safety and standardization. It applies to a wide array of machinery and electrical equipment, including assemblies, sub-assemblies, and components. From pumps and compressors to centrifuges, transformers, and switchgear, all covered products must obtain BIS certification under Scheme X to be legally sold in India from 1st September 2026.",
+    "regulationParagraph3": "However, there are a few exceptions. Products already governed under other orders issued via Section 16 of the Bureau of Indian Standards Act, 2016 are excluded. Additionally, goods manufactured specifically for export and construction equipment governed by the CMVR Rules, 1989 under MoRTH (Ministry of Road Transport and Highways), are also exempt.",
+    "regulationParagraph4": "Under Scheme X certification, manufacturers can obtain either a BIS licence or a Certificate of Conformity (CoC) from the Bureau of Indian Standards. This allows the usage of the BIS standard mark, which is a strong symbol of trust and quality assurance. The BIS licence under this scheme confirms that products meet all applicable technical and safety standards.",
+    "regulationParagraph5": "The focus of the Indian BIS through this regulation is to ensure that only safe, compliant, and high-performance machinery reaches end users. By mandating BIS certification, the government ensures a uniform benchmark for product safety.",
+    "regulationParagraph6": "The Omnibus Technical Regulation is not just a policy reform—it's a catalyst for elevating the Indian manufacturing landscape. It empowers local manufacturers to meet global standards while strengthening the domestic compliance ecosystem. With Scheme X certification, India is moving towards a future where product quality, safety, and international compatibility are seamlessly aligned."
+  },
+  "overviewSection": {
+    "ariaLabel": "Authorized Indian Representative Nomination",
+    "headerTitle": "Overview",
+    "mainTitle": "Difference Between Scheme X and ISI Mark: Understanding Indian BIS Certification Systems",
+    "overviewTitle": "Overview",
+    "overviewContent": "When it comes to product safety and quality assurance in India, two key terms often surface: Scheme X and the ISI mark. Both fall under the umbrella of the Indian BIS (Bureau of Indian Standards), yet they serve different roles in the BIS certification ecosystem. Understanding the distinction is essential for manufacturers, importers, and businesses seeking a BIS certificate or BIS licence.",
+    "isiMarkTitle": "About ISI mark",
+    "isiMarkContent": "The ISI mark is a part of the BIS certification process for products conforming to specific Indian Standards. Products bearing the ISI mark signify consistent compliance with safety, performance, and quality benchmarks as specified in the relevant Indian standard. The ISI mark is mandatory for various everyday consumer goods such as electrical appliances, pressure cookers, helmets, and more.",
+    "schemeXTitle": "About Scheme X Certification",
+    "schemeXContent": "On the other hand, Scheme X is a more recent and advanced conformity assessment framework introduced under the BIS Conformity Assessment Regulations, 2018. Scheme X is designed specifically for machinery, industrial products, and complex electrical equipment that require rigorous technical scrutiny. Products certified under Scheme X must obtain a BIS certificate or BIS license, confirming conformity with high-level safety and technical specifications. This scheme offers both the BIS licence and the Certificate of Conformity (CoC), making it ideal for imported products as well.",
+    "conclusionTitle": "Conclusion",
+    "conclusionContent": "While the ISI mark focuses on simple, standardized consumer goods, Scheme X is tailored for specialized, often industrial-grade items where detailed testing, factory inspections, and batch verification are necessary. Both systems are managed by the Indian BIS, but the procedures, product categories, and depth of assessment differ significantly.",
+    "table": {
+      "feature": "Feature",
+      "isiMark": "ISI Mark",
+      "schemeX": "Scheme X",
+      "managedBy": "Managed by",
+      "indianBis": "Indian BIS",
+      "certificationType": "Certification Type",
+      "bisLicence": "BIS licence",
+      "bisCertificateLicence": "BIS certificate / BIS licence",
+      "targetProducts": "Target Products",
+      "consumerGoods": "Consumer goods",
+      "machineryElectrical": "Machinery & electrical equipment",
+      "markUsed": "Mark Used",
+      "isiMarkValue": "ISI mark",
+      "bisStandardMark": "BIS standard mark (under Scheme X)",
+      "complianceLevel": "Compliance Level",
+      "indianStandardCompliance": "Indian standard compliance",
+      "highEndCompliance": "High-end technical and safety compliance"
+    },
+    "imageAlt": "Scheme X",
+    "tableSection": {
+      "title": "Products Covered Under Scheme X Certification",
+      "description": "You can download the Scheme X product file from here",
+      "downloadButton": "Download PDF",
+      "serialNumber": "Serial No.",
+      "description": "Description of Machinery and Electrical Equipment",
+      "hsCode": "HS Code",
+      "productTableA": "Product Table A",
+      "productTableB": "Product Table B",
+      "productTableC": "Product Table C",
+      "searchPlaceholder": "Search by description or HS code...",
+      "tableData": [
+        {
+          "serialNumber": "1",
+          "description": "All types of Pumps for handling liquids, liquid elevators and (or)their assemblies /sub-assemblies /components",
+          "hsCode": "841340, 841350, 841360, 841370, 841381, 841382, 841391 and 841392"
+        },
+        {
+          "serialNumber": "2",
+          "description": "All types of compressors and(or)their assemblies /sub-assemblies /components",
+          "hsCode": "841430, 841440, 84148011, 84148090, 84149011, 84149019, 84149040 and 84149090"
+        },
+        {
+          "serialNumber": "3",
+          "description": "All types of machinery for treatment of material by a process involving a change of temperature and(or)their assemblies /sub-assemblies /components",
+          "hsCode": "841932, 841939, 841940, 841950, 841960, 841981, 841989 and 84199090"
+        },
+        {
+          "serialNumber": "4",
+          "description": "All types of centrifuges, filtering or purifying machinery for liquid and gas and(or)their assemblies /sub-assemblies /components",
+          "hsCode": "842111, 842112, 842119, 84212110, 84212190, 842122, 842129, 842131, 842139, 842191 and 842199"
+        },
+        {
+          "serialNumber": "5",
+          "description": "All types of machinery for filling, closing, sealing, labelling bottles, packing or wrapping and(or)their assemblies/sub-assemblies/components",
+          "hsCode": "842220, 842230, 842240 and 842290"
+        }
+      ]
+    }
+  },
+  "certification": {
+    "headerTitle": "Certification",
+    "title": "Documents Required for BIS Scheme X Certification under the Omnibus Technical Regulation",
+    "intro": "Manufacturers aiming to certify their machinery and electrical equipment under the Omnibus Technical Regulation must comply with Scheme X of the Indian BIS. This certification scheme ensures that industrial products meet stringent safety and performance benchmarks aligned with global and Indian Standards. To obtain a BIS certificate under Scheme X, manufacturers must submit specific documentation to the Bureau of Indian Standards (BIS) through the official Manak Online portal for Indian manufacturers and in hard copy at BIS HQ for foreign manufacturers.",
+    "keyDocumentsTitle": "Key Documents Required for BIS Certification Under Scheme X",
+    "keyDocumentsContent": "To streamline the BIS certification process, manufacturers are required to gather and submit the following documents during the registration phase:",
+    "documentsTable": {
+      "serialNumber": "Sl. No.",
+      "documentRequired": "Document Required",
+      "details": "Details",
+      "row1": {
+        "document": "Name and Address (Factory & Office)",
+        "detail": "Full legal name and physical addresses of the manufacturing site and office"
+      },
+      "row2": {
+        "document": "PAN and GST Information",
+        "detail": "Permanent Account Number (PAN) and GST registration details"
+      },
+      "row3": {
+        "document": "Contact Details",
+        "detail": "Email address, mobile number, and landline for official communications"
+      },
+      "row4": {
+        "document": "Management Details",
+        "detail": "Names, roles, and IDs of key executives and authorized signatory"
+      },
+      "row5": {
+        "document": "Product Description",
+        "detail": "Details of machinery and equipment covered under the First Schedule of the Omnibus Technical Regulation"
+      },
+      "row6": {
+        "document": "Product Classification",
+        "detail": "Specific type, model, and variety for which BIS license is being requested"
+      },
+      "row7": {
+        "document": "Technical file",
+        "detail": "All the technical details related to product and details about the manufacturing unit."
+      }
+    },
+    "registrationTitle": "Registration on Manak Online Portal",
+    "registrationContent": "All manufacturers must register via the Manak Online portal, the official digital interface of the Indian BIS. This portal has a dedicated section for OTR-based products covered under Scheme X. Once registered, the manufacturer can initiate the certification process to obtain the BIS licence or BIS certificate.",
+    "whySchemeXTitle": "Why BIS Certification and Scheme X Matter",
+    "whySchemeXContent": "Under the Omnibus Technical Regulation, products like transformers, compressors, control gear, and pumps cannot be manufactured, sold, or imported in India without the proper BIS certification. Scheme X ensures that these products meet stringent technical and safety requirements, helping manufacturers establish credibility, build consumer trust, and access broader markets. Products certified under Scheme X are also authorized to carry the BIS standard mark, which should not be confused with the ISI mark, traditionally used for consumer goods."
+  },
+  "procedure": {
+    "headerTitle": "Procedure",
+    "title": "How to Get a BIS Certificate Under Scheme X: Step-by-Step Guide",
+    "intro": "For manufacturers looking to comply with the Omnibus Technical Regulation, obtaining a BIS certificate under Scheme X is essential. The Indian BIS has outlined a structured process to help domestic and international manufacturers gain access to the Indian market through legitimate BIS certification.",
+    "stepByStepTitle": "Below is a clear step-by-step guide to completing the BIS registration and certification process under Scheme X:",
+    "checkProductTitle": "Check Product Applicability",
+    "checkProductContent": "Before initiating the process, manufacturers must first determine if their product falls under the scope of the Omnibus Technical Regulation and requires Scheme X certification. Not all products need a BIS license, so verifying eligibility based on Indian standards is the first step.",
+    "prepareDocumentsTitle": "Prepare Documentation",
+    "keyDocumentsTitle": "Key documents required include:",
+    "documentsList": [
+      "Company Registration Certificate",
+      "Factory Layout & Manufacturing Process Flow",
+      "Product Specifications and Design",
+      "Valid Test Reports from certified labs",
+      "Technical file"
+    ],
+    "documentsImportance": "These are essential for initiating the BIS registration process and for assessment under Scheme X by the Indian BIS.",
+    "technicalFileTitle": "Develop Technical File",
+    "technicalFileContent": "A critical component of BIS certification is the Technical File, which includes:",
+    "technicalFileItems": [
+      "Product design and features",
+      "Manufacturing process details",
+      "Quality checks and control documents",
+      "Raw materials, testing protocols, and sub-contracting details",
+      "Compliance documents to support conformity to relevant Indian Standards"
+    ],
+    "technicalFileImportance": "This file helps Indian BIS evaluate whether the product qualifies for a BIS licence under Scheme X.",
+    "submitApplicationTitle": "Submit Application Online",
+    "submitApplicationContent": "The application is submitted through the BIS registration portal (Manak Online). Along with uploading documents, applicants must pay the applicable fee. This is the formal initiation of the BIS certification process.",
+    "foreignProcessNote": "The process is completely offline for foreign manufacturers.",
+    "factoryInspectionTitle": "Factory Inspection",
+    "factoryInspectionContent": "Once the application is accepted, Indian BIS officials will visit the manufacturing site. The inspection typically lasts:",
+    "inspectionDuration": [
+      "2 days for domestic manufacturers",
+      "3 days for foreign manufacturers"
+    ],
+    "inspectionDetails": "Officials verify compliance with the Omnibus Technical Regulation, examine the technical file, check production quality, and witness in-house testing.",
+    "sampleTestingTitle": "Sample Testing",
+    "sampleTestingContent": "The product sample is tested either on-site or sent to a BIS-accredited lab. The tests confirm whether the product adheres to the required Indian standard.",
+    "certificateIssuanceTitle": "Issuance of BIS Certificate",
+    "certificateIssuanceContent": "If the product passes testing and inspection, the Indian BIS grants a BIS license, authorizing the manufacturer to use the BIS standard mark on their products. While different from the ISI mark used on consumer goods, this mark confirms full compliance under Scheme X."
+  },
+  "pricing": {
+    "headerTitle": "Pricing",
+    "title": "BIS Scheme X Certification Fee Structure: A Complete Cost Breakdown",
+    "intro": "Manufacturers planning to comply with the Omnibus Technical Regulation must understand the total cost of Scheme X certification. Issued under Schedule II, Paragraph 5 of the BIS Conformity Assessment Regulations, 2018, the Indian BIS has clearly defined the cost of BIS certificate and associated services. Whether you're applying for a BIS licence or a Certificate of Conformity (CoC), knowing the applicable charges is crucial for budgeting and regulatory planning.",
+    "keyChargesTitle": "Key Charges for BIS Certification Under Scheme X",
+    "keyChargesContent": "Below is a simplified overview of the official fee structure for obtaining a BIS certificate or BIS licence under Scheme X:",
+    "feeTable": {
+      "feeType": "Fee Type",
+      "cost": "Cost (INR)",
+      "description": "Description",
+      "applicationFeeLicense": {
+        "type": "Application Fee – BIS License",
+        "cost": "₹2,000",
+        "description": "Payable when applying for a new BIS licence"
+      },
+      "applicationFeeCoc": {
+        "type": "Application Fee – Certificate of Conformity (CoC)",
+        "cost": "₹2,000",
+        "description": "Applicable for CoC under Scheme X"
+      },
+      "certificationFeeLicense": {
+        "type": "Certification Fee – BIS License",
+        "cost": "₹25,000/year",
+        "description": "Annual fee for maintaining a valid BIS licence"
+      },
+      "certificationFeeCoc": {
+        "type": "Certification Fee – CoC",
+        "cost": "₹10,000",
+        "description": "Fixed fee for issuing a Certificate of Conformity"
+      },
+      "technicalFileReview": {
+        "type": "Technical File Review Fee",
+        "cost": "₹20,000 per file",
+        "description": "Charged for reviewing files or when expanding/modifying product scope"
+      },
+      "inspectionFee": {
+        "type": "Inspection Fee (including surveillance)",
+        "cost": "₹20,000 per man-day",
+        "description": "Covers factory visits for evaluation and monitoring under Scheme X"
+      },
+      "sampleProcurement": {
+        "type": "Sample Procurement Charges",
+        "cost": "Based on actuals",
+        "description": "Cost incurred while procuring product samples"
+      },
+      "testingCharges": {
+        "type": "Testing Charges",
+        "cost": "Based on actuals",
+        "description": "Laboratory charges for product testing under Indian Standards"
+      },
+      "bankGuarantee": {
+        "type": "Bank Guarantee",
+        "cost": "USD 10,000",
+        "description": "Only for foreign applicants."
+      }
+    }
+  },
+  "representative": {
+    "headerTitle": "Representative",
+    "title": "Role of AIR (Authorized Indian Representative) in BIS Scheme X Certification",
+    "intro": "For foreign manufacturers seeking BIS certification under Scheme X, the appointment of an Authorized Indian Representative (AIR) is a mandatory requirement set by the Indian BIS. The AIR serves as the local, legally responsible liaison between the foreign manufacturer and the Bureau of Indian Standards throughout the certification process.",
+    "keyResponsibilitiesTitle": "Key Responsibilities of the AIR:",
+    "bisRegistrationTitle": "BIS Registration & Communication",
+    "bisRegistrationPoints": [
+      "The AIR is responsible for initiating and managing the BIS registration process on behalf of the foreign manufacturer.",
+      "All communication with the Indian BIS, including documentation, updates, and audits under Scheme X, is handled by the AIR."
+    ],
+    "submissionTitle": "Submission of Documents",
+    "submissionPoints": [
+      "The AIR ensures timely and accurate submission of technical files, product details, compliance reports, and supporting documents necessary to obtain a BIS certificate or BIS licence under the Omnibus Technical Regulation."
+    ],
+    "coordinatingTitle": "Coordinating Factory Inspections",
+    "coordinatingPoints": [
+      "During factory inspections by Indian BIS officials, the AIR plays a coordinating role—scheduling visits, assisting auditors, and ensuring smooth operations during the audit."
+    ],
+    "managingFeesTitle": "Managing Fees and Legal Accountability",
+    "managingFeesPoints": [
+      "The AIR is authorized to pay applicable BIS certification and inspection fees. They are also legally accountable for any non-compliance issues arising from the certified products in India."
+    ],
+    "postCertificationTitle": "Post-Certification Compliance",
+    "postCertificationPoints": [
+      "Once the BIS licence or BIS certificate is granted, the AIR ensures ongoing compliance with relevant Indian Standards, including label usage and product traceability. They also handle renewals and scope expansion requests."
+    ],
+    "whyAirCriticalTitle": "Why the AIR is Critical for Scheme X",
+    "whyAirCriticalContent": "Under Scheme X, foreign manufacturers cannot directly engage with Indian BIS unless they have a registered AIR. Without an AIR, certification under the Omnibus Technical Regulation is not possible. The AIR bridges the regulatory gap, ensuring that all foreign products meet India's stringent safety and technical requirements.",
+    "importantNote": "It's important to note that although the ISI mark is not applicable to Scheme X products, the AIR must still ensure the correct use of the BIS standard mark relevant to Scheme X certifications."
+  },
+  "benefits": {
+    "headerTitle": "Benefits",
+    "title": "Benefits of BIS Scheme X Certification for Foreign Manufacturers",
+    "intro": "BIS certification under Scheme X offers multiple advantages for foreign manufacturers seeking to access the Indian market with machinery and electrical equipment. These benefits are distinct from traditional ISI mark certifications and are specifically designed for industrial and technical products covered under the Omnibus Technical Regulation.",
+    "manufacturingBenefitsTitle": "Market Access and Manufacturing Benefits",
+    "manufacturingBenefitsContent": "Manufacturers certified under Scheme X gain legitimate legal access to India's vast market. Products with BIS certification can be imported, sold, and distributed in India without compliance issues. The presence of the BIS standard mark also helps differentiate products in a competitive market, instilling greater confidence among consumers and businesses.",
+    "qualityBenefitsTitle": "Quality Assurance and Branding",
+    "qualityBenefitsContent": "Certification under Scheme X validates compliance with high-level safety and performance standards. This helps manufacturers demonstrate product quality and reliability, building customer confidence and loyalty in the Indian market. Certified products are often considered safer and more reliable investments by industrial customers.",
+    "competitiveBenefitsTitle": "Competitive Advantages",
+    "competitiveBenefitsContent": "Products with Scheme X certification have advantages over non-certified competitors. It unlocks opportunities for participation in government tenders, large infrastructure projects, and corporate procurement agreements that require certified products.",
+    "complianceBenefitsTitle": "Compliance and Risk Reduction",
+    "complianceBenefitsContent": "Obtaining certification under Scheme X significantly reduces regulatory risks and legal issues. Manufacturers can operate with confidence knowing their products meet standards set by the Bureau of Indian Standards. This prevents suspensions, seizures, or penalties for non-compliance.",
+    "sustainabilityBenefitsTitle": "Sustainable Growth and Expansion",
+    "sustainabilityBenefitsContent": "Manufacturers certified under Scheme X benefit from having products aligned with India's 'Make in India' vision. This creates a foundation for expansion and sustainable growth in the Indian market, one of the world's fastest-growing economies."
+  },
+  "conclusion": {
+    "headerTitle": "Conclusion",
+    "title": "Empowering Compliance Through Scheme X Certification",
+    "paragraph1": "In conclusion, Scheme X stands as a critical part of India's regulatory framework, ensuring that machinery and electrical equipment meet high-level safety, quality, and technical standards. Under the guidance of the Indian BIS, this certification system—introduced through the Omnibus Technical Regulation—brings India in alignment with global conformity practices.",
+    "exemptionsTitle": "Exemptions under Scheme X of BIS Certification",
+    "exemptionsContent": "Certain categories of machinery and electrical equipment may be exempted from mandatory Scheme X certification under specific circumstances. These exemptions are clearly defined in the Omnibus Technical Regulation and typically include products intended exclusively for export, as well as certain industrial equipment with specialized applications. It is crucial for manufacturers to verify these exemptions with BIS experts to avoid compliance issues.",
+    "regulationTitle": "Understanding the Omnibus Technical Regulation or Scheme X Certification Under Indian BIS",
+    "regulationParagraph1": "The Omnibus Technical Regulation represents a significant shift in India's approach to product conformity, aligning the country with international best practices. This comprehensive regulation covers a wide range of machinery and electrical equipment, ensuring that only products meeting strict safety and quality standards are allowed in the Indian market.",
+    "regulationParagraph2": "By obtaining a BIS certificate under Scheme X, manufacturers demonstrate their commitment to product safety, compliance, and performance. Whether you're a domestic producer or an international supplier, having a valid BIS licence is not just a regulatory necessity—it's a market enabler. The use of the BIS standard mark, distinct from the ISI mark, allows you to validate your products against the applicable Indian Standards and enhance consumer trust.",
+    "regulationParagraph3": "While the cost of BIS certificate and the certification process under Scheme X may seem detailed, the long-term benefits—legal compliance, enhanced credibility, improved product traceability, and competitive advantage—far outweigh the initial efforts. With structured steps including BIS registration, technical file submission, factory inspection, and product testing, the process is designed to be rigorous yet transparent.",
+    "regulationParagraph4": "The Indian BIS has made significant efforts to ensure that the Scheme X certification process is both thorough and efficient. The incorporation of technology and streamlining of procedures have reduced timeframes for certification while maintaining the quality of evaluations.",
+    "regulationParagraph5": "For foreign manufacturers, Scheme X offers a clear pathway to the Indian market without the complexities of traditional trade barriers. The role of the Authorized Indian Representative (AIR) further simplifies the process, providing local expertise and support throughout the certification journey.",
+    "regulationParagraph6": "Ultimately, BIS certification under Scheme X is more than just a stamp of approval—it is a gateway to quality assurance, global trade readiness, and industrial excellence under the evolving leadership of the Indian BIS. As India's economy continues to expand and modernize, Scheme X will play a crucial role in ensuring that all products entering the market meet the highest standards of safety, quality, and performance."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "intro": "Can't find the answer you are looking for?",
+    "questions": [
+      {
+        "question": "1. What is Scheme X under BIS certification?",
+        "answer": "Scheme X is a conformity assessment scheme introduced by the Indian BIS for machinery and electrical equipment. It ensures compliance with stringent safety and technical standards as specified in the Omnibus Technical Regulation."
+      },
+      {
+        "question": "2. Is Scheme X different from the ISI mark certification?",
+        "answer": "Yes. The ISI mark is generally for consumer goods and basic product compliance, while Scheme X applies to complex and industrial-grade products that require advanced testing and certification through a BIS certificate or BIS license."
+      },
+      {
+        "question": "3. Who needs to apply for Scheme X certification?",
+        "answer": "Manufacturers and importers of machinery and electrical equipment listed under the Omnibus Technical Regulation must apply for Scheme X and obtain a valid BIS certification to legally sell or distribute their products in India. Global manufacturers or foreign manufacturers intending to sell product in India must also comply with these regulations."
+      },
+      {
+        "question": "4. What is the cost of BIS Scheme X certification?",
+        "answer": "The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at admin@bis-certifications.com."
+      },
+      {
+        "question": "5. How long does it take to get a BIS licence under Scheme X?",
+        "answer": "The timeline varies depending on documentation, testing requirements, and factory inspections. Typically, it takes 4–6 weeks from the date of successful BIS registration and application submission for Indian manufacturers and 60-90 days for foreign manufacturers."
+      },
+      {
+        "question": "6. Can MSMEs also apply for BIS certification under Scheme X?",
+        "answer": "Absolutely. In fact, the Indian BIS encourages MSMEs to apply for a BIS licence or certificate of conformity under Scheme X to boost quality, compliance, and competitiveness in the industrial sector."
+      },
+      {
+        "question": "7. Is BIS certification under Scheme X mandatory for exports?",
+        "answer": "No. Products manufactured exclusively for export are exempt under the Omnibus Technical Regulation. However, products meant for Indian markets must be certified under Scheme X."
+      },
+      {
+        "question": "8. What is the validity of the BIS license under Scheme X?",
+        "answer": "A BIS licence under Scheme X is generally valid for 3-6 years and must be renewed accordingly. Renewal involves payment of the annual BIS certification fee and may require re-evaluation depending on changes in product scope or standards."
+      },
+      {
+        "question": "9. Can foreign manufacturers apply for Scheme X certification?",
+        "answer": "Yes, foreign manufacturers can apply for Scheme X certification through an authorized Indian representative. The Indian BIS requires a factory inspection, which may take 3 days for foreign applicants, along with standard BIS registration and testing processes."
+      },
+      {
+        "question": "10. What is a Technical File and why is it required?",
+        "answer": "A Technical File is a detailed compliance dossier required under Scheme X. It includes manufacturing processes, product details, test reports, and quality control documents. It supports the product's conformity to relevant Indian Standards during the BIS certification process."
+      },
+      {
+        "question": "11. How is Scheme X related to the Omnibus Technical Regulation?",
+        "answer": "The Omnibus Technical Regulation mandates the use of Scheme X for specific categories of machinery and electrical equipment in India. Products listed under the regulation must be certified under Scheme X to obtain a valid BIS certificate or BIS licence."
+      },
+      {
+        "question": "12. Can a BIS certificate under Scheme X be revoked?",
+        "answer": "Yes. The Indian BIS can suspend or cancel a BIS licence or certificate under Scheme X if non-compliance is found during surveillance or if the product fails to meet required Indian Standards."
+      },
+      {
+        "question": "13. What is the difference between BIS license and BIS certificate under Scheme X?",
+        "answer": "A BIS license is typically issued to Indian manufacturers, while a BIS certificate of conformity (CoC) is often issued to foreign manufacturers or for specific cases. Both serve the same purpose—ensuring product compliance under Scheme X."
+      },
+      {
+        "question": "14. Is the ISI mark allowed for products certified under Scheme X?",
+        "answer": "No. Products under Scheme X do not carry the ISI mark. Instead, they display the BIS standard mark relevant to the certification scheme, as governed by the Indian BIS."
+      },
+      {
+        "question": "How do I know if my machinery requires Scheme X certification?",
+        "answer": "Check the official list in the Omnibus Technical Regulation or consult with a BIS consultant to verify if your machinery falls under mandatory Scheme X certification requirements."
+      }
+    ]
+  }
+}

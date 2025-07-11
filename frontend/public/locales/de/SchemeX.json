@@ -1,0 +1,364 @@
+{
+  "hero": {
+    "badge": "Zertifizierte Expertise",
+    "title": "Schema X",
+    "description": "Unter Schema X müssen ausländische Hersteller eine Genehmigung für den Export nach Indien erhalten. Das Schema umfasst über 600 obligatorische und 20.000+ freiwillige Produkte.",
+    "viewServices": "Dienstleistungen anzeigen"
+  },
+  "navigation": {
+    "overview": "Überblick",
+    "certification": "Zertifizierung",
+    "procedure": "Verfahren",
+    "pricing": "Preisgestaltung",
+    "representative": "Vertreter",
+    "benefits": "Vorteile",
+    "conclusion": "Fazit"
+  },
+  "overview": {
+    "ariaLabel": "BIS-Zertifikat für ausländische Hersteller",
+    "title": "Ein Leitfaden zur BIS-Zertifizierung unter Schema X für Produkte wie Maschinen, Pumpen, Kompressoren, Schaltanlagen, Kräne, Transformatoren, alle Arten von Motoren usw.",
+    "subtitle": "Schema X: Indiens strategischer Sprung in die globale Compliance",
+    "intro": "Indien erhöht die Standards für Produktsicherheit und Qualität durch Schema X, eine wichtige Initiative unter den BIS-Konformitätsbewertungsvorschriften von 2018, verfeinert durch die Änderung von 2022. Schema X ist weit mehr als nur eine routinemäßige Compliance-Maßnahme, es ist ein zukunftsorientierter Konformitätsbewertungsrahmen, der inländische und importierte Produkte mit internationalen Sicherheits- und technischen Standards in Einklang bringt. Der Fokus liegt besonders auf Maschinen und elektrischen Geräten, einschließlich rotierender elektrischer Maschinen, Pumpen, Kompressoren, Transformatoren, Schaltanlagen und Kränen. Für solche Produkte ist die Erlangung eines BIS-Zertifikats nun obligatorisch und signalisiert die Einhaltung einiger der weltweit strengsten Standards.",
+    "exemptionsTitle": "Ausnahmen unter Schema X der BIS-Zertifizierung",
+    "exemptionsContent": "Schema X richtet auch einen speziellen Fokus auf Baumaschinen, insbesondere solche, die unter die CMVR-Regeln von 1989 fallen. In Partnerschaft mit dem Ministerium für Straßentransport und Autobahnen (MoRTH) wurde ein maßgeschneidertes Konformitätsprotokoll für diese schweren Maschinen eingeführt. Dies stellt sicher, dass sogar die robusteste Ausrüstung außergewöhnlichen Sicherheits- und Betriebsstandards entspricht und Indiens regulatorischen Rahmen weiter stärkt. Durch die Implementierung von Schema X in Sektoren, die die öffentliche Sicherheit und Infrastruktur beeinflussen, verstärkt das indische BIS seine Mission, die Zuverlässigkeit inländischer und importierter Produkte zu verbessern.",
+    "regulationTitle": "Verständnis der Omnibus-Technischen Verordnung oder Schema X-Zertifizierung unter dem indischen BIS.",
+    "regulationParagraph1": "Die Omnibus-Technische Verordnung, offiziell betitelt \"Maschinen- und Elektrogerätesicherheit (Omnibus-Technische Verordnung) Anordnung 2024\", wurde vom Ministerium für Schwerindustrie am 28. August 2024 notifiziert. Sie soll ab dem 28. August 2025 durchgesetzt werden und schreibt die Einhaltung der Schema X-Zertifizierung unter dem indischen BIS-Rahmen für eine breite Palette von Maschinen und elektrischen Geräten vor, die in Indien hergestellt oder importiert werden. Das Implementierungsdatum wurde weiter auf den 1. September 2026 verlängert.",
+    "regulationParagraph2": "Die Omnibus-Technische Verordnung ist ein transformativer Schritt zur Verbesserung der industriellen Sicherheit und Standardisierung. Sie gilt für eine Vielzahl von Maschinen und elektrischen Geräten, einschließlich Baugruppen, Unterbaugruppen und Komponenten. Von Pumpen und Kompressoren bis hin zu Zentrifugen, Transformatoren und Schaltanlagen müssen alle abgedeckten Produkte eine BIS-Zertifizierung unter Schema X erhalten, um ab dem 1. September 2026 legal in Indien verkauft werden zu können.",
+    "regulationParagraph3": "Es gibt jedoch einige Ausnahmen. Produkte, die bereits unter anderen Anordnungen gemäß Abschnitt 16 des Bureau of Indian Standards Act 2016 geregelt sind, sind ausgeschlossen. Zusätzlich sind Waren, die speziell für den Export hergestellt werden, und Bauausrüstung, die unter den CMVR-Regeln von 1989 unter MoRTH (Ministerium für Straßentransport und Autobahnen) geregelt ist, ebenfalls befreit.",
+    "regulationParagraph4": "Unter der Schema X-Zertifizierung können Hersteller entweder eine BIS-Lizenz oder ein Konformitätszertifikat (CoC) vom Bureau of Indian Standards erhalten. Dies ermöglicht die Verwendung der BIS-Standardmarke, die ein starkes Symbol für Vertrauen und Qualitätssicherung ist. Die BIS-Lizenz unter diesem Schema bestätigt, dass Produkte alle anwendbaren technischen und Sicherheitsstandards erfüllen.",
+    "regulationParagraph5": "Der Fokus des indischen BIS durch diese Verordnung ist es sicherzustellen, dass nur sichere, konforme und leistungsstarke Maschinen die Endverbraucher erreichen. Durch die Verpflichtung zur BIS-Zertifizierung gewährleistet die Regierung einen einheitlichen Maßstab für Produktsicherheit.",
+    "regulationParagraph6": "Die Omnibus-Technische Verordnung ist nicht nur eine politische Reform – sie ist ein Katalysator für die Verbesserung der indischen Fertigungslandschaft. Sie ermächtigt lokale Hersteller, globale Standards zu erfüllen, während sie das inländische Compliance-Ökosystem stärkt. Mit der Schema X-Zertifizierung bewegt sich Indien in Richtung einer Zukunft, in der Produktqualität, Sicherheit und internationale Kompatibilität nahtlos aufeinander abgestimmt sind."
+  },
+  "overviewSection": {
+    "ariaLabel": "Nominierung des autorisierten indischen Vertreters",
+    "headerTitle": "Überblick",
+    "mainTitle": "Unterschied zwischen Schema X und ISI-Zeichen: Verständnis der indischen BIS-Zertifizierungssysteme",
+    "overviewTitle": "Überblick",
+    "overviewContent": "Wenn es um Produktsicherheit und Qualitätssicherung in Indien geht, tauchen oft zwei Schlüsselbegriffe auf: Schema X und das ISI-Zeichen. Beide fallen unter den Schirm des indischen BIS (Bureau of Indian Standards), doch sie erfüllen unterschiedliche Rollen im BIS-Zertifizierungsökosystem. Das Verständnis der Unterscheidung ist für Hersteller, Importeure und Unternehmen, die ein BIS-Zertifikat oder eine BIS-Lizenz anstreben, unerlässlich.",
+    "isiMarkTitle": "Über das ISI-Zeichen",
+    "isiMarkContent": "Das ISI-Zeichen ist Teil des BIS-Zertifizierungsprozesses für Produkte, die bestimmten indischen Standards entsprechen. Produkte mit dem ISI-Zeichen signalisieren konsistente Einhaltung von Sicherheits-, Leistungs- und Qualitätsstandards, wie im relevanten indischen Standard spezifiziert. Das ISI-Zeichen ist für verschiedene alltägliche Konsumgüter wie Elektrogeräte, Schnellkochtöpfe, Helme und mehr obligatorisch.",
+    "schemeXTitle": "Über Schema X-Zertifizierung",
+    "schemeXContent": "Andererseits ist Schema X ein neuerer und fortschrittlicherer Konformitätsbewertungsrahmen, der unter den BIS-Konformitätsbewertungsvorschriften von 2018 eingeführt wurde. Schema X ist speziell für Maschinen, Industrieprodukte und komplexe elektrische Geräte konzipiert, die eine rigorose technische Prüfung erfordern. Produkte, die unter Schema X zertifiziert sind, müssen ein BIS-Zertifikat oder eine BIS-Lizenz erhalten, die die Konformität mit hohen Sicherheits- und technischen Spezifikationen bestätigt. Dieses Schema bietet sowohl die BIS-Lizenz als auch das Konformitätszertifikat (CoC), was es auch für importierte Produkte ideal macht.",
+    "conclusionTitle": "Fazit",
+    "conclusionContent": "Während sich das ISI-Zeichen auf einfache, standardisierte Konsumgüter konzentriert, ist Schema X für spezialisierte, oft industrielle Artikel zugeschnitten, bei denen detaillierte Tests, Fabrikinspektionen und Chargenüberprüfung erforderlich sind. Beide Systeme werden vom indischen BIS verwaltet, aber die Verfahren, Produktkategorien und Bewertungstiefe unterscheiden sich erheblich.",
+    "table": {
+      "feature": "Merkmal",
+      "isiMark": "ISI-Zeichen",
+      "schemeX": "Schema X",
+      "managedBy": "Verwaltet von",
+      "indianBis": "Indisches BIS",
+      "certificationType": "Zertifizierungstyp",
+      "bisLicence": "BIS-Lizenz",
+      "bisCertificateLicence": "BIS-Zertifikat / BIS-Lizenz",
+      "targetProducts": "Zielprodukte",
+      "consumerGoods": "Konsumgüter",
+      "machineryElectrical": "Maschinen & elektrische Geräte",
+      "markUsed": "Verwendetes Zeichen",
+      "isiMarkValue": "ISI-Zeichen",
+      "bisStandardMark": "BIS-Standardzeichen (unter Schema X)",
+      "complianceLevel": "Compliance-Level",
+      "indianStandardCompliance": "Indische Standard-Compliance",
+      "highEndCompliance": "High-End technische und Sicherheits-Compliance"
+    },
+    "imageAlt": "Schema X",
+    "tableSection": {
+      "title": "Unter Schema X-Zertifizierung abgedeckte Produkte",
+      "description": "Sie können die Schema X-Produktdatei von hier herunterladen.",
+      "downloadButton": "PDF herunterladen",
+      "serialNumber": "S.Nr",
+      "description": "Beschreibung von Maschinen und elektrischen Geräten",
+      "hsCode": "HS-Code",
+      "tableData": [
+        {
+          "serialNumber": "1",
+          "description": "Alle Arten von Pumpen zur Handhabung von Flüssigkeiten, Flüssigkeitsaufzügen und (oder) deren Baugruppen/Unterbaugruppen/Komponenten",
+          "hsCode": "841340, 841350, 841360, 841370, 841381, 841382, 841391 und 841392"
+        },
+        {
+          "serialNumber": "2",
+          "description": "Alle Arten von Kompressoren und (oder) deren Baugruppen/Unterbaugruppen/Komponenten.",
+          "hsCode": "841430, 841440, 84148011, 84148090, 84149011, 84149019, 84149040 und 84149090"
+        },
+        {
+          "serialNumber": "3",
+          "description": "Alle Arten von Maschinen zur Behandlung von Material durch einen Prozess mit Temperaturänderung und (oder) deren Baugruppen/Unterbaugruppen/Komponenten",
+          "hsCode": "841932, 841939, 841940, 841950, 841960, 841981, 841989 und 84199090"
+        },
+        {
+          "serialNumber": "4",
+          "description": "Alle Arten von Zentrifugen, Filter- oder Reinigungsmaschinen für Flüssigkeiten und Gase und (oder) deren Baugruppen/Unterbaugruppen/Komponenten",
+          "hsCode": "842111, 842112, 842119, 84212110, 84212190, 842122, 842129, 842131, 842139, 842191 und 842199"
+        },
+        {
+          "serialNumber": "5",
+          "description": "Alle Arten von Maschinen zum Befüllen, Verschließen, Versiegeln, Etikettieren von Flaschen, Verpacken oder Umhüllen und (oder) deren Baugruppen/Unterbaugruppen/Komponenten",
+          "hsCode": "842220, 842230, 842240 und 842290"
+        }
+      ]
+    }
+  },
+  "certification": {
+    "headerTitle": "Zertifizierung",
+    "title": "Erforderliche Dokumente für BIS Schema X-Zertifizierung unter der Omnibus-Technischen Verordnung",
+    "intro": "Hersteller, die ihre Maschinen und elektrischen Geräte unter der Omnibus-Technischen Verordnung zertifizieren möchten, müssen Schema X des indischen BIS einhalten. Dieses Zertifizierungsschema stellt sicher, dass Industrieprodukte strenge Sicherheits- und Leistungsstandards erfüllen, die mit globalen und indischen Standards übereinstimmen. Um ein BIS-Zertifikat unter Schema X zu erhalten, müssen Hersteller spezifische Dokumentation beim Bureau of Indian Standards (BIS) über das offizielle Manak Online-Portal für indische Hersteller und in Papierform beim BIS-Hauptquartier für ausländische Hersteller einreichen.",
+    "keyDocumentsTitle": "Wichtige Dokumente für BIS-Zertifizierung unter Schema X",
+    "keyDocumentsContent": "Um den BIS-Zertifizierungsprozess zu optimieren, müssen Hersteller die folgenden Dokumente während der Registrierungsphase sammeln und einreichen:",
+    "documentsTable": {
+      "serialNumber": "Lfd. Nr.",
+      "documentRequired": "Erforderliches Dokument",
+      "details": "Details",
+      "row1": {
+        "document": "Name und Adresse (Fabrik & Büro)",
+        "detail": "Vollständiger rechtlicher Name und physische Adressen des Produktionsstandorts und Büros"
+      },
+      "row2": {
+        "document": "PAN- und GST-Informationen",
+        "detail": "Permanente Kontonummer (PAN) und GST-Registrierungsdetails"
+      },
+      "row3": {
+        "document": "Kontaktdaten",
+        "detail": "E-Mail-Adresse, Mobilnummer und Festnetz für offizielle Kommunikation"
+      },
+      "row4": {
+        "document": "Managementdetails",
+        "detail": "Namen, Rollen und IDs der wichtigsten Führungskräfte und autorisierten Unterzeichner"
+      },
+      "row5": {
+        "document": "Produktbeschreibung",
+        "detail": "Details zu Maschinen und Geräten, die unter den Ersten Anhang der Omnibus-Technischen Verordnung fallen"
+      },
+      "row6": {
+        "document": "Produktklassifizierung",
+        "detail": "Spezifischer Typ, Modell und Sorte, für die eine BIS-Lizenz beantragt wird"
+      },
+      "row7": {
+        "document": "Technische Datei",
+        "detail": "Alle technischen Details zum Produkt und Details zur Fertigungseinheit."
+      }
+    },
+    "registrationTitle": "Registrierung im Manak Online-Portal",
+    "registrationContent": "Alle Hersteller müssen sich über das Manak Online-Portal registrieren, die offizielle digitale Schnittstelle des indischen BIS. Dieses Portal hat einen speziellen Bereich für OTR-basierte Produkte, die unter Schema X abgedeckt sind. Nach der Registrierung kann der Hersteller den Zertifizierungsprozess initiieren, um die BIS-Lizenz oder das BIS-Zertifikat zu erhalten.",
+    "whySchemeXTitle": "Warum BIS-Zertifizierung und Schema X wichtig sind",
+    "whySchemeXContent": "Unter der Omnibus-Technischen Verordnung können Produkte wie Transformatoren, Kompressoren, Steuerungsgeräte und Pumpen nicht ohne ordnungsgemäße BIS-Zertifizierung in Indien hergestellt, verkauft oder importiert werden. Schema X stellt sicher, dass diese Produkte strenge technische und Sicherheitsanforderungen erfüllen, hilft Herstellern, Glaubwürdigkeit aufzubauen, Verbrauchervertrauen zu schaffen und Zugang zu breiteren Märkten zu erhalten. Unter Schema X zertifizierte Produkte sind auch berechtigt, das BIS-Standardzeichen zu tragen, das nicht mit dem ISI-Zeichen verwechselt werden sollte, das traditionell für Konsumgüter verwendet wird."
+  },
+  "procedure": {
+    "headerTitle": "Verfahren",
+    "title": "Wie man ein BIS-Zertifikat unter Schema X erhält: Schritt-für-Schritt-Anleitung",
+    "intro": "Für Hersteller, die die Omnibus-Technische Verordnung einhalten möchten, ist die Erlangung eines BIS-Zertifikats unter Schema X unerlässlich. Das indische BIS hat einen strukturierten Prozess skizziert, um inländischen und internationalen Herstellern zu helfen, Zugang zum indischen Markt durch legitime BIS-Zertifizierung zu erhalten.",
+    "stepByStepTitle": "Nachfolgend finden Sie eine klare Schritt-für-Schritt-Anleitung zur Durchführung des BIS-Registrierungs- und Zertifizierungsprozesses unter Schema X:",
+    "checkProductTitle": "Produktanwendbarkeit prüfen",
+    "checkProductContent": "Bevor der Prozess eingeleitet wird, müssen Hersteller zunächst bestimmen, ob ihr Produkt in den Anwendungsbereich der Omnibus-Technischen Verordnung fällt und eine Schema X-Zertifizierung erfordert. Nicht alle Produkte benötigen eine BIS-Lizenz, daher ist die Überprüfung der Berechtigung basierend auf indischen Standards der erste Schritt.",
+    "prepareDocumentsTitle": "Dokumentation vorbereiten",
+    "keyDocumentsTitle": "Wichtige erforderliche Dokumente umfassen:",
+    "documentsList": [
+      "Unternehmenregistrierungszertifikat",
+      "Fabriklayout & Fertigungsprozessablauf",
+      "Produktspezifikationen und Design",
+      "Gültige Testberichte von zertifizierten Labors",
+      "Technische Datei"
+    ],
+    "documentsImportance": "Diese sind für die Einleitung des BIS-Registrierungsprozesses und für die Bewertung unter Schema X durch das indische BIS unerlässlich.",
+    "technicalFileTitle": "Technische Datei entwickeln",
+    "technicalFileContent": "Eine kritische Komponente der BIS-Zertifizierung ist die Technische Datei, die Folgendes umfasst:",
+    "technicalFileItems": [
+      "Produktdesign und Funktionen",
+      "Details des Fertigungsprozesses",
+      "Qualitätsprüfungen und Kontrolldokumente",
+      "Rohmaterialien, Testprotokolle und Untervertragsdetails",
+      "Compliance-Dokumente zur Unterstützung der Konformität mit relevanten indischen Standards"
+    ],
+    "technicalFileImportance": "Diese Datei hilft dem indischen BIS zu bewerten, ob das Produkt für eine BIS-Lizenz unter Schema X qualifiziert ist.",
+    "submitApplicationTitle": "Antrag online einreichen",
+    "submitApplicationContent": "Der Antrag wird über das BIS-Registrierungsportal (Manak Online) eingereicht. Zusammen mit dem Hochladen von Dokumenten müssen Antragsteller die anfallende Gebühr bezahlen. Dies ist die formelle Einleitung des BIS-Zertifizierungsprozesses.",
+    "foreignProcessNote": "Der Prozess ist für ausländische Hersteller vollständig offline.",
+    "factoryInspectionTitle": "Fabrikinspektion",
+    "factoryInspectionContent": "Sobald der Antrag angenommen ist, besuchen indische BIS-Beamte den Produktionsstandort. Die Inspektion dauert typischerweise:",
+    "inspectionDuration": [
+      "2 Tage für inländische Hersteller",
+      "3 Tage für ausländische Hersteller"
+    ],
+    "inspectionDetails": "Beamte überprüfen die Einhaltung der Omnibus-Technischen Verordnung, untersuchen die technische Datei, prüfen die Produktionsqualität und beobachten interne Tests.",
+    "sampleTestingTitle": "Probentests",
+    "sampleTestingContent": "Die Produktprobe wird entweder vor Ort getestet oder an ein BIS-akkreditiertes Labor gesendet. Die Tests bestätigen, ob das Produkt dem erforderlichen indischen Standard entspricht.",
+    "certificateIssuanceTitle": "Ausstellung des BIS-Zertifikats",
+    "certificateIssuanceContent": "Wenn das Produkt Tests und Inspektion besteht, gewährt das indische BIS eine BIS-Lizenz, die den Hersteller berechtigt, das BIS-Standardzeichen auf ihren Produkten zu verwenden. Obwohl sich dies vom ISI-Zeichen unterscheidet, das für Konsumgüter verwendet wird, bestätigt dieses Zeichen die vollständige Einhaltung unter Schema X."
+  },
+  "pricing": {
+    "headerTitle": "Preisgestaltung",
+    "title": "BIS Schema X-Zertifizierungsgebührenstruktur: Eine vollständige Kostenaufschlüsselung",
+    "intro": "Hersteller, die die Omnibus-Technische Verordnung einhalten möchten, müssen die Gesamtkosten der Schema X-Zertifizierung verstehen. Ausgegeben unter Anhang II, Absatz 5 der BIS-Konformitätsbewertungsvorschriften 2018, hat das indische BIS die Kosten für BIS-Zertifikate und zugehörige Dienstleistungen klar definiert. Ob Sie eine BIS-Lizenz oder ein Konformitätszertifikat (CoC) beantragen, die Kenntnis der anfallenden Gebühren ist für die Budgetierung und regulatorische Planung entscheidend.",
+    "keyChargesTitle": "Wichtige Gebühren für BIS-Zertifizierung unter Schema X",
+    "keyChargesContent": "Nachfolgend finden Sie eine vereinfachte Übersicht der offiziellen Gebührenstruktur für die Erlangung eines BIS-Zertifikats oder einer BIS-Lizenz unter Schema X:",
+    "feeTable": {
+      "feeType": "Gebührentyp",
+      "cost": "Kosten (INR)",
+      "description": "Beschreibung",
+      "applicationFeeLicense": {
+        "type": "Antragsgebühr – BIS-Lizenz",
+        "cost": "₹2.000",
+        "description": "Zahlbar bei Beantragung einer neuen BIS-Lizenz"
+      },
+      "applicationFeeCoc": {
+        "type": "Antragsgebühr – Konformitätszertifikat (CoC)",
+        "cost": "₹2.000",
+        "description": "Anwendbar für CoC unter Schema X"
+      },
+      "certificationFeeLicense": {
+        "type": "Zertifizierungsgebühr – BIS-Lizenz",
+        "cost": "₹25.000/Jahr",
+        "description": "Jährliche Gebühr für die Aufrechterhaltung einer gültigen BIS-Lizenz"
+      },
+      "certificationFeeCoc": {
+        "type": "Zertifizierungsgebühr – CoC",
+        "cost": "₹10.000",
+        "description": "Feste Gebühr für die Ausstellung eines Konformitätszertifikats"
+      },
+      "technicalFileReview": {
+        "type": "Gebühr für technische Dateienprüfung",
+        "cost": "₹20.000 pro Datei",
+        "description": "Berechnet für die Prüfung von Dateien oder bei Erweiterung/Änderung des Produktumfangs"
+      },
+      "inspectionFee": {
+        "type": "Inspektionsgebühr (einschließlich Überwachung)",
+        "cost": "₹20.000 pro Arbeitstag",
+        "description": "Deckt Fabrikbesuche für Bewertung und Überwachung unter Schema X ab"
+      },
+      "sampleProcurement": {
+        "type": "Probenbeschaffungsgebühren",
+        "cost": "Basierend auf tatsächlichen Kosten",
+        "description": "Kosten, die bei der Beschaffung von Produktproben anfallen"
+      },
+      "testingCharges": {
+        "type": "Testgebühren",
+        "cost": "Basierend auf tatsächlichen Kosten",
+        "description": "Laborgebühren für Produkttests unter indischen Standards"
+      },
+      "bankGuarantee": {
+        "type": "Bankgarantie",
+        "cost": "USD 10.000",
+        "description": "Nur für ausländische Antragsteller."
+      }
+    }
+  },
+  "representative": {
+    "headerTitle": "Vertreter",
+    "title": "Rolle des AIR (Autorisierter Indischer Vertreter) in der BIS Schema X-Zertifizierung",
+    "intro": "Für ausländische Hersteller, die eine BIS-Zertifizierung unter Schema X anstreben, ist die Ernennung eines Autorisierten Indischen Vertreters (AIR) eine vom indischen BIS festgelegte obligatorische Anforderung. Der AIR dient als lokaler, rechtlich verantwortlicher Vermittler zwischen dem ausländischen Hersteller und dem Bureau of Indian Standards während des gesamten Zertifizierungsprozesses.",
+    "keyResponsibilitiesTitle": "Hauptverantwortlichkeiten des AIR:",
+    "bisRegistrationTitle": "BIS-Registrierung & Kommunikation",
+    "bisRegistrationPoints": [
+      "Der AIR ist verantwortlich für die Einleitung und Verwaltung des BIS-Registrierungsprozesses im Namen des ausländischen Herstellers.",
+      "Alle Kommunikation mit dem indischen BIS, einschließlich Dokumentation, Updates und Audits unter Schema X, wird vom AIR abgewickelt."
+    ],
+    "submissionTitle": "Einreichung von Dokumenten",
+    "submissionPoints": [
+      "Der AIR gewährleistet die rechtzeitige und genaue Einreichung von technischen Dateien, Produktdetails, Compliance-Berichten und unterstützenden Dokumenten, die zur Erlangung eines BIS-Zertifikats oder einer BIS-Lizenz unter der Omnibus-Technischen Verordnung erforderlich sind."
+    ],
+    "coordinatingTitle": "Koordination von Fabrikinspektionen",
+    "coordinatingPoints": [
+      "Während Fabrikinspektionen durch indische BIS-Beamte spielt der AIR eine koordinierende Rolle – Terminplanung, Unterstützung der Auditoren und Gewährleistung reibungsloser Abläufe während des Audits."
+    ],
+    "managingFeesTitle": "Verwaltung von Gebühren und rechtlicher Verantwortlichkeit",
+    "managingFeesPoints": [
+      "Der AIR ist berechtigt, anfallende BIS-Zertifizierungs- und Inspektionsgebühren zu zahlen. Sie sind auch rechtlich verantwortlich für alle Non-Compliance-Probleme, die von den zertifizierten Produkten in Indien ausgehen."
+    ],
+    "postCertificationTitle": "Post-Zertifizierungs-Compliance",
+    "postCertificationPoints": [
+      "Sobald die BIS-Lizenz oder das BIS-Zertifikat gewährt ist, gewährleistet der AIR die fortlaufende Einhaltung relevanter indischer Standards, einschließlich Etikettenverwendung und Produktrückverfolgbarkeit. Sie handhaben auch Erneuerungen und Anfragen zur Umfangserweiterung."
+    ],
+    "whyAirCriticalTitle": "Warum der AIR für Schema X kritisch ist",
+    "whyAirCriticalContent": "Unter Schema X können ausländische Hersteller nicht direkt mit dem indischen BIS interagieren, es sei denn, sie haben einen registrierten AIR. Ohne einen AIR ist eine Zertifizierung unter der Omnibus-Technischen Verordnung nicht möglich. Der AIR überbrückt die regulatorische Lücke und stellt sicher, dass alle ausländischen Produkte Indiens strenge Sicherheits- und technische Anforderungen erfüllen.",
+    "importantNote": "Es ist wichtig zu beachten, dass obwohl das ISI-Zeichen nicht für Schema X-Produkte anwendbar ist, der AIR dennoch die korrekte Verwendung des BIS-Standardzeichens, das für Schema X-Zertifizierungen relevant ist, sicherstellen muss."
+  },
+  "benefits": {
+    "headerTitle": "Vorteile",
+    "title": "Vorteile der Einhaltung der Schema X-Zertifizierung",
+    "benefitsList": [
+      "1. Legaler Markteintritt und Compliance",
+      "2. Verbesserte Markenglaubwürdigkeit und Vertrauen",
+      "3. Verbesserte Produktqualität und Sicherheit",
+      "4. Wettbewerbsvorteil",
+      "5. Erhöhte Exportmöglichkeiten"
+    ]
+  },
+  "conclusion": {
+    "headerTitle": "Fazit",
+    "title": "Stärkung der Compliance durch Schema X-Zertifizierung",
+    "paragraph1": "Zusammenfassend steht Schema X als kritischer Teil von Indiens regulatorischem Rahmen, der sicherstellt, dass Maschinen und elektrische Geräte hohe Sicherheits-, Qualitäts- und technische Standards erfüllen. Unter der Führung des indischen BIS bringt dieses Zertifizierungssystem – eingeführt durch die Omnibus-Technische Verordnung – Indien in Übereinstimmung mit globalen Konformitätspraktiken.",
+    "exemptionsTitle": "Ausnahmen unter Schema X der BIS-Zertifizierung",
+    "exemptionsContent": "Bestimmte Kategorien von Maschinen und elektrischen Geräten können unter spezifischen Umständen von der obligatorischen Schema X-Zertifizierung ausgenommen sein. Diese Ausnahmen sind in der Omnibus-Technischen Verordnung klar definiert und umfassen typischerweise Produkte, die ausschließlich für den Export bestimmt sind, sowie bestimmte industrielle Geräte mit spezialisierten Anwendungen. Es ist entscheidend für Hersteller, diese Ausnahmen mit BIS-Experten zu überprüfen, um Compliance-Probleme zu vermeiden.",
+    "regulationTitle": "Verständnis der Omnibus-Technischen Verordnung oder Schema X-Zertifizierung unter dem indischen BIS",
+    "regulationParagraph1": "Die Omnibus-Technische Verordnung stellt einen bedeutenden Wandel in Indiens Ansatz zur Produktkonformität dar und richtet das Land an internationalen Best Practices aus. Diese umfassende Verordnung deckt eine breite Palette von Maschinen und elektrischen Geräten ab und stellt sicher, dass nur Produkte, die strenge Sicherheits- und Qualitätsstandards erfüllen, auf dem indischen Markt zugelassen werden.",
+    "regulationParagraph2": "Durch die Erlangung eines BIS-Zertifikats unter Schema X demonstrieren Hersteller ihr Engagement für Produktsicherheit, Compliance und Leistung. Ob Sie ein inländischer Produzent oder ein internationaler Lieferant sind, eine gültige BIS-Lizenz zu haben ist nicht nur eine regulatorische Notwendigkeit – es ist ein Marktfaktor. Die Verwendung des BIS-Standardzeichens, unterschiedlich vom ISI-Zeichen, ermöglicht es Ihnen, Ihre Produkte gegen die anwendbaren indischen Standards zu validieren und das Verbrauchervertrauen zu stärken.",
+    "regulationParagraph3": "Während die Kosten für das BIS-Zertifikat und der Zertifizierungsprozess unter Schema X detailliert erscheinen mögen, überwiegen die langfristigen Vorteile – rechtliche Compliance, verbesserte Glaubwürdigkeit, verbesserte Produktrückverfolgbarkeit und Wettbewerbsvorteil – bei weitem die anfänglichen Anstrengungen. Mit strukturierten Schritten einschließlich BIS-Registrierung, Einreichung technischer Dateien, Fabrikinspektion und Produkttests ist der Prozess darauf ausgelegt, rigoros und dennoch transparent zu sein.",
+    "regulationParagraph4": "Das indische BIS hat erhebliche Anstrengungen unternommen, um sicherzustellen, dass der Schema X-Zertifizierungsprozess sowohl gründlich als auch effizient ist. Die Einbeziehung von Technologien und die Rationalisierung von Verfahren haben die Zeitrahmen für die Zertifizierung verkürzt und gleichzeitig die Qualität der Bewertungen aufrechterhalten.",
+    "regulationParagraph5": "Für ausländische Hersteller bietet Schema X einen klaren Weg zum indischen Markt, ohne die Komplexitäten traditioneller Handelshemmnisse. Die Rolle des Autorisierten Indischen Vertreters (AIR) vereinfacht den Prozess weiter und bietet lokale Expertise und Unterstützung während der gesamten Zertifizierungsreise.",
+    "regulationParagraph6": "Letztendlich ist die BIS-Zertifizierung unter Schema X mehr als nur ein Gütesiegel – es ist ein Tor zur Qualitätssicherung, globalen Handelsbereitschaft und industriellen Exzellenz unter der sich entwickelnden Führung des indischen BIS. Da sich Indiens Wirtschaft weiter ausdehnt und modernisiert, wird Schema X eine entscheidende Rolle dabei spielen, sicherzustellen, dass alle in den Markt eintretenden Produkte den höchsten Standards für Sicherheit, Qualität und Leistung entsprechen."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Können Sie die gesuchte Antwort nicht finden? Kontaktieren Sie uns!",
+    "questions": [
+      {
+        "question": "1. Was ist Schema X unter BIS-Zertifizierung?",
+        "answer": "Schema X ist ein Konformitätsbewertungsschema, das vom indischen BIS für Maschinen und elektrische Geräte eingeführt wurde. Es gewährleistet die Einhaltung strenger Sicherheits- und technischer Standards, wie in der Omnibus-Technischen Verordnung spezifiziert."
+      },
+      {
+        "question": "2. Unterscheidet sich Schema X von der ISI-Zeichen-Zertifizierung?",
+        "answer": "Ja. Das ISI-Zeichen gilt im Allgemeinen für Konsumgüter und grundlegende Produkteinhaltung, während Schema X für komplexe und industrielle Produkte gilt, die erweiterte Tests und Zertifizierung durch ein BIS-Zertifikat oder eine BIS-Lizenz erfordern."
+      },
+      {
+        "question": "3. Wer muss sich für Schema X-Zertifizierung bewerben?",
+        "answer": "Hersteller und Importeure von Maschinen und elektrischen Geräten, die unter der Omnibus-Technischen Verordnung aufgeführt sind, müssen sich für Schema X bewerben und eine gültige BIS-Zertifizierung erhalten, um ihre Produkte legal in Indien zu verkaufen oder zu vertreiben. Globale Hersteller oder ausländische Hersteller, die Produkte in Indien verkaufen möchten, müssen ebenfalls diese Vorschriften einhalten."
+      },
+      {
+        "question": "4. Was kostet die BIS Schema X-Zertifizierung?",
+        "answer": "Die Kosten für Schema X umfassen Antragsgebühren, Zertifizierungsgebühren, Gebühren für die Überprüfung technischer Dateien, Fabrikinspektionskosten und Produkttestgebühren. Im Durchschnitt beginnt es bei ₹2.000 für den Antrag und kann je nach Produktkomplexität steigen. Für weitere Details kontaktieren Sie uns unter admin@bis-certifications.com."
+      },
+      {
+        "question": "5. Wie lange dauert es, eine BIS-Lizenz unter Schema X zu erhalten?",
+        "answer": "Die Zeitdauer variiert je nach Dokumentation, Testanforderungen und Fabrikinspektionen. Typischerweise dauert es 4–6 Wochen ab dem Datum der erfolgreichen BIS-Registrierung und Antragseinreichung für indische Hersteller und 60-90 Tage für ausländische Hersteller."
+      },
+      {
+        "question": "6. Können MSMEs auch eine BIS-Zertifizierung unter Schema X beantragen?",
+        "answer": "Absolut. Tatsächlich ermutigt das indische BIS MSMEs, eine BIS-Lizenz oder ein Konformitätszertifikat unter Schema X zu beantragen, um Qualität, Compliance und Wettbewerbsfähigkeit im Industriesektor zu steigern."
+      },
+      {
+        "question": "7. Ist BIS-Zertifizierung unter Schema X für Exporte obligatorisch?",
+        "answer": "Nein. Produkte, die ausschließlich für den Export hergestellt werden, sind unter der Omnibus-Technischen Verordnung befreit. Produkte für indische Märkte müssen jedoch unter Schema X zertifiziert werden."
+      },
+      {
+        "question": "8. Wie lange ist die BIS-Lizenz unter Schema X gültig?",
+        "answer": "Eine BIS-Lizenz unter Schema X ist im Allgemeinen für 3-6 Jahre gültig und muss entsprechend erneuert werden. Die Erneuerung beinhaltet die Zahlung der jährlichen BIS-Zertifizierungsgebühr und kann je nach Änderungen im Produktumfang oder in den Standards eine Neubewertung erfordern."
+      },
+      {
+        "question": "9. Können ausländische Hersteller eine Schema X-Zertifizierung beantragen?",
+        "answer": "Ja, ausländische Hersteller können eine Schema X-Zertifizierung über einen autorisierten indischen Vertreter beantragen. Das indische BIS erfordert eine Fabrikinspektion, die für ausländische Antragsteller 3 Tage dauern kann, zusammen mit standardmäßigen BIS-Registrierungs- und Testverfahren."
+      },
+      {
+        "question": "10. Was ist eine technische Datei und warum ist sie erforderlich?",
+        "answer": "Eine technische Datei ist ein detailliertes Compliance-Dossier, das unter Schema X erforderlich ist. Es umfasst Fertigungsprozesse, Produktdetails, Testberichte und Qualitätskontrolldokumente. Es unterstützt die Konformität des Produkts mit relevanten indischen Standards während des BIS-Zertifizierungsprozesses."
+      },
+      {
+        "question": "11. Wie ist Schema X mit der Omnibus-Technischen Verordnung verbunden?",
+        "answer": "Die Omnibus-Technische Verordnung schreibt die Verwendung von Schema X für bestimmte Kategorien von Maschinen und elektrischen Geräten in Indien vor. Produkte, die unter der Verordnung aufgeführt sind, müssen unter Schema X zertifiziert werden, um ein gültiges BIS-Zertifikat oder eine BIS-Lizenz zu erhalten."
+      },
+      {
+        "question": "12. Kann ein BIS-Zertifikat unter Schema X widerrufen werden?",
+        "answer": "Ja. Das indische BIS kann eine BIS-Lizenz oder ein Zertifikat unter Schema X aussetzen oder stornieren, wenn bei der Überwachung Non-Compliance festgestellt wird oder das Produkt die erforderlichen indischen Standards nicht erfüllt."
+      },
+      {
+        "question": "13. Was ist der Unterschied zwischen BIS-Lizenz und BIS-Zertifikat unter Schema X?",
+        "answer": "Eine BIS-Lizenz wird typischerweise an indische Hersteller ausgestellt, während ein BIS-Konformitätszertifikat (CoC) oft an ausländische Hersteller oder für spezielle Fälle ausgestellt wird. Beide dienen demselben Zweck – der Gewährleistung der Produkteinhaltung unter Schema X."
+      },
+      {
+        "question": "14. Ist das ISI-Zeichen für unter Schema X zertifizierte Produkte erlaubt?",
+        "answer": "Nein. Produkte unter Schema X tragen nicht das ISI-Zeichen. Stattdessen zeigen sie das BIS-Standardzeichen, das für das Zertifizierungsschema relevant ist, wie vom indischen BIS geregelt."
+      },
+      {
+        "question": "Woher weiß ich, ob meine Maschine eine Schema X-Zertifizierung benötigt?",
+        "answer": "Überprüfen Sie die offizielle Liste in der Omnibus-Technischen Verordnung oder konsultieren Sie einen BIS-Berater, um zu überprüfen, ob Ihre Maschine unter die obligatorischen Schema X-Zertifizierungsanforderungen fällt."
+      }
+    ]
+  }
+}
