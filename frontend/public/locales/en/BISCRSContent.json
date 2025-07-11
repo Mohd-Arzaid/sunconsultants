@@ -464,5 +464,13 @@
       "title": "Why Choose a BIS Consultant?",
       "description": "The BIS CRS registration process is highly technical, regulated, and documentation-heavy. Without deep knowledge of Indian Standards, QCO updates, test report formats, and portal workflows, applicants risk delays, rejection, or even long-term non-compliance. That's where Sun Certifications India comes in — your trusted, experienced partner in navigating every step of the compulsory certification scheme."
     }
+  },
+  "reviewSection": {
+    "heading": "What did you think of this content?",
+    "buttons": {
+      "helpful": "It was helpful",
+      "notHelpful": "It was not helpful"
+    },
+    "lastUpdated": "Last updated on Mar 19, 2025"
   }
 }

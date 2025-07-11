@@ -1248,10 +1248,12 @@ const BISCRSContentLeft = () => {
 };
 
 const ReviewSection = () => {
+  const { t } = useTranslation("BISCRSContent");
+
   return (
     <section>
       <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
-        What did you think of this content?
+        {t("reviewSection.heading")}
       </span>
       <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
         <div className="flex gap-6">
@@ -1279,7 +1281,7 @@ const ReviewSection = () => {
               />
             </svg>
 
-            <span>It was helpful</span>
+            <span>{t("reviewSection.buttons.helpful")}</span>
           </button>
 
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
@@ -1306,12 +1308,12 @@ const ReviewSection = () => {
               />
             </svg>
 
-            <span>It was not helpful</span>
+            <span>{t("reviewSection.buttons.notHelpful")}</span>
           </button>
         </div>
 
         <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
-          Last updated on Mar 19, 2025
+          {t("reviewSection.lastUpdated")}
         </p>
       </div>
     </section>
