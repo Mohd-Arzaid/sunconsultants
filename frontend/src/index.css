@@ -304,10 +304,10 @@ input:-webkit-autofill:active {
   }
 
   100% {
-    transform: translateX(calc(-33.333% - 0.8rem));
+    transform: translateX(calc(-33.333%));
   }
 }
 
 .animate-scroll {
-  animation: scroll var(--animation-duration, 40s) linear infinite var(--animation-direction, forwards);
+  animation: scroll var(--animation-duration, 25s) linear infinite var(--animation-direction, forwards);
 }
