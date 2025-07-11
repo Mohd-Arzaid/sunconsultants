@@ -1,0 +1,310 @@
+{
+  "hero": {
+    "badge": "Zertifizierte Expertise",
+    "title": {
+      "part1": "BIS-Zertifizierung für",
+      "part2": "Indische Hersteller"
+    },
+    "description": "Als Teil der 'Make in India'-Vision hilft die BIS-Zertifizierung Herstellern, Produktsicherheit, Qualität und Konformität zu garantieren. Lassen Sie sich zertifizieren und stärken Sie Ihre Marke mit Vertrauen.",
+    "viewServices": "Services anzeigen"
+  },
+  "navigation": {
+    "overview": "Überblick",
+    "process": "Prozess",
+    "document": "Dokumente",
+    "costing": "Kosten",
+    "faqs": "FAQ",
+    "toggleMenu": "Menü umschalten"
+  },
+  "introduction": {
+    "title": "Einführung in die BIS-Zertifizierung in Indien für indische Hersteller",
+    "paragraph1": "Das indische Fertigungsökosystem durchläuft eine dynamische Transformation, und mit der Initiative 'Make in India' der Regierung war die Sicherstellung von Produktqualität und Konformität noch nie so wichtig. Einer der wichtigsten Schritte für jeden inländischen Hersteller, der auf dem indischen Markt erfolgreich sein möchte, ist die Erlangung der BIS-Zertifizierung.",
+    "paragraph2": "Das Bureau of Indian Standards (BIS) ist die nationale Stelle, die für die Festlegung und Aufrechterhaltung von Produktqualitätsstandards verantwortlich ist. Das BIS-Zertifikat stellt sicher, dass ein Produkt spezifische indische Standards erfüllt und sicher, zuverlässig und von guter Qualität ist.",
+    "paragraph3": "Für inländische Hersteller ist die BIS-Zertifizierung nicht nur eine gesetzliche Anforderung, sondern ein Vertrauenszeichen. Die BIS-Lizenz signalisiert Konformität, eröffnet Zugang zu weiteren Märkten und stärkt die Markenglaubwürdigkeit. Mit dem weitverbreiteten Fokus auf Qualitätssicherung und Kundensicherheit hat sich das indische BIS-System als regulatorisches Rückgrat für Industrie- und Konsumgütersektoren etabliert.",
+    "paragraph4": "Die BIS-Zertifizierung beinhaltet auch das ISI-Zeichen, einen wichtigen Indikator dafür, dass ein Produkt den Spezifikationen des Indian Standards Institute entspricht. ISI-gekennzeichnete Produkte sind oft in Sektoren wie Elektronik, Zement, Stahl, Automobilkomponenten und Haushaltsgeräte vorgeschrieben. Für Hersteller kann der Erwerb des ISI-Zeichens durch BIS-Registrierung den Unterschied zwischen Markterfolg und regulatorischen Rückschlägen ausmachen."
+  },
+  "document": {
+    "title": "Erforderliche Dokumente",
+    "mainHeading": "Erforderliche Dokumente für BIS-Registrierung",
+    "description": "Der Erfolg Ihrer BIS-Registrierung hängt stark von genauen und vollständigen Dokumentationen ab. Unten ist eine Liste der wichtigsten Dokumente, die inländische Hersteller während des BIS-Zertifizierungsprozesses sammeln und einreichen müssen.",
+    "checklistTitle": "Allgemeine Dokumenten-Checkliste",
+    "documentsList": [
+      "1. Ausgefülltes Antragsformular (Formular V oder VI je nach Schema)",
+      "2. Geschäftsregistrierungszertifikat (z.B. Udyam-Registrierung, MSME, GST-Zertifikat)",
+      "3. Fabriklizenz oder Kommunale Handelslizenz",
+      "4. Liste der Fertigungsmaschinen",
+      "5. Fertigungsprozess-Flussdiagramm",
+      "6. Layoutplan der Fertigungsräumlichkeiten",
+      "7. Details des hausinternen Qualitätskontrollpersonals",
+      "8. Details der Prüfausrüstung",
+      "9. Vertrag über technische Zusammenarbeit (falls zutreffend)",
+      "10. Vollmacht/Autorisierungsschreiben",
+      "11. Markenname-Autorisierungsschreiben (bei Antrag unter anderem Markennamen)",
+      "12. Prüfbericht von BIS-genehmigtem Labor",
+      "13. Rechnung für Rohstoffbeschaffung",
+      "14. Fotografien von Produkt und Verpackung",
+      "15. Konformitätserklärung zu Standards",
+      "16. Verpflichtung bezüglich nicht-standardisierter Produkte"
+    ]
+  },
+  "costing": {
+    "title": "Kosten",
+    "mainHeading": "Kosten der BIS-Zertifizierung (bis zertifizierungskosten)",
+    "description": "Das Verständnis der finanziellen Verpflichtung der BIS-Zertifizierung ist für eine ordnungsgemäße Planung von entscheidender Bedeutung. Die Gesamtkosten der BIS-Zertifizierung für inländische Hersteller können je nach Produkttyp, Schema, Prüfanforderungen und Größe der Produktionseinheit variieren. Im Folgenden finden Sie eine detaillierte Aufschlüsselung der häufigsten Kostenkomponenten.",
+    "breakdownTitle": "Standard BIS-Zertifizierungskostenaufschlüsselung",
+    "table": {
+      "headers": {
+        "component": "Kostenkomponente",
+        "amount": "Geschätzter Betrag (INR)"
+      },
+      "rows": [
+        {
+          "component": "Antragsgebühr",
+          "amount": "₹1,000"
+        },
+        {
+          "component": "Produktprüfungsgebühr (pro Produkt)",
+          "amount": "₹15,000 – ₹50,000"
+        },
+        {
+          "component": "Fabrikinspektionsgebühren",
+          "amount": "₹7,000"
+        },
+        {
+          "component": "Lizenzgebühr (Erstgewährung)",
+          "amount": "₹1,000"
+        },
+        {
+          "component": "Kennzeichnungsgebühr (pro Produkt/Jahr)",
+          "amount": "Abhängig vom Produkt"
+        },
+        {
+          "component": "Verlängerungsgebühr (zweijährlich/jährlich)",
+          "amount": "Abhängig vom Produkt"
+        }
+      ]
+    }
+  },
+  "overview": {
+    "title": "Was ist das ISI-Zeichen?",
+    "description": "Das ISI-Zeichen ist das Gütesiegel für Qualität und Sicherheit für Produkte, die in Indien hergestellt und verkauft werden. Die Abkürzung steht für das Indian Standards Institute. Das ISI-Zeichen bedeutet, dass ein Produkt dem von BIS festgelegten indischen Standard (IS) entspricht. Dieses Zeichen garantiert den Verbrauchern, dass das Produkt von einer BIS-Lizenz getestet und zertifiziert wurde und den nationalen Sicherheits-, Leistungs- und Zuverlässigkeitsstandards entspricht.",
+    "commonProducts": {
+      "title": "Zu den häufigen ISI-gekennzeichneten Produkten gehören:",
+      "list": [
+        "Elektrische Geräte wie Bügeleisen, Raumheizungen und Wasserboiler",
+        "Zement",
+        "Stahlprodukte",
+        "Schnellkochtöpfe",
+        "Automobilkomponenten usw."
+      ]
+    },
+    "mandatoryNote": "In vielen Fällen ist das ISI-Zeichen nach indischem Recht vorgeschrieben. Produkte, die unter das obligatorische Zertifizierungssystem fallen, dürfen in Indien nicht ohne diese Zertifizierung verkauft werden.",
+    "bisLicense": {
+      "title": "Was ist eine BIS-Lizenz?",
+      "description1": "Eine BIS-Lizenz ist die offizielle Genehmigung des Bureau of Indian Standards, die es einem Hersteller erlaubt, das ISI-Zeichen auf seinem Produkt zu verwenden. Die Lizenz bescheinigt, dass das Produkt, der Herstellungsprozess und die Einrichtungen alle strengen Qualitätskontrollkriterien des BIS erfüllen.",
+      "description2": "Um eine BIS-Lizenz zu erhalten, muss ein Hersteller den BIS-Registrierungsprozess durchlaufen, der die Einreichung von Dokumentation, Produkttests, Werksbesichtigungen und laufende Überwachung umfasst.",
+      "description3": "Nach der Ausstellung ist die Lizenz für einen bestimmten Zeitraum gültig und muss vor Ablauf erneuert werden. Die Nichteinhaltung der BIS-Normen kann zur Aussetzung oder Stornierung des BIS-Zertifikats führen."
+    },
+    "whyMatters": {
+      "title": "Warum sind sowohl ISI-Zeichen als auch BIS-Lizenz wichtig?",
+      "description1": "Während das ISI-Zeichen das ist, was der Verbraucher sieht und dem er vertraut, ist die BIS-Lizenz die Backend-Genehmigung, die es Herstellern erlaubt, dieses Zeichen legal anzubringen. Ohne gültige BIS-Lizenz stellt die Verwendung des ISI-Zeichens eine Straftat dar.",
+      "description2": "Dies macht die BIS-Registrierung nicht nur zu einer regulatorischen Hürde, sondern zu einem grundlegenden Schritt, um sicherzustellen, dass Ihre Produkte legal in Indien vermarktet und verkauft werden können."
+    },
+    "differences": {
+      "title": "Wichtige Unterschiede zwischen ISI-Zeichen und BIS-Lizenz:",
+      "table": {
+        "headers": {
+          "feature": "Merkmal",
+          "isiMark": "ISI-Zeichen",
+          "bisLicense": "BIS-Lizenz"
+        },
+        "rows": {
+          "purpose": {
+            "label": "Zweck",
+            "isiMark": "Qualitätszeichen auf dem Produkt",
+            "bisLicense": "Genehmigung zur Verwendung des ISI-Zeichens"
+          },
+          "issuedBy": {
+            "label": "Ausgestellt von",
+            "isiMark": "Verwendet unter BIS-Genehmigung",
+            "bisLicense": "Ausgestellt vom Bureau of Indian Standards"
+          },
+          "visibility": {
+            "label": "Sichtbarkeit",
+            "isiMark": "Sichtbar auf dem Produkt",
+            "bisLicense": "Dokument im Besitz des Herstellers"
+          },
+          "mandatory": {
+            "label": "Verpflichtend?",
+            "isiMark": "Ja, für gelistete Produkte",
+            "bisLicense": "Ja, zur Erlangung des ISI-Zeichens"
+          },
+          "renewal": {
+            "label": "Erneuerung",
+            "isiMark": "N/A",
+            "bisLicense": "Regelmäßig erforderlich"
+          }
+        }
+      },
+      "note": "Das Verständnis dieser Unterschiede ist wesentlich, bevor Sie den BIS-Lizenzprozess beginnen oder Ihre BIS-Zertifizierungskosten berechnen. Beide spielen eine entscheidende Rolle für die Compliance und Glaubwürdigkeit inländischer Fertigungsbetriebe."
+    },
+    "whyNeed": {
+      "title": "Warum inländische Hersteller die BIS-Zertifizierung benötigen",
+      "intro": "In Indiens wettbewerbsintensivem Fertigungsumfeld ist die BIS-Zertifizierung nicht nur eine regulatorische Notwendigkeit — sie ist ein strategischer Vorteil. Hier sind die Gründe, warum ein BIS-Zertifikat für inländische Hersteller unverzichtbar ist:",
+      "reasons": {
+        "legal": {
+          "title": "1. Rechtliche Compliance",
+          "description": "Viele Produkte in Indien können ohne BIS-Zertifizierung nicht legal verkauft werden. Gesetzliche Vorschriften verlangen, dass Hersteller eine gültige BIS-Lizenz besitzen, um das ISI-Zeichen auf Produkten anzubringen. Nichteinhaltung kann zu hohen Geldstrafen, Produktrückrufen und Verboten führen."
+        },
+        "quality": {
+          "title": "2. Qualitätssicherung",
+          "description": "Die BIS-Lizenz bestätigt, dass ein Hersteller standardisierte Qualitätsprotokolle befolgt. Die BIS-Zertifizierung umfasst routinemäßige Produkttests und Werksaudits, die sicherstellen, dass nur sichere und zuverlässige Produkte die Verbraucher erreichen. Für inländische Hersteller verbessert sie die interne Qualitätskontrolle und reduziert das Risiko von Mängeln oder Haftungen."
+        },
+        "credibility": {
+          "title": "3. Markenglaubwürdigkeit und Verbrauchervertrauen",
+          "description": "Die Anzeige des ISI-Zeichens auf Ihren Produkten schafft Vertrauen bei den Verbrauchern. Es kommuniziert, dass das Produkt vom indischen BIS zertifiziert wurde — ein Zeichen für Integrität und Zuverlässigkeit. Dieser wahrgenommene Wert führt zu erhöhten Verkäufen und verbesserter Markentreue."
+        },
+        "markets": {
+          "title": "4. Zugang zu breiteren Märkten",
+          "description": "Mit einem BIS-Zertifikat können Hersteller ihre Waren ohne rechtliche Einschränkungen in ganz Indien vertreiben. Einzelhändler, Großhändler und E-Commerce-Plattformen verlangen oft BIS-zertifizierte Produkte, bevor sie diese in ihr Sortiment aufnehmen. Für exportorientierte Einheiten kann die BIS-Zertifizierung auch dazu beitragen, internationale Qualitätserwartungen zu erfüllen."
+        },
+        "advantage": {
+          "title": "5. Wettbewerbsvorteil",
+          "description": "Eine BIS-Lizenz unterscheidet einen Hersteller von nicht registrierten Wettbewerbern. Sie signalisiert ein Engagement für Qualität und Compliance und hilft Unternehmen dabei, öffentliche Aufträge zu gewinnen, an Ausschreibungen teilzunehmen und bevorzugten Zugang zu staatlichen Beschaffungsprogrammen zu erhalten."
+        },
+        "savings": {
+          "title": "6. Langfristige Kosteneinsparungen",
+          "description": "Während die BIS-Zertifizierungskosten zunächst hoch erscheinen mögen, zahlen sie sich durch die Minimierung rechtlicher Risiken, Produktfehler und Reputationsschäden aus. Zusätzlich können verbesserte Fertigungseffizienz und weniger Kundenreklamationen zu langfristigen betrieblichen Einsparungen führen."
+        },
+        "support": {
+          "title": "7. Unterstützung von Regierungsinitiativen",
+          "description": "Durch die Teilnahme an der BIS-Registrierung tragen inländische Hersteller zur indischen Mission der Standardisierung und Qualitätsverbesserung bei. Die Ausrichtung an nationalen Programmen wie 'Make in India' oder 'Aatmanirbhar Bharat' verstärkt das Wohlwollen und die staatliche Unterstützung."
+        }
+      }
+    }
+  },
+  "process": {
+    "title": "Prozess",
+    "mainHeading": "BIS-Zertifizierungsprozess für inländische Hersteller",
+    "description": "Die Erlangung einer BIS-Zertifizierung kann für inländische Hersteller entscheidend sein — erfordert jedoch die Navigation durch einen klar definierten und detaillierten Prozess. Nachfolgend finden Sie eine schrittweise Aufschlüsselung des BIS-Lizenzprozesses, speziell für indische Unternehmen.",
+    "step1": {
+      "title": "Schritt 1: Identifizierung der anwendbaren indischen Norm (IS)",
+      "description": "Vor Einleitung des BIS-Registrierungsprozesses müssen Hersteller bestimmen, ob ihr Produkt unter die obligatorische Zertifizierung fällt. Falls ja, müssen sie die relevante indische Norm (IS-Code) identifizieren, die mit diesem Produkt verbunden ist.",
+      "resources": "Ressourcen:",
+      "list": [
+        "Besuchen Sie die offizielle BIS-Website",
+        "Produktspezifische Benachrichtigungen einsehen",
+        "BIS-anerkannte Berater oder Prüflabore konsultieren"
+      ]
+    },
+    "step2": {
+      "title": "Schritt 2: Vorbereitung der erforderlichen Dokumentation",
+      "description": "Zusammenstellung und Einreichung wesentlicher Dokumente, einschließlich:",
+      "list": [
+        "Antragsformular (Formular V oder VI, je nach Schema)",
+        "Gewerbeanmeldung",
+        "Betriebslizenz",
+        "Liste der Fertigungsanlagen",
+        "Details des Qualitätskontrollpersonals",
+        "Fertigungsprozess-Flussdiagramm",
+        "Layout der Fertigungseinheit"
+      ]
+    },
+    "step3": {
+      "title": "Schritt 3: Produktprüfung in BIS-anerkanntem Labor",
+      "description": "Hersteller müssen Produktproben zur Prüfung an ein BIS-anerkanntes Labor senden. Das Labor bewertet das Produkt basierend auf relevanten IS-Codes und erstellt einen Prüfbericht.",
+      "tips": "Wichtige Tipps:",
+      "list": [
+        "Nur BIS-autorisierte Labore verwenden",
+        "Sicherstellen, dass Probenkennzeichnung und -verpackung BIS-Normen folgen",
+        "Aufzeichnung aller Prüfdokumentation führen"
+      ]
+    },
+    "step4": {
+      "title": "Schritt 4: Online-Antragstellung",
+      "description1": "Mit Dokumenten und Prüfberichten in der Hand müssen Hersteller über das BIS-Portal einen Antrag stellen. Der Antrag sollte enthalten:",
+      "list": [
+        "Unternehmensprofil",
+        "Fertigungs- und Qualitätskontrolldetails",
+        "Produktspezifikationen",
+        "Prüfzertifikate und andere Dokumente"
+      ],
+      "description2": "Der Online-Prozess ermöglicht das Hochladen von Dokumenten und die Verfolgung des Status in Echtzeit."
+    },
+    "step5": {
+      "title": "Schritt 5: Betriebsinspektion durch BIS-Beamte",
+      "description": "Nach der Dokumentenprüfung führen BIS-Beamte eine Vor-Ort-Inspektion der Fertigungsräumlichkeiten durch. Sie überprüfen:",
+      "list": [
+        "Fertigungsinfrastruktur",
+        "Prüfausrüstung",
+        "Rohstofflagerung",
+        "Prozess- und Endqualitätskontrollverfahren"
+      ],
+      "description2": "Die Inspektion stellt die Einhaltung der BIS-Standards sicher und bewertet die Fähigkeit zur konsistenten Produktion konformer Produkte."
+    },
+    "step6": {
+      "title": "Schritt 6: Erteilung der BIS-Lizenz",
+      "description": "Wenn das Produkt die Prüfung besteht und die Betriebsinspektion zufriedenstellend ist, erteilt BIS die Lizenz zur Verwendung des ISI-Zeichens. Der Hersteller erhält ein offizielles BIS-Zertifikat, das je nach Schema ein oder zwei Jahre gültig ist."
+    },
+    "step7": {
+      "title": "Schritt 7: Anbringung des ISI-Symbols",
+      "description": "Das ISI-Zeichen muss gemäß BIS-Kennzeichnungsrichtlinien auf jeder Produkteinheit, Verpackung und manchmal in Marketingmaterialien angebracht werden."
+    },
+    "step8": {
+      "title": "Schritt 8: Laufende Überwachung und Erneuerung",
+      "description": "Die BIS-Zertifizierung unterliegt:",
+      "list": [
+        "Überwachungsinspektionen",
+        "Wiederholung von Probenprüfungen",
+        "Jährliche Erneuerung"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Können Sie die gesuchte Antwort nicht finden?",
+    "contactLink": "Kontaktieren Sie uns!",
+    "questions": [
+      {
+        "question": "Was ist eine BIS-Zertifizierung und warum ist sie wichtig?",
+        "answer": "Die BIS-Zertifizierung wird vom Bureau of Indian Standards ausgestellt, um sicherzustellen, dass Produkte den indischen Sicherheits- und Qualitätsstandards entsprechen. Sie ist für die Rechtskonformität, das Vertrauen der Verbraucher und die Marktakzeptanz von entscheidender Bedeutung."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen BIS-Lizenz und ISI-Zeichen?",
+        "answer": "Die BIS-Lizenz ist ein rechtliches Dokument, das einem Hersteller die Verwendung des ISI-Zeichens genehmigt. Das ISI-Zeichen ist das sichtbare Etikett auf Produkten, das die BIS-Zertifizierung anzeigt."
+      },
+      {
+        "question": "Wie lange dauert es, eine BIS-Zertifizierung zu erhalten?",
+        "answer": "Normalerweise 6–10 Wochen, abhängig von Produkttyp, Prüfanforderungen und Audit-Ergebnissen"
+      },
+      {
+        "question": "Wie lange ist eine BIS-Lizenz gültig?",
+        "answer": "Normalerweise 1 bis 2 Jahre, danach muss sie erneuert werden. Die Erneuerung sollte mindestens 30 Tage vor Ablauf eingeleitet werden."
+      },
+      {
+        "question": "Was kostet eine BIS-Zertifizierung?",
+        "answer": "Die Kosten variieren, können aber zwischen ₹25.000 und ₹100.000+ liegen, einschließlich Prüfungs-, Audit- und Lizenzgebühren."
+      },
+      {
+        "question": "Ist die BIS-Zertifizierung für alle Produkte obligatorisch?",
+        "answer": "Nein. Sie ist nur für Produkte obligatorisch, die unter Schema 1 der BIS-Zertifizierung aufgeführt sind."
+      },
+      {
+        "question": "Wie finde ich den richtigen IS-Standard für mein Produkt?",
+        "answer": "Besuchen Sie die BIS-Website oder konsultieren Sie BIS-anerkannte Prüflabore und Berater, um den anwendbaren Standard zu identifizieren."
+      },
+      {
+        "question": "Können ausländische Hersteller eine BIS-Zertifizierung beantragen?",
+        "answer": "Ja. Über das Foreign Manufacturers Certification Scheme (FMCS) können ausländische Unternehmen BIS-Lizenzen für die Verwendung des ISI-Zeichens erhalten."
+      },
+      {
+        "question": "Was passiert, wenn mein Produkt die BIS-Prüfung nicht besteht?",
+        "answer": "Sie müssen die Probleme korrigieren und erneut zur Prüfung einreichen. Anträge können pausiert werden, bis eine erfolgreiche Konformität nachgewiesen ist."
+      },
+      {
+        "question": "Ist eine BIS-Zertifizierung für den Export erforderlich?",
+        "answer": "Obwohl sie nicht immer für Exporte obligatorisch ist, erhöht die BIS-Zertifizierung die Glaubwürdigkeit und kann internationale Käufer oder Regulierungsbehörden zufriedenstellen."
+      }
+    ]
+  }
+}

@@ -456,5 +456,13 @@
         }
       }
     }
+  },
+  "expertise": {
+    "sectionHeader": "Expertise",
+    "title": "Comment Sun Certifications India peut vous aider avec l'enregistrement BIS sous le schéma CRS",
+    "whyChoose": {
+      "title": "Pourquoi choisir un consultant BIS ?",
+      "description": "Le processus d'enregistrement BIS CRS est hautement technique, réglementé et nécessite beaucoup de documentation. Sans une connaissance approfondie des normes indiennes, des mises à jour QCO, des formats de rapports de test et des flux de travail du portail, les candidats risquent des retards, un rejet ou même une non-conformité à long terme. C'est là qu'intervient Sun Certifications India — votre partenaire de confiance et expérimenté pour naviguer dans chaque étape du schéma de certification obligatoire."
+    }
   }
 }

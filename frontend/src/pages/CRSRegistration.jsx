@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import PropTypes from "prop-types";
 
 import {
   Accordion,
@@ -1077,7 +1078,7 @@ const ServiceFaq = () => {
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Can't find the answer you are looking for?{" "}
+          Can&apos;t find the answer you are looking for?{" "}
           <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
             Reach out to us!
           </span>
@@ -1146,28 +1147,6 @@ const ServiceFaq = () => {
   );
 };
 
-const PointsList = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col w-[441px]">
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[24px] gap-2 ">
-        {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2 ">
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p className=" font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-              {point}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 const PointsListTwo = ({
   points,
   heading,
@@ -1197,6 +1176,13 @@ const PointsListTwo = ({
       </ul>
     </div>
   );
+};
+
+PointsListTwo.propTypes = {
+  points: PropTypes.arrayOf(PropTypes.string).isRequired,
+  heading: PropTypes.string.isRequired,
+  headingTag: PropTypes.string,
+  pointTag: PropTypes.string,
 };
 
 const BISCRSContentLeft = () => {
@@ -2333,32 +2319,28 @@ const ELabelling = () => {
 };
 
 const Expertise = () => {
+  const { t } = useTranslation("BISCRSContent");
+
   return (
     <section id="expertise" className="flex flex-col scroll-mt-20">
       {/* Expertise */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
-          Expertise
+          {t("expertise.sectionHeader")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
       <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        How Sun Certifications India Can Help You with BIS Registration under
-        CRS Scheme
+        {t("expertise.title")}
       </h2>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Why Choose a BIS Consultant?
+        {t("expertise.whyChoose.title")}
       </h3>
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
-        The BIS CRS registration process is highly technical, regulated, and
-        documentation-heavy. Without deep knowledge of Indian Standards, QCO
-        updates, test report formats, and portal workflows, applicants risk
-        delays, rejection, or even long-term non-compliance. That's where Sun
-        Certifications India comes in — your trusted, experienced partner in
-        navigating every step of the compulsory certification scheme.
+        {t("expertise.whyChoose.description")}
       </p>
     </section>
   );

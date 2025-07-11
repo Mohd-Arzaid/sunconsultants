@@ -456,5 +456,13 @@
         }
       }
     }
+  },
+  "expertise": {
+    "sectionHeader": "専門知識",
+    "title": "Sun Certifications IndiaがCRSスキームの下でのBIS登録をお手伝いする方法",
+    "whyChoose": {
+      "title": "なぜBISコンサルタントを選ぶのか？",
+      "description": "BIS CRS登録プロセスは高度に技術的で、規制が厳しく、文書作成が重要です。インド標準、QCO更新、テストレポート形式、ポータルワークフローの深い知識がないと、申請者は遅延、拒否、さらには長期的な非準拠のリスクを負います。ここでSun Certifications Indiaが役立ちます—強制認証スキームのすべてのステップをナビゲートするための信頼できる経験豊富なパートナーです。"
+    }
   }
 }

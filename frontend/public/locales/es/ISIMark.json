@@ -1,0 +1,310 @@
+{
+  "hero": {
+    "badge": "Experiencia Certificada",
+    "title": {
+      "part1": "Certificación BIS para",
+      "part2": "Fabricantes Indios"
+    },
+    "description": "Como parte de la visión 'Make in India', la certificación BIS ayuda a los fabricantes a garantizar la seguridad, calidad y conformidad del producto. Obtenga la certificación y haga crecer su marca con confianza.",
+    "viewServices": "Ver Servicios"
+  },
+  "navigation": {
+    "overview": "Resumen",
+    "process": "Proceso",
+    "document": "Documentos",
+    "costing": "Costos",
+    "faqs": "Preguntas Frecuentes",
+    "toggleMenu": "Alternar menú"
+  },
+  "document": {
+    "title": "Documentos Requeridos",
+    "mainHeading": "Documentos Requeridos para Registro BIS",
+    "description": "El éxito de su registro BIS depende en gran medida de documentación precisa y completa. A continuación se presenta una lista de los documentos clave que los fabricantes domésticos necesitan recopilar y presentar durante el proceso de certificación BIS.",
+    "checklistTitle": "Lista de Verificación General de Documentos",
+    "documentsList": [
+      "1. Formulario de Solicitud Completo (Formulario V o VI dependiendo del esquema)",
+      "2. Certificado de Registro Comercial (ej. Registro Udyam, MSME, Certificado GST)",
+      "3. Licencia de Fábrica o Licencia de Comercio Municipal",
+      "4. Lista de Maquinaria de Fabricación",
+      "5. Diagrama de Flujo del Proceso de Fabricación",
+      "6. Plan de Diseño de las Instalaciones de Fabricación",
+      "7. Detalles del Personal de Control de Calidad Interno",
+      "8. Detalles del Equipo de Pruebas",
+      "9. Acuerdo de Colaboración Técnica (si aplica)",
+      "10. Poder Notarial/Carta de Autorización",
+      "11. Carta de Autorización del Nombre de Marca (si se aplica bajo una marca diferente)",
+      "12. Reporte de Prueba de laboratorio aprobado por BIS",
+      "13. Factura de Adquisición de Materia Prima",
+      "14. Fotografías del Producto y Empaque",
+      "15. Declaración de Conformidad con Estándares",
+      "16. Compromiso Respecto a Productos No Estándar"
+    ]
+  },
+  "process": {
+    "title": "Proceso",
+    "mainHeading": "Proceso de Certificación BIS para Fabricantes Domésticos",
+    "description": "Obtener una certificación BIS puede ser un cambio radical para los fabricantes domésticos, pero requiere navegar por un proceso bien definido y detallado. A continuación se presenta un desglose paso a paso del proceso de licencia BIS, adaptado específicamente para empresas indias.",
+    "step1": {
+      "title": "Paso 1: Identificar el Estándar Indio Aplicable (IS)",
+      "description": "Antes de iniciar el proceso de registro BIS, los fabricantes deben determinar si su producto está bajo certificación obligatoria. Si es así, necesitan identificar el Estándar Indio relevante (código IS) asociado con ese producto.",
+      "resources": "Recursos:",
+      "list": [
+        "Visite el sitio web oficial de BIS",
+        "Consulte las notificaciones específicas del producto",
+        "Consulte con consultores reconocidos por BIS o laboratorios de pruebas"
+      ]
+    },
+    "step2": {
+      "title": "Paso 2: Preparar la Documentación Requerida",
+      "description": "Compile y presente documentos esenciales, incluyendo:",
+      "list": [
+        "Formulario de solicitud (Formulario V o VI, según el esquema)",
+        "Certificado de registro comercial",
+        "Licencia de fábrica",
+        "Lista de equipos de fabricación",
+        "Detalles del personal de control de calidad",
+        "Diagrama de flujo del proceso de fabricación",
+        "Diseño de la unidad de fabricación"
+      ]
+    },
+    "step3": {
+      "title": "Paso 3: Prueba del Producto en Laboratorio Reconocido por BIS",
+      "description": "Los fabricantes deben enviar muestras del producto a un laboratorio reconocido por BIS para pruebas. El laboratorio evaluará el producto basándose en códigos IS relevantes y emitirá un reporte de prueba.",
+      "tips": "Consejos Importantes:",
+      "list": [
+        "Use solo laboratorios autorizados por BIS",
+        "Asegúrese de que el etiquetado y empaque de muestras sigan las normas BIS",
+        "Mantenga un registro de toda la documentación de pruebas"
+      ]
+    },
+    "step4": {
+      "title": "Paso 4: Presentar Solicitud en Línea",
+      "description1": "Con documentos y reportes de prueba en mano, los fabricantes deben aplicar a través del portal BIS. La solicitud debe incluir:",
+      "list": [
+        "Perfil de la empresa",
+        "Detalles de fabricación y control de calidad",
+        "Especificaciones del producto",
+        "Certificados de prueba y otros documentos"
+      ],
+      "description2": "El proceso en línea permite cargar documentos y rastrear el estado en tiempo real."
+    },
+    "step5": {
+      "title": "Paso 5: Auditoría de Fábrica por Oficiales BIS",
+      "description": "Después de la verificación de documentos, los oficiales BIS realizan una inspección in situ de las instalaciones de fabricación. Verifican:",
+      "list": [
+        "Infraestructura de fabricación",
+        "Equipo de pruebas",
+        "Almacenamiento de materias primas",
+        "Procedimientos de control de calidad en proceso y final"
+      ],
+      "description2": "La auditoría asegura el cumplimiento con estándares BIS y evalúa la capacidad de producir consistentemente productos conformes."
+    },
+    "step6": {
+      "title": "Paso 6: Otorgamiento de Licencia BIS",
+      "description": "Si el producto pasa las pruebas y la auditoría de fábrica es satisfactoria, BIS otorga la licencia para usar la marca ISI. El fabricante recibe un certificado BIS oficial, válido por uno o dos años dependiendo del esquema."
+    },
+    "step7": {
+      "title": "Paso 7: Marcado del Símbolo ISI",
+      "description": "La marca ISI debe fijarse en cada unidad del producto, empaque, y a veces en literatura de marketing, según las pautas de marcado BIS."
+    },
+    "step8": {
+      "title": "Paso 8: Vigilancia Continua y Renovación",
+      "description": "La certificación BIS está sujeta a:",
+      "list": [
+        "Inspecciones de vigilancia",
+        "Re-prueba de muestras",
+        "Renovación anual"
+      ]
+    }
+  },
+  "costing": {
+    "title": "Costos",
+    "mainHeading": "Costo de Certificación BIS (costo de certificación bis)",
+    "description": "Entender el compromiso financiero de la certificación BIS es vital para una planificación adecuada. El costo total de certificación BIS para fabricantes domésticos puede variar según el tipo de producto, esquema, requisitos de pruebas y el tamaño de la unidad de producción. A continuación se presenta un desglose detallado de los componentes de costo comunes.",
+    "breakdownTitle": "Desglose Estándar de Costos de Certificación BIS",
+    "table": {
+      "headers": {
+        "component": "Componente de Costo",
+        "amount": "Cantidad Estimada (INR)"
+      },
+      "rows": [
+        {
+          "component": "Tarifa de Solicitud",
+          "amount": "₹1,000"
+        },
+        {
+          "component": "Tarifa de Prueba de Producto (por producto)",
+          "amount": "₹15,000 – ₹50,000"
+        },
+        {
+          "component": "Cargos de Inspección de Fábrica",
+          "amount": "₹7,000"
+        },
+        {
+          "component": "Tarifa de Licencia (Otorgamiento Inicial)",
+          "amount": "₹1,000"
+        },
+        {
+          "component": "Tarifa de Marcado (por producto/año)",
+          "amount": "Depende del producto"
+        },
+        {
+          "component": "Tarifa de Renovación (bienal/anual)",
+          "amount": "Depende del producto"
+        }
+      ]
+    }
+  },
+  "introduction": {
+    "title": "Introducción a la Certificación BIS en India para Fabricantes Indios",
+    "paragraph1": "El ecosistema de fabricación de India está experimentando una transformación dinámica, y con el impulso del gobierno hacia 'Make in India', garantizar la calidad y el cumplimiento de los productos nunca ha sido más vital. Uno de los pasos más cruciales para cualquier fabricante nacional que aspire a prosperar en el mercado indio es obtener la certificación BIS.",
+    "paragraph2": "La Oficina de Estándares de India (BIS) es el organismo nacional responsable de establecer y mantener los estándares de calidad de los productos. El certificado BIS asegura que un producto cumple con los estándares indios específicos y es seguro, confiable y de buena calidad.",
+    "paragraph3": "Para los fabricantes nacionales, la certificación BIS no es simplemente un requisito legal; es una marca de confianza. La licencia BIS señala el cumplimiento, abre el acceso a mercados más amplios y mejora la credibilidad de la marca. Con el énfasis generalizado en la garantía de calidad y la seguridad del cliente, el sistema BIS indio se ha convertido en la columna vertebral regulatoria tanto para los sectores de productos industriales como de consumo.",
+    "paragraph4": "La certificación BIS también incluye la marca ISI, un indicador clave de que un producto cumple con las especificaciones del Instituto de Estándares de India. Los productos con marca ISI son a menudo obligatorios en sectores como electrónica, cemento, acero, componentes automotrices y bienes del hogar. Para los fabricantes, obtener la marca ISI a través del registro BIS puede ser la diferencia entre el éxito en el mercado y los contratiempos regulatorios."
+  },
+  "overview": {
+    "title": "¿Qué es la Marca ISI?",
+    "description": "La marca ISI es el sello distintivo de calidad y seguridad para productos fabricados y vendidos en India. Abreviatura del Instituto de Estándares de India, la marca ISI significa que un producto cumple con el estándar indio (IS) especificado por BIS. Esta marca garantiza a los consumidores que el producto ha sido probado y certificado por una licencia BIS y cumple con los estándares nacionales de seguridad, rendimiento y fiabilidad.",
+    "commonProducts": {
+      "title": "Los productos comunes con marca ISI incluyen:",
+      "list": [
+        "Electrodomésticos como planchas eléctricas, calentadores y calentadores de agua",
+        "Cemento",
+        "Productos de acero",
+        "Ollas a presión",
+        "Componentes automotrices, etc."
+      ]
+    },
+    "mandatoryNote": "En muchos casos, tener la marca ISI es obligatorio según la ley india. Los productos que caen bajo el Esquema de Certificación Obligatoria no pueden venderse en India sin esta certificación.",
+    "bisLicense": {
+      "title": "¿Qué es una Licencia BIS?",
+      "description1": "Una licencia BIS es la autorización formal emitida por la Oficina de Estándares de India que permite a un fabricante usar la marca ISI en su producto. La licencia certifica que el producto, el proceso de fabricación y las instalaciones han cumplido con los rigurosos criterios de control de calidad de BIS.",
+      "description2": "Para obtener una licencia BIS, un fabricante debe pasar por el proceso de registro BIS, que incluye presentar documentación, pruebas de productos, inspecciones de fábrica y vigilancia continua.",
+      "description3": "Una vez emitida, la licencia es válida por un período específico y debe renovarse antes de su vencimiento. El incumplimiento de las normas BIS puede llevar a la suspensión o cancelación del certificado BIS."
+    },
+    "whyMatters": {
+      "title": "¿Por qué son importantes tanto la marca ISI como la licencia BIS?",
+      "description1": "Mientras que la marca ISI es lo que el consumidor ve y confía, la licencia BIS es la aprobación de respaldo que permite a los fabricantes colocar esta marca legalmente. Sin una licencia BIS válida, usar la marca ISI constituye un delito legal.",
+      "description2": "Esto hace que el registro BIS no sea solo un obstáculo regulatorio sino un paso fundamental para asegurar que sus productos puedan comercializarse y venderse legalmente en India."
+    },
+    "differences": {
+      "title": "Diferencias clave entre la marca ISI y la licencia BIS:",
+      "table": {
+        "headers": {
+          "feature": "Característica",
+          "isiMark": "Marca ISI",
+          "bisLicense": "Licencia BIS"
+        },
+        "rows": {
+          "purpose": {
+            "label": "Propósito",
+            "isiMark": "Marca de calidad en el producto",
+            "bisLicense": "Aprobación para usar la marca ISI"
+          },
+          "issuedBy": {
+            "label": "Emitido por",
+            "isiMark": "Usado bajo autorización BIS",
+            "bisLicense": "Emitido por la Oficina de Estándares de India"
+          },
+          "visibility": {
+            "label": "Visibilidad",
+            "isiMark": "Visible en el producto",
+            "bisLicense": "Documento en poder del fabricante"
+          },
+          "mandatory": {
+            "label": "¿Obligatorio?",
+            "isiMark": "Sí, para productos listados",
+            "bisLicense": "Sí, para obtener la marca ISI"
+          },
+          "renewal": {
+            "label": "Renovación",
+            "isiMark": "N/A",
+            "bisLicense": "Requerida periódicamente"
+          }
+        }
+      },
+      "note": "Entender estas distinciones es esencial antes de comenzar el proceso de licencia BIS o calcular su costo de certificación BIS. Ambos juegan roles cruciales en el cumplimiento y la credibilidad de las operaciones de fabricación doméstica."
+    },
+    "whyNeed": {
+      "title": "Por qué los fabricantes nacionales necesitan la certificación BIS",
+      "intro": "En el entorno competitivo de fabricación de India, la certificación BIS no es solo una necesidad regulatoria — es un activo estratégico. Aquí está por qué obtener un certificado BIS es indispensable para los fabricantes nacionales:",
+      "reasons": {
+        "legal": {
+          "title": "1. Cumplimiento Legal",
+          "description": "Muchos productos en India no pueden venderse legalmente sin la certificación BIS. Las regulaciones gubernamentales exigen que los fabricantes obtengan una licencia BIS válida para colocar la marca ISI en los productos. El incumplimiento puede llevar a multas costosas, retiros de productos y prohibiciones."
+        },
+        "quality": {
+          "title": "2. Aseguramiento de la Calidad",
+          "description": "La licencia BIS confirma que un fabricante sigue protocolos de calidad estandarizados. La certificación BIS involucra pruebas rutinarias de productos y auditorías de fábrica, asegurando que solo productos seguros y confiables lleguen a los consumidores. Para los fabricantes nacionales, mejora el control de calidad interno y reduce el riesgo de defectos o responsabilidades."
+        },
+        "credibility": {
+          "title": "3. Credibilidad de Marca y Confianza del Consumidor",
+          "description": "Mostrar la marca ISI en sus productos genera confianza entre los consumidores. Comunica que el producto ha sido certificado por el BIS indio — una marca de integridad y confiabilidad. Este valor percibido se traduce en mayores ventas y mejor lealtad a la marca."
+        },
+        "markets": {
+          "title": "4. Acceso a Mercados más Amplios",
+          "description": "Con un certificado BIS, los fabricantes pueden distribuir sus productos en toda India sin restricciones legales. Los minoristas, mayoristas y plataformas de comercio electrónico a menudo requieren productos certificados por BIS antes de incorporarlos. Para unidades orientadas a la exportación, la certificación BIS también puede ayudar a satisfacer las expectativas de calidad internacionales."
+        },
+        "advantage": {
+          "title": "5. Ventaja Competitiva",
+          "description": "Tener una licencia BIS distingue a un fabricante de los competidores no registrados. Señala un compromiso con la calidad y el cumplimiento, ayudando a las empresas a ganar contratos públicos, participar en licitaciones y obtener acceso preferencial en esquemas de adquisición gubernamental."
+        },
+        "savings": {
+          "title": "6. Ahorros a Largo Plazo",
+          "description": "Si bien el costo de la certificación BIS puede parecer alto inicialmente, se compensa al minimizar riesgos legales, fallas de productos y daños a la reputación. Además, la mejora en la eficiencia de fabricación y menos quejas de clientes pueden resultar en ahorros operativos a largo plazo."
+        },
+        "support": {
+          "title": "7. Apoyo a Iniciativas Gubernamentales",
+          "description": "Al participar en el registro BIS, los fabricantes nacionales contribuyen a la misión india de estandarización y mejora de la calidad. Alinearse con programas nacionales como 'Make in India' o 'Aatmanirbhar Bharat' mejora la buena voluntad y el apoyo gubernamental."
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "¿No puede encontrar la respuesta que busca?",
+    "contactLink": "¡Contáctanos!",
+    "questions": [
+      {
+        "question": "¿Qué es la certificación BIS y por qué es importante?",
+        "answer": "La certificación BIS es emitida por el Bureau of Indian Standards para garantizar que los productos cumplan con los estándares indios de seguridad y calidad. Es vital para el cumplimiento legal, la confianza del consumidor y la aceptación del mercado."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre la licencia BIS y la marca ISI?",
+        "answer": "La licencia BIS es un documento legal que autoriza a un fabricante a usar la marca ISI. La marca ISI es la etiqueta visible en los productos que indica la certificación BIS."
+      },
+      {
+        "question": "¿Cuánto tiempo toma obtener la certificación BIS?",
+        "answer": "Típicamente, 6–10 semanas dependiendo del tipo de producto, requisitos de prueba y resultados de auditoría"
+      },
+      {
+        "question": "¿Cuál es el período de validez de una licencia BIS?",
+        "answer": "Usualmente 1 a 2 años, después de lo cual debe renovarse. La renovación debe iniciarse al menos 30 días antes del vencimiento."
+      },
+      {
+        "question": "¿Cuál es el costo de la certificación BIS?",
+        "answer": "Los costos varían pero pueden oscilar entre ₹25,000 a ₹100,000+, incluyendo tarifas de prueba, auditoría y licencia."
+      },
+      {
+        "question": "¿Es obligatoria la certificación BIS para todos los productos?",
+        "answer": "No. Es obligatoria solo para productos listados bajo el esquema 1 de certificación BIS."
+      },
+      {
+        "question": "¿Cómo puedo encontrar el estándar IS correcto para mi producto?",
+        "answer": "Visite el sitio web de BIS o consulte con laboratorios de prueba y consultores reconocidos por BIS para identificar el estándar aplicable."
+      },
+      {
+        "question": "¿Pueden los fabricantes extranjeros solicitar la certificación BIS?",
+        "answer": "Sí. A través del Esquema de Certificación de Fabricantes Extranjeros (FMCS), las entidades extranjeras pueden obtener licencias BIS para el uso de la marca ISI."
+      },
+      {
+        "question": "¿Qué pasa si mi producto falla las pruebas BIS?",
+        "answer": "Necesitará corregir los problemas y volver a presentar para prueba. Las aplicaciones pueden pausarse hasta que se demuestre cumplimiento exitoso."
+      },
+      {
+        "question": "¿Se necesita la certificación BIS para exportación?",
+        "answer": "Aunque no siempre es obligatoria para exportaciones, la certificación BIS aumenta la credibilidad y puede satisfacer a compradores internacionales o cuerpos regulatorios."
+      }
+    ]
+  }
+}
