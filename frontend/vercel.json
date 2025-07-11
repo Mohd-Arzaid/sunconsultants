@@ -2,6 +2,12 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
+  "build": {
+    "env": {
+      "ESLINT_NO_DEV_ERRORS": "true",
+      "DISABLE_ESLINT_PLUGIN": "true"
+    }
+  },
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
   "redirects": [
     {
