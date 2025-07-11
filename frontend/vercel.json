@@ -5,8 +5,8 @@
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
   "redirects": [
     {
-      "source": "/latest-notification/bis-certificate-for-:slug",
-      "destination": "/bis-qco-updates/bis-certificate-for-:slug",
+      "source": "/latest-notification/bis-certificate-for-(.*)",
+      "destination": "/bis-qco-updates/bis-certificate-for-$1",
       "permanent": true
     }
   ],
