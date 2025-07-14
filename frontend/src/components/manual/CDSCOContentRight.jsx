@@ -965,40 +965,39 @@ const FreeCallBack = () => {
     if (path.includes("/cb-certification")) return "CB Certification";
 
     // schemeX
-    if (path.includes("/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/indian-bis-certification-under-scheme-x")) return "SchemeX";
+
+    if (path.includes("/de/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/de/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/en/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/en/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/es/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/es/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/fr/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/fr/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/id/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/id/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/it/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/it/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/ja/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/ja/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/ko/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/ko/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/nl/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/nl/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/th/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
-    if (path.includes("/th/BIS/indian-bis-certification-under-scheme-x"))
-      return "SchemeX";
-
-    if (path.includes("/vi/BIS/indian-bis-certification-under-scheme-x"))
+    if (path.includes("/vi/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
   };
 
