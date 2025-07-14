@@ -42,7 +42,7 @@ const ISIMark = () => {
         />
         <meta
           name="keywords"
-          content="ISI Mark, BIS certification, Indian Standards, product certification, quality mark"
+          content="ISI Mark, BIS certification, Indian Standards, product certification"
         />
         <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

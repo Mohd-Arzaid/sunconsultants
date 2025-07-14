@@ -3,8 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
-import SchemeXImage from "../assets/servicesImages/SchemeXImage.jpg";
-// import BISCertificateImage from "../assets/bisfmpageimage/biscertificate.png";
+import SchemeXImage from "../assets/servicesImages/schemeXImage.jpg";
 import {
   Table,
   TableBody,
@@ -22,7 +21,6 @@ import {
 } from "@/components/ui/accordion";
 
 import ServiceContactForm from "@/common/ServiceContactForm";
-import { BISFMContentLeft, BISFMIndex } from "@/components/manual/BISFM";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 import Services from "../components/manual/Services";
 import Footer from "@/common/Footer";
@@ -669,7 +667,7 @@ export const SchemeX = () => {
         />
         <meta
           name="keywords"
-          content="BIS Scheme X, machinery certification, electrical equipment certification, ISI Mark for machinery, BIS certification for exports, BIS license for foreign companies, BIS compliance, Indian Standards certification"
+          content="BIS Scheme X, machinery certification, electrical equipment certification"
         />
         <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -1191,9 +1189,9 @@ const OverviewSection = () => {
         {t("overviewSection.mainTitle")}
       </h2>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      {/* <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         {t("overviewSection.overviewTitle")}
-      </h3>
+      </h3> */}
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         {t("overviewSection.overviewContent")}
@@ -2448,7 +2446,7 @@ export default SchemeX;
 const downloadTableData = () => {
   // Create a link element to download the PDF
   const link = document.createElement("a");
-  link.href = "/pdf/SchemeXtable.pdf"; // Path to your PDF in public/pdf folder
+  link.href = "/pdf/schemeXtable.pdf"; // Path to your PDF in public/pdf folder
   link.download = "SchemeXtable.pdf"; // File name for download
   link.target = "_blank"; // Open in new tab if direct download fails
 

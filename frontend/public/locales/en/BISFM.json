@@ -1,8 +1,10 @@
 {
   "hero": {
     "badge": "Certified Expertise",
-    "titlePart1": "BIS Certificate",
-    "titlePart2": "for Foreign Manufacturers",
+    "titlePart1": "Indian BIS Certification",
+    "titlePart2": "for foreign manufactures",
+
+  
     "description": "Foreign manufacturers need ISI mark for exports to India. Covers 600+ mandatory products and 20,000+ voluntary products.",
     "viewServices": "View Services"
   },
@@ -64,17 +66,17 @@
       "Market Access: Helps foreign brands gain seamless entry and widespread acceptance in India.",
       "Risk Mitigation: Ensures that products are safe, thus avoiding potential recalls and liability issues."
     ],
-    "scopeTitle": "Scope of Products Covered",
+    "scopeTitle": "Scope of Products Covered in BIS",
     "scopeDesc": "BIS has listed over 600 products under mandatory certification, and over 20,000 items are eligible for voluntary BIS certificate. These span a wide range of industries:",
     "scopePoints": [
       "Electronics & IT hardware",
-      "Automotive parts",
+      "Automotive parts", 
       "Household appliances",
       "Steel products",
       "Cement and construction materials etc."
     ],
     "scopeEndNote": "The growing list indicates the increasing scope and relevance of BIS certificate in global trade.",
-    "objectivesTitle": "Objectives or benefits of BIS Certification for Foreign Manufacturers",
+    "objectivesTitle": "Objectives or benefits of BIS Certification for Foreign Manufacturers under FMCS",
     "objectivesDesc": "The FMCS and BIS certificate regime aim to:",
     "objectivesPoints": [
       "Use of the ISI mark without a valid BIS license is punishable by law.",

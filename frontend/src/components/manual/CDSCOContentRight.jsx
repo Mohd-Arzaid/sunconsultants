@@ -950,9 +950,6 @@ const FreeCallBack = () => {
     if (path.includes("/vi/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration";
 
-
-
-
     if (
       path.includes("/information-about-peso-certification-peso-license-india")
     )
@@ -967,32 +964,42 @@ const FreeCallBack = () => {
     if (path.includes("/emi-emc-certification")) return "EMI EMC";
     if (path.includes("/cb-certification")) return "CB Certification";
 
+    // schemeX
+    if (path.includes("/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-     // schemeX
-    if (path.includes("/schemeX")) return "SchemeX";
+    if (path.includes("/de/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/de/schemeX")) return "SchemeX";
+    if (path.includes("/en/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/en/schemeX")) return "SchemeX";
+    if (path.includes("/es/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/es/schemeX")) return "SchemeX";
+    if (path.includes("/fr/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/fr/schemeX")) return "SchemeX";
+    if (path.includes("/id/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/id/schemeX")) return "SchemeX";
+    if (path.includes("/it/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/it/schemeX")) return "SchemeX";
+    if (path.includes("/ja/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/ja/schemeX")) return "SchemeX";
+    if (path.includes("/ko/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/ko/schemeX")) return "SchemeX";
+    if (path.includes("/nl/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/nl/schemeX")) return "SchemeX";
+    if (path.includes("/th/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
 
-    if (path.includes("/th/schemeX")) return "SchemeX";
-
-    if (path.includes("/vi/schemeX")) return "SchemeX";
-    
+    if (path.includes("/vi/BIS/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
   };
 
   const [formData, setFormData] = useState({

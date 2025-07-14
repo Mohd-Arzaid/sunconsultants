@@ -44,7 +44,7 @@ export const BISFM = () => {
         />
         <meta
           name="keywords"
-          content="BIS FMCS, Foreign Manufacturer Certification Scheme, ISI Mark for foreign manufacturers, BIS certification for exports, BIS license for foreign companies, BIS compliance, Indian Standards certification"
+          content="BIS Certificate for foreign manufactures, BIS License, ISI Mark"
         />
         <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -562,9 +562,9 @@ export const BISFMContentLeft = () => {
             {t("overview.mainTitle")}
           </article>
 
-          <h1 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] ">
+          <h2 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] ">
             {t("overview.whatIsBIS.title")}
-          </h1>
+          </h2>
 
           <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-1">
             {t("overview.whatIsBIS.description1")}
@@ -1423,9 +1423,9 @@ const SurveillanceSection = () => {
         {t("surveillance.mainHeading")}
       </h3>
 
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      {/* <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         {t("surveillance.overview.title")}
-      </p>
+      </p> */}
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         {t("surveillance.overview.description1")}
@@ -1456,9 +1456,9 @@ const FacilitatorSection = () => {
         {t("facilitator.mainHeading")}
       </h3>
 
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      {/* <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         {t("facilitator.intro.title")}
-      </p>
+      </p> */}
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         {t("facilitator.intro.description")}

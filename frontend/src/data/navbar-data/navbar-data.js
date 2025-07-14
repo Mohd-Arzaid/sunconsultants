@@ -57,7 +57,7 @@ export const NAVIGATION_DATA = {
     {
       id: 5,
       name: "Scheme X",
-      link: "/schemeX",
+      link: "/BIS/indian-bis-certification-under-scheme-x",
       icon: Cpu,
       desktopOrder: 5,
       mobileOrder: 8,

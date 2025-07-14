@@ -32,7 +32,7 @@ import Videos from "./pages/Videos";
 
 // Service pages - direct imports
 import CDSCO from "./pages/CDSCO";
-import SchemeX from "./pages/SchemeX";
+
 import CRSRegistration from "./pages/CRSRegistration";
 import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
@@ -54,6 +54,7 @@ import { LMPC } from "./components/manual/LMPC";
 import { PlasticWaste } from "./components/manual/PlasticWaste";
 import { LegalMetrology } from "./components/manual/LegalMetrology";
 import LHSCable from "./pages/LHSCable";
+import SchemeX from "./pages/SchemeX";
 
 // Component to set English language for default routes
 function EnglishWrapper() {
@@ -102,7 +103,10 @@ function App() {
 
           {/* Services Pages */}
           <Route path="cdsco-registration-certification" element={<CDSCO />} />
-          <Route path="schemeX" element={<SchemeX />} />
+          <Route
+            path="BIS/indian-bis-certification-under-scheme-x"
+            element={<SchemeX />}
+          />
           <Route
             path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
             element={<BISFM />}
@@ -189,7 +193,10 @@ function App() {
 
           {/* Services Pages */}
           <Route path="cdsco-registration-certification" element={<CDSCO />} />
-          <Route path="schemeX" element={<SchemeX />} />
+          <Route
+            path="BIS/indian-bis-certification-under-scheme-x"
+            element={<SchemeX />}
+          />
           <Route
             path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
             element={<BISFM />}

@@ -499,7 +499,7 @@ const CRSRegistration = () => {
         />
         <meta
           name="keywords"
-          content="bis crs, crs certification, bis certification, registration scheme, indian standards, crs registration, bis certificate, bis crs certification, compulsory registration scheme, bis crs registration, bis crs process, bis crs logo, indian bis, process for crs registration, cost of crs, cost of crs certificate, documents of crs registration"
+          content="bis crs, crs certification, bis certification, registration scheme"
         />
 
         {/* Open Graph Tags */}
@@ -1751,9 +1751,9 @@ const Registration = () => {
         {t("registration.title")}
       </h2>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      {/* <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         {t("registration.overview.title")}
-      </h3>
+      </h3> */}
 
       <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-relaxed md:leading-loose">
         {t("registration.overview.description")}

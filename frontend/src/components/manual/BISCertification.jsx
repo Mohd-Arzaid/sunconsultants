@@ -41,7 +41,7 @@ export const BISCertification = () => {
         />
         <meta
           name="keywords"
-          content="BIS certification, ISI Mark, BIS License, BIS registration, Indian Standards, product certification"
+          content="BIS certification, ISI Mark, BIS License"
         />
         <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
