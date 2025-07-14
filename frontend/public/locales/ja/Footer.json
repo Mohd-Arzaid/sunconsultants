@@ -1,0 +1,68 @@
+{
+  "header": {
+    "title": "詳しく知りたいですか？",
+    "description": "<1>admin@bis-certifications.com</1>までメールをお送りいただくか、以下のオプションをご利用ください。通常24時間以内にお返事いたします。",
+    "divider": "または"
+  },
+  "socialLinks": {
+    "whatsapp": "WhatsAppでお問い合わせ",
+    "call": "お電話でのお問い合わせ：+91 80105 05057",
+    "linkedin": "LinkedInでフォロー",
+    "github": "GitHubをご覧ください",
+    "twitter": "X（旧Twitter）でフォロー",
+    "email": "メールでお問い合わせ",
+    "instagram": "Instagramでフォロー"
+  },
+  "company": {
+    "name": "サン・サーティフィケーションズ・インディア",
+    "tagline": "認証手続きの簡素化",
+    "newsletter": {
+      "title": "ニュースレターを購読",
+      "placeholder": "メールアドレスを入力",
+      "button": "登録"
+    }
+  },
+  "sections": {
+    "address": {
+      "title": "所在地",
+      "content": "デリー M-15、フェーズ-1、バドリ工業団地、デリー-110042、インド"
+    },
+    "services": {
+      "title": "サービス一覧",
+      "links": {
+        "tec": "TEC認証",
+        "isiMark": "ISIマーク",
+        "ceCertification": "CE認証",
+        "epr": "EPR認証",
+        "rohs": "RoHS認証",
+        "wpc": "WPC認証"
+      }
+    },
+    "company": {
+      "title": "企業情報",
+      "links": {
+        "about": "会社概要",
+        "contact": "お問い合わせ",
+        "clients": "お客様実績",
+        "faqs": "よくある質問",
+        "sitemap": "サイトマップ"
+      }
+    },
+    "news": {
+      "title": "お知らせ",
+      "links": {
+        "blogs": "ブログ記事",
+        "latestUpdates": "最新情報",
+        "ministryUpdates": "省庁からの更新情報",
+        "webinarUpdates": "ウェビナー情報",
+        "gallery": "ギャラリー"
+      }
+    }
+  },
+  "footer": {
+    "language": "日本語",
+    "copyright": "© 2025 Sun Certifications India. All Rights Reserved.",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約"
+  }
+}

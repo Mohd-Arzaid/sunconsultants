@@ -18,8 +18,14 @@ export default defineConfig({
     minify: "esbuild",
     target: "es2020",
     cssCodeSplit: true,
+    // Cache busting configuration
+    assetsDir: "assets",
     rollupOptions: {
       output: {
+        // Add hash to all output files for cache busting
+        entryFileNames: "assets/[name].[hash].js",
+        chunkFileNames: "assets/[name].[hash].js",
+        assetFileNames: "assets/[name].[hash].[ext]",
         manualChunks: {
           "vendor-react": ["react", "react-dom", "react-router-dom"],
           "vendor-ui": [

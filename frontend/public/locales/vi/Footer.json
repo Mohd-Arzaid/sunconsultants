@@ -1,0 +1,68 @@
+{
+  "header": {
+    "title": "Muốn biết thêm?",
+    "description": "Gửi email cho chúng tôi tại <1>admin@bis-certifications.com</1> hoặc sử dụng một trong các tùy chọn bên dưới. Chúng tôi thường phản hồi trong vòng 24 giờ.",
+    "divider": "hoặc"
+  },
+  "socialLinks": {
+    "whatsapp": "Liên hệ chúng tôi qua WhatsApp",
+    "call": "Gọi cho chúng tôi tại +91 80105 05057",
+    "linkedin": "Truy cập trang LinkedIn của chúng tôi",
+    "github": "Truy cập hồ sơ GitHub của chúng tôi",
+    "twitter": "Theo dõi chúng tôi trên X (trước đây là Twitter)",
+    "email": "Gửi email cho chúng tôi",
+    "instagram": "Theo dõi chúng tôi trên Instagram"
+  },
+  "company": {
+    "name": "Sun Certifications India",
+    "tagline": "Đơn giản hóa Chứng nhận",
+    "newsletter": {
+      "title": "Đăng ký nhận bản tin của chúng tôi",
+      "placeholder": "nhập email của bạn",
+      "button": "Thông báo cho tôi"
+    }
+  },
+  "sections": {
+    "address": {
+      "title": "Địa chỉ",
+      "content": "M-15, Giai đoạn-1, Khu Công nghiệp Badli, Delhi-110042, Ấn Độ"
+    },
+    "services": {
+      "title": "Dịch vụ của chúng tôi",
+      "links": {
+        "tec": "TEC",
+        "isiMark": "ISI MARK",
+        "ceCertification": "CHỨNG NHẬN CE",
+        "epr": "EPR",
+        "rohs": "ROHS",
+        "wpc": "WPC"
+      }
+    },
+    "company": {
+      "title": "Công ty",
+      "links": {
+        "about": "Về chúng tôi",
+        "contact": "Liên hệ",
+        "clients": "Khách hàng",
+        "faqs": "Câu hỏi thường gặp",
+        "sitemap": "Sơ đồ trang web"
+      }
+    },
+    "news": {
+      "title": "Tin tức & Thông báo",
+      "links": {
+        "blogs": "Blog",
+        "latestUpdates": "Cập nhật mới nhất",
+        "ministryUpdates": "Cập nhật từ Bộ",
+        "webinarUpdates": "Cập nhật Webinar",
+        "gallery": "Thư viện ảnh"
+      }
+    }
+  },
+  "footer": {
+    "language": "Tiếng Việt (VI)",
+    "copyright": "Bản quyền © 2025 Sun Certifications India. Tất cả quyền được bảo lưu.",
+    "privacyPolicy": "Chính sách bảo mật",
+    "termsOfService": "Điều khoản dịch vụ"
+  }
+}

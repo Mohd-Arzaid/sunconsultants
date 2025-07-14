@@ -1,0 +1,14 @@
+{
+  "title": "우리의 서비스",
+  "subtitle": "인도 최고의 인증 컨설턴트",
+  "services": {
+    "bisMarkForeign": "외국 제조업체를 위한 BIS 마크 (ISI 라이센스)",
+    "cdscoRegistration": "CDSCO 등록 인증",
+    "bisRegistration": "BIS (CRS) 등록",
+    "plasticWasteManagement": "플라스틱 폐기물 관리",
+    "eprCertificate": "EPR 인증서 인증",
+    "lmpcCertificate": "LMPC 인증서 인증",
+    "bisRegistrationCertificate": "BIS 등록 인증서",
+    "isiMarkIndian": "인도 제조업체를 위한 ISI 마크 (BIS)"
+  }
+}

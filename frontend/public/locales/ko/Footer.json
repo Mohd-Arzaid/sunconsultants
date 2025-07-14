@@ -1,0 +1,68 @@
+{
+  "header": {
+    "title": "더 자세히 알고 싶으신가요?",
+    "description": "<1>admin@bis-certifications.com</1>으로 이메일을 보내시거나 아래 옵션 중 하나를 이용해 주세요. 보통 24시간 이내에 답변 드립니다.",
+    "divider": "또는"
+  },
+  "socialLinks": {
+    "whatsapp": "WhatsApp으로 문의하기",
+    "call": "전화 문의: +91 80105 05057",
+    "linkedin": "LinkedIn 페이지 방문",
+    "github": "GitHub 프로필 방문",
+    "twitter": "X(구 Twitter) 팔로우",
+    "email": "이메일 문의",
+    "instagram": "Instagram 팔로우"
+  },
+  "company": {
+    "name": "선 서티피케이션즈 인디아",
+    "tagline": "인증 절차 간소화",
+    "newsletter": {
+      "title": "뉴스레터 구독",
+      "placeholder": "이메일 주소 입력",
+      "button": "구독하기"
+    }
+  },
+  "sections": {
+    "address": {
+      "title": "주소",
+      "content": "델리 M-15, 페이즈-1, 바들리 산업단지, 델리-110042, 인도"
+    },
+    "services": {
+      "title": "서비스",
+      "links": {
+        "tec": "TEC 인증",
+        "isiMark": "ISI 마크",
+        "ceCertification": "CE 인증",
+        "epr": "EPR 인증",
+        "rohs": "RoHS 인증",
+        "wpc": "WPC 인증"
+      }
+    },
+    "company": {
+      "title": "회사 정보",
+      "links": {
+        "about": "회사 소개",
+        "contact": "문의하기",
+        "clients": "고객사",
+        "faqs": "자주 묻는 질문",
+        "sitemap": "사이트맵"
+      }
+    },
+    "news": {
+      "title": "소식",
+      "links": {
+        "blogs": "블로그",
+        "latestUpdates": "최신 소식",
+        "ministryUpdates": "정부 부처 소식",
+        "webinarUpdates": "웨비나 소식",
+        "gallery": "갤러리"
+      }
+    }
+  },
+  "footer": {
+    "language": "한국어",
+    "copyright": "© 2025 Sun Certifications India. 모든 권리 보유.",
+    "privacyPolicy": "개인정보 처리방침",
+    "termsOfService": "이용약관"
+  }
+}

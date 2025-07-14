@@ -44,6 +44,8 @@ i18n
       "FreeCallBack",
       "BISFMServiceFaq",
       "AboutAuthor",
+      "Services",
+      "Footer",
     ],
     defaultNS: "BISFM",
   });

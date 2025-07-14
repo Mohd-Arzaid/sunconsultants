@@ -1,0 +1,14 @@
+{
+  "title": "บริการของเรา",
+  "subtitle": "ที่ปรึกษาใบรับรองที่ดีที่สุดของอินเดีย",
+  "services": {
+    "bisMarkForeign": "เครื่องหมาย BIS (ใบอนุญาต ISI) สำหรับผู้ผลิตต่างประเทศ",
+    "cdscoRegistration": "การรับรองการลงทะเบียน CDSCO",
+    "bisRegistration": "การลงทะเบียน BIS (CRS)",
+    "plasticWasteManagement": "การจัดการขยะพลาสติก",
+    "eprCertificate": "การรับรองใบรับรอง EPR",
+    "lmpcCertificate": "การรับรองใบรับรอง LMPC",
+    "bisRegistrationCertificate": "ใบรับรองการลงทะเบียน BIS",
+    "isiMarkIndian": "เครื่องหมาย ISI (BIS) สำหรับผู้ผลิตอินเดีย"
+  }
+}
