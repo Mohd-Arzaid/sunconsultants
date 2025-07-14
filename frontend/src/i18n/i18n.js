@@ -30,7 +30,21 @@ i18n
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
-    ns: ["BISFM", "BISCRSHero", "BISCRSIndex", "BISCRSContent"],
+    ns: [
+      "BISFM",
+      "BISCRSHero",
+      "BISCRSIndex",
+      "BISCRSContent",
+      "ISIMark",
+      "SchemeX",
+      "BISCertification",
+      "WhyChooseUs",
+      "LatestBlog",
+      "ClientTestimonial",
+      "FreeCallBack",
+      "BISFMServiceFaq",
+      "AboutAuthor",
+    ],
     defaultNS: "BISFM",
   });
 

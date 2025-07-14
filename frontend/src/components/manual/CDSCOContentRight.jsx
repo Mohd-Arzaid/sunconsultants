@@ -747,6 +747,8 @@ const FreeCallBack = () => {
     // Service pages
     if (path.includes("/cdsco-registration-certification"))
       return "CDSCO Registration";
+
+    // BISFM
     if (
       path.includes(
         "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
@@ -839,20 +841,118 @@ const FreeCallBack = () => {
 
     if (path.includes("/a-guide-on-how-to-obtain-epr-certificate"))
       return "EPR Registration";
+
+    // BIS Certification
     if (path.includes("/what-is-bis-certificate-indian-bis"))
       return "BIS Certification";
+    if (path.includes("/de/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/en/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/es/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/fr/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/id/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/it/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/ja/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/ko/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/nl/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/th/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+    if (path.includes("/vi/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+
     if (path.includes("/a-guide-on-how-to-obtain-lmpc-certificate"))
       return "LMPC Registration";
     if (path.includes("/epr-certificate-for-plastic-waste-management-pwm"))
       return "Plastic Waste";
     if (path.includes("/what-is-legal-metrology-or-lmpc-certificate"))
       return "Legal Metrology";
+
+    // ISI Mark Indian
     if (path.includes("a-guide-to-bis-certification-indian-bis"))
       return "ISI Mark Indian";
+    if (path.includes("/de/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+    if (path.includes("/en/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/es/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/fr/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/id/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/it/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/ja/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/ko/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/nl/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/th/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/vi/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
     if (path.includes("/epr-certificate-for-battery-waste-management-bwm"))
       return "Battery Waste";
+
+    // CRS Registration
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration";
+
+    if (path.includes("/de/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/en/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/es/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/fr/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/id/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/it/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/ja/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/ko/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/nl/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/th/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/vi/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+
+
+
     if (
       path.includes("/information-about-peso-certification-peso-license-india")
     )
@@ -866,6 +966,33 @@ const FreeCallBack = () => {
     if (path.includes("/ce-certification")) return "CE Certification";
     if (path.includes("/emi-emc-certification")) return "EMI EMC";
     if (path.includes("/cb-certification")) return "CB Certification";
+
+
+     // schemeX
+    if (path.includes("/schemeX")) return "SchemeX";
+
+    if (path.includes("/de/schemeX")) return "SchemeX";
+
+    if (path.includes("/en/schemeX")) return "SchemeX";
+
+    if (path.includes("/es/schemeX")) return "SchemeX";
+
+    if (path.includes("/fr/schemeX")) return "SchemeX";
+
+    if (path.includes("/id/schemeX")) return "SchemeX";
+
+    if (path.includes("/it/schemeX")) return "SchemeX";
+
+    if (path.includes("/ja/schemeX")) return "SchemeX";
+
+    if (path.includes("/ko/schemeX")) return "SchemeX";
+
+    if (path.includes("/nl/schemeX")) return "SchemeX";
+
+    if (path.includes("/th/schemeX")) return "SchemeX";
+
+    if (path.includes("/vi/schemeX")) return "SchemeX";
+    
   };
 
   const [formData, setFormData] = useState({

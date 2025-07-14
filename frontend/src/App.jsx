@@ -60,7 +60,10 @@ function EnglishWrapper() {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    i18n.changeLanguage("en");
+    // Only change if not already English
+    if (i18n.language !== "en") {
+      i18n.changeLanguage("en");
+    }
   }, [i18n]);
 
   return <Outlet />;
@@ -250,7 +253,6 @@ function App() {
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="404" element={<Error404 />} />
-          <Route path="*" element={<Error404 />} />
         </Route>
 
         {/* Catch-all route for 404 */}
