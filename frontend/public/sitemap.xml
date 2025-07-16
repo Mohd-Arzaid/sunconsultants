@@ -63,32 +63,392 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Service Pages - Active -->
-  <url>
-    <loc>https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/what-is-crs-bis-or-crs-registration</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/a-guide-to-bis-certification-indian-bis</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/what-is-bis-certificate-indian-bis</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/schemeX</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<!-- Service Pages - Active -->
+
+<!-- BISFM -->
+<url>
+  <loc>https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<!-- <url>
+  <loc>https://bis-certifications.com/en/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url> -->
+
+<url>
+  <loc>https://bis-certifications.com/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+
+
+<!-- BIS Certification -->
+<url>
+  <loc>https://bis-certifications.com/what-is-bis-certificate-indian-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/de/was-ist-das-bis-zertifikat-indisches-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<!-- <url>
+  <loc>https://bis-certifications.com/en/what-is-bis-certificate-indian-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url> -->
+
+<url>
+  <loc>https://bis-certifications.com/es/que-es-el-certificado-bis-bis-indio</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/fr/quest-ce-que-le-certificat-bis-indien</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/id/apa-itu-sertifikat-bis-bis-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/it/cose-il-certificato-bis-indiano</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ja/bis-shomeisho-toha-nani-ka-indo-no-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ko/bis-jeungmyeongseo-ga-mueos-indo-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/nl/wat-is-het-bis-certificaat-indiaas-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/th/bis-certificate-khue-a-rai-bis-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/vi/chung-chi-bis-la-gi-bis-an-do</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+
+
+
+
+<!-- CRS  -->
+<url>
+  <loc>https://bis-certifications.com/what-is-crs-bis-or-crs-registration</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/de/was-ist-crs-bis-oder-crs-registrierung</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<!-- <url>
+  <loc>https://bis-certifications.com/en/what-is-crs-bis-or-crs-registration</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url> -->
+
+<url>
+  <loc>https://bis-certifications.com/es/que-es-crs-bis-o-registro-crs</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/id/apa-itu-crs-bis-atau-registrasi-crs</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/it/cose-il-crs-bis-o-registrazione-crs</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ja/crs-bis-toha-nani-ka-crs-toroku</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ko/crs-bis-i-mueos-inga-crs-deunglog</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/nl/wat-is-crs-bis-of-crs-registratie</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/th/crs-bis-khue-a-rai-rab-phit-thab-crs</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/vi/crs-bis-la-gi-hoac-dang-ky-crs</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+
+
+<!-- ISI Mark -->
+
+<url>
+  <loc>https://bis-certifications.com/a-guide-to-bis-certification-indian-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-indisches-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<!-- <url>
+  <loc>https://bis-certifications.com/en/a-guide-to-bis-certification-indian-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url> -->
+
+<url>
+  <loc>https://bis-certifications.com/es/guia-certificacion-bis-bis-indio</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/fr/guide-certification-bis-bis-indien</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/id/panduan-sertifikasi-bis-bis-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/it/guida-alla-certificazione-bis-bis-indiano</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ja/bis-nintei-gaido-india-no-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ko/bis-injeung-gaideu-indo-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/nl/gids-voor-bis-certificering-indiaas-bis</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/th/khumanam-kanraprong-bis-bis-india</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-bis-an-do</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+
+
+
+
+
+
+<!-- Scheme X -->
+
+<url>
+  <loc>https://bis-certifications.com/indian-bis-certification-under-scheme-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/de/indische-bis-zertifizierung-nach-schema-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<!-- <url>
+  <loc>https://bis-certifications.com/en/indian-bis-certification-under-scheme-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url> -->
+
+<url>
+  <loc>https://bis-certifications.com/es/certificacion-bis-india-bajo-esquema-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/fr/certification-bis-indienne-selon-schema-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/id/sertifikasi-bis-india-di-bawah-skema-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/it/certificazione-bis-indiana-secondo-schema-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ja/indo-no-bis-nintei-sukimu-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/ko/indo-bis-injeung-scheme-x-haenghaeng</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/nl/indiaas-bis-certificaat-volgens-schema-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/th/bis-prathiap-india-taem-dai-tae-skema-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://bis-certifications.com/vi/chung-nhan-bis-an-do-theo-scheme-x</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+
+
+
 
   <!-- Service Pages - Commented Out (Inactive) -->
   <!-- <url>
