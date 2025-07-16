@@ -63,6 +63,74 @@ const ISIMark = () => {
 
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
+
+        {/* Hreflang Links for International Pages */}
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/it/guida-alla-certificazione-bis-bis-indiano"
+          hreflang="it"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/fr/guide-certification-bis-bis-indien"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-indisches-bis"
+          hreflang="de"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/nl/gids-voor-bis-certificering-indiaas-bis"
+          hreflang="nl"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ja/bis-nintei-gaido-india-no-bis"
+          hreflang="ja"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ko/bis-injeung-gaideu-indo-bis"
+          hreflang="ko"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/id/panduan-sertifikasi-bis-bis-india"
+          hreflang="id"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/th/khumanam-kanraprong-bis-bis-india"
+          hreflang="th"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-bis-an-do"
+          hreflang="vi"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/es/guia-certificacion-bis-bis-indio"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ar/dalil-shahadat-bis-bis-alhind"
+          hreflang="ar"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+          hreflang="x-default"
+        />
+
         <meta name="robots" content="index, follow" />
       </Helmet>
       <main className="w-full">
