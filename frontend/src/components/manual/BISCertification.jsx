@@ -74,6 +74,74 @@ export const BISCertification = () => {
 
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
+
+        {/* Hreflang Links for International Pages */}
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/it/cose-il-certificato-bis-indiano"
+          hreflang="it"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/fr/quest-ce-que-le-certificat-bis-indien"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/de/was-ist-das-bis-zertifikat-indisches-bis"
+          hreflang="de"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/nl/wat-is-het-bis-certificaat-indiaas-bis"
+          hreflang="nl"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"
+          hreflang="ja"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"
+          hreflang="ko"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/id/apa-itu-sertifikat-bis-bis-india"
+          hreflang="id"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/th/bis-certificate-khue-a-rai-bis-india"
+          hreflang="th"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/vi/chung-chi-bis-la-gi-bis-an-do"
+          hreflang="vi"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/es/que-es-el-certificado-bis-bis-indio"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ar/ma-huwa-shahadat-bis-bis-alhind"
+          hreflang="ar"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
+          hreflang="x-default"
+        />
+
         <meta name="robots" content="index, follow" />
 
         {/* Structured Data */}
