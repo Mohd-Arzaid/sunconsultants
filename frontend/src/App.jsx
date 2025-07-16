@@ -88,7 +88,7 @@ function App() {
           {/* Services Pages */}
           <Route path="cdsco-registration-certification" element={<CDSCO />} />
           <Route
-            path="BIS/indian-bis-certification-under-scheme-x"
+            path="indian-bis-certification-under-scheme-x"
             element={<SchemeX />}
           />
           <Route
@@ -160,6 +160,8 @@ function App() {
         <Route path="/:lang/*" element={<LocalizedRoute />}>
           <Route path="*" element={<RouteResolver />} />
         </Route>
+
+        
 
         {/* Catch-all route for 404 */}
         <Route path="*" element={<Error404 />} />

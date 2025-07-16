@@ -3,7 +3,6 @@ export const videosData = [
   {
     id: 1,
     embedId: "4JDVsoWSY3I",
-
     category: "BISFM",
     tags: [
       "BISFM",
@@ -17,7 +16,6 @@ export const videosData = [
   {
     id: 2,
     embedId: "_LBccl6LiOM",
-
     category: "ISI Mark",
     tags: [
       "ISI Mark",
@@ -31,7 +29,6 @@ export const videosData = [
   {
     id: 3,
     embedId: "JxYwTtj4wfQ",
-
     category: "Scheme X",
     tags: [
       "Scheme X",
@@ -45,7 +42,6 @@ export const videosData = [
   {
     id: 4,
     embedId: "zq1nIBTh27w",
-
     category: "BIS Certification",
     tags: [
       "BIS Certification",
@@ -59,7 +55,6 @@ export const videosData = [
   {
     id: 5,
     embedId: "5ppBDV76d6I",
-
     category: "Standards Compliance",
     tags: [
       "Standards Compliance",
@@ -68,6 +63,19 @@ export const videosData = [
       "Regulatory Framework",
       "Business Operations",
       "Certification",
+    ],
+  },
+  {
+    id: 6,
+    embedId: "OCQZUvsxcHU",
+    category: "Quality Management",
+    tags: [
+      "Quality Management",
+      "Process Optimization",
+      "Indian Standards",
+      "Quality Control",
+      "Manufacturing Excellence",
+      "Compliance",
     ],
   },
 ];

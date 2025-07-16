@@ -713,67 +713,67 @@ export const SchemeX = () => {
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
-          href="https://bis-certifications.com/BIS/indian-bis-certification-under-scheme-x"
+          href="https://bis-certifications.com/indian-bis-certification-under-scheme-x"
           hreflang="en"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/it/BIS/certificazione-bis-indiana-secondo-schema-x"
+          href="https://bis-certifications.com/it/certificazione-bis-indiana-secondo-schema-x"
           hreflang="it"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/fr/BIS/certification-bis-indienne-selon-schema-x"
+          href="https://bis-certifications.com/fr/certification-bis-indienne-selon-schema-x"
           hreflang="fr"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/de/BIS/indische-bis-zertifizierung-nach-schema-x"
+          href="https://bis-certifications.com/de/indische-bis-zertifizierung-nach-schema-x"
           hreflang="de"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/nl/BIS/indiaas-bis-certificaat-volgens-schema-x"
+          href="https://bis-certifications.com/nl/indiaas-bis-certificaat-volgens-schema-x"
           hreflang="nl"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/ja/BIS/indo-no-bis-nintei-sukimu-x"
+          href="https://bis-certifications.com/ja/indo-no-bis-nintei-sukimu-x"
           hreflang="ja"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/ko/BIS/indo-bis-injeung-scheme-x-haenghaeng"
+          href="https://bis-certifications.com/ko/indo-bis-injeung-scheme-x-haenghaeng"
           hreflang="ko"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/id/BIS/sertifikasi-bis-india-di-bawah-skema-x"
+          href="https://bis-certifications.com/id/sertifikasi-bis-india-di-bawah-skema-x"
           hreflang="id"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/th/BIS/bis-prathiap-india-taem-dai-tae-skema-x"
+          href="https://bis-certifications.com/th/bis-prathiap-india-taem-dai-tae-skema-x"
           hreflang="th"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/vi/BIS/chung-nhan-bis-an-do-theo-scheme-x"
+          href="https://bis-certifications.com/vi/chung-nhan-bis-an-do-theo-scheme-x"
           hreflang="vi"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/es/BIS/certificacion-bis-india-bajo-esquema-x"
+          href="https://bis-certifications.com/es/certificacion-bis-india-bajo-esquema-x"
           hreflang="es"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"
+          href="https://bis-certifications.com/ar/shahadat-bis-alhind-tahata-almukhatat-x"
           hreflang="ar"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/BIS/indian-bis-certification-under-scheme-x"
+          href="https://bis-certifications.com/indian-bis-certification-under-scheme-x"
           hreflang="x-default"
         />
 

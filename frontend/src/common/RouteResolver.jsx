@@ -64,6 +64,7 @@ const ROUTE_COMPONENTS = {
   // Services
   "cdsco-registration-certification": CDSCO,
   schemeX: SchemeX,
+  "indian-bis-certification-under-scheme-x": SchemeX,
   "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis": BISFM,
   "a-guide-on-how-to-obtain-epr-certificate": EPRService,
   "what-is-bis-certificate-indian-bis": BISCertification,

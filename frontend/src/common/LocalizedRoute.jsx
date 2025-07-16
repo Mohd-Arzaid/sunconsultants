@@ -5,6 +5,7 @@ import { getEnglishUrl, URL_MAPPINGS } from "@/utils/urlMapping";
 // import { getEnglishUrl, URL_MAPPINGS } from "../../utils/urlMapping";
 
 const SUPPORTED_LANGUAGES = [
+  "en",
   "it",
   "fr",
   "de",
@@ -36,16 +37,18 @@ export function LocalizedRoute({ children }) {
   // Get the English URL from the localized path
   const englishUrl = getEnglishUrl(path || "", lang);
 
+  // For English, the URL should be the same as the path
+  const finalEnglishUrl = lang === "en" ? path : englishUrl;
+
   // Check if this is a valid URL mapping
-  const isValidUrl = URL_MAPPINGS[lang] && URL_MAPPINGS[lang][englishUrl];
+  const isValidUrl = URL_MAPPINGS[lang] && URL_MAPPINGS[lang][finalEnglishUrl];
 
   if (!isValidUrl && path) {
     // If it's not a valid localized URL, redirect to 404
     return <Navigate to="/404" replace />;
   }
 
-  return <Outlet context={{ englishUrl, lang }} />;
+  return <Outlet context={{ englishUrl: finalEnglishUrl, lang }} />;
 }
 
 export default LocalizedRoute;
-
