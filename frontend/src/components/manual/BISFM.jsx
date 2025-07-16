@@ -85,6 +85,64 @@ export const BISFM = () => {
 
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
+
+        {/* Hreflang Links for International Pages */}
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
+          hreflang="it"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
+          hreflang="de"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis"
+          hreflang="nl"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu"
+          hreflang="ko"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"
+          hreflang="id"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"
+          hreflang="vi"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
+          hreflang="ar"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+          hreflang="x-default"
+        />
+
         <meta name="robots" content="index, follow, max-image-preview:large" />
 
         {/* Structured Data */}
