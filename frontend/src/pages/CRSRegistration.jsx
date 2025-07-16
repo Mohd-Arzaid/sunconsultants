@@ -536,6 +536,73 @@ const CRSRegistration = () => {
           rel="canonical"
           href="https://bis-certifications.com/bis/what-is-crs-bis-or-crs-registration"
         />
+
+        {/* Hreflang Links for International Pages */}
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/what-is-crs-bis-or-crs-registration"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/it/cose-il-crs-bis-o-registrazione-crs"
+          hreflang="it"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/de/was-ist-crs-bis-oder-crs-registrierung"
+          hreflang="de"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/nl/wat-is-crs-bis-of-crs-registratie"
+          hreflang="nl"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ja/crs-bis-toha-nani-ka-crs-toroku"
+          hreflang="ja"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ko/crs-bis-i-mueos-inga-crs-deunglog"
+          hreflang="ko"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/id/apa-itu-crs-bis-atau-registrasi-crs"
+          hreflang="id"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/th/crs-bis-khue-a-rai-rab-phit-thab-crs"
+          hreflang="th"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/vi/crs-bis-la-gi-hoac-dang-ky-crs"
+          hreflang="vi"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/es/que-es-crs-bis-o-registro-crs"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
+          hreflang="ar"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/what-is-crs-bis-or-crs-registration"
+          hreflang="x-default"
+        />
       </Helmet>
 
       <BISCRSHero />
