@@ -85,7 +85,7 @@ const sitemapSections = [
       { name: "CB Certification", path: "/cb-certification" },
       {
         name: "Scheme X",
-        path: "/schemeX",
+        path: "/indian-bis-certification-under-scheme-x",
       },
     ],
   },
