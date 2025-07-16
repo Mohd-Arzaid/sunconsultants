@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/accordion";
 
 import ServiceContactForm from "@/common/ServiceContactForm";
+import { BISFMContentLeft, BISFMIndex } from "@/components/manual/BISFM";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 import Services from "../components/manual/Services";
 import Footer from "@/common/Footer";
@@ -708,6 +709,74 @@ export const SchemeX = () => {
 
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
+
+        {/* Hreflang Links for International Pages */}
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/BIS/indian-bis-certification-under-scheme-x"
+          hreflang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/it/BIS/certificazione-bis-indiana-secondo-schema-x"
+          hreflang="it"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/fr/BIS/certification-bis-indienne-selon-schema-x"
+          hreflang="fr"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/de/BIS/indische-bis-zertifizierung-nach-schema-x"
+          hreflang="de"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/nl/BIS/indiaas-bis-certificaat-volgens-schema-x"
+          hreflang="nl"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ja/BIS/indo-no-bis-nintei-sukimu-x"
+          hreflang="ja"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ko/BIS/indo-bis-injeung-scheme-x-haenghaeng"
+          hreflang="ko"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/id/BIS/sertifikasi-bis-india-di-bawah-skema-x"
+          hreflang="id"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/th/BIS/bis-prathiap-india-taem-dai-tae-skema-x"
+          hreflang="th"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/vi/BIS/chung-nhan-bis-an-do-theo-scheme-x"
+          hreflang="vi"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/es/BIS/certificacion-bis-india-bajo-esquema-x"
+          hreflang="es"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"
+          hreflang="ar"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/BIS/indian-bis-certification-under-scheme-x"
+          hreflang="x-default"
+        />
+
         <meta name="robots" content="index, follow, max-image-preview:large" />
 
         {/* Structured Data */}
