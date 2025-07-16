@@ -17,7 +17,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "cdsco-registration-certification",
-    schemeX: "indian-bis-certification-under-scheme-x",
+    "BIS/indian-bis-certification-under-scheme-x":
+      "indian-bis-certification-under-scheme-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -70,7 +71,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "registrazione-certificazione-cdsco",
-    schemeX: "certificazione-bis-indiana-secondo-schema-x",
+    "indian-bis-certification-under-scheme-x":
+      "certificazione-bis-indiana-secondo-schema-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -123,7 +125,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "enregistrement-certification-cdsco",
-    schemeX: "certification-bis-indienne-selon-schema-x",
+    "indian-bis-certification-under-scheme-x":
+      "certification-bis-indienne-selon-schema-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "guide-certification-bis-pour-fabricants-etrangers-bis-inde",
     "a-guide-on-how-to-obtain-epr-certificate": "guide-obtenir-certificat-epr",
@@ -176,7 +179,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "cdsco-registrierung-zertifizierung",
-    schemeX: "indische-bis-zertifizierung-nach-schema-x",
+    "indian-bis-certification-under-scheme-x":
+      "indische-bis-zertifizierung-nach-schema-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -230,7 +234,7 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "cdsco-touroku-nintei",
-    schemeX: "indo-bis-injeung-scheme-x-haenghaeng",
+    "indian-bis-certification-under-scheme-x": "indo-no-bis-nintei-sukimu-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis",
     "a-guide-on-how-to-obtain-epr-certificate": "epr-shoumeisho-shutoku-gaido",
@@ -280,7 +284,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "cdsco-deungnok-injeung",
-    schemeX: "sertifikasi-bis-india-di-bawah-skema-x",
+    "indian-bis-certification-under-scheme-x":
+      "indo-bis-injeung-scheme-x-haenghaeng",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -331,7 +336,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "registrasi-sertifikasi-cdsco",
-    schemeX: "sertifikasi-bis-india-di-bawah-skema-x",
+    "indian-bis-certification-under-scheme-x":
+      "sertifikasi-bis-india-di-bawah-skema-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -384,7 +390,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "kan-long-thabien-kar-rap-rong-cdsco",
-    schemeX: "bis-prathiap-india-taem-dai-tae-skema-x",
+    "indian-bis-certification-under-scheme-x":
+      "bis-prathiap-india-taem-dai-tae-skema-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -438,7 +445,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "dang-ky-chung-nhan-cdsco",
-    schemeX: "chung-nhan-bis-an-do-theo-scheme-x",
+    "indian-bis-certification-under-scheme-x":
+      "chung-nhan-bis-an-do-theo-scheme-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -490,7 +498,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "registro-certificacion-cdsco",
-    schemeX: "certificacion-bis-india-bajo-esquema-x",
+    "indian-bis-certification-under-scheme-x":
+      "certificacion-bis-india-bajo-esquema-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -542,7 +551,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "cdsco-registratie-certificering",
-    schemeX: "indiaas-bis-certificaat-volgens-schema-x",
+    "indian-bis-certification-under-scheme-x":
+      "indiaas-bis-certificaat-volgens-schema-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis",
     "a-guide-on-how-to-obtain-epr-certificate":
@@ -595,7 +605,8 @@ export const URL_MAPPINGS = {
 
     // Services
     "cdsco-registration-certification": "tasjeel-shahdat-cdsco",
-    schemeX: "shahadat-bis-alhind-tahata-almukhatat-x",
+    "indian-bis-certification-under-scheme-x":
+      "shahadat-bis-alhind-tahata-almukhatat-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind",
     "a-guide-on-how-to-obtain-epr-certificate":

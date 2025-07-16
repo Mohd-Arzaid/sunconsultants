@@ -1,12 +1,10 @@
-import { useOutletContext } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { useOutletContext, useParams } from "react-router-dom";
 
 // Import all page components
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import ContactUs from "@/pages/ContactUs";
 import Notification from "@/pages/Notification";
-import NotificationDetail from "@/pages/NotificationDetail";
 import MinistryUpdates from "@/pages/MinistryUpdates";
 import InternationalAudits from "@/pages/InternationalAudits";
 import Exhibition from "@/pages/Exhibition";
@@ -63,7 +61,6 @@ const ROUTE_COMPONENTS = {
 
   // Services
   "cdsco-registration-certification": CDSCO,
-  schemeX: SchemeX,
   "indian-bis-certification-under-scheme-x": SchemeX,
   "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis": BISFM,
   "a-guide-on-how-to-obtain-epr-certificate": EPRService,
@@ -86,7 +83,19 @@ const ROUTE_COMPONENTS = {
 };
 
 export function RouteResolver() {
-  const { englishUrl, lang } = useOutletContext();
+  const context = useOutletContext();
+  const params = useParams();
+
+  // Handle both localized routes (with context) and direct English routes (without context)
+  let englishUrl;
+
+  if (context) {
+    // Localized route with context
+    englishUrl = context.englishUrl;
+  } else {
+    // Direct English internationalized route
+    englishUrl = params["*"] || "";
+  }
 
   // Get the component for this route
   const Component = ROUTE_COMPONENTS[englishUrl];

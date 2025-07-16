@@ -9,7 +9,6 @@ import ScrollToTopButton, {
   ScrollToTop,
 } from "./components/common/ScrollToTop";
 import SEOBreadcrumbs from "./components/common/SEOBreadcrumbs";
-import { LanguageWrapper } from "./components/common/LanguageWrapper";
 import LocalizedRoute from "@/common/LocalizedRoute";
 import RouteResolver from "@/common/RouteResolver";
 
@@ -161,7 +160,8 @@ function App() {
           <Route path="*" element={<RouteResolver />} />
         </Route>
 
-        
+        {/* English internationalized routes */}
+        <Route path="/en/*" element={<RouteResolver />} />
 
         {/* Catch-all route for 404 */}
         <Route path="*" element={<Error404 />} />
