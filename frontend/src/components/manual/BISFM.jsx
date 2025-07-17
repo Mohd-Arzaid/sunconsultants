@@ -90,53 +90,65 @@ export const BISFM = () => {
         <link
           rel="alternate"
           href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-          hreflang="en"
+          hrefLang="en"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
-          hreflang="it"
+          hrefLang="it"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde"
-          hreflang="fr"
+          hrefLang="fr"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
-          hreflang="de"
+          hrefLang="de"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis"
-          hreflang="nl"
+          hrefLang="nl"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis"
+          hrefLang="ja"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu"
-          hreflang="ko"
+          hrefLang="ko"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"
-          hreflang="id"
+          hrefLang="id"
+        />
+        <link
+          rel="alternate"
+          href="https://bis-certifications.com/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india"
+          hrefLang="th"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"
-          hreflang="vi"
+          hrefLang="vi"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"
-          hreflang="es"
+          hrefLang="es"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-          hreflang="x-default"
+          hrefLang="x-default"
         />
+
+
 
         <meta name="robots" content="index, follow, max-image-preview:large" />
 
