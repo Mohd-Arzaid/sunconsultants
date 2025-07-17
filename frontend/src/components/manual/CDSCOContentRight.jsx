@@ -42,8 +42,9 @@ const CDSCOContentRight = () => {
 
   // List of paths where LatestBlog and LatestNotification should be shown
   const showComponentsPaths = [
-    // BISFM
+    // BISFM - BIS Certification for Foreign Manufacturers
     "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind", // ADDED
     "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
     "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
     "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde",
@@ -55,23 +56,23 @@ const CDSCOContentRight = () => {
     "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
     "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
 
-    // BIS Certificate
+    // BIS Certificate - What is BIS Certificate
     "/what-is-bis-certificate-indian-bis",
-    "/en/what-is-bis-certificate-indian-bis",
+    "/ar/ma-huwa-shahadat-bis-bis-alhind", // ADDED
     "/de/was-ist-das-bis-zertifikat-indisches-bis",
     "/es/que-es-el-certificado-bis-bis-indio",
     "/fr/quest-ce-que-le-certificat-bis-indien",
     "/id/apa-itu-sertifikat-bis-bis-india",
     "/it/cose-il-certificato-bis-indiano",
-    "/ja/bis-shomeisho-toha-nani-ka-indo-no-bis",
-    "/ko/bis-jeungmyeongseo-ga-mueos-indo-bis",
+    "/ja/bis-shomeisho-to-wa-indo-bis", // FIXED
+    "/ko/bis-injeungseo-ran-indo-bis", // FIXED
     "/nl/wat-is-het-bis-certificaat-indiaas-bis",
-    "/th/bis-certificate-khue-a-rai-bis-india",
+    "/th/bai-rap-rong-bis-khue-arai-bis-india", // FIXED
     "/vi/chung-chi-bis-la-gi-bis-an-do",
 
-    // CRS Certificate
+    // CRS Certificate - What is CRS BIS
     "/what-is-crs-bis-or-crs-registration",
-    "/en/what-is-crs-bis-or-crs-registration",
+    "/ar/ma-huwa-crs-bis-aw-tasjeel-crs", // ADDED
     "/de/was-ist-crs-bis-oder-crs-registrierung",
     "/es/que-es-crs-bis-o-registro-crs",
     "/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs",
@@ -83,10 +84,10 @@ const CDSCOContentRight = () => {
     "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
     "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
 
-    // ISI Mark
+    // ISI Mark - Guide to BIS Certification
     "/a-guide-to-bis-certification-indian-bis",
-    "/en/a-guide-to-bis-certification-indian-bis",
-    "/de/leitfaden-zur-bis-zertifizierung-indisches-bis",
+    "/ar/dalil-shahadat-bis-bis-alhind", // ADDED
+    "/de/leitfaden-bis-zertifizierung-indisches-bis", // FIXED
     "/es/guia-certificacion-bis-bis-indio",
     "/fr/guide-certification-bis-bis-indien",
     "/id/panduan-sertifikasi-bis-bis-india",
@@ -97,9 +98,9 @@ const CDSCOContentRight = () => {
     "/th/khumanam-kanraprong-bis-bis-india",
     "/vi/huong-dan-chung-nhan-bis-bis-an-do",
 
-    // Scheme X
+    // Scheme X - Indian BIS Certification under Scheme X
     "/indian-bis-certification-under-scheme-x",
-    "/en/indian-bis-certification-under-scheme-x",
+    "/ar/shahadat-bis-alhind-tahata-almukhatat-x", // ADDED
     "/de/indische-bis-zertifizierung-nach-schema-x",
     "/es/certificacion-bis-india-bajo-esquema-x",
     "/fr/certification-bis-indienne-selon-schema-x",
@@ -811,14 +812,14 @@ const FreeCallBack = () => {
 
     if (
       path.includes(
-        "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
+        "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
       )
     )
       return "BIS Mark Foreign";
 
     if (
       path.includes(
-        "/en/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+        "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
       )
     )
       return "BIS Mark Foreign";
@@ -891,10 +892,10 @@ const FreeCallBack = () => {
     if (path.includes("/what-is-bis-certificate-indian-bis"))
       return "BIS Certification";
 
-    if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
+    if (path.includes("/ar/ma-huwa-shahadat-bis-bis-alhind"))
       return "BIS Certification";
 
-    if (path.includes("/en/what-is-bis-certificate-indian-bis"))
+    if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
       return "BIS Certification";
 
     if (path.includes("/es/que-es-el-certificado-bis-bis-indio"))
@@ -909,16 +910,16 @@ const FreeCallBack = () => {
     if (path.includes("/it/cose-il-certificato-bis-indiano"))
       return "BIS Certification";
 
-    if (path.includes("/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"))
+    if (path.includes("/ja/bis-shomeisho-to-wa-indo-bis"))
       return "BIS Certification";
 
-    if (path.includes("/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"))
+    if (path.includes("/ko/bis-injeungseo-ran-indo-bis"))
       return "BIS Certification";
 
     if (path.includes("/nl/wat-is-het-bis-certificaat-indiaas-bis"))
       return "BIS Certification";
 
-    if (path.includes("/th/bis-certificate-khue-a-rai-bis-india"))
+    if (path.includes("/th/bai-rap-rong-bis-khue-arai-bis-india"))
       return "BIS Certification";
 
     if (path.includes("/vi/chung-chi-bis-la-gi-bis-an-do"))
@@ -935,10 +936,10 @@ const FreeCallBack = () => {
     if (path.includes("a-guide-to-bis-certification-indian-bis"))
       return "ISI Mark Indian";
 
-    if (path.includes("/de/leitfaden-zur-bis-zertifizierung-indisches-bis"))
+    if (path.includes("/ar/dalil-shahadat-bis-bis-alhind"))
       return "ISI Mark Indian";
 
-    if (path.includes("/en/a-guide-to-bis-certification-indian-bis"))
+    if (path.includes("/de/leitfaden-bis-zertifizierung-indisches-bis"))
       return "ISI Mark Indian";
 
     if (path.includes("/es/guia-certificacion-bis-bis-indio"))
@@ -973,6 +974,9 @@ const FreeCallBack = () => {
 
     // CRS Registration
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/ar/ma-huwa-crs-bis-aw-tasjeel-crs"))
       return "CRS Registration";
 
     if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
@@ -1024,6 +1028,9 @@ const FreeCallBack = () => {
 
     // schemeX
     if (path.includes("/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
+
+    if (path.includes("/ar/shahadat-bis-alhind-tahata-almukhatat-x"))
       return "SchemeX";
 
     if (path.includes("/de/indische-bis-zertifizierung-nach-schema-x"))

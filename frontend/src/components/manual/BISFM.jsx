@@ -134,11 +134,6 @@ export const BISFM = () => {
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
-          hreflang="ar"
-        />
-        <link
-          rel="alternate"
           href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
           hreflang="x-default"
         />

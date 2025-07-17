@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
-import SchemeXImage from "../assets/servicesImages/schemeXImage.jpg";
+import SchemeXImage from "../assets/servicesImages/SchemeXImage.jpg";
 import {
   Table,
   TableBody,

@@ -15,9 +15,9 @@ export const URL_MAPPINGS = {
     "privacy-policy": "privacy-policy",
     "terms-and-conditions": "terms-and-conditions",
 
-    // Services
+    // Services - Fixed the key structure
     "cdsco-registration-certification": "cdsco-registration-certification",
-    "BIS/indian-bis-certification-under-scheme-x":
+    "indian-bis-certification-under-scheme-x":
       "indian-bis-certification-under-scheme-x",
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
@@ -51,7 +51,6 @@ export const URL_MAPPINGS = {
     lhscable: "lhscable",
   },
 
-  // Italian
   it: {
     // Main pages
     about: "chi-siamo",
@@ -60,14 +59,6 @@ export const URL_MAPPINGS = {
     sitemap: "mappa-del-sito",
     "privacy-policy": "politica-sulla-privacy",
     "terms-and-conditions": "termini-e-condizioni",
-
-    // Updates
-    "bis-qco-updates": "aggiornamenti-bis-qco",
-    "ministry-updates": "aggiornamenti-ministero",
-    "international-audits": "audit-internazionali",
-    "seminars-and-exhibitions": "seminari-e-mostre",
-    webinar: "webinar",
-    "videos-about-bis-certification": "video-certificazione-bis",
 
     // Services
     "cdsco-registration-certification": "registrazione-certificazione-cdsco",
@@ -115,14 +106,6 @@ export const URL_MAPPINGS = {
     "privacy-policy": "politique-de-confidentialite",
     "terms-and-conditions": "termes-et-conditions",
 
-    // Updates
-    "bis-qco-updates": "mises-a-jour-bis-qco",
-    "ministry-updates": "mises-a-jour-ministere",
-    "international-audits": "audits-internationaux",
-    "seminars-and-exhibitions": "seminaires-et-expositions",
-    webinar: "webinaire",
-    "videos-about-bis-certification": "videos-certification-bis",
-
     // Services
     "cdsco-registration-certification": "enregistrement-certification-cdsco",
     "indian-bis-certification-under-scheme-x":
@@ -168,14 +151,6 @@ export const URL_MAPPINGS = {
     sitemap: "sitemap",
     "privacy-policy": "datenschutzrichtlinie",
     "terms-and-conditions": "nutzungsbedingungen",
-
-    // Updates
-    "bis-qco-updates": "bis-qco-updates",
-    "ministry-updates": "ministeriums-updates",
-    "international-audits": "internationale-audits",
-    "seminars-and-exhibitions": "seminare-und-ausstellungen",
-    webinar: "webinar",
-    "videos-about-bis-certification": "videos-bis-zertifizierung",
 
     // Services
     "cdsco-registration-certification": "cdsco-registrierung-zertifizierung",
@@ -224,14 +199,6 @@ export const URL_MAPPINGS = {
     "privacy-policy": "puraibashii-porishii",
     "terms-and-conditions": "riyou-kiyaku",
 
-    // Updates
-    "bis-qco-updates": "bis-qco-koushin",
-    "ministry-updates": "shouchou-koushin",
-    "international-audits": "kokusai-kansa",
-    "seminars-and-exhibitions": "seminaa-to-tenrankai",
-    webinar: "webinaa",
-    "videos-about-bis-certification": "bis-nintei-ni-tsuite-no-douga",
-
     // Services
     "cdsco-registration-certification": "cdsco-touroku-nintei",
     "indian-bis-certification-under-scheme-x": "indo-no-bis-nintei-sukimu-x",
@@ -273,14 +240,6 @@ export const URL_MAPPINGS = {
     sitemap: "saiteu-maep",
     "privacy-policy": "gaein-jeongbo-cheolibanghim",
     "terms-and-conditions": "iyong-yakgwan",
-
-    // Updates
-    "bis-qco-updates": "bis-qco-eobdeiteu",
-    "ministry-updates": "bucho-eobdeiteu",
-    "international-audits": "gukje-gam-sa",
-    "seminars-and-exhibitions": "semina-mich-jeonsihoeh",
-    webinar: "webina",
-    "videos-about-bis-certification": "bis-injeung-e-daehan-bidio",
 
     // Services
     "cdsco-registration-certification": "cdsco-deungnok-injeung",
@@ -325,14 +284,6 @@ export const URL_MAPPINGS = {
     sitemap: "peta-situs",
     "privacy-policy": "kebijakan-privasi",
     "terms-and-conditions": "syarat-dan-ketentuan",
-
-    // Updates
-    "bis-qco-updates": "pembaruan-bis-qco",
-    "ministry-updates": "pembaruan-kementerian",
-    "international-audits": "audit-internasional",
-    "seminars-and-exhibitions": "seminar-dan-pameran",
-    webinar: "webinar",
-    "videos-about-bis-certification": "video-tentang-sertifikasi-bis",
 
     // Services
     "cdsco-registration-certification": "registrasi-sertifikasi-cdsco",
@@ -379,14 +330,6 @@ export const URL_MAPPINGS = {
     sitemap: "phaen-phang-websai",
     "privacy-policy": "nayobai-khwam-pen-suan-tua",
     "terms-and-conditions": "kho-kamhad-kan-chai-borikan",
-
-    // Updates
-    "bis-qco-updates": "kapdet-bis-qco",
-    "ministry-updates": "kapdet-krasuan",
-    "international-audits": "kan-truat-sop-rawang-prathes",
-    "seminars-and-exhibitions": "semina-lae-kan-sadaeng",
-    webinar: "webina",
-    "videos-about-bis-certification": "widio-kieokap-kar-rap-rong-bis",
 
     // Services
     "cdsco-registration-certification": "kan-long-thabien-kar-rap-rong-cdsco",
@@ -488,14 +431,6 @@ export const URL_MAPPINGS = {
     "privacy-policy": "politica-de-privacidad",
     "terms-and-conditions": "terminos-y-condiciones",
 
-    // Updates
-    "bis-qco-updates": "actualizaciones-bis-qco",
-    "ministry-updates": "actualizaciones-ministerio",
-    "international-audits": "auditorias-internacionales",
-    "seminars-and-exhibitions": "seminarios-y-exposiciones",
-    webinar: "webinar",
-    "videos-about-bis-certification": "videos-sobre-certificacion-bis",
-
     // Services
     "cdsco-registration-certification": "registro-certificacion-cdsco",
     "indian-bis-certification-under-scheme-x":
@@ -540,14 +475,6 @@ export const URL_MAPPINGS = {
     sitemap: "sitemap",
     "privacy-policy": "privacybeleid",
     "terms-and-conditions": "algemene-voorwaarden",
-
-    // Updates
-    "bis-qco-updates": "bis-qco-updates",
-    "ministry-updates": "ministerie-updates",
-    "international-audits": "internationale-audits",
-    "seminars-and-exhibitions": "seminars-en-tentoonstellingen",
-    webinar: "webinar",
-    "videos-about-bis-certification": "videos-over-bis-certificering",
 
     // Services
     "cdsco-registration-certification": "cdsco-registratie-certificering",
