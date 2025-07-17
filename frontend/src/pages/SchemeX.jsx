@@ -672,7 +672,6 @@ export const SchemeX = () => {
         />
         <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         {/* Open Graph Tags */}
         <meta
           property="og:title"
@@ -690,7 +689,6 @@ export const SchemeX = () => {
           property="og:image"
           content="https://suncertifications.com/og-image.jpg"
         />
-
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@CertificationsSun" />
@@ -706,79 +704,72 @@ export const SchemeX = () => {
           name="twitter:image"
           content="https://suncertifications.com/twitter-image.jpg"
         />
-
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
-
+     
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
           href="https://bis-certifications.com/indian-bis-certification-under-scheme-x"
-          hreflang="en"
+          hrefLang="en"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/it/certificazione-bis-indiana-secondo-schema-x"
-          hreflang="it"
+          hrefLang="it"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/fr/certification-bis-indienne-selon-schema-x"
-          hreflang="fr"
+          hrefLang="fr"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/de/indische-bis-zertifizierung-nach-schema-x"
-          hreflang="de"
+          hrefLang="de"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/nl/indiaas-bis-certificaat-volgens-schema-x"
-          hreflang="nl"
+          hrefLang="nl"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/ja/indo-no-bis-nintei-sukimu-x"
-          hreflang="ja"
+          hrefLang="ja"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/ko/indo-bis-injeung-scheme-x-haenghaeng"
-          hreflang="ko"
+          hrefLang="ko"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/id/sertifikasi-bis-india-di-bawah-skema-x"
-          hreflang="id"
+          hrefLang="id"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/th/bis-prathiap-india-taem-dai-tae-skema-x"
-          hreflang="th"
+          hrefLang="th"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/vi/chung-nhan-bis-an-do-theo-scheme-x"
-          hreflang="vi"
+          hrefLang="vi"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/es/certificacion-bis-india-bajo-esquema-x"
-          hreflang="es"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ar/shahadat-bis-alhind-tahata-almukhatat-x"
-          hreflang="ar"
+          hrefLang="es"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/indian-bis-certification-under-scheme-x"
-          hreflang="x-default"
+          hrefLang="x-default"
         />
-
+        
         <meta name="robots" content="index, follow, max-image-preview:large" />
-
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -836,7 +827,6 @@ export const SchemeX = () => {
             },
           })}
         </script>
-
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

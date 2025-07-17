@@ -46,7 +46,6 @@ const ISIMark = () => {
         />
         <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         {/* Open Graph Tags */}
         <meta
           property="og:title"
@@ -60,77 +59,70 @@ const ISIMark = () => {
         <meta property="og:url" content={window.location.href} />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:locale" content="en_IN" />
-
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
-
+      
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
           href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
-          hreflang="en"
+          hrefLang="en"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/it/guida-alla-certificazione-bis-bis-indiano"
-          hreflang="it"
+          hrefLang="it"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/fr/guide-certification-bis-bis-indien"
-          hreflang="fr"
+          hrefLang="fr"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-indisches-bis"
-          hreflang="de"
+          hrefLang="de"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/nl/gids-voor-bis-certificering-indiaas-bis"
-          hreflang="nl"
+          hrefLang="nl"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/ja/bis-nintei-gaido-india-no-bis"
-          hreflang="ja"
+          hrefLang="ja"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/ko/bis-injeung-gaideu-indo-bis"
-          hreflang="ko"
+          hrefLang="ko"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/id/panduan-sertifikasi-bis-bis-india"
-          hreflang="id"
+          hrefLang="id"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/th/khumanam-kanraprong-bis-bis-india"
-          hreflang="th"
+          hrefLang="th"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-bis-an-do"
-          hreflang="vi"
+          hrefLang="vi"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/es/guia-certificacion-bis-bis-indio"
-          hreflang="es"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ar/dalil-shahadat-bis-bis-alhind"
-          hreflang="ar"
+          hrefLang="es"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
-          hreflang="x-default"
+          hrefLang="x-default"
         />
-
         <meta name="robots" content="index, follow" />
       </Helmet>
       <main className="w-full">

@@ -45,7 +45,6 @@ export const BISCertification = () => {
         />
         <meta name="author" content="Sun Certifications India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         {/* Open Graph Tags */}
         <meta
           property="og:title"
@@ -59,7 +58,6 @@ export const BISCertification = () => {
         <meta property="og:url" content={window.location.href} />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:locale" content="en_IN" />
-
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@CertificationsSun" />
@@ -71,79 +69,72 @@ export const BISCertification = () => {
           name="twitter:description"
           content="Expert BIS certification services for Indian and foreign manufacturers."
         />
-
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
-
+        
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
           href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-          hreflang="en"
+          hrefLang="en"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/it/cose-il-certificato-bis-indiano"
-          hreflang="it"
+          hrefLang="it"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/fr/quest-ce-que-le-certificat-bis-indien"
-          hreflang="fr"
+          hrefLang="fr"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/de/was-ist-das-bis-zertifikat-indisches-bis"
-          hreflang="de"
+          hrefLang="de"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/nl/wat-is-het-bis-certificaat-indiaas-bis"
-          hreflang="nl"
+          hrefLang="nl"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"
-          hreflang="ja"
+          hrefLang="ja"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"
-          hreflang="ko"
+          hrefLang="ko"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/id/apa-itu-sertifikat-bis-bis-india"
-          hreflang="id"
+          hrefLang="id"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/th/bis-certificate-khue-a-rai-bis-india"
-          hreflang="th"
+          hrefLang="th"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/vi/chung-chi-bis-la-gi-bis-an-do"
-          hreflang="vi"
+          hrefLang="vi"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/es/que-es-el-certificado-bis-bis-indio"
-          hreflang="es"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ar/ma-huwa-shahadat-bis-bis-alhind"
-          hreflang="ar"
+          hrefLang="es"
         />
         <link
           rel="alternate"
           href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-          hreflang="x-default"
+          hrefLang="x-default"
         />
-
+        
         <meta name="robots" content="index, follow" />
-
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -194,7 +185,6 @@ export const BISCertification = () => {
             },
           })}
         </script>
-
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
