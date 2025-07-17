@@ -14,270 +14,263 @@ const ServiceContactForm = () => {
   const [loading, setLoading] = useState(false);
 
   // Function to get page name based on URL
-  const getPageName = () => {
-    const path = window.location.pathname;
+const getPageName = () => {
+  const path = window.location.pathname;
 
-    // Service pages
-    if (path.includes("/cdsco-registration-certification"))
-      return "CDSCO Registration";
+  // Service pages
+  if (path.includes("/cdsco-registration-certification"))
+    return "CDSCO Registration";
 
-    // BISFM
-    if (
-      path.includes(
-        "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-      )
+  // BISFM (FMCS - Foreign Manufacturers)
+  if (
+    path.includes(
+      "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
-      )
+  if (
+    path.includes(
+      "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/en/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-      )
+  if (
+    path.includes(
+      "/en/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"
-      )
+  if (
+    path.includes(
+      "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde"
-      )
+  if (
+    path.includes(
+      "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"
-      )
+  if (
+    path.includes("/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india")
+  )
+    return "BIS Mark Foreign";
+
+  if (
+    path.includes(
+      "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
-      )
+  if (
+    path.includes(
+      "/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis"
-      )
+  if (path.includes("/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu"))
+    return "BIS Mark Foreign";
+
+  if (
+    path.includes(
+      "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes("/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu")
+  if (
+    path.includes(
+      "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis"
-      )
+  if (
+    path.includes(
+      "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"
     )
-      return "BIS Mark Foreign";
+  )
+    return "BIS Mark Foreign";
 
-    if (
-      path.includes(
-        "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india"
-      )
-    )
-      return "BIS Mark Foreign";
+  if (path.includes("/a-guide-on-how-to-obtain-epr-certificate"))
+    return "EPR Registration";
 
-    if (
-      path.includes(
-        "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"
-      )
-    )
-      return "BIS Mark Foreign";
+  // BIS Certification (Common)
+  if (path.includes("/what-is-bis-certificate-indian-bis"))
+    return "BIS Certification";
 
-    if (path.includes("/a-guide-on-how-to-obtain-epr-certificate"))
-      return "EPR Registration";
+  if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
+    return "BIS Certification";
 
-    // BIS Certification
-    if (path.includes("/what-is-bis-certificate-indian-bis"))
-      return "BIS Certification";
+  if (path.includes("/en/what-is-bis-certificate-indian-bis"))
+    return "BIS Certification";
 
-    if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
-      return "BIS Certification";
+  if (path.includes("/es/que-es-el-certificado-bis-bis-indio"))
+    return "BIS Certification";
 
-    if (path.includes("/en/what-is-bis-certificate-indian-bis"))
-      return "BIS Certification";
+  if (path.includes("/fr/quest-ce-que-le-certificat-bis-indien"))
+    return "BIS Certification";
 
-    if (path.includes("/es/que-es-el-certificado-bis-bis-indio"))
-      return "BIS Certification";
+  if (path.includes("/id/apa-itu-sertifikat-bis-bis-india"))
+    return "BIS Certification";
 
-    if (path.includes("/fr/quest-ce-que-le-certificat-bis-indien"))
-      return "BIS Certification";
+  if (path.includes("/it/cose-il-certificato-bis-indiano"))
+    return "BIS Certification";
 
-    if (path.includes("/id/apa-itu-sertifikat-bis-bis-india"))
-      return "BIS Certification";
+  if (path.includes("/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"))
+    return "BIS Certification";
 
-    if (path.includes("/it/cose-il-certificato-bis-indiano"))
-      return "BIS Certification";
+  if (path.includes("/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"))
+    return "BIS Certification";
 
-    if (path.includes("/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"))
-      return "BIS Certification";
+  if (path.includes("/nl/wat-is-het-bis-certificaat-indiaas-bis"))
+    return "BIS Certification";
 
-    if (path.includes("/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"))
-      return "BIS Certification";
+  if (path.includes("/th/bis-certificate-khue-a-rai-bis-india"))
+    return "BIS Certification";
 
-    if (path.includes("/nl/wat-is-het-bis-certificaat-indiaas-bis"))
-      return "BIS Certification";
+  if (path.includes("/vi/chung-chi-bis-la-gi-bis-an-do"))
+    return "BIS Certification";
 
-    if (path.includes("/th/bis-certificate-khue-a-rai-bis-india"))
-      return "BIS Certification";
+  if (path.includes("/a-guide-on-how-to-obtain-lmpc-certificate"))
+    return "LMPC Registration";
+  if (path.includes("/epr-certificate-for-plastic-waste-management-pwm"))
+    return "Plastic Waste";
+  if (path.includes("/what-is-legal-metrology-or-lmpc-certificate"))
+    return "Legal Metrology";
 
-    if (path.includes("/vi/chung-chi-bis-la-gi-bis-an-do"))
-      return "BIS Certification";
+  // ISI Mark Indian
+  if (path.includes("/a-guide-to-bis-certification-indian-bis"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/a-guide-on-how-to-obtain-lmpc-certificate"))
-      return "LMPC Registration";
-    if (path.includes("/epr-certificate-for-plastic-waste-management-pwm"))
-      return "Plastic Waste";
-    if (path.includes("/what-is-legal-metrology-or-lmpc-certificate"))
-      return "Legal Metrology";
+  if (path.includes("/de/leitfaden-zur-bis-zertifizierung-indisches-bis"))
+    return "ISI Mark Indian";
 
-    // ISI Mark Indian
-    if (path.includes("a-guide-to-bis-certification-indian-bis"))
-      return "ISI Mark Indian";
+  if (path.includes("/en/a-guide-to-bis-certification-indian-bis"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/de/leitfaden-zur-bis-zertifizierung-indisches-bis"))
-      return "ISI Mark Indian";
+  if (path.includes("/es/guia-certificacion-bis-bis-indio"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/en/a-guide-to-bis-certification-indian-bis"))
-      return "ISI Mark Indian";
+  if (path.includes("/fr/guide-certification-bis-bis-indien"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/es/guia-certificacion-bis-bis-indio"))
-      return "ISI Mark Indian";
+  if (path.includes("/id/panduan-sertifikasi-bis-bis-india"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/fr/guide-certification-bis-bis-indien"))
-      return "ISI Mark Indian";
+  if (path.includes("/it/guida-alla-certificazione-bis-bis-indiano"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/id/panduan-sertifikasi-bis-bis-india"))
-      return "ISI Mark Indian";
+  if (path.includes("/ja/bis-nintei-gaido-india-no-bis"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/it/guida-alla-certificazione-bis-bis-indiano"))
-      return "ISI Mark Indian";
+  if (path.includes("/ko/bis-injeung-gaideu-indo-bis"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/ja/bis-nintei-gaido-india-no-bis"))
-      return "ISI Mark Indian";
+  if (path.includes("/nl/gids-voor-bis-certificering-indiaas-bis"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/ko/bis-injeung-gaideu-indo-bis"))
-      return "ISI Mark Indian";
+  if (path.includes("/th/khumanam-kanraprong-bis-bis-india"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/nl/gids-voor-bis-certificering-indiaas-bis"))
-      return "ISI Mark Indian";
+  if (path.includes("/vi/huong-dan-chung-nhan-bis-bis-an-do"))
+    return "ISI Mark Indian";
 
-    if (path.includes("/th/khumanam-kanraprong-bis-bis-india"))
-      return "ISI Mark Indian";
+  if (path.includes("/epr-certificate-for-battery-waste-management-bwm"))
+    return "Battery Waste";
 
-    if (path.includes("/vi/huong-dan-chung-nhan-bis-bis-an-do"))
-      return "ISI Mark Indian";
+  // CRS Registration
+  if (path.includes("/what-is-crs-bis-or-crs-registration"))
+    return "CRS Registration";
 
-    if (path.includes("/epr-certificate-for-battery-waste-management-bwm"))
-      return "Battery Waste";
+  if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
+    return "CRS Registration";
 
-    // CRS Registration
-    if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "CRS Registration";
+  if (path.includes("/en/what-is-crs-bis-or-crs-registration"))
+    return "CRS Registration";
 
-    if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
-      return "CRS Registration";
+  if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
+    return "CRS Registration";
 
-    if (path.includes("/en/what-is-crs-bis-or-crs-registration"))
-      return "CRS Registration";
+  if (path.includes("/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"))
+    return "CRS Registration";
 
-    if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
-      return "CRS Registration";
+  if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
+    return "CRS Registration";
 
-    if (path.includes("/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"))
-      return "CRS Registration";
+  if (path.includes("/it/cose-il-crs-bis-o-registrazione-crs"))
+    return "CRS Registration";
 
-    if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
-      return "CRS Registration";
+  if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
+    return "CRS Registration";
 
-    if (path.includes("/it/cose-il-crs-bis-o-registrazione-crs"))
-      return "CRS Registration";
+  if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
+    return "CRS Registration";
 
-    if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
-      return "CRS Registration";
+  if (path.includes("/nl/wat-is-crs-bis-of-crs-registratie"))
+    return "CRS Registration";
 
-    if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
-      return "CRS Registration";
+  if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
+    return "CRS Registration";
 
-    if (path.includes("/nl/wat-is-crs-bis-of-crs-registratie"))
-      return "CRS Registration";
+  if (path.includes("/vi/crs-bis-la-gi-hoac-dang-ky-crs"))
+    return "CRS Registration";
 
-    if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
-      return "CRS Registration";
+  if (path.includes("/information-about-peso-certification-peso-license-india"))
+    return "PESO";
+  if (path.includes("/information-about-tec-certificate-mtcte")) return "TEC";
+  if (path.includes("/information-about-wpc-certificate-eta-approval"))
+    return "WPC";
+  if (path.includes("/restriction-of-hazardous-substance-rohs-certificate"))
+    return "ROHS";
+  if (path.includes("/bee-certification")) return "BEE";
+  if (path.includes("/ce-certification")) return "CE Certification";
+  if (path.includes("/emi-emc-certification")) return "EMI EMC";
+  if (path.includes("/cb-certification")) return "CB Certification";
 
-    if (path.includes("/vi/crs-bis-la-gi-hoac-dang-ky-crs"))
-      return "CRS Registration";
+  // Scheme X
+  if (path.includes("/indian-bis-certification-under-scheme-x"))
+    return "SchemeX";
 
-    if (
-      path.includes("/information-about-peso-certification-peso-license-india")
-    )
-      return "PESO";
-    if (path.includes("/information-about-tec-certificate-mtcte")) return "TEC";
-    if (path.includes("/information-about-wpc-certificate-eta-approval"))
-      return "WPC";
-    if (path.includes("/restriction-of-hazardous-substance-rohs-certificate"))
-      return "ROHS";
-    if (path.includes("/bee-certification")) return "BEE";
-    if (path.includes("/ce-certification")) return "CE Certification";
-    if (path.includes("/emi-emc-certification")) return "EMI EMC";
-    if (path.includes("/cb-certification")) return "CB Certification";
+  if (path.includes("/de/indische-bis-zertifizierung-nach-schema-x"))
+    return "SchemeX";
 
-    // schemeX
-    if (path.includes("/indian-bis-certification-under-scheme-x"))
-      return "SchemeX";
+  if (path.includes("/en/indian-bis-certification-under-scheme-x"))
+    return "SchemeX";
 
-    if (path.includes("/de/indische-bis-zertifizierung-nach-schema-x"))
-      return "SchemeX";
+  if (path.includes("/es/certificacion-bis-india-bajo-esquema-x"))
+    return "SchemeX";
 
-    if (path.includes("/en/indian-bis-certification-under-scheme-x"))
-      return "SchemeX";
+  if (path.includes("/fr/certification-bis-indienne-selon-schema-x"))
+    return "SchemeX";
 
-    if (path.includes("/es/certificacion-bis-india-bajo-esquema-x"))
-      return "SchemeX";
+  if (path.includes("/id/sertifikasi-bis-india-di-bawah-skema-x"))
+    return "SchemeX";
 
-    if (path.includes("/fr/certification-bis-indienne-selon-schema-x"))
-      return "SchemeX";
+  if (path.includes("/it/certificazione-bis-indiana-secondo-schema-x"))
+    return "SchemeX";
 
-    if (path.includes("/id/sertifikasi-bis-india-di-bawah-skema-x"))
-      return "SchemeX";
+  if (path.includes("/ja/indo-no-bis-nintei-sukimu-x")) return "SchemeX";
 
-    if (path.includes("/it/certificazione-bis-indiana-secondo-schema-x"))
-      return "SchemeX";
+  if (path.includes("/ko/indo-bis-injeung-scheme-x-haenghaeng"))
+    return "SchemeX";
 
-    if (path.includes("/ja/indo-no-bis-nintei-sukimu-x")) return "SchemeX";
+  if (path.includes("/nl/indiaas-bis-certificaat-volgens-schema-x"))
+    return "SchemeX";
 
-    if (path.includes("/ko/indo-bis-injeung-scheme-x-haenghaeng"))
-      return "SchemeX";
+  if (path.includes("/th/bis-prathiap-india-taem-dai-tae-skema-x"))
+    return "SchemeX";
 
-    if (path.includes("/nl/indiaas-bis-certificaat-volgens-schema-x"))
-      return "SchemeX";
-
-    if (path.includes("/th/bis-prathiap-india-taem-dai-tae-skema-x"))
-      return "SchemeX";
-
-    if (path.includes("/vi/chung-nhan-bis-an-do-theo-scheme-x"))
-      return "SchemeX";
-  };
+  if (path.includes("/vi/chung-nhan-bis-an-do-theo-scheme-x")) return "SchemeX";
+};
 
   const [formData, setFormData] = useState({
     fullName: "",
