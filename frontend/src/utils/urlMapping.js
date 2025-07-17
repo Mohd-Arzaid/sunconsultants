@@ -631,3 +631,39 @@ export const getAllLocalizedUrls = (englishUrl) => {
   });
   return result;
 };
+
+/**
+ * Validate if a localized URL is valid for a given language
+ * @param {string} localizedUrl - The localized URL to validate
+ * @param {string} lang - The language code
+ * @returns {boolean} True if the URL is valid for the language
+ */
+export const isValidLocalizedUrl = (localizedUrl, lang) => {
+  if (lang === "en") {
+    return true; // English URLs are always valid
+  }
+
+  if (!URL_MAPPINGS[lang]) {
+    return false;
+  }
+
+  // Check if the localized URL exists in the reverse mapping
+  return REVERSE_URL_MAPPINGS[lang] && REVERSE_URL_MAPPINGS[lang][localizedUrl];
+};
+
+/**
+ * Get supported languages for a specific URL
+ * @param {string} englishUrl - The English URL
+ * @returns {Array} Array of supported language codes for this URL
+ */
+export const getSupportedLanguagesForUrl = (englishUrl) => {
+  const supportedLanguages = ["en"]; // English is always supported
+
+  Object.keys(URL_MAPPINGS).forEach((lang) => {
+    if (URL_MAPPINGS[lang][englishUrl]) {
+      supportedLanguages.push(lang);
+    }
+  });
+
+  return supportedLanguages;
+};

@@ -31,7 +31,7 @@ import ISIMark from "@/pages/ISIMark";
 import BatteryWaste from "@/pages/BatteryWaste";
 import LHSCable from "@/pages/LHSCable";
 
-// Manual components भी fix करें अगर path issue है
+// Manual components
 import AllClients from "@/components/manual/AllClients";
 import { BISFM } from "@/components/manual/BISFM";
 import { EPRService } from "@/components/manual/EPRService";
@@ -95,6 +95,11 @@ export function RouteResolver() {
   } else {
     // Direct English internationalized route
     englishUrl = params["*"] || "";
+  }
+
+  // Validate that we have a valid English URL
+  if (!englishUrl || englishUrl.trim() === "") {
+    return <Error404 />;
   }
 
   // Get the component for this route

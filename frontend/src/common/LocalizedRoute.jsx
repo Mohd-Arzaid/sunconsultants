@@ -1,8 +1,11 @@
 import { useEffect } from "react";
-import { useParams, Outlet, Navigate, useLocation } from "react-router-dom";
+import { useParams, Outlet, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { getEnglishUrl, URL_MAPPINGS } from "@/utils/urlMapping";
-// import { getEnglishUrl, URL_MAPPINGS } from "../../utils/urlMapping";
+import {
+  getEnglishUrl,
+  URL_MAPPINGS,
+  isValidLocalizedUrl,
+} from "@/utils/urlMapping";
 
 const SUPPORTED_LANGUAGES = [
   "it",
@@ -17,10 +20,9 @@ const SUPPORTED_LANGUAGES = [
   "es",
 ];
 
-export function LocalizedRoute({ children }) {
+export function LocalizedRoute() {
   const { lang, "*": path } = useParams();
   const { i18n } = useTranslation();
-  const location = useLocation();
 
   useEffect(() => {
     if (SUPPORTED_LANGUAGES.includes(lang)) {
@@ -33,13 +35,23 @@ export function LocalizedRoute({ children }) {
     return <Navigate to="/404" replace />;
   }
 
-  // Get the English URL from the localized path
-  const englishUrl = getEnglishUrl(path || "", lang);
+  // If no path is provided (e.g., /ja), show 404
+  if (!path || path.trim() === "") {
+    return <Navigate to="/404" replace />;
+  }
 
-  // Check if this is a valid URL mapping
+  // Validate if the localized URL is valid for this language
+  if (!isValidLocalizedUrl(path, lang)) {
+    return <Navigate to="/404" replace />;
+  }
+
+  // Get the English URL from the localized path
+  const englishUrl = getEnglishUrl(path, lang);
+
+  // Additional validation: check if this is a valid URL mapping for the specific language
   const isValidUrl = URL_MAPPINGS[lang] && URL_MAPPINGS[lang][englishUrl];
 
-  if (!isValidUrl && path) {
+  if (!isValidUrl) {
     // If it's not a valid localized URL, redirect to 404
     return <Navigate to="/404" replace />;
   }

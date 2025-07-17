@@ -160,9 +160,6 @@ function App() {
           <Route path="*" element={<RouteResolver />} />
         </Route>
 
-        {/* English internationalized routes */}
-        <Route path="/en/*" element={<RouteResolver />} />
-
         {/* Catch-all route for 404 */}
         <Route path="*" element={<Error404 />} />
       </Routes>

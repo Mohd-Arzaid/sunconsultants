@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import PropTypes from "prop-types";
 import { getFullLocalizedPath } from "../../utils/urlMapping";
 
 /**
@@ -25,5 +26,11 @@ export function LocalizedLink({ to, lang, children, ...otherProps }) {
     </Link>
   );
 }
+
+LocalizedLink.propTypes = {
+  to: PropTypes.string.isRequired,
+  lang: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
 
 export default LocalizedLink;
