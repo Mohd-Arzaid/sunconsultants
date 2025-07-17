@@ -169,7 +169,7 @@ export const URL_MAPPINGS = {
     "what-is-legal-metrology-or-lmpc-certificate":
       "was-ist-gesetzliche-metrologie-lmpc-zertifikat",
     "a-guide-to-bis-certification-indian-bis":
-      "leitfaden-bis-zertifizierung-indisches-bis",
+      "leitfaden-zur-bis-zertifizierung-indisches-bis",
     "epr-certificate-for-battery-waste-management-bwm":
       "epr-zertifikat-batterieabfall-management-bwm",
     "what-is-crs-bis-or-crs-registration":
@@ -205,7 +205,8 @@ export const URL_MAPPINGS = {
     "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
       "bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis",
     "a-guide-on-how-to-obtain-epr-certificate": "epr-shoumeisho-shutoku-gaido",
-    "what-is-bis-certificate-indian-bis": "bis-shomeisho-to-wa-indo-bis",
+    "what-is-bis-certificate-indian-bis":
+      "bis-shomeisho-toha-nani-ka-indo-no-bis",
     "a-guide-on-how-to-obtain-lmpc-certificate":
       "lmpc-shoumeisho-shutoku-gaido",
     "epr-certificate-for-plastic-waste-management-pwm":
@@ -249,7 +250,8 @@ export const URL_MAPPINGS = {
       "indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu",
     "a-guide-on-how-to-obtain-epr-certificate":
       "epr-injeungseo-chwideuk-gaideub",
-    "what-is-bis-certificate-indian-bis": "bis-injeungseo-ran-indo-bis",
+    "what-is-bis-certificate-indian-bis":
+      "bis-jeungmyeongseo-ga-mueos-indo-bis",
     "a-guide-on-how-to-obtain-lmpc-certificate":
       "lmpc-injeungseo-chwideuk-gaideub",
     "epr-certificate-for-plastic-waste-management-pwm":
@@ -340,7 +342,7 @@ export const URL_MAPPINGS = {
     "a-guide-on-how-to-obtain-epr-certificate":
       "khumue-witha-dai-rap-bai-rap-rong-epr",
     "what-is-bis-certificate-indian-bis":
-      "bai-rap-rong-bis-khue-arai-bis-india",
+      "bis-certificate-khue-a-rai-bis-india",
     "a-guide-on-how-to-obtain-lmpc-certificate":
       "khumue-witha-dai-rap-bai-rap-rong-lmpc",
     "epr-certificate-for-plastic-waste-management-pwm":
