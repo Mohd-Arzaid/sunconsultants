@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import React, { useState, useEffect, useRef } from "react";
 import BISSRimg from "../assets/images/BISSRimg.png"
+import SEOBreadcrumbs from "../components/common/SEOBreadcrumbs";
 
 
 import {
@@ -23,6 +24,7 @@ import AboutAuthor from "../components/common/AboutAuthor";
 const BatteryWaste = () => {
   return (
     <>
+      <SEOBreadcrumbs customTitle="EPR Certificate for Battery Waste Management | Extended Producer Responsibility" />
       <EPRHero />
       <EPRIndex />
       <EPRContent />
