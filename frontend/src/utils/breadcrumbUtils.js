@@ -263,6 +263,22 @@ export const generateBreadcrumbStructuredData = (
     };
   }
 
+  // Handle home page specifically
+  if (pathname === "/") {
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: `${baseUrl}/`,
+        },
+      ],
+    };
+  }
+
   // Handle static routes
   const currentPage = SITE_STRUCTURE[pathname];
 
@@ -345,8 +361,7 @@ export const generateBreadcrumbTrail = (
  * Check if a page should have breadcrumbs
  */
 export const shouldShowBreadcrumbs = (pathname) => {
-  // Always show breadcrumbs for pages that are not the home page
-  if (pathname === "/") return false;
+  // Show breadcrumbs for all pages - Google Search Console needs them
   return true;
 };
 
