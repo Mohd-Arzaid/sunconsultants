@@ -1,12 +1,16 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import Footer from "@/common/Footer";
-import { ChevronLeft, ChevronRight, FileText, Phone, Send } from "lucide-react";
+import { ChevronLeft, ChevronRight, FileText, Phone, Send, Search } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import SEOBreadcrumbs from "../components/common/SEOBreadcrumbs";
 
 const MinistryUpdates = () => {
   return (
     <>
+      <SEOBreadcrumbs customTitle="Ministry Updates - Government Notifications & Circulars" />
       <BISMinistryUpdatesMainContent />
       <Footer />
     </>

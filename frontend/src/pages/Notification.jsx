@@ -8,6 +8,7 @@ import { notifications } from "../data/notificationsData.js";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { getNotificationDetailUrl } from "@/utils/urlUtils";
+import SEOBreadcrumbs from "../components/common/SEOBreadcrumbs";
 
 const Notification = () => {
   const baseUrl = "https://bis-certifications.com";
@@ -15,6 +16,7 @@ const Notification = () => {
 
   return (
     <>
+      <SEOBreadcrumbs customTitle="BIS QCO Updates - Latest Notifications & Standards" />
       <Helmet>
         <title>
           Latest BIS Notifications & QCO Updates - Sun Certifications
