@@ -1,5 +1,6 @@
 import { Appointment } from "../model/appointment.model.js";
 import { appendAppointmentToSheet } from "../utils/googleSheet.js";
+import { integrateWithZoho } from "../utils/zohoIntegration.js";
 
 // submit appointment form
 export const submitAppointment = async (req, res) => {
@@ -66,10 +67,21 @@ export const submitAppointment = async (req, res) => {
     // Save to Google Sheets
     await appendAppointmentToSheet(appointmentData);
 
+    // Integrate with Zoho CRM (non-blocking)
+    let zohoResult = null;
+    try {
+      zohoResult = await integrateWithZoho(appointmentData, "Appointment");
+      console.log('Zoho integration successful:', zohoResult);
+    } catch (zohoError) {
+      console.error('Zoho integration failed (non-critical):', zohoError.message);
+      // Don't fail the entire request if Zoho fails
+    }
+
     return res.status(201).json({
       success: true,
       appointment,
       message: "Appointment Form Submitted Successfully !",
+      ...(zohoResult && { zohoIntegration: zohoResult })
     });
   } catch (error) {
     console.error("Error Submitting Appointment Form:", error);
