@@ -9,45 +9,27 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Footer from "@/common/Footer";
-import { useParams, Navigate, useLocation } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { LatestBlog } from "@/components/manual/CDSCOContentRight";
 import { notifications } from "../data/notificationsData.js";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { Services } from "@/components/manual/Services";
 import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
-import { getUrlSlug, getNotificationCanonicalUrl, getNotificationDetailUrl } from "@/utils/urlUtils";
+import { getUrlSlug, getNotificationCanonicalUrl } from "@/utils/urlUtils";
 
 const NotificationDetail = () => {
   const { notificationName } = useParams();
-  const location = useLocation();
 
-  // Determine if this is a legacy route or new route
-  const isLegacyRoute = location.pathname.includes('/latest-notification/');
-  
   // Find the notification based on the URL slug
   const notification = notifications.find((notif) => {
     const slug = getUrlSlug(notif.title);
-    
-    // Handle both URL patterns
-    if (isLegacyRoute) {
-      // For /latest-notification/ routes, match the full slug with bis-certificate-for prefix
-      return notificationName === `bis-certificate-for-${slug}`;
-    } else {
-      // For /bis-qco-updates/ routes, match without the prefix
-      return slug === notificationName.replace("bis-certificate-for-", "");
-    }
+    return slug === notificationName.replace("bis-certificate-for-", "");
   });
 
   // If notification not found, redirect to 404 page
   if (!notification) {
     return <Navigate to="/404" replace />;
-  }
-
-  // For SEO: If this is a legacy route, redirect to the main route
-  if (isLegacyRoute) {
-    const preferredUrl = getNotificationDetailUrl(notification.title, false);
-    return <Navigate to={preferredUrl} replace />;
   }
 
   return (
@@ -72,11 +54,9 @@ export default NotificationDetail;
 const NotificationDetailLeft = ({ notification }) => {
   // Base URL for canonical links
   const baseUrl = "https://bis-certifications.com";
-  const location = useLocation();
-  const isLegacyRoute = location.pathname.includes('/latest-notification/');
 
-  // Always use the main route as canonical URL for SEO consistency
-  const canonicalUrl = getNotificationCanonicalUrl(notification.title, baseUrl, false);
+  // Generate canonical URL
+  const canonicalUrl = getNotificationCanonicalUrl(notification.title);
 
   // SEO data for meta tags
   const seoData = {
