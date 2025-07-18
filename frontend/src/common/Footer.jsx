@@ -119,7 +119,7 @@ const Footer = () => {
                  text-2xl font-bold text-center text-neutral-600"
               >
                 <img
-                  src="/company-logo/Sun-Certifications-India-Logo"
+                  src="/company-logo/Sun-Certifications-India-Logo.webp"
                   alt={t("company.name")}
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />

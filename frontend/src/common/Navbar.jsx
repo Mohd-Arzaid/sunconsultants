@@ -128,7 +128,7 @@ const Navbar = () => {
           className="selection:bg-emerald-600 flex items-center justify-center space-x-2.5 text-2xl font-bold py-6 text-center text-neutral-600 md:mr-10"
         >
           <img
-            src="/company-logo/Sun-Certifications-India-Logo"
+            src="/company-logo/Sun-Certifications-India-Logo.webp"
             alt="Sun Certifications India Logo"
             className="w-10 h-10 md:w-12 md:h-12"
             loading="eager"

@@ -161,7 +161,7 @@ const Webinar = () => {
             "@type": "Organization",
             name: "Sun Certifications India",
             url: "https://bis-certifications.com",
-            logo: "https://bis-certifications.com/company-logo/Sun-Certifications-India-Logo",
+            logo: "https://bis-certifications.com/company-logo/Sun-Certifications-India-Logo.webp",
             description:
               "Leading certification consultancy for BIS, LMPC, EPR, and other compliance requirements in India",
             address: {
