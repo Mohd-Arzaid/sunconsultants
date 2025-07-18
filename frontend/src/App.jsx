@@ -75,6 +75,14 @@ function App() {
             path="bis-qco-updates/:notificationName"
             element={<NotificationDetail />}
           />
+          <Route
+            path="latest-notification/:notificationName"
+            element={<NotificationDetail />}
+          />
+          <Route
+            path="latest-notifications"
+            element={<Notification />}
+          />
           <Route path="ministry-updates" element={<MinistryUpdates />} />
           <Route
             path="international-audits"

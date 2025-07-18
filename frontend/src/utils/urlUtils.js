@@ -22,21 +22,28 @@ export const getUrlSlug = (title) => {
 /**
  * Generates a notification detail URL
  * @param {string} title - The notification title
+ * @param {boolean} isLegacyRoute - Whether to use legacy route format
  * @returns {string} The full URL path
  */
-export const getNotificationDetailUrl = (title) => {
-  return `/bis-qco-updates/bis-certificate-for-${getUrlSlug(title)}`;
+export const getNotificationDetailUrl = (title, isLegacyRoute = false) => {
+  const slug = getUrlSlug(title);
+  if (isLegacyRoute) {
+    return `/latest-notification/bis-certificate-for-${slug}`;
+  }
+  return `/bis-qco-updates/bis-certificate-for-${slug}`;
 };
 
 /**
  * Generates a canonical URL for a notification
  * @param {string} title - The notification title
  * @param {string} baseUrl - The base URL of the site
+ * @param {boolean} isLegacyRoute - Whether to use legacy route format
  * @returns {string} The full canonical URL
  */
 export const getNotificationCanonicalUrl = (
   title,
-  baseUrl = "https://bis-certifications.com"
+  baseUrl = "https://bis-certifications.com",
+  isLegacyRoute = false
 ) => {
-  return `${baseUrl}${getNotificationDetailUrl(title)}`;
+  return `${baseUrl}${getNotificationDetailUrl(title, isLegacyRoute)}`;
 };
