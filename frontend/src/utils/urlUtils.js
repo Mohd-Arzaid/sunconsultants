@@ -11,13 +11,15 @@ export const getUrlSlug = (title) => {
     .trim();
 
   // Convert to kebab-case
-  return cleanTitle
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, "") // Remove special characters except spaces and hyphens
-    .replace(/\s+/g, "-") // Replace spaces with hyphens
-    .replace(/-+/g, "-") // Replace multiple hyphens with single hyphen
-    .trim(); // Remove leading/trailing spaces
+return cleanTitle
+  .toLowerCase()
+  .replace(/\//g, "-") // ✅ FORWARD SLASH LINE PRESENT
+  .replace(/[^\w\s-]/g, "")
+  .replace(/\s+/g, "-")
+  .trim(); // Remove leading/trailing spaces
 };
+
+
 
 /**
  * Generates a notification detail URL
