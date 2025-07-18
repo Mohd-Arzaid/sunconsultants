@@ -13,7 +13,7 @@ export const getUrlSlug = (title) => {
   // Convert to kebab-case
   return cleanTitle
     .toLowerCase()
-    .replace(/\//g, "-") // Replace forward slashes with hyphens first
+    .replace(/\//g, "-") // Replace forward slashes with hyphens first (CRITICAL for "Dental bib/Napkins")
     .replace(/[^\w\s-]/g, "") // Remove special characters except spaces and hyphens
     .replace(/\s+/g, "-") // Replace spaces with hyphens
     .replace(/-+/g, "-") // Replace multiple hyphens with single hyphen
