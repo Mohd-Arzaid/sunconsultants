@@ -361,7 +361,10 @@ export const generateBreadcrumbTrail = (
  * Check if a page should have breadcrumbs
  */
 export const shouldShowBreadcrumbs = (pathname) => {
-  // Show breadcrumbs for all pages - Google Search Console needs them
+  // Don't show breadcrumbs for home page - single item breadcrumbs are invalid
+  if (pathname === "/") return false;
+  
+  // Show breadcrumbs for all other pages - Google Search Console needs them
   return true;
 };
 
