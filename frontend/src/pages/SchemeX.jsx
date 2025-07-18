@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 import SchemeXImage from "../assets/servicesImages/SchemeXImage.jpg";
+import SEOBreadcrumbs from "../components/common/SEOBreadcrumbs";
 import {
   Table,
   TableBody,
@@ -860,6 +861,7 @@ export const SchemeX = () => {
           })}
         </script>
       </Helmet>
+      <SEOBreadcrumbs customTitle="Scheme X Certification Services | BIS Certification" />
 
       <main className="w-full" role="main">
         <SchemeXHero />

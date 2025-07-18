@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
+import SEOBreadcrumbs from "../components/common/SEOBreadcrumbs";
 import {
   Accordion,
   AccordionContent,
@@ -17,6 +18,7 @@ import AboutAuthor from "../components/common/AboutAuthor";
 const BEE = () => {
   return (
     <>
+      <SEOBreadcrumbs customTitle="BEE Certification Services | Energy Efficiency Certification" />
       <BEEHero />
       <BEEIndex />
       <BEEContent />

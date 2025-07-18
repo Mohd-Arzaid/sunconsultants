@@ -16,6 +16,7 @@ import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "../components/manual/Services";
 import AboutAuthor from "../components/common/AboutAuthor";
+import SEOBreadcrumbs from "../components/common/SEOBreadcrumbs";
 
 const ROHS = () => {
   return (

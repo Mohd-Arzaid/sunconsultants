@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
+import SEOBreadcrumbs from "../components/common/SEOBreadcrumbs";
 
 import {
   Accordion,
