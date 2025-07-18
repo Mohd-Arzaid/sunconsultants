@@ -17,10 +17,12 @@ import CDSCOOne from "../assets/images/CDSCOOne.png";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 import Services from "../components/manual/Services";
 import AboutAuthor from "../components/common/AboutAuthor";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const CDSCO = () => {
   return (
     <article className="cdsco-page">
+      <SEOBreadcrumbs customTitle="CDSCO Registration & Certification - Sun Certifications India" />
       <CDSCOHero />
       <Index />
       <CDSCOContent />
