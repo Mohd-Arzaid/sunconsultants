@@ -1,14 +1,14 @@
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { BoxReveal } from "../magicui/box-reveal";
-import Thailand from "../../assets/images/Thailand.png";
-import Vietnam from "../../assets/images/Vietnam.png";
-import Canada from "../../assets/images/Canada.png";
-import China from "../../assets/images/China.png";
-import Italy from "../../assets/images/Italy.png";
-import Colombia from "../../assets/images/Colombia.png";
-import Qatar from "../../assets/images/Qatar.png";
-import India from "../../assets/images/India.png";
-import Indonesia from "../../assets/images/Indonesia.png";
+import Thailand from "../../assets/images/thailand-certification-services.png";
+import Vietnam from "../../assets/images/vietnam-certification-services.png";
+import Canada from "../../assets/images/canada-certification-services.png";
+import China from "../../assets/images/china-certification-services.png";
+import Italy from "../../assets/images/italy-certification-services.png";
+import Colombia from "../../assets/images/colombia-certification-services.png";
+import Qatar from "../../assets/images/qatar-certification-services.png";
+import India from "../../assets/images/india-certification-services.png";
+import Indonesia from "../../assets/images/indonesia-certification-services.png";
 
 import { useState } from "react";
 

@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
 import { Check } from "lucide-react";
-import CDSCOOne from "../assets/images/CDSCOOne.png";
+import CDSCOOne from "../assets/images/cdsco-organizational-structure-diagram.png";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 import Services from "../components/manual/Services";
 import AboutAuthor from "../components/common/AboutAuthor";

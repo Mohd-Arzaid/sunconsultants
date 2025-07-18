@@ -4,7 +4,7 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { MailPlus, Search } from "lucide-react";
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/images/sun-certifications-india-logo.png";
 import { Link } from "react-router-dom";
 import { useState, useMemo } from "react";
 import { notifications } from "../data/notificationsData.js";
@@ -333,7 +333,7 @@ const Footer = () => {
               >
                 <img
                   src={Logo}
-                  alt="logo"
+                  alt="Sun Certifications India - Official Logo"
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />
                 <Link to="/" className="text-center">

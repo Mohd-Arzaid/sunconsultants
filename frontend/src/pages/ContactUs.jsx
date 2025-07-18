@@ -1,6 +1,6 @@
 import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
-import ContactVector from "../assets/images/ContactVector.png";
+import ContactVector from "../assets/images/contact-form-vector-illustration.png";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/common/Footer";
@@ -231,7 +231,7 @@ const ContactUs = () => {
           <div className="z-20 w-full md:w-[580px] flex flex-col order-1 md:order-2">
             <img
               src="https://almondztrade.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontact_banner.7c465060.png&w=1920&q=75"
-              alt="Software Solutions"
+              alt="Sun Certifications India - Contact Us for BIS Certification and Professional Compliance Services"
               className="w-full h-auto"
             />
           </div>

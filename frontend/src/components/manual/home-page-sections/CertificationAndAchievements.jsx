@@ -3,8 +3,8 @@ import { motion } from "motion/react";
 import { useAnimationControls } from "framer-motion";
 
 // Certification Images
-import CertificationImage from "../../../assets/images/certone.jpg";
-import CertificationImageTwo from "../../../assets/images/certtwo.jpg";
+import CertificationImage from "../../../assets/images/sun-certifications-achievement-certificate-one.jpg";
+import CertificationImageTwo from "../../../assets/images/sun-certifications-achievement-certificate-two.jpg";
 
 const CertificationAndAchievements = () => {
   const controls = useAnimationControls();

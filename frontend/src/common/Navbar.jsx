@@ -128,8 +128,8 @@ const Navbar = () => {
           className="selection:bg-emerald-600 flex items-center justify-center space-x-2.5 text-2xl font-bold py-6 text-center text-neutral-600 md:mr-10"
         >
           <img
-            src="/company-logo/company-logo.webp"
-            alt="Sun Certifications India logo"
+            src="/company-logo/sun-certifications-india-official-logo.webp"
+            alt="Sun Certifications India - Official Logo for BIS Certification and Professional Compliance Services"
             className="w-10 h-10 md:w-12 md:h-12"
             loading="eager"
             decoding="async"

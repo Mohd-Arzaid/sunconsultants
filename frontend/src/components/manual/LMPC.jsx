@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 
-import LMPCimg from "../../assets/images/LMPCimg.jpg";
+import LMPCimg from "../../assets/images/lmpc-certification-process-documentation.jpg";
 
 import {
   Accordion,
@@ -736,7 +736,7 @@ const OverviewSection = () => {
         <figure className="w-full md:w-auto">
           <img
             src={LMPCimg}
-            alt="LMPC certification process and documentation requirements for importers and manufacturers"
+            alt="LMPC Certification Process and Documentation Requirements for Importers and Manufacturers - Sun Certifications India"
 
             width="400"
             height="250"

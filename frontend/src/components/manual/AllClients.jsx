@@ -1,9 +1,9 @@
-import LogoOne from "../../assets/images/OneLogo.png";
-import LogoTwo from "../../assets/images/TwoLogo.png";
-import LogoThree from "../../assets/images/ThreeLogo.png";
-import LogoFour from "../../assets/images/FourLogo.png";
-import LogoFive from "../../assets/images/FiveLogo.png";
-import LogoSix from "../../assets/images/SixLogo.png";
+import LogoOne from "../../assets/images/client-logo-one-sun-certifications.png";
+import LogoTwo from "../../assets/images/client-logo-two-sun-certifications.png";
+import LogoThree from "../../assets/images/client-logo-three-sun-certifications.png";
+import LogoFour from "../../assets/images/client-logo-four-sun-certifications.png";
+import LogoFive from "../../assets/images/client-logo-five-sun-certifications.png";
+import LogoSix from "../../assets/images/client-logo-six-sun-certifications.png";
 
 const AllClients = () => {
   const clientLogos = [

@@ -6,7 +6,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import whychooseus from "../assets/images/whychooseus.jpg";
+import whychooseus from "../assets/images/why-choose-sun-certifications-india.jpg";
 import React, { useState, useEffect } from "react";
 import Footer from "@/common/Footer";
 import { motion, useAnimationControls } from "framer-motion";
@@ -16,13 +16,13 @@ import { Helmet } from "react-helmet-async";
 import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 // Import images for services
-import BISImage from "../assets/images/BIS.jpg";
-import CDSCO from "../assets/images/CDSCO.jpg";
-import BISCRS from "../assets/images/BISCRS.jpg";
-import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg";
-import EPRCertificate from "../assets/images/EPRCertificate.jpg";
-import LMPC from "../assets/images/LMPC.jpg";
-import ISIMark from "../assets/images/ISIMark.jpg";
+import BISImage from "../assets/images/bis-certification-services-indian-manufacturers.jpg";
+import CDSCO from "../assets/images/cdsco-registration-medical-device-certification.jpg";
+import BISCRS from "../assets/images/bis-crs-registration-electronic-products.jpg";
+import PlasticWasteManagement from "../assets/images/plastic-waste-management-epr-services.jpg";
+import EPRCertificate from "../assets/images/epr-certificate-waste-management-services.jpg";
+import LMPC from "../assets/images/lmpc-legal-metrology-certification-services.jpg";
+import ISIMark from "../assets/images/isi-mark-certification-quality-standards.jpg";
 
 const About = () => {
   return (
@@ -277,7 +277,7 @@ const VideoShowcase = () => {
 
         <img
           src={whychooseus}
-          alt="Team working"
+          alt="Why Choose Sun Certifications India - Professional Team and Certification Excellence"
           className="w-full h-[450px] md:h-[600px] object-cover group-hover:scale-105 transition-all duration-700"
         />
 

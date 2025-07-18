@@ -7,8 +7,8 @@ import axios from "axios";
 import { toast } from "@/hooks/use-toast";
 
 // Contact Images
-import ContactUs from "../../../assets/images/ContactUs.png";
-import ContactChild from "../../../assets/images/ContactChild.png";
+import ContactUs from "../../../assets/images/sun-certifications-contact-us-form.png";
+import ContactChild from "../../../assets/images/certification-consultation-services-contact.png";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -228,13 +228,13 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
         <div className="hidden md:block relative w-[600px] h-[539px] mr-5 mt-16 ">
           <img
             src={ContactUs}
-            alt="ContactUs"
+            alt="Sun Certifications India - Contact Us Form for BIS Certification and Professional Compliance Services"
             className="absolute right-0 w-[475.99px] h-[539px] object-cover"
           />
 
           <img
             src={ContactChild}
-            alt="ContactChild"
+            alt="Professional Certification Consultation Services - Contact Sun Certifications India"
             className=" 
           absolute inset-0 w-[350px] h-[350px] -translate-x-[70px] translate-y-[180px] object-cover"
           />

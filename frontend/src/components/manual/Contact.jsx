@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Separator } from "../ui/separator";
 import { Input } from "../ui/input";
-import ContactUs from "../../assets/images/ContactUs.png";
-import ContactChild from "../../assets/images/ContactChild.png";
+import ContactUs from "../../assets/images/sun-certifications-contact-us-form.png";
+import ContactChild from "../../assets/images/certification-consultation-services-contact.png";
 import { Button } from "../ui/button";
 import { BoxReveal } from "../magicui/box-reveal";
 import { ClockLoader } from "react-spinners";
@@ -236,13 +236,13 @@ const Contact = () => {
         <div className="hidden md:block relative w-[600px] h-[539px] mr-5 mt-16 ">
           <img
             src={ContactUs}
-            alt="ContactUs"
+            alt="Sun Certifications India - Contact Us Form for Professional Certification Services"
             className="absolute right-0 w-[475.99px] h-[539px] object-cover  "
           />
 
           <img
             src={ContactChild}
-            alt="ContactChild"
+            alt="Professional Certification Consultation Services - Contact Sun Certifications India"
             className=" 
           absolute inset-0 w-[350px] h-[350px] -translate-x-[70px] translate-y-[180px] object-cover"
           />

@@ -4,7 +4,7 @@ import {
     TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/images/sun-certifications-india-logo.png";
 import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
@@ -330,11 +330,11 @@ const Footer = () => {
                                 className=" selection:bg-emerald-600 flex md:space-x-2.5 
                  text-2xl font-bold text-center text-neutral-600"
                             >
-                                <img
-                                    src={Logo}
-                                    alt="logo"
-                                    className="hidden md:block w-10 h-10 md:w-12 md:h-12"
-                                />
+                                                <img
+                  src={Logo}
+                  alt="Sun Certifications India - Official Logo"
+                  className="hidden md:block w-10 h-10 md:w-12 md:h-12"
+                />
                                 <Link to="/" className="text-center">
                                     <h1 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
                                         Sun Certifications India

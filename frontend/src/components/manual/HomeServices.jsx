@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
 
 // Service Images
-import CDSCO from "../../assets/images/CDSCO.jpg";
-import BISCRS from "../../assets/images/BISCRS.jpg";
-import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
-import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
-import LMPC from "../../assets/images/LMPC.jpg";
-import ISIMark from "../../assets/images/ISIMark.jpg";
+import CDSCO from "../../assets/images/cdsco-registration-medical-device-certification.jpg";
+import BISCRS from "../../assets/images/bis-crs-registration-electronic-products.jpg";
+import PlasticWasteManagement from "../../assets/images/plastic-waste-management-epr-services.jpg";
+import EPRCertificate from "../../assets/images/epr-certificate-waste-management-services.jpg";
+import LMPC from "../../assets/images/lmpc-legal-metrology-certification-services.jpg";
+import ISIMark from "../../assets/images/isi-mark-certification-quality-standards.jpg";
 
 const HomeServices = () => {
   return (
@@ -39,7 +39,7 @@ const HomeServices = () => {
             <figure className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 m-0">
               <img
                 src={ISIMark}
-                alt="BIS Certification Services - Professional ISI License for Foreign Manufacturers"
+                alt="BIS Certification Services - Professional ISI License for Foreign Manufacturers - Sun Certifications India"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </figure>
@@ -56,7 +56,7 @@ const HomeServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
-                alt="BIS"
+                alt="BIS CRS Registration for Electronic Products - Sun Certifications India"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </div>
@@ -73,7 +73,7 @@ const HomeServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMark}
-                alt="ISIMark"
+                alt="ISI Mark Certification for Indian Manufacturers - Sun Certifications India"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </div>
@@ -90,7 +90,7 @@ const HomeServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
-                alt="BISCRS"
+                alt="BIS CRS Registration Services - Sun Certifications India"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </div>
@@ -108,7 +108,7 @@ const HomeServices = () => {
             <figure className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 m-0">
               <img
                 src={CDSCO}
-                alt="CDSCO Registration Certification - Medical Device and Drug Registration Services"
+                alt="CDSCO Registration Certification - Medical Device and Drug Registration Services - Sun Certifications India"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </figure>
@@ -125,7 +125,7 @@ const HomeServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
-                alt="PlasticWasteManagement"
+                alt="Plastic Waste Management EPR Services - Sun Certifications India"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </div>
@@ -142,7 +142,7 @@ const HomeServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={EPRCertificate}
-                alt="EPRCertificate"
+                alt="EPR Certificate and Waste Management Services - Sun Certifications India"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </div>
@@ -159,7 +159,7 @@ const HomeServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
-                alt="LMPC"
+                alt="LMPC Legal Metrology Certification Services - Sun Certifications India"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </div>

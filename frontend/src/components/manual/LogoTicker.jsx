@@ -1,10 +1,10 @@
 
-import LogoOne from "../../assets/images/OneLogo.png";
-import LogoTwo from "../../assets/images/TwoLogo.png";
-import LogoThree from "../../assets/images/ThreeLogo.png";
-import LogoFour from "../../assets/images/FourLogo.png";
-import LogoFive from "../../assets/images/FiveLogo.png";
-import LogoSix from "../../assets/images/SixLogo.png";
+import LogoOne from "../../assets/images/client-logo-one-sun-certifications.png";
+import LogoTwo from "../../assets/images/client-logo-two-sun-certifications.png";
+import LogoThree from "../../assets/images/client-logo-three-sun-certifications.png";
+import LogoFour from "../../assets/images/client-logo-four-sun-certifications.png";
+import LogoFive from "../../assets/images/client-logo-five-sun-certifications.png";
+import LogoSix from "../../assets/images/client-logo-six-sun-certifications.png";
 import { motion } from "motion/react";
 
 const LogoTicker = () => {
@@ -24,33 +24,33 @@ const LogoTicker = () => {
           }}
           className="flex gap-14 pr-14 items-center justify-center flex-none"
         >
-          <img src={LogoOne} alt="Logo One"      />
-          <img src={LogoThree} alt="Logo Three"  />
-          <img src={LogoFour} alt="Logo Four"    />
-          <img src={LogoFive} alt="Logo Five"    />
+                  <img src={LogoOne} alt="Client Logo One - Sun Certifications India Partner"      />
+        <img src={LogoThree} alt="Client Logo Three - Sun Certifications India Partner"  />
+        <img src={LogoFour} alt="Client Logo Four - Sun Certifications India Partner"    />
+        <img src={LogoFive} alt="Client Logo Five - Sun Certifications India Partner"    />
 
-          <img src={LogoSix} alt="Logo Six"       />
+        <img src={LogoSix} alt="Client Logo Six - Sun Certifications India Partner"       />
 
-          <img src={LogoOne} alt="Logo One"        />
-          <img src={LogoTwo} alt="Logo Two"        />
-          <img src={LogoThree} alt="Logo Three"     />
-          <img src={LogoFour} alt="Logo Four"       />
-          <img src={LogoFive} alt="Logo Five"      />
-          <img src={LogoSix} alt="Logo Six"      />
+        <img src={LogoOne} alt="Client Logo One - Sun Certifications India Partner"        />
+        <img src={LogoTwo} alt="Client Logo Two - Sun Certifications India Partner"        />
+        <img src={LogoThree} alt="Client Logo Three - Sun Certifications India Partner"     />
+        <img src={LogoFour} alt="Client Logo Four - Sun Certifications India Partner"       />
+        <img src={LogoFive} alt="Client Logo Five - Sun Certifications India Partner"      />
+        <img src={LogoSix} alt="Client Logo Six - Sun Certifications India Partner"      />
 
-          <img src={LogoOne} alt="Logo One" />
-          <img src={LogoTwo} alt="Logo Two" />
-          <img src={LogoThree} alt="Logo Three" />
-          <img src={LogoFour} alt="Logo Four" />
-          <img src={LogoFive} alt="Logo Five" />
-          <img src={LogoSix} alt="Logo Six" />
-                  
-          <img src={LogoOne} alt="Logo One"  className="hidden md:block"/>
-          <img src={LogoTwo} alt="Logo Two" className="hidden md:block"/>
-          <img src={LogoThree} alt="Logo Three" className="hidden md:block" />
-          <img src={LogoFour} alt="Logo Four" className="hidden md:block" />
-          <img src={LogoFive} alt="Logo Five" className="hidden md:block" />
-          <img src={LogoSix} alt="Logo Six" className="hidden md:block" />
+        <img src={LogoOne} alt="Client Logo One - Sun Certifications India Partner" />
+        <img src={LogoTwo} alt="Client Logo Two - Sun Certifications India Partner" />
+        <img src={LogoThree} alt="Client Logo Three - Sun Certifications India Partner" />
+        <img src={LogoFour} alt="Client Logo Four - Sun Certifications India Partner" />
+        <img src={LogoFive} alt="Client Logo Five - Sun Certifications India Partner" />
+        <img src={LogoSix} alt="Client Logo Six - Sun Certifications India Partner" />
+
+        <img src={LogoOne} alt="Client Logo One - Sun Certifications India Partner"  className="hidden md:block"/>
+        <img src={LogoTwo} alt="Client Logo Two - Sun Certifications India Partner" className="hidden md:block"/>
+        <img src={LogoThree} alt="Client Logo Three - Sun Certifications India Partner" className="hidden md:block" />
+        <img src={LogoFour} alt="Client Logo Four - Sun Certifications India Partner" className="hidden md:block" />
+        <img src={LogoFive} alt="Client Logo Five - Sun Certifications India Partner" className="hidden md:block" />
+        <img src={LogoSix} alt="Client Logo Six - Sun Certifications India Partner" className="hidden md:block" />
         </motion.div>
       </div>
     </div>

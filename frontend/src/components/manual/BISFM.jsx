@@ -3,8 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
-import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg";
-import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
+import ISIMARKImage from "../../assets/servicesImages/isi-mark-certification-updated-guidelines.jpg";
+import BISCertificateImage from "../../assets/bisfmpageimage/bis-foreign-manufacturer-certificate.png";
 
 import {
   Table,
@@ -826,7 +826,7 @@ const StandardizationSection = () => {
 
       <img
         src={ISIMARKImage}
-        alt="ISI Mark"
+        alt="ISI Mark Certification Updated Guidelines - Sun Certifications India"
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
@@ -1389,7 +1389,7 @@ const ProcessSection = () => {
 
       <img
         src={BISCertificateImage}
-        alt="BIS Certificate Process Flow"
+        alt="BIS Certificate Process Flow for Foreign Manufacturers - Sun Certifications India"
         className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
       />
 

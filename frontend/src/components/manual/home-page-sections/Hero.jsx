@@ -1,5 +1,5 @@
-const HeroImage = "/hero-image/hero-image.webp";
-const HeroImageMobile = "/hero-image/hero-mobile.svg";
+const HeroImage = "/hero-image/sun-certifications-hero-professional-services.webp";
+const HeroImageMobile = "/hero-image/sun-certifications-mobile-hero-certification-services.svg";
 
 import { BlurIn } from "@/components/ui/blur-in";
 import { FadeText } from "@/components/ui/fade-text";
@@ -29,7 +29,7 @@ const DesktopHero = () => (
           <figure className="m-0">
             <img
               src={HeroImage}
-              alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
+              alt="Sun Certifications India - Leading BIS Certification and Professional Compliance Services for Indian and International Manufacturers"
               className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-full max-w-[740px] h-auto object-cover"
               loading="eager"
               decoding="sync"
@@ -118,7 +118,7 @@ const MobileHero = () => {
           <figure className="m-0">
             <img
               src={HeroImageMobile}
-              alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
+              alt="Sun Certifications India - Mobile Hero Image for BIS Certification and Professional Compliance Services"
               loading="eager"
               decoding="sync"
               fetchPriority="high"

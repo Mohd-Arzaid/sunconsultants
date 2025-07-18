@@ -1,9 +1,9 @@
 import { BoxReveal } from "../magicui/box-reveal";
 import { Separator } from "../ui/separator";
-import TestimonialImage from "../../assets/images/TestimonialImage.png";
-import TestimonialImageSecond from "../../assets/images/TestimonialImageSecond.png";
-import TestimonialImageThree from "../../assets/images/TestimonialImageThree.png";
-import Vector from "../../assets/images/Vector.png";
+import TestimonialImage from "../../assets/images/client-testimonial-one-sun-certifications.png";
+import TestimonialImageSecond from "../../assets/images/client-testimonial-two-sun-certifications.png";
+import TestimonialImageThree from "../../assets/images/client-testimonial-three-sun-certifications.png";
+import Vector from "../../assets/images/testimonial-quote-vector-icon.png";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
@@ -80,7 +80,7 @@ const Client = () => {
               <img
                 src={slideData[current].image}
                 className="rounded-full w-24 h-24 object-cover border-4 border-white"
-                alt="Testimonial"
+                alt="Client Testimonial - Sun Certifications India Customer Review"
               />
               <div className="flex flex-col items-center justify-center text-center">
                 <div className="text-xl font-semibold font-roboto text-black tracking-wide">
@@ -95,7 +95,7 @@ const Client = () => {
               </p>
             </div>
             <div className="absolute top-4 right-4">
-              <img src={Vector} alt="Vector" className="w-10 h-10 opacity-50" />
+              <img src={Vector} alt="Testimonial Quote Vector Icon - Sun Certifications India" className="w-10 h-10 opacity-50" />
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ const Client = () => {
                   <img
                     src={slide.image}
                     className="rounded-[52px] w-[235px] h-[284.58px] object-cover"
-                    alt="Testimonial"
+                    alt="Client Testimonial - Sun Certifications India Customer Experience"
                   />
 
                   <div className="flex flex-col items-center justify-center">
@@ -140,7 +140,7 @@ const Client = () => {
                     </div>
 
                     <div className="absolute inset-0  translate-x-[480px] translate-y-[300px] ">
-                      <img src={Vector} alt="Vector" />
+                      <img src={Vector} alt="Testimonial Quote Vector Icon - Sun Certifications India" />
                     </div>
                   </>
                 )}

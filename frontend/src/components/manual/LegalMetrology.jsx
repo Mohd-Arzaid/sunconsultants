@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 
-import PWMRimg from "../../assets/images/PWMRimg.png";
+import PWMRimg from "../../assets/images/plastic-waste-management-regulation-process.png";
 
 import {
   Accordion,
@@ -737,7 +737,7 @@ const ComplianceSection = () => {
 
         <img
           src={PWMRimg}
-          alt="Medical laboratory equipment"
+          alt="Legal Metrology LMPC Certificate Process - Sun Certifications India"
 
           width="400"
           height="250"

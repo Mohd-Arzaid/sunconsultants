@@ -2,14 +2,14 @@ import { useNavigate } from "react-router-dom";
 import { useState, useCallback, useMemo } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const BISImage = "/services-images/BIS.jpg";
-const CDSCOImage = "/services-images/CDSCO.jpg";
-const BISCRSImage = "/services-images/BISCRS.jpg";
+const BISImage = "/services-images/bis-certification-services-indian-manufacturers.jpg";
+const CDSCOImage = "/services-images/cdsco-registration-medical-device-certification.jpg";
+const BISCRSImage = "/services-images/bis-crs-registration-electronic-products.jpg";
 const PlasticWasteManagementImage =
-  "/services-images/PlasticWasteManagement.jpg";
-const EPRCertificateImage = "/services-images/EPRCertificate.jpg";
-const LMPCImage = "/services-images/LMPC.jpg";
-const ISIMarkImage = "/services-images/ISIMark.jpg";
+  "/services-images/plastic-waste-management-epr-services.jpg";
+const EPRCertificateImage = "/services-images/epr-certificate-waste-management-services.jpg";
+const LMPCImage = "/services-images/lmpc-legal-metrology-certification-services.jpg";
+const ISIMarkImage = "/services-images/isi-mark-certification-quality-standards.jpg";
 
 const services = [
   {
