@@ -494,11 +494,4 @@ export default {
   SITE_STRUCTURE, // Export for testing/debugging
 };
 
-// Named exports for convenient importing
-export {
-  generateBreadcrumbStructuredData,
-  generateBreadcrumbTrail, 
-  shouldShowBreadcrumbs,
-  getPageDepth,
-  validateBreadcrumbStructure,
-};
+// Named exports already handled by individual export statements above

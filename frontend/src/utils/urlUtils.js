@@ -8,6 +8,7 @@ export const getUrlSlug = (title) => {
   let cleanTitle = title
     .replace(/^BIS\s+Legal\s+Metrology\s*[–-]\s*/i, "Legal Metrology ") // Handle "BIS Legal Metrology –" -> "Legal Metrology "
     .replace(/^BIS\s+(certification|notification)\s+for\s+/i, "") // Remove "BIS certification for" or "BIS Notification for"
+    .replace(/^BIS\s+for\s+/i, "") // Remove "BIS for " pattern
     .replace(/^BIS\s+Notification\s+/i, "") // Remove "BIS Notification " (without "for")
     .replace(/^QCO\s+notification\s+for\s+/i, "") // Remove "QCO notification for"
     .trim();
