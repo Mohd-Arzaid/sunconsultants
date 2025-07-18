@@ -9,6 +9,9 @@ Sitemap: https://bis-certifications.com/image-sitemap.xml
 Disallow: /latest-notification/
 Disallow: /latest-notifications
 
+# Disallow PDF directory to prevent duplicate content issues
+Disallow: /pdf/
+
 # Disallow specific service pages
 Disallow: /cdsco-registration-certification
 Disallow: /a-guide-on-how-to-obtain-epr-certificate
