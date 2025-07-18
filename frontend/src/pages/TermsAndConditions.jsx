@@ -6,10 +6,35 @@ import {
 import { MailPlus } from "lucide-react";
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const TermsAndConditions = () => {
     return (
-        <div className="bg-white">
+        <>
+            <Helmet>
+                <title>Terms and Conditions - Sun Certifications India | BIS Certification Services</title>
+                <meta
+                    name="description"
+                    content="Read the Terms and Conditions for Sun Certifications India's BIS certification and regulatory compliance services. Understand our service terms and conditions."
+                />
+                <meta
+                    name="keywords"
+                    content="terms and conditions, Sun Certifications India, BIS certification terms, service agreement, legal terms"
+                />
+                <link rel="canonical" href="https://bis-certifications.com/terms-and-conditions" />
+                
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Terms and Conditions - Sun Certifications India | BIS Certification Services" />
+                <meta property="og:description" content="Read the Terms and Conditions for Sun Certifications India's BIS certification and regulatory compliance services. Understand our service terms and conditions." />
+                <meta property="og:url" content="https://bis-certifications.com/terms-and-conditions" />
+                <meta property="og:type" content="website" />
+                
+                {/* Twitter Tags */}
+                <meta name="twitter:title" content="Terms and Conditions - Sun Certifications India | BIS Certification Services" />
+                <meta name="twitter:description" content="Read the Terms and Conditions for Sun Certifications India's BIS certification and regulatory compliance services. Understand our service terms and conditions." />
+            </Helmet>
+            
+            <div className="bg-white">
             {/* Hero Section */}
             <div className="bg-white pt-10">
                 <div className="max-w-[88rem] mx-auto px-4 md:px-12">
@@ -203,11 +228,10 @@ const TermsAndConditions = () => {
             </div>
 
             <Footer />
-        </div>
+            </div>
+        </>
     );
 };
-
-export default TermsAndConditions;
 
 const Footer = () => {
     return (
@@ -580,3 +604,5 @@ const Footer = () => {
         </footer>
     );
 };
+
+export default TermsAndConditions;
