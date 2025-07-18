@@ -1,15 +1,16 @@
 // Breadcrumb structured data utility for SEO
 // Generates JSON-LD breadcrumb schema without rendering visible UI components
+// Updated with comprehensive site structure analysis
 
 const SITE_STRUCTURE = {
-  // Home page
+  // Home page (excluded from breadcrumbs per Google guidelines)
   "/": {
     name: "Home",
     url: "/",
     position: 1,
   },
 
-  // Main pages
+  // ============= MAIN INFORMATIONAL PAGES =============
   "/about": {
     name: "About Us",
     url: "/about",
@@ -17,14 +18,14 @@ const SITE_STRUCTURE = {
     parents: ["/"],
   },
   "/contact": {
-    name: "Contact Us",
+    name: "Contact Us", 
     url: "/contact",
     position: 2,
     parents: ["/"],
   },
   "/clients": {
     name: "Our Clients",
-    url: "/clients",
+    url: "/clients", 
     position: 2,
     parents: ["/"],
   },
@@ -41,13 +42,13 @@ const SITE_STRUCTURE = {
     parents: ["/"],
   },
   "/terms-and-conditions": {
-    name: "Terms and Conditions",
+    name: "Terms and Conditions", 
     url: "/terms-and-conditions",
     position: 2,
     parents: ["/"],
   },
 
-  // Update pages
+  // ============= NEWS & UPDATES PAGES =============
   "/bis-qco-updates": {
     name: "BIS QCO Updates",
     url: "/bis-qco-updates",
@@ -56,7 +57,7 @@ const SITE_STRUCTURE = {
   },
   "/ministry-updates": {
     name: "Ministry Updates",
-    url: "/ministry-updates",
+    url: "/ministry-updates", 
     position: 2,
     parents: ["/"],
   },
@@ -73,7 +74,7 @@ const SITE_STRUCTURE = {
     parents: ["/"],
   },
   "/webinar": {
-    name: "Webinar",
+    name: "Webinars",
     url: "/webinar",
     position: 2,
     parents: ["/"],
@@ -85,100 +86,22 @@ const SITE_STRUCTURE = {
     parents: ["/"],
   },
 
-  // General service pages
+  // ============= REGULATORY CERTIFICATION PAGES =============
   "/cdsco-registration-certification": {
     name: "CDSCO Registration & Certification",
     url: "/cdsco-registration-certification",
     position: 2,
     parents: ["/"],
   },
-  "/schemeX": {
-    name: "Scheme X Certification",
-    url: "/schemeX",
+  "/indian-bis-certification-under-scheme-x": {
+    name: "BIS Certification Under Scheme X",
+    url: "/indian-bis-certification-under-scheme-x", 
     position: 2,
     parents: ["/"],
   },
   "/bee-certification": {
-    name: "BEE Certification",
+    name: "BEE Star Rating Certification",
     url: "/bee-certification",
-    position: 2,
-    parents: ["/"],
-  },
-  "/ce-certification": {
-    name: "CE Certification",
-    url: "/ce-certification",
-    position: 2,
-    parents: ["/"],
-  },
-  "/emi-emc-certification": {
-    name: "EMI EMC Certification",
-    url: "/emi-emc-certification",
-    position: 2,
-    parents: ["/"],
-  },
-  "/cb-certification": {
-    name: "CB Certification",
-    url: "/cb-certification",
-    position: 2,
-    parents: ["/"],
-  },
-
-  // BIS service pages
-  "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis": {
-    name: "BIS Certification for Foreign Manufacturers",
-    url: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
-    position: 2,
-    parents: ["/"],
-  },
-  "/what-is-bis-certificate-indian-bis": {
-    name: "What is BIS Certificate",
-    url: "/what-is-bis-certificate-indian-bis",
-    position: 2,
-    parents: ["/"],
-  },
-  "/a-guide-to-bis-certification-indian-bis": {
-    name: "BIS Certification Guide",
-    url: "/a-guide-to-bis-certification-indian-bis",
-    position: 2,
-    parents: ["/"],
-  },
-  "/what-is-crs-bis-or-crs-registration": {
-    name: "CRS BIS Registration",
-    url: "/what-is-crs-bis-or-crs-registration",
-    position: 2,
-    parents: ["/"],
-  },
-
-  // EPR service pages
-  "/a-guide-on-how-to-obtain-epr-certificate": {
-    name: "EPR Certificate Guide",
-    url: "/a-guide-on-how-to-obtain-epr-certificate",
-    position: 2,
-    parents: ["/"],
-  },
-  "/epr-certificate-for-plastic-waste-management-pwm": {
-    name: "EPR Certificate for Plastic Waste Management",
-    url: "/epr-certificate-for-plastic-waste-management-pwm",
-    position: 2,
-    parents: ["/"],
-  },
-  "/epr-certificate-for-battery-waste-management-bwm": {
-    name: "EPR Certificate for Battery Waste Management",
-    url: "/epr-certificate-for-battery-waste-management-bwm",
-    position: 2,
-    parents: ["/"],
-  },
-
-  // Other certification pages
-  "/a-guide-on-how-to-obtain-lmpc-certificate": {
-    name: "LMPC Certificate Guide",
-    url: "/a-guide-on-how-to-obtain-lmpc-certificate",
-    position: 2,
-    parents: ["/"],
-  },
-  "/what-is-legal-metrology-or-lmpc-certificate": {
-    name: "Legal Metrology LMPC Certificate",
-    url: "/what-is-legal-metrology-or-lmpc-certificate",
     position: 2,
     parents: ["/"],
   },
@@ -190,7 +113,7 @@ const SITE_STRUCTURE = {
   },
   "/information-about-tec-certificate-mtcte": {
     name: "TEC Certificate MTCTE",
-    url: "/information-about-tec-certificate-mtcte",
+    url: "/information-about-tec-certificate-mtcte", 
     position: 2,
     parents: ["/"],
   },
@@ -200,92 +123,224 @@ const SITE_STRUCTURE = {
     position: 2,
     parents: ["/"],
   },
+
+  // ============= INTERNATIONAL CERTIFICATION PAGES =============
+  "/ce-certification": {
+    name: "CE Marking Certification",
+    url: "/ce-certification",
+    position: 2,
+    parents: ["/"],
+  },
+  "/emi-emc-certification": {
+    name: "EMI EMC Testing & Certification", 
+    url: "/emi-emc-certification",
+    position: 2,
+    parents: ["/"],
+  },
+  "/cb-certification": {
+    name: "CB Scheme Certification",
+    url: "/cb-certification",
+    position: 2,
+    parents: ["/"],
+  },
   "/restriction-of-hazardous-substance-rohs-certificate": {
-    name: "RoHS Certificate",
+    name: "RoHS Compliance Certificate",
     url: "/restriction-of-hazardous-substance-rohs-certificate",
+    position: 2,
+    parents: ["/"],
+  },
+
+  // ============= BIS CERTIFICATION GUIDE PAGES =============
+  "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis": {
+    name: "BIS Certification for Foreign Manufacturers",
+    url: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    position: 2,
+    parents: ["/"],
+  },
+  "/what-is-bis-certificate-indian-bis": {
+    name: "What is BIS Certificate & ISI Mark",
+    url: "/what-is-bis-certificate-indian-bis",
+    position: 2,
+    parents: ["/"],
+  },
+  "/a-guide-to-bis-certification-indian-bis": {
+    name: "Complete Guide to BIS Certification",
+    url: "/a-guide-to-bis-certification-indian-bis", 
+    position: 2,
+    parents: ["/"],
+  },
+  "/what-is-crs-bis-or-crs-registration": {
+    name: "CRS BIS Registration Process",
+    url: "/what-is-crs-bis-or-crs-registration",
+    position: 2,
+    parents: ["/"],
+  },
+  "/lhs-cable-certification": {
+    name: "LHS Cable Certification",
+    url: "/lhs-cable-certification",
+    position: 2,
+    parents: ["/"],
+  },
+
+  // ============= EPR & WASTE MANAGEMENT PAGES =============
+  "/a-guide-on-how-to-obtain-epr-certificate": {
+    name: "EPR Certificate Complete Guide",
+    url: "/a-guide-on-how-to-obtain-epr-certificate",
+    position: 2,
+    parents: ["/"],
+  },
+  "/epr-certificate-for-plastic-waste-management-pwm": {
+    name: "EPR Certificate for Plastic Waste Management",
+    url: "/epr-certificate-for-plastic-waste-management-pwm",
+    position: 2,
+    parents: ["/"],
+  },
+  "/epr-certificate-for-battery-waste-management-bwm": {
+    name: "EPR Certificate for Battery Waste Management", 
+    url: "/epr-certificate-for-battery-waste-management-bwm",
+    position: 2,
+    parents: ["/"],
+  },
+
+  // ============= LEGAL METROLOGY PAGES =============
+  "/a-guide-on-how-to-obtain-lmpc-certificate": {
+    name: "LMPC Certificate Complete Guide",
+    url: "/a-guide-on-how-to-obtain-lmpc-certificate",
+    position: 2,
+    parents: ["/"],
+  },
+  "/what-is-legal-metrology-or-lmpc-certificate": {
+    name: "Legal Metrology LMPC Certificate", 
+    url: "/what-is-legal-metrology-or-lmpc-certificate",
+    position: 2,
+    parents: ["/"],
+  },
+
+  // ============= ERROR & UTILITY PAGES =============
+  "/404": {
+    name: "Page Not Found",
+    url: "/404",
     position: 2,
     parents: ["/"],
   },
 };
 
-// Dynamic route patterns for nested pages
+// Enhanced dynamic route patterns for nested pages and multilingual support
 const DYNAMIC_ROUTE_PATTERNS = {
+  // BIS QCO Updates detail pages
   "/bis-qco-updates/:notificationName": {
     getParents: (params) => [
       { name: "Home", url: "/", position: 1 },
       { name: "BIS QCO Updates", url: "/bis-qco-updates", position: 2 },
     ],
-    getName: (params) =>
-      `BIS Certificate for ${params.notificationName
+    getName: (params, customTitle) => {
+      if (customTitle) return customTitle;
+      
+      // Enhanced name generation for better SEO
+      const formattedName = params.notificationName
+        ?.replace(/^bis-certificate-for-/, "") // Remove prefix
+        ?.replace(/[-_]/g, " ") // Replace hyphens/underscores with spaces
+        ?.replace(/\b\w/g, (l) => l.toUpperCase()) // Capitalize each word
+        ?.replace(/\bBis\b/g, "BIS") // Fix BIS capitalization
+        ?.replace(/\bIsi\b/g, "ISI") // Fix ISI capitalization
+        ?.replace(/\bEpr\b/g, "EPR") // Fix EPR capitalization
+        ?.replace(/\bPvc\b/g, "PVC") // Fix PVC capitalization
+        ?.replace(/\bHdpe\b/g, "HDPE") // Fix HDPE capitalization
+        ?.replace(/\bPp\b/g, "PP"); // Fix PP capitalization
+        
+      return `BIS Certificate for ${formattedName}`;
+    },
+    getPosition: () => 3,
+  },
+
+  // Support for potential multilingual routes (for future expansion)
+  "/:lang/bis-qco-updates/:notificationName": {
+    getParents: (params) => [
+      { name: "Home", url: `/${params.lang}`, position: 1 },
+      { name: "BIS QCO Updates", url: `/${params.lang}/bis-qco-updates`, position: 2 },
+    ],
+    getName: (params, customTitle) => {
+      if (customTitle) return customTitle;
+      const formattedName = params.notificationName
+        ?.replace(/^bis-certificate-for-/, "")
         ?.replace(/[-_]/g, " ")
-        ?.replace(/\b\w/g, (l) => l.toUpperCase())}`,
+        ?.replace(/\b\w/g, (l) => l.toUpperCase());
+      return `BIS Certificate for ${formattedName}`;
+    },
     getPosition: () => 3,
   },
 };
 
 /**
- * Generate breadcrumb structured data for SEO
+ * Enhanced breadcrumb structured data generator with improved SEO optimization
+ * @param {string} pathname - The current page pathname
+ * @param {object} params - Dynamic route parameters
+ * @param {string} customTitle - Custom title override
+ * @param {string} baseUrl - Base URL for the site
+ * @returns {object} JSON-LD structured data for breadcrumbs
  */
 export const generateBreadcrumbStructuredData = (
   pathname,
   params = {},
-  customTitle = null
+  customTitle = null,
+  baseUrl = "https://bis-certifications.com"
 ) => {
-  const baseUrl = "https://bis-certifications.com";
+  // Handle dynamic routes with enhanced pattern matching
+  for (const [pattern, config] of Object.entries(DYNAMIC_ROUTE_PATTERNS)) {
+    const patternRegex = new RegExp(
+      "^" + pattern.replace(/:[\w]+/g, "([^/]+)") + "$"
+    );
+    const match = pathname.match(patternRegex);
+    
+    if (match) {
+      const paramNames = (pattern.match(/:[\w]+/g) || []).map(p => p.substring(1));
+      const matchedParams = { ...params };
+      
+      // Extract parameters from URL if not provided
+      paramNames.forEach((paramName, index) => {
+        if (!matchedParams[paramName]) {
+          matchedParams[paramName] = match[index + 1];
+        }
+      });
+      
+      const parents = config.getParents(matchedParams);
+      const currentName = config.getName(matchedParams, customTitle);
+      const currentPosition = config.getPosition();
 
-  // Handle dynamic routes
-  if (pathname.includes("/bis-qco-updates/") && params.notificationName) {
-    const pattern =
-      DYNAMIC_ROUTE_PATTERNS["/bis-qco-updates/:notificationName"];
-    const parents = pattern.getParents(params);
-    const currentName = customTitle || pattern.getName(params);
-    const currentPosition = pattern.getPosition();
-
-    const breadcrumbList = [
-      ...parents.map((parent) => ({
-        "@type": "ListItem",
-        position: parent.position,
-        name: parent.name,
-        item: `${baseUrl}${parent.url}`,
-      })),
-      {
-        "@type": "ListItem",
-        position: currentPosition,
-        name: currentName,
-        item: `${baseUrl}${pathname}`,
-      },
-    ];
-
-    return {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: breadcrumbList,
-    };
-  }
-
-  // Handle home page specifically
-  if (pathname === "/") {
-    return {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
+      const breadcrumbList = [
+        ...parents.map((parent) => ({
+          "@type": "ListItem",
+          position: parent.position,
+          name: parent.name,
+          item: `${baseUrl}${parent.url}`,
+        })),
         {
           "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: `${baseUrl}/`,
+          position: currentPosition,
+          name: currentName,
+          item: `${baseUrl}${pathname}`,
         },
-      ],
-    };
+      ];
+
+      return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbList,
+      };
+    }
   }
 
-  // Handle static routes
+  // Handle static routes with enhanced fallback
   const currentPage = SITE_STRUCTURE[pathname];
 
   if (!currentPage) {
-    // Default breadcrumb for unknown pages
+    // Enhanced default breadcrumb for unknown pages
+    const pageName = customTitle || 
+      pathname.split('/').pop()?.replace(/[-_]/g, ' ')?.replace(/\b\w/g, l => l.toUpperCase()) || 
+      "Page";
+      
     return {
-      "@context": "https://schema.org",
+      "@context": "https://schema.org", 
       "@type": "BreadcrumbList",
       itemListElement: [
         {
@@ -297,21 +352,21 @@ export const generateBreadcrumbStructuredData = (
         {
           "@type": "ListItem",
           position: 2,
-          name: "Page",
+          name: pageName,
           item: `${baseUrl}${pathname}`,
         },
       ],
     };
   }
 
-  // Build breadcrumb trail
+  // Build breadcrumb trail with validation
   const breadcrumbList = [];
 
-  // Add parent pages
-  if (currentPage.parents) {
+  // Add parent pages with validation
+  if (currentPage.parents && Array.isArray(currentPage.parents)) {
     currentPage.parents.forEach((parentPath, index) => {
       const parent = SITE_STRUCTURE[parentPath];
-      if (parent) {
+      if (parent && parent.name && parent.url) {
         breadcrumbList.push({
           "@type": "ListItem",
           position: index + 1,
@@ -322,7 +377,7 @@ export const generateBreadcrumbStructuredData = (
     });
   }
 
-  // Add current page
+  // Add current page with custom title support
   breadcrumbList.push({
     "@type": "ListItem",
     position: currentPage.position,
@@ -332,44 +387,123 @@ export const generateBreadcrumbStructuredData = (
 
   return {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+    "@type": "BreadcrumbList", 
     itemListElement: breadcrumbList,
   };
 };
 
 /**
- * Generate breadcrumb trail for display purposes (optional)
+ * Generate breadcrumb trail for display purposes with enhanced formatting
+ * @param {string} pathname - The current page pathname
+ * @param {object} params - Dynamic route parameters  
+ * @param {string} customTitle - Custom title override
+ * @param {string} baseUrl - Base URL for the site
+ * @returns {array} Array of breadcrumb items for display
  */
 export const generateBreadcrumbTrail = (
   pathname,
   params = {},
-  customTitle = null
+  customTitle = null,
+  baseUrl = "https://bis-certifications.com"
 ) => {
   const structuredData = generateBreadcrumbStructuredData(
     pathname,
     params,
-    customTitle
+    customTitle,
+    baseUrl
   );
+  
   return structuredData.itemListElement.map((item) => ({
     name: item.name,
-    url: item.item.replace("https://bis-certifications.com", ""),
+    url: item.item.replace(baseUrl, ""),
     position: item.position,
+    isActive: item.position === structuredData.itemListElement.length,
   }));
 };
 
 /**
- * Check if a page should have breadcrumbs
+ * Enhanced check for breadcrumb display with SEO considerations
+ * @param {string} pathname - The current page pathname
+ * @returns {boolean} Whether breadcrumbs should be displayed
  */
 export const shouldShowBreadcrumbs = (pathname) => {
-  // Don't show breadcrumbs for home page - single item breadcrumbs are invalid
-  if (pathname === "/") return false;
+  // Google guidelines: Don't show breadcrumbs on home page
+  if (pathname === "/" || pathname === "") return false;
   
-  // Show breadcrumbs for all other pages - Google Search Console needs them
+  // Don't show on error pages
+  if (pathname === "/404") return false;
+  
+  // Show breadcrumbs for all other pages for better SEO and UX
   return true;
 };
 
+/**
+ * Get the page depth for SEO analysis
+ * @param {string} pathname - The current page pathname
+ * @param {object} params - Dynamic route parameters
+ * @returns {number} The depth of the page in site hierarchy
+ */
+export const getPageDepth = (pathname, params = {}) => {
+  const structuredData = generateBreadcrumbStructuredData(pathname, params);
+  return structuredData.itemListElement.length;
+};
+
+/**
+ * Validate breadcrumb structure for SEO compliance
+ * @param {object} breadcrumbData - The breadcrumb structured data
+ * @returns {object} Validation result with warnings/errors
+ */
+export const validateBreadcrumbStructure = (breadcrumbData) => {
+  const warnings = [];
+  const errors = [];
+  
+  if (!breadcrumbData.itemListElement || breadcrumbData.itemListElement.length === 0) {
+    errors.push("No breadcrumb items found");
+    return { isValid: false, warnings, errors };
+  }
+  
+  if (breadcrumbData.itemListElement.length === 1) {
+    warnings.push("Single item breadcrumb (consider if necessary)");
+  }
+  
+  // Check for proper position sequence
+  const positions = breadcrumbData.itemListElement.map(item => item.position);
+  const isSequential = positions.every((pos, index) => pos === index + 1);
+  
+  if (!isSequential) {
+    errors.push("Breadcrumb positions are not sequential");
+  }
+  
+  // Check for required properties
+  breadcrumbData.itemListElement.forEach((item, index) => {
+    if (!item.name) errors.push(`Item ${index + 1} missing name`);
+    if (!item.item) errors.push(`Item ${index + 1} missing item URL`);
+    if (!item.position) errors.push(`Item ${index + 1} missing position`);
+  });
+  
+  return {
+    isValid: errors.length === 0,
+    warnings,
+    errors,
+    itemCount: breadcrumbData.itemListElement.length
+  };
+};
+
+// Export all utilities
 export default {
   generateBreadcrumbStructuredData,
   generateBreadcrumbTrail,
   shouldShowBreadcrumbs,
+  getPageDepth,
+  validateBreadcrumbStructure,
+  SITE_STRUCTURE, // Export for testing/debugging
+};
+
+// Named exports for convenient importing
+export {
+  generateBreadcrumbStructuredData,
+  generateBreadcrumbTrail, 
+  shouldShowBreadcrumbs,
+  getPageDepth,
+  validateBreadcrumbStructure,
 };
