@@ -4,8 +4,9 @@
  * @returns {string} The URL-friendly slug
  */
 export const getUrlSlug = (title) => {
-  // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
+  // Remove common prefixes - order matters!
   let cleanTitle = title
+    .replace(/^BIS\s+Legal\s+Metrology\s*[–-]\s*/i, "Legal Metrology ") // Handle "BIS Legal Metrology –" -> "Legal Metrology "
     .replace(/^BIS\s+(certification|notification)\s+for\s+/i, "") // Remove "BIS certification for" or "BIS Notification for"
     .replace(/^QCO\s+notification\s+for\s+/i, "") // Remove "QCO notification for"
     .trim();
