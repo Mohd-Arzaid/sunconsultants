@@ -1,5 +1,5 @@
-const HeroImage = "/hero-image/sun-certifications-hero-professional-services.webp";
-const HeroImageMobile = "/hero-image/sun-certifications-mobile-hero-certification-services.svg";
+const HeroImage = "/hero-image/hero-image.webp";
+const HeroImageMobile = "/hero-image/hero-mobile.svg";
 
 import { BlurIn } from "@/components/ui/blur-in";
 import { FadeText } from "@/components/ui/fade-text";
