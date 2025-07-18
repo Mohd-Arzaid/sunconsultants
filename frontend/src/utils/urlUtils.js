@@ -4,22 +4,22 @@
  * @returns {string} The URL-friendly slug
  */
 export const getUrlSlug = (title) => {
-  // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
+  // Remove common prefixes - order matters!
   let cleanTitle = title
+    .replace(/^BIS\s+Legal\s+Metrology\s*[–-]\s*/i, "Legal Metrology ") // Handle "BIS Legal Metrology –" -> "Legal Metrology "
     .replace(/^BIS\s+(certification|notification)\s+for\s+/i, "") // Remove "BIS certification for" or "BIS Notification for"
     .replace(/^QCO\s+notification\s+for\s+/i, "") // Remove "QCO notification for"
     .trim();
 
   // Convert to kebab-case
-return cleanTitle
-  .toLowerCase()
-  .replace(/\//g, "-") // ✅ FORWARD SLASH LINE PRESENT
-  .replace(/[^\w\s-]/g, "")
-  .replace(/\s+/g, "-")
-  .trim(); // Remove leading/trailing spaces
+  return cleanTitle
+    .toLowerCase()
+    .replace(/\//g, "-") // CRITICAL: Replace forward slashes with hyphens (for "Dental bib/Napkins", "HDPE/PP" etc.)
+    .replace(/[^\w\s-]/g, "") // Remove special characters except spaces and hyphens
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+    .replace(/-+/g, "-") // Replace multiple hyphens with single hyphen
+    .trim(); // Remove leading/trailing spaces
 };
-
-
 
 /**
  * Generates a notification detail URL
