@@ -152,7 +152,7 @@ function App() {
           <Route path="videos-about-bis-certification" element={<Videos />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />
-          <Route path="404" element={<Error404 />} />
+
         </Route>
 
         {/* Localized routes for other languages */}

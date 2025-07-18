@@ -217,12 +217,7 @@ const SITE_STRUCTURE = {
   },
 
   // ============= ERROR & UTILITY PAGES =============
-  "/404": {
-    name: "Page Not Found",
-    url: "/404",
-    position: 2,
-    parents: ["/"],
-  },
+  // Note: 404 page should not be in site structure (not indexable)
 };
 
 // Enhanced dynamic route patterns for nested pages and multilingual support
@@ -430,7 +425,7 @@ export const shouldShowBreadcrumbs = (pathname) => {
   // Google guidelines: Don't show breadcrumbs on home page
   if (pathname === "/" || pathname === "") return false;
   
-  // Don't show on error pages
+  // Don't show on error pages (404 should not be directly accessible)
   if (pathname === "/404") return false;
   
   // Show breadcrumbs for all other pages for better SEO and UX
