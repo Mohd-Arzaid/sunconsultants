@@ -1,12 +1,14 @@
 import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
-
+ import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 
 
 const InternationalAudits = () => {
   return (
     <div className="bg-[#F9F7F2]">
+      <SEOBreadcrumbs customTitle="International Audits | Global BIS Certification Services" />
+
       {/* Audit Hero */}
       <AuditHero />
       <AuditGallery />
