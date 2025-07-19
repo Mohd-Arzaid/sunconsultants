@@ -32,9 +32,20 @@ import AboutAuthor from "../common/AboutAuthor";
 import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
 
 export const BISFM = () => {
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  
+  // Dynamic breadcrumb title based on language
+  const getBreadcrumbTitle = () => {
+    if (currentLanguage === 'de') {
+      return null; // Let breadcrumbUtils handle German translation
+    }
+    return "BIS FMCS Certification | Foreign Manufacturer Certification Scheme";
+  };
+
   return (
     <>
-      <SEOBreadcrumbs customTitle="BIS FMCS Certification | Foreign Manufacturer Certification Scheme" />
+      <SEOBreadcrumbs customTitle={getBreadcrumbTitle()} />
       <Helmet>
         <title>
           BIS FMCS Certification | Foreign Manufacturer Certification Scheme |

@@ -58,7 +58,7 @@ const SEOBreadcrumbs = ({ customTitle = null, customPath = null }) => {
   
   return (
     <Helmet>
-      <script type="application/ld+json">
+      <script type="application/ld+json" data-seo-breadcrumbs="true">
         {JSON.stringify(structuredData, null, 2)}
       </script>
     </Helmet>
