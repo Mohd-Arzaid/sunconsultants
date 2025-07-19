@@ -221,6 +221,20 @@ const SITE_STRUCTURE = {
   },
 };
 
+// Language mappings for multi-language support
+const LANGUAGE_MAPPINGS = {
+  "de": "German",
+  "es": "Spanish", 
+  "fr": "French",
+  "id": "Indonesian",
+  "it": "Italian",
+  "ja": "Japanese",
+  "ko": "Korean",
+  "nl": "Dutch",
+  "th": "Thai",
+  "vi": "Vietnamese"
+};
+
 // Dynamic route patterns for nested pages
 const DYNAMIC_ROUTE_PATTERNS = {
   "/bis-qco-updates/:notificationName": {
@@ -234,6 +248,22 @@ const DYNAMIC_ROUTE_PATTERNS = {
         ?.replace(/\b\w/g, (l) => l.toUpperCase())}`,
     getPosition: () => 3,
   },
+  "/:lang/:page": {
+    getParents: (params) => [
+      { name: "Home", url: "/", position: 1 },
+    ],
+    getName: (params, customTitle) => {
+      const langName = LANGUAGE_MAPPINGS[params.lang] || params.lang.toUpperCase();
+      if (customTitle) return `${customTitle} (${langName})`;
+      
+      // Convert page slug to readable name
+      const pageName = params.page
+        ?.replace(/[-_]/g, " ")
+        ?.replace(/\b\w/g, (l) => l.toUpperCase());
+      return `${pageName} (${langName})`;
+    },
+    getPosition: () => 2,
+  },
 };
 
 /**
@@ -246,12 +276,43 @@ export const generateBreadcrumbStructuredData = (
 ) => {
   const baseUrl = "https://bis-certifications.com";
 
-  // Handle dynamic routes
-  if (pathname.includes("/bis-qco-updates/") && params.notificationName) {
-    const pattern =
-      DYNAMIC_ROUTE_PATTERNS["/bis-qco-updates/:notificationName"];
-    const parents = pattern.getParents(params);
-    const currentName = customTitle || pattern.getName(params);
+  // Handle multi-language routes (/:lang/page-name)
+  const langMatch = pathname.match(/^\/([a-z]{2})\/(.+)$/);
+  if (langMatch) {
+    const [, lang, page] = langMatch;
+    const pattern = DYNAMIC_ROUTE_PATTERNS["/:lang/:page"];
+    const parents = pattern.getParents({ lang, page });
+    const currentName = customTitle || pattern.getName({ lang, page }, customTitle);
+    const currentPosition = pattern.getPosition();
+
+    const breadcrumbList = [
+      ...parents.map((parent) => ({
+        "@type": "ListItem",
+        position: parent.position,
+        name: parent.name,
+        item: `${baseUrl}${parent.url}`,
+      })),
+      {
+        "@type": "ListItem",
+        position: currentPosition,
+        name: currentName,
+        item: `${baseUrl}${pathname}`,
+      },
+    ];
+
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbList,
+    };
+  }
+
+  // Handle BIS notification detail pages
+  if (pathname.includes("/bis-qco-updates/") && pathname !== "/bis-qco-updates") {
+    const notificationName = pathname.split("/bis-qco-updates/")[1];
+    const pattern = DYNAMIC_ROUTE_PATTERNS["/bis-qco-updates/:notificationName"];
+    const parents = pattern.getParents({ notificationName });
+    const currentName = customTitle || pattern.getName({ notificationName });
     const currentPosition = pattern.getPosition();
 
     const breadcrumbList = [
@@ -294,7 +355,7 @@ export const generateBreadcrumbStructuredData = (
         {
           "@type": "ListItem",
           position: 2,
-          name: "Page",
+          name: customTitle || "Page",
           item: `${baseUrl}${pathname}`,
         },
       ],
@@ -367,4 +428,49 @@ export default {
   generateBreadcrumbStructuredData,
   generateBreadcrumbTrail,
   shouldShowBreadcrumbs,
+};
+
+/**
+ * Test function to validate breadcrumb coverage
+ * This helps ensure all sitemap URLs have proper breadcrumbs
+ */
+export const testBreadcrumbCoverage = () => {
+  const testUrls = [
+    "/",
+    "/about", 
+    "/contact",
+    "/webinar",
+    "/videos-about-bis-certification",
+    "/indian-bis-certification-under-scheme-x",
+    "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    "/what-is-bis-certificate-indian-bis",
+    "/bis-qco-updates",
+    "/bis-qco-updates/bis-certificate-for-work-chairs",
+    "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
+    "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
+    "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde",
+    "/privacy-policy",
+    "/terms-and-conditions"
+  ];
+
+  const results = testUrls.map(url => {
+    try {
+      const breadcrumb = generateBreadcrumbStructuredData(url);
+      return {
+        url,
+        success: true,
+        breadcrumbCount: breadcrumb.itemListElement.length,
+        breadcrumb
+      };
+    } catch (error) {
+      return {
+        url,
+        success: false,
+        error: error.message
+      };
+    }
+  });
+
+  console.log("Breadcrumb Coverage Test Results:", results);
+  return results;
 };
