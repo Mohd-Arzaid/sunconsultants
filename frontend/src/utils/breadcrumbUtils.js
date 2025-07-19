@@ -91,19 +91,13 @@ const SITE_STRUCTURE = {
     parents: ["/"],
   },
 
-  // General service pages (currently inactive but keeping for future)
+  // General service pages
   "/cdsco-registration-certification": {
     name: "CDSCO Registration & Certification",
     url: "/cdsco-registration-certification",
     position: 2,
     parents: ["/"],
   },
-  // "/schemeX": {
-  //   name: "Scheme X Certification",
-  //   url: "/schemeX",
-  //   position: 2,
-  //   parents: ["/"],
-  // },
   "/bee-certification": {
     name: "BEE Certification",
     url: "/bee-certification",
@@ -154,7 +148,6 @@ const SITE_STRUCTURE = {
     position: 2,
     parents: ["/"],
   },
-  // FIXED: Corrected SchemeX URL
   "/indian-bis-certification-under-scheme-x": {
     name: "Indian BIS Certification Under Scheme X",
     url: "/indian-bis-certification-under-scheme-x",
@@ -227,6 +220,103 @@ const SITE_STRUCTURE = {
   },
 };
 
+// Language mappings for multi-language support
+const LANGUAGE_MAPPINGS = {
+  de: "German",
+  es: "Spanish",
+  fr: "French",
+  id: "Indonesian",
+  it: "Italian",
+  ja: "Japanese",
+  ko: "Korean",
+  nl: "Dutch",
+  th: "Thai",
+  vi: "Vietnamese",
+};
+
+// Multi-language page name mappings
+const MULTILANG_PAGE_MAPPINGS = {
+  // BIS Certification for Foreign Manufacturers (10 languages)
+  "leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis":
+    "BIS Certification for Foreign Manufacturers",
+  "guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio":
+    "BIS Certification for Foreign Manufacturers",
+  "guide-certification-bis-pour-fabricants-etrangers-bis-inde":
+    "BIS Certification for Foreign Manufacturers",
+  "panduan-sertifikasi-bis-untuk-produsen-asing-bis-india":
+    "BIS Certification for Foreign Manufacturers",
+  "guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano":
+    "BIS Certification for Foreign Manufacturers",
+  "bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis":
+    "BIS Certification for Foreign Manufacturers",
+  "indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu":
+    "BIS Certification for Foreign Manufacturers",
+  "gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis":
+    "BIS Certification for Foreign Manufacturers",
+  "khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india":
+    "BIS Certification for Foreign Manufacturers",
+  "huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do":
+    "BIS Certification for Foreign Manufacturers",
+
+  // What is BIS Certificate (10 languages)
+  "was-ist-das-bis-zertifikat-indisches-bis": "What is BIS Certificate",
+  "que-es-el-certificado-bis-bis-indio": "What is BIS Certificate",
+  "quest-ce-que-le-certificat-bis-indien": "What is BIS Certificate",
+  "apa-itu-sertifikat-bis-bis-india": "What is BIS Certificate",
+  "cose-il-certificato-bis-indiano": "What is BIS Certificate",
+  "bis-shomeisho-toha-nani-ka-indo-no-bis": "What is BIS Certificate",
+  "bis-jeungmyeongseo-ga-mueos-indo-bis": "What is BIS Certificate",
+  "wat-is-het-bis-certificaat-indiaas-bis": "What is BIS Certificate",
+  "bis-certificate-khue-a-rai-bis-india": "What is BIS Certificate",
+  "chung-chi-bis-la-gi-bis-an-do": "What is BIS Certificate",
+
+  // What is CRS BIS Registration (10 languages)
+  "was-ist-crs-bis-oder-crs-registrierung": "What is CRS BIS Registration",
+  "que-es-crs-bis-o-registro-crs": "What is CRS BIS Registration",
+  "quest-ce-que-le-crs-bis-ou-lenregistrement-crs":
+    "What is CRS BIS Registration",
+  "apa-itu-crs-bis-atau-registrasi-crs": "What is CRS BIS Registration",
+  "cose-il-crs-bis-o-registrazione-crs": "What is CRS BIS Registration",
+  "crs-bis-toha-nani-ka-crs-toroku": "What is CRS BIS Registration",
+  "crs-bis-i-mueos-inga-crs-deunglog": "What is CRS BIS Registration",
+  "wat-is-crs-bis-of-crs-registratie": "What is CRS BIS Registration",
+  "crs-bis-khue-a-rai-rab-phit-thab-crs": "What is CRS BIS Registration",
+  "crs-bis-la-gi-hoac-dang-ky-crs": "What is CRS BIS Registration",
+
+  // BIS Certification Guide (10 languages)
+  "leitfaden-zur-bis-zertifizierung-indisches-bis": "BIS Certification Guide",
+  "guia-certificacion-bis-bis-indio": "BIS Certification Guide",
+  "guide-certification-bis-bis-indien": "BIS Certification Guide",
+  "panduan-sertifikasi-bis-bis-india": "BIS Certification Guide",
+  "guida-alla-certificazione-bis-bis-indiano": "BIS Certification Guide",
+  "bis-nintei-gaido-india-no-bis": "BIS Certification Guide",
+  "bis-injeung-gaideu-indo-bis": "BIS Certification Guide",
+  "gids-voor-bis-certificering-indiaas-bis": "BIS Certification Guide",
+  "khumanam-kanraprong-bis-bis-india": "BIS Certification Guide",
+  "huong-dan-chung-nhan-bis-bis-an-do": "BIS Certification Guide",
+
+  // Indian BIS Certification Under Scheme X (10 languages)
+  "indische-bis-zertifizierung-nach-schema-x":
+    "Indian BIS Certification Under Scheme X",
+  "certificacion-bis-india-bajo-esquema-x":
+    "Indian BIS Certification Under Scheme X",
+  "certification-bis-indienne-selon-schema-x":
+    "Indian BIS Certification Under Scheme X",
+  "sertifikasi-bis-india-di-bawah-skema-x":
+    "Indian BIS Certification Under Scheme X",
+  "certificazione-bis-indiana-secondo-schema-x":
+    "Indian BIS Certification Under Scheme X",
+  "indo-no-bis-nintei-sukimu-x": "Indian BIS Certification Under Scheme X",
+  "indo-bis-injeung-scheme-x-haenghaeng":
+    "Indian BIS Certification Under Scheme X",
+  "indiaas-bis-certificaat-volgens-schema-x":
+    "Indian BIS Certification Under Scheme X",
+  "bis-prathiap-india-taem-dai-tae-skema-x":
+    "Indian BIS Certification Under Scheme X",
+  "chung-nhan-bis-an-do-theo-scheme-x":
+    "Indian BIS Certification Under Scheme X",
+};
+
 // Dynamic route patterns for nested pages
 const DYNAMIC_ROUTE_PATTERNS = {
   "/bis-qco-updates/:notificationName": {
@@ -240,6 +330,27 @@ const DYNAMIC_ROUTE_PATTERNS = {
         ?.replace(/\b\w/g, (l) => l.toUpperCase())}`,
     getPosition: () => 3,
   },
+  "/:lang/:page": {
+    getParents: (params) => [{ name: "Home", url: "/", position: 1 }],
+    getName: (params, customTitle) => {
+      const langName =
+        LANGUAGE_MAPPINGS[params.lang] || params.lang.toUpperCase();
+      if (customTitle) return `${customTitle} (${langName})`;
+
+      // Use mapped page name if available, otherwise convert slug to readable name
+      const mappedName = MULTILANG_PAGE_MAPPINGS[params.page];
+      if (mappedName) {
+        return `${mappedName} (${langName})`;
+      }
+
+      // Fallback: Convert page slug to readable name
+      const pageName = params.page
+        ?.replace(/[-_]/g, " ")
+        ?.replace(/\b\w/g, (l) => l.toUpperCase());
+      return `${pageName} (${langName})`;
+    },
+    getPosition: () => 2,
+  },
 };
 
 /**
@@ -252,12 +363,48 @@ export const generateBreadcrumbStructuredData = (
 ) => {
   const baseUrl = "https://bis-certifications.com";
 
-  // Handle dynamic routes
-  if (pathname.includes("/bis-qco-updates/") && params.notificationName) {
+  // Handle multi-language routes (/:lang/page-name)
+  const langMatch = pathname.match(/^\/([a-z]{2})\/(.+)$/);
+  if (langMatch) {
+    const [, lang, page] = langMatch;
+    const pattern = DYNAMIC_ROUTE_PATTERNS["/:lang/:page"];
+    const parents = pattern.getParents({ lang, page });
+    const currentName =
+      customTitle || pattern.getName({ lang, page }, customTitle);
+    const currentPosition = pattern.getPosition();
+
+    const breadcrumbList = [
+      ...parents.map((parent) => ({
+        "@type": "ListItem",
+        position: parent.position,
+        name: parent.name,
+        item: `${baseUrl}${parent.url}`,
+      })),
+      {
+        "@type": "ListItem",
+        position: currentPosition,
+        name: currentName,
+        item: `${baseUrl}${pathname}`,
+      },
+    ];
+
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbList,
+    };
+  }
+
+  // Handle BIS notification detail pages
+  if (
+    pathname.includes("/bis-qco-updates/") &&
+    pathname !== "/bis-qco-updates"
+  ) {
+    const notificationName = pathname.split("/bis-qco-updates/")[1];
     const pattern =
       DYNAMIC_ROUTE_PATTERNS["/bis-qco-updates/:notificationName"];
-    const parents = pattern.getParents(params);
-    const currentName = customTitle || pattern.getName(params);
+    const parents = pattern.getParents({ notificationName });
+    const currentName = customTitle || pattern.getName({ notificationName });
     const currentPosition = pattern.getPosition();
 
     const breadcrumbList = [
@@ -300,7 +447,7 @@ export const generateBreadcrumbStructuredData = (
         {
           "@type": "ListItem",
           position: 2,
-          name: "Page",
+          name: customTitle || "Page",
           item: `${baseUrl}${pathname}`,
         },
       ],
@@ -369,8 +516,71 @@ export const shouldShowBreadcrumbs = (pathname) => {
   return true;
 };
 
+/**
+ * Test function to validate breadcrumb coverage for all sitemap URLs
+ */
+export const testBreadcrumbCoverage = () => {
+  const testResults = [];
+
+  // Test static pages
+  Object.keys(SITE_STRUCTURE).forEach((path) => {
+    const result = generateBreadcrumbStructuredData(path);
+    testResults.push({
+      path,
+      type: "static",
+      breadcrumbCount: result.itemListElement.length,
+      success: result.itemListElement.length >= 2,
+    });
+  });
+
+  // Test multi-language pages
+  Object.keys(MULTILANG_PAGE_MAPPINGS).forEach((page) => {
+    Object.keys(LANGUAGE_MAPPINGS).forEach((lang) => {
+      const path = `/${lang}/${page}`;
+      const result = generateBreadcrumbStructuredData(path);
+      testResults.push({
+        path,
+        type: "multilang",
+        breadcrumbCount: result.itemListElement.length,
+        success: result.itemListElement.length >= 2,
+      });
+    });
+  });
+
+  // Test BIS notification pages (sample)
+  const sampleNotifications = [
+    "bis-certificate-for-work-chairs",
+    "bis-certificate-for-tables-and-desks",
+    "bis-certificate-for-water-storage-tanks",
+  ];
+
+  sampleNotifications.forEach((notification) => {
+    const path = `/bis-qco-updates/${notification}`;
+    const result = generateBreadcrumbStructuredData(path);
+    testResults.push({
+      path,
+      type: "notification",
+      breadcrumbCount: result.itemListElement.length,
+      success: result.itemListElement.length >= 3,
+    });
+  });
+
+  const summary = {
+    total: testResults.length,
+    successful: testResults.filter((r) => r.success).length,
+    failed: testResults.filter((r) => !r.success).length,
+    coverage: `${Math.round(
+      (testResults.filter((r) => r.success).length / testResults.length) * 100
+    )}%`,
+  };
+
+  console.log("Breadcrumb Coverage Test Results:", summary);
+  return { results: testResults, summary };
+};
+
 export default {
   generateBreadcrumbStructuredData,
   generateBreadcrumbTrail,
   shouldShowBreadcrumbs,
+  testBreadcrumbCoverage,
 };

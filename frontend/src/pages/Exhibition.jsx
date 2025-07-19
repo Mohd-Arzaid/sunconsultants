@@ -1,19 +1,21 @@
 import { Calendar } from "lucide-react";
-import Footer from '@/common/Footer';
-import Services from '../components/manual/Services';
+import Footer from "@/common/Footer";
+import Services from "../components/manual/Services";
 
-
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const Exhibition = () => {
   return (
     <div className="bg-[#F9F7F2]">
+      <SEOBreadcrumbs customTitle="Seminars and Exhibitions | Industry Events & Networking" />
+
       <ExhibitionHero />
       <ExhibitionGallery />
       <Services />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 const ExhibitionHero = () => {
   return (
@@ -25,7 +27,9 @@ const ExhibitionHero = () => {
         </h1>
 
         <p className="text-base md:text-lg font-geist text-gray-600 max-w-2xl md:max-w-3xl mx-auto">
-          Discover our world-class exhibition services, bringing together industry leaders, innovators, and experts to showcase the latest advancements and opportunities.
+          Discover our world-class exhibition services, bringing together
+          industry leaders, innovators, and experts to showcase the latest
+          advancements and opportunities.
         </p>
       </div>
 
@@ -45,7 +49,9 @@ const ExhibitionHero = () => {
 
       <h2 className="text-3xl md:text-4xl text-center mb-4">
         {/* <span className="text-[#0A4394] font-geist font-medium mr-1">/</span> */}
-        <span className="font-playfair font-bold text-[#1e1e1e]">Featured Exhibitions</span>
+        <span className="font-playfair font-bold text-[#1e1e1e]">
+          Featured Exhibitions
+        </span>
       </h2>
 
       <p className="text-base md:text-lg text-center font-geist text-gray-600 max-w-xl md:max-w-xl mx-auto leading-relaxed">
@@ -109,7 +115,7 @@ const ExhibitionGallery = () => {
     },
     {
       id: 11,
-      image: "/seminarImages/Seminar-10.webp"   ,
+      image: "/seminarImages/Seminar-10.webp",
       // title: "Seminar 10",
     },
     {
@@ -174,4 +180,4 @@ const ExhibitionGallery = () => {
   );
 };
 
-export default Exhibition
+export default Exhibition;
