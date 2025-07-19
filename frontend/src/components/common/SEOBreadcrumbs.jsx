@@ -20,13 +20,46 @@ const SEOBreadcrumbs = ({ customTitle = null, customPath = null }) => {
     return null;
   }
   
-  // Generate structured data
-  const structuredData = generateBreadcrumbStructuredData(pathname, params, customTitle);
+  // Generate structured data with proper error handling
+  let structuredData;
+  try {
+    structuredData = generateBreadcrumbStructuredData(pathname, params, customTitle);
+    
+    // Validate that all items have proper names
+    if (structuredData?.itemListElement) {
+      structuredData.itemListElement = structuredData.itemListElement.map(item => ({
+        ...item,
+        name: item.name || "Page", // Fallback if name is missing
+        item: item.item || `https://bis-certifications.com${pathname}` // Ensure item URL exists
+      }));
+    }
+  } catch (error) {
+    console.warn('Breadcrumb generation error:', error);
+    // Fallback structured data
+    structuredData = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://bis-certifications.com/"
+        },
+        {
+          "@type": "ListItem", 
+          position: 2,
+          name: customTitle || "Page",
+          item: `https://bis-certifications.com${pathname}`
+        }
+      ]
+    };
+  }
   
   return (
     <Helmet>
       <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
+        {JSON.stringify(structuredData, null, 2)}
       </script>
     </Helmet>
   );

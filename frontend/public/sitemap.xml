@@ -15,6 +15,7 @@
     <loc>https://bis-certifications.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <lastmod>2025-01-19</lastmod>
   </url>
   <url>
     <loc>https://bis-certifications.com/bis-qco-updates</loc>
@@ -40,7 +41,7 @@
     <loc>https://bis-certifications.com/webinar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2025-01-19</lastmod>
   </url>
   <url>
     <loc>https://bis-certifications.com/videos-about-bis-certification</loc>
@@ -56,6 +57,7 @@
     <loc>https://bis-certifications.com/terms-and-conditions</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <lastmod>2025-01-19</lastmod>
   </url>
   <url>
     <loc>https://bis-certifications.com/404</loc>
@@ -300,6 +302,7 @@
   <loc>https://bis-certifications.com/indian-bis-certification-under-scheme-x</loc>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
+  <lastmod>2025-01-19</lastmod>
 </url>
 <url>
   <loc>https://bis-certifications.com/de/indische-bis-zertifizierung-nach-schema-x</loc>

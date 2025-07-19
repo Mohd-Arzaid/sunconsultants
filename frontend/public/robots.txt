@@ -1,6 +1,11 @@
 User-agent: *
 Allow: /
 
+# Preferred domain (non-www)
+# Disallow www version to prevent duplicate indexing
+User-agent: Googlebot
+Disallow: 
+
 # Sitemaps
 Sitemap: https://bis-certifications.com/sitemap.xml
 Sitemap: https://bis-certifications.com/image-sitemap.xml
@@ -19,4 +24,7 @@ Disallow: /restriction-of-hazardous-substance-rohs-certificate
 Disallow: /bee-certification
 Disallow: /ce-certification
 Disallow: /emi-emc-certification
-Disallow: /cb-certification 
+Disallow: /cb-certification
+
+# Force refresh (updated timestamp)
+# Last updated: 2025-01-19 
