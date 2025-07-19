@@ -1,6 +1,5 @@
 import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
-import ContactVector from "../assets/images/ContactVector.png";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/common/Footer";
@@ -9,7 +8,8 @@ import axios from "axios";
 // import { toast } from "sonner";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
-
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
+ 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const ContactUs = () => {
@@ -130,6 +130,7 @@ const ContactUs = () => {
 
   return (
     <>
+      <SEOBreadcrumbs customTitle="Contact Us | Get in Touch | Sun Certifications India" />
       <main className="w-full pt-[30px] md:pt-[50px] pb-[50px] md:pb-[90px]  relative overflow-hidden bg-gradient-to-b from-white to-[#D2DCFF] ">
         {/* Decorative elements */}
         <div

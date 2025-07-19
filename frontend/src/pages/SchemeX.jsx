@@ -28,6 +28,7 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import AboutAuthor from "../components/common/AboutAuthor";
 import { Check, Search } from "lucide-react";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const productsData = [
   {
@@ -657,6 +658,8 @@ const productDataTableThird = [
 export const SchemeX = () => {
   return (
     <>
+      <SEOBreadcrumbs customTitle="Indian BIS Certification Under Scheme X | Machinery Safety" />
+
       <Helmet>
         <title>
           BIS Scheme X Certification | Machinery & Electrical Equipment Safety |
@@ -706,7 +709,7 @@ export const SchemeX = () => {
         />
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
-     
+
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
@@ -768,7 +771,7 @@ export const SchemeX = () => {
           href="https://bis-certifications.com/indian-bis-certification-under-scheme-x"
           hrefLang="x-default"
         />
-        
+
         <meta name="robots" content="index, follow, max-image-preview:large" />
         {/* Structured Data */}
         <script type="application/ld+json">

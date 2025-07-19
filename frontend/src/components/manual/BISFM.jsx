@@ -29,10 +29,13 @@ import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
 import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
 import AboutAuthor from "../common/AboutAuthor";
+import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
 
 export const BISFM = () => {
   return (
     <>
+      <SEOBreadcrumbs customTitle="BIS FMCS Certification | Foreign Manufacturer Certification Scheme" />
+
       <Helmet>
         <title>
           BIS FMCS Certification | Foreign Manufacturer Certification Scheme |
@@ -147,8 +150,6 @@ export const BISFM = () => {
           href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
           hrefLang="x-default"
         />
-
-
 
         <meta name="robots" content="index, follow, max-image-preview:large" />
 

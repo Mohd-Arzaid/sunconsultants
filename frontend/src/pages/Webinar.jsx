@@ -1,6 +1,7 @@
 import { Calendar, ChevronRight, Clock, Users } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Footer from "@/common/Footer";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const Webinar = () => {
   // SEO data
@@ -112,6 +113,8 @@ const Webinar = () => {
 
   return (
     <div className="overflow-hidden bg-[#F9F7F2]">
+      <SEOBreadcrumbs customTitle="Certification Webinars | Expert-Led BIS Training" />
+
       <Helmet>
         <title>{seoData.title}</title>
         <meta name="description" content={seoData.description} />
