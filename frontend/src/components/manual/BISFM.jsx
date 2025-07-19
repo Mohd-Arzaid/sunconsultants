@@ -32,11 +32,9 @@ import AboutAuthor from "../common/AboutAuthor";
 import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
 
 export const BISFM = () => {
-  const getBreadcrumbTitle = () => null;
-
   return (
     <>
-      <SEOBreadcrumbs customTitle={getBreadcrumbTitle()} />
+      <SEOBreadcrumbs />
       <Helmet>
         <title>
           BIS FMCS Certification | Foreign Manufacturer Certification Scheme |
