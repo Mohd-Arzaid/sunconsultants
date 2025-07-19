@@ -1,12 +1,13 @@
 import { Calendar } from "lucide-react";
 import Footer from '@/common/Footer';
 import Services from '../components/manual/Services';
-
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 
 const Exhibition = () => {
   return (
     <div className="bg-[#F9F7F2]">
+      <SEOBreadcrumbs customTitle="Seminars and Exhibitions | Industry Events & Networking" />
       <ExhibitionHero />
       <ExhibitionGallery />
       <Services />
