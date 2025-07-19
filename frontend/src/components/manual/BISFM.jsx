@@ -37,13 +37,14 @@ export const BISFM = () => {
 
   // Dynamic breadcrumb title based on language
   const getBreadcrumbTitle = () => {
-    if (currentLanguage === "de") {
-      return null; // Let breadcrumbUtils handle German translation
+    // For all non-English languages, let breadcrumbUtils handle translation
+    if (currentLanguage !== "en" && currentLanguage !== "en-US") {
+      return null;
     }
     return "BIS FMCS Certification | Foreign Manufacturer Certification Scheme";
   };
 
- return (
+  return (
     <>
       <SEOBreadcrumbs customTitle={getBreadcrumbTitle()} />
       <Helmet>
@@ -51,7 +52,7 @@ export const BISFM = () => {
           BIS FMCS Certification | Foreign Manufacturer Certification Scheme |
           Sun Certifications
         </title>
-        
+
         <meta
           name="description"
           content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. Trusted BIS Certifications since 2013. ✓ Fast Processing ✓ Expert Guidance"
