@@ -3,10 +3,12 @@ import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import Footer from "@/common/Footer";
 import { ChevronLeft, ChevronRight, FileText, Phone, Send } from "lucide-react";
 import { useState } from "react";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const MinistryUpdates = () => {
   return (
     <>
+      <SEOBreadcrumbs customTitle="Ministry Updates | Government Announcements & Regulatory Changes" />
       <BISMinistryUpdatesMainContent />
       <Footer />
     </>
