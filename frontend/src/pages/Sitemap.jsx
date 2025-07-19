@@ -113,6 +113,80 @@ const sitemapSections = [
     title: "Latest Notifications",
     pages: notificationPages,
   },
+  {
+    title: "Multi-Language Service Pages",
+    pages: [
+      // German (Deutsch)
+      { name: "BIS-Zertifizierung für ausländische Hersteller (DE)", path: "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis" },
+      { name: "Was ist das BIS-Zertifikat (DE)", path: "/de/was-ist-das-bis-zertifikat-indisches-bis" },
+      { name: "CRS BIS Registrierung (DE)", path: "/de/was-ist-crs-bis-oder-crs-registrierung" },
+      { name: "Leitfaden zur BIS-Zertifizierung (DE)", path: "/de/leitfaden-zur-bis-zertifizierung-indisches-bis" },
+      { name: "Indische BIS-Zertifizierung Schema X (DE)", path: "/de/indische-bis-zertifizierung-nach-schema-x" },
+      
+      // Spanish (Español)
+      { name: "Certificación BIS para Fabricantes Extranjeros (ES)", path: "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio" },
+      { name: "Qué es el Certificado BIS (ES)", path: "/es/que-es-el-certificado-bis-bis-indio" },
+      { name: "Registro CRS BIS (ES)", path: "/es/que-es-crs-bis-o-registro-crs" },
+      { name: "Guía de Certificación BIS (ES)", path: "/es/guia-certificacion-bis-bis-indio" },
+      { name: "Certificación BIS India Esquema X (ES)", path: "/es/certificacion-bis-india-bajo-esquema-x" },
+      
+      // French (Français)
+      { name: "Certification BIS pour Fabricants Étrangers (FR)", path: "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde" },
+      { name: "Qu'est-ce que le Certificat BIS (FR)", path: "/fr/quest-ce-que-le-certificat-bis-indien" },
+      { name: "Enregistrement CRS BIS (FR)", path: "/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs" },
+      { name: "Guide de Certification BIS (FR)", path: "/fr/guide-certification-bis-bis-indien" },
+      { name: "Certification BIS Indienne Schéma X (FR)", path: "/fr/certification-bis-indienne-selon-schema-x" },
+      
+      // Indonesian (Bahasa Indonesia)
+      { name: "Sertifikasi BIS untuk Produsen Asing (ID)", path: "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india" },
+      { name: "Apa itu Sertifikat BIS (ID)", path: "/id/apa-itu-sertifikat-bis-bis-india" },
+      { name: "Registrasi CRS BIS (ID)", path: "/id/apa-itu-crs-bis-atau-registrasi-crs" },
+      { name: "Panduan Sertifikasi BIS (ID)", path: "/id/panduan-sertifikasi-bis-bis-india" },
+      { name: "Sertifikasi BIS India Skema X (ID)", path: "/id/sertifikasi-bis-india-di-bawah-skema-x" },
+      
+      // Italian (Italiano)
+      { name: "Certificazione BIS per Produttori Stranieri (IT)", path: "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano" },
+      { name: "Cos'è il Certificato BIS (IT)", path: "/it/cose-il-certificato-bis-indiano" },
+      { name: "Registrazione CRS BIS (IT)", path: "/it/cose-il-crs-bis-o-registrazione-crs" },
+      { name: "Guida alla Certificazione BIS (IT)", path: "/it/guida-alla-certificazione-bis-bis-indiano" },
+      { name: "Certificazione BIS Indiana Schema X (IT)", path: "/it/certificazione-bis-indiana-secondo-schema-x" },
+      
+      // Japanese (日本語)
+      { name: "外国メーカー向けBIS認定 (JA)", path: "/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis" },
+      { name: "BIS証明書とは (JA)", path: "/ja/bis-shomeisho-toha-nani-ka-indo-no-bis" },
+      { name: "CRS BIS登録 (JA)", path: "/ja/crs-bis-toha-nani-ka-crs-toroku" },
+      { name: "BIS認定ガイド (JA)", path: "/ja/bis-nintei-gaido-india-no-bis" },
+      { name: "インドBIS認定スキームX (JA)", path: "/ja/indo-no-bis-nintei-sukimu-x" },
+      
+      // Korean (한국어)
+      { name: "외국 제조업체 BIS 인증 (KO)", path: "/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu" },
+      { name: "BIS 증명서란 (KO)", path: "/ko/bis-jeungmyeongseo-ga-mueos-indo-bis" },
+      { name: "CRS BIS 등록 (KO)", path: "/ko/crs-bis-i-mueos-inga-crs-deunglog" },
+      { name: "BIS 인증 가이드 (KO)", path: "/ko/bis-injeung-gaideu-indo-bis" },
+      { name: "인도 BIS 인증 스킴 X (KO)", path: "/ko/indo-bis-injeung-scheme-x-haenghaeng" },
+      
+      // Dutch (Nederlands)
+      { name: "BIS Certificering voor Buitenlandse Fabrikanten (NL)", path: "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis" },
+      { name: "Wat is het BIS Certificaat (NL)", path: "/nl/wat-is-het-bis-certificaat-indiaas-bis" },
+      { name: "CRS BIS Registratie (NL)", path: "/nl/wat-is-crs-bis-of-crs-registratie" },
+      { name: "Gids voor BIS Certificering (NL)", path: "/nl/gids-voor-bis-certificering-indiaas-bis" },
+      { name: "Indiaans BIS Certificaat Schema X (NL)", path: "/nl/indiaas-bis-certificaat-volgens-schema-x" },
+      
+      // Thai (ไทย)
+      { name: "การรับรองBISสำหรับผู้ผลิตต่างชาติ (TH)", path: "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india" },
+      { name: "ใบรับรองBISคืออะไร (TH)", path: "/th/bis-certificate-khue-a-rai-bis-india" },
+      { name: "การรับผิดชอบCRS BIS (TH)", path: "/th/crs-bis-khue-a-rai-rab-phit-thab-crs" },
+      { name: "คู่มือการรับรองBIS (TH)", path: "/th/khumanam-kanraprong-bis-bis-india" },
+      { name: "การรับรองBISอินเดียสกีมาX (TH)", path: "/th/bis-prathiap-india-taem-dai-tae-skema-x" },
+      
+      // Vietnamese (Tiếng Việt)
+      { name: "Chứng nhận BIS cho Nhà sản xuất Nước ngoài (VI)", path: "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do" },
+      { name: "Chứng chỉ BIS là gì (VI)", path: "/vi/chung-chi-bis-la-gi-bis-an-do" },
+      { name: "Đăng ký CRS BIS (VI)", path: "/vi/crs-bis-la-gi-hoac-dang-ky-crs" },
+      { name: "Hướng dẫn Chứng nhận BIS (VI)", path: "/vi/huong-dan-chung-nhan-bis-bis-an-do" },
+      { name: "Chứng nhận BIS Ấn Độ Scheme X (VI)", path: "/vi/chung-nhan-bis-an-do-theo-scheme-x" },
+    ],
+  },
 ];
 
 const Sitemap = () => {
