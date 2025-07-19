@@ -234,87 +234,110 @@ const LANGUAGE_MAPPINGS = {
   vi: "Vietnamese",
 };
 
-// Multi-language page name mappings
+// Translated "Home" text for each language
+const HOME_TRANSLATIONS = {
+  de: "Startseite",
+  es: "Inicio",
+  fr: "Accueil",
+  id: "Beranda",
+  it: "Home",
+  ja: "ホーム",
+  ko: "홈",
+  nl: "Home",
+  th: "หน้าแรก",
+  vi: "Trang chủ",
+};
+
+// Multi-language page name mappings (translated names)
 const MULTILANG_PAGE_MAPPINGS = {
-  // BIS Certification for Foreign Manufacturers (10 languages)
+  // German translations
   "leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis":
-    "BIS Certification for Foreign Manufacturers",
-  "guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio":
-    "BIS Certification for Foreign Manufacturers",
-  "guide-certification-bis-pour-fabricants-etrangers-bis-inde":
-    "BIS Certification for Foreign Manufacturers",
-  "panduan-sertifikasi-bis-untuk-produsen-asing-bis-india":
-    "BIS Certification for Foreign Manufacturers",
-  "guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano":
-    "BIS Certification for Foreign Manufacturers",
-  "bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis":
-    "BIS Certification for Foreign Manufacturers",
-  "indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu":
-    "BIS Certification for Foreign Manufacturers",
-  "gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis":
-    "BIS Certification for Foreign Manufacturers",
-  "khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india":
-    "BIS Certification for Foreign Manufacturers",
-  "huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do":
-    "BIS Certification for Foreign Manufacturers",
-
-  // What is BIS Certificate (10 languages)
-  "was-ist-das-bis-zertifikat-indisches-bis": "What is BIS Certificate",
-  "que-es-el-certificado-bis-bis-indio": "What is BIS Certificate",
-  "quest-ce-que-le-certificat-bis-indien": "What is BIS Certificate",
-  "apa-itu-sertifikat-bis-bis-india": "What is BIS Certificate",
-  "cose-il-certificato-bis-indiano": "What is BIS Certificate",
-  "bis-shomeisho-toha-nani-ka-indo-no-bis": "What is BIS Certificate",
-  "bis-jeungmyeongseo-ga-mueos-indo-bis": "What is BIS Certificate",
-  "wat-is-het-bis-certificaat-indiaas-bis": "What is BIS Certificate",
-  "bis-certificate-khue-a-rai-bis-india": "What is BIS Certificate",
-  "chung-chi-bis-la-gi-bis-an-do": "What is BIS Certificate",
-
-  // What is CRS BIS Registration (10 languages)
-  "was-ist-crs-bis-oder-crs-registrierung": "What is CRS BIS Registration",
-  "que-es-crs-bis-o-registro-crs": "What is CRS BIS Registration",
-  "quest-ce-que-le-crs-bis-ou-lenregistrement-crs":
-    "What is CRS BIS Registration",
-  "apa-itu-crs-bis-atau-registrasi-crs": "What is CRS BIS Registration",
-  "cose-il-crs-bis-o-registrazione-crs": "What is CRS BIS Registration",
-  "crs-bis-toha-nani-ka-crs-toroku": "What is CRS BIS Registration",
-  "crs-bis-i-mueos-inga-crs-deunglog": "What is CRS BIS Registration",
-  "wat-is-crs-bis-of-crs-registratie": "What is CRS BIS Registration",
-  "crs-bis-khue-a-rai-rab-phit-thab-crs": "What is CRS BIS Registration",
-  "crs-bis-la-gi-hoac-dang-ky-crs": "What is CRS BIS Registration",
-
-  // BIS Certification Guide (10 languages)
-  "leitfaden-zur-bis-zertifizierung-indisches-bis": "BIS Certification Guide",
-  "guia-certificacion-bis-bis-indio": "BIS Certification Guide",
-  "guide-certification-bis-bis-indien": "BIS Certification Guide",
-  "panduan-sertifikasi-bis-bis-india": "BIS Certification Guide",
-  "guida-alla-certificazione-bis-bis-indiano": "BIS Certification Guide",
-  "bis-nintei-gaido-india-no-bis": "BIS Certification Guide",
-  "bis-injeung-gaideu-indo-bis": "BIS Certification Guide",
-  "gids-voor-bis-certificering-indiaas-bis": "BIS Certification Guide",
-  "khumanam-kanraprong-bis-bis-india": "BIS Certification Guide",
-  "huong-dan-chung-nhan-bis-bis-an-do": "BIS Certification Guide",
-
-  // Indian BIS Certification Under Scheme X (10 languages)
+    "BIS-Zertifizierung für ausländische Hersteller",
+  "was-ist-das-bis-zertifikat-indisches-bis": "Was ist das BIS-Zertifikat",
+  "was-ist-crs-bis-oder-crs-registrierung": "Was ist CRS BIS Registrierung",
+  "leitfaden-zur-bis-zertifizierung-indisches-bis":
+    "Leitfaden zur BIS-Zertifizierung",
   "indische-bis-zertifizierung-nach-schema-x":
-    "Indian BIS Certification Under Scheme X",
+    "Indische BIS-Zertifizierung nach Schema X",
+
+  // Spanish translations
+  "guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio":
+    "Certificación BIS para Fabricantes Extranjeros",
+  "que-es-el-certificado-bis-bis-indio": "Qué es el Certificado BIS",
+  "que-es-crs-bis-o-registro-crs": "Qué es CRS BIS o Registro CRS",
+  "guia-certificacion-bis-bis-indio": "Guía de Certificación BIS",
   "certificacion-bis-india-bajo-esquema-x":
-    "Indian BIS Certification Under Scheme X",
+    "Certificación BIS India bajo Esquema X",
+
+  // French translations
+  "guide-certification-bis-pour-fabricants-etrangers-bis-inde":
+    "Certification BIS pour Fabricants Étrangers",
+  "quest-ce-que-le-certificat-bis-indien": "Qu'est-ce que le Certificat BIS",
+  "quest-ce-que-le-crs-bis-ou-lenregistrement-crs":
+    "Qu'est-ce que le CRS BIS ou l'Enregistrement CRS",
+  "guide-certification-bis-bis-indien": "Guide de Certification BIS",
   "certification-bis-indienne-selon-schema-x":
-    "Indian BIS Certification Under Scheme X",
+    "Certification BIS Indienne selon Schéma X",
+
+  // Indonesian translations
+  "panduan-sertifikasi-bis-untuk-produsen-asing-bis-india":
+    "Sertifikasi BIS untuk Produsen Asing",
+  "apa-itu-sertifikat-bis-bis-india": "Apa itu Sertifikat BIS",
+  "apa-itu-crs-bis-atau-registrasi-crs": "Apa itu CRS BIS atau Registrasi CRS",
+  "panduan-sertifikasi-bis-bis-india": "Panduan Sertifikasi BIS",
   "sertifikasi-bis-india-di-bawah-skema-x":
-    "Indian BIS Certification Under Scheme X",
+    "Sertifikasi BIS India di bawah Skema X",
+
+  // Italian translations
+  "guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano":
+    "Certificazione BIS per Produttori Stranieri",
+  "cose-il-certificato-bis-indiano": "Cos'è il Certificato BIS",
+  "cose-il-crs-bis-o-registrazione-crs": "Cos'è il CRS BIS o Registrazione CRS",
+  "guida-alla-certificazione-bis-bis-indiano": "Guida alla Certificazione BIS",
   "certificazione-bis-indiana-secondo-schema-x":
-    "Indian BIS Certification Under Scheme X",
-  "indo-no-bis-nintei-sukimu-x": "Indian BIS Certification Under Scheme X",
-  "indo-bis-injeung-scheme-x-haenghaeng":
-    "Indian BIS Certification Under Scheme X",
+    "Certificazione BIS Indiana secondo Schema X",
+
+  // Japanese translations
+  "bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis":
+    "外国メーカー向けBIS認定",
+  "bis-shomeisho-toha-nani-ka-indo-no-bis": "BIS証明書とは",
+  "crs-bis-toha-nani-ka-crs-toroku": "CRS BIS登録とは",
+  "bis-nintei-gaido-india-no-bis": "BIS認定ガイド",
+  "indo-no-bis-nintei-sukimu-x": "インドのBIS認定スキームX",
+
+  // Korean translations
+  "indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu":
+    "외국 제조업체를 위한 BIS 인증",
+  "bis-jeungmyeongseo-ga-mueos-indo-bis": "BIS 증명서가 무엇",
+  "crs-bis-i-mueos-inga-crs-deunglog": "CRS BIS가 무엇인가 CRS 등록",
+  "bis-injeung-gaideu-indo-bis": "BIS 인증 가이드",
+  "indo-bis-injeung-scheme-x-haenghaeng": "인도 BIS 인증 Scheme X 행행",
+
+  // Dutch translations
+  "gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis":
+    "BIS Certificering voor Buitenlandse Fabrikanten",
+  "wat-is-het-bis-certificaat-indiaas-bis": "Wat is het BIS Certificaat",
+  "wat-is-crs-bis-of-crs-registratie": "Wat is CRS BIS of CRS Registratie",
+  "gids-voor-bis-certificering-indiaas-bis": "Gids voor BIS Certificering",
   "indiaas-bis-certificaat-volgens-schema-x":
-    "Indian BIS Certification Under Scheme X",
+    "Indiaans BIS Certificaat volgens Schema X",
+
+  // Thai translations
+  "khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india":
+    "การรับรองBISสำหรับผู้ผลิตต่างชาติ",
+  "bis-certificate-khue-a-rai-bis-india": "ใบรับรองBISคืออะไร",
+  "crs-bis-khue-a-rai-rab-phit-thab-crs": "CRS BISคืออะไรหรือการรับผิดชอบCRS",
+  "khumanam-kanraprong-bis-bis-india": "คู่มือการรับรองBIS",
   "bis-prathiap-india-taem-dai-tae-skema-x":
-    "Indian BIS Certification Under Scheme X",
-  "chung-nhan-bis-an-do-theo-scheme-x":
-    "Indian BIS Certification Under Scheme X",
+    "การรับรองBISอินเดียแต่มได้แต่สกีมาX",
+
+  // Vietnamese translations
+  "huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do":
+    "Chứng nhận BIS cho Nhà sản xuất Nước ngoài",
+  "chung-chi-bis-la-gi-bis-an-do": "Chứng chỉ BIS là gì",
+  "crs-bis-la-gi-hoac-dang-ky-crs": "CRS BIS là gì hoặc Đăng ký CRS",
+  "huong-dan-chung-nhan-bis-bis-an-do": "Hướng dẫn Chứng nhận BIS",
+  "chung-nhan-bis-an-do-theo-scheme-x": "Chứng nhận BIS Ấn Độ theo Scheme X",
 };
 
 // Dynamic route patterns for nested pages
@@ -331,23 +354,27 @@ const DYNAMIC_ROUTE_PATTERNS = {
     getPosition: () => 3,
   },
   "/:lang/:page": {
-    getParents: (params) => [{ name: "Home", url: "/", position: 1 }],
+    getParents: (params) => [
+      {
+        name: HOME_TRANSLATIONS[params.lang] || "Home",
+        url: "/",
+        position: 1,
+      },
+    ],
     getName: (params, customTitle) => {
-      const langName =
-        LANGUAGE_MAPPINGS[params.lang] || params.lang.toUpperCase();
-      if (customTitle) return `${customTitle} (${langName})`;
+      if (customTitle) return customTitle;
 
-      // Use mapped page name if available, otherwise convert slug to readable name
-      const mappedName = MULTILANG_PAGE_MAPPINGS[params.page];
-      if (mappedName) {
-        return `${mappedName} (${langName})`;
+      // Use translated page name if available
+      const translatedName = MULTILANG_PAGE_MAPPINGS[params.page];
+      if (translatedName) {
+        return translatedName;
       }
 
       // Fallback: Convert page slug to readable name
       const pageName = params.page
         ?.replace(/[-_]/g, " ")
         ?.replace(/\b\w/g, (l) => l.toUpperCase());
-      return `${pageName} (${langName})`;
+      return pageName;
     },
     getPosition: () => 2,
   },
