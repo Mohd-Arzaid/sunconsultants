@@ -1,5 +1,6 @@
 import { Contact } from "../model/contact.model.js";
 import { appendToSheet } from "../utils/googleSheet.js";
+import { sendToZohoCRM } from "../utils/zoho.js";
 
 // submit contact form
 export const submitContact = async (req, res) => {
@@ -66,10 +67,19 @@ export const submitContact = async (req, res) => {
     // Save to Google Sheets
     await appendToSheet(contactData);
 
+    // Save to Zoho CRM (non-blocking)
+    const zohoResult = await sendToZohoCRM(contactData, 'contact');
+    if (zohoResult.success) {
+      console.log("Contact data successfully sent to Zoho CRM");
+    } else {
+      console.log("Failed to send contact data to Zoho CRM:", zohoResult.error);
+    }
+
     return res.status(201).json({
       success: true,
       contact,
       message: "Contact Form Submitted Successfully !",
+      zoho: zohoResult.success ? "Sent to Zoho CRM" : "Zoho CRM sync failed",
     });
   } catch (error) {
     console.error("Error Submitting Contact Form:", error);
