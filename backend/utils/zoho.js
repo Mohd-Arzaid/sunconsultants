@@ -27,8 +27,8 @@ const getAccessToken = async () => {
       throw new Error("Failed to get access token");
     }
   } catch (error) {
-    console.error("Error getting Zoho access token:", error);
-    throw error;
+    console.error("Error getting Zoho access token:", error.message);
+    throw new Error(`Failed to get Zoho access token: ${error.message}`);
   }
 };
 
@@ -97,7 +97,7 @@ const upsertContact = async (accessToken, contactData, accountId) => {
             },
             Mobile: contactData.mobile,
             First_Name: firstName,
-            Last_Name: lastName || "",
+            Last_Name: lastName || "Customer",
           },
         ],
       }),
@@ -233,7 +233,7 @@ export const sendToZohoCRM = async (formData, formType) => {
     };
 
   } catch (error) {
-    console.error("Zoho CRM integration failed:", error);
+    console.error("Zoho CRM integration failed:", error.message);
     // Don't throw error to prevent breaking the main flow
     return {
       success: false,
