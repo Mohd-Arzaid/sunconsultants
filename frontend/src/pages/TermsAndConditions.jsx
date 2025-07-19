@@ -7,10 +7,13 @@ import { MailPlus } from "lucide-react";
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Footer from "@/common/Footer";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const TermsAndConditions = () => {
   return (
     <>
+      <SEOBreadcrumbs customTitle="Terms and Conditions | Sun Certifications India" />
       <Helmet>
         <title>
           Terms and Conditions - Sun Certifications India | BIS Certification

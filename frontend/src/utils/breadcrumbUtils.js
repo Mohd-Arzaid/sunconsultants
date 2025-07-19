@@ -46,6 +46,12 @@ const SITE_STRUCTURE = {
     position: 2,
     parents: ["/"],
   },
+  "/404": {
+    name: "Page Not Found",
+    url: "/404",
+    position: 2,
+    parents: ["/"],
+  },
 
   // Update pages
   "/bis-qco-updates": {
@@ -85,16 +91,10 @@ const SITE_STRUCTURE = {
     parents: ["/"],
   },
 
-  // General service pages
+  // General service pages (currently inactive but keeping for future)
   "/cdsco-registration-certification": {
     name: "CDSCO Registration & Certification",
     url: "/cdsco-registration-certification",
-    position: 2,
-    parents: ["/"],
-  },
-  "/schemeX": {
-    name: "Scheme X Certification",
-    url: "/schemeX",
     position: 2,
     parents: ["/"],
   },
@@ -123,7 +123,7 @@ const SITE_STRUCTURE = {
     parents: ["/"],
   },
 
-  // BIS service pages
+  // BIS service pages - FIXED URLs
   "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis": {
     name: "BIS Certification for Foreign Manufacturers",
     url: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
@@ -145,6 +145,13 @@ const SITE_STRUCTURE = {
   "/what-is-crs-bis-or-crs-registration": {
     name: "CRS BIS Registration",
     url: "/what-is-crs-bis-or-crs-registration",
+    position: 2,
+    parents: ["/"],
+  },
+  // FIXED: Corrected SchemeX URL
+  "/indian-bis-certification-under-scheme-x": {
+    name: "Indian BIS Certification Under Scheme X",
+    url: "/indian-bis-certification-under-scheme-x",
     position: 2,
     parents: ["/"],
   },
@@ -203,6 +210,12 @@ const SITE_STRUCTURE = {
   "/restriction-of-hazardous-substance-rohs-certificate": {
     name: "RoHS Certificate",
     url: "/restriction-of-hazardous-substance-rohs-certificate",
+    position: 2,
+    parents: ["/"],
+  },
+  "/lhscable": {
+    name: "LHS Cable Certification",
+    url: "/lhscable",
     position: 2,
     parents: ["/"],
   },

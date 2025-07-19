@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import Footer from "@/common/Footer";
 import { ChevronLeft, ChevronRight, FileText, Phone, Send } from "lucide-react";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { notifications } from "../data/notificationsData.js";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { getNotificationDetailUrl } from "@/utils/urlUtils";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const Notification = () => {
   const baseUrl = "https://bis-certifications.com";
@@ -105,6 +106,7 @@ const NotificationMainContent = () => {
 
   return (
     <div className=" bg-[#f9f7f2]">
+      <SEOBreadcrumbs customTitle="BIS QCO Updates | Latest Quality Control Orders" />
       <div className=" max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         {/* Heading */}
         <div className="text-center mb-6 md:mb-10">

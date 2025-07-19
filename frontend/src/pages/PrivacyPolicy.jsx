@@ -6,227 +6,233 @@ import {
 import { MailPlus } from "lucide-react";
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import Footer from "@/common/Footer";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const PrivacyPolicy = () => {
     return (
-        <div className="bg-white">
-            {/* Hero Section */}
-            <div className="bg-white pt-10">
-                <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-                    <h1 className="text-4xl md:text-5xl font-geist font-semibold text-neutral-800 text-center tracking-tight">
-                        Privacy Policy
-                    </h1>
-                    <p className="mt-3 max-w-3xl mx-auto text-lg text-center md:text-xl text-neutral-500 font-geist leading-relaxed">
-                        Learn how Sun Certifications India collects, uses, and protects your personal information. We are committed to maintaining the privacy and security of your data.
-                    </p>
-                    <div className="mt-6 text-center">
-                        <span className="inline-block px-4 py-2 bg-neutral-100 text-neutral-700 rounded-full text-sm md:text-base font-geist font-medium">
-                            Effective Date: 22 June 2025
-                        </span>
+        <>
+            <SEOBreadcrumbs customTitle="Privacy Policy | Sun Certifications India" />
+            <div className="bg-white">
+                {/* Hero Section */}
+                <div className="bg-white pt-10">
+                    <div className="max-w-[88rem] mx-auto px-4 md:px-12">
+                        <h1 className="text-4xl md:text-5xl font-geist font-semibold text-neutral-800 text-center tracking-tight">
+                            Privacy Policy
+                        </h1>
+                        <p className="mt-3 max-w-3xl mx-auto text-lg text-center md:text-xl text-neutral-500 font-geist leading-relaxed">
+                            Learn how Sun Certifications India collects, uses, and protects your personal information. We are committed to maintaining the privacy and security of your data.
+                        </p>
+                        <div className="mt-6 text-center">
+                            <span className="inline-block px-4 py-2 bg-neutral-100 text-neutral-700 rounded-full text-sm md:text-base font-geist font-medium">
+                                Effective Date: 22 June 2025
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            {/* Privacy Policy Content */}
-            <div className="max-w-[88rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-12">
-                <div className="max-w-4xl mx-auto">
-                    {/* Introduction */}
-                    <div className="mb-10 md:mb-12">
-                        <p className="text-lg md:text-xl text-neutral-600 font-geist leading-relaxed">
-                            At Sun Certifications India, we are committed to protecting your privacy. This Privacy Policy describes how we collect, use, and safeguard your information.
-                        </p>
-                    </div>
+                {/* Privacy Policy Content */}
+                <div className="max-w-[88rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-12">
+                    <div className="max-w-4xl mx-auto">
+                        {/* Introduction */}
+                        <div className="mb-10 md:mb-12">
+                            <p className="text-lg md:text-xl text-neutral-600 font-geist leading-relaxed">
+                                At Sun Certifications India, we are committed to protecting your privacy. This Privacy Policy describes how we collect, use, and safeguard your information.
+                            </p>
+                        </div>
 
-                    {/* Section 1: Information We Collect */}
-                    <div className="mb-10 md:mb-12">
-                        <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
-                            1. Information We Collect
-                        </h2>
-                        <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4">
-                            We may collect:
-                        </p>
-                        <ul className="space-y-3 ml-4 md:ml-6">
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    Your name, phone number, email address, and company name
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    Service interest (e.g. BIS, LMPC, EPR, etc.)
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    Any files/documents you upload
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    IP address and browser information
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Section 2: How We Use This Information */}
-                    <div className="mb-10 md:mb-12">
-                        <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
-                            2. How We Use This Information
-                        </h2>
-                        <ul className="space-y-3 ml-4 md:ml-6">
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    To provide certification consultation services
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    To respond to inquiries and service requests
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    To improve our website and offerings
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    To send updates or important notifications
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Section 3: Sharing of Data */}
-                    <div className="mb-10 md:mb-12">
-                        <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
-                            3. Sharing of Data
-                        </h2>
-                        <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4">
-                            We do not sell or trade your data. However, we may share it with:
-                        </p>
-                        <ul className="space-y-3 ml-4 md:ml-6">
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    Relevant Indian authorities (for certification processing)
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    Our verified internal consultants or partners
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Section 4: Data Security */}
-                    <div className="mb-10 md:mb-12">
-                        <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
-                            4. Data Security
-                        </h2>
-                        <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                            We implement standard data protection measures. However, internet transmission is never 100% secure.
-                        </p>
-                    </div>
-
-                    {/* Section 5: Cookies */}
-                    <div className="mb-10 md:mb-12">
-                        <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
-                            5. Cookies
-                        </h2>
-                        <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                            Our site uses cookies to improve user experience. You may choose to disable them via your browser.
-                        </p>
-                    </div>
-
-                    {/* Section 6: Your Rights */}
-                    <div className="mb-10 md:mb-12">
-                        <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
-                            6. Your Rights
-                        </h2>
-                        <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4">
-                            You may contact us anytime to:
-                        </p>
-                        <ul className="space-y-3 ml-4 md:ml-6">
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    Access or correct your information
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
-                                <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-                                    Request deletion of your data
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Section 7: Contact Us */}
-                    <div className="mb-10 md:mb-12">
-                        <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
-                            7. Contact Us
-                        </h2>
-                        <div className="bg-neutral-50 rounded-lg p-6 md:p-8 border border-neutral-200">
-                            <div className="space-y-4">
-                                <div className="flex items-start">
-                                    <span className="text-base md:text-lg font-geist font-medium text-neutral-800 min-w-[80px]">
-                                        Email:
+                        {/* Section 1: Information We Collect */}
+                        <div className="mb-10 md:mb-12">
+                            <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
+                                1. Information We Collect
+                            </h2>
+                            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4">
+                                We may collect:
+                            </p>
+                            <ul className="space-y-3 ml-4 md:ml-6">
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        Your name, phone number, email address, and company name
                                     </span>
-                                    <a
-                                        href="mailto:admin@bis-certifications.com"
-                                        className="text-base md:text-lg text-neutral-600 font-geist hover:text-neutral-800 transition-colors underline underline-offset-4"
-                                    >
-                                        admin@bis-certifications.com
-                                    </a>
-                                </div>
-                                <div className="flex items-start">
-                                    <span className="text-base md:text-lg font-geist font-medium text-neutral-800 min-w-[80px]">
-                                        Phone:
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        Service interest (e.g. BIS, LMPC, EPR, etc.)
                                     </span>
-                                    <a
-                                        href="tel:+918010505057"
-                                        className="text-base md:text-lg text-neutral-600 font-geist hover:text-neutral-800 transition-colors underline underline-offset-4"
-                                    >
-                                        +91 80105 05057
-                                    </a>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        Any files/documents you upload
+                                    </span>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        IP address and browser information
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Section 2: How We Use This Information */}
+                        <div className="mb-10 md:mb-12">
+                            <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
+                                2. How We Use This Information
+                            </h2>
+                            <ul className="space-y-3 ml-4 md:ml-6">
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        To provide certification consultation services
+                                    </span>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        To respond to inquiries and service requests
+                                    </span>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        To improve our website and offerings
+                                    </span>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        To send updates or important notifications
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Section 3: Sharing of Data */}
+                        <div className="mb-10 md:mb-12">
+                            <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
+                                3. Sharing of Data
+                            </h2>
+                            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4">
+                                We do not sell or trade your data. However, we may share it with:
+                            </p>
+                            <ul className="space-y-3 ml-4 md:ml-6">
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        Relevant Indian authorities (for certification processing)
+                                    </span>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        Our verified internal consultants or partners
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Section 4: Data Security */}
+                        <div className="mb-10 md:mb-12">
+                            <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
+                                4. Data Security
+                            </h2>
+                            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                We implement standard data protection measures. However, internet transmission is never 100% secure.
+                            </p>
+                        </div>
+
+                        {/* Section 5: Cookies */}
+                        <div className="mb-10 md:mb-12">
+                            <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
+                                5. Cookies
+                            </h2>
+                            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                Our site uses cookies to improve user experience. You may choose to disable them via your browser.
+                            </p>
+                        </div>
+
+                        {/* Section 6: Your Rights */}
+                        <div className="mb-10 md:mb-12">
+                            <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
+                                6. Your Rights
+                            </h2>
+                            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4">
+                                You may contact us anytime to:
+                            </p>
+                            <ul className="space-y-3 ml-4 md:ml-6">
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        Access or correct your information
+                                    </span>
+                                </li>
+                                <li className="flex items-start">
+                                    <span className="w-2 h-2 rounded-full bg-neutral-700 mr-3 mt-3 shrink-0"></span>
+                                    <span className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+                                        Request deletion of your data
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Section 7: Contact Us */}
+                        <div className="mb-10 md:mb-12">
+                            <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
+                                7. Contact Us
+                            </h2>
+                            <div className="bg-neutral-50 rounded-lg p-6 md:p-8 border border-neutral-200">
+                                <div className="space-y-4">
+                                    <div className="flex items-start">
+                                        <span className="text-base md:text-lg font-geist font-medium text-neutral-800 min-w-[80px]">
+                                            Email:
+                                        </span>
+                                        <a
+                                            href="mailto:admin@bis-certifications.com"
+                                            className="text-base md:text-lg text-neutral-600 font-geist hover:text-neutral-800 transition-colors underline underline-offset-4"
+                                        >
+                                            admin@bis-certifications.com
+                                        </a>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <span className="text-base md:text-lg font-geist font-medium text-neutral-800 min-w-[80px]">
+                                            Phone:
+                                        </span>
+                                        <a
+                                            href="tel:+918010505057"
+                                            className="text-base md:text-lg text-neutral-600 font-geist hover:text-neutral-800 transition-colors underline underline-offset-4"
+                                        >
+                                            +91 80105 05057
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Call to Action */}
-                    <div className="text-center mt-12 md:mt-16 p-8 md:p-12 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200">
-                        <h3 className="text-xl md:text-2xl font-geist font-semibold text-neutral-800 mb-4">
-                            Have Questions About Our Privacy Policy?
-                        </h3>
-                        <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-6">
-                            We&apos;re here to help clarify any concerns about how we handle your data.
-                        </p>
-                        <Link
-                            to="/contact"
-                            className="inline-flex items-center justify-center px-6 py-3 bg-neutral-800 text-white font-geist font-medium rounded-lg hover:bg-neutral-700 transition-colors duration-200"
-                        >
-                            Contact Us Today
-                        </Link>
+                        {/* Call to Action */}
+                        <div className="text-center mt-12 md:mt-16 p-8 md:p-12 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200">
+                            <h3 className="text-xl md:text-2xl font-geist font-semibold text-neutral-800 mb-4">
+                                Have Questions About Our Privacy Policy?
+                            </h3>
+                            <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-6">
+                                We&apos;re here to help clarify any concerns about how we handle your data.
+                            </p>
+                            <Link
+                                to="/contact"
+                                className="inline-flex items-center justify-center px-6 py-3 bg-neutral-800 text-white font-geist font-medium rounded-lg hover:bg-neutral-700 transition-colors duration-200"
+                            >
+                                Contact Us Today
+                            </Link>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </>
     );
 };
 

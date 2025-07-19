@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import YouTubeFacade from "@/components/ui/youtube-facade";
 import { videosData } from "../data/videosData.js";
 import Footer from "@/common/Footer";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 const Videos = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -23,6 +24,12 @@ const Videos = () => {
 
     return (
         <div className="bg-white">
+            <SEOBreadcrumbs customTitle="BIS Certification Videos | Expert Insights & Guides" />
+            <Helmet>
+                <title>BIS Certification Videos - Expert Insights</title>
+                <meta name="description" content="Watch comprehensive video guides on BIS certification, CDSCO registration, EPR compliance, and more. Expert insights to guide you through India's regulatory landscape." />
+                <meta name="keywords" content="BIS certification, CDSCO registration, EPR compliance, regulatory compliance, India, certification experts" />
+            </Helmet>
             {/* Hero Section */}
             <div className="bg-white pt-10">
                 <div className="max-w-[88rem] mx-auto px-4 md:px-12">
