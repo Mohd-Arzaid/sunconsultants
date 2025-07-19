@@ -20,6 +20,7 @@ const getAccessToken = async () => {
     });
 
     const data = await response.json();
+    console.log("🔑 Zoho Access Token Response:", JSON.stringify(data, null, 2));
     
     if (data.access_token) {
       return `Zoho-oauthtoken ${data.access_token}`;
@@ -58,10 +59,13 @@ const upsertAccount = async (accessToken, accountData) => {
     });
 
     const data = await response.json();
+    console.log("🏢 Zoho Account Upsert Response:", JSON.stringify(data, null, 2));
     
     if (data.data && data.data[0] && data.data[0].details) {
+      console.log("✅ Account ID extracted:", data.data[0].details.id);
       return data.data[0].details.id;
     } else {
+      console.log("❌ Account upsert failed - Response:", data);
       throw new Error("Failed to upsert account");
     }
   } catch (error) {
@@ -104,10 +108,13 @@ const upsertContact = async (accessToken, contactData, accountId) => {
     });
 
     const data = await response.json();
+    console.log("👤 Zoho Contact Upsert Response:", JSON.stringify(data, null, 2));
     
     if (data.data && data.data[0] && data.data[0].details) {
+      console.log("✅ Contact ID extracted:", data.data[0].details.id);
       return data.data[0].details.id;
     } else {
+      console.log("❌ Contact upsert failed - Response:", data);
       throw new Error("Failed to upsert contact");
     }
   } catch (error) {
@@ -149,10 +156,13 @@ const createEnquiry = async (accessToken, enquiryData, accountId, contactId) => 
     });
 
     const data = await response.json();
+    console.log("💼 Zoho Enquiry Create Response:", JSON.stringify(data, null, 2));
     
     if (data.data && data.data[0] && data.data[0].details) {
+      console.log("✅ Enquiry ID extracted:", data.data[0].details.id);
       return data.data[0].details.id;
     } else {
+      console.log("❌ Enquiry creation failed - Response:", data);
       throw new Error("Failed to create enquiry");
     }
   } catch (error) {
@@ -183,24 +193,28 @@ const formatPhoneNumber = (phoneNumber) => {
 // Main function to send data to Zoho CRM
 export const sendToZohoCRM = async (formData, formType) => {
   try {
-    console.log("Starting Zoho CRM integration...");
+    console.log("🚀 Starting Zoho CRM integration...");
+    console.log("📝 Form Data received:", JSON.stringify(formData, null, 2));
+    console.log("📋 Form Type:", formType);
     
     // Step 1: Get access token
     const accessToken = await getAccessToken();
-    console.log("Zoho access token obtained");
+    console.log("✅ Zoho access token obtained");
 
     // Format phone number
     const formattedPhone = formatPhoneNumber(formData.phoneNumber);
+    console.log("📱 Formatted phone number:", formattedPhone);
 
     // Prepare account data based on form type
     const accountData = {
       phone: formattedPhone,
       accountName: formType === "appointment" ? formData.companyName : "Individual Customer",
     };
+    console.log("🏢 Account Data prepared:", JSON.stringify(accountData, null, 2));
 
     // Step 2: Upsert account
     const accountId = await upsertAccount(accessToken, accountData);
-    console.log("Zoho account upserted, ID:", accountId);
+    console.log("✅ Zoho account upserted, ID:", accountId);
 
     // Prepare contact data
     const contactData = {
@@ -208,10 +222,11 @@ export const sendToZohoCRM = async (formData, formType) => {
       email: formData.email,
       mobile: formattedPhone,
     };
+    console.log("👤 Contact Data prepared:", JSON.stringify(contactData, null, 2));
 
     // Step 3: Upsert contact
     const contactId = await upsertContact(accessToken, contactData, accountId);
-    console.log("Zoho contact upserted, ID:", contactId);
+    console.log("✅ Zoho contact upserted, ID:", contactId);
 
     // Prepare enquiry data
     const enquiryData = {
@@ -220,24 +235,33 @@ export const sendToZohoCRM = async (formData, formType) => {
         : `Contact Enquiry from ${formData.pageName}`,
       message: formData.message,
     };
+    console.log("💼 Enquiry Data prepared:", JSON.stringify(enquiryData, null, 2));
 
     // Step 4: Create enquiry
     const enquiryId = await createEnquiry(accessToken, enquiryData, accountId, contactId);
-    console.log("Zoho enquiry created, ID:", enquiryId);
+    console.log("✅ Zoho enquiry created, ID:", enquiryId);
 
-    return {
+    const result = {
       success: true,
       accountId,
       contactId,
       enquiryId,
     };
+    
+    console.log("🎉 Zoho CRM Integration completed successfully!");
+    console.log("📊 Final Result:", JSON.stringify(result, null, 2));
+    
+    return result;
 
   } catch (error) {
-    console.error("Zoho CRM integration failed:", error.message);
+    console.error("❌ Zoho CRM integration failed:", error.message);
+    console.error("🔍 Error details:", error);
     // Don't throw error to prevent breaking the main flow
-    return {
+    const errorResult = {
       success: false,
       error: error.message,
     };
+    console.log("📊 Error Result:", JSON.stringify(errorResult, null, 2));
+    return errorResult;
   }
 };
