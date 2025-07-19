@@ -32,16 +32,8 @@ import AboutAuthor from "../common/AboutAuthor";
 import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
 
 export const BISFM = () => {
-  const { i18n } = useTranslation();
-  const currentLanguage = i18n.language;
+  const getBreadcrumbTitle = () => null;
 
-  // Dynamic breadcrumb title based on language
-  const getBreadcrumbTitle = () => {
-    // Let breadcrumbUtils handle all breadcrumbs (both English and other languages)
-    // This prevents duplicate breadcrumbs since SITE_STRUCTURE already defines English titles
-    return null;
-  };
-  
   return (
     <>
       <SEOBreadcrumbs customTitle={getBreadcrumbTitle()} />
