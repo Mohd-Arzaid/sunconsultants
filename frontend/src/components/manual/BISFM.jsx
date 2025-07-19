@@ -37,13 +37,11 @@ export const BISFM = () => {
 
   // Dynamic breadcrumb title based on language
   const getBreadcrumbTitle = () => {
-    // For all non-English languages, let breadcrumbUtils handle translation
-    if (currentLanguage !== "en" && currentLanguage !== "en-US") {
-      return null;
-    }
-    return "BIS FMCS Certification | Foreign Manufacturer Certification Scheme";
+    // Let breadcrumbUtils handle all breadcrumbs (both English and other languages)
+    // This prevents duplicate breadcrumbs since SITE_STRUCTURE already defines English titles
+    return null;
   };
-
+  
   return (
     <>
       <SEOBreadcrumbs customTitle={getBreadcrumbTitle()} />
