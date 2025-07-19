@@ -37,8 +37,9 @@ export const BISFM = () => {
   
   // Dynamic breadcrumb title based on language
   const getBreadcrumbTitle = () => {
-    if (currentLanguage === 'de') {
-      return null; // Let breadcrumbUtils handle German translation
+    // For all non-English languages, let breadcrumbUtils handle translation
+    if (currentLanguage !== 'en' && currentLanguage !== 'en-US') {
+      return null; 
     }
     return "BIS FMCS Certification | Foreign Manufacturer Certification Scheme";
   };
