@@ -1,12 +1,21 @@
 import { Contact } from "../model/contact.model.js";
 import { appendToSheet } from "../utils/googleSheet.js";
+import { sendToZohoCRM } from "../utils/zoho.js";
 
 // submit contact form
 export const submitContact = async (req, res) => {
   try {
-    const { fullName, email, phoneNumber, message, pageUrl, pageName } = req.body;
+    const { fullName, email, phoneNumber, message, pageUrl, pageName } =
+      req.body;
 
-    if (!fullName || !email || !phoneNumber || !message || !pageUrl || !pageName) {
+    if (
+      !fullName ||
+      !email ||
+      !phoneNumber ||
+      !message ||
+      !pageUrl ||
+      !pageName
+    ) {
       return res.status(400).json({
         message: "Please fill up All the required fields",
         success: false,
@@ -36,8 +45,7 @@ export const submitContact = async (req, res) => {
     if (!phoneRegex.test(phoneNumber)) {
       return res.status(400).json({
         success: false,
-        message:
-          "Please Enter a Valid Phone number (8-15 digits)",
+        message: "Please Enter a Valid Phone number (8-15 digits)",
       });
     }
 
@@ -66,10 +74,20 @@ export const submitContact = async (req, res) => {
     // Save to Google Sheets
     await appendToSheet(contactData);
 
+
+    // Save to Zoho CRM (non-blocking)
+    const zohoResult = await sendToZohoCRM(contactData, "contact");
+    if (zohoResult.success) {
+      console.log("Contact data successfully sent to Zoho CRM");
+    } else {
+      console.log("Failed to send contact data to Zoho CRM:", zohoResult.error);
+    }
+
     return res.status(201).json({
       success: true,
       contact,
       message: "Contact Form Submitted Successfully !",
+      zoho: zohoResult.success ? "Sent to Zoho CRM" : "Zoho CRM sync failed",
     });
   } catch (error) {
     console.error("Error Submitting Contact Form:", error);
