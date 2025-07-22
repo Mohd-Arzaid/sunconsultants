@@ -9,6 +9,7 @@ import ScrollToTopButton, {
   ScrollToTop,
 } from "./components/common/ScrollToTop";
 import SEOBreadcrumbs from "./components/common/SEOBreadcrumbs";
+import ResponsiveBreadcrumbs from "./components/common/ResponsiveBreadcrumbs";
 import LocalizedRoute from "@/common/LocalizedRoute";
 import RouteResolver from "@/common/RouteResolver";
 
@@ -63,6 +64,7 @@ function App() {
       <ScrollToTopButton hide={popupOpen} />
       <ScrollToTop />
       <SEOBreadcrumbs />
+      <ResponsiveBreadcrumbs />
 
       <Routes>
         {/* Default routes without language prefix (English) */}

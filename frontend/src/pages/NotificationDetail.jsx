@@ -16,6 +16,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { Services } from "@/components/manual/Services";
 import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
+import ResponsiveBreadcrumbs from "@/components/common/ResponsiveBreadcrumbs";
 import { getUrlSlug, getNotificationCanonicalUrl } from "@/utils/urlUtils";
 
 const NotificationDetail = () => {
@@ -79,6 +80,12 @@ const NotificationDetailLeft = ({ notification }) => {
     <>
       {/* SEO Breadcrumbs - Structured Data Only */}
       <SEOBreadcrumbs customTitle={seoData.title} />
+
+      {/* Visual Breadcrumbs for Users */}
+      <ResponsiveBreadcrumbs 
+        customTitle={seoData.title}
+        className="container mx-auto mt-4"
+      />
 
       {/* SEO Meta Tags */}
       <Helmet>

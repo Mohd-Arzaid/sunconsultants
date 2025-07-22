@@ -26,6 +26,7 @@ import PropTypes from "prop-types";
 import Services from "./Services";
 import AboutAuthor from "../common/AboutAuthor";
 import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
+import VisualBreadcrumbs from "../common/VisualBreadcrumbs";
 
 export const BISCertification = () => {
   return (
@@ -205,6 +206,10 @@ export const BISCertification = () => {
 
       <main className="w-full">
         <SEOBreadcrumbs customTitle="BIS Certification Services | ISI Mark | BIS License" />
+        <VisualBreadcrumbs 
+          customTitle="BIS Certification" 
+          className="container mx-auto mt-4 mb-2"
+        />
         <BISCHero />
         <BISCIndex />
         <BISCContent />

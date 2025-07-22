@@ -9,6 +9,7 @@ import axios from "axios";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
 import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
+import VisualBreadcrumbs from "@/components/common/VisualBreadcrumbs";
  
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -131,6 +132,10 @@ const ContactUs = () => {
   return (
     <>
       <SEOBreadcrumbs customTitle="Contact Us | Get in Touch | Sun Certifications India" />
+      <VisualBreadcrumbs 
+        customTitle="Contact Us" 
+        className="container mx-auto mt-4 mb-2"
+      />
       <main className="w-full pt-[30px] md:pt-[50px] pb-[50px] md:pb-[90px]  relative overflow-hidden bg-gradient-to-b from-white to-[#D2DCFF] ">
         {/* Decorative elements */}
         <div
