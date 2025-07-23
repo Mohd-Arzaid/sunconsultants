@@ -10,6 +10,8 @@ import ScrollToTopButton, {
 } from "./components/common/ScrollToTop";
 import SEOBreadcrumbs from "./components/common/SEOBreadcrumbs";
 import VisualBreadcrumbs from "./components/common/VisualBreadcrumbs";
+import SimpleBreadcrumbs from "./components/common/SimpleBreadcrumbs";
+import StandaloneBreadcrumbs from "./components/common/StandaloneBreadcrumbs";
 import LocalizedRoute from "@/common/LocalizedRoute";
 import RouteResolver from "@/common/RouteResolver";
 
@@ -61,7 +63,7 @@ function App() {
     <>
       <TopBar />
       <Navbar />
-      <VisualBreadcrumbs />
+      <StandaloneBreadcrumbs />
       <ScrollToTopButton hide={popupOpen} />
       <ScrollToTop />
       <SEOBreadcrumbs />

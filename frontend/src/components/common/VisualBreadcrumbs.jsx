@@ -32,8 +32,13 @@ const VisualBreadcrumbs = ({ customTitle = null, customPath = null, className = 
   // Get theme based on current page
   const theme = getBreadcrumbTheme(pathname);
 
+  // Debug logging
+  console.log("VisualBreadcrumbs - pathname:", pathname);
+  console.log("VisualBreadcrumbs - shouldShowBreadcrumbs:", shouldShowBreadcrumbs(pathname));
+
   // Check if breadcrumbs should be shown for this page
   if (!shouldShowBreadcrumbs(pathname)) {
+    console.log("VisualBreadcrumbs - Not showing breadcrumbs for:", pathname);
     return null;
   }
 
@@ -41,6 +46,7 @@ const VisualBreadcrumbs = ({ customTitle = null, customPath = null, className = 
   let breadcrumbTrail = [];
   try {
     breadcrumbTrail = generateBreadcrumbTrail(pathname, params, customTitle);
+    console.log("VisualBreadcrumbs - breadcrumbTrail:", breadcrumbTrail);
   } catch (error) {
     console.warn("Visual breadcrumb generation error:", error);
     // Fallback breadcrumb trail
