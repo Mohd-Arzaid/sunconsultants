@@ -311,3 +311,47 @@ input:-webkit-autofill:active {
 .animate-scroll {
   animation: scroll var(--animation-duration, 25s) linear infinite var(--animation-direction, forwards);
 }
+
+/* Breadcrumb Animations */
+@keyframes breadcrumb-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes breadcrumb-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(26, 135, 129, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(26, 135, 129, 0.4);
+  }
+}
+
+.breadcrumb-animate-in {
+  animation: breadcrumb-slide-in 0.4s ease-out forwards;
+}
+
+.breadcrumb-glow-hover {
+  transition: all 0.3s ease;
+}
+
+.breadcrumb-glow-hover:hover {
+  animation: breadcrumb-glow 1.5s ease-in-out infinite;
+}
+
+/* Mobile breadcrumb styles */
+@media (max-width: 768px) {
+  .breadcrumb-mobile-compact {
+    font-size: 0.875rem;
+  }
+  
+  .breadcrumb-mobile-compact .breadcrumb-item {
+    max-width: 120px;
+  }
+}

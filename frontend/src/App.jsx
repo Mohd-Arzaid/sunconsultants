@@ -9,6 +9,7 @@ import ScrollToTopButton, {
   ScrollToTop,
 } from "./components/common/ScrollToTop";
 import SEOBreadcrumbs from "./components/common/SEOBreadcrumbs";
+import VisualBreadcrumbs from "./components/common/VisualBreadcrumbs";
 import LocalizedRoute from "@/common/LocalizedRoute";
 import RouteResolver from "@/common/RouteResolver";
 
@@ -60,6 +61,7 @@ function App() {
     <>
       <TopBar />
       <Navbar />
+      <VisualBreadcrumbs />
       <ScrollToTopButton hide={popupOpen} />
       <ScrollToTop />
       <SEOBreadcrumbs />
