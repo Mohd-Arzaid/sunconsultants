@@ -22,19 +22,111 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
-import { Check } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
 import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
 import AboutAuthor from "../common/AboutAuthor";
-import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "../ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 export const BISFM = () => {
+  // Language-specific breadcrumb mapping
+  const breadcrumbData = [
+    {
+      lang: 'en',
+      path: '/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis',
+      name: 'BIS Mark (ISI License) for Foreign Manufacturers',
+      url: 'https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis',
+      home: 'Home',
+    },
+    {
+      lang: 'de',
+      path: '/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis',
+      name: 'Leitfaden zur BIS-Zertifizierung für ausländische Hersteller (Indisches BIS)',
+      url: 'https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis',
+      home: 'Startseite',
+    },
+    {
+      lang: 'es',
+      path: '/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio',
+      name: 'Guía Certificación BIS para Fabricantes Extranjeros (BIS Indio)',
+      url: 'https://bis-certifications.com/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio',
+      home: 'Inicio',
+    },
+    {
+      lang: 'fr',
+      path: '/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde',
+      name: 'Guide Certification BIS pour Fabricants Étrangers (BIS Inde)',
+      url: 'https://bis-certifications.com/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde',
+      home: 'Accueil',
+    },
+    {
+      lang: 'id',
+      path: '/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india',
+      name: 'Panduan Sertifikasi BIS untuk Produsen Asing (BIS India)',
+      url: 'https://bis-certifications.com/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india',
+      home: 'Beranda',
+    },
+    {
+      lang: 'it',
+      path: '/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano',
+      name: 'Guida alla Certificazione BIS per Produttori Stranieri (BIS Indiano)',
+      url: 'https://bis-certifications.com/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano',
+      home: 'Home',
+    },
+    {
+      lang: 'ja',
+      path: '/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis',
+      name: 'BIS認定：外国製造業者のためのガイド（インドBIS）',
+      url: 'https://bis-certifications.com/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis',
+      home: 'ホーム',
+    },
+    {
+      lang: 'ko',
+      path: '/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu',
+      name: '인도 BIS 외국 제조업체를 위한 BIS 인증 가이드',
+      url: 'https://bis-certifications.com/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu',
+      home: '홈',
+    },
+    {
+      lang: 'nl',
+      path: '/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis',
+      name: 'Gids voor BIS-certificering voor buitenlandse fabrikanten (Indiaas BIS)',
+      url: 'https://bis-certifications.com/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis',
+      home: 'Startpagina',
+    },
+    {
+      lang: 'th',
+      path: '/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india',
+      name: 'คู่มือการรับรอง BIS สำหรับผู้ผลิตต่างชาติ (BIS อินเดีย)',
+      url: 'https://bis-certifications.com/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india',
+      home: 'หน้าหลัก',
+    },
+    {
+      lang: 'vi',
+      path: '/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do',
+      name: 'Hướng dẫn chứng nhận BIS cho nhà sản xuất nước ngoài (BIS Ấn Độ)',
+      url: 'https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do',
+      home: 'Trang chủ',
+    },
+  ];
+
+  // Find the matching breadcrumb based on current path
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
+  const matched = breadcrumbData.find(b => currentPath === b.path) || breadcrumbData[0];
+
   return (
     <>
-      <SEOBreadcrumbs />
       <Helmet>
         <title>
           BIS FMCS Certification | Foreign Manufacturer Certification Scheme |
@@ -243,9 +335,53 @@ export const BISFM = () => {
             ],
           })}
         </script>
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: matched.name,
+                item: matched.url,
+              },
+            ],
+          })}
+        </script>
       </Helmet>
 
-      <main className="w-full" role="main">
+      <main className="w-full relative" role="main">
+        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+          <div className="max-w-[80rem] mx-auto px-4">
+            <div className="w-fit font-inter">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink asChild>
+                      <Link to="/">{matched.home}</Link>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator>
+                    <SlashIcon />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem>
+                    <BreadcrumbPage>{matched.name}</BreadcrumbPage>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+            </div>
+          </div>
+        </div>
+
         <BISFMHero />
         <BISFMIndex />
         <BISFMContent />
@@ -262,7 +398,7 @@ const BISFMHero = () => {
 
   return (
     <section
-      className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
+      className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
       aria-label="BIS FMCS Certification Hero"
     >
       {/* Background gradient */}

@@ -5,15 +5,15 @@ import {
   User,
   ChevronLeft,
   ChevronRight,
+  SlashIcon,
 } from "lucide-react";
 import whychooseus from "../assets/images/whychooseus.jpg";
 import React, { useState, useEffect } from "react";
 import Footer from "@/common/Footer";
 import { motion, useAnimationControls } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Services from "@/components/manual/Services";
 import { Helmet } from "react-helmet-async";
-import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
 // Import images for services
 import BISImage from "../assets/images/BIS.jpg";
@@ -23,11 +23,18 @@ import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg"
 import EPRCertificate from "../assets/images/EPRCertificate.jpg";
 import LMPC from "../assets/images/LMPC.jpg";
 import ISIMark from "../assets/images/ISIMark.jpg";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const About = () => {
   return (
-    <div className="overflow-hidden bg-[#F9F7F2]">
-      <SEOBreadcrumbs customTitle="About Sun Certifications India" />
+    <div className="overflow-hidden bg-[#F9F7F2] relative">
       <Helmet>
         <title>
           About Sun Certifications India - BIS Certification Experts
@@ -41,7 +48,50 @@ const About = () => {
           content="about sun certifications, bis certification company, indian certification experts, bis consultants india"
         />
         <link rel="canonical" href="https://bis-certifications.com/about" />
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "About",
+                item: "https://bis-certifications.com/about",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>About</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
 
       {/* <AboutHero /> */}
       <WhyChooseUs />

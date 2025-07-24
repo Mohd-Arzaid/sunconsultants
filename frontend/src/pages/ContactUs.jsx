@@ -1,15 +1,23 @@
 import { Input } from "@/components/ui/input";
-import { Send } from "lucide-react";
+import { Send, SlashIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/common/Footer";
 import { useState } from "react";
 import axios from "axios";
-// import { toast } from "sonner";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
-import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
- 
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const ContactUs = () => {
@@ -49,8 +57,6 @@ const ContactUs = () => {
       return;
     }
 
-
-
     // Phone number validation
     const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
     if (!phoneRegex.test(phoneNumber)) {
@@ -63,9 +69,6 @@ const ContactUs = () => {
       setLoading(false);
       return;
     }
-
-
-
 
     // Email validation
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -86,8 +89,6 @@ const ContactUs = () => {
       setLoading(false);
       return;
     }
-
-
 
     try {
       const response = await axios.post(
@@ -130,8 +131,52 @@ const ContactUs = () => {
 
   return (
     <>
-      <SEOBreadcrumbs customTitle="Contact Us | Get in Touch | Sun Certifications India" />
+      {/* JSON-LD Breadcrumb structured data for SEO */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Contact Us",
+                item: "https://bis-certifications.com/contact",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
       <main className="w-full pt-[30px] md:pt-[50px] pb-[50px] md:pb-[90px]  relative overflow-hidden bg-gradient-to-b from-white to-[#D2DCFF] ">
+        <div className="absolute md:top-5 top-3 left-0 w-full">
+          <div className="max-w-[80rem] mx-auto px-4">
+            <div className="w-fit font-inter">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink asChild>
+                      <Link to="/">Home</Link>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator>
+                    <SlashIcon />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem>
+                    <BreadcrumbPage>Contact Us</BreadcrumbPage>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+            </div>
+          </div>
+        </div>
+
         {/* Decorative elements */}
         <div
           className="hidden md:block absolute top-[20%] z-10 right-[15%] w-[20px] h-[20px] rounded-full bg-blue-800/30 animate-float"
@@ -157,7 +202,7 @@ const ContactUs = () => {
             <div className="flex w-full items-center justify-center gap-2 md:gap-3 mt-2 md:mt-0">
               <Separator className="hidden md:block w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[14px] md:text-[18px] text-[#008080] text-center">
-                Get In Touch , We're Here to Assist You
+                Get In Touch , We&apos;re Here to Assist You
               </span>
               <Separator className="hidden md:block w-[94.46px]  h-[2px] bg-[#008080]" />
             </div>
@@ -247,7 +292,7 @@ const ContactUs = () => {
             </h4>
 
             <p className="font-geist text-[16px] md:text-[20px] font-medium text-center">
-              <span className="text-[#1E40AF]">We're always happy</span> to
+              <span className="text-[#1E40AF]">We&apos;re always happy</span> to
               Assist You
             </p>
           </div>
