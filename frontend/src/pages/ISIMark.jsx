@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
-import { Check } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
@@ -26,7 +26,15 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import AboutAuthor from "../components/common/AboutAuthor";
-import SEOBreadcrumbs from "../components/common/SEOBreadcrumbs";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 const ISIMark = () => {
   return (
@@ -61,7 +69,7 @@ const ISIMark = () => {
         <meta property="og:locale" content="en_IN" />
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
-      
+
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
@@ -124,9 +132,55 @@ const ISIMark = () => {
           hrefLang="x-default"
         />
         <meta name="robots" content="index, follow" />
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "A Guide to BIS Certification (Indian BIS)",
+                item: "https://bis-certifications.com/a-guide-to-bis-certification-indian-bis",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
-      <main className="w-full">
-        <SEOBreadcrumbs customTitle="ISI Mark Certification Services | BIS Certification" />
+
+      <main className="w-full relative">
+        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+          <div className="max-w-[80rem] mx-auto px-4">
+            <div className="w-fit font-inter">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink asChild>
+                      <Link to="/">Home</Link>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator>
+                    <SlashIcon />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem>
+                    <BreadcrumbPage>
+                      A Guide to BIS Certification (Indian BIS)
+                    </BreadcrumbPage>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+            </div>
+          </div>
+        </div>
+
         <BISISIHero />
         <BISISIIndex />
         <BISISIContent />
@@ -145,7 +199,7 @@ const BISISIHero = () => {
 
   return (
     <section
-      className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
+      className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
       aria-label="ISI Mark Certification Hero"
     >
       {/* Background gradient */}
