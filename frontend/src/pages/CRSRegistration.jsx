@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
-import { Check } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
@@ -26,6 +26,8 @@ import {
   TableHead,
 } from "@/components/ui/table";
 import { Search } from "lucide-react";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 const productsData = [
   {
@@ -489,7 +491,7 @@ const productsData = [
 
 const CRSRegistration = () => {
   return (
-    <>
+    <div className="relative">
       <Helmet>
         {/* Basic Meta Tags */}
         <title>What is CRS Registration - Everything You Need to Know</title>
@@ -533,7 +535,7 @@ const CRSRegistration = () => {
           rel="canonical"
           href="https://bis-certifications.com/bis/what-is-crs-bis-or-crs-registration"
         />
-       
+
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
@@ -595,14 +597,58 @@ const CRSRegistration = () => {
           href="https://bis-certifications.com/what-is-crs-bis-or-crs-registration"
           hrefLang="x-default"
         />
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "BIS CRS Registration",
+                item: "https://bis-certifications.com/what-is-crs-bis-or-crs-registration",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>BIS CRS Registration</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
 
       <BISCRSHero />
       <BISCRSIndex />
       <BISCRSContent />
       <Footer />
       <ScrollToTopButton />
-    </>
+    </div>
   );
 };
 
@@ -612,7 +658,7 @@ const BISCRSHero = () => {
   const { t } = useTranslation("BISCRSHero");
 
   return (
-    <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+    <main className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
       <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
 

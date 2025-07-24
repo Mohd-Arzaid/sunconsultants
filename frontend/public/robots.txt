@@ -4,6 +4,7 @@ Allow: /
 # Sitemaps
 Sitemap: https://bis-certifications.com/sitemap.xml
 Sitemap: https://bis-certifications.com/image-sitemap.xml
+Sitemap: https://bis-certifications.com/video-sitemap.xml
 
 # Disallow specific service pages
 Disallow: /cdsco-registration-certification

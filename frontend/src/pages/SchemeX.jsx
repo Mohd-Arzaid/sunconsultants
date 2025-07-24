@@ -21,159 +21,21 @@ import {
 } from "@/components/ui/accordion";
 
 import ServiceContactForm from "@/common/ServiceContactForm";
-import { BISFMContentLeft, BISFMIndex } from "@/components/manual/BISFM";
 import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 import Services from "../components/manual/Services";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import AboutAuthor from "../components/common/AboutAuthor";
-import { Check, Search } from "lucide-react";
-import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
-
-const productsData = [
-  {
-    id: 1,
-    description:
-      "All types of Pumps for handling liquids, liquid elevators and (or)their assemblies /sub-assemblies /components",
-    hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 and 841392",
-  },
-  {
-    id: 2,
-    description:
-      "All types of compressors and(or)their assemblies /sub-assemblies /components.",
-    hsCode:
-      "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 and 84149090",
-  },
-  {
-    id: 3,
-    description:
-      "All types of machinery for treatment of material by a process involving a change of temperature and(or)their assemblies /sub-assemblies /components",
-    hsCode: "841932, 841939,841940, 841950, 841960,841981, 841989 and 84199090",
-  },
-  {
-    id: 4,
-    description:
-      "All types of centrifuges, filtering or purifying machinery for liquid and gas and(or)their assemblies /sub-assemblies /components",
-    hsCode:
-      "842111, 842112, 842119, 84212110, 84212190, 842122, 842129, 842131, 842139, 842191 and 842199",
-  },
-  {
-    id: 5,
-    description:
-      "All types of machinery for filling, closing, sealing, labelling bottles, packing or wrapping and(or)their assemblies/sub-assemblies/components",
-    hsCode: "842220, 842230, 842240 and 842290",
-  },
-  {
-    id: 6,
-    description:
-      "All types of cranes and (or) their assemblies /sub-assemblies/components",
-    hsCode:
-      "842611, 842612,842619, 842620, 842630,842641, 842649, 842691 and 84269990",
-  },
-  {
-    id: 7,
-    description:
-      "All types of machinery for construction, earthmoving, Mining and (or)their assemblies /sub-assemblies/components",
-    hsCode:
-      "8429, 843010, 843020, 843031, 843039, 843041, 843049, 843050, 843141, 843142, 843143 and 843149",
-  },
-  {
-    id: 8,
-    description:
-      "All types of weaving machines (looms) and (or)their assemblies/ sub-assemblies / components.",
-    hsCode: "8446, 844811, 844819, 844842 and 844849",
-  },
-  {
-    id: 9,
-    description:
-      "All types of machinery for making embroidery and(or)their assemblies /sub-assemblies /components.",
-    hsCode: "84479020 and 844859",
-  },
-  {
-    id: 10,
-    description: "All types of metal cutting machines",
-    hsCode: "8456, 8457, 8458, 8459, 8460, 8461 and 846693",
-    indianStandard:
-      "IS 17277 (Part 1): 2019\nISO 16092-1 : 2017\nIS 17259: 2020\nISO 28881 : 2013\nIS 17258: 2019\nISO 23125 : 2015\nIS 17254:2019\nISO 16093 : 2017\nIS 17253 (Part 1): 2019\nISO 16090-1 : 2017",
-    title:
-      "Machine Tools Safety Presses Part 1 General Safety Requirements\nMachine Tools Safety Electro-Discharge Machines\nMachine Tools Safety Turning Machines\nMachine Tools Safety Sawing Machines for Cold Metal\nMachine Tools Safety Machining Centres, Milling Machines, Transfer Machines Part 1 Safety Requirements",
-  },
-  {
-    id: 11,
-    description:
-      "All types of machine tools for working stone, ceramics, concrete, asbestos cement or like mineral glass",
-    hsCode: "8464 and 84669100",
-    indianStandard: "-",
-    title: "-",
-  },
-  {
-    id: 12,
-    description: "All types of machinery for working rubber and plastics",
-    hsCode: "8477",
-    indianStandard: "IS/ISO 20430: 2020",
-    title:
-      "Plastics and Rubber Machines-Injection Moulding Machines-Safety Requirements",
-  },
-  {
-    id: 13,
-    description:
-      "All types of machines including the machines for public works & Building and the machinery & mechanical appliances having individual functions, not specified",
-    hsCode: "84791000, 84798999 and 84799090",
-    indianStandard: "-",
-    title: "-",
-  },
-  {
-    id: 14,
-    description:
-      "All types of gears and gearing, toothed wheels, chain sprocket, transmission elements ball or roller screws, gear boxes and speed changers, including torque converters And (or)their assemblies /sub-assemblies /components",
-    hsCode: "84834000 and 84839000",
-    indianStandard: "-",
-    title: "-",
-  },
-  {
-    id: 15,
-    description:
-      "All types of Rotary electrical machines such as Generator, etc. Building and the machinery & mechanical appliances having individual functions, not specified",
-    hsCode: "8501 and 8503",
-    indianStandard:
-      "Clause 4.7, 4.8 and 4.12 of section 2,\nclause 7.4 of Section 3, clause 8.6 of Section 4,\nClause 9.4 of section 5 of IS 5422:1996\nClause 11, 21, 22, 23, 25 and 26 of IS 13364\n(Part 1): 1992\nClause 11, 21, 22 23 25 and 26 of IS 13364\n(Part 2): 1992",
-    title:
-      "Turbine type generation\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 1\nalternators rated up to 20 kVa\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 2\nalternators rated above 20 kVa and up to 1250 kVa",
-  },
-  {
-    id: 16,
-    description: "All types of Diesel Generator",
-    hsCode: "8502 and 8503",
-    indianStandard:
-      "Clause 5,6,7,8, 9 & 10 of IS/ISO 8528 (Part 2) : 2018\nClause 6 & 10 of IS/ISO 8528 (Part 3)\nClause 4, 5.5, 7.3.5, 7.3.7 & 7.4 of IS/ISO 8528 (Part 4): 2005\nClause 12, 13, 14, 15 of IS/ISO 8528-5: 2018\nClause 6.4 of IS/ISO 8528 (Part 8): 2016\nClause 9.1 of IS/ISO 8528 (Part 12): 1997",
-    title:
-      "Reciprocating Internal Combustion Engine Driven Alternating Current Generating Sets : Part 2 Engines\nReciprocating internal combustion engine driven alternating current generating sets: Part 3 alternating current generators for generating sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 4 control gear and switchgear\nReciprocating Internal Combustion Engine Driven Alternating Current Generating Sets Part 5 Generating Sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 8\nReciprocating internal combustion engine driven alternating current generating sets: Part 12 emergency power supply to safety",
-  },
-  {
-    id: 17,
-    description:
-      "All types of Transformers and (or)their assemblies /sub-assemblies /components.",
-    hsCode: "850421, 850422,850423, 850431, 850432,850433, 850434 and 850490.",
-  },
-  {
-    id: 18,
-    description:
-      "All types of Power Semiconductor Converter and (or)their assemblies /sub-assemblies /components.",
-    hsCode: "850440",
-  },
-  {
-    id: 19,
-    description:
-      "All types of switch gear and control gear equipment operating at voltages not exceeding 1000 volts*(%4)and (or)their assemblies /sub-assemblies /components",
-    hsCode: "8536, 8537 and 8538",
-  },
-  {
-    id: 20,
-    description:
-      "All types of switch gear and control gear equipment operating at voltages exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
-    hsCode: "8535, 8537 and 8538",
-  },
-];
+import { Check, Search, SlashIcon } from "lucide-react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 const productDataTableSecond = [
   {
@@ -658,8 +520,6 @@ const productDataTableThird = [
 export const SchemeX = () => {
   return (
     <>
-      <SEOBreadcrumbs customTitle="Indian BIS Certification Under Scheme X | Machinery Safety" />
-
       <Helmet>
         <title>
           BIS Scheme X Certification | Machinery & Electrical Equipment Safety |
@@ -862,9 +722,54 @@ export const SchemeX = () => {
             ],
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Indian Bis Certification Under Scheme-X",
+                item: "https://bis-certifications.com/indian-bis-certification-under-scheme-x",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
 
-      <main className="w-full" role="main">
+      <main className="w-full relative " role="main">
+        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+          <div className="max-w-[80rem] mx-auto px-4">
+            <div className="w-fit font-inter">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink asChild>
+                      <Link to="/">Home</Link>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator>
+                    <SlashIcon />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem>
+                    <BreadcrumbPage>
+                      Indian Bis Certification Under Scheme-X
+                    </BreadcrumbPage>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+            </div>
+          </div>
+        </div>
+
         <SchemeXHero />
         <SchemeXIndex />
         <SchemeXContent />
@@ -2118,7 +2023,7 @@ const SchemeXHero = () => {
 
   return (
     <section
-      className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
+      className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
       aria-label="BIS FMCS Certification Hero"
     >
       {/* Background gradient */}

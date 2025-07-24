@@ -1,6 +1,6 @@
-import React, { useState, useCallback, useEffect } from 'react';
-import { Play, Loader2 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import React, { useState, useCallback, useEffect } from "react";
+import { Play, Loader2 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 /**
  * Optimized YouTube Facade Component
@@ -11,18 +11,23 @@ import { cn } from '@/lib/utils';
  * - Maintains good UX with loading states
  * - Includes preconnect optimization for faster video loading
  * - Supports intersection observer for better performance
+ * - Includes Video Schema markup for better GSC indexing
  */
-const YouTubeFacade = ({ 
-  videoId, 
-  title = 'YouTube Video',
-  className = '',
-  thumbnailQuality = 'hqdefault', // maxresdefault, hqdefault, mqdefault, sddefault
-  aspectRatio = 'aspect-video', // aspect-video (16:9), aspect-[4/3], aspect-[9/16]
+const YouTubeFacade = ({
+  videoId,
+  title = "YouTube Video",
+  description = "Watch this informative video about BIS certification and compliance requirements",
+  className = "",
+  thumbnailQuality = "hqdefault", // maxresdefault, hqdefault, mqdefault, sddefault
+  aspectRatio = "aspect-video", // aspect-video (16:9), aspect-[4/3], aspect-[9/16]
   showTitle = false,
   autoplay = false,
   enableIntersectionObserver = true,
   preconnect = true,
-  ...props 
+  duration = "PT0H0M0S", // ISO 8601 format - will be updated dynamically
+  uploadDate = "2024-01-01T00:00:00+00:00", // ISO 8601 format
+  category = "BIS Certification",
+  ...props
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -31,29 +36,117 @@ const YouTubeFacade = ({
   const facadeRef = React.useRef(null);
 
   // Fallback thumbnail qualities in order of preference
-  const thumbnailQualities = ['maxresdefault', 'hqdefault', 'mqdefault', 'sddefault'];
+  const thumbnailQualities = [
+    "maxresdefault",
+    "hqdefault",
+    "mqdefault",
+    "sddefault",
+  ];
   const currentQualityIndex = thumbnailQualities.indexOf(thumbnailQuality);
-  
-  const getThumbnailUrl = useCallback((quality) => {
-    return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
-  }, [videoId]);
+
+  const getThumbnailUrl = useCallback(
+    (quality) => {
+      return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
+    },
+    [videoId]
+  );
+
+  // Generate Video Schema for GSC
+  const generateVideoSchema = useCallback(() => {
+    const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+    const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    const thumbnailUrl = getThumbnailUrl("maxresdefault");
+
+    return {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: title,
+      description: description,
+      thumbnailUrl: [thumbnailUrl],
+      uploadDate: uploadDate,
+      duration: duration,
+      contentUrl: videoUrl,
+      embedUrl: embedUrl,
+      publisher: {
+        "@type": "Organization",
+        name: "Sun Certifications India",
+        url: "https://bis-certifications.com",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://bis-certifications.com/company-logo/company-logo.webp",
+        },
+      },
+      author: {
+        "@type": "Organization",
+        name: "Sun Certifications India",
+      },
+      category: category,
+      keywords: [
+        "BIS Certification",
+        "CDSCO Registration",
+        "EPR Compliance",
+        "Indian Standards",
+        "Quality Certification",
+        "Regulatory Compliance",
+      ],
+      inLanguage: "en",
+      isFamilyFriendly: true,
+    };
+  }, [
+    videoId,
+    title,
+    description,
+    uploadDate,
+    duration,
+    category,
+    getThumbnailUrl,
+  ]);
+
+  // Add schema to head when component mounts
+  useEffect(() => {
+    if (!isLoaded) {
+      const schema = generateVideoSchema();
+      const scriptId = `video-schema-${videoId}`;
+
+      // Remove existing schema if present
+      const existingScript = document.getElementById(scriptId);
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+
+      // Add new schema
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify(schema);
+      document.head.appendChild(script);
+
+      // Cleanup on unmount
+      return () => {
+        const scriptToRemove = document.getElementById(scriptId);
+        if (scriptToRemove) {
+          document.head.removeChild(scriptToRemove);
+        }
+      };
+    }
+  }, [isLoaded, generateVideoSchema, videoId]);
 
   // Preconnect to YouTube domains for faster loading
   useEffect(() => {
     if (preconnect && !isLoaded) {
       const preconnectLinks = [
-        'https://www.youtube.com',
-        'https://www.google.com',
-        'https://googleads.g.doubleclick.net',
-        'https://static.doubleclick.net'
+        "https://www.youtube.com",
+        "https://www.google.com",
+        "https://googleads.g.doubleclick.net",
+        "https://static.doubleclick.net",
       ];
 
-      preconnectLinks.forEach(href => {
-        const link = document.createElement('link');
-        link.rel = 'preconnect';
+      preconnectLinks.forEach((href) => {
+        const link = document.createElement("link");
+        link.rel = "preconnect";
         link.href = href;
-        link.crossOrigin = 'anonymous';
-        
+        link.crossOrigin = "anonymous";
+
         // Check if preconnect link already exists
         if (!document.querySelector(`link[rel="preconnect"][href="${href}"]`)) {
           document.head.appendChild(link);
@@ -62,9 +155,11 @@ const YouTubeFacade = ({
 
       // Cleanup on component unmount
       return () => {
-        preconnectLinks.forEach(href => {
-          const link = document.querySelector(`link[rel="preconnect"][href="${href}"]`);
-          if (link && link.dataset.youtubeComponent === 'true') {
+        preconnectLinks.forEach((href) => {
+          const link = document.querySelector(
+            `link[rel="preconnect"][href="${href}"]`
+          );
+          if (link && link.dataset.youtubeComponent === "true") {
             document.head.removeChild(link);
           }
         });
@@ -84,8 +179,8 @@ const YouTubeFacade = ({
         }
       },
       {
-        rootMargin: '50px 0px', // Start loading 50px before coming into view
-        threshold: 0.1
+        rootMargin: "50px 0px", // Start loading 50px before coming into view
+        threshold: 0.1,
       }
     );
 
@@ -98,13 +193,13 @@ const YouTubeFacade = ({
 
   const handlePlayClick = useCallback(() => {
     setIsLoading(true);
-    
+
     // Prefetch the YouTube iframe before loading
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
+    const iframe = document.createElement("iframe");
+    iframe.style.display = "none";
     iframe.src = embedUrl;
     document.body.appendChild(iframe);
-    
+
     // Small delay to show loading state and allow prefetch
     setTimeout(() => {
       setIsLoaded(true);
@@ -118,26 +213,35 @@ const YouTubeFacade = ({
     const nextQuality = thumbnailQualities[currentQualityIndex + 1];
     if (nextQuality && !imageError) {
       setImageError(true);
-      
+
       // Preload next quality image
       const img = new Image();
       img.src = getThumbnailUrl(nextQuality);
-      img.loading = 'lazy';
+      img.loading = "lazy";
     }
   }, [currentQualityIndex, imageError, getThumbnailUrl, thumbnailQualities]);
 
-  const embedUrl = `https://www.youtube.com/embed/${videoId}?${new URLSearchParams({
-    autoplay: autoplay ? '1' : '0',
-    rel: '0',
-    modestbranding: '1',
-    playsinline: '1',
-    enablejsapi: '1',
-    origin: window.location.origin,
-  }).toString()}`;
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?${new URLSearchParams(
+    {
+      autoplay: autoplay ? "1" : "0",
+      rel: "0",
+      modestbranding: "1",
+      playsinline: "1",
+      enablejsapi: "1",
+      origin: window.location.origin,
+    }
+  ).toString()}`;
 
   if (isLoaded) {
     return (
-      <div className={cn(aspectRatio, 'relative overflow-hidden rounded-xl', className)} {...props}>
+      <div
+        className={cn(
+          aspectRatio,
+          "relative overflow-hidden rounded-xl",
+          className
+        )}
+        {...props}
+      >
         <iframe
           src={embedUrl}
           title={title}
@@ -152,15 +256,19 @@ const YouTubeFacade = ({
   }
 
   const currentThumbnailUrl = getThumbnailUrl(
-    imageError && thumbnailQualities[currentQualityIndex + 1] 
-      ? thumbnailQualities[currentQualityIndex + 1] 
+    imageError && thumbnailQualities[currentQualityIndex + 1]
+      ? thumbnailQualities[currentQualityIndex + 1]
       : thumbnailQuality
   );
 
   return (
-    <div 
+    <div
       ref={facadeRef}
-      className={cn(aspectRatio, 'relative overflow-hidden rounded-xl group cursor-pointer', className)} 
+      className={cn(
+        aspectRatio,
+        "relative overflow-hidden rounded-xl group cursor-pointer",
+        className
+      )}
       {...props}
     >
       {/* Skeleton loader while waiting for intersection */}
@@ -184,10 +292,10 @@ const YouTubeFacade = ({
             onError={handleImageError}
             fetchPriority="low"
           />
-          
+
           {/* Dark overlay on hover */}
           <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          
+
           {/* Play Button */}
           <button
             onClick={handlePlayClick}
@@ -199,7 +307,10 @@ const YouTubeFacade = ({
               {isLoading ? (
                 <Loader2 className="w-8 h-8 md:w-10 md:h-10 text-white animate-spin" />
               ) : (
-                <Play className="w-8 h-8 md:w-10 md:h-10 text-white ml-1" fill="currentColor" />
+                <Play
+                  className="w-8 h-8 md:w-10 md:h-10 text-white ml-1"
+                  fill="currentColor"
+                />
               )}
             </div>
           </button>
@@ -235,4 +346,4 @@ const YouTubeFacade = ({
   );
 };
 
-export default YouTubeFacade; 
+export default YouTubeFacade;

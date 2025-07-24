@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    
+    <!-- Home Page Videos -->
+    <url>
+        <loc>https://bis-certifications.com/</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/4JDVsoWSY3I/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Complete Guide to BIS Certification for Foreign Manufacturers (BISFM)</video:title>
+            <video:description>Learn everything about BIS Foreign Manufacturer certification process, requirements, documentation, and compliance standards for selling products in India. Complete BISFM guide by Sun Certifications.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=4JDVsoWSY3I</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/4JDVsoWSY3I</video:player_loc>
+            <video:duration>630</video:duration>
+            <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
+            <video:tag>BISFM</video:tag>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Foreign Manufacturers</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:category>BIS Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/_LBccl6LiOM/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>ISI Mark Certification Process - Complete Step by Step Guide</video:title>
+            <video:description>Comprehensive guide to ISI Mark certification for Indian manufacturers. Learn about quality assurance, testing requirements, and compliance standards. Expert insights from Sun Certifications.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=_LBccl6LiOM</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/_LBccl6LiOM</video:player_loc>
+            <video:duration>525</video:duration>
+            <video:publication_date>2024-02-01T00:00:00+00:00</video:publication_date>
+            <video:tag>ISI Mark</video:tag>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Product Certification</video:tag>
+            <video:category>ISI Mark</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/JxYwTtj4wfQ/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Scheme X Registration - BIS Certification Under New Framework</video:title>
+            <video:description>Understanding Scheme X registration process under BIS certification framework. Learn about documentation, compliance requirements, and regulatory procedures for Indian manufacturers.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=JxYwTtj4wfQ</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/JxYwTtj4wfQ</video:player_loc>
+            <video:duration>735</video:duration>
+            <video:publication_date>2024-02-15T00:00:00+00:00</video:publication_date>
+            <video:tag>Scheme X</video:tag>
+            <video:tag>Registration</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Regulatory Framework</video:tag>
+            <video:category>Scheme X</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/zq1nIBTh27w/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>BIS Certification Complete Guide - Standards and Quality Requirements</video:title>
+            <video:description>Master the BIS certification process with our comprehensive guide covering quality standards, testing procedures, and compliance requirements for Indian market entry.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=zq1nIBTh27w</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/zq1nIBTh27w</video:player_loc>
+            <video:duration>560</video:duration>
+            <video:publication_date>2024-03-01T00:00:00+00:00</video:publication_date>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Quality Standards</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Product Certification</video:tag>
+            <video:category>BIS Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/5ppBDV76d6I/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Standards Compliance in India - Regulatory Framework and Requirements</video:title>
+            <video:description>Detailed overview of standards compliance requirements in India including regulatory framework, quality assurance processes, and certification procedures for businesses.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=5ppBDV76d6I</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/5ppBDV76d6I</video:player_loc>
+            <video:duration>670</video:duration>
+            <video:publication_date>2024-03-15T00:00:00+00:00</video:publication_date>
+            <video:tag>Standards Compliance</video:tag>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Regulatory Framework</video:tag>
+            <video:category>Standards Compliance</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/OCQZUvsxcHU/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Quality Management Systems - Best Practices for Manufacturing Excellence</video:title>
+            <video:description>Learn about implementing effective quality management systems for manufacturing excellence. Covers process optimization, quality control, and compliance with Indian standards.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=OCQZUvsxcHU</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/OCQZUvsxcHU</video:player_loc>
+            <video:duration>810</video:duration>
+            <video:publication_date>2024-04-01T00:00:00+00:00</video:publication_date>
+            <video:tag>Quality Management</video:tag>
+            <video:tag>Process Optimization</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Quality Control</video:tag>
+            <video:category>Quality Management</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+    </url>
+
+    <!-- Dedicated Videos Page -->
+    <url>
+        <loc>https://bis-certifications.com/videos-about-bis-certification</loc>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/4JDVsoWSY3I/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Complete Guide to BIS Certification for Foreign Manufacturers (BISFM)</video:title>
+            <video:description>Learn everything about BIS Foreign Manufacturer certification process, requirements, documentation, and compliance standards for selling products in India. Complete BISFM guide by Sun Certifications.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=4JDVsoWSY3I</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/4JDVsoWSY3I</video:player_loc>
+            <video:duration>630</video:duration>
+            <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
+            <video:tag>BISFM</video:tag>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Foreign Manufacturers</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:category>BIS Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/_LBccl6LiOM/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>ISI Mark Certification Process - Complete Step by Step Guide</video:title>
+            <video:description>Comprehensive guide to ISI Mark certification for Indian manufacturers. Learn about quality assurance, testing requirements, and compliance standards. Expert insights from Sun Certifications.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=_LBccl6LiOM</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/_LBccl6LiOM</video:player_loc>
+            <video:duration>525</video:duration>
+            <video:publication_date>2024-02-01T00:00:00+00:00</video:publication_date>
+            <video:tag>ISI Mark</video:tag>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Product Certification</video:tag>
+            <video:category>ISI Mark</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/JxYwTtj4wfQ/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Scheme X Registration - BIS Certification Under New Framework</video:title>
+            <video:description>Understanding Scheme X registration process under BIS certification framework. Learn about documentation, compliance requirements, and regulatory procedures for Indian manufacturers.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=JxYwTtj4wfQ</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/JxYwTtj4wfQ</video:player_loc>
+            <video:duration>735</video:duration>
+            <video:publication_date>2024-02-15T00:00:00+00:00</video:publication_date>
+            <video:tag>Scheme X</video:tag>
+            <video:tag>Registration</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Regulatory Framework</video:tag>
+            <video:category>Scheme X</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/zq1nIBTh27w/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>BIS Certification Complete Guide - Standards and Quality Requirements</video:title>
+            <video:description>Master the BIS certification process with our comprehensive guide covering quality standards, testing procedures, and compliance requirements for Indian market entry.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=zq1nIBTh27w</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/zq1nIBTh27w</video:player_loc>
+            <video:duration>560</video:duration>
+            <video:publication_date>2024-03-01T00:00:00+00:00</video:publication_date>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Quality Standards</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Product Certification</video:tag>
+            <video:category>BIS Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/5ppBDV76d6I/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Standards Compliance in India - Regulatory Framework and Requirements</video:title>
+            <video:description>Detailed overview of standards compliance requirements in India including regulatory framework, quality assurance processes, and certification procedures for businesses.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=5ppBDV76d6I</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/5ppBDV76d6I</video:player_loc>
+            <video:duration>670</video:duration>
+            <video:publication_date>2024-03-15T00:00:00+00:00</video:publication_date>
+            <video:tag>Standards Compliance</video:tag>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Regulatory Framework</video:tag>
+            <video:category>Standards Compliance</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/OCQZUvsxcHU/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Quality Management Systems - Best Practices for Manufacturing Excellence</video:title>
+            <video:description>Learn about implementing effective quality management systems for manufacturing excellence. Covers process optimization, quality control, and compliance with Indian standards.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=OCQZUvsxcHU</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/OCQZUvsxcHU</video:player_loc>
+            <video:duration>810</video:duration>
+            <video:publication_date>2024-04-01T00:00:00+00:00</video:publication_date>
+            <video:tag>Quality Management</video:tag>
+            <video:tag>Process Optimization</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Quality Control</video:tag>
+            <video:category>Quality Management</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+    </url>
+
+</urlset> 

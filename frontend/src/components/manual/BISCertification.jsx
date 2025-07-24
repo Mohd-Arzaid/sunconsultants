@@ -18,14 +18,22 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
-import { Check, Search } from "lucide-react";
+import { Check, Search, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import PropTypes from "prop-types";
 import Services from "./Services";
 import AboutAuthor from "../common/AboutAuthor";
-import SEOBreadcrumbs from "../common/SEOBreadcrumbs";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "../ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 export const BISCertification = () => {
   return (
@@ -71,7 +79,7 @@ export const BISCertification = () => {
         />
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
-        
+
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
@@ -133,7 +141,7 @@ export const BISCertification = () => {
           href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
           hrefLang="x-default"
         />
-        
+
         <meta name="robots" content="index, follow" />
         {/* Structured Data */}
         <script type="application/ld+json">
@@ -201,10 +209,55 @@ export const BISCertification = () => {
             ],
           })}
         </script>
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "BIS Certification India for Importers and Manufacturers",
+                item: "https://bis-certifications.com/what-is-bis-certificate-indian-bis",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
 
-      <main className="w-full">
-        <SEOBreadcrumbs customTitle="BIS Certification Services | ISI Mark | BIS License" />
+      <main className="relative w-full">
+        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+          <div className="max-w-[80rem] mx-auto px-4">
+            <div className="w-fit font-inter">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink asChild>
+                      <Link to="/">Home</Link>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator>
+                    <SlashIcon />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem>
+                    <BreadcrumbPage>
+                      BIS Certification India for Importers and Manufacturers
+                    </BreadcrumbPage>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+            </div>
+          </div>
+        </div>
+
         <BISCHero />
         <BISCIndex />
         <BISCContent />
@@ -850,7 +903,7 @@ const BISCHero = () => {
 
   return (
     <section
-      className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
+      className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
       aria-label="BIS Certification Hero"
     >
       {/* Background gradient */}

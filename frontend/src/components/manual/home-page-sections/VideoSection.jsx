@@ -70,6 +70,11 @@ const VideoSection = () => {
             >
               <YouTubeFacade
                 videoId={video.embedId}
+                title={video.title}
+                description={video.description}
+                category={video.category}
+                duration={video.duration}
+                uploadDate={video.uploadDate}
                 aspectRatio="aspect-video"
                 thumbnailQuality="hqdefault"
                 className="w-full"

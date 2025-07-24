@@ -68,61 +68,7 @@
 
 
 <!-- BISFM -->
-<url>
-  <loc>https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
+
 
 <!-- BIS Certification -->
 <url>
