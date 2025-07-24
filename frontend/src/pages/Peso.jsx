@@ -10,22 +10,80 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
-import { Check } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "../components/manual/Services";
 import AboutAuthor from "../components/common/AboutAuthor";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Peso = () => {
   return (
-    <>
+    <div className="relative">
+      <Helmet>
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "PESO Certification for Hazardous Goods",
+                item: "https://bis-certifications.com/information-about-peso-certification-peso-license-india",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>
+                    PESO Certification for Hazardous Goods
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
       <PESOHero />
       <PESOIndex />
       <PESOContent />
       <Footer />
       <ScrollToTopButton />
-    </>
+    </div>
   );
 };
 
@@ -33,7 +91,7 @@ export default Peso;
 
 const PESOHero = () => {
   return (
-    <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+    <main className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
       <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
 
@@ -116,7 +174,9 @@ const PESOIndex = () => {
   ];
 
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase().replace(/\s+/g, "-"));
+    const element = document.getElementById(
+      item.toLowerCase().replace(/\s+/g, "-")
+    );
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -158,12 +218,12 @@ const PESOIndex = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     // Initial check
     handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -187,7 +247,9 @@ const PESOIndex = () => {
     );
 
     SECTIONS.forEach((section) => {
-      const element = document.getElementById(section.toLowerCase().replace(/\s+/g, "-"));
+      const element = document.getElementById(
+        section.toLowerCase().replace(/\s+/g, "-")
+      );
       if (element) {
         sectionObserver.observe(element);
       }
@@ -199,10 +261,10 @@ const PESOIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
-
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
@@ -222,9 +284,19 @@ const PESOIndex = () => {
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             )}
           </svg>
         </button>
@@ -241,10 +313,11 @@ const PESOIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -264,18 +337,20 @@ const PESOIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -342,8 +417,9 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our certifications work to expedite these
-                timelines through proper documentation and regulatory strategy.
+                registrations 2-4 months. Our certifications work to expedite
+                these timelines through proper documentation and regulatory
+                strategy.
               </AccordionContent>
             </AccordionItem>
 
@@ -574,7 +650,12 @@ const OverviewSection = () => {
 
       {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Petroleum and Explosives Safety Organization, abbreviated as PESO, is a mid-level Nodal organization founded in September 1898. This organization is mainly responsible for managing and administering risky substances such as bio-chemicals, gas cylinders, petroleum, and explosives that possess their own significance and risk to several human lives.
+        The Petroleum and Explosives Safety Organization, abbreviated as PESO,
+        is a mid-level Nodal organization founded in September 1898. This
+        organization is mainly responsible for managing and administering risky
+        substances such as bio-chemicals, gas cylinders, petroleum, and
+        explosives that possess their own significance and risk to several human
+        lives.
       </div>
 
       <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
@@ -593,10 +674,18 @@ const OverviewSection = () => {
       </div>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        We are all aware of how dangerous petroleum and compressed gases are and how even a single ignite coming into contact with them can cause a catastrophe that puts human life in danger. Hazards associated with compressed gases are combustible, poisonous, oxidizing, and corrosive.
+        We are all aware of how dangerous petroleum and compressed gases are and
+        how even a single ignite coming into contact with them can cause a
+        catastrophe that puts human life in danger. Hazards associated with
+        compressed gases are combustible, poisonous, oxidizing, and corrosive.
         <br />
         <br />
-        For more than a century, the PESO has achieved a legendary grade as an organization of distinction in the regions connected to risky material safety in refining/ manufacturing, storage, handling, transportation, and usage. Today, the PESO organization works on various topics such as petroleum, compressed gases, explosives, gas cylinders, cross-country pipelines, Ammonium Nitrate, Flame Proof electric fittings, and others.
+        For more than a century, the PESO has achieved a legendary grade as an
+        organization of distinction in the regions connected to risky material
+        safety in refining/ manufacturing, storage, handling, transportation,
+        and usage. Today, the PESO organization works on various topics such as
+        petroleum, compressed gases, explosives, gas cylinders, cross-country
+        pipelines, Ammonium Nitrate, Flame Proof electric fittings, and others.
       </div>
     </section>
   );
@@ -625,10 +714,17 @@ const ProductsSection = () => {
 
       {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Here is a comprehensive list of the products that require certification. A PESO registration is necessary for electrical equipment that must endure extremely corrosive seawater or extremely hot situations in addition to the aforementioned products. Purely mechanical parts that are employed in hazardous regions in India must also get PESO certification.
+        Here is a comprehensive list of the products that require certification.
+        A PESO registration is necessary for electrical equipment that must
+        endure extremely corrosive seawater or extremely hot situations in
+        addition to the aforementioned products. Purely mechanical parts that
+        are employed in hazardous regions in India must also get PESO
+        certification.
         <br />
         <br />
-        For explosion-proof products, one may often adhere to a pretty straightforward rule: PESO is required for all items that require either IECEx or ATEX certification.
+        For explosion-proof products, one may often adhere to a pretty
+        straightforward rule: PESO is required for all items that require either
+        IECEx or ATEX certification.
       </div>
     </section>
   );
@@ -659,12 +755,19 @@ const LicenseesSection = () => {
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Documentation <br /> <br />
         </span>
-        Prepare the application with the necessary paperwork, including the test results and ATEX/IECEx certificates. Test results must be at least two years old. Equipment that has undergone thorough testing and been given the all-clear to operate safely in an explosive or hazardous environment is given an ATEX certificate. IECEx is a certification to Standards for equipment used in explosive or dangerous environments.
+        Prepare the application with the necessary paperwork, including the test
+        results and ATEX/IECEx certificates. Test results must be at least two
+        years old. Equipment that has undergone thorough testing and been given
+        the all-clear to operate safely in an explosive or hazardous environment
+        is given an ATEX certificate. IECEx is a certification to Standards for
+        equipment used in explosive or dangerous environments.
         <br /> <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Submission of Application <br /> <br />
         </span>
-        Submit your application to the PESO authorities together with the necessary business information, such as sales figures, client lists, and client testimonials.
+        Submit your application to the PESO authorities together with the
+        necessary business information, such as sales figures, client lists, and
+        client testimonials.
         <br /> <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Scrutiny <br /> <br />
@@ -675,13 +778,15 @@ const LicenseesSection = () => {
           Audit
           <br /> <br />
         </span>
-        Only specific products, such as pressure vessels, are subject to factory audits.
+        Only specific products, such as pressure vessels, are subject to factory
+        audits.
         <br /> <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           PESO Certification
           <br /> <br />
         </span>
-        he PESO Certificate will be issued if PESO personnel are satisfied with the supporting documentation and test results.
+        he PESO Certificate will be issued if PESO personnel are satisfied with
+        the supporting documentation and test results.
         <br /> <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Licence to Authorized Indian Representatives
@@ -693,7 +798,11 @@ const LicenseesSection = () => {
           Please Note
           <br /> <br />
         </span>
-        Once the PESO license has been approved, the product may be imported. The authorities typically accept test reports that have received international recognition, such as IECEx or ATEX. In any case, the products must be assessed in India if you don't have these test findings.
+        Once the PESO license has been approved, the product may be imported.
+        The authorities typically accept test reports that have received
+        international recognition, such as IECEx or ATEX. In any case, the
+        products must be assessed in India if you don't have these test
+        findings.
         <br /> <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           TAT
@@ -704,7 +813,9 @@ const LicenseesSection = () => {
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           License Validity <br /> <br />
         </span>
-        After three years have passed, the license must be renewed. Static pressure vessel PESO licenses are only good for three years before they need to be renewed.
+        After three years have passed, the license must be renewed. Static
+        pressure vessel PESO licenses are only good for three years before they
+        need to be renewed.
       </div>
     </section>
   );
@@ -728,7 +839,8 @@ const DocumentsSection = () => {
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Required: Application, licenses, certificates, test reports, and sales data.
+        Required: Application, licenses, certificates, test reports, and sales
+        data.
       </p>
 
       {/* Content */}
@@ -778,9 +890,20 @@ const ProcessSection = () => {
       </p>
 
       <div className="mt-[46px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Chief Controller of Explosives (CCOE) is another name for the Petroleum and Explosive Safety Organization (PESO). The safety requirements for the manufacture, importers, exporters, sellers, storage, transit, and handling of explosives, combustible materials, pressure vessels, petroleum, and compressed gases are managed, controlled, and looked after by this organization. Additionally, it controls and manages Indian petrol stations. The Department for Promotion of Industry and Internal Trade and the Ministry of Commerce and Industry is in charge of PESO, an independent regulatory authority.
+        The Chief Controller of Explosives (CCOE) is another name for the
+        Petroleum and Explosive Safety Organization (PESO). The safety
+        requirements for the manufacture, importers, exporters, sellers,
+        storage, transit, and handling of explosives, combustible materials,
+        pressure vessels, petroleum, and compressed gases are managed,
+        controlled, and looked after by this organization. Additionally, it
+        controls and manages Indian petrol stations. The Department for
+        Promotion of Industry and Internal Trade and the Ministry of Commerce
+        and Industry is in charge of PESO, an independent regulatory authority.
         <br /> <br />
-        The oil and gas industry's mandatory approval mechanism for products that deal with gases, are used in the oil industry, or must withstand severely corrosive environments is described in PESO Certification. Nagpur, Maharashtra, is home to PESO's headquarters.
+        The oil and gas industry's mandatory approval mechanism for products
+        that deal with gases, are used in the oil industry, or must withstand
+        severely corrosive environments is described in PESO Certification.
+        Nagpur, Maharashtra, is home to PESO's headquarters.
       </div>
 
       <div className="flex mt-[24px] gap-10">
@@ -865,17 +988,21 @@ const StakeholdersSection = () => {
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Timeline
         </span>
-        PESO registration process will take 1 day after the documents are submitted to us.
+        PESO registration process will take 1 day after the documents are
+        submitted to us.
         <br /> <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Validity
         </span>
-        Validity of PESO online registration is perpetual i.e. no end date and requires no renewal.
+        Validity of PESO online registration is perpetual i.e. no end date and
+        requires no renewal.
         <br /> <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Note
         </span>
-        After the registration is completed, a unique file number is generated, which has to be mentioned on the product / packaging, in case of registration there is no certificate
+        After the registration is completed, a unique file number is generated,
+        which has to be mentioned on the product / packaging, in case of
+        registration there is no certificate
       </div>
     </section>
   );
@@ -899,12 +1026,19 @@ const RulesSection = () => {
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        SMPV PESO Certification: High-pressure storage, 6-8 weeks, 5-year validity.
+        SMPV PESO Certification: High-pressure storage, 6-8 weeks, 5-year
+        validity.
       </p>
 
       {/* Content */}
       <div className="mt-[24px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Static and Mobile Pressure Vessels are referred to as SMPVs. Static pressure containers are made to store linear loads with mass and volume variations that significantly exceed the features of the material's ambient pressure. This type of fabrication is justified by safety considerations, with the prevention of contaminating pure contents coming in second. The purpose of pressure vessels is to store liquids, gases, or vapors under high pressure.
+        The Static and Mobile Pressure Vessels are referred to as SMPVs. Static
+        pressure containers are made to store linear loads with mass and volume
+        variations that significantly exceed the features of the material's
+        ambient pressure. This type of fabrication is justified by safety
+        considerations, with the prevention of contaminating pure contents
+        coming in second. The purpose of pressure vessels is to store liquids,
+        gases, or vapors under high pressure.
         <br />
         <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
@@ -915,7 +1049,8 @@ const RulesSection = () => {
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Validity
         </span>
-        It is granted for 5 years initially and has to be renewed after that by paying the government fees.
+        It is granted for 5 years initially and has to be renewed after that by
+        paying the government fees.
       </div>
 
       <div className="flex mt-[24px] gap-10">
@@ -955,10 +1090,17 @@ const ConsultancySection = () => {
       </p>
 
       <div className="mt-[30px] font-geist text-sm sm:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As PESO registration certifications, our job is to ensure that the tiring procedures that we have listed above become a cake-walk for you. Right from the beginning i.e. from the stage of collection of documents from the foreign manufacturers or preparation of documents for the Indian manufacturer and following up with the department for grant of license is under our scope.
+        As PESO registration certifications, our job is to ensure that the
+        tiring procedures that we have listed above become a cake-walk for you.
+        Right from the beginning i.e. from the stage of collection of documents
+        from the foreign manufacturers or preparation of documents for the
+        Indian manufacturer and following up with the department for grant of
+        license is under our scope.
         <br />
         <br />
-        We are one of the most experienced PESO certifications in the field of medical products,we provide apex quality of services possible to all our national and international clients.
+        We are one of the most experienced PESO certifications in the field of
+        medical products,we provide apex quality of services possible to all our
+        national and international clients.
       </div>
     </section>
   );
@@ -971,43 +1113,65 @@ const ReviewSection = () => {
         What did you think of this content?
       </span>
       <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
-
         <div className="flex gap-6">
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group">
-            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
-              <path fillOpacity="0.15" strokeWidth="0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+            >
+              <path
+                fillOpacity="0.15"
+                strokeWidth="0"
                 className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z" />
-              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z"
+              />
+              <path
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5" />
+                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5"
+              />
             </svg>
 
             <span>It was helpful</span>
           </button>
 
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
-            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
-              <path fillOpacity="0.15" strokeWidth="0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+            >
+              <path
+                fillOpacity="0.15"
+                strokeWidth="0"
                 className="group-hover:text-red-500 transition-colors duration-200"
-                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z" />
-              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z"
+              />
+              <path
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 className="group-hover:text-red-500 transition-colors duration-200"
-                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5" />
+                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5"
+              />
             </svg>
 
             <span>It was not helpful</span>
           </button>
-
         </div>
-
 
         <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
           Last updated on Mar 19, 2025
         </p>
-
       </div>
     </section>
   );

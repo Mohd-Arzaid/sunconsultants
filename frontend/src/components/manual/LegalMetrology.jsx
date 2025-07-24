@@ -11,18 +11,30 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
-import { Check } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
 import AboutAuthor from "../common/AboutAuthor";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "../ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 export const LegalMetrology = () => {
   return (
-    <>
+    <div className="relative">
       <Helmet>
-        <title>Legal Metrology Certification Services | Weights & Measures | Sun certifications</title>
+        <title>
+          Legal Metrology Certification Services | Weights & Measures | Sun
+          certifications
+        </title>
         <meta
           name="description"
           content="Expert Legal Metrology certification services for weights and measures. Get certification for weighing and measuring instruments. Trusted since 2013."
@@ -89,7 +101,8 @@ export const LegalMetrology = () => {
                   itemOffered: {
                     "@type": "Service",
                     name: "Weights and Measures Certification",
-                    description: "Certification for weighing and measuring instruments",
+                    description:
+                      "Certification for weighing and measuring instruments",
                   },
                 },
                 {
@@ -97,14 +110,60 @@ export const LegalMetrology = () => {
                   itemOffered: {
                     "@type": "Service",
                     name: "Legal Metrology Registration",
-                    description: "Registration for weights and measures manufacturers",
+                    description:
+                      "Registration for weights and measures manufacturers",
                   },
                 },
               ],
             },
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Legal Metrology Certification certifications",
+                item: "https://bis-certifications.com/what-is-legal-metrology-or-lmpc-certificate",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>
+                    Legal Metrology Certification certifications
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
 
       <article className="legal-metrology-page">
         <LMCHero />
@@ -113,15 +172,18 @@ export const LegalMetrology = () => {
         <Footer />
         <ScrollToTopButton />
       </article>
-    </>
+    </div>
   );
 };
 
 const LMCHero = () => {
   return (
-    <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+    <main className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
-      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco" aria-hidden="true"></div>
+      <div
+        className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"
+        aria-hidden="true"
+      ></div>
 
       {/* Decorative elements */}
       <div
@@ -245,12 +307,12 @@ const LMCIndex = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     // Initial check
     handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -286,8 +348,9 @@ const LMCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -308,9 +371,19 @@ const LMCIndex = () => {
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             )}
           </svg>
         </button>
@@ -327,10 +400,11 @@ const LMCIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -350,18 +424,20 @@ const LMCIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -428,8 +504,9 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our certifications work to expedite these
-                timelines through proper documentation and regulatory strategy.
+                registrations 2-4 months. Our certifications work to expedite
+                these timelines through proper documentation and regulatory
+                strategy.
               </AccordionContent>
             </AccordionItem>
 
@@ -547,7 +624,6 @@ const ServiceFaq = () => {
             </AccordionItem>
           </Accordion>
         </div>
-
       </div>
     </div>
   );
@@ -632,7 +708,11 @@ const LMCContentLeft = () => {
 
 const OverviewSection = () => {
   return (
-    <section id="overview" className="flex flex-col scroll-mt-20" aria-labelledby="overview-title">
+    <section
+      id="overview"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="overview-title"
+    >
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -642,7 +722,10 @@ const OverviewSection = () => {
       </div>
 
       {/* Title */}
-      <h2 id="overview-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="overview-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         Plastic Waste Management & Recycling
       </h2>
 
@@ -667,7 +750,11 @@ const OverviewSection = () => {
 
 const EligibilitySection = () => {
   return (
-    <section id="eligibility" className="flex flex-col scroll-mt-20" aria-labelledby="eligibility-title">
+    <section
+      id="eligibility"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="eligibility-title"
+    >
       {/* Eligibility */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -677,7 +764,10 @@ const EligibilitySection = () => {
       </div>
 
       {/* Title */}
-      <h2 id="eligibility-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="eligibility-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         Plastic License Eligibility
       </h2>
 
@@ -703,7 +793,11 @@ const EligibilitySection = () => {
 
 const ComplianceSection = () => {
   return (
-    <section id="compliance" className="flex flex-col scroll-mt-20" aria-labelledby="compliance-title">
+    <section
+      id="compliance"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="compliance-title"
+    >
       {/* Compliance*/}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -713,7 +807,10 @@ const ComplianceSection = () => {
       </div>
 
       {/* Title */}
-      <h2 id="compliance-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="compliance-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         Businesses That Need Plastic Waste Certification
       </h2>
 
@@ -738,7 +835,6 @@ const ComplianceSection = () => {
         <img
           src={PWMRimg}
           alt="Medical laboratory equipment"
-
           width="400"
           height="250"
           className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
@@ -753,7 +849,11 @@ const ComplianceSection = () => {
 
 const ProcessSection = () => {
   return (
-    <section id="process" className="flex flex-col scroll-mt-20" aria-labelledby="process-title">
+    <section
+      id="process"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="process-title"
+    >
       {/* Process */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -763,7 +863,10 @@ const ProcessSection = () => {
       </div>
 
       {/* Title */}
-      <h2 id="process-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="process-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         Plastic Waste Management Rules 2016
       </h2>
 
@@ -805,7 +908,11 @@ const ProcessSection = () => {
 
 const DocumentsSection = () => {
   return (
-    <section id="documents" className="flex flex-col scroll-mt-20" aria-labelledby="documents-title">
+    <section
+      id="documents"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="documents-title"
+    >
       {/* Documents*/}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -815,7 +922,10 @@ const DocumentsSection = () => {
       </div>
 
       {/* Title */}
-      <h2 id="documents-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="documents-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         Process for EPR license and post compliances
       </h2>
 
@@ -863,7 +973,11 @@ const DocumentsSection = () => {
 
 const ConsultingSection = () => {
   return (
-    <section id="consultancy" className="flex flex-col scroll-mt-20" aria-labelledby="consultancy-title">
+    <section
+      id="consultancy"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="consultancy-title"
+    >
       {/* Consultancy */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
@@ -873,7 +987,10 @@ const ConsultingSection = () => {
       </div>
 
       {/* Title */}
-      <h2 id="consultancy-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="consultancy-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         Sun certifications: Plastic Waste License Experts
       </h2>
 
@@ -900,34 +1017,63 @@ const ConsultingSection = () => {
 const ReviewSection = () => {
   return (
     <section aria-labelledby="review-title">
-      <h2 id="review-title" className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
+      <h2
+        id="review-title"
+        className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal"
+      >
         What did you think of this content?
       </h2>
       <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
         <div className="flex gap-6">
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group">
-            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
-              <path fillOpacity="0.15" strokeWidth="0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+            >
+              <path
+                fillOpacity="0.15"
+                strokeWidth="0"
                 className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z" />
-              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z"
+              />
+              <path
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5" />
+                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5"
+              />
             </svg>
 
             <span>It was helpful</span>
           </button>
 
           <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
-            <svg viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group">
-              <path fillOpacity="0.15" strokeWidth="0"
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+            >
+              <path
+                fillOpacity="0.15"
+                strokeWidth="0"
                 className="group-hover:text-red-500 transition-colors duration-200"
-                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z" />
-              <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"
+                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z"
+              />
+              <path
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 className="group-hover:text-red-500 transition-colors duration-200"
-                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5" />
+                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5"
+              />
             </svg>
 
             <span>It was not helpful</span>

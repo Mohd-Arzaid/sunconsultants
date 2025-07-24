@@ -13,18 +13,23 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
-import { Check } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
 import AboutAuthor from "../common/AboutAuthor";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "../ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 export const LMPC = () => {
   return (
-    <>
+    <div className="relative">
       <Helmet>
-        <title>LMPC Certificate Guide | Legal Metrology Packaged Commodities | Sun Certifications</title>
+        <title>
+          LMPC Certificate Guide | Legal Metrology Packaged Commodities | Sun
+          Certifications
+        </title>
         <meta
           name="description"
           content="Complete guide to LMPC certification for importers, manufacturers & packers. Get expert assistance with Legal Metrology Packaged Commodities registration in India."
@@ -91,7 +96,8 @@ export const LMPC = () => {
                   itemOffered: {
                     "@type": "Service",
                     name: "LMPC Registration for Importers",
-                    description: "Registration services for importers of packaged commodities",
+                    description:
+                      "Registration services for importers of packaged commodities",
                   },
                 },
                 {
@@ -99,7 +105,8 @@ export const LMPC = () => {
                   itemOffered: {
                     "@type": "Service",
                     name: "LMPC Registration for Manufacturers",
-                    description: "Registration services for manufacturers of packaged commodities",
+                    description:
+                      "Registration services for manufacturers of packaged commodities",
                   },
                 },
                 {
@@ -107,14 +114,61 @@ export const LMPC = () => {
                   itemOffered: {
                     "@type": "Service",
                     name: "LMPC Registration for Packers",
-                    description: "Registration services for packers of packaged commodities",
+                    description:
+                      "Registration services for packers of packaged commodities",
                   },
                 },
               ],
             },
           })}
         </script>
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "LMPC Certificate Guide for Importers and Manufacturers",
+                item: "https://bis-certifications.com/a-guide-on-how-to-obtain-lmpc-certificate",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>
+                    LMPC Certificate Guide for Importers and Manufacturers
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
 
       <article className="lmpc-page">
         <LMPCHero />
@@ -123,14 +177,14 @@ export const LMPC = () => {
         <Footer />
         <ScrollToTopButton />
       </article>
-    </>
+    </div>
   );
 };
 
 // LMPC Hero Section
 const LMPCHero = () => {
   return (
-    <header className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+    <header className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
       <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco" aria-hidden="true"></div>
 

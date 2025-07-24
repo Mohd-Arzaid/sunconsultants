@@ -1,7 +1,5 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -9,31 +7,86 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import ServiCBContentRight from "@/components/manual/CDSCOContentRight";
-import { Check } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "../components/manual/Services";
 import AboutAuthor from "../components/common/AboutAuthor";
+import { Helmet } from "react-helmet-async";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 const CBCertification = () => {
   return (
-    <>
+    <div className="relative">
+      <Helmet>
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "CB Mark Certification",
+                item: "https://bis-certifications.com/cb-certification",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>CB Mark Certification</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
       <CBHero />
       <CBIndex />
       <CBContent />
       <Footer />
       <ScrollToTopButton />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default CBCertification
-
+export default CBCertification;
 
 const CBHero = () => {
   return (
-    <main className="relative pt-[30px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
+    <main className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
       <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
 
@@ -62,7 +115,8 @@ const CBHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            CB Marking Certifies product safety, quality, and compliance for goods sold in the European Economic Area (EEA).
+            CB Marking Certifies product safety, quality, and compliance for
+            goods sold in the European Economic Area (EEA).
           </p>
 
           <div className="flex items-center -mt-2">
@@ -95,7 +149,6 @@ const CBHero = () => {
   );
 };
 
-
 const SECTIONS = [
   "Overview",
   "Services",
@@ -106,12 +159,12 @@ const SECTIONS = [
 ];
 
 const CBIndex = () => {
-  const [isSticky, setIsSticky] = useState(false)
-  const [activeSection, setActiveSection] = useState("Overview")
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const stickyRef = useRef(null)
-  const mobileMenuRef = useRef(null)
-  const toggleButtonRef = useRef(null)
+  const [isSticky, setIsSticky] = useState(false);
+  const [activeSection, setActiveSection] = useState("Overview");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const stickyRef = useRef(null);
+  const mobileMenuRef = useRef(null);
+  const toggleButtonRef = useRef(null);
 
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
@@ -123,7 +176,7 @@ const CBIndex = () => {
       setActiveSection(item);
       setIsMobileMenuOpen(false);
     }
-  }
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
@@ -156,12 +209,12 @@ const CBIndex = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     // Initial check
     handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -197,8 +250,9 @@ const CBIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -219,9 +273,19 @@ const CBIndex = () => {
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             )}
           </svg>
         </button>
@@ -238,10 +302,11 @@ const CBIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -258,16 +323,18 @@ const CBIndex = () => {
           <div
             key={item}
             onClick={() => handleItemClick(item)}
-            className={`relative cursor-pointer group ${item === activeSection
-              ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
-              : ""
-              }`}
+            className={`relative cursor-pointer group ${
+              item === activeSection
+                ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
+                : ""
+            }`}
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
@@ -339,8 +406,9 @@ const ServiCBFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical deviCB registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our certifications work to expedite these
-                timelines through proper documentation and regulatory strategy.
+                registrations 2-4 months. Our certifications work to expedite
+                these timelines through proper documentation and regulatory
+                strategy.
               </AccordionContent>
             </AccordionItem>
 
@@ -725,7 +793,12 @@ const ServicesSection = () => {
 
       {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Logo has a substantial value of a standard on which people trusts and to make that trust more strong the CB technical experts is matching step by step with the changing trends of different products and making it more competitive to pass the level. They also act as an advisory to the manufacturers. CB is a standard of the international standard because many products are sold outside the EEA.
+        The Logo has a substantial value of a standard on which people trusts
+        and to make that trust more strong the CB technical experts is matching
+        step by step with the changing trends of different products and making
+        it more competitive to pass the level. They also act as an advisory to
+        the manufacturers. CB is a standard of the international standard
+        because many products are sold outside the EEA.
       </div>
     </section>
   );
@@ -753,7 +826,16 @@ const ClassificationSection = () => {
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The CB Marking is one of the finest and most acknowledged standards that is brought forth by EEA and permits the manufacturer to use the mark to lighten the standard. Now, ISO CBrtification is an International non- government organization that independently controls or manages the quality management system with some standard. The ISO mark silently changes the mind of the customer from not trusting a product to trust the product after the ISO mark. It also increases the value and trust in the product. There is no mandatory or neCBssary rope attached to the product to get this CBrtification but it just makes a product of minimum standard to a high standard after theISO mark
+        The CB Marking is one of the finest and most acknowledged standards that
+        is brought forth by EEA and permits the manufacturer to use the mark to
+        lighten the standard. Now, ISO CBrtification is an International non-
+        government organization that independently controls or manages the
+        quality management system with some standard. The ISO mark silently
+        changes the mind of the customer from not trusting a product to trust
+        the product after the ISO mark. It also increases the value and trust in
+        the product. There is no mandatory or neCBssary rope attached to the
+        product to get this CBrtification but it just makes a product of minimum
+        standard to a high standard after theISO mark
       </div>
     </section>
   );
@@ -777,7 +859,16 @@ const RegistrationSection = () => {
 
       {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The CB Marking is one of the finest and most acknowledged standards that is brought forth by EEA and permits the manufacturer to use the mark to lighten the standard. Now, ISO CBrtification is an International non- government organization that independently controls or manages the quality management system with some standard. The ISO mark silently changes the mind of the customer from not trusting a product to trust the product after the ISO mark. It also increases the value and trust in the product. There is no mandatory or neCBssary rope attached to the product to get this CBrtification but it just makes a product of minimum standard to a high standard after theISO mark
+        The CB Marking is one of the finest and most acknowledged standards that
+        is brought forth by EEA and permits the manufacturer to use the mark to
+        lighten the standard. Now, ISO CBrtification is an International non-
+        government organization that independently controls or manages the
+        quality management system with some standard. The ISO mark silently
+        changes the mind of the customer from not trusting a product to trust
+        the product after the ISO mark. It also increases the value and trust in
+        the product. There is no mandatory or neCBssary rope attached to the
+        product to get this CBrtification but it just makes a product of minimum
+        standard to a high standard after theISO mark
       </div>
     </section>
   );
@@ -805,7 +896,13 @@ const NecessitySection = () => {
       </p>
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The European Commission lifts the curtain from the harmonized conformity with the EU EMC that puts all their attention in checking the quality, safety and non- health hazardous substanCB in the products. The EC made CB marking mandatory stamp for the production of electronic and electrical equipment that is sold in EEA. This made a particular standard of the above equipment safe and ready to use and make the product less harmful to the mankind of the users.
+        The European Commission lifts the curtain from the harmonized conformity
+        with the EU EMC that puts all their attention in checking the quality,
+        safety and non- health hazardous substanCB in the products. The EC made
+        CB marking mandatory stamp for the production of electronic and
+        electrical equipment that is sold in EEA. This made a particular
+        standard of the above equipment safe and ready to use and make the
+        product less harmful to the mankind of the users.
       </div>
     </section>
   );
@@ -845,7 +942,7 @@ const ComplianceSection = () => {
             "PerformanCB Rating",
             "Sustainability Mark",
             "Green CBrtification",
-            "Energy Validation"
+            "Energy Validation",
           ]}
           heading="Mandatory CB-Labeled Products"
         />
@@ -855,11 +952,14 @@ const ComplianceSection = () => {
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Validity
         </span>
-        Validity of CDSCO online registration is perpetual i.e. no end date and requires no renewal. <br /> <br />
+        Validity of CDSCO online registration is perpetual i.e. no end date and
+        requires no renewal. <br /> <br />
         <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
           Note
         </span>
-        After the registration is completed, a unique file number is generated, which has to be mentioned on the product / packaging, in case of registration there is no CBrtificate
+        After the registration is completed, a unique file number is generated,
+        which has to be mentioned on the product / packaging, in case of
+        registration there is no CBrtificate
       </div>
     </section>
   );

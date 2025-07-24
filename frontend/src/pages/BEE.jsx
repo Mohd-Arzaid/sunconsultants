@@ -7,22 +7,80 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Check } from "lucide-react";
+import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "../components/manual/Services";
 import AboutAuthor from "../components/common/AboutAuthor";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const BEE = () => {
   return (
-    <>
+    <div className="relative">
+      <Helmet>
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "BEE Registration Certification",
+                item: "https://bis-certifications.com/bee-certification",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>
+                    BEE Registration Certification
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
       <BEEHero />
       <BEEIndex />
       <BEEContent />
       <Footer />
       <ScrollToTopButton />
-    </>
+    </div>
   );
 };
 
@@ -101,12 +159,12 @@ const SECTIONS = [
 ];
 
 const BEEIndex = () => {
-  const [isSticky, setIsSticky] = useState(false)
-  const [activeSection, setActiveSection] = useState("Overview")
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const stickyRef = useRef(null)
-  const mobileMenuRef = useRef(null)
-  const toggleButtonRef = useRef(null)
+  const [isSticky, setIsSticky] = useState(false);
+  const [activeSection, setActiveSection] = useState("Overview");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const stickyRef = useRef(null);
+  const mobileMenuRef = useRef(null);
+  const toggleButtonRef = useRef(null);
 
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
@@ -118,7 +176,7 @@ const BEEIndex = () => {
       setActiveSection(item);
       setIsMobileMenuOpen(false);
     }
-  }
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
@@ -151,12 +209,12 @@ const BEEIndex = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     // Initial check
     handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -192,8 +250,9 @@ const BEEIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -214,9 +273,19 @@ const BEEIndex = () => {
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             )}
           </svg>
         </button>
@@ -233,10 +302,11 @@ const BEEIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -256,18 +326,20 @@ const BEEIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -334,8 +406,9 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our certifications work to expedite these
-                timelines through proper documentation and regulatory strategy.
+                registrations 2-4 months. Our certifications work to expedite
+                these timelines through proper documentation and regulatory
+                strategy.
               </AccordionContent>
             </AccordionItem>
 
@@ -615,7 +688,8 @@ const OverviewSection = () => {
 
       {/* Description */}
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        BEE Registration ensures energy efficiency and quality standards for appliances
+        BEE Registration ensures energy efficiency and quality standards for
+        appliances
       </p>
 
       {/* Overview Content */}
@@ -624,7 +698,9 @@ const OverviewSection = () => {
         <span className="font-medium text-gray-950 underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950">
           Bureau of Energy Efficiency
         </span>{" "}
-        (which comes under the Ministry of Power), headquartered in Delhi. It is the national regulatory body for energy efficiency standards and labeling of appliances and equipment in India.
+        (which comes under the Ministry of Power), headquartered in Delhi. It is
+        the national regulatory body for energy efficiency standards and
+        labeling of appliances and equipment in India.
       </div>
 
       {/* Important Points */}
@@ -638,7 +714,7 @@ const OverviewSection = () => {
               "Energy Conservation Building Code",
               "Energy Audits",
               "Energy Manager Certification",
-              "Energy Conservation Awareness"
+              "Energy Conservation Awareness",
             ]}
             heading="Key functions of BEE include"
           />
@@ -675,7 +751,8 @@ const EligibilitySection = () => {
         <span className="font-medium text-gray-950 underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950">
           notified appliances and equipment
         </span>{" "}
-        are eligible to apply for BEE registration. This includes both domestic and foreign manufacturers who wish to sell their products in India.
+        are eligible to apply for BEE registration. This includes both domestic
+        and foreign manufacturers who wish to sell their products in India.
       </div>
 
       {/* Important Points */}
@@ -688,7 +765,7 @@ const EligibilitySection = () => {
               "Importers of notified appliances",
               "Authorized representatives of foreign manufacturers",
               "Companies with valid GST registration",
-              "Manufacturers with testing facilities or tie-ups with accredited labs"
+              "Manufacturers with testing facilities or tie-ups with accredited labs",
             ]}
             heading="Who can apply for BEE registration?"
           />
@@ -725,7 +802,8 @@ const ClassificationSection = () => {
         <span className="font-medium text-gray-950 underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-gray-950">
           star rating system
         </span>{" "}
-        to classify appliances based on their energy efficiency, ranging from 1 to 5 stars, with 5 stars being the most energy-efficient.
+        to classify appliances based on their energy efficiency, ranging from 1
+        to 5 stars, with 5 stars being the most energy-efficient.
       </div>
 
       {/* Important Points */}
@@ -738,7 +816,7 @@ const ClassificationSection = () => {
               "2 Stars: Moderate energy efficiency",
               "3 Stars: Good energy efficiency",
               "4 Stars: Very good energy efficiency",
-              "5 Stars: Excellent energy efficiency"
+              "5 Stars: Excellent energy efficiency",
             ]}
             heading="Star Rating Classification"
           />
@@ -752,7 +830,7 @@ const ClassificationSection = () => {
             "Mandatory for certain appliances",
             "Voluntary for others",
             "Updated periodically based on market average",
-            "Different criteria for different product categories"
+            "Different criteria for different product categories",
           ]}
           heading="Key aspects of BEE star rating"
         />
@@ -784,7 +862,8 @@ const RegistrationSection = () => {
 
       {/* Registration Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The process of obtaining BEE registration involves several steps, including:
+        The process of obtaining BEE registration involves several steps,
+        including:
       </div>
 
       {/* Important Points */}
@@ -797,7 +876,7 @@ const RegistrationSection = () => {
               "Submit application to BEE",
               "Receive initial assessment",
               "Conduct necessary tests",
-              "Receive final approval"
+              "Receive final approval",
             ]}
             heading="Key steps in the registration process"
           />
@@ -830,7 +909,8 @@ const NecessitySection = () => {
 
       {/* Necessity Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        BEE registration is important because it ensures that products meet energy efficiency standards, which can lead to:
+        BEE registration is important because it ensures that products meet
+        energy efficiency standards, which can lead to:
       </div>
 
       {/* Important Points */}
@@ -843,7 +923,7 @@ const NecessitySection = () => {
               "Lower operating costs",
               "Improved product performance",
               "Enhanced market competitiveness",
-              "Compliance with regulatory requirements"
+              "Compliance with regulatory requirements",
             ]}
             heading="Benefits of BEE registration"
           />
@@ -876,7 +956,8 @@ const ComplianceSection = () => {
 
       {/* Compliance Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Manufacturers must comply with BEE's energy efficiency standards and labeling requirements. This includes:
+        Manufacturers must comply with BEE's energy efficiency standards and
+        labeling requirements. This includes:
       </div>
 
       {/* Important Points */}
@@ -888,7 +969,7 @@ const ComplianceSection = () => {
               "Testing and certification",
               "Labeling compliance",
               "Energy performance audits",
-              "Post-approval compliance monitoring"
+              "Post-approval compliance monitoring",
             ]}
             heading="Key compliance requirements"
           />
