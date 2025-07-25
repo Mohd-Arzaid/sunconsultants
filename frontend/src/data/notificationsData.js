@@ -2366,7 +2366,7 @@ export const notifications = [
     tagType: "Safety",
     date: "October 23, 2023",
     title:
-      "BIS Notification Helmet for Police Force, Civil Defence and Personal Protection",
+      "BIS Notification Helmets for Police Force, Civil Defence and Personal Protection",
     description:
       "Important update on mandatory BIS Certification for Indian manufacturers and importers of Helmets for Police Force, Civil Defence, and Personal Protection.",
     pdfUrl:

@@ -298,7 +298,9 @@ const NotificationCardItem = ({
   const getUrlSlug = (title) => {
     // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
     let cleanTitle = title
+      .replace(/^BIS\s+Legal\s+Metrology\s*[–-]\s*/i, "Legal Metrology ") // Handle "BIS Legal Metrology –"
       .replace(/^BIS\s+(certification|notification)\s+for\s+/i, "") // Remove "BIS certification for" or "BIS Notification for"
+      .replace(/^BIS\s+Notification\s+/i, "") // Remove "BIS Notification " (without "for")
       .replace(/^QCO\s+notification\s+for\s+/i, "") // Remove "QCO notification for"
       .trim();
 
