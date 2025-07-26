@@ -1,7 +1,8 @@
-import { Calendar, ChevronRight, Clock, Users } from "lucide-react";
+import { Calendar, ChevronRight, Clock, SlashIcon, Users } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Footer from "@/common/Footer";
-import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
 
 const Webinar = () => {
   // SEO data
@@ -112,9 +113,7 @@ const Webinar = () => {
   };
 
   return (
-    <div className="overflow-hidden bg-[#F9F7F2]">
-      <SEOBreadcrumbs customTitle="Certification Webinars | Expert-Led BIS Training" />
-
+    <div className="overflow-hidden relative bg-[#F9F7F2]">
       <Helmet>
         <title>{seoData.title}</title>
         <meta name="description" content={seoData.description} />
@@ -181,7 +180,56 @@ const Webinar = () => {
             },
           })}
         </script>
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Expert Certification Webinars",
+                item: "https://bis-certifications.com/webinar",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
+
+
+ <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>
+                    Expert Certification Webinars
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
+      
 
       <WebinarHero />
       <PastWebinars />
@@ -195,7 +243,7 @@ export default Webinar;
 
 const WebinarHero = () => {
   return (
-    <div className=" max-w-[84rem] mx-auto px-4 md:px-12 pt-8 md:pt-12 pb-10 md:pb-20">
+    <div className=" max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-14 pb-10 md:pb-20">
       {/* Heading */}
       <div className="text-center mb-8 md:mb-9">
         <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">

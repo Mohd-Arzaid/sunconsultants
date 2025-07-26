@@ -402,7 +402,7 @@ const ServiceFaq = () => {
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Can't find the answer you are looking for?{" "}
+           Can&apos;t find the answer you are looking for?{" "}
           <a
             href="#contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4"
