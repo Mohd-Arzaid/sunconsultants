@@ -32,7 +32,6 @@ import BatteryWaste from "@/pages/BatteryWaste";
 import LHSCable from "@/pages/LHSCable";
 
 // Manual components
-import AllClients from "@/components/manual/AllClients";
 import { BISFM } from "@/components/manual/BISFM";
 import { EPRService } from "@/components/manual/EPRService";
 import { BISCertification } from "@/components/manual/BISCertification";
@@ -46,7 +45,6 @@ const ROUTE_COMPONENTS = {
   "": Home,
   about: About,
   contact: ContactUs,
-  clients: AllClients,
   sitemap: Sitemap,
   "privacy-policy": PrivacyPolicy,
   "terms-and-conditions": TermsAndConditions,

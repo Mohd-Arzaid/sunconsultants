@@ -59,7 +59,7 @@ const NotificationDetail = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "BIS Notifications",
+                name: "BIS QCO Updates",
                 item: "https://bis-certifications.com/bis-qco-updates",
               },
               {
@@ -103,7 +103,7 @@ const NotificationDetail = () => {
         </div>
       </div>
 
-      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[104px]">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side - Content and PDF */}
           <NotificationDetailLeft notification={notification} />

@@ -10,7 +10,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "about",
     contact: "contact",
-    clients: "clients",
     sitemap: "sitemap",
     "privacy-policy": "privacy-policy",
     "terms-and-conditions": "terms-and-conditions",
@@ -55,7 +54,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "chi-siamo",
     contact: "contatto",
-    clients: "clienti",
     sitemap: "mappa-del-sito",
     "privacy-policy": "politica-sulla-privacy",
     "terms-and-conditions": "termini-e-condizioni",
@@ -101,7 +99,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "a-propos",
     contact: "contact",
-    clients: "clients",
     sitemap: "plan-du-site",
     "privacy-policy": "politique-de-confidentialite",
     "terms-and-conditions": "termes-et-conditions",
@@ -147,7 +144,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "uber-uns",
     contact: "kontakt",
-    clients: "kunden",
     sitemap: "sitemap",
     "privacy-policy": "datenschutzrichtlinie",
     "terms-and-conditions": "nutzungsbedingungen",
@@ -194,7 +190,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "watashitachi-ni-tsuite",
     contact: "otoiawase",
-    clients: "kuraiento",
     sitemap: "saitomappu",
     "privacy-policy": "puraibashii-porishii",
     "terms-and-conditions": "riyou-kiyaku",
@@ -237,7 +232,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "hoesa-sogae",
     contact: "yeonrak",
-    clients: "gokaek",
     sitemap: "saiteu-maep",
     "privacy-policy": "gaein-jeongbo-cheolibanghim",
     "terms-and-conditions": "iyong-yakgwan",
@@ -282,7 +276,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "tentang-kami",
     contact: "hubungi-kami",
-    clients: "klien",
     sitemap: "peta-situs",
     "privacy-policy": "kebijakan-privasi",
     "terms-and-conditions": "syarat-dan-ketentuan",
@@ -328,7 +321,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "kieokap-rao",
     contact: "tidtor-rao",
-    clients: "lukka",
     sitemap: "phaen-phang-websai",
     "privacy-policy": "nayobai-khwam-pen-suan-tua",
     "terms-and-conditions": "kho-kamhad-kan-chai-borikan",
@@ -375,7 +367,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "ve-chung-toi",
     contact: "lien-he",
-    clients: "khach-hang",
     sitemap: "so-do-trang-web",
     "privacy-policy": "chinh-sach-bao-mat",
     "terms-and-conditions": "dieu-khoan-va-dieu-kien",
@@ -428,7 +419,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "acerca-de-nosotros",
     contact: "contacto",
-    clients: "clientes",
     sitemap: "mapa-del-sitio",
     "privacy-policy": "politica-de-privacidad",
     "terms-and-conditions": "terminos-y-condiciones",
@@ -473,7 +463,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "over-ons",
     contact: "contact",
-    clients: "klanten",
     sitemap: "sitemap",
     "privacy-policy": "privacybeleid",
     "terms-and-conditions": "algemene-voorwaarden",
@@ -519,7 +508,6 @@ export const URL_MAPPINGS = {
     // Main pages
     about: "hawlana",
     contact: "aitasal",
-    clients: "al-zubaa",
     sitemap: "kharitat-almawqae",
     "privacy-policy": "siyasat-alkhasusiat",
     "terms-and-conditions": "al-shurut-wal-ahkam",

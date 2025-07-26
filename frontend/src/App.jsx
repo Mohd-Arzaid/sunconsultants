@@ -44,7 +44,6 @@ import ISIMark from "./pages/ISIMark";
 import BatteryWaste from "./pages/BatteryWaste";
 
 // Manual components - direct imports with named exports
-import AllClients from "./components/manual/AllClients";
 import { BISFM } from "./components/manual/BISFM";
 import { EPRService } from "./components/manual/EPRService";
 import { BISCertification } from "./components/manual/BISCertification";
@@ -81,7 +80,7 @@ function App() {
             element={<InternationalAudits />}
           />
           <Route path="seminars-and-exhibitions" element={<Exhibition />} />
-          <Route path="clients" element={<AllClients />} />
+
           <Route path="sitemap" element={<Sitemap />} />
 
           {/* Services Pages */}

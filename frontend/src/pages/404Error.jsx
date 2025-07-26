@@ -116,14 +116,14 @@ const Error404 = () => {
               </Link>
 
               <Link
-                to="/clients"
+                to="/cdsco-registration-certification"
                 className="group p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 hover:bg-neutral-100 transition-all duration-200"
               >
                 <h4 className="text-lg font-geist font-semibold text-neutral-800 group-hover:text-neutral-900 mb-2">
-                  Our Clients
+                  CDSCO Registration
                 </h4>
                 <p className="text-neutral-600 font-geist text-sm">
-                  See who we've helped with certifications
+                  Medical device certification guide
                 </p>
               </Link>
             </div>
@@ -376,9 +376,7 @@ const Footer = () => {
                   >
                     Contact Us
                   </Link>
-                  <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    Clients
-                  </span>
+
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
                     FAQ&apos;s
                   </span>

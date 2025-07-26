@@ -22,12 +22,7 @@ const SITE_STRUCTURE = {
     position: 2,
     parents: ["/"],
   },
-  "/clients": {
-    name: "Our Clients",
-    url: "/clients",
-    position: 2,
-    parents: ["/"],
-  },
+
   "/sitemap": {
     name: "Sitemap",
     url: "/sitemap",

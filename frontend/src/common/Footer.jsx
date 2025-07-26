@@ -179,38 +179,38 @@ const Footer = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/services/tec"
+                    to="/information-about-tec-certificate-mtcte"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     {t("sections.services.links.tec")}
                   </Link>
                   <Link
-                    to="/services/isi-mark-indian"
+                    to="/a-guide-to-bis-certification-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     {t("sections.services.links.isiMark")}
                   </Link>
                   <Link
-                    to="/services/ce-certification"
+                    to="/ce-certification"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     {t("sections.services.links.ceCertification")}
                   </Link>
                   <Link
-                    to="/services/epr-registration"
+                    to="/a-guide-on-how-to-obtain-epr-certificate"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     {t("sections.services.links.epr")}
                   </Link>
                   <Link
-                    to="/services/rohs"
+                    to="/restriction-of-hazardous-substance-rohs-certificate"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     {t("sections.services.links.rohs")}
                   </Link>
 
                   <Link
-                    to="/services/wpc"
+                    to="/information-about-wpc-certificate-eta-approval"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     {t("sections.services.links.wpc")}
@@ -235,9 +235,7 @@ const Footer = () => {
                   >
                     {t("sections.company.links.contact")}
                   </Link>
-                  <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    {t("sections.company.links.clients")}
-                  </span>
+
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
                     {t("sections.company.links.faqs")}
                   </span>
@@ -262,13 +260,13 @@ const Footer = () => {
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
-                    to="/latest-notifications"
+                    to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     {t("sections.news.links.blogs")}
                   </Link>
                   <Link
-                    to="/latest-notifications"
+                    to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     {t("sections.news.links.latestUpdates")}
