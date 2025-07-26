@@ -1,13 +1,60 @@
 import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
- import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
-
-
+import { Helmet } from "react-helmet-async";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
+import { SlashIcon } from "lucide-react";
 
 const InternationalAudits = () => {
   return (
-    <div className="bg-[#F9F7F2]">
-      <SEOBreadcrumbs customTitle="International Audits | Global BIS Certification Services" />
+    <div className="bg-[#F9F7F2] relative">
+      <Helmet>
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "International Audit Excellence",
+                item: "https://bis-certifications.com/international-audits",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>
+                    International Audit Excellence
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
 
       {/* Audit Hero */}
       <AuditHero />
@@ -29,7 +76,7 @@ const AuditHero = () => {
   };
 
   return (
-    <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+    <div className="max-w-[88rem] mx-auto px-4 pt-10 pb-8 md:px-12 md:pt-16 md:pb-12">
       {/* Heading */}
       <div className="text-center mb-6 md:mb-8">
         <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
