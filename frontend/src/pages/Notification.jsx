@@ -1,21 +1,35 @@
 import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import Footer from "@/common/Footer";
-import { ChevronLeft, ChevronRight, FileText, Phone, Send } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  FileText,
+  Phone,
+  Send,
+  SlashIcon,
+} from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { notifications } from "../data/notificationsData.js";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { getNotificationDetailUrl } from "@/utils/urlUtils";
-import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb.jsx";
 
 const Notification = () => {
   const baseUrl = "https://bis-certifications.com";
   const currentUrl = `${baseUrl}/bis-qco-updates`;
 
   return (
-    <>
+    <div className="relative">
       <Helmet>
         <title>
           Latest BIS Notifications & QCO Updates - Sun Certifications
@@ -85,10 +99,55 @@ const Notification = () => {
             }
           `}
         </script>
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "DRAFT QCO Notifications",
+                item: "https://bis-certifications.com/bis-qco-updates",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>DRAFT QCO Notifications</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
       <NotificationMainContent />
       <Footer />
-    </>
+    </div>
   );
 };
 
@@ -106,12 +165,10 @@ const NotificationMainContent = () => {
 
   return (
     <div className=" bg-[#f9f7f2]">
-      <SEOBreadcrumbs customTitle="BIS QCO Updates | Latest Quality Control Orders" />
-
-      <div className=" max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+      <div className=" max-w-[88rem] mx-auto px-4 py-12 md:px-12 md:py-12">
         {/* Heading */}
         <div className="text-center mb-6 md:mb-10">
-          <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
+          <h1 className="font-playfair text-2xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
             DRAFT QCO Notifications
           </h1>
           <p className="text-base md:text-lg font-geist text-gray-600 max-w-2xl mx-auto">
@@ -183,7 +240,7 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       }
 
       return date;
-    } catch (error) {
+    } catch {
       console.warn("Failed to parse date:", dateString);
       return new Date(0); // Return epoch date as fallback
     }
@@ -411,7 +468,7 @@ const Pagination = ({
       }
 
       return date;
-    } catch (error) {
+    } catch {
       console.warn("Failed to parse date:", dateString);
       return new Date(0);
     }
