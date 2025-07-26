@@ -1,11 +1,11 @@
-import { Search } from "lucide-react";
+import { Search, SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useMemo } from "react";
 import YouTubeFacade from "@/components/ui/youtube-facade";
 import { videosData } from "../data/videosData.js";
 import Footer from "@/common/Footer";
-import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 import { Helmet } from "react-helmet-async";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb.jsx";
 
 const Videos = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -34,8 +34,7 @@ const Videos = () => {
   }, [searchTerm, selectedCategory]);
 
   return (
-    <div className="bg-white">
-      <SEOBreadcrumbs customTitle="BIS Certification Videos | Expert Insights & Guides" />
+    <div className="bg-white relative">
       <Helmet>
         <title>BIS Certification Videos - Expert Insights</title>
         <meta
@@ -46,9 +45,56 @@ const Videos = () => {
           name="keywords"
           content="BIS certification, CDSCO registration, EPR compliance, regulatory compliance, India, certification experts"
         />
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Videos About BIS Certification",
+                item: "https://bis-certifications.com/videos-about-bis-certification",
+              },
+            ],
+          })}
+        </script>
       </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>
+                    Videos About BIS Certification
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <div className="bg-white pt-10">
+      <div className="bg-white pt-10 md:pt-16">
         <div className="max-w-[88rem] mx-auto px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-geist font-semibold text-neutral-800 text-center tracking-tight">
             Videos About BIS Certification
