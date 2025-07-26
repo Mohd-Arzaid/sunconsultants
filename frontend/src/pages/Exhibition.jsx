@@ -2,7 +2,14 @@ import { Calendar, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
 import { Helmet } from "react-helmet-async";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
 const Exhibition = () => {
@@ -32,8 +39,6 @@ const Exhibition = () => {
         </script>
       </Helmet>
 
-
-      
       <div className="absolute md:top-5 top-3 left-0 w-full z-30">
         <div className="max-w-[80rem] mx-auto px-4">
           <div className="w-fit font-inter">
@@ -48,17 +53,13 @@ const Exhibition = () => {
                   <SlashIcon />
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
-                  <BreadcrumbPage>
-                    Seminars and Exhibitions
-                  </BreadcrumbPage>
+                  <BreadcrumbPage>Seminars and Exhibitions</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
           </div>
         </div>
       </div>
-
-
 
       <ExhibitionHero />
       <ExhibitionGallery />
