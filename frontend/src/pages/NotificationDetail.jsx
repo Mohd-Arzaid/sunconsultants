@@ -5,7 +5,6 @@ import {
   Phone,
   PhoneCall,
   SendHorizontal,
-  SlashIcon,
   User,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,16 +15,9 @@ import { notifications } from "../data/notificationsData.js";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { Services } from "@/components/manual/Services";
+import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 import { getUrlSlug, getNotificationCanonicalUrl } from "@/utils/urlUtils";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const NotificationDetail = () => {
   const { notificationName } = useParams();
@@ -42,68 +34,8 @@ const NotificationDetail = () => {
   }
 
   return (
-    <div className="bg-white relative">
-      <Helmet>
-        {/* JSON-LD Breadcrumb structured data for SEO */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "BIS QCO Updates",
-                item: "https://bis-certifications.com/bis-qco-updates",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: notification.title,
-                item: getNotificationCanonicalUrl(notification.title),
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
-
-      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
-        <div className="max-w-[80rem] mx-auto px-4">
-          <div className="w-fit font-inter">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator>
-                  <SlashIcon />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/bis-qco-updates">BIS QCO Updates</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator>
-                  <SlashIcon />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem>
-                  <BreadcrumbPage>{notification.subHeading}</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-          </div>
-        </div>
-      </div>
-
-      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
+    <div className="bg-white">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side - Content and PDF */}
           <NotificationDetailLeft notification={notification} />
@@ -146,6 +78,9 @@ const NotificationDetailLeft = ({ notification }) => {
 
   return (
     <>
+      {/* SEO Breadcrumbs - Structured Data Only */}
+      <SEOBreadcrumbs customTitle={seoData.title} />
+
       {/* SEO Meta Tags */}
       <Helmet>
         <title>{seoData.title}</title>
@@ -195,7 +130,7 @@ const NotificationDetailLeft = ({ notification }) => {
               "publisher": {
                 "@type": "Organization",
                 "name": "Sun Certifications India",
-                "logo": {
+                "logo": {  
                   "@type": "ImageObject",
                   "url": "${baseUrl}/images/logo.png"
                 }
@@ -338,6 +273,76 @@ NotificationDetailLeft.propTypes = {
 };
 
 const NotificationDetailRight = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phoneNumber: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  // Get current page URL and name for form submission
+  const currentUrl = window.location.href;
+  const currentPageName = "BIS Notification Detail";
+
+  // Add BASE_URL like other forms
+  const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // Use BASE_URL like other forms
+      const response = await fetch(`${BASE_URL}/contact/submit-contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          pageUrl: currentUrl,
+          pageName: currentPageName,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus({ type: "success", message: result.message });
+        setFormData({
+          fullName: "",
+          phoneNumber: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus({ type: "error", message: result.message });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitStatus({
+        type: "error",
+        message: "Something went wrong. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
       <LatestBlog />
@@ -357,8 +362,21 @@ const NotificationDetailRight = () => {
           hours to discuss your regulatory compliance needs.
         </p>
 
+        {/* Status Message */}
+        {submitStatus && (
+          <div
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
+              submitStatus.type === "success"
+                ? "bg-green-50 text-green-700 border border-green-200"
+                : "bg-red-50 text-red-700 border border-red-200"
+            }`}
+          >
+            {submitStatus.message}
+          </div>
+        )}
+
         {/* Form */}
-        <form className="mt-5 space-y-4">
+        <form onSubmit={handleFormSubmit} className="mt-5 space-y-4">
           {/* Name Field */}
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -367,6 +385,8 @@ const NotificationDetailRight = () => {
             <input
               type="text"
               name="fullName"
+              value={formData.fullName}
+              onChange={handleInputChange}
               required
               placeholder="Your Name*"
               className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
@@ -381,6 +401,8 @@ const NotificationDetailRight = () => {
             <input
               type="tel"
               name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handleInputChange}
               required
               placeholder="Phone Number*"
               className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
@@ -395,6 +417,8 @@ const NotificationDetailRight = () => {
             <input
               type="email"
               name="email"
+              value={formData.email}
+              onChange={handleInputChange}
               required
               placeholder="Email Address*"
               className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
@@ -408,18 +432,22 @@ const NotificationDetailRight = () => {
             </div>
             <textarea
               name="message"
+              value={formData.message}
+              onChange={handleInputChange}
               placeholder="Required Certification*"
               rows="3"
+              required
               className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
             ></textarea>
           </div>
 
           <Button
             type="submit"
-            className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden"
+            disabled={isSubmitting}
+            className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <span className="relative z-10 flex items-center">
-              Request Callback
+              {isSubmitting ? "Submitting..." : "Request Callback"}
               <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
             <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>

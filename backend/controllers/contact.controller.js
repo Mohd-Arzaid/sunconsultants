@@ -1,13 +1,100 @@
 import { Contact } from "../model/contact.model.js";
 import { appendToSheet } from "../utils/googleSheet.js";
 import { sendToZohoCRM } from "../utils/zoho.js";
+import { sendContactEmail } from "../utils/email.js";
+
+// Helper function for background processing with timeout protection
+const processInBackground = async (contactData) => {
+  console.log("🚀 Starting background processing for contact...");
+
+  const results = await Promise.allSettled([
+    // Email with timeout
+    Promise.race([
+      sendContactEmail(contactData),
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("Email timeout after 10s")), 10000)
+      ),
+    ]),
+
+    // Google Sheets with timeout
+    Promise.race([
+      appendToSheet(contactData),
+      new Promise((_, reject) =>
+        setTimeout(
+          () => reject(new Error("Google Sheets timeout after 15s")),
+          15000
+        )
+      ),
+    ]),
+
+    // Zoho CRM with timeout
+    Promise.race([
+      sendToZohoCRM(contactData, "contact"),
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("Zoho timeout after 10s")), 10000)
+      ),
+    ]),
+  ]);
+
+  // Process results and log status
+  const [emailResult, sheetsResult, zohoResult] = results;
+
+  // Email Result
+  if (emailResult.status === "fulfilled") {
+    if (emailResult.value?.success) {
+      console.log(
+        "✅ Background: Contact email sent successfully to admin@bis-certifications.com"
+      );
+    } else {
+      console.log(
+        "❌ Background: Email failed -",
+        emailResult.value?.error || "Unknown error"
+      );
+    }
+  } else {
+    console.log("❌ Background: Email failed -", emailResult.reason?.message);
+  }
+
+  // Google Sheets Result
+  if (sheetsResult.status === "fulfilled") {
+    if (sheetsResult.value?.success) {
+      console.log("✅ Background: Contact data saved to Google Sheets");
+    } else {
+      console.log(
+        "❌ Background: Google Sheets failed -",
+        sheetsResult.value?.error
+      );
+    }
+  } else {
+    console.log(
+      "❌ Background: Google Sheets failed -",
+      sheetsResult.reason?.message
+    );
+  }
+
+  // Zoho CRM Result
+  if (zohoResult.status === "fulfilled") {
+    if (zohoResult.value?.success) {
+      console.log("✅ Background: Contact data sent to Zoho CRM");
+    } else {
+      console.log("❌ Background: Zoho CRM failed -", zohoResult.value?.error);
+    }
+  } else {
+    console.log("❌ Background: Zoho CRM failed -", zohoResult.reason?.message);
+  }
+
+  console.log("🏁 Background processing completed for contact");
+};
 
 // submit contact form
 export const submitContact = async (req, res) => {
+  const startTime = Date.now();
+
   try {
     const { fullName, email, phoneNumber, message, pageUrl, pageName } =
       req.body;
 
+    // Validation
     if (
       !fullName ||
       !email ||
@@ -53,7 +140,6 @@ export const submitContact = async (req, res) => {
     const now = new Date();
     const options = { timeZone: "Asia/Kolkata", hour12: false };
     const dateTimeStr = now.toLocaleString("en-IN", options);
-
     const [dateStr, timeStr] = dateTimeStr.split(", ");
 
     const contactData = {
@@ -67,30 +153,37 @@ export const submitContact = async (req, res) => {
       time: timeStr,
     };
 
-    // Save to MongoDB
+    console.log("💾 Saving contact to MongoDB...");
+
+    // 🚀 CRITICAL: Save to MongoDB only (fast operation)
     const contact = new Contact(contactData);
     await contact.save();
 
-    // Save to Google Sheets
-    await appendToSheet(contactData);
+    const processingTime = Date.now() - startTime;
+    console.log(`✅ Contact saved to MongoDB in ${processingTime}ms`);
 
-
-    // Save to Zoho CRM (non-blocking)
-    const zohoResult = await sendToZohoCRM(contactData, "contact");
-    if (zohoResult.success) {
-      console.log("Contact data successfully sent to Zoho CRM");
-    } else {
-      console.log("Failed to send contact data to Zoho CRM:", zohoResult.error);
-    }
-
-    return res.status(201).json({
+    // 🔥 IMMEDIATE RESPONSE - Don't wait for external APIs
+    const response = {
       success: true,
       contact,
-      message: "Contact Form Submitted Successfully !",
-      zoho: zohoResult.success ? "Sent to Zoho CRM" : "Zoho CRM sync failed",
+      message: "Contact Form Submitted Successfully!",
+      processingTime: `${processingTime}ms`,
+      status: {
+        mongodb: "✅ Saved",
+        background: "🚀 Email, Google Sheets & Zoho processing...",
+        note: "You will receive confirmation shortly",
+      },
+    };
+
+    // Send response immediately
+    res.status(201).json(response);
+
+    // 🚀 BACKGROUND PROCESSING (non-blocking, won't affect response time)
+    processInBackground(contactData).catch((error) => {
+      console.error("❌ Background processing error:", error.message);
     });
   } catch (error) {
-    console.error("Error Submitting Contact Form:", error);
+    console.error("❌ Error Submitting Contact Form:", error);
     return res.status(500).json({
       success: false,
       message: "Error while Submitting Contact Form",

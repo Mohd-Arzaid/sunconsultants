@@ -6,13 +6,14 @@ import dotenv from "dotenv";
 import connectDB from "./utils/db.js";
 import contactRoute from "./routes/contact.route.js";
 import appointmentRoute from "./routes/appointment.route.js";
+import { testGoogleSheetsConnection } from "./utils/googleSheet.js";
 
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 
 //middlewares
-app.use(express.json());  
+app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
@@ -29,8 +30,32 @@ app.get("/", (req, res) => {
   });
 });
 
+// Test Google Sheets connection
+app.get("/test-sheets", async (req, res) => {
+  try {
+    console.log("🧪 Testing Google Sheets connection via API...");
+    const result = await testGoogleSheetsConnection();
+
+    return res.status(200).json({
+      success: result.success,
+      message: result.success
+        ? "Google Sheets connection successful"
+        : "Google Sheets connection failed",
+      data: result,
+      timestamp: new Date().toISOString(),
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Error testing Google Sheets connection",
+      error: error.message,
+      timestamp: new Date().toISOString(),
+    });
+  }
+});
+
 //Api's
-app.use("/api/v1/contact",contactRoute);
+app.use("/api/v1/contact", contactRoute);
 app.use("/api/v1/appointment", appointmentRoute);
 
 // Listening to the server

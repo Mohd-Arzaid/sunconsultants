@@ -1,13 +1,118 @@
 import { Appointment } from "../model/appointment.model.js";
 import { appendAppointmentToSheet } from "../utils/googleSheet.js";
 import { sendToZohoCRM } from "../utils/zoho.js";
+import { sendAppointmentEmail } from "../utils/email.js";
+
+// Helper function for background processing with timeout protection
+const processInBackground = async (appointmentData) => {
+  console.log("🚀 Starting background processing for appointment...");
+
+  const results = await Promise.allSettled([
+    // Email with timeout
+    Promise.race([
+      sendAppointmentEmail(appointmentData),
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("Email timeout after 10s")), 10000)
+      ),
+    ]),
+
+    // Google Sheets with timeout
+    Promise.race([
+      appendAppointmentToSheet(appointmentData),
+      new Promise((_, reject) =>
+        setTimeout(
+          () => reject(new Error("Google Sheets timeout after 15s")),
+          15000
+        )
+      ),
+    ]),
+
+    // Zoho CRM with timeout
+    Promise.race([
+      sendToZohoCRM(appointmentData, "appointment"),
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("Zoho timeout after 10s")), 10000)
+      ),
+    ]),
+  ]);
+
+  // Process results and log status
+  const [emailResult, sheetsResult, zohoResult] = results;
+
+  // Email Result
+  if (emailResult.status === "fulfilled") {
+    if (emailResult.value?.success) {
+      console.log(
+        "✅ Background: Appointment email sent successfully to admin@bis-certifications.com"
+      );
+    } else {
+      console.log(
+        "❌ Background: Email failed -",
+        emailResult.value?.error || "Unknown error"
+      );
+    }
+  } else {
+    console.log("❌ Background: Email failed -", emailResult.reason?.message);
+  }
+
+  // Google Sheets Result
+  if (sheetsResult.status === "fulfilled") {
+    if (sheetsResult.value?.success) {
+      console.log("✅ Background: Appointment data saved to Google Sheets");
+    } else {
+      console.log(
+        "❌ Background: Google Sheets failed -",
+        sheetsResult.value?.error
+      );
+    }
+  } else {
+    console.log(
+      "❌ Background: Google Sheets failed -",
+      sheetsResult.reason?.message
+    );
+  }
+
+  // Zoho CRM Result
+  if (zohoResult.status === "fulfilled") {
+    if (zohoResult.value?.success) {
+      console.log("✅ Background: Appointment data sent to Zoho CRM");
+    } else {
+      console.log("❌ Background: Zoho CRM failed -", zohoResult.value?.error);
+    }
+  } else {
+    console.log("❌ Background: Zoho CRM failed -", zohoResult.reason?.message);
+  }
+
+  console.log("🏁 Background processing completed for appointment");
+};
 
 // submit appointment form
 export const submitAppointment = async (req, res) => {
-  try {
-    const { fullName, email, phoneNumber, message, pageUrl, pageName, companyName, productName } = req.body;
+  const startTime = Date.now();
 
-    if (!fullName || !email || !phoneNumber || !message || !pageUrl || !pageName || !companyName || !productName) {
+  try {
+    const {
+      fullName,
+      email,
+      phoneNumber,
+      message,
+      pageUrl,
+      pageName,
+      companyName,
+      productName,
+    } = req.body;
+
+    // Validation
+    if (
+      !fullName ||
+      !email ||
+      !phoneNumber ||
+      !message ||
+      !pageUrl ||
+      !pageName ||
+      !companyName ||
+      !productName
+    ) {
       return res.status(400).json({
         message: "Please fill up All the required fields",
         success: false,
@@ -60,34 +165,41 @@ export const submitAppointment = async (req, res) => {
       productName,
     };
 
-    // Save to MongoDB
+    console.log("💾 Saving appointment to MongoDB...");
+
+    // 🚀 CRITICAL: Save to MongoDB only (fast operation)
     const appointment = new Appointment(appointmentData);
     await appointment.save();
 
-    // Save to Google Sheets
-    await appendAppointmentToSheet(appointmentData);
+    const processingTime = Date.now() - startTime;
+    console.log(`✅ Appointment saved to MongoDB in ${processingTime}ms`);
 
-    // Save to Zoho CRM (non-blocking)
-    const zohoResult = await sendToZohoCRM(appointmentData, 'appointment');
-    if (zohoResult.success) {
-      console.log("Appointment data successfully sent to Zoho CRM");
-      
-    } else {
-      console.log("Failed to send appointment data to Zoho CRM:", zohoResult.error);
-    }
-
-    return res.status(201).json({
+    // 🔥 IMMEDIATE RESPONSE - Don't wait for external APIs
+    const response = {
       success: true,
       appointment,
-      message: "Appointment Form Submitted Successfully !",
-      zoho: zohoResult.success ? "Sent to Zoho CRM" : "Zoho CRM sync failed",
+      message: "Appointment Form Submitted Successfully!",
+      processingTime: `${processingTime}ms`,
+      status: {
+        mongodb: "✅ Saved",
+        background: "🚀 Email, Google Sheets & Zoho processing...",
+        note: "You will receive confirmation shortly",
+      },
+    };
+
+    // Send response immediately
+    res.status(201).json(response);
+
+    // 🚀 BACKGROUND PROCESSING (non-blocking, won't affect response time)
+    processInBackground(appointmentData).catch((error) => {
+      console.error("❌ Background processing error:", error.message);
     });
   } catch (error) {
-    console.error("Error Submitting Appointment Form:", error);
+    console.error("❌ Error Submitting Appointment Form:", error);
     return res.status(500).json({
       success: false,
       message: "Error while Submitting Appointment Form",
       error: error.message,
     });
   }
-}; 
+};
