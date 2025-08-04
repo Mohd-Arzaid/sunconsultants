@@ -7,9 +7,26 @@ import { ClockLoader } from "react-spinners";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 import ISIMARKImage from "@/assets/servicesImages/ISIMARKUpdated.jpg";
 import BISCertificateImage from "@/assets/bisfmpageimage/biscertificate.png";
-import { Mail, Linkedin, AlignLeft, ArrowRightIcon, Languages, Shield, Clock, Award, HeartHandshake, Lightbulb, BarChart, PhoneCall, Phone, MessageCircle, SendHorizontal, User } from "lucide-react";
+import {
+  Mail,
+  Linkedin,
+  AlignLeft,
+  ArrowRightIcon,
+  Languages,
+  Shield,
+  Clock,
+  Award,
+  HeartHandshake,
+  Lightbulb,
+  BarChart,
+  PhoneCall,
+  Phone,
+  MessageCircle,
+  SendHorizontal,
+  User,
+} from "lucide-react";
 import axios from "axios";
-import ServiceContentRight from "@/components/manual/CDSCOContentRight";
+
 import {
   Table,
   TableHeader,
@@ -26,7 +43,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import BISFMProductTable from "./BISFMProductTable.jsx";
-
 
 import BISImage from "@/assets/images/BIS.jpg";
 import CDSCO from "@/assets/images/CDSCO.jpg";
@@ -47,8 +63,6 @@ import {
 import { MailPlus } from "lucide-react";
 import { Marquee } from "@/components/magicui/marquee";
 import { Badge } from "@/components/ui/badge";
-
-
 
 const ArabicBISFM = () => {
   return (
@@ -130,7 +144,7 @@ const ArabicBISFMHero = () => {
   );
 };
 
-const ArabicServiceContactForm = () => {
+export const ArabicServiceContactForm = () => {
   const [loading, setLoading] = useState(false);
 
   const getPageName = () => {
@@ -277,6 +291,9 @@ const ArabicServiceContactForm = () => {
 
     // ISI Mark Indian
     if (path.includes("/a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/ar/dalil-shahadat-bis-bis-alhind"))
       return "ISI Mark Indian";
 
     if (path.includes("/de/leitfaden-zur-bis-zertifizierung-indisches-bis"))
@@ -813,8 +830,8 @@ const ArabicBISFMIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -836,16 +853,16 @@ const ArabicBISFMIndex = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {SECTION_NAMES[item]}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
                 }`}
             />
           </div>
@@ -875,12 +892,11 @@ const ArabicBISFMContent = () => {
       <div id="services">
         <ArabicServices />
       </div>
-
     </section>
   );
 };
 
-const ArabicServiceContentRight = () => {
+export const ArabicServiceContentRight = () => {
   return (
     <div className="flex flex-col gap-6 w-full md:w-[360px] ">
       <ArabicLatestBlog />
@@ -888,9 +904,8 @@ const ArabicServiceContentRight = () => {
       <ArabicWhyChooseUs />
       <ArabicFreeCallBack />
     </div>
-  )
-}
-
+  );
+};
 
 const ArabicFreeCallBack = () => {
   const [loading, setLoading] = useState(false);
@@ -912,16 +927,12 @@ const ArabicFreeCallBack = () => {
       return "BIS Mark Foreign";
 
     if (
-      path.includes(
-        "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
-      )
+      path.includes("/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind")
     )
       return "BIS Mark Foreign";
 
     if (
-      path.includes(
-        "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
-      )
+      path.includes("/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind")
     )
       return "BIS Mark Foreign";
 
@@ -1042,6 +1053,10 @@ const ArabicFreeCallBack = () => {
 
     // ISI Mark Indian
     if (path.includes("a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+
+    if (path.includes("/ar/dalil-shahadat-bis-bis-alhind"))
       return "ISI Mark Indian";
 
     if (path.includes("/ar/dalil-shahadat-bis-bis-alhind"))
@@ -1265,7 +1280,8 @@ const ArabicFreeCallBack = () => {
         pageName: getPageName(),
       });
     } catch (error) {
-      const errorMessage = error.response?.data?.message || "فشل في إرسال تفاصيل نموذج الاتصال!";
+      const errorMessage =
+        error.response?.data?.message || "فشل في إرسال تفاصيل نموذج الاتصال!";
       toast({
         variant: "destructive",
         title: errorMessage,
@@ -1288,7 +1304,8 @@ const ArabicFreeCallBack = () => {
 
       {/* Intro Text */}
       <p className="mt-3 text-sm text-gray-600 font-geist">
-        اترك تفاصيلك أدناه وسيتصل بك خبراؤنا خلال 24 ساعة لمناقشة احتياجات الامتثال التنظيمي الخاصة بك.
+        اترك تفاصيلك أدناه وسيتصل بك خبراؤنا خلال 24 ساعة لمناقشة احتياجات
+        الامتثال التنظيمي الخاصة بك.
       </p>
 
       {/* Form */}
@@ -1399,113 +1416,128 @@ const ArabicFreeCallBack = () => {
 const ArabicLatestBlog = () => {
   const blogPosts = [
     {
-      "image": "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "BIS",
-      "title": "شهادة BIS لكراسي العمل",
-      "url": "/latest-notification/work-chairs"
+      image:
+        "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "شهادة BIS لكراسي العمل",
+      url: "/latest-notification/work-chairs",
     },
     {
-      "image": "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "BIS",
-      "title": "شهادة BIS للكراسي والمقاعد",
-      "url": "/latest-notification/and-stools"
+      image:
+        "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "شهادة BIS للكراسي والمقاعد",
+      url: "/latest-notification/and-stools",
     },
     {
-      "image": "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
-      "category": "BIS",
-      "title": "إشعار BIS للطاولات والمكاتب",
-      "url": "/latest-notification/and-desks"
+      image:
+        "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
+      category: "BIS",
+      title: "إشعار BIS للطاولات والمكاتب",
+      url: "/latest-notification/and-desks",
     },
     {
-      "image": "https://alephindia.in/images/isi/furniture-storage-units.png",
-      "category": "BIS",
-      "title": "إشعار BIS لوحدات التخزين",
-      "url": "/latest-notification/storage-units"
+      image: "https://alephindia.in/images/isi/furniture-storage-units.png",
+      category: "BIS",
+      title: "إشعار BIS لوحدات التخزين",
+      url: "/latest-notification/storage-units",
     },
     {
-      "image": "https://alephindia.in/images/isi/furniture-bunk-beds.png",
-      "category": "BIS",
-      "title": "إشعار BIS للأسرة المزدوجة",
-      "url": "/latest-notification/bunk-beds"
+      image: "https://alephindia.in/images/isi/furniture-bunk-beds.png",
+      category: "BIS",
+      title: "إشعار BIS للأسرة المزدوجة",
+      url: "/latest-notification/bunk-beds",
     },
     {
-      "image": "https://jharkhandstatenews.com/assets/admin/uploads/topstory_img/199879_1693229978.jpg",
-      "category": "BIS",
-      "title": "إشعار BIS لكابل الطاقة الشمسية DC وكابل مقاومة الحريق",
-      "url": "/latest-notification/survival-cable"
+      image:
+        "https://jharkhandstatenews.com/assets/admin/uploads/topstory_img/199879_1693229978.jpg",
+      category: "BIS",
+      title: "إشعار BIS لكابل الطاقة الشمسية DC وكابل مقاومة الحريق",
+      url: "/latest-notification/survival-cable",
     },
     {
-      "image": "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
-      "category": "BIS",
-      "title": "إشعار BIS للألمنيوم المطاوع وسبائك الألمنيوم، مخزون التشكيل والمشكولات",
-      "url": "/latest-notification/and-forgings"
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
+      category: "BIS",
+      title:
+        "إشعار BIS للألمنيوم المطاوع وسبائك الألمنيوم، مخزون التشكيل والمشكولات",
+      url: "/latest-notification/and-forgings",
     },
     {
-      "image": "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "BIS",
-      "title": "إشعار BIS لحمض H",
-      "url": "/latest-notification/h-acid"
+      image:
+        "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "إشعار BIS لحمض H",
+      url: "/latest-notification/h-acid",
     },
     {
-      "image": "https://images.unsplash.com/photo-1617155093730-a8bf47be792d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "BIS",
-      "title": "إشعار BIS لحمض K",
-      "url": "/latest-notification/k-acid"
+      image:
+        "https://images.unsplash.com/photo-1617155093730-a8bf47be792d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "إشعار BIS لحمض K",
+      url: "/latest-notification/k-acid",
     },
     {
-      "image": "https://media.istockphoto.com/id/940248330/photo/potassium-permanganate-sodium-sulfate-mixture.jpg?s=612x612&w=0&k=20&c=lhxvzbD2cVVOJKQyLIOqSaq9dlJTtDH07kHoBT5q7_4=",
-      "category": "BIS",
-      "title": "إشعار BIS لكبريتون الفينيل",
-      "url": "/latest-notification/vinyl-sulphone"
+      image:
+        "https://media.istockphoto.com/id/940248330/photo/potassium-permanganate-sodium-sulfate-mixture.jpg?s=612x612&w=0&k=20&c=lhxvzbD2cVVOJKQyLIOqSaq9dlJTtDH07kHoBT5q7_4=",
+      category: "BIS",
+      title: "إشعار BIS لكبريتون الفينيل",
+      url: "/latest-notification/vinyl-sulphone",
     },
     {
-      "image": "https://m.media-amazon.com/images/I/71qI8OoNdtL._AC_UF1000,1000_QL80_.jpg",
-      "category": "BIS",
-      "title": "إشعار BIS لمنشطات السياج الكهربائي",
-      "url": "/latest-notification/fence-energizers"
+      image:
+        "https://m.media-amazon.com/images/I/71qI8OoNdtL._AC_UF1000,1000_QL80_.jpg",
+      category: "BIS",
+      title: "إشعار BIS لمنشطات السياج الكهربائي",
+      url: "/latest-notification/fence-energizers",
     },
     {
-      "image": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "BIS",
-      "title": "إشعار BIS لغسالات الملابس",
-      "url": "/latest-notification/washing-machines"
+      image:
+        "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "BIS",
+      title: "إشعار BIS لغسالات الملابس",
+      url: "/latest-notification/washing-machines",
     },
     {
-      "image": "https://m.media-amazon.com/images/I/31waXELONZL.jpg",
-      "category": "BIS",
-      "title": "إشعار BIS لألواح الجبس الجصي",
-      "url": "/latest-notification/plaster-boards"
+      image: "https://m.media-amazon.com/images/I/31waXELONZL.jpg",
+      category: "BIS",
+      title: "إشعار BIS لألواح الجبس الجصي",
+      url: "/latest-notification/plaster-boards",
     },
     {
-      "image": "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
-      "category": "BIS",
-      "title": "إشعار BIS لأنابيب سبائك الألمنيوم لأغراض الري - أنابيب ملحومة",
-      "url": "/latest-notification/-welded-tubes"
+      image:
+        "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
+      category: "BIS",
+      title: "إشعار BIS لأنابيب سبائك الألمنيوم لأغراض الري - أنابيب ملحومة",
+      url: "/latest-notification/-welded-tubes",
     },
     {
-      "image": "https://www.sunnysteel.com/img/extruded-finned-tube.jpg",
-      "category": "BIS",
-      "title": "إشعار BIS لأنبوب سبائك الألمنيوم لأغراض الري - أنبوب مبثوق",
-      "url": "/latest-notification/extruded-tube"
+      image: "https://www.sunnysteel.com/img/extruded-finned-tube.jpg",
+      category: "BIS",
+      title: "إشعار BIS لأنبوب سبائك الألمنيوم لأغراض الري - أنبوب مبثوق",
+      url: "/latest-notification/extruded-tube",
     },
     {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
-      "category": "BIS",
-      "title": "إشعار BIS لقضيب الألمنيوم درجة EC المنتج بالصب والدرفلة المستمرة",
-      "url": "/latest-notification/and-rolling"
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
+      category: "BIS",
+      title: "إشعار BIS لقضيب الألمنيوم درجة EC المنتج بالصب والدرفلة المستمرة",
+      url: "/latest-notification/and-rolling",
     },
     {
-      "image": "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
-      "category": "BIS",
-      "title": "إشعار BIS للألمنيوم المطاوع وقضبان وعيدان وأقسام سبائك الألمنيوم",
-      "url": "/latest-notification/and-sections"
+      image:
+        "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
+      category: "BIS",
+      title: "إشعار BIS للألمنيوم المطاوع وقضبان وعيدان وأقسام سبائك الألمنيوم",
+      url: "/latest-notification/and-sections",
     },
     {
-      "image": "https://5.imimg.com/data5/SELLER/Default/2023/3/EC/HR/GU/184505254/regular-gypsum-plasterboard.jpg",
-      "category": "BIS",
-      "title": "إشعار BIS لألواح الجبس الجصي",
-      "url": "/latest-notification/plaster-boards"
-    }
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2023/3/EC/HR/GU/184505254/regular-gypsum-plasterboard.jpg",
+      category: "BIS",
+      title: "إشعار BIS لألواح الجبس الجصي",
+      url: "/latest-notification/plaster-boards",
+    },
   ];
 
   return (
@@ -1586,30 +1618,35 @@ const ArabicLatestBlog = () => {
 const ArabicClientTestimonial = () => {
   const testimonials = [
     {
-      "name": "السيدة إلياواتي",
-      "role": "شركة PT Quty Karunia، مرخص BIS في فيتنام",
-      "content": "قدمت شركة Sun Certifications India خدمات ممتازة لشهادة BIS. خدمتهم المتميزة وإخلاصهم كسب ثقتنا."
+      name: "السيدة إلياواتي",
+      role: "شركة PT Quty Karunia، مرخص BIS في فيتنام",
+      content:
+        "قدمت شركة Sun Certifications India خدمات ممتازة لشهادة BIS. خدمتهم المتميزة وإخلاصهم كسب ثقتنا.",
     },
     {
-      "name": "السيدة بيل",
-      "role": "شركة Thantawan Industries Ltd، مرخص BIS في تايلاند",
-      "content": "دعمتنا شركة Sun Certifications India طوال عملية شهادة BIS. خدمة العملاء المتجاوبة لديهم استثنائية."
+      name: "السيدة بيل",
+      role: "شركة Thantawan Industries Ltd، مرخص BIS في تايلاند",
+      content:
+        "دعمتنا شركة Sun Certifications India طوال عملية شهادة BIS. خدمة العملاء المتجاوبة لديهم استثنائية.",
     },
     {
-      "name": "السيدة جون مين سيم",
-      "role": "شركة Leaderart Industries، مرخص BIS في ماليزيا",
-      "content": "ساعدتنا شركة Sun Certifications India في الحصول على شهادة BIS، مما ضاعف مشاركتنا في الهند. خدماتهم أصيلة ومحدثة."
+      name: "السيدة جون مين سيم",
+      role: "شركة Leaderart Industries، مرخص BIS في ماليزيا",
+      content:
+        "ساعدتنا شركة Sun Certifications India في الحصول على شهادة BIS، مما ضاعف مشاركتنا في الهند. خدماتهم أصيلة ومحدثة.",
     },
     {
-      "name": "السيدة إلياواتي",
-      "role": "شركة PT Quty Karunia، مرخص BIS في فيتنام",
-      "content": "واحد من أفضل استشاريي BIS في الهند! خبرتهم جعلت العملية بأكملها سلسة بالنسبة لنا."
+      name: "السيدة إلياواتي",
+      role: "شركة PT Quty Karunia، مرخص BIS في فيتنام",
+      content:
+        "واحد من أفضل استشاريي BIS في الهند! خبرتهم جعلت العملية بأكملها سلسة بالنسبة لنا.",
     },
     {
-      "name": "السيدة بيل",
-      "role": "شركة Thantawan Industries Ltd، مرخص BIS في تايلاند",
-      "content": "أوصي بشدة بشركة Sun Certifications India للحصول على شهادة BIS بدون متاعب. خدمة مهنية ودقيقة."
-    }
+      name: "السيدة بيل",
+      role: "شركة Thantawan Industries Ltd، مرخص BIS في تايلاند",
+      content:
+        "أوصي بشدة بشركة Sun Certifications India للحصول على شهادة BIS بدون متاعب. خدمة مهنية ودقيقة.",
+    },
   ];
 
   return (
@@ -1652,62 +1689,63 @@ const ArabicClientTestimonial = () => {
   );
 };
 
-
 const ArabicWhyChooseUs = () => {
   const reasons = [
     {
-      "title": "إرشاد الخبراء",
-      "description": "يجلب فريقنا أكثر من 12 عامًا من الخبرة في امتثال CDSCO و BIS."
+      title: "إرشاد الخبراء",
+      description:
+        "يجلب فريقنا أكثر من 12 عامًا من الخبرة في امتثال CDSCO و BIS.",
     },
     {
-      "title": "فعال من حيث الوقت",
-      "description": "نحن نقلل وقت الموافقة بنسبة تصل إلى 40% مع العمليات المبسطة."
+      title: "فعال من حيث الوقت",
+      description:
+        "نحن نقلل وقت الموافقة بنسبة تصل إلى 40% مع العمليات المبسطة.",
     },
     {
-      "title": "نجاح مثبت",
-      "description": "معدل نجاح 100% مع أكثر من 1500 تسجيل ناجح."
+      title: "نجاح مثبت",
+      description: "معدل نجاح 100% مع أكثر من 1500 تسجيل ناجح.",
     },
     {
-      "title": "محوره العميل",
-      "description": "مدير حساب مخصص يضمن خدمة شخصية."
-    }
+      title: "محوره العميل",
+      description: "مدير حساب مخصص يضمن خدمة شخصية.",
+    },
   ];
 
   const stats = {
-    "experience": {
-      "value": "12+",
-      "label": "سنوات الخبرة"
+    experience: {
+      value: "12+",
+      label: "سنوات الخبرة",
     },
-    "clients": {
-      "value": "1500+",
-      "label": "عملاؤنا"
+    clients: {
+      value: "1500+",
+      label: "عملاؤنا",
     },
-    "successRate": {
-      "value": "100%",
-      "label": "معدل النجاح"
+    successRate: {
+      value: "100%",
+      label: "معدل النجاح",
     },
-    "countries": {
-      "value": "20+",
-      "label": "البلدان المخدومة"
-    }
+    countries: {
+      value: "20+",
+      label: "البلدان المخدومة",
+    },
   };
 
   const performance = {
-    "title": "أداؤنا",
-    "metrics": {
-      "speed": {
-        "label": "السرعة",
-        "value": "95"
+    title: "أداؤنا",
+    metrics: {
+      speed: {
+        label: "السرعة",
+        value: "95",
       },
-      "success": {
-        "label": "النجاح",
-        "value": "99"
+      success: {
+        label: "النجاح",
+        value: "99",
       },
-      "satisfaction": {
-        "label": "الرضا",
-        "value": "98"
-      }
-    }
+      satisfaction: {
+        label: "الرضا",
+        value: "98",
+      },
+    },
   };
 
   const reasonIcons = {
@@ -1883,14 +1921,11 @@ const ArabicBISFMContentLeft = () => {
         <ArabicRepresentationSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-
         <ArabicDocumentSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-
         <ArabicProcessSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
 
         <ArabicCostingSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
@@ -2448,7 +2483,10 @@ const ArabicRepresentationSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        الممثل الهندي المعتمد (AIR) هو وسيط حاسم يعينه مصنع أجنبي يسعى للحصول على شهادة BIS بموجب نظام تسجيل FMCS. يعمل AIR كحلقة وصل رسمية بين مكتب المعايير الهندية (BIS) والمصنع، مما يضمن اتصالًا سلسًا، ومعالجة الوثائق، وتنسيق عملية الشهادة.
+        الممثل الهندي المعتمد (AIR) هو وسيط حاسم يعينه مصنع أجنبي يسعى للحصول
+        على شهادة BIS بموجب نظام تسجيل FMCS. يعمل AIR كحلقة وصل رسمية بين مكتب
+        المعايير الهندية (BIS) والمصنع، مما يضمن اتصالًا سلسًا، ومعالجة الوثائق،
+        وتنسيق عملية الشهادة.
       </p>
 
       <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -2456,7 +2494,9 @@ const ArabicRepresentationSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        وفقًا لإرشادات BIS، يجب على أي مصنع أجنبي ليس لديه مكتب مسجل في الهند تعيين AIR. يضمن هذا المتطلب أن يكون لدى BIS نقطة اتصال موثوقة يمكن الوصول إليها ضمن الولاية القضائية الهندية.
+        وفقًا لإرشادات BIS، يجب على أي مصنع أجنبي ليس لديه مكتب مسجل في الهند
+        تعيين AIR. يضمن هذا المتطلب أن يكون لدى BIS نقطة اتصال موثوقة يمكن
+        الوصول إليها ضمن الولاية القضائية الهندية.
       </p>
 
       <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -2464,7 +2504,8 @@ const ArabicRepresentationSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        يمتد دور AIR عبر عملية شهادة BIS بأكملها، من الوثائق وتقديم الطلب إلى تنسيق التدقيق والامتثال بعد الشهادة:
+        يمتد دور AIR عبر عملية شهادة BIS بأكملها، من الوثائق وتقديم الطلب إلى
+        تنسيق التدقيق والامتثال بعد الشهادة:
       </p>
 
       <div className="mt-[16px] md:mt-[24px]">
@@ -2483,24 +2524,28 @@ const ArabicRepresentationSection = () => {
             {[
               {
                 responsibility: "الاتصال",
-                description: "يعمل كنقطة اتصال مع مسؤولي وأقسام BIS"
+                description: "يعمل كنقطة اتصال مع مسؤولي وأقسام BIS",
               },
               {
                 responsibility: "دعم الطلبات",
-                description: "يساعد في ملء النماذج، وتجميع الوثائق، وتقديم الطلب"
+                description:
+                  "يساعد في ملء النماذج، وتجميع الوثائق، وتقديم الطلب",
               },
               {
                 responsibility: "تنسيق التدقيق",
-                description: "ينسق جدول تفتيش المصنع ويجيب على استفسارات المدقق"
+                description:
+                  "ينسق جدول تفتيش المصنع ويجيب على استفسارات المدقق",
               },
               {
                 responsibility: "مراقبة الامتثال",
-                description: "يضمن أن جميع أنشطة الاختبار والشهادة تفي بمعايير BIS"
+                description:
+                  "يضمن أن جميع أنشطة الاختبار والشهادة تفي بمعايير BIS",
               },
               {
                 responsibility: "إدارة التجديد",
-                description: "يشرف على تجديد ترخيص BIS، وتحديث الوثائق، ودفع الرسوم"
-              }
+                description:
+                  "يشرف على تجديد ترخيص BIS، وتحديث الوثائق، ودفع الرسوم",
+              },
             ].map((row, index) => (
               <TableRow key={index} className="hover:bg-gray-50">
                 <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
@@ -2530,7 +2575,7 @@ const ArabicRepresentationSection = () => {
             "لديه عنوان فعلي في الهند مع رمز بريدي صالح",
             "قادر على التواصل بطلاقة باللغتين الإنجليزية واللغات المحلية",
             "يفهم نظام الشهادة، بروتوكولات وثائق BIS، والتوقعات التنظيمية",
-            "قادر على الرد على عمليات التدقيق والمراسلات بسرعة نيابة عن المصنع الأجنبي"
+            "قادر على الرد على عمليات التدقيق والمراسلات بسرعة نيابة عن المصنع الأجنبي",
           ]}
         />
       </div>
@@ -2548,7 +2593,7 @@ const ArabicRepresentationSection = () => {
           points={[
             "لا يوجد لـ BIS ولاية قضائية للتحرك ضد مصنع أجنبي غير متوافق",
             "قد تتأخر الاستفسات الحساسة للوقت وجداول التدقيق",
-            "قد تتعطل عملية الشهادة أو يتم إلغاؤها أو رفضها"
+            "قد تتعطل عملية الشهادة أو يتم إلغاؤها أو رفضها",
           ]}
         />
       </div>
@@ -2557,9 +2602,8 @@ const ArabicRepresentationSection = () => {
         يزيد AIR النشط والخبير بشكل كبير من فرص نجاح شهادة BIS.
       </p>
     </section>
-  )
-}
-
+  );
+};
 
 const ArabicDocumentSection = () => {
   return (
@@ -2593,44 +2637,45 @@ const ArabicDocumentSection = () => {
             {[
               {
                 type: "نموذج طلب FMCS",
-                purpose: "طلب رسمي للحصول على الشهادة"
+                purpose: "طلب رسمي للحصول على الشهادة",
               },
               {
                 type: "قائمة معدات التصنيع",
-                purpose: "توضح قدرات الإنتاج"
+                purpose: "توضح قدرات الإنتاج",
               },
               {
                 type: "قائمة المواد الخام",
-                purpose: "تضمن جودة المواد المدخلة"
+                purpose: "تضمن جودة المواد المدخلة",
               },
               {
                 type: "قائمة معدات الاختبار",
-                purpose: "تقييم جاهزية الاختبار والامتثال"
+                purpose: "تقييم جاهزية الاختبار والامتثال",
               },
               {
                 type: "شهادات المعايرة",
-                purpose: "تثبت دقة معدات الاختبار"
+                purpose: "تثبت دقة معدات الاختبار",
               },
               {
                 type: "مخطط المصنع وتدفق العملية",
-                purpose: "يساعد المدققين على فهم مراحل التصنيع"
+                purpose: "يساعد المدققين على فهم مراحل التصنيع",
               },
               {
                 type: "شهادات الاختبار",
-                purpose: "تثبت جودة المواد الخام والمنتج النهائي"
+                purpose: "تثبت جودة المواد الخام والمنتج النهائي",
               },
               {
                 type: "ملف مراقبة الجودة",
-                purpose: "يتحقق من مؤهلات الموظفين والإجراءات التشغيلية القياسية"
+                purpose:
+                  "يتحقق من مؤهلات الموظفين والإجراءات التشغيلية القياسية",
               },
               {
                 type: "إثبات الدفع",
-                purpose: "يؤكد تقديم الرسوم إلى BIS"
+                purpose: "يؤكد تقديم الرسوم إلى BIS",
               },
               {
                 type: "ضمان بنكي للأداء",
-                purpose: "يعمل كضمان مالي لـ BIS"
-              }
+                purpose: "يعمل كضمان مالي لـ BIS",
+              },
             ].map((row, index) => (
               <TableRow key={index} className="hover:bg-gray-50">
                 <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
@@ -2663,7 +2708,7 @@ const ArabicDocumentSection = () => {
             "تفاصيل المنتج (النوع، الفئة، الموديل)",
             "المعيار الهندي المقصود",
             "تفاصيل الاتصال بالمصنع وAIR",
-            "قدرة التصنيع ونطاق الاختبار"
+            "قدرة التصنيع ونطاق الاختبار",
           ]}
         />
       </div>
@@ -2678,7 +2723,7 @@ const ArabicDocumentSection = () => {
             "اسم الآلة والعلامة التجارية",
             "قدرة الإنتاج",
             "تفاصيل الاتصال بالمصنع وAIR",
-            "سجلات الصيانة (إن وجدت)"
+            "سجلات الصيانة (إن وجدت)",
           ]}
         />
       </div>
@@ -2692,7 +2737,7 @@ const ArabicDocumentSection = () => {
           points={[
             "مصدر التوريد",
             "الدرجات والمواصفات",
-            "بروتوكول الاختبار (إن وجد)"
+            "بروتوكول الاختبار (إن وجد)",
           ]}
         />
       </div>
@@ -2706,7 +2751,7 @@ const ArabicDocumentSection = () => {
           points={[
             "اسم المعدة والشركة المصنعة",
             "الامتثال لمعايير الاختبار في المعيار الهندي",
-            "الموقع داخل المصنع"
+            "الموقع داخل المصنع",
           ]}
         />
       </div>
@@ -2717,11 +2762,7 @@ const ArabicDocumentSection = () => {
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <PointsListTwo
-          points={[
-            "تاريخ آخر معايرة",
-            "فترة الصلاحية",
-            "رقم الشهادة"
-          ]}
+          points={["تاريخ آخر معايرة", "فترة الصلاحية", "رقم الشهادة"]}
         />
       </div>
 
@@ -2735,7 +2776,7 @@ const ArabicDocumentSection = () => {
             "نقاط الدخول والخروج",
             "مناطق مختبر الاختبار",
             "نقاط فحص مراقبة الجودة",
-            "أقسام التخزين والتغليف"
+            "أقسام التخزين والتغليف",
           ]}
         />
       </div>
@@ -2745,7 +2786,8 @@ const ArabicDocumentSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        يصدر من بنك هندي معتمد من قبل RBI، يغطي ضمان البنك للأداء (PBG) المسؤولية في حالة عدم الامتثال. يجب أن تكون هذه الوثيقة:
+        يصدر من بنك هندي معتمد من قبل RBI، يغطي ضمان البنك للأداء (PBG)
+        المسؤولية في حالة عدم الامتثال. يجب أن تكون هذه الوثيقة:
       </p>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
@@ -2753,13 +2795,14 @@ const ArabicDocumentSection = () => {
           points={[
             "على ورقة رسمية للبنك",
             "تشير إلى فترة الضمان والمبلغ",
-            "موقعة ومختومة"
+            "موقعة ومختومة",
           ]}
         />
       </div>
 
       <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        أخطاء شائعة في الوثائق يجب تجنبها عند التقدم للحصول على شهادة BIS أو BIS الهندية
+        أخطاء شائعة في الوثائق يجب تجنبها عند التقدم للحصول على شهادة BIS أو BIS
+        الهندية
       </p>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
@@ -2769,13 +2812,13 @@ const ArabicDocumentSection = () => {
             "تقديم تقارير معايرة منتهية الصلاحية",
             "عدم وجود إثبات دفع رسوم BIS",
             "مخططات تدفق العملية غير مكتملة أو غامضة",
-            "تناقضات في التسمية بين الوثائق"
+            "تناقضات في التسمية بين الوثائق",
           ]}
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
 const ArabicProcessSection = () => {
   return (
@@ -2798,7 +2841,9 @@ const ArabicProcessSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        عملية الحصول على شهادة BIS بموجب نظام تصنيع المصانع الأجنبية (FMCS) هي عملية منهجية ومنظمة ومتعددة المراحل. تضمن أن المنتجات تتوافق مع المعايير الهندية المعمول بها، وأن عمليات التصنيع قوية، وأن الاختبارات دقيقة.
+        عملية الحصول على شهادة BIS بموجب نظام تصنيع المصانع الأجنبية (FMCS) هي
+        عملية منهجية ومنظمة ومتعددة المراحل. تضمن أن المنتجات تتوافق مع المعايير
+        الهندية المعمول بها، وأن عمليات التصنيع قوية، وأن الاختبارات دقيقة.
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -2821,44 +2866,45 @@ const ArabicProcessSection = () => {
             {[
               {
                 step: "1",
-                description: "تقديم الطلب إلى قسم FMCD في BIS"
+                description: "تقديم الطلب إلى قسم FMCD في BIS",
               },
               {
                 step: "2",
-                description: "فحص الوثائق والمراجعة الأولية"
+                description: "فحص الوثائق والمراجعة الأولية",
               },
               {
                 step: "3",
-                description: "حل الاستفسارات وتقديم التوضيحات"
+                description: "حل الاستفسارات وتقديم التوضيحات",
               },
               {
                 step: "4",
-                description: "تعيين مدقق فني من BIS"
+                description: "تعيين مدقق فني من BIS",
               },
               {
                 step: "5",
-                description: "جدولة تفتيش المصنع والتنسيق عبر AIR"
+                description: "جدولة تفتيش المصنع والتنسيق عبر AIR",
               },
               {
                 step: "6",
-                description: "تفتيش المصنع وختم العينات بواسطة مدقق BIS"
+                description: "تفتيش المصنع وختم العينات بواسطة مدقق BIS",
               },
               {
                 step: "7",
-                description: "اختبار المنتج داخليًا (إذا كان مطبقًا)"
+                description: "اختبار المنتج داخليًا (إذا كان مطبقًا)",
               },
               {
                 step: "8",
-                description: "اختبار العينات المختمة في معامل معتمدة من BIS في الهند"
+                description:
+                  "اختبار العينات المختمة في معامل معتمدة من BIS في الهند",
               },
               {
                 step: "9",
-                description: "مراجعة تقارير الاختبار ونتائج التفتيش"
+                description: "مراجعة تقارير الاختبار ونتائج التفتيش",
               },
               {
                 step: "10",
-                description: "إصدار ترخيص BIS واستخدام علامة ISI"
-              }
+                description: "إصدار ترخيص BIS واستخدام علامة ISI",
+              },
             ].map((step) => (
               <TableRow key={step.step} className="hover:bg-gray-50">
                 <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
@@ -2888,11 +2934,14 @@ const ArabicProcessSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        تستغرق عملية الحصول على شهادة BIS بموجب نظام FMCS بشكل عام حوالي 120 يوم عمل (حوالي 3-4 أشهر) من تاريخ تقديم الطلب الصحيح. غالبًا ما تحدث التأخيرات عندما تكون الوثائق غير واضحة أو إذا لم يكن المصنع جاهزًا للتفتيش.
+        تستغرق عملية الحصول على شهادة BIS بموجب نظام FMCS بشكل عام حوالي 120 يوم
+        عمل (حوالي 3-4 أشهر) من تاريخ تقديم الطلب الصحيح. غالبًا ما تحدث
+        التأخيرات عندما تكون الوثائق غير واضحة أو إذا لم يكن المصنع جاهزًا
+        للتفتيش.
       </p>
     </section>
-  )
-}
+  );
+};
 
 const ArabicCostingSection = () => {
   return (
@@ -2915,11 +2964,15 @@ const ArabicCostingSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        الحصول على شهادة BIS في إطار مخطط شهادة المصنعين الأجانب (FMCS) ينطوي على عدة أنواع من التكاليف. تغطي هذه التكاليف كل شيء من تقديم الطلب والمراجعات إلى اختبار المنتجات واستخدام العلامات.
+        الحصول على شهادة BIS في إطار مخطط شهادة المصنعين الأجانب (FMCS) ينطوي
+        على عدة أنواع من التكاليف. تغطي هذه التكاليف كل شيء من تقديم الطلب
+        والمراجعات إلى اختبار المنتجات واستخدام العلامات.
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        يجب على المصنعين الأجانب وضع ميزانية كافية لضمان المدفوعات في الوقت المناسب، حيث أن عدم الدفع يمكن أن يؤدي إلى رفض شهادة BIS في منتصف الطريق.
+        يجب على المصنعين الأجانب وضع ميزانية كافية لضمان المدفوعات في الوقت
+        المناسب، حيث أن عدم الدفع يمكن أن يؤدي إلى رفض شهادة BIS في منتصف
+        الطريق.
       </p>
 
       <div className="mt-[16px] md:mt-[24px]">
@@ -2958,7 +3011,8 @@ const ArabicCostingSection = () => {
                 رسوم اختبار المنتج (حسب المنتج)
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                لاختبار العينات المختومة في المختبرات المعترف بها من قبل BIS في الهند
+                لاختبار العينات المختومة في المختبرات المعترف بها من قبل BIS في
+                الهند
               </TableCell>
             </TableRow>
 
@@ -2992,8 +3046,8 @@ const ArabicCostingSection = () => {
         </Table>
       </div>
     </section>
-  )
-}
+  );
+};
 
 const ArabicSurveillanceSection = () => {
   return (
@@ -3016,15 +3070,21 @@ const ArabicSurveillanceSection = () => {
       </p> */}
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        بمجرد منح شهادة BIS، لا تنتهي المسؤولية عند هذا الحد. تتضمن شهادة BIS نظام مراقبة وامتثال مستمر لضمان الالتزام المستمر بالمعايير الهندية. هذه المرحلة التي تلي الحصول على الشهادة أمر بالغ الأهمية للحفاظ على ترخيص BIS الخاص بك، والاحتفاظ بالحق في استخدام علامة ISI، وتجنب العقوبات القانونية أو التعليق.
+        بمجرد منح شهادة BIS، لا تنتهي المسؤولية عند هذا الحد. تتضمن شهادة BIS
+        نظام مراقبة وامتثال مستمر لضمان الالتزام المستمر بالمعايير الهندية. هذه
+        المرحلة التي تلي الحصول على الشهادة أمر بالغ الأهمية للحفاظ على ترخيص
+        BIS الخاص بك، والاحتفاظ بالحق في استخدام علامة ISI، وتجنب العقوبات
+        القانونية أو التعليق.
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        المكونات الرئيسية للمراقبة بعد الحصول على شهادة BIS مراقبة السوق: أخذ عينات عشوائية من المنتجات من السوق الهندي لإجراء اختبارات مختبرية مستقلة، وفي حالة فشل العينة يتم تعليق شهادة BIS. يتم ذلك مرتين كل عام.
+        المكونات الرئيسية للمراقبة بعد الحصول على شهادة BIS مراقبة السوق: أخذ
+        عينات عشوائية من المنتجات من السوق الهندي لإجراء اختبارات مختبرية
+        مستقلة، وفي حالة فشل العينة يتم تعليق شهادة BIS. يتم ذلك مرتين كل عام.
       </p>
     </section>
-  )
-}
+  );
+};
 
 const ArabicFacilitatorSection = () => {
   return (
@@ -3047,7 +3107,9 @@ const ArabicFacilitatorSection = () => {
       </p> */}
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        شهادة BIS تحت نظام تسجيل FMCS معقدة وتقنية للغاية وحساسة للوقت. بينما من الممكن السعي للحصول على الشهادة بشكل مستقل، فإن معظم المصنعين الأجانب الناجحين يعتمدون على استشاريي BIS لتبسيط الرحلة وتقليل المخاطر.
+        شهادة BIS تحت نظام تسجيل FMCS معقدة وتقنية للغاية وحساسة للوقت. بينما من
+        الممكن السعي للحصول على الشهادة بشكل مستقل، فإن معظم المصنعين الأجانب
+        الناجحين يعتمدون على استشاريي BIS لتبسيط الرحلة وتقليل المخاطر.
       </p>
 
       <p className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
@@ -3055,7 +3117,8 @@ const ArabicFacilitatorSection = () => {
       </p>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        يوفر استشاري شهادة BIS إرشادات شاملة عبر كل خطوة من خطوات العملية. مسؤولياتهم الأساسية تشمل:
+        يوفر استشاري شهادة BIS إرشادات شاملة عبر كل خطوة من خطوات العملية.
+        مسؤولياتهم الأساسية تشمل:
       </p>
 
       <div className="mt-[16px] md:mt-[24px]">
@@ -3124,13 +3187,14 @@ const ArabicFacilitatorSection = () => {
       </div>
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        يعملون كشريك استراتيجي لك، وغالباً ما يعملون كممثلك الهندي المعتمد (AIR).
+        يعملون كشريك استراتيجي لك، وغالباً ما يعملون كممثلك الهندي المعتمد
+        (AIR).
       </p>
     </section>
-  )
-}
+  );
+};
 
-const ArabicAboutAuthor = () => {
+export const ArabicAboutAuthor = () => {
   return (
     <section className="">
       <div className="relative overflow-hidden bg-gradient-to-br from-[#F9F7F2] via-white to-[#F9F7F2] border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
@@ -3162,8 +3226,8 @@ const ArabicAboutAuthor = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
               <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                  <span className="font-medium">الخبرة:</span>{" "}
-                  أكثر من 10 سنوات وتعامل مع أكثر من 1000 مشروع
+                  <span className="font-medium">الخبرة:</span> أكثر من 10 سنوات
+                  وتعامل مع أكثر من 1000 مشروع
                 </p>
               </div>
 
@@ -3185,8 +3249,7 @@ const ArabicAboutAuthor = () => {
                 >
                   <Linkedin className="w-4 h-4 text-[#0077B5]" />
                   <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                    <span className="font-medium">LinkedIn:</span>{" "}
-                    تواصل معي
+                    <span className="font-medium">LinkedIn:</span> تواصل معي
                   </span>
                 </a>
 
@@ -3206,10 +3269,10 @@ const ArabicAboutAuthor = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-const ArabicServices = () => {
+export const ArabicServices = () => {
   return (
     <div className="pt-6 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
@@ -3362,9 +3425,8 @@ const ArabicServices = () => {
         </div>
       </div>
     </div>
-
-  )
-}
+  );
+};
 
 const ArabicServiceFaq = () => {
   return (
@@ -3391,10 +3453,14 @@ const ArabicServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                ما هي شهادة BIS ولماذا من المهم للمصنعين الأجانب الحصول على BIS الهندي؟
+                ما هي شهادة BIS ولماذا من المهم للمصنعين الأجانب الحصول على BIS
+                الهندي؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                شهادة BIS هي عملية تنظيمية يقوم بها مكتب المعايير الهندية لضمان أن المنتجات تلبي المعايير الهندية. وهي ضرورية للمصنعين الأجانب للحصول على وصول إلى السوق والتخليص الجمركي وثقة المستهلك في الهند.
+                شهادة BIS هي عملية تنظيمية يقوم بها مكتب المعايير الهندية لضمان
+                أن المنتجات تلبي المعايير الهندية. وهي ضرورية للمصنعين الأجانب
+                للحصول على وصول إلى السوق والتخليص الجمركي وثقة المستهلك في
+                الهند.
               </AccordionContent>
             </AccordionItem>
 
@@ -3403,7 +3469,8 @@ const ArabicServiceFaq = () => {
                 ماذا تمثل علامة ISI؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                تشير علامة ISI إلى المطابقة لمعيار هندي محدد. وهي إلزامية للمنتجات تحت شهادة BIS ويجب طباعتها على التغليف والمنتجات.
+                تشير علامة ISI إلى المطابقة لمعيار هندي محدد. وهي إلزامية
+                للمنتجات تحت شهادة BIS ويجب طباعتها على التغليف والمنتجات.
               </AccordionContent>
             </AccordionItem>
 
@@ -3412,7 +3479,8 @@ const ArabicServiceFaq = () => {
                 هل شهادة BIS إلزامية لجميع الواردات إلى الهند؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                لا. شهادة BIS إلزامية للمنتجات المدرجة تحت نظام شهادة BIS الهندي الإلزامي. ومع ذلك، الشهادة الطوعية متاحة للمنتجات الأخرى.
+                لا. شهادة BIS إلزامية للمنتجات المدرجة تحت نظام شهادة BIS الهندي
+                الإلزامي. ومع ذلك، الشهادة الطوعية متاحة للمنتجات الأخرى.
               </AccordionContent>
             </AccordionItem>
 
@@ -3421,7 +3489,8 @@ const ArabicServiceFaq = () => {
                 من يمكنه التقدم للحصول على شهادة BIS تحت FMCS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                فقط المصنعون الأجانب الفعليون (وليس المستوردون أو التجار) يمكنهم التقدم. الممثل الهندي المعتمد (AIR) إلزامي لتمثيلهم في الهند.
+                فقط المصنعون الأجانب الفعليون (وليس المستوردون أو التجار) يمكنهم
+                التقدم. الممثل الهندي المعتمد (AIR) إلزامي لتمثيلهم في الهند.
               </AccordionContent>
             </AccordionItem>
 
@@ -3430,7 +3499,8 @@ const ArabicServiceFaq = () => {
                 كم من الوقت يستغرق الحصول على شهادة BIS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                تستغرق عملية شهادة BIS تحت FMCS في المتوسط 120 يوماً، اعتماداً على جاهزية المستندات وجدولة التدقيق وأوقات الاختبار.
+                تستغرق عملية شهادة BIS تحت FMCS في المتوسط 120 يوماً، اعتماداً
+                على جاهزية المستندات وجدولة التدقيق وأوقات الاختبار.
               </AccordionContent>
             </AccordionItem>
 
@@ -3439,7 +3509,9 @@ const ArabicServiceFaq = () => {
                 ما هي التكاليف الرئيسية المتضمنة في شهادة BIS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                تشمل التكاليف رسوم التطبيق ورسوم التدقيق ورسوم اختبار المختبر ورسوم الترخيص والعلامات وضمان الأداء المصرفي (PBG) من بنك هندي معتمد من RBI.
+                تشمل التكاليف رسوم التطبيق ورسوم التدقيق ورسوم اختبار المختبر
+                ورسوم الترخيص والعلامات وضمان الأداء المصرفي (PBG) من بنك هندي
+                معتمد من RBI.
               </AccordionContent>
             </AccordionItem>
 
@@ -3448,7 +3520,8 @@ const ArabicServiceFaq = () => {
                 هل يمكن تجديد ترخيص BIS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                نعم. ترخيص BIS صالح عموماً لمدة 1-2 سنة ويمكن تجديده عند الوفاء بمتطلبات الامتثال وتحديث المستندات.
+                نعم. ترخيص BIS صالح عموماً لمدة 1-2 سنة ويمكن تجديده عند الوفاء
+                بمتطلبات الامتثال وتحديث المستندات.
               </AccordionContent>
             </AccordionItem>
 
@@ -3457,7 +3530,8 @@ const ArabicServiceFaq = () => {
                 ماذا يحدث إذا فشل المنتج أثناء اختبار مختبر BIS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                إذا فشل المنتج، قد يسمح BIS بالإجراء التصحيحي وإعادة الاختبار. الفشل المستمر يمكن أن يؤدي إلى رفض الطلب.
+                إذا فشل المنتج، قد يسمح BIS بالإجراء التصحيحي وإعادة الاختبار.
+                الفشل المستمر يمكن أن يؤدي إلى رفض الطلب.
               </AccordionContent>
             </AccordionItem>
 
@@ -3466,7 +3540,9 @@ const ArabicServiceFaq = () => {
                 هل من الضروري توظيف استشاري شهادة BIS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                ليس إلزامياً ولكن موصى به بشدة. يساعد الاستشاري في تقليل التأخير وإدارة الامتثال وتحسين فرص الموافقة من خلال ضمان التوافق الكامل مع بروتوكولات BIS.
+                ليس إلزامياً ولكن موصى به بشدة. يساعد الاستشاري في تقليل التأخير
+                وإدارة الامتثال وتحسين فرص الموافقة من خلال ضمان التوافق الكامل
+                مع بروتوكولات BIS.
               </AccordionContent>
             </AccordionItem>
 
@@ -3475,7 +3551,8 @@ const ArabicServiceFaq = () => {
                 هل يمكن تعليق أو إلغاء ترخيص BIS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                نعم. قد يعلق BIS أو يلغي الترخيص لعدم الامتثال أو فشل المنتج أو إساءة استخدام شعار ISI أو تناقضات التدقيق.
+                نعم. قد يعلق BIS أو يلغي الترخيص لعدم الامتثال أو فشل المنتج أو
+                إساءة استخدام شعار ISI أو تناقضات التدقيق.
               </AccordionContent>
             </AccordionItem>
 
@@ -3484,7 +3561,9 @@ const ArabicServiceFaq = () => {
                 ما هي المستندات المطلوبة لعملية شهادة BIS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                تشمل المستندات نموذج طلب FMCS وتقارير الاختبار وقوائم المعدات وشهادات المعايرة وتخطيط المصنع وخطاب تعيين AIR وإثبات دفع الرسوم.
+                تشمل المستندات نموذج طلب FMCS وتقارير الاختبار وقوائم المعدات
+                وشهادات المعايرة وتخطيط المصنع وخطاب تعيين AIR وإثبات دفع
+                الرسوم.
               </AccordionContent>
             </AccordionItem>
 
@@ -3493,7 +3572,8 @@ const ArabicServiceFaq = () => {
                 هل يمكن لممثل هندي معتمد واحد تمثيل طلبات BIS متعددة؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                نعم، بشرط أن يكونوا مخولين لكل مشروع ولديهم القدرة على التعامل مع التوثيق والتدقيق والتواصل لكل شهادة.
+                نعم، بشرط أن يكونوا مخولين لكل مشروع ولديهم القدرة على التعامل
+                مع التوثيق والتدقيق والتواصل لكل شهادة.
               </AccordionContent>
             </AccordionItem>
 
@@ -3502,7 +3582,9 @@ const ArabicServiceFaq = () => {
                 ما هو دور ضمان الأداء المصرفي؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                ضمان الأداء المصرفي يؤكد لـ BIS أن المصنع سيلتزم بالمعايير الهندية. وهو قابل للاسترداد عند إلغاء الترخيص وإلزامي لجميع طلبات FMCS للحصول على BIS الهندي.
+                ضمان الأداء المصرفي يؤكد لـ BIS أن المصنع سيلتزم بالمعايير
+                الهندية. وهو قابل للاسترداد عند إلغاء الترخيص وإلزامي لجميع
+                طلبات FMCS للحصول على BIS الهندي.
               </AccordionContent>
             </AccordionItem>
 
@@ -3511,7 +3593,9 @@ const ArabicServiceFaq = () => {
                 هل شهادة BIS معترف بها خارج الهند؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                بينما شهادة BIS هي معيار هندي، فهي محترمة في سياقات التجارة في العديد من المناطق التي تقبل الامتثال الهندي، خاصة في آسيا وأفريقيا.
+                بينما شهادة BIS هي معيار هندي، فهي محترمة في سياقات التجارة في
+                العديد من المناطق التي تقبل الامتثال الهندي، خاصة في آسيا
+                وأفريقيا.
               </AccordionContent>
             </AccordionItem>
 
@@ -3520,17 +3604,18 @@ const ArabicServiceFaq = () => {
                 كيف أعرف إذا كان منتجي يتطلب شهادة BIS؟
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                تحقق من القائمة المحدثة على موقع BIS الرسمي أو استشر استشاري BIS للتحقق مما إذا كان منتجك يندرج تحت الشهادة الإلزامية.
+                تحقق من القائمة المحدثة على موقع BIS الرسمي أو استشر استشاري BIS
+                للتحقق مما إذا كان منتجك يندرج تحت الشهادة الإلزامية.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-const ArabicFooter = () => {
+export const ArabicFooter = () => {
   return (
     <footer>
       <div className="relative ">
@@ -3666,9 +3751,7 @@ const ArabicFooter = () => {
                     placeholder="أدخل بريدك الإلكتروني"
                   />
                   <button className="flex items-center justify-center h-7 px-2 py-1.5 gap-x-1 text-[13px] md:text-[15px] whitespace-nowrap font-medium font-geist border rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 absolute right-1 top-1 border-none bg-white">
-                    <div className="text-[#2a5075]">
-                      أعلمني
-                    </div>
+                    <div className="text-[#2a5075]">أعلمني</div>
                   </button>
                 </div>
               </div>
@@ -3914,9 +3997,8 @@ const ArabicFooter = () => {
         </div>
       </div>
     </footer>
-  )
-}
-
+  );
+};
 
 const PointsListTwo = ({ points, heading }) => {
   return (

@@ -52,6 +52,7 @@ import { PlasticWaste } from "./components/manual/PlasticWaste";
 import { LegalMetrology } from "./components/manual/LegalMetrology";
 import LHSCable from "./pages/LHSCable";
 import ArabicBISFM from "./pages/ArabicBISFM";
+import ArabicISIMark from "./pages/ArabicISIMark";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -158,6 +159,11 @@ function App() {
         <Route
           path="/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
           element={<ArabicBISFM />}
+        />
+
+        <Route
+          path="/ar/dalil-shahadat-bis-bis-alhind"
+          element={<ArabicISIMark />}
         />
 
         {/* Localized routes for other languages */}

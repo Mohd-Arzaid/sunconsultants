@@ -198,6 +198,8 @@
       ]
     }
   },
+
+
   "document": {
     "title": "Required Documents",
     "mainHeading": "Required Documents for BIS Registration",
@@ -222,6 +224,8 @@
       "16. Undertaking Regarding Non-Standard Products"
     ]
   },
+
+
   "costing": {
     "title": "Costing",
     "mainHeading": "Cost of BIS Certification (bis certification cost)",
@@ -260,6 +264,8 @@
       ]
     }
   },
+
+  
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Can't find the answer you are looking for?",
