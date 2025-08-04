@@ -5,6 +5,7 @@ import {
   Phone,
   PhoneCall,
   SendHorizontal,
+  SlashIcon,
   User,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,9 +16,18 @@ import { notifications } from "../data/notificationsData.js";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { Services } from "@/components/manual/Services";
-import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 import { getUrlSlug, getNotificationCanonicalUrl } from "@/utils/urlUtils";
 import { useState } from "react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "react-router-dom";
+
 
 const NotificationDetail = () => {
   const { notificationName } = useParams();
@@ -34,8 +44,68 @@ const NotificationDetail = () => {
   }
 
   return (
-    <div className="bg-white">
-      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+    <div className="bg-white relative">
+      <Helmet>
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "BIS QCO Updates",
+                item: "https://bis-certifications.com/bis-qco-updates",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: notification.title,
+                item: getNotificationCanonicalUrl(notification.title),
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/bis-qco-updates">BIS QCO Updates</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>{notification.subHeading}</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side - Content and PDF */}
           <NotificationDetailLeft notification={notification} />
@@ -78,8 +148,6 @@ const NotificationDetailLeft = ({ notification }) => {
 
   return (
     <>
-      {/* SEO Breadcrumbs - Structured Data Only */}
-      <SEOBreadcrumbs customTitle={seoData.title} />
 
       {/* SEO Meta Tags */}
       <Helmet>
