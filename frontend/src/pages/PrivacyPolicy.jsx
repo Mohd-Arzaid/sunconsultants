@@ -519,7 +519,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row  items-center mt-6 md:mt-4 mb-4 gap-4 md:gap-0 md:justify-between">
             <div className="flex gap-3 flex-wrap items-center justify-center">
               <a
-                href="https://github.com/Mohd-Arzaid"
+                href="https://www.linkedin.com/company/sun-certifications-india/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -543,7 +543,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://instagram.com/arzaid._.xd"
+                href="https://www.instagram.com/suncertificationsindia"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -51,6 +51,7 @@ import { LMPC } from "./components/manual/LMPC";
 import { PlasticWaste } from "./components/manual/PlasticWaste";
 import { LegalMetrology } from "./components/manual/LegalMetrology";
 import LHSCable from "./pages/LHSCable";
+import ArabicBISFM from "./pages/ArabicBISFM";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -153,6 +154,11 @@ function App() {
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="404" element={<Error404 />} />
         </Route>
+
+        <Route
+          path="/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
+          element={<ArabicBISFM />}
+        />
 
         {/* Localized routes for other languages */}
         <Route path="/:lang/*" element={<LocalizedRoute />}>

@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg";
+
 import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
 
 import {
@@ -791,13 +792,24 @@ export const BISFMContentLeft = () => {
         <StandardizationSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <RepresentationSection />
+
+
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        
+        
         <DocumentSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        
+        
+        
+        
         <ProcessSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+       
+       
         <CostingSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+       
         <SurveillanceSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
