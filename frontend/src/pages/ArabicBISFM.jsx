@@ -7,7 +7,7 @@ import { ClockLoader } from "react-spinners";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 import ISIMARKImage from "@/assets/servicesImages/ISIMARKUpdated.jpg";
 import BISCertificateImage from "@/assets/bisfmpageimage/biscertificate.png";
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, AlignLeft, ArrowRightIcon, Languages, Shield, Clock, Award, HeartHandshake, Lightbulb, BarChart, PhoneCall, Phone, MessageCircle, SendHorizontal, User } from "lucide-react";
 import axios from "axios";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import {
@@ -45,6 +45,8 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
+import { Marquee } from "@/components/magicui/marquee";
+import { Badge } from "@/components/ui/badge";
 
 
 
@@ -861,7 +863,7 @@ const ArabicBISFMContent = () => {
           {/* Left Side */}
           <ArabicBISFMContentLeft />
           {/* Right Side */}
-          <ServiceContentRight />
+          <ArabicServiceContentRight />
         </div>
       </div>
       <ArabicServiceFaq />
@@ -875,6 +877,961 @@ const ArabicBISFMContent = () => {
       </div>
 
     </section>
+  );
+};
+
+const ArabicServiceContentRight = () => {
+  return (
+    <div className="flex flex-col gap-6 w-full md:w-[360px] ">
+      <ArabicLatestBlog />
+      <ArabicClientTestimonial />
+      <ArabicWhyChooseUs />
+      <ArabicFreeCallBack />
+    </div>
+  )
+}
+
+
+const ArabicFreeCallBack = () => {
+  const [loading, setLoading] = useState(false);
+
+  // Function to get page name based on URL
+  const getPageName = () => {
+    const path = window.location.pathname;
+
+    // Service pages
+    if (path.includes("/cdsco-registration-certification"))
+      return "CDSCO Registration";
+
+    // BISFM
+    if (
+      path.includes(
+        "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes("/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu")
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (
+      path.includes(
+        "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"
+      )
+    )
+      return "BIS Mark Foreign";
+
+    if (path.includes("/a-guide-on-how-to-obtain-epr-certificate"))
+      return "EPR Registration";
+
+    // BIS Certification
+    if (path.includes("/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification";
+
+    if (path.includes("/ar/ma-huwa-shahadat-bis-bis-alhind"))
+      return "BIS Certification";
+
+    if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
+      return "BIS Certification";
+
+    if (path.includes("/es/que-es-el-certificado-bis-bis-indio"))
+      return "BIS Certification";
+
+    if (path.includes("/fr/quest-ce-que-le-certificat-bis-indien"))
+      return "BIS Certification";
+
+    if (path.includes("/id/apa-itu-sertifikat-bis-bis-india"))
+      return "BIS Certification";
+
+    if (path.includes("/it/cose-il-certificato-bis-indiano"))
+      return "BIS Certification";
+
+    if (path.includes("/ja/bis-shomeisho-to-wa-indo-bis"))
+      return "BIS Certification";
+
+    if (path.includes("/ko/bis-injeungseo-ran-indo-bis"))
+      return "BIS Certification";
+
+    if (path.includes("/nl/wat-is-het-bis-certificaat-indiaas-bis"))
+      return "BIS Certification";
+
+    if (path.includes("/th/bai-rap-rong-bis-khue-arai-bis-india"))
+      return "BIS Certification";
+
+    if (path.includes("/vi/chung-chi-bis-la-gi-bis-an-do"))
+      return "BIS Certification";
+
+    if (path.includes("/a-guide-on-how-to-obtain-lmpc-certificate"))
+      return "LMPC Registration";
+    if (path.includes("/epr-certificate-for-plastic-waste-management-pwm"))
+      return "Plastic Waste";
+    if (path.includes("/what-is-legal-metrology-or-lmpc-certificate"))
+      return "Legal Metrology";
+
+    // ISI Mark Indian
+    if (path.includes("a-guide-to-bis-certification-indian-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/ar/dalil-shahadat-bis-bis-alhind"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/de/leitfaden-bis-zertifizierung-indisches-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/es/guia-certificacion-bis-bis-indio"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/fr/guide-certification-bis-bis-indien"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/id/panduan-sertifikasi-bis-bis-india"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/it/guida-alla-certificazione-bis-bis-indiano"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/ja/bis-nintei-gaido-india-no-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/ko/bis-injeung-gaideu-indo-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/nl/gids-voor-bis-certificering-indiaas-bis"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/th/khumanam-kanraprong-bis-bis-india"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/vi/huong-dan-chung-nhan-bis-bis-an-do"))
+      return "ISI Mark Indian";
+
+    if (path.includes("/epr-certificate-for-battery-waste-management-bwm"))
+      return "Battery Waste";
+
+    // CRS Registration
+    if (path.includes("/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/ar/ma-huwa-crs-bis-aw-tasjeel-crs"))
+      return "CRS Registration";
+
+    if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
+      return "CRS Registration";
+
+    if (path.includes("/en/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
+      return "CRS Registration";
+
+    if (path.includes("/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"))
+      return "CRS Registration";
+
+    if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
+      return "CRS Registration";
+
+    if (path.includes("/it/cose-il-crs-bis-o-registrazione-crs"))
+      return "CRS Registration";
+
+    if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
+      return "CRS Registration";
+
+    if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
+      return "CRS Registration";
+
+    if (path.includes("/nl/wat-is-crs-bis-of-crs-registratie"))
+      return "CRS Registration";
+
+    if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
+      return "CRS Registration";
+
+    if (path.includes("/vi/crs-bis-la-gi-hoac-dang-ky-crs"))
+      return "CRS Registration";
+
+    if (
+      path.includes("/information-about-peso-certification-peso-license-india")
+    )
+      return "PESO";
+    if (path.includes("/information-about-tec-certificate-mtcte")) return "TEC";
+    if (path.includes("/information-about-wpc-certificate-eta-approval"))
+      return "WPC";
+    if (path.includes("/restriction-of-hazardous-substance-rohs-certificate"))
+      return "ROHS";
+    if (path.includes("/bee-certification")) return "BEE";
+    if (path.includes("/ce-certification")) return "CE Certification";
+    if (path.includes("/emi-emc-certification")) return "EMI EMC";
+    if (path.includes("/cb-certification")) return "CB Certification";
+
+    // schemeX
+    if (path.includes("/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
+
+    if (path.includes("/ar/shahadat-bis-alhind-tahata-almukhatat-x"))
+      return "SchemeX";
+
+    if (path.includes("/de/indische-bis-zertifizierung-nach-schema-x"))
+      return "SchemeX";
+
+    if (path.includes("/en/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
+
+    if (path.includes("/es/certificacion-bis-india-bajo-esquema-x"))
+      return "SchemeX";
+
+    if (path.includes("/fr/certification-bis-indienne-selon-schema-x"))
+      return "SchemeX";
+
+    if (path.includes("/id/sertifikasi-bis-india-di-bawah-skema-x"))
+      return "SchemeX";
+
+    if (path.includes("/it/certificazione-bis-indiana-secondo-schema-x"))
+      return "SchemeX";
+
+    if (path.includes("/ja/indo-no-bis-nintei-sukimu-x")) return "SchemeX";
+
+    if (path.includes("/ko/indo-bis-injeung-scheme-x-haenghaeng"))
+      return "SchemeX";
+
+    if (path.includes("/nl/indiaas-bis-certificaat-volgens-schema-x"))
+      return "SchemeX";
+
+    if (path.includes("/th/bis-prathiap-india-taem-dai-tae-skema-x"))
+      return "SchemeX";
+
+    if (path.includes("/vi/chung-nhan-bis-an-do-theo-scheme-x"))
+      return "SchemeX";
+  };
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+    pageUrl: window.location.href,
+    pageName: getPageName(),
+  });
+
+  const { fullName, email, phoneNumber, message, pageUrl, pageName } = formData;
+
+  const handleOnChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Full name validation
+    const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
+    if (!nameRegex.test(fullName)) {
+      toast({
+        variant: "destructive",
+        title: "الرجاء إدخال اسم كامل صالح.",
+        description: "الاسم يجب أن يحتوي على الحروف والمساحات فقط.",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      toast({
+        variant: "destructive",
+        title: "الرجاء إدخال رقم هاتف صالح",
+        description: "رقم الهاتف يجب أن يكون (8-15 رقم)",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const commonDomains = [
+      "gmail.com",
+      "yahoo.com",
+      "hotmail.com",
+      "outlook.com",
+    ];
+    const domain = email.split("@")[1];
+
+    if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
+      toast({
+        variant: "destructive",
+        title: "الرجاء إدخال عنوان بريد إلكتروني صالح.",
+        description: "تحقق من صحة تنسيق بريدك الإلكتروني",
+      });
+      setLoading(false);
+      return;
+    }
+
+    console.log(formData);
+
+    try {
+      const response = await axios.post(
+        `${BASE_URL}/contact/submit-contact`,
+        formData
+      );
+
+      if (!response.data.success) {
+        throw new Error(response.data.message);
+      }
+      toast({
+        title: "تم إرسال نموذج الاتصال بنجاح!",
+        description: "شكرا لتواصلك معنا. سيتواصل معك فريقنا قريبا.",
+      });
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+        pageUrl: window.location.href,
+        pageName: getPageName(),
+      });
+    } catch (error) {
+      const errorMessage = error.response?.data?.message || "فشل في إرسال تفاصيل نموذج الاتصال!";
+      toast({
+        variant: "destructive",
+        title: errorMessage,
+        description: "حدث خطأ ما. يرجى التحقق من التفاصيل والمحاولة مرة أخرى.",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+      {/* Header */}
+      <div className="flex gap-2 items-center">
+        <PhoneCall className="text-[#232327]" />
+        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+          اطلب اتصال مجاني
+        </h1>
+      </div>
+
+      {/* Intro Text */}
+      <p className="mt-3 text-sm text-gray-600 font-geist">
+        اترك تفاصيلك أدناه وسيتصل بك خبراؤنا خلال 24 ساعة لمناقشة احتياجات الامتثال التنظيمي الخاصة بك.
+      </p>
+
+      {/* Form */}
+      <form onSubmit={handleFormSubmit} className="mt-5 space-y-4">
+        {/* Name Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <User className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="text"
+            name="fullName"
+            value={fullName}
+            onChange={handleOnChange}
+            disabled={loading}
+            required
+            placeholder="اسمك*"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Phone Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <Phone className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="tel"
+            name="phoneNumber"
+            value={phoneNumber}
+            onChange={handleOnChange}
+            disabled={loading}
+            required
+            placeholder="رقم الهاتف*"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Email Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <Mail className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleOnChange}
+            disabled={loading}
+            required
+            placeholder="عنوان البريد الإلكتروني*"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Message Field */}
+        <div className="relative">
+          <div className="absolute top-3 left-3 pointer-events-none">
+            <MessageCircle className="h-5 w-5 text-gray-400" />
+          </div>
+          <textarea
+            name="message"
+            value={message}
+            onChange={handleOnChange}
+            disabled={loading}
+            required
+            placeholder="الشهادة المطلوبة*"
+            rows="3"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          ></textarea>
+        </div>
+
+        {/* Submit Button */}
+        <Button
+          type="submit"
+          disabled={loading}
+          className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden"
+        >
+          <span className="relative z-10 flex items-center">
+            {loading ? (
+              <div className="flex gap-3 items-center justify-center">
+                <ClockLoader size={22} color="#fff" />
+                <span>إرسال</span>
+              </div>
+            ) : (
+              <>
+                اطلب اتصال
+                <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </>
+            )}
+          </span>
+          <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </Button>
+      </form>
+
+      {/* Privacy Note */}
+      <p className="mt-3 text-xs text-center text-gray-500 font-geist">
+        بإرسال هذا النموذج، فإنك توافق على{" "}
+        <a href="#" className="text-blue-600 hover:underline">
+          سياسة الخصوصية
+        </a>{" "}
+        وتوافق على الاتصال بك.
+      </p>
+    </div>
+  );
+};
+
+const ArabicLatestBlog = () => {
+  const blogPosts = [
+    {
+      "image": "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "BIS",
+      "title": "شهادة BIS لكراسي العمل",
+      "url": "/latest-notification/work-chairs"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "BIS",
+      "title": "شهادة BIS للكراسي والمقاعد",
+      "url": "/latest-notification/and-stools"
+    },
+    {
+      "image": "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
+      "category": "BIS",
+      "title": "إشعار BIS للطاولات والمكاتب",
+      "url": "/latest-notification/and-desks"
+    },
+    {
+      "image": "https://alephindia.in/images/isi/furniture-storage-units.png",
+      "category": "BIS",
+      "title": "إشعار BIS لوحدات التخزين",
+      "url": "/latest-notification/storage-units"
+    },
+    {
+      "image": "https://alephindia.in/images/isi/furniture-bunk-beds.png",
+      "category": "BIS",
+      "title": "إشعار BIS للأسرة المزدوجة",
+      "url": "/latest-notification/bunk-beds"
+    },
+    {
+      "image": "https://jharkhandstatenews.com/assets/admin/uploads/topstory_img/199879_1693229978.jpg",
+      "category": "BIS",
+      "title": "إشعار BIS لكابل الطاقة الشمسية DC وكابل مقاومة الحريق",
+      "url": "/latest-notification/survival-cable"
+    },
+    {
+      "image": "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
+      "category": "BIS",
+      "title": "إشعار BIS للألمنيوم المطاوع وسبائك الألمنيوم، مخزون التشكيل والمشكولات",
+      "url": "/latest-notification/and-forgings"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "BIS",
+      "title": "إشعار BIS لحمض H",
+      "url": "/latest-notification/h-acid"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1617155093730-a8bf47be792d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "BIS",
+      "title": "إشعار BIS لحمض K",
+      "url": "/latest-notification/k-acid"
+    },
+    {
+      "image": "https://media.istockphoto.com/id/940248330/photo/potassium-permanganate-sodium-sulfate-mixture.jpg?s=612x612&w=0&k=20&c=lhxvzbD2cVVOJKQyLIOqSaq9dlJTtDH07kHoBT5q7_4=",
+      "category": "BIS",
+      "title": "إشعار BIS لكبريتون الفينيل",
+      "url": "/latest-notification/vinyl-sulphone"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/71qI8OoNdtL._AC_UF1000,1000_QL80_.jpg",
+      "category": "BIS",
+      "title": "إشعار BIS لمنشطات السياج الكهربائي",
+      "url": "/latest-notification/fence-energizers"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "BIS",
+      "title": "إشعار BIS لغسالات الملابس",
+      "url": "/latest-notification/washing-machines"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/31waXELONZL.jpg",
+      "category": "BIS",
+      "title": "إشعار BIS لألواح الجبس الجصي",
+      "url": "/latest-notification/plaster-boards"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
+      "category": "BIS",
+      "title": "إشعار BIS لأنابيب سبائك الألمنيوم لأغراض الري - أنابيب ملحومة",
+      "url": "/latest-notification/-welded-tubes"
+    },
+    {
+      "image": "https://www.sunnysteel.com/img/extruded-finned-tube.jpg",
+      "category": "BIS",
+      "title": "إشعار BIS لأنبوب سبائك الألمنيوم لأغراض الري - أنبوب مبثوق",
+      "url": "/latest-notification/extruded-tube"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
+      "category": "BIS",
+      "title": "إشعار BIS لقضيب الألمنيوم درجة EC المنتج بالصب والدرفلة المستمرة",
+      "url": "/latest-notification/and-rolling"
+    },
+    {
+      "image": "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
+      "category": "BIS",
+      "title": "إشعار BIS للألمنيوم المطاوع وقضبان وعيدان وأقسام سبائك الألمنيوم",
+      "url": "/latest-notification/and-sections"
+    },
+    {
+      "image": "https://5.imimg.com/data5/SELLER/Default/2023/3/EC/HR/GU/184505254/regular-gypsum-plasterboard.jpg",
+      "category": "BIS",
+      "title": "إشعار BIS لألواح الجبس الجصي",
+      "url": "/latest-notification/plaster-boards"
+    }
+  ];
+
+  return (
+    <div className="w-full md:w-[360px] p-6 rounded-lg bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+      <div className="flex gap-2 items-center ">
+        <AlignLeft className="text-[#232327]" />
+        <h1 className="text-xl font-geist font-semibold  text-[#232327]">
+          أحدث المدونات
+        </h1>
+      </div>
+      <div className="relative h-[400px] overflow-hidden mt-5">
+        <Marquee vertical pauseOnHover={true} className="[--duration:20s]">
+          {blogPosts.map((post, index) => (
+            <div key={index} className="mb-5">
+              <div className="group flex gap-4 transition-all duration-300">
+                <div className="h-20 w-20 overflow-hidden rounded-md">
+                  <img
+                    src={post.image || "/placeholder.svg"}
+                    alt={post.title}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    onError={(e) => {
+                      e.target.src = "/placeholder.svg";
+                    }}
+                  />
+                </div>
+
+                <div className="flex-1">
+                  <div className="space-y-2">
+                    <Badge
+                      variant="outline"
+                      className="bg-emerald-50 font-geist text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
+                    >
+                      {post.category}
+                    </Badge>
+                    <p className="line-clamp-2 font-geist text-sm font-normal text-zinc-900">
+                      {post.title}
+                    </p>
+
+                    {/* <Link to={post.url}> */}
+                    <div>
+                      <Button
+                        variant="link"
+                        className="text-blue-900 font-geist hover:text-blue-950 p-0 h-auto font-normal text-sm"
+                      >
+                        اقرأ المزيد
+                        <ArrowRightIcon className="-ml-1 mt-0.5" />
+                      </Button>
+                      {/* </Link> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {index < blogPosts.length - 1 && (
+                <div className="mt-5 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
+              )}
+            </div>
+          ))}
+        </Marquee>
+      </div>
+
+      {/* View More Button */}
+      <div className="mt-5 w-full flex justify-center">
+        <Link to="/latest-notifications" className="w-full">
+          <Button
+            variant="outline"
+            className="font-geist w-full bg-[#212126] hover:bg-[#212126]/90 text-white border-gray-300 hover:bg-gray-100"
+          >
+            عرض جميع المدونات
+            <ArrowRightIcon className="ml-1 h-4 w-4" />
+          </Button>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+const ArabicClientTestimonial = () => {
+  const testimonials = [
+    {
+      "name": "السيدة إلياواتي",
+      "role": "شركة PT Quty Karunia، مرخص BIS في فيتنام",
+      "content": "قدمت شركة Sun Certifications India خدمات ممتازة لشهادة BIS. خدمتهم المتميزة وإخلاصهم كسب ثقتنا."
+    },
+    {
+      "name": "السيدة بيل",
+      "role": "شركة Thantawan Industries Ltd، مرخص BIS في تايلاند",
+      "content": "دعمتنا شركة Sun Certifications India طوال عملية شهادة BIS. خدمة العملاء المتجاوبة لديهم استثنائية."
+    },
+    {
+      "name": "السيدة جون مين سيم",
+      "role": "شركة Leaderart Industries، مرخص BIS في ماليزيا",
+      "content": "ساعدتنا شركة Sun Certifications India في الحصول على شهادة BIS، مما ضاعف مشاركتنا في الهند. خدماتهم أصيلة ومحدثة."
+    },
+    {
+      "name": "السيدة إلياواتي",
+      "role": "شركة PT Quty Karunia، مرخص BIS في فيتنام",
+      "content": "واحد من أفضل استشاريي BIS في الهند! خبرتهم جعلت العملية بأكملها سلسة بالنسبة لنا."
+    },
+    {
+      "name": "السيدة بيل",
+      "role": "شركة Thantawan Industries Ltd، مرخص BIS في تايلاند",
+      "content": "أوصي بشدة بشركة Sun Certifications India للحصول على شهادة BIS بدون متاعب. خدمة مهنية ودقيقة."
+    }
+  ];
+
+  return (
+    <div className="w-full md:w-[360px] rounded-lg overflow-hidden bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+      <div className="pt-6 px-6 pb-4">
+        <div className="flex gap-2 items-center">
+          <Languages className="text-[#232327]" />
+          <h1 className="text-xl font-geist font-semibold text-[#232327]">
+            شهادات العملاء
+          </h1>
+        </div>
+        <div className="mt-8 mb-5 rounded-lg h-60 overflow-hidden">
+          <Marquee
+            vertical
+            repeat={2}
+            pauseOnHover={true}
+            className="[--duration:18s]"
+          >
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="group mb-6">
+                <div className="bg-white p-4 rounded-lg border border-gray-300 shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <div className="mb-3">
+                    <h3 className="font-geist font-bold text-neutral-800 text-base">
+                      {testimonial.name}
+                    </h3>
+                    <p className="text-sm text-neutral-600 font-geist mt-1">
+                      {testimonial.role}
+                    </p>
+                  </div>
+                  <p className="italic text-neutral-700 font-geist text-sm leading-relaxed font-medium">
+                    &ldquo;{testimonial.content}&rdquo;
+                  </p>
+                </div>
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+const ArabicWhyChooseUs = () => {
+  const reasons = [
+    {
+      "title": "إرشاد الخبراء",
+      "description": "يجلب فريقنا أكثر من 12 عامًا من الخبرة في امتثال CDSCO و BIS."
+    },
+    {
+      "title": "فعال من حيث الوقت",
+      "description": "نحن نقلل وقت الموافقة بنسبة تصل إلى 40% مع العمليات المبسطة."
+    },
+    {
+      "title": "نجاح مثبت",
+      "description": "معدل نجاح 100% مع أكثر من 1500 تسجيل ناجح."
+    },
+    {
+      "title": "محوره العميل",
+      "description": "مدير حساب مخصص يضمن خدمة شخصية."
+    }
+  ];
+
+  const stats = {
+    "experience": {
+      "value": "12+",
+      "label": "سنوات الخبرة"
+    },
+    "clients": {
+      "value": "1500+",
+      "label": "عملاؤنا"
+    },
+    "successRate": {
+      "value": "100%",
+      "label": "معدل النجاح"
+    },
+    "countries": {
+      "value": "20+",
+      "label": "البلدان المخدومة"
+    }
+  };
+
+  const performance = {
+    "title": "أداؤنا",
+    "metrics": {
+      "speed": {
+        "label": "السرعة",
+        "value": "95"
+      },
+      "success": {
+        "label": "النجاح",
+        "value": "99"
+      },
+      "satisfaction": {
+        "label": "الرضا",
+        "value": "98"
+      }
+    }
+  };
+
+  const reasonIcons = {
+    0: <Shield className="h-8 w-8 text-blue-600" />,
+    1: <Clock className="h-8 w-8 text-emerald-600" />,
+    2: <Award className="h-8 w-8 text-amber-600" />,
+    3: <HeartHandshake className="h-8 w-8 text-purple-600" />,
+  };
+
+  return (
+    <div className="w-full md:w-[360px] p-5 rounded-lg bg-gradient-to-br from-slate-50 to-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+      {/* Header with Animation */}
+      <div className="flex gap-2 items-center">
+        <Lightbulb className="text-[#232327]" />
+        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+          لماذا تختارنا
+        </h1>
+      </div>
+
+      {/* Highlight Stats */}
+      <div className="mt-4 grid grid-cols-2 gap-2">
+        <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-blue-200">
+          <h3 className="text-2xl font-bold text-blue-600 font-geist">
+            {stats.experience.value}
+          </h3>
+          <p className="text-xs text-gray-600 font-geist">
+            {stats.experience.label}
+          </p>
+        </div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-emerald-200">
+          <h3 className="text-2xl font-bold text-emerald-600 font-geist">
+            {stats.clients.value}
+          </h3>
+          <p className="text-xs text-gray-600 font-geist">
+            {stats.clients.label}
+          </p>
+        </div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-amber-200">
+          <h3 className="text-2xl font-bold text-amber-600 font-geist">
+            {stats.successRate.value}
+          </h3>
+          <p className="text-xs text-gray-600 font-geist">
+            {stats.successRate.label}
+          </p>
+        </div>
+        <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-purple-200">
+          <h3 className="text-2xl font-bold text-purple-600 font-geist">
+            {stats.countries.value}
+          </h3>
+          <p className="text-xs text-gray-600 font-geist">
+            {stats.countries.label}
+          </p>
+        </div>
+      </div>
+
+      {/* Reasons List */}
+      <div className="mt-4 space-y-3">
+        {reasons.map((reason, index) => (
+          <div
+            key={index}
+            className="group bg-white rounded-lg p-3 border border-gray-200 hover:border-blue-200"
+          >
+            <div className="flex gap-3 items-start">
+              <div className="p-1.5 bg-gray-50 rounded-lg group-hover:bg-blue-50">
+                {reasonIcons[index]}
+              </div>
+              <div>
+                <h3 className="font-geist font-semibold text-gray-900 text-sm">
+                  {reason.title}
+                </h3>
+                <p className="text-xs text-gray-600 font-geist">
+                  {reason.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Simple Performance */}
+      <div className="mt-4 bg-blue-50 rounded-lg p-3 border border-blue-100">
+        <div className="flex items-center gap-1 mb-2">
+          <BarChart className="h-4 w-4 text-blue-600" />
+          <span className="text-sm font-medium text-gray-900 font-geist">
+            {performance.title}
+          </span>
+        </div>
+        <div className="grid grid-cols-3 gap-2">
+          <div className="text-center">
+            <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
+              <div
+                className="h-full bg-blue-600 rounded-full"
+                style={{ width: `${performance.metrics.speed.value}%` }}
+              ></div>
+            </div>
+            <span className="text-xs text-gray-600 font-geist">
+              {performance.metrics.speed.label}
+            </span>
+          </div>
+          <div className="text-center">
+            <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
+              <div
+                className="h-full bg-emerald-600 rounded-full"
+                style={{ width: `${performance.metrics.success.value}%` }}
+              ></div>
+            </div>
+            <span className="text-xs text-gray-600 font-geist">
+              {performance.metrics.success.label}
+            </span>
+          </div>
+          <div className="text-center">
+            <div className="h-1.5 w-full bg-gray-100 rounded-full mb-1">
+              <div
+                className="h-full bg-amber-600 rounded-full"
+                style={{ width: `${performance.metrics.satisfaction.value}%` }}
+              ></div>
+            </div>
+            <span className="text-xs text-gray-600 font-geist">
+              {performance.metrics.satisfaction.label}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
