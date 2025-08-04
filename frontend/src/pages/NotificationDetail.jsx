@@ -7,6 +7,7 @@ import {
   SendHorizontal,
   SlashIcon,
   User,
+  Download
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Footer from "@/common/Footer";
@@ -27,7 +28,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-
 
 const NotificationDetail = () => {
   const { notificationName } = useParams();
@@ -318,8 +318,63 @@ const NotificationDetailLeft = ({ notification }) => {
             }}
           />
         </div>
+
+
+        {/* Profile Card  */}
+        <ProfileCard/>
+      
       </div>
     </>
+  );
+};
+
+
+const ProfileCard = () => {
+  const handleDownloadPDF = () => {
+    // Using a sample PDF from Google for demonstration
+    const pdfUrl = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+    
+    // Create a temporary link element and trigger download
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'company-profile.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  return (
+    <div className="mt-8 mb-4 p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+      <div className="flex items-center justify-between">
+        {/* Left Side - Profile Card Text */}
+        <div className="flex items-center gap-4">
+          <div className="w-11 h-11 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+            <User className="h-6 w-6 text-blue-600" />
+          </div>
+          <div>
+            <h3 className="text-xl font-geist font-semibold text-[#1e1e1e]">
+              Profile Card
+            </h3>
+            <p className="text-base text-gray-600 font-medium font-geist">
+              Download our company profile
+            </p>
+          </div>
+        </div>
+
+        {/* Right Side - Download Button */}
+        <Button
+          onClick={handleDownloadPDF}
+          className="font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden transition-all duration-300"
+        >
+          <span className="relative z-10 flex items-center">
+            Download PDF
+            <Download className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+          </span>
+          <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </Button>
+      </div>
+    </div>
   );
 };
 
