@@ -124,4 +124,45 @@ export const videosData = [
       "System Implementation",
     ],
   },
+  {
+    id: 7,
+    embedId: "hSNURmPAKDA",
+    title: "BIS Certification Services - Expert Guidance for Manufacturers",
+    description:
+      "Professional BIS certification services providing expert guidance for manufacturers seeking compliance with Indian standards. Comprehensive support for certification process and regulatory requirements.",
+    category: "BIS Certification",
+    duration: "PT7M30S", // 7 minutes 30 seconds
+    uploadDate: "2024-04-15T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Professional Services",
+      "Expert Guidance",
+      "Manufacturing",
+      "Indian Standards",
+      "Compliance",
+      "Regulatory Support",
+      "Certification Process",
+    ],
+  },
+  {
+    id: 8,
+    embedId: "7NazqQXmOa8",
+    title:
+      "Quality Assurance and Standards Compliance - Manufacturing Excellence",
+    description:
+      "Comprehensive overview of quality assurance practices and standards compliance for manufacturing excellence. Learn about best practices, regulatory requirements, and quality management systems.",
+    category: "Quality Assurance",
+    duration: "PT9M45S", // 9 minutes 45 seconds
+    uploadDate: "2024-05-01T00:00:00+00:00",
+    tags: [
+      "Quality Assurance",
+      "Standards Compliance",
+      "Manufacturing Excellence",
+      "Quality Management",
+      "Best Practices",
+      "Regulatory Requirements",
+      "Process Optimization",
+      "Industry Standards",
+    ],
+  },
 ];
