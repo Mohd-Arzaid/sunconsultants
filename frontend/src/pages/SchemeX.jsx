@@ -1119,14 +1119,28 @@ export const SchemeXContentLeft = () => {
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <Certification />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        
         <Procedure />
+
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        
+        
+        
         <Pricing />
+
+
+
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+      
+      
         <Representative />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+       
+       
+       
         <Benefits />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+      
         <Conclusion />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
@@ -1760,6 +1774,7 @@ const Pricing = () => {
       </div>
     </section>
   );
+
 };
 
 const Representative = () => {

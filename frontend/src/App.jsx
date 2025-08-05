@@ -54,6 +54,7 @@ import LHSCable from "./pages/LHSCable";
 import ArabicBISFM from "./pages/ArabicBISFM";
 import ArabicISIMark from "./pages/ArabicISIMark";
 import ArabicCRS from "./pages/ArabicCRS";
+import ArabicSchemeX from "./pages/ArabicSchemeX";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -171,6 +172,12 @@ function App() {
         <Route
           path="/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
           element={<ArabicCRS />}
+        />
+
+
+<Route
+          path="ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"
+          element={<ArabicSchemeX />}
         />
 
 
