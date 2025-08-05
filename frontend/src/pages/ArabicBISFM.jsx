@@ -336,6 +336,9 @@ export const ArabicServiceContactForm = () => {
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration";
 
+    if (path.includes("/ar/ma-huwa-crs-bis-aw-tasjeel-crs"))
+      return "CRS Registration";
+
     if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
       return "CRS Registration";
 
@@ -830,8 +833,8 @@ const ArabicBISFMIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -853,16 +856,16 @@ const ArabicBISFMIndex = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {SECTION_NAMES[item]}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
                 }`}
             />
           </div>
@@ -1097,6 +1100,9 @@ const ArabicFreeCallBack = () => {
 
     // CRS Registration
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration";
+
+    if (path.includes("/ar/ma-huwa-crs-bis-aw-tasjeel-crs"))
       return "CRS Registration";
 
     if (path.includes("/ar/ma-huwa-crs-bis-aw-tasjeel-crs"))

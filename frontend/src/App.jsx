@@ -53,6 +53,7 @@ import { LegalMetrology } from "./components/manual/LegalMetrology";
 import LHSCable from "./pages/LHSCable";
 import ArabicBISFM from "./pages/ArabicBISFM";
 import ArabicISIMark from "./pages/ArabicISIMark";
+import ArabicCRS from "./pages/ArabicCRS";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -165,6 +166,18 @@ function App() {
           path="/ar/dalil-shahadat-bis-bis-alhind"
           element={<ArabicISIMark />}
         />
+
+
+        <Route
+          path="/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
+          element={<ArabicCRS />}
+        />
+
+
+
+
+
+
 
         {/* Localized routes for other languages */}
         <Route path="/:lang/*" element={<LocalizedRoute />}>
