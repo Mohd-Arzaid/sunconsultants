@@ -945,7 +945,7 @@ const BISCRSContent = () => {
   );
 };
 
-const CISProductTable = () => {
+export const CISProductTable = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 20;
