@@ -390,6 +390,10 @@ export const ArabicServiceContactForm = () => {
     if (path.includes("/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
 
+
+    if (path.includes("/ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"))
+      return "SchemeX";
+
     if (path.includes("/de/indische-bis-zertifizierung-nach-schema-x"))
       return "SchemeX";
 
@@ -1157,6 +1161,9 @@ const ArabicFreeCallBack = () => {
 
     // schemeX
     if (path.includes("/indian-bis-certification-under-scheme-x"))
+      return "SchemeX";
+
+    if (path.includes("/ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"))
       return "SchemeX";
 
     if (path.includes("/ar/shahadat-bis-alhind-tahata-almukhatat-x"))
