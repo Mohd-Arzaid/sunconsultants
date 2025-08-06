@@ -498,17 +498,10 @@ export const ArabicServiceContactForm = () => {
       return;
     }
 
-    // Email validation
+    // Email validation - allow any domain
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const commonDomains = [
-      "gmail.com",
-      "yahoo.com",
-      "hotmail.com",
-      "outlook.com",
-    ];
-    const domain = email.split("@")[1];
 
-    if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
+    if (!emailRegex.test(email)) {
       toast({
         variant: "destructive",
         title: "البريد الإلكتروني مطلوب",
@@ -1279,17 +1272,10 @@ const ArabicFreeCallBack = () => {
       return;
     }
 
-    // Email validation
+    // Email validation - allow any domain
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const commonDomains = [
-      "gmail.com",
-      "yahoo.com",
-      "hotmail.com",
-      "outlook.com",
-    ];
-    const domain = email.split("@")[1];
 
-    if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
+    if (!emailRegex.test(email)) {
       toast({
         variant: "destructive",
         title: "الرجاء إدخال عنوان بريد إلكتروني صالح.",

@@ -37,14 +37,149 @@ const sitemapSections = [
         path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
       },
       {
+        name: "BIS MARK (FOREIGN) - GERMANY",
+        path: "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - SPAIN",
+        path: "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - FRANCE",
+        path: "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - INDONESIA",
+        path: "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - ITALY",
+        path: "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - JAPAN",
+        path: "/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - KOREA",
+        path: "/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - NETHERLANDS",
+        path: "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - THAILAND",
+        path: "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - VIETNAM",
+        path: "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
+      },
+      {
+        name: "BIS MARK (FOREIGN) - ARABIC",
+        path: "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind",
+      },
+
+      {
         name: "CRS Registration",
         path: "/what-is-crs-bis-or-crs-registration",
+      },
+      {
+        name: "CRS REGISTRATION - GERMANY",
+        path: "/de/was-ist-crs-bis-oder-crs-registrierung",
+      },
+      {
+        name: "CRS REGISTRATION - SPAIN",
+        path: "/es/que-es-crs-bis-o-registro-crs",
+      },
+      {
+        name: "CRS REGISTRATION - FRANCE",
+        path: "/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs",
+      },
+      {
+        name: "CRS REGISTRATION - INDONESIA",
+        path: "/id/apa-itu-crs-bis-atau-registrasi-crs",
+      },
+      {
+        name: "CRS REGISTRATION - ITALY",
+        path: "/it/cose-il-crs-bis-o-registrazione-crs",
+      },
+      {
+        name: "CRS REGISTRATION - JAPAN",
+        path: "/ja/crs-bis-toha-nani-ka-crs-toroku",
+      },
+      {
+        name: "CRS REGISTRATION - KOREA",
+        path: "/ko/crs-bis-i-mueos-inga-crs-deunglog",
+      },
+      {
+        name: "CRS REGISTRATION - NETHERLANDS",
+        path: "/nl/wat-is-crs-bis-of-crs-registratie",
+      },
+      {
+        name: "CRS REGISTRATION - THAILAND",
+        path: "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
+      },
+      {
+        name: "CRS REGISTRATION - VIETNAM",
+        path: "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
+      },
+      {
+        name: "CRS REGISTRATION - ARABIC",
+        path: "/ar/ma-huwa-crs-bis-aw-tasjeel-crs",
       },
       { name: "CE Certification", path: "/ce-certification" },
       {
         name: "ISI Mark (Indian)",
         path: "/a-guide-to-bis-certification-indian-bis",
       },
+      {
+        name: "ISI MARK - GERMANY",
+        path: "/de/leitfaden-zur-bis-zertifizierung-indisches-bis",
+      },
+      {
+        name: "ISI MARK - SPAIN",
+        path: "/es/guia-certificacion-bis-bis-indio",
+      },
+      {
+        name: "ISI MARK - FRANCE",
+        path: "/fr/guide-certification-bis-bis-indien",
+      },
+      {
+        name: "ISI MARK - INDONESIA",
+        path: "/id/panduan-sertifikasi-bis-bis-india",
+      },
+      {
+        name: "ISI MARK - ITALY",
+        path: "/it/guida-alla-certificazione-bis-bis-indiano",
+      },
+      {
+        name: "ISI MARK - JAPAN",
+        path: "/ja/bis-nintei-gaido-india-no-bis",
+      },
+      {
+        name: "ISI MARK - KOREA",
+        path: "/ko/bis-injeung-gaideu-indo-bis",
+      },
+      {
+        name: "ISI MARK - NETHERLANDS",
+        path: "/nl/gids-voor-bis-certificering-indiaas-bis",
+      },
+      {
+        name: "ISI MARK - THAILAND",
+        path: "/th/khumanam-kanraprong-bis-bis-india",
+      },
+      {
+        name: "ISI MARK - VIETNAM",
+        path: "/vi/huong-dan-chung-nhan-bis-bis-an-do",
+      },
+
+      {
+        name: "ISI MARK - ARABIC",
+        path: "/ar/dalil-shahadat-bis-bis-alhind",
+      },
+
       {
         name: "EPR Registration",
         path: "/a-guide-on-how-to-obtain-epr-certificate",
@@ -56,6 +191,50 @@ const sitemapSections = [
       {
         name: "BIS Certification",
         path: "/what-is-bis-certificate-indian-bis",
+      },
+      {
+        name: "BIS CERTIFICATION - GERMANY",
+        path: "/de/was-ist-das-bis-zertifikat-indisches-bis",
+      },
+      {
+        name: "BIS CERTIFICATION - SPAIN",
+        path: "/es/que-es-el-certificado-bis-bis-indio",
+      },
+      {
+        name: "BIS CERTIFICATION - FRANCE",
+        path: "/fr/quest-ce-que-le-certificat-bis-indien",
+      },
+      {
+        name: "BIS CERTIFICATION - INDONESIA",
+        path: "/id/apa-itu-sertifikat-bis-bis-india",
+      },
+      {
+        name: "BIS CERTIFICATION - ITALY",
+        path: "/it/cose-il-certificato-bis-indiano",
+      },
+      {
+        name: "BIS CERTIFICATION - JAPAN",
+        path: "/ja/bis-shomeisho-toha-nani-ka-indo-no-bis",
+      },
+      {
+        name: "BIS CERTIFICATION - KOREA",
+        path: "/ko/bis-jeungmyeongseo-ga-mueos-indo-bis",
+      },
+      {
+        name: "BIS CERTIFICATION - NETHERLANDS",
+        path: "/nl/wat-is-het-bis-certificaat-indiaas-bis",
+      },
+      {
+        name: "BIS CERTIFICATION - THAILAND",
+        path: "/th/bis-certificate-khue-a-rai-bis-india",
+      },
+      {
+        name: "BIS CERTIFICATION - VIETNAM",
+        path: "/vi/chung-chi-bis-la-gi-bis-an-do",
+      },
+      {
+        name: "BIS CERTIFICATION - ARABIC",
+        path: "/ar/ma-huwa-shahadat-bis-bis-alhind",
       },
       {
         name: "Plastic Waste",
@@ -86,6 +265,50 @@ const sitemapSections = [
       {
         name: "Scheme X",
         path: "/indian-bis-certification-under-scheme-x",
+      },
+      {
+        name: "SCHEME X - GERMANY",
+        path: "/de/indische-bis-zertifizierung-nach-schema-x",
+      },
+      {
+        name: "SCHEME X - SPAIN",
+        path: "/es/certificacion-bis-india-bajo-esquema-x",
+      },
+      {
+        name: "SCHEME X - FRANCE",
+        path: "/fr/certification-bis-indienne-selon-schema-x",
+      },
+      {
+        name: "SCHEME X - INDONESIA",
+        path: "/id/sertifikasi-bis-india-di-bawah-skema-x",
+      },
+      {
+        name: "SCHEME X - ITALY",
+        path: "/it/certificazione-bis-indiana-secondo-schema-x",
+      },
+      {
+        name: "SCHEME X - JAPAN",
+        path: "/ja/indo-no-bis-nintei-sukimu-x",
+      },
+      {
+        name: "SCHEME X - KOREA",
+        path: "/ko/indo-bis-injeung-scheme-x-haenghaeng",
+      },
+      {
+        name: "SCHEME X - NETHERLANDS",
+        path: "/nl/indiaas-bis-certificaat-volgens-schema-x",
+      },
+      {
+        name: "SCHEME X - THAILAND",
+        path: "/th/bis-prathiap-india-taem-dai-tae-skema-x",
+      },
+      {
+        name: "SCHEME X - VIETNAM",
+        path: "/vi/chung-nhan-bis-an-do-theo-scheme-x",
+      },
+      {
+        name: "SCHEME X - ARABIC",
+        path: "/ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x",
       },
     ],
   },

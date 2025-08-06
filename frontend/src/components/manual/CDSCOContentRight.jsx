@@ -637,8 +637,8 @@ const OurEvents = () => {
 
               {index <
                 events.filter((event) => !event.isHighlighted).length - 1 && (
-                <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
-              )}
+                  <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
+                )}
             </div>
           ))}
       </div>
@@ -1112,17 +1112,10 @@ const FreeCallBack = () => {
       return;
     }
 
-    // Email validation
+    // Email validation - allow any domain
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const commonDomains = [
-      "gmail.com",
-      "yahoo.com",
-      "hotmail.com",
-      "outlook.com",
-    ];
-    const domain = email.split("@")[1];
 
-    if (!emailRegex.test(email) || !commonDomains.includes(domain)) {
+    if (!emailRegex.test(email)) {
       toast({
         variant: "destructive",
         title: t("validation.email.title"),
