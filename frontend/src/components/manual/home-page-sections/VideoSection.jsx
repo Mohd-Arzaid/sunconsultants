@@ -11,6 +11,7 @@ const VideoSection = ({ onVideoPopupChange }) => {
   const [duplicatedVideos, setDuplicatedVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [videoLoading, setVideoLoading] = useState(false);
 
   // Define animation function first
   const addAnimation = useCallback(() => {
@@ -48,14 +49,21 @@ const VideoSection = ({ onVideoPopupChange }) => {
     event.preventDefault();
     event.stopPropagation();
     setSelectedVideo(video);
+    setVideoLoading(true);
     setIsPopupOpen(true);
     document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+    // Hide loading after 2 seconds (enough time for video to load)
+    setTimeout(() => {
+      setVideoLoading(false);
+    }, 2000);
   };
 
   // Handle closing video popup
   const handleClosePopup = () => {
     setIsPopupOpen(false);
     setSelectedVideo(null);
+    setVideoLoading(false);
     document.body.style.overflow = 'unset'; // Restore scrolling
   };
 
@@ -133,14 +141,14 @@ const VideoSection = ({ onVideoPopupChange }) => {
       {/* Video Popup Modal */}
       {isPopupOpen && selectedVideo && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-sm"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm"
           onClick={handleClosePopup}
         >
           <div className="relative w-full max-w-6xl mx-4 md:mx-8">
             {/* Close Button */}
             <button
               onClick={handleClosePopup}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10 bg-black/50 rounded-full p-2 backdrop-blur-sm"
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10 bg-black/50 rounded-full p-2 shadow-lg"
               aria-label="Close video"
             >
               <X size={24} />
@@ -148,22 +156,27 @@ const VideoSection = ({ onVideoPopupChange }) => {
 
             {/* Video Container */}
             <div
-              className="relative bg-black rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-300"
+              className="relative bg-white rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="aspect-video w-full">
+              <div className="aspect-video w-full relative">
+                {videoLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-2xl z-10">
+                    <div className="text-center">
+                      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto mb-4"></div>
+                      <p className="text-gray-600">Loading video...</p>
+                    </div>
+                  </div>
+                )}
                 <iframe
                   src={`https://www.youtube.com/embed/${selectedVideo.embedId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
                   title={selectedVideo.title}
-                  className="w-full h-full border-0 rounded-2xl"
+                  className={`w-full h-full border-0 rounded-2xl ${videoLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-500`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 />
               </div>
             </div>
-
-            {/* Subtle glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-2xl blur-xl -z-10 scale-110"></div>
           </div>
         </div>
       )}
