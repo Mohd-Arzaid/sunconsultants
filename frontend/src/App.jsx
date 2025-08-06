@@ -55,22 +55,24 @@ import ArabicBISFM from "./pages/ArabicBISFM";
 import ArabicISIMark from "./pages/ArabicISIMark";
 import ArabicCRS from "./pages/ArabicCRS";
 import ArabicSchemeX from "./pages/ArabicSchemeX";
+import ArabicBISCertification from "./pages/ArabicBISCertification";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
+  const [videoPopupOpen, setVideoPopupOpen] = useState(false);
 
   return (
     <>
       <TopBar />
       <Navbar />
-      <ScrollToTopButton hide={popupOpen} />
+      <ScrollToTopButton hide={popupOpen || videoPopupOpen} />
       <ScrollToTop />
       <SEOBreadcrumbs />
 
       <Routes>
         {/* Default routes without language prefix (English) */}
         <Route path="/">
-          <Route index element={<Home />} />
+          <Route index element={<Home onVideoPopupChange={setVideoPopupOpen} />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="bis-qco-updates" element={<Notification />} />
@@ -168,23 +170,20 @@ function App() {
           element={<ArabicISIMark />}
         />
 
-
         <Route
           path="/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
           element={<ArabicCRS />}
         />
 
-
-<Route
-          path="ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"
+        <Route
+          path="/ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"
           element={<ArabicSchemeX />}
         />
 
-
-
-
-
-
+        <Route
+          path="/ar/ma-huwa-shahadat-bis-bis-alhind"
+          element={<ArabicBISCertification />}
+        />
 
         {/* Localized routes for other languages */}
         <Route path="/:lang/*" element={<LocalizedRoute />}>
@@ -196,7 +195,7 @@ function App() {
       </Routes>
 
       <MobileNav />
-      <SocialFloatingButtons hide={popupOpen} />
+      <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />
       <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />
     </>
   );

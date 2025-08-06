@@ -969,6 +969,7 @@ const BISCHero = () => {
 
 // BISC Index Section
 const BISCIndex = () => {
+  
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("Overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

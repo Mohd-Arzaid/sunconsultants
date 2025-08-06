@@ -1,5 +1,6 @@
 import Footer from "@/common/Footer";
 import { Suspense } from "react";
+import PropTypes from "prop-types";
 import HomeSEO from "@/components/manual/home-page-sections/HomeSEO";
 
 // Loading component for sections
@@ -22,7 +23,7 @@ import Countries from "@/components/manual/home-page-sections/Countries";
 import Contact from "@/components/manual/home-page-sections/Contact";
 import HomeServices from "@/components/manual/HomeServices";
 
-const Home = () => {
+const Home = ({ onVideoPopupChange }) => {
   return (
     <main className="w-full">
       <HomeSEO />
@@ -86,13 +87,17 @@ const Home = () => {
         <LogoTicker />
       </section>
 
-      <section aria-label="Partner Logos" className="w-full">
-        <VideoSection />
+      <section aria-label="Video Showcase" className="w-full">
+        <VideoSection onVideoPopupChange={onVideoPopupChange} />
       </section>
 
       <Footer />
     </main>
   );
+};
+
+Home.propTypes = {
+  onVideoPopupChange: PropTypes.func,
 };
 
 export default Home;

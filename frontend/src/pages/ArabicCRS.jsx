@@ -6,16 +6,48 @@ import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CISProductTable } from "./CRSRegistration";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { SlashIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ArabicCRS = () => {
     return (
-        <div>
+        <main className="w-full relative" role="main">
+            <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+                <div className="max-w-[80rem] mx-auto px-4">
+                    <div className="w-fit font-inter">
+                        <Breadcrumb>
+                            <BreadcrumbList>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink asChild>
+                                        <Link to="/">الرئيسية</Link>
+                                    </BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator>
+                                    <SlashIcon />
+                                </BreadcrumbSeparator>
+                                <BreadcrumbItem>
+                                    <BreadcrumbPage>ما هو CRS BIS أو تسجيل CRS</BreadcrumbPage>
+                                </BreadcrumbItem>
+                            </BreadcrumbList>
+                        </Breadcrumb>
+                    </div>
+                </div>
+            </div>
+
             <ArabicCrsHero />
             <ArabicCrsIndex />
             <ArabicCrsContent />
-              <ArabicFooter />
-                  <ScrollToTopButton />
-        </div>
+            <ArabicFooter />
+            <ScrollToTopButton />
+        </main>
     )
 }
 
@@ -299,9 +331,9 @@ const ArabicCrsContent = () => {
             </div>
             <ArabicCrsServiceFaq />
             <CISProductTable />
-              <div id="services">
-                    <ArabicServices />
-                </div>
+            <div id="services">
+                <ArabicServices />
+            </div>
         </div>
     )
 }
@@ -355,7 +387,7 @@ const ArabicCrsContentLeft = () => {
                 <Divider />
 
                 <ArabicCrsReviewSection />
-             
+
 
                 <ArabicAboutAuthor />
 
@@ -1418,97 +1450,97 @@ const ArabicCrsELabellingSection = () => {
 const ArabicCrsExpertiseSection = () => {
     return (
         <section id="expertise" className="flex flex-col scroll-mt-20">
-      {/* Expertise */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
-          الخبرة
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
+            {/* Expertise */}
+            <div className="flex w-full items-center gap-3">
+                <span className="uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700">
+                    الخبرة
+                </span>
+                <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+            </div>
 
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        كيف يمكن لشركة Sun Certifications India مساعدتك في تسجيل BIS تحت نظام CRS
-      </h2>
+            <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+                كيف يمكن لشركة Sun Certifications India مساعدتك في تسجيل BIS تحت نظام CRS
+            </h2>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        لماذا تختار استشاري BIS؟
-      </h3>
+            <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+                لماذا تختار استشاري BIS؟
+            </h3>
 
-      <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-right max-w-full leading-relaxed md:leading-loose">
-        عملية تسجيل BIS CRS تقنية للغاية ومنظمة وتتطلب وثائق كثيرة. بدون معرفة عميقة بالمعايير الهندية وتحديثات QCO وتنسيقات تقارير الاختبار وسير عمل البوابة، يواجه المتقدمون مخاطر التأخير أو الرفض أو حتى عدم الامتثال على المدى الطويل. هنا يأتي دور Sun Certifications India - شريكك الموثوق والمتمرس في التنقل عبر كل خطوة من خطوات نظام الشهادات الإجبارية.
-      </p>
-    </section>
+            <p className="mt-[16px] md:mt-[24px] font-geist text-[14px] md:text-lg text-[#42434d] tracking-wide text-right max-w-full leading-relaxed md:leading-loose">
+                عملية تسجيل BIS CRS تقنية للغاية ومنظمة وتتطلب وثائق كثيرة. بدون معرفة عميقة بالمعايير الهندية وتحديثات QCO وتنسيقات تقارير الاختبار وسير عمل البوابة، يواجه المتقدمون مخاطر التأخير أو الرفض أو حتى عدم الامتثال على المدى الطويل. هنا يأتي دور Sun Certifications India - شريكك الموثوق والمتمرس في التنقل عبر كل خطوة من خطوات نظام الشهادات الإجبارية.
+            </p>
+        </section>
     )
 }
 
 const ArabicCrsReviewSection = () => {
     return (
         <section>
-        <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
-          ما رأيك في هذا المحتوى؟
-        </span>
-        <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
-          <div className="flex gap-6">
-            <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group">
-              <svg
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                stroke="currentColor"
-                aria-hidden="true"
-                className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
-              >
-                <path
-                  fillOpacity="0.15"
-                  strokeWidth="0"
-                  className="group-hover:text-blue-500 transition-colors duration-200"
-                  d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z"
-                />
-                <path
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  className="group-hover:text-blue-500 transition-colors duration-200"
-                  d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5"
-                />
-              </svg>
-  
-              <span>كان مفيداً</span>
-            </button>
-  
-            <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
-              <svg
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                stroke="currentColor"
-                aria-hidden="true"
-                className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
-              >
-                <path
-                  fillOpacity="0.15"
-                  strokeWidth="0"
-                  className="group-hover:text-red-500 transition-colors duration-200"
-                  d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z"
-                />
-                <path
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  className="group-hover:text-red-500 transition-colors duration-200"
-                  d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5"
-                />
-              </svg>
-  
-              <span>لم يكن مفيداً</span>
-            </button>
-          </div>
-  
-          <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
-            آخر تحديث في 19 مارس 2025
-          </p>
-        </div>
-      </section>
+            <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
+                ما رأيك في هذا المحتوى؟
+            </span>
+            <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
+                <div className="flex gap-6">
+                    <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group">
+                        <svg
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+                        >
+                            <path
+                                fillOpacity="0.15"
+                                strokeWidth="0"
+                                className="group-hover:text-blue-500 transition-colors duration-200"
+                                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z"
+                            />
+                            <path
+                                fill="none"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="1.5"
+                                className="group-hover:text-blue-500 transition-colors duration-200"
+                                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5"
+                            />
+                        </svg>
+
+                        <span>كان مفيداً</span>
+                    </button>
+
+                    <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
+                        <svg
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
+                        >
+                            <path
+                                fillOpacity="0.15"
+                                strokeWidth="0"
+                                className="group-hover:text-red-500 transition-colors duration-200"
+                                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z"
+                            />
+                            <path
+                                fill="none"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="1.5"
+                                className="group-hover:text-red-500 transition-colors duration-200"
+                                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5"
+                            />
+                        </svg>
+
+                        <span>لم يكن مفيداً</span>
+                    </button>
+                </div>
+
+                <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
+                    آخر تحديث في 19 مارس 2025
+                </p>
+            </div>
+        </section>
     )
 }
 
@@ -1516,173 +1548,173 @@ const ArabicCrsServiceFaq = () => {
     const [showAllFaqs, setShowAllFaqs] = useState(false);
 
     const allFaqs = [
-      {
-        id: "item-1",
-        question: "1. ما هو تسجيل BIS؟",
-        answer:
-          "شهادة BIS هي عملية امتثال تحكمها مكتب المعايير الهندية، والتي تتحقق من أن المنتج يلبي المعايير الهندية المعمول بها (IS) للجودة والسلامة والموثوقية.",
-      },
-      {
-        id: "item-2",
-        question: "2. ما هو تسجيل CRS تحت BIS؟",
-        answer:
-          "CRS تعني نظام التسجيل الإجباري. إنها عملية تسجيل إلزامية لفئات منتجات محددة مثل الإلكترونيات والكهربائيات والبطاريات والعناصر الشمسية. يجب اختبار المنتجات تحت CRS وتسجيلها مع BIS قبل أن يمكن بيعها في الهند.",
-      },
-      {
-        id: "item-3",
-        question: "3. هل شهادة BIS إلزامية في الهند؟",
-        answer:
-          "نعم. لجميع المنتجات المدرجة تحت قائمة منتجات CRS (حاليا أكثر من 80 عنصر)، تسجيل BIS إلزامي للتصنيع أو الاستيراد أو البيع في الهند.",
-      },
-      {
-        id: "item-4",
-        question: "4. ما الفرق بين BIS CRS وعلامة ISI؟",
-        answer:
-          "BIS CRS: للسلع الإلكترونية وتكنولوجيا المعلومات، فقط للمنتجات الإلزامية المبلغ عنها تحت QCO. <br />علامة ISI: تستخدم لمجموعة أوسع من المنتجات، قد تكون طوعية أو إلزامية حسب فئة المنتج.",
-      },
-      {
-        id: "item-5",
-        question: "5. من يمكنه التقدم لتسجيل BIS CRS؟",
-        answer:
-          "فقط المصنعون يمكنهم التقدم. هذا يشمل المصنعين الهنود والأجانب. العلامات التجارية الأجنبية يجب أن تعين ممثلاً هندياً مفوضاً (AIR).",
-      },
-      {
-        id: "item-6",
-        question: "6. ما هو دور AIR؟",
-        answer:
-          "الممثل الهندي المفوض (AIR) مسؤول قانونياً عن تقديم طلب BIS نيابة عن المصنع الأجنبي. يعمل كحلقة وصل رسمية بين BIS ومقدم الطلب الخارجي.",
-      },
-      {
-        id: "item-7",
-        question: "7. كم من الوقت يستغرق تسجيل BIS CRS؟",
-        answer:
-          "العملية تستغرق عادة 3-4 أسابيع، بافتراض تقديم جميع الوثائق وتقارير الاختبار بشكل صحيح وعدم إثارة أي اعتراضات من قبل BIS.",
-      },
-      {
-        id: "item-8",
-        question: "8. كم تكلف شهادة BIS CRS؟",
-        answer:
-          "التكاليف تشمل: <br />رسوم الاختبار: ₹10,000-₹20,000 + GST <br />الرسوم الحكومية: ₹53,000 + GST لكل تقرير اختبار <br />الرسوم الإضافية: الإفادة الخطية، البريد السريع، وثائق AIR، إلخ. <br />خصم متاح للمصنعين الهنود المسجلين في MSME",
-      },
-      {
-        id: "item-9",
-        question: "9. ما هي صلاحية شهادات BIS CRS؟",
-        answer:
-          "رخصة BIS الأولية صالحة لمدة سنتين. يمكن تجديدها لمدة تصل إلى 5 سنوات إذا بقيت تفاصيل المنتج والتصنيع دون تغيير.",
-      },
-      {
-        id: "item-10",
-        question: "10. هل يمكن الحصول على شهادة BIS طوعياً؟",
-        answer:
-          "لا. تحت CRS، لا يمكنك التقدم طوعياً للمنتجات غير المدرجة تحت QCOs. الشهادة الطوعية متاحة فقط للمنتجات غير CRS عبر نظام ISI.",
-      },
-      {
-        id: "item-11",
-        question: "11. أين يمكنني العثور على قائمة منتجات BIS CRS؟",
-        answer:
-          'يمكنك زيارة موقع BIS الرسمي <a href="https://www.crsbis.in/BIS/publicdashAction.do" target="_blank" rel="noopener noreferrer" className="text-[#1A8781] underline">https://www.crsbis.in/BIS/publicdashAction.do</a> والانتقال إلى قسم "المنتجات تحت CRS" لعرض القائمة الكاملة للمنتجات المشمولة.',
-      },
-      {
-        id: "item-12",
-        question: "12. هل يمكن عرض علامة BIS إلكترونياً؟",
-        answer:
-          "نعم، من خلال الوسم الإلكتروني، ولكن يجب أن يلبي قواعد BIS الصارمة: معلومات التسمية يجب أن تكون مدمجة في البرامج الثابتة <br />وصول سهل خلال 4 خطوات في قائمة الجهاز <br />التغليف المادي يجب أن يحمل المعلومات التنظيمية",
-      },
-      {
-        id: "item-13",
-        question:
-          "13. ماذا يحدث إذا لم أحصل على تسجيل BIS لمنتج إلزامي؟",
-        answer:
-          "عقوبات شديدة، تشمل: <br />مصادرة المنتج <br />رفض الجمارك <br />غرامات قانونية <br />إلغاء الإدراج من منصات التجارة الإلكترونية <br />حظر دائم من السوق الهندي",
-      },
-      {
-        id: "item-14",
-        question: "14. هل يمكن لشهادة BIS واحدة تغطية عدة نماذج أو علامات تجارية؟",
-        answer:
-          "لا. كل علامة تجارية وموقع مصنع يجب أن يكون معتمداً بشكل منفصل. يمكن إضافة نماذج متعددة باستخدام تقارير إضافية، ولكن فقط تحت نفس الطلب والعلامة التجارية.",
-      },
-      {
-        id: "item-15",
-        question: "15. كيف يمكن لـ Sun Certifications India مساعدتي؟",
-        answer:
-          "نحن نقدم: <br />دعم كامل للوثائق <br />تنسيق المختبر <br />التعامل مع طلب بوابة BIS <br />حل الاستفسارات ومتابعة BIS <br />إرشادات التجديد والتسمية <br />ضمان الامتثال للعلامات التجارية الأجنبية عبر خدمات AIR",
-      },
+        {
+            id: "item-1",
+            question: "1. ما هو تسجيل BIS؟",
+            answer:
+                "شهادة BIS هي عملية امتثال تحكمها مكتب المعايير الهندية، والتي تتحقق من أن المنتج يلبي المعايير الهندية المعمول بها (IS) للجودة والسلامة والموثوقية.",
+        },
+        {
+            id: "item-2",
+            question: "2. ما هو تسجيل CRS تحت BIS؟",
+            answer:
+                "CRS تعني نظام التسجيل الإجباري. إنها عملية تسجيل إلزامية لفئات منتجات محددة مثل الإلكترونيات والكهربائيات والبطاريات والعناصر الشمسية. يجب اختبار المنتجات تحت CRS وتسجيلها مع BIS قبل أن يمكن بيعها في الهند.",
+        },
+        {
+            id: "item-3",
+            question: "3. هل شهادة BIS إلزامية في الهند؟",
+            answer:
+                "نعم. لجميع المنتجات المدرجة تحت قائمة منتجات CRS (حاليا أكثر من 80 عنصر)، تسجيل BIS إلزامي للتصنيع أو الاستيراد أو البيع في الهند.",
+        },
+        {
+            id: "item-4",
+            question: "4. ما الفرق بين BIS CRS وعلامة ISI؟",
+            answer:
+                "BIS CRS: للسلع الإلكترونية وتكنولوجيا المعلومات، فقط للمنتجات الإلزامية المبلغ عنها تحت QCO. <br />علامة ISI: تستخدم لمجموعة أوسع من المنتجات، قد تكون طوعية أو إلزامية حسب فئة المنتج.",
+        },
+        {
+            id: "item-5",
+            question: "5. من يمكنه التقدم لتسجيل BIS CRS؟",
+            answer:
+                "فقط المصنعون يمكنهم التقدم. هذا يشمل المصنعين الهنود والأجانب. العلامات التجارية الأجنبية يجب أن تعين ممثلاً هندياً مفوضاً (AIR).",
+        },
+        {
+            id: "item-6",
+            question: "6. ما هو دور AIR؟",
+            answer:
+                "الممثل الهندي المفوض (AIR) مسؤول قانونياً عن تقديم طلب BIS نيابة عن المصنع الأجنبي. يعمل كحلقة وصل رسمية بين BIS ومقدم الطلب الخارجي.",
+        },
+        {
+            id: "item-7",
+            question: "7. كم من الوقت يستغرق تسجيل BIS CRS؟",
+            answer:
+                "العملية تستغرق عادة 3-4 أسابيع، بافتراض تقديم جميع الوثائق وتقارير الاختبار بشكل صحيح وعدم إثارة أي اعتراضات من قبل BIS.",
+        },
+        {
+            id: "item-8",
+            question: "8. كم تكلف شهادة BIS CRS؟",
+            answer:
+                "التكاليف تشمل: <br />رسوم الاختبار: ₹10,000-₹20,000 + GST <br />الرسوم الحكومية: ₹53,000 + GST لكل تقرير اختبار <br />الرسوم الإضافية: الإفادة الخطية، البريد السريع، وثائق AIR، إلخ. <br />خصم متاح للمصنعين الهنود المسجلين في MSME",
+        },
+        {
+            id: "item-9",
+            question: "9. ما هي صلاحية شهادات BIS CRS؟",
+            answer:
+                "رخصة BIS الأولية صالحة لمدة سنتين. يمكن تجديدها لمدة تصل إلى 5 سنوات إذا بقيت تفاصيل المنتج والتصنيع دون تغيير.",
+        },
+        {
+            id: "item-10",
+            question: "10. هل يمكن الحصول على شهادة BIS طوعياً؟",
+            answer:
+                "لا. تحت CRS، لا يمكنك التقدم طوعياً للمنتجات غير المدرجة تحت QCOs. الشهادة الطوعية متاحة فقط للمنتجات غير CRS عبر نظام ISI.",
+        },
+        {
+            id: "item-11",
+            question: "11. أين يمكنني العثور على قائمة منتجات BIS CRS؟",
+            answer:
+                'يمكنك زيارة موقع BIS الرسمي <a href="https://www.crsbis.in/BIS/publicdashAction.do" target="_blank" rel="noopener noreferrer" className="text-[#1A8781] underline">https://www.crsbis.in/BIS/publicdashAction.do</a> والانتقال إلى قسم "المنتجات تحت CRS" لعرض القائمة الكاملة للمنتجات المشمولة.',
+        },
+        {
+            id: "item-12",
+            question: "12. هل يمكن عرض علامة BIS إلكترونياً؟",
+            answer:
+                "نعم، من خلال الوسم الإلكتروني، ولكن يجب أن يلبي قواعد BIS الصارمة: معلومات التسمية يجب أن تكون مدمجة في البرامج الثابتة <br />وصول سهل خلال 4 خطوات في قائمة الجهاز <br />التغليف المادي يجب أن يحمل المعلومات التنظيمية",
+        },
+        {
+            id: "item-13",
+            question:
+                "13. ماذا يحدث إذا لم أحصل على تسجيل BIS لمنتج إلزامي؟",
+            answer:
+                "عقوبات شديدة، تشمل: <br />مصادرة المنتج <br />رفض الجمارك <br />غرامات قانونية <br />إلغاء الإدراج من منصات التجارة الإلكترونية <br />حظر دائم من السوق الهندي",
+        },
+        {
+            id: "item-14",
+            question: "14. هل يمكن لشهادة BIS واحدة تغطية عدة نماذج أو علامات تجارية؟",
+            answer:
+                "لا. كل علامة تجارية وموقع مصنع يجب أن يكون معتمداً بشكل منفصل. يمكن إضافة نماذج متعددة باستخدام تقارير إضافية، ولكن فقط تحت نفس الطلب والعلامة التجارية.",
+        },
+        {
+            id: "item-15",
+            question: "15. كيف يمكن لـ Sun Certifications India مساعدتي؟",
+            answer:
+                "نحن نقدم: <br />دعم كامل للوثائق <br />تنسيق المختبر <br />التعامل مع طلب بوابة BIS <br />حل الاستفسارات ومتابعة BIS <br />إرشادات التجديد والتسمية <br />ضمان الامتثال للعلامات التجارية الأجنبية عبر خدمات AIR",
+        },
     ];
-  
+
     const visibleFaqs = showAllFaqs ? allFaqs : allFaqs.slice(0, 5);
-  
+
     return (
         <div id="faqs" className="my-2 scroll-mt-20">
-        <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-          <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-            الأسئلة الشائعة
-          </h2>
-          <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-            لا يمكنك العثور على الإجابة التي تبحث عنها؟{" "}
-            <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
-              تواصل معنا!
-            </span>
-          </p>
-  
-          <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
-            <Accordion type="single" collapsible className="w-full">
-              {visibleFaqs.map((faq) => (
-                <AccordionItem key={faq.id} value={faq.id}>
-                  <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                    <h3>{faq.question}</h3>
-                  </AccordionTrigger>
-                  <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                    <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-  
-            {/* Show More/Show Less Button */}
-            <div className="flex justify-center mt-8">
-              <button
-                onClick={() => setShowAllFaqs(!showAllFaqs)}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#1A8781] text-white font-geist font-medium text-[16px] rounded-lg hover:bg-[#125E5A] transition-colors duration-300 shadow-md hover:shadow-lg"
-              >
-                {showAllFaqs ? (
-                  <>
-                    <svg
-                      className="w-5 h-5 transform rotate-180"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                    عرض أسئلة أقل
-                  </>
-                ) : (
-                  <>
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                    عرض المزيد من الأسئلة
-                  </>
-                )}
-              </button>
+            <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
+                <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+                    الأسئلة الشائعة
+                </h2>
+                <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
+                    لا يمكنك العثور على الإجابة التي تبحث عنها؟{" "}
+                    <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
+                        تواصل معنا!
+                    </span>
+                </p>
+
+                <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
+                    <Accordion type="single" collapsible className="w-full">
+                        {visibleFaqs.map((faq) => (
+                            <AccordionItem key={faq.id} value={faq.id}>
+                                <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                                    <h3>{faq.question}</h3>
+                                </AccordionTrigger>
+                                <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                                    <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+
+                    {/* Show More/Show Less Button */}
+                    <div className="flex justify-center mt-8">
+                        <button
+                            onClick={() => setShowAllFaqs(!showAllFaqs)}
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1A8781] text-white font-geist font-medium text-[16px] rounded-lg hover:bg-[#125E5A] transition-colors duration-300 shadow-md hover:shadow-lg"
+                        >
+                            {showAllFaqs ? (
+                                <>
+                                    <svg
+                                        className="w-5 h-5 transform rotate-180"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
+                                    عرض أسئلة أقل
+                                </>
+                            ) : (
+                                <>
+                                    <svg
+                                        className="w-5 h-5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
+                                    عرض المزيد من الأسئلة
+                                </>
+                            )}
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     )
 }

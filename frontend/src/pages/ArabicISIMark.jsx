@@ -24,16 +24,48 @@ import {
 } from "@/components/ui/accordion";
 import { BISCProductTable } from "@/components/manual/BISCertification";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { SlashIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ArabicISIMark = () => {
   return (
-    <div className="w-full">
+    <main className="w-full relative" role="main">
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">الرئيسية</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>دليل شهادة BIS (BIS الهند)</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
       <ArabicISIMarkHero />
       <ArabicISIIndex />
       <ArabicISIContent />
       <ArabicFooter />
       <ScrollToTopButton />
-    </div>
+    </main>
   );
 };
 
