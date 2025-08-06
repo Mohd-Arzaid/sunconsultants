@@ -203,7 +203,7 @@ const NotificationMainContent = () => {
         />
       </div>
 
-      <div className="pb-8 md:pb-12 flex items-center justify-center">
+      <div className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 flex items-center justify-center">
         {/* Pagination */}
         <Pagination
           currentPage={currentPage}
@@ -497,6 +497,8 @@ const Pagination = ({
   const handlePageChange = (pageNumber) => {
     if (pageNumber >= 1 && pageNumber <= totalPages) {
       setCurrentPage(pageNumber);
+      // Scroll to top when page changes
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -505,50 +507,111 @@ const Pagination = ({
     return null;
   }
 
-  return (
-    <div
-      className="flex items-center justify-center gap-4"
-      role="navigation"
-      aria-label="Pagination"
-    >
-      {/* Previous Button */}
-      <button
-        onClick={() => handlePageChange(currentPage - 1)}
-        disabled={currentPage === 1}
-        className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 text-gray-700 hover:border-[#1A8781] hover:text-[#1A8781] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-        aria-label="Previous page"
-      >
-        <ChevronLeft className="h-5 w-5" />
-      </button>
+  // Generate smart page numbers for pagination
+  const generatePageNumbers = () => {
+    const maxVisiblePages = 5; // Show max 5 page numbers
+    const delta = Math.floor(maxVisiblePages / 2);
 
+    let startPage = Math.max(1, currentPage - delta);
+    let endPage = Math.min(totalPages, currentPage + delta);
+
+    // Adjust if we're near the beginning or end
+    if (endPage - startPage + 1 < maxVisiblePages) {
+      if (startPage === 1) {
+        endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+      } else {
+        startPage = Math.max(1, endPage - maxVisiblePages + 1);
+      }
+    }
+
+    const pages = [];
+
+    // Add first page and ellipsis if needed
+    if (startPage > 1) {
+      pages.push(1);
+      if (startPage > 2) {
+        pages.push('...');
+      }
+    }
+
+    // Add visible page numbers
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(i);
+    }
+
+    // Add ellipsis and last page if needed
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) {
+        pages.push('...');
+      }
+      pages.push(totalPages);
+    }
+
+    return pages;
+  };
+
+  const pageNumbers = generatePageNumbers();
+
+  return (
+    <div className="flex flex-col items-center justify-center gap-4">
       {/* Page Numbers */}
-      <div className="flex items-center justify-center gap-2">
-        {[...Array(totalPages)].map((_, index) => (
-          <button
-            key={index + 1}
-            onClick={() => handlePageChange(index + 1)}
-            className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${
-              currentPage === index + 1
+      <div className="flex items-center justify-center gap-2 flex-wrap">
+        {/* Previous Button */}
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+          className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 text-gray-700 hover:border-[#1A8781] hover:text-[#1A8781] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          aria-label="Previous page"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+
+        {/* Page Numbers */}
+        {pageNumbers.map((pageNum, index) => {
+          if (pageNum === '...') {
+            return (
+              <span
+                key={`ellipsis-${index}`}
+                className="flex items-center justify-center h-10 w-10 text-gray-400 font-medium text-base"
+              >
+                ...
+              </span>
+            );
+          }
+
+          return (
+            <button
+              key={pageNum}
+              onClick={() => handlePageChange(pageNum)}
+              className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${currentPage === pageNum
                 ? "bg-[#1A8781] text-white"
                 : "text-gray-700 hover:bg-gray-200"
-            }`}
-            aria-label={`Page ${index + 1}`}
-            aria-current={currentPage === index + 1 ? "page" : undefined}
-          >
-            {index + 1}
-          </button>
-        ))}
+                }`}
+              aria-label={`Page ${pageNum}`}
+              aria-current={currentPage === pageNum ? "page" : undefined}
+            >
+              {pageNum}
+            </button>
+          );
+        })}
+
+        {/* Next Button */}
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 text-gray-700 hover:border-[#1A8781] hover:text-[#1A8781] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          aria-label="Next page"
+        >
+          <ChevronRight className="h-5 w-5" />
+        </button>
       </div>
 
-      {/* Next Button */}
-      <button
-        onClick={() => handlePageChange(currentPage + 1)}
-        disabled={currentPage === totalPages}
-        className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300 text-gray-700 hover:border-[#1A8781] hover:text-[#1A8781] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-        aria-label="Next page"
-      >
-        <ChevronRight className="h-5 w-5" />
-      </button>
+      {/* Page Info */}
+      <div className="text-center">
+        <span className="text-sm text-gray-500 font-medium">
+          Page {currentPage} of {totalPages}
+        </span>
+      </div>
     </div>
   );
 };
