@@ -1106,6 +1106,56 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-bis-qco-notification-for-refined-nickel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-bis-qco-notification-for-refined-zinc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-bis-qco-notification-for-primary-lead</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-bis-qco-notification-for-tin-ingot</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-diesel-engines</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-hdpepp-woven-sacks-for-packaging-fertilizers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-writing-and-printing-paper</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-bis-notification-helmet-for-police-force-civil-defence-and-personal-protection</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-coated-papers-and-board-art-and-chrome</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-qco-updates/bis-certificate-for-bis-legal-metrology-material-measures-of-length</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Arabic Pages -->
   <url>
