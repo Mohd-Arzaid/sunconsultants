@@ -87,16 +87,16 @@ const ExhibitionHero = () => {
 
       {/* Button */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-10">
-        <button className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#1A8781] text-white py-3 px-8 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 group">
+        <Link to="/webinar" className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#1A8781] text-white py-3 px-8 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 group">
           <span className="font-medium font-geist">Upcoming Events</span>
           <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30">
             <Calendar className="w-4 h-4" />
           </div>
-        </button>
+        </Link>
 
-        <button className="w-full md:w-auto items-center gap-3 border-2 border-[#1A8781]/30 text-[#1A8781] py-3 px-8 rounded-full hover:border-[#1A8781] hover:bg-[#1A8781]/5 transition-all duration-300">
+        <Link to="/contact" className="w-full md:w-auto flex items-center justify-center gap-3 border-2 border-[#1A8781]/30 text-[#1A8781] py-3 px-8 rounded-full hover:border-[#1A8781] hover:bg-[#1A8781]/5 transition-all duration-300">
           <span className="font-medium font-geist">Contact Us</span>
-        </button>
+        </Link>
       </div>
 
       <h2 className="text-3xl md:text-4xl text-center mb-4">
