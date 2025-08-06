@@ -17,7 +17,11 @@
             <video:tag>BIS Certification</video:tag>
             <video:tag>Foreign Manufacturers</video:tag>
             <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Product Certification</video:tag>
+            <video:tag>Export to India</video:tag>
+            <video:category>BISFM</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
         <video:video>
@@ -32,6 +36,10 @@
             <video:tag>Quality Assurance</video:tag>
             <video:tag>Indian Standards</video:tag>
             <video:tag>Product Certification</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>BIS Standards</video:tag>
+            <video:tag>Quality Control</video:tag>
             <video:category>ISI Mark</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
@@ -47,6 +55,10 @@
             <video:tag>Registration</video:tag>
             <video:tag>Compliance</video:tag>
             <video:tag>Regulatory Framework</video:tag>
+            <video:tag>Business Operations</video:tag>
+            <video:tag>Documentation</video:tag>
+            <video:tag>BIS Standards</video:tag>
+            <video:tag>Certification Process</video:tag>
             <video:category>Scheme X</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
@@ -62,6 +74,10 @@
             <video:tag>Quality Standards</video:tag>
             <video:tag>Indian Standards</video:tag>
             <video:tag>Product Certification</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Testing Requirements</video:tag>
+            <video:tag>Market Entry</video:tag>
             <video:category>BIS Certification</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
@@ -77,6 +93,10 @@
             <video:tag>Quality Assurance</video:tag>
             <video:tag>Indian Standards</video:tag>
             <video:tag>Regulatory Framework</video:tag>
+            <video:tag>Business Operations</video:tag>
+            <video:tag>Certification</video:tag>
+            <video:tag>Legal Requirements</video:tag>
+            <video:tag>Industry Standards</video:tag>
             <video:category>Standards Compliance</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
@@ -92,7 +112,49 @@
             <video:tag>Process Optimization</video:tag>
             <video:tag>Indian Standards</video:tag>
             <video:tag>Quality Control</video:tag>
+            <video:tag>Manufacturing Excellence</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Best Practices</video:tag>
+            <video:tag>System Implementation</video:tag>
             <video:category>Quality Management</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/hSNURmPAKDA/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>BIS Certification Services - Expert Guidance for Manufacturers</video:title>
+            <video:description>Professional BIS certification services providing expert guidance for manufacturers seeking compliance with Indian standards. Comprehensive support for certification process and regulatory requirements.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=hSNURmPAKDA</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/hSNURmPAKDA</video:player_loc>
+            <video:duration>450</video:duration>
+            <video:publication_date>2024-04-15T00:00:00+00:00</video:publication_date>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Professional Services</video:tag>
+            <video:tag>Expert Guidance</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Regulatory Support</video:tag>
+            <video:tag>Certification Process</video:tag>
+            <video:category>BIS Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/7NazqQXmOa8/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Quality Assurance and Standards Compliance - Manufacturing Excellence</video:title>
+            <video:description>Comprehensive overview of quality assurance practices and standards compliance for manufacturing excellence. Learn about best practices, regulatory requirements, and quality management systems.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=7NazqQXmOa8</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/7NazqQXmOa8</video:player_loc>
+            <video:duration>585</video:duration>
+            <video:publication_date>2024-05-01T00:00:00+00:00</video:publication_date>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Standards Compliance</video:tag>
+            <video:tag>Manufacturing Excellence</video:tag>
+            <video:tag>Quality Management</video:tag>
+            <video:tag>Best Practices</video:tag>
+            <video:tag>Regulatory Requirements</video:tag>
+            <video:tag>Process Optimization</video:tag>
+            <video:tag>Industry Standards</video:tag>
+            <video:category>Quality Assurance</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
     </url>
@@ -112,7 +174,11 @@
             <video:tag>BIS Certification</video:tag>
             <video:tag>Foreign Manufacturers</video:tag>
             <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Product Certification</video:tag>
+            <video:tag>Export to India</video:tag>
+            <video:category>BISFM</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
         <video:video>
@@ -127,6 +193,10 @@
             <video:tag>Quality Assurance</video:tag>
             <video:tag>Indian Standards</video:tag>
             <video:tag>Product Certification</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>BIS Standards</video:tag>
+            <video:tag>Quality Control</video:tag>
             <video:category>ISI Mark</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
@@ -142,6 +212,10 @@
             <video:tag>Registration</video:tag>
             <video:tag>Compliance</video:tag>
             <video:tag>Regulatory Framework</video:tag>
+            <video:tag>Business Operations</video:tag>
+            <video:tag>Documentation</video:tag>
+            <video:tag>BIS Standards</video:tag>
+            <video:tag>Certification Process</video:tag>
             <video:category>Scheme X</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
@@ -157,6 +231,10 @@
             <video:tag>Quality Standards</video:tag>
             <video:tag>Indian Standards</video:tag>
             <video:tag>Product Certification</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Testing Requirements</video:tag>
+            <video:tag>Market Entry</video:tag>
             <video:category>BIS Certification</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
@@ -172,6 +250,10 @@
             <video:tag>Quality Assurance</video:tag>
             <video:tag>Indian Standards</video:tag>
             <video:tag>Regulatory Framework</video:tag>
+            <video:tag>Business Operations</video:tag>
+            <video:tag>Certification</video:tag>
+            <video:tag>Legal Requirements</video:tag>
+            <video:tag>Industry Standards</video:tag>
             <video:category>Standards Compliance</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
@@ -187,7 +269,49 @@
             <video:tag>Process Optimization</video:tag>
             <video:tag>Indian Standards</video:tag>
             <video:tag>Quality Control</video:tag>
+            <video:tag>Manufacturing Excellence</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Best Practices</video:tag>
+            <video:tag>System Implementation</video:tag>
             <video:category>Quality Management</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/hSNURmPAKDA/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>BIS Certification Services - Expert Guidance for Manufacturers</video:title>
+            <video:description>Professional BIS certification services providing expert guidance for manufacturers seeking compliance with Indian standards. Comprehensive support for certification process and regulatory requirements.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=hSNURmPAKDA</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/hSNURmPAKDA</video:player_loc>
+            <video:duration>450</video:duration>
+            <video:publication_date>2024-04-15T00:00:00+00:00</video:publication_date>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Professional Services</video:tag>
+            <video:tag>Expert Guidance</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Regulatory Support</video:tag>
+            <video:tag>Certification Process</video:tag>
+            <video:category>BIS Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/7NazqQXmOa8/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Quality Assurance and Standards Compliance - Manufacturing Excellence</video:title>
+            <video:description>Comprehensive overview of quality assurance practices and standards compliance for manufacturing excellence. Learn about best practices, regulatory requirements, and quality management systems.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=7NazqQXmOa8</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/7NazqQXmOa8</video:player_loc>
+            <video:duration>585</video:duration>
+            <video:publication_date>2024-05-01T00:00:00+00:00</video:publication_date>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Standards Compliance</video:tag>
+            <video:tag>Manufacturing Excellence</video:tag>
+            <video:tag>Quality Management</video:tag>
+            <video:tag>Best Practices</video:tag>
+            <video:tag>Regulatory Requirements</video:tag>
+            <video:tag>Process Optimization</video:tag>
+            <video:tag>Industry Standards</video:tag>
+            <video:category>Quality Assurance</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
     </url>
