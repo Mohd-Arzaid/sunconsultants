@@ -37,18 +37,64 @@ const Navbar = () => {
   const handleFaqNavigation = (link) => {
     if (link.includes('#faqs')) {
       const [pathname, hash] = link.split('#');
+
+      // Navigate to the pathname without hash in URL
       navigate(pathname);
 
-      // Use setTimeout to ensure the page has loaded before scrolling
-      setTimeout(() => {
+      // Store the hash for later use
+      sessionStorage.setItem('scrollToHash', hash);
+
+      // Multiple robust scroll strategies
+      const scrollToFaq = () => {
         const element = document.getElementById(hash);
         if (element) {
+          // Clear the stored hash since we found the element
+          sessionStorage.removeItem('scrollToHash');
+
+          // Scroll to element with multiple fallback methods
           element.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
           });
+
+          // Fallback method 1: Use window.scrollTo
+          setTimeout(() => {
+            const rect = element.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            window.scrollTo({
+              top: scrollTop + rect.top - 80, // 80px offset for navbar
+              behavior: 'smooth'
+            });
+          }, 100);
+
+          return true;
         }
-      }, 100);
+        return false;
+      };
+
+      // Strategy 1: Immediate attempt
+      setTimeout(scrollToFaq, 100);
+
+      // Strategy 2: Wait for page to be fully loaded
+      setTimeout(() => {
+        if (!scrollToFaq()) {
+          // Strategy 3: Wait for all resources to load
+          if (document.readyState === 'complete') {
+            scrollToFaq();
+          } else {
+            window.addEventListener('load', scrollToFaq, { once: true });
+          }
+        }
+      }, 500);
+
+      // Strategy 4: Persistent checking
+      let attempts = 0;
+      const persistentCheck = setInterval(() => {
+        attempts++;
+        if (scrollToFaq() || attempts > 20) {
+          clearInterval(persistentCheck);
+        }
+      }, 200);
 
       closeMobileMenu();
       return true;
@@ -78,6 +124,35 @@ const Navbar = () => {
     }
     setOpen(!isOpen);
   };
+
+  // Handle automatic scrolling on page load if hash exists
+  useEffect(() => {
+    const handleHashScroll = () => {
+      const hash = sessionStorage.getItem('scrollToHash');
+      if (hash) {
+        const element = document.getElementById(hash);
+        if (element) {
+          sessionStorage.removeItem('scrollToHash');
+          setTimeout(() => {
+            element.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 300);
+        }
+      }
+    };
+
+    // Run on component mount
+    handleHashScroll();
+
+    // Also listen for navigation changes
+    window.addEventListener('popstate', handleHashScroll);
+
+    return () => {
+      window.removeEventListener('popstate', handleHashScroll);
+    };
+  }, []);
 
   // close mobile menu when clicking outside or scrolling
   useEffect(() => {
