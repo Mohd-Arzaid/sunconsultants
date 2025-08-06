@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import {
   NavigationMenu,
@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { NAVIGATION_DATA } from "@/data/navbar-data/navbar-data";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 
 const STYLES = {
@@ -25,6 +25,7 @@ const STYLES = {
 };
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [updatesOpen, setUpdatesOpen] = useState(false);
@@ -32,19 +33,42 @@ const Navbar = () => {
   const [faqsOpen, setFaqsOpen] = useState(false);
   const mobileMenuRef = useRef(null);
 
+  // Handle FAQ navigation with smooth scrolling
+  const handleFaqNavigation = (link) => {
+    if (link.includes('#faqs')) {
+      const [pathname, hash] = link.split('#');
+      navigate(pathname);
+
+      // Use setTimeout to ensure the page has loaded before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 100);
+
+      closeMobileMenu();
+      return true;
+    }
+    return false;
+  };
+
   // Close all dropdown menus
-  const closeAllDropdowns = () => {
+  const closeAllDropdowns = useCallback(() => {
     setServicesOpen(false);
     setUpdatesOpen(false);
     setGalleryOpen(false);
     setFaqsOpen(false);
-  };
+  }, []);
 
   // Close mobile menu function
-  const closeMobileMenu = () => {
+  const closeMobileMenu = useCallback(() => {
     setIsOpen(false);
     closeAllDropdowns();
-  };
+  }, [closeAllDropdowns]);
 
   // Handle dropdown toggle - close others when opening one
   const handleDropdownToggle = (title, isOpen, setOpen) => {
@@ -86,7 +110,7 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isOpen]);
+  }, [isOpen, closeMobileMenu]);
 
   // Render Navigation Menu Content Items
   const createNavContent = (items) =>
@@ -98,6 +122,22 @@ const Navbar = () => {
             <span>{item.name}</span>
           </div>
         </Link>
+      </NavigationMenuLink>
+    ));
+
+  // Render FAQ Navigation Items with custom handler
+  const createFaqNavContent = (items) =>
+    items.map((item) => (
+      <NavigationMenuLink key={item.id} asChild>
+        <button
+          onClick={() => handleFaqNavigation(item.link)}
+          className="block w-full text-left"
+        >
+          <div className={STYLES.navContentItem}>
+            <item.icon className="w-4 h-4 mr-2" />
+            <span>{item.name}</span>
+          </div>
+        </button>
       </NavigationMenuLink>
     ));
 
@@ -115,7 +155,7 @@ const Navbar = () => {
     updatesMobile: NAVIGATION_DATA.updates,
     gallery: createNavContent(NAVIGATION_DATA.gallery),
     galleryMobile: NAVIGATION_DATA.gallery,
-    faqs: createNavContent(NAVIGATION_DATA.faqs),
+    faqs: createFaqNavContent(NAVIGATION_DATA.faqs),
     faqsMobile: NAVIGATION_DATA.faqs,
   };
 
@@ -311,22 +351,44 @@ const Navbar = () => {
 
                 {isOpen && (
                   <div className="ml-4 mt-2 space-y-1">
-                    {items.map((item) => (
-                      <Link
-                        key={item.id}
-                        to={item.link}
-                        className="block w-full"
-                        onClick={closeMobileMenu}
-                      >
-                        <Button
-                          variant="ghost"
-                          className={STYLES.mobileNavContentItem}
+                    {items.map((item) => {
+                      // Special handling for FAQ items
+                      if (title === "FAQs" && item.link.includes('#faqs')) {
+                        return (
+                          <button
+                            key={item.id}
+                            onClick={() => handleFaqNavigation(item.link)}
+                            className="block w-full text-left"
+                          >
+                            <Button
+                              variant="ghost"
+                              className={STYLES.mobileNavContentItem}
+                            >
+                              <item.icon className="w-4 h-4 mr-2" />
+                              {item.name}
+                            </Button>
+                          </button>
+                        );
+                      }
+
+                      // Regular navigation for other items
+                      return (
+                        <Link
+                          key={item.id}
+                          to={item.link}
+                          className="block w-full"
+                          onClick={closeMobileMenu}
                         >
-                          <item.icon className="w-4 h-4 mr-2" />
-                          {item.name}
-                        </Button>
-                      </Link>
-                    ))}
+                          <Button
+                            variant="ghost"
+                            className={STYLES.mobileNavContentItem}
+                          >
+                            <item.icon className="w-4 h-4 mr-2" />
+                            {item.name}
+                          </Button>
+                        </Link>
+                      );
+                    })}
                   </div>
                 )}
               </div>
