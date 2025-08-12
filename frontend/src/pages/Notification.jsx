@@ -15,6 +15,7 @@ import { notifications } from "../data/notificationsData.js";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { getNotificationDetailUrl } from "@/utils/urlUtils";
+import AboutContact from "@/components/manual/about/AboutContact";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -146,6 +147,7 @@ const Notification = () => {
       </div>
 
       <NotificationMainContent />
+      <AboutContact />
       <Footer />
     </div>
   );
