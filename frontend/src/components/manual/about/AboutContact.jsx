@@ -278,7 +278,7 @@ const AboutContact = () => {
                     {loading ? (
                       <div className="flex gap-3 items-center justify-center">
                         <ClockLoader size={22} color="#fff" />
-                        <span>Sending</span>
+                        <span>Sending...</span>
                       </div>
                     ) : (
                       <>
