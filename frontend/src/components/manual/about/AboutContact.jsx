@@ -164,9 +164,6 @@ const AboutContact = () => {
                   <span className="font-geist text-base md:text-lg text-[#1e1e1e] font-medium">
                     Global Reach
                   </span>
-                  <span className="font-geist text-sm text-gray-600">
-                    20+ countries
-                  </span>
                 </div>
               </div>
               <div className="flex items-center justify-center sm:justify-start gap-4 md:gap-5">
