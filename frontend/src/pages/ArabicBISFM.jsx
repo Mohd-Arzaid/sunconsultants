@@ -58,7 +58,7 @@ import ScrollToTopButton from "@/components/common/ScrollToTop";
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
-  TwitterLogoIcon,
+
 } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import { Marquee } from "@/components/magicui/marquee";
@@ -3936,15 +3936,7 @@ export const ArabicFooter = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
 
-              <a
-                href="https://x.com/__Arzaid__"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="تابعنا على إكس (تويتر سابقاً)"
-              >
-                <TwitterLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
-                <span className="sr-only">X (Twitter)</span>
-              </a>
+
 
               <a
                 href="mailto:admin@bis-certifications.com?body=Hello"

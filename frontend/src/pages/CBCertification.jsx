@@ -250,9 +250,8 @@ const CBIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky  top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -302,11 +301,10 @@ const CBIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
-                }`}
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -323,18 +321,16 @@ const CBIndex = () => {
           <div
             key={item}
             onClick={() => handleItemClick(item)}
-            className={`relative cursor-pointer group ${
-              item === activeSection
+            className={`relative cursor-pointer group ${item === activeSection
                 ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
                 : ""
-            }`}
+              }`}
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
-              }`}
+                }`}
             >
               {item}
             </div>
@@ -591,29 +587,7 @@ const ServiCBFaq = () => {
                 </svg>
                 <span className="sr-only">GitHub</span>
               </a>
-              <a
-                className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
-                href="https://x.com/suncertifications"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox="0 0 24 24"
-                  className="size-6"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"
-                    className=""
-                  ></path>
-                </svg>
-                <span className="sr-only">Twitter / X</span>
-              </a>
+
               <a
                 className="transition-colors underline-offset-[3.5px] break-words text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-brand hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-700 dark:focus-visible:outline-brand"
                 href="https://www.linkedin.com/company/sun-consultants-engineers/"

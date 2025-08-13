@@ -1,7 +1,6 @@
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
-  TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import Logo from "../assets/images/Logo.png";
@@ -526,13 +525,7 @@ const Footer = () => {
                 <LinkedInLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
               </a>
 
-              <a
-                href="https://x.com/__Arzaid__"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <TwitterLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
-              </a>
+
 
               <a
                 href="mailto:admin@bis-certifications.com?body=Hello"

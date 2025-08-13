@@ -5,11 +5,25 @@ import { Link } from "react-router-dom";
 const LatestNews = () => {
   const controls = useAnimationControls();
 
+  // News items array
+  const newsItems = [
+    "🔥 Breaking: Tesla unveils next-generation electric vehicle",
+    "📱 Apple announces iPhone 15 with revolutionary features",
+    "💰 S&P 500 reaches all-time high amid tech rally",
+    "🏢 Microsoft launches new AI-powered cloud services",
+    "🌍 Global climate summit announces major initiatives"
+  ];
+
   useEffect(() => {
+    // Calculate speed based on content width
+    const totalWidth = newsItems.length * 400; // Approximate width per news item
+    const pixelsPerSecond = 50; // Same speed as other marquees
+    const duration = totalWidth / pixelsPerSecond;
+
     controls.start({
       translateX: "-50%",
       transition: {
-        duration: 60,
+        duration: duration,
         repeat: Infinity,
         ease: "linear",
         repeatType: "loop",
@@ -65,10 +79,14 @@ const LatestNews = () => {
               initial={{ translateX: "0%" }}
               onMouseEnter={() => controls.stop()}
               onMouseLeave={() => {
+                const totalWidth = newsItems.length * 400;
+                const pixelsPerSecond = 50;
+                const duration = totalWidth / pixelsPerSecond;
+
                 controls.start({
                   translateX: "-50%",
                   transition: {
-                    duration: 60,
+                    duration: duration,
                     repeat: Infinity,
                     ease: "linear",
                     repeatType: "loop",
@@ -77,31 +95,31 @@ const LatestNews = () => {
               }}
               className="flex gap-14 pr-14 items-center  justify-center flex-none"
             >
-              {[...Array(4)].map((_, index) => (
+              {[...Array(4)].map(() => (
                 <>
                   <Link to="/latest-notifications" className="no-underline">
                     <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                      🔥 Breaking: Tesla unveils next-generation electric vehicle
+                      {newsItems[0]}
                     </span>
                   </Link>
                   <Link to="/latest-notifications" className="no-underline">
                     <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                      📱 Apple announces iPhone 15 with revolutionary features
+                      {newsItems[1]}
                     </span>
                   </Link>
                   <Link to="/latest-notifications" className="no-underline">
                     <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                      💰 S&P 500 reaches all-time high amid tech rally
+                      {newsItems[2]}
                     </span>
                   </Link>
                   <Link to="/latest-notifications" className="no-underline">
                     <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                      🏢 Microsoft launches new AI-powered cloud services
+                      {newsItems[3]}
                     </span>
                   </Link>
                   <Link to="/latest-notifications" className="no-underline">
                     <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                      🌍 Global climate summit announces major initiatives
+                      {newsItems[4]}
                     </span>
                   </Link>
                 </>

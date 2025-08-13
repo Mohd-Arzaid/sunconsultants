@@ -128,7 +128,12 @@ const WebinarSeminarMarquee = () => {
 
   const getSpeed = () => {
     if (containerRef.current) {
-      containerRef.current.style.setProperty("--animation-duration", "70s"); // Same as original duration
+      // Calculate speed based on total width of images
+      const totalWidth = galleryImages.length * 350; // Approximate width per image (300px + 50px gap)
+      const pixelsPerSecond = 50; // Consistent speed: 50 pixels per second
+      const duration = totalWidth / pixelsPerSecond;
+
+      containerRef.current.style.setProperty("--animation-duration", `${duration}s`);
     }
   };
 
@@ -145,41 +150,21 @@ const WebinarSeminarMarquee = () => {
         >
           <div
             ref={scrollerRef}
-            className={`flex items-center pt-4 pb-8 w-max gap-6 ${
-              start ? "animate-scroll" : ""
-            } hover:[animation-play-state:paused]`}
+            className={`flex items-center pt-4 pb-8 w-max gap-6 ${start ? "animate-scroll" : ""
+              } hover:[animation-play-state:paused]`}
           >
             {duplicatedImages.map((item, index) => (
               <div
                 key={`${item.id}-${index}`}
-                className="relative min-w-[340px] max-w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1A8781]/60 hover:border-[#0A4394] transition-all duration-300 group hover:scale-105 hover:shadow-[0_8px_40px_-8px_rgba(26,135,129,0.25)] shrink-0"
-                style={{
-                  boxShadow:
-                    "0 8px 40px -8px rgba(26,135,129,0.10), 0 1.5px 8px 0 rgba(10,67,148,0.08)",
-                }}
+                className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white shrink-0"
+                style={{ minWidth: "300px", maxWidth: "400px" }}
               >
-                <div className="relative w-full h-[260px] md:h-[320px] overflow-hidden bg-gray-200">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    style={{
-                      imageRendering: "auto",
-                      opacity: "0",
-                      transition: "opacity 0.3s ease-in-out",
-                    }}
-                    onLoad={(e) => {
-                      e.target.style.opacity = "1";
-                    }}
+                    className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
                   />
-                  {/* Gradient overlay for title */}
-                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1A8781]/90 via-[#1A8781]/40 to-transparent flex items-end justify-center">
-                    {/* <span className="w-full text-center px-4 pb-3 text-lg md:text-2xl font-bold font-playfair text-white drop-shadow-lg tracking-wide">
-                      {item.title}
-                    </span> */}
-                  </div>
                 </div>
               </div>
             ))}

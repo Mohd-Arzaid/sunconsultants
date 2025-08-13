@@ -1,27 +1,57 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { motion } from "motion/react";
-import { useAnimationControls } from "framer-motion";
 import { Link } from "react-router-dom";
 import { notifications } from "../../../data/notificationsData.js";
 import { getNotificationDetailUrl } from "../../../utils/urlUtils.js";
 
 const LatestNews = () => {
-  const controls = useAnimationControls();
+  const [duplicatedNotifications, setDuplicatedNotifications] = useState([]);
+  const [start, setStart] = useState(false);
+  const containerRef = useRef(null);
+  const scrollerRef = useRef(null);
 
   // Get the latest 8 notifications for the ticker
   const latestNotifications = notifications.slice(0, 8);
 
   useEffect(() => {
-    controls.start({
-      translateX: "-50%",
-      transition: {
-        duration: 60,
-        repeat: Infinity,
-        ease: "linear",
-        repeatType: "loop",
-      },
-    });
-  }, [controls]);
+    addAnimation();
+  }, []);
+
+  function addAnimation() {
+    // React-friendly duplication approach - same as other marquees
+    const duplicated = [...latestNotifications, ...latestNotifications, ...latestNotifications];
+    setDuplicatedNotifications(duplicated);
+
+    if (containerRef.current) {
+      getDirection();
+      getSpeed();
+
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        setStart(true);
+      }, 100);
+    }
+  }
+
+  const getDirection = () => {
+    if (containerRef.current) {
+      containerRef.current.style.setProperty(
+        "--animation-direction",
+        "forwards"
+      );
+    }
+  };
+
+  const getSpeed = () => {
+    if (containerRef.current) {
+      // Calculate speed based on total width - same as other marquees
+      const totalWidth = latestNotifications.length * 350; // Same as AuditsMarquee (350px per item)
+      const pixelsPerSecond = 50; // Same speed as other marquees
+      const duration = totalWidth / pixelsPerSecond;
+
+      containerRef.current.style.setProperty("--animation-duration", `${duration}s`);
+    }
+  };
 
   return (
     <div className="h-20 md:h-28 border-2 my-8 bg-[#B9DEEB]">
@@ -101,40 +131,26 @@ const LatestNews = () => {
         </div>
 
         <div className="flex w-[50%] md:w-[77%]">
-          <div className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent_0%,black_15%,black_85%,transparent_100%)]">
-            <motion.div
-              animate={controls}
-              initial={{ translateX: "0%" }}
-              onMouseEnter={() => controls.stop()}
-              onMouseLeave={() => {
-                controls.start({
-                  translateX: "-50%",
-                  transition: {
-                    duration: 60,
-                    repeat: Infinity,
-                    ease: "linear",
-                    repeatType: "loop",
-                  },
-                });
-              }}
-              className="flex gap-14 pr-14 items-center justify-center flex-none"
+          <div
+            ref={containerRef}
+            className="flex overflow-hidden h-full [mask-image:linear-gradient(to_right,transparent_0%,black_15%,black_85%,transparent_100%)]"
+          >
+            <div
+              ref={scrollerRef}
+              className={`flex gap-14 pr-14 items-center justify-center flex-none w-max ${start ? "animate-scroll" : ""} hover:[animation-play-state:paused]`}
             >
-              {[...Array(4)].map((_, arrayIndex) => (
-                <React.Fragment key={`news-group-${arrayIndex}`}>
-                  {latestNotifications.map((notification, notificationIndex) => (
-                    <Link
-                      key={`notification-${arrayIndex}-${notificationIndex}`}
-                      to={getNotificationDetailUrl(notification.title)}
-                      className="no-underline"
-                    >
-                      <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                        {notification.tagType === "New QCO" ? "🆕" : "📢"} {notification.title}
-                      </span>
-                    </Link>
-                  ))}
-                </React.Fragment>
+              {duplicatedNotifications.map((notification, index) => (
+                <Link
+                  key={`notification-${index}`}
+                  to={getNotificationDetailUrl(notification.title)}
+                  className="no-underline"
+                >
+                  <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                    {notification.tagType === "New QCO" ? "🆕" : "📢"} {notification.title}
+                  </span>
+                </Link>
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
