@@ -32,7 +32,7 @@ const CertificationAndAchievements = () => {
   return (
     <div className="bg-white pt-8 py-4">
       <div className="max-w-[88rem] mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-bold drop-shadow-lg font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
           Certification And Achievements
         </h2>
 
