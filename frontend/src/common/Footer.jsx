@@ -1,7 +1,6 @@
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
-  TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -308,15 +307,7 @@ const Footer = () => {
                 <span className="sr-only">linkedin</span>
               </a>
 
-              <a
-                href="https://x.com/__Arzaid__"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={t("socialLinks.twitter")}
-              >
-                <TwitterLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
-                <span className="sr-only">X (Twitter)</span>
-              </a>
+
 
               <a
                 href="mailto:admin@bis-certifications.com?body=Hello"
