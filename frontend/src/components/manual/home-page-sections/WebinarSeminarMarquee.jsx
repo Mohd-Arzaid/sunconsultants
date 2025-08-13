@@ -140,7 +140,7 @@ const WebinarSeminarMarquee = () => {
   return (
     <div className="bg-white pt-8 pb-2">
       <div className="max-w-[88rem] mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold uppercase font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-bold font-playfair drop-shadow-lg text-center mb-10 text-[#1e1e1e] tracking-tight">
           Seminars/Exhibitions
         </h2>
         {/* Infinite scroll for seminar images */}
