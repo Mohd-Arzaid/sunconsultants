@@ -1,5 +1,6 @@
 import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
+import AboutContact from "../components/manual/about/AboutContact";
 import { Helmet } from "react-helmet-async";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
@@ -62,6 +63,12 @@ const InternationalAudits = () => {
       <div id="services-section">
         <Services />
       </div>
+
+      {/* Contact Section */}
+      <div className="pt-8 pb-4 md:pt-10 md:pb-6">
+        <AboutContact />
+      </div>
+
       <Footer />
     </div>
   );

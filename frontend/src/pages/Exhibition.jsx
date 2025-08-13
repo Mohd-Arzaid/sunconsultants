@@ -1,6 +1,7 @@
 import { Calendar, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
+import AboutContact from "../components/manual/about/AboutContact";
 import { Helmet } from "react-helmet-async";
 import {
   Breadcrumb,
@@ -64,6 +65,12 @@ const Exhibition = () => {
       <ExhibitionHero />
       <ExhibitionGallery />
       <Services />
+
+      {/* Contact Section */}
+      <div className="pt-8 pb-4 md:pt-10 md:pb-6">
+        <AboutContact />
+      </div>
+
       <Footer />
     </div>
   );
@@ -227,6 +234,23 @@ const ExhibitionGallery = () => {
             </div>
           </div>
         ))}
+
+        {/* Many More Exhibitions Images Coming Soon Card */}
+        <div className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300">
+          <div className="aspect-[4/3] flex items-center justify-center">
+            <div className="text-center p-6">
+              <h3 className="text-gray-800 font-geist text-lg md:text-xl font-bold mb-2 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
+                Many More Exhibitions
+              </h3>
+              <p className="text-gray-500 font-geist text-xs md:text-sm font-medium uppercase tracking-widest mb-1">
+                Conducted Worldwide
+              </p>
+              <p className="text-gray-400 font-geist text-xs italic">
+                Showcasing our extensive exhibition portfolio
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
