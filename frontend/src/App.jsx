@@ -56,6 +56,7 @@ import ArabicISIMark from "./pages/ArabicISIMark";
 import ArabicCRS from "./pages/ArabicCRS";
 import ArabicSchemeX from "./pages/ArabicSchemeX";
 import ArabicBISCertification from "./pages/ArabicBISCertification";
+import NABL from "./pages/NABL";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -152,6 +153,9 @@ function App() {
           <Route path="emi-emc-certification" element={<EMIEMC />} />
           <Route path="cb-certification" element={<CBCertification />} />
           <Route path="lhscable" element={<LHSCable />} />
+
+          <Route path="nabl-certification-india" element={<NABL />} />
+
 
           <Route path="webinar" element={<Webinar />} />
           <Route path="videos-about-bis-certification" element={<Videos />} />

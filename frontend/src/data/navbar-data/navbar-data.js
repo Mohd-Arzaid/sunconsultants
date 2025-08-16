@@ -174,6 +174,14 @@ export const NAVIGATION_DATA = {
       desktopOrder: 19,
       mobileOrder: 19,
     },
+    {
+      id: 20,
+      name: "NABL",
+      link: "/nabl-certification-india",
+      icon: Award,
+      desktopOrder: 20,
+      mobileOrder: 20,
+    },
   ],
   updates: [
     {
