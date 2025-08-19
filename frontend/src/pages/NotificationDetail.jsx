@@ -77,30 +77,32 @@ const NotificationDetail = () => {
 
       <div className="absolute md:top-5 top-3 left-0 w-full z-30">
         <div className="max-w-[80rem] mx-auto px-4">
-          <div className="w-fit font-inter">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator>
-                  <SlashIcon />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/bis-qco-updates">BIS QCO Updates</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator>
-                  <SlashIcon />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem>
-                  <BreadcrumbPage>{notification.subHeading}</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
+          <div className="w-full overflow-x-auto scrollbar-hide font-inter">
+            <div className="w-fit min-w-full">
+              <Breadcrumb>
+                <BreadcrumbList className="flex-nowrap">
+                  <BreadcrumbItem className="flex-shrink-0">
+                    <BreadcrumbLink asChild>
+                      <Link to="/">Home</Link>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator className="flex-shrink-0">
+                    <SlashIcon />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem className="flex-shrink-0">
+                    <BreadcrumbLink asChild>
+                      <Link to="/bis-qco-updates">BIS QCO Updates</Link>
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator className="flex-shrink-0">
+                    <SlashIcon />
+                  </BreadcrumbSeparator>
+                  <BreadcrumbItem className="flex-shrink-0">
+                    <BreadcrumbPage className="whitespace-nowrap">{notification.subHeading}</BreadcrumbPage>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
+            </div>
           </div>
         </div>
       </div>
@@ -321,8 +323,8 @@ const NotificationDetailLeft = ({ notification }) => {
 
 
         {/* Profile Card  */}
-        <ProfileCard/>
-      
+        <ProfileCard />
+
       </div>
     </>
   );
@@ -333,7 +335,7 @@ const ProfileCard = () => {
   const handleDownloadPDF = () => {
     // Using a sample PDF from Google for demonstration
     const pdfUrl = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
-    
+
     // Create a temporary link element and trigger download
     const link = document.createElement('a');
     link.href = pdfUrl;
@@ -488,11 +490,10 @@ const NotificationDetailRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
-                ? "bg-green-50 text-green-700 border border-green-200"
-                : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
+              ? "bg-green-50 text-green-700 border border-green-200"
+              : "bg-red-50 text-red-700 border border-red-200"
+              }`}
           >
             {submitStatus.message}
           </div>
