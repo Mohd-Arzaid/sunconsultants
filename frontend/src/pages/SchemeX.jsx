@@ -927,9 +927,8 @@ export const SchemeXIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -979,11 +978,10 @@ export const SchemeXIndex = () => {
               <div
                 key={item.key}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item.key === activeSection
+                className={`px-4 py-3 cursor-pointer transition-colors ${item.key === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
-                }`}
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item.label}
@@ -1003,20 +1001,18 @@ export const SchemeXIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item.key === activeSection
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item.key === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
-              }`}
+                }`}
             >
               {item.label}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item.key === activeSection
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item.key === activeSection
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
-              }`}
+                }`}
             />
           </div>
         ))}
@@ -1119,28 +1115,28 @@ export const SchemeXContentLeft = () => {
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
         <Certification />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        
+
         <Procedure />
 
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        
-        
-        
+
+
+
         <Pricing />
 
 
 
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-      
-      
+
+
         <Representative />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-       
-       
-       
+
+
+
         <Benefits />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-      
+
         <Conclusion />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
@@ -2428,8 +2424,8 @@ export default SchemeX;
 const downloadTableData = () => {
   // Create a link element to download the PDF
   const link = document.createElement("a");
-  link.href = "/pdf/schemeXtable.pdf"; // Path to your PDF in public/pdf folder
-  link.download = "SchemeXtable.pdf"; // File name for download
+  link.href = "/pdf/schemeXproduct.pdf"; // Path to your PDF in public/pdf folder
+  link.download = "SchemeXproduct.pdf"; // File name for download
   link.target = "_blank"; // Open in new tab if direct download fails
 
   // Trigger the download
