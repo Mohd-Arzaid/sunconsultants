@@ -123,9 +123,9 @@ const Footer = () => {
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />
                 <Link to="/" className="text-center">
-                  <h1 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
+                  <div className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
                     {t("company.name")}
-                  </h1>
+                  </div>
                   <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
                     {t("company.tagline")}
                   </p>

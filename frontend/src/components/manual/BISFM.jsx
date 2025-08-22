@@ -423,13 +423,13 @@ const BISFMHero = () => {
             </span>
           </div>
 
-          <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
+          <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
               {t("hero.titlePart1")}
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             {t("hero.titlePart2")}
-          </h1>
+          </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
             {t("hero.description")}
@@ -763,9 +763,9 @@ export const BISFMContentLeft = () => {
           className="flex flex-col gap-2 md:gap-4 mb-6"
           aria-label="BIS Certificate for Foreign Manufacturers"
         >
-          <article className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+          <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
             {t("overview.mainTitle")}
-          </article>
+          </h1>
 
           <h2 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] ">
             {t("overview.whatIsBIS.title")}

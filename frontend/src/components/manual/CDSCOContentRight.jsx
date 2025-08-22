@@ -152,9 +152,9 @@ const WhyChooseUs = () => {
       {/* Header with Animation */}
       <div className="flex gap-2 items-center">
         <Lightbulb className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+        <div className="text-xl font-geist font-semibold text-[#232327]">
           {t("title")}
-        </h1>
+        </div>
       </div>
 
       {/* Highlight Stats */}
@@ -273,9 +273,9 @@ export const LatestBlog = () => {
     <div className="w-full md:w-[360px] p-6 rounded-lg bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       <div className="flex gap-2 items-center ">
         <AlignLeft className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold  text-[#232327]">
+        <div className="text-xl font-geist font-semibold  text-[#232327]">
           {t("title")}
-        </h1>
+        </div>
       </div>
       <div className="relative h-[400px] overflow-hidden mt-5">
         <Marquee vertical pauseOnHover={true} className="[--duration:20s]">
@@ -406,9 +406,9 @@ const OurServices = () => {
       <div className="flex gap-2 items-center ">
         <Star className="  fill-current text-[#232327] " size={20} />
 
-        <h1 className="text-xl font-geist font-semibold  text-[#232327]">
+        <div className="text-xl font-geist font-semibold  text-[#232327]">
           Our Services
-        </h1>
+        </div>
       </div>
 
       <div className="mt-5 space-y-5">
@@ -460,9 +460,9 @@ const ClientTestimonial = () => {
       <div className="pt-6 px-6 pb-4">
         <div className="flex gap-2 items-center">
           <Languages className="text-[#232327]" />
-          <h1 className="text-xl font-geist font-semibold text-[#232327]">
+          <div className="text-xl font-geist font-semibold text-[#232327]">
             {t("title")}
-          </h1>
+          </div>
         </div>
         <div className="mt-8 mb-5 rounded-lg h-60 overflow-hidden">
           <Marquee
@@ -534,9 +534,9 @@ const OurEvents = () => {
       {/* Header */}
       <div className="flex gap-2 items-center">
         <Calendar className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+        <div className="text-xl font-geist font-semibold text-[#232327]">
           Upcoming Events
-        </h1>
+        </div>
       </div>
 
       {/* Featured Event */}
@@ -710,9 +710,9 @@ const LatestNotification = () => {
       {/* Header */}
       <div className="flex gap-2 items-center">
         <Bell className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+        <div className="text-xl font-geist font-semibold text-[#232327]">
           Latest Notifications
-        </h1>
+        </div>
       </div>
 
       {/* Notification List */}
@@ -1166,9 +1166,9 @@ const FreeCallBack = () => {
       {/* Header */}
       <div className="flex gap-2 items-center">
         <PhoneCall className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+        <div className="text-xl font-geist font-semibold text-[#232327]">
           {t("title")}
-        </h1>
+        </div>
       </div>
 
       {/* Intro Text */}

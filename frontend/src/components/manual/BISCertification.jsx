@@ -925,13 +925,13 @@ const BISCHero = () => {
             </span>
           </div>
 
-          <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
+          <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
               {t("hero.title.part1")}
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
             {t("hero.title.part2")}
-          </h1>
+          </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
             {t("hero.description")}
@@ -1482,7 +1482,7 @@ const DocumentsSection = () => {
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h1 className="mainHeading">{t("types.requiredDocuments.title")}</h1>
+      <div className="mainHeading">{t("types.requiredDocuments.title")}</div>
 
       <p className="simpleParagraph">
         {t("types.requiredDocuments.description")}
