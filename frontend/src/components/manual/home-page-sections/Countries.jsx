@@ -102,9 +102,9 @@ const Countries = () => {
                   <div className="mt-3 px-1 flex items-center justify-between w-full">
                     <span className="flex text-base items-center font-bold justify-center gap-1">
                       <Star className="fill-current text-[#160E34]" size={16} />
-                      <h1 className="tracking-wider  text-[#160E34] uppercase">
+                      <div className="tracking-wider  text-[#160E34] uppercase">
                         {country.name}
-                      </h1>
+                      </div>
                     </span>
                   </div>
                 </div>
@@ -130,9 +130,9 @@ const Countries = () => {
                   <div className="mt-4 px-2 flex items-center justify-between w-full">
                     <span className="flex text-xl items-center font-bold justify-center gap-2">
                       <Star className="fill-current text-[#160E34]" size={20} />
-                      <h1 className="tracking-widest text-[#160E34] uppercase">
+                      <div className="tracking-widest text-[#160E34] uppercase">
                         {country.name}
-                      </h1>
+                      </div>
                     </span>
                   </div>
                 </div>
