@@ -165,4 +165,24 @@ export const videosData = [
       "Industry Standards",
     ],
   },
+  {
+    id: 9,
+    embedId: "2PMhlbYSCQk",
+    title: "New Certification Guide - Standards and Compliance",
+    description:
+      "Latest guide on certification standards and compliance requirements. Learn about regulatory framework, quality assurance, and best practices for manufacturers.",
+    category: "Certification",
+    duration: "PT10M00S", // 10 minutes (estimated)
+    uploadDate: "2024-05-15T00:00:00+00:00",
+    tags: [
+      "Certification",
+      "Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Regulatory Framework",
+      "Best Practices",
+      "Industry Standards",
+    ],
+  },
 ];

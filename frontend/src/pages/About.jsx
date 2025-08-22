@@ -321,33 +321,68 @@ const Stats = () => {
 };
 
 const VideoShowcase = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayVideo = () => {
+    setIsPlaying(true);
+  };
+
   return (
     <div className="max-w-[84rem] mx-auto px-4 md:px-12 ">
       <div className="relative rounded-3xl shadow-xl md:shadow-2xl overflow-hidden group">
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 z-10"></div>
+        {!isPlaying ? (
+          <>
+            {/* Overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 z-10"></div>
 
-        <img
-          src={whychooseus}
-          alt="Team working"
-          className="w-full h-[450px] md:h-[600px] object-cover group-hover:scale-105 transition-all duration-700"
-        />
+            <img
+              src={whychooseus}
+              alt="Team working"
+              className="w-full h-[450px] md:h-[600px] object-cover group-hover:scale-105 transition-all duration-700"
+            />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 p-6 md:p-8">
-          <h3 className="text-white text-3xl md:text-4xl font-bold font-playfair mb-5 md:mb-6 text-center max-w-xs md:max-w-2xl">
-            Experience Our Certification Excellence
-          </h3>
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 p-6 md:p-8">
+              <h3 className="text-white text-3xl md:text-4xl font-bold font-playfair mb-5 md:mb-6 text-center max-w-xs md:max-w-2xl">
+                Experience Our Certification Excellence
+              </h3>
 
-          <button className="flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-sm py-3 md:py-4 px-4 md:px-6 rounded-full shadow-xl hover:bg-white transition-all duration-300 group/btn">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1A8781] rounded-full flex items-center justify-center">
-              <Play className="w-4 h-4 md:w-5 md:h-5 text-white ml-1" />
+              <button
+                onClick={handlePlayVideo}
+                className="flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-sm py-3 md:py-4 px-4 md:px-6 rounded-full shadow-xl hover:bg-white transition-all duration-300 group/btn"
+              >
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1A8781] rounded-full flex items-center justify-center">
+                  <Play className="w-4 h-4 md:w-5 md:h-5 text-white ml-1" />
+                </div>
+
+                <span className="font-medium text-base md:text-lg text-gray-800 group-hover/btn:text-[#1A8781] transition-colors duration-300">
+                  Watch Our Story
+                </span>
+              </button>
             </div>
+          </>
+        ) : (
+          <div className="relative">
+            <video
+              className="w-full h-[450px] md:h-[600px] object-cover"
+              controls
+              autoPlay
+              preload="metadata"
+            >
+              <source src="/aboutVideo/about.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
 
-            <span className="font-medium text-base md:text-lg text-gray-800 group-hover/btn:text-[#1A8781] transition-colors duration-300">
-              Watch Our Story
-            </span>
-          </button>
-        </div>
+            {/* Close button */}
+            <button
+              onClick={() => setIsPlaying(false)}
+              className="absolute top-4 right-4 z-30 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-all duration-300"
+            >
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
