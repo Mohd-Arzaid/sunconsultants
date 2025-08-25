@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { Services } from "@/components/manual/Services"
+import VideoSection from "@/components/manual/home-page-sections/VideoSection"
 import Footer from "@/common/Footer"
 import { Helmet } from "react-helmet-async"
 
@@ -39,6 +40,7 @@ const TinIngotBlog = () => {
             <TinIngotBlogMainContent />
 
             <Services />
+            <VideoSection />
             <Footer />
         </div>
     )
