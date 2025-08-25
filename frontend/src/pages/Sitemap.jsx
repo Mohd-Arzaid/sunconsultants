@@ -325,6 +325,15 @@ const sitemapSections = [
   },
 
   {
+    title: "Latest Blogs",
+    pages: [
+      { name: "All Blogs", path: "/blogs" },
+      { name: "BIS Certificate for Tin Ingots under IS 26:2024", path: "/bis-certificate-for-tin-ingots" },
+      { name: "BIS Certificate for Refined Zinc under IS 209:2024", path: "/bis-certificate-for-refined-zinc" },
+    ],
+  },
+
+  {
     title: "Gallery",
     pages: [
       { name: "International Audits", path: "/international-audits" },

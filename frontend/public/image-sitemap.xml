@@ -368,4 +368,23 @@
         </image:image>
     </url>
 
+    <!-- Blog Images -->
+    <url>
+        <loc>https://bis-certifications.com/bis-certificate-for-tin-ingots</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/blogImages/BISCertificationforTinIngots.png</image:loc>
+            <image:title>BIS Certification for Tin Ingots IS 26:2004</image:title>
+            <image:caption>BIS Certification for Tin Ingots IS 26:2004 mandatory from 17 October 2025 for micro, small, medium, large manufacturers and importers. Sun Certifications India consultancy services for BIS certificate, ISI mark and Bureau of Indian Standards compliance in India.</image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://bis-certifications.com/bis-certificate-for-refined-zinc</loc>
+        <image:image>
+            <image:loc>https://bis-certifications.com/blogImages/RefinedZinc.png</image:loc>
+            <image:title>BIS Certification for Refined Zinc IS 209:2004</image:title>
+            <image:caption>BIS Certification for Refined Zinc IS 209:2004 mandatory from 17 October 2025 for micro, small, medium, large manufacturers and importers. Sun Certifications India consultancy services for BIS certificate, ISI mark and Bureau of Indian Standards compliance in India.</image:caption>
+        </image:image>
+    </url>
+
 </urlset> 

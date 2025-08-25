@@ -346,6 +346,18 @@ const RefinedZincBlogMainContentLeft = () => {
                     If you are a refined zinc manufacturer, don&apos;t wait until October 2025. Start your BIS Certificate Registration today and stay compliant with the Bureau of Indian Standard regulations.
                 </p>
 
+                {/* Featured Image */}
+                <div className="mb-6 flex justify-center">
+                    <img
+                        src="/blogImages/RefinedZinc.png"
+                        alt="BIS Certification for Refined Nickel IS 2782:2023 mandatory from 17 October 2025 for micro, small, medium, large manufacturers and importers. Sun Certifications India consultancy services for BIS certificate, ISI mark and Bureau of Indian Standards compliance in India."
+                        title="BIS Certification for Refined Nickel IS 2782:2023 – Mandatory from 17 October 2025"
+                        className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
+                    />
+                </div>
+
+
+
             </div>
         </div>
     )

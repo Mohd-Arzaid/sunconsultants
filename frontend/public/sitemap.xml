@@ -1184,4 +1184,24 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://bis-certifications.com/blogs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-certificate-for-tin-ingots</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-certificate-for-refined-zinc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-15</lastmod>
+  </url>
+
 </urlset>

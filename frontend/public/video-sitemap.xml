@@ -157,6 +157,48 @@
             <video:category>Quality Assurance</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/2PMhlbYSCQk/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>New Certification Guide - Standards and Compliance</video:title>
+            <video:description>Latest guide on certification standards and compliance requirements. Learn about regulatory framework, quality assurance, and best practices for manufacturers.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=2PMhlbYSCQk</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/2PMhlbYSCQk</video:player_loc>
+            <video:duration>600</video:duration>
+            <video:publication_date>2024-05-15T00:00:00+00:00</video:publication_date>
+            <video:tag>Certification</video:tag>
+            <video:tag>Standards</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Regulatory Framework</video:tag>
+            <video:tag>Best Practices</video:tag>
+            <video:tag>Industry Standards</video:tag>
+            <video:category>Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/6JG1nSiLAao/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>BIS Certification for Tin Ingot under IS 26:2024 - Complete Process Guide</video:title>
+            <video:description>Complete guide to BIS Certification for Tin Ingot under IS 26:2024. Learn about mandatory certification from October 2025, application process, required documents, testing procedures, and compliance requirements for manufacturers.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=6JG1nSiLAao</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/6JG1nSiLAao</video:player_loc>
+            <video:duration>765</video:duration>
+            <video:publication_date>2024-12-15T00:00:00+00:00</video:publication_date>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Tin Ingot</video:tag>
+            <video:tag>IS 26:2024</video:tag>
+            <video:tag>BIS Application</video:tag>
+            <video:tag>Product Testing</video:tag>
+            <video:tag>Manufacturing Standards</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Quality Control</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Certification Process</video:tag>
+            <video:tag>Documentation</video:tag>
+            <video:tag>BIS Consultants</video:tag>
+            <video:category>BIS Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
     </url>
 
     <!-- Dedicated Videos Page -->
@@ -312,6 +354,48 @@
             <video:tag>Process Optimization</video:tag>
             <video:tag>Industry Standards</video:tag>
             <video:category>Quality Assurance</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/2PMhlbYSCQk/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>New Certification Guide - Standards and Compliance</video:title>
+            <video:description>Latest guide on certification standards and compliance requirements. Learn about regulatory framework, quality assurance, and best practices for manufacturers.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=2PMhlbYSCQk</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/2PMhlbYSCQk</video:player_loc>
+            <video:duration>600</video:duration>
+            <video:publication_date>2024-05-15T00:00:00+00:00</video:publication_date>
+            <video:tag>Certification</video:tag>
+            <video:tag>Standards</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Regulatory Framework</video:tag>
+            <video:tag>Best Practices</video:tag>
+            <video:tag>Industry Standards</video:tag>
+            <video:category>Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/6JG1nSiLAao/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>BIS Certification for Tin Ingot under IS 26:2024 - Complete Process Guide</video:title>
+            <video:description>Complete guide to BIS Certification for Tin Ingot under IS 26:2024. Learn about mandatory certification from October 2025, application process, required documents, testing procedures, and compliance requirements for manufacturers.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=6JG1nSiLAao</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/6JG1nSiLAao</video:player_loc>
+            <video:duration>765</video:duration>
+            <video:publication_date>2024-12-15T00:00:00+00:00</video:publication_date>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Tin Ingot</video:tag>
+            <video:tag>IS 26:2024</video:tag>
+            <video:tag>BIS Application</video:tag>
+            <video:tag>Product Testing</video:tag>
+            <video:tag>Manufacturing Standards</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Quality Control</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Certification Process</video:tag>
+            <video:tag>Documentation</video:tag>
+            <video:tag>BIS Consultants</video:tag>
+            <video:category>BIS Certification</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
     </url>

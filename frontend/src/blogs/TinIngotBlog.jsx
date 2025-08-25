@@ -153,6 +153,8 @@ const TinIngotBlogMainContentLeft = () => {
                     Without this certification, selling or distributing refined zinc in India will not be permitted after the compliance deadline.
                 </p>
 
+
+
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
@@ -353,6 +355,16 @@ const TinIngotBlogMainContentLeft = () => {
                 <p className="text-gray-600 text-base font-geist mb-6">
                     If you are a tin ingot manufacturer, don&apos;t wait until October 2025. Start your BIS Certificate Registration today and stay compliant with the Bureau of Indian Standard regulations.
                 </p>
+
+                {/* Featured Image */}
+                <div className="mb-6 flex justify-center">
+                    <img
+                        src="/blogImages/BISCertificationforTinIngots.png"
+                        alt="BIS Certification for Tin Ingots IS 26:2004 mandatory from 17 October 2025 for micro, small, medium, large manufacturers and importers. Sun Certifications India consultancy services for BIS certificate, ISI mark and Bureau of Indian Standards compliance in India."
+                        title="BIS Certification for Tin Ingots IS 26:2004"
+                        className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
+                    />
+                </div>
 
             </div>
         </div>
