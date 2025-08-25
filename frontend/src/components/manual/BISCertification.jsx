@@ -969,7 +969,6 @@ const BISCHero = () => {
 
 // BISC Index Section
 const BISCIndex = () => {
-  
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("Overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -1406,11 +1405,13 @@ const TypesSection = () => {
         <PointsListTwo
           points={[
             t("types.certificationTypes.fmcs"),
+            t("types.certificationTypes.isiMarkScheme"),
             t("types.certificationTypes.schemeX"),
             t("types.certificationTypes.crs"),
             t("types.certificationTypes.hallmarking"),
-            t("types.certificationTypes.cement"),
             t("types.certificationTypes.ecoMark"),
+            t("types.certificationTypes.mscs"),
+            t("types.certificationTypes.lrs"),
           ]}
         />
       </div>

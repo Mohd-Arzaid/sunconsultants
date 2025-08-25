@@ -46,12 +46,14 @@
     "mainTitle": "BIS認証の種類",
     "description": "インドBISによって発行されるBIS認証には様々な種類があり、それぞれがインド規格に基づく異なる製品カテゴリーと市場ニーズに対応するように設計されています。",
     "certificationTypes": {
-      "fmcs": "FMCS – 電子機器・IT機器の海外製造業者認証スキーム",
+      "fmcs": "FMCS – 外国製造業者認証制度",
+      "isiMarkScheme": "ISIマーク制度（国内製造業者）",
       "schemeX": "インドBIS下のスキームX",
-      "crs": "CRS – 強制登録スキーム",
-      "hallmarking": "ホールマーキングスキーム（宝飾品・貴金属）",
-      "cement": "セメントおよび建設資材など",
-      "ecoMark": "エコマーク認証"
+      "crs": "CRS – 強制登録制度",
+      "hallmarking": "ホールマーキング制度（宝飾品・貴金属）",
+      "ecoMark": "エコマーク認証",
+      "mscs": "マネジメントシステム認証制度（MSCS）",
+      "lrs": "LRS（試験所認定制度）"
     },
     "fmcs": {
       "title": "インドBIS下のFMCSスキーム",

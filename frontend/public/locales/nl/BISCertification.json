@@ -46,12 +46,14 @@
     "mainTitle": "Types BIS-certificering",
     "description": "Er zijn verschillende soorten BIS-certificeringen die worden uitgegeven door de Indiase BIS, elk ontworpen om te voldoen aan verschillende productcategorieën en marktbehoeften volgens Indiase normen.",
     "certificationTypes": {
-      "fmcs": "FMCS – Certificeringsregeling voor Buitenlandse Fabrikanten van Elektronica & IT-hardware",
-      "schemeX": "Regeling X onder Indiase BIS",
-      "crs": "CRS – Verplichte Registratieregeling",
-      "hallmarking": "Keurmerkregeling (Sieraden & Edelmetalen)",
-      "cement": "Cement en bouwmaterialen, etc.",
-      "ecoMark": "Eco Mark Certificering"
+      "fmcs": "FMCS – Certificatiesysteem voor Buitenlandse Fabrikanten",
+      "isiMarkScheme": "ISI Mark Systeem (Binnenlandse Fabrikanten)",
+      "schemeX": "Schema X onder Indiase BIS",
+      "crs": "CRS – Verplicht Registratiesysteem",
+      "hallmarking": "Keuringssysteem (Sieraden & Edelmetalen)",
+      "ecoMark": "Eco Mark Certificering",
+      "mscs": "Management Systemen Certificatieschema (MSCS)",
+      "lrs": "LRS (Laboratorium Erkenningsschema)"
     },
     "fmcs": {
       "title": "FMCS-regeling onder Indiase BIS",

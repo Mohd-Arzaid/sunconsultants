@@ -97,6 +97,81 @@
           "serialNumber": "5",
           "description": "All types of machinery for filling, closing, sealing, labelling bottles, packing or wrapping and(or)their assemblies/sub-assemblies/components",
           "hsCode": "842220, 842230, 842240 and 842290"
+        },
+        {
+          "serialNumber": "6",
+          "description": "All types of cranes and (or) their assemblies /sub-assemblies/components",
+          "hsCode": "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 and 84269990"
+        },
+        {
+          "serialNumber": "7",
+          "description": "All types of machinery for construction, earthmoving, Mining and (or)their assemblies /sub-assemblies/components",
+          "hsCode": "8429, 843010, 843020, 843031, 843039, 843041, 843049, 843050, 843141, 843142, 843143 and 843149"
+        },
+        {
+          "serialNumber": "8",
+          "description": "All types of weaving machines (looms) and (or)their assemblies/sub-assemblies / components",
+          "hsCode": "8446, 844811, 844819, 844842 and 844849"
+        },
+        {
+          "serialNumber": "9",
+          "description": "All types of machinery for making embroidery and(or)their assemblies /sub-assemblies /components",
+          "hsCode": "84479020 and 844859"
+        },
+        {
+          "serialNumber": "10",
+          "description": "All types of metal cutting machines tools covered under the heading 8456 to 8461 and(or)their assemblies /sub-assemblies/components",
+          "hsCode": "8456, 8457, 8458, 8459, 8460, 8461 and 846693"
+        },
+        {
+          "serialNumber": "11",
+          "description": "All types of machine tools for working stone, ceramics, concrete, asbestos cement or like mineral glass and (or)their assemblies /sub-assemblies /components",
+          "hsCode": "8464 and 84669100"
+        },
+        {
+          "serialNumber": "12",
+          "description": "All types of machinery for working rubber and plastics and(or) their assemblies /sub-assemblies /components",
+          "hsCode": "8477"
+        },
+        {
+          "serialNumber": "13",
+          "description": "All types of Machines including the machines for public works & building and the machinery & mechanical appliances having individual functions, not specified Or included elsewhere in Chapter 84 and(or)their assemblies/sub-assemblies /components",
+          "hsCode": "84791000, 84798999 and 84799090"
+        },
+        {
+          "serialNumber": "14",
+          "description": "All types of gears and gearing, toothed wheels, chain sprocket, transmission elements ball or roller screws, gear boxes and speed changers, including torque converters And (or)their assemblies /sub-assemblies /components",
+          "hsCode": "84834000 and 84839000"
+        },
+        {
+          "serialNumber": "15",
+          "description": "All types of Rotary electrical machines such as Generator, etc. and (or) their assemblies /sub-assemblies /components",
+          "hsCode": "8501 and 8503"
+        },
+        {
+          "serialNumber": "16",
+          "description": "All types of Diesel Generator and (or)their assemblies /sub-assemblies /components",
+          "hsCode": "8502 and 8503"
+        },
+        {
+          "serialNumber": "17",
+          "description": "All types of Transformers and (or)their assemblies /sub-assemblies /components",
+          "hsCode": "850421, 850422, 850423, 850431, 850432, 850433, 850434 and 850490"
+        },
+        {
+          "serialNumber": "18",
+          "description": "All types of Power Semiconductor Converter and (or)their assemblies /sub-assemblies /components",
+          "hsCode": "850440"
+        },
+        {
+          "serialNumber": "19",
+          "description": "All types of switch gear and control gear equipment operating at voltages not exceeding 1000 volts and (or)their assemblies /sub-assemblies /components",
+          "hsCode": "8536, 8537 and 8538"
+        },
+        {
+          "serialNumber": "20",
+          "description": "All types of switch gear and control gear equipment operating at voltages exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
+          "hsCode": "8535, 8537 and 8538"
         }
       ]
     }

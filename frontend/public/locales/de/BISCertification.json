@@ -46,12 +46,14 @@
     "mainTitle": "Arten der BIS-Zertifizierung",
     "description": "Es gibt verschiedene Arten von BIS-Zertifizierungen, die vom indischen BIS ausgestellt werden, jede davon ist für verschiedene Produktkategorien und Marktanforderungen nach indischen Standards konzipiert.",
     "certificationTypes": {
-      "fmcs": "FMCS – Zertifizierungssystem für ausländische Hersteller von Elektronik & IT-Hardware",
+      "fmcs": "FMCS – Zertifizierungssystem für ausländische Hersteller",
+      "isiMarkScheme": "ISI-Markensystem (Inländische Hersteller)",
       "schemeX": "Schema X unter indischem BIS",
       "crs": "CRS – Obligatorisches Registrierungssystem",
       "hallmarking": "Hallmarking-System (Schmuck & Edelmetalle)",
-      "cement": "Zement und Baumaterialien usw.",
-      "ecoMark": "Eco Mark Zertifizierung"
+      "ecoMark": "Eco Mark Zertifizierung",
+      "mscs": "Managementsystem-Zertifizierungsschema (MSCS)",
+      "lrs": "LRS (Laboranerkennungsschema)"
     },
     "fmcs": {
       "title": "FMCS-System unter indischem BIS",

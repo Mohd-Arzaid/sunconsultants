@@ -46,12 +46,14 @@
     "mainTitle": "BIS 인증 유형",
     "description": "인도 BIS에서 발행하는 BIS 인증에는 여러 유형이 있으며, 각각 인도 표준에 따라 다양한 제품 카테고리와 시장 요구를 충족하도록 설계되었습니다.",
     "certificationTypes": {
-      "fmcs": "FMCS – 전자기기 및 IT 하드웨어 해외 제조업체 인증 제도",
+      "fmcs": "FMCS – 외국 제조업체 인증 제도",
+      "isiMarkScheme": "ISI 마크 제도 (국내 제조업체)",
       "schemeX": "인도 BIS 하의 스킴 X",
       "crs": "CRS – 의무 등록 제도",
-      "hallmarking": "홀마킹 제도 (보석류 및 귀금속)",
-      "cement": "시멘트 및 건설자재 등",
-      "ecoMark": "에코 마크 인증"
+      "hallmarking": "할마킹 제도 (보석류 및 귀금속)",
+      "ecoMark": "에코마크 인증",
+      "mscs": "경영시스템 인증 제도 (MSCS)",
+      "lrs": "LRS (시험소 인정 제도)"
     },
     "fmcs": {
       "title": "인도 BIS 하의 FMCS 제도",

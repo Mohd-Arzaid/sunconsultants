@@ -46,12 +46,14 @@
     "mainTitle": "Tipos de Certificación BIS",
     "description": "Existen varios tipos de certificación BIS emitidos por el BIS indio, cada uno diseñado para atender diferentes categorías de productos y necesidades del mercado según las normas indias.",
     "certificationTypes": {
-      "fmcs": "FMCS – Esquema de Certificación para Fabricantes Extranjeros de Electrónica y Hardware de TI",
+      "fmcs": "FMCS – Esquema de Certificación para Fabricantes Extranjeros",
+      "isiMarkScheme": "Esquema de Marca ISI (Fabricantes Nacionales)",
       "schemeX": "Esquema X bajo BIS India",
       "crs": "CRS – Esquema de Registro Obligatorio",
       "hallmarking": "Esquema de Contraste (Joyería y Metales Preciosos)",
-      "cement": "Cemento y materiales de construcción, etc.",
-      "ecoMark": "Certificación Eco Mark"
+      "ecoMark": "Certificación Eco Mark",
+      "mscs": "Esquema de Certificación de Sistemas de Gestión (MSCS)",
+      "lrs": "LRS (Esquema de Reconocimiento de Laboratorios)"
     },
     "fmcs": {
       "title": "Esquema FMCS bajo BIS India",

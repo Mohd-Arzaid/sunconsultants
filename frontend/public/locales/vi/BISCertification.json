@@ -46,12 +46,14 @@
     "mainTitle": "Các Loại Chứng Nhận BIS",
     "description": "Có nhiều loại chứng nhận BIS được cấp bởi BIS Ấn Độ, mỗi loại được thiết kế để đáp ứng các danh mục sản phẩm và nhu cầu thị trường khác nhau theo tiêu chuẩn Ấn Độ.",
     "certificationTypes": {
-      "fmcs": "FMCS – Chương Trình Chứng Nhận Nhà Sản Xuất Nước Ngoài cho Thiết Bị Điện Tử & Phần Cứng CNTT",
-      "schemeX": "Chương Trình X theo BIS Ấn Độ",
-      "crs": "CRS – Chương Trình Đăng Ký Bắt Buộc",
-      "hallmarking": "Chương Trình Đóng Dấu (Trang Sức & Kim Loại Quý)",
-      "cement": "Xi măng và vật liệu xây dựng, v.v.",
-      "ecoMark": "Chứng Nhận Eco Mark"
+      "fmcs": "FMCS – Hệ thống Chứng nhận Nhà sản xuất Nước ngoài",
+      "isiMarkScheme": "Hệ thống Dấu ISI (Nhà sản xuất Trong nước)",
+      "schemeX": "Chương trình X dưới BIS Ấn Độ",
+      "crs": "CRS – Hệ thống Đăng ký Bắt buộc",
+      "hallmarking": "Hệ thống Đánh dấu (Trang sức & Kim loại Quý)",
+      "ecoMark": "Chứng nhận Eco Mark",
+      "mscs": "Hệ thống Chứng nhận Hệ thống Quản lý (MSCS)",
+      "lrs": "LRS (Hệ thống Công nhận Phòng thí nghiệm)"
     },
     "fmcs": {
       "title": "Chương Trình FMCS theo BIS Ấn Độ",

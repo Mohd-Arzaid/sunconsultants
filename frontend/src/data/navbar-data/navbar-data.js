@@ -208,6 +208,12 @@ export const NAVIGATION_DATA = {
       link: "/videos-about-bis-certification",
       icon: Video,
     },
+    {
+      id: 5,
+      name: "Latest Blogs",
+      link: "/Blogs",
+      icon: BookText,
+    },
   ],
   gallery: [
     {

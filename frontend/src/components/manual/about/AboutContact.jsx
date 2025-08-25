@@ -27,6 +27,7 @@ const AboutContact = () => {
     if (path === "/bis-qco-updates") return "DRAFT QCO Notifications page";
     if (path === "/international-audits") return "International Audits";
     if (path === "/seminars-and-exhibitions") return "Exhibition page";
+    if (path === "/Blogs") return "Latest Blogs Page";
     return "Other Page";
   };
 

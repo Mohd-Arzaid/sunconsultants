@@ -23,9 +23,12 @@ const Footer = () => {
               ns="Footer"
               components={{
                 1: (
-                  <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
+                  <a
+                    href="mailto:admin@bis-certifications.com"
+                    className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
+                  >
                     admin@bis-certifications.com
-                  </span>
+                  </a>
                 ),
               }}
             />

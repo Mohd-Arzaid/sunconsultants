@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "./common/Navbar";
 import TopBar from "./common/TopBar";
@@ -57,17 +57,25 @@ import ArabicCRS from "./pages/ArabicCRS";
 import ArabicSchemeX from "./pages/ArabicSchemeX";
 import ArabicBISCertification from "./pages/ArabicBISCertification";
 import NABL from "./pages/NABL";
+import AdminLoginPage from "./admin/AdminLoginPage";
+import LatestBlogs from "./blogs/LatestBlogs";
+import TinIngotBlog from "./blogs/TinIngotBlog";
+import RefinedZincBlog from "./blogs/RefinedZincBlog";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
   const [videoPopupOpen, setVideoPopupOpen] = useState(false);
+  const location = useLocation();
+
+  // Check if current route is admin
+  const isAdminRoute = location.pathname === '/admin';
 
   return (
     <>
-      <TopBar />
-      <Navbar />
-      <ScrollToTopButton hide={popupOpen || videoPopupOpen} />
-      <ScrollToTop />
+      {!isAdminRoute && <TopBar />}
+      {!isAdminRoute && <Navbar />}
+      {!isAdminRoute && <ScrollToTopButton hide={popupOpen || videoPopupOpen} />}
+      {!isAdminRoute && <ScrollToTop />}
       <SEOBreadcrumbs />
 
       <Routes>
@@ -189,6 +197,16 @@ function App() {
           element={<ArabicBISCertification />}
         />
 
+        {/* Admin Routes */}
+        <Route
+          path="/admin"
+          element={<AdminLoginPage />}
+        />
+
+        <Route path="Blogs" element={<LatestBlogs />} />
+        <Route path="/bis-certificate-for-tin-ingots" element={<TinIngotBlog />} />
+        <Route path="/bis-certificate-for-refined-zinc" element={<RefinedZincBlog />} />
+
         {/* Localized routes for other languages */}
         <Route path="/:lang/*" element={<LocalizedRoute />}>
           <Route path="*" element={<RouteResolver />} />
@@ -198,9 +216,9 @@ function App() {
         <Route path="*" element={<Error404 />} />
       </Routes>
 
-      <MobileNav />
-      <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />
-      <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />
+      {!isAdminRoute && <MobileNav />}
+      {!isAdminRoute && <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />}
+      {!isAdminRoute && <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />}
     </>
   );
 }

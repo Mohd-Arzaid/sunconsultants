@@ -46,12 +46,14 @@
     "mainTitle": "Jenis-jenis Sertifikasi BIS",
     "description": "Ada berbagai jenis sertifikasi BIS yang dikeluarkan oleh BIS India, masing-masing dirancang untuk memenuhi berbagai kategori produk dan kebutuhan pasar sesuai dengan standar India.",
     "certificationTypes": {
-      "fmcs": "FMCS – Skema Sertifikasi Produsen Asing untuk Elektronik & Perangkat Keras TI",
+      "fmcs": "FMCS – Skema Sertifikasi Produsen Asing",
+      "isiMarkScheme": "Skema Tanda ISI (Produsen Domestik)",
       "schemeX": "Skema X di bawah BIS India",
-      "crs": "CRS – Skema Pendaftaran Wajib",
+      "crs": "CRS – Skema Registrasi Wajib",
       "hallmarking": "Skema Hallmarking (Perhiasan & Logam Mulia)",
-      "cement": "Semen dan bahan bangunan, dll.",
-      "ecoMark": "Sertifikasi Eco Mark"
+      "ecoMark": "Sertifikasi Eco Mark",
+      "mscs": "Skema Sertifikasi Sistem Manajemen (MSCS)",
+      "lrs": "LRS (Skema Pengakuan Laboratorium)"
     },
     "fmcs": {
       "title": "Skema FMCS di bawah BIS India",

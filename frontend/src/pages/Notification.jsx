@@ -274,7 +274,7 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
       {currentItems.length > 0 ? (
         currentItems.map((notification) => (
           <NotificationCardItem
@@ -376,9 +376,9 @@ const NotificationCardItem = ({
   const detailUrl = getNotificationDetailUrl(slug);
 
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-[0_15px_30px_-10px_rgba(0,0,0,0.1)]">
+    <div className="bg-white rounded-2xl overflow-hidden shadow-[0_15px_30px_-10px_rgba(0,0,0,0.1)] h-full flex flex-col">
       <div className="h-3 md:h-4" style={{ backgroundColor: color }}></div>
-      <div className="p-5 md:p-8">
+      <div className="p-5 md:p-8 flex flex-col flex-grow">
         <div className="flex items-center justify-between mb-5">
           <span
             className="px-4 py-1.5 font-geist font-medium text-sm rounded-full"
@@ -395,15 +395,15 @@ const NotificationCardItem = ({
           </span>
         </div>
 
-        <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-3">
+        <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-3 min-h-[4rem] flex items-start">
           {title}
         </h3>
 
-        <p className="font-geist text-gray-600 mb-6 line-clamp-3">
+        <p className="font-geist text-gray-600 mb-6 line-clamp-3 flex-grow">
           {description}
         </p>
 
-        <div className="flex items-center justify-between pt-4 border-t-2 border-gray-300">
+        <div className="flex items-center justify-between pt-4 border-t-2 border-gray-300 mt-auto">
           <a
             href={pdfUrl}
             download={pdfUrl.split("/").pop()} // Gets actual filename
@@ -610,7 +610,7 @@ const Pagination = ({
 
       {/* Page Info */}
       <div className="text-center">
-        <span className="text-sm text-gray-500 font-medium">
+        <span className="text-sm text-gray-500 font-geist font-medium">
           Page {currentPage} of {totalPages}
         </span>
       </div>
