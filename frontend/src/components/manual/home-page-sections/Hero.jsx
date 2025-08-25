@@ -81,12 +81,12 @@ const MobileHero = () => {
         <div className="flex justify-between flex-col items-center w-full m-auto pb-12">
           <div className="flex flex-col gap-8 mt-10 mb-16">
             <header>
-              <h2>
+              <div>
                 <WordPullUp
                   words="Sun Certification India"
                   className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
                 />
-              </h2>
+              </div>
             </header>
             <article className="max-w-2xl">
               <FadeText
