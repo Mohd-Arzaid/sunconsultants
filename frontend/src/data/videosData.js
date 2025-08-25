@@ -185,4 +185,29 @@ export const videosData = [
       "Industry Standards",
     ],
   },
+  {
+    id: 10,
+    embedId: "6JG1nSiLAao",
+    title:
+      "BIS Certification for Tin Ingot under IS 26:2024 - Complete Process Guide",
+    description:
+      "Complete guide to BIS Certification for Tin Ingot under IS 26:2024. Learn about mandatory certification from October 2025, application process, required documents, testing procedures, and compliance requirements for manufacturers.",
+    category: "BIS Certification",
+    duration: "PT12M45S", // 12 minutes 45 seconds in ISO 8601 format
+    uploadDate: "2024-12-15T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Tin Ingot",
+      "IS 26:2024",
+      "BIS Application",
+      "Product Testing",
+      "Manufacturing Standards",
+      "Compliance",
+      "Quality Control",
+      "Indian Standards",
+      "Certification Process",
+      "Documentation",
+      "BIS Consultants",
+    ],
+  },
 ];

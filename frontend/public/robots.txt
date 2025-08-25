@@ -6,8 +6,7 @@ Sitemap: https://bis-certifications.com/sitemap.xml
 Sitemap: https://bis-certifications.com/image-sitemap.xml
 Sitemap: https://bis-certifications.com/video-sitemap.xml
 
-# Block PDF directory from crawling
-Disallow: /pdf/
+
 
 # Disallow specific service pages
 Disallow: /cdsco-registration-certification
