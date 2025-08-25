@@ -62,37 +62,116 @@
     },
     "imageAlt": "Esquema X",
     "tableSection": {
-      "title": "Productos Cubiertos bajo Certificación Esquema X",
-      "description": "Puedes descargar el archivo de productos Esquema X desde aquí.",
+      "title": "Productos Cubiertos Bajo la Certificación Scheme X",
+      "description": "Puede descargar el archivo de productos Scheme X desde aquí",
       "downloadButton": "Descargar PDF",
-      "serialNumber": "S.No",
+      "serialNumber": "Número de Serie",
       "description": "Descripción de Maquinaria y Equipos Eléctricos",
       "hsCode": "Código HS",
+      "productTableA": "Tabla de Productos A",
+      "productTableB": "Tabla de Productos B",
+      "productTableC": "Tabla de Productos C",
+      "searchPlaceholder": "Buscar por descripción o código HS...",
       "tableData": [
         {
           "serialNumber": "1",
-          "description": "Todos los tipos de bombas para el manejo de líquidos, elevadores de líquidos y (o) sus conjuntos/subconjuntos/componentes",
+          "description": "Todos los tipos de bombas para manejo de líquidos, elevadores de líquidos y (o) sus conjuntos /subconjuntos /componentes",
           "hsCode": "841340, 841350, 841360, 841370, 841381, 841382, 841391 y 841392"
         },
         {
           "serialNumber": "2",
-          "description": "Todos los tipos de compresores y (o) sus conjuntos/subconjuntos/componentes.",
+          "description": "Todos los tipos de compresores y (o) sus conjuntos /subconjuntos /componentes",
           "hsCode": "841430, 841440, 84148011, 84148090, 84149011, 84149019, 84149040 y 84149090"
         },
         {
           "serialNumber": "3",
-          "description": "Todos los tipos de maquinaria para el tratamiento de material mediante un proceso que involucra cambio de temperatura y (o) sus conjuntos/subconjuntos/componentes",
+          "description": "Todos los tipos de maquinaria para tratamiento de materiales mediante un proceso que involucra cambio de temperatura y (o) sus conjuntos /subconjuntos /componentes",
           "hsCode": "841932, 841939, 841940, 841950, 841960, 841981, 841989 y 84199090"
         },
         {
           "serialNumber": "4",
-          "description": "Todos los tipos de centrífugas, maquinaria de filtrado o purificación para líquidos y gas y (o) sus conjuntos/subconjuntos/componentes",
+          "description": "Todos los tipos de centrífugas, maquinaria de filtración o purificación para líquidos y gas y (o) sus conjuntos /subconjuntos /componentes",
           "hsCode": "842111, 842112, 842119, 84212110, 84212190, 842122, 842129, 842131, 842139, 842191 y 842199"
         },
         {
           "serialNumber": "5",
-          "description": "Todos los tipos de maquinaria para llenar, cerrar, sellar, etiquetar botellas, empacar o envolver y (o) sus conjuntos/subconjuntos/componentes",
+          "description": "Todos los tipos de maquinaria para llenado, cierre, sellado, etiquetado de botellas, empaquetado o envoltura y (o) sus conjuntos /subconjuntos /componentes",
           "hsCode": "842220, 842230, 842240 y 842290"
+        },
+        {
+          "serialNumber": "6",
+          "description": "Todos los tipos de grúas y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 y 84269990"
+        },
+        {
+          "serialNumber": "7",
+          "description": "Todos los tipos de maquinaria para construcción, movimiento de tierras, minería y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8429, 843010, 843020, 843031, 843039, 843041, 843049, 843050, 843141, 843142, 843143 y 843149"
+        },
+        {
+          "serialNumber": "8",
+          "description": "Todos los tipos de máquinas de tejer (telares) y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8446, 844811, 844819, 844842 y 844849"
+        },
+        {
+          "serialNumber": "9",
+          "description": "Todos los tipos de maquinaria para hacer bordados y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "84479020 y 844859"
+        },
+        {
+          "serialNumber": "10",
+          "description": "Todos los tipos de herramientas de máquinas de corte de metales cubiertas bajo las partidas 8456 a 8461 y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8456, 8457, 8458, 8459, 8460, 8461 y 846693"
+        },
+        {
+          "serialNumber": "11",
+          "description": "Todos los tipos de herramientas de máquinas para trabajar piedra, cerámica, hormigón, cemento de asbesto o materiales minerales similares y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8464 y 84669100"
+        },
+        {
+          "serialNumber": "12",
+          "description": "Todos los tipos de maquinaria para trabajar caucho y plásticos y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8477"
+        },
+        {
+          "serialNumber": "13",
+          "description": "Todos los tipos de máquinas incluyendo las máquinas para obras públicas y construcción y la maquinaria y aparatos mecánicos que tienen funciones individuales, no especificados o incluidos en otro lugar del Capítulo 84 y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "84791000, 84798999 y 84799090"
+        },
+        {
+          "serialNumber": "14",
+          "description": "Todos los tipos de engranajes y transmisiones, ruedas dentadas, piñones de cadena, elementos de transmisión, tornillos de bolas o rodillos, cajas de engranajes y cambiadores de velocidad, incluyendo convertidores de par y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "84834000 y 84839000"
+        },
+        {
+          "serialNumber": "15",
+          "description": "Todos los tipos de máquinas eléctricas rotativas como generadores, etc. y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8501 y 8503"
+        },
+        {
+          "serialNumber": "16",
+          "description": "Todos los tipos de generadores diesel y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8502 y 8503"
+        },
+        {
+          "serialNumber": "17",
+          "description": "Todos los tipos de transformadores y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "850421, 850422, 850423, 850431, 850432, 850433, 850434 y 850490"
+        },
+        {
+          "serialNumber": "18",
+          "description": "Todos los tipos de convertidores de semiconductores de potencia y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "850440"
+        },
+        {
+          "serialNumber": "19",
+          "description": "Todos los tipos de equipos de aparamenta y control que operan a tensiones que no exceden 1000 voltios y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8536, 8537 y 8538"
+        },
+        {
+          "serialNumber": "20",
+          "description": "Todos los tipos de equipos de aparamenta y control que operan a tensiones que exceden 1000 voltios y (o) sus conjuntos /subconjuntos /componentes",
+          "hsCode": "8535, 8537 y 8538"
         }
       ]
     }

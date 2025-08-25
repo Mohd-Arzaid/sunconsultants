@@ -62,37 +62,116 @@
     },
     "imageAlt": "Skema X",
     "tableSection": {
-      "title": "Produk yang Dicakup di bawah Sertifikasi Skema X",
-      "description": "Anda dapat mengunduh file produk Skema X dari sini.",
+      "title": "Produk yang Dicakup di Bawah Sertifikasi Scheme X",
+      "description": "Anda dapat mengunduh file produk Scheme X dari sini",
       "downloadButton": "Unduh PDF",
-      "serialNumber": "No. Seri",
+      "serialNumber": "Nomor Seri",
       "description": "Deskripsi Mesin dan Peralatan Listrik",
       "hsCode": "Kode HS",
+      "productTableA": "Tabel Produk A",
+      "productTableB": "Tabel Produk B",
+      "productTableC": "Tabel Produk C",
+      "searchPlaceholder": "Cari berdasarkan deskripsi atau kode HS...",
       "tableData": [
         {
           "serialNumber": "1",
-          "description": "Semua jenis pompa untuk menangani cairan, elevator cairan dan (atau) rakitan/sub-rakitan/komponen mereka",
+          "description": "Semua jenis pompa untuk penanganan cairan, elevator cairan dan (atau) rakitan /sub-rakitan /komponennya",
           "hsCode": "841340, 841350, 841360, 841370, 841381, 841382, 841391 dan 841392"
         },
         {
           "serialNumber": "2",
-          "description": "Semua jenis kompresor dan (atau) rakitan/sub-rakitan/komponen mereka.",
+          "description": "Semua jenis kompresor dan (atau) rakitan /sub-rakitan /komponennya",
           "hsCode": "841430, 841440, 84148011, 84148090, 84149011, 84149019, 84149040 dan 84149090"
         },
         {
           "serialNumber": "3",
-          "description": "Semua jenis mesin untuk pengolahan material melalui proses yang melibatkan perubahan suhu dan (atau) rakitan/sub-rakitan/komponen mereka",
+          "description": "Semua jenis mesin untuk perawatan material melalui proses yang melibatkan perubahan suhu dan (atau) rakitan /sub-rakitan /komponennya",
           "hsCode": "841932, 841939, 841940, 841950, 841960, 841981, 841989 dan 84199090"
         },
         {
           "serialNumber": "4",
-          "description": "Semua jenis sentrifuge, mesin penyaringan atau pemurnian untuk cairan dan gas dan (atau) rakitan/sub-rakitan/komponen mereka",
+          "description": "Semua jenis sentrifugal, mesin penyaringan atau pemurnian untuk cairan dan gas dan (atau) rakitan /sub-rakitan /komponennya",
           "hsCode": "842111, 842112, 842119, 84212110, 84212190, 842122, 842129, 842131, 842139, 842191 dan 842199"
         },
         {
           "serialNumber": "5",
-          "description": "Semua jenis mesin untuk mengisi, menutup, menyegel, melabeli botol, mengemas atau membungkus dan (atau) rakitan/sub-rakitan/komponen mereka",
+          "description": "Semua jenis mesin untuk pengisian, penutupan, penyegelan, pelabelan botol, pengemasan atau pembungkusan dan (atau) rakitan /sub-rakitan /komponennya",
           "hsCode": "842220, 842230, 842240 dan 842290"
+        },
+        {
+          "serialNumber": "6",
+          "description": "Semua jenis derek dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 dan 84269990"
+        },
+        {
+          "serialNumber": "7",
+          "description": "Semua jenis mesin untuk konstruksi, penggalian tanah, pertambangan dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8429, 843010, 843020, 843031, 843039, 843041, 843049, 843050, 843141, 843142, 843143 dan 843149"
+        },
+        {
+          "serialNumber": "8",
+          "description": "Semua jenis mesin tenun (alat tenun) dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8446, 844811, 844819, 844842 dan 844849"
+        },
+        {
+          "serialNumber": "9",
+          "description": "Semua jenis mesin untuk pembuatan bordir dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "84479020 dan 844859"
+        },
+        {
+          "serialNumber": "10",
+          "description": "Semua jenis alat mesin pemotong logam yang tercakup di bawah pos 8456 hingga 8461 dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8456, 8457, 8458, 8459, 8460, 8461 dan 846693"
+        },
+        {
+          "serialNumber": "11",
+          "description": "Semua jenis alat mesin untuk bekerja dengan batu, keramik, beton, semen asbes atau bahan mineral serupa dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8464 dan 84669100"
+        },
+        {
+          "serialNumber": "12",
+          "description": "Semua jenis mesin untuk bekerja dengan karet dan plastik dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8477"
+        },
+        {
+          "serialNumber": "13",
+          "description": "Semua jenis mesin termasuk mesin untuk pekerjaan umum dan bangunan serta mesin dan peralatan mekanik yang memiliki fungsi individual, tidak ditentukan atau termasuk di tempat lain dalam Bab 84 dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "84791000, 84798999 dan 84799090"
+        },
+        {
+          "serialNumber": "14",
+          "description": "Semua jenis roda gigi dan transmisi, roda gigi bergigi, sproket rantai, elemen transmisi, sekrup bola atau rol, kotak gigi dan pengubah kecepatan, termasuk konverter torsi dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "84834000 dan 84839000"
+        },
+        {
+          "serialNumber": "15",
+          "description": "Semua jenis mesin listrik berputar seperti generator, dll. dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8501 dan 8503"
+        },
+        {
+          "serialNumber": "16",
+          "description": "Semua jenis generator diesel dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8502 dan 8503"
+        },
+        {
+          "serialNumber": "17",
+          "description": "Semua jenis transformator dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "850421, 850422, 850423, 850431, 850432, 850433, 850434 dan 850490"
+        },
+        {
+          "serialNumber": "18",
+          "description": "Semua jenis konverter semikonduktor daya dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "850440"
+        },
+        {
+          "serialNumber": "19",
+          "description": "Semua jenis peralatan gear dan kontrol yang beroperasi pada tegangan tidak melebihi 1000 volt dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8536, 8537 dan 8538"
+        },
+        {
+          "serialNumber": "20",
+          "description": "Semua jenis peralatan gear dan kontrol yang beroperasi pada tegangan melebihi 1000 volt dan (atau) rakitan /sub-rakitan /komponennya",
+          "hsCode": "8535, 8537 dan 8538"
         }
       ]
     }

@@ -62,37 +62,116 @@
     },
     "imageAlt": "Schema X",
     "tableSection": {
-      "title": "Unter Schema X-Zertifizierung abgedeckte Produkte",
-      "description": "Sie können die Schema X-Produktdatei von hier herunterladen.",
+      "title": "Unter Scheme X-Zertifizierung abgedeckte Produkte",
+      "description": "Sie können die Scheme X-Produktdatei hier herunterladen",
       "downloadButton": "PDF herunterladen",
-      "serialNumber": "S.Nr",
+      "serialNumber": "Seriennummer",
       "description": "Beschreibung von Maschinen und elektrischen Geräten",
       "hsCode": "HS-Code",
+      "productTableA": "Produkttabelle A",
+      "productTableB": "Produkttabelle B",
+      "productTableC": "Produkttabelle C",
+      "searchPlaceholder": "Nach Beschreibung oder HS-Code suchen...",
       "tableData": [
         {
           "serialNumber": "1",
-          "description": "Alle Arten von Pumpen zur Handhabung von Flüssigkeiten, Flüssigkeitsaufzügen und (oder) deren Baugruppen/Unterbaugruppen/Komponenten",
+          "description": "Alle Arten von Pumpen für die Handhabung von Flüssigkeiten, Flüssigkeitsförderern und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
           "hsCode": "841340, 841350, 841360, 841370, 841381, 841382, 841391 und 841392"
         },
         {
           "serialNumber": "2",
-          "description": "Alle Arten von Kompressoren und (oder) deren Baugruppen/Unterbaugruppen/Komponenten.",
+          "description": "Alle Arten von Kompressoren und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
           "hsCode": "841430, 841440, 84148011, 84148090, 84149011, 84149019, 84149040 und 84149090"
         },
         {
           "serialNumber": "3",
-          "description": "Alle Arten von Maschinen zur Behandlung von Material durch einen Prozess mit Temperaturänderung und (oder) deren Baugruppen/Unterbaugruppen/Komponenten",
+          "description": "Alle Arten von Maschinen zur Behandlung von Materialien durch einen Prozess mit Temperaturänderung und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
           "hsCode": "841932, 841939, 841940, 841950, 841960, 841981, 841989 und 84199090"
         },
         {
           "serialNumber": "4",
-          "description": "Alle Arten von Zentrifugen, Filter- oder Reinigungsmaschinen für Flüssigkeiten und Gase und (oder) deren Baugruppen/Unterbaugruppen/Komponenten",
+          "description": "Alle Arten von Zentrifugen, Filter- oder Reinigungsmaschinen für Flüssigkeiten und Gas und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
           "hsCode": "842111, 842112, 842119, 84212110, 84212190, 842122, 842129, 842131, 842139, 842191 und 842199"
         },
         {
           "serialNumber": "5",
-          "description": "Alle Arten von Maschinen zum Befüllen, Verschließen, Versiegeln, Etikettieren von Flaschen, Verpacken oder Umhüllen und (oder) deren Baugruppen/Unterbaugruppen/Komponenten",
+          "description": "Alle Arten von Maschinen zum Füllen, Verschließen, Versiegeln, Etikettieren von Flaschen, Verpacken oder Wickeln und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
           "hsCode": "842220, 842230, 842240 und 842290"
+        },
+        {
+          "serialNumber": "6",
+          "description": "Alle Arten von Kränen und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 und 84269990"
+        },
+        {
+          "serialNumber": "7",
+          "description": "Alle Arten von Maschinen für Bau, Erdbewegung, Bergbau und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8429, 843010, 843020, 843031, 843039, 843041, 843049, 843050, 843141, 843142, 843143 und 843149"
+        },
+        {
+          "serialNumber": "8",
+          "description": "Alle Arten von Webmaschinen (Webstühle) und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8446, 844811, 844819, 844842 und 844849"
+        },
+        {
+          "serialNumber": "9",
+          "description": "Alle Arten von Maschinen zur Herstellung von Stickereien und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "84479020 und 844859"
+        },
+        {
+          "serialNumber": "10",
+          "description": "Alle Arten von Metallschneidemaschinen, die unter den Überschriften 8456 bis 8461 fallen, und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8456, 8457, 8458, 8459, 8460, 8461 und 846693"
+        },
+        {
+          "serialNumber": "11",
+          "description": "Alle Arten von Werkzeugmaschinen zur Bearbeitung von Stein, Keramik, Beton, Asbestzement oder ähnlichen mineralischen Materialien und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8464 und 84669100"
+        },
+        {
+          "serialNumber": "12",
+          "description": "Alle Arten von Maschinen zur Bearbeitung von Gummi und Kunststoffen und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8477"
+        },
+        {
+          "serialNumber": "13",
+          "description": "Alle Arten von Maschinen einschließlich Maschinen für öffentliche Arbeiten und Bauwesen sowie Maschinen und mechanische Geräte mit individuellen Funktionen, die nicht anderswo in Kapitel 84 spezifiziert oder enthalten sind, und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "84791000, 84798999 und 84799090"
+        },
+        {
+          "serialNumber": "14",
+          "description": "Alle Arten von Zahnrädern und Getrieben, Zahnrädern, Kettenrädern, Übertragungselementen, Kugel- oder Rollengewindetrieben, Getriebekästen und Geschwindigkeitsänderern, einschließlich Drehmomentwandler, und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "84834000 und 84839000"
+        },
+        {
+          "serialNumber": "15",
+          "description": "Alle Arten von rotierenden elektrischen Maschinen wie Generatoren usw. und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8501 und 8503"
+        },
+        {
+          "serialNumber": "16",
+          "description": "Alle Arten von Dieselgeneratoren und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8502 und 8503"
+        },
+        {
+          "serialNumber": "17",
+          "description": "Alle Arten von Transformatoren und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "850421, 850422, 850423, 850431, 850432, 850433, 850434 und 850490"
+        },
+        {
+          "serialNumber": "18",
+          "description": "Alle Arten von Leistungshalbleiter-Umrichtern und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "850440"
+        },
+        {
+          "serialNumber": "19",
+          "description": "Alle Arten von Schalt- und Steuergeräten, die bei Spannungen von nicht mehr als 1000 Volt betrieben werden, und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8536, 8537 und 8538"
+        },
+        {
+          "serialNumber": "20",
+          "description": "Alle Arten von Schalt- und Steuergeräten, die bei Spannungen von mehr als 1000 Volt betrieben werden, und (oder) deren Baugruppen /Unterbaugruppen /Komponenten",
+          "hsCode": "8535, 8537 und 8538"
         }
       ]
     }

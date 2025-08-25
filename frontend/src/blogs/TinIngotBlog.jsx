@@ -436,9 +436,9 @@ const LatestBlogContentRight = () => {
                 {/* Header */}
                 <div className="flex gap-2 items-center">
                     <PhoneCall className="text-[#232327]" />
-                    <h1 className="text-xl font-geist font-semibold text-[#232327]">
+                    <div className="text-xl font-geist font-semibold text-[#232327]">
                         Request a Free Callback
-                    </h1>
+                    </div>
                 </div>
 
                 {/* Intro Text */}
