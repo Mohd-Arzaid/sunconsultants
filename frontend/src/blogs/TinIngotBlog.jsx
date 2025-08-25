@@ -5,10 +5,34 @@ import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { Services } from "@/components/manual/Services"
 import Footer from "@/common/Footer"
+import { Helmet } from "react-helmet-async"
 
 const TinIngotBlog = () => {
     return (
         <div className="relative w-full">
+            <Helmet>
+                <title>BIS Certificate for Tin Ingot Under IS 26:2024</title>
+
+                {/* Meta Description */}
+                <meta name="description" content="BIS Certification for Tin Ingot under IS 26:2024 becomes mandatory from 17th October 2025. Learn what is BIS Certificate, BIS application process, required documents, BIS certificate cost, and how to get BIS certification in India with expert consultants." />
+
+                {/* Meta Keywords */}
+                <meta name="keywords" content="BIS Certification, BIS Certificate India, BIS for Tin Ingots, IS 26:2024" />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Tin Ingot BIS Certification under IS 26:2024 – Mandatory from 17th October 2025 | Complete Guide" />
+                <meta property="og:description" content="From 17th October 2025, BIS Certification under IS 26:2024 is mandatory for all Tin Ingot manufacturers in India. Discover the BIS application process, documents, costs, and how consultants can help you get certified on time." />
+                <meta property="og:url" content="https://bis-certifications.com/bis-certificate-for-tin-ingots" />
+                <meta property="og:site_name" content="Sun Certifications India" />
+                <meta property="og:type" content="article" />
+
+                {/* Twitter Tags */}
+                <meta name="twitter:title" content="Tin Ingot BIS Certification Mandatory from 17th Oct 2025 | IS 26:2024 Explained" />
+                <meta name="twitter:description" content="From 17th October 2025, BIS Certification under IS 26:2024 is mandatory for all Tin Ingot manufacturers in India. Discover the BIS application process, documents, costs, and how consultants can help you get certified on time." />
+
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://bis-certifications.com/bis-certificate-for-tin-ingots" />
+            </Helmet>
 
             <TinIngotBlogBreadcrumb />
 
