@@ -25,7 +25,7 @@ const services = [
     title: "Scheme X",
     description:
       "Specialized certification program for specific product categories requiring compliance with advanced quality and safety standards.",
-    image: ISIMarkImage,
+    image: BISCRSImage,
     path: "/schemeX",
   },
   {
