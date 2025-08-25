@@ -16,7 +16,7 @@ const BlurIn = ({
   const combinedVariants = variant || defaultVariants;
 
   return (
-    (<motion.h1
+    (<motion.div
       initial="hidden"
       animate="visible"
       transition={{ duration }}
@@ -26,7 +26,7 @@ const BlurIn = ({
         className
       )}>
       {word}
-    </motion.h1>)
+    </motion.div>)
   );
 };
 
