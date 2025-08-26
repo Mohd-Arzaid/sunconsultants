@@ -7,6 +7,7 @@ import connectDB from "./utils/db.js";
 import contactRoute from "./routes/contact.route.js";
 import appointmentRoute from "./routes/appointment.route.js";
 import { testGoogleSheetsConnection } from "./utils/googleSheet.js";
+import { getZohoProducts } from "./utils/zoho.js";
 
 dotenv.config();
 
@@ -48,6 +49,36 @@ app.get("/test-sheets", async (req, res) => {
     return res.status(500).json({
       success: false,
       message: "Error testing Google Sheets connection",
+      error: error.message,
+      timestamp: new Date().toISOString(),
+    });
+  }
+});
+
+// Test Zoho Products - Get all available products/services
+app.get("/test-zoho-products", async (req, res) => {
+  try {
+    console.log("🧪 Fetching Zoho CRM Products via API...");
+    const products = await getZohoProducts();
+
+    return res.status(200).json({
+      success: true,
+      message: "Zoho products fetched successfully",
+      data: {
+        totalProducts: products.length,
+        products: products.map((product) => ({
+          id: product.id,
+          name: product.Product_Name,
+          code: product.Product_Code,
+          description: product.Description,
+        })),
+      },
+      timestamp: new Date().toISOString(),
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Error fetching Zoho products",
       error: error.message,
       timestamp: new Date().toISOString(),
     });

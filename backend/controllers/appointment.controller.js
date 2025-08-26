@@ -102,19 +102,11 @@ export const submitAppointment = async (req, res) => {
       productName,
     } = req.body;
 
-    // Validation
-    if (
-      !fullName ||
-      !email ||
-      !phoneNumber ||
-      !message ||
-      !pageUrl ||
-      !pageName ||
-      !companyName ||
-      !productName
-    ) {
+    // Validation - Only essential fields required
+    if (!fullName || !email || !phoneNumber || !pageUrl) {
       return res.status(400).json({
-        message: "Please fill up All the required fields",
+        message:
+          "Please fill up All the required fields (Name, Email, Phone, PageURL)",
         success: false,
       });
     }
@@ -153,16 +145,18 @@ export const submitAppointment = async (req, res) => {
     const [dateStr, timeStr] = dateTimeStr.split(", ");
 
     const appointmentData = {
+      name: fullName, // Map fullName to name for Zoho
       fullName,
       email,
+      phone: phoneNumber, // Map phoneNumber to phone for Zoho
       phoneNumber,
-      message,
+      message: message || "Appointment request",
       pageUrl,
-      pageName,
+      pageName: pageName || "Unknown Page",
       Date: dateStr,
       time: timeStr,
-      companyName,
-      productName,
+      companyName: companyName || fullName + "'s Company",
+      productName: productName || "General Inquiry",
     };
 
     console.log("💾 Saving appointment to MongoDB...");
