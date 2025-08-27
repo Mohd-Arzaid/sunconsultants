@@ -189,9 +189,9 @@ const AboutContact = () => {
             <div className="md:hidden">
               <div className="flex gap-2 items-center mb-3">
                 <PhoneCall className="text-[#232327]" />
-                <h1 className="text-xl font-geist font-semibold text-[#232327]">
+                <div className="text-xl font-geist font-semibold text-[#232327]">
                   Contact Us
-                </h1>
+                </div>
               </div>
 
               <p className="text-sm text-gray-600 font-geist mb-5">

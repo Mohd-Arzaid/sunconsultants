@@ -31,6 +31,13 @@ export const PlasticWaste = () => {
   return (
     <div className="relative">
       <Helmet>
+        <title>EPR Certificate for Plastic Waste Management | Sun Certifications</title>
+        <meta name="description" content="Get EPR certificate for plastic waste management (PWM). Complete CPCB compliance guide for plastic recycling and waste management plans." />
+        <meta name="keywords" content="EPR Certificate, Plastic Waste Management, PWM, CPCB Compliance, Plastic Recycling" />
+        <meta name="author" content="Sun Certifications India" />
+        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         {/* JSON-LD Breadcrumb structured data for SEO */}
         <script type="application/ld+json">
           {JSON.stringify({

@@ -30,6 +30,13 @@ export const EPRService = () => {
   return (
     <article className="epr-service-page relative">
       <Helmet>
+        <title>EPR Certificate for E-Waste Management | Sun Certifications</title>
+        <meta name="description" content="Get EPR certification for e-waste management. Ensure CPCB compliance with proper recycling & disposal plans. Expert guidance since 2013." />
+        <meta name="keywords" content="EPR Certificate, E-Waste Management, CPCB Compliance, Recycling Plans" />
+        <meta name="author" content="Sun Certifications India" />
+        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         {/* JSON-LD Breadcrumb structured data for SEO */}
         <script type="application/ld+json">
           {JSON.stringify({

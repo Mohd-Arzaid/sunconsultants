@@ -33,7 +33,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "../ui/breadcrumb";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const BISCertification = () => {
   return (
@@ -52,6 +52,7 @@ export const BISCertification = () => {
           content="BIS certification, ISI Mark, BIS License"
         />
         <meta name="author" content="Sun Certifications India" />
+        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Open Graph Tags */}
         <meta
@@ -1084,9 +1085,8 @@ const BISCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -1136,11 +1136,10 @@ const BISCIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection.toLowerCase()
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
-                }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection.toLowerCase()
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {t(`navigation.${item}`)}
@@ -1160,20 +1159,18 @@ const BISCIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection.toLowerCase()
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
-              }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection.toLowerCase()
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
+                }`}
             >
               {t(`navigation.${item}`)}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection.toLowerCase()
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
-              }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection.toLowerCase()
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
+                }`}
             />
           </div>
         ))}
@@ -1321,7 +1318,15 @@ PointsList.propTypes = {
   heading: PropTypes.string.isRequired,
 };
 
-const PointsListTwo = ({ points, heading }) => {
+const PointsListTwo = ({ points, heading, clickableRoutes = [] }) => {
+  const navigate = useNavigate();
+
+  const handlePointClick = (index) => {
+    if (clickableRoutes[index]) {
+      navigate(`/${clickableRoutes[index]}`);
+    }
+  };
+
   return (
     <div className="flex flex-col w-full">
       <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
@@ -1329,11 +1334,21 @@ const PointsListTwo = ({ points, heading }) => {
       </p>
       <div className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
         {points.map((point, index) => (
-          <li key={index} className="flex items-start gap-2">
+          <li
+            key={index}
+            className={`flex items-start gap-2 ${clickableRoutes[index]
+              ? 'cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors duration-200'
+              : ''
+              }`}
+            onClick={() => handlePointClick(index)}
+          >
             <div className="bg-green-500/10 p-2 rounded-full">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
+            <p className={`font-geist text-sm md:text-lg tracking-wide text-left max-w-full leading-normal ${clickableRoutes[index]
+              ? 'text-[#1d4ed8] hover:text-[#1e40af] hover:underline'
+              : 'text-[#42434d]'
+              }`}>
               {point}
             </p>
           </li>
@@ -1346,6 +1361,7 @@ const PointsListTwo = ({ points, heading }) => {
 PointsListTwo.propTypes = {
   points: PropTypes.arrayOf(PropTypes.string).isRequired,
   heading: PropTypes.string.isRequired,
+  clickableRoutes: PropTypes.arrayOf(PropTypes.string),
 };
 
 const OverviewSection = () => {
@@ -1412,6 +1428,16 @@ const TypesSection = () => {
             t("types.certificationTypes.ecoMark"),
             t("types.certificationTypes.mscs"),
             t("types.certificationTypes.lrs"),
+          ]}
+          clickableRoutes={[
+            "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+            "a-guide-to-bis-certification-indian-bis",
+            "indian-bis-certification-under-scheme-x",
+            "what-is-crs-bis-or-crs-registration",
+            "", // hallmarking - no link
+            "", // ecoMark - no link  
+            "", // mscs - no link
+            "", // lrs - no link
           ]}
         />
       </div>

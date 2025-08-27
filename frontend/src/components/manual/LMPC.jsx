@@ -39,6 +39,7 @@ export const LMPC = () => {
           content="LMPC certificate, Legal Metrology, packaged commodities, importers registration, manufacturers registration, packers registration"
         />
         <meta name="author" content="Sun Certifications India" />
+        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}

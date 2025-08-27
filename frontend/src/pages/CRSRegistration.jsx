@@ -531,6 +531,7 @@ const CRSRegistration = () => {
         {/* Additional SEO Tags */}
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Sun Certifications India" />
+        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
         <link
           rel="canonical"
           href="https://bis-certifications.com/bis/what-is-crs-bis-or-crs-registration"

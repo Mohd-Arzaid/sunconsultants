@@ -1,3 +1,14 @@
+// React Hooks
+import React, { useState, useEffect } from "react";
+
+// React Router
+import { Link, useNavigate } from "react-router-dom";
+
+// External Libraries
+import { motion, useAnimationControls } from "framer-motion";
+import { Helmet } from "react-helmet-async";
+
+// Lucide Icons
 import {
   Bike,
   Globe,
@@ -7,23 +18,8 @@ import {
   ChevronRight,
   SlashIcon,
 } from "lucide-react";
-import whychooseus from "../assets/images/whychooseus.jpg";
-import React, { useState, useEffect } from "react";
-import Footer from "@/common/Footer";
-import { motion, useAnimationControls } from "framer-motion";
-import { Link, useNavigate } from "react-router-dom";
-import Services from "@/components/manual/Services";
-import AboutContact from "@/components/manual/about/AboutContact";
-import { Helmet } from "react-helmet-async";
 
-// Import images for services
-import BISImage from "../assets/images/BIS.jpg";
-import CDSCO from "../assets/images/CDSCO.jpg";
-import BISCRS from "../assets/images/BISCRS.jpg";
-import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg";
-import EPRCertificate from "../assets/images/EPRCertificate.jpg";
-import LMPC from "../assets/images/LMPC.jpg";
-import ISIMark from "../assets/images/ISIMark.jpg";
+// UI Components
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -33,172 +29,37 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-const About = () => {
-  return (
-    <div className="overflow-hidden bg-[#F9F7F2] relative">
-      <Helmet>
-        <title>
-          About Sun Certifications India - BIS Certification Experts
-        </title>
-        <meta
-          name="description"
-          content="Learn about Sun Certifications India, founded in 2013. We are India's leading BIS certification consultants with 4,999+ projects and 1,299+ happy clients worldwide."
-        />
-        <meta
-          name="keywords"
-          content="about sun certifications, bis certification company, indian certification experts, bis consultants india"
-        />
-        <link rel="canonical" href="https://bis-certifications.com/about" />
-        {/* JSON-LD Breadcrumb structured data for SEO */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "About",
-                item: "https://bis-certifications.com/about",
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
+// Custom Components
+import Footer from "@/common/Footer";
+import Services from "@/components/manual/Services";
+import AboutContact from "@/components/manual/about/AboutContact";
 
-      <div className="absolute md:top-5 top-3 left-0 w-full">
-        <div className="max-w-[80rem] mx-auto px-4">
-          <div className="w-fit font-inter">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator>
-                  <SlashIcon />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem>
-                  <BreadcrumbPage>About</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-          </div>
-        </div>
-      </div>
+// Assets/Images
+import whychooseus from "../assets/images/whychooseus.jpg";
+import BISImage from "../assets/images/BIS.jpg";
+import CDSCO from "../assets/images/CDSCO.jpg";
+import BISCRS from "../assets/images/BISCRS.jpg";
+import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg";
+import EPRCertificate from "../assets/images/EPRCertificate.jpg";
+import LMPC from "../assets/images/LMPC.jpg";
+import ISIMark from "../assets/images/ISIMark.jpg";
 
-      {/* <AboutHero /> */}
-      <WhyChooseUs />
-      <Stats />
-      <VideoShowcase />
-      {/* <OurServices /> */}
-      <Services />
-      <Testimonials />
-      <AboutContact />
-      <Footer />
-    </div>
-  );
-};
+// =============================================
+// UTILITY/HELPER COMPONENTS (Simple UI Components)
+// =============================================
 
-export default About;
-
-// const AboutHero = () => {
-//   return (
-//     <div className="relative h-[654px] overflow-x-hidden ">
-//       {/* Decorative elements */}
-
-//       {/* <div className="absolute inset-0 overflow-hidden opacity-20">
-//         <div className="absolute -top-24 -left-24 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"></div>
-//         <div className="absolute top-1/2 -right-24 w-80 h-80 bg-indigo-500 rounded-full filter blur-3xl"></div>
-//       </div> */}
-
-//       {/* Larger circle with slower animation */}
-//       <div
-//         className="absolute top-[8%] left-[8%] w-[50px] h-[50px] rounded-full bg-[#1A8781]/20 animate-float-slow"
-//         style={{ animationDelay: "0s" }}
-//       ></div>
-
-//       {/* Square element with rotation */}
-//       <div
-//         className="absolute top-[70%] left-[42%] w-[42px] h-[42px] bg-[#1A8781]/15 animate-spin-slow"
-//         style={{ animationDuration: "15s" }}
-//       ></div>
-
-//       <div className="max-w-[84rem]  flex items-center justify-center h-full w-full mx-auto">
-//         {/* Left Side */}
-//         <div className="relative flex flex-col gap-8 w-[640px]   items-start">
-//           <div className="inline-flex items-center">
-//             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
-//             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
-//               About Us
-//             </span>
-//           </div>
-
-//           <h1 className="leading-[70px] z-[10] font-playfair font-bold text-[52px] text-[#1E1E1E] -mt-2">
-//             <span className="relative">
-//               India's Best Certification
-//               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
-//             </span>{" "}
-//             Certifications
-//           </h1>
-
-//           <p className="font-poppins text-[#332156] w-[490px] text-[20px] leading-[40px] ">
-//             We are a Consulting Firm for BIS Certification, LMPC certificate,
-//             EPR and various other certifications which will help you enter /
-//             sell in the Indian market.
-//           </p>
-
-//           <div className="flex items-center ">
-//             <div className="flex items-center cursor-pointer group">
-//               <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#125E5A]/30 group-hover:border-[#125E5A] transition-all duration-300 mr-3">
-//                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
-//               </div>
-//               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
-//                 View Services
-//               </span>
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* Right Side */}
-//         <div className="w-[580px]  h-[435px] flex flex-col">
-//           <div className="relative">
-//             <div className="bg-indigo-700 bg-opacity-40 backdrop-filter backdrop-blur-sm  rounded-xl border border-indigo-500 border-opacity-30 shadow-2xl h-[435px] flex items-center justify-center">
-//               <img
-//                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGNvbXB1dGVyfGVufDB8fDB8fHww"
-//                 alt="Professional business team discussing certification"
-//                 className="w-full h-full object-cover rounded-xl opacity-90"
-//               />
-//             </div>
-
-//             {/* Floating elements */}
-//             <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 bg-opacity-20 rounded-lg rotate-12 backdrop-filter backdrop-blur-sm border border-blue-500 border-opacity-30"></div>
-//             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-500 bg-opacity-20 rounded-lg -rotate-12 backdrop-filter backdrop-blur-sm border border-blue-500 border-opacity-30"></div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
+// Why Choose Us Section - Simple informational component
 const WhyChooseUs = () => {
   return (
-    <div className=" max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-16 md:pb-24">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-16 md:pb-24">
       {/* Heading */}
       <div className="text-center mb-8 md:mb-10">
-        <h1 className="font-playfair text-4xl uppercase  md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
-          Why Choose Us?{" "}
+        <h1 className="font-playfair text-4xl uppercase md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
+          Why Choose Us?
         </h1>
-        <p className=" text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
+        <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
           We simplify certification by managing compliance, saving you time and
-          effort to focus on business growth.{" "}
+          effort to focus on business growth.
         </p>
       </div>
 
@@ -220,10 +81,6 @@ const WhyChooseUs = () => {
             With 4,999+ projects executed and 1,299+ happy clients, we bring
             deep industry knowledge to every certification challenge.
           </p>
-
-          {/* <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
-          </div> */}
         </div>
 
         {/* Feature Card 2 */}
@@ -235,7 +92,6 @@ const WhyChooseUs = () => {
           </div>
 
           <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-2 md:mb-3">
-            {" "}
             Fast & Efficient Process
           </h3>
 
@@ -243,10 +99,6 @@ const WhyChooseUs = () => {
             Our dedicated team ensures a smooth and time-efficient certification
             process so you can focus on your core business.
           </p>
-
-          {/* <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
-          </div> */}
         </div>
 
         {/* Feature Card 3 */}
@@ -258,28 +110,24 @@ const WhyChooseUs = () => {
           </div>
 
           <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-2 md:mb-3">
-            {" "}
             Global Reach
           </h3>
 
           <p className="text-gray-600 font-geist text-sm md:text-base">
             We assist manufacturers and exporters from 20+ countries, including
-            India, China, Malaysia, Thailand and beyond.{" "}
+            India, China, Malaysia, Thailand and beyond.
           </p>
-
-          {/* <div className="mt-4 md:mt-6 w-8 md:w-10 h-8 md:h-10 rounded-full border-2 border-[#1A8781]/30 group-hover:border-[#1A8781]/60 flex items-center justify-center group-hover:bg-[#1A8781]/20 transition-all duration-300">
-            <div className="w-2 h-2 border-t-2 border-r-2 border-[#1A8781] group-hover:border-[#131316] rotate-45"></div>
-          </div> */}
         </div>
       </div>
     </div>
   );
 };
 
+// Stats Section - Simple display component
 const Stats = () => {
   return (
-    <div className="max-w-[84rem] mx-auto  px-4 md:px-12 pb-16 md:pb-20">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8 ">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pb-16 md:pb-20">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8">
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             1500+
@@ -320,6 +168,11 @@ const Stats = () => {
   );
 };
 
+// =============================================
+// COMPLEX COMPONENTS (Components with State/Logic)
+// =============================================
+
+// Video Showcase Component - Contains state for play/pause functionality
 const VideoShowcase = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -328,7 +181,7 @@ const VideoShowcase = () => {
   };
 
   return (
-    <div className="max-w-[84rem] mx-auto px-4 md:px-12 ">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12">
       <div className="relative rounded-3xl shadow-xl md:shadow-2xl overflow-hidden group">
         {!isPlaying ? (
           <>
@@ -388,9 +241,11 @@ const VideoShowcase = () => {
   );
 };
 
+// Our Services Component - Complex component with carousel state and navigation
 export const OurServices = () => {
   const navigate = useNavigate();
 
+  // Services data configuration
   const services = [
     {
       id: 1,
@@ -458,8 +313,10 @@ export const OurServices = () => {
     },
   ];
 
+  // Carousel state
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Carousel navigation handlers
   const nextSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % services.length);
   };
@@ -482,7 +339,7 @@ export const OurServices = () => {
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
             Our Services
           </h2>
-          <p className="text-base md:text-lg font-geist text-gray-600  max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
+          <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
             We offer end-to-end solutions for all your certification needs to
             enter and thrive in the Indian market.
           </p>
@@ -498,6 +355,7 @@ export const OurServices = () => {
           >
             <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781]" />
           </button>
+
           {/* Right Arrow */}
           <button
             onClick={nextSlide}
@@ -506,6 +364,7 @@ export const OurServices = () => {
           >
             <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-white" />
           </button>
+
           {/* Main carousel display */}
           <div className="relative overflow-hidden rounded-3xl shadow-2xl h-auto md:h-[500px] bg-gradient-to-br from-[#1A8781]/5 to-[#1A8781]/20 border border-[#1A8781]/30">
             <div
@@ -573,8 +432,8 @@ export const OurServices = () => {
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to slide ${index + 1}`}
                 className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${activeIndex === index
-                  ? "bg-[#1A8781] w-10"
-                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                    ? "bg-[#1A8781] w-10"
+                    : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
                   }`}
               ></button>
             ))}
@@ -588,8 +447,8 @@ export const OurServices = () => {
               key={service.id || index}
               onClick={() => goToSlide(index)}
               className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${activeIndex === index
-                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
                 }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
@@ -612,14 +471,16 @@ export const OurServices = () => {
   );
 };
 
+// Testimonials Component - Complex component with animation controls and effects
 const Testimonials = () => {
-  const controls = useAnimationControls(); // Initialize controls
+  const controls = useAnimationControls();
 
+  // Animation setup effect
   useEffect(() => {
     controls.start({
-      x: ["0%", "-100%"], // Animation for horizontal scroll
+      x: ["0%", "-100%"],
       transition: {
-        duration: 20, // Adjust duration for desired speed
+        duration: 20,
         repeat: Infinity,
         ease: "linear",
         repeatType: "loop",
@@ -627,6 +488,7 @@ const Testimonials = () => {
     });
   }, [controls]);
 
+  // Testimonials data
   const testimonials = [
     {
       id: 1,
@@ -679,7 +541,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className=" pb-6 md:pt-1 md:pb-16 bg-gradient-to-b from-white to-[#F9F7F2]">
+    <div className="pb-6 md:pt-1 md:pb-16 bg-gradient-to-b from-white to-[#F9F7F2]">
       <div className="max-w-[84rem] mx-auto px-4 md:px-12">
         {/* Heading */}
         <div className="text-center mb-2 md:mb-6">
@@ -696,9 +558,8 @@ const Testimonials = () => {
         <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <motion.div
             animate={controls}
-            onMouseEnter={() => controls.stop()} // Pause on hover
+            onMouseEnter={() => controls.stop()}
             onMouseLeave={() => {
-              // Restart animation on mouse leave
               controls.start({
                 x: ["0%", "-100%"],
                 transition: {
@@ -746,10 +607,10 @@ const Testimonials = () => {
 
                     {/* Author - Fixed at bottom */}
                     <div className="mt-auto pt-2 border-t border-gray-200">
-                      <h4 className="font-geist font-bold text-neutral-800 text-lg ">
+                      <h4 className="font-geist font-bold text-neutral-800 text-lg">
                         {testimonial.name}
                       </h4>
-                      <p className="text-neutral-600 text-sm ">
+                      <p className="text-neutral-600 text-sm">
                         {testimonial.role}
                       </p>
                     </div>
@@ -763,3 +624,86 @@ const Testimonials = () => {
     </div>
   );
 };
+
+// =============================================
+// MAIN COMPONENT (Entry Point)
+// =============================================
+
+// About Page Main Component - Orchestrates all sections and handles page structure
+const About = () => {
+  return (
+    <div className="overflow-hidden bg-[#F9F7F2] relative">
+      {/* SEO and Meta Tags */}
+      <Helmet>
+        <title>
+          About Sun Certifications India - BIS Certification Experts
+        </title>
+        <meta
+          name="description"
+          content="Learn about Sun Certifications India, founded in 2013. We are India's leading BIS certification consultants with 4,999+ projects and 1,299+ happy clients worldwide."
+        />
+        <meta
+          name="keywords"
+          content="about sun certifications, bis certification company, indian certification experts, bis consultants india"
+        />
+        <link rel="canonical" href="https://bis-certifications.com/about" />
+
+        {/* JSON-LD Breadcrumb structured data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bis-certifications.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "About",
+                item: "https://bis-certifications.com/about",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+
+      {/* Breadcrumb Navigation */}
+      <div className="absolute md:top-5 top-3 left-0 w-full">
+        <div className="max-w-[80rem] mx-auto px-4">
+          <div className="w-fit font-inter">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage>About</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+
+      {/* Page Sections */}
+      <WhyChooseUs />
+      <Stats />
+      <VideoShowcase />
+      <Services />
+      <Testimonials />
+      <AboutContact />
+      <Footer />
+    </div>
+  );
+};
+
+export default About;

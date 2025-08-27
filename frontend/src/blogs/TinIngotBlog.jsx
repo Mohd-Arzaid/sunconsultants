@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Services } from "@/components/manual/Services"
 import VideoSection from "@/components/manual/home-page-sections/VideoSection"
 import Footer from "@/common/Footer"
+import AboutAuthor from "@/components/common/AboutAuthor"
 import { Helmet } from "react-helmet-async"
 
 const TinIngotBlog = () => {
@@ -19,6 +20,9 @@ const TinIngotBlog = () => {
 
                 {/* Meta Keywords */}
                 <meta name="keywords" content="BIS Certification, BIS Certificate India, BIS for Tin Ingots, IS 26:2024" />
+                <meta name="author" content="Sun Certifications India" />
+                <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
 
                 {/* Open Graph Tags */}
                 <meta property="og:title" content="Tin Ingot BIS Certification under IS 26:2024 – Mandatory from 17th October 2025 | Complete Guide" />
@@ -367,6 +371,8 @@ const TinIngotBlogMainContentLeft = () => {
                         className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
                     />
                 </div>
+
+                <AboutAuthor />
 
             </div>
         </div>
