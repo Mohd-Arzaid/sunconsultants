@@ -1327,9 +1327,9 @@ const ArabicFreeCallBack = () => {
       {/* Header */}
       <div className="flex gap-2 items-center">
         <PhoneCall className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+        <h2 className="text-xl font-geist font-semibold text-[#232327]">
           اطلب اتصال مجاني
-        </h1>
+        </h2>
       </div>
 
       {/* Intro Text */}
@@ -1574,9 +1574,9 @@ const ArabicLatestBlog = () => {
     <div className="w-full md:w-[360px] p-6 rounded-lg bg-gray-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       <div className="flex gap-2 items-center ">
         <AlignLeft className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold  text-[#232327]">
+        <h2 className="text-xl font-geist font-semibold  text-[#232327]">
           أحدث المدونات
-        </h1>
+        </h2>
       </div>
       <div className="relative h-[400px] overflow-hidden mt-5">
         <Marquee vertical pauseOnHover={true} className="[--duration:20s]">
@@ -1684,9 +1684,9 @@ const ArabicClientTestimonial = () => {
       <div className="pt-6 px-6 pb-4">
         <div className="flex gap-2 items-center">
           <Languages className="text-[#232327]" />
-          <h1 className="text-xl font-geist font-semibold text-[#232327]">
+          <h2 className="text-xl font-geist font-semibold text-[#232327]">
             شهادات العملاء
-          </h1>
+          </h2>
         </div>
         <div className="mt-8 mb-5 rounded-lg h-60 overflow-hidden">
           <Marquee
@@ -1790,9 +1790,9 @@ const ArabicWhyChooseUs = () => {
       {/* Header with Animation */}
       <div className="flex gap-2 items-center">
         <Lightbulb className="text-[#232327]" />
-        <h1 className="text-xl font-geist font-semibold text-[#232327]">
+        <h2 className="text-xl font-geist font-semibold text-[#232327]">
           لماذا تختارنا
-        </h1>
+        </h2>
       </div>
 
       {/* Highlight Stats */}
@@ -3754,9 +3754,9 @@ export const ArabicFooter = () => {
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />
                 <Link to="/" className="text-center">
-                  <h1 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
+                  <h2 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
                     شهادات الشمس الهند
-                  </h1>
+                  </h2>
                   <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
                     تبسيط الشهادات
                   </p>
