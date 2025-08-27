@@ -23,6 +23,13 @@ const blogs = [
         title: "BIS Certification for Refined Zinc under IS 209:2024",
         description: "Complete guide for manufacturers on obtaining BIS certification for refined zinc. Understand the certification process, documentation requirements, and compliance deadlines under IS 209:2024.",
         slug: "bis-certificate-for-refined-zinc"
+    },
+    {
+        id: 3,
+        color: "#8B5CF6", // Purple
+        title: "BIS Certification for Bunk Beds Under IS 17636:2022",
+        description: "BIS Certification for bunk beds in India is mandatory under IS 17636:2022. Know process, documents, cost & role of BIS Consultants",
+        slug: "bis-license-for-bunk-beds-Indian-bis"
     }
 ];
 

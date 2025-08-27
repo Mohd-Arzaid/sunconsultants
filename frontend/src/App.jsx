@@ -61,6 +61,7 @@ import AdminLoginPage from "./admin/AdminLoginPage";
 import LatestBlogs from "./blogs/LatestBlogs";
 import TinIngotBlog from "./blogs/TinIngotBlog";
 import RefinedZincBlog from "./blogs/RefinedZincBlog";
+import BunkBedsBlog from "./blogs/BunkBedsBlog";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -206,6 +207,7 @@ function App() {
         <Route path="Blogs" element={<LatestBlogs />} />
         <Route path="/bis-certificate-for-tin-ingots" element={<TinIngotBlog />} />
         <Route path="/bis-certificate-for-refined-zinc" element={<RefinedZincBlog />} />
+        <Route path="/bis-license-for-bunk-beds-Indian-bis" element={<BunkBedsBlog />} />
 
         {/* Localized routes for other languages */}
         <Route path="/:lang/*" element={<LocalizedRoute />}>
