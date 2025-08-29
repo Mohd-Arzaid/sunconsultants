@@ -4,13 +4,12 @@ const HomeSEO = () => {
   return (
     <Helmet>
       <title>
-        About all schemes of Indian bis certifications for Indian and foreign
-        manufacturers
+      BIS Certification Consultants in India | ISI Mark, FMCS, CRS, EPR
       </title>
       <meta
         name="description"
         content="
-     Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.
+     Sun Certifications is one of the top BIS Certification Consultant in Delhi, India, one stop solutions for all kinds of Technical Certification & Regulatory Compliances, including BIS Registration, ISI Certification, WPC Approval, EPR Registration and more.
           "
       />
       <meta
