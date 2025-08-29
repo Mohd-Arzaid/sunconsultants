@@ -30,6 +30,14 @@ const blogs = [
         title: "BIS Certification for Bunk Beds Under IS 17636:2022",
         description: "BIS Certification for bunk beds in India is mandatory under IS 17636:2022. Know process, documents, cost & role of BIS Consultants",
         slug: "bis-license-for-bunk-beds-Indian-bis"
+    },
+    {
+        id: 4,
+        color: "#C86A31", 
+        title: "BIS Certification for Storage Units under IS 17634:",
+        description: "BIS Certification under IS 17634:2022 ensures safe, durable, and quality storage units with the trusted BIS Mark in India.",
+        slug: "bis-license-for-storage-units-Indian-bis"
+
     }
 ];
 
