@@ -133,6 +133,12 @@ const VideoSection = ({ onVideoPopupChange }) => {
                 className="w-full"
                 autoplay={false}
               />
+              {/* Video Title Below Each Video */}
+              <div className="p-4">
+                <h3 className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2 leading-tight">
+                  {video.title}
+                </h3>
+              </div>
             </div>
           ))}
         </div>

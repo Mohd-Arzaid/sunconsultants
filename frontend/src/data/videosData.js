@@ -3,8 +3,7 @@ export const videosData = [
   {
     id: 1,
     embedId: "4JDVsoWSY3I",
-    title:
-      "Complete Guide to BIS Certification for Foreign Manufacturers (BISFM)",
+    title: "BIS Certifications for Slugging Wrenches IS 4508",
     description:
       "Learn everything about BIS Foreign Manufacturer certification process, requirements, documentation, and compliance standards for selling products in India. Complete BISFM guide by Sun Certifications.",
     category: "BISFM",
@@ -24,7 +23,7 @@ export const videosData = [
   {
     id: 2,
     embedId: "_LBccl6LiOM",
-    title: "ISI Mark Certification Process - Complete Step by Step Guide",
+    title: "BIS Certification for Ring Wrenches IS 2029",
     description:
       "Comprehensive guide to ISI Mark certification for Indian manufacturers. Learn about quality assurance, testing requirements, and compliance standards. Expert insights from Sun Certifications.",
     category: "ISI Mark",
@@ -44,7 +43,7 @@ export const videosData = [
   {
     id: 3,
     embedId: "JxYwTtj4wfQ",
-    title: "Scheme X Registration - BIS Certification Under New Framework",
+    title: "BIS Certification for Cutting Pliers IS 3650",
     description:
       "Understanding Scheme X registration process under BIS certification framework. Learn about documentation, compliance requirements, and regulatory procedures for Indian manufacturers.",
     category: "Scheme X",
@@ -64,8 +63,7 @@ export const videosData = [
   {
     id: 4,
     embedId: "zq1nIBTh27w",
-    title:
-      "BIS Certification Complete Guide - Standards and Quality Requirements",
+    title: "BIS Certificate for Jaw Wrenches IS 2028s",
     description:
       "Master the BIS certification process with our comprehensive guide covering quality standards, testing procedures, and compliance requirements for Indian market entry.",
     category: "BIS Certification",
@@ -85,8 +83,7 @@ export const videosData = [
   {
     id: 5,
     embedId: "5ppBDV76d6I",
-    title:
-      "Standards Compliance in India - Regulatory Framework and Requirements",
+    title: "BIS Certification for Fibre Ropes IS 4572",
     description:
       "Detailed overview of standards compliance requirements in India including regulatory framework, quality assurance processes, and certification procedures for businesses.",
     category: "Standards Compliance",
@@ -106,8 +103,7 @@ export const videosData = [
   {
     id: 6,
     embedId: "OCQZUvsxcHU",
-    title:
-      "Quality Management Systems - Best Practices for Manufacturing Excellence",
+    title: "BIS Certification for Solar Flat Plate Collector - IS 12933",
     description:
       "Learn about implementing effective quality management systems for manufacturing excellence. Covers process optimization, quality control, and compliance with Indian standards.",
     category: "Quality Management",
@@ -127,7 +123,7 @@ export const videosData = [
   {
     id: 7,
     embedId: "hSNURmPAKDA",
-    title: "BIS Certification Services - Expert Guidance for Manufacturers",
+    title: "A Guide on BIS Certification by Sun Certifications India",
     description:
       "Professional BIS certification services providing expert guidance for manufacturers seeking compliance with Indian standards. Comprehensive support for certification process and regulatory requirements.",
     category: "BIS Certification",
@@ -147,8 +143,7 @@ export const videosData = [
   {
     id: 8,
     embedId: "7NazqQXmOa8",
-    title:
-      "Quality Assurance and Standards Compliance - Manufacturing Excellence",
+    title: "BIS Certifications For Toys under IS 9873 & 15644",
     description:
       "Comprehensive overview of quality assurance practices and standards compliance for manufacturing excellence. Learn about best practices, regulatory requirements, and quality management systems.",
     category: "Quality Assurance",
@@ -168,7 +163,8 @@ export const videosData = [
   {
     id: 9,
     embedId: "2PMhlbYSCQk",
-    title: "New Certification Guide - Standards and Compliance",
+    title:
+      "Simplifying Certification: BIS, CDSCO, LMPC, EPR, PESO, WPC & More - Sun Certifications India",
     description:
       "Latest guide on certification standards and compliance requirements. Learn about regulatory framework, quality assurance, and best practices for manufacturers.",
     category: "Certification",
@@ -188,8 +184,7 @@ export const videosData = [
   {
     id: 10,
     embedId: "6JG1nSiLAao",
-    title:
-      "BIS Certification for Tin Ingot under IS 26:2024 - Complete Process Guide",
+    title: "BIS Certification for Chipboard Screws - IS 18508:2024",
     description:
       "Complete guide to BIS Certification for Tin Ingot under IS 26:2024. Learn about mandatory certification from October 2025, application process, required documents, testing procedures, and compliance requirements for manufacturers.",
     category: "BIS Certification",
