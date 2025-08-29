@@ -34,37 +34,16 @@ import Footer from "@/common/Footer";
 // =============================
 
 /**
- * Blog data containing all available blog posts
- * Each blog has an id, color theme, title, description and slug for routing
+ * SchemeX Products data containing BIS certification information
+ * Each product has an id, color theme, title, description and slug for routing
  */
-const blogs = [
+const products = [
     {
         id: 1,
-        color: "#8B5CF6", // Purple
-        title: "BIS Certification for Tin Ingot under IS 26:2024",
-        description: "Everything manufacturers need to know about the mandatory BIS certification for tin ingots from 17th October 2025. Learn about the application process, required documents, costs, and compliance requirements.",
-        slug: "bis-certificate-for-tin-ingots"
-    },
-    {
-        id: 2,
-        color: "#10B981", // Green
-        title: "BIS Certification for Refined Zinc under IS 209:2024",
-        description: "Complete guide for manufacturers on obtaining BIS certification for refined zinc. Understand the certification process, documentation requirements, and compliance deadlines under IS 209:2024.",
-        slug: "bis-certificate-for-refined-zinc"
-    },
-    {
-        id: 3,
-        color: "#8B5CF6", // Purple
-        title: "BIS Certification for Bunk Beds Under IS 17636:2022",
-        description: "BIS Certification for bunk beds in India is mandatory under IS 17636:2022. Know process, documents, cost & role of BIS Consultants",
-        slug: "bis-license-for-bunk-beds-Indian-bis"
-    },
-    {
-        id: 4,
-        color: "#C86A31",
-        title: "BIS Certification for Storage Units under IS 17634:",
-        description: "BIS Certification under IS 17634:2022 ensures safe, durable, and quality storage units with the trusted BIS Mark in India.",
-        slug: "bis-license-for-storage-units-Indian-bis"
+        color: "#3B82F6", // Blue
+        title: "BIS Scheme X Registration for Pumps and Liquid Elevators in India",
+        description: "BIS Scheme X certification is mandatory for all pumps and liquid elevators sold in India, ensuring national quality standards and safety compliance. This comprehensive guide covers the significance of BIS certification, OTR 2024 requirements, certification process, applicable pump types (centrifugal, submersible, booster, multistage, positive displacement, vertical turbine, chemical process, diaphragm, and slurry pumps), factory inspection procedures, documentation requirements, and compliance deadlines. Learn about the September 1, 2026 deadline, penalties for non-compliance, and how BIS certification provides market advantage, consumer trust, and access to government tenders for both Indian and foreign manufacturers.",
+        slug: "bis-scheme-x-certification-for-pumps-and-liquid-elevators"
     }
 ];
 
@@ -76,7 +55,7 @@ const blogs = [
  * Navigation breadcrumb component
  * Displays the current page location in the site hierarchy
  */
-const LatestBlogsBreadcrumb = () => {
+const SchemeXProductsBreadcrumb = () => {
     return (
         <div className="absolute md:top-5 top-3 left-0 w-full z-30">
             <div className="max-w-[80rem] mx-auto px-4">
@@ -92,7 +71,7 @@ const LatestBlogsBreadcrumb = () => {
                                 <SlashIcon />
                             </BreadcrumbSeparator>
                             <BreadcrumbItem>
-                                <BreadcrumbPage>Latest Blogs</BreadcrumbPage>
+                                <BreadcrumbPage>SchemeX Products</BreadcrumbPage>
                             </BreadcrumbItem>
                         </BreadcrumbList>
                     </Breadcrumb>
@@ -103,15 +82,15 @@ const LatestBlogsBreadcrumb = () => {
 };
 
 /**
- * Search input component for filtering blogs
+ * Search input component for filtering products
  * Provides real-time search functionality with magnifying glass icon
  */
-const LatestBlogsSearchBar = ({ searchQuery, handleSearch }) => {
+const SchemeXProductsSearchBar = ({ searchQuery, handleSearch }) => {
     return (
         <div className="mb-12 md:mb-20 max-w-2xl mx-auto">
             <div className="relative">
                 <label htmlFor="search" className="sr-only">
-                    Search Latest Blogs
+                    Search SchemeX Products
                 </label>
                 <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
                 <input
@@ -119,7 +98,7 @@ const LatestBlogsSearchBar = ({ searchQuery, handleSearch }) => {
                     type="text"
                     value={searchQuery}
                     onChange={handleSearch}
-                    placeholder="Search for Latest Blogs"
+                    placeholder="Search for SchemeX Products"
                     className="w-full pl-11 md:pl-12 placeholder:font-geist placeholder:text-[17px] sm:placeholder:text-[18px] pr-4 py-3 md:py-4 rounded-full shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] border-2 border-transparent bg-white focus:border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-100 transition-all duration-200"
                 />
             </div>
@@ -128,10 +107,10 @@ const LatestBlogsSearchBar = ({ searchQuery, handleSearch }) => {
 };
 
 /**
- * Individual blog card component
- * Displays blog information with color-coded header and hover effects
+ * Individual product card component
+ * Displays product information with color-coded header and hover effects
  */
-const BlogCardItem = ({ color, title, description, slug }) => {
+const ProductCardItem = ({ color, title, description, slug }) => {
     const detailUrl = `/${slug}`;
 
     return (
@@ -140,14 +119,14 @@ const BlogCardItem = ({ color, title, description, slug }) => {
             <div className="h-3 md:h-4" style={{ backgroundColor: color }}></div>
 
             <div className="p-5 md:p-8 flex flex-col flex-grow">
-                {/* Blog title - clickable */}
+                {/* Product title - clickable */}
                 <Link to={detailUrl}>
                     <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-4 min-h-[4rem] flex items-start cursor-pointer hover:text-blue-600 transition-colors duration-200">
                         {title}
                     </h3>
                 </Link>
 
-                {/* Blog description */}
+                {/* Product description */}
                 <p className="font-geist text-gray-600 mb-6 line-clamp-3 flex-grow">
                     {description}
                 </p>
@@ -185,34 +164,34 @@ const BlogCardItem = ({ color, title, description, slug }) => {
 // =============================
 
 /**
- * Blog cards grid component with search and pagination logic
+ * Product cards grid component with search and pagination logic
  * Handles filtering, pagination calculation, and no-results state
  */
-const LatestBlogsCard = ({ searchQuery, currentPage, itemsPerPage }) => {
-    // Filter blogs based on search query
-    const filteredBlogs = blogs.filter((blog) => {
+const SchemeXProductsCard = ({ searchQuery, currentPage, itemsPerPage }) => {
+    // Filter products based on search query
+    const filteredProducts = products.filter((product) => {
         const searchLower = searchQuery.toLowerCase();
         return (
-            blog.title.toLowerCase().includes(searchLower) ||
-            blog.description.toLowerCase().includes(searchLower)
+            product.title.toLowerCase().includes(searchLower) ||
+            product.description.toLowerCase().includes(searchLower)
         );
     });
 
     // Calculate pagination indices
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = filteredBlogs.slice(indexOfFirstItem, indexOfLastItem);
+    const currentItems = filteredProducts.slice(indexOfFirstItem, indexOfLastItem);
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
             {currentItems.length > 0 ? (
-                currentItems.map((blog) => (
-                    <BlogCardItem
-                        key={blog.id}
-                        color={blog.color}
-                        title={blog.title}
-                        description={blog.description}
-                        slug={blog.slug}
+                currentItems.map((product) => (
+                    <ProductCardItem
+                        key={product.id}
+                        color={product.color}
+                        title={product.title}
+                        description={product.description}
+                        slug={product.slug}
                     />
                 ))
             ) : (
@@ -221,10 +200,10 @@ const LatestBlogsCard = ({ searchQuery, currentPage, itemsPerPage }) => {
                     <div className="max-w-2xl mx-auto">
                         <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border-2 border-gray-400">
                             <p className="text-gray-600 font-geist text-base sm:text-lg">
-                                No blogs found matching your search criteria.
+                                No products found matching your search criteria.
                             </p>
                             <p className="text-gray-600 font-geist text-base sm:text-lg">
-                                Try searching with different keywords or browse all our latest blogs.
+                                Try searching with different keywords or browse all our SchemeX products.
                             </p>
                         </div>
                     </div>
@@ -238,18 +217,18 @@ const LatestBlogsCard = ({ searchQuery, currentPage, itemsPerPage }) => {
  * Advanced pagination component with smart page number generation
  * Includes previous/next buttons, ellipsis for long page lists, and page info
  */
-const LatestBlogsPagination = ({ currentPage, setCurrentPage, itemsPerPage, searchQuery }) => {
-    // Filter blogs to get correct total count for pagination
-    const filteredBlogs = blogs.filter((blog) => {
+const SchemeXProductsPagination = ({ currentPage, setCurrentPage, itemsPerPage, searchQuery }) => {
+    // Filter products to get correct total count for pagination
+    const filteredProducts = products.filter((product) => {
         if (!searchQuery) return true;
         const searchLower = searchQuery.toLowerCase();
         return (
-            blog.title.toLowerCase().includes(searchLower) ||
-            blog.description.toLowerCase().includes(searchLower)
+            product.title.toLowerCase().includes(searchLower) ||
+            product.description.toLowerCase().includes(searchLower)
         );
     });
 
-    const totalPages = Math.ceil(filteredBlogs.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
 
     // Page change handler with smooth scroll to top
     const handlePageChange = (pageNumber) => {
@@ -377,18 +356,18 @@ const LatestBlogsPagination = ({ currentPage, setCurrentPage, itemsPerPage, sear
  * Wrapper component for pagination with conditional rendering
  * Manages pagination visibility and responsive spacing
  */
-const LatestBlogsPaginationWrapper = ({ currentPage, setCurrentPage, itemsPerPage, searchQuery }) => {
+const SchemeXProductsPaginationWrapper = ({ currentPage, setCurrentPage, itemsPerPage, searchQuery }) => {
     // Calculate if pagination should be shown
-    const filteredBlogs = blogs.filter((blog) => {
+    const filteredProducts = products.filter((product) => {
         if (!searchQuery) return true;
         const searchLower = searchQuery.toLowerCase();
         return (
-            blog.title.toLowerCase().includes(searchLower) ||
-            blog.description.toLowerCase().includes(searchLower)
+            product.title.toLowerCase().includes(searchLower) ||
+            product.description.toLowerCase().includes(searchLower)
         );
     });
 
-    const totalPages = Math.ceil(filteredBlogs.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
     const showPagination = totalPages > 1;
 
     return (
@@ -397,7 +376,7 @@ const LatestBlogsPaginationWrapper = ({ currentPage, setCurrentPage, itemsPerPag
                 ? "pt-8 pb-12 md:pt-12 md:pb-16 px-4 flex items-center justify-center"
                 : "pt-4 pb-6 md:pt-6 md:pb-8"
         }>
-            <LatestBlogsPagination
+            <SchemeXProductsPagination
                 currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
                 itemsPerPage={itemsPerPage}
@@ -408,10 +387,10 @@ const LatestBlogsPaginationWrapper = ({ currentPage, setCurrentPage, itemsPerPag
 };
 
 /**
- * Main content component containing page header, search, and blog grid
- * Manages search and pagination state for the entire blogs section
+ * Main content component containing page header, search, and product grid
+ * Manages search and pagination state for the entire products section
  */
-const LatestBlogsMainContent = () => {
+const SchemeXProductsMainContent = () => {
     // State management
     const [searchQuery, setSearchQuery] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
@@ -429,21 +408,21 @@ const LatestBlogsMainContent = () => {
                 {/* Page header section */}
                 <div className="text-center mb-6 md:mb-10">
                     <h1 className="font-playfair text-2xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
-                        Latest Blogs
+                        SchemeX Products
                     </h1>
                     <p className="text-base md:text-lg font-geist text-gray-600 max-w-2xl mx-auto">
-                        Stay updated with the latest blogs and articles from our experts
+                        Comprehensive BIS Scheme X certification guides for pumps and liquid elevators
                     </p>
                 </div>
 
                 {/* Search functionality */}
-                <LatestBlogsSearchBar
+                <SchemeXProductsSearchBar
                     searchQuery={searchQuery}
                     handleSearch={handleSearch}
                 />
 
-                {/* Blog cards grid */}
-                <LatestBlogsCard
+                {/* Product cards grid */}
+                <SchemeXProductsCard
                     searchQuery={searchQuery}
                     currentPage={currentPage}
                     itemsPerPage={itemsPerPage}
@@ -451,7 +430,7 @@ const LatestBlogsMainContent = () => {
             </div>
 
             {/* Pagination controls */}
-            <LatestBlogsPaginationWrapper
+            <SchemeXProductsPaginationWrapper
                 currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
                 itemsPerPage={itemsPerPage}
@@ -466,19 +445,19 @@ const LatestBlogsMainContent = () => {
 // =============================
 
 /**
- * Latest Blogs Page Component
- * Main page component that orchestrates the entire latest blogs section
+ * SchemeX Products Page Component
+ * Main page component that orchestrates the entire SchemeX products section
  * Combines breadcrumb navigation, main content, contact section, and footer
  */
-const LatestBlogs = () => {
+const SchemeXProducts = () => {
     return (
         <div className="relative">
-            <LatestBlogsBreadcrumb />
-            <LatestBlogsMainContent />
+            <SchemeXProductsBreadcrumb />
+            <SchemeXProductsMainContent />
             <AboutContact />
             <Footer />
         </div>
     );
 };
 
-export default LatestBlogs;
+export default SchemeXProducts;

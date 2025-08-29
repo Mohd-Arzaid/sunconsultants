@@ -2,6 +2,7 @@ import {
   Award,
   Battery,
   BookText,
+  Building,
   CheckCircle,
   Cpu,
   FileCheck,
@@ -213,6 +214,12 @@ export const NAVIGATION_DATA = {
       name: "Latest Blogs",
       link: "/Blogs",
       icon: BookText,
+    },
+    {
+      id: 6,
+      name: "SchemeX Products",
+      link: "/SchemeX-products",
+      icon: Building,
     },
   ],
   gallery: [

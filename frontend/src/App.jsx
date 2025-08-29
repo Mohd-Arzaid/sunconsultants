@@ -63,6 +63,8 @@ import TinIngotBlog from "./blogs/TinIngotBlog";
 import RefinedZincBlog from "./blogs/RefinedZincBlog";
 import BunkBedsBlog from "./blogs/BunkBedsBlog";
 import StorageUnitsBlog from "./blogs/StorageUnitsBlog";
+import SchemeXProducts from "./schemeXProducts/SchemeXProducts";
+import FirstSchemeXProductPage from "./schemeXProducts/FirstSchemeXProductPage";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -210,6 +212,12 @@ function App() {
         <Route path="/bis-certificate-for-refined-zinc" element={<RefinedZincBlog />} />
         <Route path="/bis-license-for-bunk-beds-Indian-bis" element={<BunkBedsBlog />} />
         <Route path="/bis-license-for-storage-units-Indian-bis" element={<StorageUnitsBlog />} />
+
+
+
+        {/* SchemeX Products */}
+        <Route path="/SchemeX-products" element={<SchemeXProducts />} />
+        <Route path="/bis-scheme-x-certification-for-pumps-and-liquid-elevators" element={<FirstSchemeXProductPage />} />
 
         {/* Localized routes for other languages */}
         <Route path="/:lang/*" element={<LocalizedRoute />}>

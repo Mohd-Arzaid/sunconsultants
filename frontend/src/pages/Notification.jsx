@@ -395,9 +395,11 @@ const NotificationCardItem = ({
           </span>
         </div>
 
-        <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-3 min-h-[4rem] flex items-start">
-          {title}
-        </h3>
+        <Link to={detailUrl}>
+          <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-3 min-h-[4rem] flex items-start cursor-pointer hover:text-blue-600 transition-colors duration-200">
+            {title}
+          </h3>
+        </Link>
 
         <p className="font-geist text-gray-600 mb-6 line-clamp-3 flex-grow">
           {description}
