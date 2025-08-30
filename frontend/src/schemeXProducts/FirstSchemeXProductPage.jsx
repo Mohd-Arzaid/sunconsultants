@@ -294,7 +294,7 @@ const FirstSchemeXProductPageMainContentLeft = () => {
                 </ul>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Each variety shall be in accordance with appropriate Indian Standard (IS code) such as IS 9079 and IS 6595 etc.
+                Each type must comply with relevant Indian Standards (IS codes) such as IS 16819:2018/ISO 12100:2010 (Safety of Machinery General Principles for Design- Risk Assessment and Risk Reduction).
                 </p>
 
                 <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
