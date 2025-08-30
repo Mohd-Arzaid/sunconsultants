@@ -26,7 +26,7 @@ const services = [
     description:
       "Specialized certification program for specific product categories requiring compliance with advanced quality and safety standards.",
     image: BISCRSImage,
-    path: "/schemeX",
+    path: "/indian-bis-certification-under-scheme-x",
   },
   {
     id: 3,
@@ -106,16 +106,20 @@ const OurServices = () => {
     setActiveIndex(index);
   }, []);
 
-  const handleThumbnailClick = useCallback((index) => {
-    setActiveThumbnail(index);
-  }, []);
-
   const handleServiceNavigation = useCallback(
     (path) => {
       navigate(path);
     },
     [navigate]
   );
+
+  const handleThumbnailClick = useCallback((index) => {
+    setActiveThumbnail(index);
+    const service = services[index];
+    if (service && service.path) {
+      handleServiceNavigation(service.path);
+    }
+  }, [handleServiceNavigation]);
 
   return (
     <div className="bg-gradient-to-b from-[#F9F7F2] to-white pt-8 pb-8  sm:pt-12 md:pt-16 ">
@@ -226,11 +230,10 @@ const OurServices = () => {
               key={idx}
               onClick={() => goToSlide(idx)}
               aria-label={`Go to service ${idx + 1}`}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                activeIndex === idx
-                  ? "bg-[#1A8781] w-10"
-                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
-              }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${activeIndex === idx
+                ? "bg-[#1A8781] w-10"
+                : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                }`}
             ></button>
           ))}
         </div>
@@ -243,17 +246,16 @@ const OurServices = () => {
               onClick={() => handleThumbnailClick(index)}
               role="button"
               tabIndex={0}
-              aria-label={`Select ${service.title}`}
+              aria-label={`Navigate to ${service.title} page`}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   handleThumbnailClick(index);
                 }
               }}
-              className={`rounded-xl p-3 md:p-4 transition-all duration-300 border ${
-                activeThumbnail === index
-                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-              }`}
+              className={`rounded-xl p-3 md:p-4 transition-all duration-300 border cursor-pointer ${activeThumbnail === index
+                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+                }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
                 <div className="mb-0.5 md:mb-1">
