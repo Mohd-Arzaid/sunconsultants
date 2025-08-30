@@ -51,13 +51,13 @@ import ISIMark from "../assets/images/ISIMark.jpg";
 // Why Choose Us Section - Simple informational component
 const WhyChooseUs = () => {
   return (
-    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-16 md:pb-24">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pt-0 pb-16 md:pb-24">
       {/* Heading */}
       <div className="text-center mb-8 md:mb-10">
-        <h1 className="font-playfair text-4xl uppercase md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
+        <h1 className="font-playfair text-4xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
           Why Choose Us?
         </h1>
-        <p className="text-base md:text-lg font-geist text-gray-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
+        <p className="text-base md:text-lg font-geist text-neutral-600 max-w-xl md:max-w-2xl mx-auto px-4 md:px-0">
           We simplify certification by managing compliance, saving you time and
           effort to focus on business growth.
         </p>
@@ -73,11 +73,11 @@ const WhyChooseUs = () => {
             <User className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
-          <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-2 md:mb-3">
+          <h3 className="font-geist font-semibold text-neutral-800 text-lg md:text-xl mb-2 md:mb-3">
             Comprehensive Certification Solutions
           </h3>
 
-          <p className="text-gray-600 font-geist text-sm md:text-base">
+          <p className="text-neutral-600 font-geist text-sm md:text-base">
             With 4,999+ projects executed and 1,299+ happy clients, we bring
             deep industry knowledge to every certification challenge.
           </p>
@@ -91,11 +91,11 @@ const WhyChooseUs = () => {
             <Bike className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
-          <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-2 md:mb-3">
+          <h3 className="font-geist font-semibold text-neutral-800 text-lg md:text-xl mb-2 md:mb-3">
             Fast & Efficient Process
           </h3>
 
-          <p className="text-gray-600 font-geist text-sm md:text-base">
+          <p className="text-neutral-600 font-geist text-sm md:text-base">
             Our dedicated team ensures a smooth and time-efficient certification
             process so you can focus on your core business.
           </p>
@@ -109,11 +109,11 @@ const WhyChooseUs = () => {
             <Globe className="w-6 h-6 md:w-7 md:h-7 text-[#1A8781] group-hover:text-[#131316]" />
           </div>
 
-          <h3 className="font-geist font-semibold text-[#131316] text-lg md:text-xl mb-2 md:mb-3">
+          <h3 className="font-geist font-semibold text-neutral-800 text-lg md:text-xl mb-2 md:mb-3">
             Global Reach
           </h3>
 
-          <p className="text-gray-600 font-geist text-sm md:text-base">
+          <p className="text-neutral-600 font-geist text-sm md:text-base">
             We assist manufacturers and exporters from 20+ countries, including
             India, China, Malaysia, Thailand and beyond.
           </p>
@@ -126,7 +126,7 @@ const WhyChooseUs = () => {
 // Stats Section - Simple display component
 const Stats = () => {
   return (
-    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pb-16 md:pb-20">
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pb-8 md:pb-12">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8">
         <div className="text-center">
           <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
@@ -432,8 +432,8 @@ export const OurServices = () => {
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to slide ${index + 1}`}
                 className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${activeIndex === index
-                    ? "bg-[#1A8781] w-10"
-                    : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                  ? "bg-[#1A8781] w-10"
+                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
                   }`}
               ></button>
             ))}
@@ -447,8 +447,8 @@ export const OurServices = () => {
               key={service.id || index}
               onClick={() => goToSlide(index)}
               className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${activeIndex === index
-                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
                 }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
@@ -625,6 +625,82 @@ const Testimonials = () => {
   );
 };
 
+
+const AboutUsHero = () => {
+  return (
+    <div className="max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-2 md:pb-3">
+      {/* Heading */}
+      <div className="text-center mb-12 md:mb-16">
+        <h1 className="font-playfair drop-shadow-lg text-5xl md:text-6xl font-bold text-[#1e1e1e] mb-6 md:mb-8">
+          About Us
+        </h1>
+        <p className="text-lg md:text-xl font-geist text-neutral-600 max-w-4xl mx-auto px-4 md:px-0 leading-relaxed">
+          Sun Certifications was founded in 2013 with a view to simplify the complex regulatory compliance framework in India. For more than 10 years, we&apos;ve been empowering local and international businesses to satisfy their Indian certification and license obligations with ease – resulting in smoother market access and long-term success.
+        </p>
+      </div>
+
+      {/* Content Sections */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
+
+        {/* Who We Are */}
+        <div className="p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300">
+          <div className="mb-6">
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1e1e1e]">
+              Who We Are
+            </h2>
+          </div>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            At Sun Certifications, we understand that compliance is more than just paperwork – it&apos;s about gaining the trust of your clients, people, and businesses that you&apos;re dealing with and earning the confidence of the governments where you operate. With a staff of dedicated and talented professionals, industry veterans, and compliance experts, we have become one of the most trusted names in the regulatory consulting arena.
+          </p>
+        </div>
+
+        {/* Our Promise */}
+        <div className="p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300">
+          <div className="mb-6">
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1e1e1e]">
+              Our Promise
+            </h2>
+          </div>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
+            Our Promise is straightforward: Prompt project completion, Clear Communication, and 100% Customer satisfaction. If you are an Indian manufacturer, importer, or an international brand entering the Indian market, we have a solution that is tailored as per your business requirements.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+// Our Vision Section - Standalone section component
+const OurVisionSection = () => {
+  return (
+    <div className="pt-8 md:pt-12 pb-16 md:pb-20">
+      <div className="max-w-[84rem] mx-auto px-4 md:px-12">
+        <div className="text-center p-8 md:p-12 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200">
+          <div className="mb-6">
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1e1e1e]">
+              Our Vision
+            </h2>
+          </div>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-6 max-w-4xl mx-auto">
+            To be the global leader in regulatory compliance consulting, making it possible for organizations to confidently extend their business into India, maintaining the highest standards of quality, safety, and trust.
+          </p>
+
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center px-6 py-3 bg-neutral-800 text-white font-geist font-medium rounded-lg hover:bg-neutral-700 transition-colors duration-200"
+          >
+            Get Started Today
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // =============================================
 // MAIN COMPONENT (Entry Point)
 // =============================================
@@ -632,7 +708,7 @@ const Testimonials = () => {
 // About Page Main Component - Orchestrates all sections and handles page structure
 const About = () => {
   return (
-    <div className="overflow-hidden bg-[#F9F7F2] relative">
+    <div className="overflow-hidden bg-gradient-to-b from-white via-neutral-50 to-[#F9F7F2] relative">
       {/* SEO and Meta Tags */}
       <Helmet>
         <title>
@@ -695,8 +771,10 @@ const About = () => {
       </div>
 
       {/* Page Sections */}
+      <AboutUsHero />
       <WhyChooseUs />
       <Stats />
+      <OurVisionSection />
       <VideoShowcase />
       <Services />
       <Testimonials />
