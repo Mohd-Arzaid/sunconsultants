@@ -59,22 +59,24 @@ const SchemeXProductsBreadcrumb = () => {
     return (
         <div className="absolute md:top-5 top-3 left-0 w-full z-30">
             <div className="max-w-[80rem] mx-auto px-4">
-                <div className="w-fit font-inter">
-                    <Breadcrumb>
-                        <BreadcrumbList>
-                            <BreadcrumbItem>
-                                <BreadcrumbLink asChild>
-                                    <Link to="/">Home</Link>
-                                </BreadcrumbLink>
-                            </BreadcrumbItem>
-                            <BreadcrumbSeparator>
-                                <SlashIcon />
-                            </BreadcrumbSeparator>
-                            <BreadcrumbItem>
-                                <BreadcrumbPage>SchemeX Products</BreadcrumbPage>
-                            </BreadcrumbItem>
-                        </BreadcrumbList>
-                    </Breadcrumb>
+                <div className="w-full overflow-x-auto scrollbar-hide font-inter">
+                    <div className="w-fit min-w-full">
+                        <Breadcrumb>
+                            <BreadcrumbList className="flex-nowrap">
+                                <BreadcrumbItem className="flex-shrink-0">
+                                    <BreadcrumbLink asChild>
+                                        <Link to="/">Home</Link>
+                                    </BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator className="flex-shrink-0">
+                                    <SlashIcon />
+                                </BreadcrumbSeparator>
+                                <BreadcrumbItem className="flex-shrink-0">
+                                    <BreadcrumbPage className="whitespace-nowrap">SchemeX Products</BreadcrumbPage>
+                                </BreadcrumbItem>
+                            </BreadcrumbList>
+                        </Breadcrumb>
+                    </div>
                 </div>
             </div>
         </div>
