@@ -670,36 +670,50 @@ const OverviewSection = () => {
       className="flex flex-col scroll-mt-20"
       aria-labelledby="overview-title"
     >
-      {/* Overview */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Overview
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
       {/* Title */}
-      <h2
+      <h1
         id="overview-title"
         className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
       >
-        Plastic Waste Management & Recycling
-      </h2>
-
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Promotes eco-friendly disposal, reduces pollution & boosts recycling.
-      </p>
+        What is Legal Metrology?
+      </h1>
 
       {/* Overview Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The initiative aims to establish environment-friendly plastic waste
-        disposal solutions. In the process it seeks to ban the use of plastic
-        bags and plastic products, and reduce plastic littering across the
-        state. It has been observed that disposal of plastic waste is a serious
-        concern due to improper collection and segregation system. Only 60% of
-        the plastic produced is recycled, balance 9400 Tones of plastic is left
-        unattended in environment causing land, air and water pollution
+        Legal Metrology governs the scientific, regulatory, and legal framework applied to weights and measurements. In India, this is overseen by the Department of Consumer Affairs under the Ministry of Consumer Affairs, Food and Public Distribution. The Legal Metrology Act, 2009 was introduced to consolidate laws relating to weights and measures and other goods which are sold or distributed by weight, measure, or number.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Objectives of Legal Metrology:
+        </h3>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Protect consumers by ensuring the accuracy of measurements</li>
+          <li>Prevent fraud in commercial transactions</li>
+          <li>Promote fair trade and confidence in trade practices</li>
+          <li>Facilitate transparency and compliance in product labeling</li>
+        </ul>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        Legal Metrology includes standardization of measurement units, approval and calibration of measuring instruments, licensing for businesses handling weights and measures, and enforcement of penalties for violations.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Where It Applies:
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          Legal metrology applies to any industry where goods are bought and sold by weight or measure. This includes sectors like:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Retail trade</li>
+          <li>Food and beverage</li>
+          <li>E-commerce</li>
+          <li>Pharmaceuticals</li>
+          <li>Manufacturing</li>
+          <li>Transportation and logistics</li>
+        </ul>
       </div>
     </section>
   );
@@ -712,37 +726,53 @@ const EligibilitySection = () => {
       className="flex flex-col scroll-mt-20"
       aria-labelledby="eligibility-title"
     >
-      {/* Eligibility */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Eligibility
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
       {/* Title */}
       <h2
         id="eligibility-title"
         className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
       >
-        Plastic License Eligibility
+        Why Legal Metrology Matters in India
       </h2>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Required for manufacturers; foreign applicants need an Indian
-        representative.
-      </p>
-
-      {/* Eligibility Content */}
+      {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        All manufacturers, either of Indian or foreign origin can apply for the
-        Plastic licence.In case of foreign manufacturer license will be granted
-        to the manufacturer and the Indian counterpart of the manufacturer will
-        act as it's Indian Representative. The Indian representative of the
-        manufacturer must have a valid state drugs license under Form 20-B/21-B
-        or Form 42 ( applied under Form 41 ) as per the latest guidelines
-        released by CDSCO.
+        Legal Metrology is not just a regulatory obligation; it is a foundational component of a fair and transparent economy. In India's rapidly expanding marketplace, with booming sectors like e-commerce, pharmaceuticals, and packaged goods, the relevance of Legal Metrology has increased multifold.
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Economic Significance
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          Legal Metrology ensures trust in the market by guaranteeing that a product's weight or volume is accurate. This assurance is vital to:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Maintain fairness in trade</li>
+          <li>Protect consumers from deception</li>
+          <li>Build business credibility</li>
+          <li>Prevent disputes among commercial parties</li>
+        </ul>
+        <div className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          Each time a consumer buys a liter of milk, a packet of rice, or a cylinder of gas, they rely on the integrity of the weight and measurement systems. Legal Metrology makes that trust possible.
+        </div>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Government's Role in Consumer Protection
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          The Indian government has made Legal Metrology compliance mandatory to:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Enforce fair pricing</li>
+          <li>Standardize labeling</li>
+          <li>Monitor imported goods</li>
+          <li>Detect fraud and manipulation</li>
+        </ul>
+        <div className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          The Legal Metrology Packaged Commodities Rules are frequently updated to reflect current market practices. These rules impact pricing disclosures, nutritional labeling, use-by dates, and country-of-origin declarations.
+        </div>
       </div>
     </section>
   );
@@ -755,50 +785,54 @@ const ComplianceSection = () => {
       className="flex flex-col scroll-mt-20"
       aria-labelledby="compliance-title"
     >
-      {/* Compliance*/}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Compliance
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
       {/* Title */}
       <h2
         id="compliance-title"
         className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
       >
-        Businesses That Need Plastic Waste Certification
+        How Legal Metrology Influences Trade
       </h2>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Required for recyclers, producers & raw material manufacturers.
-      </p>
-
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsList
-            points={[
-              "Units engaged in processing or recycling of plastic waste",
-              "Producers or brand owners of plastic products",
-              "Manufacturers of plastic raw materials",
-            ]}
-            heading="Consumer Electrical & Electronics"
-          />
+      <div className="mt-[16px] md:mt-[24px]">
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          For manufacturers and importers, proper Legal Metrology compliance means:
         </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Easy customs clearance</li>
+          <li>Seamless onboarding on e-commerce platforms</li>
+          <li>Avoidance of legal penalties</li>
+          <li>Improved product marketability</li>
+        </ul>
+      </div>
 
-        <img
-          src={PWMRimg}
-          alt="Medical laboratory equipment"
-          width="400"
-          height="250"
-          className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
-          ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
-          hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
-          "
-        />
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Empowering Consumers Through Regulation
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          A well-informed consumer is a protected consumer. Legal Metrology provides transparency in pricing and quantity, especially:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>On electronic weighing scales at grocery shops</li>
+          <li>On price labels of pre-packed items</li>
+          <li>On meters for LPG, electricity, and water</li>
+        </ul>
+        <div className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          When consumers know what they're paying for is accurate, confidence in the system grows.
+        </div>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          National and International Trade Impact
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          For exporters and importers:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>LMPC registration ensures that products meet global standards</li>
+          <li>Non-compliance can result in customs hold-ups, product rejections, and loss of trade licenses</li>
+        </ul>
       </div>
     </section>
   );
@@ -811,53 +845,115 @@ const ProcessSection = () => {
       className="flex flex-col scroll-mt-20"
       aria-labelledby="process-title"
     >
-      {/* Process */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Process
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
       {/* Title */}
       <h2
         id="process-title"
         className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
       >
-        Plastic Waste Management Rules 2016
+        Legal Metrology Act: Complete Breakdown
       </h2>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Regulates plastic collection, EPR, reuse, and awareness to reduce
-        environmental impact.
-      </p>
-
-      {/* Process Content */}
+      {/* Content */}
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Plastic Waste Management Rules, 2016 make an arrangement to reduce
-        the negative impact on the environment-related to plastic waste, if we
-        talk about these days scenario plastic is a vital material and almost
-        impossible to ban. Under the PWM rules, authorities such Urban Local
-        Bodies should provide separate collection, storage, and processing of
-        plastic waste in respected areas.
+        The Legal Metrology Act, 2009 is a transformative statute that governs units of measurement, measuring instruments, and the protection of consumer rights in India. This act lays the foundation for ensuring accuracy, fairness, and transparency in all commercial and industrial transactions that rely on measurement.
       </div>
 
-      {/* Important Points And Image */}
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsListTwo
-            points={[
-              "Plastic waste has spread to rural areas, expanding its applicability beyond municipal regions.",
-              "Establishes producer and generator responsibility for plastic waste under Extended Producer Responsibility (EPR).",
-              "Promotes plastic waste usage in road construction, energy recovery, and waste-to-oil as per Indian Road Congress guidelines.",
-              "Monitors and facilitates the use of plastic carry bags above 50 microns.",
-              "Encourages awareness in civil society to reduce plastic usage.",
-            ]}
-            heading="Key Provisions of Plastic Waste Management Rules "
-          />
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Purpose of the Act
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          The Legal Metrology Act serves several key purposes:
         </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Standardization of weights and measures</li>
+          <li>Regulation of manufacturing, import, sale, and repair of weighing/measuring instruments</li>
+          <li>Consumer protection through verified and certified measurements</li>
+          <li>Legal enforcement through penalties for non-compliance</li>
+        </ul>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Key Definitions
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          The Act defines critical terms such as:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Weight or measure: Standard units prescribed by the government</li>
+          <li>Pre-packaged commodity: Products packed without buyer presence and labeled for sale</li>
+          <li>Manufacturer: Any entity that manufactures or assembles weights or measures</li>
+          <li>Legal Metrology Officer (LMO): An officer authorized to inspect, verify, and enforce the Act</li>
+        </ul>
+        <div className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          Understanding these definitions helps stakeholders determine their obligations and rights.
+        </div>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Applicability
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          The Act applies to:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>All goods sold or distributed by weight, measure, or number</li>
+          <li>Every entity dealing with packaged commodities, including importers and e-commerce sellers</li>
+          <li>Manufacturers, repairers, and dealers of weighing/measuring devices</li>
+        </ul>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Structure of the Act
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          The Act is supported by three important rules:
+        </div>
+        <div className="space-y-2">
+          <h4 className="font-semibold font-geist text-[14px] md:text-[16px] text-[#131316]">
+            1. Legal Metrology (General) Rules, 2011
+          </h4>
+          <h4 className="font-semibold font-geist text-[14px] md:text-[16px] text-[#131316]">
+            2. Legal Metrology (Packaged Commodities) Rules, 2011
+          </h4>
+          <h4 className="font-semibold font-geist text-[14px] md:text-[16px] text-[#131316]">
+            3. Legal Metrology (National Standards) Rules, 2011
+          </h4>
+        </div>
+        <div className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          These rules elaborate on:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Registration and licensing procedures</li>
+          <li>Labeling requirements</li>
+          <li>Penalties for violations</li>
+          <li>Methods for standardization and calibration</li>
+        </ul>
+      </div>
+
+      <div className="mt-[16px] md:mt-[24px]">
+        <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+          Enforcement Mechanism
+        </h3>
+        <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          The Act is enforced through a well-structured hierarchy:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Central Government: Establishes policy and coordination</li>
+          <li>State Governments: Appoint Controllers and LMOs</li>
+          <li>Legal Metrology Officers: Conduct inspections, seize goods, issue fines</li>
+        </ul>
+        <div className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+          They have authority to:
+        </div>
+        <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+          <li>Inspect premises without prior notice</li>
+          <li>Seize non-compliant goods</li>
+          <li>File prosecution for violations</li>
+        </ul>
       </div>
     </section>
   );
@@ -865,109 +961,327 @@ const ProcessSection = () => {
 
 const DocumentsSection = () => {
   return (
-    <section
-      id="documents"
-      className="flex flex-col scroll-mt-20"
-      aria-labelledby="documents-title"
-    >
-      {/* Documents*/}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Documents
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h2
-        id="documents-title"
-        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+    <div className="space-y-8">
+      {/* LMPC Rules Section */}
+      <section
+        id="lmpc-rules"
+        className="flex flex-col scroll-mt-20"
+        aria-labelledby="lmpc-rules-title"
       >
-        Process for EPR license and post compliances
-      </h2>
+        <h2
+          id="lmpc-rules-title"
+          className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+        >
+          Legal Metrology Packaged Commodities Rules (LMPC Rules)
+        </h2>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        EPR registration involves CPCB application, certification, recycling,
-        and yearly renewal.
-      </p>
-
-      {/* Documents Content */}
-      <div className="flex flex-col md:flex-row mt-[16px] md:mt-[24px] gap-6 md:gap-10">
-        {/* Points */}
-        <div className="w-full md:w-auto">
-          <PointsListTwo
-            points={[
-              "Authorization Letter (except Proprietorship)",
-              "Layout Plan",
-              "Agreement with Authorized Recycler",
-              "Rent Agreement/Proof of Location",
-              "PAN Card and Aadhaar Card of Authorized Person",
-              "Consent to Operate (CTO) from State Pollution Control Authority",
-              "Cost of Project",
-            ]}
-            heading="Required Documents for Plastic Waste Certification "
-          />
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          The Legal Metrology (Packaged Commodities) Rules, 2011—commonly referred to as LMPC Rules—are an extension of the Legal Metrology Act, 2009. These rules ensure that every pre-packaged commodity is labeled with accurate, transparent, and standardized information to protect consumers from misleading practices.
         </div>
-      </div>
 
-      <div className="mt-[16px] md:mt-[46px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          Timeline
-        </span>
-        Approx 6-8 weeks after submission of application.
-      </div>
-      <div className="mt-[16px] md:mt-[20px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span className="font-semibold text-gray-950 underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3">
-          Validity
-        </span>
-        It is granted for 5 years initially and has to be renewed after that by
-        paying the government fees.
-      </div>
-    </section>
+        <div className="mt-[16px] md:mt-[24px]">
+          <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+            Why LMPC Rules Exist
+          </h3>
+          <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+            Pre-packaged goods are often purchased without direct interaction between the buyer and seller. The LMPC Rules enforce labeling that makes sure the buyer receives accurate and essential product details.
+          </div>
+          <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+            These rules are mandatory for:
+          </div>
+          <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+            <li>Manufacturers</li>
+            <li>Packers</li>
+            <li>Importers</li>
+            <li>E-commerce sellers</li>
+          </ul>
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px]">
+          <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+            Applicability
+          </h3>
+          <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+            The LMPC Rules apply to any commodity that is:
+          </div>
+          <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+            <li>Pre-packed in a sealed container</li>
+            <li>Intended for retail sale</li>
+            <li>Labeled for direct consumer purchase</li>
+          </ul>
+          <div className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+            This includes a wide range of products:
+          </div>
+          <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+            <li>Food and beverages</li>
+            <li>Pharmaceuticals</li>
+            <li>Cosmetics</li>
+            <li>Consumer electronics</li>
+            <li>Household goods</li>
+          </ul>
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px]">
+          <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+            Key Labeling Requirements
+          </h3>
+          <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+            Each package must clearly bear the following:
+          </div>
+          <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+            <li>Name and address of the manufacturer/packer/importer</li>
+            <li>Net quantity expressed in standard units (kg, g, L, mL, etc.)</li>
+            <li>Retail Sale Price (MRP) including all taxes</li>
+            <li>Date of manufacture/import/packing</li>
+            <li>Customer care contact</li>
+            <li>Country of origin (mandatory for imported goods)</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* LMPC Process Section */}
+      <section
+        id="lmpc-process"
+        className="flex flex-col scroll-mt-20"
+        aria-labelledby="lmpc-process-title"
+      >
+        <h2
+          id="lmpc-process-title"
+          className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+        >
+          LMPC Process: Step-by-Step Detailed Application Guide
+        </h2>
+
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          The LMPC certification process involves a series of legal, documentation, and inspection procedures. It must be completed by every importer, manufacturer, or packer of pre-packaged commodities before their goods can be sold in the Indian retail market.
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px] space-y-6">
+          <div>
+            <h3 className="font-semibold font-geist text-[16px] md:text-[18px] text-[#131316] mb-2">
+              Step 1: Identify Applicability
+            </h3>
+            <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+              Before beginning the process, determine whether your product falls under the Legal Metrology (Packaged Commodities) Rules. If your product is packaged and meant for retail sale, LMPC applies.
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold font-geist text-[16px] md:text-[18px] text-[#131316] mb-2">
+              Step 2: Gather LMPC Documents
+            </h3>
+            <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+              Prepare the following documents:
+            </div>
+            <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+              <li>Copy of IEC code (for importers)</li>
+              <li>GST registration certificate</li>
+              <li>PAN card of business entity</li>
+              <li>Address proof of premises</li>
+              <li>Sample label or packaging</li>
+              <li>Product list with net quantities</li>
+              <li>Declaration letter</li>
+              <li>Authorization letter (if applying via consultant)</li>
+            </ul>
+            <div className="mt-4 bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+              <div className="font-geist text-sm md:text-base text-blue-800">
+                📂 <strong>TIP:</strong> Keep both hard copies and soft copies scanned in advance to save time.
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold font-geist text-[16px] md:text-[18px] text-[#131316] mb-2">
+              Step 3: Choose Registration Type
+            </h3>
+            <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+              Depending on your business scope:
+            </div>
+            <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+              <li>Apply for Central Registration with the Director of Legal Metrology (for inter-state trade)</li>
+              <li>Apply for State Registration with the Controller of Legal Metrology (for intra-state only)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold font-geist text-[16px] md:text-[18px] text-[#131316] mb-2">
+              Step 4: Fill the Application Form
+            </h3>
+            <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+              Obtain and fill the LMPC application form:
+            </div>
+            <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+              <li>Include accurate product names</li>
+              <li>State correct pack sizes and weights</li>
+              <li>Mention trade name/brand clearly</li>
+              <li>Sign and stamp with official seal</li>
+            </ul>
+            <div className="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+              <div className="font-geist text-sm md:text-base text-yellow-800">
+                💡 Ensure there are no spelling errors, mismatched details, or inconsistent units.
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold font-geist text-[16px] md:text-[18px] text-[#131316] mb-2">
+              Step 5: Submit the Application
+            </h3>
+            <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+              Submit the application along with the required fee:
+            </div>
+            <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+              <li>Via post to the respective department</li>
+              <li>In-person at the Legal Metrology Office</li>
+              <li>Online (where available)</li>
+            </ul>
+            <div className="mt-4 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+              Make sure to obtain an acknowledgment receipt or reference number.
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold font-geist text-[16px] md:text-[18px] text-[#131316] mb-2">
+              Step 6: Department Review & Inspection
+            </h3>
+            <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+              The Legal Metrology Department will:
+            </div>
+            <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+              <li>Scrutinize your application</li>
+              <li>Inspect packaging samples</li>
+              <li>Conduct a physical visit (if required)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold font-geist text-[16px] md:text-[18px] text-[#131316] mb-2">
+              Step 7: Certificate Issuance
+            </h3>
+            <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+              If all criteria are met:
+            </div>
+            <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+              <li>LMPC certificate is granted</li>
+              <li>You will receive it via post or email (depending on the portal)</li>
+              <li>It includes validity period, pack sizes, and authority seal</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 };
 
 const ConsultingSection = () => {
   return (
-    <section
-      id="consultancy"
-      className="flex flex-col scroll-mt-20"
-      aria-labelledby="consultancy-title"
-    >
-      {/* Consultancy */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          Consultancy
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h2
-        id="consultancy-title"
-        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+    <div className="space-y-8">
+      {/* LMPC Certificate Documents Section */}
+      <section
+        id="lmpc-documents"
+        className="flex flex-col scroll-mt-20"
+        aria-labelledby="lmpc-documents-title"
       >
-        Sun certifications: Plastic Waste License Experts
-      </h2>
+        <h2
+          id="lmpc-documents-title"
+          className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+        >
+          LMPC Certificate Documents
+        </h2>
 
-      {/* Description */}
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        We make Plastic Waste Management registration easy and compliant.
-      </p>
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          To ensure a smooth application process, here is a consolidated LMPC document checklist:
+        </div>
 
-      <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        As Plastic Waste Management registration certifications, our job is to
-        ensure that the tiring procedures that we have listed above become a
-        cake-walk for you. Right from the beginning, i.e. from the stage of
-        collection of documents from the foreign manufacturers or preparation of
-        documents for the Indian manufacturer and following up with the
-        department for grant of license is under our scope. Additionally, we
-        provide expert guidance throughout the process, ensuring compliance with
-        all regulations, addressing any concerns, and facilitating smooth
-        communication with the concerned authorities.
-      </div>
-    </section>
+        <div className="mt-[16px] md:mt-[24px]">
+          <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+            Mandatory Documents:
+          </h3>
+          <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+            <li>Business incorporation certificate (Company/LLP/Partnership)</li>
+            <li>Import Export Code (for importers)</li>
+            <li>PAN card (Entity)</li>
+            <li>GST certificate</li>
+            <li>Rent agreement or property ownership proof</li>
+            <li>Packaging label (actual or draft)</li>
+            <li>Board resolution/Authorization letter (if applicable)</li>
+            <li>Demand Draft or fee payment receipt</li>
+          </ul>
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px]">
+          <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+            Optional But Recommended:
+          </h3>
+          <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+            <li>Product catalog with specifications</li>
+            <li>Client invoices (if available)</li>
+            <li>ISO certificates (if applicable)</li>
+          </ul>
+          <div className="mt-4 bg-green-50 border-l-4 border-green-400 p-4 rounded">
+            <div className="font-geist text-sm md:text-base text-green-800">
+              📋 <strong>Pro Tip:</strong> Arrange documents in the order specified by your state's Legal Metrology Office.
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px]">
+          <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+            Sample Label Format
+          </h3>
+          <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-4">
+            Every product label must include:
+          </div>
+          <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+            <li>Name & address of importer/packer</li>
+            <li>Net weight or volume</li>
+            <li>MRP (inclusive of all taxes)</li>
+            <li>Month & year of packing/import</li>
+            <li>Customer care contact</li>
+            <li>Country of origin (for imported goods)</li>
+          </ul>
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px]">
+          <h4 className="font-semibold font-geist text-[16px] md:text-[18px] text-[#131316] mb-4">
+            LMPC Certificate Cost: State-Wise Fee Structure Explained
+          </h4>
+          <div className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            The cost of obtaining an LMPC certificate can vary by state and type of application.
+          </div>
+        </div>
+      </section>
+
+      {/* Legal Metrology Office Section */}
+      <section
+        id="legal-metrology-office"
+        className="flex flex-col scroll-mt-20"
+        aria-labelledby="legal-metrology-office-title"
+      >
+        <h4
+          id="legal-metrology-office-title"
+          className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+        >
+          Role & Functions of the Legal Metrology Office
+        </h4>
+
+        <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+          The Legal Metrology Office plays a pivotal role in upholding consumer rights and fair trade practices through the implementation of standards related to weight and measurement. This office, operating under the Department of Consumer Affairs, ensures that the Legal Metrology Act and related rules are properly enforced.
+        </div>
+
+        <div className="mt-[16px] md:mt-[24px]">
+          <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316] mb-4">
+            Core Responsibilities
+          </h3>
+          <ul className="list-disc pl-6 font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose space-y-2">
+            <li><strong>Registration & Licensing:</strong> Issues licenses to manufacturers, dealers, and repairers of weights and measures.</li>
+            <li><strong>LMPC Certification:</strong> Processes applications and grants LMPC certificates to importers and packers.</li>
+            <li><strong>Verification & Stamping:</strong> Conducts inspection, verification, and stamping of measuring instruments.</li>
+            <li><strong>Surveillance & Enforcement:</strong> Carries out raids, inspections, and enforcement actions against non-compliance.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
   );
 };
 
