@@ -2,14 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 
-import PWMRimg from "../../assets/images/PWMRimg.png";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
@@ -257,16 +250,35 @@ const LMCIndex = () => {
 
   const SECTIONS = [
     "Overview",
-    "Eligibility",
-    "Compliance",
-    "Process",
+    "Importance",
+    "Trade Impact",
+    "Legal Act",
+    "LMPC Rules",
+    "LMPC Process",
     "Documents",
-    "consultancy",
+    "LM Office",
     "FAQs",
   ];
 
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase());
+    let targetId = item.toLowerCase();
+
+    // Map section names to their corresponding IDs
+    const sectionIdMap = {
+      "overview": "overview",
+      "importance": "eligibility", // Using existing eligibility id
+      "trade impact": "compliance", // Using existing compliance id
+      "legal act": "process", // Using existing process id
+      "lmpc rules": "lmpc-rules",
+      "lmpc process": "lmpc-process",
+      "documents": "lmpc-documents",
+      "lm office": "legal-metrology-office",
+      "faqs": "faqs"
+    };
+
+    targetId = sectionIdMap[targetId] || targetId;
+
+    const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -322,12 +334,21 @@ const LMCIndex = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            if (entry.target.id === "faqs") {
-              setActiveSection("FAQs");
-            } else {
-              const sectionName =
-                entry.target.id.charAt(0).toUpperCase() +
-                entry.target.id.slice(1);
+            // Map element IDs back to section names
+            const idToSectionMap = {
+              "overview": "Overview",
+              "eligibility": "Importance",
+              "compliance": "Trade Impact",
+              "process": "Legal Act",
+              "lmpc-rules": "LMPC Rules",
+              "lmpc-process": "LMPC Process",
+              "lmpc-documents": "Documents",
+              "legal-metrology-office": "LM Office",
+              "faqs": "FAQs"
+            };
+
+            const sectionName = idToSectionMap[entry.target.id];
+            if (sectionName) {
               setActiveSection(sectionName);
             }
           }
@@ -336,8 +357,11 @@ const LMCIndex = () => {
       { threshold: 0.5 }
     );
 
-    SECTIONS.forEach((section) => {
-      const element = document.getElementById(section.toLowerCase());
+    // Observe all the actual element IDs
+    const elementIds = ["overview", "eligibility", "compliance", "process", "lmpc-rules", "lmpc-process", "lmpc-documents", "legal-metrology-office", "faqs"];
+
+    elementIds.forEach((id) => {
+      const element = document.getElementById(id);
       if (element) {
         sectionObserver.observe(element);
       }
@@ -586,49 +610,7 @@ const ServiceFaq = () => {
   );
 };
 
-const PointsList = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col w-[441px]">
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[24px] gap-2 ">
-        {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2 ">
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p className=" font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-              {point}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
 
-const PointsListTwo = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col ">
-      <p className="font-semibold font-geist text-[20px]  text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[20px] gap-2 ">
-        {points.map((point, index) => (
-          <div key={index} className="flex items-center gap-2 ">
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p className=" font-geist text-sm sm:text-lg text-[#42434d] tracking-wide  text-left max-w-full  leading-loose">
-              {point}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 const LMCContentLeft = () => {
   return (
@@ -670,6 +652,14 @@ const OverviewSection = () => {
       className="flex flex-col scroll-mt-20"
       aria-labelledby="overview-title"
     >
+      {/* Overview */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Overview
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
       {/* Title */}
       <h1
         id="overview-title"
@@ -726,6 +716,14 @@ const EligibilitySection = () => {
       className="flex flex-col scroll-mt-20"
       aria-labelledby="eligibility-title"
     >
+      {/* Importance */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Importance
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
       {/* Title */}
       <h2
         id="eligibility-title"
@@ -785,6 +783,14 @@ const ComplianceSection = () => {
       className="flex flex-col scroll-mt-20"
       aria-labelledby="compliance-title"
     >
+      {/* Trade Impact */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Trade Impact
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
       {/* Title */}
       <h2
         id="compliance-title"
@@ -845,6 +851,14 @@ const ProcessSection = () => {
       className="flex flex-col scroll-mt-20"
       aria-labelledby="process-title"
     >
+      {/* Legal Act */}
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+          Legal Act
+        </span>
+        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+      </div>
+
       {/* Title */}
       <h2
         id="process-title"
@@ -968,6 +982,14 @@ const DocumentsSection = () => {
         className="flex flex-col scroll-mt-20"
         aria-labelledby="lmpc-rules-title"
       >
+        {/* LMPC Rules */}
+        <div className="flex w-full items-center gap-3">
+          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+            LMPC Rules
+          </span>
+          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        </div>
+
         <h2
           id="lmpc-rules-title"
           className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
@@ -1045,6 +1067,14 @@ const DocumentsSection = () => {
         className="flex flex-col scroll-mt-20"
         aria-labelledby="lmpc-process-title"
       >
+        {/* LMPC Process */}
+        <div className="flex w-full items-center gap-3">
+          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+            LMPC Process
+          </span>
+          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        </div>
+
         <h2
           id="lmpc-process-title"
           className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
@@ -1182,6 +1212,14 @@ const ConsultingSection = () => {
         className="flex flex-col scroll-mt-20"
         aria-labelledby="lmpc-documents-title"
       >
+        {/* Documents */}
+        <div className="flex w-full items-center gap-3">
+          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+            Documents
+          </span>
+          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        </div>
+
         <h2
           id="lmpc-documents-title"
           className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
@@ -1258,9 +1296,17 @@ const ConsultingSection = () => {
         className="flex flex-col scroll-mt-20"
         aria-labelledby="legal-metrology-office-title"
       >
+        {/* LM Office */}
+        <div className="flex w-full items-center gap-3">
+          <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
+            LM Office
+          </span>
+          <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        </div>
+
         <h4
           id="legal-metrology-office-title"
-          className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+          className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
         >
           Role & Functions of the Legal Metrology Office
         </h4>
