@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 
 import PWMRimg from "../../assets/images/PWMRimg.png";
@@ -349,9 +349,8 @@ const LMCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
-        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-      }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+        }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -401,11 +400,10 @@ const LMCIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection
+                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
-                }`}
+                  }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -425,20 +423,18 @@ const LMCIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
-              }`}
+                }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
-              }`}
+                }`}
             />
           </div>
         ))}
@@ -486,141 +482,181 @@ const ServiceFaq = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What services do you offer for CDSCO compliance?
+                What is Legal Metrology?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                We offer comprehensive CDSCO regulatory compliance services
-                including product registration, license applications, regulatory
-                strategy, documentation preparation, and post-approval
-                compliance monitoring for pharmaceuticals, medical devices, and
-                cosmetics in India.
+                Legal Metrology is the field of law that deals with units of measurement, weighing and measuring instruments, and their verification to ensure fairness in trade and consumer protection.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How long does the CDSCO approval process typically take?
+                What does an LMPC certificate mean?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO approval timelines vary based on product category and
-                application type. Typically, drug approvals take 6-12 months,
-                medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our certifications work to expedite
-                these timelines through proper documentation and regulatory
-                strategy.
+                An LMPC (Legal Metrology Packaged Commodities) certificate is a mandatory document for importers and packers of pre-packaged goods in India. It certifies compliance with labeling and packaging rules under the Legal Metrology Act.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What documents are required for CDSCO registration?
+                Who needs LMPC registration?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Required documents include product dossiers, manufacturing
-                information, stability data, clinical trial results (if
-                applicable), Good Manufacturing Practice (GMP) certificates,
-                Certificate of Pharmaceutical Product (CoPP), and various
-                application forms specific to your product category. Our team
-                assists in preparing all necessary documentation.
+                Anyone who imports, manufactures, or packages pre-packed commodities for sale in India must obtain LMPC registration, including private label owners and e-commerce brands.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you assist with clinical trial approvals in India?
+                What is the LMPC registration process?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide end-to-end support for clinical trial
-                applications in India, including protocol development, ethics
-                committee submissions, CDSCO applications, site selection
-                assistance, and regulatory compliance throughout the trial
-                process. We also help navigate the New Drugs and Clinical Trials
-                Rules, 2019.
+                The process includes document preparation, submission of an application form, inspection by Legal Metrology Officers, and issuance of the certificate upon approval.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What are the costs associated with CDSCO registrations?
+                What are the penalties for non-compliance with Legal Metrology rules?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                CDSCO registration costs include official government fees (which
-                vary by product type), testing fees, consultant fees, and
-                potential inspection costs. We provide transparent quotations
-                based on your specific product and requirements, with options
-                for different service levels to fit various budgets.
+                Penalties range from ₹2,000 to over ₹50,000 and may include seizure of goods, cancellation of licenses, or prosecution.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do you handle post-approval regulatory requirements?
+                How long does an LMPC certificate remain valid?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Our post-approval services include pharmacovigilance support,
-                periodic safety update reports, variation applications, renewal
-                submissions, compliance with labeling requirements, adverse
-                event reporting, and ongoing regulatory intelligence to keep you
-                informed of regulatory changes affecting your products.
+                It is valid for a period of 1 to 5 years, depending on state policies. Timely renewal is essential to maintain compliance.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Can you help with import licenses for pharmaceuticals and
-                medical devices?
+                Can I apply for LMPC registration online?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we specialize in obtaining Import Licenses (Form 10) for
-                drugs and Registration Certificates for medical devices. Our
-                services include preparing all necessary documentation,
-                coordinating with Indian authorized agents, liaising with CDSCO,
-                and handling post-approval compliance requirements for imported
-                products.
+                Some states offer online portals for LMPC registration. However, many still require physical submission and verification.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-8">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                What experience does your consulting team have with CDSCO
-                regulations?
+                What is the role of the Legal Metrology Office?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Our consulting team consists of regulatory experts with 10+
-                years of experience in Indian pharmaceutical regulations. Team
-                members include former regulatory professionals, pharmacists,
-                and industry specialists who maintain close relationships with
-                regulatory authorities and stay updated on the latest regulatory
-                developments.
+                It registers manufacturers, dealers, and repairers of weighing/measuring devices, verifies instruments, processes LMPC applications, and enforces compliance through inspections.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-9">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                How do recent regulatory changes affect pharmaceutical
-                registrations in India?
+                Do I need separate LMPC registration for each product?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Recent regulatory changes include the New Drugs and Clinical
-                Trials Rules (2019), Medical Device Rules (2017), and ongoing
-                updates to the Drugs and Cosmetics Act. These changes have
-                streamlined some processes while adding new requirements for
-                safety monitoring and quality control. Our certifications keep
-                abreast of all changes and adjust strategies accordingly.
+                No, a single registration can cover multiple products, but all must be declared in the application.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-10">
               <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                Do you offer support for manufacturing facility inspections?
+                What are the waste management laws that apply to my business?
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
-                Yes, we provide comprehensive support for CDSCO manufacturing
-                facility inspections, including pre-inspection readiness
-                assessments, gap analysis, preparation of required
-                documentation, mock inspections, training of personnel, and
-                assistance during actual inspections to ensure a successful
-                outcome.
+                Depending on your operations, you may need to comply with the Environment Protection Act, E-Waste Rules, Plastic Waste Rules, and Battery Waste Management Rules, among others.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-11">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                Is waste management legally mandatory for all companies?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                Yes, especially for manufacturing units, importers, and entities that generate electronic, plastic, or hazardous waste.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-12">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                What happens if I fail to manage waste properly?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                Consequences include fines, suspension of business operations, and in severe cases, criminal prosecution.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-13">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                Can consultants help with LMPC and waste compliance?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                Absolutely. Experts like SUN CONSULTANTS & ENGINEERS provide comprehensive services for LMPC registration, documentation, packaging audits, and waste management compliance.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-14">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                Do I need to display my LMPC certificate?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                Yes. It must be prominently displayed at your place of business and presented during inspections or customs clearance.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-15">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                How can I get started with legal metrology or waste management compliance?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                Start by evaluating your product and waste types, gathering necessary documents, and consulting with professionals to guide you through registration and ongoing obligations.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-16">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                What is the difference between LMPC certificate and Legal Metrology registration?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                The LMPC certificate is for packaged commodities, especially importers and packers, while Legal Metrology registration is required by manufacturers, dealers, or repairers of weighing and measuring devices.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-17">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                How often should weighing instruments be verified?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                Most commercial instruments must be verified annually. Some specialized equipment may require more frequent verification depending on usage and state-specific guidelines.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-18">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                Can I sell a product online without LMPC compliance?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                No. All e-commerce platforms operating in India require sellers to comply with LMPC regulations. Non-compliance can result in delisting or legal notices.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-19">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                What is Battery Waste Management compliance?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                Battery waste management includes proper disposal, recycling, and documentation of used batteries. Businesses handling batteries must comply with the Battery Waste Management Rules, 2022.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-20">
+              <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                Is electronic waste management mandatory for IT companies?
+              </AccordionTrigger>
+              <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                Yes. Any organization generating e-waste, including IT firms, must comply with the E-Waste Management Rules, ensure safe disposal, and maintain disposal records.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
