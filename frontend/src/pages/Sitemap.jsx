@@ -106,8 +106,12 @@ const sitemapSections = [
   {
     title: "SchemeX Products",
     pages: [
-      { name: "All SchemeX Products", path: "/SchemeX-Products" },
+      { name: "All SchemeX Products", path: "/SchemeX-products" },
       { name: "BIS Scheme X Certification for Pumps and Liquid Elevators", path: "/bis-scheme-x-certification-for-pumps-and-liquid-elevators" },
+      { name: "BIS Scheme X Certification for Packing Machinery", path: "/bis-scheme-x-certification-for-packing-machinery" },
+      { name: "BIS Certification for Centrifuges and Filtering or Purifying Machinery", path: "/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery" },
+      { name: "BIS Scheme X for Compressors", path: "/bis-scheme-x-certification-for-compressors" },
+      { name: "BIS Scheme X Certification for Heat Treatment Equipment", path: "/bis-scheme-x-certification-for-heat-treatment-equipment" },
     ],
   },
 

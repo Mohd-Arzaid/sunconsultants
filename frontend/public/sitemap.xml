@@ -1186,13 +1186,37 @@
 
   <!-- SchemeX Products Pages -->
   <url>
-    <loc>https://bis-certifications.com/SchemeX-Products</loc>
+    <loc>https://bis-certifications.com/SchemeX-products</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-packing-machinery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-compressors</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-heat-treatment-equipment</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

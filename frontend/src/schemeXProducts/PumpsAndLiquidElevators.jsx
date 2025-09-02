@@ -9,7 +9,7 @@ import Footer from "@/common/Footer"
 import AboutAuthor from "@/components/common/AboutAuthor"
 import { Helmet } from "react-helmet-async"
 
-const FirstSchemeXProductPage = () => {
+const PumpsAndLiquidElevators = () => {
     return (
         <div className="relative w-full">
             <Helmet>
@@ -39,8 +39,8 @@ const FirstSchemeXProductPage = () => {
                 <link rel="canonical" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
             </Helmet>
 
-            <FirstSchemeXProductPageBreadcrumb />
-            <FirstSchemeXProductPageMainContent />
+            <PumpsAndLiquidElevatorsPageBreadcrumb />
+            <PumpsAndLiquidElevatorsPageMainContent />
             <Services />
             <VideoSection />
             <Footer />
@@ -48,69 +48,67 @@ const FirstSchemeXProductPage = () => {
     )
 }
 
-export default FirstSchemeXProductPage
+export default PumpsAndLiquidElevators
 
 
-const FirstSchemeXProductPageBreadcrumb = () => {
+const PumpsAndLiquidElevatorsPageBreadcrumb = () => {
     return (
         <div className="absolute md:top-5 top-3 left-0 w-full z-30">
             <div className="max-w-[80rem] mx-auto px-4">
-                <div className="w-full overflow-x-auto scrollbar-hide font-inter">
-                    <div className="w-fit min-w-full">
-                        <Breadcrumb>
-                            <BreadcrumbList className="flex-nowrap">
-                                <BreadcrumbItem className="flex-shrink-0">
-                                    <BreadcrumbLink asChild>
-                                        <Link to="/">
-                                            Home
-                                        </Link>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator className="flex-shrink-0">
-                                    <SlashIcon />
-                                </BreadcrumbSeparator>
+                <div className="w-fit font-inter">
+                    <Breadcrumb>
+                        <BreadcrumbList>
+                            <BreadcrumbItem>
+                                <BreadcrumbLink asChild>
+                                    <Link to="/">
+                                        Home
+                                    </Link>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbSeparator>
+                                <SlashIcon />
+                            </BreadcrumbSeparator>
 
-                                <BreadcrumbItem className="flex-shrink-0">
-                                    <BreadcrumbLink asChild>
-                                        <Link to="/SchemeX-Products">
-                                            SchemeX Products
-                                        </Link>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator className="flex-shrink-0">
-                                    <SlashIcon />
-                                </BreadcrumbSeparator>
+                            <BreadcrumbItem>
+                                <BreadcrumbLink asChild>
+                                    <Link to="/SchemeX-Products">
+                                        SchemeX Products
+                                    </Link>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbSeparator>
+                                <SlashIcon />
+                            </BreadcrumbSeparator>
 
-                                <BreadcrumbItem className="flex-shrink-0">
-                                    <BreadcrumbPage className="whitespace-nowrap">
-                                        BIS Scheme X Certification for Pumps and Liquid Elevators
-                                    </BreadcrumbPage>
-                                </BreadcrumbItem>
-                            </BreadcrumbList>
-                        </Breadcrumb>
-                    </div>
+                            <BreadcrumbItem>
+                                <BreadcrumbPage>
+                                    BIS Scheme X Certification for Pumps and Liquid Elevators
+                                </BreadcrumbPage>
+                            </BreadcrumbItem>
+                        </BreadcrumbList>
+                    </Breadcrumb>
                 </div>
             </div>
         </div>
     )
 }
 
-const FirstSchemeXProductPageMainContent = () => {
+const PumpsAndLiquidElevatorsPageMainContent = () => {
     return (
         <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
             <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
 
                 {/* Left Side Content */}
-                <FirstSchemeXProductPageMainContentLeft />
+                <PumpsAndLiquidElevatorsPageMainContentLeft />
 
                 {/* Right Side Content */}
-                <FirstSchemeXProductPageMainContentRight />
+                <PumpsAndLiquidElevatorsPageMainContentRight />
             </div>
         </div>
     )
 }
 
-const FirstSchemeXProductPageMainContentLeft = () => {
+const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
     return (
         <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
 
@@ -296,7 +294,7 @@ const FirstSchemeXProductPageMainContentLeft = () => {
                 </ul>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                Each type must comply with relevant Indian Standards (IS codes) such as IS 16819:2018/ISO 12100:2010 (Safety of Machinery General Principles for Design- Risk Assessment and Risk Reduction).
+                    Each type must comply with relevant Indian Standards (IS codes) such as IS 16819:2018/ISO 12100:2010 (Safety of Machinery General Principles for Design- Risk Assessment and Risk Reduction).
                 </p>
 
                 <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -385,7 +383,7 @@ const FirstSchemeXProductPageMainContentLeft = () => {
 }
 
 
-const FirstSchemeXProductPageMainContentRight = () => {
+const PumpsAndLiquidElevatorsPageMainContentRight = () => {
     const [formData, setFormData] = useState({
         fullName: "",
         phoneNumber: "",

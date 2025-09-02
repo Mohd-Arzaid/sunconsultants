@@ -64,7 +64,11 @@ import RefinedZincBlog from "./blogs/RefinedZincBlog";
 import BunkBedsBlog from "./blogs/BunkBedsBlog";
 import StorageUnitsBlog from "./blogs/StorageUnitsBlog";
 import SchemeXProducts from "./schemeXProducts/SchemeXProducts";
-import FirstSchemeXProductPage from "./schemeXProducts/FirstSchemeXProductPage";
+import PumpsAndLiquidElevators from "./schemeXProducts/PumpsAndLiquidElevators";
+import PackingMachinery from "./schemeXProducts/PackingMachinery";
+import Centrifuges from "./schemeXProducts/Centrifuges";
+import Compressors from "./schemeXProducts/Compressors";
+import HeatTreatmentEquipment from "./schemeXProducts/HeatTreatmentEquipment";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -174,6 +178,22 @@ function App() {
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="404" element={<Error404 />} />
+
+          {/* Blog Routes */}
+          <Route path="Blogs" element={<LatestBlogs />} />
+          <Route path="bis-certificate-for-tin-ingots" element={<TinIngotBlog />} />
+          <Route path="bis-certificate-for-refined-zinc" element={<RefinedZincBlog />} />
+          <Route path="bis-license-for-bunk-beds-Indian-bis" element={<BunkBedsBlog />} />
+          <Route path="bis-license-for-storage-units-Indian-bis" element={<StorageUnitsBlog />} />
+
+          {/* SchemeX Products */}
+          <Route path="SchemeX-products" element={<SchemeXProducts />} />
+          <Route path="bis-scheme-x-certification-for-pumps-and-liquid-elevators" element={<PumpsAndLiquidElevators />} />
+          <Route path="bis-scheme-x-certification-for-packing-machinery" element={<PackingMachinery />} />
+          <Route path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery" element={<Centrifuges />} />
+          <Route path="bis-scheme-x-certification-for-compressors" element={<Compressors />} />
+          <Route path="bis-scheme-x-certification-for-heat-treatment-equipment" element={<HeatTreatmentEquipment />} />
+
         </Route>
 
         <Route
@@ -206,18 +226,6 @@ function App() {
           path="/admin"
           element={<AdminLoginPage />}
         />
-
-        <Route path="Blogs" element={<LatestBlogs />} />
-        <Route path="/bis-certificate-for-tin-ingots" element={<TinIngotBlog />} />
-        <Route path="/bis-certificate-for-refined-zinc" element={<RefinedZincBlog />} />
-        <Route path="/bis-license-for-bunk-beds-Indian-bis" element={<BunkBedsBlog />} />
-        <Route path="/bis-license-for-storage-units-Indian-bis" element={<StorageUnitsBlog />} />
-
-
-
-        {/* SchemeX Products */}
-        <Route path="/SchemeX-products" element={<SchemeXProducts />} />
-        <Route path="/bis-scheme-x-certification-for-pumps-and-liquid-elevators" element={<FirstSchemeXProductPage />} />
 
         {/* Localized routes for other languages */}
         <Route path="/:lang/*" element={<LocalizedRoute />}>
