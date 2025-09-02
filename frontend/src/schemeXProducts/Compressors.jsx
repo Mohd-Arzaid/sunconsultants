@@ -315,9 +315,17 @@ const CompressorsMainContentLeft = () => {
                     <li>Ongoing Compliance: Regular surveillance audit & product testing is carried out by BIS for continued compliance.</li>
                 </ul>
 
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                 <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          Penalties for Non-Compliance
+        </div>
+
+
+                <p className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
                     Manufacturers not getting a BIS Certification for Compressors by till 1st September 2026 under the OTR for Compressors will be subject to:
-                </h3>
+                </p>
 
                 <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
                     <li>Sales/Import of non-type tested compressors not to be allowed</li>
@@ -330,9 +338,9 @@ const CompressorsMainContentLeft = () => {
                 <div className="h-px w-full bg-gray-300 my-6"></div>
 
                 {/* Conclusion Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Conclusion
-                </h2>
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
+                </p>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
                     Implementation of BIS Scheme X Certification for Compressors by OBR for Compressors (2024) is a significant step forward for industrial safety, energy efficiency, and quality assurance in India.

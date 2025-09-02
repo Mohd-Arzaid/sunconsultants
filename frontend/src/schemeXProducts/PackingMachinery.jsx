@@ -374,9 +374,9 @@ const PackingMachineryMainContentLeft = () => {
           </li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
           Penalties for Non-Compliance
-        </h3>
+        </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           If you do not meet the OTR for Packing Machinery and are not certified
@@ -393,10 +393,10 @@ const PackingMachineryMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Conclusion Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Conclusion
-        </h2>
+         {/* Conclusion Section */}
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
+                </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           The BIS Scheme X Certification of Packing Machinery under OTR for

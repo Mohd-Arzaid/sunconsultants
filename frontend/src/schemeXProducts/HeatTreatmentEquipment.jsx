@@ -373,9 +373,9 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
           </li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
           Penalties for Non-Compliance
-        </h3>
+        </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           If the OTR of Heat Treatment Equipment is not met by 01 Sep 2026:
@@ -391,10 +391,10 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Conclusion Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Conclusion
-        </h2>
+       {/* Conclusion Section */}
+       <p className="text-gray-600 text-base font-geist mb-4">
+                    <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
+                </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Mandatory enforcement of Scheme X Certification for Heat Treatment
