@@ -69,6 +69,7 @@ import PackingMachinery from "./schemeXProducts/PackingMachinery";
 import Centrifuges from "./schemeXProducts/Centrifuges";
 import Compressors from "./schemeXProducts/Compressors";
 import HeatTreatmentEquipment from "./schemeXProducts/HeatTreatmentEquipment";
+import PumpsAndLiquidElevatorsGerman from "./schemeXProducts/PumpsAndLiquidElevatorsGerman";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -188,7 +189,12 @@ function App() {
 
           {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />
+          {/* english */}
           <Route path="bis-scheme-x-certification-for-pumps-and-liquid-elevators" element={<PumpsAndLiquidElevators />} />
+          {/* german */}
+          <Route path="bis-scheme-x-certification-for-pumps-and-liquid-elevators-german" element={<PumpsAndLiquidElevatorsGerman />} />
+          
+
           <Route path="bis-scheme-x-certification-for-packing-machinery" element={<PackingMachinery />} />
           <Route path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery" element={<Centrifuges />} />
           <Route path="bis-scheme-x-certification-for-compressors" element={<Compressors />} />

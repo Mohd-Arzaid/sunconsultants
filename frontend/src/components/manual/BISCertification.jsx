@@ -89,6 +89,11 @@ export const BISCertification = () => {
         />
         <link
           rel="alternate"
+          href="https://bis-certifications.com/ar/ma-huwa-shahadat-bis-bis-alhind"
+          hrefLang="ar"
+        />
+        <link
+          rel="alternate"
           href="https://bis-certifications.com/it/cose-il-certificato-bis-indiano"
           hrefLang="it"
         />
