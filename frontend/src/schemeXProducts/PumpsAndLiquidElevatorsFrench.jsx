@@ -21,34 +21,34 @@ import {
 import VideoSection from "@/components/manual/home-page-sections/VideoSection"
 
 
-const PumpsAndLiquidElevatorsGerman = () => {
+const PumpsAndLiquidElevatorsFrench = () => {
     return (
         <div className="relative w-full">
             <Helmet>
-                <title>BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge</title>
+                <title>Certification BIS Schéma X pour Pompes et Élévateurs de Liquides</title>
 
                 {/* Meta Description */}
-                <meta name="description" content="BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge unter der Omnibus Technical Regulation Order 2024 schreibt vor, dass alle Arten von Pumpen und Flüssigkeitsaufzügen bis September 2026 der Scheme X Zertifizierung entsprechen müssen" />
+                <meta name="description" content="La certification BIS Schéma X pour pompes et élévateurs de liquides sous l&apos;Ordre de Réglementation Technique Omnibus 2024 exige que tous les types de pompes et élévateurs de liquides se conforment à la Certification Schéma X d&apos;ici septembre 2026" />
 
                 {/* Meta Keywords */}
-                <meta name="keywords" content="BIS Zertifizierung für Pumpen, BIS Scheme X Zertifizierung für Pumpen, Scheme X Zertifizierung für Pumpen, BIS für Pumpen, BIS Zertifizierung für Pumpen und Flüssigkeitsaufzüge, OTR für Pumpen" />
+                <meta name="keywords" content="Certification BIS pour Pompes, Certification BIS Schéma X pour Pompes, Certification Schéma X pour Pompes, BIS pour Pompes, Certification BIS pour Pompes et Élévateurs de Liquides, OTR pour Pompes" />
                 <meta name="author" content="Sun Certifications India" />
-                <meta name="publisher" content="Dhruv Aggarwal, Leiter der Operationen bei Sun Certification India" />
+                <meta name="publisher" content="Dhruv Aggarwal, Chef des Opérations chez Sun Certification India" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
                 {/* Open Graph Tags */}
-                <meta property="og:title" content="BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge in Indien | Vollständiger Leitfaden" />
-                <meta property="og:description" content="Erfahren Sie alles über BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge in Indien. Verstehen Sie OTR 2024 Compliance, BIS Lizenzverfahren, ISI-Kennzeichnungsanforderungen und wie Sie vor der September 2026 Frist zertifiziert werden" />
-                <meta property="og:url" content="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege" />
+                <meta property="og:title" content="Certification BIS Schéma X pour Pompes et Élévateurs de Liquides en Inde | Guide Complet" />
+                <meta property="og:description" content="Apprenez tout sur la Certification BIS Schéma X pour Pompes et Élévateurs de Liquides en Inde. Comprenez la conformité OTR 2024, le processus de Licence BIS, les exigences de marque ISI et comment obtenir la certification avant l&apos;échéance de septembre 2026" />
+                <meta property="og:url" content="https://bis-certifications.com/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides" />
                 <meta property="og:site_name" content="Sun Certifications India" />
                 <meta property="og:type" content="article" />
 
                 {/* Twitter Tags */}
-                <meta name="twitter:title" content="BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge in Indien | Vollständiger Leitfaden" />
-                <meta name="twitter:description" content="Erfahren Sie alles über BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge in Indien. Verstehen Sie OTR 2024 Compliance, BIS Lizenzverfahren, ISI-Kennzeichnungsanforderungen und wie Sie vor der September 2026 Frist zertifiziert werden" />
+                <meta name="twitter:title" content="Certification BIS Schéma X pour Pompes et Élévateurs de Liquides en Inde | Guide Complet" />
+                <meta name="twitter:description" content="Apprenez tout sur la Certification BIS Schéma X pour Pompes et Élévateurs de Liquides en Inde. Comprenez la conformité OTR 2024, le processus de Licence BIS, les exigences de marque ISI et comment obtenir la certification avant l&apos;échéance de septembre 2026" />
 
                 {/* Canonical URL */}
-                <link rel="canonical" href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege" />
+                <link rel="canonical" href="https://bis-certifications.com/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides" />
 
                 {/* HrefLang Tags */}
                 <link rel="alternate" hrefLang="en" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
@@ -66,42 +66,42 @@ const PumpsAndLiquidElevatorsGerman = () => {
                 <link rel="alternate" hrefLang="x-default" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
             </Helmet>
 
-            <PumpsAndLiquidElevatorsGermanPageBreadcrumb />
-            <PumpsAndLiquidElevatorsGermanPageMainContent />
-            <ServicesGerman />
+            <PumpsAndLiquidElevatorsFrenchPageBreadcrumb />
+            <PumpsAndLiquidElevatorsFrenchPageMainContent />
+            <ServicesFrench />
             <VideoSection />
-            <FooterGerman />
+            <FooterFrench />
         </div>
     )
 }
 
-export default PumpsAndLiquidElevatorsGerman
+export default PumpsAndLiquidElevatorsFrench
 
 
-export const FooterGerman = () => {
+export const FooterFrench = () => {
     return (
         <footer>
             <div className="relative ">
                 <div className="w-full max-w-[768px] px-4 pb-12  pt-8 md:pt-16 md:pb-16 mx-auto">
                     <h3 className="text-center font-geist text-3xl md:text-[48px] text-[#181818] leading-tight md:leading-[48px] font-semibold">
-                        Möchten Sie mehr erfahren?
+                        Vous voulez en savoir plus ?
                     </h3>
 
                     <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
-                        Senden Sie uns eine E-Mail an{" "}
+                        Envoyez-nous un e-mail à{" "}
                         <a
                             href="mailto:admin@bis-certifications.com"
                             className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
                         >
                             admin@bis-certifications.com
                         </a>{" "}
-                        oder nutzen Sie eine der unten stehenden Optionen. Wir melden uns normalerweise innerhalb von 24 Stunden zurück.
+                        ou utilisez une des options ci-dessous. Nous répondons généralement dans les 24 heures.
                     </div>
 
                     <div className="flex items-center my-6 md:my-[30px]">
                         <div className="h-px w-full bg-neutral-300  grow"></div>
                         <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
-                            oder
+                            ou
                         </span>
                         <div className="h-px w-full bg-neutral-300 grow"></div>
                     </div>
@@ -201,7 +201,7 @@ export const FooterGerman = () => {
 
                             <div className="flex flex-col gap-[15px]">
                                 <div className="text-neutral-900 text-base md:text-lg  font-geist font-medium">
-                                    Abonnieren Sie unseren Newsletter
+                                    Abonnez-vous à notre newsletter
                                 </div>
 
                                 <div className="relative">
@@ -214,11 +214,11 @@ export const FooterGerman = () => {
                           pr-24 
                           border border-[#7eafd9]
                           "
-                                        placeholder="Geben Sie Ihre E-Mail ein"
+                                        placeholder="Entrez votre e-mail"
                                     />
                                     <button className="flex items-center justify-center h-7 px-2 py-1.5 gap-x-1 text-[13px] md:text-[15px] whitespace-nowrap font-medium font-geist border rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 absolute right-1 top-1 border-none bg-white">
                                         <div className="text-[#2a5075]">
-                                            Benachrichtigen
+                                            Notifier
                                         </div>
                                     </button>
                                 </div>
@@ -240,7 +240,7 @@ export const FooterGerman = () => {
 
                             <div className="flex flex-col gap-[15px]">
                                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                                    Unsere Dienstleistungen
+                                    Nos Services
                                 </span>
 
                                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -286,24 +286,24 @@ export const FooterGerman = () => {
 
                             <div className="flex flex-col gap-[15px]">
                                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                                    Unternehmen
+                                    Entreprise
                                 </span>
                                 <div className="flex flex-col transition-colors gap-[10px]">
                                     <Link
                                         to="/about"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Über uns
+                                        À propos
                                     </Link>
                                     <Link
                                         to="/contact"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Kontaktieren Sie uns
+                                        Contactez-nous
                                     </Link>
 
                                     <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                                        Häufige Fragen
+                                        Questions Fréquentes
                                     </span>
                                     <Link
                                         to="/sitemap"
@@ -321,7 +321,7 @@ export const FooterGerman = () => {
 
                             <div className="flex flex-col gap-[15px]">
                                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                                    Nachrichten & Benachrichtigungen
+                                    Actualités et Notifications
                                 </span>
 
                                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -335,19 +335,19 @@ export const FooterGerman = () => {
                                         to="/bis-qco-updates"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Neueste Updates
+                                        Dernières Mises à Jour
                                     </Link>
                                     <Link
                                         to="/ministry-updates"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Ministeriums-Updates
+                                        Mises à Jour du Ministère
                                     </Link>
                                     <Link
                                         to="/webinar"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Webinar-Updates
+                                        Mises à Jour Webinaire
                                     </Link>
                                     <Link
                                         to="/international-audits"
@@ -397,7 +397,7 @@ export const FooterGerman = () => {
 
                         <button className="flex items-center justify-center h-9 px-4 py-2 gap-x-1 rounded-full border border-[#7eafd9] bg-gray-50 hover:bg-[#E3EFF4] transition-all duration-200">
                             <span className="text-[13px] md:text-[15px] text-[#2a5075] font-geist leading-[20px] font-medium">
-                                Deutsch (DE)
+                                Français (FR)
                             </span>
                             <svg
                                 stroke="currentColor"
@@ -423,14 +423,14 @@ export const FooterGerman = () => {
                                 to="/privacy-policy"
                                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
                             >
-                                Datenschutzrichtlinie
+                                Politique de Confidentialité
                             </Link>
                             <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
                             <Link
                                 to="/terms-and-conditions"
                                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
                             >
-                                Nutzungsbedingungen
+                                Conditions de Service
                             </Link>
                         </div>
 
@@ -440,7 +440,7 @@ export const FooterGerman = () => {
                             to="/privacy-policy"
                             className="hidden md:block text-[#2a5075] font-geist hover:underline"
                         >
-                            Datenschutzrichtlinie
+                            Politique de Confidentialité
                         </Link>
 
                         <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
@@ -449,7 +449,7 @@ export const FooterGerman = () => {
                             to="/terms-and-conditions"
                             className="hidden md:block text-[#2a5075] font-geist hover:underline"
                         >
-                            Nutzungsbedingungen
+                            Conditions de Service
                         </Link>
                     </div>
                 </div>
@@ -458,14 +458,14 @@ export const FooterGerman = () => {
     )
 }
 
-export const ServicesGerman = () => {
+export const ServicesFrench = () => {
     return (
         <div className="pt-6 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
             <div className="max-w-[80rem] w-full mx-auto">
                 <div className="flex flex-col items-center justify-center">
                     <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
                         <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-                            Unsere Dienstleistungen
+                            Nos Services
                         </h2>
                     </BoxReveal>
 
@@ -473,7 +473,7 @@ export const ServicesGerman = () => {
                         <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
                             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
                             <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                                Indiens bester Zertifikatsberater
+                                Le meilleur consultant en certificats de l&apos;Inde
                             </span>
                             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
                         </div>
@@ -493,7 +493,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS-Zeichen (ISI-Lizenz) für ausländische Hersteller
+                            Marque BIS (Licence ISI) pour Fabricants Étrangers
                         </p>
                     </Link>
 
@@ -509,7 +509,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            CDSCO-Registrierungszertifizierung
+                            Certification d&apos;Enregistrement CDSCO
                         </p>
                     </Link>
 
@@ -525,7 +525,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS (CRS) Registrierung
+                            Enregistrement BIS (CRS)
                         </p>
                     </Link>
 
@@ -541,7 +541,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            Kunststoffabfallmanagement
+                            Gestion des Déchets Plastiques
                         </p>
                     </Link>
 
@@ -557,7 +557,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            EPR-Zertifikatszertifizierungen
+                            Certifications de Certificat EPR
                         </p>
                     </Link>
 
@@ -573,7 +573,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            LMPC-Zertifikatszertifizierungen
+                            Certifications de Certificat LMPC
                         </p>
                     </Link>
 
@@ -589,7 +589,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS-Registrierungszertifikat
+                            Certificat d&apos;Enregistrement BIS
                         </p>
                     </Link>
 
@@ -605,7 +605,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            ISI-ZEICHEN (BIS) für indische Hersteller
+                            MARQUE ISI (BIS) pour Fabricants Indiens
                         </p>
                     </Link>
                 </div>
@@ -615,341 +615,7 @@ export const ServicesGerman = () => {
 };
 
 
-
-const PumpsAndLiquidElevatorsGermanPageBreadcrumb = () => {
-    return (
-        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
-            <div className="max-w-[80rem] mx-auto px-4">
-                <div className="w-fit font-inter">
-                    <Breadcrumb>
-                        <BreadcrumbList>
-                            <BreadcrumbItem>
-                                <BreadcrumbLink asChild>
-                                    <Link to="/">
-                                        Startseite
-                                    </Link>
-                                </BreadcrumbLink>
-                            </BreadcrumbItem>
-                            <BreadcrumbSeparator>
-                                <SlashIcon />
-                            </BreadcrumbSeparator>
-
-                            <BreadcrumbItem>
-                                <BreadcrumbLink asChild>
-                                    <Link to="/SchemeX-Products">
-                                        SchemeX Produkte
-                                    </Link>
-                                </BreadcrumbLink>
-                            </BreadcrumbItem>
-                            <BreadcrumbSeparator>
-                                <SlashIcon />
-                            </BreadcrumbSeparator>
-
-                            <BreadcrumbItem>
-                                <BreadcrumbPage>
-                                    BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen
-                                </BreadcrumbPage>
-                            </BreadcrumbItem>
-                        </BreadcrumbList>
-                    </Breadcrumb>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-
-const PumpsAndLiquidElevatorsGermanPageMainContent = () => {
-    return (
-        <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
-            <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-
-                {/* Left Side Content */}
-                <PumpsAndLiquidElevatorsPageMainContentLeftGerman />
-
-                {/* Right Side Content */}
-                <PumpsAndLiquidElevatorsPageMainContentRightGerman />
-            </div>
-        </div>
-    )
-}
-
-const PumpsAndLiquidElevatorsPageMainContentLeftGerman = () => {
-    return (
-        <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
-
-            {/* Blog Content */}
-            <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-
-                {/* Main Heading */}
-                <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-                    BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen in Indien
-                </h1>
-
-                {/* Introduction Paragraph 1 */}
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Das schnelle Industrie- und Infrastrukturwachstum in Indien erfordert Maschinen, die mehr leisten und die Erfüllung nationaler und internationaler Nachfrage sicherstellen. Pumpen und Flüssigkeitshebevorrichtungen sind entscheidend für Wasserressourcen, Landwirtschaft, Bauwesen, Energie, Industrie und viele andere Bereiche. Ein defektes Gerät kann die Sicherheit gefährden, den Betrieb stören und finanzielle Verluste verursachen, wenn es nicht nach den richtigen Spezifikationen mit Qualitätskontrolle hergestellt wird.
-                </p>
-
-                {/* Introduction Paragraph 2 */}
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Um dies zu kontrollieren, hat das BIS (Bureau of Indian Standards) die Scheme X Zertifizierung eingeführt, die es erforderlich macht, dass jede Pumpe und Flüssigkeitshebevorrichtung den nationalen Qualitätsstandard erfüllt, bevor sie in Indien verkauft wird.
-                </p>
-
-                {/* Introduction Paragraph 3 */}
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    In diesem Beitrag möchten wir die Bedeutung der BIS-Zertifizierung für Pumpen, die Bedeutung der Omnibus Technical Regulation (OTR) 2024 und den Prozess zur Erlangung einer BIS-Lizenz für Pumpen unter Scheme X für angehende Hersteller behandeln.
-                </p>
-
-                {/* Why Pumps and Elevators Matter Section */}
-                <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Warum Pumpen und Flüssigkeitshebevorrichtungen wichtig sind
-                </div>
-
-                {/* Pumps Subsection */}
-                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Pumpen
-                </div>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Pumpen sind unverzichtbare Geräte für den Transport von Flüssigkeiten oder Schlämmen in verschiedenen Industrien. Sie werden weit verbreitet eingesetzt in:
-                </p>
-
-                {/* Pumps Usage Areas */}
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Landwirtschaft und Bewässerungssysteme</li>
-                    <li>Öffentliche Wasserversorgung und Haushaltsnutzung</li>
-                    <li>Abwasser- und Kläranlagen</li>
-                    <li>Öl- und Gaspipelines</li>
-                    <li>Klimaanlagen und industrielle Kühlsysteme</li>
-                </ul>
-
-                {/* Liquid Elevators Subsection */}
-                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Flüssigkeitshebevorrichtungen
-                </div>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Hebepumpen, vertikale Flüssigkeitshebevorrichtungen zum Heben von Flüssigkeiten dienen zum Pumpen:
-                </p>
-
-                {/* Liquid Elevators Usage Areas */}
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Hochmassen-Wasserverteilungssysteme</li>
-                    <li>Industrielle Silos/Lagertanks</li>
-                    <li>In der Energie-, Chemie- und Verfahrensindustrie</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Da sie weit verbreitet sind, können billige Pumpen oder Flüssigkeitsheber verursachen:
-                </p>
-
-                {/* Problems with Poor Quality Equipment */}
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Mechanische Ausfälle</li>
-                    <li>Elektrische Gefahren</li>
-                    <li>Leckagen und Korrosion</li>
-                    <li>Unfälle durch Sicherheitsrisiken und wirtschaftliche Verluste</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Deshalb ist BIS für Pumpen und Flüssigkeitshebevorrichtungen ein dringend benötigter Schutz für Hersteller und Käufer gleichermaßen.
-                </p>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* What is BIS and What is Scheme X Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Was ist BIS und was ist Scheme X?
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Das Bureau of Indian Standards (BIS) ist die nationale Normungsorganisation Indiens zur Zertifizierung der Qualität und Sicherheit von Produkten. Um wichtige Anlagen und Maschinen zu kontrollieren, hat das BIS ab dem 16. März 2022 die Scheme X Zertifizierung unter den BIS Conformity Assessment Regulations, 2018 obligatorisch gemacht.
-                </p>
-
-                {/* Scheme X Key Highlights */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Scheme X Zertifizierung für Pumpen - Wichtige Highlights
-                </h3>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-                    <li>Obligatorisch für indische und ausländische Hersteller</li>
-                    <li>Gilt für Pumpen, Motoren und Flüssigkeitshebevorrichtungen unter indischen Standards</li>
-                    <li>Umfasst Labortests, Fabrikinspektionen, konsistente Compliance-Prüfungen</li>
-                    <li>Verleiht rechtliche Befugnisse zur Gewährung der Nutzung des BIS-Zeichens für Pumpen durch Hersteller als Nachweis der Zertifizierung</li>
-                </ul>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* OTR Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Omnibus Technical Regulation (OTR) für Pumpen
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Die OTR 2024 wurde vom Ministerium für Schwerindustrie angekündigt, die alle Pumpen und Flüssigkeitshebevorrichtungen zur Einhaltung der Scheme X Zertifizierung verpflichtet.
-                </p>
-
-                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Frist für die Compliance:
-                </div>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Bis zum 1. September 2026 müssen alle Hersteller und Importeure eine gültige BIS-Lizenz für Pumpen unter Scheme X erhalten. Nichteinhaltung kann zu hohen Geldstrafen sowie zur Schließung des Verkaufs und zum Ausschluss von öffentlichen Ausschreibungen führen.
-                </p>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* Importance Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Warum ist die BIS-Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen wichtig?
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    1. Sicherheitsgewähr: Stellt sicher, dass die Ausrüstung für die Betriebsanforderungen konzipiert und gebaut ist und nicht zu folgenden Problemen führt:
-                </p>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Elektrische Störungen</li>
-                    <li>Leckagen und Rost</li>
-                    <li>Ausfälle und Maschinendefekte</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    2. Marktvorteil
-                </p>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>BIS-zertifizierte Pumpen werden oft für öffentliche Projekte, Regierungsausschreibungen usw. benötigt</li>
-                    <li>Bietet Wettbewerbsvorteile gegenüber nicht-zertifizierten Produkten</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    3. Verbrauchervertrauen: Das ISI-Zeichen auf Pumpen gibt dem Käufer Sicherheit über die Qualität und garantiert die Effizienz des Produkts.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    4. Globale Marken erhalten einfachen Marktzugang: Ausländische OEMs erhalten bei Erfüllung der Scheme X Normen einfachen Zugang zu Indiens reguliertem Markt.
-                </p>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* Types of Pumps Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Arten von Pumpen unter BIS Scheme X Registrierung
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    BIS Scheme X umfasst verschiedene Pumpentypen einschließlich:
-                </p>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Kreiselpumpen</li>
-                    <li>Tauchpumpen</li>
-                    <li>Druckerhöhungspumpen</li>
-                    <li>Mehrstufige Pumpen</li>
-                    <li>Verdrängerpumpen</li>
-                    <li>Vertikale Turbinenpumpen</li>
-                    <li>Chemische Verfahrenspumpen</li>
-                    <li>Membranpumpen</li>
-                    <li>Schlammpumpen</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Jeder Typ muss den relevanten indischen Standards (IS-Codes) entsprechen, wie z.B. IS 16819:2018/ISO 12100:2010 (Sicherheit von Maschinen - Allgemeine Prinzipien für Design - Risikobewertung und Risikominderung).
-                </p>
-
-                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Für Flüssigkeitshebevorrichtungen umfasst die Zertifizierung:
-                </div>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-                    <li>Durchflussrate und Förderhöhe</li>
-                    <li>Materialkompatibilität</li>
-                    <li>Energieeffizienz</li>
-                    <li>Betriebssicherheit</li>
-                </ul>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* How to Get BIS Scheme X Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Wie erhält man BIS Scheme X für Pumpen?
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Anwendbare Standards identifizieren: Das Angebot muss die entsprechenden IS-Codes spezifizieren (zum Beispiel IS 9079 für Tauchpumpen).
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Produktprüfung: Obligatorische Tests zu Leistung und Sicherheit in BIS-anerkannten Laboren.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Fabrikinspektion: BIS-Behörden inspizieren die Produktionsstätte, um die Umsetzung von Qualitätskontrollverfahren zu überprüfen.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Dokumentation und Antrag: Technische Spezifikationen, Prüfberichte und Qualitätshandbücher sind dem BIS-Antragsformular beizufügen.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Ausstellung des BIS-Zertifikats für Pumpen: Bei Genehmigung erhalten Hersteller die Lizenz zur Anwendung des BIS-Zeichens unter Scheme X.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Laufende Überwachung: BIS führt regelmäßige Audits und Stichprobenkontrollen von Produkten durch, um die kontinuierliche Compliance sicherzustellen.
-                </p>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* Penalties Section */}
-                <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Strafen bei Nichteinhaltung
-                </div>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Hersteller, die bis zum 1. September 2026 keine BIS-Zertifizierung erhalten, werden folgenden Maßnahmen unterworfen:
-                </p>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-                    <li>Verbot des Verkaufs/Imports von nicht-zertifizierten Pumpen</li>
-                    <li>Beschlagnahme von Artikeln und Geldstrafen</li>
-                    <li>Disqualifikation von Regierungs- und PSU-Aufträgen</li>
-                    <li>Langfristiger Reputationsschaden in INDIEN</li>
-                </ul>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* Conclusion Section */}
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    <span className="font-medium text-[#1e1e1e]">Fazit:</span> Die BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen mit der OTR 2024 ist ein Meilenstein in der Standardisierung der indischen Industrie.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Für diejenigen mit Herstellungs-, Import- oder Exportgeschäften ist die BIS-Registrierung für Pumpen nicht nur ein gesetzlicher Compliance-Prozess, sondern auch eine strategische Entscheidung zur Gewährleistung der Sicherheitsdominanz über potenzielle Risiken, zum Aufbau von Verbrauchervertrauen und zum Eintritt in den erweiterten Markt Indiens.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Die BIS-Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen ist eine langfristige Investition zur Etablierung der Glaubwürdigkeit und des Marktes Ihres Produkts.
-                </p>
-
-                <AboutAuthorGerman />
-
-            </div>
-        </div>
-    )
-}
-
-
-export const AboutAuthorGerman = () => {
+export const AboutAuthorFrench = () => {
     return (
         <section className="">
             <div className="relative overflow-hidden bg-gradient-to-br from-[#F9F7F2] via-white to-[#F9F7F2] border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
@@ -961,7 +627,7 @@ export const AboutAuthorGerman = () => {
                     {/* Header */}
                     <div className="flex items-center gap-3 mb-3">
                         <h3 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781]">
-                            Über den Autor
+                            À propos de l&apos;Auteur
                         </h3>
                         <div className="flex-1 h-[1px] bg-gradient-to-r from-[#1A8781]/20 to-transparent"></div>
                     </div>
@@ -973,7 +639,7 @@ export const AboutAuthorGerman = () => {
                                 Dhruv Aggarwal
                             </p>
                             <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                                Leiter der Betriebsabteilung bei Sun Certifications India
+                                Chef des Opérations chez Sun Certifications India
                             </p>
                         </div>
 
@@ -981,14 +647,14 @@ export const AboutAuthorGerman = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
                             <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
                                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                                    <span className="font-medium">Erfahrung:</span>{" "}
-                                    10+ Jahre & 1000+ Projekte abgewickelt
+                                    <span className="font-medium">Expérience :</span>{" "}
+                                    10+ ans et 1000+ projets gérés
                                 </p>
                             </div>
 
                             <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
                                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                                    Ausgezeichnet von vielen indischen und internationalen Organisationen
+                                    Récompensé par de nombreuses organisations indiennes et internationales
                                 </p>
                             </div>
                         </div>
@@ -1004,8 +670,8 @@ export const AboutAuthorGerman = () => {
                                 >
                                     <Linkedin className="w-4 h-4 text-[#0077B5]" />
                                     <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                                        <span className="font-medium">LinkedIn:</span>{" "}
-                                        Verbinden Sie sich mit mir
+                                        <span className="font-medium">LinkedIn :</span>{" "}
+                                        Connectez-vous avec moi
                                     </span>
                                 </a>
 
@@ -1016,7 +682,7 @@ export const AboutAuthorGerman = () => {
                                     <Mail className="w-4 h-4 text-[#1A8781]" />
                                     <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
                                         <span className="font-medium">
-                                            Kontakt:
+                                            Contact :
                                         </span>{" "}
                                         admin@bis-certifications.com
                                     </span>
@@ -1031,7 +697,339 @@ export const AboutAuthorGerman = () => {
 }
 
 
-const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
+const PumpsAndLiquidElevatorsFrenchPageBreadcrumb = () => {
+    return (
+        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+            <div className="max-w-[80rem] mx-auto px-4">
+                <div className="w-fit font-inter">
+                    <Breadcrumb>
+                        <BreadcrumbList>
+                            <BreadcrumbItem>
+                                <BreadcrumbLink asChild>
+                                    <Link to="/">
+                                        Accueil
+                                    </Link>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbSeparator>
+                                <SlashIcon />
+                            </BreadcrumbSeparator>
+
+                            <BreadcrumbItem>
+                                <BreadcrumbLink asChild>
+                                    <Link to="/SchemeX-Products">
+                                        Produits SchemeX
+                                    </Link>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbSeparator>
+                                <SlashIcon />
+                            </BreadcrumbSeparator>
+
+                            <BreadcrumbItem>
+                                <BreadcrumbPage>
+                                    Certification BIS Scheme X pour Pompes et Élévateurs de Liquides
+                                </BreadcrumbPage>
+                            </BreadcrumbItem>
+                        </BreadcrumbList>
+                    </Breadcrumb>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const PumpsAndLiquidElevatorsFrenchPageMainContent = () => {
+    return (
+        <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+
+                {/* Left Side Content */}
+                <PumpsAndLiquidElevatorsPageMainContentLeftFrench />
+
+                {/* Right Side Content */}
+                <PumpsAndLiquidElevatorsPageMainContentRightFrench />
+            </div>
+        </div>
+    )
+}
+
+const PumpsAndLiquidElevatorsPageMainContentLeftFrench = () => {
+    return (
+        <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+
+            {/* Blog Content */}
+            <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
+                {/* Main Heading */}
+                <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
+                    Certification BIS Scheme X pour Pompes et Élévateurs de Liquides en Inde
+                </h1>
+
+                {/* Introduction Paragraph 1 */}
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    La croissance industrielle et infrastructurelle rapide en Inde nécessite des machines qui fonctionnent davantage et assurent la satisfaction de la demande nationale et internationale. Les pompes et élévateurs de liquides sont cruciaux pour les ressources en eau, l&apos;agriculture, la construction, l&apos;énergie, l&apos;industrie et de nombreux autres secteurs. Un équipement défectueux peut compromettre la sécurité, perturber les opérations et créer des pertes financières s&apos;il n&apos;est pas fabriqué selon les bonnes spécifications avec un contrôle qualité en place.
+                </p>
+
+                {/* Introduction Paragraph 2 */}
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Pour contrôler cela, le BIS (Bureau of Indian Standards) a lancé la certification Scheme X, qui nécessite que chaque pompe et élévateur de liquides satisfasse au standard de qualité national avant d&apos;être vendu en Inde.
+                </p>
+
+                {/* Introduction Paragraph 3 */}
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    Dans cet article, nous avons l&apos;intention de couvrir l&apos;importance de la Certification BIS pour Pompes, l&apos;importance du Règlement Technique Omnibus (OTR) 2024, et le processus pour obtenir une Licence BIS pour Pompes sous Scheme X pour les fabricants aspirants.
+                </p>
+
+                {/* Why Pumps and Elevators Matter Section */}
+                <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    Pourquoi les Pompes et Élévateurs de Liquides Sont Importants
+                </div>
+
+                {/* Pumps Subsection */}
+                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    Pompes
+                </div>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Les pompes sont des dispositifs indispensables pour transporter des fluides ou des boues à travers diverses industries. Elles sont largement utilisées dans :
+                </p>
+
+                {/* Pumps Usage Areas */}
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>Systèmes agricoles et d&apos;irrigation</li>
+                    <li>Approvisionnement public en eau et usage domestique</li>
+                    <li>Stations de traitement des eaux usées et des effluents</li>
+                    <li>Pipelines de pétrole et de gaz</li>
+                    <li>Systèmes de climatisation et de refroidissement industriel</li>
+                </ul>
+
+                {/* Liquid Elevators Subsection */}
+                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    Élévateurs de Liquides
+                </div>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Pompes de levage, élévateurs verticaux de liquides pour élever les liquides servent au pompage :
+                </p>
+
+                {/* Liquid Elevators Usage Areas */}
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>Systèmes de distribution d&apos;eau à haute masse pompée</li>
+                    <li>Silos industriels/réservoirs de stockage</li>
+                    <li>Dans l&apos;industrie énergétique, chimique et de processus</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Puisqu&apos;elles sont communes, les pompes bon marché ou élévateurs de liquides peuvent causer :
+                </p>
+
+                {/* Problems with Poor Quality Equipment */}
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>Pannes mécaniques</li>
+                    <li>Dangers électriques</li>
+                    <li>Fuites et corrosion</li>
+                    <li>Accidents causés par des risques de sécurité et des pertes économiques</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    C&apos;est pourquoi BIS pour Pompes et Élévateurs de Liquides est une protection très nécessaire pour les fabricants et acheteurs également.
+                </p>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* What is BIS and What is Scheme X Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    Qu&apos;est-ce que BIS et qu&apos;est-ce que Scheme X ?
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    Le Bureau of Indian Standards (BIS) est l&apos;organisme national de normalisation de l&apos;Inde pour certifier la qualité et la sécurité des produits. Pour contrôler les installations et machines vitales, le BIS a rendu obligatoire l&apos;obtention de la Certification Scheme X depuis le 16 mars 2022 sous les Règlements d&apos;Évaluation de Conformité BIS, 2018.
+                </p>
+
+                {/* Scheme X Key Highlights */}
+                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    Points Clés de la Certification Scheme X pour Pompes
+                </h3>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+                    <li>Obligatoire pour les fabricants indiens et étrangers</li>
+                    <li>Applicable aux pompes, moteurs et élévateurs de liquides couverts sous les Standards Indiens</li>
+                    <li>Inclut des tests de laboratoire, inspections d&apos;usine, vérifications cohérentes de conformité</li>
+                    <li>Ajoute des pouvoirs légaux pour accorder l&apos;utilisation de la marque BIS pour Pompes par les fabricants comme preuve de certification.</li>
+                </ul>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* OTR Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    Règlement Technique Omnibus (OTR) Pour Pompes
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    L&apos;OTR 2024 a été annoncé par le Ministère des Industries Lourdes, qui a mandaté que toutes les pompes et élévateurs de liquides adhèrent à la Certification Scheme X.
+                </p>
+
+                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    Date limite pour la Conformité :
+                </div>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    Au plus tard le 1er septembre 2026, tous les fabricants et importateurs devront obtenir une Licence BIS valide pour Pompes sous Scheme X. La non-conformité peut conduire à de lourdes amendes, ainsi qu&apos;à la fermeture des ventes et l&apos;exclusion des appels d&apos;offres publics.
+                </p>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* Importance Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    Pourquoi la certification BIS pour Pompes et Élévateurs de Liquides est-elle importante ?
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    1. Assurance de Sécurité : Assure que l&apos;équipement est conçu et construit pour les rigueurs des opérations et ne cause pas :
+                </p>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>Défaillances électriques</li>
+                    <li>Fuites et rouille</li>
+                    <li>Pannes et défaillances de machines</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    2. Avantage sur le Marché
+                </p>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>Les pompes certifiées BIS sont souvent nécessaires pour les projets publics, appels d&apos;offres gouvernementaux, etc.</li>
+                    <li>Fournit un avantage concurrentiel comparé aux produits non certifiés.</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    3. Confiance du Consommateur : La marque ISI sur les Pompes donne confiance à l&apos;acheteur sur la qualité et garantit l&apos;efficacité du produit.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    4. Les Marques Globales Obtiennent un Accès Facile au Marché : Les OEM étrangers obtiennent un accès facile au marché réglementé de l&apos;Inde en se conformant aux normes Scheme X.
+                </p>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* Types of Pumps Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    Types de Pompes Sous Enregistrement BIS Scheme X
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    BIS Scheme X contient une variété de types de pompes incluant :
+                </p>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>Pompes Centrifuges</li>
+                    <li>Pompes Submersibles</li>
+                    <li>Pompes de Surpression</li>
+                    <li>Pompes Multiétagées</li>
+                    <li>Pompes à Déplacement Positif</li>
+                    <li>Pompes à Turbine Verticale</li>
+                    <li>Pompes de Processus Chimique</li>
+                    <li>Pompes à Diaphragme</li>
+                    <li>Pompes à Boue</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Chaque type doit se conformer aux Standards Indiens pertinents (codes IS) tels que IS 16819:2018/ISO 12100:2010 (Sécurité des Machines - Principes Généraux pour la Conception - Évaluation des Risques et Réduction des Risques).
+                </p>
+
+                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    Pour les élévateurs de liquides, la certification couvre :
+                </div>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
+                    <li>Débit et hauteur de refoulement</li>
+                    <li>Compatibilité des matériaux</li>
+                    <li>Efficacité énergétique</li>
+                    <li>Sécurité opérationnelle</li>
+                </ul>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* How to Get BIS Scheme X Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    Comment Obtenir BIS Scheme X pour Pompes ?
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Identifier les Standards Applicables : Le devis doit spécifier les codes IS appropriés (par exemple, IS 9079 pour pompes submersibles).
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Tests du Produit : Tests obligatoires de performance et sécurité dans des laboratoires acceptés par BIS.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Inspection d&apos;Usine : Les autorités BIS inspectent le site de production pour vérifier la mise en œuvre des procédures de contrôle qualité.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Documentation et Application : Les spécifications techniques, rapports de test et manuels qualité doivent accompagner le formulaire d&apos;application BIS.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Émission du Certificat BIS pour Pompes : Les fabricants, une fois approuvés, reçoivent la licence pour appliquer la marque BIS sous Scheme X.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    Surveillance Continue : BIS effectue des audits réguliers et des inspections aléatoires de produits pour assurer la conformité continue.
+                </p>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* Penalties Section */}
+                <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    Pénalités pour Non-Conformité
+                </div>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Les fabricants qui ne parviennent pas à obtenir la certification BIS, au 1er septembre 2026, seront soumis à :
+                </p>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
+                    <li>Interdiction de ventes/importations de pompes non certifiées</li>
+                    <li>Confiscation d&apos;articles et amendes.</li>
+                    <li>Disqualification des commandes gouvernementales et PSU</li>
+                    <li>Dommage à long terme à la réputation en INDE</li>
+                </ul>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* Conclusion Section */}
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    <span className="font-medium text-[#1e1e1e]">Conclusion :</span> La Certification BIS Scheme X pour Pompes et Élévateurs de Liquides avec OTR 2024 à être appliqué ; un jalon dans la normalisation de l&apos;Industrie de l&apos;Inde.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    Pour ceux ayant des activités de fabrication, importation ou exportation, l&apos;enregistrement BIS pour pompes n&apos;est pas simplement un processus de conformité statutaire à accomplir, mais aussi une décision stratégique vers assurer la domination de la sécurité sur les risques potentiels, construire la foi du consommateur et une entrée au marché élargi de l&apos;Inde.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    La Certification BIS des Pompes et Élévateurs de Liquides est un investissement à long terme pour établir les références et le marché de votre Produit.
+                </p>
+
+                <AboutAuthorFrench />
+
+            </div>
+        </div>
+    )
+}
+
+
+const PumpsAndLiquidElevatorsPageMainContentRightFrench = () => {
     const [formData, setFormData] = useState({
         fullName: "",
         phoneNumber: "",
@@ -1043,7 +1041,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
 
     // Get current page URL and name for form submission
     const currentUrl = window.location.href;
-    const currentPageName = "SchemeX Product - BIS Certification for Pumps & Liquid Elevators (German)";
+    const currentPageName = "SchemeX Product - BIS Certification for Pumps & Liquid Elevators (French)";
 
     // Add BASE_URL like other forms
     const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
@@ -1081,7 +1079,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
             const result = await response.json();
 
             if (result.success) {
-                setSubmitStatus({ type: "success", message: "Vielen Dank! Wir werden Sie innerhalb von 24 Stunden kontaktieren." });
+                setSubmitStatus({ type: "success", message: "Merci ! Nous vous contacterons dans les 24 heures." });
                 setFormData({
                     fullName: "",
                     phoneNumber: "",
@@ -1089,13 +1087,13 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                     message: "",
                 });
             } else {
-                setSubmitStatus({ type: "error", message: "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut." });
+                setSubmitStatus({ type: "error", message: "Une erreur s&apos;est produite. Veuillez réessayer." });
             }
         } catch (error) {
             console.error("Form submission error:", error);
             setSubmitStatus({
                 type: "error",
-                message: "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+                message: "Quelque chose a mal tourné. Veuillez réessayer.",
             });
         } finally {
             setIsSubmitting(false);
@@ -1109,14 +1107,14 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                 <div className="flex gap-2 items-center">
                     <PhoneCall className="text-[#232327]" />
                     <div className="text-xl font-geist font-semibold text-[#232327]">
-                        Kostenlosen Rückruf anfordern
+                        Demander un Rappel Gratuit
                     </div>
                 </div>
 
                 {/* Intro Text */}
                 <p className="mt-3 text-sm text-gray-600 font-geist">
-                    Hinterlassen Sie Ihre Daten unten und unsere Experten werden Sie innerhalb von 24
-                    Stunden zurückrufen, um Ihre regulatorischen Compliance-Bedürfnisse zu besprechen.
+                    Laissez vos coordonnées ci-dessous et nos experts vous rappelleront dans les 24
+                    heures pour discuter de vos besoins de conformité réglementaire.
                 </p>
 
                 {/* Status Message */}
@@ -1144,7 +1142,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                             value={formData.fullName}
                             onChange={handleInputChange}
                             required
-                            placeholder="Ihr Name*"
+                            placeholder="Votre Nom*"
                             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
                         />
                     </div>
@@ -1160,7 +1158,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                             value={formData.phoneNumber}
                             onChange={handleInputChange}
                             required
-                            placeholder="Telefonnummer*"
+                            placeholder="Numéro de Téléphone*"
                             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
                         />
                     </div>
@@ -1176,7 +1174,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                             value={formData.email}
                             onChange={handleInputChange}
                             required
-                            placeholder="E-Mail-Adresse*"
+                            placeholder="Adresse E-mail*"
                             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
                         />
                     </div>
@@ -1190,7 +1188,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleInputChange}
-                            placeholder="Benötigte Zertifizierung*"
+                            placeholder="Certification Requise*"
                             rows="3"
                             required
                             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
@@ -1203,7 +1201,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                         className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <span className="relative z-10 flex items-center">
-                            {isSubmitting ? "Wird gesendet..." : "Rückruf anfordern"}
+                            {isSubmitting ? "Envoi en cours..." : "Demander un Rappel"}
                             <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </span>
                         <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -1212,11 +1210,11 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
 
                 {/* Privacy Note */}
                 <p className="mt-3 text-xs text-center text-gray-500 font-geist">
-                    Mit dem Absenden dieses Formulars stimmen Sie unserer{" "}
+                    En soumettant ce formulaire, vous acceptez notre{" "}
                     <a href="#" className="text-blue-600 hover:underline">
-                        Datenschutzrichtlinie
+                        Politique de Confidentialité
                     </a>{" "}
-                    zu und willigen ein, kontaktiert zu werden.
+                    et consentez à être contacté.
                 </p>
             </div>
         </div>

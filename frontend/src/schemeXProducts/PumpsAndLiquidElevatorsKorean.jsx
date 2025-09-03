@@ -21,34 +21,34 @@ import {
 import VideoSection from "@/components/manual/home-page-sections/VideoSection"
 
 
-const PumpsAndLiquidElevatorsGerman = () => {
+const PumpsAndLiquidElevatorsKorean = () => {
     return (
         <div className="relative w-full">
             <Helmet>
-                <title>BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge</title>
+                <title>BIS 스킴 X 인증 펌프 및 액체 승강기</title>
 
                 {/* Meta Description */}
-                <meta name="description" content="BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge unter der Omnibus Technical Regulation Order 2024 schreibt vor, dass alle Arten von Pumpen und Flüssigkeitsaufzügen bis September 2026 der Scheme X Zertifizierung entsprechen müssen" />
+                <meta name="description" content="2024 종합 기술 규정 명령 하에서 펌프 및 액체 승강기에 대한 BIS 스킴 X 인증은 모든 유형의 펌프와 액체 승강기가 2026년 9월까지 스킴 X 인증에 준수해야 함을 의무화합니다" />
 
                 {/* Meta Keywords */}
-                <meta name="keywords" content="BIS Zertifizierung für Pumpen, BIS Scheme X Zertifizierung für Pumpen, Scheme X Zertifizierung für Pumpen, BIS für Pumpen, BIS Zertifizierung für Pumpen und Flüssigkeitsaufzüge, OTR für Pumpen" />
+                <meta name="keywords" content="펌프 BIS 인증, 펌프 BIS 스킴 X 인증, 펌프 스킴 X 인증, 펌프 BIS, 펌프 및 액체 승강기 BIS 인증, 펌프 OTR" />
                 <meta name="author" content="Sun Certifications India" />
-                <meta name="publisher" content="Dhruv Aggarwal, Leiter der Operationen bei Sun Certification India" />
+                <meta name="publisher" content="Dhruv Aggarwal, Sun Certification India 운영 책임자" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
                 {/* Open Graph Tags */}
-                <meta property="og:title" content="BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge in Indien | Vollständiger Leitfaden" />
-                <meta property="og:description" content="Erfahren Sie alles über BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge in Indien. Verstehen Sie OTR 2024 Compliance, BIS Lizenzverfahren, ISI-Kennzeichnungsanforderungen und wie Sie vor der September 2026 Frist zertifiziert werden" />
-                <meta property="og:url" content="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege" />
+                <meta property="og:title" content="인도 펌프 및 액체 승강기 BIS 스킴 X 인증 | 완전 가이드" />
+                <meta property="og:description" content="인도의 펌프 및 액체 승강기 BIS 스킴 X 인증에 대해 모든 것을 배워보세요. OTR 2024 준수, BIS 라이센스 프로세스, ISI 마크 요구사항 및 2026년 9월 마감일 전에 인증을 받는 방법을 이해하세요" />
+                <meta property="og:url" content="https://bis-certifications.com/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi" />
                 <meta property="og:site_name" content="Sun Certifications India" />
                 <meta property="og:type" content="article" />
 
                 {/* Twitter Tags */}
-                <meta name="twitter:title" content="BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge in Indien | Vollständiger Leitfaden" />
-                <meta name="twitter:description" content="Erfahren Sie alles über BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitsaufzüge in Indien. Verstehen Sie OTR 2024 Compliance, BIS Lizenzverfahren, ISI-Kennzeichnungsanforderungen und wie Sie vor der September 2026 Frist zertifiziert werden" />
+                <meta name="twitter:title" content="인도 펌프 및 액체 승강기 BIS 스킴 X 인증 | 완전 가이드" />
+                <meta name="twitter:description" content="인도의 펌프 및 액체 승강기 BIS 스킴 X 인증에 대해 모든 것을 배워보세요. OTR 2024 준수, BIS 라이센스 프로세스, ISI 마크 요구사항 및 2026년 9월 마감일 전에 인증을 받는 방법을 이해하세요" />
 
                 {/* Canonical URL */}
-                <link rel="canonical" href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege" />
+                <link rel="canonical" href="https://bis-certifications.com/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi" />
 
                 {/* HrefLang Tags */}
                 <link rel="alternate" hrefLang="en" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
@@ -66,42 +66,42 @@ const PumpsAndLiquidElevatorsGerman = () => {
                 <link rel="alternate" hrefLang="x-default" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
             </Helmet>
 
-            <PumpsAndLiquidElevatorsGermanPageBreadcrumb />
-            <PumpsAndLiquidElevatorsGermanPageMainContent />
-            <ServicesGerman />
+            <PumpsAndLiquidElevatorsKoreanPageBreadcrumb />
+            <PumpsAndLiquidElevatorsKoreanPageMainContent />
+            <ServicesKorean />
             <VideoSection />
-            <FooterGerman />
+            <FooterKorean />
         </div>
     )
 }
 
-export default PumpsAndLiquidElevatorsGerman
+export default PumpsAndLiquidElevatorsKorean
 
 
-export const FooterGerman = () => {
+export const FooterKorean = () => {
     return (
         <footer>
             <div className="relative ">
                 <div className="w-full max-w-[768px] px-4 pb-12  pt-8 md:pt-16 md:pb-16 mx-auto">
                     <h3 className="text-center font-geist text-3xl md:text-[48px] text-[#181818] leading-tight md:leading-[48px] font-semibold">
-                        Möchten Sie mehr erfahren?
+                        더 자세히 알고 싶으신가요?
                     </h3>
 
                     <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
-                        Senden Sie uns eine E-Mail an{" "}
+                        {" "}
                         <a
                             href="mailto:admin@bis-certifications.com"
                             className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
                         >
                             admin@bis-certifications.com
                         </a>{" "}
-                        oder nutzen Sie eine der unten stehenden Optionen. Wir melden uns normalerweise innerhalb von 24 Stunden zurück.
+                        으로 이메일을 보내시거나 아래 옵션 중 하나를 사용하세요. 보통 24시간 이내에 답변드립니다.
                     </div>
 
                     <div className="flex items-center my-6 md:my-[30px]">
                         <div className="h-px w-full bg-neutral-300  grow"></div>
                         <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
-                            oder
+                            또는
                         </span>
                         <div className="h-px w-full bg-neutral-300 grow"></div>
                     </div>
@@ -201,7 +201,7 @@ export const FooterGerman = () => {
 
                             <div className="flex flex-col gap-[15px]">
                                 <div className="text-neutral-900 text-base md:text-lg  font-geist font-medium">
-                                    Abonnieren Sie unseren Newsletter
+                                    뉴스레터 구독하기
                                 </div>
 
                                 <div className="relative">
@@ -214,11 +214,11 @@ export const FooterGerman = () => {
                           pr-24 
                           border border-[#7eafd9]
                           "
-                                        placeholder="Geben Sie Ihre E-Mail ein"
+                                        placeholder="이메일 주소를 입력하세요"
                                     />
                                     <button className="flex items-center justify-center h-7 px-2 py-1.5 gap-x-1 text-[13px] md:text-[15px] whitespace-nowrap font-medium font-geist border rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 absolute right-1 top-1 border-none bg-white">
                                         <div className="text-[#2a5075]">
-                                            Benachrichtigen
+                                            알림
                                         </div>
                                     </button>
                                 </div>
@@ -228,7 +228,7 @@ export const FooterGerman = () => {
                         <div className="grid grid-cols-2 md:flex md:gap-[50px] gap-6 ">
                             <div className="flex   w-full md:w-[240px] flex-col gap-[15px]">
                                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                                    Adresse
+                                    주소
                                 </span>
 
                                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -240,7 +240,7 @@ export const FooterGerman = () => {
 
                             <div className="flex flex-col gap-[15px]">
                                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                                    Unsere Dienstleistungen
+                                    우리의 서비스
                                 </span>
 
                                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -286,24 +286,24 @@ export const FooterGerman = () => {
 
                             <div className="flex flex-col gap-[15px]">
                                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                                    Unternehmen
+                                    회사
                                 </span>
                                 <div className="flex flex-col transition-colors gap-[10px]">
                                     <Link
                                         to="/about"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Über uns
+                                        회사 소개
                                     </Link>
                                     <Link
                                         to="/contact"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Kontaktieren Sie uns
+                                        문의하기
                                     </Link>
 
                                     <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                                        Häufige Fragen
+                                        자주 묻는 질문
                                     </span>
                                     <Link
                                         to="/sitemap"
@@ -314,14 +314,14 @@ export const FooterGerman = () => {
                                             }, 100);
                                         }}
                                     >
-                                        Sitemap
+                                        사이트맵
                                     </Link>
                                 </div>
                             </div>
 
                             <div className="flex flex-col gap-[15px]">
                                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                                    Nachrichten & Benachrichtigungen
+                                    뉴스 및 알림
                                 </span>
 
                                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -329,31 +329,31 @@ export const FooterGerman = () => {
                                         to="/bis-qco-updates"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Blogs
+                                        블로그
                                     </Link>
                                     <Link
                                         to="/bis-qco-updates"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Neueste Updates
+                                        최신 업데이트
                                     </Link>
                                     <Link
                                         to="/ministry-updates"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Ministeriums-Updates
+                                        부처 업데이트
                                     </Link>
                                     <Link
                                         to="/webinar"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Webinar-Updates
+                                        웨비나 업데이트
                                     </Link>
                                     <Link
                                         to="/international-audits"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        Galerie
+                                        갤러리
                                     </Link>
                                 </div>
                             </div>
@@ -397,7 +397,7 @@ export const FooterGerman = () => {
 
                         <button className="flex items-center justify-center h-9 px-4 py-2 gap-x-1 rounded-full border border-[#7eafd9] bg-gray-50 hover:bg-[#E3EFF4] transition-all duration-200">
                             <span className="text-[13px] md:text-[15px] text-[#2a5075] font-geist leading-[20px] font-medium">
-                                Deutsch (DE)
+                                한국어 (KR)
                             </span>
                             <svg
                                 stroke="currentColor"
@@ -423,14 +423,14 @@ export const FooterGerman = () => {
                                 to="/privacy-policy"
                                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
                             >
-                                Datenschutzrichtlinie
+                                개인정보 보호정책
                             </Link>
                             <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
                             <Link
                                 to="/terms-and-conditions"
                                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
                             >
-                                Nutzungsbedingungen
+                                서비스 약관
                             </Link>
                         </div>
 
@@ -440,7 +440,7 @@ export const FooterGerman = () => {
                             to="/privacy-policy"
                             className="hidden md:block text-[#2a5075] font-geist hover:underline"
                         >
-                            Datenschutzrichtlinie
+                            개인정보 보호정책
                         </Link>
 
                         <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
@@ -449,7 +449,7 @@ export const FooterGerman = () => {
                             to="/terms-and-conditions"
                             className="hidden md:block text-[#2a5075] font-geist hover:underline"
                         >
-                            Nutzungsbedingungen
+                            서비스 약관
                         </Link>
                     </div>
                 </div>
@@ -458,14 +458,14 @@ export const FooterGerman = () => {
     )
 }
 
-export const ServicesGerman = () => {
+export const ServicesKorean = () => {
     return (
         <div className="pt-6 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
             <div className="max-w-[80rem] w-full mx-auto">
                 <div className="flex flex-col items-center justify-center">
                     <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
                         <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-                            Unsere Dienstleistungen
+                            우리의 서비스
                         </h2>
                     </BoxReveal>
 
@@ -473,7 +473,7 @@ export const ServicesGerman = () => {
                         <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
                             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
                             <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                                Indiens bester Zertifikatsberater
+                                인도 최고의 인증 컨설턴트
                             </span>
                             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
                         </div>
@@ -493,7 +493,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS-Zeichen (ISI-Lizenz) für ausländische Hersteller
+                            해외 제조업체용 BIS 마크 (ISI 라이센스)
                         </p>
                     </Link>
 
@@ -509,7 +509,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            CDSCO-Registrierungszertifizierung
+                            CDSCO 등록 인증
                         </p>
                     </Link>
 
@@ -525,7 +525,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS (CRS) Registrierung
+                            BIS 등록 (CRS)
                         </p>
                     </Link>
 
@@ -541,7 +541,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            Kunststoffabfallmanagement
+                            플라스틱 폐기물 관리
                         </p>
                     </Link>
 
@@ -557,7 +557,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            EPR-Zertifikatszertifizierungen
+                            EPR 인증서 인증
                         </p>
                     </Link>
 
@@ -573,7 +573,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            LMPC-Zertifikatszertifizierungen
+                            LMPC 인증서 인증
                         </p>
                     </Link>
 
@@ -589,7 +589,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS-Registrierungszertifikat
+                            BIS 등록 인증서
                         </p>
                     </Link>
 
@@ -605,7 +605,7 @@ export const ServicesGerman = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            ISI-ZEICHEN (BIS) für indische Hersteller
+                            인도 제조업체용 ISI 마크 (BIS)
                         </p>
                     </Link>
                 </div>
@@ -615,341 +615,7 @@ export const ServicesGerman = () => {
 };
 
 
-
-const PumpsAndLiquidElevatorsGermanPageBreadcrumb = () => {
-    return (
-        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
-            <div className="max-w-[80rem] mx-auto px-4">
-                <div className="w-fit font-inter">
-                    <Breadcrumb>
-                        <BreadcrumbList>
-                            <BreadcrumbItem>
-                                <BreadcrumbLink asChild>
-                                    <Link to="/">
-                                        Startseite
-                                    </Link>
-                                </BreadcrumbLink>
-                            </BreadcrumbItem>
-                            <BreadcrumbSeparator>
-                                <SlashIcon />
-                            </BreadcrumbSeparator>
-
-                            <BreadcrumbItem>
-                                <BreadcrumbLink asChild>
-                                    <Link to="/SchemeX-Products">
-                                        SchemeX Produkte
-                                    </Link>
-                                </BreadcrumbLink>
-                            </BreadcrumbItem>
-                            <BreadcrumbSeparator>
-                                <SlashIcon />
-                            </BreadcrumbSeparator>
-
-                            <BreadcrumbItem>
-                                <BreadcrumbPage>
-                                    BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen
-                                </BreadcrumbPage>
-                            </BreadcrumbItem>
-                        </BreadcrumbList>
-                    </Breadcrumb>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-
-const PumpsAndLiquidElevatorsGermanPageMainContent = () => {
-    return (
-        <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
-            <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-
-                {/* Left Side Content */}
-                <PumpsAndLiquidElevatorsPageMainContentLeftGerman />
-
-                {/* Right Side Content */}
-                <PumpsAndLiquidElevatorsPageMainContentRightGerman />
-            </div>
-        </div>
-    )
-}
-
-const PumpsAndLiquidElevatorsPageMainContentLeftGerman = () => {
-    return (
-        <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
-
-            {/* Blog Content */}
-            <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-
-                {/* Main Heading */}
-                <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-                    BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen in Indien
-                </h1>
-
-                {/* Introduction Paragraph 1 */}
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Das schnelle Industrie- und Infrastrukturwachstum in Indien erfordert Maschinen, die mehr leisten und die Erfüllung nationaler und internationaler Nachfrage sicherstellen. Pumpen und Flüssigkeitshebevorrichtungen sind entscheidend für Wasserressourcen, Landwirtschaft, Bauwesen, Energie, Industrie und viele andere Bereiche. Ein defektes Gerät kann die Sicherheit gefährden, den Betrieb stören und finanzielle Verluste verursachen, wenn es nicht nach den richtigen Spezifikationen mit Qualitätskontrolle hergestellt wird.
-                </p>
-
-                {/* Introduction Paragraph 2 */}
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Um dies zu kontrollieren, hat das BIS (Bureau of Indian Standards) die Scheme X Zertifizierung eingeführt, die es erforderlich macht, dass jede Pumpe und Flüssigkeitshebevorrichtung den nationalen Qualitätsstandard erfüllt, bevor sie in Indien verkauft wird.
-                </p>
-
-                {/* Introduction Paragraph 3 */}
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    In diesem Beitrag möchten wir die Bedeutung der BIS-Zertifizierung für Pumpen, die Bedeutung der Omnibus Technical Regulation (OTR) 2024 und den Prozess zur Erlangung einer BIS-Lizenz für Pumpen unter Scheme X für angehende Hersteller behandeln.
-                </p>
-
-                {/* Why Pumps and Elevators Matter Section */}
-                <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Warum Pumpen und Flüssigkeitshebevorrichtungen wichtig sind
-                </div>
-
-                {/* Pumps Subsection */}
-                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Pumpen
-                </div>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Pumpen sind unverzichtbare Geräte für den Transport von Flüssigkeiten oder Schlämmen in verschiedenen Industrien. Sie werden weit verbreitet eingesetzt in:
-                </p>
-
-                {/* Pumps Usage Areas */}
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Landwirtschaft und Bewässerungssysteme</li>
-                    <li>Öffentliche Wasserversorgung und Haushaltsnutzung</li>
-                    <li>Abwasser- und Kläranlagen</li>
-                    <li>Öl- und Gaspipelines</li>
-                    <li>Klimaanlagen und industrielle Kühlsysteme</li>
-                </ul>
-
-                {/* Liquid Elevators Subsection */}
-                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Flüssigkeitshebevorrichtungen
-                </div>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Hebepumpen, vertikale Flüssigkeitshebevorrichtungen zum Heben von Flüssigkeiten dienen zum Pumpen:
-                </p>
-
-                {/* Liquid Elevators Usage Areas */}
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Hochmassen-Wasserverteilungssysteme</li>
-                    <li>Industrielle Silos/Lagertanks</li>
-                    <li>In der Energie-, Chemie- und Verfahrensindustrie</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Da sie weit verbreitet sind, können billige Pumpen oder Flüssigkeitsheber verursachen:
-                </p>
-
-                {/* Problems with Poor Quality Equipment */}
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Mechanische Ausfälle</li>
-                    <li>Elektrische Gefahren</li>
-                    <li>Leckagen und Korrosion</li>
-                    <li>Unfälle durch Sicherheitsrisiken und wirtschaftliche Verluste</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Deshalb ist BIS für Pumpen und Flüssigkeitshebevorrichtungen ein dringend benötigter Schutz für Hersteller und Käufer gleichermaßen.
-                </p>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* What is BIS and What is Scheme X Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Was ist BIS und was ist Scheme X?
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Das Bureau of Indian Standards (BIS) ist die nationale Normungsorganisation Indiens zur Zertifizierung der Qualität und Sicherheit von Produkten. Um wichtige Anlagen und Maschinen zu kontrollieren, hat das BIS ab dem 16. März 2022 die Scheme X Zertifizierung unter den BIS Conformity Assessment Regulations, 2018 obligatorisch gemacht.
-                </p>
-
-                {/* Scheme X Key Highlights */}
-                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Scheme X Zertifizierung für Pumpen - Wichtige Highlights
-                </h3>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-                    <li>Obligatorisch für indische und ausländische Hersteller</li>
-                    <li>Gilt für Pumpen, Motoren und Flüssigkeitshebevorrichtungen unter indischen Standards</li>
-                    <li>Umfasst Labortests, Fabrikinspektionen, konsistente Compliance-Prüfungen</li>
-                    <li>Verleiht rechtliche Befugnisse zur Gewährung der Nutzung des BIS-Zeichens für Pumpen durch Hersteller als Nachweis der Zertifizierung</li>
-                </ul>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* OTR Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Omnibus Technical Regulation (OTR) für Pumpen
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Die OTR 2024 wurde vom Ministerium für Schwerindustrie angekündigt, die alle Pumpen und Flüssigkeitshebevorrichtungen zur Einhaltung der Scheme X Zertifizierung verpflichtet.
-                </p>
-
-                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Frist für die Compliance:
-                </div>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Bis zum 1. September 2026 müssen alle Hersteller und Importeure eine gültige BIS-Lizenz für Pumpen unter Scheme X erhalten. Nichteinhaltung kann zu hohen Geldstrafen sowie zur Schließung des Verkaufs und zum Ausschluss von öffentlichen Ausschreibungen führen.
-                </p>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* Importance Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Warum ist die BIS-Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen wichtig?
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    1. Sicherheitsgewähr: Stellt sicher, dass die Ausrüstung für die Betriebsanforderungen konzipiert und gebaut ist und nicht zu folgenden Problemen führt:
-                </p>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Elektrische Störungen</li>
-                    <li>Leckagen und Rost</li>
-                    <li>Ausfälle und Maschinendefekte</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    2. Marktvorteil
-                </p>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>BIS-zertifizierte Pumpen werden oft für öffentliche Projekte, Regierungsausschreibungen usw. benötigt</li>
-                    <li>Bietet Wettbewerbsvorteile gegenüber nicht-zertifizierten Produkten</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    3. Verbrauchervertrauen: Das ISI-Zeichen auf Pumpen gibt dem Käufer Sicherheit über die Qualität und garantiert die Effizienz des Produkts.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    4. Globale Marken erhalten einfachen Marktzugang: Ausländische OEMs erhalten bei Erfüllung der Scheme X Normen einfachen Zugang zu Indiens reguliertem Markt.
-                </p>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* Types of Pumps Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Arten von Pumpen unter BIS Scheme X Registrierung
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    BIS Scheme X umfasst verschiedene Pumpentypen einschließlich:
-                </p>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>Kreiselpumpen</li>
-                    <li>Tauchpumpen</li>
-                    <li>Druckerhöhungspumpen</li>
-                    <li>Mehrstufige Pumpen</li>
-                    <li>Verdrängerpumpen</li>
-                    <li>Vertikale Turbinenpumpen</li>
-                    <li>Chemische Verfahrenspumpen</li>
-                    <li>Membranpumpen</li>
-                    <li>Schlammpumpen</li>
-                </ul>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Jeder Typ muss den relevanten indischen Standards (IS-Codes) entsprechen, wie z.B. IS 16819:2018/ISO 12100:2010 (Sicherheit von Maschinen - Allgemeine Prinzipien für Design - Risikobewertung und Risikominderung).
-                </p>
-
-                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-                    Für Flüssigkeitshebevorrichtungen umfasst die Zertifizierung:
-                </div>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-                    <li>Durchflussrate und Förderhöhe</li>
-                    <li>Materialkompatibilität</li>
-                    <li>Energieeffizienz</li>
-                    <li>Betriebssicherheit</li>
-                </ul>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* How to Get BIS Scheme X Section */}
-                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Wie erhält man BIS Scheme X für Pumpen?
-                </h2>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Anwendbare Standards identifizieren: Das Angebot muss die entsprechenden IS-Codes spezifizieren (zum Beispiel IS 9079 für Tauchpumpen).
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Produktprüfung: Obligatorische Tests zu Leistung und Sicherheit in BIS-anerkannten Laboren.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Fabrikinspektion: BIS-Behörden inspizieren die Produktionsstätte, um die Umsetzung von Qualitätskontrollverfahren zu überprüfen.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Dokumentation und Antrag: Technische Spezifikationen, Prüfberichte und Qualitätshandbücher sind dem BIS-Antragsformular beizufügen.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Ausstellung des BIS-Zertifikats für Pumpen: Bei Genehmigung erhalten Hersteller die Lizenz zur Anwendung des BIS-Zeichens unter Scheme X.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Laufende Überwachung: BIS führt regelmäßige Audits und Stichprobenkontrollen von Produkten durch, um die kontinuierliche Compliance sicherzustellen.
-                </p>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* Penalties Section */}
-                <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-                    Strafen bei Nichteinhaltung
-                </div>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Hersteller, die bis zum 1. September 2026 keine BIS-Zertifizierung erhalten, werden folgenden Maßnahmen unterworfen:
-                </p>
-
-                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-                    <li>Verbot des Verkaufs/Imports von nicht-zertifizierten Pumpen</li>
-                    <li>Beschlagnahme von Artikeln und Geldstrafen</li>
-                    <li>Disqualifikation von Regierungs- und PSU-Aufträgen</li>
-                    <li>Langfristiger Reputationsschaden in INDIEN</li>
-                </ul>
-
-                {/* Separator Line */}
-                <div className="h-px w-full bg-gray-300 my-6"></div>
-
-                {/* Conclusion Section */}
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    <span className="font-medium text-[#1e1e1e]">Fazit:</span> Die BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen mit der OTR 2024 ist ein Meilenstein in der Standardisierung der indischen Industrie.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    Für diejenigen mit Herstellungs-, Import- oder Exportgeschäften ist die BIS-Registrierung für Pumpen nicht nur ein gesetzlicher Compliance-Prozess, sondern auch eine strategische Entscheidung zur Gewährleistung der Sicherheitsdominanz über potenzielle Risiken, zum Aufbau von Verbrauchervertrauen und zum Eintritt in den erweiterten Markt Indiens.
-                </p>
-
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    Die BIS-Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen ist eine langfristige Investition zur Etablierung der Glaubwürdigkeit und des Marktes Ihres Produkts.
-                </p>
-
-                <AboutAuthorGerman />
-
-            </div>
-        </div>
-    )
-}
-
-
-export const AboutAuthorGerman = () => {
+export const AboutAuthorKorean = () => {
     return (
         <section className="">
             <div className="relative overflow-hidden bg-gradient-to-br from-[#F9F7F2] via-white to-[#F9F7F2] border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
@@ -961,7 +627,7 @@ export const AboutAuthorGerman = () => {
                     {/* Header */}
                     <div className="flex items-center gap-3 mb-3">
                         <h3 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781]">
-                            Über den Autor
+                            저자 소개
                         </h3>
                         <div className="flex-1 h-[1px] bg-gradient-to-r from-[#1A8781]/20 to-transparent"></div>
                     </div>
@@ -973,7 +639,7 @@ export const AboutAuthorGerman = () => {
                                 Dhruv Aggarwal
                             </p>
                             <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                                Leiter der Betriebsabteilung bei Sun Certifications India
+                                Sun Certifications India 운영 책임자
                             </p>
                         </div>
 
@@ -981,14 +647,14 @@ export const AboutAuthorGerman = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
                             <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
                                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                                    <span className="font-medium">Erfahrung:</span>{" "}
-                                    10+ Jahre & 1000+ Projekte abgewickelt
+                                    <span className="font-medium">경험:</span>{" "}
+                                    10년 이상, 1000개 이상 프로젝트 관리
                                 </p>
                             </div>
 
                             <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
                                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                                    Ausgezeichnet von vielen indischen und internationalen Organisationen
+                                    다수의 인도 국내외 조직으로부터 수상
                                 </p>
                             </div>
                         </div>
@@ -1005,7 +671,7 @@ export const AboutAuthorGerman = () => {
                                     <Linkedin className="w-4 h-4 text-[#0077B5]" />
                                     <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
                                         <span className="font-medium">LinkedIn:</span>{" "}
-                                        Verbinden Sie sich mit mir
+                                        연결하기
                                     </span>
                                 </a>
 
@@ -1016,7 +682,7 @@ export const AboutAuthorGerman = () => {
                                     <Mail className="w-4 h-4 text-[#1A8781]" />
                                     <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
                                         <span className="font-medium">
-                                            Kontakt:
+                                            연락처:
                                         </span>{" "}
                                         admin@bis-certifications.com
                                     </span>
@@ -1031,7 +697,339 @@ export const AboutAuthorGerman = () => {
 }
 
 
-const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
+const PumpsAndLiquidElevatorsKoreanPageBreadcrumb = () => {
+    return (
+        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+            <div className="max-w-[80rem] mx-auto px-4">
+                <div className="w-fit font-inter">
+                    <Breadcrumb>
+                        <BreadcrumbList>
+                            <BreadcrumbItem>
+                                <BreadcrumbLink asChild>
+                                    <Link to="/">
+                                        홈
+                                    </Link>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbSeparator>
+                                <SlashIcon />
+                            </BreadcrumbSeparator>
+
+                            <BreadcrumbItem>
+                                <BreadcrumbLink asChild>
+                                    <Link to="/SchemeX-Products">
+                                        SchemeX 제품
+                                    </Link>
+                                </BreadcrumbLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbSeparator>
+                                <SlashIcon />
+                            </BreadcrumbSeparator>
+
+                            <BreadcrumbItem>
+                                <BreadcrumbPage>
+                                    펌프 및 액체 엘리베이터의 BIS Scheme X 인증
+                                </BreadcrumbPage>
+                            </BreadcrumbItem>
+                        </BreadcrumbList>
+                    </Breadcrumb>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const PumpsAndLiquidElevatorsKoreanPageMainContent = () => {
+    return (
+        <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+
+                {/* Left Side Content */}
+                <PumpsAndLiquidElevatorsPageMainContentLeftKorean />
+
+                {/* Right Side Content */}
+                <PumpsAndLiquidElevatorsPageMainContentRightKorean />
+            </div>
+        </div>
+    )
+}
+
+const PumpsAndLiquidElevatorsPageMainContentLeftKorean = () => {
+    return (
+        <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+
+            {/* Blog Content */}
+            <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
+
+                {/* Main Heading */}
+                <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
+                    인도의 펌프 및 액체 엘리베이터 BIS Scheme X 인증
+                </h1>
+
+                {/* Introduction Paragraph 1 */}
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    인도의 급속한 산업 및 인프라 성장으로 인해 국내외 수요를 충족하고 더 많이 작동하는 기계가 필요합니다. 펌프와 액체 엘리베이터는 수자원, 농업, 건설, 에너지, 산업 및 기타 많은 분야에 중요합니다. 결함이 있는 장비는 적절한 사양으로 품질 관리가 이루어지지 않고 제조될 경우 안전을 해치고, 운영을 중단시키며, 재정적 손실을 야기할 수 있습니다.
+                </p>
+
+                {/* Introduction Paragraph 2 */}
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    이를 통제하기 위해 BIS(인도 표준국)는 Scheme X 인증을 시작하여 모든 펌프와 액체 엘리베이터가 인도에서 판매되기 전에 국가 품질 기준을 충족하도록 요구하고 있습니다.
+                </p>
+
+                {/* Introduction Paragraph 3 */}
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    이 글에서는 펌프 BIS 인증의 중요성, 포괄적 기술 규정(OTR) 2024의 중요성, 그리고 의욕적인 제조업체를 위한 Scheme X 하에서 펌프용 BIS 라이센스를 취득하는 과정에 대해 다루고자 합니다.
+                </p>
+
+                {/* Why Pumps and Elevators Matter Section */}
+                <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    왜 펌프와 액체 엘리베이터가 중요한가
+                </div>
+
+                {/* Pumps Subsection */}
+                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    펌프
+                </div>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    펌프는 다양한 산업에서 유체나 슬러리를 운반하는 데 필수적인 장치입니다. 다음 분야에서 널리 사용됩니다:
+                </p>
+
+                {/* Pumps Usage Areas */}
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>농업 및 관개 시스템</li>
+                    <li>공공 급수 및 가정용 사용</li>
+                    <li>폐수 및 배출수 처리 시설</li>
+                    <li>석유 및 가스 파이프라인</li>
+                    <li>에어컨 및 산업 냉각 시스템</li>
+                </ul>
+
+                {/* Liquid Elevators Subsection */}
+                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    액체 엘리베이터
+                </div>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    리프트 펌프, 액체를 끌어올리는 수직 액체 엘리베이터는 다음 펌핑에 사용됩니다:
+                </p>
+
+                {/* Liquid Elevators Usage Areas */}
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>고질량 펌프 급수 분배 시스템</li>
+                    <li>산업 사일로/저장 탱크</li>
+                    <li>에너지, 화학 및 공정 산업에서</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    일반적이기 때문에 저렴한 펌프나 액체 엘리베이터는 다음을 야기할 수 있습니다:
+                </p>
+
+                {/* Problems with Poor Quality Equipment */}
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>기계적 고장</li>
+                    <li>전기적 위험</li>
+                    <li>누출 및 부식</li>
+                    <li>안전 위험과 경제적 손실로 인한 사고</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    그렇기 때문에 펌프와 액체 엘리베이터의 BIS는 제조업체와 구매자 모두에게 매우 필요한 보호입니다.
+                </p>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* What is BIS and What is Scheme X Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    BIS란 무엇이고 Scheme X란 무엇인가?
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    인도 표준국(BIS)은 제품의 품질과 안전성을 인증하는 인도의 국가 표준화 기관입니다. 중요한 설치 및 기계를 통제하기 위해 BIS는 2018년 BIS 적합성 평가 규정 하에 2022년 3월 16일부터 Scheme X 인증 취득을 의무화했습니다.
+                </p>
+
+                {/* Scheme X Key Highlights */}
+                <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    펌프 Scheme X 인증의 주요 포인트
+                </h3>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+                    <li>인도 및 외국 제조업체에게 의무적</li>
+                    <li>인도 표준 하에 포함된 펌프, 모터 및 액체 엘리베이터에 적용</li>
+                    <li>실험실 테스트, 공장 검사, 일관된 적합성 검증 포함</li>
+                    <li>인증의 증명으로 제조업체의 펌프 BIS 마크 사용을 허가하는 법적 권한 추가.</li>
+                </ul>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* OTR Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    펌프용 포괄적 기술 규정(OTR)
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    OTR 2024는 중공업부에 의해 발표되었으며, 모든 펌프와 액체 엘리베이터가 Scheme X 인증을 준수하도록 규정하고 있습니다.
+                </p>
+
+                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    준수 기한:
+                </div>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    2026년 9월 1일까지 모든 제조업체와 수입업체는 Scheme X 하에서 펌프용 유효한 BIS 라이센스를 취득해야 합니다. 비준수는 무거운 벌금뿐만 아니라 판매 중단 및 공공 입찰에서의 제외로 이어질 수 있습니다.
+                </p>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* Importance Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    펌프와 액체 엘리베이터의 BIS 인증이 왜 중요한가?
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    1. 안전 보장: 장비가 운영의 엄격함을 위해 설계되고 구축되어 다음을 야기하지 않음을 보장:
+                </p>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>전기적 고장</li>
+                    <li>누출 및 녹</li>
+                    <li>기계 파손 및 고장</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    2. 시장 우위
+                </p>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>BIS 인증 펌프는 공공 프로젝트, 정부 입찰 등에서 종종 필요</li>
+                    <li>비인증 제품 대비 경쟁 우위 제공.</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    3. 소비자 신뢰: 펌프의 ISI 마크는 구매자에게 품질에 대한 신뢰를 주고 제품 효율성을 보장합니다.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    4. 글로벌 브랜드가 쉬운 시장 접근 획득: 외국 OEM은 Scheme X 기준을 준수함으로써 인도의 규제 시장에 쉽게 접근할 수 있습니다.
+                </p>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* Types of Pumps Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    BIS Scheme X 등록 하의 펌프 유형
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    BIS Scheme X는 다음을 포함한 다양한 펌프 유형을 포함합니다:
+                </p>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+                    <li>원심 펌프</li>
+                    <li>잠수 펌프</li>
+                    <li>부스터 펌프</li>
+                    <li>다단 펌프</li>
+                    <li>용적식 펌프</li>
+                    <li>수직 터빈 펌프</li>
+                    <li>화학 공정 펌프</li>
+                    <li>다이어프램 펌프</li>
+                    <li>슬러리 펌프</li>
+                </ul>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    각 유형은 IS 16819:2018/ISO 12100:2010(기계 안전성 - 설계의 일반 원칙 - 위험 평가 및 위험 감소)과 같은 관련 인도 표준(IS 코드)을 준수해야 합니다.
+                </p>
+
+                <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+                    액체 엘리베이터의 경우, 인증은 다음을 다룹니다:
+                </div>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
+                    <li>유량 및 토출 높이</li>
+                    <li>재료 호환성</li>
+                    <li>에너지 효율성</li>
+                    <li>운영 안전성</li>
+                </ul>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* How to Get BIS Scheme X Section */}
+                <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    펌프용 BIS Scheme X를 어떻게 취득하나?
+                </h2>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    적용 가능한 표준 식별: 견적은 적절한 IS 코드(예: 잠수 펌프용 IS 9079)를 지정해야 합니다.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    제품 테스트: BIS 승인 실험실에서 성능 및 안전성 의무 테스트.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    공장 검사: BIS 당국이 품질 관리 절차의 구현을 확인하기 위해 생산 현장을 검사.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    문서화 및 신청: 기술 사양, 테스트 보고서 및 품질 매뉴얼이 BIS 신청 양식에 첨부되어야 합니다.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    펌프용 BIS 인증서 발급: 승인 후 제조업체는 Scheme X 하에서 BIS 마크를 적용할 수 있는 라이센스를 받습니다.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    지속적인 감시: BIS는 지속적인 준수를 보장하기 위해 정기적인 감사와 무작위 제품 검사를 실시합니다.
+                </p>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* Penalties Section */}
+                <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+                    비준수에 대한 처벌
+                </div>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    2026년 9월 1일에 BIS 인증 취득에 실패한 제조업체는 다음의 대상이 됩니다:
+                </p>
+
+                <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
+                    <li>비인증 펌프의 판매/수입 금지</li>
+                    <li>물품 몰수 및 벌금.</li>
+                    <li>정부 및 PSU 주문에서 실격</li>
+                    <li>인도에서의 장기적 평판 손상</li>
+                </ul>
+
+                {/* Separator Line */}
+                <div className="h-px w-full bg-gray-300 my-6"></div>
+
+                {/* Conclusion Section */}
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    <span className="font-medium text-[#1e1e1e]">결론:</span> OTR 2024가 적용될 펌프와 액체 엘리베이터의 BIS Scheme X 인증; 인도 산업 표준화의 이정표.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-4">
+                    제조, 수입 또는 수출 활동을 하는 분들에게 펌프 BIS 등록은 단순히 완료해야 할 법정 준수 과정이 아니라, 잠재적 위험에 대한 안전성 우위 확보, 소비자 신뢰 구축, 인도의 확장된 시장 진입을 위한 전략적 결정이기도 합니다.
+                </p>
+
+                <p className="text-gray-600 text-base font-geist mb-6">
+                    펌프와 액체 엘리베이터의 BIS 인증은 귀하의 제품의 신뢰성과 시장을 구축하기 위한 장기적 투자입니다.
+                </p>
+
+                <AboutAuthorKorean />
+
+            </div>
+        </div>
+    )
+}
+
+
+const PumpsAndLiquidElevatorsPageMainContentRightKorean = () => {
     const [formData, setFormData] = useState({
         fullName: "",
         phoneNumber: "",
@@ -1043,7 +1041,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
 
     // Get current page URL and name for form submission
     const currentUrl = window.location.href;
-    const currentPageName = "SchemeX Product - BIS Certification for Pumps & Liquid Elevators (German)";
+    const currentPageName = "SchemeX Product - BIS Certification for Pumps & Liquid Elevators (Korean)";
 
     // Add BASE_URL like other forms
     const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
@@ -1081,7 +1079,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
             const result = await response.json();
 
             if (result.success) {
-                setSubmitStatus({ type: "success", message: "Vielen Dank! Wir werden Sie innerhalb von 24 Stunden kontaktieren." });
+                setSubmitStatus({ type: "success", message: "감사합니다! 24시간 이내에 연락드리겠습니다." });
                 setFormData({
                     fullName: "",
                     phoneNumber: "",
@@ -1089,13 +1087,13 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                     message: "",
                 });
             } else {
-                setSubmitStatus({ type: "error", message: "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut." });
+                setSubmitStatus({ type: "error", message: "오류가 발생했습니다. 다시 시도해주세요." });
             }
         } catch (error) {
             console.error("Form submission error:", error);
             setSubmitStatus({
                 type: "error",
-                message: "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+                message: "문제가 발생했습니다. 다시 시도해주세요.",
             });
         } finally {
             setIsSubmitting(false);
@@ -1109,14 +1107,14 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                 <div className="flex gap-2 items-center">
                     <PhoneCall className="text-[#232327]" />
                     <div className="text-xl font-geist font-semibold text-[#232327]">
-                        Kostenlosen Rückruf anfordern
+                        무료 콜백 요청
                     </div>
                 </div>
 
                 {/* Intro Text */}
                 <p className="mt-3 text-sm text-gray-600 font-geist">
-                    Hinterlassen Sie Ihre Daten unten und unsere Experten werden Sie innerhalb von 24
-                    Stunden zurückrufen, um Ihre regulatorischen Compliance-Bedürfnisse zu besprechen.
+                    아래에 세부 정보를 남겨주시면 전문가가 24시간 이내에 연락드려
+                    규제 준수 요구사항에 대해 논의해드립니다.
                 </p>
 
                 {/* Status Message */}
@@ -1144,7 +1142,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                             value={formData.fullName}
                             onChange={handleInputChange}
                             required
-                            placeholder="Ihr Name*"
+                            placeholder="성명*"
                             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
                         />
                     </div>
@@ -1160,7 +1158,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                             value={formData.phoneNumber}
                             onChange={handleInputChange}
                             required
-                            placeholder="Telefonnummer*"
+                            placeholder="전화번호*"
                             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
                         />
                     </div>
@@ -1176,7 +1174,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                             value={formData.email}
                             onChange={handleInputChange}
                             required
-                            placeholder="E-Mail-Adresse*"
+                            placeholder="이메일 주소*"
                             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
                         />
                     </div>
@@ -1190,7 +1188,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleInputChange}
-                            placeholder="Benötigte Zertifizierung*"
+                            placeholder="필요한 인증*"
                             rows="3"
                             required
                             className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
@@ -1203,7 +1201,7 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
                         className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <span className="relative z-10 flex items-center">
-                            {isSubmitting ? "Wird gesendet..." : "Rückruf anfordern"}
+                            {isSubmitting ? "전송 중..." : "콜백 요청"}
                             <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </span>
                         <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -1212,11 +1210,11 @@ const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
 
                 {/* Privacy Note */}
                 <p className="mt-3 text-xs text-center text-gray-500 font-geist">
-                    Mit dem Absenden dieses Formulars stimmen Sie unserer{" "}
+                    이 양식을 제출함으로써 당사의{" "}
                     <a href="#" className="text-blue-600 hover:underline">
-                        Datenschutzrichtlinie
+                        개인정보 보호정책
                     </a>{" "}
-                    zu und willigen ein, kontaktiert zu werden.
+                    에 동의하고 연락을 받는 것에 동의합니다.
                 </p>
             </div>
         </div>

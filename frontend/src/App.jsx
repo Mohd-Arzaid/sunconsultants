@@ -70,6 +70,16 @@ import Centrifuges from "./schemeXProducts/Centrifuges";
 import Compressors from "./schemeXProducts/Compressors";
 import HeatTreatmentEquipment from "./schemeXProducts/HeatTreatmentEquipment";
 import PumpsAndLiquidElevatorsGerman from "./schemeXProducts/PumpsAndLiquidElevatorsGerman";
+import PumpsAndLiquidElevatorsSpanish from "./schemeXProducts/PumpsAndLiquidElevatorsSpanish";
+import PumpsAndLiquidElevatorsFrench from "./schemeXProducts/PumpsAndLiquidElevatorsFrench";
+import PumpsAndLiquidElevatorsIndonesian from "./schemeXProducts/PumpsAndLiquidElevatorsIndonesian";
+import PumpsAndLiquidElevatorsItalian from "./schemeXProducts/PumpsAndLiquidElevatorsItalian";
+import PumpsAndLiquidElevatorsJapanese from "./schemeXProducts/PumpsAndLiquidElevatorsJapanese";
+import PumpsAndLiquidElevatorsKorean from "./schemeXProducts/PumpsAndLiquidElevatorsKorean";
+import PumpsAndLiquidElevatorsDutch from "./schemeXProducts/PumpsAndLiquidElevatorsDutch";
+import PumpsAndLiquidElevatorsThai from "./schemeXProducts/PumpsAndLiquidElevatorsThai";
+import PumpsAndLiquidElevatorsVietnamese from "./schemeXProducts/PumpsAndLiquidElevatorsVietnamese";
+import PumpsAndLiquidElevatorsArabic from "./schemeXProducts/PumpsAndLiquidElevatorsArabic";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -192,8 +202,39 @@ function App() {
           {/* english */}
           <Route path="bis-scheme-x-certification-for-pumps-and-liquid-elevators" element={<PumpsAndLiquidElevators />} />
           {/* german */}
-          <Route path="bis-scheme-x-certification-for-pumps-and-liquid-elevators-german" element={<PumpsAndLiquidElevatorsGerman />} />
-          
+          <Route path="bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege" element={<PumpsAndLiquidElevatorsGerman />} />
+          {/* spanish */}
+          <Route path="certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos" element={<PumpsAndLiquidElevatorsSpanish />} />
+
+          {/* French */}
+          <Route path="certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides" element={<PumpsAndLiquidElevatorsFrench />} />
+
+          {/* Indonesian */}
+          <Route path="sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan" element={<PumpsAndLiquidElevatorsIndonesian />} />
+
+          {/* Italian */}
+          <Route path="certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi" element={<PumpsAndLiquidElevatorsItalian />} />
+
+          {/* Japanese */}
+          <Route path="bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa" element={<PumpsAndLiquidElevatorsJapanese />} />
+
+          {/* Korean */}
+          <Route path="bis-seukim-x-injeung-peomp-mich-aegche-seunggangi" element={<PumpsAndLiquidElevatorsKorean />} />
+
+          {/* Dutch */}
+          <Route path="bis-schema-x-certificering-voor-pompen-en-vloeistofelevators" element={<PumpsAndLiquidElevatorsDutch />} />
+
+          {/* Thai */}
+          <Route path="kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam" element={<PumpsAndLiquidElevatorsThai />} />
+
+          {/* Vietnamese */}
+          <Route path="chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long" element={<PumpsAndLiquidElevatorsVietnamese />} />
+
+          {/* Arabic */}
+          <Route path="shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail" element={<PumpsAndLiquidElevatorsArabic />} />
+
+
+
 
           <Route path="bis-scheme-x-certification-for-packing-machinery" element={<PackingMachinery />} />
           <Route path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery" element={<Centrifuges />} />

@@ -37,6 +37,21 @@ const PumpsAndLiquidElevators = () => {
 
                 {/* Canonical URL */}
                 <link rel="canonical" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
+
+                {/* HrefLang Tags */}
+                <link rel="alternate" hrefLang="en" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
+                <link rel="alternate" hrefLang="de" href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege" />
+                <link rel="alternate" hrefLang="es" href="https://bis-certifications.com/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos" />
+                <link rel="alternate" hrefLang="fr" href="https://bis-certifications.com/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides" />
+                <link rel="alternate" hrefLang="id" href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan" />
+                <link rel="alternate" hrefLang="it" href="https://bis-certifications.com/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi" />
+                <link rel="alternate" hrefLang="ja" href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa" />
+                <link rel="alternate" hrefLang="ko" href="https://bis-certifications.com/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi" />
+                <link rel="alternate" hrefLang="nl" href="https://bis-certifications.com/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators" />
+                <link rel="alternate" hrefLang="th" href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam" />
+                <link rel="alternate" hrefLang="vi" href="https://bis-certifications.com/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long" />
+                <link rel="alternate" hrefLang="ar" href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail" />
+                <link rel="alternate" hrefLang="x-default" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
             </Helmet>
 
             <PumpsAndLiquidElevatorsPageBreadcrumb />
