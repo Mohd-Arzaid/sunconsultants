@@ -766,6 +766,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftItalian = () => {
                     Certificazione BIS Scheme X per Pompe e Elevatori di Liquidi in India
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     La rapida crescita industriale e infrastrutturale in India richiede macchine che funzionino di più e garantiscano la soddisfazione della domanda nazionale e internazionale. Le pompe e gli elevatori di liquidi sono cruciali per le risorse idriche, l&apos;agricoltura, l&apos;edilizia, l&apos;energia, l&apos;industria e molti altri settori. Un&apos;attrezzatura difettosa può compromettere la sicurezza, interrompere le operazioni e creare perdite finanziarie se non prodotta secondo le specifiche appropriate con il controllo di qualità in atto.

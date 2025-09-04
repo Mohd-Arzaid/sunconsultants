@@ -766,6 +766,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftKorean = () => {
                     인도의 펌프 및 액체 엘리베이터 BIS Scheme X 인증
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     인도의 급속한 산업 및 인프라 성장으로 인해 국내외 수요를 충족하고 더 많이 작동하는 기계가 필요합니다. 펌프와 액체 엘리베이터는 수자원, 농업, 건설, 에너지, 산업 및 기타 많은 분야에 중요합니다. 결함이 있는 장비는 적절한 사양으로 품질 관리가 이루어지지 않고 제조될 경우 안전을 해치고, 운영을 중단시키며, 재정적 손실을 야기할 수 있습니다.

@@ -766,6 +766,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftDutch = () => {
                     BIS Scheme X Certificering voor Pompen en Vloeistofelevators in India
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     De snelle industriële en infrastructurele groei in India vereist machines die meer werken en zorgen voor tevredenheid van de binnenlandse en internationale vraag. Pompen en vloeistofelevators zijn cruciaal voor waterbronnen, landbouw, bouw, energie, industrie en vele andere sectoren. Defecte apparatuur kan de veiligheid in gevaar brengen, operaties verstoren en financiële verliezen veroorzaken als deze niet wordt geproduceerd volgens de juiste specificaties met kwaliteitscontrole.

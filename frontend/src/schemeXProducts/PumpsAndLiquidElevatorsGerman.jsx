@@ -686,6 +686,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftGerman = () => {
                     BIS Scheme X Zertifizierung für Pumpen und Flüssigkeitshebevorrichtungen in Indien
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     Das schnelle Industrie- und Infrastrukturwachstum in Indien erfordert Maschinen, die mehr leisten und die Erfüllung nationaler und internationaler Nachfrage sicherstellen. Pumpen und Flüssigkeitshebevorrichtungen sind entscheidend für Wasserressourcen, Landwirtschaft, Bauwesen, Energie, Industrie und viele andere Bereiche. Ein defektes Gerät kann die Sicherheit gefährden, den Betrieb stören und finanzielle Verluste verursachen, wenn es nicht nach den richtigen Spezifikationen mit Qualitätskontrolle hergestellt wird.

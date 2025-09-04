@@ -766,6 +766,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftJapanese = () => {
                     インドにおけるポンプと液体エレベーターのBIS Scheme X認証
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     インドの急速な産業・インフラ成長により、国内外の需要満足を確保し、より多く稼働する機械が必要とされています。ポンプと液体エレベーターは、水資源、農業、建設、エネルギー、工業、その他多くの分野にとって重要です。不良な機器は、適切な仕様で品質管理が行われずに製造された場合、安全性を損ない、運用を中断し、経済的損失を生み出す可能性があります。

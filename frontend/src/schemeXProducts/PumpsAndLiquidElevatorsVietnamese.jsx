@@ -766,6 +766,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftVietnamese = () => {
                     Chứng nhận BIS Scheme X cho Máy bơm và Thang máy chất lỏng tại Ấn Độ
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     Sự tăng trưởng nhanh chóng về công nghiệp và cơ sở hạ tầng ở Ấn Độ đòi hỏi máy móc hoạt động nhiều hơn và đáp ứng nhu cầu trong nước và quốc tế. Máy bơm và thang máy chất lỏng rất quan trọng đối với nguồn nước, nông nghiệp, xây dựng, năng lượng, công nghiệp và nhiều lĩnh vực khác. Thiết bị bị lỗi có thể gây nguy hiểm cho an toàn, làm gián đoạn hoạt động và gây tổn thất tài chính nếu không được sản xuất theo đặc tả phù hợp với kiểm soát chất lượng.

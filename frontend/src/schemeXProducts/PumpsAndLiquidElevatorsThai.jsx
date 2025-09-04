@@ -766,6 +766,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftThai = () => {
                     การรับรอง BIS Scheme X สำหรับปั๊มและลิฟต์ของเหลวในอินเดีย
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     การเจริญเติบโตทางอุตสาหกรรมและโครงสร้างพื้นฐานอย่างรวดเร็วในอินเดียต้องการเครื่องจักรที่ทำงานมากขึ้นและให้ความพึงพอใจต่อความต้องการในประเทศและต่างประเทศ ปั๊มและลิฟต์ของเหลวมีความสำคัญต่อแหล่งน้ำ การเกษตร การก่อสร้าง พลังงาน อุตสาหกรรม และภาคส่วนอื่น ๆ อีกมากมาย อุปกรณ์ที่ผิดพลาดอาจเป็นอันตรายต่อความปลอดภัย รบกวนการดำเนินงาน และทำให้เกิดการสูญเสียทางการเงินหากไม่ได้ผลิตตามข้อกำหนดที่เหมาะสมพร้อมการควบคุมคุณภาพ

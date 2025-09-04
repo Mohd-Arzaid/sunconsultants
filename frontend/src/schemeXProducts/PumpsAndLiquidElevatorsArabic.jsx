@@ -766,6 +766,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftArabic = () => {
                     شهادة BIS Scheme X للمضخات ومصاعد السوائل في الهند
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     النمو الصناعي والبنية التحتية السريع في الهند يتطلب آلات تعمل أكثر وتوفر الرضا للطلب المحلي والدولي. المضخات ومصاعد السوائل أمر بالغ الأهمية لموارد المياه والزراعة والبناء والطاقة والصناعة والعديد من القطاعات الأخرى. المعدات المعيبة يمكن أن تعرض السلامة للخطر، وتعطل العمليات، وتسبب خسائر مالية إذا لم يتم إنتاجها وفقًا للمواصفات المناسبة مع مراقبة الجودة.

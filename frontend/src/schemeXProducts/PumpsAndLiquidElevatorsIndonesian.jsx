@@ -766,6 +766,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeftIndonesian = () => {
                     Sertifikasi BIS Scheme X untuk Pompa dan Elevator Cairan di India
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img 
+                        src="/schemXproductImages/BISLicenseForPumps.png" 
+                        alt="BIS License for Pumps and Liquid Elevators" 
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     Pertumbuhan industri dan infrastruktur yang pesat di India memerlukan mesin yang beroperasi lebih banyak dan memastikan kepuasan terhadap permintaan domestik dan internasional. Pompa dan elevator cairan sangat penting untuk sumber daya air, pertanian, konstruksi, energi, industri, dan banyak sektor lainnya. Peralatan yang rusak dapat membahayakan keselamatan, mengganggu operasi, dan menciptakan kerugian finansial jika tidak diproduksi sesuai spesifikasi yang tepat dengan kontrol kualitas yang ada.

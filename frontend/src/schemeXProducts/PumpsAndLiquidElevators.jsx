@@ -135,6 +135,15 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                     BIS Scheme X Certification for Pumps and Liquid Elevators in India
                 </h1>
 
+                {/* BIS License for Pumps Image */}
+                <div className="flex justify-center mb-6">
+                    <img
+                        src="/schemXproductImages/BISLicenseForPumps.png"
+                        alt="BIS License for Pumps and Liquid Elevators"
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                </div>
+
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
                     Rapid Industrial and infrastructure growth in India requires machineries which work more and ensure the fulfillment of national and international demand. Pumps and liquid elevators are crucial for water resources, agriculture, construction, energy, industry and many others. A defective piece of equipment can risk safety, disrupt operation and create financial loss if not manufactured to the right specifications with quality control in place.
