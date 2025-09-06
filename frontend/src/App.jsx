@@ -87,6 +87,7 @@ import Cranes from "./schemeXProducts/Cranes";
 import EmbroideryMachines from "./schemeXProducts/EmbroideryMachines";
 import GearsGearingsandTransmission from "./schemeXProducts/GearsGearingsandTransmission";
 import DieselGenerator from "./schemeXProducts/DieselGenerator";
+import SwitchgearandControlgearEquipment from "./schemeXProducts/SwitchgearandControlgearEquipment";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -254,6 +255,7 @@ function App() {
           <Route path="bis-scheme-x-certification-for-embroidery-machinery" element={<EmbroideryMachines />} />
           <Route path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements" element={<GearsGearingsandTransmission />} />
           <Route path="bis-scheme-x-certification-for-diesel-generators" element={<DieselGenerator />} />
+          <Route path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts" element={<SwitchgearandControlgearEquipment />} />
         </Route>
 
         <Route

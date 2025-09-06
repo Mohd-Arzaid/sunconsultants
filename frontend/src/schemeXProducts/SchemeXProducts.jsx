@@ -143,6 +143,15 @@ const products = [
     slug: "bis-scheme-x-certification-for-diesel-generators",
 
   },
+  {
+    id: 13,
+    color: "#79f9e4",
+    title: "BIS Scheme X CERTIFICATION FOR DIESEL GENERATOR",
+    description:
+      "BIS Certification for Diesel Generators is mandatory from Sept 2026. Learn Scheme X rules, OTR compliance, benefits, and certification process.",
+    slug: "bis-scheme-x-certification-for-diesel-generators",
+
+  },
 ];
 
 // =============================
