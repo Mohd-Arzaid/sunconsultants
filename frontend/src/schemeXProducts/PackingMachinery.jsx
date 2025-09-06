@@ -156,27 +156,17 @@ const PackingMachineryMainContentLeft = () => {
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Packaging machines are essential to industries in the food, beverage,
-          pharmaceutical, chemical, consumer goods, and logistics sectors. These
-          are the machines ensuring the proper, safe and quality packing of the
-          products.
+          In today&apos;s world of industrial manufacturing, the use of machinery for the safe and efficient packaging of goods is critical in protecting products for sales at retail locations. Appreciating the seriousness of these machines, the Bureau of Indian Standards (BIS) has recognized the need for BIS Scheme X Certification for filling closing, sealing, and labeling machines along with packing and wrapping machines and all their assemblies, sub-assemblies, and other components, complying with Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order, 2024. The goal is to ensure quality control, safety, and conformity of the industry to defined standards.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure safety, reliability & profitability, BIS (Bureau of Indian
-          Standards) has made BIS Scheme X Certification for Packing Machinery
-          compulsory. This certification is provided to guarantee that all the
-          packing machinery whether it is sold in India or it is imported into
-          India, is in compliance with national quality standards in force.
+          The Order of 2024 Omnibus Technical Regulation on Scheme X was published by the Ministry of Heavy Industries to support its objectives. This Order states that all manufacturers, including foreign manufacturers, are to complete the India standard requirement for Scheme X Certification by September 1 2026. This regulation applies to all machines used in filling, closing, sealing, labeling, and packing or wrapping the bottles along with their assemblies, sub-assemblies, and components. This ensures the machinery used in the food processing, pharmaceuticals, and consumer product sectors must comply with the defined standards of safety, quality, and other crucial requirements.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          In this blog, we describe the significance of Scheme X certification
-          for Packing Machinery, Role of OTR for Packing Machinery and the
-          process for obtaining a BIS License and the BIS Standard Mark for
-          Packing Machinery.
+          In this blog, we describe the significance of Scheme X certification for Packing Machinery, Role of OTR for Packing Machinery and the process for obtaining a BIS License and the BIS Standard Mark for Packing Machinery.
         </p>
 
         {/* Separator Line */}
@@ -393,10 +383,10 @@ const PackingMachineryMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-         {/* Conclusion Section */}
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
-                </p>
+        {/* Conclusion Section */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           The BIS Scheme X Certification of Packing Machinery under OTR for
@@ -509,11 +499,10 @@ const PackingMachineryMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
-                ? "bg-green-50 text-green-700 border border-green-200"
-                : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
+              ? "bg-green-50 text-green-700 border border-green-200"
+              : "bg-red-50 text-red-700 border border-red-200"
+              }`}
           >
             {submitStatus.message}
           </div>

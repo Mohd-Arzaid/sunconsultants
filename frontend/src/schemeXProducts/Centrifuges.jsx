@@ -163,27 +163,19 @@ const CentrifugesMainContentLeft = () => {
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Centrifuge is a vital machine widely applicable in laboratory,
-          pharmaceutical, food processing, biotechnology, petrochemical, and
-          mining industries. These machines work by spinning, and the fast
-          rotation separates mixtures, this separation is essential for precise,
-          safe and fast processing.
+          In the present era of industry, centrifuges and filtration systems play a core role in sustaining the cleanliness and operational efficiency of a myriad of sectors, such as chemical and pharmaceutical manufacturing, oil and gas, food processing, mining, and wastewater treatment, among many others. Machines that perform separation, filtration, and purification of liquids and gases highly influence process efficiency and ecological protection.
+
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          With wider applications in various industries, it is critical to
-          increase the reliability and safety of centrifuges. To maintain the
-          quality control parameter for centrifuges the BIS has introduced a
-          scheme of BIS Certification known as Scheme -X Certification for
-          Centrifuges.
+          To ensure the quality, safety and performance of such critical machines, the Bureau of Indian Standards (BIS) has made it mandatory for all types of centrifuges, and liquid and gas filtering or purifying machines, along with any assemblies, sub-assemblies and components, to be certified under the BIS Scheme X
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          In this post, we will cover What is BIS Scheme X Certification for
-          Centrifuges, What is OTR for Centrifuges, and How to get BIS License
-          for Centrifuges with the official BIS mark for Centrifuges.
+          This policy is part of the Omnibus Technical Regulation Order, 2024, issued by the Ministry of Heavy Industries, and has a deadline of compliance by 1st September 2026.
+          This blog serves the purpose of educating manufacturers, importers, and stakeholders in the industry about the BIS certification process regarding centrifuges and filtration machinery and the solutions for compliance as outlined in the regulations of BIS Scheme X.
         </p>
 
         {/* Separator Line */}
@@ -397,10 +389,10 @@ const CentrifugesMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-       {/* Conclusion Section */}
-                <p className="text-gray-600 text-base font-geist mb-4">
-                    <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
-                </p>
+        {/* Conclusion Section */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           The implementation of BIS Scheme X Certification for Centrifuges in
@@ -518,11 +510,10 @@ const CentrifugesMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
-                ? "bg-green-50 text-green-700 border border-green-200"
-                : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
+              ? "bg-green-50 text-green-700 border border-green-200"
+              : "bg-red-50 text-red-700 border border-red-200"
+              }`}
           >
             {submitStatus.message}
           </div>

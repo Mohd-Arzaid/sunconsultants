@@ -160,28 +160,18 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Heat Treatment equipment is one of the most critical applications in
-          industries like automotive, aerospace, foundry, forging, and heavy
-          engineering. These are the devices that change metals&apos; physical
-          and mechanical attributes through operations such as annealing,
-          quenching, hardening, tempering etc.
+          According to the Omnibus Technical Regulation Order issued by the Ministry of Heavy Industries, all types of machinery used for the treatment of material by processes involving a change of temperature, including heat treatment equipment, have to be certified by the BIS under Scheme X by the 1st of September 2026. This certification is mandatory for Indian as well as for foreign manufacturers as it pertains to the import, manufacture, sale and distribution of such machinery which is not certified, within India.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Seeing their significance, the Bureau of Indian Standards (BIS) have
-          declared the BIS Certification for Heat Treatment Equipment compulsory
-          under Scheme X Certification. That makes sure Indian as well as global
-          manufacturers adhere to the stringent Indian Standards before
-          marketing the equipment in the country.
+          The Omnibus Technical Regulation Order, 2024, covers a wide variety of heat treatment machinery and machine assemblies, sub-assemblies, and components that carry out processes which change the temperature of materials including equipment for treatment of materials by heat and thermal processing and in which the temperature of materials changes. Any manufacturers and/or importers who fail to comply with the standard requirements will face product seizure or fine or both.
+
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          In this post, we will explain the significance of BIS Scheme X
-          Certification for Heat Treatment Equipment, the OTR for Heat Treatment
-          Equipment, and the process to get a BIS License for Heat Treatment
-          Equipment with the BIS Mark for Heat Treatment Equipment.
+          The aim of this OTR order is to ensure the safety and performance criteria of industries that use thermal processing equipment. This policy tries to make sure products are aligned to the safety as well as quality standards set of India. One of the aims of the policy is to avoid exposing consumers to products which are not safe.
         </p>
 
         {/* Separator Line */}
@@ -391,10 +381,10 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-       {/* Conclusion Section */}
-       <p className="text-gray-600 text-base font-geist mb-4">
-                    <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
-                </p>
+        {/* Conclusion Section */}
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Mandatory enforcement of Scheme X Certification for Heat Treatment
@@ -514,11 +504,10 @@ const HeatTreatmentEquipmentMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
-                ? "bg-green-50 text-green-700 border border-green-200"
-                : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
+              ? "bg-green-50 text-green-700 border border-green-200"
+              : "bg-red-50 text-red-700 border border-red-200"
+              }`}
           >
             {submitStatus.message}
           </div>
