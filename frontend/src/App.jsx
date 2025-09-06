@@ -80,6 +80,13 @@ import PumpsAndLiquidElevatorsDutch from "./schemeXProducts/PumpsAndLiquidElevat
 import PumpsAndLiquidElevatorsThai from "./schemeXProducts/PumpsAndLiquidElevatorsThai";
 import PumpsAndLiquidElevatorsVietnamese from "./schemeXProducts/PumpsAndLiquidElevatorsVietnamese";
 import PumpsAndLiquidElevatorsArabic from "./schemeXProducts/PumpsAndLiquidElevatorsArabic";
+import WeavingMachines from "./schemeXProducts/WeavingMachines";
+import ConstructionMachinery from "./schemeXProducts/ConstructionMachinery";
+import MetalCuttingMachines from "./schemeXProducts/MetalCuttingMachines";
+import Cranes from "./schemeXProducts/Cranes";
+import EmbroideryMachines from "./schemeXProducts/EmbroideryMachines";
+import GearsGearingsandTransmission from "./schemeXProducts/GearsGearingsandTransmission";
+import DieselGenerator from "./schemeXProducts/DieselGenerator";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -240,7 +247,13 @@ function App() {
           <Route path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery" element={<Centrifuges />} />
           <Route path="bis-scheme-x-certification-for-compressors" element={<Compressors />} />
           <Route path="bis-scheme-x-certification-for-heat-treatment-equipment" element={<HeatTreatmentEquipment />} />
-
+          <Route path="bis-scheme-x-certification-for-weaving-machines-looms" element={<WeavingMachines />} />
+          <Route path="bis-scheme-x-certification-for-construction-machinery" element={<ConstructionMachinery />} />
+          <Route path="bis-scheme-x-certification-for-metal-cutting-machine-tools" element={<MetalCuttingMachines />} />
+          <Route path="bis-scheme-x-certification-for-cranes" element={<Cranes />} />
+          <Route path="bis-scheme-x-certification-for-embroidery-machinery" element={<EmbroideryMachines />} />
+          <Route path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements" element={<GearsGearingsandTransmission />} />
+          <Route path="bis-scheme-x-certification-for-diesel-generators" element={<DieselGenerator />} />
         </Route>
 
         <Route

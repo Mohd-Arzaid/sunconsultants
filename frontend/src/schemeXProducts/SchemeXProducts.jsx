@@ -77,7 +77,70 @@ const products = [
     title: "BIS Scheme X Certification for Heat Treatment Equipment",
     description:
       "BIS Certification for Heat Treatment Equipment is mandatory by Sept 2026 for safe, efficient, and compliant market access in Indi",
-    slug: "bis-scheme-x-certification-for-heat-treatment-equipment", 
+    slug: "bis-scheme-x-certification-for-heat-treatment-equipment",
+
+  },
+  {
+    id: 6,
+    color: "#E879F9",
+    title: "BIS Certification for Construction Machinery",
+    description:
+      "BIS Certification (Scheme X) is mandatory for construction machinery in India from 1st Sept 2026, ensuring safety, quality, and compliance.",
+    slug: "bis-scheme-x-certification-for-construction-machinery",
+
+  },
+  {
+    id: 7,
+    color: "#0EA5E9",
+    title: "BIS Scheme X Certification of Weaving Machines",
+    description:
+      "BIS Scheme X for Weaving Machines – Mandatory from Sept 2026 for quality, safety & market access.",
+    slug: "bis-scheme-x-certification-for-weaving-machines-looms",
+
+  },
+  {
+    id: 8,
+    color: "#479F9A",
+    title: "BIS Certification for Metal Cutting Machines",
+    description:
+      "BIS Certification for Metal Cutting Machines mandatory from Sept 2026 to ensure safety, quality & compliance.",
+    slug: "bis-scheme-x-certification-for-metal-cutting-machine-tools",
+
+  },
+  {
+    id: 9,
+    color: "#979F9A",
+    title: "BIS Scheme X for Cranes",
+    description:
+      "BIS Certification for Cranes is mandatory from Sept 2026. Learn Scheme X, OTR rules, process, benefits, and compliance for all crane types.",
+    slug: "bis-scheme-x-certification-for-cranes",
+
+  },
+  {
+    id: 10,
+    color: "#E879F9",
+    title: "BIS Scheme X Certification for Embroidery Machines",
+    description:
+      "BIS Certification for Embroidery Machines is mandatory from Sept 2026. Learn Scheme X, OTR rules, benefits, and process for BIS License.",
+    slug: "bis-scheme-x-certification-for-embroidery-machinery",
+
+  },
+  {
+    id: 11,
+    color: "#ed1313",
+    title: "BIS Scheme X Certification for Gears, Gearing, and Transmission Elements",
+    description:
+      "BIS Certification for Gears and Transmission Elements is mandatory from Sept 2026. Learn Scheme X rules, OTR mandate, benefits, and process.",
+    slug: "bis-scheme-x-certification-for-gears-gearing-and-transmission-elements",
+
+  },
+  {
+    id: 12,
+    color: "#79f9e4",
+    title: "BIS Scheme X CERTIFICATION FOR DIESEL GENERATOR",
+    description:
+      "BIS Certification for Diesel Generators is mandatory from Sept 2026. Learn Scheme X rules, OTR compliance, benefits, and certification process.",
+    slug: "bis-scheme-x-certification-for-diesel-generators",
 
   },
 ];
@@ -363,11 +426,10 @@ const SchemeXProductsPagination = ({
             <button
               key={pageNum}
               onClick={() => handlePageChange(pageNum)}
-              className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${
-                currentPage === pageNum
-                  ? "bg-[#1A8781] text-white"
-                  : "text-gray-700 hover:bg-gray-200"
-              }`}
+              className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${currentPage === pageNum
+                ? "bg-[#1A8781] text-white"
+                : "text-gray-700 hover:bg-gray-200"
+                }`}
               aria-label={`Page ${pageNum}`}
               aria-current={currentPage === pageNum ? "page" : undefined}
             >
