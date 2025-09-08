@@ -9,9 +9,9 @@ export const WhatsOurCustomersSaySection = () => {
 
   useEffect(() => {
     controls.start({
-      x: ["0%", "-100%"], // Animation for horizontal scroll
+      x: ["0%", "-200%"], // Changed from -100% to -200% to cover both duplicate sets
       transition: {
-        duration: 20, // Adjust duration for desired speed
+        duration: 40, // Doubled duration to maintain same speed (20s * 2 = 40s)
         repeat: Infinity,
         ease: "linear",
         repeatType: "loop",
@@ -185,25 +185,25 @@ export const WhatsOurCustomersSaySection = () => {
             animate={controls} // Use controls here
             onMouseEnter={() => controls.stop()} // Pause on hover
             onMouseLeave={() => {
-              // Restart animation on mouse leave
+              // Restart animation on mouse leave with updated parameters
               controls.start({
-                x: ["0%", "-100%"],
+                x: ["0%", "-200%"], // Updated to -200%
                 transition: {
-                  duration: 20,
+                  duration: 40, // Updated duration to maintain same speed
                   repeat: Infinity,
                   ease: "linear",
                   repeatType: "loop",
                 },
               });
             }}
-            className="flex gap-8 md:gap-6 pt-10 pb-12" // Removed 'group' class
+            className="flex gap-8 md:gap-6 pt-10 pb-12"
           >
             {[...Array(2)].map((_, i) => (
               <React.Fragment key={i}>
                 {testimonials.map((testimonial) => (
                   <div
-                    key={testimonial.id}
-                    className="min-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative" // Removed 'group-hover:[animation-play-state:paused]'
+                    key={`${i}-${testimonial.id}`} // Updated key to prevent conflicts
+                    className="min-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative"
                   >
                     {/* Quote Icon */}
                     <div className="absolute top-6 right-6">
