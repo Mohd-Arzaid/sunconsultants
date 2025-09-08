@@ -156,28 +156,20 @@ const EmbroideryMachinesMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    The embroidery sector is an important part of India&apos;s textile and
-                    apparel industry producing value-added fabrics for fashion, home and
-                    exports. Computerized multi-head embroidery machines or industrial
-                    machines are indispensable for getting high quality in embroidered
-                    products as they offer efficiency and precision in embroidery.
-                </p>
+                The Indian textile industry has long served the country's economy and cultural identity, focusing on embroidery as a traditional and modern textile design. With the global increase in demand for high-quality embroidered clothing and home textiles, the machinery that is embroidered must meet strict quality, safety, and performance requirements. In order to augment the quality of embroidery machinery and its components, the Bureau of Indian Standards (BIS) has implemented Scheme X Certification, a set of guidelines within its conformity assessment policies to improve the design and manufacture of such machinery.
+
+</p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    To ensure safety, stability and performance, BIS (The Bureau of Indian
-                    Standards) has enforced mandatory certification for Embroidery
-                    Machines under the certification scheme X from BIS. This ensures that
-                    only the machines which comply with Indian Standards are permitted
-                    into the Indian market.
+                Manufacturers and assemblers of embroidery machinery and its assemblies, sub-assemblies, and components, both local and international, must obtain the BIS Scheme X Certification by September 1, 2026, based on the Omnibus Technical Regulation Order, 2024, published by the Ministry of Heavy Industries.
+
+
                 </p>
 
                 {/* Introduction Paragraph 3 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    In the present article, we will discuss the importance of BIS Scheme X
-                    Approval for Embroidery Machines, regulations under the OTR (Order of
-                    the Textile Rules) for Embroidery Machines, and process for obtaining
-                    BIS License for Embroidery Machines.
+                Let’s discuss the scope and significance of BIS Scheme X Certification on the embroidery machinery and its BIS implications on the manufacturers, procedure for Scheme X Certification, advantages, relevant documents and more.
                 </p>
 
                 {/* Separator Line */}

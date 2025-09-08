@@ -156,28 +156,18 @@ const ConstructionMachineryMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Excavators, loaders, bulldozers, concrete mixers and road rollers are
-                    the main construction machines used in India&apos;s infrastructure
-                    construction. The higher demand for safe and reliable machinery stems
-                    from huge investments in highways, smart city, factory, and housing.
+                The construction, earth moving, and mining activities are central to the development of the infrastructure and the economic growth of the country. The operational machinery in these sectors and industries works under tremendous demand and in very rough conditions and the need for the safety, dependability and quality of the equipment during operation should never be compromised. Realizing such importance, the Bureau of Indian Standards (BIS) has devised the Scheme X Certification as a regulatory initiative aimed towards uniform performance and safety of construction machinery throughout the country. 
                 </p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    The Bureau of Indian Standards (BIS) has made BIS Certification
-                    Compulsory under the Scheme-X for Construction Machineries to provide
-                    quality, service and safety assurance. It ensures that a device
-                    conforms to the Indian Standards before being made available for sale
-                    or imported in India.
+                The Ministry of Heavy Industries has, under the Omnibus Technical Regulation Order, 2024, set a deadline of 1st September 2026 for all manufacturers, both foreign and local, to achieve compliance with the Scheme X Certification. This compliance is aimed at all construction, earth moving, and mining machinery, including their assemblies, sub-assemblies, and components. 
+
                 </p>
 
                 {/* Introduction Paragraph 3 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    Here in this article, you are going to learn about BIS Scheme X
-                    Certification for Construction Machinery, The requirement of OTR for
-                    Construction Machinery, and the process of obtaining BIS Licence for
-                    Construction Machinery and the BIS mark for Construction Machinery.
-                </p>
+                This blog includes all the relevant details pertaining to Scheme X for the construction, earth moving and mining activities and all certification processes such as its importance, scope, advantages, relevant documents, and certification steps.  </p>
 
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>

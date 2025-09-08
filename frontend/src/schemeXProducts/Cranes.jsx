@@ -158,27 +158,18 @@ const CranesMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Cranes are primarily used for lifting and transporting materials and
-                    in manufacturing, construction, production, and mining. As their
-                    functionality can be safety-critical, unqualified or bad quality
-                    cranes can result in a slip and fall, equipment malfunction or a
-                    costly loss.
+                    In the construction industry, cranes are invaluable. They perform heavy lifts, transports, and precision placements with mechanics. They operate in construction sites, ports, docks, manufacturing, and warehouses. Construction sites with heavy construction equipment like cranes can pose potential dangers and risks. This is why the Indian government has implemented strict guidelines and safety measures about crane operations, in order to reduce the severity of injuries and damages these construction equipment may cause.
+
                 </p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    In view of these hazards, the Bureau of Indian Standards (BIS) has
-                    made the BIS Certification for Cranes mandatory under Scheme – X
-                    Certification. This ensures that the cranes utilized in India are
-                    safe, reliable, efficient and world-class in quality.
+                    The Indian Bureau of Standards (BIS) aims to safeguard the Indian construction and heavy machinery industry while maintaining its safety on crane equipment. All crane types and their assemblies, sub-assemblies, and components must now be certified and are to be placed under the BIS Scheme X. With this, India aligns the safety of their country with other global counterparts and raises the confidence level in the cranes and machinery, both imported and exported.
                 </p>
 
                 {/* Introduction Paragraph 3 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    In this blog, we&apos;ll guide you about the significance of BIS
-                    Scheme X Registration for Cranes, the legal aspects of OTR for Cranes,
-                    and how to get a BIS License for Cranes and mark the BIS Standard mark
-                    for Cranes.
+                    According to the Omnibus Technical Regulation issued by the Ministry of Heavy Industries, all manufacturers, domestic or foreign, are required to meet Indian Standards under Scheme X Certification by September 1, 2026, for cranes and assemblies/components.
                 </p>
 
                 {/* Separator Line */}
@@ -517,8 +508,8 @@ const CranesMainContentRight = () => {
                 {submitStatus && (
                     <div
                         className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-                                ? "bg-green-50 text-green-700 border border-green-200"
-                                : "bg-red-50 text-red-700 border border-red-200"
+                            ? "bg-green-50 text-green-700 border border-green-200"
+                            : "bg-red-50 text-red-700 border border-red-200"
                             }`}
                     >
                         {submitStatus.message}

@@ -156,28 +156,19 @@ const DieselGeneratorMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Diesel Generators are used in commercial establishments, industries,
-                    hospitals, infrastructure projects, residential projects and in many
-                    more places as a secondary source of power. As economic assets with
-                    the responsibility of guaranteeing the continuity of electric supply,
-                    it is important for the machines to be safe, efficient and meeting
-                    national standards.
+                    Diesel generators (DG sets) are critical devices across multiple industries used for primary and backup power supply. Because of their essential capacity, their protection, quality assurance, and standard conformance are of utmost importance. The Bureau of Indian Standards (BIS) has developed Scheme X, which provides a set of regulatory requirements for the standardization of machinery and electrical equipment, including diesel generators, within the Indian Territory.
+
                 </p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    In an effort to do so, the BIS Certification of the Diesel Generator
-                    is included in the Scheme X Certification of the Bureau of Indian
-                    Standards (BIS). This scheme has been put in place to make sure that
-                    both national and global manufacturers meet the tough and strict
-                    Indian Standards before they sell their products in India.
+                    According to the Omnibus Technical Regulation Order, 2024, the Ministry of Heavy Industries has made it a requirement of all to abide by Indian standards Scheme X Certification, including the domestic and foreign manufacturers, by 1 September 2026. The BIS Scheme X Certification serves as a critical regulatory framework intended for the quality and safety control of diesel generators and components within India. Manufacturers must develop their products and processes in accordance with the Scheme X policies to be able to comply with it, gain access to the market, and strengthen consumer confidence.
+
                 </p>
 
                 {/* Introduction Paragraph 3 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    This post details the significance of the BIS Scheme X Certification
-                    of Diesel Generators, the OTR mandate of 2024 and how manufacturers
-                    can avail certification.
+                    This blog contains all the ‘Set Guidelines’ requirements for Scheme X certification for all types of assemblies of Diesel Generators and their sub-assemblies and components, importance, scope, certification, documentation and other advantages.
                 </p>
 
                 {/* Separator Line */}
@@ -514,8 +505,8 @@ const DieselGeneratorMainContentRight = () => {
                 {submitStatus && (
                     <div
                         className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-                                ? "bg-green-50 text-green-700 border border-green-200"
-                                : "bg-red-50 text-red-700 border border-red-200"
+                            ? "bg-green-50 text-green-700 border border-green-200"
+                            : "bg-red-50 text-red-700 border border-red-200"
                             }`}
                     >
                         {submitStatus.message}
