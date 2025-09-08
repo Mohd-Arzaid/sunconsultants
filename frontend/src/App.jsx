@@ -88,6 +88,9 @@ import EmbroideryMachines from "./schemeXProducts/EmbroideryMachines";
 import GearsGearingsandTransmission from "./schemeXProducts/GearsGearingsandTransmission";
 import DieselGenerator from "./schemeXProducts/DieselGenerator";
 import SwitchgearandControlgearEquipment from "./schemeXProducts/SwitchgearandControlgearEquipment";
+import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery,";
+import RotaryElectricalMachines from "./schemeXProducts/RotaryElectricalMachines";
+import PublicWorksAndMechanical from "./schemeXProducts/PublicWorksAndMechanical";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -205,6 +208,8 @@ function App() {
           <Route path="bis-license-for-bunk-beds-Indian-bis" element={<BunkBedsBlog />} />
           <Route path="bis-license-for-storage-units-Indian-bis" element={<StorageUnitsBlog />} />
 
+
+
           {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />
           {/* english */}
@@ -244,6 +249,8 @@ function App() {
 
 
 
+
+
           <Route path="bis-scheme-x-certification-for-packing-machinery" element={<PackingMachinery />} />
           <Route path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery" element={<Centrifuges />} />
           <Route path="bis-scheme-x-certification-for-compressors" element={<Compressors />} />
@@ -256,6 +263,9 @@ function App() {
           <Route path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements" element={<GearsGearingsandTransmission />} />
           <Route path="bis-scheme-x-certification-for-diesel-generators" element={<DieselGenerator />} />
           <Route path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts" element={<SwitchgearandControlgearEquipment />} />
+          <Route path="bis-scheme-x-certification-for-rubber-and-plastics-machinery" element={<RubberAndPlasticsMachinery />} />
+          <Route path="bis-scheme-x-certification-for-rotary-electrical-machines" element={<RotaryElectricalMachines />} />
+          <Route path="bis-scheme-x-certification-for-public-works-and-mechanical-appliances" element={<PublicWorksAndMechanical />} />
         </Route>
 
         <Route

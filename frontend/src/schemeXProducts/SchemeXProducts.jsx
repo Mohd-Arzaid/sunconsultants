@@ -146,10 +146,39 @@ const products = [
   {
     id: 13,
     color: "#79f9e4",
-    title: "BIS Scheme X CERTIFICATION FOR DIESEL GENERATOR",
+    title: "BIS Scheme X Certification for Switchgear and Controlgear Equipment up to 1000 Volts",
     description:
       "BIS Certification for Diesel Generators is mandatory from Sept 2026. Learn Scheme X rules, OTR compliance, benefits, and certification process.",
-    slug: "bis-scheme-x-certification-for-diesel-generators",
+    slug: "bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts",
+
+
+  },
+  {
+    id: 14,
+    color: "#c9f754",
+    title: "BIS Scheme X Certification for Rubber and Plastics Machinerys",
+    description:
+      "BIS Scheme X Certification for Rubber & Plastics Machinery under OTR 2024 ensures safety, quality, and compliance. Learn process, benefits & penalties.",
+    slug: "bis-scheme-x-certification-for-rubber-and-plastics-machinery",
+
+  },
+  {
+    id: 15,
+    color: "#f23d8e",
+    title: "BIS Scheme X Certification for Rotary Electrical Machines",
+    description:
+      "BIS Scheme X Certification for Rotary Electrical Machines under OTR 2024 ensures safety, quality & compliance. Learn process, benefits & penalties.",
+    slug: "bis-scheme-x-certification-for-rotary-electrical-machines",
+
+  },
+  {
+    id: 16,
+    color: "#345ffa",
+    title: "BIS Scheme X Certification for Public Works and Mechanical Appliances",
+    description:
+      "BIS Scheme X Certification for Public Works & Mechanical Appliances under OTR 2024 ensures safety, quality & compliance. Learn process, benefits & penalties.",
+    slug: "bis-scheme-x-certification-for-public-works-and-mechanical-appliances",
+
 
   },
 ];
