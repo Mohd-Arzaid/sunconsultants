@@ -29,8 +29,7 @@ const Centrifuges = () => {
     <div className="relative w-full">
       <Helmet>
         <title>
-          BIS Scheme X Certification for Centrifuges and Filtering or Purifying
-          Machinery
+          BIS Scheme X Certification for Centrifuges Machinery
         </title>
 
         {/* Meta Description */}
@@ -158,7 +157,7 @@ const CentrifugesMainContentLeft = () => {
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Centrifuges
+          BIS Scheme X Certification for Centrifuges and Filtering or Purifying Machinery
         </h1>
 
         {/* Introduction Paragraph 1 */}
