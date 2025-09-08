@@ -226,7 +226,7 @@ const SchemeXProductsSearchBar = ({ searchQuery, handleSearch }) => {
     <div className="mb-12 md:mb-20 max-w-2xl mx-auto">
       <div className="relative">
         <label htmlFor="search" className="sr-only">
-          Search SchemeX Products
+          Search Scheme X Products
         </label>
         <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
         <input
@@ -560,7 +560,7 @@ const SchemeXProductsMainContent = () => {
         {/* Page header section */}
         <div className="text-center mb-6 md:mb-10">
           <h1 className="font-playfair text-2xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
-            SchemeX Products
+            Scheme X Products
           </h1>
           <p className="text-base md:text-lg font-geist text-gray-600 max-w-2xl mx-auto">
             Comprehensive BIS Scheme X certification guides for pumps and liquid

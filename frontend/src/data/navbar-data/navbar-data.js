@@ -217,7 +217,7 @@ export const NAVIGATION_DATA = {
     },
     {
       id: 6,
-      name: "SchemeX Products",
+      name: "Scheme X Products",
       link: "/SchemeX-products",
       icon: Building,
     },
