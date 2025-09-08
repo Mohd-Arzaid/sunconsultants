@@ -37,9 +37,121 @@ export const WhatsOurCustomersSaySection = () => {
     {
       id: 3,
       name: "Ms.Jun Min Sim",
-      role: "Leaderart Industries , BIS Licensee in Malaysia",
+      role: "Leaderart Industries, BIS Licensee in Malaysia",
       content:
         "Sun Certifications India helped us acquire BIS Certification, doubling our engagement in India. Their services are fast, genuine, and up-to-date with latest BIS norms.",
+    },
+    {
+      id: 4,
+      name: "Ms. Fatima",
+      role: "Aluminium Bahrain (ALBA), BIS Licensee in Bahrain",
+      content:
+        "Excellent BIS certification support, highly reliable consultants.",
+    },
+    {
+      id: 5,
+      name: "Mr. Yousef",
+      role: "Bahrain Aluminium Manufacturing Company, BIS Licensee in Bahrain",
+      content:
+        "Smooth BIS registration process with expert consultants.",
+    },
+    {
+      id: 6,
+      name: "Mr. Satoshi",
+      role: "Daiki Aluminium Japan, BIS Licensee in Japan",
+      content:
+        "Efficient BIS license assistance, great consultants.",
+    },
+    {
+      id: 7,
+      name: "Ms. Amanda",
+      role: "Honeywell, BIS Licensee in USA",
+      content:
+        "Professional BIS certificate guidance, very satisfied.",
+    },
+    {
+      id: 8,
+      name: "Ms. Amanda",
+      role: "Trimble Navigation, BIS Licensee in USA",
+      content:
+        "Seamless BIS certification and registration support.",
+    },
+    {
+      id: 9,
+      name: "Ms. Martina",
+      role: "Remsa Italia, BIS Licensee in Italy",
+      content:
+        "Helpful BIS consultants, simplified license process.",
+    },
+    {
+      id: 10,
+      name: "Ms. Nikola",
+      role: "Aquazzura, BIS Licensee in Italy",
+      content:
+        "We got our BIS certificate well within the timelines and at affordable prices, great work team Sun!",
+    },
+    {
+      id: 11,
+      name: "Ms. Ayu",
+      role: "PT Quty, BIS Licensee in Indonesia",
+      content:
+        "Excellent BIS registration service, highly recommended.",
+    },
+    {
+      id: 12,
+      name: "Mr. Huy",
+      role: "Danu Vina, BIS Licensee in Vietnam",
+      content:
+        "Reliable BIS license consultants, fast process.",
+    },
+    {
+      id: 13,
+      name: "Mr. Minh",
+      role: "Hanh My Production Company, BIS Licensee in Vietnam",
+      content:
+        "Expert BIS consultants, certification made easy.",
+    },
+    {
+      id: 14,
+      name: "Ms. Hoa",
+      role: "Sedo Vina, BIS Licensee in Vietnam",
+      content:
+        "Smooth BIS certificate registration, great support.",
+    },
+    {
+      id: 15,
+      name: "Ms. Hana",
+      role: "Misumi Japan, BIS Licensee in Japan",
+      content:
+        "Trusted BIS consultants, quick certification process.",
+    },
+    {
+      id: 16,
+      name: "Ms. Nok",
+      role: "Thantawan Public Industry Company, BIS Licensee in Thailand",
+      content:
+        "Professional BIS certification service, very efficient.",
+    },
+    {
+      id: 17,
+      name: "Mr. Luis",
+      role: "Cortizo Aluminios, BIS Licensee in Spain",
+      content:
+        "Excellent BIS registration and license guidance.",
+    },
+    {
+      id: 18,
+      name: "Ms. Aisha",
+      role: "Midal Cables, BIS Licensee in Bahrain",
+      content:
+        "Expert BIS consultants, smooth certification process.",
+    },
+    {
+      id: 19,
+      name: "Ms. Aisha",
+      role: "Nobilia Kitchens, BIS Licensee in Bahrain",
+      content:
+        "Reliable BIS certificate registration support.",
     },
   ];
 
