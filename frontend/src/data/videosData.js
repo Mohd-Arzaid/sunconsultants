@@ -205,4 +205,26 @@ export const videosData = [
       "BIS Consultants",
     ],
   },
+  {
+    id: 11,
+    embedId: "F0bmGrWeDiI",
+    title: "BIS Certification Guide - Complete Process Overview",
+    description:
+      "Comprehensive guide to BIS certification process covering all essential steps, requirements, and best practices for manufacturers seeking compliance with Indian standards.",
+    category: "BIS Certification",
+    duration: "PT8M30S", // 8 minutes 30 seconds
+    uploadDate: "2024-12-20T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Complete Guide",
+      "Process Overview",
+      "Indian Standards",
+      "Manufacturing",
+      "Compliance",
+      "Quality Assurance",
+      "Certification Process",
+      "Regulatory Requirements",
+      "Best Practices",
+    ],
+  },
 ];
