@@ -234,7 +234,7 @@ const SchemeXProductsSearchBar = ({ searchQuery, handleSearch }) => {
           type="text"
           value={searchQuery}
           onChange={handleSearch}
-          placeholder="Search for SchemeX Products"
+          placeholder="Search for Scheme X Products"
           className="w-full pl-11 md:pl-12 placeholder:font-geist placeholder:text-[17px] sm:placeholder:text-[18px] pr-4 py-3 md:py-4 rounded-full shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] border-2 border-transparent bg-white focus:border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-100 transition-all duration-200"
         />
       </div>
