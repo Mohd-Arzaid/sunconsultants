@@ -469,7 +469,7 @@ const ClientTestimonial = () => {
             vertical
             repeat={2}
             pauseOnHover={true}
-            className="[--duration:18s]"
+            className="[--duration:60s]"
           >
             {testimonials.map((testimonial, index) => (
               <div key={index} className="group mb-6">
