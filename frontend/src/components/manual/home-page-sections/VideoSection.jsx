@@ -135,9 +135,9 @@ const VideoSection = ({ onVideoPopupChange }) => {
               />
               {/* Video Title Below Each Video */}
               <div className="p-4">
-                <h3 className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2 leading-tight">
+                <p className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2 leading-tight">
                   {video.title}
-                </h3>
+                </p>
               </div>
             </div>
           ))}
