@@ -1,11 +1,10 @@
 // React Hooks
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // React Router
 import { Link, useNavigate } from "react-router-dom";
 
 // External Libraries
-import { motion, useAnimationControls } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
 // Lucide Icons
@@ -473,22 +472,11 @@ export const OurServices = () => {
 
 // Testimonials Component - Complex component with animation controls and effects
 const Testimonials = () => {
-  const controls = useAnimationControls();
+  const containerRef = useRef(null);
+  const [start, setStart] = useState(false);
+  const [duplicatedTestimonials, setDuplicatedTestimonials] = useState([]);
 
-  // Animation setup effect
-  useEffect(() => {
-    controls.start({
-      x: ["0%", "-100%"],
-      transition: {
-        duration: 20,
-        repeat: Infinity,
-        ease: "linear",
-        repeatType: "loop",
-      },
-    });
-  }, [controls]);
-
-  // Testimonials data
+  // Testimonials data - same as WhatsOurCustomersSaySection
   const testimonials = [
     {
       id: 1,
@@ -516,29 +504,174 @@ const Testimonials = () => {
     },
     {
       id: 4,
-      name: "Ms.Eliyawati",
-      role: "PT Quty Karunia, BIS Licensee in Vietnam",
+      name: "Ms. Fatima",
+      role: "Aluminium Bahrain (ALBA), BIS Licensee in Bahrain",
       content:
-        "Sun Certifications India provided excellent BIS Certification services. Their unparalleled service and sincerity gained our trust. One of the best BIS consultants in India!",
+        "Excellent BIS certification support, highly reliable consultants.",
       rating: 5,
     },
     {
       id: 5,
-      name: "Ms.Belle",
-      role: "Thantawan Industries Ltd, BIS Licensee in Thailand",
+      name: "Mr. Yousef",
+      role: "Bahrain Aluminium Manufacturing Company, BIS Licensee in Bahrain",
       content:
-        "Sun Certifications India supported us throughout the BIS certification process. Their responsive customer service and punctuality are exceptional. Highly recommend for hassle-free BIS certification.",
+        "Smooth BIS registration process with expert consultants.",
       rating: 5,
     },
     {
       id: 6,
-      name: "Ms.Jun Min Sim",
-      role: "Leaderart Industries, BIS Licensee in Malaysia",
+      name: "Mr. Satoshi",
+      role: "Daiki Aluminium Japan, BIS Licensee in Japan",
       content:
-        "Sun Certifications India helped us acquire BIS Certification, doubling our engagement in India. Their services are fast, genuine, and up-to-date with latest BIS norms.",
+        "Efficient BIS license assistance, great consultants.",
+      rating: 5,
+    },
+    {
+      id: 7,
+      name: "Ms. Amanda",
+      role: "Honeywell, BIS Licensee in USA",
+      content:
+        "Professional BIS certificate guidance, very satisfied.",
+      rating: 5,
+    },
+    {
+      id: 8,
+      name: "Ms. Amanda",
+      role: "Trimble Navigation, BIS Licensee in USA",
+      content:
+        "Seamless BIS certification and registration support.",
+      rating: 5,
+    },
+    {
+      id: 9,
+      name: "Ms. Martina",
+      role: "Remsa Italia, BIS Licensee in Italy",
+      content:
+        "Helpful BIS consultants, simplified license process.",
+      rating: 5,
+    },
+    {
+      id: 10,
+      name: "Ms. Nikola",
+      role: "Aquazzura, BIS Licensee in Italy",
+      content:
+        "We got our BIS certificate well within the timelines and at affordable prices, great work team Sun!",
+      rating: 5,
+    },
+    {
+      id: 11,
+      name: "Ms. Ayu",
+      role: "PT Quty, BIS Licensee in Indonesia",
+      content:
+        "Excellent BIS registration service, highly recommended.",
+      rating: 5,
+    },
+    {
+      id: 12,
+      name: "Mr. Huy",
+      role: "Danu Vina, BIS Licensee in Vietnam",
+      content:
+        "Reliable BIS license consultants, fast process.",
+      rating: 5,
+    },
+    {
+      id: 13,
+      name: "Mr. Minh",
+      role: "Hanh My Production Company, BIS Licensee in Vietnam",
+      content:
+        "Expert BIS consultants, certification made easy.",
+      rating: 5,
+    },
+    {
+      id: 14,
+      name: "Ms. Hoa",
+      role: "Sedo Vina, BIS Licensee in Vietnam",
+      content:
+        "Smooth BIS certificate registration, great support.",
+      rating: 5,
+    },
+    {
+      id: 15,
+      name: "Ms. Hana",
+      role: "Misumi Japan, BIS Licensee in Japan",
+      content:
+        "Trusted BIS consultants, quick certification process.",
+      rating: 5,
+    },
+    {
+      id: 16,
+      name: "Ms. Nok",
+      role: "Thantawan Public Industry Company, BIS Licensee in Thailand",
+      content:
+        "Professional BIS certification service, very efficient.",
+      rating: 5,
+    },
+    {
+      id: 17,
+      name: "Mr. Luis",
+      role: "Cortizo Aluminios, BIS Licensee in Spain",
+      content:
+        "Excellent BIS registration and license guidance.",
+      rating: 5,
+    },
+    {
+      id: 18,
+      name: "Ms. Aisha",
+      role: "Midal Cables, BIS Licensee in Bahrain",
+      content:
+        "Expert BIS consultants, smooth certification process.",
+      rating: 5,
+    },
+    {
+      id: 19,
+      name: "Ms. Aisha",
+      role: "Nobilia Kitchens, BIS Licensee in Bahrain",
+      content:
+        "Reliable BIS certificate registration support.",
       rating: 5,
     },
   ];
+
+  useEffect(() => {
+    addAnimation();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  function addAnimation() {
+    // React-friendly duplication approach - same as WhatsOurCustomersSaySection
+    const duplicated = [...testimonials, ...testimonials, ...testimonials];
+    setDuplicatedTestimonials(duplicated);
+
+    if (containerRef.current) {
+      getDirection();
+      getSpeed();
+
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        setStart(true);
+      }, 100);
+    }
+  }
+
+  const getDirection = () => {
+    if (containerRef.current) {
+      containerRef.current.style.setProperty(
+        "--animation-direction",
+        "forwards"
+      );
+    }
+  };
+
+  const getSpeed = () => {
+    if (containerRef.current) {
+      // Calculate speed based on total width of testimonials
+      const totalWidth = testimonials.length * 450; // Approximate width per testimonial (400px + 50px gap)
+      const pixelsPerSecond = 50; // Consistent speed: 50 pixels per second
+      const duration = totalWidth / pixelsPerSecond;
+
+      containerRef.current.style.setProperty("--animation-duration", `${duration}s`);
+    }
+  };
 
   return (
     <div className="pb-6 md:pt-1 md:pb-16 bg-gradient-to-b from-white to-[#F9F7F2]">
@@ -555,70 +688,57 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonials Scroll Container */}
-        <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <motion.div
-            animate={controls}
-            onMouseEnter={() => controls.stop()}
-            onMouseLeave={() => {
-              controls.start({
-                x: ["0%", "-100%"],
-                transition: {
-                  duration: 20,
-                  repeat: Infinity,
-                  ease: "linear",
-                  repeatType: "loop",
-                },
-              });
-            }}
-            className="flex gap-8 md:gap-10 py-8"
+        <div
+          ref={containerRef}
+          className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
+        >
+          <div
+            className={`flex w-max gap-8 md:gap-10 py-8 hover:[animation-play-state:paused] ${start ? "animate-scroll" : ""
+              }`}
           >
-            {[...Array(2)].map((_, i) => (
-              <React.Fragment key={i}>
-                {testimonials.map((testimonial) => (
-                  <div
-                    key={testimonial.id}
-                    className="min-w-[320px] md:min-w-[400px] h-auto bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/60 hover:border-[#1A8781]/80 relative overflow-hidden group flex flex-col"
-                    style={{
-                      boxShadow:
-                        "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-                    }}
-                  >
-                    {/* Decorative elements */}
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A8781]/10 rounded-bl-full -mr-8 -mt-8 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+            {duplicatedTestimonials.map((testimonial, index) => (
+              <div
+                key={`${testimonial.id}-${index}`}
+                className="w-[320px] md:w-[400px] h-auto bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1A8781]/60 hover:border-[#1A8781]/80 relative overflow-hidden group flex flex-col shrink-0"
+                style={{
+                  boxShadow:
+                    "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                }}
+              >
+                {/* Decorative elements */}
+                <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A8781]/10 rounded-bl-full -mr-8 -mt-8 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
 
-                    {/* Rating */}
-                    <div className="flex gap-1 mb-4 justify-start">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <svg
-                          key={i}
-                          className="w-5 h-5 text-[#1A8781]"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
+                {/* Rating */}
+                <div className="flex gap-1 mb-4 justify-start">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <svg
+                      key={i}
+                      className="w-5 h-5 text-[#1A8781]"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
 
-                    {/* Content */}
-                    <p className="text-gray-600 font-geist text-base md:text-lg leading-relaxed mb-6 md:mb-8">
-                      &ldquo;{testimonial.content}&rdquo;
-                    </p>
+                {/* Content */}
+                <p className="text-gray-600 font-geist text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                  &ldquo;{testimonial.content}&rdquo;
+                </p>
 
-                    {/* Author - Fixed at bottom */}
-                    <div className="mt-auto pt-2 border-t border-gray-200">
-                      <h4 className="font-geist font-bold text-neutral-800 text-lg">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-neutral-600 text-sm">
-                        {testimonial.role}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </React.Fragment>
+                {/* Author - Fixed at bottom */}
+                <div className="mt-auto pt-2 border-t border-gray-200">
+                  <h4 className="font-geist font-bold text-neutral-800 text-lg">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-neutral-600 text-sm">
+                    {testimonial.role}
+                  </p>
+                </div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
