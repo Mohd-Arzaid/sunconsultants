@@ -28,18 +28,18 @@ const WeavingMachines = () => {
     return (
         <div className="relative w-full">
             <Helmet>
-                <title>BIS Scheme X Certification for Construction Machinery</title>
+                <title>BIS Scheme X Certification for Weaving Machines</title>
 
                 {/* Meta Description */}
                 <meta
                     name="description"
-                    content="BIS Scheme X Certification is mandatory for construction, earthmoving, and mining machinery to ensure safety, quality, and standardization in critical industrial sectors"
+                    content="BIS Scheme X Certification is a compulsory quality certification for All types of weaving machines (looms) and (or) their assemblies /sub-assemblies /components."
                 />
 
                 {/* Meta Keywords */}
                 <meta
                     name="keywords"
-                    content="BIS Certification for Construction Machinery, BIS Scheme X Certification for Construction Machinery, Scheme X certification for Construction Machinery, BIS for Construction Machinery, OTR for Construction Machinery"
+                    content="BIS Certification for Weaving Machines, BIS Scheme X Certification for Weaving Machines, Scheme X certification for Weaving Machines, BIS for Weaving Machines, OTR for Weaving Machines"
                 />
                 <meta name="author" content="Sun Certifications India" />
                 <meta
@@ -51,15 +51,15 @@ const WeavingMachines = () => {
                 {/* Open Graph Tags */}
                 <meta
                     property="og:title"
-                    content="BIS Scheme X Certification for Construction Machinery in India | Complete Guide"
+                    content="BIS Scheme X Certification for Weaving Machines in India | Complete Guide"
                 />
                 <meta
                     property="og:description"
-                    content="Learn everything about BIS Scheme X Certification for Construction Machinery in India. Understand OTR 2024 compliance, BIS License process, ISI mark requirements, and how to get certified before the September 2026 deadline"
+                    content="Learn everything about BIS Scheme X Certification for Weaving Machines in India. Understand OTR 2024 compliance, BIS License process, ISI mark requirements, and how to get certified before the September 2026 deadline"
                 />
                 <meta
                     property="og:url"
-                    content="https://bis-certifications.com/bis-scheme-x-certification-for-construction-machinery"
+                    content="https://bis-certifications.com/bis-scheme-x-certification-for-weaving-machines-looms"
                 />
                 <meta property="og:site_name" content="Sun Certifications India" />
                 <meta property="og:type" content="article" />
@@ -67,17 +67,17 @@ const WeavingMachines = () => {
                 {/* Twitter Tags */}
                 <meta
                     name="twitter:title"
-                    content="BIS Scheme X Certification for Construction Machinery in India | Complete Guide"
+                    content="BIS Scheme X Certification for Weaving Machines in India | Complete Guide"
                 />
                 <meta
                     name="twitter:description"
-                    content="Learn everything about BIS Scheme X Certification for Construction Machinery in India. Understand OTR 2024 compliance, BIS License process, ISI mark requirements, and how to get certified before the September 2026 deadline"
+                    content="Learn everything about BIS Scheme X Certification for Weaving Machines in India. Understand OTR 2024 compliance, BIS License process, ISI mark requirements, and how to get certified before the September 2026 deadline"
                 />
 
                 {/* Canonical URL */}
                 <link
                     rel="canonical"
-                    href="https://bis-certifications.com/bis-scheme-x-certification-for-construction-machinery"
+                    href="https://bis-certifications.com/bis-scheme-x-certification-for-weaving-machines-looms"
                 />
             </Helmet>
 
@@ -158,17 +158,18 @@ const WeavingMachinesMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Textiles is a very important industry in India for its rich history and major portions of the Indian economy. Looms used to produce fabrics are still used today. Protecting operational efficiency and global competitiveness hinges upon the safety, quality, and the operational conformity of the machines used. The Bureau of Indian Standards (BIS) has recognized and created the Scheme X Certification to set minimum safety and performance standards for the nation.
+                    India's textile and apparel industry is among the country's largest supporters of manufacturing, exports, and jobs. At the core of this industry are weaving machines, necessary for making fabric for clothes, home furnishings, and industrial use. As domestic demand continues to increase and with the country's heavy export focus, there is a need to guarantee quality and safety standards of weaving machines within the country.
                 </p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    According to the Omnibus Technical Regulation Order,2024, by the Ministry of Heavy Industries, all local and foreign manufacturers must comply with the Scheme X Certification standards by 1st September, 2026 which is now a mandatory requirement for all weaving machines. This includes all assemblies, sub-assemblies, and components. All manufacturers must now obtain the Certificate of Conformity (CoC) or a license to use the standard mark. They must align to Indian safety and quality standards. They need to comply with the Indian standards of safety and quality.
+                    To ensure this, the Bureau of Indian Standards (BIS), the National Standards Body of India, has been set up and it is the BIS that has been formulating and implementing the product certification schemes in India under which the product is certified. This standard ensures that machines which enter the Indian market meet Indian Standards for performance, durability and safety.
                 </p>
 
                 {/* Introduction Paragraph 3 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    This blog includes everything related to Scheme X for all types of weaving machines and their assemblies, subassemblies and components. It also covers all certification procedures, its scope, importance, advantages, relevant documents, and the steps to be taken for the certification process.  </p>
+                    In this article, we will explain the significance of the BIS Scheme X Certificate for weaving machines, the process of compliance under the OTR for weaving machines and how to get BIS certification in India, BIS Registration for Weaving Machines and labeling of the ISI mark for Weaving Machines.
+                </p>
 
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -356,7 +357,7 @@ const WeavingMachinesMainContentRight = () => {
     // Get current page URL and name for form submission
     const currentUrl = window.location.href;
     const currentPageName =
-        "SchemeX Product - BIS Certification for Pumps & Liquid Elevators";
+        "SchemeX Product - BIS Certification for Weaving Machines";
 
     // Add BASE_URL like other forms
     const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
