@@ -1,24 +1,14 @@
-import React, { useEffect } from "react";
-import { motion } from "motion/react";
-import { useAnimationControls } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
 import { Separator } from "@/components/ui/separator";
 
 // What Our Customers Say Section
 export const WhatsOurCustomersSaySection = () => {
-  const controls = useAnimationControls(); // Initialize controls
+  const containerRef = useRef(null);
+  const scrollerRef = useRef(null);
+  const [start, setStart] = useState(false);
+  const [duplicatedTestimonials, setDuplicatedTestimonials] = useState([]);
 
-  useEffect(() => {
-    controls.start({
-      x: ["0%", "-200%"], // Changed from -100% to -200% to cover both duplicate sets
-      transition: {
-        duration: 40, // Doubled duration to maintain same speed (20s * 2 = 40s)
-        repeat: Infinity,
-        ease: "linear",
-        repeatType: "loop",
-      },
-    });
-  }, [controls]);
-
+  // Testimonials data - same as WebinarSeminarMarquee pattern
   const testimonials = [
     {
       id: 1,
@@ -155,6 +145,47 @@ export const WhatsOurCustomersSaySection = () => {
     },
   ];
 
+  useEffect(() => {
+    addAnimation();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  function addAnimation() {
+    // React-friendly duplication approach - same as WebinarSeminarMarquee
+    const duplicated = [...testimonials, ...testimonials, ...testimonials];
+    setDuplicatedTestimonials(duplicated);
+
+    if (containerRef.current) {
+      getDirection();
+      getSpeed();
+
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        setStart(true);
+      }, 100);
+    }
+  }
+
+  const getDirection = () => {
+    if (containerRef.current) {
+      containerRef.current.style.setProperty(
+        "--animation-direction",
+        "forwards"
+      );
+    }
+  };
+
+  const getSpeed = () => {
+    if (containerRef.current) {
+      // Calculate speed based on total width of testimonials
+      const totalWidth = testimonials.length * 450; // Approximate width per testimonial (400px + 50px gap)
+      const pixelsPerSecond = 50; // Consistent speed: 50 pixels per second
+      const duration = totalWidth / pixelsPerSecond;
+
+      containerRef.current.style.setProperty("--animation-duration", `${duration}s`);
+    }
+  };
+
   // Helper function to generate avatar URL
   const getAvatarUrl = (name) => {
     const [firstName, lastName] = name.split(" ");
@@ -180,68 +211,55 @@ export const WhatsOurCustomersSaySection = () => {
         </div>
 
         {/* Testimonials Scroll Container */}
-        <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <motion.div
-            animate={controls} // Use controls here
-            onMouseEnter={() => controls.stop()} // Pause on hover
-            onMouseLeave={() => {
-              // Restart animation on mouse leave with updated parameters
-              controls.start({
-                x: ["0%", "-200%"], // Updated to -200%
-                transition: {
-                  duration: 40, // Updated duration to maintain same speed
-                  repeat: Infinity,
-                  ease: "linear",
-                  repeatType: "loop",
-                },
-              });
-            }}
-            className="flex gap-8 md:gap-6 pt-10 pb-12"
+        <div
+          ref={containerRef}
+          className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
+        >
+          <div
+            ref={scrollerRef}
+            className={`flex w-max gap-8 md:gap-6 pt-10 pb-12 hover:[animation-play-state:paused] ${start ? "animate-scroll" : ""
+              }`}
           >
-            {[...Array(2)].map((_, i) => (
-              <React.Fragment key={i}>
-                {testimonials.map((testimonial) => (
-                  <div
-                    key={`${i}-${testimonial.id}`} // Updated key to prevent conflicts
-                    className="min-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative"
+            {duplicatedTestimonials.map((testimonial, index) => (
+              <div
+                key={`${testimonial.id}-${index}`}
+                className="min-w-[400px] max-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative shrink-0"
+              >
+                {/* Quote Icon */}
+                <div className="absolute top-6 right-6">
+                  <svg
+                    className="w-9 h-9 text-[#64bfdd] opacity-70"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    {/* Quote Icon */}
-                    <div className="absolute top-6 right-6">
-                      <svg
-                        className="w-9 h-9 text-[#64bfdd] opacity-70"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                      </svg>
-                    </div>
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                </div>
 
-                    {/* User Info */}
-                    <div className="flex items-center gap-4 mb-6 pr-12">
-                      <img
-                        src={getAvatarUrl(testimonial.name)}
-                        alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30 flex-shrink-0"
-                      />
-                      <div className="flex flex-col justify-center min-w-0">
-                        <h3 className="font-roboto font-bold text-lg leading-tight text-neutral-800 truncate">
-                          {testimonial.name}
-                        </h3>
-                        <p className="font-roboto text-sm text-neutral-600 leading-snug">
-                          {testimonial.role}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Testimonial Content */}
-                    <p className="font-poppins text-[#5a4a4a] leading-relaxed text-base">
-                      {testimonial.content}
+                {/* User Info */}
+                <div className="flex items-center gap-4 mb-6 pr-12">
+                  <img
+                    src={getAvatarUrl(testimonial.name)}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30 flex-shrink-0"
+                  />
+                  <div className="flex flex-col justify-center min-w-0">
+                    <h3 className="font-roboto font-bold text-lg leading-tight text-neutral-800 truncate">
+                      {testimonial.name}
+                    </h3>
+                    <p className="font-roboto text-sm text-neutral-600 leading-snug">
+                      {testimonial.role}
                     </p>
                   </div>
-                ))}
-              </React.Fragment>
+                </div>
+
+                {/* Testimonial Content */}
+                <p className="font-poppins text-[#5a4a4a] leading-relaxed text-base">
+                  {testimonial.content}
+                </p>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
