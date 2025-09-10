@@ -43,7 +43,7 @@ const sitemapSections = [
       { name: "CE Certification", path: "/ce-certification" },
       {
         name: "ISI Mark (Indian)",
-        path: "/a-guide-to-bis-certification-indian-bis",
+        path: "/bis-isi-mark-certification",
       },
 
       {

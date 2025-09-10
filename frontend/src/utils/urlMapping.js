@@ -29,8 +29,8 @@ export const URL_MAPPINGS = {
       "epr-certificate-for-plastic-waste-management-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "what-is-legal-metrology-or-lmpc-certificate",
-    "a-guide-to-bis-certification-indian-bis":
-      "a-guide-to-bis-certification-indian-bis",
+    "bis-isi-mark-certification":
+      "bis-isi-mark-certification",
     "epr-certificate-for-battery-waste-management-bwm":
       "epr-certificate-for-battery-waste-management-bwm",
     "what-is-crs-bis-or-crs-registration":
@@ -73,7 +73,7 @@ export const URL_MAPPINGS = {
       "certificato-epr-gestione-rifiuti-plastici-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "che-cos-e-metrologia-legale-certificato-lmpc",
-    "a-guide-to-bis-certification-indian-bis":
+    "bis-isi-mark-certification":
       "guida-alla-certificazione-bis-bis-indiano",
     "epr-certificate-for-battery-waste-management-bwm":
       "certificato-epr-gestione-rifiuti-batterie-bwm",
@@ -118,7 +118,7 @@ export const URL_MAPPINGS = {
       "certificat-epr-gestion-dechets-plastiques-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "qu-est-ce-que-metrologie-legale-certificat-lmpc",
-    "a-guide-to-bis-certification-indian-bis":
+    "bis-isi-mark-certification":
       "guide-certification-bis-bis-indien",
     "epr-certificate-for-battery-waste-management-bwm":
       "certificat-epr-gestion-dechets-batteries-bwm",
@@ -164,7 +164,7 @@ export const URL_MAPPINGS = {
       "epr-zertifikat-kunststoffabfall-management-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "was-ist-gesetzliche-metrologie-lmpc-zertifikat",
-    "a-guide-to-bis-certification-indian-bis":
+    "bis-isi-mark-certification":
       "leitfaden-zur-bis-zertifizierung-indisches-bis",
     "epr-certificate-for-battery-waste-management-bwm":
       "epr-zertifikat-batterieabfall-management-bwm",
@@ -208,7 +208,7 @@ export const URL_MAPPINGS = {
       "purasuchikku-haikibutsu-kanri-epr-shoumeisho-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "houritsu-keiryougaku-lmpc-shoumeisho-to-wa",
-    "a-guide-to-bis-certification-indian-bis": "bis-nintei-gaido-india-no-bis",
+    "bis-isi-mark-certification": "bis-nintei-gaido-india-no-bis",
     "epr-certificate-for-battery-waste-management-bwm":
       "denchi-haikibutsu-kanri-epr-shoumeisho-bwm",
     "what-is-crs-bis-or-crs-registration": "crs-bis-toha-nani-ka-crs-toroku",
@@ -252,7 +252,7 @@ export const URL_MAPPINGS = {
       "peullaeseutik-pyegimul-gwanli-epr-injeungseo-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "beopjeok-gyeryanghak-lmpc-injeungseo-ran",
-    "a-guide-to-bis-certification-indian-bis": "bis-injeung-gaideu-indo-bis",
+    "bis-isi-mark-certification": "bis-injeung-gaideu-indo-bis",
     "epr-certificate-for-battery-waste-management-bwm":
       "baeteri-pyegimul-gwanli-epr-injeungseo-bwm",
     "what-is-crs-bis-or-crs-registration": "crs-bis-i-mueos-inga-crs-deunglog",
@@ -295,7 +295,7 @@ export const URL_MAPPINGS = {
       "sertifikat-epr-untuk-pengelolaan-limbah-plastik-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "apa-itu-metrologi-hukum-atau-sertifikat-lmpc",
-    "a-guide-to-bis-certification-indian-bis":
+    "bis-isi-mark-certification":
       "panduan-sertifikasi-bis-bis-india",
     "epr-certificate-for-battery-waste-management-bwm":
       "sertifikat-epr-untuk-pengelolaan-limbah-baterai-bwm",
@@ -341,7 +341,7 @@ export const URL_MAPPINGS = {
       "bai-rap-rong-epr-samrap-kan-borihan-khaya-plastic-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "metrology-kotmai-rue-bai-rap-rong-lmpc-khue-arai",
-    "a-guide-to-bis-certification-indian-bis":
+    "bis-isi-mark-certification":
       "khumanam-kanraprong-bis-bis-india",
     "epr-certificate-for-battery-waste-management-bwm":
       "bai-rap-rong-epr-samrap-kan-borihan-khaya-battery-bwm",
@@ -394,7 +394,7 @@ export const URL_MAPPINGS = {
       "chung-chi-epr-cho-quan-ly-rac-thai-nhua-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "do-luong-phap-ly-hoac-chung-chi-lmpc-la-gi",
-    "a-guide-to-bis-certification-indian-bis":
+    "bis-isi-mark-certification":
       "huong-dan-chung-nhan-bis-bis-an-do",
     "epr-certificate-for-battery-waste-management-bwm":
       "chung-chi-epr-cho-quan-ly-rac-thai-pin-bwm",
@@ -438,7 +438,7 @@ export const URL_MAPPINGS = {
       "certificado-epr-gestion-residuos-plasticos-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "que-es-metrologia-legal-certificado-lmpc",
-    "a-guide-to-bis-certification-indian-bis":
+    "bis-isi-mark-certification":
       "guia-certificacion-bis-bis-indio",
     "epr-certificate-for-battery-waste-management-bwm":
       "certificado-epr-gestion-residuos-baterias-bwm",
@@ -483,7 +483,7 @@ export const URL_MAPPINGS = {
       "epr-certificaat-plastic-afvalbeheer-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "wat-is-wettelijke-metrologie-lmpc-certificaat",
-    "a-guide-to-bis-certification-indian-bis":
+    "bis-isi-mark-certification":
       "gids-voor-bis-certificering-indiaas-bis",
     "epr-certificate-for-battery-waste-management-bwm":
       "epr-certificaat-batterij-afvalbeheer-bwm",
@@ -535,7 +535,7 @@ export const URL_MAPPINGS = {
       "shahdat-epr-lidarat-almukhalafat-alblastikiat-pwm",
     "what-is-legal-metrology-or-lmpc-certificate":
       "ma-hi-almetrologia-alqanuniat-aw-shahdat-lmpc",
-    "a-guide-to-bis-certification-indian-bis": "dalil-shahadat-bis-bis-alhind",
+    "bis-isi-mark-certification": "dalil-shahadat-bis-bis-alhind",
     "epr-certificate-for-battery-waste-management-bwm":
       "shahdat-epr-lidarat-mukhalafat-albatariyat-bwm",
     "what-is-crs-bis-or-crs-registration": "ma-huwa-crs-bis-aw-tasjeel-crs",

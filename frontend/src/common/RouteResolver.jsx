@@ -66,7 +66,7 @@ const ROUTE_COMPONENTS = {
   "a-guide-on-how-to-obtain-lmpc-certificate": LMPC,
   "epr-certificate-for-plastic-waste-management-pwm": PlasticWaste,
   "what-is-legal-metrology-or-lmpc-certificate": LegalMetrology,
-  "a-guide-to-bis-certification-indian-bis": ISIMark,
+  "bis-isi-mark-certification": ISIMark,
   "epr-certificate-for-battery-waste-management-bwm": BatteryWaste,
   "what-is-crs-bis-or-crs-registration": CRSRegistration,
   "information-about-peso-certification-peso-license-india": Peso,

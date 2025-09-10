@@ -159,7 +159,7 @@ function App() {
             element={<LegalMetrology />}
           />
           <Route
-            path="a-guide-to-bis-certification-indian-bis"
+            path="bis-isi-mark-certification"
             element={<ISIMark />}
           />
           <Route

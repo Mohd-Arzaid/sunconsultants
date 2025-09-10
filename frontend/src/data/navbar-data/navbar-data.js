@@ -50,7 +50,7 @@ export const NAVIGATION_DATA = {
     {
       id: 4,
       name: "ISI Mark (Indian)",
-      link: "/a-guide-to-bis-certification-indian-bis",
+      link: "/bis-isi-mark-certification",
       icon: Award,
       desktopOrder: 4,
       mobileOrder: 2,
@@ -258,7 +258,7 @@ export const NAVIGATION_DATA = {
     {
       id: 4,
       name: "ISI Mark (Indian)",
-      link: "/a-guide-to-bis-certification-indian-bis#faqs",
+      link: "/bis-isi-mark-certification#faqs",
       icon: Award,
     },
     {

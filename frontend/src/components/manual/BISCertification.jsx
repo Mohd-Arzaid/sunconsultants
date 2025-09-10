@@ -1436,7 +1436,7 @@ const TypesSection = () => {
           ]}
           clickableRoutes={[
             "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
-            "a-guide-to-bis-certification-indian-bis",
+            "bis-isi-mark-certification",
             "indian-bis-certification-under-scheme-x",
             "what-is-crs-bis-or-crs-registration",
             "", // hallmarking - no link

@@ -157,13 +157,13 @@ const ServiceContactForm = () => {
       return "Legal Metrology";
 
     // ISI Mark Indian
-    if (path.includes("/a-guide-to-bis-certification-indian-bis"))
+    if (path.includes("/bis-isi-mark-certification"))
       return "ISI Mark Indian";
 
     if (path.includes("/de/leitfaden-zur-bis-zertifizierung-indisches-bis"))
       return "ISI Mark Indian";
 
-    if (path.includes("/en/a-guide-to-bis-certification-indian-bis"))
+    if (path.includes("/en/bis-isi-mark-certification"))
       return "ISI Mark Indian";
 
     if (path.includes("/es/guia-certificacion-bis-bis-indio"))

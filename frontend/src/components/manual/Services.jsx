@@ -148,7 +148,7 @@ export const Services = () => {
           </Link>
 
           <Link
-            to="/a-guide-to-bis-certification-indian-bis"
+            to="/bis-isi-mark-certification"
             className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">

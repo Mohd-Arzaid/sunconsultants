@@ -17,14 +17,7 @@ import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
 import Services from "../components/manual/Services";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+
 import AboutAuthor from "../components/common/AboutAuthor";
 import {
   Breadcrumb,
@@ -40,20 +33,20 @@ const ISIMark = () => {
   return (
     <>
       <Helmet>
-        <title>
-          ISI Mark Certification Services | BIS Certification | Sun
-          Certifications
-        </title>
+        <title>BIS ISI Mark Certification Process, Documents, Fee</title>
         <meta
           name="description"
-          content="Expert ISI Mark certification services for Indian manufacturers. Get BIS certification and ISI mark for your products. Trusted certification partner since 2013."
+          content=" ISI mark certification issued by the Bureau of Indian Standards is given to products undergoing stringent testing and inspection to meet the required standards and compliances"
         />
         <meta
           name="keywords"
-          content="ISI Mark, BIS certification, Indian Standards, product certification"
+          content="ISI Mark, ISI Mark Certification, ISI Mark Certificate, ISI Certification, ISI Certificate, ISI Mark Registration, ISI License, BIS ISI Mark, BIS ISI Mark Certification"
         />
         <meta name="author" content="Sun Certifications India" />
-        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
+        <meta
+          name="publisher"
+          content="Dhruv Aggarwal, Head of Operations at Sun Certification India"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Open Graph Tags */}
         <meta
@@ -74,67 +67,62 @@ const ISIMark = () => {
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
-          href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+          href="https://bis-certifications.com/bis-isi-mark-certification"
           hrefLang="en"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/ar/dalil-shahadat-bis-bis-alhind"
-          hrefLang="ar"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/it/guida-alla-certificazione-bis-bis-indiano"
+          href="https://bis-certifications.com/it/certificazione-bis-isi-mark"
           hrefLang="it"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/fr/guide-certification-bis-bis-indien"
+          href="https://bis-certifications.com/fr/certification-bis-marque-isi"
           hrefLang="fr"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-indisches-bis"
+          href="https://bis-certifications.com/de/bis-isi-mark-zertifizierung"
           hrefLang="de"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/nl/gids-voor-bis-certificering-indiaas-bis"
+          href="https://bis-certifications.com/nl/bis-isi-mark-certificering"
           hrefLang="nl"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/ja/bis-nintei-gaido-india-no-bis"
+          href="https://bis-certifications.com/ja/bis-isi-mark-shounin"
           hrefLang="ja"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/ko/bis-injeung-gaideu-indo-bis"
+          href="https://bis-certifications.com/ko/bis-isi-mark-injeung"
           hrefLang="ko"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/id/panduan-sertifikasi-bis-bis-india"
+          href="https://bis-certifications.com/id/sertifikasi-bis-isi-mark"
           hrefLang="id"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/th/khumanam-kanraprong-bis-bis-india"
+          href="https://bis-certifications.com/th/bis-isi-mark-raprong"
           hrefLang="th"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-bis-an-do"
+          href="https://bis-certifications.com/vi/chung-nhan-bis-isi-mark"
           hrefLang="vi"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/es/guia-certificacion-bis-bis-indio"
+          href="https://bis-certifications.com/es/certificacion-bis-marca-isi"
           hrefLang="es"
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
+          href="https://bis-certifications.com/bis-isi-mark-certification"
           hrefLang="x-default"
         />
         <meta name="robots" content="index, follow" />
@@ -154,8 +142,8 @@ const ISIMark = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "A Guide to BIS Certification (Indian BIS)",
-                item: "https://bis-certifications.com/a-guide-to-bis-certification-indian-bis",
+                name: "BIS ISI Mark Certification Process, Documents, Fee",
+                item: "https://bis-certifications.com/bis-isi-mark-certification",
               },
             ],
           })}
@@ -178,7 +166,7 @@ const ISIMark = () => {
                   </BreadcrumbSeparator>
                   <BreadcrumbItem>
                     <BreadcrumbPage>
-                      A Guide to BIS Certification (Indian BIS)
+                      BIS ISI Mark Certification Process, Documents, Fee
                     </BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
@@ -279,7 +267,13 @@ const BISISIIndex = () => {
   const toggleButtonRef = useRef(null);
   const { t } = useTranslation("ISIMark");
 
-  const SECTIONS = ["overview", "process", "document", "costing", "faqs"];
+  const SECTIONS = [
+    "overview",
+    "requirement",
+    "document",
+    "conclusion",
+    "faqs",
+  ];
 
   const handleItemClick = (item) => {
     const element = document.getElementById(item.toLowerCase());
@@ -435,8 +429,8 @@ const BISISIIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection.toLowerCase()
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -458,16 +452,16 @@ const BISISIIndex = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection.toLowerCase()
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {t(`navigation.${item}`)}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection.toLowerCase()
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
                 }`}
             />
           </div>
@@ -547,41 +541,15 @@ export const ServiceFaq = () => {
 };
 
 const BISISIContentLeft = () => {
-  const { t } = useTranslation("ISIMark");
   return (
     <article className=" flex-1 ">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-        <section
-          className="flex flex-col gap-2 md:gap-4 mb-6"
-          aria-label={t("introduction.title")}
-        >
-          <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-            {t("introduction.title")}
-          </h1>
-
-          <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-1">
-            {t("introduction.paragraph1")}
-          </p>
-
-          <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2">
-            {t("introduction.paragraph2")}
-          </p>
-
-          <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2">
-            {t("introduction.paragraph3")}
-          </p>
-
-          <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2">
-            {t("introduction.paragraph4")}
-          </p>
-        </section>
-
         {/* Nomination Section */}
         <OverviewSection />
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-        <ProcessSection />
+        <RequirementSection />
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
@@ -589,7 +557,7 @@ const BISISIContentLeft = () => {
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-        <CostingSection />
+        <ConclusionSection />
         {/* Divider */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
@@ -633,8 +601,11 @@ const OverviewSection = () => {
   const { t } = useTranslation("ISIMark");
 
   return (
-    <section id="overview" className="flex flex-col scroll-mt-20">
-      {/* Nomination */}
+    <section
+      id="overview"
+      className="flex flex-col scroll-mt-20"
+      aria-label="BIS ISI Mark Certification Overview"
+    >
       <header className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           {t("overview.title")}
@@ -642,342 +613,182 @@ const OverviewSection = () => {
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </header>
 
-      {/* Title */}
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        {t("overview.title")}
-      </h2>
+      <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        {t("overview.mainHeading")}
+      </h1>
 
-      {/* Description */}
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.description")}
+        {t("overview.introduction.paragraph1")}
       </p>
 
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.commonProducts.title")}
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.introduction.paragraph2")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.introduction.paragraph3")}
+      </p>
+
+      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("overview.understandingBIS.title")}
       </h2>
 
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("overview.commonProducts.list", { returnObjects: true })}
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.understandingBIS.paragraph1")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.understandingBIS.paragraph2")}
+      </p>
+
+      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("overview.whatIsISI.title")}
+      </h2>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.whatIsISI.paragraph1")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.whatIsISI.paragraph2")}
+      </p>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.whatIsISI.paragraph3")}
+      </p>
+
+      {/* ISI Mark Image */}
+      <div className="flex justify-center my-6 md:my-8">
+        <img
+          src="/isi-mark-img/IndianBISCertification.png"
+          alt="BIS Certification, BIS Certificate, BIS License - Indian BIS"
+          className="max-w-full h-auto rounded-lg shadow-lg border border-gray-200"
+          loading="lazy"
         />
       </div>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.mandatoryNote")}
-      </p>
-
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.bisLicense.title")}
-      </h2>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.bisLicense.description1")}
-      </p>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.bisLicense.description2")}
-      </p>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.bisLicense.description3")}
-      </p>
-
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyMatters.title")}
-      </h2>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyMatters.description1")}
-      </p>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyMatters.description2")}
-      </p>
-
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.differences.title")}
-      </h2>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("overview.differences.table.headers.feature")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                {t("overview.differences.table.headers.isiMark")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("overview.differences.table.headers.bisLicense")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.purpose.label")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.purpose.isiMark")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.purpose.bisLicense")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.issuedBy.label")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.issuedBy.isiMark")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.issuedBy.bisLicense")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.visibility.label")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.visibility.isiMark")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.visibility.bisLicense")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.mandatory.label")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.mandatory.isiMark")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.mandatory.bisLicense")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.renewal.label")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.renewal.isiMark")}
-              </TableCell>
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                {t("overview.differences.table.rows.renewal.bisLicense")}
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={t("overview.whatIsISI.productExamples", {
+            returnObjects: true,
+          })}
+        />
       </div>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.differences.note")}
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.whatIsISI.paragraph4")}{" "}
+        <a
+          href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#125E5A] underline hover:text-[#1A8781] transition-colors"
+        >
+          {t("overview.whatIsISI.linkText")}
+        </a>
+        .
       </p>
 
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyNeed.title")}
+      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("overview.difference.title")}
       </h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyNeed.description")}
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.difference.paragraph1")}
       </p>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyNeed.reasons.legal.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyNeed.reasons.legal.description")}
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>{t("overview.difference.bisCertification")}</strong>
       </p>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyNeed.reasons.quality.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyNeed.reasons.quality.description")}
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        <strong>{t("overview.difference.isiMark")}</strong>
       </p>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyNeed.reasons.credibility.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyNeed.reasons.credibility.description")}
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.difference.paragraph2")}
       </p>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyNeed.reasons.markets.title")}
-      </h3>
+      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("overview.importance.title")}
+      </h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyNeed.reasons.markets.description")}
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("overview.importance.paragraph1")}
       </p>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyNeed.reasons.advantage.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyNeed.reasons.advantage.description")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyNeed.reasons.savings.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyNeed.reasons.savings.description")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyNeed.reasons.support.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyNeed.reasons.support.description")}
-      </p>
+      {t("overview.importance.benefits", { returnObjects: true }).map(
+        (benefit, index) => (
+          <p
+            key={index}
+            className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose"
+          >
+            <strong>{benefit.title}</strong> {benefit.description}
+          </p>
+        )
+      )}
     </section>
   );
 };
 
-const ProcessSection = () => {
+const RequirementSection = () => {
   const { t } = useTranslation("ISIMark");
 
   return (
-    <section id="process" className="flex flex-col scroll-mt-20">
-      {/* Documents */}
+    <section id="requirement" className="flex flex-col scroll-mt-20">
+      {/* Requirements */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("process.title")}
+          {t("requirement.title")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        {t("process.mainHeading")}
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        {t("requirement.basicRequirements.title")}
       </h2>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.description")}
+        {t("requirement.basicRequirements.description")}
       </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step1.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.step1.description")}
-      </p>
-
-      <div className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step1.resources")}
-      </div>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <PointsListTwo
-          points={t("process.step1.list", { returnObjects: true })}
+          points={t("requirement.basicRequirements.requirements", {
+            returnObjects: true,
+          })}
+        />
+      </div>
+
+      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("requirement.certificationProcess.title")}
+      </h2>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("requirement.certificationProcess.description")}
+      </p>
+
+      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("requirement.certificationProcess.normalProcedure.title")}
+      </h3>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={t("requirement.certificationProcess.normalProcedure.steps", {
+            returnObjects: true,
+          })}
         />
       </div>
 
       <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step2.title")}
+        {t("requirement.certificationProcess.simplifiedProcedure.title")}
       </h3>
-
-      <div className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step2.description")}
-      </div>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <PointsListTwo
-          points={t("process.step2.list", { returnObjects: true })}
-        />
-      </div>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step3.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.step3.description")}
-      </p>
-
-      <div className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step3.tips")}
-      </div>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("process.step3.list", { returnObjects: true })}
-        />
-      </div>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step4.title")}
-      </h3>
-
-      <div className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step4.description1")}
-      </div>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("process.step4.list", { returnObjects: true })}
-        />
-      </div>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.step4.description2")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step5.title")}
-      </h3>
-
-      <div className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step5.description")}
-      </div>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("process.step5.list", { returnObjects: true })}
-        />
-      </div>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.step5.description2")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step6.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.step6.description")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step7.title")}
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.step7.description")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step8.title")}
-      </h3>
-
-      <div className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.step8.description")}
-      </div>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("process.step8.list", { returnObjects: true })}
+          points={t(
+            "requirement.certificationProcess.simplifiedProcedure.steps",
+            { returnObjects: true }
+          )}
         />
       </div>
     </section>
@@ -989,7 +800,7 @@ const DocumentsSection = () => {
 
   return (
     <section id="document" className="flex flex-col scroll-mt-20">
-      {/* Process */}
+      {/* Documents */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           {t("document.title")}
@@ -997,7 +808,7 @@ const DocumentsSection = () => {
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
         {t("document.mainHeading")}
       </h2>
 
@@ -1005,73 +816,76 @@ const DocumentsSection = () => {
         {t("document.description")}
       </p>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.checklistTitle")}
-      </h3>
-
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <PointsListTwo
           points={t("document.documentsList", { returnObjects: true })}
           tagType="h4"
         />
       </div>
+
+      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("document.benefits.title")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("document.benefits.description")}
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={t("document.benefits.benefitsList", { returnObjects: true })}
+        />
+      </div>
+
+      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        {t("document.revocation.title")}
+      </h3>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("document.revocation.description")}
+      </p>
+
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+        <PointsListTwo
+          points={t("document.revocation.reasons", { returnObjects: true })}
+        />
+      </div>
+
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("document.revocation.regulation")}
+      </p>
     </section>
   );
 };
 
-const CostingSection = () => {
+const ConclusionSection = () => {
   const { t } = useTranslation("ISIMark");
 
   return (
-    <section id="costing" className="flex flex-col scroll-mt-20">
-      {/* Validity */}
+    <section id="conclusion" className="flex flex-col scroll-mt-20">
+      {/* Conclusion */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("costing.title")}
+          {t("conclusion.title")}
         </span>
         <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
       </div>
 
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
-        {t("costing.mainHeading")}
+      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+        {t("conclusion.title")}
       </h2>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("costing.description")}
+        {t("conclusion.paragraph1")}
       </p>
 
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("costing.breakdownTitle")}
-      </h3>
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.paragraph2")}
+      </p>
 
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("costing.table.headers.component")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("costing.table.headers.amount")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("costing.table.rows", { returnObjects: true }).map(
-              (row, index) => (
-                <TableRow key={index} className="hover:bg-gray-50">
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {row.component}
-                  </TableCell>
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {row.amount}
-                  </TableCell>
-                </TableRow>
-              )
-            )}
-          </TableBody>
-        </Table>
-      </div>
+      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+        {t("conclusion.paragraph3")}
+      </p>
     </section>
   );
 };
