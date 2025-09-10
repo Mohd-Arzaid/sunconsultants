@@ -111,6 +111,25 @@ const CDSCOContentRight = () => {
     "/nl/indiaas-bis-certificaat-volgens-schema-x",
     "/th/bis-prathiap-india-taem-dai-tae-skema-x",
     "/vi/chung-nhan-bis-an-do-theo-scheme-x",
+
+
+    // Scheme X product 
+    "/bis-scheme-x-certification-for-pumps-and-liquid-elevators",
+    "/bis-scheme-x-certification-for-packing-machinery",
+    "/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery",
+    "/bis-scheme-x-certification-for-compressors",
+    "/bis-scheme-x-certification-for-heat-treatment-equipment",
+    "/bis-scheme-x-certification-for-weaving-machines-looms",
+    "/bis-scheme-x-certification-for-construction-machinery",
+    "/bis-scheme-x-certification-for-metal-cutting-machine-tools",
+    "/bis-scheme-x-certification-for-cranes",
+    "/bis-scheme-x-certification-for-embroidery-machinery",
+    "/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements",
+    "/bis-scheme-x-certification-for-diesel-generators",
+    "/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts",
+    "/bis-scheme-x-certification-for-rubber-and-plastics-machinery",
+    "/bis-scheme-x-certification-for-rotary-electrical-machines",
+    "/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
   ];
 
   // Check if current path should show these components
@@ -1064,6 +1083,55 @@ const FreeCallBack = () => {
 
     if (path.includes("/vi/chung-nhan-bis-an-do-theo-scheme-x"))
       return "SchemeX";
+
+    // Scheme X Products - Page Names
+    if (path.includes("/bis-scheme-x-certification-for-pumps-and-liquid-elevators"))
+      return "BIS Scheme X - Pumps and Liquid Elevators";
+
+    if (path.includes("/bis-scheme-x-certification-for-packing-machinery"))
+      return "BIS Scheme X - Packing Machinery";
+
+    if (path.includes("/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"))
+      return "BIS Scheme X - Centrifuges and Filtering Machinery";
+
+    if (path.includes("/bis-scheme-x-certification-for-compressors"))
+      return "BIS Scheme X - Compressors";
+
+    if (path.includes("/bis-scheme-x-certification-for-heat-treatment-equipment"))
+      return "BIS Scheme X - Heat Treatment Equipment";
+
+    if (path.includes("/bis-scheme-x-certification-for-weaving-machines-looms"))
+      return "BIS Scheme X - Weaving Machines Looms";
+
+    if (path.includes("/bis-scheme-x-certification-for-construction-machinery"))
+      return "BIS Scheme X - Construction Machinery";
+
+    if (path.includes("/bis-scheme-x-certification-for-metal-cutting-machine-tools"))
+      return "BIS Scheme X - Metal Cutting Machine Tools";
+
+    if (path.includes("/bis-scheme-x-certification-for-cranes"))
+      return "BIS Scheme X - Cranes";
+
+    if (path.includes("/bis-scheme-x-certification-for-embroidery-machinery"))
+      return "BIS Scheme X - Embroidery Machinery";
+
+    if (path.includes("/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"))
+      return "BIS Scheme X - Gears Gearing and Transmission";
+
+    if (path.includes("/bis-scheme-x-certification-for-diesel-generators"))
+      return "BIS Scheme X - Diesel Generators";
+
+    if (path.includes("/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"))
+      return "BIS Scheme X - Switchgear and Controlgear Equipment";
+
+    if (path.includes("/bis-scheme-x-certification-for-rubber-and-plastics-machinery"))
+      return "BIS Scheme X - Rubber and Plastics Machinery";
+
+    if (path.includes("/bis-scheme-x-certification-for-rotary-electrical-machines"))
+      return "BIS Scheme X - Rotary Electrical Machines";
+
+    if (path.includes("/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"))
+      return "BIS Scheme X - Public Works and Mechanical Appliances";
   };
 
   const [formData, setFormData] = useState({

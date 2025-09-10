@@ -23,6 +23,7 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
 import AboutAuthor from "@/components/common/AboutAuthor";
 import { Helmet } from "react-helmet-async";
+import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 
 const PackingMachinery = () => {
   return (
@@ -138,7 +139,8 @@ const PackingMachineryMainContent = () => {
         <PackingMachineryMainContentLeft />
 
         {/* Right Side Content */}
-        <PackingMachineryMainContentRight />
+        {/* <PackingMachineryMainContentRight /> */}
+        <CDSCOContentRight />
       </div>
     </div>
   );

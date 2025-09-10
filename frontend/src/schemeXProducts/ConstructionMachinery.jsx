@@ -23,6 +23,7 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
 import AboutAuthor from "@/components/common/AboutAuthor";
 import { Helmet } from "react-helmet-async";
+import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 
 const ConstructionMachinery = () => {
     return (
@@ -138,7 +139,8 @@ const ConstructionMachineryMainContent = () => {
                 <ConstructionMachineryMainContentLeft />
 
                 {/* Right Side Content */}
-                <ConstructionMachineryMainContentRight />
+                {/* <ConstructionMachineryMainContentRight /> */}
+                <CDSCOContentRight />
             </div>
         </div>
     );
@@ -156,18 +158,18 @@ const ConstructionMachineryMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                The construction, earth moving, and mining activities are central to the development of the infrastructure and the economic growth of the country. The operational machinery in these sectors and industries works under tremendous demand and in very rough conditions and the need for the safety, dependability and quality of the equipment during operation should never be compromised. Realizing such importance, the Bureau of Indian Standards (BIS) has devised the Scheme X Certification as a regulatory initiative aimed towards uniform performance and safety of construction machinery throughout the country. 
+                    The construction, earth moving, and mining activities are central to the development of the infrastructure and the economic growth of the country. The operational machinery in these sectors and industries works under tremendous demand and in very rough conditions and the need for the safety, dependability and quality of the equipment during operation should never be compromised. Realizing such importance, the Bureau of Indian Standards (BIS) has devised the Scheme X Certification as a regulatory initiative aimed towards uniform performance and safety of construction machinery throughout the country.
                 </p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                The Ministry of Heavy Industries has, under the Omnibus Technical Regulation Order, 2024, set a deadline of 1st September 2026 for all manufacturers, both foreign and local, to achieve compliance with the Scheme X Certification. This compliance is aimed at all construction, earth moving, and mining machinery, including their assemblies, sub-assemblies, and components. 
+                    The Ministry of Heavy Industries has, under the Omnibus Technical Regulation Order, 2024, set a deadline of 1st September 2026 for all manufacturers, both foreign and local, to achieve compliance with the Scheme X Certification. This compliance is aimed at all construction, earth moving, and mining machinery, including their assemblies, sub-assemblies, and components.
 
                 </p>
 
                 {/* Introduction Paragraph 3 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                This blog includes all the relevant details pertaining to Scheme X for the construction, earth moving and mining activities and all certification processes such as its importance, scope, advantages, relevant documents, and certification steps.  </p>
+                    This blog includes all the relevant details pertaining to Scheme X for the construction, earth moving and mining activities and all certification processes such as its importance, scope, advantages, relevant documents, and certification steps.  </p>
 
                 {/* Separator Line */}
                 <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -501,8 +503,8 @@ const ConstructionMachineryMainContentRight = () => {
                 {submitStatus && (
                     <div
                         className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-                                ? "bg-green-50 text-green-700 border border-green-200"
-                                : "bg-red-50 text-red-700 border border-red-200"
+                            ? "bg-green-50 text-green-700 border border-green-200"
+                            : "bg-red-50 text-red-700 border border-red-200"
                             }`}
                     >
                         {submitStatus.message}

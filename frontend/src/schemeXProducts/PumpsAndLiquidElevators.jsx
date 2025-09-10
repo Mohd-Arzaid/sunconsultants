@@ -8,6 +8,7 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection"
 import Footer from "@/common/Footer"
 import AboutAuthor from "@/components/common/AboutAuthor"
 import { Helmet } from "react-helmet-async"
+import CDSCOContentRight from "@/components/manual/CDSCOContentRight"
 
 const PumpsAndLiquidElevators = () => {
     return (
@@ -117,7 +118,8 @@ const PumpsAndLiquidElevatorsPageMainContent = () => {
                 <PumpsAndLiquidElevatorsPageMainContentLeft />
 
                 {/* Right Side Content */}
-                <PumpsAndLiquidElevatorsPageMainContentRight />
+                {/* <PumpsAndLiquidElevatorsPageMainContentRight /> */}
+                <CDSCOContentRight />
             </div>
         </div>
     )
@@ -146,21 +148,21 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                The Bureau of Indian Standards is an Indian body and its primary purpose is to assure the standards of quality, safety and reliability of the products available in the market. Pumps, liquid elevators and the parts of those pumps are necessary for a lot of industries, such as agriculture, water supply, oil and gas and various fields of manufacturing. Due to the significance of these pumps, the Bureau of Indian Standards (BIS) has established Scheme X certification as compulsory for the manufacturers to ensure performance and safety. 
+                    The Bureau of Indian Standards is an Indian body and its primary purpose is to assure the standards of quality, safety and reliability of the products available in the market. Pumps, liquid elevators and the parts of those pumps are necessary for a lot of industries, such as agriculture, water supply, oil and gas and various fields of manufacturing. Due to the significance of these pumps, the Bureau of Indian Standards (BIS) has established Scheme X certification as compulsory for the manufacturers to ensure performance and safety.
                 </p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                The Government of India, with the Ministry of Heavy Industries, has ordered pumps, liquid elevators and pumps with assemblies, sub-assemblies and components to get Scheme X Certification for Pumps complying with the Indian BIS Standards requirements. The Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order 2024, stipulates OTR for Pumps. The order has changed the previously voluntary BIS Scheme X Certification for Pumps to a compulsory requirement for the certifying bodies.   </p>
+                    The Government of India, with the Ministry of Heavy Industries, has ordered pumps, liquid elevators and pumps with assemblies, sub-assemblies and components to get Scheme X Certification for Pumps complying with the Indian BIS Standards requirements. The Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order 2024, stipulates OTR for Pumps. The order has changed the previously voluntary BIS Scheme X Certification for Pumps to a compulsory requirement for the certifying bodies.   </p>
 
                 {/* Introduction Paragraph 3 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                As the first step to the compulsory requirement for certifying bodies, the pumps with the title listed on the pumps for the market in India, has a non exchangeable rule of requiring a BIS Certification for Pumps and Liquid Elevators for selling that pumps in India, whether the pumps are made in India or brought in. The compliance is a must for IS standards.  
-                 </p>
+                    As the first step to the compulsory requirement for certifying bodies, the pumps with the title listed on the pumps for the market in India, has a non exchangeable rule of requiring a BIS Certification for Pumps and Liquid Elevators for selling that pumps in India, whether the pumps are made in India or brought in. The compliance is a must for IS standards.
+                </p>
 
                 {/* Introduction Paragraph 4 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                This blog covers all the necessary information related to Scheme X certification for pumps, its importance, scope, certification process, advantages, and documentation needed. 
+                    This blog covers all the necessary information related to Scheme X certification for pumps, its importance, scope, certification process, advantages, and documentation needed.
                 </p>
 
                 {/* Why Pumps and Elevators Matter Section */}
