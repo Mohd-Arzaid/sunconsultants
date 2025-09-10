@@ -347,7 +347,7 @@ export const LatestBlog = () => {
 
       {/* View More Button */}
       <div className="mt-5 w-full flex justify-center">
-        <Link to="/latest-notifications" className="w-full">
+        <Link to="/bis-qco-updates" className="w-full">
           <Button
             variant="outline"
             className="font-geist w-full bg-[#212126] hover:bg-[#212126]/90 text-white border-gray-300 hover:bg-gray-100"
