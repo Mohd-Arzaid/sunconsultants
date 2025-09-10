@@ -91,6 +91,10 @@ import SwitchgearandControlgearEquipment from "./schemeXProducts/SwitchgearandCo
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery,";
 import RotaryElectricalMachines from "./schemeXProducts/RotaryElectricalMachines";
 import PublicWorksAndMechanical from "./schemeXProducts/PublicWorksAndMechanical";
+import PowerSemiconductors from "./schemeXProducts/PowerSemiconductors";
+import Transformers from "./schemeXProducts/Transformers";
+import MachineTools from "./schemeXProducts/MachineTools";
+import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -247,10 +251,6 @@ function App() {
           <Route path="shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail" element={<PumpsAndLiquidElevatorsArabic />} />
 
 
-
-
-
-
           <Route path="bis-scheme-x-certification-for-packing-machinery" element={<PackingMachinery />} />
           <Route path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery" element={<Centrifuges />} />
           <Route path="bis-scheme-x-certification-for-compressors" element={<Compressors />} />
@@ -266,6 +266,10 @@ function App() {
           <Route path="bis-scheme-x-certification-for-rubber-and-plastics-machinery" element={<RubberAndPlasticsMachinery />} />
           <Route path="bis-scheme-x-certification-for-rotary-electrical-machines" element={<RotaryElectricalMachines />} />
           <Route path="bis-scheme-x-certification-for-public-works-and-mechanical-appliances" element={<PublicWorksAndMechanical />} />
+          <Route path="bis-scheme-x-certification-for-power-semiconductor-converters" element={<PowerSemiconductors />} />
+          <Route path="bis-scheme-x-certification-for-transformers" element={<Transformers />} />
+          <Route path="bis-scheme-x-certification-for-machine-tools" element={<MachineTools />} />
+          <Route path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts" element={<SwitchgearandControlgearEquipmentabove1000Volts />} />
         </Route>
 
         <Route

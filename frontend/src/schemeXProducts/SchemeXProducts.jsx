@@ -178,8 +178,38 @@ const products = [
     description:
       "BIS Scheme X Certification for Public Works & Mechanical Appliances under OTR 2024 ensures safety, quality & compliance. Learn process, benefits & penalties.",
     slug: "bis-scheme-x-certification-for-public-works-and-mechanical-appliances",
-
-
+  },
+  {
+    id: 17,
+    color: "#ff70f8",
+    title: "BIS Scheme X for Power Semiconductors Converters",
+    description:
+      "Power semiconductor converters allow the effective execution and modification of electrical power from one form to the other across various applications.",
+    slug: "bis-scheme-x-certification-for-power-semiconductor-converters",
+  },
+  {
+    id: 18,
+    color: "#8fff87",
+    title: "BIS Scheme X Certification for Transformers",
+    description:
+      "Transformers are an integral component of any power transmission and distribution network.",
+    slug: "bis-scheme-x-certification-for-transformers",
+  },
+  {
+    id: 19,
+    color: "#79f7de",
+    title: "BIS Scheme X Certification for Machine Tools",
+    description:
+      "Considering quality and safety as critical, BIS (Bureau of Indian Standards) has been spearheading safety and standards of different industries by Scheme X Certification. ",
+    slug: "bis-scheme-x-certification-for-machine-tools",
+  },
+  {
+    id: 20,
+    color: "#fc9e9d",
+    title: "BIS Scheme X Certification for Switchgear and Controlgear Equipment above 1000 Volts",
+    description:
+      "High-voltage switchgear and controlgear integrate seamlessly with energy distributions and operational processes in contemporary civilization's ever-growing electrification endeavors.",
+    slug: "bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts",
   },
 ];
 
