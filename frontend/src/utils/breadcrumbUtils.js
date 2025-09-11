@@ -131,9 +131,9 @@ const SITE_STRUCTURE = {
     position: 2,
     parents: ["/"],
   },
-  "/bis-isi-mark-certification": {
+  "/a-guide-to-bis-certification-indian-bis": {
     name: "BIS Certification Guide",
-    url: "/bis-isi-mark-certification",
+    url: "/a-guide-to-bis-certification-indian-bis",
     position: 2,
     parents: ["/"],
   },

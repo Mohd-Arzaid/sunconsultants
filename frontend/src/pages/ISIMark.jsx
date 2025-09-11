@@ -73,7 +73,7 @@ const ISIMark = () => {
         {/* Hreflang Links for International Pages */}
         <link
           rel="alternate"
-          href="https://bis-certifications.com/bis-isi-mark-certification"
+          href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
           hrefLang="en"
         />
         <link
@@ -128,7 +128,7 @@ const ISIMark = () => {
         />
         <link
           rel="alternate"
-          href="https://bis-certifications.com/bis-isi-mark-certification"
+          href="https://bis-certifications.com/a-guide-to-bis-certification-indian-bis"
           hrefLang="x-default"
         />
         <meta name="robots" content="index, follow" />
@@ -149,7 +149,7 @@ const ISIMark = () => {
                 "@type": "ListItem",
                 position: 2,
                 name: "BIS ISI Mark Certification Process, Documents, Fee",
-                item: "https://bis-certifications.com/bis-isi-mark-certification",
+                item: "https://bis-certifications.com/a-guide-to-bis-certification-indian-bis",
               },
             ],
           })}

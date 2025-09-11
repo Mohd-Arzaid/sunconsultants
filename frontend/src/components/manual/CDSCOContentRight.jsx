@@ -85,7 +85,7 @@ const CDSCOContentRight = () => {
     "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
 
     // ISI Mark - Guide to BIS Certification
-    "/bis-isi-mark-certification",
+    "/a-guide-to-bis-certification-indian-bis",
     "/ar/dalil-shahadat-bis-bis-alhind", // ADDED
     "/de/leitfaden-bis-zertifizierung-indisches-bis", // FIXED
     "/es/guia-certificacion-bis-bis-indio",
@@ -952,7 +952,7 @@ const FreeCallBack = () => {
       return "Legal Metrology";
 
     // ISI Mark Indian
-    if (path.includes("bis-isi-mark-certification"))
+    if (path.includes("a-guide-to-bis-certification-indian-bis"))
       return "ISI Mark Indian";
 
     if (path.includes("/ar/dalil-shahadat-bis-bis-alhind"))

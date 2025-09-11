@@ -9,7 +9,7 @@ const URL_TO_SERVICE_MAPPING = {
   "/nabl-certification-india": "NABL",
   "/cdsco-registration-certification": "CDSCO Registration",
   "/what-is-bis-certificate-indian-bis": "BIS Certification",
-  "/bis-isi-mark-certification": "ISI Mark Indian",
+  "/a-guide-to-bis-certification-indian-bis": "ISI Mark Indian",
   "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis":
     "BIS Mark Foreign",
   "/what-is-crs-bis-or-crs-registration": "CRS Registration",

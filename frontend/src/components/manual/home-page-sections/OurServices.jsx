@@ -34,7 +34,7 @@ const services = [
     description:
       "Domestic certification for Indian manufacturers ensuring products meet Bureau of Indian Standards quality and safety requirements.",
     image: ISIMarkImage,
-    path: "/bis-isi-mark-certification",
+    path: "/a-guide-to-bis-certification-indian-bis",
   },
   {
     id: 4,

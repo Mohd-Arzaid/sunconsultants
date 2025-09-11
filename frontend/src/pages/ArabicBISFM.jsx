@@ -321,7 +321,7 @@ export const ArabicServiceContactForm = () => {
       return "Legal Metrology";
 
     // ISI Mark Indian
-    if (path.includes("/bis-isi-mark-certification"))
+    if (path.includes("/a-guide-to-bis-certification-indian-bis"))
       return "ISI Mark Indian";
 
     if (path.includes("/ar/dalil-shahadat-bis-bis-alhind"))
@@ -330,7 +330,7 @@ export const ArabicServiceContactForm = () => {
     if (path.includes("/de/leitfaden-zur-bis-zertifizierung-indisches-bis"))
       return "ISI Mark Indian";
 
-    if (path.includes("/en/bis-isi-mark-certification"))
+    if (path.includes("/en/a-guide-to-bis-certification-indian-bis"))
       return "ISI Mark Indian";
 
     if (path.includes("/es/guia-certificacion-bis-bis-indio"))
@@ -1083,7 +1083,7 @@ const ArabicFreeCallBack = () => {
       return "Legal Metrology";
 
     // ISI Mark Indian
-    if (path.includes("bis-isi-mark-certification"))
+    if (path.includes("a-guide-to-bis-certification-indian-bis"))
       return "ISI Mark Indian";
 
 
@@ -3438,7 +3438,7 @@ export const ArabicServices = () => {
           </Link>
 
           <Link
-            to="/bis-isi-mark-certification"
+            to="/a-guide-to-bis-certification-indian-bis"
             className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
@@ -3813,7 +3813,7 @@ export const ArabicFooter = () => {
                     TEC
                   </Link>
                   <Link
-                    to="/bis-isi-mark-certification"
+                    to="/a-guide-to-bis-certification-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
                     علامة ISI
