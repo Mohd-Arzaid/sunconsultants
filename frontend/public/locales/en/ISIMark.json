@@ -47,8 +47,8 @@
     "difference": {
       "title": "What's the Difference Between BIS Certification and ISI Mark?",
       "paragraph1": "Although often confused and used as synonyms, BIS Certification and ISI Mark have specific definitions and purposes:",
-      "bisCertification": "BIS Certification: The process of granting approval to a product after ensuring that it meets the required Indian Standards. It is the framework under which conformity assessments are administered.",
-      "isiMark": "ISI Mark: The quality symbol or the standard mark that is awarded to a product after BIS certification is obtained. It indicates the product has been fully certified and meets the requisite Indian Standards.",
+      "bisCertification": "<strong>BIS Certification:</strong> The process of granting approval to a product after ensuring that it meets the required Indian Standards. It is the framework under which conformity assessments are administered.",
+      "isiMark": "<strong>ISI Mark:</strong> The quality symbol or the standard mark that is awarded to a product after BIS certification is obtained. It indicates the product has been fully certified and meets the requisite Indian Standards.",
       "paragraph2": "In this manner, ISI constitutes the physical certifiable commitment, while BIS certification offers the needed administrative framework."
     },
     "importance": {

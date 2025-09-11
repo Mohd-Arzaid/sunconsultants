@@ -678,10 +678,15 @@ const OverviewSection = () => {
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         {t("overview.whatIsISI.paragraph4")}{" "}
         <a
-          href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#125E5A] underline hover:text-[#1A8781] transition-colors"
+          href="#product-table"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('product-table')?.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }}
+          className="text-[#125E5A] underline hover:text-[#1A8781] transition-colors cursor-pointer"
         >
           {t("overview.whatIsISI.linkText")}
         </a>
@@ -696,13 +701,15 @@ const OverviewSection = () => {
         {t("overview.difference.paragraph1")}
       </p>
 
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <strong>{t("overview.difference.bisCertification")}</strong>
-      </p>
+      <p
+        className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose"
+        dangerouslySetInnerHTML={{ __html: t("overview.difference.bisCertification") }}
+      />
 
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <strong>{t("overview.difference.isiMark")}</strong>
-      </p>
+      <p
+        className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose"
+        dangerouslySetInnerHTML={{ __html: t("overview.difference.isiMark") }}
+      />
 
       <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         {t("overview.difference.paragraph2")}
