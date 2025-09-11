@@ -51,16 +51,22 @@ const ISIMark = () => {
         {/* Open Graph Tags */}
         <meta
           property="og:title"
-          content="ISI Mark Certification Services | BIS Certification"
+          content="BIS ISI Mark Certification Process, Documents, Fee"
         />
         <meta
           property="og:description"
-          content="Expert ISI Mark certification services for Indian manufacturers. Get BIS certification and quality mark for your products."
+          content=" ISI mark certification issued by the Bureau of Indian Standards is given to products undergoing stringent testing and inspection to meet the required standards and compliances"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter Card Tags */}
+
+        <meta name="twitter:title" content="BIS ISI Mark Certification Process, Documents, Fee" />
+        <meta name="twitter:description" content=" ISI mark certification issued by the Bureau of Indian Standards is given to products undergoing stringent testing and inspection to meet the required standards and compliances" />
+
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
 
@@ -658,14 +664,14 @@ const OverviewSection = () => {
       </p>
 
       {/* ISI Mark Image */}
-      <div className="flex justify-center my-6 md:my-8">
+      {/* <div className="flex justify-center my-6 md:my-8">
         <img
           src="/isi-mark-img/IndianBISCertification.png"
           alt="BIS Certification, BIS Certificate, BIS License - Indian BIS"
           className="max-w-full h-auto rounded-lg shadow-lg border border-gray-200"
           loading="lazy"
         />
-      </div>
+      </div> */}
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <PointsListTwo
