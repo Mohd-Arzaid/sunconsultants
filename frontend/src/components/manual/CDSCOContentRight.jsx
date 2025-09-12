@@ -483,7 +483,7 @@ const ClientTestimonial = () => {
             {t("title")}
           </div>
         </div>
-        <div className="mt-8 mb-5 rounded-lg h-[600px] overflow-hidden">
+        <div className="mt-8 mb-5 rounded-lg h-[450px] overflow-hidden">
           <Marquee
             vertical
             repeat={2}
