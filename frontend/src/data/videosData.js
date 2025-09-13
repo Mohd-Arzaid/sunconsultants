@@ -227,4 +227,40 @@ export const videosData = [
       "Best Practices",
     ],
   },
+  {
+    id: 12,
+    embedId: "8ltY8GNIdUk",
+    title: "New Video 1",
+    description:
+      "Description for the new video. Please update this with the actual video description and title.",
+    category: "BIS Certification",
+    duration: "PT10M00S", // 10 minutes (estimated)
+    uploadDate: "2025-01-15T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Indian Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Certification Process",
+    ],
+  },
+  {
+    id: 13,
+    embedId: "smPy_KzA95k",
+    title: "New Video 2",
+    description:
+      "Description for the new video. Please update this with the actual video description and title.",
+    category: "BIS Certification",
+    duration: "PT10M00S", // 10 minutes (estimated)
+    uploadDate: "2025-01-15T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Indian Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Certification Process",
+    ],
+  },
 ];
