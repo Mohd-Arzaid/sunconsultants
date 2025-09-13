@@ -23,14 +23,14 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
 import AboutAuthor from "@/components/common/AboutAuthor";
 import { Helmet } from "react-helmet-async";
-import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 
 const Centrifuges = () => {
   return (
     <div className="relative w-full">
       <Helmet>
         <title>
-          BIS Scheme X Certification for Centrifuges Machinery
+          BIS Scheme X Certification for Centrifuges and Filtering or Purifying
+          Machinery
         </title>
 
         {/* Meta Description */}
@@ -141,8 +141,7 @@ const CentrifugesMainContent = () => {
         <CentrifugesMainContentLeft />
 
         {/* Right Side Content */}
-        {/* <CentrifugesMainContentRight /> */}
-        <CDSCOContentRight />
+        <CentrifugesMainContentRight />
       </div>
     </div>
   );
@@ -159,24 +158,42 @@ const CentrifugesMainContentLeft = () => {
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Scheme X Certification for Centrifuges and Filtering or Purifying Machinery
+          BIS Certification for Centrifuges
         </h1>
+
+        {/* BIS Scheme X Image */}
+        <div className="mb-6">
+          <img
+            src="/schemXproductImages/BIS-license-for-centrifuges-filtering-or-purifying-machinery.png"
+            title="BIS Scheme X License for Centrifuges"
+            alt="BIS Scheme X Certification For Centrifuges And Filtering Or Purifying Machinery"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          In the present era of industry, centrifuges and filtration systems play a core role in sustaining the cleanliness and operational efficiency of a myriad of sectors, such as chemical and pharmaceutical manufacturing, oil and gas, food processing, mining, and wastewater treatment, among many others. Machines that perform separation, filtration, and purification of liquids and gases highly influence process efficiency and ecological protection.
-
+          Centrifuge is a vital machine widely applicable in laboratory,
+          pharmaceutical, food processing, biotechnology, petrochemical, and
+          mining industries. These machines work by spinning, and the fast
+          rotation separates mixtures, this separation is essential for precise,
+          safe and fast processing.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure the quality, safety and performance of such critical machines, the Bureau of Indian Standards (BIS) has made it mandatory for all types of centrifuges, and liquid and gas filtering or purifying machines, along with any assemblies, sub-assemblies and components, to be certified under the BIS Scheme X
+          With wider applications in various industries, it is critical to
+          increase the reliability and safety of centrifuges. To maintain the
+          quality control parameter for centrifuges the BIS has introduced a
+          scheme of BIS Certification known as Scheme -X Certification for
+          Centrifuges.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          This policy is part of the Omnibus Technical Regulation Order, 2024, issued by the Ministry of Heavy Industries, and has a deadline of compliance by 1st September 2026.
-          This blog serves the purpose of educating manufacturers, importers, and stakeholders in the industry about the BIS certification process regarding centrifuges and filtration machinery and the solutions for compliance as outlined in the regulations of BIS Scheme X.
+          In this post, we will cover What is BIS Scheme X Certification for
+          Centrifuges, What is OTR for Centrifuges, and How to get BIS License
+          for Centrifuges with the official BIS mark for Centrifuges.
         </p>
 
         {/* Separator Line */}
@@ -370,9 +387,9 @@ const CentrifugesMainContentLeft = () => {
           </li>
         </ul>
 
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
           Penalties for Non-Compliance
-        </div>
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Manufacturers who do not have all models centrifuges certified with
@@ -391,9 +408,9 @@ const CentrifugesMainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Conclusion Section */}
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
-        </p>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Conclusion
+        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           The implementation of BIS Scheme X Certification for Centrifuges in
@@ -511,10 +528,11 @@ const CentrifugesMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-              ? "bg-green-50 text-green-700 border border-green-200"
-              : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
+              submitStatus.type === "success"
+                ? "bg-green-50 text-green-700 border border-green-200"
+                : "bg-red-50 text-red-700 border border-red-200"
+            }`}
           >
             {submitStatus.message}
           </div>

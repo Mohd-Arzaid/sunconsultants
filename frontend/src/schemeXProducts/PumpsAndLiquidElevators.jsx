@@ -1,14 +1,28 @@
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
-import { SlashIcon, PhoneCall, User, Phone, Mail, MessageCircle, SendHorizontal } from "lucide-react"
-import { Link } from "react-router-dom"
-import { Button } from "@/components/ui/button"
-import { useState } from "react"
-import { Services } from "@/components/manual/Services"
-import VideoSection from "@/components/manual/home-page-sections/VideoSection"
-import Footer from "@/common/Footer"
-import AboutAuthor from "@/components/common/AboutAuthor"
-import { Helmet } from "react-helmet-async"
-import CDSCOContentRight from "@/components/manual/CDSCOContentRight"
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import {
+    SlashIcon,
+    PhoneCall,
+    User,
+    Phone,
+    Mail,
+    MessageCircle,
+    SendHorizontal,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { Services } from "@/components/manual/Services";
+import VideoSection from "@/components/manual/home-page-sections/VideoSection";
+import Footer from "@/common/Footer";
+import AboutAuthor from "@/components/common/AboutAuthor";
+import { Helmet } from "react-helmet-async";
 
 const PumpsAndLiquidElevators = () => {
     return (
@@ -17,42 +31,54 @@ const PumpsAndLiquidElevators = () => {
                 <title>BIS Scheme X Certification for Pumps and Liquid Elevators</title>
 
                 {/* Meta Description */}
-                <meta name="description" content="BIS Scheme X certification for pumps and liquid elevators under the Omnibus Technical Regulation Order, 2024 mandates that all types of pumps and liquid elevators must conform to Scheme X Certification by September 2026" />
+                <meta
+                    name="description"
+                    content="BIS Scheme X certification for pumps and liquid elevators under the Omnibus Technical Regulation Order, 2024 mandates that all types of pumps and liquid elevators must conform to Scheme X Certification by September 2026"
+                />
 
                 {/* Meta Keywords */}
-                <meta name="keywords" content="BIS Certification for Pumps, BIS Scheme X Certification for Pumps, Scheme X certification for Pumps, BIS for Pumps, BIS Certification for Pumps and Liquid Elevators, OTR for Pumps" />
+                <meta
+                    name="keywords"
+                    content="BIS Certification for Pumps, BIS Scheme X Certification for Pumps, Scheme X certification for Pumps, BIS for Pumps, BIS Certification for Pumps and Liquid Elevators, OTR for Pumps"
+                />
                 <meta name="author" content="Sun Certifications India" />
-                <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
+                <meta
+                    name="publisher"
+                    content="Dhruv Aggarwal, Head of Operations at Sun Certification India"
+                />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
                 {/* Open Graph Tags */}
-                <meta property="og:title" content="BIS Scheme X Certification for Pumps & Liquid Elevators in India | Complete Guide" />
-                <meta property="og:description" content="Learn everything about BIS Scheme X Certification for Pumps and Liquid Elevators in India. Understand OTR 2024 compliance, BIS License process, ISI mark requirements, and how to get certified before the September 2026 deadline" />
-                <meta property="og:url" content="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
+                <meta
+                    property="og:title"
+                    content="BIS Scheme X Certification for Pumps & Liquid Elevators in India | Complete Guide"
+                />
+                <meta
+                    property="og:description"
+                    content="Learn everything about BIS Scheme X Certification for Pumps and Liquid Elevators in India. Understand OTR 2024 compliance, BIS License process, ISI mark requirements, and how to get certified before the September 2026 deadline"
+                />
+                <meta
+                    property="og:url"
+                    content="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                />
                 <meta property="og:site_name" content="Sun Certifications India" />
                 <meta property="og:type" content="article" />
 
                 {/* Twitter Tags */}
-                <meta name="twitter:title" content="BIS Scheme X Certification for Pumps & Liquid Elevators in India | Complete Guide" />
-                <meta name="twitter:description" content="Learn everything about BIS Scheme X Certification for Pumps and Liquid Elevators in India. Understand OTR 2024 compliance, BIS License process, ISI mark requirements, and how to get certified before the September 2026 deadline" />
+                <meta
+                    name="twitter:title"
+                    content="BIS Scheme X Certification for Pumps & Liquid Elevators in India | Complete Guide"
+                />
+                <meta
+                    name="twitter:description"
+                    content="Learn everything about BIS Scheme X Certification for Pumps and Liquid Elevators in India. Understand OTR 2024 compliance, BIS License process, ISI mark requirements, and how to get certified before the September 2026 deadline"
+                />
 
                 {/* Canonical URL */}
-                <link rel="canonical" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
-
-                {/* HrefLang Tags */}
-                <link rel="alternate" hrefLang="en" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
-                <link rel="alternate" hrefLang="de" href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege" />
-                <link rel="alternate" hrefLang="es" href="https://bis-certifications.com/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos" />
-                <link rel="alternate" hrefLang="fr" href="https://bis-certifications.com/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides" />
-                <link rel="alternate" hrefLang="id" href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan" />
-                <link rel="alternate" hrefLang="it" href="https://bis-certifications.com/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi" />
-                <link rel="alternate" hrefLang="ja" href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa" />
-                <link rel="alternate" hrefLang="ko" href="https://bis-certifications.com/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi" />
-                <link rel="alternate" hrefLang="nl" href="https://bis-certifications.com/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators" />
-                <link rel="alternate" hrefLang="th" href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam" />
-                <link rel="alternate" hrefLang="vi" href="https://bis-certifications.com/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long" />
-                <link rel="alternate" hrefLang="ar" href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail" />
-                <link rel="alternate" hrefLang="x-default" href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators" />
+                <link
+                    rel="canonical"
+                    href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                />
             </Helmet>
 
             <PumpsAndLiquidElevatorsPageBreadcrumb />
@@ -61,11 +87,10 @@ const PumpsAndLiquidElevators = () => {
             <VideoSection />
             <Footer />
         </div>
-    )
-}
+    );
+};
 
-export default PumpsAndLiquidElevators
-
+export default PumpsAndLiquidElevators;
 
 const PumpsAndLiquidElevatorsPageBreadcrumb = () => {
     return (
@@ -76,9 +101,7 @@ const PumpsAndLiquidElevatorsPageBreadcrumb = () => {
                         <BreadcrumbList>
                             <BreadcrumbItem>
                                 <BreadcrumbLink asChild>
-                                    <Link to="/">
-                                        Home
-                                    </Link>
+                                    <Link to="/">Home</Link>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbSeparator>
@@ -87,9 +110,7 @@ const PumpsAndLiquidElevatorsPageBreadcrumb = () => {
 
                             <BreadcrumbItem>
                                 <BreadcrumbLink asChild>
-                                    <Link to="/SchemeX-Products">
-                                        SchemeX Products
-                                    </Link>
+                                    <Link to="/SchemeX-Products">SchemeX Products</Link>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbSeparator>
@@ -106,63 +127,68 @@ const PumpsAndLiquidElevatorsPageBreadcrumb = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 const PumpsAndLiquidElevatorsPageMainContent = () => {
     return (
         <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
             <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-
                 {/* Left Side Content */}
                 <PumpsAndLiquidElevatorsPageMainContentLeft />
 
                 {/* Right Side Content */}
-                {/* <PumpsAndLiquidElevatorsPageMainContentRight /> */}
-                <CDSCOContentRight />
+                <PumpsAndLiquidElevatorsPageMainContentRight />
             </div>
         </div>
-    )
-}
+    );
+};
 
 const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
     return (
         <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
-
             {/* Blog Content */}
             <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-
                 {/* Main Heading */}
                 <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
                     BIS Scheme X Certification for Pumps and Liquid Elevators in India
                 </h1>
 
-                {/* BIS License for Pumps Image */}
-                <div className="flex justify-center mb-6">
+                {/* BIS Scheme X Image */}
+                <div className="mb-6">
                     <img
                         src="/schemXproductImages/BIS-Scheme-X-License-For-Pumps.png"
-                        alt="BIS License for Pumps and Liquid Elevators"
-                        className="max-w-full h-auto rounded-lg shadow-md"
+                        title="BIS Scheme X License For Pumps"
+                        alt="BIS Scheme X Certification For Pumps And Liquid Elevators"
+                        className="w-full h-auto rounded-lg shadow-md"
                     />
                 </div>
 
                 {/* Introduction Paragraph 1 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    The Bureau of Indian Standards is an Indian body and its primary purpose is to assure the standards of quality, safety and reliability of the products available in the market. Pumps, liquid elevators and the parts of those pumps are necessary for a lot of industries, such as agriculture, water supply, oil and gas and various fields of manufacturing. Due to the significance of these pumps, the Bureau of Indian Standards (BIS) has established Scheme X certification as compulsory for the manufacturers to ensure performance and safety.
+                    Rapid Industrial and infrastructure growth in India requires
+                    machineries which work more and ensure the fulfillment of national and
+                    international demand. Pumps and liquid elevators are crucial for water
+                    resources, agriculture, construction, energy, industry and many
+                    others. A defective piece of equipment can risk safety, disrupt
+                    operation and create financial loss if not manufactured to the right
+                    specifications with quality control in place.
                 </p>
 
                 {/* Introduction Paragraph 2 */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    The Government of India, with the Ministry of Heavy Industries, has ordered pumps, liquid elevators and pumps with assemblies, sub-assemblies and components to get Scheme X Certification for Pumps complying with the Indian BIS Standards requirements. The Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order 2024, stipulates OTR for Pumps. The order has changed the previously voluntary BIS Scheme X Certification for Pumps to a compulsory requirement for the certifying bodies.   </p>
+                    To bring this under control, the BIS (Bureau of Indian Standards) had
+                    launched the Scheme X certification, which necessitates every pump and
+                    liquid elevator to satisfy the national quality standard before it is
+                    sold in India.
+                </p>
 
                 {/* Introduction Paragraph 3 */}
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    As the first step to the compulsory requirement for certifying bodies, the pumps with the title listed on the pumps for the market in India, has a non exchangeable rule of requiring a BIS Certification for Pumps and Liquid Elevators for selling that pumps in India, whether the pumps are made in India or brought in. The compliance is a must for IS standards.
-                </p>
-
-                {/* Introduction Paragraph 4 */}
-                <p className="text-gray-600 text-base font-geist mb-6">
-                    This blog covers all the necessary information related to Scheme X certification for pumps, its importance, scope, certification process, advantages, and documentation needed.
+                    In this post, we intend to cover the significance of BIS Certification
+                    for Pumps, the significance of the Omnibus Technical Regulation (OTR)
+                    2024, and the process for achieving a BIS License for Pumps under
+                    Scheme X for aspiring manufacturers.
                 </p>
 
                 {/* Why Pumps and Elevators Matter Section */}
@@ -176,7 +202,8 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </div>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Pumps are indispensable devices for conveying fluids or slurries across various industries. They are widely used in:
+                    Pumps are indispensable devices for conveying fluids or slurries
+                    across various industries. They are widely used in:
                 </p>
 
                 {/* Pumps Usage Areas */}
@@ -194,7 +221,8 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </div>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Lifting pumps, Vertical liquid elevators for lifting liquids serve for pumping:
+                    Lifting pumps, Vertical liquid elevators for lifting liquids serve for
+                    pumping:
                 </p>
 
                 {/* Liquid Elevators Usage Areas */}
@@ -217,7 +245,8 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </ul>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    This is why BIS for Pumps and Liquid Elevators is a much-needed protection for manufacturers and buyers alike.
+                    This is why BIS for Pumps and Liquid Elevators is a much-needed
+                    protection for manufacturers and buyers alike.
                 </p>
 
                 {/* Separator Line */}
@@ -229,7 +258,11 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </h2>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    The Bureau of Indian Standards (BIS) is the national standards body of India to certify the quality and safety of products. To control vital plants and machinery, the BIS has made it mandatory to obtain the Scheme X Certification from March 16, 2022 under the BIS Conformity Assessment Regulations, 2018.
+                    The Bureau of Indian Standards (BIS) is the national standards body of
+                    India to certify the quality and safety of products. To control vital
+                    plants and machinery, the BIS has made it mandatory to obtain the
+                    Scheme X Certification from March 16, 2022 under the BIS Conformity
+                    Assessment Regulations, 2018.
                 </p>
 
                 {/* Scheme X Key Highlights */}
@@ -239,9 +272,18 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
 
                 <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
                     <li>Compulsory for Indian and foreign manufacturers both</li>
-                    <li>Is applicable to pumps, motors and liquid elevators covered under Indian Standards</li>
-                    <li>Includes laboratory tests, factory inspections, consistent checks of compliance</li>
-                    <li>Adds on legal powers in granting the use of BIS mark for Pumps by manufacturers as evidence of certification.</li>
+                    <li>
+                        Is applicable to pumps, motors and liquid elevators covered under
+                        Indian Standards
+                    </li>
+                    <li>
+                        Includes laboratory tests, factory inspections, consistent checks of
+                        compliance
+                    </li>
+                    <li>
+                        Adds on legal powers in granting the use of BIS mark for Pumps by
+                        manufacturers as evidence of certification.
+                    </li>
                 </ul>
 
                 {/* Separator Line */}
@@ -253,7 +295,9 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </h2>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    The OTR 2024 was announced by the Ministry of Heavy Industries, which mandated all pumps and liquid elevators to adhere to Scheme X Certification.
+                    The OTR 2024 was announced by the Ministry of Heavy Industries, which
+                    mandated all pumps and liquid elevators to adhere to Scheme X
+                    Certification.
                 </p>
 
                 <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -261,7 +305,10 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </div>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    On or before 1st September, 2026, all manufacturers and importers shall obtain a valid BIS License for Pumps under Scheme X. Non-compliance can lead to heavy fines, as well as closure of sales and exclusion from public tenders.
+                    On or before 1st September, 2026, all manufacturers and importers
+                    shall obtain a valid BIS License for Pumps under Scheme X.
+                    Non-compliance can lead to heavy fines, as well as closure of sales
+                    and exclusion from public tenders.
                 </p>
 
                 {/* Separator Line */}
@@ -273,7 +320,8 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </h2>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    1. Safety Assurance: Insures that the equipment is designed and built for the rigors of operations and not to:
+                    1. Safety Assurance: Insures that the equipment is designed and built
+                    for the rigors of operations and not to:
                 </p>
 
                 <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
@@ -287,16 +335,24 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </p>
 
                 <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-                    <li>BIS certified pumps are often needed for public projects, government tenders etc.</li>
-                    <li>Provides competitive advantage compared to non-certified products.</li>
+                    <li>
+                        BIS certified pumps are often needed for public projects, government
+                        tenders etc.
+                    </li>
+                    <li>
+                        Provides competitive advantage compared to non-certified products.
+                    </li>
                 </ul>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    3. Consumer Trust: ISI mark on Pumps give Reassurance to the Purchaser about the Quality and Guarantees Efficiency of the Product.
+                    3. Consumer Trust: ISI mark on Pumps give Reassurance to the Purchaser
+                    about the Quality and Guarantees Efficiency of the Product.
                 </p>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    4. Global Brands Easily Enter Marketplace: Foreign OEMs get easy access into India&apos;s regulated market upon fulfillment of Scheme X norms.
+                    4. Global Brands Easily Enter Marketplace: Foreign OEMs get easy
+                    access into India&apos;s regulated market upon fulfillment of Scheme X
+                    norms.
                 </p>
 
                 {/* Separator Line */}
@@ -324,7 +380,9 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </ul>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Each type must comply with relevant Indian Standards (IS codes) such as IS 16819:2018/ISO 12100:2010 (Safety of Machinery General Principles for Design- Risk Assessment and Risk Reduction).
+                    Each type must comply with relevant Indian Standards (IS codes) such
+                    as IS 16819:2018/ISO 12100:2010 (Safety of Machinery General
+                    Principles for Design- Risk Assessment and Risk Reduction).
                 </p>
 
                 <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -347,27 +405,34 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </h2>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Identify Applicable Standards: Quotation must specify the appropriate IS codes (for instance, IS 9079 for submersible pumps).
+                    Identify Applicable Standards: Quotation must specify the appropriate
+                    IS codes (for instance, IS 9079 for submersible pumps).
                 </p>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Product Testing: Mandate testing on performance and safety at BIS-accepted laboratories.
+                    Product Testing: Mandate testing on performance and safety at
+                    BIS-accepted laboratories.
                 </p>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Factory Inspection: BIS authorities inspect the production site to verify the implementation of quality control procedures.
+                    Factory Inspection: BIS authorities inspect the production site to
+                    verify the implementation of quality control procedures.
                 </p>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Documentation & Application: Technical specifications, test reports and quality manuals are to be accompanied with the BIS application form.
+                    Documentation & Application: Technical specifications, test reports
+                    and quality manuals are to be accompanied with the BIS application
+                    form.
                 </p>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Issue of BIS Certificate for Pumps: Manufacturers on approval are given the licence to apply the BIS mark under Scheme X.
+                    Issue of BIS Certificate for Pumps: Manufacturers on approval are
+                    given the licence to apply the BIS mark under Scheme X.
                 </p>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    Ongoing Surveillance: BIS performs regular audits and random inspections of products to ensure ongoing compliance.
+                    Ongoing Surveillance: BIS performs regular audits and random
+                    inspections of products to ensure ongoing compliance.
                 </p>
 
                 {/* Separator Line */}
@@ -379,7 +444,8 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 </div>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    Manufacturers failing to get BIS certification, as on 1st September 2026, will be subjected to:
+                    Manufacturers failing to get BIS certification, as on 1st September
+                    2026, will be subjected to:
                 </p>
 
                 <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
@@ -394,24 +460,29 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
 
                 {/* Conclusion Section */}
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
+                    <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS
+                    Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to
+                    be enforced; a milestone in India standardization of Industry.
                 </p>
 
                 <p className="text-gray-600 text-base font-geist mb-4">
-                    For those with manufacturing, importing or exporting business, BIS registration for pumps is not merely a statutory compliance process to fulfill, but also a strategic decision towards ensuring safety&apos;s dominance over potential risks, building consumer faith and an entry into the expanded market of India.
+                    For those with manufacturing, importing or exporting business, BIS
+                    registration for pumps is not merely a statutory compliance process to
+                    fulfill, but also a strategic decision towards ensuring safety&apos;s
+                    dominance over potential risks, building consumer faith and an entry
+                    into the expanded market of India.
                 </p>
 
                 <p className="text-gray-600 text-base font-geist mb-6">
-                    Pump and Liquid Elevator&apos;s BIS Certification is a long term investment to establish the credential and market of your Product.
+                    Pump and Liquid Elevator&apos;s BIS Certification is a long term
+                    investment to establish the credential and market of your Product.
                 </p>
 
                 <AboutAuthor />
-
             </div>
         </div>
-    )
-}
-
+    );
+};
 
 const PumpsAndLiquidElevatorsPageMainContentRight = () => {
     const [formData, setFormData] = useState({
@@ -425,7 +496,8 @@ const PumpsAndLiquidElevatorsPageMainContentRight = () => {
 
     // Get current page URL and name for form submission
     const currentUrl = window.location.href;
-    const currentPageName = "SchemeX Product - BIS Certification for Pumps & Liquid Elevators";
+    const currentPageName =
+        "SchemeX Product - BIS Certification for Pumps & Liquid Elevators";
 
     // Add BASE_URL like other forms
     const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
@@ -505,8 +577,8 @@ const PumpsAndLiquidElevatorsPageMainContentRight = () => {
                 {submitStatus && (
                     <div
                         className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-                            ? "bg-green-50 text-green-700 border border-green-200"
-                            : "bg-red-50 text-red-700 border border-red-200"
+                                ? "bg-green-50 text-green-700 border border-green-200"
+                                : "bg-red-50 text-red-700 border border-red-200"
                             }`}
                     >
                         {submitStatus.message}
@@ -602,5 +674,5 @@ const PumpsAndLiquidElevatorsPageMainContentRight = () => {
                 </p>
             </div>
         </div>
-    )
-}
+    );
+};

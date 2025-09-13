@@ -76,8 +76,8 @@ const products = [
     color: "#1A8781",
     title: "BIS Scheme X Certification for Heat Treatment Equipment",
     description:
-      "BIS Certification for Heat Treatment Equipment is mandatory by Sept 2026 for safe, efficient, and compliant market access in Indi",
-    slug: "bis-scheme-x-certification-for-heat-treatment-equipment",
+      "BIS Certification for Heat Treatment Equipment is mandatory by Sept 2026 for safe, efficient, and compliant market access in India",
+    slug: "bis-scheme-x-certification-for-heat-treatment-equipment", 
 
   },
   {
@@ -86,7 +86,7 @@ const products = [
     title: "BIS Certification for Construction Machinery",
     description:
       "BIS Certification (Scheme X) is mandatory for construction machinery in India from 1st Sept 2026, ensuring safety, quality, and compliance.",
-    slug: "bis-scheme-x-certification-for-construction-machinery",
+    slug: "bis-scheme-x-certification-for-construction-machinery", 
 
   },
   {
@@ -95,114 +95,126 @@ const products = [
     title: "BIS Scheme X Certification of Weaving Machines",
     description:
       "BIS Scheme X for Weaving Machines – Mandatory from Sept 2026 for quality, safety & market access.",
-    slug: "bis-scheme-x-certification-for-weaving-machines-looms",
+    slug: "bis-scheme-x-certification-for-weaving-machines-looms", 
 
-  },
+  },  
   {
     id: 8,
     color: "#479F9A",
     title: "BIS Certification for Metal Cutting Machines",
     description:
       "BIS Certification for Metal Cutting Machines mandatory from Sept 2026 to ensure safety, quality & compliance.",
-    slug: "bis-scheme-x-certification-for-metal-cutting-machine-tools",
+    slug: "bis-scheme-x-certification-for-metal-cutting-machine-tools", 
 
-  },
+  },  
   {
     id: 9,
     color: "#979F9A",
     title: "BIS Scheme X for Cranes",
     description:
       "BIS Certification for Cranes is mandatory from Sept 2026. Learn Scheme X, OTR rules, process, benefits, and compliance for all crane types.",
-    slug: "bis-scheme-x-certification-for-cranes",
+    slug: "bis-scheme-x-certification-for-cranes", 
 
-  },
+  },  
   {
     id: 10,
     color: "#E879F9",
     title: "BIS Scheme X Certification for Embroidery Machines",
     description:
       "BIS Certification for Embroidery Machines is mandatory from Sept 2026. Learn Scheme X, OTR rules, benefits, and process for BIS License.",
-    slug: "bis-scheme-x-certification-for-embroidery-machinery",
+    slug: "bis-scheme-x-certification-for-embroidery-machinery", 
 
-  },
+  },  
   {
     id: 11,
     color: "#ed1313",
     title: "BIS Scheme X Certification for Gears, Gearing, and Transmission Elements",
     description:
       "BIS Certification for Gears and Transmission Elements is mandatory from Sept 2026. Learn Scheme X rules, OTR mandate, benefits, and process.",
-    slug: "bis-scheme-x-certification-for-gears-gearing-and-transmission-elements",
+    slug: "bis-scheme-x-certification-for-gears-gearing-and-transmission-elements", 
 
-  },
+  },  
   {
     id: 12,
     color: "#79f9e4",
     title: "BIS Scheme X CERTIFICATION FOR DIESEL GENERATOR",
     description:
       "BIS Certification for Diesel Generators is mandatory from Sept 2026. Learn Scheme X rules, OTR compliance, benefits, and certification process.",
-    slug: "bis-scheme-x-certification-for-diesel-generators",
+    slug: "bis-scheme-x-certification-for-diesel-generators", 
 
-  },
+  },  
   {
     id: 13,
     color: "#79f9e4",
     title: "BIS Scheme X Certification for Switchgear and Controlgear Equipment up to 1000 Volts",
     description:
       "BIS Certification for Diesel Generators is mandatory from Sept 2026. Learn Scheme X rules, OTR compliance, benefits, and certification process.",
-    slug: "bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts",
+    slug: "bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts", 
 
 
-  },
+
+  },  
   {
     id: 14,
     color: "#c9f754",
     title: "BIS Scheme X Certification for Rubber and Plastics Machinerys",
     description:
       "BIS Scheme X Certification for Rubber & Plastics Machinery under OTR 2024 ensures safety, quality, and compliance. Learn process, benefits & penalties.",
-    slug: "bis-scheme-x-certification-for-rubber-and-plastics-machinery",
+    slug: "bis-scheme-x-certification-for-rubber-and-plastics-machinery", 
 
-  },
+  },  
   {
     id: 15,
     color: "#f23d8e",
     title: "BIS Scheme X Certification for Rotary Electrical Machines",
     description:
       "BIS Scheme X Certification for Rotary Electrical Machines under OTR 2024 ensures safety, quality & compliance. Learn process, benefits & penalties.",
-    slug: "bis-scheme-x-certification-for-rotary-electrical-machines",
+    slug: "bis-scheme-x-certification-for-rotary-electrical-machines", 
 
-  },
+  },  
+
   {
     id: 16,
     color: "#345ffa",
     title: "BIS Scheme X Certification for Public Works and Mechanical Appliances",
     description:
       "BIS Scheme X Certification for Public Works & Mechanical Appliances under OTR 2024 ensures safety, quality & compliance. Learn process, benefits & penalties.",
-    slug: "bis-scheme-x-certification-for-public-works-and-mechanical-appliances",
-  },
+    slug: "bis-scheme-x-certification-for-public-works-and-mechanical-appliances", 
+
+
+  },  
   {
     id: 17,
     color: "#ff70f8",
     title: "BIS Scheme X for Power Semiconductors Converters",
     description:
       "Power semiconductor converters allow the effective execution and modification of electrical power from one form to the other across various applications.",
-    slug: "bis-scheme-x-certification-for-power-semiconductor-converters",
-  },
+    slug: "bis-scheme-x-certification-for-power-semiconductor-converters", 
+
+
+
+  },  
   {
     id: 18,
     color: "#8fff87",
     title: "BIS Scheme X Certification for Transformers",
     description:
       "Transformers are an integral component of any power transmission and distribution network.",
-    slug: "bis-scheme-x-certification-for-transformers",
-  },
+    slug: "bis-scheme-x-certification-for-transformers", 
+    
+
+
+
+  },  
   {
     id: 19,
     color: "#79f7de",
     title: "BIS Scheme X Certification for Machine Tools",
     description:
       "Considering quality and safety as critical, BIS (Bureau of Indian Standards) has been spearheading safety and standards of different industries by Scheme X Certification. ",
-    slug: "bis-scheme-x-certification-for-machine-tools",
-  },
+    slug: "bis-scheme-x-certification-for-machine-tools", 
+
+  },  
   {
     id: 20,
     color: "#fc9e9d",
@@ -210,7 +222,9 @@ const products = [
     description:
       "High-voltage switchgear and controlgear integrate seamlessly with energy distributions and operational processes in contemporary civilization's ever-growing electrification endeavors.",
     slug: "bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts",
-  },
+
+
+  },  
 ];
 
 // =============================
@@ -256,7 +270,7 @@ const SchemeXProductsSearchBar = ({ searchQuery, handleSearch }) => {
     <div className="mb-12 md:mb-20 max-w-2xl mx-auto">
       <div className="relative">
         <label htmlFor="search" className="sr-only">
-          Search Scheme X Products
+          Search SchemeX Products
         </label>
         <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
         <input
@@ -264,7 +278,7 @@ const SchemeXProductsSearchBar = ({ searchQuery, handleSearch }) => {
           type="text"
           value={searchQuery}
           onChange={handleSearch}
-          placeholder="Search for Scheme X Products"
+          placeholder="Search for SchemeX Products"
           className="w-full pl-11 md:pl-12 placeholder:font-geist placeholder:text-[17px] sm:placeholder:text-[18px] pr-4 py-3 md:py-4 rounded-full shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] border-2 border-transparent bg-white focus:border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-100 transition-all duration-200"
         />
       </div>
@@ -494,10 +508,11 @@ const SchemeXProductsPagination = ({
             <button
               key={pageNum}
               onClick={() => handlePageChange(pageNum)}
-              className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${currentPage === pageNum
-                ? "bg-[#1A8781] text-white"
-                : "text-gray-700 hover:bg-gray-200"
-                }`}
+              className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${
+                currentPage === pageNum
+                  ? "bg-[#1A8781] text-white"
+                  : "text-gray-700 hover:bg-gray-200"
+              }`}
               aria-label={`Page ${pageNum}`}
               aria-current={currentPage === pageNum ? "page" : undefined}
             >
@@ -590,7 +605,7 @@ const SchemeXProductsMainContent = () => {
         {/* Page header section */}
         <div className="text-center mb-6 md:mb-10">
           <h1 className="font-playfair text-2xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
-            Scheme X Products
+            SchemeX Products
           </h1>
           <p className="text-base md:text-lg font-geist text-gray-600 max-w-2xl mx-auto">
             Comprehensive BIS Scheme X certification guides for pumps and liquid

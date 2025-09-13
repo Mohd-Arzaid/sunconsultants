@@ -23,7 +23,6 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
 import AboutAuthor from "@/components/common/AboutAuthor";
 import { Helmet } from "react-helmet-async";
-import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 
 const Compressors = () => {
   return (
@@ -119,9 +118,7 @@ const CompressorsBreadcrumb = () => {
               </BreadcrumbSeparator>
 
               <BreadcrumbItem>
-                <BreadcrumbPage>
-                  BIS Scheme X for Compressors
-                </BreadcrumbPage>
+                <BreadcrumbPage>BIS Scheme X for Compressors</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -139,219 +136,55 @@ const CompressorsMainContent = () => {
         <CompressorsMainContentLeft />
 
         {/* Right Side Content */}
-        {/* <CompressorsMainContentRight /> */}
-        <CDSCOContentRight />
+        <CompressorsMainContentRight />
       </div>
     </div>
   );
 };
-
-// ... existing code ...
-
-// ... existing code ...
-
-// ... existing code ...
 
 const CompressorsMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Scheme X for Compressors
+          BIS Certification for Construction Machinery
         </h1>
+
+        {/* BIS Scheme X Image */}
+        <div className="mb-6">
+          <img
+            src="/schemXproductImages/BIS-Scheme-X-License-for-Compressors.png"
+            title="BIS Scheme X License for Compressors"
+            alt="BIS Scheme X Certification For Compressors"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          In India, the industrial and manufacturing sectors have seen a surge in the consumption of compressors and its applications have penetrated automotive and HVAC, refrigeration, pharmaceuticals, oil and gas, and power generation industries among others.  Furthermore, their unique ability to compress and transport gases or air has led to their overall acceptance as more reliable and safe machinery.
-
+          Excavators, loaders, bulldozers, concrete mixers and road rollers are
+          the main construction machines used in India's infrastructure
+          construction. The higher demand for safe and reliable machinery stems
+          from huge investments in highways, smart city, factory, and housing.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Considering the importance of compressors in various industry operations, the Government of India in association with the Bureau of Indian Standards has instituted compliance with the BIS Scheme X Certification for Compressors as a mandatory certification process. This policy ensures the Indian market and Indian industries are served by compressors that are of guaranteed quality, safety, and reliability.
-
+          The Bureau of Indian Standards (BIS) has made BIS Certification
+          Compulsory under the Scheme-X for Construction Machineries to provide
+          quality, service and safety assurance. It ensures that a device
+          conforms to the Indian Standards before being made available for sale
+          or imported in India.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          The BIS Scheme X Certification for Compressors is made compulsory by the Ministry of Heavy Industries through the “Machinery and Electric Equipment Safety (Omnibus Technical Regulation Order, 2024)”. This order covers all types of compressor, as well as their assemblies, sub-assemblies, and components. Compliance with Scheme X certification grants the manufacturer the right to affix the Standard Mark on their products, and this is available for Indian manufacturers and foreign manufacturers selling their products in India
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* Why BIS is Important Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS for Compressors is Important
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Compressors are used in:
-        </p>
-
-        {/* Usage Areas */}
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Airconditioning/refrigeration systems</li>
-          <li>Gas transmission lines and storage.</li>
-          <li>Oil & gas process facilities</li>
-          <li>Power generating installations and chemical industrial facilities</li>
-          <li>Production of food and beverages</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Each type should satisfy applicable Indian Standards (IS codes) such as IS 17093:2019.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          In the absence of BIS for Compressors, inferior or unmarked products could lead to:
-        </p>
-
-        {/* Problems with Non-Certified Equipment */}
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Breakdown, maintenance periods and idle time</li>
-          <li>Wasteful energy production against high energy utility bills</li>
-          <li>Safety risks, such as overheating or leaks</li>
-          <li>Loss of reputation and mon­e­tary dam­age</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Therefore the BIS Mark for Compressors in respect of which ISI certification has been done is an assurance of safety, reliability and quality.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* What is BIS Scheme X Certification Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          What is BIS Scheme X Certification for Compressors?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          BIS Scheme X Certification for Compressors is the conformity assessment scheme in India under the BIS Conformity Assessment Regulations, 2018. It is to keep a check that both domestic and foreign manufacturers adhere to the Indian quality.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Features of Scheme X Certificate for Compressors:
-        </h3>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Compulsory for all the manufacturers (both Indian and foreign)</li>
-          <li>Covers various types of compressors notified under Indian Standards</li>
-          <li>Features third-party testing, factory inspections and periodic compliance checks</li>
-          <li>Permits use of BIS Mark for Compressors on the products of the licensee as certified products</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* OTR Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR for Compressors
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The Omnibus Technical Regulation (OTR) for Compressors released by the Ministry of Heavy Industries in 2024 mandates Scheme X Certification for Compressors.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Deadline for Compliance: By 1st September 2026, all the manufacturers and importers are required to have a valid BIS License for Compressors under Scheme – X. Any non-compliance will lead to total prohibition on sales and imports of un-certified compressors in India.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* Advantages Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Advantages of BIS Certification for Compressors
-        </h2>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Safety & Performance: Helps to Avoid hazards like leaks, overheat and machine failure.</li>
-          <li>Market Access: Compressors certified by BIS can be used in public tenders and government projects.</li>
-          <li>Consumer Confidence: The BIS Mark for Compressors provides a buyer a confidence that the product is as per Indian Standards.</li>
-          <li>Competitive Advantage: Only certified brands gain more trust and market preference.</li>
-          <li>Accessible Market Entry of International Brands: A BIS License for Compressors facilitates easy access into the Indian market to foreign manufacturers.</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* Types of Compressor Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Types of Compressor Covered In BIS Scheme X
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Scheme X certification is available for various types of compressors such as:
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Positive-Displacement Reciprocating Compressors</li>
-          <li>Rotary Compressors</li>
-          <li>Screw Compressors</li>
-          <li>Turbo Compressors</li>
-          <li>Axial Flow Compressor</li>
-          <li>Industrial and Portable Air Compressors</li>
-          <li>Air conditioning and Refrigeration compressors</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          The different techniques of compressors shall conform to the respective Indian Standards, which lay down the requirements for the performance, energy consumption, quality of material, and safety.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* Step-by-Step Process Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS License for Compressors – How to Apply?
-        </h2>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Identify Applicable Standards: Find the appropriate IS code of your compressor.</li>
-          <li>Product Testing: Have compulsory performance, safety and energy efficiency tests at BIS-recognised labs'.</li>
-          <li>Factory Inspection: BIS personnel perform on-site visits to verify manufacturing procedures and quality control methods.</li>
-          <li>Documentation & Application: Include Test reports, technical specifications and Quality manuals along with your BIS application.</li>
-          <li>Issue of BIS Licence for Compressors: When accepted, the manufacturer is given the right to use BIS Mark for Compressors.</li>
-          <li>Ongoing Compliance: Regular surveillance audit & product testing is carried out by BIS for continued compliance.</li>
-        </ul>
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Penalties for Non-Compliance
-        </div>
-
-
-
-        <p className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Manufacturers not getting a BIS Certification for Compressors by till 1st September 2026 under the OTR for Compressors will be subject to:
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Sales/Import of non-type tested compressors not to be allowed</li>
-          <li>Forfeiture of non-compliant goods and business penalties</li>
-          <li>Ban from government tenders and PSU deals</li>
-          <li>Indian market loses confidence</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* Conclusion Section */}
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Implementation of BIS Scheme X Certification for Compressors by OBR for Compressors (2024) is a significant step forward for industrial safety, energy efficiency, and quality assurance in India.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Manufacturers, importers, and exporters that go through the process of getting BIS Certificate for Compressors, and securing BIS certificate for Compressors earn the right to be a part of this market by ensuring that the products that they are offering to the Indian consumer are deemed safe to use, have less environmental risk and is of good quality.
+          Here in this article, you are going to learn about BIS Scheme X
+          Certification for Construction Machinery, The requirement of OTR for
+          Construction Machinery, and the process of obtaining BIS Licence for
+          Construction Machinery and the BIS mark for Construction Machinery.
         </p>
 
         <AboutAuthor />
@@ -458,10 +291,11 @@ const CompressorsMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-              ? "bg-green-50 text-green-700 border border-green-200"
-              : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
+              submitStatus.type === "success"
+                ? "bg-green-50 text-green-700 border border-green-200"
+                : "bg-red-50 text-red-700 border border-red-200"
+            }`}
           >
             {submitStatus.message}
           </div>

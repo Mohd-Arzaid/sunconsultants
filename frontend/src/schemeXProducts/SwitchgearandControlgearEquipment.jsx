@@ -123,8 +123,8 @@ const SwitchgearandControlgearEquipmentBreadcrumb = () => {
 
               <BreadcrumbItem>
                 <BreadcrumbPage>
-                  BIS Certification for Switchgear and Controlgear Equipment up to 1000
-                  Volts
+                  BIS Certification for Switchgear and Controlgear Equipment up
+                  to 1000 Volts
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -161,19 +161,49 @@ const SwitchgearandControlgearEquipmentMainContentLeft = () => {
           Volts
         </h1>
 
+        {/* Main Image */}
+        <div className="mb-6">
+          <img
+            src="/schemXproductImages/BIS-license-for-switch-gear-and-control-gear-equipment.png"
+            alt="BIS Scheme X Certification For Switchgear And Controlgear Equipment Up To 1000 Volts"
+            title="BIS license for switch gear and control gear equipment volts"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+
+        </div> 
+
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          In this era of automation and electrification, instrument switches and control switches are integral components of secure and effective electrical systems. From home wiring to sophisticated industrial systems, these devices manage the protection, control, and isolation of power flow. Because of the important position these devices hold, the Bureau of Indian Standards (BIS) has instituted compulsory certification of such devices under Scheme X to make sure they fulfill the set safety and performance benchmarks in India.
+          In this era of automation and electrification, instrument switches and
+          control switches are integral components of secure and effective
+          electrical systems. From home wiring to sophisticated industrial
+          systems, these devices manage the protection, control, and isolation
+          of power flow. Because of the important position these devices hold,
+          the Bureau of Indian Standards (BIS) has instituted compulsory
+          certification of such devices under Scheme X to make sure they fulfill
+          the set safety and performance benchmarks in India.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Ministry of Heavy Industries, under the Omnibus Technical Regulation Order, 2024, has enforced mandatory BIS certification for all switchgear and controlgear equipment (≤ 1000V) sold, imported, and manufactured in India from 1st September 2026 onwards. To counter the non-compliant and unsafe electrical equipment, as well as to raise the standards of products offered in the market, the BIS, under Scheme X Certification, has made certification obligatory, for these devices operating at or below 1000 volts.
+          The Ministry of Heavy Industries, under the Omnibus Technical
+          Regulation Order, 2024, has enforced mandatory BIS certification for
+          all switchgear and controlgear equipment (≤ 1000V) sold, imported, and
+          manufactured in India from 1st September 2026 onwards. To counter the
+          non-compliant and unsafe electrical equipment, as well as to raise the
+          standards of products offered in the market, the BIS, under Scheme X
+          Certification, has made certification obligatory, for these devices
+          operating at or below 1000 volts.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          This blog outlines the certification procedure along with its merits, scope, purpose, supporting evidence, and essential documentation, vital to Scheme X certification for all types of switchgear and controlgear equipment operating (or)their assemblies/sub-assemblies/components operating at voltages not exceeding 1000 volts.
+          This blog outlines the certification procedure along with its merits,
+          scope, purpose, supporting evidence, and essential documentation,
+          vital to Scheme X certification for all types of switchgear and
+          controlgear equipment operating (or)their
+          assemblies/sub-assemblies/components operating at voltages not
+          exceeding 1000 volts.
         </p>
 
         {/* Separator Line */}
@@ -474,10 +504,11 @@ const SwitchgearandControlgearEquipmentMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-              ? "bg-green-50 text-green-700 border border-green-200"
-              : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
+              submitStatus.type === "success"
+                ? "bg-green-50 text-green-700 border border-green-200"
+                : "bg-red-50 text-red-700 border border-red-200"
+            }`}
           >
             {submitStatus.message}
           </div>

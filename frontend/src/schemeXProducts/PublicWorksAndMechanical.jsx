@@ -23,7 +23,6 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
 import AboutAuthor from "@/components/common/AboutAuthor";
 import { Helmet } from "react-helmet-async";
-import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 
 const PublicWorksAndMechanical = () => {
   return (
@@ -142,8 +141,7 @@ const PublicWorksAndMechanicalMainContent = () => {
         <PublicWorksAndMechanicalMainContentLeft />
 
         {/* Right Side Content */}
-        {/* <PublicWorksAndMechanicalMainContentRight /> */}
-        <CDSCOContentRight />
+        <PublicWorksAndMechanicalMainContentRight />
       </div>
     </div>
   );
@@ -158,6 +156,16 @@ const PublicWorksAndMechanicalMainContentLeft = () => {
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
           BIS Scheme X for Public Works and Mechanical Appliances
         </h1>
+
+        {/* Main Image */}
+        <div className="mb-6">
+          <img
+            src="/schemXproductImages/BIS-license-for-Machines-for-public-works -&-building.png"
+            alt="BIS Scheme X Certification For Public Works And Mechanical Appliances"
+            title="BIS license for Machines for public works & building"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -525,10 +533,11 @@ const PublicWorksAndMechanicalMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-              ? "bg-green-50 text-green-700 border border-green-200"
-              : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
+              submitStatus.type === "success"
+                ? "bg-green-50 text-green-700 border border-green-200"
+                : "bg-red-50 text-red-700 border border-red-200"
+            }`}
           >
             {submitStatus.message}
           </div>

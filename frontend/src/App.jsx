@@ -88,13 +88,14 @@ import EmbroideryMachines from "./schemeXProducts/EmbroideryMachines";
 import GearsGearingsandTransmission from "./schemeXProducts/GearsGearingsandTransmission";
 import DieselGenerator from "./schemeXProducts/DieselGenerator";
 import SwitchgearandControlgearEquipment from "./schemeXProducts/SwitchgearandControlgearEquipment";
-import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery,";
+
 import RotaryElectricalMachines from "./schemeXProducts/RotaryElectricalMachines";
 import PublicWorksAndMechanical from "./schemeXProducts/PublicWorksAndMechanical";
 import PowerSemiconductors from "./schemeXProducts/PowerSemiconductors";
 import Transformers from "./schemeXProducts/Transformers";
 import MachineTools from "./schemeXProducts/MachineTools";
 import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts";
+import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);

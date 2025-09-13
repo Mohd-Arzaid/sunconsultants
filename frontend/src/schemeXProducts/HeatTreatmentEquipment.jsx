@@ -23,7 +23,6 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
 import AboutAuthor from "@/components/common/AboutAuthor";
 import { Helmet } from "react-helmet-async";
-import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
 
 const HeatTreatmentEquipment = () => {
   return (
@@ -139,8 +138,7 @@ const HeatTreatmentEquipmentMainContent = () => {
         <HeatTreatmentEquipmentMainContentLeft />
 
         {/* Right Side Content */}
-        {/* <HeatTreatmentEquipmentMainContentRight /> */}
-        <CDSCOContentRight />
+        <HeatTreatmentEquipmentMainContentRight />
       </div>
     </div>
   );
@@ -160,20 +158,40 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
           BIS Scheme X Certification for Heat Treatment Equipment
         </h1>
 
+        {/* BIS Scheme X Image */}
+        <div className="mb-6">
+          <img
+            src="/schemXproductImages/BIS-Scheme-X-license-for-Heat-treatment-of-material.png"
+            title="BIS Scheme X license for treatment of material"
+            alt="BIS Scheme X Certification For Heat Treatment Equipment"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
+
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          According to the Omnibus Technical Regulation Order issued by the Ministry of Heavy Industries, all types of machinery used for the treatment of material by processes involving a change of temperature, including heat treatment equipment, have to be certified by the BIS under Scheme X by the 1st of September 2026. This certification is mandatory for Indian as well as for foreign manufacturers as it pertains to the import, manufacture, sale and distribution of such machinery which is not certified, within India.
+          Heat Treatment equipment is one of the most critical applications in
+          industries like automotive, aerospace, foundry, forging, and heavy
+          engineering. These are the devices that change metals&apos; physical
+          and mechanical attributes through operations such as annealing,
+          quenching, hardening, tempering etc.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Omnibus Technical Regulation Order, 2024, covers a wide variety of heat treatment machinery and machine assemblies, sub-assemblies, and components that carry out processes which change the temperature of materials including equipment for treatment of materials by heat and thermal processing and in which the temperature of materials changes. Any manufacturers and/or importers who fail to comply with the standard requirements will face product seizure or fine or both.
-
+          Seeing their significance, the Bureau of Indian Standards (BIS) have
+          declared the BIS Certification for Heat Treatment Equipment compulsory
+          under Scheme X Certification. That makes sure Indian as well as global
+          manufacturers adhere to the stringent Indian Standards before
+          marketing the equipment in the country.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          The aim of this OTR order is to ensure the safety and performance criteria of industries that use thermal processing equipment. This policy tries to make sure products are aligned to the safety as well as quality standards set of India. One of the aims of the policy is to avoid exposing consumers to products which are not safe.
+          In this post, we will explain the significance of BIS Scheme X
+          Certification for Heat Treatment Equipment, the OTR for Heat Treatment
+          Equipment, and the process to get a BIS License for Heat Treatment
+          Equipment with the BIS Mark for Heat Treatment Equipment.
         </p>
 
         {/* Separator Line */}
@@ -365,9 +383,9 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
           </li>
         </ul>
 
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
           Penalties for Non-Compliance
-        </div>
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           If the OTR of Heat Treatment Equipment is not met by 01 Sep 2026:
@@ -384,9 +402,9 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Conclusion Section */}
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <span className="font-medium text-[#1e1e1e]">Conclusion:</span> BIS Scheme X Certification for Pumps and Liquid Elevators with OTR 2024 to be enforced; a milestone in India standardization of Industry.
-        </p>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Conclusion
+        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Mandatory enforcement of Scheme X Certification for Heat Treatment
@@ -506,10 +524,11 @@ const HeatTreatmentEquipmentMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-              ? "bg-green-50 text-green-700 border border-green-200"
-              : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
+              submitStatus.type === "success"
+                ? "bg-green-50 text-green-700 border border-green-200"
+                : "bg-red-50 text-red-700 border border-red-200"
+            }`}
           >
             {submitStatus.message}
           </div>
