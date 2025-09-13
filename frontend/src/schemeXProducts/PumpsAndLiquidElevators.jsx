@@ -140,7 +140,7 @@ const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
                 {/* BIS License for Pumps Image */}
                 <div className="flex justify-center mb-6">
                     <img
-                        src="/schemXproductImages/BISLicenseForPumps.png"
+                        src="/schemXproductImages/BIS-Scheme-X-License-For-Pumps.png"
                         alt="BIS License for Pumps and Liquid Elevators"
                         className="max-w-full h-auto rounded-lg shadow-md"
                     />
