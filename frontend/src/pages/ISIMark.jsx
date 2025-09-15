@@ -622,13 +622,13 @@ const OverviewSection = () => {
       <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
         {t("overview.mainHeading")}
       </h1>
-
+{/* 
       <img
         src="/services-main-images/IndianBisCertification.jpg"
         alt="Indian BIS Certification"
         title="BIS Certificate for Indian manufactures"
         className="mt-4 md:mt-6 w-full max-w-[600px] h-auto rounded-lg shadow-md"
-      />
+      /> */}
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         {t("overview.introduction.paragraph1")}

@@ -1136,8 +1136,8 @@ const BISCIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection.toLowerCase()
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -1159,16 +1159,16 @@ const BISCIndex = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection.toLowerCase()
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {getSectionDisplayName(item)}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection.toLowerCase()
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
                 }`}
             />
           </div>
@@ -1337,8 +1337,8 @@ const PointsListTwo = ({ points, heading, clickableRoutes = [] }) => {
           <li
             key={index}
             className={`flex items-start gap-2 ${clickableRoutes[index]
-                ? "cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors duration-200"
-                : ""
+              ? "cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors duration-200"
+              : ""
               }`}
             onClick={() => handlePointClick(index)}
           >
@@ -1347,8 +1347,8 @@ const PointsListTwo = ({ points, heading, clickableRoutes = [] }) => {
             </div>
             <p
               className={`font-geist text-sm md:text-lg tracking-wide text-left max-w-full leading-normal ${clickableRoutes[index]
-                  ? "text-[#1d4ed8] hover:text-[#1e40af] hover:underline"
-                  : "text-[#42434d]"
+                ? "text-[#1d4ed8] hover:text-[#1e40af] hover:underline"
+                : "text-[#42434d]"
                 }`}
             >
               {point}
@@ -1381,12 +1381,12 @@ const OverviewSection = () => {
         BIS Certification for Manufacturers and Importers in India
       </h1>
 
-      <img
+      {/* <img
         src="/services-main-images/BIS-Certification-for-Indian-Manufacturers.png"
         alt="Indian Bis Certification Schemes"
         title="BIS License Scheme"
         className="mt-4 md:mt-6 w-full max-w-[600px] h-auto rounded-lg shadow-md"
-      />
+      /> */}
 
       <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Introduction: Why BIS Certification Matters
