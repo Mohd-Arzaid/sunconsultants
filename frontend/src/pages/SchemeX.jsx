@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
-import SchemeXImage from "../assets/servicesImages/SchemeXImage.jpg";
+// import SchemeXImage from "../assets/servicesImages/SchemeXImage.jpg";
 import {
   Table,
   TableBody,
@@ -36,6 +36,18 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
+
+// Static navigation sections for Scheme X page
+const SCHEMEX_SECTIONS = [
+  { key: "introduction", label: "Introduction" },
+  { key: "what-is", label: "What is Scheme X" },
+  { key: "otr", label: "OTR" },
+  { key: "otr-certification", label: "Certification under OTR" },
+  { key: "steps", label: "Steps" },
+  { key: "documents-required", label: "Documents" },
+  { key: "validity-renewal", label: "Validity & Renewal" },
+  { key: "conclusion", label: "Conclusion" },
+];
 
 const productDataTableSecond = [
   {
@@ -787,7 +799,7 @@ export const SchemeX = () => {
 };
 
 export const SchemeXIndex = () => {
-  const { t } = useTranslation("SchemeX");
+  // Navigation labels are static for this page per custom content
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -795,36 +807,7 @@ export const SchemeXIndex = () => {
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
-  const SECTIONS = [
-    {
-      key: "overview",
-      label: t("navigation.overview"),
-    },
-    {
-      key: "certification",
-      label: t("navigation.certification"),
-    },
-    {
-      key: "procedure",
-      label: t("navigation.procedure"),
-    },
-    {
-      key: "pricing",
-      label: t("navigation.pricing"),
-    },
-    {
-      key: "representative",
-      label: t("navigation.representative"),
-    },
-    {
-      key: "benefits",
-      label: t("navigation.benefits"),
-    },
-    {
-      key: "conclusion",
-      label: t("navigation.conclusion"),
-    },
-  ];
+  const SECTIONS = SCHEMEX_SECTIONS;
 
   const handleItemClick = (item) => {
     const element = document.getElementById(item.key);
@@ -923,12 +906,12 @@ export const SchemeXIndex = () => {
     handleScroll(); // Initial check
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [SECTIONS]);
 
   // Find current section label for mobile display
   const currentSectionLabel =
     SECTIONS.find((section) => section.key === activeSection)?.label ||
-    t("navigation.overview");
+    SECTIONS[0].label;
 
   return (
     <div
@@ -985,8 +968,8 @@ export const SchemeXIndex = () => {
                 key={item.key}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item.key === activeSection
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -1008,16 +991,16 @@ export const SchemeXIndex = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item.key === activeSection
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {item.label}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item.key === activeSection
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
+                ? "scale-x-100"
+                : "scale-x-0 group-hover:scale-x-100"
                 }`}
             />
           </div>
@@ -1051,960 +1034,506 @@ const SchemeXContent = () => {
 };
 
 export const SchemeXContentLeft = () => {
-  const { t } = useTranslation("SchemeX");
-
   return (
     <article className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
+        {/* Introduction */}
         <section
-          className="flex flex-col gap-2 md:gap-4 mb-6"
-          aria-label={t("overview.ariaLabel")}
+          id="introduction"
+          className="flex flex-col scroll-mt-20"
+          aria-label="Introduction to BIS Scheme X Certification"
         >
           <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-            {t("overview.title")}
+            Introduction to BIS Scheme X Certification
           </h1>
 
-          <h2 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] ">
-            {t("overview.subtitle")}
-          </h2>
-
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overview.intro")}
-          </p>
-
-          <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-            {t("overview.exemptionsTitle")}
-          </h2>
-
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overview.exemptionsContent")}
-          </p>
-
-          <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-            {t("overview.regulationTitle")}
-          </h2>
-
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overview.regulationParagraph1")}
+          <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            The Bureau of Indian Standards, or BIS for short, rolled out &quot;Scheme X&quot; on March 16, 2022, aimed at improving compliance on product safety and quality in India. Indian and foreign manufacturers can apply for BIS certification for Machine and Electrical equipment, components Like assemblies, sub-assemblies and, and Tools specified in Schedule-II of Scheme-X and take certification prior to exporting, selling, or distributing in India.
           </p>
 
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overview.regulationParagraph2")}
+            Under Scheme X, the manufacturers can apply for a BIS License or a Certificate of Conformity (CoC) for low voltage switch gear and control gear, machinery, and electric equipment. Once the manufacturers are certified, they are allowed to use the BIS Standard mark, indicating that their products are in accordance with the standards laid down in India.
           </p>
 
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overview.regulationParagraph3")}
+            The certification, while promoting the product and compliance with the Indian Standards and Government Regulations, helps develop trust and confidence of the consumers in the certified products.
           </p>
-
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overview.regulationParagraph4")}
-          </p>
-
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overview.regulationParagraph5")}
-          </p>
-
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overview.regulationParagraph6")}
-          </p>
-          <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-          {/* <div className="bg-[#F9F7F2] border-l-4 border-[#1A8781] p-4 mt-2 md:mt-4 rounded-md shadow-sm">
-              <h4 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] mb-1">Is obtaining an ISI mark for Indian importers mandatory?</h4>
-              <p className="font-geist text-[16px] md:text-[20px] text-[#42434d]">
-                For the products falling under the mandatory list, FMCS BIS certification is mandatory. The list of mandatory products can be accessed on this <a href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/" target="_blank" rel="noopener noreferrer" className="text-[#125E5A] underline hover:text-[#1A8781] transition-colors">link</a>.
-              </p>
-            </div> */}
         </section>
 
-        <OverviewSection />
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        <Certification />
+        {/* What is Scheme X */}
+        <section id="what-is-scheme-x" className="flex flex-col scroll-mt-20">
+          <header className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">What is Scheme X Certification?</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </header>
+
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+            Understanding BIS Scheme X Certification
+          </h2>
+
+          <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            Scheme X is a product certification scheme developed under the BIS Conformity Assessment Regulations, 2018 and later on, simplified under the BIS Conformity Assessment (Amendment) Regulations, 2022. The main goal is to bring the Indian safety and quality standards to global standards, especially with regard to the industrial machinery and electrical equipment. The products manufactured in or imported to India under this scheme are subjected to rigorous scrutiny and assessment to prove technical, safety, as well as performance standards.
+          </p>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            Provisions under the original scope of Scheme X Certification have been revised for and expanded with the newly issued Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order, 2024, which is under the jurisdiction of the Ministry of Heavy Industries and has been brought into force by the BIS. The order comes into effect on 1st September 2026, and covers a broad spectrum of machinery and electrical equipment such as pumps for handling liquids, compressors, cranes, rotary electrical machines, transformers, and switchgear and control gear. Assemblies, sub-assemblies and components of such machinery or equipment are also part of the certification scope as per Section 16 of the Bureau of Indian Standards Act, 2016. Moreover, under the 1989 CMVR Rules (Construction and Manufacture of Valve Regulation), Bowser and other types of construction equipment under the jurisdiction of Scheme X, are ensured that the market does not get exposed to the equipment which lacks the requisite of safety and technical standards.
+          </p>
+        </section>
+
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        {/* Omnibus Technical Regulation */}
+        <section id="otr" className="flex flex-col scroll-mt-20">
+          <header className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Omnibus Technical Regulation (OTR)</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </header>
 
-        <Procedure />
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+            Omnibus Technical Regulation Framework
+          </h2>
+
+          <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            The Ministry of Heavy Industries released the &quot;Omnibus Technical Regulation on Safety Orders (Machinery and Electric equipment Safety)&quot; via E-Gazette notification of August 28, 2024. This innovative regulation intends to improve - safety, quality and compliance of machinery, electrical equipment and their assemblies, sub assemblies and components, under Scheme X of the BIS Regulation, 2016.
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "All categories of machinery and electrical equipment, and all their parts and components are included.",
+                "Exclusions: items under other Section 16 orders, goods meant only for export, and construction machinery under CMVR 1989 (MoRTH).",
+              ]}
+            />
+          </div>
+
+          <p className="mt-[12px] md:mt-[20px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">The Order takes effect on the 1st of September 2026 to allow industry readiness.</p>
+        </section>
 
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        {/* Certification under OTR */}
+        <section id="otr-certification" className="flex flex-col scroll-mt-20">
+          <header className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">BIS Certification under the Omnibus Technical Regulation</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </header>
 
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+            BIS Certification Process under OTR
+          </h2>
 
+          <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            As per the OTR 2024, manufacturers, as well as importers, of machinery and electrical equipment which include pumps, pumps, compressors, centrifuges, cranes, transformers, and switchgears must apply for BIS Certification under Scheme X. Under Scheme X, manufacturers can opt to apply for a BIS Licence, or a Certificate of Conformity (CoC). Products bearing the BIS Standard Mark certify that the product is safe, reliable, and of good quality.
+          </p>
 
-        <Pricing />
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">Special Note for MSMEs</h2>
 
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            The certification offers several benefits for Micro, Small and Medium Enterprises:
+          </p>
 
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "Proves adherence to legal obligations.",
+                "Increases reputation and consumer trust.",
+                "Facilitates access to larger domestic and overseas markets.",
+                "Improves global standing on competitiveness, safety, and quality.",
+              ]}
+            />
+          </div>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">BIS Scheme X Logo</h2>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">Top: standard number; Bottom: licence number (CM/L-XXXXXXXXXX). Signifies successful issuance of BIS Licence.</p>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">Legal Implications</h2>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">Using the mark without a valid contract is an offense. Producers must acquire a valid BIS Licence, satisfy relevant Indian Standards, and properly affix the BIS Logo.</p>
+        </section>
 
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        {/* Differences */}
+        <section id="differences" className="flex flex-col scroll-mt-20">
+          <header className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Key Differences Between Scheme-I and Scheme-X</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </header>
 
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+            Comparison: Scheme-I vs Scheme-X
+          </h2>
 
-        <Representative />
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">Scheme-I</h2>
+
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "Wider category of consumer products.",
+                "Requires ISI Mark.",
+                "Domestic and foreign manufacturers.",
+                "Factory audits and sample testing.",
+              ]}
+            />
+          </div>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">Scheme-X</h2>
+
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "High-risk industrial and safety-critical products.",
+                "More rigorous technical reporting and audits.",
+                "Higher cost due to extra compliance documentation.",
+                "Mandatory for machinery/electrical equipment businesses.",
+              ]}
+            />
+          </div>
+          <div className="mt-[16px] md:mt-[24px]">
+            <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+              <TableHeader className="bg-[#F9F7F2]">
+                <TableRow className="bg-[#1A8781]/10">
+                  <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">Feature</TableHead>
+                  <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">ISI Mark</TableHead>
+                  <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">Scheme X</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody className="bg-white divide-y divide-gray-200">
+                <TableRow className="hover:bg-gray-50">
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Managed by</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Indian BIS</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Indian BIS</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-gray-50">
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Certification Type</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">BIS licence</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">BIS certificate / BIS licence</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-gray-50">
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Target Products</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Consumer goods</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Machinery & electrical equipment</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-gray-50">
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Mark Used</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">ISI mark</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">BIS standard mark (under Scheme X)</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-gray-50">
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Compliance Level</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">Indian standard compliance</TableCell>
+                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">High-end technical and safety compliance</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
+          <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        </section>
+
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        {/* Products Covered */}
+        <section id="products-covered" className="flex flex-col scroll-mt-20">
+          <header className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Products Covered by Scheme-X</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </header>
 
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+            Product Categories under Scheme-X
+          </h2>
 
+          <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            Scheme-X covers products with the highest risk to safety and performance, including:
+          </p>
 
-        <Benefits />
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "Electrical Equipment: Industrial transformers, power supply units, low-voltage switchgear and control gear, and high-voltage devices.",
+                "Heavy Machinery: Hydraulic presses, industrial cranes, automated machine tools, and specialized equipment for large-scale industries.",
+                "Life-Critical Equipment: Fire extinguishers, pressure vessels, emergency electrical systems, and other life-safety systems.",
+                "Specialized Consumer & Industrial Electronics: Medical grade electronics with advanced protective measures.",
+              ]}
+            />
+          </div>
+
+          <p className="mt-[12px] md:mt-[20px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">Product Table Here</p>
+        </section>
+
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        {/* Safety Standards */}
+        <section id="safety-standards" className="flex flex-col scroll-mt-20">
+          <header className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Safety Standards Under BIS Scheme - X</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </header>
 
-        <Conclusion />
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+            Safety Standards and Compliance Requirements
+          </h2>
+
+          <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            More than simply a legal necessity, the BIS Scheme - X Certification offers a promise of safety, quality, and reliability. This Certification, which entails strict adherence to national and international norms, ensures that the machinery and electrical apparatus offered to users are safe, environmentally friendly, and technically sound. To certify under Scheme - X, manufacturers need to comply with the following major safety components:
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "Electrical Safety: Compliance with IEC and Indian Standards; protects against shocks, short circuits, insulation breakdown, ignition, and fire.",
+                "Mechanical Safety: Structural integrity and moving parts assessment to ensure safe operation under stress.",
+                "Fire Safety: Use of fire-resistant materials; compliance with flame propagation standards.",
+                "Environmental Compliance: Eco-friendly materials and controlled power usage.",
+                "Quality Management: Robust process control, audits, and continual adherence.",
+              ]}
+            />
+          </div>
+        </section>
+
+        {/* Regulatory Standards */}
+        <section id="regulatory-standards" className="flex flex-col scroll-mt-20">
+          <div className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Regulatory Standards Under Scheme-X</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </div>
+          <h4 className="mt-3 font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">Type A Standards</h4>
+          <ul className="list-disc pl-6 mt-2 space-y-2">
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">IS 16819:2018 / ISO 12100:2010 – Safety of Machinery: General Principles for the Design, Risk Assessment, and Risk Reduction.</li>
+          </ul>
+          <h4 className="mt-4 font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">Type B Standards</h4>
+          <p className="font-geist text-sm md:text-lg text-[#42434d]">Described in the Second Schedule of the Omnibus Technical Regulation (OTR) Order, 2024.</p>
+          <h4 className="mt-4 font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">Type C Standards</h4>
+          <p className="font-geist text-sm md:text-lg text-[#42434d]">Described in the Third Schedule of the OTR Order, 2024.</p>
+          <h4 className="mt-4 font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">IS/IEC 60947 Series</h4>
+          <p className="font-geist text-sm md:text-lg text-[#42434d]">Cover low voltage switchgear and control gear in multiple parts and sections.</p>
+          <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        </section>
+
         <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        {/* Steps */}
+        <section id="steps" className="flex flex-col scroll-mt-20">
+          <header className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Steps to Get Certified Under BIS Scheme-X</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </header>
 
-        <AboutAuthor />
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+            Certification Process Steps
+          </h2>
+
+          <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            Issuing BIS Certificate under Scheme-X is a systematic activity meant to ensure the manufacturer has the applicable safety, quality, and compliance standards fulfilled. The process is as follows:
+          </p>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">1. Verify Scope</h2>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            Determine whether your product is in the scope of Scheme-X and if it is with BIS safety requirements. Check the relevant Indian Standards and technical schedule to determine if you will be able to comply.
+          </p>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">2. Prepare The Required Documents</h2>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            Manufacturers need to collect and arrange the following documents:
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "Registered Business certificates",
+                "Basis of design documents",
+                "Factory and Process flow documents",
+                "Service Test Reports (if applicable)",
+                "Quality assurance and Control Documents",
+              ]}
+            />
+          </div>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">3. Construct the Technical File</h2>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            A technical file is an indispensable part for the claim for extension of a certificate. It should contain:
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "Technical Specifications of the Product",
+                "Methods and Techniques Information",
+                "Compliance and Test Documents",
+                "Limitation and the Intended purpose of the product",
+                "Quality assurance documentation",
+                "Raw materials traceability, subcontract traceability, and the rest of the evidence.",
+                "Conformance to the standards within the scope framed.",
+              ]}
+            />
+          </div>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            This file serves as the technical and statistical evidence of the product claim substantiating to safety trace standards.
+          </p>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">4. The Application Form</h2>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            The application form can be submitted electronically on the BIS Website for the designated place. Settlement of the application fee is a must. The rest of the documents verifying application should be included for proper assessment.
+          </p>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">5. Factory Inspection</h2>
+
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <PointsListTwo
+              points={[
+                "For domestic manufacturers: Inspection is conducted over a period of a maximum of 2 days.",
+                "For foreign manufacturers: Inspection is conducted over a period of a maximum of 3 days (additional days may accrue due to additional requests).",
+              ]}
+            />
+          </div>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            During the period of inspection, the BIS officials are expected to: Analyze the technical file, Evaluate the ways of manufacturing along with supporting quality assurance systems, Observe the testing of the product, Determine non-compliance (if any) and give remedial steps. A detailed report of the audit is provided to the applicant after the visit.
+          </p>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">6. Testing of Product Samples</h2>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            Sample testing is either carried out at the manufacturers site or at outsourced BIS approved labs (outsource testing is allowed). The testing demonstrates the fulfillment of the relevant Indian standards.
+          </p>
+
+          <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">7. Issuance of Certification</h2>
+
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            If a product meets all the conditions, BIS grants every product a License or a Certificate of Conformity (CoC). The BIS Standard Mark may be used freely by the manufacturer on all certified products. This strategy maintains compliance with BIS Standard and is a recognition of Indian and international compliance, cornering the industry on consumer trust towards safety and quality.
+          </p>
+        </section>
+
+        {/* Domestic procedure */}
+        <section id="domestic-procedure" className="flex flex-col scroll-mt-20">
+          <div className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Procedure for Domestic Manufacturers</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </div>
+          <ul className="list-disc pl-6 mt-2 space-y-2">
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Documentation and preparation.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Application submission with fees.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Application scrutiny and query resolution.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Auditor appointment and audit fee payment.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Factory audit and sample collection.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Sample evaluation at BIS-recognized lab (applicant pays).</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Payment of licensing & marking fees; grant of licence (~90 working days typical).</li>
+          </ul>
+          <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        </section>
+
+        {/* Foreign procedure */}
+        <section id="foreign-procedure" className="flex flex-col scroll-mt-20">
+          <div className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Procedure For Foreign Manufacturers</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </div>
+          <ol className="list-decimal pl-6 mt-2 space-y-2">
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Prepare documentation: business registration, product/factory layout, test reports, quality management docs.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Submit application and requisite fee via BIS portal.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Application scrutiny by BIS; resolve issues timely.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Auditor assignment and payment of audit fees.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Arrange visa, tickets, hotel for BIS officials.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">3-day factory audit; additional days possible for multiple applications.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Samples sent to BIS-accredited lab; payment settled accordingly.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Pay marking & licence fees; BIS grants Licence/CoC upon compliance.</li>
+          </ol>
+          <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">Key Additional Pointers</h4>
+          <ul className="list-disc pl-6 mt-2 space-y-2">
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">FMCS classification: All foreign manufacturers treated as &apos;Large Scale&apos;.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Authorized Indian Representative (AIR) is mandatory.</li>
+            <li className="font-geist text-sm md:text-lg text-[#42434d]">Factory audits are comprehensive and ~3 days.</li>
+          </ul>
+          <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        </section>
+
+        {/* Documents Required */}
+        <section id="documents-required" className="flex flex-col scroll-mt-20">
+          <div className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Key Documents Required for BIS Scheme X Certification</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </div>
+          <div className="overflow-x-auto mt-4">
+            <table className="w-full border-collapse border border-gray-300 bg-white shadow-sm">
+              <thead>
+                <tr className="bg-gray-50">
+                  <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">Sl. No.</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">Document Required</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">1</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Name and Address (Factory & Office)</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Full legal name and physical addresses of the manufacturing site and office</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">2</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">PAN and GST Information</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Permanent Account Number (PAN) and GST registration details</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">3</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Contact Details</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Email address, mobile number, and landline for official communications</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">4</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Management Details</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Names, roles, and IDs of key executives and authorized signatory</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">5</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Product Description</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Details of machinery and equipment covered under the First Schedule of the Omnibus Technical Regulation</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">6</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Product Classification</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Specific type, model, and variety for which BIS license is being requested</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">7</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">Technical file</td>
+                  <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px]">All the technical details related to the product and details about the manufacturing unit.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+        </section>
+
+        {/* Validity & Renewal */}
+        <section id="validity-renewal" className="flex flex-col scroll-mt-20">
+          <div className="flex w-full items-center gap-3">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Validity and Renewal Process of Scheme-X Certificate</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </div>
+          <PointsListTwo
+            points={[
+              "Licence Validity and Renewal: BIS Licences under Scheme-X are issued for 3 to 6 years; renewable upon application, fees, and compliance documents.",
+              "Certificate of Conformity (CoC): One-time production; applicable to domestic and overseas manufacturers; no renewal.",
+              "Report of Product Tests: BIS officials verify in-house reports via witness testing; subcontract labs are inspected and approved.",
+              "Renewal Review: Processed as per Regulation 8 (Form VIII) after satisfactory compliance.",
+            ]}
+          />
+        </section>
+
+        {/* Conclusion */}
+        <section id="conclusion" className="flex flex-col scroll-mt-20">
+          <div className="flex w-full items-center gap-3 mt-2">
+            <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">Conclusion</span>
+            <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+          </div>
+          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+            The BIS Scheme-X Certification remains vital in upholding the safety, reliability, and quality of Low-voltage switchgear and control gear, Machinery and electrical equipment. For the manufacturers of machine tools applicable to processing stone, ceramics, concrete, asphantic cement and mineral glass, BIS Scheme-X certification is compulsory. By fulfilling these obligations, manufacturers guarantee product conformity, enhance consumer confidence, as well as improve their credibility on the market.
+          </p>
+          <AboutAuthor />
+        </section>
       </div>
     </article>
-  );
-};
-
-const OverviewSection = () => {
-  const { t } = useTranslation("SchemeX");
-
-  return (
-    <section
-      id="overview"
-      className="flex flex-col scroll-mt-20"
-      aria-label={t("overviewSection.ariaLabel")}
-    >
-      <header className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("overviewSection.headerTitle")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </header>
-
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-        {t("overviewSection.mainTitle")}
-      </h2>
-
-      {/* <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overviewSection.overviewTitle")}
-      </h3> */}
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overviewSection.overviewContent")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overviewSection.isiMarkTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overviewSection.isiMarkContent")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overviewSection.schemeXTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overviewSection.schemeXContent")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overviewSection.conclusionTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overviewSection.conclusionContent")}
-      </p>
-
-      {/* table  */}
-
-      <div className="overflow-x-auto mt-8 mb-8">
-        <table className="w-full border-collapse border border-gray-300 bg-white shadow-sm">
-          <thead>
-            <tr className="bg-gray-50">
-              <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">
-                {t("overviewSection.table.feature")}
-              </th>
-              <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">
-                {t("overviewSection.table.isiMark")}
-              </th>
-              <th className="border border-gray-300 px-4 py-3 text-left font-geist font-semibold text-[16px] md:text-[18px] text-gray-800">
-                {t("overviewSection.table.schemeX")}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="hover:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                {t("overviewSection.table.managedBy")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.indianBis")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.indianBis")}
-              </td>
-            </tr>
-            <tr className="hover:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                {t("overviewSection.table.certificationType")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.bisLicence")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.bisCertificateLicence")}
-              </td>
-            </tr>
-            <tr className="hover:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                {t("overviewSection.table.targetProducts")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.consumerGoods")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.machineryElectrical")}
-              </td>
-            </tr>
-            <tr className="hover:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                {t("overviewSection.table.markUsed")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.isiMarkValue")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.bisStandardMark")}
-              </td>
-            </tr>
-            <tr className="hover:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-3 font-geist font-medium text-[14px] md:text-[16px] text-gray-700">
-                {t("overviewSection.table.complianceLevel")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.indianStandardCompliance")}
-              </td>
-              <td className="border border-gray-300 px-4 py-3 font-geist text-[14px] md:text-[16px] text-[#42434d]">
-                {t("overviewSection.table.highEndCompliance")}
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <img
-        src={SchemeXImage}
-        alt={t("overviewSection.imageAlt")}
-        className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
-      />
-
-      {/* Scheme X Certification Product list */}
-
-      <div className="mt-[16px] md:mt-[24px]">
-        {/* Download Button */}
-
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("overviewSection.tableSection.serialNumber")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                {t("overviewSection.tableSection.description")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("overviewSection.tableSection.hsCode")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("overviewSection.tableSection.tableData", {
-              returnObjects: true,
-            }).map((row, index) => (
-              <TableRow key={index} className="hover:bg-gray-50">
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.serialNumber}
-                </TableCell>
-                <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                  {row.description}
-                </TableCell>
-                <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                  {row.hsCode}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-
-        {/* Heading and Description */}
-        <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
-            {t("overviewSection.tableSection.title")}
-          </h3>
-          <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-            {t("overviewSection.tableSection.description")}
-          </p>
-        </div>
-
-        <div className="flex justify-end mb-4">
-          <button
-            onClick={downloadTableData}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A8781] text-white rounded-lg font-geist text-sm md:text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 md:h-5 md:w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-            {t("overviewSection.tableSection.downloadButton")}
-          </button>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const Certification = () => {
-  const { t } = useTranslation("SchemeX");
-
-  return (
-    <section id="certification" className="flex flex-col scroll-mt-20">
-      {/* Documents */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("certification.headerTitle")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-        {t("certification.title")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("certification.intro")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("certification.keyDocumentsTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("certification.keyDocumentsContent")}
-      </p>
-
-      {/* table for documents */}
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("certification.documentsTable.serialNumber")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                {t("certification.documentsTable.documentRequired")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("certification.documentsTable.details")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                1
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row1.document")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row1.detail")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                2
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row2.document")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row2.detail")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                3
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row3.document")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row3.detail")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                4
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row4.document")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row4.detail")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                5
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row5.document")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row5.detail")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                6
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row6.document")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row6.detail")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                7
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row7.document")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("certification.documentsTable.row7.detail")}
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </div>
-
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("certification.registrationTitle")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("certification.registrationContent")}
-      </p>
-
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("certification.whySchemeXTitle")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("certification.whySchemeXContent")}
-      </p>
-    </section>
-  );
-};
-
-const Procedure = () => {
-  const { t } = useTranslation("SchemeX");
-
-  return (
-    <section id="procedure" className="flex flex-col scroll-mt-20">
-      {/* Process */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("procedure.headerTitle")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-        {t("procedure.title")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.intro")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.stepByStepTitle")}
-      </h3>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.checkProductTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.checkProductContent")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.prepareDocumentsTitle")}
-      </h3>
-
-      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.keyDocumentsTitle")}
-      </h2>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("procedure.documentsList", { returnObjects: true })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.documentsImportance")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.technicalFileTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.technicalFileContent")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("procedure.technicalFileItems", { returnObjects: true })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.technicalFileImportance")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.submitApplicationTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.submitApplicationContent")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.foreignProcessNote")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.factoryInspectionTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.factoryInspectionContent")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("procedure.inspectionDuration", { returnObjects: true })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.inspectionDetails")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.sampleTestingTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.sampleTestingContent")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("procedure.certificateIssuanceTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("procedure.certificateIssuanceContent")}
-      </p>
-    </section>
-  );
-};
-
-const Pricing = () => {
-  const { t } = useTranslation("SchemeX");
-
-  return (
-    <section id="pricing" className="flex flex-col scroll-mt-20">
-      {/* Validity */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("pricing.headerTitle")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("pricing.title")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("pricing.intro")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("pricing.keyChargesTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("pricing.keyChargesContent")}
-      </p>
-
-      {/* table for fee structure  */}
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("pricing.feeTable.feeType")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                {t("pricing.feeTable.cost")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("pricing.feeTable.description")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.applicationFeeLicense.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.applicationFeeLicense.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.applicationFeeLicense.description")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.applicationFeeCoc.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.applicationFeeCoc.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.applicationFeeCoc.description")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.certificationFeeLicense.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.certificationFeeLicense.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.certificationFeeLicense.description")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.certificationFeeCoc.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.certificationFeeCoc.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.certificationFeeCoc.description")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.technicalFileReview.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.technicalFileReview.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.technicalFileReview.description")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.inspectionFee.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.inspectionFee.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.inspectionFee.description")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.sampleProcurement.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.sampleProcurement.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.sampleProcurement.description")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.testingCharges.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.testingCharges.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.testingCharges.description")}
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50">
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.bankGuarantee.type")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.bankGuarantee.cost")}
-              </TableCell>
-              <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                {t("pricing.feeTable.bankGuarantee.description")}
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </div>
-    </section>
-  );
-
-};
-
-const Representative = () => {
-  const { t } = useTranslation("SchemeX");
-
-  return (
-    <section id="representative" className="flex flex-col scroll-mt-20">
-      {/* Surveillance */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("representative.headerTitle")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("representative.title")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representative.intro")}
-      </p>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representative.keyResponsibilitiesTitle")}
-      </h3>
-
-      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representative.bisRegistrationTitle")}
-      </h4>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("representative.bisRegistrationPoints", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representative.submissionTitle")}
-      </h4>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("representative.submissionPoints", { returnObjects: true })}
-        />
-      </div>
-
-      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representative.coordinatingTitle")}
-      </h4>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("representative.coordinatingPoints", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representative.managingFeesTitle")}
-      </h4>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("representative.managingFeesPoints", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <h4 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representative.postCertificationTitle")}
-      </h4>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("representative.postCertificationPoints", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representative.whyAirCriticalTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representative.whyAirCriticalContent")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representative.importantNote")}
-      </p>
-    </section>
-  );
-};
-
-const Benefits = () => {
-  const { t } = useTranslation("SchemeX");
-
-  return (
-    <section id="benefits" className="flex flex-col scroll-mt-20">
-      {/* Header */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("benefits.headerTitle")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("benefits.title")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("benefits.intro")}
-      </p>
-
-      {/* Manufacturing Benefits */}
-      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
-        {t("benefits.manufacturingBenefitsTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("benefits.manufacturingBenefitsContent")}
-      </p>
-
-      {/* Quality Benefits */}
-      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
-        {t("benefits.qualityBenefitsTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("benefits.qualityBenefitsContent")}
-      </p>
-
-      {/* Competitive Benefits */}
-      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
-        {t("benefits.competitiveBenefitsTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("benefits.competitiveBenefitsContent")}
-      </p>
-
-      {/* Compliance Benefits */}
-      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
-        {t("benefits.complianceBenefitsTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("benefits.complianceBenefitsContent")}
-      </p>
-
-      {/* Sustainability Benefits */}
-      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
-        {t("benefits.sustainabilityBenefitsTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("benefits.sustainabilityBenefitsContent")}
-      </p>
-    </section>
-  );
-};
-
-const Conclusion = () => {
-  const { t } = useTranslation("SchemeX");
-
-  return (
-    <section id="conclusion" className="flex flex-col scroll-mt-20">
-      {/* Surveillance */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("conclusion.headerTitle")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("conclusion.title")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("conclusion.paragraph1")}
-      </p>
-
-      {/* Exemptions Section */}
-      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
-        {t("conclusion.exemptionsTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("conclusion.exemptionsContent")}
-      </p>
-
-      {/* Regulation Section */}
-      <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] mt-6 mb-3">
-        {t("conclusion.regulationTitle")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("conclusion.regulationParagraph1")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("conclusion.regulationParagraph2")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("conclusion.regulationParagraph3")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("conclusion.regulationParagraph4")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("conclusion.regulationParagraph5")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("conclusion.regulationParagraph6")}
-      </p>
-    </section>
   );
 };
 
@@ -2427,7 +1956,7 @@ export const ServiceFaq = () => {
 export default SchemeX;
 
 // Update the downloadTableData function
-const downloadTableData = () => {
+/* const downloadTableData = () => {
   // Create a link element to download the PDF
   const link = document.createElement("a");
   link.href = "/pdf/schemeXproduct.pdf"; // Path to your PDF in public/pdf folder
@@ -2439,4 +1968,4 @@ const downloadTableData = () => {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-};
+}; */

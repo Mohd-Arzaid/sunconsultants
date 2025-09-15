@@ -271,6 +271,7 @@ function App() {
           <Route path="bis-scheme-x-certification-for-transformers" element={<Transformers />} />
           <Route path="bis-scheme-x-certification-for-machine-tools" element={<MachineTools />} />
           <Route path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts" element={<SwitchgearandControlgearEquipmentabove1000Volts />} />
+       
         </Route>
 
         <Route
