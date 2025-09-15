@@ -494,9 +494,9 @@ const ClientTestimonial = () => {
               <div key={index} className="group mb-6">
                 <div className="bg-white p-4 rounded-lg border border-gray-300 shadow-sm hover:shadow-md transition-shadow duration-200">
                   <div className="mb-3">
-                    <h3 className="font-geist font-bold text-neutral-800 text-base">
+                    <div className="font-geist font-bold text-neutral-800 text-base">
                       {testimonial.name}
-                    </h3>
+                    </div>
                     <p className="text-sm text-neutral-600 font-geist mt-1">
                       {testimonial.role}
                     </p>
