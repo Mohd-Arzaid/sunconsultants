@@ -534,16 +534,15 @@ export const SchemeX = () => {
     <>
       <Helmet>
         <title>
-          BIS Scheme X Certification | Machinery & Electrical Equipment Safety |
-          Sun Certifications
+          BIS Scheme X Certification | Machinery & Electrical Equipment Safety
         </title>
         <meta
           name="description"
-          content="Expert BIS Scheme X certification services for machinery and electrical equipment. Get ISI Mark certification for exports to India. Trusted BIS Certifications since 2013. ✓ Fast Processing ✓ Expert Guidance"
+          content="BIS Scheme X Certification is required to ensure quality and safety of low voltage switchgear, control gear, machinery, and electrical equipment."
         />
         <meta
           name="keywords"
-          content="BIS Scheme X, machinery certification, electrical equipment certification"
+          content="Scheme X, BIS Scheme X, BIS Scheme X Certification, Scheme X Certification, machinery certification, electrical equipment certification"
         />
         <meta name="author" content="Sun Certifications India" />
         <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
@@ -555,7 +554,7 @@ export const SchemeX = () => {
         />
         <meta
           property="og:description"
-          content="Expert BIS Scheme X certification services for machinery and electrical equipment. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance"
+          content="BIS Scheme X Certification is required to ensure quality and safety of low voltage switchgear, control gear, machinery, and electrical equipment."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location.href} />
@@ -574,7 +573,7 @@ export const SchemeX = () => {
         />
         <meta
           name="twitter:description"
-          content="Expert BIS Scheme X certification services for machinery and electrical equipment. Get ISI Mark certification for exports to India."
+          content="BIS Scheme X Certification is required to ensure quality and safety of low voltage switchgear, control gear, machinery, and electrical equipment."
         />
         <meta
           name="twitter:image"
@@ -1082,7 +1081,7 @@ export const SchemeXContentLeft = () => {
           aria-label="Introduction to BIS Scheme X Certification"
         >
           <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-            Introduction to BIS Scheme X Certification
+            BIS Scheme X Certification
           </h1>
 
           <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
