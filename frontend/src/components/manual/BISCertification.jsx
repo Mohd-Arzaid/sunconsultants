@@ -1639,7 +1639,7 @@ const SchemesSection = () => {
 
       <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Scheme X (Omnibus Technical Regulation)
-      </h2>
+      </h3>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         Schome X, or the Omnibus Technical Regulation, is another BIS
