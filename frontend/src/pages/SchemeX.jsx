@@ -2220,6 +2220,7 @@ const SchemeXTables = () => {
 const TypeBTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 20;
+  const tableRef = useRef(null);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -2233,17 +2234,31 @@ const TypeBTable = () => {
   const handleNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
+      // Scroll to table top
+      setTimeout(() => {
+        tableRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
     }
   };
 
   const handlePrevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      // Scroll to table top
+      setTimeout(() => {
+        tableRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
     }
   };
 
   return (
-    <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
+    <div ref={tableRef} className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist text-sm md:text-lg text-[#42434d] font-bold tracking-wide text-left max-w-full leading-none mb-6">
         TYPE B (Generic Safety Standards dealing with one safety aspect or more
         than one type of safeguard that can be used across a wide range of
@@ -2283,12 +2298,7 @@ const TypeBTable = () => {
         </Table>
       </div>
       {totalPages > 1 && (
-        <div className="flex justify-between items-center mt-6">
-          <div className="font-geist text-sm text-gray-700">
-            Showing {indexOfFirstItem + 1} to{" "}
-            {Math.min(indexOfLastItem, productDataTableSecond.length)} of{" "}
-            {productDataTableSecond.length} results
-          </div>
+        <div className="flex justify-center items-center mt-6">
           <div className="flex items-center">
             <button
               onClick={handlePrevPage}
