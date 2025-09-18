@@ -510,8 +510,18 @@ const productDataTableThird = [
     title:
       "Safety of Transformers, Reactors, Power Supply Units and Similar Product for Supply Voltages up to 1100 V Part 2-4: Particular Requirements and Tests for Isolating Transformers and Power Supply Units Incorporating\nSafety of power transformers, power supply units and similar: Part 2 particular requirement: Sec 6 safety isolating transformers for general use\nSafety of power transformers, power supplies reactors and similar products: Part 2-7 particular requirements and tests for transformers and power supplies for toys\nPower transformers: Part 1 general\nPower transformers: Part 6 reactors",
   },
+
   {
     id: 18,
+    description: "All types of Power Semiconductor Converter",
+    hsCode: "850440",
+    indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
+    title:
+      "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements",
+  },
+
+  {
+    id: 19,
     description:
       "All types of switch gear and control gear equipment operating at voltages not exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
     hsCode: "8536, 8537 and 8538",
@@ -520,7 +530,7 @@ const productDataTableThird = [
       "Low-Voltage switchgear and control gear assemblies: Part 3 distribution boards intended to be operated by ordinary persons (DBO)",
   },
   {
-    id: 19,
+    id: 20,
     description:
       "All types of switch gear and control gear equipment operating at voltages exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
     hsCode: "8535, 8537 and 8538",
@@ -1080,9 +1090,9 @@ export const SchemeXContentLeft = () => {
           className="flex flex-col scroll-mt-20"
           aria-label="Introduction to BIS Scheme X Certification"
         >
-          <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-            BIS Scheme X Certification
-          </h1>
+          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+            Introduction to BIS Scheme X Certification
+          </h2>
 
           <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             The Bureau of Indian Standards, or BIS for short, rolled out &quot;Scheme X&quot; on March 16, 2022, aimed at improving compliance on product safety and quality in India. Indian and foreign manufacturers can apply for BIS certification for Machine and Electrical equipment, components Like assemblies, sub-assemblies and, and Tools specified in Schedule-II of Scheme-X and take certification prior to exporting, selling, or distributing in India.
@@ -2069,10 +2079,10 @@ const SchemeXHero = () => {
           </div>
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
-            <span className="relative">
-              {t("hero.title")}
+            <h1 className="relative">
+              BIS Scheme X Certification
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
-            </span>{" "}
+            </h1>{" "}
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
@@ -2135,30 +2145,7 @@ const SchemeXTables = () => {
   return (
     <div className="w-full pb-12 borde">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-        {/* Navigation Buttons */}
-        <div className="flex gap-6 mb-12 justify-center items-center">
-          <button
-            onClick={() => scrollToTable(table1Ref)}
-            className="px-6 py-3 bg-[#1A8781] text-white rounded-lg font-geist text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-          >
-            {t("overviewSection.tableSection.productTableA") ||
-              "Product Table A"}
-          </button>
-          <button
-            onClick={() => scrollToTable(table2Ref)}
-            className="px-6 py-3 bg-[#1A8781] text-white rounded-lg font-geist text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-          >
-            {t("overviewSection.tableSection.productTableB") ||
-              "Product Table B"}
-          </button>
-          <button
-            onClick={() => scrollToTable(table3Ref)}
-            className="px-6 py-3 bg-[#1A8781] text-white rounded-lg font-geist text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-          >
-            {t("overviewSection.tableSection.productTableC") ||
-              "Product Table C"}
-          </button>
-        </div>
+
 
         <div className="flex flex-col gap-2 mt-6">
           <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
@@ -2186,7 +2173,7 @@ const SchemeXTables = () => {
           />
         </div>
 
-        <div ref={table1Ref} className="rounded-md border bg-white shadow-sm">
+        {/* <div ref={table1Ref} className="rounded-md border bg-white shadow-sm">
           <Table>
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
@@ -2217,7 +2204,7 @@ const SchemeXTables = () => {
               ))}
             </TableBody>
           </Table>
-        </div>
+        </div> */}
       </div>
 
       <div ref={table2Ref}>
@@ -2257,7 +2244,7 @@ const TypeBTable = () => {
 
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
-      <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
+      <p className="font-geist text-sm md:text-lg text-[#42434d] font-bold tracking-wide text-left max-w-full leading-none mb-6">
         TYPE B (Generic Safety Standards dealing with one safety aspect or more
         than one type of safeguard that can be used across a wide range of
         machinery)
@@ -2330,7 +2317,7 @@ const TypeBTable = () => {
 const TypeCTable = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
-      <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
+      <p className="font-geist text-sm md:text-lg text-[#42434d] font-bold tracking-wide text-left max-w-full leading-none mb-6">
         TYPE C (Machine Safety Standards dealing with detailed safety
         requirements for a particular machine or group of machines)
       </p>

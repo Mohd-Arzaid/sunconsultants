@@ -1562,9 +1562,9 @@ const SchemesSection = () => {
         />
       </div>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        1. ISI Mark Scheme (Domestic Manufacturers)
-      </h2>
+      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        ISI Mark Scheme (Domestic Manufacturers)
+      </h3>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         For Indian manufacturers, getting a BIS licence is a prerequisite for
@@ -1601,9 +1601,9 @@ const SchemesSection = () => {
         drinking water and more, without the ISI mark.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        2. FMCS – Foreign Manufacturers Certification Scheme
-      </h2>
+      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        FMCS – Foreign Manufacturers Certification Scheme
+      </h3>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         The Foreign Manufacturers Certification Scheme (FMCS) is a scheme
@@ -1637,8 +1637,8 @@ const SchemesSection = () => {
         allowed to enter India without the FMCS certification.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        3. Scheme X (Omnibus Technical Regulation)
+      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+        Scheme X (Omnibus Technical Regulation)
       </h2>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
@@ -1674,9 +1674,9 @@ const SchemesSection = () => {
         simplified yet robust structure.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Compulsory Registration Scheme (CRS)
-      </h2>
+      </h3>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         The Bureau of Indian Standards (BIS) has developed a BIS certification
@@ -1706,9 +1706,9 @@ const SchemesSection = () => {
         electronics industry in India.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Hallmarking Scheme
-      </h2>
+      </h3>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         In India, hallmarking of gold and silver jewellery is compulsory under
@@ -1741,9 +1741,9 @@ const SchemesSection = () => {
         for smaller retailers as well as larger scale manufacturers.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Eco Mark Certification
-      </h2>
+      </h3>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         The Eco Mark is an innovation-centered recognition scheme created by the
@@ -1773,9 +1773,9 @@ const SchemesSection = () => {
         enhanced quality protection with environmental protection under BIS.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Management Systems Certification Scheme (MSCS)
-      </h2>
+      </h3>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         The Management Systems Certification Scheme (MSCS) initiated by the
@@ -1804,9 +1804,9 @@ const SchemesSection = () => {
         country.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         LRS – Lab Recognition Scheme
-      </h2>
+      </h3>
 
       <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         Under the Bureau of Indian Standards (BIS), the Lab Recognition Scheme
