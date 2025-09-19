@@ -1310,7 +1310,8 @@ const SchemeXOverviewSection = () => {
       <div className="mt-[16px] md:mt-[20px] flex justify-center">
         <img
           src="/services-images/scheme-x-logo.png"
-          alt="BIS Scheme X Logo"
+          alt="BIS Scheme X logo"
+          title="BIS Scheme X Certification"
           className="max-w-full h-auto rounded-lg shadow-md"
         />
       </div>
