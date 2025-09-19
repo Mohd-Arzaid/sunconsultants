@@ -96,6 +96,7 @@ import Transformers from "./schemeXProducts/Transformers";
 import MachineTools from "./schemeXProducts/MachineTools";
 import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts";
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery";
+import CRSRegistrationTwo from "./pages/CRSRegistrationTwo";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -175,6 +176,16 @@ function App() {
             path="what-is-crs-bis-or-crs-registration"
             element={<CRSRegistration />}
           />
+
+
+<Route
+            path="xyz"
+            element={<CRSRegistrationTwo />}
+          />
+
+
+
+
           <Route
             path="information-about-peso-certification-peso-license-india"
             element={<Peso />}

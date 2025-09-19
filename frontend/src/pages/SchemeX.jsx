@@ -2086,7 +2086,7 @@ const SchemeXHero = () => {
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            {t("hero.description")}
+            BIS Scheme X Certification covers Machinery, Electrical Equipment, and Components Assemblies, and Sub-assemblies under the Omnibus Technical Regulation (OTR).
           </p>
 
           <nav className="flex items-center -mt-2">
