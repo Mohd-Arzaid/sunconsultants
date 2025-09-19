@@ -1507,8 +1507,13 @@ const SchemeXOverviewSection = () => {
                 1
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of Pumps for handling liquids, liquid elevators and
-                (or)their assemblies /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of Pumps for handling liquids, liquid elevators and
+                  (or)their assemblies /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 841340, 841350, 841360, 841370, 841381, 841382, 841391 and
@@ -1520,8 +1525,13 @@ const SchemeXOverviewSection = () => {
                 2
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of compressors and(or)their assemblies /sub-assemblies
-                /components
+                <Link
+                  to="/bis-scheme-x-certification-for-compressors"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of compressors and(or)their assemblies /sub-assemblies
+                  /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 841430, 841440, 84148011, 84148090, 84149011, 84149019, 84149040
@@ -1533,9 +1543,14 @@ const SchemeXOverviewSection = () => {
                 3
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of machinery for treatment of material by a process
-                involving a change of temperature and(or)their assemblies
-                /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-heat-treatment-equipment"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of machinery for treatment of material by a process
+                  involving a change of temperature and(or)their assemblies
+                  /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 841932, 841939, 841940, 841950, 841960, 841981, 841989 and
@@ -1547,9 +1562,14 @@ const SchemeXOverviewSection = () => {
                 4
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of centrifuges, filtering or purifying machinery for
-                liquid and gas and(or)their assemblies /sub-assemblies
-                /components
+                <Link
+                  to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of centrifuges, filtering or purifying machinery for
+                  liquid and gas and(or)their assemblies /sub-assemblies
+                  /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 842111, 842112, 842119, 84212110, 84212190, 842122, 842129,
@@ -1561,9 +1581,14 @@ const SchemeXOverviewSection = () => {
                 5
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of machinery for filling, closing, sealing, labelling
-                bottles, packing or wrapping and(or)their
-                assemblies/sub-assemblies/components
+                <Link
+                  to="/bis-scheme-x-certification-for-packing-machinery"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of machinery for filling, closing, sealing, labelling
+                  bottles, packing or wrapping and(or)their
+                  assemblies/sub-assemblies/components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 842220, 842230, 842240 and 842290
@@ -1574,8 +1599,13 @@ const SchemeXOverviewSection = () => {
                 6
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of cranes and (or) their assemblies
-                /sub-assemblies/components
+                <Link
+                  to="/bis-scheme-x-certification-for-cranes"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of cranes and (or) their assemblies
+                  /sub-assemblies/components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691
@@ -1587,8 +1617,13 @@ const SchemeXOverviewSection = () => {
                 7
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of machinery for construction, earthmoving, Mining and
-                (or)their assemblies /sub-assemblies/components
+                <Link
+                  to="/bis-scheme-x-certification-for-construction-machinery"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of machinery for construction, earthmoving, Mining and
+                  (or)their assemblies /sub-assemblies/components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8429, 843010, 843020, 843031, 843039, 843041, 843049, 843050,
@@ -1600,8 +1635,13 @@ const SchemeXOverviewSection = () => {
                 8
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of weaving machines (looms) and (or)their
-                assemblies/sub-assemblies / components
+                <Link
+                  to="/bis-scheme-x-certification-for-weaving-machines-looms"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of weaving machines (looms) and (or)their
+                  assemblies/sub-assemblies / components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8446, 844811, 844819, 844842 and 844849
@@ -1612,8 +1652,13 @@ const SchemeXOverviewSection = () => {
                 9
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of machinery for making embroidery and(or)their
-                assemblies /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-embroidery-machinery"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of machinery for making embroidery and(or)their
+                  assemblies /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 84479020 and 844859
@@ -1624,9 +1669,14 @@ const SchemeXOverviewSection = () => {
                 10
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of metal cutting machines tools covered under the
-                heading 8456 to 8461 and(or)their assemblies
-                /sub-assemblies/components
+                <Link
+                  to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of metal cutting machines tools covered under the
+                  heading 8456 to 8461 and(or)their assemblies
+                  /sub-assemblies/components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8456, 8457, 8458, 8459, 8460, 8461 and 846693
@@ -1637,9 +1687,14 @@ const SchemeXOverviewSection = () => {
                 11
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of machine tools for working stone, ceramics,
-                concrete, asbestos cement or like mineral glass and (or)their
-                assemblies /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-machine-tools"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of machine tools for working stone, ceramics,
+                  concrete, asbestos cement or like mineral glass and (or)their
+                  assemblies /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8464 and 84669100
@@ -1650,8 +1705,13 @@ const SchemeXOverviewSection = () => {
                 12
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of machinery for working rubber and plastics and(or)
-                their assemblies /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of machinery for working rubber and plastics and(or)
+                  their assemblies /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8477
@@ -1662,10 +1722,15 @@ const SchemeXOverviewSection = () => {
                 13
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of Machines including the machines for public works &
-                building and the machinery & mechanical appliances having
-                individual functions, not specified Or included elsewhere in
-                Chapter 84 and(or)their assemblies/sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of Machines including the machines for public works &
+                  building and the machinery & mechanical appliances having
+                  individual functions, not specified Or included elsewhere in
+                  Chapter 84 and(or)their assemblies/sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 84791000, 84798999 and 84799090
@@ -1676,10 +1741,15 @@ const SchemeXOverviewSection = () => {
                 14
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of gears and gearing, toothed wheels, chain sprocket,
-                transmission elements ball or roller screws, gear boxes and
-                speed changers, including torque converters And (or)their
-                assemblies /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of gears and gearing, toothed wheels, chain sprocket,
+                  transmission elements ball or roller screws, gear boxes and
+                  speed changers, including torque converters And (or)their
+                  assemblies /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 84834000 and 84839000
@@ -1690,8 +1760,13 @@ const SchemeXOverviewSection = () => {
                 15
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of Rotary electrical machines such as Generator, etc.
-                and (or) their assemblies /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-rotary-electrical-machines"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of Rotary electrical machines such as Generator, etc.
+                  and (or) their assemblies /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8501 and 8503
@@ -1702,8 +1777,13 @@ const SchemeXOverviewSection = () => {
                 16
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of Diesel Generator and (or)their assemblies
-                /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-diesel-generators"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of Diesel Generator and (or)their assemblies
+                  /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8502 and 8503
@@ -1714,8 +1794,13 @@ const SchemeXOverviewSection = () => {
                 17
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of Transformers and (or)their assemblies
-                /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-transformers"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of Transformers and (or)their assemblies
+                  /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 850421, 850422, 850423, 850431, 850432, 850433, 850434 and
@@ -1727,8 +1812,13 @@ const SchemeXOverviewSection = () => {
                 18
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of Power Semiconductor Converter and (or)their
-                assemblies /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-power-semiconductor-converters"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of Power Semiconductor Converter and (or)their
+                  assemblies /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 850440
@@ -1739,9 +1829,14 @@ const SchemeXOverviewSection = () => {
                 19
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of switch gear and control gear equipment operating at
-                voltages not exceeding 1000 volts and (or)their assemblies
-                /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of switch gear and control gear equipment operating at
+                  voltages not exceeding 1000 volts and (or)their assemblies
+                  /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8536, 8537 and 8538
@@ -1752,9 +1847,14 @@ const SchemeXOverviewSection = () => {
                 20
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                All types of switch gear and control gear equipment operating at
-                voltages exceeding 1000 volts and (or) their assemblies
-                /sub-assemblies /components
+                <Link
+                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+                  className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                >
+                  All types of switch gear and control gear equipment operating at
+                  voltages exceeding 1000 volts and (or) their assemblies
+                  /sub-assemblies /components
+                </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 8535, 8537 and 8538
