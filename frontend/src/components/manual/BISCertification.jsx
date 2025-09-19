@@ -1381,12 +1381,12 @@ const OverviewSection = () => {
         BIS Certification for Manufacturers and Importers in India
       </h1>
 
-      {/* <img
-        src="/services-main-images/BIS-Certification-for-Indian-Manufacturers.png"
-        alt="Indian Bis Certification Schemes"
-        title="BIS License Scheme"
-        className="mt-4 md:mt-6 w-full max-w-[600px] h-auto rounded-lg shadow-md"
-      /> */}
+      <img
+        src="/services-main-images/IndianBisCertification.png"
+        alt="Indian BIS Certification"
+        title="BIS Certificate for Indian manufactures"
+        className="w-full h-auto rounded-lg shadow-md"
+      />
 
       <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
         Introduction: Why BIS Certification Matters
