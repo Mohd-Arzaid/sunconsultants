@@ -115,21 +115,25 @@ const CDSCOContentRight = () => {
 
     // Scheme X product 
     "/bis-scheme-x-certification-for-pumps-and-liquid-elevators",
-    "/bis-scheme-x-certification-for-packing-machinery",
     "/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery",
     "/bis-scheme-x-certification-for-compressors",
-    "/bis-scheme-x-certification-for-heat-treatment-equipment",
-    "/bis-scheme-x-certification-for-weaving-machines-looms",
     "/bis-scheme-x-certification-for-construction-machinery",
-    "/bis-scheme-x-certification-for-metal-cutting-machine-tools",
     "/bis-scheme-x-certification-for-cranes",
+    "/bis-scheme-x-certification-for-diesel-generators",
     "/bis-scheme-x-certification-for-embroidery-machinery",
     "/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements",
-    "/bis-scheme-x-certification-for-diesel-generators",
-    "/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts",
-    "/bis-scheme-x-certification-for-rubber-and-plastics-machinery",
+    "/bis-scheme-x-certification-for-heat-treatment-equipment",
+    "/bis-scheme-x-certification-for-machine-tools",
+    "/bis-scheme-x-certification-for-metal-cutting-machine-tools",
+    "/bis-scheme-x-certification-for-packing-machinery",
+    "/bis-scheme-x-certification-for-power-semiconductor-converters",
+    "/bis-scheme-x-certification-for-public-works-and-mechanical-appliances",
     "/bis-scheme-x-certification-for-rotary-electrical-machines",
-    "/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+    "/bis-scheme-x-certification-for-rubber-and-plastics-machinery",
+    "/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts",
+    "/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts",
+    "/bis-scheme-x-certification-for-transformers",
+    "/bis-scheme-x-certification-for-weaving-machines-looms"
   ];
 
   // Check if current path should show these components
