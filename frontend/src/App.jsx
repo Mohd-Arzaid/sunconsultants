@@ -96,7 +96,7 @@ import Transformers from "./schemeXProducts/Transformers";
 import MachineTools from "./schemeXProducts/MachineTools";
 import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts";
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery";
-import CRSRegistrationTwo from "./pages/CRSRegistrationTwo";
+
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -178,10 +178,7 @@ function App() {
           />
 
 
-<Route
-            path="xyz"
-            element={<CRSRegistrationTwo />}
-          />
+
 
 
 
@@ -282,7 +279,7 @@ function App() {
           <Route path="bis-scheme-x-certification-for-transformers" element={<Transformers />} />
           <Route path="bis-scheme-x-certification-for-machine-tools" element={<MachineTools />} />
           <Route path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts" element={<SwitchgearandControlgearEquipmentabove1000Volts />} />
-       
+
         </Route>
 
         <Route
