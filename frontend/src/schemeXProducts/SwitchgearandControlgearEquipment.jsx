@@ -170,7 +170,7 @@ const SwitchgearandControlgearEquipmentMainContentLeft = () => {
             className="w-full h-auto rounded-lg shadow-md"
           />
 
-        </div> 
+        </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -504,11 +504,10 @@ const SwitchgearandControlgearEquipmentMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
                 ? "bg-green-50 text-green-700 border border-green-200"
                 : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+              }`}
           >
             {submitStatus.message}
           </div>

@@ -260,25 +260,26 @@ function App() {
           <Route path="shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail" element={<PumpsAndLiquidElevatorsArabic />} />
 
 
-          <Route path="bis-scheme-x-certification-for-packing-machinery" element={<PackingMachinery />} />
           <Route path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery" element={<Centrifuges />} />
           <Route path="bis-scheme-x-certification-for-compressors" element={<Compressors />} />
-          <Route path="bis-scheme-x-certification-for-heat-treatment-equipment" element={<HeatTreatmentEquipment />} />
-          <Route path="bis-scheme-x-certification-for-weaving-machines-looms" element={<WeavingMachines />} />
           <Route path="bis-scheme-x-certification-for-construction-machinery" element={<ConstructionMachinery />} />
-          <Route path="bis-scheme-x-certification-for-metal-cutting-machine-tools" element={<MetalCuttingMachines />} />
           <Route path="bis-scheme-x-certification-for-cranes" element={<Cranes />} />
+          <Route path="bis-scheme-x-certification-for-diesel-generators" element={<DieselGenerator />} />
           <Route path="bis-scheme-x-certification-for-embroidery-machinery" element={<EmbroideryMachines />} />
           <Route path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements" element={<GearsGearingsandTransmission />} />
-          <Route path="bis-scheme-x-certification-for-diesel-generators" element={<DieselGenerator />} />
-          <Route path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts" element={<SwitchgearandControlgearEquipment />} />
-          <Route path="bis-scheme-x-certification-for-rubber-and-plastics-machinery" element={<RubberAndPlasticsMachinery />} />
-          <Route path="bis-scheme-x-certification-for-rotary-electrical-machines" element={<RotaryElectricalMachines />} />
-          <Route path="bis-scheme-x-certification-for-public-works-and-mechanical-appliances" element={<PublicWorksAndMechanical />} />
-          <Route path="bis-scheme-x-certification-for-power-semiconductor-converters" element={<PowerSemiconductors />} />
-          <Route path="bis-scheme-x-certification-for-transformers" element={<Transformers />} />
+          <Route path="bis-scheme-x-certification-for-heat-treatment-equipment" element={<HeatTreatmentEquipment />} />
           <Route path="bis-scheme-x-certification-for-machine-tools" element={<MachineTools />} />
+          <Route path="bis-scheme-x-certification-for-metal-cutting-machine-tools" element={<MetalCuttingMachines />} />
+          <Route path="bis-scheme-x-certification-for-packing-machinery" element={<PackingMachinery />} />
+          <Route path="bis-scheme-x-certification-for-power-semiconductor-converters" element={<PowerSemiconductors />} />
+          <Route path="bis-scheme-x-certification-for-public-works-and-mechanical-appliances" element={<PublicWorksAndMechanical />} />
+          <Route path="bis-scheme-x-certification-for-rotary-electrical-machines" element={<RotaryElectricalMachines />} />
+          <Route path="bis-scheme-x-certification-for-rubber-and-plastics-machinery" element={<RubberAndPlasticsMachinery />} />
+          <Route path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts" element={<SwitchgearandControlgearEquipment />} />
           <Route path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts" element={<SwitchgearandControlgearEquipmentabove1000Volts />} />
+          <Route path="bis-scheme-x-certification-for-transformers" element={<Transformers />} />
+          <Route path="bis-scheme-x-certification-for-weaving-machines-looms" element={<WeavingMachines />} />
+
 
         </Route>
 
