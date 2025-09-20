@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import ServiceContactForm from "@/common/ServiceContactForm"
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
-import { Check, SlashIcon } from "lucide-react"
+import { Check, Search, SlashIcon } from "lucide-react"
 import { Helmet } from "react-helmet-async"
 import { Link } from "react-router-dom"
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import ServiceContentRight from "@/components/manual/CDSCOContentRight";
 import { Separator } from "@/components/ui/separator"
 import {
@@ -15,6 +15,16 @@ import {
     TableRow,
     TableHead,
 } from "@/components/ui/table"
+import Footer from "@/common/Footer"
+import ScrollToTopButton from "@/components/common/ScrollToTop"
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
+import Services from "@/components/manual/Services"
+import AboutAuthor from "@/components/common/AboutAuthor"
 
 const CRSRegistrationTwo = () => {
     return (
@@ -29,6 +39,10 @@ const CRSRegistrationTwo = () => {
             <CRSRegistrationIndex />
             {/* CRS Registration Main Content Section */}
             <CRSRegistrationMainContent />
+            {/* Footer Section */}
+            <Footer />
+            {/* Scroll To Top Button Section */}
+            <ScrollToTopButton />
         </div>
     )
 }
@@ -177,26 +191,22 @@ const CRSRegistrationIndex = () => {
     const mobileMenuRef = useRef(null);
     const toggleButtonRef = useRef(null);
 
-    const SECTIONS = [
+    const SECTIONS = useMemo(() => [
         "overview",
         "eligibility",
         "documents",
         "registration",
-        "financial",
+        "fees",
         "elabelling",
-        "expertise",
-        "faqs",
-    ];
+    ], []);
 
     const MENU_ITEMS = {
         overview: "Overview",
         eligibility: "Eligibility",
         documents: "Documents",
         registration: "Registration",
-        financials: "Financials",
+        fees: "Registration Fees",
         elabelling: "E-Labelling",
-        expertise: "Expertise",
-        faqs: "FAQs",
     };
 
     const handleItemClick = (item) => {
@@ -253,28 +263,29 @@ const CRSRegistrationIndex = () => {
     }, []);
 
     useEffect(() => {
-        const sectionObserver = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-                        setActiveSection(entry.target.id);
+        const handleScrollSpy = () => {
+            const scrollPosition = window.scrollY + 200; // Offset for header
+
+            for (let i = SECTIONS.length - 1; i >= 0; i--) {
+                const section = SECTIONS[i];
+                const element = document.getElementById(section);
+
+                if (element) {
+                    const offsetTop = element.offsetTop;
+
+                    if (scrollPosition >= offsetTop) {
+                        setActiveSection(section);
+                        break;
                     }
-                });
-            },
-            { threshold: 0.5 }
-        );
-
-        SECTIONS.forEach((section) => {
-            const element = document.getElementById(
-                section.toLowerCase().replace(/\s+/g, "-")
-            );
-            if (element) {
-                sectionObserver.observe(element);
+                }
             }
-        });
+        };
 
-        return () => sectionObserver.disconnect();
-    }, []);
+        window.addEventListener('scroll', handleScrollSpy);
+        handleScrollSpy(); // Initial check
+
+        return () => window.removeEventListener('scroll', handleScrollSpy);
+    }, [SECTIONS]);
 
     return (
         <div
@@ -375,16 +386,800 @@ const CRSRegistrationIndex = () => {
 
 const CRSRegistrationMainContent = () => {
     return (
-        <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
-            <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-                {/* Left Side */}
-                <CRSRegistrationMainContentLeft />
-                {/* Right Side */}
-                <ServiceContentRight />
+        <div>
+            <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+                    {/* Left Side */}
+                    <CRSRegistrationMainContentLeft />
+                    {/* Right Side */}
+                    <ServiceContentRight />
+                </div>
+            </div>
+            <CRSRegistrationServiceFaq />
+            <CISProductTable />
+            <div id="services">
+                <Services />
             </div>
         </div>
     )
 }
+
+const CRSRegistrationServiceFaq = () => {
+    const [showAllFaqs, setShowAllFaqs] = useState(false);
+
+    const allFaqs = [
+        {
+            id: "item-1",
+            question: "1. What is BIS registration?",
+            answer:
+                "BIS certification is a compliance process governed by the Bureau of Indian Standards, which verifies that a product meets the applicable Indian Standards (IS) for quality, safety, and reliability.",
+        },
+        {
+            id: "item-2",
+            question: "2. What is CRS registration under BIS?",
+            answer:
+                "CRS stands for Compulsory Registration Scheme. It is a mandatory registration process for specific product categories such as electronics, electricals, batteries, and solar items. Products under CRS must be tested and registered with BIS before they can be sold in India.",
+        },
+        {
+            id: "item-3",
+            question: "3. Is BIS certification mandatory in India?",
+            answer:
+                "Yes. For all products listed under the CRS product list (currently 80+ items), BIS registration is mandatory for manufacturing, importing, or selling in India.",
+        },
+        {
+            id: "item-4",
+            question: "4. What is the difference between BIS CRS and ISI mark?",
+            answer:
+                "BIS CRS: For electronics and IT goods, only for mandatory products notified under QCO. <br />ISI mark: Used for a broader range of products, may be voluntary or mandatory depending on the product category.",
+        },
+        {
+            id: "item-5",
+            question: "5. Who can apply for BIS CRS registration?",
+            answer:
+                "Only manufacturers can apply. This includes both Indian and foreign manufacturers. Foreign brands must appoint an Authorized Indian Representative (AIR).",
+        },
+        {
+            id: "item-6",
+            question: "6. What is the role of an AIR?",
+            answer:
+                "An Authorized Indian Representative (AIR) is legally responsible for filing the BIS application on behalf of a foreign manufacturer. They act as the official liaison between BIS and the overseas applicant.",
+        },
+        {
+            id: "item-7",
+            question: "7. How long does BIS CRS registration take?",
+            answer:
+                "The process typically takes 3–4 weeks, assuming all documents and test reports are submitted correctly and no objections are raised by BIS.",
+        },
+        {
+            id: "item-8",
+            question: "8. How much does BIS CRS certificate cost?",
+            answer:
+                "Costs include: <br />Testing Charges: ₹10,000–₹20,000 + GST <br />Government Fee: ₹53,000 + GST per test report <br />Additional Charges: Affidavit, courier, AIR documentation, etc. <br />Discount applicable for Indian MSME registered manufacturers",
+        },
+        {
+            id: "item-9",
+            question: "9. What is the validity of BIS CRS certificates?",
+            answer:
+                "The initial BIS license is valid for 2 years. It can be renewed for up to 5 years if the product and manufacturing details remain unchanged.",
+        },
+        {
+            id: "item-10",
+            question: "10. Can BIS certification be obtained voluntarily?",
+            answer:
+                "No. Under CRS, you cannot apply voluntarily for products that are not listed under QCOs. Voluntary certification is only applicable for non-CRS products via the ISI scheme.",
+        },
+        {
+            id: "item-11",
+            question: "11. Where can I find the BIS CRS product list?",
+            answer:
+                'You can visit the official BIS website <a href="https://www.crsbis.in/BIS/publicdashAction.do" target="_blank" rel="noopener noreferrer" className="text-[#1A8781] underline">https://www.crsbis.in/BIS/publicdashAction.do</a> and navigate to the "Products under CRS" section to view the complete list of covered products.',
+        },
+        {
+            id: "item-12",
+            question: "12. Can the BIS mark be displayed electronically?",
+            answer:
+                "Yes, through e-labelling, but it must meet strict BIS rules: Label info must be embedded in firmware <br />Easy access within 4 steps in device menu <br />Physical packaging must still carry regulatory info",
+        },
+        {
+            id: "item-13",
+            question:
+                "13. What happens if I don't get BIS registration for a mandatory product?",
+            answer:
+                "Severe penalties, including: <br />Product seizure <br />Customs rejections <br />Legal fines <br />Delisting from e-commerce portals <br />Permanent ban from Indian market",
+        },
+        {
+            id: "item-14",
+            question: "14. Can one BIS certificate cover multiple models or brands?",
+            answer:
+                "No. Each brand, and factory location must be certified separately. Multiple models may be added using additional reports, but only under the same application and brand.",
+        },
+        {
+            id: "item-15",
+            question: "15. How can Sun Certifications India help me?",
+            answer:
+                "We offer: <br />Full documentation support <br />Lab coordination <br />BIS portal application handling <br />Query resolution and BIS follow-ups <br />Renewal and labeling guidance <br />Compliance assurance for foreign brands via AIR services",
+        },
+    ];
+
+    const visibleFaqs = showAllFaqs ? allFaqs : allFaqs.slice(0, 5);
+
+    return (
+        <div id="faqs" className="my-2 scroll-mt-20">
+            <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
+                <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+                    Frequently Asked Questions
+                </h2>
+                <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
+                    Can&apos;t find the answer you are looking for?{" "}
+                    <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
+                        Reach out to us!
+                    </span>
+                </p>
+
+                <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
+                    <Accordion type="single" collapsible className="w-full">
+                        {visibleFaqs.map((faq) => (
+                            <AccordionItem key={faq.id} value={faq.id}>
+                                <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                                    <h3>{faq.question}</h3>
+                                </AccordionTrigger>
+                                <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
+                                    <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+
+                    {/* Show More/Show Less Button */}
+                    <div className="flex justify-center mt-8">
+                        <button
+                            onClick={() => setShowAllFaqs(!showAllFaqs)}
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1A8781] text-white font-geist font-medium text-[16px] rounded-lg hover:bg-[#125E5A] transition-colors duration-300 shadow-md hover:shadow-lg"
+                        >
+                            {showAllFaqs ? (
+                                <>
+                                    <svg
+                                        className="w-5 h-5 transform rotate-180"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
+                                    Show Less FAQs
+                                </>
+                            ) : (
+                                <>
+                                    <svg
+                                        className="w-5 h-5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
+                                    Show More FAQs
+                                </>
+                            )}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+
+const productsData = [
+    {
+        id: 1,
+        product: "AMPLIFIERS WITH INPUT POWER 2000W AND ABOVE",
+        isNumber: "IS 616:2017",
+        date: "03 July 2013",
+    },
+    {
+        id: 2,
+        product: "AUTOMATIC DATA PROCESSING MACHINE",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "03 July 2013",
+    },
+    {
+        id: 3,
+        product: "ELECTRONIC CLOCKS WITH MAINS POWER",
+        isNumber: "IS 302-2-26:2014",
+        date: "03 July 2013",
+    },
+    {
+        id: 4,
+        product: "ELECTRONIC GAMES (VIDEO)",
+        isNumber: "IS 616:2017",
+        date: "03 July 2013",
+    },
+    {
+        id: 5,
+        product: "ELECTRONIC MUSICAL SYSTEMS WITH INPUT POWER 200W AND ABOVE",
+        isNumber: "IS 616:2017",
+        date: "03 July 2013",
+    },
+    {
+        id: 6,
+        product: "LAPTOP/NOTEBOOK/TABLET",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "03 July 2013",
+    },
+    {
+        id: 7,
+        product: "MICROWAVE OVENS",
+        isNumber: "IS 302-2-25:2014",
+        date: "03 July 2013",
+    },
+    {
+        id: 8,
+        product:
+            "OPTICAL DISC PLAYERS WITH BUILT IN AMPLIFIERS OF INPUT POWER 200W AND ABOVE",
+        isNumber: "IS 616:2017",
+        date: "03 July 2013",
+    },
+    {
+        id: 9,
+        product: 'PLASMA/LCD/LED TELEVISIONS OF SCREEN SIZE 32"; AND ABOVE',
+        isNumber: "IS 616:2017",
+        date: "03 July 2013",
+    },
+    {
+        id: 10,
+        product: "PRINTERS, PLOTTERS",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "03 July 2013",
+    },
+    {
+        id: 11,
+        product: "SCANNERS",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "03 July 2013",
+    },
+    {
+        id: 12,
+        product: "SET TOP BOX",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "03 July 2013",
+    },
+    {
+        id: 13,
+        product: "TELEPHONE ANSWERING MACHINES",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "03 July 2013",
+    },
+    {
+        id: 14,
+        product:
+            'VISUAL DISPLAY UNITS, VIDEOS MONITORS OF SCREEN SIZE 32" AND ABOVE',
+        isNumber: "IS 13252(Part 1):2010",
+        date: "03 July 2013",
+    },
+    {
+        id: 15,
+        product: "WIRELESS KEYBOARDS",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "03 July 2013",
+    },
+    {
+        id: 16,
+        product: "CASH REGISTERS",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "13 May 2015",
+    },
+    {
+        id: 17,
+        product: "COPYING MACHINES/DUPLICATORS",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "13 May 2015",
+    },
+    {
+        id: 18,
+        product: "PASSPORT READER",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "13 May 2015",
+    },
+    {
+        id: 19,
+        product: "POINT OF SALE TERMINALS",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "13 May 2015",
+    },
+    {
+        id: 20,
+        product: "MAIL PROCESSING MACHINES/POSTAGE MACHINES/FRANKING MACHINES",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "13 May 2015",
+    },
+    {
+        id: 21,
+        product: "POWER BANKS FOR USE IN PORTABLE APPLICATIONS",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "13 May 2015",
+    },
+    {
+        id: 22,
+        product: "SMART CARD READER",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "13 May 2015",
+    },
+    {
+        id: 23,
+        product: "MOBILE PHONES",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "13 September 2015",
+    },
+    {
+        id: 24,
+        product: "SELF-BALLASTED LED LAMPS FOR GENERAL LIGHTING SERVICES",
+        isNumber: "IS 16102(Part 1):2012",
+        date: "13 September 2015",
+    },
+    {
+        id: 25,
+        product: "DC OR AC SUPPLIED ELECTRONIC CONTROLGEAR FOR LED MODULES",
+        isNumber: "IS 15885(Part 2/Sec 13):2012",
+        date: "01 December 2015",
+    },
+    {
+        id: 26,
+        product: "POWER ADAPTORS FOR AUDIO,VIDEO & SIMILAR ELECTRONIC APPARATUS",
+        isNumber: "IS 616:2010",
+        date: "01 December 2015",
+    },
+    {
+        id: 27,
+        product: "POWER ADAPTORS FOR IT EQUIPMENTS",
+        isNumber: "IS 13252(Part 1):2010",
+        date: "01 December 2015",
+    },
+    {
+        id: 28,
+        product: "FIXED GENERAL PURPOSE LED LUMINAIRES",
+        isNumber: "IS 10322(Part 5/Sec 1):2012",
+        date: "01 March 2016",
+    },
+    {
+        id: 29,
+        product: "UPS/INVERTORS OF RATING <= 5KVA",
+        isNumber: "IS 16242(Part 1):2014",
+        date: "01 March 2016",
+    },
+    {
+        id: 30,
+        product:
+            "SEALED SECONDARY CELLS/BATTERIES CONTAINING ALKALINE OR OTHER NON-ACID ELECTROLYTES FOR USE IN PORTABLE APPLICATIONS PART 1 NICKEL SYSTEMS",
+        isNumber: "IS 16046(Part 1): 2018",
+        date: "01 June 2016",
+    },
+    {
+        id: 31,
+        product:
+            "SEALED SECONDARY CELLS/BATTERIES CONTAINING ALKALINE OR OTHER NON-ACID ELECTROLYTES FOR USE IN PORTABLE APPLICATIONS PART 2 LITHIUM SYSTEMS",
+        isNumber: "IS 16046(Part 2): 2018",
+        date: "01 June 2016",
+    },
+    {
+        id: 32,
+        product: "INDIAN LANGUAGE SUPPORT FOR MOBILE PHONE HANDSETS",
+        isNumber: "IS 16333 (Part 3) : 2022",
+        date: "01 May 2018",
+    },
+    {
+        id: 33,
+        product: "Recessed LED Luminaries",
+        isNumber: "IS 10322 (Part 5/Section 2) : 2012",
+        date: "23 May 2018",
+    },
+    {
+        id: 34,
+        product: "LED Luminaires for Road and Street lighting",
+        isNumber: "IS 10322 (Part 5/Section 3) : 2012",
+        date: "23 May 2018",
+    },
+    {
+        id: 35,
+        product: "LED Flood Lights",
+        isNumber: "IS 10322 (Part 5/Section 5) : 2013",
+        date: "23 May 2018",
+    },
+    {
+        id: 36,
+        product: "LED Hand lamps",
+        isNumber: "IS 10322 (Part 5/Section 6) : 2013",
+        date: "23 May 2018",
+    },
+    {
+        id: 37,
+        product: "LED Lighting Chains",
+        isNumber: "IS 10322 (Part 5/Section 7) : 2017",
+        date: "23 May 2018",
+    },
+    {
+        id: 38,
+        product: "LED Luminaires for Emergency Lighting",
+        isNumber: "IS 10322 (Part 5/Section 8) : 2013",
+        date: "23 May 2018",
+    },
+    {
+        id: 39,
+        product: "UPS/Inverters of rating <= 10kVA",
+        isNumber: "IS 16242 (Part 1) : 2014",
+        date: "23 May 2018",
+    },
+    {
+        id: 40,
+        product: "Plasma/ LCD/LED Television of screen size up-to 32",
+        isNumber: "IS 616 : 2017",
+        date: "23 May 2018",
+    },
+    {
+        id: 41,
+        product: "Visual Display Units, Video Monitors of screen size upto 32",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "23 May 2018",
+    },
+    {
+        id: 42,
+        product: "CCTV Cameras/CCTV Recorders",
+        isNumber:
+            "IS 13252 (Part 1) : 2010, Essential Requirement(s) for Security of CCTV",
+        date: "23 May 2018",
+    },
+    {
+        id: 43,
+        product: "Adapters for household and similar electrical appliances",
+        isNumber: "IS 302 (Part 1) : 2008",
+        date: "23 May 2018",
+    },
+    {
+        id: 44,
+        product:
+            "USB driven Barcode readers, barcode scanners, Iris scanners, Optical fingerprint scanners",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "23 May 2018",
+    },
+    {
+        id: 45,
+        product: "Smart watches",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "23 May 2018",
+    },
+    {
+        id: 46,
+        product:
+            "Crystalline Silicon Terrestrial Photovoltaic (PV) modules (Si wafer based)",
+        isNumber:
+            "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
+        date: "31 March 2019",
+    },
+    {
+        id: 47,
+        product:
+            "Thin-Film Terrestrial Photovoltaic (PV) Modules (a-Si, CiGs and CdTe)",
+        isNumber:
+            "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
+        date: "31 March 2019",
+    },
+    {
+        id: 48,
+        product: "Power converters for use in photovoltaic power system",
+        isNumber: "IS 16221 (Part 2) : 2015 / IEC 62109-2 : 2011",
+        date: "30 June 2021",
+    },
+    {
+        id: 49,
+        product: "Utility-Interconnected Photovoltaic inverters",
+        isNumber:
+            "IS 16221 (Part 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
+        date: "30 June 2021",
+    },
+    {
+        id: 50,
+        product: "Storage battery",
+        isNumber: "IS 16270 : 2014",
+        date: "01 January 2019",
+    },
+    {
+        id: 51,
+        product: "Independent LED Modules for General Lighting",
+        isNumber: "IS 16103 (Part 1) : 2012",
+        date: "01 April 2021",
+    },
+    {
+        id: 52,
+        product: "Lighting Chain (Rope Lights)",
+        isNumber: "IS 10322 (Part 5/Sec 9) : 2017",
+        date: "01 April 2021",
+    },
+    {
+        id: 53,
+        product: "Keyboard",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "01 April 2021",
+    },
+    {
+        id: 54,
+        product: "Induction Stove",
+        isNumber: "IS 302-2-6 : 2009",
+        date: "01 April 2021",
+    },
+    {
+        id: 55,
+        product: "Automatic Teller Cash dispensing machines",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "01 April 2021",
+    },
+    {
+        id: 56,
+        product: "USB Type External Hard Disk Drive",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "01 April 2021",
+    },
+    {
+        id: 57,
+        product: "Wireless Headphone and Earphone",
+        isNumber: "IS 616 : 2017",
+        date: "01 April 2021",
+    },
+    {
+        id: 58,
+        product:
+            "USB Type External Solid-State Storage Devices (above 256 GB capacity)",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "01 April 2021",
+    },
+    {
+        id: 59,
+        product: "Electronic Musical System with input power below 200 Watts",
+        isNumber: "IS 616 : 2017",
+        date: "01 April 2021",
+    },
+    {
+        id: 60,
+        product:
+            "Standalone Switch Mode Power Supplies (SMPS) with output voltage 48V (max)",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "01 April 2021",
+    },
+    {
+        id: 61,
+        product: "Television other than Plasma/ LCD/LED TVs",
+        isNumber: "IS 616 : 2017",
+        date: "01 April 2021",
+    },
+    {
+        id: 62,
+        product: "Rice Cooker",
+        isNumber: "IS 302-2-15 : 2009",
+        date: "01 April 2021",
+    },
+    {
+        id: 63,
+        product: "Wireless Microphone",
+        isNumber: "IS 616 : 2017",
+        date: "01 October 2021",
+    },
+    {
+        id: 64,
+        product: "Digital Camera",
+        isNumber: "IS 13252 (Part 1) : 2010",
+        date: "01 October 2021",
+    },
+    {
+        id: 65,
+        product: "Video Camera",
+        isNumber: "IS 616 : 2017",
+        date: "01 October 2021",
+    },
+    {
+        id: 66,
+        product: "Webcam (Finished Product)",
+        isNumber: "IS 616 : 2017",
+        date: "01 October 2021",
+    },
+    {
+        id: 67,
+        product: "Smart Speakers (with and without Display)",
+        isNumber: "IS 616 : 2017",
+        date: "01 October 2021",
+    },
+    {
+        id: 68,
+        product: "Dimmers for LED products",
+        isNumber: "IS 60669-2-1: 2008",
+        date: "01 October 2021",
+    },
+    {
+        id: 69,
+        product: "Bluetooth Speakers",
+        isNumber: "IS 616 : 2017",
+        date: "01 October 2021",
+    },
+    {
+        id: 70,
+        product: "Ortho Phosphoric Acid",
+        isNumber: "IS 798 : 2020",
+        date: "12 December 2021",
+    },
+    {
+        id: 71,
+        product: "Polyphosphoric Acid",
+        isNumber: "IS 17439:2020",
+        date: "24 December 2021",
+    },
+    {
+        id: 72,
+        product: "Cotton Bales",
+        isNumber: "IS 12171:2019",
+        date: "03 March 2023",
+    },
+    {
+        id: 73,
+        product: "Trimethyl Phosphite Technical Grade",
+        isNumber: "IS 17412:2020",
+        date: "03 March 2023",
+    },
+    {
+        id: 74,
+        product: "Television Sets",
+        isNumber: "IS 18112:2022",
+        date: "26 April 2023",
+    },
+];
+
+export const CISProductTable = () => {
+    const [searchQuery, setSearchQuery] = useState("");
+    const [currentPage, setCurrentPage] = useState(1);
+    const productsPerPage = 20;
+
+    const filteredProducts = productsData.filter(
+        (product) =>
+            product.product.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            product.isNumber.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [searchQuery]);
+
+    const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = filteredProducts.slice(
+        indexOfFirstProduct,
+        indexOfLastProduct
+    );
+
+    const scrollToTable = () => {
+        const tableSection = document.querySelector('.product-table-section');
+        if (tableSection) {
+            tableSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
+    const handlePrevPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+            scrollToTable();
+        }
+    };
+
+    const handleNextPage = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1);
+            scrollToTable();
+        }
+    };
+
+    return (
+        <section className="w-full pb-12 product-table-section">
+            <div className="max-w-[88rem] mx-auto px-4 md:px-12">
+                <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mb-4">
+                    Official Product List Under BIS CRS Registration
+                </h2>
+
+                <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-8">
+                    The following table lists products that require BIS CRS registration
+                    in India along with their applicable Indian Standard (IS) numbers and
+                    implementation dates.
+                </p>
+
+                <div className="relative mb-6">
+                    <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                        <Search className="w-5 h-5 text-gray-400" />
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Search for Products by name or IS number..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
+                    />
+                </div>
+
+                <div className="rounded-md border bg-white shadow-sm">
+                    <Table>
+                        <TableHeader>
+                            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+                                <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
+                                    S.No
+                                </TableHead>
+                                <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
+                                    Product
+                                </TableHead>
+                                <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
+                                    IS No.
+                                </TableHead>
+                                <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
+                                    Date of Implementation
+                                </TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {currentProducts.map((item) => (
+                                <TableRow key={item.id}>
+                                    <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.id}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.product}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.isNumber}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left">
+                                        {item.date}
+                                    </TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </div>
+                {totalPages > 1 && (
+                    <div className="flex justify-center items-center mt-6">
+                        <div className="flex items-center">
+                            <button
+                                onClick={handlePrevPage}
+                                disabled={currentPage === 1}
+                                className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                            >
+                                Previous
+                            </button>
+                            <span className="px-4 py-2 font-geist text-sm">
+                                Page {currentPage} of {totalPages}
+                            </span>
+                            <button
+                                onClick={handleNextPage}
+                                disabled={currentPage === totalPages}
+                                className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                            >
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                )}
+            </div>
+        </section>
+    );
+};
+
+
 
 const CRSRegistrationMainContentLeft = () => {
     return (
@@ -432,8 +1227,21 @@ const CRSRegistrationMainContentLeft = () => {
                 <CRSRegistrationMainContentLeftRegistrationSection />
 
 
+                {/* Divider */}
+                <div className="crs-divider" />
 
+                {/* Fees Section */}
+                <CRSRegistrationMainContentLeftFeesSection />
 
+                {/* Divider */}
+                <div className="crs-divider" />
+
+                {/* E-Labelling  */}
+                <CRSRegistrationMainContentLeftELabellingSection />
+
+                {/* Divider */}
+                <div className="crs-divider" />
+                <AboutAuthor />
             </div>
         </div>
     )
@@ -582,7 +1390,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
                     "Avoid penalties for non-compliance.",
                     "Prepare production schedules (considering lab testing time).",
                     "Facilitate easier customs processing.",
-                    "Earn the Indian customer's long-term brand trust.",
+                    "Earn the Indian customer&apos;s long-term brand trust.",
                 ]}
             />
         </div>
@@ -923,7 +1731,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
             </p>
 
             <p className="crs-paragraph">
-                BIS CRS Process, We&apos;re calling it Certification and Registration System (CRS) for now, and here's how the journey for BIS Certification unfolds.
+                BIS CRS Process, We&apos;re calling it Certification and Registration System (CRS) for now, and here&apos;s how the journey for BIS Certification unfolds.
             </p>
 
             <div className="crs-heading-three">
@@ -1010,23 +1818,361 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
 
             <PointsListWithoutHeading
                 points={[
-                    "Your product label must contain or have e-labelling of the  certificate's details.",
+                    "Your product label must contain or have e-labelling of the  certificate&apos;s details.",
                 ]}
             />
 
 
+            <div className="crs-heading-three">
+                Step 6: Labeling and Distribution
+            </div>
 
 
+            <PointsListWithoutHeading
+                points={[
+                    "BIS certified products must carry:",
+                    "BIS CRS logo  ",
+                    "IS code that relates to the product",
+                    "BIS registration number",
+                    "The registration number and BIS logo must be printed or digitally embedded according to the BIS regulations.",
+                ]}
+            />
 
 
+            <h3 className="crs-heading-three">
+                Approximate Timeline
+            </h3>
+
+            {/* Timeline Table */}
+            <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
+                <div className="rounded-md border bg-white shadow-sm min-w-full">
+                    <Table>
+                        <TableHeader>
+                            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+                                <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
+                                    Activity
+                                </TableHead>
+                                <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
+                                    Estimated Time
+                                </TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Product Testing
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    7-10 working days
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Document Collection
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    2-3 days
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Application Submission
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    1 day
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    BIS Review + Query Resolution
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    10-15 working days
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Final Certificate Issue
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    2-4 working days
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    TOTAL
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full font-semibold">
+                                    ~4 weeks
+                                </TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </div>
+            </div>
+
+        </div>
+    )
+}
 
 
+const CRSRegistrationMainContentLeftFeesSection = () => {
+    return (
+        <div id="fees" className="flex flex-col scroll-mt-20">
+            {/* Fees */}
+            <div className="flex w-full items-center gap-3">
+                <span className="crs-index-heading">
+                    Registration Fees
+                </span>
+                <Separator className="crs-separator" />
+            </div>
 
+            <h2 className="crs-heading-two">
+                BIS CRS Registration Fees, Validity & Renewal Guidelines
+            </h2>
+
+            <p className="crs-paragraph">
+                Getting a BIS certificate under the CRS, the applicant is required to pay the government charges as well as the payment for the product to be tested. Even though the process is online and the interface is streamlined, many applicants face delays on their requests and rejections due to underpayment and applications misfiled.
+            </p>
+
+            <h3 className="crs-heading-three">
+                Fee Structure for CRS Registration
+            </h3>
+
+            {/* Fee Structure Table */}
+            <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
+                <div className="rounded-md border bg-white shadow-sm min-w-full">
+                    <Table>
+                        <TableHeader>
+                            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+                                <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
+                                    Fee Type
+                                </TableHead>
+                                <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
+                                    Amount
+                                </TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Government Fee
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    ₹53,000 + 18% GST per test report
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Testing Charges
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    ₹10,000 – ₹20,000 + 18% GST (varies by product/lab)
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Additional Report in Same App
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    ₹20,000 + 18% GST per report
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Renewal Fee
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    ₹53,000 + 18% GST
+                                </TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </div>
+            </div>
+
+            <p className="crs-paragraph italic text-center">
+                <em>Prices subject to update — confirm on the BIS portal or with your consultant.</em>
+            </p>
+
+            <h3 className="crs-heading-three">
+                CRS Certificate Validity & Renewal
+            </h3>
+
+            {/* Certificate Validity & Renewal Table */}
+            <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
+                <div className="rounded-md border bg-white shadow-sm min-w-full">
+                    <Table>
+                        <TableHeader>
+                            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+                                <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
+                                    Parameter
+                                </TableHead>
+                                <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
+                                    Details
+                                </TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Initial Validity
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    2 Years
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Renewal Duration
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    Upto 5 Years (if no product changes)
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Renewal Process
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    Online, based on new affidavit + renewal fee
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Re-testing Required?
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    Not unless product specs/IS standard changes
+                                </TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </div>
+            </div>
 
 
         </div>
     )
 }
+
+
+const CRSRegistrationMainContentLeftELabellingSection = () => {
+    return (
+        <div id="elabelling" className="flex flex-col scroll-mt-20">
+            {/* E-Labelling */}
+            <div className="flex w-full items-center gap-3">
+                <span className="crs-index-heading">E-Labelling</span>
+                <Separator className="crs-separator" />
+            </div>
+
+            <div className="crs-heading-two">
+                E-Labelling Guidelines for CRS Certified Products
+            </div>
+
+            <div className="crs-heading-three">
+                What is E-Labelling?
+            </div>
+
+            <p className="crs-paragraph">
+                E-labelling is the practice of showing regulatory information within a device electronically instead of printing and affixing it to the device. Under the Compulsory Registration Scheme (CRS) of BIS, specified products, especially compact or digital devices, are able to display the BIS certificate details, standard mark and IS code through the software interface or digital packaging.
+            </p>
+
+            <div className="crs-heading-three">
+                BIS Guidelines on E-Labelling: Electronic E-Labelling (BIS CMD 3/8:1/6975. dated 03/12/2015)
+            </div>
+
+            <h3 className="crs-heading-three">
+                Requirements for E-Labelling:
+            </h3>
+
+            {/* E-Labelling Requirements Table */}
+            <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
+                <div className="rounded-md border bg-white shadow-sm min-w-full">
+                    <Table>
+                        <TableHeader>
+                            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+                                <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
+                                    Rule
+                                </TableHead>
+                                <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
+                                    Description
+                                </TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Physical Label on Packaging
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    Product box or external packaging must display the BIS CRS logo and registration details.
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Removable Labels for Bulk Packaging
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    If products are shipped in bulk, a removable adhesive label on the outer package is acceptable.
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    No Tools Needed for Access
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    Users must be able to access the e-label info without needing tools or accessories (e.g., SIM card removal not allowed).
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Secure Programming
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    E-label info must be embedded in firmware/software, locked from modification by any third party.
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Menu-Based Access
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    Users must access the info in no more than 4 steps through the device&apos;s menu interface.
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
+                                    Instructions Required
+                                </TableCell>
+                                <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
+                                    Instructions on how to access e-label details must be provided.
+                                </TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </div>
+            </div>
+
+
+            <p className="crs-paragraph">
+                How Sun Certifications India Can Help You with BIS Registration under CRS Scheme
+            </p>
+
+            <div className="crs-heading-three">
+                Why Choose a BIS Consultant?
+            </div>
+
+
+            <p className="crs-paragraph">
+                The entire BIS CRS registration is very technical and exhaustive with regard to rules and the volume of documentation. In the absence of a thorough understanding of the Indian Standards, recent QCOs, the structure of the test report, and the workflows in the portal interface, applicants stand to lose substantially in terms of the subsequent actions of delays, rejection, or long-standing active non-compliance. This is where Sun Certifications India comes in with a reputable and reliable associate to assist the applicant in every detail of the compulsory certification scheme.
+            </p>
+
+        </div>
+
+    )
+}
+
 
 const PointsListWithoutHeading = ({
     points,
