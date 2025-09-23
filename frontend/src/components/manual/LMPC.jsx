@@ -12,7 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import ServiceContentRight from "@/components/manual/CDSCOContentRight";
+import ServiceContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
 import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";

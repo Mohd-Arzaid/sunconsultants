@@ -31,7 +31,7 @@ import Videos from "./pages/Videos";
 // Service pages - direct imports
 import CDSCO from "./pages/CDSCO";
 import SchemeX from "./pages/SchemeX";
-import CRSRegistration from "./pages/CRSRegistration";
+import CRSRegistration from "./pages/CRSRegistration/CRSRegistration";
 import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
 import WPC from "./pages/WPC";
@@ -96,6 +96,7 @@ import Transformers from "./schemeXProducts/Transformers";
 import MachineTools from "./schemeXProducts/MachineTools";
 import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts";
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery";
+import CRSRegistrationJapanese from "./pages/CRSRegistration/CRSRegistrationJapanese";
 
 
 function App() {
@@ -172,10 +173,20 @@ function App() {
             path="epr-certificate-for-battery-waste-management-bwm"
             element={<BatteryWaste />}
           />
+
+
+          {/* English */}
           <Route
             path="what-is-crs-bis-or-crs-registration"
             element={<CRSRegistration />}
           />
+
+          {/* Japanese */}
+          <Route
+            path="xyz"
+            element={<CRSRegistrationJapanese />}
+          />
+
 
 
 

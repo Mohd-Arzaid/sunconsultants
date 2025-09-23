@@ -22,6 +22,7 @@ i18n
       "nl", // Dutch
       "th", // Thai
       "vi", // Vietnamese
+   // "ar", // arabic
     ],
     detection: {
       order: ["path"],

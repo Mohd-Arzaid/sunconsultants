@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 import CDSCOContentLeft from "./CDSCOContentLeft";
-import CDSCOContentRight from "./CDSCOContentRight";
+import CDSCOContentRight from "./ServicesRightSideContent/CDSCOContentRight";
 // import { BoxReveal } from "../magicui/box-reveal";
 
 const CDSCOContent = () => {

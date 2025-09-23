@@ -23,7 +23,7 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import Footer from "@/common/Footer";
 import AboutAuthor from "@/components/common/AboutAuthor";
 import { Helmet } from "react-helmet-async";
-import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
+import CDSCOContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
 
 const RotaryElectricalMachines = () => {
   return (
@@ -528,11 +528,10 @@ const RotaryElectricalMachinesMainContentRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
                 ? "bg-green-50 text-green-700 border border-green-200"
                 : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+              }`}
           >
             {submitStatus.message}
           </div>

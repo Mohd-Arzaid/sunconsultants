@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/accordion";
 
 import ServiceContactForm from "@/common/ServiceContactForm";
-import CDSCOContentRight from "@/components/manual/CDSCOContentRight";
+import CDSCOContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
 import Services from "../components/manual/Services";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";

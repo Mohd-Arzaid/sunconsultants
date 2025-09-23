@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import ServiCBContentRight from "@/components/manual/CDSCOContentRight";
+import ServiCBContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
 import { Check, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
@@ -302,8 +302,8 @@ const CBIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                    ? "bg-blue-50 text-blue-900 font-semibold"
-                    : "text-blue-950 hover:bg-blue-50"
+                  ? "bg-blue-50 text-blue-900 font-semibold"
+                  : "text-blue-950 hover:bg-blue-50"
                   }`}
               >
                 <div className="font-geist tracking-wider uppercase">
@@ -322,14 +322,14 @@ const CBIndex = () => {
             key={item}
             onClick={() => handleItemClick(item)}
             className={`relative cursor-pointer group ${item === activeSection
-                ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
-                : ""
+              ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-900"
+              : ""
               }`}
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                  ? "text-blue-900"
-                  : "text-blue-950 group-hover:text-blue-900"
+                ? "text-blue-900"
+                : "text-blue-950 group-hover:text-blue-900"
                 }`}
             >
               {item}

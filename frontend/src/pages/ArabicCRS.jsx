@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CISProductTable } from "./CRSRegistration";
+import { CISProductTable } from "./CRSRegistration/CRSRegistration";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import {
     Breadcrumb,

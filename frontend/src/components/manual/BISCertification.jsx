@@ -17,7 +17,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import ServiceContentRight from "@/components/manual/CDSCOContentRight";
+import ServiceContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
 import { Check, Search, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
 import ScrollToTopButton from "../common/ScrollToTop";

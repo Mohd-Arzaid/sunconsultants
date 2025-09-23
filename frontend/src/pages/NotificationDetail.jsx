@@ -26,7 +26,7 @@ import {
 
 // Custom Components
 import Footer from "@/common/Footer";
-import { LatestBlog } from "@/components/manual/CDSCOContentRight";
+import { LatestBlog } from "@/components/manual/ServicesRightSideContent/CDSCOContentRight.jsx";
 import { Services } from "@/components/manual/Services";
 import AboutAuthor from "@/components/common/AboutAuthor";
 

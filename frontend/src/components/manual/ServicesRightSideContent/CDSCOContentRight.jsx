@@ -24,8 +24,8 @@ import {
   Lightbulb,
   BarChart,
 } from "lucide-react";
-import { Button } from "../ui/button";
-import { Badge } from "../ui/badge";
+import { Button } from "../../ui/button";
+import { Badge } from "../../ui/badge";
 import { useState } from "react";
 import axios from "axios";
 // import { toast } from "sonner";
