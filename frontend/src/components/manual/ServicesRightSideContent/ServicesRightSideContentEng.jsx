@@ -33,7 +33,7 @@ const ServicesRightSideContentEng = () => {
 
     const showComponentsPaths = [
         "/what-is-crs-bis-or-crs-registration",
-        // "/ja/crs-bis-toha-nani-ka-crs-toroku"
+        "/ja/crs-bis-toha-nani-ka-crs-toroku"
     ]
 
     // Check if current path should show these components
