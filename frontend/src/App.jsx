@@ -183,15 +183,9 @@ function App() {
 
           {/* Japanese */}
           <Route
-            path="xyz"
+            path="/ja/crs-bis-toha-nani-ka-crs-toroku"
             element={<CRSRegistrationJapanese />}
           />
-
-
-
-
-
-
 
 
           <Route

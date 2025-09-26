@@ -33,6 +33,7 @@ const ServicesRightSideContentEng = () => {
 
     const showComponentsPaths = [
         "/what-is-crs-bis-or-crs-registration",
+        // "/ja/crs-bis-toha-nani-ka-crs-toroku"
     ]
 
     // Check if current path should show these components
@@ -511,6 +512,8 @@ const ContactFormServicesRightSideContentEng = () => {
         const path = window.location.pathname;
         if (path.includes("/what-is-crs-bis-or-crs-registration"))
             return "CRS Registration";
+        if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
+            return "CRS Registration Japanese";
     };
 
     const [formData, setFormData] = useState({
