@@ -149,6 +149,7 @@ import SchemeXGerman from "./pages/SchemeX/SchemeXGerman";
 import SchemeXSpanish from "./pages/SchemeX/SchemeXSpanish";
 import SchemeXFrench from "./pages/SchemeX/SchemeXFrench";
 import SchemeXIndonesian from "./pages/SchemeX/SchemeXIndonesian";
+import SchemeXVietnamese from "./pages/SchemeX/SchemeXVietnamese";
 
 
 function App() {
@@ -227,6 +228,10 @@ function App() {
           />
 
           {/* Scheme X Vietnamese Page */}
+          <Route
+            path="/vi/chung-nhan-bis-an-do-theo-scheme-x"
+            element={<SchemeXVietnamese />}
+          />
 
 
           <Route
