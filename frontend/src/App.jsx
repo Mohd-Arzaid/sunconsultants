@@ -150,6 +150,7 @@ import SchemeXSpanish from "./pages/SchemeX/SchemeXSpanish";
 import SchemeXFrench from "./pages/SchemeX/SchemeXFrench";
 import SchemeXIndonesian from "./pages/SchemeX/SchemeXIndonesian";
 import SchemeXVietnamese from "./pages/SchemeX/SchemeXVietnamese";
+import IndonesiaBlog from "./blogs/IndonesiaBlog";
 
 
 function App() {
@@ -317,6 +318,11 @@ function App() {
           <Route path="bis-certificate-for-refined-zinc" element={<RefinedZincBlog />} />
           <Route path="bis-license-for-bunk-beds-Indian-bis" element={<BunkBedsBlog />} />
           <Route path="bis-license-for-storage-units-Indian-bis" element={<StorageUnitsBlog />} />
+          <Route
+            path="bis-certification-in-indonesia"
+            element={<IndonesiaBlog />}
+          />
+
 
 
 

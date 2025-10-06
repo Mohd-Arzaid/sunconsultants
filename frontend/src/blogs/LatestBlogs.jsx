@@ -65,6 +65,13 @@ const blogs = [
         title: "BIS Certification for Storage Units under IS 17634:",
         description: "BIS Certification under IS 17634:2022 ensures safe, durable, and quality storage units with the trusted BIS Mark in India.",
         slug: "bis-license-for-storage-units-Indian-bis"
+    },
+    {
+        id: 5,
+        color: "#f7b186",
+        title: "BIS Certification in Indonesia",
+        description: "In today’s global economy, international trade is no longer just about finding buyers and setting up supply chains. It is increasingly about compliance",
+        slug: "bis-certification-in-indonesia"
     }
 ];
 
