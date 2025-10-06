@@ -1092,7 +1092,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                                    to="/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Pumpen zur Flüssigkeitshandhabung, Flüssigkeitshebevorrichtungen und
@@ -1110,7 +1110,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-compressors"
+                                    to="/bis-schema-x-zertifizierung-fuer-kompressoren"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Kompressoren und(oder) ihre Baugruppen /Unterbaugruppen
@@ -1128,7 +1128,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-heat-treatment-equipment"
+                                    to="/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Maschinen zur Behandlung von Material durch einen Prozess
@@ -1147,7 +1147,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+                                    to="/bis-schema-x-zertifizierung-fuer-zentrifugen-und-maschinen-zur-filtration-oder-reinigung"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Zentrifugen, Filter- oder Reinigungsmaschinen für
@@ -1166,7 +1166,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-packing-machinery"
+                                    to="/bis-schema-x-zertifizierung-fuer-verpackungsmaschinen"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Maschinen zum Füllen, Verschließen, Versiegeln, Etikettieren
@@ -1184,7 +1184,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-cranes"
+                                    to="/bis-schema-x-zertifizierung-fuer-kranen"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Kranen und (oder) ihre Baugruppen
@@ -1202,7 +1202,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-construction-machinery"
+                                    to="/bis-schema-x-zertifizierung-fuer-baugerate"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Maschinen für Bau, Erdarbeiten, Bergbau und
@@ -1220,7 +1220,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-weaving-machines-looms"
+                                    to="/bis-schema-x-zertifizierung-fuer-webmaschinen"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Webmaschinen (Webstühlen) und (oder) ihre
@@ -1237,7 +1237,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-embroidery-machinery"
+                                    to="/bis-schema-x-zertifizierung-fuer-stickmaschinen"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Maschinen zur Stickereiherstellung und(oder) ihre
@@ -1254,7 +1254,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+                                    to="/bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Metallschneidewerkzeugmaschinen, die unter die
@@ -1272,7 +1272,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-machine-tools"
+                                    to="/bis-schema-x-zertifizierung-fuer-werkzeugmaschinen"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Werkzeugmaschinen zur Bearbeitung von Stein, Keramik,
@@ -1290,7 +1290,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+                                    to="/bis-schema-x-zertifizierung-fuer-kautschuk-und-kunststoffmaschinen"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Maschinen zur Bearbeitung von Gummi und Kunststoff und(oder)
@@ -1307,7 +1307,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+                                    to="/bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Maschinen einschließlich der Maschinen für öffentliche Arbeiten &
@@ -1326,7 +1326,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+                                    to="/bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Zahnrädern und Getrieben, Zahnrädern, Kettenrädern,
@@ -1345,7 +1345,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-rotary-electrical-machines"
+                                    to="/bis-schema-x-zertifizierung-fuer-rotierende-elektrische-maschinen"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von rotierenden elektrischen Maschinen wie Generator usw.
@@ -1362,7 +1362,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-diesel-generators"
+                                    to="/bis-schema-x-zertifizierung-fuer-dieselgeneratoren"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Dieselgeneratoren und (oder) ihre Baugruppen
@@ -1379,7 +1379,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-transformers"
+                                    to="/bis-schema-x-zertifizierung-fuer-transformatoren"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Transformatoren und (oder) ihre Baugruppen
@@ -1397,7 +1397,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-power-semiconductor-converters"
+                                    to="/bis-schema-x-zertifizierung-fuer-leistungshalbleiter-wandler"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Leistungshalbleiterumrichtern und (oder) ihre
@@ -1414,7 +1414,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+                                    to="/bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-bis-1000-volt"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Schaltanlagen und Steuergeräten, die bei
@@ -1432,7 +1432,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 <Link
-                                    to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+                                    to="/bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-ueber-1000-volt"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
                                     Alle Arten von Schaltanlagen und Steuergeräten, die bei
