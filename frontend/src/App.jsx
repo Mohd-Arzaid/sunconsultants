@@ -147,6 +147,7 @@ import CRSRegistrationJapanese from "./pages/CRSRegistration/CRSRegistrationJapa
 import SchemeXJapanese from "./pages/SchemeX/SchemeXJapanese";
 import SchemeXGerman from "./pages/SchemeX/SchemeXGerman";
 import SchemeXSpanish from "./pages/SchemeX/SchemeXSpanish";
+import SchemeXFrench from "./pages/SchemeX/SchemeXFrench";
 
 
 function App() {
@@ -211,6 +212,13 @@ function App() {
             path="/es/certificacion-bis-india-bajo-esquema-x"
             element={<SchemeXSpanish />}
           />
+
+          {/* Scheme X France Page */}
+          <Route
+            path="/fr/certification-bis-indienne-selon-schema-x"
+            element={<SchemeXFrench />}
+          />
+
 
           <Route
             path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
