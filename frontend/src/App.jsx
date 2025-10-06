@@ -98,6 +98,7 @@ import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachi
 import CRSRegistrationJapanese from "./pages/CRSRegistration/CRSRegistrationJapanese";
 import SchemeXJapanese from "./pages/SchemeX/SchemeXJapanese";
 import SchemeXGerman from "./pages/SchemeX/SchemeXGerman";
+import SchemeXSpanish from "./pages/SchemeX/SchemeXSpanish";
 
 
 function App() {
@@ -155,6 +156,12 @@ function App() {
           <Route
             path="/de/indische-bis-zertifizierung-nach-schema-x"
             element={<SchemeXGerman />}
+          />
+
+          {/* Scheme X Spanish Page */}
+          <Route
+            path="/es/certificacion-bis-india-bajo-esquema-x"
+            element={<SchemeXSpanish />}
           />
 
           <Route
