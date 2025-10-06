@@ -148,6 +148,7 @@ import SchemeXJapanese from "./pages/SchemeX/SchemeXJapanese";
 import SchemeXGerman from "./pages/SchemeX/SchemeXGerman";
 import SchemeXSpanish from "./pages/SchemeX/SchemeXSpanish";
 import SchemeXFrench from "./pages/SchemeX/SchemeXFrench";
+import SchemeXIndonesian from "./pages/SchemeX/SchemeXIndonesian";
 
 
 function App() {
@@ -218,6 +219,14 @@ function App() {
             path="/fr/certification-bis-indienne-selon-schema-x"
             element={<SchemeXFrench />}
           />
+
+          {/* Scheme X Indonesian Page */}
+          <Route
+            path="/id/sertifikasi-bis-india-di-bawah-skema-x"
+            element={<SchemeXIndonesian />}
+          />
+
+          {/* Scheme X Vietnamese Page */}
 
 
           <Route
