@@ -97,6 +97,7 @@ import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/S
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery";
 import CRSRegistrationJapanese from "./pages/CRSRegistration/CRSRegistrationJapanese";
 import SchemeXJapanese from "./pages/SchemeX/SchemeXJapanese";
+import SchemeXGerman from "./pages/SchemeX/SchemeXGerman";
 
 
 function App() {
@@ -150,6 +151,11 @@ function App() {
             element={<SchemeXJapanese />}
           />
 
+          {/* Scheme X German Page */}
+          <Route
+            path="/de/indische-bis-zertifizierung-nach-schema-x"
+            element={<SchemeXGerman />}
+          />
 
           <Route
             path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"

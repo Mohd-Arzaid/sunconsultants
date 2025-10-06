@@ -2,31 +2,31 @@ import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const FooterEng = () => {
+const FooterIndonesian = () => {
   return (
     <footer>
       <div className="relative ">
         <div className="w-full max-w-[768px] px-4 pb-12  pt-8 md:pt-16 md:pb-16 mx-auto">
           <h3 className="text-center font-geist text-3xl md:text-[48px] text-[#181818] leading-tight md:leading-[48px] font-semibold">
-            Want to know more?
+            Ingin tahu lebih banyak?
           </h3>
 
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
-            Email us at{" "}
+            Kirim email kepada kami di{" "}
             <a
               href="mailto:admin@bis-certifications.com"
               className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
             >
               admin@bis-certifications.com
             </a>{" "}
-            or use one of the options below. We usually get back within 24
-            hours.
+            atau gunakan salah satu opsi di bawah ini. Kami biasanya membalas
+            dalam 24 jam.
           </div>
 
           <div className="flex items-center my-6 md:my-[30px]">
             <div className="h-px w-full bg-neutral-300  grow"></div>
             <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
-              or
+              atau
             </span>
             <div className="h-px w-full bg-neutral-300 grow"></div>
           </div>
@@ -37,7 +37,7 @@ const FooterEng = () => {
                 href="https://wa.me/918010505057"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Contact us on WhatsApp"
+                aria-label="Hubungi kami melalui WhatsApp"
               >
                 <svg
                   stroke="currentColor"
@@ -57,7 +57,7 @@ const FooterEng = () => {
               <a
                 href="tel:+918010505057"
                 rel="noreferrer noopener"
-                aria-label="Call us at +91 80105 05057"
+                aria-label="Hubungi kami di +91 80105 05057"
               >
                 <svg
                   stroke="currentColor"
@@ -71,14 +71,14 @@ const FooterEng = () => {
                 >
                   <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM19 12h2c0-4.9-4-8.9-9-8.9v2c3.9 0 7 3.1 7 6.9zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"></path>
                 </svg>
-                <span className="sr-only">Call</span>
+                <span className="sr-only">Telepon</span>
               </a>
 
               <a
                 href="https://www.linkedin.com/company/sun-consultants-engineers/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit our LinkedIn page"
+                aria-label="Kunjungi halaman LinkedIn kami"
               >
                 <svg
                   stroke="currentColor"
@@ -116,17 +116,17 @@ const FooterEng = () => {
                 />
                 <Link to="/" className="text-center">
                   <div className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
-                    Sun Certifications India
+                    Sertifikasi Sun India
                   </div>
                   <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
-                    Simplifying Certifications
+                    Menyederhanakan Sertifikasi
                   </p>
                 </Link>
               </div>
 
               <div className="flex flex-col gap-[15px]">
                 <div className="text-neutral-900 text-base md:text-lg  font-geist font-medium">
-                  Subscribe to our newsletter
+                  Berlangganan newsletter kami
                 </div>
 
                 <div className="relative">
@@ -139,10 +139,10 @@ const FooterEng = () => {
                     pr-24 
                     border border-[#7eafd9]
                     "
-                    placeholder="enter your email"
+                    placeholder="masukkan email Anda"
                   />
                   <button className="flex items-center justify-center h-7 px-2 py-1.5 gap-x-1 text-[13px] md:text-[15px] whitespace-nowrap font-medium font-geist border rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 absolute right-1 top-1 border-none bg-white">
-                    <div className="text-[#2a5075]">Notify me</div>
+                    <div className="text-[#2a5075]">Beri tahu saya</div>
                   </button>
                 </div>
               </div>
@@ -151,12 +151,12 @@ const FooterEng = () => {
             <div className="grid grid-cols-2 md:flex md:gap-[50px] gap-6 ">
               <div className="flex   w-full md:w-[240px] flex-col gap-[15px]">
                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                  Address
+                  Alamat
                 </span>
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    ITL Twin Tower, Netaji Subhash Place , Pitampura Delhi -
+                    Menara Kembar ITL, Netaji Subhash Place, Pitampura Delhi -
                     110034
                   </span>
                 </div>
@@ -164,7 +164,7 @@ const FooterEng = () => {
 
               <div className="flex flex-col gap-[15px]">
                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                  Our Services
+                  Layanan Kami
                 </span>
 
                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -172,62 +172,62 @@ const FooterEng = () => {
                     to="/information-about-tec-certificate-mtcte"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    TEC
+                    SERTIFIKAT TEC
                   </Link>
                   <Link
                     to="/a-guide-to-bis-certification-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    ISI MARK
+                    SERTIFIKASI BIS
                   </Link>
                   <Link
                     to="/ce-certification"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    CE CERTIFICATION
+                    PENANDAAN CE
                   </Link>
                   <Link
                     to="/a-guide-on-how-to-obtain-epr-certificate"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    EPR
+                    SERTIFIKAT EPR
                   </Link>
                   <Link
                     to="/restriction-of-hazardous-substance-rohs-certificate"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    ROHS
+                    KESESUAIAN ROHS
                   </Link>
 
                   <Link
                     to="/information-about-wpc-certificate-eta-approval"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    WPC
+                    PERSETUJUAN WPC
                   </Link>
                 </div>
               </div>
 
               <div className="flex flex-col gap-[15px]">
                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                  Company
+                  Perusahaan
                 </span>
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
                     to="/about"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    About
+                    Tentang Kami
                   </Link>
                   <Link
                     to="/contact"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Contact Us
+                    Hubungi Kami
                   </Link>
 
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    FAQ's
+                    FAQ
                   </span>
                   <Link
                     to="/sitemap"
@@ -238,14 +238,14 @@ const FooterEng = () => {
                       }, 100);
                     }}
                   >
-                    Sitemap
+                    Peta Situs
                   </Link>
                 </div>
               </div>
 
               <div className="flex flex-col gap-[15px]">
                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                  News & Notifications
+                  Berita & Pemberitahuan
                 </span>
 
                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -253,31 +253,31 @@ const FooterEng = () => {
                     to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Blogs
+                    Blog
                   </Link>
                   <Link
                     to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Latest Updates
+                    Pembaruan Terbaru
                   </Link>
                   <Link
                     to="/ministry-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Ministry Updates
+                    Pembaruan Kementerian
                   </Link>
                   <Link
                     to="/webinar"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Webinar Updates
+                    Pembaruan Webinar
                   </Link>
                   <Link
                     to="/international-audits"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    Gallery
+                    Galeri
                   </Link>
                 </div>
               </div>
@@ -292,17 +292,17 @@ const FooterEng = () => {
                 href="https://www.linkedin.com/company/sun-certifications-india/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit our GitHub profile"
+                aria-label="Kunjungi profil GitHub kami"
               >
                 <LinkedInLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
                 <span className="sr-only">linkedin</span>
               </a>
 
               <a
-                href="mailto:admin@bis-certifications.com?body=Hello"
+                href="mailto:admin@bis-certifications.com?body=Halo"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Send us an email"
+                aria-label="Kirim email kepada kami"
               >
                 <MailPlus className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
                 <span className="sr-only">Email</span>
@@ -312,7 +312,7 @@ const FooterEng = () => {
                 href="https://www.instagram.com/suncertificationsindia"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow us on Instagram"
+                aria-label="Ikuti kami di Instagram"
               >
                 <InstagramLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
                 <span className="sr-only">Instagram</span>
@@ -321,7 +321,7 @@ const FooterEng = () => {
 
             <button className="flex items-center justify-center h-9 px-4 py-2 gap-x-1 rounded-full border border-[#7eafd9] bg-gray-50 hover:bg-[#E3EFF4] transition-all duration-200">
               <span className="text-[13px] md:text-[15px] text-[#2a5075] font-geist leading-[20px] font-medium">
-                English (US)
+                Indonesia (ID)
               </span>
               <svg
                 stroke="currentColor"
@@ -339,7 +339,7 @@ const FooterEng = () => {
             </button>
 
             <span className="text-[#2a5075] font-geist text-[13px] md:text-base text-center">
-              Copyright © 2025 Sun Certifications India. All Rights Reserved.
+              Copyright © 2025 Sun Certifications India. Semua hak dilindungi.
             </span>
 
             <div className="md:hidden flex items-center gap-2">
@@ -347,14 +347,14 @@ const FooterEng = () => {
                 to="/privacy-policy"
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
-                Privacy Policy
+                Kebijakan Privasi
               </Link>
               <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
               <Link
                 to="/terms-and-conditions"
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
-                Terms of Service
+                Syarat Layanan
               </Link>
             </div>
 
@@ -364,7 +364,7 @@ const FooterEng = () => {
               to="/privacy-policy"
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
-              Privacy Policy
+              Kebijakan Privasi
             </Link>
 
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
@@ -373,7 +373,7 @@ const FooterEng = () => {
               to="/terms-and-conditions"
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
-              Terms of Service
+              Syarat Layanan
             </Link>
           </div>
         </div>
@@ -382,4 +382,4 @@ const FooterEng = () => {
   );
 };
 
-export default FooterEng;
+export default FooterIndonesian;
