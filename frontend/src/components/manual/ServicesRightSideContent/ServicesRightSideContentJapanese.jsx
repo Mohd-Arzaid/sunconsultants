@@ -29,7 +29,10 @@ const ServicesRightSideContentJapanese = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const showComponentsPaths = ["/what-is-crs-bis-or-crs-registration"];
+  const showComponentsPaths = [
+    "/what-is-crs-bis-or-crs-registration",
+    "/ja/indo-no-bis-nintei-sukimu-x",
+  ];
 
   // Check if current path should show these components
   const shouldShowComponents = showComponentsPaths.includes(currentPath);
@@ -551,6 +554,7 @@ const ContactFormServicesRightSideContentJapanese = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration")) return "CRS登録";
+    if (path.includes("/ja/indo-no-bis-nintei-sukimu-x")) return "Scheme X Japanese";
   };
 
   const [formData, setFormData] = useState({

@@ -33,7 +33,8 @@ const ServicesRightSideContentEng = () => {
 
     const showComponentsPaths = [
         "/what-is-crs-bis-or-crs-registration",
-        "/ja/crs-bis-toha-nani-ka-crs-toroku"
+        "/ja/crs-bis-toha-nani-ka-crs-toroku",
+        "/indian-bis-certification-under-scheme-x",
     ]
 
     // Check if current path should show these components
@@ -514,6 +515,8 @@ const ContactFormServicesRightSideContentEng = () => {
             return "CRS Registration";
         if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
             return "CRS Registration Japanese";
+        if (path.includes("/indian-bis-certification-under-scheme-x"))
+            return "Scheme X";
     };
 
     const [formData, setFormData] = useState({

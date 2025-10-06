@@ -4,27 +4,27 @@
 @tailwind utilities;
 
 
-.crs-heading-two {
+.service-left-content-heading-two {
   @apply text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0
 }
 
-.crs-heading-three {
+.service-left-content-heading-three {
   @apply mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]
 }
 
-.crs-paragraph {
+.service-left-content-paragraph {
   @apply mt-[16px] md:mt-[18px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose
 }
 
-.crs-separator {
+.service-left-content-separator {
   @apply w-[94.46px] h-[1.5px] bg-gray-700
 }
 
-.crs-index-heading {
+.service-left-content-index-heading {
   @apply uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700
 }
 
-.crs-divider {
+.service-left-content-divider {
   @apply h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent
 }
 

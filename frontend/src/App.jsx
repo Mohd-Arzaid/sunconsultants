@@ -30,7 +30,7 @@ import Videos from "./pages/Videos";
 
 // Service pages - direct imports
 import CDSCO from "./pages/CDSCO";
-import SchemeX from "./pages/SchemeX";
+import SchemeX from "./pages/SchemeX/SchemeX";
 import CRSRegistration from "./pages/CRSRegistration/CRSRegistration";
 import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
@@ -88,7 +88,6 @@ import EmbroideryMachines from "./schemeXProducts/EmbroideryMachines";
 import GearsGearingsandTransmission from "./schemeXProducts/GearsGearingsandTransmission";
 import DieselGenerator from "./schemeXProducts/DieselGenerator";
 import SwitchgearandControlgearEquipment from "./schemeXProducts/SwitchgearandControlgearEquipment";
-
 import RotaryElectricalMachines from "./schemeXProducts/RotaryElectricalMachines";
 import PublicWorksAndMechanical from "./schemeXProducts/PublicWorksAndMechanical";
 import PowerSemiconductors from "./schemeXProducts/PowerSemiconductors";
@@ -97,6 +96,7 @@ import MachineTools from "./schemeXProducts/MachineTools";
 import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts";
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery";
 import CRSRegistrationJapanese from "./pages/CRSRegistration/CRSRegistrationJapanese";
+import SchemeXJapanese from "./pages/SchemeX/SchemeXJapanese";
 
 
 function App() {
@@ -137,10 +137,20 @@ function App() {
 
           {/* Services Pages */}
           <Route path="cdsco-registration-certification" element={<CDSCO />} />
+
+          {/* Scheme X Eng Page */}
           <Route
-            path="indian-bis-certification-under-scheme-x"
+            path="/indian-bis-certification-under-scheme-x"
             element={<SchemeX />}
           />
+
+          {/* Scheme X Japanese Page */}
+          <Route
+            path="/ja/indo-no-bis-nintei-sukimu-x"
+            element={<SchemeXJapanese />}
+          />
+
+
           <Route
             path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
             element={<BISFM />}
@@ -186,7 +196,6 @@ function App() {
             path="/ja/crs-bis-toha-nani-ka-crs-toroku"
             element={<CRSRegistrationJapanese />}
           />
-
 
           <Route
             path="information-about-peso-certification-peso-license-india"

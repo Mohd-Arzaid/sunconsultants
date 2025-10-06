@@ -1028,17 +1028,17 @@ const CRSRegistrationJapaneseMainContentLeft = () => {
         <div className="flex-1">
             <div className="flex flex-col gap-[20px] md:gap-[40px]">
                 <div className="flex flex-col gap-2">
-                    <h2 className="crs-heading-two">BIS登録とは何ですか？</h2>
+                    <h2 className="service-left-content-heading-two">BIS登録とは何ですか？</h2>
 
-                    <p className="crs-paragraph">
+                    <p className="service-left-content-paragraph">
                         インド標準局（BIS）は、インドの国家標準化機関であり、インド政府の消費者問題・食料・公共配給省の下で活動しています。BISは、関連するインド規格（IS）に従って、インドの様々な製品とサービスの品質、安全性、性能基準を維持する責任があります。
                     </p>
 
-                    <p className="crs-paragraph">
+                    <p className="service-left-content-paragraph">
                         BISは、インドにおける様々なスキームの監督と実施を担当しています。強制登録スキーム（CRS）は、様々なカテゴリーの電子機器およびIT製品をカバーするBISの非常に重要な必須認証スキームです。
                     </p>
 
-                    <p className="crs-paragraph">
+                    <p className="service-left-content-paragraph">
                         インド製品の性能と安全性は、インドにとって重要な問題です。BIS CRS認証は、電子機器およびIT製品がインド規格に準拠していることを保証し、消費者を非準拠および粗悪な製品から保護するのに役立ちます。
                     </p>
                 </div>
@@ -1047,37 +1047,37 @@ const CRSRegistrationJapaneseMainContentLeft = () => {
                 <CRSRegistrationJapaneseMainContentLeftOverviewSection />
 
                 {/* Divider */}
-                <div className="crs-divider" />
+                <div className="service-left-content-divider" />
 
                 {/* Eligibility Section */}
                 <CRSRegistrationJapaneseMainContentLeftEligibilitySection />
 
                 {/* Divider */}
-                <div className="crs-divider" />
+                <div className="service-left-content-divider" />
 
                 {/* Documents Section */}
                 <CRSRegistrationJapaneseMainContentLeftDocumentsSection />
 
                 {/* Divider */}
-                <div className="crs-divider" />
+                <div className="service-left-content-divider" />
 
                 {/* Registration Section */}
                 <CRSRegistrationJapaneseMainContentLeftRegistrationSection />
 
                 {/* Divider */}
-                <div className="crs-divider" />
+                <div className="service-left-content-divider" />
 
                 {/* Fees Section */}
                 <CRSRegistrationJapaneseMainContentLeftFeesSection />
 
                 {/* Divider */}
-                <div className="crs-divider" />
+                <div className="service-left-content-divider" />
 
                 {/* E-Labelling  */}
                 <CRSRegistrationJapaneseMainContentLeftELabellingSection />
 
                 {/* Divider */}
-                <div className="crs-divider" />
+                <div className="service-left-content-divider" />
 
                 <ServiceAuthorJapanese />
             </div>
@@ -1092,26 +1092,26 @@ const CRSRegistrationJapaneseMainContentLeftELabellingSection = () => {
         <div id="elabelling" className="flex flex-col scroll-mt-20">
             {/* E-Labelling */}
             <div className="flex w-full items-center gap-3">
-                <span className="crs-index-heading">E-ラベリング</span>
-                <Separator className="crs-separator" />
+                <span className="service-left-content-index-heading">E-ラベリング</span>
+                <Separator className="service-left-content-separator" />
             </div>
 
-            <div className="crs-heading-two">
+            <div className="service-left-content-heading-two">
                 CRS認証製品のE-ラベリングガイドライン
             </div>
 
-            <div className="crs-heading-three">E-ラベリングとは何ですか？</div>
+            <div className="service-left-content-heading-three">E-ラベリングとは何ですか？</div>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 E-ラベリングは、デバイスに印刷して貼り付ける代わりに、デバイス内で規制情報を電子的に表示する慣行です。BISの強制登録スキーム（CRS）の下では、指定された製品、特にコンパクトまたはデジタルデバイスは、ソフトウェアインターフェースまたはデジタルパッケージングを通じてBIS証明書の詳細、標準マーク、ISコードを表示することができます。
             </p>
 
-            <div className="crs-heading-three">
+            <div className="service-left-content-heading-three">
                 E-ラベリングに関するBISガイドライン：電子E-ラベリング（BIS CMD
                 3/8:1/6975. 2015年12月3日付）
             </div>
 
-            <h3 className="crs-heading-three">E-ラベリングの要件：</h3>
+            <h3 className="service-left-content-heading-three">E-ラベリングの要件：</h3>
 
             {/* E-Labelling Requirements Table */}
             <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1181,13 +1181,13 @@ const CRSRegistrationJapaneseMainContentLeftELabellingSection = () => {
                 </div>
             </div>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 Sun Certifications IndiaがCRSスキームの下でBIS登録をどのように支援できるか
             </p>
 
-            <div className="crs-heading-three">なぜBISコンサルタントを選ぶのか？</div>
+            <div className="service-left-content-heading-three">なぜBISコンサルタントを選ぶのか？</div>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 全体のBIS CRS登録は、ルールと文書の量に関して非常に技術的で包括的です。インド規格、最近のQCO、テストレポートの構造、ポータルインターフェースのワークフローに対する徹底的な理解がない場合、申請者は遅延、却下、または長期間の積極的な非準拠という後続の行動において大幅に損失を被る可能性があります。ここでSun Certifications Indiaが信頼できる信頼できるパートナーとして、強制認証スキームのあらゆる詳細で申請者を支援します。
             </p>
         </div>
@@ -1199,19 +1199,19 @@ const CRSRegistrationJapaneseMainContentLeftFeesSection = () => {
         <div id="fees" className="flex flex-col scroll-mt-20">
             {/* Fees */}
             <div className="flex w-full items-center gap-3">
-                <span className="crs-index-heading">登録料金</span>
-                <Separator className="crs-separator" />
+                <span className="service-left-content-index-heading">登録料金</span>
+                <Separator className="service-left-content-separator" />
             </div>
 
-            <h2 className="crs-heading-two">
+            <h2 className="service-left-content-heading-two">
                 BIS CRS登録料金、有効性および更新ガイドライン
             </h2>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 CRSの下でBIS証明書を取得するには、申請者は政府料金とテスト対象製品の支払いを行う必要があります。プロセスがオンラインでインターフェースが合理化されているにもかかわらず、多くの申請者は支払い不足や申請の誤提出により、リクエストの遅延や却下に直面しています。
             </p>
 
-            <h3 className="crs-heading-three">CRS登録の料金体系</h3>
+            <h3 className="service-left-content-heading-three">CRS登録の料金体系</h3>
 
             {/* Fee Structure Table */}
             <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1265,13 +1265,13 @@ const CRSRegistrationJapaneseMainContentLeftFeesSection = () => {
                 </div>
             </div>
 
-            <p className="crs-paragraph italic text-center">
+            <p className="service-left-content-paragraph italic text-center">
                 <em>
                     価格は更新される可能性があります — BISポータルまたはコンサルタントで確認してください。
                 </em>
             </p>
 
-            <h3 className="crs-heading-three">CRS証明書の有効性と更新</h3>
+            <h3 className="service-left-content-heading-three">CRS証明書の有効性と更新</h3>
 
             {/* Certificate Validity & Renewal Table */}
             <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1333,21 +1333,21 @@ const CRSRegistrationJapaneseMainContentLeftRegistrationSection = () => {
         <div id="registration" className="flex flex-col scroll-mt-20">
             {/* Registration */}
             <div className="flex w-full items-center gap-3">
-                <span className="crs-index-heading">登録プロセス</span>
-                <Separator className="crs-separator" />
+                <span className="service-left-content-index-heading">登録プロセス</span>
+                <Separator className="service-left-content-separator" />
             </div>
 
-            <h2 className="crs-heading-two">BIS CRS登録プロセス</h2>
+            <h2 className="service-left-content-heading-two">BIS CRS登録プロセス</h2>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 BIS CRS登録は、BIS登録ポータルを通じた完全オンラインプロセスです。文書のアップロードを含む手順だけではありません。技術的な性質の特別な注意、規制の理解、およびインド規格（IS）への完全な準拠も必要です。
             </p>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 BIS CRSプロセス、現在は認証・登録システム（CRS）と呼んでいますが、BIS認証の旅がどのように展開するかを以下に示します。
             </p>
 
-            <div className="crs-heading-three">
+            <div className="service-left-content-heading-three">
                 ステップ1：BIS認可ラボでの製品テスト
             </div>
 
@@ -1359,7 +1359,7 @@ const CRSRegistrationJapaneseMainContentLeftRegistrationSection = () => {
                 ]}
             />
 
-            <div className="crs-heading-three">ステップ2：文書準備</div>
+            <div className="service-left-content-heading-three">ステップ2：文書準備</div>
 
             <PointsListWithoutHeading
                 points={[
@@ -1369,7 +1369,7 @@ const CRSRegistrationJapaneseMainContentLeftRegistrationSection = () => {
                 ]}
             />
 
-            <div className="crs-heading-three">
+            <div className="service-left-content-heading-three">
                 ステップ3：オンライン申請の記入
             </div>
 
@@ -1381,7 +1381,7 @@ const CRSRegistrationJapaneseMainContentLeftRegistrationSection = () => {
                 ]}
             />
 
-            <div className="crs-heading-three">
+            <div className="service-left-content-heading-three">
                 ステップ4：BISによる申請の審査
             </div>
 
@@ -1393,11 +1393,11 @@ const CRSRegistrationJapaneseMainContentLeftRegistrationSection = () => {
                 ]}
             />
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 照会クエリの場合、30日以内に回答する必要があり、そうでなければ申請はアーカイブファイルに送られ、つまり却下されます。
             </p>
 
-            <div className="crs-heading-three">ステップ5：BIS登録の付与</div>
+            <div className="service-left-content-heading-three">ステップ5：BIS登録の付与</div>
 
             <PointsListWithoutHeading
                 points={[
@@ -1405,7 +1405,7 @@ const CRSRegistrationJapaneseMainContentLeftRegistrationSection = () => {
                 ]}
             />
 
-            <p className="crs-paragraph">証明書には以下が含まれます：</p>
+            <p className="service-left-content-paragraph">証明書には以下が含まれます：</p>
 
             <PointsListWithoutHeading
                 points={[
@@ -1422,7 +1422,7 @@ const CRSRegistrationJapaneseMainContentLeftRegistrationSection = () => {
                 ]}
             />
 
-            <div className="crs-heading-three">ステップ6：ラベリングと流通</div>
+            <div className="service-left-content-heading-three">ステップ6：ラベリングと流通</div>
 
             <PointsListWithoutHeading
                 points={[
@@ -1434,7 +1434,7 @@ const CRSRegistrationJapaneseMainContentLeftRegistrationSection = () => {
                 ]}
             />
 
-            <h3 className="crs-heading-three">概算タイムライン</h3>
+            <h3 className="service-left-content-heading-three">概算タイムライン</h3>
 
             {/* Timeline Table */}
             <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1512,27 +1512,27 @@ const CRSRegistrationJapaneseMainContentLeftDocumentsSection = () => {
         <div id="documents" className="flex flex-col scroll-mt-20">
             {/* Documents */}
             <div className="flex w-full items-center gap-3">
-                <span className="crs-index-heading">文書</span>
-                <Separator className="crs-separator" />
+                <span className="service-left-content-index-heading">文書</span>
+                <Separator className="service-left-content-separator" />
             </div>
 
-            <h2 className="crs-heading-two">
+            <h2 className="service-left-content-heading-two">
                 BIS CRS登録に必要な文書
             </h2>
 
-            <div className="crs-heading-three">
+            <div className="service-left-content-heading-three">
                 BIS CRS登録を取得するために必要な文書のリスト。
             </div>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 BIS CRS登録申請の記入は完全にデジタルですが、承認を得るためには完全に完成した文書が必要です。文書タイプ、不適切な形式、間違ったファイルタイプなどのあらゆる側面に従わない細かなミスや失敗は、申請が却下されたり遅延したりする原因となる可能性があります。
             </p>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 BIS文書の適切で迅速な処理のためには、各ステップで適切な文書を手元に持つことが必要です。適切な文書を準備しておくことで、BIS証明書が時間通りに処理され、コンプライアンス監査、税関検査、またはマーケットプレイス承認から法的にクリアな状態を保つことができます。
             </p>
 
-            <div className="crs-heading-three">
+            <div className="service-left-content-heading-three">
                 BIS CRS登録の文書チェックリスト
             </div>
 
@@ -1677,23 +1677,23 @@ const CRSRegistrationJapaneseMainContentLeftEligibilitySection = () => {
         <div id="eligibility" className="flex flex-col scroll-mt-20">
             {/* Eligibility */}
             <div className="flex w-full items-center gap-3">
-                <span className="crs-index-heading">資格</span>
-                <Separator className="crs-separator" />
+                <span className="service-left-content-index-heading">資格</span>
+                <Separator className="service-left-content-separator" />
             </div>
 
-            <h2 className="crs-heading-two">
+            <h2 className="service-left-content-heading-two">
                 BIS CRS登録の資格基準
             </h2>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 CRSの下でBIS認証を申請できるのは誰ですか？
             </p>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 インドでは、強制登録スキーム（CRS）の下でのBIS証明書は、インド標準局が定めた要件を満たす製造業者のみに付与されます。これにより、真正な製造業者のみが登録し、製品にBIS CRSロゴを貼付する特権を得ることが保証されます。
             </p>
 
-            <div className="crs-heading-three">資格基準チェックリスト</div>
+            <div className="service-left-content-heading-three">資格基準チェックリスト</div>
 
             {/* Eligibility Requirements Table */}
             <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1763,15 +1763,15 @@ const CRSRegistrationJapaneseMainContentLeftEligibilitySection = () => {
                 </div>
             </div>
 
-            <h2 className="crs-heading-three">
+            <h2 className="service-left-content-heading-three">
                 認可インド代表者（AIR）とは誰ですか？
             </h2>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 外国の製造業者にとって、インドでのコミュニケーションと代表のための認可インド代表者（AIR）を任命することは義務の一つです。
             </p>
 
-            <div className="crs-heading-three">AIRの責任：</div>
+            <div className="service-left-content-heading-three">AIRの責任：</div>
 
             <PointsListWithoutHeading
                 points={[
@@ -1782,13 +1782,13 @@ const CRSRegistrationJapaneseMainContentLeftEligibilitySection = () => {
                 ]}
             />
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 合意の一部として、AIRは両当事者からの署名入り合意書とインド住所の証明を提出する必要があります。
             </p>
 
-            <div className="crs-heading-three">実際のシナリオ：</div>
+            <div className="service-left-content-heading-three">実際のシナリオ：</div>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 会社ABCはインドで新しいモデルのパワーバンクを導入する計画です。
             </p>
 
@@ -1801,7 +1801,7 @@ const CRSRegistrationJapaneseMainContentLeftEligibilitySection = () => {
                 ]}
             />
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 結果として、CRSの下でBIS証明書が発行されます。
             </p>
         </div>
@@ -1813,27 +1813,27 @@ const CRSRegistrationJapaneseMainContentLeftOverviewSection = () => {
         <div id="overview" className="flex flex-col scroll-mt-20">
             {/* Overview */}
             <div className="flex w-full items-center gap-3">
-                <span className="crs-index-heading">概要</span>
-                <Separator className="crs-separator" />
+                <span className="service-left-content-index-heading">概要</span>
+                <Separator className="service-left-content-separator" />
             </div>
 
-            <h2 className="crs-heading-two">
+            <h2 className="service-left-content-heading-two">
                 強制登録スキーム（CRS）とは何ですか？
             </h2>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 強制登録スキーム（CRS）は、2012年に開始されたBIS製品登録スキームで、主に電子製品に焦点を当てていました。年月が経つにつれて、より多くの製品がリリースされるにつれて、CRSは家電製品、太陽光設備、バッテリーなどを含むより幅広い製品カテゴリーを含むように拡張されました。CRS登録は、各省庁が発行する品質管理令（QCO）で指定された製品に必須です。
             </p>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 強制CRSスキームに該当する製品は、BISへの登録を取得した後にのみ、インドで販売、輸入、または流通させることができます。
             </p>
 
-            <h3 className="crs-heading-three">
+            <h3 className="service-left-content-heading-three">
                 インドにおけるCRS認証の歴史
             </h3>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 2012年、CRSスキームの下で最初のQCOがリリースされ、電子機器およびIT機器に焦点を当てました。それ以来、以下のセクターで追加のQCOが発行されています：
             </p>
 
@@ -1848,11 +1848,11 @@ const CRSRegistrationJapaneseMainContentLeftOverviewSection = () => {
                 ]}
             />
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 CRS認証のリストは急速に拡大しているため、製造業者が積極的で最新の更新情報を把握することが非常に重要です。
             </p>
 
-            <h2 className="crs-heading-three">
+            <h2 className="service-left-content-heading-three">
                 CRS登録 vs ISIマーク：違いは何ですか？
             </h2>
 
@@ -1934,11 +1934,11 @@ const CRSRegistrationJapaneseMainContentLeftOverviewSection = () => {
                 </div>
             </div>
 
-            <h3 className="crs-heading-three">
+            <h3 className="service-left-content-heading-three">
                 BIS CRSフレームワークを知る必要がある理由
             </h3>
 
-            <p className="crs-paragraph">
+            <p className="service-left-content-paragraph">
                 インドの生産者、またはインド市場に参入しようとしている外国企業の場合、BIS CRSのステップを知ることは必須です。これにより以下が可能になります：
             </p>
 

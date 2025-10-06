@@ -1620,9 +1620,9 @@ const CRSRegistrationMainContentLeft = () => {
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
-          <h2 className="crs-heading-two">What is BIS Registration?</h2>
+          <h2 className="service-left-content-heading-two">What is BIS Registration?</h2>
 
-          <p className="crs-paragraph">
+          <p className="service-left-content-paragraph">
             The Bureau of Indian Standards (BIS) is the national standardization
             body in India and works under the Ministry of Consumer Affairs, Food
             and Public Distribution Government of India. BIS is responsible for
@@ -1631,14 +1631,14 @@ const CRSRegistrationMainContentLeft = () => {
             Standards (IS).
           </p>
 
-          <p className="crs-paragraph">
+          <p className="service-left-content-paragraph">
             BIS is responsible for supervising and implementing various schemes
             in India. The Compulsory Registration Scheme (CRS) is a very
             prominent and mandatory certification scheme of BIS covering various
             categories of electronic and IT products.
           </p>
 
-          <p className="crs-paragraph">
+          <p className="service-left-content-paragraph">
             The performance and safety of Indian products is an important issue
             for India. BIS CRS Certification guarantees that electronics and IT
             products are compliant with Indian standards, and helps safeguard
@@ -1650,37 +1650,37 @@ const CRSRegistrationMainContentLeft = () => {
         <CRSRegistrationMainContentLeftOverviewSection />
 
         {/* Divider */}
-        <div className="crs-divider" />
+        <div className="service-left-content-divider" />
 
         {/* Eligibility Section */}
         <CRSRegistrationMainContentLeftEligibilitySection />
 
         {/* Divider */}
-        <div className="crs-divider" />
+        <div className="service-left-content-divider" />
 
         {/* Documents Section */}
         <CRSRegistrationMainContentLeftDocumentsSection />
 
         {/* Divider */}
-        <div className="crs-divider" />
+        <div className="service-left-content-divider" />
 
         {/* Registration Section */}
         <CRSRegistrationMainContentLeftRegistrationSection />
 
         {/* Divider */}
-        <div className="crs-divider" />
+        <div className="service-left-content-divider" />
 
         {/* Fees Section */}
         <CRSRegistrationMainContentLeftFeesSection />
 
         {/* Divider */}
-        <div className="crs-divider" />
+        <div className="service-left-content-divider" />
 
         {/* E-Labelling  */}
         <CRSRegistrationMainContentLeftELabellingSection />
 
         {/* Divider */}
-        <div className="crs-divider" />
+        <div className="service-left-content-divider" />
         <ServiceAuthorEng />
       </div>
     </div>
@@ -1694,15 +1694,15 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
     <div id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
-        <span className="crs-index-heading">Overview</span>
-        <Separator className="crs-separator" />
+        <span className="service-left-content-index-heading">Overview</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="crs-heading-two">
+      <h2 className="service-left-content-heading-two">
         What is a Compulsory Registration Scheme (CRS)?
       </h2>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         The Compulsory Registration Scheme (CRS) is a BIS product registration
         scheme that was launched in 2012 and was primarily focused on electronic
         products. Over the years, as more products have been released CRS has
@@ -1712,17 +1712,17 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         under Quality Control Orders (QCOs) issued by different ministries.
       </p>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         Any product that falls under the mandatory CRS scheme has to be sold,
         imported, or distributed in India only after obtaining registration with
         BIS.
       </p>
 
-      <h3 className="crs-heading-three">
+      <h3 className="service-left-content-heading-three">
         History of CRS Certification in India
       </h3>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         In 2012, the first QCO under the CRS scheme was released and focused on
         electronic and IT equipment. Since then, additional QCOs have been
         issued in the following sectors:
@@ -1739,12 +1739,12 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         The list for CRS Certification is rapidly expanding, so it is very
         important for manufacturers to be proactive and aware of recent updates.
       </p>
 
-      <h2 className="crs-heading-three">
+      <h2 className="service-left-content-heading-three">
         CRS Registration vs ISI Mark: What&apos;s the Difference?
       </h2>
 
@@ -1826,11 +1826,11 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         </div>
       </div>
 
-      <h3 className="crs-heading-three">
+      <h3 className="service-left-content-heading-three">
         Why You Need to Know the BIS CRS Framework
       </h3>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         If you are a producer in India, or a foreign company trying to enter the
         Indian market, knowing the BIS CRS steps is a must. It helps you to:
       </p>
@@ -1852,19 +1852,19 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
     <div id="eligibility" className="flex flex-col scroll-mt-20">
       {/* Eligibility */}
       <div className="flex w-full items-center gap-3">
-        <span className="crs-index-heading">Eligibility</span>
-        <Separator className="crs-separator" />
+        <span className="service-left-content-index-heading">Eligibility</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="crs-heading-two">
+      <h2 className="service-left-content-heading-two">
         Eligibility Criteria for BIS CRS Registration
       </h2>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         Who Can Apply for BIS Certification Under CRS?
       </p>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         In India, a BIS certificate under the Compulsory Registration Scheme
         (CRS) can only be granted to manufacturers who meet the requirements set
         out by the Bureau of Indian Standards. This is to ensure only authentic
@@ -1872,7 +1872,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         affix the BIS CRS logo on their products.
       </p>
 
-      <div className="crs-heading-three">Eligibility Criteria Checklist</div>
+      <div className="service-left-content-heading-three">Eligibility Criteria Checklist</div>
 
       {/* Eligibility Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1947,17 +1947,17 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="crs-heading-three">
+      <h2 className="service-left-content-heading-three">
         Who is an Authorized Indian Representative (AIR)?
       </h2>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         For foreign manufacturers, one of the obligations is to appoint an
         Authorized Indian Representative (AIR) for communication and
         representation in India.
       </p>
 
-      <div className="crs-heading-three">Responsibilities of the AIR:</div>
+      <div className="service-left-content-heading-three">Responsibilities of the AIR:</div>
 
       <PointsListWithoutHeading
         points={[
@@ -1968,14 +1968,14 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         ]}
       />
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         As part of the agreement, the AIR must submit a signed agreement from
         both sides along with a proof of Indian address.
       </p>
 
-      <div className="crs-heading-three">Real life Scenario:</div>
+      <div className="service-left-content-heading-three">Real life Scenario:</div>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         Company ABC is planning to introduce a new model of a power bank in
         India.
       </p>
@@ -1989,7 +1989,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         ]}
       />
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         The outcome is a BIS certificate is issued under CRS.
       </p>
     </div>
@@ -2001,19 +2001,19 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
     <div id="documents" className="flex flex-col scroll-mt-20">
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
-        <span className="crs-index-heading">Documents</span>
-        <Separator className="crs-separator" />
+        <span className="service-left-content-index-heading">Documents</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="crs-heading-two">
+      <h2 className="service-left-content-heading-two">
         Documents Required for BIS CRS Registration
       </h2>
 
-      <div className="crs-heading-three">
+      <div className="service-left-content-heading-three">
         List of documents required to obtain BIS CRS registration.
       </div>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         Filling out the BIS CRS application for registration is entirely
         digital, however, it still requires fully completed documents to obtain
         approval. Every minute mistake and a failure to adhere to any aspect,
@@ -2021,7 +2021,7 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
         cause the application to get rejected or delayed.
       </p>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         For proper and faster processing of the BIS documents, it is necessary
         to have the proper documents with you each step of the way. Having the
         proper documents ready ensures that your bis certificate gets processed
@@ -2029,7 +2029,7 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
         inspections, or marketplace approvals.
       </p>
 
-      <div className="crs-heading-three">
+      <div className="service-left-content-heading-three">
         Documents Checklist for BIS CRS Registration
       </div>
 
@@ -2174,13 +2174,13 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
     <div id="registration" className="flex flex-col scroll-mt-20">
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
-        <span className="crs-index-heading">Registration Process</span>
-        <Separator className="crs-separator" />
+        <span className="service-left-content-index-heading">Registration Process</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="crs-heading-two">BIS CRS Registration Process</h2>
+      <h2 className="service-left-content-heading-two">BIS CRS Registration Process</h2>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         BIS CRS Registration is a totally online process through the BIS
         Registration Portal. It does not solely procedures that include the
         uploading of documents. It also requires special attention of a
@@ -2188,13 +2188,13 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         compliance with the Indian Standard (IS).
       </p>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         BIS CRS Process, We&apos;re calling it Certification and Registration
         System (CRS) for now, and here&apos;s how the journey for BIS
         Certification unfolds.
       </p>
 
-      <div className="crs-heading-three">
+      <div className="service-left-content-heading-three">
         Step 1: Product Testing at BIS Authorized Lab
       </div>
 
@@ -2206,7 +2206,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <div className="crs-heading-three">Step 2: Document Preparation</div>
+      <div className="service-left-content-heading-three">Step 2: Document Preparation</div>
 
       <PointsListWithoutHeading
         points={[
@@ -2216,7 +2216,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <div className="crs-heading-three">
+      <div className="service-left-content-heading-three">
         Step 3: Filling the Online Application
       </div>
 
@@ -2228,7 +2228,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <div className="crs-heading-three">
+      <div className="service-left-content-heading-three">
         Step 4: BIS&apos;s Review of the Application
       </div>
 
@@ -2240,12 +2240,12 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         If it is a clarification query, it must be answered within 30 days, or
         the application goes to archive files, which means rejected.
       </p>
 
-      <div className="crs-heading-three">Step 5: Grant of BIS Registration</div>
+      <div className="service-left-content-heading-three">Step 5: Grant of BIS Registration</div>
 
       <PointsListWithoutHeading
         points={[
@@ -2253,7 +2253,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <p className="crs-paragraph">Your certificate will include:</p>
+      <p className="service-left-content-paragraph">Your certificate will include:</p>
 
       <PointsListWithoutHeading
         points={[
@@ -2270,7 +2270,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <div className="crs-heading-three">Step 6: Labeling and Distribution</div>
+      <div className="service-left-content-heading-three">Step 6: Labeling and Distribution</div>
 
       <PointsListWithoutHeading
         points={[
@@ -2282,7 +2282,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <h3 className="crs-heading-three">Approximate Timeline</h3>
+      <h3 className="service-left-content-heading-three">Approximate Timeline</h3>
 
       {/* Timeline Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2360,15 +2360,15 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
     <div id="fees" className="flex flex-col scroll-mt-20">
       {/* Fees */}
       <div className="flex w-full items-center gap-3">
-        <span className="crs-index-heading">Registration Fees</span>
-        <Separator className="crs-separator" />
+        <span className="service-left-content-index-heading">Registration Fees</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="crs-heading-two">
+      <h2 className="service-left-content-heading-two">
         BIS CRS Registration Fees, Validity & Renewal Guidelines
       </h2>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         Getting a BIS certificate under the CRS, the applicant is required to
         pay the government charges as well as the payment for the product to be
         tested. Even though the process is online and the interface is
@@ -2376,7 +2376,7 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
         rejections due to underpayment and applications misfiled.
       </p>
 
-      <h3 className="crs-heading-three">Fee Structure for CRS Registration</h3>
+      <h3 className="service-left-content-heading-three">Fee Structure for CRS Registration</h3>
 
       {/* Fee Structure Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2430,14 +2430,14 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
         </div>
       </div>
 
-      <p className="crs-paragraph italic text-center">
+      <p className="service-left-content-paragraph italic text-center">
         <em>
           Prices subject to update — confirm on the BIS portal or with your
           consultant.
         </em>
       </p>
 
-      <h3 className="crs-heading-three">CRS Certificate Validity & Renewal</h3>
+      <h3 className="service-left-content-heading-three">CRS Certificate Validity & Renewal</h3>
 
       {/* Certificate Validity & Renewal Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2499,17 +2499,17 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
     <div id="elabelling" className="flex flex-col scroll-mt-20">
       {/* E-Labelling */}
       <div className="flex w-full items-center gap-3">
-        <span className="crs-index-heading">E-Labelling</span>
-        <Separator className="crs-separator" />
+        <span className="service-left-content-index-heading">E-Labelling</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="crs-heading-two">
+      <div className="service-left-content-heading-two">
         E-Labelling Guidelines for CRS Certified Products
       </div>
 
-      <div className="crs-heading-three">What is E-Labelling?</div>
+      <div className="service-left-content-heading-three">What is E-Labelling?</div>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         E-labelling is the practice of showing regulatory information within a
         device electronically instead of printing and affixing it to the device.
         Under the Compulsory Registration Scheme (CRS) of BIS, specified
@@ -2518,12 +2518,12 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         interface or digital packaging.
       </p>
 
-      <div className="crs-heading-three">
+      <div className="service-left-content-heading-three">
         BIS Guidelines on E-Labelling: Electronic E-Labelling (BIS CMD
         3/8:1/6975. dated 03/12/2015)
       </div>
 
-      <h3 className="crs-heading-three">Requirements for E-Labelling:</h3>
+      <h3 className="service-left-content-heading-three">Requirements for E-Labelling:</h3>
 
       {/* E-Labelling Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2599,14 +2599,14 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         </div>
       </div>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         How Sun Certifications India Can Help You with BIS Registration under
         CRS Scheme
       </p>
 
-      <div className="crs-heading-three">Why Choose a BIS Consultant?</div>
+      <div className="service-left-content-heading-three">Why Choose a BIS Consultant?</div>
 
-      <p className="crs-paragraph">
+      <p className="service-left-content-paragraph">
         The entire BIS CRS registration is very technical and exhaustive with
         regard to rules and the volume of documentation. In the absence of a
         thorough understanding of the Indian Standards, recent QCOs, the

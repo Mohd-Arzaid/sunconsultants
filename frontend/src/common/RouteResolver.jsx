@@ -17,7 +17,7 @@ import Videos from "@/pages/Videos";
 
 // Service pages
 import CDSCO from "@/pages/CDSCO";
-import SchemeX from "@/pages/SchemeX";
+import SchemeX from "@/pages/SchemeX/SchemeX";
 import CRSRegistration from "@/pages/CRSRegistration/CRSRegistration";
 import Peso from "@/pages/Peso";
 import Tec from "@/pages/Tec";
