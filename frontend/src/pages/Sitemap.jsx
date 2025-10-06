@@ -127,6 +127,100 @@ const sitemapSections = [
       { name: "BIS Scheme X Certification for Transformers", path: "/bis-scheme-x-certification-for-transformers" },
       { name: "BIS Scheme X Certification for Machine Tools", path: "/bis-scheme-x-certification-for-machine-tools" },
       { name: "BIS Scheme X Certification for Switchgear and Controlgear Equipment above 1000 Volts", path: "/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts" },
+
+      // Multilingual Routes
+      // Pumps and Liquid Elevators - Multilingual
+      { name: "BIS Schema X Zertifizierung für Pumpen und Flüssigkeitsaufzüge (German)", path: "/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege" },
+      { name: "Certificación BIS Esquema X para Bombas y Elevadores de Líquidos (Spanish)", path: "/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos" },
+      { name: "Certification BIS Schéma X pour Pompes et Élévateurs de Liquides (French)", path: "/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides" },
+      { name: "Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan (Indonesian)", path: "/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan" },
+      { name: "Certificazione BIS Schema X per Pompe e Elevatori di Liquidi (Italian)", path: "/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi" },
+      { name: "BIS スキームX ポンプおよび液体エレベーター認証 (Japanese)", path: "/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa" },
+      { name: "BIS 스킴 X 펌프 및 액체 승강기 인증 (Korean)", path: "/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi" },
+      { name: "BIS Schema X Certificering voor Pompen en Vloeistofelevators (Dutch)", path: "/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators" },
+      { name: "การรับรอง BIS แผน X สำหรับปั๊มและลิฟต์น้ำ (Thai)", path: "/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam" },
+      { name: "Chứng nhận BIS Kế hoạch X cho Máy bơm và Thang máy chất lỏng (Vietnamese)", path: "/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long" },
+      { name: "شهادة BIS مخطط X للمضخات ومصاعد السوائل (Arabic)", path: "/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail" },
+
+      // Centrifuges - Multilingual
+      { name: "Certification BIS Schéma X pour Centrifugeuses et Machines de Filtrage (French)", path: "/certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification" },
+      { name: "BIS Schema X Zertifizierung für Zentrifugen und Maschinen zur Filtration (German)", path: "/bis-schema-x-zertifizierung-fuer-zentrifugen-und-maschinen-zur-filtration-oder-reinigung" },
+      { name: "Chứng nhận BIS Scheme X cho Máy ly tâm và Thiết bị lọc hoặc tinh chế (Vietnamese)", path: "/chung-nhan-bis-scheme-x-cho-may-ly-tam-va-thiet-bi-loc-hoac-tinh-che" },
+
+      // Compressors - Multilingual
+      { name: "Certification BIS Schéma X pour Compresseurs (French)", path: "/certification-bis-schema-x-pour-compresseurs" },
+      { name: "BIS Schema X Zertifizierung für Kompressoren (German)", path: "/bis-schema-x-zertifizierung-fuer-kompressoren" },
+      { name: "Chứng nhận BIS Scheme X cho Máy nén khí (Vietnamese)", path: "/chung-nhan-bis-scheme-x-cho-may-nen-khi" },
+
+      // Construction Machinery - Multilingual
+      { name: "Certification BIS Schéma X pour Machines de Construction (French)", path: "/certification-bis-schema-x-pour-machines-de-construction" },
+      { name: "BIS Schema X Zertifizierung für Baugeräte (German)", path: "/bis-schema-x-zertifizierung-fuer-baugerate" },
+      { name: "Chứng nhận BIS Scheme X cho Máy móc xây dựng (Vietnamese)", path: "/chung-nhan-bis-scheme-x-cho-may-moc-xay-dung" },
+
+      // Cranes - Multilingual
+      { name: "Certification BIS Schéma X pour Ponts Roulants (French)", path: "/certification-bis-schema-x-pour-ponts-roulants" },
+      { name: "BIS Schema X Zertifizierung für Kranen (German)", path: "/bis-schema-x-zertifizierung-fuer-kranen" },
+      { name: "Chứng nhận BIS Scheme X cho Cần cẩu (Vietnamese)", path: "/chung-nhan-bis-scheme-x-cho-can-cau" },
+
+      // Diesel Generators - Multilingual
+      { name: "Certification BIS Schéma X pour Générateurs Diesel (French)", path: "/certification-bis-schema-x-pour-generateurs-diesel" },
+      { name: "BIS Schema X Zertifizierung für Dieselgeneratoren (German)", path: "/bis-schema-x-zertifizierung-fuer-dieselgeneratoren" },
+
+      // Embroidery Machinery - Multilingual
+      { name: "Certification BIS Schéma X pour Machines à Broderie (French)", path: "/certification-bis-schema-x-pour-machines-a-broderie" },
+      { name: "BIS Schema X Zertifizierung für Stickmaschinen (German)", path: "/bis-schema-x-zertifizierung-fuer-stickmaschinen" },
+
+      // Gears, Gearing and Transmission Elements - Multilingual
+      { name: "Certification BIS Schéma X pour Roues Dentées et Éléments de Transmission (French)", path: "/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission" },
+      { name: "BIS Schema X Zertifizierung für Zahnräder, Getriebe und Übertragungselemente (German)", path: "/bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente" },
+
+      // Heat Treatment Equipment - Multilingual
+      { name: "Certification BIS Schéma X pour Équipements de Traitement Thermique (French)", path: "/certification-bis-schema-x-pour-equipements-de-traitement-thermique" },
+      { name: "BIS Schema X Zertifizierung für Wärmebehandlungsausrüstung (German)", path: "/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung" },
+
+      // Machine Tools - Multilingual
+      { name: "Certification BIS Schéma X pour Machines à Outils (French)", path: "/certification-bis-schema-x-pour-machines-a-outils" },
+      { name: "BIS Schema X Zertifizierung für Werkzeugmaschinen (German)", path: "/bis-schema-x-zertifizierung-fuer-werkzeugmaschinen" },
+
+      // Metal Cutting Machine Tools - Multilingual
+      { name: "Certification BIS Schéma X pour Outils de Machines de Coupe Métallique (French)", path: "/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique" },
+      { name: "BIS Schema X Zertifizierung für Maschinen für Schneiden von Metall (German)", path: "/bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall" },
+
+      // Packing Machinery - Multilingual
+      { name: "Certification BIS Schéma X pour Machines de Conditionnement (French)", path: "/certification-bis-schema-x-pour-machines-de-conditionnement" },
+      { name: "BIS Schema X Zertifizierung für Verpackungsmaschinen (German)", path: "/bis-schema-x-zertifizierung-fuer-verpackungsmaschinen" },
+
+      // Power Semiconductor Converters - Multilingual
+      { name: "Certification BIS Schéma X pour Convertisseurs Semiconducteurs de Puissance (French)", path: "/certification-bis-schema-x-pour-convertisseurs-semiconducteurs-de-puissance" },
+      { name: "BIS Schema X Zertifizierung für Leistungshalbleiter-Wandler (German)", path: "/bis-schema-x-zertifizierung-fuer-leistungshalbleiter-wandler" },
+
+      // Public Works and Mechanical Appliances - Multilingual
+      { name: "Certification BIS Schéma X pour Travaux Publics et Appareils Mécaniques (French)", path: "/certification-bis-schema-x-pour-travaux-publics-et-appareils-mecaniques" },
+      { name: "BIS Schema X Zertifizierung für Baumaschinen und Mechanische Geräte (German)", path: "/bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete" },
+
+      // Rotary Electrical Machines - Multilingual
+      { name: "Certification BIS Schéma X pour Machines Électriques Rotatives (French)", path: "/certification-bis-schema-x-pour-machines-electriques-rotatives" },
+      { name: "BIS Schema X Zertifizierung für Rotierende Elektrische Maschinen (German)", path: "/bis-schema-x-zertifizierung-fuer-rotierende-elektrische-maschinen" },
+
+      // Rubber and Plastics Machinery - Multilingual
+      { name: "Certification BIS Schéma X pour Machines de Caoutchouc et Plastiques (French)", path: "/certification-bis-schema-x-pour-machines-de-caoutchouc-et-plastiques" },
+      { name: "BIS Schema X Zertifizierung für Kautschuk- und Kunststoffmaschinen (German)", path: "/bis-schema-x-zertifizierung-fuer-kautschuk-und-kunststoffmaschinen" },
+
+      // Switchgear and Controlgear Equipment up to 1000 Volts - Multilingual
+      { name: "Certification BIS Schéma X pour Appareillage et Commande jusqu'à 1000 Volts (French)", path: "/certification-bis-schema-x-pour-appareillage-et-commande-jusqu-a-1000-volts" },
+      { name: "BIS Schema X Zertifizierung für Schalt- und Steuergeräte bis 1000 Volt (German)", path: "/bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-bis-1000-volt" },
+
+      // Switchgear and Controlgear Equipment above 1000 Volts - Multilingual
+      { name: "Certification BIS Schéma X pour Appareillage et Commande au-dessus 1000 Volts (French)", path: "/certification-bis-schema-x-pour-appareillage-et-commande-au-dessus-1000-volts" },
+      { name: "BIS Schema X Zertifizierung für Schalt- und Steuergeräte über 1000 Volt (German)", path: "/bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-ueber-1000-volt" },
+
+      // Transformers - Multilingual
+      { name: "Certification BIS Schéma X pour Transformateurs (French)", path: "/certification-bis-schema-x-pour-transformateurs" },
+      { name: "BIS Schema X Zertifizierung für Transformatoren (German)", path: "/bis-schema-x-zertifizierung-fuer-transformatoren" },
+
+      // Weaving Machines - Multilingual
+      { name: "Certification BIS Schéma X pour Machines à Tisser, Métiers à Tisser (French)", path: "/certification-bis-schema-x-pour-machines-a-tisser-metiers-a-tisser" },
+      { name: "BIS Schema X Zertifizierung für Webmaschinen (German)", path: "/bis-schema-x-zertifizierung-fuer-webmaschinen" },
     ],
   },
 
@@ -137,6 +231,7 @@ const sitemapSections = [
       { name: "BIS Certificate for Tin Ingots under IS 26:2024", path: "/bis-certificate-for-tin-ingots" },
       { name: "BIS Certificate for Refined Zinc under IS 209:2024", path: "/bis-certificate-for-refined-zinc" },
       { name: "BIS License for Bunk Beds under IS 17636:2022", path: "/bis-license-for-bunk-beds-Indian-bis" },
+      { name: "BIS Certification in Indonesia", path: "/bis-certification-in-indonesia" },
     ],
   },
 
