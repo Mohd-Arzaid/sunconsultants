@@ -151,6 +151,7 @@ import SchemeXFrench from "./pages/SchemeX/SchemeXFrench";
 import SchemeXIndonesian from "./pages/SchemeX/SchemeXIndonesian";
 import SchemeXVietnamese from "./pages/SchemeX/SchemeXVietnamese";
 import IndonesiaBlog from "./blogs/IndonesiaBlog";
+import SchemeXItalian from "./pages/SchemeX/SchemeXItalian";
 
 
 function App() {
@@ -233,6 +234,14 @@ function App() {
             path="/vi/chung-nhan-bis-an-do-theo-scheme-x"
             element={<SchemeXVietnamese />}
           />
+
+          {/* Scheme X Italian Page */}
+          <Route
+            path="/it/certificazione-bis-indiana-secondo-schema-x"
+            element={<SchemeXItalian />}
+          />
+
+
 
 
           <Route
