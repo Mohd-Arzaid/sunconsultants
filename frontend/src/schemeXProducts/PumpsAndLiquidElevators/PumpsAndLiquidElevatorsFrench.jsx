@@ -854,7 +854,7 @@ const PumpsAndLiquidElevatorsPageMainContentLeftFrench = () => {
         {/* BIS License for Pumps Image */}
         <div className="flex justify-center mb-6">
           <img
-            src="/schemXproductImages/BISLicenseForPumps.png"
+            src="/schemXproductImages/BIS-Scheme-X-License-For-Pumps.png"
             alt="BIS License for Pumps and Liquid Elevators"
             className="max-w-full h-auto rounded-lg shadow-md"
           />
@@ -1300,11 +1300,10 @@ const PumpsAndLiquidElevatorsPageMainContentRightFrench = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
                 ? "bg-green-50 text-green-700 border border-green-200"
                 : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+              }`}
           >
             {submitStatus.message}
           </div>
