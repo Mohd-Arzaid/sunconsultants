@@ -43,8 +43,8 @@ import LMPC from "../../assets/images/LMPC.jpg";
 import ISIMark from "../../assets/images/ISIMark.jpg";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
 import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
+import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
 
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
@@ -52,17 +52,17 @@ const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const SchemeXIndonesian = () => {
     return (
         <div className="relative">
-            {/* Scheme X Indonesian Meta Tags */}
-            <SchemeXIndonesianMetaTags />
-            {/* Scheme X Indonesian Breadcrumb */}
-            <SchemeXIndonesianBreadcrumb />
-            {/* Scheme X Indonesian Hero Section */}
-            <SchemeXIndonesianHero />
-            {/* Scheme X Indonesian Index Section */}
-            <SchemeXIndonesianIndex />
-            {/* Scheme X Indonesian Main Content Section */}
+            {/* Scheme X Meta Tags */}
+            <SchemeXMetaTags />
+            {/* Scheme X Breadcrumb */}
+            <SchemeXBreadcrumb />
+            {/* Scheme X Hero Section */}
+            <SchemeXHero />
+            {/* Scheme X Index Section */}
+            <SchemeXIndex />
+            {/* Scheme X Main Content Section */}
             <SchemeXMainContent />
-            {/* Footer Indonesian Section */}
+            {/* Footer Section */}
             <FooterIndonesian />
             {/* Scroll To Top Button Section */}
             <ScrollToTopButton />
@@ -73,8 +73,7 @@ const SchemeXIndonesian = () => {
 
 export default SchemeXIndonesian
 
-
-const SchemeXIndonesianMetaTags = () => {
+const SchemeXMetaTags = () => {
     const breadcrumbStructuredData = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -88,7 +87,7 @@ const SchemeXIndonesianMetaTags = () => {
             {
                 "@type": "ListItem",
                 position: 2,
-                name: "Sertifikasi BIS India Berdasarkan Skema-X",
+                name: "Sertifikasi BIS India di bawah Skema-X",
                 item: window.location.href,
             },
         ],
@@ -97,15 +96,15 @@ const SchemeXIndonesianMetaTags = () => {
         <Helmet>
             {/* Basic Meta Tags */}
             <title>
-                Sertifikasi BIS Skema X | Keamanan Mesin & Peralatan Listrik
+                Sertifikasi Skema X BIS | Keselamatan Mesin & Peralatan Listrik
             </title>
             <meta
                 name="description"
-                content="Sertifikasi BIS Skema X diperlukan untuk memastikan kualitas dan keamanan peralatan switchgear tegangan rendah, peralatan kontrol, mesin, dan peralatan listrik."
+                content="Sertifikasi Skema X BIS diperlukan untuk memastikan kualitas dan keselamatan sakelar tegangan rendah, peralatan kontrol, mesin, dan peralatan listrik."
             />
             <meta
                 name="keywords"
-                content="Skema X, BIS Skema X, Sertifikasi BIS Skema X, Sertifikasi Skema X, sertifikasi mesin, sertifikasi peralatan listrik"
+                content="Skema X, Skema X BIS, Sertifikasi Skema X BIS, Sertifikasi Skema X, sertifikasi mesin, sertifikasi peralatan listrik"
             />
 
             <meta name="author" content="Dhruv Aggarwal" />
@@ -119,11 +118,11 @@ const SchemeXIndonesianMetaTags = () => {
             {/* Open Graph Meta Tags */}
             <meta
                 property="og:title"
-                content="Sertifikasi BIS Skema X | Keamanan Mesin & Peralatan Listrik"
+                content="Sertifikasi Skema X BIS | Keselamatan Mesin & Peralatan Listrik"
             />
             <meta
                 property="og:description"
-                content="Sertifikasi BIS Skema X diperlukan untuk memastikan kualitas dan keamanan peralatan switchgear tegangan rendah, peralatan kontrol, mesin, dan peralatan listrik."
+                content="Sertifikasi Skema X BIS diperlukan untuk memastikan kualitas dan keselamatan sakelar tegangan rendah, peralatan kontrol, mesin, dan peralatan listrik."
             />
 
             <meta property="og:type" content="website" />
@@ -132,11 +131,11 @@ const SchemeXIndonesianMetaTags = () => {
             {/* Twitter Meta Tags */}
             <meta
                 name="twitter:title"
-                content="Sertifikasi BIS Skema X | Keamanan Mesin & Peralatan Listrik"
+                content="Sertifikasi Skema X BIS | Keselamatan Mesin & Peralatan Listrik"
             />
             <meta
                 name="twitter:description"
-                content="Sertifikasi BIS Skema X diperlukan untuk memastikan kualitas dan keamanan peralatan switchgear tegangan rendah, peralatan kontrol, mesin, dan peralatan listrik."
+                content="Sertifikasi Skema X BIS diperlukan untuk memastikan kualitas dan keselamatan sakelar tegangan rendah, peralatan kontrol, mesin, dan peralatan listrik."
             />
             <meta name="twitter:card" content="summary_large_image" />
 
@@ -145,10 +144,11 @@ const SchemeXIndonesianMetaTags = () => {
                 {JSON.stringify(breadcrumbStructuredData)}
             </script>
 
+
         </Helmet>
     )
 }
-const SchemeXIndonesianBreadcrumb = () => {
+const SchemeXBreadcrumb = () => {
     return (
         <div className="absolute md:top-5 top-3 left-0 w-full z-30">
             <div className="max-w-[80rem] mx-auto px-4">
@@ -164,7 +164,7 @@ const SchemeXIndonesianBreadcrumb = () => {
                                 <SlashIcon />
                             </BreadcrumbSeparator>
                             <BreadcrumbItem>
-                                <BreadcrumbPage>Sertifikasi BIS India Berdasarkan Skema-X
+                                <BreadcrumbPage>Sertifikasi BIS India di bawah Skema-X
                                 </BreadcrumbPage>
                             </BreadcrumbItem>
                         </BreadcrumbList>
@@ -175,7 +175,7 @@ const SchemeXIndonesianBreadcrumb = () => {
     )
 }
 
-const SchemeXIndonesianHero = () => {
+const SchemeXHero = () => {
     return (
         <main className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
             {/* Background gradient */}
@@ -199,13 +199,13 @@ const SchemeXIndonesianHero = () => {
 
                     <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
                         <span className="relative">
-                            Sertifikasi BIS Skema X
+                            Sertifikasi Skema X BIS
                             <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
                         </span>
                     </h1>
 
                     <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-                        Sertifikasi BIS Skema X mencakup Mesin, Peralatan Listrik, dan Komponen Perakitan, serta Sub-perakitan di bawah Regulasi Teknis Omnibus (OTR).
+                        Sertifikasi Skema X BIS mencakup Mesin, Peralatan Listrik, dan Rakitan Komponen, serta Sub-rakitan di bawah Peraturan Teknis Omnibus (OTR).
                     </p>
 
 
@@ -233,14 +233,14 @@ const SchemeXIndonesianHero = () => {
                 </div>
 
                 {/* Right Side */}
-                <SchemeXIndonesianHeroContactForm />
+                <SchemeXHeroContactForm />
             </div>
 
         </main>
     )
 }
 
-const SchemeXIndonesianHeroContactForm = () => {
+const SchemeXHeroContactForm = () => {
     const [loading, setLoading] = useState(false);
 
     // Function to get page name based on URL
@@ -343,12 +343,12 @@ const SchemeXIndonesianHeroContactForm = () => {
             });
         } catch (error) {
             const errorMessage =
-                error.response?.data?.message || "Something went wrong";
+                error.response?.data?.message || "Ada yang salah";
             toast({
                 variant: "destructive",
                 title: errorMessage || "Gagal mengirim detail formulir kontak!",
                 description:
-                    "Terjadi kesalahan. Silakan periksa detail Anda dan coba lagi.",
+                    "Ada yang salah. Silakan periksa detail Anda dan coba lagi.",
             });
         } finally {
             setLoading(false);
@@ -365,7 +365,7 @@ const SchemeXIndonesianHeroContactForm = () => {
             </div>
 
             <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
-                Buat Janji Temu
+                Pesan Janji Temu
             </h3>
 
             <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
@@ -458,7 +458,7 @@ const SchemeXIndonesianHeroContactForm = () => {
                         </div>
                     ) : (
                         <div className="flex gap-3 items-center justify-center">
-                            <span>Buat Janji Temu</span>
+                            <span>Pesan Janji Temu</span>
                         </div>
                     )}
                 </Button>
@@ -468,7 +468,7 @@ const SchemeXIndonesianHeroContactForm = () => {
 };
 
 
-const SchemeXIndonesianIndex = () => {
+const SchemeXIndex = () => {
     const [isSticky, setIsSticky] = useState(false);
     const [activeSection, setActiveSection] = useState("overview");
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -487,7 +487,7 @@ const SchemeXIndonesianIndex = () => {
     );
 
     const MENU_ITEMS = {
-        overview: "Ikhtisar",
+        overview: "Gambaran Umum",
         process: "Proses",
         documents: "Dokumen",
         conclusion: "Kesimpulan",
@@ -586,7 +586,7 @@ const SchemeXIndonesianIndex = () => {
                     ref={toggleButtonRef}
                     onClick={toggleMobileMenu}
                     className="p-2 rounded-md hover:bg-blue-100 transition-colors"
-                    aria-label="Beralih menu"
+                    aria-label="Toggle menu"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -695,7 +695,7 @@ export const Services = () => {
                 <div className="flex flex-col items-center justify-center">
                     <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
                         <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-                            Our Services
+                            Layanan Kami
                         </h2>
                     </BoxReveal>
 
@@ -703,7 +703,7 @@ export const Services = () => {
                         <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
                             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
                             <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                                India's Best Certificate Consultant
+                                Konsultan Sertifikat Terbaik di India
                             </span>
                             <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
                         </div>
@@ -723,7 +723,7 @@ export const Services = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS Mark (ISI License) for Foreign Manufacture
+                            Tanda BIS (Lisensi ISI) untuk Produsen Asing
                         </p>
                     </Link>
 
@@ -739,7 +739,7 @@ export const Services = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            CDSCO Registration Certification
+                            Sertifikasi Registrasi CDSCO
                         </p>
                     </Link>
 
@@ -755,7 +755,7 @@ export const Services = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS (CRS) Registration
+                            Registrasi BIS (CRS)
                         </p>
                     </Link>
 
@@ -771,7 +771,7 @@ export const Services = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            Plastic Waste Management
+                            Pengelolaan Limbah Plastik
                         </p>
                     </Link>
 
@@ -787,7 +787,7 @@ export const Services = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            EPR Certificate certifications
+                            Sertifikasi Sertifikat EPR
                         </p>
                     </Link>
 
@@ -803,7 +803,7 @@ export const Services = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            LMPC Certificate certifications
+                            Sertifikasi Sertifikat LMPC
                         </p>
                     </Link>
 
@@ -819,7 +819,7 @@ export const Services = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            BIS Registration Certificate
+                            Sertifikat Registrasi BIS
                         </p>
                     </Link>
 
@@ -835,7 +835,7 @@ export const Services = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            ISI MARK (BIS) for Indian Manufactures
+                            TANDA ISI (BIS) untuk Produsen India
                         </p>
                     </Link>
                 </div>
@@ -855,11 +855,11 @@ const SchemeXProductTable = () => {
 
                 <div className="flex flex-col gap-2 mt-6">
                     <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
-                        Product wise Safety Standard
+                        Standar Keselamatan Berdasarkan Produk
                     </h2>
 
                     <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-                        Description of Machinery and Electrical Equipment
+                        Deskripsi Mesin dan Peralatan Listrik
                     </p>
                 </div>
 
@@ -870,7 +870,7 @@ const SchemeXProductTable = () => {
                     <input
                         type="text"
                         placeholder={
-                            "Search by description or HS code..."
+                            "Cari berdasarkan deskripsi atau kode HS..."
                         }
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
@@ -893,169 +893,169 @@ const SchemeXProductTable = () => {
 const productDataTableThird = [
     {
         id: 1,
-        description: "All types of Pumps for handling liquids, liquid elevators",
-        hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 and 841392",
+        description: "Semua jenis Pompa untuk menangani cairan, elevator cairan",
+        hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 dan 841392",
         indianStandard: "-",
         title: "-",
     },
     {
         id: 2,
-        description: "All types of compressors",
+        description: "Semua jenis kompresor",
         hsCode:
-            "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 and 84149090",
-        indianStandard: "Clause 16 of IS 17093:2019\nClause 6.6 of IS 12258:1987",
+            "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 dan 84149090",
+        indianStandard: "Klausul 16 dari IS 17093:2019\nKlausul 6.6 dari IS 12258:1987",
         title:
-            "Technical supply conditions for reciprocating air compressors for general purpose and industrial applications\nTechnical supply condition for air screw compressors (Oil Flooded) for general purpose and industrial applications",
+            "Kondisi pasokan teknis untuk kompresor udara bolak-balik untuk aplikasi umum dan industri\nKondisi pasokan teknis untuk kompresor sekrup udara (banjir minyak) untuk aplikasi umum dan industri",
     },
     {
         id: 3,
         description:
-            "All types of machinery for Treatment of material by a process involving a Change of temperature",
+            "Semua jenis mesin untuk Pengolahan bahan dengan proses yang melibatkan Perubahan suhu",
         hsCode:
-            "841932, 841939, 841940, 841950, 841960, 841981, 841989 and 84199090",
+            "841932, 841939, 841940, 841950, 841960, 841981, 841989 dan 84199090",
         indianStandard: "-",
         title: "-",
     },
     {
         id: 4,
-        description: "or purifying machinery for liquid and gas",
-        hsCode: "842122, 842129, 842131, 842139, 842191 and 842199",
+        description: "atau mesin pemurnian untuk cairan dan gas",
+        hsCode: "842122, 842129, 842131, 842139, 842191 dan 842199",
         indianStandard: "-",
         title: "-",
     },
     {
         id: 5,
         description:
-            "All types of machinery for filling, closing, sealing, labelling bottles, packing or wrapping",
-        hsCode: "842220, 842230, 842240 and 842290",
+            "Semua jenis mesin untuk mengisi, menutup, menyegel, memberi label botol, mengemas atau membungkus",
+        hsCode: "842220, 842230, 842240 dan 842290",
         indianStandard: "-",
         title: "-",
     },
     {
         id: 6,
-        description: "All types of cranes",
+        description: "Semua jenis derek",
         hsCode:
-            "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 and 84269990",
+            "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 dan 84269990",
         indianStandard:
-            "Clause 66.1, 66.1.1, 66.1.2, 66.1.3, 66.2, 66.2.1, 66.2.2, 66.3, 66.4, 66.5 and 66.6 of IS 3177:2020\nClause 8.1, 8.2, 8.3 & 45 of IS 4573:2020\nIS/ISO 15442:2012",
+            "Klausul 66.1, 66.1.1, 66.1.2, 66.1.3, 66.2, 66.2.1, 66.2.2, 66.3, 66.4, 66.5 dan 66.6 dari IS 3177:2020\nKlausul 8.1, 8.2, 8.3 & 45 dari IS 4573:2020\nIS/ISO 15442:2012",
         title:
-            "Electric Overhead Travelling Crane and Gantry Crane for all Applications Code of Practice\nPower Driven Mobile Cranes Specification\nCranes - Safety requirements for loader cranes",
+            "Derek Perjalanan Overhead Listrik dan Derek Gantri untuk semua Aplikasi Kode Praktik\nSpesifikasi Derek Bergerak yang Didorong Daya\nDerek - Persyaratan keselamatan untuk derek pemuat",
     },
     {
         id: 7,
-        description: "All types of machinery for construction",
+        description: "Semua jenis mesin untuk konstruksi",
         hsCode: "8429, 843010, 843020, 843031, 843039, 843041",
         indianStandard:
-            "IS 17055 (Part 7): 2020\nIS 17055 (Part 8): 2020\nIS 17055 (Part 12): 2020",
+            "IS 17055 (Bagian 7): 2020\nIS 17055 (Bagian 8): 2020\nIS 17055 (Bagian 12): 2020",
         title:
-            "Earth-Moving Machinery Safety Part 7 Scrapers\nEarth-Moving Machinery Requirements For Graders\nEarth-Moving Machinery Safety Part 12 Road Pavers",
+            "Mesin Penggerak Tanah Keselamatan Bagian 7 Pengikis\nMesin Penggerak Tanah Persyaratan Untuk Grader\nMesin Penggerak Tanah Keselamatan Bagian 12 Pengeruk Jalan",
     },
     {
         id: 8,
-        description: "All types of weaving machines (looms)",
-        hsCode: "8446, 844811, 844819, 844842 and 844849",
-        indianStandard: "IS 17361 (Part 6) : 2020 / ISO 11111 (Part 6) : 2005",
+        description: "Semua jenis mesin tenun (loom)",
+        hsCode: "8446, 844811, 844819, 844842 dan 844849",
+        indianStandard: "IS 17361 (Bagian 6) : 2020 / ISO 11111 (Bagian 6) : 2005",
         title:
-            "Textile Machinery Safety Requirements Part 6 Fabric Manufacturing Machinery",
+            "Persyaratan Keselamatan Mesin Tekstil Bagian 6 Mesin Pembuatan Kain",
     },
     {
         id: 9,
-        description: "All types of machinery for making embroidery.",
-        hsCode: "84479020 and 844859",
-        indianStandard: "IS 17361 (Part 1): 2020 / ISO 11111 (Part 1) : 2016",
-        title: "Textile Machiner Safety Requirements Part 1 Common Requirements",
+        description: "Semua jenis mesin untuk membuat bordir.",
+        hsCode: "84479020 dan 844859",
+        indianStandard: "IS 17361 (Bagian 1): 2020 / ISO 11111 (Bagian 1) : 2016",
+        title: "Persyaratan Keselamatan Mesin Tekstil Bagian 1 Persyaratan Umum",
     },
     {
         id: 10,
-        description: "All types of metal cutting machines",
-        hsCode: "8456, 8457, 8458, 8459, 8460, 8461 and 846693",
+        description: "Semua jenis mesin pemotong logam",
+        hsCode: "8456, 8457, 8458, 8459, 8460, 8461 dan 846693",
         indianStandard:
-            "IS 17277 (Part 1): 2019\nISO 16092-1 : 2017\nIS 17259: 2020\nISO 28881 : 2013\nIS 17258: 2019\nISO 23125 : 2015\nIS 17254:2019\nISO 16093 : 2017\nIS 17253 (Part 1): 2019\nISO 16090-1 : 2017",
+            "IS 17277 (Bagian 1): 2019\nISO 16092-1 : 2017\nIS 17259: 2020\nISO 28881 : 2013\nIS 17258: 2019\nISO 23125 : 2015\nIS 17254:2019\nISO 16093 : 2017\nIS 17253 (Bagian 1): 2019\nISO 16090-1 : 2017",
         title:
-            "Machine Tools Safety Presses Part 1 General Safety Requirements\nMachine Tools Safety Electro-Discharge Machines\nMachine Tools Safety Turning Machines\nMachine Tools Safety Sawing Machines for Cold Metal\nMachine Tools Safety Machining Centres, Milling Machines, Transfer Machines Part 1 Safety Requirements",
+            "Keselamatan Mesin Alat Bagian 1 Persyaratan Keselamatan Umum\nKeselamatan Mesin Alat Mesin Pelepasan Listrik\nKeselamatan Mesin Alat Mesin Pembubutan\nKeselamatan Mesin Alat Mesin Gergaji untuk Logam Dingin\nKeselamatan Mesin Alat Pusat Mesin, Mesin Penggilingan, Mesin Transfer Bagian 1 Persyaratan Keselamatan",
     },
     {
         id: 11,
         description:
-            "All types of machine tools for working stone, ceramics, concrete, asbestos cement or like mineral glass",
-        hsCode: "8464 and 84669100",
+            "Semua jenis alat mesin untuk bekerja batu, keramik, beton, semen asbes atau seperti mineral kaca",
+        hsCode: "8464 dan 84669100",
         indianStandard: "-",
         title: "-",
     },
     {
         id: 12,
-        description: "All types of machinery for working rubber and plastics",
+        description: "Semua jenis mesin untuk bekerja karet dan plastik",
         hsCode: "8477",
         indianStandard: "IS/ISO 20430: 2020",
         title:
-            "Plastics and Rubber Machines-Injection Moulding Machines-Safety Requirements",
+            "Mesin Karet dan Plastik-Mesin Cetak Injeksi-Persyaratan Keselamatan",
     },
     {
         id: 13,
         description:
-            "All types of machines including the machines for public works & Building and the machinery & mechanical appliances having individual functions, not specified",
-        hsCode: "84791000, 84798999 and 84799090",
+            "Semua jenis mesin termasuk mesin untuk pekerjaan umum & Bangunan dan mesin & peralatan mekanik yang memiliki fungsi individu, tidak ditentukan",
+        hsCode: "84791000, 84798999 dan 84799090",
         indianStandard: "-",
         title: "-",
     },
     {
         id: 14,
         description:
-            "All types of gears and gearing, toothed wheels, chain sprocket, transmission elements ball or roller screws, gear boxes and speed changers, including torque converters And (or)their assemblies /sub-assemblies /components",
-        hsCode: "84834000 and 84839000",
+            "Semua jenis roda gigi dan roda gigi, roda bergigi, sproket rantai, elemen transmisi sekrup bola atau rol, kotak gigi dan pengubah kecepatan, termasuk konverter torsi Dan (atau) rakitan /sub-rakitan /komponennya",
+        hsCode: "84834000 dan 84839000",
         indianStandard: "-",
         title: "-",
     },
     {
         id: 15,
         description:
-            "All types of Rotary electrical machines such as Generator, etc. Building and the machinery & mechanical appliances having individual functions, not specified",
-        hsCode: "8501 and 8503",
+            "Semua jenis mesin listrik putar seperti Generator, dll. Bangunan dan mesin & peralatan mekanik yang memiliki fungsi individu, tidak ditentukan",
+        hsCode: "8501 dan 8503",
         indianStandard:
-            "Clause 4.7, 4.8 and 4.12 of section 2,\nclause 7.4 of Section 3, clause 8.6 of Section 4,\nClause 9.4 of section 5 of IS 5422:1996\nClause 11, 21, 22, 23, 25 and 26 of IS 13364\n(Part 1): 1992\nClause 11, 21, 22 23 25 and 26 of IS 13364\n(Part 2): 1992",
+            "Klausul 4.7, 4.8 dan 4.12 dari bagian 2,\nklausul 7.4 dari Bagian 3, klausul 8.6 dari Bagian 4,\nKlausul 9.4 dari bagian 5 dari IS 5422:1996\nKlausul 11, 21, 22, 23, 25 dan 26 dari IS 13364\n(Bagian 1): 1992\nKlausul 11, 21, 22 23 25 dan 26 dari IS 13364\n(Bagian 2): 1992",
         title:
-            "Turbine type generation\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 1\nalternators rated up to 20 kVa\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 2\nalternators rated above 20 kVa and up to 1250 kVa",
+            "Generasi jenis turbin\nGenerator Ac yang digerakkan oleh mesin pembakaran internal bolak-balik - Spesifikasi: Bagian 1\nalternator dengan peringkat hingga 20 kVa\nGenerator Ac yang digerakkan oleh mesin pembakaran internal bolak-balik - Spesifikasi: Bagian 2\nalternator dengan peringkat di atas 20 kVa dan hingga 1250 kVa",
     },
     {
         id: 16,
-        description: "All types of Diesel Generator",
-        hsCode: "8502 and 8503",
+        description: "Semua jenis Generator Diesel",
+        hsCode: "8502 dan 8503",
         indianStandard:
-            "Clause 5,6,7,8, 9 & 10 of IS/ISO 8528 (Part 2) : 2018\nClause 6 & 10 of IS/ISO 8528 (Part 3)\nClause 4, 5.5, 7.3.5, 7.3.7 & 7.4 of IS/ISO 8528 (Part 4): 2005\nClause 12, 13, 14, 15 of IS/ISO 8528-5: 2018\nClause 6.4 of IS/ISO 8528 (Part 8): 2016\nClause 9.1 of IS/ISO 8528 (Part 12): 1997",
+            "Klausul 5,6,7,8, 9 & 10 dari IS/ISO 8528 (Bagian 2) : 2018\nKlausul 6 & 10 dari IS/ISO 8528 (Bagian 3)\nKlausul 4, 5.5, 7.3.5, 7.3.7 & 7.4 dari IS/ISO 8528 (Bagian 4): 2005\nKlausul 12, 13, 14, 15 dari IS/ISO 8528-5: 2018\nKlausul 6.4 dari IS/ISO 8528 (Bagian 8): 2016\nKlausul 9.1 dari IS/ISO 8528 (Bagian 12): 1997",
         title:
-            "Reciprocating Internal Combustion Engine Driven Alternating Current Generating Sets : Part 2 Engines\nReciprocating internal combustion engine driven alternating current generating sets: Part 3 alternating current generators for generating sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 4 control gear and switchgear\nReciprocating Internal Combustion Engine Driven Alternating Current Generating Sets Part 5 Generating Sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 8\nReciprocating internal combustion engine driven alternating current generating sets: Part 12 emergency power supply to safety",
+            "Set Pembangkit Arus Bolak-Balik yang Digerakkan Mesin Pembakaran Internal Bolak-Balik : Bagian 2 Mesin\nSet pembangkit arus bolak-balik yang digerakkan mesin pembakaran internal bolak-balik: Bagian 3 generator arus bolak-balik untuk set pembangkit\nSet pembangkit arus bolak-balik yang digerakkan mesin pembakaran internal bolak-balik: Bagian 4 peralatan kontrol dan switchgear\nSet Pembangkit Arus Bolak-Balik yang Digerakkan Mesin Pembakaran Internal Bolak-Balik Bagian 5 Set Pembangkit\nSet pembangkit arus bolak-balik yang digerakkan mesin pembakaran internal bolak-balik: Bagian 8\nSet pembangkit arus bolak-balik yang digerakkan mesin pembakaran internal bolak-balik: Bagian 12 pasokan daya darurat untuk keselamatan",
     },
     {
         id: 17,
-        description: "All types of Transformer",
+        description: "Semua jenis Transformator",
         hsCode:
-            "850421, 850422, 850423, 850431, 850432, 850433, 850434 and 850490.",
+            "850421, 850422, 850423, 850431, 850432, 850433, 850434 dan 850490.",
         indianStandard:
-            "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nClause 5.6 & Cl 10 of IS 2026 (Part 1)\nClause 7.5, 7.6, 7.7 of IS 2026 (Part 6)",
+            "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nKlausul 5.6 & Kl 10 dari IS 2026 (Bagian 1)\nKlausul 7.5, 7.6, 7.7 dari IS 2026 (Bagian 6)",
         title:
-            "Safety of Transformers, Reactors, Power Supply Units and Similar Product for Supply Voltages up to 1100 V Part 2-4: Particular Requirements and Tests for Isolating Transformers and Power Supply Units Incorporating\nSafety of power transformers, power supply units and similar: Part 2 particular requirement: Sec 6 safety isolating transformers for general use\nSafety of power transformers, power supplies reactors and similar products: Part 2-7 particular requirements and tests for transformers and power supplies for toys\nPower transformers: Part 1 general\nPower transformers: Part 6 reactors",
+            "Keselamatan Transformator, Reaktor, Unit Catu Daya dan Produk Serupa untuk Tegangan Pasokan hingga 1100 V Bagian 2-4: Persyaratan dan Pengujian Khusus untuk Transformator Isolasi dan Unit Catu Daya yang Menggabungkan\nKeselamatan transformator daya, unit catu daya dan serupa: Bagian 2 persyaratan khusus: Sek 6 transformator isolasi keselamatan untuk penggunaan umum\nKeselamatan transformator daya, catu daya reaktor dan produk serupa: Bagian 2-7 persyaratan dan pengujian khusus untuk transformator dan catu daya untuk mainan\nTransformator daya: Bagian 1 umum\nTransformator daya: Bagian 6 reaktor",
     },
     {
         id: 18,
-        description: "All types of Power Semiconductor Converter",
+        description: "Semua jenis Konverter Semikonduktor Daya",
         hsCode: "850440",
         indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
-        title: "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements",
+        title: "Klausul 7 dari Konverter Semikonduktor Bagian 1 Persyaratan Umum dan Konverter Komutasi Jalur Bagian 1 Spesifikasi persyaratan dasar",
     },
     {
         id: 19,
         description:
-            "All types of switch gear and control gear equipment operating at voltages not exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
-        hsCode: "8536, 8537 and 8538",
-        indianStandard: "Clause 8 of IS/IEC 61439 (Part 3): 2012",
+            "Semua jenis peralatan switch gear dan control gear yang beroperasi pada tegangan tidak melebihi 1000 volt dan (atau) rakitannya /sub-rakitan /komponennya",
+        hsCode: "8536, 8537 dan 8538",
+        indianStandard: "Klausul 8 dari IS/IEC 61439 (Bagian 3): 2012",
         title:
-            "Low-Voltage switchgear and control gear assemblies: Part 3 distribution boards intended to be operated by ordinary persons (DBO)",
+            "Rakit switchgear dan controlgear Tegangan Rendah: Bagian 3 papan distribusi yang dimaksudkan untuk dioperasikan oleh orang biasa (DBO)",
     },
     {
         id: 20,
         description:
-            "All types of switch gear and control gear equipment operating at voltages exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
-        hsCode: "8535, 8537 and 8538",
+            "Semua jenis peralatan switch gear dan control gear yang beroperasi pada tegangan melebihi 1000 volt dan (atau) rakitannya /sub-rakitan /komponennya",
+        hsCode: "8535, 8537 dan 8538",
         indianStandard: "-",
         title: "-",
     },
@@ -1077,8 +1077,7 @@ const TypeCTable = ({ searchQuery }) => {
     return (
         <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
             <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-                TYPE C (Machine Safety Standards dealing with detailed safety
-                requirements for a particular machine or group of machines)
+                TIPE C (Standar Keselamatan Mesin yang membahas persyaratan keselamatan rinci untuk mesin tertentu atau kelompok mesin)
             </p>
 
             <div className="rounded-md border bg-white shadow-sm">
@@ -1086,19 +1085,19 @@ const TypeCTable = ({ searchQuery }) => {
                     <TableHeader>
                         <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                             <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                                S. No.
+                                No.
                             </TableHead>
                             <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                                Description of Machinery and Electrical Equipment
+                                Deskripsi Mesin dan Peralatan Listrik
                             </TableHead>
                             <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                                HS Code
+                                Kode HS
                             </TableHead>
                             <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                                Indian Standard/Specifis Clause of Indian Standard
+                                Standar India/Klausul Spesifik dari Standar India
                             </TableHead>
                             <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                                Title of Indian Standard
+                                Judul Standar India
                             </TableHead>
                         </TableRow>
                     </TableHeader>
@@ -1130,7 +1129,7 @@ const TypeCTable = ({ searchQuery }) => {
                         ) : (
                             <TableRow>
                                 <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
-                                    No results found for &quot;{searchQuery}&quot;
+                                    Tidak ada hasil ditemukan untuk &quot;{searchQuery}&quot;
                                 </TableCell>
                             </TableRow>
                         )}
@@ -1146,314 +1145,314 @@ const productDataTableSecond = [
         id: 1,
         isNumber: "IS 16504 (Part 1):2019/IEC 60204-1:2016",
         title:
-            "Safety of Machinery Electrical Equipment of Machines Part 1 General Requirements",
+            "Keselamatan Mesin Peralatan Listrik Mesin Bagian 1 Persyaratan Umum",
     },
     {
         id: 2,
         isNumber: "IS 16504 (Part 11) : 2020 /IEC 60204-11 : 2018",
         title:
-            "Safety of Machinery - Electrical Equipment of Machines Part 11 Requirements for Equipment for Voltages above 1 000 V AC or 1 500 V DC and not Exceeding 36 kV",
+            "Keselamatan Mesin - Peralatan Listrik Mesin Bagian 11 Persyaratan untuk Peralatan untuk Tegangan di atas 1 000 V AC atau 1 500 V DC dan tidak Melebihi 36 kV",
     },
     {
         id: 3,
         isNumber: "IS/IEC 61508 (Part 1): 2010",
         title:
-            "Functional Safety of Electrical-Electronic-Programmable Electronic Safety-related Systems Part 1- General Requirements",
+            "Keselamatan Fungsional Sistem Keamanan Elektronik-Programmable Elektronik yang Terkait Keselamatan Bagian 1- Persyaratan Umum",
     },
     {
         id: 4,
         isNumber: "IS/IEC 60529 : 2001",
-        title: "Degree of Protection Provided by Enclosures (IP Code)",
+        title: "Derajat Perlindungan yang Disediakan oleh Penutup (Kode IP)",
     },
     {
         id: 5,
         isNumber: "IS 16806 (Part 1) : 2018/ ISO 29042-1 : 2008",
         title:
-            "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 1: Selection of test methods",
+            "Keselamatan mesin - Evaluasi emisi zat berbahaya di udara - Bagian 1: Pemilihan metode pengujian",
     },
     {
         id: 6,
         isNumber: "IS 16806 (Part 2) : 2018/ ISO 29042-2 : 2009",
         title:
-            "Safety of Machinery Evaluation of the Emission of Airborne Hazardous Substances Part 2 Tracer Gas Method for the Measurement of the Emission Rate of a Given Pollutant",
+            "Keselamatan Mesin Evaluasi Emisi Zat Berbahaya di Udara Bagian 2 Metode Gas Pelacak untuk Pengukuran Tingkat Emisi Polutan Tertentu",
     },
     {
         id: 7,
         isNumber: "IS 16806 (Part 3) : 2018/ ISO 29042-3 : 2009",
         title:
-            "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 3: Test bench method for the measurement of the emission rate of a given pollutant",
+            "Keselamatan mesin - Evaluasi emisi zat berbahaya di udara - Bagian 3: Metode bangku pengujian untuk pengukuran tingkat emisi polutan tertentu",
     },
     {
         id: 8,
         isNumber: "IS 16806 (Part 4) : 2018/ ISO 29042-4 : 2009",
         title:
-            "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 4: Tracer method for the measurement of the capture efficiency of an exhaust system",
+            "Keselamatan mesin - Evaluasi emisi zat berbahaya di udara - Bagian 4: Metode pelacak untuk pengukuran efisiensi tangkapan sistem pembuangan",
     },
     {
         id: 9,
         isNumber: "IS 16806 (Part 5) : 2018/ ISO 29042-5 : 2010",
         title:
-            "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 5: Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with unducted outlet",
+            "Keselamatan mesin - Evaluasi emisi zat berbahaya di udara - Bagian 5: Metode bangku pengujian untuk pengukuran efisiensi pemisahan berdasarkan massa sistem pembersih udara dengan outlet tidak berpipa",
     },
     {
         id: 10,
         isNumber: "IS 16806 (Part 6) : 2018/ ISO 29042-6 : 2010",
         title:
-            "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 6 : Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with ducted outlet",
+            "Keselamatan mesin - Evaluasi emisi zat berbahaya di udara - Bagian 6 : Metode bangku pengujian untuk pengukuran efisiensi pemisahan berdasarkan massa sistem pembersih udara dengan outlet berpipa",
     },
     {
         id: 11,
         isNumber: "IS 16806 (Part 7) : 2018/ ISO 29042-7 : 2010",
         title:
-            "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 7: Test bench method for the measurement of the pollutant concentration parameter",
+            "Keselamatan mesin - Evaluasi emisi zat berbahaya di udara - Bagian 7: Metode bangku pengujian untuk pengukuran parameter konsentrasi polutan",
     },
     {
         id: 12,
         isNumber: "IS 16806 (Part 8) : 2018/ ISO 29042-8 : 2011",
         title:
-            "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 8: Room method for the measurement of the pollutant concentration parameter",
+            "Keselamatan mesin - Evaluasi emisi zat berbahaya di udara - Bagian 8: Metode ruangan untuk pengukuran parameter konsentrasi polutan",
     },
     {
         id: 13,
         isNumber: "IS 16806 (Part 9) : 2018/ ISO 29042-9 : 2011",
         title:
-            "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 9: Decontamination index",
+            "Keselamatan mesin - Evaluasi emisi zat berbahaya di udara - Bagian 9: Indeks dekontaminasi",
     },
     {
         id: 14,
         isNumber: "IS 10481:2020/ ISO 4413:2010",
         title:
-            "Hydraulic Fluid Power- General Rules and Safety Requirements for Systems and their Components",
+            "Daya Fluida Hidraulik- Aturan Umum dan Persyaratan Keselamatan untuk Sistem dan komponennya",
     },
     {
         id: 15,
         isNumber: "IS 12725:2021/ ISO 4414:2010",
         title:
-            "Pneumatic Fluid Power- General Rules and Safety Requirements for Systems and their Components",
+            "Daya Fluida Pneumatik- Aturan Umum dan Persyaratan Keselamatan untuk Sistem dan komponennya",
     },
     {
         id: 16,
         isNumber: "IS ISO 3457 : 2003",
-        title: "Earth Moving Machinery - Guards - Definitions and Requirements",
+        title: "Mesin Penggerak Tanah - Penjaga - Definisi dan Persyaratan",
     },
     {
         id: 17,
         isNumber: "IS 16501 : 2017/IEC 62061 : 2005",
         title:
-            "Safety of Machinery-Functional Safety of Safety-Related Electrical Electronic and Programmable Electronic Control Systems",
+            "Keselamatan Mesin-Keselamatan Fungsional Sistem Kontrol Elektronik, Elektronik dan Programmable yang Terkait Keselamatan",
     },
     {
         id: 18,
         isNumber: "IS 16502 (Part 2) : 2017/ IEC 61496-2 : 2013",
         title:
-            "Safety of Machinery - Electro-Sensitive Protective Equipment Part 2 Particular Requirements for Equipment Using Active Opto-Electronic Protective Devices AOPDs",
+            "Keselamatan Mesin - Peralatan Pelindung Sensitif Elektro Bagian 2 Persyaratan Khusus untuk Peralatan yang Menggunakan Perangkat Pelindung Opto-Elektronik Aktif AOPD",
     },
     {
         id: 19,
         isNumber: "IS 16503 (Part 3) : 2017/ IEC 61310-3 : 2007",
         title:
-            "Safety of Machinery- Indication Marking and Actuation Part 3 Requirements for the Location and Operation of Actuators",
+            "Keselamatan Mesin- Indikasi Penandaan dan Aktuasi Bagian 3 Persyaratan untuk Lokasi dan Operasi Aktuator",
     },
     {
         id: 20,
         isNumber: "IS 16504 (Part 32) : 2017/IEC 60204-32 : 2008",
         title:
-            "Safety of Machinery-Electrical Equipment of Machines Part 32 Requirements for Hoisting Machines",
+            "Keselamatan Mesin-Peralatan Listrik Mesin Bagian 32 Persyaratan untuk Mesin Pengangkat",
     },
     {
         id: 21,
         isNumber: "IS 16503 (Part 1) : 2017/ IEC 61310-1 : 2007",
         title:
-            "Safety of Machinery - Indication Marking and Actuation Part 1 Requirements for Visual Acoustic and Tactile Signals",
+            "Keselamatan Mesin - Indikasi Penandaan dan Aktuasi Bagian 1 Persyaratan untuk Sinyal Visual Akustik dan Taktil",
     },
     {
         id: 22,
         isNumber: "IS 16594 (Part 1) : 2017/ IEC 61496-1 : 2012",
         title:
-            "Safety of Machinery - Electro-Sensitive Protective Equipment Part 1 General Requirements and Tests",
+            "Keselamatan Mesin - Peralatan Pelindung Sensitif Elektro Bagian 1 Persyaratan Umum dan Pengujian",
     },
     {
         id: 23,
         isNumber: "IS 16936 : 2018/ IEC TR 62513: 2008",
         title:
-            "Safety of Machinery Guidelines for the Use of Communication Systems in Safety Related Applications",
+            "Keselamatan Mesin Pedoman untuk Penggunaan Sistem Komunikasi dalam Aplikasi yang Terkait Keselamatan",
     },
     {
         id: 24,
         isNumber: "IS 16503 (Part 2) : 2017/ IEC 61310-2 : 2007",
         title:
-            "Safety of Machinery - Indication Marking and Actuation Part 2 Requirements for Marking",
+            "Keselamatan Mesin - Indikasi Penandaan dan Aktuasi Bagian 2 Persyaratan untuk Penandaan",
     },
     {
         id: 25,
         isNumber: "IS 16807: 2020/",
-        title: "Safety of Machinery Fire Prevention and Fire Protection",
+        title: "Keselamatan Mesin Pencegahan Kebakaran dan Perlindungan Kebakaran",
     },
     {
         id: 26,
         isNumber: "IS 16808 : 2018/ ISO 14159 : 2002",
         title:
-            "Safety of Machinery Hygiene Requirements for the Design of Machinery",
+            "Keselamatan Mesin Persyaratan Kebersihan untuk Desain Mesin",
     },
     {
         id: 27,
         isNumber: "IS 16809 ( Part 1) : 2018/ ISO 14122-1 : 2016",
         title:
-            "Safety of Machinery Permanent Means of Access to Machinery Part 1 Choice of Fixed Means and General Requirements of Access",
+            "Keselamatan Mesin Sarana Akses Permanen ke Mesin Bagian 1 Pilihan Sarana Tetap dan Persyaratan Umum Akses",
     },
     {
         id: 28,
         isNumber: "IS 16809 (Part 2) : 2018/ ISO 14122-2 : 2016",
         title:
-            "Safety of Machinery Permanent Means of Access to Machinery Part 2 Working Platforms and Walkways",
+            "Keselamatan Mesin Sarana Akses Permanen ke Mesin Bagian 2 Platform Kerja dan Jalur Pejalan Kaki",
     },
     {
         id: 29,
         isNumber: "IS 16809 (Part 3) : 2018/ ISO 14122-3 : 2016",
         title:
-            "Safety of Machinery Permanent Means of Access to Machinery Part 3 Stairs Stepladders and Guard-Rails",
+            "Keselamatan Mesin Sarana Akses Permanen ke Mesin Bagian 3 Tangga Tangga Langkah dan Rel Pengaman",
     },
     {
         id: 30,
         isNumber: "IS 16809 (Part 4) : 2018/ ISO 14122-4 : 2016",
         title:
-            "Safety of Machinery Permanent Means of Access to Machinery Part 4 Fixed Ladders",
+            "Keselamatan Mesin Sarana Akses Permanen ke Mesin Bagian 4 Tangga Tetap",
     },
     {
         id: 31,
         isNumber: "IS 16810 (Part 1) : 2018/ ISO 13849-1 : 2015",
         title:
-            "Safety of Machinery Safety Related Parts of Control Systems Part 1 General Principles for Design",
+            "Keselamatan Mesin Bagian yang Terkait Keselamatan dari Sistem Kontrol Bagian 1 Prinsip Umum untuk Desain",
     },
     {
         id: 32,
         isNumber: "IS 16810 (Part 2) : 2018/ ISO 13849-2 : 2012",
         title:
-            "Safety of Machinery Safety Related Parts of Control Systems Part 2 Validation",
+            "Keselamatan Mesin Bagian yang Terkait Keselamatan dari Sistem Kontrol Bagian 2 Validasi",
     },
     {
         id: 33,
         isNumber: "IS 16811: 2018/ 14120 : 2015",
         title:
-            "Safety of Machinery Guards General Requirements for the Design and Construction of Fixed and Movable Guards",
+            "Keselamatan Mesin Penjaga Persyaratan Umum untuk Desain dan Konstruksi Penjaga Tetap dan Bergerak",
     },
     {
         id: 34,
         isNumber: "IS 16812 : 2018/ ISO 14119 : 2013",
         title:
-            "Safety of Machinery Interlocking Devices Associated with Guards Principles for Design and Selection",
+            "Keselamatan Mesin Perangkat Pengunci yang Terkait dengan Penjaga Prinsip untuk Desain dan Pemilihan",
     },
     {
         id: 35,
         isNumber: "IS 16813 : 2019/ ISO 14118 : 2017",
-        title: "Safety of Machinery Prevention of Unexpected Start-Up",
+        title: "Keselamatan Mesin Pencegahan Mulai yang Tidak Terduga",
     },
     {
         id: 36,
         isNumber: "IS 16814 : 2021/ ISO 13857: 2019",
         title:
-            "Safety of Machinery Safety Distances to Prevent Hazard Zones Being Reached by Upper and Lower Limbs",
+            "Keselamatan Mesin Jarak Keselamatan untuk Mencegah Zona Bahaya Dicapai oleh Anggota Badan Atas dan Bawah",
     },
     {
         id: 37,
         isNumber: "IS 16815 : 2019/ ISO 13855: 2010",
         title:
-            "Safety of Machinery Positioning of Safeguards with Respect to the Approach Speeds of Parts of the Human Body",
+            "Keselamatan Mesin Penempatan Pengaman Sehubungan dengan Kecepatan Pendekatan Bagian Tubuh Manusia",
     },
     {
         id: 38,
         isNumber: "IS 16816 : 2019/ ISO 13854 : 2017",
         title:
-            "Safety of Machinery Minimum Gaps to Avoid Crushing of Parts of the Human Body",
+            "Keselamatan Mesin Celah Minimum untuk Menghindari Penghancuran Bagian Tubuh Manusia",
     },
     {
         id: 39,
         isNumber: "IS 16817: 2020/ ISO 13851 : 2019",
         title:
-            "Safety of Machinery Two-Hand Control Devices Principles for Design and Selection",
+            "Keselamatan Mesin Perangkat Kontrol Dua Tangan Prinsip untuk Desain dan Pemilihan",
     },
     {
         id: 40,
         isNumber: "IS 16818 : 2018/ ISO 13850 : 2015",
-        title: "Safety of Machinery Emergency Stop Function Principles for Design",
+        title: "Keselamatan Mesin Fungsi Berhenti Darurat Prinsip untuk Desain",
     },
     {
         id: 41,
         isNumber: "IS 16912 : 2018/ ISO 21469 : 2006",
         title:
-            "Safety of Machinery Lubricants with Incidental Product -- Contact Hygiene Requirements",
+            "Keselamatan Mesin Pelumas dengan Kontak Produk Insidental -- Persyaratan Kebersihan",
     },
     {
         id: 42,
         isNumber: "IS 16834 (Part 1) : 2018/ ISO 14123-1 : 2015",
         title:
-            "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 1: Principles and specifications for machinery manufacturers",
+            "Keselamatan mesin - Pengurangan risiko terhadap kesehatan akibat zat berbahaya yang dipancarkan oleh mesin - Bagian 1: Prinsip dan spesifikasi untuk produsen mesin",
     },
     {
         id: 43,
         isNumber: "IS 16834 (Part 2) : 2018/ ISO 14123-2 : 2015",
         title:
-            "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 2: Methodology leading to verification procedures",
+            "Keselamatan mesin - Pengurangan risiko terhadap kesehatan akibat zat berbahaya yang dipancarkan oleh mesin - Bagian 2: Metodologi yang mengarah pada prosedur verifikasi",
     },
     {
         id: 44,
         isNumber: "IS 16835 (Part 1) : 2018/ ISO 13856-1 : 2013",
         title:
-            "Safety of machinery - Pressure-sensitive protective devices - Part 1: General principles for design and testing of pressure- sensitive mats and pressure-sensitive floors",
+            "Keselamatan mesin - Perangkat pelindung sensitif tekanan - Bagian 1: Prinsip umum untuk desain dan pengujian tikar sensitif tekanan dan lantai sensitif tekanan",
     },
     {
         id: 45,
         isNumber: "IS 16835 (Part 2) : 2018/ ISO 13856-2 : 2013",
         title:
-            "Safety of machinery - Pressure-sensitive protective devices - Part 2: General principles for design and testing of pressure- sensitive edges and pressure-sensitive bars",
+            "Keselamatan mesin - Perangkat pelindung sensitif tekanan - Bagian 2: Prinsip umum untuk desain dan pengujian tepi sensitif tekanan dan batang sensitif tekanan",
     },
     {
         id: 46,
         isNumber: "IS 16835 (Part 3) : 2018/ ISO 13856-3 : 2013",
         title:
-            "Safety of machinery - Pressure-sensitive protective devices - Part 3: General principles for design and testing of pressure-sensitive bumpers, plates, wires and similar devices.",
+            "Keselamatan mesin - Perangkat pelindung sensitif tekanan - Bagian 3: Prinsip umum untuk desain dan pengujian bumper sensitif tekanan, pelat, kawat dan perangkat serupa.",
     },
     {
         id: 47,
         isNumber: "IS 16569: 2018/ ISO 11429:1996",
         title:
-            "Ergonomics- System of Auditory and Visual Danger and Information Signals",
+            "Ergonomi- Sistem Sinyal Bahaya Auditori dan Visual serta Informasi",
     },
     {
         id: 48,
         isNumber: "IS 16563 (Part 2) : 2017/ ISO 9355-2:1999",
         title:
-            "Ergonomic Requirements for the Design of Displays and Control Actuators Part 2 Displays",
+            "Persyaratan Ergonomi untuk Desain Tampilan dan Aktuator Kontrol Bagian 2 Tampilan",
     },
     {
         id: 49,
         isNumber: "IS 16563 (Part 3) 2017 / ISO 9355-3:2006",
         title:
-            "Ergonomic Requirements for the Design of Displays and Control Actuators Part 3 Control Actuators",
+            "Persyaratan Ergonomi untuk Desain Tampilan dan Aktuator Kontrol Bagian 3 Aktuator Kontrol",
     },
     {
         id: 50,
         isNumber: "IS 16572 : 2017/ ISO 14738 : 2002",
         title:
-            "Safety of Machinery - Anthropometric Requirements for the Design of Workstations at Machinery",
+            "Keselamatan Mesin - Persyaratan Antropometri untuk Desain Stasiun Kerja di Mesin",
     },
     {
         id: 51,
         isNumber: "IS 16562 ( Part 1) : 2017/ ISO 15536-1 : 2005",
         title:
-            "Ergonomics - Computer Manikins and Body Templates Part 1 General Requirements",
+            "Ergonomi - Manikin Komputer dan Templat Tubuh Bagian 1 Persyaratan Umum",
     },
     {
         id: 52,
         isNumber: "IS 16569:2018/ ISO 11429: 1996",
         title:
-            "Ergonomics - System of auditory and visual danger and information signals",
+            "Ergonomi - Sistem sinyal bahaya auditori dan visual serta informasi",
     },
     {
         id: 53,
         isNumber: "IS 15296 : 2017/ ISO 11161: 2007",
         title:
-            "Industrial Automation Systems - Safety of Integrated Manufacturing Systems - Basic Requirements",
+            "Sistem Otomatisasi Industri - Keselamatan Sistem Manufaktur Terintegrasi - Persyaratan Dasar",
     },
 ];
 const TypeBTable = ({ tableRef, searchQuery }) => {
@@ -1507,9 +1506,9 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
     return (
         <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
             <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-                TYPE B (Generic Safety Standards dealing with one safety aspect or more
-                than one type of safeguard that can be used across a wide range of
-                machinery)
+                TIPE B (Standar Keselamatan Generik yang membahas satu aspek keselamatan atau lebih
+                dari satu jenis pengaman yang dapat digunakan di berbagai jenis
+                mesin)
             </p>
 
             <div className="rounded-md border bg-white shadow-sm">
@@ -1517,13 +1516,13 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
                     <TableHeader>
                         <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                             <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                                S.No.
+                                No.
                             </TableHead>
                             <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                                IS Number
+                                Nomor IS
                             </TableHead>
                             <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                                Title
+                                Judul
                             </TableHead>
                         </TableRow>
                     </TableHeader>
@@ -1545,7 +1544,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
                         ) : (
                             <TableRow>
                                 <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
-                                    No results found for &quot;{searchQuery}&quot;
+                                    Tidak ada hasil ditemukan untuk &quot;{searchQuery}&quot;
                                 </TableCell>
                             </TableRow>
                         )}
@@ -1560,17 +1559,17 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
                             disabled={currentPage === 1}
                             className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            Previous
+                            Sebelumnya
                         </button>
                         <span className="px-4 py-2 font-geist text-sm">
-                            Page {currentPage} of {totalPages}
+                            Halaman {currentPage} dari {totalPages}
                         </span>
                         <button
                             onClick={handleNextPage}
                             disabled={currentPage === totalPages}
                             className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            Next
+                            Selanjutnya
                         </button>
                     </div>
                 </div>
@@ -1582,64 +1581,64 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
 const SchemeXServiceFaq = () => {
     const faqData = [
         {
-            question: "1. What is Scheme X under BIS certification?",
-            answer: "Scheme X is a conformity assessment scheme introduced by the Indian BIS for machinery and electrical equipment. It ensures compliance with stringent safety and technical standards as specified in the Omnibus Technical Regulation."
+            question: "1. Apa itu Skema X di bawah sertifikasi BIS?",
+            answer: "Skema X adalah skema penilaian kesesuaian yang diperkenalkan oleh BIS India untuk mesin dan peralatan listrik. Ini memastikan kepatuhan dengan standar keselamatan dan teknis yang ketat seperti yang ditentukan dalam Peraturan Teknis Omnibus."
         },
         {
-            question: "2. Is Scheme X different from the ISI mark certification?",
-            answer: "Yes. The ISI mark is generally for consumer goods and basic product compliance, while Scheme X applies to complex and industrial-grade products that require advanced testing and certification through a BIS certificate or BIS license."
+            question: "2. Apakah Skema X berbeda dari sertifikasi tanda ISI?",
+            answer: "Ya. Tanda ISI umumnya untuk barang konsumen dan kepatuhan produk dasar, sementara Skema X berlaku untuk produk kelas industri dan kompleks yang memerlukan pengujian dan sertifikasi lanjutan melalui sertifikat BIS atau lisensi BIS."
         },
         {
-            question: "3. Who needs to apply for Scheme X certification?",
-            answer: "Manufacturers and importers of machinery and electrical equipment listed under the Omnibus Technical Regulation must apply for Scheme X and obtain a valid BIS certification to legally sell or distribute their products in India. Global manufacturers or foreign manufacturers intending to sell product in India must also comply with these regulations."
+            question: "3. Siapa yang perlu mengajukan sertifikasi Skema X?",
+            answer: "Produsen dan importir mesin dan peralatan listrik yang tercantum di bawah Peraturan Teknis Omnibus harus mengajukan Skema X dan mendapatkan sertifikasi BIS yang valid untuk menjual atau mendistribusikan produk mereka secara legal di India. Produsen global atau produsen asing yang bermaksud menjual produk di India juga harus mematuhi peraturan ini."
         },
         {
-            question: "4. What is the cost of BIS Scheme X certification?",
-            answer: "The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at admin@bis-certifications.com."
+            question: "4. Berapa biaya sertifikasi BIS Skema X?",
+            answer: "Biaya Skema X mencakup biaya aplikasi, biaya sertifikasi, biaya tinjauan file teknis, biaya inspeksi pabrik, dan biaya pengujian produk. Rata-rata, dimulai dari ₹2.000 untuk aplikasi dan bisa naik tergantung pada kompleksitas produk. Untuk detail lebih lanjut hubungi kami di admin@bis-certifications.com."
         },
         {
-            question: "5. How long does it take to get a BIS licence under Scheme X?",
-            answer: "The timeline varies depending on documentation, testing requirements, and factory inspections. Typically, it takes 4–6 weeks from the date of successful BIS registration and application submission for Indian manufacturers and 60-90 days for foreign manufacturers."
+            question: "5. Berapa lama waktu yang dibutuhkan untuk mendapatkan lisensi BIS di bawah Skema X?",
+            answer: "Waktu yang dibutuhkan bervariasi tergantung pada dokumentasi, persyaratan pengujian, dan inspeksi pabrik. Biasanya, dibutuhkan 4–6 minggu dari tanggal pendaftaran BIS yang berhasil dan pengajuan aplikasi untuk produsen India dan 60-90 hari untuk produsen asing."
         },
         {
-            question: "6. Can MSMEs also apply for BIS certification under Scheme X?",
-            answer: "Absolutely. In fact, the Indian BIS encourages MSMEs to apply for a BIS licence or certificate of conformity under Scheme X to boost quality, compliance, and competitiveness in the industrial sector."
+            question: "6. Apakah UMKM juga bisa mengajukan sertifikasi BIS di bawah Skema X?",
+            answer: "Tentu saja. Bahkan, BIS India mendorong UMKM untuk mengajukan lisensi BIS atau sertifikat kesesuaian di bawah Skema X untuk meningkatkan kualitas, kepatuhan, dan daya saing di sektor industri."
         },
         {
-            question: "7. Is BIS certification under Scheme X mandatory for exports?",
-            answer: "No. Products manufactured exclusively for export are exempt under the Omnibus Technical Regulation. However, products meant for Indian markets must be certified under Scheme X."
+            question: "7. Apakah sertifikasi BIS di bawah Skema X wajib untuk ekspor?",
+            answer: "Tidak. Produk yang diproduksi secara eksklusif untuk ekspor dikecualikan di bawah Peraturan Teknis Omnibus. Namun, produk yang dimaksudkan untuk pasar India harus disertifikasi di bawah Skema X."
         },
         {
-            question: "8. What is the validity of the BIS license under Scheme X?",
-            answer: "A BIS licence under Scheme X is generally valid for 3-6 years and must be renewed accordingly. Renewal involves payment of the annual BIS certification fee and may require re-evaluation depending on changes in product scope or standards."
+            question: "8. Berapa validitas lisensi BIS di bawah Skema X?",
+            answer: "Lisensi BIS di bawah Skema X umumnya berlaku selama 3-6 tahun dan harus diperbarui sesuai. Pembaruan melibatkan pembayaran biaya sertifikasi BIS tahunan dan mungkin memerlukan evaluasi ulang tergantung pada perubahan ruang lingkup produk atau standar."
         },
         {
-            question: "9. Can foreign manufacturers apply for Scheme X certification?",
-            answer: "Yes, foreign manufacturers can apply for Scheme X certification through an authorized Indian representative. The Indian BIS requires a factory inspection, which may take 3 days for foreign applicants, along with standard BIS registration and testing processes."
+            question: "9. Apakah produsen asing bisa mengajukan sertifikasi Skema X?",
+            answer: "Ya, produsen asing bisa mengajukan sertifikasi Skema X melalui perwakilan India yang berwenang. BIS India memerlukan inspeksi pabrik, yang mungkin memakan waktu 3 hari untuk pelamar asing, beserta proses pendaftaran BIS standar dan pengujian."
         },
         {
-            question: "10. What is a Technical File and why is it required?",
-            answer: "A Technical File is a detailed compliance dossier required under Scheme X. It includes manufacturing processes, product details, test reports, and quality control documents. It supports the product's conformity to relevant Indian Standards during the BIS certification process."
+            question: "10. Apa itu File Teknis dan mengapa diperlukan?",
+            answer: "File Teknis adalah dossier kepatuhan rinci yang diperlukan di bawah Skema X. Ini mencakup proses manufaktur, detail produk, laporan pengujian, dan dokumen kontrol kualitas. Ini mendukung kesesuaian produk dengan Standar India yang relevan selama proses sertifikasi BIS."
         },
         {
-            question: "11. How is Scheme X related to the Omnibus Technical Regulation?",
-            answer: "The Omnibus Technical Regulation mandates the use of Scheme X for specific categories of machinery and electrical equipment in India. Products listed under the regulation must be certified under Scheme X to obtain a valid BIS certificate or BIS licence."
+            question: "11. Bagaimana Skema X terkait dengan Peraturan Teknis Omnibus?",
+            answer: "Peraturan Teknis Omnibus mewajibkan penggunaan Skema X untuk kategori mesin dan peralatan listrik tertentu di India. Produk yang tercantum di bawah peraturan harus disertifikasi di bawah Skema X untuk mendapatkan sertifikat BIS atau lisensi BIS yang valid."
         },
         {
-            question: "12. Can a BIS certificate under Scheme X be revoked?",
-            answer: "Yes. The Indian BIS can suspend or cancel a BIS licence or certificate under Scheme X if non-compliance is found during surveillance or if the product fails to meet required Indian Standards."
+            question: "12. Apakah sertifikat BIS di bawah Skema X bisa dicabut?",
+            answer: "Ya. BIS India bisa menangguhkan atau membatalkan lisensi BIS atau sertifikat di bawah Skema X jika ditemukan ketidaksesuaian selama pengawasan atau jika produk gagal memenuhi Standar India yang diperlukan."
         },
         {
-            question: "13. What is the difference between BIS license and BIS certificate under Scheme X?",
-            answer: "A BIS license is typically issued to Indian manufacturers, while a BIS certificate of conformity (CoC) is often issued to foreign manufacturers or for specific cases. Both serve the same purpose—ensuring product compliance under Scheme X."
+            question: "13. Apa perbedaan antara lisensi BIS dan sertifikat BIS di bawah Skema X?",
+            answer: "Lisensi BIS biasanya dikeluarkan untuk produsen India, sementara sertifikat kesesuaian BIS (CoC) sering dikeluarkan untuk produsen asing atau untuk kasus spesifik. Keduanya memiliki tujuan yang sama—memastikan kepatuhan produk di bawah Skema X."
         },
         {
-            question: "14. Is the ISI mark allowed for products certified under Scheme X?",
-            answer: "No. Products under Scheme X do not carry the ISI mark. Instead, they display the BIS standard mark relevant to the certification scheme, as governed by the Indian BIS."
+            question: "14. Apakah tanda ISI diizinkan untuk produk yang disertifikasi di bawah Skema X?",
+            answer: "Tidak. Produk di bawah Skema X tidak membawa tanda ISI. Sebaliknya, mereka menampilkan tanda standar BIS yang relevan dengan skema sertifikasi, seperti yang diatur oleh BIS India."
         },
         {
-            question: "How do I know if my machinery requires Scheme X certification?",
-            answer: "Check the official list in the Omnibus Technical Regulation or consult with a BIS consultant to verify if your machinery falls under mandatory Scheme X certification requirements."
+            question: "Bagaimana saya tahu jika mesin saya memerlukan sertifikasi Skema X?",
+            answer: "Periksa daftar resmi dalam Peraturan Teknis Omnibus atau konsultasikan dengan konsultan BIS untuk memverifikasi apakah mesin Anda termasuk dalam persyaratan sertifikasi Skema X yang wajib."
         }
     ];
 
@@ -1647,19 +1646,19 @@ const SchemeXServiceFaq = () => {
         <section
             id="faqs"
             className="my-2 scroll-mt-20"
-            aria-label="Frequently Asked Questions"
+            aria-label="Pertanyaan yang Sering Diajukan"
         >
             <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
                 <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-                    Frequently Asked Questions
+                    Pertanyaan yang Sering Diajukan
                 </h4>
                 <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-                    Can't find the answer you are looking for?{" "}
+                    Tidak menemukan jawaban yang Anda cari?{" "}
                     <a
                         href="/contact"
                         className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
                     >
-                        Reach out to us!
+                        Hubungi kami!
                     </a>
                 </p>
 
@@ -1722,29 +1721,23 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <div id="conclusion" className="flex flex-col scroll-mt-20">
             {/* Conclusion */}
             <div className="flex w-full items-center gap-3">
-                <span className="service-left-content-index-heading">Conclusion</span>
+                <span className="service-left-content-index-heading">Kesimpulan</span>
                 <Separator className="service-left-content-separator" />
             </div>
 
             <h2 className="service-left-content-heading-two">
-                Conclusion
+                Kesimpulan
             </h2>
 
             <p className="service-left-content-paragraph">
-                The BIS Scheme-X Certification remains vital in upholding the safety,
-                reliability, and quality of Low-voltage switchgear and control gear,
-                Machinery and electrical equipment. For the manufacturers of machine
-                tools applicable to processing stone, ceramics, concrete, asphantic
-                cement and mineral glass, BIS Scheme-X certification is compulsory.
+                Sertifikasi BIS Skema-X tetap vital dalam menjaga keselamatan,
+                keandalan, dan kualitas sakelar tegangan rendah, peralatan kontrol, mesin, dan peralatan listrik. Untuk produsen alat mesin yang berlaku untuk memproses batu, keramik, beton, semen asbes dan kaca mineral, sertifikasi BIS Skema-X adalah wajib.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                By fulfilling these obligations, manufacturers guarantee product
-                conformity, enhance consumer confidence, as well as improve their
-                credibility on the market. Scheme-X makes sure the production is as
-                smooth as possible, safety standards around the world are met, and the
-                recognized brands gain a positive reputation.
+                Dengan memenuhi kewajiban ini, produsen menjamin kesesuaian produk,
+                meningkatkan kepercayaan konsumen, serta meningkatkan kredibilitas mereka di pasar. Skema-X memastikan produksi berjalan lancar, standar keselamatan global terpenuhi, dan merek yang diakui mendapatkan reputasi positif.
             </p>
 
         </div>
@@ -1756,19 +1749,18 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         <div id="documents" className="flex flex-col scroll-mt-20">
             {/* Documents */}
             <div className="flex w-full items-center gap-3">
-                <span className="service-left-content-index-heading">Documents</span>
+                <span className="service-left-content-index-heading">Dokumen</span>
                 <Separator className="service-left-content-separator" />
             </div>
 
             <h2 className="service-left-content-heading-two">
-                Key Documents Required for BIS Scheme X Certification
+                Dokumen Utama yang Diperlukan untuk Sertifikasi BIS Skema X
             </h2>
 
 
             <p className="service-left-content-paragraph">
-                To streamline the BIS certification process, manufacturers are required
-                to gather and submit the following documents during the registration
-                phase:
+                Untuk menyederhanakan proses sertifikasi BIS, produsen diwajibkan
+                untuk mengumpulkan dan mengajukan dokumen berikut selama fase pendaftaran:
             </p>
 
             <div className="mt-[16px] md:mt-[24px]">
@@ -1776,13 +1768,13 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                     <TableHeader className="bg-[#F9F7F2]">
                         <TableRow className="bg-[#1A8781]/10">
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                                Sl. No.
+                                No. Urut
                             </TableHead>
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                                Document Required
+                                Dokumen yang Diperlukan
                             </TableHead>
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                                Details
+                                Detail
                             </TableHead>
                         </TableRow>
                     </TableHeader>
@@ -1792,11 +1784,11 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                                 1.
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Name and Address (Factory & Office)
+                                Nama dan Alamat (Pabrik & Kantor)
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Full legal name and physical addresses of the manufacturing site
-                                and office
+                                Nama hukum lengkap dan alamat fisik situs manufaktur
+                                dan kantor
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -1804,10 +1796,10 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                                 2.
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                PAN and GST Information
+                                Informasi PAN dan GST
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Permanent Account Number (PAN) and GST registration details
+                                Nomor Akun Permanen (PAN) dan detail registrasi GST
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -1815,11 +1807,10 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                                 3.
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Contact Details
+                                Detail Kontak
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Email address, mobile number, and landline for official
-                                communications
+                                Alamat email, nomor ponsel, dan telepon rumah untuk komunikasi resmi
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -1827,10 +1818,10 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                                 4.
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Management Details
+                                Detail Manajemen
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Names, roles, and IDs of key executives and authorized signatory
+                                Nama, peran, dan ID eksekutif kunci dan penandatangan berwenang
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -1838,11 +1829,11 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                                 5.
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Product Description
+                                Deskripsi Produk
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Details of machinery and equipment covered under the First
-                                Schedule of the Omnibus Technical Regulation
+                                Detail mesin dan peralatan yang dicakup di bawah Jadwal Pertama
+                                Peraturan Teknis Omnibus
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -1850,11 +1841,10 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                                 6.
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Product Classification
+                                Klasifikasi Produk
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Specific type, model, and variety for which BIS license is being
-                                requested
+                                Jenis, model, dan variasi spesifik di mana lisensi BIS diminta
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -1862,11 +1852,10 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                                 7.
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Technical file
+                                File teknis
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                All the technical details related to the product and details
-                                about the manufacturing unit.
+                                Semua detail teknis terkait produk dan detail tentang unit manufaktur.
                             </TableCell>
                         </TableRow>
                     </TableBody>
@@ -1874,15 +1863,15 @@ const SchemeXMainContentLeftDocumentsSection = () => {
             </div>
 
             <h3 className="service-left-content-heading-three">
-                Validity and Renewal Process of Scheme-X Certificate:
+                Validitas dan Proses Pembaruan Sertifikat Skema-X:
             </h3>
 
             <PointsListWithoutHeading
                 points={[
-                    "Licence Validity and Renewal: BIS Licences under Scheme-X are issued for a period of 3 to 6 years for continuous production. Once the period has expired, the licence can be renewed for the same duration by the submission of a renewal application, the required fee, and compliance documents.",
-                    "Certificate of Conformity (CoC): A CoC is issued for One time production, and is applicable for domestic as well as overseas manufacturers. Since it applies only to a single batch, a CoC has no renewal option.",
-                    "Report of Product Tests: When test reports are prepared in the laboratory of the manufacturer, the BIS officials verify them during the factory inspection by conducting witness testing. If testing is done at subcontracted facilities, those facilities are also inspected and approved by BIS.",
-                    "Review of Application for Renewal: For uninterrupted validity, a manufacturer is required to continue to comply with the Scheme-X provisions. As per Regulation 8 of the BIS Conformity Assessment Regulations, the Bureau of Indian Standards processes the application for renewal in form VIII. Renewal is done only after satisfactory compliance is verified.",
+                    "Validitas Lisensi dan Pembaruan: Lisensi BIS di bawah Skema-X dikeluarkan untuk periode 3 hingga 6 tahun untuk produksi berkelanjutan. Setelah periode berakhir, lisensi dapat diperbarui untuk durasi yang sama dengan pengajuan aplikasi pembaruan, biaya yang diperlukan, dan dokumen kepatuhan.",
+                    "Sertifikat Kesesuaian (CoC): CoC dikeluarkan untuk Produksi satu kali, dan berlaku untuk produsen domestik maupun luar negeri. Karena hanya berlaku untuk satu batch, CoC tidak memiliki opsi pembaruan.",
+                    "Laporan Pengujian Produk: Ketika laporan pengujian disiapkan di laboratorium produsen, pejabat BIS memverifikasinya selama inspeksi pabrik dengan melakukan pengujian saksi. Jika pengujian dilakukan di fasilitas subkontrak, fasilitas tersebut juga diperiksa dan disetujui oleh BIS.",
+                    "Tinjauan Aplikasi Pembaruan: Untuk validitas tanpa gangguan, produsen diwajibkan untuk terus mematuhi ketentuan Skema-X. Sesuai Regulasi 8 dari Peraturan Penilaian Kesesuaian BIS, Biro Standar India memproses aplikasi pembaruan dalam bentuk VIII. Pembaruan dilakukan hanya setelah kepatuhan yang memuaskan diverifikasi.",
                 ]}
             />
         </div>
@@ -1894,139 +1883,129 @@ const SchemeXMainContentLeftProcessSection = () => {
         <div id="process" className="flex flex-col scroll-mt-20">
             {/* Process */}
             <div className="flex w-full items-center gap-3">
-                <span className="service-left-content-index-heading">Process</span>
+                <span className="service-left-content-index-heading">Proses</span>
                 <Separator className="service-left-content-separator" />
             </div>
 
             <h2 className="service-left-content-heading-two">
-                Steps to Get Certified Under BIS Scheme-X
+                Langkah-langkah untuk Mendapatkan Sertifikasi di bawah BIS Skema-X
             </h2>
 
 
             <p className="service-left-content-paragraph">
-                Issuing BIS Certificate under Scheme-X is a systematic activity meant to
-                ensure the manufacturer has the applicable safety, quality, and
-                compliance standards fulfilled. The process is as follows:
+                Mengeluarkan Sertifikat BIS di bawah Skema-X adalah kegiatan sistematis yang dimaksudkan untuk
+                memastikan produsen memiliki standar keselamatan, kualitas, dan
+                kepatuhan yang berlaku terpenuhi. Prosesnya adalah sebagai berikut:
             </p>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Verify Scope: Determine whether your product is in the scope of Scheme-X and if it is with BIS safety requirements. Check the relevant Indian Standards and technical schedule to determine if you will be able to comply.",
-                    "Prepare The Required Documents: Manufacturers need to collect and arrange the following documents: Registered Business certificates, Basis of design documents, Factory and Process flow documents, Service Test Reports (if applicable), Quality assurance and Control Documents.",
-                    "Construct the Technical File: A technical file is an indispensable part for the claim for extension of a certificate. It should contain: Technical Specifications of the Product, Methods and Techniques Information, Compliance and Test Documents, Limitation and the Intended purpose of the product, Quality assurance documentation, Raw materials traceability, subcontract traceability, and the rest of the evidence, Conformance to the standards within the scope framed.",
-                    "The Application Form: The application form can be submitted electronically on the BIS Website for the designated place. Settlement of the application fee is a must. The rest of the documents verifying application should be included for proper assessment.",
-                    "Factory Inspection: For domestic manufacturers: Inspection is conducted over a period of a maximum of 2 days. For foreign manufacturers: Inspection is conducted over a period of a maximum of 3 days (additional days may accrue due to additional requests).",
-                    "Testing of Product Samples: Sample testing is either carried out at the manufacturers site or at outsourced BIS approved labs (outsource testing is allowed). The testing demonstrates the fulfillment of the relevant Indian standards.",
-                    "Issuance of Certification: If a product meets all the conditions, BIS grants every product a License or a Certificate of Conformity (CoC). The BIS Standard Mark may be used freely by the manufacturer on all certified products.",
+                    "Verifikasi Ruang Lingkup: Tentukan apakah produk Anda berada dalam ruang lingkup Skema-X dan apakah sesuai dengan persyaratan keselamatan BIS. Periksa Standar India yang relevan dan jadwal teknis untuk menentukan apakah Anda akan dapat mematuhi.",
+                    "Siapkan Dokumen yang Diperlukan: Produsen perlu mengumpulkan dan mengatur dokumen berikut: Sertifikat Bisnis Terdaftar, Dokumen dasar desain, Dokumen pabrik dan alur proses, Laporan Pengujian Layanan (jika berlaku), Dokumen jaminan dan Kontrol Kualitas.",
+                    "Bangun File Teknis: File teknis adalah bagian yang tak terpisahkan untuk klaim perpanjangan sertifikat. Ini harus berisi: Spesifikasi Teknis Produk, Informasi Metode dan Teknik, Dokumen Kepatuhan dan Pengujian, Batasan dan tujuan yang dimaksudkan dari produk, Dokumentasi jaminan kualitas, Ketertelusuran bahan baku, ketertelusuran subkontrak, dan bukti sisanya, Kesesuaian dengan standar dalam ruang lingkup yang dibingkai.",
+                    "Formulir Aplikasi: Formulir aplikasi dapat diajukan secara elektronik di Situs Web BIS untuk tempat yang ditentukan. Pembayaran biaya aplikasi adalah wajib. Sisanya dokumen yang memverifikasi aplikasi harus disertakan untuk penilaian yang tepat.",
+                    "Inspeksi Pabrik: Untuk produsen domestik: Inspeksi dilakukan selama periode maksimum 2 hari. Untuk produsen asing: Inspeksi dilakukan selama periode maksimum 3 hari (hari tambahan mungkin bertambah karena permintaan tambahan).",
+                    "Pengujian Sampel Produk: Pengujian sampel dilakukan baik di situs produsen atau di laboratorium BIS yang disetujui yang dialihdayakan (pengujian alih daya diizinkan). Pengujian menunjukkan pemenuhan standar India yang relevan.",
+                    "Penerbitan Sertifikasi: Jika produk memenuhi semua kondisi, BIS memberikan setiap produk Lisensi atau Sertifikat Kesesuaian (CoC). Tanda Standar BIS dapat digunakan secara bebas oleh produsen pada semua produk bersertifikat.",
                 ]}
             />
 
 
             <p className="service-left-content-paragraph">
-                This file serves as the technical and statistical evidence of the
-                product claim substantiating to safety trace standards.
+                File ini berfungsi sebagai bukti teknis dan statistik dari
+                klaim produk yang membuktikan standar ketertelusuran keselamatan.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                During the period of inspection, the BIS officials are expected to:
-                Analyze the technical file, Evaluate the ways of manufacturing along
-                with supporting quality assurance systems, Observe the testing of the
-                product, Determine non-compliance (if any) and give remedial steps. A
-                detailed report of the audit is provided to the applicant after the
-                visit.
+                Selama periode inspeksi, pejabat BIS diharapkan untuk:
+                Menganalisis file teknis, Menilai cara manufaktur bersama
+                dengan sistem jaminan kualitas pendukung, Mengamati pengujian produk, Menentukan ketidaksesuaian (jika ada) dan memberikan langkah remedial. Laporan audit rinci disediakan kepada pemohon setelah kunjungan.
             </p>
 
 
 
             <p className="service-left-content-paragraph">
-                This strategy maintains compliance with BIS Standard and is a
-                recognition of Indian and international compliance, cornering the
-                industry on consumer trust towards safety and quality.
+                Strategi ini mempertahankan kepatuhan dengan Standar BIS dan merupakan
+                pengakuan kepatuhan India dan internasional, membatasi industri pada kepercayaan konsumen terhadap keselamatan dan kualitas.
             </p>
 
 
             <h2 className="service-left-content-heading-three">
-                Procedure for Domestic Manufacturers
+                Prosedur untuk Produsen Domestik
             </h2>
 
 
             <p className="service-left-content-paragraph">
-                Domestic manufacturers follow a direct approach by obtaining the BIS
-                License under Scheme-X. The direct steps to follow include:
+                Produsen domestik mengikuti pendekatan langsung dengan mendapatkan Lisensi BIS di bawah Skema-X. Langkah-langkah langsung yang harus diikuti termasuk:
             </p>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Documentation: All documents pertaining to the scheme must be gathered and prepared.",
-                    "Execution of the Application: The application is to be presented alongside the relevant fees.",
-                    "Inquiry on the Application: any application submitted is subject to scrutiny and a subsequent set of questions is generated by BIS.",
-                    "Appointing Auditors: Auditors are appointed by BIS but the nominated individual is subject to the payment of the audit fees.",
-                    "Factory Audit: An examination and survey works audit is conducted onsite and relevant samples are collected.",
-                    "Sample Evaluation: The samples are evaluated in a BIS-recognized laboratory. The applicant pays all BIS-recognized laboratory testing fees.",
-                    "Payment of Licencing & Marking Fees: The requisite payments are accomplished to BIS.",
-                    "Grant of Licencing: The certificate granting permission to use the BIS Mark is awarded by BIS.",
+                    "Dokumentasi: Semua dokumen yang berkaitan dengan skema harus dikumpulkan dan disiapkan.",
+                    "Pelaksanaan Aplikasi: Aplikasi harus disajikan bersama biaya yang relevan.",
+                    "Pertanyaan pada Aplikasi: aplikasi yang diajukan tunduk pada pengawasan dan serangkaian pertanyaan selanjutnya dihasilkan oleh BIS.",
+                    "Penunjukan Auditor: Auditor ditunjuk oleh BIS tetapi individu yang dinominasikan tunduk pada pembayaran biaya audit.",
+                    "Audit Pabrik: Pemeriksaan dan survei audit dilakukan di tempat dan sampel yang relevan dikumpulkan.",
+                    "Evaluasi Sampel: Sampel dievaluasi di laboratorium yang diakui BIS. Pemohon membayar semua biaya pengujian laboratorium yang diakui BIS.",
+                    "Pembayaran Biaya Lisensi & Penandaan: Pembayaran yang diperlukan diselesaikan ke BIS.",
+                    "Pemberian Lisensi: Sertifikat yang memberikan izin untuk menggunakan Tanda BIS diberikan oleh BIS.",
                 ]}
             />
 
 
             <p className="service-left-content-paragraph">
-                <strong>Typical Timeline:</strong> Close to 90 working days (as per BIS
-                practice) are needed. This is provided there are no key
-                non-conformities.
+                <strong>Waktu Tipikal:</strong> Dekat dengan 90 hari kerja (sesuai praktik BIS)
+                diperlukan. Ini disediakan tidak ada ketidaksesuaian kunci.
             </p>
 
 
             <h2 className="service-left-content-heading-three">
-                Procedure for Foreign Manufacturers
+                Prosedur untuk Produsen Asing
             </h2>
 
 
             <p className="service-left-content-paragraph">
-                Unlike domestic manufacturers, foreign manufacturers applying for a BIS
-                certificate under Scheme-X are required to comply with a more stringent
-                process and additional steps. The procedure is elaborated as follows.
+                Tidak seperti produsen domestik, produsen asing yang mengajukan sertifikat BIS di bawah Skema-X diwajibkan mematuhi proses yang lebih ketat dan langkah tambahan. Prosedurnya diuraikan sebagai berikut.
             </p>
 
             <PointsListWithoutHeading
                 points={[
-                    "Preparation of Documentation: Business registered, the product and factory layout, test reports, and the associated quality management documents all must be in the configured folder to comply.",
-                    "Submission of The Application: The application, the requisite fee and all application materials be submitted through BIS online portal.",
-                    "Recording of Application and Scrutiny: The application is recorded by BIS and a check of the documents is conducted. Any issues that BIS may have must be resolved by the applicant in a timely manner.",
-                    "Auditor Assignment and Payment: BIS's auditors responsible for factory inspections are assigned to the applicant for the audit. The applicant must pay the set fees for the conducted audit, as determined by the applicable legislation.",
-                    "Audit Preparation: Foreign manufacturers are responsible for logistical arrangements for the audit such as Visa issuance, air tickets, and hotel reservations for BIS officials are arranged and paid.",
-                    "Factory Audit & Sample Selection: BIS officials conduct a factory audit spanning 3 days (more days can be added if more applications are needed).",
-                    "Product Testing: Selected samples are forwarded to a BIS accredited laboratory for testing. In some instances, testing is contracted to other testing laboratories and so the payment is settled through the principal testing laboratory.",
-                    "Payment of Marking & Licence Fees: After successful audit and test results, the manufacturer must pay the required marking fee and licence fee to BIS.",
-                    "Grant of Licence: BIS issues the Licensed/Certificate of Conformity (CoC) once all conditions have been followed in total. BIS then allows the manufacturer with a used BIS Standard Mark on other certified products, once compliance is confirmed.",
+                    "Persiapan Dokumentasi: Bisnis terdaftar, tata letak produk dan pabrik, laporan pengujian, dan dokumen manajemen kualitas terkait semuanya harus berada dalam folder yang dikonfigurasi untuk mematuhi.",
+                    "Pengajuan Aplikasi: Aplikasi, biaya yang diperlukan dan semua bahan aplikasi diserahkan melalui portal online BIS.",
+                    "Pencatatan Aplikasi dan Pengawasan: Aplikasi dicatat oleh BIS dan pemeriksaan dokumen dilakukan. Masalah apa pun yang mungkin dimiliki BIS harus diselesaikan oleh pemohon secara tepat waktu.",
+                    "Penugasan Auditor dan Pembayaran: Auditor BIS yang bertanggung jawab atas inspeksi pabrik ditugaskan kepada pemohon untuk audit. Pemohon harus membayar biaya audit yang ditetapkan, sebagaimana ditentukan oleh undang-undang yang berlaku.",
+                    "Persiapan Audit: Produsen asing bertanggung jawab atas pengaturan logistik untuk audit seperti penerbitan Visa, tiket pesawat, dan reservasi hotel untuk pejabat BIS diatur dan dibayar.",
+                    "Audit Pabrik & Pemilihan Sampel: Pejabat BIS melakukan audit pabrik yang berlangsung 3 hari (hari lebih banyak dapat ditambahkan jika aplikasi produk lebih banyak diajukan).",
+                    "Pengujian Produk: Sampel yang dipilih diteruskan ke laboratorium terakreditasi BIS untuk pengujian. Dalam beberapa kasus, pengujian dikontrak ke laboratorium pengujian lain sehingga pembayaran diselesaikan melalui laboratorium pengujian utama.",
+                    "Pembayaran Biaya Penandaan & Lisensi: Setelah audit dan hasil pengujian berhasil, produsen harus membayar biaya penandaan dan biaya lisensi yang diperlukan ke BIS.",
+                    "Pemberian Lisensi: BIS mengeluarkan Lisensi/Sertifikat Kesesuaian (CoC) setelah semua kondisi diikuti secara total. BIS kemudian mengizinkan produsen dengan Tanda Standar BIS yang digunakan pada produk bersertifikat lainnya, setelah kepatuhan dikonfirmasi.",
                 ]}
             />
 
             <p className="service-left-content-paragraph">
-                The audit comprises: Evaluation of the quality assurance systems and the
-                workflows in the manufacturing processes, Assessment of the compliance
-                and the technical documentation, Independent testing sample selection.
+                Audit terdiri dari: Evaluasi sistem jaminan kualitas dan alur kerja dalam proses manufaktur, Penilaian kepatuhan dan dokumentasi teknis, Pemilihan sampel pengujian independen.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                The entire process takes, based on the practices from BIS, roughly 6-7
-                months.
+                Seluruh proses memakan waktu, berdasarkan praktik dari BIS, kira-kira 6-7
+                bulan.
             </p>
 
 
             <h3 className="service-left-content-heading-three">
-                Key Additional Pointers for Foreign Manufacturers:
+                Poin Tambahan Utama untuk Produsen Asing:
             </h3>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Classification FMCS: All foreign manufacturers are classified as 'Large Scale' under the Foreign Manufacturers Certification Scheme. This classification is irrespective of the scale of operations being carried out.",
-                    "Authorized Indian Representative (AIR): Every foreign manufacturer is required to designate an Authorized Indian Representative (AIR). The AIR is the primary contact point for the foreign applicant and BIS, responsible for compliance, collaboration and the maintenance of the BIS licence.",
-                    "Factory Audits: Factory audits for foreign manufacturers are comprehensive and tend to last 3 days. Also, more days are required in the case of multiple product applications being filed.",
+                    "Klasifikasi FMCS: Semua produsen asing diklasifikasikan sebagai 'Skala Besar' di bawah Skema Sertifikasi Produsen Asing. Klasifikasi ini terlepas dari skala operasi yang dilakukan.",
+                    "Perwakilan India yang Berwenang (AIR): Setiap produsen asing diwajibkan untuk menunjuk Perwakilan India yang Berwenang (AIR). AIR adalah titik kontak utama untuk pemohon asing dan BIS, bertanggung jawab atas kepatuhan, kolaborasi dan pemeliharaan lisensi BIS.",
+                    "Audit Pabrik: Audit pabrik untuk produsen asing komprehensif dan cenderung berlangsung 3 hari. Juga, hari lebih banyak diperlukan dalam kasus beberapa aplikasi produk diajukan.",
                 ]}
             />
 
@@ -2050,305 +2029,260 @@ const SchemeXMainContentLeftOverviewSection = () => {
         <div id="overview" className="flex flex-col scroll-mt-20">
             {/* Overview */}
             <div className="flex w-full items-center gap-3">
-                <span className="service-left-content-index-heading">Overview</span>
+                <span className="service-left-content-index-heading">Gambaran Umum</span>
                 <Separator className="service-left-content-separator" />
             </div>
 
 
             <h2 className="service-left-content-heading-two">
-                Introduction to BIS Scheme X Certification
+                Pengenalan Sertifikasi BIS Skema X
             </h2>
 
             <p className="service-left-content-paragraph">
-                The Bureau of Indian Standards, or BIS for short, rolled out
-                &ldquo;Scheme X&rdquo; on March 16, 2022, aimed at improving compliance
-                on product safety and quality in India. Indian and foreign manufacturers
-                can apply for BIS certification for Machine and Electrical equipment,
-                components Like assemblies, sub-assemblies and, and Tools specified in
-                Schedule-II of Scheme-X and take certification prior to exporting,
-                selling, or distributing in India.
+                Biro Standar India, atau BIS singkatnya, meluncurkan
+                &ldquo;Skema X&rdquo; pada 16 Maret 2022, bertujuan untuk meningkatkan kepatuhan
+                pada keselamatan dan kualitas produk di India. Produsen India dan asing
+                dapat mengajukan sertifikasi BIS untuk Mesin dan peralatan listrik,
+                komponen Seperti rakitan, sub-rakitan dan, dan Alat yang ditentukan dalam
+                Jadwal-II Skema-X dan mengambil sertifikasi sebelum mengekspor,
+                menjual, atau mendistribusikan di India.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                Under Scheme X, the manufacturers can apply for a BIS License or a
-                Certificate of Conformity (CoC) for low voltage switch gear and control
-                gear, machinery, and electric equipment. Once the manufacturers are
-                certified, they are allowed to use the BIS Standard mark, indicating
-                that their products are in accordance with the standards laid down in
+                Di bawah Skema X, produsen dapat mengajukan Lisensi BIS atau
+                Sertifikat Kesesuaian (CoC) untuk sakelar tegangan rendah dan peralatan kontrol,
+                mesin, dan peralatan listrik. Setelah produsen disertifikasi, mereka diizinkan menggunakan tanda Standar BIS, menunjukkan
+                bahwa produk mereka sesuai dengan standar yang ditetapkan di
                 India.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                The certification, while promoting the product and compliance with the
-                Indian Standards and Government Regulations, helps develop trust and
-                confidence of the consumers in the certified products.
+                Sertifikasi, sambil mempromosikan produk dan kepatuhan dengan Standar India dan Peraturan Pemerintah, membantu mengembangkan kepercayaan dan keyakinan konsumen dalam produk bersertifikat.
             </p>
 
 
             <h2 className="service-left-content-heading-three">
-                What is Scheme X Certification?
+                Apa itu Sertifikasi Skema X?
             </h2>
 
 
             <p className="service-left-content-paragraph">
-                Scheme X is a product certification scheme developed under the BIS
-                Conformity Assessment Regulations, 2018 and later on, simplified under
-                the BIS Conformity Assessment (Amendment) Regulations, 2022.
+                Skema X adalah skema sertifikasi produk yang dikembangkan di bawah Peraturan Penilaian Kesesuaian BIS, 2018 dan kemudian disederhanakan di bawah Peraturan Penilaian Kesesuaian BIS (Amandemen), 2022.
             </p>
 
 
 
             <p className="service-left-content-paragraph">
-                The main goal is to bring the Indian safety and quality standards to
-                global standards, especially with regard to the industrial machinery and
-                electrical equipment. The products manufactured in or imported to India
-                under this scheme are subjected to rigorous scrutiny and assessment to
-                prove technical, safety, as well as performance standards.
+                Tujuan utama adalah membawa standar keselamatan dan kualitas India ke standar global, terutama berkaitan dengan mesin industri dan peralatan listrik. Produk yang diproduksi di atau diimpor ke India di bawah skema ini tunduk pada pengawasan dan penilaian ketat untuk membuktikan standar teknis, keselamatan, serta kinerja.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                Provisions under the original scope of Scheme X Certification have been
-                revised for and expanded with the newly issued Machinery and Electrical
-                Equipment Safety (Omnibus Technical Regulation) Order, 2024, which is
-                under the jurisdiction of the Ministry of Heavy Industries and has been
-                brought into force by the BIS. The order comes into effect on 1st
-                September 2026, and covers a broad spectrum of machinery and electrical
-                equipment such as pumps for handling liquids, compressors, cranes,
-                rotary electrical machines, transformers, and switchgear and control
-                gear.
+                Ketentuan di bawah ruang lingkup asli Sertifikasi Skema X telah direvisi untuk dan diperluas dengan Perintah Peraturan Teknis Omnibus (Keselamatan Mesin dan Peralatan Listrik) yang baru dikeluarkan, 2024, yang berada di bawah yurisdiksi Kementerian Industri Berat dan telah diberlakukan oleh BIS. Perintah ini berlaku mulai 1 September 2026, dan mencakup spektrum luas mesin dan peralatan listrik seperti pompa untuk menangani cairan, kompresor, derek,
+                mesin listrik putar, transformator, dan switchgear dan control gear.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                Assemblies, sub-assemblies and components of such machinery or equipment
-                are also part of the certification scope as per Section 16 of the Bureau
-                of Indian Standards Act, 2016.
+                Rakitan, sub-rakitan dan komponen mesin atau peralatan tersebut juga merupakan bagian dari ruang lingkup sertifikasi sesuai Bagian 16 Undang-Undang Biro Standar India, 2016.
             </p>
 
             <p className="service-left-content-paragraph">
-                Moreover, under the 1989 CMVR Rules (Construction and Manufacture of
-                Valve Regulation), Bowser and other types of construction equipment
-                under the jurisdiction of Scheme X, are ensured that the market does not
-                get exposed to the equipment which lacks the requisite of safety and
-                technical standards.
+                Selain itu, di bawah Aturan CMVR 1989 (Konstruksi dan Manufaktur Peraturan Katup), Bowser dan jenis peralatan konstruksi lainnya di bawah yurisdiksi Skema X, memastikan pasar tidak terpapar peralatan yang tidak memiliki persyaratan keselamatan dan standar teknis.
             </p>
 
 
             <h2 className="service-left-content-heading-three">
-                Omnibus Technical Regulation (OTR)
+                Peraturan Teknis Omnibus (OTR)
             </h2>
 
 
             <p className="service-left-content-paragraph">
-                The Ministry of Heavy Industries released the &ldquo;Omnibus Technical
-                Regulation on Safety Orders (Machinery and Electric equipment
-                Safety)&rdquo; via E-Gazette notification of August 28, 2024. This
-                innovative regulation intends to improve - safety, quality and
-                compliance of machinery, electrical equipment and their assemblies, sub
-                assemblies and components, under Scheme X of the BIS Regulation, 2016.
+                Kementerian Industri Berat merilis &ldquo;Peraturan Teknis Omnibus tentang Perintah Keselamatan (Keselamatan Mesin dan Peralatan Listrik)&rdquo; melalui pemberitahuan E-Gazette tanggal 28 Agustus 2024. Peraturan inovatif ini dimaksudkan untuk meningkatkan - keselamatan, kualitas dan kepatuhan mesin, peralatan listrik dan rakitannya, sub
+                rakitan dan komponen, di bawah Skema X Peraturan BIS, 2016.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                Under the OTR, all categories of machinery and electrical equipment, and
-                all their parts and components are included. However, a few categories
-                are specifically excluded:
+                Di bawah OTR, semua kategori mesin dan peralatan listrik, dan semua bagian dan komponennya disertakan. Namun, beberapa kategori secara khusus dikecualikan:
             </p>
 
             <PointsListWithoutHeading
                 points={[
-                    "Any machinery and components that are a part of any other order under Section 16 which is issued under the Bureau of Indian Standards Act, 2016.",
-                    "Manufactured domestic goods and articles that are only intended for export.",
-                    "Construction machinery and equipment which are under the CMVR Rules, 1989, prescribed by the Ministry of Road Transport and Highways (MoRTH).",
+                    "Mesin dan komponen apa pun yang merupakan bagian dari perintah lain di bawah Bagian 16 yang dikeluarkan di bawah Undang-Undang Biro Standar India, 2016.",
+                    "Barang dan artikel domestik yang diproduksi hanya dimaksudkan untuk ekspor.",
+                    "Mesin dan peralatan konstruksi yang berada di bawah Aturan CMVR, 1989, yang ditentukan oleh Kementerian Transportasi Jalan dan Jalan Raya (MoRTH).",
                 ]}
             />
 
 
             <p className="service-left-content-paragraph">
-                These exceptions are made to facilitate compliance and avoid unnecessary
-                duplication of regulation in order to promote ease of doing business.
+                Pengecualian ini dibuat untuk memfasilitasi kepatuhan dan menghindari duplikasi regulasi yang tidak perlu untuk mempromosikan kemudahan berusaha.
             </p>
 
 
 
             <p className="service-left-content-paragraph">
-                The Omnibus Technical Regulation, 2024 covers all machinery and
-                electrical equipment, including low voltage switchgear and control gear
-                notified by the Ministry of Heavy Industries, will be treated under the
-                Scheme X framework of BIS Certification. The Order will come into effect
-                on the 1st of September 2026 so that the manufacturers and importer have
-                enough to modify their operations as per the Orders issued.
+                Peraturan Teknis Omnibus, 2024 mencakup semua mesin dan peralatan listrik, termasuk sakelar tegangan rendah dan peralatan kontrol yang diberitahukan oleh Kementerian Industri Berat, akan diperlakukan di bawah kerangka Skema X Sertifikasi BIS. Perintah ini akan berlaku pada tanggal 1
+                September 2026 sehingga produsen dan importir memiliki cukup untuk memodifikasi operasi mereka sesuai dengan Perintah yang dikeluarkan.
             </p>
 
 
             <h2 className="service-left-content-heading-three">
-                BIS Certification under the Omnibus Technical Regulation
+                Sertifikasi BIS di bawah Peraturan Teknis Omnibus
             </h2>
 
 
             <p className="service-left-content-paragraph">
-                As per the OTR 2024, manufacturers, as well as importers, of machinery
-                and electrical equipment which include pumps, pumps, compressors,
-                centrifuges, cranes, transformers, and switchgears must apply for BIS
-                Certification under Scheme X.
+                Sesuai OTR 2024, produsen, serta importir, mesin dan peralatan listrik yang mencakup pompa, pompa, kompresor, centrifuge, derek, transformator, dan switchgear harus mengajukan Sertifikasi BIS di bawah Skema X.
             </p>
 
 
 
             <p className="service-left-content-paragraph">
-                Under Scheme X, manufacturers can opt to apply for:
+                Di bawah Skema X, produsen dapat memilih untuk mengajukan:
             </p>
 
 
             <PointsListWithoutHeading
-                points={["A BIS Licence, or", "A Certificate of Conformity (CoC)"]}
+                points={["Lisensi BIS, atau", "Sertifikat Kesesuaian (CoC)"]}
             />
 
 
             <p className="service-left-content-paragraph">
-                Products bearing the BIS Standard Mark which is a Mark of Conformity
-                which certifies and assures the users that the product is safe,
-                reliable, and of good quality. It is also a mark of trust and really
-                good performance.
+                Produk yang membawa Tanda Standar BIS yang merupakan Tanda Kesesuaian yang mensertifikasi dan meyakinkan pengguna bahwa produk tersebut aman,
+                andal, dan berkualitas baik. Ini juga merupakan tanda kepercayaan dan kinerja yang benar-benar baik.
             </p>
 
 
             <h3 className="service-left-content-heading-three">
-                Special Note for MSMEs
+                Catatan Khusus untuk UMKM
             </h3>
 
 
             <p className="service-left-content-paragraph">
-                As with many other sectors, Micro, Small, and Medium Enterprises (MSMEs)
-                must also comply with Scheme X and obtain BIS Certification for their
-                machinery and electrical equipment. While it may appear that compliance
-                with the regulatory requirements may be challenging, the Scheme X
-                certificate is a value addition and advantage to MSMEs for the following
-                reasons:
+                Seperti halnya banyak sektor lain, Usaha Mikro, Kecil, dan Menengah (UMKM)
+                juga harus mematuhi Skema X dan mendapatkan Sertifikasi BIS untuk mesin dan peralatan listrik mereka. Meskipun tampak bahwa kepatuhan dengan persyaratan regulasi mungkin menantang, sertifikat Skema X adalah penambahan nilai dan keuntungan bagi UMKM karena alasan berikut:
             </p>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Proves adherence to legal and other requisite obligations set by the government.",
-                    "Increase the product's reputation and consumer trust.",
-                    "Facilitates access to a larger domestic and overseas market.",
-                    "Improves the MSME's standing globally with respect to competitiveness, safety, and quality.",
+                    "Membuktikan kepatuhan terhadap kewajiban hukum dan kewajiban lain yang ditetapkan oleh pemerintah.",
+                    "Meningkatkan reputasi produk dan kepercayaan konsumen.",
+                    "Memfasilitasi akses ke pasar domestik dan luar negeri yang lebih besar.",
+                    "Meningkatkan posisi UMKM secara global sehubungan dengan daya saing, keselamatan, dan kualitas.",
                 ]}
             />
 
 
             <h3 className="service-left-content-heading-three">
-                BIS Scheme X Logo
+                Logo BIS Skema X
             </h3>
 
 
 
             <p className="service-left-content-paragraph">
-                The BIS standard mark of Scheme X forms a quality mark and a principle
-                of trust. The Logo contains:
+                Tanda standar BIS Skema X membentuk tanda kualitas dan prinsip
+                kepercayaan. Logo berisi:
             </p>
 
 
 
             <PointsListWithoutHeading
                 points={[
-                    "the standard number is displayed in the top portion of the logo; and",
-                    "the license number displayed in the bottom portion of the Logo in the format: CM/L-XXXXXXXXXX",
+                    "nomor standar ditampilkan di bagian atas logo; dan",
+                    "nomor lisensi ditampilkan di bagian bawah Logo dalam format: CM/L-XXXXXXXXXX",
                 ]}
             />
 
 
 
             <p className="service-left-content-paragraph">
-                This mark signifies that a BIS Licence has been successfully issued to
-                the manufacturer. It entitles the manufacturer to place the BIS Mark and
-                assures the consumers that the product is authentic and safe.
+                Tanda ini menandakan bahwa Lisensi BIS telah berhasil dikeluarkan ke
+                produsen. Ini memberi hak kepada produsen untuk menempatkan Tanda BIS dan
+                meyakinkan konsumen bahwa produk tersebut asli dan aman.
             </p>
 
 
             <div className="flex justify-center mt-[20px] md:mt-[26px]">
                 <img
                     src="/services-images/scheme-x-logo.png"
-                    alt="BIS Scheme X logo"
-                    title="BIS Scheme X Certification"
+                    alt="Logo BIS Skema X"
+                    title="Sertifikasi BIS Skema X"
                     className="max-w-full h-auto rounded-lg shadow-md"
                 />
             </div>
 
 
             <h3 className="service-left-content-heading-three">
-                Legal Implications
+                Implikasi Hukum
             </h3>
 
 
             <p className="service-left-content-paragraph">
-                BIS Standard Mark is a mark of trust and quality. The mark is only
-                available after a valid contract is in place. Only a valid contract
-                allows the owner to use the mark. Using the mark without a valid
-                contract is an offense under the Indian constitution and is equal to
-                having a legal mark. The owner of the mark is placed under heavy
-                restrictions for the use of the license CM/L-XXXXXXXXXX for products
-                that have no BIS certification.
+                Tanda Standar BIS adalah tanda kepercayaan dan kualitas. Tanda hanya
+                tersedia setelah kontrak yang valid ada. Hanya kontrak yang valid
+                mengizinkan pemilik untuk menggunakan tanda. Menggunakan tanda tanpa kontrak yang valid adalah pelanggaran di bawah konstitusi India dan sama dengan memiliki tanda hukum. Pemilik tanda ditempatkan di bawah pembatasan berat untuk penggunaan lisensi CM/L-XXXXXXXXXX untuk produk
+                yang tidak memiliki sertifikasi BIS.
             </p>
 
 
 
 
             <p className="service-left-content-paragraph">
-                It follows that every producer is obliged to:
+                Oleh karena itu, setiap produsen diwajibkan untuk:
             </p>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Acquire a valid BIS License under Scheme X.",
-                    "Satisfy the relevant requirements of Indian Standards; and",
-                    "Properly affix the products with the approved BIS Logo.",
+                    "Memperoleh Lisensi BIS yang valid di bawah Skema X.",
+                    "Memenuhi persyaratan yang relevan dari Standar India; dan",
+                    "Menempelkan produk dengan benar dengan Logo BIS yang disetujui.",
                 ]}
             />
 
 
             <p className="service-left-content-paragraph">
-                This regulatory framework is extended to protect the interests of
-                consumers and business people, fostering a market that emphasizes
-                safety, openness, and confidence.
+                Kerangka regulasi ini diperluas untuk melindungi kepentingan
+                konsumen dan pebisnis, memupuk pasar yang menekankan
+                keselamatan, keterbukaan, dan kepercayaan.
             </p>
 
 
 
             <h2 className="service-left-content-heading-three">
-                Key Differences Between Scheme-I and Scheme-X
+                Perbedaan Utama Antara Skema-I dan Skema-X
             </h2>
 
 
             <h3 className="service-left-content-heading-three">
-                Scheme-I
+                Skema-I
             </h3>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Includes a wider category of consumer products such as electronics, home appliances, and even industrial products.",
-                    "Products issued a certificate under this scheme must have the Standard ISI Mark.",
-                    "Relates to both domestic and foreign manufacturers.",
-                    "Involves factory audits and sample testing to determine quality and compliance with Indian Standards.",
+                    "Termasuk kategori produk konsumen yang lebih luas seperti elektronik, peralatan rumah tangga, dan bahkan produk industri.",
+                    "Produk yang dikeluarkan sertifikat di bawah skema ini harus memiliki Tanda ISI Standar.",
+                    "Berhubungan dengan produsen domestik maupun asing.",
+                    "Melibatkan audit pabrik dan pengujian sampel untuk menentukan kualitas dan kepatuhan dengan Standar India.",
                 ]}
             />
 
             <h3 className="service-left-content-heading-three">
-                Scheme-X
+                Skema-X
             </h3>
 
             <PointsListWithoutHeading
                 points={[
-                    "Addresses high-risk industrial and safety critical engineering products, which include electrical equipment, machinery, and industrial systems of considerable duty.",
-                    "The certification is of greater rigor than Scheme-I. It involves advanced technical reporting, compliance checking, and extensive certification audits.",
-                    "Scheme-X tends to be more expensive than Scheme-I because of the extra compliance documentation.",
-                    "Any business that deals with electrical equipment or industrial machinery is mandated to obtain certification under Scheme-X.",
+                    "Membahas produk rekayasa industri dan kritis keselamatan berisiko tinggi, yang mencakup peralatan listrik, mesin, dan sistem industri dengan tugas yang cukup besar.",
+                    "Sertifikasi lebih ketat daripada Skema-I. Ini melibatkan pelaporan teknis lanjutan, pemeriksaan kepatuhan, dan audit sertifikasi yang luas.",
+                    "Skema-X cenderung lebih mahal daripada Skema-I karena dokumentasi kepatuhan ekstra.",
+                    "Setiap bisnis yang berurusan dengan peralatan listrik atau mesin industri diwajibkan untuk mendapatkan sertifikasi di bawah Skema-X.",
                 ]}
             />
 
@@ -2357,70 +2291,70 @@ const SchemeXMainContentLeftOverviewSection = () => {
                     <TableHeader className="bg-[#F9F7F2]">
                         <TableRow className="bg-[#1A8781]/10">
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                                Feature
+                                Fitur
                             </TableHead>
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                                ISI Mark
+                                Tanda ISI
                             </TableHead>
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                                Scheme X
+                                Skema X
                             </TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody className="bg-white divide-y divide-gray-200">
                         <TableRow className="hover:bg-gray-50">
                             <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Managed by
+                                Dikelola oleh
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Indian BIS
+                                BIS India
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Indian BIS
+                                BIS India
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
                             <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Certification Type
+                                Jenis Sertifikasi
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                BIS licence
+                                Lisensi BIS
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                BIS certificate / BIS licence
+                                Sertifikat BIS / Lisensi BIS
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
                             <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Target Products
+                                Produk Target
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Consumer goods
+                                Barang konsumen
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Machinery & electrical equipment
+                                Mesin & peralatan listrik
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
                             <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Mark Used
+                                Tanda yang Digunakan
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                ISI mark
+                                Tanda ISI
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                BIS standard mark (under Scheme X)
+                                Tanda standar BIS (di bawah Skema X)
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
                             <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Compliance Level
+                                Tingkat Kepatuhan
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Indian standard compliance
+                                Kepatuhan standar India
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                High-end technical and safety compliance
+                                Kepatuhan teknis dan keselamatan tingkat tinggi
                             </TableCell>
                         </TableRow>
                     </TableBody>
@@ -2429,23 +2363,23 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
 
             <h3 className="service-left-content-heading-three">
-                Products Covered by Scheme-X
+                Produk yang Dicakup oleh Skema-X
             </h3>
 
 
             <p className="service-left-content-paragraph">
-                Scheme-X covers products with the highest risk to safety and
-                performance, including:
+                Skema-X mencakup produk dengan risiko tertinggi terhadap keselamatan dan
+                kinerja, termasuk:
             </p>
 
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Electrical Equipment: Industrial transformers, power supply units, and the like, low-voltage switchgear and control gear, plus other high-voltage devices.",
-                    "Heavy Machinery: Hydraulic presses, industrial cranes, automated machine tools, and specialized equipment for large-scale industries.",
-                    "Life-Critical Equipment: Fire extinguishers, pressure vessels, emergency electrical systems, and other devices and systems for life safety.",
-                    "Specialized Consumer & Industrial Electronics: Medical grade electronic appliances and equipment incorporating advanced protective measures.",
+                    "Peralatan Listrik: Transformator industri, unit catu daya, dan sejenisnya, switchgear dan control gear tegangan rendah, ditambah perangkat tegangan tinggi lainnya.",
+                    "Mesin Berat: Press hidraulik, derek industri, alat mesin otomatis, dan peralatan khusus untuk industri skala besar.",
+                    "Peralatan Kritis Hidup: Pemadam api, bejana tekan, sistem listrik darurat, dan perangkat serta sistem lain untuk keselamatan hidup.",
+                    "Elektronik Konsumen & Industri Khusus: Peralatan dan perangkat elektronik kelas medis yang menggabungkan langkah-langkah pelindung lanjutan.",
                 ]}
             />
 
@@ -2456,13 +2390,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                     <TableHeader className="bg-[#F9F7F2]">
                         <TableRow className="bg-[#1A8781]/10">
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                                Serial No.
+                                No. Seri
                             </TableHead>
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                                Description of Machinery and Electrical Equipment
+                                Deskripsi Mesin dan Peralatan Listrik
                             </TableHead>
                             <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                                HS Code
+                                Kode HS
                             </TableHead>
                         </TableRow>
                     </TableHeader>
@@ -2476,12 +2410,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of Pumps for handling liquids, liquid elevators and
-                                    (or)their assemblies /sub-assemblies /components
+                                    Semua jenis Pompa untuk menangani cairan, elevator cairan dan
+                                    (atau) rakitannya /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                841340, 841350, 841360, 841370, 841381, 841382, 841391 and
+                                841340, 841350, 841360, 841370, 841381, 841382, 841391 dan
                                 841392
                             </TableCell>
                         </TableRow>
@@ -2494,13 +2428,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-compressors"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of compressors and(or)their assemblies /sub-assemblies
-                                    /components
+                                    Semua jenis kompresor dan(atau) rakitannya /sub-rakitan
+                                    /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 841430, 841440, 84148011, 84148090, 84149011, 84149019, 84149040
-                                and 84149090
+                                dan 84149090
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2512,13 +2446,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-heat-treatment-equipment"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of machinery for treatment of material by a process
-                                    involving a change of temperature and(or)their assemblies
-                                    /sub-assemblies /components
+                                    Semua jenis mesin untuk pengolahan bahan dengan proses
+                                    yang melibatkan perubahan suhu dan(atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                841932, 841939, 841940, 841950, 841960, 841981, 841989 and
+                                841932, 841939, 841940, 841950, 841960, 841981, 841989 dan
                                 84199090
                             </TableCell>
                         </TableRow>
@@ -2531,14 +2465,14 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of centrifuges, filtering or purifying machinery for
-                                    liquid and gas and(or)their assemblies /sub-assemblies
-                                    /components
+                                    Semua jenis centrifuge, mesin penyaringan atau pemurnian untuk
+                                    cairan dan gas dan(atau) rakitannya /sub-rakitan
+                                    /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 842111, 842112, 842119, 84212110, 84212190, 842122, 842129,
-                                842131, 842139, 842191 and 842199
+                                842131, 842139, 842191 dan 842199
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2550,13 +2484,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-packing-machinery"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of machinery for filling, closing, sealing, labelling
-                                    bottles, packing or wrapping and(or)their
-                                    assemblies/sub-assemblies/components
+                                    Semua jenis mesin untuk mengisi, menutup, menyegel, memberi label
+                                    botol, mengemas atau membungkus dan(atau) rakitannya
+                                    /sub-rakitan/komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                842220, 842230, 842240 and 842290
+                                842220, 842230, 842240 dan 842290
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2568,13 +2502,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-cranes"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of cranes and (or) their assemblies
-                                    /sub-assemblies/components
+                                    Semua jenis derek dan (atau) rakitannya
+                                    /sub-rakitan/komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691
-                                and 84269990
+                                dan 84269990
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2586,13 +2520,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-construction-machinery"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of machinery for construction, earthmoving, Mining and
-                                    (or)their assemblies /sub-assemblies/components
+                                    Semua jenis mesin untuk konstruksi, penggerak tanah, Penambangan dan
+                                    (atau) rakitannya /sub-rakitan/komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                                 8429, 843010, 843020, 843031, 843039, 843041, 843049, 843050,
-                                843141, 843142, 843143 and 843149
+                                843141, 843142, 843143 dan 843149
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2604,12 +2538,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-weaving-machines-looms"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of weaving machines (looms) and (or)their
-                                    assemblies/sub-assemblies / components
+                                    Semua jenis mesin tenun (loom) dan (atau) rakitannya
+                                    /sub-rakitan / komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                8446, 844811, 844819, 844842 and 844849
+                                8446, 844811, 844819, 844842 dan 844849
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2621,12 +2555,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-embroidery-machinery"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of machinery for making embroidery and(or)their
-                                    assemblies /sub-assemblies /components
+                                    Semua jenis mesin untuk membuat bordir dan(atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                84479020 and 844859
+                                84479020 dan 844859
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2638,13 +2572,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of metal cutting machines tools covered under the
-                                    heading 8456 to 8461 and(or)their assemblies
-                                    /sub-assemblies/components
+                                    Semua jenis alat mesin pemotong logam yang dicakup di bawah
+                                    heading 8456 hingga 8461 dan(atau) rakitannya
+                                    /sub-rakitan/komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                8456, 8457, 8458, 8459, 8460, 8461 and 846693
+                                8456, 8457, 8458, 8459, 8460, 8461 dan 846693
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2656,13 +2590,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-machine-tools"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of machine tools for working stone, ceramics,
-                                    concrete, asbestos cement or like mineral glass and (or)their
-                                    assemblies /sub-assemblies /components
+                                    Semua jenis alat mesin untuk bekerja batu, keramik,
+                                    beton, semen asbes atau seperti mineral kaca dan (atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                8464 and 84669100
+                                8464 dan 84669100
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2674,8 +2608,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of machinery for working rubber and plastics and(or)
-                                    their assemblies /sub-assemblies /components
+                                    Semua jenis mesin untuk bekerja karet dan plastik dan(atau)
+                                    rakitannya /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2691,14 +2625,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of Machines including the machines for public works &
-                                    building and the machinery & mechanical appliances having
-                                    individual functions, not specified Or included elsewhere in
-                                    Chapter 84 and(or)their assemblies/sub-assemblies /components
+                                    Semua jenis Mesin termasuk mesin untuk pekerjaan umum &
+                                    bangunan dan mesin & peralatan mekanik yang memiliki fungsi individu, tidak ditentukan Atau disertakan di tempat lain di Bab 84 dan(atau) rakitannya/sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                84791000, 84798999 and 84799090
+                                84791000, 84798999 dan 84799090
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2710,14 +2642,14 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of gears and gearing, toothed wheels, chain sprocket,
-                                    transmission elements ball or roller screws, gear boxes and
-                                    speed changers, including torque converters And (or)their
-                                    assemblies /sub-assemblies /components
+                                    Semua jenis roda gigi dan roda gigi, roda bergigi, sproket rantai,
+                                    elemen transmisi sekrup bola atau rol, kotak gigi dan
+                                    pengubah kecepatan, termasuk konverter torsi Dan (atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                84834000 and 84839000
+                                84834000 dan 84839000
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2729,12 +2661,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-rotary-electrical-machines"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of Rotary electrical machines such as Generator, etc.
-                                    and (or) their assemblies /sub-assemblies /components
+                                    Semua jenis mesin listrik putar seperti Generator, dll.
+                                    dan (atau) rakitannya /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                8501 and 8503
+                                8501 dan 8503
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2746,12 +2678,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-diesel-generators"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of Diesel Generator and (or)their assemblies
-                                    /sub-assemblies /components
+                                    Semua jenis Generator Diesel dan (atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                8502 and 8503
+                                8502 dan 8503
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2763,12 +2695,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-transformers"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of Transformers and (or)their assemblies
-                                    /sub-assemblies /components
+                                    Semua jenis Transformator dan (atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                850421, 850422, 850423, 850431, 850432, 850433, 850434 and
+                                850421, 850422, 850423, 850431, 850432, 850433, 850434 dan
                                 850490
                             </TableCell>
                         </TableRow>
@@ -2781,8 +2713,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-power-semiconductor-converters"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of Power Semiconductor Converter and (or)their
-                                    assemblies /sub-assemblies /components
+                                    Semua jenis Konverter Semikonduktor Daya dan (atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2798,13 +2730,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of switch gear and control gear equipment operating at
-                                    voltages not exceeding 1000 volts and (or)their assemblies
-                                    /sub-assemblies /components
+                                    Semua jenis peralatan switch gear dan control gear yang beroperasi pada
+                                    tegangan tidak melebihi 1000 volt dan (atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                8536, 8537 and 8538
+                                8536, 8537 dan 8538
                             </TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-gray-50">
@@ -2816,13 +2748,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                     to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
                                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                                 >
-                                    All types of switch gear and control gear equipment operating at
-                                    voltages exceeding 1000 volts and (or) their assemblies
-                                    /sub-assemblies /components
+                                    Semua jenis peralatan switch gear dan control gear yang beroperasi pada
+                                    tegangan melebihi 1000 volt dan (atau) rakitannya
+                                    /sub-rakitan /komponennya
                                 </Link>
                             </TableCell>
                             <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                8535, 8537 and 8538
+                                8535, 8537 dan 8538
                             </TableCell>
                         </TableRow>
                     </TableBody>
@@ -2831,10 +2763,10 @@ const SchemeXMainContentLeftOverviewSection = () => {
                 {/* Heading and Description */}
                 <div className="mb-6">
                     <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
-                        Product wise Safety Standard
+                        Standar Keselamatan Berdasarkan Produk
                     </h3>
                     <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-                        Description of Machinery and Electrical Equipment
+                        Deskripsi Mesin dan Peralatan Listrik
                     </p>
                 </div>
 
@@ -2857,100 +2789,99 @@ const SchemeXMainContentLeftOverviewSection = () => {
                                 d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                             />
                         </svg>
-                        Download PDF
+                        Unduh PDF
                     </button>
                 </div>
             </div>
 
             <h2 className="service-left-content-heading-three">
-                Safety Standards Under BIS Scheme - X
+                Standar Keselamatan di bawah BIS Skema - X
             </h2>
 
 
 
             <p className="service-left-content-paragraph">
-                More than simply a legal necessity, the BIS Scheme - X Certification
-                offers a promise of safety, quality, and reliability. This
-                Certification, which entails strict adherence to national and
-                international norms, ensures that the machinery and electrical apparatus
-                offered to users are safe, environmentally friendly, and technically
-                sound.
+                Lebih dari sekadar kebutuhan hukum, Sertifikasi BIS Skema - X
+                menawarkan janji keselamatan, kualitas, dan keandalan. Sertifikasi ini,
+                yang melibatkan kepatuhan ketat terhadap norma nasional dan
+                internasional, memastikan bahwa mesin dan peralatan listrik
+                yang ditawarkan kepada pengguna aman, ramah lingkungan, dan secara teknis
+                baik.
             </p>
 
 
             <p className="service-left-content-paragraph">
-                To certify under Scheme - X, manufacturers need to comply with the
-                following major safety components:
+                Untuk mensertifikasi di bawah Skema - X, produsen perlu mematuhi
+                komponen keselamatan utama berikut:
             </p>
 
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Electrical Safety: Compliance with the applicable IEC and Indian Standards. Certification protects against short circuits, electric shocks, insulation breakdown, loss in protective earth, ignition of surrounding combustible material, and fire.",
-                    "Mechanical Safety: Assessment of the machinery's structural integrity and the integrity of moving parts and of new materials. Ensures that equipment is safely subjected to mechanical stress, wear, and operational hazards.",
-                    "Fire Safety: The use of materials that are designed and constructed with fire resistant material. Compliance with standards for flame propagation performance to control the risks associated with fire.",
-                    "Environmental Compliance: The use of controlled power and eco - friendly materials in the production of equipment. Encourages manufacturers to lessen the environmental impact of their equipment.",
-                    "Quality Management: Dominant and autonomous control on the production processes to maintain the pre-set standards and norms. Focus on regulation of factory conditions, including process audits, and continual adherence.",
+                    "Keselamatan Listrik: Kepatuhan dengan Standar IEC dan India yang berlaku. Sertifikasi melindungi terhadap hubung singkat, kejutan listrik, kerusakan isolasi, hilangnya bumi pelindung, penyalaan bahan mudah terbakar sekitar, dan kebakaran.",
+                    "Keselamatan Mekanis: Penilaian integritas struktural mesin dan integritas bagian bergerak dan bahan baru. Memastikan bahwa peralatan aman terhadap tekanan mekanis, keausan, dan bahaya operasional.",
+                    "Keselamatan Kebakaran: Penggunaan bahan yang dirancang dan dibangun dengan bahan tahan api. Kepatuhan dengan standar kinerja propagasi api untuk mengendalikan risiko yang terkait dengan kebakaran.",
+                    "Kepatuhan Lingkungan: Penggunaan daya yang terkendali dan bahan ramah lingkungan dalam produksi peralatan. Mendorong produsen untuk mengurangi dampak lingkungan dari peralatan mereka.",
+                    "Manajemen Kualitas: Kontrol dominan dan otonom pada proses produksi untuk mempertahankan standar dan norma yang telah ditetapkan. Fokus pada regulasi kondisi pabrik, termasuk audit proses, dan kepatuhan berkelanjutan.",
                 ]}
             />
 
 
 
             <h2 className="service-left-content-heading-three">
-                Regulatory Standards Under Scheme-X
+                Standar Regulasi di bawah Skema-X
             </h2>
 
 
             <p className="service-left-content-paragraph">
-                Manufacturers are required to comply with the Relevant Indian Standards
-                which are aligned with the International Standards, including:
+                Produsen diwajibkan mematuhi Standar India yang Relevan yang selaras dengan Standar Internasional, termasuk:
             </p>
 
 
             <h3 className="service-left-content-heading-three">
-                Type A Standards:
+                Standar Tipe A:
             </h3>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "IS 16819:2018 / ISO 12100:2010 – Safety of Machinery: General Principles for the Design, Risk Assessment, and Risk Reduction.",
+                    "IS 16819:2018 / ISO 12100:2010 – Keselamatan Mesin: Prinsip Umum untuk Desain, Penilaian Risiko, dan Pengurangan Risiko.",
                 ]}
             />
 
 
             <h3 className="service-left-content-heading-three">
-                Type B Standards:
+                Standar Tipe B:
             </h3>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Described in the Second Schedule of the Omnibus Technical Regulation (OTR) Order, 2024.",
+                    "Diuraikan dalam Jadwal Kedua Peraturan Teknis Omnibus (OTR) Order, 2024.",
                 ]}
             />
 
 
 
             <h3 className="service-left-content-heading-three">
-                Type C Standards:
+                Standar Tipe C:
             </h3>
 
 
             <PointsListWithoutHeading
-                points={["Described in the Third Schedule of the OTR Order, 2024."]}
+                points={["Diuraikan dalam Jadwal Ketiga OTR Order, 2024."]}
             />
 
 
             <h3 className="service-left-content-heading-three">
-                IS/IEC 60947 Series:
+                Seri IS/IEC 60947:
             </h3>
 
 
             <PointsListWithoutHeading
                 points={[
-                    "Cover low voltage switchgear and control gear in multiple parts and sections.",
+                    "Mencakup switchgear dan control gear tegangan rendah dalam beberapa bagian dan seksi.",
                 ]} />
         </div>
     )
