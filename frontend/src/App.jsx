@@ -152,6 +152,10 @@ import SchemeXIndonesian from "./pages/SchemeX/SchemeXIndonesian";
 import SchemeXVietnamese from "./pages/SchemeX/SchemeXVietnamese";
 import IndonesiaBlog from "./blogs/IndonesiaBlog";
 import SchemeXItalian from "./pages/SchemeX/SchemeXItalian";
+import SchemeXKorean from "./pages/SchemeX/SchemeXKorean";
+import SchemeXDutch from "./pages/SchemeX/SchemeXDutch";
+import SchemeXArabic from "./pages/SchemeX/SchemeXArabic";
+import SchemeXThai from "./pages/SchemeX/SchemeXThai";
 
 
 function App() {
@@ -239,6 +243,30 @@ function App() {
           <Route
             path="/it/certificazione-bis-indiana-secondo-schema-x"
             element={<SchemeXItalian />}
+          />
+
+          {/* Scheme X Korean Page */}
+          <Route
+            path="/ko/indo-bis-injeung-scheme-x-haenghaeng"
+            element={<SchemeXKorean />}
+          />
+
+          {/* Scheme X Dutch Page */}
+          <Route
+            path="/nl/indiaas-bis-certificaat-volgens-schema-x"
+            element={<SchemeXDutch />}
+          />
+
+          {/* Scheme X Arabic Page */}
+          <Route
+            path="/ar/shahadat-bis-alhind-tahata-almukhatat-x"
+            element={<SchemeXArabic />}
+          />
+
+             {/* Scheme X Thai Page */}
+          <Route
+            path="/th/bis-prathiap-india-taem-dai-tae-skema-x"
+            element={<SchemeXThai />}
           />
 
 
@@ -788,7 +816,7 @@ function App() {
 
       {!isAdminRoute && <MobileNav />}
       {!isAdminRoute && <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />}
-      {!isAdminRoute && <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />}
+      {/* {!isAdminRoute && <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />} */}
     </>
   );
 }
