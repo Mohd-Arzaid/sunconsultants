@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -48,6 +49,30 @@ import ServicesRightSideContentSpanish from "@/components/manual/ServicesRightSi
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
+const SchemeXSpanish = () => {
+    return (
+        <div className="relative">
+            {/* Scheme X English Meta Tags */}
+            <SchemeXSpanishMetaTags />
+            {/* Scheme X English Breadcrumb */}
+            <SchemeXSpanishBreadcrumb />
+            {/* Scheme X English Hero Section */}
+            <SchemeXSpanishHero />
+            {/* Scheme X English Index Section */}
+            <SchemeXSpanishIndex />
+            {/* Scheme X English Main Content Section */}
+            <SchemeXSpanishMainContent />
+            {/* Footer English Section */}
+            <FooterSpanish />
+            {/* Scroll To Top Button Section */}
+            <ScrollToTopButton />
+
+        </div>
+    )
+}
+
+export default SchemeXSpanish
+
 const SchemeXSpanishMetaTags = () => {
     const breadcrumbStructuredData = {
         "@context": "https://schema.org",
@@ -57,12 +82,12 @@ const SchemeXSpanishMetaTags = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Inicio",
-                item: window.location.origin + "/es/",
+                item: window.location.origin + "/",
             },
             {
                 "@type": "ListItem",
                 position: 2,
-                name: "Certificación BIS India Bajo Esquema-X",
+                name: "Certificación BIS India bajo Scheme-X",
                 item: window.location.href,
             },
         ],
@@ -71,15 +96,15 @@ const SchemeXSpanishMetaTags = () => {
         <Helmet>
             {/* Basic Meta Tags */}
             <title>
-                Certificación BIS Esquema X | Seguridad de Maquinaria y Equipos Eléctricos
+                Certificación BIS Scheme X | Seguridad de Maquinaria y Equipos Eléctricos
             </title>
             <meta
                 name="description"
-                content="La Certificación BIS Esquema X es requerida para garantizar la calidad y seguridad de equipos de conmutación de baja tensión, aparatos de control, maquinaria y equipos eléctricos."
+                content="La Certificación BIS Scheme X es requerida para garantizar la calidad y seguridad de tableros de distribución de baja tensión, engranajes de control, maquinaria y equipos eléctricos."
             />
             <meta
                 name="keywords"
-                content="Esquema X, BIS Esquema X, Certificación BIS Esquema X, Certificación Esquema X, certificación de maquinaria, certificación de equipos eléctricos"
+                content="Scheme X, BIS Scheme X, Certificación BIS Scheme X, Certificación Scheme X, certificación de maquinaria, certificación de equipos eléctricos"
             />
 
             <meta name="author" content="Dhruv Aggarwal" />
@@ -93,11 +118,11 @@ const SchemeXSpanishMetaTags = () => {
             {/* Open Graph Meta Tags */}
             <meta
                 property="og:title"
-                content="Certificación BIS Esquema X | Seguridad de Maquinaria y Equipos Eléctricos"
+                content="Certificación BIS Scheme X | Seguridad de Maquinaria y Equipos Eléctricos"
             />
             <meta
                 property="og:description"
-                content="La Certificación BIS Esquema X es requerida para garantizar la calidad y seguridad de equipos de conmutación de baja tensión, aparatos de control, maquinaria y equipos eléctricos."
+                content="La Certificación BIS Scheme X es requerida para garantizar la calidad y seguridad de tableros de distribución de baja tensión, engranajes de control, maquinaria y equipos eléctricos."
             />
 
             <meta property="og:type" content="website" />
@@ -106,11 +131,11 @@ const SchemeXSpanishMetaTags = () => {
             {/* Twitter Meta Tags */}
             <meta
                 name="twitter:title"
-                content="Certificación BIS Esquema X | Seguridad de Maquinaria y Equipos Eléctricos"
+                content="Certificación BIS Scheme X | Seguridad de Maquinaria y Equipos Eléctricos"
             />
             <meta
                 name="twitter:description"
-                content="La Certificación BIS Esquema X es requerida para garantizar la calidad y seguridad de equipos de conmutación de baja tensión, aparatos de control, maquinaria y equipos eléctricos."
+                content="La Certificación BIS Scheme X es requerida para garantizar la calidad y seguridad de tableros de distribución de baja tensión, engranajes de control, maquinaria y equipos eléctricos."
             />
             <meta name="twitter:card" content="summary_large_image" />
 
@@ -118,10 +143,11 @@ const SchemeXSpanishMetaTags = () => {
             <script type="application/ld+json">
                 {JSON.stringify(breadcrumbStructuredData)}
             </script>
+
+
         </Helmet>
     )
 }
-
 const SchemeXSpanishBreadcrumb = () => {
     return (
         <div className="absolute md:top-5 top-3 left-0 w-full z-30">
@@ -131,14 +157,14 @@ const SchemeXSpanishBreadcrumb = () => {
                         <BreadcrumbList>
                             <BreadcrumbItem>
                                 <BreadcrumbLink asChild>
-                                    <Link to="/es">Inicio</Link>
+                                    <Link to="/">Inicio</Link>
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbSeparator>
                                 <SlashIcon />
                             </BreadcrumbSeparator>
                             <BreadcrumbItem>
-                                <BreadcrumbPage>Certificación BIS India Bajo Esquema-X
+                                <BreadcrumbPage>Certificación BIS India bajo Scheme-X
                                 </BreadcrumbPage>
                             </BreadcrumbItem>
                         </BreadcrumbList>
@@ -173,13 +199,13 @@ const SchemeXSpanishHero = () => {
 
                     <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
                         <span className="relative">
-                            Certificación BIS Esquema X
+                            Certificación BIS Scheme X
                             <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
                         </span>
                     </h1>
 
                     <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-                        La Certificación BIS Esquema X cubre Maquinaria, Equipos Eléctricos y Ensamblajes de Componentes, y Sub-ensamblajes bajo la Regulación Técnica Ómnibus (OTR).
+                        La Certificación BIS Scheme X cubre Maquinaria, Equipos Eléctricos y Ensamblajes de Componentes, y Subensamblajes bajo el Reglamento Técnico Omnibus (OTR).
                     </p>
 
 
@@ -221,8 +247,6 @@ const SchemeXSpanishHeroContactForm = () => {
     const getPageName = () => {
         const path = window.location.pathname;
         // Service pages
-        if (path.includes("/es/certificacion-bis-india-bajo-esquema-x"))
-            return "Scheme X Spanish";
         if (path.includes("/indian-bis-certification-under-scheme-x"))
             return "Scheme X";
     };
@@ -252,26 +276,28 @@ const SchemeXSpanishHeroContactForm = () => {
         e.preventDefault();
         setLoading(true);
 
+        // console.log("Form Data:", formData);
+
         // Full name validation
-        const nameRegex = /^[a-zA-ZÀ-ÿ\s.'-]{2,50}$/;
+        const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
         if (!nameRegex.test(fullName)) {
             toast({
                 variant: "destructive",
-                title: "Por favor ingrese un nombre completo válido.",
-                description: "El nombre solo debe contener letras y espacios.",
+                title: "Por favor, ingrese un nombre completo válido.",
+                description: "El nombre debe contener solo letras y espacios.",
             });
             setLoading(false);
             return;
         }
 
-        // Email validation
+        // Email validation - allow any domain
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
         if (!emailRegex.test(email)) {
             toast({
                 variant: "destructive",
-                title: "Por favor ingrese una dirección de correo electrónico válida.",
-                description: "Verifique si el formato de su correo electrónico es correcto",
+                title: "Por favor, ingrese una dirección de correo electrónico válida.",
+                description: "Verifique si el formato de su correo es correcto",
             });
             setLoading(false);
             return;
@@ -282,13 +308,14 @@ const SchemeXSpanishHeroContactForm = () => {
         if (!phoneRegex.test(phoneNumber)) {
             toast({
                 variant: "destructive",
-                title: "Por favor ingrese un número de teléfono válido",
+                title: "Por favor, ingrese un número de teléfono válido",
                 description: "El número de teléfono debe tener (8-15 dígitos)",
             });
             setLoading(false);
             return;
         }
 
+        //  console.log(BASE_URL);
         try {
             const response = await axios.post(
                 `${BASE_URL}/appointment/submit-appointment`,
@@ -299,7 +326,7 @@ const SchemeXSpanishHeroContactForm = () => {
                 throw new Error(response.data.message);
             }
             toast({
-                title: "¡Formulario de contacto enviado con éxito!",
+                title: "¡Formulario de contacto enviado exitosamente!",
                 description:
                     "Gracias por contactarnos. Nuestro equipo se pondrá en contacto con usted pronto.",
             });
@@ -319,9 +346,9 @@ const SchemeXSpanishHeroContactForm = () => {
                 error.response?.data?.message || "Algo salió mal";
             toast({
                 variant: "destructive",
-                title: errorMessage || "¡Error al enviar el formulario de contacto!",
+                title: errorMessage || "¡Error al enviar los detalles del formulario de contacto!",
                 description:
-                    "Algo salió mal. Por favor verifique sus datos e intente nuevamente.",
+                    "Algo salió mal. Por favor, verifique sus detalles e intente nuevamente.",
             });
         } finally {
             setLoading(false);
@@ -332,18 +359,18 @@ const SchemeXSpanishHeroContactForm = () => {
         <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
             <div className="flex w-full items-center gap-3">
                 <span className="uppercase font-poppins font-semibold text-[18px] md:text-[20px] text-[#008080]">
-                    Contáctenos
+                    Contáctanos
                 </span>
                 <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
 
             <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
-                Agendar una Cita
+                Reserva una Cita
             </h3>
 
             <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
-                ¿Quiere contactar a nuestro equipo y programar una llamada?
-                <span className="text-black"> Pruebe Ahora</span>
+                ¿Quieres contactar a nuestro equipo y programar una llamada?
+                <span className="text-black"> Prueba Ahora</span>
             </p>
 
             <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
@@ -366,7 +393,7 @@ const SchemeXSpanishHeroContactForm = () => {
                         name="email"
                         value={email}
                         onChange={handleOnChange}
-                        placeholder="Correo Electrónico *"
+                        placeholder="Dirección de Correo Electrónico *"
                         className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
                     />
                 </div>
@@ -414,7 +441,7 @@ const SchemeXSpanishHeroContactForm = () => {
                         name="message"
                         value={message}
                         onChange={handleOnChange}
-                        placeholder="Certificación Requerida *"
+                        placeholder="Certificación Requerida*"
                         className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
                     />
                 </div>
@@ -431,7 +458,7 @@ const SchemeXSpanishHeroContactForm = () => {
                         </div>
                     ) : (
                         <div className="flex gap-3 items-center justify-center">
-                            <span>Agendar Cita</span>
+                            <span>Reservar Cita</span>
                         </div>
                     )}
                 </Button>
@@ -439,6 +466,7 @@ const SchemeXSpanishHeroContactForm = () => {
         </div>
     );
 };
+
 
 const SchemeXSpanishIndex = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -459,7 +487,7 @@ const SchemeXSpanishIndex = () => {
     );
 
     const MENU_ITEMS = {
-        overview: "Descripción General",
+        overview: "Resumen",
         process: "Proceso",
         documents: "Documentos",
         conclusion: "Conclusión",
@@ -637,8 +665,8 @@ const SchemeXSpanishIndex = () => {
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
 const SchemeXSpanishMainContent = () => {
     return (
@@ -646,934 +674,21 @@ const SchemeXSpanishMainContent = () => {
             <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
                 <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
                     {/* Left Side */}
-                    <SchemeXSpanishMainContentLeft />
+                    <SchemeXMainContentLeft />
                     {/* Right Side */}
                     <ServicesRightSideContentSpanish />
                 </div>
             </div>
-            <SchemeXSpanishServiceFaq />
-            <SchemeXSpanishProductTable />
+            <SchemeXServiceFaq />
+            <SchemeXProductTable />
             <div id="services">
-                <ServicesSpanish />
+                <Services />
             </div>
         </div>
     )
 }
 
-/* eslint-disable react/prop-types */
-const PointsListWithoutHeading = ({ points }) => {
-    return (
-        <div className="mt-[18px] md:mt-[18px]">
-            <ul className="flex flex-col gap-3 list-none">
-                {points.map((point, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                        <div className="bg-green-500/10 p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5">
-                            <Check size={12} className="text-[#020817]" />
-                        </div>
-                        <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose flex-1">
-                            {point}
-                        </p>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-};
-/* eslint-enable react/prop-types */
-
-const SchemeXSpanishMainContentLeftOverviewSection = () => {
-    return (
-        <div id="overview" className="flex flex-col scroll-mt-20">
-            {/* Overview */}
-            <div className="flex w-full items-center gap-3">
-                <span className="service-left-content-index-heading">Descripción General</span>
-                <Separator className="service-left-content-separator" />
-            </div>
-
-
-            <h2 className="service-left-content-heading-two">
-                Introducción a la Certificación BIS Esquema X
-            </h2>
-
-            <p className="service-left-content-paragraph">
-                La Oficina de Normas de India, o BIS por sus siglas en inglés, lanzó el &ldquo;Esquema X&rdquo; el 16 de marzo de 2022, con el objetivo de mejorar el cumplimiento de la seguridad y calidad del producto en India. Los fabricantes indios y extranjeros pueden solicitar la certificación BIS para Maquinaria y equipos eléctricos, componentes como ensamblajes, sub-ensamblajes y Herramientas especificadas en el Anexo-II del Esquema-X y obtener la certificación antes de exportar, vender o distribuir en India.
-            </p>
-
-
-            <p className="service-left-content-paragraph">
-                Bajo el Esquema X, los fabricantes pueden solicitar una Licencia BIS o un Certificado de Conformidad (CoC) para equipos de conmutación y control de baja tensión, maquinaria y equipos eléctricos. Una vez que los fabricantes están certificados, se les permite usar la marca estándar BIS, indicando que sus productos están de acuerdo con los estándares establecidos en India.
-            </p>
-
-
-            <p className="service-left-content-paragraph">
-                La certificación, al tiempo que promueve el producto y el cumplimiento de las Normas Indias y las Regulaciones Gubernamentales, ayuda a desarrollar confianza y seguridad de los consumidores en los productos certificados.
-            </p>
-
-
-            <h2 className="service-left-content-heading-three">
-                ¿Qué es la Certificación Esquema X?
-            </h2>
-
-
-            <p className="service-left-content-paragraph">
-                El Esquema X es un esquema de certificación de productos desarrollado bajo las Regulaciones de Evaluación de Conformidad BIS, 2018 y posteriormente simplificado bajo las Regulaciones de Evaluación de Conformidad BIS (Enmienda), 2022.
-            </p>
-
-
-
-            <p className="service-left-content-paragraph">
-                El objetivo principal es llevar los estándares de seguridad y calidad de India a los estándares globales, especialmente con respecto a la maquinaria industrial y los equipos eléctricos. Los productos fabricados o importados a India bajo este esquema están sujetos a un escrutinio y evaluación rigurosos para demostrar estándares técnicos, de seguridad y de rendimiento.
-            </p>
-
-
-            <p className="service-left-content-paragraph">
-                Las disposiciones bajo el alcance original de la Certificación Esquema X se han revisado y ampliado con la Orden de Seguridad de Maquinaria y Equipos Eléctricos (Regulación Técnica Ómnibus) recién emitida, 2024, que está bajo la jurisdicción del Ministerio de Industrias Pesadas y ha sido puesta en vigor por el BIS. La orden entra en vigor el 1 de septiembre de 2026 y cubre un amplio espectro de maquinaria y equipos eléctricos como bombas para manejo de líquidos, compresores, grúas, máquinas eléctricas rotativas, transformadores y equipos de conmutación y control.
-            </p>
-
-
-            <p className="service-left-content-paragraph">
-                Los ensamblajes, sub-ensamblajes y componentes de dicha maquinaria o equipo también forman parte del alcance de certificación según la Sección 16 de la Ley de la Oficina de Normas de India, 2016.
-            </p>
-
-            <p className="service-left-content-paragraph">
-                Además, bajo las Reglas CMVR de 1989 (Regulación de Construcción y Fabricación de Válvulas), Bowser y otros tipos de equipos de construcción bajo la jurisdicción del Esquema X, se aseguran de que el mercado no quede expuesto a equipos que carecen de los requisitos de seguridad y estándares técnicos.
-            </p>
-
-
-            <h2 className="service-left-content-heading-three">
-                Regulación Técnica Ómnibus (OTR)
-            </h2>
-
-
-            <p className="service-left-content-paragraph">
-                El Ministerio de Industrias Pesadas emitió la &ldquo;Regulación Técnica Ómnibus sobre Órdenes de Seguridad (Seguridad de Maquinaria y Equipos Eléctricos)&rdquo; a través de la notificación E-Gazette del 28 de agosto de 2024. Esta innovadora regulación tiene la intención de mejorar la seguridad, calidad y cumplimiento de maquinaria, equipos eléctricos y sus ensamblajes, sub-ensamblajes y componentes, bajo el Esquema X de la Regulación BIS, 2016.
-            </p>
-
-
-            <p className="service-left-content-paragraph">
-                Bajo la OTR, se incluyen todas las categorías de maquinaria y equipos eléctricos, y todas sus partes y componentes. Sin embargo, algunas categorías están específicamente excluidas:
-            </p>
-
-            <PointsListWithoutHeading
-                points={[
-                    "Cualquier maquinaria y componentes que sean parte de cualquier otra orden bajo la Sección 16 que sea emitida bajo la Ley de la Oficina de Normas de India, 2016.",
-                    "Productos domésticos manufacturados y artículos que solo están destinados para exportación.",
-                    "Maquinaria y equipos de construcción que están bajo las Reglas CMVR, 1989, prescritas por el Ministerio de Transporte por Carretera y Carreteras (MoRTH).",
-                ]}
-            />
-
-
-            <p className="service-left-content-paragraph">
-                Estas excepciones se hacen para facilitar el cumplimiento y evitar la duplicación innecesaria de regulación con el fin de promover la facilidad de hacer negocios.
-            </p>
-
-
-
-            <p className="service-left-content-paragraph">
-                La Regulación Técnica Ómnibus, 2024 cubre toda la maquinaria y equipos eléctricos, incluidos los equipos de conmutación y control de baja tensión notificados por el Ministerio de Industrias Pesadas, serán tratados bajo el marco de Esquema X de Certificación BIS. La Orden entrará en vigor el 1 de septiembre de 2026 para que los fabricantes e importadores tengan suficiente para modificar sus operaciones según las Órdenes emitidas.
-            </p>
-
-
-            <h2 className="service-left-content-heading-three">
-                Certificación BIS bajo la Regulación Técnica Ómnibus
-            </h2>
-
-
-            <p className="service-left-content-paragraph">
-                Según la OTR 2024, los fabricantes, así como los importadores, de maquinaria y equipos eléctricos que incluyen bombas, bombas, compresores, centrífugas, grúas, transformadores y equipos de conmutación deben solicitar la Certificación BIS bajo el Esquema X.
-            </p>
-
-
-
-            <p className="service-left-content-paragraph">
-                Bajo el Esquema X, los fabricantes pueden optar por solicitar:
-            </p>
-
-
-            <PointsListWithoutHeading
-                points={["Una Licencia BIS, o", "Un Certificado de Conformidad (CoC)"]}
-            />
-
-
-            <p className="service-left-content-paragraph">
-                Los productos que llevan la Marca Estándar BIS que es una Marca de Conformidad que certifica y asegura a los usuarios que el producto es seguro, confiable y de buena calidad. También es una marca de confianza y realmente buen rendimiento.
-            </p>
-
-
-            <h3 className="service-left-content-heading-three">
-                Nota Especial para MSMEs
-            </h3>
-
-
-            <p className="service-left-content-paragraph">
-                Al igual que con muchos otros sectores, las Micro, Pequeñas y Medianas Empresas (MSMEs) también deben cumplir con el Esquema X y obtener la Certificación BIS para su maquinaria y equipos eléctricos. Si bien puede parecer que el cumplimiento de los requisitos regulatorios puede ser desafiante, el certificado del Esquema X es una adición de valor y ventaja para las MSMEs por las siguientes razones:
-            </p>
-
-
-            <PointsListWithoutHeading
-                points={[
-                    "Demuestra adherencia a las obligaciones legales y otros requisitos establecidos por el gobierno.",
-                    "Aumenta la reputación del producto y la confianza del consumidor.",
-                    "Facilita el acceso a un mercado doméstico y extranjero más grande.",
-                    "Mejora la posición de la MSME a nivel mundial con respecto a la competitividad, seguridad y calidad.",
-                ]}
-            />
-
-
-            <h3 className="service-left-content-heading-three">
-                Logotipo BIS Esquema X
-            </h3>
-
-
-
-            <p className="service-left-content-paragraph">
-                La marca estándar BIS del Esquema X forma una marca de calidad y un principio de confianza. El Logotipo contiene:
-            </p>
-
-
-
-            <PointsListWithoutHeading
-                points={[
-                    "el número estándar se muestra en la parte superior del logotipo; y",
-                    "el número de licencia se muestra en la parte inferior del Logotipo en el formato: CM/L-XXXXXXXXXX",
-                ]}
-            />
-
-
-
-            <p className="service-left-content-paragraph">
-                Esta marca significa que se ha emitido con éxito una Licencia BIS al fabricante. Le da derecho al fabricante a colocar la Marca BIS y asegura a los consumidores que el producto es auténtico y seguro.
-            </p>
-
-
-            <div className="flex justify-center mt-[20px] md:mt-[26px]">
-                <img
-                    src="/services-images/scheme-x-logo.png"
-                    alt="Logotipo BIS Esquema X"
-                    title="Certificación BIS Esquema X"
-                    className="max-w-full h-auto rounded-lg shadow-md"
-                />
-            </div>
-
-
-            <h3 className="service-left-content-heading-three">
-                Implicaciones Legales
-            </h3>
-
-
-            <p className="service-left-content-paragraph">
-                La Marca Estándar BIS es una marca de confianza y calidad. La marca solo está disponible después de que exista un contrato válido. Solo un contrato válido permite al propietario usar la marca. Usar la marca sin un contrato válido es una ofensa bajo la constitución india y es igual a tener una marca legal. El propietario de la marca está bajo fuertes restricciones para el uso de la licencia CM/L-XXXXXXXXXX para productos que no tienen certificación BIS.
-            </p>
-
-
-
-
-            <p className="service-left-content-paragraph">
-                Se deduce que cada productor está obligado a:
-            </p>
-
-
-            <PointsListWithoutHeading
-                points={[
-                    "Adquirir una Licencia BIS válida bajo el Esquema X.",
-                    "Satisfacer los requisitos relevantes de las Normas Indias; y",
-                    "Fijar adecuadamente los productos con el Logotipo BIS aprobado.",
-                ]}
-            />
-
-
-            <p className="service-left-content-paragraph">
-                Este marco regulatorio se extiende para proteger los intereses de consumidores y empresarios, fomentando un mercado que enfatiza la seguridad, la apertura y la confianza.
-            </p>
-
-
-
-            <h2 className="service-left-content-heading-three">
-                Diferencias Clave Entre el Esquema-I y el Esquema-X
-            </h2>
-
-
-            <h3 className="service-left-content-heading-three">
-                Esquema-I
-            </h3>
-
-
-            <PointsListWithoutHeading
-                points={[
-                    "Incluye una categoría más amplia de productos de consumo como electrónicos, electrodomésticos e incluso productos industriales.",
-                    "Los productos que reciben un certificado bajo este esquema deben tener la Marca ISI Estándar.",
-                    "Se relaciona tanto con fabricantes nacionales como extranjeros.",
-                    "Implica auditorías de fábrica y pruebas de muestras para determinar la calidad y el cumplimiento de las Normas Indias.",
-                ]}
-            />
-
-            <h3 className="service-left-content-heading-three">
-                Esquema-X
-            </h3>
-
-            <PointsListWithoutHeading
-                points={[
-                    "Aborda productos de ingeniería de alto riesgo e industriales críticos para la seguridad, que incluyen equipos eléctricos, maquinaria y sistemas industriales de considerable servicio.",
-                    "La certificación es de mayor rigor que el Esquema-I. Implica informes técnicos avanzados, verificación de cumplimiento y auditorías de certificación extensivas.",
-                    "El Esquema-X tiende a ser más costoso que el Esquema-I debido a la documentación de cumplimiento adicional.",
-                    "Cualquier negocio que maneje equipos eléctricos o maquinaria industrial está obligado a obtener certificación bajo el Esquema-X.",
-                ]}
-            />
-
-        </div>
-    )
-}
-
-const SchemeXSpanishMainContentLeftProcessSection = () => {
-    return (
-        <div id="process" className="flex flex-col scroll-mt-20">
-            {/* Process */}
-            <div className="flex w-full items-center gap-3">
-                <span className="service-left-content-index-heading">Proceso</span>
-                <Separator className="service-left-content-separator" />
-            </div>
-
-            <h2 className="service-left-content-heading-two">
-                Pasos para Obtener la Certificación Bajo el BIS Esquema-X
-            </h2>
-
-
-            <p className="service-left-content-paragraph">
-                La emisión del Certificado BIS bajo el Esquema-X es una actividad sistemática destinada a garantizar que el fabricante cumpla con los estándares de seguridad, calidad y cumplimiento aplicables. El proceso es el siguiente:
-            </p>
-
-
-            <PointsListWithoutHeading
-                points={[
-                    "Verificar Alcance: Determine si su producto está dentro del alcance del Esquema-X y si cumple con los requisitos de seguridad BIS. Verifique las Normas Indias relevantes y el cronograma técnico para determinar si podrá cumplir.",
-                    "Preparar los Documentos Requeridos: Los fabricantes deben recopilar y organizar los siguientes documentos: Certificados de negocio registrados, Documentos de base de diseño, Documentos de fábrica y flujo de proceso, Informes de prueba de servicio (si corresponde), Documentos de aseguramiento y control de calidad.",
-                    "Construir el Archivo Técnico: Un archivo técnico es una parte indispensable para la solicitud de extensión de un certificado. Debe contener: Especificaciones técnicas del producto, Información de métodos y técnicas, Documentos de cumplimiento y prueba, Limitación y propósito previsto del producto, Documentación de aseguramiento de calidad, Trazabilidad de materias primas, trazabilidad de subcontratos y el resto de la evidencia, Conformidad con los estándares dentro del alcance enmarcado.",
-                    "El Formulario de Solicitud: El formulario de solicitud se puede presentar electrónicamente en el sitio web del BIS para el lugar designado. La liquidación de la tarifa de solicitud es imprescindible. El resto de los documentos que verifican la solicitud deben incluirse para una evaluación adecuada.",
-                    "Inspección de Fábrica: Para fabricantes nacionales: La inspección se realiza durante un período máximo de 2 días. Para fabricantes extranjeros: La inspección se realiza durante un período máximo de 3 días (días adicionales pueden acumularse debido a solicitudes adicionales).",
-                    "Prueba de Muestras de Productos: La prueba de muestras se realiza ya sea en el sitio del fabricante o en laboratorios aprobados por BIS subcontratados (se permite la prueba subcontratada). La prueba demuestra el cumplimiento de las normas indias relevantes.",
-                    "Emisión de Certificación: Si un producto cumple con todas las condiciones, BIS otorga a cada producto una Licencia o un Certificado de Conformidad (CoC). La Marca Estándar BIS puede ser utilizada libremente por el fabricante en todos los productos certificados.",
-                ]}
-            />
-
-
-            <p className="service-left-content-paragraph">
-                Este archivo sirve como evidencia técnica y estadística de la afirmación del producto que sustenta los estándares de rastreo de seguridad.
-            </p>
-
-
-            <p className="service-left-content-paragraph">
-                Durante el período de inspección, se espera que los funcionarios del BIS: Analicen el archivo técnico, Evalúen las formas de fabricación junto con los sistemas de aseguramiento de calidad de apoyo, Observen las pruebas del producto, Determinen el incumplimiento (si lo hay) y proporcionen pasos correctivos. Se proporciona un informe detallado de la auditoría al solicitante después de la visita.
-            </p>
-
-
-
-            <p className="service-left-content-paragraph">
-                Esta estrategia mantiene el cumplimiento con la Norma BIS y es un reconocimiento del cumplimiento indio e internacional, acorralando a la industria en la confianza del consumidor hacia la seguridad y la calidad.
-            </p>
-
-
-            <h2 className="service-left-content-heading-three">
-                Procedimiento para Fabricantes Nacionales
-            </h2>
-
-
-            <p className="service-left-content-paragraph">
-                Los fabricantes nacionales siguen un enfoque directo al obtener la Licencia BIS bajo el Esquema-X. Los pasos directos a seguir incluyen:
-            </p>
-
-
-            <PointsListWithoutHeading
-                points={[
-                    "Documentación: Todos los documentos relacionados con el esquema deben recopilarse y prepararse.",
-                    "Ejecución de la Solicitud: La solicitud debe presentarse junto con las tarifas relevantes.",
-                    "Investigación sobre la Solicitud: Cualquier solicitud presentada está sujeta a escrutinio y un conjunto subsiguiente de preguntas es generado por BIS.",
-                    "Designación de Auditores: Los auditores son designados por BIS, pero el individuo nominado está sujeto al pago de las tarifas de auditoría.",
-                    "Auditoría de Fábrica: Se realiza un examen y encuesta de auditoría de obras en el sitio y se recopilan muestras relevantes.",
-                    "Evaluación de Muestras: Las muestras se evalúan en un laboratorio reconocido por BIS. El solicitante paga todas las tarifas de prueba de laboratorio reconocido por BIS.",
-                    "Pago de Tarifas de Licenciamiento y Marcado: Los pagos requeridos se completan a BIS.",
-                    "Concesión de Licenciamiento: El certificado que otorga permiso para usar la Marca BIS es otorgado por BIS.",
-                ]}
-            />
-
-
-            <p className="service-left-content-paragraph">
-                <strong>Cronograma Típico:</strong> Se necesitan cerca de 90 días hábiles (según la práctica de BIS). Esto siempre que no haya no conformidades clave.
-            </p>
-
-
-            <h2 className="service-left-content-heading-three">
-                Procedimiento para Fabricantes Extranjeros
-            </h2>
-
-
-            <p className="service-left-content-paragraph">
-                A diferencia de los fabricantes nacionales, los fabricantes extranjeros que solicitan un certificado BIS bajo el Esquema-X deben cumplir con un proceso más estricto y pasos adicionales. El procedimiento se detalla de la siguiente manera.
-            </p>
-
-        </div>
-    )
-}
-
-const SchemeXSpanishMainContentLeftDocumentsSection = () => {
-    return (
-        <div id="documents" className="flex flex-col scroll-mt-20">
-            {/* Documents */}
-            <div className="flex w-full items-center gap-3">
-                <span className="service-left-content-index-heading">Documentos</span>
-                <Separator className="service-left-content-separator" />
-            </div>
-
-            <h2 className="service-left-content-heading-two">
-                Documentos Clave Requeridos para la Certificación BIS Esquema X
-            </h2>
-
-
-            <p className="service-left-content-paragraph">
-                Para agilizar el proceso de certificación BIS, los fabricantes deben recopilar y presentar los siguientes documentos durante la fase de registro:
-            </p>
-
-            <div className="mt-[16px] md:mt-[24px]">
-                <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-                    <TableHeader className="bg-[#F9F7F2]">
-                        <TableRow className="bg-[#1A8781]/10">
-                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                                N° Serie
-                            </TableHead>
-                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                                Documento Requerido
-                            </TableHead>
-                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                                Detalles
-                            </TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody className="bg-white divide-y divide-gray-200">
-                        <TableRow className="hover:bg-gray-50">
-                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                                1.
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Nombre y Dirección (Fábrica y Oficina)
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Nombre legal completo y direcciones físicas del sitio de fabricación y oficina
-                            </TableCell>
-                        </TableRow>
-                        <TableRow className="hover:bg-gray-50">
-                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                                2.
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Información PAN y GST
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Número de Cuenta Permanente (PAN) y detalles de registro GST
-                            </TableCell>
-                        </TableRow>
-                        <TableRow className="hover:bg-gray-50">
-                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                                3.
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Detalles de Contacto
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Dirección de correo electrónico, número de móvil y teléfono fijo para comunicaciones oficiales
-                            </TableCell>
-                        </TableRow>
-                        <TableRow className="hover:bg-gray-50">
-                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                                4.
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Detalles de Gestión
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Nombres, roles e identificaciones de ejecutivos clave y firmante autorizado
-                            </TableCell>
-                        </TableRow>
-                        <TableRow className="hover:bg-gray-50">
-                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                                5.
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Descripción del Producto
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Detalles de maquinaria y equipo cubiertos bajo el Primer Anexo de la Regulación Técnica Ómnibus
-                            </TableCell>
-                        </TableRow>
-                        <TableRow className="hover:bg-gray-50">
-                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                                6.
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Clasificación del Producto
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Tipo específico, modelo y variedad para el cual se solicita la licencia BIS
-                            </TableCell>
-                        </TableRow>
-                        <TableRow className="hover:bg-gray-50">
-                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                                7.
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
-                                Archivo Técnico
-                            </TableCell>
-                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                                Todos los detalles técnicos relacionados con el producto y detalles sobre la unidad de fabricación.
-                            </TableCell>
-                        </TableRow>
-                    </TableBody>
-                </Table>
-            </div>
-
-            <h3 className="service-left-content-heading-three">
-                Validez y Proceso de Renovación del Certificado Esquema-X:
-            </h3>
-
-            <PointsListWithoutHeading
-                points={[
-                    "Validez y Renovación de Licencia: Las Licencias BIS bajo el Esquema-X se emiten por un período de 3 a 6 años para producción continua. Una vez que expire el período, la licencia puede renovarse por la misma duración mediante la presentación de una solicitud de renovación, la tarifa requerida y documentos de cumplimiento.",
-                    "Certificado de Conformidad (CoC): Un CoC se emite para producción única, y es aplicable tanto para fabricantes nacionales como extranjeros. Dado que solo se aplica a un único lote, un CoC no tiene opción de renovación.",
-                    "Informe de Pruebas de Productos: Cuando los informes de prueba se preparan en el laboratorio del fabricante, los funcionarios del BIS los verifican durante la inspección de fábrica realizando pruebas de testigos. Si las pruebas se realizan en instalaciones subcontratadas, esas instalaciones también son inspeccionadas y aprobadas por BIS.",
-                    "Revisión de Solicitud de Renovación: Para validez ininterrumpida, un fabricante debe continuar cumpliendo con las disposiciones del Esquema-X. Según la Regulación 8 de las Regulaciones de Evaluación de Conformidad BIS, la Oficina de Normas de India procesa la solicitud de renovación en el formulario VIII. La renovación se realiza solo después de verificar un cumplimiento satisfactorio.",
-                ]}
-            />
-        </div>
-    )
-}
-
-const SchemeXSpanishMainContentLeftConclusionSection = () => {
-    return (
-        <div id="conclusion" className="flex flex-col scroll-mt-20">
-            {/* Conclusion */}
-            <div className="flex w-full items-center gap-3">
-                <span className="service-left-content-index-heading">Conclusión</span>
-                <Separator className="service-left-content-separator" />
-            </div>
-
-            <h2 className="service-left-content-heading-two">
-                Conclusión
-            </h2>
-
-            <p className="service-left-content-paragraph">
-                La Certificación BIS Esquema-X sigue siendo vital para mantener la seguridad, confiabilidad y calidad de los equipos de conmutación y control de baja tensión, maquinaria y equipos eléctricos. Para los fabricantes de máquinas herramientas aplicables al procesamiento de piedra, cerámica, concreto, cemento asfáltico y vidrio mineral, la certificación BIS Esquema-X es obligatoria.
-            </p>
-
-
-            <p className="service-left-content-paragraph">
-                Al cumplir con estas obligaciones, los fabricantes garantizan la conformidad del producto, mejoran la confianza del consumidor, así como mejoran su credibilidad en el mercado. El Esquema-X garantiza que la producción sea lo más fluida posible, que se cumplan los estándares de seguridad en todo el mundo y que las marcas reconocidas obtengan una reputación positiva.
-            </p>
-
-        </div>
-    )
-}
-
-const SchemeXSpanishMainContentLeft = () => {
-    return (
-        <div className="flex-1">
-            <div className="flex flex-col gap-[20px] md:gap-[40px]">
-
-                {/* Overview Section */}
-                <SchemeXSpanishMainContentLeftOverviewSection />
-
-                {/* Divider */}
-                <div className="service-left-content-divider" />
-
-                {/* Process Section */}
-                <SchemeXSpanishMainContentLeftProcessSection />
-
-                {/* Divider */}
-                <div className="service-left-content-divider" />
-
-                {/* Documents Section */}
-                <SchemeXSpanishMainContentLeftDocumentsSection />
-
-                {/* Divider */}
-                <div className="service-left-content-divider" />
-
-                {/* Conclusion Section */}
-                <SchemeXSpanishMainContentLeftConclusionSection />
-
-                {/* Divider */}
-                <div className="service-left-content-divider" />
-
-                <ServiceAuthorSpanish />
-            </div>
-        </div>
-    )
-}
-
-const SchemeXSpanishServiceFaq = () => {
-    const faqData = [
-        { question: "1. ¿Qué es el Esquema X bajo la certificación BIS?", answer: "El Esquema X es un esquema de evaluación de la conformidad introducido por el BIS indio para maquinaria y equipo eléctrico. Asegura el cumplimiento de estrictos estándares de seguridad y técnicos especificados en la Regulación Técnica Ómnibus." },
-        { question: "2. ¿El Esquema X es diferente de la certificación de marca ISI?", answer: "Sí. La marca ISI es generalmente para bienes de consumo y cumplimiento básico del producto, mientras que el Esquema X se aplica a productos complejos y de grado industrial que requieren pruebas y certificación avanzadas a través de un certificado BIS o licencia BIS." },
-        { question: "3. ¿Quién necesita solicitar la certificación del Esquema X?", answer: "Los fabricantes e importadores de maquinaria y equipo eléctrico listados bajo la Regulación Técnica Ómnibus deben solicitar el Esquema X y obtener una certificación BIS válida para vender o distribuir legalmente sus productos en India. Los fabricantes globales o fabricantes extranjeros que pretendan vender productos en India también deben cumplir con estas regulaciones." },
-        { question: "4. ¿Cuál es el costo de la certificación BIS Esquema X?", answer: "El costo del Esquema X incluye tarifas de solicitud, tarifas de certificación, cargos de revisión de archivos técnicos, costos de inspección de fábrica y cargos de pruebas de productos. En promedio, comienza en ₹2,000 para la solicitud y puede aumentar dependiendo de la complejidad del producto. Para más detalles contáctenos en admin@bis-certifications.com." },
-        { question: "5. ¿Cuánto tiempo lleva obtener una licencia BIS bajo el Esquema X?", answer: "El cronograma varía según la documentación, los requisitos de prueba y las inspecciones de fábrica. Típicamente, toma de 4 a 6 semanas desde la fecha de registro BIS exitoso y presentación de la solicitud para fabricantes indios y de 60 a 90 días para fabricantes extranjeros." },
-        { question: "6. ¿Las MIPYMES también pueden solicitar la certificación BIS bajo el Esquema X?", answer: "Absolutamente. De hecho, el BIS indio alienta a las MIPYMES a solicitar una licencia BIS o certificado de conformidad bajo el Esquema X para impulsar la calidad, el cumplimiento y la competitividad en el sector industrial." },
-        { question: "7. ¿La certificación BIS bajo el Esquema X es obligatoria para las exportaciones?", answer: "No. Los productos fabricados exclusivamente para exportación están exentos bajo la Regulación Técnica Ómnibus. Sin embargo, los productos destinados a los mercados indios deben estar certificados bajo el Esquema X." },
-        { question: "8. ¿Cuál es la validez de la licencia BIS bajo el Esquema X?", answer: "Una licencia BIS bajo el Esquema X es generalmente válida por 3-6 años y debe renovarse en consecuencia. La renovación implica el pago de la tarifa anual de certificación BIS y puede requerir reevaluación dependiendo de los cambios en el alcance del producto o los estándares." },
-        { question: "9. ¿Los fabricantes extranjeros pueden solicitar la certificación del Esquema X?", answer: "Sí, los fabricantes extranjeros pueden solicitar la certificación del Esquema X a través de un representante indio autorizado. El BIS indio requiere una inspección de fábrica, que puede tomar 3 días para solicitantes extranjeros, junto con el registro BIS estándar y los procesos de prueba." },
-        { question: "10. ¿Qué es un Archivo Técnico y por qué se requiere?", answer: "Un Archivo Técnico es un expediente de cumplimiento detallado requerido bajo el Esquema X. Incluye procesos de fabricación, detalles del producto, informes de prueba y documentos de control de calidad. Apoya la conformidad del producto con las Normas Indias relevantes durante el proceso de certificación BIS." },
-        { question: "11. ¿Cómo se relaciona el Esquema X con la Regulación Técnica Ómnibus?", answer: "La Regulación Técnica Ómnibus exige el uso del Esquema X para categorías específicas de maquinaria y equipo eléctrico en India. Los productos listados bajo la regulación deben estar certificados bajo el Esquema X para obtener un certificado BIS válido o licencia BIS." },
-        { question: "12. ¿Se puede revocar un certificado BIS bajo el Esquema X?", answer: "Sí. El BIS indio puede suspender o cancelar una licencia BIS o certificado bajo el Esquema X si se encuentra incumplimiento durante la vigilancia o si el producto no cumple con las Normas Indias requeridas." },
-        { question: "13. ¿Cuál es la diferencia entre licencia BIS y certificado BIS bajo el Esquema X?", answer: "Una licencia BIS se emite típicamente a fabricantes indios, mientras que un certificado de conformidad BIS (CoC) a menudo se emite a fabricantes extranjeros o para casos específicos. Ambos sirven al mismo propósito: garantizar el cumplimiento del producto bajo el Esquema X." },
-        { question: "14. ¿Se permite la marca ISI para productos certificados bajo el Esquema X?", answer: "No. Los productos bajo el Esquema X no llevan la marca ISI. En cambio, muestran la marca estándar BIS relevante para el esquema de certificación, según lo regido por el BIS indio." },
-        { question: "¿Cómo sé si mi maquinaria requiere certificación del Esquema X?", answer: "Verifique la lista oficial en la Regulación Técnica Ómnibus o consulte con un consultor BIS para verificar si su maquinaria cae bajo los requisitos de certificación obligatoria del Esquema X." }
-    ];
-
-    return (
-        <section id="faqs" className="my-2 scroll-mt-20" aria-label="Frequently Asked Questions">
-            <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-                <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-                    Preguntas Frecuentes
-                </h4>
-                <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-                    ¿No puedes encontrar la respuesta que buscas?{" "}
-                    <a href="/contact" className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors">
-                        ¡Contáctanos!
-                    </a>
-                </p>
-
-                <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
-                    <Accordion type="single" collapsible className="w-full">
-                        {faqData.map((faq, index) => (
-                            <AccordionItem key={index} value={`item-${index + 1}`}>
-                                <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                                    {faq.question}
-                                </AccordionTrigger>
-                                <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                                    {faq.answer}
-                                </AccordionContent>
-                            </AccordionItem>
-                        ))}
-                    </Accordion>
-                </div>
-            </div>
-        </section>
-    );
-};
-
-const SchemeXSpanishProductTable = () => {
-    const [searchQuery, setSearchQuery] = useState("");
-    const table2Ref = useRef(null);
-    const table3Ref = useRef(null);
-
-    return (
-        <div className="w-full pb-12">
-            <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-                <div className="flex flex-col gap-2 mt-6">
-                    <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
-                        Estándar de Seguridad por Producto
-                    </h2>
-
-                    <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-                        Descripción de Maquinaria y Equipo Eléctrico
-                    </p>
-                </div>
-
-                <div className="relative mb-6">
-                    <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
-                        <Search className="w-5 h-5 text-gray-400" />
-                    </div>
-                    <input
-                        type="text"
-                        placeholder="Buscar por descripción o código HS..."
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
-                    />
-                </div>
-            </div>
-
-            <div ref={table2Ref}>
-                <TypeBTableSpanish tableRef={table2Ref} searchQuery={searchQuery} />
-            </div>
-            <div ref={table3Ref}>
-                <TypeCTableSpanish searchQuery={searchQuery} />
-            </div>
-        </div>
-    );
-};
-
-/* eslint-disable react/prop-types */
-const TypeBTableSpanish = ({ tableRef, searchQuery }) => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 20;
-
-    const filteredData = productDataTableSecond.filter(item => {
-        if (!searchQuery) return true;
-        const query = searchQuery.toLowerCase();
-        return (
-            item.isNumber.toLowerCase().includes(query) ||
-            item.title.toLowerCase().includes(query)
-        );
-    });
-
-    useEffect(() => {
-        setCurrentPage(1);
-    }, [searchQuery]);
-
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-
-    const scrollToTableTop = () => {
-        if (tableRef?.current) {
-            tableRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-    };
-
-    const handleNextPage = () => {
-        if (currentPage < totalPages) {
-            setCurrentPage(currentPage + 1);
-            setTimeout(() => scrollToTableTop(), 100);
-        }
-    };
-
-    const handlePrevPage = () => {
-        if (currentPage > 1) {
-            setCurrentPage(currentPage - 1);
-            setTimeout(() => scrollToTableTop(), 100);
-        }
-    };
-
-    return (
-        <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
-            <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-                TIPO B (Normas de Seguridad Genéricas que tratan con uno o más aspectos de seguridad que pueden usarse en una amplia gama de maquinaria)
-            </p>
-
-            <div className="rounded-md border bg-white shadow-sm">
-                <Table>
-                    <TableHeader>
-                        <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
-                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                                S.No.
-                            </TableHead>
-                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                                Número IS
-                            </TableHead>
-                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                                Título
-                            </TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {currentItems.length > 0 ? (
-                            currentItems.map((item) => (
-                                <TableRow key={item.id}>
-                                    <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                                        {item.id}
-                                    </TableCell>
-                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                                        {item.isNumber}
-                                    </TableCell>
-                                    <TableCell className="font-geist text-base md:text-lg text-left">
-                                        {item.title}
-                                    </TableCell>
-                                </TableRow>
-                            ))
-                        ) : (
-                            <TableRow>
-                                <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
-                                    No se encontraron resultados para &quot;{searchQuery}&quot;
-                                </TableCell>
-                            </TableRow>
-                        )}
-                    </TableBody>
-                </Table>
-            </div>
-            {totalPages > 1 && (
-                <div className="flex justify-end items-center mt-6">
-                    <div className="flex items-center">
-                        <button
-                            onClick={handlePrevPage}
-                            disabled={currentPage === 1}
-                            className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-                        >
-                            Anterior
-                        </button>
-                        <span className="px-4 py-2 font-geist text-sm">
-                            Página {currentPage} de {totalPages}
-                        </span>
-                        <button
-                            onClick={handleNextPage}
-                            disabled={currentPage === totalPages}
-                            className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-                        >
-                            Siguiente
-                        </button>
-                    </div>
-                </div>
-            )}
-        </div>
-    );
-};
-
-/* eslint-disable react/prop-types */
-const TypeCTableSpanish = ({ searchQuery }) => {
-    const filteredData = productDataTableThird.filter(item => {
-        if (!searchQuery) return true;
-        const query = searchQuery.toLowerCase();
-        return (
-            item.description.toLowerCase().includes(query) ||
-            item.hsCode.toLowerCase().includes(query) ||
-            item.indianStandard.toLowerCase().includes(query) ||
-            item.title.toLowerCase().includes(query)
-        );
-    });
-
-    return (
-        <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
-            <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-                TIPO C (Normas de Seguridad de Máquinas que tratan con requisitos de seguridad detallados para una máquina particular o grupo de máquinas)
-            </p>
-
-            <div className="rounded-md border bg-white shadow-sm">
-                <Table>
-                    <TableHeader>
-                        <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
-                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                                S. No.
-                            </TableHead>
-                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                                Descripción de Maquinaria y Equipo Eléctrico
-                            </TableHead>
-                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                                Código HS
-                            </TableHead>
-                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                                Norma India/Cláusula Específica de Norma India
-                            </TableHead>
-                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                                Título de Norma India
-                            </TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {filteredData.length > 0 ? (
-                            filteredData.map((item) => (
-                                <TableRow key={item.id}>
-                                    <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                                        {item.id}
-                                    </TableCell>
-                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                                        {item.description}
-                                    </TableCell>
-                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                                        {item.hsCode}
-                                    </TableCell>
-                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                                        {item.indianStandard.split("\n").map((line, idx) => (
-                                            <div key={idx}>{line}</div>
-                                        ))}
-                                    </TableCell>
-                                    <TableCell className="font-geist text-base md:text-lg text-left">
-                                        {item.title.split("\n").map((line, idx) => (
-                                            <div key={idx}>{line}</div>
-                                        ))}
-                                    </TableCell>
-                                </TableRow>
-                            ))
-                        ) : (
-                            <TableRow>
-                                <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
-                                    No se encontraron resultados para &quot;{searchQuery}&quot;
-                                </TableCell>
-                            </TableRow>
-                        )}
-                    </TableBody>
-                </Table>
-            </div>
-        </div>
-    );
-};
-
-const productDataTableSecond = [
-    { id: 1, isNumber: "IS 16504 (Part 1):2019/IEC 60204-1:2016", title: "Safety of Machinery Electrical Equipment of Machines Part 1 General Requirements" },
-    { id: 2, isNumber: "IS 16504 (Part 11) : 2020 /IEC 60204-11 : 2018", title: "Safety of Machinery - Electrical Equipment of Machines Part 11 Requirements for Equipment for Voltages above 1 000 V AC or 1 500 V DC and not Exceeding 36 kV" },
-    { id: 3, isNumber: "IS/IEC 61508 (Part 1): 2010", title: "Functional Safety of Electrical-Electronic-Programmable Electronic Safety-related Systems Part 1- General Requirements" },
-    { id: 4, isNumber: "IS/IEC 60529 : 2001", title: "Degree of Protection Provided by Enclosures (IP Code)" },
-    { id: 5, isNumber: "IS 16806 (Part 1) : 2018/ ISO 29042-1 : 2008", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 1: Selection of test methods" },
-    { id: 6, isNumber: "IS 16806 (Part 2) : 2018/ ISO 29042-2 : 2009", title: "Safety of Machinery Evaluation of the Emission of Airborne Hazardous Substances Part 2 Tracer Gas Method for the Measurement of the Emission Rate of a Given Pollutant" },
-    { id: 7, isNumber: "IS 16806 (Part 3) : 2018/ ISO 29042-3 : 2009", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 3: Test bench method for the measurement of the emission rate of a given pollutant" },
-    { id: 8, isNumber: "IS 16806 (Part 4) : 2018/ ISO 29042-4 : 2009", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 4: Tracer method for the measurement of the capture efficiency of an exhaust system" },
-    { id: 9, isNumber: "IS 16806 (Part 5) : 2018/ ISO 29042-5 : 2010", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 5: Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with unducted outlet" },
-    { id: 10, isNumber: "IS 16806 (Part 6) : 2018/ ISO 29042-6 : 2010", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 6 : Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with ducted outlet" },
-    { id: 11, isNumber: "IS 16806 (Part 7) : 2018/ ISO 29042-7 : 2010", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 7: Test bench method for the measurement of the pollutant concentration parameter" },
-    { id: 12, isNumber: "IS 16806 (Part 8) : 2018/ ISO 29042-8 : 2011", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 8: Room method for the measurement of the pollutant concentration parameter" },
-    { id: 13, isNumber: "IS 16806 (Part 9) : 2018/ ISO 29042-9 : 2011", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 9: Decontamination index" },
-    { id: 14, isNumber: "IS 10481:2020/ ISO 4413:2010", title: "Hydraulic Fluid Power- General Rules and Safety Requirements for Systems and their Components" },
-    { id: 15, isNumber: "IS 12725:2021/ ISO 4414:2010", title: "Pneumatic Fluid Power- General Rules and Safety Requirements for Systems and their Components" },
-    { id: 16, isNumber: "IS ISO 3457 : 2003", title: "Earth Moving Machinery - Guards - Definitions and Requirements" },
-    { id: 17, isNumber: "IS 16501 : 2017/IEC 62061 : 2005", title: "Safety of Machinery-Functional Safety of Safety-Related Electrical Electronic and Programmable Electronic Control Systems" },
-    { id: 18, isNumber: "IS 16502 (Part 2) : 2017/ IEC 61496-2 : 2013", title: "Safety of Machinery - Electro-Sensitive Protective Equipment Part 2 Particular Requirements for Equipment Using Active Opto-Electronic Protective Devices AOPDs" },
-    { id: 19, isNumber: "IS 16503 (Part 3) : 2017/ IEC 61310-3 : 2007", title: "Safety of Machinery- Indication Marking and Actuation Part 3 Requirements for the Location and Operation of Actuators" },
-    { id: 20, isNumber: "IS 16504 (Part 32) : 2017/IEC 60204-32 : 2008", title: "Safety of Machinery-Electrical Equipment of Machines Part 32 Requirements for Hoisting Machines" },
-    { id: 21, isNumber: "IS 16503 (Part 1) : 2017/ IEC 61310-1 : 2007", title: "Safety of Machinery - Indication Marking and Actuation Part 1 Requirements for Visual Acoustic and Tactile Signals" },
-    { id: 22, isNumber: "IS 16594 (Part 1) : 2017/ IEC 61496-1 : 2012", title: "Safety of Machinery - Electro-Sensitive Protective Equipment Part 1 General Requirements and Tests" },
-    { id: 23, isNumber: "IS 16936 : 2018/ IEC TR 62513: 2008", title: "Safety of Machinery Guidelines for the Use of Communication Systems in Safety Related Applications" },
-    { id: 24, isNumber: "IS 16503 (Part 2) : 2017/ IEC 61310-2 : 2007", title: "Safety of Machinery - Indication Marking and Actuation Part 2 Requirements for Marking" },
-    { id: 25, isNumber: "IS 16807: 2020/", title: "Safety of Machinery Fire Prevention and Fire Protection" },
-    { id: 26, isNumber: "IS 16808 : 2018/ ISO 14159 : 2002", title: "Safety of Machinery Hygiene Requirements for the Design of Machinery" },
-    { id: 27, isNumber: "IS 16809 ( Part 1) : 2018/ ISO 14122-1 : 2016", title: "Safety of Machinery Permanent Means of Access to Machinery Part 1 Choice of Fixed Means and General Requirements of Access" },
-    { id: 28, isNumber: "IS 16809 (Part 2) : 2018/ ISO 14122-2 : 2016", title: "Safety of Machinery Permanent Means of Access to Machinery Part 2 Working Platforms and Walkways" },
-    { id: 29, isNumber: "IS 16809 (Part 3) : 2018/ ISO 14122-3 : 2016", title: "Safety of Machinery Permanent Means of Access to Machinery Part 3 Stairs Stepladders and Guard-Rails" },
-    { id: 30, isNumber: "IS 16809 (Part 4) : 2018/ ISO 14122-4 : 2016", title: "Safety of Machinery Permanent Means of Access to Machinery Part 4 Fixed Ladders" },
-    { id: 31, isNumber: "IS 16810 (Part 1) : 2018/ ISO 13849-1 : 2015", title: "Safety of Machinery Safety Related Parts of Control Systems Part 1 General Principles for Design" },
-    { id: 32, isNumber: "IS 16810 (Part 2) : 2018/ ISO 13849-2 : 2012", title: "Safety of Machinery Safety Related Parts of Control Systems Part 2 Validation" },
-    { id: 33, isNumber: "IS 16811: 2018/ 14120 : 2015", title: "Safety of Machinery Guards General Requirements for the Design and Construction of Fixed and Movable Guards" },
-    { id: 34, isNumber: "IS 16812 : 2018/ ISO 14119 : 2013", title: "Safety of Machinery Interlocking Devices Associated with Guards Principles for Design and Selection" },
-    { id: 35, isNumber: "IS 16813 : 2019/ ISO 14118 : 2017", title: "Safety of Machinery Prevention of Unexpected Start-Up" },
-    { id: 36, isNumber: "IS 16814 : 2021/ ISO 13857: 2019", title: "Safety of Machinery Safety Distances to Prevent Hazard Zones Being Reached by Upper and Lower Limbs" },
-    { id: 37, isNumber: "IS 16815 : 2019/ ISO 13855: 2010", title: "Safety of Machinery Positioning of Safeguards with Respect to the Approach Speeds of Parts of the Human Body" },
-    { id: 38, isNumber: "IS 16816 : 2019/ ISO 13854 : 2017", title: "Safety of Machinery Minimum Gaps to Avoid Crushing of Parts of the Human Body" },
-    { id: 39, isNumber: "IS 16817: 2020/ ISO 13851 : 2019", title: "Safety of Machinery Two-Hand Control Devices Principles for Design and Selection" },
-    { id: 40, isNumber: "IS 16818 : 2018/ ISO 13850 : 2015", title: "Safety of Machinery Emergency Stop Function Principles for Design" },
-    { id: 41, isNumber: "IS 16912 : 2018/ ISO 21469 : 2006", title: "Safety of Machinery Lubricants with Incidental Product -- Contact Hygiene Requirements" },
-    { id: 42, isNumber: "IS 16834 (Part 1) : 2018/ ISO 14123-1 : 2015", title: "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 1: Principles and specifications for machinery manufacturers" },
-    { id: 43, isNumber: "IS 16834 (Part 2) : 2018/ ISO 14123-2 : 2015", title: "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 2: Methodology leading to verification procedures" },
-    { id: 44, isNumber: "IS 16835 (Part 1) : 2018/ ISO 13856-1 : 2013", title: "Safety of machinery - Pressure-sensitive protective devices - Part 1: General principles for design and testing of pressure- sensitive mats and pressure-sensitive floors" },
-    { id: 45, isNumber: "IS 16835 (Part 2) : 2018/ ISO 13856-2 : 2013", title: "Safety of machinery - Pressure-sensitive protective devices - Part 2: General principles for design and testing of pressure- sensitive edges and pressure-sensitive bars" },
-    { id: 46, isNumber: "IS 16835 (Part 3) : 2018/ ISO 13856-3 : 2013", title: "Safety of machinery - Pressure-sensitive protective devices - Part 3: General principles for design and testing of pressure-sensitive bumpers, plates, wires and similar devices." },
-    { id: 47, isNumber: "IS 16569: 2018/ ISO 11429:1996", title: "Ergonomics- System of Auditory and Visual Danger and Information Signals" },
-    { id: 48, isNumber: "IS 16563 (Part 2) : 2017/ ISO 9355-2:1999", title: "Ergonomic Requirements for the Design of Displays and Control Actuators Part 2 Displays" },
-    { id: 49, isNumber: "IS 16563 (Part 3) 2017 / ISO 9355-3:2006", title: "Ergonomic Requirements for the Design of Displays and Control Actuators Part 3 Control Actuators" },
-    { id: 50, isNumber: "IS 16572 : 2017/ ISO 14738 : 2002", title: "Safety of Machinery - Anthropometric Requirements for the Design of Workstations at Machinery" },
-    { id: 51, isNumber: "IS 16562 ( Part 1) : 2017/ ISO 15536-1 : 2005", title: "Ergonomics - Computer Manikins and Body Templates Part 1 General Requirements" },
-    { id: 52, isNumber: "IS 16569:2018/ ISO 11429: 1996", title: "Ergonomics - System of auditory and visual danger and information signals" },
-    { id: 53, isNumber: "IS 15296 : 2017/ ISO 11161: 2007", title: "Industrial Automation Systems - Safety of Integrated Manufacturing Systems - Basic Requirements" },
-];
-
-const productDataTableThird = [
-    { id: 1, description: "All types of Pumps for handling liquids, liquid elevators", hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 and 841392", indianStandard: "-", title: "-" },
-    { id: 2, description: "All types of compressors", hsCode: "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 and 84149090", indianStandard: "Clause 16 of IS 17093:2019\nClause 6.6 of IS 12258:1987", title: "Technical supply conditions for reciprocating air compressors for general purpose and industrial applications\nTechnical supply condition for air screw compressors (Oil Flooded) for general purpose and industrial applications" },
-    { id: 3, description: "All types of machinery for Treatment of material by a process involving a Change of temperature", hsCode: "841932, 841939, 841940, 841950, 841960, 841981, 841989 and 84199090", indianStandard: "-", title: "-" },
-    { id: 4, description: "or purifying machinery for liquid and gas", hsCode: "842122, 842129, 842131, 842139, 842191 and 842199", indianStandard: "-", title: "-" },
-    { id: 5, description: "All types of machinery for filling, closing, sealing, labelling bottles, packing or wrapping", hsCode: "842220, 842230, 842240 and 842290", indianStandard: "-", title: "-" },
-    { id: 6, description: "All types of cranes", hsCode: "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 and 84269990", indianStandard: "Clause 66.1, 66.1.1, 66.1.2, 66.1.3, 66.2, 66.2.1, 66.2.2, 66.3, 66.4, 66.5 and 66.6 of IS 3177:2020\nClause 8.1, 8.2, 8.3 & 45 of IS 4573:2020\nIS/ISO 15442:2012", title: "Electric Overhead Travelling Crane and Gantry Crane for all Applications Code of Practice\nPower Driven Mobile Cranes Specification\nCranes - Safety requirements for loader cranes" },
-    { id: 7, description: "All types of machinery for construction", hsCode: "8429, 843010, 843020, 843031, 843039, 843041", indianStandard: "IS 17055 (Part 7): 2020\nIS 17055 (Part 8): 2020\nIS 17055 (Part 12): 2020", title: "Earth-Moving Machinery Safety Part 7 Scrapers\nEarth-Moving Machinery Requirements For Graders\nEarth-Moving Machinery Safety Part 12 Road Pavers" },
-    { id: 8, description: "All types of weaving machines (looms)", hsCode: "8446, 844811, 844819, 844842 and 844849", indianStandard: "IS 17361 (Part 6) : 2020 / ISO 11111 (Part 6) : 2005", title: "Textile Machinery Safety Requirements Part 6 Fabric Manufacturing Machinery" },
-    { id: 9, description: "All types of machinery for making embroidery.", hsCode: "84479020 and 844859", indianStandard: "IS 17361 (Part 1): 2020 / ISO 11111 (Part 1) : 2016", title: "Textile Machiner Safety Requirements Part 1 Common Requirements" },
-    { id: 10, description: "All types of metal cutting machines", hsCode: "8456, 8457, 8458, 8459, 8460, 8461 and 846693", indianStandard: "IS 17277 (Part 1): 2019\nISO 16092-1 : 2017\nIS 17259: 2020\nISO 28881 : 2013\nIS 17258: 2019\nISO 23125 : 2015\nIS 17254:2019\nISO 16093 : 2017\nIS 17253 (Part 1): 2019\nISO 16090-1 : 2017", title: "Machine Tools Safety Presses Part 1 General Safety Requirements\nMachine Tools Safety Electro-Discharge Machines\nMachine Tools Safety Turning Machines\nMachine Tools Safety Sawing Machines for Cold Metal\nMachine Tools Safety Machining Centres, Milling Machines, Transfer Machines Part 1 Safety Requirements" },
-    { id: 11, description: "All types of machine tools for working stone, ceramics, concrete, asbestos cement or like mineral glass", hsCode: "8464 and 84669100", indianStandard: "-", title: "-" },
-    { id: 12, description: "All types of machinery for working rubber and plastics", hsCode: "8477", indianStandard: "IS/ISO 20430: 2020", title: "Plastics and Rubber Machines-Injection Moulding Machines-Safety Requirements" },
-    { id: 13, description: "All types of machines including the machines for public works & Building and the machinery & mechanical appliances having individual functions, not specified", hsCode: "84791000, 84798999 and 84799090", indianStandard: "-", title: "-" },
-    { id: 14, description: "All types of gears and gearing, toothed wheels, chain sprocket, transmission elements ball or roller screws, gear boxes and speed changers, including torque converters And (or)their assemblies /sub-assemblies /components", hsCode: "84834000 and 84839000", indianStandard: "-", title: "-" },
-    { id: 15, description: "All types of Rotary electrical machines such as Generator, etc. Building and the machinery & mechanical appliances having individual functions, not specified", hsCode: "8501 and 8503", indianStandard: "Clause 4.7, 4.8 and 4.12 of section 2,\nclause 7.4 of Section 3, clause 8.6 of Section 4,\nClause 9.4 of section 5 of IS 5422:1996\nClause 11, 21, 22, 23, 25 and 26 of IS 13364\n(Part 1): 1992\nClause 11, 21, 22 23 25 and 26 of IS 13364\n(Part 2): 1992", title: "Turbine type generation\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 1\nalternators rated up to 20 kVa\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 2\nalternators rated above 20 kVa and up to 1250 kVa" },
-    { id: 16, description: "All types of Diesel Generator", hsCode: "8502 and 8503", indianStandard: "Clause 5,6,7,8, 9 & 10 of IS/ISO 8528 (Part 2) : 2018\nClause 6 & 10 of IS/ISO 8528 (Part 3)\nClause 4, 5.5, 7.3.5, 7.3.7 & 7.4 of IS/ISO 8528 (Part 4): 2005\nClause 12, 13, 14, 15 of IS/ISO 8528-5: 2018\nClause 6.4 of IS/ISO 8528 (Part 8): 2016\nClause 9.1 of IS/ISO 8528 (Part 12): 1997", title: "Reciprocating Internal Combustion Engine Driven Alternating Current Generating Sets : Part 2 Engines\nReciprocating internal combustion engine driven alternating current generating sets: Part 3 alternating current generators for generating sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 4 control gear and switchgear\nReciprocating Internal Combustion Engine Driven Alternating Current Generating Sets Part 5 Generating Sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 8\nReciprocating internal combustion engine driven alternating current generating sets: Part 12 emergency power supply to safety" },
-    { id: 17, description: "All types of Transformer", hsCode: "850421, 850422, 850423, 850431, 850432, 850433, 850434 and 850490.", indianStandard: "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nClause 5.6 & Cl 10 of IS 2026 (Part 1)\nClause 7.5, 7.6, 7.7 of IS 2026 (Part 6)", title: "Safety of Transformers, Reactors, Power Supply Units and Similar Product for Supply Voltages up to 1100 V Part 2-4: Particular Requirements and Tests for Isolating Transformers and Power Supply Units Incorporating\nSafety of power transformers, power supply units and similar: Part 2 particular requirement: Sec 6 safety isolating transformers for general use\nSafety of power transformers, power supplies reactors and similar products: Part 2-7 particular requirements and tests for transformers and power supplies for toys\nPower transformers: Part 1 general\nPower transformers: Part 6 reactors" },
-    { id: 18, description: "All types of Power Semiconductor Converter", hsCode: "850440", indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009", title: "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements" },
-    { id: 19, description: "All types of switch gear and control gear equipment operating at voltages not exceeding 1000 volts and (or) their assemblies /sub-assemblies /components", hsCode: "8536, 8537 and 8538", indianStandard: "Clause 8 of IS/IEC 61439 (Part 3): 2012", title: "Low-Voltage switchgear and control gear assemblies: Part 3 distribution boards intended to be operated by ordinary persons (DBO)" },
-    { id: 20, description: "All types of switch gear and control gear equipment operating at voltages exceeding 1000 volts and (or) their assemblies /sub-assemblies /components", hsCode: "8535, 8537 and 8538", indianStandard: "-", title: "-" },
-];
-
-export const ServicesSpanish = () => {
+export const Services = () => {
     return (
         <div className="pt-6 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
             <div className="max-w-[80rem] w-full mx-auto">
@@ -1608,7 +723,7 @@ export const ServicesSpanish = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            Marca BIS (Licencia ISI) para Fabricante Extranjero
+                            Marca BIS (Licencia ISI) para Fabricantes Extranjeros
                         </p>
                     </Link>
 
@@ -1720,7 +835,7 @@ export const ServicesSpanish = () => {
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                            MARCA ISI (BIS) para Fabricantes Indios
+                            ISI MARK (BIS) para Fabricantes Indios
                         </p>
                     </Link>
                 </div>
@@ -1729,29 +844,2123 @@ export const ServicesSpanish = () => {
     );
 };
 
-const SchemeXSpanish = () => {
+const SchemeXProductTable = () => {
+    const [searchQuery, setSearchQuery] = useState("");
+    const table2Ref = useRef(null);
+    const table3Ref = useRef(null);
+
     return (
-        <div className="relative">
-            {/* Scheme X Spanish Meta Tags */}
-            <SchemeXSpanishMetaTags />
-            {/* Scheme X Spanish Breadcrumb */}
-            <SchemeXSpanishBreadcrumb />
-            {/* Scheme X Spanish Hero Section */}
-            <SchemeXSpanishHero />
-            {/* Scheme X Spanish Index Section */}
-            <SchemeXSpanishIndex />
+        <div className="w-full pb-12">
+            <div className="max-w-[88rem] mx-auto px-4 md:px-12">
 
-            {/* Scheme X Spanish Main Content Section */}
-            <SchemeXSpanishMainContent />
+                <div className="flex flex-col gap-2 mt-6">
+                    <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
+                        Estándar de Seguridad por Producto
+                    </h2>
 
-            {/* Footer Section */}
-            <FooterSpanish />
-            {/* Scroll To Top Button Section */}
-            <ScrollToTopButton />
+                    <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
+                        Descripción de Maquinaria y Equipos Eléctricos
+                    </p>
+                </div>
+
+                <div className="relative mb-6">
+                    <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                        <Search className="w-5 h-5 text-gray-400" />
+                    </div>
+                    <input
+                        type="text"
+                        placeholder={
+                            "Buscar por descripción o código HS..."
+                        }
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
+                    />
+                </div>
+            </div>
+
+            <div ref={table2Ref}>
+                <TypeBTable tableRef={table2Ref} searchQuery={searchQuery} />
+            </div>
+            <div ref={table3Ref}>
+                <TypeCTable searchQuery={searchQuery} />
+            </div>
 
         </div>
     )
 }
 
-export default SchemeXSpanish
+const productDataTableThird = [
+    {
+        id: 1,
+        description: "Todos los tipos de Bombas para manejo de líquidos, elevadores de líquidos",
+        hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 y 841392",
+        indianStandard: "-",
+        title: "-",
+    },
+    {
+        id: 2,
+        description: "Todos los tipos de compresores",
+        hsCode:
+            "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 y 84149090",
+        indianStandard: "Cláusula 16 de IS 17093:2019\nCláusula 6.6 de IS 12258:1987",
+        title:
+            "Condiciones de suministro técnico para compresores de aire alternativos para propósitos generales y aplicaciones industriales\nCondición de suministro técnico para compresores de tornillo de aire (Inundado de Aceite) para propósitos generales y aplicaciones industriales",
+    },
+    {
+        id: 3,
+        description:
+            "Todos los tipos de maquinaria para Tratamiento de material por un proceso que implica un Cambio de temperatura",
+        hsCode:
+            "841932, 841939, 841940, 841950, 841960, 841981, 841989 y 84199090",
+        indianStandard: "-",
+        title: "-",
+    },
+    {
+        id: 4,
+        description: "o maquinaria de purificación para líquido y gas",
+        hsCode: "842122, 842129, 842131, 842139, 842191 y 842199",
+        indianStandard: "-",
+        title: "-",
+    },
+    {
+        id: 5,
+        description:
+            "Todos los tipos de maquinaria para llenado, cierre, sellado, etiquetado de botellas, empaquetado o envoltura",
+        hsCode: "842220, 842230, 842240 y 842290",
+        indianStandard: "-",
+        title: "-",
+    },
+    {
+        id: 6,
+        description: "Todos los tipos de grúas",
+        hsCode:
+            "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 y 84269990",
+        indianStandard:
+            "Cláusula 66.1, 66.1.1, 66.1.2, 66.1.3, 66.2, 66.2.1, 66.2.2, 66.3, 66.4, 66.5 y 66.6 de IS 3177:2020\nCláusula 8.1, 8.2, 8.3 y 45 de IS 4573:2020\nIS/ISO 15442:2012",
+        title:
+            "Grúa Eléctrica de Viaje Superior y Grúa Pórtico para todas las Aplicaciones Código de Práctica\nEspecificación de Grúas Móviles Impulsadas por Potencia\nGrúas - Requisitos de Seguridad para grúas cargadoras",
+    },
+    {
+        id: 7,
+        description: "Todos los tipos de maquinaria para construcción",
+        hsCode: "8429, 843010, 843020, 843031, 843039, 843041",
+        indianStandard:
+            "IS 17055 (Parte 7): 2020\nIS 17055 (Parte 8): 2020\nIS 17055 (Parte 12): 2020",
+        title:
+            "Maquinaria de Movimiento de Tierras Seguridad Parte 7 Raspatradores\nRequisitos de Maquinaria de Movimiento de Tierras para Niveladoras\nMaquinaria de Movimiento de Tierras Seguridad Parte 12 Pavimentadoras de Carreteras",
+    },
+    {
+        id: 8,
+        description: "Todos los tipos de máquinas de tejer (telar)",
+        hsCode: "8446, 844811, 844819, 844842 y 844849",
+        indianStandard: "IS 17361 (Parte 6) : 2020 / ISO 11111 (Parte 6) : 2005",
+        title:
+            "Requisitos de Seguridad de Maquinaria Textil Parte 6 Maquinaria de Fabricación de Telas",
+    },
+    {
+        id: 9,
+        description: "Todos los tipos de maquinaria para hacer bordados.",
+        hsCode: "84479020 y 844859",
+        indianStandard: "IS 17361 (Parte 1): 2020 / ISO 11111 (Parte 1) : 2016",
+        title: "Requisitos de Seguridad de Maquinaria Textil Parte 1 Requisitos Comunes",
+    },
+    {
+        id: 10,
+        description: "Todos los tipos de máquinas de corte de metal",
+        hsCode: "8456, 8457, 8458, 8459, 8460, 8461 y 846693",
+        indianStandard:
+            "IS 17277 (Parte 1): 2019\nISO 16092-1 : 2017\nIS 17259: 2020\nISO 28881 : 2013\nIS 17258: 2019\nISO 23125 : 2015\nIS 17254:2019\nISO 16093 : 2017\nIS 17253 (Parte 1): 2019\nISO 16090-1 : 2017",
+        title:
+            "Herramientas de Máquina Seguridad Prensas Parte 1 Requisitos Generales de Seguridad\nHerramientas de Máquina Seguridad Máquinas de Descarga Eléctrica\nHerramientas de Máquina Seguridad Máquinas de Torneado\nHerramientas de Máquina Seguridad Máquinas de Sierra para Metal Frío\nHerramientas de Máquina Seguridad Centros de Maquinado, Máquinas de Fresado, Máquinas de Transferencia Parte 1 Requisitos de Seguridad",
+    },
+    {
+        id: 11,
+        description:
+            "Todos los tipos de herramientas de máquina para trabajar piedra, cerámica, concreto, cemento de asbesto o vidrio mineral similar",
+        hsCode: "8464 y 84669100",
+        indianStandard: "-",
+        title: "-",
+    },
+    {
+        id: 12,
+        description: "Todos los tipos de maquinaria para trabajar caucho y plásticos",
+        hsCode: "8477",
+        indianStandard: "IS/ISO 20430: 2020",
+        title:
+            "Máquinas de Plásticos y Caucho-Máquinas de Moldeo por Inyección-Requisitos de Seguridad",
+    },
+    {
+        id: 13,
+        description:
+            "Todos los tipos de máquinas incluyendo las máquinas para obras públicas y Construcción y la maquinaria y aparatos mecánicos con funciones individuales, no especificadas",
+        hsCode: "84791000, 84798999 y 84799090",
+        indianStandard: "-",
+        title: "-",
+    },
+    {
+        id: 14,
+        description:
+            "Todos los tipos de engranajes y engranajes, ruedas dentadas, piñón de cadena, elementos de transmisión bolas o tornillos de rodillo, cajas de engranajes y cambiadores de velocidad, incluyendo convertidores de par Y (o) sus ensamblajes /subensamblajes /componentes",
+        hsCode: "84834000 y 84839000",
+        indianStandard: "-",
+        title: "-",
+    },
+    {
+        id: 15,
+        description:
+            "Todos los tipos de Máquinas eléctricas rotativas como Generador, etc. Construcción y la maquinaria y aparatos mecánicos con funciones individuales, no especificadas",
+        hsCode: "8501 y 8503",
+        indianStandard:
+            "Cláusula 4.7, 4.8 y 4.12 de la sección 2,\ncláusula 7.4 de la Sección 3, cláusula 8.6 de la Sección 4,\nCláusula 9.4 de la sección 5 de IS 5422:1996\nCláusula 11, 21, 22, 23, 25 y 26 de IS 13364\n(Parte 1): 1992\nCláusula 11, 21, 22 23 25 y 26 de IS 13364\n(Parte 2): 1992",
+        title:
+            "Generación de tipo turbina\nGeneradores CA impulsados por motores de combustión interna alternativos - Especificación: Parte 1\nalternadores clasificados hasta 20 kVa\nGeneradores CA impulsados por motores de combustión interna alternativos - Especificación: Parte 2\nalternadores clasificados por encima de 20 kVa y hasta 1250 kVa",
+    },
+    {
+        id: 16,
+        description: "Todos los tipos de Generador Diésel",
+        hsCode: "8502 y 8503",
+        indianStandard:
+            "Cláusula 5,6,7,8, 9 y 10 de IS/ISO 8528 (Parte 2) : 2018\nCláusula 6 y 10 de IS/ISO 8528 (Parte 3)\nCláusula 4, 5.5, 7.3.5, 7.3.7 y 7.4 de IS/ISO 8528 (Parte 4): 2005\nCláusula 12, 13, 14, 15 de IS/ISO 8528-5: 2018\nCláusula 6.4 de IS/ISO 8528 (Parte 8): 2016\nCláusula 9.1 de IS/ISO 8528 (Parte 12): 1997",
+        title:
+            "Conjuntos Generadores de Corriente Alterna Impulsados por Motor de Combustión Interna Alternativo : Parte 2 Motores\nConjuntos generadores de corriente alterna impulsados por motor de combustión interna alternativo: Parte 3 generadores de corriente alterna para conjuntos generadores\nConjuntos generadores de corriente alterna impulsados por motor de combustión interna alternativo: Parte 4 equipo de control y tableros de distribución\nConjuntos Generadores de Corriente Alterna Impulsados por Motor de Combustión Interna Alternativo Parte 5 Conjuntos Generadores\nConjuntos generadores de corriente alterna impulsados por motor de combustión interna alternativo: Parte 8\nConjuntos generadores de corriente alterna impulsados por motor de combustión interna alternativo: Parte 12 suministro de energía de emergencia a la seguridad",
+    },
+    {
+        id: 17,
+        description: "Todos los tipos de Transformador",
+        hsCode:
+            "850421, 850422, 850423, 850431, 850432, 850433, 850434 y 850490.",
+        indianStandard:
+            "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nCláusula 5.6 y Cl 10 de IS 2026 (Parte 1)\nCláusula 7.5, 7.6, 7.7 de IS 2026 (Parte 6)",
+        title:
+            "Seguridad de Transformadores, Reactores, Unidades de Alimentación y Productos Similares para Voltajes de Suministro hasta 1100 V Parte 2-4: Requisitos y Pruebas Particulares para Transformadores Aislantes y Unidades de Alimentación Incorporadas\nSeguridad de transformadores de potencia, unidades de alimentación y similares: Parte 2 requisito particular: Sec 6 transformadores aislantes de seguridad para uso general\nSeguridad de transformadores de potencia, suministros de energía reactores y productos similares: Parte 2-7 requisitos y pruebas particulares para transformadores y suministros de energía para juguetes\nTransformadores de potencia: Parte 1 general\nTransformadores de potencia: Parte 6 reactores",
+    },
+    {
+        id: 18,
+        description: "Todos los tipos de Convertidor de Semiconductores de Potencia",
+        hsCode: "850440",
+        indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
+        title: "Cláusula 7 de Convertidores de Semiconductores Parte 1 Requisitos Generales y Convertidores Comutados en Línea Sección 1 Especificación de requisitos básicos",
+    },
+    {
+        id: 19,
+        description:
+            "Todos los tipos de equipos de tableros de distribución y engranajes de control que operan a voltajes no superiores a 1000 voltios y (o) sus ensamblajes /subensamblajes /componentes",
+        hsCode: "8536, 8537 y 8538",
+        indianStandard: "Cláusula 8 de IS/IEC 61439 (Parte 3): 2012",
+        title:
+            "Tableros de distribución y engranajes de control de bajo voltaje: Parte 3 tableros de distribución destinados a ser operados por personas ordinarias (DBO)",
+    },
+    {
+        id: 20,
+        description:
+            "Todos los tipos de equipos de tableros de distribución y engranajes de control que operan a voltajes superiores a 1000 voltios y (o) sus ensamblajes /subensamblajes /componentes",
+        hsCode: "8535, 8537 y 8538",
+        indianStandard: "-",
+        title: "-",
+    },
+];
 
+const TypeCTable = ({ searchQuery }) => {
+    // Filter data based on search query
+    const filteredData = productDataTableThird.filter(item => {
+        if (!searchQuery) return true;
+        const query = searchQuery.toLowerCase();
+        return (
+            item.description.toLowerCase().includes(query) ||
+            item.hsCode.toLowerCase().includes(query) ||
+            item.indianStandard.toLowerCase().includes(query) ||
+            item.title.toLowerCase().includes(query)
+        );
+    });
+
+    return (
+        <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
+            <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
+                TIPO C (Estándares de Seguridad de Máquinas que tratan requisitos de seguridad detallados para una máquina particular o grupo de máquinas)
+            </p>
+
+            <div className="rounded-md border bg-white shadow-sm">
+                <Table>
+                    <TableHeader>
+                        <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
+                                N.º S.
+                            </TableHead>
+                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
+                                Descripción de Maquinaria y Equipos Eléctricos
+                            </TableHead>
+                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
+                                Código HS
+                            </TableHead>
+                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
+                                Estándar Indio/Cláusula Específica del Estándar Indio
+                            </TableHead>
+                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
+                                Título del Estándar Indio
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {filteredData.length > 0 ? (
+                            filteredData.map((item) => (
+                                <TableRow key={item.id}>
+                                    <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.id}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.description}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.hsCode}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.indianStandard.split("\n").map((line, idx) => (
+                                            <div key={idx}>{line}</div>
+                                        ))}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left">
+                                        {item.title.split("\n").map((line, idx) => (
+                                            <div key={idx}>{line}</div>
+                                        ))}
+                                    </TableCell>
+                                </TableRow>
+                            ))
+                        ) : (
+                            <TableRow>
+                                <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
+                                    No se encontraron resultados para &quot;{searchQuery}&quot;
+                                </TableCell>
+                            </TableRow>
+                        )}
+                    </TableBody>
+                </Table>
+            </div>
+        </div>
+    );
+};
+
+const productDataTableSecond = [
+    {
+        id: 1,
+        isNumber: "IS 16504 (Parte 1):2019/IEC 60204-1:2016",
+        title:
+            "Seguridad de Maquinaria Equipo Eléctrico de Máquinas Parte 1 Requisitos Generales",
+    },
+    {
+        id: 2,
+        isNumber: "IS 16504 (Parte 11) : 2020 /IEC 60204-11 : 2018",
+        title:
+            "Seguridad de Maquinaria - Equipo Eléctrico de Máquinas Parte 11 Requisitos para Equipos para Voltajes superiores a 1 000 V CA o 1 500 V CC y no superiores a 36 kV",
+    },
+    {
+        id: 3,
+        isNumber: "IS/IEC 61508 (Parte 1): 2010",
+        title:
+            "Seguridad Funcional de Sistemas Eléctricos-Electrónicos-Programables Electrónicos Relacionados con la Seguridad Parte 1- Requisitos Generales",
+    },
+    {
+        id: 4,
+        isNumber: "IS/IEC 60529 : 2001",
+        title: "Grado de Protección Proporcionado por Recintos (Código IP)",
+    },
+    {
+        id: 5,
+        isNumber: "IS 16806 (Parte 1) : 2018/ ISO 29042-1 : 2008",
+        title:
+            "Seguridad de maquinaria - Evaluación de la emisión de sustancias peligrosas en el aire - Parte 1: Selección de métodos de prueba",
+    },
+    {
+        id: 6,
+        isNumber: "IS 16806 (Parte 2) : 2018/ ISO 29042-2 : 2009",
+        title:
+            "Seguridad de Maquinaria Evaluación de la Emisión de Sustancias Peligrosas en el Aire Parte 2 Método de Gas Rastreador para la Medición de la Tasa de Emisión de un Contaminante Determinado",
+    },
+    {
+        id: 7,
+        isNumber: "IS 16806 (Parte 3) : 2018/ ISO 29042-3 : 2009",
+        title:
+            "Seguridad de maquinaria - Evaluación de la emisión de sustancias peligrosas en el aire - Parte 3: Método de banco de pruebas para la medición de la tasa de emisión de un contaminante determinado",
+    },
+    {
+        id: 8,
+        isNumber: "IS 16806 (Parte 4) : 2018/ ISO 29042-4 : 2009",
+        title:
+            "Seguridad de maquinaria - Evaluación de la emisión de sustancias peligrosas en el aire - Parte 4: Método de rastreador para la medición de la eficiencia de captura de un sistema de escape",
+    },
+    {
+        id: 9,
+        isNumber: "IS 16806 (Parte 5) : 2018/ ISO 29042-5 : 2010",
+        title:
+            "Seguridad de maquinaria - Evaluación de la emisión de sustancias peligrosas en el aire - Parte 5: Método de banco de pruebas para la medición de la eficiencia de separación por masa de sistemas de limpieza de aire con salida sin conducto",
+    },
+    {
+        id: 10,
+        isNumber: "IS 16806 (Parte 6) : 2018/ ISO 29042-6 : 2010",
+        title:
+            "Seguridad de maquinaria - Evaluación de la emisión de sustancias peligrosas en el aire - Parte 6 : Método de banco de pruebas para la medición de la eficiencia de separación por masa de sistemas de limpieza de aire con salida con conducto",
+    },
+    {
+        id: 11,
+        isNumber: "IS 16806 (Parte 7) : 2018/ ISO 29042-7 : 2010",
+        title:
+            "Seguridad de maquinaria - Evaluación de la emisión de sustancias peligrosas en el aire - Parte 7: Método de banco de pruebas para la medición del parámetro de concentración de contaminantes",
+    },
+    {
+        id: 12,
+        isNumber: "IS 16806 (Parte 8) : 2018/ ISO 29042-8 : 2011",
+        title:
+            "Seguridad de maquinaria - Evaluación de la emisión de sustancias peligrosas en el aire - Parte 8: Método de habitación para la medición del parámetro de concentración de contaminantes",
+    },
+    {
+        id: 13,
+        isNumber: "IS 16806 (Parte 9) : 2018/ ISO 29042-9 : 2011",
+        title:
+            "Seguridad de maquinaria - Evaluación de la emisión de sustancias peligrosas en el aire - Parte 9: Índice de descontaminación",
+    },
+    {
+        id: 14,
+        isNumber: "IS 10481:2020/ ISO 4413:2010",
+        title:
+            "Potencia de Fluido Hidráulico- Reglas Generales y Requisitos de Seguridad para Sistemas y sus Componentes",
+    },
+    {
+        id: 15,
+        isNumber: "IS 12725:2021/ ISO 4414:2010",
+        title:
+            "Potencia de Fluido Neumático- Reglas Generales y Requisitos de Seguridad para Sistemas y sus Componentes",
+    },
+    {
+        id: 16,
+        isNumber: "IS ISO 3457 : 2003",
+        title: "Maquinaria de Movimiento de Tierras - Guardias - Definiciones y Requisitos",
+    },
+    {
+        id: 17,
+        isNumber: "IS 16501 : 2017/IEC 62061 : 2005",
+        title:
+            "Seguridad de Maquinaria-Seguridad Funcional de Sistemas de Control Eléctricos Electrónicos y Programables Relacionados con la Seguridad",
+    },
+    {
+        id: 18,
+        isNumber: "IS 16502 (Parte 2) : 2017/ IEC 61496-2 : 2013",
+        title:
+            "Seguridad de Maquinaria - Equipo Protector Electro-Sensible Parte 2 Requisitos Particulares para Equipos que Usan Dispositivos Protectores Opto-Electrónicos Activos AOPDs",
+    },
+    {
+        id: 19,
+        isNumber: "IS 16503 (Parte 3) : 2017/ IEC 61310-3 : 2007",
+        title:
+            "Seguridad de Maquinaria- Indicación Marcado y Actuación Parte 3 Requisitos para la Ubicación y Operación de Actuadores",
+    },
+    {
+        id: 20,
+        isNumber: "IS 16504 (Parte 32) : 2017/IEC 60204-32 : 2008",
+        title:
+            "Seguridad de Maquinaria-Equipo Eléctrico de Máquinas Parte 32 Requisitos para Máquinas de Elevación",
+    },
+    {
+        id: 21,
+        isNumber: "IS 16503 (Parte 1) : 2017/ IEC 61310-1 : 2007",
+        title:
+            "Seguridad de Maquinaria - Indicación Marcado y Actuación Parte 1 Requisitos para Señales Visuales Acústicas y Táctiles",
+    },
+    {
+        id: 22,
+        isNumber: "IS 16594 (Parte 1) : 2017/ IEC 61496-1 : 2012",
+        title:
+            "Seguridad de Maquinaria - Equipo Protector Electro-Sensible Parte 1 Requisitos Generales y Pruebas",
+    },
+    {
+        id: 23,
+        isNumber: "IS 16936 : 2018/ IEC TR 62513: 2008",
+        title:
+            "Seguridad de Maquinaria Guías para el Uso de Sistemas de Comunicación en Aplicaciones Relacionadas con la Seguridad",
+    },
+    {
+        id: 24,
+        isNumber: "IS 16503 (Parte 2) : 2017/ IEC 61310-2 : 2007",
+        title:
+            "Seguridad de Maquinaria - Indicación Marcado y Actuación Parte 2 Requisitos para Marcado",
+    },
+    {
+        id: 25,
+        isNumber: "IS 16807: 2020/",
+        title: "Seguridad de Maquinaria Prevención de Incendios y Protección contra Incendios",
+    },
+    {
+        id: 26,
+        isNumber: "IS 16808 : 2018/ ISO 14159 : 2002",
+        title:
+            "Seguridad de Maquinaria Requisitos de Higiene para el Diseño de Maquinaria",
+    },
+    {
+        id: 27,
+        isNumber: "IS 16809 ( Parte 1) : 2018/ ISO 14122-1 : 2016",
+        title:
+            "Seguridad de Maquinaria Medios Permanentes de Acceso a Maquinaria Parte 1 Elección de Medios Fijos y Requisitos Generales de Acceso",
+    },
+    {
+        id: 28,
+        isNumber: "IS 16809 (Parte 2) : 2018/ ISO 14122-2 : 2016",
+        title:
+            "Seguridad de Maquinaria Medios Permanentes de Acceso a Maquinaria Parte 2 Plataformas de Trabajo y Pasarelas",
+    },
+    {
+        id: 29,
+        isNumber: "IS 16809 (Parte 3) : 2018/ ISO 14122-3 : 2016",
+        title:
+            "Seguridad de Maquinaria Medios Permanentes de Acceso a Maquinaria Parte 3 Escaleras Escaleras de Mano y Barandales",
+    },
+    {
+        id: 30,
+        isNumber: "IS 16809 (Parte 4) : 2018/ ISO 14122-4 : 2016",
+        title:
+            "Seguridad de Maquinaria Medios Permanentes de Acceso a Maquinaria Parte 4 Escaleras Fijas",
+    },
+    {
+        id: 31,
+        isNumber: "IS 16810 (Parte 1) : 2018/ ISO 13849-1 : 2015",
+        title:
+            "Seguridad de Maquinaria Partes Relacionadas con la Seguridad de Sistemas de Control Parte 1 Principios Generales para el Diseño",
+    },
+    {
+        id: 32,
+        isNumber: "IS 16810 (Parte 2) : 2018/ ISO 13849-2 : 2012",
+        title:
+            "Seguridad de Maquinaria Partes Relacionadas con la Seguridad de Sistemas de Control Parte 2 Validación",
+    },
+    {
+        id: 33,
+        isNumber: "IS 16811: 2018/ 14120 : 2015",
+        title:
+            "Seguridad de Maquinaria Guardias Requisitos Generales para el Diseño y Construcción de Guardias Fijos y Móviles",
+    },
+    {
+        id: 34,
+        isNumber: "IS 16812 : 2018/ ISO 14119 : 2013",
+        title:
+            "Seguridad de Maquinaria Dispositivos de Bloqueo Asociados con Guardias Principios para Diseño y Selección",
+    },
+    {
+        id: 35,
+        isNumber: "IS 16813 : 2019/ ISO 14118 : 2017",
+        title: "Seguridad de Maquinaria Prevención de Arranque Inesperado",
+    },
+    {
+        id: 36,
+        isNumber: "IS 16814 : 2021/ ISO 13857: 2019",
+        title:
+            "Seguridad de Maquinaria Distancias de Seguridad para Prevenir Zonas de Peligro Alcanzadas por Miembros Superiores e Inferiores",
+    },
+    {
+        id: 37,
+        isNumber: "IS 16815 : 2019/ ISO 13855: 2010",
+        title:
+            "Seguridad de Maquinaria Posicionamiento de Salvaguardas con Respeto a las Velocidades de Enfoque de Partes del Cuerpo Humano",
+    },
+    {
+        id: 38,
+        isNumber: "IS 16816 : 2019/ ISO 13854 : 2017",
+        title:
+            "Seguridad de Maquinaria Brechas Mínimas para Evitar Aplastamiento de Partes del Cuerpo Humano",
+    },
+    {
+        id: 39,
+        isNumber: "IS 16817: 2020/ ISO 13851 : 2019",
+        title:
+            "Seguridad de Maquinaria Dispositivos de Control de Dos Manos Principios para Diseño y Selección",
+    },
+    {
+        id: 40,
+        isNumber: "IS 16818 : 2018/ ISO 13850 : 2015",
+        title: "Seguridad de Maquinaria Función de Parada de Emergencia Principios para Diseño",
+    },
+    {
+        id: 41,
+        isNumber: "IS 16912 : 2018/ ISO 21469 : 2006",
+        title:
+            "Seguridad de Maquinaria Lubricantes con Contacto Incidental de Producto -- Requisitos de Higiene",
+    },
+    {
+        id: 42,
+        isNumber: "IS 16834 (Parte 1) : 2018/ ISO 14123-1 : 2015",
+        title:
+            "Seguridad de maquinaria - Reducción de riesgos para la salud resultantes de sustancias peligrosas emitidas por maquinaria - Parte 1: Principios y especificaciones para fabricantes de maquinaria",
+    },
+    {
+        id: 43,
+        isNumber: "IS 16834 (Parte 2) : 2018/ ISO 14123-2 : 2015",
+        title:
+            "Seguridad de maquinaria - Reducción de riesgos para la salud resultantes de sustancias peligrosas emitidas por maquinaria - Parte 2: Metodología que lleva a procedimientos de verificación",
+    },
+    {
+        id: 44,
+        isNumber: "IS 16835 (Parte 1) : 2018/ ISO 13856-1 : 2013",
+        title:
+            "Seguridad de maquinaria - Dispositivos protectores sensibles a la presión - Parte 1: Principios generales para diseño y prueba de esteras sensibles a la presión y pisos sensibles a la presión",
+    },
+    {
+        id: 45,
+        isNumber: "IS 16835 (Parte 2) : 2018/ ISO 13856-2 : 2013",
+        title:
+            "Seguridad de maquinaria - Dispositivos protectores sensibles a la presión - Parte 2: Principios generales para diseño y prueba de bordes sensibles a la presión y barras sensibles a la presión",
+    },
+    {
+        id: 46,
+        isNumber: "IS 16835 (Parte 3) : 2018/ ISO 13856-3 : 2013",
+        title:
+            "Seguridad de maquinaria - Dispositivos protectores sensibles a la presión - Parte 3: Principios generales para diseño y prueba de parachoques sensibles a la presión, placas, cables y dispositivos similares.",
+    },
+    {
+        id: 47,
+        isNumber: "IS 16569: 2018/ ISO 11429:1996",
+        title:
+            "Ergonomía- Sistema de Señales de Peligro e Información Auditivas y Visuales",
+    },
+    {
+        id: 48,
+        isNumber: "IS 16563 (Parte 2) : 2017/ ISO 9355-2:1999",
+        title:
+            "Requisitos Ergonómicos para el Diseño de Pantallas y Actuadores de Control Parte 2 Pantallas",
+    },
+    {
+        id: 49,
+        isNumber: "IS 16563 (Parte 3) 2017 / ISO 9355-3:2006",
+        title:
+            "Requisitos Ergonómicos para el Diseño de Pantallas y Actuadores de Control Parte 3 Actuadores de Control",
+    },
+    {
+        id: 50,
+        isNumber: "IS 16572 : 2017/ ISO 14738 : 2002",
+        title:
+            "Seguridad de Maquinaria - Requisitos Antropométricos para el Diseño de Estaciones de Trabajo en Maquinaria",
+    },
+    {
+        id: 51,
+        isNumber: "IS 16562 ( Parte 1) : 2017/ ISO 15536-1 : 2005",
+        title:
+            "Ergonomía - Maniquíes de Computadora y Plantillas de Cuerpo Parte 1 Requisitos Generales",
+    },
+    {
+        id: 52,
+        isNumber: "IS 16569:2018/ ISO 11429: 1996",
+        title:
+            "Ergonomía - Sistema de señales de peligro e información auditivas y visuales",
+    },
+    {
+        id: 53,
+        isNumber: "IS 15296 : 2017/ ISO 11161: 2007",
+        title:
+            "Sistemas de Automatización Industrial - Seguridad de Sistemas de Manufactura Integrados - Requisitos Básicos",
+    },
+];
+const TypeBTable = ({ tableRef, searchQuery }) => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 20;
+
+    // Filter data based on search query
+    const filteredData = productDataTableSecond.filter(item => {
+        if (!searchQuery) return true;
+        const query = searchQuery.toLowerCase();
+        return (
+            item.isNumber.toLowerCase().includes(query) ||
+            item.title.toLowerCase().includes(query)
+        );
+    });
+
+    // Reset to first page when search query changes
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [searchQuery]);
+
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = filteredData.slice(
+        indexOfFirstItem,
+        indexOfLastItem
+    );
+
+    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+    const scrollToTableTop = () => {
+        if (tableRef?.current) {
+            tableRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
+
+    const handleNextPage = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1);
+            setTimeout(() => scrollToTableTop(), 100);
+        }
+    };
+
+    const handlePrevPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+            setTimeout(() => scrollToTableTop(), 100);
+        }
+    };
+
+    return (
+        <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
+            <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
+                TIPO B (Estándares de Seguridad Genéricos que tratan un aspecto de seguridad o más de un tipo de salvaguarda que se puede usar en un amplio rango de maquinaria)
+            </p>
+
+            <div className="rounded-md border bg-white shadow-sm">
+                <Table>
+                    <TableHeader>
+                        <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
+                                N.º S.
+                            </TableHead>
+                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
+                                Número IS
+                            </TableHead>
+                            <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
+                                Título
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {currentItems.length > 0 ? (
+                            currentItems.map((item) => (
+                                <TableRow key={item.id}>
+                                    <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.id}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
+                                        {item.isNumber}
+                                    </TableCell>
+                                    <TableCell className="font-geist text-base md:text-lg text-left">
+                                        {item.title}
+                                    </TableCell>
+                                </TableRow>
+                            ))
+                        ) : (
+                            <TableRow>
+                                <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
+                                    No se encontraron resultados para &quot;{searchQuery}&quot;
+                                </TableCell>
+                            </TableRow>
+                        )}
+                    </TableBody>
+                </Table>
+            </div>
+            {totalPages > 1 && (
+                <div className="flex justify-end items-center mt-6">
+                    <div className="flex items-center">
+                        <button
+                            onClick={handlePrevPage}
+                            disabled={currentPage === 1}
+                            className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            Anterior
+                        </button>
+                        <span className="px-4 py-2 font-geist text-sm">
+                            Página {currentPage} de {totalPages}
+                        </span>
+                        <button
+                            onClick={handleNextPage}
+                            disabled={currentPage === totalPages}
+                            className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            Siguiente
+                        </button>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
+
+const SchemeXServiceFaq = () => {
+    const faqData = [
+        {
+            question: "1. ¿Qué es Scheme X bajo la certificación BIS?",
+            answer: "Scheme X es un esquema de evaluación de conformidad introducido por el BIS indio para maquinaria y equipos eléctricos. Asegura el cumplimiento de estrictos estándares de seguridad y técnicos según lo especificado en el Reglamento Técnico Omnibus."
+        },
+        {
+            question: "2. ¿Es Scheme X diferente de la certificación de marca ISI?",
+            answer: "Sí. La marca ISI es generalmente para bienes de consumo y cumplimiento básico de productos, mientras que Scheme X se aplica a productos complejos e industriales que requieren pruebas y certificación avanzadas a través de un certificado BIS o licencia BIS."
+        },
+        {
+            question: "3. ¿Quién necesita solicitar la certificación Scheme X?",
+            answer: "Los fabricantes e importadores de maquinaria y equipos eléctricos listados bajo el Reglamento Técnico Omnibus deben solicitar Scheme X y obtener una certificación BIS válida para vender o distribuir legalmente sus productos en India. Los fabricantes globales o extranjeros que deseen vender productos en India también deben cumplir con estos reglamentos."
+        },
+        {
+            question: "4. ¿Cuál es el costo de la certificación BIS Scheme X?",
+            answer: "El costo de Scheme X incluye tarifas de solicitud, tarifas de certificación, cargos por revisión de archivo técnico, costos de inspección de fábrica y cargos por pruebas de productos. En promedio, comienza en ₹2,000 para la solicitud y puede aumentar dependiendo de la complejidad del producto. Para más detalles, contáctenos en admin@bis-certifications.com."
+        },
+        {
+            question: "5. ¿Cuánto tiempo toma obtener una licencia BIS bajo Scheme X?",
+            answer: "El cronograma varía dependiendo de la documentación, requisitos de prueba e inspecciones de fábrica. Típicamente, toma 4–6 semanas desde la fecha de registro exitoso BIS y envío de la solicitud para fabricantes indios y 60-90 días para fabricantes extranjeros."
+        },
+        {
+            question: "6. ¿Pueden las PYMEs también solicitar la certificación BIS bajo Scheme X?",
+            answer: "Absolutamente. De hecho, el BIS indio alienta a las PYMEs a solicitar una licencia BIS o certificado de conformidad bajo Scheme X para impulsar la calidad, el cumplimiento y la competitividad en el sector industrial."
+        },
+        {
+            question: "7. ¿Es la certificación BIS bajo Scheme X obligatoria para exportaciones?",
+            answer: "No. Los productos fabricados exclusivamente para exportación están exentos bajo el Reglamento Técnico Omnibus. Sin embargo, los productos destinados a mercados indios deben certificarse bajo Scheme X."
+        },
+        {
+            question: "8. ¿Cuál es la validez de la licencia BIS bajo Scheme X?",
+            answer: "Una licencia BIS bajo Scheme X es generalmente válida por 3-6 años y debe renovarse en consecuencia. La renovación implica el pago de la tarifa anual de certificación BIS y puede requerir re-evaluación dependiendo de cambios en el alcance del producto o estándares."
+        },
+        {
+            question: "9. ¿Pueden los fabricantes extranjeros solicitar la certificación Scheme X?",
+            answer: "Sí, los fabricantes extranjeros pueden solicitar la certificación Scheme X a través de un representante autorizado indio. El BIS indio requiere una inspección de fábrica, que puede tomar 3 días para solicitantes extranjeros, junto con procesos estándar de registro BIS y pruebas."
+        },
+        {
+            question: "10. ¿Qué es un Archivo Técnico y por qué es requerido?",
+            answer: "Un Archivo Técnico es un dosier detallado de cumplimiento requerido bajo Scheme X. Incluye procesos de fabricación, detalles del producto, informes de pruebas y documentos de control de calidad. Apoya la conformidad del producto con los Estándares Indios relevantes durante el proceso de certificación BIS."
+        },
+        {
+            question: "11. ¿Cómo se relaciona Scheme X con el Reglamento Técnico Omnibus?",
+            answer: "El Reglamento Técnico Omnibus manda el uso de Scheme X para categorías específicas de maquinaria y equipos eléctricos en India. Los productos listados bajo el reglamento deben certificarse bajo Scheme X para obtener un certificado BIS o licencia BIS válido."
+        },
+        {
+            question: "12. ¿Puede revocarse un certificado BIS bajo Scheme X?",
+            answer: "Sí. El BIS indio puede suspender o cancelar una licencia BIS o certificado bajo Scheme X si se encuentra incumplimiento durante la vigilancia o si el producto no cumple con los Estándares Indios requeridos."
+        },
+        {
+            question: "13. ¿Cuál es la diferencia entre licencia BIS y certificado BIS bajo Scheme X?",
+            answer: "Una licencia BIS se emite típicamente a fabricantes indios, mientras que un certificado de conformidad BIS (CoC) se emite a menudo a fabricantes extranjeros o para casos específicos. Ambos sirven el mismo propósito—asegurar el cumplimiento del producto bajo Scheme X."
+        },
+        {
+            question: "14. ¿Está permitida la marca ISI para productos certificados bajo Scheme X?",
+            answer: "No. Los productos bajo Scheme X no llevan la marca ISI. En su lugar, muestran la marca estándar BIS relevante para el esquema de certificación, según lo gobernado por el BIS indio."
+        },
+        {
+            question: "¿Cómo sé si mi maquinaria requiere certificación Scheme X?",
+            answer: "Verifique la lista oficial en el Reglamento Técnico Omnibus o consulte con un consultor BIS para verificar si su maquinaria cae bajo los requisitos obligatorios de certificación Scheme X."
+        }
+    ];
+
+    return (
+        <section
+            id="faqs"
+            className="my-2 scroll-mt-20"
+            aria-label="Preguntas Frecuentes"
+        >
+            <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
+                <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+                    Preguntas Frecuentes
+                </h4>
+                <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
+                    ¿No puede encontrar la respuesta que busca?{" "}
+                    <a
+                        href="/contact"
+                        className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
+                    >
+                        ¡Contáctenos!
+                    </a>
+                </p>
+
+                <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
+                    <Accordion type="single" collapsible className="w-full">
+                        {faqData.map((faq, index) => (
+                            <AccordionItem key={index} value={`item-${index + 1}`}>
+                                <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                                    {faq.question}
+                                </AccordionTrigger>
+                                <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                                    {faq.answer}
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const SchemeXMainContentLeft = () => {
+    return (
+        <div className="flex-1">
+            <div className="flex flex-col gap-[20px] md:gap-[40px]">
+
+                {/* Overview Section */}
+                <SchemeXMainContentLeftOverviewSection />
+
+                {/* Divider */}
+                <div className="service-left-content-divider" />
+
+                {/* Process Section */}
+                <SchemeXMainContentLeftProcessSection />
+
+                {/* Divider */}
+                <div className="service-left-content-divider" />
+
+                {/* Documents Section */}
+                <SchemeXMainContentLeftDocumentsSection />
+
+                {/* Divider */}
+                <div className="service-left-content-divider" />
+
+                {/* Conclusion Section */}
+                <SchemeXMainContentLeftConclusionSection />
+
+                {/* Divider */}
+                <div className="service-left-content-divider" />
+
+                <ServiceAuthorSpanish />
+            </div>
+        </div>
+    )
+}
+
+const SchemeXMainContentLeftConclusionSection = () => {
+    return (
+        <div id="conclusion" className="flex flex-col scroll-mt-20">
+            {/* Conclusion */}
+            <div className="flex w-full items-center gap-3">
+                <span className="service-left-content-index-heading">Conclusión</span>
+                <Separator className="service-left-content-separator" />
+            </div>
+
+            <h2 className="service-left-content-heading-two">
+                Conclusión
+            </h2>
+
+            <p className="service-left-content-paragraph">
+                La Certificación BIS Scheme-X sigue siendo vital para mantener la seguridad,
+                confiabilidad y calidad de tableros de distribución de baja tensión y engranajes de control,
+                Maquinaria y equipos eléctricos. Para los fabricantes de herramientas de máquina
+                aplicables al procesamiento de piedra, cerámica, concreto, cemento asfáltico
+                y vidrio mineral, la certificación BIS Scheme-X es obligatoria.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                Al cumplir con estas obligaciones, los fabricantes garantizan la conformidad del producto,
+                mejoran la confianza del consumidor, así como su credibilidad en el mercado. Scheme-X se asegura de que la producción sea lo
+                más fluida posible, se cumplan estándares de seguridad en todo el mundo y las
+                marcas reconocidas ganen una reputación positiva.
+            </p>
+
+        </div>
+    )
+}
+
+const SchemeXMainContentLeftDocumentsSection = () => {
+    return (
+        <div id="documents" className="flex flex-col scroll-mt-20">
+            {/* Documents */}
+            <div className="flex w-full items-center gap-3">
+                <span className="service-left-content-index-heading">Documentos</span>
+                <Separator className="service-left-content-separator" />
+            </div>
+
+            <h2 className="service-left-content-heading-two">
+                Documentos Clave Requeridos para la Certificación BIS Scheme X
+            </h2>
+
+
+            <p className="service-left-content-paragraph">
+                Para agilizar el proceso de certificación BIS, los fabricantes están obligados
+                a recopilar y presentar los siguientes documentos durante la fase de registro:
+            </p>
+
+            <div className="mt-[16px] md:mt-[24px]">
+                <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+                    <TableHeader className="bg-[#F9F7F2]">
+                        <TableRow className="bg-[#1A8781]/10">
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
+                                N.º Sl.
+                            </TableHead>
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
+                                Documento Requerido
+                            </TableHead>
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                                Detalles
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody className="bg-white divide-y divide-gray-200">
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                1.
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Nombre y Dirección (Fábrica y Oficina)
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Nombre legal completo y direcciones físicas del sitio de fabricación
+                                y oficina
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                2.
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Información PAN y GST
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Número de Cuenta Permanente (PAN) y detalles de registro GST
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                3.
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Detalles de Contacto
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Dirección de correo electrónico, número de móvil y línea fija para comunicaciones
+                                oficiales
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                4.
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Detalles de Gestión
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Nombres, roles e IDs de ejecutivos clave y firmante autorizado
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                5.
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Descripción del Producto
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Detalles de maquinaria y equipo cubiertos bajo el Primer
+                                Anexo del Reglamento Técnico Omnibus
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                6.
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Clasificación del Producto
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Tipo, modelo y variedad específica para la que se solicita la licencia BIS
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                7.
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Archivo Técnico
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Todos los detalles técnicos relacionados con el producto y detalles
+                                sobre la unidad de fabricación.
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </div>
+
+            <h3 className="service-left-content-heading-three">
+                Validez y Proceso de Renovación del Certificado Scheme-X:
+            </h3>
+
+            <PointsListWithoutHeading
+                points={[
+                    "Validez de la Licencia y Renovación: Las Licencias BIS bajo Scheme-X se emiten por un período de 3 a 6 años para producción continua. Una vez que el período ha expirado, la licencia puede renovarse por la misma duración mediante la presentación de una solicitud de renovación, la tarifa requerida y documentos de cumplimiento.",
+                    "Certificado de Conformidad (CoC): Un CoC se emite para producción única, y es aplicable para fabricantes nacionales e internacionales. Dado que se aplica solo a un lote único, un CoC no tiene opción de renovación.",
+                    "Informe de Pruebas de Producto: Cuando los informes de prueba se preparan en el laboratorio del fabricante, los funcionarios BIS los verifican durante la inspección de fábrica realizando pruebas de testigo. Si las pruebas se realizan en instalaciones subcontratadas, esas instalaciones también son inspeccionadas y aprobadas por BIS.",
+                    "Revisión de Solicitud de Renovación: Para validez ininterrumpida, un fabricante está obligado a continuar cumpliendo con las disposiciones de Scheme-X. Según el Reglamento 8 de los Reglamentos de Evaluación de Conformidad BIS, la Oficina de Estándares Indios procesa la solicitud de renovación en el formulario VIII. La renovación se realiza solo después de verificar el cumplimiento satisfactorio.",
+                ]}
+            />
+        </div>
+    )
+}
+
+const SchemeXMainContentLeftProcessSection = () => {
+    return (
+        <div id="process" className="flex flex-col scroll-mt-20">
+            {/* Process */}
+            <div className="flex w-full items-center gap-3">
+                <span className="service-left-content-index-heading">Proceso</span>
+                <Separator className="service-left-content-separator" />
+            </div>
+
+            <h2 className="service-left-content-heading-two">
+                Pasos para Obtener Certificación Bajo BIS Scheme-X
+            </h2>
+
+
+            <p className="service-left-content-paragraph">
+                Emitir Certificado BIS bajo Scheme-X es una actividad sistemática destinada a
+                asegurar que el fabricante cumpla con los estándares de seguridad, calidad y
+                cumplimiento aplicables. El proceso es el siguiente:
+            </p>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Verificar Alcance: Determine si su producto está en el alcance de Scheme-X y si cumple con los requisitos de seguridad BIS. Verifique los Estándares Indios relevantes y el cronograma técnico para determinar si podrá cumplir.",
+                    "Preparar los Documentos Requeridos: Los fabricantes necesitan recopilar y organizar los siguientes documentos: Certificados de Negocio Registrados, Documentos de Base de Diseño, Documentos de Flujo de Fábrica y Proceso, Informes de Pruebas de Servicio (si aplica), Documentos de Aseguramiento y Control de Calidad.",
+                    "Construir el Archivo Técnico: Un archivo técnico es una parte indispensable para la reclamación de extensión de un certificado. Debe contener: Especificaciones Técnicas del Producto, Información de Métodos y Técnicas, Documentos de Cumplimiento y Pruebas, Limitación y Propósito Pretendido del producto, Documentación de Aseguramiento de Calidad, Trazabilidad de Materias Primas, Trazabilidad de Subcontratación, y el resto de la evidencia, Conformidad con los estándares dentro del alcance enmarcado.",
+                    "El Formulario de Solicitud: El formulario de solicitud puede presentarse electrónicamente en el Sitio Web BIS para el lugar designado. El pago de la tarifa de solicitud es obligatorio. El resto de los documentos que verifican la solicitud deben incluirse para una evaluación adecuada.",
+                    "Inspección de Fábrica: Para fabricantes nacionales: La inspección se realiza durante un período máximo de 2 días. Para fabricantes extranjeros: La inspección se realiza durante un período máximo de 3 días (días adicionales pueden acumularse debido a solicitudes adicionales).",
+                    "Pruebas de Muestras de Producto: La prueba de muestras se realiza ya sea en el sitio del fabricante o en laboratorios aprobados por BIS subcontratados (se permite la prueba subcontratada). La prueba demuestra el cumplimiento de los estándares indios relevantes.",
+                    "Emisión de Certificación: Si un producto cumple con todas las condiciones, BIS otorga a cada producto una Licencia o un Certificado de Conformidad (CoC). El Fabricante puede usar libremente la Marca Estándar BIS en todos los productos certificados.",
+                ]}
+            />
+
+
+            <p className="service-left-content-paragraph">
+                Este archivo sirve como evidencia técnica y estadística de la
+                reclamación del producto que sustenta los estándares de trazabilidad de seguridad.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                Durante el período de inspección, se espera que los funcionarios BIS:
+                Analicen el archivo técnico, Evalúen los métodos de fabricación junto
+                con sistemas de aseguramiento de calidad de apoyo, Observen la prueba del
+                producto, Determinen incumplimiento (si lo hay) y den pasos remediales. Un
+                informe detallado de la auditoría se proporciona al solicitante después de la
+                visita.
+            </p>
+
+
+
+            <p className="service-left-content-paragraph">
+                Esta estrategia mantiene el cumplimiento con el Estándar BIS y es un
+                reconocimiento de cumplimiento indio e internacional, acorralando a la
+                industria en la confianza del consumidor hacia la seguridad y calidad.
+            </p>
+
+
+            <h2 className="service-left-content-heading-three">
+                Procedimiento para Fabricantes Nacionales
+            </h2>
+
+
+            <p className="service-left-content-paragraph">
+                Los fabricantes nacionales siguen un enfoque directo obteniendo la Licencia BIS
+                bajo Scheme-X. Los pasos directos a seguir incluyen:
+            </p>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Documentación: Todos los documentos pertinentes al esquema deben recopilarse y prepararse.",
+                    "Ejecución de la Solicitud: La solicitud debe presentarse junto con las tarifas relevantes.",
+                    "Investigación de la Solicitud: cualquier solicitud presentada está sujeta a escrutinio y un conjunto subsiguiente de preguntas es generado por BIS.",
+                    "Nombramiento de Auditores: Los auditores son nombrados por BIS pero el individuo nominado está sujeto al pago de las tarifas de auditoría.",
+                    "Auditoría de Fábrica: Se realiza una auditoría de examen y encuesta en sitio y se recopilan muestras relevantes.",
+                    "Evaluación de Muestras: Las muestras se evalúan en un laboratorio reconocido por BIS. El solicitante paga todas las tarifas de prueba de laboratorio reconocido por BIS.",
+                    "Pago de Tarifas de Licencia y Marcado: Se realizan los pagos requeridos a BIS.",
+                    "Concesión de Licencia: El certificado que otorga permiso para usar la Marca BIS es otorgado por BIS.",
+                ]}
+            />
+
+
+            <p className="service-left-content-paragraph">
+                <strong>Cronograma Típico:</strong> Cerca de 90 días hábiles (según la práctica
+                BIS) son necesarios. Esto se proporciona que no haya no conformidades clave.
+            </p>
+
+
+            <h2 className="service-left-content-heading-three">
+                Procedimiento para Fabricantes Extranjeros
+            </h2>
+
+
+            <p className="service-left-content-paragraph">
+                A diferencia de los fabricantes nacionales, los fabricantes extranjeros que solicitan un certificado BIS
+                bajo Scheme-X están obligados a cumplir con un proceso más estricto
+                y pasos adicionales. El procedimiento se detalla a continuación.
+            </p>
+
+            <PointsListWithoutHeading
+                points={[
+                    "Preparación de Documentación: Negocio registrado, el producto y diseño de fábrica, informes de prueba, y los documentos de gestión de calidad asociados todos deben estar en la carpeta configurada para cumplir.",
+                    "Presentación de la Solicitud: La solicitud, la tarifa requerida y todos los materiales de solicitud deben presentarse a través del portal en línea BIS.",
+                    "Registro de Solicitud y Escrutinio: La solicitud es registrada por BIS y se realiza una verificación de los documentos. Cualquier problema que BIS pueda tener debe resolverse por el solicitante de manera oportuna.",
+                    "Asignación de Auditor y Pago: Los auditores de BIS responsables de inspecciones de fábrica son asignados al solicitante para la auditoría. El solicitante debe pagar las tarifas establecidas para la auditoría realizada, según lo determine la legislación aplicable.",
+                    "Preparación de Auditoría: Los fabricantes extranjeros son responsables de los arreglos logísticos para la auditoría como emisión de Visa, boletos aéreos y reservas de hotel para funcionarios BIS son arreglados y pagados.",
+                    "Auditoría de Fábrica y Selección de Muestras: Los funcionarios BIS realizan una auditoría de fábrica que abarca 3 días (más días pueden agregarse si se necesitan más solicitudes).",
+                    "Pruebas de Producto: Las muestras seleccionadas se envían a un laboratorio acreditado por BIS para pruebas. En algunas instancias, las pruebas se contratan a otros laboratorios de prueba y por lo tanto el pago se liquida a través del laboratorio de prueba principal.",
+                    "Pago de Tarifas de Marcado y Licencia: Después de una auditoría exitosa y resultados de prueba, el fabricante debe pagar la tarifa de marcado requerida y la tarifa de licencia a BIS.",
+                    "Concesión de Licencia: BIS emite la Licencia/Certificado de Conformidad (CoC) una vez que se han seguido todas las condiciones en total. BIS entonces permite al fabricante con una Marca Estándar BIS usada en otros productos certificados, una vez confirmado el cumplimiento.",
+                ]}
+            />
+
+            <p className="service-left-content-paragraph">
+                La auditoría comprende: Evaluación de los sistemas de aseguramiento de calidad y los
+                flujos de trabajo en los procesos de fabricación, Evaluación del cumplimiento
+                y la documentación técnica, Selección de muestras de prueba independiente.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                Todo el proceso toma, basado en las prácticas de BIS, aproximadamente 6-7
+                meses.
+            </p>
+
+
+            <h3 className="service-left-content-heading-three">
+                Puntos Clave Adicionales para Fabricantes Extranjeros:
+            </h3>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Clasificación FMCS: Todos los fabricantes extranjeros se clasifican como 'Gran Escala' bajo el Esquema de Certificación de Fabricantes Extranjeros. Esta clasificación es independientemente de la escala de operaciones realizadas.",
+                    "Representante Autorizado Indio (AIR): Cada fabricante extranjero está obligado a designar un Representante Autorizado Indio (AIR). El AIR es el punto de contacto principal para el solicitante extranjero y BIS, responsable del cumplimiento, colaboración y mantenimiento de la licencia BIS.",
+                    "Auditorías de Fábrica: Las auditorías de fábrica para fabricantes extranjeros son exhaustivas y tienden a durar 3 días. También, se requieren más días en caso de múltiples solicitudes de productos presentadas.",
+                ]}
+            />
+
+        </div>
+    )
+}
+
+const SchemeXMainContentLeftOverviewSection = () => {
+    // Download function for table data
+    const downloadTableData = () => {
+        const link = document.createElement("a");
+        link.href = "/pdf/schemeXproduct.pdf";
+        link.download = "SchemeXproduct.pdf";
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    return (
+        <div id="overview" className="flex flex-col scroll-mt-20">
+            {/* Overview */}
+            <div className="flex w-full items-center gap-3">
+                <span className="service-left-content-index-heading">Resumen</span>
+                <Separator className="service-left-content-separator" />
+            </div>
+
+
+            <h2 className="service-left-content-heading-two">
+                Introducción a la Certificación BIS Scheme X
+            </h2>
+
+            <p className="service-left-content-paragraph">
+                La Oficina de Estándares Indios, o BIS por sus siglas en inglés, lanzó
+                &ldquo;Scheme X&rdquo; el 16 de marzo de 2022, con el objetivo de mejorar el cumplimiento
+                en seguridad y calidad de productos en India. Fabricantes indios y extranjeros
+                pueden solicitar certificación BIS para Máquinas y Equipos Eléctricos,
+                componentes Como ensamblajes, subensamblajes y, y Herramientas especificadas en
+                el Anexo-II de Scheme-X y obtener certificación antes de exportar,
+                vender o distribuir en India.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                Bajo Scheme X, los fabricantes pueden solicitar una Licencia BIS o un
+                Certificado de Conformidad (CoC) para engranajes de conmutación de bajo voltaje y control
+                engranaje, maquinaria y equipo eléctrico. Una vez que los fabricantes están
+                certificados, se les permite usar la marca Estándar BIS, indicando
+                que sus productos están de acuerdo con los estándares establecidos en
+                India.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                La certificación, al promover el producto y el cumplimiento con los
+                Estándares Indios y Reglamentos Gubernamentales, ayuda a desarrollar confianza y
+                confianza de los consumidores en los productos certificados.
+            </p>
+
+
+            <h2 className="service-left-content-heading-three">
+                ¿Qué es la Certificación Scheme X?
+            </h2>
+
+
+            <p className="service-left-content-paragraph">
+                Scheme X es un esquema de certificación de productos desarrollado bajo los Reglamentos de
+                Evaluación de Conformidad BIS, 2018 y más tarde, simplificado bajo los
+                Reglamentos de Enmienda de Evaluación de Conformidad BIS, 2022.
+            </p>
+
+
+
+            <p className="service-left-content-paragraph">
+                El objetivo principal es llevar los estándares de seguridad y calidad indios a
+                estándares globales, especialmente con respecto a la maquinaria industrial y
+                equipos eléctricos. Los productos fabricados en o importados a India
+                bajo este esquema están sujetos a escrutinio y evaluación rigurosos para
+                probar estándares técnicos, de seguridad, así como de rendimiento.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                Las disposiciones bajo el alcance original de la Certificación Scheme X han sido
+                revisadas y ampliadas con la recién emitida Orden de Seguridad de Maquinaria y Equipos Eléctricos
+                (Reglamento Técnico Omnibus), 2024, que está bajo la jurisdicción del Ministerio de Industrias Pesadas y ha sido
+                puesta en vigor por el BIS. La orden entra en vigor el 1
+                de septiembre de 2026, y cubre un amplio espectro de maquinaria y equipos eléctricos
+                como bombas para manejo de líquidos, compresores, grúas,
+                máquinas eléctricas rotativas, transformadores y tableros de distribución y engranajes de control.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                Ensamblajes, subensamblajes y componentes de dicha maquinaria o equipo
+                también forman parte del alcance de certificación según la Sección 16 de la Ley de
+                la Oficina de Estándares Indios, 2016.
+            </p>
+
+            <p className="service-left-content-paragraph">
+                Además, bajo las Reglas CMVR de 1989 (Construcción y Fabricación de
+                Regulación de Válvula), Bowser y otros tipos de equipo de construcción
+                bajo la jurisdicción de Scheme X, se asegura que el mercado no
+                se exponga a equipo que carece de los requisitos de seguridad y
+                estándares técnicos.
+            </p>
+
+
+            <h2 className="service-left-content-heading-three">
+                Reglamento Técnico Omnibus (OTR)
+            </h2>
+
+
+            <p className="service-left-content-paragraph">
+                El Ministerio de Industrias Pesadas lanzó el &ldquo;Reglamento Técnico
+                Omnibus sobre Órdenes de Seguridad (Seguridad de Maquinaria y Equipo Eléctrico)&rdquo;
+                a través de notificación E-Gaceta del 28 de agosto de 2024. Este
+                reglamento innovador pretende mejorar - seguridad, calidad y
+                cumplimiento de maquinaria, equipos eléctricos y sus ensamblajes, sub
+                ensamblajes y componentes, bajo Scheme X de la Regulación BIS, 2016.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                Bajo el OTR, todas las categorías de maquinaria y equipos eléctricos, y
+                todas sus partes y componentes están incluidas. Sin embargo, algunas categorías
+                están específicamente excluidas:
+            </p>
+
+            <PointsListWithoutHeading
+                points={[
+                    "Cualquier maquinaria y componentes que formen parte de cualquier otra orden bajo la Sección 16 emitida bajo la Ley de la Oficina de Estándares Indios, 2016.",
+                    "Bienes y artículos domésticos fabricados que solo están destinados a exportación.",
+                    "Maquinaria y equipo de construcción que están bajo las Reglas CMVR, 1989, prescritas por el Ministerio de Transporte por Carretera y Carreteras (MoRTH).",
+                ]}
+            />
+
+
+            <p className="service-left-content-paragraph">
+                Estas excepciones se hacen para facilitar el cumplimiento y evitar duplicación innecesaria
+                de regulación con el fin de promover la facilidad de hacer negocios.
+            </p>
+
+
+
+            <p className="service-left-content-paragraph">
+                El Reglamento Técnico Omnibus, 2024 cubre toda la maquinaria y
+                equipos eléctricos, incluyendo tableros de distribución de bajo voltaje y engranajes de control
+                notificados por el Ministerio de Industrias Pesadas, serán tratados bajo el
+                marco de Scheme X de Certificación BIS. La Orden entrará en vigor
+                el 1 de septiembre de 2026 para que los fabricantes e importadores tengan
+                suficiente tiempo para modificar sus operaciones según las Órdenes emitidas.
+            </p>
+
+
+            <h2 className="service-left-content-heading-three">
+                Certificación BIS bajo el Reglamento Técnico Omnibus
+            </h2>
+
+
+            <p className="service-left-content-paragraph">
+                Según el OTR 2024, fabricantes, así como importadores, de maquinaria
+                y equipos eléctricos que incluyen bombas, compresores,
+                centrífugas, grúas, transformadores y tableros de distribución deben solicitar Certificación BIS
+                bajo Scheme X.
+            </p>
+
+
+
+            <p className="service-left-content-paragraph">
+                Bajo Scheme X, los fabricantes pueden optar por solicitar:
+            </p>
+
+
+            <PointsListWithoutHeading
+                points={["Una Licencia BIS, o", "Un Certificado de Conformidad (CoC)"]}
+            />
+
+
+            <p className="service-left-content-paragraph">
+                Productos que llevan la Marca Estándar BIS que es una Marca de Conformidad
+                que certifica y asegura a los usuarios que el producto es seguro,
+                confiable y de buena calidad. También es una marca de confianza y realmente
+                buen rendimiento.
+            </p>
+
+
+            <h3 className="service-left-content-heading-three">
+                Nota Especial para PYMEs
+            </h3>
+
+
+            <p className="service-left-content-paragraph">
+                Como en muchos otros sectores, Micro, Pequeñas y Medianas Empresas (PYMEs)
+                también deben cumplir con Scheme X y obtener Certificación BIS para su
+                maquinaria y equipos eléctricos. Aunque puede parecer que el cumplimiento
+                con los requisitos regulatorios puede ser desafiante, el certificado Scheme X
+                es una adición de valor y ventaja para las PYMEs por las siguientes
+                razones:
+            </p>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Prueba el cumplimiento de obligaciones legales y otras requeridas establecidas por el gobierno.",
+                    "Aumenta la reputación del producto y la confianza del consumidor.",
+                    "Facilita el acceso a un mercado doméstico y extranjero más grande.",
+                    "Mejora la posición global de la PYME con respecto a la competitividad, seguridad y calidad.",
+                ]}
+            />
+
+
+            <h3 className="service-left-content-heading-three">
+                Logo BIS Scheme X
+            </h3>
+
+
+
+            <p className="service-left-content-paragraph">
+                La marca estándar BIS de Scheme X forma una marca de calidad y un principio
+                de confianza. El Logo contiene:
+            </p>
+
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "el número de estándar se muestra en la porción superior del logo; y",
+                    "el número de licencia mostrado en la porción inferior del Logo en el formato: CM/L-XXXXXXXXXX",
+                ]}
+            />
+
+
+
+            <p className="service-left-content-paragraph">
+                Esta marca significa que se ha emitido exitosamente una Licencia BIS al
+                fabricante. Entitula al fabricante a colocar la Marca BIS y
+                asegura a los consumidores que el producto es auténtico y seguro.
+            </p>
+
+
+            <div className="flex justify-center mt-[20px] md:mt-[26px]">
+                <img
+                    src="/services-images/scheme-x-logo.png"
+                    alt="Logo BIS Scheme X"
+                    title="Certificación BIS Scheme X"
+                    className="max-w-full h-auto rounded-lg shadow-md"
+                />
+            </div>
+
+
+            <h3 className="service-left-content-heading-three">
+                Implicaciones Legales
+            </h3>
+
+
+            <p className="service-left-content-paragraph">
+                La Marca Estándar BIS es una marca de confianza y calidad. La marca solo
+                está disponible después de que un contrato válido esté en vigor. Solo un contrato válido
+                permite al propietario usar la marca. Usar la marca sin un contrato válido es una ofensa bajo la constitución india y es igual a tener una marca legal. El propietario de la marca se coloca bajo restricciones pesadas para el uso de la licencia CM/L-XXXXXXXXXX para productos que no tienen certificación BIS.
+            </p>
+
+
+
+
+            <p className="service-left-content-paragraph">
+                Sigue que cada productor está obligado a:
+            </p>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Obtener una Licencia BIS válida bajo Scheme X.",
+                    "Satisfacer los requisitos relevantes de Estándares Indios; y",
+                    "Afijar correctamente los productos con el Logo BIS aprobado.",
+                ]}
+            />
+
+
+            <p className="service-left-content-paragraph">
+                Este marco regulatorio se extiende para proteger los intereses de
+                consumidores y personas de negocios, fomentando un mercado que enfatiza
+                seguridad, apertura y confianza.
+            </p>
+
+
+
+            <h2 className="service-left-content-heading-three">
+                Diferencias Clave Entre Scheme-I y Scheme-X
+            </h2>
+
+
+            <h3 className="service-left-content-heading-three">
+                Scheme-I
+            </h3>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Incluye una categoría más amplia de productos de consumo como electrónicos, electrodomésticos e incluso productos industriales.",
+                    "Los productos emitidos un certificado bajo este esquema deben tener la Marca Estándar ISI.",
+                    "Se relaciona tanto con fabricantes nacionales como extranjeros.",
+                    "Involucra auditorías de fábrica y pruebas de muestras para determinar calidad y cumplimiento con Estándares Indios.",
+                ]}
+            />
+
+            <h3 className="service-left-content-heading-three">
+                Scheme-X
+            </h3>
+
+            <PointsListWithoutHeading
+                points={[
+                    "Aborda productos de ingeniería industrial y críticos de seguridad de alto riesgo, que incluyen equipos eléctricos, maquinaria y sistemas industriales de considerable deber.",
+                    "La certificación es de mayor rigor que Scheme-I. Involucra informes técnicos avanzados, verificación de cumplimiento y auditorías de certificación extensas.",
+                    "Scheme-X tiende a ser más costoso que Scheme-I debido a la documentación adicional de cumplimiento.",
+                    "Cualquier negocio que trate con equipos eléctricos o maquinaria industrial está obligado a obtener certificación bajo Scheme-X.",
+                ]}
+            />
+
+            <div className="mt-[16px] md:mt-[24px]">
+                <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+                    <TableHeader className="bg-[#F9F7F2]">
+                        <TableRow className="bg-[#1A8781]/10">
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
+                                Característica
+                            </TableHead>
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
+                                Marca ISI
+                            </TableHead>
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                                Scheme X
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody className="bg-white divide-y divide-gray-200">
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Gestionado por
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                BIS Indio
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                BIS Indio
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Tipo de Certificación
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Licencia BIS
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Certificado BIS / Licencia BIS
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Productos Objetivo
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Bienes de consumo
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Maquinaria y equipos eléctricos
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Marca Usada
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Marca ISI
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Marca estándar BIS (bajo Scheme X)
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d] font-medium">
+                                Nivel de Cumplimiento
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Cumplimiento de estándar indio
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                Cumplimiento técnico y de seguridad de alto nivel
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </div>
+
+
+            <h3 className="service-left-content-heading-three">
+                Productos Cubiertos por Scheme-X
+            </h3>
+
+
+            <p className="service-left-content-paragraph">
+                Scheme-X cubre productos con el mayor riesgo para la seguridad y
+                rendimiento, incluyendo:
+            </p>
+
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Equipo Eléctrico: Transformadores industriales, unidades de suministro de energía y similares, tableros de distribución de bajo voltaje y engranajes de control, más otros dispositivos de alto voltaje.",
+                    "Maquinaria Pesada: Prensas hidráulicas, grúas industriales, herramientas de máquina automatizadas y equipo especializado para industrias a gran escala.",
+                    "Equipo Crítico para la Vida: Extintores de incendios, recipientes a presión, sistemas eléctricos de emergencia y otros dispositivos y sistemas para seguridad de vida.",
+                    "Electrónicos de Consumo e Industrial Especializados: Electrodomésticos electrónicos de grado médico y equipo que incorpora medidas protectoras avanzadas.",
+                ]}
+            />
+
+            {/* Scheme X Product Table 20 */}
+            <div className="mt-[16px] md:mt-[24px]">
+
+                <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
+                    <TableHeader className="bg-[#F9F7F2]">
+                        <TableRow className="bg-[#1A8781]/10">
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
+                                N.º Serial
+                            </TableHead>
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
+                                Descripción de Maquinaria y Equipos Eléctricos
+                            </TableHead>
+                            <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
+                                Código HS
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody className="bg-white divide-y divide-gray-200">
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                1
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de Bombas para manejo de líquidos, elevadores de líquidos y
+                                    (o)sus ensamblajes /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                841340, 841350, 841360, 841370, 841381, 841382, 841391 y
+                                841392
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                2
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-compresores"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de compresores y(o)sus ensamblajes /subensamblajes
+                                    /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                841430, 841440, 84148011, 84148090, 84149011, 84149019, 84149040
+                                y 84149090
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                3
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de maquinaria para tratamiento de material por un proceso
+                                    que implica un cambio de temperatura y(o)sus ensamblajes
+                                    /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                841932, 841939, 841940, 841950, 841960, 841981, 841989 y
+                                84199090
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                4
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-centrifugas-y-maquinaria-de-filtrado-o-purificacion"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de centrífugas, maquinaria de filtrado o purificación para
+                                    líquido y gas y(o)sus ensamblajes /subensamblajes
+                                    /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                842111, 842112, 842119, 84212110, 84212190, 842122, 842129,
+                                842131, 842139, 842191 y 842199
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                5
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-maquinaria-de-empaque"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de maquinaria para llenado, cierre, sellado, etiquetado
+                                    botellas, empaquetado o envoltura y(o)sus
+                                    ensamblajes/subensamblajes/componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                842220, 842230, 842240 y 842290
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                6
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-gruas"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de grúas y (o) sus ensamblajes
+                                    /subensamblajes/componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691
+                                y 84269990
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                7
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de maquinaria para construcción, movimiento de tierras, Minería y
+                                    (o)sus ensamblajes /subensamblajes/componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8429, 843010, 843020, 843031, 843039, 843041, 843049, 843050,
+                                843141, 843142, 843143 y 843149
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                8
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-maquinas-de-tejido"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de máquinas de tejer (telares) y (o)sus
+                                    ensamblajes/subensamblajes / componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8446, 844811, 844819, 844842 y 844849
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                9
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-maquinaria-de-bordado"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de maquinaria para hacer bordados y(o)sus
+                                    ensamblajes /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                84479020 y 844859
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                10
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de herramientas de máquina de corte de metal cubiertas bajo el
+                                    encabezado 8456 a 8461 y(o)sus ensamblajes
+                                    /subensamblajes/componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8456, 8457, 8458, 8459, 8460, 8461 y 846693
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                11
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-herramientas-de-maquina"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de herramientas de máquina para trabajar piedra, cerámica,
+                                    concreto, cemento de asbesto o vidrio mineral similar y (o)sus
+                                    ensamblajes /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8464 y 84669100
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                12
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-maquinaria-de-caucho-y-plasticos"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de maquinaria para trabajar caucho y plásticos y(o)
+                                    sus ensamblajes /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8477
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                13
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-obras-publicas-y-aparatos-mecanicos"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de Máquinas incluyendo las máquinas para obras públicas y
+                                    construcción y la maquinaria y aparatos mecánicos con
+                                    funciones individuales, no especificadas O incluidas en otro lugar en
+                                    Capítulo 84 y(o)sus ensamblajes/subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                84791000, 84798999 y 84799090
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                14
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de engranajes y engranajes, ruedas dentadas, piñón de cadena,
+                                    elementos de transmisión bolas o tornillos de rodillo, cajas de engranajes y
+                                    cambiadores de velocidad, incluyendo convertidores de par Y (o)sus
+                                    ensamblajes /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                84834000 y 84839000
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                15
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-maquinas-electricas-rotativas"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de Máquinas eléctricas rotativas como Generador, etc.
+                                    y (o) sus ensamblajes /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8501 y 8503
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                16
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-generadores-diesel"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de Generador Diésel y (o)sus ensamblajes
+                                    /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8502 y 8503
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                17
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-transformadores"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de Transformadores y (o)sus ensamblajes
+                                    /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                850421, 850422, 850423, 850431, 850432, 850433, 850434 y
+                                850490
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                18
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de Convertidor de Semiconductores de Potencia y (o)sus
+                                    ensamblajes /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                850440
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                19
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-hasta-1000-voltios"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de tableros de distribución y engranajes de control que operan a
+                                    voltajes no superiores a 1000 voltios y (o)sus ensamblajes
+                                    /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8536, 8537 y 8538
+                            </TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-gray-50">
+                            <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
+                                20
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                <Link
+                                    to="/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
+                                    className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
+                                >
+                                    Todos los tipos de tableros de distribución y engranajes de control que operan a
+                                    voltajes superiores a 1000 voltios y (o) sus ensamblajes
+                                    /subensamblajes /componentes
+                                </Link>
+                            </TableCell>
+                            <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
+                                8535, 8537 y 8538
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+
+                {/* Heading and Description */}
+                <div className="mb-6">
+                    <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+                        Estándar de Seguridad por Producto
+                    </h3>
+                    <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+                        Descripción de Maquinaria y Equipos Eléctricos
+                    </p>
+                </div>
+
+                <div className="flex justify-end mb-4">
+                    <button
+                        onClick={downloadTableData}
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A8781] text-white rounded-lg font-geist text-sm md:text-base hover:bg-[#156d68] transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-4 w-4 md:h-5 md:w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                            />
+                        </svg>
+                        Descargar PDF
+                    </button>
+                </div>
+            </div>
+
+            <h2 className="service-left-content-heading-three">
+                Estándares de Seguridad Bajo BIS Scheme - X
+            </h2>
+
+
+
+            <p className="service-left-content-paragraph">
+                Más que una mera necesidad legal, la Certificación BIS Scheme - X
+                ofrece una promesa de seguridad, calidad y confiabilidad. Esta
+                Certificación, que implica estricta adherencia a normas nacionales e
+                internacionales, asegura que la maquinaria y aparatos eléctricos
+                ofrecidos a los usuarios sean seguros, amigables con el medio ambiente y técnicamente
+                sólidos.
+            </p>
+
+
+            <p className="service-left-content-paragraph">
+                Para certificar bajo Scheme - X, los fabricantes necesitan cumplir con los
+                siguientes componentes principales de seguridad:
+            </p>
+
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Seguridad Eléctrica: Cumplimiento con los IEC y Estándares Indios aplicables. La certificación protege contra cortocircuitos, choques eléctricos, fallos de aislamiento, pérdida en tierra protectora, ignición de material combustible circundante e incendio.",
+                    "Seguridad Mecánica: Evaluación de la integridad estructural de la maquinaria y la integridad de partes móviles y de nuevos materiales. Asegura que el equipo sea sometido de manera segura a estrés mecánico, desgaste y peligros operativos.",
+                    "Seguridad contra Incendios: El uso de materiales que están diseñados y construidos con material resistente al fuego. Cumplimiento con estándares para rendimiento de propagación de llamas para controlar los riesgos asociados con fuego.",
+                    "Cumplimiento Ambiental: El uso de potencia controlada y materiales ecológicos en la producción de equipo. Alienta a los fabricantes a reducir el impacto ambiental de su equipo.",
+                    "Gestión de Calidad: Control dominante y autónomo en los procesos de producción para mantener los estándares y normas preestablecidos. Enfoque en la regulación de condiciones de fábrica, incluyendo auditorías de proceso y adherencia continua.",
+                ]}
+            />
+
+
+
+            <h2 className="service-left-content-heading-three">
+                Estándares Regulatorios Bajo Scheme-X
+            </h2>
+
+
+            <p className="service-left-content-paragraph">
+                Los fabricantes están obligados a cumplir con los Estándares Indios Relevantes
+                que están alineados con los Estándares Internacionales, incluyendo:
+            </p>
+
+
+            <h3 className="service-left-content-heading-three">
+                Estándares Tipo A:
+            </h3>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "IS 16819:2018 / ISO 12100:2010 – Seguridad de Maquinaria: Principios Generales para el Diseño, Evaluación de Riesgos y Reducción de Riesgos.",
+                ]}
+            />
+
+
+            <h3 className="service-left-content-heading-three">
+                Estándares Tipo B:
+            </h3>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Descrito en el Segundo Anexo de la Orden de Reglamento Técnico Omnibus (OTR), 2024.",
+                ]}
+            />
+
+
+
+            <h3 className="service-left-content-heading-three">
+                Estándares Tipo C:
+            </h3>
+
+
+            <PointsListWithoutHeading
+                points={["Descrito en el Tercer Anexo de la Orden OTR, 2024."]}
+            />
+
+
+            <h3 className="service-left-content-heading-three">
+                Serie IS/IEC 60947:
+            </h3>
+
+
+            <PointsListWithoutHeading
+                points={[
+                    "Cubre tableros de distribución y engranajes de control de bajo voltaje en múltiples partes y secciones.",
+                ]} />
+        </div>
+    )
+}
+
+
+
+
+const PointsListWithoutHeading = ({ points }) => {
+    return (
+        <div className="mt-[18px] md:mt-[18px]">
+            <ul className="flex flex-col gap-3 list-none">
+                {points.map((point, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                        <div className="bg-green-500/10 p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5">
+                            <Check size={12} className="text-[#020817]" />
+                        </div>
+                        <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose flex-1">
+                            {point}
+                        </p>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};

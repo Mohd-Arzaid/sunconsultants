@@ -49,20 +49,20 @@ import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideCo
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
-const SchemeX = () => {
+const SchemeXEnglish = () => {
   return (
     <div className="relative">
-      {/* Scheme X Meta Tags */}
-      <SchemeXMetaTags />
-      {/* Scheme X Breadcrumb */}
-      <SchemeXBreadcrumb />
-      {/* Scheme X Hero Section */}
-      <SchemeXHero />
-      {/* Scheme X Index Section */}
-      <SchemeXIndex />
-      {/* Scheme X Main Content Section */}
-      <SchemeXMainContent />
-      {/* Footer Section */}
+      {/* Scheme X English Meta Tags */}
+      <SchemeXEnglishMetaTags />
+      {/* Scheme X English Breadcrumb */}
+      <SchemeXEnglishBreadcrumb />
+      {/* Scheme X English Hero Section */}
+      <SchemeXEnglishHero />
+      {/* Scheme X English Index Section */}
+      <SchemeXEnglishIndex />
+      {/* Scheme X English Main Content Section */}
+      <SchemeXEnglishMainContent />
+      {/* Footer English Section */}
       <FooterEng />
       {/* Scroll To Top Button Section */}
       <ScrollToTopButton />
@@ -71,9 +71,9 @@ const SchemeX = () => {
   )
 }
 
-export default SchemeX
+export default SchemeXEnglish
 
-const SchemeXMetaTags = () => {
+const SchemeXEnglishMetaTags = () => {
   const breadcrumbStructuredData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -148,7 +148,7 @@ const SchemeXMetaTags = () => {
     </Helmet>
   )
 }
-const SchemeXBreadcrumb = () => {
+const SchemeXEnglishBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -175,7 +175,7 @@ const SchemeXBreadcrumb = () => {
   )
 }
 
-const SchemeXHero = () => {
+const SchemeXEnglishHero = () => {
   return (
     <main className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
@@ -233,14 +233,14 @@ const SchemeXHero = () => {
         </div>
 
         {/* Right Side */}
-        <SchemeXHeroContactForm />
+        <SchemeXEnglishHeroContactForm />
       </div>
 
     </main>
   )
 }
 
-const SchemeXHeroContactForm = () => {
+const SchemeXEnglishHeroContactForm = () => {
   const [loading, setLoading] = useState(false);
 
   // Function to get page name based on URL
@@ -468,7 +468,7 @@ const SchemeXHeroContactForm = () => {
 };
 
 
-const SchemeXIndex = () => {
+const SchemeXEnglishIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -668,7 +668,7 @@ const SchemeXIndex = () => {
   );
 };
 
-const SchemeXMainContent = () => {
+const SchemeXEnglishMainContent = () => {
   return (
     <div>
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">

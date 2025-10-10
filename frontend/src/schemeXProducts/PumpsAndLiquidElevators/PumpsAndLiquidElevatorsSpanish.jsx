@@ -1291,10 +1291,11 @@ const PumpsAndLiquidElevatorsPageMainContentRightSpanish = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
+              submitStatus.type === "success"
                 ? "bg-green-50 text-green-700 border border-green-200"
                 : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+            }`}
           >
             {submitStatus.message}
           </div>

@@ -156,6 +156,40 @@ import SchemeXKorean from "./pages/SchemeX/SchemeXKorean";
 import SchemeXDutch from "./pages/SchemeX/SchemeXDutch";
 import SchemeXArabic from "./pages/SchemeX/SchemeXArabic";
 import SchemeXThai from "./pages/SchemeX/SchemeXThai";
+import WeavingMachinesVietnamese from "./schemeXProducts/WeavingMachines/WeavingMachinesVietnamese";
+import TransformersVietnamese from "./schemeXProducts/Transformers/TransformersVietnamese";
+import SwitchgearandControlgearEquipmentabove1000VoltsVietnamese from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsVietnamese";
+import SwitchgearandControlgearEquipmentVietnamese from "./schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentVietnamese";
+import RubberAndPlasticsMachineryVietnamese from "./schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryVietnamese";
+import RotaryElectricalMachinesVietnamese from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesVietnamese";
+import PublicWorksAndMechanicalVietnamese from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalVietnamese";
+import PowerSemiconductorsVietnamese from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsVietnamese";
+import PackingMachineryVietnamese from "./schemeXProducts/PackingMachinery/PackingMachineryVietnamese";
+import MetalCuttingMachinesVietnamese from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesVietnamese";
+import WeavingMachinesSpanish from "./schemeXProducts/WeavingMachines/WeavingMachinesSpanish";
+import TransformersSpanish from "./schemeXProducts/Transformers/TransformersSpanish";
+import SwitchgearandControlgearEquipmentabove1000VoltsSpanish from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsSpanish";
+import SwitchgearandControlgearEquipmentSpanish from "./schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentSpanish";
+import RubberAndPlasticsMachinerySpanish from "./schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinerySpanish";
+import RotaryElectricalMachinesSpanish from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesSpanish";
+import PublicWorksAndMechanicalSpanish from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalSpanish";
+import PowerSemiconductorsSpanish from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsSpanish";
+import PackingMachinerySpanish from "./schemeXProducts/PackingMachinery/PackingMachinerySpanish";
+import MetalCuttingMachinesSpanish from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesSpanish";
+import MachineToolsSpanish from "./schemeXProducts/MachineTools/MachineToolsSpanish";
+import MachineToolsVietnamese from "./schemeXProducts/MachineTools/MachineToolsVietnamese";
+import HeatTreatmentEquipmentSpanish from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentSpanish";
+import HeatTreatmentEquipmentVietnamese from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentVietnamese";
+import GearsGearingsandTransmissionSpanish from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionSpanish";
+import GearsGearingsandTransmissionVietnamese from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionVietnamese";
+import EmbroideryMachinesSpanish from "./schemeXProducts/EmbroideryMachines/EmbroideryMachinesSpanish";
+import EmbroideryMachinesVietnamese from "./schemeXProducts/EmbroideryMachines/EmbroideryMachinesVietnamese";
+import DieselGeneratorSpanish from "./schemeXProducts/DieselGenerator/DieselGeneratorSpanish";
+import DieselGeneratorVietnamese from "./schemeXProducts/DieselGenerator/DieselGeneratorVietnamese";
+import CranesSpanish from "./schemeXProducts/Cranes/CranesSpanish";
+import ConstructionMachinerySpanish from "./schemeXProducts/ConstructionMachinery/ConstructionMachinerySpanish";
+import CompressorsSpanish from "./schemeXProducts/Compressors/CompressorsSpanish";
+import CentrifugesSpanish from "./schemeXProducts/Centrifuges/CentrifugesSpanish";
 
 
 function App() {
@@ -363,10 +397,8 @@ function App() {
 
 
 
-          {/* SchemeX Products */}
+         {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />
-
-          {/* Pumps and Liquid Elevators */}
           {/* english */}
           <Route
             path="bis-scheme-x-certification-for-pumps-and-liquid-elevators"
@@ -382,59 +414,67 @@ function App() {
             path="certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"
             element={<PumpsAndLiquidElevatorsSpanish />}
           />
+
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides"
             element={<PumpsAndLiquidElevatorsFrench />}
           />
+
           {/* Indonesian */}
           <Route
             path="sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan"
             element={<PumpsAndLiquidElevatorsIndonesian />}
           />
+
           {/* Italian */}
           <Route
             path="certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi"
             element={<PumpsAndLiquidElevatorsItalian />}
           />
+
           {/* Japanese */}
           <Route
             path="bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"
             element={<PumpsAndLiquidElevatorsJapanese />}
           />
+
           {/* Korean */}
           <Route
             path="bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
             element={<PumpsAndLiquidElevatorsKorean />}
           />
+
           {/* Dutch */}
           <Route
             path="bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
             element={<PumpsAndLiquidElevatorsDutch />}
           />
+
           {/* Thai */}
           <Route
             path="kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam"
             element={<PumpsAndLiquidElevatorsThai />}
           />
+
           {/* Vietnamese */}
           <Route
             path="chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"
             element={<PumpsAndLiquidElevatorsVietnamese />}
           />
+
           {/* Arabic */}
           <Route
             path="shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
             element={<PumpsAndLiquidElevatorsArabic />}
           />
 
-          {/* Centrifuges */}
           {/* English */}
           <Route
             path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
             element={<Centrifuges />}
           />
-          {/* French */}
+          {/* french */}
           <Route
             path="certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification"
             element={<CentrifugesFrench />}
@@ -449,9 +489,13 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-may-ly-tam-va-thiet-bi-loc-hoac-tinh-che"
             element={<CentrifugesVietnamese />}
           />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-centrifugas-y-maquinaria-de-filtrado-o-purificacion"
+            element={<CentrifugesSpanish />}
+          />
 
-          {/* Compressors */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-compressors"
             element={<Compressors />}
@@ -463,7 +507,7 @@ function App() {
           />
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-kompressoren"
+            path="bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
             element={<CompressorsGerman />}
           />
           {/* Vietnamese */}
@@ -471,9 +515,13 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-may-nen-khi"
             element={<CompressorsVietnamese />}
           />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-compresores"
+            element={<CompressorsSpanish />}
+          />
 
-          {/* Construction Machinery */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-construction-machinery"
             element={<ConstructionMachinery />}
@@ -483,6 +531,7 @@ function App() {
             path="certification-bis-schema-x-pour-machines-de-construction"
             element={<ConstructionMachineryFrench />}
           />
+
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-baugerate"
@@ -493,9 +542,13 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-may-moc-xay-dung"
             element={<ConstructionMachineryVietnamese />}
           />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+            element={<ConstructionMachinerySpanish />}
+          />
 
-          {/* Cranes */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-cranes"
             element={<Cranes />}
@@ -505,6 +558,7 @@ function App() {
             path="certification-bis-schema-x-pour-ponts-roulants"
             element={<CranesFrench />}
           />
+
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-kranen"
@@ -515,9 +569,13 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-can-cau"
             element={<CranesVietnamese />}
           />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-gruas"
+            element={<CranesSpanish />}
+          />
 
-          {/* Diesel Generators */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-diesel-generators"
             element={<DieselGenerator />}
@@ -527,14 +585,18 @@ function App() {
             path="certification-bis-schema-x-pour-generateurs-diesel"
             element={<DieselGeneratorFrench />}
           />
-          {/* German */}
+          {/* Vietnamese */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-dieselgeneratoren"
-            element={<DieselGeneratorGerman />}
+            path="chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
+            element={<DieselGeneratorVietnamese />}
+          />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-generadores-diesel"
+            element={<DieselGeneratorSpanish />}
           />
 
-          {/* Embroidery Machinery */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-embroidery-machinery"
             element={<EmbroideryMachines />}
@@ -544,14 +606,24 @@ function App() {
             path="certification-bis-schema-x-pour-machines-a-broderie"
             element={<EmbroideryMachinesFrench />}
           />
+
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-stickmaschinen"
+            path="bis-schema-x-zertifizierung-fuer-webereimaschinen"
             element={<EmbroideryMachinesGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-may-moc-theu"
+            element={<EmbroideryMachinesVietnamese />}
+          />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-maquinaria-de-bordado"
+            element={<EmbroideryMachinesSpanish />}
+          />
 
-          {/* Gears, Gearing and Transmission Elements */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
             element={<GearsGearingsandTransmission />}
@@ -561,14 +633,24 @@ function App() {
             path="certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
             element={<GearsGearingsandTransmissionFrench />}
           />
+
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
             element={<GearsGearingsandTransmissionGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai"
+            element={<GearsGearingsandTransmissionVietnamese />}
+          />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
+            element={<GearsGearingsandTransmissionSpanish />}
+          />
 
-          {/* Heat Treatment Equipment */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-heat-treatment-equipment"
             element={<HeatTreatmentEquipment />}
@@ -578,14 +660,24 @@ function App() {
             path="certification-bis-schema-x-pour-equipements-de-traitement-thermique"
             element={<HeatTreatmentEquipmentFrench />}
           />
+
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung"
             element={<HeatTreatmentEquipmentGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-thiet-bi-xu-ly-nhiet"
+            element={<HeatTreatmentEquipmentVietnamese />}
+          />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
+            element={<HeatTreatmentEquipmentSpanish />}
+          />
 
-          {/* Machine Tools */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-machine-tools"
             element={<MachineTools />}
@@ -597,12 +689,62 @@ function App() {
           />
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-werkzeugmaschinen"
+            path="bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall"
             element={<MachineToolsGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-may-cong-cu"
+            element={<MachineToolsVietnamese />}
+          />
+          {/* Spanish */}
+          <Route
+            path="certificacion-bis-scheme-x-para-herramientas-de-maquina"
+            element={<MachineToolsSpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
+            element={<MetalCuttingMachinesSpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-maquinaria-de-empaque"
+            element={<PackingMachinerySpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
+            element={<PowerSemiconductorsSpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-obras-publicas-y-aparatos-mecanicos"
+            element={<PublicWorksAndMechanicalSpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-maquinas-electricas-rotativas"
+            element={<RotaryElectricalMachinesSpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-maquinaria-de-caucho-y-plasticos"
+            element={<RubberAndPlasticsMachinerySpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-hasta-1000-voltios"
+            element={<SwitchgearandControlgearEquipmentSpanish
+               />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
+            element={<SwitchgearandControlgearEquipmentabove1000VoltsSpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-transformadores"
+            element={<TransformersSpanish />}
+          />
+          <Route
+            path="certificacion-bis-scheme-x-para-maquinas-de-tejido"
+            element={<WeavingMachinesSpanish />}
+          />
 
-          {/* Metal Cutting Machine Tools */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-metal-cutting-machine-tools"
             element={<MetalCuttingMachines />}
@@ -612,14 +754,19 @@ function App() {
             path="certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
             element={<MetalCuttingMachinesFrench />}
           />
+
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall"
             element={<MetalCuttingMachinesGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai"
+            element={<MetalCuttingMachinesVietnamese />}
+          />
 
-          {/* Packing Machinery */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-packing-machinery"
             element={<PackingMachinery />}
@@ -631,12 +778,16 @@ function App() {
           />
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-verpackungsmaschinen"
+            path="bis-schema-x-zertifizierung-fuer-maschinen-fuer-verpacken"
             element={<PackingMachineryGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-may-moc-dong-goi"
+            element={<PackingMachineryVietnamese />}
+          />
 
-          {/* Power Semiconductor Converters */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-power-semiconductor-converters"
             element={<PowerSemiconductors />}
@@ -651,9 +802,13 @@ function App() {
             path="bis-schema-x-zertifizierung-fuer-leistungshalbleiter-wandler"
             element={<PowerSemiconductorsGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-bo-chuyen-doi-ban-dan-cong-suat"
+            element={<PowerSemiconductorsVietnamese />}
+          />
 
-          {/* Public Works and Mechanical Appliances */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
             element={<PublicWorksAndMechanical />}
@@ -668,9 +823,13 @@ function App() {
             path="bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete"
             element={<PublicWorksAndMechanicalGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-cong-trinh-cong-cong-va-thiet-bi-co-khi"
+            element={<PublicWorksAndMechanicalVietnamese />}
+          />
 
-          {/* Rotary Electrical Machines */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-rotary-electrical-machines"
             element={<RotaryElectricalMachines />}
@@ -685,9 +844,13 @@ function App() {
             path="bis-schema-x-zertifizierung-fuer-rotierende-elektrische-maschinen"
             element={<RotaryElectricalMachinesGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-may-dien-quay"
+            element={<RotaryElectricalMachinesVietnamese />}
+          />
 
-          {/* Rubber and Plastics Machinery */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-rubber-and-plastics-machinery"
             element={<RubberAndPlasticsMachinery />}
@@ -702,13 +865,18 @@ function App() {
             path="bis-schema-x-zertifizierung-fuer-kautschuk-und-kunststoffmaschinen"
             element={<RubberAndPlasticsMachineryGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua"
+            element={<RubberAndPlasticsMachineryVietnamese />}
+          />
 
-          {/* Switchgear and Controlgear Equipment up to 1000 Volts */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
             element={<SwitchgearandControlgearEquipment />}
           />
+
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-appareillage-et-commande-jusqu-a-1000-volts"
@@ -719,13 +887,18 @@ function App() {
             path="bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-bis-1000-volt"
             element={<SwitchgearandControlgearEquipmentGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-len-den-1000-volts"
+            element={<SwitchgearandControlgearEquipmentVietnamese />}
+          />
 
-          {/* Switchgear and Controlgear Equipment above 1000 Volts */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
             element={<SwitchgearandControlgearEquipmentabove1000Volts />}
           />
+
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-appareillage-et-commande-au-dessus-1000-volts"
@@ -736,9 +909,15 @@ function App() {
             path="bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-ueber-1000-volt"
             element={<SwitchgearandControlgearEquipmentabove1000VoltsGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-tren-1000-volts"
+            element={
+              <SwitchgearandControlgearEquipmentabove1000VoltsVietnamese />
+            }
+          />
 
-          {/* Transformers */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-transformers"
             element={<Transformers />}
@@ -753,9 +932,13 @@ function App() {
             path="bis-schema-x-zertifizierung-fuer-transformatoren"
             element={<TransformersGerman />}
           />
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-may-bien-ap"
+            element={<TransformersVietnamese />}
+          />
 
-          {/* Weaving Machines */}
-          {/* English */}
+          {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-weaving-machines-looms"
             element={<WeavingMachines />}
@@ -770,8 +953,11 @@ function App() {
             path="bis-schema-x-zertifizierung-fuer-webmaschinen"
             element={<WeavingMachinesGerman />}
           />
-
-
+          {/* Vietnamese */}
+          <Route
+            path="chung-nhan-bis-scheme-x-cho-may-det"
+            element={<WeavingMachinesVietnamese />}
+          />
         </Route>
 
         <Route
