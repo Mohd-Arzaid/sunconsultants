@@ -191,6 +191,7 @@ import ConstructionMachinerySpanish from "./schemeXProducts/ConstructionMachiner
 import CompressorsSpanish from "./schemeXProducts/Compressors/CompressorsSpanish";
 import CentrifugesSpanish from "./schemeXProducts/Centrifuges/CentrifugesSpanish";
 import NetherlandsBlog from "./blogs/NetherlandsBlog";
+import KoreaBlog from "./blogs/KoreaBlog";
 
 
 function App() {
@@ -398,7 +399,10 @@ function App() {
             path="bis-certification-in-netherlands"
             element={<NetherlandsBlog />}
           />
-
+          <Route
+            path="bis-certification-in-korea"
+            element={<KoreaBlog />}
+          />
 
 
 

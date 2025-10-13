@@ -79,7 +79,15 @@ const blogs = [
         title: "BIS Certification in the Netherlands",
         description: "BIS Certification in Netherlands is a regulatory necessity, a mark of trust, credibility, and commitment to quality for Dutch manufacturers aiming to enter and thrive in the Indian market.",
         slug: "bis-certification-in-netherlands"
+    },
+    {
+        id: 7,
+        color: "#EC4899", // Pink
+        title: "BIS Certification in Korea",
+        description: "Complete guide for Korean manufacturers exporting to India. Learn about BIS FMCS certification process, required documents, AIR appointment, and how to ensure regulatory compliance for entering the Indian market.",
+        slug: "bis-certification-in-korea"
     }
+
 ];
 
 // =============================
