@@ -35,6 +35,16 @@ const ServicesRightSideContentEng = () => {
         "/what-is-crs-bis-or-crs-registration",
         "/ja/crs-bis-toha-nani-ka-crs-toroku",
         "/indian-bis-certification-under-scheme-x",
+        "/Blogs",
+        "/bis-certificate-for-tin-ingots",
+        "/bis-certificate-for-refined-zinc",
+        "/bis-license-for-bunk-beds-Indian-bis",
+        "/bis-license-for-storage-units-Indian-bis",
+        "/bis-certification-in-indonesia",
+        "/bis-certification-in-netherlands",
+        "/bis-certification-in-korea",
+        "/bis-certification-in-japan",
+        "/bis-certification-in-italy",
     ]
 
     // Check if current path should show these components
@@ -517,6 +527,26 @@ const ContactFormServicesRightSideContentEng = () => {
             return "CRS Registration Japanese";
         if (path.includes("/indian-bis-certification-under-scheme-x"))
             return "Scheme X";
+        if (path.includes("/Blogs"))
+            return "Latest Blogs";
+        if (path.includes("/bis-certificate-for-tin-ingots"))
+            return "Tin Ingot Blog";
+        if (path.includes("/bis-certificate-for-refined-zinc"))
+            return "Refined Zinc Blog";
+        if (path.includes("/bis-license-for-bunk-beds-Indian-bis"))
+            return "Bunk Beds Blog";
+        if (path.includes("/bis-license-for-storage-units-Indian-bis"))
+            return "Storage Units Blog";
+        if (path.includes("/bis-certification-in-indonesia"))
+            return "Indonesia Blog";
+        if (path.includes("/bis-certification-in-netherlands"))
+            return "Netherlands Blog";
+        if (path.includes("/bis-certification-in-korea"))
+            return "Korea Blog";
+        if (path.includes("/bis-certification-in-japan"))
+            return "Japan Blog";
+        if (path.includes("/bis-certification-in-italy"))
+            return "Italy Blog";
     };
 
     const [formData, setFormData] = useState({
