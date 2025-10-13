@@ -231,7 +231,12 @@ const sitemapSections = [
       { name: "BIS Certificate for Tin Ingots under IS 26:2024", path: "/bis-certificate-for-tin-ingots" },
       { name: "BIS Certificate for Refined Zinc under IS 209:2024", path: "/bis-certificate-for-refined-zinc" },
       { name: "BIS License for Bunk Beds under IS 17636:2022", path: "/bis-license-for-bunk-beds-Indian-bis" },
+      { name: "BIS License for Storage Units under IS 17633:2022", path: "/bis-license-for-storage-units-Indian-bis" },
       { name: "BIS Certification in Indonesia", path: "/bis-certification-in-indonesia" },
+      { name: "BIS Certification in Netherlands", path: "/bis-certification-in-netherlands" },
+      { name: "BIS Certification in Korea", path: "/bis-certification-in-korea" },
+      { name: "BIS Certification in Japan", path: "/bis-certification-in-japan" },
+      { name: "BIS Certification in Italy", path: "/bis-certification-in-italy" },
     ],
   },
 
