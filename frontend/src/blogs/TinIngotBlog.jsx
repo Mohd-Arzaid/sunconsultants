@@ -8,6 +8,7 @@ import VideoSection from "@/components/manual/home-page-sections/VideoSection"
 import Footer from "@/common/Footer"
 import AboutAuthor from "@/components/common/AboutAuthor"
 import { Helmet } from "react-helmet-async"
+import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng"
 
 const TinIngotBlog = () => {
     return (
@@ -106,7 +107,8 @@ const TinIngotBlogMainContent = () => {
                 <TinIngotBlogMainContentLeft />
 
                 {/* Right Side Content */}
-                <LatestBlogContentRight />
+                {/* <LatestBlogContentRight /> */}
+                <ServicesRightSideContentEng />
             </div>
         </div>
     )
