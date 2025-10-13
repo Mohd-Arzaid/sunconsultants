@@ -190,6 +190,7 @@ import CranesSpanish from "./schemeXProducts/Cranes/CranesSpanish";
 import ConstructionMachinerySpanish from "./schemeXProducts/ConstructionMachinery/ConstructionMachinerySpanish";
 import CompressorsSpanish from "./schemeXProducts/Compressors/CompressorsSpanish";
 import CentrifugesSpanish from "./schemeXProducts/Centrifuges/CentrifugesSpanish";
+import NetherlandsBlog from "./blogs/NetherlandsBlog";
 
 
 function App() {
@@ -297,7 +298,7 @@ function App() {
             element={<SchemeXArabic />}
           />
 
-             {/* Scheme X Thai Page */}
+          {/* Scheme X Thai Page */}
           <Route
             path="/th/bis-prathiap-india-taem-dai-tae-skema-x"
             element={<SchemeXThai />}
@@ -393,11 +394,17 @@ function App() {
             path="bis-certification-in-indonesia"
             element={<IndonesiaBlog />}
           />
+          <Route
+            path="bis-certification-in-netherlands"
+            element={<NetherlandsBlog />}
+          />
 
 
 
 
-         {/* SchemeX Products */}
+
+
+          {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />
           {/* english */}
           <Route
@@ -729,7 +736,7 @@ function App() {
           <Route
             path="certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-hasta-1000-voltios"
             element={<SwitchgearandControlgearEquipmentSpanish
-               />}
+            />}
           />
           <Route
             path="certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"

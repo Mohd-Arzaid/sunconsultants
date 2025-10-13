@@ -72,6 +72,13 @@ const blogs = [
         title: "BIS Certification in Indonesia",
         description: "In today’s global economy, international trade is no longer just about finding buyers and setting up supply chains. It is increasingly about compliance",
         slug: "bis-certification-in-indonesia"
+    },
+    {
+        id: 6,
+        color: "#3B82F6", // Blue
+        title: "BIS Certification in the Netherlands",
+        description: "BIS Certification in Netherlands is a regulatory necessity, a mark of trust, credibility, and commitment to quality for Dutch manufacturers aiming to enter and thrive in the Indian market.",
+        slug: "bis-certification-in-netherlands"
     }
 ];
 
