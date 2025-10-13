@@ -1025,7 +1025,7 @@ function App() {
 
       {!isAdminRoute && <MobileNav />}
       {!isAdminRoute && <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />}
-      {/* {!isAdminRoute && <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />} */}
+      {!isAdminRoute && <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />}
     </>
   );
 }
