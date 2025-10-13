@@ -192,6 +192,8 @@ import CompressorsSpanish from "./schemeXProducts/Compressors/CompressorsSpanish
 import CentrifugesSpanish from "./schemeXProducts/Centrifuges/CentrifugesSpanish";
 import NetherlandsBlog from "./blogs/NetherlandsBlog";
 import KoreaBlog from "./blogs/KoreaBlog";
+import JapanBlog from "./blogs/JapanBlog";
+import ItalyBlog from "./blogs/ItalyBlog";
 
 
 function App() {
@@ -404,9 +406,15 @@ function App() {
             element={<KoreaBlog />}
           />
 
+          <Route
+            path="bis-certification-in-japan"
+            element={<JapanBlog />}
+          />
 
-
-
+          <Route
+            path="bis-certification-in-italy"
+            element={<ItalyBlog />}
+          />
 
           {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />

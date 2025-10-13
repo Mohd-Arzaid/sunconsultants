@@ -86,8 +86,21 @@ const blogs = [
         title: "BIS Certification in Korea",
         description: "Complete guide for Korean manufacturers exporting to India. Learn about BIS FMCS certification process, required documents, AIR appointment, and how to ensure regulatory compliance for entering the Indian market.",
         slug: "bis-certification-in-korea"
+    },
+    {
+        id: 8,
+        color: "#F59E0B", // Amber
+        title: "BIS Certification in Japan",
+        description: "Essential guide for Japanese manufacturers exporting to India. Understand BIS FMCS certification, factory audits, product testing, AIR services, and how to navigate Indian regulatory compliance for market entry.",
+        slug: "bis-certification-in-japan"
+    },
+    {
+        id: 9,
+        color: "#EF4444", // Red
+        title: "BIS Certification in Italy",
+        description: "Comprehensive guide for Italian exporters on BIS FMCS certification. Learn about compliance requirements, documentation, factory audits, AIR services, and how to successfully enter the Indian market.",
+        slug: "bis-certification-in-italy"
     }
-
 ];
 
 // =============================
