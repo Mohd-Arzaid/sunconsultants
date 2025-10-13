@@ -94,7 +94,7 @@ const VideoSection = ({ onVideoPopupChange }) => {
 
   const getSpeed = () => {
     if (containerRef.current) {
-      containerRef.current.style.setProperty("--animation-duration", "60s");
+      containerRef.current.style.setProperty("--animation-duration", "120s");
     }
   };
 
