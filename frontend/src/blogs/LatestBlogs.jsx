@@ -121,6 +121,13 @@ const blogs = [
         title: "BIS Certification in Germany",
         description: "Essential guide for German manufacturers exporting to India. Learn about BIS FMCS certification, ISI Mark requirements, factory inspections, and how German exporters can achieve regulatory compliance for Indian market access.",
         slug: "bis-certification-in-germany"
+    },
+    {
+        id: 13,
+        color: "#1E40AF", // Blue (USA flag color)
+        title: "BIS Certification in USA",
+        description: "Comprehensive guide for U.S. manufacturers exporting to India. Learn about BIS FMCS certification, ISI Mark requirements, AIR appointment, factory inspections, and regulatory compliance for successful Indian market entry.",
+        slug: "bis-certification-in-usa"
     }
 ];
 

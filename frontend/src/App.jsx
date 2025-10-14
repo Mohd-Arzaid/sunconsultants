@@ -197,6 +197,7 @@ import ItalyBlog from "./blogs/ItalyBlog";
 import SpainBlog from "./blogs/SpainBlog";
 import FranceBlog from "./blogs/FranceBlog";
 import GermanyBlog from "./blogs/GermanyBlog";
+import USABlog from "./blogs/USABlog";
 
 
 function App() {
@@ -429,6 +430,10 @@ function App() {
           <Route
             path="bis-certification-in-germany"
             element={<GermanyBlog />}
+          />
+          <Route
+            path="bis-certification-in-usa"
+            element={<USABlog />}
           />
 
 
