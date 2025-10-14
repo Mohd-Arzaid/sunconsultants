@@ -849,6 +849,27 @@
             <video:category>BIS Certification</video:category>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/7eOURbCr79w/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>BIS Certification Process - Complete Guide for Manufacturers</video:title>
+            <video:description>Comprehensive guide to BIS certification process covering all essential steps, requirements, and best practices for manufacturers seeking compliance with Indian standards.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=7eOURbCr79w</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/7eOURbCr79w</video:player_loc>
+            <video:duration>720</video:duration>
+            <video:publication_date>2025-01-16T00:00:00+00:00</video:publication_date>
+            <video:tag>BIS Certification</video:tag>
+            <video:tag>Complete Guide</video:tag>
+            <video:tag>Manufacturing</video:tag>
+            <video:tag>Indian Standards</video:tag>
+            <video:tag>Compliance</video:tag>
+            <video:tag>Quality Assurance</video:tag>
+            <video:tag>Certification Process</video:tag>
+            <video:tag>Regulatory Requirements</video:tag>
+            <video:tag>Best Practices</video:tag>
+            <video:tag>Product Certification</video:tag>
+            <video:category>BIS Certification</video:category>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
     </url>
 
 </urlset> 
