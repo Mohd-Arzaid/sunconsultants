@@ -100,6 +100,20 @@ const blogs = [
         title: "BIS Certification in Italy",
         description: "Comprehensive guide for Italian exporters on BIS FMCS certification. Learn about compliance requirements, documentation, factory audits, AIR services, and how to successfully enter the Indian market.",
         slug: "bis-certification-in-italy"
+    },
+    {
+        id: 10,
+        color: "#DC2626", // Red (Spanish color)
+        title: "BIS Certification in Spain",
+        description: "Securing BIS certification in Spain is a mandatory requirement for the manufacturers looking to export or sell their products in the Indian market.",
+        slug: "bis-certification-in-spain"
+    },
+    {
+        id: 11,
+        color: "#0055A4", // Blue (French color)
+        title: "BIS Certification in France",
+        description: "BIS certification in France is a legal requirement for the manufacturers looking to export or sell their products in the Indian market.",
+        slug: "bis-certification-in-france"
     }
 ];
 
