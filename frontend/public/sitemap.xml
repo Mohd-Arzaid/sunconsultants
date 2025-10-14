@@ -2241,5 +2241,29 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-in-spain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-in-france</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-in-germany</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-in-usa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 
 </urlset>

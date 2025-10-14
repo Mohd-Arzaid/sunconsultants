@@ -237,6 +237,10 @@ const sitemapSections = [
       { name: "BIS Certification in Korea", path: "/bis-certification-in-korea" },
       { name: "BIS Certification in Japan", path: "/bis-certification-in-japan" },
       { name: "BIS Certification in Italy", path: "/bis-certification-in-italy" },
+      { name: "BIS Certification in Spain", path: "/bis-certification-in-spain" },
+      { name: "BIS Certification in France", path: "/bis-certification-in-france" },
+      { name: "BIS Certification in Germany", path: "/bis-certification-in-germany" },
+      { name: "BIS Certification in USA", path: "/bis-certification-in-usa" },
     ],
   },
 
