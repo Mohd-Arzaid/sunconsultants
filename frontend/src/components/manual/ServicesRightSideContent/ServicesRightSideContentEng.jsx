@@ -45,6 +45,10 @@ const ServicesRightSideContentEng = () => {
         "/bis-certification-in-korea",
         "/bis-certification-in-japan",
         "/bis-certification-in-italy",
+        "/bis-certification-in-spain",
+        "/bis-certification-in-france",
+        "/bis-certification-in-germany",
+        "/bis-certification-in-usa",
     ]
 
     // Check if current path should show these components
@@ -547,6 +551,14 @@ const ContactFormServicesRightSideContentEng = () => {
             return "Japan Blog";
         if (path.includes("/bis-certification-in-italy"))
             return "Italy Blog";
+        if (path.includes("/bis-certification-in-spain"))
+            return "Spain Blog";
+        if (path.includes("/bis-certification-in-france"))
+            return "France Blog";
+        if (path.includes("/bis-certification-in-germany"))
+            return "Germany Blog";
+        if (path.includes("/bis-certification-in-usa"))
+            return "USA Blog";
     };
 
     const [formData, setFormData] = useState({
