@@ -114,6 +114,13 @@ const blogs = [
         title: "BIS Certification in France",
         description: "BIS certification in France is a legal requirement for the manufacturers looking to export or sell their products in the Indian market.",
         slug: "bis-certification-in-france"
+    },
+    {
+        id: 12,
+        color: "#000000", // Black 
+        title: "BIS Certification in Germany",
+        description: "Essential guide for German manufacturers exporting to India. Learn about BIS FMCS certification, ISI Mark requirements, factory inspections, and how German exporters can achieve regulatory compliance for Indian market access.",
+        slug: "bis-certification-in-germany"
     }
 ];
 
