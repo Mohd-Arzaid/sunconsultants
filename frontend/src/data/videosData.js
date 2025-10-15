@@ -609,4 +609,48 @@ export const videosData = [
       "Product Certification",
     ],
   },
+  {
+    id: 33,
+    embedId: "yaQxlb3Up9o",
+    title: "BIS Certification Guide - Expert Insights and Best Practices",
+    description:
+      "Professional insights on BIS certification process, requirements, and compliance strategies. Learn from industry experts about successful certification approaches and regulatory compliance.",
+    category: "BIS Certification",
+    duration: "PT10M00S", // 10 minutes (estimated)
+    uploadDate: "2025-01-16T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Expert Insights",
+      "Best Practices",
+      "Indian Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Certification Process",
+      "Regulatory Compliance",
+      "Professional Guidance",
+    ],
+  },
+  {
+    id: 34,
+    embedId: "enFEXKq-QUg",
+    title: "BIS Standards Compliance - Complete Overview",
+    description:
+      "Comprehensive overview of BIS standards compliance requirements, testing procedures, and certification processes. Essential guide for manufacturers seeking Indian market entry.",
+    category: "BIS Certification",
+    duration: "PT11M00S", // 11 minutes (estimated)
+    uploadDate: "2025-01-16T00:00:00+00:00",
+    tags: [
+      "BIS Standards",
+      "Compliance Overview",
+      "Testing Procedures",
+      "Indian Standards",
+      "Manufacturing",
+      "Quality Assurance",
+      "Certification Process",
+      "Market Entry",
+      "Regulatory Requirements",
+      "Standards Compliance",
+    ],
+  },
 ];
