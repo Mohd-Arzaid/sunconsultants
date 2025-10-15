@@ -190,15 +190,20 @@ import CranesSpanish from "./schemeXProducts/Cranes/CranesSpanish";
 import ConstructionMachinerySpanish from "./schemeXProducts/ConstructionMachinery/ConstructionMachinerySpanish";
 import CompressorsSpanish from "./schemeXProducts/Compressors/CompressorsSpanish";
 import CentrifugesSpanish from "./schemeXProducts/Centrifuges/CentrifugesSpanish";
-import NetherlandsBlog from "./blogs/NetherlandsBlog";
+import NetherlandsBlog from "./blogs/NetherlandsBlog/NetherlandsBlog";
+import LangNetherlandsBlog from "./blogs/NetherlandsBlog/LangNetherlandsBlog";
 import KoreaBlog from "./blogs/KoreaBlog";
-import JapanBlog from "./blogs/JapanBlog";
-import ItalyBlog from "./blogs/ItalyBlog";
+import JapanBlog from "./blogs/JapanBlog/JapanBlog";
+import LangJapanBlog from "./blogs/JapanBlog/LangJapanBlog";
+import ItalyBlog from "./blogs/ItalyBlog/ItalyBlog";
 import SpainBlog from "./blogs/SpainBlog";
 import FranceBlog from "./blogs/FranceBlog";
-import GermanyBlog from "./blogs/GermanyBlog";
+import GermanyBlog from "./blogs/GermanyBlog/GermanyBlog";
+import LangGermanyBlog from "./blogs/GermanyBlog/LangGermanyBlog";
 import USABlog from "./blogs/USABlog";
-
+import VietnamBlog from "./blogs/VietnamBlog";
+import ThailandBlog from "./blogs/ThailandBlog";
+import LangItalyBlog from "./blogs/ItalyBlog/LangItalyBlog";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -206,20 +211,25 @@ function App() {
   const location = useLocation();
 
   // Check if current route is admin
-  const isAdminRoute = location.pathname === '/admin';
+  const isAdminRoute = location.pathname === "/admin";
 
   return (
     <>
       {!isAdminRoute && <TopBar />}
       {!isAdminRoute && <Navbar />}
-      {!isAdminRoute && <ScrollToTopButton hide={popupOpen || videoPopupOpen} />}
+      {!isAdminRoute && (
+        <ScrollToTopButton hide={popupOpen || videoPopupOpen} />
+      )}
       {!isAdminRoute && <ScrollToTop />}
       <SEOBreadcrumbs />
 
       <Routes>
         {/* Default routes without language prefix (English) */}
         <Route path="/">
-          <Route index element={<Home onVideoPopupChange={setVideoPopupOpen} />} />
+          <Route
+            index
+            element={<Home onVideoPopupChange={setVideoPopupOpen} />}
+          />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="bis-qco-updates" element={<Notification />} />
@@ -311,9 +321,6 @@ function App() {
             element={<SchemeXThai />}
           />
 
-
-
-
           <Route
             path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
             element={<BISFM />}
@@ -346,7 +353,6 @@ function App() {
             path="epr-certificate-for-battery-waste-management-bwm"
             element={<BatteryWaste />}
           />
-
 
           {/* English */}
           <Route
@@ -384,7 +390,6 @@ function App() {
 
           <Route path="nabl-certification-india" element={<NABL />} />
 
-
           <Route path="webinar" element={<Webinar />} />
           <Route path="videos-about-bis-certification" element={<Videos />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
@@ -393,10 +398,22 @@ function App() {
 
           {/* Blog Routes */}
           <Route path="Blogs" element={<LatestBlogs />} />
-          <Route path="bis-certificate-for-tin-ingots" element={<TinIngotBlog />} />
-          <Route path="bis-certificate-for-refined-zinc" element={<RefinedZincBlog />} />
-          <Route path="bis-license-for-bunk-beds-Indian-bis" element={<BunkBedsBlog />} />
-          <Route path="bis-license-for-storage-units-Indian-bis" element={<StorageUnitsBlog />} />
+          <Route
+            path="bis-certificate-for-tin-ingots"
+            element={<TinIngotBlog />}
+          />
+          <Route
+            path="bis-certificate-for-refined-zinc"
+            element={<RefinedZincBlog />}
+          />
+          <Route
+            path="bis-license-for-bunk-beds-Indian-bis"
+            element={<BunkBedsBlog />}
+          />
+          <Route
+            path="bis-license-for-storage-units-Indian-bis"
+            element={<StorageUnitsBlog />}
+          />
           <Route
             path="bis-certification-in-indonesia"
             element={<IndonesiaBlog />}
@@ -406,38 +423,39 @@ function App() {
             element={<NetherlandsBlog />}
           />
           <Route
-            path="bis-certification-in-korea"
-            element={<KoreaBlog />}
+            path="bis-certificering-in-nederland"
+            element={<LangNetherlandsBlog />}
           />
+          <Route path="bis-certification-in-korea" element={<KoreaBlog />} />
 
-          <Route
-            path="bis-certification-in-japan"
-            element={<JapanBlog />}
-          />
+          <Route path="bis-certification-in-japan" element={<JapanBlog />} />
+          <Route path="日本におけるbis認証" element={<LangJapanBlog />} />
 
+          <Route path="bis-certification-in-italy" element={<ItalyBlog />} />
           <Route
-            path="bis-certification-in-italy"
-            element={<ItalyBlog />}
+            path="certificazione-bis-in-italia"
+            element={<LangItalyBlog />}
           />
-          <Route
-            path="bis-certification-in-spain"
-            element={<SpainBlog />}
-          />
-          <Route
-            path="bis-certification-in-france"
-            element={<FranceBlog />}
-          />
+          <Route path="bis-certification-in-spain" element={<SpainBlog />} />
+          <Route path="bis-certification-in-france" element={<FranceBlog />} />
           <Route
             path="bis-certification-in-germany"
             element={<GermanyBlog />}
           />
           <Route
-            path="bis-certification-in-usa"
-            element={<USABlog />}
+            path="bis-zertifizierung-in-deutschland"
+            element={<LangGermanyBlog />}
           />
+          <Route path="bis-certification-in-usa" element={<USABlog />} />
 
-
-
+          <Route
+            path="bis-certification-in-vietnam"
+            element={<VietnamBlog />}
+          />
+          <Route
+            path="bis-certification-in-thailand"
+            element={<ThailandBlog />}
+          />
 
           {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />
@@ -770,8 +788,7 @@ function App() {
           />
           <Route
             path="certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-hasta-1000-voltios"
-            element={<SwitchgearandControlgearEquipmentSpanish
-            />}
+            element={<SwitchgearandControlgearEquipmentSpanish />}
           />
           <Route
             path="certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
@@ -1028,10 +1045,7 @@ function App() {
         />
 
         {/* Admin Routes */}
-        <Route
-          path="/admin"
-          element={<AdminLoginPage />}
-        />
+        <Route path="/admin" element={<AdminLoginPage />} />
 
         {/* Localized routes for other languages */}
         <Route path="/:lang/*" element={<LocalizedRoute />}>
@@ -1043,8 +1057,12 @@ function App() {
       </Routes>
 
       {!isAdminRoute && <MobileNav />}
-      {!isAdminRoute && <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />}
-      {!isAdminRoute && <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />}
+      {!isAdminRoute && (
+        <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />
+      )}
+      {!isAdminRoute && (
+        <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />
+      )}
     </>
   );
 }

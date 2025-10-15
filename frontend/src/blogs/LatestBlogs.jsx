@@ -128,6 +128,20 @@ const blogs = [
         title: "BIS Certification in USA",
         description: "Comprehensive guide for U.S. manufacturers exporting to India. Learn about BIS FMCS certification, ISI Mark requirements, AIR appointment, factory inspections, and regulatory compliance for successful Indian market entry.",
         slug: "bis-certification-in-usa"
+    },
+    {
+        id: 15,
+        color: "#eb15ce", 
+        title: "BIS Certification in Vietnam",
+        description: "In the evolving landscape of international trade, maintaining quality and compliance with global standards has become indispensable for businesses aiming to expand beyond domestic borders. For Vietnamese exporters targeting the Indian market",
+        slug: "bis-certification-in-vietnam"
+    },
+    {
+        id: 16,
+        color: "#f7f714", 
+        title: "BIS Certification in Thailand",
+        description: "India and Thailand share a long-standing trade relationship, marked by mutual economic growth and cultural exchange. Over the years, Thailand has become one of the key trading partners for India in Southeast Asia. From electrical goods, machinery",
+        slug: "bis-certification-in-thailand"
     }
 ];
 
