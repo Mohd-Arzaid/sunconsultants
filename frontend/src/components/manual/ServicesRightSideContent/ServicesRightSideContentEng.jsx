@@ -42,13 +42,19 @@ const ServicesRightSideContentEng = () => {
         "/bis-license-for-storage-units-Indian-bis",
         "/bis-certification-in-indonesia",
         "/bis-certification-in-netherlands",
+        "/bis-certificering-in-nederland",
         "/bis-certification-in-korea",
         "/bis-certification-in-japan",
+        "/nihon-niokeru-bis-ninsho",
         "/bis-certification-in-italy",
+        "/certificazione-bis-in-italia",
         "/bis-certification-in-spain",
         "/bis-certification-in-france",
         "/bis-certification-in-germany",
+        "/bis-zertifizierung-in-deutschland",
         "/bis-certification-in-usa",
+        "/bis-certification-in-vietnam",
+        "/bis-certification-in-thailand",
     ]
 
     // Check if current path should show these components
@@ -545,20 +551,32 @@ const ContactFormServicesRightSideContentEng = () => {
             return "Indonesia Blog";
         if (path.includes("/bis-certification-in-netherlands"))
             return "Netherlands Blog";
+        if (path.includes("/bis-certificering-in-nederland"))
+            return "Netherlands Blog Dutch";
         if (path.includes("/bis-certification-in-korea"))
             return "Korea Blog";
         if (path.includes("/bis-certification-in-japan"))
             return "Japan Blog";
+        if (path.includes("/nihon-niokeru-bis-ninsho"))
+            return "Japan Blog Japanese";
         if (path.includes("/bis-certification-in-italy"))
             return "Italy Blog";
+        if (path.includes("/certificazione-bis-in-italia"))
+            return "Italy Blog Italian";
         if (path.includes("/bis-certification-in-spain"))
             return "Spain Blog";
         if (path.includes("/bis-certification-in-france"))
             return "France Blog";
         if (path.includes("/bis-certification-in-germany"))
             return "Germany Blog";
+        if (path.includes("/bis-zertifizierung-in-deutschland"))
+            return "Germany Blog German";
         if (path.includes("/bis-certification-in-usa"))
             return "USA Blog";
+        if (path.includes("/bis-certification-in-vietnam"))
+            return "Vietnam Blog";
+        if (path.includes("/bis-certification-in-thailand"))
+            return "Thailand Blog";
     };
 
     const [formData, setFormData] = useState({

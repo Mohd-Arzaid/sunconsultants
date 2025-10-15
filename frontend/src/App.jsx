@@ -429,7 +429,7 @@ function App() {
           <Route path="bis-certification-in-korea" element={<KoreaBlog />} />
 
           <Route path="bis-certification-in-japan" element={<JapanBlog />} />
-          <Route path="日本におけるbis認証" element={<LangJapanBlog />} />
+          <Route path="nihon-niokeru-bis-ninsho" element={<LangJapanBlog />} />
 
           <Route path="bis-certification-in-italy" element={<ItalyBlog />} />
           <Route
