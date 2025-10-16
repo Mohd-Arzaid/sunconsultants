@@ -62,7 +62,7 @@ const RubberAndPlasticsMachineryFrench = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/bis-scheme-x-certification-for-rubber-and-plastics-machinery-french"
+          content="https://bis-certifications.com/certification-bis-schema-x-pour-machines-de-caoutchouc-et-plastiques"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -80,7 +80,7 @@ const RubberAndPlasticsMachineryFrench = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-rubber-and-plastics-machinery-french"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-machines-de-caoutchouc-et-plastiques"
         />
       </Helmet>
 

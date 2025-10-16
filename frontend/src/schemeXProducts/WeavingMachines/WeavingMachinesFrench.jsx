@@ -60,7 +60,7 @@ const WeavingMachinesFrench = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/bis-scheme-x-certification-for-weaving-machines-looms-french"
+          content="https://bis-certifications.com/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -78,7 +78,7 @@ const WeavingMachinesFrench = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-weaving-machines-looms-french"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
         />
       </Helmet>
 

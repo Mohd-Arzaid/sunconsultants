@@ -81,7 +81,7 @@ const GearsGearingsandTransmission = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearings-and-transmission-elements"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
         />
       </Helmet>
 

@@ -29,7 +29,10 @@ const ServicesRightSideContentItalian = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const showComponentsPaths = ["/what-is-crs-bis-or-crs-registration"];
+  const showComponentsPaths = [
+    "/what-is-crs-bis-or-crs-registration",
+    "/certificazione-bis-in-italia",
+  ];
 
   // Check if current path should show these components
   const shouldShowComponents = showComponentsPaths.includes(currentPath);
@@ -554,6 +557,8 @@ const ContactFormServicesRightSideContentItalian = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "Registrazione CRS";
+    if (path.includes("/certificazione-bis-in-italia"))
+      return "Italy Blog Italian";
   };
 
   const [formData, setFormData] = useState({

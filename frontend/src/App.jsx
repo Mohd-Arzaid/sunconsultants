@@ -204,6 +204,12 @@ import USABlog from "./blogs/USABlog";
 import VietnamBlog from "./blogs/VietnamBlog";
 import ThailandBlog from "./blogs/ThailandBlog";
 import LangItalyBlog from "./blogs/ItalyBlog/LangItalyBlog";
+import UAEBlog from "./blogs/UAEBlog";
+import QatarBlog from "./blogs/QatarBlog";
+import BahrainBlog from "./blogs/BahrainBlog";
+import DubaiBlog from "./blogs/DubaiBlog";
+import IranBlog from "./blogs/IranBlog";
+import IraqBlog from "./blogs/Iraqblog";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -456,6 +462,39 @@ function App() {
             path="bis-certification-in-thailand"
             element={<ThailandBlog />}
           />
+
+          <Route
+            path="bis-certification-in-uae"
+            element={<UAEBlog />}
+          />
+
+          <Route
+            path="bis-certification-in-qatar"
+            element={<QatarBlog />}
+          />
+
+
+          <Route
+            path="bis-certification-in-bahrain"
+            element={<BahrainBlog />}
+          />
+
+          <Route
+            path="bis-certification-in-dubai"
+            element={<DubaiBlog />}
+          />
+
+          <Route
+            path="bis-certification-in-iran"
+            element={<IranBlog />}
+          />
+
+          <Route
+            path="bis-certification-in-iraq"
+            element={<IraqBlog />}
+          />
+
+
 
           {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />

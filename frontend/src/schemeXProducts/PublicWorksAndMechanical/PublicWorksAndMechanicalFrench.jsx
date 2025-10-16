@@ -60,7 +60,7 @@ const PublicWorksAndMechanicalFrench = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/bis-scheme-x-certification-for-public-works-and-mechanical-appliances-french"
+          content="https://bis-certifications.com/certification-bis-schema-x-pour-travaux-publics-et-appareils-mecaniques"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -78,7 +78,7 @@ const PublicWorksAndMechanicalFrench = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-public-works-and-mechanical-appliances-french"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-travaux-publics-et-appareils-mecaniques"
         />
       </Helmet>
 

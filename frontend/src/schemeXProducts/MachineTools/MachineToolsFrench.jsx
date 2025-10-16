@@ -60,7 +60,7 @@ const MachineToolsFrench = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/bis-scheme-x-certification-for-machine-tools-french"
+          content="https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-outils"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -78,7 +78,7 @@ const MachineToolsFrench = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-machine-tools-french"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-outils"
         />
       </Helmet>
 

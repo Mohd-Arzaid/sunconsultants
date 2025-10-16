@@ -64,7 +64,7 @@ const GearsGearingsandTransmissionFrench = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearings-and-transmission-elements-french"
+          content="https://bis-certifications.com/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -82,7 +82,7 @@ const GearsGearingsandTransmissionFrench = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearings-and-transmission-elements-french"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
         />
       </Helmet>
 

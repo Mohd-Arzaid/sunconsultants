@@ -63,7 +63,7 @@ const SwitchgearandControlgearEquipmentFrench = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts-french"
+          content="https://bis-certifications.com/certification-bis-schema-x-pour-appareillage-et-commande-jusqu-a-1000-volts"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -81,7 +81,7 @@ const SwitchgearandControlgearEquipmentFrench = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts-french"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-appareillage-et-commande-jusqu-a-1000-volts"
         />
       </Helmet>
 

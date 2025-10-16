@@ -64,7 +64,7 @@ const DieselGeneratorFrench = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/bis-scheme-x-certification-for-diesel-generators-french"
+          content="https://bis-certifications.com/certification-bis-schema-x-pour-generateurs-diesel"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -82,7 +82,7 @@ const DieselGeneratorFrench = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-diesel-generators-french"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-generateurs-diesel"
         />
       </Helmet>
 
