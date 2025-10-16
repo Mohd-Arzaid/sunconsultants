@@ -209,7 +209,7 @@ import QatarBlog from "./blogs/QatarBlog";
 import BahrainBlog from "./blogs/BahrainBlog";
 import DubaiBlog from "./blogs/DubaiBlog";
 import IranBlog from "./blogs/IranBlog";
-import IraqBlog from "./blogs/Iraqblog";
+import IraqBlog from "./blogs/IraqBlog";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -463,38 +463,20 @@ function App() {
             element={<ThailandBlog />}
           />
 
-          <Route
-            path="bis-certification-in-uae"
-            element={<UAEBlog />}
-          />
+          <Route path="bis-certification-in-uae" element={<UAEBlog />} />
 
-          <Route
-            path="bis-certification-in-qatar"
-            element={<QatarBlog />}
-          />
-
+          <Route path="bis-certification-in-qatar" element={<QatarBlog />} />
 
           <Route
             path="bis-certification-in-bahrain"
             element={<BahrainBlog />}
           />
 
-          <Route
-            path="bis-certification-in-dubai"
-            element={<DubaiBlog />}
-          />
+          <Route path="bis-certification-in-dubai" element={<DubaiBlog />} />
 
-          <Route
-            path="bis-certification-in-iran"
-            element={<IranBlog />}
-          />
+          <Route path="bis-certification-in-iran" element={<IranBlog />} />
 
-          <Route
-            path="bis-certification-in-iraq"
-            element={<IraqBlog />}
-          />
-
-
+          <Route path="bis-certification-in-iraq" element={<IraqBlog />} />
 
           {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />
