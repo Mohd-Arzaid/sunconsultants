@@ -50,7 +50,7 @@ const RubberAndPlasticsMachineryVietnamese = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua"
+          content="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ const RubberAndPlasticsMachineryVietnamese = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua"
         />
       </Helmet>
 

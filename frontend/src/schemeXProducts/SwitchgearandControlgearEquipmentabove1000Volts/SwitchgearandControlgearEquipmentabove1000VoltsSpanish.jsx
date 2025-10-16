@@ -47,7 +47,7 @@ const SwitchgearandControlgearEquipmentabove1000VoltsSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -61,7 +61,7 @@ const SwitchgearandControlgearEquipmentabove1000VoltsSpanish = () => {
         />
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
         />
       </Helmet>
 

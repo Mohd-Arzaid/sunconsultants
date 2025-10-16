@@ -50,7 +50,7 @@ const CranesVietnamese = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-can-cau"
+          content="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-can-cau"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ const CranesVietnamese = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-can-cau"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-can-cau"
         />
       </Helmet>
 

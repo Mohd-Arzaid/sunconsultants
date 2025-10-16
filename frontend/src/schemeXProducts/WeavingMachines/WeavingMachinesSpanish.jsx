@@ -44,7 +44,7 @@ const WeavingMachinesSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinas-de-tejido"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinas-de-tejido"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -58,7 +58,7 @@ const WeavingMachinesSpanish = () => {
         />
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinas-de-tejido"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinas-de-tejido"
         />
       </Helmet>
 

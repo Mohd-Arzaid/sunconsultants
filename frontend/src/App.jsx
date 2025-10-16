@@ -541,7 +541,7 @@ function App() {
           />
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-zentrifugen-und-maschinen-zur-filtration-oder-reinigung"
+            path="bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
             element={<CentrifugesGerman />}
           />
           {/* Vietnamese */}
@@ -567,7 +567,7 @@ function App() {
           />
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
+            path="bis-schema-x-zertifizierung-fuer-kompressoren"
             element={<CompressorsGerman />}
           />
           {/* Vietnamese */}
@@ -594,7 +594,7 @@ function App() {
 
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-baugerate"
+            path="bis-schema-x-zertifizierung-fuer-baumaschinen"
             element={<ConstructionMachineryGerman />}
           />
           {/* Vietnamese */}
@@ -621,7 +621,7 @@ function App() {
 
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-kranen"
+            path="bis-schema-x-zertifizierung-fuer-krane"
             element={<CranesGerman />}
           />
           {/* Vietnamese */}
@@ -644,6 +644,11 @@ function App() {
           <Route
             path="certification-bis-schema-x-pour-generateurs-diesel"
             element={<DieselGeneratorFrench />}
+          />
+          {/* German */}
+          <Route
+            path="bis-schema-x-zertifizierung-fuer-dieselgeneratoren"
+            element={<DieselGeneratorGerman />}
           />
           {/* Vietnamese */}
           <Route
@@ -669,7 +674,7 @@ function App() {
 
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-webereimaschinen"
+            path="bis-schema-x-zertifizierung-fuer-stickmaschinen"
             element={<EmbroideryMachinesGerman />}
           />
           {/* Vietnamese */}
@@ -749,7 +754,7 @@ function App() {
           />
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall"
+            path="bis-schema-x-zertifizierung-fuer-werkzeugmaschinen"
             element={<MachineToolsGerman />}
           />
           {/* Vietnamese */}
@@ -816,7 +821,7 @@ function App() {
 
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall"
+            path="bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
             element={<MetalCuttingMachinesGerman />}
           />
           {/* Vietnamese */}
@@ -837,7 +842,7 @@ function App() {
           />
           {/* German */}
           <Route
-            path="bis-schema-x-zertifizierung-fuer-maschinen-fuer-verpacken"
+            path="bis-schema-x-zertifizierung-fuer-verpackungsmaschinen"
             element={<PackingMachineryGerman />}
           />
           {/* Vietnamese */}

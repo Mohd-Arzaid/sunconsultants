@@ -50,7 +50,7 @@ const CranesSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-gruas"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-gruas"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ const CranesSpanish = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-gruas"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-gruas"
         />
       </Helmet>
 

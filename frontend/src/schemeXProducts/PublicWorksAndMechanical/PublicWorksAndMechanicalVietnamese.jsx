@@ -52,7 +52,7 @@ const PublicWorksAndMechanicalVietnamese = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-cong-trinh-cong-cong-va-thiet-bi-co-khi"
+          content="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-cong-trinh-cong-cong-va-thiet-bi-co-khi"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -70,7 +70,7 @@ const PublicWorksAndMechanicalVietnamese = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-cong-trinh-cong-cong-va-thiet-bi-co-khi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-cong-trinh-cong-cong-va-thiet-bi-co-khi"
         />
       </Helmet>
 

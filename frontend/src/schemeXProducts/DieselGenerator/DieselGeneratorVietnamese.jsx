@@ -50,7 +50,7 @@ const DieselGeneratorVietnamese = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
+          content="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ const DieselGeneratorVietnamese = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
         />
       </Helmet>
 

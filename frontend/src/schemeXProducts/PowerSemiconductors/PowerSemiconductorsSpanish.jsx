@@ -47,7 +47,7 @@ const PowerSemiconductorsSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -61,7 +61,7 @@ const PowerSemiconductorsSpanish = () => {
         />
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
         />
       </Helmet>
 

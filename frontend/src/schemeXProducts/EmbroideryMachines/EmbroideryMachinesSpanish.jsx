@@ -50,7 +50,7 @@ const EmbroideryMachinesSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinaria-de-bordado"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-bordado"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ const EmbroideryMachinesSpanish = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinaria-de-bordado"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-bordado"
         />
       </Helmet>
 

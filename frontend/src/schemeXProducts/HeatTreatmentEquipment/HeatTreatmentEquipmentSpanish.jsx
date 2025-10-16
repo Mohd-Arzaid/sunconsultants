@@ -52,7 +52,7 @@ const HeatTreatmentEquipmentSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -70,7 +70,7 @@ const HeatTreatmentEquipmentSpanish = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
         />
       </Helmet>
 

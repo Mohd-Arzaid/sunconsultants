@@ -52,7 +52,7 @@ const ConstructionMachinerySpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -70,7 +70,7 @@ const ConstructionMachinerySpanish = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
         />
       </Helmet>
 

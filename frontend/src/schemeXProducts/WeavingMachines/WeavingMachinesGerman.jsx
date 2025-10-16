@@ -50,7 +50,7 @@ const WeavingMachinesGerman = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/de/bis-schema-x-zertifizierung-fuer-webmaschinen"
+          content="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-webmaschinen"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ const WeavingMachinesGerman = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/de/bis-schema-x-zertifizierung-fuer-webmaschinen"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-webmaschinen"
         />
       </Helmet>
 

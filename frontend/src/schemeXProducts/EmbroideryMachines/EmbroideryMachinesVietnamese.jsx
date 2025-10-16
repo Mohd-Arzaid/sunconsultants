@@ -50,7 +50,7 @@ const EmbroideryMachinesVietnamese = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-may-moc-theu"
+          content="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-theu"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ const EmbroideryMachinesVietnamese = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/vi/chung-nhan-bis-scheme-x-cho-may-moc-theu"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-theu"
         />
       </Helmet>
 

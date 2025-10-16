@@ -44,7 +44,7 @@ const TransformersSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-transformadores"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-transformadores"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -58,7 +58,7 @@ const TransformersSpanish = () => {
         />
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-transformadores"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-transformadores"
         />
       </Helmet>
 

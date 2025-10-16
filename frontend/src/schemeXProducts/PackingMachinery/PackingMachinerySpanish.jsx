@@ -44,7 +44,7 @@ const PackingMachinerySpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinaria-de-empaque"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-empaque"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -58,7 +58,7 @@ const PackingMachinerySpanish = () => {
         />
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinaria-de-empaque"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-empaque"
         />
       </Helmet>
 

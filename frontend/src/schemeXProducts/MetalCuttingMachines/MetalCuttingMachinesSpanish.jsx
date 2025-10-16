@@ -46,7 +46,7 @@ const MetalCuttingMachinesSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -60,7 +60,7 @@ const MetalCuttingMachinesSpanish = () => {
         />
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
         />
       </Helmet>
 

@@ -46,7 +46,7 @@ const RubberAndPlasticsMachinerySpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinaria-de-caucho-y-plasticos"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-caucho-y-plasticos"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -60,7 +60,7 @@ const RubberAndPlasticsMachinerySpanish = () => {
         />
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinaria-de-caucho-y-plasticos"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-caucho-y-plasticos"
         />
       </Helmet>
 

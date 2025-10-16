@@ -46,7 +46,7 @@ const RotaryElectricalMachinesSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinas-electricas-rotativas"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinas-electricas-rotativas"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -60,7 +60,7 @@ const RotaryElectricalMachinesSpanish = () => {
         />
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-maquinas-electricas-rotativas"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinas-electricas-rotativas"
         />
       </Helmet>
 

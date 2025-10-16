@@ -52,7 +52,7 @@ const PublicWorksAndMechanicalGerman = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/de/bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete"
+          content="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -70,7 +70,7 @@ const PublicWorksAndMechanicalGerman = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/de/bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete"
         />
       </Helmet>
 

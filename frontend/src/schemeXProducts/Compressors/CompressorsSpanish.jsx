@@ -51,7 +51,7 @@ const CompressorsSpanish = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-compresores"
+          content="https://bis-certifications.com/certificacion-bis-scheme-x-para-compresores"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -69,7 +69,7 @@ const CompressorsSpanish = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/es/certificacion-bis-scheme-x-para-compresores"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-compresores"
         />
       </Helmet>
 
