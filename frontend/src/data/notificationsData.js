@@ -2358,7 +2358,7 @@ export const notifications = [
     Date2: "23rd July 2024",
     Date3: "23rd October 2024",
   },
-  {
+{
     id: 133,
     color: "#708090",
     tagType: "Furniture",
@@ -2368,10 +2368,10 @@ export const notifications = [
     description:
       "This is to notify all manufacturers, suppliers, and stakeholders regarding implementation of IS 17633: 2022 Specification for Tables and Desks.",
     pdfUrl:
-      "/pdf/sun-certification-Bottled-Water-Dispensers-for-Indian-marketplace.pdf",
+      "/pdf/sun-certification-Implementation-of-IS-17633-2022-Specification-for-Tables-and-Desks.pdf",
     location: "New Delhi",
-    subHeading: `Bottled Water Dispensers" for Indian marketplace`,
-    ISNumber: `IS 17681: 2022`,
+    subHeading: `Implementation of IS 17633: 2022 Specification for Tables and Desks`,
+    ISNumber: `IS 17633: 2022`,
     Date1: "23rd April 2024 ",
     Date2: "23rd July 2024",
     Date3: "23rd October 2024",
