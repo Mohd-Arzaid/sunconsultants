@@ -532,6 +532,54 @@ const sitemapSections = [
       },
       { name: "BIS Certification in Iran", path: "/bis-certification-in-iran" },
       { name: "BIS Certification in Iraq", path: "/bis-certification-in-iraq" },
+      {
+        name: "Sertifikasi BIS di Indonesia (Indonesian)",
+        path: "/sertifikasi-bis-di-indonesia",
+      },
+      {
+        name: "한국의 BIS 인증 (Korean)",
+        path: "/hangug-ui-bis-injeung",
+      },
+      {
+        name: "Certificación BIS en España (Spanish)",
+        path: "/certificacion-bis-en-espana",
+      },
+      {
+        name: "Certification BIS en France (French)",
+        path: "/certification-bis-en-france",
+      },
+      {
+        name: "Chứng nhận BIS tại Việt Nam (Vietnamese)",
+        path: "/chung-nhan-bis-tai-viet-nam",
+      },
+      {
+        name: "การรับรอง BIS ในประเทศไทย (Thai)",
+        path: "/kan-rap-rong-bis-nai-prathet-thai",
+      },
+      {
+        name: "شهادة BIS في الإمارات (Arabic - UAE)",
+        path: "/shahadat-bis-fi-al-imarat",
+      },
+      {
+        name: "شهادة BIS في قطر (Arabic - Qatar)",
+        path: "/shahadat-bis-fi-qatar",
+      },
+      {
+        name: "شهادة BIS في البحرين (Arabic - Bahrain)",
+        path: "/shahadat-bis-fi-al-bahrain",
+      },
+      {
+        name: "شهادة BIS في دبي (Arabic - Dubai)",
+        path: "/shahadat-bis-fi-dubai",
+      },
+      {
+        name: "شهادة BIS في إيران (Arabic - Iran)",
+        path: "/shahadat-bis-fi-iran",
+      },
+      {
+        name: "شهادة BIS في العراق (Arabic - Iraq)",
+        path: "/shahadat-bis-fi-al-iraq",
+      },
     ],
   },
 
