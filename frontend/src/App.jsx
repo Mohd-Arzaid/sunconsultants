@@ -150,7 +150,8 @@ import SchemeXSpanish from "./pages/SchemeX/SchemeXSpanish";
 import SchemeXFrench from "./pages/SchemeX/SchemeXFrench";
 import SchemeXIndonesian from "./pages/SchemeX/SchemeXIndonesian";
 import SchemeXVietnamese from "./pages/SchemeX/SchemeXVietnamese";
-import IndonesiaBlog from "./blogs/IndonesiaBlog";
+import IndonesiaBlog from "./blogs/IndonesiaBlog/IndonesiaBlog";
+import LangIndonesiaBlog from "./blogs/IndonesiaBlog/LangIndonesiaBlog";
 import SchemeXItalian from "./pages/SchemeX/SchemeXItalian";
 import SchemeXKorean from "./pages/SchemeX/SchemeXKorean";
 import SchemeXDutch from "./pages/SchemeX/SchemeXDutch";
@@ -192,24 +193,35 @@ import CompressorsSpanish from "./schemeXProducts/Compressors/CompressorsSpanish
 import CentrifugesSpanish from "./schemeXProducts/Centrifuges/CentrifugesSpanish";
 import NetherlandsBlog from "./blogs/NetherlandsBlog/NetherlandsBlog";
 import LangNetherlandsBlog from "./blogs/NetherlandsBlog/LangNetherlandsBlog";
-import KoreaBlog from "./blogs/KoreaBlog";
+import KoreaBlog from "./blogs/KoreaBlog/KoreaBlog";
+import LangKoreaBlog from "./blogs/KoreaBlog/LangKoreaBlog";
 import JapanBlog from "./blogs/JapanBlog/JapanBlog";
 import LangJapanBlog from "./blogs/JapanBlog/LangJapanBlog";
 import ItalyBlog from "./blogs/ItalyBlog/ItalyBlog";
-import SpainBlog from "./blogs/SpainBlog";
-import FranceBlog from "./blogs/FranceBlog";
+import SpainBlog from "./blogs/SpainBlog/SpainBlog";
+import LangSpainBlog from "./blogs/SpainBlog/LangSpainBlog";
+import FranceBlog from "./blogs/FranceBlog/FranceBlog";
+import LangFranceBlog from "./blogs/FranceBlog/LangFranceBlog";
 import GermanyBlog from "./blogs/GermanyBlog/GermanyBlog";
 import LangGermanyBlog from "./blogs/GermanyBlog/LangGermanyBlog";
 import USABlog from "./blogs/USABlog";
-import VietnamBlog from "./blogs/VietnamBlog";
-import ThailandBlog from "./blogs/ThailandBlog";
+import VietnamBlog from "./blogs/VietnamBlog/VietnamBlog";
+import LangVietnamBlog from "./blogs/VietnamBlog/LangVietnamBlog";
+import ThailandBlog from "./blogs/ThailandBlog/ThailandBlog";
+import LangThailandBlog from "./blogs/ThailandBlog/LangThailandBlog";
 import LangItalyBlog from "./blogs/ItalyBlog/LangItalyBlog";
-import UAEBlog from "./blogs/UAEBlog";
-import QatarBlog from "./blogs/QatarBlog";
-import BahrainBlog from "./blogs/BahrainBlog";
-import DubaiBlog from "./blogs/DubaiBlog";
-import IranBlog from "./blogs/IranBlog";
-import IraqBlog from "./blogs/IraqBlog";
+import UAEBlog from "./blogs/UAEBlog/UAEBlog";
+import LangUAEBlog from "./blogs/UAEBlog/LangUAEBlog";
+import QatarBlog from "./blogs/QatarBlog/QatarBlog";
+import LangQatarBlog from "./blogs/QatarBlog/LangQatarBlog";
+import BahrainBlog from "./blogs/BahrainBlog/BahrainBlog";
+import LangBahrainBlog from "./blogs/BahrainBlog/LangBahrainBlog";
+import DubaiBlog from "./blogs/DubaiBlog/DubaiBlog";
+import LangDubaiBlog from "./blogs/DubaiBlog/LangDubaiBlog";
+import IranBlog from "./blogs/IranBlog/IranBlog";
+import LangIranBlog from "./blogs/IranBlog/LangIranBlog";
+import IraqBlog from "./blogs/IraqBlog/IraqBlog";
+import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -425,6 +437,10 @@ function App() {
             element={<IndonesiaBlog />}
           />
           <Route
+            path="sertifikasi-bis-di-indonesia"
+            element={<LangIndonesiaBlog />}
+          />
+          <Route
             path="bis-certification-in-netherlands"
             element={<NetherlandsBlog />}
           />
@@ -433,6 +449,7 @@ function App() {
             element={<LangNetherlandsBlog />}
           />
           <Route path="bis-certification-in-korea" element={<KoreaBlog />} />
+          <Route path="hangug-ui-bis-injeung" element={<LangKoreaBlog />} />
 
           <Route path="bis-certification-in-japan" element={<JapanBlog />} />
           <Route path="nihon-niokeru-bis-ninsho" element={<LangJapanBlog />} />
@@ -443,7 +460,15 @@ function App() {
             element={<LangItalyBlog />}
           />
           <Route path="bis-certification-in-spain" element={<SpainBlog />} />
+          <Route
+            path="certificacion-bis-en-espana"
+            element={<LangSpainBlog />}
+          />
           <Route path="bis-certification-in-france" element={<FranceBlog />} />
+          <Route
+            path="certification-bis-en-france"
+            element={<LangFranceBlog />}
+          />
           <Route
             path="bis-certification-in-germany"
             element={<GermanyBlog />}
@@ -459,24 +484,41 @@ function App() {
             element={<VietnamBlog />}
           />
           <Route
+            path="chung-nhan-bis-tai-viet-nam"
+            element={<LangVietnamBlog />}
+          />
+          <Route
             path="bis-certification-in-thailand"
             element={<ThailandBlog />}
           />
+          <Route
+            path="kan-rap-rong-bis-nai-prathet-thai"
+            element={<LangThailandBlog />}
+          />
 
           <Route path="bis-certification-in-uae" element={<UAEBlog />} />
+          <Route path="shahadat-bis-fi-al-imarat" element={<LangUAEBlog />} />
 
           <Route path="bis-certification-in-qatar" element={<QatarBlog />} />
+          <Route path="shahadat-bis-fi-qatar" element={<LangQatarBlog />} />
 
           <Route
             path="bis-certification-in-bahrain"
             element={<BahrainBlog />}
           />
+          <Route
+            path="shahadat-bis-fi-al-bahrain"
+            element={<LangBahrainBlog />}
+          />
 
           <Route path="bis-certification-in-dubai" element={<DubaiBlog />} />
+          <Route path="shahadat-bis-fi-dubai" element={<LangDubaiBlog />} />
 
           <Route path="bis-certification-in-iran" element={<IranBlog />} />
+          <Route path="shahadat-bis-fi-iran" element={<LangIranBlog />} />
 
           <Route path="bis-certification-in-iraq" element={<IraqBlog />} />
+          <Route path="shahadat-bis-fi-al-iraq" element={<LangIraqBlog />} />
 
           {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />

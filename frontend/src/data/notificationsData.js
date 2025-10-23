@@ -269,24 +269,6 @@ export const notifications = [
   },
   {
     id: 17,
-    color: "#D9534F",
-    tagType: "Irrigation Tubes",
-    date: "October 25, 2024",
-    title:
-      "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
-    description:
-      "Important update on mandatory BIS Certification for manufacturers and importers of Aluminium alloy tube for irrigation purposes – extruded tube.",
-    pdfUrl:
-      "/pdf/sun-certification-aluminium-alloy-tube-for-irrigation-purposes-extruded-tube-1.pdf",
-    location: " New Delhi",
-    subHeading: "Aluminium alloy tube for irrigation purposes – extruded tube",
-    ISNumber: "IS 7092 (Part 2):1987",
-    Date1: "1st April 2025",
-    Date2: "1st July 2025",
-    Date3: "1st October 2025",
-  },
-  {
-    id: 18,
     color: "#1A8781",
     tagType: "Aluminium Rod",
     date: "October 25, 2024",
@@ -305,7 +287,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 19,
+    id: 18,
     color: "#45ADA8",
     tagType: "Aluminium Bars",
     date: "October 25, 2024",
@@ -323,7 +305,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 20,
+    id: 19,
     color: "#FF6F61",
     tagType: "Forging Stock",
     date: "October 25, 2024",
@@ -342,7 +324,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 21,
+    id: 20,
     color: "#96CEB4",
     tagType: "Engineering Plate",
     date: "October 25, 2024",
@@ -361,7 +343,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 22,
+    id: 21,
     color: "#337AB7",
     tagType: "Sheet & Strip",
     date: "October 25, 2024",
@@ -379,7 +361,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 23,
+    id: 22,
     color: "#F38630",
     tagType: "Aluminium Wire",
     date: "October 25, 2024",
@@ -396,7 +378,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 24,
+    id: 23,
     color: "#6C5B7B",
     tagType: "Rivet Stock",
     date: "October 25, 2024",
@@ -414,7 +396,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 25,
+    id: 24,
     color: "#1A8781",
     tagType: "Electrical Aluminium",
     date: "October 25, 2024",
@@ -433,7 +415,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 26,
+    id: 25,
     color: "#D9534F",
     tagType: "Aluminium Foil",
     date: "October 25, 2024",
@@ -449,7 +431,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 27,
+    id: 26,
     color: "#FFCC5C",
     tagType: "Composite Panel",
     date: "October 25, 2024",
@@ -465,7 +447,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 28,
+    id: 27,
     color: "#A8A7A7",
     tagType: "Extruded Tube",
     date: "October 25, 2024",
@@ -484,7 +466,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 29,
+    id: 28,
     color: "#45ADA8",
     tagType: "Electrical Wire",
     date: "October 25, 2024",
@@ -502,7 +484,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 30,
+    id: 29,
     color: "#FF6F61",
     tagType: "Utensils",
     date: "October 25, 2024",
@@ -521,7 +503,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 31,
+    id: 30,
     color: "#96CEB4",
     tagType: "Corrugated Sheet",
     date: "October 25, 2024",
@@ -537,7 +519,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 32,
+    id: 31,
     color: "#F38630",
     tagType: "Aerospace Forging",
     date: "October 25, 2024",
@@ -555,7 +537,7 @@ export const notifications = [
     Date3: "1st October 2025",
   },
   {
-    id: 33,
+    id: 32,
     color: "#6C5B7B",
     tagType: "Solar Collector",
     date: "October 14, 2024",
@@ -571,7 +553,7 @@ export const notifications = [
     Date3: "14th April 2025",
   },
   {
-    id: 34,
+    id: 33,
     color: "#1A8781",
     tagType: "Solar Water Heater",
     date: "October 14, 2024",
@@ -587,7 +569,7 @@ export const notifications = [
     Date3: "14th April 2025",
   },
   {
-    id: 35,
+    id: 34,
     color: "#FF6F61",
     tagType: "Water Tank",
     date: "October 14, 2024",
@@ -603,7 +585,7 @@ export const notifications = [
     Date3: "14th April 2025",
   },
   {
-    id: 36,
+    id: 35,
     color: "#337AB7",
     tagType: "Webbing Slings",
     date: "October 03, 2024",
@@ -620,7 +602,7 @@ export const notifications = [
   },
 
   {
-    id: 37,
+    id: 36,
     color: "#6C5B7B",
     tagType: "Manila Ropes",
     date: "October 03, 2024",
@@ -636,7 +618,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 38,
+    id: 37,
     color: "#FF6F61",
     tagType: "Polyester Ropes",
     date: "October 03, 2024",
@@ -652,7 +634,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 39,
+    id: 38,
     color: "#96CEB4",
     tagType: "Synthetic Ropes",
     date: "October 03, 2024",
@@ -668,7 +650,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 40,
+    id: 39,
     color: "#F38630",
     tagType: "Polyolefin Ropes",
     date: "October 03, 2024",
@@ -684,7 +666,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 41,
+    id: 40,
     color: "#1A8781",
     tagType: "Steel Wire Ropes",
     date: "October 03, 2024",
@@ -700,7 +682,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 42,
+    id: 41,
     color: "#FFCC5C",
     tagType: "Polyamide Ropes",
     date: "October 03, 2024",
@@ -716,7 +698,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 43,
+    id: 42,
     color: "#D9534F",
     tagType: "Polypropylene Ropes",
     date: "October 03, 2024",
@@ -732,7 +714,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 44,
+    id: 43,
     color: "#45ADA8",
     tagType: "Polyethylene Ropes",
     date: "October 03, 2024",
@@ -748,7 +730,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 45,
+    id: 44,
     color: "#337AB7",
     tagType: "Dual Fibre Ropes",
     date: "October 03, 2024",
@@ -764,7 +746,7 @@ export const notifications = [
     Date3: "1st july 2025",
   },
   {
-    id: 46,
+    id: 45,
     color: "#A8A7A7",
     tagType: "Flat Head Screws",
     date: "September 25, 2024",
@@ -782,7 +764,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 47,
+    id: 46,
     color: "#6C5B7B",
     tagType: "Steel Cylinder Pipes",
     date: "September 25, 2024",
@@ -800,7 +782,7 @@ export const notifications = [
     Date3: "25th Sept 2024 ",
   },
   {
-    id: 48,
+    id: 47,
     color: "#FF6F61",
     tagType: "Deformed Steel Bars",
     date: "September 25, 2024",
@@ -818,7 +800,7 @@ export const notifications = [
     Date3: "25th Sept 2024 ",
   },
   {
-    id: 49,
+    id: 48,
     color: "#96CEB4",
     tagType: "Pipe Flanges",
     date: "September 25, 2024",
@@ -834,7 +816,7 @@ export const notifications = [
     Date3: "25th Sept 2024 ",
   },
   {
-    id: 50,
+    id: 49,
     color: "#F38630",
     tagType: "Food-Grade Tubes",
     date: "September 25, 2024",
@@ -852,7 +834,7 @@ export const notifications = [
     Date3: "25th Sept 2024 ",
   },
   {
-    id: 51,
+    id: 50,
     color: "#1A8781",
     tagType: "Chipboard Screws",
     date: "September 20, 2024",
@@ -868,7 +850,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 52,
+    id: 51,
     color: "#FFCC5C",
     tagType: "Wood Screws",
     date: "September 20, 2024",
@@ -886,7 +868,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 53,
+    id: 52,
     color: "#D9534F",
     tagType: "Drilling Screws - Pan Head",
     date: "September 20, 2024",
@@ -905,7 +887,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 54,
+    id: 53,
     color: "#45ADA8",
     tagType: "Drilling Screws - Raised Head",
     date: "September 20, 2024",
@@ -924,7 +906,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 55,
+    id: 54,
     color: "#337AB7",
     tagType: "Oval Head Screws",
     date: "September 20, 2024",
@@ -943,7 +925,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 56,
+    id: 55,
     color: "#A8A7A7",
     tagType: "Flat Head Screws",
     date: "September 20, 2024",
@@ -961,7 +943,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 57,
+    id: 56,
     color: "#6C5B7B",
     tagType: "Pan Head Screws",
     date: "September 20, 2024",
@@ -980,7 +962,7 @@ export const notifications = [
   },
 
   {
-    id: 58,
+    id: 57,
     color: "#FF6F61",
     tagType: "Drilling Screws - Countersunk",
     date: "September 20, 2024",
@@ -997,7 +979,7 @@ export const notifications = [
   },
 
   {
-    id: 59,
+    id: 58,
     color: "#337AB7",
     tagType: "Drilling Screws ",
     date: "September 20, 2024",
@@ -1017,27 +999,7 @@ export const notifications = [
   },
 
   {
-    id: 60,
-    color: "#B7337A",
-    tagType: " Tapping Screw",
-    date: "September 20, 2024",
-    title:
-      "BIS Notification for Fasteners – Cross Recessed Drilling Screws with Tapping Screw Thread Part 2 Countersunk Head",
-    description:
-      "Important update on mandatory BIS Certification for manufacturers and importers of “Fasteners – Cross Recessed Drilling Screws with Tapping..",
-    pdfUrl:
-      "/pdf/sun-certification-fasteners-cross-recessed-drilling-screws-with-tapping-screw-thread-part-2-countersunk-head-1.pdf",
-    location: " New Delhi",
-    subHeading:
-      "Fasteners – Cross Recessed Drilling Screws with Tapping Screw Thread Part 2 Countersunk Head.",
-    ISNumber: "IS 18471 (Part 2) :2023/ ISO 15482:1999  ",
-    Date1: "20th March 2025 ",
-    Date2: "20th June 2025 ",
-    Date3: "20th September 2025 ",
-  },
-
-  {
-    id: 61,
+    id: 59,
     color: "#6B5B95",
     tagType: "Drilling Screws - Hexagon Washer",
     date: "September 20, 2024",
@@ -1056,7 +1018,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 62,
+    id: 60,
     color: "#88B04B",
     tagType: "Screws - Countersunk Flat Head",
     date: "September 20, 2024",
@@ -1075,7 +1037,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 63,
+    id: 61,
     color: "#FFA07A",
     tagType: "Gypsum Based Building Materials",
     date: "September 20, 2024",
@@ -1101,7 +1063,7 @@ export const notifications = [
     Date3: "20th September 2025",
   },
   {
-    id: 64,
+    id: 62,
     color: "#00CED1",
     tagType: "Screws - Raised Countersunk Head",
     date: "September 20, 2024",
@@ -1120,7 +1082,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 65,
+    id: 63,
     color: "#FFB347",
     tagType: "Screws - Pan Head",
     date: "September 20, 2024",
@@ -1139,7 +1101,7 @@ export const notifications = [
     Date3: "20th September 2025 ",
   },
   {
-    id: 66,
+    id: 64,
     color: "#9ACD32",
     tagType: "Flux Cored Solder Wire",
     date: "September 18, 2024",
@@ -1156,7 +1118,7 @@ export const notifications = [
   },
 
   {
-    id: 67,
+    id: 65,
     color: "#E9967A",
     tagType: "Chain Pipe Wrenches",
     date: "September 17, 2024",
@@ -1172,7 +1134,7 @@ export const notifications = [
     Date3: "18th September 2025 ",
   },
   {
-    id: 68,
+    id: 66,
     color: "#20B2AA",
     tagType: "Open Ended Slugging Wrenches",
     date: "September 17, 2024",
@@ -1188,7 +1150,7 @@ export const notifications = [
     Date3: "17th September 2025 ",
   },
   {
-    id: 69,
+    id: 67,
     color: "#9370DB",
     tagType: "Ring Slugging Wrenches",
     date: "September 17, 2024",
@@ -1204,7 +1166,7 @@ export const notifications = [
     Date3: "17th September 2025 ",
   },
   {
-    id: 70,
+    id: 68,
     color: "#DC143C",
     tagType: "Open-jaw Adjustable Wrenches",
     date: "September 17, 2024",
@@ -1221,7 +1183,7 @@ export const notifications = [
     Date3: "17th September 2025 ",
   },
   {
-    id: 71,
+    id: 69,
     color: "#00FA9A",
     tagType: "Open-Jaw Wrenches",
     date: "September 17, 2024",
@@ -1237,7 +1199,7 @@ export const notifications = [
     Date3: "17th September 2025 ",
   },
   {
-    id: 72,
+    id: 70,
     color: "#DA70D6",
     tagType: "Ring Wrenches",
     date: "September 17, 2024",
@@ -1254,7 +1216,7 @@ export const notifications = [
   },
 
   {
-    id: 73,
+    id: 71,
     color: "#F08080",
     tagType: "Pipe Wrenches - General Purpose",
     date: "September 17, 2024",
@@ -1271,7 +1233,7 @@ export const notifications = [
   },
 
   {
-    id: 74,
+    id: 72,
     color: "#2E8B57",
     tagType: "Pipe Wrenches - Heavy Duty",
     date: "September 17, 2024",
@@ -1287,7 +1249,7 @@ export const notifications = [
     Date3: "17th September 2025 ",
   },
   {
-    id: 75,
+    id: 73,
     color: "#8A2BE2",
     tagType: "Cutting Pliers",
     date: "September 17, 2024",
@@ -1304,7 +1266,7 @@ export const notifications = [
   },
 
   {
-    id: 76,
+    id: 74,
     color: "#FFB347",
     tagType: "Electrical Appliances",
     date: "September 11, 2024",
@@ -1323,7 +1285,7 @@ export const notifications = [
     Date3: "17th September 2025 ",
   },
   {
-    id: 77,
+    id: 75,
     color: "#6B5B95",
     tagType: "Hinges",
     date: "July 26, 2024",
@@ -1347,7 +1309,7 @@ export const notifications = [
     Date3: "1st July, 2025",
   },
   {
-    id: 78,
+    id: 76,
     color: "#00BFFF",
     tagType: "Steel Wires & Ropes",
     date: "July 03, 2024",
@@ -1372,7 +1334,7 @@ export const notifications = [
     Date3: "1st June 2025",
   },
   {
-    id: 79,
+    id: 77,
     color: "#DC143C",
     tagType: "Textiles - Packaging",
     date: "June 04, 2024",
@@ -1390,7 +1352,7 @@ export const notifications = [
     Date3: "6th September 2024.  ",
   },
   {
-    id: 80,
+    id: 78,
     color: "#FFD700",
     tagType: "Textiles - Mail Sacks",
     date: "June 04, 2024",
@@ -1409,7 +1371,7 @@ export const notifications = [
     Date3: "6th September 2024.  ",
   },
   {
-    id: 81,
+    id: 79,
     color: "#20B2AA",
     tagType: "Cement Packaging",
     date: "June 04, 2024",
@@ -1428,7 +1390,7 @@ export const notifications = [
     Date3: "6th September 2024.  ",
   },
   {
-    id: 82,
+    id: 80,
     color: "#A0522D",
     tagType: "Chains & Sprockets",
     date: "June 03, 2024",
@@ -1447,7 +1409,7 @@ export const notifications = [
     Date3: "1st April 2025",
   },
   {
-    id: 83,
+    id: 81,
     color: "#5F9EA0",
     tagType: "Nickel Powder",
     date: "May 03, 2024",
@@ -1464,7 +1426,7 @@ export const notifications = [
   },
 
   {
-    id: 84,
+    id: 82,
     color: "#9ACD32",
     tagType: "Copper",
     date: "May 03, 2024",
@@ -1481,7 +1443,7 @@ export const notifications = [
   },
 
   {
-    id: 85,
+    id: 83,
     color: "#FF69B4",
     tagType: "Aluminium Alloys",
     date: "May 03, 2024",
@@ -1498,7 +1460,7 @@ export const notifications = [
   },
 
   {
-    id: 86,
+    id: 84,
     color: "#8A2BE2",
     tagType: "Aluminium",
     date: "May 03, 2024",
@@ -1514,7 +1476,7 @@ export const notifications = [
     Date3: "1st December 2024",
   },
   {
-    id: 87,
+    id: 85,
     color: "#00CED1",
     tagType: "Aluminium",
     date: "May 03, 2024",
@@ -1530,7 +1492,7 @@ export const notifications = [
     Date3: "1st December 2024",
   },
   {
-    id: 88,
+    id: 86,
     color: "#FF6347",
     tagType: "Aluminium",
     date: "May 03, 2024",
@@ -1546,7 +1508,7 @@ export const notifications = [
     Date3: "1st December 2024",
   },
   {
-    id: 89,
+    id: 87,
     color: "#DAA520",
     tagType: "Aluminium",
     date: "May 03, 2024",
@@ -1562,7 +1524,7 @@ export const notifications = [
     Date3: "1st December 2024",
   },
   {
-    id: 90,
+    id: 88,
     color: "#6495ED",
     tagType: "Furniture Hardware",
     date: "May 02, 2024",
@@ -1578,7 +1540,7 @@ export const notifications = [
     Date3: "1st December 2024",
   },
   {
-    id: 91,
+    id: 89,
     color: "#FF8C00",
     tagType: "Copper Products",
     date: "April 25, 2024",
@@ -1603,7 +1565,7 @@ export const notifications = [
   },
 
   {
-    id: 92,
+    id: 90,
     color: "#7FFF00",
     tagType: "Agro Textiles",
     date: "March 28, 2024",
@@ -1639,7 +1601,7 @@ export const notifications = [
   },
 
   {
-    id: 93,
+    id: 91,
     color: "#CD5C5C",
     tagType: "Plywood",
     date: "March 15, 2024",
@@ -1656,7 +1618,7 @@ export const notifications = [
   },
 
   {
-    id: 94,
+    id: 92,
     color: "#4169E1",
     tagType: "Plywood",
     date: "March 15, 2024",
@@ -1674,7 +1636,7 @@ export const notifications = [
     Date3: "28th August 2025 ",
   },
   {
-    id: 95,
+    id: 93,
     color: "#DC143C",
     tagType: "Marine Plywood",
     date: "March 15, 2024",
@@ -1690,7 +1652,7 @@ export const notifications = [
     Date3: "28th August 2025 ",
   },
   {
-    id: 96,
+    id: 94,
     color: "#B8860B",
     tagType: "Fire Retardant Plywood",
     date: "March 15, 2024",
@@ -1706,7 +1668,7 @@ export const notifications = [
     Date3: "28th August 2025 ",
   },
   {
-    id: 97,
+    id: 95,
     color: "#40E0D0",
     tagType: "Decorative Plywood",
     date: "March 15, 2024",
@@ -1722,7 +1684,7 @@ export const notifications = [
     Date3: "28th August 2025 ",
   },
   {
-    id: 98,
+    id: 96,
     color: "#FF1493",
     tagType: "Board Panels",
     date: "March 15, 2024",
@@ -1739,7 +1701,7 @@ export const notifications = [
     Date3: "28th August 2025 ",
   },
   {
-    id: 99,
+    id: 97,
     color: "#6A5ACD",
     tagType: "Plywood Panels",
     date: "March 15, 2024",
@@ -1755,7 +1717,7 @@ export const notifications = [
     Date3: "28th August 2025 ",
   },
   {
-    id: 100,
+    id: 98,
     color: "#00FA9A",
     tagType: "Hardboard Panels",
     date: "March 15, 2024",
@@ -1772,7 +1734,7 @@ export const notifications = [
   },
 
   {
-    id: 101,
+    id: 99,
     color: "#4B0082",
     tagType: "Plywood",
     date: "March 15, 2024",
@@ -1788,7 +1750,7 @@ export const notifications = [
     Date3: "28th August 2025 ",
   },
   {
-    id: 102,
+    id: 100,
     color: "#5F9EA0",
     tagType: "Plywood",
     date: "March 15, 2024",
@@ -1804,7 +1766,7 @@ export const notifications = [
     Date3: "28th August 2025 ",
   },
   {
-    id: 103,
+    id: 101,
     color: "#FF4500",
     tagType: "Mechanical",
     date: "March 06, 2024",
@@ -1823,7 +1785,7 @@ export const notifications = [
   },
 
   {
-    id: 104,
+    id: 102,
     color: "#2E8B57",
     tagType: "Construction",
     date: "March 06, 2024",
@@ -1839,7 +1801,7 @@ export const notifications = [
     Date3: "6th March 2025 ",
   },
   {
-    id: 105,
+    id: 103,
     color: "#FF69B4",
     tagType: "Construction",
     date: "March 06, 2024",
@@ -1857,7 +1819,7 @@ export const notifications = [
     Date3: "6th March 2025 ",
   },
   {
-    id: 106,
+    id: 104,
     color: "#D2691E",
     tagType: "Cooling Appliances",
     date: "March 05, 2024",
@@ -1875,7 +1837,7 @@ export const notifications = [
   },
 
   {
-    id: 107,
+    id: 105,
     color: "#708090",
     tagType: "Construction",
     date: "March 05, 2024",
@@ -1903,7 +1865,7 @@ export const notifications = [
   },
 
   {
-    id: 108,
+    id: 106,
     color: "#A52A2A",
     tagType: "Engines",
     date: "March 05, 2024",
@@ -1919,7 +1881,7 @@ export const notifications = [
     Date3: "24th August 2024 ",
   },
   {
-    id: 109,
+    id: 107,
     color: "#20B2AA",
     tagType: "Electrical",
     date: "March 05, 2024",
@@ -1937,7 +1899,7 @@ export const notifications = [
     Date3: "5th March 2025 ",
   },
   {
-    id: 110,
+    id: 108,
     color: "#9370DB",
     tagType: "Electrical",
     date: "March 05, 2024",
@@ -1955,7 +1917,7 @@ export const notifications = [
     Date3: "5th March 2025 ",
   },
   {
-    id: 111,
+    id: 109,
     color: "#556B2F",
     tagType: "Electrical",
     date: "March 05, 2024",
@@ -1971,7 +1933,7 @@ export const notifications = [
     Date3: "5th March 2025 ",
   },
   {
-    id: 112,
+    id: 110,
     color: "#CD853F",
     tagType: "Electrical",
     date: "March 05, 2024",
@@ -1992,7 +1954,7 @@ export const notifications = [
   },
 
   {
-    id: 113,
+    id: 111,
     color: "#8FBC8F",
     tagType: "Electrical",
     date: "March 05, 2024",
@@ -2009,7 +1971,7 @@ export const notifications = [
     Date3: "5 September 2025 ",
   },
   {
-    id: 114,
+    id: 112,
     color: "#C71585",
     tagType: "Kitchen",
     date: "March 05, 2024",
@@ -2027,7 +1989,7 @@ export const notifications = [
   },
 
   {
-    id: 115,
+    id: 113,
     color: "#9ACD32",
     tagType: "Water Meter",
     date: "March 05, 2024",
@@ -2046,7 +2008,7 @@ export const notifications = [
   },
 
   {
-    id: 116,
+    id: 114,
     color: "#FFA07A",
     tagType: "PVC",
     date: "February 26, 2024",
@@ -2062,7 +2024,7 @@ export const notifications = [
     Date3: "24th August 2024 ",
   },
   {
-    id: 117,
+    id: 115,
     color: "#FFB6C1",
     tagType: "Plastic",
     date: "February 26, 2024",
@@ -2081,7 +2043,7 @@ export const notifications = [
     Date3: "24th August 2024 ",
   },
   {
-    id: 118,
+    id: 116,
     color: "#8B0000",
     tagType: "Hygiene",
     date: "February 22, 2024",
@@ -2097,7 +2059,7 @@ export const notifications = [
     Date3: "1st October 2024 ",
   },
   {
-    id: 119,
+    id: 117,
     color: "#00FF7F",
     tagType: "Hygiene",
     date: "February 22, 2024",
@@ -2113,7 +2075,7 @@ export const notifications = [
     Date3: "1st April 2024",
   },
   {
-    id: 120,
+    id: 118,
     color: "#4682B4",
     tagType: "Hygiene",
     date: "February 22, 2024",
@@ -2129,7 +2091,7 @@ export const notifications = [
     Date3: "1st April 2024",
   },
   {
-    id: 121,
+    id: 119,
     color: "#FFDEAD",
     tagType: "Appliances",
     date: "February 22, 2024",
@@ -2145,7 +2107,7 @@ export const notifications = [
     Date3: "1st April 2025",
   },
   {
-    id: 122,
+    id: 120,
     color: "#BC8F8F",
     tagType: "Hygiene",
     date: "February 22, 2024",
@@ -2163,7 +2125,7 @@ export const notifications = [
     Date3: "1st October 2024.",
   },
   {
-    id: 123,
+    id: 121,
     color: "#00FFFF",
     tagType: "Hygiene",
     date: "February 22, 2024",
@@ -2179,7 +2141,7 @@ export const notifications = [
     Date3: "1st October 2024.",
   },
   {
-    id: 124,
+    id: 122,
     color: "#DA70D6",
     tagType: "Hygiene",
     date: "February 22, 2024",
@@ -2195,7 +2157,7 @@ export const notifications = [
     Date3: "1st April 2024",
   },
   {
-    id: 125,
+    id: 123,
     color: "#8B008B",
     tagType: "Electrical",
     date: "January 01, 2024",
@@ -2219,7 +2181,7 @@ export const notifications = [
   },
 
   {
-    id: 126,
+    id: 124,
     color: "#4682B4",
     tagType: "Laboratory",
     date: "January 01, 2024",
@@ -2240,7 +2202,7 @@ export const notifications = [
   },
 
   {
-    id: 127,
+    id: 125,
     color: "#CD5C5C",
     tagType: "Automotive",
     date: "December 11, 2023",
@@ -2258,7 +2220,7 @@ export const notifications = [
   },
 
   {
-    id: 128,
+    id: 126,
     color: "#2F4F4F",
     tagType: "Security",
     date: "December 08, 2023",
@@ -2277,7 +2239,7 @@ export const notifications = [
   },
 
   {
-    id: 129,
+    id: 127,
     color: "#DAA520",
     tagType: "Packaging",
     date: "December 06, 2023",
@@ -2296,7 +2258,7 @@ export const notifications = [
     Date3: "1st April 2024",
   },
   {
-    id: 130,
+    id: 128,
     color: "#3CB371",
     tagType: "Measurement",
     date: "November 01, 2023",
@@ -2315,7 +2277,7 @@ export const notifications = [
   },
 
   {
-    id: 131,
+    id: 129,
     color: "#9932CC",
     tagType: "Hardware",
     date: "October 23, 2023",
@@ -2338,7 +2300,7 @@ export const notifications = [
   },
 
   {
-    id: 132,
+    id: 130,
     color: "#D2691E",
     tagType: "Packaging",
     date: "October 23, 2023",
@@ -2361,7 +2323,7 @@ export const notifications = [
   },
 
   {
-    id: 133,
+    id: 131,
     color: "#40E0D0",
     tagType: "Safety",
     date: "October 23, 2023",
@@ -2381,7 +2343,7 @@ export const notifications = [
     Date3: "23rd October 2024",
   },
   {
-    id: 134,
+    id: 132,
     color: "#DC143C",
     tagType: "Appliances",
     date: "January 20, 2023",
@@ -2397,7 +2359,7 @@ export const notifications = [
     Date3: "23rd October 2024",
   },
   {
-    id: 135,
+    id: 133,
     color: "#708090",
     tagType: "Furniture",
     date: "March 22, 2022",
@@ -2415,7 +2377,7 @@ export const notifications = [
     Date3: "23rd October 2024",
   },
   {
-    id: 136,
+    id: 134,
     color: "#A0522D",
     tagType: "Cookware",
     date: "January 01, 1970",
@@ -2431,7 +2393,7 @@ export const notifications = [
     Date3: "23rd October 2024",
   },
   {
-    id: 137,
+    id: 135,
     color: "#6495ED",
     tagType: "Electrical",
     date: "January 01, 1970",
@@ -2447,7 +2409,7 @@ export const notifications = [
     Date3: "14th December 2024",
   },
   {
-    id: 138,
+    id: 136,
     color: "#1A8781",
     tagType: "New QCO",
     date: "15 June 2025",
@@ -2463,7 +2425,7 @@ export const notifications = [
     Date3: "12 months from the date of publication of this order",
   },
   {
-    id: 139,
+    id: 137,
     color: "#DC143C",
     tagType: "New QCO",
     date: "15 June 2025",
@@ -2479,7 +2441,7 @@ export const notifications = [
     Date3: "12 months from the date of publication of this order",
   },
   {
-    id: 140,
+    id: 138,
     color: "#708090",
     tagType: "New QCO",
     date: "13 June 2025",
@@ -2495,7 +2457,7 @@ export const notifications = [
     Date3: "16th June 2025",
   },
   {
-    id: 141,
+    id: 139,
     color: "#DC143C",
     tagType: "New QCO",
     date: "15 June 2025 ",
@@ -2512,7 +2474,7 @@ export const notifications = [
   },
 
   {
-    id: 142,
+    id: 140,
     color: "#708090",
     tagType: "New QCO",
     date: "15 June 2025",
@@ -2529,7 +2491,7 @@ export const notifications = [
   },
 
   {
-    id: 143,
+    id: 141,
     color: "#DC143C",
     tagType: "New QCO",
     date: "13 June 2025",
@@ -2546,7 +2508,7 @@ export const notifications = [
   },
 
   {
-    id: 144,
+    id: 142,
     color: "#708090",
     tagType: "New QCO",
     date: "13 June 2025",
