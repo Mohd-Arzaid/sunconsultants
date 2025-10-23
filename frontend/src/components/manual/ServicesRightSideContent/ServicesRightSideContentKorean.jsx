@@ -29,7 +29,10 @@ const ServicesRightSideContentKorean = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const showComponentsPaths = ["/what-is-crs-bis-or-crs-registration"];
+  const showComponentsPaths = [
+    "/what-is-crs-bis-or-crs-registration",
+    "/hangug-ui-bis-injeung",
+  ];
 
   // Check if current path should show these components
   const shouldShowComponents = showComponentsPaths.includes(currentPath);
@@ -545,6 +548,8 @@ const ContactFormServicesRightSideContentKorean = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS 등록";
+    if (path.includes("/hangug-ui-bis-injeung"))
+      return "Korea Blog (Korean)";
   };
 
   const [formData, setFormData] = useState({

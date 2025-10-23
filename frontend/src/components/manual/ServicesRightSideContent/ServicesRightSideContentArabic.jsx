@@ -29,7 +29,15 @@ const ServicesRightSideContentArabic = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const showComponentsPaths = ["/what-is-crs-bis-or-crs-registration"];
+  const showComponentsPaths = [
+    "/what-is-crs-bis-or-crs-registration",
+    "/shahadat-bis-fi-al-imarat",
+    "/shahadat-bis-fi-qatar",
+    "/shahadat-bis-fi-al-bahrain",
+    "/shahadat-bis-fi-dubai",
+    "/shahadat-bis-fi-iran",
+    "/shahadat-bis-fi-al-iraq",
+  ];
 
   // Check if current path should show these components
   const shouldShowComponents = showComponentsPaths.includes(currentPath);
@@ -549,6 +557,18 @@ const ContactFormServicesRightSideContentArabic = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "تسجيل CRS";
+    if (path.includes("/shahadat-bis-fi-al-imarat"))
+      return "UAE Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-qatar"))
+      return "Qatar Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-al-bahrain"))
+      return "Bahrain Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-dubai"))
+      return "Dubai Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-iran"))
+      return "Iran Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-al-iraq"))
+      return "Iraq Blog (Arabic)";
   };
 
   const [formData, setFormData] = useState({

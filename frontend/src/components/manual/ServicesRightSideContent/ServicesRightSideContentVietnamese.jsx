@@ -29,7 +29,10 @@ const ServicesRightSideContentVietnamese = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const showComponentsPaths = ["/what-is-crs-bis-or-crs-registration"];
+  const showComponentsPaths = [
+    "/what-is-crs-bis-or-crs-registration",
+    "/chung-nhan-bis-tai-viet-nam",
+  ];
 
   // Check if current path should show these components
   const shouldShowComponents = showComponentsPaths.includes(currentPath);
@@ -556,6 +559,8 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "Đăng ký CRS";
+    if (path.includes("/chung-nhan-bis-tai-viet-nam"))
+      return "Vietnam Blog (Vietnamese)";
   };
 
   const [formData, setFormData] = useState({

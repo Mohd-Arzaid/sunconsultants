@@ -29,7 +29,10 @@ const ServicesRightSideContentIndonesian = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const showComponentsPaths = ["/what-is-crs-bis-or-crs-registration"];
+  const showComponentsPaths = [
+    "/what-is-crs-bis-or-crs-registration",
+    "/sertifikasi-bis-di-indonesia",
+  ];
 
   // Check if current path should show these components
   const shouldShowComponents = showComponentsPaths.includes(currentPath);
@@ -557,6 +560,8 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "Registrasi CRS";
+    if (path.includes("/sertifikasi-bis-di-indonesia"))
+      return "Indonesia Blog (Indonesian)";
   };
 
   const [formData, setFormData] = useState({
