@@ -32,6 +32,7 @@ const ServicesRightSideContentSpanish = () => {
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
     "/certificacion-bis-en-espana",
+    "/es/que-es-crs-bis-o-registro-crs",
   ];
 
   // Check if current path should show these components
@@ -558,6 +559,8 @@ const ContactFormServicesRightSideContentSpanish = () => {
       return "Registro CRS";
     if (path.includes("/certificacion-bis-en-espana"))
       return "Spain Blog (Spanish)";
+    if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
+      return "Registro CRS (Spanish)";
   };
 
   const [formData, setFormData] = useState({

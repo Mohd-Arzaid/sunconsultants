@@ -32,6 +32,7 @@ const ServicesRightSideContentIndonesian = () => {
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
     "/sertifikasi-bis-di-indonesia",
+    "/id/apa-itu-crs-bis-atau-registrasi-crs",
   ];
 
   // Check if current path should show these components
@@ -562,6 +563,8 @@ const ContactFormServicesRightSideContentIndonesian = () => {
       return "Registrasi CRS";
     if (path.includes("/sertifikasi-bis-di-indonesia"))
       return "Indonesia Blog (Indonesian)";
+    if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
+      return "Registrasi CRS (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

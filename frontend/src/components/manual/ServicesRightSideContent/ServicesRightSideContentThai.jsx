@@ -32,6 +32,7 @@ const ServicesRightSideContentThai = () => {
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
     "/kan-rap-rong-bis-nai-prathet-thai",
+    "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
   ];
 
   // Check if current path should show these components
@@ -557,6 +558,8 @@ const ContactFormServicesRightSideContentThai = () => {
       return "การลงทะเบียน CRS";
     if (path.includes("/kan-rap-rong-bis-nai-prathet-thai"))
       return "Thailand Blog (Thai)";
+    if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
+      return "การลงทะเบียน CRS (Thai)";
   };
 
   const [formData, setFormData] = useState({
@@ -777,4 +780,3 @@ const ContactFormServicesRightSideContentThai = () => {
     </div>
   );
 };
-
