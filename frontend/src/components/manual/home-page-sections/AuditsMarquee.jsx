@@ -58,8 +58,22 @@ const AuditsMarquee = () => {
       image: "/auditImages/Thailand.webp",
       title: "Thailand Audit",
     },
+    {
+      id: 11,
+      image: "/auditImages/USA.webp",
+      title: "USA Audit",
+    },
+    {
+      id: 12,
+      image: "/auditImages/Spain.webp",
+      title: "Spain Audit",
+    },
+    {
+      id: 13,
+      image: "/auditImages/Turkey.webp",
+      title: "Turkey Audit",
+    },
   ];
-
 
   useEffect(() => {
     addAnimation();
@@ -99,7 +113,10 @@ const AuditsMarquee = () => {
       const pixelsPerSecond = 50; // Consistent speed: 50 pixels per second
       const duration = totalWidth / pixelsPerSecond;
 
-      containerRef.current.style.setProperty("--animation-duration", `${duration}s`);
+      containerRef.current.style.setProperty(
+        "--animation-duration",
+        `${duration}s`
+      );
     }
   };
 
@@ -116,8 +133,9 @@ const AuditsMarquee = () => {
         >
           <div
             ref={scrollerRef}
-            className={`flex items-center pt-4 pb-8 w-max gap-6 ${start ? "animate-scroll" : ""
-              } hover:[animation-play-state:paused]`}
+            className={`flex items-center pt-4 pb-8 w-max gap-6 ${
+              start ? "animate-scroll" : ""
+            } hover:[animation-play-state:paused]`}
           >
             {duplicatedImages.map((item, index) => (
               <div

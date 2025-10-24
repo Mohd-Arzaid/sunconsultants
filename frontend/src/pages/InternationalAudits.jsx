@@ -2,7 +2,14 @@ import Footer from "@/common/Footer";
 import Services from "../components/manual/Services";
 import AboutContact from "../components/manual/about/AboutContact";
 import { Helmet } from "react-helmet-async";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 import { SlashIcon } from "lucide-react";
 
@@ -182,6 +189,21 @@ const AuditGallery = () => {
       id: 10,
       image: "/auditImages/Thailand.webp",
       title: "Thailand",
+    },
+    {
+      id: 11,
+      image: "/auditImages/USA.webp",
+      title: "USA",
+    },
+    {
+      id: 12,
+      image: "/auditImages/Spain.webp",
+      title: "Spain",
+    },
+    {
+      id: 13,
+      image: "/auditImages/Turkey.webp",
+      title: "Turkey",
     },
   ];
 

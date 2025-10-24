@@ -11,6 +11,9 @@ const VietnamImage = "/auditImages/Vietnam.webp";
 const Vietnam2Image = "/auditImages/Vietnam-2.webp";
 const Vietnam3Image = "/auditImages/Vietnam-3.webp";
 const Vietnam4Image = "/auditImages/Vietnam-4.webp";
+const USAImage = "/auditImages/USA.webp";
+const SpainImage = "/auditImages/Spain.webp";
+const TurkeyImage = "/auditImages/Turkey.webp";
 
 const InternationalAuditMarquee = () => {
   const marqueeImages = [
@@ -63,6 +66,21 @@ const InternationalAuditMarquee = () => {
       id: 10,
       image: Vietnam4Image,
       title: "Vietnam",
+    },
+    {
+      id: 11,
+      image: USAImage,
+      title: "USA",
+    },
+    {
+      id: 12,
+      image: SpainImage,
+      title: "Spain",
+    },
+    {
+      id: 13,
+      image: TurkeyImage,
+      title: "Turkey",
     },
   ];
 

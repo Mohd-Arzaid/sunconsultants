@@ -2352,13 +2352,13 @@ export const notifications = [
       "Important update on mandatory BIS Certification for manufacturers and importers of Bottled Water Dispensers.",
     pdfUrl: "/pdf/sun-certification-bottled-water-dispensers.pdf",
     location: "New Delhi",
-    subHeading: `Bottled Water Dispensers" for Indian marketplace`,
+    subHeading: `Bottled Water Dispensers for Indian marketplace`,
     ISNumber: `IS 17681: 2022`,
     Date1: "23rd April 2024 ",
     Date2: "23rd July 2024",
     Date3: "23rd October 2024",
   },
-{
+  {
     id: 133,
     color: "#708090",
     tagType: "Furniture",
