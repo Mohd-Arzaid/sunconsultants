@@ -32,6 +32,10 @@ import Videos from "./pages/Videos";
 import CDSCO from "./pages/CDSCO";
 import SchemeX from "./pages/SchemeX/SchemeX";
 import CRSRegistration from "./pages/CRSRegistration/CRSRegistration";
+import CRSRegistrationThai from "./pages/CRSRegistration/CRSRegistrationThai";
+import CRSRegistrationKorean from "./pages/CRSRegistration/CRSRegistrationKorean";
+import CRSRegistrationIndonesian from "./pages/CRSRegistration/CRSRegistrationIndonesian";
+import CRSRegistrationSpanish from "./pages/CRSRegistration/CRSRegistrationSpanish";
 import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
 import WPC from "./pages/WPC";
@@ -382,6 +386,30 @@ function App() {
           <Route
             path="/ja/crs-bis-toha-nani-ka-crs-toroku"
             element={<CRSRegistrationJapanese />}
+          />
+
+          {/* Thai */}
+          <Route
+            path="/th/crs-bis-khue-a-rai-rab-phit-thab-crs"
+            element={<CRSRegistrationThai />}
+          />
+
+          {/* Korean */}
+          <Route
+            path="/ko/crs-bis-i-mueos-inga-crs-deunglog"
+            element={<CRSRegistrationKorean />}
+          />
+
+          {/* Indonesian */}
+          <Route
+            path="/id/apa-itu-crs-bis-atau-registrasi-crs"
+            element={<CRSRegistrationIndonesian />}
+          />
+
+          {/* Spanish */}
+          <Route
+            path="/es/que-es-crs-bis-o-registro-crs"
+            element={<CRSRegistrationSpanish />}
           />
 
           <Route
