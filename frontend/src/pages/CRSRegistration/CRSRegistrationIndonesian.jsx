@@ -80,13 +80,13 @@ const CRSRegistrationMetaTags = () => {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
+        name: "Beranda",
         item: window.location.origin + "/",
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "BIS CRS Registration",
+        name: "Pendaftaran BIS CRS",
         item: window.location.href,
       },
     ],
@@ -151,7 +151,7 @@ const CRSRegistrationBreadcrumb = () => {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <Link to="/">Home</Link>
+                  <Link to="/">Beranda</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator>
@@ -1018,458 +1018,445 @@ const CRSRegistrationServiceFaq = () => {
 const productsData = [
   {
     id: 1,
-    product: "AMPLIFIERS WITH INPUT POWER 2000W AND ABOVE",
+    product: "AMPLIFIER DENGAN DAYA INPUT 2000W DAN LEBIH",
     isNumber: "IS 616:2017",
-    date: "03 July 2013",
+    date: "03 Juli 2013",
   },
   {
     id: 2,
-    product: "AUTOMATIC DATA PROCESSING MACHINE",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "03 July 2013",
+    product: "MESIN PENGOLAHAN DATA OTOMATIS",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "03 Juli 2013",
   },
   {
     id: 3,
-    product: "ELECTRONIC CLOCKS WITH MAINS POWER",
+    product: "JAM ELEKTRONIK DENGAN DAYA UTAMA",
     isNumber: "IS 302-2-26:2014",
-    date: "03 July 2013",
+    date: "03 Juli 2013",
   },
   {
     id: 4,
-    product: "ELECTRONIC GAMES (VIDEO)",
+    product: "PERMAINAN ELEKTRONIK (VIDEO)",
     isNumber: "IS 616:2017",
-    date: "03 July 2013",
+    date: "03 Juli 2013",
   },
   {
     id: 5,
-    product: "ELECTRONIC MUSICAL SYSTEMS WITH INPUT POWER 200W AND ABOVE",
+    product: "SISTEM MUSIK ELEKTRONIK DENGAN DAYA INPUT 200W DAN LEBIH",
     isNumber: "IS 616:2017",
-    date: "03 July 2013",
+    date: "03 Juli 2013",
   },
   {
     id: 6,
     product: "LAPTOP/NOTEBOOK/TABLET",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "03 July 2013",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "03 Juli 2013",
   },
   {
     id: 7,
-    product: "MICROWAVE OVENS",
+    product: "OVEN MIKROGELOMBANG",
     isNumber: "IS 302-2-25:2014",
-    date: "03 July 2013",
+    date: "03 Juli 2013",
   },
   {
     id: 8,
-    product:
-      "OPTICAL DISC PLAYERS WITH BUILT IN AMPLIFIERS OF INPUT POWER 200W AND ABOVE",
+    product: "PEMUTAR DISK OPTIK DENGAN AMPLIFIER TERPASANG DENGAN DAYA INPUT 200W DAN LEBIH",
     isNumber: "IS 616:2017",
-    date: "03 July 2013",
+    date: "03 Juli 2013",
   },
   {
     id: 9,
-    product: 'PLASMA/LCD/LED TELEVISIONS OF SCREEN SIZE 32"; AND ABOVE',
+    product: 'TELEVISI PLASMA/LCD/LED DENGAN UKURAN LAYAR 32" DAN LEBIH',
     isNumber: "IS 616:2017",
-    date: "03 July 2013",
+    date: "03 Juli 2013",
   },
   {
     id: 10,
-    product: "PRINTERS, PLOTTERS",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "03 July 2013",
+    product: "PRINTER, PLOTTER",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "03 Juli 2013",
   },
   {
     id: 11,
-    product: "SCANNERS",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "03 July 2013",
+    product: "SCANNER",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "03 Juli 2013",
   },
   {
     id: 12,
     product: "SET TOP BOX",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "03 July 2013",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "03 Juli 2013",
   },
   {
     id: 13,
-    product: "TELEPHONE ANSWERING MACHINES",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "03 July 2013",
+    product: "MESIN PENJAWAB TELEPON",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "03 Juli 2013",
   },
   {
     id: 14,
-    product:
-      'VISUAL DISPLAY UNITS, VIDEOS MONITORS OF SCREEN SIZE 32" AND ABOVE',
-    isNumber: "IS 13252(Part 1):2010",
-    date: "03 July 2013",
+    product: 'UNIT TAMPILAN VISUAL, MONITOR VIDEO DENGAN UKURAN LAYAR 32" DAN LEBIH',
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "03 Juli 2013",
   },
   {
     id: 15,
-    product: "WIRELESS KEYBOARDS",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "03 July 2013",
+    product: "KEYBOARD NIRKABEL",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "03 Juli 2013",
   },
   {
     id: 16,
-    product: "CASH REGISTERS",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "13 May 2015",
+    product: "KASIR",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "13 Mei 2015",
   },
   {
     id: 17,
-    product: "COPYING MACHINES/DUPLICATORS",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "13 May 2015",
+    product: "MESIN FOTOKOPI/DUPLIKATOR",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "13 Mei 2015",
   },
   {
     id: 18,
-    product: "PASSPORT READER",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "13 May 2015",
+    product: "PEMBACA PASSPORT",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "13 Mei 2015",
   },
   {
     id: 19,
-    product: "POINT OF SALE TERMINALS",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "13 May 2015",
+    product: "TERMINAL POINT OF SALE",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "13 Mei 2015",
   },
   {
     id: 20,
-    product: "MAIL PROCESSING MACHINES/POSTAGE MACHINES/FRANKING MACHINES",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "13 May 2015",
+    product: "MESIN PENGOLAHAN SURAT/MESIN FRANKIR/MESIN FRANKIR",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "13 Mei 2015",
   },
   {
     id: 21,
-    product: "POWER BANKS FOR USE IN PORTABLE APPLICATIONS",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "13 May 2015",
+    product: "BANK DAYA UNTUK PENGGUNAAN DALAM APLIKASI PORTABEL",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "13 Mei 2015",
   },
   {
     id: 22,
-    product: "SMART CARD READER",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "13 May 2015",
+    product: "PEMBACA KARTU PINTAR",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "13 Mei 2015",
   },
   {
     id: 23,
-    product: "MOBILE PHONES",
-    isNumber: "IS 13252(Part 1):2010",
+    product: "TELEPON SELULER",
+    isNumber: "IS 13252(Bagian 1):2010",
     date: "13 September 2015",
   },
   {
     id: 24,
-    product: "SELF-BALLASTED LED LAMPS FOR GENERAL LIGHTING SERVICES",
-    isNumber: "IS 16102(Part 1):2012",
+    product: "LAMPU LED AUTO-BALLASTED UNTUK LAYANAN PENERANGAN UMUM",
+    isNumber: "IS 16102(Bagian 1):2012",
     date: "13 September 2015",
   },
   {
     id: 25,
-    product: "DC OR AC SUPPLIED ELECTRONIC CONTROLGEAR FOR LED MODULES",
-    isNumber: "IS 15885(Part 2/Sec 13):2012",
-    date: "01 December 2015",
+    product: "PERALATAN KONTROL ELEKTRONIK YANG DIPASOK DC ATAU AC UNTUK MODUL LED",
+    isNumber: "IS 15885(Bagian 2/Sec 13):2012",
+    date: "01 Desember 2015",
   },
   {
     id: 26,
-    product: "POWER ADAPTORS FOR AUDIO,VIDEO & SIMILAR ELECTRONIC APPARATUS",
+    product: "ADAPTER DAYA UNTUK PERALATAN ELEKTRONIK AUDIO, VIDEO & SEJENISNYA",
     isNumber: "IS 616:2010",
-    date: "01 December 2015",
+    date: "01 Desember 2015",
   },
   {
     id: 27,
-    product: "POWER ADAPTORS FOR IT EQUIPMENTS",
-    isNumber: "IS 13252(Part 1):2010",
-    date: "01 December 2015",
+    product: "ADAPTER DAYA UNTUK PERALATAN IT",
+    isNumber: "IS 13252(Bagian 1):2010",
+    date: "01 Desember 2015",
   },
   {
     id: 28,
-    product: "FIXED GENERAL PURPOSE LED LUMINAIRES",
-    isNumber: "IS 10322(Part 5/Sec 1):2012",
-    date: "01 March 2016",
+    product: "LUMINAIRE LED TUJUAN UMUM TETAP",
+    isNumber: "IS 10322(Bagian 5/Sec 1):2012",
+    date: "01 Maret 2016",
   },
   {
     id: 29,
-    product: "UPS/INVERTORS OF RATING <= 5KVA",
-    isNumber: "IS 16242(Part 1):2014",
-    date: "01 March 2016",
+    product: "UPS/INVERTER DENGAN RATING <= 5KVA",
+    isNumber: "IS 16242(Bagian 1):2014",
+    date: "01 Maret 2016",
   },
   {
     id: 30,
-    product:
-      "SEALED SECONDARY CELLS/BATTERIES CONTAINING ALKALINE OR OTHER NON-ACID ELECTROLYTES FOR USE IN PORTABLE APPLICATIONS PART 1 NICKEL SYSTEMS",
-    isNumber: "IS 16046(Part 1): 2018",
-    date: "01 June 2016",
+    product: "SEL/BATERAI SEKUNDER TERSEGEL MENGANDUNG ELEKTROLIT ALKALI ATAU NON-ASAM LAINNYA UNTUK PENGGUNAAN DALAM APLIKASI PORTABEL BAGIAN 1 SISTEM NIKEL",
+    isNumber: "IS 16046(Bagian 1): 2018",
+    date: "01 Juni 2016",
   },
   {
     id: 31,
-    product:
-      "SEALED SECONDARY CELLS/BATTERIES CONTAINING ALKALINE OR OTHER NON-ACID ELECTROLYTES FOR USE IN PORTABLE APPLICATIONS PART 2 LITHIUM SYSTEMS",
-    isNumber: "IS 16046(Part 2): 2018",
-    date: "01 June 2016",
+    product: "SEL/BATERAI SEKUNDER TERSEGEL MENGANDUNG ELEKTROLIT ALKALI ATAU NON-ASAM LAINNYA UNTUK PENGGUNAAN DALAM APLIKASI PORTABEL BAGIAN 2 SISTEM LITHIUM",
+    isNumber: "IS 16046(Bagian 2): 2018",
+    date: "01 Juni 2016",
   },
   {
     id: 32,
-    product: "INDIAN LANGUAGE SUPPORT FOR MOBILE PHONE HANDSETS",
-    isNumber: "IS 16333 (Part 3) : 2022",
-    date: "01 May 2018",
+    product: "DUKUNGAN BAHASA INDIA UNTUK HANDPHONE TELEPON SELULER",
+    isNumber: "IS 16333 (Bagian 3) : 2022",
+    date: "01 Mei 2018",
   },
   {
     id: 33,
-    product: "Recessed LED Luminaries",
-    isNumber: "IS 10322 (Part 5/Section 2) : 2012",
-    date: "23 May 2018",
+    product: "Luminair LED Tertanam",
+    isNumber: "IS 10322 (Bagian 5/Bagian 2) : 2012",
+    date: "23 Mei 2018",
   },
   {
     id: 34,
-    product: "LED Luminaires for Road and Street lighting",
-    isNumber: "IS 10322 (Part 5/Section 3) : 2012",
-    date: "23 May 2018",
+    product: "Luminair LED untuk Penerangan Jalan dan Jalan",
+    isNumber: "IS 10322 (Bagian 5/Bagian 3) : 2012",
+    date: "23 Mei 2018",
   },
   {
     id: 35,
-    product: "LED Flood Lights",
-    isNumber: "IS 10322 (Part 5/Section 5) : 2013",
-    date: "23 May 2018",
+    product: "Lampu Sorot LED",
+    isNumber: "IS 10322 (Bagian 5/Bagian 5) : 2013",
+    date: "23 Mei 2018",
   },
   {
     id: 36,
-    product: "LED Hand lamps",
-    isNumber: "IS 10322 (Part 5/Section 6) : 2013",
-    date: "23 May 2018",
+    product: "Lampu Tangan LED",
+    isNumber: "IS 10322 (Bagian 5/Bagian 6) : 2013",
+    date: "23 Mei 2018",
   },
   {
     id: 37,
-    product: "LED Lighting Chains",
-    isNumber: "IS 10322 (Part 5/Section 7) : 2017",
-    date: "23 May 2018",
+    product: "Rantai Penerangan LED",
+    isNumber: "IS 10322 (Bagian 5/Bagian 7) : 2017",
+    date: "23 Mei 2018",
   },
   {
     id: 38,
-    product: "LED Luminaires for Emergency Lighting",
-    isNumber: "IS 10322 (Part 5/Section 8) : 2013",
-    date: "23 May 2018",
+    product: "Luminair LED untuk Penerangan Darurat",
+    isNumber: "IS 10322 (Bagian 5/Bagian 8) : 2013",
+    date: "23 Mei 2018",
   },
   {
     id: 39,
-    product: "UPS/Inverters of rating <= 10kVA",
-    isNumber: "IS 16242 (Part 1) : 2014",
-    date: "23 May 2018",
+    product: "UPS/Inverter dengan rating <= 10kVA",
+    isNumber: "IS 16242 (Bagian 1) : 2014",
+    date: "23 Mei 2018",
   },
   {
     id: 40,
-    product: "Plasma/ LCD/LED Television of screen size up-to 32",
+    product: "Televisi Plasma/LCD/LED dengan ukuran layar hingga 32",
     isNumber: "IS 616 : 2017",
-    date: "23 May 2018",
+    date: "23 Mei 2018",
   },
   {
     id: 41,
-    product: "Visual Display Units, Video Monitors of screen size upto 32",
-    isNumber: "IS 13252 (Part 1) : 2010",
-    date: "23 May 2018",
+    product: "Unit Tampilan Visual, Monitor Video dengan ukuran layar hingga 32",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
+    date: "23 Mei 2018",
   },
   {
     id: 42,
-    product: "CCTV Cameras/CCTV Recorders",
-    isNumber:
-      "IS 13252 (Part 1) : 2010, Essential Requirement(s) for Security of CCTV",
-    date: "23 May 2018",
+    product: "Kamera CCTV/Perekam CCTV",
+    isNumber: "IS 13252 (Bagian 1) : 2010, Persyaratan Penting untuk Keamanan CCTV",
+    date: "23 Mei 2018",
   },
   {
     id: 43,
-    product: "Adapters for household and similar electrical appliances",
-    isNumber: "IS 302 (Part 1) : 2008",
-    date: "23 May 2018",
+    product: "Adapter untuk peralatan listrik rumah tangga dan sejenisnya",
+    isNumber: "IS 302 (Bagian 1) : 2008",
+    date: "23 Mei 2018",
   },
   {
     id: 44,
-    product:
-      "USB driven Barcode readers, barcode scanners, Iris scanners, Optical fingerprint scanners",
-    isNumber: "IS 13252 (Part 1) : 2010",
-    date: "23 May 2018",
+    product: "Pembaca barcode USB, pemindai barcode, pemindai iris, pemindai sidik jari optik",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
+    date: "23 Mei 2018",
   },
   {
     id: 45,
-    product: "Smart watches",
-    isNumber: "IS 13252 (Part 1) : 2010",
-    date: "23 May 2018",
+    product: "Jam tangan pintar",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
+    date: "23 Mei 2018",
   },
   {
     id: 46,
-    product:
-      "Crystalline Silicon Terrestrial Photovoltaic (PV) modules (Si wafer based)",
-    isNumber:
-      "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
-    date: "31 March 2019",
+    product: "Modul fotovoltaik terestrial silikon kristal (PV) (berbasis wafer Si)",
+    isNumber: "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Bagian 1) : 2004 & IS/IEC 61730 (Bagian 2) : 2004",
+    date: "31 Maret 2019",
   },
   {
     id: 47,
-    product:
-      "Thin-Film Terrestrial Photovoltaic (PV) Modules (a-Si, CiGs and CdTe)",
-    isNumber:
-      "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
-    date: "31 March 2019",
+    product: "Modul fotovoltaik terestrial film tipis (PV) (a-Si, CiGs dan CdTe)",
+    isNumber: "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Bagian 1) : 2004 & IS/IEC 61730 (Bagian 2) : 2004",
+    date: "31 Maret 2019",
   },
   {
     id: 48,
-    product: "Power converters for use in photovoltaic power system",
-    isNumber: "IS 16221 (Part 2) : 2015 / IEC 62109-2 : 2011",
-    date: "30 June 2021",
+    product: "Konverter daya untuk digunakan dalam sistem tenaga fotovoltaik",
+    isNumber: "IS 16221 (Bagian 2) : 2015 / IEC 62109-2 : 2011",
+    date: "30 Juni 2021",
   },
   {
     id: 49,
-    product: "Utility-Interconnected Photovoltaic inverters",
-    isNumber:
-      "IS 16221 (Part 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
-    date: "30 June 2021",
+    product: "Inverter fotovoltaik yang terhubung ke utilitas",
+    isNumber: "IS 16221 (Bagian 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
+    date: "30 Juni 2021",
   },
   {
     id: 50,
-    product: "Storage battery",
+    product: "Baterai penyimpanan",
     isNumber: "IS 16270 : 2014",
-    date: "01 January 2019",
+    date: "01 Januari 2019",
   },
   {
     id: 51,
-    product: "Independent LED Modules for General Lighting",
-    isNumber: "IS 16103 (Part 1) : 2012",
+    product: "Modul LED independen untuk penerangan umum",
+    isNumber: "IS 16103 (Bagian 1) : 2012",
     date: "01 April 2021",
   },
   {
     id: 52,
-    product: "Lighting Chain (Rope Lights)",
-    isNumber: "IS 10322 (Part 5/Sec 9) : 2017",
+    product: "Rantai penerangan (lampu tali)",
+    isNumber: "IS 10322 (Bagian 5/Sec 9) : 2017",
     date: "01 April 2021",
   },
   {
     id: 53,
     product: "Keyboard",
-    isNumber: "IS 13252 (Part 1) : 2010",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 54,
-    product: "Induction Stove",
+    product: "Kompor induksi",
     isNumber: "IS 302-2-6 : 2009",
     date: "01 April 2021",
   },
   {
     id: 55,
-    product: "Automatic Teller Cash dispensing machines",
-    isNumber: "IS 13252 (Part 1) : 2010",
+    product: "Mesin pengeluaran uang tunai teller otomatis",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 56,
-    product: "USB Type External Hard Disk Drive",
-    isNumber: "IS 13252 (Part 1) : 2010",
+    product: "Hard disk drive eksternal tipe USB",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 57,
-    product: "Wireless Headphone and Earphone",
+    product: "Headphone dan earphone nirkabel",
     isNumber: "IS 616 : 2017",
     date: "01 April 2021",
   },
   {
     id: 58,
-    product:
-      "USB Type External Solid-State Storage Devices (above 256 GB capacity)",
-    isNumber: "IS 13252 (Part 1) : 2010",
+    product: "Perangkat penyimpanan solid-state eksternal tipe USB (kapasitas di atas 256 GB)",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 59,
-    product: "Electronic Musical System with input power below 200 Watts",
+    product: "Sistem musik elektronik dengan daya input di bawah 200 Watt",
     isNumber: "IS 616 : 2017",
     date: "01 April 2021",
   },
   {
     id: 60,
-    product:
-      "Standalone Switch Mode Power Supplies (SMPS) with output voltage 48V (max)",
-    isNumber: "IS 13252 (Part 1) : 2010",
+    product: "Catuan daya mode sakelar mandiri (SMPS) dengan tegangan keluaran 48V (maks)",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 61,
-    product: "Television other than Plasma/ LCD/LED TVs",
+    product: "Televisi selain TV Plasma/LCD/LED",
     isNumber: "IS 616 : 2017",
     date: "01 April 2021",
   },
   {
     id: 62,
-    product: "Rice Cooker",
+    product: "Penanak nasi",
     isNumber: "IS 302-2-15 : 2009",
     date: "01 April 2021",
   },
   {
     id: 63,
-    product: "Wireless Microphone",
+    product: "Mikrofon nirkabel",
     isNumber: "IS 616 : 2017",
-    date: "01 October 2021",
+    date: "01 Oktober 2021",
   },
   {
     id: 64,
-    product: "Digital Camera",
-    isNumber: "IS 13252 (Part 1) : 2010",
-    date: "01 October 2021",
+    product: "Kamera digital",
+    isNumber: "IS 13252 (Bagian 1) : 2010",
+    date: "01 Oktober 2021",
   },
   {
     id: 65,
-    product: "Video Camera",
+    product: "Kamera video",
     isNumber: "IS 616 : 2017",
-    date: "01 October 2021",
+    date: "01 Oktober 2021",
   },
   {
     id: 66,
-    product: "Webcam (Finished Product)",
+    product: "Webcam (produk jadi)",
     isNumber: "IS 616 : 2017",
-    date: "01 October 2021",
+    date: "01 Oktober 2021",
   },
   {
     id: 67,
-    product: "Smart Speakers (with and without Display)",
+    product: "Speaker pintar (dengan dan tanpa layar)",
     isNumber: "IS 616 : 2017",
-    date: "01 October 2021",
+    date: "01 Oktober 2021",
   },
   {
     id: 68,
-    product: "Dimmers for LED products",
+    product: "Dimmer untuk produk LED",
     isNumber: "IS 60669-2-1: 2008",
-    date: "01 October 2021",
+    date: "01 Oktober 2021",
   },
   {
     id: 69,
-    product: "Bluetooth Speakers",
+    product: "Speaker Bluetooth",
     isNumber: "IS 616 : 2017",
-    date: "01 October 2021",
+    date: "01 Oktober 2021",
   },
   {
     id: 70,
-    product: "Ortho Phosphoric Acid",
+    product: "Asam ortofosfat",
     isNumber: "IS 798 : 2020",
-    date: "12 December 2021",
+    date: "12 Desember 2021",
   },
   {
     id: 71,
-    product: "Polyphosphoric Acid",
+    product: "Asam polifosfat",
     isNumber: "IS 17439:2020",
-    date: "24 December 2021",
+    date: "24 Desember 2021",
   },
   {
     id: 72,
-    product: "Cotton Bales",
+    product: "Bale kapas",
     isNumber: "IS 12171:2019",
-    date: "03 March 2023",
+    date: "03 Maret 2023",
   },
   {
     id: 73,
-    product: "Trimethyl Phosphite Technical Grade",
+    product: "Trimetil fosfit kelas teknis",
     isNumber: "IS 17412:2020",
-    date: "03 March 2023",
+    date: "03 Maret 2023",
   },
   {
     id: 74,
-    product: "Television Sets",
+    product: "Set televisi",
     isNumber: "IS 18112:2022",
     date: "26 April 2023",
   },
@@ -2127,115 +2114,108 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
     <div id="registration" className="flex flex-col scroll-mt-20">
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Registration Process</span>
+        <span className="service-left-content-index-heading">Proses Pendaftaran</span>
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">BIS CRS Registration Process</h2>
+      <h2 className="service-left-content-heading-two">Proses Pendaftaran BIS CRS</h2>
 
       <p className="service-left-content-paragraph">
-        BIS CRS Registration is a totally online process through the BIS
-        Registration Portal. It does not solely procedures that include the
-        uploading of documents. It also requires special attention of a
-        technical nature, the understanding of the regulations, as well as total
-        compliance with the Indian Standard (IS).
+        Pendaftaran BIS CRS adalah proses yang sepenuhnya online melalui Portal Pendaftaran BIS. Ini tidak hanya mencakup prosedur yang meliputi pengunggahan dokumen. Ini juga memerlukan perhatian khusus dari segi teknis, pemahaman peraturan, serta kepatuhan total terhadap Standar India (IS).
       </p>
 
       <p className="service-left-content-paragraph">
-        BIS CRS Process, We&apos;re calling it Certification and Registration
-        System (CRS) for now, and here&apos;s how the journey for BIS
-        Certification unfolds.
+        Proses BIS CRS, kami menyebutnya Sistem Sertifikasi dan Pendaftaran (CRS) untuk saat ini, dan berikut adalah bagaimana perjalanan untuk Sertifikasi BIS berlangsung.
       </p>
 
       <div className="service-left-content-heading-three">
-        Step 1: Product Testing at BIS Authorized Lab
+        Langkah 1: Pengujian Produk di Laboratorium yang Diberikan BIS
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "Select a lab from the BIS approved list",
-          "Submit a sample of the product for which the testing is to be performed for relevant IS",
-          "Obtain the test report for the sample as per BIS test report format",
+          "Pilih laboratorium dari daftar yang disetujui BIS",
+          "Kirimkan sampel produk yang akan diuji untuk IS yang relevan",
+          "Dapatkan laporan pengujian untuk sampel sesuai format laporan pengujian BIS",
         ]}
       />
 
-      <div className="service-left-content-heading-three">Step 2: Document Preparation</div>
+      <div className="service-left-content-heading-three">Langkah 2: Persiapan Dokumen</div>
 
       <PointsListWithoutHeading
         points={[
-          "Collect the requisite documents, as already outlined",
-          "Make sure the documents are properly named, formatted, signed and dated",
-          "Develop a product label which is a mock sticker that contains a space for a BIS logo and space for IS standard",
-        ]}
-      />
-
-      <div className="service-left-content-heading-three">
-        Step 3: Filling the Online Application
-      </div>
-
-      <PointsListWithoutHeading
-        points={[
-          "Go to the BIS CRS Portal (https://www.bis.org.in/) and login or register",
-          "Complete the product, model number, brand, and manufacturing unit of the AIR, if necessary",
-          "Follow the steps for the payment of the Government fee",
+          "Kumpulkan dokumen yang diperlukan, seperti yang telah diuraikan",
+          "Pastikan dokumen diberi nama, diformat, ditandatangani dan diberi tanggal dengan benar",
+          "Buat label produk yang merupakan stiker tiruan yang berisi ruang untuk logo BIS dan ruang untuk standar IS",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        Step 4: BIS&apos;s Review of the Application
+        Langkah 3: Mengisi Aplikasi Online
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "BIS checks the supporting documents and lab reports",
-          "If needed, a clarification is raised through the portal",
-          "Respond with the right documents or logical explanations",
+          "Kunjungi Portal BIS CRS (https://www.bis.org.in/) dan masuk atau daftar",
+          "Lengkapi produk, nomor model, merek, dan unit manufaktur AIR, jika perlu",
+          "Ikuti langkah-langkah untuk pembayaran biaya Pemerintah",
+        ]}
+      />
+
+      <div className="service-left-content-heading-three">
+        Langkah 4: Tinjauan BIS terhadap Aplikasi
+      </div>
+
+      <PointsListWithoutHeading
+        points={[
+          "BIS memeriksa dokumen pendukung dan laporan laboratorium",
+          "Jika diperlukan, klarifikasi diajukan melalui portal",
+          "Tanggapi dengan dokumen yang benar atau penjelasan logis",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        If it is a clarification query, it must be answered within 30 days, or
-        the application goes to archive files, which means rejected.
+        Jika ini adalah kueri klarifikasi, harus dijawab dalam 30 hari, atau aplikasi akan masuk ke arsip, yang berarti ditolak.
       </p>
 
-      <div className="service-left-content-heading-three">Step 5: Grant of BIS Registration</div>
+      <div className="service-left-content-heading-three">Langkah 5: Pemberian Pendaftaran BIS</div>
 
       <PointsListWithoutHeading
         points={[
-          "BIS Certificate will be issued if BIS officials are satisfied with the results of the assessments they conducted",
+          "Sertifikat BIS akan diterbitkan jika pejabat BIS puas dengan hasil penilaian yang mereka lakukan",
         ]}
       />
 
-      <p className="service-left-content-paragraph">Your certificate will include:</p>
+      <p className="service-left-content-paragraph">Sertifikat Anda akan mencakup:</p>
 
       <PointsListWithoutHeading
         points={[
-          "BIS registration number",
-          "Brand name",
-          "Model of the product",
-          "IS Standard Code",
+          "Nomor pendaftaran BIS",
+          "Nama merek",
+          "Model produk",
+          "Kode Standar IS",
         ]}
       />
 
       <PointsListWithoutHeading
         points={[
-          "Your product label must contain or have e-labelling of the  certificate&apos;s details.",
+          "Label produk Anda harus berisi atau memiliki e-labelling dari detail sertifikat.",
         ]}
       />
 
-      <div className="service-left-content-heading-three">Step 6: Labeling and Distribution</div>
+      <div className="service-left-content-heading-three">Langkah 6: Pelabelan dan Distribusi</div>
 
       <PointsListWithoutHeading
         points={[
-          "BIS certified products must carry:",
-          "BIS CRS logo  ",
-          "IS code that relates to the product",
-          "BIS registration number",
-          "The registration number and BIS logo must be printed or digitally embedded according to the BIS regulations.",
+          "Produk bersertifikat BIS harus membawa:",
+          "Logo BIS CRS",
+          "Kode IS yang terkait dengan produk",
+          "Nomor pendaftaran BIS",
+          "Nomor pendaftaran dan logo BIS harus dicetak atau disematkan secara digital sesuai dengan peraturan BIS.",
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">Approximate Timeline</h3>
+      <h3 className="service-left-content-heading-three">Perkiraan Waktu</h3>
 
       {/* Timeline Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2244,52 +2224,52 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
-                  Activity
+                  Aktivitas
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Estimated Time
+                  Waktu Perkiraan
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Product Testing
+                  Pengujian Produk
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  7-10 working days
+                  7-10 hari kerja
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Document Collection
+                  Pengumpulan Dokumen
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  2-3 days
+                  2-3 hari
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Application Submission
+                  Pengajuan Aplikasi
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  1 day
+                  1 hari
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  BIS Review + Query Resolution
+                  Tinjauan BIS + Resolusi Kueri
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  10-15 working days
+                  10-15 hari kerja
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Final Certificate Issue
+                  Penerbitan Sertifikat Akhir
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  2-4 working days
+                  2-4 hari kerja
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2297,7 +2277,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
                   TOTAL
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full font-semibold">
-                  ~4 weeks
+                  ~4 minggu
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2313,23 +2293,19 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
     <div id="fees" className="flex flex-col scroll-mt-20">
       {/* Fees */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Registration Fees</span>
+        <span className="service-left-content-index-heading">Biaya Pendaftaran</span>
         <Separator className="service-left-content-separator" />
       </div>
 
       <h2 className="service-left-content-heading-two">
-        BIS CRS Registration Fees, Validity & Renewal Guidelines
+        Biaya Pendaftaran BIS CRS, Validitas & Pedoman Perpanjangan
       </h2>
 
       <p className="service-left-content-paragraph">
-        Getting a BIS certificate under the CRS, the applicant is required to
-        pay the government charges as well as the payment for the product to be
-        tested. Even though the process is online and the interface is
-        streamlined, many applicants face delays on their requests and
-        rejections due to underpayment and applications misfiled.
+        Untuk mendapatkan sertifikat BIS di bawah CRS, pemohon diharuskan membayar biaya pemerintah serta pembayaran untuk produk yang akan diuji. Meskipun prosesnya online dan antarmukanya disederhanakan, banyak pemohon menghadapi penundaan pada permintaan mereka dan penolakan karena pembayaran kurang dan aplikasi yang salah diajukan.
       </p>
 
-      <h3 className="service-left-content-heading-three">Fee Structure for CRS Registration</h3>
+      <h3 className="service-left-content-heading-three">Struktur Biaya untuk Pendaftaran CRS</h3>
 
       {/* Fee Structure Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2338,44 +2314,44 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
-                  Fee Type
+                  Jenis Biaya
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Amount
+                  Jumlah
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Government Fee
+                  Biaya Pemerintah
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹53,000 + 18% GST per test report
+                  ₹53.000 + 18% PPN per laporan pengujian
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Testing Charges
+                  Biaya Pengujian
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹10,000 – ₹20,000 + 18% GST (varies by product/lab)
+                  ₹10.000 – ₹20.000 + 18% PPN (bervariasi berdasarkan produk/lab)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Additional Report in Same App
+                  Laporan Tambahan dalam Aplikasi yang Sama
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹20,000 + 18% GST per report
+                  ₹20.000 + 18% PPN per laporan
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Renewal Fee
+                  Biaya Perpanjangan
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹53,000 + 18% GST
+                  ₹53.000 + 18% PPN
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2385,12 +2361,11 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
 
       <p className="service-left-content-paragraph italic text-center">
         <em>
-          Prices subject to update — confirm on the BIS portal or with your
-          consultant.
+          Harga dapat berubah — konfirmasi di portal BIS atau dengan konsultan Anda.
         </em>
       </p>
 
-      <h3 className="service-left-content-heading-three">CRS Certificate Validity & Renewal</h3>
+      <h3 className="service-left-content-heading-three">Validitas & Perpanjangan Sertifikat CRS</h3>
 
       {/* Certificate Validity & Renewal Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2402,41 +2377,41 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
                   Parameter
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Details
+                  Detail
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Initial Validity
+                  Validitas Awal
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  2 Years
+                  2 Tahun
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Renewal Duration
+                  Durasi Perpanjangan
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Upto 5 Years (if no product changes)
+                  Hingga 5 Tahun (jika tidak ada perubahan produk)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Renewal Process
+                  Proses Perpanjangan
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Online, based on new affidavit + renewal fee
+                  Online, berdasarkan afidavit baru + biaya perpanjangan
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Re-testing Required?
+                  Pengujian Ulang Diperlukan?
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Not unless product specs/IS standard changes
+                  Tidak kecuali spesifikasi produk/standar IS berubah
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2457,26 +2432,21 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
       </div>
 
       <div className="service-left-content-heading-two">
-        E-Labelling Guidelines for CRS Certified Products
+        Pedoman E-Labelling untuk Produk Bersertifikat CRS
       </div>
 
-      <div className="service-left-content-heading-three">What is E-Labelling?</div>
+      <div className="service-left-content-heading-three">Apa itu E-Labelling?</div>
 
       <p className="service-left-content-paragraph">
-        E-labelling is the practice of showing regulatory information within a
-        device electronically instead of printing and affixing it to the device.
-        Under the Compulsory Registration Scheme (CRS) of BIS, specified
-        products, especially compact or digital devices, are able to display the
-        BIS certificate details, standard mark and IS code through the software
-        interface or digital packaging.
+        E-labelling adalah praktik menampilkan informasi regulasi dalam perangkat secara elektronik alih-alih mencetak dan menempelkannya pada perangkat. Di bawah Skema Pendaftaran Wajib (CRS) BIS, produk tertentu, terutama perangkat kompak atau digital, dapat menampilkan detail sertifikat BIS, tanda standar dan kode IS melalui antarmuka perangkat lunak atau kemasan digital.
       </p>
 
       <div className="service-left-content-heading-three">
-        BIS Guidelines on E-Labelling: Electronic E-Labelling (BIS CMD
-        3/8:1/6975. dated 03/12/2015)
+        Pedoman BIS tentang E-Labelling: E-Labelling Elektronik (BIS CMD
+        3/8:1/6975. tanggal 03/12/2015)
       </div>
 
-      <h3 className="service-left-content-heading-three">Requirements for E-Labelling:</h3>
+      <h3 className="service-left-content-heading-three">Persyaratan untuk E-Labelling:</h3>
 
       {/* E-Labelling Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2485,66 +2455,60 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
-                  Rule
+                  Aturan
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Description
+                  Deskripsi
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Physical Label on Packaging
+                  Label Fisik pada Kemasan
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Product box or external packaging must display the BIS CRS
-                  logo and registration details.
+                  Kotak produk atau kemasan eksternal harus menampilkan logo BIS CRS dan detail pendaftaran.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Removable Labels for Bulk Packaging
+                  Label Lepas untuk Kemasan Massal
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  If products are shipped in bulk, a removable adhesive label on
-                  the outer package is acceptable.
+                  Jika produk dikirim dalam jumlah besar, label perekat yang dapat dilepas pada kemasan luar dapat diterima.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  No Tools Needed for Access
+                  Tidak Perlu Alat untuk Akses
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Users must be able to access the e-label info without needing
-                  tools or accessories (e.g., SIM card removal not allowed).
+                  Pengguna harus dapat mengakses info e-label tanpa memerlukan alat atau aksesori (misalnya, pengangkatan kartu SIM tidak diizinkan).
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Secure Programming
+                  Pemrograman Aman
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  E-label info must be embedded in firmware/software, locked
-                  from modification by any third party.
+                  Info e-label harus tertanam dalam firmware/perangkat lunak, terkunci dari modifikasi oleh pihak ketiga mana pun.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Menu-Based Access
+                  Akses Berbasis Menu
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Users must access the info in no more than 4 steps through the
-                  device&apos;s menu interface.
+                  Pengguna harus mengakses info dalam tidak lebih dari 4 langkah melalui antarmuka menu perangkat.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Instructions Required
+                  Instruksi Diperlukan
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Instructions on how to access e-label details must be
-                  provided.
+                  Instruksi tentang cara mengakses detail e-label harus disediakan.
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2553,22 +2517,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        How Sun Certifications India Can Help You with BIS Registration under
-        CRS Scheme
+        Bagaimana Sun Certifications India Dapat Membantu Anda dengan Pendaftaran BIS di bawah Skema CRS
       </p>
 
-      <div className="service-left-content-heading-three">Why Choose a BIS Consultant?</div>
+      <div className="service-left-content-heading-three">Mengapa Memilih Konsultan BIS?</div>
 
       <p className="service-left-content-paragraph">
-        The entire BIS CRS registration is very technical and exhaustive with
-        regard to rules and the volume of documentation. In the absence of a
-        thorough understanding of the Indian Standards, recent QCOs, the
-        structure of the test report, and the workflows in the portal interface,
-        applicants stand to lose substantially in terms of the subsequent
-        actions of delays, rejection, or long-standing active non-compliance.
-        This is where Sun Certifications India comes in with a reputable and
-        reliable associate to assist the applicant in every detail of the
-        compulsory certification scheme.
+        Seluruh pendaftaran BIS CRS sangat teknis dan melelahkan dalam hal aturan dan volume dokumentasi. Tanpa pemahaman menyeluruh tentang Standar India, QCO terbaru, struktur laporan pengujian, dan alur kerja dalam antarmuka portal, pemohon berisiko kehilangan secara substansial dalam hal tindakan selanjutnya berupa penundaan, penolakan, atau ketidakpatuhan aktif jangka panjang. Di sinilah Sun Certifications India hadir dengan mitra yang terpercaya dan andal untuk membantu pemohon dalam setiap detail skema sertifikasi wajib.
       </p>
     </div>
   );
