@@ -160,7 +160,7 @@ const FooterJapanese = () => {
 
                                 <div className="flex flex-col transition-colors gap-[10px]">
                                     <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                                        ITL Twin Tower, Netaji Subhash Place , Pitampura Delhi - 110034
+                                        ITLツインタワー、ネタジ・スバッシュ・プレイス、ピタンプラ、デリー - 110034
                                     </span>
                                 </div>
                             </div>
@@ -175,38 +175,38 @@ const FooterJapanese = () => {
                                         to="/information-about-tec-certificate-mtcte"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        TEC
+                                        TEC認証
                                     </Link>
                                     <Link
                                         to="/a-guide-to-bis-certification-indian-bis"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        ISI MARK
+                                        ISIマーク
                                     </Link>
                                     <Link
                                         to="/ce-certification"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        CE CERTIFICATION
+                                        CE認証
                                     </Link>
                                     <Link
                                         to="/a-guide-on-how-to-obtain-epr-certificate"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        EPR
+                                        EPR認証
                                     </Link>
                                     <Link
                                         to="/restriction-of-hazardous-substance-rohs-certificate"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        ROHS
+                                        RoHS認証
                                     </Link>
 
                                     <Link
                                         to="/information-about-wpc-certificate-eta-approval"
                                         className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                                     >
-                                        WPC
+                                        WPC認証
                                     </Link>
                                 </div>
                             </div>
