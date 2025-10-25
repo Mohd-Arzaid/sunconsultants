@@ -27,7 +27,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/components/ui/accordion"; 
 // Contact Form Import
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
