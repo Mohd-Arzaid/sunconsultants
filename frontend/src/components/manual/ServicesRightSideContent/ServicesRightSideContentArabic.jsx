@@ -556,19 +556,14 @@ const ContactFormServicesRightSideContentArabic = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "تسجيل CRS";
-    if (path.includes("/shahadat-bis-fi-al-imarat"))
-      return "UAE Blog (Arabic)";
-    if (path.includes("/shahadat-bis-fi-qatar"))
-      return "Qatar Blog (Arabic)";
+      return "CRS Registration (Arabic)";
+    if (path.includes("/shahadat-bis-fi-al-imarat")) return "UAE Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-qatar")) return "Qatar Blog (Arabic)";
     if (path.includes("/shahadat-bis-fi-al-bahrain"))
       return "Bahrain Blog (Arabic)";
-    if (path.includes("/shahadat-bis-fi-dubai"))
-      return "Dubai Blog (Arabic)";
-    if (path.includes("/shahadat-bis-fi-iran"))
-      return "Iran Blog (Arabic)";
-    if (path.includes("/shahadat-bis-fi-al-iraq"))
-      return "Iraq Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-dubai")) return "Dubai Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-iran")) return "Iran Blog (Arabic)";
+    if (path.includes("/shahadat-bis-fi-al-iraq")) return "Iraq Blog (Arabic)";
   };
 
   const [formData, setFormData] = useState({

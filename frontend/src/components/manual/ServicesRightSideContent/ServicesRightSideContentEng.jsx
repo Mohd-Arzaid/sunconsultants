@@ -32,6 +32,15 @@ const ServicesRightSideContentEng = () => {
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
     "/ja/crs-bis-toha-nani-ka-crs-toroku",
+    "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
+    "/ko/crs-bis-i-mueos-inga-crs-deunglog",
+    "/id/apa-itu-crs-bis-atau-registrasi-crs",
+    "/es/que-es-crs-bis-o-registro-crs",
+    "/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs",
+    "/it/cose-il-crs-bis-o-registrazione-crs",
+    "/nl/wat-is-crs-bis-of-crs-registratie",
+    "/de/was-ist-crs-bis-oder-crs-registrierung",
+    "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
     "/indian-bis-certification-under-scheme-x",
     "/Blogs",
     "/bis-certificate-for-tin-ingots",
@@ -583,6 +592,24 @@ const ContactFormServicesRightSideContentEng = () => {
       return "CRS Registration";
     if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
       return "CRS Registration Japanese";
+    if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
+      return "CRS Registration Thai";
+    if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
+      return "CRS Registration Korean";
+    if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
+      return "CRS Registration Indonesian";
+    if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
+      return "CRS Registration Spanish";
+    if (path.includes("/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"))
+      return "CRS Registration French";
+    if (path.includes("/it/cose-il-crs-bis-o-registrazione-crs"))
+      return "CRS Registration Italian";
+    if (path.includes("/nl/wat-is-crs-bis-of-crs-registratie"))
+      return "CRS Registration Dutch";
+    if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
+      return "CRS Registration German";
+    if (path.includes("/vi/crs-bis-la-gi-hoac-dang-ky-crs"))
+      return "CRS Registration Vietnamese";
     if (path.includes("/indian-bis-certification-under-scheme-x"))
       return "Scheme X";
     if (path.includes("/Blogs")) return "Latest Blogs";

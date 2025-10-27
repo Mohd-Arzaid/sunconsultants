@@ -555,11 +555,11 @@ const ContactFormServicesRightSideContentThai = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "การลงทะเบียน CRS";
+      return "CRS Registration (Thai)";
     if (path.includes("/kan-rap-rong-bis-nai-prathet-thai"))
       return "Thailand Blog (Thai)";
     if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
-      return "การลงทะเบียน CRS (Thai)";
+      return "CRS Registration (Thai)";
   };
 
   const [formData, setFormData] = useState({

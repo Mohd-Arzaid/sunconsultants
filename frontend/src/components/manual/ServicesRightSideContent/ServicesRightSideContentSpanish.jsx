@@ -556,11 +556,11 @@ const ContactFormServicesRightSideContentSpanish = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "Registro CRS";
+      return "CRS Registration (Spanish)";
     if (path.includes("/certificacion-bis-en-espana"))
       return "Spain Blog (Spanish)";
     if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
-      return "Registro CRS (Spanish)";
+      return "CRS Registration (Spanish)";
   };
 
   const [formData, setFormData] = useState({
