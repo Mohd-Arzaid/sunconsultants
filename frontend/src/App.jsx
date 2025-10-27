@@ -37,6 +37,9 @@ import CRSRegistrationKorean from "./pages/CRSRegistration/CRSRegistrationKorean
 import CRSRegistrationIndonesian from "./pages/CRSRegistration/CRSRegistrationIndonesian";
 import CRSRegistrationSpanish from "./pages/CRSRegistration/CRSRegistrationSpanish";
 import CRSRegistrationFrench from "./pages/CRSRegistration/CRSRegistrationFrench";
+import CRSRegistrationItalian from "./pages/CRSRegistration/CRSRegistrationItalian";
+import CRSRegistrationDutch from "./pages/CRSRegistration/CRSRegistrationDutch";
+import CRSRegistrationGerman from "./pages/CRSRegistration/CRSRegistrationGerman";
 import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
 import WPC from "./pages/WPC";
@@ -417,6 +420,24 @@ function App() {
           <Route
             path="/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"
             element={<CRSRegistrationFrench />}
+          />
+
+          {/* Italian */}
+          <Route
+            path="/it/cose-il-crs-bis-o-registrazione-crs"
+            element={<CRSRegistrationItalian />}
+          />
+
+          {/* Dutch */}
+          <Route
+            path="/nl/wat-is-crs-bis-of-crs-registratie"
+            element={<CRSRegistrationDutch />}
+          />
+
+          {/* German */}
+          <Route
+            path="/de/was-ist-crs-bis-oder-crs-registrierung"
+            element={<CRSRegistrationGerman />}
           />
 
           <Route
