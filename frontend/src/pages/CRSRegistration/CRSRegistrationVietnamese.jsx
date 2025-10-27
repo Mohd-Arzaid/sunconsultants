@@ -11,13 +11,13 @@ import { Check, Search, SlashIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect, useMemo } from "react";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
+import ServicesRightSideContentVietnamese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentVietnamese";
 import { Separator } from "@/components/ui/separator";
 import {
   Table,
   TableBody,
   TableCell,
-  TableHeader,
+  TableHeader,  
   TableRow,
   TableHead,
 } from "@/components/ui/table";
@@ -27,7 +27,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"; 
+} from "@/components/ui/accordion";
 // Contact Form Import
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -42,13 +42,13 @@ import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
 import LMPC from "../../assets/images/LMPC.jpg";
 import ISIMark from "../../assets/images/ISIMark.jpg";
 import { BoxReveal } from "@/components/magicui/box-reveal";
-import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
-import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
+import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
+import ServiceAuthorVietnamese from "@/components/manual/ServiceAuthor/ServiceAuthorVietnamese";
 
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
-const CRSRegistrationIndonesian = () => {
+const CRSRegistrationVietnamese = () => {
   return (
     <div className="relative">
       {/* CRS Registration Meta Tags */}
@@ -62,14 +62,14 @@ const CRSRegistrationIndonesian = () => {
       {/* CRS Registration Main Content Section */}
       <CRSRegistrationMainContent />
       {/* Footer Section */}
-      <FooterIndonesian />
+      <FooterVietnamese />
       {/* Scroll To Top Button Section */}
       <ScrollToTopButton />
     </div>
   );
 };
 
-export default CRSRegistrationIndonesian;
+export default CRSRegistrationVietnamese;
 
 
 const CRSRegistrationMetaTags = () => {
@@ -80,13 +80,13 @@ const CRSRegistrationMetaTags = () => {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Beranda",
+        name: "Startseite",
         item: window.location.origin + "/",
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "Pendaftaran BIS CRS",
+        name: "BIS CRS Registrierung",
         item: window.location.href,
       },
     ],
@@ -95,14 +95,14 @@ const CRSRegistrationMetaTags = () => {
   return (
     <Helmet>
       {/* Basic Meta Tags */}
-      <title>Pendaftaran BIS - Skema Pendaftaran Wajib (CRS)</title>
+      <title>BIS Registrierung - Pflichtregistrierungsschema (CRS)</title>
       <meta
         name="description"
-        content="Pendaftaran BIS adalah mendapatkan lisensi dari BIS untuk Produk Elektronik dan IT yang sesuai dengan Standar India yang berlaku di bawah skema CRS."
+        content="Die BIS-Registrierung ist der Erwerb einer Lizenz vom BIS für elektronische und IT-Produkte, die den anwendbaren indischen Standards unter dem CRS-Schema entsprechen."
       />
       <meta
         name="keywords"
-        content="Sertifikat BIS, Proses Pendaftaran BIS, Pendaftaran BIS, Proses pendaftaran online BIS, Sertifikasi BIS untuk produk elektronik, Proses pendaftaran BIS di India, Pendaftaran BIS untuk Produk Elektronik, Skema pendaftaran wajib"
+        content="BIS Zertifikat, BIS Registrierungsprozess, BIS Registrierung, BIS Online-Registrierungsprozess, BIS Zertifizierung für elektronische Produkte, BIS Registrierungsprozess in Indien, BIS Registrierung für elektronische Produkte, Pflichtregistrierungsschema"
       />
       <meta name="author" content="Dhruv Aggarwal" />
       <meta name="publisher" content="Sun Certifications India" />
@@ -114,11 +114,11 @@ const CRSRegistrationMetaTags = () => {
       {/* Open Graph Meta Tags */}
       <meta
         property="og:title"
-        content="Pendaftaran BIS - Skema Pendaftaran Wajib (CRS)"
+        content="BIS Registrierung - Pflichtregistrierungsschema (CRS)"
       />
       <meta
         property="og:description"
-        content="Pendaftaran BIS adalah mendapatkan lisensi dari BIS untuk Produk Elektronik dan IT yang sesuai dengan Standar India yang berlaku di bawah skema CRS."
+        content="Die BIS-Registrierung ist der Erwerb einer Lizenz vom BIS für elektronische und IT-Produkte, die den anwendbaren indischen Standards unter dem CRS-Schema entsprechen."
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={window.location.href} />
@@ -126,11 +126,11 @@ const CRSRegistrationMetaTags = () => {
       {/* Twitter Meta Tags */}
       <meta
         name="twitter:title"
-        content="Pendaftaran BIS - Skema Pendaftaran Wajib (CRS)"
+        content="BIS Registrierung - Pflichtregistrierungsschema (CRS)"
       />
       <meta
         name="twitter:description"
-        content="Pendaftaran BIS adalah mendapatkan lisensi dari BIS untuk Produk Elektronik dan IT yang sesuai dengan Standar India yang berlaku di bawah skema CRS."
+        content="Die BIS-Registrierung ist der Erwerb einer Lizenz vom BIS für elektronische und IT-Produkte, die den anwendbaren indischen Standards unter dem CRS-Schema entsprechen."
       />
       <meta name="twitter:card" content="summary_large_image" />
 
@@ -151,14 +151,14 @@ const CRSRegistrationBreadcrumb = () => {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <Link to="/">Beranda</Link>
+                  <Link to="/">Home</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator>
                 <SlashIcon />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbPage>Pendaftaran BIS CRS</BreadcrumbPage>
+                  <BreadcrumbPage>BIS CRS Registrierung</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -186,19 +186,20 @@ const CRSRegistrationHero = () => {
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
-              Keahlian Bersertifikat
+              Zertifizierte Expertise
             </span>
           </div>
 
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              Pendaftaran BIS CRS
+              BIS CRS Registrierung
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Wajib untuk produk elektronik untuk memastikan keselamatan & kualitas. Dapatkan persetujuan BIS dengan bantuan ahli!
+            Pflicht für elektronische Produkte zur Gewährleistung von Sicherheit und Qualität. 
+            Erhalten Sie die BIS-Genehmigung mit fachkundiger Unterstützung!
           </p>
 
           <div className="flex items-center -mt-2">
@@ -218,7 +219,7 @@ const CRSRegistrationHero = () => {
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
-                Lihat Layanan
+                Dienstleistungen anzeigen
               </span>
             </div>
           </div>
@@ -240,7 +241,7 @@ const CRSRegistrationHeroContactForm = () => {
 
     // Service pages
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "CRS Registration";
+      return "CRS Registrierung";
   };
 
   const [formData, setFormData] = useState({
@@ -275,8 +276,8 @@ const CRSRegistrationHeroContactForm = () => {
     if (!nameRegex.test(fullName)) {
       toast({
         variant: "destructive",
-        title: "Silakan masukkan nama lengkap yang valid.",
-        description: "Nama hanya boleh berisi huruf dan spasi.",
+        title: "Bitte geben Sie einen gültigen vollständigen Namen ein.",
+        description: "Der Name sollte nur Buchstaben und Leerzeichen enthalten.",
       });
       setLoading(false);
       return;
@@ -288,8 +289,8 @@ const CRSRegistrationHeroContactForm = () => {
     if (!emailRegex.test(email)) {
       toast({
         variant: "destructive",
-        title: "Silakan masukkan alamat email yang valid.",
-        description: "Periksa apakah format email Anda benar",
+        title: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        description: "Überprüfen Sie, ob Ihr E-Mail-Format korrekt ist",
       });
       setLoading(false);
       return;
@@ -300,8 +301,8 @@ const CRSRegistrationHeroContactForm = () => {
     if (!phoneRegex.test(phoneNumber)) {
       toast({
         variant: "destructive",
-        title: "Silakan masukkan nomor telepon yang valid",
-        description: "Nomor telepon harus berisi (8-15 digit)",
+        title: "Bitte geben Sie eine gültige Telefonnummer ein",
+        description: "Die Telefonnummer muss (8-15 Ziffern) enthalten",
       });
       setLoading(false);
       return;
@@ -318,9 +319,9 @@ const CRSRegistrationHeroContactForm = () => {
         throw new Error(response.data.message);
       }
       toast({
-        title: "Formulir kontak berhasil dikirim!",
+        title: "Kontaktformular erfolgreich übermittelt!",
         description:
-          "Terima kasih telah menghubungi kami. Tim kami akan segera menghubungi Anda.",
+          "Vielen Dank für Ihre Kontaktaufnahme. Unser Team wird sich in Kürze bei Ihnen melden.",
       });
 
       setFormData({
@@ -338,9 +339,9 @@ const CRSRegistrationHeroContactForm = () => {
         error.response?.data?.message || "Something went wrong";
       toast({
         variant: "destructive",
-        title: errorMessage || "Gagal mengirimkan detail formulir kontak!",
+        title: errorMessage || "Fehler beim Übermitteln der Kontaktformulardaten!",
         description:
-          "Ada yang salah. Silakan periksa detail Anda dan coba lagi.",
+          "Etwas ist schief gelaufen. Bitte überprüfen Sie Ihre Angaben und versuchen Sie es erneut.",
       });
     } finally {
       setLoading(false);
@@ -351,18 +352,18 @@ const CRSRegistrationHeroContactForm = () => {
     <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-poppins font-semibold text-[18px] md:text-[20px] text-[#008080]">
-          Hubungi Kami
+          Kontaktieren Sie uns
         </span>
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
       <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
-        Pesan Janji Temu
+        Einen Termin buchen
       </h3>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
-        Ingin menghubungi tim kami dan menjadwalkan panggilan?
-        <span className="text-black"> Coba Sekarang</span>
+        Möchten Sie unser Team kontaktieren und einen Anruf planen?
+        <span className="text-black"> Jetzt versuchen</span>
       </p>
 
       <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
@@ -374,7 +375,7 @@ const CRSRegistrationHeroContactForm = () => {
             name="fullName"
             value={fullName}
             onChange={handleOnChange}
-            placeholder="Nama Lengkap *"
+            placeholder="Vollständiger Name *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -385,7 +386,7 @@ const CRSRegistrationHeroContactForm = () => {
             name="email"
             value={email}
             onChange={handleOnChange}
-            placeholder="Alamat Email *"
+            placeholder="E-Mail-Adresse *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -398,7 +399,7 @@ const CRSRegistrationHeroContactForm = () => {
             name="phoneNumber"
             value={phoneNumber}
             onChange={handleOnChange}
-            placeholder="Nomor Kontak *"
+            placeholder="Kontaktnummer *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -409,7 +410,7 @@ const CRSRegistrationHeroContactForm = () => {
             name="companyName"
             value={companyName}
             onChange={handleOnChange}
-            placeholder="Nama Perusahaan *"
+            placeholder="Firmenname *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -422,7 +423,7 @@ const CRSRegistrationHeroContactForm = () => {
             name="productName"
             value={productName}
             onChange={handleOnChange}
-            placeholder="Nama Produk *"
+            placeholder="Produktname *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -433,7 +434,7 @@ const CRSRegistrationHeroContactForm = () => {
             name="message"
             value={message}
             onChange={handleOnChange}
-            placeholder="Sertifikasi yang Diperlukan*"
+            placeholder="Erforderliche Zertifizierung*"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -446,11 +447,11 @@ const CRSRegistrationHeroContactForm = () => {
           {loading ? (
             <div className="flex gap-3 items-center justify-center">
               <ClockLoader size={22} color="#fff" />
-              <span>Mengirim</span>
+              <span>Wird gesendet</span>
             </div>
           ) : (
             <div className="flex gap-3 items-center justify-center">
-              <span>Pesan Janji Temu</span>
+              <span>Termin buchen</span>
             </div>
           )}
         </Button>
@@ -480,12 +481,12 @@ const CRSRegistrationIndex = () => {
   );
 
   const MENU_ITEMS = {
-    overview: "Ikhtisar",
-    eligibility: "Kelayakan",
-    documents: "Dokumen",
-    registration: "Pendaftaran",
-    fees: "Biaya Pendaftaran",
-    elabelling: "E-Labeling",
+    overview: "Übersicht",
+    eligibility: "Anspruchsberechtigung",
+    documents: "Dokumente",
+    registration: "Registrierung",
+    fees: "Registrierungsgebühren",
+    elabelling: "E-Kennzeichnung",
   };
 
   const handleItemClick = (item) => {
@@ -671,7 +672,7 @@ const CRSRegistrationMainContent = () => {
           {/* Left Side */}
           <CRSRegistrationMainContentLeft />
           {/* Right Side */}
-          <ServicesRightSideContentIndonesian />
+          <ServicesRightSideContentVietnamese />
         </div>
       </div>
       <CRSRegistrationServiceFaq />
@@ -690,7 +691,7 @@ export const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Layanan Kami
+              Unsere Dienstleistungen
             </h2>
           </BoxReveal>
 
@@ -698,7 +699,7 @@ export const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Konsultan Sertifikat Terbaik di India
+                Indiens bester Zertifikatsberater
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -718,7 +719,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Tanda BIS (Lisensi ISI) untuk Produsen Asing
+              BIS Kennzeichen (ISI-Lizenz) für ausländische Hersteller
             </p>
           </Link>
 
@@ -734,7 +735,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Pendaftaran CDSCO
+              CDSCO Registrierungs-Zertifizierung
             </p>
           </Link>
 
@@ -750,7 +751,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Pendaftaran BIS (CRS)
+              BIS (CRS) Registrierung
             </p>
           </Link>
 
@@ -766,7 +767,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Manajemen Limbah Plastik
+              Kunststoffabfall-Management
             </p>
           </Link>
 
@@ -782,7 +783,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat EPR
+              EPR Zertifikats-Zertifizierungen
             </p>
           </Link>
 
@@ -798,7 +799,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat LMPC
+              LMPC Zertifikats-Zertifizierungen
             </p>
           </Link>
 
@@ -814,7 +815,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikat Pendaftaran BIS
+              BIS Registrierungs-Zertifikat
             </p>
           </Link>
 
@@ -830,7 +831,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              TANDA ISI (BIS) untuk Produsen India
+              ISI KENNZEICHEN (BIS) für indische Hersteller
             </p>
           </Link>
         </div>
@@ -846,94 +847,94 @@ const CRSRegistrationServiceFaq = () => {
   const allFaqs = [
     {
       id: "item-1",
-      question: "1. Apa itu pendaftaran BIS?",
+      question: "1. Was ist eine BIS-Registrierung?",
       answer:
-        "Sertifikasi BIS adalah proses kepatuhan yang diatur oleh Biro Standar India, yang memverifikasi bahwa produk memenuhi Standar India (IS) yang berlaku untuk kualitas, keselamatan, dan keandalan.",
+        "Die BIS-Zertifizierung ist ein Compliance-Prozess, der vom Bureau of Indian Standards geregelt wird und verifiziert, dass ein Produkt den anwendbaren indischen Normen (IS) für Qualität, Sicherheit und Zuverlässigkeit entspricht.",
     },
     {
       id: "item-2",
-      question: "2. Apa itu pendaftaran CRS di bawah BIS?",
+      question: "2. Was ist eine CRS-Registrierung unter BIS?",
       answer:
-        "CRS adalah singkatan dari Skema Pendaftaran Wajib. Ini adalah proses pendaftaran wajib untuk kategori produk tertentu seperti elektronik, listrik, baterai, dan item surya. Produk di bawah CRS harus diuji dan terdaftar dengan BIS sebelum dapat dijual di India.",
+        "CRS steht für Compulsory Registration Scheme (Pflichtregistrierungsschema). Es ist ein verpflichtender Registrierungsprozess für spezifische Produktkategorien wie Elektronik, Elektrik, Batterien und Solargüter. Produkte unter CRS müssen getestet und bei BIS registriert werden, bevor sie in Indien verkauft werden können.",
     },
     {
       id: "item-3",
-      question: "3. Apakah sertifikasi BIS wajib di India?",
+      question: "3. Ist BIS-Zertifizierung in Indien verpflichtend?",
       answer:
-        "Ya. Untuk semua produk yang tercantum dalam daftar produk CRS (saat ini 80+ item), pendaftaran BIS wajib untuk memproduksi, mengimpor, atau menjual di India.",
+        "Ja. Für alle Produkte, die unter der CRS-Produktliste aufgeführt sind (derzeit 80+ Artikel), ist die BIS-Registrierung für die Herstellung, den Import oder den Verkauf in Indien verpflichtend.",
     },
     {
       id: "item-4",
-      question: "4. Apa perbedaan antara BIS CRS dan tanda ISI?",
+      question: "4. Was ist der Unterschied zwischen BIS CRS und ISI-Kennzeichen?",
       answer:
-        "BIS CRS: Untuk barang elektronik dan IT, hanya untuk produk wajib yang diberitahukan di bawah QCO. <br />Tanda ISI: Digunakan untuk berbagai produk yang lebih luas, mungkin sukarela atau wajib tergantung pada kategori produk.",
+        "BIS CRS: Für Elektronik- und IT-Güter, nur für obligatorische Produkte, die unter QCO benachrichtigt wurden. <br />ISI-Kennzeichen: Wird für ein breiteres Spektrum von Produkten verwendet und kann je nach Produktkategorie freiwillig oder verpflichtend sein.",
     },
     {
       id: "item-5",
-      question: "5. Siapa yang dapat mengajukan pendaftaran BIS CRS?",
+      question: "5. Wer kann eine BIS CRS-Registrierung beantragen?",
       answer:
-        "Hanya produsen yang dapat mengajukan. Ini termasuk produsen India dan asing. Merek asing harus menunjuk Perwakilan India yang Berwenang (AIR).",
+        "Nur Hersteller können sich bewerben. Dies umfasst sowohl indische als auch ausländische Hersteller. Ausländische Marken müssen einen Autorisierten Indischen Vertreter (AIR) ernennen.",
     },
     {
       id: "item-6",
-      question: "6. Apa peran AIR?",
+      question: "6. Welche Rolle hat ein AIR?",
       answer:
-        "Perwakilan India yang Berwenang (AIR) secara hukum bertanggung jawab untuk mengajukan aplikasi BIS atas nama produsen asing. Mereka bertindak sebagai penghubung resmi antara BIS dan pemohon luar negeri.",
+        "Ein Autorierter Indischer Vertreter (AIR) ist rechtlich verantwortlich für die Einreichung des BIS-Antrags im Namen eines ausländischen Herstellers. Er fungiert als offizieller Verbindungsmann zwischen BIS und dem ausländischen Antragsteller.",
     },
     {
       id: "item-7",
-      question: "7. Berapa lama pendaftaran BIS CRS memakan waktu?",
+      question: "7. Wie lange dauert eine BIS CRS-Registrierung?",
       answer:
-        "Proses biasanya memakan waktu 3–4 minggu, dengan asumsi semua dokumen dan laporan pengujian diajukan dengan benar dan tidak ada keberatan yang diajukan oleh BIS.",
+        "Der Prozess dauert in der Regel 3-4 Wochen, vorausgesetzt, alle Dokumente und Testberichte werden korrekt eingereicht und von BIS keine Einwände erhoben.",
     },
     {
       id: "item-8",
-      question: "8. Berapa biaya sertifikat BIS CRS?",
+      question: "8. Wie viel kostet ein BIS CRS-Zertifikat?",
       answer:
-        "Biaya termasuk: <br />Biaya Pengujian: ₹10.000–₹20.000 + PPN <br />Biaya Pemerintah: ₹53.000 + PPN per laporan pengujian <br />Biaya Tambahan: Afidavit, kurir, dokumentasi AIR, dll. <br />Diskon berlaku untuk produsen terdaftar MSME India",
+        "Die Kosten umfassen: <br />Testgebühren: ₹10.000–₹20.000 + GST <br />Regierungsgebühr: ₹53.000 + GST pro Testbericht <br />Zusätzliche Gebühren: Eidestattliche Erklärung, Kurier, AIR-Dokumentation usw. <br />Rabatt für registrierte indische KMU-Hersteller",
     },
     {
       id: "item-9",
-      question: "9. Berapa lama masa berlaku sertifikat BIS CRS?",
+      question: "9. Wie lange sind BIS CRS-Zertifikate gültig?",
       answer:
-        "Lisensi BIS awal berlaku selama 2 tahun. Dapat diperpanjang hingga 5 tahun jika detail produk dan manufaktur tetap tidak berubah.",
+        "Die anfängliche BIS-Lizenz ist 2 Jahre gültig. Sie kann für bis zu 5 Jahre verlängert werden, wenn die Produkt- und Herstellungsdetails unverändert bleiben.",
     },
     {
       id: "item-10",
-      question: "10. Bisakah sertifikasi BIS diperoleh secara sukarela?",
+      question: "10. Kann die BIS-Zertifizierung freiwillig erworben werden?",
       answer:
-        "Tidak. Di bawah CRS, Anda tidak dapat mengajukan secara sukarela untuk produk yang tidak tercantum di bawah QCO. Sertifikasi sukarela hanya berlaku untuk produk non-CRS melalui skema ISI.",
+        "Nein. Unter CRS können Sie sich nicht freiwillig für Produkte bewerben, die nicht unter QCOs aufgeführt sind. Die freiwillige Zertifizierung gilt nur für Nicht-CRS-Produkte über das ISI-Schema.",
     },
     {
       id: "item-11",
-      question: "11. Di mana saya dapat menemukan daftar produk BIS CRS?",
+      question: "11. Wo finde ich die BIS CRS-Produktliste?",
       answer:
-        'Anda dapat mengunjungi situs web resmi BIS <a href="https://www.crsbis.in/BIS/publicdashAction.do" target="_blank" rel="noopener noreferrer" className="text-[#1A8781] underline">https://www.crsbis.in/BIS/publicdashAction.do</a> dan navigasi ke bagian "Produk di bawah CRS" untuk melihat daftar lengkap produk yang dicakup.',
+        'Sie können die offizielle BIS-Website besuchen <a href="https://www.crsbis.in/BIS/publicdashAction.do" target="_blank" rel="noopener noreferrer" className="text-[#1A8781] underline">https://www.crsbis.in/BIS/publicdashAction.do</a> und zum Bereich "Produkte unter CRS" navigieren, um die vollständige Liste der abgedeckten Produkte anzuzeigen.',
     },
     {
       id: "item-12",
-      question: "12. Bisakah tanda BIS ditampilkan secara elektronik?",
+      question: "12. Kann das BIS-Kennzeichen elektronisch angezeigt werden?",
       answer:
-        "Ya, melalui e-labelling, tetapi harus memenuhi aturan BIS yang ketat: Info label harus tertanam dalam firmware <br />Akses mudah dalam 4 langkah di menu perangkat <br />Kemasan fisik masih harus membawa info regulasi",
+        "Ja, durch E-Kennzeichnung, aber es muss strenge BIS-Regeln erfüllen: Kennzeichnungsinformationen müssen in der Firmware eingebettet sein <br />Einfacher Zugang innerhalb von 4 Schritten im Geräte-Menü <br />Die physische Verpackung muss weiterhin regulatorische Informationen tragen",
     },
     {
       id: "item-13",
       question:
-        "13. Apa yang terjadi jika saya tidak mendapatkan pendaftaran BIS untuk produk wajib?",
+        "13. Was passiert, wenn ich keine BIS-Registrierung für ein obligatorisches Produkt erhalte?",
       answer:
-        "Sanksi berat, termasuk: <br />Penyitaan produk <br />Penolakan bea cukai <br />Denda hukum <br />Penghapusan dari portal e-commerce <br />Larangan permanen dari pasar India",
+        "Schwere Strafen, einschließlich: <br />Produktbeschlagnahme <br />Zoll-ablehnungen <br />Rechtliche Geldbußen <br />Abmeldung von E-Commerce-Portalen <br />Permanentes Verbot vom indischen Markt",
     },
     {
       id: "item-14",
-      question: "14. Bisakah satu sertifikat BIS mencakup beberapa model atau merek?",
+      question: "14. Kann ein BIS-Zertifikat mehrere Modelle oder Marken abdecken?",
       answer:
-        "Tidak. Setiap merek dan lokasi pabrik harus disertifikasi secara terpisah. Beberapa model dapat ditambahkan menggunakan laporan tambahan, tetapi hanya di bawah aplikasi dan merek yang sama.",
+        "Nein. Jede Marke und jeder Fabrikstandort muss separat zertifiziert werden. Mehrere Modelle können unter Verwendung zusätzlicher Berichte hinzugefügt werden, aber nur unter der gleichen Anwendung und Marke.",
     },
     {
       id: "item-15",
-      question: "15. Bagaimana Sun Certifications India dapat membantu saya?",
+      question: "15. Wie kann Sun Certifications India mir helfen?",
       answer:
-        "Kami menawarkan: <br />Dukungan dokumentasi lengkap <br />Koordinasi lab <br />Penanganan aplikasi portal BIS <br />Resolusi kueri dan tindak lanjut BIS <br />Bimbingan perpanjangan dan pelabelan <br />Jaminan kepatuhan untuk merek asing melalui layanan AIR",
+        "Wir bieten: <br />Vollständige Dokumentationsunterstützung <br />Laborkoordination <br />BIS-Portal-Anwendungsbearbeitung <br />Anfragebeantwortung und BIS-Nachverfolgung <br />Verlängerungs- und Kennzeichnungsberatung <br />Compliance-Gewährleistung für ausländische Marken über AIR-Dienstleistungen",
     },
   ];
 
@@ -943,12 +944,12 @@ const CRSRegistrationServiceFaq = () => {
     <div id="faqs" className="my-2 scroll-mt-20">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          Pertanyaan yang Sering Diajukan
+          Häufig gestellte Fragen
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Tidak dapat menemukan jawaban yang Anda cari?{" "}
+          Können Sie die Antwort nicht finden, die Sie suchen?{" "}
           <span className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
-            Hubungi kami!
+            Kontaktieren Sie uns!
           </span>
         </p>
 
@@ -987,7 +988,7 @@ const CRSRegistrationServiceFaq = () => {
                       d="M19 9l-7 7-7-7"
                     />
                   </svg>
-                  Tampilkan Lebih Sedikit FAQ
+                  Weniger FAQs anzeigen
                 </>
               ) : (
                 <>
@@ -1004,7 +1005,7 @@ const CRSRegistrationServiceFaq = () => {
                       d="M19 9l-7 7-7-7"
                     />
                   </svg>
-                  Tampilkan Lebih Banyak FAQ
+                  Mehr FAQs anzeigen
                 </>
               )}
             </button>
@@ -1018,445 +1019,458 @@ const CRSRegistrationServiceFaq = () => {
 const productsData = [
   {
     id: 1,
-    product: "AMPLIFIER DENGAN DAYA INPUT 2000W DAN LEBIH",
+    product: "VERSTÄRKER MIT EINGANGSLEISTUNG 2000W UND MEHR",
     isNumber: "IS 616:2017",
-    date: "03 Juli 2013",
+    date: "03 July 2013",
   },
   {
     id: 2,
-    product: "MESIN PENGOLAHAN DATA OTOMATIS",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "03 Juli 2013",
+    product: "AUTOMATISCHE DATENVERARBEITUNGSMASCHINE",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "03 July 2013",
   },
   {
     id: 3,
-    product: "JAM ELEKTRONIK DENGAN DAYA UTAMA",
+    product: "ELEKTRONISCHE UHREN MIT NETZANSCHLUSS",
     isNumber: "IS 302-2-26:2014",
-    date: "03 Juli 2013",
+    date: "03 July 2013",
   },
   {
     id: 4,
-    product: "PERMAINAN ELEKTRONIK (VIDEO)",
+    product: "ELEKTRONISCHE SPIELE (VIDEO)",
     isNumber: "IS 616:2017",
-    date: "03 Juli 2013",
+    date: "03 July 2013",
   },
   {
     id: 5,
-    product: "SISTEM MUSIK ELEKTRONIK DENGAN DAYA INPUT 200W DAN LEBIH",
+    product: "ELEKTRONISCHE MUSIKSYSTEME MIT EINGANGSLEISTUNG 200W UND MEHR",
     isNumber: "IS 616:2017",
-    date: "03 Juli 2013",
+    date: "03 July 2013",
   },
   {
     id: 6,
-    product: "LAPTOP/NOTEBOOK/TABLET",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "03 Juli 2013",
+    product: "LAPTOP/NOTEBOOK/TABLETT",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "03 July 2013",
   },
   {
     id: 7,
-    product: "OVEN MIKROGELOMBANG",
+    product: "MIKROWELLENÖFEN",
     isNumber: "IS 302-2-25:2014",
-    date: "03 Juli 2013",
+    date: "03 July 2013",
   },
   {
     id: 8,
-    product: "PEMUTAR DISK OPTIK DENGAN AMPLIFIER TERPASANG DENGAN DAYA INPUT 200W DAN LEBIH",
+    product:
+      "OPTISCHE PLATTENSPIELER MIT EINGEBAUTEN VERSTÄRKERN VON EINGANGSLEISTUNG 200W UND MEHR",
     isNumber: "IS 616:2017",
-    date: "03 Juli 2013",
+    date: "03 July 2013",
   },
   {
     id: 9,
-    product: 'TELEVISI PLASMA/LCD/LED DENGAN UKURAN LAYAR 32" DAN LEBIH',
+    product: 'PLASMA/LCD/LED FERNSEHER MIT BILDSCHIRMGRÖSSE 32" UND MEHR',
     isNumber: "IS 616:2017",
-    date: "03 Juli 2013",
+    date: "03 July 2013",
   },
   {
     id: 10,
-    product: "PRINTER, PLOTTER",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "03 Juli 2013",
+    product: "DRUCKER, PLOTTER",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "03 July 2013",
   },
   {
     id: 11,
     product: "SCANNER",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "03 Juli 2013",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "03 July 2013",
   },
   {
     id: 12,
-    product: "SET TOP BOX",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "03 Juli 2013",
+    product: "RECEIVERBOX",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "03 July 2013",
   },
   {
     id: 13,
-    product: "MESIN PENJAWAB TELEPON",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "03 Juli 2013",
+    product: "TELEFONANRUFBEANTWORTER",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "03 July 2013",
   },
   {
     id: 14,
-    product: 'UNIT TAMPILAN VISUAL, MONITOR VIDEO DENGAN UKURAN LAYAR 32" DAN LEBIH',
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "03 Juli 2013",
+    product:
+      'BILDSCHIRME, VIDEOMONITORE MIT BILDSCHIRMGRÖSSE 32" UND MEHR',
+    isNumber: "IS 13252(Part 1):2010",
+    date: "03 July 2013",
   },
   {
     id: 15,
-    product: "KEYBOARD NIRKABEL",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "03 Juli 2013",
+    product: "DRAHTLOSE TASTATUREN",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "03 July 2013",
   },
   {
     id: 16,
-    product: "KASIR",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "13 Mei 2015",
+    product: "KASSEN",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "13 May 2015",
   },
   {
     id: 17,
-    product: "MESIN FOTOKOPI/DUPLIKATOR",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "13 Mei 2015",
+    product: "KOPIERGERÄTE/DUPLIZIERER",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "13 May 2015",
   },
   {
     id: 18,
-    product: "PEMBACA PASSPORT",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "13 Mei 2015",
+    product: "REISEPASS-LESEGERÄT",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "13 May 2015",
   },
   {
     id: 19,
-    product: "TERMINAL POINT OF SALE",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "13 Mei 2015",
+    product: "POINT OF SALE TERMINALS",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "13 May 2015",
   },
   {
     id: 20,
-    product: "MESIN PENGOLAHAN SURAT/MESIN FRANKIR/MESIN FRANKIR",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "13 Mei 2015",
+    product: "POSTBEARBEITUNGSMASCHINEN/PORTORECHNUNGEN/FRANKIERMASCHINEN",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "13 May 2015",
   },
   {
     id: 21,
-    product: "BANK DAYA UNTUK PENGGUNAAN DALAM APLIKASI PORTABEL",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "13 Mei 2015",
+    product: "POWERBANKS FÜR TRAGBARE ANWENDUNGEN",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "13 May 2015",
   },
   {
     id: 22,
-    product: "PEMBACA KARTU PINTAR",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "13 Mei 2015",
+    product: "SMARTKARTEN-LESEGERÄT",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "13 May 2015",
   },
   {
     id: 23,
-    product: "TELEPON SELULER",
-    isNumber: "IS 13252(Bagian 1):2010",
+    product: "MOBILE TELEFONE",
+    isNumber: "IS 13252(Part 1):2010",
     date: "13 September 2015",
   },
   {
     id: 24,
-    product: "LAMPU LED AUTO-BALLASTED UNTUK LAYANAN PENERANGAN UMUM",
-    isNumber: "IS 16102(Bagian 1):2012",
+    product: "SELBSTBALLASTIERTE LED-LAMPEN FÜR ALLGEMEINE BELEUCHTUNGSDIENSTLEISTUNGEN",
+    isNumber: "IS 16102(Part 1):2012",
     date: "13 September 2015",
   },
   {
     id: 25,
-    product: "PERALATAN KONTROL ELEKTRONIK YANG DIPASOK DC ATAU AC UNTUK MODUL LED",
-    isNumber: "IS 15885(Bagian 2/Sec 13):2012",
-    date: "01 Desember 2015",
+    product: "ELEKTRONISCHE STEUERGERÄTE GLEICH- ODER WECHSELSTROM FÜR LED-MODULE",
+    isNumber: "IS 15885(Part 2/Sec 13):2012",
+    date: "01 December 2015",
   },
   {
     id: 26,
-    product: "ADAPTER DAYA UNTUK PERALATAN ELEKTRONIK AUDIO, VIDEO & SEJENISNYA",
+    product: "STROMVERSORGUNGSADAPTER FÜR AUDIO, VIDEO & ÄHNLICHE ELEKTRONISCHE GERÄTE",
     isNumber: "IS 616:2010",
-    date: "01 Desember 2015",
+    date: "01 December 2015",
   },
   {
     id: 27,
-    product: "ADAPTER DAYA UNTUK PERALATAN IT",
-    isNumber: "IS 13252(Bagian 1):2010",
-    date: "01 Desember 2015",
+    product: "STROMVERSORGUNGSADAPTER FÜR IT-AUSRÜSTUNGEN",
+    isNumber: "IS 13252(Part 1):2010",
+    date: "01 December 2015",
   },
   {
     id: 28,
-    product: "LUMINAIRE LED TUJUAN UMUM TETAP",
-    isNumber: "IS 10322(Bagian 5/Sec 1):2012",
-    date: "01 Maret 2016",
+    product: "FESTE ALLZWECK-LED-LEUCHTEN",
+    isNumber: "IS 10322(Part 5/Sec 1):2012",
+    date: "01 March 2016",
   },
   {
     id: 29,
-    product: "UPS/INVERTER DENGAN RATING <= 5KVA",
-    isNumber: "IS 16242(Bagian 1):2014",
-    date: "01 Maret 2016",
+    product: "USV/WECHSELRICHTER DER BEWERTUNG <= 5KVA",
+    isNumber: "IS 16242(Part 1):2014",
+    date: "01 March 2016",
   },
   {
     id: 30,
-    product: "SEL/BATERAI SEKUNDER TERSEGEL MENGANDUNG ELEKTROLIT ALKALI ATAU NON-ASAM LAINNYA UNTUK PENGGUNAAN DALAM APLIKASI PORTABEL BAGIAN 1 SISTEM NIKEL",
-    isNumber: "IS 16046(Bagian 1): 2018",
-    date: "01 Juni 2016",
+    product:
+      "VERSIEGELTE SEKUNDÄRZELLEN/BATTERIEN MIT ALKALISCHEN ODER ANDEREN NICHTSAURES ELEKTROLYT FÜR TRAGBARE ANWENDUNGEN TEIL 1 NICKELSYSTEME",
+    isNumber: "IS 16046(Part 1): 2018",
+    date: "01 June 2016",
   },
   {
     id: 31,
-    product: "SEL/BATERAI SEKUNDER TERSEGEL MENGANDUNG ELEKTROLIT ALKALI ATAU NON-ASAM LAINNYA UNTUK PENGGUNAAN DALAM APLIKASI PORTABEL BAGIAN 2 SISTEM LITHIUM",
-    isNumber: "IS 16046(Bagian 2): 2018",
-    date: "01 Juni 2016",
+    product:
+      "VERSIEGELTE SEKUNDÄRZELLEN/BATTERIEN MIT ALKALISCHEN ODER ANDEREN NICHTSAURES ELEKTROLYT FÜR TRAGBARE ANWENDUNGEN TEIL 2 LITHIUMSYSTEME",
+    isNumber: "IS 16046(Part 2): 2018",
+    date: "01 June 2016",
   },
   {
     id: 32,
-    product: "DUKUNGAN BAHASA INDIA UNTUK HANDPHONE TELEPON SELULER",
-    isNumber: "IS 16333 (Bagian 3) : 2022",
-    date: "01 Mei 2018",
+    product: "INDISCHE SPRACHUNTERSTÜTZUNG FÜR MOBILTELEFONE",
+    isNumber: "IS 16333 (Part 3) : 2022",
+    date: "01 May 2018",
   },
   {
     id: 33,
-    product: "Luminair LED Tertanam",
-    isNumber: "IS 10322 (Bagian 5/Bagian 2) : 2012",
-    date: "23 Mei 2018",
+    product: "Eingesenkte LED-Leuchten",
+    isNumber: "IS 10322 (Part 5/Section 2) : 2012",
+    date: "23 May 2018",
   },
   {
     id: 34,
-    product: "Luminair LED untuk Penerangan Jalan dan Jalan",
-    isNumber: "IS 10322 (Bagian 5/Bagian 3) : 2012",
-    date: "23 Mei 2018",
+    product: "LED-Leuchten für Straßen- und Wegebeleuchtung",
+    isNumber: "IS 10322 (Part 5/Section 3) : 2012",
+    date: "23 May 2018",
   },
   {
     id: 35,
-    product: "Lampu Sorot LED",
-    isNumber: "IS 10322 (Bagian 5/Bagian 5) : 2013",
-    date: "23 Mei 2018",
+    product: "LED-Flutlichter",
+    isNumber: "IS 10322 (Part 5/Section 5) : 2013",
+    date: "23 May 2018",
   },
   {
     id: 36,
-    product: "Lampu Tangan LED",
-    isNumber: "IS 10322 (Bagian 5/Bagian 6) : 2013",
-    date: "23 Mei 2018",
+    product: "LED-Taschenlampen",
+    isNumber: "IS 10322 (Part 5/Section 6) : 2013",
+    date: "23 May 2018",
   },
   {
     id: 37,
-    product: "Rantai Penerangan LED",
-    isNumber: "IS 10322 (Bagian 5/Bagian 7) : 2017",
-    date: "23 Mei 2018",
+    product: "LED-Lichtketten",
+    isNumber: "IS 10322 (Part 5/Section 7) : 2017",
+    date: "23 May 2018",
   },
   {
     id: 38,
-    product: "Luminair LED untuk Penerangan Darurat",
-    isNumber: "IS 10322 (Bagian 5/Bagian 8) : 2013",
-    date: "23 Mei 2018",
+    product: "LED-Leuchten für Notbeleuchtung",
+    isNumber: "IS 10322 (Part 5/Section 8) : 2013",
+    date: "23 May 2018",
   },
   {
     id: 39,
-    product: "UPS/Inverter dengan rating <= 10kVA",
-    isNumber: "IS 16242 (Bagian 1) : 2014",
-    date: "23 Mei 2018",
+    product: "USV/Wechselrichter mit Bewertung <= 10kVA",
+    isNumber: "IS 16242 (Part 1) : 2014",
+    date: "23 May 2018",
   },
   {
     id: 40,
-    product: "Televisi Plasma/LCD/LED dengan ukuran layar hingga 32",
+    product: "Plasma/LCD/LED-Fernseher mit Bildschirmgröße bis zu 32",
     isNumber: "IS 616 : 2017",
-    date: "23 Mei 2018",
+    date: "23 May 2018",
   },
   {
     id: 41,
-    product: "Unit Tampilan Visual, Monitor Video dengan ukuran layar hingga 32",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
-    date: "23 Mei 2018",
+    product: "Bildschirme, Videomonitore mit Bildschirmgröße bis zu 32",
+    isNumber: "IS 13252 (Part 1) : 2010",
+    date: "23 May 2018",
   },
   {
     id: 42,
-    product: "Kamera CCTV/Perekam CCTV",
-    isNumber: "IS 13252 (Bagian 1) : 2010, Persyaratan Penting untuk Keamanan CCTV",
-    date: "23 Mei 2018",
+    product: "CCTV-Kameras/CCTV-Rekorder",
+    isNumber:
+      "IS 13252 (Part 1) : 2010, Wesentliche Anforderung(en) für die Sicherheit von CCTV",
+    date: "23 May 2018",
   },
   {
     id: 43,
-    product: "Adapter untuk peralatan listrik rumah tangga dan sejenisnya",
-    isNumber: "IS 302 (Bagian 1) : 2008",
-    date: "23 Mei 2018",
+    product: "Adapter für Haushalts- und ähnliche Elektrogeräte",
+    isNumber: "IS 302 (Part 1) : 2008",
+    date: "23 May 2018",
   },
   {
     id: 44,
-    product: "Pembaca barcode USB, pemindai barcode, pemindai iris, pemindai sidik jari optik",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
-    date: "23 Mei 2018",
+    product:
+      "USB-gesteuerte Barcode-Leser, Barcode-Scanner, Iris-Scanner, optische Fingerabdruck-Scanner",
+    isNumber: "IS 13252 (Part 1) : 2010",
+    date: "23 May 2018",
   },
   {
     id: 45,
-    product: "Jam tangan pintar",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
-    date: "23 Mei 2018",
+    product: "Smartwatches",
+    isNumber: "IS 13252 (Part 1) : 2010",
+    date: "23 May 2018",
   },
   {
     id: 46,
-    product: "Modul fotovoltaik terestrial silikon kristal (PV) (berbasis wafer Si)",
-    isNumber: "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Bagian 1) : 2004 & IS/IEC 61730 (Bagian 2) : 2004",
-    date: "31 Maret 2019",
+    product:
+      "Kristalline Silizium-Terrestrische Photovoltaik(PV)-Module (Si-Wafer-basiert)",
+    isNumber:
+      "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
+    date: "31 March 2019",
   },
   {
     id: 47,
-    product: "Modul fotovoltaik terestrial film tipis (PV) (a-Si, CiGs dan CdTe)",
-    isNumber: "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Bagian 1) : 2004 & IS/IEC 61730 (Bagian 2) : 2004",
-    date: "31 Maret 2019",
+    product:
+      "Dünnschicht-Terrestrische Photovoltaik(PV)-Module (a-Si, CiGs und CdTe)",
+    isNumber:
+      "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
+    date: "31 March 2019",
   },
   {
     id: 48,
-    product: "Konverter daya untuk digunakan dalam sistem tenaga fotovoltaik",
-    isNumber: "IS 16221 (Bagian 2) : 2015 / IEC 62109-2 : 2011",
-    date: "30 Juni 2021",
+    product: "Stromwandler für den Einsatz in Photovoltaik-Stromsystemen",
+    isNumber: "IS 16221 (Part 2) : 2015 / IEC 62109-2 : 2011",
+    date: "30 June 2021",
   },
   {
     id: 49,
-    product: "Inverter fotovoltaik yang terhubung ke utilitas",
-    isNumber: "IS 16221 (Bagian 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
-    date: "30 Juni 2021",
+    product: "Netzgekoppelte Photovoltaik-Wechselrichter",
+    isNumber:
+      "IS 16221 (Part 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
+    date: "30 June 2021",
   },
   {
     id: 50,
-    product: "Baterai penyimpanan",
+    product: "Speicherbatterie",
     isNumber: "IS 16270 : 2014",
-    date: "01 Januari 2019",
+    date: "01 January 2019",
   },
   {
     id: 51,
-    product: "Modul LED independen untuk penerangan umum",
-    isNumber: "IS 16103 (Bagian 1) : 2012",
+    product: "Unabhängige LED-Module für Allgemeinbeleuchtung",
+    isNumber: "IS 16103 (Part 1) : 2012",
     date: "01 April 2021",
   },
   {
     id: 52,
-    product: "Rantai penerangan (lampu tali)",
-    isNumber: "IS 10322 (Bagian 5/Sec 9) : 2017",
+    product: "Lichtkette (Lichtschläuche)",
+    isNumber: "IS 10322 (Part 5/Sec 9) : 2017",
     date: "01 April 2021",
   },
   {
     id: 53,
-    product: "Keyboard",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
+    product: "Tastatur",
+    isNumber: "IS 13252 (Part 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 54,
-    product: "Kompor induksi",
+    product: "Induktionsherd",
     isNumber: "IS 302-2-6 : 2009",
     date: "01 April 2021",
   },
   {
     id: 55,
-    product: "Mesin pengeluaran uang tunai teller otomatis",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
+    product: "Bankautomaten mit Bargeldausgabe",
+    isNumber: "IS 13252 (Part 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 56,
-    product: "Hard disk drive eksternal tipe USB",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
+    product: "USB-Typ Externe Festplatte",
+    isNumber: "IS 13252 (Part 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 57,
-    product: "Headphone dan earphone nirkabel",
+    product: "Drahtlose Kopfhörer und Ohrhörer",
     isNumber: "IS 616 : 2017",
     date: "01 April 2021",
   },
   {
     id: 58,
-    product: "Perangkat penyimpanan solid-state eksternal tipe USB (kapasitas di atas 256 GB)",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
+    product:
+      "USB-Typ Externe Solid-State-Speichergeräte (über 256 GB Kapazität)",
+    isNumber: "IS 13252 (Part 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 59,
-    product: "Sistem musik elektronik dengan daya input di bawah 200 Watt",
+    product: "Elektronisches Musiksystem mit Eingangsleistung unter 200 Watt",
     isNumber: "IS 616 : 2017",
     date: "01 April 2021",
   },
   {
     id: 60,
-    product: "Catuan daya mode sakelar mandiri (SMPS) dengan tegangan keluaran 48V (maks)",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
+    product:
+      "Standalone-Schaltnetzteile (SMPS) mit Ausgangsspannung 48V (max)",
+    isNumber: "IS 13252 (Part 1) : 2010",
     date: "01 April 2021",
   },
   {
     id: 61,
-    product: "Televisi selain TV Plasma/LCD/LED",
+    product: "Fernseher außer Plasma/LCD/LED-Fernseher",
     isNumber: "IS 616 : 2017",
     date: "01 April 2021",
   },
   {
     id: 62,
-    product: "Penanak nasi",
+    product: "Reiskocher",
     isNumber: "IS 302-2-15 : 2009",
     date: "01 April 2021",
   },
   {
     id: 63,
-    product: "Mikrofon nirkabel",
+    product: "Drahtloses Mikrofon",
     isNumber: "IS 616 : 2017",
-    date: "01 Oktober 2021",
+    date: "01 October 2021",
   },
   {
     id: 64,
-    product: "Kamera digital",
-    isNumber: "IS 13252 (Bagian 1) : 2010",
-    date: "01 Oktober 2021",
+    product: "Digitale Kamera",
+    isNumber: "IS 13252 (Part 1) : 2010",
+    date: "01 October 2021",
   },
   {
     id: 65,
-    product: "Kamera video",
+    product: "Videokamera",
     isNumber: "IS 616 : 2017",
-    date: "01 Oktober 2021",
+    date: "01 October 2021",
   },
   {
     id: 66,
-    product: "Webcam (produk jadi)",
+    product: "Webcam (Fertigerzeugnis)",
     isNumber: "IS 616 : 2017",
-    date: "01 Oktober 2021",
+    date: "01 October 2021",
   },
   {
     id: 67,
-    product: "Speaker pintar (dengan dan tanpa layar)",
+    product: "Smart-Lautsprecher (mit und ohne Display)",
     isNumber: "IS 616 : 2017",
-    date: "01 Oktober 2021",
+    date: "01 October 2021",
   },
   {
     id: 68,
-    product: "Dimmer untuk produk LED",
+    product: "Dimmer für LED-Produkte",
     isNumber: "IS 60669-2-1: 2008",
-    date: "01 Oktober 2021",
+    date: "01 October 2021",
   },
   {
     id: 69,
-    product: "Speaker Bluetooth",
+    product: "Bluetooth-Lautsprecher",
     isNumber: "IS 616 : 2017",
-    date: "01 Oktober 2021",
+    date: "01 October 2021",
   },
   {
     id: 70,
-    product: "Asam ortofosfat",
+    product: "Ortho-Phosphorsäure",
     isNumber: "IS 798 : 2020",
-    date: "12 Desember 2021",
+    date: "12 December 2021",
   },
   {
     id: 71,
-    product: "Asam polifosfat",
+    product: "Polyphosphorsäure",
     isNumber: "IS 17439:2020",
-    date: "24 Desember 2021",
+    date: "24 December 2021",
   },
   {
     id: 72,
-    product: "Bale kapas",
+    product: "Baumwollballen",
     isNumber: "IS 12171:2019",
-    date: "03 Maret 2023",
+    date: "03 March 2023",
   },
   {
     id: 73,
-    product: "Trimetil fosfit kelas teknis",
+    product: "Trimethylphosphit technische Qualität",
     isNumber: "IS 17412:2020",
-    date: "03 Maret 2023",
+    date: "03 March 2023",
   },
   {
     id: 74,
-    product: "Set televisi",
+    product: "Fernseher",
     isNumber: "IS 18112:2022",
     date: "26 April 2023",
   },
@@ -1513,11 +1527,13 @@ export const CISProductTable = () => {
     <section className="w-full pb-12 product-table-section">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
         <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mb-4">
-          Daftar Produk Resmi Di Bawah Pendaftaran BIS CRS
+          Offizielle Produktliste unter BIS CRS Registrierung
         </h2>
 
         <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-8">
-          Tabel berikut mencantumkan produk yang memerlukan pendaftaran BIS CRS di India beserta nomor Standar India (IS) yang berlaku dan tanggal implementasinya.
+          Die folgende Tabelle listet Produkte auf, die eine BIS CRS-Registrierung
+          in Indien erfordern, zusammen mit ihren anwendbaren Indischen Normen (IS)-Nummern und
+          Umsetzungsdaten.
         </p>
 
         <div className="relative mb-6">
@@ -1526,7 +1542,7 @@ export const CISProductTable = () => {
           </div>
           <input
             type="text"
-            placeholder="Cari Produk berdasarkan nama atau nomor IS..."
+            placeholder="Nach Produkten nach Name oder IS-Nummer suchen..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -1538,16 +1554,16 @@ export const CISProductTable = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                  No
+                  Nr.
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
-                  Produk
+                  Produkt
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
-                  No. IS
+                  IS Nr.
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  Tanggal Implementasi
+                  Umsetzungsdatum
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -1579,17 +1595,17 @@ export const CISProductTable = () => {
                 disabled={currentPage === 1}
                 className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Sebelumnya
+                Zurück
               </button>
               <span className="px-4 py-2 font-geist text-sm">
-                Halaman {currentPage} dari {totalPages}
+                Seite {currentPage} von {totalPages}
               </span>
               <button
                 onClick={handleNextPage}
                 disabled={currentPage === totalPages}
                 className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Selanjutnya
+                Weiter
               </button>
             </div>
           </div>
@@ -1604,18 +1620,29 @@ const CRSRegistrationMainContentLeft = () => {
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
-          <h2 className="service-left-content-heading-two">Apa itu Pendaftaran BIS?</h2>
+          <h2 className="service-left-content-heading-two">Was ist eine BIS-Registrierung?</h2>
 
           <p className="service-left-content-paragraph">
-            Biro Standar India (BIS) adalah badan standardisasi nasional di India dan bekerja di bawah Kementerian Urusan Konsumen, Pangan dan Distribusi Publik Pemerintah India. BIS bertanggung jawab untuk mempertahankan tolok ukur kualitas, keselamatan, dan kinerja untuk berbagai produk dan layanan di India sesuai dengan Standar India (IS) yang relevan.
+            Das Bureau of Indian Standards (BIS) ist die nationale Standardisierungs-
+            organisation in Indien und arbeitet unter dem Ministerium für Verbraucherangelegenheiten, Ernährung
+            und öffentliche Verteilung der indischen Regierung. BIS ist für die
+            Aufrechterhaltung der Qualitäts-, Sicherheits- und Leistungsstandards für
+            verschiedene Produkte und Dienstleistungen in Indien gemäß den relevanten indischen
+            Normen (IS) verantwortlich.
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS bertanggung jawab untuk mengawasi dan mengimplementasikan berbagai skema di India. Skema Pendaftaran Wajib (CRS) adalah skema sertifikasi BIS yang sangat menonjol dan wajib yang mencakup berbagai kategori produk elektronik dan IT.
+            BIS ist für die Überwachung und Umsetzung verschiedener Programme
+            in Indien verantwortlich. Das Pflichtregistrierungsschema (CRS) ist ein sehr
+            prominentes und verpflichtendes Zertifizierungsschema von BIS, das verschiedene
+            Kategorien von elektronischen und IT-Produkten abdeckt.
           </p>
 
           <p className="service-left-content-paragraph">
-            Kinerja dan keselamatan produk India adalah masalah penting bagi India. Sertifikasi BIS CRS menjamin bahwa produk elektronik dan IT sesuai dengan standar India, dan membantu melindungi konsumen dari produk yang tidak sesuai dan tidak standar.
+            Die Leistung und Sicherheit indischer Produkte ist ein wichtiges Anliegen
+            für Indien. Die BIS CRS-Zertifizierung garantiert, dass elektronische und IT-
+            Produkte den indischen Standards entsprechen und hilft, Verbraucher
+            vor nicht konformen und minderwertigen Produkten zu schützen.
           </p>
         </div>
 
@@ -1654,7 +1681,7 @@ const CRSRegistrationMainContentLeft = () => {
 
         {/* Divider */}
         <div className="service-left-content-divider" />
-        <ServiceAuthorIndonesian />
+        <ServiceAuthorVietnamese />
       </div>
     </div>
   );
@@ -1667,47 +1694,58 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
     <div id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Ikhtisar</span>
+        <span className="service-left-content-index-heading">Übersicht</span>
         <Separator className="service-left-content-separator" />
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Apa itu Skema Pendaftaran Wajib (CRS)?
+        Was ist ein Pflichtregistrierungsschema (CRS)?
       </h2>
 
       <p className="service-left-content-paragraph">
-        Skema Pendaftaran Wajib (CRS) adalah skema pendaftaran produk BIS yang diluncurkan pada tahun 2012 dan terutama difokuskan pada produk elektronik. Selama bertahun-tahun, karena lebih banyak produk yang dirilis, CRS telah diperluas untuk mencakup berbagai kategori produk yang lebih luas, yang mencakup produk listrik seperti peralatan, peralatan surya, baterai dan lainnya. Pendaftaran CRS wajib untuk produk yang ditentukan di bawah Perintah Kontrol Kualitas (QCO) yang dikeluarkan oleh berbagai kementerian.
+        Das Pflichtregistrierungsschema (CRS) ist ein BIS-Produktregistrierungs-
+        schema, das 2012 eingeführt wurde und sich zunächst auf elektronische
+        Produkte konzentrierte. Im Laufe der Jahre wurde CRS erweitert, um
+        eine breitere Palette von Produktkategorien einzuschließen, darunter
+        Elektroprodukte wie Haushaltsgeräte, Solargeräte,
+        Batterien und mehr. Die CRS-Registrierung ist für Produkte vorgeschrieben
+        unter Qualitätskontrollverordnungen (QCOs), die von verschiedenen Ministerien herausgegeben werden.
       </p>
 
       <p className="service-left-content-paragraph">
-        Setiap produk yang termasuk dalam skema CRS wajib harus dijual, diimpor, atau didistribusikan di India hanya setelah memperoleh pendaftaran dengan BIS.
+        Jedes Produkt, das unter das obligatorische CRS-Schema fällt, muss verkauft,
+        importiert oder in Indien nur nach Erhalt der Registrierung bei
+        BIS vertrieben werden.
       </p>
 
       <h3 className="service-left-content-heading-three">
-        Sejarah Sertifikasi CRS di India
+        Geschichte der CRS-Zertifizierung in Indien
       </h3>
 
       <p className="service-left-content-paragraph">
-        Pada tahun 2012, QCO pertama di bawah skema CRS dirilis dan difokuskan pada peralatan elektronik dan IT. Sejak itu, QCO tambahan telah dikeluarkan di sektor berikut:
+        Im Jahr 2012 wurde die erste QCO unter dem CRS-Schema veröffentlicht und konzentrierte sich auf
+        elektronische und IT-Ausrüstung. Seitdem wurden zusätzliche QCOs
+        in den folgenden Sektoren herausgegeben:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Elektronik Konsumen",
-          "Pencahayaan & LED",
-          "Baterai & Sel",
-          "Perangkat Komunikasi Nirkabel",
-          "Panel Surya dan Komponen",
-          "Peralatan Listrik untuk Rumah Tangga",
+          "Verbraucherelektronik",
+          "Beleuchtung & LEDs",
+          "Batterien & Zellen",
+          "Drahtlose Kommunikationsgeräte",
+          "Solarmodule und Komponenten",
+          "Elektrogeräte für Haushalte",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        Daftar untuk Sertifikasi CRS berkembang pesat, jadi sangat penting bagi produsen untuk proaktif dan menyadari pembaruan terbaru.
+        Die Liste für die CRS-Zertifizierung wird rapide erweitert, daher ist es sehr
+        wichtig für Hersteller, proaktiv zu sein und sich über aktuelle Updates bewusst zu sein.
       </p>
 
       <h2 className="service-left-content-heading-three">
-        Pendaftaran CRS vs Tanda ISI: Apa Perbedaannya?
+        CRS-Registrierung vs. ISI-Marke: Was ist der Unterschied?
       </h2>
 
       {/* Table */}
@@ -1717,70 +1755,70 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[200px] border-r border-gray-300 tracking-wide leading-loose">
-                  Fitur
+                  Merkmal
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
-                  Pendaftaran CRS
+                  CRS Registrierung
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] tracking-wide leading-loose">
-                  Tanda ISI
+                  ISI-Marke
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Sifat
+                  Art
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Wajib (hanya untuk produk yang tercantum dalam QCO)
+                  Pflicht (nur für QCO-gelistete Produkte)
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Sukarela atau Wajib (berdasarkan produk)
+                  Freiwillig oder Pflicht (abhängig vom Produkt)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Ruang Lingkup Produk
+                  Produktumfang
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Elektronik, IT, Listrik, Baterai, dll.
+                  Elektronik, IT, Elektro, Batterien, usw.
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Makanan, semen, baja, listrik, dll.
+                  Lebensmittel, Zement, Stahl, Elektro, usw.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Aplikasi
+                  Anwendung
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Online, Portal BIS CRS
+                  Online, BIS CRS Portal
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Manual + Online, Sistem BIS ISI
+                  Manuell + Online, BIS ISI System
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Fleksibilitas
+                  Flexibilität
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Hanya untuk barang yang dicakup oleh QCO
+                  Nur für QCO-abgedeckte Waren
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Dapat menjadi sukarela untuk barang non-QCO
+                  Kann freiwillig für Nicht-QCO-Waren sein
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Pelabelan
+                  Kennzeichnung
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Membutuhkan logo BIS CRS dan nomor pendaftaran
+                  Erfordert BIS CRS Logo und Registrierungsnummer
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Membutuhkan logo ISI dengan kode standar
+                  Erfordert ISI Logo mit Standardcode
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -1789,19 +1827,20 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
       </div>
 
       <h3 className="service-left-content-heading-three">
-        Mengapa Anda Perlu Mengetahui Kerangka Kerja BIS CRS
+        Warum müssen Sie das BIS CRS Rahmenwerk kennen?
       </h3>
 
       <p className="service-left-content-paragraph">
-        Jika Anda adalah produsen di India, atau perusahaan asing yang mencoba memasuki pasar India, mengetahui langkah-langkah BIS CRS adalah suatu keharusan. Ini membantu Anda untuk:
+        Wenn Sie ein Produzent in Indien sind oder ein ausländisches Unternehmen, das versucht, den
+        indischen Markt zu betreten, ist das Wissen über die BIS CRS-Schritte ein Muss. Es hilft Ihnen:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Menghindari sanksi karena tidak patuh.",
-          "Mempersiapkan jadwal produksi (mempertimbangkan waktu pengujian lab).",
-          "Memfasilitasi pemrosesan bea cukai yang lebih mudah.",
-          "Mendapatkan kepercayaan merek jangka panjang pelanggan India.",
+          "Bußgelder für Nichteinhaltung vermeiden.",
+          "Produktionszeitpläne vorbereiten (unter Berücksichtigung der Labortestzeit).",
+          "Einfachere Zollabfertigung ermöglichen.",
+          "Langfristiges Markenvertrauen des indischen Kunden gewinnen.",
         ]}
       />
     </div>
@@ -1813,23 +1852,27 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
     <div id="eligibility" className="flex flex-col scroll-mt-20">
       {/* Eligibility */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Kelayakan</span>
+        <span className="service-left-content-index-heading">Anspruchsberechtigung</span>
         <Separator className="service-left-content-separator" />
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Kriteria Kelayakan untuk Pendaftaran BIS CRS
+        Anspruchskriterien für die BIS CRS-Registrierung
       </h2>
 
       <p className="service-left-content-paragraph">
-        Siapa yang Dapat Mengajukan Sertifikasi BIS Di Bawah CRS?
+        Wer kann eine BIS-Zertifizierung unter CRS beantragen?
       </p>
 
       <p className="service-left-content-paragraph">
-        Di India, sertifikat BIS di bawah Skema Pendaftaran Wajib (CRS) hanya dapat diberikan kepada produsen yang memenuhi persyaratan yang ditetapkan oleh Biro Standar India. Ini untuk memastikan hanya produsen autentik yang mendapatkan hak istimewa untuk dapat Mendaftar serta menempelkan logo BIS CRS pada produk mereka.
+        In Indien kann ein BIS-Zertifikat unter dem Pflichtregistrierungsschema
+        (CRS) nur Herstellern gewährt werden, die die vom Bureau of Indian Standards festgelegten
+        Anforderungen erfüllen. Dies soll sicherstellen, dass nur authentische
+        Hersteller das Privileg erhalten, sich zu registrieren und
+        das BIS CRS-Logo auf ihren Produkten anzubringen.
       </p>
 
-      <div className="service-left-content-heading-three">Daftar Periksa Kriteria Kelayakan</div>
+      <div className="service-left-content-heading-three">Anspruchskriterien-Checkliste</div>
 
       {/* Eligibility Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1838,60 +1881,62 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[250px] border-r border-gray-300 tracking-wide leading-loose">
-                  Persyaratan
+                  Anforderung
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Deskripsi
+                  Beschreibung
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Pemohon harus menjadi Produsen
+                  Người đăng ký phải là Nhà sản xuất
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Hanya produsen asli (bukan pedagang atau pengecer) dari produk yang memenuhi syarat untuk mengajukan.
+                  Chỉ nhà sản xuất gốc (không phải người bán hoặc nhà bán lẻ) của sản phẩm mới đủ điều kiện đăng ký.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Lokasi Dapat India atau Asing
+                  Địa Điểm Có Thể Ở Ấn Độ Hoặc Nước Ngoài
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Baik produsen India maupun merek internasional dapat mengajukan.
+                  Cả nhà sản xuất Ấn Độ và thương hiệu quốc tế đều có thể đăng ký.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  AIR (Perwakilan India yang Berwenang)
+                  AIR (Đại Diện Ấn Độ Được Ủy Quyền)
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Produsen asing harus menunjuk AIR — baik cabang India mereka atau pihak ketiga yang secara resmi diotorisasi.
+                  Nhà sản xuất nước ngoài phải bổ nhiệm AIR - hoặc là chi nhánh Ấn Độ của họ 
+                  hoặc bên thứ ba được ủy quyền chính thức.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Laporan Pengujian dari Lab yang Disetujui BIS
+                  Báo Cáo Kiểm Tra Từ Phòng Thí Nghiệm Được BIS Phê Duyệt
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Produk harus diuji di lab yang diakui BIS dan memenuhi Standar India (IS) yang berlaku.
+                  Sản phẩm phải được kiểm tra tại phòng thí nghiệm được BIS công nhận và 
+                  đáp ứng Tiêu chuẩn Ấn Độ (IS) áp dụng.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Dokumentasi yang Tepat
+                  Tài Liệu Đúng Chuẩn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Semua dokumen yang diperlukan harus diajukan dalam format yang ditentukan (detail di bagian berikutnya).
+                  Tất cả tài liệu yêu cầu phải được nộp theo định dạng quy định (chi tiết trong phần tiếp theo).
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Satu Pendaftaran Per Merek & Lokasi
+                  Một Đăng Ký Cho Mỗi Thương Hiệu & Địa Điểm
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Aplikasi terpisah harus diajukan untuk setiap jenis produk, lokasi manufaktur, dan nama merek.
+                  Phải nộp đơn riêng cho mỗi loại sản phẩm, địa điểm sản xuất và tên thương hiệu.
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -1900,45 +1945,47 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
       </div>
 
       <h2 className="service-left-content-heading-three">
-        Siapa Perwakilan India yang Berwenang (AIR)?
+        AIR (Đại Diện Ấn Độ Được Ủy Quyền) Là Ai?
       </h2>
 
       <p className="service-left-content-paragraph">
-        Untuk produsen asing, salah satu kewajiban adalah menunjuk Perwakilan India yang Berwenang (AIR) untuk komunikasi dan perwakilan di India.
+        Đối với nhà sản xuất nước ngoài, một trong những nghĩa vụ là bổ nhiệm một 
+        Đại Diện Ấn Độ Được Ủy Quyền (AIR) để giao tiếp và đại diện tại Ấn Độ.
       </p>
 
-      <div className="service-left-content-heading-three">Tanggung Jawab AIR:</div>
+      <div className="service-left-content-heading-three">Trách Nhiệm Của AIR:</div>
 
       <PointsListWithoutHeading
         points={[
-          "Bertindak sebagai perwakilan hukum untuk pemohon asing",
-          "Berkomunikasi dan mengelola semua kewajiban dengan BIS atas nama produsen",
-          "Bertanggung jawab secara hukum atas semua kepatuhan dan dokumentasi",
-          "Tidak dapat menjadi agen atau distributor kecuali secara jelas diotorisasi oleh produsen",
+          "Đóng vai trò là đại diện pháp lý cho người đăng ký nước ngoài",
+          "Giao tiếp và quản lý tất cả nghĩa vụ với BIS thay mặt cho nhà sản xuất",
+          "Chịu trách nhiệm pháp lý về tất cả tuân thủ và tài liệu",
+          "Không thể là đại lý hoặc nhà phân phối trừ khi được nhà sản xuất ủy quyền rõ ràng",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        Sebagai bagian dari perjanjian, AIR harus mengajukan perjanjian yang ditandatangani dari kedua belah pihak bersama dengan bukti alamat India.
+        Như một phần của thỏa thuận, AIR phải nộp thỏa thuận đã ký từ cả hai bên 
+        cùng với bằng chứng địa chỉ Ấn Độ.
       </p>
 
-      <div className="service-left-content-heading-three">Skenario Kehidupan Nyata:</div>
+      <div className="service-left-content-heading-three">Tình Huống Thực Tế:</div>
 
       <p className="service-left-content-paragraph">
-        Perusahaan ABC berencana memperkenalkan model baru power bank di India.
+        Công ty ABC đang lên kế hoạch giới thiệu một model mới của power bank tại Ấn Độ.
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Perusahaan ABC adalah produsen.",
-          "Mereka menguji produk di salah satu lab terakreditasi BIS di India.",
-          "Kantor cabang mereka di Delhi berfungsi sebagai AIR terdaftar.",
-          "Mereka mengunggah aplikasi ke portal BIS bersama dengan dokumentasi yang diperlukan.",
+          "Công ty ABC là nhà sản xuất.",
+          "Họ cho sản phẩm được kiểm tra tại một trong các phòng thí nghiệm được BIS công nhận tại Ấn Độ.",
+          "Chi nhánh của họ tại Delhi đóng vai trò là AIR đã đăng ký.",
+          "Họ tải đơn đăng ký lên cổng BIS cùng với tài liệu yêu cầu.",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        Hasilnya adalah sertifikat BIS diterbitkan di bawah CRS.
+        Kết quả là một chứng chỉ BIS được cấp dưới CRS.
       </p>
     </div>
   );
@@ -1949,28 +1996,34 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
     <div id="documents" className="flex flex-col scroll-mt-20">
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Dokumen</span>
+        <span className="service-left-content-index-heading">Tài Liệu</span>
         <Separator className="service-left-content-separator" />
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Dokumen yang Diperlukan untuk Pendaftaran BIS CRS
+        Tài Liệu Cần Thiết Để Đăng Ký BIS CRS
       </h2>
 
       <div className="service-left-content-heading-three">
-        Daftar dokumen yang diperlukan untuk memperoleh pendaftaran BIS CRS.
+        Danh sách tài liệu cần thiết để đăng ký BIS CRS.
       </div>
 
       <p className="service-left-content-paragraph">
-        Mengisi aplikasi BIS CRS untuk pendaftaran sepenuhnya digital, namun tetap memerlukan dokumen yang lengkap untuk memperoleh persetujuan. Setiap kesalahan kecil dan kegagalan untuk mematuhi aspek apa pun, seperti jenis dokumen, format yang tidak tepat, atau jenis file yang salah dapat menyebabkan aplikasi ditolak atau tertunda.
+        Điền đơn đăng ký BIS CRS hoàn toàn trực tuyến, tuy nhiên vẫn cần tài liệu được điền 
+        đầy đủ để có được phê duyệt. Mọi sai sót nhỏ và không tuân thủ bất kỳ khía cạnh nào, 
+        chẳng hạn như loại tài liệu, định dạng sai hoặc loại tệp sai có thể khiến đơn đăng ký 
+        bị từ chối hoặc trì hoãn.
       </p>
 
       <p className="service-left-content-paragraph">
-        Untuk pemrosesan dokumen BIS yang tepat dan lebih cepat, perlu memiliki dokumen yang tepat di setiap langkah. Memiliki dokumen yang tepat siap memastikan bahwa sertifikat bis Anda diproses tepat waktu dan tetap jelas secara hukum dari audit kepatuhan, inspeksi bea cukai, atau persetujuan pasar.
+        Để xử lý tài liệu BIS đúng cách và nhanh hơn, điều cần thiết là có tài liệu đúng 
+        trong mỗi bước. Có tài liệu đúng sẵn sàng đảm bảo chứng chỉ BIS của bạn được xử lý 
+        đúng giờ và luôn rõ ràng về mặt pháp lý khỏi bất kỳ cuộc kiểm tra tuân thủ, kiểm tra hải quan, 
+        hoặc phê duyệt thị trường.
       </p>
 
       <div className="service-left-content-heading-three">
-        Daftar Periksa Dokumen untuk Pendaftaran BIS CRS
+        Danh Sách Kiểm Tra Tài Liệu Cho Đăng Ký BIS CRS
       </div>
 
       {/* Documents Requirements Table */}
@@ -1980,125 +2033,125 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[250px] border-r border-gray-300 tracking-wide leading-loose">
-                  Dokumen
+                  Tài Liệu
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[200px] border-r border-gray-300 tracking-wide leading-loose">
-                  Siapa yang Mengajukan?
+                  Ai Nộp?
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Catatan
+                  Lưu Ý
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Bukti Alamat Produsen
+                  Bằng Chứng Địa Chỉ Nhà Sản Xuất
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Produsen
+                  Nhà Sản Xuất
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Sewa pabrik, tagihan utilitas, atau lisensi
+                  Thuê nhà máy, hóa đơn tiện ích hoặc giấy phép
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Laporan Pengujian dari Lab yang Disetujui BIS
+                  Báo Cáo Kiểm Tra Từ Phòng Thí Nghiệm Được BIS Phê Duyệt
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Produsen/Lab
+                  Nhà Sản Xuất/Phòng Thí Nghiệm
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Harus baru (dalam 90 hari) dan referensi kode IS
+                  Phải mới (trong vòng 90 ngày) và tham chiếu mã IS
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Pernyataan (sesuai Format BIS)
+                  Cam Kết (Theo Định Dạng BIS)
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Pemohon
+                  Người Đăng Ký
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Termasuk tanggung jawab, kepatuhan, dan tanggung jawab produk
+                  Bao gồm trách nhiệm, tuân thủ và trách nhiệm sản phẩm
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Sertifikat Merek Dagang
+                  Giấy Chứng Nhận Thương Hiệu
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Produsen
+                  Nhà Sản Xuất
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Diperlukan jika merek terdaftar
+                  Bắt buộc nếu thương hiệu đã đăng ký
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Perjanjian AIR (Untuk pemohon asing)
+                  Thỏa Thuận AIR (Cho Người Đăng Ký Nước Ngoài)
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Produsen Asing & AIR
+                  Nhà Sản Xuất Nước Ngoài & AIR
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Ditandatangani dan disahkan
+                  Đã ký và công chứng
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Afidavit
+                  Tờ Khai Có Tuyên Thệ
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Produsen atau AIR
+                  Nhà Sản Xuất Hoặc AIR
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Format dapat diunduh dari portal BIS
+                  Định dạng có thể tải xuống từ cổng BIS
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Tanda Terima Biaya
+                  Biên Lai Phí
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Pemohon
+                  Người Đăng Ký
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Bukti pembayaran biaya pemerintah
+                  Bằng chứng thanh toán phí chính phủ
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Surat Otorisasi
+                  Thư Ủy Quyền
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Produsen
+                  Nhà Sản Xuất
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Mengesahkan AIR untuk bertindak atas nama mereka
+                  Ủy quyền AIR hành động thay mặt họ
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Sertifikat Pendaftaran Perusahaan
+                  Giấy Đăng Ký Công Ty
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Produsen
+                  Nhà Sản Xuất
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Bukti pendaftaran bisnis (PPN, ROC, dll.)
+                  Bằng chứng đăng ký kinh doanh (GST, ROC, v.v.)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Label/Mark Produk
+                  Nhãn/Nhãn Sản Phẩm
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left border-r border-gray-200 tracking-wide leading-loose max-w-full">
-                  Produsen
+                  Nhà Sản Xuất
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Harus menunjukkan logo BIS, standar IS, dan ruang pendaftaran
+                  Phải hiển thị logo BIS, tiêu chuẩn IS và không gian đăng ký
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2114,108 +2167,113 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
     <div id="registration" className="flex flex-col scroll-mt-20">
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Proses Pendaftaran</span>
+        <span className="service-left-content-index-heading">Registrierungsprozess</span>
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Proses Pendaftaran BIS CRS</h2>
+      <h2 className="service-left-content-heading-two">Quy Trình Đăng Ký BIS CRS</h2>
 
       <p className="service-left-content-paragraph">
-        Pendaftaran BIS CRS adalah proses yang sepenuhnya online melalui Portal Pendaftaran BIS. Ini tidak hanya mencakup prosedur yang meliputi pengunggahan dokumen. Ini juga memerlukan perhatian khusus dari segi teknis, pemahaman peraturan, serta kepatuhan total terhadap Standar India (IS).
+        Đăng ký BIS CRS là một quy trình hoàn toàn trực tuyến thông qua cổng Đăng ký BIS. 
+        Nó không chỉ bao gồm các thủ tục tải lên tài liệu. Nó cũng yêu cầu sự chú ý đặc biệt 
+        về bản chất kỹ thuật, sự hiểu biết về quy định và tuân thủ hoàn toàn với 
+        Tiêu chuẩn Ấn Độ (IS).
       </p>
 
       <p className="service-left-content-paragraph">
-        Proses BIS CRS, kami menyebutnya Sistem Sertifikasi dan Pendaftaran (CRS) untuk saat ini, dan berikut adalah bagaimana perjalanan untuk Sertifikasi BIS berlangsung.
+        Quy Trình BIS CRS, chúng tôi gọi nó là Hệ Thống Chứng Nhận và Đăng Ký (CRS) 
+        cho bây giờ, và đây là cách hành trình Chứng nhận BIS diễn ra.
       </p>
 
       <div className="service-left-content-heading-three">
-        Langkah 1: Pengujian Produk di Laboratorium yang Diberikan BIS
+        Bước 1: Kiểm Tra Sản Phẩm Tại Phòng Thí Nghiệm Được BIS Phê Duyệt
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "Pilih laboratorium dari daftar yang disetujui BIS",
-          "Kirimkan sampel produk yang akan diuji untuk IS yang relevan",
-          "Dapatkan laporan pengujian untuk sampel sesuai format laporan pengujian BIS",
+          "Chọn một phòng thí nghiệm từ danh sách được BIS phê duyệt",
+          "Nộp mẫu sản phẩm cần kiểm tra theo IS liên quan",
+          "Nhận báo cáo kiểm tra cho mẫu theo định dạng báo cáo kiểm tra BIS",
         ]}
       />
 
-      <div className="service-left-content-heading-three">Langkah 2: Persiapan Dokumen</div>
+      <div className="service-left-content-heading-three">Bước 2: Chuẩn Bị Tài Liệu</div>
 
       <PointsListWithoutHeading
         points={[
-          "Kumpulkan dokumen yang diperlukan, seperti yang telah diuraikan",
-          "Pastikan dokumen diberi nama, diformat, ditandatangani dan diberi tanggal dengan benar",
-          "Buat label produk yang merupakan stiker tiruan yang berisi ruang untuk logo BIS dan ruang untuk standar IS",
-        ]}
-      />
-
-      <div className="service-left-content-heading-three">
-        Langkah 3: Mengisi Aplikasi Online
-      </div>
-
-      <PointsListWithoutHeading
-        points={[
-          "Kunjungi Portal BIS CRS (https://www.bis.org.in/) dan masuk atau daftar",
-          "Lengkapi produk, nomor model, merek, dan unit manufaktur AIR, jika perlu",
-          "Ikuti langkah-langkah untuk pembayaran biaya Pemerintah",
+          "Thu thập các tài liệu cần thiết, như đã nêu",
+          "Đảm bảo tài liệu được đặt tên, định dạng, ký và ghi ngày tháng đúng cách",
+          "Phát triển nhãn sản phẩm là nhãn dán mô phỏng chứa không gian cho logo BIS và tiêu chuẩn IS",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        Langkah 4: Tinjauan BIS terhadap Aplikasi
+        Bước 3: Điền Đơn Đăng Ký Trực Tuyến
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "BIS memeriksa dokumen pendukung dan laporan laboratorium",
-          "Jika diperlukan, klarifikasi diajukan melalui portal",
-          "Tanggapi dengan dokumen yang benar atau penjelasan logis",
+          "Truy cập Cổng BIS CRS (https://www.bis.org.in/) và đăng nhập hoặc đăng ký",
+          "Hoàn thành sản phẩm, số model, thương hiệu và đơn vị sản xuất của AIR, nếu cần",
+          "Thực hiện theo các bước để thanh toán phí chính phủ",
+        ]}
+      />
+
+      <div className="service-left-content-heading-three">
+        Bước 4: BIS Xem Xét Đơn
+      </div>
+
+      <PointsListWithoutHeading
+        points={[
+          "BIS kiểm tra tài liệu hỗ trợ và báo cáo phòng thí nghiệm",
+          "Nếu cần, một yêu cầu làm rõ được đưa ra thông qua cổng",
+          "Trả lời bằng tài liệu đúng hoặc giải thích hợp lý",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        Jika ini adalah kueri klarifikasi, harus dijawab dalam 30 hari, atau aplikasi akan masuk ke arsip, yang berarti ditolak.
+        Nếu là truy vấn làm rõ, phải được trả lời trong vòng 30 ngày, nếu không đơn đăng ký 
+        chuyển sang tệp lưu trữ, có nghĩa là bị từ chối.
       </p>
 
-      <div className="service-left-content-heading-three">Langkah 5: Pemberian Pendaftaran BIS</div>
+      <div className="service-left-content-heading-three">Bước 5: Cấp Đăng Ký BIS</div>
 
       <PointsListWithoutHeading
         points={[
-          "Sertifikat BIS akan diterbitkan jika pejabat BIS puas dengan hasil penilaian yang mereka lakukan",
+          "Chứng chỉ BIS sẽ được cấp nếu các quan chức BIS hài lòng với kết quả đánh giá họ đã tiến hành",
         ]}
       />
 
-      <p className="service-left-content-paragraph">Sertifikat Anda akan mencakup:</p>
+      <p className="service-left-content-paragraph">Chứng chỉ của bạn sẽ bao gồm:</p>
 
       <PointsListWithoutHeading
         points={[
-          "Nomor pendaftaran BIS",
-          "Nama merek",
-          "Model produk",
-          "Kode Standar IS",
+          "Số đăng ký BIS",
+          "Tên thương hiệu",
+          "Model của sản phẩm",
+          "Mã Tiêu Chuẩn IS",
         ]}
       />
 
       <PointsListWithoutHeading
         points={[
-          "Label produk Anda harus berisi atau memiliki e-labelling dari detail sertifikat.",
+          "Nhãn sản phẩm của bạn phải chứa hoặc có e-labelling của chi tiết chứng chỉ.",
         ]}
       />
 
-      <div className="service-left-content-heading-three">Langkah 6: Pelabelan dan Distribusi</div>
+      <div className="service-left-content-heading-three">Bước 6: Dán Nhãn và Phân Phối</div>
 
       <PointsListWithoutHeading
         points={[
-          "Produk bersertifikat BIS harus membawa:",
-          "Logo BIS CRS",
-          "Kode IS yang terkait dengan produk",
-          "Nomor pendaftaran BIS",
-          "Nomor pendaftaran dan logo BIS harus dicetak atau disematkan secara digital sesuai dengan peraturan BIS.",
+          "Sản phẩm được chứng nhận BIS phải mang:",
+          "Logo BIS CRS  ",
+          "Mã IS liên quan đến sản phẩm",
+          "Số đăng ký BIS",
+          "Số đăng ký và logo BIS phải được in hoặc nhúng kỹ thuật số theo quy định BIS.",
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">Perkiraan Waktu</h3>
+      <h3 className="service-left-content-heading-three">Thời Gian Ước Tính</h3>
 
       {/* Timeline Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2224,60 +2282,60 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
-                  Aktivitas
+                  Hoạt Động
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Waktu Perkiraan
+                  Thời Gian Ước Tính
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Pengujian Produk
+                  Kiểm Tra Sản Phẩm
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  7-10 hari kerja
+                  7-10 Ngày Làm Việc
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Pengumpulan Dokumen
+                  Thu Thập Tài Liệu
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  2-3 hari
+                  2-3 Ngày
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Pengajuan Aplikasi
+                  Nộp Đơn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  1 hari
+                  1 Ngày
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Tinjauan BIS + Resolusi Kueri
+                  Xem Xét BIS + Xử Lý Truy Vấn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  10-15 hari kerja
+                  10-15 Ngày Làm Việc
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Penerbitan Sertifikat Akhir
+                  Cấp Chứng Chỉ Cuối Cùng
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  2-4 hari kerja
+                  2-4 Ngày Làm Việc
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  TOTAL
+                  TỔNG CỘNG
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full font-semibold">
-                  ~4 minggu
+                  ~4 Tuần
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2293,19 +2351,22 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
     <div id="fees" className="flex flex-col scroll-mt-20">
       {/* Fees */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Biaya Pendaftaran</span>
+        <span className="service-left-content-index-heading">Phí Đăng Ký</span>
         <Separator className="service-left-content-separator" />
       </div>
 
       <h2 className="service-left-content-heading-two">
-        Biaya Pendaftaran BIS CRS, Validitas & Pedoman Perpanjangan
+        Phí Đăng Ký BIS CRS, Hiệu Lực & Hướng Dẫn Gia Hạn
       </h2>
 
       <p className="service-left-content-paragraph">
-        Untuk mendapatkan sertifikat BIS di bawah CRS, pemohon diharuskan membayar biaya pemerintah serta pembayaran untuk produk yang akan diuji. Meskipun prosesnya online dan antarmukanya disederhanakan, banyak pemohon menghadapi penundaan pada permintaan mereka dan penolakan karena pembayaran kurang dan aplikasi yang salah diajukan.
+        Để có được chứng chỉ BIS dưới CRS, người đăng ký phải trả phí chính phủ cũng như 
+        khoản thanh toán cho sản phẩm cần kiểm tra. Mặc dù quy trình là trực tuyến và giao diện 
+        được tối ưu hóa, nhiều người đăng ký vẫn gặp chậm trễ trong yêu cầu của họ và 
+        bị từ chối do thanh toán thiếu và đơn đăng ký nộp sai.
       </p>
 
-      <h3 className="service-left-content-heading-three">Struktur Biaya untuk Pendaftaran CRS</h3>
+      <h3 className="service-left-content-heading-three">Cơ Cấu Phí Cho Đăng Ký CRS</h3>
 
       {/* Fee Structure Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2314,44 +2375,44 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
-                  Jenis Biaya
+                  Loại Phí
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Jumlah
+                  Số Tiền
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Biaya Pemerintah
+                  Phí Chính Phủ
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹53.000 + 18% PPN per laporan pengujian
+                  ₹53.000 + 18% GST mỗi báo cáo kiểm tra
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Biaya Pengujian
+                  Phí Kiểm Tra
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹10.000 – ₹20.000 + 18% PPN (bervariasi berdasarkan produk/lab)
+                  ₹10.000 – ₹20.000 + 18% GST (thay đổi tùy theo sản phẩm/phòng thí nghiệm)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Laporan Tambahan dalam Aplikasi yang Sama
+                  Báo Cáo Bổ Sung Trong Cùng Đơn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹20.000 + 18% PPN per laporan
+                  ₹20.000 + 18% GST mỗi báo cáo
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Biaya Perpanjangan
+                  Phí Gia Hạn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹53.000 + 18% PPN
+                  ₹53.000 + 18% GST
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2361,11 +2422,11 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
 
       <p className="service-left-content-paragraph italic text-center">
         <em>
-          Harga dapat berubah — konfirmasi di portal BIS atau dengan konsultan Anda.
+          Giá có thể được cập nhật — xác nhận trên cổng BIS hoặc với cố vấn của bạn.
         </em>
       </p>
 
-      <h3 className="service-left-content-heading-three">Validitas & Perpanjangan Sertifikat CRS</h3>
+      <h3 className="service-left-content-heading-three">Hiệu Lực & Gia Hạn Chứng Chỉ CRS</h3>
 
       {/* Certificate Validity & Renewal Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2374,44 +2435,44 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
-                  Parameter
+                  Tham Số
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Detail
+                  Chi Tiết
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Validitas Awal
+                  Hiệu Lực Ban Đầu
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  2 Tahun
+                  2 Năm
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Durasi Perpanjangan
+                  Thời Hạn Gia Hạn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Hingga 5 Tahun (jika tidak ada perubahan produk)
+                  Lên đến 5 năm (nếu không có thay đổi sản phẩm)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Proses Perpanjangan
+                  Quy Trình Gia Hạn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Online, berdasarkan afidavit baru + biaya perpanjangan
+                  Trực tuyến, dựa trên tờ khai tuyên thệ mới + phí gia hạn
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Pengujian Ulang Diperlukan?
+                  Kiểm Tra Lại Cần Thiết?
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Tidak kecuali spesifikasi produk/standar IS berubah
+                  Không, trừ khi thông số kỹ thuật sản phẩm/tiêu chuẩn IS thay đổi
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2432,21 +2493,23 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
       </div>
 
       <div className="service-left-content-heading-two">
-        Pedoman E-Labelling untuk Produk Bersertifikat CRS
+        Hướng Dẫn E-Labelling Cho Sản Phẩm Được Chứng Nhận CRS
       </div>
 
-      <div className="service-left-content-heading-three">Apa itu E-Labelling?</div>
+      <div className="service-left-content-heading-three">E-Labelling Là Gì?</div>
 
       <p className="service-left-content-paragraph">
-        E-labelling adalah praktik menampilkan informasi regulasi dalam perangkat secara elektronik alih-alih mencetak dan menempelkannya pada perangkat. Di bawah Skema Pendaftaran Wajib (CRS) BIS, produk tertentu, terutama perangkat kompak atau digital, dapat menampilkan detail sertifikat BIS, tanda standar dan kode IS melalui antarmuka perangkat lunak atau kemasan digital.
+        E-Labelling là việc hiển thị thông tin tuân thủ điện tử bên trong thiết bị thay vì in và đính kèm trên thiết bị. 
+        Dưới Chương Trình Đăng Ký Bắt Buộc (CRS) của BIS, một số sản phẩm, đặc biệt là thiết bị nhỏ gọn hoặc kỹ thuật số, 
+        có thể hiển thị chi tiết chứng chỉ BIS, nhãn hiệu tiêu chuẩn và mã IS thông qua 
+        giao diện người dùng phần mềm hoặc bao bì kỹ thuật số.
       </p>
 
       <div className="service-left-content-heading-three">
-        Pedoman BIS tentang E-Labelling: E-Labelling Elektronik (BIS CMD
-        3/8:1/6975. tanggal 03/12/2015)
+        Hướng Dẫn BIS Về E-Labelling: E-Labelling Điện Tử (BIS CMD 3/8:1/6975. Ngày 03.12.2015)
       </div>
 
-      <h3 className="service-left-content-heading-three">Persyaratan untuk E-Labelling:</h3>
+      <h3 className="service-left-content-heading-three">Yêu Cầu Đối Với E-Labelling:</h3>
 
       {/* E-Labelling Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2455,60 +2518,65 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left w-[300px] border-r border-gray-300 tracking-wide leading-loose">
-                  Aturan
+                  Quy Tắc
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-sm md:text-lg text-left tracking-wide leading-loose">
-                  Deskripsi
+                  Mô Tả
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Label Fisik pada Kemasan
+                  Nhãn Vật Lý Trên Bao Bì
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Kotak produk atau kemasan eksternal harus menampilkan logo BIS CRS dan detail pendaftaran.
+                  Hộp sản phẩm hoặc bao bì bên ngoài phải hiển thị Logo BIS CRS 
+                  và chi tiết đăng ký.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Label Lepas untuk Kemasan Massal
+                  Nhãn Dán Có Thể Gỡ Cho Bao Bì Số Lượng Lớn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Jika produk dikirim dalam jumlah besar, label perekat yang dapat dilepas pada kemasan luar dapat diterima.
+                  Nếu sản phẩm được vận chuyển trong bao bì số lượng lớn, nhãn dán có thể gỡ 
+                  trên bao bì bên ngoài được chấp nhận.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Tidak Perlu Alat untuk Akses
+                  Không Yêu Cầu Công Cụ Để Truy Cập
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Pengguna harus dapat mengakses info e-label tanpa memerlukan alat atau aksesori (misalnya, pengangkatan kartu SIM tidak diizinkan).
+                  Người dùng phải có thể truy cập thông tin nhãn E mà không cần công cụ 
+                  hoặc phụ kiện (ví dụ: không cho phép tháo thẻ SIM).
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Pemrograman Aman
+                  Lập Trình An Toàn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Info e-label harus tertanam dalam firmware/perangkat lunak, terkunci dari modifikasi oleh pihak ketiga mana pun.
+                  Thông tin nhãn E phải được nhúng vào firmware/phần mềm, khóa 
+                  chống thay đổi bởi bên thứ ba.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Akses Berbasis Menu
+                  Truy Cập Theo Menu
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Pengguna harus mengakses info dalam tidak lebih dari 4 langkah melalui antarmuka menu perangkat.
+                  Người dùng phải có thể truy cập thông tin trong không quá 4 bước thông qua 
+                  giao diện menu của thiết bị.
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium font-geist text-sm md:text-lg text-left border-r border-gray-200 bg-gray-50 tracking-wide leading-loose max-w-full">
-                  Instruksi Diperlukan
+                  Hướng Dẫn Yêu Cầu
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Instruksi tentang cara mengakses detail e-label harus disediakan.
+                  Anweisungen zum Zugriff auf E-Etikettdetails müssen bereitgestellt werden.
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2517,14 +2585,23 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        Bagaimana Sun Certifications India Dapat Membantu Anda dengan Pendaftaran BIS di bawah Skema CRS
+        Cách Sun Certifications India có thể giúp bạn trong Đăng Ký BIS dưới 
+        Chương Trình CRS
       </p>
 
-      <div className="service-left-content-heading-three">Mengapa Memilih Konsultan BIS?</div>
+      <div className="service-left-content-heading-three">Tại Sao Chọn Cố Vấn BIS?</div>
 
       <p className="service-left-content-paragraph">
-        Seluruh pendaftaran BIS CRS sangat teknis dan melelahkan dalam hal aturan dan volume dokumentasi. Tanpa pemahaman menyeluruh tentang Standar India, QCO terbaru, struktur laporan pengujian, dan alur kerja dalam antarmuka portal, pemohon berisiko kehilangan secara substansial dalam hal tindakan selanjutnya berupa penundaan, penolakan, atau ketidakpatuhan aktif jangka panjang. Di sinilah Sun Certifications India hadir dengan mitra yang terpercaya dan andal untuk membantu pemohon dalam setiap detail skema sertifikasi wajib. 
-      </p> 
+        Die gesamte BIS CRS-Registrierung ist sehr technisch und umfangreich in Bezug auf
+        Regeln und das Volumen der Dokumentation. Ohne gründliches
+        Verständnis der indischen Standards, aktueller QCOs, der
+        Struktur des Testberichts und der Workflows in der Portaloberfläche
+        riskieren Antragsteller erhebliche Verluste in Form von nachfolgenden
+        Maßnahmen von Verzögerungen, Ablehnung oder langfristiger aktiver Nichteinhaltung.
+        Hier kommt Sun Certifications India mit einem renommierten und
+        zuverlässigen Partner ins Spiel, um den Antragsteller in jedem Detail des
+        Pflichtzertifizierungsschemas zu unterstützen.
+      </p>
     </div>
   );
 };

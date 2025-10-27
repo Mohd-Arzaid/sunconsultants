@@ -40,6 +40,7 @@ import CRSRegistrationFrench from "./pages/CRSRegistration/CRSRegistrationFrench
 import CRSRegistrationItalian from "./pages/CRSRegistration/CRSRegistrationItalian";
 import CRSRegistrationDutch from "./pages/CRSRegistration/CRSRegistrationDutch";
 import CRSRegistrationGerman from "./pages/CRSRegistration/CRSRegistrationGerman";
+import CRSRegistrationVietnamese from "./pages/CRSRegistration/CRSRegistrationVietnamese";
 import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
 import WPC from "./pages/WPC";
@@ -438,6 +439,12 @@ function App() {
           <Route
             path="/de/was-ist-crs-bis-oder-crs-registrierung"
             element={<CRSRegistrationGerman />}
+          />
+
+          {/* Vietnamese */}
+          <Route
+            path="/vi/crs-bis-la-gi-hoac-dang-ky-crs"
+            element={<CRSRegistrationVietnamese />}
           />
 
           <Route
