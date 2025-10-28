@@ -653,4 +653,64 @@ export const videosData = [
       "Standards Compliance",
     ],
   },
+  {
+    id: 35,
+    embedId: "tMkCv4OV_CU",
+    title: "BIS Certification Video 35",
+    description:
+      "Detailed guide on BIS certification process, requirements, and compliance standards. Learn about Indian standards, testing procedures, and certification best practices for manufacturers.",
+    category: "BIS Certification",
+    duration: "PT10M00S", // 10 minutes (estimated)
+    uploadDate: "2025-01-17T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Indian Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Certification Process",
+      "Product Testing",
+      "Regulatory Requirements",
+    ],
+  },
+  {
+    id: 36,
+    embedId: "CArRYo9r4C0",
+    title: "BIS Certification Video 36",
+    description:
+      "Comprehensive overview of BIS certification requirements and process. Expert insights on documentation, testing standards, and compliance procedures for Indian market entry.",
+    category: "BIS Certification",
+    duration: "PT10M00S", // 10 minutes (estimated)
+    uploadDate: "2025-01-17T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Indian Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Certification Process",
+      "Documentation",
+      "Market Entry",
+    ],
+  },
+  {
+    id: 37,
+    embedId: "4S7hYOZuNvM",
+    title: "BIS Certification Video 37",
+    description:
+      "Complete guide to BIS certification process covering quality standards, regulatory compliance, and certification requirements. Essential information for manufacturers targeting the Indian market.",
+    category: "BIS Certification",
+    duration: "PT10M00S", // 10 minutes (estimated)
+    uploadDate: "2025-01-17T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Indian Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Certification Process",
+      "Quality Standards",
+      "Indian Market",
+    ],
+  },
 ];
