@@ -233,6 +233,7 @@ import IraqBlog from "./blogs/IraqBlog/IraqBlog";
 import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
 import ISIMark from "./pages/ISIMark/ISIMark";
 import ISIMarkJapanese from "./pages/ISIMark/ISIMarkJapanese";
+import ISIMarkKorean from "./pages/ISIMark/ISIMarkKorean";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -383,6 +384,11 @@ function App() {
           <Route
             path="/ja/bis-isi-mark-shounin"
             element={<ISIMarkJapanese />}
+          />
+          {/* ISIMark Korean Page */}
+          <Route
+            path="/ko/bis-isi-mark-injeung-indo-bis"
+            element={<ISIMarkKorean />}
           />
 
           <Route

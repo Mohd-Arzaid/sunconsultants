@@ -33,6 +33,8 @@ const ServicesRightSideContentKorean = () => {
     "/what-is-crs-bis-or-crs-registration",
     "/hangug-ui-bis-injeung",
     "/ko/crs-bis-i-mueos-inga-crs-deunglog",
+    // ISI Mark Korean Page Url
+    "/ko/bis-isi-mark-injeung-indo-bis",
   ];
 
   // Check if current path should show these components
@@ -552,6 +554,8 @@ const ContactFormServicesRightSideContentKorean = () => {
     if (path.includes("/hangug-ui-bis-injeung")) return "Korea Blog (Korean)";
     if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
       return "CRS Registration (Korean)";
+    if (path.includes("/ko/bis-isi-mark-injeung-indo-bis"))
+      return "ISI Mark - Korean Page";
   };
 
   const [formData, setFormData] = useState({
