@@ -41,6 +41,7 @@ import CRSRegistrationItalian from "./pages/CRSRegistration/CRSRegistrationItali
 import CRSRegistrationDutch from "./pages/CRSRegistration/CRSRegistrationDutch";
 import CRSRegistrationGerman from "./pages/CRSRegistration/CRSRegistrationGerman";
 import CRSRegistrationVietnamese from "./pages/CRSRegistration/CRSRegistrationVietnamese";
+import CRSRegistrationArabic from "./pages/CRSRegistration/CRSRegistrationArabic";
 import Peso from "./pages/Peso";
 import Tec from "./pages/Tec";
 import WPC from "./pages/WPC";
@@ -445,6 +446,12 @@ function App() {
           <Route
             path="/vi/crs-bis-la-gi-hoac-dang-ky-crs"
             element={<CRSRegistrationVietnamese />}
+          />
+
+          {/* Arabic */}
+          <Route
+            path="/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
+            element={<CRSRegistrationArabic />}
           />
 
           <Route
