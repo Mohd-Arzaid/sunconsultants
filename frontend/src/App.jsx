@@ -49,7 +49,7 @@ import BEE from "./pages/BEE";
 import CECertification from "./pages/CECertification";
 import EMIEMC from "./pages/EMIEMC";
 import CBCertification from "./pages/CBCertification";
-import ISIMark from "./pages/ISIMark";
+import ISIMark from "./pages/ISIMark/ISIMark";
 import BatteryWaste from "./pages/BatteryWaste";
 
 // Manual components - direct imports with named exports

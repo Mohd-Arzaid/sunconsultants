@@ -16,9 +16,9 @@ import Footer from "@/common/Footer";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import { BISCProductTable } from "@/components/manual/BISCertification";
-import Services from "../components/manual/Services";
+import Services from "../../components/manual/Services";
 
-import AboutAuthor from "../components/common/AboutAuthor";
+import AboutAuthor from "../../components/common/AboutAuthor";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -64,8 +64,14 @@ const ISIMark = () => {
 
         {/* Twitter Card Tags */}
 
-        <meta name="twitter:title" content="BIS ISI Mark Certification Process, Documents, Fee" />
-        <meta name="twitter:description" content=" ISI mark certification issued by the Bureau of Indian Standards is given to products undergoing stringent testing and inspection to meet the required standards and compliances" />
+        <meta
+          name="twitter:title"
+          content="BIS ISI Mark Certification Process, Documents, Fee"
+        />
+        <meta
+          name="twitter:description"
+          content=" ISI mark certification issued by the Bureau of Indian Standards is given to products undergoing stringent testing and inspection to meet the required standards and compliances"
+        />
 
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.href} />
@@ -383,8 +389,9 @@ const BISISIIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -434,10 +441,11 @@ const BISISIIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection.toLowerCase()
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection.toLowerCase()
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {t(`navigation.${item}`)}
@@ -457,18 +465,20 @@ const BISISIIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection.toLowerCase()
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection.toLowerCase()
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {t(`navigation.${item}`)}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection.toLowerCase()
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection.toLowerCase()
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -694,9 +704,9 @@ const OverviewSection = () => {
           href="#product-table"
           onClick={(e) => {
             e.preventDefault();
-            document.getElementById('product-table')?.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
+            document.getElementById("product-table")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
           }}
           className="text-[#125E5A] underline hover:text-[#1A8781] transition-colors cursor-pointer"
@@ -716,7 +726,9 @@ const OverviewSection = () => {
 
       <p
         className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose"
-        dangerouslySetInnerHTML={{ __html: t("overview.difference.bisCertification") }}
+        dangerouslySetInnerHTML={{
+          __html: t("overview.difference.bisCertification"),
+        }}
       />
 
       <p
