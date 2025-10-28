@@ -1,8 +1,9 @@
 import ServiceContactForm from "@/common/ServiceContactForm";
 import CDSCOContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
 import { useEffect, useRef, useState } from "react";
-import { ServiceFaq } from "./ISIMark/ISIMark";
+
 import Services from "@/components/manual/Services";
+import { ServiceFaq } from "@/components/manual/BISFM";
 
 const LHSCable = () => {
   return (

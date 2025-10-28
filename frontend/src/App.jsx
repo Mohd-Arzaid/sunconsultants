@@ -50,7 +50,6 @@ import BEE from "./pages/BEE";
 import CECertification from "./pages/CECertification";
 import EMIEMC from "./pages/EMIEMC";
 import CBCertification from "./pages/CBCertification";
-import ISIMark from "./pages/ISIMark/ISIMark";
 import BatteryWaste from "./pages/BatteryWaste";
 
 // Manual components - direct imports with named exports
@@ -232,6 +231,10 @@ import IranBlog from "./blogs/IranBlog/IranBlog";
 import LangIranBlog from "./blogs/IranBlog/LangIranBlog";
 import IraqBlog from "./blogs/IraqBlog/IraqBlog";
 import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
+import ISIMark from "./pages/ISIMark/ISIMark";
+
+
+
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -373,10 +376,12 @@ function App() {
             path="what-is-legal-metrology-or-lmpc-certificate"
             element={<LegalMetrology />}
           />
+          {/* ISIMark English Page */}
           <Route
-            path="a-guide-to-bis-certification-indian-bis"
+            path="/a-guide-to-bis-certification-indian-bis"
             element={<ISIMark />}
           />
+
           <Route
             path="epr-certificate-for-battery-waste-management-bwm"
             element={<BatteryWaste />}
@@ -1198,9 +1203,9 @@ function App() {
       {!isAdminRoute && (
         <SocialFloatingButtons hide={popupOpen || videoPopupOpen} />
       )}
-      {!isAdminRoute && (
+      {/* {!isAdminRoute && (
         <ContactFormPopup open={popupOpen} setOpen={setPopupOpen} />
-      )}
+      )} */}
     </>
   );
 }
