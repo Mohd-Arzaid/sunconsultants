@@ -232,9 +232,7 @@ import LangIranBlog from "./blogs/IranBlog/LangIranBlog";
 import IraqBlog from "./blogs/IraqBlog/IraqBlog";
 import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
 import ISIMark from "./pages/ISIMark/ISIMark";
-
-
-
+import ISIMarkJapanese from "./pages/ISIMark/ISIMarkJapanese";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -380,6 +378,11 @@ function App() {
           <Route
             path="/a-guide-to-bis-certification-indian-bis"
             element={<ISIMark />}
+          />
+          {/* ISIMark Japanese Page */}
+          <Route
+            path="/ja/bis-isi-mark-shounin"
+            element={<ISIMarkJapanese />}
           />
 
           <Route

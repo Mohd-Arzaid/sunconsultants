@@ -34,6 +34,8 @@ const ServicesRightSideContentJapanese = () => {
     "/ja/indo-no-bis-nintei-sukimu-x",
     "/nihon-niokeru-bis-ninsho",
     "/ja/crs-bis-toha-nani-ka-crs-toroku",
+    // ISIMark Japanese Page Url
+    "/ja/bis-isi-mark-shounin",
   ];
 
   // Check if current path should show these components
@@ -563,6 +565,9 @@ const ContactFormServicesRightSideContentJapanese = () => {
       return "Japan Blog Japanese";
     if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
       return "CRS Registration (Japanese)";
+    // ISIMark Japanese Page Url
+    if (path.includes("/ja/bis-isi-mark-shounin"))
+      return "ISI Mark - Japanese Page";
   };
 
   const [formData, setFormData] = useState({
