@@ -33,6 +33,7 @@ const ServicesRightSideContentJapanese = () => {
     "/what-is-crs-bis-or-crs-registration",
     "/ja/indo-no-bis-nintei-sukimu-x",
     "/nihon-niokeru-bis-ninsho",
+    "/ja/crs-bis-toha-nani-ka-crs-toroku",
   ];
 
   // Check if current path should show these components
@@ -554,11 +555,14 @@ const ContactFormServicesRightSideContentJapanese = () => {
   // Function to get page name based on URL
   const getPageName = () => {
     const path = window.location.pathname;
-    if (path.includes("/what-is-crs-bis-or-crs-registration")) return "CRS登録";
+    if (path.includes("/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration (Japanese)";
     if (path.includes("/ja/indo-no-bis-nintei-sukimu-x"))
       return "Scheme X Japanese";
     if (path.includes("/nihon-niokeru-bis-ninsho"))
       return "Japan Blog Japanese";
+    if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
+      return "CRS Registration (Japanese)";
   };
 
   const [formData, setFormData] = useState({

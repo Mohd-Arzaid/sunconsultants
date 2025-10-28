@@ -548,10 +548,10 @@ const ContactFormServicesRightSideContentKorean = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "CRS 등록";
+      return "CRS Registration (Korean)";
     if (path.includes("/hangug-ui-bis-injeung")) return "Korea Blog (Korean)";
     if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
-      return "CRS 등록 (Korean)";
+      return "CRS Registration (Korean)";
   };
 
   const [formData, setFormData] = useState({

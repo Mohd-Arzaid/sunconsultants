@@ -560,11 +560,11 @@ const ContactFormServicesRightSideContentIndonesian = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "Registrasi CRS";
+      return "CRS Registration (Indonesian)";
     if (path.includes("/sertifikasi-bis-di-indonesia"))
       return "Indonesia Blog (Indonesian)";
     if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
-      return "Registrasi CRS (Indonesian)";
+      return "CRS Registration (Indonesian)";
   };
 
   const [formData, setFormData] = useState({
