@@ -237,8 +237,8 @@ const CRSRegistrationHeroContactForm = () => {
     const path = window.location.pathname;
 
     // Service pages
-    if (path.includes("/fr/que-est-crs-bis-ou-enregistrement-crs"))
-      return "Enregistrement CRS";
+    if (path.includes("/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"))
+      return "CRS Registration French";
   };
 
   const [formData, setFormData] = useState({

@@ -234,6 +234,13 @@ import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
 import ISIMark from "./pages/ISIMark/ISIMark";
 import ISIMarkJapanese from "./pages/ISIMark/ISIMarkJapanese";
 import ISIMarkKorean from "./pages/ISIMark/ISIMarkKorean";
+import ISIMarkGerman from "./pages/ISIMark/ISIMarkGerman";
+import ISIMarkSpanish from "./pages/ISIMark/ISIMarkSpanish";
+import ISIMarkFrench from "./pages/ISIMark/ISIMarkFrench";
+import ISIMarkIndonesian from "./pages/ISIMark/ISIMarkIndonesian";
+import ISIMarkItalian from "./pages/ISIMark/ISIMarkItalian";
+import ISIMarkDutch from "./pages/ISIMark/ISIMarkDutch";
+import ISIMarkThai from "./pages/ISIMark/ISIMarkThai";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -389,6 +396,41 @@ function App() {
           <Route
             path="/ko/bis-isi-mark-injeung-indo-bis"
             element={<ISIMarkKorean />}
+          />
+          {/* ISIMark German Page */}
+          <Route
+            path="/de/bis-isi-mark-zertifizierung"
+            element={<ISIMarkGerman />}
+          />
+          {/* ISIMark Spanish Page */}
+          <Route
+            path="/es/certificacion-bis-isi-marca"
+            element={<ISIMarkSpanish />}
+          />
+          {/* ISIMark French Page */}
+          <Route
+            path="/fr/certification-bis-marque-isi"
+            element={<ISIMarkFrench />}
+          />
+          {/* ISIMark Indonesian Page */}
+          <Route
+            path="/id/sertifikasi-bis-isi-mark"
+            element={<ISIMarkIndonesian />}
+          />
+          {/* ISIMark Italian Page */}
+          <Route
+            path="/it/certificazione-bis-isi-mark"
+            element={<ISIMarkItalian />}
+          />
+          {/* ISIMark Dutch Page */}
+          <Route
+            path="/nl/bis-isi-mark-certificering"
+            element={<ISIMarkDutch />}
+          />
+          {/* ISIMark Thai Page */}
+          <Route
+            path="/th/bis-isi-mark-raprong"
+            element={<ISIMarkThai />}
           />
 
           <Route

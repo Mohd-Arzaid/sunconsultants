@@ -13,7 +13,7 @@ const productsData = [
   { 
     id: 1,
     isNumber: "IS 12330",
-    product: "Sulphate Resisting Portland Cement",
+    product: "Semen Portland Tahan Sulfat",
     notificationText:
       "1. Cement (Quality Control) Order, 2003\nS.O. No. 191(E) Dt. 17 Feb 2003",
     notificationLink:
@@ -22,115 +22,115 @@ const productsData = [
   {
     id: 2,
     isNumber: "IS 12600",
-    product: "Low heat Portland Cement",
+    product: "Semen Portland Panas Rendah",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 3,
     isNumber: "IS 1489 (Part 1)",
-    product: "Portland Pozzolana Cement-Part1 Fly-ash based",
+    product: "Semen Portland Pozzolana-Bagian 1 Berbasis Abu Terbang",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 4,
     isNumber: "IS 1489 (Part 2)",
-    product: "Portland Pozzolana Cement-Part 2 Calcined clay based",
+    product: "Semen Portland Pozzolana-Bagian 2 Berbasis Tanah Liat Terkalsinasi",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 5,
     isNumber: "IS 269",
-    product: "Ordinary Portland Cement",
+    product: "Semen Portland Biasa",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 6,
     isNumber: "IS 3466",
-    product: "Masonry Cement",
+    product: "Semen Masonry",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 7,
     isNumber: "IS 455",
-    product: "Portland Slag Cement",
+    product: "Semen Portland Slag",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 8,
     isNumber: "IS 6452",
-    product: "High Alumina Cement for Structural use",
+    product: "Semen Alumina Tinggi untuk Penggunaan Struktural",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 9,
     isNumber: "IS 6909",
-    product: "Super sulphated cement",
+    product: "Semen supersulfat",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 10,
     isNumber: "IS 8041",
-    product: "Rapid hardening Portland cement",
+    product: "Semen Portland pengerasan cepat",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 11,
     isNumber: "IS 8042",
-    product: "White Portland Cement",
+    product: "Semen Portland Putih",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 12,
     isNumber: "IS 8043",
-    product: "Hydrophobic Portland Cement",
+    product: "Semen Portland Hidrofobik",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 13,
     isNumber: "IS 8229",
-    product: "Oil well Cement",
+    product: "Semen Sumur Minyak",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 14,
     isNumber: "IS 16415: 2015",
-    product: "Composite Cement- Specification.",
+    product: "Semen Komposit - Spesifikasi.",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 15,
     isNumber: "IS 16993: 2018",
-    product: "Microfine Ordinary Portland Cement- Specification.",
+    product: "Semen Portland Biasa Mikrohalus - Spesifikasi.",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 16,
     isNumber: "IS 15895: 2018",
-    product: "High Alumina Refractory Cement.",
+    product: "Semen Tahan Api Alumina Tinggi.",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Electrical Wires, Cables, Appliances and Protection Devices and Accessories
+  // Kabel Listrik, Kabel, Peralatan dan Perangkat Perlindungan serta Aksesori
   {
     id: 17,
     isNumber: "IS 12640 (Part 1)",
     product:
-      "Residual current operated circuit breakers for house hold and similar uses-Part 1 Circuit breakers without integral overcurrent protection (RCCBs)",
+      "Pemutus sirkuit arus sisa untuk penggunaan rumah tangga dan sejenisnya-Bagian 1 Pemutus sirkuit tanpa perlindungan arus lebih integral (RCCBs)",
     notificationText:
       "2. Electrical Wires, Cables, Appliances and Protection Devices and Accessories (Quality Control) Order, 2003 \nS.O. 189(E) dated 17 Feb 2003\nSubsequent Amendments:\nS.O. 165(E) dated 5 Feb 2004,\nS.O. 1172(E) dated 22 Aug 2005,\nS.O. 512(E) dated 18 Feb 2009,\nS.O. 2058(E) dated 7 Aug 2009 &\nS.O. 2604(E) dated 19 Oct 2010",
     notificationLink:
@@ -140,21 +140,21 @@ const productsData = [
     id: 18,
     isNumber: "IS 12640 (Part 2)",
     product:
-      "Residual current operated circuit breakers for household and similar uses-Part 2 Circuit breakers with integral overcurrent protection(RCVOs)",
+      "Pemutus sirkuit arus sisa untuk penggunaan rumah tangga dan sejenisnya-Bagian 2 Pemutus sirkuit dengan perlindungan arus lebih integral (RCVOs)",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 19,
     isNumber: "IS 13010",
-    product: "AC watt-hour meters, class 0.5, 1 & 2",
+    product: "Meter watt-jam AC, kelas 0.5, 1 & 2",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 20,
     isNumber: "IS 13779",
-    product: "AC static watt-hour meters, class 1 & 2",
+    product: "Meter watt-jam statis AC, kelas 1 & 2",
     notificationText: "",
     notificationLink: "",
   },
@@ -162,7 +162,7 @@ const productsData = [
     id: 21,
     isNumber: "IS 14697",
     product:
-      "AC static transformer operated watt-hour and VAR-hour meters, class 0.2S & 0.5S",
+      "Meter watt-jam dan VAR-jam statis AC yang dioperasikan dengan transformator, kelas 0.2S & 0.5S",
     notificationText: "",
     notificationLink: "",
   },
@@ -170,7 +170,7 @@ const productsData = [
     id: 22,
     isNumber: "IS 15111 (Part 1 & 2)",
     product:
-      "Self Ballasted Lamps for General Lighting Services – Part 1 : Safety Requirements & Part 2 : Performance Requirements",
+      "Lampu Ballast Sendiri untuk Layanan Pencahayaan Umum – Bagian 1 : Persyaratan Keselamatan & Bagian 2 : Persyaratan Kinerja",
     notificationText: "",
     notificationLink: "",
   },
@@ -178,7 +178,7 @@ const productsData = [
     id: 23,
     isNumber: "IS 302 (Part 2/Sec 3)",
     product:
-      "Safety of household and similar electrical appliances – Electric iron",
+      "Keselamatan peralatan listrik rumah tangga dan sejenisnya – Setrika listrik",
     notificationText: "",
     notificationLink: "",
   },
@@ -186,7 +186,7 @@ const productsData = [
     id: 24,
     isNumber: "IS 302 (Part 2/Sec 201)",
     product:
-      "Safety of household and similar electrical appliances– Electric immersion water-heaters",
+      "Keselamatan peralatan listrik rumah tangga dan sejenisnya – Pemanas air celup listrik",
     notificationText: "",
     notificationLink: "",
   },
@@ -194,7 +194,7 @@ const productsData = [
     id: 25,
     isNumber: "IS 302 (Part 2/Sec 202)",
     product:
-      "Safety of household and similar electrical appliances –Electric stoves",
+      "Keselamatan peralatan listrik rumah tangga dan sejenisnya – Kompor listrik",
     notificationText: "",
     notificationLink: "",
   },
@@ -202,21 +202,21 @@ const productsData = [
     id: 26,
     isNumber: "IS 302 (Part 2/Sec 30)",
     product:
-      "Safety of household and similar electrical appliances-Room heaters",
+      "Keselamatan peralatan listrik rumah tangga dan sejenisnya - Pemanas ruangan",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 27,
     isNumber: "IS 3854",
-    product: "Switches for domestic and similar purposes",
+    product: "Sakelar untuk keperluan domestik dan sejenisnya",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 28,
     isNumber: "IS 418",
-    product: "Tungsten filament general service electric lamps (upto100 W )",
+    product: "Lampu listrik layanan umum filamen tungsten (hingga 100 W)",
     notificationText: "",
     notificationLink: "",
   },
@@ -224,97 +224,97 @@ const productsData = [
     id: 31,
     isNumber: "IS 9968 (Part 1)",
     product:
-      "Elastomer insulated cables (Part.1): For working voltages up to and including1100 V",
+      "Kabel berisolasi Elastomer (Bagian.1): Untuk tegangan kerja hingga dan termasuk 1100 V",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Batteries
+  // Baterai
   {
     id: 32,
     isNumber: "IS 8144",
-    product: "Multi-Purpose dry batteries",
+    product: "Baterai kering multi-guna",
     notificationText: "3. SO 516(E), dated 25th May 1987",
     notificationLink: "",
   },
 
-  // Food & Related Products (De-notified from compulsory BIS certification)
+  // Makanan & Produk Terkait (Dinyatakan tidak wajib dari sertifikasi BIS wajib)
   {
     id: 33,
     isNumber: "IS 15757",
-    product: "Follow-up formula –complimentary foods",
+    product: "Formula tindak lanjut – makanan pelengkap",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 34,
     isNumber: "IS 11536",
-    product: "Processed cereal based complementary foods",
+    product: "Makanan pelengkap berbasis sereal olahan",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 35,
     isNumber: "IS 1165",
-    product: "Milk-powder",
+    product: "Susu bubuk",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 36,
     isNumber: "IS 1166",
-    product: "Condensed milk, partly skimmed and skimmed condensed milk",
+    product: "Susu kental, sebagian skim dan susu kental skim",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 37,
     isNumber: "IS 12176",
-    product: "Sweetened ultra high temperature treated condensed milk",
+    product: "Susu kental manis yang dirawat dengan suhu ultra tinggi",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 38,
     isNumber: "IS 13334 (Part 1)",
-    product: "Skimmed milk-powder, standard grade",
+    product: "Susu bubuk skim, kelas standar",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 39,
     isNumber: "IS 13334 (Part 2)",
-    product: "Skimmed milk-powder, extra grade",
+    product: "Susu bubuk skim, kelas ekstra",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 40,
     isNumber: "IS 13428",
-    product: "Packaged Natural Mineral Water",
+    product: "Air Mineral Alam dalam Kemasan",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 41,
     isNumber: "IS 14433",
-    product: "Infant milk substitutes",
+    product: "Pengganti susu bayi",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 42,
     isNumber: "IS 17945: 2022",
-    product: "Food for Special Medical Purpose intended for Infants",
+    product: "Makanan untuk Keperluan Medis Khusus yang ditujukan untuk Bayi",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Feeding Bottles
+  // Botol Susu
   {
     id: 43,
     isNumber: "IS 14625",
-    product: "Plastic Feeding Bottles",
+    product: "Botol Susu Plastik",
     notificationText:
       "5. The Infant Milk Substitutes, Feeding Bottles and Infant Foods (regulation of production, supply and distribution), Act 1992",
     notificationLink: "",
@@ -322,16 +322,16 @@ const productsData = [
   {
     id: 44,
     isNumber: "IS 5168",
-    product: "Glass Feeding Bottles",
+    product: "Botol Susu Kaca",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Oil Pressure Stoves
+  // Kompor Tekanan Minyak
   {
     id: 45,
     isNumber: "IS 10109",
-    product: "Oil pressure stove, offset burner type",
+    product: "Kompor tekanan minyak, tipe pembakar offset",
     notificationText:
       "6. Oil Pressure Stoves (QC) Order, 1997\nSO 451(E) dated 16 June 1997",
     notificationLink: "",
@@ -339,23 +339,23 @@ const productsData = [
   {
     id: 46,
     isNumber: "IS 2787",
-    product: "Multi-burner oil pressure stoves",
+    product: "Kompor tekanan minyak multi-burner",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 47,
     isNumber: "IS 1342",
-    product: "Oil pressure stoves",
+    product: "Kompor tekanan minyak",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Automobile Accessories
+  // Aksesori Otomotif
   {
     id: 48,
     isNumber: "IS 13098",
-    product: "Automotive vehicles –Tubes for pneumatic tyres",
+    product: "Kendaraan bermotor – Tabung untuk ban pneumatik",
     notificationText:
       "7. Pneumatic Tyres and Tubes for Automotive Vehicles (Quality Control) Order, 2009\nS.O. No. 2953(E) dated 19-11-2009\nSubsequent Amendments\nS.O. No. 1057 (E) dated 11-05-2010\nS.O. No. 2758 (E) dated 9-11-2010",
     notificationLink: "",
@@ -364,7 +364,7 @@ const productsData = [
     id: 49,
     isNumber: "IS 15627",
     product:
-      "Automotive vehicles– Pneumatic tyres for two and three-wheeled motor vehicles",
+      "Kendaraan bermotor – Ban pneumatik untuk kendaraan bermotor dua dan tiga roda",
     notificationText: "",
     notificationLink: "",
   },
@@ -372,7 +372,7 @@ const productsData = [
     id: 50,
     isNumber: "IS 15633",
     product:
-      "Automotive vehicles-Pneumatic tyres for passenger car vehicles– Diagonal and radial ply",
+      "Kendaraan bermotor - Ban pneumatik untuk kendaraan penumpang – Ply diagonal dan radial",
     notificationText: "",
     notificationLink: "",
   },
@@ -380,16 +380,16 @@ const productsData = [
     id: 51,
     isNumber: "IS 15636",
     product:
-      "Automotive vehicles- Pneumatic tyres for commercial vehicles-Diagonal and radial ply",
+      "Kendaraan bermotor - Ban pneumatik untuk kendaraan komersial - Ply diagonal dan radial",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Cylinder, Valves and Regulator
+  // Silinder, Katup dan Regulator
   {
     id: 52,
     isNumber: "IS 14899",
-    product: "Liquefied petroleum gas containers for automotive use",
+    product: "Wadah gas minyak bumi cair untuk penggunaan otomotif",
     notificationText:
       "8. Explosive Act, 1884\nGas Cylinder Rules, 2016\nG.S.R. No. 1081(E) Dt. 22-11-2016",
     notificationLink: "",
@@ -398,7 +398,7 @@ const productsData = [
     id: 53,
     isNumber: "IS 15100",
     product:
-      "Multifunction valve assembly for permanently fixed liquefied petroleum gas (LPG) containers for automotive use",
+      "Perakitan katup multifungsi untuk wadah gas minyak bumi cair (LPG) yang dipasang permanen untuk penggunaan otomotif",
     notificationText: "",
     notificationLink: "",
   },
@@ -406,7 +406,7 @@ const productsData = [
     id: 54,
     isNumber: "IS 3196 (Part 4)",
     product:
-      "Welded low carbon steel cylinders exceeding 5 litre Water capacity for low pressure liquefiable gases Part 4 cylinders for toxic and corrosive gases",
+      "Silinder baja karbon rendah lasan melebihi kapasitas air 5 liter untuk gas yang dapat dicairkan bertekanan rendah Bagian 4 silinder untuk gas beracun dan korosif",
     notificationText: "",
     notificationLink: "",
   },
@@ -414,7 +414,7 @@ const productsData = [
     id: 55,
     isNumber: "IS 3196 (Part 1)",
     product:
-      "Welded low carbon steel gas cylinder exceeding 5 litre water capacity for low pressure liquefiable gases Part 1 cylinders for liquefied petroleum gas (LPG)",
+      "Silinder gas baja karbon rendah lasan melebihi kapasitas air 5 liter untuk gas yang dapat dicairkan bertekanan rendah Bagian 1 silinder untuk gas minyak bumi cair (LPG)",
     notificationText: "",
     notificationLink: "",
   },
@@ -422,7 +422,7 @@ const productsData = [
     id: 56,
     isNumber: "IS 3196 (Part 2)",
     product:
-      "Welded low carbon steel gas cylinder exceeding 5-litre water capacity for low pressure liquefiable gases Part 2 cylinders for liquefiable gases other than LPG.",
+      "Silinder gas baja karbon rendah lasan melebihi kapasitas air 5 liter untuk gas yang dapat dicairkan bertekanan rendah Bagian 2 silinder untuk gas yang dapat dicairkan selain LPG.",
     notificationText: "",
     notificationLink: "",
   },
@@ -430,14 +430,14 @@ const productsData = [
     id: 57,
     isNumber: "IS 3224",
     product:
-      "Valve fittings for compressed gas cylinder excluding liquefied petroleum gas cylinders",
+      "Perlengkapan katup untuk silinder gas terkompresi tidak termasuk silinder gas minyak bumi cair",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 58,
     isNumber: "IS 3745",
-    product: "Yoke Type Valve Connection for Small Medical Gas Cylinders",
+    product: "Sambungan Katup Tipe Yoke untuk Silinder Gas Medis Kecil",
     notificationText: "",
     notificationLink: "",
   },
@@ -445,7 +445,7 @@ const productsData = [
     id: 59,
     isNumber: "IS 7142",
     product:
-      "Welded low carbon steel cylinders for low pressure liquefiable gases not exceeding 5 litre water capacity",
+      "Silinder baja karbon rendah lasan untuk gas yang dapat dicairkan bertekanan rendah tidak melebihi kapasitas air 5 liter",
     notificationText: "",
     notificationLink: "",
   },
@@ -453,7 +453,7 @@ const productsData = [
     id: 60,
     isNumber: "IS 7285 (Part 1)",
     product:
-      "Refillable Seamless steel gas cylinders Part1 Normalized steel cylinders",
+      "Silinder gas baja seamless yang dapat diisi ulang Bagian 1 Silinder baja ternormalisasi",
     notificationText: "",
     notificationLink: "",
   },
@@ -461,13 +461,13 @@ const productsData = [
     id: 61,
     isNumber: "IS 7285 (Part 2)",
     product:
-      "Refillable Seamless steel gas cylinders Part 2 Quenched and tempered steel cylinders with tensile strength less than 1100 MPa (112 kgf/mm2)",
+      "Silinder gas baja seamless yang dapat diisi ulang Bagian 2 Silinder baja yang dikeraskan dan ditempa dengan kekuatan tarik kurang dari 1100 MPa (112 kgf/mm2)",
     notificationText: "",
     notificationLink: "",
   },
 ];
 
-export const ISIMarkAndBISCommonTable = () => {
+export const ISIMarkAndBISCommonTableIndonesian = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 20;
@@ -515,14 +515,14 @@ export const ISIMarkAndBISCommonTable = () => {
     <section ref={tableRef} className="w-full pb-12 ">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
         <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mb-4">
-          Products Under BIS Certification as per Indian Standards
+          Produk di bawah Sertifikasi BIS sesuai Standar India
         </h2>
 
         <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-8">
-          The following table lists products that require BIS certification in
-          India along with their applicable Indian Standard (IS) numbers. These
-          standards ensure quality, safety, and reliability of products in the
-          Indian market.
+          Tabel berikut mencantumkan produk yang memerlukan sertifikasi BIS di
+          India beserta nomor Standar India (IS) yang berlaku. Standar ini
+          memastikan kualitas, keselamatan, dan keandalan produk di
+          pasar India.
         </p>
 
         <div className="relative mb-6">
@@ -531,7 +531,7 @@ export const ISIMarkAndBISCommonTable = () => {
           </div>
           <input
             type="text"
-            placeholder="Search for Products by name or IS number..."
+            placeholder="Cari produk berdasarkan nama atau nomor IS..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -543,16 +543,16 @@ export const ISIMarkAndBISCommonTable = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                  S.No
+                  No
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
-                  IS No.
+                  No. IS
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                  Product
+                  Produk
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  For Notification Details Please click on the given link
+                  Untuk detail notifikasi, silakan klik tautan yang diberikan
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -605,17 +605,17 @@ export const ISIMarkAndBISCommonTable = () => {
                 disabled={currentPage === 1}
                 className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Previous
+                Sebelumnya
               </button>
               <span className="px-4 py-2 font-geist text-sm">
-                Page {currentPage} of {totalPages}
+                Halaman {currentPage} dari {totalPages}
               </span>
               <button
                 onClick={handleNextPage}
                 disabled={currentPage === totalPages}
                 className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Next
+                Berikutnya
               </button>
             </div>
           </div>

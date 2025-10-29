@@ -247,8 +247,8 @@ const SchemeXArabicHeroContactForm = () => {
     const getPageName = () => {
         const path = window.location.pathname;
         // Service pages
-        if (path.includes("/indian-bis-certification-under-scheme-x"))
-            return "Scheme X";
+        if (path.includes("/ar/shahadat-bis-alhind-tahata-almukhatat-x"))
+            return "Scheme X Arabic";
     };
 
     const [formData, setFormData] = useState({

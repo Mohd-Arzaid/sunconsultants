@@ -13,7 +13,7 @@ const productsData = [
   { 
     id: 1,
     isNumber: "IS 12330",
-    product: "Sulphate Resisting Portland Cement",
+    product: "Portland Cement Bestand tegen Sulfaat",
     notificationText:
       "1. Cement (Quality Control) Order, 2003\nS.O. No. 191(E) Dt. 17 Feb 2003",
     notificationLink:
@@ -22,115 +22,115 @@ const productsData = [
   {
     id: 2,
     isNumber: "IS 12600",
-    product: "Low heat Portland Cement",
+    product: "Portland Cement met Laag Warmte",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 3,
     isNumber: "IS 1489 (Part 1)",
-    product: "Portland Pozzolana Cement-Part1 Fly-ash based",
+    product: "Portland Pozzolana Cement-Deel 1 Gebaseerd op Vliegas",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 4,
     isNumber: "IS 1489 (Part 2)",
-    product: "Portland Pozzolana Cement-Part 2 Calcined clay based",
+    product: "Portland Pozzolana Cement-Deel 2 Gebaseerd op Gecalcineerde Klei",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 5,
     isNumber: "IS 269",
-    product: "Ordinary Portland Cement",
+    product: "Gewoon Portland Cement",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 6,
     isNumber: "IS 3466",
-    product: "Masonry Cement",
+    product: "Metselwerk Cement",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 7,
     isNumber: "IS 455",
-    product: "Portland Slag Cement",
+    product: "Portland Slakken Cement",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 8,
     isNumber: "IS 6452",
-    product: "High Alumina Cement for Structural use",
+    product: "Hoog Alumina Cement voor Structureel Gebruik",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 9,
     isNumber: "IS 6909",
-    product: "Super sulphated cement",
+    product: "Supersulfaat cement",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 10,
     isNumber: "IS 8041",
-    product: "Rapid hardening Portland cement",
+    product: "Snelhardend Portland cement",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 11,
     isNumber: "IS 8042",
-    product: "White Portland Cement",
+    product: "Wit Portland Cement",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 12,
     isNumber: "IS 8043",
-    product: "Hydrophobic Portland Cement",
+    product: "Hydrofoob Portland Cement",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 13,
     isNumber: "IS 8229",
-    product: "Oil well Cement",
+    product: "Oliebron Cement",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 14,
     isNumber: "IS 16415: 2015",
-    product: "Composite Cement- Specification.",
+    product: "Samenstelling Cement- Specificatie.",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 15,
     isNumber: "IS 16993: 2018",
-    product: "Microfine Ordinary Portland Cement- Specification.",
+    product: "Microfijn Gewoon Portland Cement- Specificatie.",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 16,
     isNumber: "IS 15895: 2018",
-    product: "High Alumina Refractory Cement.",
+    product: "Hoog Alumina Vuurvast Cement.",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Electrical Wires, Cables, Appliances and Protection Devices and Accessories
+  // Elektrische Draden, Kabels, Apparaten en Beveiligingsapparaten en Accessoires
   {
     id: 17,
     isNumber: "IS 12640 (Part 1)",
     product:
-      "Residual current operated circuit breakers for house hold and similar uses-Part 1 Circuit breakers without integral overcurrent protection (RCCBs)",
+      "Aardlekschakelaars voor huishoudelijk gebruik en soortgelijke toepassingen-Deel 1 Automatische schakelaars zonder geïntegreerde overstroombeveiliging (RCCBs)",
     notificationText:
       "2. Electrical Wires, Cables, Appliances and Protection Devices and Accessories (Quality Control) Order, 2003 \nS.O. 189(E) dated 17 Feb 2003\nSubsequent Amendments:\nS.O. 165(E) dated 5 Feb 2004,\nS.O. 1172(E) dated 22 Aug 2005,\nS.O. 512(E) dated 18 Feb 2009,\nS.O. 2058(E) dated 7 Aug 2009 &\nS.O. 2604(E) dated 19 Oct 2010",
     notificationLink:
@@ -140,21 +140,21 @@ const productsData = [
     id: 18,
     isNumber: "IS 12640 (Part 2)",
     product:
-      "Residual current operated circuit breakers for household and similar uses-Part 2 Circuit breakers with integral overcurrent protection(RCVOs)",
+      "Aardlekschakelaars voor huishoudelijk gebruik en soortgelijke toepassingen-Deel 2 Automatische schakelaars met geïntegreerde overstroombeveiliging (RCVOs)",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 19,
     isNumber: "IS 13010",
-    product: "AC watt-hour meters, class 0.5, 1 & 2",
+    product: "AC watt-uur meters, klasse 0.5, 1 & 2",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 20,
     isNumber: "IS 13779",
-    product: "AC static watt-hour meters, class 1 & 2",
+    product: "AC statische watt-uur meters, klasse 1 & 2",
     notificationText: "",
     notificationLink: "",
   },
@@ -162,7 +162,7 @@ const productsData = [
     id: 21,
     isNumber: "IS 14697",
     product:
-      "AC static transformer operated watt-hour and VAR-hour meters, class 0.2S & 0.5S",
+      "AC statische transformator aangedreven watt-uur en VAR-uur meters, klasse 0.2S & 0.5S",
     notificationText: "",
     notificationLink: "",
   },
@@ -170,7 +170,7 @@ const productsData = [
     id: 22,
     isNumber: "IS 15111 (Part 1 & 2)",
     product:
-      "Self Ballasted Lamps for General Lighting Services – Part 1 : Safety Requirements & Part 2 : Performance Requirements",
+      "Zelfballast Lampen voor Algemene Verlichtingsdiensten – Deel 1 : Veiligheidsvereisten & Deel 2 : Prestatievereisten",
     notificationText: "",
     notificationLink: "",
   },
@@ -178,7 +178,7 @@ const productsData = [
     id: 23,
     isNumber: "IS 302 (Part 2/Sec 3)",
     product:
-      "Safety of household and similar electrical appliances – Electric iron",
+      "Veiligheid van huishoudelijke en soortgelijke elektrische apparaten – Elektrisch strijkijzer",
     notificationText: "",
     notificationLink: "",
   },
@@ -186,7 +186,7 @@ const productsData = [
     id: 24,
     isNumber: "IS 302 (Part 2/Sec 201)",
     product:
-      "Safety of household and similar electrical appliances– Electric immersion water-heaters",
+      "Veiligheid van huishoudelijke en soortgelijke elektrische apparaten – Elektrische onderdompelbare waterverwarmers",
     notificationText: "",
     notificationLink: "",
   },
@@ -194,7 +194,7 @@ const productsData = [
     id: 25,
     isNumber: "IS 302 (Part 2/Sec 202)",
     product:
-      "Safety of household and similar electrical appliances –Electric stoves",
+      "Veiligheid van huishoudelijke en soortgelijke elektrische apparaten – Elektrische fornuizen",
     notificationText: "",
     notificationLink: "",
   },
@@ -202,21 +202,21 @@ const productsData = [
     id: 26,
     isNumber: "IS 302 (Part 2/Sec 30)",
     product:
-      "Safety of household and similar electrical appliances-Room heaters",
+      "Veiligheid van huishoudelijke en soortgelijke elektrische apparaten - Kamerverwarmers",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 27,
     isNumber: "IS 3854",
-    product: "Switches for domestic and similar purposes",
+    product: "Schakelaars voor huishoudelijk gebruik en soortgelijke doeleinden",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 28,
     isNumber: "IS 418",
-    product: "Tungsten filament general service electric lamps (upto100 W )",
+    product: "Wolfraam gloeidraad algemene service elektrische lampen (tot 100 W)",
     notificationText: "",
     notificationLink: "",
   },
@@ -224,97 +224,97 @@ const productsData = [
     id: 31,
     isNumber: "IS 9968 (Part 1)",
     product:
-      "Elastomer insulated cables (Part.1): For working voltages up to and including1100 V",
+      "Elastomeer geïsoleerde kabels (Deel.1): Voor werkende spanningen tot en met 1100 V",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Batteries
+  // Batterijen
   {
     id: 32,
     isNumber: "IS 8144",
-    product: "Multi-Purpose dry batteries",
+    product: "Meervoudige droge batterijen",
     notificationText: "3. SO 516(E), dated 25th May 1987",
     notificationLink: "",
   },
 
-  // Food & Related Products (De-notified from compulsory BIS certification)
+  // Voedsel & Gerelateerde Producten (Gedeclareerd niet verplicht van verplichte BIS certificering)
   {
     id: 33,
     isNumber: "IS 15757",
-    product: "Follow-up formula –complimentary foods",
+    product: "Opvolgformule – aanvullend voedsel",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 34,
     isNumber: "IS 11536",
-    product: "Processed cereal based complementary foods",
+    product: "Verwerkte granen gebaseerd aanvullend voedsel",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 35,
     isNumber: "IS 1165",
-    product: "Milk-powder",
+    product: "Melkpoeder",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 36,
     isNumber: "IS 1166",
-    product: "Condensed milk, partly skimmed and skimmed condensed milk",
+    product: "Gecondenseerde melk, gedeeltelijk afgeroomd en afgeroomde gecondenseerde melk",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 37,
     isNumber: "IS 12176",
-    product: "Sweetened ultra high temperature treated condensed milk",
+    product: "Gezoete ultra hoge temperatuur behandelde gecondenseerde melk",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 38,
     isNumber: "IS 13334 (Part 1)",
-    product: "Skimmed milk-powder, standard grade",
+    product: "Afgeroomd melkpoeder, standaard kwaliteit",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 39,
     isNumber: "IS 13334 (Part 2)",
-    product: "Skimmed milk-powder, extra grade",
+    product: "Afgeroomd melkpoeder, extra kwaliteit",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 40,
     isNumber: "IS 13428",
-    product: "Packaged Natural Mineral Water",
+    product: "Verpakt Natuurlijk Mineraalwater",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 41,
     isNumber: "IS 14433",
-    product: "Infant milk substitutes",
+    product: "Melkvervangers voor zuigelingen",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 42,
     isNumber: "IS 17945: 2022",
-    product: "Food for Special Medical Purpose intended for Infants",
+    product: "Voedsel voor Speciaal Medisch Doel bestemd voor Zuigelingen",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Feeding Bottles
+  // Flesjes
   {
     id: 43,
     isNumber: "IS 14625",
-    product: "Plastic Feeding Bottles",
+    product: "Plastic Flesjes",
     notificationText:
       "5. The Infant Milk Substitutes, Feeding Bottles and Infant Foods (regulation of production, supply and distribution), Act 1992",
     notificationLink: "",
@@ -322,16 +322,16 @@ const productsData = [
   {
     id: 44,
     isNumber: "IS 5168",
-    product: "Glass Feeding Bottles",
+    product: "Glas Flesjes",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Oil Pressure Stoves
+  // Olie Druk Kachels
   {
     id: 45,
     isNumber: "IS 10109",
-    product: "Oil pressure stove, offset burner type",
+    product: "Olie druk kachel, offset brander type",
     notificationText:
       "6. Oil Pressure Stoves (QC) Order, 1997\nSO 451(E) dated 16 June 1997",
     notificationLink: "",
@@ -339,23 +339,23 @@ const productsData = [
   {
     id: 46,
     isNumber: "IS 2787",
-    product: "Multi-burner oil pressure stoves",
+    product: "Meerdere brander olie druk kachels",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 47,
     isNumber: "IS 1342",
-    product: "Oil pressure stoves",
+    product: "Olie druk kachels",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Automobile Accessories
+  // Automobiel Accessoires
   {
     id: 48,
     isNumber: "IS 13098",
-    product: "Automotive vehicles –Tubes for pneumatic tyres",
+    product: "Automobiel voertuigen – Binnenbanden voor pneumatische banden",
     notificationText:
       "7. Pneumatic Tyres and Tubes for Automotive Vehicles (Quality Control) Order, 2009\nS.O. No. 2953(E) dated 19-11-2009\nSubsequent Amendments\nS.O. No. 1057 (E) dated 11-05-2010\nS.O. No. 2758 (E) dated 9-11-2010",
     notificationLink: "",
@@ -364,7 +364,7 @@ const productsData = [
     id: 49,
     isNumber: "IS 15627",
     product:
-      "Automotive vehicles– Pneumatic tyres for two and three-wheeled motor vehicles",
+      "Automobiel voertuigen – Pneumatische banden voor twee- en driewielige motorvoertuigen",
     notificationText: "",
     notificationLink: "",
   },
@@ -372,7 +372,7 @@ const productsData = [
     id: 50,
     isNumber: "IS 15633",
     product:
-      "Automotive vehicles-Pneumatic tyres for passenger car vehicles– Diagonal and radial ply",
+      "Automobiel voertuigen - Pneumatische banden voor personenauto's – Diagonaal en radiaal lagen",
     notificationText: "",
     notificationLink: "",
   },
@@ -380,16 +380,16 @@ const productsData = [
     id: 51,
     isNumber: "IS 15636",
     product:
-      "Automotive vehicles- Pneumatic tyres for commercial vehicles-Diagonal and radial ply",
+      "Automobiel voertuigen - Pneumatische banden voor commerciële voertuigen - Diagonaal en radiaal lagen",
     notificationText: "",
     notificationLink: "",
   },
 
-  // Cylinder, Valves and Regulator
+  // Cilinder, Ventielen en Regelaar
   {
     id: 52,
     isNumber: "IS 14899",
-    product: "Liquefied petroleum gas containers for automotive use",
+    product: "Vloeibaar gemaakte petroleumgas containers voor automobiel gebruik",
     notificationText:
       "8. Explosive Act, 1884\nGas Cylinder Rules, 2016\nG.S.R. No. 1081(E) Dt. 22-11-2016",
     notificationLink: "",
@@ -398,7 +398,7 @@ const productsData = [
     id: 53,
     isNumber: "IS 15100",
     product:
-      "Multifunction valve assembly for permanently fixed liquefied petroleum gas (LPG) containers for automotive use",
+      "Multifunctionele ventielassemblage voor permanent gefixeerde vloeibaar gemaakte petroleumgas (LPG) containers voor automobiel gebruik",
     notificationText: "",
     notificationLink: "",
   },
@@ -406,7 +406,7 @@ const productsData = [
     id: 54,
     isNumber: "IS 3196 (Part 4)",
     product:
-      "Welded low carbon steel cylinders exceeding 5 litre Water capacity for low pressure liquefiable gases Part 4 cylinders for toxic and corrosive gases",
+      "Gelaste laagkoolstofstaal cilinders met meer dan 5 liter watercapaciteit voor lage druk vloeibaar gemaakte gassen Deel 4 cilinders voor toxische en corrosieve gassen",
     notificationText: "",
     notificationLink: "",
   },
@@ -414,7 +414,7 @@ const productsData = [
     id: 55,
     isNumber: "IS 3196 (Part 1)",
     product:
-      "Welded low carbon steel gas cylinder exceeding 5 litre water capacity for low pressure liquefiable gases Part 1 cylinders for liquefied petroleum gas (LPG)",
+      "Gelaste laagkoolstofstaal gascilinder met meer dan 5 liter watercapaciteit voor lage druk vloeibaar gemaakte gassen Deel 1 cilinders voor vloeibaar gemaakt petroleumgas (LPG)",
     notificationText: "",
     notificationLink: "",
   },
@@ -422,7 +422,7 @@ const productsData = [
     id: 56,
     isNumber: "IS 3196 (Part 2)",
     product:
-      "Welded low carbon steel gas cylinder exceeding 5-litre water capacity for low pressure liquefiable gases Part 2 cylinders for liquefiable gases other than LPG.",
+      "Gelaste laagkoolstofstaal gascilinder met meer dan 5 liter watercapaciteit voor lage druk vloeibaar gemaakte gassen Deel 2 cilinders voor vloeibaar gemaakte gassen anders dan LPG.",
     notificationText: "",
     notificationLink: "",
   },
@@ -430,14 +430,14 @@ const productsData = [
     id: 57,
     isNumber: "IS 3224",
     product:
-      "Valve fittings for compressed gas cylinder excluding liquefied petroleum gas cylinders",
+      "Ventiel fittingen voor gecomprimeerde gascilinder exclusief vloeibaar gemaakt petroleumgas cilinders",
     notificationText: "",
     notificationLink: "",
   },
   {
     id: 58,
     isNumber: "IS 3745",
-    product: "Yoke Type Valve Connection for Small Medical Gas Cylinders",
+    product: "Yoke Type Ventiel Verbinding voor Kleine Medische Gascilinders",
     notificationText: "",
     notificationLink: "",
   },
@@ -445,7 +445,7 @@ const productsData = [
     id: 59,
     isNumber: "IS 7142",
     product:
-      "Welded low carbon steel cylinders for low pressure liquefiable gases not exceeding 5 litre water capacity",
+      "Gelaste laagkoolstofstaal cilinders voor lage druk vloeibaar gemaakte gassen niet meer dan 5 liter watercapaciteit",
     notificationText: "",
     notificationLink: "",
   },
@@ -453,7 +453,7 @@ const productsData = [
     id: 60,
     isNumber: "IS 7285 (Part 1)",
     product:
-      "Refillable Seamless steel gas cylinders Part1 Normalized steel cylinders",
+      "Herbruikbare Naadloos staal gascilinders Deel 1 Genormaliseerde staal cilinders",
     notificationText: "",
     notificationLink: "",
   },
@@ -461,13 +461,13 @@ const productsData = [
     id: 61,
     isNumber: "IS 7285 (Part 2)",
     product:
-      "Refillable Seamless steel gas cylinders Part 2 Quenched and tempered steel cylinders with tensile strength less than 1100 MPa (112 kgf/mm2)",
+      "Herbruikbare Naadloos staal gascilinders Deel 2 Geharde en getempereerde staal cilinders met treksterkte minder dan 1100 MPa (112 kgf/mm2)",
     notificationText: "",
     notificationLink: "",
   },
 ];
 
-export const ISIMarkAndBISCommonTable = () => {
+export const ISIMarkAndBISCommonTableDutch = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 20;
@@ -515,14 +515,14 @@ export const ISIMarkAndBISCommonTable = () => {
     <section ref={tableRef} className="w-full pb-12 ">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
         <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mb-4">
-          Products Under BIS Certification as per Indian Standards
+          Producten onder BIS Certificering volgens Indiase Normen
         </h2>
 
         <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-8">
-          The following table lists products that require BIS certification in
-          India along with their applicable Indian Standard (IS) numbers. These
-          standards ensure quality, safety, and reliability of products in the
-          Indian market.
+          De volgende tabel vermeldt producten die BIS certificering vereisen in
+          India samen met hun toepasselijke Indiase Standaard (IS) nummers. Deze
+          normen garanderen kwaliteit, veiligheid en betrouwbaarheid van producten op de
+          Indiase markt.
         </p>
 
         <div className="relative mb-6">
@@ -531,7 +531,7 @@ export const ISIMarkAndBISCommonTable = () => {
           </div>
           <input
             type="text"
-            placeholder="Search for Products by name or IS number..."
+            placeholder="Zoek naar producten op naam of IS nummer..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -543,16 +543,16 @@ export const ISIMarkAndBISCommonTable = () => {
             <TableHeader>
               <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                  S.No
+                  Nr.
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
-                  IS No.
+                  IS Nr.
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
                   Product
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  For Notification Details Please click on the given link
+                  Klik op de gegeven link voor meldingsdetails
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -605,17 +605,17 @@ export const ISIMarkAndBISCommonTable = () => {
                 disabled={currentPage === 1}
                 className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Previous
+                Vorige
               </button>
               <span className="px-4 py-2 font-geist text-sm">
-                Page {currentPage} of {totalPages}
+                Pagina {currentPage} van {totalPages}
               </span>
               <button
                 onClick={handleNextPage}
                 disabled={currentPage === totalPages}
                 className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Next
+                Volgende
               </button>
             </div>
           </div>

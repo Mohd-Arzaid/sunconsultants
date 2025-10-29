@@ -246,7 +246,7 @@ const SchemeXGermanHeroContactForm = () => {
     const getPageName = () => {
         const path = window.location.pathname;
         // Service pages
-        if (path.includes("/de/indische-bis-zertifizierung-schema-x"))
+        if (path.includes("/de/indische-bis-zertifizierung-nach-schema-x"))
             return "Scheme X German";
     };
 

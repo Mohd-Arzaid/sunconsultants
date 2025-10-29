@@ -247,7 +247,7 @@ const SchemeXFrenchHeroContactForm = () => {
     const getPageName = () => {
         const path = window.location.pathname;
         // Service pages
-        if (path.includes("/fr/certification-bis-indienne-sous-le-schema-x"))
+        if (path.includes("/fr/certification-bis-indienne-selon-schema-x"))
             return "Schéma X Français";
     };
 

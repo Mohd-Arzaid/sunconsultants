@@ -247,8 +247,8 @@ const SchemeXSpanishHeroContactForm = () => {
     const getPageName = () => {
         const path = window.location.pathname;
         // Service pages
-        if (path.includes("/indian-bis-certification-under-scheme-x"))
-            return "Scheme X";
+        if (path.includes("/es/certificacion-bis-india-bajo-esquema-x"))
+            return "Scheme X Spanish";
     };
 
     const [formData, setFormData] = useState({

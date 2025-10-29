@@ -239,8 +239,8 @@ const CRSRegistrationHeroContactForm = () => {
     const path = window.location.pathname;
 
     // Service pages
-    if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "CRS Registration";
+    if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
+      return "CRS Registration Indonesian";
   };
 
   const [formData, setFormData] = useState({
