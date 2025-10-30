@@ -192,7 +192,7 @@ const ISIMarkContactForm = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     // Service pages
-    if (path.includes("/ko/bis-isi-mark-injeung-indo-bis"))
+    if (path.includes("/ko/bis-isi-mark-injeung"))
       return "ISI Mark - Korean Page";
   };
 
