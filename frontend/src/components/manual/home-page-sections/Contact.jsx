@@ -7,8 +7,8 @@ import axios from "axios";
 import { toast } from "@/hooks/use-toast";
 
 // Contact Images
-import ContactUs from "../../../assets/images/ContactUs.png";
-import ContactChild from "../../../assets/images/ContactChild.png";
+import ContactUs from "../../../assets/images/ContactUs.webp";
+import ContactChild from "../../../assets/images/ContactChild.webp";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -223,6 +223,11 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             src={ContactUs}
             alt="ContactUs"
             className="absolute right-0 w-[475.99px] h-[539px] object-cover"
+            width={476}
+            height={539}
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
           />
 
           <img
@@ -230,6 +235,11 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             alt="ContactChild"
             className=" 
           absolute inset-0 w-[350px] h-[350px] -translate-x-[70px] translate-y-[180px] object-cover"
+            width={350}
+            height={350}
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
           />
         </div>
       </div>

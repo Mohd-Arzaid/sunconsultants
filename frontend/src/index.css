@@ -1,64 +1,41 @@
-@import 'non.geist/font-faces/Geist-Bold.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 .service-left-content-heading-two {
-  @apply text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0
+  @apply text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0;
 }
 
 .service-left-content-heading-three {
-  @apply mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]
+  @apply mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316];
 }
 
 .service-left-content-paragraph {
-  @apply mt-[16px] md:mt-[18px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose
+  @apply mt-[16px] md:mt-[18px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose;
 }
 
 .service-left-content-separator {
-  @apply w-[94.46px] h-[1.5px] bg-gray-700
+  @apply w-[94.46px] h-[1.5px] bg-gray-700;
 }
 
 .service-left-content-index-heading {
-  @apply uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700
+  @apply uppercase font-semibold font-geist text-[14px] md:text-[20px] text-gray-700;
 }
 
 .service-left-content-divider {
-  @apply h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent
+  @apply h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .mainHeading {
   @apply text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0;
 }
 
 .normalHeading {
-  @apply mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]
+  @apply mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316];
 }
 
 .simpleParagraph {
-  @apply mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose
+  @apply mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose;
 }
 
 .pointList {
@@ -74,7 +51,7 @@
   transition: all ease-in 0.2s !important;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .boxshadowbtn {
     width: 100%;
   }
@@ -88,7 +65,7 @@
 }
 
 .custom-radial-gradient {
-  background: radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%);
+  background: radial-gradient(circle, #ebf3f5 7%, #c5e2f0 100%);
 }
 
 .custom-radial-gradient-updates {
@@ -96,23 +73,23 @@
 }
 
 .custom-radial-gradient-2 {
-  background: radial-gradient(circle, #D8E6EF 8%, #C5E2F0 100%);
+  background: radial-gradient(circle, #d8e6ef 8%, #c5e2f0 100%);
 }
 
 .custom-radial-gradient-cdsco {
-  background: radial-gradient(circle, #D8E6EF 8%, #ecedef 100%);
+  background: radial-gradient(circle, #d8e6ef 8%, #ecedef 100%);
 }
 
 .custom-radial-gradient-3 {
-  background: radial-gradient(circle, #FFFFFF 7%, #FBFEFF 100%);
+  background: radial-gradient(circle, #ffffff 7%, #fbfeff 100%);
 }
 
 .custom-linear-gradient-4 {
-  background: linear-gradient(to right, #2600FC 0%, #4D2249 100%);
+  background: linear-gradient(to right, #2600fc 0%, #4d2249 100%);
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #2600FC 0%, #4D2249 100%);
+  background: linear-gradient(to right, #2600fc 0%, #4d2249 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -199,7 +176,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
 
   .dark {
@@ -226,9 +203,8 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
-
 }
 
 @layer base {
@@ -238,6 +214,10 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+  /* Reduce CLS from Geist font swaps by aligning fallback metrics */
+  .font-geist {
+    font-size-adjust: 0.5;
   }
 }
 
@@ -252,11 +232,13 @@
   height: var(--w);
   position: relative;
   background: #fff;
-  padding: calc(2*var(--s));
-  background: linear-gradient(var(--g)) 50%/100% calc(100% - 2*var(--s)) no-repeat,
-    linear-gradient(90deg, var(--g)) 50%/calc(100% - 2*var(--s)) 100% no-repeat;
+  padding: calc(2 * var(--s));
+  background: linear-gradient(var(--g)) 50%/100% calc(100% - 2 * var(--s))
+      no-repeat,
+    linear-gradient(90deg, var(--g)) 50% / calc(100% - 2 * var(--s)) 100%
+      no-repeat;
   outline: var(--b) solid var(--c);
-  outline-offset: calc(var(--s)/-2);
+  outline-offset: calc(var(--s) / -2);
   transition: 0.5s;
   cursor: pointer;
   display: flex;
@@ -265,8 +247,8 @@
 }
 
 .client-logo-container:hover {
-  outline: calc(var(--w)/2) solid rgb(229, 231, 235);
-  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  outline: calc(var(--w) / 2) solid rgb(229, 231, 235);
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
   background: linear-gradient(var(--g)) 50%/100% 100% no-repeat,
     linear-gradient(90deg, var(--g)) 50%/100% 100% no-repeat;
 }
@@ -290,7 +272,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
   box-shadow: 0 0 0 1000px #fff inset !important;
-  -webkit-text-fill-color: #7E7E7E !important;
+  -webkit-text-fill-color: #7e7e7e !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -367,5 +349,6 @@ input:-webkit-autofill:active {
 }
 
 .animate-scroll {
-  animation: scroll var(--animation-duration, 25s) linear infinite var(--animation-direction, forwards);
+  animation: scroll var(--animation-duration, 25s) linear infinite
+    var(--animation-direction, forwards);
 }
