@@ -22,7 +22,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { BISCProductTable } from "@/components/manual/BISCertification";
+import { ISIMarkAndBISCommonTable } from "@/pages/ISIMarkAndBISCommonTable/ISIMarkAndBISCommonTable";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import {
   Breadcrumb,
@@ -262,8 +262,9 @@ const ArabicISIIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -313,10 +314,11 @@ const ArabicISIIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection.toLowerCase()
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection.toLowerCase()
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {arabicTranslations[item]}
@@ -336,18 +338,20 @@ const ArabicISIIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection.toLowerCase()
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection.toLowerCase()
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {arabicTranslations[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection.toLowerCase()
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection.toLowerCase()
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -373,21 +377,23 @@ const ArabicISIContent = () => {
       <ArabicISIMarkServiceFaq />
 
       <div id="product-table">
-        <BISCProductTable />
+        <ISIMarkAndBISCommonTable />
       </div>
 
       <div id="services">
         <ArabicServices />
       </div>
-
     </div>
   );
 };
 
-
 const ArabicISIMarkServiceFaq = () => {
   return (
-    <section id="faqs" className="my-2 scroll-mt-20" aria-label="Frequently Asked Questions">
+    <section
+      id="faqs"
+      className="my-2 scroll-mt-20"
+      aria-label="Frequently Asked Questions"
+    >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           الأسئلة الشائعة
@@ -408,7 +414,9 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>ما هي شهادة BIS ولماذا هي مهمة؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                شهادة BIS تصدر من مكتب المعايير الهندي لضمان امتثال المنتجات لمعايير السلامة والجودة الهندية. إنها حيوية للامتثال القانوني وثقة المستهلك وقبول السوق.
+                شهادة BIS تصدر من مكتب المعايير الهندي لضمان امتثال المنتجات
+                لمعايير السلامة والجودة الهندية. إنها حيوية للامتثال القانوني
+                وثقة المستهلك وقبول السوق.
               </AccordionContent>
             </AccordionItem>
 
@@ -417,7 +425,9 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>ما الفرق بين رخصة BIS وعلامة ISI؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                رخصة BIS هي وثيقة قانونية تفوض المُصنّع لاستخدام علامة ISI. علامة ISI هي العلامة المرئية على المنتجات التي تشير إلى شهادة BIS.
+                رخصة BIS هي وثيقة قانونية تفوض المُصنّع لاستخدام علامة ISI.
+                علامة ISI هي العلامة المرئية على المنتجات التي تشير إلى شهادة
+                BIS.
               </AccordionContent>
             </AccordionItem>
 
@@ -426,7 +436,8 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>كم من الوقت يستغرق الحصول على شهادة BIS؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                عادةً من 6 إلى 10 أسابيع حسب نوع المنتج ومتطلبات الاختبار ونتائج المراجعة.
+                عادةً من 6 إلى 10 أسابيع حسب نوع المنتج ومتطلبات الاختبار ونتائج
+                المراجعة.
               </AccordionContent>
             </AccordionItem>
 
@@ -435,7 +446,8 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>ما هي مدة صلاحية رخصة BIS؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                عادةً من سنة إلى سنتين، وبعدها يجب تجديدها. يجب بدء التجديد قبل انتهاء الصلاحية بـ 30 يوماً على الأقل.
+                عادةً من سنة إلى سنتين، وبعدها يجب تجديدها. يجب بدء التجديد قبل
+                انتهاء الصلاحية بـ 30 يوماً على الأقل.
               </AccordionContent>
             </AccordionItem>
 
@@ -444,7 +456,8 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>ما هي تكلفة شهادة BIS؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                تختلف التكاليف ولكن يمكن أن تتراوح من ₹25,000 إلى ₹100,000+، بما في ذلك رسوم الاختبار والمراجعة والرخصة.
+                تختلف التكاليف ولكن يمكن أن تتراوح من ₹25,000 إلى ₹100,000+، بما
+                في ذلك رسوم الاختبار والمراجعة والرخصة.
               </AccordionContent>
             </AccordionItem>
 
@@ -462,7 +475,8 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>كيف يمكنني العثور على المعيار الهندي الصحيح لمنتجي؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                زر موقع BIS أو استشر مختبرات الاختبار والمستشارين المعترف بهم من BIS لتحديد المعيار المطبق.
+                زر موقع BIS أو استشر مختبرات الاختبار والمستشارين المعترف بهم من
+                BIS لتحديد المعيار المطبق.
               </AccordionContent>
             </AccordionItem>
 
@@ -471,7 +485,8 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>هل يمكن للمُصنّعين الأجانب التقديم لشهادة BIS؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                نعم. من خلال مخطط شهادة المُصنّعين الأجانب (FMCS)، يمكن للكيانات الخارجية الحصول على رخص BIS لاستخدام علامة ISI.
+                نعم. من خلال مخطط شهادة المُصنّعين الأجانب (FMCS)، يمكن للكيانات
+                الخارجية الحصول على رخص BIS لاستخدام علامة ISI.
               </AccordionContent>
             </AccordionItem>
 
@@ -480,7 +495,8 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>ماذا يحدث إذا فشل منتجي في اختبار BIS؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                ستحتاج إلى تصحيح المشاكل وإعادة التقديم للاختبار. قد يتم إيقاف الطلبات حتى يتم إثبات الامتثال الناجح.
+                ستحتاج إلى تصحيح المشاكل وإعادة التقديم للاختبار. قد يتم إيقاف
+                الطلبات حتى يتم إثبات الامتثال الناجح.
               </AccordionContent>
             </AccordionItem>
 
@@ -489,7 +505,8 @@ const ArabicISIMarkServiceFaq = () => {
                 <h3>هل شهادة BIS مطلوبة للتصدير؟</h3>
               </AccordionTrigger>
               <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                بينما ليست إلزامية دائماً للتصدير، فإن شهادة BIS تعزز المصداقية ويمكن أن تلبي متطلبات المشترين الدوليين أو الهيئات التنظيمية.
+                بينما ليست إلزامية دائماً للتصدير، فإن شهادة BIS تعزز المصداقية
+                ويمكن أن تلبي متطلبات المشترين الدوليين أو الهيئات التنظيمية.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

@@ -33,6 +33,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/what-is-crs-bis-or-crs-registration",
     "/sertifikasi-bis-di-indonesia",
     "/id/apa-itu-crs-bis-atau-registrasi-crs",
+    // ISI Mark Indonesian Page Url
+    "/id/sertifikasi-bis-isi-mark",
   ];
 
   // Check if current path should show these components
@@ -565,6 +567,8 @@ const ContactFormServicesRightSideContentIndonesian = () => {
       return "Indonesia Blog (Indonesian)";
     if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
       return "CRS Registration (Indonesian)";
+    if (path.includes("/id/sertifikasi-bis-isi-mark"))
+      return "ISI Mark - Indonesian Page";
   };
 
   const [formData, setFormData] = useState({

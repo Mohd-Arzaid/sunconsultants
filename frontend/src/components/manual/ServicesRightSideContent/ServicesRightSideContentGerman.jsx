@@ -33,6 +33,8 @@ const ServicesRightSideContentGerman = () => {
     "/what-is-crs-bis-or-crs-registration",
     "/bis-zertifizierung-in-deutschland",
     "/de/was-ist-crs-bis-oder-crs-registrierung",
+    // ISI Mark German Page Url
+    "/de/bis-isi-mark-zertifizierung",
   ];
 
   // Check if current path should show these components
@@ -563,6 +565,8 @@ const ContactFormServicesRightSideContentGerman = () => {
       return "Germany Blog German";
     if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
       return "CRS Registration (German)";
+    if (path.includes("/de/bis-isi-mark-zertifizierung"))
+      return "ISI Mark - German Page";
   };
 
   const [formData, setFormData] = useState({

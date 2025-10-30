@@ -34,7 +34,7 @@ import LHSCable from "@/pages/LHSCable";
 // Manual components
 import { BISFM } from "@/components/manual/BISFM";
 import { EPRService } from "@/components/manual/EPRService";
-import { BISCertification } from "@/components/manual/BISCertification";
+import BISCertification from "@/pages/BISCertification/BISCertification";
 import { LMPC } from "@/components/manual/LMPC";
 import { PlasticWaste } from "@/components/manual/PlasticWaste";
 import { LegalMetrology } from "@/components/manual/LegalMetrology";
