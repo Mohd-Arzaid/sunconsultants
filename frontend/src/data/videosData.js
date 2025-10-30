@@ -713,4 +713,40 @@ export const videosData = [
       "Indian Market",
     ],
   },
+  {
+    id: 38,
+    embedId: "zauM26gRE-M",
+    title: "New Video - zauM26gRE-M",
+    description:
+      "Video added per request. Please update title and description with accurate details.",
+    category: "BIS Certification",
+    duration: "PT10M00S",
+    uploadDate: "2025-10-30T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Indian Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Certification Process",
+    ],
+  },
+  {
+    id: 39,
+    embedId: "2GfPo9dKyd8",
+    title: "New Video - 2GfPo9dKyd8",
+    description:
+      "Video added per request. Please update title and description with accurate details.",
+    category: "BIS Certification",
+    duration: "PT10M00S",
+    uploadDate: "2025-10-30T00:00:00+00:00",
+    tags: [
+      "BIS Certification",
+      "Indian Standards",
+      "Compliance",
+      "Quality Assurance",
+      "Manufacturing",
+      "Certification Process",
+    ],
+  },
 ];

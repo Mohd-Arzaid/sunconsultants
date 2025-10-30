@@ -113,23 +113,29 @@ const OurServices = () => {
     [navigate]
   );
 
-  const handleThumbnailClick = useCallback((index) => {
-    setActiveThumbnail(index);
-    const service = services[index];
-    if (service && service.path) {
-      handleServiceNavigation(service.path);
-    }
-  }, [handleServiceNavigation]);
+  const handleThumbnailClick = useCallback(
+    (index) => {
+      setActiveThumbnail(index);
+      const service = services[index];
+      if (service && service.path) {
+        handleServiceNavigation(service.path);
+      }
+    },
+    [handleServiceNavigation]
+  );
 
   return (
-    <div className="bg-gradient-to-b from-[#F9F7F2] to-white pt-8 pb-8  sm:pt-12 md:pt-16 ">
+    <div
+      className="bg-gradient-to-b from-[#F9F7F2] to-white pt-8 pb-8  sm:pt-12 md:pt-16 "
+      style={{ contentVisibility: "auto", containIntrinsicSize: "760px" }}
+    >
       <div className="max-w-[84rem] mx-auto px-4 sm:px-6 md:px-12">
         {/* Heading */}
-        <div className="text-center mb-4 sm:mb-8">
+        <div className="text-center mb-4 sm:mb-8 min-h-[92px] sm:min-h-[108px] md:min-h-[132px]">
           <h2 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-800 drop-shadow-lg mb-2 sm:mb-3">
             Our Services
           </h2>
-          <p className="text-base sm:text-lg md:text-xl font-geist text-neutral-600 max-w-xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl font-geist text-neutral-600 max-w-xl mx-auto min-h-[48px] sm:min-h-[56px] md:min-h-[72px]">
             We offer end-to-end solutions for all your certification needs to
             enter and thrive in the Indian market.
           </p>
@@ -230,10 +236,11 @@ const OurServices = () => {
               key={idx}
               onClick={() => goToSlide(idx)}
               aria-label={`Go to service ${idx + 1}`}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${activeIndex === idx
-                ? "bg-[#1A8781] w-10"
-                : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
-                }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                activeIndex === idx
+                  ? "bg-[#1A8781] w-10"
+                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+              }`}
             ></button>
           ))}
         </div>
@@ -252,10 +259,11 @@ const OurServices = () => {
                   handleThumbnailClick(index);
                 }
               }}
-              className={`rounded-xl p-3 md:p-4 transition-all duration-300 border cursor-pointer ${activeThumbnail === index
-                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-                }`}
+              className={`rounded-xl p-3 md:p-4 transition-all duration-300 border cursor-pointer ${
+                activeThumbnail === index
+                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+              }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
                 <div className="mb-0.5 md:mb-1">
