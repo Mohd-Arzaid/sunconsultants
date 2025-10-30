@@ -450,6 +450,7 @@ function App() {
             element={<BatteryWaste />}
           />
 
+          {/* ============================== CRS routes (all languages) ============================== */}
           {/* English */}
           <Route
             path="what-is-crs-bis-or-crs-registration"
@@ -521,6 +522,7 @@ function App() {
             path="/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
             element={<CRSRegistrationArabic />}
           />
+          {/* ============================ End CRS routes (all languages) ============================ */}
 
           <Route
             path="information-about-peso-certification-peso-license-india"
@@ -1228,11 +1230,6 @@ function App() {
         <Route
           path="/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
           element={<ArabicBISFM />}
-        />
-
-        <Route
-          path="/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
-          element={<ArabicCRS />}
         />
 
         <Route
