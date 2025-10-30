@@ -1,8 +1,8 @@
 import React from "react";
 
 // Certification Images
-import CertificationImage from "../../../assets/images/certone.jpg";
-import CertificationImageTwo from "../../../assets/images/certtwo.jpg";
+import CertificationImage from "../../../assets/images/certone.webp";
+import CertificationImageTwo from "../../../assets/images/certtwo.webp";
 
 const CertificationAndAchievements = () => {
   // Only 4 certificates as requested
@@ -53,6 +53,8 @@ const CertificationAndAchievements = () => {
                   alt={item.title}
                   loading="lazy"
                   decoding="async"
+                  width={905}
+                  height={472}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   style={{
                     imageRendering: "auto",
