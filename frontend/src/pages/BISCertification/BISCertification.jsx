@@ -1,30 +1,13 @@
 import { Separator } from "@/components/ui/separator";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
-import { useTranslation } from "react-i18next";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import ServiceContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
-import { Check, Search, SlashIcon } from "lucide-react";
-import Footer from "@/common/Footer";
-import ScrollToTopButton from "@/components/common/ScrollToTop";
-import ServiceContactForm from "@/common/ServiceContactForm";
-import PropTypes from "prop-types";
-import Services from "@/components/manual/Services";
-import AboutAuthor from "@/components/common/AboutAuthor";
+import { Check, SlashIcon } from "lucide-react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -33,865 +16,116 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
+import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
+import { ISIMarkAndBISCommonTable } from "../ISIMarkAndBISCommonTable/ISIMarkAndBISCommonTable";
+import axios from "axios";
+import { toast } from "@/hooks/use-toast";
+import { ClockLoader } from "react-spinners";
+import { BoxReveal } from "@/components/magicui/box-reveal";
+import FooterEng from "@/components/manual/Footer/FooterEng";
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+const BISImage = "/services-images/BIS.jpg";
+const CDSCO = "/services-images/CDSCO.jpg";
+const BISCRS = "/services-images/BISCRS.jpg";
+const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
+const EPRCertificate = "/services-images/EPRCertificate.jpg";
+const LMPC = "/services-images/LMPC.jpg";
+const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-export const BISCertification = () => {
+const BISCertification = () => {
   return (
-    <>
-      <Helmet>
-        <title>BIS Certification Types, Process, Documents, Fee</title>
-        <meta
-          name="description"
-          content="BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India."
-        />
-        <meta
-          name="keywords"
-          content="BIS Certification, BIS Certification Process, BIS Registration, BIS Registration Process, BIS Certification Scheme, Product Certification Scheme, Mandatory Certification Scheme, BIS Mandatory Products List, ISI Mark, BIS FMCS, BIS Hallmarking Scheme, Eco Mark Scheme, BIS Certification Consultant, ISI Certification Consultant, BIS ISI Mark Consultant, What is BIS Certification, BIS Certification Download, BIS Certification Cost, India BIS Certification, BIS Certification Full Form, BIS Certification India, Indian BIS Certification, BIS Certification Means, BIS Certification Check, BIS License Online in India, BIS Certification Online, BIS Certificate, BIS Certificate Online."
-        />
-        <meta name="author" content="Sun Certifications India" />
-        <meta
-          name="publisher"
-          content="Dhruv Aggarwal, Head of Operations at Sun Certification India"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Open Graph Tags */}
-        <meta
-          property="og:title"
-          content="BIS Certification Types, Process, Documents, Fee"
-        />
-        <meta
-          property="og:description"
-          content="BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Certifications India" />
-        <meta property="og:locale" content="en_IN" />
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@CertificationsSun" />
-        <meta
-          name="twitter:title"
-          content="BIS Certification Types, Process, Documents, Fee"
-        />
-        <meta
-          name="twitter:description"
-          content="BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India."
-        />
-        {/* Canonical URL */}
-        <link rel="canonical" href={window.location.href} />
-
-        {/* Hreflang Links for International Pages */}
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-          hrefLang="en"
-        />
-
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ar/ma-huwa-shahadat-bis-bis-alhind"
-          hrefLang="ar"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/it/cose-il-certificato-bis-indiano"
-          hrefLang="it"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/fr/quest-ce-que-le-certificat-bis-indien"
-          hrefLang="fr"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/de/was-ist-das-bis-zertifikat-indisches-bis"
-          hrefLang="de"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/nl/wat-is-het-bis-certificaat-indiaas-bis"
-          hrefLang="nl"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"
-          hrefLang="ja"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"
-          hrefLang="ko"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/id/apa-itu-sertifikat-bis-bis-india"
-          hrefLang="id"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/th/bis-certificate-khue-a-rai-bis-india"
-          hrefLang="th"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/vi/chung-chi-bis-la-gi-bis-an-do"
-          hrefLang="vi"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/es/que-es-el-certificado-bis-bis-indio"
-          hrefLang="es"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/what-is-bis-certificate-indian-bis"
-          hrefLang="x-default"
-        />
-
-        <meta name="robots" content="index, follow" />
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            serviceType: "BIS Certification",
-            provider: {
-              "@type": "Organization",
-              name: "Sun Certifications India",
-              url: window.location.href,
-              logo: "https://suncertifications.com/logo.png",
-            },
-            areaServed: {
-              "@type": "Country",
-              name: "India",
-            },
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "BIS Certification Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "ISI Mark Certification",
-                    description:
-                      "ISI Mark certification for Indian manufacturers",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "BIS License for Foreign Manufacturers",
-                    description:
-                      "BIS License certification for foreign manufacturers",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "BIS Registration Certificate",
-                    description: "BIS Registration certification for products",
-                  },
-                },
-              ],
-            },
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What is BIS Certification?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "BIS Certification ensures product quality and safety in India. It is mandatory for many products and requires testing, documentation, and approval.",
-                },
-              },
-            ],
-          })}
-        </script>
-
-        {/* JSON-LD Breadcrumb structured data for SEO */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "BIS Certification India for Importers and Manufacturers",
-                item: "https://bis-certifications.com/what-is-bis-certificate-indian-bis",
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
-
-      <main className="relative w-full">
-        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
-          <div className="max-w-[80rem] mx-auto px-4">
-            <div className="w-fit font-inter">
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/">Home</Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator>
-                    <SlashIcon />
-                  </BreadcrumbSeparator>
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>
-                      BIS Certification India for Importers and Manufacturers
-                    </BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-            </div>
-          </div>
-        </div>
-
-        <BISCHero />
-        <BISCIndex />
-        <BISCContent />
-        <Footer />
-        <ScrollToTopButton />
-      </main>
-    </>
-  );
-};
-
-// BISC Product Table Section
-const productsData = [
-  {
-    id: 1,
-    isNumber: "IS 12330",
-    product: "Sulphate Resisting Portland Cement",
-    notificationText:
-      "1. Cement (Quality Control) Order, 2003\nS.O. No. 191(E) Dt. 17 Feb 2003",
-    notificationLink:
-      "https://bis.gov.in/wp-content/uploads/2018/11/S.O.-191E-dated-17.02.2003.pdf",
-  },
-  {
-    id: 2,
-    isNumber: "IS 12600",
-    product: "Low heat Portland Cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 3,
-    isNumber: "IS 1489 (Part 1)",
-    product: "Portland Pozzolana Cement-Part1 Fly-ash based",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 4,
-    isNumber: "IS 1489 (Part 2)",
-    product: "Portland Pozzolana Cement-Part 2 Calcined clay based",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 5,
-    isNumber: "IS 269",
-    product: "Ordinary Portland Cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 6,
-    isNumber: "IS 3466",
-    product: "Masonry Cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 7,
-    isNumber: "IS 455",
-    product: "Portland Slag Cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 8,
-    isNumber: "IS 6452",
-    product: "High Alumina Cement for Structural use",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 9,
-    isNumber: "IS 6909",
-    product: "Super sulphated cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 10,
-    isNumber: "IS 8041",
-    product: "Rapid hardening Portland cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 11,
-    isNumber: "IS 8042",
-    product: "White Portland Cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 12,
-    isNumber: "IS 8043",
-    product: "Hydrophobic Portland Cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 13,
-    isNumber: "IS 8229",
-    product: "Oil well Cement",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 14,
-    isNumber: "IS 16415: 2015",
-    product: "Composite Cement- Specification.",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 15,
-    isNumber: "IS 16993: 2018",
-    product: "Microfine Ordinary Portland Cement- Specification.",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 16,
-    isNumber: "IS 15895: 2018",
-    product: "High Alumina Refractory Cement.",
-    notificationText: "",
-    notificationLink: "",
-  },
-
-  // Electrical Wires, Cables, Appliances and Protection Devices and Accessories
-  {
-    id: 17,
-    isNumber: "IS 12640 (Part 1)",
-    product:
-      "Residual current operated circuit breakers for house hold and similar uses-Part 1 Circuit breakers without integral overcurrent protection (RCCBs)",
-    notificationText:
-      "2. Electrical Wires, Cables, Appliances and Protection Devices and Accessories (Quality Control) Order, 2003 \nS.O. 189(E) dated 17 Feb 2003\nSubsequent Amendments:\nS.O. 165(E) dated 5 Feb 2004,\nS.O. 1172(E) dated 22 Aug 2005,\nS.O. 512(E) dated 18 Feb 2009,\nS.O. 2058(E) dated 7 Aug 2009 &\nS.O. 2604(E) dated 19 Oct 2010",
-    notificationLink:
-      "https://bis.gov.in/wp-content/uploads/2018/11/S.O.-189E-dated-17.02.2003.pdf",
-  },
-  {
-    id: 18,
-    isNumber: "IS 12640 (Part 2)",
-    product:
-      "Residual current operated circuit breakers for household and similar uses-Part 2 Circuit breakers with integral overcurrent protection(RCVOs)",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 19,
-    isNumber: "IS 13010",
-    product: "AC watt-hour meters, class 0.5, 1 & 2",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 20,
-    isNumber: "IS 13779",
-    product: "AC static watt-hour meters, class 1 & 2",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 21,
-    isNumber: "IS 14697",
-    product:
-      "AC static transformer operated watt-hour and VAR-hour meters, class 0.2S & 0.5S",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 22,
-    isNumber: "IS 15111 (Part 1 & 2)",
-    product:
-      "Self Ballasted Lamps for General Lighting Services – Part 1 : Safety Requirements & Part 2 : Performance Requirements",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 23,
-    isNumber: "IS 302 (Part 2/Sec 3)",
-    product:
-      "Safety of household and similar electrical appliances – Electric iron",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 24,
-    isNumber: "IS 302 (Part 2/Sec 201)",
-    product:
-      "Safety of household and similar electrical appliances– Electric immersion water-heaters",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 25,
-    isNumber: "IS 302 (Part 2/Sec 202)",
-    product:
-      "Safety of household and similar electrical appliances –Electric stoves",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 26,
-    isNumber: "IS 302 (Part 2/Sec 30)",
-    product:
-      "Safety of household and similar electrical appliances-Room heaters",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 27,
-    isNumber: "IS 3854",
-    product: "Switches for domestic and similar purposes",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 28,
-    isNumber: "IS 418",
-    product: "Tungsten filament general service electric lamps (upto100 W )",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 31,
-    isNumber: "IS 9968 (Part 1)",
-    product:
-      "Elastomer insulated cables (Part.1): For working voltages up to and including1100 V",
-    notificationText: "",
-    notificationLink: "",
-  },
-
-  // Batteries
-  {
-    id: 32,
-    isNumber: "IS 8144",
-    product: "Multi-Purpose dry batteries",
-    notificationText: "3. SO 516(E), dated 25th May 1987",
-    notificationLink: "",
-  },
-
-  // Food & Related Products (De-notified from compulsory BIS certification)
-  {
-    id: 33,
-    isNumber: "IS 15757",
-    product: "Follow-up formula –complimentary foods",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 34,
-    isNumber: "IS 11536",
-    product: "Processed cereal based complementary foods",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 35,
-    isNumber: "IS 1165",
-    product: "Milk-powder",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 36,
-    isNumber: "IS 1166",
-    product: "Condensed milk, partly skimmed and skimmed condensed milk",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 37,
-    isNumber: "IS 12176",
-    product: "Sweetened ultra high temperature treated condensed milk",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 38,
-    isNumber: "IS 13334 (Part 1)",
-    product: "Skimmed milk-powder, standard grade",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 39,
-    isNumber: "IS 13334 (Part 2)",
-    product: "Skimmed milk-powder, extra grade",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 40,
-    isNumber: "IS 13428",
-    product: "Packaged Natural Mineral Water",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 41,
-    isNumber: "IS 14433",
-    product: "Infant milk substitutes",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 42,
-    isNumber: "IS 17945: 2022",
-    product: "Food for Special Medical Purpose intended for Infants",
-    notificationText: "",
-    notificationLink: "",
-  },
-
-  // Feeding Bottles
-  {
-    id: 43,
-    isNumber: "IS 14625",
-    product: "Plastic Feeding Bottles",
-    notificationText:
-      "5. The Infant Milk Substitutes, Feeding Bottles and Infant Foods (regulation of production, supply and distribution), Act 1992",
-    notificationLink: "",
-  },
-  {
-    id: 44,
-    isNumber: "IS 5168",
-    product: "Glass Feeding Bottles",
-    notificationText: "",
-    notificationLink: "",
-  },
-
-  // Oil Pressure Stoves
-  {
-    id: 45,
-    isNumber: "IS 10109",
-    product: "Oil pressure stove, offset burner type",
-    notificationText:
-      "6. Oil Pressure Stoves (QC) Order, 1997\nSO 451(E) dated 16 June 1997",
-    notificationLink: "",
-  },
-  {
-    id: 46,
-    isNumber: "IS 2787",
-    product: "Multi-burner oil pressure stoves",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 47,
-    isNumber: "IS 1342",
-    product: "Oil pressure stoves",
-    notificationText: "",
-    notificationLink: "",
-  },
-
-  // Automobile Accessories
-  {
-    id: 48,
-    isNumber: "IS 13098",
-    product: "Automotive vehicles –Tubes for pneumatic tyres",
-    notificationText:
-      "7. Pneumatic Tyres and Tubes for Automotive Vehicles (Quality Control) Order, 2009\nS.O. No. 2953(E) dated 19-11-2009\nSubsequent Amendments\nS.O. No. 1057 (E) dated 11-05-2010\nS.O. No. 2758 (E) dated 9-11-2010",
-    notificationLink: "",
-  },
-  {
-    id: 49,
-    isNumber: "IS 15627",
-    product:
-      "Automotive vehicles– Pneumatic tyres for two and three-wheeled motor vehicles",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 50,
-    isNumber: "IS 15633",
-    product:
-      "Automotive vehicles-Pneumatic tyres for passenger car vehicles– Diagonal and radial ply",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 51,
-    isNumber: "IS 15636",
-    product:
-      "Automotive vehicles- Pneumatic tyres for commercial vehicles-Diagonal and radial ply",
-    notificationText: "",
-    notificationLink: "",
-  },
-
-  // Cylinder, Valves and Regulator
-  {
-    id: 52,
-    isNumber: "IS 14899",
-    product: "Liquefied petroleum gas containers for automotive use",
-    notificationText:
-      "8. Explosive Act, 1884\nGas Cylinder Rules, 2016\nG.S.R. No. 1081(E) Dt. 22-11-2016",
-    notificationLink: "",
-  },
-  {
-    id: 53,
-    isNumber: "IS 15100",
-    product:
-      "Multifunction valve assembly for permanently fixed liquefied petroleum gas (LPG) containers for automotive use",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 54,
-    isNumber: "IS 3196 (Part 4)",
-    product:
-      "Welded low carbon steel cylinders exceeding 5 litre Water capacity for low pressure liquefiable gases Part 4 cylinders for toxic and corrosive gases",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 55,
-    isNumber: "IS 3196 (Part 1)",
-    product:
-      "Welded low carbon steel gas cylinder exceeding 5 litre water capacity for low pressure liquefiable gases Part 1 cylinders for liquefied petroleum gas (LPG)",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 56,
-    isNumber: "IS 3196 (Part 2)",
-    product:
-      "Welded low carbon steel gas cylinder exceeding 5-litre water capacity for low pressure liquefiable gases Part 2 cylinders for liquefiable gases other than LPG.",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 57,
-    isNumber: "IS 3224",
-    product:
-      "Valve fittings for compressed gas cylinder excluding liquefied petroleum gas cylinders",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 58,
-    isNumber: "IS 3745",
-    product: "Yoke Type Valve Connection for Small Medical Gas Cylinders",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 59,
-    isNumber: "IS 7142",
-    product:
-      "Welded low carbon steel cylinders for low pressure liquefiable gases not exceeding 5 litre water capacity",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 60,
-    isNumber: "IS 7285 (Part 1)",
-    product:
-      "Refillable Seamless steel gas cylinders Part1 Normalized steel cylinders",
-    notificationText: "",
-    notificationLink: "",
-  },
-  {
-    id: 61,
-    isNumber: "IS 7285 (Part 2)",
-    product:
-      "Refillable Seamless steel gas cylinders Part 2 Quenched and tempered steel cylinders with tensile strength less than 1100 MPa (112 kgf/mm2)",
-    notificationText: "",
-    notificationLink: "",
-  },
-];
-
-export const BISCProductTable = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 20;
-
-  const filteredProducts = productsData.filter(
-    (product) =>
-      product.product.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.isNumber.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [searchQuery]);
-
-  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
-  const indexOfLastProduct = currentPage * productsPerPage;
-  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = filteredProducts.slice(
-    indexOfFirstProduct,
-    indexOfLastProduct
-  );
-
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
-  return (
-    <section className="w-full pb-12 ">
-      <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-        <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal mb-4">
-          Products Under BIS Certification as per Indian Standards
-        </h2>
-
-        <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-8">
-          The following table lists products that require BIS certification in
-          India along with their applicable Indian Standard (IS) numbers. These
-          standards ensure quality, safety, and reliability of products in the
-          Indian market.
-        </p>
-
-        <div className="relative mb-6">
-          <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
-            <Search className="w-5 h-5 text-gray-400" />
-          </div>
-          <input
-            type="text"
-            placeholder="Search for Products by name or IS number..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
-          />
-        </div>
-
-        <div className="rounded-md border bg-white shadow-sm">
-          <Table>
-            <TableHeader>
-              <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[80px] border-r border-gray-300">
-                  S.No
-                </TableHead>
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg w-[180px] border-r border-gray-300">
-                  IS No.
-                </TableHead>
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg border-r border-gray-300">
-                  Product
-                </TableHead>
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg">
-                  For Notification Details Please click on the given link
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {currentProducts.map((item) => (
-                <TableRow key={item.id}>
-                  <TableCell className="font-medium font-geist text-base md:text-lg text-left border-r border-gray-200">
-                    {item.id}
-                  </TableCell>
-                  <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                    {item.isNumber}
-                  </TableCell>
-                  <TableCell className="font-geist text-base md:text-lg text-left border-r border-gray-200">
-                    {item.product}
-                  </TableCell>
-                  <TableCell className="font-geist text-base md:text-lg text-left">
-                    {item.notificationText ? (
-                      <>
-                        {item.notificationText.split("\n").map((line, idx) =>
-                          idx === 1 && item.notificationLink ? (
-                            <div key={idx}>
-                              <a
-                                href={item.notificationLink}
-                                className="text-blue-600 hover:text-blue-800 underline"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                {line}
-                              </a>
-                            </div>
-                          ) : (
-                            <div key={idx}>{line}</div>
-                          )
-                        )}
-                      </>
-                    ) : (
-                      " "
-                    )}
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
-        {totalPages > 1 && (
-          <div className="flex justify-between items-center mt-6">
-            <div className="font-geist text-sm text-gray-700">
-              Showing {indexOfFirstProduct + 1} to{" "}
-              {Math.min(indexOfLastProduct, filteredProducts.length)} of{" "}
-              {filteredProducts.length} results
-            </div>
-            <div className="flex items-center">
-              <button
-                onClick={handlePrevPage}
-                disabled={currentPage === 1}
-                className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Previous
-              </button>
-              <span className="px-4 py-2 font-geist text-sm">
-                Page {currentPage} of {totalPages}
-              </span>
-              <button
-                onClick={handleNextPage}
-                disabled={currentPage === totalPages}
-                className="px-4 py-2 mx-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Next
-              </button>
-            </div>
-          </div>
-        )}
+    <div className="relative w-full">
+      <BISCertificationMetaTags />
+      <BISCertificationBreadcrumb />
+      <BISCertificationHero />
+      <BISCertificationIndex />
+      <BISCertificationContent />
+      <BISCertificationFaq />
+      <ISIMarkAndBISCommonTable />
+      <div id="services">
+        <BISCertificationServices />
       </div>
-    </section>
+      <FooterEng />
+    </div>
   );
 };
 
-// BISC Hero Section
-const BISCHero = () => {
-  const { t } = useTranslation("BISCertification");
+export default BISCertification;
 
+const BISCertificationMetaTags = () => {
+  const title = "BIS Certification Types, Process, Documents, Fee";
+  const description =
+    "BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India.";
+  const keywords =
+    "BIS Certification, BIS Certification Process, BIS Registration, BIS Registration Process, BIS Certification Scheme, Product Certification Scheme, Mandatory Certification Scheme, BIS Mandatory Products List, ISI Mark, BIS FMCS, BIS Hallmarking Scheme, Eco Mark Scheme, BIS Certification Consultant, ISI Certification Consultant, BIS ISI Mark Consultant, What is BIS Certification, BIS Certification Download, BIS Certification Cost, India BIS Certification, BIS Certification Full Form, BIS Certification India, Indian BIS Certification, BIS Certification Means, BIS Certification Check, BIS License Online in India, BIS Certification Online, BIS Certificate, BIS Certificate Online.";
+  const canonicalUrl = window.location.href;
+  const author = "Sun Certifications India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
+      <meta name="author" content={author} />
+      <meta name="publisher" content={publisher} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:site_name" content="Sun Certifications India" />
+      <meta property="og:type" content="article" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <link rel="canonical" href={canonicalUrl} />
+    </Helmet>
+  );
+};
+
+const BISCertificationBreadcrumb = () => {
+  return (
+    <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+      <div className="max-w-[80rem] mx-auto px-4">
+        <div className="w-full overflow-x-auto scrollbar-hide font-inter">
+          <div className="w-fit min-w-full">
+            <Breadcrumb>
+              <BreadcrumbList className="flex-nowrap">
+                <BreadcrumbItem className="flex-shrink-0">
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator className="flex-shrink-0">
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+
+                <BreadcrumbItem className="flex-shrink-0">
+                  <BreadcrumbPage className="whitespace-nowrap">
+                    BIS Certification India for Importers and Manufacturers
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const BISCertificationHero = () => {
   return (
     <section
       className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
@@ -912,20 +146,22 @@ const BISCHero = () => {
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
-              {t("hero.badge")}
+              Certified Expertise
             </span>
           </div>
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              {t("hero.title.part1")}
+              BIS Certification India
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
-            {t("hero.title.part2")}
+            for Importers and Manufacturers
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            {t("hero.description")}
+            BIS certification ensures product quality and safety in India. It is
+            mandatory for many products and requires testing, documentation, and
+            approval.
           </p>
 
           <nav className="flex items-center -mt-2">
@@ -945,57 +181,283 @@ const BISCHero = () => {
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
-                {t("hero.viewServices")}
+                View Services
               </span>
             </div>
           </nav>
         </article>
 
         {/* Right Side */}
-        <ServiceContactForm />
+        <BISCertificationContactForm />
       </div>
     </section>
   );
 };
 
-// BISC Index Section
-const BISCIndex = () => {
+const BISCertificationContactForm = () => {
+  const [loading, setLoading] = useState(false);
+
+  // Function to get page name based on URL
+  const getPageName = () => {
+    const path = window.location.pathname;
+    // Service pages
+    if (path.includes("/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification - English Page";
+  };
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    companyName: "",
+    productName: "",
+    message: "",
+    pageUrl: window.location.href,
+    pageName: getPageName(),
+  });
+
+  const { fullName, email, phoneNumber, companyName, productName, message } =
+    formData;
+
+  const handleOnChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // console.log("Form Data:", formData);
+
+    // Full name validation
+    const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
+    if (!nameRegex.test(fullName)) {
+      toast({
+        variant: "destructive",
+        title: "Please enter a valid full name.",
+        description: "Name should only contain letters and spaces.",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Email validation - allow any domain
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+      toast({
+        variant: "destructive",
+        title: "Please enter a valid email address.",
+        description: "Check if your email format is correct",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      toast({
+        variant: "destructive",
+        title: "Please enter a valid phone number",
+        description: "Phone number must be (8-15 digits)",
+      });
+      setLoading(false);
+      return;
+    }
+
+    //  console.log(BASE_URL);
+    try {
+      const response = await axios.post(
+        `${BASE_URL}/appointment/submit-appointment`,
+        formData
+      );
+
+      if (!response.data.success) {
+        throw new Error(response.data.message);
+      }
+      toast({
+        title: "Contact form submitted successfully!",
+        description:
+          "Thank you for contacting us. Our team will get back to you soon.",
+      });
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        companyName: "",
+        productName: "",
+        message: "",
+        pageUrl: window.location.href,
+        pageName: getPageName(),
+      });
+    } catch (error) {
+      const errorMessage =
+        error.response?.data?.message || "Something went wrong";
+      toast({
+        variant: "destructive",
+        title: errorMessage || "Failed to submit contact form details!",
+        description:
+          "Something went wrong. Please check your details and try again.",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-poppins font-semibold text-[18px] md:text-[20px] text-[#008080]">
+          Contact Us
+        </span>
+        <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+      </div>
+
+      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+        Book an Appointment
+      </h3>
+
+      <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
+        Want to contact our team and schedule a call?
+        <span className="text-black"> Try Now</span>
+      </p>
+
+      <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="fullName"
+            value={fullName}
+            onChange={handleOnChange}
+            placeholder="Full Name *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+
+          <Input
+            disabled={loading}
+            required
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleOnChange}
+            placeholder="Email Address *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+          <Input
+            disabled={loading}
+            required
+            type="tel"
+            name="phoneNumber"
+            value={phoneNumber}
+            onChange={handleOnChange}
+            placeholder="Contact Number *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="companyName"
+            value={companyName}
+            onChange={handleOnChange}
+            placeholder="Company Name *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="productName"
+            value={productName}
+            onChange={handleOnChange}
+            placeholder="Product Name *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="message"
+            value={message}
+            onChange={handleOnChange}
+            placeholder="Required Certification*"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+        </div>
+
+        <Button
+          disabled={loading}
+          type="submit"
+          className="disabled:opacity-100 mt-1 w-[218px] h-[50px] md:h-[60px] bg-[#1A8781] hover:bg-[#1A8781]/90 rounded-[5px] text-[15px] md:text-[15px] font-poppins tracking-wide leading-[28px] shadow-elegant transition-all duration-300 hover:translate-y-[-2px]"
+        >
+          {loading ? (
+            <div className="flex gap-3 items-center justify-center">
+              <ClockLoader size={22} color="#fff" />
+              <span>Sending</span>
+            </div>
+          ) : (
+            <div className="flex gap-3 items-center justify-center">
+              <span>Book Appointment</span>
+            </div>
+          )}
+        </Button>
+      </form>
+    </div>
+  );
+};
+
+const BISCertificationIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [activeSection, setActiveSection] = useState("Overview");
+  const [activeSection, setActiveSection] = useState("overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const stickyRef = useRef(null);
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
-  const { t } = useTranslation("BISCertification");
 
-  const SECTIONS = [
-    "overview",
-    "schemes",
-    "process",
-    "documents",
-    "cost",
-    "air",
-    "conclusion",
-    "faqs",
-  ];
+  const SECTIONS = useMemo(
+    () => [
+      "overview",
+      "schemes",
+      "process",
+      "documents",
+      "cost",
+      "air",
+      "conclusion",
+      "faqs",
+    ],
+    []
+  );
 
-  // Create a mapping for section names
-  const getSectionDisplayName = (section) => {
-    const sectionNames = {
-      overview: "OVERVIEW",
-      schemes: "SCHEMES",
-      process: "PROCESS",
-      documents: "DOCUMENTS",
-      cost: "COST",
-      air: "AIR",
-      conclusion: "CONCLUSION",
-      faqs: "FAQS",
-    };
-    return sectionNames[section] || section.toUpperCase();
+  const MENU_ITEMS = {
+    overview: "Overview",
+    schemes: "Schemes",
+    process: "Process",
+    documents: "Documents",
+    cost: "Cost",
+    air: "Air",
+    conclusion: "Conclusion",
+    faqs: "FAQs",
   };
 
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase());
+    const element = document.getElementById(
+      item.toLowerCase().replace(/\s+/g, "-")
+    );
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -1029,7 +491,6 @@ const BISCIndex = () => {
     };
   }, []);
 
-  // Sticky behavior detection
   useEffect(() => {
     const handleScroll = () => {
       if (stickyRef.current) {
@@ -1046,46 +507,30 @@ const BISCIndex = () => {
     };
   }, []);
 
-  // Active section detection using Intersection Observer
   useEffect(() => {
-    const sectionObserver = new IntersectionObserver(
-      (entries) => {
-        // Filter entries that are intersecting and sort by intersection ratio
-        const intersectingEntries = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    const handleScrollSpy = () => {
+      const scrollPosition = window.scrollY + 200; // Offset for header
 
-        if (intersectingEntries.length > 0) {
-          const mostVisibleEntry = intersectingEntries[0];
-          const targetId = mostVisibleEntry.target.id;
+      for (let i = SECTIONS.length - 1; i >= 0; i--) {
+        const section = SECTIONS[i];
+        const element = document.getElementById(section);
 
-          // Handle special case for FAQs
-          if (targetId === "faqs") {
-            setActiveSection("FAQs");
-          } else {
-            // Capitalize first letter for other sections
-            const sectionName =
-              targetId.charAt(0).toUpperCase() + targetId.slice(1);
-            setActiveSection(sectionName);
+        if (element) {
+          const offsetTop = element.offsetTop;
+
+          if (scrollPosition >= offsetTop) {
+            setActiveSection(section);
+            break;
           }
         }
-      },
-      {
-        threshold: [0.1, 0.3, 0.5, 0.7, 0.9], // Multiple thresholds for better detection
-        rootMargin: "-20% 0px -70% 0px", // Only trigger when section is in the middle portion of viewport
       }
-    );
+    };
 
-    // Observe all sections
-    SECTIONS.forEach((section) => {
-      const element = document.getElementById(section.toLowerCase());
-      if (element) {
-        sectionObserver.observe(element);
-      }
-    });
+    window.addEventListener("scroll", handleScrollSpy);
+    handleScrollSpy(); // Initial check
 
-    return () => sectionObserver.disconnect();
-  }, []);
+    return () => window.removeEventListener("scroll", handleScrollSpy);
+  }, [SECTIONS]);
 
   return (
     <div
@@ -1097,13 +542,13 @@ const BISCIndex = () => {
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
-          {getSectionDisplayName(activeSection.toLowerCase())}
+          {MENU_ITEMS[activeSection]}
         </div>
         <button
           ref={toggleButtonRef}
           onClick={toggleMobileMenu}
           className="p-2 rounded-md hover:bg-blue-100 transition-colors"
-          aria-label="Toggle Menu"
+          aria-label="Toggle menu"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -1143,13 +588,13 @@ const BISCIndex = () => {
                 key={item}
                 onClick={() => handleItemClick(item)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${
-                  item === activeSection.toLowerCase()
+                  item === activeSection
                     ? "bg-blue-50 text-blue-900 font-semibold"
                     : "text-blue-950 hover:bg-blue-50"
                 }`}
               >
                 <div className="font-geist tracking-wider uppercase">
-                  {getSectionDisplayName(item)}
+                  {MENU_ITEMS[item]}
                 </div>
               </div>
             ))}
@@ -1158,7 +603,7 @@ const BISCIndex = () => {
       )}
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto overflow-x-auto">
+      <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto">
         {SECTIONS.map((item) => (
           <div
             key={item}
@@ -1167,16 +612,16 @@ const BISCIndex = () => {
           >
             <div
               className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-                item === activeSection.toLowerCase()
+                item === activeSection
                   ? "text-blue-900"
                   : "text-blue-950 group-hover:text-blue-900"
               }`}
             >
-              {getSectionDisplayName(item)}
+              {MENU_ITEMS[item]}
             </div>
             <div
               className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-                item === activeSection.toLowerCase()
+                item === activeSection
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
               }`}
@@ -1188,223 +633,69 @@ const BISCIndex = () => {
   );
 };
 
-// BISC Content Section
-const BISCContent = () => {
+const BISCertificationContent = () => {
   return (
-    <section className="" aria-label="BIS Certification Content">
-      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
-        <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-          {/* Left Side */}
-          <BISCContentLeft />
-
-          {/* Right Side */}
-          <ServiceContentRight />
-        </div>
+    <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+        {/* Left Side */}
+        <BISCertificationContentLeft />
+        {/* Right Side */}
+        <ServicesRightSideContentEng />
       </div>
-      <ServiceFaq />
-      <div id="product-table">
-        <BISCProductTable />
-      </div>
-
-      <div id="services">
-        <Services />
-      </div>
-    </section>
+    </div>
   );
 };
 
-// BISC FAQs Section
-const ServiceFaq = () => {
-  const { t } = useTranslation("BISCertification");
-
+const BISCertificationContentLeft = () => {
   return (
-    <section
-      id="faqs"
-      className="my-2 bg-white scroll-mt-20"
-      aria-label="Frequently Asked Questions"
-    >
-      <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          {t("faqs.title")}
-        </h2>
-        <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          {t("faqs.subtitle")}{" "}
-          <a
-            href="/contact"
-            className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
-          >
-            {t("faqs.reachOut")}
-          </a>
-        </p>
-
-        <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
-          <Accordion type="single" collapsible className="w-full">
-            {Object.entries(t("faqs.questions", { returnObjects: true })).map(
-              ([key, value]) => (
-                <AccordionItem key={key} value={key}>
-                  <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                    {value.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
-                    {value.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              )
-            )}
-          </Accordion>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const BISCContentLeft = () => {
-  return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
-      <div className="flex flex-col  gap-[20px] md:gap-[40px]">
-        {/* Overview Section */}
+    <div className="flex-1">
+      <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <OverviewSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        {/* Schemes Section */}
+        <div className="service-left-content-divider" />
         <SchemesSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        {/* Process Section */}
+        <div className="service-left-content-divider" />
         <ProcessSection />
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        {/* Documents Section */}
+        <div className="service-left-content-divider" />
         <DocumentsSection />
-        {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
+        <div className="service-left-content-divider" />
         <CostSection />
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
+        <div className="service-left-content-divider" />
         <AIRSection />
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
+        <div className="service-left-content-divider" />
         <ConclusionSection />
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        {/* Review Section */}
-        <ReviewSection />
-
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <AboutAuthor />
+        <div className="service-left-content-divider" />
+        <ServiceAuthorEng />
       </div>
     </div>
   );
-};
-
-const PointsList = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col w-full  md:w-[441px]">
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[16px] md:mt-[24px] gap-2">
-        {points.map((point, index) => (
-          <li key={index} className="flex items-start gap-2">
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
-              {point}
-            </p>
-          </li>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-PointsList.propTypes = {
-  points: PropTypes.arrayOf(PropTypes.string).isRequired,
-  heading: PropTypes.string.isRequired,
-};
-
-const PointsListTwo = ({ points, heading, clickableRoutes = [] }) => {
-  const navigate = useNavigate();
-
-  const handlePointClick = (index) => {
-    if (clickableRoutes[index]) {
-      navigate(`/${clickableRoutes[index]}`);
-    }
-  };
-
-  return (
-    <div className="flex flex-col w-full">
-      <p className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {heading}
-      </p>
-      <div className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
-        {points.map((point, index) => (
-          <li
-            key={index}
-            className={`flex items-start gap-2 ${
-              clickableRoutes[index]
-                ? "cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors duration-200"
-                : ""
-            }`}
-            onClick={() => handlePointClick(index)}
-          >
-            <div className="bg-green-500/10 p-2 rounded-full">
-              <Check size={12} className="text-[#020817]" />
-            </div>
-            <p
-              className={`font-geist text-sm md:text-lg tracking-wide text-left max-w-full leading-normal ${
-                clickableRoutes[index]
-                  ? "text-[#1d4ed8] hover:text-[#1e40af] hover:underline"
-                  : "text-[#42434d]"
-              }`}
-            >
-              {point}
-            </p>
-          </li>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-PointsListTwo.propTypes = {
-  points: PropTypes.arrayOf(PropTypes.string).isRequired,
-  heading: PropTypes.string.isRequired,
-  clickableRoutes: PropTypes.arrayOf(PropTypes.string),
 };
 
 const OverviewSection = () => {
   return (
-    <section id="overview" className="flex flex-col scroll-mt-20">
+    <div id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          OVERVIEW
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        <span className="service-left-content-index-heading">Overview</span>
+        <Separator className="service-left-content-separator" />
       </div>
-
-      <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        BIS Certification for Manufacturers and Importers in India
+      <h1 className="service-left-content-heading-two">
+        BIS ISI Mark Certification for Indian Manufacturers
       </h1>
 
-      <img
-        src="/services-main-images/IndianBisCertification.png"
-        alt="Indian BIS Certification"
-        title="BIS Certificate for Indian manufactures"
-        className="w-full h-auto rounded-lg shadow-md"
-      />
+      <div className="flex justify-center mt-[20px] md:mt-[26px]">
+        <img
+          src="/services-main-images/IndianBisCertification.png"
+          alt="Indian BIS Certification"
+          title="BIS Certificate for Indian manufactures"
+          className="max-w-full h-auto rounded-lg shadow-md"
+        />
+      </div>
 
-      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h2 className="service-left-content-heading-three">
         Introduction: Why BIS Certification Matters
       </h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         Take for instance, a manufacturer from Germany who has invented a unique
         electronic device and is planning to sell it in the fast paced Indian
         Market. The device is unique, and safe and has also gained approvals in
@@ -1414,7 +705,7 @@ const OverviewSection = () => {
         part to sell electronic products in India.
       </p>
 
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         Many global and Indian manufacturers deal with the same instances every
         year. For Indian consumers, the BIS mark on a product is not just a
         logo, it is a mark of trust that the product has been tested for
@@ -1422,33 +713,31 @@ const OverviewSection = () => {
         one of the largest markets in the entire world.
       </p>
 
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         This article will answer all the queries on BIS certification, its
         necessity, processes, benefits, schemes, costs, and the system and its
         navigation available to both foreign and domestic manufacturers.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h2 className="service-left-content-heading-three">
         What is BIS Certification for Manufacturers and Importers?
       </h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         BIS Certification is a quality assurance and safety certification
         provided by the Bureau of Indian Standards (BIS), the national
         certification body of India under the Ministry of Consumer Affairs. The
         BIS certification ensures that a product conforms to the Indian
         Standards (IS) in regard to performance, safety, and quality.
       </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         When a product fulfills these quality standards requirements, the Bureau
         of Indian Standards issues a BIS license or BIS certificate, signifying
         the product is eligible to bear the ISI mark (for domestic schemes) or a
         CRS mark with a unique registration number (under BIS Compulsory
         Registration Scheme).
       </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         For many Indian manufacturers and importers securing BIS certification
         is a must. It covers a wide range of products including electrical
         appliances, cement and steel products, package drinking water,
@@ -1458,11 +747,11 @@ const OverviewSection = () => {
         goods in India without BIS recognition.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h2 className="service-left-content-heading-three">
         A Brief History of BIS in India
       </h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         The Bureau of Indian Standards (BIS) was formed in 1986 taking over the
         Indian Standards Institution (ISI) which was formed in 1947. BIS is now
         considered to be a quality guardian for standards in India and has
@@ -1470,541 +759,141 @@ const OverviewSection = () => {
         amendments for the Indian conditions.
       </p>
 
-      <h3 className="mt-[20px] md:mt-[24px] font-semibold font-geist text-[16px] md:text-[18px] text-[#131316]">
+      <h3 className="service-left-content-heading-three">
         Remarkable Milestones
       </h3>
 
-      <div className="mt-[16px] md:mt-[24px]">
-        <PointsListTwo
-          points={[
-            "In 1947 the ISI was founded to support quality control systems after the country gained independence.",
-            "In 1955 the ISI mark was awarded, becoming one of the most famous quality symbols in India.",
-            "In 1986, the BIS Act was passed, replacing ISI with the Bureau of Indian Standards.",
-            "In 2016 and 2018, further amendments enriched the BIS's responsibilities, making hallmarking and product certification more thorough.",
-          ]}
-          heading=""
-        />
-      </div>
+      <PointsListWithoutHeading
+        points={[
+          "In 1947 the ISI was founded to support quality control systems after the country gained independence.",
+          "In 1955 the ISI mark was awarded, becoming one of the most famous quality symbols in India.",
+          "In 1986, the BIS Act was passed, replacing ISI with the Bureau of Indian Standards.",
+          "In 2016 and 2018, further amendments enriched the BIS's responsibilities, making hallmarking and product certification more thorough.",
+        ]}
+      />
 
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         Currently, BIS guarantees the safety, reliability, and standardization
         of thousands of tools and machinery for Indian users across multiple
         industries.
       </p>
 
-      <h2 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
+      <h2 className="service-left-content-heading-three">
         Why is BIS Certification mandatory in India?
       </h2>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         The Indian market is enormous, ever-changing, and sensitive to price
         shifts. However, this openness also leaves the market exposed to cheap
         and unsafe goods. In this context, BIS certification acts as a
         protective barrier.
       </p>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <PointsListTwo
-          points={[
-            "Consumer Safety - protects people from potential accidents, health issues, and deceit.",
-            "Market Regulation - ensures that non-conforming products do not enter the Indian market.",
-            "Trust and Confidence - bolsters consumer belief in local and international products.",
-            "Global Alignment - assists foreign companies in aligning with India's regulatory structure.",
-            "Fair Competition - every market participant, irrespective of size, is assured of competing purely on quality.",
-          ]}
-          heading=""
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <PointsListWithoutHeading
+        points={[
+          "Consumer Safety - protects people from potential accidents, health issues, and deceit.",
+          "Market Regulation - ensures that non-conforming products do not enter the Indian market.",
+          "Trust and Confidence - bolsters consumer belief in local and international products.",
+          "Global Alignment - assists foreign companies in aligning with India's regulatory structure.",
+          "Fair Competition - every market participant, irrespective of size, is assured of competing purely on quality.",
+        ]}
+      />
+      <p className="service-left-content-paragraph">
         BIS certification for packaged drinking water is an example of where
         lacking certification could pose health issues. Other equally lacking
         standards of product certification for heaters, toasters, and other
         electric appliances can lead to fires. Therefore, by having a BIS
         certification, the government makes sure these challenges are addressed.
       </p>
-    </section>
-  );
-};
-
-const SchemesSection = () => {
-  return (
-    <section id="schemes" className="flex flex-col scroll-mt-20">
-      {/* Schemes */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          SCHEMES
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        BIS Certification Schemes
-      </h2>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        BIS has numerous certification schemes designed for varied industries
-        and product types. Each is designed to address the particular needs of
-        the industry and the product.
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <PointsListTwo
-          points={[
-            "FMCS – Foreign Manufacturers Certification Scheme",
-            "ISI Mark Scheme (Domestic Manufacturers)",
-            "Scheme X under Indian BIS",
-            "CRS – Compulsory Registration Scheme",
-            "Hallmarking Scheme (Jewellery & Precious Metals)",
-            "Eco Mark Certification",
-            "Management Systems Certification Scheme (MSCS)",
-            "LRS (Lab Recognition Scheme)",
-          ]}
-          heading=""
-          clickableRoutes={[
-            "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
-            "bis-isi-mark-certification",
-            "indian-bis-certification-under-scheme-x",
-            "what-is-crs-bis-or-crs-registration",
-            "", // hallmarking - no link
-            "", // ecoMark - no link
-            "", // mscs - no link
-            "", // lrs - no link
-          ]}
-        />
-      </div>
-
-      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        ISI Mark Scheme (Domestic Manufacturers)
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        For Indian manufacturers, getting a BIS licence is a prerequisite for
-        ensuring legal sales of their products within the country. This
-        certification is issued by the Bureau of Indian Standards (BIS) to
-        certify satisfaction of Indian Standards pertaining to quality, safety
-        and performance benchmarks for the products. This includes factory
-        audits, product testing and compliance checks with the BIS parameters.
-        Once the product is passed, the manufacturers are allowed to put the ISI
-        mark on the product. This mark is a trade mark for the manufacturer and
-        helps the customer identify a genuine, ISI certified product.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Regardless of whether it is for electronics, steel, cement, plastic, or
-        construction materials, obtaining a BIS certificate is essential for
-        gaining market access. Unlike gaining consumer confidence, a BIS
-        certificate enhances the reputation of Indian manufacturers, enables
-        them to participate in government contracts, and opens up a host of
-        other business opportunities. Most importantly, the absence of BIS
-        certification can have damaging repercussions, ranging from legal fines
-        and product recall to a complete ban of sale in India. Therefore, BIS
-        compliance is more than a legal requirement, it is a targeted strategy
-        for expanding and maintaining consumer confidence.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        For Indian manufacturers, the ISI mark scheme is the most prestigious
-        mark. Under the scheme, Indian manufacturers are required to have their
-        products tested at BIS recognized testing facilities. Manufacturing
-        sites are subject to inspection and testing. Compliant products are
-        granted approval to use the ISI mark. It is an offence to supply
-        products like cement, LPG cylinders, electrical cables, packaged
-        drinking water and more, without the ISI mark.
-      </p>
-
-      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        FMCS – Foreign Manufacturers Certification Scheme
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Foreign Manufacturers Certification Scheme (FMCS) is a scheme
-        developed by the Bureau of Indian Standards for foreign companies
-        wishing to enter the Indian Market. This scheme guarantees the safety,
-        quality, and performance assurance of the products manufactured abroad
-        complying with the required Indian standards. As per FMCS, foreign
-        companies wishing to sell products in India must first acquire a Bureau
-        of Indian Standards certificate or a license. Like Indian manufacturers,
-        foreign manufacturers are also required to secure a BIS license to use
-        ISI mark on their product. The desirable ISI mark is given after
-        extensive evaluation that includes factory and rigorous product sample
-        testing against the Indian Standards.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        A foreign manufacturer is required to appoint an Authorized Indian
-        Representative (AIR), who is responsible for communication and
-        coordination, as the first point of contact with the Bureau of Indian
-        Standards (BIS) for the scheme. It includes the filing of an
-        application, in depth compliance evaluation, and the assumption of all
-        necessary obligations to achieve compliance within the deadlines. As a
-        result of following the FMCS guidelines, foreign companies are able to
-        enter the Indian market, as well as acquire goodwill with the customers.
-        Any product with an ISI mark shows a high level of quality, safety, and
-        reliability assurance in India.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        No foreign products which fall under the regulated categories are
-        allowed to enter India without the FMCS certification.
-      </p>
-
-      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Scheme X (Omnibus Technical Regulation)
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Schome X, or the Omnibus Technical Regulation, is another BIS
-        certification Scheme designed by the Bureau of Indian Standards to help
-        simplify the compliance procedures of industries in mechanical and
-        electrical domains. Unlike the other certification schemes, Scheme X
-        focuses on reducing documentation, assessments, and approvals while
-        ensuring that products adhere to the Indian Standards. The products with
-        the standard mark are of exceptional quality and safety and can be sold
-        after undergoing type testing, factory inspections, and simple
-        certification of mandatory requirements.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The scheme X covers heavy machinery and electrical equipment safety
-        guidelines for products such as pumps, cranes, transformers, machine
-        tools and other heavy engineering products. These are the most pertinent
-        industries and all where reliability and safety is a necessity. Scheme X
-        is convenient as it shortens the time and costs of the complex BIS
-        certification. It aims to streamline the compliance process in order to
-        facilitate quicker clearance for marketing and enhanced reputation
-        without compromising the quality and safety standards. The enduring and
-        traditional reputation of the Bureau of Indian Standards enables easier
-        international trade, indispensable for companies to meet compliance
-        requirements and boost competitiveness.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        BIS Scheme X is mandatory to access the Indian heavy machine industry.
-        This new scheme is important for improved market competition, innovation
-        and compliance to regulations which are streamlined through this
-        simplified yet robust structure.
-      </p>
-
-      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Compulsory Registration Scheme (CRS)
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Bureau of Indian Standards (BIS) has developed a BIS certification
-        program called the Compulsory Registration Scheme (CRS) aimed at
-        regulating IT and electronic products in India. It focuses on assessing
-        the safety and quality of high-risk products like LED lights, mobile
-        phones, laptops, power banks, and other consumer electronics against
-        Indian Standards. CRS, in contrast to the ISI scheme, does not issue an
-        ISI mark, but certified products, in compliance with the scheme, bear a
-        CRS mark with a unique registration number. All electronics and IT
-        products need to be tested in the BIS-recognized laboratories and
-        formally registered with BIS CRS, used to ensure compliance before they
-        can be sold or imported into India.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        This scheme is essential for protecting Indian consumers from unsafe,
-        substandard, or counterfeit electronics, particularly in the case of the
-        rapidly growing digital market. Both Indian and foreign manufacturers
-        need to acquire CRS certification. The foreign companies must appoint an
-        Authorized Indian Representative AIR to ensure compliance. The BIS
-        continually updates the list of products covered under the CRS to
-        include new products and technologies and emerging safety issues. For
-        manufacturers, obtaining BIS registration under CRS is an added
-        advantage since it helps in regulatory compliance and it also increases
-        customer's trust, company's reputation, and market access in the
-        electronics industry in India.
-      </p>
-
-      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Hallmarking Scheme
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        In India, hallmarking of gold and silver jewellery is compulsory under
-        the Hallmarking Scheme and regulated by the Bureau of Indian Standards
-        (BIS) which guarantees the purity and genuineness of the jewellery.
-        Precious Metal articles are tested at BIS approved Assaying and
-        Hallmarking Centres (AHC) and are then stamped with hallmark signs. This
-        process is only completed if the articles fulfill the Indian Standards
-        laid out at the start. Jewelers must first acquire a BIS license which
-        allows them to sell hallmarked jewellery. This is the only way to do so
-        legally. The jeweler is obliged to undergo and complete product testing,
-        BIS audits, and continuous compliance monitoring to sell hallmarked
-        jewellery. The process, in the end, protects the consumer and ensures
-        the purity, weight and quality and limits malpractice as well as fraud
-        in the jewellery market.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        For Indian consumers, gold and silver are not just ornaments but also
-        major investments, which makes trust and transparency essential. The
-        hallmarking jewelry is a mark of assurance for the common citizen in the
-        country that every piece of jewelry for sale has gone through extensive
-        testing against various national benchmarks and fair trading practices.
-        Jewelers can showcase their credibility and market reputation by
-        hallmarking jewelry. The inability to comply with the rules set brings
-        punishment which can include suspension of license. For hallmarking
-        under BIS, it serves as a fulfillment of principle-based and legal
-        obligations. This not only increases consumer satisfaction but also
-        enhances the Indian jewellery market as a whole. This is also the case
-        for smaller retailers as well as larger scale manufacturers.
-      </p>
-
-      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Eco Mark Certification
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Eco Mark is an innovation-centered recognition scheme created by the
-        Bureau of Indian Standards (BIS) aimed at the promotion of eco-friendly
-        goods. Unlike the traditional certification which concerns itself
-        prominently with safety and quality parameters, the Eco Mark is awarded
-        to goods which conform to Indian Standards and which show at least some
-        reduced level of the adverse environmental impact during any one or more
-        of the various stages of the life cycle of the goods. Eco Mark
-        certification is awarded only after considerable testing and the proving
-        of criteria - compliance which includes emission levels, non-toxicity,
-        the rate of biodegrade, capacity to recycle and overall interactions
-        with the system. Eco Mark, just like the ISI mark, is an emblem of
-        assurance from the government which has been granted the status of a
-        certification mark, albeit with more pronounced goals of environmental
-        sustainability.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The BIS licence with Eco Mark certifies that a company engages in
-        responsible manufacturing and cares about the environment. It ensures
-        compliance with the law and creates a competitive advantage with
-        protective consumers and sustainability-oriented businesses. Eco Mark
-        helps for the industry to trust and adopt green practices and for the
-        consumers to trust that the products they buy are safe and
-        environmentally responsible. Eco Mark supports India's vision for
-        enhanced quality protection with environmental protection under BIS.
-      </p>
-
-      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        Management Systems Certification Scheme (MSCS)
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The Management Systems Certification Scheme (MSCS) initiated by the
-        Bureau of Indian Standards (BIS) is a stepwise procedure which evaluates
-        and recognizes concerned firms for the implementation of internationally
-        accepted and recognized management systems. MSCS framework consists of
-        ISO Standards like ISO 9001 Quality Management, ISO 14001 Environment
-        Management, ISO 45001 Occupational Health and Safety Management System
-        and others. MSCS certifies the firm for the legal operations,
-        consistency, and continuous improvement of the operations. Certified
-        firms go through numerous assessments and audits which helps them build
-        trust among the customers, regulators, and stakeholders which
-        strengthens the guarantee of safety, quality, and sustainability.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        BIS is the national standards body of India and is the certifying body
-        for the enhancement of the organization's reputation and credibility
-        domestically and outside India. MSCS besides fostering accountability
-        through periodic supervision and recertification also frees up a
-        business to actively support public led programs like Make in India and
-        Atmanirbhar Bharat. Besides legal obligation, the scheme also helps in
-        cultivating a culture of integrity, efficiency and fair trading. MSCS
-        encourages the trade and investment by the certified companies and BIS
-        plays a crucial part in the development of the quality ecosystem of the
-        country.
-      </p>
-
-      <h3 className="mt-[24px] md:mt-[32px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        LRS – Lab Recognition Scheme
-      </h3>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        Under the Bureau of Indian Standards (BIS), the Lab Recognition Scheme
-        (LRS) is an integral part of a system that guarantees the dependability
-        and overall competency of laboratories that test and certify products
-        for BIS approval. Such labs are critically appraised on diverse
-        attributes which include technical knowledge, quality of the workforce,
-        infrastructure, and the overall competency and satisfaction of the lab
-        with the ISO/ IEC 17025 standard. These labs, once approved, are
-        permitted to perform testing on the product for which conformity
-        assessment is done as part of various BIS certification programs such as
-        the ISI Mark Scheme and the Compulsory Registration Scheme (CRS). It is
-        clear that for manufacturers, in particular for importers and exporters,
-        the reports obtained from an LRS approved lab are a critical requirement
-        to achieve a BIS certificate that is a legal requirement for certain
-        products.
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The LRS is empowering India's assurance systems by maintaining equity in
-        testing outcomes and ensuring that all outcomes are consistent and
-        globally benchmarked, while accrediting only reliable and sound
-        laboratories. To uphold integrity and transparency, BIS performs regular
-        audits, proficiency tests, and surveillance of recognized schematic
-        labs. Recognition of this certification enables BIS to improve trust
-        from consumers while making the certification process more efficient for
-        industries, as only safe, compliant, and high-quality products will be
-        offered in the Indian market. For organizations that aim to receive BIS
-        certification, collaboration with LRS-approved labs is the most
-        essential to achieve compliance and market access.
-      </p>
-
-      <h3 className="mt-[20px] md:mt-[24px] font-semibold font-geist text-[16px] md:text-[18px] text-[#131316]">
-        Products That Require BIS Certification
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        BIS certification applies to a wide variety of products. Examples
-        include:
-      </p>
-
-      <div className="mt-[16px] md:mt-[20px]">
-        <PointsListTwo
-          points={[
-            "Electrical & Electronics – LED lights, mobile phones, adapters, laptops.",
-            "Construction Materials – Cement, steel bars, structural products.",
-            "Consumer Goods – Packaged drinking water, cooking gas cylinders.",
-            "Jewelry & Precious Metals – Gold and silver articles under hallmarking.",
-            "Industrial Equipment – Pumps, transformers, machine tools.",
-          ]}
-          heading=""
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        The list continues to grow as new risks and technologies emerge.
-      </p>
-
-      <h3 className="mt-[20px] md:mt-[24px] font-semibold font-geist text-[16px] md:text-[18px] text-[#131316]">
-        Benefits of BIS Certification
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        For companies, the BIS certificate offers much more than mere compliance
-        with the law.
-      </p>
-
-      <div className="mt-[16px] md:mt-[20px]">
-        <PointsListTwo
-          points={[
-            "Legal compliance: no fines, no bans, no seizure.",
-            "Market access: needed for selling regulated products in India.",
-            "Consumer trust: builds with the well-recognized ISI mark as a sign of proof.",
-            "Competitive advantage: as certified companies easily differentiate from uncertified competitors.",
-            "Export facilitation: many international buyers understand and appreciate BIS certification.",
-            "Participation in Tenders: many government projects award contracts for goods which are BIS certified.",
-          ]}
-          heading=""
-        />
-      </div>
-    </section>
+    </div>
   );
 };
 
 const ProcessSection = () => {
   return (
-    <section id="process" className="flex flex-col scroll-mt-20">
+    <div id="process" className="flex flex-col scroll-mt-20">
       {/* Process */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          PROCESS
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        <span className="service-left-content-index-heading">Process</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        BIS Certification process
+      <h2 className="service-left-content-heading-two">
+        BIS Certification Process
       </h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         The BIS certification process follows a structured flow:
       </p>
 
-      <div className="mt-[16px] md:mt-[24px]">
-        <PointsListTwo
-          points={[
-            "Identify Relevant Standard: Select applicable Indian Standard (IS).",
-            "Application Submission: File with BIS and enclose any pertinent documents.",
-            "Product Testing: Testing done in approved BIS labs.",
-            "Factory Inspection: Facilities are inspected by BIS officers.",
-            "BIS License: certificate is awarded for successful assessment evaluation.",
-            "Surveillance: sustained compliance along with license changes is the new norm.",
-          ]}
-          heading=""
-        />
-      </div>
-    </section>
+      <PointsListWithoutHeading
+        points={[
+          "Identify Relevant Standard: Select applicable Indian Standard (IS).",
+          "Application Submission: File with BIS and enclose any pertinent documents.",
+          "Product Testing: Testing done in approved BIS labs.",
+          "Factory Inspection: Facilities are inspected by BIS officers.",
+          "BIS License: certificate is awarded for successful assessment evaluation.",
+          "Surveillance: sustained compliance along with license changes is the new norm.",
+        ]}
+      />
+    </div>
   );
 };
 
 const DocumentsSection = () => {
   return (
-    <section id="documents" className="flex flex-col scroll-mt-20">
+    <div id="documents" className="flex flex-col scroll-mt-20">
       {/* Documents */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          DOCUMENTS
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        <span className="service-left-content-index-heading">Documents</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+      <h2 className="service-left-content-heading-two">
         Documents Required for BIS Certification
-      </h3>
+      </h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         A strong documentation package ensures smooth processing. Key
         requirements include:
       </p>
 
-      <div className="mt-[16px] md:mt-[24px]">
-        <PointsListTwo
-          points={[
-            "Business license or company registration documents.",
-            "Manufacturing process flow chart.",
-            "List of machinery and equipment.",
-            "Product details and technical specifications.",
-            "Test reports from BIS-recognized labs.",
-            "Quality control manual.",
-            "Trademark certificate.",
-          ]}
-          heading=""
-        />
-      </div>
+      <PointsListWithoutHeading
+        points={[
+          "Business license or company registration documents.",
+          "Manufacturing process flow chart.",
+          "List of machinery and equipment.",
+          "Product details and technical specifications.",
+          "Test reports from BIS-recognized labs.",
+          "Quality control manual.",
+          "Trademark certificate.",
+        ]}
+      />
 
-      <h4 className="mt-[20px] md:mt-[24px] font-semibold font-geist text-[16px] md:text-[18px] text-[#131316]">
+      <h3 className="service-left-content-heading-three mt-5">
         For foreign manufacturers:
-      </h4>
+      </h3>
 
-      <div className="mt-[16px] md:mt-[20px]">
-        <PointsListTwo
-          points={[
-            "Appointment of an Authorized Indian Representative (AIR).",
-            "Proof of representation and identity documents.",
-          ]}
-          heading=""
-        />
-      </div>
-    </section>
+      <PointsListWithoutHeading
+        points={[
+          "Appointment of an Authorized Indian Representative (AIR).",
+          "Proof of representation and identity documents.",
+        ]}
+      />
+    </div>
   );
 };
 
 const CostSection = () => {
   return (
-    <section id="cost" className="flex flex-col scroll-mt-20">
+    <div id="cost" className="flex flex-col scroll-mt-20">
       {/* Cost */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          COST
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        <span className="service-left-content-index-heading">Cost</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+      <h2 className="service-left-content-heading-two">
         BIS Certification Cost
-      </h3>
+      </h2>
 
       <div className="mt-[16px] md:mt-[24px]">
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
@@ -2063,65 +952,56 @@ const CostSection = () => {
           </TableBody>
         </Table>
       </div>
-    </section>
+    </div>
   );
 };
 
 const AIRSection = () => {
   return (
-    <section id="air" className="flex flex-col scroll-mt-20">
+    <div id="air" className="flex flex-col scroll-mt-20">
       {/* AIR */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          AIR
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        <span className="service-left-content-index-heading">AIR</span>
+        <Separator className="service-left-content-separator" />
       </div>
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
+      <h2 className="service-left-content-heading-two">
         Role of Authorized Indian Representative (AIR)
-      </h3>
+      </h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         For foreign manufacturers, the Authorized Indian Representative (AIR) is
         critical.
       </p>
 
-      <div className="mt-[16px] md:mt-[24px]">
-        <PointsListTwo
-          points={[
-            "Handles all communication with BIS.",
-            "Gathers and submits documents, then facilitates the inspection process.",
-            "Ensures compliance regarding certification, before, and after.",
-            "Must be an Indian citizen or an organization with a registered local address.",
-          ]}
-          heading=""
-        />
-      </div>
+      <PointsListWithoutHeading
+        points={[
+          "Handles all communication with BIS.",
+          "Gathers and submits documents, then facilitates the inspection process.",
+          "Ensures compliance regarding certification, before, and after.",
+          "Must be an Indian citizen or an organization with a registered local address.",
+        ]}
+      />
 
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         In the absence of an AIR, obtaining BIS certification for foreign
         companies is impossible.
       </p>
-    </section>
+    </div>
   );
 };
 
 const ConclusionSection = () => {
   return (
-    <section id="conclusion" className="flex flex-col scroll-mt-20">
+    <div id="conclusion" className="flex flex-col scroll-mt-20">
       {/* Conclusion */}
       <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          CONCLUSION
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
+        <span className="service-left-content-index-heading">Conclusion</span>
+        <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        Conclusion
-      </div>
+      <h2 className="service-left-content-heading-two">Conclusion</h2>
 
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         Having a BIS certification is a necessity for doing business in India.
         It is no longer an optional certification in business. It is crucial for
         business success and building trust. BIS is essential for safety and
@@ -2130,88 +1010,734 @@ const ConclusionSection = () => {
         concern. With a BIS mark, consumer trust is guaranteed.
       </p>
 
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
+      <p className="service-left-content-paragraph">
         India is one of the biggest growing economies in the world and gaining
         access to sell there can help an exporter grow. No matter if you are a
-        manufacturer in India or abroad, the license BIS is needed to
+        manufacturer in India or abroad, the BIS license is needed to
         manufacture or sell products in the Indian market. It's required, and it
-        supposedly unlocks business prospects with India's growing population
-        ever. It's an investment in safety and consumer bond, and brand
-        reputation as well as in credibility and long-term growth.
+        unlocks business prospects with India's growing population. It's an
+        investment in safety, consumer trust, brand reputation, credibility, and
+        long-term growth.
       </p>
+    </div>
+  );
+};
+
+const SchemesSection = () => {
+  return (
+    <div id="schemes" className="flex flex-col scroll-mt-20">
+      {/* Schemes */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">Schemes</span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      <h2 className="service-left-content-heading-two">
+        BIS Certification Schemes
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        BIS has numerous certification schemes designed for varied industries
+        and product types. Each is designed to address the particular needs of
+        the industry and the product.
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "FMCS – Foreign Manufacturers Certification Scheme",
+          "ISI Mark Scheme (Domestic Manufacturers)",
+          "Scheme X under Indian BIS",
+          "CRS – Compulsory Registration Scheme",
+          "Hallmarking Scheme (Jewellery & Precious Metals)",
+          "Eco Mark Certification",
+          "Management Systems Certification Scheme (MSCS)",
+          "LRS (Lab Recognition Scheme)",
+        ]}
+        linkMap={{
+          "FMCS – Foreign Manufacturers Certification Scheme":
+            "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+          "ISI Mark Scheme (Domestic Manufacturers)":
+            "a-guide-to-bis-certification-indian-bis",
+          "Scheme X under Indian BIS":
+            "indian-bis-certification-under-scheme-x",
+          "CRS – Compulsory Registration Scheme":
+            "what-is-crs-bis-or-crs-registration",
+        }}
+      />
+
+      <h3 className="service-left-content-heading-three">
+        ISI Mark Scheme (Domestic Manufacturers)
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        For Indian manufacturers, getting a BIS licence is a prerequisite for
+        ensuring legal sales of their products within the country. This
+        certification is issued by the Bureau of Indian Standards (BIS) to
+        certify satisfaction of Indian Standards pertaining to quality, safety
+        and performance benchmarks for the products. This includes factory
+        audits, product testing and compliance checks with the BIS parameters.
+        Once the product is passed, the manufacturers are allowed to put the ISI
+        mark on the product. This mark is a trade mark for the manufacturer and
+        helps the customer identify a genuine, ISI certified product.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Regardless of whether it is for electronics, steel, cement, plastic, or
+        construction materials, obtaining a BIS certificate is essential for
+        gaining market access. Unlike gaining consumer confidence, a BIS
+        certificate enhances the reputation of Indian manufacturers, enables
+        them to participate in government contracts, and opens up a host of
+        other business opportunities. Most importantly, the absence of BIS
+        certification can have damaging repercussions, ranging from legal fines
+        and product recall to a complete ban of sale in India. Therefore, BIS
+        compliance is more than a legal requirement, it is a targeted strategy
+        for expanding and maintaining consumer confidence.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        For Indian manufacturers, the ISI mark scheme is the most prestigious
+        mark. Under the scheme, Indian manufacturers are required to have their
+        products tested at BIS recognized testing facilities. Manufacturing
+        sites are subject to inspection and testing. Compliant products are
+        granted approval to use the ISI mark. It is an offence to supply
+        products like cement, LPG cylinders, electrical cables, packaged
+        drinking water and more, without the ISI mark.
+      </p>
+
+      <h3 className="service-left-content-heading-three">
+        FMCS – Foreign Manufacturers Certification Scheme
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        The Foreign Manufacturers Certification Scheme (FMCS) is a scheme
+        developed by the Bureau of Indian Standards for foreign companies
+        wishing to enter the Indian Market. This scheme guarantees the safety,
+        quality, and performance assurance of the products manufactured abroad
+        complying with the required Indian standards. As per FMCS, foreign
+        companies wishing to sell products in India must first acquire a Bureau
+        of Indian Standards certificate or a license. Like Indian manufacturers,
+        foreign manufacturers are also required to secure a BIS license to use
+        ISI mark on their product. The desirable ISI mark is given after
+        extensive evaluation that includes factory and rigorous product sample
+        testing against the Indian Standards.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        A foreign manufacturer is required to appoint an Authorized Indian
+        Representative (AIR), who is responsible for communication and
+        coordination, as the first point of contact with the Bureau of Indian
+        Standards (BIS) for the scheme. It includes the filing of an
+        application, in depth compliance evaluation, and the assumption of all
+        necessary obligations to achieve compliance within the deadlines. As a
+        result of following the FMCS guidelines, foreign companies are able to
+        enter the Indian market, as well as acquire goodwill with the customers.
+        Any product with an ISI mark shows a high level of quality, safety, and
+        reliability assurance in India.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        No foreign products which fall under the regulated categories are
+        allowed to enter India without the FMCS certification.
+      </p>
+
+      <h3 className="service-left-content-heading-three">
+        Scheme X (Omnibus Technical Regulation)
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        Schome X, or the Omnibus Technical Regulation, is another BIS
+        certification Scheme designed by the Bureau of Indian Standards to help
+        simplify the compliance procedures of industries in mechanical and
+        electrical domains. Unlike the other certification schemes, Scheme X
+        focuses on reducing documentation, assessments, and approvals while
+        ensuring that products adhere to the Indian Standards. The products with
+        the standard mark are of exceptional quality and safety and can be sold
+        after undergoing type testing, factory inspections, and simple
+        certification of mandatory requirements.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        The scheme X covers heavy machinery and electrical equipment safety
+        guidelines for products such as pumps, cranes, transformers, machine
+        tools and other heavy engineering products. These are the most pertinent
+        industries and all where reliability and safety is a necessity. Scheme X
+        is convenient as it shortens the time and costs of the complex BIS
+        certification. It aims to streamline the compliance process in order to
+        facilitate quicker clearance for marketing and enhanced reputation
+        without compromising the quality and safety standards. The enduring and
+        traditional reputation of the Bureau of Indian Standards enables easier
+        international trade, indispensable for companies to meet compliance
+        requirements and boost competitiveness.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        BIS Scheme X is mandatory to access the Indian heavy machine industry.
+        This new scheme is important for improved market competition, innovation
+        and compliance to regulations which are streamlined through this
+        simplified yet robust structure.
+      </p>
+
+      <h3 className="service-left-content-heading-three">
+        Compulsory Registration Scheme (CRS)
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        The Bureau of Indian Standards (BIS) has developed a BIS certification
+        program called the Compulsory Registration Scheme (CRS) aimed at
+        regulating IT and electronic products in India. It focuses on assessing
+        the safety and quality of high-risk products like LED lights, mobile
+        phones, laptops, power banks, and other consumer electronics against
+        Indian Standards. CRS, in contrast to the ISI scheme, does not issue an
+        ISI mark, but certified products, in compliance with the scheme, bear a
+        CRS mark with a unique registration number. All electronics and IT
+        products need to be tested in the BIS-recognized laboratories and
+        formally registered with BIS CRS, used to ensure compliance before they
+        can be sold or imported into India.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        This scheme is essential for protecting Indian consumers from unsafe,
+        substandard, or counterfeit electronics, particularly in the case of the
+        rapidly growing digital market. Both Indian and foreign manufacturers
+        need to acquire CRS certification. The foreign companies must appoint an
+        Authorized Indian Representative AIR to ensure compliance. The BIS
+        continually updates the list of products covered under the CRS to
+        include new products and technologies and emerging safety issues. For
+        manufacturers, obtaining BIS registration under CRS is an added
+        advantage since it helps in regulatory compliance and it also increases
+        customer's trust, company's reputation, and market access in the
+        electronics industry in India.
+      </p>
+
+      <h3 className="service-left-content-heading-three">Hallmarking Scheme</h3>
+
+      <p className="service-left-content-paragraph">
+        In India, hallmarking of gold and silver jewellery is compulsory under
+        the Hallmarking Scheme and regulated by the Bureau of Indian Standards
+        (BIS) which guarantees the purity and genuineness of the jewellery.
+        Precious Metal articles are tested at BIS approved Assaying and
+        Hallmarking Centres (AHC) and are then stamped with hallmark signs. This
+        process is only completed if the articles fulfill the Indian Standards
+        laid out at the start. Jewelers must first acquire a BIS license which
+        allows them to sell hallmarked jewellery. This is the only way to do so
+        legally. The jeweler is obliged to undergo and complete product testing,
+        BIS audits, and continuous compliance monitoring to sell hallmarked
+        jewellery. The process, in the end, protects the consumer and ensures
+        the purity, weight and quality and limits malpractice as well as fraud
+        in the jewellery market.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        For Indian consumers, gold and silver are not just ornaments but also
+        major investments, which makes trust and transparency essential. The
+        hallmarking jewelry is a mark of assurance for the common citizen in the
+        country that every piece of jewelry for sale has gone through extensive
+        testing against various national benchmarks and fair trading practices.
+        Jewelers can showcase their credibility and market reputation by
+        hallmarking jewelry. The inability to comply with the rules set brings
+        punishment which can include suspension of license. For hallmarking
+        under BIS, it serves as a fulfillment of principle-based and legal
+        obligations. This not only increases consumer satisfaction but also
+        enhances the Indian jewellery market as a whole. This is also the case
+        for smaller retailers as well as larger scale manufacturers.
+      </p>
+
+      <h3 className="service-left-content-heading-three">
+        Eco Mark Certification
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        The Eco Mark is an innovation-centered recognition scheme created by the
+        Bureau of Indian Standards (BIS) aimed at the promotion of eco-friendly
+        goods. Unlike the traditional certification which concerns itself
+        prominently with safety and quality parameters, the Eco Mark is awarded
+        to goods which conform to Indian Standards and which show at least some
+        reduced level of the adverse environmental impact during any one or more
+        of the various stages of the life cycle of the goods. Eco Mark
+        certification is awarded only after considerable testing and the proving
+        of criteria - compliance which includes emission levels, non-toxicity,
+        the rate of biodegrade, capacity to recycle and overall interactions
+        with the system. Eco Mark, just like the ISI mark, is an emblem of
+        assurance from the government which has been granted the status of a
+        certification mark, albeit with more pronounced goals of environmental
+        sustainability.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        The BIS licence with Eco Mark certifies that a company engages in
+        responsible manufacturing and cares about the environment. It ensures
+        compliance with the law and creates a competitive advantage with
+        protective consumers and sustainability-oriented businesses. Eco Mark
+        helps for the industry to trust and adopt green practices and for the
+        consumers to trust that the products they buy are safe and
+        environmentally responsible. Eco Mark supports India's vision for
+        enhanced quality protection with environmental protection under BIS.
+      </p>
+
+      <h3 className="service-left-content-heading-three">
+        Management Systems Certification Scheme (MSCS)
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        The Management Systems Certification Scheme (MSCS) initiated by the
+        Bureau of Indian Standards (BIS) is a stepwise procedure which evaluates
+        and recognizes concerned firms for the implementation of internationally
+        accepted and recognized management systems. MSCS framework consists of
+        ISO Standards like ISO 9001 Quality Management, ISO 14001 Environment
+        Management, ISO 45001 Occupational Health and Safety Management System
+        and others. MSCS certifies the firm for the legal operations,
+        consistency, and continuous improvement of the operations. Certified
+        firms go through numerous assessments and audits which helps them build
+        trust among the customers, regulators, and stakeholders which
+        strengthens the guarantee of safety, quality, and sustainability.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        BIS is the national standards body of India and is the certifying body
+        for the enhancement of the organization's reputation and credibility
+        domestically and outside India. MSCS besides fostering accountability
+        through periodic supervision and recertification also frees up a
+        business to actively support public led programs like Make in India and
+        Atmanirbhar Bharat. Besides legal obligation, the scheme also helps in
+        cultivating a culture of integrity, efficiency and fair trading. MSCS
+        encourages the trade and investment by the certified companies and BIS
+        plays a crucial part in the development of the quality ecosystem of the
+        country.
+      </p>
+
+      <h3 className="service-left-content-heading-three">
+        LRS – Lab Recognition Scheme
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        Under the Bureau of Indian Standards (BIS), the Lab Recognition Scheme
+        (LRS) is an integral part of a system that guarantees the dependability
+        and overall competency of laboratories that test and certify products
+        for BIS approval. Such labs are critically appraised on diverse
+        attributes which include technical knowledge, quality of the workforce,
+        infrastructure, and the overall competency and satisfaction of the lab
+        with the ISO/ IEC 17025 standard. These labs, once approved, are
+        permitted to perform testing on the product for which conformity
+        assessment is done as part of various BIS certification programs such as
+        the ISI Mark Scheme and the Compulsory Registration Scheme (CRS). It is
+        clear that for manufacturers, in particular for importers and exporters,
+        the reports obtained from an LRS approved lab are a critical requirement
+        to achieve a BIS certificate that is a legal requirement for certain
+        products.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        The LRS is empowering India's assurance systems by maintaining equity in
+        testing outcomes and ensuring that all outcomes are consistent and
+        globally benchmarked, while accrediting only reliable and sound
+        laboratories. To uphold integrity and transparency, BIS performs regular
+        audits, proficiency tests, and surveillance of recognized schematic
+        labs. Recognition of this certification enables BIS to improve trust
+        from consumers while making the certification process more efficient for
+        industries, as only safe, compliant, and high-quality products will be
+        offered in the Indian market. For organizations that aim to receive BIS
+        certification, collaboration with LRS-approved labs is the most
+        essential to achieve compliance and market access.
+      </p>
+
+      <h3 className="service-left-content-heading-three">
+        Products That Require BIS Certification
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        BIS certification applies to a wide variety of products. Examples
+        include:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Electrical & Electronics – LED lights, mobile phones, adapters, laptops.",
+          "Construction Materials – Cement, steel bars, structural products.",
+          "Consumer Goods – Packaged drinking water, cooking gas cylinders.",
+          "Jewelry & Precious Metals – Gold and silver articles under hallmarking.",
+          "Industrial Equipment – Pumps, transformers, machine tools.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        The list continues to grow as new risks and technologies emerge.
+      </p>
+
+      <h3 className="service-left-content-heading-three">
+        Benefits of BIS Certification
+      </h3>
+
+      <p className="service-left-content-paragraph">
+        For companies, the BIS certificate offers much more than mere compliance
+        with the law.
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Legal compliance: no fines, no bans, no seizure.",
+          "Market access: needed for selling regulated products in India.",
+          "Consumer trust: builds with the well-recognized ISI mark as a sign of proof.",
+          "Competitive advantage: as certified companies easily differentiate from uncertified competitors.",
+          "Export facilitation: many international buyers understand and appreciate BIS certification.",
+          "Participation in Tenders: many government projects award contracts for goods which are BIS certified.",
+        ]}
+      />
+    </div>
+  );
+};
+
+const BISCertificationFaq = () => {
+  const faqData = [
+    {
+      question: "What is BIS certification in India?",
+      answer:
+        "BIS certification is a quality assurance certification issued by the Bureau of Indian Standards (BIS) to ensure that products comply with Indian standards for safety, performance, and quality. It is mandatory for various product categories and helps in consumer protection and regulatory compliance.",
+    },
+    {
+      question: "Why do I need a BIS certificate?",
+      answer:
+        "A BIS certificate is essential to legally manufacture, import, distribute, or sell certain products in India. It assures consumers that the product meets the safety and quality guidelines of Indian standards.",
+    },
+    {
+      question: "What is the ISI mark under BIS certification?",
+      answer:
+        "The ISI mark is a certification symbol provided under the BIS certification scheme. It indicates that a product complies with Indian standards and has been certified by the Indian BIS through proper testing and registration.",
+    },
+    {
+      question: "Who issues BIS licenses in India?",
+      answer:
+        "BIS licenses are issued by the Bureau of Indian Standards (Indian BIS), the national standards body under the Ministry of Consumer Affairs, Food and Public Distribution.",
+    },
+    {
+      question: "What are the different types of BIS certification schemes?",
+      answer:
+        "The major BIS certification schemes include the ISI mark scheme, Compulsory Registration Scheme (CRS), Foreign Manufacturers Certification Scheme (FMCS), Hallmarking for jewelry, Eco Mark certification, and what is Scheme X for industrial machinery.",
+    },
+    {
+      question: "What is Scheme X under BIS certification?",
+      answer:
+        "Scheme X is a simplified BIS certification process applicable to industrial products like pumps, transformers, machine tools, and cranes. It ensures quicker approval without compromising compliance to Indian standards.",
+    },
+    {
+      question: "Which products require BIS certification in India?",
+      answer:
+        "Products like electrical appliances, electronics, kitchenware, cement, steel, gold jewelry, mobile phones, and transformers require BIS certification as per the Indian BIS mandate.",
+    },
+    {
+      question: "Is BIS registration mandatory for all products?",
+      answer:
+        "No, BIS registration is mandatory only for products listed in the compulsory certification scheme. However, voluntary BIS certification is also available to enhance product credibility.",
+    },
+    {
+      question: "How long is a BIS licence valid?",
+      answer:
+        "A BIS licence is typically valid for one to two years and must be renewed before its expiry to continue using the ISI mark or maintain BIS registration status.",
+    },
+    {
+      question: "What are the steps to get BIS certification in India?",
+      answer:
+        "The BIS certification process includes identifying applicable Indian standards, submitting an application, product testing, factory inspection, and issuance of a BIS certificate upon approval.",
+    },
+    {
+      question: "Can foreign manufacturers apply for a BIS license?",
+      answer:
+        "Yes, under the Foreign Manufacturers Certification Scheme (FMCS), foreign companies can apply for a BIS license to sell products in India. They must appoint an Authorized Indian Representative (AIR).",
+    },
+    {
+      question: "What is the role of the AIR in BIS certification?",
+      answer:
+        "An AIR (Authorized Indian Representative) acts as a liaison between the foreign manufacturer and the Indian BIS. They are responsible for documentation, communication, and compliance with BIS certification requirements.",
+    },
+    {
+      question: "How can I apply for BIS registration online?",
+      answer:
+        "You can apply for BIS registration online through the official BIS portal. The process involves form submission, uploading documents, test reports, and payment of fees.",
+    },
+    {
+      question: "What documents are required for a BIS certificate?",
+      answer:
+        "Documents needed include business license, product specifications, manufacturing process, lab test reports, factory layout, quality manual, and authorization forms (for foreign manufacturers).",
+    },
+    {
+      question: "How much does BIS certification cost in India?",
+      answer:
+        "The cost of BIS certification depends on product type, testing requirements, scheme type (ISI, CRS, FMCS), and whether the applicant is domestic or foreign. Costs include application fees, testing charges, and inspection expenses.",
+    },
+    {
+      question: "Is the ISI mark mandatory for all BIS-certified products?",
+      answer:
+        "No, only products under the ISI scheme are required to carry the ISI mark. Products under CRS or Hallmarking schemes follow different labeling protocols as per BIS registration norms.",
+    },
+    {
+      question: "Can I get BIS certification for eco-friendly products?",
+      answer:
+        "Yes, products that meet environmental standards can get BIS certification under the Eco Mark scheme, which ensures compliance with Indian standards for environmental safety.",
+    },
+    {
+      question:
+        "What is the difference between BIS certification and BIS registration?",
+      answer:
+        "BIS certification generally refers to the approval under ISI, FMCS, or Hallmarking schemes, while BIS registration is commonly associated with the CRS scheme for electronic products.",
+    },
+    {
+      question: "What is the Compulsory Registration Scheme (CRS)?",
+      answer:
+        "CRS is a BIS registration program for IT and electronic goods like LED lights, mobile phones, and power banks. It ensures product compliance with safety-related Indian standards.",
+    },
+    {
+      question: "Do ISI mark and BIS certificate mean the same thing?",
+      answer:
+        "Not exactly. The ISI mark is the symbol granted to certified products under the BIS certification scheme. A BIS certificate is the legal document issued to the manufacturer.",
+    },
+    {
+      question: "Can one BIS license cover multiple products?",
+      answer:
+        "No, a separate BIS licence is required for each product type and each manufacturing location, even if the products are similar.",
+    },
+    {
+      question: "What happens if I sell products without BIS certification?",
+      answer:
+        "Selling products that require BIS certification without a valid BIS licence is illegal in India and can lead to penalties, product recalls, or bans.",
+    },
+    {
+      question: "How long does it take to get BIS certification?",
+      answer:
+        "The BIS certification process generally takes 30 to 90 days, depending on the product type, testing requirements, and whether the applicant is domestic or foreign.",
+    },
+    {
+      question: "Is BIS certification accepted globally?",
+      answer:
+        "While BIS certification is specific to India, it enhances global credibility by showcasing compliance with stringent Indian standards. Some BIS-certified products are also accepted under mutual recognition agreements.",
+    },
+    {
+      question: "How often do I need to renew my BIS license?",
+      answer:
+        "BIS licenses must be renewed annually or biennially. Manufacturers must maintain compliance with Indian standards and pass surveillance audits to renew their BIS certificate.",
+    },
+  ];
+
+  return (
+    <section
+      id="faqs"
+      className="my-2 scroll-mt-20"
+      aria-label="Frequently Asked Questions"
+    >
+      <div className="max-w-[88rem] mx-auto px-4 pt-5 pb-9 md:pb-12">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+          FAQs – BIS Certification in India
+        </h2>
+
+        <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
+          Can't find the answer you are looking for?{" "}
+          <a
+            href="/contact"
+            className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
+          >
+            Reach out to us!
+          </a>
+        </p>
+        <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
+          <Accordion type="single" collapsible className="w-full">
+            {faqData.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
+                  <h3>
+                    <span className="mr-2 font-semibold">{index + 1}.</span>
+                    {faq.question}
+                  </h3>
+                </AccordionTrigger>
+                <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </div>
     </section>
   );
 };
 
-const ReviewSection = () => {
-  const { t } = useTranslation("BISCertification");
-
+const BISCertificationServices = () => {
   return (
-    <section>
-      <span className="font-geist text-[20px] md:text-[25px] font-semibold text-[#131316] tracking-normal">
-        {t("review.title")}
-      </span>
-      <div className="flex flex-col md:flex-row items-start md:items-center mt-2 justify-between gap-4 md:gap-0">
-        <div className="flex gap-6">
-          <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-blue-600 transition-colors group">
-            <svg
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              stroke="currentColor"
-              aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
-            >
-              <path
-                fillOpacity="0.15"
-                strokeWidth="0"
-                className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M2.75 9.75h3l3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011h-3v-7.5Z"
-              />
-              <path
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                className="group-hover:text-blue-500 transition-colors duration-200"
-                d="M5.75 9.75h-3v7.5h3m0-7.5 3-7h.5a2 2 0 0 1 2 2v4l4.002-.011a2 2 0 0 1 1.987 2.233l-.53 4.5a2 2 0 0 1-1.986 1.767l-8.973.011m0-7.5v7.5"
-              />
-            </svg>
+    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
+      <div className="max-w-[80rem] w-full mx-auto">
+        <div className="flex flex-col items-center justify-center">
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+              Our Services
+            </h2>
+          </BoxReveal>
 
-            <span>{t("review.helpful")}</span>
-          </button>
-
-          <button className="flex cursor-pointer items-center gap-3 font-geist text-sm md:text-lg text-[#42434d] hover:text-red-600 transition-colors group">
-            <svg
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              stroke="currentColor"
-              aria-hidden="true"
-              className="w-5 h-5 md:w-6 md:h-6 text-gray-700 group"
-            >
-              <path
-                fillOpacity="0.15"
-                strokeWidth="0"
-                className="group-hover:text-red-500 transition-colors duration-200"
-                d="M2.75 10.25h3l3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75h-3v7.5Z"
-              />
-              <path
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                className="group-hover:text-red-500 transition-colors duration-200"
-                d="M5.75 10.25h-3v-7.5h3m0 7.5 3 7h.5a2 2 0 0 0 2-2v-4l4.002.011a2 2 0 0 0 1.987-2.233l-.53-4.5a2 2 0 0 0-1.986-1.767L5.75 2.75m0 7.5v-7.5"
-              />
-            </svg>
-
-            <span>{t("review.notHelpful")}</span>
-          </button>
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+                India's Best Certificate Consultant
+              </span>
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            </div>
+          </BoxReveal>
         </div>
 
-        <p className="font-geist text-[14px] md:text-[17px] text-[#5e5f6e] tracking-normal">
-          {t("review.lastUpdated")}
-        </p>
+        <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-10 px-4 md:px-0 gap-y-12 md:gap-y-24">
+          <Link
+            to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={BISImage}
+                alt="BIS"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              BIS Mark (ISI License) for Foreign Manufacture
+            </p>
+          </Link>
+
+          <Link
+            to="/cdsco-registration-certification"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={CDSCO}
+                alt="CDSCO"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              CDSCO Registration Certification
+            </p>
+          </Link>
+
+          <Link
+            to="/what-is-crs-bis-or-crs-registration"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={BISCRS}
+                alt="BISCRS"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              BIS (CRS) Registration
+            </p>
+          </Link>
+
+          <Link
+            to="/epr-certificate-for-plastic-waste-management-pwm"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={PlasticWasteManagement}
+                alt="PlasticWasteManagement"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              Plastic Waste Management
+            </p>
+          </Link>
+
+          <Link
+            to="/a-guide-on-how-to-obtain-epr-certificate"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={EPRCertificate}
+                alt="EPRCertificate"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              EPR Certificate certifications
+            </p>
+          </Link>
+
+          <Link
+            to="/a-guide-on-how-to-obtain-lmpc-certificate"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={LMPC}
+                alt="LMPC"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              LMPC Certificate certifications
+            </p>
+          </Link>
+
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={BISImage}
+                alt="BIS"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              BIS Registration Certificate
+            </p>
+          </Link>
+
+          <Link
+            to="/a-guide-to-bis-certification-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src={ISIMarkImage}
+                alt="ISIMark"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              ISI MARK (BIS) for Indian Manufactures
+            </p>
+          </Link>
+        </div>
       </div>
-    </section>
+    </div>
+  );
+};
+
+const PointsListWithoutHeading = ({ points, linkMap }) => {
+  return (
+    <div className="mt-[18px] md:mt-[18px]">
+      <ul className="flex flex-col gap-3 list-none">
+        {points.map((point, index) => (
+          <li key={index} className="flex items-start gap-3">
+            <div className="bg-green-500/10 p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5">
+              <Check size={12} className="text-[#020817]" />
+            </div>
+            {linkMap && linkMap[point] ? (
+              <Link
+                to={`/${linkMap[point]}`}
+                className="font-geist text-sm md:text-lg text-[#0b6b67] hover:text-[#084c49] underline underline-offset-4 tracking-wide text-left max-w-full leading-loose flex-1"
+              >
+                {point}
+              </Link>
+            ) : (
+              <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose flex-1">
+                {point}
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };

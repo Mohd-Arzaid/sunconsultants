@@ -240,8 +240,7 @@ import ISIMarkIndonesian from "./pages/ISIMark/ISIMarkIndonesian";
 import ISIMarkItalian from "./pages/ISIMark/ISIMarkItalian";
 import ISIMarkDutch from "./pages/ISIMark/ISIMarkDutch";
 import ISIMarkThai from "./pages/ISIMark/ISIMarkThai";
-import { BISCertification } from "./pages/BISCertification/BISCertification";
-import BISCertificationEnglish from "./pages/BISCertification/BISCertificationEnglish";
+import BISCertification from "./pages/BISCertification/BISCertification";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -373,8 +372,6 @@ function App() {
             path="what-is-bis-certificate-indian-bis"
             element={<BISCertification />}
           />
-
-          <Route path="yo" element={<BISCertificationEnglish />} />
 
           <Route
             path="a-guide-on-how-to-obtain-lmpc-certificate"

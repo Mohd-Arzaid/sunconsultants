@@ -22,7 +22,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { BISCProductTable } from "@/pages/BISCertification/BISCertification";
+import { ISIMarkAndBISCommonTable } from "@/pages/ISIMarkAndBISCommonTable/ISIMarkAndBISCommonTable";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 import {
   Breadcrumb,
@@ -377,7 +377,7 @@ const ArabicISIContent = () => {
       <ArabicISIMarkServiceFaq />
 
       <div id="product-table">
-        <BISCProductTable />
+        <ISIMarkAndBISCommonTable />
       </div>
 
       <div id="services">

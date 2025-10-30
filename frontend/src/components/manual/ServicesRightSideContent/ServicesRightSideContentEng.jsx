@@ -68,8 +68,10 @@ const ServicesRightSideContentEng = () => {
     "/bis-certification-in-dubai",
     "/bis-certification-in-iran",
     "/bis-certification-in-iraq",
-    // ISI MARK PATHS
+    // ISI MARK PATH
     "/a-guide-to-bis-certification-indian-bis",
+    // BIS CERTIFICATION PATH
+    "/what-is-bis-certificate-indian-bis",
   ];
 
   // Check if current path should show these components
@@ -650,9 +652,12 @@ const ContactFormServicesRightSideContentEng = () => {
     if (path.includes("/bis-certification-in-dubai")) return "Dubai Blog";
     if (path.includes("/bis-certification-in-iran")) return "Iran Blog";
     if (path.includes("/bis-certification-in-iraq")) return "Iraq Blog";
-    // ISI MARK PATHS
+    // ISI MARK PATH
     if (path.includes("/a-guide-to-bis-certification-indian-bis"))
       return "ISI Mark - English Page";
+    // BIS CERTIFICATION PATH
+    if (path.includes("/what-is-bis-certificate-indian-bis"))
+      return "BIS Certification - English Page";
   };
 
   const [formData, setFormData] = useState({
