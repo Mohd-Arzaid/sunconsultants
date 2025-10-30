@@ -34,7 +34,7 @@ const ServicesRightSideContentSpanish = () => {
     "/certificacion-bis-en-espana",
     "/es/que-es-crs-bis-o-registro-crs",
     // ISI Mark Spanish Page Url
-    "/es/certificacion-bis-isi-marca",
+    "/es/certificacion-bis-marca-isi",
   ];
 
   // Check if current path should show these components
@@ -563,7 +563,7 @@ const ContactFormServicesRightSideContentSpanish = () => {
       return "Spain Blog (Spanish)";
     if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
       return "CRS Registration (Spanish)";
-    if (path.includes("/es/certificacion-bis-isi-marca"))
+    if (path.includes("/es/certificacion-bis-marca-isi"))
       return "ISI Mark - Spanish Page";
   };
 
