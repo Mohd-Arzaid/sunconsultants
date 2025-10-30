@@ -243,6 +243,9 @@ import ISIMarkVietnamese from "./pages/ISIMark/ISIMarkVietnamese";
 import ISIMarkArabic from "./pages/ISIMark/ISIMarkArabic";
 import ISIMarkThai from "./pages/ISIMark/ISIMarkThai";
 import BISCertification from "./pages/BISCertification/BISCertification";
+import BISCertificationGerman from "./pages/BISCertification/BISCertificationGerman";
+import BISCertificationSpanish from "./pages/BISCertification/BISCertificationSpanish";
+import BISCertificationFrench from "./pages/BISCertification/BISCertificationFrench";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -375,6 +378,24 @@ function App() {
             element={<BISCertification />}
           />
 
+          {/* BIS Certification Spanish Page */}
+          <Route
+            path="/es/que-es-el-certificado-bis-bis-indio"
+            element={<BISCertificationSpanish />}
+          />
+
+          {/* BIS Certification German Page */}
+          <Route
+            path="/de/was-ist-das-bis-zertifikat-indisches-bis"
+            element={<BISCertificationGerman />}
+          />
+
+          {/* BIS Certification French Page */}
+          <Route
+            path="/fr/quest-ce-que-le-certificat-bis-bis-indien"
+            element={<BISCertificationFrench />}
+          />
+
           <Route
             path="a-guide-on-how-to-obtain-lmpc-certificate"
             element={<LMPC />}
@@ -395,7 +416,7 @@ function App() {
             element={<ISIMark />}
           />
           {/* ISIMark Japanese Page */}
-          <Route
+          <Route 
             path="/ja/bis-isi-mark-shounin"
             element={<ISIMarkJapanese />}
           />

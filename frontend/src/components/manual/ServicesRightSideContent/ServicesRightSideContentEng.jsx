@@ -62,6 +62,7 @@ const ServicesRightSideContentEng = () => {
     "/a-guide-to-bis-certification-indian-bis",
     // BIS CERTIFICATION PATH
     "/what-is-bis-certificate-indian-bis",
+    
   ];
 
   // Check if current path should show these components
