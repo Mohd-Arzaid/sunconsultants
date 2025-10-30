@@ -12,7 +12,7 @@ const DesktopHero = () => (
     style={{
       background: "radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%)",
     }}
-    className="relative pb-24 pt-12 overflow-x-hidden"
+    className="relative pb-24 pt-12 overflow-x-hidden min-h-[560px]"
   >
     {/* Background gradient */}
     <div
@@ -36,6 +36,7 @@ const DesktopHero = () => (
               fetchPriority="high"
               width="740"
               height="480"
+              style={{ aspectRatio: "740 / 480" }}
             />
           </figure>
 
@@ -71,7 +72,7 @@ const MobileHero = () => {
   ];
 
   return (
-    <main className="flex flex-col gap-5 w-full">
+    <main className="flex flex-col gap-5 w-full min-h-[560px]">
       <div
         style={{
           background: "radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%)",
@@ -125,6 +126,7 @@ const MobileHero = () => {
               className="w-80 h-auto drop-shadow-xl"
               width="320"
               height="240"
+              style={{ aspectRatio: "320 / 240" }}
             />
           </figure>
         </div>

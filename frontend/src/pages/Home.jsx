@@ -27,67 +27,99 @@ const Home = ({ onVideoPopupChange }) => {
   return (
     <main className="w-full">
       <HomeSEO />
-      <section aria-label="Hero Section" className="w-full">
+      <section aria-label="Hero Section" className="w-full min-h-[520px]">
         <Hero />
       </section>
 
-      <section aria-label="Partner Logos" className="w-full">
+      <section aria-label="Partner Logos" className="w-full min-h-[160px]">
         <LogoTicker />
       </section>
 
-      <section aria-label="Our Services" className="w-full">
+      <section
+        aria-label="Our Services"
+        className="w-full min-h-[640px]"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "800px" }}
+      >
         <Suspense fallback={<SectionLoader />}>
           <OurServices />
         </Suspense>
       </section>
 
-      <section aria-label="Countries We Serve" className="w-full">
+      <section
+        aria-label="Countries We Serve"
+        className="w-full min-h-[240px]"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "260px" }}
+      >
         <Suspense fallback={<SectionLoader />}>
           <AuditsMarquee />
         </Suspense>
       </section>
 
-      <section aria-label="Contact Form" className="w-full">
+      <section
+        aria-label="Contact Form"
+        className="w-full min-h-[760px]"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "780px" }}
+      >
         <Suspense fallback={<SectionLoader />}>
           <Contact />
         </Suspense>
       </section>
 
-      <section aria-label="Countries We Serve" className="w-full">
+      <section
+        aria-label="Countries We Serve"
+        className="w-full min-h-[240px]"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "260px" }}
+      >
         <Suspense fallback={<SectionLoader />}>
           <WebinarSeminarMarquee />
         </Suspense>
       </section>
 
-      <section aria-label="Latest News" className="w-full">
+      <section
+        aria-label="Latest News"
+        className="w-full min-h-[420px]"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "440px" }}
+      >
         <Suspense fallback={<SectionLoader />}>
           <LatestNews />
         </Suspense>
       </section>
 
-      <section aria-label="Countries We Serve" className="w-full">
+      <section
+        aria-label="Countries We Serve"
+        className="w-full min-h-[560px]"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "580px" }}
+      >
         <Suspense fallback={<SectionLoader />}>
           <Countries />
         </Suspense>
       </section>
 
-      <section aria-label="Certification and Achievements" className="w-full">
+      <section
+        aria-label="Certification and Achievements"
+        className="w-full min-h-[380px]"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "400px" }}
+      >
         <Suspense fallback={<SectionLoader />}>
           <CertificationAndAchievements />
         </Suspense>
       </section>
 
-      <section aria-label="What Our Customers Say" className="w-full">
+      <section
+        aria-label="What Our Customers Say"
+        className="w-full min-h-[420px]"
+        style={{ contentVisibility: "auto", containIntrinsicSize: "440px" }}
+      >
         <Suspense fallback={<SectionLoader />}>
           <WhatsOurCustomersSaySection />
         </Suspense>
       </section>
 
-      <section aria-label="Partner Logos" className="w-full">
+      <section aria-label="Partner Logos" className="w-full min-h-[160px]">
         <LogoTicker />
       </section>
 
-      <section aria-label="Video Showcase" className="w-full">
+      <section aria-label="Video Showcase" className="w-full min-h-[520px]">
         <VideoSection onVideoPopupChange={onVideoPopupChange} />
       </section>
 
