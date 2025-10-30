@@ -56,6 +56,14 @@ const sitemapSections = [
         path: "/what-is-bis-certificate-indian-bis",
       },
       {
+        name: "Certificación BIS (Spanish)",
+        path: "/es/que-es-el-certificado-bis-bis-indio",
+      },
+      {
+        name: "BIS-Zertifizierung (German)",
+        path: "/de/was-ist-das-bis-zertifikat-indisches-bis",
+      },
+      {
         name: "Plastic Waste",
         path: "/epr-certificate-for-plastic-waste-management-pwm",
       },
