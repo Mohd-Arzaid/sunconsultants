@@ -37,6 +37,7 @@ const ServicesRightSideContentArabic = () => {
     "/shahadat-bis-fi-dubai",
     "/shahadat-bis-fi-iran",
     "/shahadat-bis-fi-al-iraq",
+    "/ar/dalil-shahadat-bis-bis-alhind"
   ];
 
   // Check if current path should show these components
@@ -564,6 +565,7 @@ const ContactFormServicesRightSideContentArabic = () => {
     if (path.includes("/shahadat-bis-fi-dubai")) return "Dubai Blog (Arabic)";
     if (path.includes("/shahadat-bis-fi-iran")) return "Iran Blog (Arabic)";
     if (path.includes("/shahadat-bis-fi-al-iraq")) return "Iraq Blog (Arabic)";
+    if (path.includes("/ar/dalil-shahadat-bis-bis-alhind")) return "ISI Mark (Arabic)";
   };
 
   const [formData, setFormData] = useState({

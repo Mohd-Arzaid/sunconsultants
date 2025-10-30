@@ -240,6 +240,8 @@ import ISIMarkFrench from "./pages/ISIMark/ISIMarkFrench";
 import ISIMarkIndonesian from "./pages/ISIMark/ISIMarkIndonesian";
 import ISIMarkItalian from "./pages/ISIMark/ISIMarkItalian";
 import ISIMarkDutch from "./pages/ISIMark/ISIMarkDutch";
+import ISIMarkVietnamese from "./pages/ISIMark/ISIMarkVietnamese";
+import ISIMarkArabic from "./pages/ISIMark/ISIMarkArabic";
 import ISIMarkThai from "./pages/ISIMark/ISIMarkThai";
 
 function App() {
@@ -426,6 +428,16 @@ function App() {
           <Route
             path="/nl/bis-isi-mark-certificering"
             element={<ISIMarkDutch />}
+          />
+          {/* ISIMark Vietnamese Page */}
+          <Route
+            path="/vi/chung-nhan-bis-isi-mark"
+            element={<ISIMarkVietnamese />}
+          />
+          {/* ISIMark Arabic Page */}
+          <Route
+            path="/ar/dalil-shahadat-bis-bis-alhind"
+            element={<ISIMarkArabic />}
           />
           {/* ISIMark Thai Page */}
           <Route

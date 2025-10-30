@@ -33,6 +33,8 @@ const ServicesRightSideContentVietnamese = () => {
     "/what-is-crs-bis-or-crs-registration",
     "/chung-nhan-bis-tai-viet-nam",
     "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
+    "/vi/chung-nhan-bis-isi-mark",
+
   ];
 
   // Check if current path should show these components
@@ -563,7 +565,9 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     if (path.includes("/chung-nhan-bis-tai-viet-nam"))
       return "Vietnam Blog (Vietnamese)";
     if (path.includes("/vi/crs-bis-la-gi-hoac-dang-ky-crs"))
-      return "CRS Registration (Vietnamese)";
+      return "CRS Registration (Vietnamese)"; 
+    if (path.includes("/vi/chung-nhan-bis-isi-mark"))
+      return "ISI Mark (Vietnamese)";
   };
 
   const [formData, setFormData] = useState({
