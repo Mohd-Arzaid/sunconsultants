@@ -148,6 +148,11 @@ const AuditsMarquee = () => {
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
+                    width={400}
+                    height={300}
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
                   />
                 </div>
                 {/* Country Name Overlay - Always Visible */}
