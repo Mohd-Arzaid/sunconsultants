@@ -387,6 +387,8 @@ function App() {
             path="what-is-legal-metrology-or-lmpc-certificate"
             element={<LegalMetrology />}
           />
+
+          {/* =========================== ISIMark routes (all languages) =========================== */}
           {/* ISIMark English Page */}
           <Route
             path="/a-guide-to-bis-certification-indian-bis"
@@ -444,6 +446,7 @@ function App() {
           />
           {/* ISIMark Thai Page */}
           <Route path="/th/bis-isi-mark-raprong" element={<ISIMarkThai />} />
+          {/* ========================= End ISIMark routes (all languages) ======================== */}
 
           <Route
             path="epr-certificate-for-battery-waste-management-bwm"
@@ -1228,11 +1231,6 @@ function App() {
         <Route
           path="/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
           element={<ArabicBISFM />}
-        />
-
-        <Route
-          path="/ar/dalil-shahadat-bis-bis-alhind"
-          element={<ArabicISIMark />}
         />
 
         <Route

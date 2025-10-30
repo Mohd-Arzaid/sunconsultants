@@ -301,11 +301,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://bis-certifications.com/ar/dalil-shahadat-bis-bis-alhind</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  
 
 <!-- Scheme X -->
 <url>
@@ -1167,11 +1163,6 @@
   <!-- Arabic Pages -->
   <url>
     <loc>https://bis-certifications.com/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/ar/dalil-shahadat-bis-bis-alhind</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
