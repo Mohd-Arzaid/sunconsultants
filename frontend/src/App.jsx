@@ -55,7 +55,6 @@ import BatteryWaste from "./pages/BatteryWaste";
 // Manual components - direct imports with named exports
 import { BISFM } from "./components/manual/BISFM";
 import { EPRService } from "./components/manual/EPRService";
-import { BISCertification } from "./components/manual/BISCertification";
 import { LMPC } from "./components/manual/LMPC";
 import { PlasticWaste } from "./components/manual/PlasticWaste";
 import { LegalMetrology } from "./components/manual/LegalMetrology";
@@ -241,6 +240,8 @@ import ISIMarkIndonesian from "./pages/ISIMark/ISIMarkIndonesian";
 import ISIMarkItalian from "./pages/ISIMark/ISIMarkItalian";
 import ISIMarkDutch from "./pages/ISIMark/ISIMarkDutch";
 import ISIMarkThai from "./pages/ISIMark/ISIMarkThai";
+import { BISCertification } from "./pages/BISCertification/BISCertification";
+import BISCertificationEnglish from "./pages/BISCertification/BISCertificationEnglish";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -366,10 +367,15 @@ function App() {
             path="a-guide-on-how-to-obtain-epr-certificate"
             element={<EPRService />}
           />
+
+          {/* BIS Certification English Page */}
           <Route
             path="what-is-bis-certificate-indian-bis"
             element={<BISCertification />}
           />
+
+          <Route path="yo" element={<BISCertificationEnglish />} />
+
           <Route
             path="a-guide-on-how-to-obtain-lmpc-certificate"
             element={<LMPC />}
@@ -428,10 +434,7 @@ function App() {
             element={<ISIMarkDutch />}
           />
           {/* ISIMark Thai Page */}
-          <Route
-            path="/th/bis-isi-mark-raprong"
-            element={<ISIMarkThai />}
-          />
+          <Route path="/th/bis-isi-mark-raprong" element={<ISIMarkThai />} />
 
           <Route
             path="epr-certificate-for-battery-waste-management-bwm"

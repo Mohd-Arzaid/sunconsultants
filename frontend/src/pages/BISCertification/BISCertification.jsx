@@ -9,7 +9,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "../ui/table";
+} from "@/components/ui/table";
 
 import {
   Accordion,
@@ -20,11 +20,11 @@ import {
 import ServiceContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
 import { Check, Search, SlashIcon } from "lucide-react";
 import Footer from "@/common/Footer";
-import ScrollToTopButton from "../common/ScrollToTop";
+import ScrollToTopButton from "@/components/common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import PropTypes from "prop-types";
-import Services from "./Services";
-import AboutAuthor from "../common/AboutAuthor";
+import Services from "@/components/manual/Services";
+import AboutAuthor from "@/components/common/AboutAuthor";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -32,7 +32,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "../ui/breadcrumb";
+} from "@/components/ui/breadcrumb";
 import { Link, useNavigate } from "react-router-dom";
 
 export const BISCertification = () => {
@@ -55,7 +55,10 @@ export const BISCertification = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Open Graph Tags */}
-        <meta property="og:title" content="BIS Certification Types, Process, Documents, Fee" />
+        <meta
+          property="og:title"
+          content="BIS Certification Types, Process, Documents, Fee"
+        />
         <meta
           property="og:description"
           content="BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India."
@@ -67,7 +70,10 @@ export const BISCertification = () => {
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@CertificationsSun" />
-        <meta name="twitter:title" content="BIS Certification Types, Process, Documents, Fee" />
+        <meta
+          name="twitter:title"
+          content="BIS Certification Types, Process, Documents, Fee"
+        />
         <meta
           name="twitter:description"
           content="BIS certification refers to the process of obtaining a quality standard certificate from the Bureau of Indian Standards (BIS) for manufacturing and selling various products in India."
@@ -1084,8 +1090,9 @@ const BISCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -1135,10 +1142,11 @@ const BISCIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection.toLowerCase()
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection.toLowerCase()
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {getSectionDisplayName(item)}
@@ -1158,18 +1166,20 @@ const BISCIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection.toLowerCase()
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection.toLowerCase()
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {getSectionDisplayName(item)}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection.toLowerCase()
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection.toLowerCase()
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -1336,20 +1346,22 @@ const PointsListTwo = ({ points, heading, clickableRoutes = [] }) => {
         {points.map((point, index) => (
           <li
             key={index}
-            className={`flex items-start gap-2 ${clickableRoutes[index]
-              ? "cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors duration-200"
-              : ""
-              }`}
+            className={`flex items-start gap-2 ${
+              clickableRoutes[index]
+                ? "cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors duration-200"
+                : ""
+            }`}
             onClick={() => handlePointClick(index)}
           >
             <div className="bg-green-500/10 p-2 rounded-full">
               <Check size={12} className="text-[#020817]" />
             </div>
             <p
-              className={`font-geist text-sm md:text-lg tracking-wide text-left max-w-full leading-normal ${clickableRoutes[index]
-                ? "text-[#1d4ed8] hover:text-[#1e40af] hover:underline"
-                : "text-[#42434d]"
-                }`}
+              className={`font-geist text-sm md:text-lg tracking-wide text-left max-w-full leading-normal ${
+                clickableRoutes[index]
+                  ? "text-[#1d4ed8] hover:text-[#1e40af] hover:underline"
+                  : "text-[#42434d]"
+              }`}
             >
               {point}
             </p>
