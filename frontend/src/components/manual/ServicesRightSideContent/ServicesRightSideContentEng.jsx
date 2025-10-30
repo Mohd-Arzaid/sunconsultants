@@ -31,16 +31,6 @@ const ServicesRightSideContentEng = () => {
 
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
-    "/ja/crs-bis-toha-nani-ka-crs-toroku",
-    "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
-    "/ko/crs-bis-i-mueos-inga-crs-deunglog",
-    "/id/apa-itu-crs-bis-atau-registrasi-crs",
-    "/es/que-es-crs-bis-o-registro-crs",
-    "/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs",
-    "/it/cose-il-crs-bis-o-registrazione-crs",
-    "/nl/wat-is-crs-bis-of-crs-registratie",
-    "/de/was-ist-crs-bis-oder-crs-registrierung",
-    "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
     "/indian-bis-certification-under-scheme-x",
     "/Blogs",
     "/bis-certificate-for-tin-ingots",

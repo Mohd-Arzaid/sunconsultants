@@ -35,6 +35,7 @@ const ServicesRightSideContentGerman = () => {
     "/de/was-ist-crs-bis-oder-crs-registrierung",
     // ISI Mark German Page Url
     "/de/bis-isi-mark-zertifizierung",
+    
   ];
 
   // Check if current path should show these components
