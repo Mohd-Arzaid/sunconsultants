@@ -231,6 +231,11 @@ const Contact = () => {
             src={ContactUs}
             alt="ContactUs"
             className="absolute right-0 w-[475.99px] h-[539px] object-cover  "
+            width={476}
+            height={539}
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
           />
 
           <img
@@ -238,6 +243,11 @@ const Contact = () => {
             alt="ContactChild"
             className=" 
           absolute inset-0 w-[350px] h-[350px] -translate-x-[70px] translate-y-[180px] object-cover"
+            width={350}
+            height={350}
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
           />
         </div>
       </div>
