@@ -400,10 +400,7 @@ function App() {
             element={<ISIMarkJapanese />}
           />
           {/* ISIMark Korean Page */}
-          <Route
-            path="/ko/bis-isi-mark-injeung-indo-bis"
-            element={<ISIMarkKorean />}
-          />
+          <Route path="/ko/bis-isi-mark-injeung" element={<ISIMarkKorean />} />
           {/* ISIMark German Page */}
           <Route
             path="/de/bis-isi-mark-zertifizierung"
@@ -411,7 +408,7 @@ function App() {
           />
           {/* ISIMark Spanish Page */}
           <Route
-            path="/es/certificacion-bis-isi-marca"
+            path="/es/certificacion-bis-marca-isi"
             element={<ISIMarkSpanish />}
           />
           {/* ISIMark French Page */}
