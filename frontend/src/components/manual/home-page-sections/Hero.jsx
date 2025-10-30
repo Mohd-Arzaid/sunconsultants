@@ -12,7 +12,7 @@ const DesktopHero = () => (
     style={{
       background: "radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%)",
     }}
-    className="relative pb-24 pt-12 overflow-x-hidden min-h-[560px]"
+    className="relative pb-24 pt-12 overflow-x-hidden"
   >
     {/* Background gradient */}
     <div
@@ -32,12 +32,10 @@ const DesktopHero = () => (
               alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
               className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-full max-w-[740px] h-auto object-cover"
               loading="eager"
-              decoding="async"
+              decoding="sync"
               fetchPriority="high"
               width="740"
               height="480"
-              sizes="(min-width: 1024px) 740px, 100vw"
-              style={{ aspectRatio: "740 / 480" }}
             />
           </figure>
 
@@ -73,7 +71,7 @@ const MobileHero = () => {
   ];
 
   return (
-    <main className="flex flex-col gap-5 w-full min-h-[560px]">
+    <main className="flex flex-col gap-5 w-full">
       <div
         style={{
           background: "radial-gradient(circle, #EBF3F5 7%, #C5E2F0 100%)",
@@ -122,13 +120,11 @@ const MobileHero = () => {
               src={HeroImageMobile}
               alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
               loading="eager"
-              decoding="async"
+              decoding="sync"
               fetchPriority="high"
               className="w-80 h-auto drop-shadow-xl"
               width="320"
               height="240"
-              sizes="(max-width: 767px) 320px, 50vw"
-              style={{ aspectRatio: "320 / 240" }}
             />
           </figure>
         </div>
