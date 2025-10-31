@@ -246,6 +246,9 @@ import BISCertification from "./pages/BISCertification/BISCertification";
 import BISCertificationGerman from "./pages/BISCertification/BISCertificationGerman";
 import BISCertificationSpanish from "./pages/BISCertification/BISCertificationSpanish";
 import BISCertificationFrench from "./pages/BISCertification/BISCertificationFrench";
+import BISCertificationIndonesian from "./pages/BISCertification/BISCertificationIndonesian";
+import BISCertificationItalian from "./pages/BISCertification/BISCertificationItalian";
+import BISCertificationJapanese from "./pages/BISCertification/BISCertificationJapanese";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -392,8 +395,25 @@ function App() {
 
           {/* BIS Certification French Page */}
           <Route
-            path="/fr/quest-ce-que-le-certificat-bis-bis-indien"
+            path="/fr/quest-ce-que-le-certificat-bis-indien"
             element={<BISCertificationFrench />}
+          />
+
+          {/* BIS Certification Indonesian Page */}
+          <Route
+            path="/id/apa-itu-sertifikat-bis-bis-india"
+            element={<BISCertificationIndonesian />}
+          />
+
+          {/* BIS Certification Italian Page */}
+          <Route
+            path="/it/cose-il-certificato-bis-indiano"
+            element={<BISCertificationItalian />}
+          />
+          {/* BIS Certification Japanese Page */}
+          <Route
+            path="/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"
+            element={<BISCertificationJapanese />}
           />
 
           <Route

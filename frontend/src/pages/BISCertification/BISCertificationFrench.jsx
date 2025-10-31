@@ -193,7 +193,7 @@ const BISCertificationContactForm = () => {
 
   const getPageName = () => {
     const path = window.location.pathname;
-    if (path.includes("/fr/quest-ce-que-le-certificat-bis-bis-indien"))
+    if (path.includes("/fr/quest-ce-que-le-certificat-bis-indien"))
       return "Certification BIS - Page Française";
   };
 

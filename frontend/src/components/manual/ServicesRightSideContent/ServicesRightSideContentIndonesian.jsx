@@ -35,6 +35,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/id/apa-itu-crs-bis-atau-registrasi-crs",
     // ISI Mark Indonesian Page Url
     "/id/sertifikasi-bis-isi-mark",
+    // BIS CERTIFICATION PATH
+    "/id/apa-itu-sertifikat-bis-bis-india",
   ];
 
   // Check if current path should show these components
@@ -569,6 +571,8 @@ const ContactFormServicesRightSideContentIndonesian = () => {
       return "CRS Registration (Indonesian)";
     if (path.includes("/id/sertifikasi-bis-isi-mark"))
       return "ISI Mark - Indonesian Page";
+    if (path.includes("/id/apa-itu-sertifikat-bis-bis-india"))
+      return "BIS Certification (Indonesian)";
   };
 
   const [formData, setFormData] = useState({
