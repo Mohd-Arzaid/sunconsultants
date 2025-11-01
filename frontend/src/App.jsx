@@ -251,6 +251,8 @@ import BISCertificationItalian from "./pages/BISCertification/BISCertificationIt
 import BISCertificationJapanese from "./pages/BISCertification/BISCertificationJapanese";
 import BISCertificationKorean from "./pages/BISCertification/BISCertificationKorean";
 import BISCertificationDutch from "./pages/BISCertification/BISCertificationDutch";
+import BISCertificationThai from "./pages/BISCertification/BISCertificationThai";
+import BISCertificationVietnamese from "./pages/BISCertification/BISCertificationVietnamese";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -428,6 +430,18 @@ function App() {
           <Route
             path="/nl/wat-is-het-bis-certificaat-indiaas-bis"
             element={<BISCertificationDutch />}
+          />
+
+          {/* BIS Certification Thai Page */}
+          <Route
+            path="/th/bis-certificate-khue-a-rai-bis-india"
+            element={<BISCertificationThai />}
+          />
+
+          {/* BIS Certification Vietnamese Page */}
+          <Route
+            path="/vi/chung-chi-bis-la-gi-bis-an-do"
+            element={<BISCertificationVietnamese />}
           />
 
           <Route

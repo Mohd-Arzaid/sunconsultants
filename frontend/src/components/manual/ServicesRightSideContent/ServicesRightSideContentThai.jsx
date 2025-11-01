@@ -34,7 +34,10 @@ const ServicesRightSideContentThai = () => {
     "/kan-rap-rong-bis-nai-prathet-thai",
     "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
     // ISI Mark Thai Page Url
-    "/th/bis-isi-mark-raprong",
+    "/th/bis-isi-mark-raprong", 
+    // BIS CERTIFICATION PATH
+    "/th/bis-certificate-khue-a-rai-bis-india",
+
   ];
 
   // Check if current path should show these components
@@ -564,6 +567,8 @@ const ContactFormServicesRightSideContentThai = () => {
       return "CRS Registration (Thai)";
     if (path.includes("/th/bis-isi-mark-raprong"))
       return "ISI Mark - Thai Page";
+    if (path.includes("/th/bis-certificate-khue-a-rai-bis-india"))
+      return "BIS Certification (Thai)";
   };
 
   const [formData, setFormData] = useState({
