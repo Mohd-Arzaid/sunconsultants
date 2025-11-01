@@ -30,11 +30,13 @@ const ServicesRightSideContentKorean = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
-    "/what-is-crs-bis-or-crs-registration",
+    
     "/hangug-ui-bis-injeung",
     "/ko/crs-bis-i-mueos-inga-crs-deunglog",
     // ISI Mark Korean Page Url
     "/ko/bis-isi-mark-injeung",
+    // BIS CERTIFICATION PATH
+    "/ko/bis-jeungmyeongseo-ga-mueos-indo-bis",
   ];
 
   // Check if current path should show these components
@@ -549,13 +551,14 @@ const ContactFormServicesRightSideContentKorean = () => {
   // Function to get page name based on URL
   const getPageName = () => {
     const path = window.location.pathname;
-    if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "CRS Registration (Korean)";
+    
     if (path.includes("/hangug-ui-bis-injeung")) return "Korea Blog (Korean)";
     if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
       return "CRS Registration (Korean)";
     if (path.includes("/ko/bis-isi-mark-injeung"))
       return "ISI Mark - Korean Page";
+    if (path.includes("/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"))
+      return "BIS common (Korean)";
   };
 
   const [formData, setFormData] = useState({

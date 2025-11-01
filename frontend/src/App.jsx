@@ -62,7 +62,7 @@ import LHSCable from "./pages/LHSCable";
 import ArabicBISFM from "./pages/ArabicBISFM";
 import ArabicISIMark from "./pages/ArabicISIMark";
 import ArabicCRS from "./pages/ArabicCRS";
-import ArabicSchemeX from "./pages/ArabicSchemeX";
+
 import ArabicBISCertification from "./pages/ArabicBISCertification";
 import NABL from "./pages/NABL";
 import AdminLoginPage from "./admin/AdminLoginPage";
@@ -249,6 +249,8 @@ import BISCertificationFrench from "./pages/BISCertification/BISCertificationFre
 import BISCertificationIndonesian from "./pages/BISCertification/BISCertificationIndonesian";
 import BISCertificationItalian from "./pages/BISCertification/BISCertificationItalian";
 import BISCertificationJapanese from "./pages/BISCertification/BISCertificationJapanese";
+import BISCertificationKorean from "./pages/BISCertification/BISCertificationKorean";
+import BISCertificationDutch from "./pages/BISCertification/BISCertificationDutch";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -414,6 +416,18 @@ function App() {
           <Route
             path="/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"
             element={<BISCertificationJapanese />}
+          />
+
+          {/* BIS Certification Korean Page */}
+          <Route
+            path="/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"
+            element={<BISCertificationKorean />}
+          />
+
+          {/* BIS Certification Dutch Page */}
+          <Route
+            path="/nl/wat-is-het-bis-certificaat-indiaas-bis"
+            element={<BISCertificationDutch />}
           />
 
           <Route
@@ -1273,10 +1287,7 @@ function App() {
           element={<ArabicBISFM />}
         />
 
-        <Route
-          path="/ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"
-          element={<ArabicSchemeX />}
-        />
+       
 
         <Route
           path="/ar/ma-huwa-shahadat-bis-bis-alhind"

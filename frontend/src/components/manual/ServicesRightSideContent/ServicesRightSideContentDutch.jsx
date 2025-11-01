@@ -35,6 +35,8 @@ const ServicesRightSideContentDutch = () => {
     "/nl/wat-is-crs-bis-of-crs-registratie",
     // ISI Mark Dutch Page Url
     "/nl/bis-isi-mark-certificering",
+    // BIS CERTIFICATION PATH
+    "/nl/wat-is-het-bis-certificaat-indiaas-bis",
   ];
 
   // Check if current path should show these components
@@ -566,6 +568,8 @@ const ContactFormServicesRightSideContentDutch = () => {
       return "CRS Registration (Dutch)";
     if (path.includes("/nl/bis-isi-mark-certificering"))
       return "ISI Mark - Dutch Page";
+    if (path.includes("/nl/wat-is-het-bis-certificaat-indiaas-bis"))
+      return "BIS Certification Dutch";
   };
 
   const [formData, setFormData] = useState({
