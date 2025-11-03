@@ -39,6 +39,9 @@ const ServicesRightSideContentKorean = () => {
     "/ko/bis-jeungmyeongseo-ga-mueos-indo-bis",
     //scheme x product url
     "/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye",
+    "/bis-seukim-x-injeung-apchukgi",
+    "/bis-seukim-x-injeung-geonseol-gigye",
+    "/bis-seukim-x-injeung-keurein",
   ];
 
   // Check if current path should show these components
@@ -563,6 +566,14 @@ const ContactFormServicesRightSideContentKorean = () => {
       return "BIS common (Korean)";
     if (path.includes("/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"))
       return "Scheme X - Centrifuges (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-apchukgi"))
+      return "Scheme X - Compressors (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-geonseol-gigye"))
+      return "Scheme X - Construction Machinery (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-keurein"))
+      return "Scheme X - Cranes (Korean)";
+
+    
   };
 
   const [formData, setFormData] = useState({
