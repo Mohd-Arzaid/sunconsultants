@@ -37,7 +37,9 @@ const ServicesRightSideContentArabic = () => {
     "/shahadat-bis-fi-dubai",
     "/shahadat-bis-fi-iran",
     "/shahadat-bis-fi-al-iraq",
-    "/ar/dalil-shahadat-bis-bis-alhind"
+    "/ar/dalil-shahadat-bis-bis-alhind",
+      // bis certification page url
+    "/ar/ma-huwa-shahadat-bis-bis-alhind"
   ];
 
   // Check if current path should show these components
@@ -566,6 +568,7 @@ const ContactFormServicesRightSideContentArabic = () => {
     if (path.includes("/shahadat-bis-fi-iran")) return "Iran Blog (Arabic)";
     if (path.includes("/shahadat-bis-fi-al-iraq")) return "Iraq Blog (Arabic)";
     if (path.includes("/ar/dalil-shahadat-bis-bis-alhind")) return "ISI Mark (Arabic)";
+    if (path.includes("/ar/ma-huwa-shahadat-bis-bis-alhind")) return "BIS Certification (Arabic)";
   };
 
   const [formData, setFormData] = useState({

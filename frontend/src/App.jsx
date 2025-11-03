@@ -199,6 +199,10 @@ import CranesSpanish from "./schemeXProducts/Cranes/CranesSpanish";
 import ConstructionMachinerySpanish from "./schemeXProducts/ConstructionMachinery/ConstructionMachinerySpanish";
 import CompressorsSpanish from "./schemeXProducts/Compressors/CompressorsSpanish";
 import CentrifugesSpanish from "./schemeXProducts/Centrifuges/CentrifugesSpanish";
+import CentrifugesKorean from "./schemeXProducts/Centrifuges/CentrifugesKorean";
+import CompressorsKorean from "./schemeXProducts/Compressors/CompressorsKorean";
+import ConstructionMachineryKorean from "./schemeXProducts/ConstructionMachinery/ConstructionMachineryKorean";
+import CranesKorean from "./schemeXProducts/Cranes/CranesKorean";
 import NetherlandsBlog from "./blogs/NetherlandsBlog/NetherlandsBlog";
 import LangNetherlandsBlog from "./blogs/NetherlandsBlog/LangNetherlandsBlog";
 import KoreaBlog from "./blogs/KoreaBlog/KoreaBlog";
@@ -253,6 +257,7 @@ import BISCertificationKorean from "./pages/BISCertification/BISCertificationKor
 import BISCertificationDutch from "./pages/BISCertification/BISCertificationDutch";
 import BISCertificationThai from "./pages/BISCertification/BISCertificationThai";
 import BISCertificationVietnamese from "./pages/BISCertification/BISCertificationVietnamese";
+import BISCertificationArabic from "./pages/BISCertification/BISCertificationArabic";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -443,6 +448,13 @@ function App() {
             path="/vi/chung-chi-bis-la-gi-bis-an-do"
             element={<BISCertificationVietnamese />}
           />
+
+          {/* BIS Certification Arabic Page */}
+          <Route
+          path="/ar/ma-huwa-shahadat-bis-bis-alhind"
+          element={<BISCertificationArabic />}
+        />
+
 
           <Route
             path="a-guide-on-how-to-obtain-lmpc-certificate"
@@ -825,6 +837,26 @@ function App() {
           <Route
             path="certificacion-bis-scheme-x-para-centrifugas-y-maquinaria-de-filtrado-o-purificacion"
             element={<CentrifugesSpanish />}
+          />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+            element={<CentrifugesKorean />}
+          />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-apchukgi"
+            element={<CompressorsKorean />}
+          />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-geonseol-gigye"
+            element={<ConstructionMachineryKorean />}
+          />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-keurein"
+            element={<CranesKorean />}
           />
 
           {/* {English } */}
@@ -1303,11 +1335,7 @@ function App() {
 
        
 
-        <Route
-          path="/ar/ma-huwa-shahadat-bis-bis-alhind"
-          element={<ArabicBISCertification />}
-        />
-
+       
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLoginPage />} />
 

@@ -205,6 +205,11 @@ const AuditGallery = () => {
       image: "/auditImages/Turkey.webp",
       title: "Turkey",
     },
+    {
+      id: 14,
+      image: "/auditImages/bis-certification-inspection-malaysia.webp",
+      title: "Malaysia ",
+    },
   ];
 
   return (

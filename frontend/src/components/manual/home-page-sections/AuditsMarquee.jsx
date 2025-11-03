@@ -73,6 +73,11 @@ const AuditsMarquee = () => {
       image: "/auditImages/Turkey.webp",
       title: "Turkey Audit",
     },
+    {
+      id: 14,
+      image: "/auditImages/bis-certification-inspection-malaysia.webp",
+      title: "BIS Certification Inspection Visit in Malaysia – Sun Certifications India",
+    },
   ];
 
   useEffect(() => {

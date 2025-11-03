@@ -37,6 +37,8 @@ const ServicesRightSideContentKorean = () => {
     "/ko/bis-isi-mark-injeung",
     // BIS CERTIFICATION PATH
     "/ko/bis-jeungmyeongseo-ga-mueos-indo-bis",
+    //scheme x product url
+    "/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye",
   ];
 
   // Check if current path should show these components
@@ -559,6 +561,8 @@ const ContactFormServicesRightSideContentKorean = () => {
       return "ISI Mark - Korean Page";
     if (path.includes("/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"))
       return "BIS common (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"))
+      return "Scheme X - Centrifuges (Korean)";
   };
 
   const [formData, setFormData] = useState({
