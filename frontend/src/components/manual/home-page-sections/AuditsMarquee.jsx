@@ -76,7 +76,7 @@ const AuditsMarquee = () => {
     {
       id: 14,
       image: "/auditImages/bis-certification-inspection-malaysia.webp",
-      title: "BIS Certification Inspection Visit in Malaysia – Sun Certifications India",
+      title: " Malaysia ",
     },
   ];
 
