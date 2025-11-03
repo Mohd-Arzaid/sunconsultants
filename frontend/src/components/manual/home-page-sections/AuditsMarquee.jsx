@@ -151,7 +151,8 @@ const AuditsMarquee = () => {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={`BIS License inspection at ${item.title} manufacturing facility with Sun Certifications India's representatives.`}
+                    title={`BIS Certification Inspection Visit in ${item.title} – Sun Certifications India`}
                     className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
                     width={400}
                     height={300}
