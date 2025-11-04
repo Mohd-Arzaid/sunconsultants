@@ -203,6 +203,14 @@ import CentrifugesKorean from "./schemeXProducts/Centrifuges/CentrifugesKorean";
 import CompressorsKorean from "./schemeXProducts/Compressors/CompressorsKorean";
 import ConstructionMachineryKorean from "./schemeXProducts/ConstructionMachinery/ConstructionMachineryKorean";
 import CranesKorean from "./schemeXProducts/Cranes/CranesKorean";
+import DieselGeneratorKorean from "./schemeXProducts/DieselGenerator/DieselGeneratorKorean";
+import EmbroideryMachinesKorean from "./schemeXProducts/EmbroideryMachines/EmbroideryMachinesKorean";
+import GearsGearingsandTransmissionKorean from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionKorean";
+import HeatTreatmentEquipmentKorean from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentKorean";
+import MachineToolsKorean from "./schemeXProducts/MachineTools/MachineToolsKorean";
+import MetalCuttingMachinesKorean from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesKorean";
+import PackingMachineryKorean from "./schemeXProducts/PackingMachinery/PackingMachineryKorean";
+import PowerSemiconductorsKorean from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsKorean";
 import NetherlandsBlog from "./blogs/NetherlandsBlog/NetherlandsBlog";
 import LangNetherlandsBlog from "./blogs/NetherlandsBlog/LangNetherlandsBlog";
 import KoreaBlog from "./blogs/KoreaBlog/KoreaBlog";
@@ -964,6 +972,11 @@ function App() {
             path="certificacion-bis-scheme-x-para-generadores-diesel"
             element={<DieselGeneratorSpanish />}
           />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-dijel-baljeongi"
+            element={<DieselGeneratorKorean />}
+          />
 
           {/* {English } */}
           <Route
@@ -990,6 +1003,11 @@ function App() {
           <Route
             path="certificacion-bis-scheme-x-para-maquinaria-de-bordado"
             element={<EmbroideryMachinesSpanish />}
+          />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-jasu-gigye"
+            element={<EmbroideryMachinesKorean />}
           />
 
           {/* {English } */}
@@ -1018,6 +1036,11 @@ function App() {
             path="certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
             element={<GearsGearingsandTransmissionSpanish />}
           />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
+            element={<GearsGearingsandTransmissionKorean />}
+          />
 
           {/* {English } */}
           <Route
@@ -1045,6 +1068,11 @@ function App() {
             path="certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
             element={<HeatTreatmentEquipmentSpanish />}
           />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-yeolcheori-jangbi"
+            element={<HeatTreatmentEquipmentKorean />}
+          />
 
           {/* {English } */}
           <Route
@@ -1071,17 +1099,37 @@ function App() {
             path="certificacion-bis-scheme-x-para-herramientas-de-maquina"
             element={<MachineToolsSpanish />}
           />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-gongjag-gigye"
+            element={<MachineToolsKorean />}
+          />
           <Route
             path="certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
             element={<MetalCuttingMachinesSpanish />}
+          />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
+            element={<MetalCuttingMachinesKorean />}
           />
           <Route
             path="certificacion-bis-scheme-x-para-maquinaria-de-empaque"
             element={<PackingMachinerySpanish />}
           />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-pojang-gigye"
+            element={<PackingMachineryKorean />}
+          />
           <Route
             path="certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
             element={<PowerSemiconductorsSpanish />}
+          />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi"
+            element={<PowerSemiconductorsKorean />}
           />
           <Route
             path="certificacion-bis-scheme-x-para-obras-publicas-y-aparatos-mecanicos"

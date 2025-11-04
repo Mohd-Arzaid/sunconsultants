@@ -42,6 +42,14 @@ const ServicesRightSideContentKorean = () => {
     "/bis-seukim-x-injeung-apchukgi",
     "/bis-seukim-x-injeung-geonseol-gigye",
     "/bis-seukim-x-injeung-keurein",
+    "/bis-seukim-x-injeung-dijel-baljeongi",
+    "/bis-seukim-x-injeung-jasu-gigye",
+    "/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu",
+    "/bis-seukim-x-injeung-yeolcheori-jangbi",
+    "/bis-seukim-x-injeung-gongjag-gigye",
+    "/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye",
+    "/bis-seukim-x-injeung-pojang-gigye",
+    "/bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi",
   ];
 
   // Check if current path should show these components
@@ -572,6 +580,22 @@ const ContactFormServicesRightSideContentKorean = () => {
       return "Scheme X - Construction Machinery (Korean)";
     if (path.includes("/bis-seukim-x-injeung-keurein"))
       return "Scheme X - Cranes (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-dijel-baljeongi"))
+      return "Scheme X - Diesel Generators (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-jasu-gigye"))
+      return "Scheme X - Embroidery Machines (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"))
+      return "Scheme X - Gears, Gearing, and Transmission Elements (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-yeolcheori-jangbi"))
+      return "Scheme X - Heat Treatment Equipment (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-gongjag-gigye"))
+      return "Scheme X - Machine Tools (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"))
+      return "Scheme X - Metal Cutting Machines (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-pojang-gigye"))
+      return "Scheme X - Packing Machinery (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi"))
+      return "Scheme X - Power Semiconductor Converters (Korean)";
 
     
   };
