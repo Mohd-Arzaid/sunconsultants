@@ -50,6 +50,13 @@ const ServicesRightSideContentKorean = () => {
     "/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye",
     "/bis-seukim-x-injeung-pojang-gigye",
     "/bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi",
+    "/bis-seukim-x-injeung-gonggong-sa-eob-mich-gigye-gigu",
+    "/bis-seukim-x-injeung-hojeon-jeongi-gigye",
+    "/bis-seukim-x-injeung-gomu-mich-peullaseutig-gigye",
+    "/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha",
+    "/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo",
+    "/bis-seukim-x-injeung-byeonab-gi",
+    "/bis-seukim-x-injeung-jigjo-gi",
   ];
 
   // Check if current path should show these components
@@ -596,6 +603,20 @@ const ContactFormServicesRightSideContentKorean = () => {
       return "Scheme X - Packing Machinery (Korean)";
     if (path.includes("/bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi"))
       return "Scheme X - Power Semiconductor Converters (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-gonggong-sa-eob-mich-gigye-gigu"))
+      return "Scheme X - Public Works and Mechanical Appliances (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-hojeon-jeongi-gigye"))
+      return "Scheme X - Rotary Electrical Machines (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-gomu-mich-peullaseutig-gigye"))
+      return "Scheme X - Rubber and Plastics Machinery (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha"))
+      return "Scheme X - Switchgear and Controlgear Equipment up to 1000 Volts (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo"))
+      return "Scheme X - Switchgear and Controlgear Equipment above 1000 Volts (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-byeonab-gi"))
+      return "Scheme X - Transformers (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-jigjo-gi"))
+      return "Scheme X - Weaving Machines (Korean)";
 
     
   };

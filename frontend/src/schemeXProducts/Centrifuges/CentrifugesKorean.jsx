@@ -52,7 +52,7 @@ const CentrifugesKorean = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/ko/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+          content="https://bis-certifications.com/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />

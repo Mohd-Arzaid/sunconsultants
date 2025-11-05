@@ -50,7 +50,7 @@ const CranesKorean = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/ko/bis-seukim-x-injeung-keurein"
+          content="https://bis-certifications.com/bis-seukim-x-injeung-keurein"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />

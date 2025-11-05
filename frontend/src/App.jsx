@@ -211,6 +211,13 @@ import MachineToolsKorean from "./schemeXProducts/MachineTools/MachineToolsKorea
 import MetalCuttingMachinesKorean from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesKorean";
 import PackingMachineryKorean from "./schemeXProducts/PackingMachinery/PackingMachineryKorean";
 import PowerSemiconductorsKorean from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsKorean";
+import PublicWorksAndMechanicalKorean from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalKorean";
+import RotaryElectricalMachinesKorean from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesKorean";
+import RubberAndPlasticsMachineryKorean from "./schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryKorean";
+import SwitchgearandControlgearEquipmentKorean from "./schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentKorean";
+import SwitchgearandControlgearEquipmentabove1000VoltsKorean from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsKorean";
+import TransformersKorean from "./schemeXProducts/Transformers/TransformersKorean";
+import WeavingMachinesKorean from "./schemeXProducts/WeavingMachines/WeavingMachinesKorean";
 import NetherlandsBlog from "./blogs/NetherlandsBlog/NetherlandsBlog";
 import LangNetherlandsBlog from "./blogs/NetherlandsBlog/LangNetherlandsBlog";
 import KoreaBlog from "./blogs/KoreaBlog/KoreaBlog";
@@ -1130,6 +1137,34 @@ function App() {
           <Route
             path="bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi"
             element={<PowerSemiconductorsKorean />}
+          />
+          <Route
+            path="bis-seukim-x-injeung-gonggong-sa-eob-mich-gigye-gigu"
+            element={<PublicWorksAndMechanicalKorean />}
+          />
+          <Route
+            path="bis-seukim-x-injeung-hojeon-jeongi-gigye"
+            element={<RotaryElectricalMachinesKorean />}
+          />
+          <Route
+            path="bis-seukim-x-injeung-gomu-mich-peullaseutig-gigye"
+            element={<RubberAndPlasticsMachineryKorean />}
+          />
+          <Route
+            path="bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha"
+            element={<SwitchgearandControlgearEquipmentKorean />}
+          />
+          <Route
+            path="bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo"
+            element={<SwitchgearandControlgearEquipmentabove1000VoltsKorean />}
+          />
+          <Route
+            path="bis-seukim-x-injeung-byeonab-gi"
+            element={<TransformersKorean />}
+          />
+          <Route
+            path="bis-seukim-x-injeung-jigjo-gi"
+            element={<WeavingMachinesKorean />}
           />
           <Route
             path="certificacion-bis-scheme-x-para-obras-publicas-y-aparatos-mecanicos"

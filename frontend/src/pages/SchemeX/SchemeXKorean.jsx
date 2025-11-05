@@ -2369,7 +2369,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                  to="/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   액체 처리용 펌프, 액체 엘리베이터 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품의 모든 유형
@@ -2386,7 +2386,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-compressors"
+                  to="/bis-seukim-x-injeung-apchukgi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   컴프레서의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리
@@ -2404,7 +2404,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-heat-treatment-equipment"
+                  to="/bis-seukim-x-injeung-yeolcheori-jangbi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   온도 변화 과정을 포함한 재료 처리 기계의 모든 유형 및 (또는) 어셈블리
@@ -2422,7 +2422,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+                  to="/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   액체 및 가스용 원심분리기, 여과 또는 정화 기계의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리
@@ -2440,7 +2440,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-packing-machinery"
+                  to="/bis-seukim-x-injeung-pojang-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   병 충전, 밀봉, 라벨링, 포장 또는 랩핑 기계의 모든 유형 및 (또는)
@@ -2457,7 +2457,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-cranes"
+                  to="/bis-seukim-x-injeung-keurein"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   크레인의 모든 유형 및 (또는) 어셈블리
@@ -2475,7 +2475,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-construction-machinery"
+                  to="/bis-seukim-x-injeung-geonseol-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   건설, 토공, 채굴용 기계의 모든 유형 및
@@ -2493,7 +2493,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-weaving-machines-looms"
+                  to="/bis-seukim-x-injeung-jigjo-gi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   직조 기계 (직기)의 모든 유형 및 (또는)
@@ -2510,7 +2510,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-embroidery-machinery"
+                  to="/bis-seukim-x-injeung-jasu-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   자수 제작 기계의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
@@ -2526,7 +2526,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+                  to="/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   제목 8456~8461 하에 포함된 금속 절단 기계 도구의 모든 유형 및 (또는) 어셈블리
@@ -2543,7 +2543,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-machine-tools"
+                  to="/bis-seukim-x-injeung-gongjag-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   석재, 세라믹, 콘크리트, 석면 시멘트 또는 유사한 광물 유리 가공용 기계 도구의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
@@ -2559,7 +2559,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+                  to="/bis-seukim-x-injeung-gomu-mich-peullaseutig-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   고무 및 플라스틱 가공 기계의 모든 유형 및 (또는)
@@ -2576,7 +2576,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+                  to="/bis-seukim-x-injeung-gonggong-sa-eob-mich-gigye-gigu"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   공공 사업 및 건물용 기계와 챕터 84의 다른 곳에 지정되지 않거나 포함되지 않은 개별 기능을 가진 기계 및 기계 장치의 모든 유형 및 (또는) 어셈블리/하위 어셈블리 / 구성품
@@ -2592,7 +2592,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+                  to="/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   기어 및 기어링, 톱니바퀴, 체인 스프로킷, 변속 요소 볼 또는 롤러 나사, 기어박스 및 속도 변경기, 토크 컨버터를 포함한 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
@@ -2608,7 +2608,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rotary-electrical-machines"
+                  to="/bis-seukim-x-injeung-hojeon-jeongi-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   발전기 등과 같은 회전 전기 기계의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
@@ -2624,7 +2624,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-diesel-generators"
+                  to="/bis-seukim-x-injeung-dijel-baljeongi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   디젤 발전기의 모든 유형 및 (또는) 어셈블리
@@ -2641,7 +2641,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-transformers"
+                  to="/bis-seukim-x-injeung-byeonab-gi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   변압기의 모든 유형 및 (또는) 어셈블리
@@ -2659,7 +2659,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-power-semiconductor-converters"
+                  to="/bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   전력 반도체 변환기의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
@@ -2675,7 +2675,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+                  to="/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   1000볼트 이하 전압에서 작동하는 개폐기 및 제어 기어 장비의 모든 유형 및 (또는) 어셈블리
@@ -2692,7 +2692,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+                  to="/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   1000볼트 초과 전압에서 작동하는 개폐기 및 제어 기어 장비의 모든 유형 및 (또는) 어셈블리

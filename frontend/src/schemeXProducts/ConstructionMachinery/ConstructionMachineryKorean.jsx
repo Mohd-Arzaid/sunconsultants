@@ -50,7 +50,7 @@ const ConstructionMachineryKorean = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/ko/bis-seukim-x-injeung-geonseol-gigye"
+          content="https://bis-certifications.com/bis-seukim-x-injeung-geonseol-gigye"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />

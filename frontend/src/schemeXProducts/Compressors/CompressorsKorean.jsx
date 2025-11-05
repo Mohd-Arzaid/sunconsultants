@@ -50,7 +50,7 @@ const CompressorsKorean = () => {
         />
         <meta
           property="og:url"
-          content="https://bis-certifications.com/ko/bis-seukim-x-injeung-apchukgi"
+          content="https://bis-certifications.com/bis-seukim-x-injeung-apchukgi"
         />
         <meta property="og:site_name" content="Sun Certifications India" />
         <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ const CompressorsKorean = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/ko/bis-seukim-x-injeung-apchukgi"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-apchukgi"
         />
       </Helmet>
 
