@@ -275,6 +275,7 @@ import BISCertificationThai from "./pages/BISCertification/BISCertificationThai"
 import BISCertificationVietnamese from "./pages/BISCertification/BISCertificationVietnamese";
 import BISCertificationArabic from "./pages/BISCertification/BISCertificationArabic";
 import CentrifugesIndonesian from "./schemeXProducts/Centrifuges/CentrifugesIndonesian";
+import CompressorsIndonesian from "./schemeXProducts/Compressors/CompressorsIndonesian";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -765,7 +766,7 @@ function App() {
             path="shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
             element={<PumpsAndLiquidElevatorsArabic />}
           />
-          
+
           {/* Centrifuges Pages */}
           {/* English */}
           <Route
@@ -806,23 +807,16 @@ function App() {
 
           {/* Centrifuges Pages End */}
 
-          {/* Compressors Pages */}
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-apchukgi"
-            element={<CompressorsKorean />}
-          />
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-geonseol-gigye"
-            element={<ConstructionMachineryKorean />}
-          />
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-keurein"
-            element={<CranesKorean />}
-          />
-          {/* {English } */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+
+          {/* Compressors Pages Start */}
+          {/* English */}
           <Route
             path="bis-scheme-x-certification-for-compressors"
             element={<Compressors />}
@@ -847,6 +841,27 @@ function App() {
             path="certificacion-bis-scheme-x-para-compresores"
             element={<CompressorsSpanish />}
           />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-apchukgi"
+            element={<CompressorsKorean />}
+          />
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-kompresor"
+            element={<CompressorsIndonesian />}
+          />
+
+          {/* Compressors Pages End */}
+
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-construction-machinery"

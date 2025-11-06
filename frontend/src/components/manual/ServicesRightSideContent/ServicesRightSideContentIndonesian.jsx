@@ -18,7 +18,6 @@ import {
 import { Button } from "../../ui/button";
 import { useState } from "react";
 import axios from "axios";
-// import { toast } from "sonner";
 import { ClockLoader } from "react-spinners";
 import { toast } from "@/hooks/use-toast";
 import { Link, useLocation } from "react-router-dom";
@@ -40,6 +39,8 @@ const ServicesRightSideContentIndonesian = () => {
 
     // Centrifuges Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-sentrifus-dan-mesin-penyaring-atau-pemurnian",
+    // Compressors Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-kompresor",
   ];
 
   // Check if current path should show these components
@@ -584,6 +585,10 @@ const ContactFormServicesRightSideContentIndonesian = () => {
       )
     )
       return "Centrifuges Scheme X Product (Indonesian)";
+
+    // Compressors Scheme X Product (Indonesian)
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-kompresor"))
+      return "Compressors Scheme X Product (Indonesian)";
   };
 
   const [formData, setFormData] = useState({
