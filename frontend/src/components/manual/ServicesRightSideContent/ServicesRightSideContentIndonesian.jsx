@@ -41,6 +41,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-sentrifus-dan-mesin-penyaring-atau-pemurnian",
     // Compressors Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-kompresor",
+    // Construction Machinery Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-mesin-konstruksi",
   ];
 
   // Check if current path should show these components
@@ -589,6 +591,10 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // Compressors Scheme X Product (Indonesian)
     if (path.includes("/sertifikasi-bis-skema-x-untuk-kompresor"))
       return "Compressors Scheme X Product (Indonesian)";
+
+    // Construction Machinery Scheme X Product (Indonesian)
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"))
+      return "Construction Machinery Scheme X Product (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

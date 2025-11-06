@@ -276,6 +276,7 @@ import BISCertificationVietnamese from "./pages/BISCertification/BISCertificatio
 import BISCertificationArabic from "./pages/BISCertification/BISCertificationArabic";
 import CentrifugesIndonesian from "./schemeXProducts/Centrifuges/CentrifugesIndonesian";
 import CompressorsIndonesian from "./schemeXProducts/Compressors/CompressorsIndonesian";
+import ConstructionMachineryIndonesian from "./schemeXProducts/ConstructionMachinery/ConstructionMachineryIndonesian";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -862,6 +863,8 @@ function App() {
           {/* ==================================================================== */}
           {/* ==================================================================== */}
 
+          {/* Construction Machinery Pages Start */}
+
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-construction-machinery"
@@ -887,6 +890,27 @@ function App() {
             path="certificacion-bis-scheme-x-para-maquinaria-de-construccion"
             element={<ConstructionMachinerySpanish />}
           />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-geonseol-gigye"
+            element={<ConstructionMachineryKorean />}
+          />
+          {/* Indonesian */}
+          <Route
+            path="/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
+            element={<ConstructionMachineryIndonesian />}
+          />
+
+          {/* Construction Machinery Pages End */}
+
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-cranes"
