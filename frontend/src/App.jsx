@@ -277,6 +277,8 @@ import BISCertificationArabic from "./pages/BISCertification/BISCertificationAra
 import CentrifugesIndonesian from "./schemeXProducts/Centrifuges/CentrifugesIndonesian";
 import CompressorsIndonesian from "./schemeXProducts/Compressors/CompressorsIndonesian";
 import ConstructionMachineryIndonesian from "./schemeXProducts/ConstructionMachinery/ConstructionMachineryIndonesian";
+import CranesIndonesian from "./schemeXProducts/Cranes/CranesIndonesian";
+import DieselGeneratorIndonesian from "./schemeXProducts/DieselGenerator/DieselGeneratorIndonesian";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -911,7 +913,9 @@ function App() {
           {/* ==================================================================== */}
           {/* ==================================================================== */}
 
-          {/* {English } */}
+          {/* Cranes Pages Start */}
+
+          {/* English */}
           <Route
             path="bis-scheme-x-certification-for-cranes"
             element={<Cranes />}
@@ -936,6 +940,27 @@ function App() {
             path="certificacion-bis-scheme-x-para-gruas"
             element={<CranesSpanish />}
           />
+          {/* Korean */}
+          <Route
+            path="bis-seukim-x-injeung-keurein"
+            element={<CranesKorean />}
+          />
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-derek"
+            element={<CranesIndonesian />}
+          />
+          {/* Cranes Pages End */}
+
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+
+          {/* Diesel Generators Pages Start */}
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-diesel-generators"
@@ -966,6 +991,23 @@ function App() {
             path="bis-seukim-x-injeung-dijel-baljeongi"
             element={<DieselGeneratorKorean />}
           />
+
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-generator-diesel"
+            element={<DieselGeneratorIndonesian />}
+          />
+
+          {/* Diesel Generators Pages End */}
+
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+          {/* ==================================================================== */}
+
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-embroidery-machinery"

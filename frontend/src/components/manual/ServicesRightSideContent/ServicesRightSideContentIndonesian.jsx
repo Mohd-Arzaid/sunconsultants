@@ -43,6 +43,10 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-kompresor",
     // Construction Machinery Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-mesin-konstruksi",
+    // Cranes Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-derek",
+    // Diesel Generators Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-generator-diesel",
   ];
 
   // Check if current path should show these components
@@ -595,6 +599,14 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // Construction Machinery Scheme X Product (Indonesian)
     if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"))
       return "Construction Machinery Scheme X Product (Indonesian)";
+
+    // Cranes Scheme X Product (Indonesian)
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-derek"))
+      return "Cranes Scheme X Product (Indonesian)";
+
+    // Diesel Generators Scheme X Product (Indonesian)
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-generator-diesel"))
+      return "Diesel Generators Scheme X Product (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

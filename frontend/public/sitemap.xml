@@ -1219,12 +1219,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-cranes</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-embroidery-machinery</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1232,12 +1226,6 @@
   </url>
   <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-diesel-generators</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -1517,39 +1505,109 @@
   </url>
   <!-- Construction Machinery - SchemeX Products End -->
 
-  <!-- Cranes - Multilingual -->
+  <!-- Cranes - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-cranes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-ponts-roulants</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-kranen</loc>
+    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-krane</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Vietnamese -->
   <url>
     <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-can-cau</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-gruas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-keurein</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-derek</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Cranes - SchemeX Products End -->
 
-  <!-- Diesel Generators - Multilingual -->
+  <!-- Diesel Generators - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-diesel-generators</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-generateurs-diesel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-dieselgeneratoren</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-generadores-diesel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-dijel-baljeongi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-generator-diesel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Diesel Generators - SchemeX Products End -->
 
   <!-- Embroidery Machinery - Multilingual -->
   <url>
@@ -1791,18 +1849,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-keurein</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-dijel-baljeongi</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-seukim-x-injeung-jasu-gigye</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1919,18 +1965,6 @@
 
   <!-- Spanish Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-gruas</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-generadores-diesel</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-bordado</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2017,18 +2051,6 @@
 
   <!-- Vietnamese Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-can-cau</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-theu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2108,18 +2130,6 @@
   </url>
 
   <!-- French Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-ponts-roulants</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-generateurs-diesel</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-broderie</loc>
     <changefreq>monthly</changefreq>
@@ -2206,18 +2216,6 @@
   </url>
 
   <!-- German Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-krane</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-dieselgeneratoren</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-stickmaschinen</loc>
     <changefreq>monthly</changefreq>
