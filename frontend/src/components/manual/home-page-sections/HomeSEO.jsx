@@ -4,7 +4,7 @@ const HomeSEO = () => {
   return (
     <Helmet>
       <title>
-      BIS Certification Consultants in India | ISI Mark, FMCS, CRS, EPR
+        BIS Certification Consultants in India | ISI Mark, FMCS, CRS, EPR
       </title>
       <meta
         name="description"

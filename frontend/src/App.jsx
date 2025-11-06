@@ -9,6 +9,7 @@ import ScrollToTopButton, {
   ScrollToTop,
 } from "./components/common/ScrollToTop";
 import SEOBreadcrumbs from "./components/common/SEOBreadcrumbs";
+import OrganizationSchema from "./components/common/OrganizationSchema";
 import LocalizedRoute from "@/common/LocalizedRoute";
 import RouteResolver from "@/common/RouteResolver";
 
@@ -284,6 +285,7 @@ function App() {
 
   return (
     <>
+      <OrganizationSchema />
       {!isAdminRoute && <TopBar />}
       {!isAdminRoute && <Navbar />}
       {!isAdminRoute && (
@@ -466,10 +468,9 @@ function App() {
 
           {/* BIS Certification Arabic Page */}
           <Route
-          path="/ar/ma-huwa-shahadat-bis-bis-alhind"
-          element={<BISCertificationArabic />}
-        />
-
+            path="/ar/ma-huwa-shahadat-bis-bis-alhind"
+            element={<BISCertificationArabic />}
+          />
 
           <Route
             path="a-guide-on-how-to-obtain-lmpc-certificate"
@@ -491,7 +492,7 @@ function App() {
             element={<ISIMark />}
           />
           {/* ISIMark Japanese Page */}
-          <Route 
+          <Route
             path="/ja/bis-isi-mark-shounin"
             element={<ISIMarkJapanese />}
           />
@@ -1416,9 +1417,6 @@ function App() {
           element={<ArabicBISFM />}
         />
 
-       
-
-       
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLoginPage />} />
 
