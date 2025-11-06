@@ -55,11 +55,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
 
-import {
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-
-} from "@radix-ui/react-icons";
+import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import { Marquee } from "@/components/magicui/marquee";
 import { Badge } from "@/components/ui/badge";
@@ -90,7 +86,9 @@ const ArabicBISFM = () => {
                   <SlashIcon />
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
-                  <BreadcrumbPage>دليل شهادة BIS للمصنعين الأجانب (BIS الهند)</BreadcrumbPage>
+                  <BreadcrumbPage>
+                    دليل شهادة BIS للمصنعين الأجانب (BIS الهند)
+                  </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
@@ -420,7 +418,6 @@ export const ArabicServiceContactForm = () => {
     // Scheme X
     if (path.includes("/indian-bis-certification-under-scheme-x"))
       return "SchemeX";
-
 
     if (path.includes("/ar/BIS/shahadat-bis-alhind-tahata-almukhatat-x"))
       return "SchemeX";
@@ -809,8 +806,9 @@ const ArabicBISFMIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -860,10 +858,11 @@ const ArabicBISFMIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {SECTION_NAMES[item]}
@@ -883,18 +882,20 @@ const ArabicBISFMIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {SECTION_NAMES[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -1085,7 +1086,6 @@ const ArabicFreeCallBack = () => {
     // ISI Mark Indian
     if (path.includes("a-guide-to-bis-certification-indian-bis"))
       return "ISI Mark Indian";
-
 
     if (path.includes("/ar/dalil-shahadat-bis-bis-alhind"))
       return "ISI Mark Indian";
@@ -1461,7 +1461,7 @@ const ArabicLatestBlog = () => {
     },
     {
       image:
-        "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MCIfpfHsgrogddkI6G12hT4i6LwIPATLHg&s",
       category: "BIS",
       title: "إشعار BIS للطاولات والمكاتب",
       url: "/latest-notification/and-desks",
@@ -1556,7 +1556,7 @@ const ArabicLatestBlog = () => {
     },
     {
       image:
-        "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
+        "https://media.istockphoto.com/id/1322355858/photo/aluminium-round-long-products-on-black-steel-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=I3k2F2cQSo5AW1qOQ5uxi2ROi-YJQoH47XzApxCP7qY=",
       category: "BIS",
       title: "إشعار BIS للألمنيوم المطاوع وقضبان وعيدان وأقسام سبائك الألمنيوم",
       url: "/latest-notification/and-sections",
@@ -3935,8 +3935,6 @@ export const ArabicFooter = () => {
                 <LinkedInLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
                 <span className="sr-only">LinkedIn</span>
               </a>
-
-
 
               <a
                 href="mailto:admin@bis-certifications.com?body=Hello"

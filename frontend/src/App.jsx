@@ -274,6 +274,7 @@ import BISCertificationDutch from "./pages/BISCertification/BISCertificationDutc
 import BISCertificationThai from "./pages/BISCertification/BISCertificationThai";
 import BISCertificationVietnamese from "./pages/BISCertification/BISCertificationVietnamese";
 import BISCertificationArabic from "./pages/BISCertification/BISCertificationArabic";
+import CentrifugesIndonesian from "./schemeXProducts/Centrifuges/CentrifugesIndonesian";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -314,84 +315,69 @@ function App() {
             element={<InternationalAudits />}
           />
           <Route path="seminars-and-exhibitions" element={<Exhibition />} />
-
           <Route path="sitemap" element={<Sitemap />} />
-
           {/* Services Pages */}
           <Route path="cdsco-registration-certification" element={<CDSCO />} />
-
           {/* Scheme X Eng Page */}
           <Route
             path="/indian-bis-certification-under-scheme-x"
             element={<SchemeX />}
           />
-
           {/* Scheme X Japanese Page */}
           <Route
             path="/ja/indo-no-bis-nintei-sukimu-x"
             element={<SchemeXJapanese />}
           />
-
           {/* Scheme X German Page */}
           <Route
             path="/de/indische-bis-zertifizierung-nach-schema-x"
             element={<SchemeXGerman />}
           />
-
           {/* Scheme X Spanish Page */}
           <Route
             path="/es/certificacion-bis-india-bajo-esquema-x"
             element={<SchemeXSpanish />}
           />
-
           {/* Scheme X France Page */}
           <Route
             path="/fr/certification-bis-indienne-selon-schema-x"
             element={<SchemeXFrench />}
           />
-
           {/* Scheme X Indonesian Page */}
           <Route
             path="/id/sertifikasi-bis-india-di-bawah-skema-x"
             element={<SchemeXIndonesian />}
           />
-
           {/* Scheme X Vietnamese Page */}
           <Route
             path="/vi/chung-nhan-bis-an-do-theo-scheme-x"
             element={<SchemeXVietnamese />}
           />
-
           {/* Scheme X Italian Page */}
           <Route
             path="/it/certificazione-bis-indiana-secondo-schema-x"
             element={<SchemeXItalian />}
           />
-
           {/* Scheme X Korean Page */}
           <Route
             path="/ko/indo-bis-injeung-scheme-x-haenghaeng"
             element={<SchemeXKorean />}
           />
-
           {/* Scheme X Dutch Page */}
           <Route
             path="/nl/indiaas-bis-certificaat-volgens-schema-x"
             element={<SchemeXDutch />}
           />
-
           {/* Scheme X Arabic Page */}
           <Route
             path="/ar/shahadat-bis-alhind-tahata-almukhatat-x"
             element={<SchemeXArabic />}
           />
-
           {/* Scheme X Thai Page */}
           <Route
             path="/th/bis-prathiap-india-taem-dai-tae-skema-x"
             element={<SchemeXThai />}
           />
-
           <Route
             path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
             element={<BISFM />}
@@ -400,37 +386,31 @@ function App() {
             path="a-guide-on-how-to-obtain-epr-certificate"
             element={<EPRService />}
           />
-
           {/* BIS Certification English Page */}
           <Route
             path="what-is-bis-certificate-indian-bis"
             element={<BISCertification />}
           />
-
           {/* BIS Certification Spanish Page */}
           <Route
             path="/es/que-es-el-certificado-bis-bis-indio"
             element={<BISCertificationSpanish />}
           />
-
           {/* BIS Certification German Page */}
           <Route
             path="/de/was-ist-das-bis-zertifikat-indisches-bis"
             element={<BISCertificationGerman />}
           />
-
           {/* BIS Certification French Page */}
           <Route
             path="/fr/quest-ce-que-le-certificat-bis-indien"
             element={<BISCertificationFrench />}
           />
-
           {/* BIS Certification Indonesian Page */}
           <Route
             path="/id/apa-itu-sertifikat-bis-bis-india"
             element={<BISCertificationIndonesian />}
           />
-
           {/* BIS Certification Italian Page */}
           <Route
             path="/it/cose-il-certificato-bis-indiano"
@@ -441,37 +421,31 @@ function App() {
             path="/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"
             element={<BISCertificationJapanese />}
           />
-
           {/* BIS Certification Korean Page */}
           <Route
             path="/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"
             element={<BISCertificationKorean />}
           />
-
           {/* BIS Certification Dutch Page */}
           <Route
             path="/nl/wat-is-het-bis-certificaat-indiaas-bis"
             element={<BISCertificationDutch />}
           />
-
           {/* BIS Certification Thai Page */}
           <Route
             path="/th/bis-certificate-khue-a-rai-bis-india"
             element={<BISCertificationThai />}
           />
-
           {/* BIS Certification Vietnamese Page */}
           <Route
             path="/vi/chung-chi-bis-la-gi-bis-an-do"
             element={<BISCertificationVietnamese />}
           />
-
           {/* BIS Certification Arabic Page */}
           <Route
             path="/ar/ma-huwa-shahadat-bis-bis-alhind"
             element={<BISCertificationArabic />}
           />
-
           <Route
             path="a-guide-on-how-to-obtain-lmpc-certificate"
             element={<LMPC />}
@@ -484,7 +458,6 @@ function App() {
             path="what-is-legal-metrology-or-lmpc-certificate"
             element={<LegalMetrology />}
           />
-
           {/* =========================== ISIMark routes (all languages) =========================== */}
           {/* ISIMark English Page */}
           <Route
@@ -541,86 +514,72 @@ function App() {
           {/* ISIMark Thai Page */}
           <Route path="/th/bis-isi-mark-raprong" element={<ISIMarkThai />} />
           {/* ========================= End ISIMark routes (all languages) ======================== */}
-
           <Route
             path="epr-certificate-for-battery-waste-management-bwm"
             element={<BatteryWaste />}
           />
-
           {/* ============================== CRS routes (all languages) ============================== */}
           {/* English */}
           <Route
             path="what-is-crs-bis-or-crs-registration"
             element={<CRSRegistration />}
           />
-
           {/* Japanese */}
           <Route
             path="/ja/crs-bis-toha-nani-ka-crs-toroku"
             element={<CRSRegistrationJapanese />}
           />
-
           {/* Thai */}
           <Route
             path="/th/crs-bis-khue-a-rai-rab-phit-thab-crs"
             element={<CRSRegistrationThai />}
           />
-
           {/* Korean */}
           <Route
             path="/ko/crs-bis-i-mueos-inga-crs-deunglog"
             element={<CRSRegistrationKorean />}
           />
-
           {/* Indonesian */}
           <Route
             path="/id/apa-itu-crs-bis-atau-registrasi-crs"
             element={<CRSRegistrationIndonesian />}
           />
-
           {/* Spanish */}
           <Route
             path="/es/que-es-crs-bis-o-registro-crs"
             element={<CRSRegistrationSpanish />}
           />
-
           {/* French */}
           <Route
             path="/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"
             element={<CRSRegistrationFrench />}
           />
-
           {/* Italian */}
           <Route
             path="/it/cose-il-crs-bis-o-registrazione-crs"
             element={<CRSRegistrationItalian />}
           />
-
           {/* Dutch */}
           <Route
             path="/nl/wat-is-crs-bis-of-crs-registratie"
             element={<CRSRegistrationDutch />}
           />
-
           {/* German */}
           <Route
             path="/de/was-ist-crs-bis-oder-crs-registrierung"
             element={<CRSRegistrationGerman />}
           />
-
           {/* Vietnamese */}
           <Route
             path="/vi/crs-bis-la-gi-hoac-dang-ky-crs"
             element={<CRSRegistrationVietnamese />}
           />
-
           {/* Arabic */}
           <Route
             path="/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
             element={<CRSRegistrationArabic />}
           />
           {/* ============================ End CRS routes (all languages) ============================ */}
-
           <Route
             path="information-about-peso-certification-peso-license-india"
             element={<Peso />}
@@ -642,15 +601,12 @@ function App() {
           <Route path="emi-emc-certification" element={<EMIEMC />} />
           <Route path="cb-certification" element={<CBCertification />} />
           <Route path="lhscable" element={<LHSCable />} />
-
           <Route path="nabl-certification-india" element={<NABL />} />
-
           <Route path="webinar" element={<Webinar />} />
           <Route path="videos-about-bis-certification" element={<Videos />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="404" element={<Error404 />} />
-
           {/* Blog Routes */}
           <Route path="Blogs" element={<LatestBlogs />} />
           <Route
@@ -687,10 +643,8 @@ function App() {
           />
           <Route path="bis-certification-in-korea" element={<KoreaBlog />} />
           <Route path="hangug-ui-bis-injeung" element={<LangKoreaBlog />} />
-
           <Route path="bis-certification-in-japan" element={<JapanBlog />} />
           <Route path="nihon-niokeru-bis-ninsho" element={<LangJapanBlog />} />
-
           <Route path="bis-certification-in-italy" element={<ItalyBlog />} />
           <Route
             path="certificazione-bis-in-italia"
@@ -715,7 +669,6 @@ function App() {
             element={<LangGermanyBlog />}
           />
           <Route path="bis-certification-in-usa" element={<USABlog />} />
-
           <Route
             path="bis-certification-in-vietnam"
             element={<VietnamBlog />}
@@ -732,13 +685,10 @@ function App() {
             path="kan-rap-rong-bis-nai-prathet-thai"
             element={<LangThailandBlog />}
           />
-
           <Route path="bis-certification-in-uae" element={<UAEBlog />} />
           <Route path="shahadat-bis-fi-al-imarat" element={<LangUAEBlog />} />
-
           <Route path="bis-certification-in-qatar" element={<QatarBlog />} />
           <Route path="shahadat-bis-fi-qatar" element={<LangQatarBlog />} />
-
           <Route
             path="bis-certification-in-bahrain"
             element={<BahrainBlog />}
@@ -747,16 +697,12 @@ function App() {
             path="shahadat-bis-fi-al-bahrain"
             element={<LangBahrainBlog />}
           />
-
           <Route path="bis-certification-in-dubai" element={<DubaiBlog />} />
           <Route path="shahadat-bis-fi-dubai" element={<LangDubaiBlog />} />
-
           <Route path="bis-certification-in-iran" element={<IranBlog />} />
           <Route path="shahadat-bis-fi-iran" element={<LangIranBlog />} />
-
           <Route path="bis-certification-in-iraq" element={<IraqBlog />} />
           <Route path="shahadat-bis-fi-al-iraq" element={<LangIraqBlog />} />
-
           {/* SchemeX Products */}
           <Route path="SchemeX-products" element={<SchemeXProducts />} />
           {/* english */}
@@ -774,66 +720,59 @@ function App() {
             path="certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"
             element={<PumpsAndLiquidElevatorsSpanish />}
           />
-
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides"
             element={<PumpsAndLiquidElevatorsFrench />}
           />
-
           {/* Indonesian */}
           <Route
             path="sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan"
             element={<PumpsAndLiquidElevatorsIndonesian />}
           />
-
           {/* Italian */}
           <Route
             path="certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi"
             element={<PumpsAndLiquidElevatorsItalian />}
           />
-
           {/* Japanese */}
           <Route
             path="bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"
             element={<PumpsAndLiquidElevatorsJapanese />}
           />
-
           {/* Korean */}
           <Route
             path="bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
             element={<PumpsAndLiquidElevatorsKorean />}
           />
-
           {/* Dutch */}
           <Route
             path="bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
             element={<PumpsAndLiquidElevatorsDutch />}
           />
-
           {/* Thai */}
           <Route
             path="kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam"
             element={<PumpsAndLiquidElevatorsThai />}
           />
-
           {/* Vietnamese */}
           <Route
             path="chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"
             element={<PumpsAndLiquidElevatorsVietnamese />}
           />
-
           {/* Arabic */}
           <Route
             path="shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
             element={<PumpsAndLiquidElevatorsArabic />}
           />
-
+          
+          {/* Centrifuges Pages */}
           {/* English */}
           <Route
             path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
             element={<Centrifuges />}
           />
+
           {/* french */}
           <Route
             path="certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification"
@@ -859,6 +798,15 @@ function App() {
             path="bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
             element={<CentrifugesKorean />}
           />
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-sentrifus-dan-mesin-penyaring-atau-pemurnian"
+            element={<CentrifugesIndonesian />}
+          />
+
+          {/* Centrifuges Pages End */}
+
+          {/* Compressors Pages */}
           {/* Korean */}
           <Route
             path="bis-seukim-x-injeung-apchukgi"
@@ -874,7 +822,6 @@ function App() {
             path="bis-seukim-x-injeung-keurein"
             element={<CranesKorean />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-compressors"
@@ -900,7 +847,6 @@ function App() {
             path="certificacion-bis-scheme-x-para-compresores"
             element={<CompressorsSpanish />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-construction-machinery"
@@ -911,7 +857,6 @@ function App() {
             path="certification-bis-schema-x-pour-machines-de-construction"
             element={<ConstructionMachineryFrench />}
           />
-
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-baumaschinen"
@@ -927,7 +872,6 @@ function App() {
             path="certificacion-bis-scheme-x-para-maquinaria-de-construccion"
             element={<ConstructionMachinerySpanish />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-cranes"
@@ -938,7 +882,6 @@ function App() {
             path="certification-bis-schema-x-pour-ponts-roulants"
             element={<CranesFrench />}
           />
-
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-krane"
@@ -954,7 +897,6 @@ function App() {
             path="certificacion-bis-scheme-x-para-gruas"
             element={<CranesSpanish />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-diesel-generators"
@@ -985,7 +927,6 @@ function App() {
             path="bis-seukim-x-injeung-dijel-baljeongi"
             element={<DieselGeneratorKorean />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-embroidery-machinery"
@@ -996,7 +937,6 @@ function App() {
             path="certification-bis-schema-x-pour-machines-a-broderie"
             element={<EmbroideryMachinesFrench />}
           />
-
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-stickmaschinen"
@@ -1017,7 +957,6 @@ function App() {
             path="bis-seukim-x-injeung-jasu-gigye"
             element={<EmbroideryMachinesKorean />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
@@ -1028,7 +967,6 @@ function App() {
             path="certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
             element={<GearsGearingsandTransmissionFrench />}
           />
-
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
@@ -1049,7 +987,6 @@ function App() {
             path="bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
             element={<GearsGearingsandTransmissionKorean />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-heat-treatment-equipment"
@@ -1060,7 +997,6 @@ function App() {
             path="certification-bis-schema-x-pour-equipements-de-traitement-thermique"
             element={<HeatTreatmentEquipmentFrench />}
           />
-
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung"
@@ -1081,7 +1017,6 @@ function App() {
             path="bis-seukim-x-injeung-yeolcheori-jangbi"
             element={<HeatTreatmentEquipmentKorean />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-machine-tools"
@@ -1195,7 +1130,6 @@ function App() {
             path="certificacion-bis-scheme-x-para-maquinas-de-tejido"
             element={<WeavingMachinesSpanish />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-metal-cutting-machine-tools"
@@ -1206,7 +1140,6 @@ function App() {
             path="certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
             element={<MetalCuttingMachinesFrench />}
           />
-
           {/* German */}
           <Route
             path="bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
@@ -1217,7 +1150,6 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai"
             element={<MetalCuttingMachinesVietnamese />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-packing-machinery"
@@ -1238,7 +1170,6 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-may-moc-dong-goi"
             element={<PackingMachineryVietnamese />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-power-semiconductor-converters"
@@ -1259,7 +1190,6 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-bo-chuyen-doi-ban-dan-cong-suat"
             element={<PowerSemiconductorsVietnamese />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
@@ -1280,7 +1210,6 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-cong-trinh-cong-cong-va-thiet-bi-co-khi"
             element={<PublicWorksAndMechanicalVietnamese />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-rotary-electrical-machines"
@@ -1301,7 +1230,6 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-may-dien-quay"
             element={<RotaryElectricalMachinesVietnamese />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-rubber-and-plastics-machinery"
@@ -1322,13 +1250,11 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua"
             element={<RubberAndPlasticsMachineryVietnamese />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
             element={<SwitchgearandControlgearEquipment />}
           />
-
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-appareillage-et-commande-jusqu-a-1000-volts"
@@ -1344,13 +1270,11 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-len-den-1000-volts"
             element={<SwitchgearandControlgearEquipmentVietnamese />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
             element={<SwitchgearandControlgearEquipmentabove1000Volts />}
           />
-
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-appareillage-et-commande-au-dessus-1000-volts"
@@ -1368,7 +1292,6 @@ function App() {
               <SwitchgearandControlgearEquipmentabove1000VoltsVietnamese />
             }
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-transformers"
@@ -1389,7 +1312,6 @@ function App() {
             path="chung-nhan-bis-scheme-x-cho-may-bien-ap"
             element={<TransformersVietnamese />}
           />
-
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-weaving-machines-looms"

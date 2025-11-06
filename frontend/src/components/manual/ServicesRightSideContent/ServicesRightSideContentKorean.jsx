@@ -30,7 +30,6 @@ const ServicesRightSideContentKorean = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
-    
     "/hangug-ui-bis-injeung",
     "/ko/crs-bis-i-mueos-inga-crs-deunglog",
     // ISI Mark Korean Page Url
@@ -94,7 +93,7 @@ const BISQCOUpdatesServicesRightSideContentKorean = () => {
     },
     {
       image:
-        "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MCIfpfHsgrogddkI6G12hT4i6LwIPATLHg&s",
       title: "테이블 및 책상 BIS 고시",
       url: "/bis-qco-updates/bis-certificate-for-tables-and-desks",
     },
@@ -174,7 +173,7 @@ const BISQCOUpdatesServicesRightSideContentKorean = () => {
     },
     {
       image:
-        "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
+        "https://media.istockphoto.com/id/1322355858/photo/aluminium-round-long-products-on-black-steel-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=I3k2F2cQSo5AW1qOQ5uxi2ROi-YJQoH47XzApxCP7qY=",
       title: "단조 알루미늄 및 알루미늄 합금 바, 로드 및 섹션 BIS 고시",
       url: "/bis-qco-updates/bis-certificate-for-wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections",
     },
@@ -571,7 +570,7 @@ const ContactFormServicesRightSideContentKorean = () => {
   // Function to get page name based on URL
   const getPageName = () => {
     const path = window.location.pathname;
-    
+
     if (path.includes("/hangug-ui-bis-injeung")) return "Korea Blog (Korean)";
     if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
       return "CRS Registration (Korean)";
@@ -579,7 +578,11 @@ const ContactFormServicesRightSideContentKorean = () => {
       return "ISI Mark - Korean Page";
     if (path.includes("/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"))
       return "BIS common (Korean)";
-    if (path.includes("/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"))
+    if (
+      path.includes(
+        "/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+      )
+    )
       return "Scheme X - Centrifuges (Korean)";
     if (path.includes("/bis-seukim-x-injeung-apchukgi"))
       return "Scheme X - Compressors (Korean)";
@@ -609,16 +612,22 @@ const ContactFormServicesRightSideContentKorean = () => {
       return "Scheme X - Rotary Electrical Machines (Korean)";
     if (path.includes("/bis-seukim-x-injeung-gomu-mich-peullaseutig-gigye"))
       return "Scheme X - Rubber and Plastics Machinery (Korean)";
-    if (path.includes("/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha"))
+    if (
+      path.includes(
+        "/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha"
+      )
+    )
       return "Scheme X - Switchgear and Controlgear Equipment up to 1000 Volts (Korean)";
-    if (path.includes("/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo"))
+    if (
+      path.includes(
+        "/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo"
+      )
+    )
       return "Scheme X - Switchgear and Controlgear Equipment above 1000 Volts (Korean)";
     if (path.includes("/bis-seukim-x-injeung-byeonab-gi"))
       return "Scheme X - Transformers (Korean)";
     if (path.includes("/bis-seukim-x-injeung-jigjo-gi"))
       return "Scheme X - Weaving Machines (Korean)";
-
-    
   };
 
   const [formData, setFormData] = useState({

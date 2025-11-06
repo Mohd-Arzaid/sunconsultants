@@ -77,7 +77,7 @@ const BISQCOUpdatesServicesRightSideContentJapanese = () => {
     },
     {
       image:
-        "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MCIfpfHsgrogddkI6G12hT4i6LwIPATLHg&s",
       title: "テーブルとデスクのBIS通知",
       url: "/bis-qco-updates/bis-certificate-for-tables-and-desks",
     },
@@ -159,7 +159,7 @@ const BISQCOUpdatesServicesRightSideContentJapanese = () => {
     },
     {
       image:
-        "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
+        "https://media.istockphoto.com/id/1322355858/photo/aluminium-round-long-products-on-black-steel-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=I3k2F2cQSo5AW1qOQ5uxi2ROi-YJQoH47XzApxCP7qY=",
       title:
         "鍛造アルミニウムおよびアルミニウム合金バー、ロッド、セクションのBIS通知",
       url: "/bis-qco-updates/bis-certificate-for-wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections",

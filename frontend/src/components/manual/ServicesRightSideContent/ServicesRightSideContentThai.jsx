@@ -34,10 +34,9 @@ const ServicesRightSideContentThai = () => {
     "/kan-rap-rong-bis-nai-prathet-thai",
     "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
     // ISI Mark Thai Page Url
-    "/th/bis-isi-mark-raprong", 
+    "/th/bis-isi-mark-raprong",
     // BIS CERTIFICATION PATH
     "/th/bis-certificate-khue-a-rai-bis-india",
-
   ];
 
   // Check if current path should show these components
@@ -75,7 +74,7 @@ const BISQCOUpdatesServicesRightSideContentThai = () => {
     },
     {
       image:
-        "https://globalomega.com/wp-content/uploads/WhatsApp-Image-2023-11-22-at-16.08.01-1-300x300.jpeg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MCIfpfHsgrogddkI6G12hT4i6LwIPATLHg&s",
       title: "ประกาศ BIS สำหรับโต๊ะและโต๊ะทำงาน",
       url: "/bis-qco-updates/bis-certificate-for-tables-and-desks",
     },
@@ -159,7 +158,7 @@ const BISQCOUpdatesServicesRightSideContentThai = () => {
     },
     {
       image:
-        "https://vincular.in/wp-content/uploads/2024/11/304.-Quality-Control-Order-on-Wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections-For-General-Engineering-Purposes.png",
+        "https://media.istockphoto.com/id/1322355858/photo/aluminium-round-long-products-on-black-steel-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=I3k2F2cQSo5AW1qOQ5uxi2ROi-YJQoH47XzApxCP7qY=",
       title:
         "ประกาศ BIS สำหรับแท่ง ไม้ และส่วนอลูมิเนียมตีขึ้นรูปและโลหะผสมอลูมิเนียม",
       url: "/bis-qco-updates/bis-certificate-for-wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections",
