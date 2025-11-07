@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- 
-    Backlinks Sitemap for Sun Certifications India
-    This sitemap contains URLs from external websites that link back to bis-certifications.com
-    Last Updated: 2025-09-10
-  -->
-  
+
+  <!-- Backlinks Page - Lists all external backlinks -->
+  <url>
+    <loc>https://bis-certifications.com/backlinks</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-17</lastmod>
+  </url>
+
   <!-- 1st backlink - Live Positively Article -->
   <url>
     <loc>https://suncertifications.livepositively.com/what-is-bis-fmcs-a-complete-guide-for-foreign-manufacturers/</loc>
