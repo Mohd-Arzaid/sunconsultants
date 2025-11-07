@@ -1219,12 +1219,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1655,19 +1649,57 @@
   </url>
   <!-- Embroidery Machines - SchemeX Products End -->
 
-  <!-- Gears, Gearing and Transmission Elements - Multilingual -->
+  <!-- Gears, Gearing and Transmission Elements - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Gears, Gearing and Transmission Elements - SchemeX Products End -->
 
   <!-- Heat Treatment Equipment - Multilingual -->
   <url>
@@ -1881,12 +1913,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-seukim-x-injeung-yeolcheori-jangbi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1991,12 +2017,6 @@
 
   <!-- Spanish Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2071,12 +2091,6 @@
 
   <!-- Vietnamese Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-thiet-bi-xu-ly-nhiet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2144,12 +2158,6 @@
   </url>
 
   <!-- French Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-equipements-de-traitement-thermique</loc>
     <changefreq>monthly</changefreq>
@@ -2224,12 +2232,6 @@
   </url>
 
   <!-- German Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung</loc>
     <changefreq>monthly</changefreq>

@@ -49,6 +49,8 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-generator-diesel",
     // Embroidery Machines Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-mesin-bordir",
+    // Gears Gearings and Transmission Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi",
   ];
 
   // Check if current path should show these components
@@ -613,6 +615,14 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // Embroidery Machines Scheme X Product (Indonesian)
     if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-bordir"))
       return "Embroidery Machines Scheme X Product (Indonesian)";
+
+    // Gears Gearings and Transmission Scheme X Product (Indonesian)
+    if (
+      path.includes(
+        "/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
+      )
+    )
+      return "Gears Gearings and Transmission Scheme X Product (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

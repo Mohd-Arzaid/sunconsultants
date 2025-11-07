@@ -41,6 +41,13 @@ import EmbroideryMachinesVietnamese from "../schemeXProducts/EmbroideryMachines/
 import EmbroideryMachinesSpanish from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesSpanish";
 import EmbroideryMachinesKorean from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesKorean";
 import EmbroideryMachinesIndonesian from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesIndonesian";
+import GearsGearingsandTransmission from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmission";
+import GearsGearingsandTransmissionFrench from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionFrench";
+import GearsGearingsandTransmissionGerman from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionGerman";
+import GearsGearingsandTransmissionVietnamese from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionVietnamese";
+import GearsGearingsandTransmissionSpanish from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionSpanish";
+import GearsGearingsandTransmissionKorean from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionKorean";
+import GearsGearingsandTransmissionIndonesian from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionIndonesian";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -318,6 +325,53 @@ export const SchemeXProductsRoutes = () => {
       />
 
       {/* Embroidery Machines Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Gears, Gearing and Transmission Elements Pages Start */}
+      {/* English */}
+      <Route
+        path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+        element={<GearsGearingsandTransmission />}
+      />
+      {/* French */}
+      <Route
+        path="certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
+        element={<GearsGearingsandTransmissionFrench />}
+      />
+      {/* German */}
+      <Route
+        path="bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
+        element={<GearsGearingsandTransmissionGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai"
+        element={<GearsGearingsandTransmissionVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
+        element={<GearsGearingsandTransmissionSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
+        element={<GearsGearingsandTransmissionKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
+        element={<GearsGearingsandTransmissionIndonesian />}
+      />
+
+      {/* Gears, Gearing and Transmission Elements Pages End */}
 
       {/* ==================================================================== */}
       {/* ==================================================================== */}

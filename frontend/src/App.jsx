@@ -190,6 +190,7 @@ import IranBlog from "./blogs/IranBlog/IranBlog";
 import LangIranBlog from "./blogs/IranBlog/LangIranBlog";
 import IraqBlog from "./blogs/IraqBlog/IraqBlog";
 import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
+import GearsGearingsandTransmissionIndonesian from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionIndonesian";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -483,6 +484,12 @@ function App() {
             path="bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
             element={<GearsGearingsandTransmissionKorean />}
           />
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
+            element={<GearsGearingsandTransmissionIndonesian />}
+          />
+
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-heat-treatment-equipment"
