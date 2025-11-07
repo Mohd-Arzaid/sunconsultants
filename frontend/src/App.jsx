@@ -63,7 +63,6 @@ import StorageUnitsBlog from "./blogs/StorageUnitsBlog";
 import SchemeXProducts from "./schemeXProducts/SchemeXProducts";
 import PumpsAndLiquidElevators from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevators";
 import PackingMachinery from "./schemeXProducts/PackingMachinery/PackingMachinery";
-import HeatTreatmentEquipment from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipment";
 import PumpsAndLiquidElevatorsGerman from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsGerman";
 import PumpsAndLiquidElevatorsSpanish from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsSpanish";
 import PumpsAndLiquidElevatorsFrench from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsFrench";
@@ -77,20 +76,15 @@ import PumpsAndLiquidElevatorsVietnamese from "./schemeXProducts/PumpsAndLiquidE
 import PumpsAndLiquidElevatorsArabic from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsArabic";
 import WeavingMachines from "./schemeXProducts/WeavingMachines/WeavingMachines";
 import MetalCuttingMachines from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachines";
-import GearsGearingsandTransmission from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmission";
 import SwitchgearandControlgearEquipment from "./schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipment";
 import RotaryElectricalMachines from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachines";
 import PublicWorksAndMechanical from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanical";
 import PowerSemiconductors from "./schemeXProducts/PowerSemiconductors/PowerSemiconductors";
 import Transformers from "./schemeXProducts/Transformers/Transformers";
-import MachineTools from "./schemeXProducts/MachineTools/MachineTools";
 import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000Volts";
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinery";
 
 // French imports
-import GearsGearingsandTransmissionFrench from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionFrench";
-import HeatTreatmentEquipmentFrench from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentFrench";
-import MachineToolsFrench from "./schemeXProducts/MachineTools/MachineToolsFrench";
 import MetalCuttingMachinesFrench from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesFrench";
 import PackingMachineryFrench from "./schemeXProducts/PackingMachinery/PackingMachineryFrench";
 import PowerSemiconductorsFrench from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsFrench";
@@ -103,9 +97,6 @@ import TransformersFrench from "./schemeXProducts/Transformers/TransformersFrenc
 import WeavingMachinesFrench from "./schemeXProducts/WeavingMachines/WeavingMachinesFrench";
 
 // German imports
-import GearsGearingsandTransmissionGerman from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionGerman";
-import HeatTreatmentEquipmentGerman from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentGerman";
-import MachineToolsGerman from "./schemeXProducts/MachineTools/MachineToolsGerman";
 import MetalCuttingMachinesGerman from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesGerman";
 import PackingMachineryGerman from "./schemeXProducts/PackingMachinery/PackingMachineryGerman";
 import PowerSemiconductorsGerman from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsGerman";
@@ -140,15 +131,6 @@ import PublicWorksAndMechanicalSpanish from "./schemeXProducts/PublicWorksAndMec
 import PowerSemiconductorsSpanish from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsSpanish";
 import PackingMachinerySpanish from "./schemeXProducts/PackingMachinery/PackingMachinerySpanish";
 import MetalCuttingMachinesSpanish from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesSpanish";
-import MachineToolsSpanish from "./schemeXProducts/MachineTools/MachineToolsSpanish";
-import MachineToolsVietnamese from "./schemeXProducts/MachineTools/MachineToolsVietnamese";
-import HeatTreatmentEquipmentSpanish from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentSpanish";
-import HeatTreatmentEquipmentVietnamese from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentVietnamese";
-import GearsGearingsandTransmissionSpanish from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionSpanish";
-import GearsGearingsandTransmissionVietnamese from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionVietnamese";
-import GearsGearingsandTransmissionKorean from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionKorean";
-import HeatTreatmentEquipmentKorean from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentKorean";
-import MachineToolsKorean from "./schemeXProducts/MachineTools/MachineToolsKorean";
 import MetalCuttingMachinesKorean from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesKorean";
 import PackingMachineryKorean from "./schemeXProducts/PackingMachinery/PackingMachineryKorean";
 import PowerSemiconductorsKorean from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsKorean";
@@ -190,7 +172,6 @@ import IranBlog from "./blogs/IranBlog/IranBlog";
 import LangIranBlog from "./blogs/IranBlog/LangIranBlog";
 import IraqBlog from "./blogs/IraqBlog/IraqBlog";
 import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
-import GearsGearingsandTransmissionIndonesian from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionIndonesian";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -454,102 +435,6 @@ function App() {
           {/* SchemeX Products Routes */}
           {SchemeXProductsRoutes()}
 
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
-            element={<GearsGearingsandTransmission />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
-            element={<GearsGearingsandTransmissionFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
-            element={<GearsGearingsandTransmissionGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai"
-            element={<GearsGearingsandTransmissionVietnamese />}
-          />
-          {/* Spanish */}
-          <Route
-            path="certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
-            element={<GearsGearingsandTransmissionSpanish />}
-          />
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
-            element={<GearsGearingsandTransmissionKorean />}
-          />
-          {/* Indonesian */}
-          <Route
-            path="sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
-            element={<GearsGearingsandTransmissionIndonesian />}
-          />
-
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-heat-treatment-equipment"
-            element={<HeatTreatmentEquipment />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-equipements-de-traitement-thermique"
-            element={<HeatTreatmentEquipmentFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung"
-            element={<HeatTreatmentEquipmentGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-thiet-bi-xu-ly-nhiet"
-            element={<HeatTreatmentEquipmentVietnamese />}
-          />
-          {/* Spanish */}
-          <Route
-            path="certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
-            element={<HeatTreatmentEquipmentSpanish />}
-          />
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-yeolcheori-jangbi"
-            element={<HeatTreatmentEquipmentKorean />}
-          />
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-machine-tools"
-            element={<MachineTools />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-machines-a-outils"
-            element={<MachineToolsFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-werkzeugmaschinen"
-            element={<MachineToolsGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-may-cong-cu"
-            element={<MachineToolsVietnamese />}
-          />
-          {/* Spanish */}
-          <Route
-            path="certificacion-bis-scheme-x-para-herramientas-de-maquina"
-            element={<MachineToolsSpanish />}
-          />
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-gongjag-gigye"
-            element={<MachineToolsKorean />}
-          />
           <Route
             path="certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
             element={<MetalCuttingMachinesSpanish />}

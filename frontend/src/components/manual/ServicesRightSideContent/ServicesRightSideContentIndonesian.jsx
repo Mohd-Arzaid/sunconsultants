@@ -51,6 +51,10 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-mesin-bordir",
     // Gears Gearings and Transmission Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi",
+    // Heat Treatment Equipment Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-peralatan-perlakuan-panas",
+    // Machine Tools Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-perkakas-mesin",
   ];
 
   // Check if current path should show these components
@@ -623,6 +627,16 @@ const ContactFormServicesRightSideContentIndonesian = () => {
       )
     )
       return "Gears Gearings and Transmission Scheme X Product (Indonesian)";
+
+    // Heat Treatment Equipment Scheme X Product (Indonesian)
+    if (
+      path.includes("/sertifikasi-bis-skema-x-untuk-peralatan-perlakuan-panas")
+    )
+      return "Heat Treatment Equipment Scheme X Product (Indonesian)";
+
+    // Machine Tools Scheme X Product (Indonesian)
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-perkakas-mesin"))
+      return "Machine Tools Scheme X Product (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

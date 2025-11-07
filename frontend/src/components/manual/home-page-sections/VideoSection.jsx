@@ -17,7 +17,6 @@ const VideoSection = ({ onVideoPopupChange }) => {
   const addAnimation = useCallback(() => {
     // React-friendly duplication approach
     const duplicated = [...videosData, ...videosData, ...videosData];
-    console.log("Total videos after duplication:", duplicated.length);
     setDuplicatedVideos(duplicated);
 
     if (containerRef.current) {
@@ -51,7 +50,7 @@ const VideoSection = ({ onVideoPopupChange }) => {
     setSelectedVideo(video);
     setVideoLoading(true);
     setIsPopupOpen(true);
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
 
     // Hide loading after 2 seconds (enough time for video to load)
     setTimeout(() => {
@@ -64,21 +63,21 @@ const VideoSection = ({ onVideoPopupChange }) => {
     setIsPopupOpen(false);
     setSelectedVideo(null);
     setVideoLoading(false);
-    document.body.style.overflow = 'unset'; // Restore scrolling
+    document.body.style.overflow = "unset"; // Restore scrolling
   };
 
   // Handle escape key to close popup
   useEffect(() => {
     const handleEscapeKey = (event) => {
-      if (event.key === 'Escape' && isPopupOpen) {
+      if (event.key === "Escape" && isPopupOpen) {
         handleClosePopup();
       }
     };
 
     if (isPopupOpen) {
-      document.addEventListener('keydown', handleEscapeKey);
+      document.addEventListener("keydown", handleEscapeKey);
       return () => {
-        document.removeEventListener('keydown', handleEscapeKey);
+        document.removeEventListener("keydown", handleEscapeKey);
       };
     }
   }, [isPopupOpen]);
@@ -112,8 +111,9 @@ const VideoSection = ({ onVideoPopupChange }) => {
       >
         <div
           ref={scrollerRef}
-          className={`flex w-max gap-6 py-4 hover:[animation-play-state:paused] ${start ? "animate-scroll" : ""
-            }`}
+          className={`flex w-max gap-6 py-4 hover:[animation-play-state:paused] ${
+            start ? "animate-scroll" : ""
+          }`}
         >
           {duplicatedVideos.map((video, index) => (
             <div
@@ -177,7 +177,9 @@ const VideoSection = ({ onVideoPopupChange }) => {
                 <iframe
                   src={`https://www.youtube.com/embed/${selectedVideo.embedId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
                   title={selectedVideo.title}
-                  className={`w-full h-full border-0 rounded-2xl ${videoLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-500`}
+                  className={`w-full h-full border-0 rounded-2xl ${
+                    videoLoading ? "opacity-0" : "opacity-100"
+                  } transition-opacity duration-500`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 />

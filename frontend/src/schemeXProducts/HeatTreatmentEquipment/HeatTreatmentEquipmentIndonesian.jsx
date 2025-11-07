@@ -23,12 +23,12 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-const CentrifugesIndonesian = () => {
+const HeatTreatmentEquipmentIndonesian = () => {
   return (
     <div className="relative w-full">
-      <CentrifugesMetaTags />
-      <CentrifugesBreadcrumb />
-      <CentrifugesMainContent />
+      <HeatTreatmentEquipmentMetaTags />
+      <HeatTreatmentEquipmentBreadcrumb />
+      <HeatTreatmentEquipmentMainContent />
       <Services />
       <VideoSection />
       <FooterIndonesian />
@@ -36,23 +36,22 @@ const CentrifugesIndonesian = () => {
   );
 };
 
-export default CentrifugesIndonesian;
+export default HeatTreatmentEquipmentIndonesian;
 
-const CentrifugesMetaTags = () => {
-  const title =
-    "Sertifikasi BIS Scheme X untuk Sentrifugal dan Mesin Filtrasi atau Pemurnian";
+const HeatTreatmentEquipmentMetaTags = () => {
+  const title = "Sertifikasi BIS Scheme X untuk Peralatan Perlakuan Panas";
   const description =
-    "Sertifikasi BIS Scheme X untuk sentrifugal, mesin filtrasi atau pemurnian untuk cairan dan gas, dan/atau perakitannya, sub-perakitan, dan komponennya, merupakan tonggak regulasi penting bagi sektor mesin industri";
+    "Sertifikasi BIS Scheme X mewajibkan bahwa semua jenis mesin untuk perlakuan material melalui proses yang melibatkan perubahan suhu dan/atau perakitannya, sub-perakitan, dan komponennya harus disertifikasi BIS";
   const keywords =
-    "Sertifikasi BIS untuk Sentrifugal, Sertifikasi BIS Scheme X untuk Sentrifugal, Sertifikasi Scheme X untuk Sentrifugal, BIS untuk Sentrifugal, OTR untuk Sentrifugal";
+    "Sertifikasi BIS untuk Peralatan Perlakuan Panas, Sertifikasi BIS Scheme X untuk Peralatan Pemrosesan Termal, Sertifikasi Scheme X untuk Peralatan Perlakuan Panas, BIS untuk Peralatan Pemrosesan Termal, OTR untuk Peralatan Perlakuan Panas";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Sentrifugal di India | Panduan Lengkap";
+    "Sertifikasi BIS Scheme X untuk Peralatan Perlakuan Panas di India | Panduan Lengkap";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk sentrifugal di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk peralatan perlakuan panas di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
 
   return (
     <Helmet>
@@ -73,7 +72,7 @@ const CentrifugesMetaTags = () => {
   );
 };
 
-const CentrifugesBreadcrumb = () => {
+const HeatTreatmentEquipmentBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -101,7 +100,7 @@ const CentrifugesBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS untuk Sentrifugal
+                    Sertifikasi BIS untuk Peralatan Perlakuan Panas
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -113,12 +112,12 @@ const CentrifugesBreadcrumb = () => {
   );
 };
 
-const CentrifugesMainContent = () => {
+const HeatTreatmentEquipmentMainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
         {/* Left Side Content */}
-        <CentrifugesMainContentLeft />
+        <HeatTreatmentEquipmentMainContentLeft />
 
         {/* Right Side Content */}
         <ServicesRightSideContentIndonesian />
@@ -127,123 +126,122 @@ const CentrifugesMainContent = () => {
   );
 };
 
-const CentrifugesMainContentLeft = () => {
+const HeatTreatmentEquipmentMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS untuk Sentrifugal
+          Sertifikasi BIS untuk Peralatan Perlakuan Panas
         </h1>
 
         {/* BIS Scheme X Image */}
         <div className="mb-6">
           <img
-            src="/schemXproductImages/BIS-license-for-centrifuges-filtering-or-purifying-machinery.png"
-            title="Lisensi BIS Scheme X untuk Sentrifugal"
-            alt="Sertifikasi BIS Scheme X Untuk Sentrifugal Dan Mesin Filtrasi Atau Pemurnian"
+            src="/schemXproductImages/BIS-Scheme-X-license-for-Heat-treatment-of-material.png"
+            title="Lisensi BIS Scheme X untuk perlakuan material"
+            alt="Sertifikasi BIS Scheme X Untuk Peralatan Perlakuan Panas"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sentrifugal adalah mesin vital yang banyak digunakan di industri
-          laboratorium, farmasi, pengolahan makanan, bioteknologi, petrokimia,
-          dan pertambangan. Mesin-mesin ini bekerja dengan cara berputar, dan
-          rotasi yang cepat memisahkan campuran, pemisahan ini sangat penting
-          untuk pengolahan yang tepat, aman dan cepat.
+          Peralatan perlakuan panas adalah salah satu aplikasi paling kritis di
+          industri seperti otomotif, dirgantara, pengecoran, penempaan, dan
+          rekayasa berat. Ini adalah perangkat yang mengubah atribut fisik dan
+          mekanik logam melalui operasi seperti anil, pendinginan, pengerasan,
+          tempering, dll.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Dengan aplikasi yang lebih luas di berbagai industri, sangat penting
-          untuk meningkatkan keandalan dan keamanan sentrifugal. Untuk
-          mempertahankan parameter kontrol kualitas untuk sentrifugal, BIS telah
-          memperkenalkan skema Sertifikasi BIS yang dikenal sebagai Sertifikasi
-          Scheme -X untuk Sentrifugal.
+          Melihat signifikansinya, Bureau of Indian Standards (BIS) telah
+          menyatakan Sertifikasi BIS untuk Peralatan Perlakuan Panas wajib di
+          bawah Sertifikasi Scheme X. Hal ini memastikan produsen India maupun
+          global mematuhi Standar India yang ketat sebelum memasarkan peralatan
+          di negara tersebut.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Dalam postingan ini, kami akan membahas Apa itu Sertifikasi BIS Scheme
-          X untuk Sentrifugal, Apa itu OTR untuk Sentrifugal, dan Cara
-          mendapatkan Lisensi BIS untuk Sentrifugal dengan tanda BIS resmi untuk
-          Sentrifugal.
+          Dalam postingan ini, kami akan menjelaskan signifikansi Sertifikasi
+          BIS Scheme X untuk Peralatan Perlakuan Panas, OTR untuk Peralatan
+          Perlakuan Panas, dan proses untuk mendapatkan Lisensi BIS untuk
+          Peralatan Perlakuan Panas dengan Tanda BIS untuk Peralatan Perlakuan
+          Panas.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Significance Section */}
+        {/* Why BIS for Heat Treatment Equipment is Mandatory Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Signifikansi BIS untuk Sentrifugal
+          Signifikansi BIS untuk Peralatan Perlakuan Panas
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sentrifugal digunakan dalam:
+          Tungku perlakuan panas umumnya digunakan di:
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Sektor Farmasi dan Bio-teknologi</li>
-          <li>Pengolahan makanan dan pembuatan minuman</li>
-          <li>Kilang minyak dan industri petrokimia</li>
-          <li>Laboratorium medis</li>
-          <li>Pengolahan lingkungan dan air</li>
+          <li>Industri logam dan metalurgi</li>
+          <li>Produksi otomotif dan dirgantara</li>
+          <li>Pembuatan alat dan cetakan</li>
+          <li>Industri energi dan mesin berat lainnya</li>
+          <li>Pertahanan dan rekayasa presisi</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tidak adanya BIS untuk Sentrifugal dapat menyebabkan penggunaan
-          Sentrifugal berkualitas rendah atau tidak bersertifikat yang dapat
-          mengakibatkan:
+          Tidak adanya BIS untuk Peralatan Perlakuan Panas dapat menyebabkan
+          mesin berkualitas rendah yang dapat menyebabkan:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Risiko kerusakan mekanis</li>
-          <li>Kemungkinan kontaminasi di sektor yang rapuh</li>
-          <li>Kehilangan waktu dan kehilangan pendapatan</li>
-          <li>Efisiensi rendah dan peningkatan penggunaan energi.</li>
+          <li>Pemanasan berlebihan atau pemrosesan yang tidak tepat</li>
+          <li>Kegagalan mekanisme dan struktur produk akhir</li>
+          <li>Peningkatan penggunaan energi dan kurangnya efisiensi</li>
+          <li>Bahaya keselamatan bagi operator</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Sentrifugal bersertifikat BIS dengan tanda BIS untuk Sentrifugal
-          menyiratkan keamanan, kualitas, dan kepercayaan.
+          Sertifikasi BIS tidak hanya menjamin bahwa peralatan berfungsi dengan
+          baik dan aman sesuai dengan tuntutan kinerja industri tetapi juga
+          memenuhi kriteria lingkungan.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* What is BIS Scheme X Certificate Section */}
+        {/* What is Scheme X Certification Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikat BIS Scheme X untuk Sentrifugal?
+          Apa itu Sertifikat BIS Scheme X untuk Peralatan Perlakuan Panas?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Sertifikasi BIS Scheme X untuk Sentrifugal adalah skema sertifikasi
-          wajib di bawah Peraturan Penilaian Kesesuaian BIS, 2018.
+          Scheme X - Peralatan Perlakuan Panas, sejalan dengan Kementerian Baja,
+          Pemerintah India, yang merupakan skema sertifikasi wajib di bawah
+          Peraturan Penilaian Kesesuaian BIS India, 2018.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Sertifikasi Scheme X untuk Sentrifugal: Fitur utama:
+          Sertifikasi Scheme X untuk Peralatan Perlakuan Panas: Fitur utama:
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Berlaku untuk produsen India maupun asing</li>
+          <li>Diwajibkan untuk produsen India maupun asing</li>
           <li>
-            Berlaku untuk semua jenis sentrifugal yang ditemukan di laboratorium
-            industri dan R&D
+            Dapat digunakan pada sebagian besar jenis peralatan perlakuan panas
+            dan pembakaran
           </li>
           <li>
-            Jumlah pengujian produk, audit, dan validasi kepatuhan yang memadai
-            adalah suatu keharusan
+            Termasuk pengujian produk, pemeriksaan lantai pabrik dan audit
+            kepatuhan berkelanjutan.
           </li>
-          <li>
-            Memungkinkan produsen untuk mengajukan registrasi BIS berdasarkan
-            sertifikasi untuk Sentrifugal yang disebutkan di atas.
-          </li>
+          <li>Produsen diizinkan menggunakan Tanda Standar BIS.</li>
         </ul>
 
         {/* Separator Line */}
@@ -251,20 +249,21 @@ const CentrifugesMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR untuk Sentrifugal
+          BIS OTR untuk Peralatan Perlakuan Panas
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          OTR untuk Sentrifugal diumumkan oleh Kementerian Industri Berat pada
-          tahun 2024, yang memerlukan sertifikasi Scheme X.
+          Kementerian Industri Berat pada tahun 2024 mengeluarkan Peraturan
+          Teknis Omnibus (OTR) untuk Peralatan Perlakuan Panas, di mana
+          kepatuhan terhadap Scheme X diwajibkan.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Semua produsen dan importir diwajibkan untuk mendapatkan
-          Lisensi BIS Sentrifugal yang valid di bawah Scheme X pada tanggal 1
-          September 2026. "Ini akan menghentikan sentrifugal tidak bersertifikat
-          dari dijual, diimpor atau berpartisipasi dalam tender di seluruh
-          negeri," kata pejabat pemerintah.
+          Batas Waktu: Semua produsen dan importir perlu memperoleh Lisensi BIS
+          yang valid untuk Peralatan Perlakuan Panas pada tanggal 1 September
+          2026. Setelah tanggal ini, Peralatan Perlakuan Panas yang Tidak
+          Bersertifikat tidak akan memenuhi syarat untuk dijual, diimpor atau
+          mengajukan penawaran dalam tender publik.
         </p>
 
         {/* Separator Line */}
@@ -272,61 +271,61 @@ const CentrifugesMainContentLeft = () => {
 
         {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Keuntungan Sertifikasi BIS untuk Sentrifugal
+          Keuntungan Sertifikasi BIS untuk Peralatan Perlakuan Panas
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Keselamatan & Kepatuhan: Menghindari kecelakaan akibat kerusakan
-            mekanis pada kecepatan tinggi.
+            Keselamatan Operasional: Melindungi dari pemanasan berlebihan,
+            perlakuan tidak merata dan kerusakan peralatan.
           </li>
           <li>
-            Kualitas & Keandalan: Sentrifugal Bersertifikat berkinerja dengan
-            akurasi dan presisi yang tinggi.
+            Keandalan Produk: Memastikan item yang dirawat memenuhi spesifikasi
+            kekerasan, daya tahan, dan ketangguhan
           </li>
           <li>
-            Akses Pasar: Lisensi Sentrifugal BIS biasanya diperlukan untuk
-            pengadaan oleh badan publik.
+            Efisiensi Energi: Peralatan bersertifikat diuji untuk penggunaan
+            energi yang optimal, menurunkan biaya operasional.
           </li>
           <li>
-            Kepercayaan Konsumen: Tanda BIS untuk Sentrifugal memberikan
-            informasi kepada pelanggan tentang kualitas produk dan daya tahan.
+            Akses Pasar: Tanda BIS untuk Peralatan Perlakuan Panas seringkali
+            wajib untuk pembelian publik dan tender pemerintah.
           </li>
           <li>
-            Keunggulan Kompetitif: Merek/produsen bersertifikat BIS lebih
-            disukai di pasar terkontrol dan untuk tender pemerintah.
+            Keunggulan Global: Merek global dapat memperoleh akses mudah ke
+            pasar India dengan memperoleh Lisensi BIS untuk Peralatan Perlakuan
+            Panas.
           </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Types of Centrifuge Section */}
+        {/* Types of Equipment Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Sentrifugal di Bawah Skema Sertifikasi BIS
+          Jenis Peralatan Perlakuan Panas di Bawah Skema Sertifikasi BIS
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Akreditasi Scheme X untuk Sentrifugal mencakup berbagai jenis seperti:
+          Sertifikasi BIS Scheme X pada Peralatan Perlakuan Panas mencakup
+          sejumlah besar mesin seperti:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Sentrifugal Laboratorium</li>
-          <li>Pemisah Industri</li>
-          <li>Sentrifugal, Berpendingin</li>
-          <li>Ultracentrifuges</li>
-          <li>Sentrifugal Gas</li>
-          <li>Sentrifugal Keranjang</li>
-          <li>Sentrifugal Dekanter</li>
-          <li>Sentrifugal Kontinyu dan Batch</li>
+          <li>Tungku Anil</li>
+          <li>Tungku Pendinginan</li>
+          <li>Tungku Pengerasan dan Temper</li>
+          <li>Tungku Rotary untuk Perlakuan Panas Kontinyu</li>
+          <li>Tungku Karburisasi dan Nitridasi.</li>
+          <li>Peralatan Perlakuan Panas Induksi & Listrik</li>
+          <li>Perangkat Perlakuan Panas Berbahan Bakar Gas dan Minyak</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Semua jenis ini harus memenuhi Standar India yang berlaku (kode IS)
-          seperti IS 16819:2018/ISO 12100:2010 (Keselamatan Mesin Prinsip Umum
-          untuk Desain - Penilaian Risiko dan Pengurangan Risiko). Semua
-          varietas harus memenuhi Standar India (kode IS) yang sesuai untuk
-          kualitas, keselamatan, dan efisiensi energi.
+          Setiap jenis perlu mematuhi Standar India yang relevan (kode IS)
+          seperti IS 16819:2018/ISO 12100:2010. Karakteristik kinerja, grade
+          material dan fitur konservasi energi harus sesuai dengan Standar India
+          yang relevan (kode IS) untuk setiap jenis peralatan.
         </p>
 
         {/* Separator Line */}
@@ -334,34 +333,33 @@ const CentrifugesMainContentLeft = () => {
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Proses Sertifikasi BIS untuk Sentrifugal
+          Proses Sertifikasi BIS untuk Peralatan Perlakuan Panas
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
             Identifikasi Standar yang Relevan: Merujuk kode IS yang relevan
-            untuk jenis Sentrifugal Anda.
+            untuk jenis Peralatan Perlakuan Panas Anda.
           </li>
           <li>
-            Pengujian Produk: Melakukan pengujian kinerja dan keselamatan yang
-            diperlukan sesuai standar industri, di laboratorium yang
-            terakreditasi BIS.
+            Pengujian di Laboratorium yang Diakui BIS: Melakukan pengujian
+            kinerja, keselamatan, dan efisiensi.
           </li>
           <li>
-            Inspeksi Pabrik: Memeriksa sistem jaminan kualitas di lokasi
-            produksi oleh pejabat BIS.
+            Inspeksi Pabrik: BIS memeriksa sistem kontrol kualitas dan fasilitas
+            produksi.
           </li>
           <li>
-            Aplikasi & Dokumentasi: Menyediakan persyaratan teknis, buku pedoman
-            kualitas dan laporan uji.
+            Aplikasi & Dokumentasi: Menyediakan hasil, pengujian yang dilakukan,
+            dan spesifikasi teknis serta manual kualitas.
           </li>
           <li>
-            Penerbitan Lisensi BIS untuk Sentrifugal: Anda dapat menempatkan
-            tanda BIS setelah disetujui.
+            Penerbitan Lisensi BIS untuk Peralatan Perlakuan Panas: Persetujuan
+            memungkinkan penggunaan Tanda BIS untuk Peralatan Perlakuan Panas.
           </li>
           <li>
-            Kepatuhan Berkelanjutan: BIS memeriksa dan melakukan audit tidak
-            terjadwal untuk kepatuhan terhadap standar.
+            Kepatuhan Berkelanjutan: Audit dan inspeksi secara teratur dilakukan
+            untuk mempertahankan standar kualitas.
           </li>
         </ul>
 
@@ -370,21 +368,15 @@ const CentrifugesMainContentLeft = () => {
         </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Produsen yang tidak memiliki semua model sentrifugal yang
-          disertifikasi dengan Sertifikasi BIS untuk Sentrifugal pada tanggal 1
-          September 2026 menghadapi risiko:
+          Jika OTR Peralatan Perlakuan Panas tidak dipenuhi pada tanggal 1 Sep
+          2026:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            Penjualan/impor dilarang untuk sentrifugal tidak bersertifikat
-          </li>
-          <li>Penyitaan peralatan yang tidak patuh dan sanksi moneter</li>
-          <li>
-            Ini akan membuat Anda tidak memenuhi syarat untuk tender pemerintah
-            atau PSU
-          </li>
-          <li>Ekuitas Merek secara permanen terpengaruh di India</li>
+          <li>Larangan penjualan/impor peralatan yang tidak bersertifikat</li>
+          <li>Denda dan penyitaan produk</li>
+          <li>Tidak memenuhi syarat untuk tender pemerintah dan PSU</li>
+          <li>Kehilangan ekuitas merek dalam jangka panjang di pasar India</li>
         </ul>
 
         {/* Separator Line */}
@@ -396,17 +388,19 @@ const CentrifugesMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Implementasi Sertifikasi BIS Scheme X untuk Sentrifugal dalam OTR 2024
-          adalah langkah untuk membawa keselamatan, efisiensi dan kualitas ke
-          dalam sektor industri dan laboratorium di India.
+          Penerapan wajib Sertifikasi Scheme X untuk Peralatan Perlakuan Panas
+          di bawah OTR 2024 adalah tonggak penting dalam meningkatkan standar
+          industri India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Produsen, Importir dan Eksportir memanfaatkan proses ini dengan
-          mengamankan Sertifikasi BIS untuk Sentrifugal, dengan memperoleh
-          Lisensi BIS untuk Sentrifugal, dan menempatkan tanda BIS untuk
-          Sentrifugal pada produk mereka, menunjukkan bahwa produk mereka
-          memenuhi sistem regulasi pasar lokal dan persyaratan pelanggan.
+          Bagi produsen, importir, dan eksportir Peralatan Perlakuan Panas,
+          proses untuk mendapatkan Sertifikasi BIS untuk Peralatan Perlakuan
+          Panas, untuk mendapatkan Lisensi BIS Peralatan Perlakuan Panas dan
+          menggunakan Tanda Standar BIS Peralatan Perlakuan Panas bukan hanya
+          tentang kepatuhan, ini tentang membangun produk yang aman dan produk
+          yang dapat diandalkan yang kompetitif di pasar dalam mendapatkan pasar
+          yang diatur.
         </p>
 
         <ServiceAuthorIndonesian />

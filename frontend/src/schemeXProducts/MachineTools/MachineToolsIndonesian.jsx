@@ -23,12 +23,12 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-const CentrifugesIndonesian = () => {
+const MachineToolsIndonesian = () => {
   return (
     <div className="relative w-full">
-      <CentrifugesMetaTags />
-      <CentrifugesBreadcrumb />
-      <CentrifugesMainContent />
+      <MachineToolsMetaTags />
+      <MachineToolsBreadcrumb />
+      <MachineToolsMainContent />
       <Services />
       <VideoSection />
       <FooterIndonesian />
@@ -36,23 +36,22 @@ const CentrifugesIndonesian = () => {
   );
 };
 
-export default CentrifugesIndonesian;
+export default MachineToolsIndonesian;
 
-const CentrifugesMetaTags = () => {
-  const title =
-    "Sertifikasi BIS Scheme X untuk Sentrifugal dan Mesin Filtrasi atau Pemurnian";
+const MachineToolsMetaTags = () => {
+  const title = "Sertifikasi BIS Scheme X untuk Alat Mesin";
   const description =
-    "Sertifikasi BIS Scheme X untuk sentrifugal, mesin filtrasi atau pemurnian untuk cairan dan gas, dan/atau perakitannya, sub-perakitan, dan komponennya, merupakan tonggak regulasi penting bagi sektor mesin industri";
+    "Sertifikasi BIS Scheme X wajib untuk alat mesin termasuk mesin bubut, mesin frais, mesin bor, mesin gerinda, sistem CNC dan alat untuk mengerjakan batu, keramik, beton dan bahan serupa";
   const keywords =
-    "Sertifikasi BIS untuk Sentrifugal, Sertifikasi BIS Scheme X untuk Sentrifugal, Sertifikasi Scheme X untuk Sentrifugal, BIS untuk Sentrifugal, OTR untuk Sentrifugal";
+    "Sertifikasi BIS untuk Alat Mesin, Sertifikasi BIS Scheme X untuk Alat Mesin, Sertifikasi Scheme X untuk Alat Mesin, BIS untuk Alat Mesin, OTR untuk Alat Mesin";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Sentrifugal di India | Panduan Lengkap";
+    "Sertifikasi BIS Scheme X untuk Alat Mesin di India | Panduan Lengkap";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk sentrifugal di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk Alat Mesin di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
 
   return (
     <Helmet>
@@ -73,7 +72,7 @@ const CentrifugesMetaTags = () => {
   );
 };
 
-const CentrifugesBreadcrumb = () => {
+const MachineToolsBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -101,7 +100,7 @@ const CentrifugesBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS untuk Sentrifugal
+                    Sertifikasi BIS untuk Alat Mesin
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -113,12 +112,12 @@ const CentrifugesBreadcrumb = () => {
   );
 };
 
-const CentrifugesMainContent = () => {
+const MachineToolsMainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
         {/* Left Side Content */}
-        <CentrifugesMainContentLeft />
+        <MachineToolsMainContentLeft />
 
         {/* Right Side Content */}
         <ServicesRightSideContentIndonesian />
@@ -127,122 +126,128 @@ const CentrifugesMainContent = () => {
   );
 };
 
-const CentrifugesMainContentLeft = () => {
+const MachineToolsMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS untuk Sentrifugal
+          Sertifikasi BIS untuk Alat Mesin
         </h1>
 
-        {/* BIS Scheme X Image */}
+        {/* BIS Scheme X License Image */}
         <div className="mb-6">
+          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+            Lisensi BIS Scheme X untuk Alat Mesin
+          </h3>
           <img
-            src="/schemXproductImages/BIS-license-for-centrifuges-filtering-or-purifying-machinery.png"
-            title="Lisensi BIS Scheme X untuk Sentrifugal"
-            alt="Sertifikasi BIS Scheme X Untuk Sentrifugal Dan Mesin Filtrasi Atau Pemurnian"
+            src="/schemXproductImages/BIS-Scheme-X-License-for-Machine-Tools.png"
+            alt="Sertifikasi BIS Scheme X Untuk Alat Mesin"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sentrifugal adalah mesin vital yang banyak digunakan di industri
-          laboratorium, farmasi, pengolahan makanan, bioteknologi, petrokimia,
-          dan pertambangan. Mesin-mesin ini bekerja dengan cara berputar, dan
-          rotasi yang cepat memisahkan campuran, pemisahan ini sangat penting
-          untuk pengolahan yang tepat, aman dan cepat.
+          Mempertimbangkan kualitas dan keselamatan sebagai hal yang kritis, BIS
+          (Bureau of Indian Standards) telah memimpin keselamatan dan standar
+          berbagai industri melalui Sertifikasi Scheme X. Sertifikat ini sangat
+          penting bagi produsen alat mesin yang dirancang untuk beroperasi pada
+          bahan seperti batu, keramik, beton, semen asbes dan kaca mineral
+          serupa serta alat mesin lainnya. Kepatuhan sertifikasi tidak hanya
+          memenuhi persyaratan keselamatan nasional, tetapi secara signifikan
+          meningkatkan kredibilitas dan kemampuan pemasaran produk tersebut.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Dengan aplikasi yang lebih luas di berbagai industri, sangat penting
-          untuk meningkatkan keandalan dan keamanan sentrifugal. Untuk
-          mempertahankan parameter kontrol kualitas untuk sentrifugal, BIS telah
-          memperkenalkan skema Sertifikasi BIS yang dikenal sebagai Sertifikasi
-          Scheme -X untuk Sentrifugal.
+          Sertifikasi Scheme X ini merupakan persyaratan di bawah Keselamatan
+          Mesin & Peralatan Listrik (Peraturan Teknis Omnibus, 2024). Peraturan
+          ini mensertifikasi bahwa produsen mesin dan peralatan listrik harus
+          memiliki Tanda Standar pada peralatan mereka. Sertifikasi mencakup
+          persiapan file teknis, audit pabrik, pemeriksaan produk independen,
+          dan perizinan, dan batas waktu akhir adalah 1 September 2026.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Dalam postingan ini, kami akan membahas Apa itu Sertifikasi BIS Scheme
-          X untuk Sentrifugal, Apa itu OTR untuk Sentrifugal, dan Cara
-          mendapatkan Lisensi BIS untuk Sentrifugal dengan tanda BIS resmi untuk
-          Sentrifugal.
+          Blog ini mencakup semua informasi yang diperlukan terkait sertifikasi
+          Scheme X untuk semua jenis alat mesin untuk mengerjakan batu, keramik,
+          beton, semen asbes atau mineral serupa (atau) dan perakitannya
+          /sub-perakitan /komponennya, pentingnya, ruang lingkup, proses
+          sertifikasi, keuntungan, dan dokumentasi yang diperlukan.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Significance Section */}
+        {/* Why BIS is Important Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Signifikansi BIS untuk Sentrifugal
+          Mengapa Sertifikasi BIS untuk Alat Mesin Penting
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sentrifugal digunakan dalam:
+          Alat mesin sangat diperlukan dalam:
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Sektor Farmasi dan Bio-teknologi</li>
-          <li>Pengolahan makanan dan pembuatan minuman</li>
-          <li>Kilang minyak dan industri petrokimia</li>
-          <li>Laboratorium medis</li>
-          <li>Pengolahan lingkungan dan air</li>
+          <li>Produksi suku cadang mobil dan pesawat terbang</li>
+          <li>Industri pembuatan kapal dan teknik berat</li>
+          <li>Pembuatan peralatan pembangkit listrik</li>
+          <li>Kereta api, pertahanan dan peralatan presisi</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tidak adanya BIS untuk Sentrifugal dapat menyebabkan penggunaan
-          Sentrifugal berkualitas rendah atau tidak bersertifikat yang dapat
-          mengakibatkan:
+          Tanpa sertifikasi BIS, risiko meliputi:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Risiko kerusakan mekanis</li>
-          <li>Kemungkinan kontaminasi di sektor yang rapuh</li>
-          <li>Kehilangan waktu dan kehilangan pendapatan</li>
-          <li>Efisiensi rendah dan peningkatan penggunaan energi.</li>
+          <li>Kualitas produk yang tidak memadai & tidak konsisten</li>
+          <li>Kerusakan peralatan dan penundaan dalam produksi</li>
+          <li>Risiko bagi operator</li>
+          <li>Kekhawatiran hukum karena Pelanggaran Hukum India</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Sentrifugal bersertifikat BIS dengan tanda BIS untuk Sentrifugal
-          menyiratkan keamanan, kualitas, dan kepercayaan.
+          Dengan menegakkan kepatuhan, Sertifikasi Scheme X melindungi industri
+          dari risiko ini. Ini juga berlaku untuk semua jenis alat mesin untuk
+          mengerjakan batu, keramik, beton, semen asbes atau mineral serupa
+          (atau) dan perakitannya /sub-perakitan /komponennya.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* What is BIS Scheme X Certificate Section */}
+        {/* What is BIS Scheme X Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikat BIS Scheme X untuk Sentrifugal?
+          Apa itu Sertifikasi BIS Scheme X untuk Alat Mesin?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Sertifikasi BIS Scheme X untuk Sentrifugal adalah skema sertifikasi
-          wajib di bawah Peraturan Penilaian Kesesuaian BIS, 2018.
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Dengan Sertifikasi BIS Scheme X di bawah Peraturan Penilaian
+          Kesesuaian BIS, 2018, pengujian, inspeksi dan perizinan tersebut telah
+          menjadi wajib untuk produk alat mesin yang diidentifikasi, sebelum
+          pembuatannya, impor atau penjualan di negara tersebut.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Sertifikasi Scheme X untuk Sentrifugal: Fitur utama:
+          Sorotan Utama:
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Berlaku untuk produsen India maupun asing</li>
+          <li>Berlaku untuk produsen India maupun impor</li>
           <li>
-            Berlaku untuk semua jenis sentrifugal yang ditemukan di laboratorium
-            industri dan R&D
+            Mencakup alat mesin seperti mesin bubut, mesin frais, mesin bor,
+            mesin gerinda, mesin shaping, sistem CNC, dan lainnya
           </li>
+          <li>Pengujian hanya dilakukan di laboratorium yang disetujui BIS.</li>
+          <li>Audit pabrik dan tinjauan sistem kualitas adalah wajib</li>
           <li>
-            Jumlah pengujian produk, audit, dan validasi kepatuhan yang memadai
-            adalah suatu keharusan
-          </li>
-          <li>
-            Memungkinkan produsen untuk mengajukan registrasi BIS berdasarkan
-            sertifikasi untuk Sentrifugal yang disebutkan di atas.
+            Hanya pelamar yang berhasil yang mendapatkan Lisensi BIS untuk
+            menggunakan Tanda Standar pada produk mereka
           </li>
         </ul>
 
@@ -251,140 +256,108 @@ const CentrifugesMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR untuk Sentrifugal
+          OTR untuk Alat Mesin
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          OTR untuk Sentrifugal diumumkan oleh Kementerian Industri Berat pada
-          tahun 2024, yang memerlukan sertifikasi Scheme X.
+          Kementerian Industri Berat telah merilis Peraturan Teknis Omnibus
+          (OTR) yang mewajibkan sertifikasi BIS scheme X untuk Alat Mesin.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Semua produsen dan importir diwajibkan untuk mendapatkan
-          Lisensi BIS Sentrifugal yang valid di bawah Scheme X pada tanggal 1
-          September 2026. "Ini akan menghentikan sentrifugal tidak bersertifikat
-          dari dijual, diimpor atau berpartisipasi dalam tender di seluruh
-          negeri," kata pejabat pemerintah.
+          Batas Waktu: Semua produsen dan importir harus memiliki sertifikasi
+          BIS pada tanggal 1 September 2026. Mulai tanggal pemberitahuan
+          tersebut, alat mesin yang tidak bersertifikat tidak akan dapat
+          diproduksi, dijual atau diimpor di India.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Advantages Section */}
+        {/* Benefits Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Keuntungan Sertifikasi BIS untuk Sentrifugal
+          Keuntungan Sertifikasi BIS untuk Alat Mesin
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Keselamatan & Kepatuhan: Menghindari kecelakaan akibat kerusakan
-            mekanis pada kecepatan tinggi.
+            Jaminan Kualitas: Akurasi yang terverifikasi, daya tahan alat yang
+            bersertifikat.
           </li>
           <li>
-            Kualitas & Keandalan: Sentrifugal Bersertifikat berkinerja dengan
-            akurasi dan presisi yang tinggi.
+            Akses ke Pasar – penting untuk masuk ke pekerjaan sektor publik dan
+            swasta.
           </li>
           <li>
-            Akses Pasar: Lisensi Sentrifugal BIS biasanya diperlukan untuk
-            pengadaan oleh badan publik.
+            Kepercayaan Konsumen – Tanda Standar BIS adalah jaminan kualitas &
+            keselamatan produk.
           </li>
           <li>
-            Kepercayaan Konsumen: Tanda BIS untuk Sentrifugal memberikan
-            informasi kepada pelanggan tentang kualitas produk dan daya tahan.
+            Keunggulan Kompetitif - Produsen yang berwenang lebih disukai untuk
+            tender dan pengadaan.
           </li>
           <li>
-            Keunggulan Kompetitif: Merek/produsen bersertifikat BIS lebih
-            disukai di pasar terkontrol dan untuk tender pemerintah.
+            Pengurangan Risiko – Tidak ada kegagalan peralatan, peningkatan
+            keselamatan operator, dan pencegahan downtime.
           </li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* Types of Centrifuge Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Sentrifugal di Bawah Skema Sertifikasi BIS
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Akreditasi Scheme X untuk Sentrifugal mencakup berbagai jenis seperti:
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Sentrifugal Laboratorium</li>
-          <li>Pemisah Industri</li>
-          <li>Sentrifugal, Berpendingin</li>
-          <li>Ultracentrifuges</li>
-          <li>Sentrifugal Gas</li>
-          <li>Sentrifugal Keranjang</li>
-          <li>Sentrifugal Dekanter</li>
-          <li>Sentrifugal Kontinyu dan Batch</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Semua jenis ini harus memenuhi Standar India yang berlaku (kode IS)
-          seperti IS 16819:2018/ISO 12100:2010 (Keselamatan Mesin Prinsip Umum
-          untuk Desain - Penilaian Risiko dan Pengurangan Risiko). Semua
-          varietas harus memenuhi Standar India (kode IS) yang sesuai untuk
-          kualitas, keselamatan, dan efisiensi energi.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Proses Sertifikasi BIS untuk Sentrifugal
+          Proses Sertifikasi BIS Alat Mesin
         </h2>
 
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
           <li>
-            Identifikasi Standar yang Relevan: Merujuk kode IS yang relevan
-            untuk jenis Sentrifugal Anda.
+            Identifikasi Standar – Hubungkan jenis alat mesin dan penggunaannya
+            dengan Standar India.
           </li>
           <li>
-            Pengujian Produk: Melakukan pengujian kinerja dan keselamatan yang
-            diperlukan sesuai standar industri, di laboratorium yang
-            terakreditasi BIS.
+            Pengujian Produk – Pengujian kinerja, keselamatan dan Daya tahan di
+            laboratorium yang terakreditasi BIS.
           </li>
           <li>
-            Inspeksi Pabrik: Memeriksa sistem jaminan kualitas di lokasi
-            produksi oleh pejabat BIS.
+            Audit Pabrik – Audit kontrol kualitas produksi peralatan listrik.
           </li>
           <li>
-            Aplikasi & Dokumentasi: Menyediakan persyaratan teknis, buku pedoman
-            kualitas dan laporan uji.
+            Dokumentasi: Laporan teknis, manual dan bukti kepatuhan harus
+            disediakan.
           </li>
           <li>
-            Penerbitan Lisensi BIS untuk Sentrifugal: Anda dapat menempatkan
-            tanda BIS setelah disetujui.
+            Pemberian Lisensi – BIS memberikan lisensi (sertifikat) dan
+            mengizinkan penggunaan Tanda Standar.
           </li>
           <li>
-            Kepatuhan Berkelanjutan: BIS memeriksa dan melakukan audit tidak
-            terjadwal untuk kepatuhan terhadap standar.
+            Pemantauan – Tinjauan rutin dan inspeksi acak dilakukan untuk
+            memastikan mereka mematuhi aturan.
           </li>
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sertifikasi Scheme X wajib untuk semua mesin untuk mengerjakan batu,
+          keramik, beton, semen asbes atau mineral serupa (atau) dan
+          perakitannya/sub-perakitan/partnya.
+        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
           Sanksi untuk Ketidakpatuhan
         </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Produsen yang tidak memiliki semua model sentrifugal yang
-          disertifikasi dengan Sertifikasi BIS untuk Sentrifugal pada tanggal 1
-          September 2026 menghadapi risiko:
+          Tidak mematuhi norma sertifikasi BIS di bawah OTR dapat mengakibatkan:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>
-            Penjualan/impor dilarang untuk sentrifugal tidak bersertifikat
+            Larangan terhadap produksi, impor dan perdagangan komoditas yang
+            tidak bersertifikat
           </li>
-          <li>Penyitaan peralatan yang tidak patuh dan sanksi moneter</li>
-          <li>
-            Ini akan membuat Anda tidak memenuhi syarat untuk tender pemerintah
-            atau PSU
-          </li>
-          <li>Ekuitas Merek secara permanen terpengaruh di India</li>
+          <li>Penyitaan barang dan denda</li>
+          <li>Kehilangan kontrak pertahanan dan pemerintah</li>
+          <li>Kerusakan merek dan reputasi permanen dalam jangka panjang</li>
         </ul>
 
         {/* Separator Line */}
@@ -395,18 +368,12 @@ const CentrifugesMainContentLeft = () => {
           Kesimpulan
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Implementasi Sertifikasi BIS Scheme X untuk Sentrifugal dalam OTR 2024
-          adalah langkah untuk membawa keselamatan, efisiensi dan kualitas ke
-          dalam sektor industri dan laboratorium di India.
-        </p>
-
         <p className="text-gray-600 text-base font-geist mb-6">
-          Produsen, Importir dan Eksportir memanfaatkan proses ini dengan
-          mengamankan Sertifikasi BIS untuk Sentrifugal, dengan memperoleh
-          Lisensi BIS untuk Sentrifugal, dan menempatkan tanda BIS untuk
-          Sentrifugal pada produk mereka, menunjukkan bahwa produk mereka
-          memenuhi sistem regulasi pasar lokal dan persyaratan pelanggan.
+          Sertifikasi BIS Scheme X, yang diperlukan di bawah OTR 2024, bukan
+          hanya kewajiban regulasi—ini adalah kunci untuk kepercayaan,
+          keselamatan, dan kesuksesan dalam industri manufaktur India.
+          Sertifikasi penting bagi Produsen India & Global untuk Akses Pasar,
+          Kepatuhan dan Kesuksesan Jangka Panjang.
         </p>
 
         <ServiceAuthorIndonesian />

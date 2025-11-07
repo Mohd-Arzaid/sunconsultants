@@ -1201,12 +1201,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-heat-treatment-equipment</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-weaving-machines-looms</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1701,19 +1695,57 @@
   </url>
   <!-- Gears, Gearing and Transmission Elements - SchemeX Products End -->
 
-  <!-- Heat Treatment Equipment - Multilingual -->
+  <!-- Heat Treatment Equipment - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-heat-treatment-equipment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-equipements-de-traitement-thermique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-thiet-bi-xu-ly-nhiet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-yeolcheori-jangbi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-peralatan-perlakuan-panas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Heat Treatment Equipment - SchemeX Products End -->
 
   <!-- Machine Tools - Multilingual -->
   <url>
@@ -1913,12 +1945,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-yeolcheori-jangbi</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-seukim-x-injeung-gongjag-gigye</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2017,12 +2043,6 @@
 
   <!-- Spanish Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-maquina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2091,12 +2111,6 @@
 
   <!-- Vietnamese Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-thiet-bi-xu-ly-nhiet</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2158,12 +2172,6 @@
   </url>
 
   <!-- French Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-equipements-de-traitement-thermique</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-outils</loc>
     <changefreq>monthly</changefreq>
@@ -2232,12 +2240,6 @@
   </url>
 
   <!-- German Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-werkzeugmaschinen</loc>
     <changefreq>monthly</changefreq>

@@ -48,6 +48,20 @@ import GearsGearingsandTransmissionVietnamese from "../schemeXProducts/GearsGear
 import GearsGearingsandTransmissionSpanish from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionSpanish";
 import GearsGearingsandTransmissionKorean from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionKorean";
 import GearsGearingsandTransmissionIndonesian from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionIndonesian";
+import HeatTreatmentEquipment from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipment";
+import HeatTreatmentEquipmentFrench from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentFrench";
+import HeatTreatmentEquipmentGerman from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentGerman";
+import HeatTreatmentEquipmentVietnamese from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentVietnamese";
+import HeatTreatmentEquipmentSpanish from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentSpanish";
+import HeatTreatmentEquipmentKorean from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentKorean";
+import HeatTreatmentEquipmentIndonesian from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentIndonesian";
+import MachineTools from "../schemeXProducts/MachineTools/MachineTools";
+import MachineToolsFrench from "../schemeXProducts/MachineTools/MachineToolsFrench";
+import MachineToolsGerman from "../schemeXProducts/MachineTools/MachineToolsGerman";
+import MachineToolsVietnamese from "../schemeXProducts/MachineTools/MachineToolsVietnamese";
+import MachineToolsSpanish from "../schemeXProducts/MachineTools/MachineToolsSpanish";
+import MachineToolsKorean from "../schemeXProducts/MachineTools/MachineToolsKorean";
+import MachineToolsIndonesian from "../schemeXProducts/MachineTools/MachineToolsIndonesian";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -55,38 +69,38 @@ export const SchemeXProductsRoutes = () => {
       {/* Centrifuges Pages */}
       {/* English */}
       <Route
-        path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+        path="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
         element={<Centrifuges />}
       />
 
       {/* french */}
       <Route
-        path="certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification"
+        path="/certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification"
         element={<CentrifugesFrench />}
       />
       {/* German */}
       <Route
-        path="bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
+        path="/bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
         element={<CentrifugesGerman />}
       />
       {/* Vietnamese */}
       <Route
-        path="chung-nhan-bis-scheme-x-cho-may-ly-tam-va-thiet-bi-loc-hoac-tinh-che"
+        path="/chung-nhan-bis-scheme-x-cho-may-ly-tam-va-thiet-bi-loc-hoac-tinh-che"
         element={<CentrifugesVietnamese />}
       />
       {/* Spanish */}
       <Route
-        path="certificacion-bis-scheme-x-para-centrifugas-y-maquinaria-de-filtrado-o-purificacion"
+        path="/certificacion-bis-scheme-x-para-centrifugas-y-maquinaria-de-filtrado-o-purificacion"
         element={<CentrifugesSpanish />}
       />
       {/* Korean */}
       <Route
-        path="bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+        path="/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
         element={<CentrifugesKorean />}
       />
       {/* Indonesian */}
       <Route
-        path="sertifikasi-bis-skema-x-untuk-sentrifus-dan-mesin-penyaring-atau-pemurnian"
+        path="/sertifikasi-bis-skema-x-untuk-sentrifus-dan-mesin-penyaring-atau-pemurnian"
         element={<CentrifugesIndonesian />}
       />
 
@@ -103,37 +117,37 @@ export const SchemeXProductsRoutes = () => {
       {/* Compressors Pages Start */}
       {/* English */}
       <Route
-        path="bis-scheme-x-certification-for-compressors"
+        path="/bis-scheme-x-certification-for-compressors"
         element={<Compressors />}
       />
       {/* French */}
       <Route
-        path="certification-bis-schema-x-pour-compresseurs"
+        path="/certification-bis-schema-x-pour-compresseurs"
         element={<CompressorsFrench />}
       />
       {/* German */}
       <Route
-        path="bis-schema-x-zertifizierung-fuer-kompressoren"
+        path="/bis-schema-x-zertifizierung-fuer-kompressoren"
         element={<CompressorsGerman />}
       />
       {/* Vietnamese */}
       <Route
-        path="chung-nhan-bis-scheme-x-cho-may-nen-khi"
+        path="/chung-nhan-bis-scheme-x-cho-may-nen-khi"
         element={<CompressorsVietnamese />}
       />
       {/* Spanish */}
       <Route
-        path="certificacion-bis-scheme-x-para-compresores"
+        path="/certificacion-bis-scheme-x-para-compresores"
         element={<CompressorsSpanish />}
       />
       {/* Korean */}
       <Route
-        path="bis-seukim-x-injeung-apchukgi"
+        path="/bis-seukim-x-injeung-apchukgi"
         element={<CompressorsKorean />}
       />
       {/* Indonesian */}
       <Route
-        path="sertifikasi-bis-skema-x-untuk-kompresor"
+        path="/sertifikasi-bis-skema-x-untuk-kompresor"
         element={<CompressorsIndonesian />}
       />
 
@@ -151,37 +165,37 @@ export const SchemeXProductsRoutes = () => {
 
       {/* {English } */}
       <Route
-        path="bis-scheme-x-certification-for-construction-machinery"
+        path="/bis-scheme-x-certification-for-construction-machinery"
         element={<ConstructionMachinery />}
       />
       {/* French */}
       <Route
-        path="certification-bis-schema-x-pour-machines-de-construction"
+        path="/certification-bis-schema-x-pour-machines-de-construction"
         element={<ConstructionMachineryFrench />}
       />
       {/* German */}
       <Route
-        path="bis-schema-x-zertifizierung-fuer-baumaschinen"
+        path="/bis-schema-x-zertifizierung-fuer-baumaschinen"
         element={<ConstructionMachineryGerman />}
       />
       {/* Vietnamese */}
       <Route
-        path="chung-nhan-bis-scheme-x-cho-may-moc-xay-dung"
+        path="/chung-nhan-bis-scheme-x-cho-may-moc-xay-dung"
         element={<ConstructionMachineryVietnamese />}
       />
       {/* Spanish */}
       <Route
-        path="certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+        path="/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
         element={<ConstructionMachinerySpanish />}
       />
       {/* Korean */}
       <Route
-        path="bis-seukim-x-injeung-geonseol-gigye"
+        path="/bis-seukim-x-injeung-geonseol-gigye"
         element={<ConstructionMachineryKorean />}
       />
       {/* Indonesian */}
       <Route
-        path="/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
+        path="//sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
         element={<ConstructionMachineryIndonesian />}
       />
 
@@ -199,34 +213,34 @@ export const SchemeXProductsRoutes = () => {
 
       {/* English */}
       <Route
-        path="bis-scheme-x-certification-for-cranes"
+        path="/bis-scheme-x-certification-for-cranes"
         element={<Cranes />}
       />
       {/* French */}
       <Route
-        path="certification-bis-schema-x-pour-ponts-roulants"
+        path="/certification-bis-schema-x-pour-ponts-roulants"
         element={<CranesFrench />}
       />
       {/* German */}
       <Route
-        path="bis-schema-x-zertifizierung-fuer-krane"
+        path="/bis-schema-x-zertifizierung-fuer-krane"
         element={<CranesGerman />}
       />
       {/* Vietnamese */}
       <Route
-        path="chung-nhan-bis-scheme-x-cho-can-cau"
+        path="/chung-nhan-bis-scheme-x-cho-can-cau"
         element={<CranesVietnamese />}
       />
       {/* Spanish */}
       <Route
-        path="certificacion-bis-scheme-x-para-gruas"
+        path="/certificacion-bis-scheme-x-para-gruas"
         element={<CranesSpanish />}
       />
       {/* Korean */}
-      <Route path="bis-seukim-x-injeung-keurein" element={<CranesKorean />} />
+      <Route path="/bis-seukim-x-injeung-keurein" element={<CranesKorean />} />
       {/* Indonesian */}
       <Route
-        path="sertifikasi-bis-skema-x-untuk-derek"
+        path="/sertifikasi-bis-skema-x-untuk-derek"
         element={<CranesIndonesian />}
       />
       {/* Cranes Pages End */}
@@ -242,38 +256,38 @@ export const SchemeXProductsRoutes = () => {
       {/* Diesel Generators Pages Start */}
       {/* {English } */}
       <Route
-        path="bis-scheme-x-certification-for-diesel-generators"
+        path="/bis-scheme-x-certification-for-diesel-generators"
         element={<DieselGenerator />}
       />
       {/* French */}
       <Route
-        path="certification-bis-schema-x-pour-generateurs-diesel"
+        path="/certification-bis-schema-x-pour-generateurs-diesel"
         element={<DieselGeneratorFrench />}
       />
       {/* German */}
       <Route
-        path="bis-schema-x-zertifizierung-fuer-dieselgeneratoren"
+        path="/bis-schema-x-zertifizierung-fuer-dieselgeneratoren"
         element={<DieselGeneratorGerman />}
       />
       {/* Vietnamese */}
       <Route
-        path="chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
+        path="/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
         element={<DieselGeneratorVietnamese />}
       />
       {/* Spanish */}
       <Route
-        path="certificacion-bis-scheme-x-para-generadores-diesel"
+        path="/certificacion-bis-scheme-x-para-generadores-diesel"
         element={<DieselGeneratorSpanish />}
       />
       {/* Korean */}
       <Route
-        path="bis-seukim-x-injeung-dijel-baljeongi"
+        path="/bis-seukim-x-injeung-dijel-baljeongi"
         element={<DieselGeneratorKorean />}
       />
 
       {/* Indonesian */}
       <Route
-        path="sertifikasi-bis-skema-x-untuk-generator-diesel"
+        path="/sertifikasi-bis-skema-x-untuk-generator-diesel"
         element={<DieselGeneratorIndonesian />}
       />
 
@@ -290,37 +304,37 @@ export const SchemeXProductsRoutes = () => {
       {/* Embroidery Machines Pages Start */}
       {/* English */}
       <Route
-        path="bis-scheme-x-certification-for-embroidery-machinery"
+        path="/bis-scheme-x-certification-for-embroidery-machinery"
         element={<EmbroideryMachines />}
       />
       {/* French */}
       <Route
-        path="certification-bis-schema-x-pour-machines-a-broderie"
+        path="/certification-bis-schema-x-pour-machines-a-broderie"
         element={<EmbroideryMachinesFrench />}
       />
       {/* German */}
       <Route
-        path="bis-schema-x-zertifizierung-fuer-stickmaschinen"
+        path="/bis-schema-x-zertifizierung-fuer-stickmaschinen"
         element={<EmbroideryMachinesGerman />}
       />
       {/* Vietnamese */}
       <Route
-        path="chung-nhan-bis-scheme-x-cho-may-moc-theu"
+        path="/chung-nhan-bis-scheme-x-cho-may-moc-theu"
         element={<EmbroideryMachinesVietnamese />}
       />
       {/* Spanish */}
       <Route
-        path="certificacion-bis-scheme-x-para-maquinaria-de-bordado"
+        path="/certificacion-bis-scheme-x-para-maquinaria-de-bordado"
         element={<EmbroideryMachinesSpanish />}
       />
       {/* Korean */}
       <Route
-        path="bis-seukim-x-injeung-jasu-gigye"
+        path="/bis-seukim-x-injeung-jasu-gigye"
         element={<EmbroideryMachinesKorean />}
       />
       {/* Indonesian */}
       <Route
-        path="sertifikasi-bis-skema-x-untuk-mesin-bordir"
+        path="/sertifikasi-bis-skema-x-untuk-mesin-bordir"
         element={<EmbroideryMachinesIndonesian />}
       />
 
@@ -337,41 +351,136 @@ export const SchemeXProductsRoutes = () => {
       {/* Gears, Gearing and Transmission Elements Pages Start */}
       {/* English */}
       <Route
-        path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+        path="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
         element={<GearsGearingsandTransmission />}
       />
       {/* French */}
       <Route
-        path="certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
+        path="/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
         element={<GearsGearingsandTransmissionFrench />}
       />
       {/* German */}
       <Route
-        path="bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
+        path="/bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
         element={<GearsGearingsandTransmissionGerman />}
       />
       {/* Vietnamese */}
       <Route
-        path="chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai"
+        path="/chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai"
         element={<GearsGearingsandTransmissionVietnamese />}
       />
       {/* Spanish */}
       <Route
-        path="certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
+        path="/certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
         element={<GearsGearingsandTransmissionSpanish />}
       />
       {/* Korean */}
       <Route
-        path="bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
+        path="/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
         element={<GearsGearingsandTransmissionKorean />}
       />
       {/* Indonesian */}
       <Route
-        path="sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
+        path="/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
         element={<GearsGearingsandTransmissionIndonesian />}
       />
 
       {/* Gears, Gearing and Transmission Elements Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Heat Treatment Equipment Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-heat-treatment-equipment"
+        element={<HeatTreatmentEquipment />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-equipements-de-traitement-thermique"
+        element={<HeatTreatmentEquipmentFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung"
+        element={<HeatTreatmentEquipmentGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-thiet-bi-xu-ly-nhiet"
+        element={<HeatTreatmentEquipmentVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"
+        element={<HeatTreatmentEquipmentSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-yeolcheori-jangbi"
+        element={<HeatTreatmentEquipmentKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-peralatan-perlakuan-panas"
+        element={<HeatTreatmentEquipmentIndonesian />}
+      />
+
+      {/* Heat Treatment Equipment Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Machine Tools Pages Start */}
+      {/* {English } */}
+      <Route
+        path="/bis-scheme-x-certification-for-machine-tools"
+        element={<MachineTools />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-machines-a-outils"
+        element={<MachineToolsFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-werkzeugmaschinen"
+        element={<MachineToolsGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-may-cong-cu"
+        element={<MachineToolsVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-herramientas-de-maquina"
+        element={<MachineToolsSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-gongjag-gigye"
+        element={<MachineToolsKorean />}
+      />
+
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-perkakas-mesin"
+        element={<MachineToolsIndonesian />}
+      />
+
+      {/* Machine Tools Pages End */}
 
       {/* ==================================================================== */}
       {/* ==================================================================== */}
