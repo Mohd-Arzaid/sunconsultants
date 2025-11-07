@@ -165,6 +165,7 @@ import IranBlog from "./blogs/IranBlog/IranBlog";
 import LangIranBlog from "./blogs/IranBlog/LangIranBlog";
 import IraqBlog from "./blogs/IraqBlog/IraqBlog";
 import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
+import BacklinksPage from "./pages/BacklinksPage";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -655,6 +656,9 @@ function App() {
             element={<WeavingMachinesVietnamese />}
           />
         </Route>
+
+        {/* Backlinks Page Routes */}
+        <Route path="/backlinks" element={<BacklinksPage />} />
 
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminLoginPage />} />
