@@ -77,7 +77,6 @@ import PumpsAndLiquidElevatorsVietnamese from "./schemeXProducts/PumpsAndLiquidE
 import PumpsAndLiquidElevatorsArabic from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsArabic";
 import WeavingMachines from "./schemeXProducts/WeavingMachines/WeavingMachines";
 import MetalCuttingMachines from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachines";
-import EmbroideryMachines from "./schemeXProducts/EmbroideryMachines/EmbroideryMachines";
 import GearsGearingsandTransmission from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmission";
 import SwitchgearandControlgearEquipment from "./schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipment";
 import RotaryElectricalMachines from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachines";
@@ -89,7 +88,6 @@ import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/S
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinery";
 
 // French imports
-import EmbroideryMachinesFrench from "./schemeXProducts/EmbroideryMachines/EmbroideryMachinesFrench";
 import GearsGearingsandTransmissionFrench from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionFrench";
 import HeatTreatmentEquipmentFrench from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentFrench";
 import MachineToolsFrench from "./schemeXProducts/MachineTools/MachineToolsFrench";
@@ -105,7 +103,6 @@ import TransformersFrench from "./schemeXProducts/Transformers/TransformersFrenc
 import WeavingMachinesFrench from "./schemeXProducts/WeavingMachines/WeavingMachinesFrench";
 
 // German imports
-import EmbroideryMachinesGerman from "./schemeXProducts/EmbroideryMachines/EmbroideryMachinesGerman";
 import GearsGearingsandTransmissionGerman from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionGerman";
 import HeatTreatmentEquipmentGerman from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentGerman";
 import MachineToolsGerman from "./schemeXProducts/MachineTools/MachineToolsGerman";
@@ -149,9 +146,6 @@ import HeatTreatmentEquipmentSpanish from "./schemeXProducts/HeatTreatmentEquipm
 import HeatTreatmentEquipmentVietnamese from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentVietnamese";
 import GearsGearingsandTransmissionSpanish from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionSpanish";
 import GearsGearingsandTransmissionVietnamese from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionVietnamese";
-import EmbroideryMachinesSpanish from "./schemeXProducts/EmbroideryMachines/EmbroideryMachinesSpanish";
-import EmbroideryMachinesVietnamese from "./schemeXProducts/EmbroideryMachines/EmbroideryMachinesVietnamese";
-import EmbroideryMachinesKorean from "./schemeXProducts/EmbroideryMachines/EmbroideryMachinesKorean";
 import GearsGearingsandTransmissionKorean from "./schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionKorean";
 import HeatTreatmentEquipmentKorean from "./schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentKorean";
 import MachineToolsKorean from "./schemeXProducts/MachineTools/MachineToolsKorean";
@@ -296,7 +290,7 @@ function App() {
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="404" element={<Error404 />} />
-          
+
           {/* Blog Routes */}
           <Route path="Blogs" element={<LatestBlogs />} />
           <Route
@@ -459,36 +453,6 @@ function App() {
           {/* SchemeX Products Routes */}
           {SchemeXProductsRoutes()}
 
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-embroidery-machinery"
-            element={<EmbroideryMachines />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-machines-a-broderie"
-            element={<EmbroideryMachinesFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-stickmaschinen"
-            element={<EmbroideryMachinesGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-may-moc-theu"
-            element={<EmbroideryMachinesVietnamese />}
-          />
-          {/* Spanish */}
-          <Route
-            path="certificacion-bis-scheme-x-para-maquinaria-de-bordado"
-            element={<EmbroideryMachinesSpanish />}
-          />
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-jasu-gigye"
-            element={<EmbroideryMachinesKorean />}
-          />
           {/* {English } */}
           <Route
             path="bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"

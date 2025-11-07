@@ -1219,12 +1219,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-embroidery-machinery</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1609,19 +1603,57 @@
   </url>
   <!-- Diesel Generators - SchemeX Products End -->
 
-  <!-- Embroidery Machinery - Multilingual -->
+  <!-- Embroidery Machines - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-embroidery-machinery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-broderie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-stickmaschinen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-theu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-bordado</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-jasu-gigye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-bordir</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Embroidery Machines - SchemeX Products End -->
 
   <!-- Gears, Gearing and Transmission Elements - Multilingual -->
   <url>
@@ -1849,12 +1881,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-jasu-gigye</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1965,12 +1991,6 @@
 
   <!-- Spanish Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-bordado</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2051,12 +2071,6 @@
 
   <!-- Vietnamese Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-theu</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2130,12 +2144,6 @@
   </url>
 
   <!-- French Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-broderie</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission</loc>
     <changefreq>monthly</changefreq>
@@ -2216,12 +2224,6 @@
   </url>
 
   <!-- German Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-stickmaschinen</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente</loc>
     <changefreq>monthly</changefreq>

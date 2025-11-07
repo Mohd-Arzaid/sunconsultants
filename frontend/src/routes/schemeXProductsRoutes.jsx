@@ -34,6 +34,13 @@ import DieselGeneratorVietnamese from "../schemeXProducts/DieselGenerator/Diesel
 import DieselGeneratorSpanish from "../schemeXProducts/DieselGenerator/DieselGeneratorSpanish";
 import DieselGeneratorKorean from "../schemeXProducts/DieselGenerator/DieselGeneratorKorean";
 import DieselGeneratorIndonesian from "../schemeXProducts/DieselGenerator/DieselGeneratorIndonesian";
+import EmbroideryMachines from "../schemeXProducts/EmbroideryMachines/EmbroideryMachines";
+import EmbroideryMachinesFrench from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesFrench";
+import EmbroideryMachinesGerman from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesGerman";
+import EmbroideryMachinesVietnamese from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesVietnamese";
+import EmbroideryMachinesSpanish from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesSpanish";
+import EmbroideryMachinesKorean from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesKorean";
+import EmbroideryMachinesIndonesian from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesIndonesian";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -264,6 +271,53 @@ export const SchemeXProductsRoutes = () => {
       />
 
       {/* Diesel Generators Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Embroidery Machines Pages Start */}
+      {/* English */}
+      <Route
+        path="bis-scheme-x-certification-for-embroidery-machinery"
+        element={<EmbroideryMachines />}
+      />
+      {/* French */}
+      <Route
+        path="certification-bis-schema-x-pour-machines-a-broderie"
+        element={<EmbroideryMachinesFrench />}
+      />
+      {/* German */}
+      <Route
+        path="bis-schema-x-zertifizierung-fuer-stickmaschinen"
+        element={<EmbroideryMachinesGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="chung-nhan-bis-scheme-x-cho-may-moc-theu"
+        element={<EmbroideryMachinesVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="certificacion-bis-scheme-x-para-maquinaria-de-bordado"
+        element={<EmbroideryMachinesSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="bis-seukim-x-injeung-jasu-gigye"
+        element={<EmbroideryMachinesKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="sertifikasi-bis-skema-x-untuk-mesin-bordir"
+        element={<EmbroideryMachinesIndonesian />}
+      />
+
+      {/* Embroidery Machines Pages End */}
 
       {/* ==================================================================== */}
       {/* ==================================================================== */}
