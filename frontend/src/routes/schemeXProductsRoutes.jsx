@@ -209,7 +209,7 @@ export const SchemeXProductsRoutes = () => {
       />
       {/* Indonesian */}
       <Route
-        path="//sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
+        path="/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
         element={<ConstructionMachineryIndonesian />}
       />
 
