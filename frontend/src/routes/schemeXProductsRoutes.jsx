@@ -1,0 +1,277 @@
+import { Route } from "react-router-dom";
+import Centrifuges from "../schemeXProducts/Centrifuges/Centrifuges";
+import CentrifugesFrench from "../schemeXProducts/Centrifuges/CentrifugesFrench";
+import CentrifugesGerman from "../schemeXProducts/Centrifuges/CentrifugesGerman";
+import CentrifugesVietnamese from "../schemeXProducts/Centrifuges/CentrifugesVietnamese";
+import CentrifugesSpanish from "../schemeXProducts/Centrifuges/CentrifugesSpanish";
+import CentrifugesKorean from "../schemeXProducts/Centrifuges/CentrifugesKorean";
+import CentrifugesIndonesian from "../schemeXProducts/Centrifuges/CentrifugesIndonesian";
+import Compressors from "../schemeXProducts/Compressors/Compressors";
+import CompressorsFrench from "../schemeXProducts/Compressors/CompressorsFrench";
+import CompressorsGerman from "../schemeXProducts/Compressors/CompressorsGerman";
+import CompressorsVietnamese from "../schemeXProducts/Compressors/CompressorsVietnamese";
+import CompressorsSpanish from "../schemeXProducts/Compressors/CompressorsSpanish";
+import CompressorsKorean from "../schemeXProducts/Compressors/CompressorsKorean";
+import CompressorsIndonesian from "../schemeXProducts/Compressors/CompressorsIndonesian";
+import ConstructionMachinery from "../schemeXProducts/ConstructionMachinery/ConstructionMachinery";
+import ConstructionMachineryFrench from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryFrench";
+import ConstructionMachineryGerman from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryGerman";
+import ConstructionMachineryVietnamese from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryVietnamese";
+import ConstructionMachinerySpanish from "../schemeXProducts/ConstructionMachinery/ConstructionMachinerySpanish";
+import ConstructionMachineryKorean from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryKorean";
+import ConstructionMachineryIndonesian from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryIndonesian";
+import Cranes from "../schemeXProducts/Cranes/Cranes";
+import CranesFrench from "../schemeXProducts/Cranes/CranesFrench";
+import CranesGerman from "../schemeXProducts/Cranes/CranesGerman";
+import CranesVietnamese from "../schemeXProducts/Cranes/CranesVietnamese";
+import CranesSpanish from "../schemeXProducts/Cranes/CranesSpanish";
+import CranesKorean from "../schemeXProducts/Cranes/CranesKorean";
+import CranesIndonesian from "../schemeXProducts/Cranes/CranesIndonesian";
+import DieselGenerator from "../schemeXProducts/DieselGenerator/DieselGenerator";
+import DieselGeneratorFrench from "../schemeXProducts/DieselGenerator/DieselGeneratorFrench";
+import DieselGeneratorGerman from "../schemeXProducts/DieselGenerator/DieselGeneratorGerman";
+import DieselGeneratorVietnamese from "../schemeXProducts/DieselGenerator/DieselGeneratorVietnamese";
+import DieselGeneratorSpanish from "../schemeXProducts/DieselGenerator/DieselGeneratorSpanish";
+import DieselGeneratorKorean from "../schemeXProducts/DieselGenerator/DieselGeneratorKorean";
+import DieselGeneratorIndonesian from "../schemeXProducts/DieselGenerator/DieselGeneratorIndonesian";
+
+export const SchemeXProductsRoutes = () => {
+  return (
+    <>
+      {/* Centrifuges Pages */}
+      {/* English */}
+      <Route
+        path="bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+        element={<Centrifuges />}
+      />
+
+      {/* french */}
+      <Route
+        path="certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification"
+        element={<CentrifugesFrench />}
+      />
+      {/* German */}
+      <Route
+        path="bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
+        element={<CentrifugesGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="chung-nhan-bis-scheme-x-cho-may-ly-tam-va-thiet-bi-loc-hoac-tinh-che"
+        element={<CentrifugesVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="certificacion-bis-scheme-x-para-centrifugas-y-maquinaria-de-filtrado-o-purificacion"
+        element={<CentrifugesSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+        element={<CentrifugesKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="sertifikasi-bis-skema-x-untuk-sentrifus-dan-mesin-penyaring-atau-pemurnian"
+        element={<CentrifugesIndonesian />}
+      />
+
+      {/* Centrifuges Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Compressors Pages Start */}
+      {/* English */}
+      <Route
+        path="bis-scheme-x-certification-for-compressors"
+        element={<Compressors />}
+      />
+      {/* French */}
+      <Route
+        path="certification-bis-schema-x-pour-compresseurs"
+        element={<CompressorsFrench />}
+      />
+      {/* German */}
+      <Route
+        path="bis-schema-x-zertifizierung-fuer-kompressoren"
+        element={<CompressorsGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="chung-nhan-bis-scheme-x-cho-may-nen-khi"
+        element={<CompressorsVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="certificacion-bis-scheme-x-para-compresores"
+        element={<CompressorsSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="bis-seukim-x-injeung-apchukgi"
+        element={<CompressorsKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="sertifikasi-bis-skema-x-untuk-kompresor"
+        element={<CompressorsIndonesian />}
+      />
+
+      {/* Compressors Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Construction Machinery Pages Start */}
+
+      {/* {English } */}
+      <Route
+        path="bis-scheme-x-certification-for-construction-machinery"
+        element={<ConstructionMachinery />}
+      />
+      {/* French */}
+      <Route
+        path="certification-bis-schema-x-pour-machines-de-construction"
+        element={<ConstructionMachineryFrench />}
+      />
+      {/* German */}
+      <Route
+        path="bis-schema-x-zertifizierung-fuer-baumaschinen"
+        element={<ConstructionMachineryGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="chung-nhan-bis-scheme-x-cho-may-moc-xay-dung"
+        element={<ConstructionMachineryVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+        element={<ConstructionMachinerySpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="bis-seukim-x-injeung-geonseol-gigye"
+        element={<ConstructionMachineryKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
+        element={<ConstructionMachineryIndonesian />}
+      />
+
+      {/* Construction Machinery Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Cranes Pages Start */}
+
+      {/* English */}
+      <Route
+        path="bis-scheme-x-certification-for-cranes"
+        element={<Cranes />}
+      />
+      {/* French */}
+      <Route
+        path="certification-bis-schema-x-pour-ponts-roulants"
+        element={<CranesFrench />}
+      />
+      {/* German */}
+      <Route
+        path="bis-schema-x-zertifizierung-fuer-krane"
+        element={<CranesGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="chung-nhan-bis-scheme-x-cho-can-cau"
+        element={<CranesVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="certificacion-bis-scheme-x-para-gruas"
+        element={<CranesSpanish />}
+      />
+      {/* Korean */}
+      <Route path="bis-seukim-x-injeung-keurein" element={<CranesKorean />} />
+      {/* Indonesian */}
+      <Route
+        path="sertifikasi-bis-skema-x-untuk-derek"
+        element={<CranesIndonesian />}
+      />
+      {/* Cranes Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Diesel Generators Pages Start */}
+      {/* {English } */}
+      <Route
+        path="bis-scheme-x-certification-for-diesel-generators"
+        element={<DieselGenerator />}
+      />
+      {/* French */}
+      <Route
+        path="certification-bis-schema-x-pour-generateurs-diesel"
+        element={<DieselGeneratorFrench />}
+      />
+      {/* German */}
+      <Route
+        path="bis-schema-x-zertifizierung-fuer-dieselgeneratoren"
+        element={<DieselGeneratorGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
+        element={<DieselGeneratorVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="certificacion-bis-scheme-x-para-generadores-diesel"
+        element={<DieselGeneratorSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="bis-seukim-x-injeung-dijel-baljeongi"
+        element={<DieselGeneratorKorean />}
+      />
+
+      {/* Indonesian */}
+      <Route
+        path="sertifikasi-bis-skema-x-untuk-generator-diesel"
+        element={<DieselGeneratorIndonesian />}
+      />
+
+      {/* Diesel Generators Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+    </>
+  );
+};
