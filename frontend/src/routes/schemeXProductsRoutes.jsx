@@ -62,6 +62,20 @@ import MachineToolsVietnamese from "../schemeXProducts/MachineTools/MachineTools
 import MachineToolsSpanish from "../schemeXProducts/MachineTools/MachineToolsSpanish";
 import MachineToolsKorean from "../schemeXProducts/MachineTools/MachineToolsKorean";
 import MachineToolsIndonesian from "../schemeXProducts/MachineTools/MachineToolsIndonesian";
+import MetalCuttingMachines from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachines";
+import MetalCuttingMachinesFrench from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesFrench";
+import MetalCuttingMachinesGerman from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesGerman";
+import MetalCuttingMachinesVietnamese from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesVietnamese";
+import MetalCuttingMachinesSpanish from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesSpanish";
+import MetalCuttingMachinesKorean from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesKorean";
+import MetalCuttingMachinesIndonesian from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesIndonesian";
+import PackingMachinery from "../schemeXProducts/PackingMachinery/PackingMachinery";
+import PackingMachineryFrench from "../schemeXProducts/PackingMachinery/PackingMachineryFrench";
+import PackingMachineryGerman from "../schemeXProducts/PackingMachinery/PackingMachineryGerman";
+import PackingMachineryVietnamese from "../schemeXProducts/PackingMachinery/PackingMachineryVietnamese";
+import PackingMachinerySpanish from "../schemeXProducts/PackingMachinery/PackingMachinerySpanish";
+import PackingMachineryKorean from "../schemeXProducts/PackingMachinery/PackingMachineryKorean";
+import PackingMachineryIndonesian from "../schemeXProducts/PackingMachinery/PackingMachineryIndonesian";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -481,6 +495,100 @@ export const SchemeXProductsRoutes = () => {
       />
 
       {/* Machine Tools Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Metal Cutting Machines Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+        element={<MetalCuttingMachines />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
+        element={<MetalCuttingMachinesFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
+        element={<MetalCuttingMachinesGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai"
+        element={<MetalCuttingMachinesVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
+        element={<MetalCuttingMachinesSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
+        element={<MetalCuttingMachinesKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam"
+        element={<MetalCuttingMachinesIndonesian />}
+      />
+
+      {/* Metal Cutting Machines Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Packing Machinery Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-packing-machinery"
+        element={<PackingMachinery />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-machines-de-conditionnement"
+        element={<PackingMachineryFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-verpackungsmaschinen"
+        element={<PackingMachineryGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-may-moc-dong-goi"
+        element={<PackingMachineryVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-maquinaria-de-empaque"
+        element={<PackingMachinerySpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-pojang-gigye"
+        element={<PackingMachineryKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-mesin-pengemasan"
+        element={<PackingMachineryIndonesian />}
+      />
+
+      {/* Packing Machinery Pages End */}
 
       {/* ==================================================================== */}
       {/* ==================================================================== */}

@@ -55,6 +55,10 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-peralatan-perlakuan-panas",
     // Machine Tools Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-perkakas-mesin",
+    // Metal Cutting Machines Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam",
+    // Packing Machinery Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-mesin-pengemasan",
   ];
 
   // Check if current path should show these components
@@ -637,6 +641,18 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // Machine Tools Scheme X Product (Indonesian)
     if (path.includes("/sertifikasi-bis-skema-x-untuk-perkakas-mesin"))
       return "Machine Tools Scheme X Product (Indonesian)";
+
+    // Metal Cutting Machines Scheme X Product (Indonesian)
+    if (
+      path.includes(
+        "/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam"
+      )
+    )
+      return "Metal Cutting Machines Scheme X Product (Indonesian)";
+
+    // Packing Machinery Scheme X Product (Indonesian)
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-pengemasan"))
+      return "Packing Machinery Scheme X Product (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

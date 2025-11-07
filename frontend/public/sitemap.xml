@@ -1195,19 +1195,7 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-packing-machinery</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-weaving-machines-looms</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-metal-cutting-machine-tools</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -1244,12 +1232,6 @@
   </url>
   <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-transformers</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-machine-tools</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -1747,47 +1729,161 @@
   </url>
   <!-- Heat Treatment Equipment - SchemeX Products End -->
 
-  <!-- Machine Tools - Multilingual -->
+  <!-- Machine Tools - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-machine-tools</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-outils</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-werkzeugmaschinen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-maquina</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-gongjag-gigye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-perkakas-mesin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Machine Tools - SchemeX Products End -->
 
-  <!-- Metal Cutting Machine Tools - Multilingual -->
+  <!-- Metal Cutting Machine Tools - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-metal-cutting-machine-tools</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall</loc>
+    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-metallschneidemaschinen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Metal Cutting Machine Tools - SchemeX Products End -->
 
-  <!-- Packing Machinery - Multilingual -->
+  <!-- Packing Machinery - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-packing-machinery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-de-conditionnement</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-verpackungsmaschinen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-dong-goi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-empaque</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-pojang-gigye</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-pengemasan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Packing Machinery - SchemeX Products End -->
 
   <!-- Power Semiconductor Converters - Multilingual -->
   <url>
@@ -1945,24 +2041,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-gongjag-gigye</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-pojang-gigye</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2043,24 +2121,6 @@
 
   <!-- Spanish Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-maquina</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-empaque</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2111,24 +2171,6 @@
 
   <!-- Vietnamese Routes - Additional -->
   <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-dong-goi</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-bo-chuyen-doi-ban-dan-cong-suat</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2172,24 +2214,6 @@
   </url>
 
   <!-- French Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-outils</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-de-conditionnement</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-convertisseurs-semiconducteurs-de-puissance</loc>
     <changefreq>monthly</changefreq>
@@ -2240,24 +2264,6 @@
   </url>
 
   <!-- German Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-werkzeugmaschinen</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-verpackungsmaschinen</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-leistungshalbleiter-wandler</loc>
     <changefreq>monthly</changefreq>

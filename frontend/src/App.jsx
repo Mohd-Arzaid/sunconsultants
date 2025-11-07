@@ -62,7 +62,7 @@ import BunkBedsBlog from "./blogs/BunkBedsBlog";
 import StorageUnitsBlog from "./blogs/StorageUnitsBlog";
 import SchemeXProducts from "./schemeXProducts/SchemeXProducts";
 import PumpsAndLiquidElevators from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevators";
-import PackingMachinery from "./schemeXProducts/PackingMachinery/PackingMachinery";
+
 import PumpsAndLiquidElevatorsGerman from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsGerman";
 import PumpsAndLiquidElevatorsSpanish from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsSpanish";
 import PumpsAndLiquidElevatorsFrench from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsFrench";
@@ -75,7 +75,6 @@ import PumpsAndLiquidElevatorsThai from "./schemeXProducts/PumpsAndLiquidElevato
 import PumpsAndLiquidElevatorsVietnamese from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsVietnamese";
 import PumpsAndLiquidElevatorsArabic from "./schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsArabic";
 import WeavingMachines from "./schemeXProducts/WeavingMachines/WeavingMachines";
-import MetalCuttingMachines from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachines";
 import SwitchgearandControlgearEquipment from "./schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipment";
 import RotaryElectricalMachines from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachines";
 import PublicWorksAndMechanical from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanical";
@@ -85,8 +84,7 @@ import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/S
 import RubberAndPlasticsMachinery from "./schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinery";
 
 // French imports
-import MetalCuttingMachinesFrench from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesFrench";
-import PackingMachineryFrench from "./schemeXProducts/PackingMachinery/PackingMachineryFrench";
+
 import PowerSemiconductorsFrench from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsFrench";
 import PublicWorksAndMechanicalFrench from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalFrench";
 import RotaryElectricalMachinesFrench from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesFrench";
@@ -97,8 +95,7 @@ import TransformersFrench from "./schemeXProducts/Transformers/TransformersFrenc
 import WeavingMachinesFrench from "./schemeXProducts/WeavingMachines/WeavingMachinesFrench";
 
 // German imports
-import MetalCuttingMachinesGerman from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesGerman";
-import PackingMachineryGerman from "./schemeXProducts/PackingMachinery/PackingMachineryGerman";
+
 import PowerSemiconductorsGerman from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsGerman";
 import PublicWorksAndMechanicalGerman from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalGerman";
 import RotaryElectricalMachinesGerman from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesGerman";
@@ -119,8 +116,7 @@ import RubberAndPlasticsMachineryVietnamese from "./schemeXProducts/RubberAndPla
 import RotaryElectricalMachinesVietnamese from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesVietnamese";
 import PublicWorksAndMechanicalVietnamese from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalVietnamese";
 import PowerSemiconductorsVietnamese from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsVietnamese";
-import PackingMachineryVietnamese from "./schemeXProducts/PackingMachinery/PackingMachineryVietnamese";
-import MetalCuttingMachinesVietnamese from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesVietnamese";
+
 import WeavingMachinesSpanish from "./schemeXProducts/WeavingMachines/WeavingMachinesSpanish";
 import TransformersSpanish from "./schemeXProducts/Transformers/TransformersSpanish";
 import SwitchgearandControlgearEquipmentabove1000VoltsSpanish from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsSpanish";
@@ -129,10 +125,7 @@ import RubberAndPlasticsMachinerySpanish from "./schemeXProducts/RubberAndPlasti
 import RotaryElectricalMachinesSpanish from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesSpanish";
 import PublicWorksAndMechanicalSpanish from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalSpanish";
 import PowerSemiconductorsSpanish from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsSpanish";
-import PackingMachinerySpanish from "./schemeXProducts/PackingMachinery/PackingMachinerySpanish";
-import MetalCuttingMachinesSpanish from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesSpanish";
-import MetalCuttingMachinesKorean from "./schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesKorean";
-import PackingMachineryKorean from "./schemeXProducts/PackingMachinery/PackingMachineryKorean";
+
 import PowerSemiconductorsKorean from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsKorean";
 import PublicWorksAndMechanicalKorean from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalKorean";
 import RotaryElectricalMachinesKorean from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesKorean";
@@ -434,25 +427,6 @@ function App() {
 
           {/* SchemeX Products Routes */}
           {SchemeXProductsRoutes()}
-
-          <Route
-            path="certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
-            element={<MetalCuttingMachinesSpanish />}
-          />
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
-            element={<MetalCuttingMachinesKorean />}
-          />
-          <Route
-            path="certificacion-bis-scheme-x-para-maquinaria-de-empaque"
-            element={<PackingMachinerySpanish />}
-          />
-          {/* Korean */}
-          <Route
-            path="bis-seukim-x-injeung-pojang-gigye"
-            element={<PackingMachineryKorean />}
-          />
           <Route
             path="certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
             element={<PowerSemiconductorsSpanish />}
@@ -517,46 +491,6 @@ function App() {
           <Route
             path="certificacion-bis-scheme-x-para-maquinas-de-tejido"
             element={<WeavingMachinesSpanish />}
-          />
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-metal-cutting-machine-tools"
-            element={<MetalCuttingMachines />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
-            element={<MetalCuttingMachinesFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
-            element={<MetalCuttingMachinesGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai"
-            element={<MetalCuttingMachinesVietnamese />}
-          />
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-packing-machinery"
-            element={<PackingMachinery />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-machines-de-conditionnement"
-            element={<PackingMachineryFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-verpackungsmaschinen"
-            element={<PackingMachineryGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-may-moc-dong-goi"
-            element={<PackingMachineryVietnamese />}
           />
           {/* {English } */}
           <Route
