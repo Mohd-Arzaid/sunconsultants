@@ -59,6 +59,18 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam",
     // Packing Machinery Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-mesin-pengemasan",
+    // Power Semiconductors Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-konverter-semikonduktor-daya",
+    // Public Works and Mechanical Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-pekerjaan-umum-dan-peralatan-mekanik",
+    // Pumps and Liquid Elevators Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan",
+    // Rotary Electrical Machines Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-mesin-listrik-rotary",
+    // Rubber and Plastics Machinery Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-mesin-karet-dan-plastik",
+    // Switchgear and Controlgear Equipment Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-hingga-1000-volt",
   ];
 
   // Check if current path should show these components
@@ -653,6 +665,44 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     // Packing Machinery Scheme X Product (Indonesian)
     if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-pengemasan"))
       return "Packing Machinery Scheme X Product (Indonesian)";
+
+    // Power Semiconductors Scheme X Product (Indonesian)
+    if (
+      path.includes(
+        "/sertifikasi-bis-skema-x-untuk-konverter-semikonduktor-daya"
+      )
+    )
+      return "Power Semiconductors Scheme X Product (Indonesian)";
+
+    // Public Works and Mechanical Scheme X Product (Indonesian)
+    if (
+      path.includes(
+        "/sertifikasi-bis-skema-x-untuk-pekerjaan-umum-dan-peralatan-mekanik"
+      )
+    )
+      return "Public Works and Mechanical Scheme X Product (Indonesian)";
+
+    // Pumps and Liquid Elevators Scheme X Product (Indonesian)
+    if (
+      path.includes("/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan")
+    )
+      return "Pumps and Liquid Elevators Scheme X Product (Indonesian)";
+
+    // Rotary Electrical Machines Scheme X Product (Indonesian)
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-listrik-rotary"))
+      return "Rotary Electrical Machines Scheme X Product (Indonesian)";
+
+    // Rubber and Plastics Machinery Scheme X Product (Indonesian)
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-karet-dan-plastik"))
+      return "Rubber and Plastics Machinery Scheme X Product (Indonesian)";
+
+    // Switchgear and Controlgear Equipment Scheme X Product (Indonesian)
+    if (
+      path.includes(
+        "/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-hingga-1000-volt"
+      )
+    )
+      return "Switchgear and Controlgear Equipment Scheme X Product (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

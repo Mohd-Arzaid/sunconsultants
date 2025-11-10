@@ -23,12 +23,12 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-const PumpsAndLiquidElevatorsIndonesian = () => {
+const PowerSemiconductorsIndonesian = () => {
   return (
     <div className="relative w-full">
-      <PumpsAndLiquidElevatorsMetaTags />
-      <PumpsAndLiquidElevatorsIndonesianPageBreadcrumb />
-      <PumpsAndLiquidElevatorsIndonesianPageMainContent />
+      <PowerSemiconductorsMetaTags />
+      <PowerSemiconductorsBreadcrumb />
+      <PowerSemiconductorsMainContent />
       <Services />
       <VideoSection />
       <FooterIndonesian />
@@ -36,21 +36,22 @@ const PumpsAndLiquidElevatorsIndonesian = () => {
   );
 };
 
-export default PumpsAndLiquidElevatorsIndonesian;
+export default PowerSemiconductorsIndonesian;
 
-const PumpsAndLiquidElevatorsMetaTags = () => {
-  const title = "Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan";
+const PowerSemiconductorsMetaTags = () => {
+  const title = "Sertifikasi BIS Scheme X untuk Konverter Semikonduktor Daya";
   const description =
-    "Sertifikasi BIS Skema X untuk pompa dan elevator cairan di bawah Peraturan Teknis Omnibus 2024 mewajibkan semua jenis pompa dan elevator cairan harus sesuai dengan Sertifikasi Skema X sebelum September 2026";
+    "Sertifikasi BIS Scheme X berlaku untuk semua jenis konverter semikonduktor daya dan perakitannya, sub-perakitan, dan komponennya untuk memastikan kualitas dan keselamatan di India";
   const keywords =
-    "Sertifikasi BIS untuk Pompa, Sertifikasi BIS Skema X untuk Pompa, Sertifikasi Skema X untuk Pompa, BIS untuk Pompa, Sertifikasi BIS untuk Pompa dan Elevator Cairan, OTR untuk Pompa";
+    "Sertifikasi BIS untuk Konverter Semikonduktor Daya, Sertifikasi BIS Scheme X untuk Konverter Semikonduktor Daya, Sertifikasi Scheme X untuk Konverter Semikonduktor Daya, BIS untuk Konverter Semikonduktor Daya, OTR untuk Konverter Semikonduktor Daya";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
-  const publisher = "Dhruv Aggarwal, Kepala Operasi di Sun Certification India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan di India | Panduan Lengkap";
+    "Sertifikasi BIS Scheme X untuk Konverter Semikonduktor Daya di India | Panduan Lengkap";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan di India. Memahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI dan cara mendapatkan sertifikasi sebelum tenggat waktu September 2026";
+    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk konverter semikonduktor daya di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
 
   return (
     <Helmet>
@@ -67,78 +68,11 @@ const PumpsAndLiquidElevatorsMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
-
-      {/* HrefLang Tags */}
-      <link
-        rel="alternate"
-        hrefLang="en"
-        href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
-      />
-      <link
-        rel="alternate"
-        hrefLang="de"
-        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege"
-      />
-      <link
-        rel="alternate"
-        hrefLang="es"
-        href="https://bis-certifications.com/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"
-      />
-      <link
-        rel="alternate"
-        hrefLang="fr"
-        href="https://bis-certifications.com/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides"
-      />
-      <link
-        rel="alternate"
-        hrefLang="id"
-        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan"
-      />
-      <link
-        rel="alternate"
-        hrefLang="it"
-        href="https://bis-certifications.com/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ja"
-        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ko"
-        href="https://bis-certifications.com/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
-      />
-      <link
-        rel="alternate"
-        hrefLang="nl"
-        href="https://bis-certifications.com/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
-      />
-      <link
-        rel="alternate"
-        hrefLang="th"
-        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam"
-      />
-      <link
-        rel="alternate"
-        hrefLang="vi"
-        href="https://bis-certifications.com/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ar"
-        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
-      />
-      <link
-        rel="alternate"
-        hrefLang="x-default"
-        href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
-      />
     </Helmet>
   );
 };
 
-const PumpsAndLiquidElevatorsIndonesianPageBreadcrumb = () => {
+const PowerSemiconductorsBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -166,7 +100,7 @@ const PumpsAndLiquidElevatorsIndonesianPageBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan
+                    Sertifikasi BIS untuk Konverter Semikonduktor Daya
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -178,12 +112,12 @@ const PumpsAndLiquidElevatorsIndonesianPageBreadcrumb = () => {
   );
 };
 
-const PumpsAndLiquidElevatorsIndonesianPageMainContent = () => {
+const PowerSemiconductorsMainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
         {/* Left Side Content */}
-        <PumpsAndLiquidElevatorsPageMainContentLeftIndonesian />
+        <PowerSemiconductorsMainContentLeft />
 
         {/* Right Side Content */}
         <ServicesRightSideContentIndonesian />
@@ -192,149 +126,169 @@ const PumpsAndLiquidElevatorsIndonesianPageMainContent = () => {
   );
 };
 
-const PumpsAndLiquidElevatorsPageMainContentLeftIndonesian = () => {
+const PowerSemiconductorsMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan di India
+          Sertifikasi BIS untuk Konverter Semikonduktor Daya
         </h1>
 
-        {/* BIS License for Pumps Image */}
-        <div className="flex justify-center mb-6">
+        {/* Main Image */}
+        <div className="mb-6">
           <img
-            src="/schemXproductImages/BIS-Scheme-X-License-For-Pumps.png"
-            alt="Lisensi BIS untuk Pompa dan Elevator Cairan"
-            className="max-w-full h-auto rounded-lg shadow-md"
+            src="/schemXproductImages/BIS-Scheme-X-license-for-Power-Semiconductor-Converter.png"
+            alt="Sertifikasi BIS Scheme X Untuk Konverter Semikonduktor Daya"
+            title="Lisensi BIS Scheme X untuk Konverter Semikonduktor Daya"
+            className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Pertumbuhan industri dan infrastruktur yang pesat di India memerlukan
-          mesin yang beroperasi lebih banyak dan memastikan kepuasan terhadap
-          permintaan domestik dan internasional. Pompa dan elevator cairan
-          sangat penting untuk sumber daya air, pertanian, konstruksi, energi,
-          industri, dan banyak sektor lainnya. Peralatan yang rusak dapat
-          membahayakan keselamatan, mengganggu operasi, dan menciptakan kerugian
-          finansial jika tidak diproduksi sesuai spesifikasi yang tepat dengan
-          kontrol kualitas yang ada.
+          Konverter semikonduktor daya memungkinkan eksekusi dan modifikasi daya
+          listrik yang efektif dari satu bentuk ke bentuk lainnya di berbagai
+          aplikasi. Aplikasi ini mencakup energi terbarukan, kendaraan listrik,
+          otomasi industri, dan elektronik konsumen. Mereka berfungsi sebagai
+          dasar untuk perangkat dan peralatan listrik dan elektronik. Karena
+          pentingnya dan signifikansi yang terus berkembang dari perangkat ini
+          di sektor energi dan industri negara, Bureau of Indian Standards (BIS)
+          telah menggabungkan sertifikasi konverter semikonduktor daya di bawah
+          kerangka sertifikasi Scheme X.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Untuk mengendalikan hal ini, BIS (Bureau of Indian Standards) telah
-          meluncurkan sertifikasi Skema X, yang memerlukan setiap pompa dan
-          elevator cairan memenuhi standar kualitas nasional sebelum dijual di
-          India.
+          Sesuai dengan perintah yang diberikan oleh Kementerian Industri Berat,
+          ada harapan dari semua jenis produsen, terlepas dari apakah mereka
+          beroperasi secara lokal atau di luar negeri, untuk mematuhi
+          sertifikasi BIS untuk Konverter Semikonduktor Daya dan sub-perakitan
+          serta komponennya, pada tanggal 1 September 2026. Sertifikasi BIS
+          Scheme X untuk Konverter Semikonduktor Daya adalah skema sertifikasi
+          regulasi, langkah menuju peningkatan manufaktur India melalui
+          peningkatan keselamatan, kualitas dan standar yang kompetitif secara
+          global.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Dalam artikel ini, kami bermaksud membahas pentingnya Sertifikasi BIS
-          untuk Pompa, pentingnya Peraturan Teknis Omnibus (OTR) 2024, dan
-          proses untuk mendapatkan Lisensi BIS untuk Pompa di bawah Skema X
-          untuk produsen yang bercita-cita.
-        </p>
-
-        {/* Why Pumps and Elevators Matter Section */}
-        <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa Pompa dan Elevator Cairan Penting
-        </div>
-
-        {/* Pumps Subsection */}
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Pompa
-        </div>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pompa adalah perangkat yang sangat diperlukan untuk memindahkan fluida
-          atau lumpur melalui berbagai industri. Mereka banyak digunakan dalam:
-        </p>
-
-        {/* Pumps Usage Areas */}
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Sistem pertanian dan irigasi</li>
-          <li>Pasokan air publik dan penggunaan domestik</li>
-          <li>Stasiun pengolahan air limbah dan effluent</li>
-          <li>Pipa minyak dan gas</li>
-          <li>Sistem AC dan pendingin industri</li>
-        </ul>
-
-        {/* Liquid Elevators Subsection */}
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Elevator Cairan
-        </div>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pompa angkat, elevator vertikal cairan untuk mengangkat cairan
-          berfungsi untuk pemompaan:
-        </p>
-
-        {/* Liquid Elevators Usage Areas */}
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Sistem distribusi air dengan massa pompa tinggi</li>
-          <li>Silo industri/tangki penyimpanan</li>
-          <li>Dalam industri energi, kimia, dan proses</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Karena mereka umum, pompa murah atau elevator cairan dapat
-          menyebabkan:
-        </p>
-
-        {/* Problems with Poor Quality Equipment */}
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Kegagalan mekanis</li>
-          <li>Bahaya listrik</li>
-          <li>Kebocoran dan korosi</li>
-          <li>
-            Kecelakaan yang disebabkan oleh risiko keselamatan dan kerugian
-            ekonomi
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Itulah mengapa BIS untuk Pompa dan Elevator Cairan adalah perlindungan
-          yang sangat diperlukan untuk produsen dan pembeli juga.
+          Blog ini akan membantu dalam memberikan informasi yang diperlukan
+          tentang dokumentasi mengenai sertifikasi Scheme X untuk semua
+          sub-perakitan, komponen dan/atau jenis Konverter Semikonduktor Daya,
+          ruang lingkup dan pentingnya, proses sertifikasi, keuntungan, dan
+          informasi lainnya.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* What is BIS and What is Scheme X Section */}
+        {/* Significance Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu BIS dan apa itu Skema X?
+          Signifikansi BIS untuk Konverter Semikonduktor Daya
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Bureau of Indian Standards (BIS) adalah badan standarisasi nasional
-          India untuk mensertifikasi kualitas dan keselamatan produk. Untuk
-          mengendalikan instalasi dan mesin vital, BIS telah mewajibkan
-          perolehan Sertifikasi Skema X sejak 16 Maret 2022 di bawah Peraturan
-          Penilaian Kesesuaian BIS, 2018.
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Aplikasi konverter semikonduktor daya meliputi:
         </p>
 
-        {/* Scheme X Key Highlights */}
+        {/* Usage Areas */}
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+          <li>Proyek tenaga surya dan angin</li>
+          <li>Stasiun pengisian EV & drive</li>
+          <li>Otomasi pabrik dan robotika</li>
+          <li>Elektronik konsumen dan PSU</li>
+          <li>Jaringan transmisi & distribusi</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tanpa sertifikasi, risiko meliputi:
+        </p>
+
+        {/* Problems with Non-Certified Equipment */}
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
+          <li>Kerusakan listrik dan kepanasan berlebih</li>
+          <li>Kondisi tidak aman dan kerusakan peralatan</li>
+          <li>Efisiensi energi yang berkurang</li>
+          <li>Hasil penawaran negatif dari proyek dan tender pemerintah</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Konverter Semikonduktor Daya yang memiliki sertifikasi Scheme X
+          menunjukkan bahwa produk ini mematuhi Standar India yang ketat untuk
+          kinerja, keselamatan dan keandalan.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        {/* What is BIS Scheme X Section */}
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Apa itu Sertifikat BIS Scheme X untuk Konverter Semikonduktor Daya?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sertifikasi BIS Scheme X untuk Konverter Semikonduktor Daya berada di
+          bawah Peraturan Penilaian Kesesuaian BIS, 2018. Ini memastikan bahwa
+          produk menjalani pengujian yang ketat, inspeksi, dan pemeriksaan
+          kepatuhan sebelum memasuki pasar India.
+        </p>
+
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Poin Kunci Sertifikasi Skema X untuk Pompa
+          Fitur Utama:
+        </h3>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+          <li>Wajib untuk semua produsen asing dan India</li>
+          <li>
+            Mencakup pengenalan komprehensif tentang perangkat semikonduktor
+            daya, desain gate drive, dan komponen pasif.
+          </li>
+          <li>Pengujian produk wajib di laboratorium yang terakreditasi BIS</li>
+          <li>
+            Pengeluaran dari pekerjaan kota, dan proyek serta tender Pemerintah.
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Sertifikasi memastikan bahwa Konverter Semikonduktor Daya mematuhi
+          Standar India yang ketat untuk kinerja, keselamatan dan daya tahan.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        {/* What is BIS Scheme X Certification Section */}
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Apa itu Sertifikasi BIS Scheme X untuk Konverter Semikonduktor Daya?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sertifikasi BIS Scheme X untuk Konverter Semikonduktor Daya tercakup
+          di bawah Peraturan Penilaian Kesesuaian BIS, 2018. Ini menunjukkan
+          bahwa suatu produk akan memerlukan pengujian yang ketat, inspeksi dan
+          kepatuhan di India sebelum dibawa ke pasar di sini.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          Fitur Utama:
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>Wajib untuk produsen India dan asing</li>
           <li>
-            Berlaku untuk pompa, motor, dan elevator cairan yang tercakup di
-            bawah Standar India
+            Mencakup berbagai aplikasi semikonduktor daya (AC-DC, DC-DC, DC-AC
+            dan AC-AC)
           </li>
           <li>
-            Termasuk tes laboratorium, inspeksi pabrik, verifikasi kepatuhan
-            yang konsisten
+            Mewajibkan sertifikasi kekuatan dan keselamatan oleh laboratorium
+            yang disetujui BIS
           </li>
+          <li>Mencakup audit pabrik dan sistem kualitas</li>
           <li>
-            Menambahkan kekuatan hukum untuk memberikan penggunaan merek BIS
-            untuk Pompa oleh produsen sebagai bukti sertifikasi.
+            Memberikan hak untuk menggunakan Tanda Standar BIS jika produk juga
+            berlisensi BIS.
           </li>
         </ul>
 
@@ -343,191 +297,132 @@ const PumpsAndLiquidElevatorsPageMainContentLeftIndonesian = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Peraturan Teknis Omnibus (OTR) Untuk Pompa
+          BIS OTR untuk Konverter Semikonduktor Daya
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          OTR 2024 telah diumumkan oleh Kementerian Industri Berat, yang
-          mengamanatkan bahwa semua pompa dan elevator cairan mematuhi
-          Sertifikasi Skema X.
+          Peraturan Teknis Omnibus (OTR) 2024 yang baru untuk Konverter
+          Semikonduktor Daya telah diterbitkan oleh Kementerian Industri Berat.
+          Perintah OTR ini mewajibkan sertifikasi Scheme X untuk produk ini
+          untuk memastikan kualitas dan keselamatan konsumen.
         </p>
 
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Batas waktu untuk Kepatuhan:
-        </div>
-
         <p className="text-gray-600 text-base font-geist mb-6">
-          Paling lambat 1 September 2026, semua produsen dan importir harus
-          memperoleh Lisensi BIS yang valid untuk Pompa di bawah Skema X.
-          Ketidakpatuhan dapat menyebabkan denda berat, serta penutupan
-          penjualan dan pengecualian dari tender publik.
+          Batas Waktu: Semua produsen dan importir diwajibkan untuk mendapatkan
+          sertifikasi hingga tanggal 1 September 2026. Setelah tanggal batas
+          ini, konverter yang tidak bersertifikat tidak dapat dibuat, dijual,
+          atau diimpor di India.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Importance Section */}
+        {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa sertifikasi BIS untuk Pompa dan Elevator Cairan penting?
+          Keuntungan Sertifikasi BIS untuk Konverter Semikonduktor Daya
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          1. Jaminan Keselamatan: Memastikan bahwa peralatan dirancang dan
-          dibangun untuk ketelitian operasi dan tidak menyebabkan:
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Kegagalan listrik</li>
-          <li>Kebocoran dan karat</li>
-          <li>Kerusakan dan kegagalan mesin</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          2. Keuntungan Pasar
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Pompa bersertifikat BIS sering diperlukan untuk proyek publik,
-            tender pemerintah, dll.
+            Keselamatan Produk: Mengurangi risiko kepanasan berlebih, kecelakaan
+            kebakaran, dan korsleting.
           </li>
           <li>
-            Memberikan keunggulan kompetitif dibandingkan produk tidak
-            bersertifikat.
+            Efisiensi Energi: Menjamin kinerja yang dioptimalkan dan kesesuaian
+            dengan standar hemat energi.
+          </li>
+          <li>
+            Akses Pasar: OTR untuk Konverter Semikonduktor Daya memerlukan
+            sertifikasi untuk akses pasar di India.
+          </li>
+          <li>
+            Keunggulan Kompetitif: Tender pemerintah dan swasta lebih memilih
+            produk bersertifikat.
+          </li>
+          <li>
+            Kepercayaan Pelanggan: Tanda Standar BIS menunjukkan keandalan,
+            keselamatan, dan kualitas.
           </li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          3. Kepercayaan Konsumen: Merek ISI pada Pompa memberikan kepercayaan
-          kepada pembeli tentang kualitas dan menjamin efisiensi produk.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          4. Merek Global Mendapat Akses Pasar yang Mudah: OEM asing mendapat
-          akses mudah ke pasar teratur India dengan mematuhi standar Skema X.
-        </p>
-
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Types of Pumps Section */}
+        {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Pompa Di Bawah Pendaftaran BIS Skema X
+          Proses Sertifikasi BIS untuk Konverter Semikonduktor Daya
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Skema X berisi berbagai jenis pompa termasuk:
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Pompa Sentrifugal</li>
-          <li>Pompa Submersible</li>
-          <li>Pompa Booster</li>
-          <li>Pompa Multistage</li>
-          <li>Pompa Perpindahan Positif</li>
-          <li>Pompa Turbin Vertikal</li>
-          <li>Pompa Proses Kimia</li>
-          <li>Pompa Diafragma</li>
-          <li>Pompa Lumpur</li>
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+          <li>
+            Identifikasi Standar IS yang Relevan: Merujuk kode IS yang relevan
+            untuk jenis konverter Anda.
+          </li>
+          <li>
+            Pengujian Produk: Melakukan pengujian kinerja dan keselamatan yang
+            diperlukan sesuai standar industri, di laboratorium yang
+            terakreditasi BIS.
+          </li>
+          <li>
+            Inspeksi Pabrik: Memeriksa sistem jaminan kualitas di lokasi
+            produksi oleh pejabat BIS.
+          </li>
+          <li>
+            Aplikasi & Dokumentasi: Menyediakan persyaratan teknis, buku pedoman
+            kualitas dan laporan uji.
+          </li>
+          <li>
+            Penerbitan Lisensi BIS untuk Konverter Semikonduktor Daya: Anda
+            dapat menempatkan tanda BIS setelah disetujui.
+          </li>
+          <li>
+            Kepatuhan Berkelanjutan: BIS memeriksa dan melakukan audit tidak
+            terjadwal untuk kepatuhan terhadap standar.
+          </li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap jenis harus mematuhi Standar India yang relevan (kode IS)
-          seperti IS 16819:2018/ISO 12100:2010 (Keselamatan Mesin - Prinsip Umum
-          untuk Desain - Penilaian Risiko dan Pengurangan Risiko).
-        </p>
-
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Untuk elevator cairan, sertifikasi mencakup:
-        </div>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Laju aliran dan tinggi pembuangan</li>
-          <li>Kompatibilitas material</li>
-          <li>Efisiensi energi</li>
-          <li>Keselamatan operasional</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* How to Get BIS Scheme X Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Cara Mendapatkan BIS Skema X untuk Pompa?
-        </h2>
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          Sanksi untuk Ketidakpatuhan
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Identifikasi Standar yang Berlaku: Kutipan harus menentukan kode IS
-          yang sesuai (misalnya, IS 9079 untuk pompa submersible).
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pengujian Produk: Tes kinerja dan keselamatan wajib di laboratorium
-          yang diterima BIS.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Inspeksi Pabrik: Otoritas BIS memeriksa lokasi produksi untuk
-          memverifikasi implementasi prosedur kontrol kualitas.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dokumentasi dan Aplikasi: Spesifikasi teknis, laporan tes, dan manual
-          kualitas harus menyertai formulir aplikasi BIS.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Penerbitan Sertifikat BIS untuk Pompa: Produsen, setelah disetujui,
-          menerima lisensi untuk menerapkan merek BIS di bawah Skema X.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Pengawasan Berkelanjutan: BIS melakukan audit rutin dan inspeksi
-          produk acak untuk memastikan kepatuhan berkelanjutan.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* Penalties Section */}
-        <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Hukuman untuk Ketidakpatuhan
-        </div>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Produsen yang gagal memperoleh sertifikasi BIS, pada 1 September 2026,
-          akan tunduk pada:
+          Produsen yang tidak memiliki semua model konverter semikonduktor daya
+          yang disertifikasi dengan Sertifikasi BIS untuk Konverter
+          Semikonduktor Daya pada tanggal 1 September 2026 menghadapi risiko:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Larangan penjualan/impor pompa tidak bersertifikat</li>
-          <li>Penyitaan barang dan denda.</li>
-          <li>Diskualifikasi dari pesanan pemerintah dan PSU</li>
-          <li>Kerusakan jangka panjang pada reputasi di India</li>
+          <li>Penjualan/impor dilarang untuk konverter tidak bersertifikat</li>
+          <li>Penyitaan peralatan yang tidak patuh dan sanksi moneter</li>
+          <li>
+            Ini akan membuat Anda tidak memenuhi syarat untuk tender pemerintah
+            atau PSU
+          </li>
+          <li>Ekuitas Merek secara permanen terpengaruh di India</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Conclusion Section */}
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <span className="font-medium text-[#1e1e1e]">Kesimpulan:</span>{" "}
-          Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan dengan OTR
-          2024 akan diterapkan; sebuah tonggak dalam standarisasi Industri
-          India.
-        </p>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Kesimpulan
+        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bagi mereka yang memiliki kegiatan manufaktur, impor, atau ekspor,
-          pendaftaran BIS untuk pompa bukan hanya proses kepatuhan hukum yang
-          harus diselesaikan, tetapi juga keputusan strategis untuk memastikan
-          dominasi keselamatan atas risiko potensial, membangun kepercayaan
-          konsumen, dan masuk ke pasar India yang diperluas.
+          Implementasi Sertifikasi BIS Scheme X untuk Konverter Semikonduktor
+          Daya dalam OTR 2024 adalah langkah untuk membawa keselamatan,
+          efisiensi dan kualitas ke dalam sektor energi dan elektronik di India
+          yang berkembang pesat.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Sertifikasi BIS Pompa dan Elevator Cairan adalah investasi jangka
-          panjang untuk membangun kredensial dan pasar Produk Anda.
+          Produsen, Importir dan Eksportir memanfaatkan proses ini dengan
+          mengamankan Sertifikasi BIS untuk Konverter Semikonduktor Daya, dengan
+          memperoleh Lisensi BIS untuk Konverter Semikonduktor Daya, dan
+          menempatkan tanda BIS untuk Konverter Semikonduktor Daya pada produk
+          mereka, menunjukkan bahwa produk mereka memenuhi sistem regulasi pasar
+          lokal dan persyaratan pelanggan.
         </p>
 
         <ServiceAuthorIndonesian />

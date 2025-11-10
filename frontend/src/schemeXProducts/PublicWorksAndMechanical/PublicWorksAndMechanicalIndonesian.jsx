@@ -23,12 +23,12 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-const PumpsAndLiquidElevatorsIndonesian = () => {
+const PublicWorksAndMechanicalIndonesian = () => {
   return (
     <div className="relative w-full">
-      <PumpsAndLiquidElevatorsMetaTags />
-      <PumpsAndLiquidElevatorsIndonesianPageBreadcrumb />
-      <PumpsAndLiquidElevatorsIndonesianPageMainContent />
+      <PublicWorksAndMechanicalMetaTags />
+      <PublicWorksAndMechanicalBreadcrumb />
+      <PublicWorksAndMechanicalMainContent />
       <Services />
       <VideoSection />
       <FooterIndonesian />
@@ -36,21 +36,23 @@ const PumpsAndLiquidElevatorsIndonesian = () => {
   );
 };
 
-export default PumpsAndLiquidElevatorsIndonesian;
+export default PublicWorksAndMechanicalIndonesian;
 
-const PumpsAndLiquidElevatorsMetaTags = () => {
-  const title = "Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan";
+const PublicWorksAndMechanicalMetaTags = () => {
+  const title =
+    "Sertifikasi BIS Scheme X untuk Pekerjaan Umum dan Peralatan Mekanis";
   const description =
-    "Sertifikasi BIS Skema X untuk pompa dan elevator cairan di bawah Peraturan Teknis Omnibus 2024 mewajibkan semua jenis pompa dan elevator cairan harus sesuai dengan Sertifikasi Skema X sebelum September 2026";
+    "Sertifikasi BIS Scheme X untuk mesin untuk pekerjaan umum & bangunan, dan peralatan mekanis merupakan langkah strategis untuk memastikan keselamatan industri, kualitas seragam, dan akses pasar.";
   const keywords =
-    "Sertifikasi BIS untuk Pompa, Sertifikasi BIS Skema X untuk Pompa, Sertifikasi Skema X untuk Pompa, BIS untuk Pompa, Sertifikasi BIS untuk Pompa dan Elevator Cairan, OTR untuk Pompa";
+    "Sertifikasi BIS untuk Pekerjaan Umum dan Peralatan Mekanis, Sertifikasi BIS Scheme X untuk Pekerjaan Umum dan Peralatan Mekanis, Sertifikasi Scheme X untuk Pekerjaan Umum dan Peralatan Mekanis, BIS untuk Pekerjaan Umum dan Peralatan Mekanis, OTR untuk Pekerjaan Umum dan Peralatan Mekanis";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
-  const publisher = "Dhruv Aggarwal, Kepala Operasi di Sun Certification India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan di India | Panduan Lengkap";
+    "Sertifikasi BIS Scheme X untuk Pekerjaan Umum dan Peralatan Mekanis di India | Panduan Lengkap";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan di India. Memahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI dan cara mendapatkan sertifikasi sebelum tenggat waktu September 2026";
+    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk Pekerjaan Umum dan Peralatan Mekanis di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
 
   return (
     <Helmet>
@@ -67,78 +69,11 @@ const PumpsAndLiquidElevatorsMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
-
-      {/* HrefLang Tags */}
-      <link
-        rel="alternate"
-        hrefLang="en"
-        href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
-      />
-      <link
-        rel="alternate"
-        hrefLang="de"
-        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege"
-      />
-      <link
-        rel="alternate"
-        hrefLang="es"
-        href="https://bis-certifications.com/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"
-      />
-      <link
-        rel="alternate"
-        hrefLang="fr"
-        href="https://bis-certifications.com/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides"
-      />
-      <link
-        rel="alternate"
-        hrefLang="id"
-        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan"
-      />
-      <link
-        rel="alternate"
-        hrefLang="it"
-        href="https://bis-certifications.com/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ja"
-        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ko"
-        href="https://bis-certifications.com/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
-      />
-      <link
-        rel="alternate"
-        hrefLang="nl"
-        href="https://bis-certifications.com/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
-      />
-      <link
-        rel="alternate"
-        hrefLang="th"
-        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam"
-      />
-      <link
-        rel="alternate"
-        hrefLang="vi"
-        href="https://bis-certifications.com/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"
-      />
-      <link
-        rel="alternate"
-        hrefLang="ar"
-        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
-      />
-      <link
-        rel="alternate"
-        hrefLang="x-default"
-        href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
-      />
     </Helmet>
   );
 };
 
-const PumpsAndLiquidElevatorsIndonesianPageBreadcrumb = () => {
+const PublicWorksAndMechanicalBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -166,7 +101,7 @@ const PumpsAndLiquidElevatorsIndonesianPageBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan
+                    Sertifikasi BIS untuk Pekerjaan Umum dan Peralatan Mekanis
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -178,12 +113,12 @@ const PumpsAndLiquidElevatorsIndonesianPageBreadcrumb = () => {
   );
 };
 
-const PumpsAndLiquidElevatorsIndonesianPageMainContent = () => {
+const PublicWorksAndMechanicalMainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
         {/* Left Side Content */}
-        <PumpsAndLiquidElevatorsPageMainContentLeftIndonesian />
+        <PublicWorksAndMechanicalMainContentLeft />
 
         {/* Right Side Content */}
         <ServicesRightSideContentIndonesian />
@@ -192,149 +127,132 @@ const PumpsAndLiquidElevatorsIndonesianPageMainContent = () => {
   );
 };
 
-const PumpsAndLiquidElevatorsPageMainContentLeftIndonesian = () => {
+const PublicWorksAndMechanicalMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan di India
+          Sertifikasi BIS untuk Pekerjaan Umum dan Peralatan Mekanis
         </h1>
 
-        {/* BIS License for Pumps Image */}
-        <div className="flex justify-center mb-6">
+        {/* Main Image */}
+        <div className="mb-6">
           <img
-            src="/schemXproductImages/BIS-Scheme-X-License-For-Pumps.png"
-            alt="Lisensi BIS untuk Pompa dan Elevator Cairan"
-            className="max-w-full h-auto rounded-lg shadow-md"
+            src="/schemXproductImages/BIS-license-for-Machines-for-public-works -&-building.png"
+            alt="Sertifikasi BIS Scheme X untuk Pekerjaan Umum dan Peralatan Mekanis"
+            title="Lisensi BIS untuk Mesin Pekerjaan Umum dan Bangunan"
+            className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Pertumbuhan industri dan infrastruktur yang pesat di India memerlukan
-          mesin yang beroperasi lebih banyak dan memastikan kepuasan terhadap
-          permintaan domestik dan internasional. Pompa dan elevator cairan
-          sangat penting untuk sumber daya air, pertanian, konstruksi, energi,
-          industri, dan banyak sektor lainnya. Peralatan yang rusak dapat
-          membahayakan keselamatan, mengganggu operasi, dan menciptakan kerugian
-          finansial jika tidak diproduksi sesuai spesifikasi yang tepat dengan
-          kontrol kualitas yang ada.
+          Dengan perkembangan infrastruktur yang pesat dan modernisasi industri,
+          kinerja dan mesin yang andal sangat penting. Mesin dan peralatan
+          mekanis berperan sebagai poros dalam pekerjaan teknik, manufaktur dan
+          konstruksi pekerjaan umum serta industri khusus. Sangat penting untuk
+          menjaga kualitas dan kesesuaiannya. Ini adalah kewajiban hukum yang
+          diberlakukan oleh Bureau of Indian Standards (BIS) di bawah
+          Sertifikasi Scheme X.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Untuk mengendalikan hal ini, BIS (Bureau of Indian Standards) telah
-          meluncurkan sertifikasi Skema X, yang memerlukan setiap pompa dan
-          elevator cairan memenuhi standar kualitas nasional sebelum dijual di
-          India.
+          Untuk mengimplementasikan dan merampingkan penegakan standar wajib
+          dalam berbagai kategori mesin industri, Peraturan Teknis Omnibus
+          (OTR), 2024 dikeluarkan oleh Kementerian Industri Berat. Perintah ini
+          menyatakan bahwa semua jenis mesin untuk pekerjaan umum, konstruksi
+          bangunan, dan peralatan mekanis lainnya, termasuk yang tidak
+          disebutkan secara eksplisit dalam subdivisi lain dari Bab 84,
+          diwajibkan untuk memperoleh sertifikasi BIS di bawah Scheme X.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Dalam artikel ini, kami bermaksud membahas pentingnya Sertifikasi BIS
-          untuk Pompa, pentingnya Peraturan Teknis Omnibus (OTR) 2024, dan
-          proses untuk mendapatkan Lisensi BIS untuk Pompa di bawah Skema X
-          untuk produsen yang bercita-cita.
-        </p>
-
-        {/* Why Pumps and Elevators Matter Section */}
-        <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa Pompa dan Elevator Cairan Penting
-        </div>
-
-        {/* Pumps Subsection */}
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Pompa
-        </div>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pompa adalah perangkat yang sangat diperlukan untuk memindahkan fluida
-          atau lumpur melalui berbagai industri. Mereka banyak digunakan dalam:
-        </p>
-
-        {/* Pumps Usage Areas */}
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Sistem pertanian dan irigasi</li>
-          <li>Pasokan air publik dan penggunaan domestik</li>
-          <li>Stasiun pengolahan air limbah dan effluent</li>
-          <li>Pipa minyak dan gas</li>
-          <li>Sistem AC dan pendingin industri</li>
-        </ul>
-
-        {/* Liquid Elevators Subsection */}
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Elevator Cairan
-        </div>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pompa angkat, elevator vertikal cairan untuk mengangkat cairan
-          berfungsi untuk pemompaan:
-        </p>
-
-        {/* Liquid Elevators Usage Areas */}
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Sistem distribusi air dengan massa pompa tinggi</li>
-          <li>Silo industri/tangki penyimpanan</li>
-          <li>Dalam industri energi, kimia, dan proses</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Karena mereka umum, pompa murah atau elevator cairan dapat
-          menyebabkan:
-        </p>
-
-        {/* Problems with Poor Quality Equipment */}
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Kegagalan mekanis</li>
-          <li>Bahaya listrik</li>
-          <li>Kebocoran dan korosi</li>
-          <li>
-            Kecelakaan yang disebabkan oleh risiko keselamatan dan kerugian
-            ekonomi
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Itulah mengapa BIS untuk Pompa dan Elevator Cairan adalah perlindungan
-          yang sangat diperlukan untuk produsen dan pembeli juga.
+          Dalam postingan ini, kami akan membahas semua jenis mesin dan
+          peralatan yang digunakan untuk pekerjaan umum dan pembangunan
+          konstruksi, peralatan mekanis dengan fungsi individual, perakitannya,
+          sub-perakitan, pentingnya dan ruang lingkup skema yang banyak
+          dibicarakan, proses sertifikasi dan keuntungan, serta dokumen yang
+          harus diserahkan.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* What is BIS and What is Scheme X Section */}
+        {/* Significance Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu BIS dan apa itu Skema X?
+          Signifikansi BIS untuk Pekerjaan Umum dan Peralatan Mekanis
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Bureau of Indian Standards (BIS) adalah badan standarisasi nasional
-          India untuk mensertifikasi kualitas dan keselamatan produk. Untuk
-          mengendalikan instalasi dan mesin vital, BIS telah mewajibkan
-          perolehan Sertifikasi Skema X sejak 16 Maret 2022 di bawah Peraturan
-          Penilaian Kesesuaian BIS, 2018.
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mesin-mesin ini umum digunakan di:
         </p>
 
-        {/* Scheme X Key Highlights */}
+        {/* Usage Areas */}
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+          <li>
+            Konstruksi infrastruktur publik (jalan, jembatan, pasokan air)
+          </li>
+          <li>Proyek teknik dan konstruksi berat</li>
+          <li>Layanan kota dan utilitas</li>
+          <li>
+            Fasilitas industri yang memerlukan pengangkatan atau pemrosesan
+            mesin
+          </li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Tanpa BIS untuk Pekerjaan Umum dan Peralatan Mekanis, risikonya
+          meliputi:
+        </p>
+
+        {/* Problems with Non-Certified Equipment */}
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
+          <li>Kerusakan mesin saat proyek penting sedang berlangsung</li>
+          <li>Pertimbangan keselamatan pekerja dan pengguna akhir</li>
+          <li>Biaya perawatan dan downtime yang lebih tinggi</li>
+          <li>Dilarang dari proyek yang didanai oleh pemerintah</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-6">
+          Sertifikasi Scheme X untuk Pekerjaan Umum dan Peralatan Mekanis
+          memastikan mesin beroperasi dengan aman, efisien, dan dengan risiko
+          kegagalan minimal.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        {/* What is BIS Scheme X Section */}
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Apa itu Sertifikasi BIS Scheme X untuk Pekerjaan Umum dan Peralatan
+          Mekanis?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Sertifikasi BIS Scheme X untuk Pekerjaan Umum dan Peralatan Mekanis
+          berada di bawah Peraturan Penilaian Kesesuaian BIS, 2018. Ini adalah
+          sarana yang diidentifikasi dan instrumen regulasi untuk memastikan
+          bahwa mesin industri dan infrastruktur sesuai dengan Standar India.
+        </p>
+
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Poin Kunci Sertifikasi Skema X untuk Pompa
+          Aspek Utama Kualifikasi Scheme X:
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Wajib untuk produsen India dan asing</li>
+          <li>Berlaku untuk produsen India maupun asing</li>
+          <li>Termasuk mesin untuk pekerjaan umum dan utilitas</li>
+          <li>Pengujian di laboratorium yang diakui oleh BIS</li>
           <li>
-            Berlaku untuk pompa, motor, dan elevator cairan yang tercakup di
-            bawah Standar India
+            Audit pabrik dan inspeksi kepatuhan rutin termasuk dalam proses
           </li>
           <li>
-            Termasuk tes laboratorium, inspeksi pabrik, verifikasi kepatuhan
-            yang konsisten
-          </li>
-          <li>
-            Menambahkan kekuatan hukum untuk memberikan penggunaan merek BIS
-            untuk Pompa oleh produsen sebagai bukti sertifikasi.
+            Memberikan hak untuk menggunakan Tanda Standar BIS setelah
+            sertifikasi
           </li>
         </ul>
 
@@ -343,191 +261,156 @@ const PumpsAndLiquidElevatorsPageMainContentLeftIndonesian = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Peraturan Teknis Omnibus (OTR) Untuk Pompa
+          BIS OTR untuk Pekerjaan Umum dan Peralatan Mekanis
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          OTR 2024 telah diumumkan oleh Kementerian Industri Berat, yang
-          mengamanatkan bahwa semua pompa dan elevator cairan mematuhi
-          Sertifikasi Skema X.
+          Kementerian Industri Berat telah mengeluarkan Peraturan Teknis Omnibus
+          (OTR) untuk Pekerjaan Umum dan Peralatan Mekanis pada tahun 2024.
         </p>
 
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Batas waktu untuk Kepatuhan:
-        </div>
-
         <p className="text-gray-600 text-base font-geist mb-6">
-          Paling lambat 1 September 2026, semua produsen dan importir harus
-          memperoleh Lisensi BIS yang valid untuk Pompa di bawah Skema X.
-          Ketidakpatuhan dapat menyebabkan denda berat, serta penutupan
-          penjualan dan pengecualian dari tender publik.
+          Batas Waktu: Pada tanggal 1 September 2026, semua produsen dan
+          importir harus mematuhi sertifikasi Scheme X untuk Pekerjaan Umum dan
+          Peralatan Mekanis. Setelah tanggal ini, mesin yang tidak terdaftar
+          tidak akan diizinkan untuk diproduksi, dijual atau diimpor di India.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Importance Section */}
+        {/* Benefits Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa sertifikasi BIS untuk Pompa dan Elevator Cairan penting?
+          Keuntungan Sertifikasi BIS untuk Pekerjaan Umum dan Peralatan Mekanis
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          1. Jaminan Keselamatan: Memastikan bahwa peralatan dirancang dan
-          dibangun untuk ketelitian operasi dan tidak menyebabkan:
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Kegagalan listrik</li>
-          <li>Kebocoran dan karat</li>
-          <li>Kerusakan dan kegagalan mesin</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          2. Keuntungan Pasar
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Pompa bersertifikat BIS sering diperlukan untuk proyek publik,
-            tender pemerintah, dll.
+            Keselamatan Produk: Mencegah keruntuhan akibat masalah mekanis dan
+            operasi yang andal.
           </li>
           <li>
-            Memberikan keunggulan kompetitif dibandingkan produk tidak
-            bersertifikat.
+            Kepatuhan Regulasi: Memenuhi OTR untuk Pekerjaan Umum dan Peralatan
+            Mekanis.
+          </li>
+          <li>
+            Keunggulan Pasar: Sertifikasi seringkali diperlukan untuk tender
+            publik dan proyek pemerintah.
+          </li>
+          <li>
+            Kepercayaan Pelanggan: Mesin yang disertifikasi secara resmi lebih
+            disukai oleh beberapa pembeli, karena ini merupakan jaminan
+            kualitas.
+          </li>
+          <li>
+            Pengurangan Tanggung Jawab: Mengurangi potensi paparan hukum dan
+            merek dengan produk bersertifikat.
           </li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          3. Kepercayaan Konsumen: Merek ISI pada Pompa memberikan kepercayaan
-          kepada pembeli tentang kualitas dan menjamin efisiensi produk.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          4. Merek Global Mendapat Akses Pasar yang Mudah: OEM asing mendapat
-          akses mudah ke pasar teratur India dengan mematuhi standar Skema X.
-        </p>
-
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Types of Pumps Section */}
+        {/* Types of Machinery Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Pompa Di Bawah Pendaftaran BIS Skema X
+          Jenis Pekerjaan Umum dan Peralatan Mekanis dalam OTR
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Skema X berisi berbagai jenis pompa termasuk:
+          BIS Scheme X untuk Sertifikasi Pekerjaan Umum dan Peralatan Mekanis
+          mencakup produk berikut:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Pompa Sentrifugal</li>
-          <li>Pompa Submersible</li>
-          <li>Pompa Booster</li>
-          <li>Pompa Multistage</li>
-          <li>Pompa Perpindahan Positif</li>
-          <li>Pompa Turbin Vertikal</li>
-          <li>Pompa Proses Kimia</li>
-          <li>Pompa Diafragma</li>
-          <li>Pompa Lumpur</li>
+          <li>Mesin pembuatan dan pemeliharaan jalan</li>
+          <li>Mesin pengangkat hidrolik dan manual</li>
+          <li>Peralatan layanan kota (peralatan distribusi air, dll.)</li>
+          <li>Peralatan layanan dan penanganan mekanis</li>
+          <li>
+            Peralatan yang dirancang khusus untuk penggunaan industri dalam
+            pekerjaan umum dan layanan
+          </li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap jenis harus mematuhi Standar India yang relevan (kode IS)
-          seperti IS 16819:2018/ISO 12100:2010 (Keselamatan Mesin - Prinsip Umum
-          untuk Desain - Penilaian Risiko dan Pengurangan Risiko).
-        </p>
-
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Untuk elevator cairan, sertifikasi mencakup:
-        </div>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Laju aliran dan tinggi pembuangan</li>
-          <li>Kompatibilitas material</li>
-          <li>Efisiensi energi</li>
-          <li>Keselamatan operasional</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* How to Get BIS Scheme X Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Cara Mendapatkan BIS Skema X untuk Pompa?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Identifikasi Standar yang Berlaku: Kutipan harus menentukan kode IS
-          yang sesuai (misalnya, IS 9079 untuk pompa submersible).
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Pengujian Produk: Tes kinerja dan keselamatan wajib di laboratorium
-          yang diterima BIS.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Inspeksi Pabrik: Otoritas BIS memeriksa lokasi produksi untuk
-          memverifikasi implementasi prosedur kontrol kualitas.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Dokumentasi dan Aplikasi: Spesifikasi teknis, laporan tes, dan manual
-          kualitas harus menyertai formulir aplikasi BIS.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Penerbitan Sertifikat BIS untuk Pompa: Produsen, setelah disetujui,
-          menerima lisensi untuk menerapkan merek BIS di bawah Skema X.
-        </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Pengawasan Berkelanjutan: BIS melakukan audit rutin dan inspeksi
-          produk acak untuk memastikan kepatuhan berkelanjutan.
+          Mereka harus mematuhi Standar India yang sesuai (kode IS), jika
+          berlaku, termasuk IS 16819:2018/ISO 12100:2010 (Keselamatan Mesin
+          Prinsip Umum untuk Desain - Penilaian Risiko dan Pengurangan Risiko).
+          Semua bentuk ini harus diproduksi sesuai dengan Standar India yang
+          berlaku untuk keselamatan, kinerja dan kualitas.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Penalties Section */}
-        <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Hukuman untuk Ketidakpatuhan
-        </div>
+        {/* Process Section */}
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Proses Sertifikasi BIS untuk Pekerjaan Umum dan Peralatan Mekanis
+        </h2>
+
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+          <li>
+            Identifikasi Standar yang Relevan: Pilih kode IS yang berlaku untuk
+            mesin Anda.
+          </li>
+          <li>
+            Pengujian Produk: Lakukan pengujian kinerja dan keselamatan di
+            Laboratorium yang disetujui BIS.
+          </li>
+          <li>
+            Inspeksi Pabrik: Pejabat BIS mengunjungi fasilitas produksi untuk
+            memastikan bahwa kontrol kualitas ada di tempat.
+          </li>
+          <li>
+            Dokumentasi: Serahkan formulir aplikasi, laporan teknis, dan manual
+            kualitas
+          </li>
+          <li>
+            Penerbitan Lisensi: BIS memberikan sertifikasi dan mengizinkan
+            penggunaan Tanda Standar BIS.
+          </li>
+          <li>
+            Kepatuhan Berkelanjutan: Ada pengujian dan audit yang berkelanjutan
+            untuk memastikan kepatuhan terus-menerus.
+          </li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          Sanksi untuk Ketidakpatuhan
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Produsen yang gagal memperoleh sertifikasi BIS, pada 1 September 2026,
-          akan tunduk pada:
+          Ketidakpatuhan terhadap Sertifikasi BIS untuk Pekerjaan Umum dan
+          Peralatan Mekanis yang ditetapkan dalam OTR untuk Pekerjaan Umum dan
+          Peralatan Mekanis akan mengakibatkan:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Larangan penjualan/impor pompa tidak bersertifikat</li>
-          <li>Penyitaan barang dan denda.</li>
-          <li>Diskualifikasi dari pesanan pemerintah dan PSU</li>
-          <li>Kerusakan jangka panjang pada reputasi di India</li>
+          <li>Larangan penjualan atau impor mesin yang tidak bersertifikat</li>
+          <li>Denda berat dan penyitaan produk</li>
+          <li>Dilarang dari tender pemerintah dan proses kontrak</li>
+          <li>Reputasi sangat ternoda</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Conclusion Section */}
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <span className="font-medium text-[#1e1e1e]">Kesimpulan:</span>{" "}
-          Sertifikasi BIS Skema X untuk Pompa dan Elevator Cairan dengan OTR
-          2024 akan diterapkan; sebuah tonggak dalam standarisasi Industri
-          India.
-        </p>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Kesimpulan
+        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bagi mereka yang memiliki kegiatan manufaktur, impor, atau ekspor,
-          pendaftaran BIS untuk pompa bukan hanya proses kepatuhan hukum yang
-          harus diselesaikan, tetapi juga keputusan strategis untuk memastikan
-          dominasi keselamatan atas risiko potensial, membangun kepercayaan
-          konsumen, dan masuk ke pasar India yang diperluas.
+          Sertifikat BIS Scheme X untuk pekerjaan umum dan peralatan mekanis
+          yang didukung oleh OTR untuk pekerjaan umum dan peralatan mekanis
+          (2024), membawa negara selangkah lebih dekat untuk menetapkan tingkat
+          kualitas seragam dan keselamatan dalam mesin infrastruktur.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Sertifikasi BIS Pompa dan Elevator Cairan adalah investasi jangka
-          panjang untuk membangun kredensial dan pasar Produk Anda.
+          Bagi produsen dan importir, perolehan sertifikasi Scheme X untuk
+          Pekerjaan Umum dan Peralatan Mekanis lebih dari sekadar kepatuhan –
+          ini mewakili investasi strategis.
         </p>
 
         <ServiceAuthorIndonesian />

@@ -166,6 +166,11 @@ import LangIranBlog from "./blogs/IranBlog/LangIranBlog";
 import IraqBlog from "./blogs/IraqBlog/IraqBlog";
 import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
 import BacklinksPage from "./pages/BacklinksPage";
+import PowerSemiconductorsIndonesian from "./schemeXProducts/PowerSemiconductors/PowerSemiconductorsIndonesian";
+import PublicWorksAndMechanicalIndonesian from "./schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalIndonesian";
+import RotaryElectricalMachinesIndonesian from "./schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesIndonesian";
+import RubberAndPlasticsMachineryIndonesian from "./schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryIndonesian";
+import SwitchgearandControlgearEquipmentIndonesian from "./schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentIndonesian";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -428,6 +433,18 @@ function App() {
 
           {/* SchemeX Products Routes */}
           {SchemeXProductsRoutes()}
+
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-pekerjaan-umum-dan-peralatan-mekanik"
+            element={<PublicWorksAndMechanicalIndonesian />}
+          />
+
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-konverter-semikonduktor-daya"
+            element={<PowerSemiconductorsIndonesian />}
+          />
+
           <Route
             path="certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
             element={<PowerSemiconductorsSpanish />}
@@ -538,6 +555,12 @@ function App() {
             path="bis-scheme-x-certification-for-rotary-electrical-machines"
             element={<RotaryElectricalMachines />}
           />
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-mesin-listrik-rotary"
+            element={<RotaryElectricalMachinesIndonesian />}
+          />
+
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-machines-electriques-rotatives"
@@ -558,6 +581,13 @@ function App() {
             path="bis-scheme-x-certification-for-rubber-and-plastics-machinery"
             element={<RubberAndPlasticsMachinery />}
           />
+
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-mesin-karet-dan-plastik"
+            element={<RubberAndPlasticsMachineryIndonesian />}
+          />
+
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-machines-de-caoutchouc-et-plastiques"
@@ -578,6 +608,12 @@ function App() {
             path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
             element={<SwitchgearandControlgearEquipment />}
           />
+          {/* Indonesian */}
+          <Route
+            path="sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-hingga-1000-volt"
+            element={<SwitchgearandControlgearEquipmentIndonesian />}
+          />
+
           {/* French */}
           <Route
             path="certification-bis-schema-x-pour-appareillage-et-commande-jusqu-a-1000-volts"
