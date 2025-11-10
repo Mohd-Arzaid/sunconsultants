@@ -76,10 +76,129 @@ import PackingMachineryVietnamese from "../schemeXProducts/PackingMachinery/Pack
 import PackingMachinerySpanish from "../schemeXProducts/PackingMachinery/PackingMachinerySpanish";
 import PackingMachineryKorean from "../schemeXProducts/PackingMachinery/PackingMachineryKorean";
 import PackingMachineryIndonesian from "../schemeXProducts/PackingMachinery/PackingMachineryIndonesian";
+import PowerSemiconductors from "../schemeXProducts/PowerSemiconductors/PowerSemiconductors";
+import PowerSemiconductorsFrench from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsFrench";
+import PowerSemiconductorsGerman from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsGerman";
+import PowerSemiconductorsVietnamese from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsVietnamese";
+import PowerSemiconductorsSpanish from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsSpanish";
+import PowerSemiconductorsKorean from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsKorean";
+import PowerSemiconductorsIndonesian from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsIndonesian";
+import PublicWorksAndMechanical from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanical";
+import PublicWorksAndMechanicalFrench from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalFrench";
+import PublicWorksAndMechanicalGerman from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalGerman";
+import PublicWorksAndMechanicalVietnamese from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalVietnamese";
+import PublicWorksAndMechanicalSpanish from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalSpanish";
+import PublicWorksAndMechanicalKorean from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalKorean";
+import PublicWorksAndMechanicalIndonesian from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalIndonesian";
+import PumpsAndLiquidElevators from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevators";
+import PumpsAndLiquidElevatorsGerman from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsGerman";
+import PumpsAndLiquidElevatorsSpanish from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsSpanish";
+import PumpsAndLiquidElevatorsFrench from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsFrench";
+import PumpsAndLiquidElevatorsIndonesian from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsIndonesian";
+import PumpsAndLiquidElevatorsItalian from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsItalian";
+import PumpsAndLiquidElevatorsJapanese from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsJapanese";
+import PumpsAndLiquidElevatorsKorean from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsKorean";
+import PumpsAndLiquidElevatorsDutch from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsDutch";
+import PumpsAndLiquidElevatorsThai from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsThai";
+import PumpsAndLiquidElevatorsVietnamese from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsVietnamese";
+import PumpsAndLiquidElevatorsArabic from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsArabic";
+import RotaryElectricalMachines from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachines";
+import RotaryElectricalMachinesFrench from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesFrench";
+import RotaryElectricalMachinesGerman from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesGerman";
+import RotaryElectricalMachinesVietnamese from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesVietnamese";
+import RotaryElectricalMachinesSpanish from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesSpanish";
+import RotaryElectricalMachinesKorean from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesKorean";
+import RotaryElectricalMachinesIndonesian from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesIndonesian";
+import RubberAndPlasticsMachinery from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinery";
+import RubberAndPlasticsMachineryFrench from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryFrench";
+import RubberAndPlasticsMachineryGerman from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryGerman";
+import RubberAndPlasticsMachineryVietnamese from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryVietnamese";
+import RubberAndPlasticsMachinerySpanish from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinerySpanish";
+import RubberAndPlasticsMachineryKorean from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryKorean";
+import RubberAndPlasticsMachineryIndonesian from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryIndonesian";
+import SwitchgearandControlgearEquipment from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipment";
+import SwitchgearandControlgearEquipmentFrench from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentFrench";
+import SwitchgearandControlgearEquipmentGerman from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentGerman";
+import SwitchgearandControlgearEquipmentVietnamese from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentVietnamese";
+import SwitchgearandControlgearEquipmentSpanish from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentSpanish";
+import SwitchgearandControlgearEquipmentKorean from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentKorean";
+import SwitchgearandControlgearEquipmentIndonesian from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentIndonesian";
 
 export const SchemeXProductsRoutes = () => {
   return (
     <>
+      {/* Pumps And Liquid Elevators Pages */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+        element={<PumpsAndLiquidElevators />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege"
+        element={<PumpsAndLiquidElevatorsGerman />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"
+        element={<PumpsAndLiquidElevatorsSpanish />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides"
+        element={<PumpsAndLiquidElevatorsFrench />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan"
+        element={<PumpsAndLiquidElevatorsIndonesian />}
+      />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi"
+        element={<PumpsAndLiquidElevatorsItalian />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"
+        element={<PumpsAndLiquidElevatorsJapanese />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
+        element={<PumpsAndLiquidElevatorsKorean />}
+      />
+      {/* Dutch */}
+      <Route
+        path="/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
+        element={<PumpsAndLiquidElevatorsDutch />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam"
+        element={<PumpsAndLiquidElevatorsThai />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"
+        element={<PumpsAndLiquidElevatorsVietnamese />}
+      />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
+        element={<PumpsAndLiquidElevatorsArabic />}
+      />
+
+      {/* Pumps And Liquid Elevators Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
       {/* Centrifuges Pages */}
       {/* English */}
       <Route
@@ -597,6 +716,233 @@ export const SchemeXProductsRoutes = () => {
       {/* ==================================================================== */}
       {/* ==================================================================== */}
       {/* ==================================================================== */}
+
+      {/* Power Semiconductors Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-power-semiconductor-converters"
+        element={<PowerSemiconductors />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-convertisseurs-semiconducteurs-de-puissance"
+        element={<PowerSemiconductorsFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-leistungshalbleiter-wandler"
+        element={<PowerSemiconductorsGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-bo-chuyen-doi-ban-dan-cong-suat"
+        element={<PowerSemiconductorsVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-convertidores-de-semiconductores-de-potencia"
+        element={<PowerSemiconductorsSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi"
+        element={<PowerSemiconductorsKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-konverter-semikonduktor-daya"
+        element={<PowerSemiconductorsIndonesian />}
+      />
+
+      {/* Power Semiconductors Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Public Works And Mechanical Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+        element={<PublicWorksAndMechanical />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-travaux-publics-et-appareils-mecaniques"
+        element={<PublicWorksAndMechanicalFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-baumaschinen-und-mechanische-geraete"
+        element={<PublicWorksAndMechanicalGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-cong-trinh-cong-cong-va-thiet-bi-co-khi"
+        element={<PublicWorksAndMechanicalVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-obras-publicas-y-aparatos-mecanicos"
+        element={<PublicWorksAndMechanicalSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-gonggong-sa-eob-mich-gigye-gigu"
+        element={<PublicWorksAndMechanicalKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-pekerjaan-umum-dan-peralatan-mekanik"
+        element={<PublicWorksAndMechanicalIndonesian />}
+      />
+
+      {/* Public Works And Mechanical Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Rotary Electrical Machines Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-rotary-electrical-machines"
+        element={<RotaryElectricalMachines />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-machines-electriques-rotatives"
+        element={<RotaryElectricalMachinesFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-rotierende-elektrische-maschinen"
+        element={<RotaryElectricalMachinesGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-may-dien-quay"
+        element={<RotaryElectricalMachinesVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-maquinas-electricas-rotativas"
+        element={<RotaryElectricalMachinesSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-hojeon-jeongi-gigye"
+        element={<RotaryElectricalMachinesKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-mesin-listrik-rotary"
+        element={<RotaryElectricalMachinesIndonesian />}
+      />
+
+      {/* Rotary Electrical Machines Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Rubber And Plastics Machinery Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+        element={<RubberAndPlasticsMachinery />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-machines-de-caoutchouc-et-plastiques"
+        element={<RubberAndPlasticsMachineryFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-kautschuk-und-kunststoffmaschinen"
+        element={<RubberAndPlasticsMachineryGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua"
+        element={<RubberAndPlasticsMachineryVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-maquinaria-de-caucho-y-plasticos"
+        element={<RubberAndPlasticsMachinerySpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-gomu-mich-peullaseutig-gigye"
+        element={<RubberAndPlasticsMachineryKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-mesin-karet-dan-plastik"
+        element={<RubberAndPlasticsMachineryIndonesian />}
+      />
+
+      {/* Rubber And Plastics Machinery Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Switchgear And Controlgear Equipment Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+        element={<SwitchgearandControlgearEquipment />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-appareillage-et-commande-jusqu-a-1000-volts"
+        element={<SwitchgearandControlgearEquipmentFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-bis-1000-volt"
+        element={<SwitchgearandControlgearEquipmentGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-len-den-1000-volts"
+        element={<SwitchgearandControlgearEquipmentVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-hasta-1000-voltios"
+        element={<SwitchgearandControlgearEquipmentSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha"
+        element={<SwitchgearandControlgearEquipmentKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-hingga-1000-volt"
+        element={<SwitchgearandControlgearEquipmentIndonesian />}
+      />
+
+      {/* Switchgear And Controlgear Equipment Pages End */}
     </>
   );
 };
