@@ -61,36 +61,10 @@ import RefinedZincBlog from "./blogs/RefinedZincBlog";
 import BunkBedsBlog from "./blogs/BunkBedsBlog";
 import StorageUnitsBlog from "./blogs/StorageUnitsBlog";
 import SchemeXProducts from "./schemeXProducts/SchemeXProducts";
-import WeavingMachines from "./schemeXProducts/WeavingMachines/WeavingMachines";
-import Transformers from "./schemeXProducts/Transformers/Transformers";
-import SwitchgearandControlgearEquipmentabove1000Volts from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000Volts";
-
-// French imports
-
-import SwitchgearandControlgearEquipmentabove1000VoltsFrench from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsFrench";
-import TransformersFrench from "./schemeXProducts/Transformers/TransformersFrench";
-import WeavingMachinesFrench from "./schemeXProducts/WeavingMachines/WeavingMachinesFrench";
-
-// German imports
-
-import SwitchgearandControlgearEquipmentabove1000VoltsGerman from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsGerman";
-import TransformersGerman from "./schemeXProducts/Transformers/TransformersGerman";
-import WeavingMachinesGerman from "./schemeXProducts/WeavingMachines/WeavingMachinesGerman";
 
 // Vietnamese imports
 import IndonesiaBlog from "./blogs/IndonesiaBlog/IndonesiaBlog";
 import LangIndonesiaBlog from "./blogs/IndonesiaBlog/LangIndonesiaBlog";
-import WeavingMachinesVietnamese from "./schemeXProducts/WeavingMachines/WeavingMachinesVietnamese";
-import TransformersVietnamese from "./schemeXProducts/Transformers/TransformersVietnamese";
-import SwitchgearandControlgearEquipmentabove1000VoltsVietnamese from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsVietnamese";
-
-import WeavingMachinesSpanish from "./schemeXProducts/WeavingMachines/WeavingMachinesSpanish";
-import TransformersSpanish from "./schemeXProducts/Transformers/TransformersSpanish";
-import SwitchgearandControlgearEquipmentabove1000VoltsSpanish from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsSpanish";
-
-import SwitchgearandControlgearEquipmentabove1000VoltsKorean from "./schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsKorean";
-import TransformersKorean from "./schemeXProducts/Transformers/TransformersKorean";
-import WeavingMachinesKorean from "./schemeXProducts/WeavingMachines/WeavingMachinesKorean";
 import NetherlandsBlog from "./blogs/NetherlandsBlog/NetherlandsBlog";
 import LangNetherlandsBlog from "./blogs/NetherlandsBlog/LangNetherlandsBlog";
 import KoreaBlog from "./blogs/KoreaBlog/KoreaBlog";
@@ -325,93 +299,6 @@ function App() {
 
           {/* SchemeX Products Routes */}
           {SchemeXProductsRoutes()}
-
-          <Route
-            path="bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo"
-            element={<SwitchgearandControlgearEquipmentabove1000VoltsKorean />}
-          />
-          <Route
-            path="bis-seukim-x-injeung-byeonab-gi"
-            element={<TransformersKorean />}
-          />
-          <Route
-            path="bis-seukim-x-injeung-jigjo-gi"
-            element={<WeavingMachinesKorean />}
-          />
-          <Route
-            path="certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
-            element={<SwitchgearandControlgearEquipmentabove1000VoltsSpanish />}
-          />
-          <Route
-            path="certificacion-bis-scheme-x-para-transformadores"
-            element={<TransformersSpanish />}
-          />
-          <Route
-            path="certificacion-bis-scheme-x-para-maquinas-de-tejido"
-            element={<WeavingMachinesSpanish />}
-          />
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
-            element={<SwitchgearandControlgearEquipmentabove1000Volts />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-appareillage-et-commande-au-dessus-1000-volts"
-            element={<SwitchgearandControlgearEquipmentabove1000VoltsFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-ueber-1000-volt"
-            element={<SwitchgearandControlgearEquipmentabove1000VoltsGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-tren-1000-volts"
-            element={
-              <SwitchgearandControlgearEquipmentabove1000VoltsVietnamese />
-            }
-          />
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-transformers"
-            element={<Transformers />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-transformateurs"
-            element={<TransformersFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-transformatoren"
-            element={<TransformersGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-may-bien-ap"
-            element={<TransformersVietnamese />}
-          />
-          {/* {English } */}
-          <Route
-            path="bis-scheme-x-certification-for-weaving-machines-looms"
-            element={<WeavingMachines />}
-          />
-          {/* French */}
-          <Route
-            path="certification-bis-schema-x-pour-machines-a-tisser-metiers-a-tisser"
-            element={<WeavingMachinesFrench />}
-          />
-          {/* German */}
-          <Route
-            path="bis-schema-x-zertifizierung-fuer-webmaschinen"
-            element={<WeavingMachinesGerman />}
-          />
-          {/* Vietnamese */}
-          <Route
-            path="chung-nhan-bis-scheme-x-cho-may-det"
-            element={<WeavingMachinesVietnamese />}
-          />
         </Route>
 
         {/* Backlinks Page Routes */}

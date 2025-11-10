@@ -71,6 +71,12 @@ const ServicesRightSideContentIndonesian = () => {
     "/sertifikasi-bis-skema-x-untuk-mesin-karet-dan-plastik",
     // Switchgear and Controlgear Equipment Scheme X Product (Indonesian) Page Url
     "/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-hingga-1000-volt",
+    // Switchgear and Controlgear Equipment above 1000 Volts Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-di-atas-1000-volt",
+    // Transformers Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-transformator",
+    // Weaving Machines Scheme X Product (Indonesian) Page Url
+    "/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun",
   ];
 
   // Check if current path should show these components
@@ -703,6 +709,22 @@ const ContactFormServicesRightSideContentIndonesian = () => {
       )
     )
       return "Switchgear and Controlgear Equipment Scheme X Product (Indonesian)";
+
+    // Switchgear and Controlgear Equipment above 1000 Volts Scheme X Product (Indonesian)
+    if (
+      path.includes(
+        "/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-di-atas-1000-volt"
+      )
+    )
+      return "Switchgear and Controlgear Equipment above 1000 Volts Scheme X Product (Indonesian)";
+
+    // Transformers Scheme X Product (Indonesian) Page Url
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-transformator"))
+      return "Transformers Scheme X Product (Indonesian)";
+
+    // Weaving Machines Scheme X Product (Indonesian) Page Url
+    if (path.includes("/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun"))
+      return "Weaving Machines Scheme X Product (Indonesian)";
   };
 
   const [formData, setFormData] = useState({

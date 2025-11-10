@@ -123,6 +123,27 @@ import SwitchgearandControlgearEquipmentVietnamese from "../schemeXProducts/Swit
 import SwitchgearandControlgearEquipmentSpanish from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentSpanish";
 import SwitchgearandControlgearEquipmentKorean from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentKorean";
 import SwitchgearandControlgearEquipmentIndonesian from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentIndonesian";
+import SwitchgearandControlgearEquipmentabove1000Volts from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000Volts";
+import SwitchgearandControlgearEquipmentabove1000VoltsFrench from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsFrench";
+import SwitchgearandControlgearEquipmentabove1000VoltsGerman from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsGerman";
+import SwitchgearandControlgearEquipmentabove1000VoltsVietnamese from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsVietnamese";
+import SwitchgearandControlgearEquipmentabove1000VoltsSpanish from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsSpanish";
+import SwitchgearandControlgearEquipmentabove1000VoltsKorean from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsKorean";
+import SwitchgearandControlgearEquipmentabove1000VoltsIndonesian from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsIndonesian";
+import Transformers from "../schemeXProducts/Transformers/Transformers";
+import TransformersFrench from "../schemeXProducts/Transformers/TransformersFrench";
+import TransformersGerman from "../schemeXProducts/Transformers/TransformersGerman";
+import TransformersVietnamese from "../schemeXProducts/Transformers/TransformersVietnamese";
+import TransformersSpanish from "../schemeXProducts/Transformers/TransformersSpanish";
+import TransformersKorean from "../schemeXProducts/Transformers/TransformersKorean";
+import TransformersIndonesian from "../schemeXProducts/Transformers/TransformersIndonesian";
+import WeavingMachines from "../schemeXProducts/WeavingMachines/WeavingMachines";
+import WeavingMachinesFrench from "../schemeXProducts/WeavingMachines/WeavingMachinesFrench";
+import WeavingMachinesGerman from "../schemeXProducts/WeavingMachines/WeavingMachinesGerman";
+import WeavingMachinesVietnamese from "../schemeXProducts/WeavingMachines/WeavingMachinesVietnamese";
+import WeavingMachinesSpanish from "../schemeXProducts/WeavingMachines/WeavingMachinesSpanish";
+import WeavingMachinesKorean from "../schemeXProducts/WeavingMachines/WeavingMachinesKorean";
+import WeavingMachinesIndonesian from "../schemeXProducts/WeavingMachines/WeavingMachinesIndonesian";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -943,6 +964,147 @@ export const SchemeXProductsRoutes = () => {
       />
 
       {/* Switchgear And Controlgear Equipment Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Switchgear And Controlgear Equipment Above 1000 Volts Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+        element={<SwitchgearandControlgearEquipmentabove1000Volts />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-appareillage-et-commande-au-dessus-1000-volts"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-ueber-1000-volt"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-tren-1000-volts"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-di-atas-1000-volt"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsIndonesian />}
+      />
+
+      {/* Switchgear And Controlgear Equipment Above 1000 Volts Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Transformers Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-transformers"
+        element={<Transformers />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-transformateurs"
+        element={<TransformersFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-transformatoren"
+        element={<TransformersGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-may-bien-ap"
+        element={<TransformersVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-transformadores"
+        element={<TransformersSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-byeonab-gi"
+        element={<TransformersKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-transformator"
+        element={<TransformersIndonesian />}
+      />
+
+      {/* Transformers Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Weaving Machines Pages Start */}
+      {/* English */}
+      <Route
+        path="/bis-scheme-x-certification-for-weaving-machines-looms"
+        element={<WeavingMachines />}
+      />
+      {/* French */}
+      <Route
+        path="/certification-bis-schema-x-pour-machines-a-tisser-metiers-a-tisser"
+        element={<WeavingMachinesFrench />}
+      />
+      {/* German */}
+      <Route
+        path="/bis-schema-x-zertifizierung-fuer-webmaschinen"
+        element={<WeavingMachinesGerman />}
+      />
+      {/* Vietnamese */}
+      <Route
+        path="/chung-nhan-bis-scheme-x-cho-may-det"
+        element={<WeavingMachinesVietnamese />}
+      />
+      {/* Spanish */}
+      <Route
+        path="/certificacion-bis-scheme-x-para-maquinas-de-tejido"
+        element={<WeavingMachinesSpanish />}
+      />
+      {/* Korean */}
+      <Route
+        path="/bis-seukim-x-injeung-jigjo-gi"
+        element={<WeavingMachinesKorean />}
+      />
+      {/* Indonesian */}
+      <Route
+        path="/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun"
+        element={<WeavingMachinesIndonesian />}
+      />
+
+      {/* Weaving Machines Pages End */}
     </>
   );
 };

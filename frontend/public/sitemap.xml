@@ -1195,18 +1195,6 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-weaving-machines-looms</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-rubber-and-plastics-machinery</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1226,18 +1214,6 @@
   </url>
   <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-power-semiconductor-converters</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-transformers</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -2113,7 +2089,7 @@
   <!-- Rubber and Plastics Machinery - SchemeX Products End -->
 
 
-  <!-- Switchgear and Controlgear Equipment up to 1000 Volts - SchemeX Products Start -->
+  <!-- Switchgear and Controlgear Equipments - SchemeX Products Start -->
   <!-- English -->
   <url>
     <loc>https://bis-certifications.com/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts</loc>
@@ -2163,89 +2139,170 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
-  <!-- Switchgear and Controlgear Equipment up to 1000 Volts - SchemeX Products End  -->
+  <!-- Switchgear and Controlgear Equipments - SchemeX Products End  -->
 
-  <!-- Switchgear and Controlgear Equipment above 1000 Volts - Multilingual -->
+  <!-- Switchgear and Controlgear Equipment above 1000 Volts - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
   <url>
     <loc>https://bis-certifications.com/certification-bis-schema-x-pour-appareillage-et-commande-au-dessus-1000-volts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- German -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-ueber-1000-volt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
-
-  <!-- Transformers - Multilingual -->
+  <!-- Vietnamese -->
   <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-transformateurs</loc>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-tren-1000-volts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Spanish -->
   <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-transformatoren</loc>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
-
-  <!-- Weaving Machines - Multilingual -->
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-tisser-metiers-a-tisser</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-webmaschinen</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-det</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-
-  <!-- Indonesian Routes -->
-
-  <!-- Italian Routes -->
-
-  <!-- Japanese Routes -->
-
-  <!-- Korean Routes -->
-  <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
+  <!-- Korean -->
   <url>
     <loc>https://bis-certifications.com/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-di-atas-1000-volt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Switchgear and Controlgear Equipment above 1000 Volts - SchemeX Products End -->
+
+
+<!-- Transformers - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-transformers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
+  <url>
+    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-transformateurs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- German -->
+  <url>
+    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-transformatoren</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-bien-ap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-transformadores</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
   <url>
     <loc>https://bis-certifications.com/bis-seukim-x-injeung-byeonab-gi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-transformator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+<!-- Transformers - SchemeX Products End -->
+
+
+<!-- Weaving Machines - SchemeX Products Start -->
+  <!-- English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-scheme-x-certification-for-weaving-machines-looms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- French -->
+  <url>
+    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-tisser-metiers-a-tisser</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- German -->
+  <url>
+    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-webmaschinen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-det</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinas-de-tejido</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Korean -->
   <url>
     <loc>https://bis-certifications.com/bis-seukim-x-injeung-jigjo-gi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+<!-- Weaving Machines - SchemeX Products End -->
+
+
+  <!-- Korean Routes -->
+  <url>
+    <loc>https://bis-certifications.com/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -2264,90 +2321,12 @@
   </url>
 
   <!-- Spanish Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-hasta-1000-voltios</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-equipos-de-interruptores-y-controladores-por-encima-de-1000-voltios</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-transformadores</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinas-de-tejido</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
 
   <!-- Vietnamese Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-len-den-1000-volts</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-tren-1000-volts</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-bien-ap</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
 
   <!-- French Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-appareillage-et-commande-au-dessus-1000-volts</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-transformateurs</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-tisser-metiers-a-tisser</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
 
   <!-- German Routes - Additional -->
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-schalt-und-steuergeraete-ueber-1000-volt</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-transformatoren</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-webmaschinen</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
 
   <!-- Blog Pages -->
   <url>
