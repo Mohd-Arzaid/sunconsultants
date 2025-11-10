@@ -144,6 +144,9 @@ import WeavingMachinesVietnamese from "../schemeXProducts/WeavingMachines/Weavin
 import WeavingMachinesSpanish from "../schemeXProducts/WeavingMachines/WeavingMachinesSpanish";
 import WeavingMachinesKorean from "../schemeXProducts/WeavingMachines/WeavingMachinesKorean";
 import WeavingMachinesIndonesian from "../schemeXProducts/WeavingMachines/WeavingMachinesIndonesian";
+import CentrifugesJapanese from "@/schemeXProducts/Centrifuges/CentrifugesJapanese";
+import CompressorsJapanese from "@/schemeXProducts/Compressors/CompressorsJapanese";
+import ConstructionMachineryJapanese from "@/schemeXProducts/ConstructionMachinery/ConstructionMachineryJapanese";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -227,6 +230,12 @@ export const SchemeXProductsRoutes = () => {
         element={<Centrifuges />}
       />
 
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai"
+        element={<CentrifugesJapanese />}
+      />
+
       {/* french */}
       <Route
         path="/certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification"
@@ -274,6 +283,12 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-scheme-x-certification-for-compressors"
         element={<Compressors />}
       />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-konpuresa"
+        element={<CompressorsJapanese />}
+      />
+
       {/* French */}
       <Route
         path="/certification-bis-schema-x-pour-compresseurs"
@@ -321,6 +336,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-scheme-x-certification-for-construction-machinery"
         element={<ConstructionMachinery />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-kensetsu-kikai"
+        element={<ConstructionMachineryJapanese />}
       />
       {/* French */}
       <Route

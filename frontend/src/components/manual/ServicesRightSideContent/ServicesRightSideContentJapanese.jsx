@@ -38,6 +38,13 @@ const ServicesRightSideContentJapanese = () => {
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
     "/ja/bis-shomeisho-toha-nani-ka-indo-no-bis",
+
+    // Centrifuges Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai",
+    // Compressors Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-konpuresa",
+    // Construction Machinery Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-kensetsu-kikai",
   ];
 
   // Check if current path should show these components
@@ -573,6 +580,22 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS CERTIFICATION PATH
     if (path.includes("/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"))
       return "BIS Certification (Japanese)";
+
+    // Centrifuges Scheme X Product (Japanese) Page Url
+    if (
+      path.includes(
+        "/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai"
+      )
+    )
+      return "Centrifuges Scheme X Product (Japanese)";
+
+    // Compressors Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-konpuresa"))
+      return "Compressors Scheme X Product (Japanese)";
+
+    // Construction Machinery Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-kensetsu-kikai"))
+      return "Construction Machinery Scheme X Product (Japanese)";
   };
 
   const [formData, setFormData] = useState({
