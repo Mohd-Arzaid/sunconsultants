@@ -10,12 +10,12 @@ import { SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
-import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
 import { Helmet } from "react-helmet-async";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
+import ServiceAuthorJapanese from "@/components/manual/ServiceAuthor/ServiceAuthorJapanese";
+import ServicesRightSideContentJapanese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentJapanese";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
+import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
 const BISImage = "/services-images/BIS.jpg";
 const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
@@ -24,36 +24,35 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-const CranesIndonesian = () => {
+const DieselGeneratorJapanese = () => {
   return (
     <div className="relative w-full">
-      <CranesMetaTags />
-
-      <CranesBreadcrumb />
-      <CranesMainContent />
+      <DieselGeneratorMetaTags />
+      <DieselGeneratorBreadcrumb />
+      <DieselGeneratorMainContent />
       <Services />
       <VideoSection />
-      <FooterIndonesian />
+      <FooterJapanese />
     </div>
   );
 };
 
-export default CranesIndonesian;
+export default DieselGeneratorJapanese;
 
-const CranesMetaTags = () => {
-  const title = "Sertifikasi BIS Scheme X untuk Derek";
+const DieselGeneratorMetaTags = () => {
+  const title = "ディーゼル発電機のBISスキームX認証";
   const description =
-    "Biro Standar India (BIS) telah memperkenalkan sertifikasi Scheme X wajib untuk semua jenis derek beserta rakitan, sub-rakitan, dan komponennya.";
+    "ディーゼル発電機とそのコンポーネントのBISスキームX認証は、インドにおける品質と安全性を標準化し維持することを目的とした重要な規制措置です";
   const keywords =
-    "Sertifikasi BIS untuk Derek, Sertifikasi BIS Scheme X untuk Derek, Sertifikasi Scheme X untuk Derek, BIS untuk Derek, OTR untuk Derek";
+    "ディーゼル発電機のBIS認証、ディーゼル発電機のBISスキームX認証、ディーゼル発電機のスキームX認証、ディーゼル発電機のBIS、ディーゼル発電機のOTR";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Derek di India | Panduan Lengkap";
+    "インドにおけるディーゼル発電機のBISスキームX認証 | 完全ガイド";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk Derek di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "インドにおけるディーゼル発電機のBISスキームX認証についてすべて学びましょう。OTR 2024への準拠、BISライセンスプロセス、ISIマーク要件、2026年9月の期限前に認証を取得する方法を理解してください";
 
   return (
     <Helmet>
@@ -74,7 +73,7 @@ const CranesMetaTags = () => {
   );
 };
 
-const CranesBreadcrumb = () => {
+const DieselGeneratorBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -84,7 +83,7 @@ const CranesBreadcrumb = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Beranda</Link>
+                    <Link to="/">ホーム</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -93,7 +92,7 @@ const CranesBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/SchemeX-Products">Produk SchemeX</Link>
+                    <Link to="/SchemeX-Products">スキームX製品</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -102,7 +101,7 @@ const CranesBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Scheme X untuk Derek
+                    ディーゼル発電機のBISスキームX認証
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -114,63 +113,53 @@ const CranesBreadcrumb = () => {
   );
 };
 
-const CranesMainContent = () => {
+const DieselGeneratorMainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
         {/* Left Side Content */}
-        <CranesMainContentLeft />
+        <DieselGeneratorMainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentIndonesian />
+        <ServicesRightSideContentJapanese />
       </div>
     </div>
   );
 };
 
-const CranesMainContentLeft = () => {
+const DieselGeneratorMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Scheme X untuk Derek
+          ディーゼル発電機のBISスキームX認証
         </h1>
 
         {/* Main Image */}
         <div className="mb-6">
           <img
-            src="/schemXproductImages/BIS-Scheme-X-license-for-Cranes.png"
-            alt="Sertifikasi BIS Scheme X untuk Derek"
-            title="Lisensi BIS Scheme X untuk Derek"
+            src="/schemXproductImages/BIS-Scheme-X-license-for-Diesel-Generator.png"
+            alt="ディーゼル発電機のBISスキームX認証"
+            title="ディーゼル発電機のBISスキームXライセンス"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Derek terutama digunakan untuk mengangkat dan mengangkut material
-          serta dalam manufaktur, konstruksi, produksi, dan pertambangan. Karena
-          fungsinya dapat menjadi kritis untuk keselamatan, derek yang tidak
-          memenuhi syarat atau berkualitas buruk dapat mengakibatkan terpeleset
-          dan jatuh, kerusakan peralatan, atau kerugian yang mahal.
+          ディーゼル発電機は、商業施設、工業施設、病院、インフラプロジェクト、住宅プロジェクト、その他多くの場所で二次電源として使用されています。電力供給の継続性を保証する責任を負う経済資産として、機械が安全で効率的であり、国家基準を満たすことが重要です。
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mengingat bahaya-bahaya ini, Biro Standar India (BIS) telah membuat
-          Sertifikasi BIS untuk Derek menjadi wajib di bawah Sertifikasi Scheme
-          – X. Hal ini memastikan bahwa derek yang digunakan di India aman,
-          andal, efisien, dan berkualitas kelas dunia.
+          これを実現するために、ディーゼル発電機のBIS認証は、インド標準局（BIS）のスキームX認証に含まれています。このスキームは、国内およびグローバルな製造業者がインドで製品を販売する前に、厳格なインド標準を満たすことを確保するために制定されました。
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Dalam blog ini, kami akan memandu Anda tentang pentingnya Registrasi
-          BIS Scheme X untuk Derek, aspek hukum OTR untuk Derek, dan cara
-          mendapatkan Lisensi BIS untuk Derek serta menandai tanda Standar BIS
-          untuk Derek.
+          この投稿では、ディーゼル発電機のBISスキームX認証の重要性、2024年のOTR指令、および製造業者が認証を取得する方法について詳しく説明します。
         </p>
 
         {/* Separator Line */}
@@ -178,39 +167,36 @@ const CranesMainContentLeft = () => {
 
         {/* Why BIS is Important Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa BIS untuk Derek Penting
+          ディーゼル発電機のBISが重要な理由
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Derek banyak digunakan di:
+          ディーゼル発電機は以下の場所で使用されています：
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Pekerjaan bangunan & infrastruktur</li>
-          <li>Pelabuhan laut, galangan kapal dan pusat logistik lainnya</li>
-          <li>Pabrik dan pabrik perakitan</li>
-          <li>Pertambangan logam dan penanganan material berat</li>
-          <li>Pembangkit listrik dan industri lainnya</li>
+          <li>工場と作業現場</li>
+          <li>病院と緊急対応施設</li>
+          <li>データセンターとITハブ</li>
+          <li>商業ビルと住宅</li>
+          <li>公共事業とユーティリティ</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tanpa BIS untuk Derek, peralatan yang tidak bersertifikat dapat
-          menyebabkan:
+          ディーゼル発電機が適切に認証されていない場合、リスクは非常に大きくなります：
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Kerusakan mekanis dan kecelakaan</li>
-          <li>Penurunan ketersediaan dan peningkatan biaya perawatan</li>
-          <li>Kehilangan kelayakan untuk proyek pemerintah</li>
-          <li>Pekerja dan infrastruktur terpapar bahaya keselamatan</li>
+          <li>メーターの故障（機械的および電気的）により供給不足が発生</li>
+          <li>非準拠ユニットにおける火災と安全上の危険の高いリスク</li>
+          <li>排出量が過剰でエネルギー効率が低い</li>
+          <li>法的障害、入札からの排除</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Tanda BIS untuk Derek memberikan keyakinan kepada konsumen dan
-          regulator bahwa produk mematuhi norma kualitas dan keselamatan India
-          yang ketat.
+          ディーゼル発電機は、スキームX認証を容易に満たすことができ、製造業者がインドで使用する安全で信頼性が高く環境に優しい製品を販売することを可能にします。
         </p>
 
         {/* Separator Line */}
@@ -218,33 +204,25 @@ const CranesMainContentLeft = () => {
 
         {/* What is BIS Scheme X Certification Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS Scheme X untuk Derek?
+          ディーゼル発電機のBISスキームX認証とは何ですか？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi Scheme X untuk Derek di bawah BIS adalah wajib berdasarkan
-          Peraturan Penilaian Kesesuaian BIS, 2018, yang mewajibkan sertifikasi
-          produk untuk mesin kritis.
+          ディーゼル発電機のBISスキームX認証は、正式な認証プロセスであり、BIS適合性評価規則2018によって設立されたシステムです。これは、インド標準への準拠を検証するために、厳格なテストと品質評価を義務付けています。
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Fitur Utama Scheme X untuk Derek:
+          スキームX認証のハイライト：
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Diperlukan untuk produsen domestik maupun asing</li>
+          <li>すべての製造業者 - インドおよび外国 - 必須要件</li>
+          <li>異なる容量のすべての種類のディーゼル発電機に適用</li>
+          <li>BIS認定の研究所での製品テストを含む</li>
           <li>
-            Berlaku untuk semua kategori utama derek & diberitahukan di bawah
-            Standar India
+            工場監査、ワークショップ訪問、製造プロセス検査により、品質と安全基準を確保するために現場で工場を独立して検査します。
           </li>
-          <li>
-            Pengujian produk, audit pabrik dan penilaian kepatuhan berkelanjutan
-            diwajibkan
-          </li>
-          <li>
-            Memberikan lisensi untuk penggunaan tanda BIS pada Derek pada produk
-            bersertifikat
-          </li>
+          <li>ライセンス取得時にBIS標準マークを使用するライセンスを提供</li>
         </ul>
 
         {/* Separator Line */}
@@ -252,21 +230,15 @@ const CranesMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR untuk Derek
+          ディーゼル発電機（DG）のBIS OTR
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Peraturan Teknis Omnibus (OTR) untuk Derek, yang telah diberitahukan
-          oleh Kementerian Industri Berat pada tahun 2024, bertujuan untuk
-          mewajibkan sertifikasi.
+          重工業省は、2024年にディーゼル発電機のOTRに関する通知を発行しました。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Semua Produsen / Importir Derek perlu mendapatkan Lisensi
-          BIS untuk Derek di bawah Scheme X paling lambat pada tanggal 01
-          September 2026. Setelah itu, derek yang tidak bersertifikat tidak
-          dapat dipasarkan atau diimpor atau digunakan dalam tender publik di
-          India.
+          施行日：すべての製造業者と輸入業者は、2026年9月1日までに認証を取得する必要があります。この日から、認証されていないディーゼル発電機の製造、販売、または輸入はインドで禁止されます。
         </p>
 
         {/* Separator Line */}
@@ -274,68 +246,49 @@ const CranesMainContentLeft = () => {
 
         {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Keuntungan Sertifikasi BIS untuk Derek
+          ディーゼル発電機のBIS認証の利点
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Peningkatan Keselamatan: Derek bersertifikat meminimalkan kegagalan
-            mekanis dan kecelakaan.
+            安全性の保証：機械的故障を最小限に抑え、火災、短絡、事故を防ぐための防火技術に基づいています。
           </li>
           <li>
-            Keuntungan Pasar: Badan pemerintah dan perusahaan swasta memberikan
-            preferensi untuk derek bersertifikat BIS dalam e-tender dan proyek
-            besar.
+            環境への準拠：省エネルギー基準と排出削減が遵守されていることを確保します。
           </li>
           <li>
-            Kepercayaan Konsumen & Kontraktor: Tanda BIS untuk Derek menciptakan
-            kepercayaan akan kualitas dan keandalan.
+            市場へのアクセス：ディーゼル発電機のOTR -
+            インドで販売するための必須認証
           </li>
+          <li>顧客の信頼：BIS標準マークは高い信頼性と安全性を保証します。</li>
           <li>
-            Masuk ke Pasar Global: Untuk produsen luar negeri, Lisensi BIS untuk
-            Derek memungkinkan penetrasi tanpa hambatan ke pasar India yang
-            diatur.
-          </li>
-          <li>
-            Kepatuhan dengan Hukum India: Mencegah denda, penyitaan, dan
-            pengecualian dari kontrak pemerintah.
+            入札資格：政府/公共事業の契約では、製品が認証されている必要があります。
           </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Types of Cranes Section */}
+        {/* Types of Diesel Generators Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Derek yang Termasuk dalam Sertifikasi Scheme X
+          スキームXでカバーされるディーゼル発電機の種類
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Derek yang tercantum di bawah sertifikasi Scheme X terdiri dari
-          berbagai jenis, misalnya:
+          ディーゼル発電機Xの認証スキームには、以下のグループが含まれます：
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Derek Menara</li>
-          <li>Derek Bergerak</li>
-          <li>Derek Gantry dan Goliath</li>
-          <li>Derek OH/BR</li>
-          <li>Derek Crawler</li>
-          <li>Derek Jib</li>
-          <li>Derek Apung</li>
-          <li>Derek Industri dan Bengkel</li>
+          <li>ディーゼルを使用するモバイルホーム発電機</li>
+          <li>商業用ディーゼル発電機セット（高容量）</li>
+          <li>緊急および待機電源供給発電機</li>
+          <li>商業用静音ディーゼル発電機セット（都市用途と使用）</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap varian harus mematuhi Standar India (kode IS) yang sesuai
-          seperti IS 4573:2020 untuk Spesifikasi Derek Bergerak Bertenaga dan
-          IS/ISO 15442:2012 untuk Derek - Persyaratan keselamatan untuk derek
-          loader.
-        </p>
-
         <p className="text-gray-600 text-base font-geist mb-6">
-          Jenis peralatan harus mematuhi standar India yang relevan (kode IS)
-          untuk desain, kapasitas beban, keselamatan dan kinerja.
+          各サブタイプは、IS 16819:2018 / ISO 12100:2010（機械の安全性 -
+          設計の一般原則 -
+          リスク評価とリスク低減）などの適用可能なインド標準（ISコード）に準拠する必要があります。各タイプは独自のインド標準を満たす必要があります。
         </p>
 
         {/* Separator Line */}
@@ -343,51 +296,37 @@ const CranesMainContentLeft = () => {
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Prosedur untuk Mendapatkan Lisensi BIS untuk Derek
+          ディーゼル発電機のBIS認証手順
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+          <li>適用可能な標準の特定：発電機の種類のISコードを調べます。</li>
           <li>
-            Identifikasi Standar IS yang Relevan: Identifikasi Standar India
-            yang berlaku untuk jenis derek Anda.
+            製品テスト：BIS認定の研究所で安全性、性能、排出のテストを実施します。
+          </li>
+          <li>工場監査：BIS職員が製造品質管理プロセスを検査します。</li>
+          <li>書類提出：仕様、テスト結果、準拠書類を提供します。</li>
+          <li>
+            ライセンス発行：承認後、BISがライセンスを発行し、標準マークの使用を許可します。
           </li>
           <li>
-            Pengujian di Laboratorium yang Diakui BIS: Wajib melakukan pengujian
-            keselamatan dan kemanjuran.
-          </li>
-          <li>
-            Inspeksi Pabrik: BIS melakukan inspeksi lokasi produksi dan sistem
-            kualitas.
-          </li>
-          <li>
-            Aplikasi & Dokumentasi: Sajikan laporan teknis, hasil pengujian, dan
-            manual kualitas.
-          </li>
-          <li>
-            Lisensi BIS pada Derek: Setelah disetujui, produsen memiliki hak
-            istimewa untuk menerapkan tanda BIS untuk Derek.
-          </li>
-          <li>
-            Kepatuhan Berkelanjutan: Audit dan inspeksi rutin memastikan
-            kepatuhan yang berkelanjutan.
+            継続的な準拠：認証が有効であることを確保するために、監査と製品検査が実施されます。
           </li>
         </ul>
 
         <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Hukuman untuk Ketidakpatuhan
+          非準拠に対する罰則
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Apa yang terjadi jika seseorang tidak mengikuti OTR untuk Derek dan
-          tidak mendapatkan Sertifikasi BIS untuk Derek pada tanggal 1 September
-          2026?
+          ディーゼル発電機のOTRによるディーゼル発電機のBIS認証に準拠しない場合、以下の結果が生じる可能性があります：
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Melarang penjualan dan impor derek yang tidak bersertifikat</li>
-          <li>Penyitaan produk dan denda besar</li>
-          <li>Diskualifikasi dari tender pemerintah dan BUMN</li>
-          <li>Dampak negatif jangka panjang pada merek</li>
+          <li>認証されていない機器の販売、輸入、製造の禁止。</li>
+          <li>物品の没収と金銭的罰金</li>
+          <li>政府契約への不適格</li>
+          <li>永続的な評判と財務的損害</li>
         </ul>
 
         {/* Separator Line */}
@@ -395,24 +334,18 @@ const CranesMainContentLeft = () => {
 
         {/* Conclusion Section */}
         <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Kesimpulan
+          結論
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Pemberlakuan Sertifikasi BIS Scheme X akan menjadi tonggak penting
-          yang akan meningkatkan keselamatan, keandalan dan menyediakan standar
-          industri umum di India.
+          ディーゼル発電機のOTR（2024）に準拠したディーゼル発電機のBISスキームX認証は、インドのバックアップ電源産業における製品の安全性、信頼性、効率性の向上の旅における重要なマイルストーンです。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Bagi produsen, importir, eksportir Derek, penting untuk memiliki
-          Lisensi BIS untuk Derek dan dapat mengajukan melalui portal aplikasi
-          online untuk Registrasi BIS Derek agar mematuhi standar, membangun
-          kepercayaan konsumen, dan juga untuk menghindari potensi konflik
-          dengan BIS atau Pemerintah India.
+          製造業者/輸入業者にとって、ディーゼル発電機のスキームX認証は、単なる法的要件ではなく、信頼性、準拠性、市場の信頼を反映する競争上の優位性でもあります。
         </p>
 
-        <ServiceAuthorIndonesian />
+        <ServiceAuthorJapanese />
       </div>
     </div>
   );
@@ -425,7 +358,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Layanan Kami
+              当社のサービス
             </h2>
           </BoxReveal>
 
@@ -433,7 +366,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Konsultan Sertifikat Terbaik India
+                インド最高の認証コンサルタント
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -453,7 +386,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Tanda BIS (Lisensi ISI) untuk Manufaktur Asing
+              外国製造業者向けBISマーク（ISIライセンス）
             </p>
           </Link>
 
@@ -469,7 +402,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Registrasi CDSCO
+              CDSCO登録認証
             </p>
           </Link>
 
@@ -485,7 +418,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Registrasi BIS (CRS)
+              BIS登録（CRS）
             </p>
           </Link>
 
@@ -501,7 +434,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Manajemen Limbah Plastik
+              プラスチック廃棄物管理
             </p>
           </Link>
 
@@ -517,7 +450,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat EPR
+              EPR証明書認証
             </p>
           </Link>
 
@@ -533,7 +466,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat LMPC
+              LMPC証明書認証
             </p>
           </Link>
 
@@ -549,7 +482,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikat Registrasi BIS
+              BIS登録証明書
             </p>
           </Link>
 
@@ -565,7 +498,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              TANDA ISI (BIS) untuk Manufaktur India
+              インド製造業者向けISIマーク（BIS）
             </p>
           </Link>
         </div>

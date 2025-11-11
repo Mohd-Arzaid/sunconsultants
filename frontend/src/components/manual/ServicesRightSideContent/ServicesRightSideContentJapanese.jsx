@@ -38,13 +38,24 @@ const ServicesRightSideContentJapanese = () => {
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
     "/ja/bis-shomeisho-toha-nani-ka-indo-no-bis",
-
     // Centrifuges Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai",
     // Compressors Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-konpuresa",
     // Construction Machinery Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-kensetsu-kikai",
+    // Cranes Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-kurein",
+    // Diesel Generators Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-dizeru-hatsudenki",
+    // Embroidery Machines Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-shishu-kikai",
+    // Gears, Gearing and Transmission Elements Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso",
+    // Heat Treatment Equipment Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-netsu-shori-souchi",
+    // Machine Tools Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-kousaku-kikai",
   ];
 
   // Check if current path should show these components
@@ -596,6 +607,30 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // Construction Machinery Scheme X Product (Japanese) Page Url
     if (path.includes("/bis-sukiimu-x-ninshoo-kensetsu-kikai"))
       return "Construction Machinery Scheme X Product (Japanese)";
+
+    // Cranes Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-kurein"))
+      return "Cranes Scheme X Product (Japanese)";
+
+    // Diesel Generators Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-dizeru-hatsudenki"))
+      return "Diesel Generators Scheme X Product (Japanese)";
+
+    // Embroidery Machines Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-shishu-kikai"))
+      return "Embroidery Machines Scheme X Product (Japanese)";
+
+    // Gears, Gearing and Transmission Elements Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso"))
+      return "Gears, Gearing and Transmission Elements Scheme X Product (Japanese)";
+
+    // Heat Treatment Equipment Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-netsu-shori-souchi"))
+      return "Heat Treatment Equipment Scheme X Product (Japanese)";
+
+    // Machine Tools Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-kousaku-kikai"))
+      return "Machine Tools Scheme X Product (Japanese)";
   };
 
   const [formData, setFormData] = useState({

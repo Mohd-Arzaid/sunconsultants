@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./common/Navbar";
 import TopBar from "./common/TopBar";
 import MobileNav from "./components/common/MobileNav";
@@ -105,6 +105,8 @@ function App() {
 
   // Check if current route is admin
   const isAdminRoute = location.pathname === "/admin";
+
+
 
   return (
     <>

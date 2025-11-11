@@ -147,6 +147,12 @@ import WeavingMachinesIndonesian from "../schemeXProducts/WeavingMachines/Weavin
 import CentrifugesJapanese from "@/schemeXProducts/Centrifuges/CentrifugesJapanese";
 import CompressorsJapanese from "@/schemeXProducts/Compressors/CompressorsJapanese";
 import ConstructionMachineryJapanese from "@/schemeXProducts/ConstructionMachinery/ConstructionMachineryJapanese";
+import CranesJapanese from "@/schemeXProducts/Cranes/CranesJapanese";
+import DieselGeneratorJapanese from "@/schemeXProducts/DieselGenerator/DieselGeneratorJapanese";
+import EmbroideryMachinesJapanese from "@/schemeXProducts/EmbroideryMachines/EmbroideryMachinesJapanese";
+import GearsGearingsandTransmissionJapanese from "@/schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionJapanese";
+import HeatTreatmentEquipmentJapanese from "@/schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentJapanese";
+import MachineToolsJapanese from "@/schemeXProducts/MachineTools/MachineToolsJapanese";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -390,6 +396,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-scheme-x-certification-for-cranes"
         element={<Cranes />}
       />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-kurein"
+        element={<CranesJapanese />}
+      />
       {/* French */}
       <Route
         path="/certification-bis-schema-x-pour-ponts-roulants"
@@ -432,6 +443,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-scheme-x-certification-for-diesel-generators"
         element={<DieselGenerator />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-dizeru-hatsudenki"
+        element={<DieselGeneratorJapanese />}
       />
       {/* French */}
       <Route
@@ -511,7 +527,11 @@ export const SchemeXProductsRoutes = () => {
         path="/sertifikasi-bis-skema-x-untuk-mesin-bordir"
         element={<EmbroideryMachinesIndonesian />}
       />
-
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-shishu-kikai"
+        element={<EmbroideryMachinesJapanese />}
+      />
       {/* Embroidery Machines Pages End */}
 
       {/* ==================================================================== */}
@@ -557,6 +577,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
         element={<GearsGearingsandTransmissionIndonesian />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso"
+        element={<GearsGearingsandTransmissionJapanese />}
       />
 
       {/* Gears, Gearing and Transmission Elements Pages End */}
@@ -605,6 +630,11 @@ export const SchemeXProductsRoutes = () => {
         path="/sertifikasi-bis-skema-x-untuk-peralatan-perlakuan-panas"
         element={<HeatTreatmentEquipmentIndonesian />}
       />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-netsu-shori-souchi"
+        element={<HeatTreatmentEquipmentJapanese />}
+      />
 
       {/* Heat Treatment Equipment Pages End */}
 
@@ -652,6 +682,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-perkakas-mesin"
         element={<MachineToolsIndonesian />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-kousaku-kikai"
+        element={<MachineToolsJapanese />}
       />
 
       {/* Machine Tools Pages End */}

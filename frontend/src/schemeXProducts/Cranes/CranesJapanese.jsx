@@ -10,10 +10,10 @@ import { SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
-import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
+import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
+import ServiceAuthorJapanese from "@/components/manual/ServiceAuthor/ServiceAuthorJapanese";
 import { Helmet } from "react-helmet-async";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
+import ServicesRightSideContentJapanese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentJapanese";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 const BISImage = "/services-images/BIS.jpg";
@@ -24,36 +24,34 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-const CranesIndonesian = () => {
+const CranesJapanese = () => {
   return (
     <div className="relative w-full">
       <CranesMetaTags />
-
       <CranesBreadcrumb />
       <CranesMainContent />
       <Services />
       <VideoSection />
-      <FooterIndonesian />
+      <FooterJapanese />
     </div>
   );
 };
 
-export default CranesIndonesian;
+export default CranesJapanese;
 
 const CranesMetaTags = () => {
-  const title = "Sertifikasi BIS Scheme X untuk Derek";
+  const title = "クレーンのBISスキームX認証";
   const description =
-    "Biro Standar India (BIS) telah memperkenalkan sertifikasi Scheme X wajib untuk semua jenis derek beserta rakitan, sub-rakitan, dan komponennya.";
+    "インド標準局（BIS）は、すべての種類のクレーンとその組立、サブ組立、コンポーネントに対する必須のスキームX認証を導入しました。";
   const keywords =
-    "Sertifikasi BIS untuk Derek, Sertifikasi BIS Scheme X untuk Derek, Sertifikasi Scheme X untuk Derek, BIS untuk Derek, OTR untuk Derek";
+    "クレーンのBIS認証、クレーンのBISスキームX認証、クレーンのスキームX認証、クレーンのBIS、クレーンのOTR";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Derek di India | Panduan Lengkap";
+  const ogTitle = "インドにおけるクレーンのBISスキームX認証 | 完全ガイド";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk Derek di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "インドにおけるクレーンのBISスキームX認証についてすべて学びましょう。OTR 2024への準拠、BISライセンスプロセス、ISIマーク要件、2026年9月の期限前に認証を取得する方法を理解してください";
 
   return (
     <Helmet>
@@ -84,7 +82,7 @@ const CranesBreadcrumb = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Beranda</Link>
+                    <Link to="/">ホーム</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -93,7 +91,7 @@ const CranesBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/SchemeX-Products">Produk SchemeX</Link>
+                    <Link to="/SchemeX-Products">スキームX製品</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -102,7 +100,7 @@ const CranesBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Scheme X untuk Derek
+                    クレーンのBISスキームX
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -122,7 +120,7 @@ const CranesMainContent = () => {
         <CranesMainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentIndonesian />
+        <ServicesRightSideContentJapanese />
       </div>
     </div>
   );
@@ -135,42 +133,32 @@ const CranesMainContentLeft = () => {
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Scheme X untuk Derek
+          クレーンのBISスキームX認証
         </h1>
 
         {/* Main Image */}
         <div className="mb-6">
           <img
             src="/schemXproductImages/BIS-Scheme-X-license-for-Cranes.png"
-            alt="Sertifikasi BIS Scheme X untuk Derek"
-            title="Lisensi BIS Scheme X untuk Derek"
+            alt="クレーンのBISスキームX認証"
+            title="クレーンのBISスキームXライセンス"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Derek terutama digunakan untuk mengangkat dan mengangkut material
-          serta dalam manufaktur, konstruksi, produksi, dan pertambangan. Karena
-          fungsinya dapat menjadi kritis untuk keselamatan, derek yang tidak
-          memenuhi syarat atau berkualitas buruk dapat mengakibatkan terpeleset
-          dan jatuh, kerusakan peralatan, atau kerugian yang mahal.
+          クレーンは主に材料の持ち上げと輸送、および製造、建設、生産、採掘に使用されます。その機能は安全性にとって重要であるため、資格のないクレーンや品質の低いクレーンは、滑落や落下、機器の損傷、または高額な損失を引き起こす可能性があります。
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mengingat bahaya-bahaya ini, Biro Standar India (BIS) telah membuat
-          Sertifikasi BIS untuk Derek menjadi wajib di bawah Sertifikasi Scheme
-          – X. Hal ini memastikan bahwa derek yang digunakan di India aman,
-          andal, efisien, dan berkualitas kelas dunia.
+          これらの危険性を考慮して、インド標準局（BIS）は、スキームX認証の下でクレーンのBIS認証を必須としました。これにより、インドで使用されるクレーンが安全で信頼性が高く、効率的で、世界クラスの品質であることが保証されます。
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Dalam blog ini, kami akan memandu Anda tentang pentingnya Registrasi
-          BIS Scheme X untuk Derek, aspek hukum OTR untuk Derek, dan cara
-          mendapatkan Lisensi BIS untuk Derek serta menandai tanda Standar BIS
-          untuk Derek.
+          このブログでは、クレーンのBISスキームX登録の重要性、クレーンのOTRの法的側面、クレーンのBISライセンスの取得方法、およびクレーンのBIS標準マークの表示方法についてご案内します。
         </p>
 
         {/* Separator Line */}
@@ -178,39 +166,36 @@ const CranesMainContentLeft = () => {
 
         {/* Why BIS is Important Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa BIS untuk Derek Penting
+          クレーンのBISが重要な理由
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Derek banyak digunakan di:
+          クレーンは以下の場所で広く使用されています：
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Pekerjaan bangunan & infrastruktur</li>
-          <li>Pelabuhan laut, galangan kapal dan pusat logistik lainnya</li>
-          <li>Pabrik dan pabrik perakitan</li>
-          <li>Pertambangan logam dan penanganan material berat</li>
-          <li>Pembangkit listrik dan industri lainnya</li>
+          <li>建設工事とインフラ</li>
+          <li>海港、造船所、その他の物流センター</li>
+          <li>工場と組立工場</li>
+          <li>金属採掘と重材料の取り扱い</li>
+          <li>発電所とその他の産業</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tanpa BIS untuk Derek, peralatan yang tidak bersertifikat dapat
-          menyebabkan:
+          クレーンのBIS認証がない場合、認証されていない機器は以下を引き起こす可能性があります：
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Kerusakan mekanis dan kecelakaan</li>
-          <li>Penurunan ketersediaan dan peningkatan biaya perawatan</li>
-          <li>Kehilangan kelayakan untuk proyek pemerintah</li>
-          <li>Pekerja dan infrastruktur terpapar bahaya keselamatan</li>
+          <li>機械的故障と事故</li>
+          <li>可用性の低下とメンテナンスコストの増加</li>
+          <li>政府プロジェクトへの参加資格の喪失</li>
+          <li>労働者とインフラへの安全上の危険</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Tanda BIS untuk Derek memberikan keyakinan kepada konsumen dan
-          regulator bahwa produk mematuhi norma kualitas dan keselamatan India
-          yang ketat.
+          クレーンのBISマークは、消費者と規制当局に、製品がインドの厳格な品質と安全基準に準拠していることを保証します。
         </p>
 
         {/* Separator Line */}
@@ -218,33 +203,26 @@ const CranesMainContentLeft = () => {
 
         {/* What is BIS Scheme X Certification Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS Scheme X untuk Derek?
+          クレーンのBISスキームX認証とは何ですか？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi Scheme X untuk Derek di bawah BIS adalah wajib berdasarkan
-          Peraturan Penilaian Kesesuaian BIS, 2018, yang mewajibkan sertifikasi
-          produk untuk mesin kritis.
+          BISの下でのクレーンのスキームX認証は、重要な機械の製品認証を義務付ける2018年のBIS適合性評価規則に基づいて必須です。
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Fitur Utama Scheme X untuk Derek:
+          クレーンのスキームXの主な特徴：
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Diperlukan untuk produsen domestik maupun asing</li>
+          <li>国内および外国の製造業者に必要</li>
           <li>
-            Berlaku untuk semua kategori utama derek & diberitahukan di bawah
-            Standar India
+            すべての主要なクレーンカテゴリーに適用され、インド標準の下で通知される
           </li>
           <li>
-            Pengujian produk, audit pabrik dan penilaian kepatuhan berkelanjutan
-            diwajibkan
+            製品テスト、工場監査、継続的なコンプライアンス評価が義務付けられている
           </li>
-          <li>
-            Memberikan lisensi untuk penggunaan tanda BIS pada Derek pada produk
-            bersertifikat
-          </li>
+          <li>認証製品にクレーンのBISマークを使用するためのライセンスを提供</li>
         </ul>
 
         {/* Separator Line */}
@@ -252,21 +230,15 @@ const CranesMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR untuk Derek
+          クレーンのBIS OTR
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Peraturan Teknis Omnibus (OTR) untuk Derek, yang telah diberitahukan
-          oleh Kementerian Industri Berat pada tahun 2024, bertujuan untuk
-          mewajibkan sertifikasi.
+          2024年に重工業省によって通知されたクレーンの包括的技術規則（OTR）は、認証を義務付けることを目的としています。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Semua Produsen / Importir Derek perlu mendapatkan Lisensi
-          BIS untuk Derek di bawah Scheme X paling lambat pada tanggal 01
-          September 2026. Setelah itu, derek yang tidak bersertifikat tidak
-          dapat dipasarkan atau diimpor atau digunakan dalam tender publik di
-          India.
+          期限：すべてのクレーンの製造業者/輸入業者は、2026年9月1日までにスキームXの下でクレーンのBISライセンスを取得する必要があります。その後、認証されていないクレーンは、インドで販売、輸入、または公共入札で使用することはできません。
         </p>
 
         {/* Separator Line */}
@@ -274,32 +246,23 @@ const CranesMainContentLeft = () => {
 
         {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Keuntungan Sertifikasi BIS untuk Derek
+          クレーンのBIS認証の利点
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Peningkatan Keselamatan: Derek bersertifikat meminimalkan kegagalan
-            mekanis dan kecelakaan.
+            安全性の向上：認証されたクレーンは機械的故障と事故を最小限に抑えます。
           </li>
           <li>
-            Keuntungan Pasar: Badan pemerintah dan perusahaan swasta memberikan
-            preferensi untuk derek bersertifikat BIS dalam e-tender dan proyek
-            besar.
+            市場優位性：政府機関と民間企業は、電子入札や大規模プロジェクトでBIS認証クレーンを優先します。
           </li>
           <li>
-            Kepercayaan Konsumen & Kontraktor: Tanda BIS untuk Derek menciptakan
-            kepercayaan akan kualitas dan keandalan.
+            消費者と請負業者の信頼：クレーンのBISマークは、品質と信頼性への信頼を生み出します。
           </li>
           <li>
-            Masuk ke Pasar Global: Untuk produsen luar negeri, Lisensi BIS untuk
-            Derek memungkinkan penetrasi tanpa hambatan ke pasar India yang
-            diatur.
+            グローバル市場への参入：外国の製造業者にとって、クレーンのBISライセンスは、規制されたインド市場への障壁のない参入を可能にします。
           </li>
-          <li>
-            Kepatuhan dengan Hukum India: Mencegah denda, penyitaan, dan
-            pengecualian dari kontrak pemerintah.
-          </li>
+          <li>インド法への準拠：罰金、没収、政府契約からの除外を防ぎます。</li>
         </ul>
 
         {/* Separator Line */}
@@ -307,35 +270,32 @@ const CranesMainContentLeft = () => {
 
         {/* Types of Cranes Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Derek yang Termasuk dalam Sertifikasi Scheme X
+          スキームX認証に含まれるクレーンの種類
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Derek yang tercantum di bawah sertifikasi Scheme X terdiri dari
-          berbagai jenis, misalnya:
+          スキームX認証の下にリストされているクレーンは、以下のようなさまざまな種類で構成されています：
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Derek Menara</li>
-          <li>Derek Bergerak</li>
-          <li>Derek Gantry dan Goliath</li>
-          <li>Derek OH/BR</li>
-          <li>Derek Crawler</li>
-          <li>Derek Jib</li>
-          <li>Derek Apung</li>
-          <li>Derek Industri dan Bengkel</li>
+          <li>タワークレーン</li>
+          <li>移動式クレーン</li>
+          <li>ガントリークレーンとゴライアスクレーン</li>
+          <li>OH/BRクレーン</li>
+          <li>クローラークレーン</li>
+          <li>ジブクレーン</li>
+          <li>浮遊クレーン</li>
+          <li>産業用およびワークショップクレーン</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Setiap varian harus mematuhi Standar India (kode IS) yang sesuai
-          seperti IS 4573:2020 untuk Spesifikasi Derek Bergerak Bertenaga dan
-          IS/ISO 15442:2012 untuk Derek - Persyaratan keselamatan untuk derek
-          loader.
+          各バリアントは、動力付き移動式クレーンの仕様のIS 4573:2020や、クレーン
+          - ローダークレーンの安全要件のIS/ISO
+          15442:2012など、適切なインド標準（ISコード）に準拠する必要があります。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Jenis peralatan harus mematuhi standar India yang relevan (kode IS)
-          untuk desain, kapasitas beban, keselamatan dan kinerja.
+          機器の種類は、設計、負荷容量、安全性、性能について、関連するインド標準（ISコード）に準拠する必要があります。
         </p>
 
         {/* Separator Line */}
@@ -343,51 +303,41 @@ const CranesMainContentLeft = () => {
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Prosedur untuk Mendapatkan Lisensi BIS untuk Derek
+          クレーンのBISライセンスを取得する手順
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
           <li>
-            Identifikasi Standar IS yang Relevan: Identifikasi Standar India
-            yang berlaku untuk jenis derek Anda.
+            関連するIS標準の特定：お客様のクレーンタイプに適用されるインド標準を特定します。
           </li>
           <li>
-            Pengujian di Laboratorium yang Diakui BIS: Wajib melakukan pengujian
-            keselamatan dan kemanjuran.
+            BIS認定ラボでのテスト：安全性と有効性のテストが義務付けられています。
+          </li>
+          <li>工場検査：BISが生産場所と品質システムを検査します。</li>
+          <li>
+            申請と文書化：技術レポート、テスト結果、品質マニュアルを提出します。
           </li>
           <li>
-            Inspeksi Pabrik: BIS melakukan inspeksi lokasi produksi dan sistem
-            kualitas.
+            クレーンのBISライセンス：承認後、製造業者はクレーンのBISマークを適用する権利を取得します。
           </li>
           <li>
-            Aplikasi & Dokumentasi: Sajikan laporan teknis, hasil pengujian, dan
-            manual kualitas.
-          </li>
-          <li>
-            Lisensi BIS pada Derek: Setelah disetujui, produsen memiliki hak
-            istimewa untuk menerapkan tanda BIS untuk Derek.
-          </li>
-          <li>
-            Kepatuhan Berkelanjutan: Audit dan inspeksi rutin memastikan
-            kepatuhan yang berkelanjutan.
+            継続的なコンプライアンス：定期的な監査と検査により、継続的なコンプライアンスが確保されます。
           </li>
         </ul>
 
         <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Hukuman untuk Ketidakpatuhan
+          不遵守に対する罰則
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Apa yang terjadi jika seseorang tidak mengikuti OTR untuk Derek dan
-          tidak mendapatkan Sertifikasi BIS untuk Derek pada tanggal 1 September
-          2026?
+          クレーンのOTRに従わず、2026年9月1日までにクレーンのBIS認証を取得しない場合、どうなりますか？
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Melarang penjualan dan impor derek yang tidak bersertifikat</li>
-          <li>Penyitaan produk dan denda besar</li>
-          <li>Diskualifikasi dari tender pemerintah dan BUMN</li>
-          <li>Dampak negatif jangka panjang pada merek</li>
+          <li>認証されていないクレーンの販売と輸入の禁止</li>
+          <li>製品の没収と高額な罰金</li>
+          <li>政府入札と公共事業からの失格</li>
+          <li>ブランドへの長期的な悪影響</li>
         </ul>
 
         {/* Separator Line */}
@@ -395,24 +345,18 @@ const CranesMainContentLeft = () => {
 
         {/* Conclusion Section */}
         <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Kesimpulan
+          結論
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Pemberlakuan Sertifikasi BIS Scheme X akan menjadi tonggak penting
-          yang akan meningkatkan keselamatan, keandalan dan menyediakan standar
-          industri umum di India.
+          BISスキームX認証の実施は、安全性と信頼性を向上させ、インドに共通の産業標準を提供する重要なマイルストーンとなるでしょう。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Bagi produsen, importir, eksportir Derek, penting untuk memiliki
-          Lisensi BIS untuk Derek dan dapat mengajukan melalui portal aplikasi
-          online untuk Registrasi BIS Derek agar mematuhi standar, membangun
-          kepercayaan konsumen, dan juga untuk menghindari potensi konflik
-          dengan BIS atau Pemerintah India.
+          クレーンの製造業者、輸入業者、輸出業者にとって、クレーンのBISライセンスを取得し、オンライン申請ポータルを通じてクレーンのBIS登録を申請することが重要です。これにより、基準に準拠し、消費者の信頼を構築し、BISやインド政府との潜在的な紛争を回避できます。
         </p>
 
-        <ServiceAuthorIndonesian />
+        <ServiceAuthorJapanese />
       </div>
     </div>
   );
@@ -425,7 +369,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Layanan Kami
+              私たちのサービス
             </h2>
           </BoxReveal>
 
@@ -433,7 +377,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Konsultan Sertifikat Terbaik India
+                インド最高の認証コンサルタント
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -453,7 +397,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Tanda BIS (Lisensi ISI) untuk Manufaktur Asing
+              外国製造業者向けBISマーク（ISIライセンス）
             </p>
           </Link>
 
@@ -469,7 +413,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Registrasi CDSCO
+              CDSCO登録認証
             </p>
           </Link>
 
@@ -485,7 +429,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Registrasi BIS (CRS)
+              BIS登録（CRS）
             </p>
           </Link>
 
@@ -501,7 +445,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Manajemen Limbah Plastik
+              プラスチック廃棄物管理
             </p>
           </Link>
 
@@ -517,7 +461,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat EPR
+              EPR証明書認証
             </p>
           </Link>
 
@@ -533,7 +477,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat LMPC
+              LMPC証明書認証
             </p>
           </Link>
 
@@ -549,7 +493,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikat Registrasi BIS
+              BIS登録証明書
             </p>
           </Link>
 
@@ -565,7 +509,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              TANDA ISI (BIS) untuk Manufaktur India
+              インド製造業者向けISIマーク（BIS）
             </p>
           </Link>
         </div>

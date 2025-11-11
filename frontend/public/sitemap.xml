@@ -1448,6 +1448,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-kurein</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Cranes - SchemeX Products End -->
 
   <!-- Diesel Generators - SchemeX Products Start -->
@@ -1496,6 +1503,13 @@
   <!-- Indonesian -->
   <url>
     <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-generator-diesel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-dizeru-hatsudenki</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -1552,6 +1566,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Japanese --> 
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-shishu-kikai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Embroidery Machines - SchemeX Products End -->
 
   <!-- Gears, Gearing and Transmission Elements - SchemeX Products Start -->
@@ -1600,6 +1621,13 @@
   <!-- Indonesian -->
   <url>
     <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -1656,6 +1684,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-netsu-shori-souchi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Heat Treatment Equipment - SchemeX Products End -->
 
   <!-- Machine Tools - SchemeX Products Start -->
@@ -1704,6 +1739,13 @@
   <!-- Indonesian -->
   <url>
     <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-perkakas-mesin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-kousaku-kikai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
