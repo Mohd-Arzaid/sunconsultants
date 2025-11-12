@@ -159,6 +159,7 @@ import GearsGearingsandTransmissionJapanese from "@/schemeXProducts/GearsGearing
 import HeatTreatmentEquipmentJapanese from "@/schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentJapanese";
 import MachineToolsJapanese from "@/schemeXProducts/MachineTools/MachineToolsJapanese";
 import RotaryElectricalMachinesJapanese from "@/schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesJapanese";
+import SwitchgearandControlgearEquipmentJapanese from "@/schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentJapanese";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -1052,6 +1053,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-hingga-1000-volt"
         element={<SwitchgearandControlgearEquipmentIndonesian />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-made"
+        element={<SwitchgearandControlgearEquipmentJapanese />}
       />
 
       {/* Switchgear And Controlgear Equipment Pages End */}
