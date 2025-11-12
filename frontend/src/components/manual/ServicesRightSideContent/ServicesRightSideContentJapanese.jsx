@@ -56,6 +56,8 @@ const ServicesRightSideContentJapanese = () => {
     "/bis-sukiimu-x-ninshoo-netsu-shori-souchi",
     // Machine Tools Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-kousaku-kikai",
+    // Metal Cutting Machines Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai",
   ];
 
   // Check if current path should show these components
@@ -631,6 +633,10 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // Machine Tools Scheme X Product (Japanese) Page Url
     if (path.includes("/bis-sukiimu-x-ninshoo-kousaku-kikai"))
       return "Machine Tools Scheme X Product (Japanese)";
+
+    // Metal Cutting Machines Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"))
+      return "Metal Cutting Machines Scheme X Product (Japanese)";
   };
 
   const [formData, setFormData] = useState({

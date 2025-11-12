@@ -69,6 +69,7 @@ import MetalCuttingMachinesVietnamese from "../schemeXProducts/MetalCuttingMachi
 import MetalCuttingMachinesSpanish from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesSpanish";
 import MetalCuttingMachinesKorean from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesKorean";
 import MetalCuttingMachinesIndonesian from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesIndonesian";
+import MetalCuttingMachinesJapanese from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesJapanese";
 import PackingMachinery from "../schemeXProducts/PackingMachinery/PackingMachinery";
 import PackingMachineryFrench from "../schemeXProducts/PackingMachinery/PackingMachineryFrench";
 import PackingMachineryGerman from "../schemeXProducts/PackingMachinery/PackingMachineryGerman";
@@ -734,6 +735,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam"
         element={<MetalCuttingMachinesIndonesian />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"
+        element={<MetalCuttingMachinesJapanese />}
       />
 
       {/* Metal Cutting Machines Pages End */}
