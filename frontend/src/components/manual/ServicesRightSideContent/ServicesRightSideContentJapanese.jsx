@@ -64,6 +64,8 @@ const ServicesRightSideContentJapanese = () => {
     "/bis-sukiimu-x-ninshoo-denryoku-handoutai-henkan-ki",
     // Public Works And Mechanical Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu",
+    // Pumps And Liquid Elevators Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa",
   ];
 
   // Check if current path should show these components
@@ -657,6 +659,10 @@ const ContactFormServicesRightSideContentJapanese = () => {
       path.includes("/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu")
     )
       return "Public Works And Mechanical Scheme X Product (Japanese)";
+
+    // Pumps And Liquid Elevators Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"))
+      return "Pumps And Liquid Elevators Scheme X Product (Japanese)";
   };
 
   const [formData, setFormData] = useState({
