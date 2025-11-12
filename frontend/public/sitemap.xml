@@ -1861,6 +1861,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-pakkingu-kikai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Packing Machinery - SchemeX Products End -->
 
   <!-- Power Semiconductors - SchemeX Products Start -->
@@ -1913,6 +1920,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-denryoku-handoutai-henkan-ki</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Power Semiconductors - SchemeX Products End -->
 
   <!-- Public Works and Mechanical Appliances - SchemeX Products Start -->
@@ -1961,6 +1975,13 @@
   <!-- Indonesian -->
   <url>
     <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-pekerjaan-umum-dan-peralatan-mekanik</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Japanese -->
+    <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

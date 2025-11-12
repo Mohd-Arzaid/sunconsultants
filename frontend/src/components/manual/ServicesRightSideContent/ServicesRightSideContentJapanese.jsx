@@ -58,6 +58,12 @@ const ServicesRightSideContentJapanese = () => {
     "/bis-sukiimu-x-ninshoo-kousaku-kikai",
     // Metal Cutting Machines Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai",
+    // Packing Machinery Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-pakkingu-kikai",
+    // Power Semiconductors Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-denryoku-handoutai-henkan-ki",
+    // Public Works And Mechanical Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu",
   ];
 
   // Check if current path should show these components
@@ -637,6 +643,20 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // Metal Cutting Machines Scheme X Product (Japanese) Page Url
     if (path.includes("/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"))
       return "Metal Cutting Machines Scheme X Product (Japanese)";
+
+    // Packing Machinery Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-pakkingu-kikai"))
+      return "Packing Machinery Scheme X Product (Japanese)";
+
+    // Power Semiconductors Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-denryoku-handoutai-henkan-ki"))
+      return "Power Semiconductors Scheme X Product (Japanese)";
+
+    // Public Works And Mechanical Scheme X Product (Japanese) Page Url
+    if (
+      path.includes("/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu")
+    )
+      return "Public Works And Mechanical Scheme X Product (Japanese)";
   };
 
   const [formData, setFormData] = useState({
