@@ -120,6 +120,7 @@ import RubberAndPlasticsMachineryVietnamese from "../schemeXProducts/RubberAndPl
 import RubberAndPlasticsMachinerySpanish from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinerySpanish";
 import RubberAndPlasticsMachineryKorean from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryKorean";
 import RubberAndPlasticsMachineryIndonesian from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryIndonesian";
+import RubberAndPlasticsMachineryJapanese from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryJapanese";
 import SwitchgearandControlgearEquipment from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipment";
 import SwitchgearandControlgearEquipmentFrench from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentFrench";
 import SwitchgearandControlgearEquipmentGerman from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentGerman";
@@ -999,6 +1000,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-mesin-karet-dan-plastik"
         element={<RubberAndPlasticsMachineryIndonesian />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-gomu-oyobi-purasuchikku-kikai"
+        element={<RubberAndPlasticsMachineryJapanese />}
       />
 
       {/* Rubber And Plastics Machinery Pages End */}

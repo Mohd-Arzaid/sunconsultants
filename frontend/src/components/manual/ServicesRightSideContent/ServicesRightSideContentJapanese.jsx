@@ -68,6 +68,8 @@ const ServicesRightSideContentJapanese = () => {
     "/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa",
     // Rotary Electrical Machines Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-kaiten-denki-kikai",
+    // Rubber And Plastics Machinery Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-gomu-oyobi-purasuchikku-kikai",
   ];
 
   // Check if current path should show these components
@@ -669,6 +671,10 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // Rotary Electrical Machines Scheme X Product (Japanese) Page Url
     if (path.includes("/bis-sukiimu-x-ninshoo-kaiten-denki-kikai"))
       return "Rotary Electrical Machines Scheme X Product (Japanese)";
+
+    // Rubber And Plastics Machinery Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-gomu-oyobi-purasuchikku-kikai"))
+      return "Rubber And Plastics Machinery Scheme X Product (Japanese)";
   };
 
   const [formData, setFormData] = useState({
