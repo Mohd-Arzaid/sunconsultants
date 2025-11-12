@@ -66,6 +66,8 @@ const ServicesRightSideContentJapanese = () => {
     "/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu",
     // Pumps And Liquid Elevators Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa",
+    // Rotary Electrical Machines Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-kaiten-denki-kikai",
   ];
 
   // Check if current path should show these components
@@ -663,6 +665,10 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // Pumps And Liquid Elevators Scheme X Product (Japanese) Page Url
     if (path.includes("/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"))
       return "Pumps And Liquid Elevators Scheme X Product (Japanese)";
+
+    // Rotary Electrical Machines Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-kaiten-denki-kikai"))
+      return "Rotary Electrical Machines Scheme X Product (Japanese)";
   };
 
   const [formData, setFormData] = useState({

@@ -157,6 +157,7 @@ import EmbroideryMachinesJapanese from "@/schemeXProducts/EmbroideryMachines/Emb
 import GearsGearingsandTransmissionJapanese from "@/schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionJapanese";
 import HeatTreatmentEquipmentJapanese from "@/schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentJapanese";
 import MachineToolsJapanese from "@/schemeXProducts/MachineTools/MachineToolsJapanese";
+import RotaryElectricalMachinesJapanese from "@/schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesJapanese";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -946,6 +947,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-mesin-listrik-rotary"
         element={<RotaryElectricalMachinesIndonesian />}
+      />
+      {/* Japanese */}
+      <Route
+        path="/bis-sukiimu-x-ninshoo-kaiten-denki-kikai"
+        element={<RotaryElectricalMachinesJapanese />}
       />
 
       {/* Rotary Electrical Machines Pages End */}
