@@ -55,6 +55,8 @@ const ServicesRightSideContentItalian = () => {
     "/certificazione-bis-schema-x-per-apparecchiature-di-trattamento-termico",
     // Machine Tools Scheme X Product (Italian) Page Url
     "/certificazione-bis-schema-x-per-utensili-per-macchine",
+    // Metal Cutting Machines Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-utensili-per-macchine-da-taglio-metalli",
   ];
 
   // Check if current path should show these components
@@ -642,6 +644,14 @@ const ContactFormServicesRightSideContentItalian = () => {
     // Machine Tools Scheme X Product (Italian) Page Url
     if (path.includes("/certificazione-bis-schema-x-per-utensili-per-macchine"))
       return "Machine Tools Scheme X Product (Italian)";
+
+    // Metal Cutting Machines Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-utensili-per-macchine-da-taglio-metalli"
+      )
+    )
+      return "Metal Cutting Machines Scheme X Product (Italian)";
   };
 
   const [formData, setFormData] = useState({

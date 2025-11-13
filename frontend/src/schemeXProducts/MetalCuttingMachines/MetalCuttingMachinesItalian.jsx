@@ -9,12 +9,12 @@ import {
 import { SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
+import ServiceAuthorItalian from "@/components/manual/ServiceAuthor/ServiceAuthorItalian";
 import { Helmet } from "react-helmet-async";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
+import ServicesRightSideContentItalian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentItalian";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
-import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
+import FooterItalian from "@/components/manual/Footer/FooterItalian";
 const BISImage = "/services-images/BIS.jpg";
 const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
@@ -23,7 +23,7 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-const MetalCuttingMachinesIndonesian = () => {
+const MetalCuttingMachinesItalian = () => {
   return (
     <div className="relative w-full">
       <MetalCuttingMachinesMetaTags />
@@ -31,28 +31,28 @@ const MetalCuttingMachinesIndonesian = () => {
       <MetalCuttingMachinesMainContent />
       <Services />
       <VideoSection />
-      <FooterIndonesian />
+      <FooterItalian />
     </div>
   );
 };
 
-export default MetalCuttingMachinesIndonesian;
+export default MetalCuttingMachinesItalian;
 
 const MetalCuttingMachinesMetaTags = () => {
   const title =
-    "Sertifikasi BIS Scheme X untuk Mesin Pemotong Logam dan Perakitannya";
+    "Certificazione BIS Schema X per Macchine Utensili da Taglio Metalli e Loro Assemblaggi";
   const description =
-    "Sertifikasi BIS sekarang wajib untuk semua jenis mesin pemotong logam dan/atau perakitannya, sub-perakitan, dan komponennya yang termasuk dalam kode HS 8456 hingga 8461";
+    "La certificazione BIS è ora obbligatoria per tutti i tipi di macchine utensili da taglio metalli e/o loro assemblaggi, sottoassemblaggi e componenti che rientrano nei codici HS da 8456 a 8461";
   const keywords =
-    "Sertifikasi BIS untuk Mesin Pemotong Logam, Sertifikasi BIS Scheme X untuk Mesin Pemotong Logam, Sertifikasi Scheme X untuk Mesin Pemotong Logam, BIS untuk Mesin Pemotong Logam, OTR untuk Mesin Pemotong Logam";
+    "Certificazione BIS per Macchine Utensili da Taglio Metalli, Certificazione BIS Schema X per Macchine Utensili da Taglio Metalli, Certificazione Schema X per Macchine Utensili da Taglio Metalli, BIS per Macchine Utensili da Taglio Metalli, OTR per Macchine Utensili da Taglio Metalli";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Mesin Pemotong Logam di India | Panduan Lengkap";
+    "Certificazione BIS Schema X per Macchine Utensili da Taglio Metalli in India | Guida Completa";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk mesin pemotong logam di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "Scopri tutto sulla Certificazione BIS Schema X per macchine utensili da taglio metalli in India. Comprendi la conformità OTR 2024, il processo di Licenza BIS, i requisiti del marchio ISI e come ottenere la certificazione entro la scadenza di settembre 2026";
 
   return (
     <Helmet>
@@ -83,7 +83,7 @@ const MetalCuttingMachinesBreadcrumb = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Beranda</Link>
+                    <Link to="/">Home</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -92,7 +92,7 @@ const MetalCuttingMachinesBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/SchemeX-Products">Produk SchemeX</Link>
+                    <Link to="/SchemeX-Products">Prodotti SchemeX</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -101,7 +101,7 @@ const MetalCuttingMachinesBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS untuk Mesin Pemotong Logam
+                    Certificazione BIS per Macchine Utensili da Taglio Metalli
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -121,7 +121,7 @@ const MetalCuttingMachinesMainContent = () => {
         <MetalCuttingMachinesMainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentIndonesian />
+        <ServicesRightSideContentItalian />
       </div>
     </div>
   );
@@ -134,46 +134,48 @@ const MetalCuttingMachinesMainContentLeft = () => {
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS untuk Mesin Pemotong Logam
+          Certificazione BIS per Macchine Utensili da Taglio Metalli
         </h1>
 
         {/* Main Image */}
         <div className="mb-6">
           <img
             src="/schemXproductImages/BIS-Scheme-X-license-metal-cutting-machine- tools.png"
-            alt="Sertifikasi BIS Scheme X untuk Alat Mesin Pemotong Logam"
-            title="Lisensi BIS Scheme X untuk alat mesin pemotong logam"
+            alt="Certificazione BIS Schema X per Macchine Utensili da Taglio Metalli"
+            title="Licenza BIS Schema X per macchine utensili da taglio metalli"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Pemotongan logam adalah teknologi fabrikasi andalan yang mendukung
-          industri mesin, otomotif, dirgantara dan manufaktur India. Mesin-mesin
-          ini mulai dari mesin bubut CNC dan mesin frais hingga pemotong laser
-          dan juga akan membantu menjaga produksi tetap tinggi dan biaya tetap
-          rendah di industri di seluruh dunia. Seiring meningkatnya permintaan
-          mesin berkualitas tinggi di India, pemerintah telah membuat
-          Sertifikasi BIS untuk Mesin Pemotong Logam menjadi wajib untuk
-          memastikan kualitas dan keselamatan.
+          Il taglio dei metalli è una tecnologia di fabbricazione fondamentale
+          che supporta le industrie meccaniche, automobilistiche, aerospaziali e
+          manifatturiere indiane. Queste macchine vanno dai torni CNC e
+          fresatrici ai tagliatori laser e aiutano anche a mantenere alta la
+          produzione e bassi i costi nelle industrie di tutto il mondo. Con
+          l'aumento della domanda di macchine di alta qualità in India, il
+          governo ha reso la Certificazione BIS per Macchine Utensili da Taglio
+          Metalli obbligatoria per garantire qualità e sicurezza.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sesuai dengan Sertifikasi BIS (Biro Standar India) Scheme X untuk
-          Mesin Pemotong Logam, baik produsen asing maupun India harus memenuhi
-          Standar India sebelum dapat dijual di pasar India. Ini adalah cara
-          agar mesin dapat digunakan dengan aman, serta memastikan kepercayaan
-          pelanggan.
+          Secondo la Certificazione BIS (Bureau of Indian Standards) Schema X
+          per Macchine Utensili da Taglio Metalli, sia i produttori stranieri
+          che indiani devono rispettare gli Standard Indiani prima di poter
+          essere venduti sul mercato indiano. Questo è il modo per garantire che
+          le macchine possano essere utilizzate in sicurezza, nonché per
+          assicurare la fiducia dei clienti.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Postingan ini memberikan informasi mengenai sertifikasi scheme X untuk
-          Mesin Pemotong Logam, persyaratan OTR 2024 untuk Mesin Pemotong Logam,
-          dan prosedur memperoleh Lisensi BIS untuk Mesin Pemotong Logam untuk
-          menempelkan tanda BIS untuk Mesin Pemotong Logam.
+          Questo articolo fornisce informazioni sulla certificazione schema X
+          per Macchine Utensili da Taglio Metalli, i requisiti OTR 2024 per
+          Macchine Utensili da Taglio Metalli, e la procedura per ottenere la
+          Licenza BIS per Macchine Utensili da Taglio Metalli per apporre il
+          marchio BIS per Macchine Utensili da Taglio Metalli.
         </p>
 
         {/* Separator Line */}
@@ -181,40 +183,41 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* Why BIS is Important Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa BIS Wajib untuk Mesin Pemotong Logam?
+          Perché BIS è Obbligatorio per le Macchine Utensili da Taglio Metalli?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mesin pemotong logam diterapkan dalam:
+          Le macchine utensili da taglio metalli sono utilizzate in:
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Manufaktur otomotif dan komponen otomotif</li>
-          <li>Industri penerbangan dan pertahanan</li>
-          <li>Rekayasa berat dan konstruksi</li>
-          <li>Industri elektronik dan kelistrikan</li>
-          <li>Pembuatan cetakan dan pengecoran cetakan</li>
+          <li>Produzione automobilistica e componenti automobilistici</li>
+          <li>Industria aeronautica e della difesa</li>
+          <li>Ingegneria pesante e costruzioni</li>
+          <li>Industria elettronica ed elettrica</li>
+          <li>Produzione di stampi e fusione in stampi</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bisnis yang tidak memiliki BIS untuk Mesin Pemotong Logam dapat
-          menghadapi:
+          Le aziende che non dispongono di BIS per Macchine Utensili da Taglio
+          Metalli possono affrontare:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Akurasi pemesinan buruk, dan hasil produksi rendah</li>
+          <li>Scarsa precisione di lavorazione e bassi risultati produttivi</li>
           <li>
-            Kegagalan mesin dan hilangnya produksi Waktu operasi vs Waktu henti.
+            Guasti alle macchine e perdita di produzione - Tempo operativo vs
+            Tempo di inattività.
           </li>
-          <li>Bahaya potensial bagi operator</li>
-          <li>Pengucilan dari tender publik dan bisnis yang diatur</li>
+          <li>Potenziali pericoli per gli operatori</li>
+          <li>Esclusione da gare pubbliche e affari regolamentati</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Tanda BIS memastikan bahwa mesin pemotong logam mematuhi norma
-          kualitas yang ditetapkan oleh biro.
+          Il marchio BIS garantisce che le macchine utensili da taglio metalli
+          rispettino le norme di qualità stabilite dal bureau.
         </p>
 
         {/* Separator Line */}
@@ -222,31 +225,36 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* What is BIS Scheme X Certification Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS Scheme X untuk Mesin Pemotong Logam?
+          Cos'è la Certificazione BIS Schema X per Macchine Utensili da Taglio
+          Metalli?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X untuk Mesin Pemotong Logam berada di bawah
-          Peraturan Penilaian Kesesuaian BIS, 2018 yang telah dirumuskan untuk
-          memastikan bahwa produk memenuhi standar kualitas yang diperlukan yang
-          merupakan kebutuhan saat ini untuk peralatan industri.
+          La Certificazione BIS Schema X per Macchine Utensili da Taglio Metalli
+          rientra nel Regolamento sulla Valutazione della Conformità BIS, 2018
+          che è stato formulato per garantire che i prodotti soddisfino gli
+          standard di qualità richiesti che sono necessari per le attrezzature
+          industriali.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Fitur Utama Sertifikasi Scheme X untuk Mesin Pemotong Logam
+          Caratteristiche Principali della Certificazione Schema X per Macchine
+          Utensili da Taglio Metalli
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Wajib untuk produsen India dan asing</li>
+          <li>Obbligatoria per produttori indiani e stranieri</li>
           <li>
-            Berlaku untuk berbagai mesin pemotong logam yang diberitahukan di
-            bawah Standar India
+            Applicabile a varie macchine utensili da taglio metalli notificate
+            sotto gli Standard Indiani
           </li>
           <li>
-            Melibatkan pengujian laboratorium, inspeksi pabrik dan audit rutin
+            Coinvolge test di laboratorio, ispezioni di fabbrica e audit di
+            routine
           </li>
           <li>
-            Mengotorisasi penampilan Tanda BIS untuk mesin pemotong logam.
+            Autorizza l'apposizione del Marchio BIS per macchine utensili da
+            taglio metalli.
           </li>
         </ul>
 
@@ -255,20 +263,20 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          OTR BIS Wajib untuk Mesin Pemotong Logam
+          OTR BIS Obbligatorio per Macchine Utensili da Taglio Metalli
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Perintah Departemen Industri Berat mengenai Peraturan Teknis Omnibus
-          (OTR) untuk Mesin Pemotong Logam pada tahun 2024 telah membuat
-          sertifikasi menjadi wajib.
+          L'ordine del Dipartimento dell'Industria Pesante riguardante il
+          Regolamento Tecnico Omnibus (OTR) per Macchine Utensili da Taglio
+          Metalli nel 2024 ha reso la certificazione obbligatoria.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Lisensi BIS akan menjadi wajib untuk semua produsen dan
-          importir mesin pemotong logam mulai berlaku pada 1 September 2026.
-          Mulai tanggal ini, mesin yang tidak disertifikasi tidak dapat
-          ditawarkan untuk dijual, diimpor atau dipasang di India.
+          Scadenza: La Licenza BIS diventerà obbligatoria per tutti i produttori
+          e importatori di macchine utensili da taglio metalli a partire dal 1°
+          settembre 2026. Da questa data, le macchine non certificate non
+          potranno essere offerte in vendita, importate o installate in India.
         </p>
 
         {/* Separator Line */}
@@ -276,29 +284,31 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Keuntungan Sertifikasi BIS untuk Mesin Pemotong Logam
+          Vantaggi della Certificazione BIS per Macchine Utensili da Taglio
+          Metalli
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Keandalan Produk: Mesin disertifikasi untuk akurasi, daya tahan dan
-            kinerja yang konsisten.
+            Affidabilità del Prodotto: Le macchine sono certificate per
+            precisione, durata e prestazioni consistenti.
           </li>
           <li>
-            Daya Saing Pasar: Lisensi BIS untuk Mesin Pemotong Logam adalah
-            wajib untuk mendapatkan banyak pesanan Industri dan Pemerintah.
+            Competitività sul Mercato: La Licenza BIS per Macchine Utensili da
+            Taglio Metalli è obbligatoria per ottenere molti ordini Industriali
+            e Governativi.
           </li>
           <li>
-            Kepercayaan Pelanggan: Tanda BIS untuk Mesin Pemotong Logam
-            menumbuhkan kepercayaan pada pembeli.
+            Fiducia del Cliente: Il Marchio BIS per Macchine Utensili da Taglio
+            Metalli coltiva la fiducia negli acquirenti.
           </li>
           <li>
-            Kepatuhan Hukum: Sesuai dengan OTR untuk Mesin Pemotong Logam dan
-            BIS.
+            Conformità Legale: Conforme all'OTR per Macchine Utensili da Taglio
+            Metalli e BIS.
           </li>
           <li>
-            Keuntungan Global: Akses lebih mudah bagi produsen asing ke pasar
-            India.
+            Vantaggio Globale: Accesso più facile per i produttori stranieri al
+            mercato indiano.
           </li>
         </ul>
 
@@ -307,32 +317,34 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* Types of Metal Cutting Machines Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Mesin Pemotong Logam yang Termasuk dalam Persetujuan Scheme X
+          Tipi di Macchine Utensili da Taglio Metalli Inclusi nell'Approvazione
+          Schema X
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikat Scheme X mencakup jenis berikut untuk Mesin Pemotong Logam
-          tetapi tidak terbatas pada:
+          Il Certificato Schema X copre i seguenti tipi di Macchine Utensili da
+          Taglio Metalli ma non è limitato a:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Mesin bubut CNC dan pusat pembubutan</li>
-          <li>Mesin frais</li>
-          <li>Mesin bor</li>
-          <li>Mesin gerinda</li>
-          <li>Mesin pemotong CNC</li>
-          <li>Mesin atau peralatan pemotong laser</li>
-          <li>Mesin pemotong plasma</li>
-          <li>Mesin untuk pemotongan water-jet</li>
-          <li>Mesin gergaji pita dan gergaji besi</li>
+          <li>Torni CNC e centri di tornitura</li>
+          <li>Fresatrici</li>
+          <li>Trapani</li>
+          <li>Rettificatrici</li>
+          <li>Macchine da taglio CNC</li>
+          <li>Macchine o attrezzature da taglio laser</li>
+          <li>Macchine da taglio al plasma</li>
+          <li>Macchine per taglio water-jet</li>
+          <li>Seghe a nastro e seghetti</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Semua jenis mesin pemotong logam ini harus mengikuti Standar India
-          yang relevan (kode IS) seperti IS 17277 (Bagian 1): 2019 / ISO
-          16092-1: 2017 (Alat Mesin Keselamatan Press Bagian 1 Persyaratan
-          Keselamatan Umum). Setiap model mesin harus memenuhi kode IS sendiri
-          tentang keselamatan, efisiensi energi dan akurasi.
+          Tutti questi tipi di macchine utensili da taglio metalli devono
+          seguire gli Standard Indiani pertinenti (codice IS) come IS 17277
+          (Parte 1): 2019 / ISO 16092-1: 2017 (Macchine Utensili Sicurezza
+          Presse Parte 1 Requisiti di Sicurezza Generali). Ogni modello di
+          macchina deve soddisfare il proprio codice IS per sicurezza,
+          efficienza energetica e precisione.
         </p>
 
         {/* Separator Line */}
@@ -340,51 +352,54 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Prosedur Lisensi BIS untuk Mesin Pemotong Logam
+          Procedura per la Licenza BIS per Macchine Utensili da Taglio Metalli
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
           <li>
-            Identifikasi Standar IS yang Berlaku: Pilih standar yang tepat
-            sesuai dengan jenis mesin.
+            Identificazione dello Standard IS Applicabile: Scegliere lo standard
+            appropriato in base al tipo di macchina.
           </li>
           <li>
-            Pengujian Produk: Serahkan mesin untuk pengujian di laboratorium BIS
-            yang diakui pemerintah.
+            Test del Prodotto: Sottoporre la macchina a test presso laboratori
+            BIS riconosciuti dal governo.
           </li>
           <li>
-            Audit Pabrik: Kunjungan langsung dilakukan oleh pejabat BIS untuk
-            memastikan produksi kualitas yang sesuai.
+            Audit di Fabbrica: Visite dirette effettuate dai funzionari BIS per
+            garantire una produzione di qualità conforme.
           </li>
           <li>
-            Pengajuan Dokumen: Sediakan manual teknis, laporan pengujian dan
-            dokumen jaminan kualitas.
+            Presentazione dei Documenti: Fornire manuali tecnici, rapporti di
+            test e documenti di garanzia della qualità.
           </li>
           <li>
-            Pemberian Lisensi BIS untuk Mesin Pemotong Logam: Produsen sekarang
-            dapat menempelkan tanda BIS di bawah sertifikasi produk sesuai
-            dengan standar di atas.
+            Concessione della Licenza BIS per Macchine Utensili da Taglio
+            Metalli: I produttori possono ora apporre il marchio BIS sotto la
+            certificazione del prodotto conforme agli standard di cui sopra.
           </li>
           <li>
-            Kepatuhan Berkelanjutan: Pengawasan dan audit berkala dilakukan
-            untuk menjamin kepatuhan berkelanjutan dengan BIS.
+            Conformità Continua: Vengono effettuati monitoraggi e audit
+            periodici per garantire la conformità continua con BIS.
           </li>
         </ul>
 
         <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Hukuman untuk Ketidakpatuhan
+          Sanzioni per la Non Conformità
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Ketidakpatuhan Sertifikasi BIS untuk Mesin Pemotong Logam di bawah OTR
-          untuk Mesin Pemotong Logam dapat mengakibatkan:
+          La non conformità alla Certificazione BIS per Macchine Utensili da
+          Taglio Metalli sotto l'OTR per Macchine Utensili da Taglio Metalli può
+          comportare:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Larangan penjualan/impor mesin yang tidak disertifikasi</li>
-          <li>Denda tinggi dan penyitaan produk</li>
-          <li>Pengucilan dari kontrak pemerintah</li>
-          <li>Kerusakan jangka panjang pada reputasi merek dan bisnis</li>
+          <li>Divieto di vendita/importazione di macchine non certificate</li>
+          <li>Elevate sanzioni pecuniarie e sequestro dei prodotti</li>
+          <li>Esclusione dai contratti governativi</li>
+          <li>
+            Danni a lungo termine alla reputazione del marchio e dell'azienda
+          </li>
         </ul>
 
         {/* Separator Line */}
@@ -392,24 +407,26 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* Conclusion Section */}
         <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Kesimpulan
+          Conclusione
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X untuk Mesin Pemotong Logam dalam OTR untuk
-          Mesin Pemotong Logam (2024) memiliki peran penting dalam akurasi,
-          keselamatan dan keandalan industri India.
+          La Certificazione BIS Schema X per Macchine Utensili da Taglio Metalli
+          nell'OTR per Macchine Utensili da Taglio Metalli (2024) ha un ruolo
+          importante nella precisione, sicurezza e affidabilità dell'industria
+          indiana.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Bagi produsen dan importir, memiliki Lisensi BIS untuk Mesin Pemotong
-          Logam dan menempelkan tanda BIS pada Mesin Pemotong Logam bukan hanya
-          tindakan kepatuhan, ini adalah investasi strategis yang menawarkan
-          pengembalian yang berlipat ganda dalam bentuk keunggulan produk,
-          kepercayaan konsumen dan superioritas pasar.
+          Per i produttori e gli importatori, avere la Licenza BIS per Macchine
+          Utensili da Taglio Metalli e apporre il marchio BIS sulle Macchine
+          Utensili da Taglio Metalli non è solo un'azione di conformità, è un
+          investimento strategico che offre ritorni molteplici in termini di
+          eccellenza del prodotto, fiducia dei consumatori e superiorità sul
+          mercato.
         </p>
 
-        <ServiceAuthorIndonesian />
+        <ServiceAuthorItalian />
       </div>
     </div>
   );
@@ -422,7 +439,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Layanan Kami
+              I Nostri Servizi
             </h2>
           </BoxReveal>
 
@@ -430,7 +447,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Konsultan Sertifikat Terbaik India
+                I Migliori Consulenti per Certificati in India
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -450,7 +467,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Tanda BIS (Lisensi ISI) untuk Manufaktur Asing
+              Marchio BIS (Licenza ISI) per Produttori Stranieri
             </p>
           </Link>
 
@@ -466,7 +483,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Registrasi CDSCO
+              Certificazione Registrazione CDSCO
             </p>
           </Link>
 
@@ -482,7 +499,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Registrasi BIS (CRS)
+              Registrazione BIS (CRS)
             </p>
           </Link>
 
@@ -498,7 +515,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Manajemen Limbah Plastik
+              Gestione dei Rifiuti Plastici
             </p>
           </Link>
 
@@ -514,7 +531,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat EPR
+              Certificazione Certificato EPR
             </p>
           </Link>
 
@@ -530,7 +547,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat LMPC
+              Certificazione Certificato LMPC
             </p>
           </Link>
 
@@ -546,7 +563,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikat Registrasi BIS
+              Certificato di Registrazione BIS
             </p>
           </Link>
 
@@ -562,7 +579,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              TANDA ISI (BIS) untuk Manufaktur India
+              MARCHIO ISI (BIS) per Produttori Indiani
             </p>
           </Link>
         </div>
