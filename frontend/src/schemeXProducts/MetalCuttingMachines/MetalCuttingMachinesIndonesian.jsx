@@ -23,7 +23,7 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-const MetalCuttingMachines = () => {
+const MetalCuttingMachinesIndonesian = () => {
   return (
     <div className="relative w-full">
       <MetalCuttingMachinesMetaTags />
@@ -36,7 +36,7 @@ const MetalCuttingMachines = () => {
   );
 };
 
-export default MetalCuttingMachines;
+export default MetalCuttingMachinesIndonesian;
 
 const MetalCuttingMachinesMetaTags = () => {
   const title =
