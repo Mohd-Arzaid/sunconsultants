@@ -62,6 +62,7 @@ import HeatTreatmentEquipmentVietnamese from "../schemeXProducts/HeatTreatmentEq
 import HeatTreatmentEquipmentSpanish from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentSpanish";
 import HeatTreatmentEquipmentKorean from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentKorean";
 import HeatTreatmentEquipmentIndonesian from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentIndonesian";
+import HeatTreatmentEquipmentItalian from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentItalian";
 import MachineTools from "../schemeXProducts/MachineTools/MachineTools";
 import MachineToolsFrench from "../schemeXProducts/MachineTools/MachineToolsFrench";
 import MachineToolsGerman from "../schemeXProducts/MachineTools/MachineToolsGerman";
@@ -681,6 +682,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-peralatan-perlakuan-panas"
         element={<HeatTreatmentEquipmentIndonesian />}
+      />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-apparecchiature-di-trattamento-termico"
+        element={<HeatTreatmentEquipmentItalian />}
       />
       {/* Japanese */}
       <Route

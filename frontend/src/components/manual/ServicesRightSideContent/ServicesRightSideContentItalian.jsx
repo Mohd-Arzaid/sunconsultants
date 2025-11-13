@@ -51,6 +51,8 @@ const ServicesRightSideContentItalian = () => {
     "/certificazione-bis-schema-x-per-macchine-da-ricamo",
     // Gears, Gearing and Transmission Elements Scheme X Product (Italian) Page Url
     "/certificazione-bis-schema-x-per-ingranaggi-ingranamento-ed-elementi-di-trasmissione",
+    // Heat Treatment Equipment Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-apparecchiature-di-trattamento-termico",
   ];
 
   // Check if current path should show these components
@@ -626,6 +628,14 @@ const ContactFormServicesRightSideContentItalian = () => {
       )
     )
       return "Gears, Gearing and Transmission Elements Scheme X Product (Italian)";
+
+    // Heat Treatment Equipment Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-apparecchiature-di-trattamento-termico"
+      )
+    )
+      return "Heat Treatment Equipment Scheme X Product (Italian)";
   };
 
   const [formData, setFormData] = useState({
