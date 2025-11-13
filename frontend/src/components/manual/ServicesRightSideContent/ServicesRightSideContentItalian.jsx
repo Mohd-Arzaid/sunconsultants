@@ -61,6 +61,8 @@ const ServicesRightSideContentItalian = () => {
     "/certificazione-bis-schema-x-per-macchinari-per-imballaggio",
     // Power Semiconductors Scheme X Product (Italian) Page Url
     "/certificazione-bis-schema-x-per-convertitori-a-semiconduttore-di-potenza",
+    // Public Works And Mechanical Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-lavori-pubblici-e-apparecchiature-meccaniche",
   ];
 
   // Check if current path should show these components
@@ -672,6 +674,14 @@ const ContactFormServicesRightSideContentItalian = () => {
       )
     )
       return "Power Semiconductors Scheme X Product (Italian)";
+
+    // Public Works And Mechanical Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-lavori-pubblici-e-apparecchiature-meccaniche"
+      )
+    )
+      return "Public Works And Mechanical Scheme X Product (Italian)";
   };
 
   const [formData, setFormData] = useState({

@@ -105,6 +105,7 @@ import PublicWorksAndMechanicalVietnamese from "../schemeXProducts/PublicWorksAn
 import PublicWorksAndMechanicalSpanish from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalSpanish";
 import PublicWorksAndMechanicalKorean from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalKorean";
 import PublicWorksAndMechanicalIndonesian from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalIndonesian";
+import PublicWorksAndMechanicalItalian from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalItalian";
 import PublicWorksAndMechanicalJapanese from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalJapanese";
 import PumpsAndLiquidElevators from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevators";
 import PumpsAndLiquidElevatorsGerman from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsGerman";
@@ -972,6 +973,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-pekerjaan-umum-dan-peralatan-mekanik"
         element={<PublicWorksAndMechanicalIndonesian />}
+      />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-lavori-pubblici-e-apparecchiature-meccaniche"
+        element={<PublicWorksAndMechanicalItalian />}
       />
       {/* Japanese */}
       <Route
