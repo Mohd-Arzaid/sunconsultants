@@ -1937,6 +1937,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-macchinari-per-imballaggio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Japanese -->
   <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-pakkingu-kikai</loc>
@@ -1992,6 +1999,13 @@
   <!-- Indonesian -->
   <url>
     <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-konverter-semikonduktor-daya</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-convertitori-a-semiconduttore-di-potenza</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

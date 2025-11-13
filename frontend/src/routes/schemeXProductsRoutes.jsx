@@ -87,6 +87,7 @@ import PackingMachineryVietnamese from "../schemeXProducts/PackingMachinery/Pack
 import PackingMachinerySpanish from "../schemeXProducts/PackingMachinery/PackingMachinerySpanish";
 import PackingMachineryKorean from "../schemeXProducts/PackingMachinery/PackingMachineryKorean";
 import PackingMachineryIndonesian from "../schemeXProducts/PackingMachinery/PackingMachineryIndonesian";
+import PackingMachineryItalian from "../schemeXProducts/PackingMachinery/PackingMachineryItalian";
 import PackingMachineryJapanese from "../schemeXProducts/PackingMachinery/PackingMachineryJapanese";
 import PowerSemiconductors from "../schemeXProducts/PowerSemiconductors/PowerSemiconductors";
 import PowerSemiconductorsFrench from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsFrench";
@@ -95,6 +96,7 @@ import PowerSemiconductorsVietnamese from "../schemeXProducts/PowerSemiconductor
 import PowerSemiconductorsSpanish from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsSpanish";
 import PowerSemiconductorsKorean from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsKorean";
 import PowerSemiconductorsIndonesian from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsIndonesian";
+import PowerSemiconductorsItalian from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsItalian";
 import PowerSemiconductorsJapanese from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsJapanese";
 import PublicWorksAndMechanical from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanical";
 import PublicWorksAndMechanicalFrench from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalFrench";
@@ -857,6 +859,11 @@ export const SchemeXProductsRoutes = () => {
         path="/sertifikasi-bis-skema-x-untuk-mesin-pengemasan"
         element={<PackingMachineryIndonesian />}
       />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-macchinari-per-imballaggio"
+        element={<PackingMachineryItalian />}
+      />
       {/* Japanese */}
       <Route
         path="/bis-sukiimu-x-ninshoo-pakkingu-kikai"
@@ -908,6 +915,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-konverter-semikonduktor-daya"
         element={<PowerSemiconductorsIndonesian />}
+      />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-convertitori-a-semiconduttore-di-potenza"
+        element={<PowerSemiconductorsItalian />}
       />
       {/* Japanese */}
       <Route

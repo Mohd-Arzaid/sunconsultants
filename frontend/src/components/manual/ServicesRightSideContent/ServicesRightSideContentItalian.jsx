@@ -57,6 +57,10 @@ const ServicesRightSideContentItalian = () => {
     "/certificazione-bis-schema-x-per-utensili-per-macchine",
     // Metal Cutting Machines Scheme X Product (Italian) Page Url
     "/certificazione-bis-schema-x-per-utensili-per-macchine-da-taglio-metalli",
+    // Packing Machinery Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-macchinari-per-imballaggio",
+    // Power Semiconductors Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-convertitori-a-semiconduttore-di-potenza",
   ];
 
   // Check if current path should show these components
@@ -652,6 +656,22 @@ const ContactFormServicesRightSideContentItalian = () => {
       )
     )
       return "Metal Cutting Machines Scheme X Product (Italian)";
+
+    // Packing Machinery Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-macchinari-per-imballaggio"
+      )
+    )
+      return "Packing Machinery Scheme X Product (Italian)";
+
+    // Power Semiconductors Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-convertitori-a-semiconduttore-di-potenza"
+      )
+    )
+      return "Power Semiconductors Scheme X Product (Italian)";
   };
 
   const [formData, setFormData] = useState({
