@@ -9,12 +9,12 @@ import {
 import { SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
-import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
+import ServiceAuthorItalian from "@/components/manual/ServiceAuthor/ServiceAuthorItalian";
 import { Helmet } from "react-helmet-async";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
+import ServicesRightSideContentItalian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentItalian";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
+import FooterItalian from "@/components/manual/Footer/FooterItalian";
 const BISImage = "/services-images/BIS.jpg";
 const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
@@ -23,38 +23,36 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-
-const ConstructionMachineryIndonesian = () => {
+const CentrifugesItalian = () => {
   return (
     <div className="relative w-full">
-      <ConstructionMachineryMetaTags />
-
-      <ConstructionMachineryBreadcrumb />
-      <ConstructionMachineryMainContent />
+      <CentrifugesMetaTags />
+      <CentrifugesBreadcrumb />
+      <CentrifugesMainContent />
       <Services />
       <VideoSection />
-      <FooterIndonesian />
+      <FooterItalian />
     </div>
   );
 };
 
-export default ConstructionMachineryIndonesian;
+export default CentrifugesItalian;
 
-const ConstructionMachineryMetaTags = () => {
+const CentrifugesMetaTags = () => {
   const title =
-    "Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Penggalian Tanah, dan Pertambangan";
+    "Certificazione BIS Schema X per Centrifughe e Macchinari di Filtrazione o Purificazione";
   const description =
-    "Sertifikasi BIS Scheme X wajib untuk mesin konstruksi, penggalian tanah, dan pertambangan untuk memastikan keselamatan, kualitas, dan standardisasi di sektor industri yang kritis";
+    "La certificazione BIS Schema X per centrifughe, macchinari di filtrazione o purificazione per liquidi e gas, e/o loro assemblaggi, sottoassemblaggi e componenti, rappresenta una pietra miliare normativa cruciale per il settore dei macchinari industriali";
   const keywords =
-    "Sertifikasi BIS untuk Mesin Konstruksi, Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Sertifikasi Scheme X untuk Mesin Konstruksi, BIS untuk Mesin Konstruksi, OTR untuk Mesin Konstruksi";
+    "Certificazione BIS per Centrifughe, Certificazione BIS Schema X per Centrifughe, Certificazione Schema X per Centrifughe, BIS per Centrifughe, OTR per Centrifughe";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Mesin Konstruksi di India | Panduan Lengkap";
+    "Certificazione BIS Schema X per Centrifughe in India | Guida Completa";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk mesin konstruksi di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "Scopri tutto sulla Certificazione BIS Schema X per centrifughe in India. Comprendi la conformità OTR 2024, il processo di Licenza BIS, i requisiti del marchio ISI e come ottenere la certificazione entro la scadenza di settembre 2026";
 
   return (
     <Helmet>
@@ -75,7 +73,7 @@ const ConstructionMachineryMetaTags = () => {
   );
 };
 
-const ConstructionMachineryBreadcrumb = () => {
+const CentrifugesBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -85,7 +83,7 @@ const ConstructionMachineryBreadcrumb = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Beranda</Link>
+                    <Link to="/">Home</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -94,7 +92,7 @@ const ConstructionMachineryBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/SchemeX-Products">Produk SchemeX</Link>
+                    <Link to="/SchemeX-Products">Prodotti SchemeX</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -103,7 +101,7 @@ const ConstructionMachineryBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS Scheme X untuk Mesin Konstruksi
+                    Certificazione BIS per Centrifughe
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -115,133 +113,136 @@ const ConstructionMachineryBreadcrumb = () => {
   );
 };
 
-const ConstructionMachineryMainContent = () => {
+const CentrifugesMainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
         {/* Left Side Content */}
-        <ConstructionMachineryMainContentLeft />
+        <CentrifugesMainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentIndonesian />
+        <ServicesRightSideContentItalian />
       </div>
     </div>
   );
 };
 
-const ConstructionMachineryMainContentLeft = () => {
+const CentrifugesMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS untuk Mesin Konstruksi
+          Certificazione BIS per Centrifughe
         </h1>
 
-        {/* Main Image */}
+        {/* BIS Scheme X Image */}
         <div className="mb-6">
           <img
-            src="/schemXproductImages/BIS-Scheme-X-License-for-Construction-Machinery.png"
-            alt="Sertifikasi BIS Scheme X untuk Mesin Konstruksi"
-            title="Lisensi BIS Scheme X untuk Mesin Konstruksi"
+            src="/schemXproductImages/BIS-license-for-centrifuges-filtering-or-purifying-machinery.png"
+            title="Licenza BIS Schema X per Centrifughe"
+            alt="Certificazione BIS Schema X per Centrifughe e Macchinari di Filtrazione o Purificazione"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Excavator, loader, bulldozer, concrete mixer dan road roller adalah
-          mesin konstruksi utama yang digunakan dalam pembangunan infrastruktur
-          India. Permintaan yang lebih tinggi untuk mesin yang aman dan andal
-          berasal dari investasi besar dalam jalan raya, smart city, pabrik, dan
-          perumahan.
+          Le centrifughe sono macchine vitali ampiamente utilizzate nei settori
+          dei laboratori, farmaceutico, lavorazione alimentare, biotecnologia,
+          petrolchimico e minerario. Queste macchine funzionano mediante
+          rotazione, e la rotazione ad alta velocità separa le miscele, questa
+          separazione è essenziale per un trattamento accurato, sicuro e rapido.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bureau of Indian Standards (BIS) telah membuat Sertifikasi BIS Wajib
-          di bawah Scheme-X untuk Mesin Konstruksi untuk memberikan jaminan
-          kualitas, layanan dan keselamatan. Ini memastikan bahwa perangkat
-          sesuai dengan Standar India sebelum tersedia untuk dijual atau diimpor
-          di India.
+          Con applicazioni più ampie in vari settori, è fondamentale migliorare
+          l'affidabilità e la sicurezza delle centrifughe. Per mantenere i
+          parametri di controllo qualità per le centrifughe, il BIS ha
+          introdotto uno schema di Certificazione BIS noto come Certificazione
+          Schema-X per Centrifughe.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Di artikel ini, Anda akan mempelajari tentang Sertifikasi BIS Scheme X
-          untuk Mesin Konstruksi, persyaratan OTR untuk Mesin Konstruksi, dan
-          proses mendapatkan Lisensi BIS untuk Mesin Konstruksi serta tanda BIS
-          untuk Mesin Konstruksi.
+          In questo post, discuteremo cos'è la Certificazione BIS Schema X per
+          Centrifughe, cos'è l'OTR per Centrifughe e come ottenere la Licenza
+          BIS per Centrifughe con il marchio BIS ufficiale per Centrifughe.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Why BIS is Important Section */}
+        {/* Significance Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa BIS untuk Mesin Konstruksi Penting
+          Significato del BIS per le Centrifughe
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mesin konstruksi diterapkan dalam pertumbuhan infrastruktur dan situs
-          pengembangan konstruksi besar.
+          Le centrifughe sono utilizzate in:
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Pengembangan jalan dan jalan raya</li>
-          <li>Proyek real estate dan perumahan</li>
-          <li>Pertambangan dan penggalian</li>
-          <li>Konstruksi industri dan teknik berat</li>
-          <li>Proyek pelabuhan, bandara, dan metro</li>
+          <li>Settore Farmaceutico e Biotecnologico</li>
+          <li>Lavorazione alimentare e produzione di bevande</li>
+          <li>Raffinerie petrolifere e industria petrolchimica</li>
+          <li>Laboratori medici</li>
+          <li>Trattamento ambientale e delle acque</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Konsekuensi dari tidak adanya BIS untuk Peralatan Konstruksi adalah
-          sebagai berikut:
+          L'assenza del BIS per le Centrifughe può portare all'uso di
+          Centrifughe di bassa qualità o non certificate che possono causare:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Kegagalan peralatan dan downtime yang mahal</li>
-          <li>Probabilitas kecelakaan yang lebih tinggi dan risiko bahaya</li>
-          <li>Ketidakpatuhan dengan tender pemerintah</li>
-          <li>Peningkatan biaya perawatan dan operasi</li>
+          <li>Rischio di guasti meccanici</li>
+          <li>Possibilità di contaminazione in settori delicati</li>
+          <li>Perdita di tempo e perdita di entrate</li>
+          <li>Bassa efficienza e aumento del consumo energetico.</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Tanda BIS untuk Mesin Konstruksi menunjukkan bahwa produk tersebut
-          aman, andal dan sesuai dengan Standar India.
+          Le centrifughe certificate BIS con il marchio BIS per Centrifughe
+          implicano sicurezza, qualità e affidabilità.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* What is BIS Scheme X Certification Section */}
+        {/* What is BIS Scheme X Certificate Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS Scheme X untuk Mesin Konstruksi?
+          Cos'è il Certificato BIS Schema X per le Centrifughe?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X dicakup oleh Persyaratan Penilaian Kesesuaian
-          Bureau of Indian Standards (BIS) (2018) yang memberikan pedoman untuk
-          produk. Dalam skema ini, BIS memutuskan kualitas produk dan memastikan
-          bahwa produk tersebut mengurangi bahaya kesehatan manusia.
+        <p className="text-gray-600 text-base font-geist mb-6">
+          La Certificazione BIS Schema X per Centrifughe è uno schema di
+          certificazione obbligatorio ai sensi delle Norme di Valutazione della
+          Conformità BIS, 2018.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Fitur Utama - Sertifikasi Scheme X untuk Peralatan Konstruksi:
+          Certificazione Schema X per Centrifughe: Caratteristiche principali:
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Wajib untuk produsen domestik dan asing</li>
-          <li>Mencakup semua jenis mesin berat dan peralatan konstruksi</li>
+          <li>Applicabile sia ai produttori indiani che stranieri</li>
           <li>
-            Pengujian produk wajib, kunjungan pabrik wajib dan audit kepatuhan
-            harus dilakukan secara teratur
+            Applicabile a tutti i tipi di centrifughe presenti nei laboratori
+            industriali e di R&S
           </li>
-          <li>Mengotorisasi penggunaan tanda BIS untuk Mesin Konstruksi</li>
+          <li>
+            Sono obbligatori test di prodotto, audit e convalida della
+            conformità adeguati
+          </li>
+          <li>
+            Consente ai produttori di presentare la registrazione BIS basata
+            sulla certificazione per le Centrifughe sopra menzionate.
+          </li>
         </ul>
 
         {/* Separator Line */}
@@ -249,20 +250,21 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR untuk Peralatan Konstruksi
+          BIS OTR per le Centrifughe
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi Scheme X akan menjadi wajib sebagai bagian dari Peraturan
-          Teknis Omnibus (OTR) 2024 untuk Mesin Konstruksi yang diumumkan oleh
-          Kementerian Industri Berat.
+          L'OTR per le Centrifughe è stato annunciato dal Ministero
+          dell'Industria Pesante nel 2024, che richiede la certificazione Schema
+          X.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Semua produsen dan importir harus mendapatkan Lisensi BIS
-          untuk Mesin Konstruksi di bawah Scheme X sebelum 01 September 2026.
-          Mulai tanggal ini, peralatan yang tidak bersertifikat tidak boleh
-          diproduksi, diangkut maupun dijual untuk program infrastruktur publik.
+          Scadenza: Tutti i produttori e importatori sono tenuti a ottenere una
+          Licenza BIS per Centrifughe valida ai sensi dello Schema X entro il 1°
+          settembre 2026. "Ciò impedirà alle centrifughe non certificate di
+          essere vendute, importate o di partecipare a gare d'appalto in tutto
+          il paese," ha dichiarato un funzionario governativo.
         </p>
 
         {/* Separator Line */}
@@ -270,59 +272,62 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Manfaat Sertifikasi BIS untuk Peralatan atau Mesin Konstruksi
+          Vantaggi della Certificazione BIS per le Centrifughe
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Keselamatan & Keandalan: Mengurangi risiko kegagalan mekanis atau
-            kecelakaan di lokasi konstruksi.
+            Sicurezza e Conformità: Evita incidenti dovuti a guasti meccanici ad
+            alta velocità.
           </li>
           <li>
-            Akses Pasar & Kelayakan Tender: Produk Bersertifikat BIS memenuhi
-            syarat untuk Tender Pemerintah dan BUMN.
+            Qualità e Affidabilità: Le Centrifughe Certificate funzionano con
+            elevata precisione e accuratezza.
           </li>
           <li>
-            Kepercayaan Konsumen & Kontraktor: Tanda BIS Mesin Konstruksi
-            memastikan produk yang aman dan berkualitas untuk semua pembelinya.
+            Accesso al Mercato: La Licenza BIS per Centrifughe è generalmente
+            richiesta per gli appalti pubblici.
           </li>
           <li>
-            Masuk ke Pasar Global: Lisensi BIS untuk Mesin Konstruksi dapat
-            bermanfaat bagi perusahaan asing untuk akses mudah ke pasar India.
+            Fiducia del Consumatore: Il marchio BIS per le Centrifughe informa i
+            clienti sulla qualità del prodotto e sulla durabilità.
           </li>
           <li>
-            Kepatuhan Hukum: Kekebalan dari denda, larangan dan sanksi di bawah
-            OTR Mesin Konstruksi.
+            Vantaggio Competitivo: I marchi/produttori certificati BIS sono
+            preferiti nei mercati regolamentati e per gli appalti governativi.
           </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Types of Construction Equipment Section */}
+        {/* Types of Centrifuge Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Peralatan Konstruksi yang Dicakup di Bawah Scheme X
+          Tipi di Centrifughe nello Schema di Certificazione BIS
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X untuk Mesin Konstruksi berlaku untuk berbagai
-          kategori peralatan seperti:
+          L'accreditamento Schema X per le Centrifughe copre vari tipi come:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Excavator dan Backhoe Loader</li>
-          <li>Bulldozer dan Road Roller</li>
-          <li>Crane yang digunakan di lokasi konstruksi</li>
-          <li>Concrete Mixer dan Batching Plant</li>
-          <li>Asphalt Plant dan Paver</li>
-          <li>Mesin Piling dan Drilling</li>
-          <li>Peralatan Material Handling dan Earthmoving</li>
+          <li>Centrifughe da Laboratorio</li>
+          <li>Separatori Industriali</li>
+          <li>Centrifughe Refrigerate</li>
+          <li>Ultracentrifughe</li>
+          <li>Centrifughe a Gas</li>
+          <li>Centrifughe a Cestello</li>
+          <li>Centrifughe Decanter</li>
+          <li>Centrifughe Continue e Batch</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Setiap kategori harus memenuhi Standar India yang relevan (Kode IS)
-          sesuai dengan IS 17055 (Bagian 7):2020, IS 17055 (Bagian 8):2020 dan
-          IS 17055 (Bagian 12):2020 dalam hal desain, keselamatan, kinerja, dll.
+          Tutti questi tipi devono soddisfare gli Standard Indiani applicabili
+          (codice IS) come IS 16819:2018/ISO 12100:2010 (Sicurezza delle
+          Macchine Principi Generali per la Progettazione - Valutazione del
+          Rischio e Riduzione del Rischio). Tutte le varietà devono soddisfare
+          gli Standard Indiani (codice IS) appropriati per qualità, sicurezza ed
+          efficienza energetica.
         </p>
 
         {/* Separator Line */}
@@ -330,83 +335,80 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Prosedur untuk Lisensi BIS untuk Peralatan Konstruksi
+          Processo di Certificazione BIS per le Centrifughe
         </h2>
 
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Identifikasi Standar yang Berlaku: Temukan kode IS untuk jenis Mesin
-            Konstruksi Anda.
+            Identificazione degli Standard Rilevanti: Fare riferimento al codice
+            IS pertinente per il vostro tipo di Centrifuga.
           </li>
           <li>
-            Pengujian Produk: Lakukan pengujian keselamatan dan kinerja di
-            laboratorium yang diakui BIS.
+            Test del Prodotto: Eseguire i test di prestazione e sicurezza
+            richiesti secondo gli standard di settore, in laboratori accreditati
+            BIS.
           </li>
           <li>
-            Inspeksi Pabrik: Auditor BIS memeriksa proses QC dan produksi secara
-            literal.
+            Ispezione dello Stabilimento: Verifica del sistema di garanzia della
+            qualità presso il sito di produzione da parte di funzionari BIS.
           </li>
           <li>
-            Aplikasi & Dokumentasi: Berikan laporan, spesifikasi, dan manual
-            untuk ditinjau.
+            Applicazione e Documentazione: Fornire requisiti tecnici, manuale di
+            qualità e rapporti di prova.
           </li>
           <li>
-            Lisensi BIS untuk Mesin Konstruksi: Setelah disetujui, produsen
-            diizinkan untuk menempatkan tanda BIS untuk Mesin Konstruksi.
+            Rilascio della Licenza BIS per Centrifughe: È possibile apporre il
+            marchio BIS dopo l'approvazione.
           </li>
           <li>
-            Kepatuhan Berkelanjutan: Inspeksi dan pemantauan yang sering
-            mempertahankan kepatuhan berkelanjutan.
+            Conformità Continua: Il BIS verifica e conduce audit non programmati
+            per la conformità agli standard.
           </li>
         </ul>
 
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Sanksi untuk Ketidakpatuhan
-        </div>
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          Sanzioni per Non Conformità
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Kegagalan massal atau tidak diterbitkannya Sertifikat BIS Mesin
-          Konstruksi hingga 1 September 2026 dalam hal OTR untuk Mesin
-          Konstruksi akan memiliki implikasi berikut:
+          I produttori che non hanno tutti i modelli di centrifughe certificati
+          con la Certificazione BIS per Centrifughe entro il 1° settembre 2026
+          rischiano:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
+          <li>Vendita/importazione vietata per centrifughe non certificate</li>
+          <li>Sequestro di attrezzature non conformi e sanzioni pecuniarie</li>
           <li>
-            Larangan penjualan dan impor peralatan yang tidak bersertifikat
+            Questo vi renderà non idonei per gare d'appalto governative o PSU
           </li>
-          <li>Denda besar dan penahanan produk</li>
-          <li>Diskualifikasi dari proyek dan penghargaan pemerintah</li>
-          <li>
-            Potensi kerusakan reputasi yang tidak terbatas selama bertahun-tahun
-            ke depan
-          </li>
+          <li>Reputazione del marchio permanentemente compromessa in India</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Conclusion Section */}
-        <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Kesimpulan
-        </div>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Conclusione
+        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Implementasi wajib Sertifikasi BIS Scheme X untuk Mesin Konstruksi di
-          bawah OTR untuk Mesin Konstruksi (2024) adalah langkah signifikan
-          menuju keselamatan, efisiensi serta standardisasi dalam industri
-          domestik India.
+          L'implementazione della Certificazione BIS Schema X per le Centrifughe
+          nell'OTR 2024 è un passo avanti per portare sicurezza, efficienza e
+          qualità nel settore industriale e di laboratorio in India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Bagi produsen, importir, dan eksportir mesin konstruksi, mendapatkan
-          Lisensi BIS untuk Mesin Konstruksi dan menempatkan tanda BIS untuk
-          Mesin Konstruksi bukan hanya persyaratan kepatuhan, ini adalah langkah
-          strategis untuk memperluas ke pasar baru, menembus pasar konstruksi
-          India yang berkembang pesat, dan membangun reputasi Anda dalam jangka
-          panjang.
+          I produttori, importatori ed esportatori traggono vantaggio da questo
+          processo ottenendo la Certificazione BIS per Centrifughe, acquisendo
+          la Licenza BIS per Centrifughe e apponendo il marchio BIS per
+          Centrifughe sui loro prodotti, dimostrando che i loro prodotti
+          soddisfano il sistema normativo del mercato locale e i requisiti dei
+          clienti.
         </p>
 
-        <ServiceAuthorIndonesian />
+        <ServiceAuthorItalian />
       </div>
     </div>
   );
@@ -419,7 +421,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Layanan Kami
+              I Nostri Servizi
             </h2>
           </BoxReveal>
 
@@ -427,7 +429,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Konsultan Sertifikat Terbaik India
+                Miglior Consulente Certificazioni India
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -447,7 +449,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Tanda BIS (Lisensi ISI) untuk Manufaktur Asing
+              Marchio BIS (Licenza ISI) per Produttori Stranieri
             </p>
           </Link>
 
@@ -463,7 +465,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Registrasi CDSCO
+              Certificazione Registrazione CDSCO
             </p>
           </Link>
 
@@ -479,7 +481,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Registrasi BIS (CRS)
+              Registrazione BIS (CRS)
             </p>
           </Link>
 
@@ -495,7 +497,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Manajemen Limbah Plastik
+              Gestione Rifiuti Plastici
             </p>
           </Link>
 
@@ -511,7 +513,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat EPR
+              Certificazione Certificato EPR
             </p>
           </Link>
 
@@ -527,7 +529,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat LMPC
+              Certificazione Certificato LMPC
             </p>
           </Link>
 
@@ -543,7 +545,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikat Registrasi BIS
+              Certificato Registrazione BIS
             </p>
           </Link>
 
@@ -559,7 +561,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              TANDA ISI (BIS) untuk Manufaktur India
+              MARCHIO ISI (BIS) per Produttori Indiani
             </p>
           </Link>
         </div>

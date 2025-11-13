@@ -9,12 +9,10 @@ import {
 import { SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
-import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
+import FooterItalian from "@/components/manual/Footer/FooterItalian";
 import { Helmet } from "react-helmet-async";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
-import { BoxReveal } from "@/components/magicui/box-reveal";
-import { Separator } from "@/components/ui/separator";
+import ServicesRightSideContentItalian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentItalian";
+import ServiceAuthorItalian from "@/components/manual/ServiceAuthor/ServiceAuthorItalian";
 const BISImage = "/services-images/BIS.jpg";
 const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
@@ -22,39 +20,38 @@ const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
+import { BoxReveal } from "@/components/magicui/box-reveal";
+import { Separator } from "@/components/ui/separator";
 
-
-const ConstructionMachineryIndonesian = () => {
+const CompressorsItalian = () => {
   return (
     <div className="relative w-full">
-      <ConstructionMachineryMetaTags />
-
-      <ConstructionMachineryBreadcrumb />
-      <ConstructionMachineryMainContent />
+      <CompressorsMetaTags />
+      <CompressorsBreadcrumb />
+      <CompressorsMainContent />
       <Services />
       <VideoSection />
-      <FooterIndonesian />
+      <FooterItalian />
     </div>
   );
 };
 
-export default ConstructionMachineryIndonesian;
+export default CompressorsItalian;
 
-const ConstructionMachineryMetaTags = () => {
-  const title =
-    "Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Penggalian Tanah, dan Pertambangan";
+const CompressorsMetaTags = () => {
+  const title = "Certificazione BIS Schema X per Compressori";
   const description =
-    "Sertifikasi BIS Scheme X wajib untuk mesin konstruksi, penggalian tanah, dan pertambangan untuk memastikan keselamatan, kualitas, dan standardisasi di sektor industri yang kritis";
+    "La certificazione BIS schema X per compressori, assemblaggi o loro componenti è obbligatoria secondo il Regolamento Tecnico Omnibus, 2024 che migliora la sicurezza del prodotto e la standardizzazione in India";
   const keywords =
-    "Sertifikasi BIS untuk Mesin Konstruksi, Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Sertifikasi Scheme X untuk Mesin Konstruksi, BIS untuk Mesin Konstruksi, OTR untuk Mesin Konstruksi";
+    "Certificazione BIS per Compressori, Certificazione BIS Schema X per Compressori, Certificazione Schema X per Compressori, BIS per Compressori, OTR per Compressori";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Mesin Konstruksi di India | Panduan Lengkap";
+    "Certificazione BIS Schema X per Compressori in India | Guida Completa";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk mesin konstruksi di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "Scopri tutto sulla Certificazione BIS Schema X per compressori in India. Comprendi la conformità OTR 2024, il processo di Licenza BIS, i requisiti del marchio ISI e come ottenere la certificazione prima della scadenza di settembre 2026";
 
   return (
     <Helmet>
@@ -75,7 +72,7 @@ const ConstructionMachineryMetaTags = () => {
   );
 };
 
-const ConstructionMachineryBreadcrumb = () => {
+const CompressorsBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -85,7 +82,7 @@ const ConstructionMachineryBreadcrumb = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Beranda</Link>
+                    <Link to="/">Home</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -94,7 +91,7 @@ const ConstructionMachineryBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/SchemeX-Products">Produk SchemeX</Link>
+                    <Link to="/SchemeX-Products">Prodotti SchemeX</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -103,7 +100,7 @@ const ConstructionMachineryBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS Scheme X untuk Mesin Konstruksi
+                    BIS Schema X per Compressori
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -115,133 +112,151 @@ const ConstructionMachineryBreadcrumb = () => {
   );
 };
 
-const ConstructionMachineryMainContent = () => {
+const CompressorsMainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
         {/* Left Side Content */}
-        <ConstructionMachineryMainContentLeft />
+        <CompressorsMainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentIndonesian />
+        <ServicesRightSideContentItalian />
       </div>
     </div>
   );
 };
 
-const ConstructionMachineryMainContentLeft = () => {
+const CompressorsMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS untuk Mesin Konstruksi
+          BIS Schema X per Compressori
         </h1>
 
-        {/* Main Image */}
+        {/* BIS Scheme X Image */}
         <div className="mb-6">
           <img
-            src="/schemXproductImages/BIS-Scheme-X-License-for-Construction-Machinery.png"
-            alt="Sertifikasi BIS Scheme X untuk Mesin Konstruksi"
-            title="Lisensi BIS Scheme X untuk Mesin Konstruksi"
+            src="/schemXproductImages/BIS-Scheme-X-License-for-Compressors.png"
+            title="Licenza BIS Schema X per Compressori"
+            alt="Certificazione BIS Schema X per Compressori"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Excavator, loader, bulldozer, concrete mixer dan road roller adalah
-          mesin konstruksi utama yang digunakan dalam pembangunan infrastruktur
-          India. Permintaan yang lebih tinggi untuk mesin yang aman dan andal
-          berasal dari investasi besar dalam jalan raya, smart city, pabrik, dan
-          perumahan.
+          I compressori sono apparecchiature essenziali in vari settori come la
+          refrigerazione, HVAC, petrolchimica, produzione, lavorazione
+          alimentare e applicazioni farmaceutiche. L'industria indiana in rapida
+          crescita si sta espandendo velocemente e la qualità e la sicurezza dei
+          compressori sono diventate una preoccupazione primaria.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bureau of Indian Standards (BIS) telah membuat Sertifikasi BIS Wajib
-          di bawah Scheme-X untuk Mesin Konstruksi untuk memberikan jaminan
-          kualitas, layanan dan keselamatan. Ini memastikan bahwa perangkat
-          sesuai dengan Standar India sebelum tersedia untuk dijual atau diimpor
-          di India.
+          Per garantire ciò, il Bureau of Indian Standards (BIS) ha implementato
+          la Certificazione BIS per Compressori sotto la Certificazione Schema
+          X. Questa certificazione assicura che ogni compressore introdotto nel
+          territorio indiano rispetti determinati standard di sicurezza,
+          prestazioni ed efficienza.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Di artikel ini, Anda akan mempelajari tentang Sertifikasi BIS Scheme X
-          untuk Mesin Konstruksi, persyaratan OTR untuk Mesin Konstruksi, dan
-          proses mendapatkan Lisensi BIS untuk Mesin Konstruksi serta tanda BIS
-          untuk Mesin Konstruksi.
+          In questa guida, forniamo informazioni sulla certificazione BIS Schema
+          X per Compressori e OTR per Compressori, oltre a come i produttori
+          possono ottenere la Licenza BIS per Compressori per utilizzare il
+          Marchio BIS per Compressori in India.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Why BIS is Important Section */}
+        {/* Why BIS for Compressors is Important Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa BIS untuk Mesin Konstruksi Penting
+          Perché BIS per Compressori è Importante
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mesin konstruksi diterapkan dalam pertumbuhan infrastruktur dan situs
-          pengembangan konstruksi besar.
+          I compressori sono utilizzati in:
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Pengembangan jalan dan jalan raya</li>
-          <li>Proyek real estate dan perumahan</li>
-          <li>Pertambangan dan penggalian</li>
-          <li>Konstruksi industri dan teknik berat</li>
-          <li>Proyek pelabuhan, bandara, dan metro</li>
+          <li>Sistemi di aria condizionata/refrigerazione</li>
+          <li>Linee di trasmissione gas e stoccaggio</li>
+          <li>Impianti di processo petrolio e gas</li>
+          <li>
+            Installazioni di generazione elettrica e impianti industriali
+            chimici
+          </li>
+          <li>Produzione di alimenti e bevande</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Konsekuensi dari tidak adanya BIS untuk Peralatan Konstruksi adalah
-          sebagai berikut:
+          Ogni tipo deve soddisfare gli Standard Indiani applicabili (codice IS)
+          come IS 17093:2019.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Senza BIS per Compressori, prodotti inferiori o non marcati possono
+          causare:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Kegagalan peralatan dan downtime yang mahal</li>
-          <li>Probabilitas kecelakaan yang lebih tinggi dan risiko bahaya</li>
-          <li>Ketidakpatuhan dengan tender pemerintah</li>
-          <li>Peningkatan biaya perawatan dan operasi</li>
+          <li>Guasti, periodi di manutenzione e tempi di inattività</li>
+          <li>
+            Produzione energetica inefficiente con bollette elettriche elevate
+          </li>
+          <li>Rischi per la sicurezza, come surriscaldamento o perdite</li>
+          <li>Perdita di reputazione e danni monetari</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Tanda BIS untuk Mesin Konstruksi menunjukkan bahwa produk tersebut
-          aman, andal dan sesuai dengan Standar India.
+          Pertanto, il Marchio BIS per Compressori con certificazione ISI è una
+          garanzia di sicurezza, affidabilità e qualità.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* What is BIS Scheme X Certification Section */}
+        {/* What is BIS Scheme X Certificate Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS Scheme X untuk Mesin Konstruksi?
+          Cos'è la Certificazione BIS Schema X per Compressori?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X dicakup oleh Persyaratan Penilaian Kesesuaian
-          Bureau of Indian Standards (BIS) (2018) yang memberikan pedoman untuk
-          produk. Dalam skema ini, BIS memutuskan kualitas produk dan memastikan
-          bahwa produk tersebut mengurangi bahaya kesehatan manusia.
+        <p className="text-gray-600 text-base font-geist mb-6">
+          La Certificazione BIS Schema X per Compressori è uno schema di
+          valutazione della conformità in India secondo il Regolamento di
+          Valutazione della Conformità BIS, 2018. Serve a garantire che sia i
+          produttori nazionali che stranieri rispettino gli standard di qualità
+          indiani.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Fitur Utama - Sertifikasi Scheme X untuk Peralatan Konstruksi:
+          Caratteristiche del Certificato Schema X per Compressori:
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Wajib untuk produsen domestik dan asing</li>
-          <li>Mencakup semua jenis mesin berat dan peralatan konstruksi</li>
           <li>
-            Pengujian produk wajib, kunjungan pabrik wajib dan audit kepatuhan
-            harus dilakukan secara teratur
+            Obbligatorio per tutti i produttori (sia indiani che stranieri)
           </li>
-          <li>Mengotorisasi penggunaan tanda BIS untuk Mesin Konstruksi</li>
+          <li>
+            Copre vari tipi di compressori notificati secondo gli Standard
+            Indiani
+          </li>
+          <li>
+            Prevede test di terze parti, ispezioni in fabbrica e verifiche
+            periodiche di conformità
+          </li>
+          <li>
+            Consente l'uso del Marchio BIS per Compressori sui prodotti del
+            titolare della licenza come prodotti certificati
+          </li>
         </ul>
 
         {/* Separator Line */}
@@ -249,20 +264,21 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR untuk Peralatan Konstruksi
+          BIS OTR per Compressori
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi Scheme X akan menjadi wajib sebagai bagian dari Peraturan
-          Teknis Omnibus (OTR) 2024 untuk Mesin Konstruksi yang diumumkan oleh
-          Kementerian Industri Berat.
+          Il Regolamento Tecnico Omnibus (OTR) per Compressori rilasciato dal
+          Ministero dell'Industria Pesante nel 2024 rende obbligatoria la
+          Certificazione Schema X per Compressori.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Semua produsen dan importir harus mendapatkan Lisensi BIS
-          untuk Mesin Konstruksi di bawah Scheme X sebelum 01 September 2026.
-          Mulai tanggal ini, peralatan yang tidak bersertifikat tidak boleh
-          diproduksi, diangkut maupun dijual untuk program infrastruktur publik.
+          Scadenza per la Conformità: Entro il 1 settembre 2026, tutti i
+          produttori e importatori sono tenuti ad avere una Licenza BIS per
+          Compressori valida sotto lo Schema X. Qualsiasi non conformità
+          comporterà il divieto totale di vendita e importazione di compressori
+          non certificati in India.
         </p>
 
         {/* Separator Line */}
@@ -270,59 +286,61 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Manfaat Sertifikasi BIS untuk Peralatan atau Mesin Konstruksi
+          Vantaggi della Certificazione BIS per Compressori
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Keselamatan & Keandalan: Mengurangi risiko kegagalan mekanis atau
-            kecelakaan di lokasi konstruksi.
+            Sicurezza e Prestazioni: Aiuta a evitare pericoli come perdite,
+            surriscaldamento e guasti della macchina.
           </li>
           <li>
-            Akses Pasar & Kelayakan Tender: Produk Bersertifikat BIS memenuhi
-            syarat untuk Tender Pemerintah dan BUMN.
+            Accesso al Mercato: I compressori certificati BIS possono essere
+            utilizzati in appalti pubblici e progetti governativi.
           </li>
           <li>
-            Kepercayaan Konsumen & Kontraktor: Tanda BIS Mesin Konstruksi
-            memastikan produk yang aman dan berkualitas untuk semua pembelinya.
+            Fiducia dei Consumatori: Il Marchio BIS per Compressori offre agli
+            acquirenti la certezza che il prodotto rispetta gli Standard
+            Indiani.
           </li>
           <li>
-            Masuk ke Pasar Global: Lisensi BIS untuk Mesin Konstruksi dapat
-            bermanfaat bagi perusahaan asing untuk akses mudah ke pasar India.
+            Vantaggio Competitivo: Solo i marchi certificati ottengono maggiore
+            fiducia e preferenza sul mercato.
           </li>
           <li>
-            Kepatuhan Hukum: Kekebalan dari denda, larangan dan sanksi di bawah
-            OTR Mesin Konstruksi.
+            Facile Accesso al Mercato per Marchi Internazionali: La Licenza BIS
+            per Compressori facilita l'accesso semplice al mercato indiano per i
+            produttori stranieri.
           </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Types of Construction Equipment Section */}
+        {/* Types of Compressor Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Peralatan Konstruksi yang Dicakup di Bawah Scheme X
+          Tipi di Compressori Coperti da BIS Schema X
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X untuk Mesin Konstruksi berlaku untuk berbagai
-          kategori peralatan seperti:
+          La Certificazione BIS Schema X è disponibile per vari tipi di
+          compressori come:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Excavator dan Backhoe Loader</li>
-          <li>Bulldozer dan Road Roller</li>
-          <li>Crane yang digunakan di lokasi konstruksi</li>
-          <li>Concrete Mixer dan Batching Plant</li>
-          <li>Asphalt Plant dan Paver</li>
-          <li>Mesin Piling dan Drilling</li>
-          <li>Peralatan Material Handling dan Earthmoving</li>
+          <li>Compressori Alternativi a Spostamento Positivo</li>
+          <li>Compressori Rotativi</li>
+          <li>Compressori a Vite</li>
+          <li>Turbocompressori</li>
+          <li>Compressori a Flusso Assiale</li>
+          <li>Compressori d'Aria Industriali e Portatili</li>
+          <li>Compressori per aria condizionata e refrigerazione</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Setiap kategori harus memenuhi Standar India yang relevan (Kode IS)
-          sesuai dengan IS 17055 (Bagian 7):2020, IS 17055 (Bagian 8):2020 dan
-          IS 17055 (Bagian 12):2020 dalam hal desain, keselamatan, kinerja, dll.
+          Le diverse tecnologie di compressori devono conformarsi ai rispettivi
+          Standard Indiani, che stabiliscono requisiti per prestazioni, consumo
+          energetico, qualità dei materiali e sicurezza.
         </p>
 
         {/* Separator Line */}
@@ -330,83 +348,84 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Prosedur untuk Lisensi BIS untuk Peralatan Konstruksi
+          Passo dopo Passo Licenza BIS per Compressori – Come Fare Domanda?
         </h2>
 
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Identifikasi Standar yang Berlaku: Temukan kode IS untuk jenis Mesin
-            Konstruksi Anda.
+            Identificare lo Standard Applicabile: Trovare il codice IS
+            appropriato per il vostro compressore.
           </li>
           <li>
-            Pengujian Produk: Lakukan pengujian keselamatan dan kinerja di
-            laboratorium yang diakui BIS.
+            Test del Prodotto: Eseguire test obbligatori di prestazioni,
+            sicurezza ed efficienza energetica in laboratori riconosciuti dal
+            BIS.
           </li>
           <li>
-            Inspeksi Pabrik: Auditor BIS memeriksa proses QC dan produksi secara
-            literal.
+            Ispezione della Fabbrica: Il personale BIS effettua visite sul campo
+            per verificare le procedure di produzione e i metodi di controllo
+            qualità.
           </li>
           <li>
-            Aplikasi & Dokumentasi: Berikan laporan, spesifikasi, dan manual
-            untuk ditinjau.
+            Documentazione e Domanda: Includere rapporti di test, specifiche
+            tecniche e manuali di Qualità insieme alla domanda BIS.
           </li>
           <li>
-            Lisensi BIS untuk Mesin Konstruksi: Setelah disetujui, produsen
-            diizinkan untuk menempatkan tanda BIS untuk Mesin Konstruksi.
+            Rilascio della Licenza BIS per Compressori: Una volta approvato, al
+            produttore viene concesso il diritto di utilizzare il Marchio BIS
+            per Compressori.
           </li>
           <li>
-            Kepatuhan Berkelanjutan: Inspeksi dan pemantauan yang sering
-            mempertahankan kepatuhan berkelanjutan.
+            Conformità Continua: Audit di sorveglianza regolari e test sui
+            prodotti vengono effettuati dal BIS per garantire la conformità
+            continua.
           </li>
         </ul>
 
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Sanksi untuk Ketidakpatuhan
-        </div>
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          Sanzioni per Non Conformità
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Kegagalan massal atau tidak diterbitkannya Sertifikat BIS Mesin
-          Konstruksi hingga 1 September 2026 dalam hal OTR untuk Mesin
-          Konstruksi akan memiliki implikasi berikut:
+          I produttori che non ottengono la Certificazione BIS per Compressori
+          entro il 1 settembre 2026 secondo l'OTR per Compressori saranno
+          soggetti a:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>
-            Larangan penjualan dan impor peralatan yang tidak bersertifikat
+            Vendita/Importazione di compressori non testati non consentita
           </li>
-          <li>Denda besar dan penahanan produk</li>
-          <li>Diskualifikasi dari proyek dan penghargaan pemerintah</li>
-          <li>
-            Potensi kerusakan reputasi yang tidak terbatas selama bertahun-tahun
-            ke depan
-          </li>
+          <li>Confisca di merci non conformi e sanzioni commerciali</li>
+          <li>Esclusione da gare governative e contratti PSU</li>
+          <li>Perdita di fiducia nel mercato indiano</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Conclusion Section */}
-        <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Kesimpulan
-        </div>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Conclusione
+        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Implementasi wajib Sertifikasi BIS Scheme X untuk Mesin Konstruksi di
-          bawah OTR untuk Mesin Konstruksi (2024) adalah langkah signifikan
-          menuju keselamatan, efisiensi serta standardisasi dalam industri
-          domestik India.
+          L'implementazione della Certificazione BIS Schema X per Compressori
+          attraverso l'OTR per Compressori (2024) è un passo avanti
+          significativo per la sicurezza industriale, l'efficienza energetica e
+          la garanzia di qualità in India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Bagi produsen, importir, dan eksportir mesin konstruksi, mendapatkan
-          Lisensi BIS untuk Mesin Konstruksi dan menempatkan tanda BIS untuk
-          Mesin Konstruksi bukan hanya persyaratan kepatuhan, ini adalah langkah
-          strategis untuk memperluas ke pasar baru, menembus pasar konstruksi
-          India yang berkembang pesat, dan membangun reputasi Anda dalam jangka
-          panjang.
+          I produttori, importatori ed esportatori che completano il processo di
+          ottenimento del Certificato BIS per Compressori e assicurano il
+          certificato BIS per Compressori ottengono il diritto di far parte di
+          questo mercato garantendo che i prodotti che offrono ai consumatori
+          indiani siano considerati sicuri da usare, abbiano un rischio
+          ambientale inferiore e siano di buona qualità.
         </p>
 
-        <ServiceAuthorIndonesian />
+        <ServiceAuthorItalian />
       </div>
     </div>
   );
@@ -419,7 +438,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Layanan Kami
+              I Nostri Servizi
             </h2>
           </BoxReveal>
 
@@ -427,7 +446,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Konsultan Sertifikat Terbaik India
+                Migliori Consulenti di Certificazione in India
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -447,7 +466,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Tanda BIS (Lisensi ISI) untuk Manufaktur Asing
+              Marchio BIS (Licenza ISI) per Produttori Stranieri
             </p>
           </Link>
 
@@ -463,7 +482,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Registrasi CDSCO
+              Certificazione Registrazione CDSCO
             </p>
           </Link>
 
@@ -479,7 +498,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Registrasi BIS (CRS)
+              Registrazione BIS (CRS)
             </p>
           </Link>
 
@@ -495,7 +514,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Manajemen Limbah Plastik
+              Gestione Rifiuti Plastici
             </p>
           </Link>
 
@@ -511,7 +530,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat EPR
+              Certificazione Certificato EPR
             </p>
           </Link>
 
@@ -527,7 +546,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat LMPC
+              Certificazione Certificato LMPC
             </p>
           </Link>
 
@@ -543,7 +562,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikat Registrasi BIS
+              Certificato di Registrazione BIS
             </p>
           </Link>
 
@@ -559,7 +578,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              TANDA ISI (BIS) untuk Manufaktur India
+              MARCHIO ISI (BIS) per Produttori Indiani
             </p>
           </Link>
         </div>

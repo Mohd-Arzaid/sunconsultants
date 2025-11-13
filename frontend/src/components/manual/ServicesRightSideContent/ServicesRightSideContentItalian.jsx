@@ -37,6 +37,20 @@ const ServicesRightSideContentItalian = () => {
     "/it/certificazione-bis-isi-mark",
     // BIS CERTIFICATION PATH
     "/it/cose-il-certificato-bis-indiano",
+    // Centrifuges Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-centrifughe-e-macchinari-di-filtrazione-o-purificazione",
+    // Compressors Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-compressori",
+    // Construction Machinery Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-macchinari-da-costruzione",
+    // Cranes Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-gru",
+    // Diesel Generator Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-generatori-diesel",
+    // Embroidery Machines Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-macchine-da-ricamo",
+    // Gears, Gearing and Transmission Elements Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-ingranaggi-ingranamento-ed-elementi-di-trasmissione",
   ];
 
   // Check if current path should show these components
@@ -572,6 +586,46 @@ const ContactFormServicesRightSideContentItalian = () => {
     // BIS CERTIFICATION PATH
     if (path.includes("/it/cose-il-certificato-bis-indiano"))
       return "BIS Certification (Italian)";
+
+    // Centrifuges Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-centrifughe-e-macchinari-di-filtrazione-o-purificazione"
+      )
+    )
+      return "Centrifuges Scheme X Product (Italian)";
+
+    // Compressors Scheme X Product (Italian) Page Url
+    if (path.includes("/certificazione-bis-schema-x-per-compressori"))
+      return "Compressors Scheme X Product (Italian)";
+
+    // Construction Machinery Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-macchinari-da-costruzione"
+      )
+    )
+      return "Construction Machinery Scheme X Product (Italian)";
+
+    // Cranes Scheme X Product (Italian) Page Url
+    if (path.includes("/certificazione-bis-schema-x-per-gru"))
+      return "Cranes Scheme X Product (Italian)";
+
+    // Diesel Generator Scheme X Product (Italian) Page Url
+    if (path.includes("/certificazione-bis-schema-x-per-generatori-diesel"))
+      return "Diesel Generator Scheme X Product (Italian)";
+
+    // Embroidery Machines Scheme X Product (Italian) Page Url
+    if (path.includes("/certificazione-bis-schema-x-per-macchine-da-ricamo"))
+      return "Embroidery Machines Scheme X Product (Italian)";
+
+    // Gears, Gearing and Transmission Elements Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-ingranaggi-ingranamento-ed-elementi-di-trasmissione"
+      )
+    )
+      return "Gears, Gearing and Transmission Elements Scheme X Product (Italian)";
   };
 
   const [formData, setFormData] = useState({

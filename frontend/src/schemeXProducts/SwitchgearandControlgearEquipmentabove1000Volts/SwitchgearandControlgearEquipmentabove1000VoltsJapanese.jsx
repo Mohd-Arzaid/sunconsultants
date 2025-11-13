@@ -9,12 +9,12 @@ import {
 import { SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
-import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
+import ServiceAuthorJapanese from "@/components/manual/ServiceAuthor/ServiceAuthorJapanese";
 import { Helmet } from "react-helmet-async";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
+import ServicesRightSideContentJapanese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentJapanese";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
+import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
 const BISImage = "/services-images/BIS.jpg";
 const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
@@ -23,38 +23,36 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-
-const ConstructionMachineryIndonesian = () => {
+const SwitchgearandControlgearEquipmentabove1000VoltsJapanese = () => {
   return (
     <div className="relative w-full">
-      <ConstructionMachineryMetaTags />
-
-      <ConstructionMachineryBreadcrumb />
-      <ConstructionMachineryMainContent />
+      <SwitchgearandControlgearEquipmentabove1000VoltsMetaTags />
+      <SwitchgearandControlgearEquipmentabove1000VoltsBreadcrumb />
+      <SwitchgearandControlgearEquipmentabove1000VoltsMainContent />
       <Services />
       <VideoSection />
-      <FooterIndonesian />
+      <FooterJapanese />
     </div>
   );
 };
 
-export default ConstructionMachineryIndonesian;
+export default SwitchgearandControlgearEquipmentabove1000VoltsJapanese;
 
-const ConstructionMachineryMetaTags = () => {
+const SwitchgearandControlgearEquipmentabove1000VoltsMetaTags = () => {
   const title =
-    "Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Penggalian Tanah, dan Pertambangan";
+    "1000ボルト超のスイッチギアおよびコントロールギア機器のBISスキームX認証";
   const description =
-    "Sertifikasi BIS Scheme X wajib untuk mesin konstruksi, penggalian tanah, dan pertambangan untuk memastikan keselamatan, kualitas, dan standardisasi di sektor industri yang kritis";
+    "1000V超のスイッチギアおよびコントロールギア機器のBISスキームX認証。強制コンプライアンス、テスト、プロセスステップ、メリットなどをご覧ください。";
   const keywords =
-    "Sertifikasi BIS untuk Mesin Konstruksi, Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Sertifikasi Scheme X untuk Mesin Konstruksi, BIS untuk Mesin Konstruksi, OTR untuk Mesin Konstruksi";
+    "スイッチギアおよびコントロールギア機器のBIS認証、スイッチギアおよびコントロールギア機器のBISスキームX認証、スイッチギアおよびコントロールギア機器のスキームX認証、スイッチギアおよびコントロールギア機器のBIS、スイッチギアおよびコントロールギア機器のOTR";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Mesin Konstruksi di India | Panduan Lengkap";
+    "インドの1000ボルト超のスイッチギアおよびコントロールギア機器のBISスキームX認証 | 完全ガイド";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk mesin konstruksi di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "インドのスイッチギアおよびコントロールギア機器のBISスキームX認証についてすべて学びましょう。OTR 2024コンプライアンス、BISライセンスプロセス、ISIマーク要件、および2026年9月の期限前に認証を取得する方法を理解してください";
 
   return (
     <Helmet>
@@ -75,7 +73,7 @@ const ConstructionMachineryMetaTags = () => {
   );
 };
 
-const ConstructionMachineryBreadcrumb = () => {
+const SwitchgearandControlgearEquipmentabove1000VoltsBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
       <div className="max-w-[80rem] mx-auto px-4">
@@ -85,7 +83,7 @@ const ConstructionMachineryBreadcrumb = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Beranda</Link>
+                    <Link to="/">ホーム</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -94,7 +92,7 @@ const ConstructionMachineryBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/SchemeX-Products">Produk SchemeX</Link>
+                    <Link to="/SchemeX-Products">スキームX製品</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -103,7 +101,7 @@ const ConstructionMachineryBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS Scheme X untuk Mesin Konstruksi
+                    1000ボルト超のスイッチギアおよびコントロールギア機器のBIS認証
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -115,64 +113,56 @@ const ConstructionMachineryBreadcrumb = () => {
   );
 };
 
-const ConstructionMachineryMainContent = () => {
+const SwitchgearandControlgearEquipmentabove1000VoltsMainContent = () => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
       <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
         {/* Left Side Content */}
-        <ConstructionMachineryMainContentLeft />
+        <SwitchgearandControlgearEquipmentabove1000VoltsMainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentIndonesian />
+        <ServicesRightSideContentJapanese />
       </div>
     </div>
   );
 };
 
-const ConstructionMachineryMainContentLeft = () => {
+const SwitchgearandControlgearEquipmentabove1000VoltsMainContentLeft = () => {
   return (
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS untuk Mesin Konstruksi
+          1000ボルト超のスイッチギアおよびコントロールギア機器のBISスキームX認証
         </h1>
 
         {/* Main Image */}
         <div className="mb-6">
           <img
-            src="/schemXproductImages/BIS-Scheme-X-License-for-Construction-Machinery.png"
-            alt="Sertifikasi BIS Scheme X untuk Mesin Konstruksi"
-            title="Lisensi BIS Scheme X untuk Mesin Konstruksi"
+            src="/schemXproductImages/BIS-license-for-switch-gear-exceeding-1000-volts.png"
+            alt="1000ボルト超のスイッチギアおよびコントロールギア機器のBISスキームX認証"
+            title="1000ボルト超のスイッチギア機器のBISライセンス"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Excavator, loader, bulldozer, concrete mixer dan road roller adalah
-          mesin konstruksi utama yang digunakan dalam pembangunan infrastruktur
-          India. Permintaan yang lebih tinggi untuk mesin yang aman dan andal
-          berasal dari investasi besar dalam jalan raya, smart city, pabrik, dan
-          perumahan.
+          高電圧スイッチギアおよびコントロールギアは、現代文明の電化の進化において、エネルギー分配および運用プロセスとシームレスに統合されています。
+          これらのシステムは、1000ボルトを超える安全な電力制御と分配を保証するように設計されており、リスク管理および電力継続性のための重要な電力需要エリアで非常に価値があります。
+          機器の安全性と標準化への関心の高まりに伴い、インド標準局（BIS）は、スキームX認証により業界を管理するための具体的な措置を講じました。
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bureau of Indian Standards (BIS) telah membuat Sertifikasi BIS Wajib
-          di bawah Scheme-X untuk Mesin Konstruksi untuk memberikan jaminan
-          kualitas, layanan dan keselamatan. Ini memastikan bahwa perangkat
-          sesuai dengan Standar India sebelum tersedia untuk dijual atau diimpor
-          di India.
+          この法律の一部である包括技術規則（OTR）は、エネルギーおよび産業セクターで使用される高電圧機器のすべての製造業者にスキームX認証を義務付けています。
+          国内および国際的なこれらの製造業者は、2026年9月1日からこの規制の対象となります。
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Di artikel ini, Anda akan mempelajari tentang Sertifikasi BIS Scheme X
-          untuk Mesin Konstruksi, persyaratan OTR untuk Mesin Konstruksi, dan
-          proses mendapatkan Lisensi BIS untuk Mesin Konstruksi serta tanda BIS
-          untuk Mesin Konstruksi.
+          このブログは、1000ボルトを超える電圧で動作するすべてのタイプのスイッチギアおよびコントロールギア機器、およびそのアセンブリ、サブアセンブリ、コンポーネント、重要性、範囲、認証プロセス、利点、および必要な文書に関連するスキームX認証に関するすべての必要な情報をカバーしています。
         </p>
 
         {/* Separator Line */}
@@ -180,68 +170,64 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Why BIS is Important Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa BIS untuk Mesin Konstruksi Penting
+          スイッチギアおよびコントロールギアのBIS認証がなぜ重要か？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mesin konstruksi diterapkan dalam pertumbuhan infrastruktur dan situs
-          pengembangan konstruksi besar.
+          高電圧スイッチギアおよびコントロールギアは、以下の分野で広く使用されています：
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Pengembangan jalan dan jalan raya</li>
-          <li>Proyek real estate dan perumahan</li>
-          <li>Pertambangan dan penggalian</li>
-          <li>Konstruksi industri dan teknik berat</li>
-          <li>Proyek pelabuhan, bandara, dan metro</li>
+          <li>発電施設</li>
+          <li>送電・配電変電所</li>
+          <li>地下鉄および鉄道の電化システム</li>
+          <li>石油・ガスおよび重工業</li>
+          <li>再生可能エネルギーパーク（太陽光、風力、水力）</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Konsekuensi dari tidak adanya BIS untuk Peralatan Konstruksi adalah
-          sebagai berikut:
+          適切な認証がない場合、リスクには以下が含まれます：
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Kegagalan peralatan dan downtime yang mahal</li>
-          <li>Probabilitas kecelakaan yang lebih tinggi dan risiko bahaya</li>
-          <li>Ketidakpatuhan dengan tender pemerintah</li>
-          <li>Peningkatan biaya perawatan dan operasi</li>
+          <li>火災の危険性およびアークフラッシュ事故</li>
+          <li>広範囲の停電を引き起こす機器の故障</li>
+          <li>インドの安全基準違反</li>
+          <li>大規模な政府および民間契約からの失格</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Tanda BIS untuk Mesin Konstruksi menunjukkan bahwa produk tersebut
-          aman, andal dan sesuai dengan Standar India.
+          スキームX認証は、重要なシステムが最も厳格な安全性と品質基準に従って分離されていることの保証です。これは、1000Vを超える電圧で動作するこの種の機器に関連するアセンブリ（BS8867）にも必要に応じて適用されます。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* What is BIS Scheme X Certification Section */}
+        {/* What is BIS Scheme X Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS Scheme X untuk Mesin Konstruksi?
+          スイッチギアおよびコントロールギアのBISスキームX認証とは何ですか？
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X dicakup oleh Persyaratan Penilaian Kesesuaian
-          Bureau of Indian Standards (BIS) (2018) yang memberikan pedoman untuk
-          produk. Dalam skema ini, BIS memutuskan kualitas produk dan memastikan
-          bahwa produk tersebut mengurangi bahaya kesehatan manusia.
+          BISスキームX認証は、2018年のBIS適合性評価規則の下で確立され、スイッチギアおよびコントロールギアの試験、検査、およびライセンスが製品がインド市場に参入する前に必要であることを保証します。
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Fitur Utama - Sertifikasi Scheme X untuk Peralatan Konstruksi:
+          主な特徴：
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Wajib untuk produsen domestik dan asing</li>
-          <li>Mencakup semua jenis mesin berat dan peralatan konstruksi</li>
+          <li>インドおよび外国企業に義務付けられています</li>
           <li>
-            Pengujian produk wajib, kunjungan pabrik wajib dan audit kepatuhan
-            harus dilakukan secara teratur
+            1000ボルト以上のすべての高電圧スイッチギアおよびコントロールギアをカバーします
           </li>
-          <li>Mengotorisasi penggunaan tanda BIS untuk Mesin Konstruksi</li>
+          <li>BIS認定研究所での試験が必要です</li>
+          <li>工場および品質システムの監査が含まれます</li>
+          <li>
+            指定された機器に標準マークを使用するためのBISライセンスを提供します
+          </li>
         </ul>
 
         {/* Separator Line */}
@@ -249,164 +235,104 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR untuk Peralatan Konstruksi
+          スイッチギアおよびコントロールギア機器のOTR
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi Scheme X akan menjadi wajib sebagai bagian dari Peraturan
-          Teknis Omnibus (OTR) 2024 untuk Mesin Konstruksi yang diumumkan oleh
-          Kementerian Industri Berat.
+          重工業省は、2024年にスイッチギアおよびコントロールギア機器の包括技術規則（OTR）を導入しました。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Semua produsen dan importir harus mendapatkan Lisensi BIS
-          untuk Mesin Konstruksi di bawah Scheme X sebelum 01 September 2026.
-          Mulai tanggal ini, peralatan yang tidak bersertifikat tidak boleh
-          diproduksi, diangkut maupun dijual untuk program infrastruktur publik.
+          期限：すべての製造業者および輸入業者は、2026年9月1日までにBIS認証を取得する必要があります。この日以降、型式承認されていない機器は、インドで製造、販売、または輸入することができません。
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        {/* Advantages Section */}
+        {/* Benefits Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Manfaat Sertifikasi BIS untuk Peralatan atau Mesin Konstruksi
+          スイッチギアおよびコントロールギアのBIS認証のメリット
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Keselamatan & Keandalan: Mengurangi risiko kegagalan mekanis atau
-            kecelakaan di lokasi konstruksi.
+            電気安全性 –
+            故障、アークフラッシュ、およびシステム損傷から保護します。
+          </li>
+          <li>規制遵守 – OTRの下での市場参入の必須要件です。</li>
+          <li>
+            市場アクセス –
+            認証製品は、公共および民間インフラプロジェクトの資格を得ます。
           </li>
           <li>
-            Akses Pasar & Kelayakan Tender: Produk Bersertifikat BIS memenuhi
-            syarat untuk Tender Pemerintah dan BUMN.
+            信頼性と信用 – BIS標準マークは、品質と信頼性への準拠を反映します。
           </li>
           <li>
-            Kepercayaan Konsumen & Kontraktor: Tanda BIS Mesin Konstruksi
-            memastikan produk yang aman dan berkualitas untuk semua pembelinya.
-          </li>
-          <li>
-            Masuk ke Pasar Global: Lisensi BIS untuk Mesin Konstruksi dapat
-            bermanfaat bagi perusahaan asing untuk akses mudah ke pasar India.
-          </li>
-          <li>
-            Kepatuhan Hukum: Kekebalan dari denda, larangan dan sanksi di bawah
-            OTR Mesin Konstruksi.
+            運用効率 –
+            高電圧ネットワークの堅牢で中断のないパフォーマンスを確保します
           </li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        {/* Types of Construction Equipment Section */}
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Peralatan Konstruksi yang Dicakup di Bawah Scheme X
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X untuk Mesin Konstruksi berlaku untuk berbagai
-          kategori peralatan seperti:
-        </p>
-
-        <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Excavator dan Backhoe Loader</li>
-          <li>Bulldozer dan Road Roller</li>
-          <li>Crane yang digunakan di lokasi konstruksi</li>
-          <li>Concrete Mixer dan Batching Plant</li>
-          <li>Asphalt Plant dan Paver</li>
-          <li>Mesin Piling dan Drilling</li>
-          <li>Peralatan Material Handling dan Earthmoving</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-6">
-          Setiap kategori harus memenuhi Standar India yang relevan (Kode IS)
-          sesuai dengan IS 17055 (Bagian 7):2020, IS 17055 (Bagian 8):2020 dan
-          IS 17055 (Bagian 12):2020 dalam hal desain, keselamatan, kinerja, dll.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Prosedur untuk Lisensi BIS untuk Peralatan Konstruksi
+          スイッチギアおよびコントロールギアのBIS認証手順
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+          <li>標準の特定 – 製品に関連するインド標準を確認します。</li>
           <li>
-            Identifikasi Standar yang Berlaku: Temukan kode IS untuk jenis Mesin
-            Konstruksi Anda.
+            製品試験 –
+            BIS承認研究所で必要なすべての性能および安全性試験を実施します。
+          </li>
+          <li>工場検査 – BIS監査員が工場のプロセスと品質管理を確認します。</li>
+          <li>
+            文書提出 –
+            試験報告書、標準仕様書、コンプライアンス記録を提出します。
           </li>
           <li>
-            Pengujian Produk: Lakukan pengujian keselamatan dan kinerja di
-            laboratorium yang diakui BIS.
+            ライセンス付与：BISは標準マークを使用するためのライセンスを付与します。
           </li>
           <li>
-            Inspeksi Pabrik: Auditor BIS memeriksa proses QC dan produksi secara
-            literal.
-          </li>
-          <li>
-            Aplikasi & Dokumentasi: Berikan laporan, spesifikasi, dan manual
-            untuk ditinjau.
-          </li>
-          <li>
-            Lisensi BIS untuk Mesin Konstruksi: Setelah disetujui, produsen
-            diizinkan untuk menempatkan tanda BIS untuk Mesin Konstruksi.
-          </li>
-          <li>
-            Kepatuhan Berkelanjutan: Inspeksi dan pemantauan yang sering
-            mempertahankan kepatuhan berkelanjutan.
+            認証後の監視：継続的な検査と抜き打ち検査がコンプライアンスを保証します。
           </li>
         </ul>
 
-        <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Sanksi untuk Ketidakpatuhan
-        </div>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          このプロセスは、1000ボルトを超える電圧で動作するすべてのタイプのスイッチギアおよびコントロールギア機器、およびそのアセンブリ、サブアセンブリ、コンポーネントに等しく適用されます。
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+          不遵守に対する制裁
+        </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Kegagalan massal atau tidak diterbitkannya Sertifikat BIS Mesin
-          Konstruksi hingga 1 September 2026 dalam hal OTR untuk Mesin
-          Konstruksi akan memiliki implikasi berikut:
+          OTRモデルの下で認証を取得しない場合、以下の結果につながる可能性があります：
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            Larangan penjualan dan impor peralatan yang tidak bersertifikat
-          </li>
-          <li>Denda besar dan penahanan produk</li>
-          <li>Diskualifikasi dari proyek dan penghargaan pemerintah</li>
-          <li>
-            Potensi kerusakan reputasi yang tidak terbatas selama bertahun-tahun
-            ke depan
-          </li>
+          <li>認証されていない機器の販売、輸入、製造の禁止</li>
+          <li>商品の没収および重い罰金</li>
+          <li>政府の入札および契約からの禁止</li>
+          <li>評判と財務の損害：重大な評判および財務的損害</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         {/* Conclusion Section */}
-        <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Kesimpulan
-        </div>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Implementasi wajib Sertifikasi BIS Scheme X untuk Mesin Konstruksi di
-          bawah OTR untuk Mesin Konstruksi (2024) adalah langkah signifikan
-          menuju keselamatan, efisiensi serta standardisasi dalam industri
-          domestik India.
-        </p>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          結論
+        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Bagi produsen, importir, dan eksportir mesin konstruksi, mendapatkan
-          Lisensi BIS untuk Mesin Konstruksi dan menempatkan tanda BIS untuk
-          Mesin Konstruksi bukan hanya persyaratan kepatuhan, ini adalah langkah
-          strategis untuk memperluas ke pasar baru, menembus pasar konstruksi
-          India yang berkembang pesat, dan membangun reputasi Anda dalam jangka
-          panjang.
+          OTR
+          2024の下で義務付けられているBISスキームX認証は、インドの高電圧電力インフラが安全で信頼性が高く、準拠した機器の上に構築されていることを保証します。製造業者および輸入業者にとって、認証の達成は規制を満たすことだけではなく、顧客の信頼を獲得し、市場機会を開き、インドのエネルギーとインフラの成長を支援することです。
         </p>
 
-        <ServiceAuthorIndonesian />
+        <ServiceAuthorJapanese />
       </div>
     </div>
   );
@@ -419,7 +345,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Layanan Kami
+              私たちのサービス
             </h2>
           </BoxReveal>
 
@@ -427,7 +353,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Konsultan Sertifikat Terbaik India
+                インド最高の認証コンサルタント
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -447,7 +373,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Tanda BIS (Lisensi ISI) untuk Manufaktur Asing
+              外国製造業者向けBISマーク（ISIライセンス）
             </p>
           </Link>
 
@@ -463,7 +389,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Registrasi CDSCO
+              CDSCO登録認証
             </p>
           </Link>
 
@@ -479,7 +405,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Registrasi BIS (CRS)
+              BIS登録（CRS）
             </p>
           </Link>
 
@@ -495,7 +421,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Manajemen Limbah Plastik
+              プラスチック廃棄物管理
             </p>
           </Link>
 
@@ -511,7 +437,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat EPR
+              EPR証明書認証
             </p>
           </Link>
 
@@ -527,7 +453,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat LMPC
+              LMPC証明書認証
             </p>
           </Link>
 
@@ -543,7 +469,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikat Registrasi BIS
+              BIS証明書登録
             </p>
           </Link>
 
@@ -559,7 +485,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              TANDA ISI (BIS) untuk Manufaktur India
+              インド製造業者向けISIマーク（BIS）
             </p>
           </Link>
         </div>

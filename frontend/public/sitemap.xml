@@ -1284,6 +1284,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-centrifughe-e-macchinari-di-filtrazione-o-purificazione</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Centrifuges - SchemeX Products End -->
 
   <!-- Compressors - SchemeX Products Start -->
@@ -1335,6 +1342,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-compressori</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-11-12</lastmod>
   </url>
   <!-- Japanese -->
   <url>
@@ -1395,6 +1409,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-macchinari-da-costruzione</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-11-12</lastmod>
+  </url>
   <!-- Japanese -->
   <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-kensetsu-kikai</loc>
@@ -1450,6 +1471,13 @@
   <!-- Indonesian -->
   <url>
     <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-derek</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-gru</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -1513,6 +1541,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-generatori-diesel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Japanese -->
   <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-dizeru-hatsudenki</loc>
@@ -1572,6 +1607,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-macchine-da-ricamo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Japanese --> 
   <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-shishu-kikai</loc>
@@ -1627,6 +1669,13 @@
   <!-- Indonesian -->
   <url>
     <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Italian -->
+  <url>
+    <loc>https://bis-certifications.com/certificazione-bis-schema-x-per-ingranaggi-ingranamento-ed-elementi-di-trasmissione</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -2309,6 +2358,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-chou</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-11-12</lastmod>
+  </url>
   <!-- Switchgear and Controlgear Equipment above 1000 Volts - SchemeX Products End -->
 
 
@@ -2362,6 +2418,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-hensatsuki</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-11-12</lastmod>
+  </url>
 <!-- Transformers - SchemeX Products End -->
 
 
@@ -2411,6 +2474,13 @@
   <!-- Indonesian -->
   <url>
     <loc>https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-orimonoiki-ruumu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

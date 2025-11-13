@@ -9,10 +9,10 @@ import {
 import { SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
-import ServiceAuthorIndonesian from "@/components/manual/ServiceAuthor/ServiceAuthorIndonesian";
+import FooterItalian from "@/components/manual/Footer/FooterItalian";
+import ServiceAuthorItalian from "@/components/manual/ServiceAuthor/ServiceAuthorItalian";
 import { Helmet } from "react-helmet-async";
-import ServicesRightSideContentIndonesian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentIndonesian";
+import ServicesRightSideContentItalian from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentItalian";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 const BISImage = "/services-images/BIS.jpg";
@@ -23,38 +23,36 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-
-const ConstructionMachineryIndonesian = () => {
+const ConstructionMachineryItalian = () => {
   return (
     <div className="relative w-full">
       <ConstructionMachineryMetaTags />
-
       <ConstructionMachineryBreadcrumb />
       <ConstructionMachineryMainContent />
       <Services />
       <VideoSection />
-      <FooterIndonesian />
+      <FooterItalian />
     </div>
   );
 };
 
-export default ConstructionMachineryIndonesian;
+export default ConstructionMachineryItalian;
 
 const ConstructionMachineryMetaTags = () => {
   const title =
-    "Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Penggalian Tanah, dan Pertambangan";
+    "Certificazione BIS Schema X per Macchinari da Costruzione, Scavi e Miniere";
   const description =
-    "Sertifikasi BIS Scheme X wajib untuk mesin konstruksi, penggalian tanah, dan pertambangan untuk memastikan keselamatan, kualitas, dan standardisasi di sektor industri yang kritis";
+    "La certificazione BIS Schema X è obbligatoria per macchinari da costruzione, scavi e miniere per garantire sicurezza, qualità e standardizzazione nei settori industriali critici";
   const keywords =
-    "Sertifikasi BIS untuk Mesin Konstruksi, Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Sertifikasi Scheme X untuk Mesin Konstruksi, BIS untuk Mesin Konstruksi, OTR untuk Mesin Konstruksi";
+    "Certificazione BIS per Macchinari da Costruzione, Certificazione BIS Schema X per Macchinari da Costruzione, Certificazione Schema X per Macchinari da Costruzione, BIS per Macchinari da Costruzione, OTR per Macchinari da Costruzione";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
-    "Sertifikasi BIS Scheme X untuk Mesin Konstruksi di India | Panduan Lengkap";
+    "Certificazione BIS Schema X per Macchinari da Costruzione in India | Guida Completa";
   const ogDescription =
-    "Pelajari semua tentang Sertifikasi BIS Scheme X untuk mesin konstruksi di India. Pahami kepatuhan OTR 2024, proses Lisensi BIS, persyaratan tanda ISI, dan cara mendapatkan sertifikasi sebelum batas waktu September 2026";
+    "Scopri tutto sulla certificazione BIS Schema X per macchinari da costruzione in India. Comprendi la conformità OTR 2024, il processo di licenza BIS, i requisiti del marchio ISI e come ottenere la certificazione entro la scadenza di settembre 2026";
 
   return (
     <Helmet>
@@ -85,7 +83,7 @@ const ConstructionMachineryBreadcrumb = () => {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/">Beranda</Link>
+                    <Link to="/">Home</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -94,7 +92,7 @@ const ConstructionMachineryBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/SchemeX-Products">Produk SchemeX</Link>
+                    <Link to="/SchemeX-Products">Prodotti SchemaX</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -103,7 +101,7 @@ const ConstructionMachineryBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Sertifikasi BIS Scheme X untuk Mesin Konstruksi
+                    Certificazione BIS Schema X per Macchinari da Costruzione
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -123,7 +121,7 @@ const ConstructionMachineryMainContent = () => {
         <ConstructionMachineryMainContentLeft />
 
         {/* Right Side Content */}
-        <ServicesRightSideContentIndonesian />
+        <ServicesRightSideContentItalian />
       </div>
     </div>
   );
@@ -136,43 +134,43 @@ const ConstructionMachineryMainContentLeft = () => {
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Sertifikasi BIS untuk Mesin Konstruksi
+          Certificazione BIS per Macchinari da Costruzione
         </h1>
 
         {/* Main Image */}
         <div className="mb-6">
           <img
             src="/schemXproductImages/BIS-Scheme-X-License-for-Construction-Machinery.png"
-            alt="Sertifikasi BIS Scheme X untuk Mesin Konstruksi"
-            title="Lisensi BIS Scheme X untuk Mesin Konstruksi"
+            alt="Certificazione BIS Schema X per Macchinari da Costruzione"
+            title="Licenza BIS Schema X per Macchinari da Costruzione"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Excavator, loader, bulldozer, concrete mixer dan road roller adalah
-          mesin konstruksi utama yang digunakan dalam pembangunan infrastruktur
-          India. Permintaan yang lebih tinggi untuk mesin yang aman dan andal
-          berasal dari investasi besar dalam jalan raya, smart city, pabrik, dan
-          perumahan.
+          Escavatori, pale caricatrici, bulldozer, betoniere e rulli compressori
+          sono i principali macchinari da costruzione utilizzati nello sviluppo
+          delle infrastrutture indiane. La crescente domanda di macchine sicure
+          e affidabili deriva da investimenti significativi in autostrade, città
+          intelligenti, stabilimenti industriali e progetti abitativi.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bureau of Indian Standards (BIS) telah membuat Sertifikasi BIS Wajib
-          di bawah Scheme-X untuk Mesin Konstruksi untuk memberikan jaminan
-          kualitas, layanan dan keselamatan. Ini memastikan bahwa perangkat
-          sesuai dengan Standar India sebelum tersedia untuk dijual atau diimpor
-          di India.
+          Il Bureau of Indian Standards (BIS) ha reso obbligatoria la
+          Certificazione BIS secondo lo Schema X per i Macchinari da Costruzione
+          per garantire qualità, prestazioni e sicurezza. Questo assicura che le
+          attrezzature siano conformi agli standard indiani prima di essere
+          vendute o importate in India.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Di artikel ini, Anda akan mempelajari tentang Sertifikasi BIS Scheme X
-          untuk Mesin Konstruksi, persyaratan OTR untuk Mesin Konstruksi, dan
-          proses mendapatkan Lisensi BIS untuk Mesin Konstruksi serta tanda BIS
-          untuk Mesin Konstruksi.
+          In questo articolo, scoprirai tutto sulla Certificazione BIS Schema X
+          per Macchinari da Costruzione, i requisiti OTR per i Macchinari da
+          Costruzione e il processo per ottenere la Licenza BIS per Macchinari
+          da Costruzione insieme al marchio BIS per Macchinari da Costruzione.
         </p>
 
         {/* Separator Line */}
@@ -180,39 +178,40 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Why BIS is Important Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Mengapa BIS untuk Mesin Konstruksi Penting
+          Perché la Certificazione BIS per Macchinari da Costruzione è
+          Importante
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Mesin konstruksi diterapkan dalam pertumbuhan infrastruktur dan situs
-          pengembangan konstruksi besar.
+          I macchinari da costruzione vengono impiegati nella crescita delle
+          infrastrutture e nei grandi cantieri di sviluppo edilizio.
         </p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Pengembangan jalan dan jalan raya</li>
-          <li>Proyek real estate dan perumahan</li>
-          <li>Pertambangan dan penggalian</li>
-          <li>Konstruksi industri dan teknik berat</li>
-          <li>Proyek pelabuhan, bandara, dan metro</li>
+          <li>Sviluppo di strade e autostrade</li>
+          <li>Progetti immobiliari e abitativi</li>
+          <li>Attività minerarie e di scavo</li>
+          <li>Costruzioni industriali e ingegneria pesante</li>
+          <li>Progetti portuali, aeroportuali e metropolitani</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Konsekuensi dari tidak adanya BIS untuk Peralatan Konstruksi adalah
-          sebagai berikut:
+          Le conseguenze dell'assenza della certificazione BIS per le
+          Attrezzature da Costruzione sono le seguenti:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>Kegagalan peralatan dan downtime yang mahal</li>
-          <li>Probabilitas kecelakaan yang lebih tinggi dan risiko bahaya</li>
-          <li>Ketidakpatuhan dengan tender pemerintah</li>
-          <li>Peningkatan biaya perawatan dan operasi</li>
+          <li>Guasti alle attrezzature e costosi tempi di inattività</li>
+          <li>Maggiore probabilità di incidenti e rischi per la sicurezza</li>
+          <li>Non conformità con le gare d'appalto governative</li>
+          <li>Aumento dei costi di manutenzione e operativi</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Tanda BIS untuk Mesin Konstruksi menunjukkan bahwa produk tersebut
-          aman, andal dan sesuai dengan Standar India.
+          Il marchio BIS per Macchinari da Costruzione indica che il prodotto è
+          sicuro, affidabile e conforme agli standard indiani.
         </p>
 
         {/* Separator Line */}
@@ -220,28 +219,34 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* What is BIS Scheme X Certification Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Apa itu Sertifikasi BIS Scheme X untuk Mesin Konstruksi?
+          Cos'è la Certificazione BIS Schema X per Macchinari da Costruzione?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X dicakup oleh Persyaratan Penilaian Kesesuaian
-          Bureau of Indian Standards (BIS) (2018) yang memberikan pedoman untuk
-          produk. Dalam skema ini, BIS memutuskan kualitas produk dan memastikan
-          bahwa produk tersebut mengurangi bahaya kesehatan manusia.
+          La Certificazione BIS Schema X è disciplinata dai Requisiti di
+          Valutazione della Conformità del Bureau of Indian Standards (BIS)
+          (2018) che fornisce linee guida per i prodotti. In questo schema, il
+          BIS verifica la qualità del prodotto e garantisce che riduca i rischi
+          per la salute umana.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Fitur Utama - Sertifikasi Scheme X untuk Peralatan Konstruksi:
+          Caratteristiche Principali - Certificazione Schema X per Attrezzature
+          da Costruzione:
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>Wajib untuk produsen domestik dan asing</li>
-          <li>Mencakup semua jenis mesin berat dan peralatan konstruksi</li>
+          <li>Obbligatoria per produttori domestici ed esteri</li>
           <li>
-            Pengujian produk wajib, kunjungan pabrik wajib dan audit kepatuhan
-            harus dilakukan secara teratur
+            Copre tutti i tipi di macchinari pesanti e attrezzature da
+            costruzione
           </li>
-          <li>Mengotorisasi penggunaan tanda BIS untuk Mesin Konstruksi</li>
+          <li>
+            Test obbligatori sui prodotti, ispezioni obbligatorie degli
+            stabilimenti e audit di conformità devono essere eseguiti
+            regolarmente
+          </li>
+          <li>Autorizza l'uso del marchio BIS per Macchinari da Costruzione</li>
         </ul>
 
         {/* Separator Line */}
@@ -249,20 +254,21 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* OTR Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS OTR untuk Peralatan Konstruksi
+          OTR BIS per Attrezzature da Costruzione
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi Scheme X akan menjadi wajib sebagai bagian dari Peraturan
-          Teknis Omnibus (OTR) 2024 untuk Mesin Konstruksi yang diumumkan oleh
-          Kementerian Industri Berat.
+          La Certificazione Schema X diventerà obbligatoria nell'ambito del
+          Regolamento Tecnico Omnibus (OTR) 2024 per i Macchinari da Costruzione
+          annunciato dal Ministero dell'Industria Pesante.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Batas Waktu: Semua produsen dan importir harus mendapatkan Lisensi BIS
-          untuk Mesin Konstruksi di bawah Scheme X sebelum 01 September 2026.
-          Mulai tanggal ini, peralatan yang tidak bersertifikat tidak boleh
-          diproduksi, diangkut maupun dijual untuk program infrastruktur publik.
+          Scadenza: Tutti i produttori e importatori devono ottenere la Licenza
+          BIS per Macchinari da Costruzione secondo lo Schema X entro il 01
+          settembre 2026. A partire da questa data, le attrezzature non
+          certificate non potranno essere prodotte, trasportate o vendute per
+          progetti di infrastrutture pubbliche.
         </p>
 
         {/* Separator Line */}
@@ -270,29 +276,33 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Manfaat Sertifikasi BIS untuk Peralatan atau Mesin Konstruksi
+          Vantaggi della Certificazione BIS per Attrezzature o Macchinari da
+          Costruzione
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            Keselamatan & Keandalan: Mengurangi risiko kegagalan mekanis atau
-            kecelakaan di lokasi konstruksi.
+            Sicurezza e Affidabilità: Riduce i rischi di guasti meccanici o
+            incidenti nei cantieri edili.
           </li>
           <li>
-            Akses Pasar & Kelayakan Tender: Produk Bersertifikat BIS memenuhi
-            syarat untuk Tender Pemerintah dan BUMN.
+            Accesso al Mercato ed Eleggibilità alle Gare d'Appalto: I prodotti
+            Certificati BIS sono idonei per gare d'appalto governative e aziende
+            pubbliche.
           </li>
           <li>
-            Kepercayaan Konsumen & Kontraktor: Tanda BIS Mesin Konstruksi
-            memastikan produk yang aman dan berkualitas untuk semua pembelinya.
+            Fiducia di Consumatori e Appaltatori: Il marchio BIS per Macchinari
+            da Costruzione garantisce prodotti sicuri e di qualità per tutti gli
+            acquirenti.
           </li>
           <li>
-            Masuk ke Pasar Global: Lisensi BIS untuk Mesin Konstruksi dapat
-            bermanfaat bagi perusahaan asing untuk akses mudah ke pasar India.
+            Ingresso nel Mercato Globale: La Licenza BIS per Macchinari da
+            Costruzione può avvantaggiare le aziende straniere per un facile
+            accesso al mercato indiano.
           </li>
           <li>
-            Kepatuhan Hukum: Kekebalan dari denda, larangan dan sanksi di bawah
-            OTR Mesin Konstruksi.
+            Conformità Legale: Protezione da multe, divieti e sanzioni secondo
+            l'OTR per Macchinari da Costruzione.
           </li>
         </ul>
 
@@ -301,28 +311,29 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Types of Construction Equipment Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Jenis Peralatan Konstruksi yang Dicakup di Bawah Scheme X
+          Tipi di Attrezzature da Costruzione Coperte dallo Schema X
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Sertifikasi BIS Scheme X untuk Mesin Konstruksi berlaku untuk berbagai
-          kategori peralatan seperti:
+          La Certificazione BIS Schema X per Macchinari da Costruzione si
+          applica a varie categorie di attrezzature come:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>Excavator dan Backhoe Loader</li>
-          <li>Bulldozer dan Road Roller</li>
-          <li>Crane yang digunakan di lokasi konstruksi</li>
-          <li>Concrete Mixer dan Batching Plant</li>
-          <li>Asphalt Plant dan Paver</li>
-          <li>Mesin Piling dan Drilling</li>
-          <li>Peralatan Material Handling dan Earthmoving</li>
+          <li>Escavatori e Terne</li>
+          <li>Bulldozer e Rulli Compressori</li>
+          <li>Gru utilizzate nei cantieri edili</li>
+          <li>Betoniere e Impianti di Betonaggio</li>
+          <li>Impianti di Asfalto e Pavimentatrici</li>
+          <li>Macchine per Palificazione e Perforazione</li>
+          <li>Attrezzature per Movimentazione Materiali e Movimento Terra</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Setiap kategori harus memenuhi Standar India yang relevan (Kode IS)
-          sesuai dengan IS 17055 (Bagian 7):2020, IS 17055 (Bagian 8):2020 dan
-          IS 17055 (Bagian 12):2020 dalam hal desain, keselamatan, kinerja, dll.
+          Ogni categoria deve soddisfare i relativi standard indiani (Codice IS)
+          conformemente a IS 17055 (Parte 7):2020, IS 17055 (Parte 8):2020 e IS
+          17055 (Parte 12):2020 in termini di design, sicurezza, prestazioni,
+          ecc.
         </p>
 
         {/* Separator Line */}
@@ -330,55 +341,55 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Prosedur untuk Lisensi BIS untuk Peralatan Konstruksi
+          Procedura per la Licenza BIS per Attrezzature da Costruzione
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
           <li>
-            Identifikasi Standar yang Berlaku: Temukan kode IS untuk jenis Mesin
-            Konstruksi Anda.
+            Identificare lo Standard Applicabile: Trova il codice IS per il tuo
+            tipo di Macchinari da Costruzione.
           </li>
           <li>
-            Pengujian Produk: Lakukan pengujian keselamatan dan kinerja di
-            laboratorium yang diakui BIS.
+            Test del Prodotto: Conduci test di sicurezza e prestazioni in
+            laboratori riconosciuti dal BIS.
           </li>
           <li>
-            Inspeksi Pabrik: Auditor BIS memeriksa proses QC dan produksi secara
-            literal.
+            Ispezione dello Stabilimento: Gli auditor del BIS verificano
+            letteralmente i processi di QC e produzione.
           </li>
           <li>
-            Aplikasi & Dokumentasi: Berikan laporan, spesifikasi, dan manual
-            untuk ditinjau.
+            Domanda e Documentazione: Fornisci rapporti, specifiche e manuali
+            per la revisione.
           </li>
           <li>
-            Lisensi BIS untuk Mesin Konstruksi: Setelah disetujui, produsen
-            diizinkan untuk menempatkan tanda BIS untuk Mesin Konstruksi.
+            Licenza BIS per Macchinari da Costruzione: Una volta approvato, il
+            produttore è autorizzato ad apporre il marchio BIS per Macchinari da
+            Costruzione.
           </li>
           <li>
-            Kepatuhan Berkelanjutan: Inspeksi dan pemantauan yang sering
-            mempertahankan kepatuhan berkelanjutan.
+            Conformità Continua: Ispezioni e monitoraggio frequenti mantengono
+            la conformità continua.
           </li>
         </ul>
 
         <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-          Sanksi untuk Ketidakpatuhan
+          Sanzioni per Non Conformità
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Kegagalan massal atau tidak diterbitkannya Sertifikat BIS Mesin
-          Konstruksi hingga 1 September 2026 dalam hal OTR untuk Mesin
-          Konstruksi akan memiliki implikasi berikut:
+          La mancata ottenimento del Certificato BIS per Macchinari da
+          Costruzione entro il 1° settembre 2026 per quanto riguarda l'OTR per
+          Macchinari da Costruzione avrà le seguenti implicazioni:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>
-            Larangan penjualan dan impor peralatan yang tidak bersertifikat
+            Divieto di vendita e importazione di attrezzature non certificate
           </li>
-          <li>Denda besar dan penahanan produk</li>
-          <li>Diskualifikasi dari proyek dan penghargaan pemerintah</li>
+          <li>Multe significative e sequestro dei prodotti</li>
+          <li>Squalifica da progetti e appalti governativi</li>
           <li>
-            Potensi kerusakan reputasi yang tidak terbatas selama bertahun-tahun
-            ke depan
+            Potenziali danni alla reputazione illimitati per anni a venire
           </li>
         </ul>
 
@@ -387,26 +398,26 @@ const ConstructionMachineryMainContentLeft = () => {
 
         {/* Conclusion Section */}
         <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Kesimpulan
+          Conclusione
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Implementasi wajib Sertifikasi BIS Scheme X untuk Mesin Konstruksi di
-          bawah OTR untuk Mesin Konstruksi (2024) adalah langkah signifikan
-          menuju keselamatan, efisiensi serta standardisasi dalam industri
-          domestik India.
+          L'implementazione obbligatoria della Certificazione BIS Schema X per
+          Macchinari da Costruzione secondo l'OTR per Macchinari da Costruzione
+          (2024) è un passo significativo verso la sicurezza, l'efficienza e la
+          standardizzazione nell'industria domestica indiana.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Bagi produsen, importir, dan eksportir mesin konstruksi, mendapatkan
-          Lisensi BIS untuk Mesin Konstruksi dan menempatkan tanda BIS untuk
-          Mesin Konstruksi bukan hanya persyaratan kepatuhan, ini adalah langkah
-          strategis untuk memperluas ke pasar baru, menembus pasar konstruksi
-          India yang berkembang pesat, dan membangun reputasi Anda dalam jangka
-          panjang.
+          Per produttori, importatori ed esportatori di macchinari da
+          costruzione, ottenere la Licenza BIS per Macchinari da Costruzione e
+          apporre il marchio BIS per Macchinari da Costruzione non è solo un
+          requisito di conformità, è una mossa strategica per espandersi verso
+          nuovi mercati, penetrare nel mercato delle costruzioni indiano in
+          rapida crescita e costruire la propria reputazione a lungo termine.
         </p>
 
-        <ServiceAuthorIndonesian />
+        <ServiceAuthorItalian />
       </div>
     </div>
   );
@@ -419,7 +430,7 @@ const Services = () => {
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              Layanan Kami
+              I Nostri Servizi
             </h2>
           </BoxReveal>
 
@@ -427,7 +438,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                Konsultan Sertifikat Terbaik India
+                Miglior Consulente di Certificazione in India
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -447,7 +458,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Tanda BIS (Lisensi ISI) untuk Manufaktur Asing
+              Marchio BIS (Licenza ISI) per Produttori Stranieri
             </p>
           </Link>
 
@@ -463,7 +474,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Registrasi CDSCO
+              Certificazione Registrazione CDSCO
             </p>
           </Link>
 
@@ -479,7 +490,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Registrasi BIS (CRS)
+              Registrazione BIS (CRS)
             </p>
           </Link>
 
@@ -495,7 +506,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Manajemen Limbah Plastik
+              Gestione dei Rifiuti Plastici
             </p>
           </Link>
 
@@ -511,7 +522,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat EPR
+              Certificazione Certificato EPR
             </p>
           </Link>
 
@@ -527,7 +538,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikasi Sertifikat LMPC
+              Certificazione Certificato LMPC
             </p>
           </Link>
 
@@ -543,7 +554,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Sertifikat Registrasi BIS
+              Certificato di Registrazione BIS
             </p>
           </Link>
 
@@ -559,7 +570,7 @@ const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              TANDA ISI (BIS) untuk Manufaktur India
+              MARCHIO ISI (BIS) per Produttori Indiani
             </p>
           </Link>
         </div>

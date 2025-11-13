@@ -72,6 +72,12 @@ const ServicesRightSideContentJapanese = () => {
     "/bis-sukiimu-x-ninshoo-gomu-oyobi-purasuchikku-kikai",
     // Switchgear And Controlgear Equipment Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-made",
+    // Switchgear And Controlgear Equipment Above 1000 Volts Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-chou",
+    // Transformers Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-hensatsuki",
+    // Weaving Machines Scheme X Product (Japanese) Page Url
+    "/bis-sukiimu-x-ninshoo-orimonoiki-ruumu",
   ];
 
   // Check if current path should show these components
@@ -685,6 +691,22 @@ const ContactFormServicesRightSideContentJapanese = () => {
       )
     )
       return "Switchgear And Controlgear Equipment Scheme X Product (Japanese)";
+
+    // Switchgear And Controlgear Equipment Above 1000 Volts Scheme X Product (Japanese) Page Url
+    if (
+      path.includes(
+        "/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-chou"
+      )
+    )
+      return "Switchgear And Controlgear Equipment Above 1000 Volts Scheme X Product (Japanese)";
+
+    // Transformers Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-hensatsuki"))
+      return "Transformers Scheme X Product (Japanese)";
+
+    // Weaving Machines Scheme X Product (Japanese) Page Url
+    if (path.includes("/bis-sukiimu-x-ninshoo-orimonoiki-ruumu"))
+      return "Weaving Machines Scheme X Product (Japanese)";
   };
 
   const [formData, setFormData] = useState({
