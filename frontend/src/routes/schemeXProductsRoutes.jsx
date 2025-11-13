@@ -70,6 +70,7 @@ import MachineToolsVietnamese from "../schemeXProducts/MachineTools/MachineTools
 import MachineToolsSpanish from "../schemeXProducts/MachineTools/MachineToolsSpanish";
 import MachineToolsKorean from "../schemeXProducts/MachineTools/MachineToolsKorean";
 import MachineToolsIndonesian from "../schemeXProducts/MachineTools/MachineToolsIndonesian";
+import MachineToolsItalian from "../schemeXProducts/MachineTools/MachineToolsItalian";
 import MetalCuttingMachines from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachines";
 import MetalCuttingMachinesFrench from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesFrench";
 import MetalCuttingMachinesGerman from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesGerman";
@@ -745,6 +746,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-kousaku-kikai"
         element={<MachineToolsJapanese />}
+      />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-utensili-per-macchine"
+        element={<MachineToolsItalian />}
       />
 
       {/* Machine Tools Pages End */}
