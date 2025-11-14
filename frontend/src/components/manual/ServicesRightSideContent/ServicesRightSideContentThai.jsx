@@ -37,6 +37,22 @@ const ServicesRightSideContentThai = () => {
     "/th/bis-isi-mark-raprong",
     // BIS CERTIFICATION PATH
     "/th/bis-certificate-khue-a-rai-bis-india",
+    // Centrifuges Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-pan-wia-lae-khrueang-krong-rue-tham-hai-borisut",
+    // Compressors Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-kompresor",
+    // Construction Machinery Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-thi-khuk-khuk",
+    // Cranes Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khren",
+    // Diesel Generator Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-khuean-ngan-fa-fa-diesel",
+    // Embroidery Machines Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-thai-rua",
+    // Gears, Gearing and Transmission Elements Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-fueang-rab-khia-lae-ong-prakop-kan-song-kamlang",
+    // Heat Treatment Equipment Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron",
   ];
 
   // Check if current path should show these components
@@ -568,6 +584,38 @@ const ContactFormServicesRightSideContentThai = () => {
       return "ISI Mark - Thai Page";
     if (path.includes("/th/bis-certificate-khue-a-rai-bis-india"))
       return "BIS Certification (Thai)";
+    if (
+      path.includes(
+        "/kan-rap-rong-bis-phaen-x-samrab-khrueang-pan-wia-lae-khrueang-krong-rue-tham-hai-borisut"
+      )
+    )
+      return "Centrifuges - Thai Page";
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-kompresor"))
+      return "Compressors - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-thi-khuk-khuk")
+    )
+      return "Construction Machinery - Thai Page";
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-khren"))
+      return "Cranes - Thai Page";
+    if (
+      path.includes(
+        "/kan-rap-rong-bis-phaen-x-samrab-khrueang-khuean-ngan-fa-fa-diesel"
+      )
+    )
+      return "Diesel Generator - Thai Page";
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-thai-rua"))
+      return "Embroidery Machines - Thai Page";
+    if (
+      path.includes(
+        "/kan-rap-rong-bis-phaen-x-samrab-fueang-rab-khia-lae-ong-prakop-kan-song-kamlang"
+      )
+    )
+      return "Gears, Gearing and Transmission Elements - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron")
+    )
+      return "Heat Treatment Equipment - Thai Page";
   };
 
   const [formData, setFormData] = useState({

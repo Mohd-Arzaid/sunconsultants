@@ -7,6 +7,7 @@ import CentrifugesSpanish from "../schemeXProducts/Centrifuges/CentrifugesSpanis
 import CentrifugesKorean from "../schemeXProducts/Centrifuges/CentrifugesKorean";
 import CentrifugesIndonesian from "../schemeXProducts/Centrifuges/CentrifugesIndonesian";
 import CentrifugesItalian from "../schemeXProducts/Centrifuges/CentrifugesItalian";
+import CentrifugesThai from "../schemeXProducts/Centrifuges/CentrifugesThai";
 import Compressors from "../schemeXProducts/Compressors/Compressors";
 import CompressorsFrench from "../schemeXProducts/Compressors/CompressorsFrench";
 import CompressorsGerman from "../schemeXProducts/Compressors/CompressorsGerman";
@@ -15,6 +16,7 @@ import CompressorsSpanish from "../schemeXProducts/Compressors/CompressorsSpanis
 import CompressorsKorean from "../schemeXProducts/Compressors/CompressorsKorean";
 import CompressorsIndonesian from "../schemeXProducts/Compressors/CompressorsIndonesian";
 import CompressorsItalian from "../schemeXProducts/Compressors/CompressorsItalian";
+import CompressorsThai from "../schemeXProducts/Compressors/CompressorsThai";
 import ConstructionMachinery from "../schemeXProducts/ConstructionMachinery/ConstructionMachinery";
 import ConstructionMachineryFrench from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryFrench";
 import ConstructionMachineryGerman from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryGerman";
@@ -23,6 +25,7 @@ import ConstructionMachinerySpanish from "../schemeXProducts/ConstructionMachine
 import ConstructionMachineryKorean from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryKorean";
 import ConstructionMachineryIndonesian from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryIndonesian";
 import ConstructionMachineryItalian from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryItalian";
+import ConstructionMachineryThai from "../schemeXProducts/ConstructionMachinery/ConstructionMachineryThai";
 import Cranes from "../schemeXProducts/Cranes/Cranes";
 import CranesFrench from "../schemeXProducts/Cranes/CranesFrench";
 import CranesGerman from "../schemeXProducts/Cranes/CranesGerman";
@@ -31,6 +34,7 @@ import CranesSpanish from "../schemeXProducts/Cranes/CranesSpanish";
 import CranesKorean from "../schemeXProducts/Cranes/CranesKorean";
 import CranesIndonesian from "../schemeXProducts/Cranes/CranesIndonesian";
 import CranesItalian from "../schemeXProducts/Cranes/CranesItalian";
+import CranesThai from "../schemeXProducts/Cranes/CranesThai";
 import DieselGenerator from "../schemeXProducts/DieselGenerator/DieselGenerator";
 import DieselGeneratorFrench from "../schemeXProducts/DieselGenerator/DieselGeneratorFrench";
 import DieselGeneratorGerman from "../schemeXProducts/DieselGenerator/DieselGeneratorGerman";
@@ -39,6 +43,7 @@ import DieselGeneratorSpanish from "../schemeXProducts/DieselGenerator/DieselGen
 import DieselGeneratorKorean from "../schemeXProducts/DieselGenerator/DieselGeneratorKorean";
 import DieselGeneratorIndonesian from "../schemeXProducts/DieselGenerator/DieselGeneratorIndonesian";
 import DieselGeneratorItalian from "../schemeXProducts/DieselGenerator/DieselGeneratorItalian";
+import DieselGeneratorThai from "../schemeXProducts/DieselGenerator/DieselGeneratorThai";
 import EmbroideryMachines from "../schemeXProducts/EmbroideryMachines/EmbroideryMachines";
 import EmbroideryMachinesFrench from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesFrench";
 import EmbroideryMachinesGerman from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesGerman";
@@ -47,6 +52,7 @@ import EmbroideryMachinesSpanish from "../schemeXProducts/EmbroideryMachines/Emb
 import EmbroideryMachinesKorean from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesKorean";
 import EmbroideryMachinesIndonesian from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesIndonesian";
 import EmbroideryMachinesItalian from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesItalian";
+import EmbroideryMachinesThai from "../schemeXProducts/EmbroideryMachines/EmbroideryMachinesThai";
 import GearsGearingsandTransmission from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmission";
 import GearsGearingsandTransmissionFrench from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionFrench";
 import GearsGearingsandTransmissionGerman from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionGerman";
@@ -55,6 +61,7 @@ import GearsGearingsandTransmissionSpanish from "../schemeXProducts/GearsGearing
 import GearsGearingsandTransmissionKorean from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionKorean";
 import GearsGearingsandTransmissionIndonesian from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionIndonesian";
 import GearsGearingsandTransmissionItalian from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionItalian";
+import GearsGearingsandTransmissionThai from "../schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionThai";
 import HeatTreatmentEquipment from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipment";
 import HeatTreatmentEquipmentFrench from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentFrench";
 import HeatTreatmentEquipmentGerman from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentGerman";
@@ -63,6 +70,7 @@ import HeatTreatmentEquipmentSpanish from "../schemeXProducts/HeatTreatmentEquip
 import HeatTreatmentEquipmentKorean from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentKorean";
 import HeatTreatmentEquipmentIndonesian from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentIndonesian";
 import HeatTreatmentEquipmentItalian from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentItalian";
+import HeatTreatmentEquipmentThai from "../schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentThai";
 import MachineTools from "../schemeXProducts/MachineTools/MachineTools";
 import MachineToolsFrench from "../schemeXProducts/MachineTools/MachineToolsFrench";
 import MachineToolsGerman from "../schemeXProducts/MachineTools/MachineToolsGerman";
@@ -126,6 +134,7 @@ import RotaryElectricalMachinesVietnamese from "../schemeXProducts/RotaryElectri
 import RotaryElectricalMachinesSpanish from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesSpanish";
 import RotaryElectricalMachinesKorean from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesKorean";
 import RotaryElectricalMachinesIndonesian from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesIndonesian";
+import RotaryElectricalMachinesItalian from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesItalian";
 import RubberAndPlasticsMachinery from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinery";
 import RubberAndPlasticsMachineryFrench from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryFrench";
 import RubberAndPlasticsMachineryGerman from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryGerman";
@@ -133,6 +142,7 @@ import RubberAndPlasticsMachineryVietnamese from "../schemeXProducts/RubberAndPl
 import RubberAndPlasticsMachinerySpanish from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachinerySpanish";
 import RubberAndPlasticsMachineryKorean from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryKorean";
 import RubberAndPlasticsMachineryIndonesian from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryIndonesian";
+import RubberAndPlasticsMachineryItalian from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryItalian";
 import RubberAndPlasticsMachineryJapanese from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryJapanese";
 import SwitchgearandControlgearEquipment from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipment";
 import SwitchgearandControlgearEquipmentFrench from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentFrench";
@@ -141,6 +151,7 @@ import SwitchgearandControlgearEquipmentVietnamese from "../schemeXProducts/Swit
 import SwitchgearandControlgearEquipmentSpanish from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentSpanish";
 import SwitchgearandControlgearEquipmentKorean from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentKorean";
 import SwitchgearandControlgearEquipmentIndonesian from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentIndonesian";
+import SwitchgearandControlgearEquipmentItalian from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentItalian";
 import SwitchgearandControlgearEquipmentabove1000Volts from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000Volts";
 import SwitchgearandControlgearEquipmentabove1000VoltsFrench from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsFrench";
 import SwitchgearandControlgearEquipmentabove1000VoltsGerman from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsGerman";
@@ -148,6 +159,7 @@ import SwitchgearandControlgearEquipmentabove1000VoltsVietnamese from "../scheme
 import SwitchgearandControlgearEquipmentabove1000VoltsSpanish from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsSpanish";
 import SwitchgearandControlgearEquipmentabove1000VoltsKorean from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsKorean";
 import SwitchgearandControlgearEquipmentabove1000VoltsIndonesian from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsIndonesian";
+import SwitchgearandControlgearEquipmentabove1000VoltsItalian from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsItalian";
 import SwitchgearandControlgearEquipmentabove1000VoltsJapanese from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsJapanese";
 import Transformers from "../schemeXProducts/Transformers/Transformers";
 import TransformersFrench from "../schemeXProducts/Transformers/TransformersFrench";
@@ -156,6 +168,7 @@ import TransformersVietnamese from "../schemeXProducts/Transformers/Transformers
 import TransformersSpanish from "../schemeXProducts/Transformers/TransformersSpanish";
 import TransformersKorean from "../schemeXProducts/Transformers/TransformersKorean";
 import TransformersIndonesian from "../schemeXProducts/Transformers/TransformersIndonesian";
+import TransformersItalian from "../schemeXProducts/Transformers/TransformersItalian";
 import TransformersJapanese from "../schemeXProducts/Transformers/TransformersJapanese";
 import WeavingMachines from "../schemeXProducts/WeavingMachines/WeavingMachines";
 import WeavingMachinesFrench from "../schemeXProducts/WeavingMachines/WeavingMachinesFrench";
@@ -164,6 +177,7 @@ import WeavingMachinesVietnamese from "../schemeXProducts/WeavingMachines/Weavin
 import WeavingMachinesSpanish from "../schemeXProducts/WeavingMachines/WeavingMachinesSpanish";
 import WeavingMachinesKorean from "../schemeXProducts/WeavingMachines/WeavingMachinesKorean";
 import WeavingMachinesIndonesian from "../schemeXProducts/WeavingMachines/WeavingMachinesIndonesian";
+import WeavingMachinesItalian from "../schemeXProducts/WeavingMachines/WeavingMachinesItalian";
 import WeavingMachinesJapanese from "../schemeXProducts/WeavingMachines/WeavingMachinesJapanese";
 import CentrifugesJapanese from "@/schemeXProducts/Centrifuges/CentrifugesJapanese";
 import CompressorsJapanese from "@/schemeXProducts/Compressors/CompressorsJapanese";
@@ -300,6 +314,11 @@ export const SchemeXProductsRoutes = () => {
         path="/certificazione-bis-schema-x-per-centrifughe-e-macchinari-di-filtrazione-o-purificazione"
         element={<CentrifugesItalian />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-pan-wia-lae-khrueang-krong-rue-tham-hai-borisut"
+        element={<CentrifugesThai />}
+      />
 
       {/* Centrifuges Pages End */}
 
@@ -357,6 +376,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/certificazione-bis-schema-x-per-compressori"
         element={<CompressorsItalian />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-kompresor"
+        element={<CompressorsThai />}
       />
 
       {/* Compressors Pages End */}
@@ -416,6 +440,11 @@ export const SchemeXProductsRoutes = () => {
         path="/certificazione-bis-schema-x-per-macchinari-da-costruzione"
         element={<ConstructionMachineryItalian />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-thi-khuk-khuk"
+        element={<ConstructionMachineryThai />}
+      />
 
       {/* Construction Machinery Pages End */}
 
@@ -470,6 +499,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/certificazione-bis-schema-x-per-gru"
         element={<CranesItalian />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khren"
+        element={<CranesThai />}
       />
       {/* Cranes Pages End */}
 
@@ -528,6 +562,11 @@ export const SchemeXProductsRoutes = () => {
         path="/certificazione-bis-schema-x-per-generatori-diesel"
         element={<DieselGeneratorItalian />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-khuean-ngan-fa-fa-diesel"
+        element={<DieselGeneratorThai />}
+      />
 
       {/* Diesel Generators Pages End */}
 
@@ -585,6 +624,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-shishu-kikai"
         element={<EmbroideryMachinesJapanese />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-thai-rua"
+        element={<EmbroideryMachinesThai />}
+      />
       {/* Embroidery Machines Pages End */}
 
       {/* ==================================================================== */}
@@ -640,6 +684,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso"
         element={<GearsGearingsandTransmissionJapanese />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-fueang-rab-khia-lae-ong-prakop-kan-song-kamlang"
+        element={<GearsGearingsandTransmissionThai />}
       />
 
       {/* Gears, Gearing and Transmission Elements Pages End */}
@@ -697,6 +746,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-netsu-shori-souchi"
         element={<HeatTreatmentEquipmentJapanese />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron"
+        element={<HeatTreatmentEquipmentThai />}
       />
 
       {/* Heat Treatment Equipment Pages End */}
@@ -1031,6 +1085,11 @@ export const SchemeXProductsRoutes = () => {
         path="/sertifikasi-bis-skema-x-untuk-mesin-listrik-rotary"
         element={<RotaryElectricalMachinesIndonesian />}
       />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-macchine-elettriche-rotanti"
+        element={<RotaryElectricalMachinesItalian />}
+      />
       {/* Japanese */}
       <Route
         path="/bis-sukiimu-x-ninshoo-kaiten-denki-kikai"
@@ -1082,6 +1141,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-mesin-karet-dan-plastik"
         element={<RubberAndPlasticsMachineryIndonesian />}
+      />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-macchinari-di-gomma-e-plastica"
+        element={<RubberAndPlasticsMachineryItalian />}
       />
       {/* Japanese */}
       <Route
@@ -1135,6 +1199,11 @@ export const SchemeXProductsRoutes = () => {
         path="/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-hingga-1000-volt"
         element={<SwitchgearandControlgearEquipmentIndonesian />}
       />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-apparecchiature-di-interruttori-e-controllori-fino-a-1000-volt"
+        element={<SwitchgearandControlgearEquipmentItalian />}
+      />
       {/* Japanese */}
       <Route
         path="/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-made"
@@ -1186,6 +1255,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-peralatan-switchgear-dan-controlgear-di-atas-1000-volt"
         element={<SwitchgearandControlgearEquipmentabove1000VoltsIndonesian />}
+      />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-apparecchiature-di-interruttori-e-controllori-oltre-1000-volt"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsItalian />}
       />
       {/* Japanese */}
       <Route
@@ -1239,6 +1313,11 @@ export const SchemeXProductsRoutes = () => {
         path="/sertifikasi-bis-skema-x-untuk-transformator"
         element={<TransformersIndonesian />}
       />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-trasformatori"
+        element={<TransformersItalian />}
+      />
       {/* Japanese */}
       <Route
         path="/bis-sukiimu-x-ninshoo-hensatsuki"
@@ -1290,6 +1369,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/sertifikasi-bis-skema-x-untuk-mesin-tenun-alat-tenun"
         element={<WeavingMachinesIndonesian />}
+      />
+      {/* Italian */}
+      <Route
+        path="/certificazione-bis-schema-x-per-macchine-per-tessitura-telai"
+        element={<WeavingMachinesItalian />}
       />
       {/* Japanese */}
       <Route

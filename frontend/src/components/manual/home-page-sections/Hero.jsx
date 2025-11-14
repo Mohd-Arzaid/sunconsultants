@@ -43,7 +43,7 @@ const DesktopHero = () => (
             <article className="py-6 px-8 bg-white/80 backdrop-blur-md w-[650px] h-[380px] shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
               <header className="relative max-w-[600px]">
                 <h1 className="text-5xl font-bold font-playfair text-left text-black leading-[52px]">
-                  Sun Certification India
+                  Sun Certifications India
                 </h1>
               </header>
 
@@ -83,7 +83,7 @@ const MobileHero = () => {
             <header>
               <div>
                 <WordPullUp
-                  words="Sun Certification India"
+                  words="Sun Certifications India"
                   className="text-4xl text-black font-geist font-bold text-left max-w-3xl break-words"
                 />
               </div>

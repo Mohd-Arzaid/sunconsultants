@@ -63,6 +63,20 @@ const ServicesRightSideContentItalian = () => {
     "/certificazione-bis-schema-x-per-convertitori-a-semiconduttore-di-potenza",
     // Public Works And Mechanical Scheme X Product (Italian) Page Url
     "/certificazione-bis-schema-x-per-lavori-pubblici-e-apparecchiature-meccaniche",
+    // Pumps And Liquid Elevators Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi",
+    // Rotary Electrical Machines Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-macchine-elettriche-rotanti",
+    // Rubber And Plastics Machinery Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-macchinari-di-gomma-e-plastica",
+    // Switchgear and Controlgear Equipment Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-apparecchiature-di-interruttori-e-controllori-fino-a-1000-volt",
+    // Switchgear and Controlgear Equipment Above 1000 Volts Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-apparecchiature-di-interruttori-e-controllori-oltre-1000-volt",
+    // Transformers Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-trasformatori",
+    // Weaving Machines Scheme X Product (Italian) Page Url
+    "/certificazione-bis-schema-x-per-macchine-per-tessitura-telai",
   ];
 
   // Check if current path should show these components
@@ -682,6 +696,58 @@ const ContactFormServicesRightSideContentItalian = () => {
       )
     )
       return "Public Works And Mechanical Scheme X Product (Italian)";
+
+    // Pumps And Liquid Elevators Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi"
+      )
+    )
+      return "Pumps And Liquid Elevators Scheme X Product (Italian)";
+
+    // Rotary Electrical Machines Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-macchine-elettriche-rotanti"
+      )
+    )
+      return "Rotary Electrical Machines Scheme X Product (Italian)";
+
+    // Rubber And Plastics Machinery Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-macchinari-di-gomma-e-plastica"
+      )
+    )
+      return "Rubber And Plastics Machinery Scheme X Product (Italian)";
+
+    // Switchgear and Controlgear Equipment Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-apparecchiature-di-interruttori-e-controllori-fino-a-1000-volt"
+      )
+    )
+      return "Switchgear and Controlgear Equipment Scheme X Product (Italian)";
+
+    // Switchgear and Controlgear Equipment Above 1000 Volts Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-apparecchiature-di-interruttori-e-controllori-oltre-1000-volt"
+      )
+    )
+      return "Switchgear and Controlgear Equipment Above 1000 Volts Scheme X Product (Italian)";
+
+    // Transformers Scheme X Product (Italian) Page Url
+    if (path.includes("/certificazione-bis-schema-x-per-trasformatori"))
+      return "Transformers Scheme X Product (Italian)";
+
+    // Weaving Machines Scheme X Product (Italian) Page Url
+    if (
+      path.includes(
+        "/certificazione-bis-schema-x-per-macchine-per-tessitura-telai"
+      )
+    )
+      return "Weaving Machines Scheme X Product (Italian)";
   };
 
   const [formData, setFormData] = useState({
