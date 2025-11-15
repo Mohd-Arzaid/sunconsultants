@@ -97,6 +97,7 @@ import LangIranBlog from "./blogs/IranBlog/LangIranBlog";
 import IraqBlog from "./blogs/IraqBlog/IraqBlog";
 import LangIraqBlog from "./blogs/IraqBlog/LangIraqBlog";
 import BacklinksPage from "./pages/BacklinksPage";
+import { MinistryUpdatesRoutes } from "./routes/MinistryUpdatesRoutes";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -133,7 +134,7 @@ function App() {
             path="bis-qco-updates/:notificationName"
             element={<NotificationDetail />}
           />
-          <Route path="ministry-updates" element={<MinistryUpdates />} />
+          {MinistryUpdatesRoutes()}
           <Route
             path="international-audits"
             element={<InternationalAudits />}

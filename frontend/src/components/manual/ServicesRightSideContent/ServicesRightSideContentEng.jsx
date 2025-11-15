@@ -62,6 +62,8 @@ const ServicesRightSideContentEng = () => {
     "/a-guide-to-bis-certification-indian-bis",
     // BIS CERTIFICATION PATH
     "/what-is-bis-certificate-indian-bis",
+    // MINISTRY UPDATES PATH
+    "/ministry-updates/refined-zinc-qco-withdraw-order",
   ];
 
   // Check if current path should show these components
@@ -648,6 +650,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // BIS CERTIFICATION PATH
     if (path.includes("/what-is-bis-certificate-indian-bis"))
       return "BIS Certification - English Page";
+
+    // MINISTRY UPDATES PATH
+    if (path.includes("/ministry-updates/refined-zinc-qco-withdraw-order"))
+      return "Refined Zinc QCO Withdrawal Order - Ministry Updates (English)";
   };
 
   const [formData, setFormData] = useState({
