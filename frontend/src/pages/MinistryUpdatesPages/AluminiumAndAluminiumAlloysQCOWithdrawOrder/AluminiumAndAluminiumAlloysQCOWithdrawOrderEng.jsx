@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const RefinedZincQCOWithdrawOrderEng = () => {
+const AluminiumAndAluminiumAlloysQCOWithdrawOrderEng = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +30,25 @@ const RefinedZincQCOWithdrawOrderEng = () => {
   );
 };
 
-export default RefinedZincQCOWithdrawOrderEng;
+export default AluminiumAndAluminiumAlloysQCOWithdrawOrderEng;
 
 const MetaTags = () => {
   const title =
-    "Refined Zinc (Quality Control) Order 2025 Withdrawn: No Mandatory BIS";
+    "Aluminium and Aluminium Alloys (Quality Control) Order 2023 Withdrawn";
   const ogTitle =
-    "Government Cancels Refined Zinc BIS Certification Order 2025";
+    "Government Cancels Aluminium and Aluminium Alloys BIS Certification Order";
   const twitterTitle =
-    "Government Cancels Refined Zinc BIS Certification Order 2025";
+    "Government Cancels Aluminium and Aluminium Alloys BIS Certification Order";
   const metaDescription =
-    "The Government of India has withdrawn the Refined Zinc (Quality Control) Order, 2025, removing the BIS certification requirement under IS 209:2024. Know the reasons and industry impact.";
+    "The Government of India has withdrawn the Aluminium and Aluminium Alloys (Quality Control) Order, 2023, removing the BIS certification requirement. Know the reasons and industry impact.";
   const ogDescription =
-    "India has officially rescinded the Refined Zinc QCO 2025, eliminating the mandatory BIS certification under IS 209:2024. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
+    "India has officially rescinded the Aluminium and Aluminium Alloys QCO 2023, eliminating the mandatory BIS certification. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
   const twitterDescription =
-    "India has officially rescinded the Refined Zinc QCO 2025, eliminating the mandatory BIS certification under IS 209:2024. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
+    "India has officially rescinded the Aluminium and Aluminium Alloys QCO 2023, eliminating the mandatory BIS certification. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
   const metaKeywords =
-    "Refined Zinc QCO, Refined Zinc BIS certification, IS 209:2024, BIS update, Zinc Industry India";
+    "Aluminium and Aluminium Alloys, Cast aluminium and its alloys, High purity primary aluminum ingot, Primary aluminium ingots";
   const websiteUrl =
-    "https://bis-certifications.com/ministry-updates/refined-zinc-qco-withdraw-order";
+    "https://bis-certifications.com/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -103,8 +103,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Refined Zinc (Quality Control) Order 2025 Withdrawn: No
-                    Mandatory BIS
+                    Aluminium and Aluminium Alloys (Quality Control) Order 2025
+                    Withdrawn
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -135,67 +135,32 @@ const MainContentLeft = () => {
     <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Withdrawn QCO for Refined Zinc IS 209:2024
+        <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4 text-left">
+          Withdrawn QCO for Aluminium and Aluminium Alloys
         </h1>
 
-        {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/ministryUpdatesBlogsImages/WithdrawQCOforRefinedZinc.webp"
-            title="Withdraw QCO for Refined Zinc"
-            alt="Govt. Withdraw QCO for Refined Zinc under IS 209:2024"
+            src="/ministryUpdatesBlogsImages/AluminiumandAluminiumAlloysQCOwithdraw.webp"
+            title="Withdraw QCO for Aluminium and Aluminium Alloys"
+            alt="Govt. Withdraw QCO for Aluminium and Aluminium Alloys"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Government of India has officially withdrawn the &quot;Refined
-          Zinc (Quality Control) Order, 2025&quot; even before it came into
-          force. Through notification S.O. 5169(E), the Ministry has rescinded
-          the earlier order S.O. 1768(E) dated 17th April 2025, which had
-          mandated compulsory BIS certification for refined zinc under Indian
-          Standard IS 209:2024.
+          The Government of India has officially withdrawn the &quot;Aluminium
+          and Aluminium Alloys (Quality Control) Order, 2023&quot;. Through
+          notification S.O. 5173(E), the Ministry has rescinded the earlier
+          order S.O. 3846(E) dated 31st August 2023, which had mandated
+          compulsory BIS certification for Aluminium and Aluminium Alloys.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           This decision, taken under the powers granted by the BIS Act, 2016,
           comes after consultation with the Bureau of Indian Standards and has
           been made in the public interest. For industries relying heavily on
-          zinc, this withdrawal brings relief, clarity, and stability.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The original QCO stated that Refined Zinc could not be manufactured,
-          sold, stored, distributed, or imported in India without mandatory BIS
-          certification as per IS 209:2024 (Refined Zinc – Specification).
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The QCO was scheduled to come into force on 17.04.2025.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">This meant:</p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            All manufacturers had to obtain a BIS licence for refined zinc.
-          </li>
-          <li>Import of non-BIS certified zinc would have been restricted.</li>
-          <li>
-            Compliance audits and product testing would have become mandatory.
-          </li>
-          <li>
-            Only IS 209:2024–compliant material could legally enter the market.
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          However, before the enforcement date arrived, the government reviewed
-          the situation and decided to rescind the order completely.
+          aluminium, this withdrawal brings relief, clarity, and stability.
         </p>
 
         {/* Separator Line */}
@@ -211,49 +176,6 @@ const MainContentLeft = () => {
           expedient in the public interest.&quot;
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Based on industry patterns and expert analysis, a few factors may have
-          influenced the decision:
-        </p>
-
-        <div className="mb-4">
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            1. Preventing Supply Chain Disruptions
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            With enforcement just months away, many domestic and international
-            suppliers were still in the process of applying for BIS
-            certification. A sudden cutoff could have caused shortages.
-          </p>
-
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            2. Cost and Compliance Pressure
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            BIS certification involves fees, factory audits, sample testing,
-            documentation, and timelines. Smaller units and foreign suppliers
-            may have struggled to comply on time.
-          </p>
-
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            3. Market Stability Concerns
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Zinc is widely used in galvanizing, automotive components,
-            infrastructure, railways, and electrical applications. Any
-            disruption could influence production and pricing in multiple
-            downstream industries.
-          </p>
-
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            4. Re-evaluation of Standards and Policy Direction
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            The government might be reviewing IS 209:2024 or planning a revised
-            QCO with updated timelines or conditions.
-          </p>
-        </div>
-
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
@@ -262,19 +184,17 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          With the withdrawal of the Refined Zinc QCO, the immediate effects
-          are:
+          With the withdrawal of the Aluminium and Aluminium Alloys, the
+          immediate effects are:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS certification under IS 209:2024 is no longer mandatory.</li>
+          <li>BIS certification is no longer mandatory.</li>
           <li>
             Manufacturers can continue regular production without the new
             compliance requirement.
           </li>
-          <li>
-            Importers can source refined zinc globally without BIS approval.
-          </li>
+          <li>Importers can source globally without BIS approval.</li>
           <li>No penalties or restrictions apply under the withdrawn QCO.</li>
           <li>
             Supply chains will continue without disruption or added regulatory
@@ -292,55 +212,91 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Impact on Downstream Sectors
+          Conclusion
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Industries that depend heavily on zinc—such as:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The withdrawal of the Aluminium and Aluminium Alloys (Quality Control)
+          Order, 2025 reflects the government&apos;s practical and flexible
+          approach toward industry needs. Although quality improvement remains
+          an important national priority, regulatory measures must balance
+          compliance with market realities.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>steel galvanization</li>
-          <li>infrastructure and construction</li>
-          <li>transportation and rail components</li>
-          <li>electronics and electrical manufacturing</li>
-          <li>consumer goods</li>
-        </ul>
-
         <p className="text-gray-600 text-base font-geist mb-4">
-          will experience stable availability and pricing. The decision avoids
-          potential bottlenecks that could have affected production schedules or
-          raised costs.
+          For now, industry can operate without the pressure of mandatory BIS
+          Certification. However, businesses should continue to monitor future
+          notifications, as the government may revisit the QCO at a later stage
+          with revised timelines or updated standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Conclusion
+          Products for which QCO have been rescinded:
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The withdrawal of the Refined Zinc (Quality Control) Order, 2025
-          before its enforcement date reflects the government&apos;s practical
-          and flexible approach toward industry needs. Although quality
-          improvement remains an important national priority, regulatory
-          measures must balance compliance with market realities.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For now, the metals industry can operate without the pressure of
-          mandatory BIS licensing for refined zinc. However, businesses should
-          continue to monitor future notifications, as the government may
-          revisit the QCO at a later stage with revised timelines or updated
-          standards.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          If your business deals with refined zinc—whether in manufacturing,
-          processing, or importing—this update is significant and worth keeping
-          on your radar.
-        </p>
+        <div className="overflow-x-auto mb-4">
+          <table className="min-w-full border-collapse border border-gray-300 text-gray-600 text-base font-geist">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">
+                  Indian Standard (IS)
+                </th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">
+                  Title / Description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  IS 617:1994
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Cast aluminium and its alloys – Ingots and castings for
+                  general engineering purposes
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  IS 11890:1987
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  High purity primary aluminum ingot for remelting for special
+                  applications
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  IS 6754:1972
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Aluminum alloy ingots for remelting for general engineering
+                  purpose
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  IS 2590:1987
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Primary aluminium ingots for remelting for general engineering
+                  purpose
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">
+                  IS 4026:2023
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  Aluminum ingots, billets and wire bars (EC Grade)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <ServiceAuthorEng />
       </div>
@@ -348,7 +304,7 @@ const MainContentLeft = () => {
       {/* PDF Viewer Section */}
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
-          src="/pdf/sun-certification-refined-zinc-withdraw-order.pdf"
+          src="/pdf/sun-certification-aluminium-and-aluminium-alloys.pdf"
           title="Refined Zinc QCO Withdrawal Order PDF"
           className="w-full h-[800px] bg-white"
           style={{

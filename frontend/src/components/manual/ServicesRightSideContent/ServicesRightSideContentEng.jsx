@@ -64,6 +64,7 @@ const ServicesRightSideContentEng = () => {
     "/what-is-bis-certificate-indian-bis",
     // MINISTRY UPDATES PATH
     "/ministry-updates/refined-zinc-qco-withdraw-order",
+    "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
   ];
 
   // Check if current path should show these components
@@ -654,6 +655,8 @@ const ContactFormServicesRightSideContentEng = () => {
     // MINISTRY UPDATES PATH
     if (path.includes("/ministry-updates/refined-zinc-qco-withdraw-order"))
       return "Refined Zinc QCO Withdrawal Order - Ministry Updates (English)";
+    if (path.includes("/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order"))
+      return "Aluminium and Aluminium Alloys QCO Withdrawal Order - Ministry Updates (English)";
   };
 
   const [formData, setFormData] = useState({
