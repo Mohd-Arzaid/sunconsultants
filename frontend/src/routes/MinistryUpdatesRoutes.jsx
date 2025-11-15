@@ -4,6 +4,7 @@ import RefinedZincQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/Refined
 import AluminiumAndAluminiumAlloysQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/AluminiumAndAluminiumAlloysQCOWithdrawOrder/AluminiumAndAluminiumAlloysQCOWithdrawOrderEng";
 import CopperQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/CopperQCOWithdrawOrder/CopperQCOWithdrawOrderEng";
 import TinIngotQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/TinIngotQCOWithdrawOrder/TinIngotQCOWithdrawOrderEng";
+import RefinedNickelQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/RefinedNickelQCOWithdrawOrder/RefinedNickelQCOWithdrawOrderEng";
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -24,6 +25,10 @@ export const MinistryUpdatesRoutes = () => {
       <Route
         path="/ministry-updates/tin-ingot-qco-withdraw-order"
         element={<TinIngotQCOWithdrawOrderEng />}
+      />
+      <Route
+        path="/ministry-updates/refined-nickel-qco-withdraw-order"
+        element={<RefinedNickelQCOWithdrawOrderEng />}
       />
     </>
   );

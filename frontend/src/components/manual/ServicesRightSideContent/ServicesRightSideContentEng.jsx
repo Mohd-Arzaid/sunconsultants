@@ -67,6 +67,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
     "/ministry-updates/copper-qco-withdraw-order",
     "/ministry-updates/tin-ingot-qco-withdraw-order",
+    "/ministry-updates/refined-nickel-qco-withdraw-order",
   ];
 
   // Check if current path should show these components
@@ -674,6 +675,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // Tin Ingot QCO Withdrawal Order
     if (path.includes("/ministry-updates/tin-ingot-qco-withdraw-order"))
       return "Tin Ingot QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Refined Nickel QCO Withdrawal Order
+    if (path.includes("/ministry-updates/refined-nickel-qco-withdraw-order"))
+      return "Refined Nickel QCO Withdrawal Order - Ministry Updates (English)";
   };
 
   const [formData, setFormData] = useState({
