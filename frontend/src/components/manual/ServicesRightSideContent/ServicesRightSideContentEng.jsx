@@ -65,6 +65,8 @@ const ServicesRightSideContentEng = () => {
     // MINISTRY UPDATES PATH
     "/ministry-updates/refined-zinc-qco-withdraw-order",
     "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
+    "/ministry-updates/copper-qco-withdraw-order",
+    "/ministry-updates/tin-ingot-qco-withdraw-order",
   ];
 
   // Check if current path should show these components
@@ -653,10 +655,25 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certification - English Page";
 
     // MINISTRY UPDATES PATH
+    // Refined Zinc QCO Withdrawal Order
     if (path.includes("/ministry-updates/refined-zinc-qco-withdraw-order"))
       return "Refined Zinc QCO Withdrawal Order - Ministry Updates (English)";
-    if (path.includes("/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order"))
+
+    // Aluminium and Aluminium Alloys QCO Withdrawal Order
+    if (
+      path.includes(
+        "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order"
+      )
+    )
       return "Aluminium and Aluminium Alloys QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Copper QCO Withdrawal Order
+    if (path.includes("/ministry-updates/copper-qco-withdraw-order"))
+      return "Copper QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Tin Ingot QCO Withdrawal Order
+    if (path.includes("/ministry-updates/tin-ingot-qco-withdraw-order"))
+      return "Tin Ingot QCO Withdrawal Order - Ministry Updates (English)";
   };
 
   const [formData, setFormData] = useState({
