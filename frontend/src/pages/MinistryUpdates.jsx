@@ -4,7 +4,6 @@ import Footer from "@/common/Footer";
 import {
   ChevronLeft,
   ChevronRight,
-  FileText,
   Phone,
   Send,
   SlashIcon,
@@ -341,8 +340,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
     const searchLower = searchQuery.toLowerCase();
     return (
       notification.title.toLowerCase().includes(searchLower) ||
-      notification.description.toLowerCase().includes(searchLower) ||
-      notification.tagType.toLowerCase().includes(searchLower)
+      notification.description.toLowerCase().includes(searchLower)
     );
   });
 
@@ -361,8 +359,6 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
           <BISNotificationCardItem
             key={notification.id}
             color={notification.color}
-            tagType={notification.tagType}
-            date={notification.date}
             title={notification.title}
             description={notification.description}
             link={notification.link}
@@ -425,66 +421,42 @@ BISNotificationCard.propTypes = {
   itemsPerPage: PropTypes.number.isRequired,
 };
 
-const BISNotificationCardItem = ({
-  color,
-  tagType,
-  date,
-  title,
-  description,
-  link,
-}) => {
+const BISNotificationCardItem = ({ color, title, description, link }) => {
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-[0_15px_30px_-10px_rgba(0,0,0,0.1)] h-full flex flex-col">
+      {/* Color-coded header bar */}
       <div className="h-3 md:h-4" style={{ backgroundColor: color }}></div>
-      <div className="p-5 md:p-8 flex flex-col flex-grow">
-        <div className="flex items-center justify-between mb-5">
-          <span
-            className="px-4 py-1.5 font-geist font-medium text-sm rounded-full"
-            style={{
-              backgroundColor: `${color}10`,
-              color: color,
-            }}
-          >
-            {tagType}
-          </span>
-          <span className="text-gray-500 font-geist text-sm flex gap-2 items-center justify-center">
-            <span className="w-2 h-2 rounded-full bg-[#1A8781]"></span>
-            {date}
-          </span>
-        </div>
 
+      <div className="p-5 md:p-8 flex flex-col flex-grow">
+        {/* Product title - clickable */}
         <Link to={link}>
-          <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-3 min-h-[4rem] flex items-start cursor-pointer hover:text-blue-600 transition-colors duration-200">
+          <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-4 min-h-[4rem] flex items-start cursor-pointer hover:text-blue-600 transition-colors duration-200">
             {title}
           </h3>
         </Link>
 
+        {/* Product description */}
         <p className="font-geist text-gray-600 mb-6 line-clamp-3 flex-grow">
           {description}
         </p>
 
-        <div className="flex items-center justify-between pt-4 border-t-2 border-gray-300 mt-auto">
-          <Link
-            to={link}
-            className="flex items-center gap-2 cursor-pointer group"
-          >
-            <FileText size={18} style={{ color: color }} />
-            <span className="text-base font-geist font-medium underline decoration-gray-200 decoration-2 underline-offset-[0.27em] transition-colors group-hover:decoration-gray-950 text-gray-600">
-              Official Document
-            </span>
-          </Link>
-
+        {/* Read more button with dynamic color styling */}
+        <div className="flex justify-end pt-4 border-t-2 border-gray-300 mt-auto">
           <Link to={link} className="relative">
             <Button
               variant="outline"
-              className="transition-all duration-200"
+              className="transition-all duration-200 hover:shadow-md"
               style={{
                 borderColor: color,
                 color: color,
-                "&:hover": {
-                  backgroundColor: color,
-                  color: "white",
-                },
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.backgroundColor = color;
+                e.target.style.color = "white";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = "transparent";
+                e.target.style.color = color;
               }}
             >
               Read More
@@ -498,8 +470,6 @@ const BISNotificationCardItem = ({
 
 BISNotificationCardItem.propTypes = {
   color: PropTypes.string.isRequired,
-  tagType: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
@@ -631,8 +601,7 @@ const Pagination = ({
     const searchLower = searchQuery.toLowerCase();
     return (
       notification.title.toLowerCase().includes(searchLower) ||
-      notification.description.toLowerCase().includes(searchLower) ||
-      notification.tagType.toLowerCase().includes(searchLower)
+      notification.description.toLowerCase().includes(searchLower)
     );
   });
 
