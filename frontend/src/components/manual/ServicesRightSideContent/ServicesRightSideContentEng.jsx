@@ -70,6 +70,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/refined-nickel-qco-withdraw-order",
     "/ministry-updates/nickel-qco-withdraw-order",
     "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
+    "/ministry-updates/scheme-x-qco-withdraw-order",
   ];
 
   // Check if current path should show these components
@@ -693,6 +694,10 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "Petrochemical & Polymer Products QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Scheme X QCO Withdrawal Order
+    if (path.includes("/ministry-updates/scheme-x-qco-withdraw-order"))
+      return "Scheme X QCO Withdrawal Order - Ministry Updates (English)";
   };
 
   const [formData, setFormData] = useState({
