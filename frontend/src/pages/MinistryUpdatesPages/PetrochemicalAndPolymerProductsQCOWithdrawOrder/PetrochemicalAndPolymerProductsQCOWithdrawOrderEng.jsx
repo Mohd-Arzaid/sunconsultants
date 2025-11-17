@@ -48,7 +48,7 @@ const MetaTags = () => {
   const metaKeywords =
     "Petrochemical & Polymer Products, Polycarbonate, PVC Homopolymers, Ethylene Vinyl Acetate";
   const websiteUrl =
-    "https://bis-certifications.com/ministry-updates/Petrochemical-&-Polymer-Products-qco-withdraw-order";
+    "https://bis-certifications.com/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

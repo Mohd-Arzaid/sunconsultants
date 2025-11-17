@@ -69,7 +69,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/tin-ingot-qco-withdraw-order",
     "/ministry-updates/refined-nickel-qco-withdraw-order",
     "/ministry-updates/nickel-qco-withdraw-order",
-    "/ministry-updates/Petrochemical-&-Polymer-Products-qco-withdraw-order",
+    "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
   ];
 
   // Check if current path should show these components
@@ -689,7 +689,7 @@ const ContactFormServicesRightSideContentEng = () => {
     // Petrochemical & Polymer Products QCO Withdrawal Order
     if (
       path.includes(
-        "/ministry-updates/Petrochemical-&-Polymer-Products-qco-withdraw-order"
+        "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order"
       )
     )
       return "Petrochemical & Polymer Products QCO Withdrawal Order - Ministry Updates (English)";

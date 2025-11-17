@@ -37,7 +37,7 @@ export const MinistryUpdatesRoutes = () => {
         element={<NickelPowderQCOWithdrawOrderEng />}
       />
       <Route
-        path="/ministry-updates/petrochemical-&-polymer-products-qco-withdraw-order"
+        path="/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order"
         element={<PetrochemicalAndPolymerProductsQCOWithdrawOrderEng />}
       />
     </>
