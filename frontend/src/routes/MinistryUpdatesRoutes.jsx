@@ -5,6 +5,8 @@ import AluminiumAndAluminiumAlloysQCOWithdrawOrderEng from "@/pages/MinistryUpda
 import CopperQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/CopperQCOWithdrawOrder/CopperQCOWithdrawOrderEng";
 import TinIngotQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/TinIngotQCOWithdrawOrder/TinIngotQCOWithdrawOrderEng";
 import RefinedNickelQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/RefinedNickelQCOWithdrawOrder/RefinedNickelQCOWithdrawOrderEng";
+import NickelPowderQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/NickelPowderQCOWithdrawOrder/NickelPowderQCOWithdrawOrderEng";
+import PetrochemicalAndPolymerProductsQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/PetrochemicalAndPolymerProductsQCOWithdrawOrder/PetrochemicalAndPolymerProductsQCOWithdrawOrderEng";
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -29,6 +31,18 @@ export const MinistryUpdatesRoutes = () => {
       <Route
         path="/ministry-updates/refined-nickel-qco-withdraw-order"
         element={<RefinedNickelQCOWithdrawOrderEng />}
+      />
+      <Route
+        path="/ministry-updates/nickel-qco-withdraw-order"
+        element={<NickelPowderQCOWithdrawOrderEng />}
+      />
+      <Route
+        path="/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order"
+        element={<NickelPowderQCOWithdrawOrderEng />}
+      />
+      <Route
+        path="/ministry-updates/petrochemical-&-polymer-products-qco-withdraw-order"
+        element={<PetrochemicalAndPolymerProductsQCOWithdrawOrderEng />}
       />
     </>
   );

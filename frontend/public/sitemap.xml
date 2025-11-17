@@ -2930,4 +2930,18 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Nickel Powder QCO Withdraw Order - English -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/nickel-qco-withdraw-order</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Petrochemical & Polymer Products QCO Withdraw Order - English -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/Petrochemical-&-Polymer-Products-qco-withdraw-order</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 </urlset>
