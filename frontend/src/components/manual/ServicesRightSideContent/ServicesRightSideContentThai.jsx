@@ -75,6 +75,8 @@ const ServicesRightSideContentThai = () => {
     "/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-kwa-1000-volt",
     // Transformers Thai Page URL
     "/kan-rap-rong-bis-phaen-x-samrab-transformer",
+    // Weaving Machines Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-tan",
   ];
 
   // Check if current path should show these components
@@ -680,6 +682,10 @@ const ContactFormServicesRightSideContentThai = () => {
       path.includes("/kan-rap-rong-bis-phaen-x-samrab-transformer")
     )
       return "Transformers - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-tan")
+    )
+      return "Weaving Machines - Thai Page";
   };
 
   const [formData, setFormData] = useState({

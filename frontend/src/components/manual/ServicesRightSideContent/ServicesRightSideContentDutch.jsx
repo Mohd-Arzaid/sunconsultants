@@ -37,6 +37,18 @@ const ServicesRightSideContentDutch = () => {
     "/nl/bis-isi-mark-certificering",
     // BIS CERTIFICATION PATH
     "/nl/wat-is-het-bis-certificaat-indiaas-bis",
+    // Centrifuges Dutch Page URL
+    "/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines",
+    // Compressors Dutch Page URL
+    "/bis-schema-x-certificering-voor-compressoren",
+    // Construction Machinery Dutch Page URL
+    "/bis-schema-x-certificering-voor-bouwmachines",
+    // Cranes Dutch Page URL
+    "/bis-schema-x-certificering-voor-kranen",
+    // Diesel Generators Dutch Page URL
+    "/bis-schema-x-certificering-voor-dieselgeneratoren",
+    // Embroidery Machines Dutch Page URL
+    "/bis-schema-x-certificering-voor-borduurmachines",
   ];
 
   // Check if current path should show these components
@@ -570,6 +582,30 @@ const ContactFormServicesRightSideContentDutch = () => {
       return "ISI Mark - Dutch Page";
     if (path.includes("/nl/wat-is-het-bis-certificaat-indiaas-bis"))
       return "BIS Certification Dutch";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines")
+    )
+      return "Centrifuges - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-compressoren")
+    )
+      return "Compressors - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-bouwmachines")
+    )
+      return "Construction Machinery - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-kranen")
+    )
+      return "Cranes - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-dieselgeneratoren")
+    )
+      return "Diesel Generators - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-borduurmachines")
+    )
+      return "Embroidery Machines - Dutch Page";
   };
 
   const [formData, setFormData] = useState({
