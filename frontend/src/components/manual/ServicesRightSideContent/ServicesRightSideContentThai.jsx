@@ -53,6 +53,8 @@ const ServicesRightSideContentThai = () => {
     "/kan-rap-rong-bis-phaen-x-samrab-fueang-rab-khia-lae-ong-prakop-kan-song-kamlang",
     // Heat Treatment Equipment Thai Page URL
     "/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron",
+    // Machine Tools Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-mue",
   ];
 
   // Check if current path should show these components
@@ -616,6 +618,8 @@ const ContactFormServicesRightSideContentThai = () => {
       path.includes("/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron")
     )
       return "Heat Treatment Equipment - Thai Page";
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-mue"))
+      return "Machine Tools - Thai Page";
   };
 
   const [formData, setFormData] = useState({
