@@ -148,6 +148,7 @@ import RubberAndPlasticsMachineryKorean from "../schemeXProducts/RubberAndPlasti
 import RubberAndPlasticsMachineryIndonesian from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryIndonesian";
 import RubberAndPlasticsMachineryItalian from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryItalian";
 import RubberAndPlasticsMachineryJapanese from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryJapanese";
+import RubberAndPlasticsMachineryThai from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryThai";
 import SwitchgearandControlgearEquipment from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipment";
 import SwitchgearandControlgearEquipmentFrench from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentFrench";
 import SwitchgearandControlgearEquipmentGerman from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentGerman";
@@ -165,6 +166,7 @@ import SwitchgearandControlgearEquipmentabove1000VoltsKorean from "../schemeXPro
 import SwitchgearandControlgearEquipmentabove1000VoltsIndonesian from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsIndonesian";
 import SwitchgearandControlgearEquipmentabove1000VoltsItalian from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsItalian";
 import SwitchgearandControlgearEquipmentabove1000VoltsJapanese from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsJapanese";
+import SwitchgearandControlgearEquipmentabove1000VoltsThai from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsThai";
 import Transformers from "../schemeXProducts/Transformers/Transformers";
 import TransformersFrench from "../schemeXProducts/Transformers/TransformersFrench";
 import TransformersGerman from "../schemeXProducts/Transformers/TransformersGerman";
@@ -174,6 +176,7 @@ import TransformersKorean from "../schemeXProducts/Transformers/TransformersKore
 import TransformersIndonesian from "../schemeXProducts/Transformers/TransformersIndonesian";
 import TransformersItalian from "../schemeXProducts/Transformers/TransformersItalian";
 import TransformersJapanese from "../schemeXProducts/Transformers/TransformersJapanese";
+import TransformersThai from "../schemeXProducts/Transformers/TransformersThai";
 import WeavingMachines from "../schemeXProducts/WeavingMachines/WeavingMachines";
 import WeavingMachinesFrench from "../schemeXProducts/WeavingMachines/WeavingMachinesFrench";
 import WeavingMachinesGerman from "../schemeXProducts/WeavingMachines/WeavingMachinesGerman";
@@ -194,7 +197,9 @@ import HeatTreatmentEquipmentJapanese from "@/schemeXProducts/HeatTreatmentEquip
 import MachineToolsJapanese from "@/schemeXProducts/MachineTools/MachineToolsJapanese";
 import MachineToolsThai from "@/schemeXProducts/MachineTools/MachineToolsThai";
 import RotaryElectricalMachinesJapanese from "@/schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesJapanese";
+import RotaryElectricalMachinesThai from "@/schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesThai";
 import SwitchgearandControlgearEquipmentJapanese from "@/schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentJapanese";
+import SwitchgearandControlgearEquipmentThai from "@/schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentThai";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -1125,6 +1130,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-kaiten-denki-kikai"
         element={<RotaryElectricalMachinesJapanese />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-fai-fa-kai"
+        element={<RotaryElectricalMachinesThai />}
+      />
 
       {/* Rotary Electrical Machines Pages End */}
 
@@ -1181,6 +1191,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-gomu-oyobi-purasuchikku-kikai"
         element={<RubberAndPlasticsMachineryJapanese />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-yang-yu-lae-plastik"
+        element={<RubberAndPlasticsMachineryThai />}
       />
 
       {/* Rubber And Plastics Machinery Pages End */}
@@ -1239,6 +1254,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-made"
         element={<SwitchgearandControlgearEquipmentJapanese />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-sut-1000-volt"
+        element={<SwitchgearandControlgearEquipmentThai />}
+      />
 
       {/* Switchgear And Controlgear Equipment Pages End */}
 
@@ -1296,6 +1316,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-chou"
         element={<SwitchgearandControlgearEquipmentabove1000VoltsJapanese />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-kwa-1000-volt"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsThai />}
+      />
 
       {/* Switchgear And Controlgear Equipment Above 1000 Volts Pages End */}
 
@@ -1352,6 +1377,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-hensatsuki"
         element={<TransformersJapanese />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-transformer"
+        element={<TransformersThai />}
       />
 
       {/* Transformers Pages End */}

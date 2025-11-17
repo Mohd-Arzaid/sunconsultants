@@ -2322,6 +2322,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-fai-fa-kai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Rotary Electrical Machines - SchemeX Products End -->
 
   <!-- Rubber and Plastics Machinery - SchemeX Products Start -->
@@ -2384,6 +2391,13 @@
   <!-- Japanese -->
   <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-gomu-oyobi-purasuchikku-kikai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-yang-yu-lae-plastik</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -2451,6 +2465,13 @@
   <!-- Japanese -->
   <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-made</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-sut-1000-volt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -2587,6 +2608,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-11-12</lastmod>
+  </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-transformer</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
   </url>
 <!-- Transformers - SchemeX Products End -->
 
