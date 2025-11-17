@@ -88,6 +88,7 @@ import MetalCuttingMachinesKorean from "../schemeXProducts/MetalCuttingMachines/
 import MetalCuttingMachinesIndonesian from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesIndonesian";
 import MetalCuttingMachinesItalian from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesItalian";
 import MetalCuttingMachinesJapanese from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesJapanese";
+import MetalCuttingMachinesThai from "../schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesThai";
 import PackingMachinery from "../schemeXProducts/PackingMachinery/PackingMachinery";
 import PackingMachineryFrench from "../schemeXProducts/PackingMachinery/PackingMachineryFrench";
 import PackingMachineryGerman from "../schemeXProducts/PackingMachinery/PackingMachineryGerman";
@@ -97,6 +98,7 @@ import PackingMachineryKorean from "../schemeXProducts/PackingMachinery/PackingM
 import PackingMachineryIndonesian from "../schemeXProducts/PackingMachinery/PackingMachineryIndonesian";
 import PackingMachineryItalian from "../schemeXProducts/PackingMachinery/PackingMachineryItalian";
 import PackingMachineryJapanese from "../schemeXProducts/PackingMachinery/PackingMachineryJapanese";
+import PackingMachineryThai from "../schemeXProducts/PackingMachinery/PackingMachineryThai";
 import PowerSemiconductors from "../schemeXProducts/PowerSemiconductors/PowerSemiconductors";
 import PowerSemiconductorsFrench from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsFrench";
 import PowerSemiconductorsGerman from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsGerman";
@@ -106,6 +108,7 @@ import PowerSemiconductorsKorean from "../schemeXProducts/PowerSemiconductors/Po
 import PowerSemiconductorsIndonesian from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsIndonesian";
 import PowerSemiconductorsItalian from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsItalian";
 import PowerSemiconductorsJapanese from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsJapanese";
+import PowerSemiconductorsThai from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsThai";
 import PublicWorksAndMechanical from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanical";
 import PublicWorksAndMechanicalFrench from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalFrench";
 import PublicWorksAndMechanicalGerman from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalGerman";
@@ -115,6 +118,7 @@ import PublicWorksAndMechanicalKorean from "../schemeXProducts/PublicWorksAndMec
 import PublicWorksAndMechanicalIndonesian from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalIndonesian";
 import PublicWorksAndMechanicalItalian from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalItalian";
 import PublicWorksAndMechanicalJapanese from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalJapanese";
+import PublicWorksAndMechanicalThai from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalThai";
 import PumpsAndLiquidElevators from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevators";
 import PumpsAndLiquidElevatorsGerman from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsGerman";
 import PumpsAndLiquidElevatorsSpanish from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsSpanish";
@@ -867,6 +871,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"
         element={<MetalCuttingMachinesJapanese />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak"
+        element={<MetalCuttingMachinesThai />}
+      />
 
       {/* Metal Cutting Machines Pages End */}
 
@@ -923,6 +932,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-pakkingu-kikai"
         element={<PackingMachineryJapanese />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-pack"
+        element={<PackingMachineryThai />}
       />
 
       {/* Packing Machinery Pages End */}
@@ -981,6 +995,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-denryoku-handoutai-henkan-ki"
         element={<PowerSemiconductorsJapanese />}
       />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-ploy-phalang-bandojeo"
+        element={<PowerSemiconductorsThai />}
+      />
 
       {/* Power Semiconductors Pages End */}
 
@@ -1037,6 +1056,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu"
         element={<PublicWorksAndMechanicalJapanese />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-ngan-satharana-lae-uppakon-kai"
+        element={<PublicWorksAndMechanicalThai />}
       />
 
       {/* Public Works And Mechanical Pages End */}

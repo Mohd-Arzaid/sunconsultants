@@ -53,6 +53,16 @@ const ServicesRightSideContentThai = () => {
     "/kan-rap-rong-bis-phaen-x-samrab-fueang-rab-khia-lae-ong-prakop-kan-song-kamlang",
     // Heat Treatment Equipment Thai Page URL
     "/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron",
+    // Metal Cutting Machines Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak",
+    // Packing Machinery Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-pack",
+    // Power Semiconductors Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-ploy-phalang-bandojeo",
+    // Public Works and Mechanical Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-ngan-satharana-lae-uppakon-kai",
+    // Pumps and Liquid Elevators Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam",
   ];
 
   // Check if current path should show these components
@@ -616,6 +626,26 @@ const ContactFormServicesRightSideContentThai = () => {
       path.includes("/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron")
     )
       return "Heat Treatment Equipment - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak")
+    )
+      return "Metal Cutting Machines - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-pack")
+    )
+      return "Packing Machinery - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-ploy-phalang-bandojeo")
+    )
+      return "Power Semiconductors - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-ngan-satharana-lae-uppakon-kai")
+    )
+      return "Public Works and Mechanical - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam")
+    )
+      return "Pumps and Liquid Elevators - Thai Page";
   };
 
   const [formData, setFormData] = useState({

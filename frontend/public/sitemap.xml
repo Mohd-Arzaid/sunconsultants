@@ -1936,6 +1936,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Metal Cutting Machine Tools - SchemeX Products End -->
 
   <!-- Packing Machinery - SchemeX Products Start -->
@@ -1998,6 +2005,13 @@
   <!-- Japanese -->
   <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-pakkingu-kikai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-pack</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -2068,6 +2082,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-ploy-phalang-bandojeo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Power Semiconductors - SchemeX Products End -->
 
   <!-- Public Works and Mechanical Appliances - SchemeX Products Start -->
@@ -2130,6 +2151,13 @@
   <!-- Japanese -->
     <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-ngan-satharana-lae-uppakon-kai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
