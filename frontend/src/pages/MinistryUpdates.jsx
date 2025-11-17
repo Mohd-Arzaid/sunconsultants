@@ -62,7 +62,7 @@ const MinistryUpdates = () => {
                   <SlashIcon />
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
-                  <BreadcrumbPage>DRAFT BIS Notifications</BreadcrumbPage>
+                  <BreadcrumbPage>BIS Notifications</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>

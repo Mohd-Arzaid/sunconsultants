@@ -7,6 +7,7 @@ import TinIngotQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/TinIngotQC
 import RefinedNickelQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/RefinedNickelQCOWithdrawOrder/RefinedNickelQCOWithdrawOrderEng";
 import NickelPowderQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/NickelPowderQCOWithdrawOrder/NickelPowderQCOWithdrawOrderEng";
 import PetrochemicalAndPolymerProductsQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/PetrochemicalAndPolymerProductsQCOWithdrawOrder/PetrochemicalAndPolymerProductsQCOWithdrawOrderEng";
+import SchemeXQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/SchemeXQCOWithdrawOrder/SchemeXQCOWithdrawOrderEng";
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -39,6 +40,10 @@ export const MinistryUpdatesRoutes = () => {
       <Route
         path="/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order"
         element={<PetrochemicalAndPolymerProductsQCOWithdrawOrderEng />}
+      />
+      <Route
+        path="/ministry-updates/scheme-x-qco-withdraw-order"
+        element={<SchemeXQCOWithdrawOrderEng />}
       />
     </>
   );
