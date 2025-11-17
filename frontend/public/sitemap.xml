@@ -1870,6 +1870,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Thai -->
+  <url>
+    <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-mue</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Machine Tools - SchemeX Products End -->
 
   <!-- Metal Cutting Machine Tools - SchemeX Products Start -->
@@ -2947,6 +2954,20 @@
   <!-- Refined Nickel QCO Withdraw Order - English -->
   <url>
     <loc>https://bis-certifications.com/ministry-updates/refined-nickel-qco-withdraw-order</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Nickel Powder QCO Withdraw Order - English -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/nickel-qco-withdraw-order</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Petrochemical & Polymer Products QCO Withdraw Order - English -->
+  <url>
+    <loc>https://bis-certifications.com/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

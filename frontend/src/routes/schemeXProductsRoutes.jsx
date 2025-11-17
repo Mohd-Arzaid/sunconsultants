@@ -192,6 +192,7 @@ import EmbroideryMachinesJapanese from "@/schemeXProducts/EmbroideryMachines/Emb
 import GearsGearingsandTransmissionJapanese from "@/schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionJapanese";
 import HeatTreatmentEquipmentJapanese from "@/schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentJapanese";
 import MachineToolsJapanese from "@/schemeXProducts/MachineTools/MachineToolsJapanese";
+import MachineToolsThai from "@/schemeXProducts/MachineTools/MachineToolsThai";
 import RotaryElectricalMachinesJapanese from "@/schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesJapanese";
 import SwitchgearandControlgearEquipmentJapanese from "@/schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentJapanese";
 
@@ -813,6 +814,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/certificazione-bis-schema-x-per-utensili-per-macchine"
         element={<MachineToolsItalian />}
+      />
+      {/* Thai */}
+      <Route
+        path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-mue"
+        element={<MachineToolsThai />}
       />
 
       {/* Machine Tools Pages End */}

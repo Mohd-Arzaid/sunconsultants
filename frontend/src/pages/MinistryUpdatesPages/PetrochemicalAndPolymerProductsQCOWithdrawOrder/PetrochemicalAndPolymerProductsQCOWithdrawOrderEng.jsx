@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const RefinedZincQCOWithdrawOrderEng = () => {
+const PetrochemicalAndPolymerProductsQCOWithdrawOrderEng = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +30,25 @@ const RefinedZincQCOWithdrawOrderEng = () => {
   );
 };
 
-export default RefinedZincQCOWithdrawOrderEng;
+export default PetrochemicalAndPolymerProductsQCOWithdrawOrderEng;
 
 const MetaTags = () => {
   const title =
-    "Refined Zinc (Quality Control) Order 2025 Withdrawn: No Mandatory BIS";
+    "Petrochemical & Polymer Products (Quality Control) Order 2025 Withdrawn: No Mandatory BIS";
   const ogTitle =
-    "Government Cancels Refined Zinc BIS Certification Order 2025";
+    "Government Cancels Petrochemical & Polymer Products BIS Certification Order 2025";
   const twitterTitle =
-    "Government Cancels Refined Zinc BIS Certification Order 2025";
+    "Government Cancels Petrochemical & Polymer Products BIS Certification Order 2025";
   const metaDescription =
-    "The Government of India has withdrawn the Refined Zinc (Quality Control) Order, 2025, removing the BIS certification requirement under IS 209:2024. Know the reasons and industry impact.";
+    "The Government of India has withdrawn the Petrochemical & Polymer Products (Quality Control) Order, 2025, removing the BIS certification requirement. Know the reasons and industry impact.";
   const ogDescription =
-    "India has officially rescinded the Refined Zinc QCO 2025, eliminating the mandatory BIS certification under IS 209:2024. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
+    "India has officially rescinded the Petrochemical & Polymer Products QCO 2025, eliminating the mandatory BIS certification. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
   const twitterDescription =
-    "India has officially rescinded the Refined Zinc QCO 2025, eliminating the mandatory BIS certification under IS 209:2024. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
+    "India has officially rescinded the Petrochemical & Polymer Products QCO 2025, eliminating the mandatory BIS certification. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
   const metaKeywords =
-    "Refined Zinc QCO, Refined Zinc BIS certification, IS 209:2024, BIS update, Zinc Industry India";
+    "Petrochemical & Polymer Products, Polycarbonate, PVC Homopolymers, Ethylene Vinyl Acetate";
   const websiteUrl =
-    "https://bis-certifications.com/ministry-updates/refined-zinc-qco-withdraw-order";
+    "https://bis-certifications.com/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -103,8 +103,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Refined Zinc (Quality Control) Order 2025 Withdrawn: No
-                    Mandatory BIS
+                    Petrochemical & Polymer Products QCO Withdrawn
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -136,211 +135,201 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Withdrawn QCO for Refined Zinc IS 209:2024
+          Withdrawn QCO for Petrochemical & Polymer Products
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/ministryUpdatesBlogsImages/WithdrawQCOforRefinedZinc.webp"
-            title="Withdraw QCO for Refined Zinc"
-            alt="Govt. Withdraw QCO for Refined Zinc under IS 209:2024"
+            src="/ministryUpdatesBlogsImages/Petrochemical&PolymerProducts.webp"
+            title="Withdraw QCO for Petrochemical & Polymer Products"
+            alt="Govt. Withdraw QCO for Petrochemical & Polymer Products"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Government of India has officially withdrawn the &quot;Refined
-          Zinc (Quality Control) Order, 2025&quot; even before it came into
-          force. Through notification S.O. 5169(E), the Ministry has rescinded
-          the earlier order S.O. 1768(E) dated 17th April 2025, which had
-          mandated compulsory BIS certification for refined zinc under Indian
-          Standard IS 209:2024.
+          The Ministry of Chemicals & Fertilizers has recently issued multiple
+          Gazette notifications announcing the withdrawal of Quality Control
+          Orders (QCOs) for a specific list of petrochemical and polymer
+          products. This announcement has created significant interest among
+          manufacturers, importers, and industrial stakeholders, as QCOs
+          directly impact production processes, imports, compliance costs, and
+          market operations.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This decision, taken under the powers granted by the BIS Act, 2016,
-          comes after consultation with the Bureau of Indian Standards and has
-          been made in the public interest. For industries relying heavily on
-          zinc, this withdrawal brings relief, clarity, and stability.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The original QCO stated that Refined Zinc could not be manufactured,
-          sold, stored, distributed, or imported in India without mandatory BIS
-          certification as per IS 209:2024 (Refined Zinc – Specification).
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The QCO was scheduled to come into force on 17.04.2025.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">This meant:</p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            All manufacturers had to obtain a BIS licence for refined zinc.
-          </li>
-          <li>Import of non-BIS certified zinc would have been restricted.</li>
-          <li>
-            Compliance audits and product testing would have become mandatory.
-          </li>
-          <li>
-            Only IS 209:2024–compliant material could legally enter the market.
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          However, before the enforcement date arrived, the government reviewed
-          the situation and decided to rescind the order completely.
+          It is important to highlight that this withdrawal is limited only to
+          certain identified products and does not dilute or impact the overall
+          QCO framework that continues to be implemented across other ministries
+          such as BIS, DPIIT, Ministry of Steel, Ministry of Textiles, and
+          others.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why Was the QCO Withdrawn?
+          Understanding the Context of QCO Withdrawal
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The notification does not specify a detailed reason, but the language
-          clearly states that the withdrawal is considered &quot;necessary or
-          expedient in the public interest.&quot;
+          India has been actively strengthening its quality ecosystem by
+          bringing several commodities under mandatory certification through
+          QCOs. These orders ensure that products meet Indian Standards and
+          carry the BIS Standard Mark before they can be manufactured, imported,
+          or sold in the Indian market.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Based on industry patterns and expert analysis, a few factors may have
-          influenced the decision:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          However, after industry feedback, supply chain assessments, and
+          consultation with stakeholders, the government periodically reviews
+          these orders. In the latest development, specific QCOs related to
+          petrochemical and polymer products have been rescinded, meaning the
+          listed items are no longer subject to mandatory BIS certification.
         </p>
 
-        <div className="mb-4">
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            1. Preventing Supply Chain Disruptions
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            With enforcement just months away, many domestic and international
-            suppliers were still in the process of applying for BIS
-            certification. A sudden cutoff could have caused shortages.
-          </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          This move is expected to provide industry relief, reduce compliance
+          burdens, and ensure smooth availability of raw materials for
+          downstream manufacturing sectors.
+        </p>
 
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            2. Cost and Compliance Pressure
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            BIS certification involves fees, factory audits, sample testing,
-            documentation, and timelines. Smaller units and foreign suppliers
-            may have struggled to comply on time.
-          </p>
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
 
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            3. Market Stability Concerns
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Zinc is widely used in galvanizing, automotive components,
-            infrastructure, railways, and electrical applications. Any
-            disruption could influence production and pricing in multiple
-            downstream industries.
-          </p>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          List of Petrochemical & Polymer Products with Rescinded QCOs:
+        </h2>
 
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            4. Re-evaluation of Standards and Policy Direction
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            The government might be reviewing IS 209:2024 or planning a revised
-            QCO with updated timelines or conditions.
-          </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="min-w-full border-collapse border border-gray-300 text-sm">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#1e1e1e]">
+                  Indian Standard (IS)
+                </th>
+                <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-[#1e1e1e]">
+                  Title / Description
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-700">
+              <tr>
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 15030:2001
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Terephthalic Acid (TPA)
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 5295:1985
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Ethylene Glycol
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 17265:2019
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polyester Spun Yarn
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 17264:2019
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polyester Industrial Yarn
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 17263:2019
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polyester Staple Fibre
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 17261:2019
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polyester Continuous Filament Fully Drawn Yarn
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 17262:2019
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polyester Partially Oriented Yarn
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 7328:2020
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polyethylene Material for moulding and extrusion
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 17077:2019
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Acrylonitrile Butadiene Styrene
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 10951:2020
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polypropylene (PP) Materials for Moulding and Extrusion
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 17658:2021
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Poly Vinyl Chloride (PVC) Homopolymers
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 13601:1993
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Ethylene Vinyl Acetate (EVA) Copolymers
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 17397 (Part 1):2020
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polyurethanes
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3">
+                  IS 14434:1998
+                </td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Polycarbonate
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          What This Means for Industry
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          With the withdrawal of the Refined Zinc QCO, the immediate effects
-          are:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS certification under IS 209:2024 is no longer mandatory.</li>
-          <li>
-            Manufacturers can continue regular production without the new
-            compliance requirement.
-          </li>
-          <li>
-            Importers can source refined zinc globally without BIS approval.
-          </li>
-          <li>No penalties or restrictions apply under the withdrawn QCO.</li>
-          <li>
-            Supply chains will continue without disruption or added regulatory
-            pressure.
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For many businesses, especially importers and small-medium
-          manufacturers, this offers breathing space and reduces operational
-          overhead.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Impact on Downstream Sectors
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Industries that depend heavily on zinc—such as:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>steel galvanization</li>
-          <li>infrastructure and construction</li>
-          <li>transportation and rail components</li>
-          <li>electronics and electrical manufacturing</li>
-          <li>consumer goods</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          will experience stable availability and pricing. The decision avoids
-          potential bottlenecks that could have affected production schedules or
-          raised costs.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Conclusion
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The withdrawal of the Refined Zinc (Quality Control) Order, 2025
-          before its enforcement date reflects the government&apos;s practical
-          and flexible approach toward industry needs. Although quality
-          improvement remains an important national priority, regulatory
-          measures must balance compliance with market realities.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For now, the metals industry can operate without the pressure of
-          mandatory BIS licensing for refined zinc. However, businesses should
-          continue to monitor future notifications, as the government may
-          revisit the QCO at a later stage with revised timelines or updated
-          standards.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          If your business deals with refined zinc—whether in manufacturing,
-          processing, or importing—this update is significant and worth keeping
-          on your radar.
-        </p>
 
         <ServiceAuthorEng />
       </div>
@@ -348,8 +337,8 @@ const MainContentLeft = () => {
       {/* PDF Viewer Section */}
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
-          src="/pdf/sun-certification-refined-zinc-withdraw-order.pdf"
-          title="Refined Zinc QCO Withdrawal Order PDF"
+          src="/pdf/sun-certification-petrochemical-and-polymer-products.pdf"
+          title="Petrochemical & Polymer Products QCO Withdrawal Order PDF"
           className="w-full h-[800px] bg-white"
           style={{
             boxShadow:

@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const RefinedZincQCOWithdrawOrderEng = () => {
+const NickelPowderQCOWithdrawOrderEng = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +30,23 @@ const RefinedZincQCOWithdrawOrderEng = () => {
   );
 };
 
-export default RefinedZincQCOWithdrawOrderEng;
+export default NickelPowderQCOWithdrawOrderEng;
 
 const MetaTags = () => {
   const title =
-    "Refined Zinc (Quality Control) Order 2025 Withdrawn: No Mandatory BIS";
-  const ogTitle =
-    "Government Cancels Refined Zinc BIS Certification Order 2025";
-  const twitterTitle =
-    "Government Cancels Refined Zinc BIS Certification Order 2025";
+    "Nickel (Quality Control) Order 2025 Withdrawn: No Mandatory BIS Certificate Required";
+  const ogTitle = "Government Cancels Nickel BIS Certification Order 2025";
+  const twitterTitle = "Government Cancels Nickel BIS Certification Order 2025";
   const metaDescription =
-    "The Government of India has withdrawn the Refined Zinc (Quality Control) Order, 2025, removing the BIS certification requirement under IS 209:2024. Know the reasons and industry impact.";
+    "The Government of India has withdrawn the Nickel (Quality Control) Order, 2025, removing the BIS certification requirement under IS 7506:1987. Know the reasons and industry impact.";
   const ogDescription =
-    "India has officially rescinded the Refined Zinc QCO 2025, eliminating the mandatory BIS certification under IS 209:2024. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
+    "India has officially rescinded the Nickel QCO 2025, eliminating the mandatory BIS certification under IS 7506:1987. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
   const twitterDescription =
-    "India has officially rescinded the Refined Zinc QCO 2025, eliminating the mandatory BIS certification under IS 209:2024. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
+    "India has officially rescinded the Nickel QCO 2025, eliminating the mandatory BIS certification under IS 7506:1987. Learn why the order was withdrawn and what this means for manufacturers, importers, and downstream industries.";
   const metaKeywords =
-    "Refined Zinc QCO, Refined Zinc BIS certification, IS 209:2024, BIS update, Zinc Industry India";
+    "Nickel QCO, Nickel BIS certification, IS 7506:1987, BIS update, Nickel Industry India";
   const websiteUrl =
-    "https://bis-certifications.com/ministry-updates/refined-zinc-qco-withdraw-order";
+    "https://bis-certifications.com/ministry-updates/nickel-qco-withdraw-order";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -103,8 +101,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Refined Zinc (Quality Control) Order 2025 Withdrawn: No
-                    Mandatory BIS
+                    Nickel (Quality Control) Order 2025 Withdrawn: No Mandatory
+                    BIS Certificate Required
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -136,66 +134,42 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Withdrawn QCO for Refined Zinc IS 209:2024
+          Withdrawn QCO for Nickel Powder IS 7506:1987
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/ministryUpdatesBlogsImages/WithdrawQCOforRefinedZinc.webp"
-            title="Withdraw QCO for Refined Zinc"
-            alt="Govt. Withdraw QCO for Refined Zinc under IS 209:2024"
+            src="/ministryUpdatesBlogsImages/NickelPowderQCOWithdraw.webp"
+            title="Withdraw QCO for Nickel Powder"
+            alt="Govt. Withdraw QCO for Nickel Powder under IS 7506:1987"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Government of India has officially withdrawn the &quot;Refined
-          Zinc (Quality Control) Order, 2025&quot; even before it came into
-          force. Through notification S.O. 5169(E), the Ministry has rescinded
-          the earlier order S.O. 1768(E) dated 17th April 2025, which had
-          mandated compulsory BIS certification for refined zinc under Indian
-          Standard IS 209:2024.
+          The Government of India has officially withdrawn the &quot;Nickel
+          Powder (Quality Control) Order, 2025&quot; even before it came into
+          force. Through notification S.O. 5166(E), the Ministry has rescinded
+          the earlier order S.O. 3848(E) dated 31st August 2023, which had
+          mandated compulsory BIS certification for nickel under Indian Standard
+          IS 7506:1987.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           This decision, taken under the powers granted by the BIS Act, 2016,
           comes after consultation with the Bureau of Indian Standards and has
           been made in the public interest. For industries relying heavily on
-          zinc, this withdrawal brings relief, clarity, and stability.
+          nickel, this withdrawal brings relief, clarity, and stability.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The original QCO stated that Refined Zinc could not be manufactured,
-          sold, stored, distributed, or imported in India without mandatory BIS
-          certification as per IS 209:2024 (Refined Zinc – Specification).
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The QCO was scheduled to come into force on 17.04.2025.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">This meant:</p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            All manufacturers had to obtain a BIS licence for refined zinc.
-          </li>
-          <li>Import of non-BIS certified zinc would have been restricted.</li>
-          <li>
-            Compliance audits and product testing would have become mandatory.
-          </li>
-          <li>
-            Only IS 209:2024–compliant material could legally enter the market.
-          </li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          However, before the enforcement date arrived, the government reviewed
-          the situation and decided to rescind the order completely.
+          The original QCO stated that Nickel could not be manufactured, sold,
+          stored, distributed, or imported in India without mandatory BIS
+          certification as per IS 7506:1987.
         </p>
 
         {/* Separator Line */}
@@ -236,20 +210,10 @@ const MainContentLeft = () => {
           </p>
 
           <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            3. Market Stability Concerns
+            3. Re-evaluation of Standards and Policy Direction
           </h3>
           <p className="text-gray-600 text-base font-geist mb-4">
-            Zinc is widely used in galvanizing, automotive components,
-            infrastructure, railways, and electrical applications. Any
-            disruption could influence production and pricing in multiple
-            downstream industries.
-          </p>
-
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-            4. Re-evaluation of Standards and Policy Direction
-          </h3>
-          <p className="text-gray-600 text-base font-geist mb-4">
-            The government might be reviewing IS 209:2024 or planning a revised
+            The government might be reviewing IS 7506:1987 or planning a revised
             QCO with updated timelines or conditions.
           </p>
         </div>
@@ -262,19 +226,16 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          With the withdrawal of the Refined Zinc QCO, the immediate effects
-          are:
+          With the withdrawal of the Nickel QCO, the immediate effects are:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS certification under IS 209:2024 is no longer mandatory.</li>
+          <li>BIS certification under IS 7506:1987 is no longer mandatory.</li>
           <li>
             Manufacturers can continue regular production without the new
             compliance requirement.
           </li>
-          <li>
-            Importers can source refined zinc globally without BIS approval.
-          </li>
+          <li>Importers can source Nickel globally without BIS approval.</li>
           <li>No penalties or restrictions apply under the withdrawn QCO.</li>
           <li>
             Supply chains will continue without disruption or added regulatory
@@ -292,52 +253,27 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Impact on Downstream Sectors
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Industries that depend heavily on zinc—such as:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>steel galvanization</li>
-          <li>infrastructure and construction</li>
-          <li>transportation and rail components</li>
-          <li>electronics and electrical manufacturing</li>
-          <li>consumer goods</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          will experience stable availability and pricing. The decision avoids
-          potential bottlenecks that could have affected production schedules or
-          raised costs.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The withdrawal of the Refined Zinc (Quality Control) Order, 2025
-          before its enforcement date reflects the government&apos;s practical
-          and flexible approach toward industry needs. Although quality
-          improvement remains an important national priority, regulatory
-          measures must balance compliance with market realities.
+          The withdrawal of the Nickel (Quality Control) Order, 2025 before its
+          enforcement date reflects the government&apos;s practical and flexible
+          approach toward industry needs. Although quality improvement remains
+          an important national priority, regulatory measures must balance
+          compliance with market realities.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           For now, the metals industry can operate without the pressure of
-          mandatory BIS licensing for refined zinc. However, businesses should
+          mandatory BIS licensing for nickel. However, businesses should
           continue to monitor future notifications, as the government may
           revisit the QCO at a later stage with revised timelines or updated
           standards.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          If your business deals with refined zinc—whether in manufacturing,
+          If your business deals with nickel—whether in manufacturing,
           processing, or importing—this update is significant and worth keeping
           on your radar.
         </p>
@@ -348,8 +284,8 @@ const MainContentLeft = () => {
       {/* PDF Viewer Section */}
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
-          src="/pdf/sun-certification-refined-zinc-withdraw-order.pdf"
-          title="Refined Zinc QCO Withdrawal Order PDF"
+          src="/pdf/sun-certification-withdrawal-qco-for-nickel-powder.pdf"
+          title="Nickel Powder QCO Withdrawal Order PDF"
           className="w-full h-[800px] bg-white"
           style={{
             boxShadow:
