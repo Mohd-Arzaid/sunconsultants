@@ -284,7 +284,7 @@ const MainContentLeft = () => {
       {/* PDF Viewer Section */}
       <div className="mt-8 rounded-xl overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <iframe
-          src="/pdf/sun-certification-withdrwal-qco-for-nickel-powder.pdf"
+          src="/pdf/sun-certification-withdarwal-qco-for-nickel-powder.pdf"
           title="Nickel Powder QCO Withdrawal Order PDF"
           className="w-full h-[800px] bg-white"
           style={{
