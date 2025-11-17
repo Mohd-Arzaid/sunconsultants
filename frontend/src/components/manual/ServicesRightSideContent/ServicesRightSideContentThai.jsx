@@ -65,6 +65,16 @@ const ServicesRightSideContentThai = () => {
     "/kan-rap-rong-bis-phaen-x-samrab-ngan-satharana-lae-uppakon-kai",
     // Pumps and Liquid Elevators Thai Page URL
     "/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam",
+    // Rotary Electrical Machines Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-fai-fa-kai",
+    // Rubber and Plastics Machinery Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-khrueang-yang-yu-lae-plastik",
+    // Switchgear and Controlgear Equipment Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-sut-1000-volt",
+    // Switchgear and Controlgear Equipment Above 1000 Volts Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-kwa-1000-volt",
+    // Transformers Thai Page URL
+    "/kan-rap-rong-bis-phaen-x-samrab-transformer",
   ];
 
   // Check if current path should show these components
@@ -650,6 +660,26 @@ const ContactFormServicesRightSideContentThai = () => {
       path.includes("/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam")
     )
       return "Pumps and Liquid Elevators - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-fai-fa-kai")
+    )
+      return "Rotary Electrical Machines - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-yang-yu-lae-plastik")
+    )
+      return "Rubber and Plastics Machinery - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-sut-1000-volt")
+    )
+      return "Switchgear and Controlgear Equipment - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-kwa-1000-volt")
+    )
+      return "Switchgear and Controlgear Equipment Above 1000 Volts - Thai Page";
+    if (
+      path.includes("/kan-rap-rong-bis-phaen-x-samrab-transformer")
+    )
+      return "Transformers - Thai Page";
   };
 
   const [formData, setFormData] = useState({
