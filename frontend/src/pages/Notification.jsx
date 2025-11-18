@@ -12,7 +12,6 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { notifications } from "../data/notificationsData.js";
-import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import { getNotificationDetailUrl } from "@/utils/urlUtils";
 import AboutContact from "@/components/manual/about/AboutContact";
@@ -26,126 +25,10 @@ import {
 } from "@/components/ui/breadcrumb.jsx";
 
 const Notification = () => {
-  const baseUrl = "https://bis-certifications.com";
-  const currentUrl = `${baseUrl}/bis-qco-updates`;
-
   return (
     <div className="relative">
-      <Helmet>
-        <title>
-          Latest BIS Notifications & QCO Updates - Sun Certifications
-        </title>
-        <meta
-          name="description"
-          content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements."
-        />
-
-        {/* Canonical URL */}
-        <link rel="canonical" href={currentUrl} />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Latest BIS Notifications & QCO Updates - Sun Certifications"
-        />
-        <meta
-          property="og:description"
-          content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements."
-        />
-        <meta property="og:url" content={currentUrl} />
-        <meta property="og:site_name" content="Sun Certifications India" />
-        <meta
-          property="og:image"
-          content={`${baseUrl}/images/bis-certification-banner.jpg`}
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Latest BIS Notifications & QCO Updates - Sun Certifications"
-        />
-        <meta
-          name="twitter:description"
-          content="Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements."
-        />
-        <meta
-          name="twitter:image"
-          content={`${baseUrl}/images/bis-certification-banner.jpg`}
-        />
-
-        {/* Additional SEO */}
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-
-        {/* JSON-LD Structured Data */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "CollectionPage",
-              "headline": "Latest BIS Notifications & QCO Updates",
-              "description": "Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements.",
-              "url": "${currentUrl}",
-              "image": "${baseUrl}/images/bis-certification-banner.jpg",
-              "publisher": {
-                "@type": "Organization",
-                "name": "Sun Certifications India",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "${baseUrl}/images/logo.png"
-                }
-              }
-            }
-          `}
-        </script>
-
-        {/* JSON-LD Breadcrumb structured data for SEO */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "DRAFT QCO Notifications",
-                item: "https://bis-certifications.com/bis-qco-updates",
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
-
-      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
-        <div className="max-w-[80rem] mx-auto px-4">
-          <div className="w-fit font-inter">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator>
-                  <SlashIcon />
-                </BreadcrumbSeparator>
-                <BreadcrumbItem>
-                  <BreadcrumbPage>DRAFT QCO Notifications</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-          </div>
-        </div>
-      </div>
-
+      <MetaTags />
+      <BreadcrumbContent />
       <NotificationMainContent />
       <AboutContact />
       <Footer />
@@ -154,6 +37,84 @@ const Notification = () => {
 };
 
 export default Notification;
+
+const MetaTags = () => {
+  const currentUrl = "https://bis-certifications.com/bis-qco-updates";
+  const baseUrl = "https://bis-certifications.com";
+
+  const title = "Latest BIS Notifications & QCO Updates - Sun Certifications";
+  const description =
+    "Stay informed with the latest BIS notifications and updates. Get real-time alerts on Quality Control Orders (QCOs), standards, and key announcements.";
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: baseUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "QCO Notifications",
+        item: currentUrl,
+      },
+    ],
+  };
+
+  return (
+    <Helmet>
+      {/* Basic SEO */}
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <link rel="canonical" href={currentUrl} />
+
+      {/* Open Graph */}
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+
+      {/* Breadcrumb Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbData)}
+      </script>
+    </Helmet>
+  );
+};
+
+const BreadcrumbContent = () => {
+  return (
+    <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+      <div className="max-w-[80rem] mx-auto px-4">
+        <div className="w-full overflow-x-auto scrollbar-hide font-inter">
+          <div className="w-fit min-w-full">
+            <Breadcrumb>
+              <BreadcrumbList className="flex-nowrap">
+                <BreadcrumbItem className="flex-shrink-0">
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+
+                <BreadcrumbSeparator className="flex-shrink-0">
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+
+                <BreadcrumbItem className="flex-shrink-0">
+                  <BreadcrumbPage className="whitespace-nowrap">
+                    DRAFT QCO Notifications
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const NotificationMainContent = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -339,12 +300,6 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   );
 };
 
-NotificationCard.propTypes = {
-  searchQuery: PropTypes.string.isRequired,
-  currentPage: PropTypes.number.isRequired,
-  itemsPerPage: PropTypes.number.isRequired,
-};
-
 const NotificationCardItem = ({
   color,
   tagType,
@@ -439,15 +394,6 @@ const NotificationCardItem = ({
   );
 };
 
-NotificationCardItem.propTypes = {
-  color: PropTypes.string.isRequired,
-  tagType: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  pdfUrl: PropTypes.string.isRequired,
-};
-
 const Pagination = ({
   currentPage,
   setCurrentPage,
@@ -502,7 +448,7 @@ const Pagination = ({
     if (pageNumber >= 1 && pageNumber <= totalPages) {
       setCurrentPage(pageNumber);
       // Scroll to top when page changes
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -534,7 +480,7 @@ const Pagination = ({
     if (startPage > 1) {
       pages.push(1);
       if (startPage > 2) {
-        pages.push('...');
+        pages.push("...");
       }
     }
 
@@ -546,7 +492,7 @@ const Pagination = ({
     // Add ellipsis and last page if needed
     if (endPage < totalPages) {
       if (endPage < totalPages - 1) {
-        pages.push('...');
+        pages.push("...");
       }
       pages.push(totalPages);
     }
@@ -572,7 +518,7 @@ const Pagination = ({
 
         {/* Page Numbers */}
         {pageNumbers.map((pageNum, index) => {
-          if (pageNum === '...') {
+          if (pageNum === "...") {
             return (
               <span
                 key={`ellipsis-${index}`}
@@ -587,10 +533,11 @@ const Pagination = ({
             <button
               key={pageNum}
               onClick={() => handlePageChange(pageNum)}
-              className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${currentPage === pageNum
-                ? "bg-[#1A8781] text-white"
-                : "text-gray-700 hover:bg-gray-200"
-                }`}
+              className={`h-10 w-10 rounded-full flex items-center justify-center font-geist font-medium transition-all ${
+                currentPage === pageNum
+                  ? "bg-[#1A8781] text-white"
+                  : "text-gray-700 hover:bg-gray-200"
+              }`}
               aria-label={`Page ${pageNum}`}
               aria-current={currentPage === pageNum ? "page" : undefined}
             >
@@ -618,11 +565,4 @@ const Pagination = ({
       </div>
     </div>
   );
-};
-
-Pagination.propTypes = {
-  currentPage: PropTypes.number.isRequired,
-  setCurrentPage: PropTypes.func.isRequired,
-  itemsPerPage: PropTypes.number.isRequired,
-  searchQuery: PropTypes.string,
 };

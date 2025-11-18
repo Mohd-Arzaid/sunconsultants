@@ -8,7 +8,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     fallbackLng: "en",
     supportedLngs: [
       "de", // German
@@ -22,7 +22,7 @@ i18n
       "nl", // Dutch
       "th", // Thai
       "vi", // Vietnamese
-   // "ar", // arabic
+      // "ar", // arabic
     ],
     detection: {
       order: ["path"],

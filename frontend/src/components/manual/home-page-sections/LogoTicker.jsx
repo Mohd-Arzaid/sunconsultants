@@ -19,7 +19,6 @@ const LogoTicker = ({
   function addAnimation() {
     // React-friendly duplication approach - same as VideoSection
     const duplicated = [...COMPANY_LOGOS, ...COMPANY_LOGOS, ...COMPANY_LOGOS];
-    console.log("Total logos after duplication:", duplicated.length);
     setDuplicatedLogos(duplicated);
 
     if (containerRef.current) {
@@ -29,7 +28,6 @@ const LogoTicker = ({
       // Small delay to ensure DOM is ready
       setTimeout(() => {
         setStart(true);
-        console.log("Logo animation started!");
       }, 100);
     }
   }

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -142,6 +143,9 @@ const ContactFormPopup = ({ open, setOpen }) => {
           <DialogTitle className="text-[28px] font-geist font-bold text-[#1E1E1E] text-center">
             Contact US
           </DialogTitle>
+          <DialogDescription className="sr-only">
+            Contact form to get in touch with our team for assistance
+          </DialogDescription>
           <div className="flex w-full items-center justify-center gap-2 md:gap-3 mt-2">
             <Separator className="hidden md:block w-[70px] h-[2px] bg-[#008080]" />
             <span className="uppercase font-poppins font-semibold text-[14px] md:text-[16px] text-[#008080] text-center">

@@ -97,7 +97,6 @@ const AuditsMarquee = () => {
       // Small delay to ensure DOM is ready
       setTimeout(() => {
         setStart(true);
-        console.log("Audit animation started!");
       }, 100);
     }
   }
@@ -158,7 +157,7 @@ const AuditsMarquee = () => {
                     height={300}
                     loading="lazy"
                     decoding="async"
-                    fetchPriority="low"
+                    fetchpriority="low"
                   />
                 </div>
                 {/* Country Name Overlay - Always Visible */}

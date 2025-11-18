@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Navbar from "./common/Navbar";
 import TopBar from "./common/TopBar";
 import MobileNav from "./components/common/MobileNav";
@@ -19,7 +19,6 @@ import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import Notification from "./pages/Notification";
 import NotificationDetail from "./pages/NotificationDetail";
-import MinistryUpdates from "./pages/MinistryUpdates";
 import InternationalAudits from "./pages/InternationalAudits";
 import Exhibition from "./pages/Exhibition";
 import Sitemap from "./pages/Sitemap";

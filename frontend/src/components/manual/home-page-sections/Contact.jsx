@@ -227,7 +227,7 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             height={539}
             loading="lazy"
             decoding="async"
-            fetchPriority="low"
+            fetchpriority="low"
           />
 
           <img
@@ -239,7 +239,7 @@ text-[#595959]   text-[17px]     md:text-[20px]    font-poppins  font-semibold  
             height={350}
             loading="lazy"
             decoding="async"
-            fetchPriority="low"
+            fetchpriority="low"
           />
         </div>
       </div>

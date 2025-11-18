@@ -26,7 +26,6 @@ const VideoSection = ({ onVideoPopupChange }) => {
       // Small delay to ensure DOM is ready
       setTimeout(() => {
         setStart(true);
-        console.log("Animation started!");
       }, 100);
     }
   }, []);
