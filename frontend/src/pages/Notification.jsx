@@ -29,7 +29,7 @@ const Notification = () => {
     <div className="relative">
       <MetaTags />
       <BreadcrumbContent />
-      <NotificationContent />
+      <NotificationMainContent />
       <AboutContact />
       <Footer />
     </div>
@@ -116,7 +116,7 @@ const BreadcrumbContent = () => {
   );
 };
 
-const NotificationContent = () => {
+const NotificationMainContent = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
@@ -125,6 +125,7 @@ const NotificationContent = () => {
     setSearchQuery(e.target.value.toLowerCase());
     setCurrentPage(1); // Reset to first page on new search
   };
+
   return (
     <div className=" bg-[#f9f7f2]">
       <div className=" max-w-[88rem] mx-auto px-4 py-12 md:px-12 md:py-12">
@@ -164,9 +165,20 @@ const NotificationContent = () => {
           itemsPerPage={itemsPerPage}
         />
       </div>
+
+      <div className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 flex items-center justify-center">
+        {/* Pagination */}
+        <Pagination
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          itemsPerPage={itemsPerPage}
+          searchQuery={searchQuery}
+        />
+      </div>
     </div>
   );
 };
+
 const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   // Function to parse date string into Date object
   const parseDate = (dateString) => {
