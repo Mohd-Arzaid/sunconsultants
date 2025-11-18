@@ -290,7 +290,7 @@ const YouTubeFacade = ({
             loading="lazy"
             decoding="async"
             onError={handleImageError}
-            fetchPriority="low"
+            fetchpriority="low"
           />
 
           {/* Dark overlay on hover */}

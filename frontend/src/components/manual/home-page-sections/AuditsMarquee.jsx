@@ -157,7 +157,7 @@ const AuditsMarquee = () => {
                     height={300}
                     loading="lazy"
                     decoding="async"
-                    fetchPriority="low"
+                    fetchpriority="low"
                   />
                 </div>
                 {/* Country Name Overlay - Always Visible */}

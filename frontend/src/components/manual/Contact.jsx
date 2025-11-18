@@ -235,7 +235,7 @@ const Contact = () => {
             height={539}
             loading="lazy"
             decoding="async"
-            fetchPriority="low"
+            fetchpriority="low"
           />
 
           <img
@@ -247,7 +247,7 @@ const Contact = () => {
             height={350}
             loading="lazy"
             decoding="async"
-            fetchPriority="low"
+            fetchpriority="low"
           />
         </div>
       </div>
