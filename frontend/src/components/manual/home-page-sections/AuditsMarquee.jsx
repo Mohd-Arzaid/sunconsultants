@@ -97,7 +97,6 @@ const AuditsMarquee = () => {
       // Small delay to ensure DOM is ready
       setTimeout(() => {
         setStart(true);
-        console.log("Audit animation started!");
       }, 100);
     }
   }
