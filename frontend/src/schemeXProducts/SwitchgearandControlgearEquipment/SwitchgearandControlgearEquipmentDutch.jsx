@@ -23,12 +23,12 @@ import {
   const LMPC = "/services-images/LMPC.jpg";
   const ISIMarkImage = "/services-images/ISIMark.jpg";
   
-  const PumpsAndLiquidElevatorsDutch = () => {
+  const SwitchgearandControlgearEquipmentDutch = () => {
     return (
       <div className="relative w-full">
-        <PumpsAndLiquidElevatorsMetaTags />
-        <PumpsAndLiquidElevatorsBreadcrumb />
-        <PumpsAndLiquidElevatorsMainContent />
+        <SwitchgearandControlgearEquipmentMetaTags />
+        <SwitchgearandControlgearEquipmentBreadcrumb />
+        <SwitchgearandControlgearEquipmentMainContent />
         <Services />
         <VideoSection />
         <FooterDutch />
@@ -36,21 +36,23 @@ import {
     );
   };
   
-  export default PumpsAndLiquidElevatorsDutch;
+  export default SwitchgearandControlgearEquipmentDutch;
   
-  const PumpsAndLiquidElevatorsMetaTags = () => {
-    const title = "BIS Schema X Certificering voor Pompen en Vloeistofelevators";
+  const SwitchgearandControlgearEquipmentMetaTags = () => {
+    const title =
+      "BIS Schema X Certificering voor Schakel- en Besturingsapparatuur tot 1000 Volt";
     const description =
-      "BIS Schema X Certificering voor pompen en vloeistofelevators onder de Omnibus Technische Regeling 2024 vereist dat alle soorten pompen en vloeistofelevators moeten voldoen aan Schema X Certificering vóór september 2026";
+      "BIS Schema X Certificering voor schakel- en besturingsapparatuur tot 1000V en hun samenstellingen, sub-assemblages en componenten, is verplicht om kwaliteit en veiligheid in India te waarborgen";
     const keywords =
-      "BIS Certificering voor Pompen, BIS Schema X Certificering voor Pompen, Schema X Certificering voor Pompen, BIS voor Pompen, BIS Certificering voor Pompen en Vloeistofelevators, OTR voor Pompen";
+      "BIS Certificering voor Schakel- en Besturingsapparatuur, BIS Schema X Certificering voor Schakel- en Besturingsapparatuur, Schema X Certificering voor Schakel- en Besturingsapparatuur, BIS voor Schakel- en Besturingsapparatuur, OTR voor Schakel- en Besturingsapparatuur";
     const canonicalUrl = window.location.href;
     const author = "Sun Certifications India";
-    const publisher = "Dhruv Aggarwal, Hoofd Operations bij Sun Certification India";
+    const publisher =
+      "Dhruv Aggarwal, Hoofd Operations bij Sun Certification India";
     const ogTitle =
-      "BIS Schema X Certificering voor Pompen en Vloeistofelevators in India | Volledige Gids";
+      "BIS Schema X Certificering voor Schakel- en Besturingsapparatuur tot 1000 Volt in India | Volledige Gids";
     const ogDescription =
-      "Leer alles over BIS Schema X Certificering voor Pompen en Vloeistofelevators in India. Begrijp OTR 2024 naleving, BIS Licentie proces, ISI markering vereisten en hoe u gecertificeerd kunt worden vóór de deadline van september 2026";
+      "Leer alles over BIS Schema X Certificering voor schakel- en besturingsapparatuur tot 1000V in India. Begrijp OTR 2024 naleving, BIS Licentie proces, ISI markering vereisten, en hoe u gecertificeerd kunt worden vóór de deadline van september 2026";
   
     return (
       <Helmet>
@@ -67,78 +69,11 @@ import {
         <meta name="twitter:title" content={ogTitle} />
         <meta name="twitter:description" content={ogDescription} />
         <link rel="canonical" href={canonicalUrl} />
-  
-        {/* HrefLang Tags */}
-        <link
-          rel="alternate"
-          hrefLang="en"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
-        />
-        <link
-          rel="alternate"
-          hrefLang="de"
-          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege"
-        />
-        <link
-          rel="alternate"
-          hrefLang="es"
-          href="https://bis-certifications.com/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"
-        />
-        <link
-          rel="alternate"
-          hrefLang="fr"
-          href="https://bis-certifications.com/certification-bis-schema-x-pour-pompes-et-elevateurs-de-liquides"
-        />
-        <link
-          rel="alternate"
-          hrefLang="id"
-          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-pompa-dan-elevator-cairan"
-        />
-        <link
-          rel="alternate"
-          hrefLang="it"
-          href="https://bis-certifications.com/certificazione-bis-schema-x-per-pompe-e-elevatori-di-liquidi"
-        />
-        <link
-          rel="alternate"
-          hrefLang="ja"
-          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"
-        />
-        <link
-          rel="alternate"
-          hrefLang="ko"
-          href="https://bis-certifications.com/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
-        />
-        <link
-          rel="alternate"
-          hrefLang="nl"
-          href="https://bis-certifications.com/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
-        />
-        <link
-          rel="alternate"
-          hrefLang="th"
-          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam"
-        />
-        <link
-          rel="alternate"
-          hrefLang="vi"
-          href="https://bis-certifications.com/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"
-        />
-        <link
-          rel="alternate"
-          hrefLang="ar"
-          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
-        />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://bis-certifications.com/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
-        />
       </Helmet>
     );
   };
   
-  const PumpsAndLiquidElevatorsBreadcrumb = () => {
+  const SwitchgearandControlgearEquipmentBreadcrumb = () => {
     return (
       <div className="absolute md:top-5 top-3 left-0 w-full z-30">
         <div className="max-w-[80rem] mx-auto px-4">
@@ -166,7 +101,8 @@ import {
   
                   <BreadcrumbItem className="flex-shrink-0">
                     <BreadcrumbPage className="whitespace-nowrap">
-                      BIS Schema X Certificering voor Pompen en Vloeistofelevators
+                      BIS Certificering voor Schakel- en Besturingsapparatuur tot 1000
+                      Volt
                     </BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
@@ -178,12 +114,12 @@ import {
     );
   };
   
-  const PumpsAndLiquidElevatorsMainContent = () => {
+  const SwitchgearandControlgearEquipmentMainContent = () => {
     return (
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side Content */}
-          <PumpsAndLiquidElevatorsPageMainContentLeft />
+          <SwitchgearandControlgearEquipmentMainContentLeft />
   
           {/* Right Side Content */}
           <ServicesRightSideContentDutch />
@@ -192,146 +128,139 @@ import {
     );
   };
   
-  const PumpsAndLiquidElevatorsPageMainContentLeft = () => {
+  const SwitchgearandControlgearEquipmentMainContentLeft = () => {
     return (
       <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
         {/* Blog Content */}
         <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           {/* Main Heading */}
           <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-            BIS Schema X Certificering voor Pompen en Vloeistofelevators in India
+            BIS Certificering voor Schakel- en Besturingsapparatuur tot 1000 Volt
           </h1>
   
-          {/* BIS License for Pumps Image */}
-          <div className="flex justify-center mb-6">
+          {/* Main Image */}
+          <div className="mb-6">
             <img
-              src="/schemXproductImages/BIS-Scheme-X-License-For-Pumps.png"
-              alt="BIS Licentie voor Pompen en Vloeistofelevators"
-              className="max-w-full h-auto rounded-lg shadow-md"
+              src="/schemXproductImages/BIS-license-for-switch-gear-and-control-gear-equipment.png"
+              alt="BIS Schema X Certificering voor Schakel- en Besturingsapparatuur tot 1000 Volt"
+              title="BIS Schema X Licentie voor Schakel- en Besturingsapparatuur"
+              className="w-full h-auto rounded-lg shadow-md"
             />
           </div>
   
           {/* Introduction Paragraph 1 */}
           <p className="text-gray-600 text-base font-geist mb-4">
-            De snelle groei van industrie en infrastructuur in India vereist meer
-            operationele machines en zorgt voor tevredenheid met binnenlandse en
-            internationale vraag. Pompen en vloeistofelevators zijn cruciaal voor
-            waterbronnen, landbouw, constructie, energie, industrie en vele andere
-            sectoren. Defecte apparatuur kan de veiligheid in gevaar brengen,
-            operaties verstoren en financiële verliezen veroorzaken als ze niet
-            worden geproduceerd volgens de juiste specificaties met bestaande
-            kwaliteitscontroles.
+            In dit tijdperk van automatisering en elektrificatie zijn schakel- en
+            besturingsapparatuur integrale componenten van veilige en effectieve
+            elektrische systemen. Van huishoudelijke bedrading tot geavanceerde
+            industriële systemen beheren deze apparaten bescherming, controle en
+            isolatie van stroomstromen. Vanwege de cruciale positie die deze
+            apparaten innemen, heeft het Bureau of Indian Standards (BIS) verplichte
+            certificering voor deze apparaten vastgesteld onder Schema X om ervoor
+            te zorgen dat ze voldoen aan de veiligheids- en prestatiebenchmarks die
+            in India zijn vastgesteld.
           </p>
   
           {/* Introduction Paragraph 2 */}
           <p className="text-gray-600 text-base font-geist mb-4">
-            Om dit te beheersen, heeft BIS (Bureau of Indian Standards) Schema X
-            certificering gelanceerd, die vereist dat elke pomp en vloeistofelevator
-            voldoet aan nationale kwaliteitsnormen voordat ze in India worden verkocht.
+            Het Ministerie van Zware Industrie, onder de Omnibus Technische Regeling,
+            2024, heeft verplichte BIS certificering ingesteld voor alle schakel- en
+            besturingsapparatuur (≤ 1000V) die wordt verkocht, geïmporteerd en
+            geproduceerd in India vanaf 1 september 2026. Om niet-conforme en
+            onveilige elektrische apparatuur aan te pakken, en om de productstandaarden
+            die op de markt worden aangeboden te verbeteren, heeft BIS, onder Schema X
+            Certificering, verplichte certificering gemaakt voor deze apparaten die
+            werken op of onder 1000 volt.
           </p>
   
           {/* Introduction Paragraph 3 */}
           <p className="text-gray-600 text-base font-geist mb-6">
-            In dit artikel willen we het belang van BIS Certificering voor Pompen
-            bespreken, het belang van de Omnibus Technische Regeling (OTR) 2024, en
-            het proces om een BIS Licentie voor Pompen onder Schema X te verkrijgen
-            voor aspirant-fabrikanten.
-          </p>
-  
-          {/* Why Pumps and Elevators Matter Section */}
-          <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            Waarom Pompen en Vloeistofelevators Belangrijk Zijn
-          </div>
-  
-          {/* Pumps Subsection */}
-          <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-            Pompen
-          </div>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Pompen zijn onmisbare apparaten voor het verplaatsen van vloeistoffen
-            of modder door verschillende industrieën. Ze worden veel gebruikt in:
-          </p>
-  
-          {/* Pumps Usage Areas */}
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-            <li>Landbouwsystemen en irrigatie</li>
-            <li>Openbare watervoorziening en huishoudelijk gebruik</li>
-            <li>Afvalwater- en effluentzuiveringsstations</li>
-            <li>Olie- en gaspijpleidingen</li>
-            <li>AC- en industriële koelsystemen</li>
-          </ul>
-  
-          {/* Liquid Elevators Subsection */}
-          <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-            Vloeistofelevators
-          </div>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Hefpompen, verticale vloeistofelevators voor het heffen van vloeistoffen
-            functioneren voor pompen:
-          </p>
-  
-          {/* Liquid Elevators Usage Areas */}
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-            <li>Waterdistributiesystemen met hoge pompmassa</li>
-            <li>Industriële silo's/opslagtanks</li>
-            <li>In energie-, chemische en procesindustrieën</li>
-          </ul>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Omdat ze algemeen zijn, kunnen goedkope pompen of vloeistofelevators
-            leiden tot:
-          </p>
-  
-          {/* Problems with Poor Quality Equipment */}
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-            <li>Mechanische storingen</li>
-            <li>Elektrische gevaren</li>
-            <li>Lekkages en corrosie</li>
-            <li>
-              Ongevallen veroorzaakt door veiligheidsrisico's en economische verliezen
-            </li>
-          </ul>
-  
-          <p className="text-gray-600 text-base font-geist mb-6">
-            Daarom is BIS voor Pompen en Vloeistofelevators een essentiële bescherming
-            voor zowel fabrikanten als kopers.
+            Deze blog beschrijft de certificeringsprocedures samen met hun voordelen,
+            reikwijdte, doel, ondersteunend bewijs en belangrijke documentatie, die
+            essentieel zijn voor Schema X certificering voor alle soorten schakel- en
+            besturingsapparatuur die werken (of) hun
+            samenstellingen/sub-assemblages/componenten die werken op spanningen niet
+            hoger dan 1000 volt.
           </p>
   
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
   
-          {/* What is BIS and What is Scheme X Section */}
+          {/* Why BIS is Important Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            Wat is BIS en wat is Schema X?
+            Belang van BIS voor Schakel- en Besturingsapparatuur
           </h2>
   
-          <p className="text-gray-600 text-base font-geist mb-6">
-            Bureau of Indian Standards (BIS) is de nationale standaardisatieorganisatie
-            van India voor het certificeren van productkwaliteit en veiligheid. Om
-            vitale installaties en machines te beheersen, heeft BIS het verkrijgen
-            van Schema X Certificering verplicht gesteld sinds 16 maart 2022 onder de
-            BIS Conformiteitsbeoordelingsregeling, 2018.
+          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
+            Schakel- en besturingsapparatuur tot 1000 volt is cruciaal in:
+          </h3>
+  
+          {/* Usage Areas */}
+          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+            <li>Huishoudelijke en commerciële elektrische distributie-installaties</li>
+            <li>Vermogensbeheersystemen voor industrie</li>
+            <li>Hernieuwbare energie faciliteiten (zonne-/windcentrales)</li>
+            <li>Openbare infrastructuurprojecten</li>
+            <li>
+              Kritieke veiligheidstoepassingen die circuitbescherming vereisen
+            </li>
+          </ul>
+  
+          <p className="text-gray-600 text-base font-geist mb-4">
+            Zonder juiste certificering omvatten risico's:
           </p>
   
-          {/* Scheme X Key Highlights */}
+          {/* Problems with Non-Certified Equipment */}
+          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+            <li>Risico op elektrische schokken of brand</li>
+            <li>Apparatuurschade en kostbare stilstandtijd</li>
+            <li>Overtreding van Indiase veiligheidsnormen</li>
+            <li>
+              Uitsluiting van aanbestedingen en projecten die gecertificeerde
+              apparatuur vereisen
+            </li>
+          </ul>
+  
+          <p className="text-gray-600 text-base font-geist mb-6">
+            Schema X Certificering voor Schakel- en Besturingsapparatuur zorgt
+            ervoor dat deze producten voldoen aan normen voor prestaties, veiligheid
+            en duurzaamheid.
+          </p>
+  
+          {/* Separator Line */}
+          <div className="h-px w-full bg-gray-300 my-6"></div>
+  
+          {/* What is BIS Scheme X Certification Section */}
+          <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+            Wat is BIS Schema X Certificaat voor Schakel- en Besturingsapparatuur?
+          </h2>
+  
+          <p className="text-gray-600 text-base font-geist mb-4">
+            BIS Schema X Certificering voor Schakel- en Besturingsapparatuur maakt
+            deel uit van de BIS Conformiteitsbeoordelingsregeling, 2018. Dit legt
+            verplichte producttesten, fabrieksinspecties en naleving van de geldende
+            Indiase normen op.
+          </p>
+  
           <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-            Belangrijkste Punten van Schema X Certificering voor Pompen
+            Schema X Certificering voor Schakel- en Besturingsapparatuur:
+            Belangrijkste kenmerken:
           </h3>
   
           <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-            <li>Verplicht voor Indiase en buitenlandse fabrikanten</li>
+            <li>Van toepassing op alle Indiase en buitenlandse fabrikanten</li>
             <li>
-              Van toepassing op pompen, motoren en vloeistofelevators die vallen onder
-              Indiase normen
+              Omvat verschillende apparaten: stroomonderbrekers, scheiders,
+              scheidingsschakelaars, zekeringcombinatie-eenheden en besturingsapparaten
+              tot 1000V.
             </li>
             <li>
-              Omvat laboratoriumtests, fabrieksinspecties, consistente nalevingsverificatie
+              Vereist laboratoriumtesten in door BIS erkende faciliteiten
             </li>
+            <li>Omvat audits van productie- en kwaliteitssystemen</li>
             <li>
-              Voegt juridische kracht toe om het gebruik van het BIS merkteken voor
-              Pompen door fabrikanten te verlenen als bewijs van certificering.
+              Geeft het recht om het Standaard Merkteken op producten te gebruiken na
+              certificering
             </li>
           </ul>
   
@@ -340,193 +269,125 @@ import {
   
           {/* OTR Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            Omnibus Technische Regeling (OTR) Voor Pompen
+            BIS OTR voor Schakel- en Besturingsapparatuur
           </h2>
   
           <p className="text-gray-600 text-base font-geist mb-4">
-            OTR 2024 is aangekondigd door het Ministerie van Zware Industrie, dat
-            voorschrijft dat alle pompen en vloeistofelevators moeten voldoen aan
-            Schema X Certificering.
+            OTR voor Schakel- en Besturingsapparatuur werd aangekondigd door het
+            Ministerie van Zware Industrie in 2024, wat Schema X certificering vereist.
           </p>
   
-          <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-            Deadline voor Naleving:
-          </div>
-  
           <p className="text-gray-600 text-base font-geist mb-6">
-            Uiterlijk op 1 september 2026 moeten alle fabrikanten en importeurs een
-            geldige BIS Licentie voor Pompen onder Schema X verkrijgen. Niet-naleving
-            kan leiden tot zware boetes, evenals stopzetting van verkoop en uitsluiting
-            van openbare aanbestedingen.
+            Deadline: Alle fabrikanten en importeurs zijn verplicht om een geldige BIS
+            Licentie voor Schakel- en Besturingsapparatuur onder Schema X te verkrijgen
+            op 1 september 2026. "Dit zal niet-gecertificeerde schakel- en
+            besturingsapparatuur stoppen van verkoop, import of productie in India,"
+            zei een overheidsfunctionaris.
           </p>
   
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
   
-          {/* Importance Section */}
+          {/* Advantages Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            Waarom is BIS certificering voor Pompen en Vloeistofelevators belangrijk?
+            Voordelen van BIS Certificering voor Schakel- en Besturingsapparatuur
           </h2>
   
-          <p className="text-gray-600 text-base font-geist mb-4">
-            1. Veiligheidsgarantie: Zorgt ervoor dat apparatuur is ontworpen en
-            gebouwd voor operationele nauwkeurigheid en veroorzaakt geen:
-          </p>
-  
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-            <li>Elektrische storingen</li>
-            <li>Lekkages en roest</li>
-            <li>Machineschade en storingen</li>
-          </ul>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            2. Marktvoordelen
-          </p>
-  
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
+          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
             <li>
-              BIS-gecertificeerde pompen zijn vaak vereist voor openbare projecten,
-              overheidsaanbestedingen, enz.
+              Elektrische Veiligheid: Beschermt tegen kortsluiting, overbelasting en
+              potentiële brandgevaren.
             </li>
             <li>
-              Biedt concurrentievoordeel ten opzichte van niet-gecertificeerde
-              producten.
+              Regelgevingsnaleving: Verplicht door OTR voor Schakel- en
+              Besturingsapparatuur.
+            </li>
+            <li>
+              Marktacceptatie: Geregistreerde producten zijn acceptabel voor alle
+              overheids- en particuliere projecten.
+            </li>
+            <li>
+              Klantvertrouwen: Het BIS Standaard Merkteken op Schakel- en
+              Besturingsapparatuur geeft klanten vertrouwen in kwaliteit en veiligheid.
+            </li>
+            <li>
+              Concurrentievoordeel: Verbetert merk reputatie en opent deuren voor
+              nieuwe zakelijke kansen.
             </li>
           </ul>
   
-          <p className="text-gray-600 text-base font-geist mb-4">
-            3. Klantvertrouwen: Het ISI merkteken op Pompen geeft kopers vertrouwen
-            over kwaliteit en garandeert productefficiëntie.
-          </p>
-  
-          <p className="text-gray-600 text-base font-geist mb-6">
-            4. Wereldwijde Merken Krijgen Gemakkelijke Markttoegang: Buitenlandse OEM's
-            krijgen gemakkelijke toegang tot de gereguleerde Indiase markt door te
-            voldoen aan Schema X normen.
-          </p>
-  
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
   
-          {/* Types of Pumps Section */}
+          {/* Process Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            Soorten Pompen Onder BIS Schema X Registratie
+            Proces van BIS Certificering voor Schakel- en Besturingsapparatuur
           </h2>
   
-          <p className="text-gray-600 text-base font-geist mb-4">
-            BIS Schema X bevat verschillende soorten pompen inclusief:
-          </p>
-  
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-            <li>Centrifugaalpompen</li>
-            <li>Onderwaterpompen</li>
-            <li>Boosterpompen</li>
-            <li>Meertrapspompen</li>
-            <li>Positieve verplaatsingspompen</li>
-            <li>Verticale turbinepompen</li>
-            <li>Chemische procespompen</li>
-            <li>Diafragmapompen</li>
-            <li>Modderpompen</li>
+          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+            <li>
+              Identificatie van Relevante Indiase Normen: Identificeer de IS-codes
+              gerelateerd aan schakel- en besturingsapparatuur tot 1000 volt.
+            </li>
+            <li>
+              Producttesten: Uitvoeren van veiligheids-, prestatie- en
+              duurzaamheidstests in door BIS goedgekeurde laboratoria.
+            </li>
+            <li>
+              Fabrieksaudit: BIS inspecteurs verifiëren fabrieken en
+              kwaliteitscontrolesystemen.
+            </li>
+            <li>
+              Documentatie Indienen: Alle gedetailleerde specificaties, testrapporten
+              en ondersteunende nalevingsbestanden.
+            </li>
+            <li>
+              Uitgifte van BIS Licentie: Indien geaccepteerd, verleent BIS een licentie
+              voor gebruik van het Standaard Merkteken.
+            </li>
+            <li>
+              Voortdurende Naleving: Audits van normen en producttesten op regelmatige
+              intervallen zorgen ervoor dat certificering geldig blijft.
+            </li>
           </ul>
   
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Elk type moet voldoen aan de relevante Indiase normen (IS-codes) zoals
-            IS 16819:2018/ISO 12100:2010 (Machineveiligheid - Algemene Principes voor
-            Ontwerp - Risicobeoordeling en Risicovermindering).
-          </p>
-  
-          <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-            Voor vloeistofelevators omvat certificering:
-          </div>
-  
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-            <li>Debiet en afvoerhoogte</li>
-            <li>Materiaalcompatibiliteit</li>
-            <li>Energie-efficiëntie</li>
-            <li>Operationele veiligheid</li>
-          </ul>
-  
-          {/* Separator Line */}
-          <div className="h-px w-full bg-gray-300 my-6"></div>
-  
-          {/* How to Get BIS Scheme X Section */}
-          <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            Hoe BIS Schema X voor Pompen te Verkrijgen?
-          </h2>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Identificatie van Toepasselijke Normen: De offerte moet de relevante
-            IS-codes specificeren (bijvoorbeeld IS 9079 voor onderwaterpompen).
-          </p>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Producttesten: Prestaties- en veiligheidstests zijn verplicht in door
-            BIS geaccepteerde laboratoria.
-          </p>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Fabrieksinspectie: BIS autoriteiten onderzoeken productielocaties om
-            de implementatie van kwaliteitscontroleprocedures te verifiëren.
-          </p>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Documentatie en Aanvraag: Technische specificaties, testrapporten en
-            kwaliteitshandleidingen moeten het BIS aanvraagformulier vergezellen.
-          </p>
-  
-          <p className="text-gray-600 text-base font-geist mb-4">
-            Uitgifte van BIS Certificaat voor Pompen: Fabrikanten ontvangen, na
-            goedkeuring, een licentie om het BIS merkteken onder Schema X toe te
-            passen.
-          </p>
-  
-          <p className="text-gray-600 text-base font-geist mb-6">
-            Voortdurende Toezicht: BIS voert routinematige audits en willekeurige
-            productinspecties uit om continue naleving te waarborgen.
-          </p>
-  
-          {/* Separator Line */}
-          <div className="h-px w-full bg-gray-300 my-6"></div>
-  
-          {/* Penalties Section */}
-          <div className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
             Sancties voor Niet-naleving
-          </div>
+          </h3>
   
           <p className="text-gray-600 text-base font-geist mb-4">
-            Fabrikanten die er niet in slagen BIS certificering te verkrijgen, op
-            1 september 2026, zullen worden onderworpen aan:
+            Niet-naleving van BIS Certificering voor Schakel- en Besturingsapparatuur
+            onder het OTR schema heeft de volgende gevolgen:
           </p>
   
           <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-            <li>Verbod op verkoop/import van niet-gecertificeerde pompen</li>
-            <li>Inbeslagname van goederen en boetes.</li>
-            <li>Diskwalificatie van overheidsorders en PSU's</li>
-            <li>Langdurige schade aan reputatie in India</li>
+            <li>
+              Verbod op productie, import of verkoop van niet-gecertificeerde producten
+            </li>
+            <li>Niet-conforme apparatuur wordt in beslag genomen; en boetes.</li>
+            <li>Diskwalificatie voor overheidsaanbestedingen</li>
+            <li>Schadelijk voor zakelijke relaties en vertrouwen op de markt.</li>
           </ul>
   
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
   
           {/* Conclusion Section */}
-          <p className="text-gray-600 text-base font-geist mb-4">
-            <span className="font-medium text-[#1e1e1e]">Conclusie:</span>{" "}
-            BIS Schema X Certificering voor Pompen en Vloeistofelevators met OTR
-            2024 zal worden geïmplementeerd; een mijlpaal in de standaardisatie
-            van de Indiase industrie.
-          </p>
+          <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+            Conclusie
+          </h2>
   
           <p className="text-gray-600 text-base font-geist mb-4">
-            Voor degenen die betrokken zijn bij productie, import of export, is
-            BIS registratie voor pompen niet alleen een wettelijke nalevingsproces
-            dat moet worden voltooid, maar ook een strategische beslissing om
-            veiligheid te laten domineren boven potentiële risico's, consumentenvertrouwen
-            op te bouwen en toegang te krijgen tot de uitgebreide Indiase markt.
+            Implementatie van BIS Schema X Certificering voor Schakel- en
+            Besturingsapparatuur in OTR 2024 is een stap om veilig, betrouwbaar en
+            efficiënt vermogensbeheer in India te waarborgen.
           </p>
   
           <p className="text-gray-600 text-base font-geist mb-6">
-            BIS Certificering voor Pompen en Vloeistofelevators is een langetermijninvestering
-            om de geloofwaardigheid en markt van uw producten op te bouwen.
+            Voor fabrikanten en importeurs, voor wie Schema X certificering van
+            Schakel- en Besturingsapparatuur niet alleen een wettelijke verplichting
+            is maar ook een strategische investering, zorgt dit voor markttoegang,
+            merk geloofwaardigheid en algemeen klantvertrouwen.
           </p>
   
           <ServiceAuthorDutch />

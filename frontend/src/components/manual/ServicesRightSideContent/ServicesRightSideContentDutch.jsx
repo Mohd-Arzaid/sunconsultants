@@ -49,6 +49,34 @@ const ServicesRightSideContentDutch = () => {
     "/bis-schema-x-certificering-voor-dieselgeneratoren",
     // Embroidery Machines Dutch Page URL
     "/bis-schema-x-certificering-voor-borduurmachines",
+    // Gears, Gearing and Transmission Elements Dutch Page URL
+    "/bis-schema-x-certificering-voor-tandwielen-overbrenging-en-transmissie-elementen",
+    // Heat Treatment Equipment Dutch Page URL
+    "/bis-schema-x-certificering-voor-warmtebehandelingsapparatuur",
+    // Machine Tools Dutch Page URL
+    "/bis-schema-x-certificering-voor-werktuigmachines",
+    // Metal Cutting Machines Dutch Page URL
+    "/bis-schema-x-certificering-voor-metaalsnijmachines",
+    // Packing Machinery Dutch Page URL
+    "/bis-schema-x-certificering-voor-verpakkingsmachines",
+    // Power Semiconductors Dutch Page URL
+    "/bis-schema-x-certificering-voor-vermogenssemiconductor-omzetters",
+    // Public Works And Mechanical Dutch Page URL
+    "/bis-schema-x-certificering-voor-openbare-werken-en-mechanische-apparaten",
+    // Pumps And Liquid Elevators Dutch Page URL
+    "/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators",
+    // Rotary Electrical Machines Dutch Page URL
+    "/bis-schema-x-certificering-voor-roterende-elektrische-machines",
+    // Rubber And Plastics Machinery Dutch Page URL
+    "/bis-schema-x-certificering-voor-rubber-en-kunststofmachines",
+    // Switchgear And Controlgear Equipment Dutch Page URL
+    "/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-tot-1000-volt",
+    // Switchgear And Controlgear Equipment Above 1000 Volts Dutch Page URL
+    "/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-boven-1000-volt",
+    // Transformers Dutch Page URL
+    "/bis-schema-x-certificering-voor-transformators",
+    // Weaving Machines Dutch Page URL
+    "/bis-schema-x-certificering-voor-weefmachines-getouwen",
   ];
 
   // Check if current path should show these components
@@ -606,6 +634,59 @@ const ContactFormServicesRightSideContentDutch = () => {
       path.includes("/bis-schema-x-certificering-voor-borduurmachines")
     )
       return "Embroidery Machines - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-tandwielen-overbrenging-en-transmissie-elementen")
+    )
+      return "Gears, Gearing and Transmission Elements - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-warmtebehandelingsapparatuur")
+    )
+      return "Heat Treatment Equipment - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-werktuigmachines")
+    )
+      return "Machine Tools - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-metaalsnijmachines")
+    )
+      return "Metal Cutting Machines - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-verpakkingsmachines")
+    )
+      return "Packing Machinery - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-vermogenssemiconductor-omzetters")
+    )
+      return "Power Semiconductors - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-openbare-werken-en-mechanische-apparaten")
+    )
+      return "Public Works And Mechanical - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators")
+    )
+      return "Pumps And Liquid Elevators - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-roterende-elektrische-machines")
+    )
+      return "Rotary Electrical Machines - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-rubber-en-kunststofmachines")
+    )
+      return "Rubber And Plastics Machinery - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-tot-1000-volt")
+    )
+      return "Switchgear And Controlgear Equipment - Dutch Page";
+    if (
+      path.includes("/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-boven-1000-volt")
+    )
+      return "Switchgear And Controlgear Equipment Above 1000 Volts - Dutch Page";
+    if (path.includes("/bis-schema-x-certificering-voor-transformators"))
+      return "Transformers - Dutch Page";
+    if (path.includes("/bis-schema-x-certificering-voor-weefmachines-getouwen"))
+      return "Weaving Machines - Dutch Page";
+    return "";
   };
 
   const [formData, setFormData] = useState({
