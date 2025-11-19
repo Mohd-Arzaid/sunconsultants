@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef, useCallback } from "react";
-import PropTypes from "prop-types";
 import { X } from "lucide-react";
 import YouTubeFacade from "@/components/ui/youtube-facade";
 import { videosData } from "../../../data/videosData.js";
@@ -99,7 +98,7 @@ const VideoSection = ({ onVideoPopupChange }) => {
   return (
     <div className="max-w-full mx-auto px-4 py-8 md:px-12 md:pt-16 md:pb-2 bg-white overflow-hidden">
       <div className="text-center mb-6 md:mb-8">
-        <h2 className="text-3xl md:text-5xl font-bold   drop-shadow-lg font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-bold drop-shadow-lg font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
           Video Showcase
         </h2>
       </div>
@@ -189,10 +188,6 @@ const VideoSection = ({ onVideoPopupChange }) => {
       )}
     </div>
   );
-};
-
-VideoSection.propTypes = {
-  onVideoPopupChange: PropTypes.func,
 };
 
 export default VideoSection;
