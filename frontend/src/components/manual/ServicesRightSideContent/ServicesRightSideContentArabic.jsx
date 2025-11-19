@@ -40,6 +40,16 @@ const ServicesRightSideContentArabic = () => {
     "/ar/dalil-shahadat-bis-bis-alhind",
     // bis certification page url
     "/ar/ma-huwa-shahadat-bis-bis-alhind",
+    "/shahadat-bis-mukhatat-x-lil-taard-almarkazi-wa-alat-altasfiya-aw-altanqiya",
+    "/shahadat-bis-mukhatat-x-lil-daghitat",
+    "/shahadat-bis-mukhatat-x-lil-alat-albina",
+    "/shahadat-bis-mukhatat-x-lil-rafaat",
+    "/shahadat-bis-mukhatat-x-lil-mawalid-al-dizil",
+    "/shahadat-bis-mukhatat-x-lil-alat-al-tatriz",
+    "/shahadat-bis-mukhatat-x-lil-turus-wa-anmatim-al-turus-wa-anasir-al-naql",
+    "/shahadat-bis-mukhatat-x-lil-maadat-al-mualaja-al-harariya",
+    "/shahadat-bis-mukhatat-x-lil-adawat-al-alat",
+    "/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin",
   ];
 
   // Check if current path should show these components
@@ -571,6 +581,26 @@ const ContactFormServicesRightSideContentArabic = () => {
       return "ISI Mark (Arabic)";
     if (path.includes("/ar/ma-huwa-shahadat-bis-bis-alhind"))
       return "BIS Certification (Arabic)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-taard-almarkazi-wa-alat-altasfiya-aw-altanqiya"))
+      return "Centrifuges Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-daghitat"))
+      return "Compressors Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-albina"))
+      return "Construction Machinery Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-rafaat"))
+      return "Cranes Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-mawalid-al-dizil"))
+      return "Diesel Generators Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-tatriz"))
+      return "Embroidery Machines Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-turus-wa-anmatim-al-turus-wa-anasir-al-naql"))
+      return "Gears Gearing and Transmission Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-maadat-al-mualaja-al-harariya"))
+      return "Heat Treatment Equipment Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-adawat-al-alat"))
+      return "Machine Tools Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin"))
+      return "Metal Cutting Machines Arabic (Scheme X)";
   };
 
   const [formData, setFormData] = useState({
