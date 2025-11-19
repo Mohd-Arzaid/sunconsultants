@@ -75,18 +75,7 @@ const VideoSection = ({ onVideoPopupChange }) => {
               className="group relative overflow-hidden rounded-xl shadow-lg p-4 transition-all duration-500 bg-white w-[350px] md:w-[400px] lg:w-[450px] shrink-0 cursor-pointer"
               onClick={() => handleVideoClick(video)}
             >
-              <YouTubeFacade
-                videoId={video.embedId}
-                title={video.title}
-                description={video.description}
-                category={video.category}
-                duration={video.duration}
-                uploadDate={video.uploadDate}
-                aspectRatio="aspect-video"
-                thumbnailQuality="hqdefault"
-                className="w-full"
-                autoplay={false}
-              />
+              <YouTubeFacade videoId={video.embedId} title={video.title} />
               <div className="pt-4 pb-2">
                 <p className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2">
                   {video.title}
