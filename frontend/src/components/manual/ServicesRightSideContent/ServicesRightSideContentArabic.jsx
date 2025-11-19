@@ -50,6 +50,12 @@ const ServicesRightSideContentArabic = () => {
     "/shahadat-bis-mukhatat-x-lil-maadat-al-mualaja-al-harariya",
     "/shahadat-bis-mukhatat-x-lil-adawat-al-alat",
     "/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin",
+    "/shahadat-bis-mukhatat-x-lil-maadat-al-taabia-wa-al-taghlif",
+    "/shahadat-bis-mukhatat-x-lil-muhawilat-ashbah-al-mawasalat-lil-taqa",
+    "/shahadat-bis-mukhatat-x-lil-ashghal-al-amah-wa-al-maadat-al-mikaniqiyah",
+    "/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail",
+    "/shahadat-bis-mukhatat-x-lil-alat-al-kahrabiya-al-dawara",
+    "/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik",
   ];
 
   // Check if current path should show these components
@@ -601,6 +607,18 @@ const ContactFormServicesRightSideContentArabic = () => {
       return "Machine Tools Arabic (Scheme X)";
     if (path.includes("/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin"))
       return "Metal Cutting Machines Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-maadat-al-taabia-wa-al-taghlif"))
+      return "Packing Machinery Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-muhawilat-ashbah-al-mawasalat-lil-taqa"))
+      return "Power Semiconductors Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-ashghal-al-amah-wa-al-maadat-al-mikaniqiyah"))
+      return "Public Works and Mechanical Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"))
+      return "Pumps and Liquid Elevators Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-kahrabiya-al-dawara"))
+      return "Rotary Electrical Machines Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik"))
+      return "Rubber and Plastics Machinery Arabic (Scheme X)";
   };
 
   const [formData, setFormData] = useState({

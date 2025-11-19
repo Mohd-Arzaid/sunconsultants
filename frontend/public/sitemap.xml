@@ -2170,6 +2170,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-maadat-al-taabia-wa-al-taghlif</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Packing Machinery - SchemeX Products End -->
 
   <!-- Power Semiconductors - SchemeX Products Start -->
@@ -2250,6 +2257,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-muhawilat-ashbah-al-mawasalat-lil-taqa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Power Semiconductors - SchemeX Products End -->
 
   <!-- Public Works and Mechanical Appliances - SchemeX Products Start -->
@@ -2326,6 +2340,13 @@
   <!-- Dutch -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-certificering-voor-openbare-werken-en-mechanische-apparaten</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-ashghal-al-amah-wa-al-maadat-al-mikaniqiyah</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -2497,6 +2518,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-alat-al-kahrabiya-al-dawara</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Rotary Electrical Machines - SchemeX Products End -->
 
   <!-- Rubber and Plastics Machinery - SchemeX Products Start -->
@@ -2573,6 +2601,13 @@
   <!-- Dutch -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-certificering-voor-rubber-en-kunststofmachines</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

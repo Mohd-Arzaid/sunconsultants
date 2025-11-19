@@ -118,6 +118,7 @@ import PackingMachineryItalian from "../schemeXProducts/PackingMachinery/Packing
 import PackingMachineryJapanese from "../schemeXProducts/PackingMachinery/PackingMachineryJapanese";
 import PackingMachineryThai from "../schemeXProducts/PackingMachinery/PackingMachineryThai";
 import PackingMachineryDutch from "../schemeXProducts/PackingMachinery/PackingMachineryDutch";
+import PackingMachineryArabic from "../schemeXProducts/PackingMachinery/PackingMachineryArabic";
 import PowerSemiconductors from "../schemeXProducts/PowerSemiconductors/PowerSemiconductors";
 import PowerSemiconductorsFrench from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsFrench";
 import PowerSemiconductorsGerman from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsGerman";
@@ -129,6 +130,7 @@ import PowerSemiconductorsItalian from "../schemeXProducts/PowerSemiconductors/P
 import PowerSemiconductorsJapanese from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsJapanese";
 import PowerSemiconductorsThai from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsThai";
 import PowerSemiconductorsDutch from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsDutch";
+import PowerSemiconductorsArabic from "../schemeXProducts/PowerSemiconductors/PowerSemiconductorsArabic";
 import PublicWorksAndMechanical from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanical";
 import PublicWorksAndMechanicalFrench from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalFrench";
 import PublicWorksAndMechanicalGerman from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalGerman";
@@ -140,6 +142,7 @@ import PublicWorksAndMechanicalItalian from "../schemeXProducts/PublicWorksAndMe
 import PublicWorksAndMechanicalJapanese from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalJapanese";
 import PublicWorksAndMechanicalThai from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalThai";
 import PublicWorksAndMechanicalDutch from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalDutch";
+import PublicWorksAndMechanicalArabic from "../schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalArabic";
 import PumpsAndLiquidElevators from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevators";
 import PumpsAndLiquidElevatorsGerman from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsGerman";
 import PumpsAndLiquidElevatorsSpanish from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsSpanish";
@@ -149,13 +152,14 @@ import PumpsAndLiquidElevatorsItalian from "../schemeXProducts/PumpsAndLiquidEle
 import PumpsAndLiquidElevatorsJapanese from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsJapanese";
 import PumpsAndLiquidElevatorsKorean from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsKorean";
 import PumpsAndLiquidElevatorsDutch from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsDutch";
+import PumpsAndLiquidElevatorsArabic from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsArabic";
 import PumpsAndLiquidElevatorsThai from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsThai";
 import PumpsAndLiquidElevatorsVietnamese from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsVietnamese";
-import PumpsAndLiquidElevatorsArabic from "../schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsArabic";
 import RotaryElectricalMachines from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachines";
 import RotaryElectricalMachinesFrench from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesFrench";
 import RotaryElectricalMachinesGerman from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesGerman";
 import RotaryElectricalMachinesVietnamese from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesVietnamese";
+import RotaryElectricalMachinesArabic from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesArabic";
 import RotaryElectricalMachinesSpanish from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesSpanish";
 import RotaryElectricalMachinesKorean from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesKorean";
 import RotaryElectricalMachinesIndonesian from "../schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesIndonesian";
@@ -171,6 +175,7 @@ import RubberAndPlasticsMachineryItalian from "../schemeXProducts/RubberAndPlast
 import RubberAndPlasticsMachineryJapanese from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryJapanese";
 import RubberAndPlasticsMachineryThai from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryThai";
 import RubberAndPlasticsMachineryDutch from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryDutch";
+import RubberAndPlasticsMachineryArabic from "../schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryArabic";
 import SwitchgearandControlgearEquipment from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipment";
 import SwitchgearandControlgearEquipmentFrench from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentFrench";
 import SwitchgearandControlgearEquipmentGerman from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentGerman";
@@ -279,6 +284,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
         element={<PumpsAndLiquidElevatorsDutch />}
+      />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
+        element={<PumpsAndLiquidElevatorsArabic />}
       />
       {/* Thai */}
       <Route
@@ -1084,6 +1094,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-schema-x-certificering-voor-verpakkingsmachines"
         element={<PackingMachineryDutch />}
       />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-maadat-al-taabia-wa-al-taghlif"
+        element={<PackingMachineryArabic />}
+      />
 
       {/* Packing Machinery Pages End */}
 
@@ -1150,6 +1165,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-schema-x-certificering-voor-vermogenssemiconductor-omzetters"
         element={<PowerSemiconductorsDutch />}
+      />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-muhawilat-ashbah-al-mawasalat-lil-taqa"
+        element={<PowerSemiconductorsArabic />}
       />
 
       {/* Power Semiconductors Pages End */}
@@ -1218,6 +1238,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-schema-x-certificering-voor-openbare-werken-en-mechanische-apparaten"
         element={<PublicWorksAndMechanicalDutch />}
       />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-ashghal-al-amah-wa-al-maadat-al-mikaniqiyah"
+        element={<PublicWorksAndMechanicalArabic />}
+      />
 
       {/* Public Works And Mechanical Pages End */}
 
@@ -1249,6 +1274,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/chung-nhan-bis-scheme-x-cho-may-dien-quay"
         element={<RotaryElectricalMachinesVietnamese />}
+      />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-alat-al-kahrabiya-al-dawara"
+        element={<RotaryElectricalMachinesArabic />}
       />
       {/* Spanish */}
       <Route
@@ -1351,6 +1381,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-schema-x-certificering-voor-rubber-en-kunststofmachines"
         element={<RubberAndPlasticsMachineryDutch />}
+      />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik"
+        element={<RubberAndPlasticsMachineryArabic />}
       />
 
       {/* Rubber And Plastics Machinery Pages End */}
