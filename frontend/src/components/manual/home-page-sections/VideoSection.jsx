@@ -116,7 +116,7 @@ const VideoSection = ({ onVideoPopupChange }) => {
           {duplicatedVideos.map((video, index) => (
             <div
               key={`${video.id}-${index}`}
-              className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white w-[350px] md:w-[400px] lg:w-[450px] max-w-full shrink-0 cursor-pointer"
+              className="group relative overflow-hidden rounded-xl shadow-lg p-4 transition-all duration-500 bg-white w-[350px] md:w-[400px] lg:w-[450px] max-w-full shrink-0 cursor-pointer"
               onClick={(e) => handleVideoClick(video, e)}
             >
               <YouTubeFacade
@@ -132,7 +132,7 @@ const VideoSection = ({ onVideoPopupChange }) => {
                 autoplay={false}
               />
               {/* Video Title Below Each Video */}
-              <div className="p-4">
+              <div className="pt-4 pb-2">
                 <p className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2 leading-tight">
                   {video.title}
                 </p>
