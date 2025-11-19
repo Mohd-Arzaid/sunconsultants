@@ -1,38 +1,27 @@
-import { useEffect, useState, useRef, useCallback } from "react";
+import { useEffect, useState, useRef } from "react";
 import { X } from "lucide-react";
 import YouTubeFacade from "@/components/ui/youtube-facade";
 import { videosData } from "../../../data/videosData.js";
 
 const VideoSection = ({ onVideoPopupChange }) => {
   const containerRef = useRef(null);
-  const scrollerRef = useRef(null);
-  const [start, setStart] = useState(false);
-  const [duplicatedVideos, setDuplicatedVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [videoLoading, setVideoLoading] = useState(false);
 
-  // Define animation function first
-  const addAnimation = useCallback(() => {
-    // React-friendly duplication approach
-    const duplicated = [...videosData, ...videosData, ...videosData];
-    setDuplicatedVideos(duplicated);
-
-    if (containerRef.current) {
-      getDirection();
-      getSpeed();
-
-      // Small delay to ensure DOM is ready
-      setTimeout(() => {
-        setStart(true);
-      }, 100);
-    }
-  }, []);
+  // Double duplication is enough for infinite scroll
+  const duplicatedVideos = [...videosData, ...videosData];
 
   // Initialize animation on mount
   useEffect(() => {
-    addAnimation();
-  }, [addAnimation]);
+    if (containerRef.current) {
+      // Set animation properties directly
+      containerRef.current.style.setProperty(
+        "--animation-direction",
+        "forwards"
+      );
+      containerRef.current.style.setProperty("--animation-duration", "120s");
+    }
+  }, []);
 
   // Notify parent component when popup state changes
   useEffect(() => {
@@ -42,26 +31,17 @@ const VideoSection = ({ onVideoPopupChange }) => {
   }, [isPopupOpen, onVideoPopupChange]);
 
   // Handle opening video popup
-  const handleVideoClick = (video, event) => {
-    event.preventDefault();
-    event.stopPropagation();
+  const handleVideoClick = (video) => {
     setSelectedVideo(video);
-    setVideoLoading(true);
     setIsPopupOpen(true);
-    document.body.style.overflow = "hidden"; // Prevent background scrolling
-
-    // Hide loading after 2 seconds (enough time for video to load)
-    setTimeout(() => {
-      setVideoLoading(false);
-    }, 2000);
+    document.body.style.overflow = "hidden";
   };
 
   // Handle closing video popup
   const handleClosePopup = () => {
     setIsPopupOpen(false);
     setSelectedVideo(null);
-    setVideoLoading(false);
-    document.body.style.overflow = "unset"; // Restore scrolling
+    document.body.style.overflow = "unset";
   };
 
   // Handle escape key to close popup
@@ -74,50 +54,26 @@ const VideoSection = ({ onVideoPopupChange }) => {
 
     if (isPopupOpen) {
       document.addEventListener("keydown", handleEscapeKey);
-      return () => {
-        document.removeEventListener("keydown", handleEscapeKey);
-      };
+      return () => document.removeEventListener("keydown", handleEscapeKey);
     }
   }, [isPopupOpen]);
 
-  const getDirection = () => {
-    if (containerRef.current) {
-      containerRef.current.style.setProperty(
-        "--animation-direction",
-        "forwards"
-      );
-    }
-  };
-
-  const getSpeed = () => {
-    if (containerRef.current) {
-      containerRef.current.style.setProperty("--animation-duration", "120s");
-    }
-  };
-
   return (
     <div className="max-w-full mx-auto px-4 py-8 md:px-12 md:pt-16 md:pb-2 bg-white overflow-hidden">
-      <div className="text-center mb-6 md:mb-8">
-        <h2 className="text-3xl md:text-5xl font-bold drop-shadow-lg font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
-          Video Showcase
-        </h2>
-      </div>
+      <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-neutral-800">
+        Video Showcase
+      </h2>
 
       <div
         ref={containerRef}
         className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
       >
-        <div
-          ref={scrollerRef}
-          className={`flex w-max gap-6 py-4 hover:[animation-play-state:paused] ${
-            start ? "animate-scroll" : ""
-          }`}
-        >
+        <div className="flex w-max gap-6 py-4 animate-scroll hover:[animation-play-state:paused]">
           {duplicatedVideos.map((video, index) => (
             <div
               key={`${video.id}-${index}`}
-              className="group relative overflow-hidden rounded-xl shadow-lg p-4 transition-all duration-500 bg-white w-[350px] md:w-[400px] lg:w-[450px] max-w-full shrink-0 cursor-pointer"
-              onClick={(e) => handleVideoClick(video, e)}
+              className="group relative overflow-hidden rounded-xl shadow-lg p-4 transition-all duration-500 bg-white w-[350px] md:w-[400px] lg:w-[450px] shrink-0 cursor-pointer"
+              onClick={() => handleVideoClick(video)}
             >
               <YouTubeFacade
                 videoId={video.embedId}
@@ -131,9 +87,8 @@ const VideoSection = ({ onVideoPopupChange }) => {
                 className="w-full"
                 autoplay={false}
               />
-              {/* Video Title Below Each Video */}
               <div className="pt-4 pb-2">
-                <p className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2 leading-tight">
+                <p className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2">
                   {video.title}
                 </p>
               </div>
@@ -149,39 +104,25 @@ const VideoSection = ({ onVideoPopupChange }) => {
           onClick={handleClosePopup}
         >
           <div className="relative w-full max-w-6xl mx-4 md:mx-8">
-            {/* Close Button */}
             <button
               onClick={handleClosePopup}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10 bg-black/50 rounded-full p-2 shadow-lg"
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 bg-black/50 rounded-full p-2"
               aria-label="Close video"
             >
               <X size={24} />
             </button>
 
-            {/* Video Container */}
             <div
-              className="relative bg-white rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
+              className="bg-white rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="aspect-video w-full relative">
-                {videoLoading && (
-                  <div className="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-2xl z-10">
-                    <div className="text-center">
-                      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto mb-4"></div>
-                      <p className="text-gray-600">Loading video...</p>
-                    </div>
-                  </div>
-                )}
-                <iframe
-                  src={`https://www.youtube.com/embed/${selectedVideo.embedId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
-                  title={selectedVideo.title}
-                  className={`w-full h-full border-0 rounded-2xl ${
-                    videoLoading ? "opacity-0" : "opacity-100"
-                  } transition-opacity duration-500`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
+              <iframe
+                src={`https://www.youtube.com/embed/${selectedVideo.embedId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+                title={selectedVideo.title}
+                className="w-full aspect-video border-0 rounded-2xl"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
