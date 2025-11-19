@@ -2,1093 +2,319 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     
-    <!-- Home Page Videos -->
-    <url>
-        <loc>https://bis-certifications.com/</loc>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/4JDVsoWSY3I/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certifications for Slugging Wrenches IS 4508</video:title>
-            <video:description>Learn everything about BIS Foreign Manufacturer certification process, requirements, documentation, and compliance standards for selling products in India. Complete BISFM guide by Sun Certifications.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=4JDVsoWSY3I</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/4JDVsoWSY3I</video:player_loc>
-            <video:duration>630</video:duration>
-            <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BISFM</video:tag>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Foreign Manufacturers</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:tag>Export to India</video:tag>
-            <video:category>BISFM</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/_LBccl6LiOM/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification for Ring Wrenches IS 2029</video:title>
-            <video:description>Comprehensive guide to ISI Mark certification for Indian manufacturers. Learn about quality assurance, testing requirements, and compliance standards. Expert insights from Sun Certifications.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=_LBccl6LiOM</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/_LBccl6LiOM</video:player_loc>
-            <video:duration>525</video:duration>
-            <video:publication_date>2024-02-01T00:00:00+00:00</video:publication_date>
-            <video:tag>ISI Mark</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>BIS Standards</video:tag>
-            <video:tag>Quality Control</video:tag>
-            <video:category>ISI Mark</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/JxYwTtj4wfQ/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification for Cutting Pliers IS 3650 </video:title>
-            <video:description>Understanding Scheme X registration process under BIS certification framework. Learn about documentation, compliance requirements, and regulatory procedures for Indian manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=JxYwTtj4wfQ</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/JxYwTtj4wfQ</video:player_loc>
-            <video:duration>735</video:duration>
-            <video:publication_date>2024-02-15T00:00:00+00:00</video:publication_date>
-            <video:tag>Scheme X</video:tag>
-            <video:tag>Registration</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Regulatory Framework</video:tag>
-            <video:tag>Business Operations</video:tag>
-            <video:tag>Documentation</video:tag>
-            <video:tag>BIS Standards</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:category>Scheme X</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/zq1nIBTh27w/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certificate for Jaw Wrenches IS 2028s</video:title>
-            <video:description>Master the BIS certification process with our comprehensive guide covering quality standards, testing procedures, and compliance requirements for Indian market entry.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=zq1nIBTh27w</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/zq1nIBTh27w</video:player_loc>
-            <video:duration>560</video:duration>
-            <video:publication_date>2024-03-01T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Quality Standards</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Testing Requirements</video:tag>
-            <video:tag>Market Entry</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/5ppBDV76d6I/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification for Fibre Ropes IS 4572 </video:title>
-            <video:description>Detailed overview of standards compliance requirements in India including regulatory framework, quality assurance processes, and certification procedures for businesses.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=5ppBDV76d6I</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/5ppBDV76d6I</video:player_loc>
-            <video:duration>670</video:duration>
-            <video:publication_date>2024-03-15T00:00:00+00:00</video:publication_date>
-            <video:tag>Standards Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Regulatory Framework</video:tag>
-            <video:tag>Business Operations</video:tag>
-            <video:tag>Certification</video:tag>
-            <video:tag>Legal Requirements</video:tag>
-            <video:tag>Industry Standards</video:tag>
-            <video:category>Standards Compliance</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/OCQZUvsxcHU/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification for Solar Flat Plate Collector - IS 12933</video:title>
-            <video:description>Learn about implementing effective quality management systems for manufacturing excellence. Covers process optimization, quality control, and compliance with Indian standards.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=OCQZUvsxcHU</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/OCQZUvsxcHU</video:player_loc>
-            <video:duration>810</video:duration>
-            <video:publication_date>2024-04-01T00:00:00+00:00</video:publication_date>
-            <video:tag>Quality Management</video:tag>
-            <video:tag>Process Optimization</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Quality Control</video:tag>
-            <video:tag>Manufacturing Excellence</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Best Practices</video:tag>
-            <video:tag>System Implementation</video:tag>
-            <video:category>Quality Management</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/hSNURmPAKDA/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>A Guide on BIS Certification by Sun Certifications India</video:title>
-            <video:description>Professional BIS certification services providing expert guidance for manufacturers seeking compliance with Indian standards. Comprehensive support for certification process and regulatory requirements.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=hSNURmPAKDA</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/hSNURmPAKDA</video:player_loc>
-            <video:duration>450</video:duration>
-            <video:publication_date>2024-04-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Professional Services</video:tag>
-            <video:tag>Expert Guidance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Regulatory Support</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/7NazqQXmOa8/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certifications For Toys under IS 9873 &amp; 15644</video:title>
-            <video:description>Comprehensive overview of quality assurance practices and standards compliance for manufacturing excellence. Learn about best practices, regulatory requirements, and quality management systems.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=7NazqQXmOa8</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/7NazqQXmOa8</video:player_loc>
-            <video:duration>585</video:duration>
-            <video:publication_date>2024-05-01T00:00:00+00:00</video:publication_date>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Standards Compliance</video:tag>
-            <video:tag>Manufacturing Excellence</video:tag>
-            <video:tag>Quality Management</video:tag>
-            <video:tag>Best Practices</video:tag>
-            <video:tag>Regulatory Requirements</video:tag>
-            <video:tag>Process Optimization</video:tag>
-            <video:tag>Industry Standards</video:tag>
-            <video:category>Quality Assurance</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/2PMhlbYSCQk/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>Simplifying Certification: BIS, CDSCO, LMPC, EPR, PESO, WPC &amp; More - Sun Certifications India</video:title>
-            <video:description>Latest guide on certification standards and compliance requirements. Learn about regulatory framework, quality assurance, and best practices for manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=2PMhlbYSCQk</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/2PMhlbYSCQk</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2024-05-15T00:00:00+00:00</video:publication_date>
-            <video:tag>Certification</video:tag>
-            <video:tag>Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Regulatory Framework</video:tag>
-            <video:tag>Best Practices</video:tag>
-            <video:tag>Industry Standards</video:tag>
-            <video:category>Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/6JG1nSiLAao/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification for Chipboard Screws - IS 18508:2024</video:title>
-            <video:description>Complete guide to BIS Certification for Tin Ingot under IS 26:2024. Learn about mandatory certification from October 2025, application process, required documents, testing procedures, and compliance requirements for manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=6JG1nSiLAao</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/6JG1nSiLAao</video:player_loc>
-            <video:duration>765</video:duration>
-            <video:publication_date>2024-12-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Tin Ingot</video:tag>
-            <video:tag>IS 26:2024</video:tag>
-            <video:tag>BIS Application</video:tag>
-            <video:tag>Product Testing</video:tag>
-            <video:tag>Manufacturing Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Control</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Documentation</video:tag>
-            <video:tag>BIS Consultants</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/F0bmGrWeDiI/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Guide - Complete Process Overview</video:title>
-            <video:description>Comprehensive guide to BIS certification process covering all essential steps, requirements, and best practices for manufacturers seeking compliance with Indian standards.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=F0bmGrWeDiI</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/F0bmGrWeDiI</video:player_loc>
-            <video:duration>510</video:duration>
-            <video:publication_date>2024-12-20T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/iafdcHwzojY/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Standards and Compliance Guidelines</video:title>
-            <video:description>Learn about BIS certification standards, compliance requirements, and regulatory guidelines for manufacturers. Expert insights on quality assurance and certification process.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=iafdcHwzojY</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/iafdcHwzojY</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/wcMNd8KWRBc/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Product Certification - Requirements and Process</video:title>
-            <video:description>Understanding BIS product certification requirements, application process, testing procedures, and compliance standards for Indian market entry.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=wcMNd8KWRBc</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/wcMNd8KWRBc</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/H1tawJliSx4/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Licensing and Registration Guide for Manufacturers</video:title>
-            <video:description>Complete guide to BIS licensing and registration process for manufacturers. Learn about documentation, compliance requirements, and regulatory procedures.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=H1tawJliSx4</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/H1tawJliSx4</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Licensing</video:tag>
-            <video:tag>Registration</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/r1FF4cld4F4/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Quality Control and Testing Standards</video:title>
-            <video:description>Learn about BIS quality control procedures, testing standards, and laboratory requirements for product certification in India.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=r1FF4cld4F4</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/r1FF4cld4F4</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Quality Control</video:tag>
-            <video:tag>Testing Standards</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/MBTBBrd3FwA/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Compliance Framework for Industries</video:title>
-            <video:description>Understanding BIS compliance framework, regulatory requirements, and industry-specific standards for manufacturers in India.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=MBTBBrd3FwA</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/MBTBBrd3FwA</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Compliance Framework</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Regulatory Requirements</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/NK5yU-h3JsU/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification for Electronics and Electrical Products</video:title>
-            <video:description>Comprehensive guide to BIS certification for electronics and electrical products. Learn about standards, testing, and compliance requirements.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=NK5yU-h3JsU</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/NK5yU-h3JsU</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Electronics</video:tag>
-            <video:tag>Electrical Products</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/_kE1zi8JW-I/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Documentation and Application Process</video:title>
-            <video:description>Step-by-step guide to BIS documentation requirements and application process. Learn about necessary documents and submission procedures.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=_kE1zi8JW-I</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/_kE1zi8JW-I</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Documentation</video:tag>
-            <video:tag>Application Process</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/tMkCv4OV_CU/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Video 35</video:title>
-            <video:description>Detailed guide on BIS certification process, requirements, and compliance standards. Learn about Indian standards, testing procedures, and certification best practices for manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=tMkCv4OV_CU</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/tMkCv4OV_CU</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-17T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Product Testing</video:tag>
-            <video:tag>Regulatory Requirements</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/CArRYo9r4C0/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Video 36</video:title>
-            <video:description>Comprehensive overview of BIS certification requirements and process. Expert insights on documentation, testing standards, and compliance procedures for Indian market entry.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=CArRYo9r4C0</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/CArRYo9r4C0</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-17T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Documentation</video:tag>
-            <video:tag>Market Entry</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/4S7hYOZuNvM/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Video 37</video:title>
-            <video:description>Complete guide to BIS certification process covering quality standards, regulatory compliance, and certification requirements. Essential information for manufacturers targeting the Indian market.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=4S7hYOZuNvM</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/4S7hYOZuNvM</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-17T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Quality Standards</video:tag>
-            <video:tag>Indian Market</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/zauM26gRE-M/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>New Video - zauM26gRE-M</video:title>
-            <video:description>Video added per request. Please update title and description with accurate details.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=zauM26gRE-M</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/zauM26gRE-M</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-10-30T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/2GfPo9dKyd8/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>New Video - 2GfPo9dKyd8</video:title>
-            <video:description>Video added per request. Please update title and description with accurate details.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=2GfPo9dKyd8</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/2GfPo9dKyd8</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-10-30T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
-    </url>
-
-    <!-- Dedicated Videos Page -->
     <url>
         <loc>https://bis-certifications.com/videos-about-bis-certification</loc>
+        
+        <!-- Video 1: BIS Certifications for Slugging Wrenches IS 4508 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/4JDVsoWSY3I/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certifications for Slugging Wrenches IS 4508</video:title>
-            <video:description>Learn everything about BIS Foreign Manufacturer certification process, requirements, documentation, and compliance standards for selling products in India. Complete BISFM guide by Sun Certifications.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=4JDVsoWSY3I</video:content_loc>
+            <video:description>Learn about BIS certification process and requirements for manufacturers.</video:description>
             <video:player_loc>https://www.youtube.com/embed/4JDVsoWSY3I</video:player_loc>
-            <video:duration>630</video:duration>
-            <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BISFM</video:tag>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Foreign Manufacturers</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:tag>Export to India</video:tag>
-            <video:category>BISFM</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 2: BIS Certification for Ring Wrenches IS 2029 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/_LBccl6LiOM/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Ring Wrenches IS 2029</video:title>
-            <video:description>Comprehensive guide to ISI Mark certification for Indian manufacturers. Learn about quality assurance, testing requirements, and compliance standards. Expert insights from Sun Certifications.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=_LBccl6LiOM</video:content_loc>
+            <video:description>Guide to ISI Mark certification for Indian manufacturers.</video:description>
             <video:player_loc>https://www.youtube.com/embed/_LBccl6LiOM</video:player_loc>
-            <video:duration>525</video:duration>
-            <video:publication_date>2024-02-01T00:00:00+00:00</video:publication_date>
-            <video:tag>ISI Mark</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>BIS Standards</video:tag>
-            <video:tag>Quality Control</video:tag>
-            <video:category>ISI Mark</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 3: BIS Certification for Cutting Pliers IS 3650 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/JxYwTtj4wfQ/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Cutting Pliers IS 3650</video:title>
-            <video:description>Understanding Scheme X registration process under BIS certification framework. Learn about documentation, compliance requirements, and regulatory procedures for Indian manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=JxYwTtj4wfQ</video:content_loc>
+            <video:description>Understanding BIS certification compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/JxYwTtj4wfQ</video:player_loc>
-            <video:duration>735</video:duration>
-            <video:publication_date>2024-02-15T00:00:00+00:00</video:publication_date>
-            <video:tag>Scheme X</video:tag>
-            <video:tag>Registration</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Regulatory Framework</video:tag>
-            <video:tag>Business Operations</video:tag>
-            <video:tag>Documentation</video:tag>
-            <video:tag>BIS Standards</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:category>Scheme X</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 4: BIS Certificate for Jaw Wrenches IS 2028s -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/zq1nIBTh27w/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Complete Guide - Standards and Quality Requirements</video:title>
-            <video:description>Master the BIS certification process with our comprehensive guide covering quality standards, testing procedures, and compliance requirements for Indian market entry.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=zq1nIBTh27w</video:content_loc>
+            <video:title>BIS Certificate for Jaw Wrenches IS 2028s</video:title>
+            <video:description>Master the BIS certification process with comprehensive guide.</video:description>
             <video:player_loc>https://www.youtube.com/embed/zq1nIBTh27w</video:player_loc>
-            <video:duration>560</video:duration>
-            <video:publication_date>2024-03-01T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Quality Standards</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Testing Requirements</video:tag>
-            <video:tag>Market Entry</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 5: BIS Certification for Fibre Ropes IS 4572 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/5ppBDV76d6I/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certificate for Jaw Wrenches IS 2028</video:title>
-            <video:description>Detailed overview of standards compliance requirements in India including regulatory framework, quality assurance processes, and certification procedures for businesses.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=5ppBDV76d6I</video:content_loc>
+            <video:title>BIS Certification for Fibre Ropes IS 4572</video:title>
+            <video:description>Detailed overview of standards compliance requirements in India.</video:description>
             <video:player_loc>https://www.youtube.com/embed/5ppBDV76d6I</video:player_loc>
-            <video:duration>670</video:duration>
-            <video:publication_date>2024-03-15T00:00:00+00:00</video:publication_date>
-            <video:tag>Standards Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Regulatory Framework</video:tag>
-            <video:tag>Business Operations</video:tag>
-            <video:tag>Certification</video:tag>
-            <video:tag>Legal Requirements</video:tag>
-            <video:tag>Industry Standards</video:tag>
-            <video:category>Standards Compliance</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 6: BIS Certification for Solar Flat Plate Collector - IS 12933 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/OCQZUvsxcHU/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Solar Flat Plate Collector - IS 12933</video:title>
-            <video:description>Learn about implementing effective quality management systems for manufacturing excellence. Covers process optimization, quality control, and compliance with Indian standards.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=OCQZUvsxcHU</video:content_loc>
+            <video:description>Learn about quality management systems for manufacturing excellence.</video:description>
             <video:player_loc>https://www.youtube.com/embed/OCQZUvsxcHU</video:player_loc>
-            <video:duration>810</video:duration>
-            <video:publication_date>2024-04-01T00:00:00+00:00</video:publication_date>
-            <video:tag>Quality Management</video:tag>
-            <video:tag>Process Optimization</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Quality Control</video:tag>
-            <video:tag>Manufacturing Excellence</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Best Practices</video:tag>
-            <video:tag>System Implementation</video:tag>
-            <video:category>Quality Management</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 7: A Guide on BIS Certification by Sun Certifications India -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/hSNURmPAKDA/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>A Guide on BIS Certification by Sun Certifications India</video:title>
-            <video:description>Professional BIS certification services providing expert guidance for manufacturers seeking compliance with Indian standards. Comprehensive support for certification process and regulatory requirements.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=hSNURmPAKDA</video:content_loc>
+            <video:description>Professional BIS certification services and expert guidance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/hSNURmPAKDA</video:player_loc>
-            <video:duration>450</video:duration>
-            <video:publication_date>2024-04-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Professional Services</video:tag>
-            <video:tag>Expert Guidance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Regulatory Support</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 8: BIS Certifications For Toys under IS 9873 & 15644 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/7NazqQXmOa8/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certifications For Toys under IS 9873 &amp; 15644</video:title>
-            <video:description>Comprehensive overview of quality assurance practices and standards compliance for manufacturing excellence. Learn about best practices, regulatory requirements, and quality management systems.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=7NazqQXmOa8</video:content_loc>
+            <video:description>Overview of quality assurance and standards compliance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/7NazqQXmOa8</video:player_loc>
-            <video:duration>585</video:duration>
-            <video:publication_date>2024-05-01T00:00:00+00:00</video:publication_date>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Standards Compliance</video:tag>
-            <video:tag>Manufacturing Excellence</video:tag>
-            <video:tag>Quality Management</video:tag>
-            <video:tag>Best Practices</video:tag>
-            <video:tag>Regulatory Requirements</video:tag>
-            <video:tag>Process Optimization</video:tag>
-            <video:tag>Industry Standards</video:tag>
-            <video:category>Quality Assurance</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 9: Simplifying Certification: BIS, CDSCO, LMPC, EPR, PESO, WPC & More -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/2PMhlbYSCQk/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>Simplifying Certification: BIS, CDSCO, LMPC, EPR, PESO, WPC &amp; More - Sun Certifications India</video:title>
-            <video:description>Latest guide on certification standards and compliance requirements. Learn about regulatory framework, quality assurance, and best practices for manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=2PMhlbYSCQk</video:content_loc>
+            <video:title>Simplifying Certification: BIS, CDSCO, LMPC, EPR, PESO, WPC &amp; More</video:title>
+            <video:description>Guide on certification standards and compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/2PMhlbYSCQk</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2024-05-15T00:00:00+00:00</video:publication_date>
-            <video:tag>Certification</video:tag>
-            <video:tag>Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Regulatory Framework</video:tag>
-            <video:tag>Best Practices</video:tag>
-            <video:tag>Industry Standards</video:tag>
-            <video:category>Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 10: BIS Certification for Chipboard Screws - IS 18508:2024 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/6JG1nSiLAao/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification for Chipboard Screws - IS 18508:2024 - Sun Certification India</video:title>
-            <video:description>Complete guide to BIS Certification for Tin Ingot under IS 26:2024. Learn about mandatory certification from October 2025, application process, required documents, testing procedures, and compliance requirements for manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=6JG1nSiLAao</video:content_loc>
+            <video:title>BIS Certification for Chipboard Screws - IS 18508:2024</video:title>
+            <video:description>Complete guide to BIS certification and compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/6JG1nSiLAao</video:player_loc>
-            <video:duration>765</video:duration>
-            <video:publication_date>2024-12-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Tin Ingot</video:tag>
-            <video:tag>IS 26:2024</video:tag>
-            <video:tag>BIS Application</video:tag>
-            <video:tag>Product Testing</video:tag>
-            <video:tag>Manufacturing Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Control</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Documentation</video:tag>
-            <video:tag>BIS Consultants</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 11: BIS Certification Guide - Complete Process Overview -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/F0bmGrWeDiI/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Guide - Complete Process Overview</video:title>
-            <video:description>Comprehensive guide to BIS certification process covering all essential steps, requirements, and best practices for manufacturers seeking compliance with Indian standards.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=F0bmGrWeDiI</video:content_loc>
+            <video:description>Comprehensive guide to BIS certification process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/F0bmGrWeDiI</video:player_loc>
-            <video:duration>510</video:duration>
-            <video:publication_date>2024-12-20T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 12: BIS Certification Process - Step by Step Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/8ltY8GNIdUk/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Process - Step by Step Guide</video:title>
-            <video:description>Learn the step-by-step BIS certification process, from initial application to final approval. Expert guidance on documentation and compliance requirements.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=8ltY8GNIdUk</video:content_loc>
+            <video:description>Learn about BIS certification standards and requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/8ltY8GNIdUk</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 13: BIS Standards and Quality Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/smPy_KzA95k/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Standards and Quality Requirements</video:title>
-            <video:description>Understanding BIS standards and quality requirements for product certification. Learn about testing procedures and compliance guidelines.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=smPy_KzA95k</video:content_loc>
+            <video:description>Understanding BIS standards and quality requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/smPy_KzA95k</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Quality Standards</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://img.youtube.com/vi/p0B0IiyW7D0/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Testing and Laboratory Requirements</video:title>
-            <video:description>Guide to BIS testing procedures and laboratory requirements for product certification. Learn about NABL accreditation and testing standards.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=p0B0IiyW7D0</video:content_loc>
-            <video:player_loc>https://www.youtube.com/embed/p0B0IiyW7D0</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Testing Standards</video:tag>
-            <video:tag>Laboratory Requirements</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
-        </video:video>
+        
+        <!-- Video 14: BIS Foreign Manufacturer Certification -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/0Np5Zioo7jE/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Foreign Manufacturer Certification</video:title>
-            <video:description>Complete guide to BIS foreign manufacturer certification. Learn about BISFM registration, documentation, and compliance for international manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=0Np5Zioo7jE</video:content_loc>
+            <video:description>Guide to BIS certification procedures and compliance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/0Np5Zioo7jE</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Foreign Manufacturers</video:tag>
-            <video:tag>BISFM</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 15: BIS Renewal and Maintenance Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/kJOkqSmyxZg/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Renewal and Maintenance Requirements</video:title>
-            <video:description>Learn about BIS license renewal and maintenance requirements. Understand surveillance audits, compliance monitoring, and renewal procedures.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=kJOkqSmyxZg</video:content_loc>
+            <video:description>Learn about BIS license and compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/kJOkqSmyxZg</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>License Renewal</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 16: BIS Marking and Labeling Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/Tcq0S4EvUX4/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Marking and Labeling Requirements</video:title>
-            <video:description>Understanding BIS marking and labeling requirements for certified products. Learn about ISI mark usage, placement, and compliance standards.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=Tcq0S4EvUX4</video:content_loc>
+            <video:description>Understanding BIS marking and certification standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/Tcq0S4EvUX4</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>ISI Mark</video:tag>
-            <video:tag>Labeling Requirements</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 17: BIS Product Categories and Standards -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/c0vLXrQZyj8/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Product Categories and Standards</video:title>
-            <video:description>Comprehensive overview of BIS product categories and applicable Indian Standards. Learn about mandatory and voluntary certification schemes.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=c0vLXrQZyj8</video:content_loc>
+            <video:description>Overview of BIS product categories and standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/c0vLXrQZyj8</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Product Categories</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 18: BIS Consultancy Services and Support -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/0bM1Kb8_KLY/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Consultancy Services and Support</video:title>
-            <video:description>Expert BIS consultancy services for manufacturers. Learn how professional support can streamline your certification process and ensure compliance.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=0bM1Kb8_KLY</video:content_loc>
+            <video:description>Expert BIS consultancy and certification support.</video:description>
             <video:player_loc>https://www.youtube.com/embed/0bM1Kb8_KLY</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Consultancy Services</video:tag>
-            <video:tag>Expert Support</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 19: BIS Compliance Audits and Inspections -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/lObCWpF50wc/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Compliance Audits and Inspections</video:title>
-            <video:description>Understanding BIS compliance audits and factory inspections. Learn about preparation, documentation, and audit procedures for certification maintenance.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=lObCWpF50wc</video:content_loc>
+            <video:description>Understanding BIS compliance audits and inspections.</video:description>
             <video:player_loc>https://www.youtube.com/embed/lObCWpF50wc</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Compliance Audits</video:tag>
-            <video:tag>Factory Inspections</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 20: BIS Certification Standards and Compliance Guidelines -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/iafdcHwzojY/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Standards and Compliance Guidelines</video:title>
-            <video:description>Learn about BIS certification standards, compliance requirements, and regulatory guidelines for manufacturers. Expert insights on quality assurance and certification process.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=iafdcHwzojY</video:content_loc>
+            <video:description>Learn about BIS certification standards and guidelines.</video:description>
             <video:player_loc>https://www.youtube.com/embed/iafdcHwzojY</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 21: BIS Product Certification - Requirements and Process -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/wcMNd8KWRBc/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Product Certification - Requirements and Process</video:title>
-            <video:description>Understanding BIS product certification requirements, application process, testing procedures, and compliance standards for Indian market entry.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=wcMNd8KWRBc</video:content_loc>
+            <video:description>Understanding BIS product certification requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/wcMNd8KWRBc</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 22: BIS Licensing and Registration Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/H1tawJliSx4/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Licensing and Registration Guide for Manufacturers</video:title>
-            <video:description>Complete guide to BIS licensing and registration process for manufacturers. Learn about documentation, compliance requirements, and regulatory procedures.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=H1tawJliSx4</video:content_loc>
+            <video:title>BIS Licensing and Registration Guide</video:title>
+            <video:description>Guide to BIS licensing and registration process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/H1tawJliSx4</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Licensing</video:tag>
-            <video:tag>Registration</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 23: BIS Quality Control and Testing Standards -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/r1FF4cld4F4/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Quality Control and Testing Standards</video:title>
-            <video:description>Learn about BIS quality control procedures, testing standards, and laboratory requirements for product certification in India.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=r1FF4cld4F4</video:content_loc>
+            <video:description>Learn about BIS quality control and testing standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/r1FF4cld4F4</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Quality Control</video:tag>
-            <video:tag>Testing Standards</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 24: BIS Compliance Framework for Industries -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/MBTBBrd3FwA/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Compliance Framework for Industries</video:title>
-            <video:description>Understanding BIS compliance framework, regulatory requirements, and industry-specific standards for manufacturers in India.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=MBTBBrd3FwA</video:content_loc>
+            <video:description>Understanding BIS compliance framework for industries.</video:description>
             <video:player_loc>https://www.youtube.com/embed/MBTBBrd3FwA</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Compliance Framework</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Regulatory Requirements</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 25: BIS Certification for Electronics and Electrical Products -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/NK5yU-h3JsU/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Electronics and Electrical Products</video:title>
-            <video:description>Comprehensive guide to BIS certification for electronics and electrical products. Learn about standards, testing, and compliance requirements.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=NK5yU-h3JsU</video:content_loc>
+            <video:description>Guide to BIS certification for electronics products.</video:description>
             <video:player_loc>https://www.youtube.com/embed/NK5yU-h3JsU</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Electronics</video:tag>
-            <video:tag>Electrical Products</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 26: BIS Documentation and Application Process -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/_kE1zi8JW-I/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Documentation and Application Process</video:title>
-            <video:description>Step-by-step guide to BIS documentation requirements and application process. Learn about necessary documents and submission procedures.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=_kE1zi8JW-I</video:content_loc>
+            <video:description>Guide to BIS documentation and application process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/_kE1zi8JW-I</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Documentation</video:tag>
-            <video:tag>Application Process</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 27: BIS Import Certification and Customs Clearance -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/5iW38DgNrTg/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Import Certification and Customs Clearance</video:title>
-            <video:description>Guide to BIS import certification requirements and customs clearance procedures. Learn about documentation and compliance for imported products.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=5iW38DgNrTg</video:content_loc>
+            <video:description>Guide to BIS import certification and compliance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/5iW38DgNrTg</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Import Certification</video:tag>
-            <video:tag>Customs Clearance</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 28: BIS Testing and Laboratory Requirements -->
+        <video:video>
+            <video:thumbnail_loc>https://img.youtube.com/vi/p0B0IiyW7D0/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>BIS Testing and Laboratory Requirements</video:title>
+            <video:description>Guide to BIS testing and laboratory requirements.</video:description>
+            <video:player_loc>https://www.youtube.com/embed/p0B0IiyW7D0</video:player_loc>
+        </video:video>
+        
+        <!-- Video 29: BIS Fees and Charges - Complete Breakdown -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/3NVNRsz8_v0/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Fees and Charges - Complete Breakdown</video:title>
-            <video:description>Detailed breakdown of BIS certification fees and charges. Understand application fees, testing costs, and license fees for various product categories.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=3NVNRsz8_v0</video:content_loc>
+            <video:description>Complete breakdown of BIS certification fees.</video:description>
             <video:player_loc>https://www.youtube.com/embed/3NVNRsz8_v0</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Certification Fees</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Cost Analysis</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 30: BIS vs International Standards -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/oKveflK60ng/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS vs International Standards - Comparison Guide</video:title>
-            <video:description>Comprehensive comparison of BIS standards with international standards like ISO, IEC, and ASTM. Learn about equivalence and adaptation.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=oKveflK60ng</video:content_loc>
+            <video:title>BIS vs International Standards</video:title>
+            <video:description>Comparison of BIS and international standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/oKveflK60ng</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>International Standards</video:tag>
-            <video:tag>ISO Standards</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 31: BIS Common Issues and Solutions -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/fVBM34yUI9E/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Common Issues and Solutions</video:title>
-            <video:description>Common challenges in BIS certification process and their solutions. Expert tips for avoiding delays and ensuring smooth certification.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=fVBM34yUI9E</video:content_loc>
+            <video:description>Common issues and solutions in BIS certification.</video:description>
             <video:player_loc>https://www.youtube.com/embed/fVBM34yUI9E</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-15T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Problem Solving</video:tag>
-            <video:tag>Expert Tips</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 32: BIS Certification Process - Complete Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/7eOURbCr79w/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Process - Complete Guide for Manufacturers</video:title>
-            <video:description>Comprehensive guide to BIS certification process covering all essential steps, requirements, and best practices for manufacturers seeking compliance with Indian standards.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=7eOURbCr79w</video:content_loc>
+            <video:title>BIS Certification Process - Complete Guide</video:title>
+            <video:description>Comprehensive guide to BIS certification for manufacturers.</video:description>
             <video:player_loc>https://www.youtube.com/embed/7eOURbCr79w</video:player_loc>
-            <video:duration>720</video:duration>
-            <video:publication_date>2025-01-16T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Complete Guide</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Regulatory Requirements</video:tag>
-            <video:tag>Best Practices</video:tag>
-            <video:tag>Product Certification</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 33: BIS Certification Guide - Expert Insights -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/yaQxlb3Up9o/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Guide - Expert Insights and Best Practices</video:title>
-            <video:description>Professional insights on BIS certification process, requirements, and compliance strategies. Learn from industry experts about successful certification approaches and regulatory compliance.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=yaQxlb3Up9o</video:content_loc>
+            <video:title>BIS Certification Guide - Expert Insights</video:title>
+            <video:description>Professional insights on BIS certification process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/yaQxlb3Up9o</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-16T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Expert Insights</video:tag>
-            <video:tag>Best Practices</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Regulatory Compliance</video:tag>
-            <video:tag>Professional Guidance</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 34: BIS Standards Compliance - Complete Overview -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/enFEXKq-QUg/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Standards Compliance - Complete Overview</video:title>
-            <video:description>Comprehensive overview of BIS standards compliance requirements, testing procedures, and certification processes. Essential guide for manufacturers seeking Indian market entry.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=enFEXKq-QUg</video:content_loc>
+            <video:description>Overview of BIS standards compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/enFEXKq-QUg</video:player_loc>
-            <video:duration>660</video:duration>
-            <video:publication_date>2025-01-16T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Standards</video:tag>
-            <video:tag>Compliance Overview</video:tag>
-            <video:tag>Testing Procedures</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Market Entry</video:tag>
-            <video:tag>Regulatory Requirements</video:tag>
-            <video:tag>Standards Compliance</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 35: BIS Certification Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/tMkCv4OV_CU/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Video 35</video:title>
-            <video:description>Detailed guide on BIS certification process, requirements, and compliance standards. Learn about Indian standards, testing procedures, and certification best practices for manufacturers.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=tMkCv4OV_CU</video:content_loc>
+            <video:title>BIS Certification Requirements</video:title>
+            <video:description>Detailed guide on BIS certification and compliance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/tMkCv4OV_CU</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-17T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Product Testing</video:tag>
-            <video:tag>Regulatory Requirements</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 36: BIS Certification Overview -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/CArRYo9r4C0/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Video 36</video:title>
-            <video:description>Comprehensive overview of BIS certification requirements and process. Expert insights on documentation, testing standards, and compliance procedures for Indian market entry.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=CArRYo9r4C0</video:content_loc>
+            <video:title>BIS Certification Overview</video:title>
+            <video:description>Overview of BIS certification requirements and process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/CArRYo9r4C0</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-17T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Documentation</video:tag>
-            <video:tag>Market Entry</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 37: BIS Quality Standards Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/4S7hYOZuNvM/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>BIS Certification Video 37</video:title>
-            <video:description>Complete guide to BIS certification process covering quality standards, regulatory compliance, and certification requirements. Essential information for manufacturers targeting the Indian market.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=4S7hYOZuNvM</video:content_loc>
+            <video:title>BIS Quality Standards Guide</video:title>
+            <video:description>Complete guide to BIS certification process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/4S7hYOZuNvM</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-01-17T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:tag>Certification Process</video:tag>
-            <video:tag>Quality Standards</video:tag>
-            <video:tag>Indian Market</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 38: BIS Certification Compliance -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/zauM26gRE-M/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>New Video - zauM26gRE-M</video:title>
-            <video:description>Video added per request. Please update title and description with accurate details.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=zauM26gRE-M</video:content_loc>
+            <video:title>BIS Certification Compliance</video:title>
+            <video:description>Learn about BIS certification and compliance standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/zauM26gRE-M</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-10-30T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        
+        <!-- Video 39: BIS Certification Process Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/2GfPo9dKyd8/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>New Video - 2GfPo9dKyd8</video:title>
-            <video:description>Video added per request. Please update title and description with accurate details.</video:description>
-            <video:content_loc>https://www.youtube.com/watch?v=2GfPo9dKyd8</video:content_loc>
+            <video:title>BIS Certification Process Guide</video:title>
+            <video:description>Guide to BIS certification process and requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/2GfPo9dKyd8</video:player_loc>
-            <video:duration>600</video:duration>
-            <video:publication_date>2025-10-30T00:00:00+00:00</video:publication_date>
-            <video:tag>BIS Certification</video:tag>
-            <video:tag>Indian Standards</video:tag>
-            <video:tag>Compliance</video:tag>
-            <video:tag>Quality Assurance</video:tag>
-            <video:tag>Manufacturing</video:tag>
-            <video:category>BIS Certification</video:category>
-            <video:family_friendly>yes</video:family_friendly>
         </video:video>
     </url>
 
