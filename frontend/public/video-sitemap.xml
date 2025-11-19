@@ -4,234 +4,312 @@
     
     <url>
         <loc>https://bis-certifications.com/videos-about-bis-certification</loc>
+        
+        <!-- Video 1: BIS Certifications for Slugging Wrenches IS 4508 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/4JDVsoWSY3I/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certifications for Slugging Wrenches IS 4508</video:title>
             <video:description>Learn about BIS certification process and requirements for manufacturers.</video:description>
             <video:player_loc>https://www.youtube.com/embed/4JDVsoWSY3I</video:player_loc>
         </video:video>
+        
+        <!-- Video 2: BIS Certification for Ring Wrenches IS 2029 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/_LBccl6LiOM/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Ring Wrenches IS 2029</video:title>
             <video:description>Guide to ISI Mark certification for Indian manufacturers.</video:description>
             <video:player_loc>https://www.youtube.com/embed/_LBccl6LiOM</video:player_loc>
         </video:video>
+        
+        <!-- Video 3: BIS Certification for Cutting Pliers IS 3650 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/JxYwTtj4wfQ/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Cutting Pliers IS 3650</video:title>
             <video:description>Understanding BIS certification compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/JxYwTtj4wfQ</video:player_loc>
         </video:video>
+        
+        <!-- Video 4: BIS Certificate for Jaw Wrenches IS 2028s -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/zq1nIBTh27w/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certificate for Jaw Wrenches IS 2028s</video:title>
             <video:description>Master the BIS certification process with comprehensive guide.</video:description>
             <video:player_loc>https://www.youtube.com/embed/zq1nIBTh27w</video:player_loc>
         </video:video>
+        
+        <!-- Video 5: BIS Certification for Fibre Ropes IS 4572 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/5ppBDV76d6I/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Fibre Ropes IS 4572</video:title>
             <video:description>Detailed overview of standards compliance requirements in India.</video:description>
             <video:player_loc>https://www.youtube.com/embed/5ppBDV76d6I</video:player_loc>
         </video:video>
+        
+        <!-- Video 6: BIS Certification for Solar Flat Plate Collector - IS 12933 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/OCQZUvsxcHU/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Solar Flat Plate Collector - IS 12933</video:title>
             <video:description>Learn about quality management systems for manufacturing excellence.</video:description>
             <video:player_loc>https://www.youtube.com/embed/OCQZUvsxcHU</video:player_loc>
         </video:video>
+        
+        <!-- Video 7: A Guide on BIS Certification by Sun Certifications India -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/hSNURmPAKDA/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>A Guide on BIS Certification by Sun Certifications India</video:title>
             <video:description>Professional BIS certification services and expert guidance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/hSNURmPAKDA</video:player_loc>
         </video:video>
+        
+        <!-- Video 8: BIS Certifications For Toys under IS 9873 & 15644 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/7NazqQXmOa8/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certifications For Toys under IS 9873 &amp; 15644</video:title>
             <video:description>Overview of quality assurance and standards compliance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/7NazqQXmOa8</video:player_loc>
         </video:video>
+        
+        <!-- Video 9: Simplifying Certification: BIS, CDSCO, LMPC, EPR, PESO, WPC & More -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/2PMhlbYSCQk/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>Simplifying Certification: BIS, CDSCO, LMPC, EPR, PESO, WPC &amp; More</video:title>
             <video:description>Guide on certification standards and compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/2PMhlbYSCQk</video:player_loc>
         </video:video>
+        
+        <!-- Video 10: BIS Certification for Chipboard Screws - IS 18508:2024 -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/6JG1nSiLAao/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Chipboard Screws - IS 18508:2024</video:title>
             <video:description>Complete guide to BIS certification and compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/6JG1nSiLAao</video:player_loc>
         </video:video>
+        
+        <!-- Video 11: BIS Certification Guide - Complete Process Overview -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/F0bmGrWeDiI/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Guide - Complete Process Overview</video:title>
             <video:description>Comprehensive guide to BIS certification process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/F0bmGrWeDiI</video:player_loc>
         </video:video>
+        
+        <!-- Video 12: BIS Certification Process - Step by Step Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/8ltY8GNIdUk/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Process - Step by Step Guide</video:title>
             <video:description>Learn about BIS certification standards and requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/8ltY8GNIdUk</video:player_loc>
         </video:video>
+        
+        <!-- Video 13: BIS Standards and Quality Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/smPy_KzA95k/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Standards and Quality Requirements</video:title>
             <video:description>Understanding BIS standards and quality requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/smPy_KzA95k</video:player_loc>
         </video:video>
+        
+        <!-- Video 14: BIS Foreign Manufacturer Certification -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/0Np5Zioo7jE/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Foreign Manufacturer Certification</video:title>
             <video:description>Guide to BIS certification procedures and compliance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/0Np5Zioo7jE</video:player_loc>
         </video:video>
+        
+        <!-- Video 15: BIS Renewal and Maintenance Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/kJOkqSmyxZg/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Renewal and Maintenance Requirements</video:title>
             <video:description>Learn about BIS license and compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/kJOkqSmyxZg</video:player_loc>
         </video:video>
+        
+        <!-- Video 16: BIS Marking and Labeling Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/Tcq0S4EvUX4/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Marking and Labeling Requirements</video:title>
             <video:description>Understanding BIS marking and certification standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/Tcq0S4EvUX4</video:player_loc>
         </video:video>
+        
+        <!-- Video 17: BIS Product Categories and Standards -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/c0vLXrQZyj8/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Product Categories and Standards</video:title>
             <video:description>Overview of BIS product categories and standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/c0vLXrQZyj8</video:player_loc>
         </video:video>
+        
+        <!-- Video 18: BIS Consultancy Services and Support -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/0bM1Kb8_KLY/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Consultancy Services and Support</video:title>
             <video:description>Expert BIS consultancy and certification support.</video:description>
             <video:player_loc>https://www.youtube.com/embed/0bM1Kb8_KLY</video:player_loc>
         </video:video>
+        
+        <!-- Video 19: BIS Compliance Audits and Inspections -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/lObCWpF50wc/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Compliance Audits and Inspections</video:title>
             <video:description>Understanding BIS compliance audits and inspections.</video:description>
             <video:player_loc>https://www.youtube.com/embed/lObCWpF50wc</video:player_loc>
         </video:video>
+        
+        <!-- Video 20: BIS Certification Standards and Compliance Guidelines -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/iafdcHwzojY/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Standards and Compliance Guidelines</video:title>
             <video:description>Learn about BIS certification standards and guidelines.</video:description>
             <video:player_loc>https://www.youtube.com/embed/iafdcHwzojY</video:player_loc>
         </video:video>
+        
+        <!-- Video 21: BIS Product Certification - Requirements and Process -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/wcMNd8KWRBc/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Product Certification - Requirements and Process</video:title>
             <video:description>Understanding BIS product certification requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/wcMNd8KWRBc</video:player_loc>
         </video:video>
+        
+        <!-- Video 22: BIS Licensing and Registration Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/H1tawJliSx4/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Licensing and Registration Guide</video:title>
             <video:description>Guide to BIS licensing and registration process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/H1tawJliSx4</video:player_loc>
         </video:video>
+        
+        <!-- Video 23: BIS Quality Control and Testing Standards -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/r1FF4cld4F4/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Quality Control and Testing Standards</video:title>
             <video:description>Learn about BIS quality control and testing standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/r1FF4cld4F4</video:player_loc>
         </video:video>
+        
+        <!-- Video 24: BIS Compliance Framework for Industries -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/MBTBBrd3FwA/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Compliance Framework for Industries</video:title>
             <video:description>Understanding BIS compliance framework for industries.</video:description>
             <video:player_loc>https://www.youtube.com/embed/MBTBBrd3FwA</video:player_loc>
         </video:video>
+        
+        <!-- Video 25: BIS Certification for Electronics and Electrical Products -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/NK5yU-h3JsU/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification for Electronics and Electrical Products</video:title>
             <video:description>Guide to BIS certification for electronics products.</video:description>
             <video:player_loc>https://www.youtube.com/embed/NK5yU-h3JsU</video:player_loc>
         </video:video>
+        
+        <!-- Video 26: BIS Documentation and Application Process -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/_kE1zi8JW-I/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Documentation and Application Process</video:title>
             <video:description>Guide to BIS documentation and application process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/_kE1zi8JW-I</video:player_loc>
         </video:video>
+        
+        <!-- Video 27: BIS Import Certification and Customs Clearance -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/5iW38DgNrTg/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Import Certification and Customs Clearance</video:title>
             <video:description>Guide to BIS import certification and compliance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/5iW38DgNrTg</video:player_loc>
         </video:video>
+        
+        <!-- Video 28: BIS Testing and Laboratory Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/p0B0IiyW7D0/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Testing and Laboratory Requirements</video:title>
             <video:description>Guide to BIS testing and laboratory requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/p0B0IiyW7D0</video:player_loc>
         </video:video>
+        
+        <!-- Video 29: BIS Fees and Charges - Complete Breakdown -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/3NVNRsz8_v0/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Fees and Charges - Complete Breakdown</video:title>
             <video:description>Complete breakdown of BIS certification fees.</video:description>
             <video:player_loc>https://www.youtube.com/embed/3NVNRsz8_v0</video:player_loc>
         </video:video>
+        
+        <!-- Video 30: BIS vs International Standards -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/oKveflK60ng/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS vs International Standards</video:title>
             <video:description>Comparison of BIS and international standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/oKveflK60ng</video:player_loc>
         </video:video>
+        
+        <!-- Video 31: BIS Common Issues and Solutions -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/fVBM34yUI9E/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Common Issues and Solutions</video:title>
             <video:description>Common issues and solutions in BIS certification.</video:description>
             <video:player_loc>https://www.youtube.com/embed/fVBM34yUI9E</video:player_loc>
         </video:video>
+        
+        <!-- Video 32: BIS Certification Process - Complete Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/7eOURbCr79w/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Process - Complete Guide</video:title>
             <video:description>Comprehensive guide to BIS certification for manufacturers.</video:description>
             <video:player_loc>https://www.youtube.com/embed/7eOURbCr79w</video:player_loc>
         </video:video>
+        
+        <!-- Video 33: BIS Certification Guide - Expert Insights -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/yaQxlb3Up9o/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Guide - Expert Insights</video:title>
             <video:description>Professional insights on BIS certification process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/yaQxlb3Up9o</video:player_loc>
         </video:video>
+        
+        <!-- Video 34: BIS Standards Compliance - Complete Overview -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/enFEXKq-QUg/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Standards Compliance - Complete Overview</video:title>
             <video:description>Overview of BIS standards compliance requirements.</video:description>
             <video:player_loc>https://www.youtube.com/embed/enFEXKq-QUg</video:player_loc>
         </video:video>
+        
+        <!-- Video 35: BIS Certification Requirements -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/tMkCv4OV_CU/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Requirements</video:title>
             <video:description>Detailed guide on BIS certification and compliance.</video:description>
             <video:player_loc>https://www.youtube.com/embed/tMkCv4OV_CU</video:player_loc>
         </video:video>
+        
+        <!-- Video 36: BIS Certification Overview -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/CArRYo9r4C0/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Overview</video:title>
             <video:description>Overview of BIS certification requirements and process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/CArRYo9r4C0</video:player_loc>
         </video:video>
+        
+        <!-- Video 37: BIS Quality Standards Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/4S7hYOZuNvM/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Quality Standards Guide</video:title>
             <video:description>Complete guide to BIS certification process.</video:description>
             <video:player_loc>https://www.youtube.com/embed/4S7hYOZuNvM</video:player_loc>
         </video:video>
+        
+        <!-- Video 38: BIS Certification Compliance -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/zauM26gRE-M/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Compliance</video:title>
             <video:description>Learn about BIS certification and compliance standards.</video:description>
             <video:player_loc>https://www.youtube.com/embed/zauM26gRE-M</video:player_loc>
         </video:video>
+        
+        <!-- Video 39: BIS Certification Process Guide -->
         <video:video>
             <video:thumbnail_loc>https://img.youtube.com/vi/2GfPo9dKyd8/maxresdefault.jpg</video:thumbnail_loc>
             <video:title>BIS Certification Process Guide</video:title>
@@ -240,4 +318,4 @@
         </video:video>
     </url>
 
-</urlset>
+</urlset> 
