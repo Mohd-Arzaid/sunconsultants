@@ -11,6 +11,7 @@ import CRSRegistrationDutch from "../pages/CRSRegistration/CRSRegistrationDutch"
 import CRSRegistrationGerman from "../pages/CRSRegistration/CRSRegistrationGerman";
 import CRSRegistrationVietnamese from "../pages/CRSRegistration/CRSRegistrationVietnamese";
 import CRSRegistrationArabic from "../pages/CRSRegistration/CRSRegistrationArabic";
+import CRSRegistrationChinese from "../pages/CRSRegistration/CRSRegistrationChinese";
 
 export const CRSRegistrationRoutes = () => {
   return (
@@ -75,6 +76,11 @@ export const CRSRegistrationRoutes = () => {
       <Route
         path="/ar/ma-huwa-crs-bis-aw-tasjeel-crs"
         element={<CRSRegistrationArabic />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/zh/crs-bis-shi-shen-me-huo-crs-deng-ji"
+        element={<CRSRegistrationChinese />}
       />
       {/* ============================ End CRS routes (all languages) ============================ */}
     </>

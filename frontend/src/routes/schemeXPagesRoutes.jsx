@@ -11,6 +11,7 @@ import SchemeXKorean from "../pages/SchemeX/SchemeXKorean";
 import SchemeXDutch from "../pages/SchemeX/SchemeXDutch";
 import SchemeXArabic from "../pages/SchemeX/SchemeXArabic";
 import SchemeXThai from "../pages/SchemeX/SchemeXThai";
+import SchemeXChinese from "../pages/SchemeX/SchemeXChainese";
 
 export const SchemeXPagesRoutes = () => {
   return (
@@ -74,6 +75,11 @@ export const SchemeXPagesRoutes = () => {
       <Route
         path="/th/bis-prathiap-india-taem-dai-tae-skema-x"
         element={<SchemeXThai />}
+      />
+      {/* Scheme X Chinese Page */}
+      <Route
+        path="/zh/yin-du-bis-fang-an-x-ren-zheng"
+        element={<SchemeXChinese />}
       />
     </>
   );
