@@ -56,6 +56,10 @@ const ServicesRightSideContentArabic = () => {
     "/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail",
     "/shahadat-bis-mukhatat-x-lil-alat-al-kahrabiya-al-dawara",
     "/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik",
+    "/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-hata-1000-folt",
+    "/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-fawq-1000-folt",
+    "/shahadat-bis-mukhatat-x-lil-muhawilat",
+    "/shahadat-bis-mukhatat-x-lil-alat-al-nasij-wa-al-anwal",
   ];
 
   // Check if current path should show these components
@@ -619,6 +623,14 @@ const ContactFormServicesRightSideContentArabic = () => {
       return "Rotary Electrical Machines Arabic (Scheme X)";
     if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik"))
       return "Rubber and Plastics Machinery Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-hata-1000-folt"))
+      return "Switchgear and Controlgear Equipment Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-fawq-1000-folt"))
+      return "Switchgear and Controlgear Equipment Above 1000 Volts Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-muhawilat"))
+      return "Transformers Arabic (Scheme X)";
+    if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-nasij-wa-al-anwal"))
+      return "Weaving Machines Arabic (Scheme X)";
   };
 
   const [formData, setFormData] = useState({

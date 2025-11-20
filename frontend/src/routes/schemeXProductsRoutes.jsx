@@ -195,6 +195,7 @@ import SwitchgearandControlgearEquipmentabove1000VoltsItalian from "../schemeXPr
 import SwitchgearandControlgearEquipmentabove1000VoltsJapanese from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsJapanese";
 import SwitchgearandControlgearEquipmentabove1000VoltsThai from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsThai";
 import SwitchgearandControlgearEquipmentabove1000VoltsDutch from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsDutch";
+import SwitchgearandControlgearEquipmentabove1000VoltsArabic from "../schemeXProducts/SwitchgearandControlgearEquipmentabove1000Volts/SwitchgearandControlgearEquipmentabove1000VoltsArabic";
 import Transformers from "../schemeXProducts/Transformers/Transformers";
 import TransformersFrench from "../schemeXProducts/Transformers/TransformersFrench";
 import TransformersGerman from "../schemeXProducts/Transformers/TransformersGerman";
@@ -206,6 +207,7 @@ import TransformersItalian from "../schemeXProducts/Transformers/TransformersIta
 import TransformersJapanese from "../schemeXProducts/Transformers/TransformersJapanese";
 import TransformersThai from "../schemeXProducts/Transformers/TransformersThai";
 import TransformersDutch from "../schemeXProducts/Transformers/TransformersDutch";
+import TransformersArabic from "../schemeXProducts/Transformers/TransformersArabic";
 import WeavingMachines from "../schemeXProducts/WeavingMachines/WeavingMachines";
 import WeavingMachinesFrench from "../schemeXProducts/WeavingMachines/WeavingMachinesFrench";
 import WeavingMachinesGerman from "../schemeXProducts/WeavingMachines/WeavingMachinesGerman";
@@ -217,6 +219,7 @@ import WeavingMachinesItalian from "../schemeXProducts/WeavingMachines/WeavingMa
 import WeavingMachinesJapanese from "../schemeXProducts/WeavingMachines/WeavingMachinesJapanese";
 import WeavingMachinesThai from "../schemeXProducts/WeavingMachines/WeavingMachinesThai";
 import WeavingMachinesDutch from "../schemeXProducts/WeavingMachines/WeavingMachinesDutch";
+import WeavingMachinesArabic from "../schemeXProducts/WeavingMachines/WeavingMachinesArabic";
 import CentrifugesJapanese from "@/schemeXProducts/Centrifuges/CentrifugesJapanese";
 import CompressorsJapanese from "@/schemeXProducts/Compressors/CompressorsJapanese";
 import ConstructionMachineryJapanese from "@/schemeXProducts/ConstructionMachinery/ConstructionMachineryJapanese";
@@ -235,6 +238,7 @@ import RotaryElectricalMachinesDutch from "../schemeXProducts/RotaryElectricalMa
 import SwitchgearandControlgearEquipmentJapanese from "@/schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentJapanese";
 import SwitchgearandControlgearEquipmentThai from "@/schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentThai";
 import SwitchgearandControlgearEquipmentDutch from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentDutch";
+import SwitchgearandControlgearEquipmentArabic from "../schemeXProducts/SwitchgearandControlgearEquipment/SwitchgearandControlgearEquipmentArabic";
 
 export const SchemeXProductsRoutes = () => {
   return (
@@ -1454,6 +1458,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-tot-1000-volt"
         element={<SwitchgearandControlgearEquipmentDutch />}
       />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-hata-1000-folt"
+        element={<SwitchgearandControlgearEquipmentArabic />}
+      />
 
       {/* Switchgear And Controlgear Equipment Pages End */}
 
@@ -1520,6 +1529,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-boven-1000-volt"
         element={<SwitchgearandControlgearEquipmentabove1000VoltsDutch />}
+      />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-fawq-1000-folt"
+        element={<SwitchgearandControlgearEquipmentabove1000VoltsArabic />}
       />
 
       {/* Switchgear And Controlgear Equipment Above 1000 Volts Pages End */}
@@ -1588,6 +1602,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-schema-x-certificering-voor-transformators"
         element={<TransformersDutch />}
       />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-muhawilat"
+        element={<TransformersArabic />}
+      />
 
       {/* Transformers Pages End */}
 
@@ -1654,6 +1673,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-schema-x-certificering-voor-weefmachines-getouwen"
         element={<WeavingMachinesDutch />}
+      />
+      {/* Arabic */}
+      <Route
+        path="/shahadat-bis-mukhatat-x-lil-alat-al-nasij-wa-al-anwal"
+        element={<WeavingMachinesArabic />}
       />
 
       {/* Weaving Machines Pages End */}

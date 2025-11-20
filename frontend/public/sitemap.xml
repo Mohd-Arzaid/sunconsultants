@@ -2693,6 +2693,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-hata-1000-folt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Switchgear and Controlgear Equipments - SchemeX Products End  -->
 
   <!-- Switchgear and Controlgear Equipment above 1000 Volts - SchemeX Products Start -->
@@ -2762,6 +2769,13 @@
   <!-- Dutch -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-boven-1000-volt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-fawq-1000-folt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -2847,7 +2861,14 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
-<!-- Transformers - SchemeX Products End -->
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-muhawilat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Transformers - SchemeX Products End -->
 
 
 <!-- Weaving Machines - SchemeX Products Start -->
@@ -2928,7 +2949,14 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
-<!-- Weaving Machines - SchemeX Products End -->
+  <!-- Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-alat-al-nasij-wa-al-anwal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Weaving Machines - SchemeX Products End -->
 
 
   <!-- Korean Routes -->

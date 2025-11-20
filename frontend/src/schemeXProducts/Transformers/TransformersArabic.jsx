@@ -23,37 +23,36 @@ import {
   const LMPC = "/services-images/LMPC.jpg";
   const ISIMarkImage = "/services-images/ISIMark.jpg";
   
-  const SwitchgearandControlgearEquipmentArabic = () => {
+  const TransformersArabic = () => {
     return (
       <div className="relative w-full">
-        <SwitchgearandControlgearEquipmentMetaTags />
-        <SwitchgearandControlgearEquipmentBreadcrumb />
-        <SwitchgearandControlgearEquipmentMainContent />
+        <TransformersMetaTags />
+        <TransformersBreadcrumb />
+        <TransformersMainContent />
         <Services />
-        <VideoSection /> 
+        <VideoSection />
         <FooterArabic />
-      </div> 
+      </div>
     );
   };
   
-  export default SwitchgearandControlgearEquipmentArabic;
+  export default TransformersArabic;
   
-  const SwitchgearandControlgearEquipmentMetaTags = () => {
-    const title =
-      "شهادة BIS المخطط X لمعدات Switchgear و Controlgear حتى 1000 فولت";
+  const TransformersMetaTags = () => {
+    const title = "شهادة BIS المخطط X للمحولات";
     const description =
-      "شهادة BIS المخطط X لمعدات switchgear و controlgear حتى 1000 فولت ومجموعاتها، ومجموعاتها الفرعية، ومكوناتها، إلزامية لضمان الجودة والسلامة في الهند";
+      "تحدد شهادة BIS المخطط X للمحولات معايير الجودة والسلامة لتصنيع واستيراد المحولات إلى الهند";
     const keywords =
-      "شهادة BIS لمعدات Switchgear و Controlgear، شهادة BIS المخطط X لمعدات Switchgear و Controlgear، شهادة المخطط X لمعدات Switchgear و Controlgear، BIS لمعدات Switchgear و Controlgear، OTR لمعدات Switchgear و Controlgear";
+      "شهادة BIS للمحولات، شهادة BIS المخطط X للمحولات، شهادة المخطط X للمحولات، BIS للمحولات، OTR للمحولات";
     const canonicalUrl = window.location.href;
     const author = "Sun Certifications India";
     const publisher =
       "Dhruv Aggarwal, Head of Operations at Sun Certification India";
     const ogTitle =
-      "شهادة BIS المخطط X لمعدات Switchgear و Controlgear حتى 1000 فولت في الهند | دليل كامل";
+      "شهادة BIS المخطط X للمحولات في الهند | دليل شامل";
     const ogDescription =
-      "تعلم كل شيء عن شهادة BIS المخطط X لمعدات switchgear و controlgear حتى 1000 فولت في الهند. فهم الامتثال لـ OTR 2024، عملية ترخيص BIS، متطلبات علامة ISI، وكيفية الحصول على الشهادة قبل الموعد النهائي في سبتمبر 2026";
-  
+      "تعرف على كل شيء عن شهادة BIS المخطط X للمحولات في الهند. افهم الامتثال لـ OTR 2024، عملية ترخيص BIS، متطلبات علامة ISI، وكيفية الحصول على الشهادة قبل الموعد النهائي في سبتمبر 2026";
+
     return (
       <Helmet>
         <title>{title}</title>
@@ -73,7 +72,7 @@ import {
     );
   };
   
-  const SwitchgearandControlgearEquipmentBreadcrumb = () => {
+  const TransformersBreadcrumb = () => {
     return (
       <div className="absolute md:top-5 top-3 left-0 w-full z-30">
         <div className="max-w-[80rem] mx-auto px-4">
@@ -89,7 +88,7 @@ import {
                   <BreadcrumbSeparator className="flex-shrink-0">
                     <SlashIcon />
                   </BreadcrumbSeparator>
-  
+
                   <BreadcrumbItem className="flex-shrink-0">
                     <BreadcrumbLink asChild>
                       <Link to="/SchemeX-Products">منتجات المخطط X</Link>
@@ -98,11 +97,10 @@ import {
                   <BreadcrumbSeparator className="flex-shrink-0">
                     <SlashIcon />
                   </BreadcrumbSeparator>
-  
+
                   <BreadcrumbItem className="flex-shrink-0">
                     <BreadcrumbPage className="whitespace-nowrap">
-                      شهادة BIS لمعدات Switchgear و Controlgear
-                      حتى 1000 فولت
+                      شهادة BIS للمحولات
                     </BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
@@ -114,13 +112,13 @@ import {
     );
   };
   
-  const SwitchgearandControlgearEquipmentMainContent = () => {
+  const TransformersMainContent = () => {
     return (
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12 pt-[60px] md:pt-[75px]">
         <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
           {/* Left Side Content */}
-          <SwitchgearandControlgearEquipmentMainContentLeft />
-  
+          <TransformersMainContentLeft />
+
           {/* Right Side Content */}
           <ServicesRightSideContentArabic />
         </div>
@@ -128,259 +126,242 @@ import {
     );
   };
   
-  const SwitchgearandControlgearEquipmentMainContentLeft = () => {
+  const TransformersMainContentLeft = () => {
     return (
       <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
         {/* Blog Content */}
         <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
           {/* Main Heading */}
           <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-            شهادة BIS لمعدات Switchgear و Controlgear حتى 1000
-            فولت
+            شهادة BIS للمحولات
           </h1>
-  
+
           {/* Main Image */}
           <div className="mb-6">
             <img
-              src="/schemXproductImages/BIS-license-for-switch-gear-and-control-gear-equipment.png"
-              alt="شهادة BIS المخطط X لمعدات Switchgear و Controlgear حتى 1000 فولت"
-              title="ترخيص BIS المخطط X لمعدات Switchgear و Controlgear"
+              src="/schemXproductImages/BIS-Scheme-X-licence-for-Transformers.png"
+              alt="شهادة BIS المخطط X للمحولات"
+              title="ترخيص BIS المخطط X للمحولات"
               className="w-full h-auto rounded-lg shadow-md"
             />
           </div>
-  
+
           {/* Introduction Paragraph 1 */}
           <p className="text-gray-600 text-base font-geist mb-4">
-            في هذا العصر من الأتمتة والكهرباء، تعد مفاتيح التحكم ومفاتيح التحكم مكونات
-            أساسية في الأنظمة الكهربائية الآمنة والفعالة. من الأسلاك المنزلية إلى
-            الأنظمة الصناعية المتطورة، تدير هذه الأجهزة الحماية والتحكم والعزل لتدفق
-            الطاقة. نظرًا للموقع الحرج الذي تشغله هذه الأجهزة، فقد أنشأ مكتب المعايير
-            الهندية (BIS) شهادة إلزامية لهذه الأجهزة تحت المخطط X لضمان استيفائها
-            لمعايير السلامة والأداء المحددة في الهند.
+            المحولات هي مكونات أساسية في كل شبكة نقل وتوزيع الطاقة. بغض النظر عن تطبيقها في العمليات الصناعية أو التجارية أو المرافق، يجب أن تظل المحولات دائمًا معدات بأعلى مستويات السلامة والأداء التشغيلي بسبب الطبيعة الحرجة لوظائفها. لتعزيز السلامة والموثوقية والتوحيد في صناعة المعدات الكهربائية في الهند، جعل مكتب المعايير الهندي (BIS) شهادة BIS لجميع أنواع المحولات ومجموعاتها ومجموعاتها الفرعية ومكوناتها ومكوناتها الفرعية إلزامية تحت شهادة المخطط X.
           </p>
-  
+
           {/* Introduction Paragraph 2 */}
           <p className="text-gray-600 text-base font-geist mb-4">
-            وزارة الصناعات الثقيلة، بموجب اللوائح التقنية الشاملة، 2024،
-            فرضت شهادة BIS الإلزامية لجميع معدات switchgear و controlgear (≤ 1000 فولت)
-            المباعة والمستوردة والمصنعة في الهند اعتبارًا من 1 سبتمبر 2026. لمعالجة
-            المعدات الكهربائية غير المتوافقة وغير الآمنة، ولتحسين معايير المنتجات
-            المعروضة في السوق، جعلت BIS، بموجب شهادة المخطط X، الشهادة إلزامية لهذه
-            الأجهزة التي تعمل على أو أقل من 1000 فولت.
+            حددت وزارة الصناعات الثقيلة، من خلال أمر اللائحة الفنية الشاملة لعام 2024، موعدًا نهائيًا لجميع المصنعين، بغض النظر عن بلد المنشأ، لتحقيق شهادة BIS تحت المخطط X للمحولات والمعدات المماثلة بحلول 1 سبتمبر 2026. شهادة BIS المخطط X للمحولات هي خطوة نحو تحسين الجودة والاتساق والموثوقية والسلامة الكهربائية للمنتجات في الهند. بالنسبة للمصنعين أو المستوردين أو موردي OEM للمحولات مع المكونات، هذا المعيار هو أكثر من مجرد التزام بالامتثال.
           </p>
-  
+
           {/* Introduction Paragraph 3 */}
           <p className="text-gray-600 text-base font-geist mb-6">
-            تحدد هذه المدونة إجراءات الشهادة مع مزاياها ونطاقها وهدفها والأدلة الداعمة
-            والوثائق الهامة، الضرورية لشهادة المخطط X لجميع أنواع معدات switchgear و
-            controlgear التي تعمل (أو) مجموعاتها/مجموعاتها الفرعية/مكوناتها التي تعمل
-            على جهد لا يتجاوز 1000 فولت.
+            تغطي هذه المدونة جميع المعلومات ذات الصلة المتعلقة بالنطاق والأهمية والفوائد من الشهادة والعملية والوثائق المطلوبة لشهادة المخطط X لجميع أنواع المحولات و(أو) مجموعاتها ومجموعاتها الفرعية ومكوناتها و/أو التجميع.
           </p>
-  
+
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
-  
-          {/* Why BIS is Important Section */}
+
+          {/* Why Scheme X is Important Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            أهمية BIS لمعدات Switchgear و Controlgear
+            لماذا المخطط X للمحولات مهم
           </h2>
-  
-          <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-            معدات Switchgear و controlgear حتى 1000 فولت ضرورية في:
-          </h3>
-  
+
+          <p className="text-gray-600 text-base font-geist mb-4">
+            تُستخدم المحولات على نطاق واسع في:
+          </p>
+
           {/* Usage Areas */}
           <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-            <li>تركيبات توزيع الطاقة المنزلية والتجارية</li>
-            <li>أنظمة إدارة الطاقة للصناعة</li>
-            <li>مرافق الطاقة المتجددة (محطات الطاقة الشمسية/الرياح)</li>
-            <li>مشاريع البنية التحتية العامة</li>
-            <li>
-              التطبيقات الحرجة للسلامة التي تتطلب حماية الدوائر
-            </li>
+            <li>مرافق توليد الطاقة</li>
+            <li>شبكات النقل والتوزيع</li>
+            <li>المصانع ومباني الإنتاج</li>
+            <li>مشاريع الطاقة المتجددة (الطاقة الشمسية / الرياح / الطاقة الكهرومائية)</li>
+            <li>الممتلكات التجارية / السكنية</li>
           </ul>
-  
+
           <p className="text-gray-600 text-base font-geist mb-4">
-            بدون الشهادة المناسبة، تشمل المخاطر:
+            بدون الامتثال المناسب، يمكن أن تسبب المحولات:
           </p>
-  
+
           {/* Problems with Non-Certified Equipment */}
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-            <li>مخاطر الصدمات الكهربائية أو الحرائق</li>
-            <li>تلف المعدات ووقت التوقف المكلف</li>
-            <li>انتهاك معايير السلامة الهندية</li>
-            <li>
-              الحظر من العطاءات والمشاريع التي تتطلب معدات معتمدة
-            </li>
+          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
+            <li>الاحتراق الزائد والحرائق والصدمات الكهربائية.</li>
+            <li>فقدان وإهدار الطاقة أثناء النقل</li>
+            <li>انقطاع التيار الكهربائي بسبب تلف النظام</li>
+            <li>الرفض في المناقصات العامة ومشاريع الحكومة</li>
           </ul>
-  
+
           <p className="text-gray-600 text-base font-geist mb-6">
-            شهادة المخطط X لمعدات Switchgear و Controlgear
-            تضمن أن هذه المنتجات تلبي معايير الأداء والسلامة والمتانة.
+            تضمن شهادة المخطط X للمحولات السلامة العالية وكفاءة الطاقة وموثوقية المنتج.
           </p>
-  
+
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
-  
-          {/* What is BIS Scheme X Certification Section */}
+
+          {/* What is Scheme X Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            ما هي شهادة BIS المخطط X لمعدات Switchgear و Controlgear؟
+            ما هي شهادة المخطط X للمحولات؟
           </h2>
-  
+
           <p className="text-gray-600 text-base font-geist mb-4">
-            شهادة BIS المخطط X لمعدات Switchgear و Controlgear
-            هي جزء من لوائح تقييم المطابقة لـ BIS، 2018. تفرض
-            اختبار المنتج الإلزامي، وفحص المصنع، والامتثال
-            للمعايير الهندية المعمول بها.
+            شهادة BIS المخطط X للمحولات هي إطار قانوني بموجب لائحة تقييم الامتثال BIS لعام 2018. تتطلب اختبارًا وتفتيشًا صارمًا وتطالب بمستوى أعلى من الوثائق لضمان الجودة وفقًا للمعايير الهندية.
           </p>
-  
+
           <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
-            شهادة المخطط X لمعدات Switchgear و Controlgear: الميزات الرئيسية:
+            الميزات الرئيسية لشهادة المخطط X:
           </h3>
-  
+
           <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-            <li>تنطبق على جميع المصنعين الهنود والأجانب</li>
+            <li>لجميع المصنعين، الهنود والأجانب.</li>
             <li>
-              تغطي مجموعة من الأجهزة: قواطع الدوائر، وفواصل، ومفاتيح الفصل،
-              وحدات مجمعة للصمامات وأجهزة التحكم حتى 1000 فولت.
+              يشمل محولات التوزيع ومحولات الطاقة والمحولات ذات الأغراض الخاصة
             </li>
             <li>
-              تتطلب اختبارًا معمليًا في منشآت معتمدة من BIS
+              اختبار الأداء والكفاءة والسلامة في مختبرات معتمدة من BIS إلزامي
             </li>
-            <li>تشمل تدقيق نظام الإنتاج والجودة</li>
             <li>
-              تمنح الحق في استخدام علامة المعيار على المنتج بعد
-              الشهادة
+              يتم تدقيق المصنع لعمليات التصنيع وفحص أنظمة الجودة
             </li>
+            <li>يوفر ترخيصًا لاستخدام علامة المعيار BIS.</li>
           </ul>
-  
+
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
-  
+
           {/* OTR Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            BIS OTR لمعدات Switchgear و Controlgear
+            BIS OTR للمحولات
           </h2>
-  
+
           <p className="text-gray-600 text-base font-geist mb-4">
-            تم الإعلان عن OTR لمعدات Switchgear و Controlgear من قبل
-            وزارة الصناعات الثقيلة في عام 2024، والتي تتطلب
-            شهادة المخطط X.
+            قدمت وزارة الصناعات الثقيلة اللائحة الفنية الشاملة (OTR) للمحولات في عام 2024.
           </p>
-  
+
           <p className="text-gray-600 text-base font-geist mb-6">
-            الموعد النهائي: يُطلب من جميع المصنعين والمستوردين الحصول على
-            ترخيص BIS صالح لمعدات Switchgear و Controlgear تحت
-            المخطط X بحلول 1 سبتمبر 2026. "سيمنع ذلك معدات
-            switchgear و controlgear غير المعتمدة من البيع أو
-            الاستيراد أو التصنيع في الهند،" حسب قول مسؤول حكومي.
+            تاريخ الامتثال: يجب أن يكون جميع المصنعين والمستوردين معتمدين بحلول 1 سبتمبر 2026. بعد ذلك، لا يمكن تصنيع أو إحضار أو بيع المحولات غير المعتمدة في الهند.
           </p>
-  
+
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
-  
+
           {/* Advantages Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            مزايا شهادة BIS لمعدات Switchgear و Controlgear
+            فوائد BIS للمحولات
           </h2>
-  
+
           <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
             <li>
-              السلامة الكهربائية: الحماية من الدوائر القصيرة والحمل الزائد
-              ومخاطر الحرائق المحتملة.
+              السلامة والموثوقية: التحقق من أن المحولات تلتزم بمتطلبات السلامة الكهربائية ومنع الحرائق.
             </li>
             <li>
-              الامتثال التنظيمي: إلزامي بموجب OTR لأجهزة Switchgear و
-              Controlgear.
+              كفاءة الطاقة: تشجع على تقليل فقدان الطاقة وأداء طاقة أفضل.
             </li>
             <li>
-              قبول السوق: المنتجات المسجلة مقبولة لجميع المشاريع
-              الحكومية والخاصة.
+              امتثال السوق: الامتثال لمتطلبات تنظيم المحولات، كما هو مذكور في OTR.
             </li>
             <li>
-              ثقة العملاء: علامة معيار BIS على Switchgear و
-              Controlgear تمنح العملاء الثقة في الجودة والسلامة.
+              الأهلية للمناقصات: المنتجات المعتمدة مؤهلة لمناقصات الحكومة وPSU.
             </li>
             <li>
-              الميزة التنافسية: تعزز سمعة العلامة التجارية وتفتح الأبواب
-              للأعمال الجديدة.
+              ثقة العملاء: تضمن علامة المعيار BIS جودة المنتج والمتانة.
             </li>
           </ul>
-  
+
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
-  
-          {/* Process Section */}
+
+          {/* Types of Transformers Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-            عملية شهادة BIS لمعدات Switchgear و Controlgear
+            أنواع المحولات المشمولة
           </h2>
-  
-          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+
+          <p className="text-gray-600 text-base font-geist mb-4">
+            تنطبق شهادة BIS المخطط X للمحولات على:
+          </p>
+
+          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
             <li>
-              تحديد المعيار الهندي ذي الصلة: تحديد رمز IS المتعلق
-              بمعدات switchgear و controlgear حتى 1000 فولت.
+              محولات التوزيع (للاستخدام في الشبكات المحلية والإمداد السكني)
             </li>
             <li>
-              اختبار المنتج: إجراء اختبارات السلامة والأداء والمتانة
-              في المختبرات المعتمدة من BIS.
+              محولات الطاقة (على مستوى شبكة النقل عالية الجهد)
             </li>
             <li>
-              تدقيق المصنع: يتحقق مفتشو BIS من المصنع ونظام مراقبة
-              الجودة.
-            </li>
-            <li>
-              تقديم الوثائق: جميع المواصفات التفصيلية وتقارير الاختبار
-              وملفات دعم الامتثال.
-            </li>
-            <li>
-              إصدار ترخيص BIS: إذا تم القبول، تصدر BIS ترخيصًا
-              لاستخدام علامة المعيار.
-            </li>
-            <li>
-              الامتثال المستمر: التدقيق على المعايير واختبار المنتج
-              على فترات منتظمة يضمن بقاء الشهادة صالحة.
+              المحولات ذات الأغراض الخاصة (تطبيقات صناعية وسكك حديدية ومشاريع الطاقة المتجددة)
             </li>
           </ul>
-  
+
+          <p className="text-gray-600 text-base font-geist mb-6">
+            يجب أن تلبي كل نوع رموز IS ذات الصلة (انظر الملاحظة) مثل IS 16819:2018/ISO 12100:2010 (سلامة الآلات - المبادئ العامة للتصميم - تقييم المخاطر وتقليل المخاطر). يجب أن تتوافق جميع الأنواع مع رموز IS الخاصة بها للحصول على الشهادة.
+          </p>
+
+          {/* Separator Line */}
+          <div className="h-px w-full bg-gray-300 my-6"></div>
+
+          {/* Process Section */}
+          <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+            عملية شهادة BIS للمحولات
+          </h2>
+
+          <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+            <li>
+              تحديد المعيار المعمول به: يرجى الرجوع إلى رموز IS لأنواع مختلفة من المحولات.
+            </li>
+            <li>
+              اختبار المنتج: إجراء فحوصات السلامة وكفاءة الطاقة والأداء في مختبرات معتمدة من BIS.
+            </li>
+            <li>
+              تدقيق المصنع: يراقب موظفو BIS إنتاج المصنع وأنظمة مراقبة الجودة.
+            </li>
+            <li>
+              تقديم الوثائق: إرسال المواصفات وتقارير الاختبار وبيانات الامتثال.
+            </li>
+            <li>
+              منح الترخيص: يمنح BIS ترخيصًا لاستخدام علامة المعيار عند استيفاء جميع الأحكام.
+            </li>
+            <li>
+              الامتثال المستمر: يتم إجراء الاختبارات والمراجعات الروتينية للحفاظ على صلاحية الشهادة.
+            </li>
+          </ul>
+
           <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
             عقوبات عدم الامتثال
           </h3>
-  
+
           <p className="text-gray-600 text-base font-geist mb-4">
-            عدم الامتثال لشهادة BIS لمعدات Switchgear و
-            Controlgear بموجب نظام OTR له العواقب التالية:
+            يعني الفشل في الامتثال لـ BIS / OTR للمحولات - شهادة BIS للمحولات تحت OTR للمحولات ما يلي:
           </p>
-  
+
           <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
             <li>
-              حظر التصنيع أو الاستيراد أو بيع أي منتج غير معتمد
+              حظر بيع وتصنيع واستيراد المحولات غير المعتمدة.
             </li>
-            <li>سيتم مصادرة المعدات غير المتوافقة؛ والغرامات.</li>
-            <li>عدم الأهلية في المناقصات الحكومية</li>
-            <li>الإضرار بالعلاقات التجارية والثقة في السوق.</li>
+            <li>
+              مصادرة إلزامية للمنتجات غير الممتثلة وعقوبات صارمة.
+            </li>
+            <li>عدم الأهلية لمناقصات الحكومة وPSU</li>
+            <li>ضرر طويل الأمد بالسمعة، خسائر مالية</li>
           </ul>
-  
+
           {/* Separator Line */}
           <div className="h-px w-full bg-gray-300 my-6"></div>
-  
+
           {/* Conclusion Section */}
           <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
             الخلاصة
           </h2>
-  
+
           <p className="text-gray-600 text-base font-geist mb-4">
-            تنفيذ شهادة BIS المخطط X لمعدات Switchgear و
-            Controlgear في OTR 2024 هو خطوة لضمان إدارة
-            الطاقة الآمنة والموثوقة والفعالة في الهند.
+            شهادة BIS المخطط X للمحولات، التي ستكون مطلوبة بموجب OTR للمحولات (2024)، هي خطوة مهمة في تحسين البنية التحتية للطاقة في الهند بمنتجات موثوقة وفعالة وآمنة.
           </p>
-  
+
           <p className="text-gray-600 text-base font-geist mb-6">
-            بالنسبة للمصنعين والمستوردين، فإن شهادة المخطط X لمعدات
-            Switchgear و Controlgear ليست التزامًا قانونيًا فحسب، بل
-            أيضًا استثمار استراتيجي، يضمن الوصول إلى السوق ومصداقية العلامة التجارية
-            وثقة العملاء بشكل عام.
+            بالنسبة للمصنعين والمستوردين، فإن شهادة المخطط X للمحولات ليست مجرد شهادة إلزامية ولكنها أيضًا أداة استراتيجية لكسب الثقة في السوق الهندي والحفاظ على النجاح طويل الأمد في صناعة الطاقة في البلاد.
           </p>
-  
+
           <ServiceAuthorArabic />
         </div>
       </div>
@@ -397,7 +378,7 @@ import {
                 خدماتنا
               </h2>
             </BoxReveal>
-  
+
             <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
               <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
                 <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
@@ -408,7 +389,7 @@ import {
               </div>
             </BoxReveal>
           </div>
-  
+
           <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-10 px-4 md:px-0 gap-y-12 md:gap-y-24">
             <Link
               to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
@@ -425,7 +406,7 @@ import {
                 علامة BIS (ترخيص ISI) للمصنعين الأجانب
               </p>
             </Link>
-  
+
             <Link
               to="/cdsco-registration-certification"
               className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
@@ -441,7 +422,7 @@ import {
                 شهادة تسجيل CDSCO
               </p>
             </Link>
-  
+
             <Link
               to="/what-is-crs-bis-or-crs-registration"
               className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
@@ -457,7 +438,7 @@ import {
                 تسجيل BIS (CRS)
               </p>
             </Link>
-  
+
             <Link
               to="/epr-certificate-for-plastic-waste-management-pwm"
               className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
@@ -473,7 +454,7 @@ import {
                 إدارة النفايات البلاستيكية
               </p>
             </Link>
-  
+
             <Link
               to="/a-guide-on-how-to-obtain-epr-certificate"
               className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
@@ -489,7 +470,7 @@ import {
                 شهادة شهادة EPR
               </p>
             </Link>
-  
+
             <Link
               to="/a-guide-on-how-to-obtain-lmpc-certificate"
               className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
@@ -505,7 +486,7 @@ import {
                 شهادة شهادة LMPC
               </p>
             </Link>
-  
+
             <Link
               to="/what-is-bis-certificate-indian-bis"
               className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
@@ -521,7 +502,7 @@ import {
                 شهادة تسجيل BIS
               </p>
             </Link>
-  
+
             <Link
               to="/a-guide-to-bis-certification-indian-bis"
               className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
@@ -542,4 +523,3 @@ import {
       </div>
     );
   };
-  
