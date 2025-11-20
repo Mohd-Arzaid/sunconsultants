@@ -243,67 +243,84 @@
 </url>
 
 <!-- ISI Mark -->
-<url>
-  <loc>https://bis-certifications.com/a-guide-to-bis-certification-indian-bis</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/ja/bis-isi-mark-shounin</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/ko/bis-isi-mark-injeung</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/de/bis-isi-mark-zertifizierung</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/es/certificacion-bis-marca-isi</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/fr/certification-bis-marque-isi</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/id/sertifikasi-bis-isi-mark</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/it/certificazione-bis-isi-mark</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/nl/bis-isi-mark-certificering</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/vi/chung-nhan-bis-isi-mark</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/ar/dalil-shahadat-bis-bis-alhind</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://bis-certifications.com/th/bis-isi-mark-raprong</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-  
+  <!-- ISI Mark English -->
+  <url>
+    <loc>https://bis-certifications.com/a-guide-to-bis-certification-indian-bis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Japanese -->
+  <url>
+    <loc>https://bis-certifications.com/ja/bis-isi-mark-shounin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Korean -->
+  <url>
+    <loc>https://bis-certifications.com/ko/bis-isi-mark-injeung</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark German -->
+  <url>
+    <loc>https://bis-certifications.com/de/bis-isi-mark-zertifizierung</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Spanish -->
+  <url>
+    <loc>https://bis-certifications.com/es/certificacion-bis-marca-isi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark French -->
+  <url>
+    <loc>https://bis-certifications.com/fr/certification-bis-marque-isi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Indonesian -->
+  <url>
+    <loc>https://bis-certifications.com/id/sertifikasi-bis-isi-mark</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Italian -->
+  <url>
+    <loc>https://bis-certifications.com/it/certificazione-bis-isi-mark</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Dutch -->
+  <url>
+    <loc>https://bis-certifications.com/nl/bis-isi-mark-certificering</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Vietnamese -->
+  <url>
+    <loc>https://bis-certifications.com/vi/chung-nhan-bis-isi-mark</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Arabic -->
+  <url>
+    <loc>https://bis-certifications.com/ar/dalil-shahadat-bis-bis-alhind</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Thai -->
+  <url>
+    <loc>https://bis-certifications.com/th/bis-isi-mark-raprong</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ISI Mark Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/zh/bis-isi-mark-renzheng</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
 <!-- Scheme X -->
 <url>
