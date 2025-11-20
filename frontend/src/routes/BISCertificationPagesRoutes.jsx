@@ -11,6 +11,7 @@ import BISCertificationDutch from "../pages/BISCertification/BISCertificationDut
 import BISCertificationThai from "../pages/BISCertification/BISCertificationThai";
 import BISCertificationVietnamese from "../pages/BISCertification/BISCertificationVietnamese";
 import BISCertificationArabic from "../pages/BISCertification/BISCertificationArabic";
+import BISCertificationChinese from "../pages/BISCertification/BISCertificationChinese";
 
 export const BISCertificationPagesRoutes = () => {
   return (
@@ -74,6 +75,11 @@ export const BISCertificationPagesRoutes = () => {
       <Route
         path="/ar/ma-huwa-shahadat-bis-bis-alhind"
         element={<BISCertificationArabic />}
+      />
+      {/* BIS Certification Chinese Page */}
+      <Route
+        path="/zh/bis-zheng-shu-shi-shen-me-yin-du-bis"
+        element={<BISCertificationChinese />}
       />
     </>
   );

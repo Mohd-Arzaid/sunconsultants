@@ -34,6 +34,7 @@ const ServicesRightSideContentChinese = () => {
     "/zh/crs-bis-shi-shen-me-huo-crs-deng-ji",
     "/zh/yin-du-bis-fang-an-x-ren-zheng",
     "/zh/bis-isi-mark-renzheng",
+    "/zh/bis-zheng-shu-shi-shen-me-yin-du-bis",
   ];
 
   // Check if current path should show these components
@@ -551,7 +552,6 @@ const ContactFormServicesRightSideContentChinese = () => {
 
   // Function to get page name based on URL
   const getPageName = () => {
-    // Chinese paths
     if (path.includes("/zh/crs-bis-shi-shen-me-huo-crs-deng-ji"))
       return "CRS Chinese - 中文页面";
     if (
@@ -559,8 +559,14 @@ const ContactFormServicesRightSideContentChinese = () => {
       path.includes("/indian-bis-certification-under-scheme-x")
     )
       return "Scheme X Chinese - 中文页面";
+
+    // ISI Mark Chinese Page Url
     if (path.includes("/zh/bis-isi-mark-renzheng"))
       return "ISI Mark - Chinese Page";
+
+    // BIS Certification Chinese Page Url
+    if (path.includes("/zh/bis-zheng-shu-shi-shen-me-yin-du-bis"))
+      return "BIS Certification - Chinese Page";
   };
 
   const [formData, setFormData] = useState({
