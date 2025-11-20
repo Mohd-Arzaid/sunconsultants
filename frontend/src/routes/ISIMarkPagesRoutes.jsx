@@ -11,6 +11,7 @@ import ISIMarkDutch from "../pages/ISIMark/ISIMarkDutch";
 import ISIMarkVietnamese from "../pages/ISIMark/ISIMarkVietnamese";
 import ISIMarkArabic from "../pages/ISIMark/ISIMarkArabic";
 import ISIMarkThai from "../pages/ISIMark/ISIMarkThai";
+import ISIMarkChinese from "@/pages/ISIMark/ISIMarkChinese";
 
 export const ISIMarkPagesRoutes = () => {
   return (
@@ -64,6 +65,8 @@ export const ISIMarkPagesRoutes = () => {
       />
       {/* ISIMark Thai Page */}
       <Route path="/th/bis-isi-mark-raprong" element={<ISIMarkThai />} />
+      {/* ISIMark Chinese Page */}
+      <Route path="/zh/bis-isi-mark-renzheng" element={<ISIMarkChinese />} />
       {/* ========================= End ISIMark routes (all languages) ======================== */}
     </>
   );
