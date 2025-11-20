@@ -723,7 +723,7 @@ import {
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                BIS Mark (ISI License) for Foreign Manufacture
+                外国制造的BIS标志（ISI许可证）
               </p>
             </Link>
   
@@ -739,7 +739,7 @@ import {
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                CDSCO Registration Certification
+                CDSCO注册认证
               </p>
             </Link>
   
@@ -755,7 +755,7 @@ import {
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                BIS (CRS) Registration
+                BIS（CRS）注册
               </p>
             </Link>
   
@@ -771,7 +771,7 @@ import {
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                Plastic Waste Management
+                塑料废物管理
               </p>
             </Link>
   
@@ -787,7 +787,7 @@ import {
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                EPR Certificate certifications
+                EPR证书认证
               </p>
             </Link>
   
@@ -803,7 +803,7 @@ import {
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                LMPC Certificate certifications
+                LMPC证书认证
               </p>
             </Link>
   
@@ -819,7 +819,7 @@ import {
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                BIS Registration Certificate
+                BIS注册证书
               </p>
             </Link>
   
@@ -835,7 +835,7 @@ import {
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                ISI MARK (BIS) for Indian Manufactures
+                印度制造商的ISI标志（BIS）
               </p>
             </Link>
           </div>
@@ -1579,64 +1579,64 @@ import {
   const SchemeXServiceFaq = () => {
     const faqData = [
       {
-        question: "1. What is Scheme X under BIS certification?",
-        answer: "Scheme X is a conformity assessment scheme introduced by the Indian BIS for machinery and electrical equipment. It ensures compliance with stringent safety and technical standards as specified in the Omnibus Technical Regulation."
+        question: "1. BIS认证下的方案X是什么？",
+        answer: "方案X是印度BIS为机械和电气设备引入的符合性评估方案。它确保符合综合技术法规中规定的严格安全和技术标准。"
       },
       {
-        question: "2. Is Scheme X different from the ISI mark certification?",
-        answer: "Yes. The ISI mark is generally for consumer goods and basic product compliance, while Scheme X applies to complex and industrial-grade products that require advanced testing and certification through a BIS certificate or BIS license."
+        question: "2. 方案X与ISI标志认证不同吗？",
+        answer: "是的。ISI标志通常用于消费品和基本产品合规性，而方案X适用于需要通过BIS证书或BIS许可证进行高级测试和认证的复杂和工业级产品。"
       },
       {
-        question: "3. Who needs to apply for Scheme X certification?",
-        answer: "Manufacturers and importers of machinery and electrical equipment listed under the Omnibus Technical Regulation must apply for Scheme X and obtain a valid BIS certification to legally sell or distribute their products in India. Global manufacturers or foreign manufacturers intending to sell product in India must also comply with these regulations."
+        question: "3. 谁需要申请方案X认证？",
+        answer: "综合技术法规下列出的机械和电气设备的制造商和进口商必须申请方案X并获得有效的BIS认证，才能在印度合法销售或分销其产品。打算在印度销售产品的全球制造商或外国制造商也必须遵守这些法规。"
       },
       {
-        question: "4. What is the cost of BIS Scheme X certification?",
-        answer: "The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at admin@bis-certifications.com."
+        question: "4. BIS方案X认证的费用是多少？",
+        answer: "方案X的费用包括申请费、认证费、技术文件审查费、工厂检查费和产品测试费。平均而言，申请费用从₹2,000开始，根据产品复杂程度可能会增加。更多详情请联系我们：admin@bis-certifications.com。"
       },
       {
-        question: "5. How long does it take to get a BIS licence under Scheme X?",
-        answer: "The timeline varies depending on documentation, testing requirements, and factory inspections. Typically, it takes 4–6 weeks from the date of successful BIS registration and application submission for Indian manufacturers and 60-90 days for foreign manufacturers."
+        question: "5. 在方案X下获得BIS许可证需要多长时间？",
+        answer: "时间表因文件、测试要求和工厂检查而异。通常，对于印度制造商，从成功BIS注册和申请提交之日起需要4-6周，对于外国制造商需要60-90天。"
       },
       {
-        question: "6. Can MSMEs also apply for BIS certification under Scheme X?",
-        answer: "Absolutely. In fact, the Indian BIS encourages MSMEs to apply for a BIS licence or certificate of conformity under Scheme X to boost quality, compliance, and competitiveness in the industrial sector."
+        question: "6. 中小微企业也可以申请方案X下的BIS认证吗？",
+        answer: "绝对可以。事实上，印度BIS鼓励中小微企业申请方案X下的BIS许可证或符合性证书，以提高工业部门的质量、合规性和竞争力。"
       },
       {
-        question: "7. Is BIS certification under Scheme X mandatory for exports?",
-        answer: "No. Products manufactured exclusively for export are exempt under the Omnibus Technical Regulation. However, products meant for Indian markets must be certified under Scheme X."
+        question: "7. 方案X下的BIS认证对出口是强制性的吗？",
+        answer: "不是。专门为出口制造的产品在综合技术法规下是豁免的。但是，面向印度市场的产品必须在方案X下获得认证。"
       },
       {
-        question: "8. What is the validity of the BIS license under Scheme X?",
-        answer: "A BIS licence under Scheme X is generally valid for 3-6 years and must be renewed accordingly. Renewal involves payment of the annual BIS certification fee and may require re-evaluation depending on changes in product scope or standards."
+        question: "8. 方案X下BIS许可证的有效期是多长？",
+        answer: "方案X下的BIS许可证通常有效期为3-6年，必须相应续签。续签涉及支付年度BIS认证费，并可能根据产品范围或标准的变化需要进行重新评估。"
       },
       {
-        question: "9. Can foreign manufacturers apply for Scheme X certification?",
-        answer: "Yes, foreign manufacturers can apply for Scheme X certification through an authorized Indian representative. The Indian BIS requires a factory inspection, which may take 3 days for foreign applicants, along with standard BIS registration and testing processes."
+        question: "9. 外国制造商可以申请方案X认证吗？",
+        answer: "是的，外国制造商可以通过授权印度代表申请方案X认证。印度BIS要求进行工厂检查，对于外国申请人可能需要3天，以及标准的BIS注册和测试流程。"
       },
       {
-        question: "10. What is a Technical File and why is it required?",
-        answer: "A Technical File is a detailed compliance dossier required under Scheme X. It includes manufacturing processes, product details, test reports, and quality control documents. It supports the product's conformity to relevant Indian Standards during the BIS certification process."
+        question: "10. 什么是技术文件，为什么需要它？",
+        answer: "技术文件是方案X下要求的详细合规档案。它包括制造过程、产品详情、测试报告和质量控制文件。它在BIS认证过程中支持产品符合相关印度标准。"
       },
       {
-        question: "11. How is Scheme X related to the Omnibus Technical Regulation?",
-        answer: "The Omnibus Technical Regulation mandates the use of Scheme X for specific categories of machinery and electrical equipment in India. Products listed under the regulation must be certified under Scheme X to obtain a valid BIS certificate or BIS licence."
+        question: "11. 方案X与综合技术法规有什么关系？",
+        answer: "综合技术法规要求在印度特定类别的机械和电气设备使用方案X。法规下列出的产品必须在方案X下获得认证，才能获得有效的BIS证书或BIS许可证。"
       },
       {
-        question: "12. Can a BIS certificate under Scheme X be revoked?",
-        answer: "Yes. The Indian BIS can suspend or cancel a BIS licence or certificate under Scheme X if non-compliance is found during surveillance or if the product fails to meet required Indian Standards."
+        question: "12. 方案X下的BIS证书可以被撤销吗？",
+        answer: "是的。如果在监督期间发现不合规或产品未能满足所需的印度标准，印度BIS可以暂停或取消方案X下的BIS许可证或证书。"
       },
       {
-        question: "13. What is the difference between BIS license and BIS certificate under Scheme X?",
-        answer: "A BIS license is typically issued to Indian manufacturers, while a BIS certificate of conformity (CoC) is often issued to foreign manufacturers or for specific cases. Both serve the same purpose—ensuring product compliance under Scheme X."
+        question: "13. 方案X下BIS许可证和BIS证书有什么区别？",
+        answer: "BIS许可证通常颁发给印度制造商，而BIS符合性证书（CoC）通常颁发给外国制造商或用于特定情况。两者都服务于同一目的——确保方案X下的产品合规性。"
       },
       {
-        question: "14. Is the ISI mark allowed for products certified under Scheme X?",
-        answer: "No. Products under Scheme X do not carry the ISI mark. Instead, they display the BIS standard mark relevant to the certification scheme, as governed by the Indian BIS."
+        question: "14. 方案X下认证的产品是否允许使用ISI标志？",
+        answer: "不允许。方案X下的产品不携带ISI标志。相反，它们显示与认证方案相关的BIS标准标记，由印度BIS管理。"
       },
       {
-        question: "How do I know if my machinery requires Scheme X certification?",
-        answer: "Check the official list in the Omnibus Technical Regulation or consult with a BIS consultant to verify if your machinery falls under mandatory Scheme X certification requirements."
+        question: "如何知道我的机械是否需要方案X认证？",
+        answer: "查看综合技术法规中的官方列表，或咨询BIS顾问以验证您的机械是否属于强制性方案X认证要求。"
       }
     ];
   
@@ -1644,7 +1644,7 @@ import {
       <section
         id="faqs"
         className="my-2 scroll-mt-20"
-        aria-label="Frequently Asked Questions"
+        aria-label="常见问题"
       >
         <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
           <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
@@ -1886,90 +1886,75 @@ import {
   
   
         <p className="service-left-content-paragraph">
-          Issuing BIS Certificate under Scheme-X is a systematic activity meant to
-          ensure the manufacturer has the applicable safety, quality, and
-          compliance standards fulfilled. The process is as follows:
+          在方案X下颁发BIS证书是一项系统性活动，旨在确保制造商满足适用的安全、质量和合规标准。流程如下：
         </p>
   
   
         <PointsListWithoutHeading
           points={[
-            "Verify Scope: Determine whether your product is in the scope of Scheme-X and if it is with BIS safety requirements. Check the relevant Indian Standards and technical schedule to determine if you will be able to comply.",
-            "Prepare The Required Documents: Manufacturers need to collect and arrange the following documents: Registered Business certificates, Basis of design documents, Factory and Process flow documents, Service Test Reports (if applicable), Quality assurance and Control Documents.",
-            "Construct the Technical File: A technical file is an indispensable part for the claim for extension of a certificate. It should contain: Technical Specifications of the Product, Methods and Techniques Information, Compliance and Test Documents, Limitation and the Intended purpose of the product, Quality assurance documentation, Raw materials traceability, subcontract traceability, and the rest of the evidence, Conformance to the standards within the scope framed.",
-            "The Application Form: The application form can be submitted electronically on the BIS Website for the designated place. Settlement of the application fee is a must. The rest of the documents verifying application should be included for proper assessment.",
-            "Factory Inspection: For domestic manufacturers: Inspection is conducted over a period of a maximum of 2 days. For foreign manufacturers: Inspection is conducted over a period of a maximum of 3 days (additional days may accrue due to additional requests).",
-            "Testing of Product Samples: Sample testing is either carried out at the manufacturers site or at outsourced BIS approved labs (outsource testing is allowed). The testing demonstrates the fulfillment of the relevant Indian standards.",
-            "Issuance of Certification: If a product meets all the conditions, BIS grants every product a License or a Certificate of Conformity (CoC). The BIS Standard Mark may be used freely by the manufacturer on all certified products.",
+            "验证范围：确定您的产品是否在方案X的范围内，以及是否符合BIS安全要求。检查相关的印度标准和技术附表，以确定您是否能够合规。",
+            "准备所需文件：制造商需要收集并整理以下文件：注册业务证书、设计基础文件、工厂和工艺流程文件、服务测试报告（如适用）、质量保证和控制文件。",
+            "构建技术文件：技术文件是证书延期申请不可或缺的一部分。它应包含：产品技术规格、方法和技巧信息、合规和测试文件、产品的限制和预期用途、质量保证文件、原材料可追溯性、分包可追溯性以及其他证据、符合框架范围内的标准。",
+            "申请表：申请表可以通过BIS网站以电子方式提交到指定地点。必须结算申请费。其他验证申请的文件应包含在内以便进行适当评估。",
+            "工厂检查：对于国内制造商：检查最多进行2天。对于外国制造商：检查最多进行3天（由于额外请求可能会增加天数）。",
+            "产品样品测试：样品测试可以在制造商现场进行，也可以在分包给BIS认可的实验室进行（允许外包测试）。测试证明符合相关印度标准。",
+            "颁发认证：如果产品满足所有条件，BIS为每个产品授予许可证或符合性证书（CoC）。制造商可以在所有认证产品上自由使用BIS标准标记。",
           ]}
         />
   
   
         <p className="service-left-content-paragraph">
-          This file serves as the technical and statistical evidence of the
-          product claim substantiating to safety trace standards.
+          该文件作为产品声明的技术和统计证据，证明符合安全追溯标准。
         </p>
   
   
         <p className="service-left-content-paragraph">
-          During the period of inspection, the BIS officials are expected to:
-          Analyze the technical file, Evaluate the ways of manufacturing along
-          with supporting quality assurance systems, Observe the testing of the
-          product, Determine non-compliance (if any) and give remedial steps. A
-          detailed report of the audit is provided to the applicant after the
-          visit.
+          在检查期间，BIS官员将：分析技术文件，评估制造方法以及支持的质量保证系统，观察产品测试，确定不合规情况（如有）并提供补救措施。访问后向申请人提供详细的审计报告。
         </p>
   
   
   
         <p className="service-left-content-paragraph">
-          This strategy maintains compliance with BIS Standard and is a
-          recognition of Indian and international compliance, cornering the
-          industry on consumer trust towards safety and quality.
+          该策略保持与BIS标准的合规性，是对印度和国际合规性的认可，使行业在消费者对安全和质量的信任方面处于领先地位。
         </p>
   
   
         <h2 className="service-left-content-heading-three">
-          Procedure for Domestic Manufacturers
+          国内制造商程序
         </h2>
   
   
         <p className="service-left-content-paragraph">
-          Domestic manufacturers follow a direct approach by obtaining the BIS
-          License under Scheme-X. The direct steps to follow include:
+          国内制造商通过获得方案X下的BIS许可证采用直接方法。要遵循的直接步骤包括：
         </p>
   
   
         <PointsListWithoutHeading
           points={[
-            "Documentation: All documents pertaining to the scheme must be gathered and prepared.",
-            "Execution of the Application: The application is to be presented alongside the relevant fees.",
-            "Inquiry on the Application: any application submitted is subject to scrutiny and a subsequent set of questions is generated by BIS.",
-            "Appointing Auditors: Auditors are appointed by BIS but the nominated individual is subject to the payment of the audit fees.",
-            "Factory Audit: An examination and survey works audit is conducted onsite and relevant samples are collected.",
-            "Sample Evaluation: The samples are evaluated in a BIS-recognized laboratory. The applicant pays all BIS-recognized laboratory testing fees.",
-            "Payment of Licencing & Marking Fees: The requisite payments are accomplished to BIS.",
-            "Grant of Licencing: The certificate granting permission to use the BIS Mark is awarded by BIS.",
+            "文件准备：必须收集和准备与方案相关的所有文件。",
+            "申请执行：申请应与相关费用一起提交。",
+            "申请查询：提交的任何申请都要经过审查，BIS会生成一系列后续问题。",
+            "指定审计员：审计员由BIS指定，但被提名的个人需要支付审计费用。",
+            "工厂审计：在现场进行审查和调查工作审计，并收集相关样品。",
+            "样品评估：样品在BIS认可的实验室进行评估。申请人支付所有BIS认可的实验室测试费用。",
+            "许可证和标记费用支付：向BIS完成所需付款。",
+            "许可证授予：BIS颁发允许使用BIS标记的证书。",
           ]}
         />
   
   
         <p className="service-left-content-paragraph">
-          <strong>Typical Timeline:</strong> Close to 90 working days (as per BIS
-          practice) are needed. This is provided there are no key
-          non-conformities.
+          <strong>典型时间表：</strong>根据BIS的惯例，需要接近90个工作日。这是在没有任何关键不合规情况的前提下。
         </p>
   
   
         <h2 className="service-left-content-heading-three">
-          Procedure for Foreign Manufacturers
+          外国制造商程序
         </h2>
   
   
         <p className="service-left-content-paragraph">
-          Unlike domestic manufacturers, foreign manufacturers applying for a BIS
-          certificate under Scheme-X are required to comply with a more stringent
-          process and additional steps. The procedure is elaborated as follows.
+          与国内制造商不同，申请方案X下BIS证书的外国制造商需要遵守更严格的过程和额外步骤。程序详述如下。
         </p>
   
         <PointsListWithoutHeading
@@ -2129,7 +2114,7 @@ import {
   
   
         <p className="service-left-content-paragraph">
-          Under Scheme X, manufacturers can opt to apply for:
+          在方案X下，制造商可以选择申请：
         </p>
   
   
