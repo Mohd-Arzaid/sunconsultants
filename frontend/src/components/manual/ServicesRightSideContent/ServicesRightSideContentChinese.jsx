@@ -30,8 +30,51 @@ import {
     const currentPath = location.pathname;
   
     const showComponentsPaths = [
+      "/what-is-crs-bis-or-crs-registration",
+      "/indian-bis-certification-under-scheme-x",
+      "/Blogs",
+      "/bis-certificate-for-tin-ingots",
+      "/bis-certificate-for-refined-zinc",
+      "/bis-license-for-bunk-beds-Indian-bis",
+      "/bis-license-for-storage-units-Indian-bis",
+      "/bis-certification-in-indonesia",
+      "/bis-certification-in-netherlands",
+      "/bis-certificering-in-nederland",
+      "/bis-certification-in-korea",
+      "/bis-certification-in-japan",
+      "/nihon-niokeru-bis-ninsho",
+      "/bis-certification-in-italy",
+      "/certificazione-bis-in-italia",
+      "/bis-certification-in-spain",
+      "/bis-certification-in-france",
+      "/bis-certification-in-germany",
+      "/bis-zertifizierung-in-deutschland",
+      "/bis-certification-in-usa",
+      "/bis-certification-in-vietnam",
+      "/bis-certification-in-thailand",
+      "/bis-certification-in-uae",
+      "/bis-certification-in-qatar",
+      "/bis-certification-in-bahrain",
+      "/bis-certification-in-dubai",
+      "/bis-certification-in-iran",
+      "/bis-certification-in-iraq",
+      // ISI MARK PATH
+      "/a-guide-to-bis-certification-indian-bis",
+      // BIS CERTIFICATION PATH
+      "/what-is-bis-certificate-indian-bis",
+      // MINISTRY UPDATES PATH
+      "/ministry-updates/refined-zinc-qco-withdraw-order",
+      "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order",
+      "/ministry-updates/copper-qco-withdraw-order",
+      "/ministry-updates/tin-ingot-qco-withdraw-order",
+      "/ministry-updates/refined-nickel-qco-withdraw-order",
+      "/ministry-updates/nickel-qco-withdraw-order",
+      "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
+      "/ministry-updates/scheme-x-qco-withdraw-order",
+      // Chinese paths
       "/zh/crs-bis-shi-shen-me-huo-crs-deng-ji",
       "/zh/yin-du-bis-fang-an-x-ren-zheng",
+      "/zh/bis-isi-mark-renzheng",
     ];
   
     // Check if current path should show these components
@@ -552,11 +595,121 @@ import {
     // Function to get page name based on URL
     const getPageName = () => {
       const path = window.location.pathname;
-      
+      if (path.includes("/what-is-crs-bis-or-crs-registration"))
+        return "CRS Registration";
+      if (path.includes("/ja/crs-bis-toha-nani-ka-crs-toroku"))
+        return "CRS Registration Japanese";
+      if (path.includes("/th/crs-bis-khue-a-rai-rab-phit-thab-crs"))
+        return "CRS Registration Thai";
+      if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
+        return "CRS Registration Korean";
+      if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))
+        return "CRS Registration Indonesian";
+      if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
+        return "CRS Registration Spanish";
+      if (path.includes("/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"))
+        return "CRS Registration French";
+      if (path.includes("/it/cose-il-crs-bis-o-registrazione-crs"))
+        return "CRS Registration Italian";
+      if (path.includes("/nl/wat-is-crs-bis-of-crs-registratie"))
+        return "CRS Registration Dutch";
+      if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))
+        return "CRS Registration German";
+      if (path.includes("/vi/crs-bis-la-gi-hoac-dang-ky-crs"))
+        return "CRS Registration Vietnamese";
+      if (path.includes("/indian-bis-certification-under-scheme-x"))
+        return "Scheme X";
+      if (path.includes("/Blogs")) return "Latest Blogs";
+      if (path.includes("/bis-certificate-for-tin-ingots"))
+        return "Tin Ingot Blog";
+      if (path.includes("/bis-certificate-for-refined-zinc"))
+        return "Refined Zinc Blog";
+      if (path.includes("/bis-license-for-bunk-beds-Indian-bis"))
+        return "Bunk Beds Blog";
+      if (path.includes("/bis-license-for-storage-units-Indian-bis"))
+        return "Storage Units Blog";
+      if (path.includes("/bis-certification-in-indonesia"))
+        return "Indonesia Blog";
+      if (path.includes("/bis-certification-in-netherlands"))
+        return "Netherlands Blog";
+      if (path.includes("/bis-certificering-in-nederland"))
+        return "Netherlands Blog Dutch";
+      if (path.includes("/bis-certification-in-korea")) return "Korea Blog";
+      if (path.includes("/bis-certification-in-japan")) return "Japan Blog";
+      if (path.includes("/nihon-niokeru-bis-ninsho"))
+        return "Japan Blog Japanese";
+      if (path.includes("/bis-certification-in-italy")) return "Italy Blog";
+      if (path.includes("/certificazione-bis-in-italia"))
+        return "Italy Blog Italian";
+      if (path.includes("/bis-certification-in-spain")) return "Spain Blog";
+      if (path.includes("/bis-certification-in-france")) return "France Blog";
+      if (path.includes("/bis-certification-in-germany")) return "Germany Blog";
+      if (path.includes("/bis-zertifizierung-in-deutschland"))
+        return "Germany Blog German";
+      if (path.includes("/bis-certification-in-usa")) return "USA Blog";
+      if (path.includes("/bis-certification-in-vietnam")) return "Vietnam Blog";
+      if (path.includes("/bis-certification-in-thailand")) return "Thailand Blog";
+      if (path.includes("/bis-certification-in-uae")) return "UAE Blog";
+      if (path.includes("/bis-certification-in-qatar")) return "Qatar Blog";
+      if (path.includes("/bis-certification-in-bahrain")) return "Bahrain Blog";
+      if (path.includes("/bis-certification-in-dubai")) return "Dubai Blog";
+      if (path.includes("/bis-certification-in-iran")) return "Iran Blog";
+      if (path.includes("/bis-certification-in-iraq")) return "Iraq Blog";
+      // ISI MARK PATH
+      if (path.includes("/a-guide-to-bis-certification-indian-bis"))
+        return "ISI Mark - English Page";
+      // BIS CERTIFICATION PATH
+      if (path.includes("/what-is-bis-certificate-indian-bis"))
+        return "BIS Certification - English Page";
+  
+      // MINISTRY UPDATES PATH
+      // Refined Zinc QCO Withdrawal Order
+      if (path.includes("/ministry-updates/refined-zinc-qco-withdraw-order"))
+        return "Refined Zinc QCO Withdrawal Order - Ministry Updates (English)";
+  
+      // Aluminium and Aluminium Alloys QCO Withdrawal Order
+      if (
+        path.includes(
+          "/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order"
+        )
+      )
+        return "Aluminium and Aluminium Alloys QCO Withdrawal Order - Ministry Updates (English)";
+  
+      // Copper QCO Withdrawal Order
+      if (path.includes("/ministry-updates/copper-qco-withdraw-order"))
+        return "Copper QCO Withdrawal Order - Ministry Updates (English)";
+  
+      // Tin Ingot QCO Withdrawal Order
+      if (path.includes("/ministry-updates/tin-ingot-qco-withdraw-order"))
+        return "Tin Ingot QCO Withdrawal Order - Ministry Updates (English)";
+  
+      // Refined Nickel QCO Withdrawal Order
+      if (path.includes("/ministry-updates/refined-nickel-qco-withdraw-order"))
+        return "Refined Nickel QCO Withdrawal Order - Ministry Updates (English)";
+  
+      // Nickel Powder QCO Withdrawal Order
+      if (path.includes("/ministry-updates/nickel-qco-withdraw-order"))
+        return "Nickel Powder QCO Withdrawal Order - Ministry Updates (English)";
+  
+      // Petrochemical & Polymer Products QCO Withdrawal Order
+      if (
+        path.includes(
+          "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order"
+        )
+      )
+        return "Petrochemical & Polymer Products QCO Withdrawal Order - Ministry Updates (English)";
+  
+      // Scheme X QCO Withdrawal Order
+      if (path.includes("/ministry-updates/scheme-x-qco-withdraw-order"))
+        return "Scheme X QCO Withdrawal Order - Ministry Updates (English)";
+
+      // Chinese paths
       if (path.includes("/zh/crs-bis-shi-shen-me-huo-crs-deng-ji"))
         return "CRS Chinese - 中文页面";
       if (path.includes("/zh/yin-du-bis-fang-an-x-ren-zheng") || path.includes("/indian-bis-certification-under-scheme-x"))
-        return "Scheme X Chinese - 中文页面"; 
+        return "Scheme X Chinese - 中文页面";
+      if (path.includes("/zh/bis-isi-mark-renzheng"))
+        return "ISI Mark - Chinese Page";
     };
   
     const [formData, setFormData] = useState({
@@ -668,113 +821,112 @@ import {
           </div>
         </div>
 
-        {/* Intro Text */}
-        <p className="mt-3 text-sm text-gray-600 font-geist">
-          请在下方留下您的详细信息，我们的专家将在24小时内回电，讨论您的合规需求。
-        </p>
-  
-        {/* Form */}
-        <form onSubmit={handleFormSubmit} className="mt-5 space-y-4">
-          {/* Name Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <User className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="text"
-              name="fullName"
-              value={fullName}
-              onChange={handleOnChange}
-              disabled={loading}
-              required
-              placeholder="您的姓名*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
+      {/* Intro Text */}
+      <p className="mt-3 text-sm text-gray-600 font-geist">
+        请在下方留下您的详细信息，我们的专家将在24小时内回电，讨论您的合规需求。
+      </p>
+
+      {/* Form */}
+      <form onSubmit={handleFormSubmit} className="mt-5 space-y-4">
+        {/* Name Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <User className="h-5 w-5 text-gray-400" />
           </div>
-  
-          {/* Phone Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <Phone className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="tel"
-              name="phoneNumber"
-              value={phoneNumber}
-              onChange={handleOnChange}
-              disabled={loading}
-              required
-              placeholder="电话号码*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
-          </div>
-  
-          {/* Email Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <Mail className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="email"
-              name="email"
-              value={email}
-              onChange={handleOnChange}
-              disabled={loading}
-              required
-              placeholder="电子邮件地址*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
-          </div>
-  
-          {/* Message Field */}
-          <div className="relative">
-            <div className="absolute top-3 left-3 pointer-events-none">
-              <MessageCircle className="h-5 w-5 text-gray-400" />
-            </div>
-            <textarea
-              name="message"
-              value={message}
-              onChange={handleOnChange}
-              disabled={loading}
-              required
-              placeholder="所需认证*"
-              rows="3"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            ></textarea>
-          </div>
-  
-          {/* Submit Button */}
-          <Button
-            type="submit"
+          <input
+            type="text"
+            name="fullName"
+            value={fullName}
+            onChange={handleOnChange}
             disabled={loading}
-            className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden"
-          >
-            <span className="relative z-10 flex items-center">
-              {loading ? (
-                <div className="flex gap-3 items-center justify-center">
-                  <ClockLoader size={22} color="#fff" />
-                  <span>发送中</span>
-                </div>
-              ) : (
-                <>
-                  请求回电
-                  <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </>
-              )}
-            </span>
-            <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-          </Button>
-        </form>
-  
-        {/* Privacy Note */}
-        <p className="mt-3 text-xs text-center text-gray-500 font-geist">
-          提交此表单即表示您同意我们的{" "}
-          <a href="#" className="text-blue-600 hover:underline">
-            隐私政策
-          </a>{" "}
-          并同意被联系。
-        </p>
-      </div>
-    );
-  };
-  
+            required
+            placeholder="您的姓名*"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Phone Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <Phone className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="tel"
+            name="phoneNumber"
+            value={phoneNumber}
+            onChange={handleOnChange}
+            disabled={loading}
+            required
+            placeholder="电话号码*"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Email Field */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <Mail className="h-5 w-5 text-gray-400" />
+          </div>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleOnChange}
+            disabled={loading}
+            required
+            placeholder="电子邮件地址*"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          />
+        </div>
+
+        {/* Message Field */}
+        <div className="relative">
+          <div className="absolute top-3 left-3 pointer-events-none">
+            <MessageCircle className="h-5 w-5 text-gray-400" />
+          </div>
+          <textarea
+            name="message"
+            value={message}
+            onChange={handleOnChange}
+            disabled={loading}
+            required
+            placeholder="所需认证*"
+            rows="3"
+            className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+          ></textarea>
+        </div>
+
+        {/* Submit Button */}
+        <Button
+          type="submit"
+          disabled={loading}
+          className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden"
+        >
+          <span className="relative z-10 flex items-center">
+            {loading ? (
+              <div className="flex gap-3 items-center justify-center">
+                <ClockLoader size={22} color="#fff" />
+                <span>发送中</span>
+              </div>
+            ) : (
+              <>
+                请求回电
+                <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </>
+            )}
+          </span>
+          <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </Button>
+      </form>
+
+      {/* Privacy Note */}
+      <p className="mt-3 text-xs text-center text-gray-500 font-geist">
+        提交此表单即表示您同意我们的{" "}
+        <a href="#" className="text-blue-600 hover:underline">
+          隐私政策
+        </a>{" "}
+        并同意被联系。
+      </p>
+    </div>
+  );
+};
