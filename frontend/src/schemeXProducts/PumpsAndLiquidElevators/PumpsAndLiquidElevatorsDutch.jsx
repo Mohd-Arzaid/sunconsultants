@@ -15,6 +15,7 @@ import {
   import { BoxReveal } from "@/components/magicui/box-reveal";
   import { Separator } from "@/components/ui/separator";
   import FooterDutch from "@/components/manual/Footer/FooterDutch";
+
   const BISImage = "/services-images/BIS.jpg";
   const CDSCO = "/services-images/CDSCO.jpg";
   const BISCRS = "/services-images/BISCRS.jpg";
@@ -32,6 +33,11 @@ import {
         <Services />
         <VideoSection />
         <FooterDutch />
+       
+
+        
+        
+
       </div>
     );
   };
