@@ -30,7 +30,9 @@ const ServicesRightSideContentEng = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
+    // CRS REGISTRATION PATH
     "/what-is-crs-bis-or-crs-registration",
+    // SCHEME X PATH
     "/indian-bis-certification-under-scheme-x",
     "/Blogs",
     "/bis-certificate-for-tin-ingots",
