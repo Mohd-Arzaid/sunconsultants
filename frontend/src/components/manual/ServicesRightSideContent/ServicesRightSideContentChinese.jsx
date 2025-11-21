@@ -35,6 +35,22 @@ const ServicesRightSideContentChinese = () => {
     "/zh/yin-du-bis-fang-an-x-ren-zheng",
     "/zh/bis-isi-mark-renzheng",
     "/zh/bis-zheng-shu-shi-shen-me-yin-du-bis",
+    "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng",
+    "/bis-fang-an-x-ya-suo-ji-ren-zheng",
+    "/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng",
+    "/bis-fang-an-x-qi-zhong-ji-ren-zheng",
+    "/bis-fang-an-x-chai-you-fa-dian-ji-ren-zheng",
+    "/bis-fang-an-x-ci-xiu-ji-xie-ren-zheng",
+    "/bis-fang-an-x-chi-lun-chi-lun-xi-tong-he-chuan-dong-yuan-jian-ren-zheng",
+    "/bis-fang-an-x-re-chu-li-she-bei-ren-zheng",
+    "/bis-fang-an-x-ji-chuang-ren-zheng",
+    "/bis-fang-an-x-jin-shu-qie-xiao-ji-chuang-ren-zheng",
+    "/bis-fang-an-x-bao-zhuang-ji-xie-ren-zheng",
+    "/bis-fang-an-x-gong-lv-ban-dao-ti-zhuan-huan-qi-ren-zheng",
+    "/bis-fang-an-x-gong-gong-gong-cheng-he-ji-xie-she-bei-ren-zheng",
+    "/bis-fang-an-x-beng-he-ye-ti-ti-sheng-ji-ren-zheng",
+    "/bis-fang-an-x-xuan-zhuan-dian-ji-ren-zheng",
+    "/bis-fang-an-x-xiang-jiao-he-su-liao-ji-xie-ren-zheng",
   ];
 
   // Check if current path should show these components
@@ -567,6 +583,70 @@ const ContactFormServicesRightSideContentChinese = () => {
     // BIS Certification Chinese Page Url
     if (path.includes("/zh/bis-zheng-shu-shi-shen-me-yin-du-bis"))
       return "BIS Certification - Chinese Page";
+
+    // Centrifuges Chinese Page Url
+    if (path.includes("/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng"))
+      return "Centrifuges Chinese - 中文页面";
+
+    // Compressors Chinese Page Url
+    if (path.includes("/bis-fang-an-x-ya-suo-ji-ren-zheng"))
+      return "Compressors Chinese - 中文页面";
+
+    // Construction Machinery Chinese Page Url
+    if (path.includes("/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng"))
+      return "Construction Machinery Chinese - 中文页面";
+
+    // Cranes Chinese Page Url
+    if (path.includes("/bis-fang-an-x-qi-zhong-ji-ren-zheng"))
+      return "Cranes Chinese - 中文页面";
+
+    // Diesel Generator Chinese Page Url
+    if (path.includes("/bis-fang-an-x-chai-you-fa-dian-ji-ren-zheng"))
+      return "Diesel Generator Chinese - 中文页面";
+
+    // Embroidery Machines Chinese Page Url
+    if (path.includes("/bis-fang-an-x-ci-xiu-ji-xie-ren-zheng"))
+      return "Embroidery Machines Chinese - 中文页面";
+
+    // Gears, Gearing and Transmission Elements Chinese Page Url
+    if (path.includes("/bis-fang-an-x-chi-lun-chi-lun-xi-tong-he-chuan-dong-yuan-jian-ren-zheng"))
+      return "Gears, Gearing and Transmission Elements Chinese - 中文页面";
+
+    // Heat Treatment Equipment Chinese Page Url
+    if (path.includes("/bis-fang-an-x-re-chu-li-she-bei-ren-zheng"))
+      return "Heat Treatment Equipment Chinese - 中文页面";
+
+    // Machine Tools Chinese Page Url
+    if (path.includes("/bis-fang-an-x-ji-chuang-ren-zheng"))
+      return "Machine Tools Chinese - 中文页面";
+
+    // Metal Cutting Machines Chinese Page Url
+    if (path.includes("/bis-fang-an-x-jin-shu-qie-xiao-ji-chuang-ren-zheng"))
+      return "Metal Cutting Machines Chinese - 中文页面";
+
+    // Packing Machinery Chinese Page Url
+    if (path.includes("/bis-fang-an-x-bao-zhuang-ji-xie-ren-zheng"))
+      return "Packing Machinery Chinese - 中文页面";
+
+    // Power Semiconductors Chinese Page Url
+    if (path.includes("/bis-fang-an-x-gong-lv-ban-dao-ti-zhuan-huan-qi-ren-zheng"))
+      return "Power Semiconductors Chinese - 中文页面";
+
+    // Public Works And Mechanical Chinese Page Url
+    if (path.includes("/bis-fang-an-x-gong-gong-gong-cheng-he-ji-xie-she-bei-ren-zheng"))
+      return "Public Works And Mechanical Chinese - 中文页面";
+
+    // Pumps And Liquid Elevators Chinese Page Url
+    if (path.includes("/bis-fang-an-x-beng-he-ye-ti-ti-sheng-ji-ren-zheng"))
+      return "Pumps And Liquid Elevators Chinese - 中文页面";
+
+    // Rotary Electrical Machines Chinese Page Url
+    if (path.includes("/bis-fang-an-x-xuan-zhuan-dian-ji-ren-zheng"))
+      return "Rotary Electrical Machines Chinese - 中文页面";
+
+    // Rubber And Plastics Machinery Chinese Page Url
+    if (path.includes("/bis-fang-an-x-xiang-jiao-he-su-liao-ji-xie-ren-zheng"))
+      return "Rubber And Plastics Machinery Chinese - 中文页面";
   };
 
   const [formData, setFormData] = useState({

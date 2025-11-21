@@ -893,24 +893,24 @@ import {
   const productDataTableThird = [
     {
       id: 1,
-      description: "All types of Pumps for handling liquids, liquid elevators",
+      description: "所有类型的液体处理泵、液体提升机",
       hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 and 841392",
       indianStandard: "-",
       title: "-",
     },
     {
       id: 2,
-      description: "All types of compressors",
+      description: "所有类型的压缩机",
       hsCode:
         "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 and 84149090",
       indianStandard: "Clause 16 of IS 17093:2019\nClause 6.6 of IS 12258:1987",
       title:
-        "Technical supply conditions for reciprocating air compressors for general purpose and industrial applications\nTechnical supply condition for air screw compressors (Oil Flooded) for general purpose and industrial applications",
+        "通用和工业应用往复式空气压缩机的技术供应条件\n通用和工业应用空气螺杆压缩机（油浸式）的技术供应条件",
     },
     {
       id: 3,
       description:
-        "All types of machinery for Treatment of material by a process involving a Change of temperature",
+        "所有类型的通过涉及温度变化过程处理材料的机械",
       hsCode:
         "841932, 841939, 841940, 841950, 841960, 841981, 841989 and 84199090",
       indianStandard: "-",
@@ -918,7 +918,7 @@ import {
     },
     {
       id: 4,
-      description: "or purifying machinery for liquid and gas",
+      description: "或用于液体和气体的净化机械",
       hsCode: "842122, 842129, 842131, 842139, 842191 and 842199",
       indianStandard: "-",
       title: "-",
@@ -926,74 +926,74 @@ import {
     {
       id: 5,
       description:
-        "All types of machinery for filling, closing, sealing, labelling bottles, packing or wrapping",
+        "所有类型的用于填充、封闭、密封、贴标签、包装或包裹的机械",
       hsCode: "842220, 842230, 842240 and 842290",
       indianStandard: "-",
       title: "-",
     },
     {
       id: 6,
-      description: "All types of cranes",
+      description: "所有类型的起重机",
       hsCode:
         "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 and 84269990",
       indianStandard:
         "Clause 66.1, 66.1.1, 66.1.2, 66.1.3, 66.2, 66.2.1, 66.2.2, 66.3, 66.4, 66.5 and 66.6 of IS 3177:2020\nClause 8.1, 8.2, 8.3 & 45 of IS 4573:2020\nIS/ISO 15442:2012",
       title:
-        "Electric Overhead Travelling Crane and Gantry Crane for all Applications Code of Practice\nPower Driven Mobile Cranes Specification\nCranes - Safety requirements for loader cranes",
+        "所有应用电动桥式起重机和龙门起重机实践规范\n动力驱动移动式起重机规范\n起重机 - 装载起重机的安全要求",
     },
     {
       id: 7,
-      description: "All types of machinery for construction",
+      description: "所有类型的建筑机械",
       hsCode: "8429, 843010, 843020, 843031, 843039, 843041",
       indianStandard:
         "IS 17055 (Part 7): 2020\nIS 17055 (Part 8): 2020\nIS 17055 (Part 12): 2020",
       title:
-        "Earth-Moving Machinery Safety Part 7 Scrapers\nEarth-Moving Machinery Requirements For Graders\nEarth-Moving Machinery Safety Part 12 Road Pavers",
+        "土方机械安全 第7部分 铲运机\n土方机械 平地机要求\n土方机械安全 第12部分 摊铺机",
     },
     {
       id: 8,
-      description: "All types of weaving machines (looms)",
+      description: "所有类型的织机",
       hsCode: "8446, 844811, 844819, 844842 and 844849",
       indianStandard: "IS 17361 (Part 6) : 2020 / ISO 11111 (Part 6) : 2005",
       title:
-        "Textile Machinery Safety Requirements Part 6 Fabric Manufacturing Machinery",
+        "纺织机械安全要求 第6部分 织物制造机械",
     },
     {
       id: 9,
-      description: "All types of machinery for making embroidery.",
+      description: "所有类型的刺绣机械",
       hsCode: "84479020 and 844859",
       indianStandard: "IS 17361 (Part 1): 2020 / ISO 11111 (Part 1) : 2016",
-      title: "Textile Machiner Safety Requirements Part 1 Common Requirements",
+      title: "纺织机械安全要求 第1部分 通用要求",
     },
     {
       id: 10,
-      description: "All types of metal cutting machines",
+      description: "所有类型的金属切削机床",
       hsCode: "8456, 8457, 8458, 8459, 8460, 8461 and 846693",
       indianStandard:
         "IS 17277 (Part 1): 2019\nISO 16092-1 : 2017\nIS 17259: 2020\nISO 28881 : 2013\nIS 17258: 2019\nISO 23125 : 2015\nIS 17254:2019\nISO 16093 : 2017\nIS 17253 (Part 1): 2019\nISO 16090-1 : 2017",
       title:
-        "Machine Tools Safety Presses Part 1 General Safety Requirements\nMachine Tools Safety Electro-Discharge Machines\nMachine Tools Safety Turning Machines\nMachine Tools Safety Sawing Machines for Cold Metal\nMachine Tools Safety Machining Centres, Milling Machines, Transfer Machines Part 1 Safety Requirements",
+        "机床安全 压力机 第1部分 通用安全要求\n机床安全 电火花加工机床\n机床安全 车床\n机床安全 冷金属锯床\n机床安全 加工中心、铣床、传输机床 第1部分 安全要求",
     },
     {
       id: 11,
       description:
-        "All types of machine tools for working stone, ceramics, concrete, asbestos cement or like mineral glass",
+        "所有类型的用于加工石材、陶瓷、混凝土、石棉水泥或类似矿物玻璃的机床",
       hsCode: "8464 and 84669100",
       indianStandard: "-",
       title: "-",
     },
     {
       id: 12,
-      description: "All types of machinery for working rubber and plastics",
+      description: "所有类型的橡胶和塑料加工机械",
       hsCode: "8477",
       indianStandard: "IS/ISO 20430: 2020",
       title:
-        "Plastics and Rubber Machines-Injection Moulding Machines-Safety Requirements",
+        "塑料和橡胶机械 - 注塑成型机 - 安全要求",
     },
     {
       id: 13,
       description:
-        "All types of machines including the machines for public works & Building and the machinery & mechanical appliances having individual functions, not specified",
+        "所有类型的机器，包括公共工程和建筑用机器以及具有单独功能但未指定的机械和机械器具",
       hsCode: "84791000, 84798999 and 84799090",
       indianStandard: "-",
       title: "-",
@@ -1001,7 +1001,7 @@ import {
     {
       id: 14,
       description:
-        "All types of gears and gearing, toothed wheels, chain sprocket, transmission elements ball or roller screws, gear boxes and speed changers, including torque converters And (or)their assemblies /sub-assemblies /components",
+        "所有类型的齿轮和传动装置、齿轮、链轮、传动元件滚珠或滚柱丝杠、齿轮箱和变速器，包括扭矩转换器及其组件/子组件/部件",
       hsCode: "84834000 and 84839000",
       indianStandard: "-",
       title: "-",
@@ -1009,52 +1009,52 @@ import {
     {
       id: 15,
       description:
-        "All types of Rotary electrical machines such as Generator, etc. Building and the machinery & mechanical appliances having individual functions, not specified",
+        "所有类型的旋转电机，如发电机等。建筑和具有单独功能但未指定的机械和机械器具",
       hsCode: "8501 and 8503",
       indianStandard:
         "Clause 4.7, 4.8 and 4.12 of section 2,\nclause 7.4 of Section 3, clause 8.6 of Section 4,\nClause 9.4 of section 5 of IS 5422:1996\nClause 11, 21, 22, 23, 25 and 26 of IS 13364\n(Part 1): 1992\nClause 11, 21, 22 23 25 and 26 of IS 13364\n(Part 2): 1992",
       title:
-        "Turbine type generation\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 1\nalternators rated up to 20 kVa\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 2\nalternators rated above 20 kVa and up to 1250 kVa",
+        "汽轮机型发电\n往复式内燃机驱动的交流发电机 - 规范：第1部分\n额定功率高达20 kVa的交流发电机\n往复式内燃机驱动的交流发电机 - 规范：第2部分\n额定功率超过20 kVa且高达1250 kVa的交流发电机",
     },
     {
       id: 16,
-      description: "All types of Diesel Generator",
+      description: "所有类型的柴油发电机",
       hsCode: "8502 and 8503",
       indianStandard:
         "Clause 5,6,7,8, 9 & 10 of IS/ISO 8528 (Part 2) : 2018\nClause 6 & 10 of IS/ISO 8528 (Part 3)\nClause 4, 5.5, 7.3.5, 7.3.7 & 7.4 of IS/ISO 8528 (Part 4): 2005\nClause 12, 13, 14, 15 of IS/ISO 8528-5: 2018\nClause 6.4 of IS/ISO 8528 (Part 8): 2016\nClause 9.1 of IS/ISO 8528 (Part 12): 1997",
       title:
-        "Reciprocating Internal Combustion Engine Driven Alternating Current Generating Sets : Part 2 Engines\nReciprocating internal combustion engine driven alternating current generating sets: Part 3 alternating current generators for generating sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 4 control gear and switchgear\nReciprocating Internal Combustion Engine Driven Alternating Current Generating Sets Part 5 Generating Sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 8\nReciprocating internal combustion engine driven alternating current generating sets: Part 12 emergency power supply to safety",
+        "往复式内燃机驱动的交流发电机组：第2部分 发动机\n往复式内燃机驱动的交流发电机组：第3部分 发电机组用交流发电机\n往复式内燃机驱动的交流发电机组：第4部分 控制装置和开关设备\n往复式内燃机驱动的交流发电机组 第5部分 发电机组\n往复式内燃机驱动的交流发电机组：第8部分\n往复式内燃机驱动的交流发电机组：第12部分 安全应急电源",
     },
     {
       id: 17,
-      description: "All types of Transformer",
+      description: "所有类型的变压器",
       hsCode:
         "850421, 850422, 850423, 850431, 850432, 850433, 850434 and 850490.",
       indianStandard:
         "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nClause 5.6 & Cl 10 of IS 2026 (Part 1)\nClause 7.5, 7.6, 7.7 of IS 2026 (Part 6)",
       title:
-        "Safety of Transformers, Reactors, Power Supply Units and Similar Product for Supply Voltages up to 1100 V Part 2-4: Particular Requirements and Tests for Isolating Transformers and Power Supply Units Incorporating\nSafety of power transformers, power supply units and similar: Part 2 particular requirement: Sec 6 safety isolating transformers for general use\nSafety of power transformers, power supplies reactors and similar products: Part 2-7 particular requirements and tests for transformers and power supplies for toys\nPower transformers: Part 1 general\nPower transformers: Part 6 reactors",
+        "变压器、电抗器、电源单元和类似产品的安全，适用于高达1100 V的供电电压 第2-4部分：隔离变压器和包含电源单元的特定要求和测试\n电力变压器、电源单元和类似产品的安全：第2部分特定要求：第6节 通用安全隔离变压器\n电力变压器、电源电抗器和类似产品的安全：第2-7部分 玩具用变压器和电源的特定要求和测试\n电力变压器：第1部分 通用\n电力变压器：第6部分 电抗器",
     },
     {
       id: 18,
-      description: "All types of Power Semiconductor Converter",
+      description: "所有类型的功率半导体转换器",
       hsCode: "850440",
       indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
-      title: "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements",
+      title: "半导体转换器第1部分通用要求和线路换向转换器第1节基本要求规范 第7条",
     },
     {
       id: 19,
       description:
-        "All types of switch gear and control gear equipment operating at voltages not exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
+        "所有类型的在不超过1000伏电压下运行的开关设备和控制设备及其组件/子组件/部件",
       hsCode: "8536, 8537 and 8538",
       indianStandard: "Clause 8 of IS/IEC 61439 (Part 3): 2012",
       title:
-        "Low-Voltage switchgear and control gear assemblies: Part 3 distribution boards intended to be operated by ordinary persons (DBO)",
+        "低压开关设备和控制设备组件：第3部分 供普通人员操作的配电盘（DBO）",
     },
     {
       id: 20,
       description:
-        "All types of switch gear and control gear equipment operating at voltages exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
+        "所有类型的在超过1000伏电压下运行的开关设备和控制设备及其组件/子组件/部件",
       hsCode: "8535, 8537 and 8538",
       indianStandard: "-",
       title: "-",
@@ -1145,314 +1145,314 @@ import {
       id: 1,
       isNumber: "IS 16504 (Part 1):2019/IEC 60204-1:2016",
       title:
-        "Safety of Machinery Electrical Equipment of Machines Part 1 General Requirements",
+        "机械安全 机械电气设备 第1部分 通用要求",
     },
     {
       id: 2,
       isNumber: "IS 16504 (Part 11) : 2020 /IEC 60204-11 : 2018",
       title:
-        "Safety of Machinery - Electrical Equipment of Machines Part 11 Requirements for Equipment for Voltages above 1 000 V AC or 1 500 V DC and not Exceeding 36 kV",
+        "机械安全 - 机械电气设备 第11部分 电压超过1000 V交流或1500 V直流且不超过36 kV的设备要求",
     },
     {
       id: 3,
       isNumber: "IS/IEC 61508 (Part 1): 2010",
       title:
-        "Functional Safety of Electrical-Electronic-Programmable Electronic Safety-related Systems Part 1- General Requirements",
+        "电气-电子-可编程电子安全相关系统的功能安全 第1部分 通用要求",
     },
     {
       id: 4,
       isNumber: "IS/IEC 60529 : 2001",
-      title: "Degree of Protection Provided by Enclosures (IP Code)",
+      title: "外壳提供的防护等级（IP代码）",
     },
     {
       id: 5,
       isNumber: "IS 16806 (Part 1) : 2018/ ISO 29042-1 : 2008",
       title:
-        "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 1: Selection of test methods",
+        "机械安全 - 空气传播有害物质排放的评估 - 第1部分：测试方法的选择",
     },
     {
       id: 6,
       isNumber: "IS 16806 (Part 2) : 2018/ ISO 29042-2 : 2009",
       title:
-        "Safety of Machinery Evaluation of the Emission of Airborne Hazardous Substances Part 2 Tracer Gas Method for the Measurement of the Emission Rate of a Given Pollutant",
+        "机械安全 空气传播有害物质排放的评估 第2部分 测量给定污染物排放率的示踪气体法",
     },
     {
       id: 7,
       isNumber: "IS 16806 (Part 3) : 2018/ ISO 29042-3 : 2009",
       title:
-        "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 3: Test bench method for the measurement of the emission rate of a given pollutant",
+        "机械安全 - 空气传播有害物质排放的评估 - 第3部分：测量给定污染物排放率的试验台方法",
     },
     {
       id: 8,
       isNumber: "IS 16806 (Part 4) : 2018/ ISO 29042-4 : 2009",
       title:
-        "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 4: Tracer method for the measurement of the capture efficiency of an exhaust system",
+        "机械安全 - 空气传播有害物质排放的评估 - 第4部分：测量排气系统捕获效率的示踪方法",
     },
     {
       id: 9,
       isNumber: "IS 16806 (Part 5) : 2018/ ISO 29042-5 : 2010",
       title:
-        "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 5: Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with unducted outlet",
+        "机械安全 - 空气传播有害物质排放的评估 - 第5部分：测量无管道出口空气净化系统质量分离效率的试验台方法",
     },
     {
       id: 10,
       isNumber: "IS 16806 (Part 6) : 2018/ ISO 29042-6 : 2010",
       title:
-        "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 6 : Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with ducted outlet",
+        "机械安全 - 空气传播有害物质排放的评估 - 第6部分：测量有管道出口空气净化系统质量分离效率的试验台方法",
     },
     {
       id: 11,
       isNumber: "IS 16806 (Part 7) : 2018/ ISO 29042-7 : 2010",
       title:
-        "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 7: Test bench method for the measurement of the pollutant concentration parameter",
+        "机械安全 - 空气传播有害物质排放的评估 - 第7部分：测量污染物浓度参数的试验台方法",
     },
     {
       id: 12,
       isNumber: "IS 16806 (Part 8) : 2018/ ISO 29042-8 : 2011",
       title:
-        "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 8: Room method for the measurement of the pollutant concentration parameter",
+        "机械安全 - 空气传播有害物质排放的评估 - 第8部分：测量污染物浓度参数的房间方法",
     },
     {
       id: 13,
       isNumber: "IS 16806 (Part 9) : 2018/ ISO 29042-9 : 2011",
       title:
-        "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 9: Decontamination index",
+        "机械安全 - 空气传播有害物质排放的评估 - 第9部分：去污指数",
     },
     {
       id: 14,
       isNumber: "IS 10481:2020/ ISO 4413:2010",
       title:
-        "Hydraulic Fluid Power- General Rules and Safety Requirements for Systems and their Components",
+        "液压流体动力 - 系统及其组件的通用规则和安全要求",
     },
     {
       id: 15,
       isNumber: "IS 12725:2021/ ISO 4414:2010",
       title:
-        "Pneumatic Fluid Power- General Rules and Safety Requirements for Systems and their Components",
+        "气动流体动力 - 系统及其组件的通用规则和安全要求",
     },
     {
       id: 16,
       isNumber: "IS ISO 3457 : 2003",
-      title: "Earth Moving Machinery - Guards - Definitions and Requirements",
+      title: "土方机械 - 防护装置 - 定义和要求",
     },
     {
       id: 17,
       isNumber: "IS 16501 : 2017/IEC 62061 : 2005",
       title:
-        "Safety of Machinery-Functional Safety of Safety-Related Electrical Electronic and Programmable Electronic Control Systems",
+        "机械安全 - 安全相关电气电子和可编程电子控制系统的功能安全",
     },
     {
       id: 18,
       isNumber: "IS 16502 (Part 2) : 2017/ IEC 61496-2 : 2013",
       title:
-        "Safety of Machinery - Electro-Sensitive Protective Equipment Part 2 Particular Requirements for Equipment Using Active Opto-Electronic Protective Devices AOPDs",
+        "机械安全 - 电敏保护设备 第2部分 使用有源光电保护装置（AOPD）设备的特定要求",
     },
     {
       id: 19,
       isNumber: "IS 16503 (Part 3) : 2017/ IEC 61310-3 : 2007",
       title:
-        "Safety of Machinery- Indication Marking and Actuation Part 3 Requirements for the Location and Operation of Actuators",
+        "机械安全 - 指示、标记和驱动 第3部分 驱动器的位置和操作要求",
     },
     {
       id: 20,
       isNumber: "IS 16504 (Part 32) : 2017/IEC 60204-32 : 2008",
       title:
-        "Safety of Machinery-Electrical Equipment of Machines Part 32 Requirements for Hoisting Machines",
+        "机械安全 - 机械电气设备 第32部分 起重机械的要求",
     },
     {
       id: 21,
       isNumber: "IS 16503 (Part 1) : 2017/ IEC 61310-1 : 2007",
       title:
-        "Safety of Machinery - Indication Marking and Actuation Part 1 Requirements for Visual Acoustic and Tactile Signals",
+        "机械安全 - 指示、标记和驱动 第1部分 视觉、听觉和触觉信号的要求",
     },
     {
       id: 22,
       isNumber: "IS 16594 (Part 1) : 2017/ IEC 61496-1 : 2012",
       title:
-        "Safety of Machinery - Electro-Sensitive Protective Equipment Part 1 General Requirements and Tests",
+        "机械安全 - 电敏保护设备 第1部分 通用要求和测试",
     },
     {
       id: 23,
       isNumber: "IS 16936 : 2018/ IEC TR 62513: 2008",
       title:
-        "Safety of Machinery Guidelines for the Use of Communication Systems in Safety Related Applications",
+        "机械安全 安全相关应用中通信系统使用指南",
     },
     {
       id: 24,
       isNumber: "IS 16503 (Part 2) : 2017/ IEC 61310-2 : 2007",
       title:
-        "Safety of Machinery - Indication Marking and Actuation Part 2 Requirements for Marking",
+        "机械安全 - 指示、标记和驱动 第2部分 标记要求",
     },
     {
       id: 25,
       isNumber: "IS 16807: 2020/",
-      title: "Safety of Machinery Fire Prevention and Fire Protection",
+      title: "机械安全 防火和消防",
     },
     {
       id: 26,
       isNumber: "IS 16808 : 2018/ ISO 14159 : 2002",
       title:
-        "Safety of Machinery Hygiene Requirements for the Design of Machinery",
+        "机械安全 机械设计的卫生要求",
     },
     {
       id: 27,
       isNumber: "IS 16809 ( Part 1) : 2018/ ISO 14122-1 : 2016",
       title:
-        "Safety of Machinery Permanent Means of Access to Machinery Part 1 Choice of Fixed Means and General Requirements of Access",
+        "机械安全 机械的永久性通道方式 第1部分 固定通道方式的选择和通道的通用要求",
     },
     {
       id: 28,
       isNumber: "IS 16809 (Part 2) : 2018/ ISO 14122-2 : 2016",
       title:
-        "Safety of Machinery Permanent Means of Access to Machinery Part 2 Working Platforms and Walkways",
+        "机械安全 机械的永久性通道方式 第2部分 工作平台和走道",
     },
     {
       id: 29,
       isNumber: "IS 16809 (Part 3) : 2018/ ISO 14122-3 : 2016",
       title:
-        "Safety of Machinery Permanent Means of Access to Machinery Part 3 Stairs Stepladders and Guard-Rails",
+        "机械安全 机械的永久性通道方式 第3部分 楼梯、阶梯和护栏",
     },
     {
       id: 30,
       isNumber: "IS 16809 (Part 4) : 2018/ ISO 14122-4 : 2016",
       title:
-        "Safety of Machinery Permanent Means of Access to Machinery Part 4 Fixed Ladders",
+        "机械安全 机械的永久性通道方式 第4部分 固定式梯子",
     },
     {
       id: 31,
       isNumber: "IS 16810 (Part 1) : 2018/ ISO 13849-1 : 2015",
       title:
-        "Safety of Machinery Safety Related Parts of Control Systems Part 1 General Principles for Design",
+        "机械安全 控制系统的安全相关部分 第1部分 设计通用原则",
     },
     {
       id: 32,
       isNumber: "IS 16810 (Part 2) : 2018/ ISO 13849-2 : 2012",
       title:
-        "Safety of Machinery Safety Related Parts of Control Systems Part 2 Validation",
+        "机械安全 控制系统的安全相关部分 第2部分 验证",
     },
     {
       id: 33,
       isNumber: "IS 16811: 2018/ 14120 : 2015",
       title:
-        "Safety of Machinery Guards General Requirements for the Design and Construction of Fixed and Movable Guards",
+        "机械安全 防护装置 固定式和移动式防护装置设计和构造的通用要求",
     },
     {
       id: 34,
       isNumber: "IS 16812 : 2018/ ISO 14119 : 2013",
       title:
-        "Safety of Machinery Interlocking Devices Associated with Guards Principles for Design and Selection",
+        "机械安全 与防护装置相关的联锁装置 设计和选择原则",
     },
     {
       id: 35,
       isNumber: "IS 16813 : 2019/ ISO 14118 : 2017",
-      title: "Safety of Machinery Prevention of Unexpected Start-Up",
+      title: "机械安全 防止意外启动",
     },
     {
       id: 36,
       isNumber: "IS 16814 : 2021/ ISO 13857: 2019",
       title:
-        "Safety of Machinery Safety Distances to Prevent Hazard Zones Being Reached by Upper and Lower Limbs",
+        "机械安全 防止上下肢触及危险区域的安全距离",
     },
     {
       id: 37,
       isNumber: "IS 16815 : 2019/ ISO 13855: 2010",
       title:
-        "Safety of Machinery Positioning of Safeguards with Respect to the Approach Speeds of Parts of the Human Body",
+        "机械安全 相对于人体部位接近速度的安全防护装置定位",
     },
     {
       id: 38,
       isNumber: "IS 16816 : 2019/ ISO 13854 : 2017",
       title:
-        "Safety of Machinery Minimum Gaps to Avoid Crushing of Parts of the Human Body",
+        "机械安全 避免人体部位被挤压的最小间隙",
     },
     {
       id: 39,
       isNumber: "IS 16817: 2020/ ISO 13851 : 2019",
       title:
-        "Safety of Machinery Two-Hand Control Devices Principles for Design and Selection",
+        "机械安全 双手控制装置 设计和选择原则",
     },
     {
       id: 40,
       isNumber: "IS 16818 : 2018/ ISO 13850 : 2015",
-      title: "Safety of Machinery Emergency Stop Function Principles for Design",
+      title: "机械安全 急停功能 设计原则",
     },
     {
       id: 41,
       isNumber: "IS 16912 : 2018/ ISO 21469 : 2006",
       title:
-        "Safety of Machinery Lubricants with Incidental Product -- Contact Hygiene Requirements",
+        "机械安全 与产品偶然接触的润滑剂 - 卫生要求",
     },
     {
       id: 42,
       isNumber: "IS 16834 (Part 1) : 2018/ ISO 14123-1 : 2015",
       title:
-        "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 1: Principles and specifications for machinery manufacturers",
+        "机械安全 - 降低机械排放的有害物质对健康造成的风险 - 第1部分：机械制造商的原则和规范",
     },
     {
       id: 43,
       isNumber: "IS 16834 (Part 2) : 2018/ ISO 14123-2 : 2015",
       title:
-        "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 2: Methodology leading to verification procedures",
+        "机械安全 - 降低机械排放的有害物质对健康造成的风险 - 第2部分：导致验证程序的方法",
     },
     {
       id: 44,
       isNumber: "IS 16835 (Part 1) : 2018/ ISO 13856-1 : 2013",
       title:
-        "Safety of machinery - Pressure-sensitive protective devices - Part 1: General principles for design and testing of pressure- sensitive mats and pressure-sensitive floors",
+        "机械安全 - 压敏保护装置 - 第1部分：压敏垫和压敏地板设计和测试的通用原则",
     },
     {
       id: 45,
       isNumber: "IS 16835 (Part 2) : 2018/ ISO 13856-2 : 2013",
       title:
-        "Safety of machinery - Pressure-sensitive protective devices - Part 2: General principles for design and testing of pressure- sensitive edges and pressure-sensitive bars",
+        "机械安全 - 压敏保护装置 - 第2部分：压敏边缘和压敏杆设计和测试的通用原则",
     },
     {
       id: 46,
       isNumber: "IS 16835 (Part 3) : 2018/ ISO 13856-3 : 2013",
       title:
-        "Safety of machinery - Pressure-sensitive protective devices - Part 3: General principles for design and testing of pressure-sensitive bumpers, plates, wires and similar devices.",
+        "机械安全 - 压敏保护装置 - 第3部分：压敏缓冲器、板、线和类似装置设计和测试的通用原则。",
     },
     {
       id: 47,
       isNumber: "IS 16569: 2018/ ISO 11429:1996",
       title:
-        "Ergonomics- System of Auditory and Visual Danger and Information Signals",
+        "人机工程学 - 听觉和视觉危险及信息信号系统",
     },
     {
       id: 48,
       isNumber: "IS 16563 (Part 2) : 2017/ ISO 9355-2:1999",
       title:
-        "Ergonomic Requirements for the Design of Displays and Control Actuators Part 2 Displays",
+        "显示器和控制驱动器设计的人机工程学要求 第2部分 显示器",
     },
     {
       id: 49,
       isNumber: "IS 16563 (Part 3) 2017 / ISO 9355-3:2006",
       title:
-        "Ergonomic Requirements for the Design of Displays and Control Actuators Part 3 Control Actuators",
+        "显示器和控制驱动器设计的人机工程学要求 第3部分 控制驱动器",
     },
     {
       id: 50,
       isNumber: "IS 16572 : 2017/ ISO 14738 : 2002",
       title:
-        "Safety of Machinery - Anthropometric Requirements for the Design of Workstations at Machinery",
+        "机械安全 - 机械工作台设计的人体测量要求",
     },
     {
       id: 51,
       isNumber: "IS 16562 ( Part 1) : 2017/ ISO 15536-1 : 2005",
       title:
-        "Ergonomics - Computer Manikins and Body Templates Part 1 General Requirements",
+        "人机工程学 - 计算机人体模型和身体模板 第1部分 通用要求",
     },
     {
       id: 52,
       isNumber: "IS 16569:2018/ ISO 11429: 1996",
       title:
-        "Ergonomics - System of auditory and visual danger and information signals",
+        "人机工程学 - 听觉和视觉危险及信息信号系统",
     },
     {
       id: 53,
       isNumber: "IS 15296 : 2017/ ISO 11161: 2007",
       title:
-        "Industrial Automation Systems - Safety of Integrated Manufacturing Systems - Basic Requirements",
+        "工业自动化系统 - 集成制造系统的安全 - 基本要求",
     },
   ];
   const TypeBTable = ({ tableRef, searchQuery }) => {
@@ -2371,8 +2371,7 @@ import {
                     to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of Pumps for handling liquids, liquid elevators and
-                    (or)their assemblies /sub-assemblies /components
+                    所有类型的液体处理泵、液体提升机及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2389,8 +2388,7 @@ import {
                     to="/bis-scheme-x-certification-for-compressors"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of compressors and(or)their assemblies /sub-assemblies
-                    /components
+                    所有类型的压缩机及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2407,9 +2405,7 @@ import {
                     to="/bis-scheme-x-certification-for-heat-treatment-equipment"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of machinery for treatment of material by a process
-                    involving a change of temperature and(or)their assemblies
-                    /sub-assemblies /components
+                    所有类型的通过涉及温度变化过程处理材料的机械及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2426,9 +2422,7 @@ import {
                     to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of centrifuges, filtering or purifying machinery for
-                    liquid and gas and(or)their assemblies /sub-assemblies
-                    /components
+                    所有类型的用于液体和气体的离心机、过滤或净化机械及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2445,9 +2439,7 @@ import {
                     to="/bis-scheme-x-certification-for-packing-machinery"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of machinery for filling, closing, sealing, labelling
-                    bottles, packing or wrapping and(or)their
-                    assemblies/sub-assemblies/components
+                    所有类型的用于填充、封闭、密封、贴标签、包装或包裹的机械及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2463,8 +2455,7 @@ import {
                     to="/bis-scheme-x-certification-for-cranes"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of cranes and (or) their assemblies
-                    /sub-assemblies/components
+                    所有类型的起重机及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2481,8 +2472,7 @@ import {
                     to="/bis-scheme-x-certification-for-construction-machinery"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of machinery for construction, earthmoving, Mining and
-                    (or)their assemblies /sub-assemblies/components
+                    所有类型的建筑、土方、采矿机械及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2499,8 +2489,7 @@ import {
                     to="/bis-scheme-x-certification-for-weaving-machines-looms"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of weaving machines (looms) and (or)their
-                    assemblies/sub-assemblies / components
+                    所有类型的织机及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2516,8 +2505,7 @@ import {
                     to="/bis-scheme-x-certification-for-embroidery-machinery"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of machinery for making embroidery and(or)their
-                    assemblies /sub-assemblies /components
+                    所有类型的刺绣机械及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2533,9 +2521,7 @@ import {
                     to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of metal cutting machines tools covered under the
-                    heading 8456 to 8461 and(or)their assemblies
-                    /sub-assemblies/components
+                    所有类型的金属切削机床（标题8456至8461）及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2551,9 +2537,7 @@ import {
                     to="/bis-scheme-x-certification-for-machine-tools"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of machine tools for working stone, ceramics,
-                    concrete, asbestos cement or like mineral glass and (or)their
-                    assemblies /sub-assemblies /components
+                    所有类型的用于加工石材、陶瓷、混凝土、石棉水泥或类似矿物玻璃的机床及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2569,8 +2553,7 @@ import {
                     to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of machinery for working rubber and plastics and(or)
-                    their assemblies /sub-assemblies /components
+                    所有类型的橡胶和塑料加工机械及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2586,10 +2569,7 @@ import {
                     to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of Machines including the machines for public works &
-                    building and the machinery & mechanical appliances having
-                    individual functions, not specified Or included elsewhere in
-                    Chapter 84 and(or)their assemblies/sub-assemblies /components
+                    所有类型的机器，包括公共工程和建筑用机器以及具有单独功能但未指定或未在第84章其他地方包含的机械和机械器具及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2605,10 +2585,7 @@ import {
                     to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of gears and gearing, toothed wheels, chain sprocket,
-                    transmission elements ball or roller screws, gear boxes and
-                    speed changers, including torque converters And (or)their
-                    assemblies /sub-assemblies /components
+                    所有类型的齿轮和传动装置、齿轮、链轮、传动元件滚珠或滚柱丝杠、齿轮箱和变速器，包括扭矩转换器及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2624,8 +2601,7 @@ import {
                     to="/bis-scheme-x-certification-for-rotary-electrical-machines"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of Rotary electrical machines such as Generator, etc.
-                    and (or) their assemblies /sub-assemblies /components
+                    所有类型的旋转电机，如发电机等及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2641,8 +2617,7 @@ import {
                     to="/bis-scheme-x-certification-for-diesel-generators"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of Diesel Generator and (or)their assemblies
-                    /sub-assemblies /components
+                    所有类型的柴油发电机及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2658,8 +2633,7 @@ import {
                     to="/bis-scheme-x-certification-for-transformers"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of Transformers and (or)their assemblies
-                    /sub-assemblies /components
+                    所有类型的变压器及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2676,8 +2650,7 @@ import {
                     to="/bis-scheme-x-certification-for-power-semiconductor-converters"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of Power Semiconductor Converter and (or)their
-                    assemblies /sub-assemblies /components
+                    所有类型的功率半导体转换器及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2693,9 +2666,7 @@ import {
                     to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of switch gear and control gear equipment operating at
-                    voltages not exceeding 1000 volts and (or)their assemblies
-                    /sub-assemblies /components
+                    所有类型的在不超过1000伏电压下运行的开关设备和控制设备及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2711,9 +2682,7 @@ import {
                     to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
                     className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                   >
-                    All types of switch gear and control gear equipment operating at
-                    voltages exceeding 1000 volts and (or) their assemblies
-                    /sub-assemblies /components
+                    所有类型的在超过1000伏电压下运行的开关设备和控制设备及其组件/子组件/部件
                   </Link>
                 </TableCell>
                 <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
