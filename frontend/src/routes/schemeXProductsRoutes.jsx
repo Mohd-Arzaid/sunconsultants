@@ -221,6 +221,22 @@ import WeavingMachinesThai from "../schemeXProducts/WeavingMachines/WeavingMachi
 import WeavingMachinesDutch from "../schemeXProducts/WeavingMachines/WeavingMachinesDutch";
 import WeavingMachinesArabic from "../schemeXProducts/WeavingMachines/WeavingMachinesArabic";
 import CentrifugesJapanese from "@/schemeXProducts/Centrifuges/CentrifugesJapanese";
+import CentrifugesChinese from "@/schemeXProducts/Centrifuges/CentrifugesChinese";
+import CompressorsChinese from "@/schemeXProducts/Compressors/CompressorsChinese";
+import ConstructionMachineryChinese from "@/schemeXProducts/ConstructionMachinery/ConstructionMachineryChinese";
+import CranesChinese from "@/schemeXProducts/Cranes/CranesChaniese";
+import DieselGeneratorChinese from "@/schemeXProducts/DieselGenerator/DieselGeneratorChinese";
+import EmbroideryMachinesChinese from "@/schemeXProducts/EmbroideryMachines/EmbroideryMachinesChinese";
+import GearsGearingsandTransmissionChinese from "@/schemeXProducts/GearsGearingsandTransmission/GearsGearingsandTransmissionChinese";
+import HeatTreatmentEquipmentChinese from "@/schemeXProducts/HeatTreatmentEquipment/HeatTreatmentEquipmentChinese";
+import MachineToolsChinese from "@/schemeXProducts/MachineTools/MachineToolsChinese";
+import MetalCuttingMachinesChinese from "@/schemeXProducts/MetalCuttingMachines/MetalCuttingMachinesChinese";
+import PackingMachineryChinese from "@/schemeXProducts/PackingMachinery/PackingMachineryChinese";
+import PowerSemiconductorsChinese from "@/schemeXProducts/PowerSemiconductors/PowerSemiconductorsChinese";
+import PublicWorksAndMechanicalChinese from "@/schemeXProducts/PublicWorksAndMechanical/PublicWorksAndMechanicalChinese";
+import PumpsAndLiquidElevatorsChinese from "@/schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsChinese";
+import RotaryElectricalMachinesChinese from "@/schemeXProducts/RotaryElectricalMachines/RotaryElectricalMachinesChinese";
+import RubberAndPlasticsMachineryChinese from "@/schemeXProducts/RubberAndPlasticsMachinery/RubberAndPlasticsMachineryChinese";
 import CompressorsJapanese from "@/schemeXProducts/Compressors/CompressorsJapanese";
 import ConstructionMachineryJapanese from "@/schemeXProducts/ConstructionMachinery/ConstructionMachineryJapanese";
 import CranesJapanese from "@/schemeXProducts/Cranes/CranesJapanese";
@@ -279,6 +295,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"
         element={<PumpsAndLiquidElevatorsJapanese />}
       />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-beng-he-ye-ti-ti-sheng-ji-ren-zheng"
+        element={<PumpsAndLiquidElevatorsChinese />}
+      />
       {/* Korean */}
       <Route
         path="/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
@@ -331,6 +352,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai"
         element={<CentrifugesJapanese />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng"
+        element={<CentrifugesChinese />}
       />
 
       {/* french */}
@@ -404,6 +430,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-konpuresa"
         element={<CompressorsJapanese />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-ya-suo-ji-ren-zheng"
+        element={<CompressorsChinese />}
       />
 
       {/* French */}
@@ -479,6 +510,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-kensetsu-kikai"
         element={<ConstructionMachineryJapanese />}
       />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng"
+        element={<ConstructionMachineryChinese />}
+      />
       {/* French */}
       <Route
         path="/certification-bis-schema-x-pour-machines-de-construction"
@@ -552,6 +588,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-kurein"
         element={<CranesJapanese />}
       />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-qi-zhong-ji-ren-zheng"
+        element={<CranesChinese />}
+      />
       {/* French */}
       <Route
         path="/certification-bis-schema-x-pour-ponts-roulants"
@@ -619,6 +660,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-dizeru-hatsudenki"
         element={<DieselGeneratorJapanese />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-chai-you-fa-dian-ji-ren-zheng"
+        element={<DieselGeneratorChinese />}
       />
       {/* French */}
       <Route
@@ -728,6 +774,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-shishu-kikai"
         element={<EmbroideryMachinesJapanese />}
       />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-ci-xiu-ji-xie-ren-zheng"
+        element={<EmbroideryMachinesChinese />}
+      />
       {/* Thai */}
       <Route
         path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-thai-rua"
@@ -798,6 +849,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso"
         element={<GearsGearingsandTransmissionJapanese />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-chi-lun-chi-lun-xi-tong-he-chuan-dong-yuan-jian-ren-zheng"
+        element={<GearsGearingsandTransmissionChinese />}
       />
       {/* Thai */}
       <Route
@@ -871,6 +927,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-netsu-shori-souchi"
         element={<HeatTreatmentEquipmentJapanese />}
       />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-re-chu-li-she-bei-ren-zheng"
+        element={<HeatTreatmentEquipmentChinese />}
+      />
       {/* Thai */}
       <Route
         path="/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron"
@@ -938,6 +999,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-kousaku-kikai"
         element={<MachineToolsJapanese />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-ji-chuang-ren-zheng"
+        element={<MachineToolsChinese />}
       />
       {/* Italian */}
       <Route
@@ -1016,6 +1082,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"
         element={<MetalCuttingMachinesJapanese />}
       />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-jin-shu-qie-xiao-ji-chuang-ren-zheng"
+        element={<MetalCuttingMachinesChinese />}
+      />
       {/* Thai */}
       <Route
         path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak"
@@ -1087,6 +1158,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-pakkingu-kikai"
         element={<PackingMachineryJapanese />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-bao-zhuang-ji-xie-ren-zheng"
+        element={<PackingMachineryChinese />}
       />
       {/* Thai */}
       <Route
@@ -1160,6 +1236,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-denryoku-handoutai-henkan-ki"
         element={<PowerSemiconductorsJapanese />}
       />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-gong-lv-ban-dao-ti-zhuan-huan-qi-ren-zheng"
+        element={<PowerSemiconductorsChinese />}
+      />
       {/* Thai */}
       <Route
         path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-ploy-phalang-bandojeo"
@@ -1231,6 +1312,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu"
         element={<PublicWorksAndMechanicalJapanese />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-gong-gong-gong-cheng-he-ji-xie-she-bei-ren-zheng"
+        element={<PublicWorksAndMechanicalChinese />}
       />
       {/* Thai */}
       <Route
@@ -1309,6 +1395,11 @@ export const SchemeXProductsRoutes = () => {
         path="/bis-sukiimu-x-ninshoo-kaiten-denki-kikai"
         element={<RotaryElectricalMachinesJapanese />}
       />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-xuan-zhuan-dian-ji-ren-zheng"
+        element={<RotaryElectricalMachinesChinese />}
+      />
       {/* Thai */}
       <Route
         path="/kan-rap-rong-bis-phaen-x-samrab-khrueang-fai-fa-kai"
@@ -1375,6 +1466,11 @@ export const SchemeXProductsRoutes = () => {
       <Route
         path="/bis-sukiimu-x-ninshoo-gomu-oyobi-purasuchikku-kikai"
         element={<RubberAndPlasticsMachineryJapanese />}
+      />
+      {/* Chinese */}
+      <Route
+        path="/bis-fang-an-x-xiang-jiao-he-su-liao-ji-xie-ren-zheng"
+        element={<RubberAndPlasticsMachineryChinese />}
       />
       {/* Thai */}
       <Route
