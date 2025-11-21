@@ -1,5 +1,5 @@
 import { Route } from "react-router-dom";
-import { BISFM } from "../components/manual/BISFM";
+import BISFM from "../components/manual/BISFM";
 import ArabicBISFM from "../pages/ArabicBISFM";
 
 export const BISFMPagesRoutes = () => {

@@ -1,35 +1,3 @@
-import { Separator } from "@/components/ui/separator";
-import { useState, useEffect, useRef } from "react";
-import { Helmet } from "react-helmet-async";
-import PropTypes from "prop-types";
-import { useTranslation } from "react-i18next";
-import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg";
-
-import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
-
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableRow,
-  TableHead,
-  TableCell,
-} from "@/components/ui/table";
-
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import ServiceContentRight from "@/components/manual/ServicesRightSideContent/CDSCOContentRight";
-import { Check, SlashIcon } from "lucide-react";
-import Footer from "@/common/Footer";
-import ScrollToTopButton from "../common/ScrollToTop";
-import ServiceContactForm from "@/common/ServiceContactForm";
-import Services from "./Services";
-import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
-import AboutAuthor from "../common/AboutAuthor";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -37,379 +5,161 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "../ui/breadcrumb";
+} from "@/components/ui/breadcrumb";
+import { Check, SlashIcon } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { useState, useRef, useEffect, useMemo } from "react";
+import { Separator } from "@/components/ui/separator";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHeader,
+  TableRow,
+  TableHead,
+} from "@/components/ui/table";
+import ScrollToTopButton from "@/components/common/ScrollToTop";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+// Contact Form Import
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { toast } from "@/hooks/use-toast";
+import { ClockLoader } from "react-spinners";
+import axios from "axios";
+import { BoxReveal } from "@/components/magicui/box-reveal";
+import FooterEng from "@/components/manual/Footer/FooterEng";
+import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
+import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
+import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg";
+import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
+import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
 
-export const BISFM = () => {
-  // Language-specific breadcrumb mapping
-  const breadcrumbData = [
-    {
-      lang: "en",
-      path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
-      name: "BIS Mark (ISI License) for Foreign Manufacturers",
-      url: "https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
-      home: "Home",
-    },
-    {
-      lang: "de",
-      path: "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
-      name: "Leitfaden zur BIS-Zertifizierung für ausländische Hersteller (Indisches BIS)",
-      url: "https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
-      home: "Startseite",
-    },
-    {
-      lang: "es",
-      path: "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
-      name: "Guía Certificación BIS para Fabricantes Extranjeros (BIS Indio)",
-      url: "https://bis-certifications.com/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
-      home: "Inicio",
-    },
-    {
-      lang: "fr",
-      path: "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde",
-      name: "Guide Certification BIS pour Fabricants Étrangers (BIS Inde)",
-      url: "https://bis-certifications.com/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde",
-      home: "Accueil",
-    },
-    {
-      lang: "id",
-      path: "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
-      name: "Panduan Sertifikasi BIS untuk Produsen Asing (BIS India)",
-      url: "https://bis-certifications.com/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
-      home: "Beranda",
-    },
-    {
-      lang: "it",
-      path: "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano",
-      name: "Guida alla Certificazione BIS per Produttori Stranieri (BIS Indiano)",
-      url: "https://bis-certifications.com/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano",
-      home: "Home",
-    },
-    {
-      lang: "ja",
-      path: "/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis",
-      name: "BIS認定：外国製造業者のためのガイド（インドBIS）",
-      url: "https://bis-certifications.com/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis",
-      home: "ホーム",
-    },
-    {
-      lang: "ko",
-      path: "/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu",
-      name: "인도 BIS 외국 제조업체를 위한 BIS 인증 가이드",
-      url: "https://bis-certifications.com/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu",
-      home: "홈",
-    },
-    {
-      lang: "nl",
-      path: "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis",
-      name: "Gids voor BIS-certificering voor buitenlandse fabrikanten (Indiaas BIS)",
-      url: "https://bis-certifications.com/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis",
-      home: "Startpagina",
-    },
-    {
-      lang: "th",
-      path: "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
-      name: "คู่มือการรับรอง BIS สำหรับผู้ผลิตต่างชาติ (BIS อินเดีย)",
-      url: "https://bis-certifications.com/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
-      home: "หน้าหลัก",
-    },
-    {
-      lang: "vi",
-      path: "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
-      name: "Hướng dẫn chứng nhận BIS cho nhà sản xuất nước ngoài (BIS Ấn Độ)",
-      url: "https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
-      home: "Trang chủ",
-    },
-  ];
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
-  // Find the matching breadcrumb based on current path
-  const currentPath =
-    typeof window !== "undefined" ? window.location.pathname : "";
-  const matched =
-    breadcrumbData.find((b) => currentPath === b.path) || breadcrumbData[0];
-
+const BISFM = () => {
   return (
-    <>
-      <Helmet>
-        <title>
-          BIS FMCS Certification | Foreign Manufacturer Certification Scheme |
-          Sun Certifications
-        </title>
-
-        <meta
-          name="description"
-          content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. Trusted BIS Certifications since 2013. ✓ Fast Processing ✓ Expert Guidance"
-        />
-        <meta
-          name="keywords"
-          content="BIS Certificate for foreign manufactures, BIS License, ISI Mark"
-        />
-        <meta name="author" content="Sun Certifications India" />
-        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Open Graph Tags */}
-        <meta
-          property="og:title"
-          content="BIS FMCS Certification | Foreign Manufacturer Certification Scheme"
-        />
-        <meta
-          property="og:description"
-          content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Sun Certifications India" />
-        <meta property="og:locale" content="en_IN" />
-        <meta
-          property="og:image"
-          content="https://suncertifications.com/og-image.jpg"
-        />
-
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@CertificationsSun" />
-        <meta
-          name="twitter:title"
-          content="BIS FMCS Certification | Foreign Manufacturer Certification Scheme"
-        />
-        <meta
-          name="twitter:description"
-          content="Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India."
-        />
-        <meta
-          name="twitter:image"
-          content="https://suncertifications.com/twitter-image.jpg"
-        />
-
-        {/* Canonical URL */}
-        <link rel="canonical" href={window.location.href} />
-
-        {/* Hreflang Links for International Pages */}
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-          hrefLang="en"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
-          hrefLang="ar"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
-          hrefLang="it"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde"
-          hrefLang="fr"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
-          hrefLang="de"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis"
-          hrefLang="nl"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis"
-          hrefLang="ja"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu"
-          hrefLang="ko"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"
-          hrefLang="id"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india"
-          hrefLang="th"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"
-          hrefLang="vi"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"
-          hrefLang="es"
-        />
-        <link
-          rel="alternate"
-          href="https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-          hrefLang="x-default"
-        />
-
-        <meta name="robots" content="index, follow, max-image-preview:large" />
-
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            serviceType: "BIS FMCS Certification",
-            provider: {
-              "@type": "Organization",
-              name: "Sun Certifications India",
-              url: window.location.href,
-              logo: "https://suncertifications.com/logo.png",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+91-8010505057",
-                contactType: "customer service",
-                email: "admin@bis-certifications.com",
-              },
-            },
-            areaServed: {
-              "@type": "Country",
-              name: "India",
-            },
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "BIS FMCS Certification Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "BIS FMCS Certification",
-                    description:
-                      "BIS certification for foreign manufacturers exporting to India",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "AIR Nomination",
-                    description:
-                      "Authorized Indian Representative nomination services",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "BIS Compliance Support",
-                    description:
-                      "Ongoing BIS compliance and surveillance support",
-                  },
-                },
-              ],
-            },
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What is BIS FMCS Certification?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "BIS FMCS (Foreign Manufacturer Certification Scheme) is mandatory for foreign manufacturers exporting products to India. It ensures products meet Indian Standards and requires ISI Mark certification.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How long does BIS FMCS certification take?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The BIS FMCS certification process typically takes approximately 3 months from application submission to license grant, including testing and factory audit.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What documents are required for BIS FMCS certification?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Required documents include application form, plant and machinery list, raw materials list, test equipment details, calibration certificates, plant layout, and quality control documentation.",
-                },
-              },
-            ],
-          })}
-        </script>
-
-        {/* JSON-LD Breadcrumb structured data for SEO */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: matched.name,
-                item: matched.url,
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
-
-      <main className="w-full relative" role="main">
-        <div className="absolute md:top-5 top-3 left-0 w-full z-30">
-          <div className="max-w-[80rem] mx-auto px-4">
-            <div className="w-fit font-inter">
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to="/">{matched.home}</Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator>
-                    <SlashIcon />
-                  </BreadcrumbSeparator>
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>{matched.name}</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-            </div>
-          </div>
-        </div>
-
-        <BISFMHero />
-        <BISFMIndex />
-        <BISFMContent />
-        <Footer />
-        <ScrollToTopButton />
-      </main>
-    </>
+    <div className="relative">
+      <MetaTags />
+      <BreadcrumbContent />
+      <HeroSection />
+      <IndexSection />
+      <MainContent />
+      <ServiceFaq />
+      <div id="product-table">
+        <BISFMProductTable />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <FooterEng />
+      <ScrollToTopButton />
+    </div>
   );
 };
 
-// BIS Hero Section
-const BISFMHero = () => {
-  const { t } = useTranslation();
+export default BISFM;
+
+const MetaTags = () => {
+  const title =
+    "BIS FMCS Certification | Foreign Manufacturer Certification Scheme | Sun Certifications";
+  const description =
+    "Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. Trusted BIS Certifications since 2013. ✓ Fast Processing ✓ Expert Guidance";
+  const keywords =
+    "BIS Certificate for foreign manufactures, BIS License, ISI Mark";
+  const canonicalUrl =
+    "https://bis-certifications.com/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis";
+  const author = "Dhruv Aggarwal";
+  const publisher = "Sun Certifications India";
+  const ogTitle =
+    "BIS FMCS Certification | Foreign Manufacturer Certification Scheme";
+  const ogDescription =
+    "Expert BIS FMCS certification services for foreign manufacturers. Get ISI Mark certification for exports to India. ✓ Fast Processing ✓ Expert Guidance";
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://bis-certifications.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "BIS Mark (ISI License) for Foreign Manufacturers",
+        item: canonicalUrl,
+      },
+    ],
+  };
 
   return (
-    <section
-      className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]"
-      aria-label="BIS FMCS Certification Hero"
-    >
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
+      <meta name="author" content={author} />
+      <meta name="publisher" content={publisher} />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:title" content={ogTitle} />
+      <meta property="og:description" content={ogDescription} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:site_name" content="Sun Certifications India" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:title" content={ogTitle} />
+      <meta name="twitter:description" content={ogDescription} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData),
+        }}
+      />
+    </Helmet>
+  );
+};
+
+const BreadcrumbContent = () => {
+  return (
+    <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+      <div className="max-w-[80rem] mx-auto px-4">
+        <div className="w-full overflow-x-auto scrollbar-hide font-inter">
+          <div className="w-fit min-w-full">
+            <Breadcrumb>
+              <BreadcrumbList className="flex-nowrap">
+                <BreadcrumbItem className="flex-shrink-0">
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator className="flex-shrink-0">
+                  <SlashIcon />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem className="flex-shrink-0">
+                  <BreadcrumbPage className="whitespace-nowrap">
+                    BIS Mark (ISI License) for Foreign Manufacturers
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const HeroSection = () => {
+  return (
+    <div className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
       <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"></div>
 
@@ -421,27 +171,28 @@ const BISFMHero = () => {
 
       <div className="max-w-[84rem] gap-[40px] md:gap-[90px] flex flex-col md:flex-row items-center justify-center h-full w-full mx-auto px-4 md:px-0">
         {/* Left Side */}
-        <article className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
+        <div className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
           <div className="inline-flex items-center">
             <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4"></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
-              {t("hero.badge")}
+              Certified Expertise
             </span>
           </div>
 
           <div className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
-              {t("hero.titlePart1")}
+              Indian BIS Certification
               <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"></span>
             </span>{" "}
-            {t("hero.titlePart2")}
+            for foreign manufactures
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            {t("hero.description")}
+            Foreign manufacturers need ISI mark for exports to India. Covers
+            600+ mandatory products and 20,000+ voluntary products.
           </p>
 
-          <nav className="flex items-center -mt-2">
+          <div className="flex items-center -mt-2">
             <div
               className="flex items-center cursor-pointer group"
               onClick={() => {
@@ -458,22 +209,252 @@ const BISFMHero = () => {
                 <div className="w-3 h-3 border-t-2 border-r-2 border-[#125E5A] rotate-45 translate-x-[-1px]"></div>
               </div>
               <span className="font-geist text-[#125E5A] text-[18px] font-medium group-hover:translate-x-1 transition-all duration-300">
-                {t("hero.viewServices")}
+                View Services
               </span>
             </div>
-          </nav>
-        </article>
+          </div>
+        </div>
 
         {/* Right Side */}
-        <ServiceContactForm />
+        <ContactUsForm />
       </div>
-    </section>
+    </div>
   );
 };
 
-// BIS Index Section
-export const BISFMIndex = () => {
-  const { t } = useTranslation("BISFM");
+const ContactUsForm = () => {
+  const [loading, setLoading] = useState(false);
+
+  // Function to get page name based on URL
+  const getPageName = () => {
+    const path = window.location.pathname;
+
+    // BISFM (FMCS - Foreign Manufacturers)
+    if (
+      path.includes(
+        "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+      )
+    )
+      return "BIS Mark (ISI License) for Foreign Manufacturers - English Page";
+  };
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    companyName: "",
+    productName: "",
+    message: "",
+    pageUrl: window.location.href,
+    pageName: getPageName(),
+  });
+
+  const { fullName, email, phoneNumber, companyName, productName, message } =
+    formData;
+
+  const handleOnChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // console.log("Form Data:", formData);
+
+    // Full name validation
+    const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
+    if (!nameRegex.test(fullName)) {
+      toast({
+        variant: "destructive",
+        title: "Please enter a valid full name.",
+        description: "Name should only contain letters and spaces.",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Email validation - allow any domain
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+      toast({
+        variant: "destructive",
+        title: "Please enter a valid email address.",
+        description: "Check if your email format is correct",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^\+?[0-9\s-]{8,15}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      toast({
+        variant: "destructive",
+        title: "Please enter a valid phone number",
+        description: "Phone number must be (8-15 digits)",
+      });
+      setLoading(false);
+      return;
+    }
+
+    //  console.log(BASE_URL);
+    try {
+      const response = await axios.post(
+        `${BASE_URL}/appointment/submit-appointment`,
+        formData
+      );
+
+      if (!response.data.success) {
+        throw new Error(response.data.message);
+      }
+      toast({
+        title: "Contact form submitted successfully!",
+        description:
+          "Thank you for contacting us. Our team will get back to you soon.",
+      });
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        companyName: "",
+        productName: "",
+        message: "",
+        pageUrl: window.location.href,
+        pageName: getPageName(),
+      });
+    } catch (error) {
+      const errorMessage =
+        error.response?.data?.message || "Something went wrong";
+      toast({
+        variant: "destructive",
+        title: errorMessage || "Failed to submit contact form details!",
+        description:
+          "Something went wrong. Please check your details and try again.",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
+      <div className="flex w-full items-center gap-3">
+        <span className="uppercase font-poppins font-semibold text-[18px] md:text-[20px] text-[#008080]">
+          Contact Us
+        </span>
+        <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+      </div>
+
+      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+        Book an Appointment
+      </h3>
+
+      <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
+        Want to contact our team and schedule a call?
+        <span className="text-black"> Try Now</span>
+      </p>
+
+      <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="fullName"
+            value={fullName}
+            onChange={handleOnChange}
+            placeholder="Full Name *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+
+          <Input
+            disabled={loading}
+            required
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleOnChange}
+            placeholder="Email Address *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+          <Input
+            disabled={loading}
+            required
+            type="tel"
+            name="phoneNumber"
+            value={phoneNumber}
+            onChange={handleOnChange}
+            placeholder="Contact Number *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="companyName"
+            value={companyName}
+            onChange={handleOnChange}
+            placeholder="Company Name *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="productName"
+            value={productName}
+            onChange={handleOnChange}
+            placeholder="Product Name *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="message"
+            value={message}
+            onChange={handleOnChange}
+            placeholder="Required Certification*"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
+        </div>
+
+        <Button
+          disabled={loading}
+          type="submit"
+          className="disabled:opacity-100 mt-1 w-[218px] h-[50px] md:h-[60px] bg-[#1A8781] hover:bg-[#1A8781]/90 rounded-[5px] text-[15px] md:text-[15px] font-poppins tracking-wide leading-[28px] shadow-elegant transition-all duration-300 hover:translate-y-[-2px]"
+        >
+          {loading ? (
+            <div className="flex gap-3 items-center justify-center">
+              <ClockLoader size={22} color="#fff" />
+              <span>Sending</span>
+            </div>
+          ) : (
+            <div className="flex gap-3 items-center justify-center">
+              <span>Book Appointment</span>
+            </div>
+          )}
+        </Button>
+      </form>
+    </div>
+  );
+};
+
+const IndexSection = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("overview");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -481,19 +462,35 @@ export const BISFMIndex = () => {
   const mobileMenuRef = useRef(null);
   const toggleButtonRef = useRef(null);
 
-  const SECTIONS = [
-    "overview",
-    "standardization",
-    "representation",
-    "document",
-    "process",
-    "costing",
-    "surveillance",
-    "facilitator",
-  ];
+  const SECTIONS = useMemo(
+    () => [
+      "overview",
+      "standardization",
+      "representation",
+      "document",
+      "process",
+      "costing",
+      "surveillance",
+      "facilitator",
+    ],
+    []
+  );
+
+  const MENU_ITEMS = {
+    overview: "Overview",
+    standardization: "Standardization",
+    representation: "Representation",
+    document: "Document",
+    process: "Process",
+    costing: "Costing",
+    surveillance: "Surveillance",
+    facilitator: "Facilitator",
+  };
 
   const handleItemClick = (item) => {
-    const element = document.getElementById(item.toLowerCase());
+    const element = document.getElementById(
+      item.toLowerCase().replace(/\s+/g, "-")
+    );
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -536,7 +533,6 @@ export const BISFMIndex = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    // Initial check
     handleScroll();
 
     return () => {
@@ -545,62 +541,41 @@ export const BISFMIndex = () => {
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = SECTIONS.map((section) => {
-        const element = document.getElementById(section.toLowerCase());
+    const handleScrollSpy = () => {
+      const scrollPosition = window.scrollY + 200;
+
+      for (let i = SECTIONS.length - 1; i >= 0; i--) {
+        const section = SECTIONS[i];
+        const element = document.getElementById(section);
+
         if (element) {
-          const rect = element.getBoundingClientRect();
-          return {
-            id: section,
-            top: rect.top,
-            bottom: rect.bottom,
-            element,
-          };
-        }
-        return null;
-      }).filter(Boolean);
+          const offsetTop = element.offsetTop;
 
-      // Find the section that's currently most visible in viewport
-      // Check which section's top is closest to the top of viewport (with some offset)
-      const currentSection = sections.find((section) => {
-        return section.top <= 150 && section.bottom > 150;
-      });
-
-      if (currentSection) {
-        setActiveSection(currentSection.id);
-      } else {
-        // If no section is in the sweet spot, find the one closest to top
-        const closestSection = sections.reduce((closest, section) => {
-          if (!closest) return section;
-
-          const currentDistance = Math.abs(section.top - 150);
-          const closestDistance = Math.abs(closest.top - 150);
-
-          return currentDistance < closestDistance ? section : closest;
-        }, null);
-
-        if (closestSection) {
-          setActiveSection(closestSection.id);
+          if (scrollPosition >= offsetTop) {
+            setActiveSection(section);
+            break;
+          }
         }
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    window.addEventListener("scroll", handleScrollSpy);
+    handleScrollSpy();
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => window.removeEventListener("scroll", handleScrollSpy);
+  }, [SECTIONS]);
 
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
         <div className="text-base font-semibold font-geist tracking-wider uppercase text-blue-900">
-          {t(`sections.${activeSection}`)}
+          {MENU_ITEMS[activeSection]}
         </div>
         <button
           ref={toggleButtonRef}
@@ -612,7 +587,7 @@ export const BISFMIndex = () => {
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-blue-900"
             fill="none"
-            viewBox="0 24 24"
+            viewBox="0 0 24 24"
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
@@ -645,13 +620,14 @@ export const BISFMIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
-                  {t(`sections.${item}`)}
+                  {MENU_ITEMS[item]}
                 </div>
               </div>
             ))}
@@ -660,7 +636,7 @@ export const BISFMIndex = () => {
       )}
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto overflow-x-auto">
+      <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto">
         {SECTIONS.map((item) => (
           <div
             key={item}
@@ -668,18 +644,20 @@ export const BISFMIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
-              {t(`sections.${item}`)}
+              {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -688,33 +666,1474 @@ export const BISFMIndex = () => {
   );
 };
 
-// BIS Content Section
-const BISFMContent = () => {
+const MainContent = () => {
   return (
-    <section className="" aria-label="BIS FMCS Certification Content">
-      <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
-        <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
-          {/* Left Side */}
-          <BISFMContentLeft />
-          {/* Right Side */}
-          <ServiceContentRight />
-        </div>
+    <div className="max-w-[88rem] mx-auto px-4 py-8 md:px-12 md:py-12">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-[48px] w-full">
+        {/* Left Side */}
+        <MainContentLeft />
+        {/* Right Side */}
+        <ServicesRightSideContentEng />
       </div>
-      <ServiceFaq />
-      <div id="product-table">
-        <BISFMProductTable />
-      </div>
-
-      <div id="services">
-        <Services />
-      </div>
-    </section>
+    </div>
   );
 };
 
-// BIS FAQs Section
+const MainContentLeft = () => {
+  return (
+    <div className="flex-1">
+      <div className="flex flex-col gap-[20px] md:gap-[40px]">
+        <div className="flex flex-col gap-2">
+          <h1 className="service-left-content-heading-two">
+            Complete information on Indian BIS certification under FMCS Scheme
+          </h1>
+
+          <h2 className="service-left-content-heading-three">
+            What is Indian BIS?
+          </h2>
+
+          <p className="service-left-content-paragraph">
+            The Bureau of Indian Standards (BIS) is India's national standards
+            body under the Ministry of Consumer Affairs, Food and Public
+            Distribution. Established under the BIS Act 1986, and revised in
+            2016, BIS plays a pivotal role in standardization, marking, and
+            quality certification of goods. It aims to ensure the quality,
+            safety, and reliability of products offered to Indian consumers.
+          </p>
+
+          <p className="service-left-content-paragraph">
+            BIS operates through various schemes that include product
+            certification, hallmarking for jewelry, testing services, and
+            training programs. However, one of its most internationally
+            significant frameworks is the Foreign Manufacturers Certification
+            Scheme (FMCS).
+          </p>
+        </div>
+
+        <OverviewSection />
+        <div className="service-left-content-divider" />
+        <StandardizationSection />
+        <div className="service-left-content-divider" />
+        <RepresentationSection />
+        <div className="service-left-content-divider" />
+        <DocumentSection />
+        <div className="service-left-content-divider" />
+        <ProcessSection />
+        <div className="service-left-content-divider" />
+        <CostingSection />
+        <div className="service-left-content-divider" />
+        <SurveillanceSection />
+        <div className="service-left-content-divider" />
+        <FacilitatorSection />
+        <ServiceAuthorEng />
+      </div>
+    </div>
+  );
+};
+
+const OverviewSection = () => {
+  return (
+    <div id="overview" className="flex flex-col scroll-mt-20">
+      {/* Overview */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">Overview</span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      <h2 className="service-left-content-heading-two">
+        What is BIS certificate under FMCS?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        Introduced in the year 2000, FMCS is a mechanism by which foreign
+        manufacturers can be granted a BIS license to use the ISI mark on their
+        products, indicating conformity with Indian standards. The certification
+        process FMCS enables overseas entities to legally sell their products in
+        India without establishing a local manufacturing unit.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        As of now, more than 1,650 foreign manufacturers are operating in India
+        under the BIS certification system through FMCS.{" "}
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        Why BIS Certification is Crucial ?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        Obtaining a BIS certificate is more than a legal requirement—it's a
+        gateway to India's vast consumer market. Here are a few key reasons why
+        it's essential:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Legal Compliance: Products must comply with relevant Indian standards.",
+          "Brand Credibility: The ISI mark serves as proof of quality and boosts consumer trust.",
+          "Customs Clearance: Without a valid BIS licence, products may be rejected at customs.",
+          "Market Access: Helps foreign brands gain seamless entry and widespread acceptance in India.",
+          "Risk Mitigation: Ensures that products are safe, thus avoiding potential recalls and liability issues.",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        Scope of Products Covered in BIS
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        BIS has listed over 600 products under mandatory certification, and over
+        20,000 items are eligible for voluntary BIS certificate. These span a
+        wide range of industries:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Electronics & IT hardware",
+          "Automotive parts",
+          "Household appliances",
+          "Steel products",
+          "Cement and construction materials etc.",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        The growing list indicates the increasing scope and relevance of BIS
+        certificate in global trade.
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        Objectives or benefits of BIS Certification for Foreign Manufacturers
+        under FMCS
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        The FMCS and BIS certificate regime aim to:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Use of the ISI mark without a valid BIS license is punishable by law.",
+          "Certified products must display both the ISI logo and CM/L number (Certificate of Manufacturing License).",
+          "Violators may face product bans, fines, or even criminal prosecution.",
+          "Build trust between consumers and imported brands.",
+          "Facilitate fair trade and a level playing field.",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        Key Features of BIS certificate for foreign manufacturers
+      </h2>
+
+      <div className="mt-6 md:mt-8 overflow-x-auto">
+        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+          <TableHeader>
+            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                FEATURE
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
+                DESCRIPTION
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Applicability
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Foreign manufacturers only
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Marking
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                ISI mark + CM/L number
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Audit Requirement
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Mandatory factory inspection
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Testing
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Conducted at BIS-approved Indian labs
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Validity
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                BIS license valid for 1-2 years
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Renewal
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Required upon expiry or product updates
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                AIR (Authorized Indian Representative)
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Must be appointed to liaise with BIS
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Performance Bank Guarantee
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Required from RBI-approved Indian bank
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+    </div>
+  );
+};
+
+const StandardizationSection = () => {
+  return (
+    <div id="standardization" className="flex flex-col scroll-mt-20">
+      {/* Standardization */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">
+          Standardization
+        </span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      <h2 className="service-left-content-heading-two">
+        What Is Indian BIS and Why It Matters ?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        The Indian BIS is the hallmark of quality and safety issued by the
+        Bureau of Indian Standards (BIS). Today, the ISI mark is used
+        exclusively to designate products that conform to Indian standards under
+        the official BIS certification scheme.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        For a product to bear the Indian BIS or ISI mark, it must pass through a
+        rigorous BIS certification process, including lab testing, factory
+        inspection, documentation audits, and compliance checks with Indian BIS
+        guidelines.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Legal Standing of the BIS certification in India
+      </p>
+
+      <p className="service-left-content-paragraph">
+        BIS license is not merely a marketing tool—it is a statutory requirement
+        for all products falling under the mandatory BIS certification scheme.{" "}
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        According to the BIS Act, 2016 :
+      </h2>
+
+      <PointsListWithoutHeading
+        points={[
+          "Use of the ISI mark without a valid BIS license is punishable by law.",
+          "Certified products must display both the ISI logo and CM/L number (Certificate of Manufacturing License).",
+          "Violators may face product bans, fines, or even criminal prosecution.",
+        ]}
+      />
+
+      <img
+        src={ISIMARKImage}
+        alt="ISI Mark"
+        className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
+      />
+
+      <p className="service-left-content-heading-three">
+        The ISI logo typically consists of:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          'The stylized letters "ISI" inside a rectangle with rounded corners',
+          "The CM/L number displayed beneath or adjacent to the mark",
+          "The reference Indian standard code number (e.g., IS 302 for electrical appliances)",
+        ]}
+      />
+
+      <p className="service-left-content-heading-three">Placement must be:</p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Permanent and clearly visible on the product",
+          "On the packaging if not possible on the product",
+          "On user manuals in some product categories",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        Product Categories Requiring BIS Certificate
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        More than 600 products require the ISI mark under the mandatory
+        registration scheme in India. Examples include:
+      </p>
+
+      {/* Table for Product Categories Requiring BIS Certificate */}
+      <div className="mt-6 md:mt-8 overflow-x-auto">
+        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+          <TableHeader>
+            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                PRODUCT CATEGORY
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                IS CODE
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                STATUS
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Electrical Appliances
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                IS 302
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Mandatory
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Steel & Iron
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                IS 2062
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Mandatory
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Food Containers
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                IS 10146
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Mandatory
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Helmets
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                IS 4151
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Mandatory
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Cement
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                IS 1489
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Mandatory
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      <p className="service-left-content-paragraph">
+        Each category requires adherence to its corresponding Indian standard,
+        which is tested during the BIS certification process, complete list of
+        the products can be reached by{" "}
+        <span
+          className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
+          onClick={() => {
+            const productTable = document.getElementById("product-table");
+            if (productTable) {
+              productTable.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          }}
+        >
+          Clicking Here
+        </span>
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        Indian BIS vs. Other Global Certifications
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        Let's compare the ISI mark with other international symbols:
+      </p>
+
+      <div className="mt-6 md:mt-8 overflow-x-auto">
+        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+          <TableHeader>
+            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                MARK
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                COUNTRY
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                MANDATORY?
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
+                FOCUS
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                ISI
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                India
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Yes
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Product safety and quality
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                CE
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                EU
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Yes (for specific categories)
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Health, safety, environment
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                UL
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                USA
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                No
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Safety standards (voluntary)
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                CCC
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                China
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Yes
+              </TableCell>
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Electrical goods safety
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      <p className="service-left-content-paragraph">
+        Unlike UL (voluntary) or CE (region-specific), the ISI mark under the
+        BIS registration scheme is both compulsory and locally enforced.
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        Is BIS Certification or BIS License Mandatory for Import to India?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        Mandatory Nature of BIS Certificate
+      </p>
+
+      <p className="service-left-content-paragraph">
+        The Government of India has made it mandatory for certain products to be
+        certified by the Bureau of Indian Standards (BIS) before they can be
+        imported, sold, or distributed in the Indian market. This obligation
+        stems from:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Consumer protection goals",
+          "Harmonization with Indian standards",
+          "National safety regulations",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        If a product falls under the compulsory requirement of Indian BIS, it
+        must have a BIS certificate and carry the ISI mark before it can clear
+        Indian customs.
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        Is BIS Certification Required Only for Imports?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        No. BIS certification is mandatory for:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Domestic manufacturers producing regulated products",
+          "Foreign manufacturers exporting regulated products to India",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        Whether you're located in India or abroad, if your product is on the
+        mandatory list, it must have a BIS licence and feature the ISI mark.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Indian customs now uses advanced data systems to flag non-compliant
+        shipments automatically. All goods under regulated categories are
+        scanned for the presence of a valid BIS certificate.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Exemptions from BIS Certification
+      </p>
+
+      <p className="service-left-content-paragraph">
+        BIS certification is mandatory in most cases, but exemptions may be
+        granted under specific scenarios:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "For R&D prototypes or sample testing",
+          "For personal imports of limited quantity",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        However, these are rare and require formal exemption letters from BIS or
+        related ministries.
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        How to Know If Your Product Needs BIS Certificate or BIS License?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        <span
+          className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
+          onClick={() => {
+            const productTable = document.getElementById("product-table");
+            if (productTable) {
+              productTable.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          }}
+        >
+          Clicking Here
+        </span>
+        Click here to check if your product covered under mandatory Indian BIS
+        certification scheme.
+      </p>
+    </div>
+  );
+};
+
+const RepresentationSection = () => {
+  return (
+    <div id="representation" className="flex flex-col scroll-mt-20">
+      {/* Representation */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">
+          Representation
+        </span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      {/* Title */}
+      <h2 className="service-left-content-heading-two">
+        Role of Authorized Indian Representative (AIR) in BIS Certification
+      </h2>
+
+      <h2 className="service-left-content-heading-three">
+        What is an Authorized Indian Representative (AIR)?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        An Authorized Indian Representative (AIR) is a crucial intermediary
+        appointed by a foreign manufacturer seeking BIS certification under the
+        FMCS registration scheme. The AIR serves as the official liaison between
+        the Bureau of Indian Standards (BIS) and the manufacturer, ensuring
+        smooth communication, documentation handling, and coordination of the
+        certification process.
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        Legal Requirement for AIR Appointment
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        As per BIS guidelines, any foreign manufacturer who does not have a
+        registered office in India must appoint an AIR. This requirement ensures
+        that BIS has a reliable, accessible point of contact within Indian
+        jurisdiction.
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        Key Responsibilities of the AIR
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        The AIR's role spans the entire BIS certification process, from
+        documentation and application submission to audit coordination and
+        post-certification compliance:
+      </p>
+
+      <div className="mt-6 md:mt-8 overflow-x-auto">
+        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+          <TableHeader>
+            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                Responsibility
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Communication
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Acts as the point of contact with BIS officers and departments
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Application Support
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Assists in filling forms, compiling documents, and submitting
+                the application
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Audit Coordination
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Coordinates factory inspection schedules and addresses auditor
+                queries
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Compliance Monitoring
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Ensures all testing and certification activities meet BIS norms
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Renewal Management
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Oversees BIS licence renewal, documentation updates, and fee
+                payments
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      <h2 className="service-left-content-heading-three">
+        Eligibility Criteria to Become an AIR
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        To serve as an AIR, an individual or organization must :
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Be an Indian citizen or a legally registered business entity in India",
+          "Have a physical address in India with a valid postal code",
+          "Be capable of communicating fluently in English and local languages",
+          "Understand the certification scheme, BIS documentation protocols, and regulatory expectations",
+          "Be able to respond to audits and correspondence promptly on behalf of the foreign manufacturer",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        Why the AIR Role is Vital
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        The AIR ensures continuity and accountability throughout the BIS
+        certification process. Without an AIR:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "BIS has no jurisdiction to act against a non-complying foreign manufacturer",
+          "Time-sensitive queries and audit schedules may get delayed",
+          "The certification process can get stuck, revoked, or rejected",
+        ]}
+      />
+
+      <p className="service-left-content-paragraph">
+        A proactive and experienced AIR significantly increases the chance of
+        successful BIS certification.
+      </p>
+    </div>
+  );
+};
+
+const DocumentSection = () => {
+  return (
+    <div id="document" className="flex flex-col scroll-mt-20">
+      {/* Document */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">Document</span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      {/* Title */}
+      <h2 className="service-left-content-heading-two">
+        Documentation Required for BIS Certification under FMCS
+      </h2>
+
+      <div className="mt-6 md:mt-8 overflow-x-auto">
+        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+          <TableHeader>
+            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                Document Type
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
+                Purpose
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                FMCS Application Form
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Official request for certification
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Manufacturing Equipment List
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Shows production capabilities
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Raw Materials List
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Ensures input material quality
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Testing Equipment List
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Evaluates testing and compliance readiness
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Calibration Certificates
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Proves test equipment accuracy
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Factory Layout & Process Flow
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Helps auditors understand manufacturing stages
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Test Certificates
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Proves quality of raw materials and final product
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Quality Control Profile
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Verifies staff qualifications and SOPs
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Payment Proof
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Validates fee submission to BIS
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Performance Bank Guarantee
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Acts as financial assurance for BIS
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      <h2 className="service-left-content-heading-three">
+        Detailed Breakdown of Each document required to Indian BIS certification
+      </h2>
+
+      <h2 className="service-left-content-heading-three">
+        1. FMCS Application Form
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        This document provides general details about the foreign manufacturer,
+        including:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Product details (type, category, model)",
+          "Intended Indian Standard",
+          "Contact details of factory and AIR",
+          "Manufacturing capacity and testing scope",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        2. List of Manufacturing Equipment
+      </h2>
+
+      <PointsListWithoutHeading
+        points={[
+          "Machine name and make",
+          "Production capacity",
+          "Contact details of factory and AIR",
+          "Maintenance records (if applicable)",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        3. List of Raw Materials
+      </h2>
+
+      <PointsListWithoutHeading
+        points={[
+          "Source of procurement",
+          "Grades and specifications",
+          "Testing protocol (if any)",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        4. List of Testing Equipment
+      </h2>
+
+      <PointsListWithoutHeading
+        points={[
+          "Equipment name and manufacturer",
+          "Compliance with test parameters in Indian Standard",
+          "Location within the factory",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        5. Calibration Certificates
+      </h2>
+
+      <PointsListWithoutHeading
+        points={[
+          "Date of last calibration",
+          "Validity period",
+          "Certificate number",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        6. Factory Layout & Process Flow Diagram
+      </h2>
+
+      <PointsListWithoutHeading
+        points={[
+          "Entry and exit points",
+          "Testing lab areas",
+          "QC checkpoints",
+          "Storage and packaging sections",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        7. Performance Bank Guarantee
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        Issued by an RBI-approved Indian bank, the Performance Bank Guarantee
+        (PBG) covers liability in case of non-compliance. This document must:
+      </p>
+
+      <PointsListWithoutHeading
+        points={[
+          "Be on official bank letterhead",
+          "Indicate guarantee period and amount",
+          "Be signed and sealed",
+        ]}
+      />
+
+      <h2 className="service-left-content-heading-three">
+        Common documentation mistakes to avoid while applying for BIS
+        certificate or Indian BIS.
+      </h2>
+
+      <PointsListWithoutHeading
+        points={[
+          "Mismatch between form data and factory reality",
+          "Submitting expired calibration reports",
+          "Missing BIS fee proof",
+          "Incomplete or vague process flows",
+          "Naming inconsistencies between documents",
+        ]}
+      />
+    </div>
+  );
+};
+
+const ProcessSection = () => {
+  return (
+    <div id="process" className="flex flex-col scroll-mt-20">
+      {/* Process */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">Process</span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      {/* Title */}
+      <h2 className="service-left-content-heading-two">
+        Step-by-Step BIS Certification Process Under FMCS
+      </h2>
+
+      <h2 className="service-left-content-heading-three">
+        Overview of the BIS Certification Journey
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        The BIS certification process under the Foreign Manufacturers
+        Certification Scheme (FMCS) is methodical, structured, and multi-phased.
+        It ensures that products comply with applicable Indian standards,
+        manufacturing processes are robust, and testing is accurate.
+      </p>
+
+      <h2 className="service-left-content-heading-three">
+        Step-by-Step Process Summary Table
+      </h2>
+
+      <div className="mt-6 md:mt-8 overflow-x-auto">
+        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+          <TableHeader>
+            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                Step
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                1
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Application Submission to BIS FMCD
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                2
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Documentation Scrutiny and Initial Review
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                3
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Query Resolution & Clarification Submission
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                4
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Nomination of BIS Technical Auditor
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                5
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Factory Audit Scheduling & Coordination via AIR
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                6
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Factory Inspection & Sample Sealing by BIS Auditor
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                7
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                In-House Product Testing (if applicable)
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                8
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Testing of Sealed Samples in BIS-Approved Labs in India
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                9
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Review of Test Reports & Audit Findings
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                10
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Issuance of BIS License and Use of ISI Mark
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      <img
+        src={BISCertificateImage}
+        alt="BIS Certificate Process Flow"
+        className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
+      />
+
+      <h2 className="service-left-content-heading-three">
+        Timeframe to Obtain BIS Certificate
+      </h2>
+
+      <p className="service-left-content-heading-three">
+        Typical Duration from Application to Certificate
+      </p>
+
+      <p className="service-left-content-paragraph">
+        The BIS certification process under FMCS generally takes about 120
+        working days (approximately 3–4 months) from the date of correct
+        application submission. Delays often occur when documents are unclear or
+        if the factory isn't audit ready.
+      </p>
+    </div>
+  );
+};
+
+const CostingSection = () => {
+  return (
+    <div id="costing" className="flex flex-col scroll-mt-20">
+      {/* Costing */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">Costing</span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      {/* Title */}
+      <h2 className="service-left-content-heading-two">
+        BIS Certification Cost Structure Explained
+      </h2>
+
+      <h2 className="service-left-content-heading-three">
+        Overview of BIS Certification Costs
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        Securing a BIS certificate under the Foreign Manufacturers Certification
+        Scheme (FMCS) involves several types of costs. These cover everything
+        from application submission and audits to product testing and mark
+        usage.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Foreign manufacturers must budget adequately to ensure timely payments,
+        as failure to pay can lead to rejection of BIS certification mid-way.
+      </p>
+
+      <div className="mt-6 md:mt-8 overflow-x-auto">
+        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+          <TableHeader>
+            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                Cost Category
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Application Fee (INR 1000)
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Paid during submission of the FMCS application form for
+                obtaining Indian BIS
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Audit Charges (INR 7000)
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Covers BIS auditor travel, man-day rates, and related expenses
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Product Testing Fees (As per product)
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                For testing sealed samples at BIS-recognized labs in India
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                License Fee (INR 1000)
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                One-time fee paid upon grant of BIS certificate
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Marking Fee (As per product)
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Annual fee for usage of the ISI mark on certified products
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Performance Bank Guarantee (USD 10,000)
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Financial guarantee deposited via Indian bank to ensure
+                compliance
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+    </div>
+  );
+};
+
+const SurveillanceSection = () => {
+  return (
+    <div id="surveillance" className="flex flex-col scroll-mt-20">
+      {/* Surveillance */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">Surveillance</span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      {/* Title */}
+      <h2 className="service-left-content-heading-two">
+        Post BIS Certification Surveillance and Compliance Requirements
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        Once a BIS certificate is granted, the responsibility doesn't end there.
+        The BIS certification includes an ongoing surveillance and compliance
+        system to ensure continuous adherence to Indian standards. This
+        post-certification phase is crucial to maintaining your BIS license,
+        retaining the right to use the ISI mark, and avoiding legal penalties or
+        suspensions.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Key Surveillance Components after obtaining BIS certificate Market
+        Surveillance : Random product sampling from the Indian market for
+        independent lab testing , if the sample fails the BIS certificate is
+        suspended. It is done twice every year.
+      </p>
+    </div>
+  );
+};
+
+const FacilitatorSection = () => {
+  return (
+    <div id="facilitator" className="flex flex-col scroll-mt-20">
+      {/* Facilitator */}
+      <div className="flex w-full items-center gap-3">
+        <span className="service-left-content-index-heading">Facilitator</span>
+        <Separator className="service-left-content-separator" />
+      </div>
+
+      {/* Title */}
+      <h2 className="service-left-content-heading-two">
+        Why Choose a BIS Certification Consultant?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        The BIS certification under the FMCS registration scheme is intricate,
+        highly technical, and time-sensitive. While it is possible to pursue
+        certification independently, most successful foreign manufacturers rely
+        on BIS consultants to streamline the journey and minimize risks.
+      </p>
+
+      <h2 className="service-left-content-heading-two">
+        What Does a BIS Consultant Do?
+      </h2>
+
+      <p className="service-left-content-paragraph">
+        A BIS certification consultant provides end-to-end guidance across every
+        step of the process. Their core responsibilities include:
+      </p>
+
+      <div className="mt-6 md:mt-8 overflow-x-auto">
+        <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+          <TableHeader>
+            <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
+                Task
+              </TableHead>
+              <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Documentation
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Prepares, reviews, and formats all required documents
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Application Support
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Submits and tracks your BIS application
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Audit Preparation
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Guides factory teams to ensure audit readiness
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Sample Coordination
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Manages sealing and shipment of samples to India
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Testing Assistance
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Liaises with labs and helps interpret results
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                Renewal & Surveillance
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                Oversees license extensions and compliance checks
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      <p className="service-left-content-paragraph">
+        They act as your strategic partner, often doubling as your Authorized
+        Indian Representative (AIR).
+      </p>
+    </div>
+  );
+};
+
 export const ServiceFaq = () => {
-  const { t } = useTranslation("BISFMServiceFaq");
+  const faqs = [
+    {
+      question:
+        "What is BIS certification and why is it important for foreign manufacturers to obtain Indian BIS?",
+      answer:
+        "BIS certification is a regulatory process conducted by the Bureau of Indian Standards to ensure products meet Indian standards. It is essential for foreign manufacturers to gain market access, customs clearance, and consumer trust in India.",
+    },
+    {
+      question: "What does the ISI mark represent?",
+      answer:
+        "The ISI mark indicates conformity to a specific Indian Standard. It is mandatory for products under the BIS certification and must be printed on packaging and products.",
+    },
+    {
+      question: "Is BIS certification mandatory for all imports to India?",
+      answer:
+        "No. BIS certification is mandatory for products listed under the mandatory Indian BIS certification scheme. However, voluntary certification is available for other products.",
+    },
+    {
+      question: "Who can apply for BIS certification under FMCS?",
+      answer:
+        "Only actual foreign manufacturers (not importers or traders) can apply. An Authorized Indian Representative (AIR) is mandatory to represent them in India.",
+    },
+    {
+      question: "How long does it take to get a BIS certificate?",
+      answer:
+        "The average BIS certification process under FMCS takes 120 days, depending on document readiness, audit scheduling, and testing turnaround times.",
+    },
+    {
+      question: "What are the major costs involved in BIS certification?",
+      answer:
+        "Costs include application fees, audit charges, lab testing fees, license and marking fees, and a Performance Bank Guarantee (PBG) from an RBI-approved Indian bank.",
+    },
+    {
+      question: "Can the BIS license be renewed?",
+      answer:
+        "Yes. The BIS license is generally valid for 1–2 years and can be renewed upon meeting compliance and document update requirements.",
+    },
+    {
+      question: "What happens if the product fails during BIS lab testing?",
+      answer:
+        "If a product fails, BIS may allow corrective action and re-testing. Persistent failure can result in rejection of the application.",
+    },
+    {
+      question: "Is it necessary to hire a BIS certification consultant?",
+      answer:
+        "It's not mandatory but highly recommended. A consultant helps reduce delays, manage compliance, and improve approval chances by ensuring full alignment with BIS protocols.",
+    },
+    {
+      question: "Can a BIS license be suspended or cancelled?",
+      answer:
+        "Yes. BIS may suspend or cancel a license for non-compliance, product failure, misuse of the ISI logo, or audit discrepancies.",
+    },
+    {
+      question: "What documents are needed for the BIS certification process?",
+      answer:
+        "Documents include the FMCS application form, test reports, equipment lists, calibration certificates, factory layout, AIR appointment letter, and proof of fee payment.",
+    },
+    {
+      question: "Can one AIR represent multiple BIS applications?",
+      answer:
+        "Yes, provided they are authorized for each project and have the bandwidth to handle documentation, audits, and communication for each certification.",
+    },
+    {
+      question: "What is the role of a Performance Bank Guarantee?",
+      answer:
+        "A PBG assures BIS that the manufacturer will comply with Indian standards. It is refundable upon license cancellation and mandatory for all FMCS applications obtaining Indian BIS.",
+    },
+    {
+      question: "Is BIS certification recognized outside India?",
+      answer:
+        "While the BIS certificate is an Indian standard, it is respected in trade contexts in many regions that accept Indian compliance, especially in Asia and Africa.",
+    },
+    {
+      question: "How do I know if my product requires BIS certification?",
+      answer:
+        "Check the updated list on the official BIS website or consult with a BIS consultant to verify whether your product falls under mandatory certification.",
+    },
+  ];
 
   return (
     <section
@@ -724,21 +2143,21 @@ export const ServiceFaq = () => {
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          {t("title")}
+          Frequently Asked Questions
         </h4>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          {t("subtitle")}{" "}
+          Can't find the answer you are looking for?{" "}
           <a
             href="/contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
           >
-            {t("contactLink")}
+            Reach out to us!
           </a>
         </p>
 
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
-            {t("faqs", { returnObjects: true }).map((faq, index) => (
+            {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index + 1}`}>
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
                   {faq.question}
@@ -755,1015 +2174,172 @@ export const ServiceFaq = () => {
   );
 };
 
-export const BISFMContentLeft = () => {
-  const { t } = useTranslation("BISFM");
-
+const Services = () => {
   return (
-    <article className="flex-1">
-      <div className="flex flex-col gap-[20px] md:gap-[40px]">
-        <section
-          className="flex flex-col gap-2 md:gap-4 mb-6"
-          aria-label="BIS Certificate for Foreign Manufacturers"
-        >
-          <h1 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-            {t("overview.mainTitle")}
-          </h1>
+    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
+      <div className="max-w-[80rem] w-full mx-auto">
+        <div className="flex flex-col items-center justify-center">
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+              Our Services
+            </h2>
+          </BoxReveal>
 
-          <h2 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] ">
-            {t("overview.whatIsBIS.title")}
-          </h2>
+          <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
+            <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+              <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
+                India's Best Certificate Consultant
+              </span>
+              <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
+            </div>
+          </BoxReveal>
+        </div>
 
-          <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-1">
-            {t("overview.whatIsBIS.description1")}
-          </p>
-
-          <p className="font-geist text-[16px] md:text-[20px] text-[#42434d] max-w-3xl mt-2">
-            {t("overview.whatIsBIS.description2")}
-          </p>
-
-          {/* <div className="bg-[#F9F7F2] border-l-4 border-[#1A8781] p-4 mt-2 md:mt-4 rounded-md shadow-sm">
-            <h4 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781] mb-1">Is obtaining an ISI mark for Indian importers mandatory?</h4>
-            <p className="font-geist text-[16px] md:text-[20px] text-[#42434d]">
-              For the products falling under the mandatory list, FMCS BIS certification is mandatory. The list of mandatory products can be accessed on this <a href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/" target="_blank" rel="noopener noreferrer" className="text-[#125E5A] underline hover:text-[#1A8781] transition-colors">link</a>.
+        <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-10 px-4 md:px-0 gap-y-12 md:gap-y-24">
+          <Link
+            to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src="/services-images/BIS.jpg"
+                alt="BIS"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              BIS Mark (ISI License) for Foreign Manufacture
             </p>
-          </div> */}
-        </section>
+          </Link>
 
-        <OverviewSection />
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        <StandardizationSection />
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-        <RepresentationSection />
+          <Link
+            to="/cdsco-registration-certification"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              CDSCO Registration Certification
+            </p>
+          </Link>
 
+          <Link
+            to="/what-is-crs-bis-or-crs-registration"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src="/services-images/BISCRS.jpg"
+                alt="BISCRS"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              BIS (CRS) Registration
+            </p>
+          </Link>
 
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+          <Link
+            to="/epr-certificate-for-plastic-waste-management-pwm"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src="/services-images/PlasticWasteManagement.jpg"
+                alt="PlasticWasteManagement"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              Plastic Waste Management
+            </p>
+          </Link>
 
+          <Link
+            to="/a-guide-on-how-to-obtain-epr-certificate"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src="/services-images/EPRCertificate.jpg"
+                alt="EPRCertificate"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              EPR Certificate certifications
+            </p>
+          </Link>
 
-        <DocumentSection />
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+          <Link
+            to="/a-guide-on-how-to-obtain-lmpc-certificate"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src="/services-images/LMPC.jpg"
+                alt="LMPC"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              LMPC Certificate certifications
+            </p>
+          </Link>
 
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src="/services-images/BIS.jpg"
+                alt="BIS"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              BIS Registration Certificate
+            </p>
+          </Link>
 
-
-
-        <ProcessSection />
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-
-        <CostingSection />
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <SurveillanceSection />
-        <Separator className="h-px w-full bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
-
-        <FacilitatorSection />
-
-        <AboutAuthor />
+          <Link
+            to="/a-guide-to-bis-certification-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <img
+                src="/services-images/ISIMark.jpg"
+                alt="ISIMark"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
+              ISI MARK (BIS) for Indian Manufactures
+            </p>
+          </Link>
+        </div>
       </div>
-    </article>
+    </div>
   );
 };
 
-const OverviewSection = () => {
-  const { t } = useTranslation("BISFM");
-
+const PointsListWithoutHeading = ({ points }) => {
   return (
-    <section
-      id="overview"
-      className="flex flex-col scroll-mt-20"
-      aria-label="Authorized Indian Representative Nomination"
-    >
-      <header className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("overview.title")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </header>
-
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none  md:leading-[1.1] my-3 md:my-0">
-        {t("overview.mainHeading")}
-      </h2>
-
-      <p className="mt-[16px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.intro")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.currentStats")}
-      </p>
-
-      <h2 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.whyBISTitle")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.whyBISDesc")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("overview.whyBISPoints", { returnObjects: true })}
-        />
-      </div>
-
-      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.scopeTitle")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.scopeDesc")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("overview.scopePoints", { returnObjects: true })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[20px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.scopeEndNote")}
-      </p>
-
-      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.objectivesTitle")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("overview.objectivesDesc")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("overview.objectivesPoints", { returnObjects: true })}
-        />
-      </div>
-
-      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("overview.featuresTitle")}
-      </h2>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200  shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("overview.tableHeaders.feature")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("overview.tableHeaders.description")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("overview.tableRows", { returnObjects: true }).map(
-              (row, index) => (
-                <TableRow key={index} className="hover:bg-gray-50">
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {row.feature}
-                  </TableCell>
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {row.description}
-                  </TableCell>
-                </TableRow>
-              )
-            )}
-          </TableBody>
-        </Table>
-      </div>
-    </section>
-  );
-};
-
-const StandardizationSection = () => {
-  const { t } = useTranslation("BISFM");
-
-  return (
-    <section id="standardization" className="flex flex-col scroll-mt-20">
-      {/* Documents */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("standardization.title")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("standardization.mainHeading")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.intro")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.process")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.legalStandingTitle")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.legalStandingDesc")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("standardization.bisActTitle")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("standardization.bisActPoints", { returnObjects: true })}
-        />
-      </div>
-
-      <img
-        src={ISIMARKImage}
-        alt="ISI Mark"
-        className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
-      />
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("standardization.isiLogoTitle")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("standardization.isiLogoPoints", { returnObjects: true })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("standardization.placementTitle")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("standardization.placementPoints", { returnObjects: true })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("standardization.productCategoriesTitle")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.productCategoriesDesc")}
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200  shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("standardization.productTable.headers.category")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                {t("standardization.productTable.headers.code")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("standardization.productTable.headers.status")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("standardization.productTable.rows", {
-              returnObjects: true,
-            }).map((row, index) => (
-              <TableRow key={index} className="hover:bg-gray-50">
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.category}
-                </TableCell>
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.code}
-                </TableCell>
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.status}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.productTableNote")}{" "}
-        <span
-          className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
-          onClick={() => {
-            const productTable = document.getElementById("product-table");
-            if (productTable) {
-              productTable.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-          }}
-        >
-          {t("standardization.clickHere")}
-        </span>
-      </p>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("standardization.globalCertTitle")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.globalCertDesc")}
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("standardization.globalCertTable.headers.mark")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                {t("standardization.globalCertTable.headers.country")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider">
-                {t("standardization.globalCertTable.headers.mandatory")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("standardization.globalCertTable.headers.focus")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("standardization.globalCertTable.rows", {
-              returnObjects: true,
-            }).map((row, index) => (
-              <TableRow key={index} className="hover:bg-gray-50">
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.mark}
-                </TableCell>
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.country}
-                </TableCell>
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.mandatory}
-                </TableCell>
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.focus}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.globalCertNote")}
-      </p>
-
-      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("standardization.importTitle")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.mandatoryNatureTitle")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.mandatoryNatureDesc")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("standardization.mandatoryNaturePoints", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.importNote")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("standardization.onlyImportsTitle")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.onlyImportsDesc")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("standardization.onlyImportsPoints", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.onlyImportsNote1")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.onlyImportsNote2")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.exemptionsTitle")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.exemptionsDesc")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("standardization.exemptionsPoints", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("standardization.exemptionsNote")}
-      </p>
-
-      <h2 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("standardization.checkProductTitle")}
-      </h2>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        <span
-          className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
-          onClick={() => {
-            const productTable = document.getElementById("product-table");
-            if (productTable) {
-              productTable.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-          }}
-        >
-          {t("standardization.clickHere")}
-        </span>{" "}
-        {t("standardization.checkProductDesc")}
-      </p>
-    </section>
-  );
-};
-
-const RepresentationSection = () => {
-  const { t } = useTranslation("BISFM");
-
-  return (
-    <section id="representation" className="flex flex-col scroll-mt-20">
-      {/* Process */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("representation.title")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("representation.mainHeading")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representation.whatIsAIR.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representation.whatIsAIR.description")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representation.legalRequirement.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representation.legalRequirement.description")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representation.responsibilities.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representation.responsibilities.description")}
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t(
-                  "representation.responsibilities.table.headers.responsibility"
-                )}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("representation.responsibilities.table.headers.description")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("representation.responsibilities.table.rows", {
-              returnObjects: true,
-            }).map((row, index) => (
-              <TableRow key={index} className="hover:bg-gray-50">
-                <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                  {row.responsibility}
-                </TableCell>
-                <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                  {row.description}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </div>
-
-      <h3 className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representation.eligibility.title")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representation.eligibility.description")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("representation.eligibility.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("representation.importance.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representation.importance.description")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("representation.importance.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("representation.importance.conclusion")}
-      </p>
-    </section>
-  );
-};
-
-const DocumentSection = () => {
-  const { t } = useTranslation("BISFM");
-
-  return (
-    <section id="document" className="flex flex-col scroll-mt-20">
-      {/* Validity */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("document.title")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("document.mainHeading")}
-      </h3>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("document.table.headers.documentType")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("document.table.headers.purpose")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("document.table.rows", { returnObjects: true }).map(
-              (row, index) => (
-                <TableRow key={index} className="hover:bg-gray-50">
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {row.type}
-                  </TableCell>
-                  <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                    {row.purpose}
-                  </TableCell>
-                </TableRow>
-              )
-            )}
-          </TableBody>
-        </Table>
-      </div>
-
-      <p className="mt-[12px] md:mt-[20px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.fmcsForm.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("document.detailedBreakdown.fmcsForm.description")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("document.detailedBreakdown.fmcsForm.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.manufacturingEquipment.title")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t(
-            "document.detailedBreakdown.manufacturingEquipment.points",
-            { returnObjects: true }
-          )}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.rawMaterials.title")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("document.detailedBreakdown.rawMaterials.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.testingEquipment.title")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("document.detailedBreakdown.testingEquipment.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.calibration.title")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("document.detailedBreakdown.calibration.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.factoryLayout.title")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("document.detailedBreakdown.factoryLayout.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.bankGuarantee.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("document.detailedBreakdown.bankGuarantee.description")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("document.detailedBreakdown.bankGuarantee.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("document.detailedBreakdown.commonMistakes.title")}
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        <PointsListTwo
-          points={t("document.detailedBreakdown.commonMistakes.points", {
-            returnObjects: true,
-          })}
-        />
-      </div>
-    </section>
-  );
-};
-
-const ProcessSection = () => {
-  const { t } = useTranslation("BISFM");
-
-  return (
-    <section id="process" className="flex flex-col scroll-mt-20">
-      {/* Process */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("process.title")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("process.mainHeading")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.overview.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.overview.description")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.stepTable.title")}
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("process.stepTable.headers.step")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("process.stepTable.headers.description")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("process.stepTable.steps", { returnObjects: true }).map(
-              (step) => (
-                <TableRow key={step.step} className="hover:bg-gray-50">
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {step.step}
-                  </TableCell>
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {step.description}
-                  </TableCell>
-                </TableRow>
-              )
-            )}
-          </TableBody>
-        </Table>
-      </div>
-
-      <img
-        src={BISCertificateImage}
-        alt="BIS Certificate Process Flow"
-        className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
-      />
-
-      <h3 className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("process.timeframe.title")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.timeframe.subtitle")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("process.timeframe.description")}
-      </p>
-    </section>
-  );
-};
-
-const CostingSection = () => {
-  const { t } = useTranslation("BISFM");
-
-  return (
-    <section id="costing" className="flex flex-col scroll-mt-20">
-      {/* Costing */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("costing.title")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("costing.mainHeading")}
-      </h3>
-
-      <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("costing.overview.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("costing.overview.description1")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("costing.overview.description2")}
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("costing.costTable.headers.category")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("costing.costTable.headers.description")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("costing.costTable.rows", { returnObjects: true }).map(
-              (row, index) => (
-                <TableRow key={index} className="hover:bg-gray-50">
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {row.category}
-                  </TableCell>
-                  <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                    {row.description}
-                  </TableCell>
-                </TableRow>
-              )
-            )}
-          </TableBody>
-        </Table>
-      </div>
-    </section>
-  );
-};
-
-const SurveillanceSection = () => {
-  const { t } = useTranslation("BISFM");
-
-  return (
-    <section id="surveillance" className="flex flex-col scroll-mt-20">
-      {/* Surveillance */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("surveillance.title")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("surveillance.mainHeading")}
-      </h3>
-
-      {/* <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("surveillance.overview.title")}
-      </p> */}
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("surveillance.overview.description1")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("surveillance.overview.description2")}
-      </p>
-    </section>
-  );
-};
-
-const FacilitatorSection = () => {
-  const { t } = useTranslation("BISFM");
-
-  return (
-    <section id="facilitator" className="flex flex-col scroll-mt-20">
-      {/* Facilitator */}
-      <div className="flex w-full items-center gap-3">
-        <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
-          {t("facilitator.title")}
-        </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("facilitator.mainHeading")}
-      </h3>
-
-      {/* <p className="mt-[12px] md:mt-[16px] font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {t("facilitator.intro.title")}
-      </p> */}
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("facilitator.intro.description")}
-      </p>
-
-      <p className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-[1.1] my-3 md:my-0">
-        {t("facilitator.consultantRole.title")}
-      </p>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("facilitator.consultantRole.description")}
-      </p>
-
-      <div className="mt-[16px] md:mt-[24px]">
-        <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
-          <TableHeader className="bg-[#F9F7F2]">
-            <TableRow className="bg-[#1A8781]/10">
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tl-lg">
-                {t("facilitator.taskTable.headers.task")}
-              </TableHead>
-              <TableHead className="px-6 py-3 text-left text-xs md:text-base font-geist font-medium text-gray-700 uppercase tracking-wider rounded-tr-lg">
-                {t("facilitator.taskTable.headers.description")}
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody className="bg-white divide-y divide-gray-200">
-            {t("facilitator.taskTable.rows", { returnObjects: true }).map(
-              (row, index) => (
-                <TableRow key={index} className="hover:bg-gray-50">
-                  <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                    {row.task}
-                  </TableCell>
-                  <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                    {row.description}
-                  </TableCell>
-                </TableRow>
-              )
-            )}
-          </TableBody>
-        </Table>
-      </div>
-
-      <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
-        {t("facilitator.conclusion")}
-      </p>
-    </section>
-  );
-};
-
-// const PointsList = ({ points, heading }) => {
-//   return (
-//     <div className="flex flex-col w-full md:w-[441px]" role="list">
-//       <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-//         {heading}
-//       </h3>
-//       <ul className="flex flex-col mt-[16px] md:mt-[24px] gap-2" role="list">
-//         {points.map((point, index) => (
-//           <li key={index} className="flex items-start gap-2" role="listitem">
-//             <div
-//               className="bg-green-500/10 p-2 rounded-full"
-//               aria-hidden="true"
-//             >
-//               <Check size={12} className="text-[#020817]" />
-//             </div>
-//             <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
-//               {point}
-//             </p>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-const PointsListTwo = ({ points, heading }) => {
-  return (
-    <div className="flex flex-col w-full">
-      <h3 className="font-semibold font-geist text-[16px] md:text-[20px] text-[#131316]">
-        {heading}
-      </h3>
-      <ul className="flex flex-col mt-[16px] md:mt-[20px] gap-2">
+    <div className="mt-[18px] md:mt-[18px]">
+      <ul className="flex flex-col gap-3 list-none">
         {points.map((point, index) => (
-          <li key={index} className="flex items-start gap-2">
-            <div className="bg-green-500/10 p-2 rounded-full">
+          <li key={index} className="flex items-start gap-3">
+            <div className="bg-green-500/10 p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-normal">
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose flex-1">
               {point}
             </p>
           </li>
@@ -1771,9 +2347,4 @@ const PointsListTwo = ({ points, heading }) => {
       </ul>
     </div>
   );
-};
-
-PointsListTwo.propTypes = {
-  points: PropTypes.arrayOf(PropTypes.string).isRequired,
-  heading: PropTypes.string,
 };

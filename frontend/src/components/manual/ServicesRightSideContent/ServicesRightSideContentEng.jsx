@@ -34,6 +34,8 @@ const ServicesRightSideContentEng = () => {
     "/what-is-crs-bis-or-crs-registration",
     // SCHEME X PATH
     "/indian-bis-certification-under-scheme-x",
+    // BISFM PATH
+    "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
     "/Blogs",
     "/bis-certificate-for-tin-ingots",
     "/bis-certificate-for-refined-zinc",

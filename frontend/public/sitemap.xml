@@ -316,7 +316,7 @@
   <!-- ISI Mark Dutch -->
   <url>
     <loc>https://bis-certifications.com/nl/bis-isi-mark-certificering</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>monthly</changefreq>  
     <priority>0.9</priority>
   </url>
   <!-- ISI Mark Vietnamese -->

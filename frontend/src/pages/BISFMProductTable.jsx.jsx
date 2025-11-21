@@ -14,19 +14,20 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Search, ChevronLeft, ChevronRight, X } from "lucide-react";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { productTableData } from "../data/productTableData.js";
-
-
 
 const BISFMProductTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [entriesPerPage, setEntriesPerPage] = useState(5);
   const [searchTerm, setSearchTerm] = useState("");
+  const tableRef = useRef(null);
 
-  // Scroll to top when page changes
+  // Scroll to table top when page changes
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (tableRef.current) {
+      tableRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }, [currentPage]);
 
   // Enhanced filter data based on search term
@@ -262,7 +263,7 @@ const BISFMProductTable = () => {
       </div>
 
       {/* Table */}
-      <div className="rounded-md border bg-white shadow-sm">
+      <div ref={tableRef} className="rounded-md border bg-white shadow-sm">
         <Table>
           <TableHeader>
             <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
