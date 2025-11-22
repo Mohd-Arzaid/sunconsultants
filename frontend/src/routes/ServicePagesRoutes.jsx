@@ -14,6 +14,7 @@ const EMIEMC = lazy(() => import("../pages/EMIEMC"));
 const CBCertification = lazy(() => import("../pages/CBCertification"));
 const LHSCable = lazy(() => import("../pages/LHSCable"));
 const NABL = lazy(() => import("../pages/NABL"));
+const CDSCO = lazy(() => import("../pages/CDSCO"));
 
 // Lazy load components with named exports
 const EPRService = lazy(() =>
@@ -157,6 +158,14 @@ export const ServicePagesRoutes = () => {
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <NABL />
+          </Suspense>
+        }
+      />
+      <Route
+        path="cdsco-registration-certification"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <CDSCO />
           </Suspense>
         }
       />
