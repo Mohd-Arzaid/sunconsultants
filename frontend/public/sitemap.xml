@@ -2835,6 +2835,13 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-gao-da-1000-fu-ren-zheng</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Thai -->
   <url>
     <loc>https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-sut-1000-volt</loc>
@@ -2922,6 +2929,13 @@
     <priority>0.8</priority>
     <lastmod>2025-11-12</lastmod>
   </url>
+  <!-- Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-chao-guo-1000-fu-ren-zheng</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
   <!-- Dutch -->
   <url>
     <loc>https://bis-certifications.com/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-boven-1000-volt</loc>
@@ -3002,6 +3016,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-11-12</lastmod>
+  </url>
+  <!-- Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-fang-an-x-bian-ya-qi-ren-zheng</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
   </url>
   <!-- Thai -->
   <url>
@@ -3087,6 +3108,13 @@
   <!-- Japanese -->
   <url>
     <loc>https://bis-certifications.com/bis-sukiimu-x-ninshoo-orimonoiki-ruumu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- Chinese -->
+  <url>
+    <loc>https://bis-certifications.com/bis-fang-an-x-zhi-ji-ren-zheng</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

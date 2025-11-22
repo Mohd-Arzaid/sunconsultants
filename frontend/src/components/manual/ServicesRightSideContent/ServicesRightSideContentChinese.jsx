@@ -51,6 +51,10 @@ const ServicesRightSideContentChinese = () => {
     "/bis-fang-an-x-beng-he-ye-ti-ti-sheng-ji-ren-zheng",
     "/bis-fang-an-x-xuan-zhuan-dian-ji-ren-zheng",
     "/bis-fang-an-x-xiang-jiao-he-su-liao-ji-xie-ren-zheng",
+    "/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-gao-da-1000-fu-ren-zheng",
+    "/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-chao-guo-1000-fu-ren-zheng",
+    "/bis-fang-an-x-bian-ya-qi-ren-zheng",
+    "/bis-fang-an-x-zhi-ji-ren-zheng",
   ];
 
   // Check if current path should show these components
@@ -647,6 +651,22 @@ const ContactFormServicesRightSideContentChinese = () => {
     // Rubber And Plastics Machinery Chinese Page Url
     if (path.includes("/bis-fang-an-x-xiang-jiao-he-su-liao-ji-xie-ren-zheng"))
       return "Rubber And Plastics Machinery Chinese - 中文页面";
+
+    // Switchgear And Controlgear Equipment Chinese Page Url
+    if (path.includes("/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-gao-da-1000-fu-ren-zheng"))
+      return "Switchgear And Controlgear Equipment Chinese - 中文页面";
+
+    // Switchgear And Controlgear Equipment Above 1000 Volts Chinese Page Url
+    if (path.includes("/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-chao-guo-1000-fu-ren-zheng"))
+      return "Switchgear And Controlgear Equipment Above 1000 Volts Chinese - 中文页面";
+
+    // Transformers Chinese Page Url
+    if (path.includes("/bis-fang-an-x-bian-ya-qi-ren-zheng"))
+      return "Transformers Chinese - 中文页面";
+
+    // Weaving Machines Chinese Page Url
+    if (path.includes("/bis-fang-an-x-zhi-ji-ren-zheng"))
+      return "Weaving Machines Chinese - 中文页面";
   };
 
   const [formData, setFormData] = useState({
