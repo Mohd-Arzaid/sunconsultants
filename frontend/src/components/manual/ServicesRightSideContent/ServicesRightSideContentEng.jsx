@@ -75,6 +75,7 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/nickel-qco-withdraw-order",
     "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
     "/ministry-updates/scheme-x-qco-withdraw-order",
+    "/ministry-updates/steel-products-amendment-2025",
   ];
 
   // Check if current path should show these components
@@ -702,6 +703,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // Scheme X QCO Withdrawal Order
     if (path.includes("/ministry-updates/scheme-x-qco-withdraw-order"))
       return "Scheme X QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Steel Products Amendment Order 2025
+    if (path.includes("/ministry-updates/steel-products-amendment-2025"))
+      return "Steel Products Amendment Order 2025 - Ministry Updates (English)";
   };
 
   const [formData, setFormData] = useState({

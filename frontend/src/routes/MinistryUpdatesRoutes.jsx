@@ -45,6 +45,12 @@ const SchemeXQCOWithdrawOrderEng = lazy(() =>
   )
 );
 
+const SteelProductsAmendment2025Eng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/SteelProductsAmendment2025/SteelProductsAmendment2025Eng"
+  )
+);
+
 export const MinistryUpdatesRoutes = () => {
   return (
     <>
@@ -110,6 +116,14 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <SchemeXQCOWithdrawOrderEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/steel-products-amendment-2025"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <SteelProductsAmendment2025Eng />
           </Suspense>
         }
       />
