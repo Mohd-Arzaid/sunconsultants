@@ -1,13 +1,49 @@
 import { Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import MinistryUpdates from "../pages/MinistryUpdates";
-import RefinedZincQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/RefinedZincQCOWithdrawOrder/RefinedZincQCOWithdrawOrderEng";
-import AluminiumAndAluminiumAlloysQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/AluminiumAndAluminiumAlloysQCOWithdrawOrder/AluminiumAndAluminiumAlloysQCOWithdrawOrderEng";
-import CopperQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/CopperQCOWithdrawOrder/CopperQCOWithdrawOrderEng";
-import TinIngotQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/TinIngotQCOWithdrawOrder/TinIngotQCOWithdrawOrderEng";
-import RefinedNickelQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/RefinedNickelQCOWithdrawOrder/RefinedNickelQCOWithdrawOrderEng";
-import NickelPowderQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/NickelPowderQCOWithdrawOrder/NickelPowderQCOWithdrawOrderEng";
-import PetrochemicalAndPolymerProductsQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/PetrochemicalAndPolymerProductsQCOWithdrawOrder/PetrochemicalAndPolymerProductsQCOWithdrawOrderEng";
-import SchemeXQCOWithdrawOrderEng from "@/pages/MinistryUpdatesPages/SchemeXQCOWithdrawOrder/SchemeXQCOWithdrawOrderEng";
+import MinistryUpdatesSkeleton from "@/components/ui/ministry-updates-skeleton";
+
+// Lazy load all individual ministry update pages
+const RefinedZincQCOWithdrawOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/RefinedZincQCOWithdrawOrder/RefinedZincQCOWithdrawOrderEng"
+  )
+);
+const AluminiumAndAluminiumAlloysQCOWithdrawOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/AluminiumAndAluminiumAlloysQCOWithdrawOrder/AluminiumAndAluminiumAlloysQCOWithdrawOrderEng"
+  )
+);
+const CopperQCOWithdrawOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/CopperQCOWithdrawOrder/CopperQCOWithdrawOrderEng"
+  )
+);
+const TinIngotQCOWithdrawOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/TinIngotQCOWithdrawOrder/TinIngotQCOWithdrawOrderEng"
+  )
+);
+const RefinedNickelQCOWithdrawOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/RefinedNickelQCOWithdrawOrder/RefinedNickelQCOWithdrawOrderEng"
+  )
+);
+const NickelPowderQCOWithdrawOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/NickelPowderQCOWithdrawOrder/NickelPowderQCOWithdrawOrderEng"
+  )
+);
+const PetrochemicalAndPolymerProductsQCOWithdrawOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/PetrochemicalAndPolymerProductsQCOWithdrawOrder/PetrochemicalAndPolymerProductsQCOWithdrawOrderEng"
+  )
+);
+const SchemeXQCOWithdrawOrderEng = lazy(() =>
+  import(
+    "@/pages/MinistryUpdatesPages/SchemeXQCOWithdrawOrder/SchemeXQCOWithdrawOrderEng"
+  )
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -15,35 +51,67 @@ export const MinistryUpdatesRoutes = () => {
       <Route path="/ministry-updates" element={<MinistryUpdates />} />
       <Route
         path="/ministry-updates/refined-zinc-qco-withdraw-order"
-        element={<RefinedZincQCOWithdrawOrderEng />}
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <RefinedZincQCOWithdrawOrderEng />
+          </Suspense>
+        }
       />
       <Route
         path="/ministry-updates/aluminium-and-aluminium-alloys-qco-withdraw-order"
-        element={<AluminiumAndAluminiumAlloysQCOWithdrawOrderEng />}
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <AluminiumAndAluminiumAlloysQCOWithdrawOrderEng />
+          </Suspense>
+        }
       />
       <Route
         path="/ministry-updates/copper-qco-withdraw-order"
-        element={<CopperQCOWithdrawOrderEng />}
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <CopperQCOWithdrawOrderEng />
+          </Suspense>
+        }
       />
       <Route
         path="/ministry-updates/tin-ingot-qco-withdraw-order"
-        element={<TinIngotQCOWithdrawOrderEng />}
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <TinIngotQCOWithdrawOrderEng />
+          </Suspense>
+        }
       />
       <Route
         path="/ministry-updates/refined-nickel-qco-withdraw-order"
-        element={<RefinedNickelQCOWithdrawOrderEng />}
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <RefinedNickelQCOWithdrawOrderEng />
+          </Suspense>
+        }
       />
       <Route
         path="/ministry-updates/nickel-qco-withdraw-order"
-        element={<NickelPowderQCOWithdrawOrderEng />}
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <NickelPowderQCOWithdrawOrderEng />
+          </Suspense>
+        }
       />
       <Route
         path="/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order"
-        element={<PetrochemicalAndPolymerProductsQCOWithdrawOrderEng />}
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <PetrochemicalAndPolymerProductsQCOWithdrawOrderEng />
+          </Suspense>
+        }
       />
       <Route
         path="/ministry-updates/scheme-x-qco-withdraw-order"
-        element={<SchemeXQCOWithdrawOrderEng />}
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <SchemeXQCOWithdrawOrderEng />
+          </Suspense>
+        }
       />
     </>
   );
