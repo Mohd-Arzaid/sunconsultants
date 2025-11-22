@@ -43,6 +43,7 @@ import { MinistryUpdatesRoutes } from "./routes/MinistryUpdatesRoutes";
 import { NotificationsRoutes } from "./routes/NotificationsRoutes";
 import { BlogRoutes } from "./routes/BlogRoutes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
+import CheckBISCertificationEng from "./pages/CheckBISCertificationEng";
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -66,6 +67,10 @@ function App() {
       <Routes>
         {/* Default routes without language prefix (English) */}
         <Route path="/">
+          <Route
+            path="/check-bis-certification"
+            element={<CheckBISCertificationEng />}
+          />
           <Route
             index
             element={<Home onVideoPopupChange={setVideoPopupOpen} />}

@@ -76,6 +76,9 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
     "/ministry-updates/scheme-x-qco-withdraw-order",
     "/ministry-updates/steel-products-amendment-2025",
+
+    // CHECK BIS CERTIFICATION PATH
+    "/check-bis-certification",
   ];
 
   // Check if current path should show these components
@@ -707,6 +710,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // Steel Products Amendment Order 2025
     if (path.includes("/ministry-updates/steel-products-amendment-2025"))
       return "Steel Products Amendment Order 2025 - Ministry Updates (English)";
+
+    // CHECK BIS CERTIFICATION PATH
+    if (path.includes("/check-bis-certification"))
+      return "Check BIS Certification - English Page";
   };
 
   const [formData, setFormData] = useState({
