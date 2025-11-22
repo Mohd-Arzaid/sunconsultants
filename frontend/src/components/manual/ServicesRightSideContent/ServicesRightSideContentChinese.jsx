@@ -55,6 +55,9 @@ const ServicesRightSideContentChinese = () => {
     "/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-chao-guo-1000-fu-ren-zheng",
     "/bis-fang-an-x-bian-ya-qi-ren-zheng",
     "/bis-fang-an-x-zhi-ji-ren-zheng",
+
+    // BIS FMCS PATH
+    "/zh/wai-guo-sheng-chan-shang-yin-du-bis-ren-zheng-zhi-nan",
   ];
 
   // Check if current path should show these components
@@ -572,6 +575,12 @@ const ContactFormServicesRightSideContentChinese = () => {
 
   // Function to get page name based on URL
   const getPageName = () => {
+    // BIS FMCS PATH
+    if (
+      path.includes("/zh/wai-guo-sheng-chan-shang-yin-du-bis-ren-zheng-zhi-nan")
+    )
+      return "BIS Mark (ISI License) for Foreign Manufacturers - Chinese Page";
+
     if (path.includes("/zh/crs-bis-shi-shen-me-huo-crs-deng-ji"))
       return "CRS Chinese - 中文页面";
     if (
@@ -589,7 +598,11 @@ const ContactFormServicesRightSideContentChinese = () => {
       return "BIS Certification - Chinese Page";
 
     // Centrifuges Chinese Page Url
-    if (path.includes("/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng"))
+    if (
+      path.includes(
+        "/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng"
+      )
+    )
       return "Centrifuges Chinese - 中文页面";
 
     // Compressors Chinese Page Url
@@ -613,7 +626,11 @@ const ContactFormServicesRightSideContentChinese = () => {
       return "Embroidery Machines Chinese - 中文页面";
 
     // Gears, Gearing and Transmission Elements Chinese Page Url
-    if (path.includes("/bis-fang-an-x-chi-lun-chi-lun-xi-tong-he-chuan-dong-yuan-jian-ren-zheng"))
+    if (
+      path.includes(
+        "/bis-fang-an-x-chi-lun-chi-lun-xi-tong-he-chuan-dong-yuan-jian-ren-zheng"
+      )
+    )
       return "Gears, Gearing and Transmission Elements Chinese - 中文页面";
 
     // Heat Treatment Equipment Chinese Page Url
@@ -633,11 +650,17 @@ const ContactFormServicesRightSideContentChinese = () => {
       return "Packing Machinery Chinese - 中文页面";
 
     // Power Semiconductors Chinese Page Url
-    if (path.includes("/bis-fang-an-x-gong-lv-ban-dao-ti-zhuan-huan-qi-ren-zheng"))
+    if (
+      path.includes("/bis-fang-an-x-gong-lv-ban-dao-ti-zhuan-huan-qi-ren-zheng")
+    )
       return "Power Semiconductors Chinese - 中文页面";
 
     // Public Works And Mechanical Chinese Page Url
-    if (path.includes("/bis-fang-an-x-gong-gong-gong-cheng-he-ji-xie-she-bei-ren-zheng"))
+    if (
+      path.includes(
+        "/bis-fang-an-x-gong-gong-gong-cheng-he-ji-xie-she-bei-ren-zheng"
+      )
+    )
       return "Public Works And Mechanical Chinese - 中文页面";
 
     // Pumps And Liquid Elevators Chinese Page Url
@@ -653,11 +676,19 @@ const ContactFormServicesRightSideContentChinese = () => {
       return "Rubber And Plastics Machinery Chinese - 中文页面";
 
     // Switchgear And Controlgear Equipment Chinese Page Url
-    if (path.includes("/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-gao-da-1000-fu-ren-zheng"))
+    if (
+      path.includes(
+        "/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-gao-da-1000-fu-ren-zheng"
+      )
+    )
       return "Switchgear And Controlgear Equipment Chinese - 中文页面";
 
     // Switchgear And Controlgear Equipment Above 1000 Volts Chinese Page Url
-    if (path.includes("/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-chao-guo-1000-fu-ren-zheng"))
+    if (
+      path.includes(
+        "/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-chao-guo-1000-fu-ren-zheng"
+      )
+    )
       return "Switchgear And Controlgear Equipment Above 1000 Volts Chinese - 中文页面";
 
     // Transformers Chinese Page Url

@@ -3,7 +3,7 @@ import CDSCOContentRight from "@/components/manual/ServicesRightSideContent/CDSC
 import { useEffect, useRef, useState } from "react";
 
 import Services from "@/components/manual/Services";
-import { ServiceFaq } from "@/components/manual/BISFM";
+import { ServiceFaq } from "@/pages/BISFM/BISFM";
 
 const LHSCable = () => {
   return (

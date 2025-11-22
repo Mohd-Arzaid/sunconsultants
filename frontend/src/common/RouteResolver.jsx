@@ -32,7 +32,7 @@ import BatteryWaste from "@/pages/BatteryWaste";
 import LHSCable from "@/pages/LHSCable";
 
 // Manual components
-import BISFM from "@/components/manual/BISFM";
+import BISFM from "@/pages/BISFM/BISFM";
 import { EPRService } from "@/components/manual/EPRService";
 import BISCertification from "@/pages/BISCertification/BISCertification";
 import { LMPC } from "@/components/manual/LMPC";
