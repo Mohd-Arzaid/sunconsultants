@@ -265,28 +265,26 @@ const ExhibitionGallery = () => {
               boxShadow: "rgba(0,0,0,0.1) 0px 0px 0px 0px",
             }}
           >
-            <a href="#" className="block">
-              <div className="aspect-[4/3] overflow-hidden rounded-xl">
-                <img
-                  alt={item.description || `Exhibition ${item.id}`}
-                  title={item.description || `Exhibition ${item.id}`}
-                  loading="lazy"
-                  width="300"
-                  height="300"
-                  decoding="async"
-                  className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
-                  src={item.image}
-                  style={{ color: "transparent" }}
-                />
-              </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-xl">
+              <img
+                alt={item.description || `Exhibition ${item.id}`}
+                title={item.description || `Exhibition ${item.id}`}
+                loading="lazy"
+                width="300"
+                height="300"
+                decoding="async"
+                className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
+                src={item.image}
+                style={{ color: "transparent" }}
+              />
+            </div>
 
-              <div className="flex flex-1 flex-col justify-between py-2 transition-all duration-300 group-hover:px-4">
-                <p className="mt-2 max-w-full text-lg font-geist text-neutral-600">
-                  {item.description ||
-                    "A showcase of our exhibition and seminar events"}
-                </p>
-              </div>
-            </a>
+            <div className="flex flex-1 flex-col justify-between py-2 transition-all duration-300 group-hover:px-4">
+              <p className="mt-2 max-w-full text-lg font-geist text-neutral-600">
+                {item.description ||
+                  "A showcase of our exhibition and seminar events"}
+              </p>
+            </div>
           </div>
         ))}
 
@@ -300,21 +298,19 @@ const ExhibitionGallery = () => {
             boxShadow: "rgba(0,0,0,0.1) 0px 0px 0px 0px",
           }}
         >
-          <a href="#" className="block">
-            <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
-              <div className="text-center p-4">
-                <h3 className="text-gray-800 font-geist text-base md:text-lg font-bold mb-1 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
-                  Many More Exhibitions
-                </h3>
-                <p className="text-gray-500 font-geist text-xs font-medium uppercase tracking-widest mb-1">
-                  Conducted Worldwide
-                </p>
-                <p className="text-gray-400 font-geist text-xs italic">
-                  Showcasing our extensive exhibition portfolio
-                </p>
-              </div>
+          <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
+            <div className="text-center p-4">
+              <h3 className="text-gray-800 font-geist text-base md:text-lg font-bold mb-1 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
+                Many More Exhibitions
+              </h3>
+              <p className="text-gray-500 font-geist text-xs font-medium uppercase tracking-widest mb-1">
+                Conducted Worldwide
+              </p>
+              <p className="text-gray-400 font-geist text-xs italic">
+                Showcasing our extensive exhibition portfolio
+              </p>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
