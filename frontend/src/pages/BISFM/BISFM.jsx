@@ -38,7 +38,7 @@ import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg";
 import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
-import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
+import BISFMProductTable from "@/pages/BISFMProductTable/BISFMProductTable.jsx";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -351,9 +351,9 @@ const ContactUsForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Book an Appointment
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Want to contact our team and schedule a call?
@@ -947,9 +947,9 @@ const StandardizationSection = () => {
         for all products falling under the mandatory BIS certification scheme.{" "}
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         According to the BIS Act, 2016 :
-      </h2>
+      </h3>
 
       <PointsListWithoutHeading
         points={[
@@ -1302,9 +1302,9 @@ const RepresentationSection = () => {
         Role of Authorized Indian Representative (AIR) in BIS Certification
       </h2>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         What is an Authorized Indian Representative (AIR)?
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         An Authorized Indian Representative (AIR) is a crucial intermediary
@@ -1315,9 +1315,9 @@ const RepresentationSection = () => {
         certification process.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Legal Requirement for AIR Appointment
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         As per BIS guidelines, any foreign manufacturer who does not have a
@@ -1326,9 +1326,9 @@ const RepresentationSection = () => {
         jurisdiction.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Key Responsibilities of the AIR
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         The AIR's role spans the entire BIS certification process, from
@@ -1396,9 +1396,9 @@ const RepresentationSection = () => {
         </Table>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Eligibility Criteria to Become an AIR
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         To serve as an AIR, an individual or organization must :
@@ -1414,9 +1414,9 @@ const RepresentationSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Why the AIR Role is Vital
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         The AIR ensures continuity and accountability throughout the BIS
@@ -1550,13 +1550,13 @@ const DocumentSection = () => {
         </Table>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Detailed Breakdown of Each document required to Indian BIS certification
-      </h2>
+      </h3>
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. FMCS Application Form
-      </h2>
+      </div>
 
       <p className="service-left-content-paragraph">
         This document provides general details about the foreign manufacturer,
@@ -1572,9 +1572,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. List of Manufacturing Equipment
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1585,9 +1585,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         3. List of Raw Materials
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1597,9 +1597,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         4. List of Testing Equipment
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1609,9 +1609,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         5. Calibration Certificates
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1621,9 +1621,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         6. Factory Layout & Process Flow Diagram
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1634,9 +1634,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         7. Performance Bank Guarantee
-      </h2>
+      </div>
 
       <p className="service-left-content-paragraph">
         Issued by an RBI-approved Indian bank, the Performance Bank Guarantee
@@ -1651,10 +1651,10 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Common documentation mistakes to avoid while applying for BIS
         certificate or Indian BIS.
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1683,9 +1683,9 @@ const ProcessSection = () => {
         Step-by-Step BIS Certification Process Under FMCS
       </h2>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Overview of the BIS Certification Journey
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         The BIS certification process under the Foreign Manufacturers
@@ -1694,9 +1694,9 @@ const ProcessSection = () => {
         manufacturing processes are robust, and testing is accurate.
       </p>
 
-      <h2 className="service-left-content-heading-three">
-        Step-by-Step Process Summary Table
-      </h2>
+      <h3 className="service-left-content-heading-three">
+        Step-by-Step BIS license Process Summary Table
+      </h3>
 
       <div className="mt-6 md:mt-8 overflow-x-auto">
         <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
@@ -1801,9 +1801,9 @@ const ProcessSection = () => {
         className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
       />
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Timeframe to Obtain BIS Certificate
-      </h2>
+      </h3>
 
       <p className="service-left-content-heading-three">
         Typical Duration from Application to Certificate
@@ -1833,9 +1833,9 @@ const CostingSection = () => {
         BIS Certification Cost Structure Explained
       </h2>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Overview of BIS Certification Costs
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         Securing a BIS certificate under the Foreign Manufacturers Certification
@@ -1973,9 +1973,9 @@ const FacilitatorSection = () => {
         on BIS consultants to streamline the journey and minimize risks.
       </p>
 
-      <h2 className="service-left-content-heading-two">
+      <h3 className="service-left-content-heading-three">
         What Does a BIS Consultant Do?
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         A BIS certification consultant provides end-to-end guidance across every
@@ -2142,9 +2142,9 @@ export const ServiceFaq = () => {
       aria-label="Frequently Asked Questions"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Frequently Asked Questions
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can't find the answer you are looking for?{" "}
           <a
@@ -2180,9 +2180,9 @@ const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Our Services
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

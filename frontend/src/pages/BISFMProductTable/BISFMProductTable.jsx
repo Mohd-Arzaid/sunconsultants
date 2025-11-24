@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/select";
 import { Search, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useState, useMemo, useRef, useEffect } from "react";
-import { productTableData } from "../data/productTableData.js";
+import { productTableData } from "@/data/productTableData/productTableData.js";
 
 const BISFMProductTable = () => {
   const [currentPage, setCurrentPage] = useState(1);

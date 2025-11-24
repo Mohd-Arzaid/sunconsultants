@@ -37,6 +37,8 @@ const ServicesRightSideContentGerman = () => {
     "/de/bis-isi-mark-zertifizierung",
     // BIS CERTIFICATION PATH
     "/de/was-ist-das-bis-zertifikat-indisches-bis",
+    // BISFM German Page Url
+    "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
   ];
 
   // Check if current path should show these components
@@ -571,6 +573,12 @@ const ContactFormServicesRightSideContentGerman = () => {
       return "ISI Mark - German Page";
     if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
       return "BIS Certification (German)";
+    if (
+      path.includes(
+        "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
+      )
+    )
+      return "BIS Mark (ISI License) for Foreign Manufacturers - German Page";
   };
 
   const [formData, setFormData] = useState({

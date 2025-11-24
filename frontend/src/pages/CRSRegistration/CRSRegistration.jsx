@@ -346,9 +346,9 @@ const ContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Book an Appointment
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Want to contact our team and schedule a call?
@@ -356,7 +356,7 @@ const ContactForm = () => {
       </p>
 
       <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-5">
           <Input
             disabled={loading}
             required
@@ -377,7 +377,7 @@ const ContactForm = () => {
             onChange={handleOnChange}
             placeholder="Email Address *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
-          />
+            />
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
@@ -401,7 +401,7 @@ const ContactForm = () => {
             onChange={handleOnChange}
             placeholder="Company Name *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
-          />
+            />
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
@@ -414,7 +414,7 @@ const ContactForm = () => {
             onChange={handleOnChange}
             placeholder="Product Name *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
-          />
+            />
 
           <Input
             disabled={loading}
@@ -425,14 +425,14 @@ const ContactForm = () => {
             onChange={handleOnChange}
             placeholder="Required Certification*"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
-          />
+            />
         </div>
 
         <Button
           disabled={loading}
           type="submit"
           className="disabled:opacity-100 mt-1 w-[218px] h-[50px] md:h-[60px] bg-[#1A8781] hover:bg-[#1A8781]/90 rounded-[5px] text-[15px] md:text-[15px] font-poppins tracking-wide leading-[28px] shadow-elegant transition-all duration-300 hover:translate-y-[-2px]"
-        >
+          >
           {loading ? (
             <div className="flex gap-3 items-center justify-center">
               <ClockLoader size={22} color="#fff" />
@@ -1356,7 +1356,7 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
       />
 
       <h3 className="service-left-content-heading-three">
-        Approximate Timeline
+        Approximate Timeline for CRS Registration
       </h3>
 
       {/* Timeline Table */}
@@ -1584,13 +1584,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         E-Labelling Guidelines for CRS Certified Products
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         What is E-Labelling?
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         E-labelling is the practice of showing regulatory information within a
@@ -1601,10 +1601,7 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         interface or digital packaging.
       </p>
 
-      <div className="service-left-content-heading-three">
-        BIS Guidelines on E-Labelling: Electronic E-Labelling (BIS CMD
-        3/8:1/6975. dated 03/12/2015)
-      </div>
+       
 
       <h3 className="service-left-content-heading-three">
         Requirements for E-Labelling:
@@ -1689,10 +1686,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         CRS Scheme
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         Why Choose a BIS Consultant?
-      </div>
-
+      </h2>
       <p className="service-left-content-paragraph">
         The entire BIS CRS registration is very technical and exhaustive with
         regard to rules and the volume of documentation. In the absence of a
@@ -1733,9 +1729,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Our Services
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

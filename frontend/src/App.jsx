@@ -32,7 +32,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import Error404 from "./pages/404Error";
 import Webinar from "./pages/Webinar";
 import Videos from "./pages/Videos";
-import CheckBISCertificationEng from "./pages/CheckBISCertificationEng";
+import CheckBISCertificationEng from "./pages/BIS Certification Faq/CheckBISCertificationEng";
 import BacklinksPage from "./pages/BacklinksPage";
 
 // ============================================

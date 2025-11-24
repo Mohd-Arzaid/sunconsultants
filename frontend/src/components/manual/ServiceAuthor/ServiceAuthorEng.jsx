@@ -11,9 +11,9 @@ const ServiceAuthorEng = () => {
                 <div className="relative z-10">
                     {/* Header */}
                     <div className="flex items-center gap-3 mb-3">
-                        <h3 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781]">
+                        <div className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781]">
                             About the Author
-                        </h3>
+                        </div>
                         <div className="flex-1 h-[1px] bg-gradient-to-r from-[#1A8781]/20 to-transparent"></div>
                     </div>
 
@@ -62,7 +62,7 @@ const ServiceAuthorEng = () => {
 
                                 <a
                                     href="mailto:admin@bis-certifications.com"
-                                    className="flex items-center gap-2 p-3 bg-gradient-to-r from-[#1A8781]/5 to-[#125E5A]/10 hover:from-[#1A8781]/10 hover:to-[#125E5A]/15 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-all duration-200"
+                                    className="flex items-center gap-2 p-3 bg-gradient-to-r from-[#1A8781]/5 to-[#125E5A]/10 hover:from-[#1A8781]/10 hover:to-[#125E5A]/15 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-all duration-200 cursor-pointer"
                                 >
                                     <Mail className="w-4 h-4 text-[#1A8781]" />
                                     <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">

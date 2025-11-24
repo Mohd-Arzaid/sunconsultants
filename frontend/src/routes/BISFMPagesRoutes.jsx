@@ -5,6 +5,7 @@ import ServicesPageSkeleton from "@/components/ui/services-page-skeleton";
 // Lazy load pages with default exports
 const BISFM = lazy(() => import("../pages/BISFM/BISFM"));
 const BISFMChinese = lazy(() => import("../pages/BISFM/BISFMChinese"));
+const BISFMGerman = lazy(() => import("../pages/BISFM/BISMGerman"));
 
 export const BISFMPagesRoutes = () => {
   return (
@@ -22,6 +23,14 @@ export const BISFMPagesRoutes = () => {
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <BISFMChinese />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <BISFMGerman />
           </Suspense>
         }
       />
