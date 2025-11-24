@@ -50,7 +50,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/ministry-updates">Ministry Updates</Link>
+                    <Link to="/ministry-updates">BIS Certification Faq</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -59,8 +59,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Refined Zinc (Quality Control) Order 2025 Withdrawn: No
-                    Mandatory BIS
+                    How to check BIS Certification?
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
