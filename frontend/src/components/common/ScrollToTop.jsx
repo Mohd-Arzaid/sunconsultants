@@ -1,7 +1,6 @@
 import { ChevronUp } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import PropTypes from "prop-types";
 
 // Component that disables browser's automatic scroll restoration
 // NO automatic scrolling - page maintains scroll position naturally
@@ -137,10 +136,6 @@ const ScrollToTopButton = ({ hide }) => {
       )}
     </>
   );
-};
-
-ScrollToTopButton.propTypes = {
-  hide: PropTypes.bool.isRequired,
 };
 
 export default ScrollToTopButton;
