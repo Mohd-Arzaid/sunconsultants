@@ -42,7 +42,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import BISFMProductTable from "./BISFMProductTable.jsx";
+import BISFMProductTable from "./BISFMProductTable/BISFMProductTable.jsx";
 
 import BISImage from "@/assets/images/BIS.jpg";
 import CDSCO from "@/assets/images/CDSCO.jpg";

@@ -309,9 +309,9 @@ const ISIMarkContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Book an Appointment
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Want to contact our team and schedule a call?
@@ -878,9 +878,9 @@ const RequirementSection = () => {
         main procedures to approach the BIS certification process: Normal
         Procedure and Simplified Procedure.{" "}
       </p>
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. Normal Procedure (60-65 Days)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "The manufacturer sets up in-house labs and brings the products into compliance with the Indian Standards.",
@@ -891,9 +891,9 @@ const RequirementSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. Simplified Procedure (35-40 Days)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "Manufacturer submits documents of pre-tested products from labs recognized by BIS.",
@@ -1123,9 +1123,9 @@ const ISIMarkServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Our Services
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

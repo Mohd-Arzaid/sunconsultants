@@ -38,7 +38,7 @@ import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng
 import ServicesRightSideContentChinese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentChinese";
 import ISIMARKImage from "../../assets/servicesImages/ISIMARKUpdated.jpg";
 import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png";
-import BISFMProductTable from "@/pages/BISFMProductTable.jsx";
+import BISFMProductTableChinese from "@/pages/BISFMProductTable/BISFMProductTableChinese.jsx";
 import FooterChinese from "@/components/manual/Footer/FooterChinese";
 import ServiceAuthorChinese from "@/components/manual/ServiceAuthor/ServiceAuthorChinese";
 
@@ -54,7 +54,7 @@ const BISFMChinese = () => {
       <MainContent />
       <ServiceFaq />
       <div id="product-table">
-        <BISFMProductTable />
+          <BISFMProductTableChinese />
       </div>
       <div id="services">
         <Services />
