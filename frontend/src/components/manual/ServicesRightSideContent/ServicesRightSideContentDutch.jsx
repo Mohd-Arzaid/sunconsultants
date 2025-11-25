@@ -37,6 +37,8 @@ const ServicesRightSideContentDutch = () => {
     "/nl/bis-isi-mark-certificering",
     // BIS CERTIFICATION PATH
     "/nl/wat-is-het-bis-certificaat-indiaas-bis",
+    // BISFM Dutch Page URL
+    "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis",
     // Centrifuges Dutch Page URL
     "/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines",
     // Compressors Dutch Page URL
@@ -610,6 +612,10 @@ const ContactFormServicesRightSideContentDutch = () => {
       return "ISI Mark - Dutch Page";
     if (path.includes("/nl/wat-is-het-bis-certificaat-indiaas-bis"))
       return "BIS Certification Dutch";
+    if (
+      path.includes("/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis")
+    )
+      return "BIS Mark (ISI Licentie) voor Buitenlandse Fabrikanten - Nederlandse Pagina";
     if (
       path.includes("/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines")
     )

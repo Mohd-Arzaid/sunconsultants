@@ -231,19 +231,12 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
     const getPageName = () => {
       const path = window.location.pathname;
   
-      // BISFM (FMCS - Foreign Manufacturers)
-      if (
-        path.includes(
-          "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
-        )
-      )
-        return "BIS Mark (ISI License) for Foreign Manufacturers - English Page";
       if (
         path.includes(
           "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
         )
       )
-        return "BIS-Mark (ISI-Lizenz) für ausländische Hersteller - Deutsche Seite";
+        return "BISFM German für ausländische Hersteller - Deutsche Seite";
     };
   
     const [formData, setFormData] = useState({
@@ -2220,7 +2213,7 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                BIS Mark (ISI License) for Foreign Manufacture
+                BIS-Marke (ISI-Lizenz) für ausländische Hersteller
               </p>
             </Link>
   
@@ -2236,7 +2229,7 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                CDSCO Registration Certification
+                CDSCO-Registrierungszertifizierung
               </p>
             </Link>
   
@@ -2252,7 +2245,7 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                BIS (CRS) Registration
+                BIS (CRS) Registrierung
               </p>
             </Link>
   
@@ -2268,7 +2261,7 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                Plastic Waste Management
+                Kunststoffabfallmanagement
               </p>
             </Link>
   
@@ -2284,7 +2277,7 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                EPR Certificate certifications
+                EPR-Zertifikatszertifizierungen
               </p>
             </Link>
   
@@ -2300,7 +2293,7 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                LMPC Certificate certifications
+                LMPC-Zertifikatszertifizierungen
               </p>
             </Link>
   
@@ -2316,7 +2309,7 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                BIS Registration Certificate
+                BIS-Registrierungszertifikat
               </p>
             </Link>
   
@@ -2332,7 +2325,7 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
                 />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-                ISI MARK (BIS) for Indian Manufactures
+                ISI-MARKE (BIS) für indische Hersteller
               </p>
             </Link>
           </div>

@@ -88,6 +88,18 @@ const ServicesRightSideContentEng = () => {
     "/bis-certification-cost",
     // Q5
     "/get-bis-certification-in-india",
+    // Q6
+    "/apply-bis-certification",
+    // Q7
+    "/verify-bis-certification",
+    // Q8
+    "/download-bis-certificate-online",
+    // Q9
+    "/import-without-bis-certificate",
+    // Q10
+    "/importer-apply-for-bis-certificate-in-india",
+    // Q11
+    "/issue-bis-certificate",
   ];
 
   // Check if current path should show these components
@@ -746,18 +758,45 @@ const ContactFormServicesRightSideContentEng = () => {
 
 
     // BIS CERTIFICATION FAQ PATHS
+    // Q1
     if (path.includes("/check-bis-certification"))
       return "Check BIS Certification - English Page";
+    // Q2
     if (path.includes("/get-bis-certification"))
       return "How to get BIS Certification - English Page";
+    // Q3
     if (path.includes("/check-bis-certification-online"))
       return "How to check BIS Certification Online - English Page";
+    // Q4 
     if (path.includes("/bis-certification-cost"))
       return "How much does BIS Certification Cost - English Page";
-
-    // GET BIS CERTIFICATION IN INDIA PATH
+    // Q5
     if (path.includes("/get-bis-certification-in-india"))
       return "How to get BIS Certification in India - English Page";
+    
+    // Q6
+    if (path.includes("/apply-bis-certification"))
+      return "How to apply BIS Certification - English Page";
+    
+    // Q7
+    if (path.includes("/verify-bis-certification"))
+      return "How to verify BIS Certification - English Page";
+    
+    // Q8
+    if (path.includes("/download-bis-certificate-online"))
+      return "Can we download BIS Certificate Online - English Page";
+    
+    // Q9
+    if (path.includes("/import-without-bis-certificate"))
+      return "Can I import without BIS Certificate - English Page";
+    
+    // Q10
+    if (path.includes("/importer-apply-for-bis-certificate-in-india"))
+      return "Can importer apply for BIS Certificate in India - English Page";
+    
+    // Q11
+    if (path.includes("/issue-bis-certificate"))
+      return "Who can issue BIS Certificate - English Page";
   };
 
   const [formData, setFormData] = useState({

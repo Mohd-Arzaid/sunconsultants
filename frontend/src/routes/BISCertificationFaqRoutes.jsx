@@ -17,6 +17,24 @@ const Q4DoesBIScertificationCost = lazy(() =>
 const Q5GetBISCertificationInIndia = lazy(() =>
   import("@/pages/BIS Certification Faq/Q5GetBISCertificationInIndia")
 );
+const Q6ApplyBISCertification = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q6ApplyBISCertification")
+);
+const Q7HowToVerifyBISCertification = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q7HowToVerifyBISCertification")
+);
+const Q8DownloadBISCertificateOnline = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q8DownloadBISCertificateOnline")
+);
+const Q9ImportWithoutBISCertificate = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q9ImportWithoutBISCertificate")
+);
+const Q10ApplyForBISCertificateInIndia = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q10ApplyForBISCertificateInIndia")
+);
+const Q11IssueBISCertificate = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q11IssueBISCertificate")
+);
 
 export const BISCertificationFaqRoutes = () => {
   return (
@@ -59,6 +77,54 @@ export const BISCertificationFaqRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <Q5GetBISCertificationInIndia />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/apply-bis-certification"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <Q6ApplyBISCertification />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/verify-bis-certification"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <Q7HowToVerifyBISCertification />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/download-bis-certificate-online"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <Q8DownloadBISCertificateOnline />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/import-without-bis-certificate"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <Q9ImportWithoutBISCertificate />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/importer-apply-for-bis-certificate-in-india"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <Q10ApplyForBISCertificateInIndia />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/issue-bis-certificate"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <Q11IssueBISCertificate />
           </Suspense>
         }
       />
