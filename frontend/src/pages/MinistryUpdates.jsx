@@ -297,6 +297,16 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
         "The Quality Control Order under Scheme X has been officially withdrawn. Get all the essential information about this regulatory update.",
       link: "/ministry-updates/scheme-x-qco-withdraw-order",
     },
+    {
+      id: 9,
+      color: "#5B63E6",
+      tagType: "QCO Amendment",
+      date: "January 15, 2025",
+      title: "Steel Products Amendment 2025",
+      description:
+        "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
+      link: "/ministry-updates/steel-products-amendment-2025",
+    },
   ];
 
   // Function to parse date string into Date object
@@ -561,6 +571,16 @@ const Pagination = ({
       description:
         "The Quality Control Order under Scheme X has been officially withdrawn. Get all the essential information about this regulatory update.",
       link: "/ministry-updates/scheme-x-qco-withdraw-order",
+    },
+    {
+      id: 9,
+      color: "#5B63E6",
+      tagType: "QCO Amendment",
+      date: "January 15, 2025",
+      title: "Steel Products Amendment 2025",
+      description:
+        "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
+      link: "/ministry-updates/steel-products-amendment-2025",
     },
   ];
 
