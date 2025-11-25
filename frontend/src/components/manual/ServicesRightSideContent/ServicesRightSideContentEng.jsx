@@ -77,8 +77,17 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/scheme-x-qco-withdraw-order",
     "/ministry-updates/steel-products-amendment-2025",
 
-    // CHECK BIS CERTIFICATION PATH
+   // BIS CERTIFICATION FAQ PATHS
+   // Q1
     "/check-bis-certification",
+   // Q2
+    "/get-bis-certification",
+    // Q3
+    "/check-bis-certification-online",
+    // Q4    
+    "/bis-certification-cost",
+    // Q5
+    "/get-bis-certification-in-india",
   ];
 
   // Check if current path should show these components
@@ -711,9 +720,20 @@ const ContactFormServicesRightSideContentEng = () => {
     if (path.includes("/ministry-updates/steel-products-amendment-2025"))
       return "Steel Products Amendment Order 2025 - Ministry Updates (English)";
 
-    // CHECK BIS CERTIFICATION PATH
+
+    // BIS CERTIFICATION FAQ PATHS
     if (path.includes("/check-bis-certification"))
       return "Check BIS Certification - English Page";
+    if (path.includes("/get-bis-certification"))
+      return "How to get BIS Certification - English Page";
+    if (path.includes("/check-bis-certification-online"))
+      return "How to check BIS Certification Online - English Page";
+    if (path.includes("/bis-certification-cost"))
+      return "How much does BIS Certification Cost - English Page";
+
+    // GET BIS CERTIFICATION IN INDIA PATH
+    if (path.includes("/get-bis-certification-in-india"))
+      return "How to get BIS Certification in India - English Page";
   };
 
   const [formData, setFormData] = useState({

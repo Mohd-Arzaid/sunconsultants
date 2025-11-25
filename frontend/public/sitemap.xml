@@ -3418,6 +3418,53 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  
+ <!-- BIS CERTIFICATION FAQ PAGES - Start -->
+
+ <!-- Ques 1 - English -->
+  <url>
+    <loc>https://bis-certifications.com/check-bis-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 2 - English -->
+  <url>
+    <loc>https://bis-certifications.com/get-bis-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 3 - English -->
+  <url>
+    <loc>https://bis-certifications.com/check-bis-certification-online</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 4 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-cost</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 5 - English -->
+  <url>
+    <loc>https://bis-certifications.com/get-bis-certification-in-india</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+  <!-- BIS CERTIFICATION FAQ PAGES - End -->  
+
+
+  
   <!-- Ministry Updates Pages -->
     <url>
     <loc>https://bis-certifications.com/ministry-updates</loc>

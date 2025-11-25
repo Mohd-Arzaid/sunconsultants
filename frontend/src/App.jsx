@@ -32,7 +32,6 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import Error404 from "./pages/404Error";
 import Webinar from "./pages/Webinar";
 import Videos from "./pages/Videos";
-import CheckBISCertificationEng from "./pages/BIS Certification Faq/CheckBISCertificationEng";
 import BacklinksPage from "./pages/BacklinksPage";
 
 // ============================================
@@ -54,6 +53,7 @@ import { MinistryUpdatesRoutes } from "./routes/MinistryUpdatesRoutes";
 import { NotificationsRoutes } from "./routes/NotificationsRoutes";
 import { BlogRoutes } from "./routes/BlogRoutes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
+import { BISCertificationFaqRoutes } from "./routes/BISCertificationFaqRoutes";
 
 // ============================================
 // Admin Routes (Commented out)
@@ -100,10 +100,6 @@ function App() {
         <Route path="sitemap" element={<Sitemap />} />
 
         {/* Utility Pages */}
-        <Route
-          path="/check-bis-certification"
-          element={<CheckBISCertificationEng />}
-        />
         <Route path="international-audits" element={<InternationalAudits />} />
         <Route path="seminars-and-exhibitions" element={<Exhibition />} />
         <Route path="webinar" element={<Webinar />} />
@@ -121,6 +117,9 @@ function App() {
         {BISCertificationPagesRoutes()}
         {ISIMarkPagesRoutes()}
         {CRSRegistrationRoutes()}
+
+        {/* BIS Certification FAQ Routes */}
+        {BISCertificationFaqRoutes()}
 
         {/* Blog Routes */}
         <Route path="Blogs" element={<LatestBlogs />} />
