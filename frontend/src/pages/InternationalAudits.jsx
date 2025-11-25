@@ -143,72 +143,98 @@ const AuditGallery = () => {
     {
       id: 1,
       image: "/auditImages/Bahrain.webp",
-      title: "Bahrain",
+      description:
+        "Successful Audit and Grant of BIS License on Aluminium Products under IS 617 and 2590 for one of the world's leading manufacturer in Bahrain",
     },
     {
       id: 2,
       image: "/auditImages/Vietnam.webp",
-      title: "Vietnam",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Vietnam",
     },
     {
       id: 3,
       image: "/auditImages/Indonesia.webp",
-      title: "Indonesia",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Indonesia",
     },
     {
       id: 4,
       image: "/auditImages/Vietnam-2.webp",
-      title: "Vietnam",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Vietnam",
     },
     {
       id: 5,
       image: "/auditImages/Italy-2.webp",
-      title: "Italy",
+      description:
+        "Successful Audit and Grant of BIS License on Footwear under IS 6721 for one of the world's leading manufacturer in Italy",
     },
     {
       id: 6,
       image: "/auditImages/Vietnam-3.webp",
-      title: "Vietnam",
+      description:
+        "Successful Audit and Grant of BIS License on Sewing Machines under IS 15449 for one of the world's leading manufacturer in Vietnam",
     },
     {
       id: 7,
       image: "/auditImages/Malaysia.webp",
-      title: "Malaysia",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Malaysia",
     },
     {
       id: 8,
       image: "/auditImages/Slovenia.webp",
-      title: "Slovenia",
+      description:
+        "Successful Audit and Grant of BIS License on Hinges under IS 18297 for one of the world's leading manufacturer in Slovenia",
     },
     {
       id: 9,
       image: "/auditImages/Vietnam-4.webp",
-      title: "Vietnam",
+      description:
+        "Successful Audit and Grant of BIS License on Steel Products under IS 6911 for one of the world's leading manufacturer in Vietnam",
     },
     {
       id: 10,
       image: "/auditImages/Thailand.webp",
-      title: "Thailand",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Thailand",
     },
     {
       id: 11,
       image: "/auditImages/USA.webp",
-      title: "USA",
+      description:
+        "Successful Audit and Grant of BIS License on Steel Products under IS 6911 for one of the world's leading manufacturer in USA",
     },
     {
       id: 12,
       image: "/auditImages/Spain.webp",
-      title: "Spain",
+      description:
+        "Successful Audit and Grant of BIS License on Aluminium Products under IS 1285 and IS 733 for one of the world's leading manufacturer in Spain",
     },
     {
       id: 13,
       image: "/auditImages/Turkey.webp",
-      title: "Turkey",
+      description:
+        "Successful Audit and Grant of BIS License on Footwear under IS 6721 and IS 17043 Part 2 for one of the world's leading manufacturer in Turkey",
     },
     {
       id: 14,
       image: "/auditImages/bis-certification-inspection-malaysia.webp",
-      title: "Malaysia ",
+      description:
+        "Successful Audit and Grant of BIS License on Measuring Tape under IS 1269 Part 2 for one of the world's leading manufacturer in Malaysia",
+    },
+    {
+      id: 15,
+      image: "/seminarImages/Seminar-12.webp",
+      description:
+        "Successful Audit and Grant of BIS License on Aluminium Products under IS 1285 for one of the world's leading manufacturer in Italy",
+    },
+    {
+      id: 16,
+      image: "/auditImages/Bemco.webp",
+      description:
+        "Successful Audit and Grant of BIS License on Aluminium Products under IS 617 for one of the world's leading manufacturer in Bahrain",
     },
   ];
 
@@ -218,34 +244,53 @@ const AuditGallery = () => {
         {galleryImages.map((item) => (
           <div
             key={item.id}
-            className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white"
+            className="group relative mb-4 rounded-2xl"
+            style={{
+              opacity: 1,
+              filter: "blur(0px)",
+              transform: "none",
+              boxShadow: "rgba(0,0,0,0.1) 0px 0px 0px 0px",
+            }}
           >
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="aspect-[4/3] overflow-hidden rounded-xl">
               <img
-                src={item.image}
-                alt={item.title}
+                alt={item.description || `Audit ${item.id}`}
+                title={item.description || `Audit ${item.id}`}
+                loading="lazy"
+                width="300"
+                height="300"
+                decoding="async"
                 className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
+                src={item.image}
+                style={{ color: "transparent" }}
               />
             </div>
-            {/* Country Name Overlay - Always Visible */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white font-playfair text-2xl md:text-3xl font-bold transform transition-all duration-500 group-hover:scale-105">
-                  {item.title}
-                </h3>
-              </div>
+
+            <div className="flex flex-1 flex-col justify-between py-2 transition-all duration-300 group-hover:px-4">
+              <p className="mt-2 max-w-full text-lg font-geist text-neutral-600">
+                {item.description ||
+                  "A showcase of our international audit and certification services"}
+              </p>
             </div>
           </div>
         ))}
 
         {/* Many More Audits Images Coming Soon Card */}
-        <div className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300">
-          <div className="aspect-[4/3] flex items-center justify-center">
-            <div className="text-center p-6">
-              <h3 className="text-gray-800 font-geist text-lg md:text-xl font-bold mb-2 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
+        <div
+          className="group relative mb-4 rounded-2xl"
+          style={{
+            opacity: 1,
+            filter: "blur(0px)",
+            transform: "none",
+            boxShadow: "rgba(0,0,0,0.1) 0px 0px 0px 0px",
+          }}
+        >
+          <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
+            <div className="text-center p-4">
+              <h3 className="text-gray-800 font-geist text-base md:text-lg font-bold mb-1 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
                 Many More Audits
               </h3>
-              <p className="text-gray-500 font-geist text-xs md:text-sm font-medium uppercase tracking-widest mb-1">
+              <p className="text-gray-500 font-geist text-xs font-medium uppercase tracking-widest mb-1">
                 Conducted Worldwide
               </p>
               <p className="text-gray-400 font-geist text-xs italic">
