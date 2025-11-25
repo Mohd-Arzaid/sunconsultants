@@ -40,7 +40,7 @@ const TopBar = () => {
           </a>
 
           <a
-            href="https://wa.me/918010505057"
+            href="https://wa.me/918766262463"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-white hover:text-emerald-100 transition-all duration-300 hover:scale-110"

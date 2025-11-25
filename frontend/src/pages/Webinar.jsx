@@ -1,7 +1,14 @@
 import { Calendar, ChevronRight, Clock, SlashIcon, Users } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Footer from "@/common/Footer";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
 const Webinar = () => {
@@ -204,8 +211,7 @@ const Webinar = () => {
         </script>
       </Helmet>
 
-
- <div className="absolute md:top-5 top-3 left-0 w-full z-30">
+      <div className="absolute md:top-5 top-3 left-0 w-full z-30">
         <div className="max-w-[80rem] mx-auto px-4">
           <div className="w-fit font-inter">
             <Breadcrumb>
@@ -219,17 +225,13 @@ const Webinar = () => {
                   <SlashIcon />
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
-                  <BreadcrumbPage>
-                    Expert Certification Webinars
-                  </BreadcrumbPage>
+                  <BreadcrumbPage>Expert Certification Webinars</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
           </div>
         </div>
       </div>
-
-      
 
       <WebinarHero />
       <PastWebinars />

@@ -33,7 +33,7 @@ const FooterThai = () => {
           <div className="flex justify-center w-full">
             <div className="flex gap-6 flex-wrap items-center justify-center">
               <a
-                href="https://wa.me/918010505057"
+                href="https://wa.me/918766262463"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="ติดต่อเราผ่าน WhatsApp"

@@ -1,7 +1,4 @@
-import {
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-} from "@radix-ui/react-icons";
+import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
@@ -273,7 +270,7 @@ const Footer = () => {
           <div className="flex justify-center w-full">
             <div className="flex gap-6 flex-wrap items-center justify-center">
               <a
-                href="https://wa.me/918010505057"
+                href="https://wa.me/918766262463"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -524,8 +521,6 @@ const Footer = () => {
               >
                 <LinkedInLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
               </a>
-
-
 
               <a
                 href="mailto:admin@bis-certifications.com?body=Hello"

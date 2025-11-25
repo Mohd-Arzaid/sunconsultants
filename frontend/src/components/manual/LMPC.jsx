@@ -19,7 +19,14 @@ import ScrollToTopButton from "../common/ScrollToTop";
 import ServiceContactForm from "@/common/ServiceContactForm";
 import Services from "./Services";
 import AboutAuthor from "../common/AboutAuthor";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "../ui/breadcrumb";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "../ui/breadcrumb";
 import { Link } from "react-router-dom";
 
 export const LMPC = () => {
@@ -39,7 +46,10 @@ export const LMPC = () => {
           content="LMPC certificate, Legal Metrology, packaged commodities, importers registration, manufacturers registration, packers registration"
         />
         <meta name="author" content="Sun Certifications India" />
-        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
+        <meta
+          name="publisher"
+          content="Dhruv Aggarwal, Head of Operations at Sun Certification India"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Open Graph Tags */}
@@ -187,7 +197,10 @@ const LMPCHero = () => {
   return (
     <header className="relative pt-[60px] md:pt-[104px] pb-[30px] md:pb-[106px] overflow-x-hidden bg-[#F9F7F2]">
       {/* Background gradient */}
-      <div className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco" aria-hidden="true"></div>
+      <div
+        className="hidden md:block absolute inset-0 rounded-bl-full z-10 transform translate-x-1/2 custom-radial-gradient-cdsco"
+        aria-hidden="true"
+      ></div>
 
       {/* Decorative elements */}
       <div
@@ -200,7 +213,10 @@ const LMPCHero = () => {
         {/* Left Side */}
         <div className="relative flex flex-col gap-6 md:gap-8 w-full md:w-[533px] items-start">
           <div className="inline-flex items-center">
-            <div className="h-[3px] w-[40px] bg-[#1A8781] mr-4" aria-hidden="true"></div>
+            <div
+              className="h-[3px] w-[40px] bg-[#1A8781] mr-4"
+              aria-hidden="true"
+            ></div>
             <span className="text-[#1A8781] font-poppins text-sm font-medium tracking-wider uppercase">
               Certified Expertise
             </span>
@@ -209,7 +225,10 @@ const LMPCHero = () => {
           <h1 className="leading-[1.2] md:leading-[70px] z-[10] font-playfair font-bold text-[40px] md:text-[52px] text-[#1E1E1E] -mt-2">
             <span className="relative">
               LMPC Certificate Guide for
-              <span className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full" aria-hidden="true"></span>
+              <span
+                className="absolute -bottom-2 left-0 w-[120px] h-[8px] bg-[#1A8781]/10 rounded-full"
+                aria-hidden="true"
+              ></span>
             </span>{" "}
             Importers and Manufacturers
           </h1>
@@ -314,12 +333,12 @@ const LMPCIndex = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     // Initial check
     handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -355,8 +374,9 @@ const LMPCIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -377,9 +397,19 @@ const LMPCIndex = () => {
             stroke="currentColor"
           >
             {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             )}
           </svg>
         </button>
@@ -396,10 +426,11 @@ const LMPCIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {item}
@@ -419,18 +450,20 @@ const LMPCIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {item}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -463,14 +496,24 @@ const LMPCContent = () => {
 // LMPC FAQs Section
 const ServiceFaq = () => {
   return (
-    <section id="faqs" className="my-2 bg-gray-50 scroll-mt-20" aria-labelledby="faq-title">
+    <section
+      id="faqs"
+      className="my-2 bg-gray-50 scroll-mt-20"
+      aria-labelledby="faq-title"
+    >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h2 id="faq-title" className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2
+          id="faq-title"
+          className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]"
+        >
           Frequently Asked Questions
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Can't find the answer you are looking for?{" "}
-          <a href="#contact" className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4">
+          <a
+            href="#contact"
+            className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4"
+          >
             Reach out to us!
           </a>
         </p>
@@ -498,8 +541,9 @@ const ServiceFaq = () => {
                 CDSCO approval timelines vary based on product category and
                 application type. Typically, drug approvals take 6-12 months,
                 medical device registrations 3-6 months, and cosmetic
-                registrations 2-4 months. Our Certifications work to expedite these
-                timelines through proper documentation and regulatory strategy.
+                registrations 2-4 months. Our Certifications work to expedite
+                these timelines through proper documentation and regulatory
+                strategy.
               </AccordionContent>
             </AccordionItem>
 
@@ -711,17 +755,27 @@ const PointsListTwo = ({ points, heading }) => {
 
 const OverviewSection = () => {
   return (
-    <section id="overview" className="flex flex-col scroll-mt-20" aria-labelledby="overview-title">
+    <section
+      id="overview"
+      className="flex flex-col scroll-mt-20"
+      aria-labelledby="overview-title"
+    >
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-semibold font-geist text-[16px] md:text-[20px] text-gray-700">
           Overview
         </span>
-        <Separator className="w-[94.46px] h-[1.5px] bg-gray-700" aria-hidden="true" />
+        <Separator
+          className="w-[94.46px] h-[1.5px] bg-gray-700"
+          aria-hidden="true"
+        />
       </div>
 
       {/* Title */}
-      <h2 id="overview-title" className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0">
+      <h2
+        id="overview-title"
+        className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none md:leading-normal my-3 md:my-0"
+      >
         What is LMPC Certification? A Complete Overview
       </h2>
 
@@ -792,7 +846,6 @@ const OverviewSection = () => {
           <img
             src={LMPCimg}
             alt="LMPC certification process and documentation requirements for importers and manufacturers"
-
             width="400"
             height="250"
             className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
@@ -800,7 +853,9 @@ const OverviewSection = () => {
             hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5
             "
           />
-          <figcaption className="sr-only">LMPC certification documentation and process overview</figcaption>
+          <figcaption className="sr-only">
+            LMPC certification documentation and process overview
+          </figcaption>
         </figure>
       </div>
     </section>
@@ -1196,10 +1251,10 @@ const CertificationsSection = () => {
 
       <div className="mt-[16px] md:mt-[24px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
         To obtain LMPC registration services , the applicant can hire a LMPC
-        agent to apply on the behalf of their company. LMPC Certifications help in
-        getting the work done error-free, at a faster pace with more accuracy.
-        At Sun Certifications, we provide LMPC certificate consultancy services to
-        all importers/manufacturers/packers.
+        agent to apply on the behalf of their company. LMPC Certifications help
+        in getting the work done error-free, at a faster pace with more
+        accuracy. At Sun Certifications, we provide LMPC certificate consultancy
+        services to all importers/manufacturers/packers.
       </div>
     </section>
   );

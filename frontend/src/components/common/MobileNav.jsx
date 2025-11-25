@@ -96,7 +96,7 @@ const MobileNav = () => {
     <div className="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md border-t border-gray-200/50 md:hidden z-[50] shadow-lg">
       <div className="flex justify-around items-center h-[70px]">
         <a
-          href="https://wa.me/918010505057"
+          href="https://wa.me/918766262463"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center text-green-600"
