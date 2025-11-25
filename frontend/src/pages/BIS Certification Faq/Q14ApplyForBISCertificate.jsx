@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const Q10ApplyForBISCertificateInIndia = () => {
+const Q14ApplyForBISCertificate = () => {
   return (
     <div className="relative w-full">
       <BreadcrumbContent />
@@ -27,9 +27,9 @@ const Q10ApplyForBISCertificateInIndia = () => {
       <FooterEng />
     </div>
   );
-};
+};  
 
-export default Q10ApplyForBISCertificateInIndia;
+export default Q14ApplyForBISCertificate;
 
 const BreadcrumbContent = () => {
   return (
@@ -59,7 +59,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Can importer apply for BIS Certificate in India?
+                    Who can get BIS Certificate?
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -91,18 +91,17 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          Can Importer Apply For BIS Certificate In India?
+          Who Can Get BIS Certificate?
         </h1>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Can importer apply for bis certificate in india is a frequent question
-          for brands and manufacturers navigating Indian conformity routes. Begin
-          by identifying the applicable Indian Standard (IS) and confirming
-          whether your product falls under the ISI Scheme (license with
-          surveillance) or the Compulsory Registration Scheme (CRS) used for
-          electronics/IT. Build a simple scope table with models/variants,
-          ratings, and critical components—this improves test planning and
-          documentation accuracy.
+          Who can get bis certificate is a frequent question for brands and
+          manufacturers navigating Indian conformity routes. Begin by identifying
+          the applicable Indian Standard (IS) and confirming whether your
+          product falls under the ISI Scheme (license with surveillance) or the
+          Compulsory Registration Scheme (CRS) used for electronics/IT. Build a
+          simple scope table with models/variants, ratings, and critical
+          components—this improves test planning and documentation accuracy.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">

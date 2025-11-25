@@ -35,6 +35,12 @@ const Q10ApplyForBISCertificateInIndia = lazy(() =>
 const Q11IssueBISCertificate = lazy(() =>
   import("@/pages/BIS Certification Faq/Q11IssueBISCertificate")
 );
+const Q12GetBISCertificate = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q12GetBISCertificate")
+);
+const Q13TraderGetBISCertificate = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q13TraderGetBISCertificate")
+);
 
 export const BISCertificationFaqRoutes = () => {
   return (
@@ -125,6 +131,22 @@ export const BISCertificationFaqRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <Q11IssueBISCertificate />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/get-bis-certificate"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <Q12GetBISCertificate />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/trader-get-bis-certificate"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <Q13TraderGetBISCertificate />
           </Suspense>
         }
       />

@@ -100,6 +100,10 @@ const ServicesRightSideContentEng = () => {
     "/importer-apply-for-bis-certificate-in-india",
     // Q11
     "/issue-bis-certificate",
+    // Q12
+    "/get-bis-certificate",
+    // Q13
+    "/trader-get-bis-certificate",
   ];
 
   // Check if current path should show these components
@@ -797,6 +801,14 @@ const ContactFormServicesRightSideContentEng = () => {
     // Q11
     if (path.includes("/issue-bis-certificate"))
       return "Who can issue BIS Certificate - English Page";
+    
+    // Q12
+    if (path.includes("/get-bis-certificate"))
+      return "Who can get BIS Certificate - English Page";
+    
+    // Q13
+    if (path.includes("/trader-get-bis-certificate"))
+      return "Can a trader get BIS Certificate - English Page";
   };
 
   const [formData, setFormData] = useState({
