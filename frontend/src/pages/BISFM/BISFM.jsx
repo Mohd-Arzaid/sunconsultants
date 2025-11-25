@@ -961,7 +961,8 @@ const StandardizationSection = () => {
 
       <img
         src={ISIMARKImage}
-        alt="ISI Mark"
+        alt="ISI Mark logo"
+        title="ISI Mark logo"
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
@@ -1797,7 +1798,8 @@ const ProcessSection = () => {
 
       <img
         src={BISCertificateImage}
-        alt="BIS Certificate Process Flow"
+        alt="Sample of BIS certificate for FMCS"
+        title="Sample of BIS certificate for FMCS"
         className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
       />
 

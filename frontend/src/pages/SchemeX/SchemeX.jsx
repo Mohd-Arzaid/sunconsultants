@@ -694,9 +694,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Our Services
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1726,9 +1726,9 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
+      <div className="service-left-content-heading-two">
         Conclusion
-      </h2>
+      </div>
 
       <p className="service-left-content-paragraph">
         The BIS Scheme-X Certification remains vital in upholding the safety,
@@ -2216,9 +2216,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
       </p>
 
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Special Note for MSMEs
-      </h3>
+      </div>
 
 
       <p className="service-left-content-paragraph">
@@ -2241,9 +2241,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
       />
 
 
-      <h3 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         BIS Scheme X Logo
-      </h3>
+      </h2>
 
 
 
@@ -2280,9 +2280,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
       </div>
 
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Legal Implications
-      </h3>
+      </div>
 
 
       <p className="service-left-content-paragraph">
@@ -2428,9 +2428,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
       </div>
 
 
-      <h3 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         Products Covered by Scheme-X
-      </h3>
+      </h2>
 
 
       <p className="service-left-content-paragraph">
@@ -2830,9 +2830,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
         {/* Heading and Description */}
         <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+          <div className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
             Product wise Safety Standard
-          </h3>
+          </div>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             Description of Machinery and Electrical Equipment
           </p>
