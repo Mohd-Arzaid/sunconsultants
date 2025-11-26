@@ -10,6 +10,7 @@ const BISFMDutch = lazy(() => import("../pages/BISFM/BISFMDutch"));
 const BISFMJapanese = lazy(() => import("../pages/BISFM/BISFMJapanese"));
 const BISFMKorean = lazy(() => import("../pages/BISFM/BISFMKorean"));
 const BISFMFrench = lazy(() => import("../pages/BISFM/BISFMFrench"));
+const BISFMSpanish = lazy(() => import("../pages/BISFM/BISFMSpanish"));
 
 export const BISFMPagesRoutes = () => {
   return (
@@ -67,6 +68,14 @@ export const BISFMPagesRoutes = () => {
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <BISFMFrench />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <BISFMSpanish />
           </Suspense>
         }
       />
