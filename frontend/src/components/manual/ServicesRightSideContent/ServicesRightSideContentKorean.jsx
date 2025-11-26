@@ -30,6 +30,9 @@ const ServicesRightSideContentKorean = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
+    // BISFM (FMCS - Foreign Manufacturers) Korean Page
+    "/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu",
+
     "/hangug-ui-bis-injeung",
     "/ko/crs-bis-i-mueos-inga-crs-deunglog",
     // ISI Mark Korean Page Url
@@ -570,6 +573,12 @@ const ContactFormServicesRightSideContentKorean = () => {
   // Function to get page name based on URL
   const getPageName = () => {
     const path = window.location.pathname;
+
+    // BISFM (FMCS - Foreign Manufacturers) Korean Page
+    if (
+      path.includes("/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu")
+    )
+      return "BISFM (FMCS - Foreign Manufacturers) Korean Page";
 
     if (path.includes("/hangug-ui-bis-injeung")) return "Korea Blog (Korean)";
     if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
