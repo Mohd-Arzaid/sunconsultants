@@ -7,6 +7,7 @@ const BISFM = lazy(() => import("../pages/BISFM/BISFM"));
 const BISFMChinese = lazy(() => import("../pages/BISFM/BISFMChinese"));
 const BISFMGerman = lazy(() => import("../pages/BISFM/BISFMGerman"));
 const BISFMDutch = lazy(() => import("../pages/BISFM/BISFMDutch"));
+const BISFMJapanese = lazy(() => import("../pages/BISFM/BISFMJapanese"));
 
 export const BISFMPagesRoutes = () => {
   return (
@@ -40,6 +41,14 @@ export const BISFMPagesRoutes = () => {
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <BISFMDutch />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <BISFMJapanese />
           </Suspense>
         }
       />

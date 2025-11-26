@@ -38,6 +38,8 @@ const ServicesRightSideContentJapanese = () => {
     "/ja/bis-isi-mark-shounin",
     // BIS CERTIFICATION PATH
     "/ja/bis-shomeisho-toha-nani-ka-indo-no-bis",
+    // BISFM (FMCS - Foreign Manufacturers) Japanese Page Url
+    "/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis",
     // Centrifuges Scheme X Product (Japanese) Page Url
     "/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai",
     // Compressors Scheme X Product (Japanese) Page Url
@@ -613,7 +615,6 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // BIS CERTIFICATION PATH
     if (path.includes("/ja/bis-shomeisho-toha-nani-ka-indo-no-bis"))
       return "BIS Certification (Japanese)";
-
     // Centrifuges Scheme X Product (Japanese) Page Url
     if (
       path.includes(
@@ -707,6 +708,14 @@ const ContactFormServicesRightSideContentJapanese = () => {
     // Weaving Machines Scheme X Product (Japanese) Page Url
     if (path.includes("/bis-sukiimu-x-ninshoo-orimonoiki-ruumu"))
       return "Weaving Machines Scheme X Product (Japanese)";
+
+    // BISFM (FMCS - Foreign Manufacturers) Japanese Page Url
+    if (
+      path.includes(
+        "ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis"
+      )
+    )
+      return "BISFM page - Japanese";
   };
 
   const [formData, setFormData] = useState({
