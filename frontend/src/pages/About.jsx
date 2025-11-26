@@ -229,8 +229,18 @@ const VideoShowcase = () => {
               onClick={() => setIsPlaying(false)}
               className="absolute top-4 right-4 z-30 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center transition-all duration-300"
             >
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
@@ -430,10 +440,11 @@ export const OurServices = () => {
                 key={index}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to slide ${index + 1}`}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${activeIndex === index
-                  ? "bg-[#1A8781] w-10"
-                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
-                  }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
+                  activeIndex === index
+                    ? "bg-[#1A8781] w-10"
+                    : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+                }`}
               ></button>
             ))}
           </div>
@@ -445,10 +456,11 @@ export const OurServices = () => {
             <div
               key={service.id || index}
               onClick={() => goToSlide(index)}
-              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${activeIndex === index
-                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-                }`}
+              className={`cursor-pointer rounded-xl p-3 md:p-4 transition-all duration-300 border ${
+                activeIndex === index
+                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+              }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
                 <div className="mb-0.5 md:mb-1">
@@ -514,40 +526,35 @@ const Testimonials = () => {
       id: 5,
       name: "Mr. Yousef",
       role: "Bahrain Aluminium Manufacturing Company, BIS Licensee in Bahrain",
-      content:
-        "Smooth BIS registration process with expert consultants.",
+      content: "Smooth BIS registration process with expert consultants.",
       rating: 5,
     },
     {
       id: 6,
       name: "Mr. Satoshi",
       role: "Daiki Aluminium Japan, BIS Licensee in Japan",
-      content:
-        "Efficient BIS license assistance, great consultants.",
+      content: "Efficient BIS license assistance, great consultants.",
       rating: 5,
     },
     {
       id: 7,
       name: "Ms. Amanda",
       role: "Honeywell, BIS Licensee in USA",
-      content:
-        "Professional BIS certificate guidance, very satisfied.",
+      content: "Professional BIS certificate guidance, very satisfied.",
       rating: 5,
     },
     {
       id: 8,
       name: "Ms. Amanda",
       role: "Trimble Navigation, BIS Licensee in USA",
-      content:
-        "Seamless BIS certification and registration support.",
+      content: "Seamless BIS certification and registration support.",
       rating: 5,
     },
     {
       id: 9,
       name: "Ms. Martina",
       role: "Remsa Italia, BIS Licensee in Italy",
-      content:
-        "Helpful BIS consultants, simplified license process.",
+      content: "Helpful BIS consultants, simplified license process.",
       rating: 5,
     },
     {
@@ -562,72 +569,63 @@ const Testimonials = () => {
       id: 11,
       name: "Ms. Ayu",
       role: "PT Quty, BIS Licensee in Indonesia",
-      content:
-        "Excellent BIS registration service, highly recommended.",
+      content: "Excellent BIS registration service, highly recommended.",
       rating: 5,
     },
     {
       id: 12,
       name: "Mr. Huy",
       role: "Danu Vina, BIS Licensee in Vietnam",
-      content:
-        "Reliable BIS license consultants, fast process.",
+      content: "Reliable BIS license consultants, fast process.",
       rating: 5,
     },
     {
       id: 13,
       name: "Mr. Minh",
       role: "Hanh My Production Company, BIS Licensee in Vietnam",
-      content:
-        "Expert BIS consultants, certification made easy.",
+      content: "Expert BIS consultants, certification made easy.",
       rating: 5,
     },
     {
       id: 14,
       name: "Ms. Hoa",
       role: "Sedo Vina, BIS Licensee in Vietnam",
-      content:
-        "Smooth BIS certificate registration, great support.",
+      content: "Smooth BIS certificate registration, great support.",
       rating: 5,
     },
     {
       id: 15,
       name: "Ms. Hana",
       role: "Misumi Japan, BIS Licensee in Japan",
-      content:
-        "Trusted BIS consultants, quick certification process.",
+      content: "Trusted BIS consultants, quick certification process.",
       rating: 5,
     },
     {
       id: 16,
       name: "Ms. Nok",
       role: "Thantawan Public Industry Company, BIS Licensee in Thailand",
-      content:
-        "Professional BIS certification service, very efficient.",
+      content: "Professional BIS certification service, very efficient.",
       rating: 5,
     },
     {
       id: 17,
       name: "Mr. Luis",
       role: "Cortizo Aluminios, BIS Licensee in Spain",
-      content:
-        "Excellent BIS registration and license guidance.",
+      content: "Excellent BIS registration and license guidance.",
       rating: 5,
     },
     {
       id: 18,
       name: "Ms. Aisha",
       role: "Midal Cables, BIS Licensee in Bahrain",
-      content:
-        "Expert BIS consultants, smooth certification process.",
+      content: "Expert BIS consultants, smooth certification process.",
       rating: 5,
     },
     {
       id: 19,
       name: "Ms. Aisha",
       role: "Nobilia Kitchens, BIS Licensee in Bahrain",
-      content:
-        "Reliable BIS certificate registration support.",
+      content: "Reliable BIS certificate registration support.",
       rating: 5,
     },
   ];
@@ -669,7 +667,10 @@ const Testimonials = () => {
       const pixelsPerSecond = 50; // Consistent speed: 50 pixels per second
       const duration = totalWidth / pixelsPerSecond;
 
-      containerRef.current.style.setProperty("--animation-duration", `${duration}s`);
+      containerRef.current.style.setProperty(
+        "--animation-duration",
+        `${duration}s`
+      );
     }
   };
 
@@ -693,8 +694,9 @@ const Testimonials = () => {
           className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
         >
           <div
-            className={`flex w-max gap-8 md:gap-10 py-8 hover:[animation-play-state:paused] ${start ? "animate-scroll" : ""
-              }`}
+            className={`flex w-max gap-8 md:gap-10 py-8 hover:[animation-play-state:paused] ${
+              start ? "animate-scroll" : ""
+            }`}
           >
             {duplicatedTestimonials.map((testimonial, index) => (
               <div
@@ -732,9 +734,7 @@ const Testimonials = () => {
                   <h4 className="font-geist font-bold text-neutral-800 text-lg">
                     {testimonial.name}
                   </h4>
-                  <p className="text-neutral-600 text-sm">
-                    {testimonial.role}
-                  </p>
+                  <p className="text-neutral-600 text-sm">{testimonial.role}</p>
                 </div>
               </div>
             ))}
@@ -745,7 +745,6 @@ const Testimonials = () => {
   );
 };
 
-
 const AboutUsHero = () => {
   return (
     <div className="max-w-[84rem] mx-auto px-4 md:px-12 pt-10 md:pt-12 pb-2 md:pb-3">
@@ -755,13 +754,104 @@ const AboutUsHero = () => {
           About Us
         </h1>
         <p className="text-lg md:text-xl font-geist text-neutral-600 max-w-4xl mx-auto px-4 md:px-0 leading-relaxed">
-          Sun Certifications was founded in 2013 with a view to simplify the complex regulatory compliance framework in India. For more than 10 years, we&apos;ve been empowering local and international businesses to satisfy their Indian certification and license obligations with ease – resulting in smoother market access and long-term success.
+          Sun Certifications was founded in 2013 with a view to simplify the
+          complex regulatory compliance framework in India. For more than 10
+          years, we&apos;ve been empowering local and international businesses
+          to satisfy their Indian certification and license obligations with
+          ease – resulting in smoother market access and long-term success.
         </p>
+      </div>
+
+      {/* Credentials Content - Without Headings */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
+        {/* ISO Certifications Content */}
+        <div className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
+          {/* Corner gradient */}
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4 relative z-10">
+            Sun Certification India is{" "}
+            <span className="font-semibold text-[#1A8781]">ISO 10002:2018</span>
+            ,{" "}
+            <span className="font-semibold text-[#1A8781]">
+              ISO 20000-1:2018
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold text-[#1A8781]">ISO 27001:2022</span>{" "}
+            certified, which ensures that our company provides top notch
+            information and services with high expertise in a systematized
+            manner.
+          </p>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed relative z-10">
+            We have in-detail SOP&apos;s for each task that is done to ensure
+            that the timelines are met and the clients get the best service
+            possible. We have well segmented teams with a clear hierarchy which
+            helps in clear communication and efficient and effective
+            implementation of our SOP&apos;s.
+          </p>
+        </div>
+
+        {/* International Recognition Content */}
+        <div className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
+          {/* Corner gradient */}
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-4 relative z-10">
+            We are the first Indian company to be recognized by multiple
+            bilateral chambers of commerce namely{" "}
+            <span className="font-semibold text-[#1A8781]">Indo-French</span>,{" "}
+            <span className="font-semibold text-[#1A8781]">Indo-German</span>,{" "}
+            <span className="font-semibold text-[#1A8781]">Indo-American</span>,{" "}
+            <span className="font-semibold text-[#1A8781]">
+              Indo-Vietnamese
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold text-[#1A8781]">
+              Indo-Italian Chambers of Commerce
+            </span>
+            , which serves as the benchmark or the credibility for international
+            companies looking to find a reliable Indian partner for their
+            certification work.
+          </p>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed relative z-10">
+            We have served more than{" "}
+            <span className="font-bold text-[#1A8781]">1,200 clients</span>, for
+            a total of more than{" "}
+            <span className="font-bold text-[#1A8781]">
+              4,900 certifications
+            </span>{" "}
+            in various fields, which gives an assurance of our service
+            capability and we are the world&apos;s leading consulting firm for
+            any kind of certifications required for Indian market.
+          </p>
+        </div>
+      </div>
+
+      {/* Technical Backbone Content */}
+      <div className="mb-12 md:mb-16">
+        <div className="group relative p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300 overflow-hidden">
+          {/* Corner gradients */}
+          <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#1A8781]/10 rounded-bl-full -mr-8 md:-mr-10 -mt-8 md:-mt-10 group-hover:bg-[#1A8781]/20 transition-all duration-300"></div>
+          <div className="absolute bottom-0 left-0 w-20 h-20 md:w-28 md:h-28 bg-[#1A8781]/5 rounded-tr-full -ml-6 md:-ml-8 -mb-6 md:-mb-8 group-hover:bg-[#1A8781]/10 transition-all duration-300"></div>
+
+          <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed relative z-10">
+            While we operate lean regarding internal administrative payroll, our
+            technical backbone is one of the strongest in the industry. We
+            operate as a technical hub supported by{" "}
+            <span className="font-bold text-[#1A8781]">
+              25 distinguished ex-BIS officials
+            </span>{" "}
+            retained as expert consultants. This ensures our operations meet the
+            highest regulatory standards without the administrative overhead of
+            a traditional firm.
+          </p>
+        </div>
       </div>
 
       {/* Content Sections */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
-
         {/* Who We Are */}
         <div className="p-8 md:p-10 bg-gradient-to-r from-neutral-50 to-neutral-100 rounded-lg border border-neutral-200 hover:shadow-lg transition-all duration-300">
           <div className="mb-6">
@@ -771,7 +861,13 @@ const AboutUsHero = () => {
           </div>
 
           <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-            At Sun Certifications, we understand that compliance is more than just paperwork – it&apos;s about gaining the trust of your clients, people, and businesses that you&apos;re dealing with and earning the confidence of the governments where you operate. With a staff of dedicated and talented professionals, industry veterans, and compliance experts, we have become one of the most trusted names in the regulatory consulting arena.
+            At Sun Certifications, we understand that compliance is more than
+            just paperwork – it&apos;s about gaining the trust of your clients,
+            people, and businesses that you&apos;re dealing with and earning the
+            confidence of the governments where you operate. With a staff of
+            dedicated and talented professionals, industry veterans, and
+            compliance experts, we have become one of the most trusted names in
+            the regulatory consulting arena.
           </p>
         </div>
 
@@ -784,14 +880,17 @@ const AboutUsHero = () => {
           </div>
 
           <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed">
-            Our Promise is straightforward: Prompt project completion, Clear Communication, and 100% Customer satisfaction. If you are an Indian manufacturer, importer, or an international brand entering the Indian market, we have a solution that is tailored as per your business requirements.
+            Our Promise is straightforward: Prompt project completion, Clear
+            Communication, and 100% Customer satisfaction. If you are an Indian
+            manufacturer, importer, or an international brand entering the
+            Indian market, we have a solution that is tailored as per your
+            business requirements.
           </p>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 // Our Vision Section - Standalone section component
 const OurVisionSection = () => {
@@ -806,7 +905,10 @@ const OurVisionSection = () => {
           </div>
 
           <p className="text-base md:text-lg text-neutral-600 font-geist leading-relaxed mb-6 max-w-4xl mx-auto">
-            To be the global leader in regulatory compliance consulting, making it possible for organizations to confidently extend their business into India, maintaining the highest standards of quality, safety, and trust.
+            To be the global leader in regulatory compliance consulting, making
+            it possible for organizations to confidently extend their business
+            into India, maintaining the highest standards of quality, safety,
+            and trust.
           </p>
 
           <Link
