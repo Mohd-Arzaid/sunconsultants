@@ -19,7 +19,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import AboutContact from "@/components/manual/about/AboutContact";
 
 const MinistryUpdates = () => {
@@ -143,7 +142,7 @@ const MinistryUpdates = () => {
         </div>
       </div>
 
-      <BISMinistryUpdatesMainContent />
+      <MinistryUpdatesMainContent />
       <AboutContact />
       <Footer />
     </div>
@@ -152,7 +151,7 @@ const MinistryUpdates = () => {
 
 export default MinistryUpdates;
 
-const BISMinistryUpdatesMainContent = () => {
+const MinistryUpdatesMainContent = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
@@ -195,7 +194,7 @@ const BISMinistryUpdatesMainContent = () => {
         </div>
 
         {/* Notifications */}
-        <BISNotificationCard
+        <NotificationCard
           searchQuery={searchQuery}
           currentPage={currentPage}
           itemsPerPage={itemsPerPage}
@@ -215,13 +214,14 @@ const BISMinistryUpdatesMainContent = () => {
   );
 };
 
-const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
+const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   const notifications = [
     {
       id: 1,
       color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "November 15, 2024",
+      displayDate: "12 Nov 2025",
       title: "Refined Zinc QCO Withdraw Order",
       description:
         "Quality Control Order for Refined Zinc has been withdrawn. Learn about the implications and requirements for manufacturers and importers.",
@@ -232,6 +232,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       color: "#C86A31",
       tagType: "QCO Withdraw",
       date: "November 10, 2024",
+      displayDate: "12 Nov 2025",
       title: "Aluminium and Aluminium Alloys QCO Withdraw Order",
       description:
         "The Quality Control Order for Aluminium and Aluminium Alloys has been officially withdrawn. Get complete details about the order withdrawal.",
@@ -242,6 +243,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       color: "#5B63E6",
       tagType: "QCO Withdraw",
       date: "November 8, 2024",
+      displayDate: "12 Nov 2025",
       title: "Copper QCO Withdraw Order",
       description:
         "Ministry of Consumer Affairs has withdrawn the Quality Control Order for Copper products. Read the complete notification and its impact.",
@@ -252,6 +254,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "November 5, 2024",
+      displayDate: "12 Nov 2025",
       title: "Tin Ingot QCO Withdraw Order",
       description:
         "The Quality Control Order for Tin Ingots has been withdrawn. Check out the detailed order notification and compliance requirements.",
@@ -262,6 +265,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       color: "#C86A31",
       tagType: "QCO Withdraw",
       date: "November 1, 2024",
+      displayDate: "12 Nov 2025",
       title: "Refined Nickel QCO Withdraw Order",
       description:
         "Quality Control Order for Refined Nickel products has been officially withdrawn. Stay informed about the regulatory changes.",
@@ -272,6 +276,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       color: "#5B63E6",
       tagType: "QCO Withdraw",
       date: "October 28, 2024",
+      displayDate: "12 Nov 2025",
       title: "Nickel Powder QCO Withdraw Order",
       description:
         "The QCO for Nickel Powder has been withdrawn by the Ministry. Access complete details and documentation regarding this order.",
@@ -282,6 +287,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "October 25, 2024",
+      displayDate: "12 Nov 2025",
       title: "Petrochemical and Polymer Products QCO Withdraw Order",
       description:
         "Quality Control Order for Petrochemical and Polymer Products has been withdrawn. Read the comprehensive notification and guidelines.",
@@ -292,6 +298,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       color: "#C86A31",
       tagType: "QCO Withdraw",
       date: "October 20, 2024",
+      displayDate: "12 Nov 2025",
       title: "Scheme X QCO Withdraw Order",
       description:
         "The Quality Control Order under Scheme X has been officially withdrawn. Get all the essential information about this regulatory update.",
@@ -302,6 +309,7 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
       color: "#5B63E6",
       tagType: "QCO Amendment",
       date: "January 15, 2025",
+      displayDate: "19 Nov 2025",
       title: "Steel Products Amendment 2025",
       description:
         "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
@@ -366,11 +374,13 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
       {currentItems.length > 0 ? (
         currentItems.map((notification) => (
-          <BISNotificationCardItem
+          <NotificationCardItem
             key={notification.id}
             color={notification.color}
+            tagType={notification.tagType}
             title={notification.title}
             description={notification.description}
+            displayDate={notification.displayDate}
             link={notification.link}
           />
         ))
@@ -425,22 +435,39 @@ const BISNotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
   );
 };
 
-BISNotificationCard.propTypes = {
-  searchQuery: PropTypes.string.isRequired,
-  currentPage: PropTypes.number.isRequired,
-  itemsPerPage: PropTypes.number.isRequired,
-};
-
-const BISNotificationCardItem = ({ color, title, description, link }) => {
+const NotificationCardItem = ({
+  color,
+  tagType,
+  title,
+  description,
+  displayDate,
+  link,
+}) => {
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-[0_15px_30px_-10px_rgba(0,0,0,0.1)] h-full flex flex-col">
       {/* Color-coded header bar */}
       <div className="h-3 md:h-4" style={{ backgroundColor: color }}></div>
 
       <div className="p-5 md:p-8 flex flex-col flex-grow">
+        <div className="flex items-center justify-between mb-5">
+          <span
+            className="px-4 py-1.5 font-geist font-medium text-sm rounded-full"
+            style={{
+              backgroundColor: `${color}10`,
+              color: color,
+            }}
+          >
+            {tagType}
+          </span>
+          <span className="text-gray-500 font-geist text-sm flex gap-2 items-center justify-center">
+            <span className="w-2 h-2 rounded-full bg-[#1A8781]"></span>
+            {displayDate}
+          </span>
+        </div>
+
         {/* Product title - clickable */}
         <Link to={link}>
-          <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-4 min-h-[4rem] flex items-start cursor-pointer hover:text-blue-600 transition-colors duration-200">
+          <h3 className="font-playfair text-2xl font-bold text-[#1E1E1E] mb-3 min-h-[4rem] flex items-start cursor-pointer hover:text-blue-600 transition-colors duration-200">
             {title}
           </h3>
         </Link>
@@ -478,13 +505,6 @@ const BISNotificationCardItem = ({ color, title, description, link }) => {
   );
 };
 
-BISNotificationCardItem.propTypes = {
-  color: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-};
-
 const Pagination = ({
   currentPage,
   setCurrentPage,
@@ -497,6 +517,7 @@ const Pagination = ({
       color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "November 15, 2024",
+      displayDate: "12 Nov 2025",
       title: "Refined Zinc QCO Withdraw Order",
       description:
         "Quality Control Order for Refined Zinc has been withdrawn. Learn about the implications and requirements for manufacturers and importers.",
@@ -507,6 +528,7 @@ const Pagination = ({
       color: "#C86A31",
       tagType: "QCO Withdraw",
       date: "November 10, 2024",
+      displayDate: "12 Nov 2025",
       title: "Aluminium and Aluminium Alloys QCO Withdraw Order",
       description:
         "The Quality Control Order for Aluminium and Aluminium Alloys has been officially withdrawn. Get complete details about the order withdrawal.",
@@ -517,6 +539,7 @@ const Pagination = ({
       color: "#5B63E6",
       tagType: "QCO Withdraw",
       date: "November 8, 2024",
+      displayDate: "12 Nov 2025",
       title: "Copper QCO Withdraw Order",
       description:
         "Ministry of Consumer Affairs has withdrawn the Quality Control Order for Copper products. Read the complete notification and its impact.",
@@ -527,6 +550,7 @@ const Pagination = ({
       color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "November 5, 2024",
+      displayDate: "12 Nov 2025",
       title: "Tin Ingot QCO Withdraw Order",
       description:
         "The Quality Control Order for Tin Ingots has been withdrawn. Check out the detailed order notification and compliance requirements.",
@@ -537,6 +561,7 @@ const Pagination = ({
       color: "#C86A31",
       tagType: "QCO Withdraw",
       date: "November 1, 2024",
+      displayDate: "12 Nov 2025",
       title: "Refined Nickel QCO Withdraw Order",
       description:
         "Quality Control Order for Refined Nickel products has been officially withdrawn. Stay informed about the regulatory changes.",
@@ -547,6 +572,7 @@ const Pagination = ({
       color: "#5B63E6",
       tagType: "QCO Withdraw",
       date: "October 28, 2024",
+      displayDate: "12 Nov 2025",
       title: "Nickel Powder QCO Withdraw Order",
       description:
         "The QCO for Nickel Powder has been withdrawn by the Ministry. Access complete details and documentation regarding this order.",
@@ -557,6 +583,7 @@ const Pagination = ({
       color: "#1A8781",
       tagType: "QCO Withdraw",
       date: "October 25, 2024",
+      displayDate: "12 Nov 2025",
       title: "Petrochemical and Polymer Products QCO Withdraw Order",
       description:
         "Quality Control Order for Petrochemical and Polymer Products has been withdrawn. Read the comprehensive notification and guidelines.",
@@ -567,6 +594,7 @@ const Pagination = ({
       color: "#C86A31",
       tagType: "QCO Withdraw",
       date: "October 20, 2024",
+      displayDate: "12 Nov 2025",
       title: "Scheme X QCO Withdraw Order",
       description:
         "The Quality Control Order under Scheme X has been officially withdrawn. Get all the essential information about this regulatory update.",
@@ -577,6 +605,7 @@ const Pagination = ({
       color: "#5B63E6",
       tagType: "QCO Amendment",
       date: "January 15, 2025",
+      displayDate: "19 Nov 2025",
       title: "Steel Products Amendment 2025",
       description:
         "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
@@ -748,11 +777,4 @@ const Pagination = ({
       </div>
     </div>
   );
-};
-
-Pagination.propTypes = {
-  currentPage: PropTypes.number.isRequired,
-  setCurrentPage: PropTypes.func.isRequired,
-  itemsPerPage: PropTypes.number.isRequired,
-  searchQuery: PropTypes.string,
 };
