@@ -49,8 +49,7 @@ const DieselGeneratorMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X柴油发电机认证 | 完整指南";
+  const ogTitle = "印度BIS方案X柴油发电机认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X柴油发电机认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -189,12 +188,8 @@ const DieselGeneratorMainContentLeft = () => {
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            机械和电气故障导致供电不足
-          </li>
-          <li>
-            不合规设备的高火灾和安全危险风险
-          </li>
+          <li>机械和电气故障导致供电不足</li>
+          <li>不合规设备的高火灾和安全危险风险</li>
           <li>排放过高和能源效率低下</li>
           <li>法律障碍，被排除在投标之外</li>
         </ul>
@@ -221,18 +216,12 @@ const DieselGeneratorMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>所有制造商 - 印度和外国 - 强制性要求</li>
-          <li>
-            适用于所有不同容量的柴油发电机类型
-          </li>
-          <li>
-            包括在BIS授权的实验室进行产品测试
-          </li>
+          <li>适用于所有不同容量的柴油发电机类型</li>
+          <li>包括在BIS授权的实验室进行产品测试</li>
           <li>
             工厂审计、车间访问和生产过程检查，在工厂现场进行独立检查以确保质量和安全标准。
           </li>
-          <li>
-            在获得许可时提供使用BIS标准标志的许可证
-          </li>
+          <li>在获得许可时提供使用BIS标准标志的许可证</li>
         </ul>
 
         {/* Separator Line */}
@@ -263,18 +252,10 @@ const DieselGeneratorMainContentLeft = () => {
           <li>
             安全保障：最大限度地减少机械故障，基于防火技术以防止火灾、短路和事故。
           </li>
-          <li>
-            环境合规：确保遵循节能标准和减少排放。
-          </li>
-          <li>
-            市场准入：柴油发电机OTR - 在印度销售的强制性认证
-          </li>
-          <li>
-            客户信任：BIS标准标志确保高可靠性和安全性。
-          </li>
-          <li>
-            投标资格：对于政府/PSU合同，产品必须经过认证。
-          </li>
+          <li>环境合规：确保遵循节能标准和减少排放。</li>
+          <li>市场准入：柴油发电机OTR - 在印度销售的强制性认证</li>
+          <li>客户信任：BIS标准标志确保高可靠性和安全性。</li>
+          <li>投标资格：对于政府/PSU合同，产品必须经过认证。</li>
         </ul>
 
         {/* Separator Line */}
@@ -293,13 +274,13 @@ const DieselGeneratorMainContentLeft = () => {
           <li>使用柴油的移动式家用发电机</li>
           <li>商业柴油发电机组（高容量）</li>
           <li>应急和备用电源发电机</li>
-          <li>
-            商业用静音柴油发电机组（城市应用和使用）
-          </li>
+          <li>商业用静音柴油发电机组（城市应用和使用）</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          每个子类型必须符合适用的印度标准（IS代码），如IS 16819:2018/ISO 12100:2010（机械安全设计通用原则 - 风险评估和风险降低）。每种类型必须满足各自的印度标准。
+          每个子类型必须符合适用的印度标准（IS代码），如IS 16819:2018/ISO
+          12100:2010（机械安全设计通用原则 -
+          风险评估和风险降低）。每种类型必须满足各自的印度标准。
         </p>
 
         {/* Separator Line */}
@@ -311,24 +292,12 @@ const DieselGeneratorMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            确定适用标准：查找适用于您发电机类型的IS代码。
-          </li>
-          <li>
-            产品测试：在BIS认可的实验室进行安全、性能和排放测试。
-          </li>
-          <li>
-            工厂审计：BIS官员检查制造质量控制过程。
-          </li>
-          <li>
-            提交文件：提供规格、测试结果和合规性文件。
-          </li>
-          <li>
-            颁发许可证：批准后，BIS颁发许可证并允许使用标准标志。
-          </li>
-          <li>
-            持续合规：进行审计和产品检查以确保认证保持有效。
-          </li>
+          <li>确定适用标准：查找适用于您发电机类型的IS代码。</li>
+          <li>产品测试：在BIS认可的实验室进行安全、性能和排放测试。</li>
+          <li>工厂审计：BIS官员检查制造质量控制过程。</li>
+          <li>提交文件：提供规格、测试结果和合规性文件。</li>
+          <li>颁发许可证：批准后，BIS颁发许可证并允许使用标准标志。</li>
+          <li>持续合规：进行审计和产品检查以确保认证保持有效。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -340,9 +309,7 @@ const DieselGeneratorMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            禁止销售、进口和制造未认证设备
-          </li>
+          <li>禁止销售、进口和制造未认证设备</li>
           <li>货物扣押和财务罚款</li>
           <li>不符合政府合同资格</li>
           <li>永久性的声誉和财务损害</li>
@@ -400,7 +367,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -496,7 +464,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

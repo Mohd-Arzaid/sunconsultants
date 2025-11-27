@@ -48,8 +48,7 @@ const RotaryElectricalMachinesMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X旋转电机认证 | 完整指南";
+  const ogTitle = "印度BIS方案X旋转电机认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X旋转电机认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -216,16 +215,10 @@ const RotaryElectricalMachinesMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>适用于印度和外国制造商</li>
-          <li>
-            适用于电动机、发电机、交流发电机和其他旋转电机
-          </li>
-          <li>
-            必须进行充分的产品测试、审计和合规性验证
-          </li>
+          <li>适用于电动机、发电机、交流发电机和其他旋转电机</li>
+          <li>必须进行充分的产品测试、审计和合规性验证</li>
           <li>工厂检查以确保质量控制</li>
-          <li>
-            允许制造商根据上述旋转电机的认证申请BIS注册。
-          </li>
+          <li>允许制造商根据上述旋转电机的认证申请BIS注册。</li>
         </ul>
 
         {/* Separator Line */}
@@ -253,15 +246,9 @@ const RotaryElectricalMachinesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            安全与合规：通过严格的标准避免电气和机械危险。
-          </li>
-          <li>
-            质量与可靠性：认证的旋转电机以高精度和精确度运行。
-          </li>
-          <li>
-            市场准入：旋转电机BIS许可证通常是公共机构采购所必需的。
-          </li>
+          <li>安全与合规：通过严格的标准避免电气和机械危险。</li>
+          <li>质量与可靠性：认证的旋转电机以高精度和精确度运行。</li>
+          <li>市场准入：旋转电机BIS许可证通常是公共机构采购所必需的。</li>
           <li>
             客户信任：旋转电机BIS标志向客户提供有关产品质量和耐用性的信息。
           </li>
@@ -286,13 +273,13 @@ const RotaryElectricalMachinesMainContentLeft = () => {
           <li>AC和DC电动机</li>
           <li>发电机和交流发电机</li>
           <li>涡轮发电机和水力发电机</li>
-          <li>
-            在工业和公用事业中使用的特殊类型旋转电机
-          </li>
+          <li>在工业和公用事业中使用的特殊类型旋转电机</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          所有这些类型必须满足适用的印度标准（IS代码），如IS 16819:2018/ISO 12100:2010（机械安全设计通用原则 - 风险评估和风险降低）。所有品种必须满足相应的印度标准（IS代码），涉及质量、安全性和能源效率。
+          所有这些类型必须满足适用的印度标准（IS代码），如IS 16819:2018/ISO
+          12100:2010（机械安全设计通用原则 -
+          风险评估和风险降低）。所有品种必须满足相应的印度标准（IS代码），涉及质量、安全性和能源效率。
         </p>
 
         {/* Separator Line */}
@@ -304,24 +291,14 @@ const RotaryElectricalMachinesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            确定相关标准：参考适用于您旋转电机类型的相关IS代码。
-          </li>
+          <li>确定相关标准：参考适用于您旋转电机类型的相关IS代码。</li>
           <li>
             产品测试：在BIS认可的实验室进行符合行业标准的必要性能和安全性测试。
           </li>
-          <li>
-            工厂检查：BIS官员检查生产现场的质量保证系统。
-          </li>
-          <li>
-            申请和文件：提供技术规格、质量手册和测试报告。
-          </li>
-          <li>
-            颁发旋转电机BIS许可证：批准后，您可以放置BIS标志。
-          </li>
-          <li>
-            持续合规：BIS进行检查并进行不定期审计以确保符合标准。
-          </li>
+          <li>工厂检查：BIS官员检查生产现场的质量保证系统。</li>
+          <li>申请和文件：提供技术规格、质量手册和测试报告。</li>
+          <li>颁发旋转电机BIS许可证：批准后，您可以放置BIS标志。</li>
+          <li>持续合规：BIS进行检查并进行不定期审计以确保符合标准。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -333,13 +310,9 @@ const RotaryElectricalMachinesMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            禁止销售/进口未认证的旋转电机
-          </li>
+          <li>禁止销售/进口未认证的旋转电机</li>
           <li>扣押不合规设备和货币处罚</li>
-          <li>
-            这将使您不符合政府或PSU投标的资格
-          </li>
+          <li>这将使您不符合政府或PSU投标的资格</li>
           <li>品牌价值在印度永久受到影响</li>
         </ul>
 
@@ -352,7 +325,8 @@ const RotaryElectricalMachinesMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在OTR 2024下实施BIS方案X旋转电机认证是向印度电气工业部门带来安全、效率和质量的一步。
+          在OTR
+          2024下实施BIS方案X旋转电机认证是向印度电气工业部门带来安全、效率和质量的一步。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -395,7 +369,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -491,7 +466,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

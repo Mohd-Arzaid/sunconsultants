@@ -108,19 +108,20 @@ const MainContentLeft = () => {
           A valid record will display the licensee/manufacturer name, brand,
           model/catalogue reference, IS number, and current status
           (active/suspended/expired). Match the online data with what&apos;s
-          printed on the product or packaging: identical model ID, brand, and
-          IS reference. For electronics/IT under CRS, the R‑number is usually on
+          printed on the product or packaging: identical model ID, brand, and IS
+          reference. For electronics/IT under CRS, the R‑number is usually on
           the label/packaging; for ISI, look for the ISI logo plus CM/L.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           If you cannot find a record, check spelling, try alternate model
-          strings or dashes/spaces, and request the official license/registration
-          letter from the seller. Marks without a valid entry in the database are
-          not sufficient proof. For tenders or regulatory checks, download/print
-          the verification result and file it in your QA documentation.
-          Re‑verify when adding new variants or changing components to ensure the
-          license still covers the shipped configuration.
+          strings or dashes/spaces, and request the official
+          license/registration letter from the seller. Marks without a valid
+          entry in the database are not sufficient proof. For tenders or
+          regulatory checks, download/print the verification result and file it
+          in your QA documentation. Re‑verify when adding new variants or
+          changing components to ensure the license still covers the shipped
+          configuration.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -190,7 +191,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -286,7 +288,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

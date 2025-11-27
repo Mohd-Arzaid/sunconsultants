@@ -45,7 +45,6 @@ import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng
 import FooterEng from "@/components/manual/Footer/FooterEng";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 
-
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const SchemeXEnglish = () => {
@@ -65,12 +64,11 @@ const SchemeXEnglish = () => {
       <FooterEng />
       {/* Scroll To Top Button Section */}
       <ScrollToTopButton />
-
     </div>
-  )
-}
+  );
+};
 
-export default SchemeXEnglish
+export default SchemeXEnglish;
 
 const SchemeXEnglishMetaTags = () => {
   const breadcrumbStructuredData = {
@@ -110,7 +108,6 @@ const SchemeXEnglishMetaTags = () => {
       <meta name="publisher" content="Sun Certifications India" />
       <meta name="robots" content="index, follow" />
 
-
       {/* Canonical URL */}
       <link rel="canonical" href={window.location.href} />
 
@@ -142,11 +139,9 @@ const SchemeXEnglishMetaTags = () => {
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbStructuredData)}
       </script>
-
-
     </Helmet>
-  )
-}
+  );
+};
 const SchemeXEnglishBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
@@ -163,7 +158,8 @@ const SchemeXEnglishBreadcrumb = () => {
                 <SlashIcon />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbPage>Indian Bis Certification Under Scheme-X
+                <BreadcrumbPage>
+                  Indian Bis Certification Under Scheme-X
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -171,8 +167,8 @@ const SchemeXEnglishBreadcrumb = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXEnglishHero = () => {
   return (
@@ -204,9 +200,10 @@ const SchemeXEnglishHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            BIS Scheme X Certification covers Machinery, Electrical Equipment, and Components Assemblies, and Sub-assemblies under the Omnibus Technical Regulation (OTR).
+            BIS Scheme X Certification covers Machinery, Electrical Equipment,
+            and Components Assemblies, and Sub-assemblies under the Omnibus
+            Technical Regulation (OTR).
           </p>
-
 
           <div className="flex items-center -mt-2">
             <div
@@ -234,10 +231,9 @@ const SchemeXEnglishHero = () => {
         {/* Right Side */}
         <SchemeXEnglishHeroContactForm />
       </div>
-
     </main>
-  )
-}
+  );
+};
 
 const SchemeXEnglishHeroContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -466,7 +462,6 @@ const SchemeXEnglishHeroContactForm = () => {
   );
 };
 
-
 const SchemeXEnglishIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("overview");
@@ -476,12 +471,7 @@ const SchemeXEnglishIndex = () => {
   const toggleButtonRef = useRef(null);
 
   const SECTIONS = useMemo(
-    () => [
-      "overview",
-      "process",
-      "documents",
-      "conclusion",
-    ],
+    () => ["overview", "process", "documents", "conclusion"],
     []
   );
 
@@ -573,8 +563,9 @@ const SchemeXEnglishIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -624,10 +615,11 @@ const SchemeXEnglishIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -647,18 +639,20 @@ const SchemeXEnglishIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -684,8 +678,8 @@ const SchemeXEnglishMainContent = () => {
         <Services />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const Services = () => {
   return (
@@ -717,7 +711,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -813,7 +808,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -851,7 +847,6 @@ const SchemeXProductTable = () => {
   return (
     <div className="w-full pb-12">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-
         <div className="flex flex-col gap-2 mt-6">
           <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
             Product wise Safety Standard
@@ -868,9 +863,7 @@ const SchemeXProductTable = () => {
           </div>
           <input
             type="text"
-            placeholder={
-              "Search by description or HS code..."
-            }
+            placeholder={"Search by description or HS code..."}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -884,10 +877,9 @@ const SchemeXProductTable = () => {
       <div ref={table3Ref}>
         <TypeCTable searchQuery={searchQuery} />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 const productDataTableThird = [
   {
@@ -1039,7 +1031,8 @@ const productDataTableThird = [
     description: "All types of Power Semiconductor Converter",
     hsCode: "850440",
     indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
-    title: "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements",
+    title:
+      "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements",
   },
   {
     id: 19,
@@ -1062,7 +1055,7 @@ const productDataTableThird = [
 
 const TypeCTable = ({ searchQuery }) => {
   // Filter data based on search query
-  const filteredData = productDataTableThird.filter(item => {
+  const filteredData = productDataTableThird.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1128,7 +1121,10 @@ const TypeCTable = ({ searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={5}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   No results found for &quot;{searchQuery}&quot;
                 </TableCell>
               </TableRow>
@@ -1460,7 +1456,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   const itemsPerPage = 20;
 
   // Filter data based on search query
-  const filteredData = productDataTableSecond.filter(item => {
+  const filteredData = productDataTableSecond.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1476,10 +1472,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredData.slice(
-    indexOfFirstItem,
-    indexOfLastItem
-  );
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
@@ -1543,7 +1536,10 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={3}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   No results found for &quot;{searchQuery}&quot;
                 </TableCell>
               </TableRow>
@@ -1582,64 +1578,84 @@ const SchemeXServiceFaq = () => {
   const faqData = [
     {
       question: "1. What is Scheme X under BIS certification?",
-      answer: "Scheme X is a conformity assessment scheme introduced by the Indian BIS for machinery and electrical equipment. It ensures compliance with stringent safety and technical standards as specified in the Omnibus Technical Regulation."
+      answer:
+        "Scheme X is a conformity assessment scheme introduced by the Indian BIS for machinery and electrical equipment. It ensures compliance with stringent safety and technical standards as specified in the Omnibus Technical Regulation.",
     },
     {
       question: "2. Is Scheme X different from the ISI mark certification?",
-      answer: "Yes. The ISI mark is generally for consumer goods and basic product compliance, while Scheme X applies to complex and industrial-grade products that require advanced testing and certification through a BIS certificate or BIS license."
+      answer:
+        "Yes. The ISI mark is generally for consumer goods and basic product compliance, while Scheme X applies to complex and industrial-grade products that require advanced testing and certification through a BIS certificate or BIS license.",
     },
     {
       question: "3. Who needs to apply for Scheme X certification?",
-      answer: "Manufacturers and importers of machinery and electrical equipment listed under the Omnibus Technical Regulation must apply for Scheme X and obtain a valid BIS certification to legally sell or distribute their products in India. Global manufacturers or foreign manufacturers intending to sell product in India must also comply with these regulations."
+      answer:
+        "Manufacturers and importers of machinery and electrical equipment listed under the Omnibus Technical Regulation must apply for Scheme X and obtain a valid BIS certification to legally sell or distribute their products in India. Global manufacturers or foreign manufacturers intending to sell product in India must also comply with these regulations.",
     },
     {
       question: "4. What is the cost of BIS Scheme X certification?",
-      answer: "The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at admin@bis-certifications.com."
+      answer:
+        "The cost of Scheme X includes application fees, certification fees, technical file review charges, factory inspection costs, and product testing charges. On average, it starts at ₹2,000 for application and can go up depending on product complexity. For more details contact us at admin@bis-certifications.com.",
     },
     {
       question: "5. How long does it take to get a BIS licence under Scheme X?",
-      answer: "The timeline varies depending on documentation, testing requirements, and factory inspections. Typically, it takes 4–6 weeks from the date of successful BIS registration and application submission for Indian manufacturers and 60-90 days for foreign manufacturers."
+      answer:
+        "The timeline varies depending on documentation, testing requirements, and factory inspections. Typically, it takes 4–6 weeks from the date of successful BIS registration and application submission for Indian manufacturers and 60-90 days for foreign manufacturers.",
     },
     {
       question: "6. Can MSMEs also apply for BIS certification under Scheme X?",
-      answer: "Absolutely. In fact, the Indian BIS encourages MSMEs to apply for a BIS licence or certificate of conformity under Scheme X to boost quality, compliance, and competitiveness in the industrial sector."
+      answer:
+        "Absolutely. In fact, the Indian BIS encourages MSMEs to apply for a BIS licence or certificate of conformity under Scheme X to boost quality, compliance, and competitiveness in the industrial sector.",
     },
     {
       question: "7. Is BIS certification under Scheme X mandatory for exports?",
-      answer: "No. Products manufactured exclusively for export are exempt under the Omnibus Technical Regulation. However, products meant for Indian markets must be certified under Scheme X."
+      answer:
+        "No. Products manufactured exclusively for export are exempt under the Omnibus Technical Regulation. However, products meant for Indian markets must be certified under Scheme X.",
     },
     {
       question: "8. What is the validity of the BIS license under Scheme X?",
-      answer: "A BIS licence under Scheme X is generally valid for 3-6 years and must be renewed accordingly. Renewal involves payment of the annual BIS certification fee and may require re-evaluation depending on changes in product scope or standards."
+      answer:
+        "A BIS licence under Scheme X is generally valid for 3-6 years and must be renewed accordingly. Renewal involves payment of the annual BIS certification fee and may require re-evaluation depending on changes in product scope or standards.",
     },
     {
-      question: "9. Can foreign manufacturers apply for Scheme X certification?",
-      answer: "Yes, foreign manufacturers can apply for Scheme X certification through an authorized Indian representative. The Indian BIS requires a factory inspection, which may take 3 days for foreign applicants, along with standard BIS registration and testing processes."
+      question:
+        "9. Can foreign manufacturers apply for Scheme X certification?",
+      answer:
+        "Yes, foreign manufacturers can apply for Scheme X certification through an authorized Indian representative. The Indian BIS requires a factory inspection, which may take 3 days for foreign applicants, along with standard BIS registration and testing processes.",
     },
     {
       question: "10. What is a Technical File and why is it required?",
-      answer: "A Technical File is a detailed compliance dossier required under Scheme X. It includes manufacturing processes, product details, test reports, and quality control documents. It supports the product's conformity to relevant Indian Standards during the BIS certification process."
+      answer:
+        "A Technical File is a detailed compliance dossier required under Scheme X. It includes manufacturing processes, product details, test reports, and quality control documents. It supports the product's conformity to relevant Indian Standards during the BIS certification process.",
     },
     {
-      question: "11. How is Scheme X related to the Omnibus Technical Regulation?",
-      answer: "The Omnibus Technical Regulation mandates the use of Scheme X for specific categories of machinery and electrical equipment in India. Products listed under the regulation must be certified under Scheme X to obtain a valid BIS certificate or BIS licence."
+      question:
+        "11. How is Scheme X related to the Omnibus Technical Regulation?",
+      answer:
+        "The Omnibus Technical Regulation mandates the use of Scheme X for specific categories of machinery and electrical equipment in India. Products listed under the regulation must be certified under Scheme X to obtain a valid BIS certificate or BIS licence.",
     },
     {
       question: "12. Can a BIS certificate under Scheme X be revoked?",
-      answer: "Yes. The Indian BIS can suspend or cancel a BIS licence or certificate under Scheme X if non-compliance is found during surveillance or if the product fails to meet required Indian Standards."
+      answer:
+        "Yes. The Indian BIS can suspend or cancel a BIS licence or certificate under Scheme X if non-compliance is found during surveillance or if the product fails to meet required Indian Standards.",
     },
     {
-      question: "13. What is the difference between BIS license and BIS certificate under Scheme X?",
-      answer: "A BIS license is typically issued to Indian manufacturers, while a BIS certificate of conformity (CoC) is often issued to foreign manufacturers or for specific cases. Both serve the same purpose—ensuring product compliance under Scheme X."
+      question:
+        "13. What is the difference between BIS license and BIS certificate under Scheme X?",
+      answer:
+        "A BIS license is typically issued to Indian manufacturers, while a BIS certificate of conformity (CoC) is often issued to foreign manufacturers or for specific cases. Both serve the same purpose—ensuring product compliance under Scheme X.",
     },
     {
-      question: "14. Is the ISI mark allowed for products certified under Scheme X?",
-      answer: "No. Products under Scheme X do not carry the ISI mark. Instead, they display the BIS standard mark relevant to the certification scheme, as governed by the Indian BIS."
+      question:
+        "14. Is the ISI mark allowed for products certified under Scheme X?",
+      answer:
+        "No. Products under Scheme X do not carry the ISI mark. Instead, they display the BIS standard mark relevant to the certification scheme, as governed by the Indian BIS.",
     },
     {
-      question: "How do I know if my machinery requires Scheme X certification?",
-      answer: "Check the official list in the Omnibus Technical Regulation or consult with a BIS consultant to verify if your machinery falls under mandatory Scheme X certification requirements."
-    }
+      question:
+        "How do I know if my machinery requires Scheme X certification?",
+      answer:
+        "Check the official list in the Omnibus Technical Regulation or consult with a BIS consultant to verify if your machinery falls under mandatory Scheme X certification requirements.",
+    },
   ];
 
   return (
@@ -1685,7 +1701,6 @@ const SchemeXMainContentLeft = () => {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-
         {/* Overview Section */}
         <SchemeXMainContentLeftOverviewSection />
 
@@ -1713,8 +1728,8 @@ const SchemeXMainContentLeft = () => {
         <ServiceAuthorEng />
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftConclusionSection = () => {
   return (
@@ -1725,9 +1740,7 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
-        Conclusion
-      </div>
+      <div className="service-left-content-heading-two">Conclusion</div>
 
       <p className="service-left-content-paragraph">
         The BIS Scheme-X Certification remains vital in upholding the safety,
@@ -1737,7 +1750,6 @@ const SchemeXMainContentLeftConclusionSection = () => {
         cement and mineral glass, BIS Scheme-X certification is compulsory.
       </p>
 
-
       <p className="service-left-content-paragraph">
         By fulfilling these obligations, manufacturers guarantee product
         conformity, enhance consumer confidence, as well as improve their
@@ -1745,10 +1757,9 @@ const SchemeXMainContentLeftConclusionSection = () => {
         smooth as possible, safety standards around the world are met, and the
         recognized brands gain a positive reputation.
       </p>
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftDocumentsSection = () => {
   return (
@@ -1762,7 +1773,6 @@ const SchemeXMainContentLeftDocumentsSection = () => {
       <h2 className="service-left-content-heading-two">
         Key Documents Required for BIS Scheme X Certification
       </h2>
-
 
       <p className="service-left-content-paragraph">
         To streamline the BIS certification process, manufacturers are required
@@ -1885,8 +1895,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         ]}
       />
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftProcessSection = () => {
   return (
@@ -1901,13 +1911,11 @@ const SchemeXMainContentLeftProcessSection = () => {
         Steps to Get Certified Under BIS Scheme-X
       </h2>
 
-
       <p className="service-left-content-paragraph">
         Issuing BIS Certificate under Scheme-X is a systematic activity meant to
         ensure the manufacturer has the applicable safety, quality, and
         compliance standards fulfilled. The process is as follows:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1921,12 +1929,10 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         This file serves as the technical and statistical evidence of the
         product claim substantiating to safety trace standards.
       </p>
-
 
       <p className="service-left-content-paragraph">
         During the period of inspection, the BIS officials are expected to:
@@ -1937,25 +1943,20 @@ const SchemeXMainContentLeftProcessSection = () => {
         visit.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
         This strategy maintains compliance with BIS Standard and is a
         recognition of Indian and international compliance, cornering the
         industry on consumer trust towards safety and quality.
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         Procedure for Domestic Manufacturers
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Domestic manufacturers follow a direct approach by obtaining the BIS
         License under Scheme-X. The direct steps to follow include:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1970,18 +1971,15 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         <strong>Typical Timeline:</strong> Close to 90 working days (as per BIS
         practice) are needed. This is provided there are no key
         non-conformities.
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         Procedure for Foreign Manufacturers
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Unlike domestic manufacturers, foreign manufacturers applying for a BIS
@@ -2009,17 +2007,14 @@ const SchemeXMainContentLeftProcessSection = () => {
         and the technical documentation, Independent testing sample selection.
       </p>
 
-
       <p className="service-left-content-paragraph">
         The entire process takes, based on the practices from BIS, roughly 6-7
         months.
       </p>
 
-
       <h3 className="service-left-content-heading-three">
         Key Additional Pointers for Foreign Manufacturers:
       </h3>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2028,10 +2023,9 @@ const SchemeXMainContentLeftProcessSection = () => {
           "Factory Audits: Factory audits for foreign manufacturers are comprehensive and tend to last 3 days. Also, more days are required in the case of multiple product applications being filed.",
         ]}
       />
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftOverviewSection = () => {
   // Download function for table data
@@ -2053,7 +2047,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-
       <h2 className="service-left-content-heading-two">
         Introduction to BIS Scheme X Certification
       </h2>
@@ -2068,7 +2061,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
         selling, or distributing in India.
       </p>
 
-
       <p className="service-left-content-paragraph">
         Under Scheme X, the manufacturers can apply for a BIS License or a
         Certificate of Conformity (CoC) for low voltage switch gear and control
@@ -2078,26 +2070,21 @@ const SchemeXMainContentLeftOverviewSection = () => {
         India.
       </p>
 
-
       <p className="service-left-content-paragraph">
         The certification, while promoting the product and compliance with the
         Indian Standards and Government Regulations, helps develop trust and
         confidence of the consumers in the certified products.
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         What is Scheme X Certification?
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Scheme X is a product certification scheme developed under the BIS
         Conformity Assessment Regulations, 2018 and later on, simplified under
         the BIS Conformity Assessment (Amendment) Regulations, 2022.
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         The main goal is to bring the Indian safety and quality standards to
@@ -2106,7 +2093,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
         under this scheme are subjected to rigorous scrutiny and assessment to
         prove technical, safety, as well as performance standards.
       </p>
-
 
       <p className="service-left-content-paragraph">
         Provisions under the original scope of Scheme X Certification have been
@@ -2119,7 +2105,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
         rotary electrical machines, transformers, and switchgear and control
         gear.
       </p>
-
 
       <p className="service-left-content-paragraph">
         Assemblies, sub-assemblies and components of such machinery or equipment
@@ -2135,11 +2120,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         technical standards.
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         Omnibus Technical Regulation (OTR)
       </h2>
-
 
       <p className="service-left-content-paragraph">
         The Ministry of Heavy Industries released the &ldquo;Omnibus Technical
@@ -2149,7 +2132,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
         compliance of machinery, electrical equipment and their assemblies, sub
         assemblies and components, under Scheme X of the BIS Regulation, 2016.
       </p>
-
 
       <p className="service-left-content-paragraph">
         Under the OTR, all categories of machinery and electrical equipment, and
@@ -2165,13 +2147,10 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         These exceptions are made to facilitate compliance and avoid unnecessary
         duplication of regulation in order to promote ease of doing business.
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         The Omnibus Technical Regulation, 2024 covers all machinery and
@@ -2182,11 +2161,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         enough to modify their operations as per the Orders issued.
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         BIS Certification under the Omnibus Technical Regulation
       </h2>
-
 
       <p className="service-left-content-paragraph">
         As per the OTR 2024, manufacturers, as well as importers, of machinery
@@ -2195,17 +2172,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
         Certification under Scheme X.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
         Under Scheme X, manufacturers can opt to apply for:
       </p>
 
-
       <PointsListWithoutHeading
         points={["A BIS Licence, or", "A Certificate of Conformity (CoC)"]}
       />
-
 
       <p className="service-left-content-paragraph">
         Products bearing the BIS Standard Mark which is a Mark of Conformity
@@ -2214,11 +2187,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         good performance.
       </p>
 
-
       <div className="service-left-content-heading-three">
         Special Note for MSMEs
       </div>
-
 
       <p className="service-left-content-paragraph">
         As with many other sectors, Micro, Small, and Medium Enterprises (MSMEs)
@@ -2229,7 +2200,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
         reasons:
       </p>
 
-
       <PointsListWithoutHeading
         points={[
           "Proves adherence to legal and other requisite obligations set by the government.",
@@ -2239,19 +2209,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h2 className="service-left-content-heading-three">
-        BIS Scheme X Logo
-      </h2>
-
-
+      <h2 className="service-left-content-heading-three">BIS Scheme X Logo</h2>
 
       <p className="service-left-content-paragraph">
         The BIS standard mark of Scheme X forms a quality mark and a principle
         of trust. The Logo contains:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2260,14 +2223,11 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <p className="service-left-content-paragraph">
         This mark signifies that a BIS Licence has been successfully issued to
         the manufacturer. It entitles the manufacturer to place the BIS Mark and
         assures the consumers that the product is authentic and safe.
       </p>
-
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
@@ -2278,11 +2238,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-
       <div className="service-left-content-heading-three">
         Legal Implications
       </div>
-
 
       <p className="service-left-content-paragraph">
         BIS Standard Mark is a mark of trust and quality. The mark is only
@@ -2294,13 +2252,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         that have no BIS certification.
       </p>
 
-
-
-
       <p className="service-left-content-paragraph">
         It follows that every producer is obliged to:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2310,24 +2264,17 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         This regulatory framework is extended to protect the interests of
         consumers and business people, fostering a market that emphasizes
         safety, openness, and confidence.
       </p>
 
-
-
       <h2 className="service-left-content-heading-three">
         Key Differences Between Scheme-I and Scheme-X
       </h2>
 
-
-      <h3 className="service-left-content-heading-three">
-        Scheme-I
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Scheme-I</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2338,9 +2285,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
-        Scheme-X
-      </h3>
+      <h3 className="service-left-content-heading-three">Scheme-X</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2426,18 +2371,14 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-
       <h2 className="service-left-content-heading-three">
         Products Covered by Scheme-X
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Scheme-X covers products with the highest risk to safety and
         performance, including:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2450,7 +2391,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
       {/* Scheme X Product Table 20 */}
       <div className="mt-[16px] md:mt-[24px]">
-
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
@@ -2493,8 +2433,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-compressors"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of compressors and(or)their assemblies /sub-assemblies
-                  /components
+                  All types of compressors and(or)their assemblies
+                  /sub-assemblies /components
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2549,8 +2489,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-packing-machinery"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of machinery for filling, closing, sealing, labelling
-                  bottles, packing or wrapping and(or)their
+                  All types of machinery for filling, closing, sealing,
+                  labelling bottles, packing or wrapping and(or)their
                   assemblies/sub-assemblies/components
                 </Link>
               </TableCell>
@@ -2585,8 +2525,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-construction-machinery"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of machinery for construction, earthmoving, Mining and
-                  (or)their assemblies /sub-assemblies/components
+                  All types of machinery for construction, earthmoving, Mining
+                  and (or)their assemblies /sub-assemblies/components
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2690,8 +2630,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of Machines including the machines for public works &
-                  building and the machinery & mechanical appliances having
+                  All types of Machines including the machines for public works
+                  & building and the machinery & mechanical appliances having
                   individual functions, not specified Or included elsewhere in
                   Chapter 84 and(or)their assemblies/sub-assemblies /components
                 </Link>
@@ -2709,10 +2649,10 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of gears and gearing, toothed wheels, chain sprocket,
-                  transmission elements ball or roller screws, gear boxes and
-                  speed changers, including torque converters And (or)their
-                  assemblies /sub-assemblies /components
+                  All types of gears and gearing, toothed wheels, chain
+                  sprocket, transmission elements ball or roller screws, gear
+                  boxes and speed changers, including torque converters And
+                  (or)their assemblies /sub-assemblies /components
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2728,8 +2668,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-rotary-electrical-machines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of Rotary electrical machines such as Generator, etc.
-                  and (or) their assemblies /sub-assemblies /components
+                  All types of Rotary electrical machines such as Generator,
+                  etc. and (or) their assemblies /sub-assemblies /components
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2797,8 +2737,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of switch gear and control gear equipment operating at
-                  voltages not exceeding 1000 volts and (or)their assemblies
+                  All types of switch gear and control gear equipment operating
+                  at voltages not exceeding 1000 volts and (or)their assemblies
                   /sub-assemblies /components
                 </Link>
               </TableCell>
@@ -2815,8 +2755,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of switch gear and control gear equipment operating at
-                  voltages exceeding 1000 volts and (or) their assemblies
+                  All types of switch gear and control gear equipment operating
+                  at voltages exceeding 1000 volts and (or) their assemblies
                   /sub-assemblies /components
                 </Link>
               </TableCell>
@@ -2865,8 +2805,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
         Safety Standards Under BIS Scheme - X
       </h2>
 
-
-
       <p className="service-left-content-paragraph">
         More than simply a legal necessity, the BIS Scheme - X Certification
         offers a promise of safety, quality, and reliability. This
@@ -2876,13 +2814,10 @@ const SchemeXMainContentLeftOverviewSection = () => {
         sound.
       </p>
 
-
       <p className="service-left-content-paragraph">
         To certify under Scheme - X, manufacturers need to comply with the
         following major safety components:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2894,23 +2829,16 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <h2 className="service-left-content-heading-three">
         Regulatory Standards Under Scheme-X
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Manufacturers are required to comply with the Relevant Indian Standards
         which are aligned with the International Standards, including:
       </p>
 
-
-      <h3 className="service-left-content-heading-three">
-        Type A Standards:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type A Standards:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2918,11 +2846,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        Type B Standards:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type B Standards:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2930,33 +2854,24 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
-      <h3 className="service-left-content-heading-three">
-        Type C Standards:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type C Standards:</h3>
 
       <PointsListWithoutHeading
         points={["Described in the Third Schedule of the OTR Order, 2024."]}
       />
 
-
       <h3 className="service-left-content-heading-three">
         IS/IEC 60947 Series:
       </h3>
 
-
       <PointsListWithoutHeading
         points={[
           "Cover low voltage switchgear and control gear in multiple parts and sections.",
-        ]} />
+        ]}
+      />
     </div>
-  )
-}
-
-
-
+  );
+};
 
 const PointsListWithoutHeading = ({ points }) => {
   return (

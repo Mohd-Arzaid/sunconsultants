@@ -111,7 +111,8 @@ const FooterKorean = () => {
               >
                 <img
                   src="/company-logo/company-logo.webp"
-                  alt="Sun Certifications India"
+                  alt="Sun Certifications India logo"
+                  title="Sun Certifications India logo"
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />
                 <Link to="/" className="text-center">

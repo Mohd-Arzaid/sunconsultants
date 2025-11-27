@@ -46,7 +46,8 @@ const PumpsAndLiquidElevatorsMetaTags = () => {
     "การรับรอง BIS สำหรับปั๊ม, การรับรอง BIS Scheme X สำหรับปั๊ม, การรับรอง Scheme X สำหรับปั๊ม, BIS สำหรับปั๊ม, การรับรอง BIS สำหรับปั๊มและลิฟต์ของเหลว, OTR สำหรับปั๊ม";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
-  const publisher = "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
   const ogTitle =
     "การรับรอง BIS Scheme X สำหรับปั๊มและลิฟต์ของเหลวในอินเดีย | คู่มือฉบับสมบูรณ์";
   const ogDescription =
@@ -219,16 +220,14 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
           มีความสำคัญอย่างยิ่งสำหรับทรัพยากรน้ำ เกษตรกรรม การก่อสร้าง พลังงาน
           อุตสาหกรรม และภาคส่วนอื่นๆ อีกมากมาย อุปกรณ์ที่ชำรุดสามารถ
           สร้างความเสี่ยงต่อความปลอดภัย รบกวนการดำเนินงาน และสร้างความสูญเสีย
-          ทางการเงินหากไม่ผลิตตามข้อกำหนดที่ถูกต้องด้วย
-          การควบคุมคุณภาพที่มีอยู่
+          ทางการเงินหากไม่ผลิตตามข้อกำหนดที่ถูกต้องด้วย การควบคุมคุณภาพที่มีอยู่
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          เพื่อควบคุมสิ่งนี้ BIS (สำนักงานมาตรฐานอินเดีย) ได้
-          เปิดตัวการรับรอง Scheme X ซึ่งกำหนดให้ปั๊มและ
-          ลิฟต์ของเหลวทุกตัวต้องเป็นไปตามมาตรฐานคุณภาพแห่งชาติก่อนขายใน
-          อินเดีย
+          เพื่อควบคุมสิ่งนี้ BIS (สำนักงานมาตรฐานอินเดีย) ได้ เปิดตัวการรับรอง
+          Scheme X ซึ่งกำหนดให้ปั๊มและ
+          ลิฟต์ของเหลวทุกตัวต้องเป็นไปตามมาตรฐานคุณภาพแห่งชาติก่อนขายใน อินเดีย
         </p>
 
         {/* Introduction Paragraph 3 */}
@@ -269,8 +268,7 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ปั๊มยก ลิฟต์ของเหลวแนวตั้งสำหรับยกของเหลว
-          ทำงานสำหรับการสูบ:
+          ปั๊มยก ลิฟต์ของเหลวแนวตั้งสำหรับยกของเหลว ทำงานสำหรับการสูบ:
         </p>
 
         {/* Liquid Elevators Usage Areas */}
@@ -312,9 +310,9 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-6">
           สำนักงานมาตรฐานอินเดีย (BIS) เป็นหน่วยงานมาตรฐานแห่งชาติ
           ของอินเดียสำหรับการรับรองคุณภาพและความปลอดภัยของผลิตภัณฑ์ เพื่อ
-          ควบคุมการติดตั้งและเครื่องจักรที่สำคัญ BIS ได้กำหนดให้
-          ได้รับการรับรอง Scheme X ตั้งแต่ 16 มีนาคม 2022 ภายใต้ข้อบังคับ
-          การประเมินความสอดคล้อง BIS พ.ศ. 2561
+          ควบคุมการติดตั้งและเครื่องจักรที่สำคัญ BIS ได้กำหนดให้ ได้รับการรับรอง
+          Scheme X ตั้งแต่ 16 มีนาคม 2022 ภายใต้ข้อบังคับ การประเมินความสอดคล้อง
+          BIS พ.ศ. 2561
         </p>
 
         {/* Scheme X Key Highlights */}
@@ -325,12 +323,11 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>เป็นข้อบังคับสำหรับผู้ผลิตอินเดียและต่างประเทศ</li>
           <li>
-            ใช้กับปั๊ม มอเตอร์ และลิฟต์ของเหลวที่ครอบคลุมภายใต้
-            มาตรฐานอินเดีย
+            ใช้กับปั๊ม มอเตอร์ และลิฟต์ของเหลวที่ครอบคลุมภายใต้ มาตรฐานอินเดีย
           </li>
           <li>
-            รวมถึงการทดสอบในห้องปฏิบัติการ การตรวจสอบโรงงาน การตรวจสอบการปฏิบัติตาม
-            ที่สม่ำเสมอ
+            รวมถึงการทดสอบในห้องปฏิบัติการ การตรวจสอบโรงงาน
+            การตรวจสอบการปฏิบัติตาม ที่สม่ำเสมอ
           </li>
           <li>
             เพิ่มความแข็งแกร่งทางกฎหมายเพื่อให้สิทธิ์ในการใช้เครื่องหมาย BIS
@@ -348,8 +345,7 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           OTR 2024 ได้ถูกประกาศโดยกระทรวงอุตสาหกรรมหนัก ซึ่ง
-          กำหนดให้ปั๊มและลิฟต์ของเหลวทั้งหมดปฏิบัติตาม
-          การรับรอง Scheme X
+          กำหนดให้ปั๊มและลิฟต์ของเหลวทั้งหมดปฏิบัติตาม การรับรอง Scheme X
         </p>
 
         <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -404,7 +400,8 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           4. แบรนด์ระดับโลกได้รับสิทธิ์เข้าถึงตลาดได้ง่าย: OEM ต่างประเทศได้รับ
-          สิทธิ์เข้าถึงตลาดที่ถูกควบคุมของอินเดียได้ง่ายโดยการปฏิบัติตามมาตรฐาน Scheme X
+          สิทธิ์เข้าถึงตลาดที่ถูกควบคุมของอินเดียได้ง่ายโดยการปฏิบัติตามมาตรฐาน
+          Scheme X
         </p>
 
         {/* Separator Line */}
@@ -432,8 +429,8 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          แต่ละประเภทต้องปฏิบัติตามมาตรฐานอินเดียที่เกี่ยวข้อง (รหัส IS)
-          เช่น IS 16819:2018/ISO 12100:2010 (ความปลอดภัยของเครื่องจักร - หลักการทั่วไป
+          แต่ละประเภทต้องปฏิบัติตามมาตรฐานอินเดียที่เกี่ยวข้อง (รหัส IS) เช่น IS
+          16819:2018/ISO 12100:2010 (ความปลอดภัยของเครื่องจักร - หลักการทั่วไป
           สำหรับการออกแบบ - การประเมินความเสี่ยงและการลดความเสี่ยง)
         </p>
 
@@ -457,12 +454,13 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          ระบุมาตรฐานที่ใช้บังคับ: การอ้างอิงต้องระบุรหัส IS
-          ที่เกี่ยวข้อง (เช่น IS 9079 สำหรับปั๊มจุ่ม)
+          ระบุมาตรฐานที่ใช้บังคับ: การอ้างอิงต้องระบุรหัส IS ที่เกี่ยวข้อง (เช่น
+          IS 9079 สำหรับปั๊มจุ่ม)
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          การทดสอบผลิตภัณฑ์: การทดสอบประสิทธิภาพและความปลอดภัยเป็นข้อบังคับในห้องปฏิบัติการ
+          การทดสอบผลิตภัณฑ์:
+          การทดสอบประสิทธิภาพและความปลอดภัยเป็นข้อบังคับในห้องปฏิบัติการ
           ที่ได้รับการยอมรับจาก BIS
         </p>
 
@@ -511,16 +509,15 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
 
         {/* Conclusion Section */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          <span className="font-medium text-[#1e1e1e]">สรุป:</span>{" "}
-          การรับรอง BIS Scheme X สำหรับปั๊มและลิฟต์ของเหลวด้วย OTR
-          2024 จะถูกนำมาใช้; เป็นก้าวสำคัญในการมาตรฐานอุตสาหกรรม
-          อินเดีย
+          <span className="font-medium text-[#1e1e1e]">สรุป:</span> การรับรอง
+          BIS Scheme X สำหรับปั๊มและลิฟต์ของเหลวด้วย OTR 2024 จะถูกนำมาใช้;
+          เป็นก้าวสำคัญในการมาตรฐานอุตสาหกรรม อินเดีย
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          สำหรับผู้ที่มีกิจกรรมการผลิต การนำเข้า หรือการส่งออก
-          การลงทะเบียน BIS สำหรับปั๊มไม่ใช่แค่กระบวนการปฏิบัติตามกฎหมายที่
-          ต้องทำให้เสร็จ แต่ยังเป็นการตัดสินใจเชิงกลยุทธ์เพื่อให้แน่ใจ
+          สำหรับผู้ที่มีกิจกรรมการผลิต การนำเข้า หรือการส่งออก การลงทะเบียน BIS
+          สำหรับปั๊มไม่ใช่แค่กระบวนการปฏิบัติตามกฎหมายที่ ต้องทำให้เสร็จ
+          แต่ยังเป็นการตัดสินใจเชิงกลยุทธ์เพื่อให้แน่ใจ
           ว่าความปลอดภัยเหนือความเสี่ยงที่อาจเกิดขึ้น สร้างความเชื่อมั่น
           ของลูกค้า และเข้าสู่ตลาดอินเดียที่ขยายตัว
         </p>
@@ -566,7 +563,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -662,7 +660,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

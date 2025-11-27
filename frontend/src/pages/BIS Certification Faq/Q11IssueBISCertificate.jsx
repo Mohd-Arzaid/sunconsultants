@@ -96,11 +96,11 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Who can issue bis certificate is a frequent question for brands and
-          manufacturers navigating Indian conformity routes. Begin by identifying
-          the applicable Indian Standard (IS) and confirming whether your
-          product falls under the ISI Scheme (license with surveillance) or the
-          Compulsory Registration Scheme (CRS) used for electronics/IT. Build a
-          simple scope table with models/variants, ratings, and critical
+          manufacturers navigating Indian conformity routes. Begin by
+          identifying the applicable Indian Standard (IS) and confirming whether
+          your product falls under the ISI Scheme (license with surveillance) or
+          the Compulsory Registration Scheme (CRS) used for electronics/IT.
+          Build a simple scope table with models/variants, ratings, and critical
           components—this improves test planning and documentation accuracy.
         </p>
 
@@ -116,10 +116,10 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           While testing is underway, complete application forms, brand
           authorizations, and—if you are an overseas manufacturer—appoint an
-          Authorized Indian Representative (AIR). For CRS, you submit lab reports
-          and documents through the portal to obtain a Registration (R‑number).
-          For ISI, expect a factory audit, ongoing surveillance, and marking
-          control procedures.
+          Authorized Indian Representative (AIR). For CRS, you submit lab
+          reports and documents through the portal to obtain a Registration
+          (R‑number). For ISI, expect a factory audit, ongoing surveillance, and
+          marking control procedures.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -198,7 +198,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -294,7 +295,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

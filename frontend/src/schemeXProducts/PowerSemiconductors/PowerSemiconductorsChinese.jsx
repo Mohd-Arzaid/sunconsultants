@@ -48,8 +48,7 @@ const PowerSemiconductorsMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X功率半导体转换器认证 | 完整指南";
+  const ogTitle = "印度BIS方案X功率半导体转换器认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X功率半导体转换器认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -216,13 +215,9 @@ const PowerSemiconductorsMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
           <li>对所有外国和印度制造商都是强制性的</li>
-          <li>
-            涵盖功率半导体器件的全面介绍、栅极驱动设计和无源组件。
-          </li>
+          <li>涵盖功率半导体器件的全面介绍、栅极驱动设计和无源组件。</li>
           <li>必须在BIS认可的实验室进行产品测试</li>
-          <li>
-            被排除在城市工程、项目和政府投标之外。
-          </li>
+          <li>被排除在城市工程、项目和政府投标之外。</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -247,16 +242,10 @@ const PowerSemiconductorsMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>对印度和外国制造商都是强制性的</li>
-          <li>
-            涵盖各种功率半导体应用（AC-DC、DC-DC、DC-AC和AC-AC）
-          </li>
-          <li>
-            要求由BIS批准的实验室进行功率和安全性认证
-          </li>
+          <li>涵盖各种功率半导体应用（AC-DC、DC-DC、DC-AC和AC-AC）</li>
+          <li>要求由BIS批准的实验室进行功率和安全性认证</li>
           <li>包括工厂审计和质量系统</li>
-          <li>
-            如果产品也获得BIS许可，则有权使用BIS标准标志。
-          </li>
+          <li>如果产品也获得BIS许可，则有权使用BIS标准标志。</li>
         </ul>
 
         {/* Separator Line */}
@@ -284,21 +273,11 @@ const PowerSemiconductorsMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            产品安全：降低过热、火灾事故和短路的风险。
-          </li>
-          <li>
-            能源效率：确保优化的性能和符合节能标准。
-          </li>
-          <li>
-            市场准入：功率半导体转换器OTR要求在印度市场准入时进行认证。
-          </li>
-          <li>
-            竞争优势：政府和私人投标更倾向于认证产品。
-          </li>
-          <li>
-            客户信任：BIS标准标志表明可靠性、安全性和质量。
-          </li>
+          <li>产品安全：降低过热、火灾事故和短路的风险。</li>
+          <li>能源效率：确保优化的性能和符合节能标准。</li>
+          <li>市场准入：功率半导体转换器OTR要求在印度市场准入时进行认证。</li>
+          <li>竞争优势：政府和私人投标更倾向于认证产品。</li>
+          <li>客户信任：BIS标准标志表明可靠性、安全性和质量。</li>
         </ul>
 
         {/* Separator Line */}
@@ -310,24 +289,14 @@ const PowerSemiconductorsMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            确定相关的IS标准：参考适用于您转换器类型的相关IS代码。
-          </li>
+          <li>确定相关的IS标准：参考适用于您转换器类型的相关IS代码。</li>
           <li>
             产品测试：在BIS认可的实验室进行符合行业标准的必要性能和安全性测试。
           </li>
-          <li>
-            工厂检查：BIS官员检查生产现场的质量保证系统。
-          </li>
-          <li>
-            申请和文件：提供技术规格、质量手册和测试报告。
-          </li>
-          <li>
-            颁发功率半导体转换器BIS许可证：批准后，您可以放置BIS标志。
-          </li>
-          <li>
-            持续合规：BIS进行检查并进行不定期审计以确保符合标准。
-          </li>
+          <li>工厂检查：BIS官员检查生产现场的质量保证系统。</li>
+          <li>申请和文件：提供技术规格、质量手册和测试报告。</li>
+          <li>颁发功率半导体转换器BIS许可证：批准后，您可以放置BIS标志。</li>
+          <li>持续合规：BIS进行检查并进行不定期审计以确保符合标准。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -341,9 +310,7 @@ const PowerSemiconductorsMainContentLeft = () => {
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>禁止销售/进口未认证的转换器</li>
           <li>扣押不合规设备和货币处罚</li>
-          <li>
-            这将使您不符合政府或PSU投标的资格
-          </li>
+          <li>这将使您不符合政府或PSU投标的资格</li>
           <li>品牌价值在印度永久受到影响</li>
         </ul>
 
@@ -356,7 +323,8 @@ const PowerSemiconductorsMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在OTR 2024下实施BIS方案X功率半导体转换器认证是向印度快速发展的能源和电子行业带来安全、效率和质量的一步。
+          在OTR
+          2024下实施BIS方案X功率半导体转换器认证是向印度快速发展的能源和电子行业带来安全、效率和质量的一步。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -399,7 +367,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -495,7 +464,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

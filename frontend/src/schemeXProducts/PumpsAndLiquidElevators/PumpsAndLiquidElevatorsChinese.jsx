@@ -46,9 +46,9 @@ const PumpsAndLiquidElevatorsMetaTags = () => {
     "泵BIS认证, 泵BIS方案X认证, 泵方案X认证, 泵BIS, 泵和液体提升机BIS认证, 泵OTR";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
-  const publisher = "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X泵和液体提升机认证 | 完整指南";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+  const ogTitle = "印度BIS方案X泵和液体提升机认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X泵和液体提升机认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -279,9 +279,7 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
           <li>机械故障</li>
           <li>电气危险</li>
           <li>泄漏和腐蚀</li>
-          <li>
-            由安全风险和经济损失引起的事故
-          </li>
+          <li>由安全风险和经济损失引起的事故</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -307,15 +305,9 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>对印度和外国制造商都是强制性的</li>
-          <li>
-            适用于印度标准下涵盖的泵、电机和液体提升机
-          </li>
-          <li>
-            包括实验室测试、工厂检查、持续合规性验证
-          </li>
-          <li>
-            为制造商使用泵的BIS标志作为认证证明提供法律效力。
-          </li>
+          <li>适用于印度标准下涵盖的泵、电机和液体提升机</li>
+          <li>包括实验室测试、工厂检查、持续合规性验证</li>
+          <li>为制造商使用泵的BIS标志作为认证证明提供法律效力。</li>
         </ul>
 
         {/* Separator Line */}
@@ -356,17 +348,11 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
           <li>机械损坏和故障</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          2. 市场优势
-        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">2. 市场优势</p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>
-            BIS认证的泵通常是公共项目、政府投标等所必需的。
-          </li>
-          <li>
-            与未认证产品相比提供竞争优势。
-          </li>
+          <li>BIS认证的泵通常是公共项目、政府投标等所必需的。</li>
+          <li>与未认证产品相比提供竞争优势。</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -374,7 +360,8 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          4. 全球品牌获得轻松的市场准入：外国OEM通过遵守方案X标准可以轻松进入受监管的印度市场。
+          4.
+          全球品牌获得轻松的市场准入：外国OEM通过遵守方案X标准可以轻松进入受监管的印度市场。
         </p>
 
         {/* Separator Line */}
@@ -402,7 +389,8 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          每种类型必须遵守相关的印度标准（IS代码），如IS 16819:2018/ISO 12100:2010（机械安全 - 设计通用原则 - 风险评估和风险降低）。
+          每种类型必须遵守相关的印度标准（IS代码），如IS 16819:2018/ISO
+          12100:2010（机械安全 - 设计通用原则 - 风险评估和风险降低）。
         </p>
 
         <div className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -473,7 +461,8 @@ const PumpsAndLiquidElevatorsMainContentLeft = () => {
         {/* Conclusion Section */}
         <p className="text-gray-600 text-base font-geist mb-4">
           <span className="font-medium text-[#1e1e1e]">结论：</span>{" "}
-          泵和液体提升机的BIS方案X认证与OTR 2024将被实施；这是印度工业标准化的一个里程碑。
+          泵和液体提升机的BIS方案X认证与OTR
+          2024将被实施；这是印度工业标准化的一个里程碑。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -520,7 +509,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -616,7 +606,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS"
+                alt="BIS Logo"
+                title="BIS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

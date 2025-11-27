@@ -35,35 +35,36 @@ const Navbar = () => {
 
   // Handle FAQ navigation with smooth scrolling
   const handleFaqNavigation = (link) => {
-    if (link.includes('#faqs')) {
-      const [pathname, hash] = link.split('#');
+    if (link.includes("#faqs")) {
+      const [pathname, hash] = link.split("#");
 
       // Navigate to the pathname without hash in URL
       navigate(pathname);
 
       // Store the hash for later use
-      sessionStorage.setItem('scrollToHash', hash);
+      sessionStorage.setItem("scrollToHash", hash);
 
       // Multiple robust scroll strategies
       const scrollToFaq = () => {
         const element = document.getElementById(hash);
         if (element) {
           // Clear the stored hash since we found the element
-          sessionStorage.removeItem('scrollToHash');
+          sessionStorage.removeItem("scrollToHash");
 
           // Scroll to element with multiple fallback methods
           element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            behavior: "smooth",
+            block: "start",
           });
 
           // Fallback method 1: Use window.scrollTo
           setTimeout(() => {
             const rect = element.getBoundingClientRect();
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollTop =
+              window.pageYOffset || document.documentElement.scrollTop;
             window.scrollTo({
               top: scrollTop + rect.top - 80, // 80px offset for navbar
-              behavior: 'smooth'
+              behavior: "smooth",
             });
           }, 100);
 
@@ -79,10 +80,10 @@ const Navbar = () => {
       setTimeout(() => {
         if (!scrollToFaq()) {
           // Strategy 3: Wait for all resources to load
-          if (document.readyState === 'complete') {
+          if (document.readyState === "complete") {
             scrollToFaq();
           } else {
-            window.addEventListener('load', scrollToFaq, { once: true });
+            window.addEventListener("load", scrollToFaq, { once: true });
           }
         }
       }, 500);
@@ -128,15 +129,15 @@ const Navbar = () => {
   // Handle automatic scrolling on page load if hash exists
   useEffect(() => {
     const handleHashScroll = () => {
-      const hash = sessionStorage.getItem('scrollToHash');
+      const hash = sessionStorage.getItem("scrollToHash");
       if (hash) {
         const element = document.getElementById(hash);
         if (element) {
-          sessionStorage.removeItem('scrollToHash');
+          sessionStorage.removeItem("scrollToHash");
           setTimeout(() => {
             element.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
+              behavior: "smooth",
+              block: "start",
             });
           }, 300);
         }
@@ -147,10 +148,10 @@ const Navbar = () => {
     handleHashScroll();
 
     // Also listen for navigation changes
-    window.addEventListener('popstate', handleHashScroll);
+    window.addEventListener("popstate", handleHashScroll);
 
     return () => {
-      window.removeEventListener('popstate', handleHashScroll);
+      window.removeEventListener("popstate", handleHashScroll);
     };
   }, []);
 
@@ -245,6 +246,7 @@ const Navbar = () => {
           <img
             src="/company-logo/company-logo.webp"
             alt="Sun Certifications India logo"
+            title="Sun Certifications India logo"
             className="w-10 h-10 md:w-12 md:h-12"
             loading="eager"
             decoding="async"
@@ -428,7 +430,7 @@ const Navbar = () => {
                   <div className="ml-4 mt-2 space-y-1">
                     {items.map((item) => {
                       // Special handling for FAQ items
-                      if (title === "FAQs" && item.link.includes('#faqs')) {
+                      if (title === "FAQs" && item.link.includes("#faqs")) {
                         return (
                           <button
                             key={item.id}

@@ -1987,9 +1987,10 @@ export const ServicesGerman = () => {
                     >
                         <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
                             <img
-                                src={BISImage}
-                                alt="BIS"
-                                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+                src={BISImage}
+                alt="BIS Logo"
+                title="BIS Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
@@ -2083,9 +2084,10 @@ export const ServicesGerman = () => {
                     >
                         <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
                             <img
-                                src={BISImage}
-                                alt="BIS"
-                                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+                src={BISImage}
+                alt="BIS Logo"
+                title="BIS Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
                             />
                         </div>
                         <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
