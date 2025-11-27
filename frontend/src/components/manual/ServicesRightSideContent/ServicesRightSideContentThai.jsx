@@ -30,6 +30,8 @@ const ServicesRightSideContentThai = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
+    // BISFM (Foreign Manufacturers) Thai Page Url
+    "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
     "/what-is-crs-bis-or-crs-registration",
     "/kan-rap-rong-bis-nai-prathet-thai",
     "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
@@ -642,50 +644,56 @@ const ContactFormServicesRightSideContentThai = () => {
       return "Heat Treatment Equipment - Thai Page";
     if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-mue"))
       return "Machine Tools - Thai Page";
-    if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak")
-    )
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak"))
       return "Metal Cutting Machines - Thai Page";
-    if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-pack")
-    )
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-pack"))
       return "Packing Machinery - Thai Page";
     if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-ploy-phalang-bandojeo")
+      path.includes(
+        "/kan-rap-rong-bis-phaen-x-samrab-khrueang-ploy-phalang-bandojeo"
+      )
     )
       return "Power Semiconductors - Thai Page";
     if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-ngan-satharana-lae-uppakon-kai")
+      path.includes(
+        "/kan-rap-rong-bis-phaen-x-samrab-ngan-satharana-lae-uppakon-kai"
+      )
     )
       return "Public Works and Mechanical - Thai Page";
-    if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam")
-    )
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam"))
       return "Pumps and Liquid Elevators - Thai Page";
-    if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-fai-fa-kai")
-    )
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-fai-fa-kai"))
       return "Rotary Electrical Machines - Thai Page";
     if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-yang-yu-lae-plastik")
+      path.includes(
+        "/kan-rap-rong-bis-phaen-x-samrab-khrueang-yang-yu-lae-plastik"
+      )
     )
       return "Rubber and Plastics Machinery - Thai Page";
     if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-sut-1000-volt")
+      path.includes(
+        "/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-sut-1000-volt"
+      )
     )
       return "Switchgear and Controlgear Equipment - Thai Page";
     if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-kwa-1000-volt")
+      path.includes(
+        "/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-kwa-1000-volt"
+      )
     )
       return "Switchgear and Controlgear Equipment Above 1000 Volts - Thai Page";
-    if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-transformer")
-    )
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-transformer"))
       return "Transformers - Thai Page";
-    if (
-      path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-tan")
-    )
+    if (path.includes("/kan-rap-rong-bis-phaen-x-samrab-khrueang-tan"))
       return "Weaving Machines - Thai Page";
+
+    // BISFM (Foreign Manufacturers) Thai Page Url
+    if (
+      path.includes(
+        "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india"
+      )
+    )
+      return "BISFM (Foreign Manufacturers) - Thai Page";
   };
 
   const [formData, setFormData] = useState({
