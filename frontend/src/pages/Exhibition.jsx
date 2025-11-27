@@ -16,29 +16,7 @@ import { Link } from "react-router-dom";
 const Exhibition = () => {
   return (
     <div className="bg-[#F9F7F2] relative">
-      <Helmet>
-        {/* JSON-LD Breadcrumb structured data for SEO */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Seminars and Exhibitions",
-                item: "https://bis-certifications.com/seminars-and-exhibitions",
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
+      <MetaTags />
 
       <div className="absolute md:top-5 top-3 left-0 w-full z-30">
         <div className="max-w-[80rem] mx-auto px-4">
@@ -314,6 +292,68 @@ const ExhibitionGallery = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const MetaTags = () => {
+  const title =
+    "Industry Seminars & Exhibitions on Certifications & Compliance";
+  const ogTitle =
+    "Industry Events for Certification & Regulatory Compliance | Seminars & Exhibitions";
+  const twitterTitle = "Industry Certification Seminars & Exhibitions";
+  const metaDescription =
+    "Explore industry networking events, seminars & exhibitions on major certifications and regulatory frameworks including BIS, EPR, CDSCO, LMPC and more. Connect with experts, regulators and global compliance professionals.";
+  const ogDescription =
+    "Professional seminars & exhibitions offering certification consulting and compliance awareness across multiple regulatory standards. Empower your team with certification insights and industry updates.";
+  const twitterDescription =
+    "Professional seminars & exhibitions offering certification consulting and compliance awareness across multiple regulatory standards. Empower your team with certification insights and industry updates.";
+  const metaKeywords =
+    "BIS certification seminars, EPR seminars, CDSCO training, LMPC compliance events, WPC approval seminars, regulatory certification workshops, exhibitions for certification";
+  const websiteUrl = "https://bis-certifications.com/seminars-and-exhibitions";
+  const websiteName = "Sun Certifications India";
+  const author = "Sun Certifications India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={metaDescription} />
+      <meta name="keywords" content={metaKeywords} />
+      <meta name="author" content={author} />
+      <meta name="publisher" content={publisher} />
+      {/* Open Graph Tags */}
+      <meta property="og:title" content={ogTitle} />
+      <meta property="og:description" content={ogDescription} />
+      <meta property="og:url" content={websiteUrl} />
+      <meta property="og:site_name" content={websiteName} />
+      <meta property="og:type" content="article" />
+      {/* Twitter Card Tags */}
+      <meta name="twitter:title" content={twitterTitle} />
+      <meta name="twitter:description" content={twitterDescription} />
+      <link rel="canonical" href={websiteUrl} />
+      {/* JSON-LD Breadcrumb structured data for SEO */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://bis-certifications.com",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Seminars and Exhibitions",
+              item: "https://bis-certifications.com/seminars-and-exhibitions",
+            },
+          ],
+        })}
+      </script>
+    </Helmet>
   );
 };
 

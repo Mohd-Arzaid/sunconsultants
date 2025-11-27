@@ -16,29 +16,7 @@ import { SlashIcon } from "lucide-react";
 const InternationalAudits = () => {
   return (
     <div className="bg-[#F9F7F2] relative">
-      <Helmet>
-        {/* JSON-LD Breadcrumb structured data for SEO */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://bis-certifications.com",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "International Audit Excellence",
-                item: "https://bis-certifications.com/international-audits",
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
+      <MetaTags />
 
       <div className="absolute md:top-5 top-3 left-0 w-full z-30">
         <div className="max-w-[80rem] mx-auto px-4">
@@ -82,6 +60,68 @@ const InternationalAudits = () => {
 };
 
 export default InternationalAudits;
+
+const MetaTags = () => {
+  const title =
+    "International Audits for BIS Certification — Factory Inspections & Compliance Support";
+  const ogTitle =
+    "International Audits for BIS Certificate | Sun Certifications India";
+  const twitterTitle = "International Audit Excellence for BIS Certification";
+  const metaDescription =
+    "Professional international audits and factory inspections for BIS certification — ensure compliance with Indian Standards, streamline BIS licence FMCS audits, and ease market access in India";
+  const ogDescription =
+    "Get expert support for international audits and factory inspections as required under BIS certification schemes. We help manufacturers meet BIS standards, pass audits, and obtain BIS licence or FMCS compliance with ease.";
+  const twitterDescription =
+    "Need BIS certificate? Our international audit services help you clear factory inspections & compliance checks to get BIS licence or FMCS certification smoothly.";
+  const metaKeywords =
+    "BIS certification, BIS licence, international audits, factory inspection, BIS audit, BIS compliance, Scheme X, FMCS, BIS registration, BIS certificate, ISI mark, BIS licence audit, Indian Standards compliance";
+  const websiteUrl = "https://bis-certifications.com/international-audits";
+  const websiteName = "Sun Certifications India";
+  const author = "Sun Certifications India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={metaDescription} />
+      <meta name="keywords" content={metaKeywords} />
+      <meta name="author" content={author} />
+      <meta name="publisher" content={publisher} />
+      {/* Open Graph Tags */}
+      <meta property="og:title" content={ogTitle} />
+      <meta property="og:description" content={ogDescription} />
+      <meta property="og:url" content={websiteUrl} />
+      <meta property="og:site_name" content={websiteName} />
+      <meta property="og:type" content="article" />
+      {/* Twitter Card Tags */}
+      <meta name="twitter:title" content={twitterTitle} />
+      <meta name="twitter:description" content={twitterDescription} />
+      <link rel="canonical" href={websiteUrl} />
+      {/* JSON-LD Breadcrumb structured data for SEO */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://bis-certifications.com",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "International Audit Excellence",
+              item: "https://bis-certifications.com/international-audits",
+            },
+          ],
+        })}
+      </script>
+    </Helmet>
+  );
+};
 
 const AuditHero = () => {
   const handleScroll = () => {
