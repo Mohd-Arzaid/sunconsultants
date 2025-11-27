@@ -54,6 +54,7 @@ import { NotificationsRoutes } from "./routes/NotificationsRoutes";
 import { BlogRoutes } from "./routes/BlogRoutes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
 import { BISCertificationFaqRoutes } from "./routes/BISCertificationFaqRoutes";
+import FaqsPageRoutes from "./routes/FaqsPageRoutes";
 
 // ============================================
 // Admin Routes (Commented out)
@@ -93,6 +94,8 @@ function App() {
           index
           element={<Home onVideoPopupChange={setVideoPopupOpen} />}
         />
+
+        {FaqsPageRoutes()}
 
         {/* Core Pages */}
         <Route path="about" element={<About />} />

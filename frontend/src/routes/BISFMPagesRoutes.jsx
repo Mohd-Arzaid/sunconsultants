@@ -17,7 +17,7 @@ export const BISFMPagesRoutes = () => {
   return (
     <>
       <Route
-        path="a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+        path="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <BISFM />

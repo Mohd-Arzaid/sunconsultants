@@ -43,6 +43,29 @@ import BISFMProductTable from "@/pages/BISFMProductTable/BISFMProductTable.jsx";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const BISFM = () => {
+  // Prevent auto-scroll on mount - ensure page stays at top
+  useEffect(() => {
+    // Immediately scroll to top
+    window.scrollTo(0, 0);
+
+    // Also check if there's a hash in URL that might cause scroll
+    // If hash exists and it's not intentional, remove it
+    if (window.location.hash === "#product-table") {
+      // Clear hash to prevent auto-scroll to product table
+      window.history.replaceState(null, "", window.location.pathname);
+    }
+
+    // Additional safeguard: ensure scroll stays at top after a brief delay
+    const timeoutId = setTimeout(() => {
+      // Only scroll to top if we're not already there (to avoid unnecessary scroll)
+      if (window.scrollY > 50) {
+        window.scrollTo(0, 0);
+      }
+    }, 200);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <div className="relative">
       <MetaTags />

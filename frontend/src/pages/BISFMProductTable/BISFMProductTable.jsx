@@ -22,12 +22,17 @@ const BISFMProductTable = () => {
   const [entriesPerPage, setEntriesPerPage] = useState(5);
   const [searchTerm, setSearchTerm] = useState("");
   const tableRef = useRef(null);
+  const previousPageRef = useRef(currentPage); // Track previous page
 
-  // Scroll to table top when page changes
+  // Scroll to table top when page changes (only on actual page navigation)
   useEffect(() => {
-    if (tableRef.current) {
+    // Only scroll if page actually changed (not initial render)
+    if (previousPageRef.current !== currentPage && tableRef.current) {
       tableRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+
+    // Update previous page reference
+    previousPageRef.current = currentPage;
   }, [currentPage]);
 
   // Enhanced filter data based on search term
