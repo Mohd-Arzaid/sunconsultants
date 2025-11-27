@@ -39,8 +39,7 @@ const MetalCuttingMachinesChinese = () => {
 export default MetalCuttingMachinesChinese;
 
 const MetalCuttingMachinesMetaTags = () => {
-  const title =
-    "BIS方案X金属切削机床及其组件认证";
+  const title = "BIS方案X金属切削机床及其组件认证";
   const description =
     "BIS认证现在对所有类型的金属切削机床和/或其组件、子组件和部件都是强制性的，这些产品属于HS代码8456至8461";
   const keywords =
@@ -49,8 +48,7 @@ const MetalCuttingMachinesMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X金属切削机床认证 | 完整指南";
+  const ogTitle = "印度BIS方案X金属切削机床认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X金属切削机床认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -159,7 +157,8 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          本文提供有关金属切削机床方案X认证、金属切削机床OTR 2024要求以及获得金属切削机床BIS许可证以粘贴金属切削机床BIS标志的程序信息。
+          本文提供有关金属切削机床方案X认证、金属切削机床OTR
+          2024要求以及获得金属切削机床BIS许可证以粘贴金属切削机床BIS标志的程序信息。
         </p>
 
         {/* Separator Line */}
@@ -190,9 +189,7 @@ const MetalCuttingMachinesMainContentLeft = () => {
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>加工精度差，产量低</li>
-          <li>
-            机器故障和生产损失 运行时间与停机时间。
-          </li>
+          <li>机器故障和生产损失 运行时间与停机时间。</li>
           <li>操作人员的潜在危险</li>
           <li>被排除在公共投标和受监管业务之外</li>
         </ul>
@@ -219,15 +216,9 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>对印度和外国制造商都是强制性的</li>
-          <li>
-            适用于在印度标准下通知的各种金属切削机床
-          </li>
-          <li>
-            涉及实验室测试、工厂检查和定期审计
-          </li>
-          <li>
-            授权使用金属切削机床BIS标志。
-          </li>
+          <li>适用于在印度标准下通知的各种金属切削机床</li>
+          <li>涉及实验室测试、工厂检查和定期审计</li>
+          <li>授权使用金属切削机床BIS标志。</li>
         </ul>
 
         {/* Separator Line */}
@@ -255,21 +246,13 @@ const MetalCuttingMachinesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            产品可靠性：机器经过认证，确保准确性、耐用性和一致的性能。
-          </li>
+          <li>产品可靠性：机器经过认证，确保准确性、耐用性和一致的性能。</li>
           <li>
             市场竞争力：金属切削机床BIS许可证对于获得许多工业和政府订单是强制性的。
           </li>
-          <li>
-            客户信任：金属切削机床BIS标志在买家中建立信任。
-          </li>
-          <li>
-            法律合规：符合金属切削机床OTR和BIS。
-          </li>
-          <li>
-            全球优势：外国制造商更容易进入印度市场。
-          </li>
+          <li>客户信任：金属切削机床BIS标志在买家中建立信任。</li>
+          <li>法律合规：符合金属切削机床OTR和BIS。</li>
+          <li>全球优势：外国制造商更容易进入印度市场。</li>
         </ul>
 
         {/* Separator Line */}
@@ -297,7 +280,9 @@ const MetalCuttingMachinesMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          所有这些类型的金属切削机床必须遵循相关的印度标准（IS代码），如IS 17277（第1部分）：2019/ISO 16092-1:2017（机床安全压力机第1部分通用安全要求）。每种机器型号必须满足其自己的IS代码，涉及安全性、能源效率和准确性。
+          所有这些类型的金属切削机床必须遵循相关的印度标准（IS代码），如IS
+          17277（第1部分）：2019/ISO
+          16092-1:2017（机床安全压力机第1部分通用安全要求）。每种机器型号必须满足其自己的IS代码，涉及安全性、能源效率和准确性。
         </p>
 
         {/* Separator Line */}
@@ -309,24 +294,14 @@ const MetalCuttingMachinesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
+          <li>确定适用的IS标准：根据机器类型选择适当的标准。</li>
+          <li>产品测试：将机器提交到政府认可的BIS实验室进行测试。</li>
+          <li>工厂审计：BIS官员进行现场访问，以确保符合质量生产。</li>
+          <li>提交文件：提供技术手册、测试报告和质量保证文件。</li>
           <li>
-            确定适用的IS标准：根据机器类型选择适当的标准。
+            颁发金属切削机床BIS许可证：制造商现在可以根据上述标准在产品认证下粘贴BIS标志。
           </li>
-          <li>
-            产品测试：将机器提交到政府认可的BIS实验室进行测试。
-          </li>
-          <li>
-            工厂审计：BIS官员进行现场访问，以确保符合质量生产。
-          </li>
-          <li>
-            提交文件：提供技术手册、测试报告和质量保证文件。
-          </li>
-            <li>
-              颁发金属切削机床BIS许可证：制造商现在可以根据上述标准在产品认证下粘贴BIS标志。
-            </li>
-          <li>
-            持续合规：进行监督和定期审计，以确保与BIS的持续合规。
-          </li>
+          <li>持续合规：进行监督和定期审计，以确保与BIS的持续合规。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">

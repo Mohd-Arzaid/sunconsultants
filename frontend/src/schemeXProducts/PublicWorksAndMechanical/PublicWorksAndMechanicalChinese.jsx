@@ -39,8 +39,7 @@ const PublicWorksAndMechanicalChinese = () => {
 export default PublicWorksAndMechanicalChinese;
 
 const PublicWorksAndMechanicalMetaTags = () => {
-  const title =
-    "BIS方案X公共工程和机械设备认证";
+  const title = "BIS方案X公共工程和机械设备认证";
   const description =
     "BIS方案X认证适用于公共工程和建筑机械以及机械设备，这是确保工业安全、统一质量和市场准入的战略举措。";
   const keywords =
@@ -49,8 +48,7 @@ const PublicWorksAndMechanicalMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X公共工程和机械设备认证 | 完整指南";
+  const ogTitle = "印度BIS方案X公共工程和机械设备认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X公共工程和机械设备认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -176,14 +174,10 @@ const PublicWorksAndMechanicalMainContentLeft = () => {
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
-          <li>
-            公共基础设施建设（道路、桥梁、供水）
-          </li>
+          <li>公共基础设施建设（道路、桥梁、供水）</li>
           <li>工程和重型建筑项目</li>
           <li>城市服务和公用事业</li>
-          <li>
-            需要起重或加工机械的工业设施
-          </li>
+          <li>需要起重或加工机械的工业设施</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -222,12 +216,8 @@ const PublicWorksAndMechanicalMainContentLeft = () => {
           <li>适用于印度和外国制造商</li>
           <li>包括用于公共工程和公用事业的机械</li>
           <li>在BIS认可的实验室进行测试</li>
-          <li>
-            工厂审计和定期合规检查包含在流程中
-          </li>
-          <li>
-            认证后有权使用BIS标准标志
-          </li>
+          <li>工厂审计和定期合规检查包含在流程中</li>
+          <li>认证后有权使用BIS标准标志</li>
         </ul>
 
         {/* Separator Line */}
@@ -255,21 +245,13 @@ const PublicWorksAndMechanicalMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            产品安全：防止因机械问题导致的故障和可靠操作。
-          </li>
-          <li>
-            法规合规：符合公共工程和机械设备OTR。
-          </li>
-          <li>
-            市场优势：认证通常是公共投标和政府项目所必需的。
-          </li>
+          <li>产品安全：防止因机械问题导致的故障和可靠操作。</li>
+          <li>法规合规：符合公共工程和机械设备OTR。</li>
+          <li>市场优势：认证通常是公共投标和政府项目所必需的。</li>
           <li>
             客户信任：正式认证的机械更受一些买家青睐，因为这是质量的保证。
           </li>
-          <li>
-            责任减少：通过认证产品减少潜在的法律和品牌风险。
-          </li>
+          <li>责任减少：通过认证产品减少潜在的法律和品牌风险。</li>
         </ul>
 
         {/* Separator Line */}
@@ -289,13 +271,13 @@ const PublicWorksAndMechanicalMainContentLeft = () => {
           <li>液压和手动起重机械</li>
           <li>城市服务设备（水分配设备等）</li>
           <li>机械服务和处理设备</li>
-          <li>
-            专为公共工程和服务中的工业用途设计的设备
-          </li>
+          <li>专为公共工程和服务中的工业用途设计的设备</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          它们必须遵守相应的印度标准（IS代码），如果适用，包括IS 16819:2018/ISO 12100:2010（机械安全设计通用原则 - 风险评估和风险降低）。所有这些形式都必须按照适用于安全性、性能和质量的相关印度标准生产。
+          它们必须遵守相应的印度标准（IS代码），如果适用，包括IS 16819:2018/ISO
+          12100:2010（机械安全设计通用原则 -
+          风险评估和风险降低）。所有这些形式都必须按照适用于安全性、性能和质量的相关印度标准生产。
         </p>
 
         {/* Separator Line */}
@@ -307,24 +289,12 @@ const PublicWorksAndMechanicalMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            确定相关标准：选择适用于您机械的IS代码。
-          </li>
-          <li>
-            产品测试：在BIS批准的实验室进行性能和安全性测试。
-          </li>
-          <li>
-            工厂检查：BIS官员访问生产设施，确保质量控制到位。
-          </li>
-          <li>
-            文件：提交申请表、技术报告和质量手册
-          </li>
-          <li>
-            颁发许可证：BIS授予认证并允许使用BIS标准标志。
-          </li>
-          <li>
-            持续合规：进行持续测试和审计以确保持续合规。
-          </li>
+          <li>确定相关标准：选择适用于您机械的IS代码。</li>
+          <li>产品测试：在BIS批准的实验室进行性能和安全性测试。</li>
+          <li>工厂检查：BIS官员访问生产设施，确保质量控制到位。</li>
+          <li>文件：提交申请表、技术报告和质量手册</li>
+          <li>颁发许可证：BIS授予认证并允许使用BIS标准标志。</li>
+          <li>持续合规：进行持续测试和审计以确保持续合规。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -393,10 +363,10 @@ const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                  src={BISImage}
-                  alt="BIS Logo"
-                  title="BIS Logo"
-                  className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+                src={BISImage}
+                alt="BIS Logo"
+                title="BIS Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
@@ -490,10 +460,10 @@ const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                  src={BISImage}
-                  alt="BIS Logo"
-                  title="BIS Logo"
-                  className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+                src={BISImage}
+                alt="BIS Logo"
+                title="BIS Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">

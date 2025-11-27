@@ -356,7 +356,7 @@ const ContactForm = () => {
       </p>
 
       <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
           <Input
             disabled={loading}
             required
@@ -377,7 +377,7 @@ const ContactForm = () => {
             onChange={handleOnChange}
             placeholder="Email Address *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
-            />
+          />
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
@@ -401,7 +401,7 @@ const ContactForm = () => {
             onChange={handleOnChange}
             placeholder="Company Name *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
-            />
+          />
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
@@ -414,7 +414,7 @@ const ContactForm = () => {
             onChange={handleOnChange}
             placeholder="Product Name *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
-            />
+          />
 
           <Input
             disabled={loading}
@@ -425,14 +425,14 @@ const ContactForm = () => {
             onChange={handleOnChange}
             placeholder="Required Certification*"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
-            />
+          />
         </div>
 
         <Button
           disabled={loading}
           type="submit"
           className="disabled:opacity-100 mt-1 w-[218px] h-[50px] md:h-[60px] bg-[#1A8781] hover:bg-[#1A8781]/90 rounded-[5px] text-[15px] md:text-[15px] font-poppins tracking-wide leading-[28px] shadow-elegant transition-all duration-300 hover:translate-y-[-2px]"
-          >
+        >
           {loading ? (
             <div className="flex gap-3 items-center justify-center">
               <ClockLoader size={22} color="#fff" />
@@ -1600,8 +1600,6 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         BIS certificate details, standard mark and IS code through the software
         interface or digital packaging.
       </p>
-
-       
 
       <h3 className="service-left-content-heading-three">
         Requirements for E-Labelling:

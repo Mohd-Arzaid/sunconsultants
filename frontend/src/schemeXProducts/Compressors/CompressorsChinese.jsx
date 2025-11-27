@@ -48,8 +48,7 @@ const CompressorsMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X压缩机认证 | 完整指南";
+  const ogTitle = "印度BIS方案X压缩机认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X压缩机认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -169,9 +168,7 @@ const CompressorsMainContentLeft = () => {
           为什么压缩机BIS认证很重要
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          压缩机用于：
-        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">压缩机用于：</p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
@@ -193,9 +190,7 @@ const CompressorsMainContentLeft = () => {
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>故障、维护期和停机时间</li>
-          <li>
-            能源浪费导致高额公用事业账单
-          </li>
+          <li>能源浪费导致高额公用事业账单</li>
           <li>安全风险，如过热或泄漏</li>
           <li>声誉损失和货币损失</li>
         </ul>
@@ -222,15 +217,9 @@ const CompressorsMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>对所有制造商（印度和外国）都是强制性的</li>
-          <li>
-            涵盖根据印度标准通知的各种类型的压缩机
-          </li>
-          <li>
-            包括第三方测试、工厂检查和定期合规性检查
-          </li>
-          <li>
-            允许许可证持有者在产品上使用压缩机BIS标志作为认证产品
-          </li>
+          <li>涵盖根据印度标准通知的各种类型的压缩机</li>
+          <li>包括第三方测试、工厂检查和定期合规性检查</li>
+          <li>允许许可证持有者在产品上使用压缩机BIS标志作为认证产品</li>
         </ul>
 
         {/* Separator Line */}
@@ -258,18 +247,10 @@ const CompressorsMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            安全与性能：有助于避免泄漏、过热和机器故障等危险。
-          </li>
-          <li>
-            市场准入：BIS认证的压缩机可用于公共投标和政府项目。
-          </li>
-          <li>
-            消费者信任：压缩机BIS标志为买家提供产品符合印度标准的信心。
-          </li>
-          <li>
-            竞争优势：只有认证品牌才能获得更多市场信任和偏好。
-          </li>
+          <li>安全与性能：有助于避免泄漏、过热和机器故障等危险。</li>
+          <li>市场准入：BIS认证的压缩机可用于公共投标和政府项目。</li>
+          <li>消费者信任：压缩机BIS标志为买家提供产品符合印度标准的信心。</li>
+          <li>竞争优势：只有认证品牌才能获得更多市场信任和偏好。</li>
           <li>
             国际品牌轻松市场准入：压缩机BIS许可证为外国制造商提供轻松进入印度市场的途径。
           </li>
@@ -310,24 +291,16 @@ const CompressorsMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            确定适用标准：找到适合您压缩机的IS代码。
-          </li>
+          <li>确定适用标准：找到适合您压缩机的IS代码。</li>
           <li>
             产品测试：在BIS认可的实验室中进行强制性的性能、安全和能效测试。
           </li>
-          <li>
-            工厂检查：BIS人员实地访问以验证制造程序和质量控制方法。
-          </li>
-          <li>
-            文件和申请：在BIS申请中包含测试报告、技术规格和质量手册。
-          </li>
+          <li>工厂检查：BIS人员实地访问以验证制造程序和质量控制方法。</li>
+          <li>文件和申请：在BIS申请中包含测试报告、技术规格和质量手册。</li>
           <li>
             颁发压缩机BIS许可证：获得批准后，制造商有权使用压缩机BIS标志。
           </li>
-          <li>
-            持续合规：BIS进行定期监督审计和产品测试以确保持续合规。
-          </li>
+          <li>持续合规：BIS进行定期监督审计和产品测试以确保持续合规。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -339,9 +312,7 @@ const CompressorsMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            不允许销售/进口未进行型式试验的压缩机
-          </li>
+          <li>不允许销售/进口未进行型式试验的压缩机</li>
           <li>没收不合规货物和商业处罚</li>
           <li>禁止参与政府投标和PSU协议</li>
           <li>失去印度市场信任</li>

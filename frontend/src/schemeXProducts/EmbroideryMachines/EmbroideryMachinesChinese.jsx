@@ -48,8 +48,7 @@ const EmbroideryMachinesMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X刺绣机械认证 | 完整指南";
+  const ogTitle = "印度BIS方案X刺绣机械认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X刺绣机械认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -215,13 +214,9 @@ const EmbroideryMachinesMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>对印度和外国制造商都是强制性的</li>
-          <li>
-            包括测试、安全检查以及效率验证
-          </li>
+          <li>包括测试、安全检查以及效率验证</li>
           <li>需要定期工厂访问和质量审计</li>
-          <li>
-            允许在许可下为认证产品放置刺绣机械BIS标志
-          </li>
+          <li>允许在许可下为认证产品放置刺绣机械BIS标志</li>
         </ul>
 
         {/* Separator Line */}
@@ -249,18 +244,12 @@ const EmbroideryMachinesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            产品安全与可靠性：可认证的机器按照预期标准和安全性能运行。
-          </li>
+          <li>产品安全与可靠性：可认证的机器按照预期标准和安全性能运行。</li>
           <li>
             市场接受度：刺绣机械BIS许可证对于政府投标和批量协议是强制性的。
           </li>
-          <li>
-            买家信任：刺绣机械被授予BIS标志，确认其质量和标准。
-          </li>
-          <li>
-            监管合规：遵守刺绣机械OTR，避免罚款。
-          </li>
+          <li>买家信任：刺绣机械被授予BIS标志，确认其质量和标准。</li>
+          <li>监管合规：遵守刺绣机械OTR，避免罚款。</li>
           <li>
             出口优势：印度买家对认证机器感到放心，国际公司更容易进入印度。
           </li>
@@ -288,7 +277,9 @@ const EmbroideryMachinesMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          每个类别必须遵守相关的IS标准（IS代码），如IS 17361（第1部分）：2020/ISO 11111（第1部分）：2016（纺织机械安全要求第1部分通用要求）。所有都必须遵守各自相应的IS代码，涉及设计、耐用性、安全性和操作经济性。
+          每个类别必须遵守相关的IS标准（IS代码），如IS
+          17361（第1部分）：2020/ISO
+          11111（第1部分）：2016（纺织机械安全要求第1部分通用要求）。所有都必须遵守各自相应的IS代码，涉及设计、耐用性、安全性和操作经济性。
         </p>
 
         {/* Separator Line */}
@@ -300,24 +291,14 @@ const EmbroideryMachinesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            确定相关标准：查找适用于您刺绣机械型号的相关IS代码。
-          </li>
-          <li>
-            产品测试：机器在BIS认可的实验室进行安全和性能测试。
-          </li>
-          <li>
-            工厂检查：BIS审计员到工厂评估质量控制。
-          </li>
-          <li>
-            文件和申请：向BIS提供技术报告、手册和质量文件。
-          </li>
+          <li>确定相关标准：查找适用于您刺绣机械型号的相关IS代码。</li>
+          <li>产品测试：机器在BIS认可的实验室进行安全和性能测试。</li>
+          <li>工厂检查：BIS审计员到工厂评估质量控制。</li>
+          <li>文件和申请：向BIS提供技术报告、手册和质量文件。</li>
           <li>
             刺绣机械BIS许可证：获得批准后，制造商可以选择在其产品上标记BIS标志。
           </li>
-          <li>
-            持续合规：定期检查和重新测试确保持续合规。
-          </li>
+          <li>持续合规：定期检查和重新测试确保持续合规。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -331,9 +312,7 @@ const EmbroideryMachinesMainContentLeft = () => {
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>限制销售/进口未认证机器</li>
           <li>潜在的罚款、处罚和产品扣押</li>
-          <li>
-            不符合政府合同和重要出口的资格
-          </li>
+          <li>不符合政府合同和重要出口的资格</li>
           <li>品牌声誉将长期受损</li>
         </ul>
 

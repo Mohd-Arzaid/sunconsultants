@@ -40,8 +40,7 @@ const PackingMachineryChinese = () => {
 export default PackingMachineryChinese;
 
 const PackingMachineryMetaTags = () => {
-  const title =
-    "BIS方案X包装机械及其组件认证";
+  const title = "BIS方案X包装机械及其组件认证";
   const description =
     "BIS方案X认证适用于所有类型的填充、封口、密封、贴标、包装或捆扎机械和/或其组件、子组件和部件，这是印度制造业标准化安全和质量的重要一步";
   const keywords =
@@ -50,8 +49,7 @@ const PackingMachineryMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X包装机械认证 | 完整指南";
+  const ogTitle = "印度BIS方案X包装机械认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X包装机械认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -217,16 +215,10 @@ const PackingMachineryMainContentLeft = () => {
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            适用于任何包装机械（手动、半自动和自动）
-          </li>
-          <li>
-            需要进行产品测试、工厂审计和质量控制
-          </li>
+          <li>适用于任何包装机械（手动、半自动和自动）</li>
+          <li>需要进行产品测试、工厂审计和质量控制</li>
           <li>在印度销售和进口是强制性的</li>
-          <li>
-            授权在认证设备上使用包装机械BIS标志
-          </li>
+          <li>授权在认证设备上使用包装机械BIS标志</li>
         </ul>
 
         {/* Separator Line */}
@@ -254,15 +246,9 @@ const PackingMachineryMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            安全与卫生：认证的包装机械也避免污染问题（食品和制药）。
-          </li>
-          <li>
-            质量保证：确保机器平稳高效运行。
-          </li>
-          <li>
-            市场准入：包装机械BIS许可证通常是公共机构采购所必需的。
-          </li>
+          <li>安全与卫生：认证的包装机械也避免污染问题（食品和制药）。</li>
+          <li>质量保证：确保机器平稳高效运行。</li>
+          <li>市场准入：包装机械BIS许可证通常是公共机构采购所必需的。</li>
           <li>
             客户信任：包装机械BIS标志向客户提供有关产品质量和耐用性的信息。
           </li>
@@ -293,7 +279,9 @@ const PackingMachineryMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          每种类型的包装机械必须满足相应的印度标准（IS代码）要求，包括IS 16819:2018/ISO 12100:2010（机械安全设计通用原则 - 风险评估和风险降低）。
+          每种类型的包装机械必须满足相应的印度标准（IS代码）要求，包括IS
+          16819:2018/ISO 12100:2010（机械安全设计通用原则 -
+          风险评估和风险降低）。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -309,24 +297,14 @@ const PackingMachineryMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            确定相关标准：参考适用于您包装机械类型的相关IS代码。
-          </li>
+          <li>确定相关标准：参考适用于您包装机械类型的相关IS代码。</li>
           <li>
             产品测试：在BIS认可的实验室进行符合行业标准的必要性能和安全性测试。
           </li>
-          <li>
-            工厂检查：BIS官员检查生产现场的质量保证系统。
-          </li>
-          <li>
-            申请和文件：提供技术规格、质量手册和测试报告。
-          </li>
-            <li>
-              颁发包装机械BIS许可证：批准后，您可以放置BIS标志。
-            </li>
-          <li>
-            持续合规：BIS进行检查并进行不定期审计以确保符合标准。
-          </li>
+          <li>工厂检查：BIS官员检查生产现场的质量保证系统。</li>
+          <li>申请和文件：提供技术规格、质量手册和测试报告。</li>
+          <li>颁发包装机械BIS许可证：批准后，您可以放置BIS标志。</li>
+          <li>持续合规：BIS进行检查并进行不定期审计以确保符合标准。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -338,13 +316,9 @@ const PackingMachineryMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            禁止销售/进口未认证的包装机械
-          </li>
+          <li>禁止销售/进口未认证的包装机械</li>
           <li>扣押不合规设备和货币处罚</li>
-          <li>
-            这将使您不符合政府或PSU投标的资格
-          </li>
+          <li>这将使您不符合政府或PSU投标的资格</li>
           <li>品牌价值在印度永久受到影响</li>
         </ul>
 
@@ -357,7 +331,8 @@ const PackingMachineryMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在OTR 2024下实施BIS方案X包装机械认证是向印度工业和包装行业带来安全、效率和质量的一步。
+          在OTR
+          2024下实施BIS方案X包装机械认证是向印度工业和包装行业带来安全、效率和质量的一步。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -399,10 +374,10 @@ const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                  src={BISImage}
-                  alt="BIS Logo"
-                  title="BIS Logo"
-                  className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+                src={BISImage}
+                alt="BIS Logo"
+                title="BIS Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
@@ -496,10 +471,10 @@ const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                  src={BISImage}
-                  alt="BIS Logo"
-                  title="BIS Logo"
-                  className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+                src={BISImage}
+                alt="BIS Logo"
+                title="BIS Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">

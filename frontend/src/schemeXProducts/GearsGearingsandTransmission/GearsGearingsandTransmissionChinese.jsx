@@ -39,8 +39,7 @@ const GearsGearingsandTransmissionChinese = () => {
 export default GearsGearingsandTransmissionChinese;
 
 const GearsGearingsandTransmissionMetaTags = () => {
-  const title =
-    "BIS方案X齿轮、齿轮系统和传动元件认证";
+  const title = "BIS方案X齿轮、齿轮系统和传动元件认证";
   const description =
     "BIS方案X齿轮和齿轮系统、齿轮轮、链轮、传动元件、滚珠或滚子丝杠、齿轮箱和变速器的认证是工业机械领域的重要监管里程碑";
   const keywords =
@@ -49,8 +48,7 @@ const GearsGearingsandTransmissionMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X齿轮、齿轮系统和传动元件认证 | 完整指南";
+  const ogTitle = "印度BIS方案X齿轮、齿轮系统和传动元件认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X齿轮、齿轮系统和传动元件认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -189,14 +187,10 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            齿轮故障导致损坏和昂贵的停机时间
-          </li>
+          <li>齿轮故障导致损坏和昂贵的停机时间</li>
           <li>运输和重工业中的健康风险</li>
           <li>能量传递和能量耗散效率低下</li>
-          <li>
-            对公共投标和采购机会的可及性有限
-          </li>
+          <li>对公共投标和采购机会的可及性有限</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -224,9 +218,7 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
           <li>适用于各种齿轮、轴和传动部件</li>
           <li>在BIS批准的实验室进行产品测试</li>
           <li>包括工厂审计以验证质量控制</li>
-          <li>
-            产品认证后有权使用BIS标准标志
-          </li>
+          <li>产品认证后有权使用BIS标准标志</li>
         </ul>
 
         {/* Separator Line */}
@@ -254,21 +246,11 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            安全与可靠性：避免关键系统应用中的无监督故障。
-          </li>
-          <li>
-            市场竞争力：认证公司在公共和私人投标中享有优先权。
-          </li>
-          <li>
-            客户信任：买家对具有官方BIS认可的产品有信心。
-          </li>
-          <li>
-            法律合规：遵守齿轮、齿轮系统和传动部件OTR，无处罚。
-          </li>
-          <li>
-            进入全球市场：使外国制造商能够轻松进入印度市场。
-          </li>
+          <li>安全与可靠性：避免关键系统应用中的无监督故障。</li>
+          <li>市场竞争力：认证公司在公共和私人投标中享有优先权。</li>
+          <li>客户信任：买家对具有官方BIS认可的产品有信心。</li>
+          <li>法律合规：遵守齿轮、齿轮系统和传动部件OTR，无处罚。</li>
+          <li>进入全球市场：使外国制造商能够轻松进入印度市场。</li>
         </ul>
 
         {/* Separator Line */}
@@ -288,13 +270,13 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
           <li>齿轮轴和联轴器</li>
           <li>齿轮箱和传动部件</li>
           <li>链传动和带传动组件</li>
-          <li>
-            用于航空航天和机器人技术、豪华汽车、摩托车的齿轮
-          </li>
+          <li>用于航空航天和机器人技术、豪华汽车、摩托车的齿轮</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          所有类型必须符合印度标准（IS代码），如IS 16819:2018/ISO 12100:2010（机械安全设计通用原则 - 风险评估和风险降低）。每种产品类型必须符合相应的印度标准，涉及设计和性能。
+          所有类型必须符合印度标准（IS代码），如IS 16819:2018/ISO
+          12100:2010（机械安全设计通用原则 -
+          风险评估和风险降低）。每种产品类型必须符合相应的印度标准，涉及设计和性能。
         </p>
 
         {/* Separator Line */}
@@ -310,19 +292,13 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            产品测试：在BIS认可的实验室进行材料和性能测试。
-          </li>
+          <li>产品测试：在BIS认可的实验室进行材料和性能测试。</li>
           <li>工厂审计：BIS到生产现场进行质量体系审计。</li>
-          <li>
-            提交文件：分享技术细节、测试文件和质量手册。
-          </li>
+          <li>提交文件：分享技术细节、测试文件和质量手册。</li>
           <li>
             颁发许可证：BIS在检查文件准确性后，颁发认证并允许使用标准标志。
           </li>
-          <li>
-            持续合规：频繁的审计和重新测试以保持认证有效性。
-          </li>
+          <li>持续合规：频繁的审计和重新测试以保持认证有效性。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -334,9 +310,7 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            禁止销售和制造未认证物品
-          </li>
+          <li>禁止销售和制造未认证物品</li>
           <li>货物扣押和货币罚款</li>
           <li>不符合投标和政府合同资格</li>
           <li>长期声誉损失</li>

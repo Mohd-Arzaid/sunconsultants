@@ -23,7 +23,6 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-
 const ConstructionMachineryChinese = () => {
   return (
     <div className="relative w-full">
@@ -41,8 +40,7 @@ const ConstructionMachineryChinese = () => {
 export default ConstructionMachineryChinese;
 
 const ConstructionMachineryMetaTags = () => {
-  const title =
-    "BIS方案X建筑机械、土方和采矿机械认证";
+  const title = "BIS方案X建筑机械、土方和采矿机械认证";
   const description =
     "BIS方案X建筑机械、土方和采矿机械认证是强制性的，以确保关键工业领域的安全、质量和标准化";
   const keywords =
@@ -51,8 +49,7 @@ const ConstructionMachineryMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X建筑机械认证 | 完整指南";
+  const ogTitle = "印度BIS方案X建筑机械认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X建筑机械认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -220,9 +217,7 @@ const ConstructionMachineryMainContentLeft = () => {
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>对国内和外国制造商都是强制性的</li>
           <li>涵盖所有类型的重型机械和建筑设备</li>
-          <li>
-            必须进行强制性产品测试、强制性工厂访问和定期合规性审计
-          </li>
+          <li>必须进行强制性产品测试、强制性工厂访问和定期合规性审计</li>
           <li>授权使用建筑机械BIS标志</li>
         </ul>
 
@@ -251,21 +246,15 @@ const ConstructionMachineryMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            安全与可靠性：降低建筑工地机械故障或事故的风险。
-          </li>
-          <li>
-            市场准入与投标资格：BIS认证产品有资格参加政府投标和PSU投标。
-          </li>
+          <li>安全与可靠性：降低建筑工地机械故障或事故的风险。</li>
+          <li>市场准入与投标资格：BIS认证产品有资格参加政府投标和PSU投标。</li>
           <li>
             消费者与承包商信任：建筑机械BIS标志确保所有买家获得安全和高质量的产品。
           </li>
           <li>
             进入全球市场：建筑机械BIS许可证可以帮助外国公司轻松进入印度市场。
           </li>
-          <li>
-            法律合规：免受建筑机械OTR下的罚款、禁令和处罚。
-          </li>
+          <li>法律合规：免受建筑机械OTR下的罚款、禁令和处罚。</li>
         </ul>
 
         {/* Separator Line */}
@@ -291,7 +280,9 @@ const ConstructionMachineryMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          每个类别必须满足相关的印度标准（IS代码），如IS 17055（第7部分）：2020、IS 17055（第8部分）：2020和IS 17055（第12部分）：2020，涉及设计、安全、性能等。
+          每个类别必须满足相关的印度标准（IS代码），如IS
+          17055（第7部分）：2020、IS 17055（第8部分）：2020和IS
+          17055（第12部分）：2020，涉及设计、安全、性能等。
         </p>
 
         {/* Separator Line */}
@@ -303,24 +294,12 @@ const ConstructionMachineryMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            确定适用标准：找到适合您建筑机械类型的IS代码。
-          </li>
-          <li>
-            产品测试：在BIS认可的实验室进行安全和性能测试。
-          </li>
-          <li>
-            工厂检查：BIS审计员字面检查QC和生产过程。
-          </li>
-          <li>
-            申请和文件：提供报告、规格和手册以供审查。
-          </li>
-          <li>
-            建筑机械BIS许可证：批准后，制造商被允许放置建筑机械BIS标志。
-          </li>
-          <li>
-            持续合规：频繁的检查和监控保持持续合规。
-          </li>
+          <li>确定适用标准：找到适合您建筑机械类型的IS代码。</li>
+          <li>产品测试：在BIS认可的实验室进行安全和性能测试。</li>
+          <li>工厂检查：BIS审计员字面检查QC和生产过程。</li>
+          <li>申请和文件：提供报告、规格和手册以供审查。</li>
+          <li>建筑机械BIS许可证：批准后，制造商被允许放置建筑机械BIS标志。</li>
+          <li>持续合规：频繁的检查和监控保持持续合规。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -332,14 +311,10 @@ const ConstructionMachineryMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            禁止销售和进口未认证设备
-          </li>
+          <li>禁止销售和进口未认证设备</li>
           <li>巨额罚款和产品扣押</li>
           <li>取消政府项目和奖励的资格</li>
-          <li>
-            未来多年潜在的无限声誉损害
-          </li>
+          <li>未来多年潜在的无限声誉损害</li>
         </ul>
 
         {/* Separator Line */}

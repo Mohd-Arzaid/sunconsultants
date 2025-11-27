@@ -48,8 +48,7 @@ const HeatTreatmentEquipmentMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X热处理设备认证 | 完整指南";
+  const ogTitle = "印度BIS方案X热处理设备认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X热处理设备认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -207,7 +206,8 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          方案X - 热处理设备，与印度政府钢铁部一致，是印度BIS合格评定法规（2018）下的强制性认证方案。
+          方案X -
+          热处理设备，与印度政府钢铁部一致，是印度BIS合格评定法规（2018）下的强制性认证方案。
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -216,12 +216,8 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>对印度和外国制造商都是强制性的</li>
-          <li>
-            适用于大多数类型的热处理设备和炉子
-          </li>
-          <li>
-            包括产品测试、工厂现场检查和持续合规性审计。
-          </li>
+          <li>适用于大多数类型的热处理设备和炉子</li>
+          <li>包括产品测试、工厂现场检查和持续合规性审计。</li>
           <li>制造商被允许使用BIS标准标志。</li>
         </ul>
 
@@ -250,15 +246,9 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            操作安全：防止过热、处理不均匀和设备损坏。
-          </li>
-          <li>
-            产品可靠性：确保处理后的物品符合硬度、耐用性和韧性规格
-          </li>
-          <li>
-            能源效率：认证设备经过测试以优化能源使用，降低运营成本。
-          </li>
+          <li>操作安全：防止过热、处理不均匀和设备损坏。</li>
+          <li>产品可靠性：确保处理后的物品符合硬度、耐用性和韧性规格</li>
+          <li>能源效率：认证设备经过测试以优化能源使用，降低运营成本。</li>
           <li>
             市场准入：热处理设备BIS标志通常是公共采购和政府投标的强制性要求。
           </li>
@@ -290,7 +280,8 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          每种类型都需要遵守相关的印度标准（IS代码），如IS 16819:2018/ISO 12100:2010。性能特征、材料等级和节能特性必须符合每种设备类型的相关印度标准（IS代码）。
+          每种类型都需要遵守相关的印度标准（IS代码），如IS 16819:2018/ISO
+          12100:2010。性能特征、材料等级和节能特性必须符合每种设备类型的相关印度标准（IS代码）。
         </p>
 
         {/* Separator Line */}
@@ -302,24 +293,12 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            确定相关标准：参考适用于您热处理设备类型的相关IS代码。
-          </li>
-          <li>
-            在BIS认可的实验室进行测试：进行性能、安全和效率测试。
-          </li>
-          <li>
-            工厂检查：BIS检查质量控制系统和生产设施。
-          </li>
-          <li>
-            申请和文件：提供结果、进行的测试以及技术规格和质量手册。
-          </li>
-          <li>
-            颁发热处理设备BIS许可证：批准后允许使用热处理设备BIS标志。
-          </li>
-          <li>
-            持续合规：定期进行审计和检查以保持质量标准。
-          </li>
+          <li>确定相关标准：参考适用于您热处理设备类型的相关IS代码。</li>
+          <li>在BIS认可的实验室进行测试：进行性能、安全和效率测试。</li>
+          <li>工厂检查：BIS检查质量控制系统和生产设施。</li>
+          <li>申请和文件：提供结果、进行的测试以及技术规格和质量手册。</li>
+          <li>颁发热处理设备BIS许可证：批准后允许使用热处理设备BIS标志。</li>
+          <li>持续合规：定期进行审计和检查以保持质量标准。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -346,7 +325,8 @@ const HeatTreatmentEquipmentMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在OTR 2024下强制实施热处理设备方案X认证是提高印度工业标准的重要里程碑。
+          在OTR
+          2024下强制实施热处理设备方案X认证是提高印度工业标准的重要里程碑。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">

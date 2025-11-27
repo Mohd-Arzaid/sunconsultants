@@ -49,8 +49,7 @@ const RubberAndPlasticsMachineryMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X橡胶和塑料机械认证 | 完整指南";
+  const ogTitle = "印度BIS方案X橡胶和塑料机械认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X橡胶和塑料机械认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -189,9 +188,7 @@ const RubberAndPlasticsMachineryMainContentLeft = () => {
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            操作效率低下和频繁故障
-          </li>
+          <li>操作效率低下和频繁故障</li>
           <li>操作人员和最终用户的安全危险</li>
           <li>低质量的产品结果</li>
           <li>被取消政府投标或大型项目的资格</li>
@@ -219,12 +216,8 @@ const RubberAndPlasticsMachineryMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
           <li>对印度和外国制造商都是强制性的</li>
-          <li>
-            涵盖根据通知的IS代码的各种橡胶和塑料机械
-          </li>
-          <li>
-            需要产品测试、制造过程审计和持续监督。
-          </li>
+          <li>涵盖根据通知的IS代码的各种橡胶和塑料机械</li>
+          <li>需要产品测试、制造过程审计和持续监督。</li>
           <li>认证时使用BIS标准标志。</li>
         </ul>
 
@@ -257,21 +250,13 @@ const RubberAndPlasticsMachineryMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            质量保证：符合印度关于性能和耐用性的标准。
-          </li>
-          <li>
-            市场竞争力：认证产品在公共和私营部门采购中优先考虑。
-          </li>
+          <li>质量保证：符合印度关于性能和耐用性的标准。</li>
+          <li>市场竞争力：认证产品在公共和私营部门采购中优先考虑。</li>
           <li>
             客户信任：当买家购买具有橡胶和塑料机械BIS认证的机械时，会有更大的信任。
           </li>
-          <li>
-            法律合规：遵守橡胶和塑料机械OTR后，您将不会受到处罚或限制。
-          </li>
-          <li>
-            全球优势：拥有认证的国际OEM更容易进入印度市场。
-          </li>
+          <li>法律合规：遵守橡胶和塑料机械OTR后，您将不会受到处罚或限制。</li>
+          <li>全球优势：拥有认证的国际OEM更容易进入印度市场。</li>
         </ul>
 
         {/* Separator Line */}
@@ -296,7 +281,8 @@ const RubberAndPlasticsMachineryMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          每个类别必须遵守适用的印度标准（IS代码），如IS/ISO 20430:2020（塑料和橡胶机械-注塑成型机械-安全要求）。每种类型的机械必须满足适用的印度标准，涉及安全性、性能和可靠性。
+          每个类别必须遵守适用的印度标准（IS代码），如IS/ISO
+          20430:2020（塑料和橡胶机械-注塑成型机械-安全要求）。每种类型的机械必须满足适用的印度标准，涉及安全性、性能和可靠性。
         </p>
 
         {/* Separator Line */}
@@ -308,24 +294,14 @@ const RubberAndPlasticsMachineryMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            确定相关标准：选择与机械类型相关的IS代码。
-          </li>
+          <li>确定相关标准：选择与机械类型相关的IS代码。</li>
           <li>
             产品测试：在BIS认可的实验室进行符合行业标准的必要性能和安全性测试。
           </li>
-          <li>
-            工厂检查：BIS官员检查生产现场的质量保证系统。
-          </li>
-          <li>
-            申请和文件：提供技术规格、质量手册和测试报告。
-          </li>
-          <li>
-            颁发橡胶和塑料机械BIS许可证：批准后，您可以放置BIS标志。
-          </li>
-          <li>
-            持续合规：BIS进行检查并进行不定期审计以确保符合标准。
-          </li>
+          <li>工厂检查：BIS官员检查生产现场的质量保证系统。</li>
+          <li>申请和文件：提供技术规格、质量手册和测试报告。</li>
+          <li>颁发橡胶和塑料机械BIS许可证：批准后，您可以放置BIS标志。</li>
+          <li>持续合规：BIS进行检查并进行不定期审计以确保符合标准。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -337,13 +313,9 @@ const RubberAndPlasticsMachineryMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            禁止销售/进口未认证的橡胶和塑料机械
-          </li>
+          <li>禁止销售/进口未认证的橡胶和塑料机械</li>
           <li>扣押不合规设备和货币处罚</li>
-          <li>
-            这将使您不符合政府或PSU投标的资格
-          </li>
+          <li>这将使您不符合政府或PSU投标的资格</li>
           <li>品牌价值在印度永久受到影响</li>
         </ul>
 
@@ -356,7 +328,8 @@ const RubberAndPlasticsMachineryMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在OTR 2024下实施BIS方案X橡胶和塑料机械认证是向印度工业部门带来安全、效率和质量的一步。
+          在OTR
+          2024下实施BIS方案X橡胶和塑料机械认证是向印度工业部门带来安全、效率和质量的一步。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">

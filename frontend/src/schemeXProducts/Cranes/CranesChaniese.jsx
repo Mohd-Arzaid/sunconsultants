@@ -50,8 +50,7 @@ const CranesMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X起重机认证 | 完整指南";
+  const ogTitle = "印度BIS方案X起重机认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X起重机认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -218,15 +217,9 @@ const CranesMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>对国内和外国制造商都是必需的</li>
-          <li>
-            适用于所有主要类别的起重机，并在印度标准下通知
-          </li>
-          <li>
-            必须进行产品测试、工厂审计和持续合规性评估
-          </li>
-          <li>
-            授权在认证产品上使用起重机BIS标志
-          </li>
+          <li>适用于所有主要类别的起重机，并在印度标准下通知</li>
+          <li>必须进行产品测试、工厂审计和持续合规性评估</li>
+          <li>授权在认证产品上使用起重机BIS标志</li>
         </ul>
 
         {/* Separator Line */}
@@ -254,21 +247,15 @@ const CranesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            提高安全性：认证起重机最大限度地减少机械故障和事故。
-          </li>
+          <li>提高安全性：认证起重机最大限度地减少机械故障和事故。</li>
           <li>
             市场优势：政府机构和私营公司在电子投标和大型项目中优先选择BIS认证的起重机。
           </li>
-          <li>
-            消费者和承包商信任：起重机BIS标志建立对质量和可靠性的信任。
-          </li>
+          <li>消费者和承包商信任：起重机BIS标志建立对质量和可靠性的信任。</li>
           <li>
             进入全球市场：对于外国制造商，起重机BIS许可证允许无障碍进入受监管的印度市场。
           </li>
-          <li>
-            遵守印度法律：避免罚款、扣押和排除在政府合同之外。
-          </li>
+          <li>遵守印度法律：避免罚款、扣押和排除在政府合同之外。</li>
         </ul>
 
         {/* Separator Line */}
@@ -295,7 +282,9 @@ const CranesMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          每个变体必须遵守相应的印度标准（IS代码），如IS 4573:2020（动力移动式起重机规范）和IS/ISO 15442:2012（起重机 - 装载起重机的安全要求）。
+          每个变体必须遵守相应的印度标准（IS代码），如IS
+          4573:2020（动力移动式起重机规范）和IS/ISO 15442:2012（起重机 -
+          装载起重机的安全要求）。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -311,24 +300,12 @@ const CranesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            确定相关IS标准：确定适用于您起重机类型的印度标准。
-          </li>
-          <li>
-            在BIS认可的实验室进行测试：必须进行安全和有效性测试。
-          </li>
-          <li>
-            工厂检查：BIS检查生产地点和质量系统。
-          </li>
-          <li>
-            申请和文件：提交技术报告、测试结果和质量手册。
-          </li>
-          <li>
-            起重机BIS许可证：批准后，制造商有权在起重机BIS标志上应用。
-          </li>
-          <li>
-            持续合规：定期审计和检查确保持续合规。
-          </li>
+          <li>确定相关IS标准：确定适用于您起重机类型的印度标准。</li>
+          <li>在BIS认可的实验室进行测试：必须进行安全和有效性测试。</li>
+          <li>工厂检查：BIS检查生产地点和质量系统。</li>
+          <li>申请和文件：提交技术报告、测试结果和质量手册。</li>
+          <li>起重机BIS许可证：批准后，制造商有权在起重机BIS标志上应用。</li>
+          <li>持续合规：定期审计和检查确保持续合规。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">

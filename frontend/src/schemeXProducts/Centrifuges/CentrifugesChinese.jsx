@@ -39,8 +39,7 @@ const CentrifugesChinese = () => {
 export default CentrifugesChinese;
 
 const CentrifugesMetaTags = () => {
-  const title =
-    "BIS方案X离心机和过滤或净化机械认证";
+  const title = "BIS方案X离心机和过滤或净化机械认证";
   const description =
     "BIS方案X离心机、液体和气体过滤或净化机械及其组件、子组件和部件的认证，是工业机械领域的重要监管里程碑";
   const keywords =
@@ -49,8 +48,7 @@ const CentrifugesMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度离心机BIS方案X认证 | 完整指南";
+  const ogTitle = "印度离心机BIS方案X认证 | 完整指南";
   const ogDescription =
     "了解印度离心机BIS方案X认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -170,9 +168,7 @@ const CentrifugesMainContentLeft = () => {
           BIS对离心机的重要性
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          离心机用于：
-        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">离心机用于：</p>
 
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
@@ -217,15 +213,9 @@ const CentrifugesMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>适用于印度和外国制造商</li>
-          <li>
-            适用于工业和研发实验室中发现的所有类型的离心机
-          </li>
-          <li>
-            必须进行足够的产品测试、审计和合规性验证
-          </li>
-          <li>
-            允许制造商基于上述离心机认证申请BIS注册。
-          </li>
+          <li>适用于工业和研发实验室中发现的所有类型的离心机</li>
+          <li>必须进行足够的产品测试、审计和合规性验证</li>
+          <li>允许制造商基于上述离心机认证申请BIS注册。</li>
         </ul>
 
         {/* Separator Line */}
@@ -253,15 +243,9 @@ const CentrifugesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            安全与合规：避免高速机械故障造成的事故。
-          </li>
-          <li>
-            质量与可靠性：认证离心机以高精度和准确度运行。
-          </li>
-          <li>
-            市场准入：公共机构采购通常需要BIS离心机许可证。
-          </li>
+          <li>安全与合规：避免高速机械故障造成的事故。</li>
+          <li>质量与可靠性：认证离心机以高精度和准确度运行。</li>
+          <li>市场准入：公共机构采购通常需要BIS离心机许可证。</li>
           <li>
             消费者信任：离心机BIS标志向客户提供有关产品质量和耐用性的信息。
           </li>
@@ -294,7 +278,9 @@ const CentrifugesMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          所有这些类型都必须满足适用的印度标准（IS代码），如IS 16819:2018/ISO 12100:2010（机械安全设计通用原则 - 风险评估和风险降低）。所有品种都应满足质量、安全和能源效率的相应印度标准（IS代码）。
+          所有这些类型都必须满足适用的印度标准（IS代码），如IS 16819:2018/ISO
+          12100:2010（机械安全设计通用原则 -
+          风险评估和风险降低）。所有品种都应满足质量、安全和能源效率的相应印度标准（IS代码）。
         </p>
 
         {/* Separator Line */}
@@ -306,24 +292,14 @@ const CentrifugesMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            确定相关标准：参考与您的离心机类型相关的IS代码。
-          </li>
+          <li>确定相关标准：参考与您的离心机类型相关的IS代码。</li>
           <li>
             产品测试：在BIS认可的实验室中按照行业标准进行所需的性能和安全测试。
           </li>
-          <li>
-            工厂检查：BIS官员检查生产现场的质量保证系统。
-          </li>
-          <li>
-            申请和文件：提供技术要求、质量手册和测试报告。
-          </li>
-          <li>
-            颁发BIS离心机许可证：批准后，您可以放置BIS标志。
-          </li>
-          <li>
-            持续合规：BIS检查并进行不定期审计以确保符合标准。
-          </li>
+          <li>工厂检查：BIS官员检查生产现场的质量保证系统。</li>
+          <li>申请和文件：提供技术要求、质量手册和测试报告。</li>
+          <li>颁发BIS离心机许可证：批准后，您可以放置BIS标志。</li>
+          <li>持续合规：BIS检查并进行不定期审计以确保符合标准。</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -335,13 +311,9 @@ const CentrifugesMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            禁止销售/进口未认证的离心机
-          </li>
+          <li>禁止销售/进口未认证的离心机</li>
           <li>没收不合规设备和货币罚款</li>
-          <li>
-            这将使您没有资格参加任何政府或PSU投标
-          </li>
+          <li>这将使您没有资格参加任何政府或PSU投标</li>
           <li>品牌资产在印度永久受到影响</li>
         </ul>
 
@@ -354,7 +326,8 @@ const CentrifugesMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          在OTR 2024中实施BIS方案X离心机认证是向印度工业和实验室领域引入安全、效率和质量的一步。
+          在OTR
+          2024中实施BIS方案X离心机认证是向印度工业和实验室领域引入安全、效率和质量的一步。
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">

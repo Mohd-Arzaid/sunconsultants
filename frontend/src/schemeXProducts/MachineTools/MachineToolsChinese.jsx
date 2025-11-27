@@ -48,8 +48,7 @@ const MachineToolsMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
-  const ogTitle =
-    "印度BIS方案X机床认证 | 完整指南";
+  const ogTitle = "印度BIS方案X机床认证 | 完整指南";
   const ogDescription =
     "了解印度BIS方案X机床认证的一切。了解OTR 2024合规性、BIS许可证流程、ISI标志要求，以及如何在2026年9月截止日期前获得认证";
 
@@ -217,14 +216,10 @@ const MachineToolsMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>适用于印度制造商和进口商</li>
-          <li>
-            涵盖机床，如车床、铣床、钻床、磨床、刨床、CNC系统等
-          </li>
+          <li>涵盖机床，如车床、铣床、钻床、磨床、刨床、CNC系统等</li>
           <li>测试仅在BIS批准的实验室进行。</li>
           <li>工厂审计和质量体系审查是强制性的</li>
-          <li>
-            只有成功的申请者才能获得BIS许可证，在其产品上使用标准标志
-          </li>
+          <li>只有成功的申请者才能获得BIS许可证，在其产品上使用标准标志</li>
         </ul>
 
         {/* Separator Line */}
@@ -252,21 +247,11 @@ const MachineToolsMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            质量保证：经过验证的准确性，认证工具的耐用性。
-          </li>
-          <li>
-            市场准入 – 对于进入公共和私营部门工作至关重要。
-          </li>
-          <li>
-            消费者信任 – BIS标准标志是产品质量和安全的保证。
-          </li>
-          <li>
-            竞争优势 - 授权制造商在投标和采购中更受青睐。
-          </li>
-          <li>
-            风险降低 – 无设备故障，提高操作人员安全性，防止停机。
-          </li>
+          <li>质量保证：经过验证的准确性，认证工具的耐用性。</li>
+          <li>市场准入 – 对于进入公共和私营部门工作至关重要。</li>
+          <li>消费者信任 – BIS标准标志是产品质量和安全的保证。</li>
+          <li>竞争优势 - 授权制造商在投标和采购中更受青睐。</li>
+          <li>风险降低 – 无设备故障，提高操作人员安全性，防止停机。</li>
         </ul>
 
         {/* Separator Line */}
@@ -278,24 +263,12 @@ const MachineToolsMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            确定标准 – 将机床类型和用途与印度标准联系起来。
-          </li>
-          <li>
-            产品测试 – 在BIS认可的实验室进行性能、安全和耐用性测试。
-          </li>
-          <li>
-            工厂审计 – 对电气设备生产的质量控制进行审计。
-          </li>
-          <li>
-            文件：必须提供技术报告、手册和合规性证明。
-          </li>
-          <li>
-            颁发许可证 – BIS颁发许可证（证书）并允许使用标准标志。
-          </li>
-          <li>
-            监控 – 进行定期审查和随机检查以确保遵守规则。
-          </li>
+          <li>确定标准 – 将机床类型和用途与印度标准联系起来。</li>
+          <li>产品测试 – 在BIS认可的实验室进行性能、安全和耐用性测试。</li>
+          <li>工厂审计 – 对电气设备生产的质量控制进行审计。</li>
+          <li>文件：必须提供技术报告、手册和合规性证明。</li>
+          <li>颁发许可证 – BIS颁发许可证（证书）并允许使用标准标志。</li>
+          <li>监控 – 进行定期审查和随机检查以确保遵守规则。</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -311,9 +284,7 @@ const MachineToolsMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            禁止生产、进口和交易未认证商品
-          </li>
+          <li>禁止生产、进口和交易未认证商品</li>
           <li>货物扣押和罚款</li>
           <li>失去国防和政府合同</li>
           <li>长期品牌和声誉永久性损害</li>
@@ -328,7 +299,8 @@ const MachineToolsMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          BIS方案X认证是OTR 2024下的要求，不仅是监管义务——它是印度制造业信任、安全和成功的关键。认证对印度和全球制造商的市场准入、合规性和长期成功至关重要。
+          BIS方案X认证是OTR
+          2024下的要求，不仅是监管义务——它是印度制造业信任、安全和成功的关键。认证对印度和全球制造商的市场准入、合规性和长期成功至关重要。
         </p>
 
         <ServiceAuthorChinese />
