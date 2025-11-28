@@ -29,7 +29,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterDutch from "@/components/manual/Footer/FooterDutch";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -151,8 +150,9 @@ const ISIMarkHero = () => {
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
             Als onderdeel van de 'Make in India' visie helpt BIS certificering
-            fabrikanten om productveiligheid, kwaliteit en conformiteit te garanderen. Krijg
-            certificering en laat uw merk met vertrouwen groeien.
+            fabrikanten om productveiligheid, kwaliteit en conformiteit te
+            garanderen. Krijg certificering en laat uw merk met vertrouwen
+            groeien.
           </p>
 
           <div className="flex items-center -mt-2">
@@ -288,7 +288,8 @@ const ISIMarkContactForm = () => {
         error.response?.data?.message || "Er is iets misgegaan";
       toast({
         variant: "destructive",
-        title: errorMessage || "Mislukt om contactformuliergegevens in te dienen!",
+        title:
+          errorMessage || "Mislukt om contactformuliergegevens in te dienen!",
         description:
           "Er is iets misgegaan. Controleer uw gegevens en probeer opnieuw.",
       });
@@ -662,62 +663,65 @@ const OverviewSection = () => {
         />
       </div>
       <p className="service-left-content-paragraph">
-        In de huidige marktdynamiek heeft de reputatie van een merk in de huidige
-        markt, het vertrouwen van consumenten een aanzienlijk belang. Elke consument
-        wil zekerheid over de veiligheid en betrouwbaarheid van een product, samen
-        met de kwaliteitscontrole stappen die tijdens de productie worden genomen. Het
-        Bureau of Indian Standards adresseert deze problemen en zorgen en zorgt ervoor dat
-        kwaliteitsbenchmarks voor de producten die in India worden verkocht. De ISI Mark
-        Certificering is een van de meest gerenommeerde certificaten die onder
-        BIS wordt uitgereikt.
+        In de huidige marktdynamiek heeft de reputatie van een merk in de
+        huidige markt, het vertrouwen van consumenten een aanzienlijk belang.
+        Elke consument wil zekerheid over de veiligheid en betrouwbaarheid van
+        een product, samen met de kwaliteitscontrole stappen die tijdens de
+        productie worden genomen. Het Bureau of Indian Standards adresseert deze
+        problemen en zorgen en zorgt ervoor dat kwaliteitsbenchmarks voor de
+        producten die in India worden verkocht. De ISI Mark Certificering is een
+        van de meest gerenommeerde certificaten die onder BIS wordt uitgereikt.
       </p>
       <p className="service-left-content-paragraph">
-        Voor binnenlandse fabrikanten is het verkrijgen van een BIS ISI Mark Certificering
-        niet alleen het verkrijgen van het certificaat van conformiteit, het gaat ook om
-        het verkrijgen van marktacceptatie, merkvertrouwen en juridische bescherming. Het
-        ISI merk wordt universeel erkend en versterkt de geloofwaardigheid in India
-        wanneer het gaat om de productie van elektrische apparaten, bouwmaterialen,
-        chemicaliën of huishoudelijke goederen.
+        Voor binnenlandse fabrikanten is het verkrijgen van een BIS ISI Mark
+        Certificering niet alleen het verkrijgen van het certificaat van
+        conformiteit, het gaat ook om het verkrijgen van marktacceptatie,
+        merkvertrouwen en juridische bescherming. Het ISI merk wordt universeel
+        erkend en versterkt de geloofwaardigheid in India wanneer het gaat om de
+        productie van elektrische apparaten, bouwmaterialen, chemicaliën of
+        huishoudelijke goederen.
       </p>
       <p className="service-left-content-paragraph">
-        Dit artikel heeft tot doel de BIS ISI Mark Certificering voor binnenlandse
-        fabrikanten te onderzoeken, met name gericht op het belang, de vereisten,
-        voordelen en het hele proces van certificaatverwerving.
+        Dit artikel heeft tot doel de BIS ISI Mark Certificering voor
+        binnenlandse fabrikanten te onderzoeken, met name gericht op het belang,
+        de vereisten, voordelen en het hele proces van certificaatverwerving.
       </p>
       <h2 className="service-left-content-heading-three">
         BIS en haar Rol Begrijpen
       </h2>
       <p className="service-left-content-paragraph">
         Het Bureau of Indian Standards (BIS) is een Nationale Standaardisatie en
-        Certificeringsinstantie in India onder het Ministerie van Consumentenzaken en
-        Publiek. Als regelgevend orgaan stelt het normen voor
-        kwaliteit vast en handhaaft deze en de handhaving ervan in verschillende industrieën zoals bepaald onder de
-        BIS Wet van 1986.
+        Certificeringsinstantie in India onder het Ministerie van
+        Consumentenzaken en Publiek. Als regelgevend orgaan stelt het normen
+        voor kwaliteit vast en handhaaft deze en de handhaving ervan in
+        verschillende industrieën zoals bepaald onder de BIS Wet van 1986.
       </p>
       <p className="service-left-content-paragraph">
-        Het BIS fungeert als een verificatie-autoriteit van derden die controleert of
-        een product voldoet aan de specifieke Indiase normen. BIS certificering
-        biedt de fabrikant niet alleen een juridische vereiste, maar ook
-        een merkteken van goedkeuring van vertrouwen en geloofwaardigheid van de klanten.{" "}
+        Het BIS fungeert als een verificatie-autoriteit van derden die
+        controleert of een product voldoet aan de specifieke Indiase normen. BIS
+        certificering biedt de fabrikant niet alleen een juridische vereiste,
+        maar ook een merkteken van goedkeuring van vertrouwen en
+        geloofwaardigheid van de klanten.{" "}
       </p>
       <h2 className="service-left-content-heading-three">
         Wat is een ISI Mark?
       </h2>
       <p className="service-left-content-paragraph">
         De ISI mark (Indian Standards Institute mark) certificering is het
-        oudste en meest erkende certificeringsmerk van het Bureau of
-        Indian Standards (BIS) in India. De ISI certificering richt zich op
-        bevestiging dat een product voldoet aan de basisvereisten van de kwaliteitsnormen
-        die door BIS zijn vastgesteld met betrekking tot veiligheid, kwaliteit, prestaties en
-        betrouwbaarheid.{" "}
+        oudste en meest erkende certificeringsmerk van het Bureau of Indian
+        Standards (BIS) in India. De ISI certificering richt zich op bevestiging
+        dat een product voldoet aan de basisvereisten van de kwaliteitsnormen
+        die door BIS zijn vastgesteld met betrekking tot veiligheid, kwaliteit,
+        prestaties en betrouwbaarheid.{" "}
       </p>
       <p className="service-left-content-paragraph">
         Producten die het ISI merk dragen hebben grondige laboratoriumtests en
         fabrieksinspecties voltooid. Het garandeert dat goede kwaliteitscontrole
-        procedures worden geïmplementeerd en gevolgd tijdens de productie
-        fasen. Consumenten kunnen veilige en betrouwbare producten verkrijgen en gebruiken
-        gelabeld met het ISI merk. Het ISI merk is een instrument voor vertrouwen tussen de
-        consument en de fabrikant en dit merk gaat verder dan de standaard.
+        procedures worden geïmplementeerd en gevolgd tijdens de productie fasen.
+        Consumenten kunnen veilige en betrouwbare producten verkrijgen en
+        gebruiken gelabeld met het ISI merk. Het ISI merk is een instrument voor
+        vertrouwen tussen de consument en de fabrikant en dit merk gaat verder
+        dan de standaard.
       </p>
       <p className="service-left-content-paragraph">
         Enkele voorbeelden van producten waarvoor verplichte ISI certificering
@@ -732,12 +736,12 @@ const OverviewSection = () => {
         ]}
       />
       <p className="service-left-content-paragraph">
-        Er zijn meer dan 650 producten die verplichte BIS
-        certificering vereisen om het standaardmerk (ISI Mark) te gebruiken onder Schema I
-        Bijlage I van het Bureau of Indian Standard. Producten die onder het
-        verplichte certificeringsschema worden gehouden kunnen niet worden gefabriceerd, geïmporteerd of verkocht
-        op de Indiase markt zonder ISI merk. De lijst van verplichte producten
-        kan worden geraadpleegd op deze{" "}
+        Er zijn meer dan 650 producten die verplichte BIS certificering vereisen
+        om het standaardmerk (ISI Mark) te gebruiken onder Schema I Bijlage I
+        van het Bureau of Indian Standard. Producten die onder het verplichte
+        certificeringsschema worden gehouden kunnen niet worden gefabriceerd,
+        geïmporteerd of verkocht op de Indiase markt zonder ISI merk. De lijst
+        van verplichte producten kan worden geraadpleegd op deze{" "}
         <a
           href="#product-table"
           onClick={(e) => {
@@ -757,24 +761,25 @@ const OverviewSection = () => {
         Wat is het Verschil tussen BIS Certificering en ISI Mark?
       </h2>
       <p className="service-left-content-paragraph">
-        Hoewel vaak verward en gebruikt als synoniemen, hebben BIS Certificering en ISI
-        Mark specifieke definities en doelen:
+        Hoewel vaak verward en gebruikt als synoniemen, hebben BIS Certificering
+        en ISI Mark specifieke definities en doelen:
       </p>
       <p className="service-left-content-paragraph">
-        <strong>BIS Certificering :</strong> Het proces van het verlenen van goedkeuring aan
-        een product nadat is vastgesteld dat het voldoet aan de vereiste Indiase Normen. Het
-        is het kader waarbinnen conformiteitsbeoordelingen worden beheerd.
+        <strong>BIS Certificering :</strong> Het proces van het verlenen van
+        goedkeuring aan een product nadat is vastgesteld dat het voldoet aan de
+        vereiste Indiase Normen. Het is het kader waarbinnen
+        conformiteitsbeoordelingen worden beheerd.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>ISI Mark :</strong> Het kwaliteitssymbool of het standaardmerk dat
-        wordt toegekend aan een product nadat BIS certificering is verkregen. Het
-        geeft aan dat het product volledig is gecertificeerd en voldoet aan de vereiste
-        Indiase Normen.
+        <strong>ISI Mark :</strong> Het kwaliteitssymbool of het standaardmerk
+        dat wordt toegekend aan een product nadat BIS certificering is
+        verkregen. Het geeft aan dat het product volledig is gecertificeerd en
+        voldoet aan de vereiste Indiase Normen.
       </p>
       <p className="service-left-content-paragraph">
-        Op deze manier vormt ISI de fysieke certificeerbare verbintenis,
-        terwijl BIS certificering het benodigde administratieve kader biedt.{" "}
+        Op deze manier vormt ISI de fysieke certificeerbare verbintenis, terwijl
+        BIS certificering het benodigde administratieve kader biedt.{" "}
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -782,61 +787,63 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS ISI Mark Certificering heeft een aanzienlijke waarde voor binnenlandse
-        fabrikanten, zoals:
+        BIS ISI Mark Certificering heeft een aanzienlijke waarde voor
+        binnenlandse fabrikanten, zoals:
       </p>
 
       <p className="service-left-content-paragraph">
         <strong>1. Kwaliteitsgarantie:</strong> Het ISI merk betekent dat het
         strenge tests en inspecties heeft doorstaan, waardoor de vastgestelde
-        hoogste kwaliteitsnormen worden gehandhaafd. Dit verhoogt op zijn beurt de betrouwbaarheid
-        en betrouwbaarheid van het product terwijl de kans op defecten wordt geminimaliseerd.
+        hoogste kwaliteitsnormen worden gehandhaafd. Dit verhoogt op zijn beurt
+        de betrouwbaarheid en betrouwbaarheid van het product terwijl de kans op
+        defecten wordt geminimaliseerd.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>2. Vertrouwen van de Consument:</strong> Producten gelabeld met ISI
-        merk worden algemeen als veilig en effectief beschouwd. Dit
-        draagt bij aan merk loyaliteit, en dus een robuuster en gerenommeerder
-        merk.
+        <strong>2. Vertrouwen van de Consument:</strong> Producten gelabeld met
+        ISI merk worden algemeen als veilig en effectief beschouwd. Dit draagt
+        bij aan merk loyaliteit, en dus een robuuster en gerenommeerder merk.
       </p>
 
       <p className="service-left-content-paragraph">
         <strong>3. Toegang tot de Markt:</strong> De Indiase markt heeft een
-        overvloed aan artikelen die strikt verboden zijn als men geen
-        geldig ISI certificaat bezit. In dergelijke gevallen dient het ISI merk als de
+        overvloed aan artikelen die strikt verboden zijn als men geen geldig ISI
+        certificaat bezit. In dergelijke gevallen dient het ISI merk als de
         poort voor het faciliteren van verkopen.
       </p>
 
       <p className="service-left-content-paragraph">
         <strong>4. Markttoegang Verkrijgen:</strong> Binnen een zeer
-        competitieve omgeving worden ISI gecertificeerde producten gezien als met een
-        positieve reputatie, waardoor ze een hoger concurrentievoordeel hebben ten opzichte van
-        anderen die niet gecertificeerd zijn.
+        competitieve omgeving worden ISI gecertificeerde producten gezien als
+        met een positieve reputatie, waardoor ze een hoger concurrentievoordeel
+        hebben ten opzichte van anderen die niet gecertificeerd zijn.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>5. Regelgevingsconformiteit:</strong> BIS normen zijn zodanig dat
-        een fabrikant waarvan de producten zich aan dergelijke normen houden een soepele,
-        onbelemmerde werking heeft, vrij van juridische complexiteit.
+        <strong>5. Regelgevingsconformiteit:</strong> BIS normen zijn zodanig
+        dat een fabrikant waarvan de producten zich aan dergelijke normen houden
+        een soepele, onbelemmerde werking heeft, vrij van juridische
+        complexiteit.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>6. Export Promotie:</strong> Producten die ISI gecertificeerd zijn
-        en dus een sterke merk reputatie bezitten, hebben meer kans om te worden begunstigd
-        door buitenlandse markten vanwege de perceptie dat het hoge kwaliteit is en
-        voldoet aan mondiale normen.
+        <strong>6. Export Promotie:</strong> Producten die ISI gecertificeerd
+        zijn en dus een sterke merk reputatie bezitten, hebben meer kans om te
+        worden begunstigd door buitenlandse markten vanwege de perceptie dat het
+        hoge kwaliteit is en voldoet aan mondiale normen.
       </p>
 
       <p className="service-left-content-paragraph">
         <strong>7. Veiligheid van de Consument:</strong> Elk product met ISI
-        certificering garandeert de veiligheid van de consument tegen eventuele potentiële
-        gevaren, ongelukken of slechte productprestaties.
+        certificering garandeert de veiligheid van de consument tegen eventuele
+        potentiële gevaren, ongelukken of slechte productprestaties.
       </p>
 
       <p className="service-left-content-paragraph">
         <strong>8. Kwaliteitscontrole:</strong> De noodzaak om constant
-        onderzoeken en controles uit te voeren garandeert dat de fabrikanten in staat zijn om
-        constante kwaliteit te bereiken voor alle geproduceerde batches.
+        onderzoeken en controles uit te voeren garandeert dat de fabrikanten in
+        staat zijn om constante kwaliteit te bereiken voor alle geproduceerde
+        batches.
       </p>
     </div>
   );
@@ -871,9 +878,9 @@ const RequirementSection = () => {
         Proces van BIS ISI Certificering voor Binnenlandse Fabrikanten
       </h2>
       <p className="service-left-content-paragraph">
-        Het verkrijgen van de BIS certificering is een proces in meerdere stappen. Er zijn twee
-        hoofdprocedures om het BIS certificeringsproces te benaderen: Normale
-        Procedure en Vereenvoudigde Procedure.{" "}
+        Het verkrijgen van de BIS certificering is een proces in meerdere
+        stappen. Er zijn twee hoofdprocedures om het BIS certificeringsproces te
+        benaderen: Normale Procedure en Vereenvoudigde Procedure.{" "}
       </p>
       <h3 className="service-left-content-heading-three">
         1. Normale Procedure (60-65 Dagen)
@@ -943,8 +950,8 @@ const DocumentsSection = () => {
         Voordelen van BIS ISI Mark Certificering
       </h3>
       <p className="service-left-content-paragraph">
-        Voor Indiase fabrikanten biedt het verkrijgen van de BIS ISI Mark Certificering
-        specifieke voordelen:
+        Voor Indiase fabrikanten biedt het verkrijgen van de BIS ISI Mark
+        Certificering specifieke voordelen:
       </p>
       <PointsListWithoutHeading
         points={[
@@ -961,8 +968,8 @@ const DocumentsSection = () => {
         Intrekking van BIS Licentie{" "}
       </h3>
       <p className="service-left-content-paragraph">
-        De licentie om te certificeren is het exclusieve eigendom van de BIS autoriteit en deze kan
-        een dergelijke licentie annuleren indien:
+        De licentie om te certificeren is het exclusieve eigendom van de BIS
+        autoriteit en deze kan een dergelijke licentie annuleren indien:
       </p>
       <PointsListWithoutHeading
         points={[
@@ -973,9 +980,9 @@ const DocumentsSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Volgens Regeling 11 van BIS (Conformiteitsbeoordeling) Regelingen,
-        2018, is er geen twijfel dat de licentie kan worden geschorst of geannuleerd voor
-        het niet naleven van de genoteerde regelingen.
+        Volgens Regeling 11 van BIS (Conformiteitsbeoordeling) Regelingen, 2018,
+        is er geen twijfel dat de licentie kan worden geschorst of geannuleerd
+        voor het niet naleven van de genoteerde regelingen.
       </p>
     </div>
   );
@@ -994,25 +1001,26 @@ const ConclusionSection = () => {
 
       <p className="service-left-content-paragraph">
         Voor de BIS ISI Mark Certificering, nogmaals, er is geen twijfel dat het
-        meer is dan alleen bureaucratische stappen voor fabrikanten in India. Het
-        helpt bij het vestigen van een positieve reputatie en het bereiken van duurzame
-        groei in het bedrijf. Als de BIS normen worden nageleefd, dan is er
-        uiterste gecertificeerde garantie dat de producten betrouwbaar zijn en klaar zijn voor
-        verkoop.
+        meer is dan alleen bureaucratische stappen voor fabrikanten in India.
+        Het helpt bij het vestigen van een positieve reputatie en het bereiken
+        van duurzame groei in het bedrijf. Als de BIS normen worden nageleefd,
+        dan is er uiterste gecertificeerde garantie dat de producten betrouwbaar
+        zijn en klaar zijn voor verkoop.
       </p>
 
       <p className="service-left-content-paragraph">
         Concluderend is het ISI merk meer geworden dan alleen een juridische
-        conformiteit, het is een merkteken van garantie geworden in een zakelijke omgeving
-        waar vertrouwen moeilijk te vinden is. Het is een teken van concurrentievermogen in de
-        markt samen met naleving van regelgeving.
+        conformiteit, het is een merkteken van garantie geworden in een
+        zakelijke omgeving waar vertrouwen moeilijk te vinden is. Het is een
+        teken van concurrentievermogen in de markt samen met naleving van
+        regelgeving.
       </p>
 
       <p className="service-left-content-paragraph">
-        Of u nu elektronische producten, bouwelementen of
-        andere producten voor verkoop produceert, BIS ISI Certificering zorgt ervoor dat uw producten
-        overeenkomen met India's eersteklas normen terwijl u uw
-        reputatie beschermt evenals uw consumenten.
+        Of u nu elektronische producten, bouwelementen of andere producten voor
+        verkoop produceert, BIS ISI Certificering zorgt ervoor dat uw producten
+        overeenkomen met India's eersteklas normen terwijl u uw reputatie
+        beschermt evenals uw consumenten.
       </p>
     </div>
   );
@@ -1160,8 +1168,9 @@ const ISIMarkServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1290,4 +1299,3 @@ const PointsListWithoutHeading = ({ points }) => {
     </div>
   );
 };
-

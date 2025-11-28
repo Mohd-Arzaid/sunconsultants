@@ -35,7 +35,6 @@ import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -48,7 +47,6 @@ import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideCo
 import FooterThai from "@/components/manual/Footer/FooterThai";
 import ServicesRightSideContentThai from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentThai";
 import ServiceAuthorThai from "@/components/manual/ServiceAuthor/ServiceAuthorThai";
-
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -69,12 +67,11 @@ const SchemeXThai = () => {
       <FooterThai />
       {/* Scroll To Top Button Section */}
       <ScrollToTopButton />
-
     </div>
-  )
-}
+  );
+};
 
-export default SchemeXThai
+export default SchemeXThai;
 
 const SchemeXMetaTags = () => {
   const breadcrumbStructuredData = {
@@ -114,7 +111,6 @@ const SchemeXMetaTags = () => {
       <meta name="publisher" content="Sun Certifications India" />
       <meta name="robots" content="index, follow" />
 
-
       {/* Canonical URL */}
       <link rel="canonical" href={window.location.href} />
 
@@ -146,11 +142,9 @@ const SchemeXMetaTags = () => {
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbStructuredData)}
       </script>
-
-
     </Helmet>
-  )
-}
+  );
+};
 const SchemeXBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
@@ -167,7 +161,8 @@ const SchemeXBreadcrumb = () => {
                 <SlashIcon />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbPage>การรับรอง BIS ของอินเดียภายใต้ Scheme-X
+                <BreadcrumbPage>
+                  การรับรอง BIS ของอินเดียภายใต้ Scheme-X
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -175,8 +170,8 @@ const SchemeXBreadcrumb = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXHero = () => {
   return (
@@ -208,9 +203,10 @@ const SchemeXHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            การรับรอง BIS Scheme X ครอบคลุมเครื่องจักร อุปกรณ์ไฟฟ้า และส่วนประกอบ การประกอบ และส่วนย่อยภายใต้กฎระเบียบทางเทคนิคแบบครอบคลุม (OTR)
+            การรับรอง BIS Scheme X ครอบคลุมเครื่องจักร อุปกรณ์ไฟฟ้า
+            และส่วนประกอบ การประกอบ
+            และส่วนย่อยภายใต้กฎระเบียบทางเทคนิคแบบครอบคลุม (OTR)
           </p>
-
 
           <div className="flex items-center -mt-2">
             <div
@@ -238,10 +234,9 @@ const SchemeXHero = () => {
         {/* Right Side */}
         <SchemeXHeroContactForm />
       </div>
-
     </main>
-  )
-}
+  );
+};
 
 const SchemeXHeroContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -330,8 +325,7 @@ const SchemeXHeroContactForm = () => {
       }
       toast({
         title: "ส่งฟอร์มติดต่อเรียบร้อยแล้ว!",
-        description:
-          "ขอบคุณที่ติดต่อเรา ทีมของเราจะติดต่อกลับในเร็ว ๆ นี้",
+        description: "ขอบคุณที่ติดต่อเรา ทีมของเราจะติดต่อกลับในเร็ว ๆ นี้",
       });
 
       setFormData({
@@ -350,8 +344,7 @@ const SchemeXHeroContactForm = () => {
       toast({
         variant: "destructive",
         title: errorMessage || "ส่งข้อมูลฟอร์มติดต่อล้มเหลว!",
-        description:
-          "เกิดข้อผิดพลาด กรุณาตรวจสอบข้อมูลและลองอีกครั้ง",
+        description: "เกิดข้อผิดพลาด กรุณาตรวจสอบข้อมูลและลองอีกครั้ง",
       });
     } finally {
       setLoading(false);
@@ -470,7 +463,6 @@ const SchemeXHeroContactForm = () => {
   );
 };
 
-
 const SchemeXIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("overview");
@@ -480,12 +472,7 @@ const SchemeXIndex = () => {
   const toggleButtonRef = useRef(null);
 
   const SECTIONS = useMemo(
-    () => [
-      "overview",
-      "process",
-      "documents",
-      "conclusion",
-    ],
+    () => ["overview", "process", "documents", "conclusion"],
     []
   );
 
@@ -577,8 +564,9 @@ const SchemeXIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -628,10 +616,11 @@ const SchemeXIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -651,18 +640,20 @@ const SchemeXIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -688,8 +679,8 @@ const SchemeXMainContent = () => {
         <Services />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const Services = () => {
   return (
@@ -737,8 +728,9 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -857,7 +849,6 @@ const SchemeXProductTable = () => {
   return (
     <div className="w-full pb-12">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-
         <div className="flex flex-col gap-2 mt-6">
           <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
             มาตรฐานความปลอดภัยตามผลิตภัณฑ์
@@ -874,9 +865,7 @@ const SchemeXProductTable = () => {
           </div>
           <input
             type="text"
-            placeholder={
-              "ค้นหาตามคำอธิบายหรือรหัส HS..."
-            }
+            placeholder={"ค้นหาตามคำอธิบายหรือรหัส HS..."}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -890,10 +879,9 @@ const SchemeXProductTable = () => {
       <div ref={table3Ref}>
         <TypeCTable searchQuery={searchQuery} />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 const productDataTableThird = [
   {
@@ -923,7 +911,8 @@ const productDataTableThird = [
   },
   {
     id: 4,
-    description: "หรือเครื่องจักรสำหรับการกรองหรือทำให้บริสุทธิ์สำหรับของเหลวและก๊าซ",
+    description:
+      "หรือเครื่องจักรสำหรับการกรองหรือทำให้บริสุทธิ์สำหรับของเหลวและก๊าซ",
     hsCode: "842122, 842129, 842131, 842139, 842191 and 842199",
     indianStandard: "-",
     title: "-",
@@ -992,8 +981,7 @@ const productDataTableThird = [
     description: "ทุกประเภทของเครื่องจักรสำหรับการทำงานยางและพลาสติก",
     hsCode: "8477",
     indianStandard: "IS/ISO 20430: 2020",
-    title:
-      "เครื่องจักรพลาสติกและยาง-เครื่องฉีดขึ้นรูป-ข้อกำหนดด้านความปลอดภัย",
+    title: "เครื่องจักรพลาสติกและยาง-เครื่องฉีดขึ้นรูป-ข้อกำหนดด้านความปลอดภัย",
   },
   {
     id: 13,
@@ -1045,7 +1033,8 @@ const productDataTableThird = [
     description: "ทุกประเภทของตัวแปลงเซมิคอนดักเตอร์กำลัง",
     hsCode: "850440",
     indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
-    title: "มาตรา 7 ของตัวแปลงเซมิคอนดักเตอร์ ส่วนที่ 1 ข้อกำหนดทั่วไปและตัวแปลงคอมมิวเทตแบบไลน์ ส่วนที่ 1 ข้อกำหนดพื้นฐาน",
+    title:
+      "มาตรา 7 ของตัวแปลงเซมิคอนดักเตอร์ ส่วนที่ 1 ข้อกำหนดทั่วไปและตัวแปลงคอมมิวเทตแบบไลน์ ส่วนที่ 1 ข้อกำหนดพื้นฐาน",
   },
   {
     id: 19,
@@ -1068,7 +1057,7 @@ const productDataTableThird = [
 
 const TypeCTable = ({ searchQuery }) => {
   // Filter data based on search query
-  const filteredData = productDataTableThird.filter(item => {
+  const filteredData = productDataTableThird.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1082,7 +1071,8 @@ const TypeCTable = ({ searchQuery }) => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-        TYPE C (มาตรฐานความปลอดภัยเครื่องจักรที่จัดการกับข้อกำหนดด้านความปลอดภัยโดยละเอียดสำหรับเครื่องจักรเฉพาะหรือกลุ่มเครื่องจักร)
+        TYPE C
+        (มาตรฐานความปลอดภัยเครื่องจักรที่จัดการกับข้อกำหนดด้านความปลอดภัยโดยละเอียดสำหรับเครื่องจักรเฉพาะหรือกลุ่มเครื่องจักร)
       </p>
 
       <div className="rounded-md border bg-white shadow-sm">
@@ -1133,7 +1123,10 @@ const TypeCTable = ({ searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={5}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   ไม่พบผลลัพธ์สำหรับ &quot;{searchQuery}&quot;
                 </TableCell>
               </TableRow>
@@ -1379,7 +1372,8 @@ const productDataTableSecond = [
   {
     id: 40,
     isNumber: "IS 16818 : 2018/ ISO 13850 : 2015",
-    title: "ความปลอดภัยของเครื่องจักร ฟังก์ชันหยุดฉุกเฉิน หลักการสำหรับการออกแบบ",
+    title:
+      "ความปลอดภัยของเครื่องจักร ฟังก์ชันหยุดฉุกเฉิน หลักการสำหรับการออกแบบ",
   },
   {
     id: 41,
@@ -1465,7 +1459,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   const itemsPerPage = 20;
 
   // Filter data based on search query
-  const filteredData = productDataTableSecond.filter(item => {
+  const filteredData = productDataTableSecond.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1481,10 +1475,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredData.slice(
-    indexOfFirstItem,
-    indexOfLastItem
-  );
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
@@ -1511,7 +1502,8 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-        TYPE B (มาตรฐานความปลอดภัยทั่วไปที่จัดการกับด้านความปลอดภัยหนึ่งด้านหรือมากกว่าหนึ่งประเภทของตัวป้องกันที่สามารถใช้ได้ในเครื่องจักรหลากหลาย)
+        TYPE B
+        (มาตรฐานความปลอดภัยทั่วไปที่จัดการกับด้านความปลอดภัยหนึ่งด้านหรือมากกว่าหนึ่งประเภทของตัวป้องกันที่สามารถใช้ได้ในเครื่องจักรหลากหลาย)
       </p>
 
       <div className="rounded-md border bg-white shadow-sm">
@@ -1546,7 +1538,10 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={3}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   ไม่พบผลลัพธ์สำหรับ &quot;{searchQuery}&quot;
                 </TableCell>
               </TableRow>
@@ -1585,64 +1580,84 @@ const SchemeXServiceFaq = () => {
   const faqData = [
     {
       question: "1. Scheme X ภายใต้การรับรอง BIS คืออะไร?",
-      answer: "Scheme X คือแผนการประเมินความสอดคล้องที่นำเสนอโดย BIS ของอินเดียสำหรับเครื่องจักรและอุปกรณ์ไฟฟ้า มันทำให้มั่นใจในความสอดคล้องกับมาตรฐานความปลอดภัยและทางเทคนิคที่เข้มงวดตามที่กำหนดในกฎระเบียบทางเทคนิคแบบครอบคลุม"
+      answer:
+        "Scheme X คือแผนการประเมินความสอดคล้องที่นำเสนอโดย BIS ของอินเดียสำหรับเครื่องจักรและอุปกรณ์ไฟฟ้า มันทำให้มั่นใจในความสอดคล้องกับมาตรฐานความปลอดภัยและทางเทคนิคที่เข้มงวดตามที่กำหนดในกฎระเบียบทางเทคนิคแบบครอบคลุม",
     },
     {
       question: "2. Scheme X แตกต่างจากการรับรองเครื่องหมาย ISI หรือไม่?",
-      answer: "ใช่ เครื่องหมาย ISI ใช้สำหรับสินค้าอุปโภคบริโภคและการปฏิบัติตามผลิตภัณฑ์พื้นฐาน ในขณะที่ Scheme X ใช้กับผลิตภัณฑ์ที่ซับซ้อนและเกรดอุตสาหกรรมที่ต้องการการทดสอบและการรับรองขั้นสูงผ่านใบรับรอง BIS หรือใบอนุญาต BIS"
+      answer:
+        "ใช่ เครื่องหมาย ISI ใช้สำหรับสินค้าอุปโภคบริโภคและการปฏิบัติตามผลิตภัณฑ์พื้นฐาน ในขณะที่ Scheme X ใช้กับผลิตภัณฑ์ที่ซับซ้อนและเกรดอุตสาหกรรมที่ต้องการการทดสอบและการรับรองขั้นสูงผ่านใบรับรอง BIS หรือใบอนุญาต BIS",
     },
     {
       question: "3. ใครต้องสมัครการรับรอง Scheme X?",
-      answer: "ผู้ผลิตและผู้นำเข้าของเครื่องจักรและอุปกรณ์ไฟฟ้าที่ระบุในกฎระเบียบทางเทคนิคแบบครอบคลุมต้องสมัคร Scheme X และได้รับการรับรอง BIS ที่ถูกต้องเพื่อขายหรือแจกจ่ายผลิตภัณฑ์ของตนในอินเดียอย่างถูกกฎหมาย ผู้ผลิตทั่วโลกหรือผู้ผลิตต่างชาติที่ตั้งใจขายผลิตภัณฑ์ในอินเดียต้องปฏิบัติตามกฎระเบียบเหล่านี้ด้วย"
+      answer:
+        "ผู้ผลิตและผู้นำเข้าของเครื่องจักรและอุปกรณ์ไฟฟ้าที่ระบุในกฎระเบียบทางเทคนิคแบบครอบคลุมต้องสมัคร Scheme X และได้รับการรับรอง BIS ที่ถูกต้องเพื่อขายหรือแจกจ่ายผลิตภัณฑ์ของตนในอินเดียอย่างถูกกฎหมาย ผู้ผลิตทั่วโลกหรือผู้ผลิตต่างชาติที่ตั้งใจขายผลิตภัณฑ์ในอินเดียต้องปฏิบัติตามกฎระเบียบเหล่านี้ด้วย",
     },
     {
       question: "4. ค่าใช้จ่ายในการรับรอง BIS Scheme X คือเท่าไร?",
-      answer: "ค่าใช้จ่ายของ Scheme X รวมถึงค่าธรรมเนียมการสมัคร ค่าธรรมเนียมการรับรอง ค่าทบทวนไฟล์ทางเทคนิค ค่าโรงงานตรวจสอบ และค่าทดสอบผลิตภัณฑ์ โดยเฉลี่ยเริ่มต้นที่ ₹2,000 สำหรับการสมัครและอาจสูงขึ้นตามความซับซ้อนของผลิตภัณฑ์ สำหรับรายละเอียดเพิ่มเติม ติดต่อเราที่ admin@bis-certifications.com"
+      answer:
+        "ค่าใช้จ่ายของ Scheme X รวมถึงค่าธรรมเนียมการสมัคร ค่าธรรมเนียมการรับรอง ค่าทบทวนไฟล์ทางเทคนิค ค่าโรงงานตรวจสอบ และค่าทดสอบผลิตภัณฑ์ โดยเฉลี่ยเริ่มต้นที่ ₹2,000 สำหรับการสมัครและอาจสูงขึ้นตามความซับซ้อนของผลิตภัณฑ์ สำหรับรายละเอียดเพิ่มเติม ติดต่อเราที่ admin@bis-certifications.com",
     },
     {
       question: "5. ใช้เวลานานแค่ไหนในการรับใบอนุญาต BIS ภายใต้ Scheme X?",
-      answer: "ระยะเวลาขึ้นอยู่กับเอกสาร ข้อกำหนดการทดสอบ และการตรวจสอบโรงงาน โดยปกติใช้เวลา 4–6 สัปดาห์นับจากวันที่ลงทะเบียน BIS และส่งใบสมัครสำเร็จสำหรับผู้ผลิตในอินเดีย และ 60-90 วันสำหรับผู้ผลิตต่างชาติ"
+      answer:
+        "ระยะเวลาขึ้นอยู่กับเอกสาร ข้อกำหนดการทดสอบ และการตรวจสอบโรงงาน โดยปกติใช้เวลา 4–6 สัปดาห์นับจากวันที่ลงทะเบียน BIS และส่งใบสมัครสำเร็จสำหรับผู้ผลิตในอินเดีย และ 60-90 วันสำหรับผู้ผลิตต่างชาติ",
     },
     {
       question: "6. MSMEs สามารถสมัครการรับรอง BIS ภายใต้ Scheme X ได้หรือไม่?",
-      answer: "แน่นอน ในความเป็นจริง BIS ของอินเดียสนับสนุนให้ MSMEs สมัครใบอนุญาต BIS หรือใบรับรองความสอดคล้องภายใต้ Scheme X เพื่อเพิ่มคุณภาพ การปฏิบัติตาม และความสามารถในการแข่งขันในภาคอุตสาหกรรม"
+      answer:
+        "แน่นอน ในความเป็นจริง BIS ของอินเดียสนับสนุนให้ MSMEs สมัครใบอนุญาต BIS หรือใบรับรองความสอดคล้องภายใต้ Scheme X เพื่อเพิ่มคุณภาพ การปฏิบัติตาม และความสามารถในการแข่งขันในภาคอุตสาหกรรม",
     },
     {
-      question: "7. การรับรอง BIS ภายใต้ Scheme X จำเป็นสำหรับการส่งออกหรือไม่?",
-      answer: "ไม่ ผลิตภัณฑ์ที่ผลิตสำหรับการส่งออกเท่านั้นได้รับการยกเว้นภายใต้กฎระเบียบทางเทคนิคแบบครอบคลุม อย่างไรก็ตาม ผลิตภัณฑ์ที่ตั้งใจสำหรับตลาดอินเดียต้องได้รับการรับรองภายใต้ Scheme X"
+      question:
+        "7. การรับรอง BIS ภายใต้ Scheme X จำเป็นสำหรับการส่งออกหรือไม่?",
+      answer:
+        "ไม่ ผลิตภัณฑ์ที่ผลิตสำหรับการส่งออกเท่านั้นได้รับการยกเว้นภายใต้กฎระเบียบทางเทคนิคแบบครอบคลุม อย่างไรก็ตาม ผลิตภัณฑ์ที่ตั้งใจสำหรับตลาดอินเดียต้องได้รับการรับรองภายใต้ Scheme X",
     },
     {
       question: "8. อายุการใช้งานของใบอนุญาต BIS ภายใต้ Scheme X คือเท่าไร?",
-      answer: "ใบอนุญาต BIS ภายใต้ Scheme X มีอายุการใช้งานโดยทั่วไป 3-6 ปี และต้องต่ออายุตามนั้น การต่ออายุเกี่ยวข้องกับการชำระค่าธรรมเนียมการรับรอง BIS ประจำปีและอาจต้องมีการประเมินใหม่ขึ้นอยู่กับการเปลี่ยนแปลงในขอบเขตผลิตภัณฑ์หรือมาตรฐาน"
+      answer:
+        "ใบอนุญาต BIS ภายใต้ Scheme X มีอายุการใช้งานโดยทั่วไป 3-6 ปี และต้องต่ออายุตามนั้น การต่ออายุเกี่ยวข้องกับการชำระค่าธรรมเนียมการรับรอง BIS ประจำปีและอาจต้องมีการประเมินใหม่ขึ้นอยู่กับการเปลี่ยนแปลงในขอบเขตผลิตภัณฑ์หรือมาตรฐาน",
     },
     {
       question: "9. ผู้ผลิตต่างชาติสามารถสมัครการรับรอง Scheme X ได้หรือไม่?",
-      answer: "ใช่ ผู้ผลิตต่างชาติสามารถสมัครการรับรอง Scheme X ผ่านตัวแทนอินเดียที่ได้รับอนุญาต BIS ของอินเดียต้องการการตรวจสอบโรงงาน ซึ่งอาจใช้เวลา 3 วันสำหรับผู้สมัครต่างชาติ พร้อมกับกระบวนการลงทะเบียน BIS และการทดสอบมาตรฐาน"
+      answer:
+        "ใช่ ผู้ผลิตต่างชาติสามารถสมัครการรับรอง Scheme X ผ่านตัวแทนอินเดียที่ได้รับอนุญาต BIS ของอินเดียต้องการการตรวจสอบโรงงาน ซึ่งอาจใช้เวลา 3 วันสำหรับผู้สมัครต่างชาติ พร้อมกับกระบวนการลงทะเบียน BIS และการทดสอบมาตรฐาน",
     },
     {
       question: "10. ไฟล์ทางเทคนิคคืออะไรและทำไมจึงจำเป็น?",
-      answer: "ไฟล์ทางเทคนิคคือเอกสารการปฏิบัติตามโดยละเอียดที่จำเป็นภายใต้ Scheme X มันรวมถึงกระบวนการผลิต รายละเอียดผลิตภัณฑ์ รายงานการทดสอบ และเอกสารควบคุมคุณภาพ มันสนับสนุนความสอดคล้องของผลิตภัณฑ์กับมาตรฐานอินเดียที่เกี่ยวข้องในระหว่างกระบวนการรับรอง BIS"
+      answer:
+        "ไฟล์ทางเทคนิคคือเอกสารการปฏิบัติตามโดยละเอียดที่จำเป็นภายใต้ Scheme X มันรวมถึงกระบวนการผลิต รายละเอียดผลิตภัณฑ์ รายงานการทดสอบ และเอกสารควบคุมคุณภาพ มันสนับสนุนความสอดคล้องของผลิตภัณฑ์กับมาตรฐานอินเดียที่เกี่ยวข้องในระหว่างกระบวนการรับรอง BIS",
     },
     {
-      question: "11. Scheme X เกี่ยวข้องกับกฎระเบียบทางเทคนิคแบบครอบคลุมอย่างไร?",
-      answer: "กฎระเบียบทางเทคนิคแบบครอบคลุมกำหนดให้ใช้ Scheme X สำหรับหมวดหมู่เฉพาะของเครื่องจักรและอุปกรณ์ไฟฟ้าในอินเดีย ผลิตภัณฑ์ที่ระบุในกฎระเบียบต้องได้รับการรับรองภายใต้ Scheme X เพื่อรับใบรับรอง BIS หรือใบอนุญาต BIS ที่ถูกต้อง"
+      question:
+        "11. Scheme X เกี่ยวข้องกับกฎระเบียบทางเทคนิคแบบครอบคลุมอย่างไร?",
+      answer:
+        "กฎระเบียบทางเทคนิคแบบครอบคลุมกำหนดให้ใช้ Scheme X สำหรับหมวดหมู่เฉพาะของเครื่องจักรและอุปกรณ์ไฟฟ้าในอินเดีย ผลิตภัณฑ์ที่ระบุในกฎระเบียบต้องได้รับการรับรองภายใต้ Scheme X เพื่อรับใบรับรอง BIS หรือใบอนุญาต BIS ที่ถูกต้อง",
     },
     {
       question: "12. ใบรับรอง BIS ภายใต้ Scheme X สามารถถูกเพิกถอนได้หรือไม่?",
-      answer: "ใช่ BIS ของอินเดียสามารถระงับหรือยกเลิกใบอนุญาต BIS หรือใบรับรองภายใต้ Scheme X หากพบการไม่ปฏิบัติตามระหว่างการเฝ้าระวังหรือหากผลิตภัณฑ์ไม่ตรงตามมาตรฐานอินเดียที่จำเป็น"
+      answer:
+        "ใช่ BIS ของอินเดียสามารถระงับหรือยกเลิกใบอนุญาต BIS หรือใบรับรองภายใต้ Scheme X หากพบการไม่ปฏิบัติตามระหว่างการเฝ้าระวังหรือหากผลิตภัณฑ์ไม่ตรงตามมาตรฐานอินเดียที่จำเป็น",
     },
     {
-      question: "13. ความแตกต่างระหว่างใบอนุญาต BIS และใบรับรอง BIS ภายใต้ Scheme X คืออะไร?",
-      answer: "ใบอนุญาต BIS มักออกให้ผู้ผลิตในอินเดีย ในขณะที่ใบรับรองความสอดคล้อง BIS (CoC) มักออกให้ผู้ผลิตต่างชาติหรือกรณีเฉพาะ ทั้งสองมีวัตถุประสงค์เดียวกัน—การทำให้มั่นใจในการปฏิบัติตามผลิตภัณฑ์ภายใต้ Scheme X"
+      question:
+        "13. ความแตกต่างระหว่างใบอนุญาต BIS และใบรับรอง BIS ภายใต้ Scheme X คืออะไร?",
+      answer:
+        "ใบอนุญาต BIS มักออกให้ผู้ผลิตในอินเดีย ในขณะที่ใบรับรองความสอดคล้อง BIS (CoC) มักออกให้ผู้ผลิตต่างชาติหรือกรณีเฉพาะ ทั้งสองมีวัตถุประสงค์เดียวกัน—การทำให้มั่นใจในการปฏิบัติตามผลิตภัณฑ์ภายใต้ Scheme X",
     },
     {
-      question: "14. เครื่องหมาย ISI อนุญาตสำหรับผลิตภัณฑ์ที่ได้รับการรับรองภายใต้ Scheme X หรือไม่?",
-      answer: "ไม่ ผลิตภัณฑ์ภายใต้ Scheme X ไม่ใช้เครื่องหมาย ISI แทนที่จะใช้เครื่องหมายมาตรฐาน BIS ที่เกี่ยวข้องกับแผนการรับรอง ตามที่กำกับโดย BIS ของอินเดีย"
+      question:
+        "14. เครื่องหมาย ISI อนุญาตสำหรับผลิตภัณฑ์ที่ได้รับการรับรองภายใต้ Scheme X หรือไม่?",
+      answer:
+        "ไม่ ผลิตภัณฑ์ภายใต้ Scheme X ไม่ใช้เครื่องหมาย ISI แทนที่จะใช้เครื่องหมายมาตรฐาน BIS ที่เกี่ยวข้องกับแผนการรับรอง ตามที่กำกับโดย BIS ของอินเดีย",
     },
     {
-      question: "ฉันจะรู้ได้อย่างไรว่าเครื่องจักรของฉันต้องการการรับรอง Scheme X?",
-      answer: "ตรวจสอบรายการอย่างเป็นทางการในกฎระเบียบทางเทคนิคแบบครอบคลุมหรือปรึกษาที่ปรึกษา BIS เพื่อยืนยันว่าเครื่องจักรของคุณตกอยู่ภายใต้ข้อกำหนดการรับรอง Scheme X ที่บังคับ"
-    }
+      question:
+        "ฉันจะรู้ได้อย่างไรว่าเครื่องจักรของฉันต้องการการรับรอง Scheme X?",
+      answer:
+        "ตรวจสอบรายการอย่างเป็นทางการในกฎระเบียบทางเทคนิคแบบครอบคลุมหรือปรึกษาที่ปรึกษา BIS เพื่อยืนยันว่าเครื่องจักรของคุณตกอยู่ภายใต้ข้อกำหนดการรับรอง Scheme X ที่บังคับ",
+    },
   ];
 
   return (
@@ -1688,7 +1703,6 @@ const SchemeXMainContentLeft = () => {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-
         {/* Overview Section */}
         <SchemeXMainContentLeftOverviewSection />
 
@@ -1716,8 +1730,8 @@ const SchemeXMainContentLeft = () => {
         <ServiceAuthorThai />
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftConclusionSection = () => {
   return (
@@ -1728,22 +1742,27 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        สรุป
-      </h2>
+      <h2 className="service-left-content-heading-two">สรุป</h2>
 
       <p className="service-left-content-paragraph">
-        การรับรอง BIS Scheme-X ยังคงสำคัญในการรักษาความปลอดภัย ความน่าเชื่อถือ และคุณภาพของสวิตช์เกียร์และอุปกรณ์ควบคุมแรงดันต่ำ เครื่องจักรและอุปกรณ์ไฟฟ้า สำหรับผู้ผลิตเครื่องมือที่ใช้ในการแปรรูปหิน เซรามิก คอนกรีต ยางมะตอยซีเมนต์และแก้วแร่ การรับรอง BIS Scheme-X เป็นสิ่งบังคับ
+        การรับรอง BIS Scheme-X ยังคงสำคัญในการรักษาความปลอดภัย ความน่าเชื่อถือ
+        และคุณภาพของสวิตช์เกียร์และอุปกรณ์ควบคุมแรงดันต่ำ
+        เครื่องจักรและอุปกรณ์ไฟฟ้า สำหรับผู้ผลิตเครื่องมือที่ใช้ในการแปรรูปหิน
+        เซรามิก คอนกรีต ยางมะตอยซีเมนต์และแก้วแร่ การรับรอง BIS Scheme-X
+        เป็นสิ่งบังคับ
       </p>
-
 
       <p className="service-left-content-paragraph">
-        โดยการปฏิบัติตามข้อผูกพันเหล่านี้ ผู้ผลิตรับประกันความสอดคล้องของผลิตภัณฑ์ เพิ่มความเชื่อมั่นของผู้บริโภค และปรับปรุงความน่าเชื่อถือในตลาด Scheme-X ทำให้มั่นใจว่าการผลิตราบรื่นที่สุด มาตรฐานความปลอดภัยทั่วโลกได้รับการตอบสนอง และแบรนด์ที่ได้รับการยอมรับมีชื่อเสียงในเชิงบวก
+        โดยการปฏิบัติตามข้อผูกพันเหล่านี้
+        ผู้ผลิตรับประกันความสอดคล้องของผลิตภัณฑ์ เพิ่มความเชื่อมั่นของผู้บริโภค
+        และปรับปรุงความน่าเชื่อถือในตลาด Scheme-X
+        ทำให้มั่นใจว่าการผลิตราบรื่นที่สุด
+        มาตรฐานความปลอดภัยทั่วโลกได้รับการตอบสนอง
+        และแบรนด์ที่ได้รับการยอมรับมีชื่อเสียงในเชิงบวก
       </p>
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftDocumentsSection = () => {
   return (
@@ -1758,9 +1777,9 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         เอกสารสำคัญที่จำเป็นสำหรับการรับรอง BIS Scheme X
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        เพื่อให้กระบวนการรับรอง BIS เป็นไปอย่างราบรื่น ผู้ผลิตจำเป็นต้องรวบรวมและส่งเอกสารต่อไปนี้ในขั้นตอนการลงทะเบียน:
+        เพื่อให้กระบวนการรับรอง BIS เป็นไปอย่างราบรื่น
+        ผู้ผลิตจำเป็นต้องรวบรวมและส่งเอกสารต่อไปนี้ในขั้นตอนการลงทะเบียน:
       </p>
 
       <div className="mt-[16px] md:mt-[24px]">
@@ -1809,7 +1828,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 รายละเอียดการติดต่อ
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                ที่อยู่อีเมล หมายเลขโทรศัพท์มือถือ และสายโทรศัพท์พื้นสำหรับการสื่อสารอย่างเป็นทางการ
+                ที่อยู่อีเมล หมายเลขโทรศัพท์มือถือ
+                และสายโทรศัพท์พื้นสำหรับการสื่อสารอย่างเป็นทางการ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1873,8 +1893,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         ]}
       />
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftProcessSection = () => {
   return (
@@ -1889,11 +1909,11 @@ const SchemeXMainContentLeftProcessSection = () => {
         ขั้นตอนในการรับการรับรองภายใต้ BIS Scheme-X
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        การออกใบรับรอง BIS ภายใต้ Scheme-X เป็นกิจกรรมระบบที่ตั้งใจให้มั่นใจว่าผู้ผลิตปฏิบัติตามมาตรฐานความปลอดภัย คุณภาพ และการปฏิบัติตามที่เกี่ยวข้อง กระบวนการดังนี้:
+        การออกใบรับรอง BIS ภายใต้ Scheme-X
+        เป็นกิจกรรมระบบที่ตั้งใจให้มั่นใจว่าผู้ผลิตปฏิบัติตามมาตรฐานความปลอดภัย
+        คุณภาพ และการปฏิบัติตามที่เกี่ยวข้อง กระบวนการดังนี้:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1907,33 +1927,32 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         ไฟล์นี้ทำหน้าที่เป็นหลักฐานทางเทคนิคและสถิติของการอ้างสิทธิ์ผลิตภัณฑ์ที่สนับสนุนมาตรฐานการติดตามความปลอดภัย
       </p>
 
-
       <p className="service-left-content-paragraph">
-        ในช่วงการตรวจสอบ เจ้าหน้าที่ BIS คาดว่าจะ:
-        วิเคราะห์ไฟล์ทางเทคนิค ประเมินวิธีการผลิตพร้อมกับระบบรับประกันคุณภาพที่สนับสนุน สังเกตการทดสอบผลิตภัณฑ์ กำหนดการไม่ปฏิบัติตาม (หากมี) และให้ขั้นตอนการแก้ไข รายงานการตรวจสอบโดยละเอียดจะให้แก่ผู้สมัครหลังการเยี่ยมชม
+        ในช่วงการตรวจสอบ เจ้าหน้าที่ BIS คาดว่าจะ: วิเคราะห์ไฟล์ทางเทคนิค
+        ประเมินวิธีการผลิตพร้อมกับระบบรับประกันคุณภาพที่สนับสนุน
+        สังเกตการทดสอบผลิตภัณฑ์ กำหนดการไม่ปฏิบัติตาม (หากมี)
+        และให้ขั้นตอนการแก้ไข
+        รายงานการตรวจสอบโดยละเอียดจะให้แก่ผู้สมัครหลังการเยี่ยมชม
       </p>
 
-
-
       <p className="service-left-content-paragraph">
-        กลยุทธ์นี้รักษาการปฏิบัติตามมาตรฐาน BIS และเป็นการยอมรับการปฏิบัติตามของอินเดียและนานาชาติ ทำให้อุตสาหกรรมมุ่งเน้นไปที่ความเชื่อมั่นของผู้บริโภคต่อความปลอดภัยและคุณภาพ
+        กลยุทธ์นี้รักษาการปฏิบัติตามมาตรฐาน BIS
+        และเป็นการยอมรับการปฏิบัติตามของอินเดียและนานาชาติ
+        ทำให้อุตสาหกรรมมุ่งเน้นไปที่ความเชื่อมั่นของผู้บริโภคต่อความปลอดภัยและคุณภาพ
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         ขั้นตอนสำหรับผู้ผลิตในประเทศ
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        ผู้ผลิตในประเทศปฏิบัติตามแนวทางโดยตรงโดยการรับใบอนุญาต BIS ภายใต้ Scheme-X ขั้นตอนโดยตรงที่ต้องปฏิบัติตามรวมถึง:
+        ผู้ผลิตในประเทศปฏิบัติตามแนวทางโดยตรงโดยการรับใบอนุญาต BIS ภายใต้
+        Scheme-X ขั้นตอนโดยตรงที่ต้องปฏิบัติตามรวมถึง:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1948,19 +1967,19 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        <strong>ระยะเวลาทั่วไป:</strong> ใกล้เคียง 90 วันทำงาน (ตามแนวปฏิบัติ BIS) จำเป็น นี้ให้ไม่มี non-conformities หลัก
+        <strong>ระยะเวลาทั่วไป:</strong> ใกล้เคียง 90 วันทำงาน (ตามแนวปฏิบัติ
+        BIS) จำเป็น นี้ให้ไม่มี non-conformities หลัก
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         ขั้นตอนสำหรับผู้ผลิตต่างชาติ
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        แตกต่างจากผู้ผลิตในประเทศ ผู้ผลิตต่างชาติที่สมัครใบรับรอง BIS ภายใต้ Scheme-X จำเป็นต้องปฏิบัติตามกระบวนการที่เข้มงวดกว่าและขั้นตอนเพิ่มเติม กระบวนการอธิบายดังนี้
+        แตกต่างจากผู้ผลิตในประเทศ ผู้ผลิตต่างชาติที่สมัครใบรับรอง BIS ภายใต้
+        Scheme-X จำเป็นต้องปฏิบัติตามกระบวนการที่เข้มงวดกว่าและขั้นตอนเพิ่มเติม
+        กระบวนการอธิบายดังนี้
       </p>
 
       <PointsListWithoutHeading
@@ -1978,19 +1997,18 @@ const SchemeXMainContentLeftProcessSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        การตรวจสอบประกอบด้วย: การประเมินระบบรับประกันคุณภาพและกระบวนการทำงานในกระบวนการผลิต การประเมินการปฏิบัติตามและเอกสารทางเทคนิค การเลือกตัวอย่างทดสอบอิสระ
+        การตรวจสอบประกอบด้วย:
+        การประเมินระบบรับประกันคุณภาพและกระบวนการทำงานในกระบวนการผลิต
+        การประเมินการปฏิบัติตามและเอกสารทางเทคนิค การเลือกตัวอย่างทดสอบอิสระ
       </p>
-
 
       <p className="service-left-content-paragraph">
         กระบวนการทั้งหมดใช้ โดยอิงจากแนวปฏิบัติจาก BIS โดยประมาณ 6-7 เดือน
       </p>
 
-
       <h3 className="service-left-content-heading-three">
         เคล็ดลับเพิ่มเติมสำคัญสำหรับผู้ผลิตต่างชาติ:
       </h3>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1999,10 +2017,9 @@ const SchemeXMainContentLeftProcessSection = () => {
           "การตรวจสอบโรงงาน: การตรวจสอบโรงงานสำหรับผู้ผลิตต่างชาติครอบคลุมและมักใช้เวลา 3 วัน นอกจากนี้ วันเพิ่มเติมจำเป็นในกรณีที่ยื่นแอปพลิเคชันผลิตภัณฑ์หลายรายการ",
         ]}
       />
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftOverviewSection = () => {
   // Download function for table data
@@ -2024,68 +2041,94 @@ const SchemeXMainContentLeftOverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-
       <h2 className="service-left-content-heading-two">
         บทนำสู่การรับรอง BIS Scheme X
       </h2>
 
       <p className="service-left-content-paragraph">
-        สำนักมาตรฐานอินเดีย หรือ BIS สั้นๆ ได้เปิดตัว &ldquo;Scheme X&rdquo; เมื่อวันที่ 16 มีนาคม 2022 เพื่อปรับปรุงการปฏิบัติตามความปลอดภัยและคุณภาพผลิตภัณฑ์ในอินเดีย ผู้ผลิตในอินเดียและต่างชาติสามารถสมัครการรับรอง BIS สำหรับเครื่องจักรและอุปกรณ์ไฟฟ้า ส่วนประกอบ เช่น การประกอบ ส่วนย่อย และ เครื่องมือที่ระบุในตาราง-II ของ Scheme-X และรับการรับรองก่อนส่งออก ขาย หรือแจกจ่ายในอินเดีย
+        สำนักมาตรฐานอินเดีย หรือ BIS สั้นๆ ได้เปิดตัว &ldquo;Scheme X&rdquo;
+        เมื่อวันที่ 16 มีนาคม 2022
+        เพื่อปรับปรุงการปฏิบัติตามความปลอดภัยและคุณภาพผลิตภัณฑ์ในอินเดีย
+        ผู้ผลิตในอินเดียและต่างชาติสามารถสมัครการรับรอง BIS
+        สำหรับเครื่องจักรและอุปกรณ์ไฟฟ้า ส่วนประกอบ เช่น การประกอบ ส่วนย่อย และ
+        เครื่องมือที่ระบุในตาราง-II ของ Scheme-X และรับการรับรองก่อนส่งออก ขาย
+        หรือแจกจ่ายในอินเดีย
       </p>
-
 
       <p className="service-left-content-paragraph">
-        ภายใต้ Scheme X ผู้ผลิตสามารถสมัครใบอนุญาต BIS หรือใบรับรองความสอดคล้อง (CoC) สำหรับสวิตช์เกียร์และอุปกรณ์ควบคุมแรงดันต่ำ เครื่องจักร และอุปกรณ์ไฟฟ้า เมื่อผู้ผลิตได้รับการรับรอง พวกเขาจะได้รับอนุญาตให้ใช้เครื่องหมายมาตรฐาน BIS ซึ่งบ่งชี้ว่าผลิตภัณฑ์ของพวกเขาสอดคล้องกับมาตรฐานที่กำหนดในอินเดีย
+        ภายใต้ Scheme X ผู้ผลิตสามารถสมัครใบอนุญาต BIS หรือใบรับรองความสอดคล้อง
+        (CoC) สำหรับสวิตช์เกียร์และอุปกรณ์ควบคุมแรงดันต่ำ เครื่องจักร
+        และอุปกรณ์ไฟฟ้า เมื่อผู้ผลิตได้รับการรับรอง
+        พวกเขาจะได้รับอนุญาตให้ใช้เครื่องหมายมาตรฐาน BIS
+        ซึ่งบ่งชี้ว่าผลิตภัณฑ์ของพวกเขาสอดคล้องกับมาตรฐานที่กำหนดในอินเดีย
       </p>
-
 
       <p className="service-left-content-paragraph">
-        การรับรอง ในขณะที่ส่งเสริมผลิตภัณฑ์และการปฏิบัติตามมาตรฐานอินเดียและกฎระเบียบของรัฐบาล ช่วยพัฒนาความเชื่อมั่นและความเชื่อมั่นของผู้บริโภคในผลิตภัณฑ์ที่ได้รับการรับรอง
+        การรับรอง
+        ในขณะที่ส่งเสริมผลิตภัณฑ์และการปฏิบัติตามมาตรฐานอินเดียและกฎระเบียบของรัฐบาล
+        ช่วยพัฒนาความเชื่อมั่นและความเชื่อมั่นของผู้บริโภคในผลิตภัณฑ์ที่ได้รับการรับรอง
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         การรับรอง Scheme X คืออะไร?
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Scheme X คือแผนการรับรองผลิตภัณฑ์ที่พัฒนาภายใต้กฎระเบียบการประเมินความสอดคล้อง BIS, 2018 และต่อมา ได้รับการปรับปรุงให้ง่ายขึ้นภายใต้กฎระเบียบการประเมินความสอดคล้อง BIS (แก้ไข) 2022
-      </p>
-
-
-
-      <p className="service-left-content-paragraph">
-        เป้าหมายหลักคือการนำมาตรฐานความปลอดภัยและคุณภาพของอินเดียไปสู่มาตรฐานสากล โดยเฉพาะอย่างยิ่งเกี่ยวกับเครื่องจักรอุตสาหกรรมและอุปกรณ์ไฟฟ้า ผลิตภัณฑ์ที่ผลิตในหรือนำเข้าสู่อินเดียภายใต้แผนการนี้ถูกตรวจสอบและประเมินอย่างเข้มงวดเพื่อพิสูจน์มาตรฐานทางเทคนิค ความปลอดภัย และประสิทธิภาพ
-      </p>
-
-
-      <p className="service-left-content-paragraph">
-        ข้อกำหนดภายใต้ขอบเขตดั้งเดิมของการรับรอง Scheme X ได้รับการปรับปรุงและขยายด้วยคำสั่งความปลอดภัยเครื่องจักรและอุปกรณ์ไฟฟ้า (กฎระเบียบทางเทคนิคแบบครอบคลุม) 2024 ใหม่ ซึ่งอยู่ภายใต้เขตอำนาจของกระทรวงอุตสาหกรรมหนักและถูกบังคับใช้โดย BIS คำสั่งมีผลบังคับใช้เมื่อวันที่ 1 กันยายน 2026 และครอบคลุมสเปกตรัมกว้างของเครื่องจักรและอุปกรณ์ไฟฟ้า เช่น ปั๊มสำหรับจัดการของเหลว คอมเพรสเซอร์ เครน เครื่องจักรไฟฟ้าหมุนเวียน หม้อแปลง และสวิตช์เกียร์และอุปกรณ์ควบคุม
-      </p>
-
-
-      <p className="service-left-content-paragraph">
-        การประกอบ ส่วนย่อย และส่วนประกอบของเครื่องจักรหรืออุปกรณ์ดังกล่าวเป็นส่วนหนึ่งของขอบเขตการรับรองตามมาตรา 16 ของพระราชบัญญัติสำนักมาตรฐานอินเดีย 2016
+        Scheme X
+        คือแผนการรับรองผลิตภัณฑ์ที่พัฒนาภายใต้กฎระเบียบการประเมินความสอดคล้อง
+        BIS, 2018 และต่อมา
+        ได้รับการปรับปรุงให้ง่ายขึ้นภายใต้กฎระเบียบการประเมินความสอดคล้อง BIS
+        (แก้ไข) 2022
       </p>
 
       <p className="service-left-content-paragraph">
-        นอกจากนี้ ภายใต้กฎ CMVR 1989 (การก่อสร้างและการผลิตของวาล์วกำกับ) Bowser และประเภทอื่นๆ ของอุปกรณ์ก่อสร้างภายใต้เขตอำนาจของ Scheme X ทำให้มั่นใจว่าตลาดไม่ถูกเปิดเผยต่ออุปกรณ์ที่ขาดความปลอดภัยและมาตรฐานทางเทคนิคที่จำเป็น
+        เป้าหมายหลักคือการนำมาตรฐานความปลอดภัยและคุณภาพของอินเดียไปสู่มาตรฐานสากล
+        โดยเฉพาะอย่างยิ่งเกี่ยวกับเครื่องจักรอุตสาหกรรมและอุปกรณ์ไฟฟ้า
+        ผลิตภัณฑ์ที่ผลิตในหรือนำเข้าสู่อินเดียภายใต้แผนการนี้ถูกตรวจสอบและประเมินอย่างเข้มงวดเพื่อพิสูจน์มาตรฐานทางเทคนิค
+        ความปลอดภัย และประสิทธิภาพ
       </p>
 
+      <p className="service-left-content-paragraph">
+        ข้อกำหนดภายใต้ขอบเขตดั้งเดิมของการรับรอง Scheme X
+        ได้รับการปรับปรุงและขยายด้วยคำสั่งความปลอดภัยเครื่องจักรและอุปกรณ์ไฟฟ้า
+        (กฎระเบียบทางเทคนิคแบบครอบคลุม) 2024 ใหม่
+        ซึ่งอยู่ภายใต้เขตอำนาจของกระทรวงอุตสาหกรรมหนักและถูกบังคับใช้โดย BIS
+        คำสั่งมีผลบังคับใช้เมื่อวันที่ 1 กันยายน 2026
+        และครอบคลุมสเปกตรัมกว้างของเครื่องจักรและอุปกรณ์ไฟฟ้า เช่น
+        ปั๊มสำหรับจัดการของเหลว คอมเพรสเซอร์ เครน เครื่องจักรไฟฟ้าหมุนเวียน
+        หม้อแปลง และสวิตช์เกียร์และอุปกรณ์ควบคุม
+      </p>
+
+      <p className="service-left-content-paragraph">
+        การประกอบ ส่วนย่อย
+        และส่วนประกอบของเครื่องจักรหรืออุปกรณ์ดังกล่าวเป็นส่วนหนึ่งของขอบเขตการรับรองตามมาตรา
+        16 ของพระราชบัญญัติสำนักมาตรฐานอินเดีย 2016
+      </p>
+
+      <p className="service-left-content-paragraph">
+        นอกจากนี้ ภายใต้กฎ CMVR 1989 (การก่อสร้างและการผลิตของวาล์วกำกับ) Bowser
+        และประเภทอื่นๆ ของอุปกรณ์ก่อสร้างภายใต้เขตอำนาจของ Scheme X
+        ทำให้มั่นใจว่าตลาดไม่ถูกเปิดเผยต่ออุปกรณ์ที่ขาดความปลอดภัยและมาตรฐานทางเทคนิคที่จำเป็น
+      </p>
 
       <h2 className="service-left-content-heading-three">
         กฎระเบียบทางเทคนิคแบบครอบคลุม (OTR)
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        กระทรวงอุตสาหกรรมหนักได้ออก &ldquo;กฎระเบียบทางเทคนิคแบบครอบคลุมเกี่ยวกับคำสั่งความปลอดภัย (ความปลอดภัยเครื่องจักรและอุปกรณ์ไฟฟ้า)&rdquo; ผ่านการแจ้งเตือน E-Gazette เมื่อวันที่ 28 สิงหาคม 2024 กฎระเบียบใหม่นี้ตั้งใจปรับปรุง - ความปลอดภัย คุณภาพ และการปฏิบัติตามของเครื่องจักร อุปกรณ์ไฟฟ้า และการประกอบ ส่วนย่อย และส่วนประกอบของพวกเขา ภายใต้ Scheme X ของกฎระเบียบ BIS, 2016
+        กระทรวงอุตสาหกรรมหนักได้ออก
+        &ldquo;กฎระเบียบทางเทคนิคแบบครอบคลุมเกี่ยวกับคำสั่งความปลอดภัย
+        (ความปลอดภัยเครื่องจักรและอุปกรณ์ไฟฟ้า)&rdquo; ผ่านการแจ้งเตือน
+        E-Gazette เมื่อวันที่ 28 สิงหาคม 2024 กฎระเบียบใหม่นี้ตั้งใจปรับปรุง -
+        ความปลอดภัย คุณภาพ และการปฏิบัติตามของเครื่องจักร อุปกรณ์ไฟฟ้า
+        และการประกอบ ส่วนย่อย และส่วนประกอบของพวกเขา ภายใต้ Scheme X
+        ของกฎระเบียบ BIS, 2016
       </p>
 
-
       <p className="service-left-content-paragraph">
-        ภายใต้ OTR หมวดหมู่ทั้งหมดของเครื่องจักรและอุปกรณ์ไฟฟ้า และส่วนและส่วนประกอบทั้งหมดของพวกเขาถูกรวมไว้ อย่างไรก็ตาม หมวดหมู่ไม่กี่หมวดถูกยกเว้นโดยเฉพาะ:
+        ภายใต้ OTR หมวดหมู่ทั้งหมดของเครื่องจักรและอุปกรณ์ไฟฟ้า
+        และส่วนและส่วนประกอบทั้งหมดของพวกเขาถูกรวมไว้ อย่างไรก็ตาม
+        หมวดหมู่ไม่กี่หมวดถูกยกเว้นโดยเฉพาะ:
       </p>
 
       <PointsListWithoutHeading
@@ -2096,53 +2139,57 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         ข้อยกเว้นเหล่านี้ทำเพื่ออำนวยความสะดวกในการปฏิบัติตามและหลีกเลี่ยงการซ้ำซ้อนของกฎระเบียบที่ไม่จำเป็นเพื่อส่งเสริมความสะดวกในการทำธุรกิจ
       </p>
 
-
-
       <p className="service-left-content-paragraph">
-        กฎระเบียบทางเทคนิคแบบครอบคลุม 2024 ครอบคลุมเครื่องจักรและอุปกรณ์ไฟฟ้าทั้งหมด รวมถึงสวิตช์เกียร์และอุปกรณ์ควบคุมแรงดันต่ำที่แจ้งโดยกระทรวงอุตสาหกรรมหนัก จะถูกจัดการภายใต้กรอบ Scheme X ของการรับรอง BIS คำสั่งจะมีผลบังคับใช้เมื่อวันที่ 1 กันยายน 2026 เพื่อให้ผู้ผลิตและผู้นำเข้ามีเวลาพอในการปรับปรุงการดำเนินงานตามคำสั่งที่ออก
+        กฎระเบียบทางเทคนิคแบบครอบคลุม 2024
+        ครอบคลุมเครื่องจักรและอุปกรณ์ไฟฟ้าทั้งหมด
+        รวมถึงสวิตช์เกียร์และอุปกรณ์ควบคุมแรงดันต่ำที่แจ้งโดยกระทรวงอุตสาหกรรมหนัก
+        จะถูกจัดการภายใต้กรอบ Scheme X ของการรับรอง BIS
+        คำสั่งจะมีผลบังคับใช้เมื่อวันที่ 1 กันยายน 2026
+        เพื่อให้ผู้ผลิตและผู้นำเข้ามีเวลาพอในการปรับปรุงการดำเนินงานตามคำสั่งที่ออก
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         การรับรอง BIS ภายใต้กฎระเบียบทางเทคนิคแบบครอบคลุม
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        ตาม OTR 2024 ผู้ผลิตและผู้นำเข้าของเครื่องจักรและอุปกรณ์ไฟฟ้าซึ่งรวมถึงปั๊ม คอมเพรสเซอร์ เซนทริฟูจ เครน หม้อแปลง และสวิตช์เกียร์ต้องสมัครการรับรอง BIS ภายใต้ Scheme X
+        ตาม OTR 2024
+        ผู้ผลิตและผู้นำเข้าของเครื่องจักรและอุปกรณ์ไฟฟ้าซึ่งรวมถึงปั๊ม
+        คอมเพรสเซอร์ เซนทริฟูจ เครน หม้อแปลง และสวิตช์เกียร์ต้องสมัครการรับรอง
+        BIS ภายใต้ Scheme X
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         ภายใต้ Scheme X ผู้ผลิตสามารถเลือกสมัคร:
       </p>
 
-
       <PointsListWithoutHeading
         points={["ใบอนุญาต BIS หรือ", "ใบรับรองความสอดคล้อง (CoC)"]}
       />
 
-
       <p className="service-left-content-paragraph">
-        ผลิตภัณฑ์ที่ติดเครื่องหมายมาตรฐาน BIS ซึ่งเป็นเครื่องหมายของความสอดคล้องที่รับรองและรับประกันผู้ใช้ว่าผลิตภัณฑ์ปลอดภัย น่าเชื่อถือ และมีคุณภาพดี มันยังเป็นเครื่องหมายของความเชื่อมั่นและประสิทธิภาพที่ดีจริงๆ
+        ผลิตภัณฑ์ที่ติดเครื่องหมายมาตรฐาน BIS
+        ซึ่งเป็นเครื่องหมายของความสอดคล้องที่รับรองและรับประกันผู้ใช้ว่าผลิตภัณฑ์ปลอดภัย
+        น่าเชื่อถือ และมีคุณภาพดี
+        มันยังเป็นเครื่องหมายของความเชื่อมั่นและประสิทธิภาพที่ดีจริงๆ
       </p>
-
 
       <h3 className="service-left-content-heading-three">
         หมายเหตุพิเศษสำหรับ MSMEs
       </h3>
 
-
       <p className="service-left-content-paragraph">
-        เช่นเดียวกับภาคส่วนอื่นๆ องค์กรขนาดกลางขนาดเล็กและขนาดย่อม (MSMEs) ต้องปฏิบัติตาม Scheme X และรับการรับรอง BIS สำหรับเครื่องจักรและอุปกรณ์ไฟฟ้าของพวกเขา ในขณะที่อาจดูว่าการปฏิบัติตามข้อกำหนดทางกฎระเบียบอาจท้าทาย ใบรับรอง Scheme X เป็นการเพิ่มมูลค่าและข้อได้เปรียบสำหรับ MSMEs ด้วยเหตุผลต่อไปนี้:
+        เช่นเดียวกับภาคส่วนอื่นๆ องค์กรขนาดกลางขนาดเล็กและขนาดย่อม (MSMEs)
+        ต้องปฏิบัติตาม Scheme X และรับการรับรอง BIS
+        สำหรับเครื่องจักรและอุปกรณ์ไฟฟ้าของพวกเขา
+        ในขณะที่อาจดูว่าการปฏิบัติตามข้อกำหนดทางกฎระเบียบอาจท้าทาย ใบรับรอง
+        Scheme X เป็นการเพิ่มมูลค่าและข้อได้เปรียบสำหรับ MSMEs
+        ด้วยเหตุผลต่อไปนี้:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2153,18 +2200,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        โลโก้ BIS Scheme X
-      </h3>
-
-
+      <h3 className="service-left-content-heading-three">โลโก้ BIS Scheme X</h3>
 
       <p className="service-left-content-paragraph">
-        เครื่องหมายมาตรฐาน BIS ของ Scheme X เป็นเครื่องหมายคุณภาพและหลักการของความเชื่อมั่น โลโก้ประกอบด้วย:
+        เครื่องหมายมาตรฐาน BIS ของ Scheme X
+        เป็นเครื่องหมายคุณภาพและหลักการของความเชื่อมั่น โลโก้ประกอบด้วย:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2173,12 +2214,11 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <p className="service-left-content-paragraph">
-        เครื่องหมายนี้บ่งชี้ว่าผู้ผลิตได้รับใบอนุญาต BIS สำเร็จ มันให้สิทธิ์ผู้ผลิตในการวางเครื่องหมาย BIS และรับประกันผู้บริโภคว่าผลิตภัณฑ์เป็นของแท้และปลอดภัย
+        เครื่องหมายนี้บ่งชี้ว่าผู้ผลิตได้รับใบอนุญาต BIS สำเร็จ
+        มันให้สิทธิ์ผู้ผลิตในการวางเครื่องหมาย BIS
+        และรับประกันผู้บริโภคว่าผลิตภัณฑ์เป็นของแท้และปลอดภัย
       </p>
-
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
@@ -2189,23 +2229,20 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-
-      <h3 className="service-left-content-heading-three">
-        ผลกระทบทางกฎหมาย
-      </h3>
-
+      <h3 className="service-left-content-heading-three">ผลกระทบทางกฎหมาย</h3>
 
       <p className="service-left-content-paragraph">
-        เครื่องหมายมาตรฐาน BIS เป็นเครื่องหมายของความเชื่อมั่นและคุณภาพ เครื่องหมายนี้มีให้หลังจากสัญญาที่ถูกต้องมีผลบังคับใช้เท่านั้น สัญญาที่ถูกต้องเท่านั้นที่อนุญาตให้เจ้าของใช้เครื่องหมาย การใช้เครื่องหมายโดยไม่มีสัญญาที่ถูกต้องเป็นความผิดตามรัฐธรรมนูญอินเดียและเท่ากับการมีเครื่องหมายทางกฎหมาย เจ้าของเครื่องหมายถูกจำกัดอย่างหนักสำหรับการใช้ใบอนุญาต CM/L-XXXXXXXXXX สำหรับผลิตภัณฑ์ที่ไม่มีรับรอง BIS
+        เครื่องหมายมาตรฐาน BIS เป็นเครื่องหมายของความเชื่อมั่นและคุณภาพ
+        เครื่องหมายนี้มีให้หลังจากสัญญาที่ถูกต้องมีผลบังคับใช้เท่านั้น
+        สัญญาที่ถูกต้องเท่านั้นที่อนุญาตให้เจ้าของใช้เครื่องหมาย
+        การใช้เครื่องหมายโดยไม่มีสัญญาที่ถูกต้องเป็นความผิดตามรัฐธรรมนูญอินเดียและเท่ากับการมีเครื่องหมายทางกฎหมาย
+        เจ้าของเครื่องหมายถูกจำกัดอย่างหนักสำหรับการใช้ใบอนุญาต CM/L-XXXXXXXXXX
+        สำหรับผลิตภัณฑ์ที่ไม่มีรับรอง BIS
       </p>
-
-
-
 
       <p className="service-left-content-paragraph">
         มันตามมาว่าผู้ผลิตทุกคนมีหน้าที่:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2215,22 +2252,16 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        กรอบกฎระเบียบนี้ขยายเพื่อปกป้องผลประโยชน์ของผู้บริโภคและนักธุรกิจ ส่งเสริมตลาดที่เน้นความปลอดภัย ความโปร่งใส และความเชื่อมั่น
+        กรอบกฎระเบียบนี้ขยายเพื่อปกป้องผลประโยชน์ของผู้บริโภคและนักธุรกิจ
+        ส่งเสริมตลาดที่เน้นความปลอดภัย ความโปร่งใส และความเชื่อมั่น
       </p>
-
-
 
       <h2 className="service-left-content-heading-three">
         ความแตกต่างหลักระหว่าง Scheme-I และ Scheme-X
       </h2>
 
-
-      <h3 className="service-left-content-heading-three">
-        Scheme-I
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Scheme-I</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2241,9 +2272,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
-        Scheme-X
-      </h3>
+      <h3 className="service-left-content-heading-three">Scheme-X</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2329,17 +2358,15 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-
       <h3 className="service-left-content-heading-three">
         ผลิตภัณฑ์ที่ครอบคลุมโดย Scheme-X
       </h3>
 
-
       <p className="service-left-content-paragraph">
-        Scheme-X ครอบคลุมผลิตภัณฑ์ที่มีความเสี่ยงสูงสุดต่อความปลอดภัยและประสิทธิภาพ รวมถึง:
+        Scheme-X
+        ครอบคลุมผลิตภัณฑ์ที่มีความเสี่ยงสูงสุดต่อความปลอดภัยและประสิทธิภาพ
+        รวมถึง:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2352,7 +2379,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
       {/* Scheme X Product Table 20 */}
       <div className="mt-[16px] md:mt-[24px]">
-
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
@@ -2377,7 +2403,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของปั๊มสำหรับการจัดการของเหลว ลิฟต์ของเหลว และ (หรือ) การประกอบ/ส่วนย่อย/ส่วนประกอบของพวกเขา
+                  ทุกประเภทของปั๊มสำหรับการจัดการของเหลว ลิฟต์ของเหลว และ (หรือ)
+                  การประกอบ/ส่วนย่อย/ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2431,9 +2458,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของเซนทริฟูจ เครื่องกรองหรือเครื่องทำให้บริสุทธิ์สำหรับ
-                  ของเหลวและก๊าซ และ (หรือ) การประกอบ /ส่วนย่อย
-                  /ส่วนประกอบของพวกเขา
+                  ทุกประเภทของเซนทริฟูจ
+                  เครื่องกรองหรือเครื่องทำให้บริสุทธิ์สำหรับ ของเหลวและก๊าซ และ
+                  (หรือ) การประกอบ /ส่วนย่อย /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2503,7 +2530,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-weaving-machines-looms"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของเครื่องทอ (looms) และ (หรือ) การประกอบ/ส่วนย่อย / ส่วนประกอบ
+                  ทุกประเภทของเครื่องทอ (looms) และ (หรือ) การประกอบ/ส่วนย่อย /
+                  ส่วนประกอบ
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2519,7 +2547,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-embroidery-machinery"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของเครื่องจักรสำหรับการปักลาย และ (หรือ) การประกอบ /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  ทุกประเภทของเครื่องจักรสำหรับการปักลาย และ (หรือ) การประกอบ
+                  /ส่วนย่อย /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2535,9 +2564,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของเครื่องมือตัดโลหะที่ครอบคลุมภายใต้
-                  หัวข้อ 8456 ถึง 8461 และ (หรือ) การประกอบ
-                  /ส่วนย่อย/ส่วนประกอบของพวกเขา
+                  ทุกประเภทของเครื่องมือตัดโลหะที่ครอบคลุมภายใต้ หัวข้อ 8456 ถึง
+                  8461 และ (หรือ) การประกอบ /ส่วนย่อย/ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2553,8 +2581,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-machine-tools"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของเครื่องมือสำหรับการทำงานหิน เซรามิก,
-                  คอนกรีต อะสเบสตัสซีเมนต์ หรือแก้วแร่คล้ายกัน และ (หรือ) การประกอบ /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  ทุกประเภทของเครื่องมือสำหรับการทำงานหิน เซรามิก, คอนกรีต
+                  อะสเบสตัสซีเมนต์ หรือแก้วแร่คล้ายกัน และ (หรือ) การประกอบ
+                  /ส่วนย่อย /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2588,9 +2617,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องจักรรวมถึงเครื่องจักรสำหรับงานสาธารณะและ
-                  อาคารและเครื่องจักรและเครื่องใช้ทางกลที่มี
-                  ฟังก์ชันเดี่ยว ไม่ระบุหรือรวมที่อื่นใน
-                  บทที่ 84 และ (หรือ) การประกอบ/ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  อาคารและเครื่องจักรและเครื่องใช้ทางกลที่มี ฟังก์ชันเดี่ยว
+                  ไม่ระบุหรือรวมที่อื่นใน บทที่ 84 และ (หรือ) การประกอบ/ส่วนย่อย
+                  /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2608,7 +2637,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                 >
                   ทุกประเภทของเฟืองและเกียร์ ล้อฟัน โซ่สปร็อกเก็ต,
                   องค์ประกอบการส่งกำลังลูกบอลหรือสกรูโรลเลอร์ เกียร์บ็อกซ์และ
-                  ตัวเปลี่ยนความเร็ว รวมถึงตัวแปลงแรงบิด และ (หรือ) การประกอบ /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  ตัวเปลี่ยนความเร็ว รวมถึงตัวแปลงแรงบิด และ (หรือ) การประกอบ
+                  /ส่วนย่อย /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2624,8 +2654,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-rotary-electrical-machines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของเครื่องจักรไฟฟ้าหมุนเวียนเช่นเครื่องกำเนิด ฯลฯ
-                  และ (หรือ) การประกอบ /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  ทุกประเภทของเครื่องจักรไฟฟ้าหมุนเวียนเช่นเครื่องกำเนิด ฯลฯ และ
+                  (หรือ) การประกอบ /ส่วนย่อย /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2641,8 +2671,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-diesel-generators"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของเครื่องกำเนิดดีเซล และ (หรือ) การประกอบ
-                  /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  ทุกประเภทของเครื่องกำเนิดดีเซล และ (หรือ) การประกอบ /ส่วนย่อย
+                  /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2658,8 +2688,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-transformers"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของหม้อแปลง และ (หรือ) การประกอบ
-                  /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  ทุกประเภทของหม้อแปลง และ (หรือ) การประกอบ /ส่วนย่อย
+                  /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2676,8 +2706,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-power-semiconductor-converters"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของตัวแปลงเซมิคอนดักเตอร์กำลัง และ (หรือ)
-                  การประกอบ /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  ทุกประเภทของตัวแปลงเซมิคอนดักเตอร์กำลัง และ (หรือ) การประกอบ
+                  /ส่วนย่อย /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2694,8 +2724,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของสวิตช์เกียร์และอุปกรณ์ควบคุมที่ทำงานที่
-                  แรงดันไม่เกิน 1000 โวลต์ และ (หรือ) การประกอบ
-                  /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  แรงดันไม่เกิน 1000 โวลต์ และ (หรือ) การประกอบ /ส่วนย่อย
+                  /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2711,9 +2741,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  ทุกประเภทของสวิตช์เกียร์และอุปกรณ์ควบคุมที่ทำงานที่
-                  แรงดันเกิน 1000 โวลต์ และ (หรือ) การประกอบ
-                  /ส่วนย่อย /ส่วนประกอบของพวกเขา
+                  ทุกประเภทของสวิตช์เกียร์และอุปกรณ์ควบคุมที่ทำงานที่ แรงดันเกิน
+                  1000 โวลต์ และ (หรือ) การประกอบ /ส่วนย่อย /ส่วนประกอบของพวกเขา
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2761,18 +2790,18 @@ const SchemeXMainContentLeftOverviewSection = () => {
         มาตรฐานความปลอดภัยภายใต้ BIS Scheme - X
       </h2>
 
-
-
       <p className="service-left-content-paragraph">
-        มากกว่าเพียงความจำเป็นทางกฎหมาย การรับรอง BIS Scheme - X ให้คำมั่นสัญญาด้านความปลอดภัย คุณภาพ และความน่าเชื่อถือ การรับรองนี้ ซึ่งเกี่ยวข้องกับการยึดติดอย่างเข้มงวดกับบรรทัดฐานแห่งชาติและนานาชาติ ทำให้มั่นใจว่าเครื่องจักรและเครื่องมือไฟฟ้าที่นำเสนอให้ผู้ใช้ปลอดภัย เป็นมิตรกับสิ่งแวดล้อม และมีเสียงทางเทคนิค
+        มากกว่าเพียงความจำเป็นทางกฎหมาย การรับรอง BIS Scheme - X
+        ให้คำมั่นสัญญาด้านความปลอดภัย คุณภาพ และความน่าเชื่อถือ การรับรองนี้
+        ซึ่งเกี่ยวข้องกับการยึดติดอย่างเข้มงวดกับบรรทัดฐานแห่งชาติและนานาชาติ
+        ทำให้มั่นใจว่าเครื่องจักรและเครื่องมือไฟฟ้าที่นำเสนอให้ผู้ใช้ปลอดภัย
+        เป็นมิตรกับสิ่งแวดล้อม และมีเสียงทางเทคนิค
       </p>
 
-
       <p className="service-left-content-paragraph">
-        เพื่อรับรองภายใต้ Scheme - X ผู้ผลิตจำเป็นต้องปฏิบัติตามส่วนประกอบความปลอดภัยหลักต่อไปนี้:
+        เพื่อรับรองภายใต้ Scheme - X
+        ผู้ผลิตจำเป็นต้องปฏิบัติตามส่วนประกอบความปลอดภัยหลักต่อไปนี้:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2784,22 +2813,16 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <h2 className="service-left-content-heading-three">
         มาตรฐานกฎระเบียบภายใต้ Scheme-X
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        ผู้ผลิตจำเป็นต้องปฏิบัติตามมาตรฐานอินเดียที่เกี่ยวข้องซึ่งสอดคล้องกับมาตรฐานสากล รวมถึง:
+        ผู้ผลิตจำเป็นต้องปฏิบัติตามมาตรฐานอินเดียที่เกี่ยวข้องซึ่งสอดคล้องกับมาตรฐานสากล
+        รวมถึง:
       </p>
 
-
-      <h3 className="service-left-content-heading-three">
-        มาตรฐานประเภท A:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">มาตรฐานประเภท A:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2807,11 +2830,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        มาตรฐานประเภท B:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">มาตรฐานประเภท B:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2819,33 +2838,22 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
-      <h3 className="service-left-content-heading-three">
-        มาตรฐานประเภท C:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">มาตรฐานประเภท C:</h3>
 
       <PointsListWithoutHeading
         points={["อธิบายในตารางที่สามของคำสั่ง OTR 2024"]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        ชุด IS/IEC 60947:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">ชุด IS/IEC 60947:</h3>
 
       <PointsListWithoutHeading
         points={[
           "ครอบคลุมสวิตช์เกียร์และอุปกรณ์ควบคุมแรงดันต่ำในส่วนและมาตราเหล่านี้",
-        ]} />
+        ]}
+      />
     </div>
-  )
-}
-
-
-
+  );
+};
 
 const PointsListWithoutHeading = ({ points }) => {
   return (

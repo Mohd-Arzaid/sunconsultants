@@ -29,7 +29,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterFrench from "@/components/manual/Footer/FooterFrench";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -59,7 +58,8 @@ const ISIMarkFrench = () => {
 export default ISIMarkFrench;
 
 const ISIMarkMetaTags = () => {
-  const title = "Processus de Certification de Marque BIS ISI, Documents, Frais";
+  const title =
+    "Processus de Certification de Marque BIS ISI, Documents, Frais";
   const description =
     "La certification de marque ISI délivrée par le Bureau des Normes Indiennes est accordée aux produits qui subissent des tests et inspections rigoureux pour répondre aux normes et conformités requises";
   const keywords =
@@ -107,7 +107,8 @@ const ISIMarkBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    Processus de Certification de Marque BIS ISI, Documents, Frais
+                    Processus de Certification de Marque BIS ISI, Documents,
+                    Frais
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -150,9 +151,10 @@ const ISIMarkHero = () => {
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Dans le cadre de la vision 'Make in India', la certification BIS aide les
-            fabricants à garantir la sécurité, la qualité et la conformité des produits. Obtenez
-            la certification et développez votre marque en toute confiance.
+            Dans le cadre de la vision 'Make in India', la certification BIS
+            aide les fabricants à garantir la sécurité, la qualité et la
+            conformité des produits. Obtenez la certification et développez
+            votre marque en toute confiance.
           </p>
 
           <div className="flex items-center -mt-2">
@@ -288,7 +290,9 @@ const ISIMarkContactForm = () => {
         error.response?.data?.message || "Quelque chose s'est mal passé";
       toast({
         variant: "destructive",
-        title: errorMessage || "Échec de l'envoi des détails du formulaire de contact !",
+        title:
+          errorMessage ||
+          "Échec de l'envoi des détails du formulaire de contact !",
         description:
           "Quelque chose s'est mal passé. Veuillez vérifier vos détails et réessayer.",
       });
@@ -662,65 +666,70 @@ const OverviewSection = () => {
         />
       </div>
       <p className="service-left-content-paragraph">
-        Dans la dynamique actuelle du marché, la réputation d'une marque sur le marché d'aujourd'hui,
-        la confiance des consommateurs a une importance significative. Chaque consommateur
-        veut une assurance concernant la sécurité et la fiabilité d'un produit, ainsi que
-        les étapes de contrôle de la qualité prises lors de sa fabrication. Le
-        Bureau des Normes Indiennes aborde ces problèmes et préoccupations en assurant
-        des repères de qualité pour les produits vendus en Inde. La Certification de Marque ISI
-        est l'un des certificats les plus réputés décernés sous
-        BIS.
+        Dans la dynamique actuelle du marché, la réputation d'une marque sur le
+        marché d'aujourd'hui, la confiance des consommateurs a une importance
+        significative. Chaque consommateur veut une assurance concernant la
+        sécurité et la fiabilité d'un produit, ainsi que les étapes de contrôle
+        de la qualité prises lors de sa fabrication. Le Bureau des Normes
+        Indiennes aborde ces problèmes et préoccupations en assurant des repères
+        de qualité pour les produits vendus en Inde. La Certification de Marque
+        ISI est l'un des certificats les plus réputés décernés sous BIS.
       </p>
       <p className="service-left-content-paragraph">
-        Pour les fabricants nationaux, obtenir une Certification de Marque BIS ISI n'est
-        pas seulement une question d'obtention du certificat de conformité, c'est aussi
-        gagner l'acceptation du marché, la confiance de la marque et la protection juridique. La
-        marque ISI est reconnue universellement et renforce la crédibilité en Inde
-        lorsqu'il s'agit de la production d'appareils électriques, de matériaux de construction,
-        de produits chimiques ou de biens de consommation.
+        Pour les fabricants nationaux, obtenir une Certification de Marque BIS
+        ISI n'est pas seulement une question d'obtention du certificat de
+        conformité, c'est aussi gagner l'acceptation du marché, la confiance de
+        la marque et la protection juridique. La marque ISI est reconnue
+        universellement et renforce la crédibilité en Inde lorsqu'il s'agit de
+        la production d'appareils électriques, de matériaux de construction, de
+        produits chimiques ou de biens de consommation.
       </p>
       <p className="service-left-content-paragraph">
-        Cet article vise à explorer la Certification de Marque BIS ISI pour les fabricants
-        nationaux, en se concentrant spécifiquement sur l'importance, les exigences,
-        les avantages et l'ensemble du processus d'acquisition du certificat.
+        Cet article vise à explorer la Certification de Marque BIS ISI pour les
+        fabricants nationaux, en se concentrant spécifiquement sur l'importance,
+        les exigences, les avantages et l'ensemble du processus d'acquisition du
+        certificat.
       </p>
       <h2 className="service-left-content-heading-three">
         Comprendre BIS et Son Rôle
       </h2>
       <p className="service-left-content-paragraph">
-        Le Bureau des Normes Indiennes (BIS) est un organisme National de Normalisation et
-        de Certification en Inde sous le Ministère des Affaires des Consommateurs et
-        Publiques. En tant qu'organisme de réglementation, il établit et maintient des normes de
-        qualité et leur application dans diverses industries tel que dirigé sous la
-        Loi BIS de 1986.
+        Le Bureau des Normes Indiennes (BIS) est un organisme National de
+        Normalisation et de Certification en Inde sous le Ministère des Affaires
+        des Consommateurs et Publiques. En tant qu'organisme de réglementation,
+        il établit et maintient des normes de qualité et leur application dans
+        diverses industries tel que dirigé sous la Loi BIS de 1986.
       </p>
       <p className="service-left-content-paragraph">
-        Le BIS agit comme une autorité de vérification tierce qui vérifie si
-        un produit répond aux normes indiennes particulières. La certification BIS
-        fournit au fabricant non seulement une exigence légale, mais aussi
-        une marque d'approbation de confiance et de crédibilité de la part des clients.{" "}
+        Le BIS agit comme une autorité de vérification tierce qui vérifie si un
+        produit répond aux normes indiennes particulières. La certification BIS
+        fournit au fabricant non seulement une exigence légale, mais aussi une
+        marque d'approbation de confiance et de crédibilité de la part des
+        clients.{" "}
       </p>
       <h2 className="service-left-content-heading-three">
         Qu'est-ce qu'une Marque ISI ?
       </h2>
       <p className="service-left-content-paragraph">
-        La certification de marque ISI (marque de l'Institut des Normes Indiennes) est la
-        marque de certification la plus ancienne et la plus reconnue du Bureau des
-        Normes Indiennes (BIS) en Inde. La certification ISI se concentre sur
-        la confirmation qu'un produit répond aux exigences de base des normes de qualité
-        établies par BIS en relation avec la sécurité, la qualité, les performances et
-        la fiabilité.{" "}
+        La certification de marque ISI (marque de l'Institut des Normes
+        Indiennes) est la marque de certification la plus ancienne et la plus
+        reconnue du Bureau des Normes Indiennes (BIS) en Inde. La certification
+        ISI se concentre sur la confirmation qu'un produit répond aux exigences
+        de base des normes de qualité établies par BIS en relation avec la
+        sécurité, la qualité, les performances et la fiabilité.{" "}
       </p>
       <p className="service-left-content-paragraph">
-        Les produits qui portent la marque ISI ont subi des tests approfondis en laboratoire et
-        des inspections d'usine. Il garantit que des procédures de contrôle de qualité appropriées
-        sont mises en place et suivies pendant les étapes de production. Les consommateurs peuvent obtenir et utiliser des produits sûrs et fiables
-        étiquetés avec la marque ISI. La marque ISI est un outil de confiance entre le
-        consommateur et le fabricant et cette marque va au-delà de la norme.
+        Les produits qui portent la marque ISI ont subi des tests approfondis en
+        laboratoire et des inspections d'usine. Il garantit que des procédures
+        de contrôle de qualité appropriées sont mises en place et suivies
+        pendant les étapes de production. Les consommateurs peuvent obtenir et
+        utiliser des produits sûrs et fiables étiquetés avec la marque ISI. La
+        marque ISI est un outil de confiance entre le consommateur et le
+        fabricant et cette marque va au-delà de la norme.
       </p>
       <p className="service-left-content-paragraph">
-        Quelques exemples de produits pour lesquels une certification ISI obligatoire est
-        requise sont les suivants :{" "}
+        Quelques exemples de produits pour lesquels une certification ISI
+        obligatoire est requise sont les suivants :{" "}
       </p>
       <PointsListWithoutHeading
         points={[
@@ -731,12 +740,12 @@ const OverviewSection = () => {
         ]}
       />
       <p className="service-left-content-paragraph">
-        Il y a plus de 650 produits qui nécessitent une certification BIS obligatoire
-        pour utiliser la marque standard (Marque ISI) selon le Schéma I
-        Annexe I du Bureau des Normes Indiennes. Les produits maintenus sous le
-        schéma de certification obligatoire ne peuvent pas être fabriqués, importés ou vendus
-        sur le marché indien sans la marque ISI. La liste des produits obligatoires
-        peut être consultée sur ce{" "}
+        Il y a plus de 650 produits qui nécessitent une certification BIS
+        obligatoire pour utiliser la marque standard (Marque ISI) selon le
+        Schéma I Annexe I du Bureau des Normes Indiennes. Les produits maintenus
+        sous le schéma de certification obligatoire ne peuvent pas être
+        fabriqués, importés ou vendus sur le marché indien sans la marque ISI.
+        La liste des produits obligatoires peut être consultée sur ce{" "}
         <a
           href="#product-table"
           onClick={(e) => {
@@ -756,20 +765,22 @@ const OverviewSection = () => {
         Quelle est la Différence Entre la Certification BIS et la Marque ISI ?
       </h2>
       <p className="service-left-content-paragraph">
-        Bien qu'elles soient souvent confondues et utilisées comme synonymes, la Certification BIS et la Marque ISI
-        ont des définitions et des objectifs spécifiques :
+        Bien qu'elles soient souvent confondues et utilisées comme synonymes, la
+        Certification BIS et la Marque ISI ont des définitions et des objectifs
+        spécifiques :
       </p>
       <p className="service-left-content-paragraph">
-        <strong>Certification BIS :</strong> Le processus d'octroi d'approbation à
-        un produit après s'être assuré qu'il répond aux Normes Indiennes requises. C'est
-        le cadre sous lequel les évaluations de conformité sont administrées.
+        <strong>Certification BIS :</strong> Le processus d'octroi d'approbation
+        à un produit après s'être assuré qu'il répond aux Normes Indiennes
+        requises. C'est le cadre sous lequel les évaluations de conformité sont
+        administrées.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>Marque ISI :</strong> Le symbole de qualité ou la marque standard qui
-        est décernée à un produit après l'obtention de la certification BIS. Elle
-        indique que le produit a été entièrement certifié et répond aux
-        Normes Indiennes requises.
+        <strong>Marque ISI :</strong> Le symbole de qualité ou la marque
+        standard qui est décernée à un produit après l'obtention de la
+        certification BIS. Elle indique que le produit a été entièrement
+        certifié et répond aux Normes Indiennes requises.
       </p>
       <p className="service-left-content-paragraph">
         De cette manière, ISI constitue l'engagement certifiable physique,
@@ -777,64 +788,70 @@ const OverviewSection = () => {
       </p>
 
       <h2 className="service-left-content-heading-three">
-        Pourquoi la Certification de Marque BIS ISI est-elle Importante pour les Fabricants ?
+        Pourquoi la Certification de Marque BIS ISI est-elle Importante pour les
+        Fabricants ?
       </h2>
 
       <p className="service-left-content-paragraph">
-        La Certification de Marque BIS ISI a une valeur significative pour les fabricants
-        nationaux, tels que :
+        La Certification de Marque BIS ISI a une valeur significative pour les
+        fabricants nationaux, tels que :
       </p>
 
       <p className="service-left-content-paragraph">
         <strong>1. Assurance Qualité :</strong> La marque ISI signifie qu'elle a
         passé des tests et inspections rigoureux, maintenant ainsi les normes
-        les plus élevées établies de qualité. Cela, à son tour, augmente la fiabilité
-        et la fiabilité du produit tout en minimisant les chances de défauts.
+        les plus élevées établies de qualité. Cela, à son tour, augmente la
+        fiabilité et la fiabilité du produit tout en minimisant les chances de
+        défauts.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>2. Confiance du Consommateur :</strong> Les produits étiquetés avec la marque ISI
-        sont généralement considérés comme sûrs et efficaces. Cela
-        contribue à la fidélité à la marque, et donc à une marque plus robuste et réputée.
+        <strong>2. Confiance du Consommateur :</strong> Les produits étiquetés
+        avec la marque ISI sont généralement considérés comme sûrs et efficaces.
+        Cela contribue à la fidélité à la marque, et donc à une marque plus
+        robuste et réputée.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>3. Accès au Marché :</strong> Le marché indien a une
-        abondance d'articles qui sont strictement interdits si l'on ne possède pas
-        un certificat ISI valide. Dans de tels cas, la marque ISI sert de
+        <strong>3. Accès au Marché :</strong> Le marché indien a une abondance
+        d'articles qui sont strictement interdits si l'on ne possède pas un
+        certificat ISI valide. Dans de tels cas, la marque ISI sert de
         passerelle pour faciliter les ventes.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>4. Obtention d'Admission sur le Marché :</strong> Dans un environnement très
-        compétitif, les produits certifiés ISI sont considérés comme ayant une
-        réputation positive, ayant ainsi un avantage concurrentiel plus élevé par rapport
-        à d'autres qui ne sont pas certifiés.
+        <strong>4. Obtention d'Admission sur le Marché :</strong> Dans un
+        environnement très compétitif, les produits certifiés ISI sont
+        considérés comme ayant une réputation positive, ayant ainsi un avantage
+        concurrentiel plus élevé par rapport à d'autres qui ne sont pas
+        certifiés.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>5. Conformités Réglementaires :</strong> Les normes BIS sont telles que
-        un fabricant dont les produits s'alignent avec de telles normes a une opération
-        fluide, sans entrave, exempte de complexité juridique.
+        <strong>5. Conformités Réglementaires :</strong> Les normes BIS sont
+        telles que un fabricant dont les produits s'alignent avec de telles
+        normes a une opération fluide, sans entrave, exempte de complexité
+        juridique.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>6. Promotion des Exportations :</strong> Les produits qui sont certifiés ISI
-        et possèdent donc une forte réputation de marque sont plus susceptibles d'être favorisés
-        par les marchés étrangers en raison de la perception qu'ils sont de haute qualité et
-        répondent aux normes mondiales.
+        <strong>6. Promotion des Exportations :</strong> Les produits qui sont
+        certifiés ISI et possèdent donc une forte réputation de marque sont plus
+        susceptibles d'être favorisés par les marchés étrangers en raison de la
+        perception qu'ils sont de haute qualité et répondent aux normes
+        mondiales.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>7. Sécurité du Consommateur :</strong> Tout produit avec certification ISI
-        garantit la sécurité du consommateur contre tout danger potentiel,
-        accidents ou mauvaise performance du produit.
+        <strong>7. Sécurité du Consommateur :</strong> Tout produit avec
+        certification ISI garantit la sécurité du consommateur contre tout
+        danger potentiel, accidents ou mauvaise performance du produit.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>8. Contrôle de la Qualité :</strong> La nécessité d'effectuer des
-        examens et vérifications constants garantit que les fabricants peuvent
-        atteindre une qualité constante pour tous les lots produits.
+        <strong>8. Contrôle de la Qualité :</strong> La nécessité d'effectuer
+        des examens et vérifications constants garantit que les fabricants
+        peuvent atteindre une qualité constante pour tous les lots produits.
       </p>
     </div>
   );
@@ -852,8 +869,8 @@ const RequirementSection = () => {
         Exigences de Base pour la Certification de Marque BIS ISI
       </h2>
       <p className="service-left-content-paragraph">
-        Pour obtenir la certification BIS, les fabricants nationaux doivent remplir les
-        obligations clés suivantes.
+        Pour obtenir la certification BIS, les fabricants nationaux doivent
+        remplir les obligations clés suivantes.
       </p>
       <PointsListWithoutHeading
         points={[
@@ -869,9 +886,9 @@ const RequirementSection = () => {
         Processus de Certification BIS ISI pour les Fabricants Nationaux
       </h2>
       <p className="service-left-content-paragraph">
-        Obtenir la certification BIS est un processus en plusieurs étapes. Il y a deux
-        procédures principales pour aborder le processus de certification BIS : Procédure
-        Normale et Procédure Simplifiée.{" "}
+        Obtenir la certification BIS est un processus en plusieurs étapes. Il y
+        a deux procédures principales pour aborder le processus de certification
+        BIS : Procédure Normale et Procédure Simplifiée.{" "}
       </p>
       <h3 className="service-left-content-heading-three">
         1. Procédure Normale (60-65 Jours)
@@ -959,8 +976,8 @@ const DocumentsSection = () => {
         Révocation de la Licence BIS{" "}
       </h3>
       <p className="service-left-content-paragraph">
-        La licence pour certifier est la propriété exclusive de l'autorité BIS et elle
-        peut annuler une telle licence si :
+        La licence pour certifier est la propriété exclusive de l'autorité BIS
+        et elle peut annuler une telle licence si :
       </p>
       <PointsListWithoutHeading
         points={[
@@ -972,8 +989,8 @@ const DocumentsSection = () => {
 
       <p className="service-left-content-paragraph">
         Selon le Règlement 11 des Règlements BIS (Évaluation de la Conformité),
-        2018, il ne fait aucun doute que la licence peut être suspendue ou annulée pour
-        non-conformité aux règlements notés.
+        2018, il ne fait aucun doute que la licence peut être suspendue ou
+        annulée pour non-conformité aux règlements notés.
       </p>
     </div>
   );
@@ -991,26 +1008,27 @@ const ConclusionSection = () => {
       <h2 className="service-left-content-heading-two">Conclusion</h2>
 
       <p className="service-left-content-paragraph">
-        Pour la Certification de Marque BIS ISI, encore une fois, il ne fait aucun doute qu'elle a
-        plus que de simples étapes bureaucratiques pour les fabricants en Inde. Elle aide
-        à établir une réputation positive et à réaliser une croissance durable
-        dans l'entreprise. Si les normes BIS sont respectées, alors il y a
-        une assurance certifiée maximale que les produits sont fiables et prêts pour
-        la vente.
+        Pour la Certification de Marque BIS ISI, encore une fois, il ne fait
+        aucun doute qu'elle a plus que de simples étapes bureaucratiques pour
+        les fabricants en Inde. Elle aide à établir une réputation positive et à
+        réaliser une croissance durable dans l'entreprise. Si les normes BIS
+        sont respectées, alors il y a une assurance certifiée maximale que les
+        produits sont fiables et prêts pour la vente.
       </p>
 
       <p className="service-left-content-paragraph">
         En conclusion, la marque ISI est devenue plus qu'un simple conformité
-        légale, elle est devenue une marque d'assurance dans un environnement commercial
-        où la confiance est difficile à trouver. C'est un signe de compétitivité sur le
-        marché ainsi que de conformité aux règlements.
+        légale, elle est devenue une marque d'assurance dans un environnement
+        commercial où la confiance est difficile à trouver. C'est un signe de
+        compétitivité sur le marché ainsi que de conformité aux règlements.
       </p>
 
       <p className="service-left-content-paragraph">
-        Peu importe si vous fabriquez des produits électroniques, des éléments de construction ou
-        tout autre produit pour la vente, la Certification BIS ISI garantit que vos produits
-        sont alignés avec les normes de premier rang de l'Inde tout en protégeant votre
-        réputation ainsi que vos consommateurs.
+        Peu importe si vous fabriquez des produits électroniques, des éléments
+        de construction ou tout autre produit pour la vente, la Certification
+        BIS ISI garantit que vos produits sont alignés avec les normes de
+        premier rang de l'Inde tout en protégeant votre réputation ainsi que vos
+        consommateurs.
       </p>
     </div>
   );
@@ -1019,12 +1037,14 @@ const ConclusionSection = () => {
 const ISIMarkFaq = () => {
   const faqData = [
     {
-      question: "Qu'est-ce que la certification BIS et pourquoi est-elle importante ?",
+      question:
+        "Qu'est-ce que la certification BIS et pourquoi est-elle importante ?",
       answer:
         "La certification BIS est délivrée par le Bureau des Normes Indiennes pour s'assurer que les produits respectent les normes de sécurité et de qualité de l'Inde. Elle est vitale pour la conformité légale, la confiance des consommateurs et l'acceptation sur le marché.",
     },
     {
-      question: "Quelle est la différence entre la licence BIS et la marque ISI ?",
+      question:
+        "Quelle est la différence entre la licence BIS et la marque ISI ?",
       answer:
         "La licence BIS est un document juridique qui autorise un fabricant à utiliser la marque ISI. La marque ISI est l'étiquette visible sur les produits indiquant la certification BIS.",
     },
@@ -1044,17 +1064,20 @@ const ISIMarkFaq = () => {
         "Les coûts varient mais peuvent aller de ₹25,000 à ₹100,000+, incluant les essais, l'audit et les frais de licence.",
     },
     {
-      question: "La certification BIS est-elle obligatoire pour tous les produits ?",
+      question:
+        "La certification BIS est-elle obligatoire pour tous les produits ?",
       answer:
         "Non. Elle est obligatoire uniquement pour les produits listés sous le schéma 1 de certification BIS.",
     },
     {
-      question: "Comment puis-je trouver la norme IS appropriée pour mon produit ?",
+      question:
+        "Comment puis-je trouver la norme IS appropriée pour mon produit ?",
       answer:
         "Visitez le site web de BIS ou consultez avec les laboratoires d'essai et consultants reconnus par BIS pour identifier la norme applicable.",
     },
     {
-      question: "Les fabricants étrangers peuvent-ils demander la certification BIS ?",
+      question:
+        "Les fabricants étrangers peuvent-ils demander la certification BIS ?",
       answer:
         "Oui. Par le Schéma de Certification des Fabricants Étrangers (FMCS), les entités étrangères peuvent obtenir des licences BIS pour l'utilisation de la marque ISI.",
     },
@@ -1158,8 +1181,9 @@ const ISIMarkServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1288,4 +1312,3 @@ const PointsListWithoutHeading = ({ points }) => {
     </div>
   );
 };
-

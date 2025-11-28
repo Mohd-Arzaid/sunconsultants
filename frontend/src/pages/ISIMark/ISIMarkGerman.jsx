@@ -29,7 +29,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterGerman from "@/components/manual/Footer/FooterGerman";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -59,8 +58,7 @@ const ISIMarkGerman = () => {
 export default ISIMarkGerman;
 
 const ISIMarkMetaTags = () => {
-  const title =
-    "BIS ISI Mark Zertifizierungsprozess, Dokumente, Gebühren";
+  const title = "BIS ISI Mark Zertifizierungsprozess, Dokumente, Gebühren";
   const description =
     "Die vom Bureau of Indian Standards ausgestellte ISI-Mark-Zertifizierung wird Produkten verliehen, die strenge Tests und Inspektionen durchlaufen, um die erforderlichen Standards und Vorschriften zu erfüllen";
   const keywords =
@@ -194,7 +192,8 @@ const ISIMarkContactForm = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     // Service pages
-    if (path.includes("/de/bis-isi-mark-zertifizierung")) return "ISI Mark - German Page";
+    if (path.includes("/de/bis-isi-mark-zertifizierung"))
+      return "ISI Mark - German Page";
   };
 
   const [formData, setFormData] = useState({
@@ -228,7 +227,8 @@ const ISIMarkContactForm = () => {
       toast({
         variant: "destructive",
         title: "Bitte geben Sie einen gültigen vollständigen Namen ein.",
-        description: "Der Name sollte nur Buchstaben und Leerzeichen enthalten.",
+        description:
+          "Der Name sollte nur Buchstaben und Leerzeichen enthalten.",
       });
       setLoading(false);
       return;
@@ -289,7 +289,8 @@ const ISIMarkContactForm = () => {
         error.response?.data?.message || "Etwas ist schief gelaufen";
       toast({
         variant: "destructive",
-        title: errorMessage || "Fehler beim Übermitteln der Kontaktformulardetails!",
+        title:
+          errorMessage || "Fehler beim Übermitteln der Kontaktformulardetails!",
         description:
           "Etwas ist schief gelaufen. Bitte überprüfen Sie Ihre Angaben und versuchen Sie es erneut.",
       });
@@ -668,17 +669,17 @@ const OverviewSection = () => {
         ergriffenen Qualitätskontrollmaßnahmen. Das Bureau of Indian Standards
         befasst sich mit diesen Problemen und Bedenken und stellt
         Qualitätsbenchmarks für in Indien verkaufte Produkte sicher. Die ISI
-        Mark-Zertifizierung ist eines der renommiertesten Zertifikate, die
-        unter BIS vergeben werden.
+        Mark-Zertifizierung ist eines der renommiertesten Zertifikate, die unter
+        BIS vergeben werden.
       </p>
       <p className="service-left-content-paragraph">
         Für inländische Hersteller ist die Erlangung einer BIS ISI Mark
         Zertifizierung nicht nur eine Frage des Erhalts des
-        Konformitätszertifikats, sondern auch des Erlangens von
-        Marktakzeptanz, Markenvertrauen und Rechtsschutz. Das ISI-Markenzeichen
-        ist weltweit anerkannt und stärkt die Glaubwürdigkeit in Indien, wenn
-        es um die Herstellung von Elektrogeräten, Baumaterialien, Chemikalien
-        oder Haushaltswaren geht.
+        Konformitätszertifikats, sondern auch des Erlangens von Marktakzeptanz,
+        Markenvertrauen und Rechtsschutz. Das ISI-Markenzeichen ist weltweit
+        anerkannt und stärkt die Glaubwürdigkeit in Indien, wenn es um die
+        Herstellung von Elektrogeräten, Baumaterialien, Chemikalien oder
+        Haushaltswaren geht.
       </p>
       <p className="service-left-content-paragraph">
         Dieser Artikel zielt darauf ab, die BIS ISI Mark Zertifizierung für
@@ -694,7 +695,8 @@ const OverviewSection = () => {
         Standardisierungs- und Zertifizierungsstelle in Indien unter dem
         Ministerium für Verbraucherangelegenheiten und Öffentlichkeit. Als
         Regulierungsbehörde legt es Qualitätsstandards fest und erhält sie in
-        verschiedenen Branchen aufrecht, wie im BIS-Gesetz von 1986 vorgeschrieben.
+        verschiedenen Branchen aufrecht, wie im BIS-Gesetz von 1986
+        vorgeschrieben.
       </p>
       <p className="service-left-content-paragraph">
         BIS fungiert als Prüfstelle Dritter, die überprüft, ob ein Produkt den
@@ -708,25 +710,25 @@ const OverviewSection = () => {
       <p className="service-left-content-paragraph">
         Die ISI-Markenzieichen-Zertifizierung (Indian Standards Institute
         Markenzieichen) ist das älteste und am meisten anerkannte
-        Markenzieichen-Zertifikat des Bureau of Indian Standards (BIS) in Indien.
-        Die ISI-Zertifizierung konzentriert sich auf die Bestätigung, dass ein
-        Produkt die grundlegenden Anforderungen der Qualitätsstandards erfüllt,
-        die von BIS in Bezug auf Sicherheit, Qualität, Leistung und
+        Markenzieichen-Zertifikat des Bureau of Indian Standards (BIS) in
+        Indien. Die ISI-Zertifizierung konzentriert sich auf die Bestätigung,
+        dass ein Produkt die grundlegenden Anforderungen der Qualitätsstandards
+        erfüllt, die von BIS in Bezug auf Sicherheit, Qualität, Leistung und
         Zuverlässigkeit festgelegt wurden.{" "}
       </p>
       <p className="service-left-content-paragraph">
-        Produkte, die das ISI-Markenzeichen tragen, haben umfassende
-        Labortests und Werksinspektionen durchlaufen. Es garantiert, dass
-        ordnungsgemäße Qualitätskontrollverfahren während der
-        Produktionsphasen implementiert und befolgt werden. Verbraucher sind in
-        der Lage, sichere und zuverlässige Produkte zu erhalten und zu
-        verwenden, die mit dem ISI-Markenzeichen gekennzeichnet sind. Das ISI-Markenzeichen
-        ist ein Instrument für Vertrauen zwischen dem Verbraucher und dem
-        Hersteller, und dieses Markenzeichen geht über den Standard hinaus.
+        Produkte, die das ISI-Markenzeichen tragen, haben umfassende Labortests
+        und Werksinspektionen durchlaufen. Es garantiert, dass ordnungsgemäße
+        Qualitätskontrollverfahren während der Produktionsphasen implementiert
+        und befolgt werden. Verbraucher sind in der Lage, sichere und
+        zuverlässige Produkte zu erhalten und zu verwenden, die mit dem
+        ISI-Markenzeichen gekennzeichnet sind. Das ISI-Markenzeichen ist ein
+        Instrument für Vertrauen zwischen dem Verbraucher und dem Hersteller,
+        und dieses Markenzeichen geht über den Standard hinaus.
       </p>
       <p className="service-left-content-paragraph">
-        Einige Beispiele für Produkte, für die eine obligatorische ISI-Zertifizierung
-        erforderlich ist, sind wie folgt:{" "}
+        Einige Beispiele für Produkte, für die eine obligatorische
+        ISI-Zertifizierung erforderlich ist, sind wie folgt:{" "}
       </p>
       <PointsListWithoutHeading
         points={[
@@ -737,12 +739,13 @@ const OverviewSection = () => {
         ]}
       />
       <p className="service-left-content-paragraph">
-        Es gibt mehr als 650 Produkte, die eine obligatorische BIS-Zertifizierung
-        benötigen, um das Standardzeichen (ISI Mark) unter System I Anhang I des
-        Bureau of Indian Standards zu verwenden. Produkte, die unter dem
-        obligatorischen Zertifizierungssystem gehalten werden, können ohne ISI-Markenzeichen
-        nicht hergestellt, importiert oder auf dem indischen Markt verkauft
-        werden. Die Liste der obligatorischen Produkte kann über diesen{" "}
+        Es gibt mehr als 650 Produkte, die eine obligatorische
+        BIS-Zertifizierung benötigen, um das Standardzeichen (ISI Mark) unter
+        System I Anhang I des Bureau of Indian Standards zu verwenden. Produkte,
+        die unter dem obligatorischen Zertifizierungssystem gehalten werden,
+        können ohne ISI-Markenzeichen nicht hergestellt, importiert oder auf dem
+        indischen Markt verkauft werden. Die Liste der obligatorischen Produkte
+        kann über diesen{" "}
         <a
           href="#product-table"
           onClick={(e) => {
@@ -759,23 +762,26 @@ const OverviewSection = () => {
         aufgerufen werden.{" "}
       </p>
       <h2 className="service-left-content-heading-three">
-        Was ist der Unterschied zwischen BIS-Zertifizierung und ISI-Markenzeichen?
+        Was ist der Unterschied zwischen BIS-Zertifizierung und
+        ISI-Markenzeichen?
       </h2>
       <p className="service-left-content-paragraph">
-        Obwohl oft verwechselt und als Synonyme verwendet, haben BIS-Zertifizierung und
-        ISI-Markenzeichen spezifische Definitionen und Zwecke:
+        Obwohl oft verwechselt und als Synonyme verwendet, haben
+        BIS-Zertifizierung und ISI-Markenzeichen spezifische Definitionen und
+        Zwecke:
       </p>
       <p className="service-left-content-paragraph">
-        <strong>BIS-Zertifizierung :</strong> Der Prozess der Genehmigung eines Produkts
-        nach der Sicherstellung, dass es den erforderlichen indischen Standards entspricht.
-        Es ist der Rahmen, unter dem Konformitätsbewertungen verwaltet werden.
+        <strong>BIS-Zertifizierung :</strong> Der Prozess der Genehmigung eines
+        Produkts nach der Sicherstellung, dass es den erforderlichen indischen
+        Standards entspricht. Es ist der Rahmen, unter dem
+        Konformitätsbewertungen verwaltet werden.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>ISI-Markenzeichen :</strong> Das Qualitätssymbol oder das Standardzeichen,
-        das einem Produkt nach Erhalt der BIS-Zertifizierung verliehen wird. Es
-        zeigt an, dass das Produkt vollständig zertifiziert wurde und die erforderlichen
-        indischen Standards erfüllt.
+        <strong>ISI-Markenzeichen :</strong> Das Qualitätssymbol oder das
+        Standardzeichen, das einem Produkt nach Erhalt der BIS-Zertifizierung
+        verliehen wird. Es zeigt an, dass das Produkt vollständig zertifiziert
+        wurde und die erforderlichen indischen Standards erfüllt.
       </p>
       <p className="service-left-content-paragraph">
         Auf diese Weise stellt ISI das physische zertifizierbare Engagement dar,
@@ -783,7 +789,8 @@ const OverviewSection = () => {
       </p>
 
       <h2 className="service-left-content-heading-three">
-        Warum ist die BIS ISI-Markenzieichen-Zertifizierung für Hersteller wichtig?
+        Warum ist die BIS ISI-Markenzieichen-Zertifizierung für Hersteller
+        wichtig?
       </h2>
 
       <p className="service-left-content-paragraph">
@@ -792,55 +799,58 @@ const OverviewSection = () => {
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>1. Qualitätssicherung:</strong> Das ISI-Markenzeichen bedeutet, dass es
-        strenge Tests und Inspektionen bestanden hat und somit die festgelegten höchsten
-        Qualitätsstandards aufrechterhält. Dies wiederum erhöht die Zuverlässigkeit
-        und Verlässlichkeit des Produkts und minimiert die Chancen von Mängeln.
+        <strong>1. Qualitätssicherung:</strong> Das ISI-Markenzeichen bedeutet,
+        dass es strenge Tests und Inspektionen bestanden hat und somit die
+        festgelegten höchsten Qualitätsstandards aufrechterhält. Dies wiederum
+        erhöht die Zuverlässigkeit und Verlässlichkeit des Produkts und
+        minimiert die Chancen von Mängeln.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>2. Vertrauen der Verbraucher:</strong> Produkte, die mit dem ISI-Markenzeichen
-        gekennzeichnet sind, werden allgemein als sicher und wirksam angesehen. Dies
-        trägt zur Markenloyalität und somit zu einer robusten und renommierten Marke
-        bei.
+        <strong>2. Vertrauen der Verbraucher:</strong> Produkte, die mit dem
+        ISI-Markenzeichen gekennzeichnet sind, werden allgemein als sicher und
+        wirksam angesehen. Dies trägt zur Markenloyalität und somit zu einer
+        robusten und renommierten Marke bei.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>3. Marktzugang:</strong> Der indische Markt hat eine Fülle von Artikeln,
-        die streng verboten sind, wenn man kein gültiges ISI-Zertifikat besitzt. In
-        solchen Fällen dient das ISI-Markenzeichen als Zugangstor zur Erleichterung des
-        Verkaufs.
+        <strong>3. Marktzugang:</strong> Der indische Markt hat eine Fülle von
+        Artikeln, die streng verboten sind, wenn man kein gültiges
+        ISI-Zertifikat besitzt. In solchen Fällen dient das ISI-Markenzeichen
+        als Zugangstor zur Erleichterung des Verkaufs.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>4. Marktzulassung erlangen:</strong> In einer hochkompetitiven Umgebung werden
-        ISI-zertifizierte Produkte als positiv angesehen und haben somit einen höheren
-        Wettbewerbsvorteil gegenüber nicht zertifizierten.
+        <strong>4. Marktzulassung erlangen:</strong> In einer hochkompetitiven
+        Umgebung werden ISI-zertifizierte Produkte als positiv angesehen und
+        haben somit einen höheren Wettbewerbsvorteil gegenüber nicht
+        zertifizierten.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>5. Regulatorische Compliance:</strong> BIS-Standards sind so, dass ein
-        Hersteller, dessen Produkte solchen Standards entsprechen, einen reibungslosen,
-        ungehinderten Betrieb ohne rechtliche Komplexität hat.
+        <strong>5. Regulatorische Compliance:</strong> BIS-Standards sind so,
+        dass ein Hersteller, dessen Produkte solchen Standards entsprechen,
+        einen reibungslosen, ungehinderten Betrieb ohne rechtliche Komplexität
+        hat.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>6. Exportförderung:</strong> Produkte, die ISI-zertifiziert sind und somit
-        einen starken Markenruf besitzen, werden wahrscheinlicher von ausländischen
-        Märkten begünstigt aufgrund der Wahrnehmung, dass sie hochwertig sind und
-        globale Standards erfüllen.
+        <strong>6. Exportförderung:</strong> Produkte, die ISI-zertifiziert sind
+        und somit einen starken Markenruf besitzen, werden wahrscheinlicher von
+        ausländischen Märkten begünstigt aufgrund der Wahrnehmung, dass sie
+        hochwertig sind und globale Standards erfüllen.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>7. Sicherheit der Verbraucher:</strong> Jedes Produkt mit ISI-Zertifizierung
-        garantiert die Sicherheit der Verbraucher vor jeder potenziellen Gefahr,
-        Unfällen oder schlechter Produktleistung.
+        <strong>7. Sicherheit der Verbraucher:</strong> Jedes Produkt mit
+        ISI-Zertifizierung garantiert die Sicherheit der Verbraucher vor jeder
+        potenziellen Gefahr, Unfällen oder schlechter Produktleistung.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>8. Qualitätskontrolle:</strong> Die Notwendigkeit, konstant Prüfungen und
-        Kontrollen durchzuführen, garantiert, dass die Hersteller konstante Qualität
-        für alle produzierten Chargen erreichen können.
+        <strong>8. Qualitätskontrolle:</strong> Die Notwendigkeit, konstant
+        Prüfungen und Kontrollen durchzuführen, garantiert, dass die Hersteller
+        konstante Qualität für alle produzierten Chargen erreichen können.
       </p>
     </div>
   );
@@ -851,7 +861,9 @@ const RequirementSection = () => {
     <div id="requirement" className="flex flex-col scroll-mt-20">
       {/* Requirement */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Anforderungen</span>
+        <span className="service-left-content-index-heading">
+          Anforderungen
+        </span>
         <Separator className="service-left-content-separator" />
       </div>
       <h2 className="service-left-content-heading-two">
@@ -875,9 +887,9 @@ const RequirementSection = () => {
         Prozess der BIS ISI Zertifizierung für Inländische Hersteller
       </h2>
       <p className="service-left-content-paragraph">
-        Die Sicherung der BIS-Zertifizierung ist ein mehrstufiger Prozess. Es gibt
-        zwei Hauptverfahren, um den BIS-Zertifizierungsprozess anzugehen: Normalverfahren und
-        Vereinfachtes Verfahren.{" "}
+        Die Sicherung der BIS-Zertifizierung ist ein mehrstufiger Prozess. Es
+        gibt zwei Hauptverfahren, um den BIS-Zertifizierungsprozess anzugehen:
+        Normalverfahren und Vereinfachtes Verfahren.{" "}
       </p>
       <h3 className="service-left-content-heading-three">
         1. Normalverfahren (60-65 Tage)
@@ -965,8 +977,8 @@ const DocumentsSection = () => {
         Rücknahme der BIS-Lizenz{" "}
       </h3>
       <p className="service-left-content-paragraph">
-        Die Lizenz zur Zertifizierung ist das alleinige Eigentum der BIS-Behörde und kann
-        eine solche Lizenz aufheben, wenn:
+        Die Lizenz zur Zertifizierung ist das alleinige Eigentum der BIS-Behörde
+        und kann eine solche Lizenz aufheben, wenn:
       </p>
       <PointsListWithoutHeading
         points={[
@@ -978,8 +990,8 @@ const DocumentsSection = () => {
 
       <p className="service-left-content-paragraph">
         Gemäß Regulation 11 des BIS (Konformitätsbewertung) Regulations, 2018,
-        besteht kein Zweifel, dass die Lizenz ausgesetzt oder gekündigt werden kann wegen
-        Nichterfüllung der festgelegten Vorschriften.
+        besteht kein Zweifel, dass die Lizenz ausgesetzt oder gekündigt werden
+        kann wegen Nichterfüllung der festgelegten Vorschriften.
       </p>
     </div>
   );
@@ -998,24 +1010,26 @@ const ConclusionSection = () => {
 
       <p className="service-left-content-paragraph">
         Für die BIS ISI Mark Zertifizierung gilt wiederum, dass es mehr als nur
-        bürokratische Schritte für Hersteller in Indien hat. Es hilft beim Aufbau eines
-        positiven Rufs und beim Erreichen nachhaltigen Wachstums im Geschäft. Wenn die
-        BIS-Standards eingehalten werden, gibt es zertifizierte Gewissheit, dass die
-        Produkte zuverlässig und verkaufsbereit sind.
+        bürokratische Schritte für Hersteller in Indien hat. Es hilft beim
+        Aufbau eines positiven Rufs und beim Erreichen nachhaltigen Wachstums im
+        Geschäft. Wenn die BIS-Standards eingehalten werden, gibt es
+        zertifizierte Gewissheit, dass die Produkte zuverlässig und
+        verkaufsbereit sind.
       </p>
 
       <p className="service-left-content-paragraph">
-        Zusammenfassend ist das ISI-Markenzeichen mehr als nur gesetzliche Compliance
-        geworden, es ist zu einem Zeichen der Gewissheit in einer Geschäftsumgebung
-        geworden, in der Vertrauen schwer zu finden ist. Es ist ein Zeichen von
-        Wettbewerbsfähigkeit auf dem Markt zusammen mit Compliance zu Vorschriften.
+        Zusammenfassend ist das ISI-Markenzeichen mehr als nur gesetzliche
+        Compliance geworden, es ist zu einem Zeichen der Gewissheit in einer
+        Geschäftsumgebung geworden, in der Vertrauen schwer zu finden ist. Es
+        ist ein Zeichen von Wettbewerbsfähigkeit auf dem Markt zusammen mit
+        Compliance zu Vorschriften.
       </p>
 
       <p className="service-left-content-paragraph">
-        Egal, ob Sie Elektronikprodukte, Bauelemente oder andere Produkte zum Verkauf
-        herstellen, die BIS ISI-Zertifizierung stellt sicher, dass Ihre Produkte mit
-        Indiens höchsten Qualitätsstandards übereinstimmen und gleichzeitig Ihr
-        Ansehen sowie Ihre Verbraucher schützen.
+        Egal, ob Sie Elektronikprodukte, Bauelemente oder andere Produkte zum
+        Verkauf herstellen, die BIS ISI-Zertifizierung stellt sicher, dass Ihre
+        Produkte mit Indiens höchsten Qualitätsstandards übereinstimmen und
+        gleichzeitig Ihr Ansehen sowie Ihre Verbraucher schützen.
       </p>
     </div>
   );
@@ -1029,7 +1043,8 @@ const ISIMarkFaq = () => {
         "Die BIS-Zertifizierung wird vom Bureau of Indian Standards ausgestellt, um sicherzustellen, dass Produkte indischen Sicherheits- und Qualitätsstandards entsprechen. Sie ist wichtig für gesetzliche Compliance, Verbrauchervertrauen und Marktakzeptanz.",
     },
     {
-      question: "Was ist der Unterschied zwischen BIS-Lizenz und ISI-Markenzeichen?",
+      question:
+        "Was ist der Unterschied zwischen BIS-Lizenz und ISI-Markenzeichen?",
       answer:
         "Die BIS-Lizenz ist ein rechtliches Dokument, das einen Hersteller ermächtigt, das ISI-Markenzeichen zu verwenden. Das ISI-Markenzeichen ist das sichtbare Label auf Produkten, das die BIS-Zertifizierung anzeigt.",
     },
@@ -1054,12 +1069,14 @@ const ISIMarkFaq = () => {
         "Nein. Sie ist nur für Produkte obligatorisch, die unter System 1 der BIS-Zertifizierung aufgeführt sind.",
     },
     {
-      question: "Wie kann ich den richtigen IS-Standard für mein Produkt finden?",
+      question:
+        "Wie kann ich den richtigen IS-Standard für mein Produkt finden?",
       answer:
         "Besuchen Sie die BIS-Website oder konsultieren Sie mit BIS-anerkannten Testlabors und Beratern, um den anwendbaren Standard zu identifizieren.",
     },
     {
-      question: "Können ausländische Hersteller eine BIS-Zertifizierung beantragen?",
+      question:
+        "Können ausländische Hersteller eine BIS-Zertifizierung beantragen?",
       answer:
         "Ja. Über das Foreign Manufacturers Certification Scheme (FMCS) können Übersee-Unternehmen BIS-Lizenzen für die Verwendung des ISI-Markenzeichens erhalten.",
     },
@@ -1163,8 +1180,9 @@ const ISIMarkServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1293,4 +1311,3 @@ const PointsListWithoutHeading = ({ points }) => {
     </div>
   );
 };
-

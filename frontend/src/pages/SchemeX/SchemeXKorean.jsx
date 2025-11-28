@@ -35,7 +35,6 @@ import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -45,7 +44,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterKorean from "@/components/manual/Footer/FooterKorean";
 import ServicesRightSideContentKorean from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentKorean";
 import ServiceAuthorKorean from "@/components/manual/ServiceAuthor/ServiceAuthorKorean";
-
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -66,12 +64,11 @@ const SchemeXKorean = () => {
       <FooterKorean />
       {/* Scroll To Top Button Section */}
       <ScrollToTopButton />
-
     </div>
-  )
-}
+  );
+};
 
-export default SchemeXKorean
+export default SchemeXKorean;
 
 const SchemeXMetaTags = () => {
   const breadcrumbStructuredData = {
@@ -95,9 +92,7 @@ const SchemeXMetaTags = () => {
   return (
     <Helmet>
       {/* Basic Meta Tags */}
-      <title>
-        BIS Scheme X 인증 | 기계 및 전기 장비 안전
-      </title>
+      <title>BIS Scheme X 인증 | 기계 및 전기 장비 안전</title>
       <meta
         name="description"
         content="BIS Scheme X 인증은 저전압 개폐기, 제어 기어, 기계 및 전기 장비의 품질과 안전을 보장하기 위해 필요합니다."
@@ -110,7 +105,6 @@ const SchemeXMetaTags = () => {
       <meta name="author" content="Dhruv Aggarwal" />
       <meta name="publisher" content="Sun Certifications India" />
       <meta name="robots" content="index, follow" />
-
 
       {/* Canonical URL */}
       <link rel="canonical" href={window.location.href} />
@@ -143,11 +137,9 @@ const SchemeXMetaTags = () => {
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbStructuredData)}
       </script>
-
-
     </Helmet>
-  )
-}
+  );
+};
 const SchemeXBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
@@ -164,16 +156,15 @@ const SchemeXBreadcrumb = () => {
                 <SlashIcon />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbPage>Scheme-X 하의 인도 BIS 인증
-                </BreadcrumbPage>
+                <BreadcrumbPage>Scheme-X 하의 인도 BIS 인증</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXHero = () => {
   return (
@@ -205,9 +196,9 @@ const SchemeXHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            BIS Scheme X 인증은 옴니버스 기술 규정(OTR) 하의 기계, 전기 장비 및 구성품 어셈블리와 하위 어셈블리를 다룹니다.
+            BIS Scheme X 인증은 옴니버스 기술 규정(OTR) 하의 기계, 전기 장비 및
+            구성품 어셈블리와 하위 어셈블리를 다룹니다.
           </p>
-
 
           <div className="flex items-center -mt-2">
             <div
@@ -235,10 +226,9 @@ const SchemeXHero = () => {
         {/* Right Side */}
         <SchemeXHeroContactForm />
       </div>
-
     </main>
-  )
-}
+  );
+};
 
 const SchemeXHeroContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -327,8 +317,7 @@ const SchemeXHeroContactForm = () => {
       }
       toast({
         title: "연락 양식이 성공적으로 제출되었습니다!",
-        description:
-          "문의해 주셔서 감사합니다. 팀에서 곧 연락드리겠습니다.",
+        description: "문의해 주셔서 감사합니다. 팀에서 곧 연락드리겠습니다.",
       });
 
       setFormData({
@@ -467,7 +456,6 @@ const SchemeXHeroContactForm = () => {
   );
 };
 
-
 const SchemeXIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("overview");
@@ -477,12 +465,7 @@ const SchemeXIndex = () => {
   const toggleButtonRef = useRef(null);
 
   const SECTIONS = useMemo(
-    () => [
-      "overview",
-      "process",
-      "documents",
-      "conclusion",
-    ],
+    () => ["overview", "process", "documents", "conclusion"],
     []
   );
 
@@ -574,8 +557,9 @@ const SchemeXIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -625,10 +609,11 @@ const SchemeXIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -648,18 +633,20 @@ const SchemeXIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -685,8 +672,8 @@ const SchemeXMainContent = () => {
         <Services />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const Services = () => {
   return (
@@ -734,8 +721,9 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -854,7 +842,6 @@ const SchemeXProductTable = () => {
   return (
     <div className="w-full pb-12">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-
         <div className="flex flex-col gap-2 mt-6">
           <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
             제품별 안전 표준
@@ -871,9 +858,7 @@ const SchemeXProductTable = () => {
           </div>
           <input
             type="text"
-            placeholder={
-              "설명 또는 HS 코드로 검색..."
-            }
+            placeholder={"설명 또는 HS 코드로 검색..."}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -887,10 +872,9 @@ const SchemeXProductTable = () => {
       <div ref={table3Ref}>
         <TypeCTable searchQuery={searchQuery} />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 const productDataTableThird = [
   {
@@ -911,8 +895,7 @@ const productDataTableThird = [
   },
   {
     id: 3,
-    description:
-      "온도 변화 과정을 포함한 재료 처리 기계의 모든 유형",
+    description: "온도 변화 과정을 포함한 재료 처리 기계의 모든 유형",
     hsCode:
       "841932, 841939, 841940, 841950, 841960, 841981, 841989 및 84199090",
     indianStandard: "-",
@@ -927,8 +910,7 @@ const productDataTableThird = [
   },
   {
     id: 5,
-    description:
-      "병 충전, 밀봉, 라벨링, 포장 또는 랩핑 기계의 모든 유형",
+    description: "병 충전, 밀봉, 라벨링, 포장 또는 랩핑 기계의 모든 유형",
     hsCode: "842220, 842230, 842240 및 842290",
     indianStandard: "-",
     title: "-",
@@ -957,8 +939,7 @@ const productDataTableThird = [
     description: "직조 기계 (직기)의 모든 유형",
     hsCode: "8446, 844811, 844819, 844842 및 844849",
     indianStandard: "IS 17361 (Part 6) : 2020 / ISO 11111 (Part 6) : 2005",
-    title:
-      "섬유 기계 안전 요구사항 Part 6 직물 제조 기계",
+    title: "섬유 기계 안전 요구사항 Part 6 직물 제조 기계",
   },
   {
     id: 9,
@@ -989,8 +970,7 @@ const productDataTableThird = [
     description: "고무 및 플라스틱 가공 기계의 모든 유형",
     hsCode: "8477",
     indianStandard: "IS/ISO 20430: 2020",
-    title:
-      "플라스틱 및 고무 기계 - 사출 성형 기계 - 안전 요구사항",
+    title: "플라스틱 및 고무 기계 - 사출 성형 기계 - 안전 요구사항",
   },
   {
     id: 13,
@@ -1030,8 +1010,7 @@ const productDataTableThird = [
   {
     id: 17,
     description: "변압기의 모든 유형",
-    hsCode:
-      "850421, 850422, 850423, 850431, 850432, 850433, 850434 및 850490.",
+    hsCode: "850421, 850422, 850423, 850431, 850432, 850433, 850434 및 850490.",
     indianStandard:
       "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nIS 2026 (Part 1)의 조항 5.6 및 Cl 10\nIS 2026 (Part 6)의 조항 7.5, 7.6, 7.7",
     title:
@@ -1042,7 +1021,8 @@ const productDataTableThird = [
     description: "전력 반도체 변환기의 모든 유형",
     hsCode: "850440",
     indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
-    title: "반도체 변환기 Part 1 일반 요구사항 및 라인 교류 변환기 섹션 1 기본 요구사항 사양의 조항 7",
+    title:
+      "반도체 변환기 Part 1 일반 요구사항 및 라인 교류 변환기 섹션 1 기본 요구사항 사양의 조항 7",
   },
   {
     id: 19,
@@ -1065,7 +1045,7 @@ const productDataTableThird = [
 
 const TypeCTable = ({ searchQuery }) => {
   // Filter data based on search query
-  const filteredData = productDataTableThird.filter(item => {
+  const filteredData = productDataTableThird.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1079,7 +1059,8 @@ const TypeCTable = ({ searchQuery }) => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-        TYPE C (특정 기계 또는 기계 그룹에 대한 상세한 안전 요구사항을 다루는 기계 안전 표준)
+        TYPE C (특정 기계 또는 기계 그룹에 대한 상세한 안전 요구사항을 다루는
+        기계 안전 표준)
       </p>
 
       <div className="rounded-md border bg-white shadow-sm">
@@ -1130,7 +1111,10 @@ const TypeCTable = ({ searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={5}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   &quot;{searchQuery}&quot;에 대한 결과가 없습니다
                 </TableCell>
               </TableRow>
@@ -1146,8 +1130,7 @@ const productDataTableSecond = [
   {
     id: 1,
     isNumber: "IS 16504 (Part 1):2019/IEC 60204-1:2016",
-    title:
-      "기계 전기 장비 안전 Part 1 일반 요구사항",
+    title: "기계 전기 장비 안전 Part 1 일반 요구사항",
   },
   {
     id: 2,
@@ -1169,8 +1152,7 @@ const productDataTableSecond = [
   {
     id: 5,
     isNumber: "IS 16806 (Part 1) : 2018/ ISO 29042-1 : 2008",
-    title:
-      "기계 안전 - 공기 중 유해 물질 방출 평가 - Part 1: 테스트 방법 선택",
+    title: "기계 안전 - 공기 중 유해 물질 방출 평가 - Part 1: 테스트 방법 선택",
   },
   {
     id: 6,
@@ -1217,20 +1199,17 @@ const productDataTableSecond = [
   {
     id: 13,
     isNumber: "IS 16806 (Part 9) : 2018/ ISO 29042-9 : 2011",
-    title:
-      "기계 안전 - 공기 중 유해 물질 방출 평가 - Part 9: 오염 제거 지수",
+    title: "기계 안전 - 공기 중 유해 물질 방출 평가 - Part 9: 오염 제거 지수",
   },
   {
     id: 14,
     isNumber: "IS 10481:2020/ ISO 4413:2010",
-    title:
-      "유압 유체 전력- 시스템 및 구성품의 일반 규칙 및 안전 요구사항",
+    title: "유압 유체 전력- 시스템 및 구성품의 일반 규칙 및 안전 요구사항",
   },
   {
     id: 15,
     isNumber: "IS 12725:2021/ ISO 4414:2010",
-    title:
-      "공압 유체 전력- 시스템 및 구성품의 일반 규칙 및 안전 요구사항",
+    title: "공압 유체 전력- 시스템 및 구성품의 일반 규칙 및 안전 요구사항",
   },
   {
     id: 16,
@@ -1258,8 +1237,7 @@ const productDataTableSecond = [
   {
     id: 20,
     isNumber: "IS 16504 (Part 32) : 2017/IEC 60204-32 : 2008",
-    title:
-      "기계 안전- 기계 전기 장비 Part 32 호이스팅 기계 요구사항",
+    title: "기계 안전- 기계 전기 장비 Part 32 호이스팅 기계 요구사항",
   },
   {
     id: 21,
@@ -1270,20 +1248,17 @@ const productDataTableSecond = [
   {
     id: 22,
     isNumber: "IS 16594 (Part 1) : 2017/ IEC 61496-1 : 2012",
-    title:
-      "기계 안전 - 전기 감지 보호 장비 Part 1 일반 요구사항 및 테스트",
+    title: "기계 안전 - 전기 감지 보호 장비 Part 1 일반 요구사항 및 테스트",
   },
   {
     id: 23,
     isNumber: "IS 16936 : 2018/ IEC TR 62513: 2008",
-    title:
-      "기계 안전 안전 관련 응용을 위한 통신 시스템 사용 지침",
+    title: "기계 안전 안전 관련 응용을 위한 통신 시스템 사용 지침",
   },
   {
     id: 24,
     isNumber: "IS 16503 (Part 2) : 2017/ IEC 61310-2 : 2007",
-    title:
-      "기계 안전 - 표시 마킹 및 작동 Part 2 마킹 요구사항",
+    title: "기계 안전 - 표시 마킹 및 작동 Part 2 마킹 요구사항",
   },
   {
     id: 25,
@@ -1293,56 +1268,47 @@ const productDataTableSecond = [
   {
     id: 26,
     isNumber: "IS 16808 : 2018/ ISO 14159 : 2002",
-    title:
-      "기계 안전 기계 설계 위생 요구사항",
+    title: "기계 안전 기계 설계 위생 요구사항",
   },
   {
     id: 27,
     isNumber: "IS 16809 ( Part 1) : 2018/ ISO 14122-1 : 2016",
-    title:
-      "기계 안전 기계 접근 고정 수단 선택 및 일반 접근 요구사항 Part 1",
+    title: "기계 안전 기계 접근 고정 수단 선택 및 일반 접근 요구사항 Part 1",
   },
   {
     id: 28,
     isNumber: "IS 16809 (Part 2) : 2018/ ISO 14122-2 : 2016",
-    title:
-      "기계 안전 기계 접근 고정 수단 작업 플랫폼 및 보행로 Part 2",
+    title: "기계 안전 기계 접근 고정 수단 작업 플랫폼 및 보행로 Part 2",
   },
   {
     id: 29,
     isNumber: "IS 16809 (Part 3) : 2018/ ISO 14122-3 : 2016",
-    title:
-      "기계 안전 기계 접근 고정 수단 계단 스텝 래더 및 가드레일 Part 3",
+    title: "기계 안전 기계 접근 고정 수단 계단 스텝 래더 및 가드레일 Part 3",
   },
   {
     id: 30,
     isNumber: "IS 16809 (Part 4) : 2018/ ISO 14122-4 : 2016",
-    title:
-      "기계 안전 기계 접근 고정 수단 고정 사다리 Part 4",
+    title: "기계 안전 기계 접근 고정 수단 고정 사다리 Part 4",
   },
   {
     id: 31,
     isNumber: "IS 16810 (Part 1) : 2018/ ISO 13849-1 : 2015",
-    title:
-      "기계 안전 제어 시스템 안전 관련 부품 Part 1 설계 일반 원칙",
+    title: "기계 안전 제어 시스템 안전 관련 부품 Part 1 설계 일반 원칙",
   },
   {
     id: 32,
     isNumber: "IS 16810 (Part 2) : 2018/ ISO 13849-2 : 2012",
-    title:
-      "기계 안전 제어 시스템 안전 관련 부품 Part 2 검증",
+    title: "기계 안전 제어 시스템 안전 관련 부품 Part 2 검증",
   },
   {
     id: 33,
     isNumber: "IS 16811: 2018/ 14120 : 2015",
-    title:
-      "기계 안전 가드 고정 및 이동 가드 설계 및 제작 일반 요구사항",
+    title: "기계 안전 가드 고정 및 이동 가드 설계 및 제작 일반 요구사항",
   },
   {
     id: 34,
     isNumber: "IS 16812 : 2018/ ISO 14119 : 2013",
-    title:
-      "기계 안전 가드와 관련된 연동 장치 설계 및 선택 원칙",
+    title: "기계 안전 가드와 관련된 연동 장치 설계 및 선택 원칙",
   },
   {
     id: 35,
@@ -1352,26 +1318,22 @@ const productDataTableSecond = [
   {
     id: 36,
     isNumber: "IS 16814 : 2021/ ISO 13857: 2019",
-    title:
-      "기계 안전 상지 및 하지로 위험 구역 도달 방지 안전 거리",
+    title: "기계 안전 상지 및 하지로 위험 구역 도달 방지 안전 거리",
   },
   {
     id: 37,
     isNumber: "IS 16815 : 2019/ ISO 13855: 2010",
-    title:
-      "기계 안전 인간 신체 부위 접근 속도에 대한 보호 장치 위치",
+    title: "기계 안전 인간 신체 부위 접근 속도에 대한 보호 장치 위치",
   },
   {
     id: 38,
     isNumber: "IS 16816 : 2019/ ISO 13854 : 2017",
-    title:
-      "기계 안전 인간 신체 부위 압착 방지 최소 간격",
+    title: "기계 안전 인간 신체 부위 압착 방지 최소 간격",
   },
   {
     id: 39,
     isNumber: "IS 16817: 2020/ ISO 13851 : 2019",
-    title:
-      "기계 안전 양손 제어 장치 설계 및 선택 원칙",
+    title: "기계 안전 양손 제어 장치 설계 및 선택 원칙",
   },
   {
     id: 40,
@@ -1381,8 +1343,7 @@ const productDataTableSecond = [
   {
     id: 41,
     isNumber: "IS 16912 : 2018/ ISO 21469 : 2006",
-    title:
-      "기계 안전 우발적 제품 접촉 윤활제 위생 요구사항",
+    title: "기계 안전 우발적 제품 접촉 윤활제 위생 요구사항",
   },
   {
     id: 42,
@@ -1417,8 +1378,7 @@ const productDataTableSecond = [
   {
     id: 47,
     isNumber: "IS 16569: 2018/ ISO 11429:1996",
-    title:
-      "인간공학- 청각 및 시각 위험 및 정보 신호 시스템",
+    title: "인간공학- 청각 및 시각 위험 및 정보 신호 시스템",
   },
   {
     id: 48,
@@ -1435,26 +1395,22 @@ const productDataTableSecond = [
   {
     id: 50,
     isNumber: "IS 16572 : 2017/ ISO 14738 : 2002",
-    title:
-      "기계 안전 기계 작업 스테이션 설계 인체 측정 요구사항",
+    title: "기계 안전 기계 작업 스테이션 설계 인체 측정 요구사항",
   },
   {
     id: 51,
     isNumber: "IS 16562 ( Part 1) : 2017/ ISO 15536-1 : 2005",
-    title:
-      "인간공학 - 컴퓨터 매니킨 및 신체 템플릿 Part 1 일반 요구사항",
+    title: "인간공학 - 컴퓨터 매니킨 및 신체 템플릿 Part 1 일반 요구사항",
   },
   {
     id: 52,
     isNumber: "IS 16569:2018/ ISO 11429: 1996",
-    title:
-      "인간공학 - 청각 및 시각 위험 및 정보 신호 시스템",
+    title: "인간공학 - 청각 및 시각 위험 및 정보 신호 시스템",
   },
   {
     id: 53,
     isNumber: "IS 15296 : 2017/ ISO 11161: 2007",
-    title:
-      "산업 자동화 시스템 - 통합 제조 시스템 안전 - 기본 요구사항",
+    title: "산업 자동화 시스템 - 통합 제조 시스템 안전 - 기본 요구사항",
   },
 ];
 const TypeBTable = ({ tableRef, searchQuery }) => {
@@ -1462,7 +1418,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   const itemsPerPage = 20;
 
   // Filter data based on search query
-  const filteredData = productDataTableSecond.filter(item => {
+  const filteredData = productDataTableSecond.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1478,10 +1434,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredData.slice(
-    indexOfFirstItem,
-    indexOfLastItem
-  );
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
@@ -1508,7 +1461,8 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-        TYPE B (광범위한 기계에 걸쳐 사용될 수 있는 하나의 안전 측면 또는 하나 이상의 보호 장치를 다루는 일반 안전 표준)
+        TYPE B (광범위한 기계에 걸쳐 사용될 수 있는 하나의 안전 측면 또는 하나
+        이상의 보호 장치를 다루는 일반 안전 표준)
       </p>
 
       <div className="rounded-md border bg-white shadow-sm">
@@ -1543,7 +1497,10 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={3}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   &quot;{searchQuery}&quot;에 대한 결과가 없습니다
                 </TableCell>
               </TableRow>
@@ -1582,64 +1539,80 @@ const SchemeXServiceFaq = () => {
   const faqData = [
     {
       question: "1. BIS 인증 하의 Scheme X는 무엇인가요?",
-      answer: "Scheme X는 인도 BIS가 기계 및 전기 장비를 위해 도입한 적합성 평가 제도로, 옴니버스 기술 규정에 명시된 엄격한 안전 및 기술 표준 준수를 보장합니다."
+      answer:
+        "Scheme X는 인도 BIS가 기계 및 전기 장비를 위해 도입한 적합성 평가 제도로, 옴니버스 기술 규정에 명시된 엄격한 안전 및 기술 표준 준수를 보장합니다.",
     },
     {
       question: "2. Scheme X는 ISI 마크 인증과 다른가요?",
-      answer: "네. ISI 마크는 일반적으로 소비재 및 기본 제품 준수를 위한 것이며, Scheme X는 BIS 인증서 또는 BIS 라이선스를 통해 고급 테스트 및 인증이 필요한 복잡하고 산업 등급 제품에 적용됩니다."
+      answer:
+        "네. ISI 마크는 일반적으로 소비재 및 기본 제품 준수를 위한 것이며, Scheme X는 BIS 인증서 또는 BIS 라이선스를 통해 고급 테스트 및 인증이 필요한 복잡하고 산업 등급 제품에 적용됩니다.",
     },
     {
       question: "3. 누가 Scheme X 인증을 신청해야 하나요?",
-      answer: "옴니버스 기술 규정에 나열된 기계 및 전기 장비의 제조업체 및 수입업체는 인도에서 제품을 합법적으로 판매 또는 유통하기 위해 Scheme X를 신청하고 유효한 BIS 인증을 취득해야 합니다. 인도에서 제품을 판매하려는 글로벌 제조업체 또는 외국 제조업체도 이러한 규정을 준수해야 합니다."
+      answer:
+        "옴니버스 기술 규정에 나열된 기계 및 전기 장비의 제조업체 및 수입업체는 인도에서 제품을 합법적으로 판매 또는 유통하기 위해 Scheme X를 신청하고 유효한 BIS 인증을 취득해야 합니다. 인도에서 제품을 판매하려는 글로벌 제조업체 또는 외국 제조업체도 이러한 규정을 준수해야 합니다.",
     },
     {
       question: "4. BIS Scheme X 인증 비용은 얼마인가요?",
-      answer: "Scheme X 비용에는 신청 수수료, 인증 수수료, 기술 파일 검토 비용, 공장 검사 비용, 제품 테스트 비용이 포함됩니다. 평균적으로 신청은 ₹2,000부터 시작하며 제품 복잡성에 따라 증가할 수 있습니다. 자세한 내용은 admin@bis-certifications.com으로 문의하세요."
+      answer:
+        "Scheme X 비용에는 신청 수수료, 인증 수수료, 기술 파일 검토 비용, 공장 검사 비용, 제품 테스트 비용이 포함됩니다. 평균적으로 신청은 ₹2,000부터 시작하며 제품 복잡성에 따라 증가할 수 있습니다. 자세한 내용은 admin@bis-certifications.com으로 문의하세요.",
     },
     {
       question: "5. Scheme X 하의 BIS 라이선스를 받는 데 얼마나 걸리나요?",
-      answer: "타임라인은 문서화, 테스트 요구사항 및 공장 검사에 따라 다릅니다. 일반적으로 인도 제조업체의 경우 성공적인 BIS 등록 및 신청 제출 날짜로부터 4–6주, 외국 제조업체의 경우 60-90일이 소요됩니다."
+      answer:
+        "타임라인은 문서화, 테스트 요구사항 및 공장 검사에 따라 다릅니다. 일반적으로 인도 제조업체의 경우 성공적인 BIS 등록 및 신청 제출 날짜로부터 4–6주, 외국 제조업체의 경우 60-90일이 소요됩니다.",
     },
     {
       question: "6. MSME도 Scheme X 하의 BIS 인증을 신청할 수 있나요?",
-      answer: "물론입니다. 실제로 인도 BIS는 산업 부문의 품질, 준수 및 경쟁력을 강화하기 위해 MSME가 Scheme X 하의 BIS 라이선스 또는 적합성 인증서를 신청하도록 장려합니다."
+      answer:
+        "물론입니다. 실제로 인도 BIS는 산업 부문의 품질, 준수 및 경쟁력을 강화하기 위해 MSME가 Scheme X 하의 BIS 라이선스 또는 적합성 인증서를 신청하도록 장려합니다.",
     },
     {
       question: "7. Scheme X 하의 BIS 인증은 수출에 필수인가요?",
-      answer: "아니요. 수출 전용으로 제조된 제품은 옴니버스 기술 규정 하에서 면제됩니다. 그러나 인도 시장용 제품은 Scheme X 하에서 인증되어야 합니다."
+      answer:
+        "아니요. 수출 전용으로 제조된 제품은 옴니버스 기술 규정 하에서 면제됩니다. 그러나 인도 시장용 제품은 Scheme X 하에서 인증되어야 합니다.",
     },
     {
       question: "8. Scheme X 하의 BIS 라이선스 유효 기간은 무엇인가요?",
-      answer: "Scheme X 하의 BIS 라이선스는 일반적으로 3-6년 동안 유효하며 적절히 갱신되어야 합니다. 갱신에는 연간 BIS 인증 수수료 지불이 포함되며 제품 범위 또는 표준 변경에 따라 재평가가 필요할 수 있습니다."
+      answer:
+        "Scheme X 하의 BIS 라이선스는 일반적으로 3-6년 동안 유효하며 적절히 갱신되어야 합니다. 갱신에는 연간 BIS 인증 수수료 지불이 포함되며 제품 범위 또는 표준 변경에 따라 재평가가 필요할 수 있습니다.",
     },
     {
       question: "9. 외국 제조업체가 Scheme X 인증을 신청할 수 있나요?",
-      answer: "네, 외국 제조업체는 승인된 인도 대리인을 통해 Scheme X 인증을 신청할 수 있습니다. 인도 BIS는 공장 검사를 요구하며, 외국 신청자의 경우 3일이 소요될 수 있으며 표준 BIS 등록 및 테스트 프로세스와 함께 진행됩니다."
+      answer:
+        "네, 외국 제조업체는 승인된 인도 대리인을 통해 Scheme X 인증을 신청할 수 있습니다. 인도 BIS는 공장 검사를 요구하며, 외국 신청자의 경우 3일이 소요될 수 있으며 표준 BIS 등록 및 테스트 프로세스와 함께 진행됩니다.",
     },
     {
       question: "10. 기술 파일이란 무엇이며 왜 필요한가요?",
-      answer: "기술 파일은 Scheme X 하에서 요구되는 상세한 준수 문서로, 제조 프로세스, 제품 세부 사항, 테스트 보고서 및 품질 관리 문서를 포함합니다. BIS 인증 프로세스 동안 관련 인도 표준에 대한 제품 적합성을 지원합니다."
+      answer:
+        "기술 파일은 Scheme X 하에서 요구되는 상세한 준수 문서로, 제조 프로세스, 제품 세부 사항, 테스트 보고서 및 품질 관리 문서를 포함합니다. BIS 인증 프로세스 동안 관련 인도 표준에 대한 제품 적합성을 지원합니다.",
     },
     {
       question: "11. Scheme X는 옴니버스 기술 규정과 어떻게 관련되나요?",
-      answer: "옴니버스 기술 규정은 인도에서 특정 기계 및 전기 장비 카테고리에 대해 Scheme X 사용을 의무화합니다. 규정에 나열된 제품은 유효한 BIS 인증서 또는 BIS 라이선스를 취득하기 위해 Scheme X 하에서 인증되어야 합니다."
+      answer:
+        "옴니버스 기술 규정은 인도에서 특정 기계 및 전기 장비 카테고리에 대해 Scheme X 사용을 의무화합니다. 규정에 나열된 제품은 유효한 BIS 인증서 또는 BIS 라이선스를 취득하기 위해 Scheme X 하에서 인증되어야 합니다.",
     },
     {
       question: "12. Scheme X 하의 BIS 인증서가 취소될 수 있나요?",
-      answer: "네. 인도 BIS는 감시 중 비준수가 발견되거나 제품이 요구된 인도 표준을 충족하지 못하는 경우 Scheme X 하의 BIS 라이선스 또는 인증서를 정지 또는 취소할 수 있습니다."
+      answer:
+        "네. 인도 BIS는 감시 중 비준수가 발견되거나 제품이 요구된 인도 표준을 충족하지 못하는 경우 Scheme X 하의 BIS 라이선스 또는 인증서를 정지 또는 취소할 수 있습니다.",
     },
     {
-      question: "13. Scheme X 하의 BIS 라이선스와 BIS 인증서의 차이는 무엇인가요?",
-      answer: "BIS 라이선스는 일반적으로 인도 제조업체에게 발급되며, BIS 적합성 인증서 (CoC)는 외국 제조업체 또는 특정 사례에 발급됩니다. 둘 다 Scheme X 하에서 제품 준수를 보장하는 동일한 목적을 합니다."
+      question:
+        "13. Scheme X 하의 BIS 라이선스와 BIS 인증서의 차이는 무엇인가요?",
+      answer:
+        "BIS 라이선스는 일반적으로 인도 제조업체에게 발급되며, BIS 적합성 인증서 (CoC)는 외국 제조업체 또는 특정 사례에 발급됩니다. 둘 다 Scheme X 하에서 제품 준수를 보장하는 동일한 목적을 합니다.",
     },
     {
       question: "14. Scheme X 인증 제품에 ISI 마크가 허용되나요?",
-      answer: "아니요. Scheme X 하의 제품은 ISI 마크를 사용하지 않습니다. 대신 인도 BIS가 관리하는 인증 제도에 관련된 BIS 표준 마크를 표시합니다."
+      answer:
+        "아니요. Scheme X 하의 제품은 ISI 마크를 사용하지 않습니다. 대신 인도 BIS가 관리하는 인증 제도에 관련된 BIS 표준 마크를 표시합니다.",
     },
     {
       question: "내 기계가 Scheme X 인증을 필요로 하는지 어떻게 알 수 있나요?",
-      answer: "옴니버스 기술 규정의 공식 목록을 확인하거나 BIS 컨설턴트와 상담하여 기계가 필수 Scheme X 인증 요구사항에 해당하는지 확인하세요."
-    }
+      answer:
+        "옴니버스 기술 규정의 공식 목록을 확인하거나 BIS 컨설턴트와 상담하여 기계가 필수 Scheme X 인증 요구사항에 해당하는지 확인하세요.",
+    },
   ];
 
   return (
@@ -1685,7 +1658,6 @@ const SchemeXMainContentLeft = () => {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-
         {/* Overview Section */}
         <SchemeXMainContentLeftOverviewSection />
 
@@ -1713,8 +1685,8 @@ const SchemeXMainContentLeft = () => {
         <ServiceAuthorKorean />
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftConclusionSection = () => {
   return (
@@ -1725,22 +1697,24 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        결론
-      </h2>
+      <h2 className="service-left-content-heading-two">결론</h2>
 
       <p className="service-left-content-paragraph">
-        BIS Scheme-X 인증은 저전압 개폐기 및 제어 기어, 기계 및 전기 장비의 안전, 신뢰성 및 품질을 유지하는 데 필수적입니다. 석재, 세라믹, 콘크리트, 아스팔트 시멘트 및 광물 유리 가공에 적용되는 공구 제조업체의 경우 BIS Scheme-X 인증이 의무적입니다.
+        BIS Scheme-X 인증은 저전압 개폐기 및 제어 기어, 기계 및 전기 장비의
+        안전, 신뢰성 및 품질을 유지하는 데 필수적입니다. 석재, 세라믹, 콘크리트,
+        아스팔트 시멘트 및 광물 유리 가공에 적용되는 공구 제조업체의 경우 BIS
+        Scheme-X 인증이 의무적입니다.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        이러한 의무를 이행함으로써 제조업체는 제품 적합성을 보장하고 소비자 신뢰를 높이며 시장 신뢰성을 향상시킵니다. Scheme-X는 생산이 원활하게 진행되도록 하고, 전 세계 안전 표준을 충족하며, 인정받은 브랜드가 긍정적인 평판을 얻도록 합니다.
+        이러한 의무를 이행함으로써 제조업체는 제품 적합성을 보장하고 소비자
+        신뢰를 높이며 시장 신뢰성을 향상시킵니다. Scheme-X는 생산이 원활하게
+        진행되도록 하고, 전 세계 안전 표준을 충족하며, 인정받은 브랜드가
+        긍정적인 평판을 얻도록 합니다.
       </p>
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftDocumentsSection = () => {
   return (
@@ -1755,9 +1729,9 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         BIS Scheme X 인증에 필요한 주요 문서
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        BIS 인증 프로세스를 간소화하기 위해 제조업체는 등록 단계에서 다음 문서를 수집 및 제출해야 합니다:
+        BIS 인증 프로세스를 간소화하기 위해 제조업체는 등록 단계에서 다음 문서를
+        수집 및 제출해야 합니다:
       </p>
 
       <div className="mt-[16px] md:mt-[24px]">
@@ -1870,8 +1844,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         ]}
       />
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftProcessSection = () => {
   return (
@@ -1886,11 +1860,11 @@ const SchemeXMainContentLeftProcessSection = () => {
         BIS Scheme-X 하에서 인증 받는 단계
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Scheme-X 하에서 BIS 인증서를 발급하는 것은 제조업체가 적용 가능한 안전, 품질 및 준수 표준을 충족하도록 보장하는 체계적인 활동입니다. 프로세스는 다음과 같습니다:
+        Scheme-X 하에서 BIS 인증서를 발급하는 것은 제조업체가 적용 가능한 안전,
+        품질 및 준수 표준을 충족하도록 보장하는 체계적인 활동입니다. 프로세스는
+        다음과 같습니다:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1904,33 +1878,31 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        이 파일은 안전 추적 표준을 입증하는 제품 주장의 기술적 및 통계적 증거로 사용됩니다.
+        이 파일은 안전 추적 표준을 입증하는 제품 주장의 기술적 및 통계적 증거로
+        사용됩니다.
       </p>
 
-
       <p className="service-left-content-paragraph">
-        검사 기간 동안 BIS 직원은 다음을 수행해야 합니다:
-        기술 파일 분석, 제조 방식 평가 및 지원 품질 보증 시스템, 제품 테스트 관찰, 비준수 (있는 경우) 결정 및 수정 단계 제공. 방문 후 신청자에게 상세 감사 보고서가 제공됩니다.
+        검사 기간 동안 BIS 직원은 다음을 수행해야 합니다: 기술 파일 분석, 제조
+        방식 평가 및 지원 품질 보증 시스템, 제품 테스트 관찰, 비준수 (있는 경우)
+        결정 및 수정 단계 제공. 방문 후 신청자에게 상세 감사 보고서가
+        제공됩니다.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
-        이 전략은 BIS 표준 준수를 유지하고 인도 및 국제 준수를 인정하며 산업이 소비자 신뢰를 향한 안전 및 품질에 초점을 맞추도록 합니다.
+        이 전략은 BIS 표준 준수를 유지하고 인도 및 국제 준수를 인정하며 산업이
+        소비자 신뢰를 향한 안전 및 품질에 초점을 맞추도록 합니다.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         국내 제조업체를 위한 절차
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        국내 제조업체는 Scheme-X 하에서 BIS 라이선스를 직접 취득하는 직접적인 접근 방식을 따릅니다. 따를 직접적인 단계는 다음과 같습니다:
+        국내 제조업체는 Scheme-X 하에서 BIS 라이선스를 직접 취득하는 직접적인
+        접근 방식을 따릅니다. 따를 직접적인 단계는 다음과 같습니다:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1945,19 +1917,19 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        <strong>일반 타임라인:</strong> BIS 관행에 따라 약 90 근무일이 필요합니다. 주요 비적합이 없는 경우입니다.
+        <strong>일반 타임라인:</strong> BIS 관행에 따라 약 90 근무일이
+        필요합니다. 주요 비적합이 없는 경우입니다.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         외국 제조업체를 위한 절차
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        국내 제조업체와 달리 Scheme-X 하에서 BIS 인증서를 신청하는 외국 제조업체는 더 엄격한 프로세스와 추가 단계를 준수해야 합니다. 절차는 다음과 같습니다.
+        국내 제조업체와 달리 Scheme-X 하에서 BIS 인증서를 신청하는 외국
+        제조업체는 더 엄격한 프로세스와 추가 단계를 준수해야 합니다. 절차는
+        다음과 같습니다.
       </p>
 
       <PointsListWithoutHeading
@@ -1975,19 +1947,17 @@ const SchemeXMainContentLeftProcessSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        감사는 품질 보증 시스템 및 제조 프로세스 워크플로 평가, 준수 및 기술 문서 평가, 독립 테스트 샘플 선택을 포함합니다.
+        감사는 품질 보증 시스템 및 제조 프로세스 워크플로 평가, 준수 및 기술
+        문서 평가, 독립 테스트 샘플 선택을 포함합니다.
       </p>
-
 
       <p className="service-left-content-paragraph">
         전체 프로세스는 BIS 관행에 따라 대략 6-7개월이 소요됩니다.
       </p>
 
-
       <h3 className="service-left-content-heading-three">
         외국 제조업체를 위한 주요 추가 포인터:
       </h3>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1996,10 +1966,9 @@ const SchemeXMainContentLeftProcessSection = () => {
           "공장 감사: 외국 제조업체의 공장 감사는 포괄적이며 3일 동안 지속됩니다. 또한 여러 제품 신청이 제출된 경우 더 많은 일수가 필요합니다.",
         ]}
       />
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftOverviewSection = () => {
   // Download function for table data
@@ -2021,68 +1990,80 @@ const SchemeXMainContentLeftOverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-
       <h2 className="service-left-content-heading-two">
         BIS Scheme X 인증 소개
       </h2>
 
       <p className="service-left-content-paragraph">
-        인도 표준국, 또는 BIS는 2022년 3월 16일 인도에서 제품 안전 및 품질 준수를 개선하기 위해 &ldquo;Scheme X&rdquo;를 출시했습니다. 인도 및 외국 제조업체는 Scheme-X의 Schedule-II에 명시된 기계 및 전기 장비, 구성품 어셈블리, 하위 어셈블리 및 도구에 대한 BIS 인증을 신청하고 인도로 수출, 판매 또는 유통 전에 인증을 받을 수 있습니다.
+        인도 표준국, 또는 BIS는 2022년 3월 16일 인도에서 제품 안전 및 품질
+        준수를 개선하기 위해 &ldquo;Scheme X&rdquo;를 출시했습니다. 인도 및 외국
+        제조업체는 Scheme-X의 Schedule-II에 명시된 기계 및 전기 장비, 구성품
+        어셈블리, 하위 어셈블리 및 도구에 대한 BIS 인증을 신청하고 인도로 수출,
+        판매 또는 유통 전에 인증을 받을 수 있습니다.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        Scheme X 하에서 제조업체는 저전압 개폐기 및 제어 기어, 기계 및 전기 장비에 대한 BIS 라이선스 또는 적합성 인증서 (CoC)를 신청할 수 있습니다. 제조업체가 인증되면 인도에서 정한 표준에 따라 제품이 준수됨을 나타내는 BIS 표준 마크를 사용할 수 있습니다.
+        Scheme X 하에서 제조업체는 저전압 개폐기 및 제어 기어, 기계 및 전기
+        장비에 대한 BIS 라이선스 또는 적합성 인증서 (CoC)를 신청할 수 있습니다.
+        제조업체가 인증되면 인도에서 정한 표준에 따라 제품이 준수됨을 나타내는
+        BIS 표준 마크를 사용할 수 있습니다.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        이 인증은 제품 및 인도 표준 및 정부 규정 준수를 촉진하며 인증된 제품에 대한 소비자 신뢰와 자신감을 개발하는 데 도움이 됩니다.
+        이 인증은 제품 및 인도 표준 및 정부 규정 준수를 촉진하며 인증된 제품에
+        대한 소비자 신뢰와 자신감을 개발하는 데 도움이 됩니다.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         Scheme X 인증이란 무엇인가요?
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Scheme X는 BIS 적합성 평가 규정, 2018 하에서 개발된 제품 인증 제도로, 나중에 BIS 적합성 평가 (개정) 규정, 2022 하에서 간소화되었습니다.
-      </p>
-
-
-
-      <p className="service-left-content-paragraph">
-        주요 목표는 산업 기계 및 전기 장비와 관련하여 인도 안전 및 품질 표준을 글로벌 표준으로 끌어올리는 것입니다. 이 제도 하에서 인도에서 제조되거나 수입된 제품은 기술, 안전 및 성능 표준을 입증하기 위해 엄격한 검토 및 평가를 받습니다.
-      </p>
-
-
-      <p className="service-left-content-paragraph">
-        Scheme X 인증의 원래 범위는 중량 산업부 관할 하에 있으며 BIS에 의해 시행된 새로 발행된 기계 및 전기 장비 안전 (옴니버스 기술 규정) 명령, 2024에 의해 수정 및 확장되었습니다. 이 명령은 2026년 9월 1일부터 발효되며 액체 처리용 펌프, 컴프레서, 크레인, 회전 전기 기계, 변압기 및 개폐기 및 제어 기어와 같은 광범위한 기계 및 전기 장비를 다룹니다.
-      </p>
-
-
-      <p className="service-left-content-paragraph">
-        이러한 기계 또는 장비의 어셈블리, 하위 어셈블리 및 구성품도 인도 표준국 법, 2016 섹션 16에 따라 인증 범위에 포함됩니다.
+        Scheme X는 BIS 적합성 평가 규정, 2018 하에서 개발된 제품 인증 제도로,
+        나중에 BIS 적합성 평가 (개정) 규정, 2022 하에서 간소화되었습니다.
       </p>
 
       <p className="service-left-content-paragraph">
-        또한 1989 CMVR 규칙 (밸브 규제 제조 및 건설) 하에서 Scheme X 관할의 보우저 및 기타 건설 장비 유형은 시장이 안전 및 기술 표준이 부족한 장비에 노출되지 않도록 보장합니다.
+        주요 목표는 산업 기계 및 전기 장비와 관련하여 인도 안전 및 품질 표준을
+        글로벌 표준으로 끌어올리는 것입니다. 이 제도 하에서 인도에서 제조되거나
+        수입된 제품은 기술, 안전 및 성능 표준을 입증하기 위해 엄격한 검토 및
+        평가를 받습니다.
       </p>
 
+      <p className="service-left-content-paragraph">
+        Scheme X 인증의 원래 범위는 중량 산업부 관할 하에 있으며 BIS에 의해
+        시행된 새로 발행된 기계 및 전기 장비 안전 (옴니버스 기술 규정) 명령,
+        2024에 의해 수정 및 확장되었습니다. 이 명령은 2026년 9월 1일부터
+        발효되며 액체 처리용 펌프, 컴프레서, 크레인, 회전 전기 기계, 변압기 및
+        개폐기 및 제어 기어와 같은 광범위한 기계 및 전기 장비를 다룹니다.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        이러한 기계 또는 장비의 어셈블리, 하위 어셈블리 및 구성품도 인도 표준국
+        법, 2016 섹션 16에 따라 인증 범위에 포함됩니다.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        또한 1989 CMVR 규칙 (밸브 규제 제조 및 건설) 하에서 Scheme X 관할의
+        보우저 및 기타 건설 장비 유형은 시장이 안전 및 기술 표준이 부족한 장비에
+        노출되지 않도록 보장합니다.
+      </p>
 
       <h2 className="service-left-content-heading-three">
         옴니버스 기술 규정 (OTR)
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        중량 산업부는 2024년 8월 28일 E-Gazette 통지를 통해 &ldquo;안전 명령 (기계 및 전기 장비 안전)에 대한 옴니버스 기술 규정&rdquo;을 발표했습니다. 이 혁신적인 규정은 BIS 규정, 2016의 Scheme X 하에서 기계, 전기 장비 및 어셈블리, 하위 어셈블리 및 구성품의 안전, 품질 및 준수를 개선하려 합니다.
+        중량 산업부는 2024년 8월 28일 E-Gazette 통지를 통해 &ldquo;안전 명령
+        (기계 및 전기 장비 안전)에 대한 옴니버스 기술 규정&rdquo;을
+        발표했습니다. 이 혁신적인 규정은 BIS 규정, 2016의 Scheme X 하에서 기계,
+        전기 장비 및 어셈블리, 하위 어셈블리 및 구성품의 안전, 품질 및 준수를
+        개선하려 합니다.
       </p>
 
-
       <p className="service-left-content-paragraph">
-        OTR 하에서 모든 카테고리의 기계 및 전기 장비 및 모든 부품 및 구성품이 포함됩니다. 그러나 몇 가지 카테고리는 특별히 제외됩니다:
+        OTR 하에서 모든 카테고리의 기계 및 전기 장비 및 모든 부품 및 구성품이
+        포함됩니다. 그러나 몇 가지 카테고리는 특별히 제외됩니다:
       </p>
 
       <PointsListWithoutHeading
@@ -2093,53 +2074,53 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        이러한 예외는 준수를 용이하게 하고 불필요한 규제 중복을 피하여 사업 편의성을 촉진하기 위해 만들어졌습니다.
+        이러한 예외는 준수를 용이하게 하고 불필요한 규제 중복을 피하여 사업
+        편의성을 촉진하기 위해 만들어졌습니다.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
-        옴니버스 기술 규정, 2024는 중량 산업부가 통지한 저전압 개폐기 및 제어 기어를 포함한 모든 기계 및 전기 장비를 다루며 BIS 인증의 Scheme X 프레임워크 하에서 처리됩니다. 명령은 제조업체 및 수입업체가 발행된 명령에 따라 운영을 수정할 충분한 시간을 가지도록 2026년 9월 1일부터 발효됩니다.
+        옴니버스 기술 규정, 2024는 중량 산업부가 통지한 저전압 개폐기 및 제어
+        기어를 포함한 모든 기계 및 전기 장비를 다루며 BIS 인증의 Scheme X
+        프레임워크 하에서 처리됩니다. 명령은 제조업체 및 수입업체가 발행된
+        명령에 따라 운영을 수정할 충분한 시간을 가지도록 2026년 9월 1일부터
+        발효됩니다.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         옴니버스 기술 규정 하의 BIS 인증
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        OTR 2024에 따라 펌프, 컴프레서, 원심분리기, 크레인, 변압기 및 개폐기를 포함한 기계 및 전기 장비의 제조업체 및 수입업체는 Scheme X 하에서 BIS 인증을 신청해야 합니다.
+        OTR 2024에 따라 펌프, 컴프레서, 원심분리기, 크레인, 변압기 및 개폐기를
+        포함한 기계 및 전기 장비의 제조업체 및 수입업체는 Scheme X 하에서 BIS
+        인증을 신청해야 합니다.
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         Scheme X 하에서 제조업체는 다음을 신청할 수 있습니다:
       </p>
 
-
       <PointsListWithoutHeading
         points={["BIS 라이선스, 또는", "적합성 인증서 (CoC)"]}
       />
 
-
       <p className="service-left-content-paragraph">
-        BIS 표준 마크를 사용하는 제품은 적합성 마크로, 사용자에게 제품이 안전하고 신뢰할 수 있으며 우수한 품질임을 인증하고 보장합니다. 또한 신뢰의 마크이자 정말 우수한 성능입니다.
+        BIS 표준 마크를 사용하는 제품은 적합성 마크로, 사용자에게 제품이
+        안전하고 신뢰할 수 있으며 우수한 품질임을 인증하고 보장합니다. 또한
+        신뢰의 마크이자 정말 우수한 성능입니다.
       </p>
-
 
       <h3 className="service-left-content-heading-three">
         MSME를 위한 특별 참고
       </h3>
 
-
       <p className="service-left-content-paragraph">
-        다른 많은 부문과 마찬가지로 중소기업 (MSME)은 Scheme X를 준수하고 기계 및 전기 장비에 대한 BIS 인증을 취득해야 합니다. 규제 요구사항 준수가 도전적으로 보일 수 있지만 Scheme X 인증서는 다음 이유로 MSME에 가치 추가 및 이점입니다:
+        다른 많은 부문과 마찬가지로 중소기업 (MSME)은 Scheme X를 준수하고 기계
+        및 전기 장비에 대한 BIS 인증을 취득해야 합니다. 규제 요구사항 준수가
+        도전적으로 보일 수 있지만 Scheme X 인증서는 다음 이유로 MSME에 가치 추가
+        및 이점입니다:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2150,18 +2131,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        BIS Scheme X 로고
-      </h3>
-
-
+      <h3 className="service-left-content-heading-three">BIS Scheme X 로고</h3>
 
       <p className="service-left-content-paragraph">
-        BIS Scheme X의 표준 마크는 품질 마크이자 신뢰의 원칙을 형성합니다. 로고에는 다음이 포함됩니다:
+        BIS Scheme X의 표준 마크는 품질 마크이자 신뢰의 원칙을 형성합니다.
+        로고에는 다음이 포함됩니다:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2170,12 +2145,11 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <p className="service-left-content-paragraph">
-        이 마크는 제조업체에게 성공적으로 BIS 라이선스가 발급되었음을 나타냅니다. 제조업체는 BIS 마크를 배치할 권한을 부여받으며 소비자에게 제품이 진짜이고 안전함을 보장합니다.
+        이 마크는 제조업체에게 성공적으로 BIS 라이선스가 발급되었음을
+        나타냅니다. 제조업체는 BIS 마크를 배치할 권한을 부여받으며 소비자에게
+        제품이 진짜이고 안전함을 보장합니다.
       </p>
-
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
@@ -2186,23 +2160,19 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-
-      <h3 className="service-left-content-heading-three">
-        법적 함의
-      </h3>
-
+      <h3 className="service-left-content-heading-three">법적 함의</h3>
 
       <p className="service-left-content-paragraph">
-        BIS 표준 마크는 신뢰와 품질의 마크입니다. 마크는 유효한 계약이 체결된 후에만 사용할 수 있습니다. 유효한 계약만이 소유자에게 마크 사용을 허용합니다. 유효한 계약 없이 마크를 사용하는 것은 인도 헌법 하의 범죄이며 법적 마크를 사용하는 것과 같습니다. 마크 소유자는 BIS 인증이 없는 제품에 라이선스 CM/L-XXXXXXXXXX 사용에 대해 엄중한 제한을 받습니다.
+        BIS 표준 마크는 신뢰와 품질의 마크입니다. 마크는 유효한 계약이 체결된
+        후에만 사용할 수 있습니다. 유효한 계약만이 소유자에게 마크 사용을
+        허용합니다. 유효한 계약 없이 마크를 사용하는 것은 인도 헌법 하의
+        범죄이며 법적 마크를 사용하는 것과 같습니다. 마크 소유자는 BIS 인증이
+        없는 제품에 라이선스 CM/L-XXXXXXXXXX 사용에 대해 엄중한 제한을 받습니다.
       </p>
-
-
-
 
       <p className="service-left-content-paragraph">
         따라서 모든 생산자는 다음을 의무적으로 수행해야 합니다:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2212,22 +2182,16 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        이 규제 프레임워크는 소비자 및 사업자 이익을 보호하고 안전, 개방성 및 신뢰를 강조하는 시장을 육성하기 위해 확장됩니다.
+        이 규제 프레임워크는 소비자 및 사업자 이익을 보호하고 안전, 개방성 및
+        신뢰를 강조하는 시장을 육성하기 위해 확장됩니다.
       </p>
-
-
 
       <h2 className="service-left-content-heading-three">
         Scheme-I와 Scheme-X 간 주요 차이점
       </h2>
 
-
-      <h3 className="service-left-content-heading-three">
-        Scheme-I
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Scheme-I</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2238,9 +2202,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
-        Scheme-X
-      </h3>
+      <h3 className="service-left-content-heading-three">Scheme-X</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2326,17 +2288,14 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-
       <h3 className="service-left-content-heading-three">
         Scheme-X가 다루는 제품
       </h3>
 
-
       <p className="service-left-content-paragraph">
-        Scheme-X는 안전 및 성능에 대한 최고 위험을 가진 제품을 다루며, 다음을 포함합니다:
+        Scheme-X는 안전 및 성능에 대한 최고 위험을 가진 제품을 다루며, 다음을
+        포함합니다:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2349,7 +2308,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
       {/* Scheme X Product Table 20 */}
       <div className="mt-[16px] md:mt-[24px]">
-
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
@@ -2374,12 +2332,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  액체 처리용 펌프, 액체 엘리베이터 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품의 모든 유형
+                  액체 처리용 펌프, 액체 엘리베이터 및 (또는) 어셈블리 / 하위
+                  어셈블리 / 구성품의 모든 유형
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                841340, 841350, 841360, 841370, 841381, 841382, 841391 및
-                841392
+                841340, 841350, 841360, 841370, 841381, 841382, 841391 및 841392
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -2391,8 +2349,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-apchukgi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  컴프레서의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리
-                  / 구성품
+                  컴프레서의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 /
+                  구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2409,8 +2367,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-yeolcheori-jangbi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  온도 변화 과정을 포함한 재료 처리 기계의 모든 유형 및 (또는) 어셈블리
-                  / 하위 어셈블리 / 구성품
+                  온도 변화 과정을 포함한 재료 처리 기계의 모든 유형 및 (또는)
+                  어셈블리 / 하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2427,8 +2385,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  액체 및 가스용 원심분리기, 여과 또는 정화 기계의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리
-                  / 구성품
+                  액체 및 가스용 원심분리기, 여과 또는 정화 기계의 모든 유형 및
+                  (또는) 어셈블리 / 하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2445,8 +2403,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-pojang-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  병 충전, 밀봉, 라벨링, 포장 또는 랩핑 기계의 모든 유형 및 (또는)
-                  어셈블리/하위 어셈블리/구성품
+                  병 충전, 밀봉, 라벨링, 포장 또는 랩핑 기계의 모든 유형 및
+                  (또는) 어셈블리/하위 어셈블리/구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2462,8 +2420,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-keurein"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  크레인의 모든 유형 및 (또는) 어셈블리
-                  / 하위 어셈블리/구성품
+                  크레인의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리/구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2480,8 +2437,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-geonseol-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  건설, 토공, 채굴용 기계의 모든 유형 및
-                  (또는) 어셈블리 / 하위 어셈블리/구성품
+                  건설, 토공, 채굴용 기계의 모든 유형 및 (또는) 어셈블리 / 하위
+                  어셈블리/구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2498,8 +2455,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-jigjo-gi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  직조 기계 (직기)의 모든 유형 및 (또는)
-                  어셈블리/하위 어셈블리 / 구성품
+                  직조 기계 (직기)의 모든 유형 및 (또는) 어셈블리/하위 어셈블리
+                  / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2515,7 +2472,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-jasu-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  자수 제작 기계의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
+                  자수 제작 기계의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리
+                  / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2531,8 +2489,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  제목 8456~8461 하에 포함된 금속 절단 기계 도구의 모든 유형 및 (또는) 어셈블리
-                  / 하위 어셈블리/구성품
+                  제목 8456~8461 하에 포함된 금속 절단 기계 도구의 모든 유형 및
+                  (또는) 어셈블리 / 하위 어셈블리/구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2548,7 +2506,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-gongjag-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  석재, 세라믹, 콘크리트, 석면 시멘트 또는 유사한 광물 유리 가공용 기계 도구의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
+                  석재, 세라믹, 콘크리트, 석면 시멘트 또는 유사한 광물 유리
+                  가공용 기계 도구의 모든 유형 및 (또는) 어셈블리 / 하위
+                  어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2564,8 +2524,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-gomu-mich-peullaseutig-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  고무 및 플라스틱 가공 기계의 모든 유형 및 (또는)
-                  어셈블리 / 하위 어셈블리 / 구성품
+                  고무 및 플라스틱 가공 기계의 모든 유형 및 (또는) 어셈블리 /
+                  하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2581,7 +2541,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-gonggong-sa-eob-mich-gigye-gigu"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  공공 사업 및 건물용 기계와 챕터 84의 다른 곳에 지정되지 않거나 포함되지 않은 개별 기능을 가진 기계 및 기계 장치의 모든 유형 및 (또는) 어셈블리/하위 어셈블리 / 구성품
+                  공공 사업 및 건물용 기계와 챕터 84의 다른 곳에 지정되지 않거나
+                  포함되지 않은 개별 기능을 가진 기계 및 기계 장치의 모든 유형
+                  및 (또는) 어셈블리/하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2597,7 +2559,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  기어 및 기어링, 톱니바퀴, 체인 스프로킷, 변속 요소 볼 또는 롤러 나사, 기어박스 및 속도 변경기, 토크 컨버터를 포함한 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
+                  기어 및 기어링, 톱니바퀴, 체인 스프로킷, 변속 요소 볼 또는
+                  롤러 나사, 기어박스 및 속도 변경기, 토크 컨버터를 포함한 모든
+                  유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2613,7 +2577,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-hojeon-jeongi-gigye"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  발전기 등과 같은 회전 전기 기계의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
+                  발전기 등과 같은 회전 전기 기계의 모든 유형 및 (또는) 어셈블리
+                  / 하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2629,8 +2594,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-dijel-baljeongi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  디젤 발전기의 모든 유형 및 (또는) 어셈블리
-                  / 하위 어셈블리 / 구성품
+                  디젤 발전기의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 /
+                  구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2646,13 +2611,11 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-byeonab-gi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  변압기의 모든 유형 및 (또는) 어셈블리
-                  / 하위 어셈블리 / 구성품
+                  변압기의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                850421, 850422, 850423, 850431, 850432, 850433, 850434 및
-                850490
+                850421, 850422, 850423, 850431, 850432, 850433, 850434 및 850490
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -2664,7 +2627,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-jeonlyeog-bandojeo-byeonhwan-gi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  전력 반도체 변환기의 모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
+                  전력 반도체 변환기의 모든 유형 및 (또는) 어셈블리 / 하위
+                  어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2680,8 +2644,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-iha"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  1000볼트 이하 전압에서 작동하는 개폐기 및 제어 기어 장비의 모든 유형 및 (또는) 어셈블리
-                  / 하위 어셈블리 / 구성품
+                  1000볼트 이하 전압에서 작동하는 개폐기 및 제어 기어 장비의
+                  모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2697,8 +2661,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-seukim-x-injeung-gaepye-gi-mich-jejeo-jangbi-1000-bolteu-chogo"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  1000볼트 초과 전압에서 작동하는 개폐기 및 제어 기어 장비의 모든 유형 및 (또는) 어셈블리
-                  / 하위 어셈블리 / 구성품
+                  1000볼트 초과 전압에서 작동하는 개폐기 및 제어 기어 장비의
+                  모든 유형 및 (또는) 어셈블리 / 하위 어셈블리 / 구성품
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2746,18 +2710,17 @@ const SchemeXMainContentLeftOverviewSection = () => {
         BIS Scheme - X 하의 안전 표준
       </h2>
 
-
-
       <p className="service-left-content-paragraph">
-        단순한 법적 필요 이상으로 BIS Scheme - X 인증은 안전, 품질 및 신뢰성의 약속을 제공합니다. 국가 및 국제 규범에 대한 엄격한 준수를 포함하는 이 인증은 사용자에게 제공되는 기계 및 전기 장치가 안전하고 환경 친화적이며 기술적으로 건전함을 보장합니다.
+        단순한 법적 필요 이상으로 BIS Scheme - X 인증은 안전, 품질 및 신뢰성의
+        약속을 제공합니다. 국가 및 국제 규범에 대한 엄격한 준수를 포함하는 이
+        인증은 사용자에게 제공되는 기계 및 전기 장치가 안전하고 환경 친화적이며
+        기술적으로 건전함을 보장합니다.
       </p>
 
-
       <p className="service-left-content-paragraph">
-        Scheme - X 하에서 인증하기 위해 제조업체는 다음 주요 안전 구성 요소를 준수해야 합니다:
+        Scheme - X 하에서 인증하기 위해 제조업체는 다음 주요 안전 구성 요소를
+        준수해야 합니다:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2769,22 +2732,16 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <h2 className="service-left-content-heading-three">
         Scheme-X 하의 규제 표준
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        제조업체는 국제 표준과 조화된 관련 인도 표준을 준수해야 하며, 다음을 포함합니다:
+        제조업체는 국제 표준과 조화된 관련 인도 표준을 준수해야 하며, 다음을
+        포함합니다:
       </p>
 
-
-      <h3 className="service-left-content-heading-three">
-        Type A 표준:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type A 표준:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2792,45 +2749,30 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        Type B 표준:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type B 표준:</h3>
 
       <PointsListWithoutHeading
-        points={[
-          "옴니버스 기술 규정 (OTR) 명령, 2024의 제2 부록에 설명됨.",
-        ]}
+        points={["옴니버스 기술 규정 (OTR) 명령, 2024의 제2 부록에 설명됨."]}
       />
 
-
-
-      <h3 className="service-left-content-heading-three">
-        Type C 표준:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type C 표준:</h3>
 
       <PointsListWithoutHeading
         points={["OTR 명령, 2024의 제3 부록에 설명됨."]}
       />
 
-
       <h3 className="service-left-content-heading-three">
         IS/IEC 60947 시리즈:
       </h3>
 
-
       <PointsListWithoutHeading
         points={[
           "여러 부품 및 섹션에서 저전압 개폐기 및 제어 기어를 다룹니다.",
-        ]} />
+        ]}
+      />
     </div>
-  )
-}
-
-
-
+  );
+};
 
 const PointsListWithoutHeading = ({ points }) => {
   return (

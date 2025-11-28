@@ -37,7 +37,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -298,9 +297,9 @@ const BISCertificationContactForm = () => {
         error.response?.data?.message || "Something went wrong";
       toast({
         variant: "destructive",
-        title: errorMessage || "お問い合わせフォームの詳細を送信できませんでした！",
-        description:
-          "問題が発生しました。詳細を確認して再試行してください。",
+        title:
+          errorMessage || "お問い合わせフォームの詳細を送信できませんでした！",
+        description: "問題が発生しました。詳細を確認して再試行してください。",
       });
     } finally {
       setLoading(false);
@@ -775,9 +774,7 @@ const ProcessSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        BIS認証プロセス
-      </h2>
+      <h2 className="service-left-content-heading-two">BIS認証プロセス</h2>
 
       <p className="service-left-content-paragraph">
         BIS認証プロセスは構造化された流れに従います：
@@ -806,9 +803,7 @@ const DocumentsSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        BIS認証に必要な書類
-      </h2>
+      <h2 className="service-left-content-heading-two">BIS認証に必要な書類</h2>
 
       <p className="service-left-content-paragraph">
         強力な書類パッケージにより、スムーズな処理が保証されます。主な要件には以下が含まれます：
@@ -849,9 +844,7 @@ const CostSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        BIS認証費用
-      </h2>
+      <h2 className="service-left-content-heading-two">BIS認証費用</h2>
 
       <div className="mt-[16px] md:mt-[24px]">
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
@@ -976,9 +969,7 @@ const SchemesSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        BIS認証スキーム
-      </h2>
+      <h2 className="service-left-content-heading-two">BIS認証スキーム</h2>
 
       <p className="service-left-content-paragraph">
         BISには、様々な産業および製品タイプ向けに設計された多数の認証スキームがあります。それぞれは産業と製品の特定のニーズに対処するために設計されています。
@@ -1000,10 +991,8 @@ const SchemesSection = () => {
             "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
           "ISIマークスキーム（国内製造業者）":
             "a-guide-to-bis-certification-indian-bis",
-          "インドBISのスキームX":
-            "indian-bis-certification-under-scheme-x",
-          "CRS – 必須登録スキーム":
-            "what-is-crs-bis-or-crs-registration",
+          インドBISのスキームX: "indian-bis-certification-under-scheme-x",
+          "CRS – 必須登録スキーム": "what-is-crs-bis-or-crs-registration",
         }}
       />
 
@@ -1060,14 +1049,17 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        インド標準局（BIS）は、インドのITおよび電子製品を規制することを目的とした、必須登録スキーム（CRS）と呼ばれるBIS認証プログラムを開発しました。LEDライト、携帯電話、ノートパソコン、パワーバンク、その他の消費電子機器などの高リスク製品の安全性と品質をインド標準に対して評価することに焦点を当てています。CRSは、ISIスキームとは対照的に、ISIマークを発行しませんが、スキームに準拠した認証製品には、一意の登録番号付きのCRSマークが付けられます。すべての電子機器およびIT製品は、BIS承認のラボでテストされ、BIS CRSに正式に登録される必要があり、インドで販売または輸入される前に準拠を確保するために使用されます。
+        インド標準局（BIS）は、インドのITおよび電子製品を規制することを目的とした、必須登録スキーム（CRS）と呼ばれるBIS認証プログラムを開発しました。LEDライト、携帯電話、ノートパソコン、パワーバンク、その他の消費電子機器などの高リスク製品の安全性と品質をインド標準に対して評価することに焦点を当てています。CRSは、ISIスキームとは対照的に、ISIマークを発行しませんが、スキームに準拠した認証製品には、一意の登録番号付きのCRSマークが付けられます。すべての電子機器およびIT製品は、BIS承認のラボでテストされ、BIS
+        CRSに正式に登録される必要があり、インドで販売または輸入される前に準拠を確保するために使用されます。
       </p>
 
       <p className="service-left-content-paragraph">
         このスキームは、特に急速に成長しているデジタル市場において、インドの消費者を安全でない、標準以下の、または偽造の電子機器から保護するために不可欠です。インドと外国の両方の製造業者がCRS認証を取得する必要があります。外国企業は、準拠を確保するために認可インド代表者（AIR）を任命する必要があります。BISは、新しい製品と技術、および新興の安全性問題を含めるために、CRSの対象となる製品のリストを継続的に更新しています。製造業者にとって、CRSの下でBIS登録を取得することは、規制準拠に役立つだけでなく、顧客の信頼、会社の評判、およびインドの電子機器業界での市場アクセスを増加させるため、追加の利点です。
       </p>
 
-      <h3 className="service-left-content-heading-three">ハルマーキングスキーム</h3>
+      <h3 className="service-left-content-heading-three">
+        ハルマーキングスキーム
+      </h3>
 
       <p className="service-left-content-paragraph">
         インドでは、ハルマーキングスキームの下で、金および銀のジュエリーのハルマーキングが義務付けられており、ジュエリーの純度と真正性を保証するインド標準局（BIS）によって規制されています。貴金属製品は、BIS承認の試金およびハルマーキングセンター（AHC）でテストされ、その後ハルマーキング記号が刻印されます。このプロセスは、製品が最初に設定されたインド標準を満たす場合にのみ完了します。宝石商は、ハルマーキングジュエリーを販売することを許可するBISライセンスを最初に取得する必要があります。これは合法的に行う唯一の方法です。宝石商は、ハルマーキングジュエリーを販売するために、製品テスト、BIS監査、継続的な準拠監視を受けて完了する義務があります。このプロセスは、最終的に消費者を保護し、純度、重量、品質を確保し、ジュエリー市場での不正行為および詐欺を制限します。
@@ -1077,9 +1069,7 @@ const SchemesSection = () => {
         インドの消費者にとって、金と銀は単なる装飾品ではなく、主要な投資でもあり、信頼と透明性が不可欠です。ハルマーキングジュエリーは、国の一般市民にとって、販売されるすべてのジュエリーが様々な国家ベンチマークおよび公正な取引慣行に対して広範なテストを受けていることを保証するマークです。宝石商は、ジュエリーにハルマーキングを行うことで、信頼性と市場の評判を示すことができます。設定された規則に準拠できないことは、ライセンスの停止を含む可能性のある罰則をもたらします。BISの下でのハルマーキングは、原則に基づく法的義務の履行として機能します。これは消費者の満足度を高めるだけでなく、インドのジュエリー市場全体を強化します。これは小規模な小売業者だけでなく、大規模な製造業者にも当てはまります。
       </p>
 
-      <h3 className="service-left-content-heading-three">
-        エコマーク認証
-      </h3>
+      <h3 className="service-left-content-heading-three">エコマーク認証</h3>
 
       <p className="service-left-content-paragraph">
         エコマークは、環境に優しい商品の促進を目的として、インド標準局（BIS）によって作成された、革新を中心とした承認スキームです。安全性と品質パラメータに主に関心を持つ従来の認証とは異なり、エコマークはインド標準に準拠し、商品のライフサイクルの様々な段階のいずれか1つまたは複数の段階で、有害な環境への影響の少なくともいくらかの低減レベルを示す商品に授与されます。エコマーク認証は、排出レベル、非毒性、生分解率、リサイクル能力、システムとの全体的な相互作用を含む基準準拠の相当なテストと証明の後にのみ授与されます。エコマークは、ISIマークと同様に、より顕著な環境持続可能性の目標を持つ認証マークの地位が付与された政府からの保証の象徴です。
@@ -1094,11 +1084,15 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        インド標準局（BIS）によって開始された管理システム認証スキーム（MSCS）は、国際的に受け入れられ認識された管理システムの実装について、関連企業を評価し認識する段階的な手順です。MSCSフレームワークは、ISO 9001品質管理、ISO 14001環境管理、ISO 45001職業健康安全管理システムなどのISO標準で構成されています。MSCSは、法的運用、一貫性、および運用の継続的改善について企業を認証します。認証された企業は、多数の評価と監査を受け、顧客、規制当局、およびステークホルダー間の信頼を構築し、安全性、品質、持続可能性の保証を強化します。
+        インド標準局（BIS）によって開始された管理システム認証スキーム（MSCS）は、国際的に受け入れられ認識された管理システムの実装について、関連企業を評価し認識する段階的な手順です。MSCSフレームワークは、ISO
+        9001品質管理、ISO 14001環境管理、ISO
+        45001職業健康安全管理システムなどのISO標準で構成されています。MSCSは、法的運用、一貫性、および運用の継続的改善について企業を認証します。認証された企業は、多数の評価と監査を受け、顧客、規制当局、およびステークホルダー間の信頼を構築し、安全性、品質、持続可能性の保証を強化します。
       </p>
 
       <p className="service-left-content-paragraph">
-        BISはインドの国家標準機関であり、組織の評判と信頼性を国内およびインド国外で向上させるための認証機関です。MSCSは、定期的な監督と再認証を通じて説明責任を促進するだけでなく、Make in IndiaやAtmanirbhar Bharatなどの公的プログラムを積極的にサポートするビジネスを解放します。法的義務に加えて、このスキームは、誠実さ、効率、公正な取引の文化を育むのにも役立ちます。MSCSは認証された企業による貿易と投資を促進し、BISは国の品質エコシステムの開発において重要な役割を果たします。
+        BISはインドの国家標準機関であり、組織の評判と信頼性を国内およびインド国外で向上させるための認証機関です。MSCSは、定期的な監督と再認証を通じて説明責任を促進するだけでなく、Make
+        in IndiaやAtmanirbhar
+        Bharatなどの公的プログラムを積極的にサポートするビジネスを解放します。法的義務に加えて、このスキームは、誠実さ、効率、公正な取引の文化を育むのにも役立ちます。MSCSは認証された企業による貿易と投資を促進し、BISは国の品質エコシステムの開発において重要な役割を果たします。
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1106,7 +1100,8 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        インド標準局（BIS）の下で、ラボ承認スキーム（LRS）は、BIS承認のために製品をテストおよび認証するラボの信頼性と全体的な能力を保証するシステムの不可欠な部分です。そのようなラボは、技術知識、労働力の品質、インフラストラクチャ、およびISO/IEC 17025標準とのラボの全体的な能力と満足度を含む様々な属性について批判的に評価されます。これらのラボは、承認されると、ISIマークスキームや必須登録スキーム（CRS）などの様々なBIS認証プログラムの一部として適合性評価が行われる製品についてテストを実施することが許可されます。製造業者、特に輸入業者および輸出業者にとって、LRS承認ラボから得られたレポートは、特定の製品に法的要件であるBIS証明書を達成するための重要な要件であることは明らかです。
+        インド標準局（BIS）の下で、ラボ承認スキーム（LRS）は、BIS承認のために製品をテストおよび認証するラボの信頼性と全体的な能力を保証するシステムの不可欠な部分です。そのようなラボは、技術知識、労働力の品質、インフラストラクチャ、およびISO/IEC
+        17025標準とのラボの全体的な能力と満足度を含む様々な属性について批判的に評価されます。これらのラボは、承認されると、ISIマークスキームや必須登録スキーム（CRS）などの様々なBIS認証プログラムの一部として適合性評価が行われる製品についてテストを実施することが許可されます。製造業者、特に輸入業者および輸出業者にとって、LRS承認ラボから得られたレポートは、特定の製品に法的要件であるBIS証明書を達成するための重要な要件であることは明らかです。
       </p>
 
       <p className="service-left-content-paragraph">
@@ -1135,9 +1130,7 @@ const SchemesSection = () => {
         新しいリスクと技術が出現するにつれて、リストは継続的に成長しています。
       </p>
 
-      <h3 className="service-left-content-heading-three">
-        BIS認証の利点
-      </h3>
+      <h3 className="service-left-content-heading-three">BIS認証の利点</h3>
 
       <p className="service-left-content-paragraph">
         企業にとって、BIS証明書は単なる法律への準拠よりもはるかに多くのものを提供します。
@@ -1245,8 +1238,7 @@ const BISCertificationFaq = () => {
         "はい、環境基準を満たす製品は、環境安全性に関するインド標準への準拠を確保するエコマークスキームの下でBIS認証を取得できます。",
     },
     {
-      question:
-        "BIS認証とBIS登録の違いは何ですか？",
+      question: "BIS認証とBIS登録の違いは何ですか？",
       answer:
         "BIS認証は一般に、ISI、FMCS、またはハルマーキングスキームの下での承認を指しますが、BIS登録は一般に電子製品向けのCRSスキームに関連付けられています。",
     },
@@ -1375,8 +1367,9 @@ const BISCertificationServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

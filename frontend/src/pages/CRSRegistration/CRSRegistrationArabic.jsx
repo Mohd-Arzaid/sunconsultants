@@ -35,7 +35,6 @@ import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -44,7 +43,6 @@ import ISIMark from "../../assets/images/ISIMark.jpg";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterArabic from "@/components/manual/Footer/FooterArabic";
 import ServiceAuthorArabic from "@/components/manual/ServiceAuthor/ServiceAuthorArabic";
-
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -70,7 +68,6 @@ const CRSRegistrationArabic = () => {
 };
 
 export default CRSRegistrationArabic;
-
 
 const CRSRegistrationMetaTagsArabic = () => {
   const breadcrumbStructuredData = {
@@ -198,7 +195,8 @@ const CRSRegistrationHeroArabic = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            إلزامي للمنتجات الإلكترونية لضمان السلامة والجودة. احصل على موافقة BIS بمساعدة خبير!
+            إلزامي للمنتجات الإلكترونية لضمان السلامة والجودة. احصل على موافقة
+            BIS بمساعدة خبير!
           </p>
 
           <div className="flex items-center -mt-2">
@@ -333,8 +331,7 @@ const CRSRegistrationHeroContactFormArabic = () => {
       toast({
         variant: "destructive",
         title: errorMessage,
-        description:
-          "حدث خطأ ما. يرجى التحقق من تفاصيلك والمحاولة مرة أخرى.",
+        description: "حدث خطأ ما. يرجى التحقق من تفاصيلك والمحاولة مرة أخرى.",
       });
     } finally {
       setLoading(false);
@@ -562,8 +559,9 @@ const CRSRegistrationIndexArabic = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -613,10 +611,11 @@ const CRSRegistrationIndexArabic = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -636,18 +635,20 @@ const CRSRegistrationIndexArabic = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -723,7 +724,8 @@ export const ServicesArabic = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
-                alt="CDSCO"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -912,14 +914,14 @@ const CRSRegistrationServiceFaqArabic = () => {
     },
     {
       id: "item-13",
-      question:
-        "13. ماذا يحدث إذا لم أحصل على تسجيل BIS لمنتج إلزامي؟",
+      question: "13. ماذا يحدث إذا لم أحصل على تسجيل BIS لمنتج إلزامي؟",
       answer:
         "عقوبات شديدة، بما في ذلك: <br />مصادرة المنتج <br />رفض الجمارك <br />غرامات قانونية <br />إلغاء الإدراج من بوابات التجارة الإلكترونية <br />حظر دائم من السوق الهندي",
     },
     {
       id: "item-14",
-      question: "14. هل يمكن أن تغطي شهادة BIS واحدة عدة نماذج أو علامات تجارية؟",
+      question:
+        "14. هل يمكن أن تغطي شهادة BIS واحدة عدة نماذج أو علامات تجارية؟",
       answer:
         "لا. يجب أن يتم تصنيف كل علامة تجارية وموقع المصنع بشكل منفصل. يمكن إضافة نماذج متعددة باستخدام تقارير إضافية، ولكن فقط تحت نفس الطلب والعلامة التجارية.",
     },
@@ -1161,7 +1163,8 @@ const productsData = [
   },
   {
     id: 26,
-    product: "محولات الطاقة للأجهزة الصوتية والفيديو والأجهزة الإلكترونية المشابهة",
+    product:
+      "محولات الطاقة للأجهزة الصوتية والفيديو والأجهزة الإلكترونية المشابهة",
     isNumber: "IS 616:2010",
     date: "01 ديسمبر 2015",
   },
@@ -1185,13 +1188,15 @@ const productsData = [
   },
   {
     id: 30,
-    product: "الخلايا الثانوية المغلقة/البطاريات المحتوية على إلكتروليت قلوي أو غير حامضي آخر للاستخدام في التطبيقات المحمولة الجزء 1 أنظمة النيكل",
+    product:
+      "الخلايا الثانوية المغلقة/البطاريات المحتوية على إلكتروليت قلوي أو غير حامضي آخر للاستخدام في التطبيقات المحمولة الجزء 1 أنظمة النيكل",
     isNumber: "IS 16046(Part 1): 2018",
     date: "01 يونيو 2016",
   },
   {
     id: 31,
-    product: "الخلايا الثانوية المغلقة/البطاريات المحتوية على إلكتروليت قلوي أو غير حامضي آخر للاستخدام في التطبيقات المحمولة الجزء 2 أنظمة الليثيوم",
+    product:
+      "الخلايا الثانوية المغلقة/البطاريات المحتوية على إلكتروليت قلوي أو غير حامضي آخر للاستخدام في التطبيقات المحمولة الجزء 2 أنظمة الليثيوم",
     isNumber: "IS 16046(Part 2): 2018",
     date: "01 يونيو 2016",
   },
@@ -1258,7 +1263,8 @@ const productsData = [
   {
     id: 42,
     product: "كاميرات CCTV/مسجلات CCTV",
-    isNumber: "IS 13252 (Part 1) : 2010, Essential Requirement(s) for Security of CCTV",
+    isNumber:
+      "IS 13252 (Part 1) : 2010, Essential Requirement(s) for Security of CCTV",
     date: "23 مايو 2018",
   },
   {
@@ -1269,7 +1275,8 @@ const productsData = [
   },
   {
     id: 44,
-    product: "قارئات الباركود التي تعمل بـ USB، ماسحات الباركود، ماسحات القزحية، ماسحات البصمة الضوئية",
+    product:
+      "قارئات الباركود التي تعمل بـ USB، ماسحات الباركود، ماسحات القزحية، ماسحات البصمة الضوئية",
     isNumber: "IS 13252 (Part 1) : 2010",
     date: "23 مايو 2018",
   },
@@ -1281,14 +1288,18 @@ const productsData = [
   },
   {
     id: 46,
-    product: "وحدات الطاقة الكهروضوئية البرية السيليكون البلورية (PV) (قائمة على رقاقة Si)",
-    isNumber: "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
+    product:
+      "وحدات الطاقة الكهروضوئية البرية السيليكون البلورية (PV) (قائمة على رقاقة Si)",
+    isNumber:
+      "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
     date: "31 مارس 2019",
   },
   {
     id: 47,
-    product: "وحدات الطاقة الكهروضوئية البرية ذات الأغشية الرقيقة (PV) (a-Si، CiGs و CdTe)",
-    isNumber: "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
+    product:
+      "وحدات الطاقة الكهروضوئية البرية ذات الأغشية الرقيقة (PV) (a-Si، CiGs و CdTe)",
+    isNumber:
+      "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Part 1) : 2004 & IS/IEC 61730 (Part 2) : 2004",
     date: "31 مارس 2019",
   },
   {
@@ -1300,7 +1311,8 @@ const productsData = [
   {
     id: 49,
     product: "العواكس الكهروضوئية المتصلة بالشبكة",
-    isNumber: "IS 16221 (Part 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
+    isNumber:
+      "IS 16221 (Part 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
     date: "30 يونيو 2021",
   },
   {
@@ -1365,7 +1377,8 @@ const productsData = [
   },
   {
     id: 60,
-    product: "مزودات الطاقة المستقلة من نوع Switch Mode (SMPS) بجهد خرج 48 فولت (الحد الأقصى)",
+    product:
+      "مزودات الطاقة المستقلة من نوع Switch Mode (SMPS) بجهد خرج 48 فولت (الحد الأقصى)",
     isNumber: "IS 13252 (Part 1) : 2010",
     date: "01 أبريل 2021",
   },
@@ -1510,7 +1523,8 @@ export const CISProductTableArabic = () => {
         </h2>
 
         <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-right max-w-full leading-loose mb-8">
-          يدرج الجدول التالي المنتجات التي تتطلب تسجيل BIS CRS في الهند جنباً إلى جنب مع أرقام المعايير الهندية (IS) المعمول بها ومواعيد التنفيذ.
+          يدرج الجدول التالي المنتجات التي تتطلب تسجيل BIS CRS في الهند جنباً
+          إلى جنب مع أرقام المعايير الهندية (IS) المعمول بها ومواعيد التنفيذ.
         </p>
 
         <div className="relative mb-6">
@@ -1604,15 +1618,23 @@ const CRSRegistrationMainContentRightArabic = () => {
           <h2 className="service-left-content-heading-two">ما هو تسجيل BIS؟</h2>
 
           <p className="service-left-content-paragraph">
-            هيئة المعايير الهندية (BIS) هي هيئة التوحيد القياسي الوطنية في الهند وتعمل تحت وزارة شؤون المستهلك والأغذية والتوزيع العام حكومة الهند. BIS مسؤولة عن الحفاظ على معايير الجودة والسلامة والأداء لمختلف المنتجات والخدمات في الهند وفقاً للمعايير الهندية (IS) ذات الصلة.
+            هيئة المعايير الهندية (BIS) هي هيئة التوحيد القياسي الوطنية في الهند
+            وتعمل تحت وزارة شؤون المستهلك والأغذية والتوزيع العام حكومة الهند.
+            BIS مسؤولة عن الحفاظ على معايير الجودة والسلامة والأداء لمختلف
+            المنتجات والخدمات في الهند وفقاً للمعايير الهندية (IS) ذات الصلة.
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS مسؤولة عن الإشراف على وتنفيذ مخططات مختلفة في الهند. مخطط التسجيل الإلزامي (CRS) هو مخطط شهادة بارز وإلزامي من BIS يغطي فئات مختلفة من المنتجات الإلكترونية وتقنية المعلومات.
+            BIS مسؤولة عن الإشراف على وتنفيذ مخططات مختلفة في الهند. مخطط
+            التسجيل الإلزامي (CRS) هو مخطط شهادة بارز وإلزامي من BIS يغطي فئات
+            مختلفة من المنتجات الإلكترونية وتقنية المعلومات.
           </p>
 
           <p className="service-left-content-paragraph">
-            أداء وسلامة المنتجات الهندية مسألة مهمة للهند. تضمن شهادة BIS CRS أن المنتجات الإلكترونية وتقنية المعلومات متوافقة مع المعايير الهندية، وتساعد في حماية المستهلكين من المنتجات غير المتوافقة وذات النوعية الرديئة.
+            أداء وسلامة المنتجات الهندية مسألة مهمة للهند. تضمن شهادة BIS CRS أن
+            المنتجات الإلكترونية وتقنية المعلومات متوافقة مع المعايير الهندية،
+            وتساعد في حماية المستهلكين من المنتجات غير المتوافقة وذات النوعية
+            الرديئة.
           </p>
         </div>
 
@@ -1671,11 +1693,17 @@ const CRSRegistrationMainContentLeftOverviewSectionArabic = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Compulsory Registration Scheme (مخطط التسجيل الإلزامي) هو مخطط تسجيل منتجات BIS تم إطلاقه في عام 2012 وكان يركز بشكل أساسي على المنتجات الإلكترونية. على مر السنين، مع إطلاق المزيد من المنتجات، تم توسيع CRS لتشمل مجموعة أوسع من فئات المنتجات، بما في ذلك المنتجات الكهربائية مثل الأجهزة والمعدات الشمسية والبطاريات والمزيد. تسجيل CRS إلزامي للمنتجات المحددة بموجب أوامر ضبط الجودة (QCOs) الصادرة عن مختلف الوزارات.
+        Compulsory Registration Scheme (مخطط التسجيل الإلزامي) هو مخطط تسجيل
+        منتجات BIS تم إطلاقه في عام 2012 وكان يركز بشكل أساسي على المنتجات
+        الإلكترونية. على مر السنين، مع إطلاق المزيد من المنتجات، تم توسيع CRS
+        لتشمل مجموعة أوسع من فئات المنتجات، بما في ذلك المنتجات الكهربائية مثل
+        الأجهزة والمعدات الشمسية والبطاريات والمزيد. تسجيل CRS إلزامي للمنتجات
+        المحددة بموجب أوامر ضبط الجودة (QCOs) الصادرة عن مختلف الوزارات.
       </p>
 
       <p className="service-left-content-paragraph">
-        أي منتج يخضع لمخطط CRS الإلزامي يجب أن يتم بيعه أو استيراده أو توزيعه في الهند فقط بعد الحصول على التسجيل مع BIS.
+        أي منتج يخضع لمخطط CRS الإلزامي يجب أن يتم بيعه أو استيراده أو توزيعه في
+        الهند فقط بعد الحصول على التسجيل مع BIS.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1683,7 +1711,9 @@ const CRSRegistrationMainContentLeftOverviewSectionArabic = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        في عام 2012، تم إطلاق أول QCO تحت مخطط CRS وتركز على المعدات الإلكترونية وتقنية المعلومات. منذ ذلك الحين، تم إصدار QCOs إضافية في القطاعات التالية:
+        في عام 2012، تم إطلاق أول QCO تحت مخطط CRS وتركز على المعدات الإلكترونية
+        وتقنية المعلومات. منذ ذلك الحين، تم إصدار QCOs إضافية في القطاعات
+        التالية:
       </p>
 
       <PointsListWithoutHeading
@@ -1698,7 +1728,8 @@ const CRSRegistrationMainContentLeftOverviewSectionArabic = () => {
       />
 
       <p className="service-left-content-paragraph">
-        قائمة شهادة CRS تتوسع بسرعة، لذا من المهم جداً للمصنعين أن يكونوا استباقيين وواعين بالتحديثات الأخيرة.
+        قائمة شهادة CRS تتوسع بسرعة، لذا من المهم جداً للمصنعين أن يكونوا
+        استباقيين وواعين بالتحديثات الأخيرة.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -1788,7 +1819,8 @@ const CRSRegistrationMainContentLeftOverviewSectionArabic = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        إذا كنت منتجاً في الهند، أو شركة أجنبية تحاول دخول السوق الهندي، معرفة خطوات BIS CRS ضرورية. يساعدك ذلك على:
+        إذا كنت منتجاً في الهند، أو شركة أجنبية تحاول دخول السوق الهندي، معرفة
+        خطوات BIS CRS ضرورية. يساعدك ذلك على:
       </p>
 
       <PointsListWithoutHeading
@@ -1821,10 +1853,15 @@ const CRSRegistrationMainContentLeftEligibilitySectionArabic = () => {
       </p>
 
       <p className="service-left-content-paragraph">
-        في الهند، يمكن منح شهادة BIS تحت مخطط التسجيل الإلزامي (CRS) فقط للمصنعين الذين يفيون بالمتطلبات المحددة من قبل هيئة المعايير الهندية. هذا لضمان أن المصنعين الأصليين فقط يحصلون على امتياز القدرة على التسجيل وكذلك إرفاق شعار BIS CRS على منتجاتهم.
+        في الهند، يمكن منح شهادة BIS تحت مخطط التسجيل الإلزامي (CRS) فقط
+        للمصنعين الذين يفيون بالمتطلبات المحددة من قبل هيئة المعايير الهندية.
+        هذا لضمان أن المصنعين الأصليين فقط يحصلون على امتياز القدرة على التسجيل
+        وكذلك إرفاق شعار BIS CRS على منتجاتهم.
       </p>
 
-      <div className="service-left-content-heading-three">قائمة التحقق من معايير الأهلية</div>
+      <div className="service-left-content-heading-three">
+        قائمة التحقق من معايير الأهلية
+      </div>
 
       {/* Eligibility Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1862,7 +1899,8 @@ const CRSRegistrationMainContentLeftEligibilitySectionArabic = () => {
                   AIR (الممثل الهندي المخول)
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  المصنعون الأجانب يجب أن يعينوا AIR - إما فرعهم الهندي أو طرف ثالث مخول رسمياً.
+                  المصنعون الأجانب يجب أن يعينوا AIR - إما فرعهم الهندي أو طرف
+                  ثالث مخول رسمياً.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -1870,7 +1908,8 @@ const CRSRegistrationMainContentLeftEligibilitySectionArabic = () => {
                   تقارير الاختبار من مختبرات BIS المعتمدة
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  يجب اختبار المنتج في مختبر معترف به من BIS والتأكد من أنه يفي بالمعيار الهندي (IS) المعمول به.
+                  يجب اختبار المنتج في مختبر معترف به من BIS والتأكد من أنه يفي
+                  بالمعيار الهندي (IS) المعمول به.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -1878,7 +1917,8 @@ const CRSRegistrationMainContentLeftEligibilitySectionArabic = () => {
                   الوثائق المناسبة
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  يجب تقديم جميع الوثائق المطلوبة بالأشكال المقررة (التفاصيل في القسم التالي).
+                  يجب تقديم جميع الوثائق المطلوبة بالأشكال المقررة (التفاصيل في
+                  القسم التالي).
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -1886,7 +1926,8 @@ const CRSRegistrationMainContentLeftEligibilitySectionArabic = () => {
                   تسجيل واحد لكل علامة تجارية وموقع
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  يجب تقديم طلب منفصل لكل نوع منتج وموقع تصنيع واسم العلامة التجارية.
+                  يجب تقديم طلب منفصل لكل نوع منتج وموقع تصنيع واسم العلامة
+                  التجارية.
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -1899,7 +1940,8 @@ const CRSRegistrationMainContentLeftEligibilitySectionArabic = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        للمصنعين الأجانب، أحد الالتزامات هو تعيين ممثل هندي مخول (AIR) للتواصل والتمثيل في الهند.
+        للمصنعين الأجانب، أحد الالتزامات هو تعيين ممثل هندي مخول (AIR) للتواصل
+        والتمثيل في الهند.
       </p>
 
       <div className="service-left-content-heading-three">مسؤوليات AIR:</div>
@@ -1914,10 +1956,13 @@ const CRSRegistrationMainContentLeftEligibilitySectionArabic = () => {
       />
 
       <p className="service-left-content-paragraph">
-        كجزء من الاتفاقية، يجب على AIR تقديم اتفاقية موقعة من كلا الجانبين مع دليل على العنوان الهندي.
+        كجزء من الاتفاقية، يجب على AIR تقديم اتفاقية موقعة من كلا الجانبين مع
+        دليل على العنوان الهندي.
       </p>
 
-      <div className="service-left-content-heading-three">سيناريو الحياة الواقعية:</div>
+      <div className="service-left-content-heading-three">
+        سيناريو الحياة الواقعية:
+      </div>
 
       <p className="service-left-content-paragraph">
         شركة ABC تخطط لإدخال نموذج جديد من محطة الطاقة في الهند.
@@ -1957,11 +2002,17 @@ const CRSRegistrationMainContentLeftDocumentsSectionArabic = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        تعبئة طلب BIS CRS للتسجيل رقمي بالكامل، ومع ذلك، لا يزال يتطلب مستندات مكتملة بالكامل للحصول على الموافقة. كل خطأ بسيط وفشل في الالتزام بأي جانب، مثل نوع المستند، والأشكال غير الصحيحة، أو أنواع الملفات الخاطئة يمكن أن يسبب رفض أو تأخير الطلب.
+        تعبئة طلب BIS CRS للتسجيل رقمي بالكامل، ومع ذلك، لا يزال يتطلب مستندات
+        مكتملة بالكامل للحصول على الموافقة. كل خطأ بسيط وفشل في الالتزام بأي
+        جانب، مثل نوع المستند، والأشكال غير الصحيحة، أو أنواع الملفات الخاطئة
+        يمكن أن يسبب رفض أو تأخير الطلب.
       </p>
 
       <p className="service-left-content-paragraph">
-        للمعالجة الصحيحة والأسرع لمستندات BIS، من الضروري أن يكون لديك المستندات الصحيحة معك في كل خطوة من الطريقة. الحصول على المستندات الصحيحة الجاهزة يضمن أن شهادة BIS الخاصة بك تتم معالجتها في الوقت المناسب وتبقى واضحة قانونياً من أي عمليات تدقيق امتثال أو تفتيشات جمركية أو موافقات السوق.
+        للمعالجة الصحيحة والأسرع لمستندات BIS، من الضروري أن يكون لديك المستندات
+        الصحيحة معك في كل خطوة من الطريقة. الحصول على المستندات الصحيحة الجاهزة
+        يضمن أن شهادة BIS الخاصة بك تتم معالجتها في الوقت المناسب وتبقى واضحة
+        قانونياً من أي عمليات تدقيق امتثال أو تفتيشات جمركية أو موافقات السوق.
       </p>
 
       <div className="service-left-content-heading-three">
@@ -2109,18 +2160,24 @@ const CRSRegistrationMainContentLeftRegistrationSectionArabic = () => {
     <div id="registration" className="flex flex-col scroll-mt-20">
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">عملية التسجيل</span>
+        <span className="service-left-content-index-heading">
+          عملية التسجيل
+        </span>
         <Separator className="service-left-content-separator" />
       </div>
 
       <h2 className="service-left-content-heading-two">عملية تسجيل BIS CRS</h2>
 
       <p className="service-left-content-paragraph">
-        تسجيل BIS CRS هو عملية عبر الإنترنت بالكامل من خلال بوابة تسجيل BIS. لا تقتصر على الإجراءات التي تتضمن رفع المستندات. يتطلب أيضاً اهتماماً خاصاً من الناحية التقنية، وفهم اللوائح، بالإضافة إلى الامتثال الكامل للمعيار الهندي (IS).
+        تسجيل BIS CRS هو عملية عبر الإنترنت بالكامل من خلال بوابة تسجيل BIS. لا
+        تقتصر على الإجراءات التي تتضمن رفع المستندات. يتطلب أيضاً اهتماماً خاصاً
+        من الناحية التقنية، وفهم اللوائح، بالإضافة إلى الامتثال الكامل للمعيار
+        الهندي (IS).
       </p>
 
       <p className="service-left-content-paragraph">
-        عملية BIS CRS، نسميها الآن نظام الشهادة والتسجيل (CRS)، وإليك كيف تنطلق رحلة شهادة BIS.
+        عملية BIS CRS، نسميها الآن نظام الشهادة والتسجيل (CRS)، وإليك كيف تنطلق
+        رحلة شهادة BIS.
       </p>
 
       <div className="service-left-content-heading-three">
@@ -2135,7 +2192,9 @@ const CRSRegistrationMainContentLeftRegistrationSectionArabic = () => {
         ]}
       />
 
-      <div className="service-left-content-heading-three">الخطوة 2: إعداد المستندات</div>
+      <div className="service-left-content-heading-three">
+        الخطوة 2: إعداد المستندات
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -2170,10 +2229,13 @@ const CRSRegistrationMainContentLeftRegistrationSectionArabic = () => {
       />
 
       <p className="service-left-content-paragraph">
-        إذا كان استفسار توضيح، يجب الإجابة عليه خلال 30 يوماً، وإلا يذهب الطلب إلى ملفات الأرشيف، مما يعني الرفض.
+        إذا كان استفسار توضيح، يجب الإجابة عليه خلال 30 يوماً، وإلا يذهب الطلب
+        إلى ملفات الأرشيف، مما يعني الرفض.
       </p>
 
-      <div className="service-left-content-heading-three">الخطوة 5: منح تسجيل BIS</div>
+      <div className="service-left-content-heading-three">
+        الخطوة 5: منح تسجيل BIS
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -2198,7 +2260,9 @@ const CRSRegistrationMainContentLeftRegistrationSectionArabic = () => {
         ]}
       />
 
-      <div className="service-left-content-heading-three">الخطوة 6: التوسيم والتوزيع</div>
+      <div className="service-left-content-heading-three">
+        الخطوة 6: التوسيم والتوزيع
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -2210,7 +2274,9 @@ const CRSRegistrationMainContentLeftRegistrationSectionArabic = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">الجدول الزمني التقريبي</h3>
+      <h3 className="service-left-content-heading-three">
+        الجدول الزمني التقريبي
+      </h3>
 
       {/* Timeline Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2297,10 +2363,15 @@ const CRSRegistrationMainContentLeftFeesSectionArabic = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        للحصول على شهادة BIS تحت CRS، يجب على المتقدم دفع الرسوم الحكومية بالإضافة إلى الدفع لتتم معالجة المنتج. على الرغم من أن العملية عبر الإنترنت والواجهة مبسطة، يواجه العديد من المتقدمين تأخيرات في طلباتهم ورفضاً بسبب الدفع الناقص والطلبات المقدمة بشكل خاطئ.
+        للحصول على شهادة BIS تحت CRS، يجب على المتقدم دفع الرسوم الحكومية
+        بالإضافة إلى الدفع لتتم معالجة المنتج. على الرغم من أن العملية عبر
+        الإنترنت والواجهة مبسطة، يواجه العديد من المتقدمين تأخيرات في طلباتهم
+        ورفضاً بسبب الدفع الناقص والطلبات المقدمة بشكل خاطئ.
       </p>
 
-      <h3 className="service-left-content-heading-three">هيكل الرسوم لتسجيل CRS</h3>
+      <h3 className="service-left-content-heading-three">
+        هيكل الرسوم لتسجيل CRS
+      </h3>
 
       {/* Fee Structure Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2355,12 +2426,12 @@ const CRSRegistrationMainContentLeftFeesSectionArabic = () => {
       </div>
 
       <p className="service-left-content-paragraph italic text-center">
-        <em>
-          الأسعار قابلة للتحديث — تأكد من بوابة BIS أو مع مستشارك.
-        </em>
+        <em>الأسعار قابلة للتحديث — تأكد من بوابة BIS أو مع مستشارك.</em>
       </p>
 
-      <h3 className="service-left-content-heading-three">صلاحية شهادة CRS والتجديد</h3>
+      <h3 className="service-left-content-heading-three">
+        صلاحية شهادة CRS والتجديد
+      </h3>
 
       {/* Certificate Validity & Renewal Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2422,7 +2493,9 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
     <div id="elabelling" className="flex flex-col scroll-mt-20">
       {/* E-Labelling */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">التوسيم الإلكتروني</span>
+        <span className="service-left-content-index-heading">
+          التوسيم الإلكتروني
+        </span>
         <Separator className="service-left-content-separator" />
       </div>
 
@@ -2430,17 +2503,26 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
         إرشادات التوسيم الإلكتروني للمنتجات المعتمدة من CRS
       </div>
 
-      <div className="service-left-content-heading-three">ما هو التوسيم الإلكتروني؟</div>
+      <div className="service-left-content-heading-three">
+        ما هو التوسيم الإلكتروني؟
+      </div>
 
       <p className="service-left-content-paragraph">
-        التوسيم الإلكتروني هو ممارسة عرض المعلومات التنظيمية داخل الجهاز إلكترونياً بدلاً من طباعتها ووضعها على الجهاز. تحت مخطط التسجيل الإلزامي (CRS) لـ BIS، المنتجات المحددة، خاصة الأجهزة المدمجة أو الرقمية، قادرة على عرض تفاصيل شهادة BIS، علامة المعيار وكود IS من خلال واجهة البرمجيات أو التعبئة الرقمية.
+        التوسيم الإلكتروني هو ممارسة عرض المعلومات التنظيمية داخل الجهاز
+        إلكترونياً بدلاً من طباعتها ووضعها على الجهاز. تحت مخطط التسجيل الإلزامي
+        (CRS) لـ BIS، المنتجات المحددة، خاصة الأجهزة المدمجة أو الرقمية، قادرة
+        على عرض تفاصيل شهادة BIS، علامة المعيار وكود IS من خلال واجهة البرمجيات
+        أو التعبئة الرقمية.
       </p>
 
       <div className="service-left-content-heading-three">
-        إرشادات BIS حول التوسيم الإلكتروني: التوسيم الإلكتروني الإلكتروني (BIS CMD 3/8:1/6975. بتاريخ 03/12/2015)
+        إرشادات BIS حول التوسيم الإلكتروني: التوسيم الإلكتروني الإلكتروني (BIS
+        CMD 3/8:1/6975. بتاريخ 03/12/2015)
       </div>
 
-      <h3 className="service-left-content-heading-three">متطلبات التوسيم الإلكتروني:</h3>
+      <h3 className="service-left-content-heading-three">
+        متطلبات التوسيم الإلكتروني:
+      </h3>
 
       {/* E-Labelling Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2462,7 +2544,8 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
                   ملصق فيزيائي على التعبئة
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  صندوق المنتج أو التعبئة الخارجية يجب أن تعرض شعار BIS CRS وتفاصيل التسجيل.
+                  صندوق المنتج أو التعبئة الخارجية يجب أن تعرض شعار BIS CRS
+                  وتفاصيل التسجيل.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2470,7 +2553,8 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
                   ملصقات قابلة للإزالة للتعبئة السائبة
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  إذا تم شحن المنتجات بشكل سائب، ملصق لاصق قابل للإزالة على الحزمة الخارجية مقبول.
+                  إذا تم شحن المنتجات بشكل سائب، ملصق لاصق قابل للإزالة على
+                  الحزمة الخارجية مقبول.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2478,7 +2562,9 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
                   لا حاجة للأدوات للوصول
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  المستخدمون يجب أن يكونوا قادرين على الوصول إلى معلومات الملصق الإلكتروني دون الحاجة إلى أدوات أو ملحقات (مثل إزالة بطاقة SIM غير مسموح).
+                  المستخدمون يجب أن يكونوا قادرين على الوصول إلى معلومات الملصق
+                  الإلكتروني دون الحاجة إلى أدوات أو ملحقات (مثل إزالة بطاقة SIM
+                  غير مسموح).
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2486,7 +2572,8 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
                   البرمجة الآمنة
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  معلومات الملصق الإلكتروني يجب أن تكون مدمجة في البرامج الثابتة/البرمجيات، محمية من التعديل من قبل أي طرف ثالث.
+                  معلومات الملصق الإلكتروني يجب أن تكون مدمجة في البرامج
+                  الثابتة/البرمجيات، محمية من التعديل من قبل أي طرف ثالث.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2494,7 +2581,8 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
                   الوصول المستند على القائمة
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  المستخدمون يجب أن يكونوا قادرين على الوصول إلى المعلومات في لا أكثر من 4 خطوات من خلال واجهة قائمة الجهاز.
+                  المستخدمون يجب أن يكونوا قادرين على الوصول إلى المعلومات في لا
+                  أكثر من 4 خطوات من خلال واجهة قائمة الجهاز.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2502,7 +2590,8 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
                   التعليمات مطلوبة
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-right tracking-wide leading-loose max-w-full">
-                  يجب توفير التعليمات حول كيفية الوصول إلى تفاصيل الملصق الإلكتروني.
+                  يجب توفير التعليمات حول كيفية الوصول إلى تفاصيل الملصق
+                  الإلكتروني.
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2514,10 +2603,17 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
         كيف يمكن لـ Sun Certifications India مساعدتك في تسجيل BIS تحت مخطط CRS
       </p>
 
-      <div className="service-left-content-heading-three">لماذا تختار مستشار BIS؟</div>
+      <div className="service-left-content-heading-three">
+        لماذا تختار مستشار BIS؟
+      </div>
 
       <p className="service-left-content-paragraph">
-        تسجيل BIS CRS بالكامل تقني ومكثف جداً فيما يتعلق بالقواعد وحجم التوثيق. في غياب فهم شامل للمعايير الهندية، QCOs الأخيرة، هيكل تقرير الاختبار، وسير العمل في واجهة البوابة، المتقدمون عرضة للخسارة بشكل كبير من حيث الإجراءات اللاحقة للتأخير والرفض أو عدم الامتثال النشط طويل الأمد. هذا هو المكان الذي تأتي فيه Sun Certifications India كشريك موثوق وموثوق لمساعدة المتقدم في كل تفاصيل مخطط الشهادة الإلزامي.
+        تسجيل BIS CRS بالكامل تقني ومكثف جداً فيما يتعلق بالقواعد وحجم التوثيق.
+        في غياب فهم شامل للمعايير الهندية، QCOs الأخيرة، هيكل تقرير الاختبار،
+        وسير العمل في واجهة البوابة، المتقدمون عرضة للخسارة بشكل كبير من حيث
+        الإجراءات اللاحقة للتأخير والرفض أو عدم الامتثال النشط طويل الأمد. هذا
+        هو المكان الذي تأتي فيه Sun Certifications India كشريك موثوق وموثوق
+        لمساعدة المتقدم في كل تفاصيل مخطط الشهادة الإلزامي.
       </p>
     </div>
   );
@@ -2541,4 +2637,3 @@ const PointsListWithoutHeading = ({ points }) => {
     </div>
   );
 };
-

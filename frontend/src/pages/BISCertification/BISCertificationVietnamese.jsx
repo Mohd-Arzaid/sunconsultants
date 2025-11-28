@@ -37,7 +37,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -159,8 +158,8 @@ const BISCertificationHero = () => {
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Chứng nhận BIS đảm bảo chất lượng và an toàn sản phẩm tại Ấn Độ. Đây là
-            bắt buộc đối với nhiều sản phẩm và yêu cầu kiểm tra, tài liệu, và
+            Chứng nhận BIS đảm bảo chất lượng và an toàn sản phẩm tại Ấn Độ. Đây
+            là bắt buộc đối với nhiều sản phẩm và yêu cầu kiểm tra, tài liệu, và
             phê duyệt.
           </p>
 
@@ -696,27 +695,28 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Ví dụ, một nhà sản xuất từ Đức đã phát minh ra một thiết bị điện tử độc đáo
-        và đang có kế hoạch bán nó trên thị trường Ấn Độ phát triển nhanh.
-        Thiết bị này là độc đáo, an toàn và cũng đã nhận được phê duyệt ở
-        Châu Âu. Tuy nhiên, khi thiết bị được mang đến cảng ở Ấn Độ, các
-        nhân viên hải quan giữ lại thiết bị. Câu hỏi là, "Tại sao?" Câu trả lời là,
-        thiết bị phải có chứng nhận BIS, điều này là một phần quan trọng
-        để bán sản phẩm điện tử tại Ấn Độ.
+        Ví dụ, một nhà sản xuất từ Đức đã phát minh ra một thiết bị điện tử độc
+        đáo và đang có kế hoạch bán nó trên thị trường Ấn Độ phát triển nhanh.
+        Thiết bị này là độc đáo, an toàn và cũng đã nhận được phê duyệt ở Châu
+        Âu. Tuy nhiên, khi thiết bị được mang đến cảng ở Ấn Độ, các nhân viên
+        hải quan giữ lại thiết bị. Câu hỏi là, "Tại sao?" Câu trả lời là, thiết
+        bị phải có chứng nhận BIS, điều này là một phần quan trọng để bán sản
+        phẩm điện tử tại Ấn Độ.
       </p>
 
       <p className="service-left-content-paragraph">
-        Nhiều nhà sản xuất toàn cầu và Ấn Độ đối mặt với những trường hợp tương tự mỗi
-        năm. Đối với người tiêu dùng Ấn Độ, dấu BIS trên một sản phẩm không chỉ là một
-        logo, nó là một dấu hiệu của niềm tin rằng sản phẩm đã được kiểm tra về
-        chất lượng, an toàn và độ tin cậy. Đối với một doanh nghiệp, nó là cửa ngõ để
-        một trong những thị trường lớn nhất trên toàn thế giới.
+        Nhiều nhà sản xuất toàn cầu và Ấn Độ đối mặt với những trường hợp tương
+        tự mỗi năm. Đối với người tiêu dùng Ấn Độ, dấu BIS trên một sản phẩm
+        không chỉ là một logo, nó là một dấu hiệu của niềm tin rằng sản phẩm đã
+        được kiểm tra về chất lượng, an toàn và độ tin cậy. Đối với một doanh
+        nghiệp, nó là cửa ngõ để một trong những thị trường lớn nhất trên toàn
+        thế giới.
       </p>
 
       <p className="service-left-content-paragraph">
-        Bài viết này sẽ trả lời tất cả các câu hỏi về chứng nhận BIS, sự
-        cần thiết, quy trình, lợi ích, chương trình, chi phí, và hệ thống và
-        điều hướng có sẵn cho cả nhà sản xuất nước ngoài và trong nước.
+        Bài viết này sẽ trả lời tất cả các câu hỏi về chứng nhận BIS, sự cần
+        thiết, quy trình, lợi ích, chương trình, chi phí, và hệ thống và điều
+        hướng có sẵn cho cả nhà sản xuất nước ngoài và trong nước.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -724,27 +724,27 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Chứng nhận BIS là chứng nhận đảm bảo chất lượng và an toàn
-        được cung cấp bởi Cục Tiêu chuẩn Ấn Độ (BIS), cơ quan
-        chứng nhận quốc gia của Ấn Độ thuộc Bộ Công vụ Người tiêu dùng. Chứng nhận
-        BIS đảm bảo rằng một sản phẩm tuân thủ các Tiêu chuẩn
-        Ấn Độ (IS) về hiệu suất, an toàn và chất lượng.
+        Chứng nhận BIS là chứng nhận đảm bảo chất lượng và an toàn được cung cấp
+        bởi Cục Tiêu chuẩn Ấn Độ (BIS), cơ quan chứng nhận quốc gia của Ấn Độ
+        thuộc Bộ Công vụ Người tiêu dùng. Chứng nhận BIS đảm bảo rằng một sản
+        phẩm tuân thủ các Tiêu chuẩn Ấn Độ (IS) về hiệu suất, an toàn và chất
+        lượng.
       </p>
       <p className="service-left-content-paragraph">
-        Khi một sản phẩm đáp ứng các yêu cầu tiêu chuẩn chất lượng này, Cục
-        Tiêu chuẩn Ấn Độ sẽ cấp giấy phép BIS hoặc giấy chứng nhận BIS, có nghĩa là
-        sản phẩm đủ điều kiện mang dấu ISI (cho các chương trình trong nước) hoặc một
-        dấu CRS với số đăng ký duy nhất (theo Chương trình
-        Đăng ký Bắt buộc BIS).
+        Khi một sản phẩm đáp ứng các yêu cầu tiêu chuẩn chất lượng này, Cục Tiêu
+        chuẩn Ấn Độ sẽ cấp giấy phép BIS hoặc giấy chứng nhận BIS, có nghĩa là
+        sản phẩm đủ điều kiện mang dấu ISI (cho các chương trình trong nước)
+        hoặc một dấu CRS với số đăng ký duy nhất (theo Chương trình Đăng ký Bắt
+        buộc BIS).
       </p>
       <p className="service-left-content-paragraph">
-        Đối với nhiều nhà sản xuất và nhà nhập khẩu Ấn Độ, việc có được chứng nhận BIS
-        là bắt buộc. Nó bao gồm một loạt sản phẩm bao gồm thiết bị
-        điện, sản phẩm xi măng và thép, nước uống đóng gói,
-        thiết bị điện tử như điện thoại di động, đèn LED, power banks, trang sức kim loại quý
-        (thông qua hallmarking) và nhiều hơn nữa. Các nhà sản xuất và
-        nhà nhập khẩu của những sản phẩm bắt buộc này không thể hợp pháp bán hoặc phân phối
-        hàng hóa ở Ấn Độ mà không có sự công nhận BIS.
+        Đối với nhiều nhà sản xuất và nhà nhập khẩu Ấn Độ, việc có được chứng
+        nhận BIS là bắt buộc. Nó bao gồm một loạt sản phẩm bao gồm thiết bị
+        điện, sản phẩm xi măng và thép, nước uống đóng gói, thiết bị điện tử như
+        điện thoại di động, đèn LED, power banks, trang sức kim loại quý (thông
+        qua hallmarking) và nhiều hơn nữa. Các nhà sản xuất và nhà nhập khẩu của
+        những sản phẩm bắt buộc này không thể hợp pháp bán hoặc phân phối hàng
+        hóa ở Ấn Độ mà không có sự công nhận BIS.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -752,16 +752,14 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Cục Tiêu chuẩn Ấn Độ (BIS) được thành lập vào năm 1986, tiếp quản
-        Viện Tiêu chuẩn Ấn Độ (ISI), được thành lập vào năm 1947. BIS hiện
-        được coi là người bảo vệ chất lượng cho các tiêu chuẩn ở Ấn Độ và đã
-        căn chỉnh các thực hành của họ với mức độ quốc tế và thực hiện các
-        sửa đổi cần thiết cho các điều kiện Ấn Độ.
+        Cục Tiêu chuẩn Ấn Độ (BIS) được thành lập vào năm 1986, tiếp quản Viện
+        Tiêu chuẩn Ấn Độ (ISI), được thành lập vào năm 1947. BIS hiện được coi
+        là người bảo vệ chất lượng cho các tiêu chuẩn ở Ấn Độ và đã căn chỉnh
+        các thực hành của họ với mức độ quốc tế và thực hiện các sửa đổi cần
+        thiết cho các điều kiện Ấn Độ.
       </p>
 
-      <h3 className="service-left-content-heading-three">
-        Cột mốc Đáng chú ý
-      </h3>
+      <h3 className="service-left-content-heading-three">Cột mốc Đáng chú ý</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -773,19 +771,19 @@ const OverviewSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Hiện tại, BIS đảm bảo an toàn, độ tin cậy và tiêu chuẩn hóa
-        của hàng nghìn công cụ và máy móc cho người dùng Ấn Độ trên nhiều
-        ngành công nghiệp.
+        Hiện tại, BIS đảm bảo an toàn, độ tin cậy và tiêu chuẩn hóa của hàng
+        nghìn công cụ và máy móc cho người dùng Ấn Độ trên nhiều ngành công
+        nghiệp.
       </p>
 
       <h2 className="service-left-content-heading-three">
         Tại sao Chứng nhận BIS lại bắt buộc ở Ấn Độ?
       </h2>
       <p className="service-left-content-paragraph">
-        Thị trường Ấn Độ rất lớn, luôn thay đổi và nhạy cảm với sự thay đổi
-        giá. Tuy nhiên, sự cởi mở này cũng để thị trường tiếp xúc với hàng hóa rẻ tiền
-        và không an toàn. Trong bối cảnh này, chứng nhận BIS hoạt động như một
-        rào cản bảo vệ.
+        Thị trường Ấn Độ rất lớn, luôn thay đổi và nhạy cảm với sự thay đổi giá.
+        Tuy nhiên, sự cởi mở này cũng để thị trường tiếp xúc với hàng hóa rẻ
+        tiền và không an toàn. Trong bối cảnh này, chứng nhận BIS hoạt động như
+        một rào cản bảo vệ.
       </p>
       <PointsListWithoutHeading
         points={[
@@ -797,11 +795,12 @@ const OverviewSection = () => {
         ]}
       />
       <p className="service-left-content-paragraph">
-        Chứng nhận BIS cho nước uống đóng gói là một ví dụ về nơi
-        thiếu chứng nhận có thể gây ra các vấn đề sức khỏe. Các tiêu chuẩn thiếu sót tương đương khác
-        của chứng nhận sản phẩm cho máy sưởi, máy nướng bánh mì và các
-        thiết bị điện khác có thể dẫn đến hỏa hoạn. Do đó, bằng cách có
-        chứng nhận BIS, chính phủ đảm bảo rằng những thách thức này được giải quyết.
+        Chứng nhận BIS cho nước uống đóng gói là một ví dụ về nơi thiếu chứng
+        nhận có thể gây ra các vấn đề sức khỏe. Các tiêu chuẩn thiếu sót tương
+        đương khác của chứng nhận sản phẩm cho máy sưởi, máy nướng bánh mì và
+        các thiết bị điện khác có thể dẫn đến hỏa hoạn. Do đó, bằng cách có
+        chứng nhận BIS, chính phủ đảm bảo rằng những thách thức này được giải
+        quyết.
       </p>
     </div>
   );
@@ -852,8 +851,8 @@ const DocumentsSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Một gói tài liệu mạnh mẽ đảm bảo xử lý suôn sẻ. Các yêu cầu
-        chính bao gồm:
+        Một gói tài liệu mạnh mẽ đảm bảo xử lý suôn sẻ. Các yêu cầu chính bao
+        gồm:
       </p>
 
       <PointsListWithoutHeading
@@ -921,7 +920,8 @@ const CostSection = () => {
                 Phí Kiểm tra
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Dựa trên độ phức tạp; trả cho các phòng thí nghiệm được BIS công nhận
+                Dựa trên độ phức tạp; trả cho các phòng thí nghiệm được BIS công
+                nhận
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -937,8 +937,8 @@ const CostSection = () => {
                 Phí Thanh tra/Kiểm toán Nhà máy
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Tính phí nếu nhân viên BIS đến thăm nhà máy (di chuyển trong nước hoặc
-                quốc tế tính thêm)
+                Tính phí nếu nhân viên BIS đến thăm nhà máy (di chuyển trong
+                nước hoặc quốc tế tính thêm)
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -983,8 +983,8 @@ const AIRSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Trong trường hợp không có AIR, việc có được chứng nhận BIS cho các công ty
-        nước ngoài là không thể.
+        Trong trường hợp không có AIR, việc có được chứng nhận BIS cho các công
+        ty nước ngoài là không thể.
       </p>
     </div>
   );
@@ -1002,22 +1002,23 @@ const ConclusionSection = () => {
       <h2 className="service-left-content-heading-two">Kết luận</h2>
 
       <p className="service-left-content-paragraph">
-        Có chứng nhận BIS là điều cần thiết để làm kinh doanh ở Ấn Độ.
-        Nó không còn là chứng nhận tùy chọn trong kinh doanh. Nó là quan trọng cho
-        thành công kinh doanh và xây dựng niềm tin. BIS là thiết yếu cho an toàn và
-        thành công ở Ấn Độ. Đối với nhà sản xuất và nhà nhập khẩu, nó cung cấp một môi trường
-        thiết lập kinh doanh dễ dàng và an toàn. Các vấn đề pháp lý và tiền phạt không còn là
-        mối quan tâm. Với dấu BIS, niềm tin của người tiêu dùng được đảm bảo.
+        Có chứng nhận BIS là điều cần thiết để làm kinh doanh ở Ấn Độ. Nó không
+        còn là chứng nhận tùy chọn trong kinh doanh. Nó là quan trọng cho thành
+        công kinh doanh và xây dựng niềm tin. BIS là thiết yếu cho an toàn và
+        thành công ở Ấn Độ. Đối với nhà sản xuất và nhà nhập khẩu, nó cung cấp
+        một môi trường thiết lập kinh doanh dễ dàng và an toàn. Các vấn đề pháp
+        lý và tiền phạt không còn là mối quan tâm. Với dấu BIS, niềm tin của
+        người tiêu dùng được đảm bảo.
       </p>
 
       <p className="service-left-content-paragraph">
-        Ấn Độ là một trong những nền kinh tế phát triển lớn nhất thế giới và việc có được
-        quyền truy cập để bán ở đó có thể giúp một nhà xuất khẩu phát triển. Bất kể bạn là một
-        nhà sản xuất ở Ấn Độ hay nước ngoài, giấy phép BIS là cần thiết để
-        sản xuất hoặc bán sản phẩm trên thị trường Ấn Độ. Nó là bắt buộc, và nó
-        mở khóa triển vọng kinh doanh với dân số ngày càng tăng của Ấn Độ. Đó là một
-        khoản đầu tư vào an toàn, niềm tin của người tiêu dùng, danh tiếng thương hiệu, uy tín, và
-        tăng trưởng dài hạn.
+        Ấn Độ là một trong những nền kinh tế phát triển lớn nhất thế giới và
+        việc có được quyền truy cập để bán ở đó có thể giúp một nhà xuất khẩu
+        phát triển. Bất kể bạn là một nhà sản xuất ở Ấn Độ hay nước ngoài, giấy
+        phép BIS là cần thiết để sản xuất hoặc bán sản phẩm trên thị trường Ấn
+        Độ. Nó là bắt buộc, và nó mở khóa triển vọng kinh doanh với dân số ngày
+        càng tăng của Ấn Độ. Đó là một khoản đầu tư vào an toàn, niềm tin của
+        người tiêu dùng, danh tiếng thương hiệu, uy tín, và tăng trưởng dài hạn.
       </p>
     </div>
   );
@@ -1037,9 +1038,9 @@ const SchemesSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS có nhiều chương trình chứng nhận được thiết kế cho các ngành công nghiệp
-        và loại sản phẩm đa dạng. Mỗi chương trình được thiết kế để giải quyết các nhu cầu cụ thể của
-        ngành công nghiệp và sản phẩm.
+        BIS có nhiều chương trình chứng nhận được thiết kế cho các ngành công
+        nghiệp và loại sản phẩm đa dạng. Mỗi chương trình được thiết kế để giải
+        quyết các nhu cầu cụ thể của ngành công nghiệp và sản phẩm.
       </p>
 
       <PointsListWithoutHeading
@@ -1058,8 +1059,7 @@ const SchemesSection = () => {
             "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
           "Chương trình Dấu ISI (Nhà sản xuất Trong nước)":
             "a-guide-to-bis-certification-indian-bis",
-          "Scheme X dưới BIS Ấn Độ":
-            "indian-bis-certification-under-scheme-x",
+          "Scheme X dưới BIS Ấn Độ": "indian-bis-certification-under-scheme-x",
           "CRS – Chương trình Đăng ký Bắt buộc":
             "what-is-crs-bis-or-crs-registration",
         }}
@@ -1070,38 +1070,38 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Đối với nhà sản xuất Ấn Độ, việc có được giấy phép BIS là điều kiện tiên quyết để
-        đảm bảo bán hợp pháp sản phẩm của họ trong nước. Chứng nhận
-        này được cấp bởi Cục Tiêu chuẩn Ấn Độ (BIS) để
-        chứng nhận sự đáp ứng các Tiêu chuẩn Ấn Độ liên quan đến chất lượng, an toàn
-        và các tiêu chuẩn hiệu suất cho sản phẩm. Điều này bao gồm kiểm tra
-        nhà máy, kiểm tra sản phẩm và kiểm tra tuân thủ với các thông số BIS.
-        Một khi sản phẩm được thông qua, các nhà sản xuất được phép đặt dấu ISI
-        trên sản phẩm. Dấu này là nhãn hiệu thương mại cho nhà sản xuất và
-        giúp khách hàng nhận biết một sản phẩm chính hãng, được chứng nhận ISI.
+        Đối với nhà sản xuất Ấn Độ, việc có được giấy phép BIS là điều kiện tiên
+        quyết để đảm bảo bán hợp pháp sản phẩm của họ trong nước. Chứng nhận này
+        được cấp bởi Cục Tiêu chuẩn Ấn Độ (BIS) để chứng nhận sự đáp ứng các
+        Tiêu chuẩn Ấn Độ liên quan đến chất lượng, an toàn và các tiêu chuẩn
+        hiệu suất cho sản phẩm. Điều này bao gồm kiểm tra nhà máy, kiểm tra sản
+        phẩm và kiểm tra tuân thủ với các thông số BIS. Một khi sản phẩm được
+        thông qua, các nhà sản xuất được phép đặt dấu ISI trên sản phẩm. Dấu này
+        là nhãn hiệu thương mại cho nhà sản xuất và giúp khách hàng nhận biết
+        một sản phẩm chính hãng, được chứng nhận ISI.
       </p>
 
       <p className="service-left-content-paragraph">
-        Bất kể đó là cho thiết bị điện tử, thép, xi măng, nhựa, hay
-        vật liệu xây dựng, việc có được giấy chứng nhận BIS là điều cần thiết cho
-        việc tiếp cận thị trường. Khác với việc có được sự tin tưởng của người tiêu dùng, giấy chứng nhận BIS
-        tăng cường danh tiếng của các nhà sản xuất Ấn Độ, cho phép
-        họ tham gia vào các hợp đồng chính phủ, và mở ra một loạt
-        cơ hội kinh doanh khác. Quan trọng nhất, việc thiếu chứng nhận BIS
-        có thể có những hậu quả nghiêm trọng, từ tiền phạt pháp lý
-        và thu hồi sản phẩm đến lệnh cấm bán hoàn toàn ở Ấn Độ. Do đó, tuân thủ BIS
-        không chỉ là yêu cầu pháp lý, mà là một chiến lược có mục tiêu
-        để mở rộng và duy trì sự tin tưởng của người tiêu dùng.
+        Bất kể đó là cho thiết bị điện tử, thép, xi măng, nhựa, hay vật liệu xây
+        dựng, việc có được giấy chứng nhận BIS là điều cần thiết cho việc tiếp
+        cận thị trường. Khác với việc có được sự tin tưởng của người tiêu dùng,
+        giấy chứng nhận BIS tăng cường danh tiếng của các nhà sản xuất Ấn Độ,
+        cho phép họ tham gia vào các hợp đồng chính phủ, và mở ra một loạt cơ
+        hội kinh doanh khác. Quan trọng nhất, việc thiếu chứng nhận BIS có thể
+        có những hậu quả nghiêm trọng, từ tiền phạt pháp lý và thu hồi sản phẩm
+        đến lệnh cấm bán hoàn toàn ở Ấn Độ. Do đó, tuân thủ BIS không chỉ là yêu
+        cầu pháp lý, mà là một chiến lược có mục tiêu để mở rộng và duy trì sự
+        tin tưởng của người tiêu dùng.
       </p>
 
       <p className="service-left-content-paragraph">
-        Đối với nhà sản xuất Ấn Độ, chương trình dấu ISI là dấu
-        uy tín nhất. Theo chương trình, các nhà sản xuất Ấn Độ được yêu cầu có
-        sản phẩm của họ được kiểm tra tại các cơ sở kiểm tra được BIS công nhận. Các
-        địa điểm sản xuất phải chịu kiểm tra và thử nghiệm. Các sản phẩm tuân thủ được
-        cấp phép sử dụng dấu ISI. Đó là một hành vi phạm tội để cung cấp
-        các sản phẩm như xi măng, bình LPG, cáp điện, nước uống đóng gói
-        và nhiều hơn nữa, mà không có dấu ISI.
+        Đối với nhà sản xuất Ấn Độ, chương trình dấu ISI là dấu uy tín nhất.
+        Theo chương trình, các nhà sản xuất Ấn Độ được yêu cầu có sản phẩm của
+        họ được kiểm tra tại các cơ sở kiểm tra được BIS công nhận. Các địa điểm
+        sản xuất phải chịu kiểm tra và thử nghiệm. Các sản phẩm tuân thủ được
+        cấp phép sử dụng dấu ISI. Đó là một hành vi phạm tội để cung cấp các sản
+        phẩm như xi măng, bình LPG, cáp điện, nước uống đóng gói và nhiều hơn
+        nữa, mà không có dấu ISI.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1109,30 +1109,29 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS) là một chương trình
-        được phát triển bởi Cục Tiêu chuẩn Ấn Độ cho các công ty nước ngoài
-        muốn tham gia vào Thị trường Ấn Độ. Chương trình này đảm bảo an toàn,
-        chất lượng, và đảm bảo hiệu suất của các sản phẩm được sản xuất ở nước ngoài
-        tuân thủ các tiêu chuẩn Ấn Độ yêu cầu. Theo FMCS, các
-        công ty nước ngoài muốn bán sản phẩm ở Ấn Độ trước tiên phải có được giấy chứng nhận
-        Cục Tiêu chuẩn Ấn Độ hoặc giấy phép. Giống như các nhà sản xuất Ấn Độ,
-        các nhà sản xuất nước ngoài cũng được yêu cầu có được giấy phép BIS để sử dụng
-        dấu ISI trên sản phẩm của họ. Dấu ISI mong muốn được cấp sau
+        Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS) là một chương
+        trình được phát triển bởi Cục Tiêu chuẩn Ấn Độ cho các công ty nước
+        ngoài muốn tham gia vào Thị trường Ấn Độ. Chương trình này đảm bảo an
+        toàn, chất lượng, và đảm bảo hiệu suất của các sản phẩm được sản xuất ở
+        nước ngoài tuân thủ các tiêu chuẩn Ấn Độ yêu cầu. Theo FMCS, các công ty
+        nước ngoài muốn bán sản phẩm ở Ấn Độ trước tiên phải có được giấy chứng
+        nhận Cục Tiêu chuẩn Ấn Độ hoặc giấy phép. Giống như các nhà sản xuất Ấn
+        Độ, các nhà sản xuất nước ngoài cũng được yêu cầu có được giấy phép BIS
+        để sử dụng dấu ISI trên sản phẩm của họ. Dấu ISI mong muốn được cấp sau
         đánh giá toàn diện bao gồm kiểm tra nhà máy và mẫu sản phẩm nghiêm ngặt
         theo các Tiêu chuẩn Ấn Độ.
       </p>
 
       <p className="service-left-content-paragraph">
-        Một nhà sản xuất nước ngoài được yêu cầu bổ nhiệm một Đại diện Ấn Độ được
-        Ủy quyền (AIR), người chịu trách nhiệm về giao tiếp và
-        phối hợp, như điểm liên hệ đầu tiên với Cục Tiêu chuẩn
-        Ấn Độ (BIS) cho chương trình. Nó bao gồm việc nộp
-        đơn, đánh giá tuân thủ sâu, và việc đảm nhận tất cả
-        các nghĩa vụ cần thiết để đạt được tuân thủ trong thời hạn. Như một
-        kết quả của việc tuân theo các hướng dẫn FMCS, các công ty nước ngoài có thể
-        tham gia vào thị trường Ấn Độ, cũng như có được thiện chí với khách hàng.
-        Bất kỳ sản phẩm nào có dấu ISI đều thể hiện mức độ cao về chất lượng, an toàn, và
-        đảm bảo độ tin cậy ở Ấn Độ.
+        Một nhà sản xuất nước ngoài được yêu cầu bổ nhiệm một Đại diện Ấn Độ
+        được Ủy quyền (AIR), người chịu trách nhiệm về giao tiếp và phối hợp,
+        như điểm liên hệ đầu tiên với Cục Tiêu chuẩn Ấn Độ (BIS) cho chương
+        trình. Nó bao gồm việc nộp đơn, đánh giá tuân thủ sâu, và việc đảm nhận
+        tất cả các nghĩa vụ cần thiết để đạt được tuân thủ trong thời hạn. Như
+        một kết quả của việc tuân theo các hướng dẫn FMCS, các công ty nước
+        ngoài có thể tham gia vào thị trường Ấn Độ, cũng như có được thiện chí
+        với khách hàng. Bất kỳ sản phẩm nào có dấu ISI đều thể hiện mức độ cao
+        về chất lượng, an toàn, và đảm bảo độ tin cậy ở Ấn Độ.
       </p>
 
       <p className="service-left-content-paragraph">
@@ -1146,35 +1145,34 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Scheme X, hay Quy định Kỹ thuật Tổng hợp, là một Chương trình chứng nhận
-        BIS khác được thiết kế bởi Cục Tiêu chuẩn Ấn Độ để giúp
-        đơn giản hóa các thủ tục tuân thủ của các ngành công nghiệp trong lĩnh vực cơ khí và
-        điện. Khác với các chương trình chứng nhận khác, Scheme X
-        tập trung vào việc giảm tài liệu, đánh giá, và phê duyệt trong khi
-        đảm bảo rằng sản phẩm tuân thủ các Tiêu chuẩn Ấn Độ. Các sản phẩm có
-        dấu tiêu chuẩn có chất lượng và an toàn đặc biệt và có thể được bán
-        sau khi trải qua kiểm tra loại, kiểm tra nhà máy, và chứng nhận đơn giản
-        các yêu cầu bắt buộc.
+        BIS khác được thiết kế bởi Cục Tiêu chuẩn Ấn Độ để giúp đơn giản hóa các
+        thủ tục tuân thủ của các ngành công nghiệp trong lĩnh vực cơ khí và
+        điện. Khác với các chương trình chứng nhận khác, Scheme X tập trung vào
+        việc giảm tài liệu, đánh giá, và phê duyệt trong khi đảm bảo rằng sản
+        phẩm tuân thủ các Tiêu chuẩn Ấn Độ. Các sản phẩm có dấu tiêu chuẩn có
+        chất lượng và an toàn đặc biệt và có thể được bán sau khi trải qua kiểm
+        tra loại, kiểm tra nhà máy, và chứng nhận đơn giản các yêu cầu bắt buộc.
       </p>
 
       <p className="service-left-content-paragraph">
-        Chương trình X bao gồm các hướng dẫn an toàn máy móc nặng và thiết bị điện
-        cho các sản phẩm như máy bơm, cần cẩu, máy biến áp, dụng cụ
-        máy và các sản phẩm kỹ thuật nặng khác. Đây là những
-        ngành công nghiệp phù hợp nhất và tất cả nơi độ tin cậy và an toàn là điều cần thiết. Scheme X
-        tiện lợi vì nó rút ngắn thời gian và chi phí của chứng nhận BIS
-        phức tạp. Nó nhằm mục đích hợp lý hóa quy trình tuân thủ để
-        tạo điều kiện giải phóng nhanh hơn cho tiếp thị và danh tiếng nâng cao
-        mà không ảnh hưởng đến các tiêu chuẩn chất lượng và an toàn. Danh tiếng lâu dài và
-        truyền thống của Cục Tiêu chuẩn Ấn Độ cho phép thương mại quốc tế dễ dàng hơn,
-        không thể thiếu cho các công ty để đáp ứng các yêu cầu tuân thủ
-        và tăng cường khả năng cạnh tranh.
+        Chương trình X bao gồm các hướng dẫn an toàn máy móc nặng và thiết bị
+        điện cho các sản phẩm như máy bơm, cần cẩu, máy biến áp, dụng cụ máy và
+        các sản phẩm kỹ thuật nặng khác. Đây là những ngành công nghiệp phù hợp
+        nhất và tất cả nơi độ tin cậy và an toàn là điều cần thiết. Scheme X
+        tiện lợi vì nó rút ngắn thời gian và chi phí của chứng nhận BIS phức
+        tạp. Nó nhằm mục đích hợp lý hóa quy trình tuân thủ để tạo điều kiện
+        giải phóng nhanh hơn cho tiếp thị và danh tiếng nâng cao mà không ảnh
+        hưởng đến các tiêu chuẩn chất lượng và an toàn. Danh tiếng lâu dài và
+        truyền thống của Cục Tiêu chuẩn Ấn Độ cho phép thương mại quốc tế dễ
+        dàng hơn, không thể thiếu cho các công ty để đáp ứng các yêu cầu tuân
+        thủ và tăng cường khả năng cạnh tranh.
       </p>
 
       <p className="service-left-content-paragraph">
-        BIS Scheme X là bắt buộc để tiếp cận ngành công nghiệp máy móc nặng Ấn Độ.
-        Chương trình mới này quan trọng cho cạnh tranh thị trường được cải thiện, đổi mới
-        và tuân thủ các quy định được hợp lý hóa thông qua
-        cấu trúc đơn giản nhưng mạnh mẽ này.
+        BIS Scheme X là bắt buộc để tiếp cận ngành công nghiệp máy móc nặng Ấn
+        Độ. Chương trình mới này quan trọng cho cạnh tranh thị trường được cải
+        thiện, đổi mới và tuân thủ các quy định được hợp lý hóa thông qua cấu
+        trúc đơn giản nhưng mạnh mẽ này.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1182,64 +1180,67 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Cục Tiêu chuẩn Ấn Độ (BIS) đã phát triển một chương trình chứng nhận
-        BIS gọi là Chương trình Đăng ký Bắt buộc (CRS) nhằm
-        điều chỉnh các sản phẩm IT và điện tử ở Ấn Độ. Nó tập trung vào đánh giá
-        an toàn và chất lượng của các sản phẩm rủi ro cao như đèn LED, điện thoại
-        di động, laptop, power banks, và các thiết bị điện tử tiêu dùng khác theo
-        Tiêu chuẩn Ấn Độ. CRS, trái ngược với chương trình ISI, không cấp một
-        dấu ISI, nhưng các sản phẩm được chứng nhận, tuân thủ với chương trình, mang một
-        dấu CRS với số đăng ký duy nhất. Tất cả các sản phẩm điện tử và IT
-        cần được kiểm tra tại các phòng thí nghiệm được BIS công nhận và
-        đăng ký chính thức với BIS CRS, được sử dụng để đảm bảo tuân thủ trước khi chúng
-        có thể được bán hoặc nhập khẩu vào Ấn Độ.
+        Cục Tiêu chuẩn Ấn Độ (BIS) đã phát triển một chương trình chứng nhận BIS
+        gọi là Chương trình Đăng ký Bắt buộc (CRS) nhằm điều chỉnh các sản phẩm
+        IT và điện tử ở Ấn Độ. Nó tập trung vào đánh giá an toàn và chất lượng
+        của các sản phẩm rủi ro cao như đèn LED, điện thoại di động, laptop,
+        power banks, và các thiết bị điện tử tiêu dùng khác theo Tiêu chuẩn Ấn
+        Độ. CRS, trái ngược với chương trình ISI, không cấp một dấu ISI, nhưng
+        các sản phẩm được chứng nhận, tuân thủ với chương trình, mang một dấu
+        CRS với số đăng ký duy nhất. Tất cả các sản phẩm điện tử và IT cần được
+        kiểm tra tại các phòng thí nghiệm được BIS công nhận và đăng ký chính
+        thức với BIS CRS, được sử dụng để đảm bảo tuân thủ trước khi chúng có
+        thể được bán hoặc nhập khẩu vào Ấn Độ.
       </p>
 
       <p className="service-left-content-paragraph">
-        Chương trình này là điều cần thiết để bảo vệ người tiêu dùng Ấn Độ khỏi các thiết bị điện tử không an toàn,
-        kém chất lượng, hoặc giả mạo, đặc biệt trong trường hợp
-        thị trường kỹ thuật số phát triển nhanh. Cả nhà sản xuất Ấn Độ và nước ngoài
-        đều cần có được chứng nhận CRS. Các công ty nước ngoài phải bổ nhiệm một
-        Đại diện Ấn Độ được Ủy quyền AIR để đảm bảo tuân thủ. BIS
-        liên tục cập nhật danh sách sản phẩm được bao phủ dưới CRS để
-        bao gồm các sản phẩm và công nghệ mới và các vấn đề an toàn mới nổi. Đối với
-        nhà sản xuất, việc có được đăng ký BIS theo CRS là một
-        lợi thế vì nó giúp trong tuân thủ quy định và nó cũng tăng
-        niềm tin của khách hàng, danh tiếng công ty, và tiếp cận thị trường trong
-        ngành công nghiệp điện tử ở Ấn Độ.
+        Chương trình này là điều cần thiết để bảo vệ người tiêu dùng Ấn Độ khỏi
+        các thiết bị điện tử không an toàn, kém chất lượng, hoặc giả mạo, đặc
+        biệt trong trường hợp thị trường kỹ thuật số phát triển nhanh. Cả nhà
+        sản xuất Ấn Độ và nước ngoài đều cần có được chứng nhận CRS. Các công ty
+        nước ngoài phải bổ nhiệm một Đại diện Ấn Độ được Ủy quyền AIR để đảm bảo
+        tuân thủ. BIS liên tục cập nhật danh sách sản phẩm được bao phủ dưới CRS
+        để bao gồm các sản phẩm và công nghệ mới và các vấn đề an toàn mới nổi.
+        Đối với nhà sản xuất, việc có được đăng ký BIS theo CRS là một lợi thế
+        vì nó giúp trong tuân thủ quy định và nó cũng tăng niềm tin của khách
+        hàng, danh tiếng công ty, và tiếp cận thị trường trong ngành công nghiệp
+        điện tử ở Ấn Độ.
       </p>
 
-      <h3 className="service-left-content-heading-three">Chương trình Hallmarking</h3>
+      <h3 className="service-left-content-heading-three">
+        Chương trình Hallmarking
+      </h3>
 
       <p className="service-left-content-paragraph">
-        Ở Ấn Độ, hallmarking của trang sức vàng và bạc là bắt buộc theo
-        Chương trình Hallmarking và được quy định bởi Cục Tiêu chuẩn Ấn Độ
-        (BIS) đảm bảo độ tinh khiết và tính xác thực của trang sức.
-        Các sản phẩm Kim loại Quý được kiểm tra tại các Trung tâm Kiểm định và
-        Hallmarking được BIS phê duyệt (AHC) và sau đó được đóng dấu với các dấu hallmark. Quy trình
+        Ở Ấn Độ, hallmarking của trang sức vàng và bạc là bắt buộc theo Chương
+        trình Hallmarking và được quy định bởi Cục Tiêu chuẩn Ấn Độ (BIS) đảm
+        bảo độ tinh khiết và tính xác thực của trang sức. Các sản phẩm Kim loại
+        Quý được kiểm tra tại các Trung tâm Kiểm định và Hallmarking được BIS
+        phê duyệt (AHC) và sau đó được đóng dấu với các dấu hallmark. Quy trình
         này chỉ được hoàn thành nếu các sản phẩm đáp ứng các Tiêu chuẩn Ấn Độ
-        được đặt ra từ đầu. Các thợ kim hoàn trước tiên phải có được giấy phép BIS
-        cho phép họ bán trang sức có dấu hallmark. Đây là cách duy nhất để làm như vậy
-        hợp pháp. Thợ kim hoàn có nghĩa vụ trải qua và hoàn thành kiểm tra sản phẩm,
-        kiểm tra BIS, và giám sát tuân thủ liên tục để bán trang sức có dấu
-        hallmark. Quy trình, cuối cùng, bảo vệ người tiêu dùng và đảm bảo
-        độ tinh khiết, trọng lượng và chất lượng và hạn chế hành vi sai trái cũng như gian lận
-        trong thị trường trang sức.
+        được đặt ra từ đầu. Các thợ kim hoàn trước tiên phải có được giấy phép
+        BIS cho phép họ bán trang sức có dấu hallmark. Đây là cách duy nhất để
+        làm như vậy hợp pháp. Thợ kim hoàn có nghĩa vụ trải qua và hoàn thành
+        kiểm tra sản phẩm, kiểm tra BIS, và giám sát tuân thủ liên tục để bán
+        trang sức có dấu hallmark. Quy trình, cuối cùng, bảo vệ người tiêu dùng
+        và đảm bảo độ tinh khiết, trọng lượng và chất lượng và hạn chế hành vi
+        sai trái cũng như gian lận trong thị trường trang sức.
       </p>
 
       <p className="service-left-content-paragraph">
-        Đối với người tiêu dùng Ấn Độ, vàng và bạc không chỉ là đồ trang sức mà còn là
-        khoản đầu tư lớn, điều này làm cho niềm tin và minh bạch trở nên cần thiết. Trang sức
-        hallmarking là một dấu hiệu đảm bảo cho người dân thường trong
-        đất nước rằng mỗi mảnh trang sức để bán đã trải qua kiểm tra
-        toàn diện theo các tiêu chuẩn quốc gia khác nhau và thực hành thương mại công bằng.
-        Các thợ kim hoàn có thể thể hiện uy tín và danh tiếng thị trường của họ bằng
-        hallmarking trang sức. Không có khả năng tuân thủ các quy tắc đặt ra sẽ mang lại
-        hình phạt có thể bao gồm đình chỉ giấy phép. Đối với hallmarking
-        dưới BIS, nó phục vụ như một sự hoàn thành các nghĩa vụ dựa trên nguyên tắc và pháp lý.
-        Điều này không chỉ tăng sự hài lòng của người tiêu dùng mà còn
-        nâng cao thị trường trang sức Ấn Độ như một tổng thể. Điều này cũng áp dụng
-        cho các nhà bán lẻ nhỏ hơn cũng như các nhà sản xuất quy mô lớn hơn.
+        Đối với người tiêu dùng Ấn Độ, vàng và bạc không chỉ là đồ trang sức mà
+        còn là khoản đầu tư lớn, điều này làm cho niềm tin và minh bạch trở nên
+        cần thiết. Trang sức hallmarking là một dấu hiệu đảm bảo cho người dân
+        thường trong đất nước rằng mỗi mảnh trang sức để bán đã trải qua kiểm
+        tra toàn diện theo các tiêu chuẩn quốc gia khác nhau và thực hành thương
+        mại công bằng. Các thợ kim hoàn có thể thể hiện uy tín và danh tiếng thị
+        trường của họ bằng hallmarking trang sức. Không có khả năng tuân thủ các
+        quy tắc đặt ra sẽ mang lại hình phạt có thể bao gồm đình chỉ giấy phép.
+        Đối với hallmarking dưới BIS, nó phục vụ như một sự hoàn thành các nghĩa
+        vụ dựa trên nguyên tắc và pháp lý. Điều này không chỉ tăng sự hài lòng
+        của người tiêu dùng mà còn nâng cao thị trường trang sức Ấn Độ như một
+        tổng thể. Điều này cũng áp dụng cho các nhà bán lẻ nhỏ hơn cũng như các
+        nhà sản xuất quy mô lớn hơn.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1247,31 +1248,29 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Eco Mark là một chương trình công nhận tập trung vào đổi mới được tạo bởi
-        Cục Tiêu chuẩn Ấn Độ (BIS) nhằm thúc đẩy các
-        hàng hóa thân thiện với môi trường. Khác với chứng nhận truyền thống tập trung
-        nổi bật với các thông số an toàn và chất lượng, Eco Mark được trao
-        cho các hàng hóa tuân thủ Tiêu chuẩn Ấn Độ và thể hiện ít nhất một số
-        mức giảm tác động môi trường bất lợi trong một hoặc nhiều
-        các giai đoạn khác nhau của vòng đời hàng hóa. Chứng nhận
-        Eco Mark chỉ được trao sau khi kiểm tra đáng kể và chứng minh
-        tiêu chí - tuân thủ bao gồm mức phát thải, không độc hại,
-        tỷ lệ phân hủy sinh học, khả năng tái chế và tương tác tổng thể
-        với hệ thống. Eco Mark, giống như dấu ISI, là một biểu tượng của
-        sự đảm bảo từ chính phủ đã được cấp trạng thái của một
-        dấu chứng nhận, mặc dù với các mục tiêu rõ ràng hơn về tính bền vững
-        môi trường.
+        Eco Mark là một chương trình công nhận tập trung vào đổi mới được tạo
+        bởi Cục Tiêu chuẩn Ấn Độ (BIS) nhằm thúc đẩy các hàng hóa thân thiện với
+        môi trường. Khác với chứng nhận truyền thống tập trung nổi bật với các
+        thông số an toàn và chất lượng, Eco Mark được trao cho các hàng hóa tuân
+        thủ Tiêu chuẩn Ấn Độ và thể hiện ít nhất một số mức giảm tác động môi
+        trường bất lợi trong một hoặc nhiều các giai đoạn khác nhau của vòng đời
+        hàng hóa. Chứng nhận Eco Mark chỉ được trao sau khi kiểm tra đáng kể và
+        chứng minh tiêu chí - tuân thủ bao gồm mức phát thải, không độc hại, tỷ
+        lệ phân hủy sinh học, khả năng tái chế và tương tác tổng thể với hệ
+        thống. Eco Mark, giống như dấu ISI, là một biểu tượng của sự đảm bảo từ
+        chính phủ đã được cấp trạng thái của một dấu chứng nhận, mặc dù với các
+        mục tiêu rõ ràng hơn về tính bền vững môi trường.
       </p>
 
       <p className="service-left-content-paragraph">
-        Giấy phép BIS với Eco Mark chứng nhận rằng một công ty tham gia vào
-        sản xuất có trách nhiệm và quan tâm đến môi trường. Nó đảm bảo
-        tuân thủ pháp luật và tạo ra lợi thế cạnh tranh với
-        người tiêu dùng bảo vệ và các doanh nghiệp định hướng tính bền vững. Eco Mark
-        giúp cho ngành công nghiệp tin tưởng và áp dụng các thực hành xanh và cho
-        người tiêu dùng tin tưởng rằng các sản phẩm họ mua là an toàn và
-        có trách nhiệm với môi trường. Eco Mark hỗ trợ tầm nhìn của Ấn Độ về
-        bảo vệ chất lượng nâng cao với bảo vệ môi trường dưới BIS.
+        Giấy phép BIS với Eco Mark chứng nhận rằng một công ty tham gia vào sản
+        xuất có trách nhiệm và quan tâm đến môi trường. Nó đảm bảo tuân thủ pháp
+        luật và tạo ra lợi thế cạnh tranh với người tiêu dùng bảo vệ và các
+        doanh nghiệp định hướng tính bền vững. Eco Mark giúp cho ngành công
+        nghiệp tin tưởng và áp dụng các thực hành xanh và cho người tiêu dùng
+        tin tưởng rằng các sản phẩm họ mua là an toàn và có trách nhiệm với môi
+        trường. Eco Mark hỗ trợ tầm nhìn của Ấn Độ về bảo vệ chất lượng nâng cao
+        với bảo vệ môi trường dưới BIS.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1279,30 +1278,29 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Chương trình Chứng nhận Hệ thống Quản lý (MSCS) được khởi xướng bởi
-        Cục Tiêu chuẩn Ấn Độ (BIS) là một quy trình từng bước đánh giá
-        và công nhận các công ty liên quan để triển khai các hệ thống quản lý
-        được quốc tế chấp nhận và công nhận. Khung MSCS bao gồm
-        Tiêu chuẩn ISO như ISO 9001 Quản lý Chất lượng, ISO 14001 Quản lý Môi trường,
-        ISO 45001 Hệ thống Quản lý Sức khỏe và An toàn Nghề nghiệp
-        và những tiêu chuẩn khác. MSCS chứng nhận công ty cho các hoạt động hợp pháp,
-        tính nhất quán, và cải tiến liên tục của các hoạt động. Các
-        công ty được chứng nhận trải qua nhiều đánh giá và kiểm tra giúp họ xây dựng
-        niềm tin giữa khách hàng, cơ quan quản lý, và các bên liên quan
-        tăng cường đảm bảo an toàn, chất lượng, và tính bền vững.
+        Chương trình Chứng nhận Hệ thống Quản lý (MSCS) được khởi xướng bởi Cục
+        Tiêu chuẩn Ấn Độ (BIS) là một quy trình từng bước đánh giá và công nhận
+        các công ty liên quan để triển khai các hệ thống quản lý được quốc tế
+        chấp nhận và công nhận. Khung MSCS bao gồm Tiêu chuẩn ISO như ISO 9001
+        Quản lý Chất lượng, ISO 14001 Quản lý Môi trường, ISO 45001 Hệ thống
+        Quản lý Sức khỏe và An toàn Nghề nghiệp và những tiêu chuẩn khác. MSCS
+        chứng nhận công ty cho các hoạt động hợp pháp, tính nhất quán, và cải
+        tiến liên tục của các hoạt động. Các công ty được chứng nhận trải qua
+        nhiều đánh giá và kiểm tra giúp họ xây dựng niềm tin giữa khách hàng, cơ
+        quan quản lý, và các bên liên quan tăng cường đảm bảo an toàn, chất
+        lượng, và tính bền vững.
       </p>
 
       <p className="service-left-content-paragraph">
-        BIS là cơ quan tiêu chuẩn quốc gia của Ấn Độ và là cơ quan chứng nhận
-        để nâng cao danh tiếng và uy tín của tổ chức
-        trong nước và bên ngoài Ấn Độ. MSCS bên cạnh việc thúc đẩy trách nhiệm giải trình
-        thông qua giám sát định kỳ và chứng nhận lại cũng giải phóng một
-        doanh nghiệp để tích cực hỗ trợ các chương trình công như Make in India và
-        Atmanirbhar Bharat. Bên cạnh nghĩa vụ pháp lý, chương trình cũng giúp
-        nuôi dưỡng văn hóa toàn vẹn, hiệu quả và thương mại công bằng. MSCS
-        khuyến khích thương mại và đầu tư của các công ty được chứng nhận và BIS
-        đóng một phần quan trọng trong việc phát triển hệ sinh thái chất lượng của
-        đất nước.
+        BIS là cơ quan tiêu chuẩn quốc gia của Ấn Độ và là cơ quan chứng nhận để
+        nâng cao danh tiếng và uy tín của tổ chức trong nước và bên ngoài Ấn Độ.
+        MSCS bên cạnh việc thúc đẩy trách nhiệm giải trình thông qua giám sát
+        định kỳ và chứng nhận lại cũng giải phóng một doanh nghiệp để tích cực
+        hỗ trợ các chương trình công như Make in India và Atmanirbhar Bharat.
+        Bên cạnh nghĩa vụ pháp lý, chương trình cũng giúp nuôi dưỡng văn hóa
+        toàn vẹn, hiệu quả và thương mại công bằng. MSCS khuyến khích thương mại
+        và đầu tư của các công ty được chứng nhận và BIS đóng một phần quan
+        trọng trong việc phát triển hệ sinh thái chất lượng của đất nước.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1311,33 +1309,34 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Dưới Cục Tiêu chuẩn Ấn Độ (BIS), Chương trình Công nhận Phòng thí nghiệm
-        (LRS) là một phần tích hợp của hệ thống đảm bảo tính đáng tin cậy
-        và năng lực tổng thể của các phòng thí nghiệm kiểm tra và chứng nhận sản phẩm
-        để được BIS phê duyệt. Các phòng thí nghiệm như vậy được đánh giá quan trọng về các
-        thuộc tính đa dạng bao gồm kiến thức kỹ thuật, chất lượng lực lượng lao động,
-        cơ sở hạ tầng, và năng lực tổng thể và sự hài lòng của phòng thí nghiệm
-        với tiêu chuẩn ISO/ IEC 17025. Các phòng thí nghiệm này, một khi được phê duyệt, được
-        phép thực hiện kiểm tra trên sản phẩm mà đánh giá sự phù hợp
-        được thực hiện như một phần của các chương trình chứng nhận BIS khác nhau như
-        Chương trình Dấu ISI và Chương trình Đăng ký Bắt buộc (CRS). Rõ ràng là
-        đối với nhà sản xuất, đặc biệt là người nhập khẩu và xuất khẩu,
-        các báo cáo thu được từ phòng thí nghiệm được LRS phê duyệt là yêu cầu quan trọng
-        để đạt được giấy chứng nhận BIS là yêu cầu pháp lý cho một số
-        sản phẩm.
+        (LRS) là một phần tích hợp của hệ thống đảm bảo tính đáng tin cậy và
+        năng lực tổng thể của các phòng thí nghiệm kiểm tra và chứng nhận sản
+        phẩm để được BIS phê duyệt. Các phòng thí nghiệm như vậy được đánh giá
+        quan trọng về các thuộc tính đa dạng bao gồm kiến thức kỹ thuật, chất
+        lượng lực lượng lao động, cơ sở hạ tầng, và năng lực tổng thể và sự hài
+        lòng của phòng thí nghiệm với tiêu chuẩn ISO/ IEC 17025. Các phòng thí
+        nghiệm này, một khi được phê duyệt, được phép thực hiện kiểm tra trên
+        sản phẩm mà đánh giá sự phù hợp được thực hiện như một phần của các
+        chương trình chứng nhận BIS khác nhau như Chương trình Dấu ISI và Chương
+        trình Đăng ký Bắt buộc (CRS). Rõ ràng là đối với nhà sản xuất, đặc biệt
+        là người nhập khẩu và xuất khẩu, các báo cáo thu được từ phòng thí
+        nghiệm được LRS phê duyệt là yêu cầu quan trọng để đạt được giấy chứng
+        nhận BIS là yêu cầu pháp lý cho một số sản phẩm.
       </p>
 
       <p className="service-left-content-paragraph">
-        LRS đang trao quyền cho các hệ thống đảm bảo của Ấn Độ bằng cách duy trì công bằng trong
-        kết quả kiểm tra và đảm bảo rằng tất cả kết quả nhất quán và
-        được đánh giá chuẩn toàn cầu, trong khi chỉ công nhận các
-        phòng thí nghiệm đáng tin cậy và vững chắc. Để duy trì tính toàn vẹn và minh bạch, BIS thực hiện
-        kiểm tra định kỳ, kiểm tra trình độ, và giám sát các phòng thí nghiệm sơ đồ được
-        công nhận. Công nhận chứng nhận này cho phép BIS cải thiện niềm tin
-        từ người tiêu dùng trong khi làm cho quy trình chứng nhận hiệu quả hơn cho
-        các ngành công nghiệp, vì chỉ các sản phẩm an toàn, tuân thủ, và chất lượng cao mới được
-        cung cấp trên thị trường Ấn Độ. Đối với các tổ chức nhằm mục đích nhận chứng nhận BIS,
-        hợp tác với các phòng thí nghiệm được LRS phê duyệt là điều
-        cần thiết nhất để đạt được tuân thủ và tiếp cận thị trường.
+        LRS đang trao quyền cho các hệ thống đảm bảo của Ấn Độ bằng cách duy trì
+        công bằng trong kết quả kiểm tra và đảm bảo rằng tất cả kết quả nhất
+        quán và được đánh giá chuẩn toàn cầu, trong khi chỉ công nhận các phòng
+        thí nghiệm đáng tin cậy và vững chắc. Để duy trì tính toàn vẹn và minh
+        bạch, BIS thực hiện kiểm tra định kỳ, kiểm tra trình độ, và giám sát các
+        phòng thí nghiệm sơ đồ được công nhận. Công nhận chứng nhận này cho phép
+        BIS cải thiện niềm tin từ người tiêu dùng trong khi làm cho quy trình
+        chứng nhận hiệu quả hơn cho các ngành công nghiệp, vì chỉ các sản phẩm
+        an toàn, tuân thủ, và chất lượng cao mới được cung cấp trên thị trường
+        Ấn Độ. Đối với các tổ chức nhằm mục đích nhận chứng nhận BIS, hợp tác
+        với các phòng thí nghiệm được LRS phê duyệt là điều cần thiết nhất để
+        đạt được tuân thủ và tiếp cận thị trường.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1345,8 +1344,7 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Chứng nhận BIS áp dụng cho nhiều loại sản phẩm. Ví dụ
-        bao gồm:
+        Chứng nhận BIS áp dụng cho nhiều loại sản phẩm. Ví dụ bao gồm:
       </p>
 
       <PointsListWithoutHeading
@@ -1368,8 +1366,8 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Đối với các công ty, giấy chứng nhận BIS cung cấp nhiều hơn chỉ là tuân thủ
-        với pháp luật.
+        Đối với các công ty, giấy chứng nhận BIS cung cấp nhiều hơn chỉ là tuân
+        thủ với pháp luật.
       </p>
 
       <PointsListWithoutHeading
@@ -1439,7 +1437,8 @@ const BISCertificationFaq = () => {
         "Quy trình chứng nhận BIS bao gồm xác định các tiêu chuẩn Ấn Độ áp dụng, nộp đơn, kiểm tra sản phẩm, thanh tra nhà máy, và cấp giấy chứng nhận BIS sau khi phê duyệt.",
     },
     {
-      question: "Nhà sản xuất nước ngoài có thể nộp đơn xin giấy phép BIS không?",
+      question:
+        "Nhà sản xuất nước ngoài có thể nộp đơn xin giấy phép BIS không?",
       answer:
         "Có, theo Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS), các công ty nước ngoài có thể nộp đơn xin giấy phép BIS để bán sản phẩm ở Ấn Độ. Họ phải bổ nhiệm một Đại diện Ấn Độ được Ủy quyền (AIR).",
     },
@@ -1464,18 +1463,19 @@ const BISCertificationFaq = () => {
         "Chi phí chứng nhận BIS phụ thuộc vào loại sản phẩm, yêu cầu kiểm tra, loại chương trình (ISI, CRS, FMCS), và liệu người nộp đơn là trong nước hay nước ngoài. Chi phí bao gồm phí đăng ký, phí kiểm tra, và chi phí thanh tra.",
     },
     {
-      question: "Dấu ISI có bắt buộc cho tất cả sản phẩm được chứng nhận BIS không?",
+      question:
+        "Dấu ISI có bắt buộc cho tất cả sản phẩm được chứng nhận BIS không?",
       answer:
         "Không, chỉ các sản phẩm dưới chương trình ISI được yêu cầu mang dấu ISI. Các sản phẩm dưới chương trình CRS hoặc Hallmarking tuân theo các giao thức dán nhãn khác nhau theo quy chuẩn đăng ký BIS.",
     },
     {
-      question: "Tôi có thể có được chứng nhận BIS cho sản phẩm thân thiện với môi trường không?",
+      question:
+        "Tôi có thể có được chứng nhận BIS cho sản phẩm thân thiện với môi trường không?",
       answer:
         "Có, các sản phẩm đáp ứng tiêu chuẩn môi trường có thể có được chứng nhận BIS theo chương trình Eco Mark, điều này đảm bảo tuân thủ các tiêu chuẩn Ấn Độ về an toàn môi trường.",
     },
     {
-      question:
-        "Sự khác biệt giữa chứng nhận BIS và đăng ký BIS là gì?",
+      question: "Sự khác biệt giữa chứng nhận BIS và đăng ký BIS là gì?",
       answer:
         "Chứng nhận BIS thường đề cập đến việc phê duyệt theo các chương trình ISI, FMCS, hoặc Hallmarking, trong khi đăng ký BIS thường được liên kết với chương trình CRS cho sản phẩm điện tử.",
     },
@@ -1485,7 +1485,8 @@ const BISCertificationFaq = () => {
         "CRS là chương trình đăng ký BIS cho hàng hóa IT và điện tử như đèn LED, điện thoại di động, và power banks. Nó đảm bảo sự tuân thủ sản phẩm với các tiêu chuẩn Ấn Độ liên quan đến an toàn.",
     },
     {
-      question: "Dấu ISI và giấy chứng nhận BIS có nghĩa là cùng một thứ không?",
+      question:
+        "Dấu ISI và giấy chứng nhận BIS có nghĩa là cùng một thứ không?",
       answer:
         "Không hoàn toàn. Dấu ISI là biểu tượng được cấp cho các sản phẩm được chứng nhận theo chương trình chứng nhận BIS. Giấy chứng nhận BIS là tài liệu pháp lý được cấp cho nhà sản xuất.",
     },
@@ -1604,8 +1605,9 @@ const BISCertificationServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

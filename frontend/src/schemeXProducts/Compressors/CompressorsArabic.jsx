@@ -447,11 +447,12 @@ import {
               className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
             >
               <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-                <img
-                  src={CDSCO}
-                  alt="CDSCO"
-                  className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
-                />
+              <img
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
               </div>
               <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
                 شهادة تسجيل CDSCO

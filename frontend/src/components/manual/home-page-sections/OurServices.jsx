@@ -113,13 +113,16 @@ const OurServices = () => {
     [navigate]
   );
 
-  const handleThumbnailClick = useCallback((index) => {
-    setActiveThumbnail(index);
-    const service = services[index];
-    if (service && service.path) {
-      handleServiceNavigation(service.path);
-    }
-  }, [handleServiceNavigation]);
+  const handleThumbnailClick = useCallback(
+    (index) => {
+      setActiveThumbnail(index);
+      const service = services[index];
+      if (service && service.path) {
+        handleServiceNavigation(service.path);
+      }
+    },
+    [handleServiceNavigation]
+  );
 
   return (
     <div className="bg-gradient-to-b from-[#F9F7F2] to-white pt-8 pb-8  sm:pt-12 md:pt-16 ">
@@ -171,7 +174,16 @@ const OurServices = () => {
                       <div className="flex items-center justify-center bg-white/80 backdrop-blur-sm w-24 h-24 rounded-2xl shadow-lg">
                         <img
                           src={service.image}
-                          alt={`Icon representing ${service.title}`}
+                          alt={
+                            service.title === "CDSCO Registration Certification"
+                              ? "CDSCO Logo"
+                              : `Icon representing ${service.title}`
+                          }
+                          title={
+                            service.title === "CDSCO Registration Certification"
+                              ? "CDSCO Logo"
+                              : `Icon representing ${service.title}`
+                          }
                           className="w-20 h-20 rounded-full object-contain"
                           width="80"
                           height="80"
@@ -208,7 +220,16 @@ const OurServices = () => {
                       <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[350px] flex items-center justify-center">
                         <img
                           src={service.image}
-                          alt={`Service icon for ${service.title}`}
+                          alt={
+                            service.title === "CDSCO Registration Certification"
+                              ? "CDSCO Logo"
+                              : `Service icon for ${service.title}`
+                          }
+                          title={
+                            service.title === "CDSCO Registration Certification"
+                              ? "CDSCO Logo"
+                              : `Service icon for ${service.title}`
+                          }
                           className="w-48 h-48 rounded-full object-contain"
                           width="192"
                           height="192"
@@ -230,10 +251,11 @@ const OurServices = () => {
               key={idx}
               onClick={() => goToSlide(idx)}
               aria-label={`Go to service ${idx + 1}`}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${activeIndex === idx
-                ? "bg-[#1A8781] w-10"
-                : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
-                }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                activeIndex === idx
+                  ? "bg-[#1A8781] w-10"
+                  : "bg-[#1A8781]/30 hover:bg-[#1A8781]/50"
+              }`}
             ></button>
           ))}
         </div>
@@ -252,16 +274,26 @@ const OurServices = () => {
                   handleThumbnailClick(index);
                 }
               }}
-              className={`rounded-xl p-3 md:p-4 transition-all duration-300 border cursor-pointer ${activeThumbnail === index
-                ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-                }`}
+              className={`rounded-xl p-3 md:p-4 transition-all duration-300 border cursor-pointer ${
+                activeThumbnail === index
+                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+              }`}
             >
               <div className="flex flex-col items-center text-center gap-1 md:gap-2">
                 <div className="mb-0.5 md:mb-1">
                   <img
                     src={service.image}
-                    alt={`Small icon for ${service.title}`}
+                    alt={
+                      service.title === "CDSCO Registration Certification"
+                        ? "CDSCO Logo"
+                        : `Small icon for ${service.title}`
+                    }
+                    title={
+                      service.title === "CDSCO Registration Certification"
+                        ? "CDSCO Logo"
+                        : `Small icon for ${service.title}`
+                    }
                     className="w-8 h-8 md:w-12 md:h-12 rounded-full object-contain mx-auto"
                     width="48"
                     height="48"

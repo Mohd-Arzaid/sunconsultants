@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
 
 // Service Images
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -107,8 +106,9 @@ const HomeServices = () => {
           >
             <figure className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 m-0">
               <img
-                src={CDSCO}
-                alt="CDSCO Registration Certification - Medical Device and Drug Registration Services"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[130px] h-[130px] rounded-full object-contain border-2 border-[#B5DDEB]"
               />
             </figure>

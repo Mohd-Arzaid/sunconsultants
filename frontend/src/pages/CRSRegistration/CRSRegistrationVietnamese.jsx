@@ -17,7 +17,7 @@ import {
   Table,
   TableBody,
   TableCell,
-  TableHeader,  
+  TableHeader,
   TableRow,
   TableHead,
 } from "@/components/ui/table";
@@ -35,7 +35,6 @@ import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -44,7 +43,6 @@ import ISIMark from "../../assets/images/ISIMark.jpg";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
 import ServiceAuthorVietnamese from "@/components/manual/ServiceAuthor/ServiceAuthorVietnamese";
-
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -70,7 +68,6 @@ const CRSRegistrationVietnamese = () => {
 };
 
 export default CRSRegistrationVietnamese;
-
 
 const CRSRegistrationMetaTags = () => {
   const breadcrumbStructuredData = {
@@ -198,7 +195,7 @@ const CRSRegistrationHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Bắt buộc đối với sản phẩm điện tử để đảm bảo an toàn & chất lượng. 
+            Bắt buộc đối với sản phẩm điện tử để đảm bảo an toàn & chất lượng.
             Nhận sự chấp thuận BIS với sự hỗ trợ chuyên gia!
           </p>
 
@@ -335,8 +332,7 @@ const CRSRegistrationHeroContactForm = () => {
         pageName: getPageName(),
       });
     } catch (error) {
-      const errorMessage =
-        error.response?.data?.message || "Đã xảy ra lỗi";
+      const errorMessage = error.response?.data?.message || "Đã xảy ra lỗi";
       toast({
         variant: "destructive",
         title: errorMessage || "Không thể gửi chi tiết biểu mẫu liên hệ!",
@@ -570,8 +566,9 @@ const CRSRegistrationIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -621,10 +618,11 @@ const CRSRegistrationIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -644,18 +642,20 @@ const CRSRegistrationIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -731,7 +731,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
-                alt="CDSCO"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -842,7 +843,6 @@ export const Services = () => {
   );
 };
 
-
 const CRSRegistrationServiceFaq = () => {
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -928,7 +928,8 @@ const CRSRegistrationServiceFaq = () => {
     },
     {
       id: "item-14",
-      question: "14. Một giấy chứng nhận BIS có thể bao gồm nhiều mô hình hoặc thương hiệu không?",
+      question:
+        "14. Một giấy chứng nhận BIS có thể bao gồm nhiều mô hình hoặc thương hiệu không?",
       answer:
         "Không. Mỗi thương hiệu và vị trí nhà máy phải được chứng nhận riêng biệt. Nhiều mô hình có thể được thêm bằng cách sử dụng báo cáo bổ sung, nhưng chỉ dưới cùng một ứng dụng và thương hiệu.",
     },
@@ -1100,8 +1101,7 @@ const productsData = [
   },
   {
     id: 14,
-    product:
-      'ĐƠN VỊ HIỂN THỊ HÌNH ẢNH, MÀN HÌNH VIDEO 32" TRỞ LÊN',
+    product: 'ĐƠN VỊ HIỂN THỊ HÌNH ẢNH, MÀN HÌNH VIDEO 32" TRỞ LÊN',
     isNumber: "IS 13252(Part 1):2010",
     date: "03 July 2013",
   },
@@ -1173,7 +1173,8 @@ const productsData = [
   },
   {
     id: 26,
-    product: "BỘ CHUYỂN ĐỔI NGUỒN CHO THIẾT BỊ ÂM THANH, VIDEO & THIẾT BỊ ĐIỆN TỬ TƯƠNG TỰ",
+    product:
+      "BỘ CHUYỂN ĐỔI NGUỒN CHO THIẾT BỊ ÂM THANH, VIDEO & THIẾT BỊ ĐIỆN TỬ TƯƠNG TỰ",
     isNumber: "IS 616:2010",
     date: "01 December 2015",
   },
@@ -1272,8 +1273,7 @@ const productsData = [
   {
     id: 42,
     product: "Camera CCTV/Máy Ghi CCTV",
-    isNumber:
-      "IS 13252 (Part 1) : 2010, Yêu Cầu Thiết Yếu Cho Bảo Mật CCTV",
+    isNumber: "IS 13252 (Part 1) : 2010, Yêu Cầu Thiết Yếu Cho Bảo Mật CCTV",
     date: "23 May 2018",
   },
   {
@@ -1533,7 +1533,7 @@ export const CISProductTable = () => {
         </h2>
 
         <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-8">
-          Bảng sau đây liệt kê các sản phẩm yêu cầu đăng ký BIS CRS tại Ấn Độ 
+          Bảng sau đây liệt kê các sản phẩm yêu cầu đăng ký BIS CRS tại Ấn Độ
           cùng với số Tiêu chuẩn Ấn Độ (IS) áp dụng và ngày triển khai.
         </p>
 
@@ -1621,27 +1621,30 @@ const CRSRegistrationMainContentLeft = () => {
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
-          <h2 className="service-left-content-heading-two">Đăng Ký BIS Là Gì?</h2>
+          <h2 className="service-left-content-heading-two">
+            Đăng Ký BIS Là Gì?
+          </h2>
 
           <p className="service-left-content-paragraph">
-            Bureau of Indian Standards (BIS) là cơ quan tiêu chuẩn hóa quốc gia 
-            ở Ấn Độ và hoạt động dưới Bộ Tiêu dùng, Thực phẩm và Phân phối 
-            Công cộng, Chính phủ Ấn Độ. BIS chịu trách nhiệm duy trì chất lượng, 
-            an toàn và các tiêu chuẩn hiệu suất cho các sản phẩm và dịch vụ khác nhau 
-            ở Ấn Độ theo Tiêu chuẩn Ấn Độ (IS) có liên quan.
+            Bureau of Indian Standards (BIS) là cơ quan tiêu chuẩn hóa quốc gia
+            ở Ấn Độ và hoạt động dưới Bộ Tiêu dùng, Thực phẩm và Phân phối Công
+            cộng, Chính phủ Ấn Độ. BIS chịu trách nhiệm duy trì chất lượng, an
+            toàn và các tiêu chuẩn hiệu suất cho các sản phẩm và dịch vụ khác
+            nhau ở Ấn Độ theo Tiêu chuẩn Ấn Độ (IS) có liên quan.
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS chịu trách nhiệm giám sát và thực hiện các chương trình khác nhau 
-            ở Ấn Độ. Chương trình Đăng ký Bắt buộc (CRS) là một chương trình chứng nhận 
-            nổi bật và bắt buộc của BIS bao gồm các danh mục sản phẩm điện tử và CNTT khác nhau.
+            BIS chịu trách nhiệm giám sát và thực hiện các chương trình khác
+            nhau ở Ấn Độ. Chương trình Đăng ký Bắt buộc (CRS) là một chương
+            trình chứng nhận nổi bật và bắt buộc của BIS bao gồm các danh mục
+            sản phẩm điện tử và CNTT khác nhau.
           </p>
 
           <p className="service-left-content-paragraph">
-            Hiệu suất và an toàn của sản phẩm Ấn Độ là vấn đề quan trọng đối với Ấn Độ. 
-            Chứng nhận BIS CRS đảm bảo rằng các sản phẩm điện tử và CNTT tuân thủ các 
-            tiêu chuẩn Ấn Độ và giúp bảo vệ người tiêu dùng khỏi các sản phẩm không 
-            tuân thủ và kém chất lượng.
+            Hiệu suất và an toàn của sản phẩm Ấn Độ là vấn đề quan trọng đối với
+            Ấn Độ. Chứng nhận BIS CRS đảm bảo rằng các sản phẩm điện tử và CNTT
+            tuân thủ các tiêu chuẩn Ấn Độ và giúp bảo vệ người tiêu dùng khỏi
+            các sản phẩm không tuân thủ và kém chất lượng.
           </p>
         </div>
 
@@ -1686,8 +1689,6 @@ const CRSRegistrationMainContentLeft = () => {
   );
 };
 
-
-
 const CRSRegistrationMainContentLeftOverviewSection = () => {
   return (
     <div id="overview" className="flex flex-col scroll-mt-20">
@@ -1702,17 +1703,18 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Chương trình Đăng ký Bắt buộc (CRS) là một chương trình đăng ký sản phẩm BIS 
-        được khởi động năm 2012 và chủ yếu tập trung vào sản phẩm điện tử. Trong những 
-        năm qua, khi nhiều sản phẩm được phát hành, CRS đã được mở rộng để bao gồm 
-        nhiều danh mục sản phẩm hơn, bao gồm các sản phẩm điện như thiết bị gia dụng, 
-        thiết bị năng lượng mặt trời, pin và hơn nữa. Đăng ký CRS là bắt buộc đối với 
-        các sản phẩm được chỉ định dưới Lệnh Kiểm soát Chất lượng (QCO) do các bộ khác nhau ban hành.
+        Chương trình Đăng ký Bắt buộc (CRS) là một chương trình đăng ký sản phẩm
+        BIS được khởi động năm 2012 và chủ yếu tập trung vào sản phẩm điện tử.
+        Trong những năm qua, khi nhiều sản phẩm được phát hành, CRS đã được mở
+        rộng để bao gồm nhiều danh mục sản phẩm hơn, bao gồm các sản phẩm điện
+        như thiết bị gia dụng, thiết bị năng lượng mặt trời, pin và hơn nữa.
+        Đăng ký CRS là bắt buộc đối với các sản phẩm được chỉ định dưới Lệnh
+        Kiểm soát Chất lượng (QCO) do các bộ khác nhau ban hành.
       </p>
 
       <p className="service-left-content-paragraph">
-        Bất kỳ sản phẩm nào thuộc chương trình CRS bắt buộc phải được bán, 
-        nhập khẩu hoặc phân phối ở Ấn Độ chỉ sau khi có được đăng ký với BIS.
+        Bất kỳ sản phẩm nào thuộc chương trình CRS bắt buộc phải được bán, nhập
+        khẩu hoặc phân phối ở Ấn Độ chỉ sau khi có được đăng ký với BIS.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1720,9 +1722,9 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Vào năm 2012, QCO đầu tiên dưới chương trình CRS được phát hành và tập trung vào 
-        thiết bị điện tử và CNTT. Kể từ đó, các QCO bổ sung đã được ban hành trong các 
-        lĩnh vực sau:
+        Vào năm 2012, QCO đầu tiên dưới chương trình CRS được phát hành và tập
+        trung vào thiết bị điện tử và CNTT. Kể từ đó, các QCO bổ sung đã được
+        ban hành trong các lĩnh vực sau:
       </p>
 
       <PointsListWithoutHeading
@@ -1737,8 +1739,8 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Danh sách Chứng nhận CRS đang mở rộng nhanh chóng, vì vậy các nhà sản xuất 
-        rất cần chủ động và nhận thức được các cập nhật gần đây.
+        Danh sách Chứng nhận CRS đang mở rộng nhanh chóng, vì vậy các nhà sản
+        xuất rất cần chủ động và nhận thức được các cập nhật gần đây.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -1828,8 +1830,9 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Nếu bạn là nhà sản xuất ở Ấn Độ hoặc một công ty nước ngoài đang cố gắng gia nhập 
-        thị trường Ấn Độ, biết các bước BIS CRS là điều bắt buộc. Nó giúp bạn:
+        Nếu bạn là nhà sản xuất ở Ấn Độ hoặc một công ty nước ngoài đang cố gắng
+        gia nhập thị trường Ấn Độ, biết các bước BIS CRS là điều bắt buộc. Nó
+        giúp bạn:
       </p>
 
       <PointsListWithoutHeading
@@ -1862,13 +1865,16 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
       </p>
 
       <p className="service-left-content-paragraph">
-        Ở Ấn Độ, giấy chứng nhận BIS dưới Chương trình Đăng ký Bắt buộc (CRS) 
-        chỉ có thể được cấp cho các nhà sản xuất đáp ứng các yêu cầu do Bureau 
-        of Indian Standards đưa ra. Điều này đảm bảo chỉ các nhà sản xuất xác thực 
-        mới có đặc quyền đăng ký cũng như dán logo BIS CRS trên sản phẩm của họ.
+        Ở Ấn Độ, giấy chứng nhận BIS dưới Chương trình Đăng ký Bắt buộc (CRS)
+        chỉ có thể được cấp cho các nhà sản xuất đáp ứng các yêu cầu do Bureau
+        of Indian Standards đưa ra. Điều này đảm bảo chỉ các nhà sản xuất xác
+        thực mới có đặc quyền đăng ký cũng như dán logo BIS CRS trên sản phẩm
+        của họ.
       </p>
 
-      <div className="service-left-content-heading-three">Danh Sách Kiểm Tra Tiêu Chí Đủ Điều Kiện</div>
+      <div className="service-left-content-heading-three">
+        Danh Sách Kiểm Tra Tiêu Chí Đủ Điều Kiện
+      </div>
 
       {/* Eligibility Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -1890,8 +1896,8 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
                   Người Nộp Đơn Phải Là Nhà Sản Xuất
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Chỉ nhà sản xuất gốc (không phải người buôn bán hoặc người bán lại) 
-                  của sản phẩm mới đủ điều kiện đăng ký.
+                  Chỉ nhà sản xuất gốc (không phải người buôn bán hoặc người bán
+                  lại) của sản phẩm mới đủ điều kiện đăng ký.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -1899,7 +1905,8 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
                   Vị Trí Có Thể Là Ấn Độ Hoặc Nước Ngoài
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Cả nhà sản xuất Ấn Độ và thương hiệu quốc tế đều có thể đăng ký.
+                  Cả nhà sản xuất Ấn Độ và thương hiệu quốc tế đều có thể đăng
+                  ký.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -1907,8 +1914,8 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
                   AIR (Đại Diện Ấn Độ Được Ủy Quyền)
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Nhà sản xuất nước ngoài phải bổ nhiệm một AIR — có thể là chi nhánh 
-                  Ấn Độ của họ hoặc bên thứ ba được ủy quyền chính thức.
+                  Nhà sản xuất nước ngoài phải bổ nhiệm một AIR — có thể là chi
+                  nhánh Ấn Độ của họ hoặc bên thứ ba được ủy quyền chính thức.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -1916,8 +1923,8 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
                   Báo Cáo Kiểm Tra Từ Phòng Thí Nghiệm Được BIS Phê Duyệt
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Sản phẩm phải được kiểm tra tại phòng thí nghiệm được BIS công nhận và 
-                  đáp ứng Tiêu chuẩn Ấn Độ (IS) áp dụng.
+                  Sản phẩm phải được kiểm tra tại phòng thí nghiệm được BIS công
+                  nhận và đáp ứng Tiêu chuẩn Ấn Độ (IS) áp dụng.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -1925,8 +1932,8 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
                   Tài Liệu Đúng Cách
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Tất cả các tài liệu bắt buộc phải được gửi theo định dạng quy định 
-                  (chi tiết trong phần tiếp theo).
+                  Tất cả các tài liệu bắt buộc phải được gửi theo định dạng quy
+                  định (chi tiết trong phần tiếp theo).
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -1934,7 +1941,8 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
                   Một Đăng Ký Cho Mỗi Thương Hiệu & Vị Trí
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Phải nộp đơn riêng cho mỗi loại sản phẩm, vị trí sản xuất và tên thương hiệu.
+                  Phải nộp đơn riêng cho mỗi loại sản phẩm, vị trí sản xuất và
+                  tên thương hiệu.
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -1947,11 +1955,14 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Đối với các nhà sản xuất nước ngoài, một trong những nghĩa vụ là bổ nhiệm 
-        một Đại diện Ấn Độ được Ủy quyền (AIR) để giao tiếp và đại diện tại Ấn Độ.
+        Đối với các nhà sản xuất nước ngoài, một trong những nghĩa vụ là bổ
+        nhiệm một Đại diện Ấn Độ được Ủy quyền (AIR) để giao tiếp và đại diện
+        tại Ấn Độ.
       </p>
 
-      <div className="service-left-content-heading-three">Trách Nhiệm Của AIR:</div>
+      <div className="service-left-content-heading-three">
+        Trách Nhiệm Của AIR:
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1963,14 +1974,17 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Như một phần của thỏa thuận, AIR phải nộp thỏa thuận đã ký từ cả hai bên 
+        Như một phần của thỏa thuận, AIR phải nộp thỏa thuận đã ký từ cả hai bên
         cùng với bằng chứng địa chỉ Ấn Độ.
       </p>
 
-      <div className="service-left-content-heading-three">Tình Huống Thực Tế:</div>
+      <div className="service-left-content-heading-three">
+        Tình Huống Thực Tế:
+      </div>
 
       <p className="service-left-content-paragraph">
-        Công ty ABC đang lên kế hoạch giới thiệu một mẫu pin dự phòng mới tại Ấn Độ.
+        Công ty ABC đang lên kế hoạch giới thiệu một mẫu pin dự phòng mới tại Ấn
+        Độ.
       </p>
 
       <PointsListWithoutHeading
@@ -2007,17 +2021,19 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        Điền đơn đăng ký BIS CRS hoàn toàn bằng kỹ thuật số, tuy nhiên, nó vẫn 
-        yêu cầu tài liệu hoàn chỉnh để có được sự phê duyệt. Mọi sai sót nhỏ và 
-        việc không tuân thủ bất kỳ khía cạnh nào, chẳng hạn như loại tài liệu, 
-        định dạng không đúng, hoặc loại tệp sai có thể khiến đơn bị từ chối hoặc trì hoãn.
+        Điền đơn đăng ký BIS CRS hoàn toàn bằng kỹ thuật số, tuy nhiên, nó vẫn
+        yêu cầu tài liệu hoàn chỉnh để có được sự phê duyệt. Mọi sai sót nhỏ và
+        việc không tuân thủ bất kỳ khía cạnh nào, chẳng hạn như loại tài liệu,
+        định dạng không đúng, hoặc loại tệp sai có thể khiến đơn bị từ chối hoặc
+        trì hoãn.
       </p>
 
       <p className="service-left-content-paragraph">
-        Để xử lý tài liệu BIS đúng cách và nhanh hơn, cần có tài liệu phù hợp 
-        với bạn ở mỗi bước. Có tài liệu phù hợp sẵn sàng đảm bảo rằng chứng chỉ 
-        BIS của bạn được xử lý đúng thời hạn và tuân thủ pháp lý khỏi bất kỳ 
-        cuộc kiểm tra tuân thủ nào, kiểm tra hải quan, hoặc phê duyệt thị trường.
+        Để xử lý tài liệu BIS đúng cách và nhanh hơn, cần có tài liệu phù hợp
+        với bạn ở mỗi bước. Có tài liệu phù hợp sẵn sàng đảm bảo rằng chứng chỉ
+        BIS của bạn được xử lý đúng thời hạn và tuân thủ pháp lý khỏi bất kỳ
+        cuộc kiểm tra tuân thủ nào, kiểm tra hải quan, hoặc phê duyệt thị
+        trường.
       </p>
 
       <div className="service-left-content-heading-three">
@@ -2165,22 +2181,26 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
     <div id="registration" className="flex flex-col scroll-mt-20">
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Quy Trình Đăng Ký</span>
+        <span className="service-left-content-index-heading">
+          Quy Trình Đăng Ký
+        </span>
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Quy Trình Đăng Ký BIS CRS</h2>
+      <h2 className="service-left-content-heading-two">
+        Quy Trình Đăng Ký BIS CRS
+      </h2>
 
       <p className="service-left-content-paragraph">
-        Đăng ký BIS CRS là một quy trình hoàn toàn trực tuyến thông qua Cổng Đăng ký BIS. 
-        Nó không chỉ bao gồm các thủ tục tải lên tài liệu. Nó cũng yêu cầu sự chú ý 
-        đặc biệt về bản chất kỹ thuật, hiểu biết về các quy định, cũng như tuân thủ 
-        hoàn toàn Tiêu chuẩn Ấn Độ (IS).
+        Đăng ký BIS CRS là một quy trình hoàn toàn trực tuyến thông qua Cổng
+        Đăng ký BIS. Nó không chỉ bao gồm các thủ tục tải lên tài liệu. Nó cũng
+        yêu cầu sự chú ý đặc biệt về bản chất kỹ thuật, hiểu biết về các quy
+        định, cũng như tuân thủ hoàn toàn Tiêu chuẩn Ấn Độ (IS).
       </p>
 
       <p className="service-left-content-paragraph">
-        Quy Trình BIS CRS, chúng tôi gọi nó là Hệ Thống Chứng Nhận và Đăng Ký (CRS) 
-        hiện tại, và đây là cách hành trình Chứng nhận BIS diễn ra.
+        Quy Trình BIS CRS, chúng tôi gọi nó là Hệ Thống Chứng Nhận và Đăng Ký
+        (CRS) hiện tại, và đây là cách hành trình Chứng nhận BIS diễn ra.
       </p>
 
       <div className="service-left-content-heading-three">
@@ -2195,7 +2215,9 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <div className="service-left-content-heading-three">Bước 2: Chuẩn Bị Tài Liệu</div>
+      <div className="service-left-content-heading-three">
+        Bước 2: Chuẩn Bị Tài Liệu
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -2230,11 +2252,13 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Nếu đó là câu hỏi làm rõ, nó phải được trả lời trong vòng 30 ngày, hoặc 
+        Nếu đó là câu hỏi làm rõ, nó phải được trả lời trong vòng 30 ngày, hoặc
         đơn sẽ đi vào kho lưu trữ, có nghĩa là bị từ chối.
       </p>
 
-      <div className="service-left-content-heading-three">Bước 5: Cấp Giấy Đăng Ký BIS</div>
+      <div className="service-left-content-heading-three">
+        Bước 5: Cấp Giấy Đăng Ký BIS
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -2242,7 +2266,9 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-paragraph">Chứng chỉ của bạn sẽ bao gồm:</p>
+      <p className="service-left-content-paragraph">
+        Chứng chỉ của bạn sẽ bao gồm:
+      </p>
 
       <PointsListWithoutHeading
         points={[
@@ -2259,7 +2285,9 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <div className="service-left-content-heading-three">Bước 6: Dán Nhãn Và Phân Phối</div>
+      <div className="service-left-content-heading-three">
+        Bước 6: Dán Nhãn Và Phân Phối
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -2358,13 +2386,16 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Để có được chứng chỉ BIS dưới CRS, người đăng ký phải trả phí chính phủ cũng như 
-        khoản thanh toán cho sản phẩm cần kiểm tra. Mặc dù quy trình là trực tuyến và giao diện 
-        được tối ưu hóa, nhiều người đăng ký vẫn gặp chậm trễ trong yêu cầu của họ và 
-        bị từ chối do thanh toán thiếu và đơn đăng ký nộp sai.
+        Để có được chứng chỉ BIS dưới CRS, người đăng ký phải trả phí chính phủ
+        cũng như khoản thanh toán cho sản phẩm cần kiểm tra. Mặc dù quy trình là
+        trực tuyến và giao diện được tối ưu hóa, nhiều người đăng ký vẫn gặp
+        chậm trễ trong yêu cầu của họ và bị từ chối do thanh toán thiếu và đơn
+        đăng ký nộp sai.
       </p>
 
-      <h3 className="service-left-content-heading-three">Cơ Cấu Phí Cho Đăng Ký CRS</h3>
+      <h3 className="service-left-content-heading-three">
+        Cơ Cấu Phí Cho Đăng Ký CRS
+      </h3>
 
       {/* Fee Structure Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2394,7 +2425,8 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
                   Phí Kiểm Tra
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  ₹10.000 – ₹20.000 + 18% GST (thay đổi tùy theo sản phẩm/phòng thí nghiệm)
+                  ₹10.000 – ₹20.000 + 18% GST (thay đổi tùy theo sản phẩm/phòng
+                  thí nghiệm)
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2420,11 +2452,14 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
 
       <p className="service-left-content-paragraph italic text-center">
         <em>
-          Giá có thể được cập nhật — xác nhận trên cổng BIS hoặc với cố vấn của bạn.
+          Giá có thể được cập nhật — xác nhận trên cổng BIS hoặc với cố vấn của
+          bạn.
         </em>
       </p>
 
-      <h3 className="service-left-content-heading-three">Hiệu Lực & Gia Hạn Chứng Chỉ CRS</h3>
+      <h3 className="service-left-content-heading-three">
+        Hiệu Lực & Gia Hạn Chứng Chỉ CRS
+      </h3>
 
       {/* Certificate Validity & Renewal Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2470,7 +2505,8 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
                   Kiểm Tra Lại Cần Thiết?
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Không, trừ khi thông số kỹ thuật sản phẩm/tiêu chuẩn IS thay đổi
+                  Không, trừ khi thông số kỹ thuật sản phẩm/tiêu chuẩn IS thay
+                  đổi
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -2494,20 +2530,27 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         Hướng Dẫn E-Labelling Cho Sản Phẩm Được Chứng Nhận CRS
       </div>
 
-      <div className="service-left-content-heading-three">E-Labelling Là Gì?</div>
+      <div className="service-left-content-heading-three">
+        E-Labelling Là Gì?
+      </div>
 
       <p className="service-left-content-paragraph">
-        E-Labelling là việc hiển thị thông tin tuân thủ bên trong thiết bị bằng điện tử thay vì in và dán trên thiết bị. 
-        Dưới Chương Trình Đăng Ký Bắt Buộc (CRS) của BIS, các sản phẩm được chỉ định, đặc biệt là thiết bị nhỏ gọn hoặc kỹ thuật số, 
-        có thể hiển thị chi tiết chứng chỉ BIS, nhãn hiệu tiêu chuẩn và mã IS thông qua 
-        giao diện phần mềm hoặc bao bì kỹ thuật số.
+        E-Labelling là việc hiển thị thông tin tuân thủ bên trong thiết bị bằng
+        điện tử thay vì in và dán trên thiết bị. Dưới Chương Trình Đăng Ký Bắt
+        Buộc (CRS) của BIS, các sản phẩm được chỉ định, đặc biệt là thiết bị nhỏ
+        gọn hoặc kỹ thuật số, có thể hiển thị chi tiết chứng chỉ BIS, nhãn hiệu
+        tiêu chuẩn và mã IS thông qua giao diện phần mềm hoặc bao bì kỹ thuật
+        số.
       </p>
 
       <div className="service-left-content-heading-three">
-        Hướng Dẫn BIS Về E-Labelling: E-Labelling Điện Tử (BIS CMD 3/8:1/6975. Ngày 03/12/2015)
+        Hướng Dẫn BIS Về E-Labelling: E-Labelling Điện Tử (BIS CMD 3/8:1/6975.
+        Ngày 03/12/2015)
       </div>
 
-      <h3 className="service-left-content-heading-three">Yêu Cầu Đối Với E-Labelling:</h3>
+      <h3 className="service-left-content-heading-three">
+        Yêu Cầu Đối Với E-Labelling:
+      </h3>
 
       {/* E-Labelling Requirements Table */}
       <div className="mt-[16px] md:mt-[24px] mb-[16px] md:mb-[20px] overflow-x-auto">
@@ -2529,7 +2572,7 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
                   Nhãn Vật Lý Trên Bao Bì
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Hộp sản phẩm hoặc bao bì bên ngoài phải hiển thị Logo BIS CRS 
+                  Hộp sản phẩm hoặc bao bì bên ngoài phải hiển thị Logo BIS CRS
                   và chi tiết đăng ký.
                 </TableCell>
               </TableRow>
@@ -2538,8 +2581,8 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
                   Nhãn Dán Có Thể Gỡ Cho Bao Bì Số Lượng Lớn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Nếu sản phẩm được vận chuyển với số lượng lớn, nhãn dán có thể gỡ 
-                  trên bao bì bên ngoài được chấp nhận.
+                  Nếu sản phẩm được vận chuyển với số lượng lớn, nhãn dán có thể
+                  gỡ trên bao bì bên ngoài được chấp nhận.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2547,8 +2590,8 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
                   Không Yêu Cầu Công Cụ Để Truy Cập
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Người dùng phải có thể truy cập thông tin nhãn e mà không cần công cụ 
-                  hoặc phụ kiện (ví dụ: không cho phép tháo thẻ SIM).
+                  Người dùng phải có thể truy cập thông tin nhãn e mà không cần
+                  công cụ hoặc phụ kiện (ví dụ: không cho phép tháo thẻ SIM).
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2556,7 +2599,7 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
                   Lập Trình An Toàn
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Thông tin nhãn e phải được nhúng vào firmware/phần mềm, khóa 
+                  Thông tin nhãn e phải được nhúng vào firmware/phần mềm, khóa
                   chống thay đổi bởi bất kỳ bên thứ ba nào.
                 </TableCell>
               </TableRow>
@@ -2565,8 +2608,8 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
                   Truy Cập Theo Menu
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-lg text-left tracking-wide leading-loose max-w-full">
-                  Người dùng phải truy cập thông tin trong không quá 4 bước thông qua 
-                  giao diện menu của thiết bị.
+                  Người dùng phải truy cập thông tin trong không quá 4 bước
+                  thông qua giao diện menu của thiết bị.
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -2583,19 +2626,23 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        Cách Sun Certifications India Có Thể Giúp Bạn Đăng Ký BIS Dưới Chương 
+        Cách Sun Certifications India Có Thể Giúp Bạn Đăng Ký BIS Dưới Chương
         Trình CRS
       </p>
 
-      <div className="service-left-content-heading-three">Tại Sao Chọn Cố Vấn BIS?</div>
+      <div className="service-left-content-heading-three">
+        Tại Sao Chọn Cố Vấn BIS?
+      </div>
 
       <p className="service-left-content-paragraph">
-        Toàn bộ đăng ký BIS CRS rất kỹ thuật và toàn diện về quy tắc và khối lượng tài liệu. 
-        Thiếu sự hiểu biết thấu đáo về Tiêu Chuẩn Ấn Độ, các QCO gần đây, cấu trúc của 
-        báo cáo kiểm tra và quy trình làm việc trong giao diện cổng, người đăng ký có nguy cơ 
-        mất đáng kể về các hành động tiếp theo như chậm trễ, bị từ chối hoặc không tuân thủ 
-        kéo dài. Đây là nơi Sun Certifications India xuất hiện với một đối tác uy tín và đáng 
-        tin cậy để hỗ trợ người đăng ký trong mọi chi tiết của chương trình chứng nhận bắt buộc.
+        Toàn bộ đăng ký BIS CRS rất kỹ thuật và toàn diện về quy tắc và khối
+        lượng tài liệu. Thiếu sự hiểu biết thấu đáo về Tiêu Chuẩn Ấn Độ, các QCO
+        gần đây, cấu trúc của báo cáo kiểm tra và quy trình làm việc trong giao
+        diện cổng, người đăng ký có nguy cơ mất đáng kể về các hành động tiếp
+        theo như chậm trễ, bị từ chối hoặc không tuân thủ kéo dài. Đây là nơi
+        Sun Certifications India xuất hiện với một đối tác uy tín và đáng tin
+        cậy để hỗ trợ người đăng ký trong mọi chi tiết của chương trình chứng
+        nhận bắt buộc.
       </p>
     </div>
   );

@@ -29,7 +29,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -66,8 +65,7 @@ const ISIMarkMetaTags = () => {
     "Tanda ISI, Sertifikasi Tanda ISI, Sertifikat Tanda ISI, Sertifikasi ISI, Sertifikat ISI, Pendaftaran Tanda ISI, Lisensi ISI, Tanda BIS ISI, Sertifikasi Tanda BIS ISI";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
-  const publisher =
-    "Dhruv Aggarwal, Kepala Operasi di Sun Certification India";
+  const publisher = "Dhruv Aggarwal, Kepala Operasi di Sun Certification India";
 
   return (
     <Helmet>
@@ -151,8 +149,8 @@ const ISIMarkHero = () => {
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
             Sebagai bagian dari visi 'Make in India', sertifikasi BIS membantu
-            produsen memastikan keselamatan, kualitas, dan kepatuhan produk. Dapatkan
-            sertifikasi dan kembangkan merek Anda dengan percaya diri.
+            produsen memastikan keselamatan, kualitas, dan kepatuhan produk.
+            Dapatkan sertifikasi dan kembangkan merek Anda dengan percaya diri.
           </p>
 
           <div className="flex items-center -mt-2">
@@ -284,8 +282,7 @@ const ISIMarkContactForm = () => {
         pageName: getPageName(),
       });
     } catch (error) {
-      const errorMessage =
-        error.response?.data?.message || "Ada yang salah";
+      const errorMessage = error.response?.data?.message || "Ada yang salah";
       toast({
         variant: "destructive",
         title: errorMessage || "Gagal mengirimkan detail formulir kontak!",
@@ -662,62 +659,60 @@ const OverviewSection = () => {
         />
       </div>
       <p className="service-left-content-paragraph">
-        Dalam dinamika pasar saat ini, reputasi merek di pasar saat ini, kepercayaan konsumen memiliki
-        pentingnya yang signifikan. Setiap konsumen
-        menginginkan jaminan mengenai keselamatan dan keandalan suatu produk, bersama
-        dengan langkah-langkah kontrol kualitas yang diambil selama pembuatannya. Biro
-        Standar India menangani masalah dan kekhawatiran ini dengan memastikan
-        tolok ukur kualitas untuk produk yang dijual di India. Sertifikasi Tanda ISI
-        adalah salah satu sertifikat paling terpercaya yang diberikan di bawah
-        BIS.
+        Dalam dinamika pasar saat ini, reputasi merek di pasar saat ini,
+        kepercayaan konsumen memiliki pentingnya yang signifikan. Setiap
+        konsumen menginginkan jaminan mengenai keselamatan dan keandalan suatu
+        produk, bersama dengan langkah-langkah kontrol kualitas yang diambil
+        selama pembuatannya. Biro Standar India menangani masalah dan
+        kekhawatiran ini dengan memastikan tolok ukur kualitas untuk produk yang
+        dijual di India. Sertifikasi Tanda ISI adalah salah satu sertifikat
+        paling terpercaya yang diberikan di bawah BIS.
       </p>
       <p className="service-left-content-paragraph">
-        Untuk produsen domestik, memperoleh Sertifikasi BIS ISI Mark bukan
-        hanya tentang memperoleh sertifikat kepatuhan, tetapi juga tentang
-        mendapatkan penerimaan pasar, kepercayaan merek dan perlindungan hukum. Tanda
-        ISI diakui secara universal dan memperkuat kredibilitas di India
-        ketika menyangkut produksi peralatan listrik, bahan konstruksi,
-        bahan kimia atau barang-barang rumah tangga.
+        Untuk produsen domestik, memperoleh Sertifikasi BIS ISI Mark bukan hanya
+        tentang memperoleh sertifikat kepatuhan, tetapi juga tentang mendapatkan
+        penerimaan pasar, kepercayaan merek dan perlindungan hukum. Tanda ISI
+        diakui secara universal dan memperkuat kredibilitas di India ketika
+        menyangkut produksi peralatan listrik, bahan konstruksi, bahan kimia
+        atau barang-barang rumah tangga.
       </p>
       <p className="service-left-content-paragraph">
-        Artikel ini bertujuan untuk menjelajahi Sertifikasi BIS ISI Mark untuk produsen
-        domestik, secara khusus berfokus pada pentingnya, persyaratan,
+        Artikel ini bertujuan untuk menjelajahi Sertifikasi BIS ISI Mark untuk
+        produsen domestik, secara khusus berfokus pada pentingnya, persyaratan,
         keuntungan, dan seluruh proses perolehan sertifikat.
       </p>
       <h2 className="service-left-content-heading-three">
         Memahami BIS dan Perannya
       </h2>
       <p className="service-left-content-paragraph">
-        Biro Standar India (BIS) adalah badan Standardisasi dan
-        Sertifikasi Nasional di India di bawah Kementerian Urusan Konsumen dan
-        Publik. Sebagai badan pengatur, ia menetapkan dan mempertahankan standar
-        kualitas dan penegakannya di berbagai industri sebagaimana diarahkan di bawah
-        Undang-Undang BIS tahun 1986.
+        Biro Standar India (BIS) adalah badan Standardisasi dan Sertifikasi
+        Nasional di India di bawah Kementerian Urusan Konsumen dan Publik.
+        Sebagai badan pengatur, ia menetapkan dan mempertahankan standar
+        kualitas dan penegakannya di berbagai industri sebagaimana diarahkan di
+        bawah Undang-Undang BIS tahun 1986.
       </p>
       <p className="service-left-content-paragraph">
-        BIS bertindak sebagai otoritas verifikasi pihak ketiga yang mengaudit apakah
-        suatu produk memenuhi standar India tertentu. Sertifikasi BIS
+        BIS bertindak sebagai otoritas verifikasi pihak ketiga yang mengaudit
+        apakah suatu produk memenuhi standar India tertentu. Sertifikasi BIS
         memberikan kepada produsen bukan hanya persyaratan hukum, tetapi juga
         tanda persetujuan kepercayaan dan kredibilitas dari pelanggan.{" "}
       </p>
-      <h2 className="service-left-content-heading-three">
-        Apa itu Tanda ISI?
-      </h2>
+      <h2 className="service-left-content-heading-three">Apa itu Tanda ISI?</h2>
       <p className="service-left-content-paragraph">
-        Sertifikasi tanda ISI (tanda Institut Standar India) adalah
-        tanda sertifikasi tertua dan paling diakui dari Biro
-        Standar India (BIS) di India. Sertifikasi ISI berfokus pada
-        konfirmasi bahwa suatu produk memenuhi persyaratan dasar standar kualitas
-        yang ditetapkan oleh BIS sehubungan dengan keselamatan, kualitas, kinerja dan
-        keandalan.{" "}
+        Sertifikasi tanda ISI (tanda Institut Standar India) adalah tanda
+        sertifikasi tertua dan paling diakui dari Biro Standar India (BIS) di
+        India. Sertifikasi ISI berfokus pada konfirmasi bahwa suatu produk
+        memenuhi persyaratan dasar standar kualitas yang ditetapkan oleh BIS
+        sehubungan dengan keselamatan, kualitas, kinerja dan keandalan.{" "}
       </p>
       <p className="service-left-content-paragraph">
-        Produk yang membawa tanda ISI telah menyelesaikan pengujian laboratorium menyeluruh dan
-        inspeksi pabrik. Ini menjamin bahwa prosedur kontrol kualitas yang tepat
-        sedang diimplementasikan dan diikuti selama tahap
-        produksi. Konsumen dapat memperoleh dan menggunakan produk yang aman dan andal
-        yang diberi label dengan tanda ISI. Tanda ISI adalah alat untuk kepercayaan antara
-        konsumen dan produsen dan tanda ini melampaui standar.
+        Produk yang membawa tanda ISI telah menyelesaikan pengujian laboratorium
+        menyeluruh dan inspeksi pabrik. Ini menjamin bahwa prosedur kontrol
+        kualitas yang tepat sedang diimplementasikan dan diikuti selama tahap
+        produksi. Konsumen dapat memperoleh dan menggunakan produk yang aman dan
+        andal yang diberi label dengan tanda ISI. Tanda ISI adalah alat untuk
+        kepercayaan antara konsumen dan produsen dan tanda ini melampaui
+        standar.
       </p>
       <p className="service-left-content-paragraph">
         Beberapa contoh produk yang memerlukan sertifikasi ISI wajib adalah
@@ -732,12 +727,11 @@ const OverviewSection = () => {
         ]}
       />
       <p className="service-left-content-paragraph">
-        Ada lebih dari 650 produk yang memerlukan sertifikasi BIS wajib
-        untuk menggunakan tanda standar (Tanda ISI) menurut Skema I
-        Jadwal I dari Biro Standar India. Produk yang dikelola di bawah
-        skema sertifikasi wajib tidak dapat diproduksi, diimpor atau dijual
-        di pasar India tanpa tanda ISI. Daftar produk wajib
-        dapat diakses di{" "}
+        Ada lebih dari 650 produk yang memerlukan sertifikasi BIS wajib untuk
+        menggunakan tanda standar (Tanda ISI) menurut Skema I Jadwal I dari Biro
+        Standar India. Produk yang dikelola di bawah skema sertifikasi wajib
+        tidak dapat diproduksi, diimpor atau dijual di pasar India tanpa tanda
+        ISI. Daftar produk wajib dapat diakses di{" "}
         <a
           href="#product-table"
           onClick={(e) => {
@@ -757,13 +751,14 @@ const OverviewSection = () => {
         Apa Perbedaan Antara Sertifikasi BIS dan Tanda ISI?
       </h2>
       <p className="service-left-content-paragraph">
-        Meskipun sering membingungkan dan digunakan sebagai sinonim, Sertifikasi BIS dan Tanda ISI
-        memiliki definisi dan tujuan tertentu:
+        Meskipun sering membingungkan dan digunakan sebagai sinonim, Sertifikasi
+        BIS dan Tanda ISI memiliki definisi dan tujuan tertentu:
       </p>
       <p className="service-left-content-paragraph">
         <strong>Sertifikasi BIS :</strong> Proses pemberian persetujuan kepada
-        suatu produk setelah memastikan bahwa produk tersebut memenuhi Standar India yang diperlukan. Ini
-        adalah kerangka di mana penilaian kesesuaian dikelola.
+        suatu produk setelah memastikan bahwa produk tersebut memenuhi Standar
+        India yang diperlukan. Ini adalah kerangka di mana penilaian kesesuaian
+        dikelola.
       </p>
 
       <p className="service-left-content-paragraph">
@@ -773,8 +768,8 @@ const OverviewSection = () => {
         Standar India yang diperlukan.
       </p>
       <p className="service-left-content-paragraph">
-        Dengan cara ini, ISI merupakan komitmen sertifikasi fisik,
-        sementara sertifikasi BIS menawarkan kerangka administratif yang diperlukan.{" "}
+        Dengan cara ini, ISI merupakan komitmen sertifikasi fisik, sementara
+        sertifikasi BIS menawarkan kerangka administratif yang diperlukan.{" "}
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -787,48 +782,51 @@ const OverviewSection = () => {
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>1. Jaminan Kualitas:</strong> Tanda ISI menandakan bahwa produk telah
-        lulus pengujian dan inspeksi yang ketat, sehingga mempertahankan standar
-        kualitas tertinggi yang ditetapkan. Ini, pada gilirannya, meningkatkan keandalan
-        dan keandalan produk sambil meminimalkan kemungkinan cacat.
+        <strong>1. Jaminan Kualitas:</strong> Tanda ISI menandakan bahwa produk
+        telah lulus pengujian dan inspeksi yang ketat, sehingga mempertahankan
+        standar kualitas tertinggi yang ditetapkan. Ini, pada gilirannya,
+        meningkatkan keandalan dan keandalan produk sambil meminimalkan
+        kemungkinan cacat.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>2. Kepercayaan Konsumen:</strong> Produk yang diberi label dengan tanda ISI
-        umumnya dianggap aman dan efektif. Ini
-        berkontribusi pada loyalitas merek, dan dengan demikian merek yang lebih kuat dan terpercaya.
+        <strong>2. Kepercayaan Konsumen:</strong> Produk yang diberi label
+        dengan tanda ISI umumnya dianggap aman dan efektif. Ini berkontribusi
+        pada loyalitas merek, dan dengan demikian merek yang lebih kuat dan
+        terpercaya.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>3. Akses ke Pasar:</strong> Pasar India memiliki
-        banyak item yang dilarang keras jika seseorang tidak memiliki
-        sertifikat ISI yang valid. Dalam kasus seperti itu, tanda ISI berfungsi sebagai
-        gerbang untuk memfasilitasi penjualan.
+        <strong>3. Akses ke Pasar:</strong> Pasar India memiliki banyak item
+        yang dilarang keras jika seseorang tidak memiliki sertifikat ISI yang
+        valid. Dalam kasus seperti itu, tanda ISI berfungsi sebagai gerbang
+        untuk memfasilitasi penjualan.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>4. Mendapatkan Penerimaan Pasar:</strong> Dalam lingkungan yang sangat
-        kompetitif, produk yang disertifikasi ISI dianggap memiliki
-        reputasi positif, sehingga memiliki keunggulan kompetitif yang lebih tinggi dibandingkan
-        dengan yang tidak disertifikasi.
+        <strong>4. Mendapatkan Penerimaan Pasar:</strong> Dalam lingkungan yang
+        sangat kompetitif, produk yang disertifikasi ISI dianggap memiliki
+        reputasi positif, sehingga memiliki keunggulan kompetitif yang lebih
+        tinggi dibandingkan dengan yang tidak disertifikasi.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>5. Kepatuhan Regulasi:</strong> Standar BIS sedemikian rupa sehingga
-        produsen yang produknya selaras dengan standar tersebut memiliki operasi
-        yang lancar, tanpa hambatan, bebas dari kompleksitas hukum.
+        <strong>5. Kepatuhan Regulasi:</strong> Standar BIS sedemikian rupa
+        sehingga produsen yang produknya selaras dengan standar tersebut
+        memiliki operasi yang lancar, tanpa hambatan, bebas dari kompleksitas
+        hukum.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>6. Promosi Ekspor:</strong> Produk yang disertifikasi ISI
-        dan dengan demikian memiliki reputasi merek yang kuat lebih cenderung disukai
-        oleh pasar asing karena persepsi bahwa produk tersebut berkualitas tinggi dan
-        memenuhi standar global.
+        <strong>6. Promosi Ekspor:</strong> Produk yang disertifikasi ISI dan
+        dengan demikian memiliki reputasi merek yang kuat lebih cenderung
+        disukai oleh pasar asing karena persepsi bahwa produk tersebut
+        berkualitas tinggi dan memenuhi standar global.
       </p>
 
       <p className="service-left-content-paragraph">
-        <strong>7. Keselamatan Konsumen:</strong> Produk apa pun dengan sertifikasi ISI
-        menjamin keselamatan konsumen dari potensi bahaya,
+        <strong>7. Keselamatan Konsumen:</strong> Produk apa pun dengan
+        sertifikasi ISI menjamin keselamatan konsumen dari potensi bahaya,
         kecelakaan, atau kinerja produk yang buruk.
       </p>
 
@@ -871,8 +869,8 @@ const RequirementSection = () => {
       </h2>
       <p className="service-left-content-paragraph">
         Mengamankan sertifikasi BIS adalah proses multi-langkah. Ada dua
-        prosedur utama untuk mendekati proses sertifikasi BIS: Prosedur
-        Normal dan Prosedur Sederhana.{" "}
+        prosedur utama untuk mendekati proses sertifikasi BIS: Prosedur Normal
+        dan Prosedur Sederhana.{" "}
       </p>
       <h3 className="service-left-content-heading-three">
         1. Prosedur Normal (60-65 Hari)
@@ -942,8 +940,8 @@ const DocumentsSection = () => {
         Manfaat Sertifikasi BIS ISI Mark
       </h3>
       <p className="service-left-content-paragraph">
-        Untuk produsen India, memperoleh Sertifikasi BIS ISI Mark
-        memberikan keuntungan spesifik:
+        Untuk produsen India, memperoleh Sertifikasi BIS ISI Mark memberikan
+        keuntungan spesifik:
       </p>
       <PointsListWithoutHeading
         points={[
@@ -960,8 +958,8 @@ const DocumentsSection = () => {
         Pencabutan Lisensi BIS{" "}
       </h3>
       <p className="service-left-content-paragraph">
-        Lisensi untuk menyertifikasi adalah kepemilikan eksklusif dari otoritas BIS dan itu
-        dapat membatalkan lisensi tersebut jika:
+        Lisensi untuk menyertifikasi adalah kepemilikan eksklusif dari otoritas
+        BIS dan itu dapat membatalkan lisensi tersebut jika:
       </p>
       <PointsListWithoutHeading
         points={[
@@ -972,9 +970,9 @@ const DocumentsSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Menurut Peraturan 11 dari Peraturan BIS (Penilaian Kesesuaian),
-        2018, tidak ada keraguan bahwa lisensi dapat ditangguhkan atau dibatalkan karena
-        kegagalan untuk mematuhi peraturan yang dicatat.
+        Menurut Peraturan 11 dari Peraturan BIS (Penilaian Kesesuaian), 2018,
+        tidak ada keraguan bahwa lisensi dapat ditangguhkan atau dibatalkan
+        karena kegagalan untuk mematuhi peraturan yang dicatat.
       </p>
     </div>
   );
@@ -992,26 +990,26 @@ const ConclusionSection = () => {
       <h2 className="service-left-content-heading-two">Kesimpulan</h2>
 
       <p className="service-left-content-paragraph">
-        Untuk Sertifikasi BIS ISI Mark, sekali lagi, tidak ada keraguan bahwa ini memiliki
-        lebih dari sekadar langkah-langkah birokrasi untuk produsen di India. Ini membantu
-        dalam membangun reputasi positif dan mencapai pertumbuhan berkelanjutan
-        dalam bisnis. Jika standar BIS dipatuhi, maka ada
-        jaminan sertifikasi maksimal bahwa produk dapat diandalkan dan siap untuk
-        dijual.
+        Untuk Sertifikasi BIS ISI Mark, sekali lagi, tidak ada keraguan bahwa
+        ini memiliki lebih dari sekadar langkah-langkah birokrasi untuk produsen
+        di India. Ini membantu dalam membangun reputasi positif dan mencapai
+        pertumbuhan berkelanjutan dalam bisnis. Jika standar BIS dipatuhi, maka
+        ada jaminan sertifikasi maksimal bahwa produk dapat diandalkan dan siap
+        untuk dijual.
       </p>
 
       <p className="service-left-content-paragraph">
         Sebagai kesimpulan, tanda ISI telah menjadi lebih dari sekadar kepatuhan
-        hukum, ia telah menjadi tanda jaminan dalam lingkungan bisnis
-        di mana kepercayaan sulit didapat. Ini adalah tanda daya saing di
-        pasar bersama dengan kepatuhan terhadap peraturan.
+        hukum, ia telah menjadi tanda jaminan dalam lingkungan bisnis di mana
+        kepercayaan sulit didapat. Ini adalah tanda daya saing di pasar bersama
+        dengan kepatuhan terhadap peraturan.
       </p>
 
       <p className="service-left-content-paragraph">
-        Tidak peduli apakah Anda memproduksi produk elektronik, elemen bangunan, atau
-        produk lain untuk dijual, Sertifikasi BIS ISI memastikan produk Anda
-        selaras dengan standar kelas atas India sambil melindungi
-        reputasi Anda serta konsumen Anda.
+        Tidak peduli apakah Anda memproduksi produk elektronik, elemen bangunan,
+        atau produk lain untuk dijual, Sertifikasi BIS ISI memastikan produk
+        Anda selaras dengan standar kelas atas India sambil melindungi reputasi
+        Anda serta konsumen Anda.
       </p>
     </div>
   );
@@ -1030,7 +1028,8 @@ const ISIMarkFaq = () => {
         "Lisensi BIS adalah dokumen hukum yang mengotorisasi produsen untuk menggunakan tanda ISI. Tanda ISI adalah label yang terlihat pada produk yang menunjukkan sertifikasi BIS.",
     },
     {
-      question: "Berapa lama waktu yang dibutuhkan untuk mendapatkan sertifikasi BIS?",
+      question:
+        "Berapa lama waktu yang dibutuhkan untuk mendapatkan sertifikasi BIS?",
       answer:
         "Biasanya, 6 hingga 10 minggu tergantung pada jenis produk, persyaratan pengujian, dan hasil audit",
     },
@@ -1050,7 +1049,8 @@ const ISIMarkFaq = () => {
         "Tidak. Ini wajib hanya untuk produk yang tercantum di bawah skema 1 sertifikasi BIS.",
     },
     {
-      question: "Bagaimana saya dapat menemukan standar IS yang tepat untuk produk saya?",
+      question:
+        "Bagaimana saya dapat menemukan standar IS yang tepat untuk produk saya?",
       answer:
         "Kunjungi situs web BIS atau konsultasikan dengan laboratorium pengujian dan konsultan yang diakui BIS untuk mengidentifikasi standar yang berlaku.",
     },
@@ -1159,8 +1159,9 @@ const ISIMarkServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1289,4 +1290,3 @@ const PointsListWithoutHeading = ({ points }) => {
     </div>
   );
 };
-

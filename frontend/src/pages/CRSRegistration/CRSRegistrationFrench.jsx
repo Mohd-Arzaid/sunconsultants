@@ -35,7 +35,6 @@ import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -93,7 +92,9 @@ const CRSRegistrationMetaTags = () => {
   return (
     <Helmet>
       {/* Basic Meta Tags */}
-      <title>Enregistrement BIS - Schéma d'Enregistrement Obligatoire (CRS)</title>
+      <title>
+        Enregistrement BIS - Schéma d'Enregistrement Obligatoire (CRS)
+      </title>
       <meta
         name="description"
         content="L'enregistrement BIS consiste à obtenir une licence du BIS pour les produits électroniques et informatiques qui sont conformes aux normes indiennes applicables dans le cadre du schéma CRS."
@@ -196,7 +197,9 @@ const CRSRegistrationHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Obligatoire pour les produits électroniques afin d'assurer la sécurité et la qualité. Obtenez l'approbation BIS avec l'aide d'experts !
+            Obligatoire pour les produits électroniques afin d'assurer la
+            sécurité et la qualité. Obtenez l'approbation BIS avec l'aide
+            d'experts !
           </p>
 
           <div className="flex items-center -mt-2">
@@ -333,7 +336,8 @@ const CRSRegistrationHeroContactForm = () => {
         error.response?.data?.message || "Quelque chose s'est mal passé";
       toast({
         variant: "destructive",
-        title: errorMessage || "Échec de la soumission du formulaire de contact !",
+        title:
+          errorMessage || "Échec de la soumission du formulaire de contact !",
         description:
           "Quelque chose s'est mal passé. Veuillez vérifier vos détails et réessayer.",
       });
@@ -564,8 +568,9 @@ const CRSRegistrationIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -615,10 +620,11 @@ const CRSRegistrationIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -638,18 +644,20 @@ const CRSRegistrationIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -683,18 +691,34 @@ const CRSRegistrationMainContentLeft = () => {
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
-          <h2 className="service-left-content-heading-two">Qu'est-ce que l'enregistrement BIS ?</h2>
+          <h2 className="service-left-content-heading-two">
+            Qu'est-ce que l'enregistrement BIS ?
+          </h2>
 
           <p className="service-left-content-paragraph">
-            Le Bureau des normes indiennes (BIS) est l'organisme national de normalisation en Inde et fonctionne sous l'égide du ministère des Affaires des consommateurs, de l'Alimentation et de la distribution publique du gouvernement indien. Le BIS est responsable du maintien des références de qualité, de sécurité et de performance pour divers produits et services en Inde conformément aux normes indiennes (IS) pertinentes.
+            Le Bureau des normes indiennes (BIS) est l'organisme national de
+            normalisation en Inde et fonctionne sous l'égide du ministère des
+            Affaires des consommateurs, de l'Alimentation et de la distribution
+            publique du gouvernement indien. Le BIS est responsable du maintien
+            des références de qualité, de sécurité et de performance pour divers
+            produits et services en Inde conformément aux normes indiennes (IS)
+            pertinentes.
           </p>
 
           <p className="service-left-content-paragraph">
-            Le BIS est responsable de la supervision et de la mise en œuvre de divers schémas en Inde. Le Schéma d'enregistrement obligatoire (CRS) est un schéma de certification très important et obligatoire du BIS couvrant diverses catégories de produits électroniques et informatiques.
+            Le BIS est responsable de la supervision et de la mise en œuvre de
+            divers schémas en Inde. Le Schéma d'enregistrement obligatoire (CRS)
+            est un schéma de certification très important et obligatoire du BIS
+            couvrant diverses catégories de produits électroniques et
+            informatiques.
           </p>
 
           <p className="service-left-content-paragraph">
-            Les performances et la sécurité des produits indiens sont un problème important pour l'Inde. La certification BIS CRS garantit que les produits électroniques et informatiques sont conformes aux normes indiennes et aide à protéger les consommateurs contre les produits non conformes et de qualité inférieure.
+            Les performances et la sécurité des produits indiens sont un
+            problème important pour l'Inde. La certification BIS CRS garantit
+            que les produits électroniques et informatiques sont conformes aux
+            normes indiennes et aide à protéger les consommateurs contre les
+            produits non conformes et de qualité inférieure.
           </p>
         </div>
 
@@ -753,11 +777,21 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Le Schéma d'enregistrement obligatoire (CRS) est un schéma d'enregistrement de produits BIS qui a été lancé en 2012 et était principalement axé sur les produits électroniques. Au fil des ans, alors que plus de produits ont été publiés, le CRS a été étendu pour inclure une gamme plus large de catégories de produits, qui incluent les produits électriques tels que les appareils, l'équipement solaire, les batteries et plus encore. L'enregistrement CRS est obligatoire pour les produits spécifiés dans les ordonnances de contrôle de qualité (QCO) émises par différents ministères.
+        Le Schéma d'enregistrement obligatoire (CRS) est un schéma
+        d'enregistrement de produits BIS qui a été lancé en 2012 et était
+        principalement axé sur les produits électroniques. Au fil des ans, alors
+        que plus de produits ont été publiés, le CRS a été étendu pour inclure
+        une gamme plus large de catégories de produits, qui incluent les
+        produits électriques tels que les appareils, l'équipement solaire, les
+        batteries et plus encore. L'enregistrement CRS est obligatoire pour les
+        produits spécifiés dans les ordonnances de contrôle de qualité (QCO)
+        émises par différents ministères.
       </p>
 
       <p className="service-left-content-paragraph">
-        Tout produit qui relève du schéma CRS obligatoire doit être vendu, importé ou distribué en Inde seulement après avoir obtenu l'enregistrement auprès du BIS.
+        Tout produit qui relève du schéma CRS obligatoire doit être vendu,
+        importé ou distribué en Inde seulement après avoir obtenu
+        l'enregistrement auprès du BIS.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -765,7 +799,9 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        En 2012, le premier QCO sous le schéma CRS a été publié et s'est concentré sur l'équipement électronique et informatique. Depuis lors, des QCO supplémentaires ont été émis dans les secteurs suivants :
+        En 2012, le premier QCO sous le schéma CRS a été publié et s'est
+        concentré sur l'équipement électronique et informatique. Depuis lors,
+        des QCO supplémentaires ont été émis dans les secteurs suivants :
       </p>
 
       <PointsListWithoutHeading
@@ -780,7 +816,9 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        La liste pour la certification CRS s'étend rapidement, il est donc très important pour les fabricants d'être proactifs et conscients des mises à jour récentes.
+        La liste pour la certification CRS s'étend rapidement, il est donc très
+        important pour les fabricants d'être proactifs et conscients des mises à
+        jour récentes.
       </p>
     </div>
   );
@@ -804,21 +842,32 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
       </p>
 
       <p className="service-left-content-paragraph">
-        En Inde, un certificat BIS sous le Schéma d'enregistrement obligatoire (CRS) ne peut être accordé qu'aux fabricants qui répondent aux exigences établies par le Bureau des normes indiennes. Ceci est pour s'assurer que seuls les fabricants authentiques obtiennent le privilège de pouvoir s'enregistrer ainsi que d'apposer le logo BIS CRS sur leurs produits.
+        En Inde, un certificat BIS sous le Schéma d'enregistrement obligatoire
+        (CRS) ne peut être accordé qu'aux fabricants qui répondent aux exigences
+        établies par le Bureau des normes indiennes. Ceci est pour s'assurer que
+        seuls les fabricants authentiques obtiennent le privilège de pouvoir
+        s'enregistrer ainsi que d'apposer le logo BIS CRS sur leurs produits.
       </p>
 
-      <div className="service-left-content-heading-three">Liste de vérification des critères d'éligibilité</div>
+      <div className="service-left-content-heading-three">
+        Liste de vérification des critères d'éligibilité
+      </div>
 
       <p className="service-left-content-paragraph">
-        Le demandeur doit être un fabricant - Seul le fabricant original (pas le commerçant ou le revendeur) du produit est éligible pour faire une demande.
+        Le demandeur doit être un fabricant - Seul le fabricant original (pas le
+        commerçant ou le revendeur) du produit est éligible pour faire une
+        demande.
       </p>
 
       <p className="service-left-content-paragraph">
-        L'emplacement peut être indien ou étranger - Les fabricants indiens et les marques internationales peuvent tous deux faire une demande.
+        L'emplacement peut être indien ou étranger - Les fabricants indiens et
+        les marques internationales peuvent tous deux faire une demande.
       </p>
 
       <p className="service-left-content-paragraph">
-        AIR (Représentant indien autorisé) - Les fabricants étrangers doivent nommer un AIR - soit leur succursale indienne ou un tiers formellement autorisé.
+        AIR (Représentant indien autorisé) - Les fabricants étrangers doivent
+        nommer un AIR - soit leur succursale indienne ou un tiers formellement
+        autorisé.
       </p>
     </div>
   );
@@ -842,11 +891,20 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        Le remplissage de la demande d'enregistrement BIS CRS est entièrement numérique, cependant, il nécessite encore des documents entièrement complétés pour obtenir l'approbation. Chaque erreur mineure et un échec à respecter tout aspect, tel que le type de document, les formats incorrects ou les mauvais types de fichiers peuvent causer le rejet ou le retard de la demande.
+        Le remplissage de la demande d'enregistrement BIS CRS est entièrement
+        numérique, cependant, il nécessite encore des documents entièrement
+        complétés pour obtenir l'approbation. Chaque erreur mineure et un échec
+        à respecter tout aspect, tel que le type de document, les formats
+        incorrects ou les mauvais types de fichiers peuvent causer le rejet ou
+        le retard de la demande.
       </p>
 
       <p className="service-left-content-paragraph">
-        Pour un traitement approprié et plus rapide des documents BIS, il est nécessaire d'avoir les documents appropriés avec vous à chaque étape. Avoir les documents appropriés prêts garantit que votre certificat BIS est traité à temps et reste légalement clair de tout audit de conformité, inspection douanière ou approbation de marché.
+        Pour un traitement approprié et plus rapide des documents BIS, il est
+        nécessaire d'avoir les documents appropriés avec vous à chaque étape.
+        Avoir les documents appropriés prêts garantit que votre certificat BIS
+        est traité à temps et reste légalement clair de tout audit de
+        conformité, inspection douanière ou approbation de marché.
       </p>
 
       <div className="service-left-content-heading-three">
@@ -854,13 +912,16 @@ const CRSRegistrationMainContentLeftDocumentsSection = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        • Preuve d'adresse du fabricant - Bail d'usine, facture d'utilité ou licence
+        • Preuve d'adresse du fabricant - Bail d'usine, facture d'utilité ou
+        licence
       </p>
       <p className="service-left-content-paragraph">
-        • Rapport d'essai d'un laboratoire approuvé par le BIS - Doit être récent (dans les 90 jours) et référencer le code IS
+        • Rapport d'essai d'un laboratoire approuvé par le BIS - Doit être
+        récent (dans les 90 jours) et référencer le code IS
       </p>
       <p className="service-left-content-paragraph">
-        • Engagements (selon le format BIS) - Inclut la responsabilité, la conformité et la responsabilité du produit
+        • Engagements (selon le format BIS) - Inclut la responsabilité, la
+        conformité et la responsabilité du produit
       </p>
       <p className="service-left-content-paragraph">
         • Certificat de marque - Requis si la marque est enregistrée
@@ -877,14 +938,23 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
     <div id="registration" className="flex flex-col scroll-mt-20">
       {/* Registration */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Processus d'enregistrement</span>
+        <span className="service-left-content-index-heading">
+          Processus d'enregistrement
+        </span>
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Processus d'enregistrement BIS CRS</h2>
+      <h2 className="service-left-content-heading-two">
+        Processus d'enregistrement BIS CRS
+      </h2>
 
       <p className="service-left-content-paragraph">
-        L'enregistrement BIS CRS est un processus entièrement en ligne via le portail d'enregistrement BIS. Il ne s'agit pas uniquement de procédures qui incluent le téléchargement de documents. Il nécessite également une attention particulière de nature technique, la compréhension des réglementations, ainsi qu'une conformité totale avec la norme indienne (IS).
+        L'enregistrement BIS CRS est un processus entièrement en ligne via le
+        portail d'enregistrement BIS. Il ne s'agit pas uniquement de procédures
+        qui incluent le téléchargement de documents. Il nécessite également une
+        attention particulière de nature technique, la compréhension des
+        réglementations, ainsi qu'une conformité totale avec la norme indienne
+        (IS).
       </p>
 
       <div className="service-left-content-heading-three">
@@ -899,7 +969,9 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <div className="service-left-content-heading-three">Étape 2 : Préparation des documents</div>
+      <div className="service-left-content-heading-three">
+        Étape 2 : Préparation des documents
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -934,10 +1006,14 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        S'il s'agit d'une requête de clarification, elle doit être répondue dans les 30 jours, sinon la demande va aux fichiers d'archive, ce qui signifie rejetée.
+        S'il s'agit d'une requête de clarification, elle doit être répondue dans
+        les 30 jours, sinon la demande va aux fichiers d'archive, ce qui
+        signifie rejetée.
       </p>
 
-      <div className="service-left-content-heading-three">Étape 5 : Octroi de l'enregistrement BIS</div>
+      <div className="service-left-content-heading-three">
+        Étape 5 : Octroi de l'enregistrement BIS
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -945,7 +1021,9 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-paragraph">Votre certificat inclura :</p>
+      <p className="service-left-content-paragraph">
+        Votre certificat inclura :
+      </p>
 
       <PointsListWithoutHeading
         points={[
@@ -956,7 +1034,9 @@ const CRSRegistrationMainContentLeftRegistrationSection = () => {
         ]}
       />
 
-      <div className="service-left-content-heading-three">Étape 6 : Étiquetage et distribution</div>
+      <div className="service-left-content-heading-three">
+        Étape 6 : Étiquetage et distribution
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -976,7 +1056,9 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
     <div id="fees" className="flex flex-col scroll-mt-20">
       {/* Fees */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Frais d'enregistrement</span>
+        <span className="service-left-content-index-heading">
+          Frais d'enregistrement
+        </span>
         <Separator className="service-left-content-separator" />
       </div>
 
@@ -985,37 +1067,51 @@ const CRSRegistrationMainContentLeftFeesSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Pour obtenir un certificat BIS sous le CRS, le demandeur est tenu de payer les frais gouvernementaux ainsi que le paiement pour que le produit soit testé. Même si le processus est en ligne et que l'interface est rationalisée, de nombreux demandeurs font face à des retards sur leurs demandes et des rejets dus au sous-paiement et aux demandes mal déposées.
+        Pour obtenir un certificat BIS sous le CRS, le demandeur est tenu de
+        payer les frais gouvernementaux ainsi que le paiement pour que le
+        produit soit testé. Même si le processus est en ligne et que l'interface
+        est rationalisée, de nombreux demandeurs font face à des retards sur
+        leurs demandes et des rejets dus au sous-paiement et aux demandes mal
+        déposées.
       </p>
 
-      <h3 className="service-left-content-heading-three">Structure des frais pour l'enregistrement CRS</h3>
+      <h3 className="service-left-content-heading-three">
+        Structure des frais pour l'enregistrement CRS
+      </h3>
 
       <p className="service-left-content-paragraph">
         • Frais gouvernementaux : ₹53,000 + 18% TPS par rapport d'essai
       </p>
       <p className="service-left-content-paragraph">
-        • Frais d'essai : ₹10,000 – ₹20,000 + 18% TPS (varie selon le produit/laboratoire)
+        • Frais d'essai : ₹10,000 – ₹20,000 + 18% TPS (varie selon le
+        produit/laboratoire)
       </p>
       <p className="service-left-content-paragraph">
-        • Rapport supplémentaire dans la même demande : ₹20,000 + 18% TPS par rapport
+        • Rapport supplémentaire dans la même demande : ₹20,000 + 18% TPS par
+        rapport
       </p>
       <p className="service-left-content-paragraph">
         • Frais de renouvellement : ₹53,000 + 18% TPS
       </p>
 
-      <h3 className="service-left-content-heading-three">Validité et renouvellement du certificat CRS</h3>
+      <h3 className="service-left-content-heading-three">
+        Validité et renouvellement du certificat CRS
+      </h3>
 
       <p className="service-left-content-paragraph">
         • Validité initiale : 2 ans
       </p>
       <p className="service-left-content-paragraph">
-        • Durée de renouvellement : Jusqu'à 5 ans (si aucun changement de produit)
+        • Durée de renouvellement : Jusqu'à 5 ans (si aucun changement de
+        produit)
       </p>
       <p className="service-left-content-paragraph">
-        • Processus de renouvellement : En ligne, basé sur une nouvelle déclaration sous serment + frais de renouvellement
+        • Processus de renouvellement : En ligne, basé sur une nouvelle
+        déclaration sous serment + frais de renouvellement
       </p>
       <p className="service-left-content-paragraph">
-        • Nouveau test requis ? : Non sauf si les spécifications du produit/norme IS changent
+        • Nouveau test requis ? : Non sauf si les spécifications du
+        produit/norme IS changent
       </p>
     </div>
   );
@@ -1026,7 +1122,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
     <div id="elabelling" className="flex flex-col scroll-mt-20">
       {/* E-Labelling */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Étiquetage électronique</span>
+        <span className="service-left-content-index-heading">
+          Étiquetage électronique
+        </span>
         <Separator className="service-left-content-separator" />
       </div>
 
@@ -1034,41 +1132,74 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         Directives d'étiquetage électronique pour les produits certifiés CRS
       </div>
 
-      <div className="service-left-content-heading-three">Qu'est-ce que l'étiquetage électronique ?</div>
+      <div className="service-left-content-heading-three">
+        Qu'est-ce que l'étiquetage électronique ?
+      </div>
 
       <p className="service-left-content-paragraph">
-        L'étiquetage électronique est la pratique d'afficher les informations réglementaires dans un dispositif électroniquement au lieu de les imprimer et de les apposer sur le dispositif. Sous le Schéma d'enregistrement obligatoire (CRS) du BIS, les produits spécifiés, en particulier les dispositifs compacts ou numériques, sont capables d'afficher les détails du certificat BIS, la marque standard et le code IS via l'interface logicielle ou l'emballage numérique.
+        L'étiquetage électronique est la pratique d'afficher les informations
+        réglementaires dans un dispositif électroniquement au lieu de les
+        imprimer et de les apposer sur le dispositif. Sous le Schéma
+        d'enregistrement obligatoire (CRS) du BIS, les produits spécifiés, en
+        particulier les dispositifs compacts ou numériques, sont capables
+        d'afficher les détails du certificat BIS, la marque standard et le code
+        IS via l'interface logicielle ou l'emballage numérique.
       </p>
 
-      <h3 className="service-left-content-heading-three">Exigences pour l'étiquetage électronique :</h3>
+      <h3 className="service-left-content-heading-three">
+        Exigences pour l'étiquetage électronique :
+      </h3>
 
       <p className="service-left-content-paragraph">
-        • Étiquette physique sur l'emballage - La boîte du produit ou l'emballage externe doit afficher le logo BIS CRS et les détails d'enregistrement.
+        • Étiquette physique sur l'emballage - La boîte du produit ou
+        l'emballage externe doit afficher le logo BIS CRS et les détails
+        d'enregistrement.
       </p>
       <p className="service-left-content-paragraph">
-        • Étiquettes amovibles pour l'emballage en vrac - Si les produits sont expédiés en vrac, une étiquette adhésive amovible sur l'emballage extérieur est acceptable.
+        • Étiquettes amovibles pour l'emballage en vrac - Si les produits sont
+        expédiés en vrac, une étiquette adhésive amovible sur l'emballage
+        extérieur est acceptable.
       </p>
       <p className="service-left-content-paragraph">
-        • Aucun outil nécessaire pour l'accès - Les utilisateurs doivent pouvoir accéder aux informations d'étiquette électronique sans avoir besoin d'outils ou d'accessoires.
+        • Aucun outil nécessaire pour l'accès - Les utilisateurs doivent pouvoir
+        accéder aux informations d'étiquette électronique sans avoir besoin
+        d'outils ou d'accessoires.
       </p>
       <p className="service-left-content-paragraph">
-        • Programmation sécurisée - Les informations d'étiquette électronique doivent être intégrées dans le firmware/logiciel, verrouillées contre la modification par tout tiers.
+        • Programmation sécurisée - Les informations d'étiquette électronique
+        doivent être intégrées dans le firmware/logiciel, verrouillées contre la
+        modification par tout tiers.
       </p>
       <p className="service-left-content-paragraph">
-        • Accès basé sur le menu - Les utilisateurs doivent accéder aux informations en pas plus de 4 étapes via l'interface de menu du dispositif.
+        • Accès basé sur le menu - Les utilisateurs doivent accéder aux
+        informations en pas plus de 4 étapes via l'interface de menu du
+        dispositif.
       </p>
       <p className="service-left-content-paragraph">
-        • Instructions requises - Des instructions sur la façon d'accéder aux détails d'étiquette électronique doivent être fournies.
+        • Instructions requises - Des instructions sur la façon d'accéder aux
+        détails d'étiquette électronique doivent être fournies.
       </p>
 
       <p className="service-left-content-paragraph">
-        Comment Sun Certifications India peut vous aider avec l'enregistrement BIS sous le schéma CRS
+        Comment Sun Certifications India peut vous aider avec l'enregistrement
+        BIS sous le schéma CRS
       </p>
 
-      <div className="service-left-content-heading-three">Pourquoi choisir un consultant BIS ?</div>
+      <div className="service-left-content-heading-three">
+        Pourquoi choisir un consultant BIS ?
+      </div>
 
       <p className="service-left-content-paragraph">
-        L'ensemble de l'enregistrement BIS CRS est très technique et exhaustif en ce qui concerne les règles et le volume de documentation. En l'absence d'une compréhension approfondie des normes indiennes, des QCO récents, de la structure du rapport d'essai et des flux de travail dans l'interface du portail, les demandeurs risquent de perdre considérablement en termes d'actions ultérieures de retards, de rejet ou de non-conformité active de longue durée. C'est là que Sun Certifications India intervient avec un associé réputé et fiable pour aider le demandeur dans chaque détail du schéma de certification obligatoire.
+        L'ensemble de l'enregistrement BIS CRS est très technique et exhaustif
+        en ce qui concerne les règles et le volume de documentation. En
+        l'absence d'une compréhension approfondie des normes indiennes, des QCO
+        récents, de la structure du rapport d'essai et des flux de travail dans
+        l'interface du portail, les demandeurs risquent de perdre
+        considérablement en termes d'actions ultérieures de retards, de rejet ou
+        de non-conformité active de longue durée. C'est là que Sun
+        Certifications India intervient avec un associé réputé et fiable pour
+        aider le demandeur dans chaque détail du schéma de certification
+        obligatoire.
       </p>
     </div>
   );
@@ -1153,7 +1284,8 @@ const CRSRegistrationServiceFaq = () => {
     },
     {
       id: "item-10",
-      question: "10. La certification BIS peut-elle être obtenue volontairement ?",
+      question:
+        "10. La certification BIS peut-elle être obtenue volontairement ?",
       answer:
         "Non. Sous CRS, vous ne pouvez pas faire de demande volontaire pour des produits qui ne sont pas listés sous les QCO. La certification volontaire n'est applicable que pour les produits non-CRS via le schéma ISI.",
     },
@@ -1171,13 +1303,15 @@ const CRSRegistrationServiceFaq = () => {
     },
     {
       id: "item-13",
-      question: "13. Que se passe-t-il si je n'obtiens pas l'enregistrement BIS pour un produit obligatoire ?",
+      question:
+        "13. Que se passe-t-il si je n'obtiens pas l'enregistrement BIS pour un produit obligatoire ?",
       answer:
         "Sanctions sévères, y compris : <br />Saisie du produit <br />Rejets douaniers <br />Amendes légales <br />Radiation des portails e-commerce <br />Interdiction permanente du marché indien",
     },
     {
       id: "item-14",
-      question: "14. Un certificat BIS peut-il couvrir plusieurs modèles ou marques ?",
+      question:
+        "14. Un certificat BIS peut-il couvrir plusieurs modèles ou marques ?",
       answer:
         "Non. Chaque marque et emplacement d'usine doit être certifié séparément. Plusieurs modèles peuvent être ajoutés en utilisant des rapports supplémentaires, mais seulement sous la même demande et marque.",
     },
@@ -1294,7 +1428,8 @@ const productsData = [
   },
   {
     id: 5,
-    product: "SYSTÈMES MUSICAUX ÉLECTRONIQUES AVEC PUISSANCE D'ENTRÉE 200W ET PLUS",
+    product:
+      "SYSTÈMES MUSICAUX ÉLECTRONIQUES AVEC PUISSANCE D'ENTRÉE 200W ET PLUS",
     isNumber: "IS 616:2017",
     date: "03 juillet 2013",
   },
@@ -1312,13 +1447,14 @@ const productsData = [
   },
   {
     id: 8,
-    product: "LECTEURS DE DISQUES OPTIQUES AVEC AMPLIFICATEURS INTÉGRÉS DE PUISSANCE D'ENTRÉE 200W ET PLUS",
+    product:
+      "LECTEURS DE DISQUES OPTIQUES AVEC AMPLIFICATEURS INTÉGRÉS DE PUISSANCE D'ENTRÉE 200W ET PLUS",
     isNumber: "IS 616:2017",
     date: "03 juillet 2013",
   },
   {
     id: 9,
-    product: 'TÉLÉVISEURS PLASMA/LCD/LED DE TAILLE D\'ÉCRAN 32" ET PLUS',
+    product: "TÉLÉVISEURS PLASMA/LCD/LED DE TAILLE D'ÉCRAN 32\" ET PLUS",
     isNumber: "IS 616:2017",
     date: "03 juillet 2013",
   },
@@ -1348,7 +1484,8 @@ const productsData = [
   },
   {
     id: 14,
-    product: 'UNITÉS D\'AFFICHAGE VISUEL, MONITEURS VIDÉO DE TAILLE D\'ÉCRAN 32" ET PLUS',
+    product:
+      "UNITÉS D'AFFICHAGE VISUEL, MONITEURS VIDÉO DE TAILLE D'ÉCRAN 32\" ET PLUS",
     isNumber: "IS 13252(Partie 1):2010",
     date: "03 juillet 2013",
   },
@@ -1384,13 +1521,15 @@ const productsData = [
   },
   {
     id: 20,
-    product: "MACHINES DE TRAITEMENT DU COURRIER/MACHINES D'AFFRANCHISSEMENT/MACHINES D'AFFRANCHISSEMENT",
+    product:
+      "MACHINES DE TRAITEMENT DU COURRIER/MACHINES D'AFFRANCHISSEMENT/MACHINES D'AFFRANCHISSEMENT",
     isNumber: "IS 13252(Partie 1):2010",
     date: "13 mai 2015",
   },
   {
     id: 21,
-    product: "BANQUES D'ALIMENTATION POUR UTILISATION DANS DES APPLICATIONS PORTABLES",
+    product:
+      "BANQUES D'ALIMENTATION POUR UTILISATION DANS DES APPLICATIONS PORTABLES",
     isNumber: "IS 13252(Partie 1):2010",
     date: "13 mai 2015",
   },
@@ -1414,13 +1553,15 @@ const productsData = [
   },
   {
     id: 25,
-    product: "ÉQUIPEMENTS DE CONTRÔLE ÉLECTRONIQUES ALIMENTÉS EN CC OU CA POUR MODULES LED",
+    product:
+      "ÉQUIPEMENTS DE CONTRÔLE ÉLECTRONIQUES ALIMENTÉS EN CC OU CA POUR MODULES LED",
     isNumber: "IS 15885(Partie 2/Sec 13):2012",
     date: "01 décembre 2015",
   },
   {
     id: 26,
-    product: "ADAPTATEURS D'ALIMENTATION POUR APPAREILS ÉLECTRONIQUES AUDIO, VIDÉO ET SIMILAIRES",
+    product:
+      "ADAPTATEURS D'ALIMENTATION POUR APPAREILS ÉLECTRONIQUES AUDIO, VIDÉO ET SIMILAIRES",
     isNumber: "IS 616:2010",
     date: "01 décembre 2015",
   },
@@ -1444,13 +1585,15 @@ const productsData = [
   },
   {
     id: 30,
-    product: "CELLULES/BATTERIES SECONDAIRES SCÉLLÉES CONTENANT DES ÉLECTROLYTES ALCALINS OU AUTRES NON-ACIDES POUR UTILISATION DANS DES APPLICATIONS PORTABLES PARTIE 1 SYSTÈMES NICKEL",
+    product:
+      "CELLULES/BATTERIES SECONDAIRES SCÉLLÉES CONTENANT DES ÉLECTROLYTES ALCALINS OU AUTRES NON-ACIDES POUR UTILISATION DANS DES APPLICATIONS PORTABLES PARTIE 1 SYSTÈMES NICKEL",
     isNumber: "IS 16046(Partie 1): 2018",
     date: "01 juin 2016",
   },
   {
     id: 31,
-    product: "CELLULES/BATTERIES SECONDAIRES SCÉLLÉES CONTENANT DES ÉLECTROLYTES ALCALINS OU AUTRES NON-ACIDES POUR UTILISATION DANS DES APPLICATIONS PORTABLES PARTIE 2 SYSTÈMES LITHIUM",
+    product:
+      "CELLULES/BATTERIES SECONDAIRES SCÉLLÉES CONTENANT DES ÉLECTROLYTES ALCALINS OU AUTRES NON-ACIDES POUR UTILISATION DANS DES APPLICATIONS PORTABLES PARTIE 2 SYSTÈMES LITHIUM",
     isNumber: "IS 16046(Partie 2): 2018",
     date: "01 juin 2016",
   },
@@ -1510,14 +1653,16 @@ const productsData = [
   },
   {
     id: 41,
-    product: "Unités d'affichage visuel, moniteurs vidéo de taille d'écran jusqu'à 32",
+    product:
+      "Unités d'affichage visuel, moniteurs vidéo de taille d'écran jusqu'à 32",
     isNumber: "IS 13252 (Partie 1) : 2010",
     date: "23 mai 2018",
   },
   {
     id: 42,
     product: "Caméras CCTV/Enregistreurs CCTV",
-    isNumber: "IS 13252 (Partie 1) : 2010, Exigence(s) essentielle(s) pour la sécurité de la CCTV",
+    isNumber:
+      "IS 13252 (Partie 1) : 2010, Exigence(s) essentielle(s) pour la sécurité de la CCTV",
     date: "23 mai 2018",
   },
   {
@@ -1528,7 +1673,8 @@ const productsData = [
   },
   {
     id: 44,
-    product: "Lecteurs de codes-barres USB, scanners de codes-barres, scanners d'iris, scanners d'empreintes digitales optiques",
+    product:
+      "Lecteurs de codes-barres USB, scanners de codes-barres, scanners d'iris, scanners d'empreintes digitales optiques",
     isNumber: "IS 13252 (Partie 1) : 2010",
     date: "23 mai 2018",
   },
@@ -1540,26 +1686,32 @@ const productsData = [
   },
   {
     id: 46,
-    product: "Modules photovoltaïques terrestres au silicium cristallin (PV) (basés sur plaquette Si)",
-    isNumber: "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Partie 1) : 2004 & IS/IEC 61730 (Partie 2) : 2004",
+    product:
+      "Modules photovoltaïques terrestres au silicium cristallin (PV) (basés sur plaquette Si)",
+    isNumber:
+      "IS 14286 : 2010/ IEC 61215 : 2005, IS/IEC 61730 (Partie 1) : 2004 & IS/IEC 61730 (Partie 2) : 2004",
     date: "31 mars 2019",
   },
   {
     id: 47,
-    product: "Modules photovoltaïques terrestres à couche mince (PV) (a-Si, CiGs et CdTe)",
-    isNumber: "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Partie 1) : 2004 & IS/IEC 61730 (Partie 2) : 2004",
+    product:
+      "Modules photovoltaïques terrestres à couche mince (PV) (a-Si, CiGs et CdTe)",
+    isNumber:
+      "IS 16077 : 2013/ IEC 61646 : 2008, IS/IEC 61730 (Partie 1) : 2004 & IS/IEC 61730 (Partie 2) : 2004",
     date: "31 mars 2019",
   },
   {
     id: 48,
-    product: "Convertisseurs de puissance pour utilisation dans les systèmes d'alimentation photovoltaïques",
+    product:
+      "Convertisseurs de puissance pour utilisation dans les systèmes d'alimentation photovoltaïques",
     isNumber: "IS 16221 (Partie 2) : 2015 / IEC 62109-2 : 2011",
     date: "30 juin 2021",
   },
   {
     id: 49,
     product: "Onduleurs photovoltaïques interconnectés au réseau",
-    isNumber: "IS 16221 (Partie 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
+    isNumber:
+      "IS 16221 (Partie 2):2015/IEC 62109-2 :2011 & IS 16169 :2014/IEC 62116 :2008",
     date: "30 juin 2021",
   },
   {
@@ -1612,19 +1764,22 @@ const productsData = [
   },
   {
     id: 58,
-    product: "Dispositifs de stockage à état solide externes de type USB (capacité supérieure à 256 Go)",
+    product:
+      "Dispositifs de stockage à état solide externes de type USB (capacité supérieure à 256 Go)",
     isNumber: "IS 13252 (Partie 1) : 2010",
     date: "01 avril 2021",
   },
   {
     id: 59,
-    product: "Système musical électronique avec puissance d'entrée inférieure à 200 Watts",
+    product:
+      "Système musical électronique avec puissance d'entrée inférieure à 200 Watts",
     isNumber: "IS 616 : 2017",
     date: "01 avril 2021",
   },
   {
     id: 60,
-    product: "Alimentations à découpage autonomes (SMPS) avec tension de sortie 48V (max)",
+    product:
+      "Alimentations à découpage autonomes (SMPS) avec tension de sortie 48V (max)",
     isNumber: "IS 13252 (Partie 1) : 2010",
     date: "01 avril 2021",
   },
@@ -1769,7 +1924,9 @@ export const CISProductTable = () => {
         </h2>
 
         <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose mb-8">
-          Le tableau suivant liste les produits qui nécessitent un enregistrement BIS CRS en Inde ainsi que leurs numéros de norme indienne (IS) applicables et leurs dates de mise en œuvre.
+          Le tableau suivant liste les produits qui nécessitent un
+          enregistrement BIS CRS en Inde ainsi que leurs numéros de norme
+          indienne (IS) applicables et leurs dates de mise en œuvre.
         </p>
 
         <div className="relative mb-6">
@@ -1898,7 +2055,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
-                alt="CDSCO"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

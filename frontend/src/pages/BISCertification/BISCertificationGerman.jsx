@@ -38,7 +38,6 @@ import FooterGerman from "@/components/manual/Footer/FooterGerman";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -157,7 +156,9 @@ const BISCertificationHero = () => {
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Die BIS-Zertifizierung stellt Qualität und Sicherheit von Produkten in Indien sicher. Sie ist für viele Produkte verpflichtend und erfordert Prüfungen, Dokumentation und Freigaben.
+            Die BIS-Zertifizierung stellt Qualität und Sicherheit von Produkten
+            in Indien sicher. Sie ist für viele Produkte verpflichtend und
+            erfordert Prüfungen, Dokumentation und Freigaben.
           </p>
 
           <nav className="flex items-center -mt-2">
@@ -194,7 +195,8 @@ const BISCertificationContactForm = () => {
 
   const getPageName = () => {
     const path = window.location.pathname;
-    if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis")) return "BIS Zertifizierung - Deutsche Seite";
+    if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
+      return "BIS Zertifizierung - Deutsche Seite";
   };
 
   const [formData, setFormData] = useState({
@@ -674,15 +676,27 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Stellen Sie sich einen Hersteller aus Deutschland vor, der ein einzigartiges elektronisches Gerät entwickelt hat und es auf dem dynamischen indischen Markt verkaufen möchte. Obwohl das Gerät sicher ist und bereits europäische Zulassungen hat, wird es am indischen Hafen aufgehalten. Warum? Weil für das Produkt eine BIS-Zertifizierung erforderlich ist, die für den Verkauf vieler Elektronikprodukte in Indien entscheidend ist.
+        Stellen Sie sich einen Hersteller aus Deutschland vor, der ein
+        einzigartiges elektronisches Gerät entwickelt hat und es auf dem
+        dynamischen indischen Markt verkaufen möchte. Obwohl das Gerät sicher
+        ist und bereits europäische Zulassungen hat, wird es am indischen Hafen
+        aufgehalten. Warum? Weil für das Produkt eine BIS-Zertifizierung
+        erforderlich ist, die für den Verkauf vieler Elektronikprodukte in
+        Indien entscheidend ist.
       </p>
 
       <p className="service-left-content-paragraph">
-        Viele internationale und indische Hersteller stehen jedes Jahr vor ähnlichen Situationen. Für Verbraucher steht das BIS-Zeichen nicht nur für ein Logo, sondern für Vertrauen: Das Produkt wurde auf Qualität, Sicherheit und Zuverlässigkeit geprüft. Für Unternehmen ist es das Tor zu einem der größten Märkte der Welt.
+        Viele internationale und indische Hersteller stehen jedes Jahr vor
+        ähnlichen Situationen. Für Verbraucher steht das BIS-Zeichen nicht nur
+        für ein Logo, sondern für Vertrauen: Das Produkt wurde auf Qualität,
+        Sicherheit und Zuverlässigkeit geprüft. Für Unternehmen ist es das Tor
+        zu einem der größten Märkte der Welt.
       </p>
 
       <p className="service-left-content-paragraph">
-        Dieser Leitfaden beantwortet alle Fragen zur BIS-Zertifizierung: Notwendigkeit, Prozesse, Vorteile, Programme, Kosten und praktische Navigation für ausländische und inländische Hersteller.
+        Dieser Leitfaden beantwortet alle Fragen zur BIS-Zertifizierung:
+        Notwendigkeit, Prozesse, Vorteile, Programme, Kosten und praktische
+        Navigation für ausländische und inländische Hersteller.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -690,19 +704,35 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Die BIS-Zertifizierung ist eine Qualitäts- und Sicherheitszertifizierung, die vom Bureau of Indian Standards (BIS), der nationalen Normungsorganisation Indiens, vergeben wird. Sie stellt sicher, dass ein Produkt in Leistung, Sicherheit und Qualität den indischen Normen (IS) entspricht.
+        Die BIS-Zertifizierung ist eine Qualitäts- und
+        Sicherheitszertifizierung, die vom Bureau of Indian Standards (BIS), der
+        nationalen Normungsorganisation Indiens, vergeben wird. Sie stellt
+        sicher, dass ein Produkt in Leistung, Sicherheit und Qualität den
+        indischen Normen (IS) entspricht.
       </p>
       <p className="service-left-content-paragraph">
-        Erfüllt ein Produkt diese Anforderungen, stellt das BIS eine Lizenz bzw. ein Zertifikat aus. Produkte dürfen das ISI-Zeichen (für inländische Programme) oder unter dem CRS-Programm eine Registrierungsnummer tragen.
+        Erfüllt ein Produkt diese Anforderungen, stellt das BIS eine Lizenz bzw.
+        ein Zertifikat aus. Produkte dürfen das ISI-Zeichen (für inländische
+        Programme) oder unter dem CRS-Programm eine Registrierungsnummer tragen.
       </p>
       <p className="service-left-content-paragraph">
-        Für viele Hersteller und Importeure ist die BIS-Zertifizierung verpflichtend. Sie deckt zahlreiche Produktgruppen ab: Elektrogeräte, Baustoffe, verpacktes Trinkwasser, Elektronik wie Mobiltelefone, LED-Leuchten, Powerbanks sowie Schmuck (über Hallmarking) und mehr. Ohne BIS-Anerkennung dürfen diese Produkte in Indien nicht verkauft oder vertrieben werden.
+        Für viele Hersteller und Importeure ist die BIS-Zertifizierung
+        verpflichtend. Sie deckt zahlreiche Produktgruppen ab: Elektrogeräte,
+        Baustoffe, verpacktes Trinkwasser, Elektronik wie Mobiltelefone,
+        LED-Leuchten, Powerbanks sowie Schmuck (über Hallmarking) und mehr. Ohne
+        BIS-Anerkennung dürfen diese Produkte in Indien nicht verkauft oder
+        vertrieben werden.
       </p>
 
-      <h2 className="service-left-content-heading-three">Kurzer Überblick zur BIS in Indien</h2>
+      <h2 className="service-left-content-heading-three">
+        Kurzer Überblick zur BIS in Indien
+      </h2>
 
       <p className="service-left-content-paragraph">
-        Das Bureau of Indian Standards (BIS) wurde 1986 gegründet und löste die 1947 ins Leben gerufene Indian Standards Institution (ISI) ab. Heute agiert es als Qualitätswächter der Normenlandschaft in Indien, angepasst an internationale Best Practices und indische Rahmenbedingungen.
+        Das Bureau of Indian Standards (BIS) wurde 1986 gegründet und löste die
+        1947 ins Leben gerufene Indian Standards Institution (ISI) ab. Heute
+        agiert es als Qualitätswächter der Normenlandschaft in Indien, angepasst
+        an internationale Best Practices und indische Rahmenbedingungen.
       </p>
 
       <h3 className="service-left-content-heading-three">Meilensteine</h3>
@@ -717,14 +747,17 @@ const OverviewSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Heute stellt das BIS die Sicherheit, Zuverlässigkeit und Standardisierung tausender Produkte für Anwender in ganz Indien sicher.
+        Heute stellt das BIS die Sicherheit, Zuverlässigkeit und
+        Standardisierung tausender Produkte für Anwender in ganz Indien sicher.
       </p>
 
       <h2 className="service-left-content-heading-three">
         Warum ist die BIS-Zertifizierung in Indien verpflichtend?
       </h2>
       <p className="service-left-content-paragraph">
-        Der indische Markt ist riesig, dynamisch und preissensibel. Diese Offenheit macht ihn zugleich anfällig für minderwertige und unsichere Waren. Hier fungiert die BIS-Zertifizierung als Schutzmechanismus.
+        Der indische Markt ist riesig, dynamisch und preissensibel. Diese
+        Offenheit macht ihn zugleich anfällig für minderwertige und unsichere
+        Waren. Hier fungiert die BIS-Zertifizierung als Schutzmechanismus.
       </p>
       <PointsListWithoutHeading
         points={[
@@ -737,7 +770,10 @@ const OverviewSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Beispielsweise ist die BIS-Zertifizierung für abgefülltes Trinkwasser essenziell, um Gesundheitsrisiken zu vermeiden. Ebenso verhindern Standards für Heizgeräte und Toaster Brände. Mit der BIS-Zertifizierung adressiert die Regierung diese Risiken.
+        Beispielsweise ist die BIS-Zertifizierung für abgefülltes Trinkwasser
+        essenziell, um Gesundheitsrisiken zu vermeiden. Ebenso verhindern
+        Standards für Heizgeräte und Toaster Brände. Mit der BIS-Zertifizierung
+        adressiert die Regierung diese Risiken.
       </p>
     </div>
   );
@@ -751,7 +787,9 @@ const ProcessSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Ablauf der BIS-Zertifizierung</h2>
+      <h2 className="service-left-content-heading-two">
+        Ablauf der BIS-Zertifizierung
+      </h2>
 
       <p className="service-left-content-paragraph">
         Der Prozess der BIS-Zertifizierung folgt einem strukturierten Ablauf:
@@ -784,7 +822,8 @@ const DocumentsSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Eine vollständige Dokumentation sorgt für einen reibungslosen Ablauf. Wichtig sind:
+        Eine vollständige Dokumentation sorgt für einen reibungslosen Ablauf.
+        Wichtig sind:
       </p>
 
       <PointsListWithoutHeading
@@ -821,7 +860,9 @@ const CostSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Kosten der BIS-Zertifizierung</h2>
+      <h2 className="service-left-content-heading-two">
+        Kosten der BIS-Zertifizierung
+      </h2>
 
       <div className="mt-[16px] md:mt-[24px]">
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
@@ -841,7 +882,8 @@ const CostSection = () => {
                 Antragsgebühr
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Einmalige, nicht erstattungsfähige Gebühr abhängig vom Produkttyp
+                Einmalige, nicht erstattungsfähige Gebühr abhängig vom
+                Produkttyp
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -865,7 +907,8 @@ const CostSection = () => {
                 Inspektions-/Auditgebühren
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Bei Werksbesuchen durch BIS (inkl. ggf. internationaler Reisekosten)
+                Bei Werksbesuchen durch BIS (inkl. ggf. internationaler
+                Reisekosten)
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -895,7 +938,8 @@ const AIRSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Für ausländische Hersteller ist der Autorisierte Indische Vertreter (AIR) entscheidend.
+        Für ausländische Hersteller ist der Autorisierte Indische Vertreter
+        (AIR) entscheidend.
       </p>
 
       <PointsListWithoutHeading
@@ -908,7 +952,8 @@ const AIRSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Ohne AIR ist die Erlangung einer BIS-Zertifizierung für ausländische Unternehmen nicht möglich.
+        Ohne AIR ist die Erlangung einer BIS-Zertifizierung für ausländische
+        Unternehmen nicht möglich.
       </p>
     </div>
   );
@@ -925,11 +970,20 @@ const ConclusionSection = () => {
       <h2 className="service-left-content-heading-two">Fazit</h2>
 
       <p className="service-left-content-paragraph">
-        Die BIS-Zertifizierung ist für die Geschäftstätigkeit in Indien unerlässlich. Sie ist nicht mehr optional, sondern entscheidend für Erfolg und Vertrauen. Für Hersteller und Importeure schafft sie ein sicheres, gesetzeskonformes Umfeld und minimiert Rechtsrisiken. Mit dem BIS‑Zeichen ist das Vertrauen der Verbraucher gewährleistet.
+        Die BIS-Zertifizierung ist für die Geschäftstätigkeit in Indien
+        unerlässlich. Sie ist nicht mehr optional, sondern entscheidend für
+        Erfolg und Vertrauen. Für Hersteller und Importeure schafft sie ein
+        sicheres, gesetzeskonformes Umfeld und minimiert Rechtsrisiken. Mit dem
+        BIS‑Zeichen ist das Vertrauen der Verbraucher gewährleistet.
       </p>
 
       <p className="service-left-content-paragraph">
-        Indien ist eine der am schnellsten wachsenden Volkswirtschaften. Der Marktzugang eröffnet enormes Wachstumspotenzial. Unabhängig davon, ob Sie in Indien oder im Ausland produzieren – die BIS‑Lizenz ist notwendig, um Produkte in Indien herzustellen oder zu verkaufen. Sie ist eine Investition in Sicherheit, Vertrauen, Reputation, Glaubwürdigkeit und nachhaltiges Wachstum.
+        Indien ist eine der am schnellsten wachsenden Volkswirtschaften. Der
+        Marktzugang eröffnet enormes Wachstumspotenzial. Unabhängig davon, ob
+        Sie in Indien oder im Ausland produzieren – die BIS‑Lizenz ist
+        notwendig, um Produkte in Indien herzustellen oder zu verkaufen. Sie ist
+        eine Investition in Sicherheit, Vertrauen, Reputation, Glaubwürdigkeit
+        und nachhaltiges Wachstum.
       </p>
     </div>
   );
@@ -943,10 +997,13 @@ const SchemesSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">BIS-Zertifizierungsprogramme</h2>
+      <h2 className="service-left-content-heading-two">
+        BIS-Zertifizierungsprogramme
+      </h2>
 
       <p className="service-left-content-paragraph">
-        Das BIS bietet verschiedene Zertifizierungsprogramme für Branchen und Produkttypen mit jeweils spezifischem Fokus.
+        Das BIS bietet verschiedene Zertifizierungsprogramme für Branchen und
+        Produkttypen mit jeweils spezifischem Fokus.
       </p>
 
       <PointsListWithoutHeading
@@ -965,8 +1022,10 @@ const SchemesSection = () => {
             "a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
           "ISI‑Markenprogramm (inländische Hersteller)":
             "a-guide-to-bis-certification-indian-bis",
-          "Scheme X unter dem indischen BIS": "indian-bis-certification-under-scheme-x",
-          "CRS – Compulsory Registration Scheme": "what-is-crs-bis-or-crs-registration",
+          "Scheme X unter dem indischen BIS":
+            "indian-bis-certification-under-scheme-x",
+          "CRS – Compulsory Registration Scheme":
+            "what-is-crs-bis-or-crs-registration",
         }}
       />
 
@@ -975,11 +1034,21 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Für indische Hersteller ist eine BIS‑Lizenz Voraussetzung, um Produkte rechtmäßig im Land zu verkaufen. Sie bescheinigt die Erfüllung der relevanten indischen Normen hinsichtlich Qualität, Sicherheit und Leistung. Dazu gehören Werksaudits, Produktprüfungen und Konformitätsbewertungen. Nach erfolgreicher Prüfung dürfen Produkte das ISI‑Zeichen tragen.
+        Für indische Hersteller ist eine BIS‑Lizenz Voraussetzung, um Produkte
+        rechtmäßig im Land zu verkaufen. Sie bescheinigt die Erfüllung der
+        relevanten indischen Normen hinsichtlich Qualität, Sicherheit und
+        Leistung. Dazu gehören Werksaudits, Produktprüfungen und
+        Konformitätsbewertungen. Nach erfolgreicher Prüfung dürfen Produkte das
+        ISI‑Zeichen tragen.
       </p>
 
       <p className="service-left-content-paragraph">
-        Ob Elektronik, Stahl, Zement, Kunststoff oder Baumaterialien – die BIS‑Zertifizierung ist essenziell für den Marktzugang. Sie stärkt das Vertrauen, verbessert die Reputation, erleichtert die Teilnahme an Ausschreibungen und eröffnet neue Geschäftschancen. Fehlende BIS‑Konformität kann dagegen zu Bußgeldern, Rückrufen oder Verkaufsverboten führen.
+        Ob Elektronik, Stahl, Zement, Kunststoff oder Baumaterialien – die
+        BIS‑Zertifizierung ist essenziell für den Marktzugang. Sie stärkt das
+        Vertrauen, verbessert die Reputation, erleichtert die Teilnahme an
+        Ausschreibungen und eröffnet neue Geschäftschancen. Fehlende
+        BIS‑Konformität kann dagegen zu Bußgeldern, Rückrufen oder
+        Verkaufsverboten führen.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -987,21 +1056,32 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Das FMCS richtet sich an ausländische Hersteller, die Produkte in Indien vertreiben möchten. Es stellt sicher, dass im Ausland gefertigte Produkte die indischen Normen erfüllen. Wie bei inländischen Herstellern ist eine BIS‑Lizenz nötig, um das ISI‑Zeichen zu verwenden. Die Vergabe erfolgt nach Werksinspektion und strengen Produkttests.
+        Das FMCS richtet sich an ausländische Hersteller, die Produkte in Indien
+        vertreiben möchten. Es stellt sicher, dass im Ausland gefertigte
+        Produkte die indischen Normen erfüllen. Wie bei inländischen Herstellern
+        ist eine BIS‑Lizenz nötig, um das ISI‑Zeichen zu verwenden. Die Vergabe
+        erfolgt nach Werksinspektion und strengen Produkttests.
       </p>
 
       <p className="service-left-content-paragraph">
-        Ausländische Hersteller müssen einen Autorisierten Indischen Vertreter (AIR) benennen, der die Kommunikation mit dem BIS führt, Anträge einreicht und Fristen sowie Verpflichtungen steuert.
+        Ausländische Hersteller müssen einen Autorisierten Indischen Vertreter
+        (AIR) benennen, der die Kommunikation mit dem BIS führt, Anträge
+        einreicht und Fristen sowie Verpflichtungen steuert.
       </p>
 
       <h3 className="service-left-content-heading-three">Scheme X</h3>
 
       <p className="service-left-content-paragraph">
-        Scheme X (Omnibus Technical Regulation) vereinfacht die Konformitätsbewertung insbesondere für mechanische und elektrische Industrien, reduziert Dokumentation und Durchlaufzeiten und gewährleistet zugleich die Einhaltung der indischen Normen.
+        Scheme X (Omnibus Technical Regulation) vereinfacht die
+        Konformitätsbewertung insbesondere für mechanische und elektrische
+        Industrien, reduziert Dokumentation und Durchlaufzeiten und
+        gewährleistet zugleich die Einhaltung der indischen Normen.
       </p>
 
       <p className="service-left-content-paragraph">
-        Abgedeckte Produkte sind u. a. Pumpen, Krane, Transformatoren, Werkzeugmaschinen und weitere Maschinenbauprodukte. Ziel ist schnellere Markteinführung bei gleichbleibender Sicherheit und Qualität.
+        Abgedeckte Produkte sind u. a. Pumpen, Krane, Transformatoren,
+        Werkzeugmaschinen und weitere Maschinenbauprodukte. Ziel ist schnellere
+        Markteinführung bei gleichbleibender Sicherheit und Qualität.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1009,19 +1089,29 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Das CRS reguliert IT‑ und Elektronikprodukte (z. B. LED‑Leuchten, Mobiltelefone, Laptops, Powerbanks). Im Gegensatz zum ISI‑Programm erhalten Produkte keine ISI‑Marke, sondern eine BIS‑Registrierungsnummer. Tests erfolgen in BIS‑anerkannten Laboren, danach erfolgt die Registrierung.
+        Das CRS reguliert IT‑ und Elektronikprodukte (z. B. LED‑Leuchten,
+        Mobiltelefone, Laptops, Powerbanks). Im Gegensatz zum ISI‑Programm
+        erhalten Produkte keine ISI‑Marke, sondern eine
+        BIS‑Registrierungsnummer. Tests erfolgen in BIS‑anerkannten Laboren,
+        danach erfolgt die Registrierung.
       </p>
 
       <h3 className="service-left-content-heading-three">Hallmarking</h3>
 
       <p className="service-left-content-paragraph">
-        Für Gold‑ und Silberschmuck ist Hallmarking in Indien verpflichtend. Die Prüfung erfolgt in BIS‑zugelassenen Assaying & Hallmarking Centres (AHC). Händler benötigen eine BIS‑Lizenz und unterliegen Prüfungen und Audits.
+        Für Gold‑ und Silberschmuck ist Hallmarking in Indien verpflichtend. Die
+        Prüfung erfolgt in BIS‑zugelassenen Assaying & Hallmarking Centres
+        (AHC). Händler benötigen eine BIS‑Lizenz und unterliegen Prüfungen und
+        Audits.
       </p>
 
       <h3 className="service-left-content-heading-three">Eco Mark</h3>
 
       <p className="service-left-content-paragraph">
-        Eco Mark kennzeichnet Produkte, die Umweltkriterien erfüllen (z. B. Emissionen, Toxizität, Recyclingfähigkeit). Es fördert nachhaltige Produktion und stärkt das Vertrauen von Verbrauchern und Geschäftspartnern.
+        Eco Mark kennzeichnet Produkte, die Umweltkriterien erfüllen (z. B.
+        Emissionen, Toxizität, Recyclingfähigkeit). Es fördert nachhaltige
+        Produktion und stärkt das Vertrauen von Verbrauchern und
+        Geschäftspartnern.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1029,22 +1119,28 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        MSCS zertifiziert Managementsysteme (z. B. ISO 9001, ISO 14001, ISO 45001) und stärkt Reputation, Compliance und kontinuierliche Verbesserung. Regelmäßige Audits sorgen für Nachhaltigkeit und Glaubwürdigkeit.
+        MSCS zertifiziert Managementsysteme (z. B. ISO 9001, ISO 14001, ISO
+        45001) und stärkt Reputation, Compliance und kontinuierliche
+        Verbesserung. Regelmäßige Audits sorgen für Nachhaltigkeit und
+        Glaubwürdigkeit.
       </p>
 
-      <h3 className="service-left-content-heading-three">LRS – Lab Recognition Scheme</h3>
+      <h3 className="service-left-content-heading-three">
+        LRS – Lab Recognition Scheme
+      </h3>
 
       <p className="service-left-content-paragraph">
-        LRS stellt die Kompetenz von Prüflaboren sicher (u. a. nach ISO/IEC 17025). Nur Berichte anerkannter Labore werden für BIS‑Zertifizierungen akzeptiert. Regelmäßige Überprüfungen sichern Qualität und Vergleichbarkeit.
+        LRS stellt die Kompetenz von Prüflaboren sicher (u. a. nach ISO/IEC
+        17025). Nur Berichte anerkannter Labore werden für BIS‑Zertifizierungen
+        akzeptiert. Regelmäßige Überprüfungen sichern Qualität und
+        Vergleichbarkeit.
       </p>
 
       <h3 className="service-left-content-heading-three">
         Produkte mit BIS‑Pflicht
       </h3>
 
-      <p className="service-left-content-paragraph">
-        Beispiele:
-      </p>
+      <p className="service-left-content-paragraph">Beispiele:</p>
 
       <PointsListWithoutHeading
         points={[
@@ -1106,8 +1202,7 @@ const BISCertificationFaq = () => {
     },
     {
       question: "Wie lange ist eine BIS‑Lizenz gültig?",
-      answer:
-        "In der Regel 1–2 Jahre; sie muss vor Ablauf verlängert werden.",
+      answer: "In der Regel 1–2 Jahre; sie muss vor Ablauf verlängert werden.",
     },
     {
       question: "Wie läuft die BIS‑Zertifizierung ab?",
@@ -1132,14 +1227,18 @@ const BISCertificationFaq = () => {
   ];
 
   return (
-    <section id="faqs" className="my-2 scroll-mt-20" aria-label="Häufige Fragen">
+    <section
+      id="faqs"
+      className="my-2 scroll-mt-20"
+      aria-label="Häufige Fragen"
+    >
       <div className="max-w-[88rem] mx-auto px-4 pt-5 pb-9 md:pb-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           FAQs – BIS‑Zertifizierung in Indien
         </h2>
 
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Nicht fündig geworden? {" "}
+          Nicht fündig geworden?{" "}
           <a
             href="/contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
@@ -1215,8 +1314,9 @@ const BISCertificationServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1354,5 +1454,3 @@ const PointsListWithoutHeading = ({ points, linkMap }) => {
     </div>
   );
 };
-
-

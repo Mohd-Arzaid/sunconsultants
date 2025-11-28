@@ -35,7 +35,6 @@ import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -46,7 +45,6 @@ import ServiceAuthorVietnamese from "@/components/manual/ServiceAuthor/ServiceAu
 import ServicesRightSideContentVietnamese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentVietnamese";
 import { ServicesVietnamese } from "@/schemeXProducts/PumpsAndLiquidElevators/PumpsAndLiquidElevatorsVietnamese";
 import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
-
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -67,12 +65,11 @@ const SchemeXVietnamese = () => {
       <FooterVietnamese />
       {/* Scroll To Top Button Section */}
       <ScrollToTopButton />
-
     </div>
-  )
-}
+  );
+};
 
-export default SchemeXVietnamese
+export default SchemeXVietnamese;
 
 const SchemeXMetaTags = () => {
   const breadcrumbStructuredData = {
@@ -96,9 +93,7 @@ const SchemeXMetaTags = () => {
   return (
     <Helmet>
       {/* Basic Meta Tags */}
-      <title>
-        Chứng nhận BIS Scheme X | An toàn thiết bị cơ khí và điện
-      </title>
+      <title>Chứng nhận BIS Scheme X | An toàn thiết bị cơ khí và điện</title>
       <meta
         name="description"
         content="Chứng nhận BIS Scheme X cần thiết để đảm bảo chất lượng và an toàn cho thiết bị đóng cắt điện áp thấp, thiết bị điều khiển, máy móc và thiết bị điện."
@@ -144,8 +139,8 @@ const SchemeXMetaTags = () => {
         {JSON.stringify(breadcrumbStructuredData)}
       </script>
     </Helmet>
-  )
-}
+  );
+};
 
 const SchemeXBreadcrumb = () => {
   return (
@@ -163,7 +158,8 @@ const SchemeXBreadcrumb = () => {
                 <SlashIcon />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbPage>Chứng nhận BIS của Ấn Độ theo Chương trình-X
+                <BreadcrumbPage>
+                  Chứng nhận BIS của Ấn Độ theo Chương trình-X
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -171,9 +167,8 @@ const SchemeXBreadcrumb = () => {
         </div>
       </div>
     </div>
-  )
-}
-
+  );
+};
 
 const SchemeXHero = () => {
   return (
@@ -205,7 +200,9 @@ const SchemeXHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Chứng nhận BIS Scheme X bao gồm Máy móc, Thiết bị điện và các Cụm linh kiện, Bộ phận lắp ráp phụ trong phạm vi Quy định Kỹ thuật Tổng hợp (OTR).
+            Chứng nhận BIS Scheme X bao gồm Máy móc, Thiết bị điện và các Cụm
+            linh kiện, Bộ phận lắp ráp phụ trong phạm vi Quy định Kỹ thuật Tổng
+            hợp (OTR).
           </p>
 
           <div className="flex items-center -mt-2">
@@ -237,8 +234,6 @@ const SchemeXHero = () => {
     </main>
   );
 };
-
-
 
 const SchemeXHeroContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -342,8 +337,7 @@ const SchemeXHeroContactForm = () => {
         pageName: getPageName(),
       });
     } catch (error) {
-      const errorMessage =
-        error.response?.data?.message || "Có gì đó không ổn";
+      const errorMessage = error.response?.data?.message || "Có gì đó không ổn";
       toast({
         variant: "destructive",
         title: errorMessage || "Không thể gửi chi tiết mẫu liên hệ!",
@@ -467,7 +461,6 @@ const SchemeXHeroContactForm = () => {
   );
 };
 
-
 const SchemeXIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("overview");
@@ -477,12 +470,7 @@ const SchemeXIndex = () => {
   const toggleButtonRef = useRef(null);
 
   const SECTIONS = useMemo(
-    () => [
-      "overview",
-      "process",
-      "documents",
-      "conclusion",
-    ],
+    () => ["overview", "process", "documents", "conclusion"],
     []
   );
 
@@ -574,8 +562,9 @@ const SchemeXIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -625,10 +614,11 @@ const SchemeXIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -648,18 +638,20 @@ const SchemeXIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -667,7 +659,6 @@ const SchemeXIndex = () => {
     </div>
   );
 };
-
 
 const SchemeXMainContent = () => {
   return (
@@ -686,8 +677,8 @@ const SchemeXMainContent = () => {
         <ServicesVietnamese />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const Services = () => {
   return (
@@ -735,8 +726,9 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -847,8 +839,6 @@ export const Services = () => {
   );
 };
 
-
-
 const SchemeXProductTable = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const table2Ref = useRef(null);
@@ -857,7 +847,6 @@ const SchemeXProductTable = () => {
   return (
     <div className="w-full pb-12">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-
         <div className="flex flex-col gap-2 mt-6">
           <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
             Tiêu chuẩn An toàn Theo Sản phẩm
@@ -874,9 +863,7 @@ const SchemeXProductTable = () => {
           </div>
           <input
             type="text"
-            placeholder={
-              "Tìm kiếm theo mô tả hoặc mã HS..."
-            }
+            placeholder={"Tìm kiếm theo mô tả hoặc mã HS..."}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -890,10 +877,9 @@ const SchemeXProductTable = () => {
       <div ref={table3Ref}>
         <TypeCTable searchQuery={searchQuery} />
       </div>
-
     </div>
-  )
-}
+  );
+};
 const productDataTableThird = [
   {
     id: 1,
@@ -1044,7 +1030,8 @@ const productDataTableThird = [
     description: "Tất cả các loại Bộ chuyển đổi Bán dẫn Công suất",
     hsCode: "850440",
     indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
-    title: "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements",
+    title:
+      "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements",
   },
   {
     id: 19,
@@ -1067,7 +1054,7 @@ const productDataTableThird = [
 
 const TypeCTable = ({ searchQuery }) => {
   // Filter data based on search query
-  const filteredData = productDataTableThird.filter(item => {
+  const filteredData = productDataTableThird.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1081,7 +1068,8 @@ const TypeCTable = ({ searchQuery }) => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-        LOẠI C (Tiêu chuẩn An toàn Máy móc xử lý các yêu cầu an toàn chi tiết cho một máy cụ thể hoặc nhóm máy)
+        LOẠI C (Tiêu chuẩn An toàn Máy móc xử lý các yêu cầu an toàn chi tiết
+        cho một máy cụ thể hoặc nhóm máy)
       </p>
 
       <div className="rounded-md border bg-white shadow-sm">
@@ -1132,7 +1120,10 @@ const TypeCTable = ({ searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={5}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   Không tìm thấy kết quả cho &quot;{searchQuery}&quot;
                 </TableCell>
               </TableRow>
@@ -1464,7 +1455,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   const itemsPerPage = 20;
 
   // Filter data based on search query
-  const filteredData = productDataTableSecond.filter(item => {
+  const filteredData = productDataTableSecond.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1480,10 +1471,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredData.slice(
-    indexOfFirstItem,
-    indexOfLastItem
-  );
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
@@ -1510,7 +1498,9 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-        LOẠI B (Tiêu chuẩn An toàn Chung xử lý một khía cạnh an toàn hoặc nhiều loại biện pháp bảo vệ hơn có thể được sử dụng trên một loạt máy móc rộng)
+        LOẠI B (Tiêu chuẩn An toàn Chung xử lý một khía cạnh an toàn hoặc nhiều
+        loại biện pháp bảo vệ hơn có thể được sử dụng trên một loạt máy móc
+        rộng)
       </p>
 
       <div className="rounded-md border bg-white shadow-sm">
@@ -1545,7 +1535,10 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={3}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   Không tìm thấy kết quả cho &quot;{searchQuery}&quot;
                 </TableCell>
               </TableRow>
@@ -1580,71 +1573,90 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   );
 };
 
-
-
-
 const SchemeXServiceFaq = () => {
   const faqData = [
     {
       question: "1. Scheme X dưới chứng nhận BIS là gì?",
-      answer: "Scheme X là chương trình đánh giá tuân thủ được giới thiệu bởi BIS Ấn Độ cho máy móc và thiết bị điện. Nó đảm bảo tuân thủ các tiêu chuẩn an toàn và kỹ thuật nghiêm ngặt được quy định trong Quy định Kỹ thuật Tổng hợp."
+      answer:
+        "Scheme X là chương trình đánh giá tuân thủ được giới thiệu bởi BIS Ấn Độ cho máy móc và thiết bị điện. Nó đảm bảo tuân thủ các tiêu chuẩn an toàn và kỹ thuật nghiêm ngặt được quy định trong Quy định Kỹ thuật Tổng hợp.",
     },
     {
       question: "2. Scheme X có khác với chứng nhận dấu ISI không?",
-      answer: "Có. Dấu ISI thường dành cho hàng tiêu dùng và tuân thủ sản phẩm cơ bản, trong khi Scheme X áp dụng cho các sản phẩm phức tạp và cấp công nghiệp yêu cầu kiểm tra và chứng nhận nâng cao thông qua chứng nhận BIS hoặc giấy phép BIS."
+      answer:
+        "Có. Dấu ISI thường dành cho hàng tiêu dùng và tuân thủ sản phẩm cơ bản, trong khi Scheme X áp dụng cho các sản phẩm phức tạp và cấp công nghiệp yêu cầu kiểm tra và chứng nhận nâng cao thông qua chứng nhận BIS hoặc giấy phép BIS.",
     },
     {
       question: "3. Ai cần nộp đơn xin chứng nhận Scheme X?",
-      answer: "Các nhà sản xuất và nhà nhập khẩu máy móc và thiết bị điện được liệt kê theo Quy định Kỹ thuật Tổng hợp phải nộp đơn xin Scheme X và nhận chứng nhận BIS hợp lệ để hợp pháp bán hoặc phân phối sản phẩm của họ tại Ấn Độ. Các nhà sản xuất toàn cầu hoặc nhà sản xuất nước ngoài dự định bán sản phẩm tại Ấn Độ cũng phải tuân thủ các quy định này."
+      answer:
+        "Các nhà sản xuất và nhà nhập khẩu máy móc và thiết bị điện được liệt kê theo Quy định Kỹ thuật Tổng hợp phải nộp đơn xin Scheme X và nhận chứng nhận BIS hợp lệ để hợp pháp bán hoặc phân phối sản phẩm của họ tại Ấn Độ. Các nhà sản xuất toàn cầu hoặc nhà sản xuất nước ngoài dự định bán sản phẩm tại Ấn Độ cũng phải tuân thủ các quy định này.",
     },
     {
       question: "4. Chi phí chứng nhận BIS Scheme X là bao nhiêu?",
-      answer: "Chi phí của Scheme X bao gồm phí nộp đơn, phí chứng nhận, phí xem xét hồ sơ kỹ thuật, chi phí kiểm tra nhà máy và phí kiểm tra sản phẩm. Trung bình, nó bắt đầu từ ₹2,000 cho nộp đơn và có thể tăng tùy theo độ phức tạp của sản phẩm. Để biết thêm chi tiết, liên hệ với chúng tôi tại admin@bis-certifications.com."
+      answer:
+        "Chi phí của Scheme X bao gồm phí nộp đơn, phí chứng nhận, phí xem xét hồ sơ kỹ thuật, chi phí kiểm tra nhà máy và phí kiểm tra sản phẩm. Trung bình, nó bắt đầu từ ₹2,000 cho nộp đơn và có thể tăng tùy theo độ phức tạp của sản phẩm. Để biết thêm chi tiết, liên hệ với chúng tôi tại admin@bis-certifications.com.",
     },
     {
       question: "5. Mất bao lâu để nhận giấy phép BIS theo Scheme X?",
-      answer: "Thời gian biểu thay đổi tùy theo tài liệu, yêu cầu kiểm tra và kiểm tra nhà máy. Thông thường, nó mất 4–6 tuần kể từ ngày đăng ký và nộp đơn BIS thành công đối với nhà sản xuất Ấn Độ và 60-90 ngày đối với nhà sản xuất nước ngoài."
+      answer:
+        "Thời gian biểu thay đổi tùy theo tài liệu, yêu cầu kiểm tra và kiểm tra nhà máy. Thông thường, nó mất 4–6 tuần kể từ ngày đăng ký và nộp đơn BIS thành công đối với nhà sản xuất Ấn Độ và 60-90 ngày đối với nhà sản xuất nước ngoài.",
     },
     {
-      question: "6. MSMEs cũng có thể nộp đơn xin chứng nhận BIS theo Scheme X không?",
-      answer: "Hoàn toàn có thể. Trên thực tế, BIS Ấn Độ khuyến khích MSMEs nộp đơn xin giấy phép BIS hoặc chứng nhận tuân thủ theo Scheme X để nâng cao chất lượng, tuân thủ và tính cạnh tranh trong lĩnh vực công nghiệp."
+      question:
+        "6. MSMEs cũng có thể nộp đơn xin chứng nhận BIS theo Scheme X không?",
+      answer:
+        "Hoàn toàn có thể. Trên thực tế, BIS Ấn Độ khuyến khích MSMEs nộp đơn xin giấy phép BIS hoặc chứng nhận tuân thủ theo Scheme X để nâng cao chất lượng, tuân thủ và tính cạnh tranh trong lĩnh vực công nghiệp.",
     },
     {
-      question: "7. Chứng nhận BIS theo Scheme X có bắt buộc cho xuất khẩu không?",
-      answer: "Không. Sản phẩm được sản xuất hoàn toàn cho xuất khẩu được miễn trừ theo Quy định Kỹ thuật Tổng hợp. Tuy nhiên, sản phẩm dành cho thị trường Ấn Độ phải được chứng nhận theo Scheme X."
+      question:
+        "7. Chứng nhận BIS theo Scheme X có bắt buộc cho xuất khẩu không?",
+      answer:
+        "Không. Sản phẩm được sản xuất hoàn toàn cho xuất khẩu được miễn trừ theo Quy định Kỹ thuật Tổng hợp. Tuy nhiên, sản phẩm dành cho thị trường Ấn Độ phải được chứng nhận theo Scheme X.",
     },
     {
       question: "8. Hiệu lực của giấy phép BIS theo Scheme X là bao lâu?",
-      answer: "Giấy phép BIS theo Scheme X thường có hiệu lực 3-6 năm và phải được gia hạn tương ứng. Gia hạn liên quan đến thanh toán phí chứng nhận BIS hàng năm và có thể yêu cầu đánh giá lại tùy theo thay đổi trong phạm vi sản phẩm hoặc tiêu chuẩn."
+      answer:
+        "Giấy phép BIS theo Scheme X thường có hiệu lực 3-6 năm và phải được gia hạn tương ứng. Gia hạn liên quan đến thanh toán phí chứng nhận BIS hàng năm và có thể yêu cầu đánh giá lại tùy theo thay đổi trong phạm vi sản phẩm hoặc tiêu chuẩn.",
     },
     {
-      question: "9. Nhà sản xuất nước ngoài có thể nộp đơn xin chứng nhận Scheme X không?",
-      answer: "Có, nhà sản xuất nước ngoài có thể nộp đơn xin chứng nhận Scheme X thông qua đại diện Ấn Độ được ủy quyền. BIS Ấn Độ yêu cầu kiểm tra nhà máy, có thể mất 3 ngày đối với người nộp đơn nước ngoài, cùng với quy trình đăng ký và kiểm tra BIS tiêu chuẩn."
+      question:
+        "9. Nhà sản xuất nước ngoài có thể nộp đơn xin chứng nhận Scheme X không?",
+      answer:
+        "Có, nhà sản xuất nước ngoài có thể nộp đơn xin chứng nhận Scheme X thông qua đại diện Ấn Độ được ủy quyền. BIS Ấn Độ yêu cầu kiểm tra nhà máy, có thể mất 3 ngày đối với người nộp đơn nước ngoài, cùng với quy trình đăng ký và kiểm tra BIS tiêu chuẩn.",
     },
     {
       question: "10. Hồ sơ Kỹ thuật là gì và tại sao nó được yêu cầu?",
-      answer: "Hồ sơ Kỹ thuật là một hồ sơ tuân thủ chi tiết được yêu cầu theo Scheme X. Nó bao gồm quy trình sản xuất, chi tiết sản phẩm, báo cáo kiểm tra và tài liệu kiểm soát chất lượng. Nó hỗ trợ sự tuân thủ của sản phẩm với các Tiêu chuẩn Ấn Độ liên quan trong quy trình chứng nhận BIS."
+      answer:
+        "Hồ sơ Kỹ thuật là một hồ sơ tuân thủ chi tiết được yêu cầu theo Scheme X. Nó bao gồm quy trình sản xuất, chi tiết sản phẩm, báo cáo kiểm tra và tài liệu kiểm soát chất lượng. Nó hỗ trợ sự tuân thủ của sản phẩm với các Tiêu chuẩn Ấn Độ liên quan trong quy trình chứng nhận BIS.",
     },
     {
-      question: "11. Scheme X liên quan như thế nào đến Quy định Kỹ thuật Tổng hợp?",
-      answer: "Quy định Kỹ thuật Tổng hợp bắt buộc sử dụng Scheme X cho các loại máy móc và thiết bị điện cụ thể tại Ấn Độ. Các sản phẩm được liệt kê theo quy định phải được chứng nhận theo Scheme X để nhận chứng nhận BIS hoặc giấy phép BIS hợp lệ."
+      question:
+        "11. Scheme X liên quan như thế nào đến Quy định Kỹ thuật Tổng hợp?",
+      answer:
+        "Quy định Kỹ thuật Tổng hợp bắt buộc sử dụng Scheme X cho các loại máy móc và thiết bị điện cụ thể tại Ấn Độ. Các sản phẩm được liệt kê theo quy định phải được chứng nhận theo Scheme X để nhận chứng nhận BIS hoặc giấy phép BIS hợp lệ.",
     },
     {
       question: "12. Chứng nhận BIS theo Scheme X có thể bị thu hồi không?",
-      answer: "Có. BIS Ấn Độ có thể tạm dừng hoặc hủy giấy phép hoặc chứng nhận BIS theo Scheme X nếu phát hiện không tuân thủ trong giám sát hoặc nếu sản phẩm không đáp ứng Tiêu chuẩn Ấn Độ yêu cầu."
+      answer:
+        "Có. BIS Ấn Độ có thể tạm dừng hoặc hủy giấy phép hoặc chứng nhận BIS theo Scheme X nếu phát hiện không tuân thủ trong giám sát hoặc nếu sản phẩm không đáp ứng Tiêu chuẩn Ấn Độ yêu cầu.",
     },
     {
-      question: "13. Sự khác biệt giữa giấy phép BIS và chứng nhận BIS theo Scheme X là gì?",
-      answer: "Giấy phép BIS thường được cấp cho nhà sản xuất Ấn Độ, trong khi chứng nhận tuân thủ BIS (CoC) thường được cấp cho nhà sản xuất nước ngoài hoặc các trường hợp cụ thể. Cả hai đều phục vụ mục đích giống nhau—đảm bảo tuân thủ sản phẩm theo Scheme X."
+      question:
+        "13. Sự khác biệt giữa giấy phép BIS và chứng nhận BIS theo Scheme X là gì?",
+      answer:
+        "Giấy phép BIS thường được cấp cho nhà sản xuất Ấn Độ, trong khi chứng nhận tuân thủ BIS (CoC) thường được cấp cho nhà sản xuất nước ngoài hoặc các trường hợp cụ thể. Cả hai đều phục vụ mục đích giống nhau—đảm bảo tuân thủ sản phẩm theo Scheme X.",
     },
     {
-      question: "14. Dấu ISI có được phép cho sản phẩm được chứng nhận theo Scheme X không?",
-      answer: "Không. Sản phẩm theo Scheme X không mang dấu ISI. Thay vào đó, chúng hiển thị dấu tiêu chuẩn BIS liên quan đến chương trình chứng nhận, theo quy định của BIS Ấn Độ."
+      question:
+        "14. Dấu ISI có được phép cho sản phẩm được chứng nhận theo Scheme X không?",
+      answer:
+        "Không. Sản phẩm theo Scheme X không mang dấu ISI. Thay vào đó, chúng hiển thị dấu tiêu chuẩn BIS liên quan đến chương trình chứng nhận, theo quy định của BIS Ấn Độ.",
     },
     {
-      question: "Làm thế nào để biết máy móc của tôi có yêu cầu chứng nhận Scheme X không?",
-      answer: "Kiểm tra danh sách chính thức trong Quy định Kỹ thuật Tổng hợp hoặc tham khảo ý kiến chuyên gia tư vấn BIS để xác minh xem máy móc của bạn có thuộc yêu cầu chứng nhận Scheme X bắt buộc không."
-    }
+      question:
+        "Làm thế nào để biết máy móc của tôi có yêu cầu chứng nhận Scheme X không?",
+      answer:
+        "Kiểm tra danh sách chính thức trong Quy định Kỹ thuật Tổng hợp hoặc tham khảo ý kiến chuyên gia tư vấn BIS để xác minh xem máy móc của bạn có thuộc yêu cầu chứng nhận Scheme X bắt buộc không.",
+    },
   ];
 
   return (
@@ -1690,7 +1702,6 @@ const SchemeXMainContentLeft = () => {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-
         {/* Overview Section */}
         <SchemeXMainContentLeftOverviewSection />
 
@@ -1718,8 +1729,8 @@ const SchemeXMainContentLeft = () => {
         <ServiceAuthorVietnamese />
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftConclusionSection = () => {
   return (
@@ -1730,31 +1741,26 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        Kết Luận
-      </h2>
+      <h2 className="service-left-content-heading-two">Kết Luận</h2>
 
       <p className="service-left-content-paragraph">
         Chứng nhận BIS Scheme-X vẫn rất quan trọng trong việc duy trì an toàn,
-        độ tin cậy và chất lượng của thiết bị chuyển mạch và điều khiển điện áp thấp,
-        Máy móc và thiết bị điện. Đối với các nhà sản xuất công cụ máy
-        áp dụng cho việc gia công đá, gốm, bê tông, xi măng asphalt
-        và kính khoáng, chứng nhận BIS Scheme-X là bắt buộc.
+        độ tin cậy và chất lượng của thiết bị chuyển mạch và điều khiển điện áp
+        thấp, Máy móc và thiết bị điện. Đối với các nhà sản xuất công cụ máy áp
+        dụng cho việc gia công đá, gốm, bê tông, xi măng asphalt và kính khoáng,
+        chứng nhận BIS Scheme-X là bắt buộc.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        Bằng cách đáp ứng các nghĩa vụ này, các nhà sản xuất đảm bảo sự
-        phù hợp sản phẩm, nâng cao lòng tin của người tiêu dùng, cũng như cải thiện
-        uy tín của họ trên thị trường. Scheme-X đảm bảo sản xuất diễn ra
-        suôn sẻ nhất có thể, đáp ứng các tiêu chuẩn an toàn trên toàn thế giới, và
-        các thương hiệu được công nhận đạt được danh tiếng tích cực.
+        Bằng cách đáp ứng các nghĩa vụ này, các nhà sản xuất đảm bảo sự phù hợp
+        sản phẩm, nâng cao lòng tin của người tiêu dùng, cũng như cải thiện uy
+        tín của họ trên thị trường. Scheme-X đảm bảo sản xuất diễn ra suôn sẻ
+        nhất có thể, đáp ứng các tiêu chuẩn an toàn trên toàn thế giới, và các
+        thương hiệu được công nhận đạt được danh tiếng tích cực.
       </p>
-
     </div>
-  )
-}
-
+  );
+};
 
 const SchemeXMainContentLeftDocumentsSection = () => {
   return (
@@ -1768,7 +1774,6 @@ const SchemeXMainContentLeftDocumentsSection = () => {
       <h2 className="service-left-content-heading-two">
         Các Tài Liệu Chính Yêu Cầu Cho Chứng Nhận BIS Scheme X
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Để đơn giản hóa quy trình chứng nhận BIS, các nhà sản xuất được yêu cầu
@@ -1799,8 +1804,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Tên và Địa Chỉ (Nhà Máy & Văn Phòng)
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Tên pháp lý đầy đủ và địa chỉ vật lý của địa điểm sản xuất
-                và văn phòng
+                Tên pháp lý đầy đủ và địa chỉ vật lý của địa điểm sản xuất và
+                văn phòng
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1822,8 +1827,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Chi Tiết Liên Hệ
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Địa chỉ email, số điện thoại di động và số điện thoại cố định cho
-                giao tiếp chính thức
+                Địa chỉ email, số điện thoại di động và số điện thoại cố định
+                cho giao tiếp chính thức
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1834,7 +1839,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Chi Tiết Quản Lý
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Tên, vai trò và ID của các giám đốc điều hành chính và người ký ủy quyền
+                Tên, vai trò và ID của các giám đốc điều hành chính và người ký
+                ủy quyền
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1857,8 +1863,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Phân Loại Sản Phẩm
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Loại cụ thể, mô hình và biến thể mà Giấy phép BIS đang được
-                yêu cầu
+                Loại cụ thể, mô hình và biến thể mà Giấy phép BIS đang được yêu
+                cầu
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1869,8 +1875,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Hồ Sơ Kỹ Thuật
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Tất cả chi tiết kỹ thuật liên quan đến sản phẩm và chi tiết
-                về đơn vị sản xuất.
+                Tất cả chi tiết kỹ thuật liên quan đến sản phẩm và chi tiết về
+                đơn vị sản xuất.
               </TableCell>
             </TableRow>
           </TableBody>
@@ -1890,8 +1896,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         ]}
       />
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftProcessSection = () => {
   return (
@@ -1906,13 +1912,11 @@ const SchemeXMainContentLeftProcessSection = () => {
         Các Bước Để Được Chứng Nhận Theo BIS Scheme-X
       </h2>
 
-
       <p className="service-left-content-paragraph">
         Việc cấp Chứng nhận BIS theo Scheme-X là một hoạt động có hệ thống nhằm
-        đảm bảo nhà sản xuất đáp ứng các tiêu chuẩn an toàn, chất lượng và
-        tuân thủ áp dụng. Quy trình như sau:
+        đảm bảo nhà sản xuất đáp ứng các tiêu chuẩn an toàn, chất lượng và tuân
+        thủ áp dụng. Quy trình như sau:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1926,40 +1930,34 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        Hồ sơ này đóng vai trò là bằng chứng kỹ thuật và thống kê của
-        yêu cầu sản phẩm chứng minh tiêu chuẩn theo dõi an toàn.
+        Hồ sơ này đóng vai trò là bằng chứng kỹ thuật và thống kê của yêu cầu
+        sản phẩm chứng minh tiêu chuẩn theo dõi an toàn.
       </p>
 
-
       <p className="service-left-content-paragraph">
-        Trong thời gian kiểm tra, các quan chức BIS dự kiến sẽ:
-        Phân tích hồ sơ kỹ thuật, Đánh giá các phương pháp sản xuất cùng
-        với các hệ thống đảm bảo chất lượng hỗ trợ, Quan sát kiểm tra sản phẩm,
-        Xác định không tuân thủ (nếu có) và đưa ra các bước khắc phục. Báo cáo
-        chi tiết về kiểm toán được cung cấp cho người nộp đơn sau chuyến thăm.
+        Trong thời gian kiểm tra, các quan chức BIS dự kiến sẽ: Phân tích hồ sơ
+        kỹ thuật, Đánh giá các phương pháp sản xuất cùng với các hệ thống đảm
+        bảo chất lượng hỗ trợ, Quan sát kiểm tra sản phẩm, Xác định không tuân
+        thủ (nếu có) và đưa ra các bước khắc phục. Báo cáo chi tiết về kiểm toán
+        được cung cấp cho người nộp đơn sau chuyến thăm.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
-        Chiến lược này duy trì tuân thủ Tiêu chuẩn BIS và là
-        sự công nhận tuân thủ Ấn Độ và quốc tế, tập trung ngành công nghiệp vào lòng tin
-        của người tiêu dùng đối với an toàn và chất lượng.
+        Chiến lược này duy trì tuân thủ Tiêu chuẩn BIS và là sự công nhận tuân
+        thủ Ấn Độ và quốc tế, tập trung ngành công nghiệp vào lòng tin của người
+        tiêu dùng đối với an toàn và chất lượng.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         Quy trình cho Nhà sản xuất Trong nước
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Các nhà sản xuất trong nước tuân theo cách tiếp cận trực tiếp bằng cách nhận Giấy phép BIS
-        theo Scheme-X. Các bước trực tiếp cần tuân theo bao gồm:
+        Các nhà sản xuất trong nước tuân theo cách tiếp cận trực tiếp bằng cách
+        nhận Giấy phép BIS theo Scheme-X. Các bước trực tiếp cần tuân theo bao
+        gồm:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1974,23 +1972,21 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        <strong>Lịch trình Thông thường:</strong> Gần 90 ngày làm việc (theo thực tiễn BIS)
-        là cần thiết. Điều này được cung cấp không có các
-        không tuân thủ chính.
+        <strong>Lịch trình Thông thường:</strong> Gần 90 ngày làm việc (theo
+        thực tiễn BIS) là cần thiết. Điều này được cung cấp không có các không
+        tuân thủ chính.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         Quy trình cho Nhà sản xuất Nước ngoài
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Không giống như nhà sản xuất trong nước, các nhà sản xuất nước ngoài nộp đơn xin chứng nhận BIS
-        theo Scheme-X được yêu cầu tuân thủ quy trình nghiêm ngặt hơn
-        và các bước bổ sung. Quy trình được chi tiết hóa như sau.
+        Không giống như nhà sản xuất trong nước, các nhà sản xuất nước ngoài nộp
+        đơn xin chứng nhận BIS theo Scheme-X được yêu cầu tuân thủ quy trình
+        nghiêm ngặt hơn và các bước bổ sung. Quy trình được chi tiết hóa như
+        sau.
       </p>
 
       <PointsListWithoutHeading
@@ -2008,22 +2004,18 @@ const SchemeXMainContentLeftProcessSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Kiểm toán bao gồm: Đánh giá các hệ thống đảm bảo chất lượng và quy trình làm việc
-        trong quy trình sản xuất, Đánh giá tuân thủ
-        và tài liệu kỹ thuật, Lựa chọn mẫu kiểm tra độc lập.
+        Kiểm toán bao gồm: Đánh giá các hệ thống đảm bảo chất lượng và quy trình
+        làm việc trong quy trình sản xuất, Đánh giá tuân thủ và tài liệu kỹ
+        thuật, Lựa chọn mẫu kiểm tra độc lập.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        Toàn bộ quy trình mất, dựa trên thực tiễn từ BIS, khoảng 6-7
-        tháng.
+        Toàn bộ quy trình mất, dựa trên thực tiễn từ BIS, khoảng 6-7 tháng.
       </p>
-
 
       <h3 className="service-left-content-heading-three">
         Các Chỉ dẫn Bổ sung Chính cho Nhà sản xuất Nước ngoài:
       </h3>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2032,10 +2024,9 @@ const SchemeXMainContentLeftProcessSection = () => {
           "Kiểm toán Nhà máy: Kiểm toán nhà máy cho nhà sản xuất nước ngoài là toàn diện và thường kéo dài 3 ngày. Ngoài ra, cần thêm ngày trong trường hợp nộp nhiều đơn sản phẩm.",
         ]}
       />
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftOverviewSection = () => {
   // Download function for table data
@@ -2057,100 +2048,92 @@ const SchemeXMainContentLeftOverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-
       <h2 className="service-left-content-heading-two">
         Giới thiệu về Chứng nhận Scheme X của BIS
       </h2>
 
       <p className="service-left-content-paragraph">
-        Cục Tiêu chuẩn Ấn Độ, hay viết tắt là BIS, đã triển khai
-        &ldquo;Scheme X&rdquo; vào ngày 16 tháng 3 năm 2022, nhằm cải thiện việc tuân thủ
-        an toàn và chất lượng sản phẩm tại Ấn Độ. Các nhà sản xuất Ấn Độ và nước ngoài
-        có thể nộp đơn xin chứng nhận BIS cho Thiết bị và Máy móc Điện,
+        Cục Tiêu chuẩn Ấn Độ, hay viết tắt là BIS, đã triển khai &ldquo;Scheme
+        X&rdquo; vào ngày 16 tháng 3 năm 2022, nhằm cải thiện việc tuân thủ an
+        toàn và chất lượng sản phẩm tại Ấn Độ. Các nhà sản xuất Ấn Độ và nước
+        ngoài có thể nộp đơn xin chứng nhận BIS cho Thiết bị và Máy móc Điện,
         các thành phần như lắp ráp, lắp ráp con và Công cụ được quy định trong
-        Lịch II của Scheme-X và nhận chứng nhận trước khi xuất khẩu,
-        bán hoặc phân phối tại Ấn Độ.
+        Lịch II của Scheme-X và nhận chứng nhận trước khi xuất khẩu, bán hoặc
+        phân phối tại Ấn Độ.
       </p>
-
 
       <p className="service-left-content-paragraph">
         Theo Scheme X, các nhà sản xuất có thể nộp đơn xin Giấy phép BIS hoặc
-        Giấy chứng nhận Tuân thủ (CoC) cho thiết bị chuyển mạch và điều khiển điện áp thấp,
-        máy móc và thiết bị điện. Một khi các nhà sản xuất được
-        chứng nhận, họ được phép sử dụng Dấu hiệu Tiêu chuẩn BIS, cho biết
-        rằng sản phẩm của họ tuân thủ các tiêu chuẩn được quy định tại
-        Ấn Độ.
+        Giấy chứng nhận Tuân thủ (CoC) cho thiết bị chuyển mạch và điều khiển
+        điện áp thấp, máy móc và thiết bị điện. Một khi các nhà sản xuất được
+        chứng nhận, họ được phép sử dụng Dấu hiệu Tiêu chuẩn BIS, cho biết rằng
+        sản phẩm của họ tuân thủ các tiêu chuẩn được quy định tại Ấn Độ.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        Chứng nhận này, đồng thời thúc đẩy sản phẩm và tuân thủ Tiêu chuẩn
-        Ấn Độ và Quy định Chính phủ, giúp xây dựng lòng tin và
-        sự tự tin của người tiêu dùng đối với các sản phẩm được chứng nhận.
+        Chứng nhận này, đồng thời thúc đẩy sản phẩm và tuân thủ Tiêu chuẩn Ấn Độ
+        và Quy định Chính phủ, giúp xây dựng lòng tin và sự tự tin của người
+        tiêu dùng đối với các sản phẩm được chứng nhận.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         Scheme X Certification là gì?
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Scheme X là chương trình chứng nhận sản phẩm được phát triển theo Quy định Đánh giá Tuân thủ BIS, 2018 và sau đó được đơn giản hóa theo
-        Quy định Đánh giá Tuân thủ (Sửa đổi) BIS, 2022.
+        Scheme X là chương trình chứng nhận sản phẩm được phát triển theo Quy
+        định Đánh giá Tuân thủ BIS, 2018 và sau đó được đơn giản hóa theo Quy
+        định Đánh giá Tuân thủ (Sửa đổi) BIS, 2022.
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         Mục tiêu chính là đưa các tiêu chuẩn an toàn và chất lượng Ấn Độ lên
-        tiêu chuẩn toàn cầu, đặc biệt liên quan đến máy móc công nghiệp và
-        thiết bị điện. Các sản phẩm được sản xuất hoặc nhập khẩu vào Ấn Độ
-        theo chương trình này phải trải qua kiểm tra và đánh giá nghiêm ngặt để
-        chứng minh tiêu chuẩn kỹ thuật, an toàn cũng như hiệu suất.
-      </p>
-
-
-      <p className="service-left-content-paragraph">
-        Các quy định trong phạm vi ban đầu của Chứng nhận Scheme X đã được
-        sửa đổi và mở rộng với Lệnh Quy định Kỹ thuật Tổng hợp (Quy định An toàn Máy móc và Thiết bị Điện), 2024 mới được ban hành, thuộc thẩm quyền của
-        Bộ Công nghiệp Nặng và được thực thi bởi BIS. Lệnh này có hiệu lực từ ngày 1
-        tháng 9 năm 2026, và bao gồm một loạt máy móc và thiết bị điện
-        như bơm xử lý chất lỏng, máy nén, cần cẩu,
-        máy điện quay, máy biến áp và thiết bị chuyển mạch và điều khiển.
-      </p>
-
-
-      <p className="service-left-content-paragraph">
-        Các lắp ráp, lắp ráp con và thành phần của máy móc hoặc thiết bị
-        như vậy cũng là một phần của phạm vi chứng nhận theo Phần 16 của Đạo luật Cục Tiêu chuẩn Ấn Độ, 2016.
+        tiêu chuẩn toàn cầu, đặc biệt liên quan đến máy móc công nghiệp và thiết
+        bị điện. Các sản phẩm được sản xuất hoặc nhập khẩu vào Ấn Độ theo chương
+        trình này phải trải qua kiểm tra và đánh giá nghiêm ngặt để chứng minh
+        tiêu chuẩn kỹ thuật, an toàn cũng như hiệu suất.
       </p>
 
       <p className="service-left-content-paragraph">
-        Hơn nữa, theo Quy tắc CMVR 1989 (Xây dựng và Sản xuất Quy định Van), Bowser và các loại thiết bị xây dựng khác
-        thuộc thẩm quyền của Scheme X, đảm bảo rằng thị trường không bị
-        tiếp xúc với thiết bị thiếu các yêu cầu an toàn và
-        tiêu chuẩn kỹ thuật cần thiết.
+        Các quy định trong phạm vi ban đầu của Chứng nhận Scheme X đã được sửa
+        đổi và mở rộng với Lệnh Quy định Kỹ thuật Tổng hợp (Quy định An toàn Máy
+        móc và Thiết bị Điện), 2024 mới được ban hành, thuộc thẩm quyền của Bộ
+        Công nghiệp Nặng và được thực thi bởi BIS. Lệnh này có hiệu lực từ ngày
+        1 tháng 9 năm 2026, và bao gồm một loạt máy móc và thiết bị điện như bơm
+        xử lý chất lỏng, máy nén, cần cẩu, máy điện quay, máy biến áp và thiết
+        bị chuyển mạch và điều khiển.
       </p>
 
+      <p className="service-left-content-paragraph">
+        Các lắp ráp, lắp ráp con và thành phần của máy móc hoặc thiết bị như vậy
+        cũng là một phần của phạm vi chứng nhận theo Phần 16 của Đạo luật Cục
+        Tiêu chuẩn Ấn Độ, 2016.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Hơn nữa, theo Quy tắc CMVR 1989 (Xây dựng và Sản xuất Quy định Van),
+        Bowser và các loại thiết bị xây dựng khác thuộc thẩm quyền của Scheme X,
+        đảm bảo rằng thị trường không bị tiếp xúc với thiết bị thiếu các yêu cầu
+        an toàn và tiêu chuẩn kỹ thuật cần thiết.
+      </p>
 
       <h2 className="service-left-content-heading-three">
         Quy định Kỹ thuật Tổng hợp (OTR)
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Bộ Công nghiệp Nặng đã ban hành &ldquo;Quy định Kỹ thuật Tổng hợp về Lệnh An toàn (An toàn Máy móc và Thiết bị Điện)&rdquo; qua thông báo E-Gazette ngày 28 tháng 8 năm 2024. Quy định
-        sáng tạo này nhằm cải thiện - an toàn, chất lượng và
-        tuân thủ của máy móc, thiết bị điện và các lắp ráp, lắp ráp con
-        và thành phần của chúng, theo Scheme X của Quy định BIS, 2016.
+        Bộ Công nghiệp Nặng đã ban hành &ldquo;Quy định Kỹ thuật Tổng hợp về
+        Lệnh An toàn (An toàn Máy móc và Thiết bị Điện)&rdquo; qua thông báo
+        E-Gazette ngày 28 tháng 8 năm 2024. Quy định sáng tạo này nhằm cải thiện
+        - an toàn, chất lượng và tuân thủ của máy móc, thiết bị điện và các lắp
+        ráp, lắp ráp con và thành phần của chúng, theo Scheme X của Quy định
+        BIS, 2016.
       </p>
 
-
       <p className="service-left-content-paragraph">
-        Theo OTR, tất cả các loại máy móc và thiết bị điện, và
-        tất cả các bộ phận và thành phần của chúng được bao gồm. Tuy nhiên, một số loại
-        được loại trừ cụ thể:
+        Theo OTR, tất cả các loại máy móc và thiết bị điện, và tất cả các bộ
+        phận và thành phần của chúng được bao gồm. Tuy nhiên, một số loại được
+        loại trừ cụ thể:
       </p>
 
       <PointsListWithoutHeading
@@ -2161,68 +2144,56 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        Những ngoại lệ này được thực hiện để hỗ trợ tuân thủ và tránh trùng lặp không cần thiết
-        quy định nhằm thúc đẩy dễ dàng kinh doanh.
+        Những ngoại lệ này được thực hiện để hỗ trợ tuân thủ và tránh trùng lặp
+        không cần thiết quy định nhằm thúc đẩy dễ dàng kinh doanh.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
-        Quy định Kỹ thuật Tổng hợp, 2024 bao gồm tất cả máy móc và
-        thiết bị điện, bao gồm thiết bị chuyển mạch và điều khiển điện áp thấp được thông báo bởi Bộ Công nghiệp Nặng, sẽ được xử lý theo
-        khung Scheme X của Chứng nhận BIS. Lệnh này sẽ có hiệu lực
-        vào ngày 1 tháng 9 năm 2026 để các nhà sản xuất và nhà nhập khẩu có
-        đủ thời gian để điều chỉnh hoạt động theo các Lệnh được ban hành.
+        Quy định Kỹ thuật Tổng hợp, 2024 bao gồm tất cả máy móc và thiết bị
+        điện, bao gồm thiết bị chuyển mạch và điều khiển điện áp thấp được thông
+        báo bởi Bộ Công nghiệp Nặng, sẽ được xử lý theo khung Scheme X của Chứng
+        nhận BIS. Lệnh này sẽ có hiệu lực vào ngày 1 tháng 9 năm 2026 để các nhà
+        sản xuất và nhà nhập khẩu có đủ thời gian để điều chỉnh hoạt động theo
+        các Lệnh được ban hành.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         Chứng nhận BIS theo Quy định Kỹ thuật Tổng hợp
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Theo OTR 2024, các nhà sản xuất cũng như nhà nhập khẩu của máy móc
-        và thiết bị điện bao gồm bơm, máy nén,
-        máy ly tâm, cần cẩu, máy biến áp và thiết bị chuyển mạch phải nộp đơn xin
-        Chứng nhận BIS theo Scheme X.
+        Theo OTR 2024, các nhà sản xuất cũng như nhà nhập khẩu của máy móc và
+        thiết bị điện bao gồm bơm, máy nén, máy ly tâm, cần cẩu, máy biến áp và
+        thiết bị chuyển mạch phải nộp đơn xin Chứng nhận BIS theo Scheme X.
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         Theo Scheme X, các nhà sản xuất có thể chọn nộp đơn xin:
       </p>
 
-
       <PointsListWithoutHeading
         points={["Giấy phép BIS, hoặc", "Giấy chứng nhận Tuân thủ (CoC)"]}
       />
 
-
       <p className="service-left-content-paragraph">
-        Các sản phẩm mang Dấu hiệu Tiêu chuẩn BIS là Dấu hiệu Tuân thủ
-        chứng nhận và đảm bảo với người dùng rằng sản phẩm an toàn,
-        đáng tin cậy và chất lượng tốt. Nó cũng là dấu hiệu của lòng tin và hiệu suất
-        thực sự tốt.
+        Các sản phẩm mang Dấu hiệu Tiêu chuẩn BIS là Dấu hiệu Tuân thủ chứng
+        nhận và đảm bảo với người dùng rằng sản phẩm an toàn, đáng tin cậy và
+        chất lượng tốt. Nó cũng là dấu hiệu của lòng tin và hiệu suất thực sự
+        tốt.
       </p>
-
 
       <h3 className="service-left-content-heading-three">
         Lưu Ý Đặc Biệt cho MSMEs
       </h3>
 
-
       <p className="service-left-content-paragraph">
-        Giống như nhiều lĩnh vực khác, Các Doanh nghiệp Nhỏ và Vừa (MSMEs)
-        cũng phải tuân thủ Scheme X và nhận Chứng nhận BIS cho
-        máy móc và thiết bị điện của họ. Mặc dù có thể có vẻ rằng việc tuân thủ
-        các yêu cầu quy định có thể khó khăn, chứng nhận Scheme X
-        là một giá trị gia tăng và lợi thế cho MSMEs vì các lý do sau:
+        Giống như nhiều lĩnh vực khác, Các Doanh nghiệp Nhỏ và Vừa (MSMEs) cũng
+        phải tuân thủ Scheme X và nhận Chứng nhận BIS cho máy móc và thiết bị
+        điện của họ. Mặc dù có thể có vẻ rằng việc tuân thủ các yêu cầu quy định
+        có thể khó khăn, chứng nhận Scheme X là một giá trị gia tăng và lợi thế
+        cho MSMEs vì các lý do sau:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2233,19 +2204,14 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <h3 className="service-left-content-heading-three">
         Logo Scheme X của BIS
       </h3>
 
-
-
       <p className="service-left-content-paragraph">
-        Dấu hiệu tiêu chuẩn BIS của Scheme X tạo thành một dấu hiệu chất lượng và nguyên tắc
-        lòng tin. Logo chứa:
+        Dấu hiệu tiêu chuẩn BIS của Scheme X tạo thành một dấu hiệu chất lượng
+        và nguyên tắc lòng tin. Logo chứa:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2254,14 +2220,11 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <p className="service-left-content-paragraph">
-        Dấu hiệu này cho biết rằng Giấy phép BIS đã được cấp thành công cho
-        nhà sản xuất. Nó cho phép nhà sản xuất đặt Dấu hiệu BIS và
-        đảm bảo với người tiêu dùng rằng sản phẩm là chính hãng và an toàn.
+        Dấu hiệu này cho biết rằng Giấy phép BIS đã được cấp thành công cho nhà
+        sản xuất. Nó cho phép nhà sản xuất đặt Dấu hiệu BIS và đảm bảo với người
+        tiêu dùng rằng sản phẩm là chính hãng và an toàn.
       </p>
-
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
@@ -2272,29 +2235,20 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-
-      <h3 className="service-left-content-heading-three">
-        Hậu Quả Pháp Lý
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Hậu Quả Pháp Lý</h3>
 
       <p className="service-left-content-paragraph">
-        Dấu hiệu Tiêu chuẩn BIS là dấu hiệu của lòng tin và chất lượng. Dấu hiệu chỉ
-        có sẵn sau khi có hợp đồng hợp lệ. Chỉ hợp đồng hợp lệ
-        cho phép chủ sở hữu sử dụng dấu hiệu. Sử dụng dấu hiệu mà không có
-        hợp đồng hợp lệ là tội phạm theo hiến pháp Ấn Độ và tương đương với
-        có dấu hiệu pháp lý. Chủ sở hữu của dấu hiệu bị đặt dưới các hạn chế nặng nề
-        cho việc sử dụng giấy phép CM/L-XXXXXXXXXX cho sản phẩm
-        không có chứng nhận BIS.
+        Dấu hiệu Tiêu chuẩn BIS là dấu hiệu của lòng tin và chất lượng. Dấu hiệu
+        chỉ có sẵn sau khi có hợp đồng hợp lệ. Chỉ hợp đồng hợp lệ cho phép chủ
+        sở hữu sử dụng dấu hiệu. Sử dụng dấu hiệu mà không có hợp đồng hợp lệ là
+        tội phạm theo hiến pháp Ấn Độ và tương đương với có dấu hiệu pháp lý.
+        Chủ sở hữu của dấu hiệu bị đặt dưới các hạn chế nặng nề cho việc sử dụng
+        giấy phép CM/L-XXXXXXXXXX cho sản phẩm không có chứng nhận BIS.
       </p>
-
-
-
 
       <p className="service-left-content-paragraph">
         Do đó, mọi nhà sản xuất đều có nghĩa vụ:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2304,24 +2258,17 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        Khung quy định này được mở rộng để bảo vệ lợi ích của
-        người tiêu dùng và doanh nhân, thúc đẩy một thị trường nhấn mạnh
-        an toàn, minh bạch và lòng tin.
+        Khung quy định này được mở rộng để bảo vệ lợi ích của người tiêu dùng và
+        doanh nhân, thúc đẩy một thị trường nhấn mạnh an toàn, minh bạch và lòng
+        tin.
       </p>
-
-
 
       <h2 className="service-left-content-heading-three">
         Sự Khác Biệt Chính Giữa Scheme-I và Scheme-X
       </h2>
 
-
-      <h3 className="service-left-content-heading-three">
-        Scheme-I
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Scheme-I</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2332,9 +2279,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
-        Scheme-X
-      </h3>
+      <h3 className="service-left-content-heading-three">Scheme-X</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2420,18 +2365,14 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-
       <h3 className="service-left-content-heading-three">
         Các Sản phẩm Được Bao Phủ bởi Scheme-X
       </h3>
 
-
       <p className="service-left-content-paragraph">
-        Scheme-X bao gồm các sản phẩm có rủi ro cao nhất đối với an toàn và
-        hiệu suất, bao gồm:
+        Scheme-X bao gồm các sản phẩm có rủi ro cao nhất đối với an toàn và hiệu
+        suất, bao gồm:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2444,7 +2385,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
       {/* Scheme X Product Table 20 */}
       <div className="mt-[16px] md:mt-[24px]">
-
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
@@ -2474,8 +2414,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                841340, 841350, 841360, 841370, 841381, 841382, 841391 và
-                841392
+                841340, 841350, 841360, 841370, 841381, 841382, 841391 và 841392
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -2487,8 +2426,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-nen-khi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại máy nén và (hoặc) các lắp ráp / lắp ráp con
-                  / thành phần của chúng
+                  Tất cả các loại máy nén và (hoặc) các lắp ráp / lắp ráp con /
+                  thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2505,9 +2444,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-thiet-bi-xu-ly-nhiet"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại máy móc xử lý vật liệu bằng quy trình
-                  liên quan đến thay đổi nhiệt độ và (hoặc) các lắp ráp
-                  / lắp ráp con / thành phần của chúng
+                  Tất cả các loại máy móc xử lý vật liệu bằng quy trình liên
+                  quan đến thay đổi nhiệt độ và (hoặc) các lắp ráp / lắp ráp con
+                  / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2524,9 +2463,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-ly-tam-va-thiet-bi-loc-hoac-tinh-che"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại máy ly tâm, máy lọc hoặc làm sạch cho
-                  chất lỏng và khí và (hoặc) các lắp ráp / lắp ráp con
-                  / thành phần của chúng
+                  Tất cả các loại máy ly tâm, máy lọc hoặc làm sạch cho chất
+                  lỏng và khí và (hoặc) các lắp ráp / lắp ráp con / thành phần
+                  của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2543,9 +2482,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-moc-dong-goi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại máy móc cho việc đổ đầy, đóng, niêm phong, dán nhãn
-                  chai, đóng gói hoặc bọc và (hoặc) các
-                  lắp ráp / lắp ráp con / thành phần của chúng
+                  Tất cả các loại máy móc cho việc đổ đầy, đóng, niêm phong, dán
+                  nhãn chai, đóng gói hoặc bọc và (hoặc) các lắp ráp / lắp ráp
+                  con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2561,8 +2500,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-can-cau"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại cần cẩu và (hoặc) các lắp ráp
-                  / lắp ráp con / thành phần của chúng
+                  Tất cả các loại cần cẩu và (hoặc) các lắp ráp / lắp ráp con /
+                  thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2579,8 +2518,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-moc-xay-dung"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại máy móc cho xây dựng, di chuyển đất, Khai thác và
-                  (hoặc) các lắp ráp / lắp ráp con / thành phần của chúng
+                  Tất cả các loại máy móc cho xây dựng, di chuyển đất, Khai thác
+                  và (hoặc) các lắp ráp / lắp ráp con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2597,8 +2536,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-det"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại máy dệt (khung dệt) và (hoặc) các
-                  lắp ráp / lắp ráp con / thành phần của chúng
+                  Tất cả các loại máy dệt (khung dệt) và (hoặc) các lắp ráp /
+                  lắp ráp con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2614,8 +2553,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-moc-theu"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại máy móc làm thêu và (hoặc) các
-                  lắp ráp / lắp ráp con / thành phần của chúng
+                  Tất cả các loại máy móc làm thêu và (hoặc) các lắp ráp / lắp
+                  ráp con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2632,8 +2571,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Tất cả các loại công cụ máy cắt kim loại được bao phủ theo
-                  tiêu đề 8456 đến 8461 và (hoặc) các lắp ráp
-                  / lắp ráp con / thành phần của chúng
+                  tiêu đề 8456 đến 8461 và (hoặc) các lắp ráp / lắp ráp con /
+                  thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2649,8 +2588,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-cong-cu"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại công cụ máy cho việc gia công đá, gốm,
-                  bê tông, xi măng amiăng hoặc kính khoáng tương tự và (hoặc) các
+                  Tất cả các loại công cụ máy cho việc gia công đá, gốm, bê
+                  tông, xi măng amiăng hoặc kính khoáng tương tự và (hoặc) các
                   lắp ráp / lắp ráp con / thành phần của chúng
                 </Link>
               </TableCell>
@@ -2667,8 +2606,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-moc-cao-su-va-nhua"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại máy móc gia công cao su và nhựa và (hoặc)
-                  các lắp ráp / lắp ráp con / thành phần của chúng
+                  Tất cả các loại máy móc gia công cao su và nhựa và (hoặc) các
+                  lắp ráp / lắp ráp con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2685,9 +2624,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Tất cả các loại Máy bao gồm các máy cho công trình công cộng &
-                  xây dựng và máy móc & thiết bị cơ khí có
-                  chức năng riêng lẻ, không được quy định Hoặc bao gồm ở nơi khác trong
-                  Chương 84 và (hoặc) các lắp ráp / lắp ráp con / thành phần của chúng
+                  xây dựng và máy móc & thiết bị cơ khí có chức năng riêng lẻ,
+                  không được quy định Hoặc bao gồm ở nơi khác trong Chương 84 và
+                  (hoặc) các lắp ráp / lắp ráp con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2703,10 +2642,11 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại bánh răng và cơ cấu bánh răng, bánh răng có răng, xích sprocket,
-                  các yếu tố truyền động vít bi hoặc con lăn, hộp số và
-                  bộ thay đổi tốc độ, bao gồm bộ chuyển đổi mô-men xoắn Và (hoặc) các
-                  lắp ráp / lắp ráp con / thành phần của chúng
+                  Tất cả các loại bánh răng và cơ cấu bánh răng, bánh răng có
+                  răng, xích sprocket, các yếu tố truyền động vít bi hoặc con
+                  lăn, hộp số và bộ thay đổi tốc độ, bao gồm bộ chuyển đổi
+                  mô-men xoắn Và (hoặc) các lắp ráp / lắp ráp con / thành phần
+                  của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2722,8 +2662,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-dien-quay"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại Máy điện quay như Máy phát, v.v.
-                  và (hoặc) các lắp ráp / lắp ráp con / thành phần của chúng
+                  Tất cả các loại Máy điện quay như Máy phát, v.v. và (hoặc) các
+                  lắp ráp / lắp ráp con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2739,8 +2679,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại Máy phát Diesel và (hoặc) các lắp ráp
-                  / lắp ráp con / thành phần của chúng
+                  Tất cả các loại Máy phát Diesel và (hoặc) các lắp ráp / lắp
+                  ráp con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2756,13 +2696,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-may-bien-ap"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại Máy biến áp và (hoặc) các lắp ráp
-                  / lắp ráp con / thành phần của chúng
+                  Tất cả các loại Máy biến áp và (hoặc) các lắp ráp / lắp ráp
+                  con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                850421, 850422, 850423, 850431, 850432, 850433, 850434 và
-                850490
+                850421, 850422, 850423, 850431, 850432, 850433, 850434 và 850490
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -2791,9 +2730,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-len-den-1000-volts"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại thiết bị chuyển mạch và điều khiển hoạt động tại
-                  điện áp không vượt quá 1000 vôn và (hoặc) các lắp ráp
-                  / lắp ráp con / thành phần của chúng
+                  Tất cả các loại thiết bị chuyển mạch và điều khiển hoạt động
+                  tại điện áp không vượt quá 1000 vôn và (hoặc) các lắp ráp /
+                  lắp ráp con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2809,9 +2748,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/chung-nhan-bis-scheme-x-cho-thiet-bi-chuyen-mach-va-dieu-khien-tren-1000-volts"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Tất cả các loại thiết bị chuyển mạch và điều khiển hoạt động tại
-                  điện áp vượt quá 1000 vôn và (hoặc) các lắp ráp
-                  / lắp ráp con / thành phần của chúng
+                  Tất cả các loại thiết bị chuyển mạch và điều khiển hoạt động
+                  tại điện áp vượt quá 1000 vôn và (hoặc) các lắp ráp / lắp ráp
+                  con / thành phần của chúng
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2859,24 +2798,18 @@ const SchemeXMainContentLeftOverviewSection = () => {
         Tiêu chuẩn An toàn Theo BIS Scheme - X
       </h2>
 
-
-
       <p className="service-left-content-paragraph">
-        Hơn cả một nhu cầu pháp lý, Chứng nhận BIS Scheme - X
-        mang lại lời hứa về an toàn, chất lượng và độ tin cậy. Chứng nhận
-        này, đòi hỏi tuân thủ nghiêm ngặt các tiêu chuẩn quốc gia và
-        quốc tế, đảm bảo rằng máy móc và thiết bị điện
-        được cung cấp cho người dùng là an toàn, thân thiện với môi trường và kỹ thuật
-        vững chắc.
+        Hơn cả một nhu cầu pháp lý, Chứng nhận BIS Scheme - X mang lại lời hứa
+        về an toàn, chất lượng và độ tin cậy. Chứng nhận này, đòi hỏi tuân thủ
+        nghiêm ngặt các tiêu chuẩn quốc gia và quốc tế, đảm bảo rằng máy móc và
+        thiết bị điện được cung cấp cho người dùng là an toàn, thân thiện với
+        môi trường và kỹ thuật vững chắc.
       </p>
 
-
       <p className="service-left-content-paragraph">
-        Để chứng nhận theo Scheme - X, các nhà sản xuất cần tuân thủ
-        các thành phần an toàn chính sau:
+        Để chứng nhận theo Scheme - X, các nhà sản xuất cần tuân thủ các thành
+        phần an toàn chính sau:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2888,23 +2821,16 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <h2 className="service-left-content-heading-three">
         Tiêu chuẩn Quy định Theo Scheme-X
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Các nhà sản xuất được yêu cầu tuân thủ Các Tiêu chuẩn Ấn Độ Liên quan
         phù hợp với Tiêu chuẩn Quốc tế, bao gồm:
       </p>
 
-
-      <h3 className="service-left-content-heading-three">
-        Tiêu chuẩn Loại A:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Tiêu chuẩn Loại A:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2912,11 +2838,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        Tiêu chuẩn Loại B:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Tiêu chuẩn Loại B:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2924,32 +2846,22 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
-      <h3 className="service-left-content-heading-three">
-        Tiêu chuẩn Loại C:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Tiêu chuẩn Loại C:</h3>
 
       <PointsListWithoutHeading
         points={["Được mô tả trong Lịch Thứ ba của Lệnh OTR, 2024."]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        Loạt IS/IEC 60947:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Loạt IS/IEC 60947:</h3>
 
       <PointsListWithoutHeading
         points={[
           "Bao gồm thiết bị chuyển mạch và điều khiển điện áp thấp ở nhiều phần và phần.",
-        ]} />
+        ]}
+      />
     </div>
-  )
-}
-
-
+  );
+};
 
 const PointsListWithoutHeading = ({ points }) => {
   return (

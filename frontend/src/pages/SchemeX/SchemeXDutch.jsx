@@ -35,7 +35,6 @@ import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -45,7 +44,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterDutch from "@/components/manual/Footer/FooterDutch";
 import ServicesRightSideContentDutch from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentDutch";
 import ServiceAuthorDutch from "@/components/manual/ServiceAuthor/ServiceAuthorDutch";
-
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -66,12 +64,11 @@ const SchemeXDutch = () => {
       <FooterDutch />
       {/* Scroll To Top Button Section */}
       <ScrollToTopButton />
-
     </div>
-  )
-}
+  );
+};
 
-export default SchemeXDutch
+export default SchemeXDutch;
 
 const SchemeXMetaTags = () => {
   const breadcrumbStructuredData = {
@@ -96,7 +93,8 @@ const SchemeXMetaTags = () => {
     <Helmet>
       {/* Basic Meta Tags */}
       <title>
-        BIS Scheme X Certificering | Veiligheid van Machines en Elektrische Apparatuur
+        BIS Scheme X Certificering | Veiligheid van Machines en Elektrische
+        Apparatuur
       </title>
       <meta
         name="description"
@@ -110,7 +108,6 @@ const SchemeXMetaTags = () => {
       <meta name="author" content="Dhruv Aggarwal" />
       <meta name="publisher" content="Sun Certifications India" />
       <meta name="robots" content="index, follow" />
-
 
       {/* Canonical URL */}
       <link rel="canonical" href={window.location.href} />
@@ -143,11 +140,9 @@ const SchemeXMetaTags = () => {
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbStructuredData)}
       </script>
-
-
     </Helmet>
-  )
-}
+  );
+};
 const SchemeXBreadcrumb = () => {
   return (
     <div className="absolute md:top-5 top-3 left-0 w-full z-30">
@@ -164,7 +159,8 @@ const SchemeXBreadcrumb = () => {
                 <SlashIcon />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbPage>Indiase BIS-certificering onder Scheme-X
+                <BreadcrumbPage>
+                  Indiase BIS-certificering onder Scheme-X
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -172,8 +168,8 @@ const SchemeXBreadcrumb = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXHero = () => {
   return (
@@ -205,9 +201,10 @@ const SchemeXHero = () => {
           </h1>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            BIS Scheme X-certificering omvat Machines, Elektrische Apparatuur en Componentassemblages, en Sub-assemblages onder de Omnibus Technische Verordening (OTR).
+            BIS Scheme X-certificering omvat Machines, Elektrische Apparatuur en
+            Componentassemblages, en Sub-assemblages onder de Omnibus Technische
+            Verordening (OTR).
           </p>
-
 
           <div className="flex items-center -mt-2">
             <div
@@ -235,10 +232,9 @@ const SchemeXHero = () => {
         {/* Right Side */}
         <SchemeXHeroContactForm />
       </div>
-
     </main>
-  )
-}
+  );
+};
 
 const SchemeXHeroContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -346,7 +342,8 @@ const SchemeXHeroContactForm = () => {
         error.response?.data?.message || "Er is iets misgegaan";
       toast({
         variant: "destructive",
-        title: errorMessage || "Mislukt om contactformulierdetails in te dienen!",
+        title:
+          errorMessage || "Mislukt om contactformulierdetails in te dienen!",
         description:
           "Er is iets misgegaan. Controleer uw gegevens en probeer het opnieuw.",
       });
@@ -467,7 +464,6 @@ const SchemeXHeroContactForm = () => {
   );
 };
 
-
 const SchemeXIndex = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("overview");
@@ -477,12 +473,7 @@ const SchemeXIndex = () => {
   const toggleButtonRef = useRef(null);
 
   const SECTIONS = useMemo(
-    () => [
-      "overview",
-      "process",
-      "documents",
-      "conclusion",
-    ],
+    () => ["overview", "process", "documents", "conclusion"],
     []
   );
 
@@ -574,8 +565,9 @@ const SchemeXIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -625,10 +617,11 @@ const SchemeXIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -648,18 +641,20 @@ const SchemeXIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -685,8 +680,8 @@ const SchemeXMainContent = () => {
         <Services />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const Services = () => {
   return (
@@ -734,8 +729,9 @@ export const Services = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -854,7 +850,6 @@ const SchemeXProductTable = () => {
   return (
     <div className="w-full pb-12">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-
         <div className="flex flex-col gap-2 mt-6">
           <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
             Veiligheidsnorm per Product
@@ -871,9 +866,7 @@ const SchemeXProductTable = () => {
           </div>
           <input
             type="text"
-            placeholder={
-              "Zoeken op beschrijving of HS-code..."
-            }
+            placeholder={"Zoeken op beschrijving of HS-code..."}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-3 pl-12 text-base font-geist text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1A8781] focus:border-transparent transition-shadow hover:shadow-md"
@@ -887,15 +880,15 @@ const SchemeXProductTable = () => {
       <div ref={table3Ref}>
         <TypeCTable searchQuery={searchQuery} />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 const productDataTableThird = [
   {
     id: 1,
-    description: "Alle typen pompen voor het verwerken van vloeistoffen, vloeistoftliften",
+    description:
+      "Alle typen pompen voor het verwerken van vloeistoffen, vloeistoftliften",
     hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 en 841392",
     indianStandard: "-",
     title: "-",
@@ -905,7 +898,8 @@ const productDataTableThird = [
     description: "Alle typen compressoren",
     hsCode:
       "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 en 84149090",
-    indianStandard: "Artikel 16 van IS 17093:2019\nArtikel 6.6 van IS 12258:1987",
+    indianStandard:
+      "Artikel 16 van IS 17093:2019\nArtikel 6.6 van IS 12258:1987",
     title:
       "Technische leveringsvoorwaarden voor reciprocerende luchtcompressoren voor algemeen en industrieel gebruik\nTechnische leveringsvoorwaarde voor lucht-schroefcompressoren (Olie-overstroomd) voor algemeen en industrieel gebruik",
   },
@@ -957,8 +951,7 @@ const productDataTableThird = [
     description: "Alle typen weefmachines (getouwen)",
     hsCode: "8446, 844811, 844819, 844842 en 844849",
     indianStandard: "IS 17361 (Deel 6) : 2020 / ISO 11111 (Deel 6) : 2005",
-    title:
-      "Textielmachines Veiligheidseisen Deel 6 Stofproductiemachines",
+    title: "Textielmachines Veiligheidseisen Deel 6 Stofproductiemachines",
   },
   {
     id: 9,
@@ -986,7 +979,8 @@ const productDataTableThird = [
   },
   {
     id: 12,
-    description: "Alle typen machines voor het bewerken van rubber en kunststoffen",
+    description:
+      "Alle typen machines voor het bewerken van rubber en kunststoffen",
     hsCode: "8477",
     indianStandard: "IS/ISO 20430: 2020",
     title:
@@ -1030,8 +1024,7 @@ const productDataTableThird = [
   {
     id: 17,
     description: "Alle typen Transformatoren",
-    hsCode:
-      "850421, 850422, 850423, 850431, 850432, 850433, 850434 en 850490.",
+    hsCode: "850421, 850422, 850423, 850431, 850432, 850433, 850434 en 850490.",
     indianStandard:
       "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nArtikel 5.6 & Art 10 van IS 2026 (Deel 1)\nArtikel 7.5, 7.6, 7.7 van IS 2026 (Deel 6)",
     title:
@@ -1042,7 +1035,8 @@ const productDataTableThird = [
     description: "Alle typen Vermogenschakelaar Omvormers",
     hsCode: "850440",
     indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
-    title: "Artikel 7 van Halfgeleider Omvormers Deel 1 Algemene Eisen en Lijngecommuteerde Omvormers Sectie 1 Specificatie van basis eisen",
+    title:
+      "Artikel 7 van Halfgeleider Omvormers Deel 1 Algemene Eisen en Lijngecommuteerde Omvormers Sectie 1 Specificatie van basis eisen",
   },
   {
     id: 19,
@@ -1065,7 +1059,7 @@ const productDataTableThird = [
 
 const TypeCTable = ({ searchQuery }) => {
   // Filter data based on search query
-  const filteredData = productDataTableThird.filter(item => {
+  const filteredData = productDataTableThird.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1079,7 +1073,8 @@ const TypeCTable = ({ searchQuery }) => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-        TYPE C (Veiligheidsnormen voor machines die gedetailleerde veiligheids eisen behandelen voor een bepaalde machine of groep machines)
+        TYPE C (Veiligheidsnormen voor machines die gedetailleerde veiligheids
+        eisen behandelen voor een bepaalde machine of groep machines)
       </p>
 
       <div className="rounded-md border bg-white shadow-sm">
@@ -1130,7 +1125,10 @@ const TypeCTable = ({ searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={5}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   Geen resultaten gevonden voor &quot;{searchQuery}&quot;
                 </TableCell>
               </TableRow>
@@ -1462,7 +1460,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   const itemsPerPage = 20;
 
   // Filter data based on search query
-  const filteredData = productDataTableSecond.filter(item => {
+  const filteredData = productDataTableSecond.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -1478,10 +1476,7 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredData.slice(
-    indexOfFirstItem,
-    indexOfLastItem
-  );
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
@@ -1508,7 +1503,9 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
   return (
     <div className="max-w-[88rem] mx-auto px-4 md:px-12 mt-12">
       <p className="font-geist font-bold text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
-        TYPE B (Generieke Veiligheidsnormen die één veiligheidsaspect of meer dan één type beschermingsmiddel behandelen dat kan worden gebruikt over een breed scala aan machines)
+        TYPE B (Generieke Veiligheidsnormen die één veiligheidsaspect of meer
+        dan één type beschermingsmiddel behandelen dat kan worden gebruikt over
+        een breed scala aan machines)
       </p>
 
       <div className="rounded-md border bg-white shadow-sm">
@@ -1543,7 +1540,10 @@ const TypeBTable = ({ tableRef, searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={3}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   Geen resultaten gevonden voor &quot;{searchQuery}&quot;
                 </TableCell>
               </TableRow>
@@ -1582,64 +1582,88 @@ const SchemeXServiceFaq = () => {
   const faqData = [
     {
       question: "1. Wat is Scheme X onder BIS-certificering?",
-      answer: "Scheme X is een conformiteitsbeoordelingsschema dat is ingevoerd door de Indiase BIS voor machines en elektrische apparatuur. Het zorgt voor naleving van strenge veiligheids- en technische normen zoals gespecificeerd in de Omnibus Technische Verordening."
+      answer:
+        "Scheme X is een conformiteitsbeoordelingsschema dat is ingevoerd door de Indiase BIS voor machines en elektrische apparatuur. Het zorgt voor naleving van strenge veiligheids- en technische normen zoals gespecificeerd in de Omnibus Technische Verordening.",
     },
     {
       question: "2. Verschilt Scheme X van de ISI-mark certificering?",
-      answer: "Ja. De ISI-mark is over het algemeen voor consumentengoederen en basis productnaleving, terwijl Scheme X van toepassing is op complexe en industrieelwaardige producten die geavanceerde testen en certificering vereisen via een BIS-certificaat of BIS-licentie."
+      answer:
+        "Ja. De ISI-mark is over het algemeen voor consumentengoederen en basis productnaleving, terwijl Scheme X van toepassing is op complexe en industrieelwaardige producten die geavanceerde testen en certificering vereisen via een BIS-certificaat of BIS-licentie.",
     },
     {
       question: "3. Wie moet een Scheme X-certificering aanvragen?",
-      answer: "Fabrikanten en importeurs van machines en elektrische apparatuur die zijn vermeld onder de Omnibus Technische Verordening moeten Scheme X aanvragen en een geldig BIS-certificaat verkrijgen om hun producten legaal te verkopen of te distribueren in India. Wereldwijde fabrikanten of buitenlandse fabrikanten die producten in India willen verkopen, moeten ook aan deze regelingen voldoen."
+      answer:
+        "Fabrikanten en importeurs van machines en elektrische apparatuur die zijn vermeld onder de Omnibus Technische Verordening moeten Scheme X aanvragen en een geldig BIS-certificaat verkrijgen om hun producten legaal te verkopen of te distribueren in India. Wereldwijde fabrikanten of buitenlandse fabrikanten die producten in India willen verkopen, moeten ook aan deze regelingen voldoen.",
     },
     {
       question: "4. Wat is de kosten van BIS Scheme X-certificering?",
-      answer: "De kosten van Scheme X omvatten aanvraagkosten, certificeringskosten, technische bestandsbeoordelingskosten, fabrieksinspectiekosten en producttestkosten. Gemiddeld begint het bij ₹2.000 voor de aanvraag en kan het hoger zijn afhankelijk van de productcomplexiteit. Voor meer details neem contact op via admin@bis-certifications.com."
+      answer:
+        "De kosten van Scheme X omvatten aanvraagkosten, certificeringskosten, technische bestandsbeoordelingskosten, fabrieksinspectiekosten en producttestkosten. Gemiddeld begint het bij ₹2.000 voor de aanvraag en kan het hoger zijn afhankelijk van de productcomplexiteit. Voor meer details neem contact op via admin@bis-certifications.com.",
     },
     {
-      question: "5. Hoe lang duurt het om een BIS-licentie onder Scheme X te krijgen?",
-      answer: "De tijdlijn varieert afhankelijk van documentatie, testvereisten en fabrieksinspecties. Meestal duurt het 4–6 weken vanaf de datum van succesvolle BIS-registratie en indiening van de aanvraag voor Indiase fabrikanten en 60-90 dagen voor buitenlandse fabrikanten."
+      question:
+        "5. Hoe lang duurt het om een BIS-licentie onder Scheme X te krijgen?",
+      answer:
+        "De tijdlijn varieert afhankelijk van documentatie, testvereisten en fabrieksinspecties. Meestal duurt het 4–6 weken vanaf de datum van succesvolle BIS-registratie en indiening van de aanvraag voor Indiase fabrikanten en 60-90 dagen voor buitenlandse fabrikanten.",
     },
     {
-      question: "6. Kunnen MSME's ook een BIS-certificaat aanvragen onder Scheme X?",
-      answer: "Absoluut. De Indiase BIS moedigt MSME's aan om een BIS-licentie of certificaat van conformiteit aan te vragen onder Scheme X om de kwaliteit, naleving en concurrentiekracht in de industriële sector te verbeteren."
+      question:
+        "6. Kunnen MSME's ook een BIS-certificaat aanvragen onder Scheme X?",
+      answer:
+        "Absoluut. De Indiase BIS moedigt MSME's aan om een BIS-licentie of certificaat van conformiteit aan te vragen onder Scheme X om de kwaliteit, naleving en concurrentiekracht in de industriële sector te verbeteren.",
     },
     {
-      question: "7. Is BIS-certificering onder Scheme X verplicht voor exporten?",
-      answer: "Nee. Producten die uitsluitend voor export zijn geproduceerd, zijn vrijgesteld onder de Omnibus Technische Verordening. Producten die voor de Indiase markt zijn bedoeld, moeten echter worden gecertificeerd onder Scheme X."
+      question:
+        "7. Is BIS-certificering onder Scheme X verplicht voor exporten?",
+      answer:
+        "Nee. Producten die uitsluitend voor export zijn geproduceerd, zijn vrijgesteld onder de Omnibus Technische Verordening. Producten die voor de Indiase markt zijn bedoeld, moeten echter worden gecertificeerd onder Scheme X.",
     },
     {
-      question: "8. Wat is de geldigheidsduur van de BIS-licentie onder Scheme X?",
-      answer: "Een BIS-licentie onder Scheme X is over het algemeen 3-6 jaar geldig en moet dienovereenkomstig worden vernieuwd. Vernieuwing omvat betaling van de jaarlijkse BIS-certificeringskosten en kan herbeoordeling vereisen afhankelijk van wijzigingen in het productbereik of normen."
+      question:
+        "8. Wat is de geldigheidsduur van de BIS-licentie onder Scheme X?",
+      answer:
+        "Een BIS-licentie onder Scheme X is over het algemeen 3-6 jaar geldig en moet dienovereenkomstig worden vernieuwd. Vernieuwing omvat betaling van de jaarlijkse BIS-certificeringskosten en kan herbeoordeling vereisen afhankelijk van wijzigingen in het productbereik of normen.",
     },
     {
-      question: "9. Kunnen buitenlandse fabrikanten Scheme X-certificering aanvragen?",
-      answer: "Ja, buitenlandse fabrikanten kunnen Scheme X-certificering aanvragen via een geautoriseerde Indiase vertegenwoordiger. De Indiase BIS vereist een fabrieksinspectie, die 3 dagen kan duren voor buitenlandse aanvragers, samen met standaard BIS-registratie en testprocessen."
+      question:
+        "9. Kunnen buitenlandse fabrikanten Scheme X-certificering aanvragen?",
+      answer:
+        "Ja, buitenlandse fabrikanten kunnen Scheme X-certificering aanvragen via een geautoriseerde Indiase vertegenwoordiger. De Indiase BIS vereist een fabrieksinspectie, die 3 dagen kan duren voor buitenlandse aanvragers, samen met standaard BIS-registratie en testprocessen.",
     },
     {
       question: "10. Wat is een Technisch Bestand en waarom is het vereist?",
-      answer: "Een Technisch Bestand is een gedetailleerd conformiteitsdossier dat vereist is onder Scheme X. Het omvat fabricageprocessen, productdetails, testrapporten en kwaliteitscontrole documenten. Het ondersteunt de conformiteit van het product aan relevante Indiase Normen tijdens het BIS-certificeringsproces."
+      answer:
+        "Een Technisch Bestand is een gedetailleerd conformiteitsdossier dat vereist is onder Scheme X. Het omvat fabricageprocessen, productdetails, testrapporten en kwaliteitscontrole documenten. Het ondersteunt de conformiteit van het product aan relevante Indiase Normen tijdens het BIS-certificeringsproces.",
     },
     {
-      question: "11. Hoe is Scheme X gerelateerd aan de Omnibus Technische Verordening?",
-      answer: "De Omnibus Technische Verordening verplicht het gebruik van Scheme X voor specifieke categorieën machines en elektrische apparatuur in India. Producten die onder de verordening zijn vermeld, moeten worden gecertificeerd onder Scheme X om een geldig BIS-certificaat of BIS-licentie te verkrijgen."
+      question:
+        "11. Hoe is Scheme X gerelateerd aan de Omnibus Technische Verordening?",
+      answer:
+        "De Omnibus Technische Verordening verplicht het gebruik van Scheme X voor specifieke categorieën machines en elektrische apparatuur in India. Producten die onder de verordening zijn vermeld, moeten worden gecertificeerd onder Scheme X om een geldig BIS-certificaat of BIS-licentie te verkrijgen.",
     },
     {
-      question: "12. Kan een BIS-certificaat onder Scheme X worden ingetrokken?",
-      answer: "Ja. De Indiase BIS kan een BIS-licentie of certificaat onder Scheme X schorsen of intrekken als non-conformiteit wordt geconstateerd tijdens surveillance of als het product niet voldoet aan de vereiste Indiase Normen."
+      question:
+        "12. Kan een BIS-certificaat onder Scheme X worden ingetrokken?",
+      answer:
+        "Ja. De Indiase BIS kan een BIS-licentie of certificaat onder Scheme X schorsen of intrekken als non-conformiteit wordt geconstateerd tijdens surveillance of als het product niet voldoet aan de vereiste Indiase Normen.",
     },
     {
-      question: "13. Wat is het verschil tussen BIS-licentie en BIS-certificaat onder Scheme X?",
-      answer: "Een BIS-licentie wordt doorgaans uitgegeven aan Indiase fabrikanten, terwijl een BIS-certificaat van conformiteit (CoC) vaak wordt uitgegeven aan buitenlandse fabrikanten of voor specifieke gevallen. Beide dienen hetzelfde doel—het waarborgen van productconformiteit onder Scheme X."
+      question:
+        "13. Wat is het verschil tussen BIS-licentie en BIS-certificaat onder Scheme X?",
+      answer:
+        "Een BIS-licentie wordt doorgaans uitgegeven aan Indiase fabrikanten, terwijl een BIS-certificaat van conformiteit (CoC) vaak wordt uitgegeven aan buitenlandse fabrikanten of voor specifieke gevallen. Beide dienen hetzelfde doel—het waarborgen van productconformiteit onder Scheme X.",
     },
     {
-      question: "14. Is de ISI-mark toegestaan voor producten gecertificeerd onder Scheme X?",
-      answer: "Nee. Producten onder Scheme X dragen niet de ISI-mark. In plaats daarvan tonen ze de relevante BIS-standaardmark weer zoals gereguleerd door de Indiase BIS."
+      question:
+        "14. Is de ISI-mark toegestaan voor producten gecertificeerd onder Scheme X?",
+      answer:
+        "Nee. Producten onder Scheme X dragen niet de ISI-mark. In plaats daarvan tonen ze de relevante BIS-standaardmark weer zoals gereguleerd door de Indiase BIS.",
     },
     {
       question: "Hoe weet ik of mijn machine Scheme X-certificering vereist?",
-      answer: "Controleer de officiële lijst in de Omnibus Technische Verordening of raadpleeg een BIS-consultant om te verifiëren of uw machine onder de verplichte Scheme X-certificeringsvereisten valt."
-    }
+      answer:
+        "Controleer de officiële lijst in de Omnibus Technische Verordening of raadpleeg een BIS-consultant om te verifiëren of uw machine onder de verplichte Scheme X-certificeringsvereisten valt.",
+    },
   ];
 
   return (
@@ -1685,7 +1709,6 @@ const SchemeXMainContentLeft = () => {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-
         {/* Overview Section */}
         <SchemeXMainContentLeftOverviewSection />
 
@@ -1713,8 +1736,8 @@ const SchemeXMainContentLeft = () => {
         <ServiceAuthorDutch />
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftConclusionSection = () => {
   return (
@@ -1725,29 +1748,27 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        Conclusie
-      </h2>
+      <h2 className="service-left-content-heading-two">Conclusie</h2>
 
       <p className="service-left-content-paragraph">
         De BIS Scheme-X Certificering blijft essentieel om de veiligheid,
-        betrouwbaarheid en kwaliteit van laagspanningschakelkasten en bedieningsapparatuur,
-        Machines en elektrische apparatuur te handhaven. Voor de fabrikanten van machinegereedschappen die van toepassing zijn op het verwerken van steen, keramiek, beton, asfalterend
-        cement en mineraalglas is BIS Scheme-X certificering verplicht.
+        betrouwbaarheid en kwaliteit van laagspanningschakelkasten en
+        bedieningsapparatuur, Machines en elektrische apparatuur te handhaven.
+        Voor de fabrikanten van machinegereedschappen die van toepassing zijn op
+        het verwerken van steen, keramiek, beton, asfalterend cement en
+        mineraalglas is BIS Scheme-X certificering verplicht.
       </p>
-
 
       <p className="service-left-content-paragraph">
         Door aan deze verplichtingen te voldoen, garanderen fabrikanten product
         conformiteit, vergroten consumentenvertrouwen, evenals hun
         geloofwaardigheid op de markt. Scheme-X zorgt ervoor dat de productie zo
-        soepel mogelijk verloopt, wereldwijde veiligheidsnormen worden nageleefd en de
-        erkende merken een positieve reputatie opbouwen.
+        soepel mogelijk verloopt, wereldwijde veiligheidsnormen worden nageleefd
+        en de erkende merken een positieve reputatie opbouwen.
       </p>
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftDocumentsSection = () => {
   return (
@@ -1762,9 +1783,9 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         Belangrijke Documenten Vereist voor BIS Scheme X Certificering
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Om het BIS-certificeringsproces te stroomlijnen, moeten fabrikanten de volgende documenten verzamelen en indienen tijdens de registratiefase:
+        Om het BIS-certificeringsproces te stroomlijnen, moeten fabrikanten de
+        volgende documenten verzamelen en indienen tijdens de registratiefase:
       </p>
 
       <div className="mt-[16px] md:mt-[24px]">
@@ -1791,8 +1812,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Naam en Adres (Fabriek & Kantoor)
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Volledige wettelijke naam en fysieke adressen van de fabricagesite
-                en kantoor
+                Volledige wettelijke naam en fysieke adressen van de
+                fabricagesite en kantoor
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1826,7 +1847,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Management Details
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Namen, rollen en ID's van belangrijke executives en geautoriseerde ondertekenaar
+                Namen, rollen en ID's van belangrijke executives en
+                geautoriseerde ondertekenaar
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1849,7 +1871,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Productclassificatie
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Specifiek type, model en variëteit waarvoor de BIS-licentie wordt aangevraagd
+                Specifiek type, model en variëteit waarvoor de BIS-licentie
+                wordt aangevraagd
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -1860,8 +1883,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
                 Technisch bestand
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                Alle technische details met betrekking tot het product en details
-                over de productiefaciliteit.
+                Alle technische details met betrekking tot het product en
+                details over de productiefaciliteit.
               </TableCell>
             </TableRow>
           </TableBody>
@@ -1881,8 +1904,8 @@ const SchemeXMainContentLeftDocumentsSection = () => {
         ]}
       />
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftProcessSection = () => {
   return (
@@ -1897,13 +1920,12 @@ const SchemeXMainContentLeftProcessSection = () => {
         Stappen om Gecertificeerd te Worden onder BIS Scheme-X
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Het uitgeven van BIS Certificaat onder Scheme-X is een systematische activiteit bedoeld om
-        ervoor te zorgen dat de fabrikant de toepasselijke veiligheid, kwaliteit en
-        nalevingsnormen heeft vervuld. Het proces is als volgt:
+        Het uitgeven van BIS Certificaat onder Scheme-X is een systematische
+        activiteit bedoeld om ervoor te zorgen dat de fabrikant de toepasselijke
+        veiligheid, kwaliteit en nalevingsnormen heeft vervuld. Het proces is
+        als volgt:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1917,41 +1939,34 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         Dit bestand dient als het technische en statistische bewijs van de
         productclaim die voldoet aan veiligheids trace normen.
       </p>
 
-
       <p className="service-left-content-paragraph">
-        Tijdens de inspectieperiode worden van de BIS-functionarissen verwacht dat ze:
-        Het technische bestand analyseren, De manieren van fabricage evalueren samen
-        met ondersteunende kwaliteitsborgingssystemen, De testen van het
-        product observeren, Non-conformiteit vaststellen (indien aanwezig) en remedie stappen geven. Een
-        gedetailleerd rapport van de audit wordt verstrekt aan de aanvrager na het
-        bezoek.
+        Tijdens de inspectieperiode worden van de BIS-functionarissen verwacht
+        dat ze: Het technische bestand analyseren, De manieren van fabricage
+        evalueren samen met ondersteunende kwaliteitsborgingssystemen, De testen
+        van het product observeren, Non-conformiteit vaststellen (indien
+        aanwezig) en remedie stappen geven. Een gedetailleerd rapport van de
+        audit wordt verstrekt aan de aanvrager na het bezoek.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
-        Deze strategie handhaaft naleving van BIS Standaard en is een
-        erkenning van Indiase en internationale naleving, waardoor de
-        industrie consumentenvertrouwen opbouwt in veiligheid en kwaliteit.
+        Deze strategie handhaaft naleving van BIS Standaard en is een erkenning
+        van Indiase en internationale naleving, waardoor de industrie
+        consumentenvertrouwen opbouwt in veiligheid en kwaliteit.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         Procedure voor Binnenlandse Fabrikanten
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Binnenlandse fabrikanten volgen een directe aanpak door de BIS
-        Licentie onder Scheme-X te verkrijgen. De directe stappen om te volgen zijn:
+        Binnenlandse fabrikanten volgen een directe aanpak door de BIS Licentie
+        onder Scheme-X te verkrijgen. De directe stappen om te volgen zijn:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -1966,23 +1981,21 @@ const SchemeXMainContentLeftProcessSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         <strong>Typische Tijdlijn:</strong> Dicht bij 90 werkdagen (volgens BIS
         praktijk) zijn nodig. Dit is voorzien dat er geen belangrijke
         non-conformiteiten zijn.
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         Procedure voor Buitenlandse Fabrikanten
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        In tegenstelling tot binnenlandse fabrikanten, moeten buitenlandse fabrikanten die een BIS
-        certificaat aanvragen onder Scheme-X voldoen aan een strengere
-        proces en extra stappen. De procedure wordt als volgt uitgediept.
+        In tegenstelling tot binnenlandse fabrikanten, moeten buitenlandse
+        fabrikanten die een BIS certificaat aanvragen onder Scheme-X voldoen aan
+        een strengere proces en extra stappen. De procedure wordt als volgt
+        uitgediept.
       </p>
 
       <PointsListWithoutHeading
@@ -2001,21 +2014,18 @@ const SchemeXMainContentLeftProcessSection = () => {
 
       <p className="service-left-content-paragraph">
         De audit omvat: Evaluatie van de kwaliteitsborgingssystemen en de
-        werkstromen in de fabricageprocessen, Beoordeling van de naleving
-        en de technische documentatie, Onafhankelijke monster selectie voor testen.
+        werkstromen in de fabricageprocessen, Beoordeling van de naleving en de
+        technische documentatie, Onafhankelijke monster selectie voor testen.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        Het gehele proces duurt, gebaseerd op de praktijken van BIS, ongeveer 6-7
-        maanden.
+        Het gehele proces duurt, gebaseerd op de praktijken van BIS, ongeveer
+        6-7 maanden.
       </p>
-
 
       <h3 className="service-left-content-heading-three">
         Belangrijke Extra Wijzigingen voor Buitenlandse Fabrikanten:
       </h3>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2024,10 +2034,9 @@ const SchemeXMainContentLeftProcessSection = () => {
           "Fabriek Audits: Fabriek audits voor buitenlandse fabrikanten zijn uitgebreid en duren meestal 3 dagen. Ook meer dagen zijn vereist in het geval van meerdere productaanvragen.",
         ]}
       />
-
     </div>
-  )
-}
+  );
+};
 
 const SchemeXMainContentLeftOverviewSection = () => {
   // Download function for table data
@@ -2049,43 +2058,39 @@ const SchemeXMainContentLeftOverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-
       <h2 className="service-left-content-heading-two">
         Inleiding tot BIS Scheme X Certificering
       </h2>
 
       <p className="service-left-content-paragraph">
-        Het Bureau of Indian Standards, of BIS kortom, rolde
-        &ldquo;Scheme X&rdquo; uit op 16 maart 2022, gericht op het verbeteren van naleving
-        van productveiligheid en kwaliteit in India. Indiase en buitenlandse fabrikanten
-        kunnen een BIS-certificaat aanvragen voor Machine en Elektrische apparatuur,
-        componenten Zoals assemblages, sub-assemblages en, en Gereedschappen gespecificeerd in
-        Schema-II van Scheme-X en certificering verkrijgen vóór export,
-        verkoop, of distributie in India.
+        Het Bureau of Indian Standards, of BIS kortom, rolde &ldquo;Scheme
+        X&rdquo; uit op 16 maart 2022, gericht op het verbeteren van naleving
+        van productveiligheid en kwaliteit in India. Indiase en buitenlandse
+        fabrikanten kunnen een BIS-certificaat aanvragen voor Machine en
+        Elektrische apparatuur, componenten Zoals assemblages, sub-assemblages
+        en, en Gereedschappen gespecificeerd in Schema-II van Scheme-X en
+        certificering verkrijgen vóór export, verkoop, of distributie in India.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        Onder Scheme X kunnen de fabrikanten een BIS Licentie of een
-        Certificaat van Conformiteit (CoC) aanvragen voor laagspannings schakelgear en bedieningsgear,
-        machines, en elektrische apparatuur. Zodra de fabrikanten zijn
-        gecertificeerd, mogen ze de BIS Standaard mark gebruiken, wat aangeeft
-        dat hun producten voldoen aan de normen vastgelegd in
-        India.
+        Onder Scheme X kunnen de fabrikanten een BIS Licentie of een Certificaat
+        van Conformiteit (CoC) aanvragen voor laagspannings schakelgear en
+        bedieningsgear, machines, en elektrische apparatuur. Zodra de
+        fabrikanten zijn gecertificeerd, mogen ze de BIS Standaard mark
+        gebruiken, wat aangeeft dat hun producten voldoen aan de normen
+        vastgelegd in India.
       </p>
-
 
       <p className="service-left-content-paragraph">
-        De certificering, terwijl het het product en naleving met de
-        Indiase Normen en Overheidsregelingen bevordert, helpt het vertrouwen en
-        vertrouwen van de consumenten in de gecertificeerde producten op te bouwen.
+        De certificering, terwijl het het product en naleving met de Indiase
+        Normen en Overheidsregelingen bevordert, helpt het vertrouwen en
+        vertrouwen van de consumenten in de gecertificeerde producten op te
+        bouwen.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         Wat is Scheme X Certificering?
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Scheme X is een productcertificeringsschema ontwikkeld onder de BIS
@@ -2093,63 +2098,59 @@ const SchemeXMainContentLeftOverviewSection = () => {
         de BIS Conformiteitsbeoordeling (Wijzigings) Regelingen, 2022.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
-        Het hoofddoel is om de Indiase veiligheids- en kwaliteitsnormen te brengen naar
-        globale normen, vooral met betrekking tot de industriële machines en
-        elektrische apparatuur. De producten gefabriceerd in of geïmporteerd naar India
-        onder dit schema zijn onderworpen aan strenge controle en beoordeling om
-        technische, veiligheids, evenals prestatie normen te bewijzen.
-      </p>
-
-
-      <p className="service-left-content-paragraph">
-        Bepalingen onder het oorspronkelijke bereik van Scheme X Certificering zijn
-        herzien en uitgebreid met de nieuw uitgegeven Machines en Elektrische
-        Apparatuur Veiligheid (Omnibus Technische Verordening) Orde, 2024, die
-        onder de jurisdictie valt van het Ministerie van Zware Industrieën en is
-        in werking gesteld door de BIS. De orde treedt in werking op 1
-        september 2026, en omvat een breed spectrum van machines en elektrische
-        apparatuur zoals pompen voor het verwerken van vloeistoffen, compressoren, kranen,
-        roterende elektrische machines, transformatoren, en schakelgear en bedieningsgear.
-      </p>
-
-
-      <p className="service-left-content-paragraph">
-        Assemblages, sub-assemblages en componenten van dergelijke machines of apparatuur
-        maken ook deel uit van het certificeringsbereik volgens Sectie 16 van de Bureau
-        of Indian Standards Wet, 2016.
+        Het hoofddoel is om de Indiase veiligheids- en kwaliteitsnormen te
+        brengen naar globale normen, vooral met betrekking tot de industriële
+        machines en elektrische apparatuur. De producten gefabriceerd in of
+        geïmporteerd naar India onder dit schema zijn onderworpen aan strenge
+        controle en beoordeling om technische, veiligheids, evenals prestatie
+        normen te bewijzen.
       </p>
 
       <p className="service-left-content-paragraph">
-        Bovendien, onder de 1989 CMVR Regels (Constructie en Fabrikage van
-        Klep Regeling), Bowser en andere typen constructieapparatuur
-        onder de jurisdictie van Scheme X, wordt ervoor gezorgd dat de markt niet
-        wordt blootgesteld aan apparatuur die ontbreekt aan de vereiste veiligheid en
+        Bepalingen onder het oorspronkelijke bereik van Scheme X Certificering
+        zijn herzien en uitgebreid met de nieuw uitgegeven Machines en
+        Elektrische Apparatuur Veiligheid (Omnibus Technische Verordening) Orde,
+        2024, die onder de jurisdictie valt van het Ministerie van Zware
+        Industrieën en is in werking gesteld door de BIS. De orde treedt in
+        werking op 1 september 2026, en omvat een breed spectrum van machines en
+        elektrische apparatuur zoals pompen voor het verwerken van vloeistoffen,
+        compressoren, kranen, roterende elektrische machines, transformatoren,
+        en schakelgear en bedieningsgear.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Assemblages, sub-assemblages en componenten van dergelijke machines of
+        apparatuur maken ook deel uit van het certificeringsbereik volgens
+        Sectie 16 van de Bureau of Indian Standards Wet, 2016.
+      </p>
+
+      <p className="service-left-content-paragraph">
+        Bovendien, onder de 1989 CMVR Regels (Constructie en Fabrikage van Klep
+        Regeling), Bowser en andere typen constructieapparatuur onder de
+        jurisdictie van Scheme X, wordt ervoor gezorgd dat de markt niet wordt
+        blootgesteld aan apparatuur die ontbreekt aan de vereiste veiligheid en
         technische normen.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         Omnibus Technische Verordening (OTR)
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        Het Ministerie van Zware Industrieën publiceerde de &ldquo;Omnibus Technische
-        Verordening over Veiligheidsorders (Machines en Elektrische apparatuur
-        Veiligheid)&rdquo; via E-Gazette notificatie van 28 augustus 2024. Deze
-        innovatieve verordening is bedoeld om te verbeteren - veiligheid, kwaliteit en
-        naleving van machines, elektrische apparatuur en hun assemblages, sub
-        assemblages en componenten, onder Scheme X van de BIS Regeling, 2016.
+        Het Ministerie van Zware Industrieën publiceerde de &ldquo;Omnibus
+        Technische Verordening over Veiligheidsorders (Machines en Elektrische
+        apparatuur Veiligheid)&rdquo; via E-Gazette notificatie van 28 augustus
+        2024. Deze innovatieve verordening is bedoeld om te verbeteren -
+        veiligheid, kwaliteit en naleving van machines, elektrische apparatuur
+        en hun assemblages, sub assemblages en componenten, onder Scheme X van
+        de BIS Regeling, 2016.
       </p>
 
-
       <p className="service-left-content-paragraph">
-        Onder de OTR zijn alle categorieën machines en elektrische apparatuur, en
-        al hun onderdelen en componenten opgenomen. Echter, een paar categorieën
-        zijn specifiek uitgesloten:
+        Onder de OTR zijn alle categorieën machines en elektrische apparatuur,
+        en al hun onderdelen en componenten opgenomen. Echter, een paar
+        categorieën zijn specifiek uitgesloten:
       </p>
 
       <PointsListWithoutHeading
@@ -2160,28 +2161,25 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        Deze uitzonderingen zijn gemaakt om naleving te vergemakkelijken en onnodige
-        duplicatie van regelgeving te vermijden om het gemak van zakendoen te bevorderen.
+        Deze uitzonderingen zijn gemaakt om naleving te vergemakkelijken en
+        onnodige duplicatie van regelgeving te vermijden om het gemak van
+        zakendoen te bevorderen.
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         De Omnibus Technische Verordening, 2024 omvat alle machines en
-        elektrische apparatuur, inclusief laagspannings schakelgear en bedieningsgear
-        genotificeerd door het Ministerie van Zware Industrieën, zullen worden behandeld onder de
-        Scheme X kader van BIS Certificering. De Orde zal in werking treden
-        op 1 september 2026 zodat de fabrikanten en importeurs genoeg tijd hebben
-        om hun operaties aan te passen aan de uitgegeven Orders.
+        elektrische apparatuur, inclusief laagspannings schakelgear en
+        bedieningsgear genotificeerd door het Ministerie van Zware Industrieën,
+        zullen worden behandeld onder de Scheme X kader van BIS Certificering.
+        De Orde zal in werking treden op 1 september 2026 zodat de fabrikanten
+        en importeurs genoeg tijd hebben om hun operaties aan te passen aan de
+        uitgegeven Orders.
       </p>
-
 
       <h2 className="service-left-content-heading-three">
         BIS Certificering onder de Omnibus Technische Verordening
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Volgens de OTR 2024 moeten fabrikanten, evenals importeurs, van machines
@@ -2190,40 +2188,36 @@ const SchemeXMainContentLeftOverviewSection = () => {
         Certificering aanvragen onder Scheme X.
       </p>
 
-
-
       <p className="service-left-content-paragraph">
         Onder Scheme X kunnen fabrikanten kiezen om aan te vragen voor:
       </p>
 
-
       <PointsListWithoutHeading
-        points={["Een BIS Licentie, of", "Een Certificaat van Conformiteit (CoC)"]}
+        points={[
+          "Een BIS Licentie, of",
+          "Een Certificaat van Conformiteit (CoC)",
+        ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        Producten met de BIS Standaard Mark die een Mark van Conformiteit is
-        die certificeert en verzekert de gebruikers dat het product veilig is,
-        betrouwbaar, en van goede kwaliteit. Het is ook een mark van vertrouwen en echt
-        goede prestaties.
+        Producten met de BIS Standaard Mark die een Mark van Conformiteit is die
+        certificeert en verzekert de gebruikers dat het product veilig is,
+        betrouwbaar, en van goede kwaliteit. Het is ook een mark van vertrouwen
+        en echt goede prestaties.
       </p>
-
 
       <h3 className="service-left-content-heading-three">
         Speciale Notitie voor MSME's
       </h3>
 
-
       <p className="service-left-content-paragraph">
-        Net als bij veel andere sectoren, moeten Micro, Klein, en Middelgrote Ondernemingen (MSME's)
-        ook voldoen aan Scheme X en BIS Certificering verkrijgen voor hun
-        machines en elektrische apparatuur. Hoewel het kan lijken dat naleving
-        van de regelgevende vereisten uitdagend kan zijn, is het Scheme X
-        certificaat een waarde toevoeging en voordeel voor MSME's om de volgende
-        redenen:
+        Net als bij veel andere sectoren, moeten Micro, Klein, en Middelgrote
+        Ondernemingen (MSME's) ook voldoen aan Scheme X en BIS Certificering
+        verkrijgen voor hun machines en elektrische apparatuur. Hoewel het kan
+        lijken dat naleving van de regelgevende vereisten uitdagend kan zijn, is
+        het Scheme X certificaat een waarde toevoeging en voordeel voor MSME's
+        om de volgende redenen:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2234,19 +2228,12 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        BIS Scheme X Logo
-      </h3>
-
-
+      <h3 className="service-left-content-heading-three">BIS Scheme X Logo</h3>
 
       <p className="service-left-content-paragraph">
-        De BIS standaard mark van Scheme X vormt een kwaliteitsmark en een principe
-        van vertrouwen. Het Logo bevat:
+        De BIS standaard mark van Scheme X vormt een kwaliteitsmark en een
+        principe van vertrouwen. Het Logo bevat:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2255,14 +2242,11 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <p className="service-left-content-paragraph">
-        Deze mark geeft aan dat een BIS Licentie succesvol is uitgegeven aan
-        de fabrikant. Het geeft de fabrikant het recht om de BIS Mark te plaatsen en
-        verzekert de consumenten dat het product authentiek en veilig is.
+        Deze mark geeft aan dat een BIS Licentie succesvol is uitgegeven aan de
+        fabrikant. Het geeft de fabrikant het recht om de BIS Mark te plaatsen
+        en verzekert de consumenten dat het product authentiek en veilig is.
       </p>
-
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
@@ -2273,29 +2257,24 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-
       <h3 className="service-left-content-heading-three">
         Juridische Implicaties
       </h3>
 
-
       <p className="service-left-content-paragraph">
-        BIS Standaard Mark is een mark van vertrouwen en kwaliteit. De mark is alleen
-        beschikbaar na een geldig contract op zijn plaats is. Alleen een geldig contract
-        staat de eigenaar toe om de mark te gebruiken. Het gebruik van de mark zonder een geldig
-        contract is een overtreding onder de Indiase constitutie en is gelijk aan
-        het hebben van een juridische mark. De eigenaar van de mark wordt onder zware
-        beperkingen geplaatst voor het gebruik van de licentie CM/L-XXXXXXXXXX voor producten
-        die geen BIS-certificering hebben.
+        BIS Standaard Mark is een mark van vertrouwen en kwaliteit. De mark is
+        alleen beschikbaar na een geldig contract op zijn plaats is. Alleen een
+        geldig contract staat de eigenaar toe om de mark te gebruiken. Het
+        gebruik van de mark zonder een geldig contract is een overtreding onder
+        de Indiase constitutie en is gelijk aan het hebben van een juridische
+        mark. De eigenaar van de mark wordt onder zware beperkingen geplaatst
+        voor het gebruik van de licentie CM/L-XXXXXXXXXX voor producten die geen
+        BIS-certificering hebben.
       </p>
-
-
-
 
       <p className="service-left-content-paragraph">
         Het volgt dat elke producent verplicht is om:
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -2305,24 +2284,17 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
-        Dit regelgevend kader is uitgebreid om de belangen van
-        consumenten en zakenmensen te beschermen, en een markt te bevorderen die benadrukt
+        Dit regelgevend kader is uitgebreid om de belangen van consumenten en
+        zakenmensen te beschermen, en een markt te bevorderen die benadrukt
         veiligheid, openheid, en vertrouwen.
       </p>
-
-
 
       <h2 className="service-left-content-heading-three">
         Belangrijke Verschillen Tussen Scheme-I en Scheme-X
       </h2>
 
-
-      <h3 className="service-left-content-heading-three">
-        Scheme-I
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Scheme-I</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2333,9 +2305,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
-        Scheme-X
-      </h3>
+      <h3 className="service-left-content-heading-three">Scheme-X</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2421,18 +2391,14 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-
       <h3 className="service-left-content-heading-three">
         Producten Gedekt door Scheme-X
       </h3>
-
 
       <p className="service-left-content-paragraph">
         Scheme-X dekt producten met het hoogste risico voor veiligheid en
         prestaties, inclusief:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2445,7 +2411,6 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
       {/* Scheme X Product Table 20 */}
       <div className="mt-[16px] md:mt-[24px]">
-
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
@@ -2470,13 +2435,13 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen Pompen voor het verwerken van vloeistoffen, vloeistoftliften en
-                  (of)hun assemblages /sub-assemblages /componenten
+                  Alle typen Pompen voor het verwerken van vloeistoffen,
+                  vloeistoftliften en (of)hun assemblages /sub-assemblages
+                  /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                841340, 841350, 841360, 841370, 841381, 841382, 841391 en
-                841392
+                841340, 841350, 841360, 841370, 841381, 841382, 841391 en 841392
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -2488,8 +2453,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-compressors"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen compressoren en( of)hun assemblages /sub-assemblages
-                  /componenten
+                  Alle typen compressoren en( of)hun assemblages
+                  /sub-assemblages /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2506,9 +2471,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-heat-treatment-equipment"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen machines voor behandeling van materialen door een proces
-                  dat een temperatuurverandering inhoudt en( of)hun assemblages
-                  /sub-assemblages /componenten
+                  Alle typen machines voor behandeling van materialen door een
+                  proces dat een temperatuurverandering inhoudt en( of)hun
+                  assemblages /sub-assemblages /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2615,8 +2580,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-embroidery-machinery"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen machines voor borduurwerk en( of)hun
-                  assemblages /sub-assemblages /componenten
+                  Alle typen machines voor borduurwerk en( of)hun assemblages
+                  /sub-assemblages /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2650,9 +2615,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-machine-tools"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen machinegereedschappen voor het bewerken van steen, keramiek,
-                  beton, asbestcement of vergelijkbaar mineraalglas en (of)hun
-                  assemblages /sub-assemblages /componenten
+                  Alle typen machinegereedschappen voor het bewerken van steen,
+                  keramiek, beton, asbestcement of vergelijkbaar mineraalglas en
+                  (of)hun assemblages /sub-assemblages /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2668,8 +2633,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen machines voor het bewerken van rubber en kunststoffen en( of)
-                  hun assemblages /sub-assemblages /componenten
+                  Alle typen machines voor het bewerken van rubber en
+                  kunststoffen en( of) hun assemblages /sub-assemblages
+                  /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2685,10 +2651,10 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen Machines inclusief de machines voor openbare werken &
-                  bouw en de machines & mechanische apparaten met
-                  individuele functies, niet gespecificeerd Of opgenomen elders in
-                  Hoofdstuk 84 en( of)hun assemblages/sub-assemblages /componenten
+                  Alle typen Machines inclusief de machines voor openbare werken
+                  & bouw en de machines & mechanische apparaten met individuele
+                  functies, niet gespecificeerd Of opgenomen elders in Hoofdstuk
+                  84 en( of)hun assemblages/sub-assemblages /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2704,10 +2670,11 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen tandwielen en tandheugels, getande wielen, kettingtandwielen,
-                  transmissie-elementen bal of rol schroeven, tandwielkasten en
-                  snelheidsveranderaars, inclusief koppelomvormers En (of)hun
-                  assemblages /sub-assemblages /componenten
+                  Alle typen tandwielen en tandheugels, getande wielen,
+                  kettingtandwielen, transmissie-elementen bal of rol schroeven,
+                  tandwielkasten en snelheidsveranderaars, inclusief
+                  koppelomvormers En (of)hun assemblages /sub-assemblages
+                  /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2723,8 +2690,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-rotary-electrical-machines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen Roaterende elektrische machines zoals Generator, enz.
-                  en (of) hun assemblages /sub-assemblages /componenten
+                  Alle typen Roaterende elektrische machines zoals Generator,
+                  enz. en (of) hun assemblages /sub-assemblages /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2762,8 +2729,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
-                850421, 850422, 850423, 850431, 850432, 850433, 850434 en
-                850490
+                850421, 850422, 850423, 850431, 850432, 850433, 850434 en 850490
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -2775,8 +2741,8 @@ const SchemeXMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-power-semiconductor-converters"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  Alle typen Vermogenschakelaar Omvormer en (of)hun
-                  assemblages /sub-assemblages /componenten
+                  Alle typen Vermogenschakelaar Omvormer en (of)hun assemblages
+                  /sub-assemblages /componenten
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -2860,24 +2826,19 @@ const SchemeXMainContentLeftOverviewSection = () => {
         Veiligheidsnormen Onder BIS Scheme - X
       </h2>
 
-
-
       <p className="service-left-content-paragraph">
-        Meer dan alleen een wettelijke noodzaak, biedt de BIS Scheme - X Certificering
-        een belofte van veiligheid, kwaliteit, en betrouwbaarheid. Deze
-        Certificering, die strikte naleving van nationale en
-        internationale normen inhoudt, zorgt ervoor dat de machines en elektrische apparatuur
-        aangeboden aan gebruikers veilig, milieuvriendelijk, en technisch
-        solide zijn.
+        Meer dan alleen een wettelijke noodzaak, biedt de BIS Scheme - X
+        Certificering een belofte van veiligheid, kwaliteit, en betrouwbaarheid.
+        Deze Certificering, die strikte naleving van nationale en internationale
+        normen inhoudt, zorgt ervoor dat de machines en elektrische apparatuur
+        aangeboden aan gebruikers veilig, milieuvriendelijk, en technisch solide
+        zijn.
       </p>
-
 
       <p className="service-left-content-paragraph">
         Om te certificeren onder Scheme - X, moeten fabrikanten voldoen aan de
         volgende grote veiligheidscomponenten:
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -2889,23 +2850,16 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <h2 className="service-left-content-heading-three">
         Regelgevende Normen Onder Scheme-X
       </h2>
-
 
       <p className="service-left-content-paragraph">
         Fabrikanten zijn verplicht om te voldoen aan de Relevante Indiase Normen
         die zijn afgestemd op de Internationale Normen, inclusief:
       </p>
 
-
-      <h3 className="service-left-content-heading-three">
-        Type A Normen:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type A Normen:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2913,11 +2867,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        Type B Normen:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type B Normen:</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -2925,33 +2875,24 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
-      <h3 className="service-left-content-heading-three">
-        Type C Normen:
-      </h3>
-
+      <h3 className="service-left-content-heading-three">Type C Normen:</h3>
 
       <PointsListWithoutHeading
         points={["Beschreven in het Derde Schema van de OTR Orde, 2024."]}
       />
 
-
       <h3 className="service-left-content-heading-three">
         IS/IEC 60947 Serie:
       </h3>
 
-
       <PointsListWithoutHeading
         points={[
           "Dekken laagspannings schakel- en bedieningsapparatuur in meerdere delen en secties.",
-        ]} />
+        ]}
+      />
     </div>
-  )
-}
-
-
-
+  );
+};
 
 const PointsListWithoutHeading = ({ points }) => {
   return (

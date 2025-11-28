@@ -36,7 +36,6 @@ import AboutContact from "@/components/manual/about/AboutContact";
 // Assets/Images
 import whychooseus from "../assets/images/whychooseus.jpg";
 import BISImage from "../assets/images/BIS.jpg";
-import CDSCO from "../assets/images/CDSCO.jpg";
 import BISCRS from "../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../assets/images/EPRCertificate.jpg";
@@ -293,7 +292,7 @@ export const OurServices = () => {
       title: "CDSCO Registration Certification",
       description:
         "Central Drugs Standard Control Organization approval for medical devices and pharmaceuticals in India.",
-      icon: CDSCO,
+      icon: "/services-images/CDSCO.jpg",
       path: "/services/cdsco-registration-certification",
     },
     {
@@ -391,7 +390,16 @@ export const OurServices = () => {
                       <div className="hidden md:flex bg-white/80 backdrop-blur-sm w-16 h-16 md:w-24 md:h-24 rounded-2xl items-center justify-center shadow-lg mx-auto md:mx-0">
                         <img
                           src={service.icon}
-                          alt={service.title}
+                          alt={
+                            service.title === "CDSCO Registration Certification"
+                              ? "CDSCO Logo"
+                              : service.title
+                          }
+                          title={
+                            service.title === "CDSCO Registration Certification"
+                              ? "CDSCO Logo"
+                              : service.title
+                          }
                           className="w-12 h-12 md:w-20 md:h-20 rounded-full object-contain"
                         />
                       </div>
@@ -422,7 +430,16 @@ export const OurServices = () => {
                       <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[200px] sm:h-[250px] md:h-[350px] flex items-center justify-center mb-6 md:mb-0">
                         <img
                           src={service.icon}
-                          alt={service.title}
+                          alt={
+                            service.title === "CDSCO Registration Certification"
+                              ? "CDSCO Logo"
+                              : service.title
+                          }
+                          title={
+                            service.title === "CDSCO Registration Certification"
+                              ? "CDSCO Logo"
+                              : service.title
+                          }
                           className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 rounded-full object-contain"
                         />
                       </div>
@@ -466,7 +483,16 @@ export const OurServices = () => {
                 <div className="mb-0.5 md:mb-1">
                   <img
                     src={service.icon}
-                    alt={service.title}
+                    alt={
+                      service.title === "CDSCO Registration Certification"
+                        ? "CDSCO Logo"
+                        : service.title
+                    }
+                    title={
+                      service.title === "CDSCO Registration Certification"
+                        ? "CDSCO Logo"
+                        : service.title
+                    }
                     className="w-8 h-8 md:w-12 md:h-12 rounded-full object-contain mx-auto"
                   />
                 </div>

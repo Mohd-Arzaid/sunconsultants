@@ -37,7 +37,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterItalian from "@/components/manual/Footer/FooterItalian";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -159,9 +158,9 @@ const BISCertificationHero = () => {
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            La certificazione BIS garantisce qualità e sicurezza dei prodotti in India. È
-            obbligatoria per molti prodotti e richiede test, documentazione e
-            approvazione.
+            La certificazione BIS garantisce qualità e sicurezza dei prodotti in
+            India. È obbligatoria per molti prodotti e richiede test,
+            documentazione e approvazione.
           </p>
 
           <nav className="flex items-center -mt-2">
@@ -300,7 +299,9 @@ const BISCertificationContactForm = () => {
         error.response?.data?.message || "Something went wrong";
       toast({
         variant: "destructive",
-        title: errorMessage || "Impossibile inviare i dettagli del modulo di contatto!",
+        title:
+          errorMessage ||
+          "Impossibile inviare i dettagli del modulo di contatto!",
         description:
           "Qualcosa è andato storto. Controlla i tuoi dettagli e riprova.",
       });
@@ -696,27 +697,28 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Prendiamo ad esempio, un produttore tedesco che ha inventato un dispositivo
-        elettronico unico e sta pianificando di venderlo nel mercato indiano veloce.
-        Il dispositivo è unico, sicuro e ha anche ottenuto approvazioni in
-        Europa. Tuttavia, quando il dispositivo viene portato al porto in India, i
-        funzionari doganali trattengono il dispositivo. La domanda è: "Perché?" La risposta è,
-        il dispositivo dovrebbe avere una certificazione BIS, che è una parte cruciale
-        per vendere prodotti elettronici in India.
+        Prendiamo ad esempio, un produttore tedesco che ha inventato un
+        dispositivo elettronico unico e sta pianificando di venderlo nel mercato
+        indiano veloce. Il dispositivo è unico, sicuro e ha anche ottenuto
+        approvazioni in Europa. Tuttavia, quando il dispositivo viene portato al
+        porto in India, i funzionari doganali trattengono il dispositivo. La
+        domanda è: "Perché?" La risposta è, il dispositivo dovrebbe avere una
+        certificazione BIS, che è una parte cruciale per vendere prodotti
+        elettronici in India.
       </p>
 
       <p className="service-left-content-paragraph">
-        Molti produttori globali e indiani si confrontano con le stesse situazioni ogni
-        anno. Per i consumatori indiani, il marchio BIS su un prodotto non è solo un
-        logo, è un segno di fiducia che il prodotto è stato testato per
-        qualità, sicurezza e affidabilità. Per un'azienda, è il gateway per
-        uno dei mercati più grandi al mondo.
+        Molti produttori globali e indiani si confrontano con le stesse
+        situazioni ogni anno. Per i consumatori indiani, il marchio BIS su un
+        prodotto non è solo un logo, è un segno di fiducia che il prodotto è
+        stato testato per qualità, sicurezza e affidabilità. Per un'azienda, è
+        il gateway per uno dei mercati più grandi al mondo.
       </p>
 
       <p className="service-left-content-paragraph">
-        Questo articolo risponderà a tutte le domande sulla certificazione BIS, la sua
-        necessità, processi, benefici, schemi, costi, e il sistema e la sua
-        navigazione disponibile sia per produttori stranieri che nazionali.
+        Questo articolo risponderà a tutte le domande sulla certificazione BIS,
+        la sua necessità, processi, benefici, schemi, costi, e il sistema e la
+        sua navigazione disponibile sia per produttori stranieri che nazionali.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -724,27 +726,28 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        La Certificazione BIS è una certificazione di garanzia della qualità e sicurezza
-        fornita dal Bureau of Indian Standards (BIS), l'ente nazionale di
-        certificazione dell'India sotto il Ministero degli Affari dei Consumatori. La
-        certificazione BIS garantisce che un prodotto sia conforme agli
-        Standard Indiani (IS) per quanto riguarda prestazioni, sicurezza e qualità.
+        La Certificazione BIS è una certificazione di garanzia della qualità e
+        sicurezza fornita dal Bureau of Indian Standards (BIS), l'ente nazionale
+        di certificazione dell'India sotto il Ministero degli Affari dei
+        Consumatori. La certificazione BIS garantisce che un prodotto sia
+        conforme agli Standard Indiani (IS) per quanto riguarda prestazioni,
+        sicurezza e qualità.
       </p>
       <p className="service-left-content-paragraph">
-        Quando un prodotto soddisfa questi requisiti di standard di qualità, il Bureau
-        of Indian Standards emette una licenza BIS o un certificato BIS, indicando
-        che il prodotto è idoneo a portare il marchio ISI (per schemi nazionali) o un
-        marchio CRS con un numero di registrazione unico (sotto lo Schema BIS di
-        Registrazione Obbligatoria).
+        Quando un prodotto soddisfa questi requisiti di standard di qualità, il
+        Bureau of Indian Standards emette una licenza BIS o un certificato BIS,
+        indicando che il prodotto è idoneo a portare il marchio ISI (per schemi
+        nazionali) o un marchio CRS con un numero di registrazione unico (sotto
+        lo Schema BIS di Registrazione Obbligatoria).
       </p>
       <p className="service-left-content-paragraph">
-        Per molti produttori e importatori indiani ottenere la certificazione BIS
-        è obbligatorio. Copre un'ampia gamma di prodotti inclusi apparecchi
+        Per molti produttori e importatori indiani ottenere la certificazione
+        BIS è obbligatorio. Copre un'ampia gamma di prodotti inclusi apparecchi
         elettrici, prodotti in cemento e acciaio, acqua potabile confezionata,
-        elettronica come telefoni cellulari, luci LED, power bank, gioielli in metallo
-        prezioso (attraverso hallmarking) e molti altri. I produttori e
-        gli importatori di questi prodotti obbligatori non possono legalmente vendere o distribuire
-        merci in India senza il riconoscimento BIS.
+        elettronica come telefoni cellulari, luci LED, power bank, gioielli in
+        metallo prezioso (attraverso hallmarking) e molti altri. I produttori e
+        gli importatori di questi prodotti obbligatori non possono legalmente
+        vendere o distribuire merci in India senza il riconoscimento BIS.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -752,11 +755,11 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Il Bureau of Indian Standards (BIS) fu formato nel 1986 prendendo il posto dell'Indian
-        Standards Institution (ISI) che fu formato nel 1947. Il BIS è ora
-        considerato un guardiano della qualità per gli standard in India e ha
-        allineato le sue pratiche ai livelli internazionali e ha fatto gli emendamenti
-        necessari per le condizioni indiane.
+        Il Bureau of Indian Standards (BIS) fu formato nel 1986 prendendo il
+        posto dell'Indian Standards Institution (ISI) che fu formato nel 1947.
+        Il BIS è ora considerato un guardiano della qualità per gli standard in
+        India e ha allineato le sue pratiche ai livelli internazionali e ha
+        fatto gli emendamenti necessari per le condizioni indiane.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -773,9 +776,9 @@ const OverviewSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Attualmente, il BIS garantisce la sicurezza, affidabilità e standardizzazione
-        di migliaia di strumenti e macchinari per utenti indiani in più
-        industrie.
+        Attualmente, il BIS garantisce la sicurezza, affidabilità e
+        standardizzazione di migliaia di strumenti e macchinari per utenti
+        indiani in più industrie.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -783,9 +786,9 @@ const OverviewSection = () => {
       </h2>
       <p className="service-left-content-paragraph">
         Il mercato indiano è enorme, in continua evoluzione e sensibile agli
-        spostamenti di prezzo. Tuttavia, questa apertura espone anche il mercato a merci
-        economiche e non sicure. In questo contesto, la certificazione BIS funge da
-        barriera protettiva.
+        spostamenti di prezzo. Tuttavia, questa apertura espone anche il mercato
+        a merci economiche e non sicure. In questo contesto, la certificazione
+        BIS funge da barriera protettiva.
       </p>
       <PointsListWithoutHeading
         points={[
@@ -797,11 +800,12 @@ const OverviewSection = () => {
         ]}
       />
       <p className="service-left-content-paragraph">
-        La certificazione BIS per l'acqua potabile confezionata è un esempio di dove
-        la mancanza di certificazione potrebbe causare problemi di salute. Altri standard altrettanto carenti
-        di certificazione del prodotto per riscaldatori, tostapane e altri
-        apparecchi elettrici possono portare a incendi. Pertanto, avendo una certificazione
-        BIS, il governo si assicura che queste sfide siano affrontate.
+        La certificazione BIS per l'acqua potabile confezionata è un esempio di
+        dove la mancanza di certificazione potrebbe causare problemi di salute.
+        Altri standard altrettanto carenti di certificazione del prodotto per
+        riscaldatori, tostapane e altri apparecchi elettrici possono portare a
+        incendi. Pertanto, avendo una certificazione BIS, il governo si assicura
+        che queste sfide siano affrontate.
       </p>
     </div>
   );
@@ -852,8 +856,8 @@ const DocumentsSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Un pacchetto di documentazione solido garantisce un'elaborazione fluida. Requisiti
-        chiave includono:
+        Un pacchetto di documentazione solido garantisce un'elaborazione fluida.
+        Requisiti chiave includono:
       </p>
 
       <PointsListWithoutHeading
@@ -913,7 +917,8 @@ const CostSection = () => {
                 Tassa di Applicazione
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Tassa una tantum, non rimborsabile a seconda del tipo di prodotto
+                Tassa una tantum, non rimborsabile a seconda del tipo di
+                prodotto
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -937,8 +942,8 @@ const CostSection = () => {
                 Spese di Ispezione/Revisione Fabbrica
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Addebitate se i funzionari BIS visitano la fabbrica (viaggi nazionali o
-                internazionali extra)
+                Addebitate se i funzionari BIS visitano la fabbrica (viaggi
+                nazionali o internazionali extra)
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -946,7 +951,8 @@ const CostSection = () => {
                 Spese di Consulenza (se applicabile)
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Opzionale, per assistenza alla conformità end-to-end da consulenti
+                Opzionale, per assistenza alla conformità end-to-end da
+                consulenti
               </TableCell>
             </TableRow>
           </TableBody>
@@ -969,8 +975,8 @@ const AIRSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Per i produttori stranieri, il Rappresentante Indiano Autorizzato (AIR) è
-        critico.
+        Per i produttori stranieri, il Rappresentante Indiano Autorizzato (AIR)
+        è critico.
       </p>
 
       <PointsListWithoutHeading
@@ -1004,20 +1010,22 @@ const ConclusionSection = () => {
       <p className="service-left-content-paragraph">
         Avere una certificazione BIS è una necessità per fare affari in India.
         Non è più una certificazione opzionale nel business. È cruciale per il
-        successo aziendale e la costruzione della fiducia. Il BIS è essenziale per la sicurezza e
-        il successo in India. Per produttori e importatori, offre un ambiente
-        di configurazione aziendale facile e sicuro. Problemi legali e multe non sono più una
-        preoccupazione. Con un marchio BIS, la fiducia del consumatore è garantita.
+        successo aziendale e la costruzione della fiducia. Il BIS è essenziale
+        per la sicurezza e il successo in India. Per produttori e importatori,
+        offre un ambiente di configurazione aziendale facile e sicuro. Problemi
+        legali e multe non sono più una preoccupazione. Con un marchio BIS, la
+        fiducia del consumatore è garantita.
       </p>
 
       <p className="service-left-content-paragraph">
         L'India è una delle più grandi economie in crescita al mondo e ottenere
-        l'accesso per vendere lì può aiutare un esportatore a crescere. Non importa se sei un
-        produttore in India o all'estero, la licenza BIS è necessaria per
-        produrre o vendere prodotti nel mercato indiano. È richiesta, e
-        sblocca prospettive di business con la popolazione in crescita dell'India. È un
-        investimento in sicurezza, fiducia del consumatore, reputazione del brand, credibilità e
-        crescita a lungo termine.
+        l'accesso per vendere lì può aiutare un esportatore a crescere. Non
+        importa se sei un produttore in India o all'estero, la licenza BIS è
+        necessaria per produrre o vendere prodotti nel mercato indiano. È
+        richiesta, e sblocca prospettive di business con la popolazione in
+        crescita dell'India. È un investimento in sicurezza, fiducia del
+        consumatore, reputazione del brand, credibilità e crescita a lungo
+        termine.
       </p>
     </div>
   );
@@ -1037,9 +1045,9 @@ const SchemesSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Il BIS ha numerosi schemi di certificazione progettati per varie industrie
-        e tipi di prodotti. Ogni schema è progettato per soddisfare le esigenze particolari
-        dell'industria e del prodotto.
+        Il BIS ha numerosi schemi di certificazione progettati per varie
+        industrie e tipi di prodotti. Ogni schema è progettato per soddisfare le
+        esigenze particolari dell'industria e del prodotto.
       </p>
 
       <PointsListWithoutHeading
@@ -1073,35 +1081,37 @@ const SchemesSection = () => {
         Per i produttori indiani, ottenere una licenza BIS è un prerequisito per
         garantire vendite legali dei loro prodotti all'interno del paese. Questa
         certificazione è rilasciata dal Bureau of Indian Standards (BIS) per
-        certificare la soddisfazione degli Standard Indiani relativi a parametri di qualità, sicurezza
-        e prestazioni per i prodotti. Questo include audit
-        di fabbrica, test dei prodotti e controlli di conformità con i parametri BIS.
-        Una volta che il prodotto è passato, ai produttori è permesso di mettere il marchio ISI
-        sul prodotto. Questo marchio è un marchio commerciale per il produttore e
-        aiuta il cliente a identificare un prodotto genuino certificato ISI.
+        certificare la soddisfazione degli Standard Indiani relativi a parametri
+        di qualità, sicurezza e prestazioni per i prodotti. Questo include audit
+        di fabbrica, test dei prodotti e controlli di conformità con i parametri
+        BIS. Una volta che il prodotto è passato, ai produttori è permesso di
+        mettere il marchio ISI sul prodotto. Questo marchio è un marchio
+        commerciale per il produttore e aiuta il cliente a identificare un
+        prodotto genuino certificato ISI.
       </p>
 
       <p className="service-left-content-paragraph">
-        Indipendentemente dal fatto che sia per elettronica, acciaio, cemento, plastica o
-        materiali da costruzione, ottenere un certificato BIS è essenziale per
-        ottenere l'accesso al mercato. A differenza di guadagnare la fiducia del consumatore, un certificato
-        BIS migliora la reputazione dei produttori indiani, permette loro
-        di partecipare a contratti governativi e apre una serie di
-        altre opportunità di business. Soprattutto, l'assenza di certificazione
-        BIS può avere ripercussioni dannose, che vanno da multe legali
-        e richiamo del prodotto a un divieto completo di vendita in India. Pertanto, la conformità
-        BIS è più di un requisito legale, è una strategia mirata
-        per espandere e mantenere la fiducia del consumatore.
+        Indipendentemente dal fatto che sia per elettronica, acciaio, cemento,
+        plastica o materiali da costruzione, ottenere un certificato BIS è
+        essenziale per ottenere l'accesso al mercato. A differenza di guadagnare
+        la fiducia del consumatore, un certificato BIS migliora la reputazione
+        dei produttori indiani, permette loro di partecipare a contratti
+        governativi e apre una serie di altre opportunità di business.
+        Soprattutto, l'assenza di certificazione BIS può avere ripercussioni
+        dannose, che vanno da multe legali e richiamo del prodotto a un divieto
+        completo di vendita in India. Pertanto, la conformità BIS è più di un
+        requisito legale, è una strategia mirata per espandere e mantenere la
+        fiducia del consumatore.
       </p>
 
       <p className="service-left-content-paragraph">
-        Per i produttori indiani, lo schema marchio ISI è il marchio più prestigioso.
-        Sotto lo schema, i produttori indiani sono tenuti a far testare i loro
-        prodotti presso strutture di test riconosciute BIS. I siti di
-        produzione sono soggetti a ispezione e test. I prodotti conformi
-        ricevono l'approvazione per utilizzare il marchio ISI. È un reato fornire
-        prodotti come cemento, bombole GPL, cavi elettrici, acqua potabile
-        confezionata e altro ancora, senza il marchio ISI.
+        Per i produttori indiani, lo schema marchio ISI è il marchio più
+        prestigioso. Sotto lo schema, i produttori indiani sono tenuti a far
+        testare i loro prodotti presso strutture di test riconosciute BIS. I
+        siti di produzione sono soggetti a ispezione e test. I prodotti conformi
+        ricevono l'approvazione per utilizzare il marchio ISI. È un reato
+        fornire prodotti come cemento, bombole GPL, cavi elettrici, acqua
+        potabile confezionata e altro ancora, senza il marchio ISI.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1110,15 +1120,16 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Lo Schema di Certificazione Produttori Stranieri (FMCS) è uno schema
-        sviluppato dal Bureau of Indian Standards per aziende straniere
-        che desiderano entrare nel Mercato Indiano. Questo schema garantisce la sicurezza,
-        qualità e garanzia di prestazioni dei prodotti fabbricati all'estero
-        conformi agli standard indiani richiesti. Secondo FMCS, le aziende
-        straniere che desiderano vendere prodotti in India devono prima acquisire un certificato
-        del Bureau of Indian Standards o una licenza. Come i produttori indiani,
-        anche i produttori stranieri sono tenuti a ottenere una licenza BIS per utilizzare
-        il marchio ISI sul loro prodotto. Il desiderabile marchio ISI viene dato dopo
-        una valutazione estensiva che include test di fabbrica e campioni di prodotto rigorosi
+        sviluppato dal Bureau of Indian Standards per aziende straniere che
+        desiderano entrare nel Mercato Indiano. Questo schema garantisce la
+        sicurezza, qualità e garanzia di prestazioni dei prodotti fabbricati
+        all'estero conformi agli standard indiani richiesti. Secondo FMCS, le
+        aziende straniere che desiderano vendere prodotti in India devono prima
+        acquisire un certificato del Bureau of Indian Standards o una licenza.
+        Come i produttori indiani, anche i produttori stranieri sono tenuti a
+        ottenere una licenza BIS per utilizzare il marchio ISI sul loro
+        prodotto. Il desiderabile marchio ISI viene dato dopo una valutazione
+        estensiva che include test di fabbrica e campioni di prodotto rigorosi
         contro gli Standard Indiani.
       </p>
 
@@ -1126,13 +1137,13 @@ const SchemesSection = () => {
         Un produttore straniero è tenuto a nominare un Rappresentante Indiano
         Autorizzato (AIR), che è responsabile della comunicazione e
         coordinamento, come primo punto di contatto con il Bureau of Indian
-        Standards (BIS) per lo schema. Include la presentazione di una
-        domanda, valutazione approfondita della conformità e l'assunzione di tutti
-        gli obblighi necessari per raggiungere la conformità entro i termini. Come
-        risultato del seguire le linee guida FMCS, le aziende straniere sono in grado di
-        entrare nel mercato indiano, così come acquisire goodwill con i clienti.
-        Qualsiasi prodotto con un marchio ISI mostra un alto livello di qualità, sicurezza e
-        garanzia di affidabilità in India.
+        Standards (BIS) per lo schema. Include la presentazione di una domanda,
+        valutazione approfondita della conformità e l'assunzione di tutti gli
+        obblighi necessari per raggiungere la conformità entro i termini. Come
+        risultato del seguire le linee guida FMCS, le aziende straniere sono in
+        grado di entrare nel mercato indiano, così come acquisire goodwill con i
+        clienti. Qualsiasi prodotto con un marchio ISI mostra un alto livello di
+        qualità, sicurezza e garanzia di affidabilità in India.
       </p>
 
       <p className="service-left-content-paragraph">
@@ -1145,36 +1156,38 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Lo Schema X, o il Regolamento Tecnico Omnibus, è un altro Schema di certificazione
-        BIS progettato dal Bureau of Indian Standards per aiutare
-        a semplificare le procedure di conformità delle industrie nei domini meccanici e
-        elettrici. A differenza degli altri schemi di certificazione, lo Schema X
-        si concentra sulla riduzione della documentazione, valutazioni e approvazioni mentre
-        garantisce che i prodotti aderiscano agli Standard Indiani. I prodotti con
-        il marchio standard sono di qualità e sicurezza eccezionali e possono essere venduti
-        dopo aver subito test di tipo, ispezioni di fabbrica e semplice
+        Lo Schema X, o il Regolamento Tecnico Omnibus, è un altro Schema di
+        certificazione BIS progettato dal Bureau of Indian Standards per aiutare
+        a semplificare le procedure di conformità delle industrie nei domini
+        meccanici e elettrici. A differenza degli altri schemi di
+        certificazione, lo Schema X si concentra sulla riduzione della
+        documentazione, valutazioni e approvazioni mentre garantisce che i
+        prodotti aderiscano agli Standard Indiani. I prodotti con il marchio
+        standard sono di qualità e sicurezza eccezionali e possono essere
+        venduti dopo aver subito test di tipo, ispezioni di fabbrica e semplice
         certificazione dei requisiti obbligatori.
       </p>
 
       <p className="service-left-content-paragraph">
-        Lo schema X copre le linee guida di sicurezza per macchinari pesanti e attrezzature elettriche
-        per prodotti come pompe, gru, trasformatori, macchine
-        utensili e altri prodotti di ingegneria pesante. Queste sono le industrie più pertinenti
-        e tutte dove affidabilità e sicurezza sono una necessità. Lo Schema X
-        è conveniente in quanto riduce i tempi e i costi della complessa certificazione
-        BIS. Mira a semplificare il processo di conformità per
-        facilitare autorizzazioni più rapide per il marketing e una reputazione migliorata
-        senza compromettere gli standard di qualità e sicurezza. La reputazione duratura e
-        tradizionale del Bureau of Indian Standards permette un più facile
-        commercio internazionale, indispensabile per le aziende per soddisfare i requisiti di conformità
-        e aumentare la competitività.
+        Lo schema X copre le linee guida di sicurezza per macchinari pesanti e
+        attrezzature elettriche per prodotti come pompe, gru, trasformatori,
+        macchine utensili e altri prodotti di ingegneria pesante. Queste sono le
+        industrie più pertinenti e tutte dove affidabilità e sicurezza sono una
+        necessità. Lo Schema X è conveniente in quanto riduce i tempi e i costi
+        della complessa certificazione BIS. Mira a semplificare il processo di
+        conformità per facilitare autorizzazioni più rapide per il marketing e
+        una reputazione migliorata senza compromettere gli standard di qualità e
+        sicurezza. La reputazione duratura e tradizionale del Bureau of Indian
+        Standards permette un più facile commercio internazionale,
+        indispensabile per le aziende per soddisfare i requisiti di conformità e
+        aumentare la competitività.
       </p>
 
       <p className="service-left-content-paragraph">
-        Lo Schema X BIS è obbligatorio per accedere all'industria delle macchine pesanti indiane.
-        Questo nuovo schema è importante per una migliore concorrenza di mercato, innovazione
-        e conformità alle normative che sono semplificate attraverso questa
-        struttura semplificata ma robusta.
+        Lo Schema X BIS è obbligatorio per accedere all'industria delle macchine
+        pesanti indiane. Questo nuovo schema è importante per una migliore
+        concorrenza di mercato, innovazione e conformità alle normative che sono
+        semplificate attraverso questa struttura semplificata ma robusta.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1182,31 +1195,33 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Il Bureau of Indian Standards (BIS) ha sviluppato un programma di certificazione
-        BIS chiamato Schema di Registrazione Obbligatoria (CRS) mirato a
-        regolamentare i prodotti IT ed elettronici in India. Si concentra sulla valutazione
-        della sicurezza e qualità di prodotti ad alto rischio come luci LED, telefoni
-        cellulari, laptop, power bank e altri elettronica di consumo contro
-        gli Standard Indiani. Il CRS, in contrasto con lo schema ISI, non emette un
-        marchio ISI, ma i prodotti certificati, in conformità con lo schema, portano un
-        marchio CRS con un numero di registrazione unico. Tutti i prodotti elettronici e IT
-        devono essere testati nei laboratori riconosciuti BIS e
-        formalmente registrati con BIS CRS, utilizzato per garantire la conformità prima che possano
+        Il Bureau of Indian Standards (BIS) ha sviluppato un programma di
+        certificazione BIS chiamato Schema di Registrazione Obbligatoria (CRS)
+        mirato a regolamentare i prodotti IT ed elettronici in India. Si
+        concentra sulla valutazione della sicurezza e qualità di prodotti ad
+        alto rischio come luci LED, telefoni cellulari, laptop, power bank e
+        altri elettronica di consumo contro gli Standard Indiani. Il CRS, in
+        contrasto con lo schema ISI, non emette un marchio ISI, ma i prodotti
+        certificati, in conformità con lo schema, portano un marchio CRS con un
+        numero di registrazione unico. Tutti i prodotti elettronici e IT devono
+        essere testati nei laboratori riconosciuti BIS e formalmente registrati
+        con BIS CRS, utilizzato per garantire la conformità prima che possano
         essere venduti o importati in India.
       </p>
 
       <p className="service-left-content-paragraph">
-        Questo schema è essenziale per proteggere i consumatori indiani da elettronica non sicura,
-        di qualità inferiore o contraffatta, in particolare nel caso del
-        mercato digitale in rapida crescita. Sia i produttori indiani che stranieri
-        devono acquisire la certificazione CRS. Le aziende straniere devono nominare un
-        Rappresentante Indiano Autorizzato AIR per garantire la conformità. Il BIS
-        aggiorna continuamente l'elenco dei prodotti coperti dal CRS per
-        includere nuovi prodotti e tecnologie e problemi di sicurezza emergenti. Per
-        i produttori, ottenere la registrazione BIS sotto CRS è un vantaggio
-        aggiuntivo poiché aiuta nella conformità normativa e aumenta anche
-        la fiducia del cliente, la reputazione dell'azienda e l'accesso al mercato nell'industria
-        elettronica in India.
+        Questo schema è essenziale per proteggere i consumatori indiani da
+        elettronica non sicura, di qualità inferiore o contraffatta, in
+        particolare nel caso del mercato digitale in rapida crescita. Sia i
+        produttori indiani che stranieri devono acquisire la certificazione CRS.
+        Le aziende straniere devono nominare un Rappresentante Indiano
+        Autorizzato AIR per garantire la conformità. Il BIS aggiorna
+        continuamente l'elenco dei prodotti coperti dal CRS per includere nuovi
+        prodotti e tecnologie e problemi di sicurezza emergenti. Per i
+        produttori, ottenere la registrazione BIS sotto CRS è un vantaggio
+        aggiuntivo poiché aiuta nella conformità normativa e aumenta anche la
+        fiducia del cliente, la reputazione dell'azienda e l'accesso al mercato
+        nell'industria elettronica in India.
       </p>
 
       <h3 className="service-left-content-heading-three">Schema Hallmarking</h3>
@@ -1214,32 +1229,34 @@ const SchemesSection = () => {
       <p className="service-left-content-paragraph">
         In India, l'hallmarking di gioielli d'oro e argento è obbligatorio sotto
         lo Schema Hallmarking e regolamentato dal Bureau of Indian Standards
-        (BIS) che garantisce la purezza e autenticità dei gioielli.
-        Gli articoli in Metalli Preziosi sono testati presso Centri di Assaggio e
-        Hallmarking (AHC) approvati BIS e sono quindi timbrati con segni di hallmark. Questo
-        processo viene completato solo se gli articoli soddisfano gli Standard Indiani
-        stabiliti all'inizio. I gioiellieri devono prima acquisire una licenza BIS che
-        permette loro di vendere gioielli hallmarked. Questo è l'unico modo per farlo
-        legalmente. Il gioielliere è obbligato a sottoporsi e completare test del prodotto,
-        audit BIS e monitoraggio continuo della conformità per vendere gioielli
-        hallmarked. Il processo, alla fine, protegge il consumatore e garantisce
-        la purezza, peso e qualità e limita malpractice così come frodi
-        nel mercato dei gioielli.
+        (BIS) che garantisce la purezza e autenticità dei gioielli. Gli articoli
+        in Metalli Preziosi sono testati presso Centri di Assaggio e Hallmarking
+        (AHC) approvati BIS e sono quindi timbrati con segni di hallmark. Questo
+        processo viene completato solo se gli articoli soddisfano gli Standard
+        Indiani stabiliti all'inizio. I gioiellieri devono prima acquisire una
+        licenza BIS che permette loro di vendere gioielli hallmarked. Questo è
+        l'unico modo per farlo legalmente. Il gioielliere è obbligato a
+        sottoporsi e completare test del prodotto, audit BIS e monitoraggio
+        continuo della conformità per vendere gioielli hallmarked. Il processo,
+        alla fine, protegge il consumatore e garantisce la purezza, peso e
+        qualità e limita malpractice così come frodi nel mercato dei gioielli.
       </p>
 
       <p className="service-left-content-paragraph">
-        Per i consumatori indiani, oro e argento non sono solo ornamenti ma anche
-        investimenti importanti, il che rende la fiducia e la trasparenza essenziali. La
-        gioielleria hallmarking è un segno di garanzia per il cittadino comune nel
-        paese che ogni pezzo di gioielleria in vendita ha superato test
-        estensivi contro vari parametri di riferimento nazionali e pratiche di commercio equo.
-        I gioiellieri possono mostrare la loro credibilità e reputazione di mercato
-        attraverso l'hallmarking dei gioielli. L'incapacità di conformarsi alle regole stabilite porta
-        punizioni che possono includere la sospensione della licenza. Per l'hallmarking
-        sotto BIS, serve come adempimento di obblighi basati su principi e legali.
-        Questo non solo aumenta la soddisfazione del consumatore ma anche
-        migliora il mercato dei gioielli indiano nel suo insieme. Questo vale anche
-        per i rivenditori più piccoli così come per i produttori su larga scala.
+        Per i consumatori indiani, oro e argento non sono solo ornamenti ma
+        anche investimenti importanti, il che rende la fiducia e la trasparenza
+        essenziali. La gioielleria hallmarking è un segno di garanzia per il
+        cittadino comune nel paese che ogni pezzo di gioielleria in vendita ha
+        superato test estensivi contro vari parametri di riferimento nazionali e
+        pratiche di commercio equo. I gioiellieri possono mostrare la loro
+        credibilità e reputazione di mercato attraverso l'hallmarking dei
+        gioielli. L'incapacità di conformarsi alle regole stabilite porta
+        punizioni che possono includere la sospensione della licenza. Per
+        l'hallmarking sotto BIS, serve come adempimento di obblighi basati su
+        principi e legali. Questo non solo aumenta la soddisfazione del
+        consumatore ma anche migliora il mercato dei gioielli indiano nel suo
+        insieme. Questo vale anche per i rivenditori più piccoli così come per i
+        produttori su larga scala.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1247,31 +1264,31 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        L'Eco Mark è uno schema di riconoscimento centrato sull'innovazione creato dal
-        Bureau of Indian Standards (BIS) mirato alla promozione di beni
-        eco-compatibili. A differenza della certificazione tradizionale che si concentra
-        prevalentemente su parametri di sicurezza e qualità, l'Eco Mark è assegnato
-        a beni che conformi agli Standard Indiani e che mostrano almeno un livello
-        ridotto di impatto ambientale avverso durante uno o più
-        delle varie fasi del ciclo di vita dei beni. La certificazione Eco Mark
-        viene assegnata solo dopo test considerevoli e la dimostrazione
+        L'Eco Mark è uno schema di riconoscimento centrato sull'innovazione
+        creato dal Bureau of Indian Standards (BIS) mirato alla promozione di
+        beni eco-compatibili. A differenza della certificazione tradizionale che
+        si concentra prevalentemente su parametri di sicurezza e qualità, l'Eco
+        Mark è assegnato a beni che conformi agli Standard Indiani e che
+        mostrano almeno un livello ridotto di impatto ambientale avverso durante
+        uno o più delle varie fasi del ciclo di vita dei beni. La certificazione
+        Eco Mark viene assegnata solo dopo test considerevoli e la dimostrazione
         di criteri - conformità che include livelli di emissione, non-tossicità,
-        il tasso di biodegradazione, capacità di riciclaggio e interazioni complessive
-        con il sistema. L'Eco Mark, proprio come il marchio ISI, è un emblema di
-        garanzia dal governo a cui è stato concesso lo status di
-        marchio di certificazione, sebbene con obiettivi più pronunciati di sostenibilità
-        ambientale.
+        il tasso di biodegradazione, capacità di riciclaggio e interazioni
+        complessive con il sistema. L'Eco Mark, proprio come il marchio ISI, è
+        un emblema di garanzia dal governo a cui è stato concesso lo status di
+        marchio di certificazione, sebbene con obiettivi più pronunciati di
+        sostenibilità ambientale.
       </p>
 
       <p className="service-left-content-paragraph">
         La licenza BIS con Eco Mark certifica che un'azienda si impegna nella
-        produzione responsabile e si preoccupa dell'ambiente. Garantisce
-        la conformità con la legge e crea un vantaggio competitivo con
-        consumatori protettivi e aziende orientate alla sostenibilità. L'Eco Mark
-        aiuta l'industria a fidarsi e adottare pratiche verdi e per i
-        consumatori a fidarsi che i prodotti che acquistano siano sicuri e
-        ambientalmente responsabili. L'Eco Mark supporta la visione dell'India per
-        una protezione della qualità migliorata con protezione ambientale sotto BIS.
+        produzione responsabile e si preoccupa dell'ambiente. Garantisce la
+        conformità con la legge e crea un vantaggio competitivo con consumatori
+        protettivi e aziende orientate alla sostenibilità. L'Eco Mark aiuta
+        l'industria a fidarsi e adottare pratiche verdi e per i consumatori a
+        fidarsi che i prodotti che acquistano siano sicuri e ambientalmente
+        responsabili. L'Eco Mark supporta la visione dell'India per una
+        protezione della qualità migliorata con protezione ambientale sotto BIS.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1280,29 +1297,30 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Lo Schema di Certificazione Sistemi di Gestione (MSCS) avviato dal
-        Bureau of Indian Standards (BIS) è una procedura stepwise che valuta
-        e riconosce le aziende interessate per l'implementazione di sistemi di gestione
-        accettati e riconosciuti a livello internazionale. Il framework MSCS consiste di
-        Standard ISO come ISO 9001 Gestione della Qualità, ISO 14001 Gestione dell'Ambiente,
-        ISO 45001 Sistema di Gestione della Salute e Sicurezza sul Lavoro
-        e altri. MSCS certifica l'azienda per le operazioni legali,
-        consistenza e miglioramento continuo delle operazioni. Le aziende
-        certificate attraversano numerose valutazioni e audit che aiutano a costruire
-        fiducia tra i clienti, regolatori e stakeholder che
-        rafforza la garanzia di sicurezza, qualità e sostenibilità.
+        Bureau of Indian Standards (BIS) è una procedura stepwise che valuta e
+        riconosce le aziende interessate per l'implementazione di sistemi di
+        gestione accettati e riconosciuti a livello internazionale. Il framework
+        MSCS consiste di Standard ISO come ISO 9001 Gestione della Qualità, ISO
+        14001 Gestione dell'Ambiente, ISO 45001 Sistema di Gestione della Salute
+        e Sicurezza sul Lavoro e altri. MSCS certifica l'azienda per le
+        operazioni legali, consistenza e miglioramento continuo delle
+        operazioni. Le aziende certificate attraversano numerose valutazioni e
+        audit che aiutano a costruire fiducia tra i clienti, regolatori e
+        stakeholder che rafforza la garanzia di sicurezza, qualità e
+        sostenibilità.
       </p>
 
       <p className="service-left-content-paragraph">
-        Il BIS è l'ente nazionale di standardizzazione dell'India ed è l'ente di certificazione
-        per il miglioramento della reputazione e credibilità dell'organizzazione
-        a livello nazionale e fuori dall'India. MSCS oltre a promuovere la responsabilità
-        attraverso supervisione periodica e ricertificazione libera anche un
-        business per supportare attivamente programmi guidati dal pubblico come Make in India e
-        Atmanirbhar Bharat. Oltre all'obbligo legale, lo schema aiuta anche a
-        coltivare una cultura di integrità, efficienza e commercio equo. MSCS
-        incoraggia il commercio e l'investimento da parte delle aziende certificate e il BIS
-        svolge un ruolo cruciale nello sviluppo dell'ecosistema di qualità del
-        paese.
+        Il BIS è l'ente nazionale di standardizzazione dell'India ed è l'ente di
+        certificazione per il miglioramento della reputazione e credibilità
+        dell'organizzazione a livello nazionale e fuori dall'India. MSCS oltre a
+        promuovere la responsabilità attraverso supervisione periodica e
+        ricertificazione libera anche un business per supportare attivamente
+        programmi guidati dal pubblico come Make in India e Atmanirbhar Bharat.
+        Oltre all'obbligo legale, lo schema aiuta anche a coltivare una cultura
+        di integrità, efficienza e commercio equo. MSCS incoraggia il commercio
+        e l'investimento da parte delle aziende certificate e il BIS svolge un
+        ruolo cruciale nello sviluppo dell'ecosistema di qualità del paese.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1310,34 +1328,36 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Sotto il Bureau of Indian Standards (BIS), lo Schema di Riconoscimento Laboratori
-        (LRS) è una parte integrale di un sistema che garantisce l'affidabilità
-        e la competenza complessiva dei laboratori che testano e certificano prodotti
-        per l'approvazione BIS. Tali laboratori sono criticamente valutati su vari
-        attributi che includono conoscenza tecnica, qualità della forza lavoro,
-        infrastruttura e la competenza complessiva e soddisfazione del laboratorio
-        con lo standard ISO/ IEC 17025. Questi laboratori, una volta approvati, sono
-        autorizzati a eseguire test sul prodotto per cui la valutazione
-        di conformità viene fatta come parte di vari programmi di certificazione BIS come
-        lo Schema Marchio ISI e lo Schema di Registrazione Obbligatoria (CRS). È
-        chiaro che per i produttori, in particolare per importatori ed esportatori,
-        i rapporti ottenuti da un laboratorio approvato LRS sono un requisito critico
-        per ottenere un certificato BIS che è un requisito legale per determinati
-        prodotti.
+        Sotto il Bureau of Indian Standards (BIS), lo Schema di Riconoscimento
+        Laboratori (LRS) è una parte integrale di un sistema che garantisce
+        l'affidabilità e la competenza complessiva dei laboratori che testano e
+        certificano prodotti per l'approvazione BIS. Tali laboratori sono
+        criticamente valutati su vari attributi che includono conoscenza
+        tecnica, qualità della forza lavoro, infrastruttura e la competenza
+        complessiva e soddisfazione del laboratorio con lo standard ISO/ IEC
+        17025. Questi laboratori, una volta approvati, sono autorizzati a
+        eseguire test sul prodotto per cui la valutazione di conformità viene
+        fatta come parte di vari programmi di certificazione BIS come lo Schema
+        Marchio ISI e lo Schema di Registrazione Obbligatoria (CRS). È chiaro
+        che per i produttori, in particolare per importatori ed esportatori, i
+        rapporti ottenuti da un laboratorio approvato LRS sono un requisito
+        critico per ottenere un certificato BIS che è un requisito legale per
+        determinati prodotti.
       </p>
 
       <p className="service-left-content-paragraph">
-        L'LRS sta potenziando i sistemi di garanzia dell'India mantenendo l'equità nei
-        risultati dei test e garantendo che tutti i risultati siano consistenti e
-        globalmente comparati, mentre accredita solo laboratori affidabili e solidi.
-        Per mantenere l'integrità e la trasparenza, il BIS esegue audit
-        regolari, test di competenza e sorveglianza di laboratori schematici
-        riconosciuti. Il riconoscimento di questa certificazione permette al BIS di migliorare la fiducia
-        dei consumatori mentre rende il processo di certificazione più efficiente per
-        le industrie, poiché solo prodotti sicuri, conformi e di alta qualità saranno
-        offerti nel mercato indiano. Per le organizzazioni che mirano a ricevere la certificazione
-        BIS, la collaborazione con laboratori approvati LRS è la più
-        essenziale per raggiungere la conformità e l'accesso al mercato.
+        L'LRS sta potenziando i sistemi di garanzia dell'India mantenendo
+        l'equità nei risultati dei test e garantendo che tutti i risultati siano
+        consistenti e globalmente comparati, mentre accredita solo laboratori
+        affidabili e solidi. Per mantenere l'integrità e la trasparenza, il BIS
+        esegue audit regolari, test di competenza e sorveglianza di laboratori
+        schematici riconosciuti. Il riconoscimento di questa certificazione
+        permette al BIS di migliorare la fiducia dei consumatori mentre rende il
+        processo di certificazione più efficiente per le industrie, poiché solo
+        prodotti sicuri, conformi e di alta qualità saranno offerti nel mercato
+        indiano. Per le organizzazioni che mirano a ricevere la certificazione
+        BIS, la collaborazione con laboratori approvati LRS è la più essenziale
+        per raggiungere la conformità e l'accesso al mercato.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1360,7 +1380,8 @@ const SchemesSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        L'elenco continua a crescere man mano che emergono nuovi rischi e tecnologie.
+        L'elenco continua a crescere man mano che emergono nuovi rischi e
+        tecnologie.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1434,7 +1455,8 @@ const BISCertificationFaq = () => {
         "Una licenza BIS è tipicamente valida per uno o due anni e deve essere rinnovata prima della scadenza per continuare a utilizzare il marchio ISI o mantenere lo status di registrazione BIS.",
     },
     {
-      question: "Quali sono i passaggi per ottenere la certificazione BIS in India?",
+      question:
+        "Quali sono i passaggi per ottenere la certificazione BIS in India?",
       answer:
         "Il processo di certificazione BIS include l'identificazione degli standard indiani applicabili, la presentazione di un'applicazione, il test del prodotto, l'ispezione della fabbrica e l'emissione di un certificato BIS dopo l'approvazione.",
     },
@@ -1464,12 +1486,14 @@ const BISCertificationFaq = () => {
         "Il costo della certificazione BIS dipende dal tipo di prodotto, requisiti di test, tipo di schema (ISI, CRS, FMCS), e se il richiedente è nazionale o straniero. I costi includono tasse di applicazione, spese di test e spese di ispezione.",
     },
     {
-      question: "Il marchio ISI è obbligatorio per tutti i prodotti certificati BIS?",
+      question:
+        "Il marchio ISI è obbligatorio per tutti i prodotti certificati BIS?",
       answer:
         "No, solo i prodotti sotto lo schema ISI sono tenuti a portare il marchio ISI. I prodotti sotto schemi CRS o Hallmarking seguono protocolli di etichettatura diversi secondo le norme di registrazione BIS.",
     },
     {
-      question: "Posso ottenere certificazione BIS per prodotti eco-compatibili?",
+      question:
+        "Posso ottenere certificazione BIS per prodotti eco-compatibili?",
       answer:
         "Sì, i prodotti che soddisfano gli standard ambientali possono ottenere certificazione BIS sotto lo schema Eco Mark, che garantisce la conformità agli standard indiani per la sicurezza ambientale.",
     },
@@ -1485,7 +1509,8 @@ const BISCertificationFaq = () => {
         "Il CRS è un programma di registrazione BIS per beni IT ed elettronici come luci LED, telefoni cellulari e power bank. Garantisce la conformità del prodotto agli standard indiani relativi alla sicurezza.",
     },
     {
-      question: "Il marchio ISI e il certificato BIS significano la stessa cosa?",
+      question:
+        "Il marchio ISI e il certificato BIS significano la stessa cosa?",
       answer:
         "Non esattamente. Il marchio ISI è il simbolo concesso ai prodotti certificati sotto lo schema di certificazione BIS. Un certificato BIS è il documento legale emesso al produttore.",
     },
@@ -1604,8 +1629,9 @@ const BISCertificationServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

@@ -30,7 +30,6 @@ import FooterVietnamese from "@/components/manual/Footer/FooterVietnamese";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -148,9 +147,9 @@ const ISIMarkHero = () => {
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            Là một phần của tầm nhìn 'Make in India', chứng nhận BIS giúp các nhà
-            sản xuất đảm bảo an toàn sản phẩm, chất lượng và tuân thủ. Hãy được
-            chứng nhận và phát triển thương hiệu của bạn với sự tự tin.
+            Là một phần của tầm nhìn 'Make in India', chứng nhận BIS giúp các
+            nhà sản xuất đảm bảo an toàn sản phẩm, chất lượng và tuân thủ. Hãy
+            được chứng nhận và phát triển thương hiệu của bạn với sự tự tin.
           </p>
 
           <div className="flex items-center -mt-2">
@@ -187,7 +186,8 @@ const ISIMarkContactForm = () => {
 
   const getPageName = () => {
     const path = window.location.pathname;
-    if (path.includes("/vi/chung-nhan-bis-isi-mark")) return "ISI Mark - Vietnamese Page";
+    if (path.includes("/vi/chung-nhan-bis-isi-mark"))
+      return "ISI Mark - Vietnamese Page";
   };
 
   const [formData, setFormData] = useState({
@@ -201,7 +201,8 @@ const ISIMarkContactForm = () => {
     pageName: getPageName(),
   });
 
-  const { fullName, email, phoneNumber, companyName, productName, message } = formData;
+  const { fullName, email, phoneNumber, companyName, productName, message } =
+    formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({
@@ -258,7 +259,8 @@ const ISIMarkContactForm = () => {
       }
       toast({
         title: "Gửi biểu mẫu thành công!",
-        description: "Cảm ơn bạn đã liên hệ với chúng tôi. Đội ngũ sẽ sớm phản hồi.",
+        description:
+          "Cảm ơn bạn đã liên hệ với chúng tôi. Đội ngũ sẽ sớm phản hồi.",
       });
 
       setFormData({
@@ -303,24 +305,82 @@ const ISIMarkContactForm = () => {
 
       <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
-          <Input disabled={loading} required type="text" name="fullName" value={fullName} onChange={handleOnChange} placeholder="Họ và tên *" className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide" />
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="fullName"
+            value={fullName}
+            onChange={handleOnChange}
+            placeholder="Họ và tên *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
 
-          <Input disabled={loading} required type="email" name="email" value={email} onChange={handleOnChange} placeholder="Địa chỉ email *" className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide" />
+          <Input
+            disabled={loading}
+            required
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleOnChange}
+            placeholder="Địa chỉ email *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
-          <Input disabled={loading} required type="tel" name="phoneNumber" value={phoneNumber} onChange={handleOnChange} placeholder="Số điện thoại *" className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide" />
+          <Input
+            disabled={loading}
+            required
+            type="tel"
+            name="phoneNumber"
+            value={phoneNumber}
+            onChange={handleOnChange}
+            placeholder="Số điện thoại *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
 
-          <Input disabled={loading} required type="text" name="companyName" value={companyName} onChange={handleOnChange} placeholder="Tên công ty *" className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide" />
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="companyName"
+            value={companyName}
+            onChange={handleOnChange}
+            placeholder="Tên công ty *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
-          <Input disabled={loading} required type="text" name="productName" value={productName} onChange={handleOnChange} placeholder="Tên sản phẩm *" className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide" />
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="productName"
+            value={productName}
+            onChange={handleOnChange}
+            placeholder="Tên sản phẩm *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
 
-          <Input disabled={loading} required type="text" name="message" value={message} onChange={handleOnChange} placeholder="Chứng nhận yêu cầu *" className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide" />
+          <Input
+            disabled={loading}
+            required
+            type="text"
+            name="message"
+            value={message}
+            onChange={handleOnChange}
+            placeholder="Chứng nhận yêu cầu *"
+            className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
+          />
         </div>
 
-        <Button disabled={loading} type="submit" className="disabled:opacity-100 mt-1 w-[218px] h-[50px] md:h-[60px] bg-[#1A8781] hover:bg-[#1A8781]/90 rounded-[5px] text-[15px] md:text-[15px] font-poppins tracking-wide leading-[28px] shadow-elegant transition-all duration-300 hover:translate-y-[-2px]">
+        <Button
+          disabled={loading}
+          type="submit"
+          className="disabled:opacity-100 mt-1 w-[218px] h-[50px] md:h-[60px] bg-[#1A8781] hover:bg-[#1A8781]/90 rounded-[5px] text-[15px] md:text-[15px] font-poppins tracking-wide leading-[28px] shadow-elegant transition-all duration-300 hover:translate-y-[-2px]"
+        >
           {loading ? (
             <div className="flex gap-3 items-center justify-center">
               <ClockLoader size={22} color="#fff" />
@@ -402,7 +462,13 @@ const ISIMarkIndex = () => {
   useEffect(() => {
     const handleScrollSpy = () => {
       const scrollPosition = window.scrollY + 200;
-      const sections = ["overview", "requirement", "documents", "conclusion", "faqs"];
+      const sections = [
+        "overview",
+        "requirement",
+        "documents",
+        "conclusion",
+        "faqs",
+      ];
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         const element = document.getElementById(section);
@@ -437,28 +503,51 @@ const ISIMarkIndex = () => {
           className="p-2 rounded-md hover:bg-blue-100 transition-colors"
           aria-label="Toggle menu"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-blue-900"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             {isMobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             )}
           </svg>
         </button>
       </div>
 
       {isMobileMenuOpen && (
-        <div ref={mobileMenuRef} className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200">
+        <div
+          ref={mobileMenuRef}
+          className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 border-t border-gray-200"
+        >
           <div className="flex flex-col py-2">
             {Object.keys(MENU_ITEMS).map((itemKey) => (
               <div
                 key={itemKey}
                 onClick={() => handleItemClick(itemKey)}
                 className={`px-4 py-3 cursor-pointer transition-colors ${
-                  itemKey === activeSection ? "bg-blue-50 text-blue-900 font-semibold" : "text-blue-950 hover:bg-blue-50"
+                  itemKey === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
                 }`}
               >
-                <div className="font-geist tracking-wider uppercase">{MENU_ITEMS[itemKey]}</div>
+                <div className="font-geist tracking-wider uppercase">
+                  {MENU_ITEMS[itemKey]}
+                </div>
               </div>
             ))}
           </div>
@@ -467,15 +556,27 @@ const ISIMarkIndex = () => {
 
       <div className="hidden md:flex items-center justify-between px-12 h-full max-w-[88rem] mx-auto">
         {Object.keys(MENU_ITEMS).map((itemKey) => (
-          <div key={itemKey} onClick={() => handleItemClick(itemKey)} className="relative cursor-pointer group whitespace-nowrap px-2">
-            <div className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
-              itemKey === activeSection ? "text-blue-900" : "text-blue-950 group-hover:text-blue-900"
-            }`}>
+          <div
+            key={itemKey}
+            onClick={() => handleItemClick(itemKey)}
+            className="relative cursor-pointer group whitespace-nowrap px-2"
+          >
+            <div
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                itemKey === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
+            >
               {MENU_ITEMS[itemKey]}
             </div>
-            <div className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
-              itemKey === activeSection ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-            }`} />
+            <div
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                itemKey === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
+            />
           </div>
         ))}
       </div>
@@ -521,34 +622,67 @@ const OverviewSection = () => {
         <span className="service-left-content-index-heading">Tổng quan</span>
         <Separator className="service-left-content-separator" />
       </div>
-      <h1 className="service-left-content-heading-two">Chứng nhận BIS ISI Mark cho Nhà sản xuất Ấn Độ</h1>
+      <h1 className="service-left-content-heading-two">
+        Chứng nhận BIS ISI Mark cho Nhà sản xuất Ấn Độ
+      </h1>
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
-        <img src="/services-main-images/BIS-Certification-for-Indian-Manufacturers.png" alt="Indian Bis Certification Schemes" title="BIS License Scheme" className="max-w-full h-auto rounded-lg shadow-md" />
+        <img
+          src="/services-main-images/BIS-Certification-for-Indian-Manufacturers.png"
+          alt="Indian Bis Certification Schemes"
+          title="BIS License Scheme"
+          className="max-w-full h-auto rounded-lg shadow-md"
+        />
       </div>
       <p className="service-left-content-paragraph">
-        Trong bối cảnh thị trường hiện nay, danh tiếng thương hiệu và niềm tin của người tiêu dùng có vai trò rất quan trọng. Người tiêu dùng muốn đảm bảo về an toàn và độ tin cậy của sản phẩm, cùng với các bước kiểm soát chất lượng trong quá trình sản xuất. Cục Tiêu chuẩn Ấn Độ (BIS) giải quyết các vấn đề này và đảm bảo các chuẩn mực chất lượng cho sản phẩm bán tại Ấn Độ. Chứng nhận ISI là một trong những chứng chỉ uy tín nhất thuộc BIS.
+        Trong bối cảnh thị trường hiện nay, danh tiếng thương hiệu và niềm tin
+        của người tiêu dùng có vai trò rất quan trọng. Người tiêu dùng muốn đảm
+        bảo về an toàn và độ tin cậy của sản phẩm, cùng với các bước kiểm soát
+        chất lượng trong quá trình sản xuất. Cục Tiêu chuẩn Ấn Độ (BIS) giải
+        quyết các vấn đề này và đảm bảo các chuẩn mực chất lượng cho sản phẩm
+        bán tại Ấn Độ. Chứng nhận ISI là một trong những chứng chỉ uy tín nhất
+        thuộc BIS.
       </p>
       <p className="service-left-content-paragraph">
-        Đối với nhà sản xuất trong nước, nhận Chứng nhận BIS ISI Mark không chỉ là tuân thủ mà còn là sự chấp nhận của thị trường, củng cố niềm tin thương hiệu và bảo vệ pháp lý. Dấu ISI được công nhận rộng rãi và tăng cường uy tín tại Ấn Độ khi sản xuất thiết bị điện, vật liệu xây dựng, hóa chất hoặc hàng gia dụng.
+        Đối với nhà sản xuất trong nước, nhận Chứng nhận BIS ISI Mark không chỉ
+        là tuân thủ mà còn là sự chấp nhận của thị trường, củng cố niềm tin
+        thương hiệu và bảo vệ pháp lý. Dấu ISI được công nhận rộng rãi và tăng
+        cường uy tín tại Ấn Độ khi sản xuất thiết bị điện, vật liệu xây dựng,
+        hóa chất hoặc hàng gia dụng.
       </p>
       <p className="service-left-content-paragraph">
-        Bài viết này giới thiệu Chứng nhận BIS ISI Mark cho nhà sản xuất trong nước, tập trung vào tầm quan trọng, yêu cầu, lợi ích và toàn bộ quy trình.
+        Bài viết này giới thiệu Chứng nhận BIS ISI Mark cho nhà sản xuất trong
+        nước, tập trung vào tầm quan trọng, yêu cầu, lợi ích và toàn bộ quy
+        trình.
       </p>
-      <h2 className="service-left-content-heading-three">Hiểu về BIS và vai trò của nó</h2>
+      <h2 className="service-left-content-heading-three">
+        Hiểu về BIS và vai trò của nó
+      </h2>
       <p className="service-left-content-paragraph">
-        BIS là cơ quan Tiêu chuẩn hóa và Chứng nhận Quốc gia của Ấn Độ thuộc Bộ Các vấn đề Người tiêu dùng và Công cộng. Với vai trò cơ quan quản lý, BIS đặt ra và duy trì các tiêu chuẩn chất lượng và thực thi trong nhiều ngành theo Luật BIS 1986.
+        BIS là cơ quan Tiêu chuẩn hóa và Chứng nhận Quốc gia của Ấn Độ thuộc Bộ
+        Các vấn đề Người tiêu dùng và Công cộng. Với vai trò cơ quan quản lý,
+        BIS đặt ra và duy trì các tiêu chuẩn chất lượng và thực thi trong nhiều
+        ngành theo Luật BIS 1986.
       </p>
       <p className="service-left-content-paragraph">
-        BIS là cơ quan xác minh bên thứ ba đánh giá sản phẩm có đáp ứng các tiêu chuẩn Ấn Độ cụ thể hay không. Chứng nhận BIS không chỉ là yêu cầu pháp lý mà còn là dấu chứng nhận về lòng tin và uy tín từ khách hàng.
+        BIS là cơ quan xác minh bên thứ ba đánh giá sản phẩm có đáp ứng các tiêu
+        chuẩn Ấn Độ cụ thể hay không. Chứng nhận BIS không chỉ là yêu cầu pháp
+        lý mà còn là dấu chứng nhận về lòng tin và uy tín từ khách hàng.
       </p>
       <h2 className="service-left-content-heading-three">Dấu ISI là gì?</h2>
       <p className="service-left-content-paragraph">
-        Dấu ISI là chứng nhận lâu đời và được công nhận rộng rãi nhất của BIS. Chứng nhận này xác nhận sản phẩm đáp ứng các yêu cầu cơ bản về an toàn, chất lượng, hiệu suất và độ tin cậy theo tiêu chuẩn BIS.
+        Dấu ISI là chứng nhận lâu đời và được công nhận rộng rãi nhất của BIS.
+        Chứng nhận này xác nhận sản phẩm đáp ứng các yêu cầu cơ bản về an toàn,
+        chất lượng, hiệu suất và độ tin cậy theo tiêu chuẩn BIS.
       </p>
       <p className="service-left-content-paragraph">
-        Sản phẩm mang dấu ISI đã trải qua kiểm thử phòng thí nghiệm và đánh giá nhà máy nghiêm ngặt, đảm bảo quy trình kiểm soát chất lượng được thực thi trong sản xuất. Dấu ISI là cầu nối niềm tin giữa người tiêu dùng và nhà sản xuất.
+        Sản phẩm mang dấu ISI đã trải qua kiểm thử phòng thí nghiệm và đánh giá
+        nhà máy nghiêm ngặt, đảm bảo quy trình kiểm soát chất lượng được thực
+        thi trong sản xuất. Dấu ISI là cầu nối niềm tin giữa người tiêu dùng và
+        nhà sản xuất.
       </p>
-      <p className="service-left-content-paragraph">Một số ví dụ sản phẩm bắt buộc chứng nhận ISI:</p>
+      <p className="service-left-content-paragraph">
+        Một số ví dụ sản phẩm bắt buộc chứng nhận ISI:
+      </p>
       <PointsListWithoutHeading
         points={[
           "Thiết bị các loại (bàn ủi, bộ sưởi, dây điện, tủ lạnh, điều hòa)",
@@ -558,12 +692,16 @@ const OverviewSection = () => {
         ]}
       />
       <p className="service-left-content-paragraph">
-        Có hơn 650 sản phẩm yêu cầu chứng nhận BIS bắt buộc để sử dụng dấu chuẩn (ISI) theo Chương trình I, Phụ lục I của BIS. Danh sách sản phẩm bắt buộc có tại {" "}
+        Có hơn 650 sản phẩm yêu cầu chứng nhận BIS bắt buộc để sử dụng dấu chuẩn
+        (ISI) theo Chương trình I, Phụ lục I của BIS. Danh sách sản phẩm bắt
+        buộc có tại{" "}
         <a
           href="#product-table"
           onClick={(e) => {
             e.preventDefault();
-            document.getElementById("product-table")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            document
+              .getElementById("product-table")
+              ?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
           className="text-blue-900 font-semibold hover:text-[#1A8781] uppercase transition-colors cursor-pointer"
         >
@@ -571,25 +709,62 @@ const OverviewSection = () => {
         </a>
         .
       </p>
-      <h2 className="service-left-content-heading-three">Khác biệt giữa Chứng nhận BIS và Dấu ISI?</h2>
-      <p className="service-left-content-paragraph">Mặc dù thường bị nhầm lẫn, hai khái niệm có định nghĩa và mục đích riêng:</p>
+      <h2 className="service-left-content-heading-three">
+        Khác biệt giữa Chứng nhận BIS và Dấu ISI?
+      </h2>
       <p className="service-left-content-paragraph">
-        <strong>Chứng nhận BIS:</strong> Quy trình phê duyệt sản phẩm sau khi đảm bảo đáp ứng Tiêu chuẩn Ấn Độ; là khung đánh giá sự phù hợp.
+        Mặc dù thường bị nhầm lẫn, hai khái niệm có định nghĩa và mục đích
+        riêng:
       </p>
       <p className="service-left-content-paragraph">
-        <strong>Dấu ISI:</strong> Biểu tượng chất lượng được cấp cho sản phẩm sau khi có chứng nhận BIS, thể hiện sản phẩm đáp ứng tiêu chuẩn Ấn Độ.
+        <strong>Chứng nhận BIS:</strong> Quy trình phê duyệt sản phẩm sau khi
+        đảm bảo đáp ứng Tiêu chuẩn Ấn Độ; là khung đánh giá sự phù hợp.
       </p>
-      <p className="service-left-content-paragraph">Nói cách khác, ISI là cam kết hữu hình; BIS cung cấp khung quản trị.</p>
-      <h2 className="service-left-content-heading-three">Tại sao Chứng nhận BIS ISI Mark quan trọng?</h2>
-      <p className="service-left-content-paragraph">Một số lợi ích cho nhà sản xuất trong nước:</p>
-      <p className="service-left-content-paragraph"><strong>1. Đảm bảo chất lượng:</strong> Vượt qua thử nghiệm nghiêm ngặt, giảm lỗi.</p>
-      <p className="service-left-content-paragraph"><strong>2. Niềm tin người tiêu dùng:</strong> Tăng trung thành và uy tín thương hiệu.</p>
-      <p className="service-left-content-paragraph"><strong>3. Truy cập thị trường:</strong> Dấu ISI là chìa khóa bán hàng với các mặt hàng bắt buộc.</p>
-      <p className="service-left-content-paragraph"><strong>4. Lợi thế cạnh tranh:</strong> Nâng cao danh tiếng trong môi trường cạnh tranh.</p>
-      <p className="service-left-content-paragraph"><strong>5. Tuân thủ quy định:</strong> Hoạt động trơn tru, hạn chế rủi ro pháp lý.</p>
-      <p className="service-left-content-paragraph"><strong>6. Thúc đẩy xuất khẩu:</strong> Tăng ưu thế trên thị trường quốc tế.</p>
-      <p className="service-left-content-paragraph"><strong>7. An toàn người tiêu dùng:</strong> Bảo vệ khỏi rủi ro, tai nạn, hiệu năng kém.</p>
-      <p className="service-left-content-paragraph"><strong>8. Kiểm soát chất lượng:</strong> Kiểm tra thường xuyên đảm bảo chất lượng ổn định.</p>
+      <p className="service-left-content-paragraph">
+        <strong>Dấu ISI:</strong> Biểu tượng chất lượng được cấp cho sản phẩm
+        sau khi có chứng nhận BIS, thể hiện sản phẩm đáp ứng tiêu chuẩn Ấn Độ.
+      </p>
+      <p className="service-left-content-paragraph">
+        Nói cách khác, ISI là cam kết hữu hình; BIS cung cấp khung quản trị.
+      </p>
+      <h2 className="service-left-content-heading-three">
+        Tại sao Chứng nhận BIS ISI Mark quan trọng?
+      </h2>
+      <p className="service-left-content-paragraph">
+        Một số lợi ích cho nhà sản xuất trong nước:
+      </p>
+      <p className="service-left-content-paragraph">
+        <strong>1. Đảm bảo chất lượng:</strong> Vượt qua thử nghiệm nghiêm ngặt,
+        giảm lỗi.
+      </p>
+      <p className="service-left-content-paragraph">
+        <strong>2. Niềm tin người tiêu dùng:</strong> Tăng trung thành và uy tín
+        thương hiệu.
+      </p>
+      <p className="service-left-content-paragraph">
+        <strong>3. Truy cập thị trường:</strong> Dấu ISI là chìa khóa bán hàng
+        với các mặt hàng bắt buộc.
+      </p>
+      <p className="service-left-content-paragraph">
+        <strong>4. Lợi thế cạnh tranh:</strong> Nâng cao danh tiếng trong môi
+        trường cạnh tranh.
+      </p>
+      <p className="service-left-content-paragraph">
+        <strong>5. Tuân thủ quy định:</strong> Hoạt động trơn tru, hạn chế rủi
+        ro pháp lý.
+      </p>
+      <p className="service-left-content-paragraph">
+        <strong>6. Thúc đẩy xuất khẩu:</strong> Tăng ưu thế trên thị trường quốc
+        tế.
+      </p>
+      <p className="service-left-content-paragraph">
+        <strong>7. An toàn người tiêu dùng:</strong> Bảo vệ khỏi rủi ro, tai
+        nạn, hiệu năng kém.
+      </p>
+      <p className="service-left-content-paragraph">
+        <strong>8. Kiểm soát chất lượng:</strong> Kiểm tra thường xuyên đảm bảo
+        chất lượng ổn định.
+      </p>
     </div>
   );
 };
@@ -601,8 +776,12 @@ const RequirementSection = () => {
         <span className="service-left-content-index-heading">Yêu cầu</span>
         <Separator className="service-left-content-separator" />
       </div>
-      <h2 className="service-left-content-heading-two">Yêu cầu cơ bản để được chứng nhận BIS ISI Mark</h2>
-      <p className="service-left-content-paragraph">Để được chứng nhận BIS, nhà sản xuất cần đáp ứng:</p>
+      <h2 className="service-left-content-heading-two">
+        Yêu cầu cơ bản để được chứng nhận BIS ISI Mark
+      </h2>
+      <p className="service-left-content-paragraph">
+        Để được chứng nhận BIS, nhà sản xuất cần đáp ứng:
+      </p>
       <PointsListWithoutHeading
         points={[
           "Tuân thủ Tiêu chuẩn Ấn Độ (ISS)",
@@ -613,9 +792,15 @@ const RequirementSection = () => {
           "Hướng dẫn kỹ thuật trong Sổ tay Sản phẩm cho kiểm tra, thử nghiệm và tài liệu",
         ]}
       />
-      <h2 className="service-left-content-heading-three">Quy trình chứng nhận BIS ISI cho nhà sản xuất nội địa</h2>
-      <p className="service-left-content-paragraph">Có hai thủ tục: Thông thường và Đơn giản hóa.</p>
-      <h3 className="service-left-content-heading-three">1. Thông thường (60-65 ngày)</h3>
+      <h2 className="service-left-content-heading-three">
+        Quy trình chứng nhận BIS ISI cho nhà sản xuất nội địa
+      </h2>
+      <p className="service-left-content-paragraph">
+        Có hai thủ tục: Thông thường và Đơn giản hóa.
+      </p>
+      <h3 className="service-left-content-heading-three">
+        1. Thông thường (60-65 ngày)
+      </h3>
       <PointsListWithoutHeading
         points={[
           "Thiết lập PTN nội bộ, sản phẩm phù hợp tiêu chuẩn Ấn Độ",
@@ -625,7 +810,9 @@ const RequirementSection = () => {
           "Cấp giấy phép khi đạt đủ điều kiện",
         ]}
       />
-      <h3 className="service-left-content-heading-three">2. Đơn giản hóa (35-40 ngày)</h3>
+      <h3 className="service-left-content-heading-three">
+        2. Đơn giản hóa (35-40 ngày)
+      </h3>
       <PointsListWithoutHeading
         points={[
           "Nộp tài liệu sản phẩm đã thử nghiệm từ PTN được BIS công nhận",
@@ -642,11 +829,17 @@ const DocumentsSection = () => {
   return (
     <div id="documents" className="flex flex-col scroll-mt-20">
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Tài liệu cần thiết</span>
+        <span className="service-left-content-index-heading">
+          Tài liệu cần thiết
+        </span>
         <Separator className="service-left-content-separator" />
       </div>
-      <h2 className="service-left-content-heading-two">Tài liệu cần cho Chứng nhận Dấu ISI</h2>
-      <p className="service-left-content-paragraph">Nhà sản xuất cần cung cấp:</p>
+      <h2 className="service-left-content-heading-two">
+        Tài liệu cần cho Chứng nhận Dấu ISI
+      </h2>
+      <p className="service-left-content-paragraph">
+        Nhà sản xuất cần cung cấp:
+      </p>
       <PointsListWithoutHeading
         points={[
           "1. Đơn đăng ký (Mẫu V hoặc VI tùy chương trình)",
@@ -667,7 +860,9 @@ const DocumentsSection = () => {
           "16. Cam kết về sản phẩm không tiêu chuẩn",
         ]}
       />
-      <h3 className="service-left-content-heading-three">Lợi ích của Chứng nhận BIS ISI Mark</h3>
+      <h3 className="service-left-content-heading-three">
+        Lợi ích của Chứng nhận BIS ISI Mark
+      </h3>
       <p className="service-left-content-paragraph">Một số lợi ích chính:</p>
       <PointsListWithoutHeading
         points={[
@@ -678,7 +873,9 @@ const DocumentsSection = () => {
           "Tập trung chất lượng, thể hiện cam kết",
         ]}
       />
-      <h3 className="service-left-content-heading-three">Thu hồi Giấy phép BIS</h3>
+      <h3 className="service-left-content-heading-three">
+        Thu hồi Giấy phép BIS
+      </h3>
       <p className="service-left-content-paragraph">BIS có thể thu hồi nếu:</p>
       <PointsListWithoutHeading
         points={[
@@ -687,7 +884,9 @@ const DocumentsSection = () => {
           "Không tuân thủ điều khoản giấy phép",
         ]}
       />
-      <p className="service-left-content-paragraph">Theo Quy định 11 của Quy định Đánh giá Sự phù hợp BIS 2018.</p>
+      <p className="service-left-content-paragraph">
+        Theo Quy định 11 của Quy định Đánh giá Sự phù hợp BIS 2018.
+      </p>
     </div>
   );
 };
@@ -701,13 +900,18 @@ const ConclusionSection = () => {
       </div>
       <h2 className="service-left-content-heading-two">Kết luận</h2>
       <p className="service-left-content-paragraph">
-        Chứng nhận BIS ISI Mark không chỉ là thủ tục hành chính mà còn góp phần xây dựng uy tín và tăng trưởng bền vững. Tuân thủ tiêu chuẩn BIS đảm bảo sản phẩm sẵn sàng đưa ra thị trường.
+        Chứng nhận BIS ISI Mark không chỉ là thủ tục hành chính mà còn góp phần
+        xây dựng uy tín và tăng trưởng bền vững. Tuân thủ tiêu chuẩn BIS đảm bảo
+        sản phẩm sẵn sàng đưa ra thị trường.
       </p>
       <p className="service-left-content-paragraph">
-        Dấu ISI đã trở thành biểu tượng đảm bảo trong môi trường kinh doanh đòi hỏi niềm tin cao, thể hiện năng lực cạnh tranh và tuân thủ quy định.
+        Dấu ISI đã trở thành biểu tượng đảm bảo trong môi trường kinh doanh đòi
+        hỏi niềm tin cao, thể hiện năng lực cạnh tranh và tuân thủ quy định.
       </p>
       <p className="service-left-content-paragraph">
-        Dù bạn sản xuất điện tử, vật liệu xây dựng hay sản phẩm khác, chứng nhận BIS ISI đảm bảo phù hợp tiêu chuẩn hàng đầu của Ấn Độ và bảo vệ danh tiếng, người tiêu dùng của bạn.
+        Dù bạn sản xuất điện tử, vật liệu xây dựng hay sản phẩm khác, chứng nhận
+        BIS ISI đảm bảo phù hợp tiêu chuẩn hàng đầu của Ấn Độ và bảo vệ danh
+        tiếng, người tiêu dùng của bạn.
       </p>
     </div>
   );
@@ -727,7 +931,8 @@ const ISIMarkFaq = () => {
     },
     {
       question: "Mất bao lâu để có chứng nhận BIS?",
-      answer: "Thường 6–10 tuần tùy loại sản phẩm, yêu cầu thử nghiệm, và đánh giá.",
+      answer:
+        "Thường 6–10 tuần tùy loại sản phẩm, yêu cầu thử nghiệm, và đánh giá.",
     },
     {
       question: "Hiệu lực giấy phép BIS?",
@@ -767,14 +972,21 @@ const ISIMarkFaq = () => {
   ];
 
   return (
-    <section id="faqs" className="my-2 scroll-mt-20" aria-label="Câu hỏi thường gặp">
+    <section
+      id="faqs"
+      className="my-2 scroll-mt-20"
+      aria-label="Câu hỏi thường gặp"
+    >
       <div className="max-w-[88rem] mx-auto px-4 pt-5 pb-9 md:pb-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Câu hỏi thường gặp
         </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Không tìm thấy câu trả lời bạn cần? {" "}
-          <a href="/contact" className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors">
+          Không tìm thấy câu trả lời bạn cần?{" "}
+          <a
+            href="/contact"
+            className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
+          >
             Liên hệ với chúng tôi!
           </a>
         </p>
@@ -821,65 +1033,124 @@ const ISIMarkServices = () => {
           </BoxReveal>
         </div>
         <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-x-3 md:gap-x-10 px-4 md:px-0 gap-y-12 md:gap-y-24">
-          <Link to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300">
+          <Link
+            to="/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block hover:scale-105 transition-all duration-300"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img src={BISImage} alt="BIS Logo" title="BIS Logo" className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain" />
+              <img
+                src={BISImage}
+                alt="BIS Logo"
+                title="BIS Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
               Dấu BIS (Giấy phép ISI) cho Nhà sản xuất nước ngoài
             </p>
           </Link>
-          <Link to="/cdsco-registration-certification" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/cdsco-registration-certification"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img src={CDSCO} alt="CDSCO" className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain" />
+              <img
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
               Chứng nhận Đăng ký CDSCO
             </p>
           </Link>
-          <Link to="/what-is-crs-bis-or-crs-registration" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/what-is-crs-bis-or-crs-registration"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img src={BISCRS} alt="BISCRS" className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain" />
+              <img
+                src={BISCRS}
+                alt="BISCRS"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
               Đăng ký BIS (CRS)
             </p>
           </Link>
-          <Link to="/epr-certificate-for-plastic-waste-management-pwm" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/epr-certificate-for-plastic-waste-management-pwm"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img src={PlasticWasteManagement} alt="PlasticWasteManagement" className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain" />
+              <img
+                src={PlasticWasteManagement}
+                alt="PlasticWasteManagement"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
               Quản lý rác thải nhựa
             </p>
           </Link>
-          <Link to="/a-guide-on-how-to-obtain-epr-certificate" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/a-guide-on-how-to-obtain-epr-certificate"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img src={EPRCertificate} alt="EPRCertificate" className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain" />
+              <img
+                src={EPRCertificate}
+                alt="EPRCertificate"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
               Chứng nhận EPR
             </p>
           </Link>
-          <Link to="/a-guide-on-how-to-obtain-lmpc-certificate" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/a-guide-on-how-to-obtain-lmpc-certificate"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img src={LMPC} alt="LMPC" className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain" />
+              <img
+                src={LMPC}
+                alt="LMPC"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
               Chứng nhận LMPC
             </p>
           </Link>
-          <Link to="/what-is-bis-certificate-indian-bis" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/what-is-bis-certificate-indian-bis"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img src={BISImage} alt="BIS Logo" title="BIS Logo" className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain" />
+              <img
+                src={BISImage}
+                alt="BIS Logo"
+                title="BIS Logo"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
               Giấy chứng nhận đăng ký BIS
             </p>
           </Link>
-          <Link to="/vi/chung-nhan-bis-isi-mark" className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block">
+          <Link
+            to="/vi/chung-nhan-bis-isi-mark"
+            className="relative col-span-1 h-[145px] md:h-[240px] bg-[#B5DDEB] rounded-[15px] md:rounded-[20px] shadow-2xl shadow-blue-500/20 flex items-center justify-center md:block"
+          >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <img src={ISIMarkImage} alt="ISIMark" className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain" />
+              <img
+                src={ISIMarkImage}
+                alt="ISIMark"
+                className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
+              />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
               ISI MARK (BIS) cho Nhà sản xuất Ấn Độ
@@ -900,12 +1171,12 @@ const PointsListWithoutHeading = ({ points }) => {
             <div className="bg-green-500/10 p-1.5 rounded-full flex-shrink-0 flex items-center justify-center min-w-[24px] min-h-[24px] mt-0.5">
               <Check size={12} className="text-[#020817]" />
             </div>
-            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose flex-1">{point}</p>
+            <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose flex-1">
+              {point}
+            </p>
           </li>
         ))}
       </ul>
     </div>
   );
 };
-
-

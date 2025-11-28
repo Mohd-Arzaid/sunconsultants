@@ -37,7 +37,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterDutch from "@/components/manual/Footer/FooterDutch";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -159,9 +158,9 @@ const BISCertificationHero = () => {
           </div>
 
           <p className="font-poppins text-[18px] md:text-[20px] z-[10] leading-[1.6] md:leading-[40px] text-[#332156] max-w-[490px] -mt-2">
-            BIS certificering waarborgt productkwaliteit en veiligheid in India. Het is
-            verplicht voor vele producten en vereist testen, documentatie en
-            goedkeuring.
+            BIS certificering waarborgt productkwaliteit en veiligheid in India.
+            Het is verplicht voor vele producten en vereist testen, documentatie
+            en goedkeuring.
           </p>
 
           <nav className="flex items-center -mt-2">
@@ -300,7 +299,8 @@ const BISCertificationContactForm = () => {
         error.response?.data?.message || "Something went wrong";
       toast({
         variant: "destructive",
-        title: errorMessage || "Mislukt om contactformuliergegevens in te dienen!",
+        title:
+          errorMessage || "Mislukt om contactformuliergegevens in te dienen!",
         description:
           "Er is iets misgegaan. Controleer uw gegevens en probeer opnieuw.",
       });
@@ -696,27 +696,29 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Neem bijvoorbeeld een fabrikant uit Duitsland die een uniek
-        elektronisch apparaat heeft uitgevonden en van plan is het te verkopen op de snel veranderende Indiase
-        markt. Het apparaat is uniek en veilig en heeft ook goedkeuringen gekregen in
-        Europa. Wanneer het apparaat echter naar de haven in India wordt gebracht, houden de
-        douaneambtenaren het apparaat vast. De vraag is: "Waarom?" Het antwoord is dat
-        het apparaat een BIS certificering moet hebben, wat cruciaal is
-        om elektronische producten in India te verkopen.
+        Neem bijvoorbeeld een fabrikant uit Duitsland die een uniek elektronisch
+        apparaat heeft uitgevonden en van plan is het te verkopen op de snel
+        veranderende Indiase markt. Het apparaat is uniek en veilig en heeft ook
+        goedkeuringen gekregen in Europa. Wanneer het apparaat echter naar de
+        haven in India wordt gebracht, houden de douaneambtenaren het apparaat
+        vast. De vraag is: "Waarom?" Het antwoord is dat het apparaat een BIS
+        certificering moet hebben, wat cruciaal is om elektronische producten in
+        India te verkopen.
       </p>
 
       <p className="service-left-content-paragraph">
-        Veel wereldwijde en Indiase fabrikanten krijgen elk jaar te maken met dezelfde situaties.
-        Voor Indiase consumenten is het BIS merk op een product niet alleen een
-        logo, het is een teken van vertrouwen dat het product is getest op
-        kwaliteit, veiligheid en betrouwbaarheid. Voor een bedrijf is het de toegangspoort tot
-        een van de grootste markten ter wereld.
+        Veel wereldwijde en Indiase fabrikanten krijgen elk jaar te maken met
+        dezelfde situaties. Voor Indiase consumenten is het BIS merk op een
+        product niet alleen een logo, het is een teken van vertrouwen dat het
+        product is getest op kwaliteit, veiligheid en betrouwbaarheid. Voor een
+        bedrijf is het de toegangspoort tot een van de grootste markten ter
+        wereld.
       </p>
 
       <p className="service-left-content-paragraph">
-        Dit artikel beantwoordt alle vragen over BIS certificering, de
-        noodzaak, processen, voordelen, schema's, kosten en het systeem en de
-        navigatie beschikbaar voor zowel buitenlandse als binnenlandse fabrikanten.
+        Dit artikel beantwoordt alle vragen over BIS certificering, de noodzaak,
+        processen, voordelen, schema's, kosten en het systeem en de navigatie
+        beschikbaar voor zowel buitenlandse als binnenlandse fabrikanten.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -726,25 +728,26 @@ const OverviewSection = () => {
       <p className="service-left-content-paragraph">
         BIS Certificering is een kwaliteitsborging en veiligheidscertificering
         verstrekt door het Bureau of Indian Standards (BIS), de nationale
-        certificeringsinstantie van India onder het Ministerie van Consumentenaangelegenheden. De
-        BIS certificering zorgt ervoor dat een product voldoet aan de Indiase
-        Standaarden (IS) met betrekking tot prestaties, veiligheid en kwaliteit.
+        certificeringsinstantie van India onder het Ministerie van
+        Consumentenaangelegenheden. De BIS certificering zorgt ervoor dat een
+        product voldoet aan de Indiase Standaarden (IS) met betrekking tot
+        prestaties, veiligheid en kwaliteit.
       </p>
       <p className="service-left-content-paragraph">
-        Wanneer een product aan deze kwaliteitsstandaardvereisten voldoet, geeft het Bureau
-        of Indian Standards een BIS licentie of BIS certificaat af, wat betekent dat
-        het product gerechtigd is om het ISI merk te dragen (voor binnenlandse schema's) of een
-        CRS merk met een uniek registratienummer (onder het BIS Verplichte
-        Registratieschema).
+        Wanneer een product aan deze kwaliteitsstandaardvereisten voldoet, geeft
+        het Bureau of Indian Standards een BIS licentie of BIS certificaat af,
+        wat betekent dat het product gerechtigd is om het ISI merk te dragen
+        (voor binnenlandse schema's) of een CRS merk met een uniek
+        registratienummer (onder het BIS Verplichte Registratieschema).
       </p>
       <p className="service-left-content-paragraph">
-        Voor veel Indiase fabrikanten en importeurs is het verkrijgen van BIS certificering
-        een must. Het dekt een breed scala aan producten, waaronder elektrische
-        apparaten, cement- en staalproducten, verpakt drinkwater,
-        elektronica zoals mobiele telefoons, LED-verlichting, power banks, edelmetaal
-        sieraden (via keurmerken) en nog veel meer. De fabrikanten en
-        importeurs van deze verplichte producten kunnen legaal geen goederen verkopen of distribueren
-        in India zonder BIS erkenning.
+        Voor veel Indiase fabrikanten en importeurs is het verkrijgen van BIS
+        certificering een must. Het dekt een breed scala aan producten,
+        waaronder elektrische apparaten, cement- en staalproducten, verpakt
+        drinkwater, elektronica zoals mobiele telefoons, LED-verlichting, power
+        banks, edelmetaal sieraden (via keurmerken) en nog veel meer. De
+        fabrikanten en importeurs van deze verplichte producten kunnen legaal
+        geen goederen verkopen of distribueren in India zonder BIS erkenning.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -753,10 +756,10 @@ const OverviewSection = () => {
 
       <p className="service-left-content-paragraph">
         Het Bureau of Indian Standards (BIS) werd opgericht in 1986 en nam het
-        Indian Standards Institution (ISI) over, dat in 1947 werd opgericht. BIS wordt nu
-        beschouwd als een kwaliteitsbewaker voor standaarden in India en heeft
-        hun praktijken afgestemd op internationale niveaus en de noodzakelijke
-        wijzigingen aangebracht voor de Indiase omstandigheden.
+        Indian Standards Institution (ISI) over, dat in 1947 werd opgericht. BIS
+        wordt nu beschouwd als een kwaliteitsbewaker voor standaarden in India
+        en heeft hun praktijken afgestemd op internationale niveaus en de
+        noodzakelijke wijzigingen aangebracht voor de Indiase omstandigheden.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -773,19 +776,19 @@ const OverviewSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Momenteel garandeert BIS de veiligheid, betrouwbaarheid en standaardisatie
-        van duizenden gereedschappen en machines voor Indiase gebruikers in meerdere
-        industrieën.
+        Momenteel garandeert BIS de veiligheid, betrouwbaarheid en
+        standaardisatie van duizenden gereedschappen en machines voor Indiase
+        gebruikers in meerdere industrieën.
       </p>
 
       <h2 className="service-left-content-heading-three">
         Waarom is BIS Certificering verplicht in India?
       </h2>
       <p className="service-left-content-paragraph">
-        De Indiase markt is enorm, voortdurend veranderend en gevoelig voor prijs
-        verschuivingen. Deze openheid laat de markt echter ook blootstaan aan goedkope
-        en onveilige goederen. In deze context fungeert BIS certificering als een
-        beschermende barrière.
+        De Indiase markt is enorm, voortdurend veranderend en gevoelig voor
+        prijs verschuivingen. Deze openheid laat de markt echter ook blootstaan
+        aan goedkope en onveilige goederen. In deze context fungeert BIS
+        certificering als een beschermende barrière.
       </p>
       <PointsListWithoutHeading
         points={[
@@ -798,9 +801,10 @@ const OverviewSection = () => {
       />
       <p className="service-left-content-paragraph">
         BIS certificering voor verpakt drinkwater is een voorbeeld waarbij
-        gebrek aan certificering gezondheidsproblemen kan veroorzaken. Andere evenzeer ontbrekende
-        standaarden van productcertificering voor verwarmers, broodroosters en andere
-        elektrische apparaten kunnen branden veroorzaken. Daarom zorgt de regering door het hebben van een BIS
+        gebrek aan certificering gezondheidsproblemen kan veroorzaken. Andere
+        evenzeer ontbrekende standaarden van productcertificering voor
+        verwarmers, broodroosters en andere elektrische apparaten kunnen branden
+        veroorzaken. Daarom zorgt de regering door het hebben van een BIS
         certificering ervoor dat deze uitdagingen worden aangepakt.
       </p>
     </div>
@@ -852,8 +856,8 @@ const DocumentsSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Een sterk documentatiepakket zorgt voor een soepele verwerking. Belangrijke
-        vereisten zijn onder meer:
+        Een sterk documentatiepakket zorgt voor een soepele verwerking.
+        Belangrijke vereisten zijn onder meer:
       </p>
 
       <PointsListWithoutHeading
@@ -913,7 +917,8 @@ const CostSection = () => {
                 Aanvraagkosten
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Eenmalige, niet-terugbetaalbare kosten afhankelijk van producttype
+                Eenmalige, niet-terugbetaalbare kosten afhankelijk van
+                producttype
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -937,8 +942,8 @@ const CostSection = () => {
                 Inspectie/Fabrieksauditkosten
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                In rekening gebracht als BIS-functionarissen fabriek bezoeken (binnenlandse of
-                internationale reis extra)
+                In rekening gebracht als BIS-functionarissen fabriek bezoeken
+                (binnenlandse of internationale reis extra)
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -969,8 +974,8 @@ const AIRSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Voor buitenlandse fabrikanten is de Geautoriseerde Indiase Vertegenwoordiger (AIR)
-        kritiek.
+        Voor buitenlandse fabrikanten is de Geautoriseerde Indiase
+        Vertegenwoordiger (AIR) kritiek.
       </p>
 
       <PointsListWithoutHeading
@@ -1002,21 +1007,23 @@ const ConclusionSection = () => {
       <h2 className="service-left-content-heading-two">Conclusie</h2>
 
       <p className="service-left-content-paragraph">
-        Het hebben van een BIS certificering is een noodzaak voor het doen van zaken in India.
-        Het is niet langer een optionele certificering in het bedrijfsleven. Het is cruciaal voor
-        zakelijk succes en het opbouwen van vertrouwen. BIS is essentieel voor veiligheid en
-        succes in India. Voor fabrikanten en importeurs biedt het een gemakkelijke en
-        veilige zakelijke opzetomgeving. Juridische problemen en boetes zijn niet langer een
-        zorg. Met een BIS merk is consumentenvertrouwen gegarandeerd.
+        Het hebben van een BIS certificering is een noodzaak voor het doen van
+        zaken in India. Het is niet langer een optionele certificering in het
+        bedrijfsleven. Het is cruciaal voor zakelijk succes en het opbouwen van
+        vertrouwen. BIS is essentieel voor veiligheid en succes in India. Voor
+        fabrikanten en importeurs biedt het een gemakkelijke en veilige
+        zakelijke opzetomgeving. Juridische problemen en boetes zijn niet langer
+        een zorg. Met een BIS merk is consumentenvertrouwen gegarandeerd.
       </p>
 
       <p className="service-left-content-paragraph">
-        India is een van de grootste groeiende economieën ter wereld en toegang krijgen
-        om daar te verkopen kan een exporteur helpen groeien. Of u nu een
-        fabrikant in India of in het buitenland bent, de BIS licentie is nodig om
-        producten te produceren of te verkopen op de Indiase markt. Het is vereist en het
-        opent zakelijke vooruitzichten met de groeiende bevolking van India. Het is een
-        investering in veiligheid, consumentenvertrouwen, merkreputatie, geloofwaardigheid en
+        India is een van de grootste groeiende economieën ter wereld en toegang
+        krijgen om daar te verkopen kan een exporteur helpen groeien. Of u nu
+        een fabrikant in India of in het buitenland bent, de BIS licentie is
+        nodig om producten te produceren of te verkopen op de Indiase markt. Het
+        is vereist en het opent zakelijke vooruitzichten met de groeiende
+        bevolking van India. Het is een investering in veiligheid,
+        consumentenvertrouwen, merkreputatie, geloofwaardigheid en
         langetermijngroei.
       </p>
     </div>
@@ -1037,9 +1044,9 @@ const SchemesSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS heeft talrijke certificeringsschema's ontworpen voor diverse industrieën
-        en producttypen. Elk is ontworpen om te voldoen aan de specifieke behoeften van
-        de industrie en het product.
+        BIS heeft talrijke certificeringsschema's ontworpen voor diverse
+        industrieën en producttypen. Elk is ontworpen om te voldoen aan de
+        specifieke behoeften van de industrie en het product.
       </p>
 
       <PointsListWithoutHeading
@@ -1070,37 +1077,39 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Voor Indiase fabrikanten is het verkrijgen van een BIS licentie een vereiste om
-        legale verkoop van hun producten binnen het land te waarborgen. Deze
-        certificering wordt uitgegeven door het Bureau of Indian Standards (BIS) om
-        te certificeren dat Indiase Standaarden worden nageleefd met betrekking tot kwaliteit, veiligheid
-        en prestatiebenchmarks voor de producten. Dit omvat fabriek
-        audits, producttesten en nalevingscontroles met de BIS-parameters.
-        Zodra het product is goedgekeurd, mogen de fabrikanten het ISI
-        merk op het product aanbrengen. Dit merk is een handelsmerk voor de fabrikant en
-        helpt de klant een authentiek, ISI-gecertificeerd product te identificeren.
+        Voor Indiase fabrikanten is het verkrijgen van een BIS licentie een
+        vereiste om legale verkoop van hun producten binnen het land te
+        waarborgen. Deze certificering wordt uitgegeven door het Bureau of
+        Indian Standards (BIS) om te certificeren dat Indiase Standaarden worden
+        nageleefd met betrekking tot kwaliteit, veiligheid en
+        prestatiebenchmarks voor de producten. Dit omvat fabriek audits,
+        producttesten en nalevingscontroles met de BIS-parameters. Zodra het
+        product is goedgekeurd, mogen de fabrikanten het ISI merk op het product
+        aanbrengen. Dit merk is een handelsmerk voor de fabrikant en helpt de
+        klant een authentiek, ISI-gecertificeerd product te identificeren.
       </p>
 
       <p className="service-left-content-paragraph">
         Ongeacht of het voor elektronica, staal, cement, plastic of
-        bouwmaterialen is, het verkrijgen van een BIS certificaat is essentieel voor
-        toegang tot de markt. In tegenstelling tot het verkrijgen van consumentenvertrouwen, versterkt een BIS
-        certificaat de reputatie van Indiase fabrikanten, stelt het hen in staat
-        deel te nemen aan overheidscontracten en opent het een reeks
-        andere zakelijke kansen. Belangrijker nog, het ontbreken van BIS
-        certificering kan schadelijke gevolgen hebben, variërend van juridische boetes
-        en productterugroepacties tot een volledig verkoopverbod in India. Daarom is BIS
-        naleving meer dan een wettelijke vereiste, het is een gerichte strategie
-        voor het uitbreiden en behouden van consumentenvertrouwen.
+        bouwmaterialen is, het verkrijgen van een BIS certificaat is essentieel
+        voor toegang tot de markt. In tegenstelling tot het verkrijgen van
+        consumentenvertrouwen, versterkt een BIS certificaat de reputatie van
+        Indiase fabrikanten, stelt het hen in staat deel te nemen aan
+        overheidscontracten en opent het een reeks andere zakelijke kansen.
+        Belangrijker nog, het ontbreken van BIS certificering kan schadelijke
+        gevolgen hebben, variërend van juridische boetes en
+        productterugroepacties tot een volledig verkoopverbod in India. Daarom
+        is BIS naleving meer dan een wettelijke vereiste, het is een gerichte
+        strategie voor het uitbreiden en behouden van consumentenvertrouwen.
       </p>
 
       <p className="service-left-content-paragraph">
         Voor Indiase fabrikanten is het ISI merk schema het meest prestigieuze
         merk. Onder het schema zijn Indiase fabrikanten verplicht om hun
         producten te laten testen bij BIS-erkende testfaciliteiten. Productie
-        locaties zijn onderworpen aan inspectie en testen. Nalevende producten krijgen
-        goedkeuring om het ISI merk te gebruiken. Het is een overtreding om
-        producten zoals cement, LPG cilinders, elektrische kabels, verpakt
+        locaties zijn onderworpen aan inspectie en testen. Nalevende producten
+        krijgen goedkeuring om het ISI merk te gebruiken. Het is een overtreding
+        om producten zoals cement, LPG cilinders, elektrische kabels, verpakt
         drinkwater en meer te leveren zonder het ISI merk.
       </p>
 
@@ -1110,34 +1119,36 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Het Buitenlandse Fabrikanten Certificeringsschema (FMCS) is een schema
-        ontwikkeld door het Bureau of Indian Standards voor buitenlandse bedrijven
-        die de Indiase markt willen betreden. Dit schema garandeert de veiligheid,
-        kwaliteit en prestatieborging van de in het buitenland geproduceerde producten
-        die voldoen aan de vereiste Indiase normen. Volgens FMCS moeten buitenlandse
-        bedrijven die producten in India willen verkopen eerst een Bureau
-        of Indian Standards certificaat of licentie verkrijgen. Net als Indiase fabrikanten
-        moeten ook buitenlandse fabrikanten een BIS licentie verkrijgen om het
-        ISI merk op hun product te gebruiken. Het gewenste ISI merk wordt gegeven na
-        uitgebreide evaluatie die fabrieks- en rigoureuze productmonster
-        testen tegen de Indiase Standaarden omvat.
+        ontwikkeld door het Bureau of Indian Standards voor buitenlandse
+        bedrijven die de Indiase markt willen betreden. Dit schema garandeert de
+        veiligheid, kwaliteit en prestatieborging van de in het buitenland
+        geproduceerde producten die voldoen aan de vereiste Indiase normen.
+        Volgens FMCS moeten buitenlandse bedrijven die producten in India willen
+        verkopen eerst een Bureau of Indian Standards certificaat of licentie
+        verkrijgen. Net als Indiase fabrikanten moeten ook buitenlandse
+        fabrikanten een BIS licentie verkrijgen om het ISI merk op hun product
+        te gebruiken. Het gewenste ISI merk wordt gegeven na uitgebreide
+        evaluatie die fabrieks- en rigoureuze productmonster testen tegen de
+        Indiase Standaarden omvat.
       </p>
 
       <p className="service-left-content-paragraph">
         Een buitenlandse fabrikant moet een Geautoriseerde Indiase
-        Vertegenwoordiger (AIR) aanstellen, die verantwoordelijk is voor communicatie en
-        coördinatie, als eerste contactpunt met het Bureau of Indian
-        Standards (BIS) voor het schema. Het omvat het indienen van een
+        Vertegenwoordiger (AIR) aanstellen, die verantwoordelijk is voor
+        communicatie en coördinatie, als eerste contactpunt met het Bureau of
+        Indian Standards (BIS) voor het schema. Het omvat het indienen van een
         aanvraag, diepgaande nalevingsevaluatie en het op zich nemen van alle
-        noodzakelijke verplichtingen om binnen de deadlines naleving te bereiken. Als gevolg
-        van het volgen van de FMCS-richtlijnen kunnen buitenlandse bedrijven
-        de Indiase markt betreden en goodwill verwerven bij de klanten.
-        Elk product met een ISI merk toont een hoog niveau van kwaliteit, veiligheid en
-        betrouwbaarheid in India.
+        noodzakelijke verplichtingen om binnen de deadlines naleving te
+        bereiken. Als gevolg van het volgen van de FMCS-richtlijnen kunnen
+        buitenlandse bedrijven de Indiase markt betreden en goodwill verwerven
+        bij de klanten. Elk product met een ISI merk toont een hoog niveau van
+        kwaliteit, veiligheid en betrouwbaarheid in India.
       </p>
 
       <p className="service-left-content-paragraph">
-        Geen buitenlandse producten die onder de gereguleerde categorieën vallen, zijn
-        toegestaan om India binnen te komen zonder de FMCS certificering.
+        Geen buitenlandse producten die onder de gereguleerde categorieën
+        vallen, zijn toegestaan om India binnen te komen zonder de FMCS
+        certificering.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1146,35 +1157,37 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Schema X, of de Omnibus Technische Regeling, is nog een BIS
-        certificeringsschema ontworpen door het Bureau of Indian Standards om te helpen
-        de nalevingsprocedures van industrieën in mechanische en
-        elektrische domeinen te vereenvoudigen. In tegenstelling tot de andere certificeringsschema's richt Schema X
-        zich op het verminderen van documentatie, beoordelingen en goedkeuringen terwijl
-        ervoor wordt gezorgd dat producten voldoen aan de Indiase Standaarden. De producten met
-        het standaardmerk zijn van uitzonderlijke kwaliteit en veiligheid en kunnen worden verkocht
-        na het ondergaan van type-testen, fabrieksinspecties en eenvoudige
-        certificering van verplichte vereisten.
+        certificeringsschema ontworpen door het Bureau of Indian Standards om te
+        helpen de nalevingsprocedures van industrieën in mechanische en
+        elektrische domeinen te vereenvoudigen. In tegenstelling tot de andere
+        certificeringsschema's richt Schema X zich op het verminderen van
+        documentatie, beoordelingen en goedkeuringen terwijl ervoor wordt
+        gezorgd dat producten voldoen aan de Indiase Standaarden. De producten
+        met het standaardmerk zijn van uitzonderlijke kwaliteit en veiligheid en
+        kunnen worden verkocht na het ondergaan van type-testen,
+        fabrieksinspecties en eenvoudige certificering van verplichte vereisten.
       </p>
 
       <p className="service-left-content-paragraph">
         Schema X dekt zware machines en elektrische apparatuur veiligheids
-        richtlijnen voor producten zoals pompen, kranen, transformatoren, gereedschapsmachines
-        en andere zware engineeringproducten. Dit zijn de meest relevante
-        industrieën en alle waar betrouwbaarheid en veiligheid een noodzaak is. Schema X
-        is handig omdat het de tijd en kosten van de complexe BIS
-        certificering verkort. Het streeft ernaar het nalevingsproces te stroomlijnen om
-        snellere vrijgave voor marketing en verbeterde reputatie te faciliteren
-        zonder de kwaliteits- en veiligheidsnormen in gevaar te brengen. De blijvende en
-        traditionele reputatie van het Bureau of Indian Standards maakt gemakkelijkere
+        richtlijnen voor producten zoals pompen, kranen, transformatoren,
+        gereedschapsmachines en andere zware engineeringproducten. Dit zijn de
+        meest relevante industrieën en alle waar betrouwbaarheid en veiligheid
+        een noodzaak is. Schema X is handig omdat het de tijd en kosten van de
+        complexe BIS certificering verkort. Het streeft ernaar het
+        nalevingsproces te stroomlijnen om snellere vrijgave voor marketing en
+        verbeterde reputatie te faciliteren zonder de kwaliteits- en
+        veiligheidsnormen in gevaar te brengen. De blijvende en traditionele
+        reputatie van het Bureau of Indian Standards maakt gemakkelijkere
         internationale handel mogelijk, onmisbaar voor bedrijven om nalevings
         vereisten te halen en concurrentievermogen te verhogen.
       </p>
 
       <p className="service-left-content-paragraph">
-        BIS Schema X is verplicht om toegang te krijgen tot de Indiase zware machine-industrie.
-        Dit nieuwe schema is belangrijk voor verbeterde marktconcurrentie, innovatie
-        en naleving van regelgeving die worden gestroomlijnd door deze
-        vereenvoudigde maar robuuste structuur.
+        BIS Schema X is verplicht om toegang te krijgen tot de Indiase zware
+        machine-industrie. Dit nieuwe schema is belangrijk voor verbeterde
+        marktconcurrentie, innovatie en naleving van regelgeving die worden
+        gestroomlijnd door deze vereenvoudigde maar robuuste structuur.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1183,29 +1196,31 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Het Bureau of Indian Standards (BIS) heeft een BIS certificerings
-        programma ontwikkeld genaamd het Verplichte Registratieschema (CRS) gericht op
-        het reguleren van IT- en elektronische producten in India. Het richt zich op het beoordelen
-        van de veiligheid en kwaliteit van hoog-risico producten zoals LED-verlichting, mobiele
-        telefoons, laptops, power banks en andere consumentenelektronica tegen
-        Indiase Standaarden. CRS geeft, in tegenstelling tot het ISI-schema, geen
-        ISI merk uit, maar gecertificeerde producten, in overeenstemming met het schema, dragen een
+        programma ontwikkeld genaamd het Verplichte Registratieschema (CRS)
+        gericht op het reguleren van IT- en elektronische producten in India.
+        Het richt zich op het beoordelen van de veiligheid en kwaliteit van
+        hoog-risico producten zoals LED-verlichting, mobiele telefoons, laptops,
+        power banks en andere consumentenelektronica tegen Indiase Standaarden.
+        CRS geeft, in tegenstelling tot het ISI-schema, geen ISI merk uit, maar
+        gecertificeerde producten, in overeenstemming met het schema, dragen een
         CRS merk met een uniek registratienummer. Alle elektronische en IT
-        producten moeten worden getest in de BIS-erkende laboratoria en
-        formeel worden geregistreerd bij BIS CRS, gebruikt om naleving te waarborgen voordat ze
-        kunnen worden verkocht of geïmporteerd in India.
+        producten moeten worden getest in de BIS-erkende laboratoria en formeel
+        worden geregistreerd bij BIS CRS, gebruikt om naleving te waarborgen
+        voordat ze kunnen worden verkocht of geïmporteerd in India.
       </p>
 
       <p className="service-left-content-paragraph">
-        Dit schema is essentieel voor het beschermen van Indiase consumenten tegen onveilige,
-        ondermaatse of vervalste elektronica, vooral in het geval van de
-        snelgroeiende digitale markt. Zowel Indiase als buitenlandse fabrikanten
-        moeten CRS-certificering verkrijgen. De buitenlandse bedrijven moeten een
-        Geautoriseerde Indiase Vertegenwoordiger AIR aanstellen om naleving te waarborgen. De BIS
-        werkt continu de lijst van producten bij die onder de CRS vallen om
-        nieuwe producten en technologieën en opkomende veiligheidsproblemen op te nemen. Voor
-        fabrikanten is het verkrijgen van BIS-registratie onder CRS een toegevoegde
-        voordeel omdat het helpt bij regelgevingsnaleving en het ook verhoogt
-        klantvertrouwen, bedrijfsreputatie en markttoegang in de
+        Dit schema is essentieel voor het beschermen van Indiase consumenten
+        tegen onveilige, ondermaatse of vervalste elektronica, vooral in het
+        geval van de snelgroeiende digitale markt. Zowel Indiase als
+        buitenlandse fabrikanten moeten CRS-certificering verkrijgen. De
+        buitenlandse bedrijven moeten een Geautoriseerde Indiase
+        Vertegenwoordiger AIR aanstellen om naleving te waarborgen. De BIS werkt
+        continu de lijst van producten bij die onder de CRS vallen om nieuwe
+        producten en technologieën en opkomende veiligheidsproblemen op te
+        nemen. Voor fabrikanten is het verkrijgen van BIS-registratie onder CRS
+        een toegevoegde voordeel omdat het helpt bij regelgevingsnaleving en het
+        ook verhoogt klantvertrouwen, bedrijfsreputatie en markttoegang in de
         elektronica-industrie in India.
       </p>
 
@@ -1213,33 +1228,35 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         In India is het keurmerken van goud- en zilversieraden verplicht onder
-        het Hallmarking Schema en gereguleerd door het Bureau of Indian Standards
-        (BIS) dat de zuiverheid en echtheid van de sieraden garandeert.
-        Edelmetaalartikelen worden getest bij BIS-goedgekeurde Assay- en
-        Hallmarking Centres (AHC) en worden vervolgens gestempeld met keurmerktekens. Dit
-        proces wordt alleen voltooid als de artikelen voldoen aan de Indiase Standaarden
-        die aan het begin zijn uiteengezet. Juweliers moeten eerst een BIS-licentie verkrijgen die
-        hen in staat stelt keurmerksieraden te verkopen. Dit is de enige manier om dit
-        legaal te doen. De juwelier is verplicht om producttesten te ondergaan en te voltooien,
-        BIS-audits en continue nalevingsmonitoring om keurmerksieraden te verkopen.
-        Het proces beschermt uiteindelijk de consument en waarborgt
-        de zuiverheid, het gewicht en de kwaliteit en beperkt wanpraktijken en fraude
-        in de sieradenmarkt.
+        het Hallmarking Schema en gereguleerd door het Bureau of Indian
+        Standards (BIS) dat de zuiverheid en echtheid van de sieraden
+        garandeert. Edelmetaalartikelen worden getest bij BIS-goedgekeurde
+        Assay- en Hallmarking Centres (AHC) en worden vervolgens gestempeld met
+        keurmerktekens. Dit proces wordt alleen voltooid als de artikelen
+        voldoen aan de Indiase Standaarden die aan het begin zijn uiteengezet.
+        Juweliers moeten eerst een BIS-licentie verkrijgen die hen in staat
+        stelt keurmerksieraden te verkopen. Dit is de enige manier om dit legaal
+        te doen. De juwelier is verplicht om producttesten te ondergaan en te
+        voltooien, BIS-audits en continue nalevingsmonitoring om
+        keurmerksieraden te verkopen. Het proces beschermt uiteindelijk de
+        consument en waarborgt de zuiverheid, het gewicht en de kwaliteit en
+        beperkt wanpraktijken en fraude in de sieradenmarkt.
       </p>
 
       <p className="service-left-content-paragraph">
-        Voor Indiase consumenten zijn goud en zilver niet alleen sieraden maar ook
-        belangrijke investeringen, wat vertrouwen en transparantie essentieel maakt. Het
-        keurmerken van sieraden is een teken van zekerheid voor de gewone burger in het
-        land dat elk sieraad dat te koop is uitgebreid
-        is getest tegen verschillende nationale normen en eerlijke handelspraktijken.
-        Juweliers kunnen hun geloofwaardigheid en marktreputatie tonen door
-        sieraden te keurmerken. Het niet kunnen voldoen aan de gestelde regels brengt
-        straf met zich mee die opschorting van licentie kan omvatten. Voor keurmerken
-        onder BIS dient het als een vervulling van principe-gebaseerde en juridische
-        verplichtingen. Dit verhoogt niet alleen de consumententevredenheid maar versterkt ook
-        de Indiase sieradenmarkt als geheel. Dit geldt ook
-        voor kleinere retailers en grootschalige fabrikanten.
+        Voor Indiase consumenten zijn goud en zilver niet alleen sieraden maar
+        ook belangrijke investeringen, wat vertrouwen en transparantie
+        essentieel maakt. Het keurmerken van sieraden is een teken van zekerheid
+        voor de gewone burger in het land dat elk sieraad dat te koop is
+        uitgebreid is getest tegen verschillende nationale normen en eerlijke
+        handelspraktijken. Juweliers kunnen hun geloofwaardigheid en
+        marktreputatie tonen door sieraden te keurmerken. Het niet kunnen
+        voldoen aan de gestelde regels brengt straf met zich mee die opschorting
+        van licentie kan omvatten. Voor keurmerken onder BIS dient het als een
+        vervulling van principe-gebaseerde en juridische verplichtingen. Dit
+        verhoogt niet alleen de consumententevredenheid maar versterkt ook de
+        Indiase sieradenmarkt als geheel. Dit geldt ook voor kleinere retailers
+        en grootschalige fabrikanten.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1248,30 +1265,32 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Het Eco Mark is een innovatie-gerichte erkenningsschema gemaakt door het
-        Bureau of Indian Standards (BIS) gericht op de bevordering van milieuvriendelijke
-        goederen. In tegenstelling tot de traditionele certificering die zich
-        prominent richt op veiligheids- en kwaliteitsparameters, wordt het Eco Mark toegekend
-        aan goederen die voldoen aan Indiase Standaarden en die ten minste enige
-        verminderde mate van de nadelige milieueffecten tonen tijdens een of meer
-        van de verschillende fasen van de levenscyclus van de goederen. Eco Mark
-        certificering wordt alleen toegekend na aanzienlijke testen en het bewijzen
-        van criteria - naleving die emissieniveaus, niet-toxiciteit,
-        de snelheid van biodegrade, recyclecapaciteit en algehele interacties
-        met het systeem omvat. Eco Mark, net als het ISI merk, is een embleem van
-        zekerheid van de overheid dat de status van een
-        certificeringsmerk heeft gekregen, zij het met meer uitgesproken doelen van milieuvriendelijke
+        Bureau of Indian Standards (BIS) gericht op de bevordering van
+        milieuvriendelijke goederen. In tegenstelling tot de traditionele
+        certificering die zich prominent richt op veiligheids- en
+        kwaliteitsparameters, wordt het Eco Mark toegekend aan goederen die
+        voldoen aan Indiase Standaarden en die ten minste enige verminderde mate
+        van de nadelige milieueffecten tonen tijdens een of meer van de
+        verschillende fasen van de levenscyclus van de goederen. Eco Mark
+        certificering wordt alleen toegekend na aanzienlijke testen en het
+        bewijzen van criteria - naleving die emissieniveaus, niet-toxiciteit, de
+        snelheid van biodegrade, recyclecapaciteit en algehele interacties met
+        het systeem omvat. Eco Mark, net als het ISI merk, is een embleem van
+        zekerheid van de overheid dat de status van een certificeringsmerk heeft
+        gekregen, zij het met meer uitgesproken doelen van milieuvriendelijke
         duurzaamheid.
       </p>
 
       <p className="service-left-content-paragraph">
-        De BIS-licentie met Eco Mark certificeert dat een bedrijf zich bezighoudt met
-        verantwoorde productie en geeft om het milieu. Het waarborgt
-        naleving van de wet en creëert een concurrentievoordeel met
+        De BIS-licentie met Eco Mark certificeert dat een bedrijf zich
+        bezighoudt met verantwoorde productie en geeft om het milieu. Het
+        waarborgt naleving van de wet en creëert een concurrentievoordeel met
         beschermende consumenten en duurzaamheid-gerichte bedrijven. Eco Mark
-        helpt de industrie om groene praktijken te vertrouwen en aan te nemen en de
-        consumenten om te vertrouwen dat de producten die ze kopen veilig en
-        milieuvriendelijk verantwoordelijk zijn. Eco Mark ondersteunt India's visie voor
-        verbeterde kwaliteitsbescherming met milieubescherming onder BIS.
+        helpt de industrie om groene praktijken te vertrouwen en aan te nemen en
+        de consumenten om te vertrouwen dat de producten die ze kopen veilig en
+        milieuvriendelijk verantwoordelijk zijn. Eco Mark ondersteunt India's
+        visie voor verbeterde kwaliteitsbescherming met milieubescherming onder
+        BIS.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1281,27 +1300,29 @@ const SchemesSection = () => {
       <p className="service-left-content-paragraph">
         Het Management Systemen Certificeringsschema (MSCS) geïnitieerd door het
         Bureau of Indian Standards (BIS) is een stapsgewijze procedure die
-        betrokken bedrijven evalueert en erkent voor de implementatie van internationaal
-        geaccepteerde en erkende managementsystemen. MSCS-framework bestaat uit
-        ISO-standaarden zoals ISO 9001 Kwaliteitsbeheer, ISO 14001 Milieu
-        Beheer, ISO 45001 Arbeidsgezondheids- en Veiligheidsmanagementsysteem
-        en anderen. MSCS certificeert het bedrijf voor de juridische operaties,
-        consistentie en continue verbetering van de operaties. Gecertificeerde
-        bedrijven doorlopen talrijke beoordelingen en audits die hen helpen vertrouwen op te bouwen
-        bij klanten, regelgevers en stakeholders, wat
-        de garantie van veiligheid, kwaliteit en duurzaamheid versterkt.
+        betrokken bedrijven evalueert en erkent voor de implementatie van
+        internationaal geaccepteerde en erkende managementsystemen.
+        MSCS-framework bestaat uit ISO-standaarden zoals ISO 9001
+        Kwaliteitsbeheer, ISO 14001 Milieu Beheer, ISO 45001 Arbeidsgezondheids-
+        en Veiligheidsmanagementsysteem en anderen. MSCS certificeert het
+        bedrijf voor de juridische operaties, consistentie en continue
+        verbetering van de operaties. Gecertificeerde bedrijven doorlopen
+        talrijke beoordelingen en audits die hen helpen vertrouwen op te bouwen
+        bij klanten, regelgevers en stakeholders, wat de garantie van
+        veiligheid, kwaliteit en duurzaamheid versterkt.
       </p>
 
       <p className="service-left-content-paragraph">
-        BIS is het nationale standaardorganisatie van India en is de certificeringsinstantie
-        voor het verbeteren van de reputatie en geloofwaardigheid van de organisatie
-        binnen en buiten India. MSCS bevordert naast verantwoordelijkheid
-        door periodieke supervisie en hercertificering ook een
-        bedrijf om actief openbare programma's te ondersteunen zoals Make in India en
-        Atmanirbhar Bharat. Naast juridische verplichting helpt het schema ook bij
-        het cultiveren van een cultuur van integriteit, efficiëntie en eerlijke handel. MSCS
-        moedigt de handel en investeringen door de gecertificeerde bedrijven aan en BIS
-        speelt een cruciale rol in de ontwikkeling van het kwaliteitsecosysteem van het
+        BIS is het nationale standaardorganisatie van India en is de
+        certificeringsinstantie voor het verbeteren van de reputatie en
+        geloofwaardigheid van de organisatie binnen en buiten India. MSCS
+        bevordert naast verantwoordelijkheid door periodieke supervisie en
+        hercertificering ook een bedrijf om actief openbare programma's te
+        ondersteunen zoals Make in India en Atmanirbhar Bharat. Naast juridische
+        verplichting helpt het schema ook bij het cultiveren van een cultuur van
+        integriteit, efficiëntie en eerlijke handel. MSCS moedigt de handel en
+        investeringen door de gecertificeerde bedrijven aan en BIS speelt een
+        cruciale rol in de ontwikkeling van het kwaliteitsecosysteem van het
         land.
       </p>
 
@@ -1310,34 +1331,38 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Onder het Bureau of Indian Standards (BIS) is het Laboratorium Erkenningsschema
-        (LRS) een integraal onderdeel van een systeem dat de betrouwbaarheid
-        en algehele bekwaamheid garandeert van laboratoria die producten testen en certificeren
-        voor BIS-goedkeuring. Dergelijke laboratoria worden kritisch beoordeeld op diverse
-        kenmerken, waaronder technische kennis, kwaliteit van de beroepsbevolking,
-        infrastructuur en de algehele bekwaamheid en tevredenheid van het laboratorium
-        met de ISO/IEC 17025-standaard. Deze laboratoria, eenmaal goedgekeurd, zijn
+        Onder het Bureau of Indian Standards (BIS) is het Laboratorium
+        Erkenningsschema (LRS) een integraal onderdeel van een systeem dat de
+        betrouwbaarheid en algehele bekwaamheid garandeert van laboratoria die
+        producten testen en certificeren voor BIS-goedkeuring. Dergelijke
+        laboratoria worden kritisch beoordeeld op diverse kenmerken, waaronder
+        technische kennis, kwaliteit van de beroepsbevolking, infrastructuur en
+        de algehele bekwaamheid en tevredenheid van het laboratorium met de
+        ISO/IEC 17025-standaard. Deze laboratoria, eenmaal goedgekeurd, zijn
         toegestaan om testen uit te voeren op het product waarvoor conformiteit
-        beoordeling wordt gedaan als onderdeel van verschillende BIS-certificeringsprogramma's zoals
-        het ISI Mark Schema en het Verplichte Registratieschema (CRS). Het is
-        duidelijk dat voor fabrikanten, met name voor importeurs en exporteurs,
-        de rapporten verkregen van een LRS-goedgekeurd laboratorium een kritieke vereiste zijn
-        om een BIS-certificaat te behalen dat een wettelijke vereiste is voor bepaalde
-        producten.
+        beoordeling wordt gedaan als onderdeel van verschillende
+        BIS-certificeringsprogramma's zoals het ISI Mark Schema en het
+        Verplichte Registratieschema (CRS). Het is duidelijk dat voor
+        fabrikanten, met name voor importeurs en exporteurs, de rapporten
+        verkregen van een LRS-goedgekeurd laboratorium een kritieke vereiste
+        zijn om een BIS-certificaat te behalen dat een wettelijke vereiste is
+        voor bepaalde producten.
       </p>
 
       <p className="service-left-content-paragraph">
-        De LRS versterkt India's verzekeringssystemen door billijkheid te handhaven in
-        testresultaten en ervoor te zorgen dat alle resultaten consistent zijn en
-        wereldwijd gebenchmarkt, terwijl alleen betrouwbare en solide
-        laboratoria worden geaccrediteerd. Om integriteit en transparantie te handhaven, voert BIS regelmatig
-        audits, bekwaamheidstesten en toezicht uit op erkende schematische
-        laboratoria. Erkenning van deze certificering stelt BIS in staat vertrouwen te verbeteren
-        van consumenten terwijl het certificeringsproces efficiënter wordt gemaakt voor
-        industrieën, aangezien alleen veilige, nalevende en hoogwaardige producten worden
-        aangeboden op de Indiase markt. Voor organisaties die BIS willen ontvangen
-        certificering, is samenwerking met LRS-goedgekeurde laboratoria het meest
-        essentieel om naleving en markttoegang te bereiken.
+        De LRS versterkt India's verzekeringssystemen door billijkheid te
+        handhaven in testresultaten en ervoor te zorgen dat alle resultaten
+        consistent zijn en wereldwijd gebenchmarkt, terwijl alleen betrouwbare
+        en solide laboratoria worden geaccrediteerd. Om integriteit en
+        transparantie te handhaven, voert BIS regelmatig audits,
+        bekwaamheidstesten en toezicht uit op erkende schematische laboratoria.
+        Erkenning van deze certificering stelt BIS in staat vertrouwen te
+        verbeteren van consumenten terwijl het certificeringsproces efficiënter
+        wordt gemaakt voor industrieën, aangezien alleen veilige, nalevende en
+        hoogwaardige producten worden aangeboden op de Indiase markt. Voor
+        organisaties die BIS willen ontvangen certificering, is samenwerking met
+        LRS-goedgekeurde laboratoria het meest essentieel om naleving en
+        markttoegang te bereiken.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1345,8 +1370,8 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        BIS certificering is van toepassing op een breed scala aan producten. Voorbeelden
-        zijn onder meer:
+        BIS certificering is van toepassing op een breed scala aan producten.
+        Voorbeelden zijn onder meer:
       </p>
 
       <PointsListWithoutHeading
@@ -1360,7 +1385,8 @@ const SchemesSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        De lijst blijft groeien naarmate nieuwe risico's en technologieën opkomen.
+        De lijst blijft groeien naarmate nieuwe risico's en technologieën
+        opkomen.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1464,12 +1490,14 @@ const BISCertificationFaq = () => {
         "De kosten van BIS certificering zijn afhankelijk van het producttype, testvereisten, schematype (ISI, CRS, FMCS) en of de aanvrager binnenlands of buitenlands is. Kosten omvatten aanvraagkosten, testkosten en inspectiekosten.",
     },
     {
-      question: "Is het ISI merk verplicht voor alle BIS-gecertificeerde producten?",
+      question:
+        "Is het ISI merk verplicht voor alle BIS-gecertificeerde producten?",
       answer:
         "Nee, alleen producten onder het ISI schema zijn verplicht om het ISI merk te dragen. Producten onder CRS of Hallmarking schema's volgen verschillende labelingsprotocollen volgens BIS registratienormen.",
     },
     {
-      question: "Kan ik BIS certificering krijgen voor milieuvriendelijke producten?",
+      question:
+        "Kan ik BIS certificering krijgen voor milieuvriendelijke producten?",
       answer:
         "Ja, producten die voldoen aan milieustandaarden kunnen BIS certificering krijgen onder het Eco Mark schema, dat zorgt voor naleving van Indiase standaarden voor milieuveiligheid.",
     },
@@ -1495,7 +1523,8 @@ const BISCertificationFaq = () => {
         "Nee, een aparte BIS licentie is vereist voor elk producttype en elke productielocatie, zelfs als de producten vergelijkbaar zijn.",
     },
     {
-      question: "Wat gebeurt er als ik producten verkoop zonder BIS certificering?",
+      question:
+        "Wat gebeurt er als ik producten verkoop zonder BIS certificering?",
       answer:
         "Het verkopen van producten die BIS certificering vereisen zonder een geldige BIS licentie is illegaal in India en kan leiden tot boetes, productterugroepacties of verboden.",
     },
@@ -1604,8 +1633,9 @@ const BISCertificationServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

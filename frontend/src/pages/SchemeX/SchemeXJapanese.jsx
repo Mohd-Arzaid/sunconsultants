@@ -32,7 +32,6 @@ import { toast } from "@/hooks/use-toast";
 import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
-import CDSCO from "../../assets/images/CDSCO.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
@@ -43,7 +42,6 @@ import ServiceAuthorJapanese from "@/components/manual/ServiceAuthor/ServiceAuth
 import ServicesRightSideContentJapanese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentJapanese";
 import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
 import ScrollToTopButton from "@/components/common/ScrollToTop";
-
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -65,10 +63,10 @@ const SchemeXJapanese = () => {
       {/* Scroll To Top Button Section */}
       <ScrollToTopButton />
     </div>
-  )
-}
+  );
+};
 
-export default SchemeXJapanese
+export default SchemeXJapanese;
 
 const SchemeXJapaneseMetaTags = () => {
   const breadcrumbStructuredData = {
@@ -92,9 +90,7 @@ const SchemeXJapaneseMetaTags = () => {
   return (
     <Helmet>
       {/* Basic Meta Tags */}
-      <title>
-        BISスキームX認証 | 機械・電気機器の安全性
-      </title>
+      <title>BISスキームX認証 | 機械・電気機器の安全性</title>
       <meta
         name="description"
         content="BISスキームX認証は、低電圧開閉装置、制御装置、機械、電気機器の品質と安全性を確保するために必要です。"
@@ -107,7 +103,6 @@ const SchemeXJapaneseMetaTags = () => {
       <meta name="author" content="Dhruv Aggarwal" />
       <meta name="publisher" content="Sun Certifications India" />
       <meta name="robots" content="index, follow" />
-
 
       {/* Canonical URL */}
       <link rel="canonical" href={window.location.href} />
@@ -140,10 +135,9 @@ const SchemeXJapaneseMetaTags = () => {
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbStructuredData)}
       </script>
-
     </Helmet>
-  )
-}
+  );
+};
 
 const SchemeXJapaneseBreadcrumb = () => {
   return (
@@ -161,16 +155,15 @@ const SchemeXJapaneseBreadcrumb = () => {
                 <SlashIcon />
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbPage>スキームXに基づくインドBIS認証
-                </BreadcrumbPage>
+                <BreadcrumbPage>スキームXに基づくインドBIS認証</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXJapaneseHero = () => {
   return (
@@ -205,7 +198,6 @@ const SchemeXJapaneseHero = () => {
             BISスキームX認証は、包括的技術規則（OTR）に基づく機械、電気機器、コンポーネント、アセンブリ、およびサブアセンブリを対象としています。
           </p>
 
-
           <div className="flex items-center -mt-2">
             <div
               className="flex items-center cursor-pointer group"
@@ -232,10 +224,9 @@ const SchemeXJapaneseHero = () => {
         {/* Right Side */}
         <SchemeXJapaneseHeroContactForm />
       </div>
-
     </main>
-  )
-}
+  );
+};
 
 const SchemeXJapaneseHeroContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -344,8 +335,7 @@ const SchemeXJapaneseHeroContactForm = () => {
       toast({
         variant: "destructive",
         title: errorMessage || "お問い合わせフォームの送信に失敗しました！",
-        description:
-          "問題が発生しました。詳細を確認して再試行してください。",
+        description: "問題が発生しました。詳細を確認して再試行してください。",
       });
     } finally {
       setLoading(false);
@@ -473,12 +463,7 @@ const SchemeXJapaneseIndex = () => {
   const toggleButtonRef = useRef(null);
 
   const SECTIONS = useMemo(
-    () => [
-      "overview",
-      "process",
-      "documents",
-      "conclusion",
-    ],
+    () => ["overview", "process", "documents", "conclusion"],
     []
   );
 
@@ -570,8 +555,9 @@ const SchemeXJapaneseIndex = () => {
   return (
     <div
       ref={stickyRef}
-      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
-        }`}
+      className={`sticky top-0 md:top-[44px] z-[50] transition-colors duration-300 w-full h-auto md:h-20 ${
+        isSticky ? "bg-white/70 backdrop-blur-lg" : "bg-[#B9DEEB]"
+      }`}
     >
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center justify-between px-4 h-20">
@@ -621,10 +607,11 @@ const SchemeXJapaneseIndex = () => {
               <div
                 key={item}
                 onClick={() => handleItemClick(item)}
-                className={`px-4 py-3 cursor-pointer transition-colors ${item === activeSection
-                  ? "bg-blue-50 text-blue-900 font-semibold"
-                  : "text-blue-950 hover:bg-blue-50"
-                  }`}
+                className={`px-4 py-3 cursor-pointer transition-colors ${
+                  item === activeSection
+                    ? "bg-blue-50 text-blue-900 font-semibold"
+                    : "text-blue-950 hover:bg-blue-50"
+                }`}
               >
                 <div className="font-geist tracking-wider uppercase">
                   {MENU_ITEMS[item]}
@@ -644,18 +631,20 @@ const SchemeXJapaneseIndex = () => {
             className="relative cursor-pointer group whitespace-nowrap px-2"
           >
             <div
-              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${item === activeSection
-                ? "text-blue-900"
-                : "text-blue-950 group-hover:text-blue-900"
-                }`}
+              className={`text-base font-semibold font-geist tracking-wider uppercase transition-colors duration-300 ${
+                item === activeSection
+                  ? "text-blue-900"
+                  : "text-blue-950 group-hover:text-blue-900"
+              }`}
             >
               {MENU_ITEMS[item]}
             </div>
             <div
-              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${item === activeSection
-                ? "scale-x-100"
-                : "scale-x-0 group-hover:scale-x-100"
-                }`}
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-900 transition-transform duration-300 ${
+                item === activeSection
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+              }`}
             />
           </div>
         ))}
@@ -663,7 +652,6 @@ const SchemeXJapaneseIndex = () => {
     </div>
   );
 };
-
 
 const SchemeXJapaneseMainContent = () => {
   return (
@@ -682,14 +670,13 @@ const SchemeXJapaneseMainContent = () => {
         <ServicesJapanese />
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXJapaneseMainContentLeft = () => {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
-
         {/* Overview Section */}
         <SchemeXJapaneseMainContentLeftOverviewSection />
 
@@ -717,8 +704,8 @@ const SchemeXJapaneseMainContentLeft = () => {
         <ServiceAuthorJapanese />
       </div>
     </div>
-  )
-}
+  );
+};
 
 const SchemeXJapaneseMainContentLeftOverviewSection = () => {
   // Download function for table data
@@ -740,7 +727,6 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-
       <h2 className="service-left-content-heading-two">
         BISスキームX認証の紹介
       </h2>
@@ -749,37 +735,29 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         インド規格局（BIS）は、2022年3月16日に「スキームX」を導入しました。これは、インドにおける製品の安全性と品質のコンプライアンスを向上させることを目的としています。インド国内および海外の製造業者は、スキームXのスケジュールIIに規定されている機械および電気機器、組立品、サブアセンブリ、コンポーネント、工具について、インドでの輸出、販売、流通前にBIS認証を申請できます。
       </p>
 
-
       <p className="service-left-content-paragraph">
         スキームXの下で、製造業者は低電圧開閉装置および制御装置、機械、電気機器についてBISライセンスまたは適合証明書（CoC）を申請できます。製造業者が認証を取得すると、BIS規格マークの使用が許可され、製品がインドで定められた規格に準拠していることを示すことができます。
       </p>
-
 
       <p className="service-left-content-paragraph">
         この認証は、製品とインド規格および政府規制への準拠を促進しながら、認証製品に対する消費者の信頼と信頼性を構築するのに役立ちます。
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         スキームX認証とは？
       </h2>
-
 
       <p className="service-left-content-paragraph">
         スキームXは、BIS適合性評価規則2018年の下で開発された製品認証スキームであり、その後、BIS適合性評価（改正）規則2022年の下で簡素化されました。
       </p>
 
-
-
       <p className="service-left-content-paragraph">
         主な目標は、特に産業機械および電気機器に関して、インドの安全性と品質基準を国際基準に適合させることです。このスキームの下でインドで製造または輸入される製品は、技術、安全性、性能基準を証明するために厳格な審査と評価を受けます。
       </p>
 
-
       <p className="service-left-content-paragraph">
         スキームX認証の元の範囲に関する規定は、重工業省の管轄下にあり、BISによって施行された新しく発行された機械および電気機器安全（包括的技術規制）命令2024によって改訂および拡大されました。この命令は2026年9月1日に発効し、液体処理用ポンプ、圧縮機、クレーン、回転電気機械、変圧器、開閉装置および制御装置など、幅広い機械および電気機器をカバーします。
       </p>
-
 
       <p className="service-left-content-paragraph">
         このような機械または機器の組立品、サブアセンブリ、コンポーネントも、インド規格局法2016年の第16条に従って認証範囲の一部です。
@@ -789,16 +767,13 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         さらに、1989年CMVR規則（建設および製造バルブ規制）の下で、スキームXの管轄下にあるボウザーおよびその他の種類の建設機器は、安全性と技術基準の要件を欠く機器が市場に出回らないことを保証しています。
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         包括的技術規制（OTR）
       </h2>
 
-
       <p className="service-left-content-paragraph">
         重工業省は、2024年8月28日の電子官報通知を通じて「安全命令に関する包括的技術規制（機械および電気機器の安全性）」を発表しました。この革新的な規制は、BIS規則2016年のスキームXの下で、機械、電気機器、およびそれらの組立品、サブアセンブリ、コンポーネントの安全性、品質、コンプライアンスを向上させることを目的としています。
       </p>
-
 
       <p className="service-left-content-paragraph">
         OTRの下では、すべてのカテゴリーの機械および電気機器、ならびにそのすべての部品およびコンポーネントが含まれます。ただし、いくつかのカテゴリーは特に除外されています：
@@ -812,53 +787,40 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         これらの例外は、コンプライアンスを促進し、ビジネスの容易さを促進するために規制の不必要な重複を避けるために設けられています。
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         包括的技術規制2024は、重工業省によって通知された低電圧開閉装置および制御装置を含むすべての機械および電気機器をカバーし、BIS認証のスキームXフレームワークの下で扱われます。この命令は、製造業者および輸入業者が発行された命令に従って業務を変更するのに十分な時間を確保するため、2026年9月1日に発効します。
       </p>
 
-
       <h2 className="service-left-content-heading-three">
         包括的技術規制に基づくBIS認証
       </h2>
 
-
       <p className="service-left-content-paragraph">
-        OTR 2024によると、ポンプ、圧縮機、遠心分離機、クレーン、変圧器、開閉装置を含む機械および電気機器の製造業者および輸入業者は、スキームXの下でBIS認証を申請する必要があります。
+        OTR
+        2024によると、ポンプ、圧縮機、遠心分離機、クレーン、変圧器、開閉装置を含む機械および電気機器の製造業者および輸入業者は、スキームXの下でBIS認証を申請する必要があります。
       </p>
-
-
 
       <p className="service-left-content-paragraph">
         スキームXの下で、製造業者は以下のいずれかを申請することができます：
       </p>
 
-
       <PointsListWithoutHeading
         points={["BISライセンス、または", "適合証明書（CoC）"]}
       />
-
 
       <p className="service-left-content-paragraph">
         BIS規格マークを付けた製品は、製品が安全で信頼性が高く、高品質であることをユーザーに認証および保証する適合マークです。それはまた、信頼と優れた性能のマークでもあります。
       </p>
 
-
-      <h3 className="service-left-content-heading-three">
-        MSMEsへの特別注記
-      </h3>
-
+      <h3 className="service-left-content-heading-three">MSMEsへの特別注記</h3>
 
       <p className="service-left-content-paragraph">
         他の多くのセクターと同様に、零細・中小企業（MSMEs）もスキームXに準拠し、機械および電気機器についてBIS認証を取得する必要があります。規制要件への準拠は困難に見えるかもしれませんが、スキームX証明書は以下の理由でMSMEsに付加価値と利点をもたらします：
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -869,18 +831,11 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        BISスキームXロゴ
-      </h3>
-
-
+      <h3 className="service-left-content-heading-three">BISスキームXロゴ</h3>
 
       <p className="service-left-content-paragraph">
         スキームXのBIS規格マークは、品質マークおよび信頼の原則を形成します。ロゴには以下が含まれます：
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -889,12 +844,9 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <p className="service-left-content-paragraph">
         このマークは、製造業者にBISライセンスが正常に発行されたことを示します。これにより、製造業者はBISマークを配置する権利が与えられ、製品が本物で安全であることを消費者に保証します。
       </p>
-
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
@@ -905,23 +857,15 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         />
       </div>
 
-
-      <h3 className="service-left-content-heading-three">
-        法的影響
-      </h3>
-
+      <h3 className="service-left-content-heading-three">法的影響</h3>
 
       <p className="service-left-content-paragraph">
         BIS規格マークは、信頼と品質のマークです。このマークは、有効な契約が成立した後にのみ利用可能です。有効な契約のみが所有者にマークの使用を許可します。有効な契約なしでマークを使用することは、インド憲法の下での違反であり、法的マークを持つことと同等です。マークの所有者は、BIS認証を持たない製品のライセンスCM/L-XXXXXXXXXXの使用について重い制限が課されます。
       </p>
 
-
-
-
       <p className="service-left-content-paragraph">
         したがって、すべての生産者は以下の義務があります：
       </p>
-
 
       <PointsListWithoutHeading
         points={[
@@ -931,22 +875,15 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
       <p className="service-left-content-paragraph">
         この規制フレームワークは、消費者およびビジネス関係者の利益を保護するために拡張され、安全性、透明性、信頼を強調する市場を促進します。
       </p>
-
-
 
       <h2 className="service-left-content-heading-three">
         スキームIとスキームXの主な違い
       </h2>
 
-
-      <h3 className="service-left-content-heading-three">
-        スキームI
-      </h3>
-
+      <h3 className="service-left-content-heading-three">スキームI</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -957,9 +894,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
-        スキームX
-      </h3>
+      <h3 className="service-left-content-heading-three">スキームX</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -1045,17 +980,13 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-
       <h3 className="service-left-content-heading-three">
         スキームXでカバーされる製品
       </h3>
 
-
       <p className="service-left-content-paragraph">
         スキームXは、安全性と性能に対して最も高いリスクを持つ製品をカバーしています：
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -1068,7 +999,6 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
 
       {/* Scheme X Product Table 20 */}
       <div className="mt-[16px] md:mt-[24px]">
-
         <Table className="min-w-full divide-y divide-gray-200 shadow-sm rounded-lg">
           <TableHeader className="bg-[#F9F7F2]">
             <TableRow className="bg-[#1A8781]/10">
@@ -1111,8 +1041,8 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-compressors"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of compressors and(or)their assemblies /sub-assemblies
-                  /components
+                  All types of compressors and(or)their assemblies
+                  /sub-assemblies /components
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -1167,8 +1097,8 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-packing-machinery"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of machinery for filling, closing, sealing, labelling
-                  bottles, packing or wrapping and(or)their
+                  All types of machinery for filling, closing, sealing,
+                  labelling bottles, packing or wrapping and(or)their
                   assemblies/sub-assemblies/components
                 </Link>
               </TableCell>
@@ -1203,8 +1133,8 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-construction-machinery"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of machinery for construction, earthmoving, Mining and
-                  (or)their assemblies /sub-assemblies/components
+                  All types of machinery for construction, earthmoving, Mining
+                  and (or)their assemblies /sub-assemblies/components
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -1308,8 +1238,8 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of Machines including the machines for public works &
-                  building and the machinery & mechanical appliances having
+                  All types of Machines including the machines for public works
+                  & building and the machinery & mechanical appliances having
                   individual functions, not specified Or included elsewhere in
                   Chapter 84 and(or)their assemblies/sub-assemblies /components
                 </Link>
@@ -1327,10 +1257,10 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of gears and gearing, toothed wheels, chain sprocket,
-                  transmission elements ball or roller screws, gear boxes and
-                  speed changers, including torque converters And (or)their
-                  assemblies /sub-assemblies /components
+                  All types of gears and gearing, toothed wheels, chain
+                  sprocket, transmission elements ball or roller screws, gear
+                  boxes and speed changers, including torque converters And
+                  (or)their assemblies /sub-assemblies /components
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -1346,8 +1276,8 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-rotary-electrical-machines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of Rotary electrical machines such as Generator, etc.
-                  and (or) their assemblies /sub-assemblies /components
+                  All types of Rotary electrical machines such as Generator,
+                  etc. and (or) their assemblies /sub-assemblies /components
                 </Link>
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
@@ -1415,8 +1345,8 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of switch gear and control gear equipment operating at
-                  voltages not exceeding 1000 volts and (or)their assemblies
+                  All types of switch gear and control gear equipment operating
+                  at voltages not exceeding 1000 volts and (or)their assemblies
                   /sub-assemblies /components
                 </Link>
               </TableCell>
@@ -1433,8 +1363,8 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
                   to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
-                  All types of switch gear and control gear equipment operating at
-                  voltages exceeding 1000 volts and (or) their assemblies
+                  All types of switch gear and control gear equipment operating
+                  at voltages exceeding 1000 volts and (or) their assemblies
                   /sub-assemblies /components
                 </Link>
               </TableCell>
@@ -1483,18 +1413,13 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         BISスキームXに基づく安全基準
       </h2>
 
-
-
       <p className="service-left-content-paragraph">
         BISスキームX認証は、単なる法的要件以上のものであり、安全性、品質、信頼性の約束を提供します。この認証は、国内および国際規範への厳格な遵守を伴い、ユーザーに提供される機械および電気装置が安全で環境に優しく、技術的に健全であることを保証します。
       </p>
 
-
       <p className="service-left-content-paragraph">
         スキームXの下で認証を受けるために、製造業者は以下の主要な安全要素に準拠する必要があります：
       </p>
-
-
 
       <PointsListWithoutHeading
         points={[
@@ -1506,22 +1431,15 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-
       <h2 className="service-left-content-heading-three">
         スキームXに基づく規制基準
       </h2>
-
 
       <p className="service-left-content-paragraph">
         製造業者は、国際基準と整合した関連インド規格に準拠する必要があります。これには以下が含まれます：
       </p>
 
-
-      <h3 className="service-left-content-heading-three">
-        タイプA基準：
-      </h3>
-
+      <h3 className="service-left-content-heading-three">タイプA基準：</h3>
 
       <PointsListWithoutHeading
         points={[
@@ -1529,43 +1447,30 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         ]}
       />
 
-
-      <h3 className="service-left-content-heading-three">
-        タイプB基準：
-      </h3>
-
+      <h3 className="service-left-content-heading-three">タイプB基準：</h3>
 
       <PointsListWithoutHeading
-        points={[
-          "包括的技術規制（OTR）命令2024の第2付則に記載されています。",
-        ]}
+        points={["包括的技術規制（OTR）命令2024の第2付則に記載されています。"]}
       />
 
-
-
-      <h3 className="service-left-content-heading-three">
-        タイプC基準：
-      </h3>
-
+      <h3 className="service-left-content-heading-three">タイプC基準：</h3>
 
       <PointsListWithoutHeading
         points={["包括的技術規制（OTR）命令2024の第3付則に記載されています。"]}
       />
 
-
       <h3 className="service-left-content-heading-three">
         IS/IEC 60947シリーズ：
       </h3>
 
-
       <PointsListWithoutHeading
         points={[
           "複数の部分とセクションで低電圧開閉装置および制御装置をカバーしています。",
-        ]} />
+        ]}
+      />
     </div>
-  )
-}
-
+  );
+};
 
 const SchemeXJapaneseMainContentLeftProcessSection = () => {
   return (
@@ -1608,9 +1513,7 @@ const SchemeXJapaneseMainContentLeftProcessSection = () => {
         この戦略は、BIS基準へのコンプライアンスを維持し、インドおよび国際的なコンプライアンスの認識であり、安全性と品質に対する消費者の信頼に向けて業界をコーナリングします。
       </p>
 
-      <h2 className="service-left-content-heading-three">
-        国内製造業者の手順
-      </h2>
+      <h2 className="service-left-content-heading-three">国内製造業者の手順</h2>
 
       <p className="service-left-content-paragraph">
         国内製造業者は、スキームXの下でBISライセンスを取得することにより、直接的なアプローチに従います。従うべき直接的な手順は以下の通りです：
@@ -1630,12 +1533,11 @@ const SchemeXJapaneseMainContentLeftProcessSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        <strong>標準的なタイムライン：</strong> BISの慣行によると、約90営業日が必要です。これは、重大な不適合がない場合に提供されます。
+        <strong>標準的なタイムライン：</strong>{" "}
+        BISの慣行によると、約90営業日が必要です。これは、重大な不適合がない場合に提供されます。
       </p>
 
-      <h2 className="service-left-content-heading-three">
-        海外製造業者の手順
-      </h2>
+      <h2 className="service-left-content-heading-three">海外製造業者の手順</h2>
 
       <p className="service-left-content-paragraph">
         国内製造業者とは異なり、スキームXの下でBIS証明書を申請する海外製造業者は、より厳格なプロセスと追加の手順に準拠する必要があります。手順は以下のように詳しく説明されています。
@@ -1675,7 +1577,7 @@ const SchemeXJapaneseMainContentLeftProcessSection = () => {
         ]}
       />
     </div>
-  )
+  );
 };
 
 const SchemeXJapaneseMainContentLeftDocumentsSection = () => {
@@ -1805,7 +1707,7 @@ const SchemeXJapaneseMainContentLeftDocumentsSection = () => {
         ]}
       />
     </div>
-  )
+  );
 };
 
 const SchemeXJapaneseMainContentLeftConclusionSection = () => {
@@ -1817,9 +1719,7 @@ const SchemeXJapaneseMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">
-        結論
-      </h2>
+      <h2 className="service-left-content-heading-two">結論</h2>
 
       <p className="service-left-content-paragraph">
         BISスキームX認証は、低電圧開閉装置および制御装置、機械および電気機器の安全性、信頼性、品質を維持する上で重要です。石、セラミック、コンクリート、アスファルトセメント、鉱物ガラスの加工に適用される工作機械の製造業者にとって、BISスキームX認証は義務です。
@@ -1829,7 +1729,7 @@ const SchemeXJapaneseMainContentLeftConclusionSection = () => {
         これらの義務を果たすことにより、製造業者は製品の適合性を保証し、消費者の信頼を高め、市場での信頼性を向上させます。スキームXは、生産が可能な限りスムーズであることを保証し、世界中の安全基準が満たされ、認知されたブランドが肯定的な評判を得ることを保証します。
       </p>
     </div>
-  )
+  );
 };
 
 const SchemeXJapaneseProductTable = () => {
@@ -1840,7 +1740,6 @@ const SchemeXJapaneseProductTable = () => {
   return (
     <div className="w-full pb-12">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
-
         <div className="flex flex-col gap-2 mt-6">
           <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
             製品別安全基準
@@ -1871,81 +1770,95 @@ const SchemeXJapaneseProductTable = () => {
       <div ref={table3Ref}>
         <TypeCTableJapanese searchQuery={searchQuery} />
       </div>
-
     </div>
-  )
+  );
 };
 
 const SchemeXJapaneseServiceFaq = () => {
   const faqData = [
     {
       question: "1. BIS認証におけるスキームXとは何ですか？",
-      answer: "スキームXは、機械および電気機器のためにインドBISによって導入された適合性評価スキームです。包括的技術規制で指定された厳格な安全性と技術基準への準拠を保証します。"
+      answer:
+        "スキームXは、機械および電気機器のためにインドBISによって導入された適合性評価スキームです。包括的技術規制で指定された厳格な安全性と技術基準への準拠を保証します。",
     },
     {
       question: "2. スキームXはISIマーク認証とは異なりますか？",
-      answer: "はい。ISIマークは一般的に消費財と基本的な製品コンプライアンス用ですが、スキームXは、BIS証明書またはBISライセンスを通じて高度な試験と認証を必要とする複雑で産業グレードの製品に適用されます。"
+      answer:
+        "はい。ISIマークは一般的に消費財と基本的な製品コンプライアンス用ですが、スキームXは、BIS証明書またはBISライセンスを通じて高度な試験と認証を必要とする複雑で産業グレードの製品に適用されます。",
     },
     {
       question: "3. スキームX認証を申請する必要があるのは誰ですか？",
-      answer: "包括的技術規制の下にリストされている機械および電気機器の製造業者および輸入業者は、スキームXを申請し、インドで製品を合法的に販売または流通するために有効なBIS認証を取得する必要があります。インドで製品を販売しようとするグローバル製造業者または海外製造業者もこれらの規制に準拠する必要があります。"
+      answer:
+        "包括的技術規制の下にリストされている機械および電気機器の製造業者および輸入業者は、スキームXを申請し、インドで製品を合法的に販売または流通するために有効なBIS認証を取得する必要があります。インドで製品を販売しようとするグローバル製造業者または海外製造業者もこれらの規制に準拠する必要があります。",
     },
     {
       question: "4. BISスキームX認証の費用はいくらですか？",
-      answer: "スキームXの費用には、申請料、認証料、技術ファイルレビュー料、工場検査費用、製品試験料が含まれます。平均して、申請には₹2,000から始まり、製品の複雑さに応じて増加する可能性があります。詳細については、admin@bis-certifications.comまでお問い合わせください。"
+      answer:
+        "スキームXの費用には、申請料、認証料、技術ファイルレビュー料、工場検査費用、製品試験料が含まれます。平均して、申請には₹2,000から始まり、製品の複雑さに応じて増加する可能性があります。詳細については、admin@bis-certifications.comまでお問い合わせください。",
     },
     {
-      question: "5. スキームXの下でBISライセンスを取得するのにどのくらい時間がかかりますか？",
-      answer: "タイムラインは、文書化、試験要件、工場検査によって異なります。通常、インドの製造業者の場合、BIS登録と申請提出が成功した日から4〜6週間かかり、海外製造業者の場合は60〜90日かかります。"
+      question:
+        "5. スキームXの下でBISライセンスを取得するのにどのくらい時間がかかりますか？",
+      answer:
+        "タイムラインは、文書化、試験要件、工場検査によって異なります。通常、インドの製造業者の場合、BIS登録と申請提出が成功した日から4〜6週間かかり、海外製造業者の場合は60〜90日かかります。",
     },
     {
       question: "6. MSMEもスキームXの下でBIS認証を申請できますか？",
-      answer: "もちろんです。実際、インドBISは、産業セクターにおける品質、コンプライアンス、競争力を高めるために、MSMEがスキームXの下でBISライセンスまたは適合証明書を申請することを奨励しています。"
+      answer:
+        "もちろんです。実際、インドBISは、産業セクターにおける品質、コンプライアンス、競争力を高めるために、MSMEがスキームXの下でBISライセンスまたは適合証明書を申請することを奨励しています。",
     },
     {
       question: "7. スキームXの下でのBIS認証は輸出に必須ですか？",
-      answer: "いいえ。輸出専用に製造された製品は、包括的技術規制の下で免除されます。ただし、インド市場向けの製品はスキームXで認証される必要があります。"
+      answer:
+        "いいえ。輸出専用に製造された製品は、包括的技術規制の下で免除されます。ただし、インド市場向けの製品はスキームXで認証される必要があります。",
     },
     {
       question: "8. スキームXの下でのBISライセンスの有効性は何ですか？",
-      answer: "スキームXの下でのBISライセンスは一般的に3〜6年間有効であり、それに応じて更新する必要があります。更新には、年間BIS認証料の支払いが含まれ、製品の範囲または基準の変更に応じて再評価が必要になる場合があります。"
+      answer:
+        "スキームXの下でのBISライセンスは一般的に3〜6年間有効であり、それに応じて更新する必要があります。更新には、年間BIS認証料の支払いが含まれ、製品の範囲または基準の変更に応じて再評価が必要になる場合があります。",
     },
     {
       question: "9. 海外製造業者はスキームX認証を申請できますか？",
-      answer: "はい、海外製造業者は、認定されたインド代理人を通じてスキームX認証を申請できます。インドBISは、標準的なBIS登録および試験プロセスとともに、海外申請者に3日かかる可能性がある工場検査を要求します。"
+      answer:
+        "はい、海外製造業者は、認定されたインド代理人を通じてスキームX認証を申請できます。インドBISは、標準的なBIS登録および試験プロセスとともに、海外申請者に3日かかる可能性がある工場検査を要求します。",
     },
     {
       question: "10. 技術ファイルとは何ですか？なぜ必要ですか？",
-      answer: "技術ファイルは、スキームXの下で必要な詳細なコンプライアンス書類です。製造プロセス、製品の詳細、試験レポート、品質管理文書が含まれます。BIS認証プロセス中に関連するインド規格への製品の適合性をサポートします。"
+      answer:
+        "技術ファイルは、スキームXの下で必要な詳細なコンプライアンス書類です。製造プロセス、製品の詳細、試験レポート、品質管理文書が含まれます。BIS認証プロセス中に関連するインド規格への製品の適合性をサポートします。",
     },
     {
       question: "11. スキームXは包括的技術規制とどのように関連していますか？",
-      answer: "包括的技術規制は、インドの特定のカテゴリーの機械および電気機器にスキームXの使用を義務付けています。規制の下にリストされている製品は、有効なBIS証明書またはBISライセンスを取得するためにスキームXで認証される必要があります。"
+      answer:
+        "包括的技術規制は、インドの特定のカテゴリーの機械および電気機器にスキームXの使用を義務付けています。規制の下にリストされている製品は、有効なBIS証明書またはBISライセンスを取得するためにスキームXで認証される必要があります。",
     },
     {
       question: "12. スキームXの下でのBIS証明書は取り消すことができますか？",
-      answer: "はい。インドBISは、監視中に不適合が見つかった場合、または製品が必要なインド規格を満たさない場合、スキームXの下でBISライセンスまたは証明書を一時停止または取り消すことができます。"
+      answer:
+        "はい。インドBISは、監視中に不適合が見つかった場合、または製品が必要なインド規格を満たさない場合、スキームXの下でBISライセンスまたは証明書を一時停止または取り消すことができます。",
     },
     {
-      question: "13. スキームXの下でのBISライセンスとBIS証明書の違いは何ですか？",
-      answer: "BISライセンスは通常インドの製造業者に発行されますが、BIS適合証明書（CoC）は海外製造業者または特定のケースに発行されることがよくあります。両方とも同じ目的を果たします—スキームXの下で製品のコンプライアンスを保証します。"
+      question:
+        "13. スキームXの下でのBISライセンスとBIS証明書の違いは何ですか？",
+      answer:
+        "BISライセンスは通常インドの製造業者に発行されますが、BIS適合証明書（CoC）は海外製造業者または特定のケースに発行されることがよくあります。両方とも同じ目的を果たします—スキームXの下で製品のコンプライアンスを保証します。",
     },
     {
-      question: "14. スキームXで認証された製品にはISIマークが許可されていますか？",
-      answer: "いいえ。スキームXの下での製品はISIマークを付けません。代わりに、インドBISによって管理されている認証スキームに関連するBIS標準マークを表示します。"
+      question:
+        "14. スキームXで認証された製品にはISIマークが許可されていますか？",
+      answer:
+        "いいえ。スキームXの下での製品はISIマークを付けません。代わりに、インドBISによって管理されている認証スキームに関連するBIS標準マークを表示します。",
     },
     {
-      question: "15. 私の機械がスキームX認証を必要とするかどうかはどうすればわかりますか？",
-      answer: "包括的技術規制の公式リストを確認するか、BISコンサルタントに相談して、機械が義務的なスキームX認証要件に該当するかどうかを確認してください。"
-    }
+      question:
+        "15. 私の機械がスキームX認証を必要とするかどうかはどうすればわかりますか？",
+      answer:
+        "包括的技術規制の公式リストを確認するか、BISコンサルタントに相談して、機械が義務的なスキームX認証要件に該当するかどうかを確認してください。",
+    },
   ];
 
   return (
-    <section
-      id="faqs"
-      className="my-2 scroll-mt-20"
-      aria-label="よくある質問"
-    >
+    <section id="faqs" className="my-2 scroll-mt-20" aria-label="よくある質問">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
         <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           よくある質問
@@ -2025,8 +1938,9 @@ export const ServicesJapanese = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -2139,89 +2053,498 @@ export const ServicesJapanese = () => {
 
 /* eslint-disable react/prop-types */
 const productDataTableSecond = [
-  { id: 1, isNumber: "IS 16504 (Part 1):2019/IEC 60204-1:2016", title: "Safety of Machinery Electrical Equipment of Machines Part 1 General Requirements" },
-  { id: 2, isNumber: "IS 16504 (Part 11) : 2020 /IEC 60204-11 : 2018", title: "Safety of Machinery - Electrical Equipment of Machines Part 11 Requirements for Equipment for Voltages above 1 000 V AC or 1 500 V DC and not Exceeding 36 kV" },
-  { id: 3, isNumber: "IS/IEC 61508 (Part 1): 2010", title: "Functional Safety of Electrical-Electronic-Programmable Electronic Safety-related Systems Part 1- General Requirements" },
-  { id: 4, isNumber: "IS/IEC 60529 : 2001", title: "Degree of Protection Provided by Enclosures (IP Code)" },
-  { id: 5, isNumber: "IS 16806 (Part 1) : 2018/ ISO 29042-1 : 2008", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 1: Selection of test methods" },
-  { id: 6, isNumber: "IS 16806 (Part 2) : 2018/ ISO 29042-2 : 2009", title: "Safety of Machinery Evaluation of the Emission of Airborne Hazardous Substances Part 2 Tracer Gas Method for the Measurement of the Emission Rate of a Given Pollutant" },
-  { id: 7, isNumber: "IS 16806 (Part 3) : 2018/ ISO 29042-3 : 2009", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 3: Test bench method for the measurement of the emission rate of a given pollutant" },
-  { id: 8, isNumber: "IS 16806 (Part 4) : 2018/ ISO 29042-4 : 2009", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 4: Tracer method for the measurement of the capture efficiency of an exhaust system" },
-  { id: 9, isNumber: "IS 16806 (Part 5) : 2018/ ISO 29042-5 : 2010", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 5: Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with unducted outlet" },
-  { id: 10, isNumber: "IS 16806 (Part 6) : 2018/ ISO 29042-6 : 2010", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 6 : Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with ducted outlet" },
-  { id: 11, isNumber: "IS 16806 (Part 7) : 2018/ ISO 29042-7 : 2010", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 7: Test bench method for the measurement of the pollutant concentration parameter" },
-  { id: 12, isNumber: "IS 16806 (Part 8) : 2018/ ISO 29042-8 : 2011", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 8: Room method for the measurement of the pollutant concentration parameter" },
-  { id: 13, isNumber: "IS 16806 (Part 9) : 2018/ ISO 29042-9 : 2011", title: "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 9: Decontamination index" },
-  { id: 14, isNumber: "IS 10481:2020/ ISO 4413:2010", title: "Hydraulic Fluid Power- General Rules and Safety Requirements for Systems and their Components" },
-  { id: 15, isNumber: "IS 12725:2021/ ISO 4414:2010", title: "Pneumatic Fluid Power- General Rules and Safety Requirements for Systems and their Components" },
-  { id: 16, isNumber: "IS ISO 3457 : 2003", title: "Earth Moving Machinery - Guards - Definitions and Requirements" },
-  { id: 17, isNumber: "IS 16501 : 2017/IEC 62061 : 2005", title: "Safety of Machinery-Functional Safety of Safety-Related Electrical Electronic and Programmable Electronic Control Systems" },
-  { id: 18, isNumber: "IS 16502 (Part 2) : 2017/ IEC 61496-2 : 2013", title: "Safety of Machinery - Electro-Sensitive Protective Equipment Part 2 Particular Requirements for Equipment Using Active Opto-Electronic Protective Devices AOPDs" },
-  { id: 19, isNumber: "IS 16503 (Part 3) : 2017/ IEC 61310-3 : 2007", title: "Safety of Machinery- Indication Marking and Actuation Part 3 Requirements for the Location and Operation of Actuators" },
-  { id: 20, isNumber: "IS 16504 (Part 32) : 2017/IEC 60204-32 : 2008", title: "Safety of Machinery-Electrical Equipment of Machines Part 32 Requirements for Hoisting Machines" },
-  { id: 21, isNumber: "IS 16503 (Part 1) : 2017/ IEC 61310-1 : 2007", title: "Safety of Machinery - Indication Marking and Actuation Part 1 Requirements for Visual Acoustic and Tactile Signals" },
-  { id: 22, isNumber: "IS 16594 (Part 1) : 2017/ IEC 61496-1 : 2012", title: "Safety of Machinery - Electro-Sensitive Protective Equipment Part 1 General Requirements and Tests" },
-  { id: 23, isNumber: "IS 16936 : 2018/ IEC TR 62513: 2008", title: "Safety of Machinery Guidelines for the Use of Communication Systems in Safety Related Applications" },
-  { id: 24, isNumber: "IS 16503 (Part 2) : 2017/ IEC 61310-2 : 2007", title: "Safety of Machinery - Indication Marking and Actuation Part 2 Requirements for Marking" },
-  { id: 25, isNumber: "IS 16807: 2020/", title: "Safety of Machinery Fire Prevention and Fire Protection" },
-  { id: 26, isNumber: "IS 16808 : 2018/ ISO 14159 : 2002", title: "Safety of Machinery Hygiene Requirements for the Design of Machinery" },
-  { id: 27, isNumber: "IS 16809 ( Part 1) : 2018/ ISO 14122-1 : 2016", title: "Safety of Machinery Permanent Means of Access to Machinery Part 1 Choice of Fixed Means and General Requirements of Access" },
-  { id: 28, isNumber: "IS 16809 (Part 2) : 2018/ ISO 14122-2 : 2016", title: "Safety of Machinery Permanent Means of Access to Machinery Part 2 Working Platforms and Walkways" },
-  { id: 29, isNumber: "IS 16809 (Part 3) : 2018/ ISO 14122-3 : 2016", title: "Safety of Machinery Permanent Means of Access to Machinery Part 3 Stairs Stepladders and Guard-Rails" },
-  { id: 30, isNumber: "IS 16809 (Part 4) : 2018/ ISO 14122-4 : 2016", title: "Safety of Machinery Permanent Means of Access to Machinery Part 4 Fixed Ladders" },
-  { id: 31, isNumber: "IS 16810 (Part 1) : 2018/ ISO 13849-1 : 2015", title: "Safety of Machinery Safety Related Parts of Control Systems Part 1 General Principles for Design" },
-  { id: 32, isNumber: "IS 16810 (Part 2) : 2018/ ISO 13849-2 : 2012", title: "Safety of Machinery Safety Related Parts of Control Systems Part 2 Validation" },
-  { id: 33, isNumber: "IS 16811: 2018/ 14120 : 2015", title: "Safety of Machinery Guards General Requirements for the Design and Construction of Fixed and Movable Guards" },
-  { id: 34, isNumber: "IS 16812 : 2018/ ISO 14119 : 2013", title: "Safety of Machinery Interlocking Devices Associated with Guards Principles for Design and Selection" },
-  { id: 35, isNumber: "IS 16813 : 2019/ ISO 14118 : 2017", title: "Safety of Machinery Prevention of Unexpected Start-Up" },
-  { id: 36, isNumber: "IS 16814 : 2021/ ISO 13857: 2019", title: "Safety of Machinery Safety Distances to Prevent Hazard Zones Being Reached by Upper and Lower Limbs" },
-  { id: 37, isNumber: "IS 16815 : 2019/ ISO 13855: 2010", title: "Safety of Machinery Positioning of Safeguards with Respect to the Approach Speeds of Parts of the Human Body" },
-  { id: 38, isNumber: "IS 16816 : 2019/ ISO 13854 : 2017", title: "Safety of Machinery Minimum Gaps to Avoid Crushing of Parts of the Human Body" },
-  { id: 39, isNumber: "IS 16817: 2020/ ISO 13851 : 2019", title: "Safety of Machinery Two-Hand Control Devices Principles for Design and Selection" },
-  { id: 40, isNumber: "IS 16818 : 2018/ ISO 13850 : 2015", title: "Safety of Machinery Emergency Stop Function Principles for Design" },
-  { id: 41, isNumber: "IS 16912 : 2018/ ISO 21469 : 2006", title: "Safety of Machinery Lubricants with Incidental Product -- Contact Hygiene Requirements" },
-  { id: 42, isNumber: "IS 16834 (Part 1) : 2018/ ISO 14123-1 : 2015", title: "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 1: Principles and specifications for machinery manufacturers" },
-  { id: 43, isNumber: "IS 16834 (Part 2) : 2018/ ISO 14123-2 : 2015", title: "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 2: Methodology leading to verification procedures" },
-  { id: 44, isNumber: "IS 16835 (Part 1) : 2018/ ISO 13856-1 : 2013", title: "Safety of machinery - Pressure-sensitive protective devices - Part 1: General principles for design and testing of pressure- sensitive mats and pressure-sensitive floors" },
-  { id: 45, isNumber: "IS 16835 (Part 2) : 2018/ ISO 13856-2 : 2013", title: "Safety of machinery - Pressure-sensitive protective devices - Part 2: General principles for design and testing of pressure- sensitive edges and pressure-sensitive bars" },
-  { id: 46, isNumber: "IS 16835 (Part 3) : 2018/ ISO 13856-3 : 2013", title: "Safety of machinery - Pressure-sensitive protective devices - Part 3: General principles for design and testing of pressure-sensitive bumpers, plates, wires and similar devices." },
-  { id: 47, isNumber: "IS 16569: 2018/ ISO 11429:1996", title: "Ergonomics- System of Auditory and Visual Danger and Information Signals" },
-  { id: 48, isNumber: "IS 16563 (Part 2) : 2017/ ISO 9355-2:1999", title: "Ergonomic Requirements for the Design of Displays and Control Actuators Part 2 Displays" },
-  { id: 49, isNumber: "IS 16563 (Part 3) 2017 / ISO 9355-3:2006", title: "Ergonomic Requirements for the Design of Displays and Control Actuators Part 3 Control Actuators" },
-  { id: 50, isNumber: "IS 16572 : 2017/ ISO 14738 : 2002", title: "Safety of Machinery - Anthropometric Requirements for the Design of Workstations at Machinery" },
-  { id: 51, isNumber: "IS 16562 ( Part 1) : 2017/ ISO 15536-1 : 2005", title: "Ergonomics - Computer Manikins and Body Templates Part 1 General Requirements" },
-  { id: 52, isNumber: "IS 16569:2018/ ISO 11429: 1996", title: "Ergonomics - System of auditory and visual danger and information signals" },
-  { id: 53, isNumber: "IS 15296 : 2017/ ISO 11161: 2007", title: "Industrial Automation Systems - Safety of Integrated Manufacturing Systems - Basic Requirements" },
+  {
+    id: 1,
+    isNumber: "IS 16504 (Part 1):2019/IEC 60204-1:2016",
+    title:
+      "Safety of Machinery Electrical Equipment of Machines Part 1 General Requirements",
+  },
+  {
+    id: 2,
+    isNumber: "IS 16504 (Part 11) : 2020 /IEC 60204-11 : 2018",
+    title:
+      "Safety of Machinery - Electrical Equipment of Machines Part 11 Requirements for Equipment for Voltages above 1 000 V AC or 1 500 V DC and not Exceeding 36 kV",
+  },
+  {
+    id: 3,
+    isNumber: "IS/IEC 61508 (Part 1): 2010",
+    title:
+      "Functional Safety of Electrical-Electronic-Programmable Electronic Safety-related Systems Part 1- General Requirements",
+  },
+  {
+    id: 4,
+    isNumber: "IS/IEC 60529 : 2001",
+    title: "Degree of Protection Provided by Enclosures (IP Code)",
+  },
+  {
+    id: 5,
+    isNumber: "IS 16806 (Part 1) : 2018/ ISO 29042-1 : 2008",
+    title:
+      "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 1: Selection of test methods",
+  },
+  {
+    id: 6,
+    isNumber: "IS 16806 (Part 2) : 2018/ ISO 29042-2 : 2009",
+    title:
+      "Safety of Machinery Evaluation of the Emission of Airborne Hazardous Substances Part 2 Tracer Gas Method for the Measurement of the Emission Rate of a Given Pollutant",
+  },
+  {
+    id: 7,
+    isNumber: "IS 16806 (Part 3) : 2018/ ISO 29042-3 : 2009",
+    title:
+      "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 3: Test bench method for the measurement of the emission rate of a given pollutant",
+  },
+  {
+    id: 8,
+    isNumber: "IS 16806 (Part 4) : 2018/ ISO 29042-4 : 2009",
+    title:
+      "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 4: Tracer method for the measurement of the capture efficiency of an exhaust system",
+  },
+  {
+    id: 9,
+    isNumber: "IS 16806 (Part 5) : 2018/ ISO 29042-5 : 2010",
+    title:
+      "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 5: Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with unducted outlet",
+  },
+  {
+    id: 10,
+    isNumber: "IS 16806 (Part 6) : 2018/ ISO 29042-6 : 2010",
+    title:
+      "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 6 : Test bench method for the measurement of the separation efficiency by mass of air cleaning systems with ducted outlet",
+  },
+  {
+    id: 11,
+    isNumber: "IS 16806 (Part 7) : 2018/ ISO 29042-7 : 2010",
+    title:
+      "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 7: Test bench method for the measurement of the pollutant concentration parameter",
+  },
+  {
+    id: 12,
+    isNumber: "IS 16806 (Part 8) : 2018/ ISO 29042-8 : 2011",
+    title:
+      "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 8: Room method for the measurement of the pollutant concentration parameter",
+  },
+  {
+    id: 13,
+    isNumber: "IS 16806 (Part 9) : 2018/ ISO 29042-9 : 2011",
+    title:
+      "Safety of machinery - Evaluation of the emission of airborne hazardous substances - Part 9: Decontamination index",
+  },
+  {
+    id: 14,
+    isNumber: "IS 10481:2020/ ISO 4413:2010",
+    title:
+      "Hydraulic Fluid Power- General Rules and Safety Requirements for Systems and their Components",
+  },
+  {
+    id: 15,
+    isNumber: "IS 12725:2021/ ISO 4414:2010",
+    title:
+      "Pneumatic Fluid Power- General Rules and Safety Requirements for Systems and their Components",
+  },
+  {
+    id: 16,
+    isNumber: "IS ISO 3457 : 2003",
+    title: "Earth Moving Machinery - Guards - Definitions and Requirements",
+  },
+  {
+    id: 17,
+    isNumber: "IS 16501 : 2017/IEC 62061 : 2005",
+    title:
+      "Safety of Machinery-Functional Safety of Safety-Related Electrical Electronic and Programmable Electronic Control Systems",
+  },
+  {
+    id: 18,
+    isNumber: "IS 16502 (Part 2) : 2017/ IEC 61496-2 : 2013",
+    title:
+      "Safety of Machinery - Electro-Sensitive Protective Equipment Part 2 Particular Requirements for Equipment Using Active Opto-Electronic Protective Devices AOPDs",
+  },
+  {
+    id: 19,
+    isNumber: "IS 16503 (Part 3) : 2017/ IEC 61310-3 : 2007",
+    title:
+      "Safety of Machinery- Indication Marking and Actuation Part 3 Requirements for the Location and Operation of Actuators",
+  },
+  {
+    id: 20,
+    isNumber: "IS 16504 (Part 32) : 2017/IEC 60204-32 : 2008",
+    title:
+      "Safety of Machinery-Electrical Equipment of Machines Part 32 Requirements for Hoisting Machines",
+  },
+  {
+    id: 21,
+    isNumber: "IS 16503 (Part 1) : 2017/ IEC 61310-1 : 2007",
+    title:
+      "Safety of Machinery - Indication Marking and Actuation Part 1 Requirements for Visual Acoustic and Tactile Signals",
+  },
+  {
+    id: 22,
+    isNumber: "IS 16594 (Part 1) : 2017/ IEC 61496-1 : 2012",
+    title:
+      "Safety of Machinery - Electro-Sensitive Protective Equipment Part 1 General Requirements and Tests",
+  },
+  {
+    id: 23,
+    isNumber: "IS 16936 : 2018/ IEC TR 62513: 2008",
+    title:
+      "Safety of Machinery Guidelines for the Use of Communication Systems in Safety Related Applications",
+  },
+  {
+    id: 24,
+    isNumber: "IS 16503 (Part 2) : 2017/ IEC 61310-2 : 2007",
+    title:
+      "Safety of Machinery - Indication Marking and Actuation Part 2 Requirements for Marking",
+  },
+  {
+    id: 25,
+    isNumber: "IS 16807: 2020/",
+    title: "Safety of Machinery Fire Prevention and Fire Protection",
+  },
+  {
+    id: 26,
+    isNumber: "IS 16808 : 2018/ ISO 14159 : 2002",
+    title:
+      "Safety of Machinery Hygiene Requirements for the Design of Machinery",
+  },
+  {
+    id: 27,
+    isNumber: "IS 16809 ( Part 1) : 2018/ ISO 14122-1 : 2016",
+    title:
+      "Safety of Machinery Permanent Means of Access to Machinery Part 1 Choice of Fixed Means and General Requirements of Access",
+  },
+  {
+    id: 28,
+    isNumber: "IS 16809 (Part 2) : 2018/ ISO 14122-2 : 2016",
+    title:
+      "Safety of Machinery Permanent Means of Access to Machinery Part 2 Working Platforms and Walkways",
+  },
+  {
+    id: 29,
+    isNumber: "IS 16809 (Part 3) : 2018/ ISO 14122-3 : 2016",
+    title:
+      "Safety of Machinery Permanent Means of Access to Machinery Part 3 Stairs Stepladders and Guard-Rails",
+  },
+  {
+    id: 30,
+    isNumber: "IS 16809 (Part 4) : 2018/ ISO 14122-4 : 2016",
+    title:
+      "Safety of Machinery Permanent Means of Access to Machinery Part 4 Fixed Ladders",
+  },
+  {
+    id: 31,
+    isNumber: "IS 16810 (Part 1) : 2018/ ISO 13849-1 : 2015",
+    title:
+      "Safety of Machinery Safety Related Parts of Control Systems Part 1 General Principles for Design",
+  },
+  {
+    id: 32,
+    isNumber: "IS 16810 (Part 2) : 2018/ ISO 13849-2 : 2012",
+    title:
+      "Safety of Machinery Safety Related Parts of Control Systems Part 2 Validation",
+  },
+  {
+    id: 33,
+    isNumber: "IS 16811: 2018/ 14120 : 2015",
+    title:
+      "Safety of Machinery Guards General Requirements for the Design and Construction of Fixed and Movable Guards",
+  },
+  {
+    id: 34,
+    isNumber: "IS 16812 : 2018/ ISO 14119 : 2013",
+    title:
+      "Safety of Machinery Interlocking Devices Associated with Guards Principles for Design and Selection",
+  },
+  {
+    id: 35,
+    isNumber: "IS 16813 : 2019/ ISO 14118 : 2017",
+    title: "Safety of Machinery Prevention of Unexpected Start-Up",
+  },
+  {
+    id: 36,
+    isNumber: "IS 16814 : 2021/ ISO 13857: 2019",
+    title:
+      "Safety of Machinery Safety Distances to Prevent Hazard Zones Being Reached by Upper and Lower Limbs",
+  },
+  {
+    id: 37,
+    isNumber: "IS 16815 : 2019/ ISO 13855: 2010",
+    title:
+      "Safety of Machinery Positioning of Safeguards with Respect to the Approach Speeds of Parts of the Human Body",
+  },
+  {
+    id: 38,
+    isNumber: "IS 16816 : 2019/ ISO 13854 : 2017",
+    title:
+      "Safety of Machinery Minimum Gaps to Avoid Crushing of Parts of the Human Body",
+  },
+  {
+    id: 39,
+    isNumber: "IS 16817: 2020/ ISO 13851 : 2019",
+    title:
+      "Safety of Machinery Two-Hand Control Devices Principles for Design and Selection",
+  },
+  {
+    id: 40,
+    isNumber: "IS 16818 : 2018/ ISO 13850 : 2015",
+    title: "Safety of Machinery Emergency Stop Function Principles for Design",
+  },
+  {
+    id: 41,
+    isNumber: "IS 16912 : 2018/ ISO 21469 : 2006",
+    title:
+      "Safety of Machinery Lubricants with Incidental Product -- Contact Hygiene Requirements",
+  },
+  {
+    id: 42,
+    isNumber: "IS 16834 (Part 1) : 2018/ ISO 14123-1 : 2015",
+    title:
+      "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 1: Principles and specifications for machinery manufacturers",
+  },
+  {
+    id: 43,
+    isNumber: "IS 16834 (Part 2) : 2018/ ISO 14123-2 : 2015",
+    title:
+      "Safety of machinery - Reduction of risks to health resulting from hazardous substances emitted by machinery - Part 2: Methodology leading to verification procedures",
+  },
+  {
+    id: 44,
+    isNumber: "IS 16835 (Part 1) : 2018/ ISO 13856-1 : 2013",
+    title:
+      "Safety of machinery - Pressure-sensitive protective devices - Part 1: General principles for design and testing of pressure- sensitive mats and pressure-sensitive floors",
+  },
+  {
+    id: 45,
+    isNumber: "IS 16835 (Part 2) : 2018/ ISO 13856-2 : 2013",
+    title:
+      "Safety of machinery - Pressure-sensitive protective devices - Part 2: General principles for design and testing of pressure- sensitive edges and pressure-sensitive bars",
+  },
+  {
+    id: 46,
+    isNumber: "IS 16835 (Part 3) : 2018/ ISO 13856-3 : 2013",
+    title:
+      "Safety of machinery - Pressure-sensitive protective devices - Part 3: General principles for design and testing of pressure-sensitive bumpers, plates, wires and similar devices.",
+  },
+  {
+    id: 47,
+    isNumber: "IS 16569: 2018/ ISO 11429:1996",
+    title:
+      "Ergonomics- System of Auditory and Visual Danger and Information Signals",
+  },
+  {
+    id: 48,
+    isNumber: "IS 16563 (Part 2) : 2017/ ISO 9355-2:1999",
+    title:
+      "Ergonomic Requirements for the Design of Displays and Control Actuators Part 2 Displays",
+  },
+  {
+    id: 49,
+    isNumber: "IS 16563 (Part 3) 2017 / ISO 9355-3:2006",
+    title:
+      "Ergonomic Requirements for the Design of Displays and Control Actuators Part 3 Control Actuators",
+  },
+  {
+    id: 50,
+    isNumber: "IS 16572 : 2017/ ISO 14738 : 2002",
+    title:
+      "Safety of Machinery - Anthropometric Requirements for the Design of Workstations at Machinery",
+  },
+  {
+    id: 51,
+    isNumber: "IS 16562 ( Part 1) : 2017/ ISO 15536-1 : 2005",
+    title:
+      "Ergonomics - Computer Manikins and Body Templates Part 1 General Requirements",
+  },
+  {
+    id: 52,
+    isNumber: "IS 16569:2018/ ISO 11429: 1996",
+    title:
+      "Ergonomics - System of auditory and visual danger and information signals",
+  },
+  {
+    id: 53,
+    isNumber: "IS 15296 : 2017/ ISO 11161: 2007",
+    title:
+      "Industrial Automation Systems - Safety of Integrated Manufacturing Systems - Basic Requirements",
+  },
 ];
 
 const productDataTableThird = [
-  { id: 1, description: "All types of Pumps for handling liquids, liquid elevators", hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 and 841392", indianStandard: "-", title: "-" },
-  { id: 2, description: "All types of compressors", hsCode: "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 and 84149090", indianStandard: "Clause 16 of IS 17093:2019\nClause 6.6 of IS 12258:1987", title: "Technical supply conditions for reciprocating air compressors for general purpose and industrial applications\nTechnical supply condition for air screw compressors (Oil Flooded) for general purpose and industrial applications" },
-  { id: 3, description: "All types of machinery for Treatment of material by a process involving a Change of temperature", hsCode: "841932, 841939, 841940, 841950, 841960, 841981, 841989 and 84199090", indianStandard: "-", title: "-" },
-  { id: 4, description: "or purifying machinery for liquid and gas", hsCode: "842122, 842129, 842131, 842139, 842191 and 842199", indianStandard: "-", title: "-" },
-  { id: 5, description: "All types of machinery for filling, closing, sealing, labelling bottles, packing or wrapping", hsCode: "842220, 842230, 842240 and 842290", indianStandard: "-", title: "-" },
-  { id: 6, description: "All types of cranes", hsCode: "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 and 84269990", indianStandard: "Clause 66.1, 66.1.1, 66.1.2, 66.1.3, 66.2, 66.2.1, 66.2.2, 66.3, 66.4, 66.5 and 66.6 of IS 3177:2020\nClause 8.1, 8.2, 8.3 & 45 of IS 4573:2020\nIS/ISO 15442:2012", title: "Electric Overhead Travelling Crane and Gantry Crane for all Applications Code of Practice\nPower Driven Mobile Cranes Specification\nCranes - Safety requirements for loader cranes" },
-  { id: 7, description: "All types of machinery for construction", hsCode: "8429, 843010, 843020, 843031, 843039, 843041", indianStandard: "IS 17055 (Part 7): 2020\nIS 17055 (Part 8): 2020\nIS 17055 (Part 12): 2020", title: "Earth-Moving Machinery Safety Part 7 Scrapers\nEarth-Moving Machinery Requirements For Graders\nEarth-Moving Machinery Safety Part 12 Road Pavers" },
-  { id: 8, description: "All types of weaving machines (looms)", hsCode: "8446, 844811, 844819, 844842 and 844849", indianStandard: "IS 17361 (Part 6) : 2020 / ISO 11111 (Part 6) : 2005", title: "Textile Machinery Safety Requirements Part 6 Fabric Manufacturing Machinery" },
-  { id: 9, description: "All types of machinery for making embroidery.", hsCode: "84479020 and 844859", indianStandard: "IS 17361 (Part 1): 2020 / ISO 11111 (Part 1) : 2016", title: "Textile Machiner Safety Requirements Part 1 Common Requirements" },
-  { id: 10, description: "All types of metal cutting machines", hsCode: "8456, 8457, 8458, 8459, 8460, 8461 and 846693", indianStandard: "IS 17277 (Part 1): 2019\nISO 16092-1 : 2017\nIS 17259: 2020\nISO 28881 : 2013\nIS 17258: 2019\nISO 23125 : 2015\nIS 17254:2019\nISO 16093 : 2017\nIS 17253 (Part 1): 2019\nISO 16090-1 : 2017", title: "Machine Tools Safety Presses Part 1 General Safety Requirements\nMachine Tools Safety Electro-Discharge Machines\nMachine Tools Safety Turning Machines\nMachine Tools Safety Sawing Machines for Cold Metal\nMachine Tools Safety Machining Centres, Milling Machines, Transfer Machines Part 1 Safety Requirements" },
-  { id: 11, description: "All types of machine tools for working stone, ceramics, concrete, asbestos cement or like mineral glass", hsCode: "8464 and 84669100", indianStandard: "-", title: "-" },
-  { id: 12, description: "All types of machinery for working rubber and plastics", hsCode: "8477", indianStandard: "IS/ISO 20430: 2020", title: "Plastics and Rubber Machines-Injection Moulding Machines-Safety Requirements" },
-  { id: 13, description: "All types of machines including the machines for public works & Building and the machinery & mechanical appliances having individual functions, not specified", hsCode: "84791000, 84798999 and 84799090", indianStandard: "-", title: "-" },
-  { id: 14, description: "All types of gears and gearing, toothed wheels, chain sprocket, transmission elements ball or roller screws, gear boxes and speed changers, including torque converters And (or)their assemblies /sub-assemblies /components", hsCode: "84834000 and 84839000", indianStandard: "-", title: "-" },
-  { id: 15, description: "All types of Rotary electrical machines such as Generator, etc. Building and the machinery & mechanical appliances having individual functions, not specified", hsCode: "8501 and 8503", indianStandard: "Clause 4.7, 4.8 and 4.12 of section 2,\nclause 7.4 of Section 3, clause 8.6 of Section 4,\nClause 9.4 of section 5 of IS 5422:1996\nClause 11, 21, 22, 23, 25 and 26 of IS 13364\n(Part 1): 1992\nClause 11, 21, 22 23 25 and 26 of IS 13364\n(Part 2): 1992", title: "Turbine type generation\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 1\nalternators rated up to 20 kVa\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 2\nalternators rated above 20 kVa and up to 1250 kVa" },
-  { id: 16, description: "All types of Diesel Generator", hsCode: "8502 and 8503", indianStandard: "Clause 5,6,7,8, 9 & 10 of IS/ISO 8528 (Part 2) : 2018\nClause 6 & 10 of IS/ISO 8528 (Part 3)\nClause 4, 5.5, 7.3.5, 7.3.7 & 7.4 of IS/ISO 8528 (Part 4): 2005\nClause 12, 13, 14, 15 of IS/ISO 8528-5: 2018\nClause 6.4 of IS/ISO 8528 (Part 8): 2016\nClause 9.1 of IS/ISO 8528 (Part 12): 1997", title: "Reciprocating Internal Combustion Engine Driven Alternating Current Generating Sets : Part 2 Engines\nReciprocating internal combustion engine driven alternating current generating sets: Part 3 alternating current generators for generating sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 4 control gear and switchgear\nReciprocating Internal Combustion Engine Driven Alternating Current Generating Sets Part 5 Generating Sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 8\nReciprocating internal combustion engine driven alternating current generating sets: Part 12 emergency power supply to safety" },
-  { id: 17, description: "All types of Transformer", hsCode: "850421, 850422, 850423, 850431, 850432, 850433, 850434 and 850490.", indianStandard: "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nClause 5.6 & Cl 10 of IS 2026 (Part 1)\nClause 7.5, 7.6, 7.7 of IS 2026 (Part 6)", title: "Safety of Transformers, Reactors, Power Supply Units and Similar Product for Supply Voltages up to 1100 V Part 2-4: Particular Requirements and Tests for Isolating Transformers and Power Supply Units Incorporating\nSafety of power transformers, power supply units and similar: Part 2 particular requirement: Sec 6 safety isolating transformers for general use\nSafety of power transformers, power supplies reactors and similar products: Part 2-7 particular requirements and tests for transformers and power supplies for toys\nPower transformers: Part 1 general\nPower transformers: Part 6 reactors" },
-  { id: 18, description: "All types of Power Semiconductor Converter", hsCode: "850440", indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009", title: "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements" },
-  { id: 19, description: "All types of switch gear and control gear equipment operating at voltages not exceeding 1000 volts and (or) their assemblies /sub-assemblies /components", hsCode: "8536, 8537 and 8538", indianStandard: "Clause 8 of IS/IEC 61439 (Part 3): 2012", title: "Low-Voltage switchgear and control gear assemblies: Part 3 distribution boards intended to be operated by ordinary persons (DBO)" },
-  { id: 20, description: "All types of switch gear and control gear equipment operating at voltages exceeding 1000 volts and (or) their assemblies /sub-assemblies /components", hsCode: "8535, 8537 and 8538", indianStandard: "-", title: "-" },
+  {
+    id: 1,
+    description: "All types of Pumps for handling liquids, liquid elevators",
+    hsCode: "841340, 841350, 841360, 841370, 841381, 841382, 841391 and 841392",
+    indianStandard: "-",
+    title: "-",
+  },
+  {
+    id: 2,
+    description: "All types of compressors",
+    hsCode:
+      "841430, 841440, 84148011, 84148090, 84149011,84149019, 84149040 and 84149090",
+    indianStandard: "Clause 16 of IS 17093:2019\nClause 6.6 of IS 12258:1987",
+    title:
+      "Technical supply conditions for reciprocating air compressors for general purpose and industrial applications\nTechnical supply condition for air screw compressors (Oil Flooded) for general purpose and industrial applications",
+  },
+  {
+    id: 3,
+    description:
+      "All types of machinery for Treatment of material by a process involving a Change of temperature",
+    hsCode:
+      "841932, 841939, 841940, 841950, 841960, 841981, 841989 and 84199090",
+    indianStandard: "-",
+    title: "-",
+  },
+  {
+    id: 4,
+    description: "or purifying machinery for liquid and gas",
+    hsCode: "842122, 842129, 842131, 842139, 842191 and 842199",
+    indianStandard: "-",
+    title: "-",
+  },
+  {
+    id: 5,
+    description:
+      "All types of machinery for filling, closing, sealing, labelling bottles, packing or wrapping",
+    hsCode: "842220, 842230, 842240 and 842290",
+    indianStandard: "-",
+    title: "-",
+  },
+  {
+    id: 6,
+    description: "All types of cranes",
+    hsCode:
+      "842611, 842612, 842619, 842620, 842630, 842641, 842649, 842691 and 84269990",
+    indianStandard:
+      "Clause 66.1, 66.1.1, 66.1.2, 66.1.3, 66.2, 66.2.1, 66.2.2, 66.3, 66.4, 66.5 and 66.6 of IS 3177:2020\nClause 8.1, 8.2, 8.3 & 45 of IS 4573:2020\nIS/ISO 15442:2012",
+    title:
+      "Electric Overhead Travelling Crane and Gantry Crane for all Applications Code of Practice\nPower Driven Mobile Cranes Specification\nCranes - Safety requirements for loader cranes",
+  },
+  {
+    id: 7,
+    description: "All types of machinery for construction",
+    hsCode: "8429, 843010, 843020, 843031, 843039, 843041",
+    indianStandard:
+      "IS 17055 (Part 7): 2020\nIS 17055 (Part 8): 2020\nIS 17055 (Part 12): 2020",
+    title:
+      "Earth-Moving Machinery Safety Part 7 Scrapers\nEarth-Moving Machinery Requirements For Graders\nEarth-Moving Machinery Safety Part 12 Road Pavers",
+  },
+  {
+    id: 8,
+    description: "All types of weaving machines (looms)",
+    hsCode: "8446, 844811, 844819, 844842 and 844849",
+    indianStandard: "IS 17361 (Part 6) : 2020 / ISO 11111 (Part 6) : 2005",
+    title:
+      "Textile Machinery Safety Requirements Part 6 Fabric Manufacturing Machinery",
+  },
+  {
+    id: 9,
+    description: "All types of machinery for making embroidery.",
+    hsCode: "84479020 and 844859",
+    indianStandard: "IS 17361 (Part 1): 2020 / ISO 11111 (Part 1) : 2016",
+    title: "Textile Machiner Safety Requirements Part 1 Common Requirements",
+  },
+  {
+    id: 10,
+    description: "All types of metal cutting machines",
+    hsCode: "8456, 8457, 8458, 8459, 8460, 8461 and 846693",
+    indianStandard:
+      "IS 17277 (Part 1): 2019\nISO 16092-1 : 2017\nIS 17259: 2020\nISO 28881 : 2013\nIS 17258: 2019\nISO 23125 : 2015\nIS 17254:2019\nISO 16093 : 2017\nIS 17253 (Part 1): 2019\nISO 16090-1 : 2017",
+    title:
+      "Machine Tools Safety Presses Part 1 General Safety Requirements\nMachine Tools Safety Electro-Discharge Machines\nMachine Tools Safety Turning Machines\nMachine Tools Safety Sawing Machines for Cold Metal\nMachine Tools Safety Machining Centres, Milling Machines, Transfer Machines Part 1 Safety Requirements",
+  },
+  {
+    id: 11,
+    description:
+      "All types of machine tools for working stone, ceramics, concrete, asbestos cement or like mineral glass",
+    hsCode: "8464 and 84669100",
+    indianStandard: "-",
+    title: "-",
+  },
+  {
+    id: 12,
+    description: "All types of machinery for working rubber and plastics",
+    hsCode: "8477",
+    indianStandard: "IS/ISO 20430: 2020",
+    title:
+      "Plastics and Rubber Machines-Injection Moulding Machines-Safety Requirements",
+  },
+  {
+    id: 13,
+    description:
+      "All types of machines including the machines for public works & Building and the machinery & mechanical appliances having individual functions, not specified",
+    hsCode: "84791000, 84798999 and 84799090",
+    indianStandard: "-",
+    title: "-",
+  },
+  {
+    id: 14,
+    description:
+      "All types of gears and gearing, toothed wheels, chain sprocket, transmission elements ball or roller screws, gear boxes and speed changers, including torque converters And (or)their assemblies /sub-assemblies /components",
+    hsCode: "84834000 and 84839000",
+    indianStandard: "-",
+    title: "-",
+  },
+  {
+    id: 15,
+    description:
+      "All types of Rotary electrical machines such as Generator, etc. Building and the machinery & mechanical appliances having individual functions, not specified",
+    hsCode: "8501 and 8503",
+    indianStandard:
+      "Clause 4.7, 4.8 and 4.12 of section 2,\nclause 7.4 of Section 3, clause 8.6 of Section 4,\nClause 9.4 of section 5 of IS 5422:1996\nClause 11, 21, 22, 23, 25 and 26 of IS 13364\n(Part 1): 1992\nClause 11, 21, 22 23 25 and 26 of IS 13364\n(Part 2): 1992",
+    title:
+      "Turbine type generation\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 1\nalternators rated up to 20 kVa\nAc generators driven by reciprocating internal\ncombustion engines - Specification: Part 2\nalternators rated above 20 kVa and up to 1250 kVa",
+  },
+  {
+    id: 16,
+    description: "All types of Diesel Generator",
+    hsCode: "8502 and 8503",
+    indianStandard:
+      "Clause 5,6,7,8, 9 & 10 of IS/ISO 8528 (Part 2) : 2018\nClause 6 & 10 of IS/ISO 8528 (Part 3)\nClause 4, 5.5, 7.3.5, 7.3.7 & 7.4 of IS/ISO 8528 (Part 4): 2005\nClause 12, 13, 14, 15 of IS/ISO 8528-5: 2018\nClause 6.4 of IS/ISO 8528 (Part 8): 2016\nClause 9.1 of IS/ISO 8528 (Part 12): 1997",
+    title:
+      "Reciprocating Internal Combustion Engine Driven Alternating Current Generating Sets : Part 2 Engines\nReciprocating internal combustion engine driven alternating current generating sets: Part 3 alternating current generators for generating sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 4 control gear and switchgear\nReciprocating Internal Combustion Engine Driven Alternating Current Generating Sets Part 5 Generating Sets\nReciprocating internal combustion engine driven alternating current generating sets: Part 8\nReciprocating internal combustion engine driven alternating current generating sets: Part 12 emergency power supply to safety",
+  },
+  {
+    id: 17,
+    description: "All types of Transformer",
+    hsCode:
+      "850421, 850422, 850423, 850431, 850432, 850433, 850434 and 850490.",
+    indianStandard:
+      "IS/IEC 61558-2-4 : 2009\nIS/IEC 61558-2-6 : 1997\nIS/IEC 61558-2-7 : 2007\nClause 5.6 & Cl 10 of IS 2026 (Part 1)\nClause 7.5, 7.6, 7.7 of IS 2026 (Part 6)",
+    title:
+      "Safety of Transformers, Reactors, Power Supply Units and Similar Product for Supply Voltages up to 1100 V Part 2-4: Particular Requirements and Tests for Isolating Transformers and Power Supply Units Incorporating\nSafety of power transformers, power supply units and similar: Part 2 particular requirement: Sec 6 safety isolating transformers for general use\nSafety of power transformers, power supplies reactors and similar products: Part 2-7 particular requirements and tests for transformers and power supplies for toys\nPower transformers: Part 1 general\nPower transformers: Part 6 reactors",
+  },
+  {
+    id: 18,
+    description: "All types of Power Semiconductor Converter",
+    hsCode: "850440",
+    indianStandard: "IS 16539-1-1:2017/ IEC 60146-1-1: 2009",
+    title:
+      "Clause 7 of Semicounductor Converters Part 1 General Requirements and Line Commutated Converters Section 1 Specification of basic requirements",
+  },
+  {
+    id: 19,
+    description:
+      "All types of switch gear and control gear equipment operating at voltages not exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
+    hsCode: "8536, 8537 and 8538",
+    indianStandard: "Clause 8 of IS/IEC 61439 (Part 3): 2012",
+    title:
+      "Low-Voltage switchgear and control gear assemblies: Part 3 distribution boards intended to be operated by ordinary persons (DBO)",
+  },
+  {
+    id: 20,
+    description:
+      "All types of switch gear and control gear equipment operating at voltages exceeding 1000 volts and (or) their assemblies /sub-assemblies /components",
+    hsCode: "8535, 8537 and 8538",
+    indianStandard: "-",
+    title: "-",
+  },
 ];
 
 const TypeBTableJapanese = ({ tableRef, searchQuery }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 20;
 
-  const filteredData = productDataTableSecond.filter(item => {
+  const filteredData = productDataTableSecond.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -2298,7 +2621,10 @@ const TypeBTableJapanese = ({ tableRef, searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={3} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={3}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   「{searchQuery}」の検索結果が見つかりませんでした
                 </TableCell>
               </TableRow>
@@ -2334,7 +2660,7 @@ const TypeBTableJapanese = ({ tableRef, searchQuery }) => {
 };
 
 const TypeCTableJapanese = ({ searchQuery }) => {
-  const filteredData = productDataTableThird.filter(item => {
+  const filteredData = productDataTableThird.filter((item) => {
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
     return (
@@ -2399,7 +2725,10 @@ const TypeCTableJapanese = ({ searchQuery }) => {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={5} className="text-center py-8 font-geist text-gray-500">
+                <TableCell
+                  colSpan={5}
+                  className="text-center py-8 font-geist text-gray-500"
+                >
                   「{searchQuery}」の検索結果が見つかりませんでした
                 </TableCell>
               </TableRow>

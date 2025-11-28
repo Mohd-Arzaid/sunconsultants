@@ -37,7 +37,6 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import FooterIndonesian from "@/components/manual/Footer/FooterIndonesian";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 const BISImage = "/services-images/BIS.jpg";
-const CDSCO = "/services-images/CDSCO.jpg";
 const BISCRS = "/services-images/BISCRS.jpg";
 const PlasticWasteManagement = "/services-images/PlasticWasteManagement.jpg";
 const EPRCertificate = "/services-images/EPRCertificate.jpg";
@@ -72,8 +71,7 @@ const BISCertificationMetaTags = () => {
     "Sertifikasi BIS, Proses Sertifikasi BIS, Registrasi BIS, Proses Registrasi BIS, Skema Sertifikasi BIS, Skema Sertifikasi Produk, Skema Sertifikasi Wajib, Daftar Produk Wajib BIS, Tanda ISI, BIS FMCS, Skema Hallmarking BIS, Skema Eco Mark, Konsultan Sertifikasi BIS, Konsultan Sertifikasi ISI, Konsultan Tanda ISI BIS, Apa itu Sertifikasi BIS, Unduh Sertifikasi BIS, Biaya Sertifikasi BIS, Sertifikasi BIS India, Kepanjangan Sertifikasi BIS, Sertifikasi BIS India, Sertifikasi BIS India, Arti Sertifikasi BIS, Cek Sertifikasi BIS, Lisensi BIS Online di India, Sertifikasi BIS Online, Sertifikat BIS, Sertifikat BIS Online.";
   const canonicalUrl = window.location.href;
   const author = "Sun Certifications India";
-  const publisher =
-    "Dhruv Aggarwal, Kepala Operasi di Sun Certification India";
+  const publisher = "Dhruv Aggarwal, Kepala Operasi di Sun Certification India";
 
   return (
     <Helmet>
@@ -698,24 +696,25 @@ const OverviewSection = () => {
       <p className="service-left-content-paragraph">
         Sebagai contoh, seorang produsen dari Jerman yang telah menciptakan
         perangkat elektronik unik dan berencana menjualnya di Pasar India yang
-        cepat. Perangkat ini unik, aman, dan juga telah mendapatkan persetujuan di
-        Eropa. Namun, ketika perangkat dibawa ke pelabuhan di India, petugas
-        bea cukai menahan perangkat tersebut. Pertanyaannya adalah, "Mengapa?" Jawabannya adalah,
-        perangkat tersebut seharusnya memiliki sertifikasi BIS, yang merupakan bagian penting
-        untuk menjual produk elektronik di India.
+        cepat. Perangkat ini unik, aman, dan juga telah mendapatkan persetujuan
+        di Eropa. Namun, ketika perangkat dibawa ke pelabuhan di India, petugas
+        bea cukai menahan perangkat tersebut. Pertanyaannya adalah, "Mengapa?"
+        Jawabannya adalah, perangkat tersebut seharusnya memiliki sertifikasi
+        BIS, yang merupakan bagian penting untuk menjual produk elektronik di
+        India.
       </p>
 
       <p className="service-left-content-paragraph">
         Banyak produsen global dan India menghadapi kasus yang sama setiap
         tahun. Bagi konsumen India, tanda BIS pada produk bukan hanya sekadar
         logo, ini adalah tanda kepercayaan bahwa produk telah diuji untuk
-        kualitas, keamanan, dan keandalan. Bagi bisnis, ini adalah pintu gerbang ke
-        salah satu pasar terbesar di seluruh dunia.
+        kualitas, keamanan, dan keandalan. Bagi bisnis, ini adalah pintu gerbang
+        ke salah satu pasar terbesar di seluruh dunia.
       </p>
 
       <p className="service-left-content-paragraph">
-        Artikel ini akan menjawab semua pertanyaan tentang sertifikasi BIS, termasuk
-        kebutuhan, proses, manfaat, skema, biaya, dan sistem serta
+        Artikel ini akan menjawab semua pertanyaan tentang sertifikasi BIS,
+        termasuk kebutuhan, proses, manfaat, skema, biaya, dan sistem serta
         navigasinya yang tersedia untuk produsen asing maupun domestik.
       </p>
 
@@ -724,27 +723,27 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Sertifikasi BIS adalah sertifikasi jaminan kualitas dan keamanan
-        yang diberikan oleh Bureau of Indian Standards (BIS), badan
-        sertifikasi nasional India di bawah Kementerian Urusan Konsumen. 
-        Sertifikasi BIS memastikan bahwa suatu produk mematuhi Standar
-        India (IS) dalam hal kinerja, keamanan, dan kualitas.
+        Sertifikasi BIS adalah sertifikasi jaminan kualitas dan keamanan yang
+        diberikan oleh Bureau of Indian Standards (BIS), badan sertifikasi
+        nasional India di bawah Kementerian Urusan Konsumen. Sertifikasi BIS
+        memastikan bahwa suatu produk mematuhi Standar India (IS) dalam hal
+        kinerja, keamanan, dan kualitas.
       </p>
       <p className="service-left-content-paragraph">
-        Ketika suatu produk memenuhi persyaratan standar kualitas ini, Bureau
-        of Indian Standards menerbitkan lisensi BIS atau sertifikat BIS, yang menandakan
-        produk tersebut memenuhi syarat untuk membawa tanda ISI (untuk skema domestik) atau
-        tanda CRS dengan nomor registrasi unik (di bawah Skema Registrasi Wajib
-        BIS).
+        Ketika suatu produk memenuhi persyaratan standar kualitas ini, Bureau of
+        Indian Standards menerbitkan lisensi BIS atau sertifikat BIS, yang
+        menandakan produk tersebut memenuhi syarat untuk membawa tanda ISI
+        (untuk skema domestik) atau tanda CRS dengan nomor registrasi unik (di
+        bawah Skema Registrasi Wajib BIS).
       </p>
       <p className="service-left-content-paragraph">
         Bagi banyak produsen dan importir India, memperoleh sertifikasi BIS
         adalah suatu keharusan. Ini mencakup berbagai produk termasuk peralatan
-        listrik, produk semen dan baja, air minum kemasan,
-        elektronik seperti ponsel, lampu LED, power bank, perhiasan logam mulia
-        (melalui hallmarking) dan banyak lagi. Produsen dan
-        importir produk wajib ini tidak dapat secara legal menjual atau mendistribusikan
-        barang di India tanpa pengakuan BIS.
+        listrik, produk semen dan baja, air minum kemasan, elektronik seperti
+        ponsel, lampu LED, power bank, perhiasan logam mulia (melalui
+        hallmarking) dan banyak lagi. Produsen dan importir produk wajib ini
+        tidak dapat secara legal menjual atau mendistribusikan barang di India
+        tanpa pengakuan BIS.
       </p>
 
       <h2 className="service-left-content-heading-three">
@@ -753,10 +752,10 @@ const OverviewSection = () => {
 
       <p className="service-left-content-paragraph">
         Bureau of Indian Standards (BIS) dibentuk pada tahun 1986 mengambil alih
-        Indian Standards Institution (ISI) yang dibentuk pada tahun 1947. BIS sekarang
-        dianggap sebagai penjaga kualitas standar di India dan telah
-        menyelaraskan praktik mereka ke tingkat internasional dan membuat perubahan yang diperlukan
-        untuk kondisi India.
+        Indian Standards Institution (ISI) yang dibentuk pada tahun 1947. BIS
+        sekarang dianggap sebagai penjaga kualitas standar di India dan telah
+        menyelaraskan praktik mereka ke tingkat internasional dan membuat
+        perubahan yang diperlukan untuk kondisi India.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -773,19 +772,18 @@ const OverviewSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Saat ini, BIS menjamin keamanan, keandalan, dan standardisasi
-        ribuan alat dan mesin untuk pengguna India di berbagai
-        industri.
+        Saat ini, BIS menjamin keamanan, keandalan, dan standardisasi ribuan
+        alat dan mesin untuk pengguna India di berbagai industri.
       </p>
 
       <h2 className="service-left-content-heading-three">
         Mengapa Sertifikasi BIS wajib di India?
       </h2>
       <p className="service-left-content-paragraph">
-        Pasar India sangat besar, terus berubah, dan sensitif terhadap pergeseran
-        harga. Namun, keterbukaan ini juga membuat pasar terpapar pada barang murah
-        dan tidak aman. Dalam konteks ini, sertifikasi BIS berfungsi sebagai
-        penghalang pelindung.
+        Pasar India sangat besar, terus berubah, dan sensitif terhadap
+        pergeseran harga. Namun, keterbukaan ini juga membuat pasar terpapar
+        pada barang murah dan tidak aman. Dalam konteks ini, sertifikasi BIS
+        berfungsi sebagai penghalang pelindung.
       </p>
       <PointsListWithoutHeading
         points={[
@@ -797,11 +795,12 @@ const OverviewSection = () => {
         ]}
       />
       <p className="service-left-content-paragraph">
-        Sertifikasi BIS untuk air minum kemasan adalah contoh di mana
-        kurangnya sertifikasi dapat menimbulkan masalah kesehatan. Standar yang sama kurangnya
-        sertifikasi produk untuk pemanas, pemanggang roti, dan
-        peralatan listrik lainnya dapat menyebabkan kebakaran. Oleh karena itu, dengan memiliki sertifikasi
-        BIS, pemerintah memastikan tantangan-tantangan ini ditangani.
+        Sertifikasi BIS untuk air minum kemasan adalah contoh di mana kurangnya
+        sertifikasi dapat menimbulkan masalah kesehatan. Standar yang sama
+        kurangnya sertifikasi produk untuk pemanas, pemanggang roti, dan
+        peralatan listrik lainnya dapat menyebabkan kebakaran. Oleh karena itu,
+        dengan memiliki sertifikasi BIS, pemerintah memastikan
+        tantangan-tantangan ini ditangani.
       </p>
     </div>
   );
@@ -852,8 +851,8 @@ const DocumentsSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Paket dokumentasi yang kuat memastikan pemrosesan yang lancar. Persyaratan
-        utama meliputi:
+        Paket dokumentasi yang kuat memastikan pemrosesan yang lancar.
+        Persyaratan utama meliputi:
       </p>
 
       <PointsListWithoutHeading
@@ -913,7 +912,8 @@ const CostSection = () => {
                 Biaya Aplikasi
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Biaya satu kali, tidak dapat dikembalikan tergantung pada jenis produk
+                Biaya satu kali, tidak dapat dikembalikan tergantung pada jenis
+                produk
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -921,7 +921,8 @@ const CostSection = () => {
                 Biaya Pengujian
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Berdasarkan kompleksitas; dibayar ke laboratorium yang diakui BIS
+                Berdasarkan kompleksitas; dibayar ke laboratorium yang diakui
+                BIS
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -937,8 +938,8 @@ const CostSection = () => {
                 Biaya Inspeksi/Audit Pabrik
               </TableCell>
               <TableCell className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-geist text-[#42434d]">
-                Dibebankan jika petugas BIS mengunjungi pabrik (perjalanan domestik atau
-                internasional tambahan)
+                Dibebankan jika petugas BIS mengunjungi pabrik (perjalanan
+                domestik atau internasional tambahan)
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50">
@@ -983,8 +984,8 @@ const AIRSection = () => {
       />
 
       <p className="service-left-content-paragraph">
-        Tanpa adanya AIR, memperoleh sertifikasi BIS untuk perusahaan
-        asing adalah tidak mungkin.
+        Tanpa adanya AIR, memperoleh sertifikasi BIS untuk perusahaan asing
+        adalah tidak mungkin.
       </p>
     </div>
   );
@@ -1002,21 +1003,23 @@ const ConclusionSection = () => {
       <h2 className="service-left-content-heading-two">Kesimpulan</h2>
 
       <p className="service-left-content-paragraph">
-        Memiliki sertifikasi BIS adalah suatu kebutuhan untuk melakukan bisnis di India.
-        Ini tidak lagi merupakan sertifikasi opsional dalam bisnis. Ini sangat penting untuk
-        kesuksesan bisnis dan membangun kepercayaan. BIS sangat penting untuk keamanan dan
-        kesuksesan di India. Bagi produsen dan importir, ini menawarkan lingkungan
-        pengaturan bisnis yang mudah dan aman. Masalah hukum dan denda tidak lagi menjadi
-        perhatian. Dengan tanda BIS, kepercayaan konsumen dijamin.
+        Memiliki sertifikasi BIS adalah suatu kebutuhan untuk melakukan bisnis
+        di India. Ini tidak lagi merupakan sertifikasi opsional dalam bisnis.
+        Ini sangat penting untuk kesuksesan bisnis dan membangun kepercayaan.
+        BIS sangat penting untuk keamanan dan kesuksesan di India. Bagi produsen
+        dan importir, ini menawarkan lingkungan pengaturan bisnis yang mudah dan
+        aman. Masalah hukum dan denda tidak lagi menjadi perhatian. Dengan tanda
+        BIS, kepercayaan konsumen dijamin.
       </p>
 
       <p className="service-left-content-paragraph">
-        India adalah salah satu ekonomi yang tumbuh paling besar di dunia dan mendapatkan
-        akses untuk menjual di sana dapat membantu eksportir berkembang. Tidak peduli jika Anda adalah
-        produsen di India atau di luar negeri, lisensi BIS diperlukan untuk
-        memproduksi atau menjual produk di pasar India. Ini diperlukan, dan ini
-        membuka prospek bisnis dengan populasi India yang terus bertumbuh. Ini adalah
-        investasi dalam keamanan, kepercayaan konsumen, reputasi merek, kredibilitas, dan
+        India adalah salah satu ekonomi yang tumbuh paling besar di dunia dan
+        mendapatkan akses untuk menjual di sana dapat membantu eksportir
+        berkembang. Tidak peduli jika Anda adalah produsen di India atau di luar
+        negeri, lisensi BIS diperlukan untuk memproduksi atau menjual produk di
+        pasar India. Ini diperlukan, dan ini membuka prospek bisnis dengan
+        populasi India yang terus bertumbuh. Ini adalah investasi dalam
+        keamanan, kepercayaan konsumen, reputasi merek, kredibilitas, dan
         pertumbuhan jangka panjang.
       </p>
     </div>
@@ -1037,9 +1040,9 @@ const SchemesSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS memiliki berbagai skema sertifikasi yang dirancang untuk berbagai industri
-        dan jenis produk. Masing-masing dirancang untuk memenuhi kebutuhan khusus
-        industri dan produk tersebut.
+        BIS memiliki berbagai skema sertifikasi yang dirancang untuk berbagai
+        industri dan jenis produk. Masing-masing dirancang untuk memenuhi
+        kebutuhan khusus industri dan produk tersebut.
       </p>
 
       <PointsListWithoutHeading
@@ -1060,8 +1063,7 @@ const SchemesSection = () => {
             "a-guide-to-bis-certification-indian-bis",
           "Skema X di bawah BIS India":
             "indian-bis-certification-under-scheme-x",
-          "CRS – Skema Registrasi Wajib":
-            "what-is-crs-bis-or-crs-registration",
+          "CRS – Skema Registrasi Wajib": "what-is-crs-bis-or-crs-registration",
         }}
       />
 
@@ -1071,37 +1073,38 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Bagi produsen India, mendapatkan lisensi BIS adalah prasyarat untuk
-        memastikan penjualan legal produk mereka di dalam negeri. 
-        Sertifikasi ini diterbitkan oleh Bureau of Indian Standards (BIS) untuk
-        mensertifikasi pemenuhan Standar India terkait tolok ukur kualitas, keamanan
-        dan kinerja untuk produk. Ini mencakup audit
-        pabrik, pengujian produk dan pemeriksaan kepatuhan dengan parameter BIS.
-        Setelah produk lulus, produsen diizinkan untuk menempatkan tanda ISI
-        pada produk. Tanda ini adalah merek dagang untuk produsen dan
-        membantu pelanggan mengidentifikasi produk yang asli dan bersertifikat ISI.
+        memastikan penjualan legal produk mereka di dalam negeri. Sertifikasi
+        ini diterbitkan oleh Bureau of Indian Standards (BIS) untuk
+        mensertifikasi pemenuhan Standar India terkait tolok ukur kualitas,
+        keamanan dan kinerja untuk produk. Ini mencakup audit pabrik, pengujian
+        produk dan pemeriksaan kepatuhan dengan parameter BIS. Setelah produk
+        lulus, produsen diizinkan untuk menempatkan tanda ISI pada produk. Tanda
+        ini adalah merek dagang untuk produsen dan membantu pelanggan
+        mengidentifikasi produk yang asli dan bersertifikat ISI.
       </p>
 
       <p className="service-left-content-paragraph">
         Terlepas dari apakah itu untuk elektronik, baja, semen, plastik, atau
         bahan konstruksi, memperoleh sertifikat BIS sangat penting untuk
-        mendapatkan akses pasar. Tidak seperti mendapatkan kepercayaan konsumen, sertifikat BIS
-        meningkatkan reputasi produsen India, memungkinkan
-        mereka untuk berpartisipasi dalam kontrak pemerintah, dan membuka banyak
+        mendapatkan akses pasar. Tidak seperti mendapatkan kepercayaan konsumen,
+        sertifikat BIS meningkatkan reputasi produsen India, memungkinkan mereka
+        untuk berpartisipasi dalam kontrak pemerintah, dan membuka banyak
         peluang bisnis lainnya. Yang paling penting, tidak adanya sertifikasi
-        BIS dapat memiliki konsekuensi yang merusak, mulai dari denda hukum
-        dan penarikan produk hingga larangan penjualan di India. Oleh karena itu, kepatuhan
-        BIS lebih dari sekadar persyaratan hukum, ini adalah strategi yang ditargetkan
-        untuk memperluas dan mempertahankan kepercayaan konsumen.
+        BIS dapat memiliki konsekuensi yang merusak, mulai dari denda hukum dan
+        penarikan produk hingga larangan penjualan di India. Oleh karena itu,
+        kepatuhan BIS lebih dari sekadar persyaratan hukum, ini adalah strategi
+        yang ditargetkan untuk memperluas dan mempertahankan kepercayaan
+        konsumen.
       </p>
 
       <p className="service-left-content-paragraph">
-        Bagi produsen India, skema tanda ISI adalah tanda paling bergengsi.
-        Di bawah skema ini, produsen India diwajibkan untuk menguji
-        produk mereka di fasilitas pengujian yang diakui BIS. Situs
-        manufaktur tunduk pada inspeksi dan pengujian. Produk yang patuh diberikan
-        persetujuan untuk menggunakan tanda ISI. Merupakan pelanggaran untuk menyuplai
-        produk seperti semen, tabung LPG, kabel listrik, air minum
-        kemasan dan lainnya, tanpa tanda ISI.
+        Bagi produsen India, skema tanda ISI adalah tanda paling bergengsi. Di
+        bawah skema ini, produsen India diwajibkan untuk menguji produk mereka
+        di fasilitas pengujian yang diakui BIS. Situs manufaktur tunduk pada
+        inspeksi dan pengujian. Produk yang patuh diberikan persetujuan untuk
+        menggunakan tanda ISI. Merupakan pelanggaran untuk menyuplai produk
+        seperti semen, tabung LPG, kabel listrik, air minum kemasan dan lainnya,
+        tanpa tanda ISI.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1109,30 +1112,29 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Skema Sertifikasi Produsen Asing (FMCS) adalah skema
-        yang dikembangkan oleh Bureau of Indian Standards untuk perusahaan asing
-        yang ingin memasuki Pasar India. Skema ini menjamin keamanan,
-        kualitas, dan jaminan kinerja produk yang diproduksi di luar negeri
-        yang mematuhi standar India yang diperlukan. Sesuai dengan FMCS, perusahaan
-        asing yang ingin menjual produk di India harus terlebih dahulu memperoleh sertifikat
+        Skema Sertifikasi Produsen Asing (FMCS) adalah skema yang dikembangkan
+        oleh Bureau of Indian Standards untuk perusahaan asing yang ingin
+        memasuki Pasar India. Skema ini menjamin keamanan, kualitas, dan jaminan
+        kinerja produk yang diproduksi di luar negeri yang mematuhi standar
+        India yang diperlukan. Sesuai dengan FMCS, perusahaan asing yang ingin
+        menjual produk di India harus terlebih dahulu memperoleh sertifikat
         Bureau of Indian Standards atau lisensi. Seperti produsen India,
-        produsen asing juga diwajibkan untuk memperoleh lisensi BIS untuk menggunakan
-        tanda ISI pada produk mereka. Tanda ISI yang diinginkan diberikan setelah
-        evaluasi ekstensif yang mencakup pengujian pabrik dan sampel produk yang ketat
-        terhadap Standar India.
+        produsen asing juga diwajibkan untuk memperoleh lisensi BIS untuk
+        menggunakan tanda ISI pada produk mereka. Tanda ISI yang diinginkan
+        diberikan setelah evaluasi ekstensif yang mencakup pengujian pabrik dan
+        sampel produk yang ketat terhadap Standar India.
       </p>
 
       <p className="service-left-content-paragraph">
-        Produsen asing diwajibkan untuk menunjuk Perwakilan India
-        yang Berwenang (AIR), yang bertanggung jawab untuk komunikasi dan
-        koordinasi, sebagai titik kontak pertama dengan Bureau of Indian
-        Standards (BIS) untuk skema ini. Ini mencakup pengajuan
-        aplikasi, evaluasi kepatuhan mendalam, dan asumsi semua
-        kewajiban yang diperlukan untuk mencapai kepatuhan dalam tenggat waktu. Sebagai
-        hasil dari mengikuti pedoman FMCS, perusahaan asing dapat
-        memasuki pasar India, serta memperoleh niat baik dengan pelanggan.
-        Produk apa pun dengan tanda ISI menunjukkan tingkat kualitas, keamanan, dan
-        jaminan keandalan yang tinggi di India.
+        Produsen asing diwajibkan untuk menunjuk Perwakilan India yang Berwenang
+        (AIR), yang bertanggung jawab untuk komunikasi dan koordinasi, sebagai
+        titik kontak pertama dengan Bureau of Indian Standards (BIS) untuk skema
+        ini. Ini mencakup pengajuan aplikasi, evaluasi kepatuhan mendalam, dan
+        asumsi semua kewajiban yang diperlukan untuk mencapai kepatuhan dalam
+        tenggat waktu. Sebagai hasil dari mengikuti pedoman FMCS, perusahaan
+        asing dapat memasuki pasar India, serta memperoleh niat baik dengan
+        pelanggan. Produk apa pun dengan tanda ISI menunjukkan tingkat kualitas,
+        keamanan, dan jaminan keandalan yang tinggi di India.
       </p>
 
       <p className="service-left-content-paragraph">
@@ -1148,33 +1150,34 @@ const SchemesSection = () => {
         Skema X, atau Peraturan Teknis Omnibus, adalah Skema sertifikasi BIS
         lain yang dirancang oleh Bureau of Indian Standards untuk membantu
         menyederhanakan prosedur kepatuhan industri di bidang mekanis dan
-        listrik. Tidak seperti skema sertifikasi lainnya, Skema X
-        berfokus pada mengurangi dokumentasi, penilaian, dan persetujuan sambil
-        memastikan bahwa produk mematuhi Standar India. Produk dengan
-        tanda standar memiliki kualitas dan keamanan yang luar biasa dan dapat dijual
-        setelah menjalani pengujian tipe, inspeksi pabrik, dan
-        sertifikasi sederhana dari persyaratan wajib.
+        listrik. Tidak seperti skema sertifikasi lainnya, Skema X berfokus pada
+        mengurangi dokumentasi, penilaian, dan persetujuan sambil memastikan
+        bahwa produk mematuhi Standar India. Produk dengan tanda standar
+        memiliki kualitas dan keamanan yang luar biasa dan dapat dijual setelah
+        menjalani pengujian tipe, inspeksi pabrik, dan sertifikasi sederhana
+        dari persyaratan wajib.
       </p>
 
       <p className="service-left-content-paragraph">
         Skema X mencakup pedoman keamanan mesin berat dan peralatan listrik
-        untuk produk seperti pompa, crane, transformator, mesin
-        perkakas dan produk rekayasa berat lainnya. Ini adalah industri yang paling relevan
+        untuk produk seperti pompa, crane, transformator, mesin perkakas dan
+        produk rekayasa berat lainnya. Ini adalah industri yang paling relevan
         dan semua di mana keandalan dan keamanan adalah kebutuhan. Skema X
-        nyaman karena memperpendek waktu dan biaya sertifikasi BIS yang kompleks.
-        Ini bertujuan untuk merampingkan proses kepatuhan untuk
-        memfasilitasi izin lebih cepat untuk pemasaran dan reputasi yang ditingkatkan
-        tanpa mengorbankan standar kualitas dan keamanan. Reputasi yang abadi dan
-        tradisional dari Bureau of Indian Standards memungkinkan perdagangan internasional
-        yang lebih mudah, sangat diperlukan bagi perusahaan untuk memenuhi persyaratan kepatuhan
-        dan meningkatkan daya saing.
+        nyaman karena memperpendek waktu dan biaya sertifikasi BIS yang
+        kompleks. Ini bertujuan untuk merampingkan proses kepatuhan untuk
+        memfasilitasi izin lebih cepat untuk pemasaran dan reputasi yang
+        ditingkatkan tanpa mengorbankan standar kualitas dan keamanan. Reputasi
+        yang abadi dan tradisional dari Bureau of Indian Standards memungkinkan
+        perdagangan internasional yang lebih mudah, sangat diperlukan bagi
+        perusahaan untuk memenuhi persyaratan kepatuhan dan meningkatkan daya
+        saing.
       </p>
 
       <p className="service-left-content-paragraph">
-        Skema X BIS wajib untuk mengakses industri mesin berat India.
-        Skema baru ini penting untuk peningkatan persaingan pasar, inovasi
-        dan kepatuhan terhadap peraturan yang disederhanakan melalui
-        struktur yang disederhanakan namun kuat ini.
+        Skema X BIS wajib untuk mengakses industri mesin berat India. Skema baru
+        ini penting untuk peningkatan persaingan pasar, inovasi dan kepatuhan
+        terhadap peraturan yang disederhanakan melalui struktur yang
+        disederhanakan namun kuat ini.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1182,64 +1185,65 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Bureau of Indian Standards (BIS) telah mengembangkan program sertifikasi BIS
-        yang disebut Skema Registrasi Wajib (CRS) yang bertujuan untuk
+        Bureau of Indian Standards (BIS) telah mengembangkan program sertifikasi
+        BIS yang disebut Skema Registrasi Wajib (CRS) yang bertujuan untuk
         mengatur produk IT dan elektronik di India. Ini berfokus pada menilai
         keamanan dan kualitas produk berisiko tinggi seperti lampu LED, ponsel,
-        laptop, power bank, dan elektronik konsumen lainnya terhadap
-        Standar India. CRS, berbeda dengan skema ISI, tidak menerbitkan
-        tanda ISI, tetapi produk yang disertifikasi, sesuai dengan skema, membawa
-        tanda CRS dengan nomor registrasi unik. Semua produk elektronik dan IT
-        perlu diuji di laboratorium yang diakui BIS dan
-        terdaftar secara formal dengan BIS CRS, digunakan untuk memastikan kepatuhan sebelum mereka
-        dapat dijual atau diimpor ke India.
+        laptop, power bank, dan elektronik konsumen lainnya terhadap Standar
+        India. CRS, berbeda dengan skema ISI, tidak menerbitkan tanda ISI,
+        tetapi produk yang disertifikasi, sesuai dengan skema, membawa tanda CRS
+        dengan nomor registrasi unik. Semua produk elektronik dan IT perlu diuji
+        di laboratorium yang diakui BIS dan terdaftar secara formal dengan BIS
+        CRS, digunakan untuk memastikan kepatuhan sebelum mereka dapat dijual
+        atau diimpor ke India.
       </p>
 
       <p className="service-left-content-paragraph">
-        Skema ini sangat penting untuk melindungi konsumen India dari produk elektronik yang tidak aman,
-        di bawah standar, atau palsu, terutama dalam kasus
-        pasar digital yang berkembang pesat. Baik produsen India maupun asing
-        perlu memperoleh sertifikasi CRS. Perusahaan asing harus menunjuk
+        Skema ini sangat penting untuk melindungi konsumen India dari produk
+        elektronik yang tidak aman, di bawah standar, atau palsu, terutama dalam
+        kasus pasar digital yang berkembang pesat. Baik produsen India maupun
+        asing perlu memperoleh sertifikasi CRS. Perusahaan asing harus menunjuk
         Perwakilan India yang Berwenang AIR untuk memastikan kepatuhan. BIS
         terus memperbarui daftar produk yang tercakup di bawah CRS untuk
-        memasukkan produk dan teknologi baru serta masalah keamanan yang muncul. Bagi
-        produsen, memperoleh registrasi BIS di bawah CRS adalah keuntungan
+        memasukkan produk dan teknologi baru serta masalah keamanan yang muncul.
+        Bagi produsen, memperoleh registrasi BIS di bawah CRS adalah keuntungan
         tambahan karena membantu dalam kepatuhan regulasi dan juga meningkatkan
-        kepercayaan pelanggan, reputasi perusahaan, dan akses pasar di
-        industri elektronik di India.
+        kepercayaan pelanggan, reputasi perusahaan, dan akses pasar di industri
+        elektronik di India.
       </p>
 
       <h3 className="service-left-content-heading-three">Skema Hallmarking</h3>
 
       <p className="service-left-content-paragraph">
         Di India, hallmarking perhiasan emas dan perak adalah wajib di bawah
-        Skema Hallmarking dan diatur oleh Bureau of Indian Standards
-        (BIS) yang menjamin kemurnian dan keaslian perhiasan.
-        Artikel Logam Mulia diuji di Pusat Assaying dan
-        Hallmarking (AHC) yang disetujui BIS dan kemudian dicap dengan tanda hallmark. Proses
-        ini hanya selesai jika artikel memenuhi Standar India
-        yang ditetapkan di awal. Perhiasan harus terlebih dahulu memperoleh lisensi BIS yang
-        memungkinkan mereka untuk menjual perhiasan berhallmark. Ini adalah satu-satunya cara untuk melakukannya
-        secara legal. Perhiasan wajib menjalani dan menyelesaikan pengujian produk,
-        audit BIS, dan pemantauan kepatuhan berkelanjutan untuk menjual perhiasan
-        berhallmark. Proses ini, pada akhirnya, melindungi konsumen dan memastikan
-        kemurnian, berat dan kualitas serta membatasi malpraktek dan penipuan
-        di pasar perhiasan.
+        Skema Hallmarking dan diatur oleh Bureau of Indian Standards (BIS) yang
+        menjamin kemurnian dan keaslian perhiasan. Artikel Logam Mulia diuji di
+        Pusat Assaying dan Hallmarking (AHC) yang disetujui BIS dan kemudian
+        dicap dengan tanda hallmark. Proses ini hanya selesai jika artikel
+        memenuhi Standar India yang ditetapkan di awal. Perhiasan harus terlebih
+        dahulu memperoleh lisensi BIS yang memungkinkan mereka untuk menjual
+        perhiasan berhallmark. Ini adalah satu-satunya cara untuk melakukannya
+        secara legal. Perhiasan wajib menjalani dan menyelesaikan pengujian
+        produk, audit BIS, dan pemantauan kepatuhan berkelanjutan untuk menjual
+        perhiasan berhallmark. Proses ini, pada akhirnya, melindungi konsumen
+        dan memastikan kemurnian, berat dan kualitas serta membatasi malpraktek
+        dan penipuan di pasar perhiasan.
       </p>
 
       <p className="service-left-content-paragraph">
         Bagi konsumen India, emas dan perak bukan hanya perhiasan tetapi juga
-        investasi besar, yang membuat kepercayaan dan transparansi sangat penting. 
-        Hallmarking perhiasan adalah tanda jaminan bagi warga biasa di
-        negara bahwa setiap potongan perhiasan yang dijual telah melalui pengujian
-        ekstensif terhadap berbagai tolok ukur nasional dan praktik perdagangan yang adil.
-        Perhiasan dapat memamerkan kredibilitas dan reputasi pasar mereka dengan
-        hallmarking perhiasan. Ketidakmampuan untuk mematuhi aturan yang ditetapkan membawa
-        hukuman yang dapat mencakup penangguhan lisensi. Untuk hallmarking
-        di bawah BIS, ini berfungsi sebagai pemenuhan kewajiban berbasis prinsip dan legal.
-        Ini tidak hanya meningkatkan kepuasan konsumen tetapi juga
-        meningkatkan pasar perhiasan India secara keseluruhan. Ini juga berlaku
-        untuk pengecer yang lebih kecil maupun produsen skala besar.
+        investasi besar, yang membuat kepercayaan dan transparansi sangat
+        penting. Hallmarking perhiasan adalah tanda jaminan bagi warga biasa di
+        negara bahwa setiap potongan perhiasan yang dijual telah melalui
+        pengujian ekstensif terhadap berbagai tolok ukur nasional dan praktik
+        perdagangan yang adil. Perhiasan dapat memamerkan kredibilitas dan
+        reputasi pasar mereka dengan hallmarking perhiasan. Ketidakmampuan untuk
+        mematuhi aturan yang ditetapkan membawa hukuman yang dapat mencakup
+        penangguhan lisensi. Untuk hallmarking di bawah BIS, ini berfungsi
+        sebagai pemenuhan kewajiban berbasis prinsip dan legal. Ini tidak hanya
+        meningkatkan kepuasan konsumen tetapi juga meningkatkan pasar perhiasan
+        India secara keseluruhan. Ini juga berlaku untuk pengecer yang lebih
+        kecil maupun produsen skala besar.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1247,30 +1251,32 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Eco Mark adalah skema pengakuan yang berpusat pada inovasi yang dibuat oleh
-        Bureau of Indian Standards (BIS) yang bertujuan untuk promosi barang
-        ramah lingkungan. Tidak seperti sertifikasi tradisional yang berkonsentrasi
-        terutama pada parameter keamanan dan kualitas, Eco Mark diberikan
-        kepada barang yang sesuai dengan Standar India dan yang menunjukkan setidaknya beberapa
-        tingkat penurunan dampak lingkungan yang merugikan selama satu atau lebih
-        dari berbagai tahap siklus hidup barang. Sertifikasi Eco Mark
-        diberikan hanya setelah pengujian yang cukup dan pembuktian
-        kriteria - kepatuhan yang mencakup tingkat emisi, non-toksisitas,
-        tingkat biodegradasi, kapasitas untuk didaur ulang dan interaksi keseluruhan
-        dengan sistem. Eco Mark, sama seperti tanda ISI, adalah lambang
-        jaminan dari pemerintah yang telah diberikan status
-        tanda sertifikasi, meskipun dengan tujuan keberlanjutan lingkungan yang lebih jelas.
+        Eco Mark adalah skema pengakuan yang berpusat pada inovasi yang dibuat
+        oleh Bureau of Indian Standards (BIS) yang bertujuan untuk promosi
+        barang ramah lingkungan. Tidak seperti sertifikasi tradisional yang
+        berkonsentrasi terutama pada parameter keamanan dan kualitas, Eco Mark
+        diberikan kepada barang yang sesuai dengan Standar India dan yang
+        menunjukkan setidaknya beberapa tingkat penurunan dampak lingkungan yang
+        merugikan selama satu atau lebih dari berbagai tahap siklus hidup
+        barang. Sertifikasi Eco Mark diberikan hanya setelah pengujian yang
+        cukup dan pembuktian kriteria - kepatuhan yang mencakup tingkat emisi,
+        non-toksisitas, tingkat biodegradasi, kapasitas untuk didaur ulang dan
+        interaksi keseluruhan dengan sistem. Eco Mark, sama seperti tanda ISI,
+        adalah lambang jaminan dari pemerintah yang telah diberikan status tanda
+        sertifikasi, meskipun dengan tujuan keberlanjutan lingkungan yang lebih
+        jelas.
       </p>
 
       <p className="service-left-content-paragraph">
-        Lisensi BIS dengan Eco Mark mensertifikasi bahwa suatu perusahaan terlibat dalam
-        manufaktur yang bertanggung jawab dan peduli terhadap lingkungan. Ini memastikan
-        kepatuhan terhadap hukum dan menciptakan keuntungan kompetitif dengan
-        konsumen yang protektif dan bisnis yang berorientasi keberlanjutan. Eco Mark
-        membantu industri untuk mempercayai dan mengadopsi praktik ramah lingkungan dan untuk
-        konsumen untuk mempercayai bahwa produk yang mereka beli aman dan
-        bertanggung jawab terhadap lingkungan. Eco Mark mendukung visi India untuk
-        perlindungan kualitas yang ditingkatkan dengan perlindungan lingkungan di bawah BIS.
+        Lisensi BIS dengan Eco Mark mensertifikasi bahwa suatu perusahaan
+        terlibat dalam manufaktur yang bertanggung jawab dan peduli terhadap
+        lingkungan. Ini memastikan kepatuhan terhadap hukum dan menciptakan
+        keuntungan kompetitif dengan konsumen yang protektif dan bisnis yang
+        berorientasi keberlanjutan. Eco Mark membantu industri untuk mempercayai
+        dan mengadopsi praktik ramah lingkungan dan untuk konsumen untuk
+        mempercayai bahwa produk yang mereka beli aman dan bertanggung jawab
+        terhadap lingkungan. Eco Mark mendukung visi India untuk perlindungan
+        kualitas yang ditingkatkan dengan perlindungan lingkungan di bawah BIS.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1278,30 +1284,31 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Skema Sertifikasi Sistem Manajemen (MSCS) yang diinisiasi oleh
-        Bureau of Indian Standards (BIS) adalah prosedur bertahap yang mengevaluasi
-        dan mengakui perusahaan terkait untuk implementasi sistem manajemen yang
-        diterima dan diakui secara internasional. Kerangka kerja MSCS terdiri dari
-        Standar ISO seperti ISO 9001 Manajemen Kualitas, ISO 14001 Manajemen Lingkungan,
-        ISO 45001 Sistem Manajemen Kesehatan dan Keselamatan Kerja
-        dan lainnya. MSCS mensertifikasi perusahaan untuk operasi legal,
-        konsistensi, dan perbaikan berkelanjutan dari operasi. Perusahaan yang disertifikasi
-        menjalani berbagai penilaian dan audit yang membantu mereka membangun
-        kepercayaan di antara pelanggan, regulator, dan pemangku kepentingan yang
-        memperkuat jaminan keamanan, kualitas, dan keberlanjutan.
+        Skema Sertifikasi Sistem Manajemen (MSCS) yang diinisiasi oleh Bureau of
+        Indian Standards (BIS) adalah prosedur bertahap yang mengevaluasi dan
+        mengakui perusahaan terkait untuk implementasi sistem manajemen yang
+        diterima dan diakui secara internasional. Kerangka kerja MSCS terdiri
+        dari Standar ISO seperti ISO 9001 Manajemen Kualitas, ISO 14001
+        Manajemen Lingkungan, ISO 45001 Sistem Manajemen Kesehatan dan
+        Keselamatan Kerja dan lainnya. MSCS mensertifikasi perusahaan untuk
+        operasi legal, konsistensi, dan perbaikan berkelanjutan dari operasi.
+        Perusahaan yang disertifikasi menjalani berbagai penilaian dan audit
+        yang membantu mereka membangun kepercayaan di antara pelanggan,
+        regulator, dan pemangku kepentingan yang memperkuat jaminan keamanan,
+        kualitas, dan keberlanjutan.
       </p>
 
       <p className="service-left-content-paragraph">
         BIS adalah badan standar nasional India dan merupakan badan sertifikasi
-        untuk peningkatan reputasi dan kredibilitas organisasi
-        di dalam maupun di luar India. MSCS selain mendorong akuntabilitas
-        melalui pengawasan berkala dan resertifikasi juga membebaskan
-        bisnis untuk secara aktif mendukung program yang dipimpin publik seperti Make in India dan
-        Atmanirbhar Bharat. Selain kewajiban hukum, skema ini juga membantu dalam
-        menumbuhkan budaya integritas, efisiensi dan perdagangan yang adil. MSCS
-        mendorong perdagangan dan investasi oleh perusahaan yang disertifikasi dan BIS
-        memainkan peran penting dalam pengembangan ekosistem kualitas
-        negara.
+        untuk peningkatan reputasi dan kredibilitas organisasi di dalam maupun
+        di luar India. MSCS selain mendorong akuntabilitas melalui pengawasan
+        berkala dan resertifikasi juga membebaskan bisnis untuk secara aktif
+        mendukung program yang dipimpin publik seperti Make in India dan
+        Atmanirbhar Bharat. Selain kewajiban hukum, skema ini juga membantu
+        dalam menumbuhkan budaya integritas, efisiensi dan perdagangan yang
+        adil. MSCS mendorong perdagangan dan investasi oleh perusahaan yang
+        disertifikasi dan BIS memainkan peran penting dalam pengembangan
+        ekosistem kualitas negara.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1310,32 +1317,34 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         Di bawah Bureau of Indian Standards (BIS), Skema Pengakuan Laboratorium
-        (LRS) adalah bagian integral dari sistem yang menjamin keandalan
-        dan kompetensi keseluruhan laboratorium yang menguji dan mensertifikasi produk
-        untuk persetujuan BIS. Laboratorium semacam itu dinilai secara kritis pada berbagai
-        atribut yang mencakup pengetahuan teknis, kualitas tenaga kerja,
-        infrastruktur, dan kompetensi keseluruhan serta kepuasan laboratorium
-        dengan standar ISO/ IEC 17025. Laboratorium ini, setelah disetujui,
-        diizinkan untuk melakukan pengujian pada produk yang penilaian konformitasnya
-        dilakukan sebagai bagian dari berbagai program sertifikasi BIS seperti
-        Skema Tanda ISI dan Skema Registrasi Wajib (CRS). Sudah
-        jelas bahwa bagi produsen, khususnya bagi importir dan eksportir,
-        laporan yang diperoleh dari laboratorium yang disetujui LRS adalah persyaratan kritis
-        untuk mencapai sertifikat BIS yang merupakan persyaratan hukum untuk produk tertentu.
+        (LRS) adalah bagian integral dari sistem yang menjamin keandalan dan
+        kompetensi keseluruhan laboratorium yang menguji dan mensertifikasi
+        produk untuk persetujuan BIS. Laboratorium semacam itu dinilai secara
+        kritis pada berbagai atribut yang mencakup pengetahuan teknis, kualitas
+        tenaga kerja, infrastruktur, dan kompetensi keseluruhan serta kepuasan
+        laboratorium dengan standar ISO/ IEC 17025. Laboratorium ini, setelah
+        disetujui, diizinkan untuk melakukan pengujian pada produk yang
+        penilaian konformitasnya dilakukan sebagai bagian dari berbagai program
+        sertifikasi BIS seperti Skema Tanda ISI dan Skema Registrasi Wajib
+        (CRS). Sudah jelas bahwa bagi produsen, khususnya bagi importir dan
+        eksportir, laporan yang diperoleh dari laboratorium yang disetujui LRS
+        adalah persyaratan kritis untuk mencapai sertifikat BIS yang merupakan
+        persyaratan hukum untuk produk tertentu.
       </p>
 
       <p className="service-left-content-paragraph">
-        LRS memberdayakan sistem jaminan India dengan mempertahankan kesetaraan dalam
-        hasil pengujian dan memastikan bahwa semua hasil konsisten dan
-        di-benchmark secara global, sambil mengakreditasi hanya laboratorium yang andal dan solid.
-        Untuk menjaga integritas dan transparansi, BIS melakukan audit
-        rutin, uji kompetensi, dan pengawasan laboratorium skematik yang diakui.
-        Pengakuan sertifikasi ini memungkinkan BIS untuk meningkatkan kepercayaan
-        dari konsumen sambil membuat proses sertifikasi lebih efisien bagi
-        industri, karena hanya produk yang aman, patuh, dan berkualitas tinggi yang akan
-        ditawarkan di pasar India. Bagi organisasi yang bertujuan untuk menerima sertifikasi
-        BIS, kolaborasi dengan laboratorium yang disetujui LRS adalah yang paling
-        penting untuk mencapai kepatuhan dan akses pasar.
+        LRS memberdayakan sistem jaminan India dengan mempertahankan kesetaraan
+        dalam hasil pengujian dan memastikan bahwa semua hasil konsisten dan
+        di-benchmark secara global, sambil mengakreditasi hanya laboratorium
+        yang andal dan solid. Untuk menjaga integritas dan transparansi, BIS
+        melakukan audit rutin, uji kompetensi, dan pengawasan laboratorium
+        skematik yang diakui. Pengakuan sertifikasi ini memungkinkan BIS untuk
+        meningkatkan kepercayaan dari konsumen sambil membuat proses sertifikasi
+        lebih efisien bagi industri, karena hanya produk yang aman, patuh, dan
+        berkualitas tinggi yang akan ditawarkan di pasar India. Bagi organisasi
+        yang bertujuan untuk menerima sertifikasi BIS, kolaborasi dengan
+        laboratorium yang disetujui LRS adalah yang paling penting untuk
+        mencapai kepatuhan dan akses pasar.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1343,8 +1352,7 @@ const SchemesSection = () => {
       </h3>
 
       <p className="service-left-content-paragraph">
-        Sertifikasi BIS berlaku untuk berbagai macam produk. Contohnya
-        termasuk:
+        Sertifikasi BIS berlaku untuk berbagai macam produk. Contohnya termasuk:
       </p>
 
       <PointsListWithoutHeading
@@ -1432,7 +1440,8 @@ const BISCertificationFaq = () => {
         "Lisensi BIS biasanya berlaku selama satu hingga dua tahun dan harus diperpanjang sebelum berakhirnya untuk melanjutkan penggunaan tanda ISI atau mempertahankan status registrasi BIS.",
     },
     {
-      question: "Apa saja langkah-langkah untuk mendapatkan sertifikasi BIS di India?",
+      question:
+        "Apa saja langkah-langkah untuk mendapatkan sertifikasi BIS di India?",
       answer:
         "Proses sertifikasi BIS mencakup mengidentifikasi standar India yang berlaku, mengajukan aplikasi, pengujian produk, inspeksi pabrik, dan penerbitan sertifikat BIS setelah persetujuan.",
     },
@@ -1462,18 +1471,19 @@ const BISCertificationFaq = () => {
         "Biaya sertifikasi BIS tergantung pada jenis produk, persyaratan pengujian, jenis skema (ISI, CRS, FMCS), dan apakah pemohon domestik atau asing. Biaya mencakup biaya aplikasi, biaya pengujian, dan biaya inspeksi.",
     },
     {
-      question: "Apakah tanda ISI wajib untuk semua produk yang bersertifikat BIS?",
+      question:
+        "Apakah tanda ISI wajib untuk semua produk yang bersertifikat BIS?",
       answer:
         "Tidak, hanya produk di bawah skema ISI yang diwajibkan untuk membawa tanda ISI. Produk di bawah skema CRS atau Hallmarking mengikuti protokol pelabelan yang berbeda sesuai dengan norma registrasi BIS.",
     },
     {
-      question: "Bisakah saya mendapatkan sertifikasi BIS untuk produk ramah lingkungan?",
+      question:
+        "Bisakah saya mendapatkan sertifikasi BIS untuk produk ramah lingkungan?",
       answer:
         "Ya, produk yang memenuhi standar lingkungan dapat memperoleh sertifikasi BIS di bawah skema Eco Mark, yang memastikan kepatuhan dengan standar India untuk keamanan lingkungan.",
     },
     {
-      question:
-        "Apa perbedaan antara sertifikasi BIS dan registrasi BIS?",
+      question: "Apa perbedaan antara sertifikasi BIS dan registrasi BIS?",
       answer:
         "Sertifikasi BIS umumnya mengacu pada persetujuan di bawah skema ISI, FMCS, atau Hallmarking, sedangkan registrasi BIS umumnya dikaitkan dengan skema CRS untuk produk elektronik.",
     },
@@ -1493,12 +1503,14 @@ const BISCertificationFaq = () => {
         "Tidak, lisensi BIS terpisah diperlukan untuk setiap jenis produk dan setiap lokasi manufaktur, bahkan jika produknya serupa.",
     },
     {
-      question: "Apa yang terjadi jika saya menjual produk tanpa sertifikasi BIS?",
+      question:
+        "Apa yang terjadi jika saya menjual produk tanpa sertifikasi BIS?",
       answer:
         "Menjual produk yang memerlukan sertifikasi BIS tanpa lisensi BIS yang valid adalah ilegal di India dan dapat menyebabkan denda, penarikan produk, atau larangan.",
     },
     {
-      question: "Berapa lama waktu yang dibutuhkan untuk mendapatkan sertifikasi BIS?",
+      question:
+        "Berapa lama waktu yang dibutuhkan untuk mendapatkan sertifikasi BIS?",
       answer:
         "Proses sertifikasi BIS umumnya memakan waktu 30 hingga 90 hari, tergantung pada jenis produk, persyaratan pengujian, dan apakah pemohon domestik atau asing.",
     },
@@ -1602,8 +1614,9 @@ const BISCertificationServices = () => {
           >
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
-                src={CDSCO}
-                alt="CDSCO"
+                src="/services-images/CDSCO.jpg"
+                alt="CDSCO Logo"
+                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
