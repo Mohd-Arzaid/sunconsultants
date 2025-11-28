@@ -43,7 +43,7 @@ const Q3CheckBISCertificationOnlineMetaData = () => {
     "get BIS certification, BIS certificate verification, verify ISI mark, bis certificate, Check BIS License Online";
 
   const canonicalUrl =
-    "https://bis-certifications.com/check-bis-certification-online/";
+    "https://bis-certifications.com/check-bis-certification-online";
 
   const author = "Sun Certifications India";
 

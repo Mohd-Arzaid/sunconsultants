@@ -43,7 +43,7 @@ const Q20BISCertificateForImportInIndiaMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
 
   const canonicalUrl =
-    "https://bis-certifications.com/bis-certificate-for-import-in-india/";
+    "https://bis-certifications.com/bis-certificate-for-import-in-india";
 
   const author = "Sun Certifications India";
 

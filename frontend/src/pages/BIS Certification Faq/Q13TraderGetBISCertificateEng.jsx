@@ -43,7 +43,7 @@ const Q13TraderGetBISCertificateMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
 
   const canonicalUrl =
-    "https://bis-certifications.com/trader-get-bis-certificate/";
+    "https://bis-certifications.com/trader-get-bis-certificate";
 
   const author = "Sun Certifications India";
 

@@ -41,7 +41,7 @@ const Q4DoesBIScertificationCostMetaData = () => {
 
   const keywords = "BIS Certification Cost, BIS license cost, Cost of BIS,";
 
-  const canonicalUrl = "https://bis-certifications.com/bis-certification-cost/";
+  const canonicalUrl = "https://bis-certifications.com/bis-certification-cost";
 
   const author = "Sun Certifications India";
 

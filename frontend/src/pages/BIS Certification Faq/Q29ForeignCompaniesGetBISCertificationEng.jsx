@@ -43,7 +43,7 @@ const Q29ForeignCompaniesGetBISCertificationMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, Foreign Companies BIS Certification";
 
   const canonicalUrl =
-    "https://bis-certifications.com/can-foreign-companies-get-bis-certification/";
+    "https://bis-certifications.com/can-foreign-companies-get-bis-certification";
 
   const author = "Sun Certifications India";
 

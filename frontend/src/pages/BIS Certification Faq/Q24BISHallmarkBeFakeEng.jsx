@@ -42,7 +42,7 @@ const Q24BISHallmarkBeFakeMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, BIS Hallmark";
 
   const canonicalUrl =
-    "https://bis-certifications.com/can-bis-hallmark-be-fake/";
+    "https://bis-certifications.com/can-bis-hallmark-be-fake";
 
   const author = "Sun Certifications India";
 

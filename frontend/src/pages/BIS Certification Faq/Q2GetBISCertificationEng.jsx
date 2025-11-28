@@ -41,7 +41,7 @@ const Q2GetBISCertificationMetaData = () => {
   const keywords =
     "get BIS certification, BIS certificate verification, verify ISI mark, bis certificate";
 
-  const canonicalUrl = "https://bis-certifications.com/get-bis-certification/";
+  const canonicalUrl = "https://bis-certifications.com/get-bis-certification";
 
   const author = "Sun Certifications India";
 

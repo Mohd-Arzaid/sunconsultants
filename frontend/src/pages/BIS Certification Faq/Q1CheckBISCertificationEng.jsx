@@ -41,8 +41,7 @@ const CheckBISCertificationMetaData = () => {
   const keywords =
     "check BIS certification online, BIS certificate verification, verify ISI mark, CM/L number check, R-number check";
 
-  const canonicalUrl =
-    "https://bis-certifications.com/check-bis-certification/";
+  const canonicalUrl = "https://bis-certifications.com/check-bis-certification";
 
   const author = "Sun Certifications India";
 

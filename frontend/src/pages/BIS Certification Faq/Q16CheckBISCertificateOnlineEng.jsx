@@ -43,7 +43,7 @@ const Q16CheckBISCertificateOnlineMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
 
   const canonicalUrl =
-    "https://bis-certifications.com/how-to-check-bis-certificate-online/";
+    "https://bis-certifications.com/how-to-check-bis-certificate-online";
 
   const author = "Sun Certifications India";
 

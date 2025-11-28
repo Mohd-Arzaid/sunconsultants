@@ -43,7 +43,7 @@ const Q23CertificateVsISOCertificateMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, Cost of BIS License";
 
   const canonicalUrl =
-    "https://bis-certifications.com/bis-certificate-vs-iso-certificate/";
+    "https://bis-certifications.com/bis-certificate-vs-iso-certificate";
 
   const author = "Sun Certifications India";
 

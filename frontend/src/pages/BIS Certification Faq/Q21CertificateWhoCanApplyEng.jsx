@@ -42,7 +42,7 @@ const Q21CertificateWhoCanApplyMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
 
   const canonicalUrl =
-    "https://bis-certifications.com/bis-certificate-who-can-apply/";
+    "https://bis-certifications.com/bis-certificate-who-can-apply";
 
   const author = "Sun Certifications India";
 

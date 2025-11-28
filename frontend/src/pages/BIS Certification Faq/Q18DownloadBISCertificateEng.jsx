@@ -42,7 +42,7 @@ const Q18DownloadBISCertificateMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, Cost of BIS License";
 
   const canonicalUrl =
-    "https://bis-certifications.com/how-to-download-bis-certificate/";
+    "https://bis-certifications.com/how-to-download-bis-certificate";
 
   const author = "Sun Certifications India";
 

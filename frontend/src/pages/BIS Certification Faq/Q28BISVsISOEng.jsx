@@ -40,7 +40,7 @@ const Q28BISVsISOMetaData = () => {
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, Cost of BIS License, BIS Hallmark";
 
-  const canonicalUrl = "https://bis-certifications.com/bis-vs-iso/";
+  const canonicalUrl = "https://bis-certifications.com/bis-vs-iso";
 
   const author = "Sun Certifications India";
 

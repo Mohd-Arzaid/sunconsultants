@@ -43,7 +43,7 @@ const Q7HowToVerifyBISCertificationMetaData = () => {
     "BIS Certification, Verify BIS Certification, BIS Certification in India";
 
   const canonicalUrl =
-    "https://bis-certifications.com/verify-bis-certification/";
+    "https://bis-certifications.com/verify-bis-certification";
 
   const author = "Sun Certifications India";
 

@@ -41,8 +41,7 @@ const Q6ApplyBISCertificationMetaData = () => {
   const keywords =
     "BIS Certification, Apply for BIS Certificate, BIS Certification in India";
 
-  const canonicalUrl =
-    "https://bis-certifications.com/apply-bis-certification/";
+  const canonicalUrl = "https://bis-certifications.com/apply-bis-certification";
 
   const author = "Sun Certifications India";
 

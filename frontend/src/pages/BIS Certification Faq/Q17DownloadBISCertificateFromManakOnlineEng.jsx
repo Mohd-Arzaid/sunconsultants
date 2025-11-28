@@ -43,7 +43,7 @@ const Q17DownloadBISCertificateFromManakonlineMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
 
   const canonicalUrl =
-    "https://bis-certifications.com/download-bis-certificate-manakonline/";
+    "https://bis-certifications.com/download-bis-certificate-manakonline";
 
   const author = "Sun Certifications India";
 

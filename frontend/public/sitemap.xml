@@ -3421,7 +3421,15 @@
   
  <!-- BIS CERTIFICATION FAQ PAGES - Start -->
 
- <!-- Ques 1 - English -->
+<!-- Main FAQs Page -->
+  <url>
+    <loc>https://bis-certifications.com/faqs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+<!-- Ques 1 - English -->
   <url>
     <loc>https://bis-certifications.com/check-bis-certification</loc>
     <changefreq>monthly</changefreq>
@@ -3520,6 +3528,134 @@
    <!-- Ques 13 - English -->
   <url>
     <loc>https://bis-certifications.com/trader-get-bis-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 14 - English -->
+  <url>
+    <loc>https://bis-certifications.com/apply-bis-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 15 - English -->
+  <url>
+    <loc>https://bis-certifications.com/how-to-get-bis-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 16 - English -->
+  <url>
+    <loc>https://bis-certifications.com/how-to-check-bis-certificate-online</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 17 - English -->
+  <url>
+    <loc>https://bis-certifications.com/download-bis-certificate-manakonline</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 18 - English -->
+  <url>
+    <loc>https://bis-certifications.com/how-to-download-bis-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 19 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certificate-import</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 20 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certificate-for-import-in-india</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 21 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certificate-who-can-apply</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 22 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certificate-for-import-cost</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 23 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certificate-vs-iso-certificate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 24 - English -->
+  <url>
+    <loc>https://bis-certifications.com/can-bis-hallmark-be-fake</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 25 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-isi-difference</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 26 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-and-iso-difference</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 27 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-vs-isi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 28 - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-vs-iso</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+
+   <!-- Ques 29 - English -->
+  <url>
+    <loc>https://bis-certifications.com/can-foreign-companies-get-bis-certification</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

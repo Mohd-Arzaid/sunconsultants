@@ -42,7 +42,7 @@ const Q8DownloadBISCertificateOnlineMetaData = () => {
     "BIS Certification, download BIS Certificate, BIS Certification in India";
 
   const canonicalUrl =
-    "https://bis-certifications.com/download-bis-certificate-online/";
+    "https://bis-certifications.com/download-bis-certificate-online";
 
   const author = "Sun Certifications India";
 

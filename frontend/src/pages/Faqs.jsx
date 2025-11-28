@@ -168,9 +168,6 @@ const Faqs = () => {
                 <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800">
                   Common Questions
                 </h2>
-                <span className="text-lg md:text-xl font-geist font-medium text-neutral-600">
-                  Total FAQs: {faqQuestions.length}
-                </span>
               </div>
               <div className="space-y-4">
                 {faqQuestions.map((faq, index) => (
@@ -220,7 +217,7 @@ const Faqs = () => {
                 to="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 bg-neutral-800 text-white font-geist font-medium rounded-lg hover:bg-neutral-700 transition-colors duration-200"
               >
-                Contact Us Today
+                Contact Us
               </Link>
             </div>
           </div>

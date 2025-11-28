@@ -43,7 +43,7 @@ const Q9ImportWithoutBISCertificateMetaData = () => {
     "BIS Certification, Import License, BIS Certification in India";
 
   const canonicalUrl =
-    "https://bis-certifications.com/import-without-bis-certificate/";
+    "https://bis-certifications.com/import-without-bis-certificate";
 
   const author = "Sun Certifications India";
 

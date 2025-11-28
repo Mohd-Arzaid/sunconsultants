@@ -41,7 +41,7 @@ const Q26BISAndISODifferenceMetaData = () => {
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, Cost of BIS License, BIS Hallmark";
 
-  const canonicalUrl = "https://bis-certifications.com/bis-and-iso-difference/";
+  const canonicalUrl = "https://bis-certifications.com/bis-and-iso-difference";
 
   const author = "Sun Certifications India";
 

@@ -42,7 +42,7 @@ const Q19GetBISCertificateForImportMetaData = () => {
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
 
-  const canonicalUrl = "https://bis-certifications.com/bis-certificate-import/";
+  const canonicalUrl = "https://bis-certifications.com/bis-certificate-import";
 
   const author = "Sun Certifications India";
 
