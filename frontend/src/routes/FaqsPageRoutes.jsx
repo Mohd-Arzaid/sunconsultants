@@ -223,7 +223,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/get-bis-certificate-in-india"
+        path="/how-to-get-bis-certificate"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q15GetBISCertificateEng />
@@ -231,7 +231,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/check-bis-certificate-online"
+        path="/how-to-check-bis-certificate-online"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q16CheckBISCertificateOnlineEng />
@@ -239,7 +239,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/download-bis-certificate-from-manakonline"
+        path="/download-bis-certificate-manakonline"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q17DownloadBISCertificateFromManakonlineEng />
@@ -247,7 +247,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/download-bis-certificate"
+        path="/how-to-download-bis-certificate"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q18DownloadBISCertificateEng />
@@ -271,7 +271,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/certificate-who-can-apply"
+        path="/bis-certificate-who-can-apply"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q21CertificateWhoCanApplyEng />
@@ -279,7 +279,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/certificate-for-import-cost"
+        path="/bis-certificate-for-import-cost"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q22CertificateForImportCostEng />
@@ -287,7 +287,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/certificate-vs-iso-certificate"
+        path="/bis-certificate-vs-iso-certificate"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q23CertificateVsISOCertificateEng />
@@ -295,7 +295,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/bis-hallmark-be-fake"
+        path="/can-bis-hallmark-be-fake"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q24BISHallmarkBeFakeEng />
@@ -335,7 +335,7 @@ function FaqsPageRoutes() {
         }
       />
       <Route
-        path="/foreign-companies-get-bis-certification"
+        path="/can-foreign-companies-get-bis-certification"
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q29ForeignCompaniesGetBISCertificationEng />

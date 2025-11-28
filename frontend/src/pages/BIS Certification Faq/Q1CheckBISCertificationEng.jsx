@@ -41,14 +41,16 @@ const CheckBISCertificationMetaData = () => {
   const keywords =
     "check BIS certification online, BIS certificate verification, verify ISI mark, CM/L number check, R-number check";
 
-  const canonicalUrl = "https://bis-certifications.com/check-bis-certification/";
+  const canonicalUrl =
+    "https://bis-certifications.com/check-bis-certification/";
 
   const author = "Sun Certifications India";
 
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
-  const ogTitle = "How to check BIS certification | Quick Guide & Easy Explanation";
+  const ogTitle =
+    "How to check BIS certification | Quick Guide & Easy Explanation";
 
   const ogDescription =
     "This guide covers how to check bis certification in simple steps. Understand how to check, what details are required, and how to avoid errors or non-compliance.";
@@ -95,7 +97,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/ministry-updates">BIS Certification Faq</Link>
+                    <Link to="/faqs">FAQ&apos;s</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">

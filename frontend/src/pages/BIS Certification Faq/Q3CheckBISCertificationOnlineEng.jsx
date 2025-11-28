@@ -30,10 +30,11 @@ const Q3CheckBISCertificationOnlineEng = () => {
   );
 };
 
-export default Q3CheckBISCertificationOnlineEng ;
+export default Q3CheckBISCertificationOnlineEng;
 
 const Q3CheckBISCertificationOnlineMetaData = () => {
-  const title = "How to Check BIS Certification online? – Clear & Simple Answer Guide";
+  const title =
+    "How to Check BIS Certification online? – Clear & Simple Answer Guide";
 
   const description =
     "Learn about bis certificate. This guide explains how to Check BIS Certification online, key requirements, steps, and tips to understand BIS Certification";
@@ -41,21 +42,24 @@ const Q3CheckBISCertificationOnlineMetaData = () => {
   const keywords =
     "get BIS certification, BIS certificate verification, verify ISI mark, bis certificate, Check BIS License Online";
 
-  const canonicalUrl = "https://bis-certifications.com/check-bis-certification-online/";
+  const canonicalUrl =
+    "https://bis-certifications.com/check-bis-certification-online/";
 
   const author = "Sun Certifications India";
 
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
-  const ogTitle = "How to Check BIS Certification online | Quick Guide & Easy Explanation";
+  const ogTitle =
+    "How to Check BIS Certification online | Quick Guide & Easy Explanation";
 
   const ogDescription =
     "This guide covers how to Check BIS Certification online in simple steps. Understand how to check, what details are required, and how to avoid errors or non-compliance.";
 
   const twitterTitle = "How to Check BIS Certification online | Simple Guide";
 
-  const twitterDescription = "Quick guide on how to Check BIS Certification online.";
+  const twitterDescription =
+    "Quick guide on how to Check BIS Certification online.";
 
   return (
     <Helmet>
@@ -95,7 +99,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/ministry-updates">BIS Certification Faq</Link>
+                    <Link to="/faqs">FAQ&apos;s</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -160,19 +164,20 @@ const MainContentLeft = () => {
           A valid record will display the licensee/manufacturer name, brand,
           model/catalogue reference, IS number, and current status
           (active/suspended/expired). Match the online data with what&apos;s
-          printed on the product or packaging: identical model ID, brand, and
-          IS reference. For electronics/IT under CRS, the R‑number is usually on
+          printed on the product or packaging: identical model ID, brand, and IS
+          reference. For electronics/IT under CRS, the R‑number is usually on
           the label/packaging; for ISI, look for the ISI logo plus CM/L.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           If you cannot find a record, check spelling, try alternate model
-          strings or dashes/spaces, and request the official license/registration
-          letter from the seller. Marks without a valid entry in the database are
-          not sufficient proof. For tenders or regulatory checks, download/print
-          the verification result and file it in your QA documentation.
-          Re‑verify when adding new variants or changing components to ensure the
-          license still covers the shipped configuration.
+          strings or dashes/spaces, and request the official
+          license/registration letter from the seller. Marks without a valid
+          entry in the database are not sufficient proof. For tenders or
+          regulatory checks, download/print the verification result and file it
+          in your QA documentation. Re‑verify when adding new variants or
+          changing components to ensure the license still covers the shipped
+          configuration.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">

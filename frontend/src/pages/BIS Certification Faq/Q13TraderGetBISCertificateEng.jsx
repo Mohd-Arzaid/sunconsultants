@@ -42,7 +42,8 @@ const Q13TraderGetBISCertificateMetaData = () => {
   const keywords =
     "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark";
 
-  const canonicalUrl = "https://bis-certifications.com/trader-bis-certificate/";
+  const canonicalUrl =
+    "https://bis-certifications.com/trader-get-bis-certificate/";
 
   const author = "Sun Certifications India";
 
@@ -97,7 +98,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/ministry-updates">BIS Certification Faq</Link>
+                    <Link to="/faqs">FAQ&apos;s</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">

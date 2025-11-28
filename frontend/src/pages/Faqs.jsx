@@ -36,27 +36,27 @@ const Faqs = () => {
       path: "/verify-bis-certification",
     },
     {
-      question: "Can we download BIS certificate online?",
+      question: "Download BIS Certificate Online",
       path: "/download-bis-certificate-online",
     },
     {
-      question: "Can I import without BIS certificate?",
+      question: "How to Import without bis certificate?",
       path: "/import-without-bis-certificate",
     },
     {
-      question: "Can importer apply for BIS certificate in India?",
+      question: "Can importer apply for BIS Certificate in India?",
       path: "/importer-apply-for-bis-certificate-in-india",
     },
     {
-      question: "Who can issue BIS certificate?",
+      question: "Who can issue BIS Certificate in India?",
       path: "/issue-bis-certificate",
     },
     {
-      question: "Who can get BIS certificate?",
+      question: "Who can get BIS Certificate in India?",
       path: "/get-bis-certificate",
     },
     {
-      question: "Can a trader get BIS certificate?",
+      question: "Can a Trader get BIS Certificate in India?",
       path: "/trader-get-bis-certificate",
     },
     {
@@ -65,43 +65,43 @@ const Faqs = () => {
     },
     {
       question: "How to Get BIS Certificate in India?",
-      path: "/get-bis-certificate-in-india",
+      path: "/how-to-get-bis-certificate",
     },
     {
       question: "How to check BIS certificate online?",
-      path: "/check-bis-certificate-online",
+      path: "/how-to-check-bis-certificate-online",
     },
     {
       question: "How to download BIS certificate from manakonline?",
-      path: "/download-bis-certificate-from-manakonline",
+      path: "/download-bis-certificate-manakonline",
     },
     {
       question: "How to download BIS Certificate?",
-      path: "/download-bis-certificate",
+      path: "/how-to-download-bis-certificate",
     },
     {
-      question: "How to get BIS Certificate for import?",
+      question: "how to get BIS Certificate for import?",
       path: "/bis-certificate-import",
     },
     {
-      question: "How to get BIS certificate for import in India?",
+      question: "How to get BIS certificate for import in india?",
       path: "/bis-certificate-for-import-in-india",
     },
     {
       question: "BIS Certificate who can apply?",
-      path: "/certificate-who-can-apply",
+      path: "/bis-certificate-who-can-apply",
     },
     {
       question: "BIS certificate for import cost?",
-      path: "/certificate-for-import-cost",
+      path: "/bis-certificate-for-import-cost",
     },
     {
       question: "BIS certificate vs ISO certificate?",
-      path: "/certificate-vs-iso-certificate",
+      path: "/bis-certificate-vs-iso-certificate",
     },
     {
       question: "Can BIS Hallmark Be Fake?",
-      path: "/bis-hallmark-be-fake",
+      path: "/can-bis-hallmark-be-fake",
     },
     {
       question: "Difference between BIS and ISI?",
@@ -121,7 +121,7 @@ const Faqs = () => {
     },
     {
       question: "Can Foreign Companies Get BIS Certification?",
-      path: "/foreign-companies-get-bis-certification",
+      path: "/can-foreign-companies-get-bis-certification",
     },
   ];
 
@@ -164,9 +164,14 @@ const Faqs = () => {
 
             {/* FAQs List */}
             <div className="mb-10 md:mb-12">
-              <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800 mb-6 md:mb-8">
-                Common Questions
-              </h2>
+              <div className="flex justify-between items-center mb-6 md:mb-8">
+                <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800">
+                  Common Questions
+                </h2>
+                <span className="text-lg md:text-xl font-geist font-medium text-neutral-600">
+                  Total FAQs: {faqQuestions.length}
+                </span>
+              </div>
               <div className="space-y-4">
                 {faqQuestions.map((faq, index) => (
                   <Link

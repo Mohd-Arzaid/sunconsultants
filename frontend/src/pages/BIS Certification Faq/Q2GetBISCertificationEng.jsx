@@ -95,7 +95,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/ministry-updates">BIS Certification Faq</Link>
+                    <Link to="/faqs">FAQ&apos;s</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -148,10 +148,10 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Start by confirming whether your product falls under the ISI Scheme
-          (license with surveillance and ISI mark) or the Compulsory Registration
-          Scheme (CRS) for electronics/IT. Identify the applicable Indian
-          Standard (IS) and read the scope notes—they define the exact tests,
-          labeling, and any exclusions. Create a compliance plan: list
+          (license with surveillance and ISI mark) or the Compulsory
+          Registration Scheme (CRS) for electronics/IT. Identify the applicable
+          Indian Standard (IS) and read the scope notes—they define the exact
+          tests, labeling, and any exclusions. Create a compliance plan: list
           models/variants, map applicable clauses, and collect documents
           (drawings/specs, critical components list, safety declarations, QMS
           evidence).
@@ -172,9 +172,9 @@ const MainContentLeft = () => {
           prepare for a factory audit and ongoing surveillance; set up marking
           control procedures, test equipment lists, and production controls.
           Post‑approval, follow marking/packaging rules exactly, maintain
-          records, and monitor changes (components/firmware and suppliers). Build
-          a renewal calendar and a process for variant additions to keep your
-          portfolio compliant.
+          records, and monitor changes (components/firmware and suppliers).
+          Build a renewal calendar and a process for variant additions to keep
+          your portfolio compliant.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
