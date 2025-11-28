@@ -1524,7 +1524,6 @@ const BISCertificationServices = () => {
                 src="/services-images/CDSCO.jpg"
                 alt="CDSCO Logo"
                 title="CDSCO Logo"
-                title="CDSCO Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
