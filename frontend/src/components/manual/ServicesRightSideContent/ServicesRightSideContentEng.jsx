@@ -77,14 +77,14 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/scheme-x-qco-withdraw-order",
     "/ministry-updates/steel-products-amendment-2025",
 
-   // BIS CERTIFICATION FAQ PATHS
-   // Q1
+    // BIS CERTIFICATION FAQ PATHS
+    // Q1
     "/check-bis-certification",
-   // Q2
+    // Q2
     "/get-bis-certification",
     // Q3
     "/check-bis-certification-online",
-    // Q4    
+    // Q4
     "/bis-certification-cost",
     // Q5
     "/get-bis-certification-in-india",
@@ -104,6 +104,38 @@ const ServicesRightSideContentEng = () => {
     "/get-bis-certificate",
     // Q13
     "/trader-get-bis-certificate",
+    // Q14
+    "/apply-bis-certificate",
+    // Q15
+    "/how-to-get-bis-certificate",
+    // Q16
+    "/how-to-check-bis-certificate-online",
+    // Q17
+    "/download-bis-certificate-manakonline",
+    // Q18
+    "/how-to-download-bis-certificate",
+    // Q19
+    "/bis-certificate-import",
+    // Q20
+    "/bis-certificate-for-import-in-india",
+    // Q21
+    "/bis-certificate-who-can-apply",
+    // Q22
+    "/bis-certificate-for-import-cost",
+    // Q23
+    "/bis-certificate-vs-iso-certificate",
+    // Q24
+    "/can-bis-hallmark-be-fake",
+    // Q25
+    "/bis-isi-difference",
+    // Q26
+    "/bis-and-iso-difference",
+    // Q27
+    "/bis-vs-isi",
+    // Q28
+    "/bis-vs-iso",
+    // Q29
+    "/can-foreign-companies-get-bis-certification",
   ];
 
   // Check if current path should show these components
@@ -149,7 +181,8 @@ const BISQCOUpdatesServicesRightSideContentEng = () => {
       url: "/bis-qco-updates/bis-certificate-for-tables-and-desks",
     },
     {
-      image: "https://m.media-amazon.com/images/I/71rRReJmTiL._AC_UF894,1000_QL80_.jpg",
+      image:
+        "https://m.media-amazon.com/images/I/71rRReJmTiL._AC_UF894,1000_QL80_.jpg",
       title: "BIS Notification for Storage units",
       alt: "BIS Notification for Storage units",
       url: "/bis-qco-updates/bis-certificate-for-storage-units",
@@ -172,8 +205,7 @@ const BISQCOUpdatesServicesRightSideContentEng = () => {
         "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
       title:
         "BIS Notification for Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
-      alt:
-        "BIS Notification for Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
+      alt: "BIS Notification for Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
       url: "/bis-qco-updates/bis-certificate-for-wrought-aluminium-and-aluminium-alloys-forging-stock-and-forgings",
     },
     {
@@ -222,16 +254,14 @@ const BISQCOUpdatesServicesRightSideContentEng = () => {
         "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
       title:
         "BIS Notification for Aluminium alloy tubes for irrigation purposes -welded tubes",
-      alt:
-        "BIS Notification for Aluminium alloy tubes for irrigation purposes -welded tubes",
+      alt: "BIS Notification for Aluminium alloy tubes for irrigation purposes -welded tubes",
       url: "/bis-qco-updates/bis-certificate-for-aluminium-alloy-tubes-for-irrigation-purposes-welded-tubes",
     },
     {
       image: "https://www.sunnysteel.com/img/extruded-finned-tube.jpg",
       title:
         "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
-      alt:
-        "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
+      alt: "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
       url: "/bis-qco-updates/bis-certificate-for-aluminium-alloy-tube-for-irrigation-purposes-extruded-tube",
     },
     {
@@ -239,8 +269,7 @@ const BISQCOUpdatesServicesRightSideContentEng = () => {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
       title:
         "BIS Notification for EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
-      alt:
-        "BIS Notification for EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
+      alt: "BIS Notification for EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
       url: "/bis-qco-updates/bis-certificate-for-ec-grade-aluminium-rod-produced-by-continuous-casting-and-rolling",
     },
     {
@@ -248,8 +277,7 @@ const BISQCOUpdatesServicesRightSideContentEng = () => {
         "https://media.istockphoto.com/id/1322355858/photo/aluminium-round-long-products-on-black-steel-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=I3k2F2cQSo5AW1qOQ5uxi2ROi-YJQoH47XzApxCP7qY=",
       title:
         "BIS Notification for Wrought aluminium and aluminium alloy bars, rods and sections",
-      alt:
-        "BIS Notification for Wrought aluminium and aluminium alloy bars, rods and sections",
+      alt: "BIS Notification for Wrought aluminium and aluminium alloy bars, rods and sections",
       url: "/bis-qco-updates/bis-certificate-for-wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections",
     },
     {
@@ -760,7 +788,6 @@ const ContactFormServicesRightSideContentEng = () => {
     if (path.includes("/ministry-updates/steel-products-amendment-2025"))
       return "Steel Products Amendment Order 2025 - Ministry Updates (English)";
 
-
     // BIS CERTIFICATION FAQ PATHS
     // Q1
     if (path.includes("/check-bis-certification"))
@@ -771,44 +798,106 @@ const ContactFormServicesRightSideContentEng = () => {
     // Q3
     if (path.includes("/check-bis-certification-online"))
       return "How to check BIS Certification Online - English Page";
-    // Q4 
+    // Q4
     if (path.includes("/bis-certification-cost"))
       return "How much does BIS Certification Cost - English Page";
     // Q5
     if (path.includes("/get-bis-certification-in-india"))
       return "How to get BIS Certification in India - English Page";
-    
+
     // Q6
     if (path.includes("/apply-bis-certification"))
       return "How to apply BIS Certification - English Page";
-    
+
     // Q7
     if (path.includes("/verify-bis-certification"))
       return "How to verify BIS Certification - English Page";
-    
+
     // Q8
     if (path.includes("/download-bis-certificate-online"))
       return "Can we download BIS Certificate Online - English Page";
-    
+
     // Q9
     if (path.includes("/import-without-bis-certificate"))
       return "Can I import without BIS Certificate - English Page";
-    
+
     // Q10
     if (path.includes("/importer-apply-for-bis-certificate-in-india"))
       return "Can importer apply for BIS Certificate in India - English Page";
-    
+
     // Q11
     if (path.includes("/issue-bis-certificate"))
       return "Who can issue BIS Certificate - English Page";
-    
+
     // Q12
     if (path.includes("/get-bis-certificate"))
       return "Who can get BIS Certificate - English Page";
-    
+
     // Q13
     if (path.includes("/trader-get-bis-certificate"))
       return "Can a trader get BIS Certificate - English Page";
+
+    // Q14
+    if (path.includes("/apply-bis-certificate"))
+      return "Who can apply for BIS Certificate - English Page";
+
+    // Q15
+    if (path.includes("/how-to-get-bis-certificate"))
+      return "How to get BIS Certificate - English Page";
+
+    // Q16
+    if (path.includes("/how-to-check-bis-certificate-online"))
+      return "How to check BIS Certificate Online - English Page";
+
+    // Q17
+    if (path.includes("/download-bis-certificate-manakonline"))
+      return "How to download BIS Certificate from Manakonline - English Page";
+
+    // Q18
+    if (path.includes("/how-to-download-bis-certificate"))
+      return "How to download BIS Certificate - English Page";
+
+    // Q19
+    if (path.includes("/bis-certificate-import"))
+      return "How to get BIS Certificate for Import - English Page";
+
+    // Q20
+    if (path.includes("/bis-certificate-for-import-in-india"))
+      return "How to get BIS Certificate for Import in India - English Page";
+
+    // Q21
+    if (path.includes("/bis-certificate-who-can-apply"))
+      return "BIS Certificate Who Can Apply - English Page";
+
+    // Q22
+    if (path.includes("/bis-certificate-for-import-cost"))
+      return "BIS Certificate For Import Cost - English Page";
+
+    // Q23
+    if (path.includes("/bis-certificate-vs-iso-certificate"))
+      return "BIS Certificate Vs ISO Certificate - English Page";
+
+    // Q24
+    if (path.includes("/can-bis-hallmark-be-fake"))
+      return "Can BIS Hallmark Be Fake - English Page";
+
+    // Q25
+    if (path.includes("/bis-isi-difference"))
+      return "BIS And ISI Difference - English Page";
+
+    // Q26
+    if (path.includes("/bis-and-iso-difference"))
+      return "BIS And ISO Difference - English Page";
+
+    // Q27
+    if (path.includes("/bis-vs-isi")) return "BIS Vs ISI - English Page";
+
+    // Q28
+    if (path.includes("/bis-vs-iso")) return "BIS Vs ISO - English Page";
+
+    // Q29
+    if (path.includes("/can-foreign-companies-get-bis-certification"))
+      return "Can Foreign Companies Get BIS Certification - English Page";
   };
 
   const [formData, setFormData] = useState({
