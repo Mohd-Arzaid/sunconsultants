@@ -59,7 +59,7 @@ const HomeSEO = () => {
           "@type": "WebSite",
           name: "Sun Certifications India",
           url: "https://bis-certifications.com",
-          logo: "https://bis-certifications.com/Logo.png",
+          logo: "https://bis-certifications.com/company-logo/company-logo.webp",
           description:
             "Sun Certifications was founded in 2013, and for more than a decade, we have been assisting companies to comply with various kinds of Indian certifications like BIS certificate for Indian manufacturers, BIS certification for foreign/global manufacturers, BIS Scheme X certification, LMPC certificate, EPR certificate, WPC certificate, etc.",
           address: {

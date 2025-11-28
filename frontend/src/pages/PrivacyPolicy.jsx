@@ -1,6 +1,5 @@
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
-import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import SEOBreadcrumbs from "@/components/common/SEOBreadcrumbs";
 
@@ -340,8 +339,9 @@ const Footer = () => {
                  text-2xl font-bold text-center text-neutral-600"
               >
                 <img
-                  src={Logo}
-                  alt="logo"
+                  src="/company-logo/company-logo.webp"
+                  alt="Sun Certifications India logo"
+                  title="Sun Certifications India logo"
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />
                 <Link to="/" className="text-center">
