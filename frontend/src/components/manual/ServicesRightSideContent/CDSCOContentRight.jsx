@@ -112,8 +112,7 @@ const CDSCOContentRight = () => {
     "/th/bis-prathiap-india-taem-dai-tae-skema-x",
     "/vi/chung-nhan-bis-an-do-theo-scheme-x",
 
-
-    // Scheme X product 
+    // Scheme X product
     "/bis-scheme-x-certification-for-pumps-and-liquid-elevators",
     "/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery",
     "/bis-scheme-x-certification-for-compressors",
@@ -133,7 +132,7 @@ const CDSCOContentRight = () => {
     "/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts",
     "/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts",
     "/bis-scheme-x-certification-for-transformers",
-    "/bis-scheme-x-certification-for-weaving-machines-looms"
+    "/bis-scheme-x-certification-for-weaving-machines-looms",
   ];
 
   // Check if current path should show these components
@@ -658,10 +657,10 @@ const OurEvents = () => {
                 </div>
               </div>
 
-              {index <
+              {index <div
                 events.filter((event) => !event.isHighlighted).length - 1 && (
-                  <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
-                )}
+                <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent my-4" />
+              )}
             </div>
           ))}
       </div>
@@ -834,9 +833,7 @@ const FreeCallBack = () => {
       return "BIS Mark Foreign";
 
     if (
-      path.includes(
-        "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
-      )
+      path.includes("/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind")
     )
       return "BIS Mark Foreign";
 
@@ -1089,19 +1086,29 @@ const FreeCallBack = () => {
       return "SchemeX";
 
     // Scheme X Products - Page Names
-    if (path.includes("/bis-scheme-x-certification-for-pumps-and-liquid-elevators"))
+    if (
+      path.includes(
+        "/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+      )
+    )
       return "BIS Scheme X - Pumps and Liquid Elevators";
 
     if (path.includes("/bis-scheme-x-certification-for-packing-machinery"))
       return "BIS Scheme X - Packing Machinery";
 
-    if (path.includes("/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"))
+    if (
+      path.includes(
+        "/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+      )
+    )
       return "BIS Scheme X - Centrifuges and Filtering Machinery";
 
     if (path.includes("/bis-scheme-x-certification-for-compressors"))
       return "BIS Scheme X - Compressors";
 
-    if (path.includes("/bis-scheme-x-certification-for-heat-treatment-equipment"))
+    if (
+      path.includes("/bis-scheme-x-certification-for-heat-treatment-equipment")
+    )
       return "BIS Scheme X - Heat Treatment Equipment";
 
     if (path.includes("/bis-scheme-x-certification-for-weaving-machines-looms"))
@@ -1110,7 +1117,11 @@ const FreeCallBack = () => {
     if (path.includes("/bis-scheme-x-certification-for-construction-machinery"))
       return "BIS Scheme X - Construction Machinery";
 
-    if (path.includes("/bis-scheme-x-certification-for-metal-cutting-machine-tools"))
+    if (
+      path.includes(
+        "/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+      )
+    )
       return "BIS Scheme X - Metal Cutting Machine Tools";
 
     if (path.includes("/bis-scheme-x-certification-for-cranes"))
@@ -1119,22 +1130,42 @@ const FreeCallBack = () => {
     if (path.includes("/bis-scheme-x-certification-for-embroidery-machinery"))
       return "BIS Scheme X - Embroidery Machinery";
 
-    if (path.includes("/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"))
+    if (
+      path.includes(
+        "/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+      )
+    )
       return "BIS Scheme X - Gears Gearing and Transmission";
 
     if (path.includes("/bis-scheme-x-certification-for-diesel-generators"))
       return "BIS Scheme X - Diesel Generators";
 
-    if (path.includes("/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"))
+    if (
+      path.includes(
+        "/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+      )
+    )
       return "BIS Scheme X - Switchgear and Controlgear Equipment";
 
-    if (path.includes("/bis-scheme-x-certification-for-rubber-and-plastics-machinery"))
+    if (
+      path.includes(
+        "/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+      )
+    )
       return "BIS Scheme X - Rubber and Plastics Machinery";
 
-    if (path.includes("/bis-scheme-x-certification-for-rotary-electrical-machines"))
+    if (
+      path.includes(
+        "/bis-scheme-x-certification-for-rotary-electrical-machines"
+      )
+    )
       return "BIS Scheme X - Rotary Electrical Machines";
 
-    if (path.includes("/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"))
+    if (
+      path.includes(
+        "/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+      )
+    )
       return "BIS Scheme X - Public Works and Mechanical Appliances";
   };
 
@@ -1344,9 +1375,9 @@ const FreeCallBack = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         {t("privacyNote.text")}{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           {t("privacyNote.link")}
-        </a>{" "}
+        </Link>{" "}
         {t("privacyNote.consent")}
       </p>
     </div>

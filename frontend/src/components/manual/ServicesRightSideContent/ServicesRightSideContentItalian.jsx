@@ -961,9 +961,9 @@ const ContactFormServicesRightSideContentItalian = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         Inviando questo modulo, accetti la nostra{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           Politica sulla Privacy
-        </a>{" "}
+        </Link>{" "}
         e acconsenti ad essere contattato.
       </p>
     </div>

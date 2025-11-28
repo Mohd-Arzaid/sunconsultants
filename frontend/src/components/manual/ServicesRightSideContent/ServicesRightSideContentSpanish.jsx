@@ -572,7 +572,11 @@ const ContactFormServicesRightSideContentSpanish = () => {
     if (path.includes("/es/que-es-el-certificado-bis-bis-indio"))
       return "BIS Certification (Spanish)";
     // BISFM Spanish Page Url
-    if (path.includes("/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"))
+    if (
+      path.includes(
+        "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio"
+      )
+    )
       return "BISFM (Foreign Manufacturers) - Spanish Page";
   };
 
@@ -789,9 +793,9 @@ const ContactFormServicesRightSideContentSpanish = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         Al enviar este formulario, acepta nuestra{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           Política de Privacidad
-        </a>{" "}
+        </Link>{" "}
         y consiente ser contactado.
       </p>
     </div>

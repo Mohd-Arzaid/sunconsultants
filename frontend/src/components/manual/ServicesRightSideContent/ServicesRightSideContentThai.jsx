@@ -906,9 +906,9 @@ const ContactFormServicesRightSideContentThai = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         โดยการส่งแบบฟอร์มนี้ คุณยอมรับ{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           นโยบายความเป็นส่วนตัว
-        </a>{" "}
+        </Link>{" "}
         ของเราและยินยอมให้ติดต่อ
       </p>
     </div>

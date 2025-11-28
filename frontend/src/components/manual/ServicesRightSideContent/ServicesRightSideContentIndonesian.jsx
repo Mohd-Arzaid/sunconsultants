@@ -938,9 +938,9 @@ const ContactFormServicesRightSideContentIndonesian = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         Dengan mengirimkan formulir ini, Anda menyetujui{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           Kebijakan Privasi
-        </a>{" "}
+        </Link>{" "}
         kami dan menyetujui untuk dihubungi.
       </p>
     </div>

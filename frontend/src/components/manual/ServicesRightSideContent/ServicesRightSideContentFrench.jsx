@@ -795,9 +795,9 @@ const ContactFormServicesRightSideContentFrench = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         En soumettant ce formulaire, vous acceptez notre{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           Politique de confidentialité
-        </a>{" "}
+        </Link>{" "}
         et consentez à être contacté.
       </p>
     </div>

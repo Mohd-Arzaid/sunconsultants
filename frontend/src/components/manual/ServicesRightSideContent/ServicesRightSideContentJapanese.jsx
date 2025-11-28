@@ -928,9 +928,9 @@ const ContactFormServicesRightSideContentJapanese = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         このフォームを送信することで、お客様は私たちの{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           プライバシーポリシー
-        </a>{" "}
+        </Link>{" "}
         に同意し、連絡を受けることに同意したものとみなされます。
       </p>
     </div>

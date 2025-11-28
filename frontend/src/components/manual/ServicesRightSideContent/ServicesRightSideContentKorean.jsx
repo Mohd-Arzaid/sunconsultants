@@ -849,9 +849,9 @@ const ContactFormServicesRightSideContentKorean = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         이 양식을 제출함으로써 귀하는 저희의{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           개인정보 보호정책
-        </a>{" "}
+        </Link>{" "}
         에 동의하고 연락을 받는 것에 동의합니다.
       </p>
     </div>

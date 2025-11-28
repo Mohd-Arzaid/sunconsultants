@@ -591,7 +591,11 @@ const ContactFormServicesRightSideContentArabic = () => {
       return "ISI Mark (Arabic)";
     if (path.includes("/ar/ma-huwa-shahadat-bis-bis-alhind"))
       return "BIS Certification (Arabic)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-taard-almarkazi-wa-alat-altasfiya-aw-altanqiya"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-taard-almarkazi-wa-alat-altasfiya-aw-altanqiya"
+      )
+    )
       return "Centrifuges Arabic (Scheme X)";
     if (path.includes("/shahadat-bis-mukhatat-x-lil-daghitat"))
       return "Compressors Arabic (Scheme X)";
@@ -603,29 +607,67 @@ const ContactFormServicesRightSideContentArabic = () => {
       return "Diesel Generators Arabic (Scheme X)";
     if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-tatriz"))
       return "Embroidery Machines Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-turus-wa-anmatim-al-turus-wa-anasir-al-naql"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-turus-wa-anmatim-al-turus-wa-anasir-al-naql"
+      )
+    )
       return "Gears Gearing and Transmission Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-maadat-al-mualaja-al-harariya"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-maadat-al-mualaja-al-harariya"
+      )
+    )
       return "Heat Treatment Equipment Arabic (Scheme X)";
     if (path.includes("/shahadat-bis-mukhatat-x-lil-adawat-al-alat"))
       return "Machine Tools Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin"))
+    if (
+      path.includes("/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin")
+    )
       return "Metal Cutting Machines Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-maadat-al-taabia-wa-al-taghlif"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-maadat-al-taabia-wa-al-taghlif"
+      )
+    )
       return "Packing Machinery Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-muhawilat-ashbah-al-mawasalat-lil-taqa"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-muhawilat-ashbah-al-mawasalat-lil-taqa"
+      )
+    )
       return "Power Semiconductors Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-ashghal-al-amah-wa-al-maadat-al-mikaniqiyah"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-ashghal-al-amah-wa-al-maadat-al-mikaniqiyah"
+      )
+    )
       return "Public Works and Mechanical Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
+      )
+    )
       return "Pumps and Liquid Elevators Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-kahrabiya-al-dawara"))
+    if (
+      path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-kahrabiya-al-dawara")
+    )
       return "Rotary Electrical Machines Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik"))
+    if (
+      path.includes("/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik")
+    )
       return "Rubber and Plastics Machinery Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-hata-1000-folt"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-hata-1000-folt"
+      )
+    )
       return "Switchgear and Controlgear Equipment Arabic (Scheme X)";
-    if (path.includes("/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-fawq-1000-folt"))
+    if (
+      path.includes(
+        "/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-fawq-1000-folt"
+      )
+    )
       return "Switchgear and Controlgear Equipment Above 1000 Volts Arabic (Scheme X)";
     if (path.includes("/shahadat-bis-mukhatat-x-lil-muhawilat"))
       return "Transformers Arabic (Scheme X)";
@@ -841,9 +883,9 @@ const ContactFormServicesRightSideContentArabic = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         بإرسال هذا النموذج، فإنك توافق على{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           سياسة الخصوصية
-        </a>{" "}
+        </Link>{" "}
         الخاصة بنا وتوافق على الاتصال بك.
       </p>
     </div>

@@ -1,4 +1,4 @@
-import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthorEng";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
   Breadcrumb,
@@ -212,7 +212,7 @@ const MainContentLeft = () => {
           </Link>
         </p>
 
-        <ServiceAuthorEng />
+        <FaqAuthorEng />
       </div>
     </div>
   );

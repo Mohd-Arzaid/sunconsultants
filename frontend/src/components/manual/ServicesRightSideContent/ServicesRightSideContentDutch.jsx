@@ -613,79 +613,85 @@ const ContactFormServicesRightSideContentDutch = () => {
     if (path.includes("/nl/wat-is-het-bis-certificaat-indiaas-bis"))
       return "BIS Certification Dutch";
     if (
-      path.includes("/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis")
+      path.includes(
+        "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis"
+      )
     )
       return "BIS Mark (ISI Licentie) voor Buitenlandse Fabrikanten - Nederlandse Pagina";
     if (
-      path.includes("/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines")
+      path.includes(
+        "/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines"
+      )
     )
       return "Centrifuges - Dutch Page";
-    if (
-      path.includes("/bis-schema-x-certificering-voor-compressoren")
-    )
+    if (path.includes("/bis-schema-x-certificering-voor-compressoren"))
       return "Compressors - Dutch Page";
-    if (
-      path.includes("/bis-schema-x-certificering-voor-bouwmachines")
-    )
+    if (path.includes("/bis-schema-x-certificering-voor-bouwmachines"))
       return "Construction Machinery - Dutch Page";
-    if (
-      path.includes("/bis-schema-x-certificering-voor-kranen")
-    )
+    if (path.includes("/bis-schema-x-certificering-voor-kranen"))
       return "Cranes - Dutch Page";
-    if (
-      path.includes("/bis-schema-x-certificering-voor-dieselgeneratoren")
-    )
+    if (path.includes("/bis-schema-x-certificering-voor-dieselgeneratoren"))
       return "Diesel Generators - Dutch Page";
-    if (
-      path.includes("/bis-schema-x-certificering-voor-borduurmachines")
-    )
+    if (path.includes("/bis-schema-x-certificering-voor-borduurmachines"))
       return "Embroidery Machines - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-tandwielen-overbrenging-en-transmissie-elementen")
+      path.includes(
+        "/bis-schema-x-certificering-voor-tandwielen-overbrenging-en-transmissie-elementen"
+      )
     )
       return "Gears, Gearing and Transmission Elements - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-warmtebehandelingsapparatuur")
+      path.includes(
+        "/bis-schema-x-certificering-voor-warmtebehandelingsapparatuur"
+      )
     )
       return "Heat Treatment Equipment - Dutch Page";
-    if (
-      path.includes("/bis-schema-x-certificering-voor-werktuigmachines")
-    )
+    if (path.includes("/bis-schema-x-certificering-voor-werktuigmachines"))
       return "Machine Tools - Dutch Page";
-    if (
-      path.includes("/bis-schema-x-certificering-voor-metaalsnijmachines")
-    )
+    if (path.includes("/bis-schema-x-certificering-voor-metaalsnijmachines"))
       return "Metal Cutting Machines - Dutch Page";
-    if (
-      path.includes("/bis-schema-x-certificering-voor-verpakkingsmachines")
-    )
+    if (path.includes("/bis-schema-x-certificering-voor-verpakkingsmachines"))
       return "Packing Machinery - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-vermogenssemiconductor-omzetters")
+      path.includes(
+        "/bis-schema-x-certificering-voor-vermogenssemiconductor-omzetters"
+      )
     )
       return "Power Semiconductors - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-openbare-werken-en-mechanische-apparaten")
+      path.includes(
+        "/bis-schema-x-certificering-voor-openbare-werken-en-mechanische-apparaten"
+      )
     )
       return "Public Works And Mechanical - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators")
+      path.includes(
+        "/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
+      )
     )
       return "Pumps And Liquid Elevators - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-roterende-elektrische-machines")
+      path.includes(
+        "/bis-schema-x-certificering-voor-roterende-elektrische-machines"
+      )
     )
       return "Rotary Electrical Machines - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-rubber-en-kunststofmachines")
+      path.includes(
+        "/bis-schema-x-certificering-voor-rubber-en-kunststofmachines"
+      )
     )
       return "Rubber And Plastics Machinery - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-tot-1000-volt")
+      path.includes(
+        "/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-tot-1000-volt"
+      )
     )
       return "Switchgear And Controlgear Equipment - Dutch Page";
     if (
-      path.includes("/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-boven-1000-volt")
+      path.includes(
+        "/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-boven-1000-volt"
+      )
     )
       return "Switchgear And Controlgear Equipment Above 1000 Volts - Dutch Page";
     if (path.includes("/bis-schema-x-certificering-voor-transformators"))
@@ -906,9 +912,9 @@ const ContactFormServicesRightSideContentDutch = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         Door dit formulier in te dienen, gaat u akkoord met ons{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           Privacybeleid
-        </a>{" "}
+        </Link>{" "}
         en stemt u in met contact.
       </p>
     </div>

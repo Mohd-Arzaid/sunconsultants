@@ -785,9 +785,9 @@ const ContactFormServicesRightSideContentVietnamese = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         Bằng cách gửi biểu mẫu này, bạn đồng ý với{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           Chính sách Bảo mật
-        </a>{" "}
+        </Link>{" "}
         của chúng tôi và đồng ý được liên hệ.
       </p>
     </div>

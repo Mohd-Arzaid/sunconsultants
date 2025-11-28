@@ -1111,9 +1111,9 @@ const ContactFormServicesRightSideContentEng = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         By submitting this form, you agree to our{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           Privacy Policy
-        </a>{" "}
+        </Link>{" "}
         and consent to being contacted.
       </p>
     </div>

@@ -907,9 +907,9 @@ const ContactFormServicesRightSideContentChinese = () => {
       {/* Privacy Note */}
       <p className="mt-3 text-xs text-center text-gray-500 font-geist">
         提交此表单即表示您同意我们的{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-600 hover:underline">
           隐私政策
-        </a>{" "}
+        </Link>{" "}
         并同意被联系。
       </p>
     </div>
