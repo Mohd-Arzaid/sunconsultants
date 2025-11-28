@@ -34,16 +34,16 @@ export default Q29ForeignCompaniesGetBISCertificationEng;
 
 const Q29ForeignCompaniesGetBISCertificationMetaData = () => {
   const title =
-    "Can Foreign Companies Get BIS Certification? - Clear & Simple Answer Guide";
+    "Can foreign companies get BIS Certification - Clear & Simple Answer Guide";
 
   const description =
-    "Can Foreign Companies Get BIS Certification. This guide explains Can Foreign Companies Get BIS Certification?";
+    "This guide explains complete information about Can foreign companies get BIS Certificate";
 
   const keywords =
-    "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, Foreign Companies BIS Certification";
+    "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, Cost of BIS License, Foreign companies get BIS License";
 
   const canonicalUrl =
-    "https://bis-certifications.com/can-foreign-companies-get-bis-certification";
+    "https://bis-certifications.com/can-foreign-companies-get-bis-certification/";
 
   const author = "Sun Certifications India";
 
@@ -51,16 +51,14 @@ const Q29ForeignCompaniesGetBISCertificationMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "Can Foreign Companies Get BIS Certification? | Complete Guide & Easy Explanation";
+    "Can foreign companies get BIS Certification | Complete Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers Can Foreign Companies Get BIS Certification in simple steps. Understand about BIS License, what details are required, and how to avoid errors or non-compliance.";
+    "This guide explains complete information about Can foreign companies get BIS Certificate";
 
-  const twitterTitle =
-    "Can Foreign Companies Get BIS Certification | Simple Guide";
+  const twitterTitle = "Can foreign companies get BIS License | Simple Guide";
 
-  const twitterDescription =
-    "Quick guide on Can Foreign Companies Get BIS Certification.";
+  const twitterDescription = "Can foreign companies get BIS Certification.";
 
   return (
     <Helmet>
