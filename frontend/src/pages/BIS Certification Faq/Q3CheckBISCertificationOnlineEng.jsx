@@ -61,6 +61,21 @@ const Q3CheckBISCertificationOnlineMetaData = () => {
   const twitterDescription =
     "Quick guide on how to Check BIS Certification online.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to Check BIS Certification online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Checking a BIS approval online is straightforward if you have the right identifiers. Gather either the ISI license number (CM/L) for ISI-marked products or the Registration number (R-number) for CRS products, along with the brand and exact model/variant. On the BIS/Manak portal, use the Verify/Check License or Registration feature, enter the CM/L or R-number, and optionally filter by brand or the Indian Standard (IS). A valid record will display the licensee/manufacturer name, brand, model/catalogue reference, IS number, and current status (active/suspended/expired).",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -76,6 +91,12 @@ const Q3CheckBISCertificationOnlineMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -211,7 +232,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={3} />
       </div>
     </div>
   );

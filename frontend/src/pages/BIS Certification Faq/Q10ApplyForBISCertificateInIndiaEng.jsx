@@ -62,6 +62,21 @@ const Q10ApplyForBISCertificateInIndiaMetaData = () => {
   const twitterDescription =
     "Quick guide on Can importer apply for BIS Certificate.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can importer apply for BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, importers can apply for BIS Certificate in India on behalf of foreign manufacturers. The importer acts as an authorized representative (Authorized Indian Representative - AIR) and must submit all required documents and complete the certification process. For overseas manufacturers, appointing an AIR is mandatory to liaise with BIS, receive communications, and ensure compliance in India. Begin by identifying the applicable Indian Standard (IS) and confirming whether your product falls under the ISI Scheme or the Compulsory Registration Scheme (CRS).",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -77,6 +92,12 @@ const Q10ApplyForBISCertificateInIndiaMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -220,7 +241,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={10} />
       </div>
     </div>
   );

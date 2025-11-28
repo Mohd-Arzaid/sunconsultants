@@ -60,6 +60,21 @@ const Q13TraderGetBISCertificateMetaData = () => {
 
   const twitterDescription = "Quick guide on Can a Trader get BIS Certificate.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can a Trader get BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Traders typically cannot directly get BIS Certificate as it is issued to manufacturers. However, traders can act as authorized representatives (Authorized Indian Representative - AIR) for foreign manufacturers to obtain BIS certification for imported products. The certificate is issued in the name of the manufacturer, with the trader acting as the AIR for compliance purposes. Traders cannot get certificates for products they don't manufacture themselves.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -75,6 +90,12 @@ const Q13TraderGetBISCertificateMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -217,7 +238,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={13} />
       </div>
     </div>
   );

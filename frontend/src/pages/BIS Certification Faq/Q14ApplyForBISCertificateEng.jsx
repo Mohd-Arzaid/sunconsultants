@@ -60,6 +60,21 @@ const Q14ApplyForBISCertificateMetaData = () => {
   const twitterDescription =
     "Quick guide on Who can apply for BIS Certificate.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Who can apply for BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Manufacturers (both Indian and foreign), importers, and authorized representatives can apply for BIS Certificate in India. The applicant must have a valid business registration and meet the requirements for the specific product category. Foreign manufacturers must appoint an Authorized Indian Representative (AIR) to apply on their behalf. Indian manufacturers can apply directly through the BIS portal.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -75,6 +90,12 @@ const Q14ApplyForBISCertificateMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -260,7 +281,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={14} />
       </div>
     </div>
   );

@@ -59,6 +59,21 @@ const Q24BISHallmarkBeFakeMetaData = () => {
 
   const twitterDescription = "Can foreign companies get BIS Certification.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can BIS Hallmark Be Fake?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS Hallmark can be fake if not obtained through proper channels. To verify authenticity, check the hallmark on the BIS portal using the registration number. Genuine BIS hallmarks are registered and verifiable through official BIS systems. Always verify through the official BIS portal and cross-check the hallmark details with the database to ensure authenticity and avoid counterfeit products. Marks without a valid entry in the database are not sufficient proof of authenticity.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -74,6 +89,12 @@ const Q24BISHallmarkBeFakeMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -216,7 +237,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={24} />
       </div>
     </div>
   );

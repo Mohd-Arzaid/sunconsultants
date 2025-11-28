@@ -60,6 +60,21 @@ const Q25BISAndISIDifferenceMetaData = () => {
   const twitterDescription =
     "Quick guide on What is the difference between BIS and ISI.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Difference between BIS and ISI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS is the Bureau of Indian Standards, the certifying body and organization. ISI mark is the certification mark issued by BIS for products meeting Indian standards. BIS is the organization responsible for certification, while ISI is the mark displayed on certified products. The ISI mark with the CM/L number indicates that the product has been certified by BIS under the ISI Scheme. BIS is the certifying authority, and ISI is the visual certification mark.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -75,6 +90,12 @@ const Q25BISAndISIDifferenceMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -217,7 +238,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={25} />
       </div>
     </div>
   );

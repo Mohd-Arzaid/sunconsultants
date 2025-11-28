@@ -60,6 +60,21 @@ const Q11IssueBISCertificateMetaData = () => {
 
   const twitterDescription = "Quick guide on Who can issue BIS Certificate.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Who can issue BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS (Bureau of Indian Standards) is the authorized body that issues BIS Certificates in India. BIS is the national standards body responsible for product certification and quality assurance under the BIS Act, 2016. BIS issues certificates under various schemes including the ISI Scheme (with CM/L number) and the Compulsory Registration Scheme (CRS) with R-number for electronics/IT products. No other organization or individual can issue BIS certificates.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -75,6 +90,12 @@ const Q11IssueBISCertificateMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -217,7 +238,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={11} />
       </div>
     </div>
   );

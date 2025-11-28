@@ -56,6 +56,21 @@ const Q28BISVsISOMetaData = () => {
 
   const twitterDescription = "Quick guide on BIS vs ISO.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "BIS vs ISO?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certificate is mandatory for specific products in India and ensures product compliance with Indian standards. ISO certificate is voluntary and certifies quality management systems. BIS is product-specific and legally required, while ISO is organization-wide and optional. BIS focuses on product safety and standards compliance, whereas ISO focuses on quality management processes and continuous improvement. BIS is mandatory for certain products to be sold in India, while ISO certification is voluntary and demonstrates quality management systems.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -71,6 +86,12 @@ const Q28BISVsISOMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -213,7 +234,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={28} />
       </div>
     </div>
   );

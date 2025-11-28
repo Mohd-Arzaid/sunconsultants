@@ -60,6 +60,21 @@ const Q8DownloadBISCertificateOnlineMetaData = () => {
   const twitterDescription =
     "Quick guide on How to download BIS Certificate online.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Download BIS Certificate Online",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, you can download BIS Certificate online. Begin by identifying the applicable Indian Standard (IS) and confirming whether your product falls under the ISI Scheme (license with surveillance) or the Compulsory Registration Scheme (CRS) used for electronics/IT. Prepare a complete dossier: drawings/specs, BOM and safety-critical components, user manuals, declarations, quality system evidence, and labeling artwork. Once you have your certificate, you can download it from the BIS portal (manakonline.bis.gov.in) by logging into your account and accessing the certificates section.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -75,6 +90,12 @@ const Q8DownloadBISCertificateOnlineMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -217,7 +238,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={8} />
       </div>
     </div>
   );

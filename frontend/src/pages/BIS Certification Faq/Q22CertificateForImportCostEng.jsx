@@ -59,6 +59,21 @@ const Q22CertificateForImportCostMetaData = () => {
 
   const twitterDescription = "Quick guide on BIS certificate for import cost.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "BIS certificate for import cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certificate for import cost includes laboratory testing fees, application/processing fees, marking or registration charges, factory audit fees (for ISI Scheme), sample logistics, and professional support fees. Costs vary based on product category, testing requirements, number of models/variants, and certification scheme. Foreign manufacturers should also account for AIR fees and additional documentation costs. Testing is usually the biggest cost driver, varying with safety and EMC scope, number of samples, and any re-tests.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -74,6 +89,12 @@ const Q22CertificateForImportCostMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -206,7 +227,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={22} />
       </div>
     </div>
   );

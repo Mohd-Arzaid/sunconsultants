@@ -60,6 +60,21 @@ const Q19GetBISCertificateForImportMetaData = () => {
   const twitterDescription =
     "Quick guide on how to get BIS Certificate for import.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "how to get BIS Certificate for import?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To get BIS Certificate for import, foreign manufacturers need to apply through the BIS portal, submit product samples for testing, complete factory inspection, and obtain the certificate before importing products to India. Importers can also apply on behalf of foreign manufacturers by acting as an Authorized Indian Representative (AIR). The certificate must be obtained before customs clearance. Identify the applicable Indian Standard (IS), appoint an AIR if you're a foreign manufacturer, conduct product testing at BIS-recognized labs, and complete the certification process.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -75,6 +90,12 @@ const Q19GetBISCertificateForImportMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -211,7 +232,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={19} />
       </div>
     </div>
   );

@@ -59,6 +59,21 @@ const Q4DoesBIScertificationCostMetaData = () => {
   const twitterDescription =
     "Quick guide on How much does bis certification cost.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much does bis certification cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS costs depend on the scheme (ISI vs CRS), the product standard, and the number of models/variants. Plan across these heads: laboratory testing, application/processing fees, marking or registration charges, audits/surveillance (for ISI), sample logistics, and optional professional support. Testing is usually the biggest driver. Fees vary with safety and EMC scope, the number of samples, and any re-tests. For ISI, add factory audit/surveillance to your budget; for CRS, account for registration/renewal fees. Always obtain a written quotation aligned to your exact IS standard and model list.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -74,6 +89,12 @@ const Q4DoesBIScertificationCostMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -206,7 +227,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={4} />
       </div>
     </div>
   );

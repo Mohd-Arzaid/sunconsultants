@@ -60,6 +60,21 @@ const Q29ForeignCompaniesGetBISCertificationMetaData = () => {
 
   const twitterDescription = "Can foreign companies get BIS Certification.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can Foreign Companies Get BIS Certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, foreign companies can get BIS Certification. Foreign manufacturers can apply directly or through an Authorized Indian Representative (AIR). The process includes identifying the applicable Indian Standard (IS), product testing at BIS-recognized laboratories, factory inspection, compliance with Indian standards, and obtaining the certificate. Foreign entities must appoint an AIR to liaise with BIS and ensure compliance in India. With a reliable AIR, clean documentation, and the right test strategy, foreign entities routinely secure BIS approvals and sell into India compliantly.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -75,6 +90,12 @@ const Q29ForeignCompaniesGetBISCertificationMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -213,7 +234,7 @@ const MainContentLeft = () => {
           </Link>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={29} />
       </div>
     </div>
   );

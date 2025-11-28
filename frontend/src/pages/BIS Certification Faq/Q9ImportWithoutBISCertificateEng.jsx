@@ -61,6 +61,21 @@ const Q9ImportWithoutBISCertificateMetaData = () => {
   const twitterDescription =
     "Quick guide on How to import without BIS certificate.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to Import without bis certificate?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Importing products without BIS certificate is not allowed for products under mandatory BIS certification. Such imports may be rejected at customs, and penalties may apply. It's mandatory to obtain BIS certification before importing covered products to India. Products under the Compulsory Registration Scheme (CRS) or ISI Scheme require valid BIS certification for import clearance. Begin by identifying the applicable Indian Standard (IS) and confirming whether your product falls under the ISI Scheme or CRS, then complete the certification process before attempting to import.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -76,6 +91,12 @@ const Q9ImportWithoutBISCertificateMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -218,7 +239,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={9} />
       </div>
     </div>
   );

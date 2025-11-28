@@ -62,6 +62,21 @@ const Q17DownloadBISCertificateFromManakonlineMetaData = () => {
   const twitterDescription =
     "Quick guide on How to download BIS certificate from manakonline.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to download BIS certificate from manakonline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To download BIS certificate from manakonline, log in to your account on manakonline.bis.gov.in, navigate to your certificates section, select the certificate you want to download, and click the download button to get the PDF version. You need valid login credentials to access your certificate dashboard and download the official certificate document. The downloaded certificate is the official PDF version that can be used for official purposes.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -77,6 +92,12 @@ const Q17DownloadBISCertificateFromManakonlineMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -257,7 +278,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={17} />
       </div>
     </div>
   );

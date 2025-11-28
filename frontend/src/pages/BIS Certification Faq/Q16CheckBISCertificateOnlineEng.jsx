@@ -61,6 +61,21 @@ const Q16CheckBISCertificateOnlineMetaData = () => {
   const twitterDescription =
     "Quick guide on How to check BIS certificate online.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to check BIS certificate online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can check BIS certificate online through the BIS portal (bis.gov.in or manakonline.bis.gov.in) using the certificate number, CM/L number, or R-number. Enter the details on the verification page to view the certificate status, licensee/manufacturer information, brand, model, Indian Standard (IS) reference, and current validity. The online verification helps confirm the authenticity of the certificate and shows whether it's active, suspended, or expired.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -76,6 +91,12 @@ const Q16CheckBISCertificateOnlineMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -211,7 +232,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={16} />
       </div>
     </div>
   );

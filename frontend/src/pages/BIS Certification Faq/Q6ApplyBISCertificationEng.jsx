@@ -58,6 +58,21 @@ const Q6ApplyBISCertificationMetaData = () => {
 
   const twitterDescription = "Quick guide on How to apply BIS Certification.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to apply BIS Certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Begin by identifying the applicable Indian Standard (IS) and confirming whether your product falls under the ISI Scheme (license with surveillance) or the Compulsory Registration Scheme (CRS) used for electronics/IT. Prepare a complete dossier: drawings/specs, BOM and safety-critical components, user manuals, declarations, quality system evidence, and labeling artwork. Select a BIS-recognized laboratory with experience in your category. For CRS, you submit lab reports and documents through the portal to obtain a Registration (R-number). For ISI, expect a factory audit, ongoing surveillance, and marking control procedures.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -73,6 +88,12 @@ const Q6ApplyBISCertificationMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -215,7 +236,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={6} />
       </div>
     </div>
   );

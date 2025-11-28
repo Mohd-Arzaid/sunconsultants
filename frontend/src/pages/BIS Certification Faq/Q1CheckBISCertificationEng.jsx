@@ -58,6 +58,21 @@ const CheckBISCertificationMetaData = () => {
 
   const twitterDescription = "Quick guide on how to check bis certification.";
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to check BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To verify a BIS approval, you'll need either the ISI license number (CM/L) for products under the ISI Scheme or the Registration number (R-number) for products under the CRS scheme, together with the brand and the exact model/variant. Go to bis.gov.in, open the verification section, and search by CM/L or R-number. A valid listing shows the licensee/manufacturer, brand, model, Indian Standard (IS), and the current status. Cross-check packaging/labeling with the database entry: the model string, brand, and IS reference should match exactly.",
+        },
+      },
+    ],
+  };
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -73,6 +88,12 @@ const CheckBISCertificationMetaData = () => {
       <meta name="twitter:title" content={twitterTitle} />
       <meta name="twitter:description" content={twitterDescription} />
       <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
     </Helmet>
   );
 };
@@ -205,7 +226,7 @@ const MainContentLeft = () => {
           </a>
         </p>
 
-        <FaqAuthorEng />
+        <FaqAuthorEng questionNumber={1} />
       </div>
     </div>
   );

@@ -337,7 +337,231 @@ const FaqsMetaTags = () => {
         name: "How to check BIS certification?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "You can check BIS certification online through the BIS portal using the certificate number, CM/L number, or R-number. Visit our detailed guide for step-by-step instructions.",
+          text: "To verify a BIS approval, you'll need either the ISI license number (CM/L) for products under the ISI Scheme or the Registration number (R-number) for products under the CRS scheme, together with the brand and the exact model/variant. Go to bis.gov.in, open the verification section, and search by CM/L or R-number. A valid listing shows the licensee/manufacturer, brand, model, Indian Standard (IS), and the current status.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to get BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To get BIS certification, you need to apply through the BIS portal, submit required documents including test reports, undergo product testing at BIS-approved laboratories, complete factory inspection, and obtain the certificate upon approval. The process involves identifying the applicable Indian Standard (IS), preparing documentation, selecting a BIS-recognized laboratory for testing, and completing the application process.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to check BIS certification online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can check BIS certification online through the BIS portal (bis.gov.in or manakonline.bis.gov.in) using the certificate number, CM/L number, or R-number. Simply enter the details on the verification page to view the certificate status, licensee/manufacturer information, brand, model, Indian Standard (IS), and current validity status.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does BIS certification cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certification cost depends on the scheme (ISI vs CRS), the product standard, and the number of models/variants. Costs include laboratory testing fees, application/processing fees, marking or registration charges, audits/surveillance fees (for ISI), sample logistics, and optional professional support. Testing is usually the biggest cost driver, varying with safety and EMC scope, number of samples, and any re-tests. Always obtain a written quotation aligned to your exact IS standard and model list.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to get BIS certification in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To get BIS certification in India, you need to apply through the BIS portal, submit required documents, undergo product testing at BIS-approved labs, and complete the factory inspection. The process typically takes 30-90 days depending on the product category. Begin by identifying the applicable Indian Standard (IS) and confirming whether your product falls under the ISI Scheme or the Compulsory Registration Scheme (CRS).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to apply BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To apply for BIS certification, register on the BIS portal, select your product category, submit the application form with required documents, arrange product testing at BIS-approved labs, and schedule factory inspection. Prepare a complete dossier including drawings/specs, BOM, safety-critical components, user manuals, declarations, quality system evidence, and labeling artwork that correctly references the IS.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to verify BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can verify BIS certification by checking the certificate number, CM/L number, or R-number on the BIS portal (manakonline.bis.gov.in). The verification will show certificate validity, product details, manufacturer information, brand, model, Indian Standard (IS) reference, and current status. Cross-check packaging/labeling with the database entry to ensure the model string, brand, and IS reference match exactly.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Download BIS Certificate Online",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can download BIS Certificate by logging into the BIS portal (manakonline.bis.gov.in) with your credentials, accessing your certificate section, and downloading the PDF. Navigate to your certificates section, select the certificate you want to download, and click the download button to get the PDF version. You can also request a copy from BIS if needed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to Import without bis certificate?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Importing products without BIS certificate is not allowed for products under mandatory BIS certification. Such imports may be rejected at customs, and penalties may apply. It's mandatory to obtain BIS certification before importing covered products to India. Products under the Compulsory Registration Scheme (CRS) or ISI Scheme require valid BIS certification for import clearance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can importer apply for BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, importers can apply for BIS Certificate in India on behalf of foreign manufacturers. The importer acts as an authorized representative (Authorized Indian Representative - AIR) and must submit all required documents and complete the certification process. For overseas manufacturers, appointing an AIR is mandatory to liaise with BIS, receive communications, and ensure compliance in India.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who can issue BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS (Bureau of Indian Standards) is the authorized body that issues BIS Certificates in India. BIS is the national standards body responsible for product certification and quality assurance under the BIS Act, 2016. BIS issues certificates under various schemes including the ISI Scheme (with CM/L number) and the Compulsory Registration Scheme (CRS) with R-number for electronics/IT products.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who can get BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Manufacturers (both Indian and foreign), importers, and authorized representatives can get BIS Certificate in India. The applicant must have a valid business registration and meet the requirements for the specific product category. Foreign manufacturers need to appoint an Authorized Indian Representative (AIR) to obtain certification for products imported into India.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can a Trader get BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Traders typically cannot directly get BIS Certificate as it is issued to manufacturers. However, traders can act as authorized representatives (Authorized Indian Representative - AIR) for foreign manufacturers to obtain BIS certification for imported products. The certificate is issued in the name of the manufacturer, with the trader acting as the AIR for compliance purposes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who can apply for BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Manufacturers (both Indian and foreign), importers, and authorized representatives can apply for BIS Certificate in India. The applicant must have a valid business registration and meet the requirements for the specific product category. Foreign manufacturers must appoint an Authorized Indian Representative (AIR) to apply on their behalf.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to Get BIS Certificate in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To get BIS Certificate in India, identify the applicable Indian Standard (IS) for your product, prepare required documentation, select a BIS-recognized laboratory for testing, submit the application through the BIS portal, complete factory inspection (for ISI Scheme), and obtain the certificate upon approval. The process involves testing, documentation, application submission, and compliance with marking requirements.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to check BIS certificate online?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can check BIS certificate online through the BIS portal (bis.gov.in or manakonline.bis.gov.in) using the certificate number, CM/L number, or R-number. Enter the details on the verification page to view the certificate status, licensee/manufacturer information, brand, model, Indian Standard (IS) reference, and current validity. The online verification helps confirm the authenticity of the certificate.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to download BIS certificate from manakonline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To download BIS certificate from manakonline, log in to your account on manakonline.bis.gov.in, navigate to your certificates section, select the certificate you want to download, and click the download button to get the PDF version. You need valid login credentials to access your certificate dashboard and download the official certificate document.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to download BIS Certificate?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can download BIS Certificate by logging into the BIS portal (manakonline.bis.gov.in) with your credentials, accessing your certificate section, and downloading the PDF. Navigate to the certificates section, select the specific certificate, and download the official PDF document. You can also request a physical copy from BIS if needed for official purposes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "how to get BIS Certificate for import?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To get BIS Certificate for import, foreign manufacturers need to apply through the BIS portal, submit product samples for testing, complete factory inspection, and obtain the certificate before importing products to India. Importers can also apply on behalf of foreign manufacturers by acting as an Authorized Indian Representative (AIR). The certificate must be obtained before customs clearance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How to get BIS certificate for import in india?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To get BIS certificate for import in India, foreign manufacturers must identify the applicable Indian Standard (IS), appoint an Authorized Indian Representative (AIR), prepare documentation, conduct product testing at BIS-recognized labs, submit application through the BIS portal, complete factory inspection (for ISI Scheme), and obtain the certificate. The certificate is mandatory before importing covered products to India.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "BIS Certificate who can apply?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Manufacturers (both Indian and foreign), importers, and authorized representatives can apply for BIS Certificate. Indian manufacturers can apply directly, while foreign manufacturers must appoint an Authorized Indian Representative (AIR) to apply on their behalf. The applicant must have valid business registration and meet product-specific requirements for the certification scheme.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "BIS certificate for import cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certificate for import cost includes laboratory testing fees, application/processing fees, marking or registration charges, factory audit fees (for ISI Scheme), sample logistics, and professional support fees. Costs vary based on product category, testing requirements, number of models/variants, and certification scheme. Foreign manufacturers should also account for AIR fees and additional documentation costs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "BIS certificate vs ISO certificate?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certificate is mandatory for specific products sold in India and ensures compliance with Indian standards (IS). ISO certificate is voluntary and indicates adherence to international quality management standards (ISO 9001, etc.). BIS is product-specific certification required by law, while ISO is organization-wide quality management system certification. Both serve different purposes and are not interchangeable.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can BIS Hallmark Be Fake?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS Hallmark can be fake if not obtained through proper channels. To verify authenticity, check the hallmark on the BIS portal using the registration number. Genuine BIS hallmarks are registered and verifiable through official BIS systems. Always verify through the official BIS portal and cross-check the hallmark details with the database to ensure authenticity and avoid counterfeit products.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Difference between BIS and ISI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS is the Bureau of Indian Standards, the certifying body and organization. ISI mark is the certification mark issued by BIS for products meeting Indian standards. BIS is the organization responsible for certification, while ISI is the mark displayed on certified products. The ISI mark with the CM/L number indicates that the product has been certified by BIS under the ISI Scheme.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Difference between BIS and ISO?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certificate is mandatory for specific products sold in India and ensures compliance with Indian standards (IS). ISO certificate is voluntary and indicates adherence to international quality management standards. BIS is product-specific certification required by law for certain products, while ISO is organization-wide quality management system certification. BIS focuses on product compliance, while ISO focuses on process quality management.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "BIS vs ISI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS (Bureau of Indian Standards) is the organization that issues certifications, while ISI (Indian Standards Institute) mark is the certification mark displayed on products certified by BIS. BIS is the certifying body, and ISI mark is the visual indicator on products showing they meet Indian standards. The ISI mark with CM/L number confirms BIS certification under the ISI Scheme.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "BIS vs ISO?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "BIS certificate is mandatory for specific products in India and ensures product compliance with Indian standards. ISO certificate is voluntary and certifies quality management systems. BIS is product-specific and legally required, while ISO is organization-wide and optional. BIS focuses on product safety and standards compliance, whereas ISO focuses on quality management processes and continuous improvement.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can Foreign Companies Get BIS Certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, foreign companies can get BIS Certification. Foreign manufacturers can apply directly or through an Authorized Indian Representative (AIR). The process includes identifying the applicable Indian Standard (IS), product testing at BIS-recognized laboratories, factory inspection, compliance with Indian standards, and obtaining the certificate. Foreign entities must appoint an AIR to liaise with BIS and ensure compliance in India.",
         },
       },
     ],
@@ -395,9 +619,12 @@ const Footer = () => {
 
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
             Email us at{" "}
-            <span className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4">
+            <a
+              href="mailto:admin@bis-certifications.com"
+              className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-[#1A8781] transition-colors duration-200"
+            >
               admin@bis-certifications.com
-            </span>{" "}
+            </a>{" "}
             or use one of the options below. We usually get back within 24
             hours.
           </div>
