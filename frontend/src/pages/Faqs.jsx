@@ -1,129 +1,171 @@
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { MailPlus } from "lucide-react";
+import { MailPlus, Search } from "lucide-react";
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useState, useMemo } from "react";
+
+// FAQ questions with their corresponding routes
+// Moved outside component to prevent recreation on every render
+const faqQuestions = [
+  // Question 1
+  {
+    question: "How to check BIS certification?",
+    path: "/check-bis-certification",
+  },
+  // Question 2
+  {
+    question: "How to get BIS certification?",
+    path: "/get-bis-certification",
+  },
+  // Question 3
+  {
+    question: "How to check BIS certification online?",
+    path: "/check-bis-certification-online",
+  },
+  // Question 4
+  {
+    question: "How much does BIS certification cost?",
+    path: "/bis-certification-cost",
+  },
+  // Question 5
+  {
+    question: "How to get BIS certification in India?",
+    path: "/get-bis-certification-in-india",
+  },
+  // Question 6
+  {
+    question: "How to apply BIS certification?",
+    path: "/apply-bis-certification",
+  },
+  // Question 7
+  {
+    question: "How to verify BIS certification?",
+    path: "/verify-bis-certification",
+  },
+  // Question 8
+  {
+    question: "Download BIS Certificate Online",
+    path: "/download-bis-certificate-online",
+  },
+  // Question 9
+  {
+    question: "How to Import without bis certificate?",
+    path: "/import-without-bis-certificate",
+  },
+  // Question 10
+  {
+    question: "Can importer apply for BIS Certificate in India?",
+    path: "/importer-apply-for-bis-certificate-in-india",
+  },
+  // Question 11
+  {
+    question: "Who can issue BIS Certificate in India?",
+    path: "/issue-bis-certificate",
+  },
+  // Question 12
+  {
+    question: "Who can get BIS Certificate in India?",
+    path: "/get-bis-certificate",
+  },
+  // Question 13
+  {
+    question: "Can a Trader get BIS Certificate in India?",
+    path: "/trader-get-bis-certificate",
+  },
+  // Question 14
+  {
+    question: "Who can apply for BIS Certificate in India?",
+    path: "/apply-bis-certificate",
+  },
+  // Question 15
+  {
+    question: "How to Get BIS Certificate in India?",
+    path: "/how-to-get-bis-certificate",
+  },
+  // Question 16
+  {
+    question: "How to check BIS certificate online?",
+    path: "/how-to-check-bis-certificate-online",
+  },
+  // Question 17
+  {
+    question: "How to download BIS certificate from manakonline?",
+    path: "/download-bis-certificate-manakonline",
+  },
+  // Question 18
+  {
+    question: "How to download BIS Certificate?",
+    path: "/how-to-download-bis-certificate",
+  },
+  // Question 19
+  {
+    question: "how to get BIS Certificate for import?",
+    path: "/bis-certificate-import",
+  },
+  // Question 20
+  {
+    question: "How to get BIS certificate for import in india?",
+    path: "/bis-certificate-for-import-in-india",
+  },
+  // Question 21
+  {
+    question: "BIS Certificate who can apply?",
+    path: "/bis-certificate-who-can-apply",
+  },
+  // Question 22
+  {
+    question: "BIS certificate for import cost?",
+    path: "/bis-certificate-for-import-cost",
+  },
+  // Question 23
+  {
+    question: "BIS certificate vs ISO certificate?",
+    path: "/bis-certificate-vs-iso-certificate",
+  },
+  // Question 24
+  {
+    question: "Can BIS Hallmark Be Fake?",
+    path: "/can-bis-hallmark-be-fake",
+  },
+  // Question 25
+  {
+    question: "Difference between BIS and ISI?",
+    path: "/bis-isi-difference",
+  },
+  // Question 26
+  {
+    question: "Difference between BIS and ISO?",
+    path: "/bis-and-iso-difference",
+  },
+  // Question 27
+  {
+    question: "BIS vs ISI?",
+    path: "/bis-vs-isi",
+  },
+  // Question 28
+  {
+    question: "BIS vs ISO?",
+    path: "/bis-vs-iso",
+  },
+  // Question 29
+  {
+    question: "Can Foreign Companies Get BIS Certification?",
+    path: "/can-foreign-companies-get-bis-certification",
+  },
+];
 
 const Faqs = () => {
-  // FAQ questions with their corresponding routes
-  const faqQuestions = [
-    {
-      question: "How to check BIS certification?",
-      path: "/check-bis-certification",
-    },
-    {
-      question: "How to get BIS certification?",
-      path: "/get-bis-certification",
-    },
-    {
-      question: "How to check BIS certification online?",
-      path: "/check-bis-certification-online",
-    },
-    {
-      question: "How much does BIS certification cost?",
-      path: "/bis-certification-cost",
-    },
-    {
-      question: "How to get BIS certification in India?",
-      path: "/get-bis-certification-in-india",
-    },
-    {
-      question: "How to apply BIS certification?",
-      path: "/apply-bis-certification",
-    },
-    {
-      question: "How to verify BIS certification?",
-      path: "/verify-bis-certification",
-    },
-    {
-      question: "Download BIS Certificate Online",
-      path: "/download-bis-certificate-online",
-    },
-    {
-      question: "How to Import without bis certificate?",
-      path: "/import-without-bis-certificate",
-    },
-    {
-      question: "Can importer apply for BIS Certificate in India?",
-      path: "/importer-apply-for-bis-certificate-in-india",
-    },
-    {
-      question: "Who can issue BIS Certificate in India?",
-      path: "/issue-bis-certificate",
-    },
-    {
-      question: "Who can get BIS Certificate in India?",
-      path: "/get-bis-certificate",
-    },
-    {
-      question: "Can a Trader get BIS Certificate in India?",
-      path: "/trader-get-bis-certificate",
-    },
-    {
-      question: "Who can apply for BIS Certificate in India?",
-      path: "/apply-bis-certificate",
-    },
-    {
-      question: "How to Get BIS Certificate in India?",
-      path: "/how-to-get-bis-certificate",
-    },
-    {
-      question: "How to check BIS certificate online?",
-      path: "/how-to-check-bis-certificate-online",
-    },
-    {
-      question: "How to download BIS certificate from manakonline?",
-      path: "/download-bis-certificate-manakonline",
-    },
-    {
-      question: "How to download BIS Certificate?",
-      path: "/how-to-download-bis-certificate",
-    },
-    {
-      question: "how to get BIS Certificate for import?",
-      path: "/bis-certificate-import",
-    },
-    {
-      question: "How to get BIS certificate for import in india?",
-      path: "/bis-certificate-for-import-in-india",
-    },
-    {
-      question: "BIS Certificate who can apply?",
-      path: "/bis-certificate-who-can-apply",
-    },
-    {
-      question: "BIS certificate for import cost?",
-      path: "/bis-certificate-for-import-cost",
-    },
-    {
-      question: "BIS certificate vs ISO certificate?",
-      path: "/bis-certificate-vs-iso-certificate",
-    },
-    {
-      question: "Can BIS Hallmark Be Fake?",
-      path: "/can-bis-hallmark-be-fake",
-    },
-    {
-      question: "Difference between BIS and ISI?",
-      path: "/bis-isi-difference",
-    },
-    {
-      question: "Difference between BIS and ISO?",
-      path: "/bis-and-iso-difference",
-    },
-    {
-      question: "BIS vs ISI?",
-      path: "/bis-vs-isi",
-    },
-    {
-      question: "BIS vs ISO?",
-      path: "/bis-vs-iso",
-    },
-    {
-      question: "Can Foreign Companies Get BIS Certification?",
-      path: "/can-foreign-companies-get-bis-certification",
-    },
-  ];
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Filter FAQs based on search term
+  const filteredFaqQuestions = useMemo(() => {
+    if (!searchTerm.trim()) return faqQuestions;
+
+    return faqQuestions.filter((faq) =>
+      faq.question.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [searchTerm, faqQuestions]);
 
   return (
     <>
@@ -145,6 +187,25 @@ const Faqs = () => {
               costs and requirements, you&apos;ll find detailed information
               below.
             </p>
+
+            {/* Search Bar */}
+            <div className="mt-8 max-w-md mx-auto">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-neutral-400 h-5 w-5" />
+                <input
+                  type="text"
+                  placeholder="Search questions..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full pl-10 pr-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-transparent font-geist text-neutral-700 placeholder-neutral-400"
+                />
+              </div>
+              {searchTerm && (
+                <p className="mt-2 text-neutral-500 font-geist text-center">
+                  {filteredFaqQuestions.length} results found
+                </p>
+              )}
+            </div>
           </div>
         </div>
 
@@ -166,11 +227,11 @@ const Faqs = () => {
             <div className="mb-10 md:mb-12">
               <div className="flex justify-between items-center mb-6 md:mb-8">
                 <h2 className="text-2xl md:text-3xl font-geist font-semibold text-neutral-800">
-                  Common Questions
+                  Common Questions About BIS Certification
                 </h2>
               </div>
               <div className="space-y-4">
-                {faqQuestions.map((faq, index) => (
+                {filteredFaqQuestions.map((faq, index) => (
                   <Link
                     key={index}
                     to={faq.path}
@@ -428,9 +489,9 @@ const Footer = () => {
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
                 />
                 <Link to="/" className="text-center">
-                  <h2 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
+                  <div className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
                     Sun Certifications India
-                  </h2>
+                  </div>
                   <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
                     Simplifying Certifications
                   </p>
