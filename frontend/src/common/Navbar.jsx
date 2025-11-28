@@ -30,7 +30,6 @@ const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [updatesOpen, setUpdatesOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
-  const [faqsOpen, setFaqsOpen] = useState(false);
   const mobileMenuRef = useRef(null);
 
   // Handle FAQ navigation with smooth scrolling
@@ -108,7 +107,6 @@ const Navbar = () => {
     setServicesOpen(false);
     setUpdatesOpen(false);
     setGalleryOpen(false);
-    setFaqsOpen(false);
   }, []);
 
   // Close mobile menu function
@@ -330,12 +328,11 @@ const Navbar = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className={STYLES.button}>
-                  FAQs
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="p-4 w-[265px]">{navContent.faqs}</div>
-                </NavigationMenuContent>
+                <Link to="/faqs">
+                  <Button variant="link" className={STYLES.button}>
+                    FAQ'S
+                  </Button>
+                </Link>
               </NavigationMenuItem>
 
               {/* Contact Us */}
@@ -385,7 +382,7 @@ const Navbar = () => {
               </Button>
             </Link>
 
-            {/* Services, Updates, Gallery, FAQs */}
+            {/* Services, Updates, Gallery */}
             {[
               {
                 title: "Services",
@@ -404,12 +401,6 @@ const Navbar = () => {
                 items: navContent.galleryMobile,
                 isOpen: galleryOpen,
                 setOpen: setGalleryOpen,
-              },
-              {
-                title: "FAQs",
-                items: navContent.faqsMobile,
-                isOpen: faqsOpen,
-                setOpen: setFaqsOpen,
               },
             ].map(({ title, items, isOpen, setOpen }) => (
               <div key={title} className="w-full">
@@ -470,6 +461,13 @@ const Navbar = () => {
                 )}
               </div>
             ))}
+
+            {/* FAQ'S */}
+            <Link to="/faqs" className="block w-full" onClick={closeMobileMenu}>
+              <Button variant="ghost" className={STYLES.mobileButton}>
+                FAQ'S
+              </Button>
+            </Link>
 
             {/* Contact Us */}
             <Link

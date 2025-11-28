@@ -3,43 +3,43 @@ import { Route } from "react-router-dom";
 import BlogsSkeleton from "@/components/ui/blogs-skeleton";
 
 const CheckBISCertificationEng = lazy(() =>
-  import("@/pages/BIS Certification Faq/CheckBISCertificationEng")
+  import("@/pages/BIS Certification Faq/Q1CheckBISCertificationEng")
 );
-const Q2GetBISCertification = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q2GetBISCertification")
+const Q2GetBISCertificationEng = lazy(() =>
+  import("@/pages/BIS Certification Faq/Q2GetBISCertificationEng")
 );
 const Q3CheckBISCertificationOnline = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q3CheckBISCertificationOnline")
+  import("@/pages/BIS Certification Faq/Q3CheckBISCertificationOnlineEng")
 );
 const Q4DoesBIScertificationCost = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q4DoesBIScertificationCost")
+  import("@/pages/BIS Certification Faq/Q4DoesBIScertificationCostEng")
 );
 const Q5GetBISCertificationInIndia = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q5GetBISCertificationInIndia")
+  import("@/pages/BIS Certification Faq/Q5GetBISCertificationInIndiaEng")
 );
 const Q6ApplyBISCertification = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q6ApplyBISCertification")
+  import("@/pages/BIS Certification Faq/Q6ApplyBISCertificationEng")
 );
 const Q7HowToVerifyBISCertification = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q7HowToVerifyBISCertification")
+  import("@/pages/BIS Certification Faq/Q7HowToVerifyBISCertificationEng")
 );
 const Q8DownloadBISCertificateOnline = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q8DownloadBISCertificateOnline")
+  import("@/pages/BIS Certification Faq/Q8DownloadBISCertificateOnlineEng")
 );
 const Q9ImportWithoutBISCertificate = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q9ImportWithoutBISCertificate")
+  import("@/pages/BIS Certification Faq/Q9ImportWithoutBISCertificateEng")
 );
 const Q10ApplyForBISCertificateInIndia = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q10ApplyForBISCertificateInIndia")
+  import("@/pages/BIS Certification Faq/Q10ApplyForBISCertificateInIndiaEng")
 );
 const Q11IssueBISCertificate = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q11IssueBISCertificate")
+  import("@/pages/BIS Certification Faq/Q11IssueBISCertificateEng")
 );
 const Q12GetBISCertificate = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q12GetBISCertificate")
+  import("@/pages/BIS Certification Faq/Q12GetBISCertificateEng")
 );
 const Q13TraderGetBISCertificate = lazy(() =>
-  import("@/pages/BIS Certification Faq/Q13TraderGetBISCertificate")
+  import("@/pages/BIS Certification Faq/Q13TraderGetBISCertificateEng")
 );
 
 export const BISCertificationFaqRoutes = () => {
@@ -58,7 +58,7 @@ export const BISCertificationFaqRoutes = () => {
         path="/get-bis-certification"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
-            <Q2GetBISCertification />
+            <Q2GetBISCertificationEng />
           </Suspense>
         }
       />

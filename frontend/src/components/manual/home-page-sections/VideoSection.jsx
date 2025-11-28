@@ -60,9 +60,9 @@ const VideoSection = ({ onVideoPopupChange }) => {
 
   return (
     <div className="max-w-full mx-auto px-4 py-8 md:px-12 md:pt-16 md:pb-2 bg-white overflow-hidden">
-      <h2 className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-neutral-800">
+      <div className="text-3xl md:text-5xl font-bold font-playfair text-center mb-10 text-neutral-800">
         Video Showcase
-      </h2>
+      </div>
 
       <div
         ref={containerRef}

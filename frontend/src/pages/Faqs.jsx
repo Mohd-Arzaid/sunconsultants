@@ -2,6 +2,7 @@ import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Faqs = () => {
   // FAQ questions with their corresponding routes
@@ -59,55 +60,55 @@ const Faqs = () => {
       path: "/trader-get-bis-certificate",
     },
     {
-      question: "Who can apply for BIS certificate?",
-      path: "/who-can-apply-for-bis-certificate",
+      question: "Who can apply for BIS Certificate in India?",
+      path: "/apply-bis-certificate",
     },
     {
-      question: "How to get BIS certificate?",
-      path: "/how-to-get-bis-certificate",
+      question: "How to Get BIS Certificate in India?",
+      path: "/get-bis-certificate-in-india",
     },
     {
       question: "How to check BIS certificate online?",
-      path: "/how-to-check-bis-certificate-online",
+      path: "/check-bis-certificate-online",
     },
     {
-      question: "How to download BIS certificate from Manakonline?",
-      path: "/how-to-download-bis-certificate-from-manakonline",
+      question: "How to download BIS certificate from manakonline?",
+      path: "/download-bis-certificate-from-manakonline",
     },
     {
-      question: "How to download BIS certificate?",
-      path: "/how-to-download-bis-certificate",
+      question: "How to download BIS Certificate?",
+      path: "/download-bis-certificate",
     },
     {
-      question: "How to get BIS certificate for import?",
-      path: "/how-to-get-bis-certificate-for-import",
+      question: "How to get BIS Certificate for import?",
+      path: "/bis-certificate-import",
     },
     {
       question: "How to get BIS certificate for import in India?",
-      path: "/how-to-get-bis-certificate-for-import-in-india",
+      path: "/bis-certificate-for-import-in-india",
     },
     {
-      question: "BIS certificate who can apply?",
-      path: "/bis-certificate-who-can-apply",
+      question: "BIS Certificate who can apply?",
+      path: "/certificate-who-can-apply",
     },
     {
       question: "BIS certificate for import cost?",
-      path: "/bis-certificate-for-import-cost",
+      path: "/certificate-for-import-cost",
     },
     {
       question: "BIS certificate vs ISO certificate?",
-      path: "/bis-certificate-vs-iso-certificate",
+      path: "/certificate-vs-iso-certificate",
     },
     {
-      question: "Can BIS hallmark be fake?",
-      path: "/can-bis-hallmark-be-fake",
+      question: "Can BIS Hallmark Be Fake?",
+      path: "/bis-hallmark-be-fake",
     },
     {
-      question: "BIS and ISI difference?",
-      path: "/bis-and-isi-difference",
+      question: "Difference between BIS and ISI?",
+      path: "/bis-isi-difference",
     },
     {
-      question: "BIS and ISO difference?",
+      question: "Difference between BIS and ISO?",
       path: "/bis-and-iso-difference",
     },
     {
@@ -119,13 +120,14 @@ const Faqs = () => {
       path: "/bis-vs-iso",
     },
     {
-      question: "Can foreign companies get BIS certification?",
-      path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+      question: "Can Foreign Companies Get BIS Certification?",
+      path: "/foreign-companies-get-bis-certification",
     },
   ];
 
   return (
     <>
+      <FaqsMetaTags />
       <div className="bg-white">
         {/* Hero Section */}
         <div className="bg-white pt-10">
@@ -134,18 +136,23 @@ const Faqs = () => {
               Frequently Asked Questions
             </h1>
             <p className="mt-3 max-w-3xl mx-auto text-lg text-center md:text-xl text-neutral-500 font-geist leading-relaxed">
-              Find answers to the most common questions about BIS certification,
+              {/* Find answers to the most common questions about BIS certification,
               application processes, verification, and more. Click on any
-              question to learn more.
+              question to learn more. */}
+              We&apos;ve compiled answers to the most frequently asked questions
+              about BIS certification. Whether you&apos;re looking to understand
+              the application process, verify a certificate, or learn about
+              costs and requirements, you&apos;ll find detailed information
+              below.
             </p>
           </div>
         </div>
 
         {/* FAQs Content */}
-        <div className="max-w-[88rem] mx-auto px-4 md:px-12 pt-6 md:pt-8 pb-12">
+        <div className="max-w-[88rem] mx-auto px-4 md:px-12 pt-8 md:pt-10 pb-12">
           <div className="max-w-4xl mx-auto">
             {/* Introduction */}
-            <div className="mb-10 md:mb-12">
+            {/* <div className="mb-10 md:mb-12">
               <p className="text-lg md:text-xl text-center text-neutral-600 font-geist leading-relaxed">
                 We&apos;ve compiled answers to the most frequently asked
                 questions about BIS certification. Whether you&apos;re looking
@@ -153,7 +160,7 @@ const Faqs = () => {
                 learn about costs and requirements, you&apos;ll find detailed
                 information below.
               </p>
-            </div>
+            </div> */}
 
             {/* FAQs List */}
             <div className="mb-10 md:mb-12">
@@ -170,7 +177,7 @@ const Faqs = () => {
                     <div className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-neutral-700 mr-4 mt-3 shrink-0 group-hover:bg-neutral-900 transition-colors duration-200"></span>
                       <div className="flex-1">
-                        <h3 className="text-base md:text-xl font-geist font-medium text-neutral-800 group-hover:text-neutral-900 transition-colors duration-200 leading-relaxed">
+                        <h3 className="text-lg md:text-xl font-geist font-medium text-neutral-800 group-hover:text-neutral-900 transition-colors duration-200 leading-relaxed">
                           {faq.question}
                         </h3>
                       </div>
@@ -221,6 +228,99 @@ const Faqs = () => {
 };
 
 export default Faqs;
+
+const FaqsMetaTags = () => {
+  const title =
+    "BIS Certification FAQs - Frequently Asked Questions | Sun Certifications India";
+  const description =
+    "Find answers to the most common questions about BIS certification, application processes, verification, costs, and requirements. Get expert guidance on BIS certification FAQs.";
+  const keywords =
+    "BIS certification FAQs, BIS certificate questions, BIS certification process, BIS certificate verification, BIS certification cost, BIS certificate application, BIS certification requirements, BIS certificate online, BIS certification India";
+  const canonicalUrl = "https://bis-certifications.com/faqs";
+  const author = "Sun Certifications India";
+  const publisher =
+    "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+  const ogTitle = "BIS Certification FAQs - Frequently Asked Questions";
+  const ogDescription =
+    "Get answers to common BIS certification questions. Learn about application processes, verification, costs, and requirements for BIS certification in India.";
+  const twitterTitle = "BIS Certification FAQs - Your Questions Answered";
+  const twitterDescription =
+    "Find comprehensive answers to frequently asked questions about BIS certification, application processes, and requirements.";
+
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://bis-certifications.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "FAQs",
+        item: canonicalUrl,
+      },
+    ],
+  };
+
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to check BIS certification?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can check BIS certification online through the BIS portal using the certificate number, CM/L number, or R-number. Visit our detailed guide for step-by-step instructions.",
+        },
+      },
+    ],
+  };
+
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
+      <meta name="author" content={author} />
+      <meta name="publisher" content={publisher} />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:title" content={ogTitle} />
+      <meta property="og:description" content={ogDescription} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:site_name" content="Sun Certifications India" />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:image"
+        content="https://bis-certifications.com/hero-image/hero-image.webp"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={twitterTitle} />
+      <meta name="twitter:description" content={twitterDescription} />
+      <meta
+        name="twitter:image"
+        content="https://bis-certifications.com/hero-image/hero-image.webp"
+      />
+      <link rel="canonical" href={canonicalUrl} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
+    </Helmet>
+  );
+};
 
 const Footer = () => {
   return (
