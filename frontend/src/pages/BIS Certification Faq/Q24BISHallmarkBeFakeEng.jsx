@@ -33,16 +33,16 @@ const Q24BISHallmarkBeFakeEng = () => {
 export default Q24BISHallmarkBeFakeEng;
 
 const Q24BISHallmarkBeFakeMetaData = () => {
-  const title = "Can BIS Hallmark Be Fake? - Clear & Simple Answer Guide";
+  const title = "Can BIS hallmark be fake - Clear & Simple Answer Guide";
 
   const description =
-    "Can BIS Hallmark Be Fake. This guide explains Can BIS Hallmark Be Fake?";
+    "This guide explains complete information about Can BIS hallmark be fake";
 
   const keywords =
-    "BIS Certification, Import License, BIS Certification in India, BIS license, BIS Mark, BIS Hallmark";
+    "BIS Certification, Import License, BIS Certification in India, BIS hallmark be fake, BIS Mark, Cost of BIS License, Foreign companies get BIS License";
 
   const canonicalUrl =
-    "https://bis-certifications.com/can-bis-hallmark-be-fake";
+    "https://bis-certifications.com/can-bis-hallmark-be-fake/";
 
   const author = "Sun Certifications India";
 
@@ -50,14 +50,14 @@ const Q24BISHallmarkBeFakeMetaData = () => {
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
 
   const ogTitle =
-    "Can BIS Hallmark Be Fake? | Complete Guide & Easy Explanation";
+    "Can BIS hallmark be fake | Complete Guide & Easy Explanation";
 
   const ogDescription =
-    "This guide covers Can BIS Hallmark Be Fake in simple steps. Understand about BIS Hallmark, what details are required, and how to avoid errors or non-compliance.";
+    "This guide explains complete information about Can BIS hallmark be fake";
 
-  const twitterTitle = "Can BIS Hallmark Be Fake | Simple Guide";
+  const twitterTitle = "Can BIS hallmark be fake | Simple Guide";
 
-  const twitterDescription = "Quick guide on Can BIS Hallmark Be Fake.";
+  const twitterDescription = "Can foreign companies get BIS Certification.";
 
   return (
     <Helmet>
