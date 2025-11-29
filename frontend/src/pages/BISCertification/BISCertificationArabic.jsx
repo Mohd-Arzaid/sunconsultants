@@ -1546,7 +1546,8 @@ const BISCertificationServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
-                alt="BISCRS"
+                alt="BISCRS Logo"
+                title="BISCRS Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1562,7 +1563,8 @@ const BISCertificationServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
-                alt="PlasticWasteManagement"
+                alt="Plastic Waste Management Logo"
+                title="Plastic Waste Management Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1578,7 +1580,8 @@ const BISCertificationServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={EPRCertificate}
-                alt="EPRCertificate"
+                alt="EPR Certificate Logo"
+                title="EPR Certificate Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1594,7 +1597,8 @@ const BISCertificationServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
-                alt="LMPC"
+                alt="LMPC Logo"
+                title="LMPC Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -1627,7 +1631,8 @@ const BISCertificationServices = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMarkImage}
-                alt="ISIMark"
+                alt="ISI Mark Logo"
+                title="ISI Mark Logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
