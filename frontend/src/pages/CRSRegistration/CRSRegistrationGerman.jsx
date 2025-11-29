@@ -36,6 +36,7 @@ import { ClockLoader } from "react-spinners";
 import axios from "axios";
 import BISImage from "../../assets/images/BIS.jpg";
 import BISCRS from "../../assets/images/BISCRS.jpg";
+import CDSCO from "../../assets/images/CDSCO.jpg";
 import PlasticWasteManagement from "../../assets/images/PlasticWasteManagement.jpg";
 import EPRCertificate from "../../assets/images/EPRCertificate.jpg";
 import LMPC from "../../assets/images/LMPC.jpg";
