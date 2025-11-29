@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Check, SlashIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect, useMemo } from "react";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -43,29 +43,6 @@ import BISFMProductTable from "@/pages/BISFMProductTable/BISFMProductTable.jsx";
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 const BISFM = () => {
-  // Prevent auto-scroll on mount - ensure page stays at top
-  useEffect(() => {
-    // Immediately scroll to top
-    window.scrollTo(0, 0);
-
-    // Also check if there's a hash in URL that might cause scroll
-    // If hash exists and it's not intentional, remove it
-    if (window.location.hash === "#product-table") {
-      // Clear hash to prevent auto-scroll to product table
-      window.history.replaceState(null, "", window.location.pathname);
-    }
-
-    // Additional safeguard: ensure scroll stays at top after a brief delay
-    const timeoutId = setTimeout(() => {
-      // Only scroll to top if we're not already there (to avoid unnecessary scroll)
-      if (window.scrollY > 50) {
-        window.scrollTo(0, 0);
-      }
-    }, 200);
-
-    return () => clearTimeout(timeoutId);
-  }, []);
-
   return (
     <div className="relative">
       <MetaTags />
@@ -77,6 +54,7 @@ const BISFM = () => {
       <div id="product-table">
         <BISFMProductTable />
       </div>
+      <LanguageSelector />
       <div id="services">
         <Services />
       </div>
@@ -2196,6 +2174,161 @@ export const ServiceFaq = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+const LanguageSelector = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  const languages = [
+    {
+      code: "en",
+      name: "English",
+      flag: "https://flagcdn.com/w40/gb.png",
+      path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    },
+    {
+      code: "zh",
+      name: "Chinese",
+      flag: "https://flagcdn.com/w40/cn.png",
+      path: "/zh/wai-guo-sheng-chan-shang-yin-du-bis-ren-zheng-zhi-nan",
+    },
+    {
+      code: "de",
+      name: "German",
+      flag: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAElBMVEUAAAD/zgDdAADnAADaAAD/2AAtsSEoAAAA+ElEQVR4nO3QMQGAMAAEsYeCf8tIuI0pkZANAAAAAAAAAAAAAAAAAAAAgB8dwm6CoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKewh7CbsIipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUofMGTNC8HkSxoAAAAASUVORK5CYII=",
+      path: "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
+    },
+    {
+      code: "nl",
+      name: "Dutch",
+      flag: "https://flagcdn.com/w40/nl.png",
+      path: "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis",
+    },
+    {
+      code: "ja",
+      name: "Japanese",
+      flag: "https://flagcdn.com/w40/jp.png",
+      path: "/ja/bis-nintei-gaikoku-seizousha-no-tame-no-gaido-india-no-bis",
+    },
+    {
+      code: "ko",
+      name: "Korean",
+      flag: "https://flagcdn.com/w40/kr.png",
+      path: "/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu",
+    },
+    {
+      code: "fr",
+      name: "French",
+      flag: "https://flagcdn.com/w40/fr.png",
+      path: "/fr/guide-certification-bis-pour-fabricants-etrangers-bis-inde",
+    },
+    {
+      code: "es",
+      name: "Spanish",
+      flag: "https://flagcdn.com/w40/es.png",
+      path: "/es/guia-certificacion-bis-para-fabricantes-extranjeros-bis-indio",
+    },
+    {
+      code: "th",
+      name: "Thai",
+      flag: "https://flagcdn.com/w40/th.png",
+      path: "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
+    },
+    {
+      code: "id",
+      name: "Indonesian",
+      flag: "https://flagcdn.com/w40/id.png",
+      path: "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
+    },
+    {
+      code: "it",
+      name: "Italian",
+      flag: "https://flagcdn.com/w40/it.png",
+      path: "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano",
+    },
+    {
+      code: "ar",
+      name: "Arabic",
+      flag: "https://flagcdn.com/w40/sa.png",
+      path: "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind",
+    },
+    // {
+    //   code: "vi",
+    //   name: "Vietnamese",
+    //   flag: "https://flagcdn.com/w40/vn.png",
+    //   path: "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
+    // },
+  ];
+
+  const currentLanguage = languages.find((lang) => lang.path === currentPath);
+
+  return (
+    <div className=" bg-white">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
+        <div className="flex flex-col items-center gap-6 md:gap-8">
+          {/* Heading */}
+          <div className="flex flex-col items-center">
+            <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+              View This Page in Your Language
+            </h2>
+            <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
+              Select your preferred language to view this content
+            </p>
+          </div>
+
+          {/* Language Flags Grid */}
+          <div className="w-full max-w-[1000px]">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-3 md:gap-4">
+              {languages.map((language) => {
+                const isActive = currentPath === language.path;
+                return (
+                  <Link
+                    key={language.code}
+                    to={language.path}
+                    className={`group relative flex flex-col items-center justify-center p-4 md:p-5 rounded-xl md:rounded-2xl border-2 transition-all duration-300 ${
+                      isActive
+                        ? "bg-[#1A8781]/10 border-[#1A8781] shadow-lg shadow-[#1A8781]/20"
+                        : "bg-white border-gray-200 hover:border-[#1A8781] hover:shadow-md hover:bg-[#F9F7F2]"
+                    }`}
+                  >
+                    {/* Flag */}
+                    <div
+                      className={`w-10 h-7 md:w-12 md:h-9 mb-2 transition-transform duration-300 flex items-center justify-center ${
+                        isActive ? "scale-110" : "group-hover:scale-110"
+                      }`}
+                    >
+                      <img
+                        src={language.flag}
+                        alt={`${language.name} flag`}
+                        className="w-full h-full object-cover rounded-sm"
+                      />
+                    </div>
+                    {/* Language Name */}
+                    <span
+                      className={`text-base md:text-lg font-geist font-medium text-center leading-tight ${
+                        language.code === "ar" ? "font-semibold" : ""
+                      } ${
+                        isActive
+                          ? "text-[#1A8781] font-semibold"
+                          : "text-[#42434d] group-hover:text-[#1A8781]"
+                      }`}
+                    >
+                      {language.name}
+                    </span>
+                    {/* Active Indicator */}
+                    {isActive && (
+                      <div className="absolute top-2 right-2 w-2 h-2 bg-[#1A8781] rounded-full"></div>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
