@@ -12,6 +12,9 @@ const BISFMKorean = lazy(() => import("../pages/BISFM/BISFMKorean"));
 const BISFMFrench = lazy(() => import("../pages/BISFM/BISFMFrench"));
 const BISFMSpanish = lazy(() => import("../pages/BISFM/BISFMSpanish"));
 const BISFMThai = lazy(() => import("../pages/BISFM/BISFMThai"));
+const BISFMIndonesian = lazy(() => import("../pages/BISFM/BISFMIndonesian"));
+const BISFMItalian = lazy(() => import("../pages/BISFM/BISFMItalian"));
+const BISFMArabic = lazy(() => import("../pages/BISFM/BISFMArabic"));
 
 export const BISFMPagesRoutes = () => {
   return (
@@ -85,6 +88,30 @@ export const BISFMPagesRoutes = () => {
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <BISFMThai />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <BISFMIndonesian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <BISFMItalian />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <BISFMArabic />
           </Suspense>
         }
       />

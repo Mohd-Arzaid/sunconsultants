@@ -34,8 +34,14 @@ const ServicesRightSideContentEng = () => {
     "/what-is-crs-bis-or-crs-registration",
     // SCHEME X PATH
     "/indian-bis-certification-under-scheme-x",
-    // BISFM PATH
+    // BISFM PATH - English
     "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+    // BISFM PATH - Indonesian
+    "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
+    // BISFM PATH - Italian
+    "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano",
+    // BISFM PATH - Arabic
+    "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind",
     "/Blogs",
     "/bis-certificate-for-tin-ingots",
     "/bis-certificate-for-refined-zinc",
@@ -742,6 +748,27 @@ const ContactFormServicesRightSideContentEng = () => {
     // BIS CERTIFICATION PATH
     if (path.includes("/what-is-bis-certificate-indian-bis"))
       return "BIS Certification - English Page";
+
+    // BISFM (FMCS - Foreign Manufacturers) - Multi-language paths
+    // BISFM PATH - Indonesian
+    if (
+      path.includes(
+        "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"
+      )
+    )
+      return "BIS FMCS Certification - Indonesian Page";
+    // BISFM PATH - Italian
+    if (
+      path.includes(
+        "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
+      )
+    )
+      return "BIS FMCS Certification - Italian Page";
+    // BISFM PATH - Arabic
+    if (
+      path.includes("/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind")
+    )
+      return "BIS FMCS Certification - Arabic Page";
 
     // MINISTRY UPDATES PATH
     // Refined Zinc QCO Withdrawal Order
