@@ -623,7 +623,7 @@ const OverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
       <h1 className="service-left-content-heading-two">
-        Chứng nhận BIS ISI Mark cho Nhà sản xuất Ấn Độ
+        Các Chương trình Chứng nhận BIS tại Ấn Độ
       </h1>
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img

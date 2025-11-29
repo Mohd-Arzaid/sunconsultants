@@ -651,9 +651,7 @@ const OverviewSection = () => {
         <span className="service-left-content-index-heading">개요</span>
         <Separator className="service-left-content-separator" />
       </div>
-      <h1 className="service-left-content-heading-two">
-        인도 제조업체를 위한 BIS ISI 마크 인증
-      </h1>
+      <h1 className="service-left-content-heading-two">인도의 BIS 인증 제도</h1>
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
           src="/services-main-images/BIS-Certification-for-Indian-Manufacturers.png"

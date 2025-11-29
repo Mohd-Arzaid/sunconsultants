@@ -649,9 +649,7 @@ const OverviewSection = () => {
         <span className="service-left-content-index-heading">概述</span>
         <Separator className="service-left-content-separator" />
       </div>
-      <h1 className="service-left-content-heading-two">
-        印度制造商的BIS ISI标志认证
-      </h1>
+      <h1 className="service-left-content-heading-two">印度的BIS认证计划</h1>
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
         <img
           src="/services-main-images/BIS-Certification-for-Indian-Manufacturers.png"
