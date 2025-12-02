@@ -358,9 +358,9 @@ const SchemeXHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Pesan Janji Temu
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Ingin menghubungi tim kami dan menjadwalkan panggilan?
@@ -823,9 +823,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Layanan Kami
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1808,9 +1808,9 @@ const SchemeXServiceFaq = () => {
       aria-label="Pertanyaan yang Sering Diajukan"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Pertanyaan yang Sering Diajukan
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Tidak menemukan jawaban yang Anda cari?{" "}
           <a
@@ -2327,9 +2327,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         kinerja yang benar-benar baik.
       </p>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Catatan Khusus untuk UMKM
-      </h3>
+      </div>
 
       <p className="service-left-content-paragraph">
         Seperti halnya banyak sektor lain, Usaha Mikro, Kecil, dan Menengah
@@ -2348,7 +2348,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">Logo BIS Skema X</h3>
+      <h2 className="service-left-content-heading-three">Logo BIS Skema X</h2>
 
       <p className="service-left-content-paragraph">
         Tanda standar BIS Skema X membentuk tanda kualitas dan prinsip
@@ -2377,7 +2377,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-      <h3 className="service-left-content-heading-three">Implikasi Hukum</h3>
+      <div className="service-left-content-heading-three">Implikasi Hukum</div>
 
       <p className="service-left-content-paragraph">
         Tanda Standar BIS adalah tanda kepercayaan dan kualitas. Tanda hanya
@@ -2508,9 +2508,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         Produk yang Dicakup oleh Skema-X
-      </h3>
+      </h2>
 
       <p className="service-left-content-paragraph">
         Skema-X mencakup produk dengan risiko tertinggi terhadap keselamatan dan
@@ -2905,9 +2905,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
         {/* Heading and Description */}
         <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+          <h2 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
             Standar Keselamatan Berdasarkan Produk
-          </h3>
+          </h2>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             Deskripsi Mesin dan Peralatan Listrik
           </p>

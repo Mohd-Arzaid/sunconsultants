@@ -361,9 +361,9 @@ const SchemeXGermanHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Termin buchen
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Möchten Sie unser Team kontaktieren und einen Anruf planen?
@@ -884,9 +884,9 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
         Vertrauen und wirklich gute Leistung.
       </p>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Besonderer Hinweis für KMU
-      </h3>
+      </div>
 
       <p className="service-left-content-paragraph">
         Wie in vielen anderen Sektoren müssen auch Mikro-, Klein- und
@@ -906,7 +906,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">BIS Schema X Logo</h3>
+      <h2 className="service-left-content-heading-three">BIS Schema X Logo</h2>
 
       <p className="service-left-content-paragraph">
         Das BIS-Standardzeichen von Schema X bildet ein Qualitätszeichen und ein
@@ -936,9 +936,9 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
         />
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Rechtliche Auswirkungen
-      </h3>
+      </div>
 
       <p className="service-left-content-paragraph">
         Das BIS-Standardzeichen ist ein Zeichen für Vertrauen und Qualität. Das
@@ -1070,9 +1070,9 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         Von Schema-X abgedeckte Produkte
-      </h3>
+      </h2>
 
       <p className="service-left-content-paragraph">
         Schema-X umfasst Produkte mit dem höchsten Risiko für Sicherheit und
@@ -1473,9 +1473,9 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
 
         {/* Heading and Description */}
         <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+          <div className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
             Produktweise Sicherheitsstandards
-          </h3>
+          </div>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             Beschreibung von Maschinen und elektrischen Geräten
           </p>
@@ -1977,9 +1977,9 @@ const SchemeXGermanServiceFaq = () => {
       aria-label="Häufig gestellte Fragen"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Häufig gestellte Fragen
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Sie finden die gesuchte Antwort nicht?{" "}
           <a
@@ -2151,9 +2151,9 @@ export const ServicesGerman = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Unsere Dienstleistungen
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

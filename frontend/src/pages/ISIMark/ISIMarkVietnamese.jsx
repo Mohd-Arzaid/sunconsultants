@@ -295,9 +295,9 @@ const ISIMarkContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Đặt lịch hẹn
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Muốn liên hệ với đội ngũ của chúng tôi và đặt lịch gọi?
@@ -799,9 +799,9 @@ const RequirementSection = () => {
       <p className="service-left-content-paragraph">
         Có hai thủ tục: Thông thường và Đơn giản hóa.
       </p>
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. Thông thường (60-65 ngày)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "Thiết lập PTN nội bộ, sản phẩm phù hợp tiêu chuẩn Ấn Độ",
@@ -811,9 +811,9 @@ const RequirementSection = () => {
           "Cấp giấy phép khi đạt đủ điều kiện",
         ]}
       />
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. Đơn giản hóa (35-40 ngày)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "Nộp tài liệu sản phẩm đã thử nghiệm từ PTN được BIS công nhận",
@@ -1155,9 +1155,9 @@ const ISIMarkServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Dịch vụ của chúng tôi
-            </h2>
+            </div>
           </BoxReveal>
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">

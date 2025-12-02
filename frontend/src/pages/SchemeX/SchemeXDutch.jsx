@@ -361,9 +361,9 @@ const SchemeXHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Maak een Afspraak
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Wilt u contact opnemen met ons team en een gesprek inplannen?
@@ -826,9 +826,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Onze Diensten
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1815,9 +1815,9 @@ const SchemeXServiceFaq = () => {
       aria-label="Veelgestelde Vragen"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Veelgestelde Vragen
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Kan het antwoord dat u zoekt niet vinden?{" "}
           <a
@@ -2348,9 +2348,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         en echt goede prestaties.
       </p>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Speciale Notitie voor MSME's
-      </h3>
+      </div>
 
       <p className="service-left-content-paragraph">
         Net als bij veel andere sectoren, moeten Micro, Klein, en Middelgrote
@@ -2370,7 +2370,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">BIS Scheme X Logo</h3>
+      <h2 className="service-left-content-heading-three">BIS Scheme X Logo</h2>
 
       <p className="service-left-content-paragraph">
         De BIS standaard mark van Scheme X vormt een kwaliteitsmark en een
@@ -2399,9 +2399,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Juridische Implicaties
-      </h3>
+      </div>
 
       <p className="service-left-content-paragraph">
         BIS Standaard Mark is een mark van vertrouwen en kwaliteit. De mark is
@@ -2533,9 +2533,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         Producten Gedekt door Scheme-X
-      </h3>
+      </h2>
 
       <p className="service-left-content-paragraph">
         Scheme-X dekt producten met het hoogste risico voor veiligheid en
@@ -2932,9 +2932,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
         {/* Heading and Description */}
         <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+          <div className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
             Veiligheidsnorm per Product
-          </h3>
+          </div>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             Beschrijving van Machines en Elektrische Apparatuur
           </p>

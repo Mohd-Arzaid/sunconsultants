@@ -348,9 +348,9 @@ const SchemeXChineseHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         预约咨询
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         想联系我们的团队并安排通话？
@@ -813,9 +813,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               我们的服务
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -980,9 +980,9 @@ const SchemeXProductTable = () => {
     <div className="w-full pb-12">
       <div className="max-w-[88rem] mx-auto px-4 md:px-12">
         <div className="flex flex-col gap-2 mt-6">
-          <h2 className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
+          <div className="text-[28px] md:text-[40px] font-roboto font-bold text-[#131316] leading-none">
             产品安全标准
-          </h2>
+          </div>
 
           <p className="font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-none mb-6">
             机械和电气设备描述
@@ -1746,9 +1746,9 @@ const SchemeXServiceFaq = () => {
   return (
     <section id="faqs" className="my-2 scroll-mt-20" aria-label="常见问题">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           常见问题
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           找不到您要找的答案？{" "}
           <a
@@ -2177,7 +2177,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         带有BIS标准标记的产品是符合性标记，证明并向用户保证产品安全、可靠且质量良好。它也是信任和真正良好性能的标记。
       </p>
 
-      <h3 className="service-left-content-heading-three">中小微企业特别说明</h3>
+      <div className="service-left-content-heading-three">中小微企业特别说明</div>
 
       <p className="service-left-content-paragraph">
         与许多其他行业一样，微型、小型和中型企业（MSME）也必须遵守方案X并为其机械和电气设备获得BIS认证。虽然遵守监管要求可能看起来具有挑战性，但方案X证书对MSME来说是一个增值和优势，原因如下：
@@ -2192,7 +2192,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">BIS方案X标志</h3>
+      <h2 className="service-left-content-heading-three">BIS方案X标志</h2>
 
       <p className="service-left-content-paragraph">
         方案X的BIS标准标记构成了质量标记和信任原则。标志包含：
@@ -2218,7 +2218,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-      <h3 className="service-left-content-heading-three">法律影响</h3>
+      <div className="service-left-content-heading-three">法律影响</div>
 
       <p className="service-left-content-paragraph">
         BIS标准标记是信任和质量的标记。只有在有效合同到位后才能使用该标记。只有有效合同才允许所有者使用该标记。在没有有效合同的情况下使用该标记是违反印度宪法的违法行为，等同于拥有法律标记。标记的所有者在使用许可证CM/L-XXXXXXXXXX用于没有BIS认证的产品时受到严格限制。
@@ -2341,7 +2341,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-      <h3 className="service-left-content-heading-three">方案X涵盖的产品</h3>
+      <h2 className="service-left-content-heading-three">方案X涵盖的产品</h2>
 
       <p className="service-left-content-paragraph">
         方案X涵盖对安全和性能风险最高的产品，包括：
@@ -2705,9 +2705,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
         {/* Heading and Description */}
         <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+          <h2 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
             产品安全标准
-          </h3>
+          </h2>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             机械和电气设备描述
           </p>

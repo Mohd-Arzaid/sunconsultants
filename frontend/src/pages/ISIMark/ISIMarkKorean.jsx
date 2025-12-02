@@ -308,9 +308,9 @@ const ISIMarkContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         상담 예약하기
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         팀과 연락하고 통화 일정을 잡으시겠습니까?
@@ -852,9 +852,9 @@ const RequirementSection = () => {
         BIS 인증을 확보하는 것은 다단계 프로세스입니다. BIS 인증 프로세스에는
         일반 절차와 간소화 절차라는 두 가지 주요 절차가 있습니다.
       </p>
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. 일반 절차(60-65일)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "제조업체는 사내 실험실을 설치하고 제품을 인도 표준에 부합시킵니다.",
@@ -865,9 +865,9 @@ const RequirementSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. 간소화 절차(35-40일)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "제조업체는 BIS에서 인정한 실험실에서 사전 테스트된 제품의 서류를 제출합니다.",
@@ -1224,9 +1224,9 @@ const ISIMarkServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               우리의 서비스
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
