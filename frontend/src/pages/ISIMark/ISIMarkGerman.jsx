@@ -309,9 +309,9 @@ const ISIMarkContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Termin vereinbaren
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Möchten Sie unser Team kontaktieren und einen Anruf vereinbaren?
@@ -892,9 +892,9 @@ const RequirementSection = () => {
         gibt zwei Hauptverfahren, um den BIS-Zertifizierungsprozess anzugehen:
         Normalverfahren und Vereinfachtes Verfahren.{" "}
       </p>
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. Normalverfahren (60-65 Tage)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "Der Hersteller richtet hauseigene Labors ein und bringt die Produkte in Übereinstimmung mit den indischen Standards.",
@@ -905,9 +905,9 @@ const RequirementSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. Vereinfachtes Verfahren (35-40 Tage)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "Hersteller reicht Dokumente vorgetesteter Produkte von Labors ein, die von BIS anerkannt sind.",
@@ -1277,9 +1277,9 @@ const ISIMarkServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Unsere Dienstleistungen
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

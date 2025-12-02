@@ -293,9 +293,9 @@ const ISIMarkContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         احجز موعداً
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         هل ترغب في التواصل مع فريقنا وتحديد موعد مكالمة؟
@@ -793,9 +793,9 @@ const RequirementSection = () => {
       <p className="service-left-content-paragraph">
         هناك طريقتان: الإجراء العادي والإجراء المبسط.
       </p>
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. الإجراء العادي (60–65 يوماً)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "إنشاء مختبرات داخلية ومواءمة المنتجات مع المعايير الهندية",
@@ -805,9 +805,9 @@ const RequirementSection = () => {
           "منح الترخيص عند استيفاء الشروط",
         ]}
       />
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. الإجراء المبسط (35–40 يوماً)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "تقديم مستندات لمنتجات مختبرة مسبقاً من مختبرات معترف بها من BIS",
@@ -1150,9 +1150,9 @@ const ISIMarkServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               خدماتنا
-            </h2>
+            </div>
           </BoxReveal>
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">

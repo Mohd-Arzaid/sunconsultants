@@ -311,9 +311,9 @@ const ISIMarkContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Réserver un Rendez-vous
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Vous voulez contacter notre équipe et planifier un appel ?
@@ -891,9 +891,9 @@ const RequirementSection = () => {
         a deux procédures principales pour aborder le processus de certification
         BIS : Procédure Normale et Procédure Simplifiée.{" "}
       </p>
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. Procédure Normale (60-65 Jours)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "Le fabricant met en place des laboratoires internes et amène les produits à la conformité avec les Normes Indiennes.",
@@ -904,9 +904,9 @@ const RequirementSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. Procédure Simplifiée (35-40 Jours)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "Le fabricant soumet des documents de produits pré-testés provenant de laboratoires reconnus par BIS.",
@@ -1278,9 +1278,9 @@ const ISIMarkServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Nos Services
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

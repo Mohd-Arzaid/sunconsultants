@@ -306,9 +306,9 @@ const ISIMarkContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         预约咨询
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         想联系我们的团队并安排通话？
@@ -812,9 +812,9 @@ const RequirementSection = () => {
       <p className="service-left-content-paragraph">
         获得BIS认证是一个多步骤的过程。有两种主要程序来处理BIS认证过程：正常程序和简化程序。
       </p>
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. 正常程序（60-65天）
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "制造商建立内部实验室并使产品符合印度标准。",
@@ -825,9 +825,9 @@ const RequirementSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. 简化程序（35-40天）
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "制造商提交来自BIS认可实验室的预测试产品文件。",
@@ -1165,9 +1165,9 @@ const ISIMarkServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               我们的服务
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

@@ -15,6 +15,7 @@ const BISFMThai = lazy(() => import("../pages/BISFM/BISFMThai"));
 const BISFMIndonesian = lazy(() => import("../pages/BISFM/BISFMIndonesian"));
 const BISFMItalian = lazy(() => import("../pages/BISFM/BISFMItalian"));
 const BISFMArabic = lazy(() => import("../pages/BISFM/BISFMArabic"));
+const BISFMVietnamese = lazy(() => import("../pages/BISFM/BISFMVietnamese"));
 
 export const BISFMPagesRoutes = () => {
   return (
@@ -112,6 +113,14 @@ export const BISFMPagesRoutes = () => {
         element={
           <Suspense fallback={<ServicesPageSkeleton />}>
             <BISFMArabic />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"
+        element={
+          <Suspense fallback={<ServicesPageSkeleton />}>
+            <BISFMVietnamese />
           </Suspense>
         }
       />

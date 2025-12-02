@@ -37,6 +37,8 @@ const ServicesRightSideContentVietnamese = () => {
 
     // BIS CERTIFICATION PATH
     "/vi/chung-chi-bis-la-gi-bis-an-do",
+    // BISFM PATH
+    "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
   ];
 
   // Check if current path should show these components
@@ -451,33 +453,33 @@ const WhyChooseUsServicesRightSideContentVietnamese = () => {
       {/* Highlight Stats */}
       <div className="mt-4 grid grid-cols-2 gap-2">
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-blue-200">
-          <h3 className="text-2xl font-bold text-blue-600 font-geist">
+          <div className="text-2xl font-bold text-blue-600 font-geist">
             {stats.experience.value}
-          </h3>
+          </div>
           <p className="text-xs text-gray-600 font-geist">
             {stats.experience.label}
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-emerald-200">
-          <h3 className="text-2xl font-bold text-emerald-600 font-geist">
+          <div className="text-2xl font-bold text-emerald-600 font-geist">
             {stats.clients.value}
-          </h3>
+          </div>
           <p className="text-xs text-gray-600 font-geist">
             {stats.clients.label}
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-amber-200">
-          <h3 className="text-2xl font-bold text-amber-600 font-geist">
+          <div className="text-2xl font-bold text-amber-600 font-geist">
             {stats.successRate.value}
-          </h3>
+          </div>
           <p className="text-xs text-gray-600 font-geist">
             {stats.successRate.label}
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-purple-200">
-          <h3 className="text-2xl font-bold text-purple-600 font-geist">
+          <div className="text-2xl font-bold text-purple-600 font-geist">
             {stats.countries.value}
-          </h3>
+          </div>
           <p className="text-xs text-gray-600 font-geist">
             {stats.countries.label}
           </p>
@@ -496,9 +498,9 @@ const WhyChooseUsServicesRightSideContentVietnamese = () => {
                 {reasonIcons[index]}
               </div>
               <div>
-                <h3 className="font-geist font-semibold text-gray-900 text-sm">
+                <div className="font-geist font-semibold text-gray-900 text-sm">
                   {reason.title}
-                </h3>
+                </div>
                 <p className="text-xs text-gray-600 font-geist">
                   {reason.description}
                 </p>
@@ -572,6 +574,8 @@ const ContactFormServicesRightSideContentVietnamese = () => {
       return "ISI Mark (Vietnamese)";
     if (path.includes("/vi/chung-chi-bis-la-gi-bis-an-do"))
       return "BIS Certification (Vietnamese)";
+    if (path.includes("/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"))
+      return "BIS Mark (ISI License) for Foreign Manufacturers (Vietnamese)";
   };
 
   const [formData, setFormData] = useState({

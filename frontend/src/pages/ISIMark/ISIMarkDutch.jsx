@@ -308,9 +308,9 @@ const ISIMarkContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Maak een Afspraak
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Wilt u ons team contacteren en een gesprek plannen?
@@ -883,9 +883,9 @@ const RequirementSection = () => {
         stappen. Er zijn twee hoofdprocedures om het BIS certificeringsproces te
         benaderen: Normale Procedure en Vereenvoudigde Procedure.{" "}
       </p>
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. Normale Procedure (60-65 Dagen)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "De fabrikant richt interne laboratoria op en brengt de producten in overeenstemming met de Indiase Normen.",
@@ -896,9 +896,9 @@ const RequirementSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. Vereenvoudigde Procedure (35-40 Dagen)
-      </h3>
+      </div>
       <PointsListWithoutHeading
         points={[
           "Fabrikant dient documenten in van vooraf geteste producten van door BIS erkende laboratoria.",
@@ -1265,9 +1265,9 @@ const ISIMarkServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Onze Diensten
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
