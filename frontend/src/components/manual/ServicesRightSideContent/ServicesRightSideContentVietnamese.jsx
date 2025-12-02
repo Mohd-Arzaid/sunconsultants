@@ -37,6 +37,8 @@ const ServicesRightSideContentVietnamese = () => {
 
     // BIS CERTIFICATION PATH
     "/vi/chung-chi-bis-la-gi-bis-an-do",
+    // BISFM PATH
+    "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do",
   ];
 
   // Check if current path should show these components
@@ -572,6 +574,8 @@ const ContactFormServicesRightSideContentVietnamese = () => {
       return "ISI Mark (Vietnamese)";
     if (path.includes("/vi/chung-chi-bis-la-gi-bis-an-do"))
       return "BIS Certification (Vietnamese)";
+    if (path.includes("/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"))
+      return "BIS Mark (ISI License) for Foreign Manufacturers (Vietnamese)";
   };
 
   const [formData, setFormData] = useState({
