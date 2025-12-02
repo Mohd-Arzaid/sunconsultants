@@ -1021,7 +1021,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                  to="/bis-sukiimu-x-ninshoo-ponpu-oyobi-ekitai-erebeetaa"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of Pumps for handling liquids, liquid elevators and
@@ -1039,7 +1039,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-compressors"
+                  to="/bis-sukiimu-x-ninshoo-konpuresa"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of compressors and(or)their assemblies
@@ -1057,7 +1057,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-heat-treatment-equipment"
+                  to="/bis-sukiimu-x-ninshoo-netsu-shori-souchi"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of machinery for treatment of material by a process
@@ -1076,7 +1076,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+                  to="/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of centrifuges, filtering or purifying machinery for
@@ -1095,7 +1095,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-packing-machinery"
+                  to="/bis-sukiimu-x-ninshoo-pakkingu-kikai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of machinery for filling, closing, sealing,
@@ -1113,7 +1113,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-cranes"
+                  to="/bis-sukiimu-x-ninshoo-kurein"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of cranes and (or) their assemblies
@@ -1131,7 +1131,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-construction-machinery"
+                  to="/bis-sukiimu-x-ninshoo-kensetsu-kikai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of machinery for construction, earthmoving, Mining
@@ -1149,7 +1149,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-weaving-machines-looms"
+                  to="/bis-sukiimu-x-ninshoo-orimonoiki-ruumu"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of weaving machines (looms) and (or)their
@@ -1166,7 +1166,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-embroidery-machinery"
+                  to="/bis-sukiimu-x-ninshoo-shishu-kikai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of machinery for making embroidery and(or)their
@@ -1183,7 +1183,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+                  to="/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of metal cutting machines tools covered under the
@@ -1201,7 +1201,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-machine-tools"
+                  to="/bis-sukiimu-x-ninshoo-kousaku-kikai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of machine tools for working stone, ceramics,
@@ -1219,7 +1219,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+                  to="/bis-sukiimu-x-ninshoo-gomu-oyobi-purasuchikku-kikai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of machinery for working rubber and plastics and(or)
@@ -1236,7 +1236,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+                  to="/bis-sukiimu-x-ninshoo-koukyou-jigyou-oyobi-kikai-kougu"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of Machines including the machines for public works
@@ -1255,7 +1255,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+                  to="/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of gears and gearing, toothed wheels, chain
@@ -1274,7 +1274,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rotary-electrical-machines"
+                  to="/bis-sukiimu-x-ninshoo-kaiten-denki-kikai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of Rotary electrical machines such as Generator,
@@ -1291,7 +1291,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-diesel-generators"
+                  to="/bis-sukiimu-x-ninshoo-dizeru-hatsudenki"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of Diesel Generator and (or)their assemblies
@@ -1308,7 +1308,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-transformers"
+                  to="/bis-sukiimu-x-ninshoo-hensatsuki"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of Transformers and (or)their assemblies
@@ -1326,7 +1326,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-power-semiconductor-converters"
+                  to="/bis-sukiimu-x-ninshoo-denryoku-handoutai-henkan-ki"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of Power Semiconductor Converter and (or)their
@@ -1343,7 +1343,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+                  to="/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-made"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of switch gear and control gear equipment operating
@@ -1361,7 +1361,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+                  to="/bis-sukiimu-x-ninshoo-suicchigia-oyobi-kontororu-gia-setsubi-1000-boruto-chou"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   All types of switch gear and control gear equipment operating

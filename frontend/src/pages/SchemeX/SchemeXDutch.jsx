@@ -2574,7 +2574,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                  to="/bis-schema-x-certificering-voor-pompen-en-vloeistofelevators"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen Pompen voor het verwerken van vloeistoffen,
@@ -2592,7 +2592,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-compressors"
+                  to="/bis-schema-x-certificering-voor-compressoren"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen compressoren en( of)hun assemblages
@@ -2610,7 +2610,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-heat-treatment-equipment"
+                  to="/bis-schema-x-certificering-voor-warmtebehandelingsapparatuur"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen machines voor behandeling van materialen door een
@@ -2629,7 +2629,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+                  to="/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen centrifuges, filterende of zuiverende machines voor
@@ -2648,7 +2648,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-packing-machinery"
+                  to="/bis-schema-x-certificering-voor-verpakkingsmachines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen machines voor vullen, sluiten, sealen, etiketteren
@@ -2666,7 +2666,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-cranes"
+                  to="/bis-schema-x-certificering-voor-kranen"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen kranen en (of) hun assemblages
@@ -2684,7 +2684,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-construction-machinery"
+                  to="/bis-schema-x-certificering-voor-bouwmachines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen machines voor constructie, grondverzet, Mijnbouw en
@@ -2702,7 +2702,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-weaving-machines-looms"
+                  to="/bis-schema-x-certificering-voor-weefmachines-getouwen"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen weefmachines (getouwen) en (of)hun
@@ -2719,7 +2719,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-embroidery-machinery"
+                  to="/bis-schema-x-certificering-voor-borduurmachines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen machines voor borduurwerk en( of)hun assemblages
@@ -2736,7 +2736,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+                  to="/bis-schema-x-certificering-voor-metaalsnijmachines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen metaalsnijmachine gereedschappen gedekt onder de
@@ -2754,7 +2754,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-machine-tools"
+                  to="/bis-schema-x-certificering-voor-werktuigmachines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen machinegereedschappen voor het bewerken van steen,
@@ -2772,7 +2772,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+                  to="/bis-schema-x-certificering-voor-rubber-en-kunststofmachines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen machines voor het bewerken van rubber en
@@ -2790,7 +2790,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+                  to="/bis-schema-x-certificering-voor-openbare-werken-en-mechanische-apparaten"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen Machines inclusief de machines voor openbare werken
@@ -2809,7 +2809,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+                  to="/bis-schema-x-certificering-voor-tandwielen-overbrenging-en-transmissie-elementen"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen tandwielen en tandheugels, getande wielen,
@@ -2829,7 +2829,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rotary-electrical-machines"
+                  to="/bis-schema-x-certificering-voor-roterende-elektrische-machines"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen Roaterende elektrische machines zoals Generator,
@@ -2846,7 +2846,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-diesel-generators"
+                  to="/bis-schema-x-certificering-voor-dieselgeneratoren"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen Dieselmotoren en (of)hun assemblages
@@ -2863,7 +2863,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-transformers"
+                  to="/bis-schema-x-certificering-voor-transformators"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen Transformatoren en (of)hun assemblages
@@ -2880,7 +2880,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-power-semiconductor-converters"
+                  to="/bis-schema-x-certificering-voor-vermogenssemiconductor-omzetters"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen Vermogenschakelaar Omvormer en (of)hun assemblages
@@ -2897,7 +2897,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+                  to="/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-tot-1000-volt"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen schakel- en bedieningsapparatuur die werken op
@@ -2915,7 +2915,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+                  to="/bis-schema-x-certificering-voor-schakel-en-besturingsapparatuur-boven-1000-volt"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle typen schakel- en bedieningsapparatuur die werken op

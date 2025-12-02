@@ -2498,7 +2498,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                  to="/shahadat-bis-mukhatat-x-lil-madakhat-wa-masaaid-as-sawail"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع المضخات للتعامل مع السوائل، مصاعد السوائل و
@@ -2515,7 +2515,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-compressors"
+                  to="/shahadat-bis-mukhatat-x-lil-daghitat"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الضواغط و(أو)تجميعاتها /التجميعات الفرعية /المكونات
@@ -2532,7 +2532,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-heat-treatment-equipment"
+                  to="/shahadat-bis-mukhatat-x-lil-maadat-al-mualaja-al-harariya"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الآلات لمعالجة المواد بعملية تشمل تغيير درجة
@@ -2550,7 +2550,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+                  to="/shahadat-bis-mukhatat-x-lil-taard-almarkazi-wa-alat-altasfiya-aw-altanqiya"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الطرد المركزي، آلات الترشيح أو التنقية لـ السوائل
@@ -2568,7 +2568,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-packing-machinery"
+                  to="/shahadat-bis-mukhatat-x-lil-maadat-al-taabia-wa-al-taghlif"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الآلات للحشو، والإغلاق، والختم، وتسمية الزجاجات،
@@ -2585,7 +2585,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-cranes"
+                  to="/shahadat-bis-mukhatat-x-lil-rafaat"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الرافعات و (أو) تجميعاتها /التجميعات
@@ -2603,7 +2603,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-construction-machinery"
+                  to="/shahadat-bis-mukhatat-x-lil-alat-albina"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الآلات للبناء، وحركة الأرض، والتعدين و
@@ -2621,7 +2621,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-weaving-machines-looms"
+                  to="/shahadat-bis-mukhatat-x-lil-alat-al-nasij-wa-al-anwal"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع آلات النسيج (النول) و (أو)تجميعاتها /التجميعات
@@ -2638,7 +2638,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-embroidery-machinery"
+                  to="/shahadat-bis-mukhatat-x-lil-alat-al-tatriz"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الآلات لصنع التطريز و(أو)تجميعاتها /التجميعات
@@ -2655,7 +2655,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+                  to="/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع أدوات آلات القطع المعدني المشمولة تحت العنوان 8456
@@ -2672,7 +2672,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-machine-tools"
+                  to="/shahadat-bis-mukhatat-x-lil-adawat-al-alat"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع أدوات الآلات للعمل على الحجر، والسيراميك،
@@ -2690,7 +2690,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+                  to="/shahadat-bis-mukhatat-x-lil-alat-al-karet-wa-al-blastik"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الآلات للعمل على المطاط والبلاستيك و(أو) تجميعاتها
@@ -2707,7 +2707,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+                  to="/shahadat-bis-mukhatat-x-lil-ashghal-al-amah-wa-al-maadat-al-mikaniqiyah"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الآلات بما في ذلك الآلات للأعمال العامة و البناء
@@ -2726,7 +2726,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+                  to="/shahadat-bis-mukhatat-x-lil-turus-wa-anmatim-al-turus-wa-anasir-al-naql"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع التروس والتروس، والعجلات المسننة، وسلسلة التروس،
@@ -2745,7 +2745,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rotary-electrical-machines"
+                  to="/shahadat-bis-mukhatat-x-lil-alat-al-kahrabiya-al-dawara"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع الآلات الكهربائية الدورانية مثل المولد، إلخ. و (أو)
@@ -2762,7 +2762,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-diesel-generators"
+                  to="/shahadat-bis-mukhatat-x-lil-mawalid-al-dizil"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع مولدات الديزل و (أو)تجميعاتها /التجميعات الفرعية
@@ -2779,7 +2779,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-transformers"
+                  to="/shahadat-bis-mukhatat-x-lil-muhawilat"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع المحولات و (أو)تجميعاتها /التجميعات الفرعية
@@ -2796,7 +2796,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-power-semiconductor-converters"
+                  to="/shahadat-bis-mukhatat-x-lil-muhawilat-ashbah-al-mawasalat-lil-taqa"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع محول أشباه الموصلات الطاقة و (أو)تجميعاتها
@@ -2813,7 +2813,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+                  to="/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-hata-1000-folt"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع معدات المفاتيح والتحكم تعمل بجهود لا تتجاوز 1000
@@ -2830,7 +2830,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+                  to="/shahadat-bis-mukhatat-x-lil-maadat-switchgear-wa-controlgear-fawq-1000-folt"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   جميع أنواع معدات المفاتيح والتحكم تعمل بجهود تتجاوز 1000 فولت

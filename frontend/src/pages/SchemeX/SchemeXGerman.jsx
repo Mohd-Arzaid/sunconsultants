@@ -1167,7 +1167,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-schema-x-zertifizierung-fuer-zentrifugen-und-maschinen-zur-filtration-oder-reinigung"
+                  to="/bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle Arten von Zentrifugen, Filter- oder Reinigungsmaschinen
@@ -1222,7 +1222,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-schema-x-zertifizierung-fuer-baugerate"
+                  to="/bis-schema-x-zertifizierung-fuer-baumaschinen"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle Arten von Maschinen für Bau, Erdarbeiten, Bergbau und
@@ -1274,7 +1274,7 @@ const SchemeXGermanMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-schema-x-zertifizierung-fuer-maschinen-fuer-schneiden-von-metall"
+                  to="/bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   Alle Arten von Metallschneidewerkzeugmaschinen, die unter die

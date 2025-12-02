@@ -2379,7 +2379,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                  to="/bis-fang-an-x-beng-he-ye-ti-ti-sheng-ji-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的液体处理泵、液体提升机及其组件/子组件/部件
@@ -2396,7 +2396,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-compressors"
+                  to="/bis-fang-an-x-ya-suo-ji-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的压缩机及其组件/子组件/部件
@@ -2413,7 +2413,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-heat-treatment-equipment"
+                  to="/bis-fang-an-x-re-chu-li-she-bei-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的通过涉及温度变化过程处理材料的机械及其组件/子组件/部件
@@ -2430,7 +2430,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+                  to="/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的用于液体和气体的离心机、过滤或净化机械及其组件/子组件/部件
@@ -2447,7 +2447,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-packing-machinery"
+                  to="/bis-fang-an-x-bao-zhuang-ji-xie-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的用于填充、封闭、密封、贴标签、包装或包裹的机械及其组件/子组件/部件
@@ -2463,7 +2463,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-cranes"
+                  to="/bis-fang-an-x-qi-zhong-ji-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的起重机及其组件/子组件/部件
@@ -2480,7 +2480,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-construction-machinery"
+                  to="/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的建筑、土方、采矿机械及其组件/子组件/部件
@@ -2497,7 +2497,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-weaving-machines-looms"
+                  to="/bis-fang-an-x-zhi-ji-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的织机及其组件/子组件/部件
@@ -2513,7 +2513,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-embroidery-machinery"
+                  to="/bis-fang-an-x-ci-xiu-ji-xie-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的刺绣机械及其组件/子组件/部件
@@ -2529,7 +2529,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+                  to="/bis-fang-an-x-jin-shu-qie-xiao-ji-chuang-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的金属切削机床（标题8456至8461）及其组件/子组件/部件
@@ -2545,7 +2545,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-machine-tools"
+                  to="/bis-fang-an-x-ji-chuang-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的用于加工石材、陶瓷、混凝土、石棉水泥或类似矿物玻璃的机床及其组件/子组件/部件
@@ -2561,7 +2561,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+                  to="/bis-fang-an-x-xiang-jiao-he-su-liao-ji-xie-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的橡胶和塑料加工机械及其组件/子组件/部件
@@ -2577,7 +2577,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+                  to="/bis-fang-an-x-gong-gong-gong-cheng-he-ji-xie-she-bei-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的机器，包括公共工程和建筑用机器以及具有单独功能但未指定或未在第84章其他地方包含的机械和机械器具及其组件/子组件/部件
@@ -2593,7 +2593,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+                  to="/bis-fang-an-x-chi-lun-chi-lun-xi-tong-he-chuan-dong-yuan-jian-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的齿轮和传动装置、齿轮、链轮、传动元件滚珠或滚柱丝杠、齿轮箱和变速器，包括扭矩转换器及其组件/子组件/部件
@@ -2609,7 +2609,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rotary-electrical-machines"
+                  to="/bis-fang-an-x-xuan-zhuan-dian-ji-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的旋转电机，如发电机等及其组件/子组件/部件
@@ -2625,7 +2625,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-diesel-generators"
+                  to="/bis-fang-an-x-chai-you-fa-dian-ji-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的柴油发电机及其组件/子组件/部件
@@ -2641,7 +2641,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-transformers"
+                  to="/bis-fang-an-x-bian-ya-qi-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的变压器及其组件/子组件/部件
@@ -2658,7 +2658,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-power-semiconductor-converters"
+                  to="/bis-fang-an-x-gong-lv-ban-dao-ti-zhuan-huan-qi-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的功率半导体转换器及其组件/子组件/部件
@@ -2674,7 +2674,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+                  to="/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-gao-da-1000-fu-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的在不超过1000伏电压下运行的开关设备和控制设备及其组件/子组件/部件
@@ -2690,7 +2690,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+                  to="/bis-fang-an-x-kai-guan-he-kong-zhi-she-bei-chao-guo-1000-fu-ren-zheng"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   所有类型的在超过1000伏电压下运行的开关设备和控制设备及其组件/子组件/部件

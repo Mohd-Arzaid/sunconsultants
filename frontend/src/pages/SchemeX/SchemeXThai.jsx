@@ -2541,7 +2541,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-pumps-and-liquid-elevators"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-pump-lae-lift-nam"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของปั๊มสำหรับการจัดการของเหลว ลิฟต์ของเหลว และ (หรือ)
@@ -2559,7 +2559,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-compressors"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-kompresor"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของคอมเพรสเซอร์ และ (หรือ) การประกอบ/ส่วนย่อย
@@ -2577,7 +2577,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-heat-treatment-equipment"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-uppakon-bambat-khwam-ron"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องจักรสำหรับการบำบัดวัสดุโดยกระบวนการ
@@ -2596,7 +2596,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-pan-wia-lae-khrueang-krong-rue-tham-hai-borisut"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเซนทริฟูจ
@@ -2615,7 +2615,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-packing-machinery"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-pack"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องจักรสำหรับการบรรจุ การปิดผนึก การติดฉลาก
@@ -2632,7 +2632,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-cranes"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khren"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครน และ (หรือ) การประกอบ
@@ -2650,7 +2650,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-construction-machinery"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-thi-khuk-khuk"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องจักรสำหรับการก่อสร้าง การขุดดิน การขุด และ
@@ -2668,7 +2668,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-weaving-machines-looms"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-tan"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องทอ (looms) และ (หรือ) การประกอบ/ส่วนย่อย /
@@ -2685,7 +2685,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-embroidery-machinery"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-thai-rua"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องจักรสำหรับการปักลาย และ (หรือ) การประกอบ
@@ -2702,7 +2702,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องมือตัดโลหะที่ครอบคลุมภายใต้ หัวข้อ 8456 ถึง
@@ -2719,7 +2719,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-machine-tools"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-mue"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องมือสำหรับการทำงานหิน เซรามิก, คอนกรีต
@@ -2737,7 +2737,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rubber-and-plastics-machinery"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-yang-yu-lae-plastik"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องจักรสำหรับการทำงานยางและพลาสติก และ (หรือ)
@@ -2754,7 +2754,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-public-works-and-mechanical-appliances"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-ngan-satharana-lae-uppakon-kai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องจักรรวมถึงเครื่องจักรสำหรับงานสาธารณะและ
@@ -2773,7 +2773,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-fueang-rab-khia-lae-ong-prakop-kan-song-kamlang"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเฟืองและเกียร์ ล้อฟัน โซ่สปร็อกเก็ต,
@@ -2792,7 +2792,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-rotary-electrical-machines"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-fai-fa-kai"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องจักรไฟฟ้าหมุนเวียนเช่นเครื่องกำเนิด ฯลฯ และ
@@ -2809,7 +2809,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-diesel-generators"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-khuean-ngan-fa-fa-diesel"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของเครื่องกำเนิดดีเซล และ (หรือ) การประกอบ /ส่วนย่อย
@@ -2826,7 +2826,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-transformers"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-transformer"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของหม้อแปลง และ (หรือ) การประกอบ /ส่วนย่อย
@@ -2844,7 +2844,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-power-semiconductor-converters"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-khrueang-ploy-phalang-bandojeo"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของตัวแปลงเซมิคอนดักเตอร์กำลัง และ (หรือ) การประกอบ
@@ -2861,7 +2861,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-up-to-1000-volts"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-sut-1000-volt"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของสวิตช์เกียร์และอุปกรณ์ควบคุมที่ทำงานที่
@@ -2879,7 +2879,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
               </TableCell>
               <TableCell className="px-6 py-4 text-sm md:text-base font-geist text-[#42434d]">
                 <Link
-                  to="/bis-scheme-x-certification-for-switchgear-and-controlgear-equipment-above-1000-volts"
+                  to="/kan-rap-rong-bis-phaen-x-samrab-uppakon-switchgear-lae-controlgear-kwa-1000-volt"
                   className="text-[#1A8781] hover:text-[#156d68] hover:underline transition-colors duration-200"
                 >
                   ทุกประเภทของสวิตช์เกียร์และอุปกรณ์ควบคุมที่ทำงานที่ แรงดันเกิน
