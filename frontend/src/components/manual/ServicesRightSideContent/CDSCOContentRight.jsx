@@ -182,33 +182,33 @@ const WhyChooseUs = () => {
       {/* Highlight Stats */}
       <div className="mt-4 grid grid-cols-2 gap-2">
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-blue-200">
-          <h3 className="text-2xl font-bold text-blue-600 font-geist">
+          <div className="text-2xl font-bold text-blue-600 font-geist">
             {stats.experience.value}
-          </h3>
+          </div>
           <p className="text-xs text-gray-600 font-geist">
             {stats.experience.label}
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-emerald-200">
-          <h3 className="text-2xl font-bold text-emerald-600 font-geist">
+          <div className="text-2xl font-bold text-emerald-600 font-geist">
             {stats.clients.value}
-          </h3>
+          </div>
           <p className="text-xs text-gray-600 font-geist">
             {stats.clients.label}
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-amber-200">
-          <h3 className="text-2xl font-bold text-amber-600 font-geist">
+          <div className="text-2xl font-bold text-amber-600 font-geist">
             {stats.successRate.value}
-          </h3>
+          </div>
           <p className="text-xs text-gray-600 font-geist">
             {stats.successRate.label}
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg border border-gray-200 text-center hover:border-purple-200">
-          <h3 className="text-2xl font-bold text-purple-600 font-geist">
+          <div className="text-2xl font-bold text-purple-600 font-geist">
             {stats.countries.value}
-          </h3>
+          </div>
           <p className="text-xs text-gray-600 font-geist">
             {stats.countries.label}
           </p>
@@ -227,9 +227,9 @@ const WhyChooseUs = () => {
                 {reasonIcons[index]}
               </div>
               <div>
-                <h3 className="font-geist font-semibold text-gray-900 text-sm">
+                <div className="font-geist font-semibold text-gray-900 text-sm">
                   {reason.title}
-                </h3>
+                </div>
                 <p className="text-xs text-gray-600 font-geist">
                   {reason.description}
                 </p>
@@ -444,9 +444,9 @@ const OurServices = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                 <div className="p-4 text-white">
-                  <h3 className="font-geist font-semibold text-lg">
+                  <div className="font-geist font-semibold text-lg">
                     {service.title}
-                  </h3>
+                  </div>
                 </div>
               </div>
             </div>
@@ -585,9 +585,9 @@ const OurEvents = () => {
 
             <div className="p-4">
               <div className="flex justify-between items-start mb-2">
-                <h3 className="font-geist font-medium text-gray-900 text-base">
+                <div className="font-geist font-medium text-gray-900 text-base">
                   {event.title}
-                </h3>
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -636,9 +636,9 @@ const OurEvents = () => {
                   <Badge className="mb-1 bg-gray-100 text-gray-700 border-0 hover:bg-gray-200 font-geist">
                     {event.category}
                   </Badge>
-                  <h3 className="font-geist font-medium text-gray-900 line-clamp-1">
+                  <div className="font-geist font-medium text-gray-900 line-clamp-1">
                     {event.title}
-                  </h3>
+                  </div>
                   <div className="flex items-center gap-2 mt-1 text-gray-600">
                     <MapPin className="h-3 w-3" />
                     <span className="text-xs font-geist">{event.location}</span>
@@ -763,9 +763,9 @@ const LatestNotification = () => {
                   </span>
                 </div>
 
-                <h3 className="font-geist font-medium text-gray-900 mb-2">
+                <div className="font-geist font-medium text-gray-900 mb-2">
                   {notification.title}
-                </h3>
+                </div>
 
                 <p className="text-sm text-gray-600 font-geist mb-3 line-clamp-2">
                   {notification.description}

@@ -11,9 +11,9 @@ const ServiceAuthorItalian = () => {
         <div className="relative z-10">
           {/* Header */}
           <div className="flex items-center gap-3 mb-3">
-            <h3 className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781]">
+            <div className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781]">
               Informazioni sull'Autore
-            </h3>
+            </div>
             <div className="flex-1 h-[1px] bg-gradient-to-r from-[#1A8781]/20 to-transparent"></div>
           </div>
 
