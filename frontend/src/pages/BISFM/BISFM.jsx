@@ -2185,7 +2185,7 @@ const LanguageSelector = () => {
     // {
     //   code: "en",
     //   name: "English",
-    //   flag: "https://flagcdn.com/w40/gb.png",
+    //   flag: "https://flagcdn.com/w320/gb.png",
     //   path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
     // },
     {
