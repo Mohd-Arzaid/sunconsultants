@@ -933,9 +933,9 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         ISIロゴは通常、以下で構成されます：
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -945,9 +945,9 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         配置は以下である必要があります：
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1717,9 +1717,9 @@ const ProcessSection = () => {
         BIS証明書取得までの時間枠
       </h3>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         申請から証明書までの典型的な期間
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         FMCSの下でのBIS認証プロセスは、正しい申請提出日から通常約120営業日（約3〜4ヶ月）かかります。書類が不明確な場合や、工場が監査準備ができていない場合に遅延が発生することがよくあります。

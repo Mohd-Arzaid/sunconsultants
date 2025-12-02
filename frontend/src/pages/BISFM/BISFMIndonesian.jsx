@@ -990,9 +990,9 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Logo ISI biasanya terdiri dari:
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1002,7 +1002,7 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">Penempatan harus:</p>
+      <div className="service-left-content-heading-three">Penempatan harus:</div>
 
       <PointsListWithoutHeading
         points={[
@@ -1830,9 +1830,9 @@ const ProcessSection = () => {
         Kerangka Waktu untuk Memperoleh Sertifikat BIS
       </h3>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Durasi Khas dari Aplikasi hingga Sertifikat
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         Proses sertifikasi BIS di bawah FMCS umumnya memakan waktu sekitar 120

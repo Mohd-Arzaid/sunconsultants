@@ -952,9 +952,9 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         ISI 로고는 일반적으로 다음으로 구성됩니다:
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -964,9 +964,9 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         배치는 다음이어야 합니다:
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1753,9 +1753,9 @@ const ProcessSection = () => {
         BIS 인증서 취득 기간
       </h3>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         신청부터 인증서까지의 일반적인 기간
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         FMCS 하의 BIS 인증 프로세스는 일반적으로 올바른 신청서 제출일로부터 약
