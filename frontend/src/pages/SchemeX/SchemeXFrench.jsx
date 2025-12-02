@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Check, Search, SlashIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect, useMemo } from "react";
 
 import { Separator } from "@/components/ui/separator";
@@ -677,8 +677,145 @@ const SchemeXFrenchMainContent = () => {
       </div>
       <SchemeXFrenchServiceFaq />
       <SchemeXFrenchProductTable />
+      <LanguageSelector />
       <div id="services">
         <ServicesFrench />
+      </div>
+    </div>
+  );
+};
+
+const LanguageSelector = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  const languages = [
+    {
+      code: "en",
+      name: "English",
+      flag: "https://flagcdn.com/w320/gb.png",
+      path: "/indian-bis-certification-under-scheme-x",
+    },
+    {
+      code: "zh",
+      name: "Chinese",
+      flag: "https://flagcdn.com/w320/cn.png",
+      path: "/zh/yin-du-bis-fang-an-x-ren-zheng",
+    },
+    {
+      code: "de",
+      name: "German",
+      flag: "https://flagcdn.com/w320/de.png",
+      path: "/de/indische-bis-zertifizierung-nach-schema-x",
+    },
+    {
+      code: "nl",
+      name: "Dutch",
+      flag: "https://flagcdn.com/w320/nl.png",
+      path: "/nl/indiaas-bis-certificaat-volgens-schema-x",
+    },
+    {
+      code: "ja",
+      name: "Japanese",
+      flag: "https://flagcdn.com/w320/jp.png",
+      path: "/ja/indo-no-bis-nintei-sukimu-x",
+    },
+    {
+      code: "ko",
+      name: "Korean",
+      flag: "https://flagcdn.com/w320/kr.png",
+      path: "/ko/indo-bis-injeung-scheme-x-haenghaeng",
+    },
+    // {
+    //   code: "fr",
+    //   name: "French",
+    //   flag: "https://flagcdn.com/w320/fr.png",
+    //   path: "/fr/certification-bis-indienne-selon-schema-x",
+    // },
+    {
+      code: "es",
+      name: "Spanish",
+      flag: "https://flagcdn.com/w320/es.png",
+      path: "/es/certificacion-bis-india-bajo-esquema-x",
+    },
+    {
+      code: "th",
+      name: "Thai",
+      flag: "https://flagcdn.com/w320/th.png",
+      path: "/th/bis-prathiap-india-taem-dai-tae-skema-x",
+    },
+    {
+      code: "id",
+      name: "Indonesian",
+      flag: "https://flagcdn.com/w320/id.png",
+      path: "/id/sertifikasi-bis-india-di-bawah-skema-x",
+    },
+    {
+      code: "it",
+      name: "Italian",
+      flag: "https://flagcdn.com/w320/it.png",
+      path: "/it/certificazione-bis-indiana-secondo-schema-x",
+    },
+    {
+      code: "ar",
+      name: "Arabic",
+      flag: "https://flagcdn.com/w320/sa.png",
+      path: "/ar/shahadat-bis-alhind-tahata-almukhatat-x",
+    },
+    {
+      code: "vi",
+      name: "Vietnamese",
+      flag: "https://flagcdn.com/w320/vn.png",
+      path: "/vi/chung-nhan-bis-an-do-theo-scheme-x",
+    },
+  ];
+
+  const currentLanguage = languages.find((lang) => lang.path === currentPath);
+
+  return (
+    <div className=" bg-white">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
+        <div className="flex flex-col items-center gap-6 md:gap-8">
+          {/* Heading */}
+          <div className="flex flex-col items-center">
+            <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
+              View This Page in Your Language
+            </p>
+          </div>
+
+          {/* Language Flags Grid */}
+          <div className="w-full max-w-[1400px]">
+            <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
+              {languages.map((language) => {
+                const isActive = currentPath === language.path;
+                return (
+                  <Link
+                    key={language.code}
+                    to={language.path}
+                    className="group relative flex flex-col items-center justify-center transition-all duration-300"
+                  >
+                    {/* Flag */}
+                    <div
+                      className={`w-[42px] h-[28px] md:w-[64px] md:h-[42px] transition-transform duration-300 flex items-center justify-center ${
+                        isActive ? "scale-110" : "group-hover:scale-110"
+                      }`}
+                    >
+                      <img
+                        src={language.flag}
+                        alt={`${language.name} flag`}
+                        className="w-full h-full object-cover rounded-sm border border-neutral-500"
+                      />
+                    </div>
+                    {/* Active Indicator */}
+                    {isActive && (
+                      <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#1A8781] rounded-full border-2 border-white"></div>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

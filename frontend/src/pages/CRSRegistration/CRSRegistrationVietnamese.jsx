@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Check, Search, SlashIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect, useMemo } from "react";
 import ServicesRightSideContentVietnamese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentVietnamese";
 import { Separator } from "@/components/ui/separator";
@@ -678,8 +678,145 @@ const CRSRegistrationMainContent = () => {
       </div>
       <CRSRegistrationServiceFaq />
       <CISProductTable />
+      <LanguageSelector />
       <div id="services">
         <Services />
+      </div>
+    </div>
+  );
+};
+
+const LanguageSelector = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  const languages = [
+    {
+      code: "en",
+      name: "English",
+      flag: "https://flagcdn.com/w320/gb.png",
+      path: "/what-is-crs-bis-or-crs-registration",
+    },
+    {
+      code: "zh",
+      name: "Chinese",
+      flag: "https://flagcdn.com/w320/cn.png",
+      path: "/zh/crs-bis-shi-shen-me-huo-crs-deng-ji",
+    },
+    {
+      code: "de",
+      name: "German",
+      flag: "https://flagcdn.com/w320/de.png",
+      path: "/de/was-ist-crs-bis-oder-crs-registrierung",
+    },
+    {
+      code: "nl",
+      name: "Dutch",
+      flag: "https://flagcdn.com/w320/nl.png",
+      path: "/nl/wat-is-crs-bis-of-crs-registratie",
+    },
+    {
+      code: "ja",
+      name: "Japanese",
+      flag: "https://flagcdn.com/w320/jp.png",
+      path: "/ja/crs-bis-toha-nani-ka-crs-toroku",
+    },
+    {
+      code: "ko",
+      name: "Korean",
+      flag: "https://flagcdn.com/w320/kr.png",
+      path: "/ko/crs-bis-i-mueos-inga-crs-deunglog",
+    },
+    {
+      code: "fr",
+      name: "French",
+      flag: "https://flagcdn.com/w320/fr.png",
+      path: "/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs",
+    },
+    {
+      code: "es",
+      name: "Spanish",
+      flag: "https://flagcdn.com/w320/es.png",
+      path: "/es/que-es-crs-bis-o-registro-crs",
+    },
+    {
+      code: "th",
+      name: "Thai",
+      flag: "https://flagcdn.com/w320/th.png",
+      path: "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
+    },
+    {
+      code: "id",
+      name: "Indonesian",
+      flag: "https://flagcdn.com/w320/id.png",
+      path: "/id/apa-itu-crs-bis-atau-registrasi-crs",
+    },
+    {
+      code: "it",
+      name: "Italian",
+      flag: "https://flagcdn.com/w320/it.png",
+      path: "/it/cose-il-crs-bis-o-registrazione-crs",
+    },
+    {
+      code: "ar",
+      name: "Arabic",
+      flag: "https://flagcdn.com/w320/sa.png",
+      path: "/ar/ma-huwa-crs-bis-aw-tasjeel-crs",
+    },
+    // {
+    //   code: "vi",
+    //   name: "Vietnamese",
+    //   flag: "https://flagcdn.com/w320/vn.png",
+    //   path: "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
+    // },
+  ];
+
+  const currentLanguage = languages.find((lang) => lang.path === currentPath);
+
+  return (
+    <div className=" bg-white">
+      <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
+        <div className="flex flex-col items-center gap-6 md:gap-8">
+          {/* Heading */}
+          <div className="flex flex-col items-center">
+            <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
+              View This Page in Your Language
+            </p>
+          </div>
+
+          {/* Language Flags Grid */}
+          <div className="w-full max-w-[1400px]">
+            <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
+              {languages.map((language) => {
+                const isActive = currentPath === language.path;
+                return (
+                  <Link
+                    key={language.code}
+                    to={language.path}
+                    className="group relative flex flex-col items-center justify-center transition-all duration-300"
+                  >
+                    {/* Flag */}
+                    <div
+                      className={`w-[42px] h-[28px] md:w-[64px] md:h-[42px] transition-transform duration-300 flex items-center justify-center ${
+                        isActive ? "scale-110" : "group-hover:scale-110"
+                      }`}
+                    >
+                      <img
+                        src={language.flag}
+                        alt={`${language.name} flag`}
+                        className="w-full h-full object-cover rounded-sm border border-neutral-500"
+                      />
+                    </div>
+                    {/* Active Indicator */}
+                    {isActive && (
+                      <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#1A8781] rounded-full border-2 border-white"></div>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

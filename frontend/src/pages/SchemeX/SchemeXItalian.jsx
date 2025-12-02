@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Check, Search, SlashIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect, useMemo } from "react";
 
 import { Separator } from "@/components/ui/separator";
@@ -677,6 +677,7 @@ const SchemeXMainContent = () => {
       </div>
       <SchemeXServiceFaq />
       <SchemeXProductTable />
+      <LanguageSelector />
       <div id="services">
         <Services />
       </div>
