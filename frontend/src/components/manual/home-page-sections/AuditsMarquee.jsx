@@ -169,35 +169,47 @@ const AuditsMarquee = () => {
               start ? "animate-scroll" : ""
             } hover:[animation-play-state:paused]`}
           >
-            {duplicatedImages.map((item, index) => (
-              <div
-                key={`${item.id}-${index}`}
-                className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white shrink-0"
-                style={{ minWidth: "300px", maxWidth: "400px" }}
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.description || item.title || `Audit ${item.id}`}
-                    title={item.description || item.title || `Audit ${item.id}`}
-                    className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
-                    width="300"
-                    height="300"
-                    loading="lazy"
-                    decoding="async"
-                    style={{ color: "transparent" }}
-                  />
-                </div>
-                {/* Country Name Overlay - Always Visible */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-white font-playfair text-2xl md:text-3xl font-bold transform transition-all duration-500 group-hover:scale-105">
-                      {item.title}
-                    </h3>
+            {duplicatedImages.map((item, index) => {
+              // Mark duplicates as hidden from SEO (only first set should be indexed)
+              const isDuplicate = index >= galleryImages.length;
+
+              return (
+                <div
+                  key={`${item.id}-${index}`}
+                  className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white shrink-0"
+                  style={{ minWidth: "300px", maxWidth: "400px" }}
+                  aria-hidden={isDuplicate ? "true" : undefined}
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.description || item.title || `Audit ${item.id}`}
+                      title={
+                        item.description || item.title || `Audit ${item.id}`
+                      }
+                      className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
+                      width="300"
+                      height="300"
+                      loading={isDuplicate ? "lazy" : "eager"}
+                      decoding="async"
+                      style={{ color: "transparent" }}
+                      aria-hidden={isDuplicate ? "true" : undefined}
+                    />
+                  </div>
+                  {/* Country Name Overlay - Always Visible */}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
+                    aria-hidden="true"
+                  >
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-white font-playfair text-2xl md:text-3xl font-bold transform transition-all duration-500 group-hover:scale-105">
+                        {item.title}
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

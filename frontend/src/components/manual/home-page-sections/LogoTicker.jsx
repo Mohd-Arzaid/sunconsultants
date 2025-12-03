@@ -75,32 +75,39 @@ const LogoTicker = ({
               pauseOnHover && "hover:[animation-play-state:paused]"
             )}
           >
-            {duplicatedLogos.map((logo, index) => (
-              <li
-                key={`${logo.name}-${index}`}
-                className="flex items-center justify-center px-3 md:px-6 py-2 md:py-4 shrink-0"
-                style={{
-                  contentVisibility: "auto",
-                  containIntrinsicSize: `${logo.height}px ${
-                    logo.width || 160
-                  }px`,
-                }}
-              >
-                <img
-                  className="mx-auto w-fit scale-[0.8] md:scale-100"
-                  src={logo.src}
-                  alt={logo.alt}
-                  title={logo.title || logo.alt}
-                  height={logo.height}
-                  width={logo.width || 160}
+            {duplicatedLogos.map((logo, index) => {
+              // Mark duplicates as hidden from SEO (only first set should be indexed)
+              const isDuplicate = index >= COMPANY_LOGOS.length;
+
+              return (
+                <li
+                  key={`${logo.name}-${index}`}
+                  className="flex items-center justify-center px-3 md:px-6 py-2 md:py-4 shrink-0"
                   style={{
-                    height: `${logo.height}px`,
+                    contentVisibility: "auto",
+                    containIntrinsicSize: `${logo.height}px ${
+                      logo.width || 160
+                    }px`,
                   }}
-                  loading="eager"
-                  decoding="sync"
-                />
-              </li>
-            ))}
+                  aria-hidden={isDuplicate ? "true" : undefined}
+                >
+                  <img
+                    className="mx-auto w-fit scale-[0.8] md:scale-100"
+                    src={logo.src}
+                    alt={logo.alt}
+                    title={logo.title || logo.alt}
+                    height={logo.height}
+                    width={logo.width || 160}
+                    style={{
+                      height: `${logo.height}px`,
+                    }}
+                    loading={isDuplicate ? "lazy" : "eager"}
+                    decoding="sync"
+                    aria-hidden={isDuplicate ? "true" : undefined}
+                  />
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

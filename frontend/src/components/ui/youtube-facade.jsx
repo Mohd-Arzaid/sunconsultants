@@ -32,7 +32,8 @@ const YouTubeFacade = ({ videoId, title = "YouTube Video" }) => {
       {/* Thumbnail */}
       <img
         src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-        alt={title}
+        alt={`${title} - YouTube Video Thumbnail - Sun Certifications India`}
+        title={`${title} - YouTube Video Thumbnail - Sun Certifications India`}
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         loading="lazy"
       />
