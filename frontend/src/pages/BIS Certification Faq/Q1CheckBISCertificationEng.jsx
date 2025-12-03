@@ -170,12 +170,35 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           To verify a BIS approval, you&apos;ll need either the ISI license
-          number (CM/L) for products under the ISI Scheme or the Registration
-          number (R‑number) for products under the CRS scheme, together with the
-          brand and the exact model/variant. Go to the bis.gov.in, open the
-          verification section, and search by CM/L or R‑number. A valid listing
-          shows the licensee/manufacturer, brand, model, Indian Standard (IS),
-          and the current status.
+          number (CM/L) for products under the{" "}
+          <a
+            href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+            ISI Scheme
+          </a>{" "}
+          or the Registration number (R‑number) for products under the
+
+
+          {" "}
+          <a
+            href="https://crsbis.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+             CRS Scheme
+          </a>{" "}
+          
+          
+          
+          
+           , together with the brand and the exact model/variant. Go to the
+          bis.gov.in, open the verification section, and search by CM/L or
+          R‑number. A valid listing shows the licensee/manufacturer, brand,
+          model, Indian Standard (IS), and the current status.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
