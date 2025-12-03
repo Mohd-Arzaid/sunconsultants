@@ -354,9 +354,9 @@ const CRSRegistrationHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         จองนัดหมาย
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         ต้องการติดต่อทีมของเราและนัดหมายการโทร?
@@ -829,9 +829,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               บริการของเรา
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1890,7 +1890,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         ดังนั้นจึงเป็นสิ่งสำคัญมากสำหรับผู้ผลิตที่จะต้องเป็นเชิงรุกและตระหนักถึงการอัปเดตล่าสุด
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         การลงทะเบียน CRS เทียบกับเครื่องหมาย ISI: อะไรคือความแตกต่าง?
       </h2>
 
@@ -2095,7 +2095,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         ผู้แทนอินเดียที่ได้รับอนุญาต (AIR) คือใคร?
       </h2>
 
@@ -2665,13 +2665,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         แนวทาง E-Labelling สำหรับผลิตภัณฑ์ที่รับรอง CRS
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         E-Labelling คืออะไร?
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         E-labelling
@@ -2769,9 +2769,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         CRS ได้อย่างไร
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         ทำไมต้องเลือกที่ปรึกษา BIS?
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         การลงทะเบียน BIS CRS

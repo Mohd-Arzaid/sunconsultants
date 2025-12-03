@@ -348,9 +348,9 @@ const ContactUsForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         预约咨询
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         想联系我们的团队并安排通话？
@@ -927,7 +927,7 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">ISI标志通常包括：</p>
+      <div className="service-left-content-heading-three">ISI标志通常包括：</div>
 
       <PointsListWithoutHeading
         points={[
@@ -937,7 +937,7 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">放置位置必须：</p>
+      <div className="service-left-content-heading-three">放置位置必须：</div>
 
       <PointsListWithoutHeading
         points={[
@@ -1234,21 +1234,21 @@ const RepresentationSection = () => {
         授权印度代表（AIR）在BIS认证中的作用
       </h2>
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         什么是授权印度代表（AIR）？
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         授权印度代表（AIR）是由寻求FMCS注册计划下BIS认证的外国制造商指定的关键中介。AIR作为印度标准局（BIS）与制造商之间的官方联络人，确保沟通顺畅、文件处理和认证过程的协调。
       </p>
 
-      <h2 className="service-left-content-heading-three">AIR指定的法律要求</h2>
+      <h3 className="service-left-content-heading-three">AIR指定的法律要求</h3>
 
       <p className="service-left-content-paragraph">
         根据BIS指南，任何在印度没有注册办事处的外国制造商必须指定AIR。这一要求确保BIS在印度管辖范围内有一个可靠、可访问的联系点。
       </p>
 
-      <h2 className="service-left-content-heading-three">AIR的主要职责</h2>
+      <h3 className="service-left-content-heading-three">AIR的主要职责</h3>
 
       <p className="service-left-content-paragraph">
         AIR的作用涵盖整个BIS认证过程，从文件准备和申请提交到审核协调和认证后合规：
@@ -1311,7 +1311,7 @@ const RepresentationSection = () => {
         </Table>
       </div>
 
-      <h2 className="service-left-content-heading-three">成为AIR的资格标准</h2>
+      <h3 className="service-left-content-heading-three">成为AIR的资格标准</h3>
 
       <p className="service-left-content-paragraph">
         要担任AIR，个人或组织必须：
@@ -1327,9 +1327,9 @@ const RepresentationSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         为什么AIR的作用至关重要
-      </h2>
+      </h3>
 
       <p className="service-left-content-paragraph">
         AIR确保BIS认证过程的连续性和问责制。没有AIR：
@@ -1465,7 +1465,7 @@ const DocumentSection = () => {
         印度BIS认证所需每份文件的详细说明
       </h2>
 
-      <h2 className="service-left-content-heading-three">1. FMCS申请表</h2>
+      <div className="service-left-content-heading-three">1. FMCS申请表</div>
 
       <p className="service-left-content-paragraph">
         本文件提供外国制造商的一般详细信息，包括：
@@ -1480,7 +1480,7 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">2. 制造设备清单</h2>
+      <div className="service-left-content-heading-three">2. 制造设备清单</div>
 
       <PointsListWithoutHeading
         points={[
@@ -1491,27 +1491,27 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">3. 原材料清单</h2>
+      <div className="service-left-content-heading-three">3. 原材料清单</div>
 
       <PointsListWithoutHeading
         points={["采购来源", "等级和规格", "测试协议（如有）"]}
       />
 
-      <h2 className="service-left-content-heading-three">4. 测试设备清单</h2>
+      <div className="service-left-content-heading-three">4. 测试设备清单</div>
 
       <PointsListWithoutHeading
         points={["设备名称和制造商", "符合印度标准的测试参数", "工厂内的位置"]}
       />
 
-      <h2 className="service-left-content-heading-three">5. 校准证书</h2>
+      <div className="service-left-content-heading-three">5. 校准证书</div>
 
       <PointsListWithoutHeading
         points={["上次校准日期", "有效期", "证书编号"]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         6. 工厂布局和工艺流程图
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1522,7 +1522,7 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">7. 履约银行保函</h2>
+      <div className="service-left-content-heading-three">7. 履约银行保函</div>
 
       <p className="service-left-content-paragraph">
         由RBI认可的印度银行签发，履约银行保函（PBG）在不符合规定的情况下承担责任。本文件必须：
@@ -1532,9 +1532,9 @@ const DocumentSection = () => {
         points={["使用银行正式信头纸", "注明保证期限和金额", "签名并盖章"]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         申请BIS证书或印度BIS时需避免的常见文件错误
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1563,14 +1563,14 @@ const ProcessSection = () => {
         FMCS下的分步BIS认证流程
       </h2>
 
-      <h2 className="service-left-content-heading-three">BIS认证流程概述</h2>
+      <h3 className="service-left-content-heading-three">BIS认证流程概述</h3>
 
       <p className="service-left-content-paragraph">
         外国制造商认证计划（FMCS）下的BIS认证流程是有条理、结构化且多阶段的。
         它确保产品符合适用的印度标准，制造流程稳健，测试准确。
       </p>
 
-      <h2 className="service-left-content-heading-three">分步流程摘要表</h2>
+      <h3 className="service-left-content-heading-three">分步流程摘要表</h3>
 
       <div className="mt-6 md:mt-8 overflow-x-auto">
         <Table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
@@ -1679,9 +1679,9 @@ const ProcessSection = () => {
         获得BIS证书的时间框架
       </h2>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         从申请到证书的典型时长
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         FMCS下的BIS认证流程通常从正确提交申请之日起需要约120个工作日（约3-4个月）。
@@ -1994,9 +1994,9 @@ export const ServiceFaq = () => {
       aria-label="Frequently Asked Questions"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           常见问题
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           找不到您要找的答案？{" "}
           <a
@@ -2169,9 +2169,9 @@ const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               我们的服务
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

@@ -833,9 +833,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Unsere Dienstleistungen
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1902,7 +1902,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         Updates bewusst zu sein.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         CRS-Registrierung vs. ISI-Marke: Was ist der Unterschied?
       </h2>
 
@@ -2114,7 +2114,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Wer ist ein Autorisierter Indischer Vertreter (AIR)?
       </h2>
 
@@ -2700,13 +2700,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         E-Kennzeichnungsrichtlinien für CRS-zertifizierte Produkte
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Was ist E-Kennzeichnung?
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         E-Kennzeichnung ist die Praxis, regulatorische Informationen
@@ -2809,9 +2809,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         CRS-Schema helfen kann
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Warum einen BIS-Berater wählen?
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         Die gesamte BIS CRS-Registrierung ist sehr technisch und umfangreich in

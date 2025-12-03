@@ -358,9 +358,9 @@ const CRSRegistrationHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Reservar una Cita
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         ¿Quieres contactar con nuestro equipo y programar una llamada?
@@ -833,9 +833,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Nuestros Servicios
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1898,7 +1898,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         de las actualizaciones recientes.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Registro CRS vs Marca ISI: ¿Cuál es la Diferencia?
       </h2>
 
@@ -2105,7 +2105,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         ¿Quién es un Representante Indio Autorizado (AIR)?
       </h2>
 
@@ -2689,13 +2689,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         E-Labelling Guidelines for CRS Certified Products
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         What is E-Labelling?
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         E-labelling is the practice of showing regulatory information within a
@@ -2794,9 +2794,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         CRS Scheme
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Why Choose a BIS Consultant?
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         The entire BIS CRS registration is very technical and exhaustive with

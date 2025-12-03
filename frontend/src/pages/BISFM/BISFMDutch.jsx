@@ -976,9 +976,9 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Het ISI logo bestaat typisch uit:
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -988,7 +988,7 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">Plaatsing moet zijn:</p>
+      <div className="service-left-content-heading-three">Plaatsing moet zijn:</div>
 
       <PointsListWithoutHeading
         points={[
@@ -1826,9 +1826,9 @@ const ProcessSection = () => {
         Tijdsbestek om BIS Certificaat te Verkrijgen
       </h3>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Typische Duur van Aanvraag tot Certificaat
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         Het BIS certificeringsproces onder FMCS duurt over het algemeen ongeveer

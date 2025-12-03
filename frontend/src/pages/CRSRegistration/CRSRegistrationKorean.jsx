@@ -348,9 +348,9 @@ const CRSRegistrationHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         약속 예약
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         저희 팀에 연락하고 통화를 예약하고 싶으신가요?
@@ -823,9 +823,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               저희 서비스
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1875,7 +1875,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         업데이트를 인지하는 것이 매우 중요합니다.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         CRS 등록 vs ISI 마크: 차이점은 무엇입니까?
       </h2>
 
@@ -2079,7 +2079,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         인도 공인 대표(AIR)란 누구입니까?
       </h2>
 
@@ -2635,13 +2635,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         CRS 인증 제품에 대한 E-라벨링 지침
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         E-라벨링이란 무엇입니까?
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         E-라벨링은 장치에 인쇄하고 부착하는 대신 장치 내에서 규제 정보를
@@ -2739,9 +2739,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         수 있는지
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         BIS 컨설턴트를 선택하는 이유
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         전체 BIS CRS 등록은 규칙과 서류의 양 측면에서 매우 기술적이고

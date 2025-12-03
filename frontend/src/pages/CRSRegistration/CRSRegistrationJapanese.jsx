@@ -233,9 +233,9 @@ export const ServicesJapanese = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               私たちのサービス
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1233,13 +1233,13 @@ const CRSRegistrationJapaneseMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         CRS認証製品のE-ラベリングガイドライン
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         E-ラベリングとは何ですか？
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         E-ラベリングは、デバイスに印刷して貼り付ける代わりに、デバイス内で規制情報を電子的に表示する慣行です。BISの強制登録スキーム（CRS）の下では、指定された製品、特にコンパクトまたはデジタルデバイスは、ソフトウェアインターフェースまたはデジタルパッケージングを通じてBIS証明書の詳細、標準マーク、ISコードを表示することができます。
@@ -1328,9 +1328,9 @@ const CRSRegistrationJapaneseMainContentLeftELabellingSection = () => {
         IndiaがCRSスキームの下でBIS登録をどのように支援できるか
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         なぜBISコンサルタントを選ぶのか？
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         全体のBIS
@@ -1923,7 +1923,7 @@ const CRSRegistrationJapaneseMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         認可インド代表者（AIR）とは誰ですか？
       </h2>
 
@@ -2012,7 +2012,7 @@ const CRSRegistrationJapaneseMainContentLeftOverviewSection = () => {
         CRS認証のリストは急速に拡大しているため、製造業者が積極的で最新の更新情報を把握することが非常に重要です。
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         CRS登録 vs ISIマーク：違いは何ですか？
       </h2>
 
@@ -2601,9 +2601,9 @@ const CRSRegistrationHeroContactFormJapanese = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         予約する
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         チームにご連絡いただき、通話のスケジュールを組みませんか？

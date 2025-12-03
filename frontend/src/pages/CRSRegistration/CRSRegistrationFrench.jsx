@@ -356,9 +356,9 @@ const CRSRegistrationHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Réservez un Rendez-vous
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Vous voulez contacter notre équipe et planifier un appel ?
@@ -1130,13 +1130,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         Directives d'étiquetage électronique pour les produits certifiés CRS
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Qu'est-ce que l'étiquetage électronique ?
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         L'étiquetage électronique est la pratique d'afficher les informations
@@ -1187,9 +1187,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         BIS sous le schéma CRS
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Pourquoi choisir un consultant BIS ?
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         L'ensemble de l'enregistrement BIS CRS est très technique et exhaustif
@@ -2153,9 +2153,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Nos Services
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

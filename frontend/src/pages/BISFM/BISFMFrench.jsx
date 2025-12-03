@@ -976,9 +976,9 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Le logo ISI se compose généralement de :
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -988,9 +988,9 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Le placement doit être :
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1831,9 +1831,9 @@ const ProcessSection = () => {
         Délai pour Obtenir un Certificat BIS
       </h3>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Durée Typique de la Demande au Certificat
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         Le processus de certification BIS sous FMCS prend généralement environ

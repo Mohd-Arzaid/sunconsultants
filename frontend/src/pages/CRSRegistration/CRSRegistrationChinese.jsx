@@ -348,9 +348,9 @@ const ContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         预约咨询
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         想联系我们的团队并安排通话？
@@ -778,7 +778,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         CRS认证的清单正在迅速扩大，因此制造商积极主动并了解最新更新非常重要。
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         CRS注册与ISI标志：有什么区别？
       </h2>
 
@@ -973,7 +973,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         什么是授权印度代表（AIR）？
       </h2>
 
@@ -1502,11 +1502,11 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         CRS认证产品的电子标签指南
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">什么是电子标签？</div>
+      <h3 className="service-left-content-heading-three">什么是电子标签？</h3>
 
       <p className="service-left-content-paragraph">
         电子标签是在设备内以电子方式显示监管信息的做法，而不是打印并粘贴到设备上。在BIS的强制注册计划（CRS）下，指定的产品，特别是紧凑型或数字设备，能够通过软件界面或数字包装显示BIS证书详情、标准标志和IS代码。
@@ -1591,9 +1591,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         太阳认证印度如何帮助您在CRS计划下进行BIS注册
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         为什么选择BIS顾问？
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         整个BIS
@@ -1765,9 +1765,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               我们的服务
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

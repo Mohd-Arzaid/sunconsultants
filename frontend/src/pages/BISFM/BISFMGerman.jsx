@@ -356,9 +356,9 @@ const ContactUsForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Termin vereinbaren
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Möchten Sie unser Team kontaktieren und einen Anruf vereinbaren?
@@ -976,9 +976,9 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Das ISI-Logo besteht typischerweise aus:
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -988,9 +988,9 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Die Platzierung muss sein:
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1576,9 +1576,9 @@ const DocumentSection = () => {
         erforderlichen Dokuments
       </h3>
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         1. FMCS-Antragsformular
-      </h2>
+      </div>
 
       <p className="service-left-content-paragraph">
         Dieses Dokument enthält allgemeine Details über den ausländischen
@@ -1594,9 +1594,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         2. Liste der Fertigungsausrüstung
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1607,9 +1607,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         3. Liste der Rohmaterialien
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1619,9 +1619,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         4. Liste der Prüfausrüstung
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1631,9 +1631,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         5. Kalibrierungszertifikate
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1643,9 +1643,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         6. Fabriklayout & Prozessablaufdiagramm
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1656,9 +1656,9 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         7. Leistungsbankgarantie
-      </h2>
+      </div>
 
       <p className="service-left-content-paragraph">
         Ausgestellt von einer von der RBI genehmigten indischen Bank, deckt die
@@ -1674,10 +1674,10 @@ const DocumentSection = () => {
         ]}
       />
 
-      <h2 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Häufige Dokumentationsfehler, die bei der Beantragung eines
         BIS-Zertifikats oder indischen BIS vermieden werden sollten.
-      </h2>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1828,9 +1828,9 @@ const ProcessSection = () => {
         Zeitrahmen zur Erlangung des BIS-Zertifikats
       </h3>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Typische Dauer vom Antrag bis zum Zertifikat
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         Der BIS-Zertifizierungsprozess unter FMCS dauert in der Regel etwa 120
@@ -2180,9 +2180,9 @@ export const ServiceFaq = () => {
       aria-label="Häufig gestellte Fragen"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Häufig gestellte Fragen
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           Finden Sie nicht die Antwort, die Sie suchen?{" "}
           <a
@@ -2355,9 +2355,9 @@ const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Unsere Dienstleistungen
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

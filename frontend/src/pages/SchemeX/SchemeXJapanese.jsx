@@ -351,9 +351,9 @@ const SchemeXJapaneseHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         予約する
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         チームに連絡して通話をスケジュールしますか？
@@ -817,7 +817,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         BIS規格マークを付けた製品は、製品が安全で信頼性が高く、高品質であることをユーザーに認証および保証する適合マークです。それはまた、信頼と優れた性能のマークでもあります。
       </p>
 
-      <h3 className="service-left-content-heading-three">MSMEsへの特別注記</h3>
+      <div className="service-left-content-heading-three">MSMEsへの特別注記</div>
 
       <p className="service-left-content-paragraph">
         他の多くのセクターと同様に、零細・中小企業（MSMEs）もスキームXに準拠し、機械および電気機器についてBIS認証を取得する必要があります。規制要件への準拠は困難に見えるかもしれませんが、スキームX証明書は以下の理由でMSMEsに付加価値と利点をもたらします：
@@ -832,7 +832,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">BISスキームXロゴ</h3>
+      <h2 className="service-left-content-heading-three">BISスキームXロゴ</h2>
 
       <p className="service-left-content-paragraph">
         スキームXのBIS規格マークは、品質マークおよび信頼の原則を形成します。ロゴには以下が含まれます：
@@ -858,7 +858,7 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         />
       </div>
 
-      <h3 className="service-left-content-heading-three">法的影響</h3>
+      <div className="service-left-content-heading-three">法的影響</div>
 
       <p className="service-left-content-paragraph">
         BIS規格マークは、信頼と品質のマークです。このマークは、有効な契約が成立した後にのみ利用可能です。有効な契約のみが所有者にマークの使用を許可します。有効な契約なしでマークを使用することは、インド憲法の下での違反であり、法的マークを持つことと同等です。マークの所有者は、BIS認証を持たない製品のライセンスCM/L-XXXXXXXXXXの使用について重い制限が課されます。
@@ -981,9 +981,9 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         スキームXでカバーされる製品
-      </h3>
+      </h2>
 
       <p className="service-left-content-paragraph">
         スキームXは、安全性と性能に対して最も高いリスクを持つ製品をカバーしています：
@@ -1378,9 +1378,9 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
 
         {/* Heading and Description */}
         <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+          <div className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
             製品別安全基準
-          </h3>
+          </div>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             機械および電気機器の説明
           </p>
@@ -1861,9 +1861,9 @@ const SchemeXJapaneseServiceFaq = () => {
   return (
     <section id="faqs" className="my-2 scroll-mt-20" aria-label="よくある質問">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           よくある質問
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           お探しの回答が見つかりませんか？{" "}
           <a
@@ -2036,9 +2036,9 @@ export const ServicesJapanese = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               私たちのサービス
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

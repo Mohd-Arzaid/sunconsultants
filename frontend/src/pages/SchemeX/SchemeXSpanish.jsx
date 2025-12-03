@@ -361,9 +361,9 @@ const SchemeXSpanishHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Reserva una Cita
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         ¿Quieres contactar a nuestro equipo y programar una llamada?
@@ -827,9 +827,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Nuestros Servicios
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1819,9 +1819,9 @@ const SchemeXServiceFaq = () => {
       aria-label="Preguntas Frecuentes"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           Preguntas Frecuentes
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           ¿No puede encontrar la respuesta que busca?{" "}
           <a
@@ -1894,7 +1894,7 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Conclusión</h2>
+      <div className="service-left-content-heading-two">Conclusión</div>
 
       <p className="service-left-content-paragraph">
         La Certificación BIS Scheme-X sigue siendo vital para mantener la
@@ -2351,9 +2351,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         y realmente buen rendimiento.
       </p>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Nota Especial para PYMEs
-      </h3>
+      </div>
 
       <p className="service-left-content-paragraph">
         Como en muchos otros sectores, Micro, Pequeñas y Medianas Empresas
@@ -2373,7 +2373,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">Logo BIS Scheme X</h3>
+      <h2 className="service-left-content-heading-three">Logo BIS Scheme X</h2>
 
       <p className="service-left-content-paragraph">
         La marca estándar BIS de Scheme X forma una marca de calidad y un
@@ -2402,9 +2402,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Implicaciones Legales
-      </h3>
+      </div>
 
       <p className="service-left-content-paragraph">
         La Marca Estándar BIS es una marca de confianza y calidad. La marca solo
@@ -2535,9 +2535,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         Productos Cubiertos por Scheme-X
-      </h3>
+      </h2>
 
       <p className="service-left-content-paragraph">
         Scheme-X cubre productos con el mayor riesgo para la seguridad y
@@ -2936,9 +2936,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
         {/* Heading and Description */}
         <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+          <div className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
             Estándar de Seguridad por Producto
-          </h3>
+          </div>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             Descripción de Maquinaria y Equipos Eléctricos
           </p>

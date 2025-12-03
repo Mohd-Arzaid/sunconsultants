@@ -318,9 +318,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Đặt lịch hẹn
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Muốn liên hệ với đội ngũ của chúng tôi và lên lịch cuộc gọi?
@@ -760,7 +760,7 @@ const OverviewSection = () => {
         thiết cho các điều kiện Ấn Độ.
       </p>
 
-      <h3 className="service-left-content-heading-three">Cột mốc Đáng chú ý</h3>
+      <div className="service-left-content-heading-three">Cột mốc Đáng chú ý</div>
 
       <PointsListWithoutHeading
         points={[
@@ -1000,7 +1000,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Kết luận</h2>
+      <div className="service-left-content-heading-two">Kết luận</div>
 
       <p className="service-left-content-paragraph">
         Có chứng nhận BIS là điều cần thiết để làm kinh doanh ở Ấn Độ. Nó không
@@ -1703,9 +1703,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Dịch vụ của Chúng tôi
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

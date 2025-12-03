@@ -317,9 +317,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         จองนัดหมาย
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         ต้องการติดต่อทีมของเราและกำหนดเวลาสำหรับการโทร?
@@ -758,7 +758,7 @@ const OverviewSection = () => {
         สำหรับเงื่อนไขอินเดีย
       </p>
 
-      <h3 className="service-left-content-heading-three">จุดสำคัญที่โดดเด่น</h3>
+      <div className="service-left-content-heading-three">จุดสำคัญที่โดดเด่น</div>
 
       <PointsListWithoutHeading
         points={[
@@ -995,7 +995,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">สรุป</h2>
+      <div className="service-left-content-heading-two">สรุป</div>
 
       <p className="service-left-content-paragraph">
         การมีใบรับรอง BIS เป็นสิ่งจำเป็นสำหรับการทำธุรกิจในอินเดีย
@@ -1706,9 +1706,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               บริการของเรา
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

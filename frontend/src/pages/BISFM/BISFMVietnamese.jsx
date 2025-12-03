@@ -969,9 +969,9 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Logo ISI thường bao gồm:
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -981,7 +981,7 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">Vị trí đặt phải là:</p>
+      <div className="service-left-content-heading-three">Vị trí đặt phải là:</div>
 
       <PointsListWithoutHeading
         points={[
@@ -1810,9 +1810,9 @@ const ProcessSection = () => {
         Khung thời gian để Có được Chứng chỉ BIS
       </h3>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Thời gian Điển hình từ Đơn đăng ký đến Chứng chỉ
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         Quy trình chứng nhận BIS theo FMCS thường mất khoảng 120 ngày làm việc

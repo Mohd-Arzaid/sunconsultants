@@ -360,9 +360,9 @@ const SchemeXHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         จองนัดหมาย
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         ต้องการติดต่อทีมของเราและนัดหมายการโทรหรือไม่?
@@ -825,9 +825,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               บริการของเรา
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1809,9 +1809,9 @@ const SchemeXServiceFaq = () => {
       aria-label="คำถามที่พบบ่อย"
     >
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
-        <h4 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
+        <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
           คำถามที่พบบ่อย
-        </h4>
+        </h2>
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
           ไม่พบคำตอบที่คุณกำลังมองหาหรือ?{" "}
           <a
@@ -1884,7 +1884,7 @@ const SchemeXMainContentLeftConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">สรุป</h2>
+      <div className="service-left-content-heading-two">สรุป</div>
 
       <p className="service-left-content-paragraph">
         การรับรอง BIS Scheme-X ยังคงสำคัญในการรักษาความปลอดภัย ความน่าเชื่อถือ
@@ -2320,9 +2320,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         มันยังเป็นเครื่องหมายของความเชื่อมั่นและประสิทธิภาพที่ดีจริงๆ
       </p>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         หมายเหตุพิเศษสำหรับ MSMEs
-      </h3>
+      </div>
 
       <p className="service-left-content-paragraph">
         เช่นเดียวกับภาคส่วนอื่นๆ องค์กรขนาดกลางขนาดเล็กและขนาดย่อม (MSMEs)
@@ -2342,7 +2342,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         ]}
       />
 
-      <h3 className="service-left-content-heading-three">โลโก้ BIS Scheme X</h3>
+      <h2 className="service-left-content-heading-three">โลโก้ BIS Scheme X</h2>
 
       <p className="service-left-content-paragraph">
         เครื่องหมายมาตรฐาน BIS ของ Scheme X
@@ -2371,7 +2371,7 @@ const SchemeXMainContentLeftOverviewSection = () => {
         />
       </div>
 
-      <h3 className="service-left-content-heading-three">ผลกระทบทางกฎหมาย</h3>
+      <div className="service-left-content-heading-three">ผลกระทบทางกฎหมาย</div>
 
       <p className="service-left-content-paragraph">
         เครื่องหมายมาตรฐาน BIS เป็นเครื่องหมายของความเชื่อมั่นและคุณภาพ
@@ -2500,9 +2500,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         </Table>
       </div>
 
-      <h3 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-three">
         ผลิตภัณฑ์ที่ครอบคลุมโดย Scheme-X
-      </h3>
+      </h2>
 
       <p className="service-left-content-paragraph">
         Scheme-X
@@ -2896,9 +2896,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
 
         {/* Heading and Description */}
         <div className="mb-6">
-          <h3 className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
+          <div className="text-[20px] md:text-[24px] font-roboto font-bold text-[#131316] mb-2">
             มาตรฐานความปลอดภัยตามผลิตภัณฑ์
-          </h3>
+          </div>
           <p className="mt-[12px] md:mt-[16px] font-geist text-sm md:text-lg text-[#42434d] tracking-wide text-left max-w-full leading-loose">
             คำอธิบายของเครื่องจักรและอุปกรณ์ไฟฟ้า
           </p>

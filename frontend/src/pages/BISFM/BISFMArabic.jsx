@@ -978,9 +978,9 @@ const StandardizationSection = () => {
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         يتكون شعار ISI عادة من:
-      </p>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -990,7 +990,7 @@ const StandardizationSection = () => {
         ]}
       />
 
-      <p className="service-left-content-heading-three">يجب أن يكون الموضع:</p>
+      <div className="service-left-content-heading-three">يجب أن يكون الموضع:</div>
 
       <PointsListWithoutHeading
         points={[
@@ -1800,9 +1800,9 @@ const ProcessSection = () => {
         الإطار الزمني للحصول على شهادة BIS
       </h3>
 
-      <p className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         المدة النموذجية من التقديم إلى الشهادة
-      </p>
+      </div>
 
       <p className="service-left-content-paragraph">
         عملية شهادة BIS تحت FMCS تستغرق عادة حوالي 120 يوم عمل (حوالي 3-4 أشهر)
