@@ -748,7 +748,9 @@ const OverviewSection = () => {
         했다.
       </p>
 
-      <div className="service-left-content-heading-three">주목할 만한 이정표</div>
+      <div className="service-left-content-heading-three">
+        주목할 만한 이정표
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1480,6 +1482,29 @@ const LanguageSelector = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
+  // Helper function to get country name from flag URL
+  const getCountryName = (flagUrl) => {
+    const countryMap = {
+      cn: "China",
+      de: "Germany",
+      nl: "Netherlands",
+      jp: "Japan",
+      kr: "South Korea",
+      fr: "France",
+      es: "Spain",
+      th: "Thailand",
+      id: "Indonesia",
+      it: "Italy",
+      sa: "Saudi Arabia",
+      vn: "Vietnam",
+      gb: "United Kingdom",
+    };
+    // Extract country code from URL (e.g., "cn" from "https://flagcdn.com/w320/cn.png")
+    const match = flagUrl.match(/\/([a-z]{2})\.png$/);
+    const countryCode = match ? match[1] : null;
+    return countryMap[countryCode] || "Flag";
+  };
+
   const languages = [
     {
       code: "en",
@@ -1593,8 +1618,8 @@ const LanguageSelector = () => {
                     >
                       <img
                         src={language.flag}
-                        alt={`${language.country} Flag`}
-                        title={`${language.country} Flag`}
+                        alt={`${getCountryName(language.flag)} Flag`}
+                        title={`${getCountryName(language.flag)} Flag`}
                         className="w-full h-full object-cover rounded-sm border border-neutral-500"
                       />
                     </div>

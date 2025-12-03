@@ -817,7 +817,9 @@ const SchemeXJapaneseMainContentLeftOverviewSection = () => {
         BIS規格マークを付けた製品は、製品が安全で信頼性が高く、高品質であることをユーザーに認証および保証する適合マークです。それはまた、信頼と優れた性能のマークでもあります。
       </p>
 
-      <div className="service-left-content-heading-three">MSMEsへの特別注記</div>
+      <div className="service-left-content-heading-three">
+        MSMEsへの特別注記
+      </div>
 
       <p className="service-left-content-paragraph">
         他の多くのセクターと同様に、零細・中小企業（MSMEs）もスキームXに準拠し、機械および電気機器についてBIS認証を取得する必要があります。規制要件への準拠は困難に見えるかもしれませんが、スキームX証明書は以下の理由でMSMEsに付加価値と利点をもたらします：
@@ -1897,6 +1899,29 @@ const LanguageSelector = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
+  // Helper function to get country name from flag URL
+  const getCountryName = (flagUrl) => {
+    const countryMap = {
+      cn: "China",
+      de: "Germany",
+      nl: "Netherlands",
+      jp: "Japan",
+      kr: "South Korea",
+      fr: "France",
+      es: "Spain",
+      th: "Thailand",
+      id: "Indonesia",
+      it: "Italy",
+      sa: "Saudi Arabia",
+      vn: "Vietnam",
+      gb: "United Kingdom",
+    };
+    // Extract country code from URL (e.g., "cn" from "https://flagcdn.com/w320/cn.png")
+    const match = flagUrl.match(/\/([a-z]{2})\.png$/);
+    const countryCode = match ? match[1] : null;
+    return countryMap[countryCode] || "Flag";
+  };
+
   const languages = [
     {
       code: "en",
@@ -2010,8 +2035,8 @@ const LanguageSelector = () => {
                     >
                       <img
                         src={language.flag}
-                        alt={`${language.country} Flag`}
-                        title={`${language.country} Flag`}
+                        alt={`${getCountryName(language.flag)} Flag`}
+                        title={`${getCountryName(language.flag)} Flag`}
                         className="w-full h-full object-cover rounded-sm border border-neutral-500"
                       />
                     </div>
