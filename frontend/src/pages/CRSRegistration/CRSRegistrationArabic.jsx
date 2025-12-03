@@ -348,9 +348,9 @@ const CRSRegistrationHeroContactFormArabic = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         احجز موعد
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         هل تريد الاتصال بفريقنا وزيادة مكالمة؟
@@ -821,9 +821,9 @@ export const ServicesArabic = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
               خدماتنا
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1875,7 +1875,7 @@ const CRSRegistrationMainContentLeftOverviewSectionArabic = () => {
         استباقيين وواعين بالتحديثات الأخيرة.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         تسجيل CRS مقابل علامة ISI: ما الفرق؟
       </h2>
 
@@ -2078,7 +2078,7 @@ const CRSRegistrationMainContentLeftEligibilitySectionArabic = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         من هو الممثل الهندي المخول (AIR)؟
       </h2>
 
@@ -2642,13 +2642,13 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         إرشادات التوسيم الإلكتروني للمنتجات المعتمدة من CRS
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         ما هو التوسيم الإلكتروني؟
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         التوسيم الإلكتروني هو ممارسة عرض المعلومات التنظيمية داخل الجهاز
@@ -2746,9 +2746,9 @@ const CRSRegistrationMainContentLeftELabellingSectionArabic = () => {
         كيف يمكن لـ Sun Certifications India مساعدتك في تسجيل BIS تحت مخطط CRS
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         لماذا تختار مستشار BIS؟
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         تسجيل BIS CRS بالكامل تقني ومكثف جداً فيما يتعلق بالقواعد وحجم التوثيق.

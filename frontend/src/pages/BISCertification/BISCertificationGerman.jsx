@@ -306,9 +306,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Termin vereinbaren
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Möchten Sie unser Team kontaktieren und einen Anruf planen?
@@ -736,7 +736,7 @@ const OverviewSection = () => {
         an internationale Best Practices und indische Rahmenbedingungen.
       </p>
 
-      <h3 className="service-left-content-heading-three">Meilensteine</h3>
+      <div className="service-left-content-heading-three">Meilensteine</div>
 
       <PointsListWithoutHeading
         points={[
@@ -968,7 +968,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Fazit</h2>
+      <div className="service-left-content-heading-two">Fazit</div>
 
       <p className="service-left-content-paragraph">
         Die BIS-Zertifizierung ist für die Geschäftstätigkeit in Indien
@@ -1411,9 +1411,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Unsere Dienstleistungen
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

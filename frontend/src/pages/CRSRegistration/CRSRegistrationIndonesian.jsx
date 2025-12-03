@@ -355,9 +355,9 @@ const CRSRegistrationHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Pesan Janji Temu
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Ingin menghubungi tim kami dan menjadwalkan panggilan?
@@ -829,9 +829,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Layanan Kami
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1895,7 +1895,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         produsen untuk proaktif dan menyadari pembaruan terbaru.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Pendaftaran CRS vs Tanda ISI: Apa Perbedaannya?
       </h2>
 
@@ -2102,7 +2102,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Siapa Perwakilan India yang Berwenang (AIR)?
       </h2>
 
@@ -2679,13 +2679,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         Pedoman E-Labelling untuk Produk Bersertifikat CRS
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         Apa itu E-Labelling?
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         E-labelling adalah praktik menampilkan informasi regulasi dalam
@@ -2785,9 +2785,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         Pendaftaran BIS di bawah Skema CRS
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Mengapa Memilih Konsultan BIS?
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         Seluruh pendaftaran BIS CRS sangat teknis dan melelahkan dalam hal

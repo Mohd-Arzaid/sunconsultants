@@ -316,9 +316,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         予約を取る
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         チームに連絡して電話を予約したいですか？
@@ -727,9 +727,9 @@ const OverviewSection = () => {
         インド標準局（BIS）は、1947年に設立されたインド標準機関（ISI）を引き継いで1986年に設立されました。BISは現在、インドにおける標準の品質守護者と見なされ、その慣行を国際レベルに合わせ、インドの条件に必要な改正を行っています。
       </p>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         注目すべきマイルストーン
-      </h3>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -948,7 +948,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">結論</h2>
+      <div className="service-left-content-heading-two">結論</div>
 
       <p className="service-left-content-paragraph">
         BIS認証を取得することは、インドでビジネスを行うための必要性です。もはやビジネスにおけるオプションの認証ではありません。ビジネスの成功と信頼の構築に不可欠です。BISはインドにおける安全性と成功に不可欠です。製造業者および輸入業者にとって、それは簡単で安全なビジネスセットアップ環境を提供します。法的問題や罰金はもはや懸念事項ではありません。BISマークにより、消費者の信頼が保証されます。
@@ -1464,9 +1464,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               私たちのサービス
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

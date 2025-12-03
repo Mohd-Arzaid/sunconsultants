@@ -313,9 +313,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         预约咨询
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         想联系我们的团队并安排通话？
@@ -722,7 +722,7 @@ const OverviewSection = () => {
         印度标准局（BIS）成立于1986年，接管了1947年成立的印度标准协会（ISI）。BIS现在被认为是印度标准的质量守护者，已将其做法与国际水平接轨，并为印度条件做出了必要的修正。
       </p>
 
-      <h3 className="service-left-content-heading-three">重要里程碑</h3>
+      <div className="service-left-content-heading-three">重要里程碑</div>
 
       <PointsListWithoutHeading
         points={[
@@ -938,7 +938,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">结论</h2>
+      <div className="service-left-content-heading-two">结论</div>
 
       <p className="service-left-content-paragraph">
         拥有BIS认证是在印度开展业务的必要条件。它不再是业务中的可选认证。它对于业务成功和建立信任至关重要。BIS对于在印度的安全和成功至关重要。对于制造商和进口商来说，它提供了一个简单安全的业务设置环境。法律问题和罚款不再是问题。有了BIS标志，消费者信任得到保证。
@@ -1449,9 +1449,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               我们的服务
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

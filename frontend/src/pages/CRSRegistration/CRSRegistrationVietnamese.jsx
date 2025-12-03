@@ -354,9 +354,9 @@ const CRSRegistrationHeroContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Đặt Lịch Hẹn
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Bạn muốn liên hệ với đội ngũ của chúng tôi và lên lịch cuộc gọi?
@@ -828,9 +828,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Dịch Vụ Của Chúng Tôi
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
@@ -1886,7 +1886,7 @@ const CRSRegistrationMainContentLeftOverviewSection = () => {
         xuất rất cần chủ động và nhận thức được các cập nhật gần đây.
       </p>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Đăng Ký CRS vs Dấu ISI: Sự Khác Biệt Là Gì?
       </h2>
 
@@ -2093,7 +2093,7 @@ const CRSRegistrationMainContentLeftEligibilitySection = () => {
         </div>
       </div>
 
-      <h2 className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Ai Là Đại Diện Ấn Độ Được Ủy Quyền (AIR)?
       </h2>
 
@@ -2669,13 +2669,13 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <div className="service-left-content-heading-two">
+      <h2 className="service-left-content-heading-two">
         Hướng Dẫn E-Labelling Cho Sản Phẩm Được Chứng Nhận CRS
-      </div>
+      </h2>
 
-      <div className="service-left-content-heading-three">
+      <h3 className="service-left-content-heading-three">
         E-Labelling Là Gì?
-      </div>
+      </h3>
 
       <p className="service-left-content-paragraph">
         E-Labelling là việc hiển thị thông tin tuân thủ bên trong thiết bị bằng
@@ -2773,9 +2773,9 @@ const CRSRegistrationMainContentLeftELabellingSection = () => {
         Trình CRS
       </p>
 
-      <div className="service-left-content-heading-three">
+      <h2 className="service-left-content-heading-two">
         Tại Sao Chọn Cố Vấn BIS?
-      </div>
+      </h2>
 
       <p className="service-left-content-paragraph">
         Toàn bộ đăng ký BIS CRS rất kỹ thuật và toàn diện về quy tắc và khối

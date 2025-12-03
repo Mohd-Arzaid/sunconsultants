@@ -315,9 +315,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         약속 예약하기
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         저희 팀과 연락하고 통화를 예약하고 싶으신가요?
@@ -748,7 +748,7 @@ const OverviewSection = () => {
         했다.
       </p>
 
-      <h3 className="service-left-content-heading-three">주목할 만한 이정표</h3>
+      <div className="service-left-content-heading-three">주목할 만한 이정표</div>
 
       <PointsListWithoutHeading
         points={[
@@ -974,7 +974,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">결론</h2>
+      <div className="service-left-content-heading-two">결론</div>
 
       <p className="service-left-content-paragraph">
         BIS 인증을 보유하는 것은 인도에서 사업을 하는 데 필수적입니다. 더 이상
@@ -1618,9 +1618,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               저희 서비스
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

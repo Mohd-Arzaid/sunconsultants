@@ -319,9 +319,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Maak een Afspraak
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Wilt u contact opnemen met ons team en een gesprek inplannen?
@@ -763,9 +763,9 @@ const OverviewSection = () => {
         noodzakelijke wijzigingen aangebracht voor de Indiase omstandigheden.
       </p>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Opmerkelijke Mijlpalen
-      </h3>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1005,7 +1005,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Conclusie</h2>
+      <div className="service-left-content-heading-two">Conclusie</div>
 
       <p className="service-left-content-paragraph">
         Het hebben van een BIS certificering is een noodzaak voor het doen van
@@ -1730,9 +1730,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Onze Diensten
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

@@ -320,9 +320,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         Prenota un Appuntamento
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         Vuoi contattare il nostro team e programmare una chiamata?
@@ -763,9 +763,9 @@ const OverviewSection = () => {
         fatto gli emendamenti necessari per le condizioni indiane.
       </p>
 
-      <h3 className="service-left-content-heading-three">
+      <div className="service-left-content-heading-three">
         Traguardi Importanti
-      </h3>
+      </div>
 
       <PointsListWithoutHeading
         points={[
@@ -1006,7 +1006,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">Conclusione</h2>
+      <div className="service-left-content-heading-two">Conclusione</div>
 
       <p className="service-left-content-paragraph">
         Avere una certificazione BIS è una necessità per fare affari in India.
@@ -1726,9 +1726,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               I Nostri Servizi
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

@@ -313,9 +313,9 @@ const BISCertificationContactForm = () => {
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
-      <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
+      <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
         احجز موعداً
-      </h3>
+      </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
         تريد الاتصال بفريقنا وترتيب مكالمة؟
@@ -749,7 +749,7 @@ const OverviewSection = () => {
         التعديلات اللازمة للظروف الهندية.
       </p>
 
-      <h3 className="service-left-content-heading-three">معالم ملحوظة</h3>
+      <div className="service-left-content-heading-three">معالم ملحوظة</div>
 
       <PointsListWithoutHeading
         points={[
@@ -977,7 +977,7 @@ const ConclusionSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
 
-      <h2 className="service-left-content-heading-two">الخلاصة</h2>
+      <div className="service-left-content-heading-two">الخلاصة</div>
 
       <p className="service-left-content-paragraph">
         الحصول على شهادة BIS أمر ضروري لممارسة الأعمال في الهند. لم تعد شهادة
@@ -1625,9 +1625,9 @@ const BISCertificationServices = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               خدماتنا
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
