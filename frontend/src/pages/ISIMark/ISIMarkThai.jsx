@@ -1231,7 +1231,8 @@ const LanguageSelector = () => {
                     >
                       <img
                         src={language.flag}
-                        alt={`${language.name} flag`}
+                        alt={`${language.country} Flag`}
+                        title={`${language.country} Flag`}
                         className="w-full h-full object-cover rounded-sm border border-neutral-500"
                       />
                     </div>

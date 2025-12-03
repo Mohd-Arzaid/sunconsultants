@@ -788,7 +788,8 @@ const LanguageSelector = () => {
                     >
                       <img
                         src={language.flag}
-                        alt={`${language.name} flag`}
+                        alt={`${language.country} Flag`}
+                        title={`${language.country} Flag`}
                         className="w-full h-full object-cover rounded-sm border border-neutral-500"
                       />
                     </div>
@@ -2177,7 +2178,9 @@ const SchemeXMainContentLeftOverviewSection = () => {
         带有BIS标准标记的产品是符合性标记，证明并向用户保证产品安全、可靠且质量良好。它也是信任和真正良好性能的标记。
       </p>
 
-      <div className="service-left-content-heading-three">中小微企业特别说明</div>
+      <div className="service-left-content-heading-three">
+        中小微企业特别说明
+      </div>
 
       <p className="service-left-content-paragraph">
         与许多其他行业一样，微型、小型和中型企业（MSME）也必须遵守方案X并为其机械和电气设备获得BIS认证。虽然遵守监管要求可能看起来具有挑战性，但方案X证书对MSME来说是一个增值和优势，原因如下：
