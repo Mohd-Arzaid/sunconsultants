@@ -94,7 +94,8 @@ const Countries = () => {
                   <div className="w-full h-full flex items-center justify-center overflow-hidden">
                     <img
                       src={country.img}
-                      alt={country.name}
+                      alt={`BIS Certification Services in ${country.name} - Sun Certifications India`}
+                      title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
                       className="w-auto h-full object-contain"
                     />
                   </div>
@@ -119,7 +120,8 @@ const Countries = () => {
                   <div className="w-full h-full flex items-center justify-center">
                     <img
                       src={country.img}
-                      alt={country.name}
+                      alt={`BIS Certification Services in ${country.name} - Sun Certifications India`}
+                      title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
                       className={
                         country.name === "Thailand"
                           ? "w-full h-full object-cover"
