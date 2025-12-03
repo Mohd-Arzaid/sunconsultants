@@ -1,6 +1,5 @@
 import Footer from "@/common/Footer";
 import { Suspense } from "react";
-import PropTypes from "prop-types";
 import HomeSEO from "@/components/manual/home-page-sections/HomeSEO";
 
 // Loading component for sections
@@ -94,10 +93,6 @@ const Home = ({ onVideoPopupChange }) => {
       <Footer />
     </main>
   );
-};
-
-Home.propTypes = {
-  onVideoPopupChange: PropTypes.func,
 };
 
 export default Home;
