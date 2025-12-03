@@ -188,7 +188,8 @@ const VideoShowcase = () => {
 
             <img
               src={whychooseus}
-              alt="Team working"
+              alt="Sun Certifications India Team - BIS Certification Experts Working Together - About Us"
+              title="Sun Certifications India Team - BIS Certification Experts Working Together - About Us"
               className="w-full h-[450px] md:h-[600px] object-cover group-hover:scale-105 transition-all duration-700"
             />
 
@@ -321,6 +322,35 @@ export const OurServices = () => {
     },
   ];
 
+  // Helper function to get SEO-friendly alt and title tags for service images
+  const getServiceImageAlt = (service) => {
+    if (service.title === "CDSCO Registration Certification") {
+      return "CDSCO Registration Certificate - Central Drugs Standard Control Organization - Sun Certifications India";
+    }
+    if (service.title === "BIS CRS Registration") {
+      return "BIS CRS Registration Certificate - Compulsory Registration Scheme - Sun Certifications India";
+    }
+    if (service.title === "Plastic Waste Management") {
+      return "Plastic Waste Management Certificate - Environmental Compliance - Sun Certifications India";
+    }
+    if (service.title === "EPR Certificate") {
+      return "EPR Certificate - Extended Producer Responsibility - Sun Certifications India";
+    }
+    if (service.title === "LMPC Certificate") {
+      return "LMPC Certificate - Legal Metrology Packaged Commodities - Sun Certifications India";
+    }
+    if (
+      service.title === "Scheme X" ||
+      service.title === "ISI Mark BIS for Indian Manufacturers"
+    ) {
+      return "ISI Mark Certificate - Indian Standards Institute Certification - Sun Certifications India";
+    }
+    if (service.title === "BIS Mark (ISI License) for Foreign Manufacturers") {
+      return "BIS Mark Certificate - Bureau of Indian Standards for Foreign Manufacturers - Sun Certifications India";
+    }
+    return `${service.title} - Certification Service - Sun Certifications India`;
+  };
+
   // Carousel state
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -390,16 +420,8 @@ export const OurServices = () => {
                       <div className="hidden md:flex bg-white/80 backdrop-blur-sm w-16 h-16 md:w-24 md:h-24 rounded-2xl items-center justify-center shadow-lg mx-auto md:mx-0">
                         <img
                           src={service.icon}
-                          alt={
-                            service.title === "CDSCO Registration Certification"
-                              ? "CDSCO Logo"
-                              : service.title
-                          }
-                          title={
-                            service.title === "CDSCO Registration Certification"
-                              ? "CDSCO Logo"
-                              : service.title
-                          }
+                          alt={getServiceImageAlt(service)}
+                          title={getServiceImageAlt(service)}
                           className="w-12 h-12 md:w-20 md:h-20 rounded-full object-contain"
                         />
                       </div>
@@ -430,16 +452,8 @@ export const OurServices = () => {
                       <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[200px] sm:h-[250px] md:h-[350px] flex items-center justify-center mb-6 md:mb-0">
                         <img
                           src={service.icon}
-                          alt={
-                            service.title === "CDSCO Registration Certification"
-                              ? "CDSCO Logo"
-                              : service.title
-                          }
-                          title={
-                            service.title === "CDSCO Registration Certification"
-                              ? "CDSCO Logo"
-                              : service.title
-                          }
+                          alt={getServiceImageAlt(service)}
+                          title={getServiceImageAlt(service)}
                           className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 rounded-full object-contain"
                         />
                       </div>
@@ -483,16 +497,8 @@ export const OurServices = () => {
                 <div className="mb-0.5 md:mb-1">
                   <img
                     src={service.icon}
-                    alt={
-                      service.title === "CDSCO Registration Certification"
-                        ? "CDSCO Logo"
-                        : service.title
-                    }
-                    title={
-                      service.title === "CDSCO Registration Certification"
-                        ? "CDSCO Logo"
-                        : service.title
-                    }
+                    alt={getServiceImageAlt(service)}
+                    title={getServiceImageAlt(service)}
                     className="w-8 h-8 md:w-12 md:h-12 rounded-full object-contain mx-auto"
                   />
                 </div>

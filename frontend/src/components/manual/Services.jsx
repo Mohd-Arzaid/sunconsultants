@@ -41,8 +41,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="BIS Mark Certificate - Bureau of Indian Standards for Foreign Manufacturers - Sun Certifications India"
+                title="BIS Mark Certificate - Bureau of Indian Standards for Foreign Manufacturers - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -58,8 +58,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="CDSCO Logo"
-                title="CDSCO Logo"
+                alt="CDSCO Registration Certificate - Central Drugs Standard Control Organization - Sun Certifications India"
+                title="CDSCO Registration Certificate - Central Drugs Standard Control Organization - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -75,7 +75,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
-                alt="BISCRS"
+                alt="BIS CRS Registration Certificate - Compulsory Registration Scheme - Sun Certifications India"
+                title="BIS CRS Registration Certificate - Compulsory Registration Scheme - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -91,7 +92,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
-                alt="PlasticWasteManagement"
+                alt="Plastic Waste Management Certificate - Environmental Compliance - Sun Certifications India"
+                title="Plastic Waste Management Certificate - Environmental Compliance - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -107,7 +109,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={EPRCertificate}
-                alt="EPRCertificate"
+                alt="EPR Certificate - Extended Producer Responsibility - Sun Certifications India"
+                title="EPR Certificate - Extended Producer Responsibility - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -123,7 +126,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
-                alt="LMPC"
+                alt="LMPC Certificate - Legal Metrology Packaged Commodities - Sun Certifications India"
+                title="LMPC Certificate - Legal Metrology Packaged Commodities - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -139,8 +143,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="BIS Registration Certificate - Bureau of Indian Standards - Sun Certifications India"
+                title="BIS Registration Certificate - Bureau of Indian Standards - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -156,7 +160,8 @@ export const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMark}
-                alt="ISIMark"
+                alt="ISI Mark Certificate - Indian Standards Institute Certification - Sun Certifications India"
+                title="ISI Mark Certificate - Indian Standards Institute Certification - Sun Certifications India"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
