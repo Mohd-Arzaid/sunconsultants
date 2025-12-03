@@ -69,20 +69,31 @@ const VideoSection = ({ onVideoPopupChange }) => {
         className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
       >
         <div className="flex w-max gap-6 py-4 animate-scroll hover:[animation-play-state:paused]">
-          {duplicatedVideos.map((video, index) => (
-            <div
-              key={`${video.id}-${index}`}
-              className="group relative overflow-hidden rounded-xl shadow-lg p-4 transition-all duration-500 bg-white w-[350px] md:w-[400px] lg:w-[450px] shrink-0 cursor-pointer"
-              onClick={() => handleVideoClick(video)}
-            >
-              <YouTubeFacade videoId={video.embedId} title={video.title} />
-              <div className="pt-4 pb-2">
-                <p className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2">
-                  {video.title}
-                </p>
+          {duplicatedVideos.map((video, index) => {
+            // Mark duplicates as hidden from SEO (only first set should be indexed)
+            const isDuplicate = index >= videosData.length;
+
+            return (
+              <div
+                key={`${video.id}-${index}`}
+                className="group relative overflow-hidden rounded-xl shadow-lg p-4 transition-all duration-500 bg-white w-[350px] md:w-[400px] lg:w-[450px] shrink-0 cursor-pointer"
+                onClick={() => handleVideoClick(video)}
+                aria-hidden={isDuplicate ? "true" : undefined}
+                data-seo-ignore={isDuplicate ? "true" : undefined}
+              >
+                <YouTubeFacade
+                  videoId={video.embedId}
+                  title={video.title}
+                  isDuplicate={isDuplicate}
+                />
+                <div className="pt-4 pb-2">
+                  <p className="text-sm md:text-base font-semibold font-geist text-gray-800 line-clamp-2">
+                    {video.title}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
@@ -107,7 +118,7 @@ const VideoSection = ({ onVideoPopupChange }) => {
             >
               <iframe
                 src={`https://www.youtube.com/embed/${selectedVideo.embedId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
-                title={selectedVideo.title}
+                title={`${selectedVideo.title} - BIS Certification Video - Sun Certifications India`}
                 className="w-full aspect-video border-0 rounded-2xl"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

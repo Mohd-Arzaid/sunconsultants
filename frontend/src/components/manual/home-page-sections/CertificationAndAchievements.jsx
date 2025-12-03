@@ -50,7 +50,8 @@ const CertificationAndAchievements = () => {
               <div className="relative w-full h-[140px] md:h-[160px] overflow-hidden bg-gray-200">
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={`BIS Certification Achievement - ${item.title} - Sun Certifications India`}
+                  title={`BIS Certification Achievement - ${item.title} - Sun Certifications India`}
                   loading="lazy"
                   decoding="async"
                   width={905}

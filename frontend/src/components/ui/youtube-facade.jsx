@@ -7,7 +7,11 @@ import { Play } from "lucide-react";
  * - Loads video on click
  * - Improves page performance
  */
-const YouTubeFacade = ({ videoId, title = "YouTube Video" }) => {
+const YouTubeFacade = ({
+  videoId,
+  title = "YouTube Video",
+  isDuplicate = false,
+}) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   if (isLoaded) {
@@ -24,18 +28,35 @@ const YouTubeFacade = ({ videoId, title = "YouTube Video" }) => {
     );
   }
 
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+
   return (
     <div
       className="relative aspect-video overflow-hidden rounded-xl group cursor-pointer"
       onClick={() => setIsLoaded(true)}
     >
-      {/* Thumbnail */}
-      <img
-        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-        alt={title}
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        loading="lazy"
-      />
+      {isDuplicate ? (
+        // Use div with background-image for duplicates (SEO won't index as image)
+        <div
+          className="w-full h-full group-hover:scale-105 transition-transform duration-300"
+          style={{
+            backgroundImage: `url(${thumbnailUrl})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+          aria-hidden="true"
+          data-seo-ignore="true"
+        />
+      ) : (
+        <img
+          src={thumbnailUrl}
+          alt={`${title} - YouTube Video Thumbnail - Sun Certifications India`}
+          title={`${title} - YouTube Video Thumbnail - Sun Certifications India`}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+        />
+      )}
 
       {/* Dark overlay on hover */}
       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />

@@ -30,6 +30,7 @@ const DesktopHero = () => (
             <img
               src={HeroImage}
               alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
+              title="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
               className="shadow-[0_5px_40px_-12px_rgba(0,0,0,0.3)] w-full max-w-[740px] h-auto object-cover"
               loading="eager"
               decoding="sync"
@@ -119,6 +120,7 @@ const MobileHero = () => {
             <img
               src={HeroImageMobile}
               alt="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
+              title="Sun Certifications India - Professional Certification Services for BIS, LMPC, EPR, and WPC"
               loading="eager"
               decoding="sync"
               fetchpriority="high"

@@ -12,71 +12,99 @@ const AuditsMarquee = () => {
       id: 1,
       image: "/auditImages/Bahrain.webp",
       title: "Bahrain Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Aluminium Products under IS 617 and 2590 for one of the world's leading manufacturer in Bahrain",
     },
     {
       id: 2,
       image: "/auditImages/Vietnam.webp",
       title: "Vietnam Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Vietnam",
     },
     {
       id: 3,
       image: "/auditImages/Indonesia.webp",
       title: "Indonesia Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Indonesia",
     },
     {
       id: 4,
       image: "/auditImages/Vietnam-2.webp",
       title: "Vietnam Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Vietnam",
     },
     {
       id: 5,
       image: "/auditImages/Italy-2.webp",
       title: "Italy Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Footwear under IS 6721 for one of the world's leading manufacturer in Italy",
     },
     {
       id: 6,
       image: "/auditImages/Vietnam-3.webp",
       title: "Vietnam Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Sewing Machines under IS 15449 for one of the world's leading manufacturer in Vietnam",
     },
     {
       id: 7,
       image: "/auditImages/Malaysia.webp",
       title: "Malaysia Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Malaysia",
     },
     {
       id: 8,
       image: "/auditImages/Slovenia.webp",
       title: "Slovenia Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Hinges under IS 18297 for one of the world's leading manufacturer in Slovenia",
     },
     {
       id: 9,
       image: "/auditImages/Vietnam-4.webp",
       title: "Vietnam Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Steel Products under IS 6911 for one of the world's leading manufacturer in Vietnam",
     },
     {
       id: 10,
       image: "/auditImages/Thailand.webp",
       title: "Thailand Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Thailand",
     },
     {
       id: 11,
       image: "/auditImages/USA.webp",
       title: "USA Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Steel Products under IS 6911 for one of the world's leading manufacturer in USA",
     },
     {
       id: 12,
       image: "/auditImages/Spain.webp",
       title: "Spain Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Aluminium Products under IS 1285 and IS 733 for one of the world's leading manufacturer in Spain",
     },
     {
       id: 13,
       image: "/auditImages/Turkey.webp",
       title: "Turkey Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Footwear under IS 6721 and IS 17043 Part 2 for one of the world's leading manufacturer in Turkey",
     },
     {
       id: 14,
       image: "/auditImages/bis-certification-inspection-malaysia.webp",
-      title: " Malaysia Audit",
+      title: "Malaysia Audit",
+      description:
+        "Successful Audit and Grant of BIS License on Measuring Tape under IS 1269 Part 2 for one of the world's leading manufacturer in Malaysia",
     },
   ];
 
@@ -141,35 +169,65 @@ const AuditsMarquee = () => {
               start ? "animate-scroll" : ""
             } hover:[animation-play-state:paused]`}
           >
-            {duplicatedImages.map((item, index) => (
-              <div
-                key={`${item.id}-${index}`}
-                className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white shrink-0"
-                style={{ minWidth: "300px", maxWidth: "400px" }}
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={`BIS License inspection at ${item.title} manufacturing facility with Sun Certifications India's representatives.`}
-                    title={`BIS Certification Inspection Visit in ${item.title} – Sun Certifications India`}
-                    className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
-                    width={400}
-                    height={300}
-                    loading="lazy"
-                    decoding="async"
-                    fetchpriority="low"
-                  />
-                </div>
-                {/* Country Name Overlay - Always Visible */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-white font-playfair text-2xl md:text-3xl font-bold transform transition-all duration-500 group-hover:scale-105">
-                      {item.title}
-                    </h3>
+            {duplicatedImages.map((item, index) => {
+              // Mark duplicates as hidden from SEO (only first set should be indexed)
+              const isDuplicate = index >= galleryImages.length;
+
+              return (
+                <div
+                  key={`${item.id}-${index}`}
+                  className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white shrink-0"
+                  style={{ minWidth: "300px", maxWidth: "400px" }}
+                  aria-hidden={isDuplicate ? "true" : undefined}
+                  data-seo-ignore={isDuplicate ? "true" : undefined}
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    {isDuplicate ? (
+                      // Use div with background-image for duplicates (SEO won't index as image)
+                      <div
+                        className="w-full h-full transform transition-transform duration-700 md:group-hover:scale-110"
+                        style={{
+                          backgroundImage: `url(${item.image})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                          color: "transparent",
+                        }}
+                        aria-hidden="true"
+                        data-seo-ignore="true"
+                      />
+                    ) : (
+                      <img
+                        src={item.image}
+                        alt={
+                          item.description || item.title || `Audit ${item.id}`
+                        }
+                        title={
+                          item.description || item.title || `Audit ${item.id}`
+                        }
+                        className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
+                        width="300"
+                        height="300"
+                        loading="eager"
+                        decoding="async"
+                        style={{ color: "transparent" }}
+                      />
+                    )}
+                  </div>
+                  {/* Country Name Overlay - Always Visible */}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
+                    aria-hidden="true"
+                  >
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-white font-playfair text-2xl md:text-3xl font-bold transform transition-all duration-500 group-hover:scale-105">
+                        {item.title}
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
