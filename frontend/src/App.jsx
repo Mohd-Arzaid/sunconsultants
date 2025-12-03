@@ -2,7 +2,7 @@
 // React & React Router Imports
 // ============================================
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 
 // ============================================
 // Common Components
@@ -22,12 +22,20 @@ import OrganizationSchema from "./components/common/OrganizationSchema";
 // Page Components (Direct imports for instant navigation)
 // ============================================
 import Home from "./pages/Home";
-import About from "./pages/About";
-import ContactUs from "./pages/ContactUs";
+
+// ============================================
+// Lazy Loaded Components
+// ============================================
+const About = lazy(() => import("./pages/About"));
+const ContactUs = lazy(() => import("./pages/ContactUs"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const Sitemap = lazy(() => import("./pages/Sitemap"));
+import AboutSkeleton from "./components/ui/about-skeleton";
+import ContactUsSkeleton from "./components/ui/contact-us-skeleton";
+import PrivacyPolicySkeleton from "./components/ui/privacy-policy-skeleton";
+import SitemapSkeleton from "./components/ui/sitemap-skeleton";
 import InternationalAudits from "./pages/InternationalAudits";
 import Exhibition from "./pages/Exhibition";
-import Sitemap from "./pages/Sitemap";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Error404 from "./pages/404Error";
 import Webinar from "./pages/Webinar";
@@ -97,9 +105,30 @@ function App() {
         {FaqsPageRoutes()}
 
         {/* Core Pages */}
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<ContactUs />} />
-        <Route path="sitemap" element={<Sitemap />} />
+        <Route
+          path="/about"
+          element={
+            <Suspense fallback={<AboutSkeleton />}>
+              <About />
+            </Suspense>
+          }
+        />
+        <Route
+          path="contact"
+          element={
+            <Suspense fallback={<ContactUsSkeleton />}>
+              <ContactUs />
+            </Suspense>
+          }
+        />
+        <Route
+          path="sitemap"
+          element={
+            <Suspense fallback={<SitemapSkeleton />}>
+              <Sitemap />
+            </Suspense>
+          }
+        />
 
         {/* Utility Pages */}
         <Route path="international-audits" element={<InternationalAudits />} />
@@ -120,7 +149,6 @@ function App() {
         {ISIMarkPagesRoutes()}
         {CRSRegistrationRoutes()}
 
-    
         {/* Blog Routes */}
         <Route path="Blogs" element={<LatestBlogs />} />
         {BlogRoutes()}
@@ -130,7 +158,14 @@ function App() {
         {SchemeXProductsRoutes()}
 
         {/* Legal Pages */}
-        <Route path="privacy-policy" element={<PrivacyPolicy />} />
+        <Route
+          path="privacy-policy"
+          element={
+            <Suspense fallback={<PrivacyPolicySkeleton />}>
+              <PrivacyPolicy />
+            </Suspense>
+          }
+        />
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
 
         {/* Error Pages */}

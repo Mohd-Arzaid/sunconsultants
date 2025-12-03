@@ -2204,29 +2204,6 @@ const LanguageSelector = () => {
     return countryMap[countryCode] || "Flag";
   };
 
-  // Helper function to get country name from flag URL
-  const getCountryName = (flagUrl) => {
-    const countryMap = {
-      cn: "China",
-      de: "Germany",
-      nl: "Netherlands",
-      jp: "Japan",
-      kr: "South Korea",
-      fr: "France",
-      es: "Spain",
-      th: "Thailand",
-      id: "Indonesia",
-      it: "Italy",
-      sa: "Saudi Arabia",
-      vn: "Vietnam",
-      gb: "United Kingdom",
-    };
-    // Extract country code from URL (e.g., "cn" from "https://flagcdn.com/w320/cn.png")
-    const match = flagUrl.match(/\/([a-z]{2})\.png$/);
-    const countryCode = match ? match[1] : null;
-    return countryMap[countryCode] || "Flag";
-  };
-
   const languages = [
     // {
     //   code: "en",
