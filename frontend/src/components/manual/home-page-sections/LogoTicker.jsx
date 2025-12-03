@@ -90,6 +90,7 @@ const LogoTicker = ({
                   className="mx-auto w-fit scale-[0.8] md:scale-100"
                   src={logo.src}
                   alt={logo.alt}
+                  title={logo.title || logo.alt}
                   height={logo.height}
                   width={logo.width || 160}
                   style={{
