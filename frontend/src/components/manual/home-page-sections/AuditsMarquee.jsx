@@ -179,22 +179,40 @@ const AuditsMarquee = () => {
                   className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white shrink-0"
                   style={{ minWidth: "300px", maxWidth: "400px" }}
                   aria-hidden={isDuplicate ? "true" : undefined}
+                  data-seo-ignore={isDuplicate ? "true" : undefined}
                 >
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.description || item.title || `Audit ${item.id}`}
-                      title={
-                        item.description || item.title || `Audit ${item.id}`
-                      }
-                      className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
-                      width="300"
-                      height="300"
-                      loading={isDuplicate ? "lazy" : "eager"}
-                      decoding="async"
-                      style={{ color: "transparent" }}
-                      aria-hidden={isDuplicate ? "true" : undefined}
-                    />
+                    {isDuplicate ? (
+                      // Use div with background-image for duplicates (SEO won't index as image)
+                      <div
+                        className="w-full h-full transform transition-transform duration-700 md:group-hover:scale-110"
+                        style={{
+                          backgroundImage: `url(${item.image})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                          color: "transparent",
+                        }}
+                        aria-hidden="true"
+                        data-seo-ignore="true"
+                      />
+                    ) : (
+                      <img
+                        src={item.image}
+                        alt={
+                          item.description || item.title || `Audit ${item.id}`
+                        }
+                        title={
+                          item.description || item.title || `Audit ${item.id}`
+                        }
+                        className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
+                        width="300"
+                        height="300"
+                        loading="eager"
+                        decoding="async"
+                        style={{ color: "transparent" }}
+                      />
+                    )}
                   </div>
                   {/* Country Name Overlay - Always Visible */}
                   <div

@@ -221,6 +221,7 @@ export const WhatsOurCustomersSaySection = () => {
                   key={`${testimonial.id}-${index}`}
                   className="min-w-[400px] max-w-[400px] bg-[#B5DDEB] p-8 rounded-[20px] shadow-2xl shadow-blue-500/20 relative shrink-0"
                   aria-hidden={isDuplicate ? "true" : undefined}
+                  data-seo-ignore={isDuplicate ? "true" : undefined}
                 >
                   {/* Quote Icon */}
                   <div className="absolute top-6 right-6" aria-hidden="true">
@@ -235,14 +236,30 @@ export const WhatsOurCustomersSaySection = () => {
 
                   {/* User Info */}
                   <div className="flex items-center gap-4 mb-6 pr-12">
-                    <img
-                      src={getAvatarUrl(testimonial.name)}
-                      alt={avatarAlt}
-                      title={avatarTitle}
-                      className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30 flex-shrink-0"
-                      loading={isDuplicate ? "lazy" : "eager"}
-                      aria-hidden={isDuplicate ? "true" : undefined}
-                    />
+                    {isDuplicate ? (
+                      // Use div with background-image for duplicates (SEO won't index as image)
+                      <div
+                        className="w-12 h-12 rounded-full border-2 border-[#1A8781]/30 flex-shrink-0"
+                        style={{
+                          backgroundImage: `url(${getAvatarUrl(
+                            testimonial.name
+                          )})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                        }}
+                        aria-hidden="true"
+                        data-seo-ignore="true"
+                      />
+                    ) : (
+                      <img
+                        src={getAvatarUrl(testimonial.name)}
+                        alt={avatarAlt}
+                        title={avatarTitle}
+                        className="w-12 h-12 rounded-full object-cover border-2 border-[#1A8781]/30 flex-shrink-0"
+                        loading="eager"
+                      />
+                    )}
                     <div className="flex flex-col justify-center min-w-0">
                       <h3 className="font-roboto font-bold text-lg leading-tight text-neutral-800 truncate">
                         {testimonial.name}

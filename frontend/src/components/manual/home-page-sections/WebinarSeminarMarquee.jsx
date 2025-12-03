@@ -194,28 +194,44 @@ const WebinarSeminarMarquee = () => {
                   className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white shrink-0"
                   style={{ minWidth: "300px", maxWidth: "400px" }}
                   aria-hidden={isDuplicate ? "true" : undefined}
+                  data-seo-ignore={isDuplicate ? "true" : undefined}
                 >
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={
-                        item.description ||
-                        item.title ||
-                        `Seminar/Exhibition ${item.id}`
-                      }
-                      title={
-                        item.description ||
-                        item.title ||
-                        `Seminar/Exhibition ${item.id}`
-                      }
-                      loading={isDuplicate ? "lazy" : "eager"}
-                      width="300"
-                      height="300"
-                      decoding="async"
-                      className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
-                      style={{ color: "transparent" }}
-                      aria-hidden={isDuplicate ? "true" : undefined}
-                    />
+                    {isDuplicate ? (
+                      // Use div with background-image for duplicates (SEO won't index as image)
+                      <div
+                        className="w-full h-full transform transition-transform duration-700 md:group-hover:scale-110"
+                        style={{
+                          backgroundImage: `url(${item.image})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                          color: "transparent",
+                        }}
+                        aria-hidden="true"
+                        data-seo-ignore="true"
+                      />
+                    ) : (
+                      <img
+                        src={item.image}
+                        alt={
+                          item.description ||
+                          item.title ||
+                          `Seminar/Exhibition ${item.id}`
+                        }
+                        title={
+                          item.description ||
+                          item.title ||
+                          `Seminar/Exhibition ${item.id}`
+                        }
+                        loading="eager"
+                        width="300"
+                        height="300"
+                        decoding="async"
+                        className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
+                        style={{ color: "transparent" }}
+                      />
+                    )}
                   </div>
                 </div>
               );

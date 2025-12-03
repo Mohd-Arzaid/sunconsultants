@@ -90,21 +90,38 @@ const LogoTicker = ({
                     }px`,
                   }}
                   aria-hidden={isDuplicate ? "true" : undefined}
+                  data-seo-ignore={isDuplicate ? "true" : undefined}
                 >
-                  <img
-                    className="mx-auto w-fit scale-[0.8] md:scale-100"
-                    src={logo.src}
-                    alt={logo.alt}
-                    title={logo.title || logo.alt}
-                    height={logo.height}
-                    width={logo.width || 160}
-                    style={{
-                      height: `${logo.height}px`,
-                    }}
-                    loading={isDuplicate ? "lazy" : "eager"}
-                    decoding="sync"
-                    aria-hidden={isDuplicate ? "true" : undefined}
-                  />
+                  {isDuplicate ? (
+                    // Use div with background-image for duplicates (SEO won't index as image)
+                    <div
+                      className="mx-auto w-fit scale-[0.8] md:scale-100"
+                      style={{
+                        height: `${logo.height}px`,
+                        width: `${logo.width || 160}px`,
+                        backgroundImage: `url(${logo.src})`,
+                        backgroundSize: "contain",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                      }}
+                      aria-hidden="true"
+                      data-seo-ignore="true"
+                    />
+                  ) : (
+                    <img
+                      className="mx-auto w-fit scale-[0.8] md:scale-100"
+                      src={logo.src}
+                      alt={logo.alt}
+                      title={logo.title || logo.alt}
+                      height={logo.height}
+                      width={logo.width || 160}
+                      style={{
+                        height: `${logo.height}px`,
+                      }}
+                      loading="eager"
+                      decoding="sync"
+                    />
+                  )}
                 </li>
               );
             })}
