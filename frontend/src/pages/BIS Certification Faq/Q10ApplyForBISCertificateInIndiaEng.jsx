@@ -176,7 +176,23 @@ const MainContentLeft = () => {
           Can importer apply for bis certificate in india is a frequent question
           for brands and manufacturers navigating Indian conformity routes.
           Begin by identifying the applicable Indian Standard (IS) and
-          confirming whether your product falls under the ISI Scheme (license
+          confirming whether your product falls under the 
+
+
+          {" "}
+          <a
+            href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+            ISI Scheme
+          </a> {" "}
+          
+          
+          
+          
+          (license
           with surveillance) or the Compulsory Registration Scheme (CRS) used
           for electronics/IT. Build a simple scope table with models/variants,
           ratings, and critical components—this improves test planning and
@@ -195,7 +211,25 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           While testing is underway, complete application forms, brand
           authorizations, and—if you are an overseas manufacturer—appoint an
-          Authorized Indian Representative (AIR). For CRS, you submit lab
+          Authorized Indian Representative (AIR). 
+          
+            {" "}
+            <a
+              href="https://crsbis.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
+              For CRS
+            </a> {" "}
+
+
+
+          
+          
+          
+          
+          , you submit lab
           reports and documents through the portal to obtain a Registration
           (R‑number). For ISI, expect a factory audit, ongoing surveillance, and
           marking control procedures.

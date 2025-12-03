@@ -174,8 +174,45 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           Checking a BIS approval online is straight-forward if you have the
           right identifiers. Gather either the ISI license number (CM/L) for
-          ISI‑marked products or the Registration number (R‑number) for CRS
-          products, along with the brand and exact model/variant. On the
+
+
+          {" "}
+          <a
+            href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+            ISI‑marked products
+          </a> {" "}
+
+
+
+
+        
+          
+          
+          
+          
+           or the Registration number (R‑number) for
+           
+           
+           
+           
+           {" "}
+          <a
+            href="https://crsbis.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+            CRS products
+          </a> {" "}
+          
+          
+          
+          
+          , along with the brand and exact model/variant. On the
           BIS/Manak portal, use the Verify/Check License or Registration
           feature, enter the CM/L or R‑number, and optionally filter by brand or
           the Indian Standard (IS).

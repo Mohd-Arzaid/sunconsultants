@@ -168,7 +168,21 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Start by confirming whether your product falls under the ISI Scheme
+          Start by confirming whether your product falls under the 
+
+          {" "}
+          <a
+            href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+           ISI Scheme 
+          </a> {" "}
+          
+          
+          
+          
           (license with surveillance and ISI mark) or the Compulsory
           Registration Scheme (CRS) for electronics/IT. Identify the applicable
           Indian Standard (IS) and read the scope notes—they define the exact
@@ -188,14 +202,23 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For CRS, once tests pass you submit reports and documents online, pay
-          fees, and receive a Registration (R‑number) if approved. For ISI,
-          prepare for a factory audit and ongoing surveillance; set up marking
-          control procedures, test equipment lists, and production controls.
+          For{" "}
+          <a
+            href="https://crsbis.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+            CRS
+          </a> {" "}
+          , once tests pass you submit reports and documents online, pay fees,
+          and receive a Registration (R‑number) if approved. For ISI, prepare
+          for a factory audit and ongoing surveillance; set up marking control
+          procedures, test equipment lists, and production controls.
           Post‑approval, follow marking/packaging rules exactly, maintain
-          records, and monitor changes (components/firmware and suppliers).
-          Build a renewal calendar and a process for variant additions to keep
-          your portfolio compliant.
+          records, and monitor changes (components/firmware and suppliers). Build
+          a renewal calendar and a process for variant additions to keep your
+          portfolio compliant.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
