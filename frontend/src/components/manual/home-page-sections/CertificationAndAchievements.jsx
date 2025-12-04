@@ -1,30 +1,26 @@
 import React from "react";
 
-// Certification Images
-import CertificationImage from "../../../assets/images/certone.webp";
-import CertificationImageTwo from "../../../assets/images/certtwo.webp";
-
 const CertificationAndAchievements = () => {
   // Only 4 certificates as requested
   const galleryImages = [
     {
       id: 1,
-      image: CertificationImage,
+      image: "/home-page-certificate-img/certone.webp",
       title: "Medical Chennai 2023",
     },
     {
       id: 2,
-      image: CertificationImageTwo,
+      image: "/home-page-certificate-img/certtwo.webp",
       title: "Medical Kolkata 2022",
     },
     {
       id: 3,
-      image: CertificationImage,
+      image: "/home-page-certificate-img/certone.webp",
       title: "Narela Association Seminar Footwear",
     },
     {
       id: 4,
-      image: CertificationImageTwo,
+      image: "/home-page-certificate-img/certtwo.webp",
       title: "Delhi Footwear Exhibition Audits",
     },
   ];
