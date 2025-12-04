@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Play } from "lucide-react";
 
 /**
@@ -13,38 +13,6 @@ const YouTubeFacade = ({
   isDuplicate = false,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [thumbnailLoaded, setThumbnailLoaded] = useState(false);
-  const thumbnailRef = useRef(null);
-
-  // Lazy load thumbnails for duplicates using Intersection Observer
-  useEffect(() => {
-    if (!isDuplicate || thumbnailLoaded) return;
-
-    const observerOptions = {
-      root: null,
-      rootMargin: "100px", // Start loading 100px before thumbnail enters viewport
-      threshold: 0.01,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setThumbnailLoaded(true);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    if (thumbnailRef.current) {
-      observer.observe(thumbnailRef.current);
-    }
-
-    return () => {
-      if (thumbnailRef.current) {
-        observer.unobserve(thumbnailRef.current);
-      }
-    };
-  }, [isDuplicate, thumbnailLoaded]);
 
   if (isLoaded) {
     return (
@@ -70,14 +38,12 @@ const YouTubeFacade = ({
       {isDuplicate ? (
         // Use div with background-image for duplicates (SEO won't index as image)
         <div
-          ref={thumbnailRef}
           className="w-full h-full group-hover:scale-105 transition-transform duration-300"
           style={{
-            backgroundImage: thumbnailLoaded ? `url(${thumbnailUrl})` : "none",
+            backgroundImage: `url(${thumbnailUrl})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundColor: thumbnailLoaded ? "transparent" : "#f3f4f6",
           }}
           aria-hidden="true"
           data-seo-ignore="true"
