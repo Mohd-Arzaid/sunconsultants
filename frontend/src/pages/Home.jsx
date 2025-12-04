@@ -77,7 +77,7 @@ const Home = ({ onVideoPopupChange }) => {
         </Suspense>
       </section>
 
-      <section aria-label="Countries We Serve" className="w-full">
+      <section aria-label="International Audits Showcase" className="w-full">
         <Suspense fallback={<AuditsMarqueeSkeleton />}>
           <AuditsMarquee />
         </Suspense>
@@ -89,7 +89,7 @@ const Home = ({ onVideoPopupChange }) => {
         </Suspense>
       </section>
 
-      <section aria-label="Countries We Serve" className="w-full">
+      <section aria-label="Webinars and Seminars Showcase" className="w-full">
         <Suspense fallback={<WebinarSeminarMarqueeSkeleton />}>
           <WebinarSeminarMarquee />
         </Suspense>
