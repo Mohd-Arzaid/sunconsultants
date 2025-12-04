@@ -5,6 +5,8 @@ const AuditsMarquee = () => {
   const scrollerRef = useRef(null);
   const [start, setStart] = useState(false);
   const [duplicatedImages, setDuplicatedImages] = useState([]);
+  const [loadedImages, setLoadedImages] = useState(new Set());
+  const observerRef = useRef(null);
 
   // Gallery images from InternationalAudits.jsx
   const galleryImages = [
@@ -112,6 +114,62 @@ const AuditsMarquee = () => {
     addAnimation();
   }, []);
 
+  useEffect(() => {
+    if (duplicatedImages.length === 0) return;
+
+    // Clean up previous observer
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+    }
+
+    // Set up Intersection Observer for lazy loading duplicate images
+    const observerOptions = {
+      root: null,
+      rootMargin: "100px", // Start loading 100px before image enters viewport
+      threshold: 0.01,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const imageUrl = entry.target.dataset.imageUrl;
+          const isDuplicate = entry.target.dataset.isDuplicate === "true";
+
+          // Only lazy load duplicates, first set loads normally
+          if (imageUrl && isDuplicate) {
+            setLoadedImages((prev) => {
+              if (!prev.has(imageUrl)) {
+                const newSet = new Set(prev);
+                newSet.add(imageUrl);
+                return newSet;
+              }
+              return prev;
+            });
+            observer.unobserve(entry.target);
+          }
+        }
+      });
+    }, observerOptions);
+
+    observerRef.current = observer;
+
+    // Small delay to ensure DOM is ready
+    const timeoutId = setTimeout(() => {
+      // Observe only duplicate image containers
+      const duplicateContainers = document.querySelectorAll(
+        "[data-lazy-image-container][data-is-duplicate='true']"
+      );
+      duplicateContainers.forEach((container) => observer.observe(container));
+    }, 200);
+
+    return () => {
+      clearTimeout(timeoutId);
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, [duplicatedImages]);
+
   function addAnimation() {
     // React-friendly duplication approach - same as VideoSection and LogoTicker
     const duplicated = [...galleryImages, ...galleryImages, ...galleryImages];
@@ -181,17 +239,27 @@ const AuditsMarquee = () => {
                   aria-hidden={isDuplicate ? "true" : undefined}
                   data-seo-ignore={isDuplicate ? "true" : undefined}
                 >
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div
+                    className="aspect-[4/3] overflow-hidden"
+                    data-lazy-image-container={isDuplicate ? "true" : undefined}
+                    data-image-url={isDuplicate ? item.image : undefined}
+                    data-is-duplicate={isDuplicate ? "true" : undefined}
+                  >
                     {isDuplicate ? (
                       // Use div with background-image for duplicates (SEO won't index as image)
                       <div
                         className="w-full h-full transform transition-transform duration-700 md:group-hover:scale-110"
                         style={{
-                          backgroundImage: `url(${item.image})`,
+                          backgroundImage: loadedImages.has(item.image)
+                            ? `url(${item.image})`
+                            : "none",
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                           backgroundRepeat: "no-repeat",
                           color: "transparent",
+                          backgroundColor: loadedImages.has(item.image)
+                            ? "transparent"
+                            : "#f3f4f6",
                         }}
                         aria-hidden="true"
                         data-seo-ignore="true"
@@ -208,7 +276,7 @@ const AuditsMarquee = () => {
                         className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
                         width="300"
                         height="300"
-                        loading="eager"
+                        loading="lazy"
                         decoding="async"
                         style={{ color: "transparent" }}
                       />

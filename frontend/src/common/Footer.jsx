@@ -122,6 +122,7 @@ const Footer = () => {
                   alt="Sun Certifications India logo"
                   title="Sun Certifications India logo"
                   className="hidden md:block w-10 h-10 md:w-12 md:h-12"
+                  loading="lazy"
                 />
                 <Link to="/" className="text-center">
                   <div className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">

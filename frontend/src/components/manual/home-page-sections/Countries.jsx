@@ -97,6 +97,7 @@ const Countries = () => {
                       alt={`BIS Certification Services in ${country.name} - Sun Certifications India`}
                       title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
                       className="w-auto h-full object-contain"
+                      loading="lazy"
                     />
                   </div>
 
@@ -127,6 +128,7 @@ const Countries = () => {
                           ? "w-full h-full object-cover"
                           : ""
                       }
+                      loading="lazy"
                     />
                   </div>
                   <div className="mt-4 px-2 flex items-center justify-between w-full">
