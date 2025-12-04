@@ -297,8 +297,9 @@ const AuditGallery = () => {
                 alt={item.description || `Audit ${item.id}`}
                 title={item.description || `Audit ${item.id}`}
                 loading="lazy"
-                width="300"
-                height="300"
+                width="600"
+                height="450"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 decoding="async"
                 className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
                 src={item.image}

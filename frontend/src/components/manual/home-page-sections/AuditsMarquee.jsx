@@ -274,8 +274,9 @@ const AuditsMarquee = () => {
                           item.description || item.title || `Audit ${item.id}`
                         }
                         className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
-                        width="300"
+                        width="400"
                         height="300"
+                        sizes="(max-width: 768px) 300px, 400px"
                         loading="lazy"
                         decoding="async"
                         style={{ color: "transparent" }}
