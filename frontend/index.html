@@ -41,12 +41,22 @@
     </noscript>
 
     <!-- Critical LCP Image Preloading - HIGHEST PRIORITY -->
+    <!-- Desktop LCP Image -->
     <link
       rel="preload"
       as="image"
       href="/hero-image/hero-image.webp"
       type="image/webp"
       media="(min-width: 768px)"
+      fetchpriority="high"
+    />
+    <!-- Mobile LCP Image -->
+    <link
+      rel="preload"
+      as="image"
+      href="/hero-image/hero-mobile.svg"
+      type="image/svg+xml"
+      media="(max-width: 767px)"
       fetchpriority="high"
     />
 
