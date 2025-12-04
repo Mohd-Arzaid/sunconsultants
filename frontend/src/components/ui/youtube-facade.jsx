@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Play } from "lucide-react";
 
 /**
  * Simple YouTube Facade Component
  * - Shows thumbnail initially
  * - Loads video on click
- * - Improves page performance
+ * - Improves page performance with lazy loading
  */
 const YouTubeFacade = ({
   videoId,
@@ -13,6 +13,36 @@ const YouTubeFacade = ({
   isDuplicate = false,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [shouldLoadThumbnail, setShouldLoadThumbnail] = useState(false);
+  const thumbnailRef = useRef(null);
+
+  // Lazy load thumbnail using Intersection Observer
+  useEffect(() => {
+    if (isDuplicate && thumbnailRef.current) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setShouldLoadThumbnail(true);
+              observer.disconnect();
+            }
+          });
+        },
+        {
+          rootMargin: "50px", // Start loading 50px before entering viewport
+        }
+      );
+
+      observer.observe(thumbnailRef.current);
+
+      return () => {
+        observer.disconnect();
+      };
+    } else if (!isDuplicate) {
+      // For non-duplicates, load immediately (they use img with loading="lazy")
+      setShouldLoadThumbnail(true);
+    }
+  }, [isDuplicate]);
 
   if (isLoaded) {
     return (
@@ -32,19 +62,27 @@ const YouTubeFacade = ({
 
   return (
     <div
+      ref={thumbnailRef}
       className="relative aspect-video overflow-hidden rounded-xl group cursor-pointer"
       onClick={() => setIsLoaded(true)}
     >
       {isDuplicate ? (
         // Use div with background-image for duplicates (SEO won't index as image)
+        // Only load when in viewport
         <div
           className="w-full h-full group-hover:scale-105 transition-transform duration-300"
-          style={{
-            backgroundImage: `url(${thumbnailUrl})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
+          style={
+            shouldLoadThumbnail
+              ? {
+                  backgroundImage: `url(${thumbnailUrl})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }
+              : {
+                  backgroundColor: "#e5e7eb", // Placeholder gray background
+                }
+          }
           aria-hidden="true"
           data-seo-ignore="true"
         />
