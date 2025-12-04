@@ -784,6 +784,7 @@ const EWasteSection = () => {
           <img
             src={BISSRimg}
             alt="Electronic waste management equipment and recycling facilities"
+            title="Electronic waste management equipment and recycling facilities"
             className="rounded-lg shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1
             ring-gray-900/7.5 transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)]
             hover:ring-gray-900/12.5 w-full md:w-[400px] h-auto md:h-[250px] mt-2.5

@@ -17,9 +17,9 @@ export const Services = () => {
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               {t("title")}
-            </h2>
+            </div>
           </BoxReveal>
 
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>

@@ -30,7 +30,7 @@ const Notification = () => {
       <MetaTags />
       <BreadcrumbContent />
       <NotificationMainContent />
-      <AboutContact />
+      <AboutContact />  
       <Footer />
     </div>
   );

@@ -127,36 +127,36 @@ const Stats = () => {
     <div className="max-w-[84rem] mx-auto px-4 md:px-12 pb-8 md:pb-12">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-8">
         <div className="text-center">
-          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
+          <div className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             1500+
-          </h4>
+          </div>
           <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Our Clients
           </p>
         </div>
 
         <div className="text-center">
-          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
+          <div className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             4,999+
-          </h4>
+          </div>
           <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Projects Completed
           </p>
         </div>
 
         <div className="text-center">
-          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
+          <div className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             20+
-          </h4>
+          </div>
           <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Countries Served
           </p>
         </div>
 
         <div className="text-center">
-          <h4 className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
+          <div className="text-4xl md:text-5xl font-bold font-geist text-[#1A8781] mb-1 md:mb-2">
             100%
-          </h4>
+          </div>
           <p className="text-gray-600 font-medium font-geist text-sm md:text-base">
             Success Rate
           </p>
@@ -763,9 +763,9 @@ const Testimonials = () => {
 
                 {/* Author - Fixed at bottom */}
                 <div className="mt-auto pt-2 border-t border-gray-200">
-                  <h4 className="font-geist font-bold text-neutral-800 text-lg">
+                  <div className="font-geist font-bold text-neutral-800 text-lg">
                     {testimonial.name}
-                  </h4>
+                  </div>
                   <p className="text-neutral-600 text-sm">{testimonial.role}</p>
                 </div>
               </div>

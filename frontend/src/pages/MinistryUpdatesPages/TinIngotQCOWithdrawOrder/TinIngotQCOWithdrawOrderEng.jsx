@@ -385,7 +385,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -402,6 +403,7 @@ const Services = () => {
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
                 alt="PlasticWasteManagement"
+                title="PlasticWasteManagement"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -417,7 +419,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate"
+                alt="EPRCertificate logo"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -433,7 +436,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -466,7 +470,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

@@ -266,9 +266,9 @@ export const WhatsOurCustomersSaySection = () => {
                       />
                     )}
                     <div className="flex flex-col justify-center min-w-0">
-                      <h3 className="font-roboto font-bold text-lg leading-tight text-neutral-800 truncate">
+                      <div className="font-roboto font-bold text-lg leading-tight text-neutral-800 truncate">
                         {testimonial.name}
-                      </h3>
+                      </div>
                       <p className="font-roboto text-sm text-neutral-600 leading-snug">
                         {testimonial.role}
                       </p>

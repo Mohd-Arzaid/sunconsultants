@@ -313,7 +313,7 @@ const BISQCOUpdatesServicesRightSideContentEng = () => {
                   <img
                     src={post.image || "/placeholder.svg"}
                     alt={post.alt || post.title}
-                    title={post.title}
+                    title={post.alt || post.title}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     onError={(e) => {
                       e.target.src = "/placeholder.svg";
