@@ -34,12 +34,16 @@ import AboutSkeleton from "./components/ui/about-skeleton";
 import ContactUsSkeleton from "./components/ui/contact-us-skeleton";
 import PrivacyPolicySkeleton from "./components/ui/privacy-policy-skeleton";
 import SitemapSkeleton from "./components/ui/sitemap-skeleton";
-import InternationalAudits from "./pages/InternationalAudits";
-import Exhibition from "./pages/Exhibition";
+import InternationalAuditsSkeleton from "./components/ui/international-audits-skeleton";
+const InternationalAudits = lazy(() => import("./pages/InternationalAudits"));
+import ExhibitionSkeleton from "./components/ui/exhibition-skeleton";
+const Exhibition = lazy(() => import("./pages/Exhibition"));
+import WebinarSkeleton from "./components/ui/webinar-skeleton";
+const Webinar = lazy(() => import("./pages/Webinar"));
+import VideosSkeleton from "./components/ui/videos-skeleton";
+const Videos = lazy(() => import("./pages/Videos"));
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Error404 from "./pages/404Error";
-import Webinar from "./pages/Webinar";
-import Videos from "./pages/Videos";
 import BacklinksPage from "./pages/BacklinksPage";
 
 // ============================================
@@ -131,10 +135,38 @@ function App() {
         />
 
         {/* Utility Pages */}
-        <Route path="international-audits" element={<InternationalAudits />} />
-        <Route path="seminars-and-exhibitions" element={<Exhibition />} />
-        <Route path="webinar" element={<Webinar />} />
-        <Route path="videos-about-bis-certification" element={<Videos />} />
+        <Route
+          path="/international-audits"
+          element={
+            <Suspense fallback={<InternationalAuditsSkeleton />}>
+              <InternationalAudits />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/seminars-and-exhibitions"
+          element={
+            <Suspense fallback={<ExhibitionSkeleton />}>
+              <Exhibition />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/webinar"
+          element={
+            <Suspense fallback={<WebinarSkeleton />}>
+              <Webinar />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/videos-about-bis-certification"
+          element={
+            <Suspense fallback={<VideosSkeleton />}>
+              <Videos />
+            </Suspense>
+          }
+        />
         <Route path="/backlinks" element={<BacklinksPage />} />
 
         {/* Notifications & Updates */}
