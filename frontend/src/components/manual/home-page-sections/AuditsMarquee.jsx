@@ -125,7 +125,7 @@ const AuditsMarquee = () => {
     // Set up Intersection Observer for lazy loading duplicate images
     const observerOptions = {
       root: null,
-      rootMargin: "100px", // Start loading 100px before image enters viewport
+      rootMargin: "50px", // Start loading 50px before image enters viewport
       threshold: 0.01,
     };
 
@@ -160,7 +160,7 @@ const AuditsMarquee = () => {
         "[data-lazy-image-container][data-is-duplicate='true']"
       );
       duplicateContainers.forEach((container) => observer.observe(container));
-    }, 200);
+    }, 100);
 
     return () => {
       clearTimeout(timeoutId);
