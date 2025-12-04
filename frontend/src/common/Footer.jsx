@@ -1,40 +1,32 @@
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { MailPlus } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useTranslation, Trans } from "react-i18next";
 
 const Footer = () => {
-  const { t } = useTranslation("Footer");
-
   return (
     <footer>
       <div className="relative ">
         <div className="w-full max-w-[768px] px-4 pb-12  pt-8 md:pt-16 md:pb-16 mx-auto">
           <h3 className="text-center font-geist text-3xl md:text-[48px] text-[#181818] leading-tight md:leading-[48px] font-semibold">
-            {t("header.title")}
+            Want to know more?
           </h3>
 
           <div className="text-center mt-[16px] text-base md:text-[20px] leading-normal md:leading-[28px] font-geist text-[#52525b]">
-            <Trans
-              i18nKey="header.description"
-              ns="Footer"
-              components={{
-                1: (
-                  <a
-                    href="mailto:admin@bis-certifications.com"
-                    className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
-                  >
-                    admin@bis-certifications.com
-                  </a>
-                ),
-              }}
-            />
+            Email us at{" "}
+            <a
+              href="mailto:admin@bis-certifications.com"
+              className="font-medium font-geist text-[#27272a] leading-[28px] underline underline-offset-4 hover:text-blue-900 transition-colors duration-200"
+            >
+              admin@bis-certifications.com
+            </a>{" "}
+            or use one of the options below. We usually get back within 24
+            hours.
           </div>
 
           <div className="flex items-center my-6 md:my-[30px]">
             <div className="h-px w-full bg-neutral-300  grow"></div>
             <span className="text-neutral-600 block px-4  font-geist text-center text-lg md:text-xl">
-              {t("header.divider")}
+              or
             </span>
             <div className="h-px w-full bg-neutral-300 grow"></div>
           </div>
@@ -45,7 +37,7 @@ const Footer = () => {
                 href="https://wa.me/918766262463"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t("socialLinks.whatsapp")}
+                aria-label="Contact us on WhatsApp"
               >
                 <svg
                   stroke="currentColor"
@@ -65,7 +57,7 @@ const Footer = () => {
               <a
                 href="tel:+918010505057"
                 rel="noreferrer noopener"
-                aria-label={t("socialLinks.call")}
+                aria-label="Call us at +91 80105 05057"
               >
                 <svg
                   stroke="currentColor"
@@ -86,7 +78,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/sun-consultants-engineers/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t("socialLinks.linkedin")}
+                aria-label="Visit our LinkedIn page"
               >
                 <svg
                   stroke="currentColor"
@@ -126,17 +118,17 @@ const Footer = () => {
                 />
                 <Link to="/" className="text-center">
                   <div className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
-                    {t("company.name")}
+                    Sun Certifications India
                   </div>
                   <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
-                    {t("company.tagline")}
+                    Simplifying Certifications
                   </p>
                 </Link>
               </div>
 
               <div className="flex flex-col gap-[15px]">
                 <div className="text-neutral-900 text-base md:text-lg  font-geist font-medium">
-                  {t("company.newsletter.title")}
+                  Subscribe to our newsletter
                 </div>
 
                 <div className="relative">
@@ -149,12 +141,10 @@ const Footer = () => {
                   pr-24 
                   border border-[#7eafd9]
                   "
-                    placeholder={t("company.newsletter.placeholder")}
+                    placeholder="enter your email"
                   />
                   <button className="flex items-center justify-center h-7 px-2 py-1.5 gap-x-1 text-[13px] md:text-[15px] whitespace-nowrap font-medium font-geist border rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 absolute right-1 top-1 border-none bg-white">
-                    <div className="text-[#2a5075]">
-                      {t("company.newsletter.button")}
-                    </div>
+                    <div className="text-[#2a5075]">Notify me</div>
                   </button>
                 </div>
               </div>
@@ -163,19 +153,20 @@ const Footer = () => {
             <div className="grid grid-cols-2 md:flex md:gap-[50px] gap-6 ">
               <div className="flex   w-full md:w-[240px] flex-col gap-[15px]">
                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                  {t("sections.address.title")}
+                  Address
                 </span>
 
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    {t("sections.address.content")}
+                    ITL Twin Tower, Netaji Subhash Place , Pitampura Delhi -
+                    110034
                   </span>
                 </div>
               </div>
 
               <div className="flex flex-col gap-[15px]">
                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                  {t("sections.services.title")}
+                  Our Services
                 </span>
 
                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -183,62 +174,62 @@ const Footer = () => {
                     to="/information-about-tec-certificate-mtcte"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.services.links.tec")}
+                    TEC
                   </Link>
                   <Link
                     to="/a-guide-to-bis-certification-indian-bis"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.services.links.isiMark")}
+                    ISI MARK
                   </Link>
                   <Link
                     to="/ce-certification"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.services.links.ceCertification")}
+                    CE CERTIFICATION
                   </Link>
                   <Link
                     to="/a-guide-on-how-to-obtain-epr-certificate"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.services.links.epr")}
+                    EPR
                   </Link>
                   <Link
                     to="/restriction-of-hazardous-substance-rohs-certificate"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.services.links.rohs")}
+                    ROHS
                   </Link>
 
                   <Link
                     to="/information-about-wpc-certificate-eta-approval"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.services.links.wpc")}
+                    WPC
                   </Link>
                 </div>
               </div>
 
               <div className="flex flex-col gap-[15px]">
                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                  {t("sections.company.title")}
+                  Company
                 </span>
                 <div className="flex flex-col transition-colors gap-[10px]">
                   <Link
                     to="/about"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.company.links.about")}
+                    About
                   </Link>
                   <Link
                     to="/contact"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.company.links.contact")}
+                    Contact Us
                   </Link>
 
                   <span className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base">
-                    {t("sections.company.links.faqs")}
+                    FAQ's
                   </span>
                   <Link
                     to="/sitemap"
@@ -249,14 +240,14 @@ const Footer = () => {
                       }, 100);
                     }}
                   >
-                    {t("sections.company.links.sitemap")}
+                    Sitemap
                   </Link>
                 </div>
               </div>
 
               <div className="flex flex-col gap-[15px]">
                 <span className="text-neutral-900 text-[16px] md:text-[18px] font-geist font-medium">
-                  {t("sections.news.title")}
+                  News & Notifications
                 </span>
 
                 <div className="flex flex-col transition-colors gap-[10px]">
@@ -264,31 +255,31 @@ const Footer = () => {
                     to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.news.links.blogs")}
+                    Blogs
                   </Link>
                   <Link
                     to="/bis-qco-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.news.links.latestUpdates")}
+                    Latest Updates
                   </Link>
                   <Link
                     to="/ministry-updates"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.news.links.ministryUpdates")}
+                    Ministry Updates
                   </Link>
                   <Link
                     to="/webinar"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.news.links.webinarUpdates")}
+                    Webinar Updates
                   </Link>
                   <Link
                     to="/international-audits"
                     className="text-foreground/60 hover:text-foreground/80 transition-colors underline-offset-[3.5px] break-words hover:underline font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground-800 font-geist text-sm md:text-base"
                   >
-                    {t("sections.news.links.gallery")}
+                    Gallery
                   </Link>
                 </div>
               </div>
@@ -303,7 +294,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/sun-certifications-india/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t("socialLinks.github")}
+                aria-label="Visit our GitHub profile"
               >
                 <LinkedInLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
                 <span className="sr-only">linkedin</span>
@@ -313,7 +304,7 @@ const Footer = () => {
                 href="mailto:admin@bis-certifications.com?body=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t("socialLinks.email")}
+                aria-label="Send us an email"
               >
                 <MailPlus className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
                 <span className="sr-only">Email</span>
@@ -323,7 +314,7 @@ const Footer = () => {
                 href="https://www.instagram.com/suncertificationsindia"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t("socialLinks.instagram")}
+                aria-label="Follow us on Instagram"
               >
                 <InstagramLogoIcon className="h-5 w-6 md:h-6 md:w-8 text-[#2a5075] duration-200 hover:-translate-y-2 cursor-pointer" />
                 <span className="sr-only">Instagram</span>
@@ -332,7 +323,7 @@ const Footer = () => {
 
             <button className="flex items-center justify-center h-9 px-4 py-2 gap-x-1 rounded-full border border-[#7eafd9] bg-gray-50 hover:bg-[#E3EFF4] transition-all duration-200">
               <span className="text-[13px] md:text-[15px] text-[#2a5075] font-geist leading-[20px] font-medium">
-                {t("footer.language")}
+                English (US)
               </span>
               <svg
                 stroke="currentColor"
@@ -350,7 +341,7 @@ const Footer = () => {
             </button>
 
             <span className="text-[#2a5075] font-geist text-[13px] md:text-base text-center">
-              {t("footer.copyright")}
+              Copyright © 2025 Sun Certifications India. All Rights Reserved.
             </span>
 
             <div className="md:hidden flex items-center gap-2">
@@ -358,14 +349,14 @@ const Footer = () => {
                 to="/privacy-policy"
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
-                {t("footer.privacyPolicy")}
+                Privacy Policy
               </Link>
               <div className="size-1.5 md:size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
               <Link
                 to="/terms-and-conditions"
                 className="text-[#2a5075] font-geist text-[13px] md:text-base hover:underline"
               >
-                {t("footer.termsOfService")}
+                Terms of Service
               </Link>
             </div>
 
@@ -375,7 +366,7 @@ const Footer = () => {
               to="/privacy-policy"
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
-              {t("footer.privacyPolicy")}
+              Privacy Policy
             </Link>
 
             <div className="hidden md:block size-2 shrink-0 rounded-full bg-[#7eafd9]"></div>
@@ -384,7 +375,7 @@ const Footer = () => {
               to="/terms-and-conditions"
               className="hidden md:block text-[#2a5075] font-geist hover:underline"
             >
-              {t("footer.termsOfService")}
+              Terms of Service
             </Link>
           </div>
         </div>
