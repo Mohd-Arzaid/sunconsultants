@@ -192,6 +192,7 @@ const BISQCOUpdatesServicesRightSideContentVietnamese = () => {
                   <img
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
+                    title={post.title}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     onError={(e) => {
                       e.target.src = "/placeholder.svg";
@@ -574,7 +575,11 @@ const ContactFormServicesRightSideContentVietnamese = () => {
       return "ISI Mark (Vietnamese)";
     if (path.includes("/vi/chung-chi-bis-la-gi-bis-an-do"))
       return "BIS Certification (Vietnamese)";
-    if (path.includes("/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"))
+    if (
+      path.includes(
+        "/vi/huong-dan-chung-nhan-bis-cho-nha-san-xuat-nuoc-ngoai-bis-an-do"
+      )
+    )
       return "BIS Mark (ISI License) for Foreign Manufacturers (Vietnamese)";
   };
 

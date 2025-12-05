@@ -31,6 +31,8 @@ const ServicesRightSideContentArabic = () => {
 
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
+    "/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind",
+    "/ar/ma-huwa-crs-bis-aw-tasjeel-crs",
     "/shahadat-bis-fi-al-imarat",
     "/shahadat-bis-fi-qatar",
     "/shahadat-bis-fi-al-bahrain",
@@ -212,6 +214,7 @@ const BISQCOUpdatesServicesRightSideContentArabic = () => {
                   <img
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
+                    title={post.title}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     onError={(e) => {
                       e.target.src = "/placeholder.svg";
@@ -579,6 +582,13 @@ const ContactFormServicesRightSideContentArabic = () => {
   const getPageName = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
+      return "CRS Registration (Arabic)";
+    if (
+      path.includes("/ar/dalil-shahadat-bis-lilmusanein-alajnabiyin-bis-alhind")
+    )
+      return "BIS Mark Foreign (Arabic)";
+
+    if (path.includes("/ar/ma-huwa-crs-bis-aw-tasjeel-crs"))
       return "CRS Registration (Arabic)";
     if (path.includes("/shahadat-bis-fi-al-imarat")) return "UAE Blog (Arabic)";
     if (path.includes("/shahadat-bis-fi-qatar")) return "Qatar Blog (Arabic)";

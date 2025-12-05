@@ -30,7 +30,8 @@ const ServicesRightSideContentGerman = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
-    "/what-is-crs-bis-or-crs-registration",
+    "/de/bis-isi-mark-zertifizierung",
+    
     "/bis-zertifizierung-in-deutschland",
     "/de/was-ist-crs-bis-oder-crs-registrierung",
     // ISI Mark German Page Url

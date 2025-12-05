@@ -84,110 +84,105 @@ const BISQCOUpdatesServicesRightSideContentChinese = () => {
     {
       image:
         "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "BIS certification for Work chairs",
+      title: "工作椅BIS认证",
       url: "/bis-qco-updates/bis-certificate-for-work-chairs",
     },
     {
       image:
         "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "BIS certification for Chairs and stools",
+      title: "椅子和凳子BIS认证",
       url: "/bis-qco-updates/bis-certificate-for-chairs-and-stools",
     },
     {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MCIfpfHsgrogddkI6G12hT4i6LwIPATLHg&s",
-      title: "BIS Notification for Tables and desks",
+      title: "桌子和办公桌BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-tables-and-desks",
     },
     {
       image: "https://alephindia.in/images/isi/furniture-storage-units.png",
-      title: "BIS Notification for Storage units",
+      title: "储物单元BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-storage-units",
     },
     {
       image: "https://alephindia.in/images/isi/furniture-bunk-beds.png",
-      title: "BIS Notification for Bunk beds",
+      title: "双层床BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-bunk-beds",
     },
     {
       image:
         "https://jharkhandstatenews.com/assets/admin/uploads/topstory_img/199879_1693229978.jpg",
-      title: "BIS Notification for Solar DC Cable and Fire Survival Cable",
+      title: "太阳能直流电缆和耐火电缆BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-solar-dc-cable-and-fire-survival-cable",
     },
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2024/5/420886415/LD/HF/LZ/65909740/bis-certification-for-aluminium-alloy-forging-stock-and-forgings-alloy-24345.jpg",
-      title:
-        "BIS Notification for Wrought Aluminium and Aluminium Alloys, Forging Stock and Forgings",
+      title: "锻铝和铝合金、锻坯和锻件BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-wrought-aluminium-and-aluminium-alloys-forging-stock-and-forgings",
     },
     {
       image:
         "https://images.unsplash.com/photo-1651197122040-3ea0656161ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "BIS Notification for H Acid",
+      title: "H酸BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-h-acid",
     },
     {
       image:
         "https://images.unsplash.com/photo-1617155093730-a8bf47be792d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "BIS Notification for K Acid",
+      title: "K酸BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-k-acid",
     },
     {
       image:
         "https://media.istockphoto.com/id/940248330/photo/potassium-permanganate-sodium-sulfate-mixture.jpg?s=612x612&w=0&k=20&c=lhxvzbD2cVVOJKQyLIOqSaq9dlJTtDH07kHoBT5q7_4=",
-      title: "BIS Notification for Vinyl Sulphone",
+      title: "乙烯基砜BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-vinyl-sulphone",
     },
     {
       image:
         "https://m.media-amazon.com/images/I/71qI8OoNdtL._AC_UF1000,1000_QL80_.jpg",
-      title: "BIS Notification for Electric Fence Energizers",
+      title: "电围栏激励器BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-electric-fence-energizers",
     },
     {
       image:
         "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "BIS Notification for Clothes Washing Machines",
+      title: "洗衣机BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-clothes-washing-machines",
     },
     {
       image: "https://m.media-amazon.com/images/I/31waXELONZL.jpg",
-      title: "BIS Notification for Gypsum Plaster Boards",
+      title: "石膏灰泥板BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-gypsum-plaster-boards",
     },
     {
       image:
         "https://m.media-amazon.com/images/I/61pOnpX8BpL._AC_UF1000,1000_QL80_.jpg",
-      title:
-        "BIS Notification for Aluminium alloy tubes for irrigation purposes -welded tubes",
+      title: "用于灌溉目的的铝合金管-焊接管BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-aluminium-alloy-tubes-for-irrigation-purposes-welded-tubes",
     },
     {
       image: "https://www.sunnysteel.com/img/extruded-finned-tube.jpg",
-      title:
-        "BIS Notification for Aluminium alloy tube for irrigation purposes – extruded tube",
+      title: "用于灌溉目的的铝合金管-挤压管BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-aluminium-alloy-tube-for-irrigation-purposes-extruded-tube",
     },
     {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVrUUdi1q8ZFnBqvx3vW5Ac03cUtUwR7N_A&s",
-      title:
-        "BIS Notification for EC Grade Aluminium Rod produced by Continuous Casting and Rolling",
+      title: "连续铸造和轧制生产的EC级铝棒BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-ec-grade-aluminium-rod-produced-by-continuous-casting-and-rolling",
     },
     {
       image:
         "https://media.istockphoto.com/id/1322355858/photo/aluminium-round-long-products-on-black-steel-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=I3k2F2cQSo5AW1qOQ5uxi2ROi-YJQoH47XzApxCP7qY=",
-      title:
-        "BIS Notification for Wrought aluminium and aluminium alloy bars, rods and sections",
+      title: "锻铝和铝合金棒材、杆材和型材BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-wrought-aluminium-and-aluminium-alloy-bars-rods-and-sections",
     },
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2023/3/EC/HR/GU/184505254/regular-gypsum-plasterboard.jpg",
-      title: "BIS Notification for Gypsum Plaster Boards",
+      title: "石膏灰泥板BIS通知",
       url: "/bis-qco-updates/bis-certificate-for-gypsum-plaster-boards",
     },
   ];
@@ -210,6 +205,7 @@ const BISQCOUpdatesServicesRightSideContentChinese = () => {
                   <img
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
+                    title={post.title}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     onError={(e) => {
                       e.target.src = "/placeholder.svg";
