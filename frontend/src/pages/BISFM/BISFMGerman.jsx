@@ -973,6 +973,7 @@ const StandardizationSection = () => {
       <img
         src={ISIMARKImage}
         alt="ISI-Zeichen"
+        title="ISI-Zeichen"
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
@@ -1821,6 +1822,7 @@ const ProcessSection = () => {
       <img
         src={BISCertificateImage}
         alt="BIS-Zertifikat Prozessablauf"
+        title="BIS-Zertifikat Prozessablauf"
         className="w-full h-auto rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 my-8 mx-auto"
       />
 

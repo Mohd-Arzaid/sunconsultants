@@ -175,26 +175,19 @@ const MainContentLeft = () => {
           Bis certificate vs iso certificate is a frequent question for brands
           and manufacturers navigating Indian conformity routes. Begin by
           identifying the applicable Indian Standard (IS) and confirming whether
-          your product falls under the 
-          
-
-
-
-          {" "}
+          your product falls under the{" "}
           <a
             href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 underline"
           >
-              ISI Scheme
-          </a> {" "}
-          
-          
-          (license with surveillance) or
-          the Compulsory Registration Scheme (CRS) used for electronics/IT.
-          Build a simple scope table with models/variants, ratings, and critical
-          components—this improves test planning and documentation accuracy.
+            ISI Scheme
+          </a>{" "}
+          (license with surveillance) or the Compulsory Registration Scheme
+          (CRS) used for electronics/IT. Build a simple scope table with
+          models/variants, ratings, and critical components—this improves test
+          planning and documentation accuracy.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -209,9 +202,7 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           While testing is underway, complete application forms, brand
           authorizations, and—if you are an overseas manufacturer—appoint an
-          Authorized Indian Representative (AIR). 
-          
-          {" "}
+          Authorized Indian Representative (AIR).{" "}
           <a
             href="https://crsbis.in/"
             target="_blank"
@@ -219,16 +210,10 @@ const MainContentLeft = () => {
             className="text-blue-600 hover:text-blue-800 underline"
           >
             For CRS
-          </a> {" "}
-
-
-          
-          
-          
-          , you submit lab
-          reports and documents through the portal to obtain a Registration
-          (R‑number). For ISI, expect a factory audit, ongoing surveillance, and
-          marking control procedures.
+          </a>{" "}
+          , you submit lab reports and documents through the portal to obtain a
+          Registration (R‑number). For ISI, expect a factory audit, ongoing
+          surveillance, and marking control procedures.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -307,7 +292,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -340,7 +326,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -357,6 +344,7 @@ const Services = () => {
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
                 alt="PlasticWasteManagement"
+                title="PlasticWasteManagement"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -372,7 +360,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate"
+                alt="EPRCertificate logo"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -388,7 +377,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -404,7 +394,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -420,7 +411,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

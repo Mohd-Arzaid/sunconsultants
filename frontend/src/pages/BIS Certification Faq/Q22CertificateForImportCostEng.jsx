@@ -173,10 +173,7 @@ const MainContentLeft = () => {
           BIS costs depend on the scheme (ISI vs CRS), the product standard, and
           the number of models/variants. Plan across these heads: laboratory
           testing, application/processing fees, marking or registration charges,
-          audits/surveillance
-          
-
-          {" "}
+          audits/surveillance{" "}
           <a
             href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
             target="_blank"
@@ -184,16 +181,8 @@ const MainContentLeft = () => {
             className="text-blue-600 hover:text-blue-800 underline"
           >
             (for ISI)
-          </a> {" "}
-          
-          
-          
-           
-           
-           
-           
-           , sample logistics, and optional
-          professional support.
+          </a>{" "}
+          , sample logistics, and optional professional support.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -206,10 +195,7 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For ISI, add factory audit/surveillance to your budget; 
-
-
-          {" "}
+          For ISI, add factory audit/surveillance to your budget;{" "}
           <a
             href="https://crsbis.in/"
             target="_blank"
@@ -217,15 +203,10 @@ const MainContentLeft = () => {
             className="text-blue-600 hover:text-blue-800 underline"
           >
             For CRS
-          </a> {" "}
-          
-          
-          
-          
-          ,
-          account for registration/renewal fees. For multi‑SKU portfolios, take
-          a phased approach—approve high‑volume models first, then extend to
-          siblings as allowed by the standard. Keep a 10–15% contingency for
+          </a>{" "}
+          , account for registration/renewal fees. For multi‑SKU portfolios,
+          take a phased approach—approve high‑volume models first, then extend
+          to siblings as allowed by the standard. Keep a 10–15% contingency for
           clarifications or re‑tests. Always obtain a written quotation aligned
           to your exact IS standard and model list, and verify BIS fee heads for
           your scheme before submission.
@@ -298,7 +279,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -331,7 +313,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -348,6 +331,7 @@ const Services = () => {
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
                 alt="PlasticWasteManagement"
+                title="PlasticWasteManagement"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -363,7 +347,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate"
+                alt="EPRCertificate logo"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -379,7 +364,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -395,7 +381,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -411,7 +398,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

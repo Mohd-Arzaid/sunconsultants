@@ -30,6 +30,7 @@ const ServicesRightSideContentIndonesian = () => {
 
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
+    "/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india",
     "/sertifikasi-bis-di-indonesia",
     "/id/apa-itu-crs-bis-atau-registrasi-crs",
     // ISI Mark Indonesian Page Url
@@ -231,6 +232,7 @@ const BISQCOUpdatesServicesRightSideContentIndonesian = () => {
                   <img
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
+                    title={post.title}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     onError={(e) => {
                       e.target.src = "/placeholder.svg";
@@ -605,6 +607,8 @@ const ContactFormServicesRightSideContentIndonesian = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration (Indonesian)";
+    if (path.includes("/id/panduan-sertifikasi-bis-untuk-produsen-asing-bis-india"))
+      return "BIS FMCS Certification - Indonesian Page";
     if (path.includes("/sertifikasi-bis-di-indonesia"))
       return "Indonesia Blog (Indonesian)";
     if (path.includes("/id/apa-itu-crs-bis-atau-registrasi-crs"))

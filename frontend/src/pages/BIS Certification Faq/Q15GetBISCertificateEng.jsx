@@ -171,12 +171,7 @@ const MainContentLeft = () => {
         />
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Start by confirming whether your product falls under the 
-
-
-
-
-          {" "}
+          Start by confirming whether your product falls under the{" "}
           <a
             href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
             target="_blank"
@@ -184,12 +179,7 @@ const MainContentLeft = () => {
             className="text-blue-600 hover:text-blue-800 underline"
           >
             ISI Scheme
-          </a> {" "}
-          
-          
-
-
-
+          </a>{" "}
           (license with surveillance and ISI mark) or the Compulsory
           Registration Scheme (CRS) for electronics/IT. Identify the applicable
           Indian Standard (IS) and read the scope notes—they define the exact
@@ -209,9 +199,6 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-
-
-
           {" "}
           <a
             href="https://crsbis.in/"
@@ -220,16 +207,11 @@ const MainContentLeft = () => {
             className="text-blue-600 hover:text-blue-800 underline"
           >
             For CRS
-          </a> {" "}
-
-
-          
-          
-          
-          , once tests pass you submit reports and documents online, pay
-          fees, and receive a Registration (R‑number) if approved. For ISI,
-          prepare for a factory audit and ongoing surveillance; set up marking
-          control procedures, test equipment lists, and production controls.
+          </a>{" "}
+          , once tests pass you submit reports and documents online, pay fees,
+          and receive a Registration (R‑number) if approved. For ISI, prepare
+          for a factory audit and ongoing surveillance; set up marking control
+          procedures, test equipment lists, and production controls.
           Post‑approval, follow marking/packaging rules exactly, maintain
           records, and monitor changes (components/firmware and suppliers).
           Build a renewal calendar and a process for variant additions to keep
@@ -303,7 +285,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -336,7 +319,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -353,6 +337,7 @@ const Services = () => {
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
                 alt="PlasticWasteManagement"
+                title="PlasticWasteManagement"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -368,7 +353,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate"
+                alt="EPRCertificate logo"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -384,7 +370,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -400,7 +387,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -416,7 +404,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

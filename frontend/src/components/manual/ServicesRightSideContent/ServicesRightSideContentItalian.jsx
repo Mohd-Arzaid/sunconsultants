@@ -31,6 +31,7 @@ const ServicesRightSideContentItalian = () => {
 
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
+    "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano",
     "/certificazione-bis-in-italia",
     "/it/cose-il-crs-bis-o-registrazione-crs",
     // ISI Mark Italian Page Url
@@ -229,6 +230,7 @@ const BISQCOUpdatesServicesRightSideContentItalian = () => {
                   <img
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
+                    title={post.title}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     onError={(e) => {
                       e.target.src = "/placeholder.svg";
@@ -602,6 +604,12 @@ const ContactFormServicesRightSideContentItalian = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration (Italian)";
+    if (
+      path.includes(
+        "/it/guida-alla-certificazione-bis-per-produttori-stranieri-bis-indiano"
+      )
+    )
+      return "BIS FMCS Certification - Italian Page";
     if (path.includes("/certificazione-bis-in-italia"))
       return "Italy Blog Italian";
     if (path.includes("/it/cose-il-crs-bis-o-registrazione-crs"))

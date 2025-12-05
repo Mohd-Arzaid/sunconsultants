@@ -172,25 +172,16 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           Yes. Foreign manufacturers can obtain BIS certification for eligible
-          products. The key is to apply under the correct scheme—either the 
-          
-          
-          
-
-          
-          {" "}
+          products. The key is to apply under the correct scheme—either the{" "}
           <a
             href="https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 underline"
           >
-              ISI Scheme
-          </a> {" "}
-          Scheme
-          
-          
-           (certification with factory surveillance and ISI mark) or the
+            ISI Scheme
+          </a>{" "}
+          Scheme (certification with factory surveillance and ISI mark) or the
           Compulsory Registration Scheme (CRS) for electronics/IT products.
           Because the applicant is overseas, you must appoint an Authorized
           Indian Representative (AIR) to liaise with BIS, receive
@@ -208,8 +199,6 @@ const MainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-
-         
           {" "}
           <a
             href="https://crsbis.in/"
@@ -218,17 +207,13 @@ const MainContentLeft = () => {
             className="text-blue-600 hover:text-blue-800 underline"
           >
             For CRS
-          </a> {" "}
-
-          
-          
-          
-          , you typically submit test reports and documents through the
-          BIS portal, then receive a Registration (R‑number) if approved. For
-          ISI, expect a factory audit/surveillance, marking control procedures,
-          and ongoing compliance obligations. After grant, follow
-          marking/labeling rules precisely (ISI mark or CRS R‑number with
-          standard reference) and maintain records for surveillance.
+          </a>{" "}
+          , you typically submit test reports and documents through the BIS
+          portal, then receive a Registration (R‑number) if approved. For ISI,
+          expect a factory audit/surveillance, marking control procedures, and
+          ongoing compliance obligations. After grant, follow marking/labeling
+          rules precisely (ISI mark or CRS R‑number with standard reference) and
+          maintain records for surveillance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -302,7 +287,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -335,7 +321,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -352,6 +339,7 @@ const Services = () => {
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
                 alt="PlasticWasteManagement"
+                title="PlasticWasteManagement"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -367,7 +355,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate"
+                alt="EPRCertificate logo"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -383,7 +372,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -399,7 +389,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -415,7 +406,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
