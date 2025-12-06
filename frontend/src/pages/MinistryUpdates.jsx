@@ -315,6 +315,50 @@ const NotificationCard = ({ searchQuery, currentPage, itemsPerPage }) => {
         "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
       link: "/ministry-updates/steel-products-amendment-2025",
     },
+    {
+      id: 10,
+      color: "#1A8781",
+      tagType: "QCO Withdraw",
+      date: "December 24, 2021",
+      displayDate: "24 Dec 2021",
+      title: "Toluene QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Toluene (Quality Control) Order, 2021, removing the BIS certification requirement under IS 537:2011. Know the reasons and industry impact.",
+      link: "/ministry-updates/toluene-qco-withdraw-order",
+    },
+    {
+      id: 11,
+      color: "#C86A31",
+      tagType: "QCO Withdraw",
+      date: "December 24, 2021",
+      displayDate: "24 Dec 2021",
+      title: "Methyl Acrylate, Ethyl Acrylate QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Methyl Acrylate, Ethyl Acrylate (Quality Control) Order, 2021, removing the BIS certification requirement under IS 14707:1999 & IS 14708:1999. Learn about the implications for manufacturers and importers.",
+      link: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
+    },
+    {
+      id: 12,
+      color: "#5B63E6",
+      tagType: "QCO Withdraw",
+      date: "December 24, 2021",
+      displayDate: "30 Nov 2025",
+      title: "Vinyl Acetate Monomer QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Vinyl Acetate Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 12345:1988. Know the reasons and industry impact.",
+      link: "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
+    },
+    {
+      id: 13,
+      color: "#1A8781",
+      tagType: "QCO Withdraw",
+      date: "September 13, 2021",
+      displayDate: "13 Sep 2021",
+      title: "Vinyl Chloride Monomer QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Vinyl Chloride Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 17442:2020. Know the reasons and industry impact.",
+      link: "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
+    },
   ];
 
   // Function to parse date string into Date object
@@ -610,6 +654,72 @@ const Pagination = ({
       description:
         "The Ministry of Steel has released the Steel and Steel Products (Quality Control) Amendment Order, 2025, extending enforcement of select IS standards by 1 to 3 years. Explore the updated list of steel products and compliance timelines.",
       link: "/ministry-updates/steel-products-amendment-2025",
+    },
+    {
+      id: 10,
+      color: "#1A8781",
+      tagType: "QCO Withdraw",
+      date: "December 24, 2021",
+      displayDate: "30 Nov 2025",
+      title: "Toluene QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Toluene (Quality Control) Order, 2021, removing the BIS certification requirement under IS 537:2011. Know the reasons and industry impact.",
+      link: "/ministry-updates/toluene-qco-withdraw-order",
+    },
+    {
+      id: 11,
+      color: "#C86A31",
+      tagType: "QCO Withdraw",
+      date: "December 24, 2021",
+      displayDate: "30 Nov 2025",
+      title: "Methyl Acrylate, Ethyl Acrylate QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Methyl Acrylate, Ethyl Acrylate (Quality Control) Order, 2021, removing the BIS certification requirement under IS 14707:1999 & IS 14708:1999. Learn about the implications for manufacturers and importers.",
+      link: "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
+    },
+    {
+      id: 12,
+      color: "#5B63E6",
+      tagType: "QCO Withdraw",
+      date: "December 24, 2021",
+      displayDate: "30 Nov 2025",
+      title: "Vinyl Acetate Monomer QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Vinyl Acetate Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 12345:1988. Know the reasons and industry impact.",
+      link: "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
+    },
+    {
+      id: 13,
+      color: "#1A8781",
+      tagType: "QCO Withdraw",
+      date: "September 13, 2021",
+      displayDate: "13 Sep 2021",
+      title: "Vinyl Chloride Monomer QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Vinyl Chloride Monomer (Quality Control) Order, 2021, removing the BIS certification requirement under IS 17442:2020. Know the reasons and industry impact.",
+      link: "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
+    },
+    {
+      id: 14,
+      color: "#C86A31",
+      tagType: "QCO Withdraw",
+      date: "September 13, 2021",
+      displayDate: "13 Sep 2021",
+      title: "Ethylene Dichloride QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the Ethylene Dichloride (Quality Control) Order, 2021, removing the BIS certification requirement under IS 869:2020. Know the reasons and industry impact.",
+      link: "/ministry-updates/ethylene-dichloride-qco-withdraw-order",
+    },
+    {
+      id: 15,
+      color: "#5B63E6",
+      tagType: "QCO Withdraw",
+      date: "September 13, 2021",
+      displayDate: "13 Sep 2021",
+      title: "P-Xylene QCO Withdraw Order",
+      description:
+        "The Government of India has withdrawn the P-Xylene (Quality Control) Order, 2021, removing the BIS certification requirement under IS 17370:2020. Know the reasons and industry impact.",
+      link: "/ministry-updates/p-xylene-qco-withdraw-order",
     },
   ];
 

@@ -50,6 +50,24 @@ const SteelProductsAmendment2025Eng = lazy(() =>
     "@/pages/MinistryUpdatesPages/SteelProductsAmendment2025/SteelProductsAmendment2025Eng"
   )
 );
+const TolueneQCOWithdrawOrderEng = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/TolueneEng")
+);
+const MethylAcrylateEthylAcrylateQCOWithdrawOrderEng = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/MethylAcrylateEthylAcrylateEng")
+);
+const VinylAcetateMonomerQCOWithdrawOrderEng = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/VinylAcetateMonomerEng")
+);
+const VinylChlorideMonomerQCOWithdrawOrderEng = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/VinylChlorideMonomerEng")
+);
+const EthyleneDichlorideQCOWithdrawOrderEng = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/EthyleneDichlorideEng")
+);
+const PXyleneQCOWithdrawOrderEng = lazy(() =>
+  import("@/pages/MinistryUpdatesPages/PXyleneEng")
+);
 
 export const MinistryUpdatesRoutes = () => {
   return (
@@ -124,6 +142,54 @@ export const MinistryUpdatesRoutes = () => {
         element={
           <Suspense fallback={<MinistryUpdatesSkeleton />}>
             <SteelProductsAmendment2025Eng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/toluene-qco-withdraw-order"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <TolueneQCOWithdrawOrderEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <MethylAcrylateEthylAcrylateQCOWithdrawOrderEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <VinylAcetateMonomerQCOWithdrawOrderEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <VinylChlorideMonomerQCOWithdrawOrderEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/ethylene-dichloride-qco-withdraw-order"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <EthyleneDichlorideQCOWithdrawOrderEng />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/ministry-updates/p-xylene-qco-withdraw-order"
+        element={
+          <Suspense fallback={<MinistryUpdatesSkeleton />}>
+            <PXyleneQCOWithdrawOrderEng />
           </Suspense>
         }
       />

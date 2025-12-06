@@ -82,6 +82,12 @@ const ServicesRightSideContentEng = () => {
     "/ministry-updates/petrochemical-and-polymer-products-qco-withdraw-order",
     "/ministry-updates/scheme-x-qco-withdraw-order",
     "/ministry-updates/steel-products-amendment-2025",
+    "/ministry-updates/toluene-qco-withdraw-order",
+    "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order",
+    "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order",
+    "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order",
+    "/ministry-updates/ethylene-dichloride-qco-withdraw-order",
+    "/ministry-updates/p-xylene-qco-withdraw-order",
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
@@ -814,6 +820,44 @@ const ContactFormServicesRightSideContentEng = () => {
     // Steel Products Amendment Order 2025
     if (path.includes("/ministry-updates/steel-products-amendment-2025"))
       return "Steel Products Amendment Order 2025 - Ministry Updates (English)";
+
+    // Toluene QCO Withdrawal Order
+    if (path.includes("/ministry-updates/toluene-qco-withdraw-order"))
+      return "Toluene QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Methyl Acrylate, Ethyl Acrylate QCO Withdrawal Order
+    if (
+      path.includes(
+        "/ministry-updates/methyl-acrylate-ethyl-acrylate-qco-withdraw-order"
+      )
+    )
+      return "Methyl Acrylate, Ethyl Acrylate QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Vinyl Acetate Monomer QCO Withdrawal Order
+    if (
+      path.includes(
+        "/ministry-updates/vinyl-acetate-monomer-qco-withdraw-order"
+      )
+    )
+      return "Vinyl Acetate Monomer QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Vinyl Chloride Monomer QCO Withdrawal Order
+    if (
+      path.includes(
+        "/ministry-updates/vinyl-chloride-monomer-qco-withdraw-order"
+      )
+    )
+      return "Vinyl Chloride Monomer QCO Withdrawal Order - Ministry Updates (English)";
+
+    // Ethylene Dichloride QCO Withdrawal Order
+    if (
+      path.includes("/ministry-updates/ethylene-dichloride-qco-withdraw-order")
+    )
+      return "Ethylene Dichloride QCO Withdrawal Order - Ministry Updates (English)";
+
+    // P-Xylene QCO Withdrawal Order
+    if (path.includes("/ministry-updates/p-xylene-qco-withdraw-order"))
+      return "P-Xylene QCO Withdrawal Order - Ministry Updates (English)";
 
     // BIS CERTIFICATION FAQ PATHS
     // Q1
