@@ -125,6 +125,7 @@ const AuditsMarquee = () => {
                     title={item.description}
                     width={400}
                     height={300}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110"
                   />
                 </div>
