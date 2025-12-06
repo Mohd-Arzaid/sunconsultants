@@ -1,7 +1,5 @@
-
-
 const AuditsMarquee = () => {
-  // Gallery images from InternationalAudits.jsx
+  // Gallery images
   const galleryImages = [
     {
       id: 1,
@@ -108,7 +106,7 @@ const AuditsMarquee = () => {
   return (
     <div className="bg-white pt-8">
       <div className="max-w-[88rem] mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold  drop-shadow-lg font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-bold drop-shadow-lg font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
           International Audit Glimpse
         </h2>
         {/* Infinite scroll for audit images */}
@@ -123,8 +121,8 @@ const AuditsMarquee = () => {
                 <div className="aspect-[4/3]">
                   <img
                     src={item.image}
-                    alt={item.description || item.title || `Audit ${item.id}`}
-                    title={item.description || item.title || `Audit ${item.id}`}
+                    alt={item.description}
+                    title={item.description}
                     width={400}
                     height={300}
                     className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110"
