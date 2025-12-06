@@ -1,14 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-
 const WebinarSeminarMarquee = () => {
-  const containerRef = useRef(null);
-  const scrollerRef = useRef(null);
-  const [start, setStart] = useState(false);
-  const [duplicatedImages, setDuplicatedImages] = useState([]);
-  const [loadedImages, setLoadedImages] = useState(new Set());
-  const observerRef = useRef(null);
-
-  // Gallery images from InternationalAudits.jsx
+  // Gallery images
   const galleryImages = [
     {
       id: 1,
@@ -117,193 +108,38 @@ const WebinarSeminarMarquee = () => {
       description:
         "Training sessions for members of Retailers Association of India (RAI)",
     },
-    // {
-    //   id: 17,
-    //   image: Seminar12,
-    //   title: "Seminar 12",
-    // },
   ];
 
-  useEffect(() => {
-    addAnimation();
-  }, []);
-
-  useEffect(() => {
-    if (duplicatedImages.length === 0) return;
-
-    // Clean up previous observer
-    if (observerRef.current) {
-      observerRef.current.disconnect();
-    }
-
-    // Set up Intersection Observer for lazy loading duplicate images
-    const observerOptions = {
-      root: null,
-      rootMargin: "50px", // Start loading 50px before image enters viewport
-      threshold: 0.01,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const imageUrl = entry.target.dataset.imageUrl;
-          const isDuplicate = entry.target.dataset.isDuplicate === "true";
-
-          // Only lazy load duplicates, first set loads normally
-          if (imageUrl && isDuplicate) {
-            setLoadedImages((prev) => {
-              if (!prev.has(imageUrl)) {
-                const newSet = new Set(prev);
-                newSet.add(imageUrl);
-                return newSet;
-              }
-              return prev;
-            });
-            observer.unobserve(entry.target);
-          }
-        }
-      });
-    }, observerOptions);
-
-    observerRef.current = observer;
-
-    // Small delay to ensure DOM is ready
-    const timeoutId = setTimeout(() => {
-      // Observe only duplicate image containers
-      const duplicateContainers = document.querySelectorAll(
-        "[data-lazy-image-container][data-is-duplicate='true']"
-      );
-      duplicateContainers.forEach((container) => observer.observe(container));
-    }, 100);
-
-    return () => {
-      clearTimeout(timeoutId);
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, [duplicatedImages]);
-
-  function addAnimation() {
-    // React-friendly duplication approach - same as other components
-    const duplicated = [...galleryImages, ...galleryImages, ...galleryImages];
-    // console.log("Total seminar images after duplication:", duplicated.length);
-    setDuplicatedImages(duplicated);
-
-    if (containerRef.current) {
-      getDirection();
-      getSpeed();
-
-      // Small delay to ensure DOM is ready
-      setTimeout(() => {
-        setStart(true);
-        // console.log("Seminar animation started!");
-      }, 100);
-    }
-  }
-
-  const getDirection = () => {
-    if (containerRef.current) {
-      containerRef.current.style.setProperty(
-        "--animation-direction",
-        "forwards"
-      );
-    }
-  };
-
-  const getSpeed = () => {
-    if (containerRef.current) {
-      // Calculate speed based on total width of images
-      const totalWidth = galleryImages.length * 350; // Approximate width per image (300px + 50px gap)
-      const pixelsPerSecond = 50; // Consistent speed: 50 pixels per second
-      const duration = totalWidth / pixelsPerSecond;
-
-      containerRef.current.style.setProperty(
-        "--animation-duration",
-        `${duration}s`
-      );
-    }
-  };
+  const duplicated = [...galleryImages, ...galleryImages];
 
   return (
-    <div className="bg-white pt-8 pb-2">
+    <div className="bg-white pt-8">
       <div className="max-w-[88rem] mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold font-playfair drop-shadow-lg text-center mb-10 text-[#1e1e1e] tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-bold drop-shadow-lg font-playfair text-center mb-10 text-[#1e1e1e] tracking-tight">
           Seminars/Exhibitions
         </h2>
         {/* Infinite scroll for seminar images */}
-        <div
-          ref={containerRef}
-          className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
-        >
-          <div
-            ref={scrollerRef}
-            className={`flex items-center pt-4 pb-8 w-max gap-6 ${
-              start ? "animate-scroll" : ""
-            } hover:[animation-play-state:paused]`}
-          >
-            {duplicatedImages.map((item, index) => {
-              // Mark duplicates as hidden from SEO (only first set should be indexed)
-              const isDuplicate = index >= galleryImages.length;
-
-              return (
-                <div
-                  key={`${item.id}-${index}`}
-                  className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl bg-white shrink-0"
-                  style={{ minWidth: "300px", maxWidth: "400px" }}
-                  aria-hidden={isDuplicate ? "true" : undefined}
-                  data-seo-ignore={isDuplicate ? "true" : undefined}
-                >
-                  <div
-                    className="aspect-[4/3] overflow-hidden"
-                    data-lazy-image-container={isDuplicate ? "true" : undefined}
-                    data-image-url={isDuplicate ? item.image : undefined}
-                    data-is-duplicate={isDuplicate ? "true" : undefined}
-                  >
-                    {isDuplicate ? (
-                      // Use div with background-image for duplicates (SEO won't index as image)
-                      <div
-                        className="w-full h-full transform transition-transform duration-700 md:group-hover:scale-110"
-                        style={{
-                          backgroundImage: loadedImages.has(item.image)
-                            ? `url(${item.image})`
-                            : "none",
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                          backgroundRepeat: "no-repeat",
-                          color: "transparent",
-                          backgroundColor: loadedImages.has(item.image)
-                            ? "transparent"
-                            : "#f3f4f6",
-                        }}
-                        aria-hidden="true"
-                        data-seo-ignore="true"
-                      />
-                    ) : (
-                      <img
-                        src={item.image}
-                        alt={
-                          item.description ||
-                          item.title ||
-                          `Seminar/Exhibition ${item.id}`
-                        }
-                        title={
-                          item.description ||
-                          item.title ||
-                          `Seminar/Exhibition ${item.id}`
-                        }
-                        loading="lazy"
-                        width="300"
-                        height="300"
-                        decoding="async"
-                        className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
-                        style={{ color: "transparent" }}
-                      />
-                    )}
-                  </div>
+        <div className="marquee-container overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] relative py-4 pb-8">
+          <div className="marquee-track flex flex-nowrap items-center gap-6">
+            {duplicated.map((item, i) => (
+              <div
+                key={`${item.id}-${i}`}
+                className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-xl bg-white shrink-0"
+                style={{ minWidth: "300px", maxWidth: "400px" }}
+              >
+                <div className="aspect-[4/3]">
+                  <img
+                    src={item.image}
+                    alt={item.description}
+                    title={item.description}
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-110"
+                  />
                 </div>
-              );
-            })}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
