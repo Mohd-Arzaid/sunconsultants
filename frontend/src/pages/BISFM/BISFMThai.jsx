@@ -352,18 +352,18 @@ const ContactUsForm = () => {
     <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-poppins font-semibold text-[18px] md:text-[20px] text-[#008080]">
-          Contáctenos
+          ติดต่อเรา
         </span>
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
       <div className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
-        Reserve una Cita
+        จองนัดหมาย
       </div>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
-        ¿Desea contactar a nuestro equipo y programar una llamada?
-        <span className="text-black"> Pruebe Ahora</span>
+        ต้องการติดต่อทีมของเราและนัดหมายการโทรหรือไม่?
+        <span className="text-black"> ลองเลย</span>
       </p>
 
       <form onSubmit={handleFormSubmit} className="flex flex-col mt-5 gap-5">
@@ -375,7 +375,7 @@ const ContactUsForm = () => {
             name="fullName"
             value={fullName}
             onChange={handleOnChange}
-            placeholder="Nombre Completo *"
+            placeholder="ชื่อเต็ม *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -386,7 +386,7 @@ const ContactUsForm = () => {
             name="email"
             value={email}
             onChange={handleOnChange}
-            placeholder="Dirección de Correo Electrónico *"
+            placeholder="ที่อยู่อีเมล *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -399,7 +399,7 @@ const ContactUsForm = () => {
             name="phoneNumber"
             value={phoneNumber}
             onChange={handleOnChange}
-            placeholder="Número de Contacto *"
+            placeholder="เบอร์ติดต่อ *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -410,7 +410,7 @@ const ContactUsForm = () => {
             name="companyName"
             value={companyName}
             onChange={handleOnChange}
-            placeholder="Nombre de la Empresa *"
+            placeholder="ชื่อบริษัท *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -423,7 +423,7 @@ const ContactUsForm = () => {
             name="productName"
             value={productName}
             onChange={handleOnChange}
-            placeholder="Nombre del Producto *"
+            placeholder="ชื่อผลิตภัณฑ์ *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -434,7 +434,7 @@ const ContactUsForm = () => {
             name="message"
             value={message}
             onChange={handleOnChange}
-            placeholder="Certificación Requerida*"
+            placeholder="การรับรองที่ต้องการ*"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -447,11 +447,11 @@ const ContactUsForm = () => {
           {loading ? (
             <div className="flex gap-3 items-center justify-center">
               <ClockLoader size={22} color="#fff" />
-              <span>Enviando</span>
+              <span>กำลังส่ง</span>
             </div>
           ) : (
             <div className="flex gap-3 items-center justify-center">
-              <span>Reservar Cita</span>
+              <span>จองนัดหมาย</span>
             </div>
           )}
         </Button>
@@ -483,14 +483,14 @@ const IndexSection = () => {
   );
 
   const MENU_ITEMS = {
-    overview: "Resumen",
-    standardization: "Estandarización",
-    representation: "Representación",
-    document: "Documento",
-    process: "Proceso",
-    costing: "Costos",
-    surveillance: "Vigilancia",
-    facilitator: "Facilitador",
+    overview: "ภาพรวม",
+    standardization: "การกำหนดมาตรฐาน",
+    representation: "การเป็นตัวแทน",
+    document: "เอกสาร",
+    process: "กระบวนการ",
+    costing: "ต้นทุน",
+    surveillance: "การตรวจสอบ",
+    facilitator: "ผู้ให้ความช่วยเหลือ",
   };
 
   const handleItemClick = (item) => {
@@ -691,31 +691,29 @@ const MainContentLeft = () => {
       <div className="flex flex-col gap-[20px] md:gap-[40px]">
         <div className="flex flex-col gap-2">
           <h1 className="service-left-content-heading-two">
-            Información completa sobre la certificación BIS India bajo el
-            Esquema FMCS
+            ข้อมูลครบถ้วนเกี่ยวกับการรับรอง BIS India ภายใต้โครงการ FMCS
           </h1>
 
           <h2 className="service-left-content-heading-three">
-            ¿Qué es BIS India?
+            BIS India คืออะไร?
           </h2>
 
           <p className="service-left-content-paragraph">
-            La Oficina de Normas de la India (BIS) es el organismo nacional de
-            normalización de la India bajo el Ministerio de Asuntos del
-            Consumidor, Alimentación y Distribución Pública. Establecida bajo la
-            Ley BIS de 1986, y revisada en 2016, BIS desempeña un papel
-            fundamental en la estandarización, marcado y certificación de
-            calidad de productos. Su objetivo es garantizar la calidad,
-            seguridad y confiabilidad de los productos ofrecidos a los
-            consumidores indios.
+            สำนักงานมาตรฐานอินเดีย (BIS)
+            เป็นองค์กรมาตรฐานแห่งชาติของอินเดียภายใต้กระทรวงกิจการผู้บริโภค
+            อาหาร และการจัดจำหน่ายสาธารณะ ก่อตั้งขึ้นภายใต้พระราชบัญญัติ BIS ปี
+            1986 และแก้ไขในปี 2016 BIS มีบทบาทสำคัญในการกำหนดมาตรฐาน
+            การทำเครื่องหมาย และการรับรองคุณภาพผลิตภัณฑ์
+            เป้าหมายคือการรับประกันคุณภาพ ความปลอดภัย
+            และความน่าเชื่อถือของผลิตภัณฑ์ที่เสนอให้กับผู้บริโภคชาวอินเดีย
           </p>
 
           <p className="service-left-content-paragraph">
-            BIS opera a través de varios esquemas que incluyen certificación de
-            productos, marcado para joyería, servicios de prueba y programas de
-            capacitación. Sin embargo, uno de sus marcos más significativos a
-            nivel internacional es el Esquema de Certificación para Fabricantes
-            Extranjeros (FMCS).
+            BIS ดำเนินงานผ่านโครงการต่างๆ ที่รวมถึงการรับรองผลิตภัณฑ์
+            การทำเครื่องหมายสำหรับเครื่องประดับ บริการทดสอบ และโปรแกรมการฝึกอบรม
+            อย่างไรก็ตาม
+            กรอบงานที่สำคัญที่สุดในระดับสากลอย่างหนึ่งคือโครงการรับรองสำหรับผู้ผลิตต่างประเทศ
+            (FMCS)
           </p>
         </div>
 
@@ -745,94 +743,93 @@ const OverviewSection = () => {
     <div id="overview" className="flex flex-col scroll-mt-20">
       {/* Overview */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Resumen</span>
+        <span className="service-left-content-index-heading">ภาพรวม</span>
         <Separator className="service-left-content-separator" />
       </div>
 
       <h2 className="service-left-content-heading-two">
-        ¿Qué es el certificado BIS bajo FMCS?
+        ใบรับรอง BIS ภายใต้ FMCS คืออะไร?
       </h2>
 
       <p className="service-left-content-paragraph">
-        Introducido en el año 2000, FMCS es un mecanismo mediante el cual los
-        fabricantes extranjeros pueden obtener una licencia BIS para usar la
-        marca ISI en sus productos, indicando conformidad con los estándares
-        indios. El proceso de certificación FMCS permite a las entidades
-        extranjeras vender legalmente sus productos en India sin establecer una
-        unidad de fabricación local.
+        FMCS ถูกนำมาใช้ในปี 2000
+        เป็นกลไกที่ผู้ผลิตต่างประเทศสามารถได้รับใบอนุญาต BIS เพื่อใช้เครื่องหมาย
+        ISI บนผลิตภัณฑ์ของตน แสดงถึงการปฏิบัติตามมาตรฐานอินเดีย กระบวนการรับรอง
+        FMCS
+        อนุญาตให้องค์กรต่างประเทศขายผลิตภัณฑ์ในอินเดียได้อย่างถูกกฎหมายโดยไม่ต้องตั้งหน่วยการผลิตในท้องถิ่น
       </p>
 
       <p className="service-left-content-paragraph">
-        Hasta ahora, más de 1,650 fabricantes extranjeros están operando en
-        India bajo el sistema de certificación BIS a través de FMCS.{" "}
+        จนถึงปัจจุบัน มีผู้ผลิตต่างประเทศมากกว่า 1,650
+        รายที่ดำเนินงานในอินเดียภายใต้ระบบรับรอง BIS ผ่าน FMCS{" "}
       </p>
 
       <h2 className="service-left-content-heading-three">
-        ¿Por qué es crucial la certificación BIS?
+        ทำไมการรับรอง BIS จึงมีความสำคัญ?
       </h2>
 
       <p className="service-left-content-paragraph">
-        Obtener un certificado BIS es más que un requisito legal: es una puerta
-        de entrada al vasto mercado consumidor de India. Aquí hay algunas
-        razones clave por las que es esencial:
+        การได้รับใบรับรอง BIS ไม่เพียงแต่เป็นข้อกำหนดทางกฎหมาย
+        แต่ยังเป็นประตูสู่ตลาดผู้บริโภคขนาดใหญ่ของอินเดีย
+        นี่คือเหตุผลสำคัญบางประการที่จำเป็น:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Cumplimiento Legal: Los productos deben cumplir con los estándares indios relevantes.",
-          "Credibilidad de la Marca: La marca ISI sirve como prueba de calidad y aumenta la confianza del consumidor.",
-          "Despacho Aduanero: Sin una licencia BIS válida, los productos pueden ser rechazados en aduanas.",
-          "Acceso al Mercado: Ayuda a las marcas extranjeras a obtener entrada fluida y aceptación generalizada en India.",
-          "Mitigación de Riesgos: Garantiza que los productos sean seguros, evitando así posibles retiros y problemas de responsabilidad.",
+          "การปฏิบัติตามกฎหมาย: ผลิตภัณฑ์ต้องปฏิบัติตามมาตรฐานอินเดียที่เกี่ยวข้อง",
+          "ความน่าเชื่อถือของแบรนด์: เครื่องหมาย ISI ทำหน้าที่เป็นหลักฐานคุณภาพและเพิ่มความมั่นใจของผู้บริโภค",
+          "การผ่านศุลกากร: หากไม่มีใบอนุญาต BIS ที่ถูกต้อง ผลิตภัณฑ์อาจถูกปฏิเสธที่ด่านศุลกากร",
+          "การเข้าถึงตลาด: ช่วยให้แบรนด์ต่างประเทศได้รับเข้าถึงอย่างราบรื่นและการยอมรับอย่างกว้างขวางในอินเดีย",
+          "การลดความเสี่ยง: รับประกันว่าผลิตภัณฑ์มีความปลอดภัย จึงหลีกเลี่ยงการเรียกคืนและการรับผิดชอบที่อาจเกิดขึ้น",
         ]}
       />
 
       <h2 className="service-left-content-heading-three">
-        Alcance de productos cubiertos en BIS
+        ขอบเขตผลิตภัณฑ์ที่ครอบคลุมใน BIS
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS ha listado más de 600 productos bajo certificación obligatoria, y
-        más de 20,000 artículos son elegibles para certificado BIS voluntario.
-        Estos abarcan una amplia gama de industrias:
+        BIS ได้จัดทำรายชื่อผลิตภัณฑ์มากกว่า 600 รายการภายใต้การรับรองบังคับ
+        และมีรายการมากกว่า 20,000 รายการที่สามารถรับใบรับรอง BIS แบบสมัครใจได้
+        สิ่งเหล่านี้ครอบคลุมอุตสาหกรรมที่หลากหลาย:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Electrónica y hardware de TI",
-          "Piezas automotrices",
-          "Electrodomésticos",
-          "Productos de acero",
-          "Cemento y materiales de construcción, etc.",
+          "อิเล็กทรอนิกส์และฮาร์ดแวร์ไอที",
+          "ชิ้นส่วนยานยนต์",
+          "เครื่องใช้ไฟฟ้า",
+          "ผลิตภัณฑ์เหล็ก",
+          "ปูนซีเมนต์และวัสดุก่อสร้าง ฯลฯ",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        La lista creciente indica el alcance y relevancia cada vez mayores del
-        certificado BIS en el comercio global.
+        รายการที่เพิ่มขึ้นบ่งชี้ถึงขอบเขตและความเกี่ยวข้องที่เพิ่มขึ้นของใบรับรอง
+        BIS ในการค้าโลก
       </p>
 
       <h2 className="service-left-content-heading-three">
-        Objetivos o beneficios de la certificación BIS para fabricantes
-        extranjeros bajo FMCS
+        วัตถุประสงค์หรือประโยชน์ของการรับรอง BIS สำหรับผู้ผลิตต่างประเทศภายใต้
+        FMCS
       </h2>
 
       <p className="service-left-content-paragraph">
-        El régimen FMCS y certificado BIS tiene como objetivo:
+        ระบอบ FMCS และใบรับรอง BIS มีวัตถุประสงค์เพื่อ:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "El uso de la marca ISI sin una licencia BIS válida es punible por ley.",
-          "Los productos certificados deben mostrar tanto el logotipo ISI como el número CM/L (Certificado de Licencia de Fabricación).",
-          "Los infractores pueden enfrentar prohibiciones de productos, multas o incluso enjuiciamiento penal.",
-          "Construir confianza entre los consumidores y las marcas importadas.",
-          "Facilitar el comercio justo y un campo de juego nivelado.",
+          "การใช้เครื่องหมาย ISI โดยไม่มีใบอนุญาต BIS ที่ถูกต้องเป็นความผิดตามกฎหมาย",
+          "ผลิตภัณฑ์ที่รับรองแล้วต้องแสดงทั้งโลโก้ ISI และหมายเลข CM/L (ใบรับรองใบอนุญาตการผลิต)",
+          "ผู้ละเมิดอาจต้องเผชิญกับการห้ามผลิตภัณฑ์ ค่าปรับ หรือแม้กระทั่งการดำเนินคดีทางอาญา",
+          "สร้างความไว้วางใจระหว่างผู้บริโภคและแบรนด์ที่นำเข้า",
+          "อำนวยความสะดวกในการค้าที่เป็นธรรมและสนามแข่งขันที่เท่าเทียม",
         ]}
       />
 
       <h2 className="service-left-content-heading-three">
-        Características clave del certificado BIS para fabricantes extranjeros
+        คุณสมบัติสำคัญของใบรับรอง BIS สำหรับผู้ผลิตต่างประเทศ
       </h2>
 
       <div className="mt-6 md:mt-8 overflow-x-auto">
@@ -840,76 +837,76 @@ const OverviewSection = () => {
           <TableHeader>
             <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                CARACTERÍSTICA
+                คุณสมบัติ
               </TableHead>
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
-                DESCRIPCIÓN
+                คำอธิบาย
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Aplicabilidad
+                การบังคับใช้
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Solo fabricantes extranjeros
+                เฉพาะผู้ผลิตต่างประเทศ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Marcado
+                การทำเครื่องหมาย
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Marca ISI + número CM/L
+                เครื่องหมาย ISI + หมายเลข CM/L
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Requisito de Auditoría
+                ข้อกำหนดการตรวจสอบ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Inspección obligatoria de fábrica
+                การตรวจสอบโรงงานบังคับ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Pruebas
+                การทดสอบ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Realizadas en laboratorios indios aprobados por BIS
+                ดำเนินการในห้องปฏิบัติการอินเดียที่ BIS อนุมัติ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Validez
+                ความถูกต้อง
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Licencia BIS válida por 1-2 años
+                ใบอนุญาต BIS ใช้ได้ 1-2 ปี
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Renovación
+                การต่ออายุ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Requerida al vencimiento o actualizaciones del producto
+                จำเป็นเมื่อหมดอายุหรือมีการอัปเดตผลิตภัณฑ์
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                AIR (Representante Indio Autorizado)
+                AIR (ตัวแทนอินเดียที่ได้รับอนุญาต)
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Debe ser designado para comunicarse con BIS
+                ต้องได้รับการแต่งตั้งเพื่อสื่อสารกับ BIS
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Garantía Bancaria de Rendimiento
+                หนังสือค้ำประกันธนาคารเพื่อการปฏิบัติงาน
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Requerida de banco indio aprobado por RBI
+                จำเป็นจากธนาคารอินเดียที่ RBI อนุมัติ
               </TableCell>
             </TableRow>
           </TableBody>
@@ -925,89 +922,88 @@ const StandardizationSection = () => {
       {/* Standardization */}
       <div className="flex w-full items-center gap-3">
         <span className="service-left-content-index-heading">
-          Estandarización
+          การกำหนดมาตรฐาน
         </span>
         <Separator className="service-left-content-separator" />
       </div>
 
       <h2 className="service-left-content-heading-two">
-        ¿Qué es BIS India y por qué es importante?
+        BIS India คืออะไรและทำไมจึงสำคัญ?
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS India es el sello de calidad y seguridad emitido por la Oficina de
-        Normas de la India (BIS). Hoy en día, la marca ISI se usa exclusivamente
-        para designar productos que cumplen con los estándares indios bajo el
-        esquema oficial de certificación BIS.
+        BIS India
+        เป็นตราประทับคุณภาพและความปลอดภัยที่ออกโดยสำนักงานมาตรฐานอินเดีย (BIS)
+        ปัจจุบัน เครื่องหมาย ISI
+        ใช้เฉพาะเพื่อระบุผลิตภัณฑ์ที่ปฏิบัติตามมาตรฐานอินเดียภายใต้โครงการรับรอง
+        BIS อย่างเป็นทางการ
       </p>
 
       <p className="service-left-content-paragraph">
-        Para que un producto lleve la marca BIS India o ISI, debe pasar por un
-        riguroso proceso de certificación BIS, que incluye pruebas de
-        laboratorio, inspección de fábrica, auditorías de documentación y
-        verificaciones de cumplimiento con las directrices BIS India.
+        เพื่อให้ผลิตภัณฑ์มีเครื่องหมาย BIS India หรือ ISI
+        ต้องผ่านกระบวนการรับรอง BIS ที่เข้มงวด
+        ซึ่งรวมถึงการทดสอบในห้องปฏิบัติการ การตรวจสอบโรงงาน การตรวจสอบเอกสาร
+        และการตรวจสอบการปฏิบัติตามแนวทาง BIS India
       </p>
 
       <p className="service-left-content-paragraph">
-        Estatus Legal de la certificación BIS en India
+        สถานะทางกฎหมายของการรับรอง BIS ในอินเดีย
       </p>
 
       <p className="service-left-content-paragraph">
-        La licencia BIS no es meramente una herramienta de marketing: es un
-        requisito legal para todos los productos que caen bajo el esquema de
-        certificación BIS obligatorio.{" "}
+        ใบอนุญาต BIS ไม่ใช่เพียงเครื่องมือทางการตลาด
+        แต่เป็นข้อกำหนดทางกฎหมายสำหรับผลิตภัณฑ์ทั้งหมดที่อยู่ภายใต้โครงการรับรอง
+        BIS บังคับ{" "}
       </p>
 
       <h3 className="service-left-content-heading-three">
-        Según la Ley BIS, 2016:
+        ตามพระราชบัญญัติ BIS ปี 2016:
       </h3>
 
       <PointsListWithoutHeading
         points={[
-          "El uso de la marca ISI sin una licencia BIS válida es punible por ley.",
-          "Los productos certificados deben mostrar tanto el logotipo ISI como el número CM/L (Certificado de Licencia de Fabricación).",
-          "Los infractores pueden enfrentar prohibiciones de productos, multas o incluso enjuiciamiento penal.",
+          "การใช้เครื่องหมาย ISI โดยไม่มีใบอนุญาต BIS ที่ถูกต้องเป็นความผิดตามกฎหมาย",
+          "ผลิตภัณฑ์ที่รับรองแล้วต้องแสดงทั้งโลโก้ ISI และหมายเลข CM/L (ใบรับรองใบอนุญาตการผลิต)",
+          "ผู้ละเมิดอาจต้องเผชิญกับการห้ามผลิตภัณฑ์ ค่าปรับ หรือแม้กระทั่งการดำเนินคดีทางอาญา",
         ]}
       />
 
       <img
         src={ISIMARKImage}
-        alt="Logotipo de marca ISI"
-        title="Logotipo de marca ISI"
+        alt="โลโก้เครื่องหมาย ISI"
+        title="โลโก้เครื่องหมาย ISI"
         className="w-full max-w-[300px] h-auto rounded-lg shadow-sm my-6 mx-auto border border-gray-200 hover:shadow-md transition-shadow duration-300"
       />
 
       <div className="service-left-content-heading-three">
-        El logotipo ISI típicamente consiste en:
+        โลโก้ ISI โดยทั่วไปประกอบด้วย:
       </div>
 
       <PointsListWithoutHeading
         points={[
-          'Las letras estilizadas "ISI" dentro de un rectángulo con esquinas redondeadas',
-          "El número CM/L mostrado debajo o adyacente a la marca",
-          "El número de código del estándar indio de referencia (p. ej., IS 302 para electrodomésticos)",
+          'ตัวอักษร "ISI" ที่ออกแบบภายในสี่เหลี่ยมมุมมน',
+          "หมายเลข CM/L ที่แสดงด้านล่างหรือติดกับเครื่องหมาย",
+          "หมายเลขรหัสมาตรฐานอินเดียอ้างอิง (เช่น IS 302 สำหรับเครื่องใช้ไฟฟ้า)",
         ]}
       />
 
-      <div className="service-left-content-heading-three">
-        La colocación debe ser:
-      </div>
+      <div className="service-left-content-heading-three">การวางต้องเป็น:</div>
 
       <PointsListWithoutHeading
         points={[
-          "Permanente y claramente visible en el producto",
-          "En el empaque si no es posible en el producto",
-          "En los manuales de usuario en algunas categorías de productos",
+          "ถาวรและมองเห็นได้ชัดเจนบนผลิตภัณฑ์",
+          "บนบรรจุภัณฑ์หากไม่สามารถทำบนผลิตภัณฑ์ได้",
+          "ในคู่มือผู้ใช้สำหรับบางประเภทผลิตภัณฑ์",
         ]}
       />
 
       <h2 className="service-left-content-heading-three">
-        Categorías de productos que requieren certificado BIS
+        หมวดหมู่ผลิตภัณฑ์ที่ต้องใช้ใบรับรอง BIS
       </h2>
 
       <p className="service-left-content-paragraph">
-        Más de 600 productos requieren la marca ISI bajo el esquema de registro
-        obligatorio en India. Los ejemplos incluyen:
+        ผลิตภัณฑ์มากกว่า 600 รายการต้องใช้เครื่องหมาย ISI
+        ภายใต้โครงการลงทะเบียนบังคับในอินเดีย ตัวอย่างรวมถึง:
       </p>
 
       {/* Table for Product Categories Requiring BIS Certificate */}
@@ -1016,70 +1012,70 @@ const StandardizationSection = () => {
           <TableHeader>
             <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                CATEGORÍA DE PRODUCTO
+                หมวดหมู่ผลิตภัณฑ์
               </TableHead>
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                CÓDIGO IS
+                รหัส IS
               </TableHead>
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                ESTADO
+                สถานะ
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Electrodomésticos
+                เครื่องใช้ไฟฟ้า
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
                 IS 302
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Obligatorio
+                บังคับ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Acero e Hierro
+                เหล็กและเหล็กกล้า
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
                 IS 2062
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Obligatorio
+                บังคับ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Contenedores de Alimentos
+                ภาชนะบรรจุอาหาร
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
                 IS 10146
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Obligatorio
+                บังคับ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Cascos
+                หมวกกันน็อค
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
                 IS 4151
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Obligatorio
+                บังคับ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Cemento
+                ปูนซีเมนต์
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
                 IS 1489
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Obligatorio
+                บังคับ
               </TableCell>
             </TableRow>
           </TableBody>
@@ -1087,9 +1083,9 @@ const StandardizationSection = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        Cada categoría requiere el cumplimiento de su estándar indio
-        correspondiente, que se prueba durante el proceso de certificación BIS.
-        La lista completa de productos se puede consultar{" "}
+        แต่ละหมวดหมู่ต้องปฏิบัติตามมาตรฐานอินเดียที่เกี่ยวข้อง
+        ซึ่งได้รับการทดสอบระหว่างกระบวนการรับรอง BIS
+        รายการผลิตภัณฑ์ทั้งหมดสามารถดูได้{" "}
         <span
           className="font-semibold text-gray-950  underline decoration-gray-950 decoration-2 underline-offset-[0.27em] transition-colors mr-3 cursor-pointer hover:text-[#1A8781]"
           onClick={() => {
@@ -1102,16 +1098,16 @@ const StandardizationSection = () => {
             }
           }}
         >
-          Haciendo clic aquí
+          คลิกที่นี่
         </span>
       </p>
 
       <h2 className="service-left-content-heading-three">
-        BIS India vs. Otras Certificaciones Globales
+        BIS India เทียบกับการรับรองระดับโลกอื่นๆ
       </h2>
 
       <p className="service-left-content-paragraph">
-        Comparemos la marca ISI con otros símbolos internacionales:
+        เปรียบเทียบเครื่องหมาย ISI กับสัญลักษณ์สากลอื่นๆ:
       </p>
 
       <div className="mt-6 md:mt-8 overflow-x-auto">
@@ -1119,16 +1115,16 @@ const StandardizationSection = () => {
           <TableHeader>
             <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                MARCA
+                เครื่องหมาย
               </TableHead>
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                PAÍS
+                ประเทศ
               </TableHead>
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                ¿OBLIGATORIO?
+                บังคับหรือไม่?
               </TableHead>
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
-                ENFOQUE
+                จุดเน้น
               </TableHead>
             </TableRow>
           </TableHeader>
@@ -1138,13 +1134,13 @@ const StandardizationSection = () => {
                 ISI
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                India
+                อินเดีย
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Sí
+                ใช่
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Seguridad y calidad del producto
+                ความปลอดภัยและคุณภาพของผลิตภัณฑ์
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
@@ -1152,13 +1148,13 @@ const StandardizationSection = () => {
                 CE
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                UE
+                สหภาพยุโรป
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Sí (para categorías específicas)
+                ใช่ (สำหรับหมวดหมู่เฉพาะ)
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Salud, seguridad, medio ambiente
+                สุขภาพ ความปลอดภัย สิ่งแวดล้อม
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
@@ -1166,13 +1162,13 @@ const StandardizationSection = () => {
                 UL
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                EE. UU.
+                สหรัฐอเมริกา
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                No
+                ไม่
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Estándares de seguridad (voluntario)
+                มาตรฐานความปลอดภัย (สมัครใจ)
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
@@ -1180,13 +1176,13 @@ const StandardizationSection = () => {
                 CCC
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                China
+                จีน
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Sí
+                ใช่
               </TableCell>
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Seguridad de productos eléctricos
+                ความปลอดภัยของผลิตภัณฑ์ไฟฟ้า
               </TableCell>
             </TableRow>
           </TableBody>
@@ -1194,92 +1190,88 @@ const StandardizationSection = () => {
       </div>
 
       <p className="service-left-content-paragraph">
-        A diferencia de UL (voluntario) o CE (específico de región), la marca
-        ISI bajo el esquema de registro BIS es tanto obligatoria como aplicada
-        localmente.
+        แตกต่างจาก UL (สมัครใจ) หรือ CE (เฉพาะภูมิภาค) เครื่องหมาย ISI
+        ภายใต้โครงการลงทะเบียน BIS เป็นทั้งบังคับและใช้ในท้องถิ่น
       </p>
 
       <h2 className="service-left-content-heading-three">
-        ¿Es obligatoria la certificación BIS o la licencia BIS para importar a
-        India?
+        การรับรอง BIS หรือใบอนุญาต BIS
+        เป็นข้อบังคับสำหรับการนำเข้าอินเดียหรือไม่?
       </h2>
 
       <p className="service-left-content-paragraph">
-        Naturaleza Obligatoria del Certificado BIS
+        ลักษณะบังคับของใบรับรอง BIS
       </p>
 
       <p className="service-left-content-paragraph">
-        El Gobierno de India ha hecho obligatorio que ciertos productos sean
-        certificados por la Oficina de Normas de la India (BIS) antes de que
-        puedan ser importados, vendidos o distribuidos en el mercado indio. Esta
-        obligación surge de:
+        รัฐบาลอินเดียได้กำหนดให้ผลิตภัณฑ์บางประเภทต้องได้รับการรับรองจากสำนักงานมาตรฐานอินเดีย
+        (BIS) ก่อนที่จะสามารถนำเข้า ขาย หรือจำหน่ายในตลาดอินเดียได้
+        ข้อผูกพันนี้เกิดจาก:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Objetivos de protección al consumidor",
-          "Armonización con estándares indios",
-          "Regulaciones nacionales de seguridad",
+          "วัตถุประสงค์ในการคุ้มครองผู้บริโภค",
+          "การประสานกับมาตรฐานอินเดีย",
+          "กฎระเบียบความปลอดภัยระดับชาติ",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        Si un producto cae bajo el requisito obligatorio de BIS India, debe
-        tener un certificado BIS y llevar la marca ISI antes de que pueda pasar
-        por aduanas indias.
+        หากผลิตภัณฑ์อยู่ภายใต้ข้อกำหนดบังคับของ BIS India ต้องมีใบรับรอง BIS
+        และแสดงเครื่องหมาย ISI ก่อนที่จะผ่านด่านศุลกากรอินเดีย
       </p>
 
       <h2 className="service-left-content-heading-three">
-        ¿Se requiere certificación BIS solo para importaciones?
+        ต้องใช้การรับรอง BIS เฉพาะการนำเข้าหรือไม่?
       </h2>
 
       <p className="service-left-content-paragraph">
-        No. La certificación BIS es obligatoria para:
+        ไม่ การรับรอง BIS เป็นข้อบังคับสำหรับ:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Fabricantes nacionales que producen productos regulados",
-          "Fabricantes extranjeros que exportan productos regulados a India",
+          "ผู้ผลิตในประเทศที่ผลิตผลิตภัณฑ์ที่ถูกควบคุม",
+          "ผู้ผลิตต่างประเทศที่ส่งออกผลิตภัณฑ์ที่ถูกควบคุมไปยังอินเดีย",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        Ya sea que esté ubicado en India o en el extranjero, si su producto está
-        en la lista obligatoria, debe tener una licencia BIS y mostrar la marca
-        ISI.
+        ไม่ว่าคุณจะอยู่ในอินเดียหรือต่างประเทศ
+        หากผลิตภัณฑ์ของคุณอยู่ในรายการบังคับ คุณต้องมีใบอนุญาต BIS
+        และแสดงเครื่องหมาย ISI
       </p>
 
       <p className="service-left-content-paragraph">
-        Las aduanas indias ahora usan sistemas de datos avanzados para marcar
-        automáticamente los envíos que no cumplen. Todos los bienes bajo
-        categorías reguladas son escaneados para verificar la presencia de un
-        certificado BIS válido.
+        ด่านศุลกากรอินเดียใช้ระบบข้อมูลขั้นสูงเพื่อทำเครื่องหมายการจัดส่งที่ไม่ปฏิบัติตามโดยอัตโนมัติ
+        สินค้าทั้งหมดภายใต้หมวดหมู่ที่ถูกควบคุมจะถูกสแกนเพื่อตรวจสอบการมีอยู่ของใบรับรอง
+        BIS ที่ถูกต้อง
       </p>
 
       <p className="service-left-content-paragraph">
-        Exenciones de la Certificación BIS
+        ข้อยกเว้นของการรับรอง BIS
       </p>
 
       <p className="service-left-content-paragraph">
-        La certificación BIS es obligatoria en la mayoría de los casos, pero se
-        pueden otorgar exenciones bajo escenarios específicos:
+        การรับรอง BIS เป็นข้อบังคับในกรณีส่วนใหญ่
+        แต่สามารถให้ข้อยกเว้นภายใต้สถานการณ์เฉพาะ:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Para prototipos de I+D o pruebas de muestra",
-          "Para importaciones personales de cantidad limitada",
+          "สำหรับต้นแบบ R&D หรือตัวอย่างทดสอบ",
+          "สำหรับการนำเข้าส่วนตัวจำนวนจำกัด",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        Sin embargo, estas son raras y requieren cartas de exención formales de
-        BIS o ministerios relacionados.
+        อย่างไรก็ตาม สิ่งเหล่านี้หายากและต้องมีจดหมายยกเว้นอย่างเป็นทางการจาก
+        BIS หรือกระทรวงที่เกี่ยวข้อง
       </p>
 
       <h2 className="service-left-content-heading-three">
-        ¿Cómo saber si su producto necesita certificado BIS o licencia BIS?
+        จะทราบได้อย่างไรว่าผลิตภัณฑ์ของคุณต้องใช้ใบรับรอง BIS หรือใบอนุญาต BIS?
       </h2>
 
       <p className="service-left-content-paragraph">
@@ -1295,10 +1287,10 @@ const StandardizationSection = () => {
             }
           }}
         >
-          Haciendo clic aquí
+          คลิกที่นี่
         </span>
-        Haga clic aquí para verificar si su producto está cubierto bajo el
-        esquema de certificación BIS India obligatorio.
+        คลิกที่นี่เพื่อตรวจสอบว่าผลิตภัณฑ์ของคุณครอบคลุมภายใต้โครงการรับรอง BIS
+        India บังคับหรือไม่
       </p>
     </div>
   );
@@ -1310,48 +1302,48 @@ const RepresentationSection = () => {
       {/* Representation */}
       <div className="flex w-full items-center gap-3">
         <span className="service-left-content-index-heading">
-          Representación
+          การเป็นตัวแทน
         </span>
         <Separator className="service-left-content-separator" />
       </div>
 
       {/* Title */}
       <h2 className="service-left-content-heading-two">
-        Rol del Representante Indio Autorizado (AIR) en la Certificación BIS
+        บทบาทของตัวแทนอินเดียที่ได้รับอนุญาต (AIR) ในการรับรอง BIS
       </h2>
 
       <h3 className="service-left-content-heading-three">
-        ¿Qué es un Representante Indio Autorizado (AIR)?
+        ตัวแทนอินเดียที่ได้รับอนุญาต (AIR) คืออะไร?
       </h3>
 
       <p className="service-left-content-paragraph">
-        Un Representante Indio Autorizado (AIR) es un intermediario crucial
-        designado por un fabricante extranjero que busca certificación BIS bajo
-        el esquema de registro FMCS. El AIR sirve como enlace oficial entre la
-        Oficina de Normas de la India (BIS) y el fabricante, asegurando una
-        comunicación fluida, manejo de documentación y coordinación del proceso
-        de certificación.
+        ตัวแทนอินเดียที่ได้รับอนุญาต (AIR)
+        เป็นตัวกลางที่สำคัญซึ่งได้รับการแต่งตั้งโดยผู้ผลิตต่างประเทศที่แสวงหาการรับรอง
+        BIS ภายใต้โครงการลงทะเบียน FMCS AIR
+        ทำหน้าที่เป็นตัวเชื่อมอย่างเป็นทางการระหว่างสำนักงานมาตรฐานอินเดีย (BIS)
+        กับผู้ผลิต เพื่อให้มั่นใจว่ามีการสื่อสารที่ราบรื่น การจัดการเอกสาร
+        และการประสานงานกระบวนการรับรอง
       </p>
 
       <h3 className="service-left-content-heading-three">
-        Requisito Legal para la Designación de AIR
+        ข้อกำหนดทางกฎหมายสำหรับการแต่งตั้ง AIR
       </h3>
 
       <p className="service-left-content-paragraph">
-        Según las directrices BIS, cualquier fabricante extranjero que no tenga
-        una oficina registrada en India debe designar un AIR. Este requisito
-        asegura que BIS tenga un punto de contacto confiable y accesible dentro
-        de la jurisdicción india.
+        ตามแนวทาง BIS ผู้ผลิตต่างประเทศใดๆ
+        ที่ไม่มีสำนักงานจดทะเบียนในอินเดียต้องแต่งตั้ง AIR
+        ข้อกำหนดนี้ทำให้มั่นใจว่า BIS
+        มีจุดติดต่อที่เชื่อถือได้และเข้าถึงได้ภายในเขตอำนาจของอินเดีย
       </p>
 
       <h3 className="service-left-content-heading-three">
-        Responsabilidades Clave del AIR
+        ความรับผิดชอบหลักของ AIR
       </h3>
 
       <p className="service-left-content-paragraph">
-        El rol del AIR abarca todo el proceso de certificación BIS, desde la
-        documentación y presentación de solicitudes hasta la coordinación de
-        auditorías y el cumplimiento post-certificación:
+        บทบาทของ AIR ครอบคลุมกระบวนการรับรอง BIS ทั้งหมด
+        ตั้งแต่การจัดทำเอกสารและการยื่นคำขอ
+        ไปจนถึงการประสานงานการตรวจสอบและการปฏิบัติตามหลังการรับรอง:
       </p>
 
       <div className="mt-6 md:mt-8 overflow-x-auto">
@@ -1359,57 +1351,53 @@ const RepresentationSection = () => {
           <TableHeader>
             <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                Responsabilidad
+                ความรับผิดชอบ
               </TableHead>
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
-                Descripción
+                คำอธิบาย
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Comunicación
+                การสื่อสาร
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Actúa como punto de contacto con funcionarios y departamentos de
+                ทำหน้าที่เป็นจุดติดต่อกับเจ้าหน้าที่และแผนกของ BIS
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                การสนับสนุนคำขอ
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                ช่วยกรอกแบบฟอร์ม รวบรวมเอกสาร และยื่นคำขอ
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                การประสานงานการตรวจสอบ
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                ประสานตารางการตรวจสอบโรงงานและตอบคำถามของผู้ตรวจสอบ
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-gray-50 transition-colors">
+              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
+                การตรวจสอบการปฏิบัติตาม
+              </TableCell>
+              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
+                ให้มั่นใจว่ากิจกรรมการทดสอบและการรับรองทั้งหมดปฏิบัติตามมาตรฐาน
                 BIS
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Soporte de Solicitud
+                การจัดการการต่ออายุ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Ayuda a completar formularios, compilar documentos y presentar
-                la solicitud
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50 transition-colors">
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Coordinación de Auditoría
-              </TableCell>
-              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Coordina los horarios de inspección de fábrica y responde a las
-                consultas del auditor
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50 transition-colors">
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Monitoreo de Cumplimiento
-              </TableCell>
-              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Asegura que todas las actividades de prueba y certificación
-                cumplan con las normas BIS
-              </TableCell>
-            </TableRow>
-            <TableRow className="hover:bg-gray-50 transition-colors">
-              <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Gestión de Renovación
-              </TableCell>
-              <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Supervisa la renovación de la licencia BIS, actualizaciones de
-                documentación y pagos de tarifas
+                ดูแลการต่ออายุใบอนุญาต BIS การอัปเดตเอกสารและการชำระค่าธรรมเนียม
               </TableCell>
             </TableRow>
           </TableBody>
@@ -1417,43 +1405,43 @@ const RepresentationSection = () => {
       </div>
 
       <h3 className="service-left-content-heading-three">
-        Criterios de Elegibilidad para Convertirse en AIR
+        เกณฑ์คุณสมบัติในการเป็น AIR
       </h3>
 
       <p className="service-left-content-paragraph">
-        Para servir como AIR, un individuo u organización debe:
+        เพื่อทำหน้าที่เป็น AIR บุคคลหรือองค์กรต้อง:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Ser un ciudadano indio o una entidad comercial legalmente registrada en India",
-          "Tener una dirección física en India con un código postal válido",
-          "Ser capaz de comunicarse con fluidez en inglés e idiomas locales",
-          "Comprender el esquema de certificación, protocolos de documentación BIS y expectativas regulatorias",
-          "Ser capaz de responder a auditorías y correspondencia oportunamente en nombre del fabricante extranjero",
+          "เป็นพลเมืองอินเดียหรือนิติบุคคลที่จดทะเบียนอย่างถูกกฎหมายในอินเดีย",
+          "มีที่อยู่ทางกายภาพในอินเดียพร้อมรหัสไปรษณีย์ที่ถูกต้อง",
+          "สามารถสื่อสารได้อย่างคล่องแคล่วทั้งภาษาอังกฤษและภาษาท้องถิ่น",
+          "เข้าใจโครงการรับรอง โปรโตคอลเอกสาร BIS และความคาดหวังด้านกฎระเบียบ",
+          "สามารถตอบสนองการตรวจสอบและการติดต่อได้ทันเวลานามผู้ผลิตต่างประเทศ",
         ]}
       />
 
       <h3 className="service-left-content-heading-three">
-        Por qué el Rol del AIR es Vital
+        ทำไมบทบาทของ AIR จึงสำคัญ
       </h3>
 
       <p className="service-left-content-paragraph">
-        El AIR asegura continuidad y responsabilidad a lo largo del proceso de
-        certificación BIS. Sin un AIR:
+        AIR ให้ความต่อเนื่องและความรับผิดชอบตลอดกระบวนการรับรอง BIS หากไม่มี
+        AIR:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "BIS no tiene jurisdicción para actuar contra un fabricante extranjero que no cumple",
-          "Las consultas urgentes y los horarios de auditoría pueden retrasarse",
-          "El proceso de certificación puede quedar estancado, revocado o rechazado",
+          "BIS ไม่มีเขตอำนาจในการดำเนินการกับผู้ผลิตต่างประเทศที่ไม่ปฏิบัติตาม",
+          "การสอบถามเร่งด่วนและตารางการตรวจสอบอาจล่าช้า",
+          "กระบวนการรับรองอาจหยุดชะงัก ถูกเพิกถอน หรือถูกปฏิเสธ",
         ]}
       />
 
       <p className="service-left-content-paragraph">
-        Un AIR proactivo y experimentado aumenta significativamente las
-        posibilidades de una certificación BIS exitosa.
+        AIR ที่กระตือรือร้นและมีประสบการณ์เพิ่มโอกาสในการรับรอง BIS
+        ที่ประสบความสำเร็จอย่างมาก
       </p>
     </div>
   );
@@ -1464,13 +1452,13 @@ const DocumentSection = () => {
     <div id="document" className="flex flex-col scroll-mt-20">
       {/* Document */}
       <div className="flex w-full items-center gap-3">
-        <span className="service-left-content-index-heading">Documento</span>
+        <span className="service-left-content-index-heading">เอกสาร</span>
         <Separator className="service-left-content-separator" />
       </div>
 
       {/* Title */}
       <h2 className="service-left-content-heading-two">
-        Documentación Requerida para Certificación BIS bajo FMCS
+        เอกสารที่จำเป็นสำหรับการรับรอง BIS ภายใต้ FMCS
       </h2>
 
       <div className="mt-6 md:mt-8 overflow-x-auto">
@@ -1478,92 +1466,92 @@ const DocumentSection = () => {
           <TableHeader>
             <TableRow className="bg-[#F9F7F2] hover:bg-[#F9F7F2]/80">
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300 text-[#1E1E1E]">
-                Tipo de Documento
+                ประเภทเอกสาร
               </TableHead>
               <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1E1E1E]">
-                Propósito
+                วัตถุประสงค์
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Formulario de Solicitud FMCS
+                แบบฟอร์มคำขอ FMCS
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Solicitud oficial de certificación
+                คำขอรับรองอย่างเป็นทางการ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Lista de Equipos de Fabricación
+                รายการอุปกรณ์การผลิต
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Muestra las capacidades de producción
+                แสดงความสามารถในการผลิต
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Lista de Materias Primas
+                รายการวัตถุดิบ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Asegura la calidad del material de entrada
+                รับประกันคุณภาพของวัสดุที่นำเข้า
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Lista de Equipos de Prueba
+                รายการอุปกรณ์ทดสอบ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Evalúa la preparación para pruebas y cumplimiento
+                ประเมินความพร้อมสำหรับการทดสอบและการปฏิบัติตาม
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Certificados de Calibración
+                ใบรับรองการสอบเทียบ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Prueba la precisión del equipo de prueba
+                พิสูจน์ความแม่นยำของอุปกรณ์ทดสอบ
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Diseño de Fábrica y Flujo de Proceso
+                การออกแบบโรงงานและแผนภาพกระบวนการ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Ayuda a los auditores a entender las etapas de fabricación
+                ช่วยให้ผู้ตรวจสอบเข้าใจขั้นตอนการผลิต
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Certificados de Prueba
+                ใบรับรองการทดสอบ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Prueba la calidad de materias primas y producto final
+                พิสูจน์คุณภาพของวัตถุดิบและผลิตภัณฑ์สุดท้าย
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Perfil de Control de Calidad
+                โปรไฟล์การควบคุมคุณภาพ
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Verifica las calificaciones del personal y los SOP
+                ตรวจสอบคุณสมบัติของบุคลากรและ SOP
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Comprobante de Pago
+                หลักฐานการชำระเงิน
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Valida el envío de tarifas a BIS
+                ตรวจสอบการส่งค่าธรรมเนียมไปยัง BIS
               </TableCell>
             </TableRow>
             <TableRow className="hover:bg-gray-50 transition-colors">
               <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200 text-[#42434d]">
-                Garantía Bancaria de Rendimiento
+                หนังสือค้ำประกันธนาคารเพื่อการปฏิบัติงาน
               </TableCell>
               <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-[#42434d]">
-                Actúa como garantía financiera para BIS
+                ทำหน้าที่เป็นหลักประกันทางการเงินสำหรับ BIS
               </TableCell>
             </TableRow>
           </TableBody>
@@ -1571,120 +1559,118 @@ const DocumentSection = () => {
       </div>
 
       <h3 className="service-left-content-heading-three">
-        Desglose Detallado de Cada documento requerido para certificación BIS
-        India
+        รายละเอียดของเอกสารแต่ละฉบับที่จำเป็นสำหรับการรับรอง BIS India
       </h3>
 
       <div className="service-left-content-heading-three">
-        1. Formulario de Solicitud FMCS
+        1. แบบฟอร์มคำขอ FMCS
       </div>
 
       <p className="service-left-content-paragraph">
-        Este documento proporciona detalles generales sobre el fabricante
-        extranjero, incluyendo:
+        เอกสารนี้ให้รายละเอียดทั่วไปเกี่ยวกับผู้ผลิตต่างประเทศ รวมถึง:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Detalles del producto (tipo, categoría, modelo)",
-          "Estándar Indio previsto",
-          "Detalles de contacto de fábrica y AIR",
-          "Capacidad de fabricación y alcance de pruebas",
+          "รายละเอียดผลิตภัณฑ์ (ประเภท หมวดหมู่ รุ่น)",
+          "มาตรฐานอินเดียที่ตั้งใจไว้",
+          "รายละเอียดการติดต่อของโรงงานและ AIR",
+          "ความสามารถในการผลิตและขอบเขตการทดสอบ",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        2. Lista de Equipos de Fabricación
+        2. รายการอุปกรณ์การผลิต
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "Nombre y marca de la máquina",
-          "Capacidad de producción",
-          "Detalles de contacto de fábrica y AIR",
-          "Registros de mantenimiento (si aplica)",
+          "ชื่อและยี่ห้อของเครื่องจักร",
+          "ความสามารถในการผลิต",
+          "รายละเอียดการติดต่อของโรงงานและ AIR",
+          "บันทึกการบำรุงรักษา (ถ้ามี)",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        3. Lista de Materias Primas
+        3. รายการวัตถุดิบ
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "Fuente de adquisición",
-          "Grados y especificaciones",
-          "Protocolo de prueba (si lo hay)",
+          "แหล่งที่มาของการจัดหา",
+          "เกรดและข้อกำหนด",
+          "โปรโตคอลการทดสอบ (ถ้ามี)",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        4. Lista de Equipos de Prueba
+        4. รายการอุปกรณ์ทดสอบ
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "Nombre del equipo y fabricante",
-          "Cumplimiento con parámetros de prueba en Estándar Indio",
-          "Ubicación dentro de la fábrica",
+          "ชื่ออุปกรณ์และผู้ผลิต",
+          "การปฏิบัติตามพารามิเตอร์การทดสอบในมาตรฐานอินเดีย",
+          "ตำแหน่งภายในโรงงาน",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        5. Certificados de Calibración
+        5. ใบรับรองการสอบเทียบ
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "Fecha de última calibración",
-          "Período de validez",
-          "Número de certificado",
+          "วันที่สอบเทียบล่าสุด",
+          "ระยะเวลาที่ใช้ได้",
+          "หมายเลขใบรับรอง",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        6. Diseño de Fábrica y Diagrama de Flujo de Proceso
+        6. การออกแบบโรงงานและแผนภาพกระบวนการ
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "Puntos de entrada y salida",
-          "Áreas de laboratorio de pruebas",
-          "Puntos de control de calidad",
-          "Secciones de almacenamiento y empaque",
+          "จุดเข้าและออก",
+          "พื้นที่ห้องปฏิบัติการทดสอบ",
+          "จุดควบคุมคุณภาพ",
+          "ส่วนจัดเก็บและบรรจุภัณฑ์",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        7. Garantía Bancaria de Rendimiento
+        7. หนังสือค้ำประกันธนาคารเพื่อการปฏิบัติงาน
       </div>
 
       <p className="service-left-content-paragraph">
-        Emitida por un banco indio aprobado por RBI, la Garantía Bancaria de
-        Rendimiento (PBG) cubre la responsabilidad en caso de incumplimiento.
-        Este documento debe:
+        ออกโดยธนาคารอินเดียที่ RBI อนุมัติ
+        หนังสือค้ำประกันธนาคารเพื่อการปฏิบัติงาน (PBG)
+        ครอบคลุมความรับผิดชอบในกรณีที่ไม่ปฏิบัติตาม เอกสารนี้ต้อง:
       </p>
 
       <PointsListWithoutHeading
         points={[
-          "Estar en papel membretado oficial del banco",
-          "Indicar el período de garantía y el monto",
-          "Estar firmado y sellado",
+          "อยู่บนกระดาษหัวจดหมายอย่างเป็นทางการของธนาคาร",
+          "ระบุระยะเวลาค้ำประกันและจำนวนเงิน",
+          "มีการลงนามและประทับตรา",
         ]}
       />
 
       <div className="service-left-content-heading-three">
-        Errores comunes de documentación a evitar al solicitar certificado BIS o
-        BIS India.
+        ข้อผิดพลาดทั่วไปของเอกสารที่ควรหลีกเลี่ยงเมื่อยื่นขอใบรับรอง BIS หรือ
+        BIS India
       </div>
 
       <PointsListWithoutHeading
         points={[
-          "Desajuste entre datos del formulario y la realidad de la fábrica",
-          "Enviar informes de calibración vencidos",
-          "Falta de comprobante de tarifa BIS",
-          "Flujos de proceso incompletos o vagos",
-          "Inconsistencias de nomenclatura entre documentos",
+          "ข้อมูลในแบบฟอร์มไม่ตรงกับความเป็นจริงของโรงงาน",
+          "ส่งรายงานการสอบเทียบที่หมดอายุ",
+          "ขาดหลักฐานค่าธรรมเนียม BIS",
+          "กระบวนการที่ไม่สมบูรณ์หรือคลุมเครือ",
+          "ความไม่สอดคล้องของชื่อระหว่างเอกสาร",
         ]}
       />
     </div>

@@ -33,6 +33,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
+import ServicesRightSideContentGerman from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentGerman";
 
 const PumpsAndLiquidElevatorsGerman = () => {
   return (
@@ -599,7 +600,8 @@ export const ServicesGerman = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
-                alt="CDSCO"
+                alt="CDSCO logo"
+                title="CDSCO logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -615,7 +617,8 @@ export const ServicesGerman = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
-                alt="BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -631,7 +634,8 @@ export const ServicesGerman = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
-                alt="PlasticWasteManagement"
+                alt="PlasticWasteManagement logo"
+                title="PlasticWasteManagement logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -647,7 +651,8 @@ export const ServicesGerman = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={EPRCertificate}
-                alt="EPRCertificate"
+                alt="EPRCertificate logo"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -663,7 +668,8 @@ export const ServicesGerman = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
-                alt="LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -696,7 +702,8 @@ export const ServicesGerman = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMark}
-                alt="ISIMark"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -757,7 +764,8 @@ const PumpsAndLiquidElevatorsGermanPageMainContent = () => {
         <PumpsAndLiquidElevatorsPageMainContentLeftGerman />
 
         {/* Right Side Content */}
-        <PumpsAndLiquidElevatorsPageMainContentRightGerman />
+        {/* <PumpsAndLiquidElevatorsPageMainContentRightGerman /> */}
+        <ServicesRightSideContentGerman/>
       </div>
     </div>
   );
@@ -779,6 +787,7 @@ const PumpsAndLiquidElevatorsPageMainContentLeftGerman = () => {
           <img
             src="/schemXproductImages/BIS-Scheme-X-License-For-Pumps.png"
             alt="BIS License for Pumps and Liquid Elevators"
+            title="BIS License for Pumps and Liquid Elevators"
             className="max-w-full h-auto rounded-lg shadow-md"
           />
         </div>
@@ -1197,205 +1206,4 @@ export const AboutAuthorGerman = () => {
   );
 };
 
-const PumpsAndLiquidElevatorsPageMainContentRightGerman = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    phoneNumber: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
 
-  // Get current page URL and name for form submission
-  const currentUrl = window.location.href;
-  const currentPageName =
-    "SchemeX Product - BIS Certification for Pumps & Liquid Elevators (German)";
-
-  // Add BASE_URL like other forms
-  const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
-
-    if (isSubmitting) return;
-
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      // Use BASE_URL like other forms
-      const response = await fetch(`${BASE_URL}/contact/submit-contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          pageUrl: currentUrl,
-          pageName: currentPageName,
-        }),
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setSubmitStatus({
-          type: "success",
-          message:
-            "Vielen Dank! Wir werden Sie innerhalb von 24 Stunden kontaktieren.",
-        });
-        setFormData({
-          fullName: "",
-          phoneNumber: "",
-          email: "",
-          message: "",
-        });
-      } else {
-        setSubmitStatus({
-          type: "error",
-          message:
-            "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-        });
-      }
-    } catch (error) {
-      console.error("Form submission error:", error);
-      setSubmitStatus({
-        type: "error",
-        message: "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  return (
-    <div className="flex flex-col gap-6 w-full md:w-[360px] ">
-      <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        {/* Header */}
-        <div className="flex gap-2 items-center">
-          <PhoneCall className="text-[#232327]" />
-          <div className="text-xl font-geist font-semibold text-[#232327]">
-            Kostenlosen Rückruf anfordern
-          </div>
-        </div>
-
-        {/* Intro Text */}
-        <p className="mt-3 text-sm text-gray-600 font-geist">
-          Hinterlassen Sie Ihre Daten unten und unsere Experten werden Sie
-          innerhalb von 24 Stunden zurückrufen, um Ihre regulatorischen
-          Compliance-Bedürfnisse zu besprechen.
-        </p>
-
-        {/* Status Message */}
-        {submitStatus && (
-          <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
-                ? "bg-green-50 text-green-700 border border-green-200"
-                : "bg-red-50 text-red-700 border border-red-200"
-            }`}
-          >
-            {submitStatus.message}
-          </div>
-        )}
-
-        {/* Form */}
-        <form onSubmit={handleFormSubmit} className="mt-5 space-y-4">
-          {/* Name Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <User className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="text"
-              name="fullName"
-              value={formData.fullName}
-              onChange={handleInputChange}
-              required
-              placeholder="Ihr Name*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
-          </div>
-
-          {/* Phone Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <Phone className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="tel"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleInputChange}
-              required
-              placeholder="Telefonnummer*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
-          </div>
-
-          {/* Email Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <Mail className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-              placeholder="E-Mail-Adresse*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
-          </div>
-
-          {/* Message Field */}
-          <div className="relative">
-            <div className="absolute top-3 left-3 pointer-events-none">
-              <MessageCircle className="h-5 w-5 text-gray-400" />
-            </div>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-              placeholder="Benötigte Zertifizierung*"
-              rows="3"
-              required
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            ></textarea>
-          </div>
-
-          <Button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <span className="relative z-10 flex items-center">
-              {isSubmitting ? "Wird gesendet..." : "Rückruf anfordern"}
-              <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </span>
-            <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-          </Button>
-        </form>
-
-        {/* Privacy Note */}
-        <p className="mt-3 text-xs text-center text-gray-500 font-geist">
-          Mit dem Absenden dieses Formulars stimmen Sie unserer{" "}
-          <a href="#" className="text-blue-600 hover:underline">
-            Datenschutzrichtlinie
-          </a>{" "}
-          zu und willigen ein, kontaktiert zu werden.
-        </p>
-      </div>
-    </div>
-  );
-};

@@ -597,7 +597,8 @@ export const ServicesKorean = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
-                alt="CDSCO"
+                alt="CDSCO logo"
+                title="CDSCO logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -613,7 +614,8 @@ export const ServicesKorean = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
-                alt="BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -629,7 +631,8 @@ export const ServicesKorean = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
-                alt="PlasticWasteManagement"
+                alt="PlasticWasteManagement logo"
+                title="PlasticWasteManagement logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -646,6 +649,7 @@ export const ServicesKorean = () => {
               <img
                 src={EPRCertificate}
                 alt="EPRCertificate"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -661,7 +665,8 @@ export const ServicesKorean = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
-                alt="LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -677,8 +682,8 @@ export const ServicesKorean = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISImage}
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="BIS logo"
+                title="BIS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -694,7 +699,8 @@ export const ServicesKorean = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMark}
-                alt="ISIMark"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -852,7 +858,8 @@ const PumpsAndLiquidElevatorsPageMainContentLeftKorean = () => {
         <div className="flex justify-center mb-6">
           <img
             src="/schemXproductImages/BIS-Scheme-X-License-For-Pumps.png"
-            alt="BIS License for Pumps and Liquid Elevators"
+            alt="BIS 펌프 및 액체 승강기 라이선스"
+            title="BIS 펌프 및 액체 승강기 라이선스"
             className="max-w-full h-auto rounded-lg shadow-md"
           />
         </div>

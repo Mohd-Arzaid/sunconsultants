@@ -40,6 +40,9 @@ const ServicesRightSideContentGerman = () => {
     "/de/was-ist-das-bis-zertifikat-indisches-bis",
     // BISFM German Page Url
     "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis",
+    // Schema X Certification for Pumps and Liquid Elevators
+    "/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege",
+
   ];
 
   // Check if current path should show these components
@@ -575,6 +578,9 @@ const ContactFormServicesRightSideContentGerman = () => {
       return "ISI Mark - German Page";
     if (path.includes("/de/was-ist-das-bis-zertifikat-indisches-bis"))
       return "BIS Certification (German)";
+
+    if (path.includes("/bis-schema-x-zertifizierung-fuer-pumpen-und-fluessigkeitsaufzuege"))
+      return "Schema X Certification for Pumps and Liquid Elevators (German)";
     if (
       path.includes(
         "/de/leitfaden-zur-bis-zertifizierung-fuer-auslaendische-hersteller-indisches-bis"
