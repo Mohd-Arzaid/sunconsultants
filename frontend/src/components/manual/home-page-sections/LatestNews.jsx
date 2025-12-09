@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { notifications } from "../../../data/notificationsData.js";
 import { getNotificationDetailUrl } from "../../../utils/urlUtils.js";
@@ -19,7 +19,11 @@ const LatestNews = () => {
 
   function addAnimation() {
     // React-friendly duplication approach - same as other marquees
-    const duplicated = [...latestNotifications, ...latestNotifications, ...latestNotifications];
+    const duplicated = [
+      ...latestNotifications,
+      ...latestNotifications,
+      ...latestNotifications,
+    ];
     setDuplicatedNotifications(duplicated);
 
     if (containerRef.current) {
@@ -49,7 +53,10 @@ const LatestNews = () => {
       const pixelsPerSecond = 50; // Same speed as other marquees
       const duration = totalWidth / pixelsPerSecond;
 
-      containerRef.current.style.setProperty("--animation-duration", `${duration}s`);
+      containerRef.current.style.setProperty(
+        "--animation-duration",
+        `${duration}s`
+      );
     }
   };
 
@@ -137,7 +144,9 @@ const LatestNews = () => {
           >
             <div
               ref={scrollerRef}
-              className={`flex gap-14 pr-14 items-center justify-center flex-none w-max ${start ? "animate-scroll" : ""} hover:[animation-play-state:paused]`}
+              className={`flex gap-14 pr-14 items-center justify-center flex-none w-max ${
+                start ? "animate-scroll" : ""
+              } hover:[animation-play-state:paused]`}
             >
               {duplicatedNotifications.map((notification, index) => (
                 <Link
@@ -146,7 +155,8 @@ const LatestNews = () => {
                   className="no-underline"
                 >
                   <span className="font-roboto tracking-wide text-lg md:text-xl font-medium text-[#005069] hover:text-blue-800 transition-colors duration-300 cursor-pointer">
-                    {notification.tagType === "New QCO" ? "🆕" : "📢"} {notification.title}
+                    {notification.tagType === "New QCO" ? "🆕" : "📢"}{" "}
+                    {notification.title}
                   </span>
                 </Link>
               ))}

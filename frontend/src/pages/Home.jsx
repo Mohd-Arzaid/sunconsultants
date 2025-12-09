@@ -3,7 +3,6 @@ import Footer from "@/common/Footer";
 import HomeSEO from "@/components/manual/home-page-sections/HomeSEO";
 import Hero from "@/components/manual/home-page-sections/Hero";
 import LogoTicker from "@/components/manual/home-page-sections/LogoTicker";
-import HomeServices from "@/components/manual/HomeServices";
 import AuditsMarqueeSkeleton from "@/components/ui/audits-marquee-skeleton";
 import WebinarSeminarMarqueeSkeleton from "@/components/ui/webinar-seminar-marquee-skeleton";
 import ContactHomeSkeleton from "@/components/ui/contact-home-skeleton";
@@ -140,6 +139,3 @@ const Home = ({ onVideoPopupChange }) => {
 };
 
 export default Home;
-
-// Export Services component for backward compatibility
-export const Services = HomeServices;
