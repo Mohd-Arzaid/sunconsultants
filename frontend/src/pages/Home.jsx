@@ -64,13 +64,21 @@ const Home = ({ onVideoPopupChange }) => {
   return (
     <main className="w-full">
       <HomeSEO />
-      <Hero />
-      <Suspense fallback={<LogoTickerSkeleton />}>
-        <LogoTicker />
-      </Suspense>
-      <Suspense fallback={<OurServicesSkeleton />}>
-        <OurServices />
-      </Suspense>
+      <section aria-label="Hero Section" className="w-full">
+        <Hero />
+      </section>
+
+      <section aria-label="Partner Logos" className="w-full">
+        <Suspense fallback={<LogoTickerSkeleton />}>
+          <LogoTicker />
+        </Suspense>
+      </section>
+
+      <section aria-label="Our Services" className="w-full">
+        <Suspense fallback={<OurServicesSkeleton />}>
+          <OurServices />
+        </Suspense>
+      </section>
 
       <section aria-label="International Audits Showcase" className="w-full">
         <Suspense fallback={<AuditsMarqueeSkeleton />}>
@@ -115,7 +123,9 @@ const Home = ({ onVideoPopupChange }) => {
       </section>
 
       <section aria-label="Partner Logos" className="w-full">
-        <LogoTicker />
+        <Suspense fallback={<LogoTickerSkeleton />}>
+          <LogoTicker />
+        </Suspense>
       </section>
 
       <section aria-label="Video Showcase" className="w-full">
