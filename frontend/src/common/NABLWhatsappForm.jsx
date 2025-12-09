@@ -3,12 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { ClockLoader } from "react-spinners";
-import { useTranslation } from "react-i18next";
-
 const WHATSAPP_NUMBER = "918010505057"; // <-- Apna WhatsApp number yahan daalein (country code ke saath)
 
 const NABLWhatsappForm = () => {
-  const { t } = useTranslation("BISFM");
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -84,18 +81,18 @@ const NABLWhatsappForm = () => {
     <div className="z-20 w-full md:w-[580px] h-auto md:h-[435px] flex flex-col">
       <div className="flex w-full items-center gap-3">
         <span className="uppercase font-poppins font-semibold text-[18px] md:text-[20px] text-[#008080]">
-          {t("contactForm.badge")}
+          Contact Us
         </span>
         <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
       </div>
 
       <h3 className="text-[30px] md:text-[48px] font-inter font-bold text-[#1E1E1E]">
-        {t("contactForm.title")}
+        Book an Appointment
       </h3>
 
       <p className="font-medium font-poppins text-[18px] md:text-[20px] text-[#996C6C]">
-        {t("contactForm.subtitle")}
-        <span className="text-black"> {t("contactForm.tryNow")}</span>
+        Want to contact our team and schedule a call?
+        <span className="text-black"> Try Now</span>
       </p>
 
       <form
@@ -110,7 +107,7 @@ const NABLWhatsappForm = () => {
             name="fullName"
             value={fullName}
             onChange={handleOnChange}
-            placeholder={t("contactForm.placeholders.fullName")}
+            placeholder="Full Name *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -121,7 +118,7 @@ const NABLWhatsappForm = () => {
             name="email"
             value={email}
             onChange={handleOnChange}
-            placeholder={t("contactForm.placeholders.email")}
+            placeholder="Email Address *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -134,7 +131,7 @@ const NABLWhatsappForm = () => {
             name="phoneNumber"
             value={phoneNumber}
             onChange={handleOnChange}
-            placeholder={t("contactForm.placeholders.phoneNumber")}
+            placeholder="Contact Number *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -145,7 +142,7 @@ const NABLWhatsappForm = () => {
             name="companyName"
             value={companyName}
             onChange={handleOnChange}
-            placeholder={t("contactForm.placeholders.companyName")}
+            placeholder="Company Name *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>
@@ -158,7 +155,7 @@ const NABLWhatsappForm = () => {
             name="productName"
             value={productName}
             onChange={handleOnChange}
-            placeholder={t("contactForm.placeholders.productName")}
+            placeholder="Product Name *"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
 
@@ -169,7 +166,7 @@ const NABLWhatsappForm = () => {
             name="message"
             value={message}
             onChange={handleOnChange}
-            placeholder={t("contactForm.placeholders.certification")}
+            placeholder="Required Certification*"
             className="disabled:opacity-100 w-full focus-visible:ring-1 focus-visible:ring-[#BDBDBD] focus-visible:ring-offset-0 bg-[#F9F9F9] border-2 border-[#BDBDBD] rounded-[12px] h-[54px] md:h-[58px] text-[#7E7E7E]/90 font-poppins font-semibold text-[15px] md:text-[16px] leading-[24px] tracking-wide px-5 placeholder:text-[#7E7E7E]/90 placeholder:font-poppins placeholder:font-semibold placeholder:leading-[24px] placeholder:tracking-wide"
           />
         </div>

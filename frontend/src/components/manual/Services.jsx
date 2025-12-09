@@ -7,18 +7,15 @@ import LMPC from "../../assets/images/LMPC.jpg";
 import ISIMark from "../../assets/images/ISIMark.jpg";
 import { BoxReveal } from "../magicui/box-reveal";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 export const Services = () => {
-  const { t } = useTranslation("Services");
-
   return (
     <div className="pt-6 md:pt-12 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
             <div className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
-              {t("title")}
+              Our Services
             </div>
           </BoxReveal>
 
@@ -26,7 +23,7 @@ export const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                {t("subtitle")}
+                India's Best Certificate Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -47,7 +44,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              {t("services.bisMarkForeign")}
+              BIS Mark (ISI License) for Foreign Manufacture
             </p>
           </Link>
 
@@ -64,7 +61,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              {t("services.cdscoRegistration")}
+              CDSCO Registration Certification
             </p>
           </Link>
 
@@ -81,7 +78,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              {t("services.bisRegistration")}
+              BIS (CRS) Registration
             </p>
           </Link>
 
@@ -98,7 +95,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              {t("services.plasticWasteManagement")}
+              Plastic Waste Management
             </p>
           </Link>
 
@@ -115,7 +112,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              {t("services.eprCertificate")}
+              EPR Certificate certifications
             </p>
           </Link>
 
@@ -132,7 +129,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              {t("services.lmpcCertificate")}
+              LMPC Certificate certifications
             </p>
           </Link>
 
@@ -149,7 +146,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              {t("services.bisRegistrationCertificate")}
+              BIS Registration Certificate
             </p>
           </Link>
 
@@ -166,7 +163,7 @@ export const Services = () => {
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              {t("services.isiMarkIndian")}
+              ISI MARK (BIS) for Indian Manufactures
             </p>
           </Link>
         </div>
