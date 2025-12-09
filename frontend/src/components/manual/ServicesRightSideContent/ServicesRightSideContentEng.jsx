@@ -148,6 +148,9 @@ const ServicesRightSideContentEng = () => {
     "/bis-vs-iso",
     // Q29
     "/can-foreign-companies-get-bis-certification",
+
+    // BIS CERTIFICATION PRODUCTS PATHS
+    "/bis-certification-for-bunk-beds",
   ];
 
   // Check if current path should show these components
@@ -969,6 +972,10 @@ const ContactFormServicesRightSideContentEng = () => {
     // Q29
     if (path.includes("/can-foreign-companies-get-bis-certification"))
       return "Can Foreign Companies Get BIS Certification - English Page";
+
+    // BIS CERTIFICATION PRODUCTS PATHS
+    if (path.includes("/bis-certification-for-bunk-beds"))
+      return "BIS Certificate for Bunk Beds - English Page";
   };
 
   const [formData, setFormData] = useState({
