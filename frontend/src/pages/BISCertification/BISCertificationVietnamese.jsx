@@ -725,7 +725,12 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Chứng nhận BIS là dấu hiệu chất lượng quốc gia của Ấn Độ được cấp bởi Cục Tiêu chuẩn Ấn Độ, cơ quan chứng nhận quốc gia của Ấn Độ thuộc Bộ Công vụ Người tiêu dùng. Chứng nhận BIS đảm bảo rằng một sản phẩm tuân thủ các Tiêu chuẩn Ấn Độ (IS) về hiệu suất, an toàn và chất lượng, cho phép các nhà sản xuất (Ấn Độ hoặc nước ngoài) sử dụng dấu hiệu tiêu chuẩn để tiếp cận thị trường, bao gồm kiểm tra và đánh giá.
+        Chứng nhận BIS là dấu hiệu chất lượng quốc gia của Ấn Độ được cấp bởi
+        Cục Tiêu chuẩn Ấn Độ, cơ quan chứng nhận quốc gia của Ấn Độ thuộc Bộ
+        Công vụ Người tiêu dùng. Chứng nhận BIS đảm bảo rằng một sản phẩm tuân
+        thủ các Tiêu chuẩn Ấn Độ (IS) về hiệu suất, an toàn và chất lượng, cho
+        phép các nhà sản xuất (Ấn Độ hoặc nước ngoài) sử dụng dấu hiệu tiêu
+        chuẩn để tiếp cận thị trường, bao gồm kiểm tra và đánh giá.
       </p>
       <p className="service-left-content-paragraph">
         Khi một sản phẩm đáp ứng các yêu cầu tiêu chuẩn chất lượng này, Cục Tiêu

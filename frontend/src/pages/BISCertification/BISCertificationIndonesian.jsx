@@ -724,7 +724,12 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Sertifikasi BIS adalah tanda kualitas nasional India yang dikeluarkan oleh Bureau of Indian Standards, badan sertifikasi nasional India di bawah Kementerian Urusan Konsumen. Sertifikasi BIS memastikan bahwa suatu produk mematuhi Standar India (IS) dalam hal kinerja, keamanan, dan kualitas, memungkinkan produsen (India atau asing) untuk menggunakan tanda standar untuk akses pasar, melibatkan pengujian dan audit.
+        Sertifikasi BIS adalah tanda kualitas nasional India yang dikeluarkan
+        oleh Bureau of Indian Standards, badan sertifikasi nasional India di
+        bawah Kementerian Urusan Konsumen. Sertifikasi BIS memastikan bahwa
+        suatu produk mematuhi Standar India (IS) dalam hal kinerja, keamanan,
+        dan kualitas, memungkinkan produsen (India atau asing) untuk menggunakan
+        tanda standar untuk akses pasar, melibatkan pengujian dan audit.
       </p>
       <p className="service-left-content-paragraph">
         Ketika suatu produk memenuhi persyaratan standar kualitas ini, Bureau of
