@@ -361,6 +361,11 @@ input:-webkit-autofill:active {
   backface-visibility: hidden;
 }
 
+/* Fast marquee for LogoTicker only */
+.logo-ticker-track {
+  animation: marquee 20s linear infinite;
+}
+
 /* Pause on hover */
 .marquee-container:hover .marquee-track {
   animation-play-state: paused;

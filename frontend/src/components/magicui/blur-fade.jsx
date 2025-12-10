@@ -1,5 +1,5 @@
-"use client";;
-import { AnimatePresence, motion, useInView } from "motion/react";
+"use client";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export function BlurFade({
@@ -33,7 +33,7 @@ export function BlurFade({
   };
   const combinedVariants = variant || defaultVariants;
   return (
-    (<AnimatePresence>
+    <AnimatePresence>
       <motion.div
         ref={ref}
         initial="hidden"
@@ -46,9 +46,10 @@ export function BlurFade({
           ease: "easeOut",
         }}
         className={className}
-        {...props}>
+        {...props}
+      >
         {children}
       </motion.div>
-    </AnimatePresence>)
+    </AnimatePresence>
   );
 }

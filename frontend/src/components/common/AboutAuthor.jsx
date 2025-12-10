@@ -1,9 +1,6 @@
 import { Mail, Linkedin } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 const AboutAuthor = () => {
-  const { t } = useTranslation("AboutAuthor");
-
   return (
     <section className="">
       <div className="relative overflow-hidden bg-gradient-to-br from-[#F9F7F2] via-white to-[#F9F7F2] border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
@@ -15,7 +12,7 @@ const AboutAuthor = () => {
           {/* Header */}
           <div className="flex items-center gap-3 mb-3">
             <div className="font-geist text-[18px] md:text-[22px] font-semibold text-[#1A8781]">
-              {t("title")}
+              About the Author
             </div>
             <div className="flex-1 h-[1px] bg-gradient-to-r from-[#1A8781]/20 to-transparent"></div>
           </div>
@@ -24,10 +21,10 @@ const AboutAuthor = () => {
             {/* Author name and title */}
             <div>
               <p className="font-geist text-[16px] md:text-[20px] font-semibold text-[#131316]">
-                {t("authorInfo.name")}
+                Dhruv Aggarwal
               </p>
               <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                {t("authorInfo.position")}
+                Head of Operations at Sun Certifications India
               </p>
             </div>
 
@@ -35,14 +32,14 @@ const AboutAuthor = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-4">
               <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                  <span className="font-medium">{t("experience.title")}:</span>{" "}
-                  {t("experience.details")}
+                  <span className="font-medium">Experience:</span> 10+ years &
+                  Handled 1000+ projects
                 </p>
               </div>
 
               <div className="flex items-center gap-3 p-3 bg-white/50 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-colors duration-200">
                 <p className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                  {t("achievements")}
+                  Awarded by many Indian and International organisations
                 </p>
               </div>
             </div>
@@ -51,28 +48,26 @@ const AboutAuthor = () => {
             <div className="pt-2 space-y-2">
               <div className="flex flex-col sm:flex-row gap-2">
                 <a
-                  href={t("contact.linkedin.url")}
+                  href="https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 p-3 bg-gradient-to-r from-[#0077B5]/5 to-[#0077B5]/10 hover:from-[#0077B5]/10 hover:to-[#0077B5]/15 rounded-lg border border-[#0077B5]/10 hover:border-[#0077B5]/20 transition-all duration-200"
                 >
                   <Linkedin className="w-4 h-4 text-[#0077B5]" />
                   <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                    <span className="font-medium">LinkedIn:</span>{" "}
-                    {t("contact.linkedin.text")}
+                    <span className="font-medium">LinkedIn:</span> Connect with
+                    me
                   </span>
                 </a>
 
                 <a
-                  href={`mailto:${t("contact.email.address")}`}
+                  href="mailto:admin@bis-certifications.com"
                   className="flex items-center gap-2 p-3 bg-gradient-to-r from-[#1A8781]/5 to-[#125E5A]/10 hover:from-[#1A8781]/10 hover:to-[#125E5A]/15 rounded-lg border border-[#1A8781]/10 hover:border-[#1A8781]/20 transition-all duration-200"
                 >
                   <Mail className="w-4 h-4 text-[#1A8781]" />
                   <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                    <span className="font-medium">
-                      {t("contact.email.label")}:
-                    </span>{" "}
-                    {t("contact.email.address")}
+                    <span className="font-medium">Contact:</span>{" "}
+                    admin@bis-certifications.com
                   </span>
                 </a>
               </div>
