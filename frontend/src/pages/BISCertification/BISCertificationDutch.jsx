@@ -727,12 +727,14 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS Certificering is een kwaliteitsborging en veiligheidscertificering
-        verstrekt door het Bureau of Indian Standards (BIS), de nationale
+        BIS certificering is het nationale kwaliteitsmerk van India, uitgegeven
+        door het Bureau of Indian Standards, de nationale
         certificeringsinstantie van India onder het Ministerie van
-        Consumentenaangelegenheden. De BIS certificering zorgt ervoor dat een
+        Consumentenaangelegenheden. BIS certificering zorgt ervoor dat een
         product voldoet aan de Indiase Standaarden (IS) met betrekking tot
-        prestaties, veiligheid en kwaliteit.
+        prestaties, veiligheid en kwaliteit, waardoor fabrikanten (Indiaas of
+        buitenlands) het standaardmerk kunnen gebruiken voor markttoegang,
+        waarbij testen en audits betrokken zijn.
       </p>
       <p className="service-left-content-paragraph">
         Wanneer een product aan deze kwaliteitsstandaardvereisten voldoet, geeft

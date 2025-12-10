@@ -702,10 +702,14 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        La certification BIS est une attestation de qualité et de sécurité
-        délivrée par le Bureau of Indian Standards (BIS), l’organisme national
-        de normalisation de l’Inde. Elle atteste la conformité aux Normes
-        Indiennes (IS) en matière de performance, de sécurité et de qualité.
+        La certification BIS est la marque de qualité nationale de l'Inde,
+        délivrée par le Bureau of Indian Standards, l'organisme national de
+        certification de l'Inde sous le ministère des Affaires des
+        consommateurs. La certification BIS garantit qu'un produit est conforme
+        aux Normes Indiennes (IS) en matière de performance, de sécurité et de
+        qualité, permettant aux fabricants (indiens ou étrangers) d'utiliser la
+        marque standard pour l'accès au marché, impliquant des tests et des
+        audits.
       </p>
       <p className="service-left-content-paragraph">
         Une fois les exigences remplies, le BIS délivre une licence ou un

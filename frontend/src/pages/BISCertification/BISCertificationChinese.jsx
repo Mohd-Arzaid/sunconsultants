@@ -707,7 +707,7 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS认证是由印度标准局（BIS）提供的质量保证和安全认证，BIS是印度消费者事务部下属的国家认证机构。BIS认证确保产品在性能、安全性和质量方面符合印度标准（IS）。
+        BIS认证是印度国家质量标志，由印度标准局（BIS）颁发，BIS是印度消费者事务部下属的国家认证机构。BIS认证确保产品在性能、安全性和质量方面符合印度标准（IS），允许制造商（印度或外国）使用标准标志进入市场，涉及测试和审核。
       </p>
       <p className="service-left-content-paragraph">
         当产品满足这些质量标准要求时，印度标准局会颁发BIS许可证或BIS证书，表明产品有资格使用ISI标志（适用于国内计划）或带有唯一注册号的CRS标志（根据BIS强制性注册计划）。

@@ -705,11 +705,14 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        Die BIS-Zertifizierung ist eine Qualitäts- und
-        Sicherheitszertifizierung, die vom Bureau of Indian Standards (BIS), der
-        nationalen Normungsorganisation Indiens, vergeben wird. Sie stellt
-        sicher, dass ein Produkt in Leistung, Sicherheit und Qualität den
-        indischen Normen (IS) entspricht.
+        Die BIS-Zertifizierung ist Indiens nationales Qualitätszeichen, das vom
+        Bureau of Indian Standards, der nationalen Zertifizierungsstelle Indiens
+        unter dem Ministerium für Verbraucherangelegenheiten, ausgestellt wird.
+        Die BIS-Zertifizierung stellt sicher, dass ein Produkt in Bezug auf
+        Leistung, Sicherheit und Qualität den indischen Normen (IS) entspricht
+        und ermöglicht es Herstellern (indisch oder ausländisch), das
+        Standardzeichen für den Marktzugang zu verwenden, wobei Tests und Audits
+        erforderlich sind.
       </p>
       <p className="service-left-content-paragraph">
         Erfüllt ein Produkt diese Anforderungen, stellt das BIS eine Lizenz bzw.

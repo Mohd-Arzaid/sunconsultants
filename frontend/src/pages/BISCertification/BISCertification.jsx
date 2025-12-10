@@ -724,12 +724,14 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS Certification is a quality assurance and safety certification
-        provided by the Bureau of Indian Standards (BIS), the national
-        certification body of India under the Ministry of Consumer Affairs. The
-        BIS certification ensures that a product conforms to the Indian
-        Standards (IS) in regard to performance, safety, and quality.
+        BIS certification is India's national quality mark issued by the Bureau
+        of Indian Standards, the national certification body of India under the
+        Ministry of Consumer Affairs. BIS certification ensures that a product
+        conforms to the Indian Standards (IS) in regard to performance, safety,
+        and quality, allowing manufacturers (Indian or foreign) to use the
+        standard mark for market access, involving testing and audits.
       </p>
+
       <p className="service-left-content-paragraph">
         When a product fulfills these quality standards requirements, the Bureau
         of Indian Standards issues a BIS license or BIS certificate, signifying
@@ -1562,7 +1564,7 @@ const BISCertificationFaq = () => {
     </section>
   );
 };
- 
+
 const LanguageSelector = () => {
   const location = useLocation();
   const currentPath = location.pathname;
