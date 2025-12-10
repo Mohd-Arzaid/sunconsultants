@@ -55,7 +55,7 @@ const BISFMDutch = () => {
       <MainContent />
       <ServiceFaq />
       <div id="product-table">
-        <BISFMProductTableDutch  />
+        <BISFMProductTableDutch />
       </div>
       <LanguageSelector />
       <div id="services">
@@ -2194,7 +2194,10 @@ export const ServiceFaq = () => {
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index + 1}`}>
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                  {faq.question}
+                  <div className="flex-1 text-left">
+                    <span className="mr-2 font-semibold">{index + 1}.</span>
+                    {faq.question}
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                   {faq.answer}
