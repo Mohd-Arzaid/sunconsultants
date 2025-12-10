@@ -1130,10 +1130,13 @@ const CRSRegistrationServiceFaq = () => {
 
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
-            {visibleFaqs.map((faq) => (
+            {visibleFaqs.map((faq, index) => (
               <AccordionItem key={faq.id} value={faq.id}>
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                  <h3>{faq.question}</h3>
+                  <div className="flex-1 text-left">
+                    <span className="mr-2 font-semibold">{index + 1}.</span>
+                    {faq.question}
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="font-geist text-[16px] md:text-[18px] text-[#5e5f6e]">
                   <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
