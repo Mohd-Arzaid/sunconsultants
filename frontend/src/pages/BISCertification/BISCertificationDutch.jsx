@@ -1416,133 +1416,133 @@ const SchemesSection = () => {
 const BISCertificationFaq = () => {
   const faqData = [
     {
-      question: "Wat is BIS certificering in India?",
+      question: "Wat is BIS-certificering in India?",
       answer:
-        "BIS certificering is een kwaliteitsborgingscertificering uitgegeven door het Bureau of Indian Standards (BIS) om ervoor te zorgen dat producten voldoen aan Indiase standaarden voor veiligheid, prestaties en kwaliteit. Het is verplicht voor verschillende productcategorieën en helpt bij consumentenbescherming en regelgevingsnaleving.",
+        "BIS-certificering is een kwaliteitsborgingscertificering uitgegeven door het Bureau of Indian Standards (BIS) om ervoor te zorgen dat producten voldoen aan Indiase normen voor veiligheid, prestaties en kwaliteit. Het is verplicht voor verschillende productcategorieën en helpt bij consumentenbescherming en regelgevingsnaleving.",
     },
     {
-      question: "Waarom heb ik een BIS certificaat nodig?",
+      question: "Waarom heb ik een BIS-certificaat nodig?",
       answer:
-        "Een BIS certificaat is essentieel om legaal bepaalde producten te produceren, importeren, distribueren of verkopen in India. Het verzekert consumenten dat het product voldoet aan de veiligheids- en kwaliteitsrichtlijnen van Indiase standaarden.",
+        "Een BIS-certificaat is essentieel om legaal bepaalde producten te fabriceren, importeren, distribueren of verkopen in India. Het verzekert consumenten dat het product voldoet aan de veiligheids- en kwaliteitsrichtlijnen van Indiase normen.",
     },
     {
-      question: "Wat is het ISI merk onder BIS certificering?",
+      question: "Wat is het ISI-merk onder BIS-certificering?",
       answer:
-        "Het ISI merk is een certificeringssymbool verstrekt onder het BIS certificeringsschema. Het geeft aan dat een product voldoet aan Indiase standaarden en is gecertificeerd door het Indiase BIS door middel van correcte testen en registratie.",
+        "Het ISI-merk is een certificeringssymbool dat wordt verstrekt onder het BIS-certificeringsschema. Het geeft aan dat een product voldoet aan Indiase normen en is gecertificeerd door het Indiase BIS door middel van juiste tests en registratie.",
     },
     {
-      question: "Wie geeft BIS licenties uit in India?",
+      question: "Wie geeft BIS-licenties af in India?",
       answer:
-        "BIS licenties worden uitgegeven door het Bureau of Indian Standards (Indiase BIS), de nationale standaardorganisatie onder het Ministerie van Consumentenaangelegenheden, Voedsel en Openbare Distributie.",
+        "BIS-licenties worden uitgegeven door het Bureau of Indian Standards (Indiaas BIS), de nationale normenorganisatie onder het Ministerie van Consumentenzaken, Voedsel en Openbare Distributie.",
     },
     {
-      question: "Wat zijn de verschillende soorten BIS certificeringsschema's?",
+      question: "Wat zijn de verschillende soorten BIS-certificeringsschema's?",
       answer:
-        "De belangrijkste BIS certificeringsschema's omvatten het ISI merk schema, Verplicht Registratieschema (CRS), Buitenlandse Fabrikanten Certificeringsschema (FMCS), Hallmarking voor sieraden, Eco Mark certificering, en wat is Schema X voor industriële machines.",
+        "De belangrijkste BIS-certificeringsschema's omvatten het ISI-merk schema, het Verplichte Registratieschema (CRS), het Certificeringsschema voor Buitenlandse Fabrikanten (FMCS), keurmerken voor sieraden, Eco Mark-certificering en wat is Schema X voor industriële machines.",
     },
     {
-      question: "Wat is Schema X onder BIS certificering?",
+      question: "Wat is Schema X onder BIS-certificering?",
       answer:
-        "Schema X is een vereenvoudigd BIS certificeringsproces van toepassing op industriële producten zoals pompen, transformatoren, gereedschapsmachines en kranen. Het zorgt voor snellere goedkeuring zonder in te boeten op naleving van Indiase standaarden.",
+        "Schema X is een vereenvoudigd BIS-certificeringsproces dat van toepassing is op industriële producten zoals pompen, transformatoren, gereedschapsmachines en kranen. Het zorgt voor snellere goedkeuring zonder de naleving van Indiase normen in gevaar te brengen.",
     },
     {
-      question: "Welke producten vereisen BIS certificering in India?",
+      question: "Welke producten vereisen BIS-certificering in India?",
       answer:
-        "Producten zoals elektrische apparaten, elektronica, keukengerei, cement, staal, goudsieraden, mobiele telefoons en transformatoren vereisen BIS certificering volgens het Indiase BIS-mandaat.",
+        "Producten zoals elektrische apparaten, elektronica, keukengerei, cement, staal, gouden sieraden, mobiele telefoons en transformatoren vereisen BIS-certificering volgens het Indiase BIS-mandaat.",
     },
     {
-      question: "Is BIS registratie verplicht voor alle producten?",
+      question: "Is BIS-registratie verplicht voor alle producten?",
       answer:
-        "Nee, BIS registratie is alleen verplicht voor producten die in het verplichte certificeringsschema staan. Er is echter ook vrijwillige BIS certificering beschikbaar om productgeloofwaardigheid te vergroten.",
+        "Nee, BIS-registratie is alleen verplicht voor producten die zijn opgenomen in het verplichte certificeringsschema. Vrijwillige BIS-certificering is echter ook beschikbaar om de productgeloofwaardigheid te vergroten.",
     },
     {
-      question: "Hoe lang is een BIS licentie geldig?",
+      question: "Hoe lang is een BIS-licentie geldig?",
       answer:
-        "Een BIS licentie is meestal geldig voor een tot twee jaar en moet vóór het verstrijken worden vernieuwd om het ISI merk te blijven gebruiken of de BIS registratiestatus te behouden.",
+        "Een BIS-licentie is doorgaans één tot twee jaar geldig en moet vóór het verstrijken worden vernieuwd om het ISI-merk te blijven gebruiken of de BIS-registratiestatus te behouden.",
     },
     {
-      question: "Wat zijn de stappen om BIS certificering te krijgen in India?",
+      question: "Wat zijn de stappen om BIS-certificering in India te krijgen?",
       answer:
-        "Het BIS certificeringsproces omvat het identificeren van toepasselijke Indiase standaarden, het indienen van een aanvraag, producttesten, fabrieksinspectie en het uitgeven van een BIS certificaat na goedkeuring.",
+        "Het BIS-certificeringsproces omvat het identificeren van toepasselijke Indiase normen, het indienen van een aanvraag, producttests, fabrieksinspectie en het uitgeven van een BIS-certificaat na goedkeuring.",
     },
     {
-      question: "Kunnen buitenlandse fabrikanten een BIS licentie aanvragen?",
+      question: "Kunnen buitenlandse fabrikanten een BIS-licentie aanvragen?",
       answer:
-        "Ja, onder het Buitenlandse Fabrikanten Certificeringsschema (FMCS) kunnen buitenlandse bedrijven een BIS licentie aanvragen om producten in India te verkopen. Ze moeten een Geautoriseerde Indiase Vertegenwoordiger (AIR) aanstellen.",
+        "Ja, onder het Certificeringsschema voor Buitenlandse Fabrikanten (FMCS) kunnen buitenlandse bedrijven een BIS-licentie aanvragen om producten in India te verkopen. Ze moeten een Geautoriseerde Indiase Vertegenwoordiger (AIR) aanstellen.",
     },
     {
-      question: "Wat is de rol van de AIR in BIS certificering?",
+      question: "Wat is de rol van de AIR in BIS-certificering?",
       answer:
-        "Een AIR (Geautoriseerde Indiase Vertegenwoordiger) fungeert als liaison tussen de buitenlandse fabrikant en het Indiase BIS. Ze zijn verantwoordelijk voor documentatie, communicatie en naleving van BIS certificeringsvereisten.",
+        "Een AIR (Geautoriseerde Indiase Vertegenwoordiger) fungeert als schakel tussen de buitenlandse fabrikant en het Indiase BIS. Ze zijn verantwoordelijk voor documentatie, communicatie en naleving van BIS-certificeringsvereisten.",
     },
     {
-      question: "Hoe kan ik online BIS registratie aanvragen?",
+      question: "Hoe kan ik online een BIS-registratie aanvragen?",
       answer:
-        "U kunt online BIS registratie aanvragen via de officiële BIS-portal. Het proces omvat formulierindiening, het uploaden van documenten, testrapporten en betaling van kosten.",
+        "U kunt online een BIS-registratie aanvragen via de officiële BIS-portal. Het proces omvat het indienen van formulieren, het uploaden van documenten, testrapporten en het betalen van vergoedingen.",
     },
     {
-      question: "Welke documenten zijn vereist voor een BIS certificaat?",
+      question: "Welke documenten zijn vereist voor een BIS-certificaat?",
       answer:
-        "Benodigde documenten zijn onder meer bedrijfslicentie, productspecificaties, productieproces, laboratoriumtestrapporten, fabriekslayout, kwaliteitshandboek en autorisatieformulieren (voor buitenlandse fabrikanten).",
+        "Benodigde documenten omvatten bedrijfsvergunning, productspecificaties, fabricageproces, laboratoriumtestrapporten, fabrieksindeling, kwaliteitshandboek en autorisatieformulieren (voor buitenlandse fabrikanten).",
     },
     {
-      question: "Hoeveel kost BIS certificering in India?",
+      question: "Hoeveel kost BIS-certificering in India?",
       answer:
-        "De kosten van BIS certificering zijn afhankelijk van het producttype, testvereisten, schematype (ISI, CRS, FMCS) en of de aanvrager binnenlands of buitenlands is. Kosten omvatten aanvraagkosten, testkosten en inspectiekosten.",
-    },
-    {
-      question:
-        "Is het ISI merk verplicht voor alle BIS-gecertificeerde producten?",
-      answer:
-        "Nee, alleen producten onder het ISI schema zijn verplicht om het ISI merk te dragen. Producten onder CRS of Hallmarking schema's volgen verschillende labelingsprotocollen volgens BIS registratienormen.",
+        "De kosten van BIS-certificering zijn afhankelijk van het producttype, testvereisten, schematype (ISI, CRS, FMCS) en of de aanvrager binnenlands of buitenlands is. Kosten omvatten aanvraagkosten, testkosten en inspectiekosten.",
     },
     {
       question:
-        "Kan ik BIS certificering krijgen voor milieuvriendelijke producten?",
+        "Is het ISI-merk verplicht voor alle BIS-gecertificeerde producten?",
       answer:
-        "Ja, producten die voldoen aan milieustandaarden kunnen BIS certificering krijgen onder het Eco Mark schema, dat zorgt voor naleving van Indiase standaarden voor milieuveiligheid.",
+        "Nee, alleen producten onder het ISI-schema zijn verplicht het ISI-merk te dragen. Producten onder CRS- of keurmerkschema's volgen verschillende labelprotocollen volgens BIS-registratienormen.",
     },
     {
       question:
-        "Wat is het verschil tussen BIS certificering en BIS registratie?",
+        "Kan ik BIS-certificering krijgen voor milieuvriendelijke producten?",
       answer:
-        "BIS certificering verwijst meestal naar de goedkeuring onder ISI, FMCS of Hallmarking schema's, terwijl BIS registratie vaak wordt geassocieerd met het CRS schema voor elektronische producten.",
+        "Ja, producten die voldoen aan milieunormen kunnen BIS-certificering krijgen onder het Eco Mark-schema, dat naleving van Indiase normen voor milieuveiligheid waarborgt.",
+    },
+    {
+      question:
+        "Wat is het verschil tussen BIS-certificering en BIS-registratie?",
+      answer:
+        "BIS-certificering verwijst over het algemeen naar goedkeuring onder ISI-, FMCS- of keurmerkschema's, terwijl BIS-registratie meestal wordt geassocieerd met het CRS-schema voor elektronische producten.",
     },
     {
       question: "Wat is het Verplichte Registratieschema (CRS)?",
       answer:
-        "CRS is een BIS registratieprogramma voor IT- en elektronische goederen zoals LED-verlichting, mobiele telefoons en power banks. Het zorgt ervoor dat producten voldoen aan veiligheidsgerelateerde Indiase standaarden.",
+        "CRS is een BIS-registratieprogramma voor IT- en elektronische goederen zoals LED-verlichting, mobiele telefoons en powerbanks. Het zorgt voor productnaleving van veiligheidsgerelateerde Indiase normen.",
     },
     {
-      question: "Betekenen ISI merk en BIS certificaat hetzelfde?",
+      question: "Betekenen het ISI-merk en BIS-certificaat hetzelfde?",
       answer:
-        "Niet precies. Het ISI merk is het symbool verleend aan gecertificeerde producten onder het BIS certificeringsschema. Een BIS certificaat is het juridische document uitgegeven aan de fabrikant.",
+        "Niet precies. Het ISI-merk is het symbool dat wordt verleend aan gecertificeerde producten onder het BIS-certificeringsschema. Een BIS-certificaat is het juridische document dat aan de fabrikant wordt uitgegeven.",
     },
     {
-      question: "Kan één BIS licentie meerdere producten dekken?",
+      question: "Kan één BIS-licentie meerdere producten dekken?",
       answer:
-        "Nee, een aparte BIS licentie is vereist voor elk producttype en elke productielocatie, zelfs als de producten vergelijkbaar zijn.",
+        "Nee, een aparte BIS-licentie is vereist voor elk producttype en elke productielocatie, zelfs als de producten vergelijkbaar zijn.",
     },
     {
       question:
-        "Wat gebeurt er als ik producten verkoop zonder BIS certificering?",
+        "Wat gebeurt er als ik producten verkoop zonder BIS-certificering?",
       answer:
-        "Het verkopen van producten die BIS certificering vereisen zonder een geldige BIS licentie is illegaal in India en kan leiden tot boetes, productterugroepacties of verboden.",
+        "Het verkopen van producten die BIS-certificering vereisen zonder een geldige BIS-licentie is illegaal in India en kan leiden tot boetes, productterugroepingen of verboden.",
     },
     {
-      question: "Hoe lang duurt het om BIS certificering te krijgen?",
+      question: "Hoe lang duurt het om BIS-certificering te krijgen?",
       answer:
-        "Het BIS certificeringsproces duurt meestal 30 tot 90 dagen, afhankelijk van het producttype, testvereisten en of de aanvrager binnenlands of buitenlands is.",
+        "Het BIS-certificeringsproces duurt doorgaans 30 tot 90 dagen, afhankelijk van het producttype, testvereisten en of de aanvrager binnenlands of buitenlands is.",
     },
     {
-      question: "Wordt BIS certificering wereldwijd geaccepteerd?",
+      question: "Wordt BIS-certificering wereldwijd geaccepteerd?",
       answer:
-        "Hoewel BIS certificering specifiek is voor India, verhoogt het de wereldwijde geloofwaardigheid door naleving van strenge Indiase standaarden te tonen. Sommige BIS-gecertificeerde producten worden ook geaccepteerd onder wederzijdse erkenningsovereenkomsten.",
+        "Hoewel BIS-certificering specifiek is voor India, verhoogt het de mondiale geloofwaardigheid door naleving van strenge Indiase normen te tonen. Sommige BIS-gecertificeerde producten worden ook geaccepteerd onder wederzijdse erkenningsovereenkomsten.",
     },
     {
-      question: "Hoe vaak moet ik mijn BIS licentie vernieuwen?",
+      question: "Hoe vaak moet ik mijn BIS-licentie vernieuwen?",
       answer:
-        "BIS licenties moeten jaarlijks of tweejaarlijks worden vernieuwd. Fabrikanten moeten naleving van Indiase standaarden behouden en toezichtscontroles doorstaan om hun BIS certificaat te vernieuwen.",
+        "BIS-licenties moeten jaarlijks of tweejaarlijks worden vernieuwd. Fabrikanten moeten naleving van Indiase normen handhaven en toezichtscontroles doorstaan om hun BIS-certificaat te vernieuwen.",
     },
   ];
 
@@ -1550,15 +1550,15 @@ const BISCertificationFaq = () => {
     <section
       id="faqs"
       className="my-2 scroll-mt-20"
-      aria-label="Veel Gestelde Vragen"
+      aria-label="Veelgestelde Vragen"
     >
       <div className="max-w-[88rem] mx-auto px-4 pt-5 pb-9 md:pb-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          FAQ's – BIS Certificering in India
+          Veelgestelde Vragen – BIS-certificering in India
         </h2>
 
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Kunt u het antwoord dat u zoekt niet vinden?{" "}
+          Kunt u het antwoord niet vinden waar u naar zoekt?{" "}
           <a
             href="/contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
@@ -1569,12 +1569,17 @@ const BISCertificationFaq = () => {
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index + 1}`}>
+              <AccordionItem
+                key={`faq-${index}-${faq.question
+                  .substring(0, 15)
+                  .replace(/\s+/g, "-")}`}
+                value={`item-${index + 1}`}
+              >
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                  <h3>
+                  <div className="flex-1 text-left">
                     <span className="mr-2 font-semibold">{index + 1}.</span>
                     {faq.question}
-                  </h3>
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                   {faq.answer}

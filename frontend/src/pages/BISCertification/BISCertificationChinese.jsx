@@ -1139,129 +1139,130 @@ const SchemesSection = () => {
 const BISCertificationFaq = () => {
   const faqData = [
     {
-      question: "什么是印度的BIS认证？",
+      question: "What is BIS certification in India?",
       answer:
-        "BIS认证是由印度标准局（BIS）颁发的质量保证认证，以确保产品符合印度在安全、性能和质量方面的标准。它对各种产品类别是强制性的，有助于消费者保护和法规合规。",
+        "BIS certification is a quality assurance certification issued by the Bureau of Indian Standards (BIS) to ensure that products comply with Indian standards for safety, performance, and quality. It is mandatory for various product categories and helps in consumer protection and regulatory compliance.",
     },
     {
-      question: "为什么我需要BIS证书？",
+      question: "Why do I need a BIS certificate?",
       answer:
-        "BIS证书对于在印度合法制造、进口、分销或销售某些产品至关重要。它向消费者保证产品符合印度标准的安全和质量指南。",
+        "A BIS certificate is essential to legally manufacture, import, distribute, or sell certain products in India. It assures consumers that the product meets the safety and quality guidelines of Indian standards.",
     },
     {
-      question: "BIS认证下的ISI标志是什么？",
+      question: "What is the ISI mark under BIS certification?",
       answer:
-        "ISI标志是BIS认证计划下提供的认证符号。它表明产品符合印度标准，并已通过印度BIS的适当测试和注册获得认证。",
+        "The ISI mark is a certification symbol provided under the BIS certification scheme. It indicates that a product complies with Indian standards and has been certified by the Indian BIS through proper testing and registration.",
     },
     {
-      question: "谁在印度颁发BIS许可证？",
+      question: "Who issues BIS licenses in India?",
       answer:
-        "BIS许可证由印度标准局（印度BIS）颁发，这是消费者事务、食品和公共分配部下属的国家标准机构。",
+        "BIS licenses are issued by the Bureau of Indian Standards (Indian BIS), the national standards body under the Ministry of Consumer Affairs, Food and Public Distribution.",
     },
     {
-      question: "BIS认证计划有哪些不同类型？",
+      question: "What are the different types of BIS certification schemes?",
       answer:
-        "主要的BIS认证计划包括ISI标志计划、强制性注册计划（CRS）、外国制造商认证计划（FMCS）、珠宝标志、生态标志认证，以及工业机械的X计划。",
+        "The major BIS certification schemes include the ISI mark scheme, Compulsory Registration Scheme (CRS), Foreign Manufacturers Certification Scheme (FMCS), Hallmarking for jewelry, Eco Mark certification, and what is Scheme X for industrial machinery.",
     },
     {
-      question: "BIS认证下的X计划是什么？",
+      question: "What is Scheme X under BIS certification?",
       answer:
-        "X计划是适用于工业产品的简化BIS认证流程，如泵、变压器、机床和起重机。它确保在不影响对印度标准合规性的情况下更快获得批准。",
+        "Scheme X is a simplified BIS certification process applicable to industrial products like pumps, transformers, machine tools, and cranes. It ensures quicker approval without compromising compliance to Indian standards.",
     },
     {
-      question: "哪些产品在印度需要BIS认证？",
+      question: "Which products require BIS certification in India?",
       answer:
-        "根据印度BIS的要求，电器、电子产品、厨具、水泥、钢铁、黄金珠宝、手机和变压器等产品需要BIS认证。",
+        "Products like electrical appliances, electronics, kitchenware, cement, steel, gold jewelry, mobile phones, and transformers require BIS certification as per the Indian BIS mandate.",
     },
     {
-      question: "所有产品都必须进行BIS注册吗？",
+      question: "Is BIS registration mandatory for all products?",
       answer:
-        "不，BIS注册仅对强制性认证计划中列出的产品是强制性的。但是，也可以选择自愿BIS认证以增强产品可信度。",
+        "No, BIS registration is mandatory only for products listed in the compulsory certification scheme. However, voluntary BIS certification is also available to enhance product credibility.",
     },
     {
-      question: "BIS许可证有效期多长？",
+      question: "How long is a BIS licence valid?",
       answer:
-        "BIS许可证通常有效期为一年到两年，必须在到期前续签才能继续使用ISI标志或维持BIS注册状态。",
+        "A BIS licence is typically valid for one to two years and must be renewed before its expiry to continue using the ISI mark or maintain BIS registration status.",
     },
     {
-      question: "在印度获得BIS认证的步骤是什么？",
+      question: "What are the steps to get BIS certification in India?",
       answer:
-        "BIS认证流程包括确定适用的印度标准、提交申请、产品测试、工厂检查，以及批准后颁发BIS证书。",
+        "The BIS certification process includes identifying applicable Indian standards, submitting an application, product testing, factory inspection, and issuance of a BIS certificate upon approval.",
     },
     {
-      question: "外国制造商可以申请BIS许可证吗？",
+      question: "Can foreign manufacturers apply for a BIS license?",
       answer:
-        "是的，根据外国制造商认证计划（FMCS），外国公司可以申请BIS许可证以在印度销售产品。他们必须指定授权印度代表（AIR）。",
+        "Yes, under the Foreign Manufacturers Certification Scheme (FMCS), foreign companies can apply for a BIS license to sell products in India. They must appoint an Authorized Indian Representative (AIR).",
     },
     {
-      question: "AIR在BIS认证中的作用是什么？",
+      question: "What is the role of the AIR in BIS certification?",
       answer:
-        "AIR（授权印度代表）充当外国制造商和印度BIS之间的联络人。他们负责文件、沟通以及遵守BIS认证要求。",
+        "An AIR (Authorized Indian Representative) acts as a liaison between the foreign manufacturer and the Indian BIS. They are responsible for documentation, communication, and compliance with BIS certification requirements.",
     },
     {
-      question: "如何在线申请BIS注册？",
+      question: "How can I apply for BIS registration online?",
       answer:
-        "您可以通过官方BIS门户在线申请BIS注册。该流程包括提交表格、上传文件、测试报告和支付费用。",
+        "You can apply for BIS registration online through the official BIS portal. The process involves form submission, uploading documents, test reports, and payment of fees.",
     },
     {
-      question: "BIS证书需要哪些文件？",
+      question: "What documents are required for a BIS certificate?",
       answer:
-        "所需文件包括营业执照、产品规格、制造流程、实验室测试报告、工厂布局、质量手册和授权表格（适用于外国制造商）。",
+        "Documents needed include business license, product specifications, manufacturing process, lab test reports, factory layout, quality manual, and authorization forms (for foreign manufacturers).",
     },
     {
-      question: "在印度BIS认证费用是多少？",
+      question: "How much does BIS certification cost in India?",
       answer:
-        "BIS认证的费用取决于产品类型、测试要求、计划类型（ISI、CRS、FMCS）以及申请人是国内还是国外。费用包括申请费、测试费和检查费用。",
+        "The cost of BIS certification depends on product type, testing requirements, scheme type (ISI, CRS, FMCS), and whether the applicant is domestic or foreign. Costs include application fees, testing charges, and inspection expenses.",
     },
     {
-      question: "所有BIS认证产品都必须使用ISI标志吗？",
+      question: "Is the ISI mark mandatory for all BIS-certified products?",
       answer:
-        "不，只有ISI计划下的产品才需要携带ISI标志。CRS或标志计划下的产品根据BIS注册规范遵循不同的标签协议。",
+        "No, only products under the ISI scheme are required to carry the ISI mark. Products under CRS or Hallmarking schemes follow different labeling protocols as per BIS registration norms.",
     },
     {
-      question: "我可以为环保产品获得BIS认证吗？",
+      question: "Can I get BIS certification for eco-friendly products?",
       answer:
-        "是的，符合环境标准的产品可以在生态标志计划下获得BIS认证，这确保符合印度在环境安全方面的标准。",
+        "Yes, products that meet environmental standards can get BIS certification under the Eco Mark scheme, which ensures compliance with Indian standards for environmental safety.",
     },
     {
-      question: "BIS认证和BIS注册有什么区别？",
+      question:
+        "What is the difference between BIS certification and BIS registration?",
       answer:
-        "BIS认证通常指在ISI、FMCS或标志计划下的批准，而BIS注册通常与电子产品的CRS计划相关。",
+        "BIS certification generally refers to the approval under ISI, FMCS, or Hallmarking schemes, while BIS registration is commonly associated with the CRS scheme for electronic products.",
     },
     {
-      question: "什么是强制性注册计划（CRS）？",
+      question: "What is the Compulsory Registration Scheme (CRS)?",
       answer:
-        "CRS是面向IT和电子产品的BIS注册计划，如LED灯、手机和移动电源。它确保产品符合与安全相关的印度标准。",
+        "CRS is a BIS registration program for IT and electronic goods like LED lights, mobile phones, and power banks. It ensures product compliance with safety-related Indian standards.",
     },
     {
-      question: "ISI标志和BIS证书是同一回事吗？",
+      question: "Do ISI mark and BIS certificate mean the same thing?",
       answer:
-        "不完全一样。ISI标志是授予BIS认证计划下认证产品的符号。BIS证书是颁发给制造商的法律文件。",
+        "Not exactly. The ISI mark is the symbol granted to certified products under the BIS certification scheme. A BIS certificate is the legal document issued to the manufacturer.",
     },
     {
-      question: "一个BIS许可证可以涵盖多个产品吗？",
+      question: "Can one BIS license cover multiple products?",
       answer:
-        "不，即使产品相似，每种产品类型和每个制造地点都需要单独的BIS许可证。",
+        "No, a separate BIS licence is required for each product type and each manufacturing location, even if the products are similar.",
     },
     {
-      question: "如果我在没有BIS认证的情况下销售产品会怎样？",
+      question: "What happens if I sell products without BIS certification?",
       answer:
-        "在没有有效BIS许可证的情况下销售需要BIS认证的产品在印度是非法的，可能导致罚款、产品召回或禁令。",
+        "Selling products that require BIS certification without a valid BIS licence is illegal in India and can lead to penalties, product recalls, or bans.",
     },
     {
-      question: "获得BIS认证需要多长时间？",
+      question: "How long does it take to get BIS certification?",
       answer:
-        "BIS认证流程通常需要30到90天，具体取决于产品类型、测试要求以及申请人是国内还是国外。",
+        "The BIS certification process generally takes 30 to 90 days, depending on the product type, testing requirements, and whether the applicant is domestic or foreign.",
     },
     {
-      question: "BIS认证在全球范围内被接受吗？",
+      question: "Is BIS certification accepted globally?",
       answer:
-        "虽然BIS认证是印度特有的，但它通过展示对严格印度标准的合规性来增强全球可信度。一些BIS认证的产品也在相互认可协议下被接受。",
+        "While BIS certification is specific to India, it enhances global credibility by showcasing compliance with stringent Indian standards. Some BIS-certified products are also accepted under mutual recognition agreements.",
     },
     {
-      question: "我需要多久更新一次BIS许可证？",
+      question: "How often do I need to renew my BIS license?",
       answer:
-        "BIS许可证必须每年或每两年更新一次。制造商必须保持对印度标准的合规性，并通过监督审计以更新其BIS证书。",
+        "BIS licenses must be renewed annually or biennially. Manufacturers must maintain compliance with Indian standards and pass surveillance audits to renew their BIS certificate.",
     },
   ];
 
@@ -1273,27 +1274,32 @@ const BISCertificationFaq = () => {
     >
       <div className="max-w-[88rem] mx-auto px-4 pt-5 pb-9 md:pb-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          常见问题 – 印度BIS认证
+          FAQs – BIS Certification in India
         </h2>
 
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          找不到您要找的答案？{" "}
+          Can't find the answer you are looking for?{" "}
           <a
             href="/contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
           >
-            联系我们！
+            Reach out to us!
           </a>
         </p>
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index + 1}`}>
+              <AccordionItem
+                key={`faq-${index}-${faq.question
+                  .substring(0, 15)
+                  .replace(/\s+/g, "-")}`}
+                value={`item-${index + 1}`}
+              >
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                  <h3>
+                  <div className="flex-1 text-left">
                     <span className="mr-2 font-semibold">{index + 1}.</span>
                     {faq.question}
-                  </h3>
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                   {faq.answer}

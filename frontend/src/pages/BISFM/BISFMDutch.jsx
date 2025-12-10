@@ -41,6 +41,7 @@ import BISCertificateImage from "../../assets/bisfmpageimage/biscertificate.png"
 import BISFMProductTable from "@/pages/BISFMProductTable/BISFMProductTable.jsx";
 import FooterDutch from "@/components/manual/Footer/FooterDutch";
 import ServiceAuthorDutch from "@/components/manual/ServiceAuthor/ServiceAuthorDutch";
+import BISFMProductTableDutch from "@/pages/BISFMProductTable/BISFMProductTableDutch.jsx";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -54,7 +55,7 @@ const BISFMDutch = () => {
       <MainContent />
       <ServiceFaq />
       <div id="product-table">
-        <BISFMProductTable />
+        <BISFMProductTableDutch  />
       </div>
       <LanguageSelector />
       <div id="services">

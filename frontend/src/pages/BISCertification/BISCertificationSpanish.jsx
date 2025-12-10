@@ -1162,48 +1162,132 @@ const BISCertificationFaq = () => {
     {
       question: "¿Qué es la certificación BIS en India?",
       answer:
-        "La certificación BIS es un sistema de aseguramiento de calidad emitido por el Bureau of Indian Standards para garantizar que los productos cumplan con las normas indias de seguridad, rendimiento y calidad.",
+        "La certificación BIS es una certificación de garantía de calidad emitida por el Bureau of Indian Standards (BIS) para garantizar que los productos cumplan con las normas indias de seguridad, rendimiento y calidad. Es obligatoria para diversas categorías de productos y ayuda en la protección del consumidor y el cumplimiento normativo.",
     },
     {
       question: "¿Por qué necesito un certificado BIS?",
       answer:
-        "Es necesario para fabricar, importar, distribuir o vender ciertos productos en India de forma legal. Genera confianza en los consumidores.",
+        "Un certificado BIS es esencial para fabricar, importar, distribuir o vender legalmente ciertos productos en India. Asegura a los consumidores que el producto cumple con las pautas de seguridad y calidad de las normas indias.",
     },
     {
       question: "¿Qué es la marca ISI bajo la certificación BIS?",
       answer:
-        "La marca ISI es el símbolo de que el producto cumple con las normas indias y ha sido certificado por el BIS mediante pruebas y registros adecuados.",
+        "La marca ISI es un símbolo de certificación proporcionado bajo el esquema de certificación BIS. Indica que un producto cumple con las normas indias y ha sido certificado por el BIS indio a través de pruebas y registro adecuados.",
     },
     {
       question: "¿Quién emite las licencias BIS en India?",
       answer:
-        "El Bureau of Indian Standards (BIS), el organismo nacional de normalización bajo el Ministerio de Asuntos del Consumidor.",
+        "Las licencias BIS son emitidas por el Bureau of Indian Standards (BIS indio), el organismo nacional de normalización bajo el Ministerio de Asuntos del Consumidor, Alimentación y Distribución Pública.",
     },
     {
-      question: "¿Cuáles son los diferentes esquemas de certificación BIS?",
+      question:
+        "¿Cuáles son los diferentes tipos de esquemas de certificación BIS?",
       answer:
-        "Incluyen el esquema de marca ISI, el Compulsory Registration Scheme (CRS), el Foreign Manufacturers Certification Scheme (FMCS), Hallmarking, Eco Mark y Scheme X.",
+        "Los principales esquemas de certificación BIS incluyen el esquema de marca ISI, el Esquema de Registro Obligatorio (CRS), el Esquema de Certificación de Fabricantes Extranjeros (FMCS), la punzonadura para joyería, la certificación Eco Mark y qué es el Esquema X para maquinaria industrial.",
+    },
+    {
+      question: "¿Qué es el Esquema X bajo la certificación BIS?",
+      answer:
+        "El Esquema X es un proceso de certificación BIS simplificado aplicable a productos industriales como bombas, transformadores, máquinas herramienta y grúas. Garantiza una aprobación más rápida sin comprometer el cumplimiento de las normas indias.",
     },
     {
       question: "¿Qué productos requieren certificación BIS en India?",
       answer:
-        "Electrodomésticos, electrónica, menaje, cemento, acero, joyería, teléfonos móviles, transformadores, entre otros.",
+        "Productos como electrodomésticos, electrónica, menaje, cemento, acero, joyería de oro, teléfonos móviles y transformadores requieren certificación BIS según el mandato del BIS indio.",
     },
     {
-      question: "¿Cuánto dura la validez de una licencia BIS?",
+      question: "¿Es obligatorio el registro BIS para todos los productos?",
       answer:
-        "Generalmente de uno a dos años; debe renovarse antes de su vencimiento.",
+        "No, el registro BIS es obligatorio solo para los productos listados en el esquema de certificación obligatoria. Sin embargo, también está disponible la certificación BIS voluntaria para mejorar la credibilidad del producto.",
     },
     {
-      question: "¿Cuáles son los pasos para obtener la certificación BIS?",
+      question: "¿Cuánto tiempo es válida una licencia BIS?",
       answer:
-        "Seleccionar la norma aplicable, presentar la solicitud, realizar pruebas, inspección de fábrica y emisión del certificado.",
+        "Una licencia BIS típicamente es válida por uno a dos años y debe renovarse antes de su vencimiento para continuar usando la marca ISI o mantener el estado de registro BIS.",
+    },
+    {
+      question:
+        "¿Cuáles son los pasos para obtener la certificación BIS en India?",
+      answer:
+        "El proceso de certificación BIS incluye identificar las normas indias aplicables, presentar una solicitud, pruebas de productos, inspección de fábrica y emisión de un certificado BIS tras la aprobación.",
     },
     {
       question:
         "¿Pueden los fabricantes extranjeros solicitar una licencia BIS?",
       answer:
-        "Sí, bajo el FMCS. Deben nombrar un Representante Autorizado en India (AIR).",
+        "Sí, bajo el Esquema de Certificación de Fabricantes Extranjeros (FMCS), las empresas extranjeras pueden solicitar una licencia BIS para vender productos en India. Deben nombrar un Representante Indio Autorizado (AIR).",
+    },
+    {
+      question: "¿Cuál es el papel del AIR en la certificación BIS?",
+      answer:
+        "Un AIR (Representante Indio Autorizado) actúa como enlace entre el fabricante extranjero y el BIS indio. Son responsables de la documentación, comunicación y cumplimiento de los requisitos de certificación BIS.",
+    },
+    {
+      question: "¿Cómo puedo solicitar el registro BIS en línea?",
+      answer:
+        "Puede solicitar el registro BIS en línea a través del portal oficial BIS. El proceso implica la presentación de formularios, carga de documentos, informes de prueba y pago de tarifas.",
+    },
+    {
+      question: "¿Qué documentos se requieren para un certificado BIS?",
+      answer:
+        "Los documentos necesarios incluyen licencia comercial, especificaciones del producto, proceso de fabricación, informes de prueba de laboratorio, diseño de fábrica, manual de calidad y formularios de autorización (para fabricantes extranjeros).",
+    },
+    {
+      question: "¿Cuánto cuesta la certificación BIS en India?",
+      answer:
+        "El costo de la certificación BIS depende del tipo de producto, requisitos de prueba, tipo de esquema (ISI, CRS, FMCS) y si el solicitante es nacional o extranjero. Los costos incluyen tarifas de solicitud, cargos de prueba y gastos de inspección.",
+    },
+    {
+      question:
+        "¿Es obligatoria la marca ISI para todos los productos certificados BIS?",
+      answer:
+        "No, solo los productos bajo el esquema ISI están obligados a llevar la marca ISI. Los productos bajo esquemas CRS o de punzonadura siguen diferentes protocolos de etiquetado según las normas de registro BIS.",
+    },
+    {
+      question: "¿Puedo obtener certificación BIS para productos ecológicos?",
+      answer:
+        "Sí, los productos que cumplen con los estándares ambientales pueden obtener certificación BIS bajo el esquema Eco Mark, que garantiza el cumplimiento de las normas indias para la seguridad ambiental.",
+    },
+    {
+      question:
+        "¿Cuál es la diferencia entre certificación BIS y registro BIS?",
+      answer:
+        "La certificación BIS generalmente se refiere a la aprobación bajo esquemas ISI, FMCS o de punzonadura, mientras que el registro BIS comúnmente se asocia con el esquema CRS para productos electrónicos.",
+    },
+    {
+      question: "¿Qué es el Esquema de Registro Obligatorio (CRS)?",
+      answer:
+        "El CRS es un programa de registro BIS para productos de TI y electrónicos como luces LED, teléfonos móviles y bancos de energía. Garantiza el cumplimiento del producto con las normas indias relacionadas con la seguridad.",
+    },
+    {
+      question: "¿La marca ISI y el certificado BIS significan lo mismo?",
+      answer:
+        "No exactamente. La marca ISI es el símbolo otorgado a los productos certificados bajo el esquema de certificación BIS. Un certificado BIS es el documento legal emitido al fabricante.",
+    },
+    {
+      question: "¿Puede una licencia BIS cubrir múltiples productos?",
+      answer:
+        "No, se requiere una licencia BIS separada para cada tipo de producto y cada ubicación de fabricación, incluso si los productos son similares.",
+    },
+    {
+      question: "¿Qué sucede si vendo productos sin certificación BIS?",
+      answer:
+        "Vender productos que requieren certificación BIS sin una licencia BIS válida es ilegal en India y puede llevar a sanciones, retiros de productos o prohibiciones.",
+    },
+    {
+      question: "¿Cuánto tiempo se tarda en obtener la certificación BIS?",
+      answer:
+        "El proceso de certificación BIS generalmente toma de 30 a 90 días, dependiendo del tipo de producto, requisitos de prueba y si el solicitante es nacional o extranjero.",
+    },
+    {
+      question: "¿Se acepta la certificación BIS globalmente?",
+      answer:
+        "Si bien la certificación BIS es específica para India, mejora la credibilidad global al demostrar el cumplimiento de estrictas normas indias. Algunos productos certificados BIS también se aceptan bajo acuerdos de reconocimiento mutuo.",
+    },
+    {
+      question: "¿Con qué frecuencia necesito renovar mi licencia BIS?",
+      answer:
+        "Las licencias BIS deben renovarse anualmente o bienalmente. Los fabricantes deben mantener el cumplimiento de las normas indias y pasar auditorías de vigilancia para renovar su certificado BIS.",
     },
   ];
 
@@ -1215,7 +1299,7 @@ const BISCertificationFaq = () => {
     >
       <div className="max-w-[88rem] mx-auto px-4 pt-5 pb-9 md:pb-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          FAQs – Certificación BIS en India
+          FAQ – Certificación BIS en India
         </h2>
 
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
@@ -1230,12 +1314,17 @@ const BISCertificationFaq = () => {
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index + 1}`}>
+              <AccordionItem
+                key={`faq-${index}-${faq.question
+                  .substring(0, 15)
+                  .replace(/\s+/g, "-")}`}
+                value={`item-${index + 1}`}
+              >
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                  <h3>
+                  <div className="flex-1 text-left">
                     <span className="mr-2 font-semibold">{index + 1}.</span>
                     {faq.question}
-                  </h3>
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                   {faq.answer}

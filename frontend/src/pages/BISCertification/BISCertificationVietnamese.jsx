@@ -1392,42 +1392,42 @@ const BISCertificationFaq = () => {
     {
       question: "Chứng nhận BIS ở Ấn Độ là gì?",
       answer:
-        "Chứng nhận BIS là chứng nhận đảm bảo chất lượng được cấp bởi Cục Tiêu chuẩn Ấn Độ (BIS) để đảm bảo rằng sản phẩm tuân thủ các tiêu chuẩn Ấn Độ về an toàn, hiệu suất và chất lượng. Nó là bắt buộc đối với các danh mục sản phẩm khác nhau và giúp bảo vệ người tiêu dùng và tuân thủ quy định.",
+        "Chứng nhận BIS là chứng nhận đảm bảo chất lượng do Cục Tiêu chuẩn Ấn Độ (BIS) cấp để đảm bảo rằng sản phẩm tuân thủ các tiêu chuẩn Ấn Độ về an toàn, hiệu suất và chất lượng. Đây là bắt buộc đối với nhiều loại sản phẩm và giúp bảo vệ người tiêu dùng cũng như tuân thủ quy định.",
     },
     {
-      question: "Tại sao tôi cần giấy chứng nhận BIS?",
+      question: "Tại sao tôi cần chứng nhận BIS?",
       answer:
-        "Giấy chứng nhận BIS là điều cần thiết để hợp pháp sản xuất, nhập khẩu, phân phối hoặc bán một số sản phẩm nhất định ở Ấn Độ. Nó đảm bảo cho người tiêu dùng rằng sản phẩm đáp ứng các hướng dẫn an toàn và chất lượng của tiêu chuẩn Ấn Độ.",
+        "Chứng nhận BIS là điều cần thiết để sản xuất, nhập khẩu, phân phối hoặc bán hợp pháp một số sản phẩm ở Ấn Độ. Nó đảm bảo cho người tiêu dùng rằng sản phẩm đáp ứng các hướng dẫn về an toàn và chất lượng của tiêu chuẩn Ấn Độ.",
     },
     {
       question: "Dấu ISI dưới chứng nhận BIS là gì?",
       answer:
-        "Dấu ISI là biểu tượng chứng nhận được cung cấp theo chương trình chứng nhận BIS. Nó chỉ ra rằng sản phẩm tuân thủ các tiêu chuẩn Ấn Độ và đã được chứng nhận bởi BIS Ấn Độ thông qua kiểm tra và đăng ký phù hợp.",
+        "Dấu ISI là biểu tượng chứng nhận được cung cấp theo chương trình chứng nhận BIS. Nó cho biết rằng sản phẩm tuân thủ các tiêu chuẩn Ấn Độ và đã được BIS Ấn Độ chứng nhận thông qua kiểm tra và đăng ký phù hợp.",
     },
     {
       question: "Ai cấp giấy phép BIS ở Ấn Độ?",
       answer:
-        "Giấy phép BIS được cấp bởi Cục Tiêu chuẩn Ấn Độ (BIS Ấn Độ), cơ quan tiêu chuẩn quốc gia thuộc Bộ Công vụ Người tiêu dùng, Thực phẩm và Phân phối Công cộng.",
+        "Giấy phép BIS được cấp bởi Cục Tiêu chuẩn Ấn Độ (BIS Ấn Độ), cơ quan tiêu chuẩn quốc gia thuộc Bộ Các vấn đề Người tiêu dùng, Thực phẩm và Phân phối Công cộng.",
     },
     {
       question: "Các loại chương trình chứng nhận BIS khác nhau là gì?",
       answer:
-        "Các chương trình chứng nhận BIS chính bao gồm chương trình dấu ISI, Chương trình Đăng ký Bắt buộc (CRS), Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS), Hallmarking cho trang sức, chứng nhận Eco Mark, và Scheme X là gì cho máy móc công nghiệp.",
+        "Các chương trình chứng nhận BIS chính bao gồm chương trình dấu ISI, Chương trình Đăng ký Bắt buộc (CRS), Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS), Đánh dấu cho trang sức, chứng nhận Eco Mark và Chương trình X cho máy móc công nghiệp.",
     },
     {
-      question: "Scheme X dưới chứng nhận BIS là gì?",
+      question: "Chương trình X dưới chứng nhận BIS là gì?",
       answer:
-        "Scheme X là quy trình chứng nhận BIS đơn giản hóa áp dụng cho các sản phẩm công nghiệp như máy bơm, máy biến áp, dụng cụ máy, và cần cẩu. Nó đảm bảo phê duyệt nhanh hơn mà không ảnh hưởng đến việc tuân thủ các tiêu chuẩn Ấn Độ.",
+        "Chương trình X là quy trình chứng nhận BIS đơn giản hóa áp dụng cho các sản phẩm công nghiệp như máy bơm, máy biến áp, dụng cụ máy và cần cẩu. Nó đảm bảo phê duyệt nhanh hơn mà không ảnh hưởng đến việc tuân thủ các tiêu chuẩn Ấn Độ.",
     },
     {
       question: "Sản phẩm nào cần chứng nhận BIS ở Ấn Độ?",
       answer:
-        "Các sản phẩm như thiết bị điện, thiết bị điện tử, đồ dùng nhà bếp, xi măng, thép, trang sức vàng, điện thoại di động, và máy biến áp yêu cầu chứng nhận BIS theo yêu cầu của BIS Ấn Độ.",
+        "Các sản phẩm như thiết bị điện, điện tử, đồ dùng nhà bếp, xi măng, thép, trang sức vàng, điện thoại di động và máy biến áp cần chứng nhận BIS theo quy định của BIS Ấn Độ.",
     },
     {
       question: "Đăng ký BIS có bắt buộc cho tất cả sản phẩm không?",
       answer:
-        "Không, đăng ký BIS chỉ bắt buộc đối với các sản phẩm được liệt kê trong chương trình chứng nhận bắt buộc. Tuy nhiên, chứng nhận BIS tự nguyện cũng có sẵn để tăng uy tín sản phẩm.",
+        "Không, đăng ký BIS chỉ bắt buộc đối với các sản phẩm được liệt kê trong chương trình chứng nhận bắt buộc. Tuy nhiên, chứng nhận BIS tự nguyện cũng có sẵn để nâng cao uy tín sản phẩm.",
     },
     {
       question: "Giấy phép BIS có hiệu lực trong bao lâu?",
@@ -1437,86 +1437,85 @@ const BISCertificationFaq = () => {
     {
       question: "Các bước để có được chứng nhận BIS ở Ấn Độ là gì?",
       answer:
-        "Quy trình chứng nhận BIS bao gồm xác định các tiêu chuẩn Ấn Độ áp dụng, nộp đơn, kiểm tra sản phẩm, thanh tra nhà máy, và cấp giấy chứng nhận BIS sau khi phê duyệt.",
+        "Quy trình chứng nhận BIS bao gồm xác định các tiêu chuẩn Ấn Độ áp dụng, nộp đơn đăng ký, kiểm tra sản phẩm, thanh tra nhà máy và cấp chứng nhận BIS sau khi được phê duyệt.",
     },
     {
       question:
         "Nhà sản xuất nước ngoài có thể nộp đơn xin giấy phép BIS không?",
       answer:
-        "Có, theo Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS), các công ty nước ngoài có thể nộp đơn xin giấy phép BIS để bán sản phẩm ở Ấn Độ. Họ phải bổ nhiệm một Đại diện Ấn Độ được Ủy quyền (AIR).",
+        "Có, theo Chương trình Chứng nhận Nhà sản xuất Nước ngoài (FMCS), các công ty nước ngoài có thể nộp đơn xin giấy phép BIS để bán sản phẩm ở Ấn Độ. Họ phải chỉ định một Đại diện Ấn Độ được Ủy quyền (AIR).",
     },
     {
       question: "Vai trò của AIR trong chứng nhận BIS là gì?",
       answer:
-        "AIR (Đại diện Ấn Độ được Ủy quyền) hoạt động như một người liên lạc giữa nhà sản xuất nước ngoài và BIS Ấn Độ. Họ chịu trách nhiệm về tài liệu, giao tiếp, và tuân thủ các yêu cầu chứng nhận BIS.",
+        "AIR (Đại diện Ấn Độ được Ủy quyền) hoạt động như một liên kết giữa nhà sản xuất nước ngoài và BIS Ấn Độ. Họ chịu trách nhiệm về tài liệu, giao tiếp và tuân thủ các yêu cầu chứng nhận BIS.",
     },
     {
       question: "Làm thế nào tôi có thể nộp đơn đăng ký BIS trực tuyến?",
       answer:
-        "Bạn có thể nộp đơn đăng ký BIS trực tuyến thông qua cổng thông tin chính thức của BIS. Quy trình bao gồm nộp biểu mẫu, tải lên tài liệu, báo cáo kiểm tra, và thanh toán phí.",
+        "Bạn có thể nộp đơn đăng ký BIS trực tuyến thông qua cổng thông tin BIS chính thức. Quy trình bao gồm nộp biểu mẫu, tải lên tài liệu, báo cáo kiểm tra và thanh toán phí.",
     },
     {
-      question: "Những tài liệu nào được yêu cầu cho giấy chứng nhận BIS?",
+      question: "Những tài liệu nào cần thiết cho chứng nhận BIS?",
       answer:
-        "Tài liệu cần thiết bao gồm giấy phép kinh doanh, thông số kỹ thuật sản phẩm, quy trình sản xuất, báo cáo kiểm tra phòng thí nghiệm, bố trí nhà máy, sổ tay chất lượng, và biểu mẫu ủy quyền (cho nhà sản xuất nước ngoài).",
+        "Các tài liệu cần thiết bao gồm giấy phép kinh doanh, thông số kỹ thuật sản phẩm, quy trình sản xuất, báo cáo kiểm tra phòng thí nghiệm, bố trí nhà máy, sổ tay chất lượng và biểu mẫu ủy quyền (cho nhà sản xuất nước ngoài).",
     },
     {
       question: "Chi phí chứng nhận BIS ở Ấn Độ là bao nhiêu?",
       answer:
-        "Chi phí chứng nhận BIS phụ thuộc vào loại sản phẩm, yêu cầu kiểm tra, loại chương trình (ISI, CRS, FMCS), và liệu người nộp đơn là trong nước hay nước ngoài. Chi phí bao gồm phí đăng ký, phí kiểm tra, và chi phí thanh tra.",
+        "Chi phí chứng nhận BIS phụ thuộc vào loại sản phẩm, yêu cầu kiểm tra, loại chương trình (ISI, CRS, FMCS) và người nộp đơn là trong nước hay nước ngoài. Chi phí bao gồm phí đăng ký, phí kiểm tra và chi phí thanh tra.",
     },
     {
       question:
         "Dấu ISI có bắt buộc cho tất cả sản phẩm được chứng nhận BIS không?",
       answer:
-        "Không, chỉ các sản phẩm dưới chương trình ISI được yêu cầu mang dấu ISI. Các sản phẩm dưới chương trình CRS hoặc Hallmarking tuân theo các giao thức dán nhãn khác nhau theo quy chuẩn đăng ký BIS.",
+        "Không, chỉ các sản phẩm dưới chương trình ISI mới được yêu cầu mang dấu ISI. Các sản phẩm dưới chương trình CRS hoặc Hallmarking tuân theo các giao thức ghi nhãn khác nhau theo quy chuẩn đăng ký BIS.",
     },
     {
       question:
-        "Tôi có thể có được chứng nhận BIS cho sản phẩm thân thiện với môi trường không?",
+        "Tôi có thể nhận chứng nhận BIS cho sản phẩm thân thiện với môi trường không?",
       answer:
-        "Có, các sản phẩm đáp ứng tiêu chuẩn môi trường có thể có được chứng nhận BIS theo chương trình Eco Mark, điều này đảm bảo tuân thủ các tiêu chuẩn Ấn Độ về an toàn môi trường.",
+        "Có, các sản phẩm đáp ứng tiêu chuẩn môi trường có thể nhận chứng nhận BIS dưới chương trình Eco Mark, đảm bảo tuân thủ các tiêu chuẩn Ấn Độ về an toàn môi trường.",
     },
     {
       question: "Sự khác biệt giữa chứng nhận BIS và đăng ký BIS là gì?",
       answer:
-        "Chứng nhận BIS thường đề cập đến việc phê duyệt theo các chương trình ISI, FMCS, hoặc Hallmarking, trong khi đăng ký BIS thường được liên kết với chương trình CRS cho sản phẩm điện tử.",
+        "Chứng nhận BIS thường đề cập đến sự phê duyệt dưới các chương trình ISI, FMCS hoặc Hallmarking, trong khi đăng ký BIS thường liên quan đến chương trình CRS cho sản phẩm điện tử.",
     },
     {
       question: "Chương trình Đăng ký Bắt buộc (CRS) là gì?",
       answer:
-        "CRS là chương trình đăng ký BIS cho hàng hóa IT và điện tử như đèn LED, điện thoại di động, và power banks. Nó đảm bảo sự tuân thủ sản phẩm với các tiêu chuẩn Ấn Độ liên quan đến an toàn.",
+        "CRS là chương trình đăng ký BIS cho hàng hóa IT và điện tử như đèn LED, điện thoại di động và pin dự phòng. Nó đảm bảo sản phẩm tuân thủ các tiêu chuẩn Ấn Độ liên quan đến an toàn.",
     },
     {
-      question:
-        "Dấu ISI và giấy chứng nhận BIS có nghĩa là cùng một thứ không?",
+      question: "Dấu ISI và chứng nhận BIS có nghĩa giống nhau không?",
       answer:
-        "Không hoàn toàn. Dấu ISI là biểu tượng được cấp cho các sản phẩm được chứng nhận theo chương trình chứng nhận BIS. Giấy chứng nhận BIS là tài liệu pháp lý được cấp cho nhà sản xuất.",
+        "Không hoàn toàn. Dấu ISI là biểu tượng được cấp cho các sản phẩm được chứng nhận dưới chương trình chứng nhận BIS. Chứng nhận BIS là tài liệu pháp lý được cấp cho nhà sản xuất.",
     },
     {
       question: "Một giấy phép BIS có thể bao gồm nhiều sản phẩm không?",
       answer:
-        "Không, một giấy phép BIS riêng biệt được yêu cầu cho mỗi loại sản phẩm và mỗi địa điểm sản xuất, ngay cả khi các sản phẩm tương tự.",
+        "Không, cần một giấy phép BIS riêng cho mỗi loại sản phẩm và mỗi địa điểm sản xuất, ngay cả khi các sản phẩm tương tự.",
     },
     {
       question: "Điều gì xảy ra nếu tôi bán sản phẩm không có chứng nhận BIS?",
       answer:
-        "Bán các sản phẩm yêu cầu chứng nhận BIS mà không có giấy phép BIS hợp lệ là bất hợp pháp ở Ấn Độ và có thể dẫn đến tiền phạt, thu hồi sản phẩm, hoặc lệnh cấm.",
+        "Bán sản phẩm yêu cầu chứng nhận BIS mà không có giấy phép BIS hợp lệ là bất hợp pháp ở Ấn Độ và có thể dẫn đến phạt, thu hồi sản phẩm hoặc cấm.",
     },
     {
       question: "Mất bao lâu để có được chứng nhận BIS?",
       answer:
-        "Quy trình chứng nhận BIS thường mất từ 30 đến 90 ngày, tùy thuộc vào loại sản phẩm, yêu cầu kiểm tra, và liệu người nộp đơn là trong nước hay nước ngoài.",
+        "Quy trình chứng nhận BIS thường mất 30 đến 90 ngày, tùy thuộc vào loại sản phẩm, yêu cầu kiểm tra và người nộp đơn là trong nước hay nước ngoài.",
     },
     {
       question: "Chứng nhận BIS có được chấp nhận trên toàn cầu không?",
       answer:
-        "Mặc dù chứng nhận BIS dành riêng cho Ấn Độ, nó tăng cường uy tín toàn cầu bằng cách thể hiện sự tuân thủ các tiêu chuẩn Ấn Độ nghiêm ngặt. Một số sản phẩm được chứng nhận BIS cũng được chấp nhận theo các thỏa thuận công nhận lẫn nhau.",
+        "Mặc dù chứng nhận BIS dành riêng cho Ấn Độ, nó nâng cao uy tín toàn cầu bằng cách thể hiện sự tuân thủ các tiêu chuẩn Ấn Độ nghiêm ngặt. Một số sản phẩm được chứng nhận BIS cũng được chấp nhận theo các thỏa thuận công nhận lẫn nhau.",
     },
     {
-      question: "Tôi cần gia hạn giấy phép BIS bao lâu một lần?",
+      question: "Tôi cần gia hạn giấy phép BIS thường xuyên như thế nào?",
       answer:
-        "Giấy phép BIS phải được gia hạn hàng năm hoặc hai năm một lần. Các nhà sản xuất phải duy trì tuân thủ các tiêu chuẩn Ấn Độ và vượt qua các cuộc kiểm tra giám sát để gia hạn giấy chứng nhận BIS của họ.",
+        "Giấy phép BIS phải được gia hạn hàng năm hoặc hai năm một lần. Các nhà sản xuất phải duy trì tuân thủ các tiêu chuẩn Ấn Độ và vượt qua các cuộc kiểm tra giám sát để gia hạn chứng nhận BIS của họ.",
     },
   ];
 
@@ -1524,11 +1523,11 @@ const BISCertificationFaq = () => {
     <section
       id="faqs"
       className="my-2 scroll-mt-20"
-      aria-label="Câu hỏi Thường gặp"
+      aria-label="Câu hỏi thường gặp"
     >
       <div className="max-w-[88rem] mx-auto px-4 pt-5 pb-9 md:pb-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          Câu hỏi Thường gặp – Chứng nhận BIS ở Ấn Độ
+          Câu hỏi thường gặp – Chứng nhận BIS ở Ấn Độ
         </h2>
 
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
@@ -1543,12 +1542,17 @@ const BISCertificationFaq = () => {
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index + 1}`}>
+              <AccordionItem
+                key={`faq-${index}-${faq.question
+                  .substring(0, 15)
+                  .replace(/\s+/g, "-")}`}
+                value={`item-${index + 1}`}
+              >
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                  <h3>
+                  <div className="flex-1 text-left">
                     <span className="mr-2 font-semibold">{index + 1}.</span>
                     {faq.question}
-                  </h3>
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                   {faq.answer}

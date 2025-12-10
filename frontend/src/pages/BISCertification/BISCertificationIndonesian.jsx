@@ -1398,17 +1398,17 @@ const BISCertificationFaq = () => {
     {
       question: "Apa itu sertifikasi BIS di India?",
       answer:
-        "Sertifikasi BIS adalah sertifikasi jaminan kualitas yang dikeluarkan oleh Bureau of Indian Standards (BIS) untuk memastikan bahwa produk mematuhi standar India untuk keamanan, kinerja, dan kualitas. Ini wajib untuk berbagai kategori produk dan membantu dalam perlindungan konsumen dan kepatuhan regulasi.",
+        "Sertifikasi BIS adalah sertifikasi jaminan kualitas yang dikeluarkan oleh Bureau of Indian Standards (BIS) untuk memastikan bahwa produk mematuhi standar India untuk keselamatan, kinerja, dan kualitas. Ini wajib untuk berbagai kategori produk dan membantu dalam perlindungan konsumen dan kepatuhan regulasi.",
     },
     {
       question: "Mengapa saya memerlukan sertifikat BIS?",
       answer:
-        "Sertifikat BIS sangat penting untuk secara legal memproduksi, mengimpor, mendistribusikan, atau menjual produk tertentu di India. Ini meyakinkan konsumen bahwa produk memenuhi pedoman keamanan dan kualitas standar India.",
+        "Sertifikat BIS sangat penting untuk secara legal memproduksi, mengimpor, mendistribusikan, atau menjual produk tertentu di India. Ini meyakinkan konsumen bahwa produk memenuhi pedoman keselamatan dan kualitas standar India.",
     },
     {
       question: "Apa itu tanda ISI di bawah sertifikasi BIS?",
       answer:
-        "Tanda ISI adalah simbol sertifikasi yang diberikan di bawah skema sertifikasi BIS. Ini menunjukkan bahwa produk mematuhi standar India dan telah disertifikasi oleh BIS India melalui pengujian dan registrasi yang tepat.",
+        "Tanda ISI adalah simbol sertifikasi yang disediakan di bawah skema sertifikasi BIS. Ini menunjukkan bahwa produk mematuhi standar India dan telah disertifikasi oleh BIS India melalui pengujian dan registrasi yang tepat.",
     },
     {
       question: "Siapa yang mengeluarkan lisensi BIS di India?",
@@ -1423,7 +1423,7 @@ const BISCertificationFaq = () => {
     {
       question: "Apa itu Skema X di bawah sertifikasi BIS?",
       answer:
-        "Skema X adalah proses sertifikasi BIS yang disederhanakan yang berlaku untuk produk industri seperti pompa, transformator, alat mesin, dan crane. Ini memastikan persetujuan yang lebih cepat tanpa mengorbankan kepatuhan terhadap standar India.",
+        "Skema X adalah proses sertifikasi BIS yang disederhanakan yang berlaku untuk produk industri seperti pompa, transformator, mesin perkakas, dan derek. Ini memastikan persetujuan yang lebih cepat tanpa mengorbankan kepatuhan terhadap standar India.",
     },
     {
       question: "Produk mana yang memerlukan sertifikasi BIS di India?",
@@ -1438,13 +1438,13 @@ const BISCertificationFaq = () => {
     {
       question: "Berapa lama lisensi BIS berlaku?",
       answer:
-        "Lisensi BIS biasanya berlaku selama satu hingga dua tahun dan harus diperpanjang sebelum berakhirnya untuk melanjutkan penggunaan tanda ISI atau mempertahankan status registrasi BIS.",
+        "Lisensi BIS biasanya berlaku selama satu hingga dua tahun dan harus diperpanjang sebelum kedaluwarsa untuk terus menggunakan tanda ISI atau mempertahankan status registrasi BIS.",
     },
     {
       question:
-        "Apa saja langkah-langkah untuk mendapatkan sertifikasi BIS di India?",
+        "Apa langkah-langkah untuk mendapatkan sertifikasi BIS di India?",
       answer:
-        "Proses sertifikasi BIS mencakup mengidentifikasi standar India yang berlaku, mengajukan aplikasi, pengujian produk, inspeksi pabrik, dan penerbitan sertifikat BIS setelah persetujuan.",
+        "Proses sertifikasi BIS meliputi mengidentifikasi standar India yang berlaku, mengajukan aplikasi, pengujian produk, inspeksi pabrik, dan penerbitan sertifikat BIS setelah persetujuan.",
     },
     {
       question: "Bisakah produsen asing mengajukan lisensi BIS?",
@@ -1454,49 +1454,48 @@ const BISCertificationFaq = () => {
     {
       question: "Apa peran AIR dalam sertifikasi BIS?",
       answer:
-        "AIR (Perwakilan India yang Berwenang) bertindak sebagai penghubung antara produsen asing dan BIS India. Mereka bertanggung jawab atas dokumentasi, komunikasi, dan kepatuhan dengan persyaratan sertifikasi BIS.",
+        "AIR (Perwakilan India yang Berwenang) bertindak sebagai penghubung antara produsen asing dan BIS India. Mereka bertanggung jawab atas dokumentasi, komunikasi, dan kepatuhan terhadap persyaratan sertifikasi BIS.",
     },
     {
-      question: "Bagaimana cara saya mengajukan registrasi BIS secara online?",
+      question: "Bagaimana saya bisa mengajukan registrasi BIS secara online?",
       answer:
-        "Anda dapat mengajukan registrasi BIS secara online melalui portal resmi BIS. Prosesnya melibatkan pengiriman formulir, mengunggah dokumen, laporan uji, dan pembayaran biaya.",
+        "Anda dapat mengajukan registrasi BIS secara online melalui portal BIS resmi. Prosesnya meliputi pengajuan formulir, mengunggah dokumen, laporan uji, dan pembayaran biaya.",
     },
     {
       question: "Dokumen apa yang diperlukan untuk sertifikat BIS?",
       answer:
-        "Dokumen yang diperlukan meliputi lisensi bisnis, spesifikasi produk, proses manufaktur, laporan uji lab, tata letak pabrik, manual kualitas, dan formulir otorisasi (untuk produsen asing).",
+        "Dokumen yang diperlukan meliputi lisensi bisnis, spesifikasi produk, proses manufaktur, laporan uji laboratorium, tata letak pabrik, manual kualitas, dan formulir otorisasi (untuk produsen asing).",
     },
     {
       question: "Berapa biaya sertifikasi BIS di India?",
       answer:
-        "Biaya sertifikasi BIS tergantung pada jenis produk, persyaratan pengujian, jenis skema (ISI, CRS, FMCS), dan apakah pemohon domestik atau asing. Biaya mencakup biaya aplikasi, biaya pengujian, dan biaya inspeksi.",
+        "Biaya sertifikasi BIS tergantung pada jenis produk, persyaratan pengujian, jenis skema (ISI, CRS, FMCS), dan apakah pemohon domestik atau asing. Biaya meliputi biaya aplikasi, biaya pengujian, dan biaya inspeksi.",
     },
     {
-      question:
-        "Apakah tanda ISI wajib untuk semua produk yang bersertifikat BIS?",
+      question: "Apakah tanda ISI wajib untuk semua produk bersertifikat BIS?",
       answer:
-        "Tidak, hanya produk di bawah skema ISI yang diwajibkan untuk membawa tanda ISI. Produk di bawah skema CRS atau Hallmarking mengikuti protokol pelabelan yang berbeda sesuai dengan norma registrasi BIS.",
+        "Tidak, hanya produk di bawah skema ISI yang diwajibkan membawa tanda ISI. Produk di bawah skema CRS atau Hallmarking mengikuti protokol pelabelan yang berbeda sesuai dengan norma registrasi BIS.",
     },
     {
       question:
         "Bisakah saya mendapatkan sertifikasi BIS untuk produk ramah lingkungan?",
       answer:
-        "Ya, produk yang memenuhi standar lingkungan dapat memperoleh sertifikasi BIS di bawah skema Eco Mark, yang memastikan kepatuhan dengan standar India untuk keamanan lingkungan.",
+        "Ya, produk yang memenuhi standar lingkungan dapat memperoleh sertifikasi BIS di bawah skema Eco Mark, yang memastikan kepatuhan terhadap standar India untuk keselamatan lingkungan.",
     },
     {
       question: "Apa perbedaan antara sertifikasi BIS dan registrasi BIS?",
       answer:
-        "Sertifikasi BIS umumnya mengacu pada persetujuan di bawah skema ISI, FMCS, atau Hallmarking, sedangkan registrasi BIS umumnya dikaitkan dengan skema CRS untuk produk elektronik.",
+        "Sertifikasi BIS umumnya mengacu pada persetujuan di bawah skema ISI, FMCS, atau Hallmarking, sementara registrasi BIS umumnya dikaitkan dengan skema CRS untuk produk elektronik.",
     },
     {
       question: "Apa itu Skema Registrasi Wajib (CRS)?",
       answer:
-        "CRS adalah program registrasi BIS untuk barang IT dan elektronik seperti lampu LED, ponsel, dan power bank. Ini memastikan kepatuhan produk dengan standar India yang terkait keamanan.",
+        "CRS adalah program registrasi BIS untuk barang IT dan elektronik seperti lampu LED, ponsel, dan power bank. Ini memastikan kepatuhan produk terhadap standar India yang terkait dengan keselamatan.",
     },
     {
       question: "Apakah tanda ISI dan sertifikat BIS berarti hal yang sama?",
       answer:
-        "Tidak persis. Tanda ISI adalah simbol yang diberikan kepada produk yang disertifikasi di bawah skema sertifikasi BIS. Sertifikat BIS adalah dokumen hukum yang dikeluarkan kepada produsen.",
+        "Tidak persis. Tanda ISI adalah simbol yang diberikan kepada produk bersertifikat di bawah skema sertifikasi BIS. Sertifikat BIS adalah dokumen hukum yang dikeluarkan untuk produsen.",
     },
     {
       question: "Bisakah satu lisensi BIS mencakup beberapa produk?",
@@ -1518,12 +1517,12 @@ const BISCertificationFaq = () => {
     {
       question: "Apakah sertifikasi BIS diterima secara global?",
       answer:
-        "Meskipun sertifikasi BIS spesifik untuk India, ini meningkatkan kredibilitas global dengan menunjukkan kepatuhan terhadap standar India yang ketat. Beberapa produk yang bersertifikat BIS juga diterima di bawah perjanjian saling pengakuan.",
+        "Meskipun sertifikasi BIS spesifik untuk India, ini meningkatkan kredibilitas global dengan menunjukkan kepatuhan terhadap standar India yang ketat. Beberapa produk bersertifikat BIS juga diterima di bawah perjanjian pengakuan timbal balik.",
     },
     {
       question: "Seberapa sering saya perlu memperpanjang lisensi BIS saya?",
       answer:
-        "Lisensi BIS harus diperpanjang setiap tahun atau setiap dua tahun. Produsen harus mempertahankan kepatuhan dengan standar India dan lulus audit pengawasan untuk memperpanjang sertifikat BIS mereka.",
+        "Lisensi BIS harus diperpanjang setiap tahun atau dua tahun sekali. Produsen harus mempertahankan kepatuhan terhadap standar India dan lulus audit pengawasan untuk memperpanjang sertifikat BIS mereka.",
     },
   ];
 
@@ -1531,11 +1530,11 @@ const BISCertificationFaq = () => {
     <section
       id="faqs"
       className="my-2 scroll-mt-20"
-      aria-label="Frequently Asked Questions"
+      aria-label="Pertanyaan yang Sering Diajukan"
     >
       <div className="max-w-[88rem] mx-auto px-4 pt-5 pb-9 md:pb-12">
         <h2 className="text-[32px] md:text-[48px] text-center font-geist font-semibold text-[#181818]">
-          Tanya Jawab – Sertifikasi BIS di India
+          FAQ – Sertifikasi BIS di India
         </h2>
 
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
@@ -1550,12 +1549,17 @@ const BISCertificationFaq = () => {
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index + 1}`}>
+              <AccordionItem
+                key={`faq-${index}-${faq.question
+                  .substring(0, 15)
+                  .replace(/\s+/g, "-")}`}
+                value={`item-${index + 1}`}
+              >
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                  <h3>
+                  <div className="flex-1 text-left">
                     <span className="mr-2 font-semibold">{index + 1}.</span>
                     {faq.question}
-                  </h3>
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                   {faq.answer}

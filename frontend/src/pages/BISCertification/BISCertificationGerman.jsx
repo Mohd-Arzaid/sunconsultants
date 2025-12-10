@@ -1174,56 +1174,131 @@ const BISCertificationFaq = () => {
     {
       question: "Was ist die BIS‑Zertifizierung in Indien?",
       answer:
-        "Die BIS‑Zertifizierung ist eine Qualitätszertifizierung des Bureau of Indian Standards (BIS). Sie stellt sicher, dass Produkte die indischen Normen für Sicherheit, Leistung und Qualität erfüllen.",
+        "Die BIS‑Zertifizierung ist eine Qualitätszertifizierung des Bureau of Indian Standards (BIS). Sie stellt sicher, dass Produkte die indischen Normen für Sicherheit, Leistung und Qualität erfüllen. Sie ist für verschiedene Produktkategorien verpflichtend und trägt zum Verbraucherschutz und zur gesetzlichen Konformität bei.",
     },
     {
       question: "Warum benötige ich ein BIS‑Zertifikat?",
       answer:
-        "Es ist erforderlich, um bestimmte Produkte in Indien herzustellen, zu importieren, zu vertreiben oder zu verkaufen. Es schafft Vertrauen und gewährleistet gesetzliche Konformität.",
+        "Es ist erforderlich, um bestimmte Produkte in Indien herzustellen, zu importieren, zu vertreiben oder zu verkaufen. Es schafft Vertrauen und gewährleistet gesetzliche Konformität. Es versichert Verbrauchern, dass das Produkt den Sicherheits- und Qualitätsrichtlinien der indischen Normen entspricht.",
     },
     {
       question: "Was bedeutet das ISI‑Zeichen?",
       answer:
-        "Das ISI‑Zeichen kennzeichnet Produkte, die unter den BIS‑Programmen zertifiziert wurden und die einschlägigen indischen Normen erfüllen.",
+        "Das ISI‑Zeichen kennzeichnet Produkte, die unter den BIS‑Programmen zertifiziert wurden und die einschlägigen indischen Normen erfüllen. Es zeigt an, dass ein Produkt den indischen Normen entspricht und vom indischen BIS durch ordnungsgemäße Prüfung und Registrierung zertifiziert wurde.",
     },
     {
       question: "Wer erteilt BIS‑Lizenzen?",
       answer:
-        "Das Bureau of Indian Standards (BIS), die nationale Normungsorganisation unter dem Verbraucherschutzministerium.",
+        "Das Bureau of Indian Standards (BIS), die nationale Normungsorganisation unter dem Verbraucherschutzministerium. BIS‑Lizenzen werden vom Bureau of Indian Standards (BIS) ausgestellt, der nationalen Normungsorganisation unter dem Ministerium für Verbraucherangelegenheiten, Ernährung und öffentliche Verteilung.",
     },
     {
       question: "Welche BIS‑Programme gibt es?",
       answer:
-        "Wichtige Programme sind: ISI‑Marke, Compulsory Registration Scheme (CRS), Foreign Manufacturers Certification Scheme (FMCS), Hallmarking, Eco Mark und Scheme X.",
+        "Wichtige Programme sind: ISI‑Marke, Compulsory Registration Scheme (CRS), Foreign Manufacturers Certification Scheme (FMCS), Hallmarking, Eco Mark und Scheme X. Zu den wichtigsten BIS‑Zertifizierungsprogrammen gehören das ISI‑Markenschema, das Compulsory Registration Scheme (CRS), das Foreign Manufacturers Certification Scheme (FMCS), Hallmarking für Schmuck, die Eco Mark‑Zertifizierung und Scheme X für Industriemaschinen.",
+    },
+    {
+      question: "Was ist Scheme X unter BIS‑Zertifizierung?",
+      answer:
+        "Scheme X ist ein vereinfachter BIS‑Zertifizierungsprozess für Industrieprodukte wie Pumpen, Transformatoren, Werkzeugmaschinen und Krane. Es gewährleistet eine schnellere Genehmigung, ohne die Einhaltung der indischen Normen zu beeinträchtigen.",
     },
     {
       question: "Welche Produkte benötigen eine BIS‑Zertifizierung?",
       answer:
-        "Unter anderem Elektrogeräte, Elektronik, Zement, Stahl, Schmuck, Mobiltelefone und Transformatoren – gemäß der indischen Regulierung.",
+        "Unter anderem Elektrogeräte, Elektronik, Zement, Stahl, Schmuck, Mobiltelefone und Transformatoren – gemäß der indischen Regulierung. Produkte wie Elektrogeräte, Elektronik, Küchengeräte, Zement, Stahl, Goldschmuck, Mobiltelefone und Transformatoren benötigen eine BIS‑Zertifizierung gemäß dem indischen BIS‑Mandat.",
+    },
+    {
+      question: "Ist die BIS‑Registrierung für alle Produkte verpflichtend?",
+      answer:
+        "Nein, die BIS‑Registrierung ist nur für Produkte verpflichtend, die im obligatorischen Zertifizierungsschema aufgeführt sind. Eine freiwillige BIS‑Zertifizierung ist jedoch ebenfalls verfügbar, um die Produktglaubwürdigkeit zu erhöhen.",
     },
     {
       question: "Wie lange ist eine BIS‑Lizenz gültig?",
-      answer: "In der Regel 1–2 Jahre; sie muss vor Ablauf verlängert werden.",
+      answer:
+        "In der Regel 1–2 Jahre; sie muss vor Ablauf verlängert werden. Eine BIS‑Lizenz ist in der Regel ein bis zwei Jahre gültig und muss vor Ablauf verlängert werden, um die ISI‑Marke weiterhin verwenden zu können oder den BIS‑Registrierungsstatus aufrechtzuerhalten.",
     },
     {
       question: "Wie läuft die BIS‑Zertifizierung ab?",
       answer:
-        "Norm wählen, Antrag stellen, Produktprüfungen, Werksinspektion, Zertifikatserteilung und laufende Überwachung.",
+        "Norm wählen, Antrag stellen, Produktprüfungen, Werksinspektion, Zertifikatserteilung und laufende Überwachung. Der BIS‑Zertifizierungsprozess umfasst die Identifizierung anwendbarer indischer Normen, die Einreichung eines Antrags, Produktprüfungen, Werksinspektionen und die Ausstellung eines BIS‑Zertifikats nach Genehmigung.",
     },
     {
       question: "Können ausländische Hersteller eine BIS‑Lizenz beantragen?",
       answer:
-        "Ja, über das FMCS. Es ist die Benennung eines Autorisierten Indischen Vertreters (AIR) erforderlich.",
+        "Ja, über das FMCS. Es ist die Benennung eines Autorisierten Indischen Vertreters (AIR) erforderlich. Unter dem Foreign Manufacturers Certification Scheme (FMCS) können ausländische Unternehmen eine BIS‑Lizenz beantragen, um Produkte in Indien zu verkaufen. Sie müssen einen Autorisierten Indischen Vertreter (AIR) benennen.",
+    },
+    {
+      question: "Welche Rolle spielt der AIR bei der BIS‑Zertifizierung?",
+      answer:
+        "Ein AIR (Autorisierter Indischer Vertreter) fungiert als Verbindung zwischen dem ausländischen Hersteller und dem indischen BIS. Er ist verantwortlich für Dokumentation, Kommunikation und Einhaltung der BIS‑Zertifizierungsanforderungen.",
+    },
+    {
+      question: "Wie kann ich mich online für die BIS‑Registrierung bewerben?",
+      answer:
+        "Sie können sich online über das offizielle BIS‑Portal für die BIS‑Registrierung bewerben. Der Prozess umfasst die Einreichung von Formularen, das Hochladen von Dokumenten, Prüfberichten und die Zahlung von Gebühren.",
     },
     {
       question: "Welche Dokumente sind nötig?",
       answer:
-        "Unternehmensunterlagen, Produktspezifikationen, Prozessfluss, Prüfberichte, Werkslayout, Qualitätsunterlagen; für Ausländer zusätzlich AIR‑Vollmachten.",
+        "Unternehmensunterlagen, Produktspezifikationen, Prozessfluss, Prüfberichte, Werkslayout, Qualitätsunterlagen; für Ausländer zusätzlich AIR‑Vollmachten. Benötigte Dokumente umfassen Gewerbelizenz, Produktspezifikationen, Fertigungsprozess, Laborprüfberichte, Werkslayout, Qualitätshandbuch und Vollmachtsformulare (für ausländische Hersteller).",
     },
     {
       question: "Was kostet die BIS‑Zertifizierung?",
       answer:
-        "Abhängig von Produkttyp, Prüfaufwand, Programm (ISI, CRS, FMCS) und Herkunft (inländisch/ausländisch): Antragsgebühren, Prüfkosten, Inspektionskosten etc.",
+        "Abhängig von Produkttyp, Prüfaufwand, Programm (ISI, CRS, FMCS) und Herkunft (inländisch/ausländisch): Antragsgebühren, Prüfkosten, Inspektionskosten etc. Die Kosten der BIS‑Zertifizierung hängen vom Produkttyp, den Prüfanforderungen, dem Schema (ISI, CRS, FMCS) und davon ab, ob der Antragsteller inländisch oder ausländisch ist. Die Kosten umfassen Antragsgebühren, Prüfkosten und Inspektionskosten.",
+    },
+    {
+      question:
+        "Ist die ISI‑Marke für alle BIS‑zertifizierten Produkte verpflichtend?",
+      answer:
+        "Nein, nur Produkte unter dem ISI‑Schema müssen die ISI‑Marke tragen. Produkte unter CRS‑ oder Hallmarking‑Schemata folgen unterschiedlichen Kennzeichnungsprotokollen gemäß den BIS‑Registrierungsnormen.",
+    },
+    {
+      question:
+        "Kann ich eine BIS‑Zertifizierung für umweltfreundliche Produkte erhalten?",
+      answer:
+        "Ja, Produkte, die Umweltstandards erfüllen, können unter dem Eco Mark‑Schema eine BIS‑Zertifizierung erhalten, die die Einhaltung der indischen Normen für Umweltsicherheit gewährleistet.",
+    },
+    {
+      question:
+        "Was ist der Unterschied zwischen BIS‑Zertifizierung und BIS‑Registrierung?",
+      answer:
+        "Die BIS‑Zertifizierung bezieht sich im Allgemeinen auf die Genehmigung unter ISI‑, FMCS‑ oder Hallmarking‑Schemata, während die BIS‑Registrierung häufig mit dem CRS‑Schema für Elektronikprodukte verbunden ist.",
+    },
+    {
+      question: "Was ist das Compulsory Registration Scheme (CRS)?",
+      answer:
+        "CRS ist ein BIS‑Registrierungsprogramm für IT‑ und Elektronikprodukte wie LED‑Leuchten, Mobiltelefone und Powerbanks. Es gewährleistet die Produktkonformität mit sicherheitsbezogenen indischen Normen.",
+    },
+    {
+      question: "Bedeuten ISI‑Marke und BIS‑Zertifikat dasselbe?",
+      answer:
+        "Nicht genau. Die ISI‑Marke ist das Symbol, das zertifizierten Produkten unter dem BIS‑Zertifizierungsschema gewährt wird. Ein BIS‑Zertifikat ist das rechtliche Dokument, das dem Hersteller ausgestellt wird.",
+    },
+    {
+      question: "Kann eine BIS‑Lizenz mehrere Produkte abdecken?",
+      answer:
+        "Nein, für jeden Produkttyp und jeden Fertigungsstandort ist eine separate BIS‑Lizenz erforderlich, auch wenn die Produkte ähnlich sind.",
+    },
+    {
+      question:
+        "Was passiert, wenn ich Produkte ohne BIS‑Zertifizierung verkaufe?",
+      answer:
+        "Der Verkauf von Produkten, die eine BIS‑Zertifizierung erfordern, ohne gültige BIS‑Lizenz ist in Indien illegal und kann zu Geldstrafen, Produktrückrufen oder Verboten führen.",
+    },
+    {
+      question: "Wie lange dauert es, eine BIS‑Zertifizierung zu erhalten?",
+      answer:
+        "Der BIS‑Zertifizierungsprozess dauert in der Regel 30 bis 90 Tage, abhängig vom Produkttyp, den Prüfanforderungen und davon, ob der Antragsteller inländisch oder ausländisch ist.",
+    },
+    {
+      question: "Wird die BIS‑Zertifizierung weltweit akzeptiert?",
+      answer:
+        "Während die BIS‑Zertifizierung spezifisch für Indien ist, erhöht sie die globale Glaubwürdigkeit, indem sie die Einhaltung strenger indischer Normen zeigt. Einige BIS‑zertifizierte Produkte werden auch unter gegenseitigen Anerkennungsvereinbarungen akzeptiert.",
+    },
+    {
+      question: "Wie oft muss ich meine BIS‑Lizenz verlängern?",
+      answer:
+        "BIS‑Lizenzen müssen jährlich oder alle zwei Jahre verlängert werden. Hersteller müssen die Einhaltung der indischen Normen aufrechterhalten und Überwachungsaudits bestehen, um ihr BIS‑Zertifikat zu verlängern.",
     },
   ];
 
@@ -1250,12 +1325,17 @@ const BISCertificationFaq = () => {
         <div className="w-full max-w-[1104px] mt-[16px] md:mt-[24px] mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index + 1}`}>
+              <AccordionItem
+                key={`faq-${index}-${faq.question
+                  .substring(0, 15)
+                  .replace(/\s+/g, "-")}`}
+                value={`item-${index + 1}`}
+              >
                 <AccordionTrigger className="font-geist text-[16px] md:text-[18px] text-[#3f3f46] font-medium">
-                  <h3>
+                  <div className="flex-1 text-left">
                     <span className="mr-2 font-semibold">{index + 1}.</span>
                     {faq.question}
-                  </h3>
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="font-geist text-[14px] md:text-[18px] text-[#5e5f6e]">
                   {faq.answer}
