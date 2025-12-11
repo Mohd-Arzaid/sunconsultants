@@ -151,6 +151,7 @@ const ServicesRightSideContentEng = () => {
 
     // BIS CERTIFICATION PRODUCTS PATHS
     "/bis-certification-for-bunk-beds-is-17636",
+    "/bis-certification-for-beds-is-17635",
   ];
 
   // Check if current path should show these components
@@ -976,6 +977,8 @@ const ContactFormServicesRightSideContentEng = () => {
     // BIS CERTIFICATION PRODUCTS PATHS
     if (path.includes("/bis-certification-for-bunk-beds-is-17636"))
       return "BIS Certificate for Bunk Beds - English Page";
+    if (path.includes("/bis-certification-for-beds-is-17635"))
+      return "BIS Certificate for Beds - English Page";
   };
 
   const [formData, setFormData] = useState({

@@ -17,7 +17,7 @@ import FooterSkeleton from "@/components/ui/footer-skeleton";
 // Lazy load OurServices component
 const OurServices = lazy(() =>
   import("@/components/manual/home-page-sections/OurServices")
-);
+); 
 
 // Lazy load AuditsMarquee component
 const AuditsMarquee = lazy(() =>

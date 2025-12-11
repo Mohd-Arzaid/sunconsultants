@@ -4,6 +4,7 @@ import BISCertificationProductsSkeleton from "@/components/ui/bis-certification-
 import BISCertificationProductsPageSkeleton from "@/components/ui/bis-certification-products-page-skeleton";
 import BISCertificationProducts from "../pages/BISCertificationProducts/BISCertificationProducts";
 import BISCertificateForBunkBeds from "../pages/BISCertificationProducts/BISCertificateForBunkBeds";
+import BISCertificateForBeds from "../pages/BISCertificationProducts/BISCertificateForBeds";
 
 const BISCertificationProductRoutes = () => {
   return (
@@ -21,6 +22,14 @@ const BISCertificationProductRoutes = () => {
         element={
           <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
             <BISCertificateForBunkBeds />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-beds-is-17635"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForBeds />
           </Suspense>
         }
       />
