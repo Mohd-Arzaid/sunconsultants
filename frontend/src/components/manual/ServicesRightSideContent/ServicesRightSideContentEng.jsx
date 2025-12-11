@@ -150,7 +150,7 @@ const ServicesRightSideContentEng = () => {
     "/can-foreign-companies-get-bis-certification",
 
     // BIS CERTIFICATION PRODUCTS PATHS
-    "/bis-certification-for-bunk-beds",
+    "/bis-certification-for-bunk-beds-is-17636",
   ];
 
   // Check if current path should show these components
@@ -974,7 +974,7 @@ const ContactFormServicesRightSideContentEng = () => {
       return "Can Foreign Companies Get BIS Certification - English Page";
 
     // BIS CERTIFICATION PRODUCTS PATHS
-    if (path.includes("/bis-certification-for-bunk-beds"))
+    if (path.includes("/bis-certification-for-bunk-beds-is-17636"))
       return "BIS Certificate for Bunk Beds - English Page";
   };
 

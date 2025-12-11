@@ -44,7 +44,7 @@ const products = [
     title: "BIS Certificate for Bunk Beds – IS 17636:2022",
     description:
       "Get BIS Certificate for bunk beds under IS 17636:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "bis-certification-for-bunk-beds",
+    slug: "bis-certification-for-bunk-beds-is-17636",
   },
 ];
 

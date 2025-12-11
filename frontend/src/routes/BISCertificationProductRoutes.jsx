@@ -17,7 +17,7 @@ const BISCertificationProductRoutes = () => {
         }
       />
       <Route
-        path="/bis-certification-for-bunk-beds"
+        path="/bis-certification-for-bunk-beds-is-17636"
         element={
           <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
             <BISCertificateForBunkBeds />
