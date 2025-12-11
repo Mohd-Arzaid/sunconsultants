@@ -66,7 +66,7 @@ import { NotificationsRoutes } from "./routes/NotificationsRoutes";
 import { BlogRoutes } from "./routes/BlogRoutes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
 import FaqsPageRoutes from "./routes/FaqsPageRoutes";
-import BISCertificateForBunkBeds from "./pages/BISCertificationProducts/BISCertificateForBunkBeds";
+import BISCertificationProductRoutes from "./routes/BISCertificationProductRoutes";
 
 // ============================================
 // Admin Routes (Commented out)
@@ -189,10 +189,6 @@ function App() {
         {/* SchemeX Products Routes */}
         <Route path="SchemeX-products" element={<SchemeXProducts />} />
         {SchemeXProductsRoutes()}
-        <Route
-          path="/bis-certification-for-bunk-beds"
-          element={<BISCertificateForBunkBeds />}
-        />
 
         {/* Legal Pages */}
         <Route
@@ -203,6 +199,10 @@ function App() {
             </Suspense>
           }
         />
+
+        {/* BIS Certification Products Routes */}
+        {BISCertificationProductRoutes()}
+
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
 
         {/* Error Pages */}

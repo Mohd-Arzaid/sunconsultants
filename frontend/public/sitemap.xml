@@ -3777,4 +3777,19 @@
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- Ministry Updates Pages - End -->
+
+  <!-- BIS Certification Products Pages Start -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-products</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- BIS Certificate for Bunk Beds - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-for-bunk-beds</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certification Products Pages End -->
 </urlset>
