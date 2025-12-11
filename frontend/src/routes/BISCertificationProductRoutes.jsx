@@ -5,6 +5,8 @@ import BISCertificationProductsPageSkeleton from "@/components/ui/bis-certificat
 import BISCertificationProducts from "../pages/BISCertificationProducts/BISCertificationProducts";
 import BISCertificateForBunkBeds from "../pages/BISCertificationProducts/BISCertificateForBunkBeds";
 import BISCertificateForBeds from "../pages/BISCertificationProducts/BISCertificateForBeds";
+import BISCertificateForStorageUnit from "../pages/BISCertificationProducts/BISCertificateForStorageUnit";
+import BISCertificateForTablesAndDesksUnit from "../pages/BISCertificationProducts/BISCertificateForTablesAndDesksUnit";
 
 const BISCertificationProductRoutes = () => {
   return (
@@ -30,6 +32,22 @@ const BISCertificationProductRoutes = () => {
         element={
           <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
             <BISCertificateForBeds />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-storage-unit-is-17634"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForStorageUnit />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-tables-&-desks-unit-is-17633"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForTablesAndDesksUnit />
           </Suspense>
         }
       />

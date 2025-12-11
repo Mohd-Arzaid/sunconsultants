@@ -54,6 +54,22 @@ const products = [
       "Get BIS Certificate for beds under IS 17635:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for manufacturers and importers.",
     slug: "bis-certification-for-beds-is-17635",
   },
+  {
+    id: 3,
+    color: "#8B5CF6", // Purple
+    title: "BIS Certificate for Storage Unit – IS 17634:2022",
+    description:
+      "Get BIS Certificate for Storage Unit under IS 17634:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for cabinets, wardrobes, and storage furniture.",
+    slug: "bis-certification-for-storage-unit-is-17634",
+  },
+  {
+    id: 4,
+    color: "#F59E0B", // Amber/Orange
+    title: "BIS Certificate for Tables & Desks – IS 17633:2022",
+    description:
+      "Get BIS Certificate for Tables & Desks under IS 17633:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
+    slug: "bis-certification-for-tables-&-desks-unit-is-17633",
+  },
 ];
 
 // =============================
