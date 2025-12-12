@@ -69,6 +69,14 @@ const BISCertificationProductRoutes = () => {
           </Suspense>
         }
       />
+      <Route
+        path="/bis-certification-for-welded-pipes-and-tubes-is-17876"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubes />
+          </Suspense>
+        }
+      />
     </>
   );
 };

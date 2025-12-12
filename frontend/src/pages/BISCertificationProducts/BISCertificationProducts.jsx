@@ -86,6 +86,14 @@ const products = [
       "Get BIS Certificate for bunk beds under IS 17636:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
     slug: "bis-certification-for-bunk-beds-is-17636",
   },
+  {
+    id: 7,
+    color: "#EC4899", // Pink
+    title: "BIS Certificate for Welded Pipes & Tubes – IS 17876:2022",
+    description:
+      "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for stainless steel welded pipes and tubes.",
+    slug: "bis-certification-for-welded-pipes-and-tubes-is-17876",
+  },
 ];
 
 // =============================
