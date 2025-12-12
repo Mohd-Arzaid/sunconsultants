@@ -1,26 +1,65 @@
-import { useState } from "react";
+import { useState, useCallback, memo } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+
+// Memoized Country Card Component for Mobile
+const CountryCardMobile = memo(({ country }) => {
+  return (
+    <div className=" md:hidden w-[280px] h-[280px] bg-[#B5DDEB] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  rounded-[12px] p-4 flex flex-col items-center justify-center flex-shrink-0">
+      <div className="w-full h-full flex items-center justify-center overflow-hidden">
+        <img
+          src={country.img}
+          alt={`BIS Certification Services in ${country.name} - Sun Certifications India`}
+          title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
+          className="w-auto h-full object-contain"
+          loading="lazy"
+        />
+      </div>
+
+      <div className="mt-3 px-1 flex items-center justify-between w-full">
+        <span className="flex text-base items-center font-bold justify-center gap-1">
+          <Star className="fill-current text-[#160E34]" size={16} />
+          <div className="tracking-wider  text-[#160E34] uppercase">
+            {country.name}
+          </div>
+        </span>
+      </div>
+    </div>
+  );
+});
+
+CountryCardMobile.displayName = "CountryCardMobile";
+
+// Memoized Country Card Component for Desktop
+const CountryCardDesktop = memo(({ country }) => {
+  return (
+    <div className="hidden w-[380px] h-[380px] bg-[#B5DDEB] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center">
+      <div className="w-full h-full flex items-center justify-center">
+        <img
+          src={country.img}
+          alt={`BIS Certification Services in ${country.name} - Sun Certifications India`}
+          title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
+          className={
+            country.name === "Thailand" ? "w-full h-full object-cover" : ""
+          }
+          loading="lazy"
+        />
+      </div>
+      <div className="mt-4 px-2 flex items-center justify-between w-full">
+        <span className="flex text-xl items-center font-bold justify-center gap-2">
+          <Star className="fill-current text-[#160E34]" size={20} />
+          <div className="tracking-widest text-[#160E34] uppercase">
+            {country.name}
+          </div>
+        </span>
+      </div>
+    </div>
+  );
+});
+
+CountryCardDesktop.displayName = "CountryCardDesktop";
 
 // Countries
 const Countries = () => {
-  const handlePreviousClick = () => {
-    setCountriesData((prev) => {
-      const newArray = [...prev];
-      const lastItem = newArray.pop();
-      newArray.unshift(lastItem);
-      return newArray;
-    });
-  };
-
-  const handleNextClick = () => {
-    setCountriesData((prev) => {
-      const newArray = [...prev];
-      const firstItem = newArray.shift();
-      newArray.push(firstItem);
-      return newArray;
-    });
-  };
-
   const [countriesData, setCountriesData] = useState([
     { name: "Thailand", img: "/countries-images/Thailand.webp" },
     { name: "Vietnam", img: "/countries-images/Vietnam.webp" },
@@ -45,6 +84,25 @@ const Countries = () => {
     { name: "USA", img: "/countries-images/USA.webp" },
     { name: "Denmark", img: "/countries-images/Denmark.webp" },
   ]);
+
+  // Memoize callbacks to prevent unnecessary re-renders
+  const handlePreviousClick = useCallback(() => {
+    setCountriesData((prev) => {
+      const newArray = [...prev];
+      const lastItem = newArray.pop();
+      newArray.unshift(lastItem);
+      return newArray;
+    });
+  }, []);
+
+  const handleNextClick = useCallback(() => {
+    setCountriesData((prev) => {
+      const newArray = [...prev];
+      const firstItem = newArray.shift();
+      newArray.push(firstItem);
+      return newArray;
+    });
+  }, []);
 
   return (
     <div className="relative bg-white py-12 md:py-0">
@@ -86,60 +144,13 @@ const Countries = () => {
           <div className="w-full px-0 md:px-[22px] py-3 md:pt-14 md:pb-10  overflow-hidden scrollbar-hide  [mask-image:linear-gradient(to_right,black_90%,transparent)]">
             <div className=" flex gap-4 md:gap-[22px] w-max ">
               {/* Mobile */}
-              {countriesData.map((country, index) => (
-                <div
-                  key={index}
-                  className=" md:hidden w-[280px] h-[280px] bg-[#B5DDEB] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]  rounded-[12px] p-4 flex flex-col items-center justify-center flex-shrink-0"
-                >
-                  <div className="w-full h-full flex items-center justify-center overflow-hidden">
-                    <img
-                      src={country.img}
-                      alt={`BIS Certification Services in ${country.name} - Sun Certifications India`}
-                      title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
-                      className="w-auto h-full object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-
-                  <div className="mt-3 px-1 flex items-center justify-between w-full">
-                    <span className="flex text-base items-center font-bold justify-center gap-1">
-                      <Star className="fill-current text-[#160E34]" size={16} />
-                      <div className="tracking-wider  text-[#160E34] uppercase">
-                        {country.name}
-                      </div>
-                    </span>
-                  </div>
-                </div>
+              {countriesData.map((country) => (
+                <CountryCardMobile key={country.name} country={country} />
               ))}
 
               {/* Desktop */}
-              {countriesData.map((country, index) => (
-                <div
-                  key={index}
-                  className="hidden w-[380px] h-[380px] bg-[#B5DDEB] shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-[12px] p-6 md:flex flex-col items-center justify-center"
-                >
-                  <div className="w-full h-full flex items-center justify-center">
-                    <img
-                      src={country.img}
-                      alt={`BIS Certification Services in ${country.name} - Sun Certifications India`}
-                      title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
-                      className={
-                        country.name === "Thailand"
-                          ? "w-full h-full object-cover"
-                          : ""
-                      }
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="mt-4 px-2 flex items-center justify-between w-full">
-                    <span className="flex text-xl items-center font-bold justify-center gap-2">
-                      <Star className="fill-current text-[#160E34]" size={20} />
-                      <div className="tracking-widest text-[#160E34] uppercase">
-                        {country.name}
-                      </div>
-                    </span>
-                  </div>
-                </div>
+              {countriesData.map((country) => (
+                <CountryCardDesktop key={country.name} country={country} />
               ))}
             </div>
           </div>
