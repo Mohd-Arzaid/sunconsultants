@@ -32,6 +32,7 @@ const ServicesRightSideContentKorean = () => {
   const showComponentsPaths = [
     // BISFM (FMCS - Foreign Manufacturers) Korean Page
     "/ko/indo-bis-waeoe-jejo-eopeul-wihan-bis-injeung-gaideu",
+    "/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi",
 
     "/hangug-ui-bis-injeung",
     "/ko/crs-bis-i-mueos-inga-crs-deunglog",
@@ -584,6 +585,8 @@ const ContactFormServicesRightSideContentKorean = () => {
     if (path.includes("/hangug-ui-bis-injeung")) return "Korea Blog (Korean)";
     if (path.includes("/ko/crs-bis-i-mueos-inga-crs-deunglog"))
       return "CRS Registration (Korean)";
+    if (path.includes("/bis-seukim-x-injeung-peomp-mich-aegche-seunggangi"))
+      return "Scheme X - Pumps and Liquid Elevators (Korean)";
     if (path.includes("/ko/bis-isi-mark-injeung"))
       return "ISI Mark - Korean Page";
     if (path.includes("/ko/bis-jeungmyeongseo-ga-mueos-indo-bis"))

@@ -30,7 +30,12 @@ const ServicesRightSideContentSpanish = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
-    "/what-is-crs-bis-or-crs-registration",
+    
+    "/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos",
+    "/certificacion-bis-scheme-x-para-compresores",
+
+     "/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico",
+    
     "/certificacion-bis-en-espana",
     "/es/que-es-crs-bis-o-registro-crs",
     // ISI Mark Spanish Page Url
@@ -562,10 +567,16 @@ const ContactFormServicesRightSideContentSpanish = () => {
   // Function to get page name based on URL
   const getPageName = () => {
     const path = window.location.pathname;
-    if (path.includes("/what-is-crs-bis-or-crs-registration"))
-      return "CRS Registration (Spanish)";
+  
+    if (path.includes("/certificacion-bis-esquema-x-para-bombas-y-elevadores-de-liquidos"))
+      return "BIS Schema X for Pumps and Liquid Elevators (Spanish)";
+
+    if (path.includes("/certificacion-bis-scheme-x-para-equipos-de-tratamiento-termico"))
+      return "Schema X Certification for Heat Treatment Equipment (Spanish)";
     if (path.includes("/certificacion-bis-en-espana"))
       return "Spain Blog (Spanish)";
+    if (path.includes("/certificacion-bis-scheme-x-para-compresores"))
+      return "Schema X Certification for Compressors (Spanish)";
     if (path.includes("/es/que-es-crs-bis-o-registro-crs"))
       return "CRS Registration (Spanish)";
     if (path.includes("/es/certificacion-bis-marca-isi"))

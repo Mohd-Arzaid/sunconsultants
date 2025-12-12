@@ -31,6 +31,8 @@ const ServicesRightSideContentGerman = () => {
 
   const showComponentsPaths = [
     "/de/bis-isi-mark-zertifizierung",
+
+    "/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung",
     
     "/bis-zertifizierung-in-deutschland",
     "/de/was-ist-crs-bis-oder-crs-registrierung",
@@ -570,6 +572,11 @@ const ContactFormServicesRightSideContentGerman = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration (German)";
+
+    if (path.includes("/bis-schema-x-zertifizierung-fuer-waermebehandlungsausruestung"))
+      return "Schema X Certification for Heat Treatment Equipment (German)";
+
+      
     if (path.includes("/bis-zertifizierung-in-deutschland"))
       return "Germany Blog German";
     if (path.includes("/de/was-ist-crs-bis-oder-crs-registrierung"))

@@ -30,7 +30,10 @@ const ServicesRightSideContentFrench = () => {
   const currentPath = location.pathname;
 
   const showComponentsPaths = [
-    "/what-is-crs-bis-or-crs-registration",
+   
+
+    "/certification-bis-schema-x-pour-equipements-de-traitement-thermique",
+    "/certification-bis-schema-x-pour-compresseurs",
     "/certification-bis-en-france",
     "/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs",
     // ISI Mark French Page Url
@@ -569,8 +572,14 @@ const ContactFormServicesRightSideContentFrench = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration (French)";
+
+    if (path.includes("/certification-bis-schema-x-pour-equipements-de-traitement-thermique"))
+      return "Schema X Certification for Heat Treatment Equipment (French)";
+
     if (path.includes("/certification-bis-en-france"))
       return "France Blog (French)";
+    if (path.includes("/certification-bis-schema-x-pour-compresseurs"))
+      return "Schema X Certification for Compressors (French)";
     if (path.includes("/fr/quest-ce-que-le-crs-bis-ou-lenregistrement-crs"))
       return "CRS Registration (French)";
     if (path.includes("/fr/certification-bis-marque-isi"))
