@@ -56,6 +56,14 @@ const products = [
   },
   {
     id: 3,
+    color: "#10B981", // Green
+    title: "BIS Certificate for Work Chairs – IS 17631:2022",
+    description:
+      "Get BIS Certificate for Work Chairs under IS 17631:2022. Complete compliance guide covering process, documents, testing requirements, fees, timeline, and benefits for BIS Certification in India. Mandatory for all manufacturers and importers.",
+    slug: "bis-certification-for-work-chairs-is-17631",
+  },
+  {
+    id: 4,
     color: "#8B5CF6", // Purple
     title: "BIS Certificate for Storage Unit – IS 17634:2022",
     description:
@@ -63,7 +71,7 @@ const products = [
     slug: "bis-certification-for-storage-unit-is-17634",
   },
   {
-    id: 4,
+    id: 5,
     color: "#F59E0B", // Amber/Orange
     title: "BIS Certificate for Tables & Desks – IS 17633:2022",
     description:

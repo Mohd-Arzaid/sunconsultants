@@ -7,6 +7,7 @@ import BISCertificateForBunkBeds from "../pages/BISCertificationProducts/BISCert
 import BISCertificateForBeds from "../pages/BISCertificationProducts/BISCertificateForBeds";
 import BISCertificateForStorageUnit from "../pages/BISCertificationProducts/BISCertificateForStorageUnit";
 import BISCertificateForTablesAndDesksUnit from "../pages/BISCertificationProducts/BISCertificateForTablesAndDesksUnit";
+import BISCertificateForWorkChairs from "../pages/BISCertificationProducts/BISCertificateForWorkChairs";
 
 const BISCertificationProductRoutes = () => {
   return (
@@ -51,8 +52,18 @@ const BISCertificationProductRoutes = () => {
           </Suspense>
         }
       />
+      <Route
+        path="/bis-certification-for-work-chairs-is-17631"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForWorkChairs />
+          </Suspense>
+        }
+      />
+      
     </>
   );
 };
+
 
 export default BISCertificationProductRoutes;
