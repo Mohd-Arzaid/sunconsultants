@@ -8,6 +8,7 @@ import BISCertificateForBeds from "../pages/BISCertificationProducts/BISCertific
 import BISCertificateForStorageUnit from "../pages/BISCertificationProducts/BISCertificateForStorageUnit";
 import BISCertificateForTablesAndDesksUnit from "../pages/BISCertificationProducts/BISCertificateForTablesAndDesksUnit";
 import BISCertificateForWorkChairs from "../pages/BISCertificationProducts/BISCertificateForWorkChairs";
+import BISCertificateForChairAndStools from "../pages/BISCertificationProducts/BISCertificateForChairAndStools";
 
 const BISCertificationProductRoutes = () => {
   return (
@@ -60,7 +61,14 @@ const BISCertificationProductRoutes = () => {
           </Suspense>
         }
       />
-      
+      <Route
+        path="/bis-certification-for-chair-&-stools-is-17632"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForChairAndStools />
+          </Suspense>
+        }
+      />
     </>
   );
 };

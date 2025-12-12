@@ -40,27 +40,27 @@ import Footer from "@/common/Footer";
 const products = [
   {
     id: 1,
-    color: "#1A8781", // Teal
-    title: "BIS Certificate for Bunk Beds – IS 17636:2022",
-    description:
-      "Get BIS Certificate for bunk beds under IS 17636:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "bis-certification-for-bunk-beds-is-17636",
-  },
-  {
-    id: 2,
-    color: "#3B82F6", // Blue
-    title: "BIS Certificate for Beds – IS 17635:2022",
-    description:
-      "Get BIS Certificate for beds under IS 17635:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for manufacturers and importers.",
-    slug: "bis-certification-for-beds-is-17635",
-  },
-  {
-    id: 3,
     color: "#10B981", // Green
     title: "BIS Certificate for Work Chairs – IS 17631:2022",
     description:
       "Get BIS Certificate for Work Chairs under IS 17631:2022. Complete compliance guide covering process, documents, testing requirements, fees, timeline, and benefits for BIS Certification in India. Mandatory for all manufacturers and importers.",
     slug: "bis-certification-for-work-chairs-is-17631",
+  },
+  {
+    id: 2,
+    color: "#EF4444", // Red
+    title: "BIS Certificate for Chair & Stools – IS 17632:2022",
+    description:
+      "Get BIS Certificate for Chair & Stool under IS 17632:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for general purpose chairs and stools.",
+    slug: "bis-certification-for-chair-&-stools-is-17632",
+  },
+  {
+    id: 3,
+    color: "#F59E0B", // Amber/Orange
+    title: "BIS Certificate for Tables & Desks – IS 17633:2022",
+    description:
+      "Get BIS Certificate for Tables & Desks under IS 17633:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
+    slug: "bis-certification-for-tables-&-desks-unit-is-17633",
   },
   {
     id: 4,
@@ -72,11 +72,19 @@ const products = [
   },
   {
     id: 5,
-    color: "#F59E0B", // Amber/Orange
-    title: "BIS Certificate for Tables & Desks – IS 17633:2022",
+    color: "#3B82F6", // Blue
+    title: "BIS Certificate for Beds – IS 17635:2022",
     description:
-      "Get BIS Certificate for Tables & Desks under IS 17633:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "bis-certification-for-tables-&-desks-unit-is-17633",
+      "Get BIS Certificate for beds under IS 17635:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for manufacturers and importers.",
+    slug: "bis-certification-for-beds-is-17635",
+  },
+  {
+    id: 6,
+    color: "#1A8781", // Teal
+    title: "BIS Certificate for Bunk Beds – IS 17636:2022",
+    description:
+      "Get BIS Certificate for bunk beds under IS 17636:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
+    slug: "bis-certification-for-bunk-beds-is-17636",
   },
 ];
 
