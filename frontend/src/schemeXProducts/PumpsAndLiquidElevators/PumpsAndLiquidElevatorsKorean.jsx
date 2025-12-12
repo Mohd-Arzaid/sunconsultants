@@ -33,6 +33,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
+import ServicesRightSideContentKorean from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentKorean";
 
 const PumpsAndLiquidElevatorsKorean = () => {
   return (
@@ -838,7 +839,8 @@ const PumpsAndLiquidElevatorsKoreanPageMainContent = () => {
         <PumpsAndLiquidElevatorsPageMainContentLeftKorean />
 
         {/* Right Side Content */}
-        <PumpsAndLiquidElevatorsPageMainContentRightKorean />
+        {/* <PumpsAndLiquidElevatorsPageMainContentRightKorean /> */}
+        <ServicesRightSideContentKorean />
       </div>
     </div>
   );

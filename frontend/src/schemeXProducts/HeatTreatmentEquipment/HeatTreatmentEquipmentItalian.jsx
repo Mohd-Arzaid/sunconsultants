@@ -475,7 +475,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={CDSCO}
-                alt="CDSCO"
+                alt="CDSCO logo"
+                title="CDSCO logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -491,7 +492,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={BISCRS}
-                alt="BISCRS"
+                alt="BISCRS logo"
+                title="BISCRS logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -507,7 +509,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={PlasticWasteManagement}
-                alt="PlasticWasteManagement"
+                alt="PlasticWasteManagement logo"
+                title="PlasticWasteManagement logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -523,7 +526,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={EPRCertificate}
-                alt="EPRCertificate"
+                alt="EPRCertificate logo"
+                title="EPRCertificate logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -539,7 +543,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={LMPC}
-                alt="LMPC"
+                alt="LMPC logo"
+                title="LMPC logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
@@ -572,7 +577,8 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src={ISIMarkImage}
-                alt="ISIMark"
+                alt="ISIMark logo"
+                title="ISIMark logo"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>

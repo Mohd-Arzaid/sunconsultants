@@ -31,6 +31,8 @@ const ServicesRightSideContentVietnamese = () => {
 
   const showComponentsPaths = [
     "/what-is-crs-bis-or-crs-registration",
+    "/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long",
+    "/chung-nhan-bis-scheme-x-cho-may-nen-khi",
     "/chung-nhan-bis-tai-viet-nam",
     "/vi/crs-bis-la-gi-hoac-dang-ky-crs",
     "/vi/chung-nhan-bis-isi-mark",
@@ -567,6 +569,12 @@ const ContactFormServicesRightSideContentVietnamese = () => {
     const path = window.location.pathname;
     if (path.includes("/what-is-crs-bis-or-crs-registration"))
       return "CRS Registration (Vietnamese)";
+
+    if (path.includes("/chung-nhan-bis-scheme-x-cho-may-nen-khi"))
+      return "Scheme X - Compressors (Vietnamese)";
+
+    if (path.includes("/chung-nhan-bis-ke-hoach-x-cho-may-bom-va-thang-may-chat-long"))
+      return "Scheme X - Pumps and Liquid Elevators (Vietnamese)";
     if (path.includes("/chung-nhan-bis-tai-viet-nam"))
       return "Vietnam Blog (Vietnamese)";
     if (path.includes("/vi/crs-bis-la-gi-hoac-dang-ky-crs"))
