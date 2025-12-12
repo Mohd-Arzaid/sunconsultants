@@ -1,4 +1,5 @@
 import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
+import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
   Breadcrumb,
@@ -839,6 +840,8 @@ const MainContentLeft = () => {
             </p>
           </div>
         </div>
+
+        <ManyUsersAlsoRead />
 
         <ServiceAuthorEng />
       </div>
