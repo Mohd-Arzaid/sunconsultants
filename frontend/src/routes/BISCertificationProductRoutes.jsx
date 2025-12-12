@@ -9,6 +9,7 @@ import BISCertificateForStorageUnit from "../pages/BISCertificationProducts/BISC
 import BISCertificateForTablesAndDesksUnit from "../pages/BISCertificationProducts/BISCertificateForTablesAndDesksUnit";
 import BISCertificateForWorkChairs from "../pages/BISCertificationProducts/BISCertificateForWorkChairs";
 import BISCertificateForChairAndStools from "../pages/BISCertificationProducts/BISCertificateForChairAndStools";
+import BISCertificateForWeldedPipesAndTubes from "../pages/BISCertificationProducts/BISCertificateForWeldedPipesAndTubes";
 
 const BISCertificationProductRoutes = () => {
   return (
@@ -80,6 +81,5 @@ const BISCertificationProductRoutes = () => {
     </>
   );
 };
-
 
 export default BISCertificationProductRoutes;
