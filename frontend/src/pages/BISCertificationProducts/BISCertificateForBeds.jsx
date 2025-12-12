@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForBunkBeds = () => {
+const BISCertificateForBeds = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -38,22 +38,22 @@ const BISCertificateForBunkBeds = () => {
   );
 };
 
-export default BISCertificateForBunkBeds;
+export default BISCertificateForBeds;
 
 const MetaTags = () => {
-  const title = "BIS Certificate for Bunk Beds | IS 17636:2022 BIS License";
-  const ogTitle = "BIS Certification for Bunk Beds – IS 17636:2022 Guide";
-  const twitterTitle = "BIS License for Bunk Beds | IS 17636:2022";
+  const title = "BIS Certificate for Beds | IS 17635:2022 BIS License";
+  const ogTitle = "BIS Certification for Beds – IS 17635:2022 Guide";
+  const twitterTitle = "BIS License for Beds | IS 17635:2022";
   const metaDescription =
-    "Get BIS Certificate for bunk beds under IS 17636:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for beds under IS 17635:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for bunk beds as per IS 17636:2022. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for beds as per IS 17635:2022. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for bunk beds under IS 17636:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for beds under IS 17635:2022. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Bunk Beds, BIS License for Bunk Beds, IS 17636:2022, BIS Certification for Bunk Beds";
+    "BIS Certificate for Beds, BIS License for Beds, IS 17635:2022, BIS Certification for Beds";
   const websiteUrl =
-    "https://bis-certifications.com/bis-certification-for-bunk-beds-is-17636";
+    "https://bis-certifications.com/bis-certification-for-beds-is-17635";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -110,7 +110,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Bunk Beds – IS 17636:2022
+                    BIS Certificate for Beds – IS 17635:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -138,48 +138,44 @@ const MainContent = () => {
 
 const MainContentLeft = () => {
   return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
+    <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for Bunk Beds – Complete Guide to IS 17636:2022 BIS
-          Certification
+          BIS Certificate for Beds – IS 17635:2022 Complete Guide
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforBunkBeds.png"
-            title="BIS License for Bunk Beds"
-            alt="BIS Certificate for Bunk Beds - IS 17636:2022 BIS Certification"
+            src="/BISCertificationProductsImages/BISLicenseforBeds.png"
+            title="BIS License for Beds"
+            alt="BIS Certificate for Beds - IS 17635:2022 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for Bunk Beds is a mandatory requirement in India
-          under IS 17636:2022, which lays down the safety, performance, and
-          structural requirements for bunk beds used in homes, hostels,
-          dormitories, PG accommodations, schools, hotels, and commercial
-          establishments. Any manufacturer—Indian or foreign—must obtain a BIS
-          Certification for Bunk Beds before selling, importing, exporting, or
-          distributing bunk beds in the Indian market.
+          The BIS Certificate for Beds is a mandatory compliance requirement in
+          India for manufacturers and importers of beds intended for domestic
+          and commercial use. As per the latest Indian Standard IS 17635:2022 –
+          Beds (Safety Requirements), all beds must meet strict safety,
+          durability, structural, and performance benchmarks before being sold
+          in the Indian market.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          With increasing demand for space-saving furniture, bunk beds have
-          become an essential product category. However, safety risks such as
-          falling, collapse, entrapment, and structural failure make BIS License
-          for Bunk Beds crucial to ensure consumer protection. This
-          comprehensive page will guide you through the BIS Registration for
-          Bunk Beds, testing requirements, documentation, fees, timelines,
-          penalties, and benefits.
+          Beds are essential furniture products used daily across homes, hotels,
+          hospitals, hostels, PG accommodations, and institutional facilities.
+          Any structural weakness, sharp edges, material failure, or poor load
+          capacity can result in serious injuries. To prevent such risks, the
+          Bureau of Indian Standards (BIS) mandates BIS Certification for Beds.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Whether you are a manufacturer, importer, exporter, trader, or
-          start-up, this guide helps you understand the compliance requirements
-          under the Bureau of Indian Standards (BIS).
+          This comprehensive guide explains everything about BIS License for
+          Beds, including applicable standards, certification process, testing
+          requirements, documents, fees, timelines, penalties, and benefits.
         </p>
 
         {/* Separator Line */}
@@ -190,281 +186,243 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a quality and safety compliance program governed
-          by the Bureau of Indian Standards, the national standards body of
-          India. It ensures that products conform to specified Indian Standards
-          and are safe, reliable, and fit for use.
+          BIS Certification is a conformity assessment scheme introduced by the
+          Bureau of Indian Standards, the national standards authority of India.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           What is BIS Certificate?
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS certificate is an official license issued to a manufacturer
-          allowing them to use the ISI Mark, demonstrating compliance with
-          BIS-prescribed product standards.
+          A BIS Certificate confirms that a product complies with Indian
+          Standards and is safe, reliable, and suitable for use. Certified
+          products carry the BIS Certification Mark, commonly known as the ISI
+          Mark.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          It proves the product has passed:
+          It signifies that the product has successfully passed:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Laboratory testing</li>
           <li>Factory inspection</li>
-          <li>Quality control assessment</li>
-          <li>Safety compliance</li>
-          <li>Conformance to Indian Standards</li>
+          <li>Quality control verification</li>
+          <li>Safety compliance evaluation</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS-certified product displays the BIS Logo, also known as the ISI
-          Mark, signifying that it meets Indian quality benchmarks.
+          The BIS Logo on beds assures customers that the product meets
+          government-approved quality and safety standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Which BIS Standard Applies to Bunk Beds? (IS 17636:2022)
+          BIS Standard Applicable for Beds – IS 17635:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bunk beds fall under compulsory BIS certification as per the newly
-          introduced standard:
+          The applicable Indian Standard for beds is:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17636:2022</strong> — Bunk Beds – Safety Requirements
+          🔹 <strong>IS 17635:2022</strong> – Beds: Safety Requirements
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          This standard ensures that bunk beds meet strict safety, construction,
-          and durability criteria. It covers:
+          This standard defines essential safety and performance requirements
+          for beds used in residential and commercial environments.
         </p>
 
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          IS 17635:2022 Covers
+        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural stability</li>
-          <li>Guardrails</li>
-          <li>Entrapment hazards</li>
+          <li>Structural strength</li>
           <li>Load-bearing capacity</li>
-          <li>Dimensional requirements</li>
-          <li>Material specifications</li>
-          <li>Edges and surface finish</li>
-          <li>Ladder construction</li>
-          <li>Durability and performance tests</li>
+          <li>Stability and durability</li>
+          <li>Material quality</li>
+          <li>Edge and surface finish</li>
+          <li>Safety against collapse</li>
+          <li>Absence of entrapment hazards</li>
+          <li>Long-term performance</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Any manufacturer wanting to sell bunk beds in India must obtain a BIS
-          License for Bunk Beds under IS 17636:2022.
+          Any bed manufactured or imported into India must comply with IS
+          17635:2022 and obtain a BIS Registration for Beds.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Required for Bunk Beds
+          Why BIS Certification is Mandatory for Beds
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Bunk beds are widely used by children and adults, and safety concerns
-          make compliance essential. BIS has made certification mandatory to
-          prevent:
+          Beds are used for prolonged durations and support human weight
+          continuously. Poorly designed beds can cause injuries, collapse, or
+          long-term health risks.
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Collapse or structural failure</li>
-          <li>Entrapment of body parts</li>
-          <li>Falling from the upper bunk</li>
-          <li>Ladder-related injuries</li>
-          <li>Poor material quality</li>
-          <li>Fire hazards</li>
-          <li>Hazardous finishes or sharp edges</li>
-        </ul>
-
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Reasons BIS License for Bunk Beds is Mandatory
+          Reasons BIS Certification for Beds is Required
         </h3>
 
-        <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ensures mechanical strength and durability</li>
-          <li>Protects consumers—especially children—from injury</li>
-          <li>Maintains uniform quality standards</li>
-          <li>Helps brands build trust and credibility</li>
-          <li>Ensures compliance with government regulations</li>
-          <li>Prevents legal issues and penalties</li>
-        </ol>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Ensures structural integrity</li>
+          <li>Prevents collapse and breakage</li>
+          <li>Controls material quality</li>
+          <li>Eliminates sharp edges and unsafe finishes</li>
+          <li>Protects consumers</li>
+          <li>Ensures uniform national quality</li>
+          <li>Mandatory under BIS notification</li>
+          <li>Required for legal sale in India</li>
+        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Without BIS registration, manufacturers and importers cannot legally
-          sell the product in the Indian market.
+          Without a BIS License for Beds, selling or importing beds in India is
+          illegal.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Bunk Beds (IS 17636:2022)
+          BIS Certification Process for Beds (IS 17635:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS certification process in India involves testing,
-          documentation, and factory inspections. Here is the step-by-step
-          procedure:
+          The BIS certification process in India follows a structured procedure
+          under the ISI Certification Scheme.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 1 — Determine Applicability & Standard
+          Step 1 – Identify Standard & Product Scope
         </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>
-            <strong>IS 17636:2022</strong> — Mandatory
-          </li>
-          <li>Confirm the product category and manufacturing unit details.</li>
-        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Confirm applicability under IS 17635:2022 and determine product
+          variants.
+        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 2 — BIS Application (Form Submission)
+          Step 2 – BIS Application (Online)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Apply online through the BIS Manak Online Portal.
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Requirements include:
+          Submit application through the BIS Manak Online Portal with:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Manufacturer details</li>
-          <li>Factory address and proof</li>
-          <li>Product category & brand</li>
-          <li>Manufacturing capabilities</li>
-          <li>Quality control processes</li>
+          <li>Factory address</li>
+          <li>Product description</li>
+          <li>Brand name</li>
+          <li>Quality control details</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This step starts the official approval cycle.
-        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 3 — Pay BIS Certificate Cost
+          Step 3 – BIS Certification Fees
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          After submission, pay:
+          Pay applicable fees including:
         </p>
-        <ul className="list-disc ml-6 mb-3 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fees</li>
-          <li>Testing fees</li>
-          <li>Audit fees</li>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Application fee</li>
+          <li>Processing fee</li>
+          <li>Testing charges</li>
+          <li>Inspection charges</li>
           <li>Marking fees</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Fees depend on:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Number of product variants</li>
-          <li>Brand names</li>
-          <li>Factory location</li>
-          <li>Testing parameters</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 4 — Sample Testing (As per IS 17636:2022)
+          Step 4 – Product Testing
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Testing is conducted in a BIS-recognized laboratory.
+          Samples are tested at BIS-recognized laboratories.
         </p>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Tests include:
-        </p>
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
+          Testing Includes
+        </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural stability test</li>
-          <li>Impact test</li>
-          <li>Entrapment test</li>
-          <li>Guardrail strength test</li>
-          <li>Finish quality test</li>
-          <li>Ladder safety test</li>
-          <li>Load test</li>
+          <li>Static load test</li>
           <li>Durability test</li>
-          <li>Edge safety evaluation</li>
+          <li>Stability test</li>
+          <li>Joint strength test</li>
+          <li>Surface finish test</li>
+          <li>Edge safety test</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The test report is directly uploaded to the BIS portal.
-        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 5 — BIS Factory Inspection
+          Step 5 – Factory Inspection
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS officer visits the factory to verify:
+          A BIS officer inspects:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quality management system</li>
+          <li>Manufacturing facility</li>
           <li>Raw material control</li>
-          <li>In-process inspections</li>
-          <li>Final product testing</li>
-          <li>Production capability</li>
+          <li>In-process testing</li>
+          <li>Quality assurance system</li>
+          <li>Testing equipment</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          They check compliance with BIS Scheme of Testing & Inspection (STI).
-        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 6 — Grant of BIS License
+          Step 6 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Once all steps are cleared, BIS issues a:
+          After compliance, BIS issues:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS Certificate</li>
-          <li>ISI Mark Approval</li>
-          <li>CML License Number</li>
+          <li>ISI Mark permission</li>
+          <li>CML number</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          You can now legally use the BIS Mark on bunk beds and packaging.
-        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 7 — Post-License Obligations
+          Step 7 – Post-Certification Compliance
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain internal testing</li>
-          <li>Allow periodic BIS inspections</li>
-          <li>Renew the license every 1 or 2 years</li>
+          <li>Surveillance inspections</li>
+          <li>Renewal every 1–2 years</li>
+          <li>Ongoing quality control</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of BIS License for Bunk Beds
+          Scope of BIS License for Beds
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> This standard covers the requirements relating to
-          the performance and safety that is strength, stability and durability
-          of bunk beds for domestic and non-domestic use. This standard also
-          applies to single beds for use at a height of the bed base of 800 mm
-          or more above finished floor level, irrespective of the use to which
-          the space below is put.
+          <strong>1.1</strong> This standard covers the requirements related to
+          the performance and safety of beds for adults for domestic and
+          non-domestic use.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
           <strong>1.2</strong> This standard applies to completely manufactured/
-          fabricated bunk beds. It also applies to ready-to-assemble units; in
-          that case the requirements of this standard shall apply to the
-          assembled unit.
+          fabricated beds. It also applies to ready-to-assemble units; in that
+          case the requirements of this standard shall apply to the assembled
+          units.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>1.3</strong> This standard does not cover waterbeds, airbeds,
+          foldaway beds, bunk beds and beds for people with special needs, nor
+          the beds for healthcare and medical purposes.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification of Bunk Beds
+          Documents Required for BIS Certification of Beds
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -475,64 +433,48 @@ const MainContentLeft = () => {
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration certificate</li>
+          <li>Factory registration/license</li>
           <li>Manufacturing process flowchart</li>
-          <li>List of machinery & equipment</li>
-          <li>List of test equipment</li>
+          <li>Machinery list</li>
+          <li>Testing equipment list</li>
           <li>Calibration certificates</li>
-          <li>Factory layout/plant layout</li>
-          <li>Authorization letter from CEO/Director</li>
-          <li>ISO 9001 certificate (if available)</li>
+          <li>Factory layout</li>
+          <li>Quality control plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identity proof</li>
           <li>Address proof</li>
-          <li>Brand authorization (if third-party brand)</li>
-          <li>Trademark registration document (optional)</li>
+          <li>ID proof</li>
+          <li>Brand authorization</li>
+          <li>Trademark certificate (if applicable)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product specifications</li>
+          <li>Product drawings</li>
+          <li>Specifications</li>
           <li>Bill of materials</li>
-          <li>Safety features description</li>
-          <li>Quality control plan</li>
           <li>Internal test reports</li>
         </ul>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          BIS Application Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Undertaking & declarations</li>
-          <li>Test request form</li>
-          <li>Sample approval letter</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Having proper documents reduces delays and ensures smooth approval.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements for Bunk Beds (IS 17636:2022)
+          Testing Requirements for Beds (IS 17635:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Testing is a mandatory part of the BIS registration process. Bunk beds
-          undergo rigorous tests to ensure safety and durability.
+          Beds must undergo rigorous testing to ensure compliance.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-4">
-          Scheme of Inspection and Testing for Bunk Beds
+          Mandatory Tests
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -566,58 +508,42 @@ const MainContentLeft = () => {
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Top Bed Safety Barriers
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
                   7.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Gaps
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Bed Base
+                  Stability Test
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.5
+                  7.4.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Ladder
+                  Vertical Static Load on Bed Base
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6
+                  7.4.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Strength of Frame and Fastenings
+                  Vertical Static Load on Side Rail
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7.5.1
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Horizontal Static Load Tests
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
                   7.7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stability
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.8
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Fastening of Upper Bed to lower Bed
+                  Vertical Impact Test
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -625,7 +551,7 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Tests must be performed at a BIS-recognized lab only.
+          Testing must be conducted only at BIS-approved labs.
         </p>
 
         {/* Separator Line */}
@@ -635,55 +561,44 @@ const MainContentLeft = () => {
           Common Challenges & How to Avoid Them
         </h2>
 
-        <ol className="list-decimal ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>Incorrect Product Categorization</strong>
-            <br />
-            Always verify the correct Indian Standard.
+            <strong>Incorrect standard selection</strong> – Always verify the
+            correct Indian Standard.
           </li>
           <li>
-            <strong>Improper Documentation</strong>
-            <br />
-            Missing documents cause delays—prepare them beforehand.
+            <strong>Poor documentation</strong> – Missing documents cause
+            delays; prepare them beforehand.
           </li>
           <li>
-            <strong>Failed Lab Tests</strong>
-            <br />
-            Ensure high-quality materials, welding, guardrails, and finishing.
+            <strong>Failed lab tests</strong> – Ensure high-quality materials
+            and construction.
           </li>
           <li>
-            <strong>Factory Not Ready for Inspection</strong>
-            <br />
-            Ensure QMS and test equipment are properly maintained.
+            <strong>Factory non-readiness</strong> – Ensure QMS and test
+            equipment are properly maintained.
           </li>
           <li>
-            <strong>Trademark Issues</strong>
-            <br />
-            Brand name must match license application.
+            <strong>Trademark mismatch</strong> – Brand name must match license
+            application.
           </li>
-        </ol>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solving these early reduces processing time drastically.
-        </p>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Manufacturers & Importers
+          Benefits of BIS Certification for Beds
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legally sell bunk beds in India</li>
-          <li>Build trust with customers</li>
-          <li>Reduce product returns</li>
-          <li>Improve brand reputation</li>
-          <li>Ensure safety compliance</li>
-          <li>Gain competitive advantage</li>
-          <li>Expand into retail chains & e-commerce platforms</li>
-          <li>Access government tenders</li>
-          <li>Avoid penalties & legal actions</li>
+          <li>Legal sale in India</li>
+          <li>Increased customer trust</li>
+          <li>Access to e-commerce platforms</li>
+          <li>Eligibility for government tenders</li>
+          <li>Reduced liability</li>
+          <li>Strong brand credibility</li>
+          <li>Compliance with Indian standards</li>
         </ul>
 
         {/* Separator Line */}
@@ -694,208 +609,62 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling bunk beds without BIS Certification may result in:
+          Selling beds without BIS certification can lead to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Heavy fines</li>
           <li>Product seizure</li>
-          <li>Financial penalties</li>
-          <li>Factory closure orders</li>
-          <li>Legal prosecution</li>
-          <li>Ban from Indian market</li>
-          <li>Blacklisting of brand</li>
+          <li>Business shutdown</li>
+          <li>Legal action</li>
+          <li>Market ban</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Compliance is not optional—it is mandatory.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Bunk Beds?
+          Who Needs BIS Certificate for Beds?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          The following entities must obtain a BIS License for Bunk Beds:
+          The following entities must obtain a BIS License for Beds:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
-          <li>Foreign manufacturers exporting to India</li>
+          <li>Foreign manufacturers</li>
           <li>Importers</li>
-          <li>Distributors</li>
+          <li>Furniture brands</li>
+          <li>OEM/ODM suppliers</li>
           <li>E-commerce sellers</li>
-          <li>OEM/ODM manufacturers</li>
-          <li>Furniture brands & retailers</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Every factory (not company) requires a separate BIS license.
+          Each manufacturing unit requires a separate BIS license.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why Choose Us for BIS Certification Consulting?
+          Why Choose Us for BIS Certification for Beds?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          We provide end-to-end support for BIS Registration for Bunk Beds,
-          including:
+          We provide end-to-end BIS consulting, including:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standard interpretation (IS 17636:2022)</li>
-          <li>Documentation preparation</li>
-          <li>Lab testing coordination</li>
-          <li>BIS portal application</li>
-          <li>Factory inspection support</li>
-          <li>Communication with BIS officers</li>
-          <li>License approval assistance</li>
-          <li>Post-certification compliance</li>
+          <li>Standard mapping</li>
+          <li>Documentation support</li>
+          <li>Testing coordination</li>
+          <li>Application filing</li>
+          <li>Factory inspection handling</li>
+          <li>BIS liaison</li>
+          <li>License issuance</li>
+          <li>Renewal & surveillance support</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          With years of expertise, we ensure fast, accurate, and hassle-free BIS
-          certification.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs — BIS Certification for Bunk Beds
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                1. Is BIS certification mandatory for bunk beds in India?
-              </strong>
-              <br />
-              Yes. Under IS 17636:2022, it is compulsory for all manufacturers
-              and importers.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                2. How long does BIS Certification for bunk beds take?
-              </strong>
-              <br />
-              Typically 30–45 days depending on readiness and documentation.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. Can foreign manufacturers apply for BIS?</strong>
-              <br />
-              Yes, through the FMCS (Foreign Manufacturers Certification
-              Scheme).
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. Can I apply for a BIS Certificate online?</strong>
-              <br />
-              Yes, through the BIS Manak Online Portal.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                6. What tests are required for bunk bed certification?
-              </strong>
-              <br />
-              Load test, guardrail test, stability test, impact test, entrapment
-              test, etc.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. How long is a BIS license valid?</strong>
-              <br />
-              Usually 1–2 years and renewable.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Can one license cover multiple models?</strong>
-              <br />
-              Only if they fall within the same standard and category.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is ISI Mark required on bunk beds?</strong>
-              <br />
-              Yes, the ISI Mark is mandatory after certification.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. What happens if my product fails lab testing?</strong>
-              <br />
-              You must modify the product and resubmit samples.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>11. Does BIS check factory infrastructure?</strong>
-              <br />
-              Yes, during inspection.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>12. Can traders apply for BIS?</strong>
-              <br />
-              Only if they are brand owners and have a contract with
-              manufacturers.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>13. What is the BIS Logo?</strong>
-              <br />
-              It is the standard ISI Mark symbol indicating product conformity.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                14. What documents are needed for BIS certification?
-              </strong>
-              <br />
-              Factory license, layout, machinery list, BOM, QC plan, test
-              reports, etc.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>15. Is BIS testing done at the factory?</strong>
-              <br />
-              No, only at BIS-recognized laboratories.
-            </p>
-          </div>
-        </div>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -905,21 +674,95 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Bunk Beds under IS 17636:2022 is not
-          only mandatory but also essential for ensuring consumer safety,
-          product reliability, and legal compliance in India. The certification
-          process involves product testing, documentation, factory inspection,
-          and license issuance. With proper planning and expert guidance, the
-          process becomes smooth, fast, and cost-effective.
+          The BIS Certificate for Beds under IS 17635:2022 is a mandatory legal
+          requirement that ensures safety, quality, and durability. Obtaining a
+          BIS License for Beds protects consumers, strengthens brand value, and
+          enables lawful market access across India. With expert support, the
+          certification process becomes seamless and efficient.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Whether you are a manufacturer, importer, or brand owner, getting BIS
-          certification strengthens your market position, increases customer
-          trust, and unlocks new business opportunities. Our expert consulting
-          team is ready to assist you with end-to-end BIS Certification for bunk
-          beds.
-        </p>
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          FAQs – BIS Certificate for Beds
+        </h2>
+
+        <div className="space-y-4 mb-4">
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>
+                1. Is BIS certification mandatory for beds in India?
+              </strong>
+              <br />
+              Yes, under IS 17635:2022.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>2. What is the BIS Certificate validity?</strong>
+              <br />
+              1–2 years, renewable.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>3. Can foreign manufacturers apply?</strong>
+              <br />
+              Yes, under FMCS.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>4. Can BIS Certificate be applied online?</strong>
+              <br />
+              Yes.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>5. Is ISI Mark mandatory on beds?</strong>
+              <br />
+              Yes.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>6. How long does the process take?</strong>
+              <br />
+              30–45 days.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>7. Are wooden and metal beds both covered?</strong>
+              <br />
+              Yes, if compliant with IS 17635:2022.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>8. Is factory inspection mandatory?</strong>
+              <br />
+              Yes.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>9. Can traders apply for BIS?</strong>
+              <br />
+              Only brand owners with manufacturing control.
+            </p>
+          </div>
+        </div>
 
         <ServiceAuthorEng />
       </div>
@@ -929,11 +772,11 @@ const MainContentLeft = () => {
 
 const Services = () => {
   return (
-    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
+    <div className="pt-6 md:pt-8 pb-12 md:pb-16 overflow-x-hidden">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
               Our Services
             </h2>
           </BoxReveal>
