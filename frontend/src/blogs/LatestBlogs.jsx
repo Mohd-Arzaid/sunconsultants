@@ -198,6 +198,14 @@ const blogs = [
       "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for stainless steel welded pipes and tubes.",
     slug: "bis-certification-for-welded-pipes-and-tubes-is-17876",
   },
+  {
+    id: 22,
+    color: "#8B5CF6", // Purple
+    title: "BIS Certificate for Seamless Pipes & Tubes – IS 17875:2022",
+    description:
+      "Get BIS Certificate for Seamless Pipes & Tubes under IS 17875:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for seamless steel pipes and tubes.",
+    slug: "bis-certification-for-seamless-pipes-and-tubes-is-17875",
+  },
 ];
 
 // =============================

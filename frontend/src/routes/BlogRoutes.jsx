@@ -76,6 +76,9 @@ const BISCertificateForChairAndStools = lazy(() =>
 const BISCertificateForWeldedPipesAndTubes = lazy(() =>
   import("@/blogs/BISCertificateForWeldedPipesAndTubes")
 );
+const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -431,6 +434,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWeldedPipesAndTubes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-seamless-pipes-and-tubes-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubes />
           </Suspense>
         }
       />
