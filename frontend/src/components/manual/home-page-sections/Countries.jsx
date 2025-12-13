@@ -12,6 +12,8 @@ const CountryCardMobile = memo(({ country }) => {
           title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
           className="w-auto h-full object-contain"
           loading="lazy"
+          width="248"
+          height="248"
         />
       </div>
 
@@ -39,9 +41,13 @@ const CountryCardDesktop = memo(({ country }) => {
           alt={`BIS Certification Services in ${country.name} - Sun Certifications India`}
           title={`BIS Certification Services in ${country.name} - Sun Certifications India`}
           className={
-            country.name === "Thailand" ? "w-full h-full object-cover" : ""
+            country.name === "Thailand"
+              ? "w-full h-full object-cover"
+              : "w-auto h-full object-contain"
           }
           loading="lazy"
+          width="332"
+          height="332"
         />
       </div>
       <div className="mt-4 px-2 flex items-center justify-between w-full">
