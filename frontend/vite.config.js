@@ -74,7 +74,7 @@ export default defineConfig({
             "@radix-ui/react-toast",
             "@radix-ui/react-scroll-area",
           ],
-          "vendor-icons": ["lucide-react", "react-icons"],
+          "vendor-icons": ["lucide-react"],
           "vendor-utils": ["axios", "clsx", "tailwind-merge", "framer-motion"],
         },
       },

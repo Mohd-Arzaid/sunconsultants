@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaPhone } from "react-icons/fa";
+import { MessageCircle, Phone } from "lucide-react";
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
@@ -30,7 +30,7 @@ const SocialFloatingButtons = ({ hide }) => {
         aria-label="WhatsApp"
       >
         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity rounded-full"></div>
-        <FaWhatsapp className="text-white text-xl md:text-2xl group-hover:scale-125 transition-transform duration-300" />
+        <MessageCircle className="text-white w-5 h-5 md:w-6 md:h-6 group-hover:scale-125 transition-transform duration-300" />
         <span className="hidden md:block absolute left-16 bg-black/80 text-white px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm whitespace-nowrap shadow-lg translate-x-2 group-hover:translate-x-0">
           Chat on WhatsApp
         </span>
@@ -42,7 +42,7 @@ const SocialFloatingButtons = ({ hide }) => {
         aria-label="Call Us"
       >
         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity rounded-full"></div>
-        <FaPhone className="text-white text-lg md:text-xl group-hover:scale-125 transition-transform duration-300" />
+        <Phone className="text-white w-4 h-4 md:w-5 md:h-5 group-hover:scale-125 transition-transform duration-300" />
         <span className="hidden md:block absolute left-16 bg-black/80 text-white px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm whitespace-nowrap shadow-lg translate-x-2 group-hover:translate-x-0">
           Call Us
         </span>
