@@ -126,66 +126,76 @@
       }
     </script>
 
-    <!-- Microsoft Clarity - Load only after user interaction -->
+    <!-- Microsoft Clarity - Optimized to prevent forced reflow -->
     <script type="text/javascript">
-      // Load Clarity only after user interaction to reduce unused JS
+      // Load Clarity after significant delay to avoid forced reflow during initial page load
       let clarityLoaded = false;
       function loadClarity() {
         if (clarityLoaded) return;
         clarityLoaded = true;
 
-        (function (c, l, a, r, i, t, y) {
-          c[a] =
-            c[a] ||
-            function () {
-              (c[a].q = c[a].q || []).push(arguments);
-            };
-          t = l.createElement(r);
-          t.async = 1;
-          t.defer = true;
-          t.src = "https://www.clarity.ms/tag/" + i;
-          y = l.getElementsByTagName(r)[0];
-          y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "udnfijc0yj");
+        // Add additional delay to ensure DOM is settled
+        setTimeout(function () {
+          (function (c, l, a, r, i, t, y) {
+            c[a] =
+              c[a] ||
+              function () {
+                (c[a].q = c[a].q || []).push(arguments);
+              };
+            t = l.createElement(r);
+            t.async = 1;
+            t.defer = true;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+          })(window, document, "clarity", "script", "udnfijc0yj");
+        }, 500); // 500ms delay after trigger to let browser settle
       }
 
-      // Load on first user interaction
-      const clarityEvents = ["scroll", "click", "touchstart", "keydown"];
-      const loadClarityOnInteraction = function () {
-        loadClarity();
-        clarityEvents.forEach((event) => {
-          document.removeEventListener(event, loadClarityOnInteraction, {
-            passive: true,
+      // Wait for page to be fully loaded before starting to listen for interactions
+      window.addEventListener("load", function () {
+        // Only load after significant user engagement (2nd interaction or after delay)
+        let interactionCount = 0;
+        const clarityEvents = ["scroll", "click", "touchstart", "mousemove"];
+
+        const loadClarityOnInteraction = function () {
+          interactionCount++;
+          // Load only after 2nd interaction to ensure user is engaged
+          if (interactionCount >= 2) {
+            loadClarity();
+            clarityEvents.forEach((event) => {
+              document.removeEventListener(event, loadClarityOnInteraction);
+            });
+          }
+        };
+
+        // Add slight delay before attaching event listeners
+        setTimeout(function () {
+          clarityEvents.forEach((event) => {
+            document.addEventListener(event, loadClarityOnInteraction, {
+              passive: true,
+            });
           });
-        });
-      };
+        }, 1000); // Wait 1 second after page load
 
-      clarityEvents.forEach((event) => {
-        document.addEventListener(event, loadClarityOnInteraction, {
-          passive: true,
-          once: true,
-        });
-      });
-
-      // Fallback: Load after idle time
-      if (window.requestIdleCallback) {
-        window.requestIdleCallback(
-          function () {
-            if (!clarityLoaded) {
-              loadClarity();
-            }
-          },
-          { timeout: 3000 }
-        );
-      } else {
-        window.addEventListener("load", function () {
+        // Fallback: Load after significant idle time
+        if (window.requestIdleCallback) {
+          window.requestIdleCallback(
+            function () {
+              if (!clarityLoaded) {
+                loadClarity();
+              }
+            },
+            { timeout: 5000 } // Increased from 3s to 5s
+          );
+        } else {
           setTimeout(function () {
             if (!clarityLoaded) {
               loadClarity();
             }
-          }, 4000);
-        });
-      }
+          }, 6000); // Increased from 4s to 6s
+        }
+      });
     </script>
   </head>
   <body>
