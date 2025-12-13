@@ -61,29 +61,79 @@
 
     <title>BIS Certification | FMCS | ISI MARK | LMPC | EPR | CDSCO</title>
 
-    <!-- Optimized Google Tag Manager - Deferred loading -->
+    <!-- Optimized Google Tag Manager - Load only after user interaction -->
     <script>
-      // Defer GTM loading to improve initial page load
-      window.addEventListener("load", function () {
+      // Initialize dataLayer early for event queuing
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      // Load GTM only after user interaction or idle time
+      let gtmLoaded = false;
+      function loadGTM() {
+        if (gtmLoaded) return;
+        gtmLoaded = true;
+
         var gtmScript = document.createElement("script");
         gtmScript.src =
           "https://www.googletagmanager.com/gtag/js?id=G-G25K7V10E9";
         gtmScript.async = true;
+        gtmScript.defer = true;
         document.head.appendChild(gtmScript);
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
         gtag("js", new Date());
         gtag("config", "G-G25K7V10E9");
+      }
+
+      // Load on first user interaction (scroll, click, touch, keypress)
+      const events = ["scroll", "click", "touchstart", "keydown", "mousemove"];
+      const loadOnInteraction = function () {
+        loadGTM();
+        events.forEach((event) => {
+          document.removeEventListener(event, loadOnInteraction, {
+            passive: true,
+          });
+        });
+      };
+
+      events.forEach((event) => {
+        document.addEventListener(event, loadOnInteraction, {
+          passive: true,
+          once: true,
+        });
       });
+
+      // Fallback: Load after page is fully loaded and browser is idle
+      if (window.requestIdleCallback) {
+        window.requestIdleCallback(
+          function () {
+            if (!gtmLoaded) {
+              loadGTM();
+            }
+          },
+          { timeout: 2000 }
+        );
+      } else {
+        // Fallback for browsers without requestIdleCallback
+        window.addEventListener("load", function () {
+          setTimeout(function () {
+            if (!gtmLoaded) {
+              loadGTM();
+            }
+          }, 3000);
+        });
+      }
     </script>
 
-    <!-- Microsoft Clarity - Deferred to improve initial page load -->
+    <!-- Microsoft Clarity - Load only after user interaction -->
     <script type="text/javascript">
-      // Defer Clarity loading to after page load
-      window.addEventListener("load", function () {
+      // Load Clarity only after user interaction to reduce unused JS
+      let clarityLoaded = false;
+      function loadClarity() {
+        if (clarityLoaded) return;
+        clarityLoaded = true;
+
         (function (c, l, a, r, i, t, y) {
           c[a] =
             c[a] ||
@@ -92,11 +142,50 @@
             };
           t = l.createElement(r);
           t.async = 1;
+          t.defer = true;
           t.src = "https://www.clarity.ms/tag/" + i;
           y = l.getElementsByTagName(r)[0];
           y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "udnfijc0yj");
+      }
+
+      // Load on first user interaction
+      const clarityEvents = ["scroll", "click", "touchstart", "keydown"];
+      const loadClarityOnInteraction = function () {
+        loadClarity();
+        clarityEvents.forEach((event) => {
+          document.removeEventListener(event, loadClarityOnInteraction, {
+            passive: true,
+          });
+        });
+      };
+
+      clarityEvents.forEach((event) => {
+        document.addEventListener(event, loadClarityOnInteraction, {
+          passive: true,
+          once: true,
+        });
       });
+
+      // Fallback: Load after idle time
+      if (window.requestIdleCallback) {
+        window.requestIdleCallback(
+          function () {
+            if (!clarityLoaded) {
+              loadClarity();
+            }
+          },
+          { timeout: 3000 }
+        );
+      } else {
+        window.addEventListener("load", function () {
+          setTimeout(function () {
+            if (!clarityLoaded) {
+              loadClarity();
+            }
+          }, 4000);
+        });
+      }
     </script>
   </head>
   <body>

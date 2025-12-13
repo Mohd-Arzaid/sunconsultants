@@ -55,6 +55,7 @@ export default defineConfig({
     minify: "esbuild",
     target: "es2020",
     cssCodeSplit: true,
+    cssMinify: true,
     // Cache busting configuration
     assetsDir: "assets",
     rollupOptions: {

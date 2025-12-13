@@ -68,31 +68,8 @@
   background: radial-gradient(circle, #ebf3f5 7%, #c5e2f0 100%);
 }
 
-.custom-radial-gradient-updates {
-  background: radial-gradient(circle, #ffffff 7%, #f2f1ed 100%);
-}
-
-.custom-radial-gradient-2 {
-  background: radial-gradient(circle, #d8e6ef 8%, #c5e2f0 100%);
-}
-
 .custom-radial-gradient-cdsco {
   background: radial-gradient(circle, #d8e6ef 8%, #ecedef 100%);
-}
-
-.custom-radial-gradient-3 {
-  background: radial-gradient(circle, #ffffff 7%, #fbfeff 100%);
-}
-
-.custom-linear-gradient-4 {
-  background: linear-gradient(to right, #2600fc 0%, #4d2249 100%);
-}
-
-.text-gradient {
-  background: linear-gradient(to right, #2600fc 0%, #4d2249 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -276,15 +253,7 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* Phone Input */
-.phone-input-custom {
-  @apply w-full h-[72px] text-[17px] text-[#7E7E7E] font-poppins font-semibold rounded-xl border border-blue-500/90 px-4;
-}
-
-.phone-input-custom-button {
-  @apply border border-blue-500/90 rounded-l-xl;
-}
-
+/* Phone Input - React Tel Input Styles */
 .react-tel-input .form-control {
   @apply w-full h-[72px] text-[17px] text-[#7E7E7E] font-poppins font-semibold rounded-xl border border-blue-500/90 px-4;
 }
@@ -295,9 +264,6 @@ input:-webkit-autofill:active {
 
 .react-tel-input .selected-flag {
   @apply rounded-l-xl;
-}
-
-.react-tel-input .selected-flag {
   background-color: transparent !important;
 }
 
