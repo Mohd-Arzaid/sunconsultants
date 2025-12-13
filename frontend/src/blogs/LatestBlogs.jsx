@@ -206,6 +206,14 @@ const blogs = [
       "Get BIS Certificate for Seamless Pipes & Tubes under IS 17875:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for seamless steel pipes and tubes.",
     slug: "bis-certification-for-seamless-pipes-and-tubes-is-17875",
   },
+  {
+    id: 23,
+    color: "#F59E0B", // Amber/Orange
+    title: "BIS Certificate for Flashlight – IS 2083:2024",
+    description:
+      "Get BIS Certificate for Flashlight under IS 2083:2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for flashlights and torches.",
+    slug: "blogs/ISI-products/flashlight-IS-2083",
+  },
 ];
 
 // =============================

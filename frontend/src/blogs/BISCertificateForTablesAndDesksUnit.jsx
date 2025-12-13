@@ -101,9 +101,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/bis-certification-products">
-                      BIS Certification Products
-                    </Link>
+                    <Link to="/Blogs">Latest Blogs</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">

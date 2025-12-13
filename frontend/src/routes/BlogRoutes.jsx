@@ -79,6 +79,9 @@ const BISCertificateForWeldedPipesAndTubes = lazy(() =>
 const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
   import("@/blogs/BISCertificateForSeamlessPipesAndTubes")
 );
+const BISCertificateForFlashlight = lazy(() =>
+  import("@/blogs/BISCertificateForFlashlight")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -442,6 +445,14 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSeamlessPipesAndTubes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/flashlight-IS-2083"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFlashlight />
           </Suspense>
         }
       />

@@ -26,7 +26,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForWeldedPipesAndTubes = () => {
+const BISCertificateForFlashlight = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -39,24 +39,22 @@ const BISCertificateForWeldedPipesAndTubes = () => {
   );
 };
 
-export default BISCertificateForWeldedPipesAndTubes;
+export default BISCertificateForFlashlight;
 
 const MetaTags = () => {
-  const title =
-    "BIS Certificate for Welded Pipes & Tubes | IS 17876:2022 BIS License";
-  const ogTitle =
-    "BIS Certification for Welded Pipes & Tubes – IS 17876:2022 Guide";
-  const twitterTitle = "BIS License for Welded Pipes & Tubes | IS 17876:2022";
+  const title = "BIS Certificate for Flashlight | IS 2083:2024 BIS License";
+  const ogTitle = "BIS Certification for Flashlight – IS 2083:2024 Guide";
+  const twitterTitle = "BIS License for Flashlight | IS 2083:2024";
   const metaDescription =
-    "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Flashlight under IS 2083:2024. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Welded Pipes & Tubes as per IS 17876:2022. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Flashlight as per IS 2083:2024. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Flashlight under IS 2083:2024. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Welded Pipes & Tubes, BIS License for Welded Pipes & Tubes, IS 17876:2022, BIS Certification for Welded Pipes & Tubes";
+    "BIS Certificate for Flashlight, BIS License for Flashlight, IS 2083:2024, BIS Certification for Flashlight";
   const websiteUrl =
-    "https://bis-certifications.com/bis-certification-for-welded-pipes-and-tubes-is-17876";
+    "https://bis-certifications.com/blogs/ISI-products/flashlight-IS-2083";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -111,7 +109,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Welded Pipes & Tubes – IS 17876:2022
+                    BIS Certificate for Flashlight – IS 2083:2024
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -143,319 +141,391 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for Stainless Steel Welded Pipes and Tubes under IS
-          17876:2022
+          BIS Certificate for Flashlight under IS 2083:2024 – Complete
+          Compliance Guide
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforWeldedPipes&Tubes.png"
-            title="BIS License for Welded Pipes & Tubes"
-            alt="BIS Certificate for Welded Pipes & Tubes - IS 17876:2022 BIS Certification"
+            src="/BISCertificationProductsImages/BISLicenseforFlashlight.png"
+            title="BIS License for Flashlight"
+            alt="BIS Certificate for Flashlight - IS 2083:2024 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Stainless steel welded pipes and tubes are extensively used across
-          industries such as construction, chemical processing, food & beverage,
-          water distribution, structural applications, and general engineering.
-          As these pipes carry fluids, gases, and in some cases corrosive
-          chemicals, their strength, corrosion resistance, and manufacturing
-          integrity must be verified before they enter the market.
+          Flashlights (commonly referred to as torches) are essential portable
+          lighting devices used across households, industries, emergency
+          services, security operations, outdoor activities, and disaster
+          management. Because flashlights are electrical products that involve
+          batteries, circuitry, light sources, and enclosures, quality and
+          safety compliance is critical.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To regulate quality and ensure public and industrial safety, the
-          Government of India has made BIS Certification mandatory for stainless
-          steel welded pipes and tubes under IS 17876:2022.
+          To regulate product quality, performance, and consumer safety, the
+          Bureau of Indian Standards (BIS) has notified IS 2083:2024 –
+          Flashlight: Specification, making BIS Certification mandatory for
+          flashlights sold, manufactured, or imported into India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide explains the complete BIS approval process,
-          documentation, testing requirements, cost, timeline, manufacturer
-          obligations, benefits, and compliance rules — written in a fresh and
-          unique format, ensuring zero duplication with previous content.
+          This page provides a comprehensive and original explanation of BIS
+          Certification for flashlights, covering the applicable standard,
+          certification process, testing requirements, documentation, fees,
+          timelines, penalties, and compliance responsibilities.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          What is BIS Certification for Stainless Steel Welded Pipes & Tubes?
+          What is BIS Certification and Why It Applies to Flashlights
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Bureau of Indian Standards (BIS) regulates product quality in
-          India through various certification schemes. A product that falls
-          under a mandatory Quality Control Order (QCO) must obtain a BIS
-          License before it is manufactured, imported, stocked, sold, or
-          distributed.
+          The Bureau of Indian Standards (BIS) is India's national standards
+          authority responsible for ensuring that products sold in the Indian
+          market meet prescribed safety, quality, and performance benchmarks.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          What BIS Certification Ensures
+          Meaning of BIS Certification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS certificate confirms that stainless steel welded pipes/tubes:
+          A BIS Certificate confirms that a flashlight:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Meet dimensional accuracy</li>
-          <li>Possess required mechanical strength</li>
-          <li>Display corrosion resistance</li>
-          <li>Are manufactured using approved grades of stainless steel</li>
-          <li>Comply with Indian testing conditions</li>
+          <li>Conforms to Indian Standard IS 2083:2024</li>
+          <li>Has passed all mandatory laboratory tests</li>
+          <li>Meets electrical, mechanical, and performance requirements</li>
+          <li>Is safe for consumer use</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Once certified, products must bear the ISI Mark along with the license
-          (CML) number.
+          Once approved, the manufacturer is permitted to affix the ISI Mark,
+          which signifies compliance with Indian Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS Standard for Stainless Steel Welded Pipes & Tubes – IS 17876:2022
+          Applicable Indian Standard – IS 2083:2024 (Flashlight: Specification)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable standard is:
+          🔹 <strong>IS 2083:2024</strong> – Flashlight: Specification
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17876:2022</strong> – Stainless Steel Welded Pipes and
-          Tubes for General Service
+          IS 2083:2024 defines the construction, performance, safety, and
+          testing requirements for portable flashlights used for general
+          illumination.
         </p>
 
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Scope of IS 2083:2024
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          This standard outlines:
+          The standard covers:
         </p>
-
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chemical composition</li>
-          <li>Mechanical property requirements</li>
-          <li>Manufacturing tolerances</li>
-          <li>Dimensional specifications</li>
-          <li>Surface and finish guidelines</li>
-          <li>Hydrostatic and non-destructive testing</li>
-          <li>Safety performance criteria</li>
+          <li>Handheld flashlights (torches)</li>
+          <li>Battery-operated flashlights</li>
+          <li>Rechargeable flashlights</li>
+          <li>LED flashlights</li>
+          <li>Emergency and utility flashlights</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Key Areas Covered by the Standard
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Electrical safety</li>
+          <li>Luminous performance</li>
+          <li>Mechanical strength</li>
+          <li>Battery compatibility</li>
+          <li>Switch durability</li>
+          <li>Protection against overheating</li>
+          <li>Resistance to normal wear and tear</li>
+          <li>Marking and labeling requirements</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          These pipes are used for general service applications, meaning they
-          must meet a broad range of operational environments.
+          Any flashlight that falls under this scope must obtain a BIS License
+          for Flashlight before entering the Indian market.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for IS 17876:2022 Products
+          Why BIS Certification is Mandatory for Flashlights
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Stainless steel welded pipes are widely used in:
+          Flashlights are widely used by consumers of all age groups and in
+          critical situations such as emergencies, power outages, and industrial
+          operations. Substandard flashlights can cause:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Water pipelines</li>
-          <li>Chemical transport</li>
-          <li>Food & pharmaceutical plants</li>
-          <li>Structural engineering</li>
-          <li>Exhaust and ventilation systems</li>
+          <li>Electrical short circuits</li>
+          <li>Battery leakage or explosion</li>
+          <li>Overheating</li>
+          <li>Fire hazards</li>
+          <li>Poor illumination performance</li>
+          <li>Premature failure</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          If not manufactured properly, these pipes can lead to:
-        </p>
-
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          BIS Certification Ensures
+        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Leakage failures</li>
-          <li>Burst under pressure</li>
-          <li>Corrosion and contamination</li>
-          <li>Structural instability</li>
+          <li>Electrical and user safety</li>
+          <li>Consistent light output</li>
+          <li>Durable construction</li>
+          <li>Safe battery operation</li>
+          <li>Compliance with Indian regulatory requirements</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To prevent substandard materials from entering the supply chain, BIS
-          requires every manufacturer — domestic or foreign — to secure the BIS
-          License for Stainless Steel Welded Pipes and Tubes.
+          Selling non-certified flashlights is a legal violation under the BIS
+          Act, 2016.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS Certification Process for IS 17876:2022
+          Scope of BIS License for Flashlight
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The certification procedure involves rigorous laboratory testing and
-          inspection.
+          <strong>1.1</strong> This standard specifies the requirements and
+          tests for flashlights powered by replaceable primary batteries and
+          replaceable/built-in secondary batteries with a maximum voltage of 48
+          V d.c.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 1 – Identify Product Category & Grade
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Evaluate the specific grade(s) of stainless steel being manufactured
-          and confirm they fall under IS 17876:2022.
+          <strong>1.2</strong> This standard is applicable to pre-focused as
+          well as focusing type of flashlights with incandescent bulb and LED
+          module as light source.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 2 – Submit Online Application
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must apply through the Manak Online BIS Portal,
-          submitting:
+          <strong>1.3</strong> The following are not covered under the scope of
+          this standard:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory details</li>
-          <li>Production capacity</li>
-          <li>Process flow diagram</li>
-          <li>Raw material sources</li>
-          <li>Quality assurance documentation</li>
-          <li>Brand & trademark details</li>
+          <li>
+            Cord and plug connected handlamps that are within the scope of IS
+            10322 (Part 5/Sec 6);
+          </li>
+          <li>
+            Emergency lighting that is within the scope of IS 10322 (Part 5/Sec
+            8); and
+          </li>
+          <li>Flashlights that are intended for hazardous locations.</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          BIS Certification Process for Flashlights (IS 2083:2024)
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS certification process for flashlights is conducted under the
+          ISI Mark Certification Scheme (Scheme-I) and involves multiple stages.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Step 1 – Product Identification & Standard Mapping
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The manufacturer must confirm that the product qualifies as a
+          flashlight under IS 2083:2024 and identify:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Type of flashlight</li>
+          <li>Power source (battery/rechargeable)</li>
+          <li>Light source (LED, bulb, etc.)</li>
+          <li>Variants and models</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 3 – Pay BIS Fees
+          Step 2 – Online BIS Application
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Payments include:
+          The application is submitted through the BIS Manak Online Portal,
+          along with:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application charges</li>
-          <li>Processing fees</li>
-          <li>Testing fees</li>
+          <li>Manufacturer details</li>
+          <li>Factory address</li>
+          <li>Product description</li>
+          <li>Brand/trademark details</li>
+          <li>Manufacturing process information</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Step 3 – Payment of BIS Fees
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Applicable fees include:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Application fee</li>
+          <li>Processing charges</li>
+          <li>Product testing fees</li>
           <li>Factory inspection charges</li>
-          <li>Marking fees</li>
+          <li>Marking fee</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 4 – Factory Inspection
+          Step 4 – Product Testing as per IS 2083:2024
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Samples are tested at a BIS-recognized laboratory.
+        </p>
+
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
+          Mandatory Tests for Flashlights
+        </h4>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Luminous intensity test</li>
+          <li>Light output stability test</li>
+          <li>Battery endurance test</li>
+          <li>Switch operation test</li>
+          <li>Mechanical strength (drop test)</li>
+          <li>Insulation resistance test</li>
+          <li>Temperature rise test</li>
+          <li>Electrical safety test</li>
+          <li>Marking and labeling verification</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Test reports are directly submitted to BIS by the laboratory.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Step 5 – Factory Inspection
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials inspect:
+          A BIS officer conducts an on-site inspection to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Production sequence</li>
-          <li>Raw material storage</li>
-          <li>Welding machinery</li>
-          <li>Annealing/heat treatment processes</li>
-          <li>Quality documentation</li>
-          <li>Testing infrastructure</li>
-          <li>Calibration records</li>
+          <li>Manufacturing setup</li>
+          <li>Quality control system</li>
+          <li>Incoming material inspection</li>
+          <li>In-process checks</li>
+          <li>Finished product testing</li>
+          <li>Calibration of test instruments</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          They verify compliance with the Scheme of Testing & Inspection (STI).
+          Compliance with the Scheme of Testing and Inspection (STI) is
+          mandatory.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 5 – Grant of BIS License
+          Step 6 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          If all parameters meet BIS requirements, the manufacturer receives:
+          After successful testing and inspection, BIS issues:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS Certificate</li>
-          <li>ISI Mark authorization</li>
-          <li>A unique CML license number</li>
+          <li>ISI Mark approval</li>
+          <li>CML (Certificate of Manufacturing Licence) number</li>
         </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The manufacturer can now legally manufacture and sell flashlights in
+          India.
+        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 6 – Post-License Obligations
+          Step 7 – Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          License holders must:
+          After certification, manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain ongoing internal quality testing</li>
-          <li>Use the ISI Mark correctly</li>
-          <li>Cooperate during periodic BIS surveillance inspections</li>
-          <li>Renew the license on time</li>
+          <li>Use ISI Mark correctly on product and packaging</li>
+          <li>Maintain batch-wise quality records</li>
+          <li>Allow BIS surveillance inspections</li>
+          <li>Renew the license periodically</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of BIS License for Stainless Steel Welded Pipes & Tubes
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> This standard covers the requirements for welded
-          stainless steel pipes and tubes for general services.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> This standard does not specify requirements of
-          welded stainless steel pipes and tubes intended for distinct purposes,
-          which are covered by separate Indian Standards.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification (IS 17876:2022)
+          Documents Required for BIS Certification of Flashlights
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Manufacturing Documents
+          Manufacturing Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license/registration</li>
-          <li>Layout diagram</li>
-          <li>Process flow chart</li>
-          <li>Machinery list (welding, forming, annealing, testing)</li>
-          <li>In-house test equipment list</li>
+          <li>Factory registration/license</li>
+          <li>Manufacturing process flow chart</li>
+          <li>List of machinery</li>
+          <li>In-house testing equipment list</li>
+          <li>Calibration certificates</li>
+          <li>Factory layout</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Technical Documents
+          Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Grade specifications</li>
-          <li>Chemical & mechanical test data</li>
-          <li>Welding procedure specifications</li>
-          <li>Heat treatment records</li>
-          <li>Dimensional tolerance charts</li>
+          <li>Product specification sheet</li>
+          <li>Circuit diagrams</li>
+          <li>Battery specifications</li>
+          <li>Bill of materials</li>
+          <li>Internal test reports</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Legal Documents
+          Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identity proof</li>
+          <li>Identity proof of authorized signatory</li>
           <li>Address proof</li>
-          <li>Brand ownership documents</li>
-          <li>Authorized signatory letter</li>
+          <li>Brand authorization letter</li>
+          <li>Trademark certificate (if applicable)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. BIS Application Documents
+          BIS-Specific Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Filled application form</li>
-          <li>Undertakings & declarations</li>
-          <li>Test request documents</li>
-          <li>Label artwork for ISI marking</li>
+          <li>BIS application form</li>
+          <li>Undertakings and declarations</li>
+          <li>Test request letter</li>
+          <li>Label artwork (ISI marking format)</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements Under IS 17876:2022
+          Testing Requirements under IS 2083:2024 (Detailed)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Testing is the core of BIS approval and ensures that every batch meets
-          strict quality standards.
+          Flashlights must undergo rigorous testing to ensure safety and
+          performance.
+        </p>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Only products passing all mandatory tests qualify for BIS approval.
         </p>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -473,50 +543,34 @@ const MainContentLeft = () => {
             <TableBody>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  8.1
+                  5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Ladle Analysis
+                  Test for Finish
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  8.2
+                  6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Product Analysis
+                  Checking of dimensions
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  10.1
+                  7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Tensile Requirements
+                  Checking of markings
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  12.1
+                  13.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Pipes
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  12.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Tubes
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  13.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Flanging Test
+                  Functional test for switch
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -524,47 +578,32 @@ const MainContentLeft = () => {
                   14
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Reverse Flattening Test
+                  Insulation resistance test
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  15
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Flattening Test
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
                   16
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Grain Size
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  17
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leak Tightness Test
+                  Light distribution test
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  22
+                  18
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Workmanship, Finish, Appearance
+                  Circuit current of LED flashlight
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  23
+                  19
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Dimensions and Tolerances
+                  Test for charging current in built-in rechargeable
+                  battery-operated flashlights
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -575,102 +614,76 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Challenges Faced During BIS Certification
+          Common Challenges in BIS Certification for Flashlights
         </h2>
 
-        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
-          <li>
-            <strong>Failing Chemical Composition Tests</strong>
-            <br />
-            Non-standard alloying elements or impurities cause rejection.
-          </li>
-          <li>
-            <strong>Weld Defects During NDT</strong>
-            <br />
-            Poor welding processes or inconsistent heat treatment can create
-            flaws.
-          </li>
-          <li>
-            <strong>Dimensional Non-Conformance</strong>
-            <br />
-            Wall thickness variations commonly lead to failures.
-          </li>
-          <li>
-            <strong>Incomplete Documentation</strong>
-            <br />
-            Missing or unclear records delay license approval.
-          </li>
-          <li>
-            <strong>Calibration Issues</strong>
-            <br />
-            Uncalibrated equipment results in unreliable test results.
-          </li>
-          <li>
-            <strong>Incorrect branding/label submission</strong>
-            <br />
-            ISI mark artwork must match BIS specifications.
-          </li>
-        </ol>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Failure in temperature rise test</li>
+          <li>Inconsistent luminous output</li>
+          <li>Poor switch durability</li>
+          <li>Battery compatibility issues</li>
+          <li>Incorrect ISI label format</li>
+          <li>Incomplete documentation</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Pre-testing and expert guidance significantly reduce rejection risks.
+        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Stainless Steel Pipes & Tubes
+          Benefits of BIS Certification for Flashlight Manufacturers
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal approval to manufacture/sell in India</li>
-          <li>Assurance of quality and safety</li>
-          <li>Improved reputation and market credibility</li>
-          <li>Acceptability by government and PSU tenders</li>
-          <li>Increased export potential</li>
-          <li>Reduced product failure risks</li>
-          <li>Protection against counterfeit or substandard competitors</li>
+          <li>Legal permission to sell in India</li>
+          <li>Enhanced consumer trust</li>
+          <li>Improved product reliability</li>
+          <li>Acceptance on e-commerce platforms</li>
+          <li>Eligibility for government procurement</li>
+          <li>Reduced liability and recalls</li>
+          <li>Strong brand credibility</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Penalties for Non-Compliance
+          Penalties for Selling Flashlights Without BIS Certification
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers/importers selling non-certified products face:
+          Non-compliance may result in:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Product seizure</li>
-          <li>Heavy penalties under the BIS Act</li>
-          <li>Closure of manufacturing operations</li>
-          <li>Import restrictions</li>
-          <li>Legal prosecution</li>
-          <li>Cancellation of existing licenses</li>
+          <li>Heavy monetary penalties</li>
+          <li>Import bans</li>
+          <li>Manufacturing shutdowns</li>
+          <li>Criminal prosecution under BIS Act</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Compliance is mandatory and strictly enforced.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Must Obtain BIS License for SS Welded Pipes and Tubes?
+          Who Needs BIS Certification for Flashlights?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
-          <li>Overseas manufacturers exporting to India</li>
-          <li>Importers of stainless steel pipes</li>
-          <li>OEM suppliers</li>
-          <li>Industrial distributors</li>
-          <li>Private label brands</li>
+          <li>Foreign manufacturers exporting to India</li>
+          <li>Importers</li>
+          <li>Brand owners</li>
+          <li>OEM/ODM suppliers</li>
+          <li>Online sellers and distributors</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each manufacturing location must obtain its own license.
+          Each manufacturing unit requires a separate BIS license.
         </p>
 
         {/* Separator Line */}
@@ -681,115 +694,103 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for Stainless Steel Welded Pipes and Tubes under
-          IS 17876:2022 ensures the reliability, durability, and performance of
-          critical piping products used across multiple industries. With
-          mandatory certification now enforced, manufacturers and importers must
-          align their processes, testing, and documentation with BIS
-          requirements to legally supply their products in the Indian market.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          With expert guidance, the BIS licensing process becomes faster,
-          smoother, and fully compliant.
+          The BIS Certificate for Flashlight under IS 2083:2024 is a mandatory
+          regulatory requirement that ensures safety, performance, and
+          reliability of portable lighting products in India. Compliance not
+          only protects consumers but also strengthens brand credibility and
+          market access. With professional guidance, manufacturers and importers
+          can achieve BIS certification smoothly and efficiently.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs — BIS Certification for Stainless Steel Welded Pipes & Tubes
+          FAQs – BIS Certificate for Flashlight (IS 2083:2024)
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                1. Is BIS Certification mandatory for stainless steel welded
-                pipes?
+                1. Is BIS Certification mandatory for flashlights in India?
               </strong>
               <br />
-              Yes. Under IS 17876:2022, BIS certification is compulsory for all
-              manufacturers and importers.
+              Yes. Flashlights covered under IS 2083:2024 must be BIS certified.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required?</strong>
+              <strong>2. Which standard applies to flashlights?</strong>
               <br />
-              Chemical analysis, tensile test, hardness test, hydrostatic
-              testing, NDT, flattening, and dimensional checks.
+              IS 2083:2024 – Flashlight: Specification.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. How long does BIS certification take?</strong>
+              <strong>3. How long does the BIS process take?</strong>
               <br />
-              Typically 35–50 days for Indian Manufacturer and around 120 days
-              for foreign manufacturer, depending on testing and inspection
-              readiness.
+              Approximately 30–45 working days for Indian Manufacturers and
+              around 120 days for Foreign Manufacturers.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                4. Can foreign manufacturers obtain BIS certification?
+                4. Can foreign manufacturers apply for BIS certification?
               </strong>
               <br />
-              Yes, through the FMCS (Foreign Manufacturers Certification
-              Scheme).
+              Yes, through the FMCS scheme.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. What documents are required?</strong>
+              <strong>5. Is ISI marking mandatory?</strong>
               <br />
-              Factory license, test equipment list, BOM, process flow, drawings,
-              QC plan, brand documents, etc.
+              Yes, ISI Mark must be displayed on certified flashlights.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. What if a sample fails testing?</strong>
+              <strong>6. What happens if a flashlight fails testing?</strong>
               <br />
-              The manufacturer must correct the issue, rework the product, and
-              resubmit for testing.
+              The product must be corrected and retested.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Is ISI marking mandatory after approval?</strong>
+              <strong>7. Are rechargeable flashlights also covered?</strong>
               <br />
-              Yes. Products must display ISI Mark + CML number.
+              Yes, if they fall within the scope of IS 2083:2024.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Are all grades covered under IS 17876?</strong>
+              <strong>8. How long is the BIS license valid?</strong>
               <br />
-              Only specific grades defined under the standard qualify.
+              1–2 years, renewable.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. How often does BIS conduct surveillance?</strong>
+              <strong>
+                9. Can multiple models be covered under one license?
+              </strong>
               <br />
-              Periodic audits and random sample testing are performed during the
-              license validity.
+              Yes, if they meet similarity criteria.
             </p>
           </div>
         </div>
 
         <ManyUsersAlsoRead />
-
         <ServiceAuthorEng />
       </div>
     </div>
