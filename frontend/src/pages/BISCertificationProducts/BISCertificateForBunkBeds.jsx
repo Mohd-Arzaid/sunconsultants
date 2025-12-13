@@ -1,4 +1,5 @@
 import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
+import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
   Breadcrumb,
@@ -920,6 +921,8 @@ const MainContentLeft = () => {
           team is ready to assist you with end-to-end BIS Certification for bunk
           beds.
         </p>
+
+        <ManyUsersAlsoRead />
 
         <ServiceAuthorEng />
       </div>

@@ -114,7 +114,9 @@ const AuditsMarquee = () => {
           <div className="marquee-track flex flex-nowrap items-center gap-6">
             {duplicated.map((item, i) => (
               <div
-                key={`${item.id}-${i}`}
+                key={`audit-${item.id}-copy-${Math.floor(
+                  i / galleryImages.length
+                )}`}
                 className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 hover:shadow-xl bg-white shrink-0"
                 style={{ minWidth: "300px", maxWidth: "400px" }}
               >

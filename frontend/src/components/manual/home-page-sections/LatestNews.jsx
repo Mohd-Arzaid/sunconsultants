@@ -150,7 +150,7 @@ const LatestNews = () => {
             >
               {duplicatedNotifications.map((notification, index) => (
                 <Link
-                  key={`notification-${index}`}
+                  key={`notification-${notification.id}-${index}`}
                   to={getNotificationDetailUrl(notification.title)}
                   className="no-underline"
                 >

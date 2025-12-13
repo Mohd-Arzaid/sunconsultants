@@ -70,7 +70,7 @@ const Home = ({ onVideoPopupChange }) => {
         <Hero />
       </section>
 
-      <section aria-label="Partner Logos" className="w-full">
+      <section aria-label="Partner Logos -Top" className="w-full">
         <Suspense fallback={<LogoTickerSkeleton />}>
           <LogoTicker />
         </Suspense>
@@ -124,7 +124,7 @@ const Home = ({ onVideoPopupChange }) => {
         </Suspense>
       </section>
 
-      <section aria-label="Partner Logos" className="w-full">
+      <section aria-label="Partner Logos - Bottom" className="w-full">
         <Suspense fallback={<LogoTickerSkeleton />}>
           <LogoTicker />
         </Suspense>

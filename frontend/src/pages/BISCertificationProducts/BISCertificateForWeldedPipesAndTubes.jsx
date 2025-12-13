@@ -26,7 +26,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForTablesAndDesksUnit = () => {
+const BISCertificateForWeldedPipesAndTubes = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -39,23 +39,24 @@ const BISCertificateForTablesAndDesksUnit = () => {
   );
 };
 
-export default BISCertificateForTablesAndDesksUnit;
+export default BISCertificateForWeldedPipesAndTubes;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Tables & Desks | IS 17633:2022 BIS License";
-  const ogTitle = "BIS Certification for Tables & Desks – IS 17633:2022 Guide";
-  const twitterTitle = "BIS License for Tables & Desks | IS 17633:2022";
+    "BIS Certificate for Welded Pipes & Tubes | IS 17876:2022 BIS License";
+  const ogTitle =
+    "BIS Certification for Welded Pipes & Tubes – IS 17876:2022 Guide";
+  const twitterTitle = "BIS License for Welded Pipes & Tubes | IS 17876:2022";
   const metaDescription =
-    "Get BIS Certificate for Tables & Desks under IS 17633:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Tables & Desks as per IS 17633:2022. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Welded Pipes & Tubes as per IS 17876:2022. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Tables & Desks under IS 17633:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Tables & Desks, BIS License for Tables & Desks, IS 17633:2022, BIS Certification for Tables & Desks";
+    "BIS Certificate for Welded Pipes & Tubes, BIS License for Welded Pipes & Tubes, IS 17876:2022, BIS Certification for Welded Pipes & Tubes";
   const websiteUrl =
-    "https://bis-certifications.com/bis-certification-for-tables-&-desks-unit-is-17633";
+    "https://bis-certifications.com/bis-certification-for-welded-pipes-and-tubes-is-17876";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -112,7 +113,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Tables & Desks – IS 17633:2022
+                    BIS Certificate for Welded Pipes & Tubes – IS 17876:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -144,373 +145,319 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for Tables and Desks – Complete Guide to IS 17633:2022
-          BIS Certification
+          BIS Certificate for Stainless Steel Welded Pipes and Tubes under IS
+          17876:2022
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforTables&Desks.png"
-            title="BIS License for Tables and Desks"
-            alt="BIS Certificate for Tables and Desks - IS 17633:2022 BIS Certification"
+            src="/BISCertificationProductsImages/BISLicenseforWeldedPipes&Tubes.png"
+            title="BIS License for Welded Pipes & Tubes"
+            alt="BIS Certificate for Welded Pipes & Tubes - IS 17876:2022 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for Tables and Desks is mandatory for all
-          manufacturers, importers, and sellers of tables and desks in India.
-          Under the Indian Standard IS 17633:2022 – Tables and Desks: Safety
-          Requirements, these furniture items must be tested and certified by
-          the Bureau of Indian Standards (BIS) before they can be legally sold
-          in the Indian market.
+          Stainless steel welded pipes and tubes are extensively used across
+          industries such as construction, chemical processing, food & beverage,
+          water distribution, structural applications, and general engineering.
+          As these pipes carry fluids, gases, and in some cases corrosive
+          chemicals, their strength, corrosion resistance, and manufacturing
+          integrity must be verified before they enter the market.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tables and desks are essential components of homes, offices, schools,
-          universities, commercial spaces, hospitality environments, and
-          industrial workplaces. Because they often support weight, impact, and
-          continuous usage, their structural strength and safety are critical.
-          To ensure consumer protection and product reliability, BIS mandates
-          compulsory certification.
+          To regulate quality and ensure public and industrial safety, the
+          Government of India has made BIS Certification mandatory for stainless
+          steel welded pipes and tubes under IS 17876:2022.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide explains IS 17633:2022, the BIS registration
-          process, testing, required documentation, fees, timelines, penalties,
-          and benefits for manufacturers and importers.
+          This comprehensive guide explains the complete BIS approval process,
+          documentation, testing requirements, cost, timeline, manufacturer
+          obligations, benefits, and compliance rules — written in a fresh and
+          unique format, ensuring zero duplication with previous content.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          What is BIS Certification for Stainless Steel Welded Pipes & Tubes?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a regulatory compliance process administered by
-          the Bureau of Indian Standards, India's national standards authority.
+          The Bureau of Indian Standards (BIS) regulates product quality in
+          India through various certification schemes. A product that falls
+          under a mandatory Quality Control Order (QCO) must obtain a BIS
+          License before it is manufactured, imported, stocked, sold, or
+          distributed.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          BIS Certificate Meaning
+          What BIS Certification Ensures
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate confirms that the product meets the safety, quality,
-          performance, and durability requirements set by Indian Standards.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          A BIS certificate confirms that stainless steel welded pipes/tubes:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Benefits of BIS Certification
-        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ensures consumer safety</li>
-          <li>Supports high-quality manufacturing</li>
-          <li>Reduces product failure risk</li>
-          <li>Improves market acceptance</li>
-          <li>Legally required under BIS Quality Control Orders (QCOs)</li>
+          <li>Meet dimensional accuracy</li>
+          <li>Possess required mechanical strength</li>
+          <li>Display corrosion resistance</li>
+          <li>Are manufactured using approved grades of stainless steel</li>
+          <li>Comply with Indian testing conditions</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Once approved, the product bears the BIS Mark (ISI Mark) along with
-          the license number.
+          Once certified, products must bear the ISI Mark along with the license
+          (CML) number.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Which Indian Standard Applies to Tables & Desks? – IS 17633:2022
+          BIS Standard for Stainless Steel Welded Pipes & Tubes – IS 17876:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable BIS standard is:
+          The applicable standard is:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17633:2022</strong> – Tables and Desks: Safety
-          Requirements
+          🔹 <strong>IS 17876:2022</strong> – Stainless Steel Welded Pipes and
+          Tubes for General Service
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          This standard defines performance, structural safety, and durability
-          requirements for all types of tables and desks used in residential,
-          commercial, hospitality, and institutional environments.
+          This standard outlines:
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Products Covered
-        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Office desks</li>
-          <li>Computer desks</li>
-          <li>Study tables</li>
-          <li>Dining tables</li>
-          <li>Coffee tables</li>
-          <li>Work desks</li>
-          <li>Training desks</li>
-          <li>School/college desks</li>
-          <li>Teacher tables</li>
-          <li>Modular workstation tables</li>
-          <li>Writing tables</li>
-          <li>Meeting/conference tables</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Key Safety Parameters Under IS 17633:2022
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Structural stability</li>
-          <li>Load-bearing capacity</li>
-          <li>Impact resistance</li>
-          <li>Horizontal/vertical force performance</li>
-          <li>Surface finish quality</li>
-          <li>Edge safety</li>
-          <li>Durability under repetitive use</li>
-          <li>Material safety</li>
+          <li>Chemical composition</li>
+          <li>Mechanical property requirements</li>
+          <li>Manufacturing tolerances</li>
+          <li>Dimensional specifications</li>
+          <li>Surface and finish guidelines</li>
+          <li>Hydrostatic and non-destructive testing</li>
+          <li>Safety performance criteria</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Every table or desk sold in India must comply with these parameters
-          through BIS Registration for Tables & Desks.
+          These pipes are used for general service applications, meaning they
+          must meet a broad range of operational environments.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Tables and Desks
+          Why BIS Certification is Mandatory for IS 17876:2022 Products
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Tables and desks are high-use furniture items found in homes, offices,
-          schools, and public areas. Structural failures can cause accidents
-          such as:
+          Stainless steel welded pipes are widely used in:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Collapsing under weight</li>
-          <li>Sharp edge injuries</li>
-          <li>Instability during use</li>
-          <li>Breakage of joints</li>
-          <li>Surface detachment</li>
+          <li>Water pipelines</li>
+          <li>Chemical transport</li>
+          <li>Food & pharmaceutical plants</li>
+          <li>Structural engineering</li>
+          <li>Exhaust and ventilation systems</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          To avoid these hazards, BIS certification ensures:
+          If not manufactured properly, these pipes can lead to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Safe design and construction</li>
-          <li>Compliance with structural load requirements</li>
-          <li>Durable performance</li>
-          <li>Prevention of tipping and collapse</li>
-          <li>High-quality material selection</li>
-          <li>Uniform market standards</li>
+          <li>Leakage failures</li>
+          <li>Burst under pressure</li>
+          <li>Corrosion and contamination</li>
+          <li>Structural instability</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Selling tables and desks without a BIS License for Tables & Desks is
-          illegal in India.
+          To prevent substandard materials from entering the supply chain, BIS
+          requires every manufacturer — domestic or foreign — to secure the BIS
+          License for Stainless Steel Welded Pipes and Tubes.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS Certification Process for Tables and Desks (IS 17633:2022)
+          BIS Certification Process for IS 17876:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS certification process follows the ISI Scheme (Conformity
-          Assessment Scheme–I), which includes product testing and factory
+          The certification procedure involves rigorous laboratory testing and
           inspection.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 1 – Identify Product Category & Standard
+          Step 1 – Identify Product Category & Grade
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Confirm that the table/desk falls under IS 17633:2022. Identify number
-          of variants and materials.
+          Evaluate the specific grade(s) of stainless steel being manufactured
+          and confirm they fall under IS 17876:2022.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 2 – File BIS Application (Online Submission)
+          Step 2 – Submit Online Application
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Fill the application on the BIS Manak Online Portal with:
+          Manufacturers must apply through the Manak Online BIS Portal,
+          submitting:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturer details</li>
-          <li>Factory address</li>
-          <li>Product specifications</li>
-          <li>Trademark details</li>
-          <li>Quality control systems</li>
+          <li>Factory details</li>
+          <li>Production capacity</li>
+          <li>Process flow diagram</li>
+          <li>Raw material sources</li>
+          <li>Quality assurance documentation</li>
+          <li>Brand & trademark details</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 3 – Payment of BIS Certification Fees
+          Step 3 – Pay BIS Fees
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">Includes:</p>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Payments include:
+        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Processing fee</li>
-          <li>Product testing charges</li>
-          <li>Factory inspection fees</li>
+          <li>Application charges</li>
+          <li>Processing fees</li>
+          <li>Testing fees</li>
+          <li>Factory inspection charges</li>
           <li>Marking fees</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 4 – Sample Testing in a BIS-Recognized Laboratory
+          Step 4 – Factory Inspection
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Products must undergo full testing as prescribed under IS 17633:2022.
+          BIS officials inspect:
         </p>
-        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Tests Conducted
-        </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Stability Test</li>
-          <li>Strength Test (Static Load)</li>
-          <li>Durability Test (Repetitive Loading)</li>
-          <li>Impact Test</li>
-          <li>Deflection Measurement</li>
-          <li>Edge and Surface Safety Test</li>
-          <li>Workspace Load Test</li>
+          <li>Production sequence</li>
+          <li>Raw material storage</li>
+          <li>Welding machinery</li>
+          <li>Annealing/heat treatment processes</li>
+          <li>Quality documentation</li>
+          <li>Testing infrastructure</li>
+          <li>Calibration records</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Lab uploads the test reports directly to BIS.
+          They verify compliance with the Scheme of Testing & Inspection (STI).
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 5 – BIS Factory Inspection
+          Step 5 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS officer visits the manufacturing facility to verify:
+          If all parameters meet BIS requirements, the manufacturer receives:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Quality management system</li>
-          <li>In-house testing capability</li>
-          <li>Raw material control</li>
-          <li>Production line & machinery</li>
-          <li>Calibration of instruments</li>
-          <li>Compliance with STI (Scheme of Testing & Inspection)</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 6 – Grant of BIS License
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">BIS issues:</p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS Certificate</li>
-          <li>ISI Mark approval</li>
-          <li>Unique CML license number</li>
+          <li>ISI Mark authorization</li>
+          <li>A unique CML license number</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          After this, the manufacturer can legally mark and sell tables/desks in
-          India.
-        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 7 – Post-License Compliance
+          Step 6 – Post-License Obligations
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must:
+          License holders must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain records as per STI</li>
-          <li>Use ISI marking correctly</li>
-          <li>Allow periodic BIS inspections</li>
-          <li>Renew license every 1–2 years</li>
+          <li>Maintain ongoing internal quality testing</li>
+          <li>Use the ISI Mark correctly</li>
+          <li>Cooperate during periodic BIS surveillance inspections</li>
+          <li>Renew the license on time</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of BIS License for Tables & Desks
+          Scope of BIS License for Stainless Steel Welded Pipes & Tubes
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> This standard covers the requirements relating to
-          the performance and safety that is, strength, stability and durability
-          of tables and desks to be used for in a seated and/or standing
-          positions, used by adults.
+          <strong>1.1</strong> This standard covers the requirements for welded
+          stainless steel pipes and tubes for general services.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> This standard applies to completely manufactured/
-          fabricated tables and desks. It also applies to ready-to-assemble
-          units; in that case the requirements of this standard shall apply to
-          the assembled units.
+          <strong>1.2</strong> This standard does not specify requirements of
+          welded stainless steel pipes and tubes intended for distinct purposes,
+          which are covered by separate Indian Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification of Tables & Desks
+          Documents Required for BIS Certification (IS 17876:2022)
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Manufacturing Documents
+          1. Manufacturing Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory license</li>
-          <li>Machinery list</li>
-          <li>Testing equipment list</li>
-          <li>Calibration certificates</li>
-          <li>Factory layout</li>
-          <li>Process flowchart</li>
+          <li>Factory license/registration</li>
+          <li>Layout diagram</li>
+          <li>Process flow chart</li>
+          <li>Machinery list (welding, forming, annealing, testing)</li>
+          <li>In-house test equipment list</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Technical Documents
+          2. Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Table/desk drawings</li>
-          <li>Bill of materials</li>
-          <li>Product specifications</li>
-          <li>Internal quality test reports</li>
-          <li>Photos/videos of the product</li>
+          <li>Grade specifications</li>
+          <li>Chemical & mechanical test data</li>
+          <li>Welding procedure specifications</li>
+          <li>Heat treatment records</li>
+          <li>Dimensional tolerance charts</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Legal Documents
+          3. Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Authorized signatory ID proof</li>
+          <li>Identity proof</li>
           <li>Address proof</li>
-          <li>Brand authorization letter</li>
-          <li>Trademark registration certificate</li>
+          <li>Brand ownership documents</li>
+          <li>Authorized signatory letter</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          BIS Application Documents
+          4. BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Filled application form</li>
-          <li>Manufacturer's undertaking</li>
-          <li>Test request letter</li>
-          <li>Letter of authorization</li>
+          <li>Undertakings & declarations</li>
+          <li>Test request documents</li>
+          <li>Label artwork for ISI marking</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Complete documentation ensures faster approvals.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements under IS 17633:2022
+          Testing Requirements Under IS 17876:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The testing evaluates strength, stability, durability, and safety.
+          Testing is the core of BIS approval and ensures that every batch meets
+          strict quality standards.
         </p>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -528,147 +475,160 @@ const MainContentLeft = () => {
             <TableBody>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4
+                  8.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Design and workmanship
+                  Ladle Analysis
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2.1
+                  8.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stability Test
+                  Product Analysis
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.1
+                  10.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Stated load
+                  Tensile Requirements
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1.2
+                  12.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  For occasional heavy loads
+                  Pipes
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
+                  12.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Strength under horizontal static force
+                  Tubes
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.1
+                  13.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  General
+                  Flanging Test
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.2
+                  14
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vertical Impact Test for Glass Table Tops
+                  Reverse Flattening Test
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.6.3
+                  15
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Vertical Impact Test for All Other Table Tops
+                  Flattening Test
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.7
+                  16
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Deflection of Table Tops
+                  Grain Size
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.9
+                  17
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Drop Test
+                  Leak Tightness Test
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  22
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Workmanship, Finish, Appearance
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  23
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Dimensions and Tolerances
                 </TableCell>
               </TableRow>
             </TableBody>
           </Table>
         </div>
 
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          Testing must be conducted only at BIS-approved laboratories.
-        </p>
-
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Common Challenges & How to Avoid Them
+          Challenges Faced During BIS Certification
         </h2>
 
-        <div className="space-y-3 mb-4">
-          <p className="text-gray-600 text-base font-geist">
-            <strong>1. Product failing load or durability tests</strong>
+        <ol className="list-decimal ml-6 mb-4 space-y-3 text-gray-600 text-base font-geist">
+          <li>
+            <strong>Failing Chemical Composition Tests</strong>
             <br />
-            Solution: Strengthen joints, use BIS-compliant materials, add
-            reinforcement.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>2. Incomplete documentation</strong>
+            Non-standard alloying elements or impurities cause rejection.
+          </li>
+          <li>
+            <strong>Weld Defects During NDT</strong>
             <br />
-            Solution: Prepare all legal, technical, and manufacturing documents
-            in advance.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>3. Factory lacking proper testing equipment</strong>
+            Poor welding processes or inconsistent heat treatment can create
+            flaws.
+          </li>
+          <li>
+            <strong>Dimensional Non-Conformance</strong>
             <br />
-            Solution: Install required instruments and maintain calibration as
-            per BIS guidelines.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>4. Incorrect labeling</strong>
+            Wall thickness variations commonly lead to failures.
+          </li>
+          <li>
+            <strong>Incomplete Documentation</strong>
             <br />
-            Solution: Ensure ISI marking follows BIS rules exactly.
-          </p>
-          <p className="text-gray-600 text-base font-geist">
-            <strong>5. Misclassification of product models</strong>
+            Missing or unclear records delay license approval.
+          </li>
+          <li>
+            <strong>Calibration Issues</strong>
             <br />
-            Solution: Get professional guidance to categorize variants
-            correctly.
-          </p>
-        </div>
+            Uncalibrated equipment results in unreliable test results.
+          </li>
+          <li>
+            <strong>Incorrect branding/label submission</strong>
+            <br />
+            ISI mark artwork must match BIS specifications.
+          </li>
+        </ol>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Benefits of BIS Certification for Tables & Desks
+          Benefits of BIS Certification for Stainless Steel Pipes & Tubes
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal authorization to sell in India</li>
-          <li>Increased customer trust</li>
-          <li>Better product durability</li>
-          <li>Access to major retailers & e-commerce platforms</li>
-          <li>Lower product liability risk</li>
-          <li>Higher brand credibility</li>
-          <li>Compliance with government QCOs</li>
-          <li>Competitive market advantage</li>
+          <li>Legal approval to manufacture/sell in India</li>
+          <li>Assurance of quality and safety</li>
+          <li>Improved reputation and market credibility</li>
+          <li>Acceptability by government and PSU tenders</li>
+          <li>Increased export potential</li>
+          <li>Reduced product failure risks</li>
+          <li>Protection against counterfeit or substandard competitors</li>
         </ul>
 
         {/* Separator Line */}
@@ -679,73 +639,40 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling or distributing tables/desks without BIS certification may
-          result in:
+          Manufacturers/importers selling non-certified products face:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Product seizure</li>
-          <li>Heavy fines</li>
-          <li>Criminal prosecution</li>
-          <li>Ban on imports</li>
-          <li>Business closure orders</li>
-          <li>License cancellation</li>
+          <li>Heavy penalties under the BIS Act</li>
+          <li>Closure of manufacturing operations</li>
+          <li>Import restrictions</li>
+          <li>Legal prosecution</li>
+          <li>Cancellation of existing licenses</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Bureau of Indian Standards Act, 2016 enforces stringent penalties.
+          Compliance is mandatory and strictly enforced.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Tables & Desks?
+          Who Must Obtain BIS License for SS Welded Pipes and Tubes?
         </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This certification is mandatory for:
-        </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
-          <li>Foreign manufacturers</li>
-          <li>Importers</li>
-          <li>Traders/brand owners</li>
-          <li>OEM/ODM suppliers</li>
-          <li>Furniture distributors</li>
-          <li>E-commerce sellers</li>
+          <li>Overseas manufacturers exporting to India</li>
+          <li>Importers of stainless steel pipes</li>
+          <li>OEM suppliers</li>
+          <li>Industrial distributors</li>
+          <li>Private label brands</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each factory must obtain a separate BIS License.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why Choose Us for BIS Certification Consulting?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          We provide end-to-end assistance:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standard interpretation (IS 17633:2022)</li>
-          <li>Product classification</li>
-          <li>Documentation drafting</li>
-          <li>Testing coordination</li>
-          <li>BIS portal filing</li>
-          <li>Factory inspection support</li>
-          <li>Continuous follow-up with BIS</li>
-          <li>License approval</li>
-          <li>Renewal and compliance management</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Our expertise ensures fast, hassle-free, and error-free certification.
+          Each manufacturing location must obtain its own license.
         </p>
 
         {/* Separator Line */}
@@ -756,116 +683,109 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for Tables and Desks under IS 17633:2022 is a
-          mandatory conformity requirement that ensures product safety,
-          performance, durability, and compliance with national standards.
-          Manufacturers and importers must undergo product testing, factory
-          inspection, and meet all BIS documentation and labeling rules to
-          obtain the ISI Mark.
+          The BIS Certificate for Stainless Steel Welded Pipes and Tubes under
+          IS 17876:2022 ensures the reliability, durability, and performance of
+          critical piping products used across multiple industries. With
+          mandatory certification now enforced, manufacturers and importers must
+          align their processes, testing, and documentation with BIS
+          requirements to legally supply their products in the Indian market.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          With expert assistance, the entire certification process becomes
-          smooth, fast, and fully compliant with BIS regulations.
+          With expert guidance, the BIS licensing process becomes faster,
+          smoother, and fully compliant.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certificate for Tables & Desks (IS 17633:2022)
+          FAQs — BIS Certification for Stainless Steel Welded Pipes & Tubes
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                1. Is BIS certification mandatory for tables and desks?
+                1. Is BIS Certification mandatory for stainless steel welded
+                pipes?
               </strong>
               <br />
-              Yes. As per IS 17633:2022, all tables and desks must be
-              BIS-certified before being sold in India.
+              Yes. Under IS 17876:2022, BIS certification is compulsory for all
+              manufacturers and importers.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>2. What tests are required for certification?</strong>
+              <strong>2. What tests are required?</strong>
               <br />
-              Mandatory tests include stability, strength, durability,
-              deflection, impact, and surface safety tests.
+              Chemical analysis, tensile test, hardness test, hydrostatic
+              testing, NDT, flattening, and dimensional checks.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>3. What is the BIS certification cost?</strong>
+              <strong>3. How long does BIS certification take?</strong>
               <br />
-              The cost ranges between ₹65,000 – ₹1,30,000, depending on testing
-              and inspection factors.
+              Typically 35–50 days for Indian Manufacturer and around 120 days
+              for foreign manufacturer, depending on testing and inspection
+              readiness.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                4. Do foreign manufacturers need BIS Certification?
+                4. Can foreign manufacturers obtain BIS certification?
               </strong>
               <br />
-              Yes, through the FMCS scheme, which includes overseas factory
-              inspections by BIS.
+              Yes, through the FMCS (Foreign Manufacturers Certification
+              Scheme).
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                5. Can one license cover multiple table/desk models?
-              </strong>
+              <strong>5. What documents are required?</strong>
               <br />
-              Yes, but only if models are similar in construction and testing
-              parameters.
+              Factory license, test equipment list, BOM, process flow, drawings,
+              QC plan, brand documents, etc.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. How long does the BIS process take?</strong>
+              <strong>6. What if a sample fails testing?</strong>
               <br />
-              Approximately 30–45 days.
+              The manufacturer must correct the issue, rework the product, and
+              resubmit for testing.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>7. Is testing mandatory in a BIS-recognized lab?</strong>
+              <strong>7. Is ISI marking mandatory after approval?</strong>
               <br />
-              Yes, only BIS-approved laboratories can conduct the tests.
+              Yes. Products must display ISI Mark + CML number.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. What happens if the product fails?</strong>
+              <strong>8. Are all grades covered under IS 17876?</strong>
               <br />
-              It must be redesigned and resubmitted for testing.
+              Only specific grades defined under the standard qualify.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is ISI marking mandatory after certification?</strong>
+              <strong>9. How often does BIS conduct surveillance?</strong>
               <br />
-              Yes, ISI Mark is required on the product and packaging.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>10. What documents are needed?</strong>
-              <br />
-              Technical drawings, BOM, factory documents, test reports, QC plan,
-              and legal documents.
+              Periodic audits and random sample testing are performed during the
+              license validity.
             </p>
           </div>
         </div>

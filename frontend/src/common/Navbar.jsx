@@ -31,6 +31,7 @@ const Navbar = () => {
   const [updatesOpen, setUpdatesOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
   const mobileMenuRef = useRef(null);
+  const faqIntervalRef = useRef(null);
 
   // Handle FAQ navigation with smooth scrolling
   const handleFaqNavigation = (link) => {
@@ -88,11 +89,17 @@ const Navbar = () => {
       }, 500);
 
       // Strategy 4: Persistent checking
+      // Clear any existing interval first
+      if (faqIntervalRef.current) {
+        clearInterval(faqIntervalRef.current);
+      }
+
       let attempts = 0;
-      const persistentCheck = setInterval(() => {
+      faqIntervalRef.current = setInterval(() => {
         attempts++;
         if (scrollToFaq() || attempts > 20) {
-          clearInterval(persistentCheck);
+          clearInterval(faqIntervalRef.current);
+          faqIntervalRef.current = null;
         }
       }, 200);
 
@@ -123,6 +130,16 @@ const Navbar = () => {
     }
     setOpen(!isOpen);
   };
+
+  // Cleanup interval on unmount
+  useEffect(() => {
+    return () => {
+      if (faqIntervalRef.current) {
+        clearInterval(faqIntervalRef.current);
+        faqIntervalRef.current = null;
+      }
+    };
+  }, []);
 
   // Handle automatic scrolling on page load if hash exists
   useEffect(() => {

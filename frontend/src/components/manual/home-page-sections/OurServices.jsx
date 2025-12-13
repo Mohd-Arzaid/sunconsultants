@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, memo } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const BISImage = "/services-images/BIS.jpg";
@@ -77,6 +77,135 @@ const services = [
     path: "/a-guide-on-how-to-obtain-lmpc-certificate",
   },
 ];
+
+// Memoized Service Card Component for Desktop
+const ServiceCard = memo(({ service, onNavigate }) => {
+  return (
+    <div className="min-w-full h-full flex items-center  p-12">
+      <div className="grid grid-cols-2 gap-12 items-center h-full">
+        {/* Left Side */}
+        <div className="flex flex-col gap-6 order-2 md:order-1">
+          <div className="flex items-center justify-center bg-white/80 backdrop-blur-sm w-24 h-24 rounded-2xl shadow-lg">
+            <img
+              src={service.image}
+              alt={
+                service.title === "CDSCO Registration Certification"
+                  ? "CDSCO Logo"
+                  : `Icon representing ${service.title}`
+              }
+              title={
+                service.title === "CDSCO Registration Certification"
+                  ? "CDSCO Logo"
+                  : `Icon representing ${service.title}`
+              }
+              className="w-20 h-20 rounded-full object-contain"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+          </div>
+
+          <h3 className="font-playfair text-4xl font-bold text-neutral-800">
+            {service.title}
+          </h3>
+
+          <p className="font-geist text-xl text-neutral-600 max-w-lg">
+            {service.description}
+          </p>
+
+          <button
+            onClick={() => onNavigate(service.path)}
+            className="flex items-center gap-3 bg-[#1A8781] text-white py-3 px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-2 group"
+          >
+            <span className="font-medium text-base">Learn More</span>
+            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30">
+              <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45"></div>
+            </div>
+          </button>
+        </div>
+
+        {/* Right Side */}
+        <div className="relative order-1 md:order-2">
+          <div className="hidden md:block absolute -top-10 -left-10 w-40 h-40 bg-[#1A8781]/10 rounded-full"></div>
+          <div className="hidden md:block absolute -bottom-10 -right-10 w-60 h-60 bg-[#1A8781]/15 rounded-full"></div>
+
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[350px] flex items-center justify-center">
+            <img
+              src={service.image}
+              alt={
+                service.title === "CDSCO Registration Certification"
+                  ? "CDSCO Logo"
+                  : `Service icon for ${service.title}`
+              }
+              title={
+                service.title === "CDSCO Registration Certification"
+                  ? "CDSCO Logo"
+                  : `Service icon for ${service.title}`
+              }
+              className="w-48 h-48 rounded-full object-contain"
+              width="192"
+              height="192"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+});
+
+ServiceCard.displayName = "ServiceCard";
+
+// Memoized Service Thumbnail Component
+const ServiceThumbnail = memo(
+  ({ service, index, isActive, onThumbnailClick }) => {
+    return (
+      <div
+        onClick={() => onThumbnailClick(index)}
+        role="button"
+        tabIndex={0}
+        aria-label={`Navigate to ${service.title} page`}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            onThumbnailClick(index);
+          }
+        }}
+        className={`rounded-xl p-3 md:p-4 transition-all duration-300 border cursor-pointer ${
+          isActive
+            ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
+            : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
+        }`}
+      >
+        <div className="flex flex-col items-center text-center gap-1 md:gap-2">
+          <div className="mb-0.5 md:mb-1">
+            <img
+              src={service.image}
+              alt={
+                service.title === "CDSCO Registration Certification"
+                  ? "CDSCO Logo"
+                  : `Small icon for ${service.title}`
+              }
+              title={
+                service.title === "CDSCO Registration Certification"
+                  ? "CDSCO Logo"
+                  : `Small icon for ${service.title}`
+              }
+              className="w-8 h-8 md:w-12 md:h-12 rounded-full object-contain mx-auto"
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </div>
+          <h3 className="font-geist font-medium text-xs md:text-base leading-tight">
+            {service.title}
+          </h3>
+        </div>
+      </div>
+    );
+  }
+);
+
+ServiceThumbnail.displayName = "ServiceThumbnail";
 
 const OurServices = () => {
   const navigate = useNavigate();
@@ -164,81 +293,11 @@ const OurServices = () => {
               style={slideTransform}
             >
               {services.map((service) => (
-                <div
+                <ServiceCard
                   key={service.id}
-                  className="min-w-full h-full flex items-center  p-12"
-                >
-                  <div className="grid grid-cols-2 gap-12 items-center h-full">
-                    {/* Left Side */}
-                    <div className="flex flex-col gap-6 order-2 md:order-1">
-                      <div className="flex items-center justify-center bg-white/80 backdrop-blur-sm w-24 h-24 rounded-2xl shadow-lg">
-                        <img
-                          src={service.image}
-                          alt={
-                            service.title === "CDSCO Registration Certification"
-                              ? "CDSCO Logo"
-                              : `Icon representing ${service.title}`
-                          }
-                          title={
-                            service.title === "CDSCO Registration Certification"
-                              ? "CDSCO Logo"
-                              : `Icon representing ${service.title}`
-                          }
-                          className="w-20 h-20 rounded-full object-contain"
-                          width="80"
-                          height="80"
-                          loading="lazy"
-                        />
-                      </div>
-
-                      <h3 className="font-playfair text-4xl font-bold text-neutral-800">
-                        {service.title}
-                      </h3>
-
-                      <p className="font-geist text-xl text-neutral-600 max-w-lg">
-                        {service.description}
-                      </p>
-
-                      <button
-                        onClick={() => handleServiceNavigation(service.path)}
-                        className="flex items-center gap-3 bg-[#1A8781] text-white py-3 px-6 rounded-full shadow-lg hover:bg-[#125E5A] transition-all duration-300 w-fit mt-2 group"
-                      >
-                        <span className="font-medium text-base">
-                          Learn More
-                        </span>
-                        <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30">
-                          <div className="w-2 h-2 border-t-2 border-r-2 border-white rotate-45"></div>
-                        </div>
-                      </button>
-                    </div>
-
-                    {/* Right Side */}
-                    <div className="relative order-1 md:order-2">
-                      <div className="hidden md:block absolute -top-10 -left-10 w-40 h-40 bg-[#1A8781]/10 rounded-full"></div>
-                      <div className="hidden md:block absolute -bottom-10 -right-10 w-60 h-60 bg-[#1A8781]/15 rounded-full"></div>
-
-                      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-[#1A8781]/20 relative z-10 h-[350px] flex items-center justify-center">
-                        <img
-                          src={service.image}
-                          alt={
-                            service.title === "CDSCO Registration Certification"
-                              ? "CDSCO Logo"
-                              : `Service icon for ${service.title}`
-                          }
-                          title={
-                            service.title === "CDSCO Registration Certification"
-                              ? "CDSCO Logo"
-                              : `Service icon for ${service.title}`
-                          }
-                          className="w-48 h-48 rounded-full object-contain"
-                          width="192"
-                          height="192"
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  service={service}
+                  onNavigate={handleServiceNavigation}
+                />
               ))}
             </div>
           </div>
@@ -263,48 +322,13 @@ const OurServices = () => {
         {/* Service thumbnails */}
         <div className="mt-8 md:mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 min-h-[120px] md:min-h-[140px]">
           {services.map((service, index) => (
-            <div
+            <ServiceThumbnail
               key={service.id}
-              onClick={() => handleThumbnailClick(index)}
-              role="button"
-              tabIndex={0}
-              aria-label={`Navigate to ${service.title} page`}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  handleThumbnailClick(index);
-                }
-              }}
-              className={`rounded-xl p-3 md:p-4 transition-all duration-300 border cursor-pointer ${
-                activeThumbnail === index
-                  ? "bg-[#1A8781]/20 border-[#1A8781]/60 shadow-md"
-                  : "bg-white border-gray-200 hover:border-[#1A8781]/40 hover:bg-[#1A8781]/10"
-              }`}
-            >
-              <div className="flex flex-col items-center text-center gap-1 md:gap-2">
-                <div className="mb-0.5 md:mb-1">
-                  <img
-                    src={service.image}
-                    alt={
-                      service.title === "CDSCO Registration Certification"
-                        ? "CDSCO Logo"
-                        : `Small icon for ${service.title}`
-                    }
-                    title={
-                      service.title === "CDSCO Registration Certification"
-                        ? "CDSCO Logo"
-                        : `Small icon for ${service.title}`
-                    }
-                    className="w-8 h-8 md:w-12 md:h-12 rounded-full object-contain mx-auto"
-                    width="48"
-                    height="48"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 className="font-geist font-medium text-xs md:text-base leading-tight">
-                  {service.title}
-                </h3>
-              </div>
-            </div>
+              service={service}
+              index={index}
+              isActive={activeThumbnail === index}
+              onThumbnailClick={handleThumbnailClick}
+            />
           ))}
         </div>
       </div>

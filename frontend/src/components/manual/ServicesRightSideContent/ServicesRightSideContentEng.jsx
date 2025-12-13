@@ -152,8 +152,11 @@ const ServicesRightSideContentEng = () => {
     // BIS CERTIFICATION PRODUCTS PATHS
     "/bis-certification-for-bunk-beds-is-17636",
     "/bis-certification-for-beds-is-17635",
+    "/bis-certification-for-work-chairs-is-17631",
+    "/bis-certification-for-chair-&-stools-is-17632",
     "/bis-certification-for-storage-unit-is-17634",
     "/bis-certification-for-tables-&-desks-unit-is-17633",
+    "/bis-certification-for-welded-pipes-and-tubes-is-17876",
   ];
 
   // Check if current path should show these components
@@ -981,10 +984,16 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Bunk Beds - English Page";
     if (path.includes("/bis-certification-for-beds-is-17635"))
       return "BIS Certificate for Beds - English Page";
+    if (path.includes("/bis-certification-for-work-chairs-is-17631"))
+      return "BIS Certificate for Work Chairs - English Page";
+    if (path.includes("/bis-certification-for-chair-&-stools-is-17632"))
+      return "BIS Certificate for Chair & Stools - English Page";
     if (path.includes("/bis-certification-for-storage-unit-is-17634"))
       return "BIS Certificate for Storage Unit - English Page";
     if (path.includes("/bis-certification-for-tables-&-desks-unit-is-17633"))
       return "BIS Certificate for Tables & Desks - English Page";
+    if (path.includes("/bis-certification-for-welded-pipes-and-tubes-is-17876"))
+      return "BIS Certificate for Welded Pipes & Tubes - English Page";
   };
 
   const [formData, setFormData] = useState({

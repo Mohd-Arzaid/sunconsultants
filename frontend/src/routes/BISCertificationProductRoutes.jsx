@@ -7,6 +7,9 @@ import BISCertificateForBunkBeds from "../pages/BISCertificationProducts/BISCert
 import BISCertificateForBeds from "../pages/BISCertificationProducts/BISCertificateForBeds";
 import BISCertificateForStorageUnit from "../pages/BISCertificationProducts/BISCertificateForStorageUnit";
 import BISCertificateForTablesAndDesksUnit from "../pages/BISCertificationProducts/BISCertificateForTablesAndDesksUnit";
+import BISCertificateForWorkChairs from "../pages/BISCertificationProducts/BISCertificateForWorkChairs";
+import BISCertificateForChairAndStools from "../pages/BISCertificationProducts/BISCertificateForChairAndStools";
+import BISCertificateForWeldedPipesAndTubes from "../pages/BISCertificationProducts/BISCertificateForWeldedPipesAndTubes";
 
 const BISCertificationProductRoutes = () => {
   return (
@@ -48,6 +51,30 @@ const BISCertificationProductRoutes = () => {
         element={
           <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
             <BISCertificateForTablesAndDesksUnit />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-work-chairs-is-17631"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForWorkChairs />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-chair-&-stools-is-17632"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForChairAndStools />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-welded-pipes-and-tubes-is-17876"
+        element={
+          <Suspense fallback={<BISCertificationProductsPageSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubes />
           </Suspense>
         }
       />
