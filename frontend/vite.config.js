@@ -55,6 +55,7 @@ export default defineConfig({
     minify: "esbuild",
     target: "es2020",
     cssCodeSplit: true,
+    cssMinify: true,
     // Cache busting configuration
     assetsDir: "assets",
     rollupOptions: {
@@ -73,7 +74,7 @@ export default defineConfig({
             "@radix-ui/react-toast",
             "@radix-ui/react-scroll-area",
           ],
-          "vendor-icons": ["lucide-react", "react-icons"],
+          "vendor-icons": ["lucide-react"],
           "vendor-utils": ["axios", "clsx", "tailwind-merge", "framer-motion"],
         },
       },

@@ -118,7 +118,7 @@ const FooterChinese = () => {
                   <div className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
                     太阳认证印度
                   </div>
-                  <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
+                  <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-roboto font-normal min-h-[10px] md:min-h-[13px]">
                     简化认证
                   </p>
                 </Link>

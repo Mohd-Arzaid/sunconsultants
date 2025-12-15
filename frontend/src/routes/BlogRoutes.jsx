@@ -54,6 +54,35 @@ const LangVietnamBlog = lazy(() =>
 );
 const VietnamBlog = lazy(() => import("@/blogs/VietnamBlog/VietnamBlog"));
 
+// BIS Certification Products Blogs
+const BISCertificateForBunkBeds = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds")
+);
+const BISCertificateForBeds = lazy(() =>
+  import("@/blogs/BISCertificateForBeds")
+);
+const BISCertificateForStorageUnit = lazy(() =>
+  import("@/blogs/BISCertificateForStorageUnit")
+);
+const BISCertificateForTablesAndDesksUnit = lazy(() =>
+  import("@/blogs/BISCertificateForTablesAndDesksUnit")
+);
+const BISCertificateForWorkChairs = lazy(() =>
+  import("@/blogs/BISCertificateForWorkChairs")
+);
+const BISCertificateForChairAndStools = lazy(() =>
+  import("@/blogs/BISCertificateForChairAndStools")
+);
+const BISCertificateForWeldedPipesAndTubes = lazy(() =>
+  import("@/blogs/BISCertificateForWeldedPipesAndTubes")
+);
+const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
+  import("@/blogs/BISCertificateForSeamlessPipesAndTubes")
+);
+const BISCertificateForFlashlight = lazy(() =>
+  import("@/blogs/BISCertificateForFlashlight")
+);
+
 export const BlogRoutes = () => {
   return (
     <>
@@ -73,22 +102,22 @@ export const BlogRoutes = () => {
           </Suspense>
         }
       />
-      <Route
+      {/* <Route
         path="/bis-license-for-bunk-beds-Indian-bis"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BunkBedsBlog />
           </Suspense>
         }
-      />
-      <Route
+      /> */}
+      {/* <Route
         path="/bis-license-for-storage-units-Indian-bis"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <StorageUnitsBlog />
           </Suspense>
         }
-      />
+      /> */}
       <Route
         path="/bis-certification-in-indonesia"
         element={
@@ -350,6 +379,80 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <LangIraqBlog />
+          </Suspense>
+        }
+      />
+
+      {/* BIS Certification Products Blogs */}
+      <Route
+        path="/bis-certification-for-bunk-beds-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBeds />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-beds-is-17635"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBeds />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-storage-unit-is-17634"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageUnit />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-tables-&-desks-unit-is-17633"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForTablesAndDesksUnit />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-work-chairs-is-17631"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWorkChairs />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-chair-&-stools-is-17632"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForChairAndStools />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-welded-pipes-and-tubes-is-17876"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForWeldedPipesAndTubes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/bis-certification-for-seamless-pipes-and-tubes-is-17875"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSeamlessPipesAndTubes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/flashlight-IS-2083"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFlashlight />
           </Suspense>
         }
       />

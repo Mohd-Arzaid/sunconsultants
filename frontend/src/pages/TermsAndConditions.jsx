@@ -408,7 +408,7 @@ const Footer = () => {
                   <h2 className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
                     Sun Certifications India
                   </h2>
-                  <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
+                  <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-roboto font-normal min-h-[10px] md:min-h-[13px]">
                     Simplifying Certifications
                   </p>
                 </Link>

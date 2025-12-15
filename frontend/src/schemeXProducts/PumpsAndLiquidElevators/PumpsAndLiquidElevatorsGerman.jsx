@@ -289,7 +289,7 @@ export const FooterGerman = () => {
                   <div className="font-roboto text-black uppercase tracking-wide leading-normal text-[14px] md:text-xl font-bold">
                     Sun Certifications India
                   </div>
-                  <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-normal">
+                  <p className="text-foreground/90 text-[10px] md:text-[13px] leading-none uppercase font-roboto font-normal min-h-[10px] md:min-h-[13px]">
                     Simplifying Certifications
                   </p>
                 </Link>
@@ -765,7 +765,7 @@ const PumpsAndLiquidElevatorsGermanPageMainContent = () => {
 
         {/* Right Side Content */}
         {/* <PumpsAndLiquidElevatorsPageMainContentRightGerman /> */}
-        <ServicesRightSideContentGerman/>
+        <ServicesRightSideContentGerman />
       </div>
     </div>
   );
@@ -1205,5 +1205,3 @@ export const AboutAuthorGerman = () => {
     </section>
   );
 };
-
-

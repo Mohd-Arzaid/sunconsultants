@@ -157,6 +157,8 @@ const ServicesRightSideContentEng = () => {
     "/bis-certification-for-storage-unit-is-17634",
     "/bis-certification-for-tables-&-desks-unit-is-17633",
     "/bis-certification-for-welded-pipes-and-tubes-is-17876",
+    "/bis-certification-for-seamless-pipes-and-tubes-is-17875",
+    "/blogs/ISI-products/flashlight-IS-2083",
   ];
 
   // Check if current path should show these components
@@ -994,6 +996,12 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Tables & Desks - English Page";
     if (path.includes("/bis-certification-for-welded-pipes-and-tubes-is-17876"))
       return "BIS Certificate for Welded Pipes & Tubes - English Page";
+    if (
+      path.includes("/bis-certification-for-seamless-pipes-and-tubes-is-17875")
+    )
+      return "BIS Certificate for Seamless Pipes & Tubes - English Page";
+    if (path.includes("/blogs/ISI-products/flashlight-IS-2083"))
+      return "BIS Certificate for Flashlight - English Page";
   };
 
   const [formData, setFormData] = useState({

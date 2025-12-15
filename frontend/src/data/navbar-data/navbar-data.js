@@ -221,12 +221,12 @@ export const NAVIGATION_DATA = {
       link: "/SchemeX-products",
       icon: Building,
     },
-    {
-      id: 7,
-      name: "BIS Certification Products",
-      link: "/bis-certification-products",
-      icon: CheckCircle,
-    },
+    // {
+    //   id: 7,
+    //   name: "BIS Certification Products",
+    //   link: "/bis-certification-products",
+    //   icon: CheckCircle,
+    // },
   ],
   gallery: [
     {

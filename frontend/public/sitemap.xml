@@ -3206,8 +3206,65 @@
     <priority>0.8</priority>
     <lastmod>2025-01-15</lastmod>
   </url>
+  <!-- BIS Certificate for Bunk Beds - English -->
   <url>
-    <loc>https://bis-certifications.com/bis-license-for-bunk-beds-Indian-bis</loc>
+    <loc>https://bis-certifications.com/bis-certification-for-bunk-beds-is-17636</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Beds - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-for-beds-is-17635</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Work Chairs - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-for-work-chairs-is-17631</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Chair & Stools - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-for-chair-&amp;-stools-is-17632</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Storage Unit - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-for-storage-unit-is-17634</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Tables & Desks - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-for-tables-&amp;-desks-unit-is-17633</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Welded Pipes & Tubes - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-for-welded-pipes-and-tubes-is-17876</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Seamless Pipes & Tubes - English -->
+  <url>
+    <loc>https://bis-certifications.com/bis-certification-for-seamless-pipes-and-tubes-is-17875</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Flashlight - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/ISI-products/flashlight-IS-2083</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -3238,12 +3295,6 @@
   </url>
   <url>
     <loc>https://bis-certifications.com/bis-certification-in-italy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://bis-certifications.com/bis-license-for-storage-units-Indian-bis</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -3778,60 +3829,4 @@
   </url>
   <!-- Ministry Updates Pages - End -->
 
-  <!-- BIS Certification Products Pages Start -->
-  <url>
-    <loc>https://bis-certifications.com/bis-certification-products</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- BIS Certificate for Bunk Beds - English -->
-  <url>
-    <loc>https://bis-certifications.com/bis-certification-for-bunk-beds-is-17636</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Beds - English -->
-  <url>
-    <loc>https://bis-certifications.com/bis-certification-for-beds-is-17635</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Work Chairs - English -->
-  <url>
-    <loc>https://bis-certifications.com/bis-certification-for-work-chairs-is-17631</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Chair & Stools - English -->
-  <url>
-    <loc>https://bis-certifications.com/bis-certification-for-chair-&amp;-stools-is-17632</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Storage Unit - English -->
-  <url>
-    <loc>https://bis-certifications.com/bis-certification-for-storage-unit-is-17634</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Tables & Desks - English -->
-  <url>
-    <loc>https://bis-certifications.com/bis-certification-for-tables-&amp;-desks-unit-is-17633</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certificate for Welded Pipes & Tubes - English -->
-  <url>
-    <loc>https://bis-certifications.com/bis-certification-for-welded-pipes-and-tubes-is-17876</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-01-16</lastmod>
-  </url>
-  <!-- BIS Certification Products Pages End -->
 </urlset>

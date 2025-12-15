@@ -61,41 +61,140 @@
 
     <title>BIS Certification | FMCS | ISI MARK | LMPC | EPR | CDSCO</title>
 
-    <!-- Optimized Google Tag Manager - Deferred loading -->
+    <!-- Optimized Google Tag Manager - Load only after user interaction -->
     <script>
-      // Defer GTM loading to improve initial page load
-      window.addEventListener("load", function () {
+      // Initialize dataLayer early for event queuing
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      // Load GTM only after user interaction or idle time
+      let gtmLoaded = false;
+      function loadGTM() {
+        if (gtmLoaded) return;
+        gtmLoaded = true;
+
         var gtmScript = document.createElement("script");
         gtmScript.src =
           "https://www.googletagmanager.com/gtag/js?id=G-G25K7V10E9";
         gtmScript.async = true;
+        gtmScript.defer = true;
         document.head.appendChild(gtmScript);
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
         gtag("js", new Date());
         gtag("config", "G-G25K7V10E9");
+      }
+
+      // Load on first user interaction (scroll, click, touch, keypress)
+      const events = ["scroll", "click", "touchstart", "keydown", "mousemove"];
+      const loadOnInteraction = function () {
+        loadGTM();
+        events.forEach((event) => {
+          document.removeEventListener(event, loadOnInteraction, {
+            passive: true,
+          });
+        });
+      };
+
+      events.forEach((event) => {
+        document.addEventListener(event, loadOnInteraction, {
+          passive: true,
+          once: true,
+        });
       });
+
+      // Fallback: Load after page is fully loaded and browser is idle
+      if (window.requestIdleCallback) {
+        window.requestIdleCallback(
+          function () {
+            if (!gtmLoaded) {
+              loadGTM();
+            }
+          },
+          { timeout: 2000 }
+        );
+      } else {
+        // Fallback for browsers without requestIdleCallback
+        window.addEventListener("load", function () {
+          setTimeout(function () {
+            if (!gtmLoaded) {
+              loadGTM();
+            }
+          }, 3000);
+        });
+      }
     </script>
 
-    <!-- Microsoft Clarity - Deferred to improve initial page load -->
+    <!-- Microsoft Clarity - Optimized to prevent forced reflow -->
     <script type="text/javascript">
-      // Defer Clarity loading to after page load
+      // Load Clarity after significant delay to avoid forced reflow during initial page load
+      let clarityLoaded = false;
+      function loadClarity() {
+        if (clarityLoaded) return;
+        clarityLoaded = true;
+
+        // Add additional delay to ensure DOM is settled
+        setTimeout(function () {
+          (function (c, l, a, r, i, t, y) {
+            c[a] =
+              c[a] ||
+              function () {
+                (c[a].q = c[a].q || []).push(arguments);
+              };
+            t = l.createElement(r);
+            t.async = 1;
+            t.defer = true;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+          })(window, document, "clarity", "script", "udnfijc0yj");
+        }, 500); // 500ms delay after trigger to let browser settle
+      }
+
+      // Wait for page to be fully loaded before starting to listen for interactions
       window.addEventListener("load", function () {
-        (function (c, l, a, r, i, t, y) {
-          c[a] =
-            c[a] ||
+        // Only load after significant user engagement (2nd interaction or after delay)
+        let interactionCount = 0;
+        const clarityEvents = ["scroll", "click", "touchstart", "mousemove"];
+
+        const loadClarityOnInteraction = function () {
+          interactionCount++;
+          // Load only after 2nd interaction to ensure user is engaged
+          if (interactionCount >= 2) {
+            loadClarity();
+            clarityEvents.forEach((event) => {
+              document.removeEventListener(event, loadClarityOnInteraction);
+            });
+          }
+        };
+
+        // Add slight delay before attaching event listeners
+        setTimeout(function () {
+          clarityEvents.forEach((event) => {
+            document.addEventListener(event, loadClarityOnInteraction, {
+              passive: true,
+            });
+          });
+        }, 1000); // Wait 1 second after page load
+
+        // Fallback: Load after significant idle time
+        if (window.requestIdleCallback) {
+          window.requestIdleCallback(
             function () {
-              (c[a].q = c[a].q || []).push(arguments);
-            };
-          t = l.createElement(r);
-          t.async = 1;
-          t.src = "https://www.clarity.ms/tag/" + i;
-          y = l.getElementsByTagName(r)[0];
-          y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "udnfijc0yj");
+              if (!clarityLoaded) {
+                loadClarity();
+              }
+            },
+            { timeout: 5000 } // Increased from 3s to 5s
+          );
+        } else {
+          setTimeout(function () {
+            if (!clarityLoaded) {
+              loadClarity();
+            }
+          }, 6000); // Increased from 4s to 6s
+        }
       });
     </script>
   </head>

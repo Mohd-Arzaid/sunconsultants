@@ -66,7 +66,6 @@ import { NotificationsRoutes } from "./routes/NotificationsRoutes";
 import { BlogRoutes } from "./routes/BlogRoutes";
 import { ServicePagesRoutes } from "./routes/ServicePagesRoutes";
 import FaqsPageRoutes from "./routes/FaqsPageRoutes";
-import BISCertificationProductRoutes from "./routes/BISCertificationProductRoutes";
 
 // ============================================
 // Admin Routes (Commented out)
@@ -199,9 +198,6 @@ function App() {
             </Suspense>
           }
         />
-
-        {/* BIS Certification Products Routes */}
-        {BISCertificationProductRoutes()}
 
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
 

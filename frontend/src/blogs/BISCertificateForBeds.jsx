@@ -1,6 +1,6 @@
 import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
-import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
+import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -26,7 +26,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForWorkChairs = () => {
+const BISCertificateForBeds = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -39,22 +39,22 @@ const BISCertificateForWorkChairs = () => {
   );
 };
 
-export default BISCertificateForWorkChairs;
+export default BISCertificateForBeds;
 
 const MetaTags = () => {
-  const title = "BIS Certificate for Work Chairs | IS 17631:2022 BIS License";
-  const ogTitle = "BIS Certification for Work Chairs – IS 17631:2022 Guide";
-  const twitterTitle = "BIS License for Work Chairs | IS 17631:2022";
+  const title = "BIS Certificate for Beds | IS 17635:2022 BIS License";
+  const ogTitle = "BIS Certification for Beds – IS 17635:2022 Guide";
+  const twitterTitle = "BIS License for Beds | IS 17635:2022";
   const metaDescription =
-    "Get BIS Certificate for Work Chairs under IS 17631:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for beds under IS 17635:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Work Chairs as per IS 17631:2022. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for beds as per IS 17635:2022. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Work Chairs under IS 17631:2022. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for beds under IS 17635:2022. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Work Chairs, BIS License for Work Chairs, IS 17631:2022, BIS Certification for Work Chairs";
+    "BIS Certificate for Beds, BIS License for Beds, IS 17635:2022, BIS Certification for Beds";
   const websiteUrl =
-    "https://bis-certifications.com/bis-certification-for-work-chairs-is-17631";
+    "https://bis-certifications.com/bis-certification-for-beds-is-17635";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -100,9 +100,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbLink asChild>
-                    <Link to="/bis-certification-products">
-                      BIS Certification Products
-                    </Link>
+                    <Link to="/Blogs">Latest Blogs</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="flex-shrink-0">
@@ -111,7 +109,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Work Chairs – IS 17631:2022
+                    BIS Certificate for Beds – IS 17635:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -143,363 +141,339 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certificate for Work Chairs – A Complete Compliance Guide for IS
-          17631:2022
+          BIS Certificate for Beds – IS 17635:2022 Complete Guide
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/BISCertificationProductsImages/BISLicenseforworkchairs.png"
-            title="BIS License for Work Chairs"
-            alt="BIS Certificate for Work Chairs - IS 17631:2022 BIS Certification"
+            src="/BISCertificationProductsImages/BISLicenseforBeds.png"
+            title="BIS License for Beds"
+            alt="BIS Certificate for Beds - IS 17635:2022 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The increasing use of office and task seating—whether in corporate
-          workspaces, co-working centers, home offices, or institutional
-          setups—has made safety and ergonomic performance essential. To ensure
-          manufacturers supply structurally stable, durable, and user-safe
-          seating products, the Government of India has mandated BIS
-          Certification for Work Chairs under IS 17631:2022.
+          The BIS Certificate for Beds is a mandatory compliance requirement in
+          India for manufacturers and importers of beds intended for domestic
+          and commercial use. As per the latest Indian Standard IS 17635:2022 –
+          Beds (Safety Requirements), all beds must meet strict safety,
+          durability, structural, and performance benchmarks before being sold
+          in the Indian market.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Work chairs typically endure repetitive loading, continuous body
-          movement, tilting, swiveling, and height adjustments. A failure in any
-          performance feature can lead to severe injury. This is why compliance
-          with IS 17631:2022 – Work Chairs: Safety Requirements is now
-          compulsory for all manufacturers and importers.
+          Beds are essential furniture products used daily across homes, hotels,
+          hospitals, hostels, PG accommodations, and institutional facilities.
+          Any structural weakness, sharp edges, material failure, or poor load
+          capacity can result in serious injuries. To prevent such risks, the
+          Bureau of Indian Standards (BIS) mandates BIS Certification for Beds.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This guide explains the complete BIS licensing process, including
-          standards, testing, fees, documentation, responsibilities, benefits,
-          and challenges—crafted with fresh content to avoid duplication across
-          your website.
+          This comprehensive guide explains everything about BIS License for
+          Beds, including applicable standards, certification process, testing
+          requirements, documents, fees, timelines, penalties, and benefits.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Understanding BIS Certification for Work Chairs
+          What is BIS Certification?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Bureau of Indian Standards (BIS) oversees the quality and safety
-          of products supplied within the Indian market. Any product falling
-          under an Indian Standard listed in a mandatory Quality Control Order
-          must be evaluated and certified by BIS before sale.
+          BIS Certification is a conformity assessment scheme introduced by the
+          Bureau of Indian Standards, the national standards authority of India.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          BIS Certificate – What It Represents
+          What is BIS Certificate?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          A BIS Certificate confirms that a product complies with Indian
+          Standards and is safe, reliable, and suitable for use. Certified
+          products carry the BIS Certification Mark, commonly known as the ISI
+          Mark.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          BIS Certificate Meaning
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS Certificate indicates that a work chair:
+          It signifies that the product has successfully passed:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Has passed performance and durability testing</li>
-          <li>Meets material and construction specifications</li>
-          <li>Is safe for long-term daily usage</li>
-          <li>
-            Complies with the ergonomic and structural guidelines in Indian
-            Standards
-          </li>
+          <li>Laboratory testing</li>
+          <li>Factory inspection</li>
+          <li>Quality control verification</li>
+          <li>Safety compliance evaluation</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers who meet these requirements are issued a BIS License
-          allowing them to affix the ISI Mark.
+          The BIS Logo on beds assures customers that the product meets
+          government-approved quality and safety standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Applicable Standard for Work Chairs – IS 17631:2022
+          BIS Standard Applicable for Beds – IS 17635:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The governing standard for task and office work chairs is:
+          The applicable Indian Standard for beds is:
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          🔹 <strong>IS 17631:2022</strong> – Work Chairs: Safety Requirements
+          🔹 <strong>IS 17635:2022</strong> – Beds: Safety Requirements
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          This standard focuses on seating intended for extended use in working
-          environments.
+          This standard defines essential safety and performance requirements
+          for beds used in residential and commercial environments.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Products Covered Under This Standard
+          IS 17635:2022 Covers
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Ergonomic office chairs</li>
-          <li>Task chairs</li>
-          <li>Swivel chairs</li>
-          <li>Work desk chairs</li>
-          <li>Adjustable-height work chairs</li>
-          <li>Executive work chairs</li>
-          <li>Mesh or fabric-back work chairs</li>
-          <li>Chairs equipped with armrests</li>
-          <li>Chairs with tilting/locking mechanisms</li>
-        </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why IS 17631:2022 Compliance Is Critical
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Work chairs differ significantly from general-purpose chairs because
-          they:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Support continuous movement</li>
-          <li>Use mechanical and adjustment mechanisms</li>
-          <li>Carry dynamic loads</li>
-          <li>Require durability for prolonged use</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Poorly built chairs may fail at:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Base joints</li>
-          <li>Swivel mechanisms</li>
-          <li>Gas lift systems</li>
-          <li>Seat/back support</li>
-          <li>Leg or caster structure</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          This can lead to workplace injuries, operational downtime, and product
-          liability issues.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Mandatory BIS Certification Ensures
-        </h3>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Safe ergonomic design</li>
-          <li>Reliable load-bearing capacity</li>
-          <li>Strong durability under cyclic testing</li>
-          <li>Resistance to mechanical wear</li>
-          <li>Compliance with user safety parameters</li>
+          <li>Structural strength</li>
+          <li>Load-bearing capacity</li>
+          <li>Stability and durability</li>
+          <li>Material quality</li>
+          <li>Edge and surface finish</li>
+          <li>Safety against collapse</li>
+          <li>Absence of entrapment hazards</li>
+          <li>Long-term performance</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Thus, obtaining a BIS License for Work Chairs is non-negotiable for
-          Indian and foreign manufacturers.
+          Any bed manufactured or imported into India must comply with IS
+          17635:2022 and obtain a BIS Registration for Beds.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of BIS License for Work Chairs
+          Why BIS Certification is Mandatory for Beds
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This standard covers the requirements of work chairs. This standard
-          applies to completely manufactured/fabricated work chairs. It also
-          applies to ready-to-assemble units; in that case the requirements of
-          this standard shall apply to the assembled units.
+          Beds are used for prolonged durations and support human weight
+          continuously. Poorly designed beds can cause injuries, collapse, or
+          long-term health risks.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Reasons BIS Certification for Beds is Required
+        </h3>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Ensures structural integrity</li>
+          <li>Prevents collapse and breakage</li>
+          <li>Controls material quality</li>
+          <li>Eliminates sharp edges and unsafe finishes</li>
+          <li>Protects consumers</li>
+          <li>Ensures uniform national quality</li>
+          <li>Mandatory under BIS notification</li>
+          <li>Required for legal sale in India</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Without a BIS License for Beds, selling or importing beds in India is
+          illegal.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Work Chairs (IS 17631:2022)
+          BIS Certification Process for Beds (IS 17635:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The certification process for work chairs involves a mixture of lab
-          evaluation, factory auditing, and technical scrutiny.
+          The BIS certification process in India follows a structured procedure
+          under the ISI Certification Scheme.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 1 – Product Evaluation & Standard Mapping
+          Step 1 – Identify Standard & Product Scope
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Identify all chair variants and align them with IS 17631:2022.
-          Understand which models share the same construction and which require
-          separate testing.
+          Confirm applicability under IS 17635:2022 and determine product
+          variants.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 2 – Online Application Submission
+          Step 2 – BIS Application (Online)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The manufacturer submits the application via the Manak Online BIS
-          Portal. Information required includes:
+          Submit application through the BIS Manak Online Portal with:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing site details</li>
-          <li>Raw material controls</li>
-          <li>Technical specifications</li>
-          <li>Production capabilities</li>
-          <li>Brand ownership documentation</li>
+          <li>Manufacturer details</li>
+          <li>Factory address</li>
+          <li>Product description</li>
+          <li>Brand name</li>
+          <li>Quality control details</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 3 – Fee Payment
+          Step 3 – BIS Certification Fees
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Fees must be paid for:
+          Pay applicable fees including:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application</li>
-          <li>Processing</li>
-          <li>Testing</li>
-          <li>Inspection</li>
-          <li>Marking</li>
+          <li>Application fee</li>
+          <li>Processing fee</li>
+          <li>Testing charges</li>
+          <li>Inspection charges</li>
+          <li>Marking fees</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 4 – Sample Testing (IS 17631:2022 Requirements)
+          Step 4 – Product Testing
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS-recognized laboratory evaluates the chair against multiple
-          safety and performance criteria.
+          Samples are tested at BIS-recognized laboratories.
         </p>
         <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
-          Work Chair Tests Include
+          Testing Includes
         </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Seat and back static load tests</li>
-          <li>Durability loading cycles</li>
-          <li>Swivel/rotation testing</li>
-          <li>Tilt mechanism endurance</li>
-          <li>Gas lift mechanism performance</li>
-          <li>Caster strength and rolling resistance</li>
-          <li>Base stability and overload testing</li>
-          <li>Armrest load capability</li>
-          <li>Impact resistance tests</li>
+          <li>Static load test</li>
+          <li>Durability test</li>
+          <li>Stability test</li>
+          <li>Joint strength test</li>
+          <li>Surface finish test</li>
+          <li>Edge safety test</li>
         </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The lab issues a detailed test report to BIS.
-        </p>
-
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 5 – Factory Audit
+          Step 5 – Factory Inspection
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS inspectors review the facility's:
+          A BIS officer inspects:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Production system</li>
-          <li>Material inspection records</li>
-          <li>Internal quality assurance processes</li>
-          <li>Testing instruments & calibration logs</li>
-          <li>Compliance with the Scheme of Testing & Inspection (STI)</li>
+          <li>Manufacturing facility</li>
+          <li>Raw material control</li>
+          <li>In-process testing</li>
+          <li>Quality assurance system</li>
+          <li>Testing equipment</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Step 6 – Grant of BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Once conformity is confirmed, BIS grants:
+          After compliance, BIS issues:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>The BIS License/ISI Mark certification</li>
-          <li>A unique CML number</li>
+          <li>BIS Certificate</li>
+          <li>ISI Mark permission</li>
+          <li>CML number</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Step 7 – Consistent Compliance
+          Step 7 – Post-Certification Compliance
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain ongoing internal checks</li>
-          <li>Follow marking rules</li>
-          <li>Cooperate during surveillance inspections</li>
-          <li>Renew the license periodically</li>
+          <li>Surveillance inspections</li>
+          <li>Renewal every 1–2 years</li>
+          <li>Ongoing quality control</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Documents Required for BIS Certification of Work Chairs
+          Scope of BIS License for Beds
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          A complete set of documents ensures faster approval.
+          <strong>1.1</strong> This standard covers the requirements related to
+          the performance and safety of beds for adults for domestic and
+          non-domestic use.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>1.2</strong> This standard applies to completely manufactured/
+          fabricated beds. It also applies to ready-to-assemble units; in that
+          case the requirements of this standard shall apply to the assembled
+          units.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>1.3</strong> This standard does not cover waterbeds, airbeds,
+          foldaway beds, bunk beds and beds for people with special needs, nor
+          the beds for healthcare and medical purposes.
+        </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Documents Required for BIS Certification of Beds
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Here is a complete list of BIS Certificate Documents:
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Business & Factory Documents
+          Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration</li>
-          <li>Manufacturing diagram & layout</li>
-          <li>Production workflow</li>
+          <li>Factory registration/license</li>
+          <li>Manufacturing process flowchart</li>
           <li>Machinery list</li>
-          <li>Test equipment list</li>
+          <li>Testing equipment list</li>
           <li>Calibration certificates</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Technical Documents
-        </h3>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Chair engineering drawings</li>
-          <li>Mechanism specifications</li>
-          <li>Material data sheets</li>
-          <li>Bill of materials</li>
-          <li>Assembly instructions</li>
+          <li>Factory layout</li>
+          <li>Quality control plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Identity proof of authorized signatory</li>
-          <li>Brand authorization letters</li>
-          <li>Trademark certificate</li>
+          <li>Address proof</li>
+          <li>ID proof</li>
+          <li>Brand authorization</li>
+          <li>Trademark certificate (if applicable)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          BIS-Specific Documents
+          Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application form</li>
-          <li>Undertakings</li>
-          <li>Test request form</li>
-          <li>Label samples</li>
+          <li>Product drawings</li>
+          <li>Specifications</li>
+          <li>Bill of materials</li>
+          <li>Internal test reports</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 17631:2022
+          Testing Requirements for Beds (IS 17635:2022)
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Work chairs undergo more complex testing than general chairs due to
-          moving parts.
+          Beds must undergo rigorous testing to ensure compliance.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-4">
-          Key Tests Conducted
+          Mandatory Tests
         </h3>
 
         <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
@@ -510,7 +484,7 @@ const MainContentLeft = () => {
                   Clause
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirements
+                  Requirement
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -525,50 +499,18 @@ const MainContentLeft = () => {
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.1
+                  5
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Front Edge Overturning
+                  Dimensions
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.2
+                  7.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Forwards Overturning
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.3
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Forwards Overturning for Chairs with Foot Rest
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.4
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sideways Overturning for Chairs Without Arm Rests
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Sideways Overturning for Chairs With Arm Rests
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.3.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rearwards Overturning for Chairs Without Back Rest
+                  Stability Test
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
@@ -576,7 +518,7 @@ const MainContentLeft = () => {
                   7.4.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Seat Front Edge Static Load Test
+                  Vertical Static Load on Bed Base
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -584,39 +526,23 @@ const MainContentLeft = () => {
                   7.4.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Combined Seat and Back Static Load Test
+                  Vertical Static Load on Side Rail
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.3
+                  7.5.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Arm Rest Downward Static Load Test — Central
+                  Horizontal Static Load Tests
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.4
+                  7.7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Arm Rest Downward Static Load Test — Front
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.5
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Arm Rest Sideways Static Load Test
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.4.6
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Foot Rest Static Load Test
+                  Vertical Impact Test
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -624,40 +550,36 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          These tests simulate months or years of regular use within a few days.
+          Testing must be conducted only at BIS-approved labs.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Common Challenges in BIS Certification for Work Chairs
+          Common Challenges & How to Avoid Them
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>
-            <strong>✔ 1. Failure in mechanical/tilt testing</strong> – Often
-            caused by weak mechanisms or low-grade hardware.
+            <strong>Incorrect standard selection</strong> – Always verify the
+            correct Indian Standard.
           </li>
           <li>
-            <strong>✔ 2. Gas lift mechanism non-compliance</strong> – Gas lifts
-            must meet strict pressure and safety parameters.
+            <strong>Poor documentation</strong> – Missing documents cause
+            delays; prepare them beforehand.
           </li>
           <li>
-            <strong>✔ 3. Inadequate testing infrastructure</strong> – Work chair
-            testing requires specialized rigs.
+            <strong>Failed lab tests</strong> – Ensure high-quality materials
+            and construction.
           </li>
           <li>
-            <strong>✔ 4. Incorrect product grouping</strong> – Different
-            mechanisms = separate testing.
+            <strong>Factory non-readiness</strong> – Ensure QMS and test
+            equipment are properly maintained.
           </li>
           <li>
-            <strong>✔ 5. STI non-compliance</strong> – STI errors can delay
-            license issuance.
-          </li>
-          <li>
-            <strong>✔ 6. Document mismatches</strong> – Brand name and model
-            name must match BIS application exactly.
+            <strong>Trademark mismatch</strong> – Brand name must match license
+            application.
           </li>
         </ul>
 
@@ -665,67 +587,83 @@ const MainContentLeft = () => {
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Advantages of BIS Certification for Work Chairs
+          Benefits of BIS Certification for Beds
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Facilitates legal sales across India</li>
-          <li>Boosts customer trust & brand reputation</li>
-          <li>Ensures long-term durability</li>
-          <li>Reduces warranty claims and failures</li>
-          <li>Protects from regulatory penalties</li>
-          <li>Enables listing on e-commerce platforms</li>
-          <li>Mandatory for government tenders and corporate supplies</li>
+          <li>Legal sale in India</li>
+          <li>Increased customer trust</li>
+          <li>Access to e-commerce platforms</li>
+          <li>Eligibility for government tenders</li>
+          <li>Reduced liability</li>
+          <li>Strong brand credibility</li>
+          <li>Compliance with Indian standards</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Penalties for Selling Work Chairs Without BIS Certification
+          Penalties for Non-Compliance
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Non-compliance can result in:
+          Selling beds without BIS certification can lead to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy financial penalties</li>
-          <li>Confiscation of inventory</li>
-          <li>Production shutdown orders</li>
-          <li>Import prohibition</li>
-          <li>Criminal prosecution</li>
-          <li>Cancellation of business license</li>
+          <li>Heavy fines</li>
+          <li>Product seizure</li>
+          <li>Business shutdown</li>
+          <li>Legal action</li>
+          <li>Market ban</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Strict enforcement is carried out under the BIS Act, 2016.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Must Obtain BIS Certification for Work Chairs?
+          Who Needs BIS Certificate for Beds?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory for:
+          The following entities must obtain a BIS License for Beds:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
-          <li>Foreign manufacturers exporting to India</li>
-          <li>Brand owners</li>
+          <li>Foreign manufacturers</li>
           <li>Importers</li>
+          <li>Furniture brands</li>
           <li>OEM/ODM suppliers</li>
-          <li>Warehouse distributors</li>
-          <li>Retail and online furniture brands</li>
+          <li>E-commerce sellers</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Each factory requires a unique BIS license.
+          Each manufacturing unit requires a separate BIS license.
         </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Why Choose Us for BIS Certification for Beds?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          We provide end-to-end BIS consulting, including:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Standard mapping</li>
+          <li>Documentation support</li>
+          <li>Testing coordination</li>
+          <li>Application filing</li>
+          <li>Factory inspection handling</li>
+          <li>BIS liaison</li>
+          <li>License issuance</li>
+          <li>Renewal & surveillance support</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -735,108 +673,92 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate for Work Chairs under IS 17631:2022 is crucial for
-          ensuring safe, durable, and ergonomically sound seating products in
-          India. Mandatory certification enhances customer trust, reduces
-          product liability risks, and ensures compliance with national quality
-          standards. With professional support, the certification journey—from
-          testing to inspection to licensing—becomes efficient and predictable.
+          The BIS Certificate for Beds under IS 17635:2022 is a mandatory legal
+          requirement that ensures safety, quality, and durability. Obtaining a
+          BIS License for Beds protects consumers, strengthens brand value, and
+          enables lawful market access across India. With expert support, the
+          certification process becomes seamless and efficient.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certificate for Work Chairs (IS 17631:2022)
+          FAQs – BIS Certificate for Beds
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>1. Which chairs fall under IS 17631:2022?</strong>
-              <br />
-              Any chair designed for work environments, including office
-              ergonomic chairs, task chairs, swivel chairs, and adjustable
-              chairs.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
               <strong>
-                2. Is BIS Certification mandatory for work chairs?
+                1. Is BIS certification mandatory for beds in India?
               </strong>
               <br />
-              Yes. BIS certification is compulsory before manufacturing,
-              selling, or importing work chairs in India.
+              Yes, under IS 17635:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                3. What makes work chair testing different from general chair
-                testing?
-              </strong>
+              <strong>2. What is the BIS Certificate validity?</strong>
               <br />
-              Work chairs use mechanisms like swivels, gas lifts, tilt systems,
-              and casters—requiring advanced mechanical and endurance testing.
+              1–2 years, renewable.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>4. How long does BIS certification take?</strong>
+              <strong>3. Can foreign manufacturers apply?</strong>
               <br />
-              Typically 30–45 days for indian manufacturer and around 120 days
-              for foreign manufacturers, depending on testing and documentation.
+              Yes, under FMCS.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>5. Can foreign manufacturers apply?</strong>
+              <strong>4. Can BIS Certificate be applied online?</strong>
               <br />
-              Yes, through the FMCS (Foreign Manufacturers Certification
-              Scheme).
+              Yes.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>6. What if a chair fails BIS testing?</strong>
+              <strong>5. Is ISI Mark mandatory on beds?</strong>
               <br />
-              It must be redesigned, corrected, and retested until it meets IS
-              17631:2022.
+              Yes.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                7. What documents are required for BIS application?
-              </strong>
+              <strong>6. How long does the process take?</strong>
               <br />
-              Factory details, product drawings, machinery list, QC documents,
-              brand ownership, and legal papers.
+              30–45 days.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>8. Do all chair models require separate testing?</strong>
+              <strong>7. Are wooden and metal beds both covered?</strong>
               <br />
-              If models differ in design, mechanism, or structure, separate
-              testing may be needed.
+              Yes, if compliant with IS 17635:2022.
             </p>
           </div>
 
           <div>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>9. Is ISI marking mandatory after approval?</strong>
+              <strong>8. Is factory inspection mandatory?</strong>
               <br />
-              Yes, the ISI mark must appear on the product, label, and
-              packaging.
+              Yes.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              <strong>9. Can traders apply for BIS?</strong>
+              <br />
+              Only brand owners with manufacturing control.
             </p>
           </div>
         </div>
