@@ -1,4 +1,4 @@
-import ServiceAuthorEng from "@/components/manual/ServiceAuthor/ServiceAuthorEng";
+import FaqAuthorEng from "@/components/common/FaqAuthorEng";
 import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentEng from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentEng";
 import {
@@ -1217,7 +1217,7 @@ const MainContentLeft = () => {
 
         <ManyUsersAlsoRead />
 
-        <ServiceAuthorEng />
+        <FaqAuthorEng questionNumber={3} />
       </div>
     </div>
   );
