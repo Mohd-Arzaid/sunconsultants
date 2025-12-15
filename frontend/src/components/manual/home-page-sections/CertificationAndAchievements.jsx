@@ -5,23 +5,27 @@ const CertificationAndAchievements = () => {
   const galleryImages = [
     {
       id: 1,
-      image: "/home-page-certificate-img/certone.webp",
-      title: "Medical Chennai 2023",
+      image:
+        "/home-page-certificate-img/1909-SUN-CONSULTANTS-&-ENGINEERS-ISO-20000.jpg",
+      title: "ISO 20000 Certification",
     },
     {
       id: 2,
-      image: "/home-page-certificate-img/certtwo.webp",
-      title: "Medical Kolkata 2022",
+      image:
+        "/home-page-certificate-img/1910-SUN-CONSULTANTS-&-ENGINEERS-ISO-10002.jpg",
+      title: "ISO 10002 Certification",
     },
     {
       id: 3,
-      image: "/home-page-certificate-img/certone.webp",
-      title: "Narela Association Seminar Footwear",
+      image:
+        "/home-page-certificate-img/1911-SUN-CONSULTANTS-&-ENGINEERS-ISO-9001.jpg",
+      title: "ISO 9001 Certification",
     },
     {
       id: 4,
-      image: "/home-page-certificate-img/certtwo.webp",
-      title: "Delhi Footwear Exhibition Audits",
+      image:
+        "/home-page-certificate-img/1912-SUN-CONSULTANTS-&-ENGINEERS-ISO-27001.jpg",
+      title: "ISO 27001 Certification",
     },
   ];
 
