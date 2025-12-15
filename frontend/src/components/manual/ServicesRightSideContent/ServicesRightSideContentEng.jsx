@@ -159,6 +159,8 @@ const ServicesRightSideContentEng = () => {
     "/bis-certification-for-welded-pipes-and-tubes-is-17876",
     "/bis-certification-for-seamless-pipes-and-tubes-is-17875",
     "/blogs/ISI-products/flashlight-IS-2083",
+    "/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999",
+    "/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016",
   ];
 
   // Check if current path should show these components
@@ -1002,6 +1004,18 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Seamless Pipes & Tubes - English Page";
     if (path.includes("/blogs/ISI-products/flashlight-IS-2083"))
       return "BIS Certificate for Flashlight - English Page";
+    if (
+      path.includes(
+        "/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999"
+      )
+    )
+      return "BIS Certificate for Electric Fence Energizers - English Page";
+    if (
+      path.includes(
+        "/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016"
+      )
+    )
+      return "BIS Certificate for Solar Water Heating Systems - English Page";
   };
 
   const [formData, setFormData] = useState({
