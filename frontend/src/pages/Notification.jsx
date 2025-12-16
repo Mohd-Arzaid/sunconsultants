@@ -308,27 +308,8 @@ const NotificationCardItem = ({
   description,
   pdfUrl,
 }) => {
-  // Function to convert title to URL slug
-  const getUrlSlug = (title) => {
-    // Remove common prefixes like "BIS certification for", "BIS Notification for", etc.
-    let cleanTitle = title
-      .replace(/^BIS\s+Legal\s+Metrology\s*[–-]\s*/i, "Legal Metrology ") // Handle "BIS Legal Metrology –"
-      .replace(/^BIS\s+(certification|notification)\s+for\s+/i, "") // Remove "BIS certification for" or "BIS Notification for"
-      .replace(/^BIS\s+Notification\s+/i, "") // Remove "BIS Notification " (without "for")
-      .replace(/^QCO\s+notification\s+for\s+/i, "") // Remove "QCO notification for"
-      .trim();
-
-    // Convert to kebab-case
-    return cleanTitle
-      .toLowerCase()
-      .replace(/[^\w\s-]/g, "") // Remove special characters except spaces and hyphens
-      .replace(/\s+/g, "-") // Replace spaces with hyphens
-      .replace(/-+/g, "-") // Replace multiple hyphens with single hyphen
-      .trim(); // Remove leading/trailing spaces
-  };
-
-  const slug = getUrlSlug(title);
-  const detailUrl = getNotificationDetailUrl(slug);
+  // Use the utility function which properly handles / characters
+  const detailUrl = getNotificationDetailUrl(title);
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-[0_15px_30px_-10px_rgba(0,0,0,0.1)] h-full flex flex-col">

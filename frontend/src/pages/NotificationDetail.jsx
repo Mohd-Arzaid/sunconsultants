@@ -10,7 +10,7 @@ import {
   PhoneCall,
   SendHorizontal,
   SlashIcon,
-  User
+  User,
 } from "lucide-react";
 
 // UI Components
@@ -80,7 +80,8 @@ const NotificationContent = ({ notification }) => {
   return (
     <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
       <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-        Important Update on Mandatory BIS Certification for Manufacturers and Importers of{" "}
+        Important Update on Mandatory BIS Certification for Manufacturers and
+        Importers of{" "}
         <span className="font-medium text-[#1e1e1e] underline decoration-blue-400 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
           {notification.subHeading}
         </span>
@@ -92,33 +93,41 @@ const NotificationContent = ({ notification }) => {
         <span className="font-medium text-[#1e1e1e] underline decoration-blue-400 decoration-2 underline-offset-[0.27em] transition-colors hover:decoration-blue-600">
           MINISTRY OF COMMERCE AND INDUSTRY
         </span>{" "}
-        has prepared a Quality Control Order in respect of {notification.subHeading} in Consultation with BIS in order to bring
-        it under mandatory BIS Certification keeping in view the Human Safety and for ensuring the optimum quality of Product.
-        The QCO for above said Product is attached below :
+        has prepared a Quality Control Order in respect of{" "}
+        {notification.subHeading} in Consultation with BIS in order to bring it
+        under mandatory BIS Certification keeping in view the Human Safety and
+        for ensuring the optimum quality of Product. The QCO for above said
+        Product is attached below :
       </p>
 
       <div className="mb-4">
         <h3 className="text-xl font-geist font-medium text-[#1e1e1e] mb-2">
-          QCO notification {notification.subHeading} under {notification.ISNumber} is as below :
+          QCO notification {notification.subHeading} under{" "}
+          {notification.ISNumber} is as below :
         </h3>
         <p className="text-base text-gray-600 mb-2 font-geist">
-          The Notification was Released on {notification.date} and It will be Implemented from :
+          The Notification was Released on {notification.date} and It will be
+          Implemented from :
         </p>
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1">
           <li>
-            {notification.Date1} for Medium and Large enterprises (Annual turnover {">"}50 crores)
+            {notification.Date1} for Medium and Large enterprises (Annual
+            turnover {">"}50 crores)
           </li>
           <li>
-            {notification.Date2} for Small enterprises (Annual Turnover between 5 to 50 crores)
+            {notification.Date2} for Small enterprises (Annual Turnover between
+            5 to 50 crores)
           </li>
           <li>
-            {notification.Date3} for Micro enterprises (Annual turnover {"<"}5 crores)
+            {notification.Date3} for Micro enterprises (Annual turnover {"<"}5
+            crores)
           </li>
         </ul>
       </div>
 
       <p className="text-gray-600 text-base font-geist mb-4">
-        Please review the attached document, If you have any questions or need assistance, Our Team is here to Help.
+        Please review the attached document, If you have any questions or need
+        assistance, Our Team is here to Help.
       </p>
     </div>
   );
@@ -133,7 +142,8 @@ const PDFViewer = ({ notification }) => {
         title="PDF Viewer"
         className="w-full h-[800px] bg-white"
         style={{
-          boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+          boxShadow:
+            "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
         }}
       />
     </div>
@@ -183,7 +193,10 @@ const NotificationDetailLeft = ({ notification }) => {
         <meta property="og:url" content={seoData.url} />
         <meta property="og:site_name" content={seoData.websiteName} />
         <meta property="og:image" content={seoData.imageUrl} />
-        <meta property="article:published_time" content={seoData.publishedTime} />
+        <meta
+          property="article:published_time"
+          content={seoData.publishedTime}
+        />
         <meta property="article:modified_time" content={seoData.modifiedTime} />
 
         {/* Twitter Meta Tags */}
@@ -196,7 +209,10 @@ const NotificationDetailLeft = ({ notification }) => {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Sun Certifications India" />
-        <meta name="publisher" content="Dhruv Aggarwal, Head of Operations at Sun Certification India" />
+        <meta
+          name="publisher"
+          content="Dhruv Aggarwal, Head of Operations at Sun Certification India"
+        />
 
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">
@@ -245,7 +261,6 @@ const NotificationDetailLeft = ({ notification }) => {
           {/* About Author */}
           <AboutAuthor />
         </div>
-
       </div>
     </>
   );
@@ -346,10 +361,11 @@ const NotificationDetailRight = () => {
         {/* Status Message */}
         {submitStatus && (
           <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${submitStatus.type === "success"
-              ? "bg-green-50 text-green-700 border border-green-200"
-              : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
+              submitStatus.type === "success"
+                ? "bg-green-50 text-green-700 border border-green-200"
+                : "bg-red-50 text-red-700 border border-red-200"
+            }`}
           >
             {submitStatus.message}
           </div>
@@ -454,10 +470,17 @@ const NotificationDetailRight = () => {
 const NotificationDetail = () => {
   const { notificationName } = useParams();
 
+  // Normalize slug for comparison (remove hyphens to handle variations like hdpepp vs hdpe-pp)
+  const normalizeSlug = (str) => {
+    return str.toLowerCase().replace(/-/g, "").replace(/\s+/g, "");
+  };
+
   // Find the notification based on the URL slug
   const notification = notifications.find((notif) => {
     const slug = getUrlSlug(notif.title);
-    return slug === notificationName.replace("bis-certificate-for-", "");
+    const urlSlug = notificationName.replace("bis-certificate-for-", "");
+    // Compare normalized versions to handle variations (e.g., hdpepp vs hdpe-pp)
+    return normalizeSlug(slug) === normalizeSlug(urlSlug);
   });
 
   // If notification not found, redirect to 404 page
