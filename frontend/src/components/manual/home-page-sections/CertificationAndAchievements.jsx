@@ -6,26 +6,34 @@ const CertificationAndAchievements = () => {
     {
       id: 1,
       image:
-        "/home-page-certificate-img/1909-SUN-CONSULTANTS-&-ENGINEERS-ISO-20000.jpg",
+        "/home-page-certificate-img/Sun-Certifications-India-ISO-20000-page-0001.jpg",
       title: "ISO 20000 Certification",
+      altText:
+        "ISO Certificate of Sun Certifications India for information technology - service management - ISO 20000",
     },
     {
       id: 2,
       image:
-        "/home-page-certificate-img/1910-SUN-CONSULTANTS-&-ENGINEERS-ISO-10002.jpg",
+        "/home-page-certificate-img/Sun-Certifications-India-ISO-10002-page-0001.jpg",
       title: "ISO 10002 Certification",
+      altText:
+        "ISO Certificate of Sun Certifications India for Customer Satisfaction for complaints handling in organization - ISO 10002:2018",
     },
     {
       id: 3,
       image:
-        "/home-page-certificate-img/1911-SUN-CONSULTANTS-&-ENGINEERS-ISO-9001.jpg",
+        "/home-page-certificate-img/Sun-Certifications-India-ISO-9001-page-0001.jpg",
       title: "ISO 9001 Certification",
+      altText:
+        "ISO Certificate of Sun Certifications India for the quality managment system ISO 9001",
     },
     {
       id: 4,
       image:
-        "/home-page-certificate-img/1912-SUN-CONSULTANTS-&-ENGINEERS-ISO-27001.jpg",
+        "/home-page-certificate-img/Sun-Certifications-India-ISO-27001-page-0001.jpg",
       title: "ISO 27001 Certification",
+      altText:
+        "ISO Certificate of Sun Certifications India for the information security management system - ISO 27001:2022",
     },
   ];
 
@@ -50,8 +58,8 @@ const CertificationAndAchievements = () => {
               <div className="relative w-full h-[140px] md:h-[160px] overflow-hidden bg-gray-200">
                 <img
                   src={item.image}
-                  alt={`BIS Certification Achievement - ${item.title} - Sun Certifications India`}
-                  title={`BIS Certification Achievement - ${item.title} - Sun Certifications India`}
+                  alt={item.altText}
+                  title={item.altText}
                   loading="lazy"
                   decoding="async"
                   width={905}
