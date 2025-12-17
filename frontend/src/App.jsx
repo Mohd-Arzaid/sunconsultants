@@ -36,6 +36,7 @@ import PrivacyPolicySkeleton from "./components/ui/privacy-policy-skeleton";
 import SitemapSkeleton from "./components/ui/sitemap-skeleton";
 import InternationalAuditsSkeleton from "./components/ui/international-audits-skeleton";
 const InternationalAudits = lazy(() => import("./pages/InternationalAudits"));
+const GrantLetter = lazy(() => import("./pages/GrantLetter"));
 import ExhibitionSkeleton from "./components/ui/exhibition-skeleton";
 const Exhibition = lazy(() => import("./pages/Exhibition"));
 import WebinarSkeleton from "./components/ui/webinar-skeleton";
@@ -140,6 +141,14 @@ function App() {
           element={
             <Suspense fallback={<InternationalAuditsSkeleton />}>
               <InternationalAudits />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/BIS-Certifaction-grant-letter"
+          element={
+            <Suspense fallback={<InternationalAuditsSkeleton />}>
+              <GrantLetter />
             </Suspense>
           }
         />

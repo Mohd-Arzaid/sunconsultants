@@ -82,6 +82,21 @@ const BISCertificateForSeamlessPipesAndTubes = lazy(() =>
 const BISCertificateForFlashlight = lazy(() =>
   import("@/blogs/BISCertificateForFlashlight")
 );
+const BISCertificationSolarFlatPlate = lazy(() =>
+  import("@/blogs/BISCertificationSolarFlatPlate")
+);
+const BISCertificateforGeneralPurposeChairsandStools = lazy(() =>
+  import("@/blogs/BISCertificateforGeneralPurposeChairsandStools")
+);
+const BISCertificateElectricFenceEnergizers = lazy(() =>
+  import("@/blogs/BISCertificationElectricFenceEnergizers")
+);
+const BISCertificateForStorageWaterTank = lazy(() =>
+  import("@/blogs/BISCertificationForStorageWaterTank")
+);
+const BISCertificationforFibreRopesOfPolyester = lazy(() =>
+  import("@/blogs/BISCertificationforFibreRopesOfPolyester")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -453,6 +468,46 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForFlashlight />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationSolarFlatPlate />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/chairs-and-stools-IS-17632:2022"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateforGeneralPurposeChairsandStools />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateElectricFenceEnergizers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForStorageWaterTank />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforFibreRopesOfPolyester />
           </Suspense>
         }
       />

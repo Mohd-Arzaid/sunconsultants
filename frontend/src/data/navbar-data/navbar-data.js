@@ -241,6 +241,12 @@ export const NAVIGATION_DATA = {
       link: "/seminars-and-exhibitions",
       icon: GalleryHorizontal,
     },
+    {
+      id: 3,
+      name: "Grant Letter",
+      link: "/BIS-Certifaction-grant-letter",
+      icon: Award,
+    },
   ],
   faqs: [
     {

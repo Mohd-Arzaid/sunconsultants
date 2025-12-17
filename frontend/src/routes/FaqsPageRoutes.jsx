@@ -99,14 +99,6 @@ const Q29ForeignCompaniesGetBISCertificationEng = lazy(() =>
   )
 );
 
-// Blog Components
-const BISCertificateElectricFenceEnergizers = lazy(() =>
-  import("@/blogs/BISCertificationElectricFenceEnergizers")
-);
-const BISCertificateForStorageWaterTank = lazy(() =>
-  import("@/blogs/BISCertificationForStorageWaterTank")
-);
-
 function FaqsPageRoutes() {
   return (
     <>
@@ -347,22 +339,6 @@ function FaqsPageRoutes() {
         element={
           <Suspense fallback={<FaqPageSkeleton />}>
             <Q29ForeignCompaniesGetBISCertificationEng />
-          </Suspense>
-        }
-      />
-      <Route
-        path="/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999"
-        element={
-          <Suspense fallback={<FaqPageSkeleton />}>
-            <BISCertificateElectricFenceEnergizers />
-          </Suspense>
-        }
-      />
-      <Route
-        path="/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016"
-        element={
-          <Suspense fallback={<FaqPageSkeleton />}>
-            <BISCertificateForStorageWaterTank />
           </Suspense>
         }
       />

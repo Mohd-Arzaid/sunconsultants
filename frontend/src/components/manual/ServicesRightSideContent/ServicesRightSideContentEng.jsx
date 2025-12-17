@@ -161,6 +161,9 @@ const ServicesRightSideContentEng = () => {
     "/blogs/ISI-products/flashlight-IS-2083",
     "/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999",
     "/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016",
+    "/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003",
+    "/blogs/ISI-products/chairs-and-stools-IS-17632:2022",
+    "/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021",
   ];
 
   // Check if current path should show these components
@@ -1016,6 +1019,18 @@ const ContactFormServicesRightSideContentEng = () => {
       )
     )
       return "BIS Certificate for Solar Water Heating Systems - English Page";
+    if (
+      path.includes(
+        "/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003"
+      )
+    )
+      return "BIS Certificate for Solar Flat Plate Collector - English Page";
+    if (path.includes("/blogs/ISI-products/chairs-and-stools-IS-17632:2022"))
+      return "BIS Certificate for General Purpose Chairs and Stools - English Page";
+    if (
+      path.includes("/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021")
+    )
+      return "BIS Certificate for Fibre Ropes of Polyester - English Page";
   };
 
   const [formData, setFormData] = useState({
