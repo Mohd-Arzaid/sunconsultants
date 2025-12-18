@@ -400,7 +400,7 @@ export const BlogRoutes = () => {
 
       {/* BIS Certification Products Blogs */}
       <Route
-        path="/bis-certification-for-bunk-beds-is-17636"
+        path="/blogs/ISI-products/bunk-beds-IS-17636:2022"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBunkBeds />
@@ -408,7 +408,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/bis-certification-for-beds-is-17635"
+        path="/blogs/ISI-products/beds-IS-17635:2022"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBeds />
@@ -416,7 +416,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/bis-certification-for-storage-unit-is-17634"
+        path="/blogs/ISI-products/storage-unit-IS-17634:2022"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForStorageUnit />
@@ -424,7 +424,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/bis-certification-for-tables-&-desks-unit-is-17633"
+        path="/blogs/ISI-products/tables-&-desks-IS-17633:2022"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForTablesAndDesksUnit />
@@ -432,7 +432,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/bis-certification-for-work-chairs-is-17631"
+        path="/blogs/ISI-products/work-chairs-IS-17631:2022"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWorkChairs />
@@ -440,7 +440,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/bis-certification-for-chair-&-stools-is-17632"
+        path="/blogs/ISI-products/chairs-and-stools-IS-17632:2022"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForChairAndStools />
@@ -448,7 +448,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/bis-certification-for-welded-pipes-and-tubes-is-17876"
+        path="/blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWeldedPipesAndTubes />
@@ -456,7 +456,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/bis-certification-for-seamless-pipes-and-tubes-is-17875"
+        path="/blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSeamlessPipesAndTubes />
@@ -464,7 +464,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/flashlight-IS-2083"
+        path="/blogs/ISI-products/flashlight-IS-2083:2024"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForFlashlight />

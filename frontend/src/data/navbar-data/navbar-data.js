@@ -244,7 +244,7 @@ export const NAVIGATION_DATA = {
     {
       id: 3,
       name: "Grant Letter",
-      link: "/BIS-Certifaction-grant-letter",
+      link: "/BIS-certification-grant-letter",
       icon: Award,
     },
   ],

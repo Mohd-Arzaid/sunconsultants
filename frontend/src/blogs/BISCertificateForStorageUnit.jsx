@@ -54,7 +54,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Storage Unit, BIS License for Storage Unit, IS 17634:2022, BIS Certification for Storage Unit";
   const websiteUrl =
-    "https://bis-certifications.com/bis-certification-for-storage-unit-is-17634";
+    "https://bis-certifications.com/blogs/ISI-products/storage-unit-IS-17634:2022";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

@@ -55,7 +55,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Tables & Desks, BIS License for Tables & Desks, IS 17633:2022, BIS Certification for Tables & Desks";
   const websiteUrl =
-    "https://bis-certifications.com/bis-certification-for-tables-&-desks-unit-is-17633";
+    "https://bis-certifications.com/blogs/ISI-products/tables-&-desks-IS-17633:2022";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

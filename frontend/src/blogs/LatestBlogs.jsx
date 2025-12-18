@@ -164,7 +164,7 @@ const blogs = [
     title: "BIS Certificate for Work Chairs – IS 17631:2022",
     description:
       "Get BIS Certificate for Work Chairs under IS 17631:2022. Complete compliance guide covering process, documents, testing requirements, fees, timeline, and benefits for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "bis-certification-for-work-chairs-is-17631",
+    slug: "blogs/ISI-products/work-chairs-IS-17631:2022",
   },
   {
     id: 18,
@@ -172,7 +172,7 @@ const blogs = [
     title: "BIS Certificate for Chair & Stools – IS 17632:2022",
     description:
       "Get BIS Certificate for Chair & Stool under IS 17632:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for general purpose chairs and stools.",
-    slug: "bis-certification-for-chair-&-stools-is-17632",
+    slug: "blogs/ISI-products/chairs-and-stools-IS-17632:2022",
   },
   {
     id: 19,
@@ -180,7 +180,7 @@ const blogs = [
     title: "BIS Certificate for Tables & Desks – IS 17633:2022",
     description:
       "Get BIS Certificate for Tables & Desks under IS 17633:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "bis-certification-for-tables-&-desks-unit-is-17633",
+    slug: "blogs/ISI-products/tables-&-desks-IS-17633:2022",
   },
   {
     id: 20,
@@ -188,7 +188,7 @@ const blogs = [
     title: "BIS Certificate for Beds – IS 17635:2022",
     description:
       "Get BIS Certificate for beds under IS 17635:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for manufacturers and importers.",
-    slug: "bis-certification-for-beds-is-17635",
+    slug: "blogs/ISI-products/beds-IS-17635:2022",
   },
   {
     id: 21,
@@ -196,7 +196,7 @@ const blogs = [
     title: "BIS Certificate for Welded Pipes & Tubes – IS 17876:2022",
     description:
       "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for stainless steel welded pipes and tubes.",
-    slug: "bis-certification-for-welded-pipes-and-tubes-is-17876",
+      slug: "blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024",
   },
   {
     id: 22,
@@ -204,7 +204,7 @@ const blogs = [
     title: "BIS Certificate for Seamless Pipes & Tubes – IS 17875:2022",
     description:
       "Get BIS Certificate for Seamless Pipes & Tubes under IS 17875:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for seamless steel pipes and tubes.",
-    slug: "bis-certification-for-seamless-pipes-and-tubes-is-17875",
+    slug: "blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022",
   },
   {
     id: 23,

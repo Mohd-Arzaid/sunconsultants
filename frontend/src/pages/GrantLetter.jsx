@@ -32,9 +32,7 @@ const GrantLetter = () => {
                   <SlashIcon />
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
-                  <BreadcrumbPage>
-                    Grant Letter
-                  </BreadcrumbPage>
+                  <BreadcrumbPage>Grant Letter</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
@@ -42,7 +40,7 @@ const GrantLetter = () => {
         </div>
       </div>
 
-      {/* Audit Hero */}
+      {/* Grant Letter Hero */}
       <AuditHero />
       <AuditGallery />
       <div id="services-section">
@@ -55,7 +53,7 @@ const GrantLetter = () => {
       </div>
 
       <Footer />
-    </div> 
+    </div>
   );
 };
 
@@ -134,13 +132,13 @@ const AuditHero = () => {
       {/* Heading */}
       <div className="text-center mb-6 md:mb-8">
         <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#1e1e1e] mb-3 md:mb-4">
-          International Audit Excellence
+          BIS Grant Letters & Certifications
         </h1>
 
         <p className="text-base md:text-lg font-geist text-gray-600 max-w-2xl md:max-w-3xl mx-auto">
-          We provide comprehensive audit and certification services across
-          industries worldwide, ensuring the highest standards of quality and
-          compliance for our clients.
+          Explore our collection of successful BIS grant letters and license
+          documents across various industries, showcasing our expertise in BIS
+          certification and compliance services.
         </p>
       </div>
 
@@ -166,13 +164,13 @@ const AuditHero = () => {
       <h2 className="text-3xl md:text-4xl text-center mb-4">
         {/* <span className="text-[#0A4394] font-geist font-medium mr-1 ">/</span> */}
         <span className="font-playfair font-bold text-[#1e1e1e]">
-          Audit Glimpse
+          Grant Letter Gallery
         </span>
       </h2>
 
       <p className="text-base md:text-lg text-center font-geist text-gray-600 max-w-xl md:max-w-xl mx-auto leading-relaxed">
-        A glimpse into our international audit and certification processes
-        across various industries
+        A collection of BIS grant letters and license documents issued across
+        various industries and standards
       </p>
     </div>
   );
@@ -182,99 +180,117 @@ const AuditGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      image: "/auditImages/Bahrain.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Aluminium Products under IS 617 and 2590 for one of the world's leading manufacturer in Bahrain",
+      image: "/Grant-Letter-Img/Grant-Letter-617-page-0001.webp",
+      description: "BIS Grant Letter - IS 617 Certification",
+      alt: "BIS Certificate Grant Letter for Cast aluminium and its alloys - Ingots and castings for general engineering purposes under IS 617:1994 with expert assistance from Sun Certifications India",
     },
     {
       id: 2,
-      image: "/auditImages/Vietnam.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Vietnam",
+      image: "/Grant-Letter-Img/Grant-Letter-2590-page-0002.webp",
+      description: "BIS Grant Letter - IS 2590 Certification",
+      alt: "BIS Certificate Grant Letter for Primary aluminium ingots for remelting for general engineering purpose under IS 2590:1987 with expert assistance from Sun Certifications India",
     },
     {
       id: 3,
-      image: "/auditImages/Indonesia.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Indonesia",
+      image: "/Grant-Letter-Img/Grant-letter-TITUS-page-0003.webp",
+      description: "BIS Grant Letter - TITUS Certification",
+      alt: "BIS Certification Grant Letter for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 4,
-      image: "/auditImages/Vietnam-2.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Vietnam",
+      image: "/Grant-Letter-Img/Grant-letter-TITUS-page-0004.webp",
+      description: "BIS Grant Letter - TITUS Certification",
+      alt: "BIS Certification Grant Letter for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 5,
-      image: "/auditImages/Italy-2.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Footwear under IS 6721 for one of the world's leading manufacturer in Italy",
+      image: "/Grant-Letter-Img/Licence-document-Hanhmy-page-0007.webp",
+      description: "BIS License Document - Hanhmy",
+      alt: "BIS License Grant Letter document for Hanhmy with expert assistance from Sun Certifications India",
     },
     {
       id: 6,
-      image: "/auditImages/Vietnam-3.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Sewing Machines under IS 15449 for one of the world's leading manufacturer in Vietnam",
+      image: "/Grant-Letter-Img/Licence-document-Sedo-Vina-page-0008.webp",
+      description: "BIS License Document - Sedo Vina",
+      alt: "BIS License Grant Letter document for Sedo Vina with expert assistance from Sun Certifications India",
     },
     {
       id: 7,
-      image: "/auditImages/Malaysia.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Malaysia",
+      image: "/Grant-Letter-Img/Licence-leader-Art-page-0009.webp",
+      description: "BIS License Document - Leader Art",
+      alt: "BIS License Grant Letter document for Leader Art with expert assistance from Sun Certifications India",
     },
     {
       id: 8,
-      image: "/auditImages/Slovenia.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Hinges under IS 18297 for one of the world's leading manufacturer in Slovenia",
+      image: "/Grant-Letter-Img/License-document-BAMCO-page-00010.webp",
+      description: "BIS License Document - BAMCO",
+      alt: "BIS License Grant Letter document for BAMCO with expert assistance from Sun Certifications India",
     },
     {
       id: 9,
-      image: "/auditImages/Vietnam-4.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Steel Products under IS 6911 for one of the world's leading manufacturer in Vietnam",
+      image: "/Grant-Letter-Img/733-grant-letter-0011.webp",
+      description: "BIS Grant Letter - IS 733 Certification",
+      alt: "BIS Certification Grant Letter for Wrought aluminium and aluminium alloy bars, rods and sections under IS 733:1983 with expert assistance from Sun Certifications India",
     },
     {
       id: 10,
-      image: "/auditImages/Thailand.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Toys under IS 9873 for one of the world's leading manufacturer in Thailand",
+      image: "/Grant-Letter-Img/1285-grant-letter-0012.webp",
+      description: "BIS Grant Letter - IS 1285 Certification",
+      alt: "BIS Certification Grant Letter for Wrought aluminium and aluminium alloys- Extruded round tube and hollow sections under IS 1285:2002 with expert assistance from Sun Certifications India",
     },
     {
       id: 11,
-      image: "/auditImages/USA.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Steel Products under IS 6911 for one of the world's leading manufacturer in USA",
+      image: "/Grant-Letter-Img/BIS-CERTIFICATE-NFAFPL-0013.webp",
+      description: "BIS Certificate - NFAFPL",
+      alt: "BIS Certification Grant Letter for Diesel Engines - NOx Reduction Agent AUS 32 under IS 17042 (Part 1):2018 with expert assistance from Sun Certifications India",
     },
     {
       id: 12,
-      image: "/auditImages/Spain.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Aluminium Products under IS 1285 and IS 733 for one of the world's leading manufacturer in Spain",
+      image: "/Grant-Letter-Img/Chetak-Grant-Letter-0014.webp",
+      description: "BIS Grant Letter - Chetak",
+      alt: "BIS Certification Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
     },
     {
       id: 13,
-      image: "/auditImages/Turkey.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Footwear under IS 6721 and IS 17043 Part 2 for one of the world's leading manufacturer in Turkey",
+      image: "/Grant-Letter-Img/grant-letter-0015.webp",
+      description: "BIS Grant Letter Certification",
+      alt: "BIS License Grant Letter for Sandal and Slippers Specification under IS 6721:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 14,
-      image: "/auditImages/bis-certification-inspection-malaysia.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Measuring Tape under IS 1269 Part 2 for one of the world's leading manufacturer in Malaysia",
+      image: "/Grant-Letter-Img/Kidz-Autobharat-Grant-Letter-0016.webp",
+      description: "BIS Grant Letter - Kidz Autobharat",
+      alt: "BIS License Grant Letter for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for foreign manufacturer with expert assistance from Sun Certifications India",
     },
     {
       id: 15,
-      image: "/seminarImages/Seminar-12.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Aluminium Products under IS 1285 for one of the world's leading manufacturer in Italy",
+      image: "/Grant-Letter-Img/License-document-Thantawan-0017.webp",
+      description: "BIS License Document - Thantawan",
+      alt: "BIS License Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
     },
     {
       id: 16,
-      image: "/auditImages/Bemco.webp",
-      description:
-        "Successful Audit and Grant of BIS License on Aluminium Products under IS 617 for one of the world's leading manufacturer in Bahrain",
+      image: "/Grant-Letter-Img/License-Documents-IS-4581-0018.webp",
+      description: "BIS License Document - IS 4581",
+      alt: "BIS Certification Grant Letter for Phosphorous Trichloride, pure and Analytical Reagent under IS 4581:1978 with expert assistance from Sun Certifications India",
+    },
+    {
+      id: 17,
+      image: "/Grant-Letter-Img/License-Documents-IS11744-0019.webp",
+      description: "BIS License Document - IS 11744",
+      alt: "BIS Certification Grant Letter for Phosphorous Pentachloride, Technical under IS 11744:1986 with expert assistance from Sun Certifications India",
+    },
+    {
+      id: 18,
+      image: "/Grant-Letter-Img/Mita-Fastners-Grant-Letter-0020.webp",
+      description: "BIS Grant Letter - Mita Fastners",
+      alt: "BIS Certification Grant Letter for Hexagon Head Bolts, Screws and Nuts of Product Grades A and B - Hexagon Head Screws under IS 1364 Part 2:2023 with expert assistance from Sun Certifications India",
+    },
+    {
+      id: 19,
+      image: "/Grant-Letter-Img/Profax-Grant-Letter-0021.webp",
+      description: "BIS Grant Letter - Profax",
+      alt: "BIS License Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
     },
   ];
 
@@ -294,14 +310,18 @@ const AuditGallery = () => {
           >
             <div className="aspect-[4/3] overflow-hidden rounded-xl">
               <img
-                alt={item.description || `Audit ${item.id}`}
-                title={item.description || `Audit ${item.id}`}
+                alt={
+                  item.alt || item.description || `BIS Grant Letter ${item.id}`
+                }
+                title={
+                  item.alt || item.description || `BIS Grant Letter ${item.id}`
+                }
                 loading="lazy"
                 width="600"
                 height="450"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 decoding="async"
-                className="w-full h-full object-cover transform transition-transform duration-700 md:group-hover:scale-110"
+                className="w-full h-full object-cover object-top transform transition-transform duration-700 md:group-hover:scale-110"
                 src={item.image}
                 style={{ color: "transparent" }}
               />
@@ -309,14 +329,13 @@ const AuditGallery = () => {
 
             <div className="flex flex-1 flex-col justify-between py-2 transition-all duration-300 group-hover:px-4">
               <p className="mt-2 max-w-full text-lg font-geist text-neutral-600">
-                {item.description ||
-                  "A showcase of our international audit and certification services"}
+                {item.description || "BIS Grant Letter and License Document"}
               </p>
             </div>
           </div>
         ))}
 
-        {/* Many More Audits Images Coming Soon Card */}
+        {/* Many More Grant Letters Card */}
         <div
           className="group relative mb-4 rounded-2xl"
           style={{
@@ -329,13 +348,13 @@ const AuditGallery = () => {
           <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
             <div className="text-center p-4">
               <h3 className="text-gray-800 font-geist text-base md:text-lg font-bold mb-1 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
-                Many More Audits
+                Many More Grant Letters
               </h3>
               <p className="text-gray-500 font-geist text-xs font-medium uppercase tracking-widest mb-1">
-                Conducted Worldwide
+                Issued Successfully
               </p>
               <p className="text-gray-400 font-geist text-xs italic">
-                Showcasing our extensive audit portfolio
+                Showcasing our extensive BIS certification portfolio
               </p>
             </div>
           </div>

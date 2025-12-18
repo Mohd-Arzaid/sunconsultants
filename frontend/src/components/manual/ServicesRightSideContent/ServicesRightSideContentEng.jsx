@@ -150,15 +150,15 @@ const ServicesRightSideContentEng = () => {
     "/can-foreign-companies-get-bis-certification",
 
     // BIS CERTIFICATION PRODUCTS PATHS
-    "/bis-certification-for-bunk-beds-is-17636",
-    "/bis-certification-for-beds-is-17635",
-    "/bis-certification-for-work-chairs-is-17631",
-    "/bis-certification-for-chair-&-stools-is-17632",
-    "/bis-certification-for-storage-unit-is-17634",
-    "/bis-certification-for-tables-&-desks-unit-is-17633",
-    "/bis-certification-for-welded-pipes-and-tubes-is-17876",
-    "/bis-certification-for-seamless-pipes-and-tubes-is-17875",
-    "/blogs/ISI-products/flashlight-IS-2083",
+    "/blogs/ISI-products/bunk-beds-IS-17636:2022",
+    "/blogs/ISI-products/beds-IS-17635:2022",
+    "/blogs/ISI-products/work-chairs-IS-17631:2022",
+    "/blogs/ISI-products/chairs-and-stools-IS-17632:2022",
+    "/blogs/ISI-products/storage-unit-IS-17634:2022",
+    "/blogs/ISI-products/tables-&-desks-IS-17633:2022",
+    "/blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024",
+    "/blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022",
+    "/blogs/ISI-products/flashlight-IS-2083:2024",
     "/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999",
     "/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016",
     "/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003",
@@ -987,25 +987,25 @@ const ContactFormServicesRightSideContentEng = () => {
       return "Can Foreign Companies Get BIS Certification - English Page";
 
     // BIS CERTIFICATION PRODUCTS PATHS
-    if (path.includes("/bis-certification-for-bunk-beds-is-17636"))
+    if (path.includes("/blogs/ISI-products/bunk-beds-IS-17636:2022"))
       return "BIS Certificate for Bunk Beds - English Page";
-    if (path.includes("/bis-certification-for-beds-is-17635"))
+    if (path.includes("/blogs/ISI-products/beds-IS-17635:2022"))
       return "BIS Certificate for Beds - English Page";
-    if (path.includes("/bis-certification-for-work-chairs-is-17631"))
+    if (path.includes("/blogs/ISI-products/work-chairs-IS-17631:2022"))
       return "BIS Certificate for Work Chairs - English Page";
-    if (path.includes("/bis-certification-for-chair-&-stools-is-17632"))
+    if (path.includes("/blogs/ISI-products/chairs-and-stools-IS-17632:2022"))
       return "BIS Certificate for Chair & Stools - English Page";
-    if (path.includes("/bis-certification-for-storage-unit-is-17634"))
+    if (path.includes("/blogs/ISI-products/storage-unit-IS-17634:2022"))
       return "BIS Certificate for Storage Unit - English Page";
-    if (path.includes("/bis-certification-for-tables-&-desks-unit-is-17633"))
+    if (path.includes("/blogs/ISI-products/tables-&-desks-IS-17633:2022"))
       return "BIS Certificate for Tables & Desks - English Page";
-    if (path.includes("/bis-certification-for-welded-pipes-and-tubes-is-17876"))
+    if (path.includes("/blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024"))
       return "BIS Certificate for Welded Pipes & Tubes - English Page";
     if (
-      path.includes("/bis-certification-for-seamless-pipes-and-tubes-is-17875")
+      path.includes("/blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022")
     )
       return "BIS Certificate for Seamless Pipes & Tubes - English Page";
-    if (path.includes("/blogs/ISI-products/flashlight-IS-2083"))
+    if (path.includes("/blogs/ISI-products/flashlight-IS-2083:2024"))
       return "BIS Certificate for Flashlight - English Page";
     if (
       path.includes(
@@ -1027,9 +1027,7 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Solar Flat Plate Collector - English Page";
     if (path.includes("/blogs/ISI-products/chairs-and-stools-IS-17632:2022"))
       return "BIS Certificate for General Purpose Chairs and Stools - English Page";
-    if (
-      path.includes("/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021")
-    )
+    if (path.includes("/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021"))
       return "BIS Certificate for Fibre Ropes of Polyester - English Page";
   };
 

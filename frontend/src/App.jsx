@@ -145,7 +145,7 @@ function App() {
           }
         />
         <Route
-          path="/BIS-Certifaction-grant-letter"
+          path="/BIS-certification-grant-letter"
           element={
             <Suspense fallback={<InternationalAuditsSkeleton />}>
               <GrantLetter />

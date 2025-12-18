@@ -54,7 +54,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Beds, BIS License for Beds, IS 17635:2022, BIS Certification for Beds";
   const websiteUrl =
-    "https://bis-certifications.com/bis-certification-for-beds-is-17635";
+    "https://bis-certifications.com/blogs/ISI-products/beds-IS-17635:2022";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

@@ -56,7 +56,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Welded Pipes & Tubes, BIS License for Welded Pipes & Tubes, IS 17876:2022, BIS Certification for Welded Pipes & Tubes";
   const websiteUrl =
-    "https://bis-certifications.com/bis-certification-for-welded-pipes-and-tubes-is-17876";
+    "https://bis-certifications.com/blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

@@ -27,6 +27,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bis-certifications.com/BIS-certification-grant-letter</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bis-certifications.com/seminars-and-exhibitions</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3208,21 +3213,21 @@
   </url>
   <!-- BIS Certificate for Bunk Beds - English -->
   <url>
-    <loc>https://bis-certifications.com/bis-certification-for-bunk-beds-is-17636</loc>
+    <loc>https://bis-certifications.com/blogs/ISI-products/bunk-beds-IS-17636:2022</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Beds - English -->
   <url>
-    <loc>https://bis-certifications.com/bis-certification-for-beds-is-17635</loc>
+    <loc>https://bis-certifications.com/blogs/ISI-products/beds-IS-17635:2022</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Work Chairs - English -->
   <url>
-    <loc>https://bis-certifications.com/bis-certification-for-work-chairs-is-17631</loc>
+    <loc>https://bis-certifications.com/blogs/ISI-products/work-chairs-IS-17631:2022</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -3236,7 +3241,7 @@
   </url>
   <!-- BIS Certificate for Storage Unit - English -->
   <url>
-    <loc>https://bis-certifications.com/bis-certification-for-storage-unit-is-17634</loc>
+    <loc>https://bis-certifications.com/blogs/ISI-products/storage-unit-IS-17634:2022</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -3250,21 +3255,21 @@
   </url>
   <!-- BIS Certificate for Welded Pipes & Tubes - English -->
   <url>
-    <loc>https://bis-certifications.com/bis-certification-for-welded-pipes-and-tubes-is-17876</loc>
+    <loc>https://bis-certifications.com/blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Seamless Pipes & Tubes - English -->
   <url>
-    <loc>https://bis-certifications.com/bis-certification-for-seamless-pipes-and-tubes-is-17875</loc>
+    <loc>https://bis-certifications.com/blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Flashlight - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/flashlight-IS-2083</loc>
+    <loc>https://bis-certifications.com/blogs/ISI-products/flashlight-IS-2083:2024</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
