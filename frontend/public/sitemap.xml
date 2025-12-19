@@ -3309,6 +3309,27 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyethylene - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Fibre Ropes - Polyamide - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Steel Wire Ropes - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/ISI-products/steel-wire-ropes-IS-1804:2004</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
 
   <url>
     <loc>https://bis-certifications.com/bis-certification-in-indonesia</loc>

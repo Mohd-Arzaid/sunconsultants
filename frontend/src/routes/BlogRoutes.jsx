@@ -97,6 +97,15 @@ const BISCertificateForStorageWaterTank = lazy(() =>
 const BISCertificationforFibreRopesOfPolyester = lazy(() =>
   import("@/blogs/BISCertificationforFibreRopesOfPolyester")
 );
+const BISCertificationFibreRopes = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopes")
+);
+const BISCertificationFibreRopesPolyamide = lazy(() =>
+  import("@/blogs/BISCertificationFibreRopesPolyamide")
+);
+const BISCertificateForSteelWireRopes = lazy(() =>
+  import("@/blogs/BISCertificationforSteelWireRopes")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -508,6 +517,30 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforFibreRopesOfPolyester />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationFibreRopesPolyamide />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/steel-wire-ropes-IS-1804:2004"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForSteelWireRopes />
           </Suspense>
         }
       />
