@@ -60,7 +60,7 @@ const blogs = [
     title: "BIS Certificate for Bunk Beds – IS 17636:2022",
     description:
       "Get BIS Certificate for bunk beds under IS 17636:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "bis-certification-for-bunk-beds-is-17636",
+    slug: "blogs/ISI-products/bunk-beds-IS-17636:2022",
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ const blogs = [
     title: "BIS Certificate for Storage Unit – IS 17634:2022",
     description:
       "Get BIS Certificate for Storage Unit under IS 17634:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for cabinets, wardrobes, and storage furniture.",
-    slug: "bis-certification-for-storage-unit-is-17634",
+    slug: "/blogs/ISI-products/storage-unit-IS-17634:2022",
   },
   {
     id: 5,
@@ -212,7 +212,7 @@ const blogs = [
     title: "BIS Certificate for Flashlight – IS 2083:2024",
     description:
       "Get BIS Certificate for Flashlight under IS 2083:2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for flashlights and torches.",
-    slug: "blogs/ISI-products/flashlight-IS-2083",
+    slug: "blogs/ISI-products/flashlight-IS-2083:2024",
   },
 ];
 

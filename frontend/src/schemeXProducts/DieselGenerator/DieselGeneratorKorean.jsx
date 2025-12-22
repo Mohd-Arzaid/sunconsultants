@@ -70,6 +70,78 @@ const DieselGeneratorKorean = () => {
           rel="canonical"
           href="https://bis-certifications.com/bis-seukim-x-injeung-dijel-baljeongi"
         />
+
+        {/* Hreflang Tags for Multi-language Support - English is the default language */}
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-diesel-generators"
+        />
+        <link
+          rel="alternate"
+          hreflang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-dizeru-hatsudenki"
+        />
+        <link
+          rel="alternate"
+          hreflang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-chai-you-fa-dian-ji-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-generateurs-diesel"
+        />
+        <link
+          rel="alternate"
+          hreflang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-dieselgeneratoren"
+        />
+        <link
+          rel="alternate"
+          hreflang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-generadores-diesel"
+        />
+        <link
+          rel="alternate"
+          hreflang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-dijel-baljeongi"
+        />
+        <link
+          rel="alternate"
+          hreflang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-generator-diesel"
+        />
+        <link
+          rel="alternate"
+          hreflang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-generatori-diesel"
+        />
+        <link
+          rel="alternate"
+          hreflang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-khuean-ngan-fa-fa-diesel"
+        />
+        <link
+          rel="alternate"
+          hreflang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-dieselgeneratoren"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-mawalid-al-dizil"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-diesel-generators"
+        />
       </Helmet>
 
       <DieselGeneratorKoreanBreadcrumb />
@@ -109,9 +181,7 @@ const DieselGeneratorKoreanBreadcrumb = () => {
               </BreadcrumbSeparator>
 
               <BreadcrumbItem>
-                <BreadcrumbPage>
-                  디젤 발전기용 BIS Scheme X 인증
-                </BreadcrumbPage>
+                <BreadcrumbPage>디젤 발전기용 BIS Scheme X 인증</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -159,8 +229,8 @@ const DieselGeneratorKoreanMainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           디젤 발전기는 상업 시설, 산업, 병원, 인프라 프로젝트, 주거 프로젝트 및
           기타 많은 장소에서 전력 공급의 보조 공급원으로 사용됩니다. 전력 공급의
-          연속성을 보장할 책임이 있는 경제적 자산으로서, 기계가 안전하고 효율적이며
-          국가 표준을 충족하는 것이 중요합니다.
+          연속성을 보장할 책임이 있는 경제적 자산으로서, 기계가 안전하고
+          효율적이며 국가 표준을 충족하는 것이 중요합니다.
         </p>
 
         {/* Introduction Paragraph 2 */}
@@ -173,8 +243,8 @@ const DieselGeneratorKoreanMainContentLeft = () => {
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          이 게시물은 디젤 발전기의 BIS Scheme X 인증의 중요성, 2024년 OTR 의무 및
-          제조업체가 인증을 받는 방법에 대해 자세히 설명합니다.
+          이 게시물은 디젤 발전기의 BIS Scheme X 인증의 중요성, 2024년 OTR 의무
+          및 제조업체가 인증을 받는 방법에 대해 자세히 설명합니다.
         </p>
 
         {/* Separator Line */}
@@ -204,9 +274,7 @@ const DieselGeneratorKoreanMainContentLeft = () => {
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            계량기 고장(기계적 및 전기적)으로 인한 공급 부족
-          </li>
+          <li>계량기 고장(기계적 및 전기적)으로 인한 공급 부족</li>
           <li>비준수 장치의 화재 및 안전 위험 증가</li>
           <li>배출량 과다 및 에너지 비효율</li>
           <li>법적 장벽, 입찰 제외</li>
@@ -227,9 +295,9 @@ const DieselGeneratorKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          디젤 발전기용 BIS Scheme X 인증은 공식 인증 프로세스이며 BIS 적합성 평가
-          규정 2018에 의해 설정된 시스템입니다. 인도 표준 준수를 검증하기 위해
-          엄격한 테스트 및 품질 평가를 의무화합니다.
+          디젤 발전기용 BIS Scheme X 인증은 공식 인증 프로세스이며 BIS 적합성
+          평가 규정 2018에 의해 설정된 시스템입니다. 인도 표준 준수를 검증하기
+          위해 엄격한 테스트 및 품질 평가를 의무화합니다.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -237,12 +305,8 @@ const DieselGeneratorKoreanMainContentLeft = () => {
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            모든 제조업체 - 인도 및 외국 제조업체 모두 - 필수 요구사항
-          </li>
-          <li>
-            다양한 용량의 모든 유형의 디젤 발전기에 적용 가능
-          </li>
+          <li>모든 제조업체 - 인도 및 외국 제조업체 모두 - 필수 요구사항</li>
+          <li>다양한 용량의 모든 유형의 디젤 발전기에 적용 가능</li>
           <li>BIS 승인 실험실에서 제품 테스트 포함</li>
           <li>
             공장 감사, 작업장 방문 및 생산 프로세스 확인, 품질 및 안전 표준을
@@ -264,9 +328,9 @@ const DieselGeneratorKoreanMainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          시행일: 모든 생산자 및 수입자는 2026년 9월 1일까지 인증을 받아야 합니다.
-          이 날짜부터 인증되지 않은 디젤 발전기의 생산, 판매 또는 수입이 인도에서
-          금지됩니다.
+          시행일: 모든 생산자 및 수입자는 2026년 9월 1일까지 인증을 받아야
+          합니다. 이 날짜부터 인증되지 않은 디젤 발전기의 생산, 판매 또는 수입이
+          인도에서 금지됩니다.
         </p>
 
         {/* Separator Line */}
@@ -279,18 +343,17 @@ const DieselGeneratorKoreanMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            안전 보장: 기계적 고장을 최소화하고, 화재, 단락 및 사고를 방지하기 위한
-            화재 예방 기술을 기반으로 합니다.
+            안전 보장: 기계적 고장을 최소화하고, 화재, 단락 및 사고를 방지하기
+            위한 화재 예방 기술을 기반으로 합니다.
           </li>
           <li>
             환경 준수: 에너지 절약 및 배출 감소 표준을 준수하도록 보장합니다.
           </li>
           <li>
-            시장 접근: 디젤 발전기용 OTR - 인증은 인도에서 판매를 위해 필수입니다
+            시장 접근: 디젤 발전기용 OTR - 인증은 인도에서 판매를 위해
+            필수입니다
           </li>
-          <li>
-            고객 신뢰: BIS 표준 마크는 높은 신뢰성과 안전성을 보장합니다.
-          </li>
+          <li>고객 신뢰: BIS 표준 마크는 높은 신뢰성과 안전성을 보장합니다.</li>
           <li>
             입찰 자격: 정부/공공 기업 계약의 경우 제품이 인증되어야 합니다.
           </li>
@@ -312,9 +375,7 @@ const DieselGeneratorKoreanMainContentLeft = () => {
           <li>디젤을 사용하는 모바일 홈 발전기</li>
           <li>상업용 디젤 발전기 세트(고용량)</li>
           <li>비상 및 대기 전원 공급 발전기</li>
-          <li>
-            상업용 소음 방지 디젤 발전기 세트(응용 및 도시용)
-          </li>
+          <li>상업용 소음 방지 디젤 발전기 세트(응용 및 도시용)</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -336,14 +397,11 @@ const DieselGeneratorKoreanMainContentLeft = () => {
             적용 가능한 표준 식별: 발전기 유형에 대한 IS 코드를 찾아보세요.
           </li>
           <li>
-            제품 테스트: BIS 인정 실험실에서 안전, 성능 및 배출 테스트를 수행합니다.
+            제품 테스트: BIS 인정 실험실에서 안전, 성능 및 배출 테스트를
+            수행합니다.
           </li>
-          <li>
-            공장 감사: BIS 담당자가 제조 품질 관리 프로세스를 검사합니다.
-          </li>
-          <li>
-            문서 제출: 사양, 테스트 결과 및 준수 문서를 제공합니다.
-          </li>
+          <li>공장 감사: BIS 담당자가 제조 품질 관리 프로세스를 검사합니다.</li>
+          <li>문서 제출: 사양, 테스트 결과 및 준수 문서를 제공합니다.</li>
           <li>
             라이센스 부여: 승인되면 BIS는 라이센스를 발급하고 표준 마크 사용을
             허가합니다.
@@ -364,9 +422,7 @@ const DieselGeneratorKoreanMainContentLeft = () => {
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            비인증 장비의 판매, 수입 및 제조 금지
-          </li>
+          <li>비인증 장비의 판매, 수입 및 제조 금지</li>
           <li>상품 압수 및 재정적 처벌</li>
           <li>정부 계약 부적격</li>
           <li>영구적인 명성 및 재정적 손상</li>
@@ -388,7 +444,8 @@ const DieselGeneratorKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           제조업체/수입업체에게 디젤 발전기에 대한 Scheme X 인증은 단순한 법적
-          필요사항이 아니라 신뢰성, 준수 및 시장 신뢰를 반영하는 경쟁 우위입니다.
+          필요사항이 아니라 신뢰성, 준수 및 시장 신뢰를 반영하는 경쟁
+          우위입니다.
         </p>
 
         <ServiceAuthorKorean />
@@ -396,4 +453,3 @@ const DieselGeneratorKoreanMainContentLeft = () => {
     </div>
   );
 };
-
