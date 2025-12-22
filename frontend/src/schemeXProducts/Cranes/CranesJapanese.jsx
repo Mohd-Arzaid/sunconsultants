@@ -45,7 +45,8 @@ const CranesMetaTags = () => {
     "インド標準局（BIS）は、すべての種類のクレーンとその組立、サブ組立、コンポーネントに対する必須のスキームX認証を導入しました。";
   const keywords =
     "クレーンのBIS認証、クレーンのBISスキームX認証、クレーンのスキームX認証、クレーンのBIS、クレーンのOTR";
-  const canonicalUrl = window.location.href;
+  const canonicalUrl =
+    "https://bis-certifications.com/bis-sukiimu-x-ninshoo-kurein";
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
@@ -68,6 +69,78 @@ const CranesMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Hreflang Tags for Multi-language Support - English is the default language */}
+      <link
+        rel="alternate"
+        hreflang="en"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-cranes"
+      />
+      <link
+        rel="alternate"
+        hreflang="ja"
+        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kurein"
+      />
+      <link
+        rel="alternate"
+        hreflang="zh"
+        href="https://bis-certifications.com/bis-fang-an-x-qi-zhong-ji-ren-zheng"
+      />
+      <link
+        rel="alternate"
+        hreflang="fr"
+        href="https://bis-certifications.com/certification-bis-schema-x-pour-ponts-roulants"
+      />
+      <link
+        rel="alternate"
+        hreflang="de"
+        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-krane"
+      />
+      <link
+        rel="alternate"
+        hreflang="vi"
+        href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-can-cau"
+      />
+      <link
+        rel="alternate"
+        hreflang="es"
+        href="https://bis-certifications.com/certificacion-bis-scheme-x-para-gruas"
+      />
+      <link
+        rel="alternate"
+        hreflang="ko"
+        href="https://bis-certifications.com/bis-seukim-x-injeung-keurein"
+      />
+      <link
+        rel="alternate"
+        hreflang="id"
+        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-derek"
+      />
+      <link
+        rel="alternate"
+        hreflang="it"
+        href="https://bis-certifications.com/certificazione-bis-schema-x-per-gru"
+      />
+      <link
+        rel="alternate"
+        hreflang="th"
+        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khren"
+      />
+      <link
+        rel="alternate"
+        hreflang="nl"
+        href="https://bis-certifications.com/bis-schema-x-certificering-voor-kranen"
+      />
+      <link
+        rel="alternate"
+        hreflang="ar"
+        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-rafaat"
+      />
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-cranes"
+      />
     </Helmet>
   );
 };

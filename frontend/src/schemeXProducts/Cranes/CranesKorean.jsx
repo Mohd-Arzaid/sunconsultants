@@ -68,7 +68,79 @@ const CranesKorean = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/ko/bis-seukim-x-injeung-keurein"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-keurein"
+        />
+
+        {/* Hreflang Tags for Multi-language Support - English is the default language */}
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-cranes"
+        />
+        <link
+          rel="alternate"
+          hreflang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kurein"
+        />
+        <link
+          rel="alternate"
+          hreflang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-qi-zhong-ji-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-ponts-roulants"
+        />
+        <link
+          rel="alternate"
+          hreflang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-krane"
+        />
+        <link
+          rel="alternate"
+          hreflang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-can-cau"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-gruas"
+        />
+        <link
+          rel="alternate"
+          hreflang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-keurein"
+        />
+        <link
+          rel="alternate"
+          hreflang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-derek"
+        />
+        <link
+          rel="alternate"
+          hreflang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-gru"
+        />
+        <link
+          rel="alternate"
+          hreflang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khren"
+        />
+        <link
+          rel="alternate"
+          hreflang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-kranen"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-rafaat"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-cranes"
         />
       </Helmet>
 
@@ -158,23 +230,24 @@ const CranesKoreanMainContentLeft = () => {
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
           크레인은 주로 제조, 건설, 생산 및 채광에서 자재를 들어 올리고 운송하는
-          데 사용됩니다. 그 기능이 안전에 중요할 수 있으므로 자격이 없거나 품질이
-          나쁜 크레인은 미끄러짐 및 낙상, 장비 오작동 또는 비용이 많이 드는 손실을
-          초래할 수 있습니다.
+          데 사용됩니다. 그 기능이 안전에 중요할 수 있으므로 자격이 없거나
+          품질이 나쁜 크레인은 미끄러짐 및 낙상, 장비 오작동 또는 비용이 많이
+          드는 손실을 초래할 수 있습니다.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          이러한 위험을 고려하여 인도 표준국(BIS)은 Scheme – X 인증 하에 크레인용
-          BIS 인증을 의무화했습니다. 이는 인도에서 사용되는 크레인이 안전하고
-          신뢰할 수 있으며 효율적이며 세계적 수준의 품질임을 보장합니다.
+          이러한 위험을 고려하여 인도 표준국(BIS)은 Scheme – X 인증 하에
+          크레인용 BIS 인증을 의무화했습니다. 이는 인도에서 사용되는 크레인이
+          안전하고 신뢰할 수 있으며 효율적이며 세계적 수준의 품질임을
+          보장합니다.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
           이 블로그에서는 크레인용 BIS Scheme X 등록의 중요성, 크레인용 OTR의
-          법적 측면, 그리고 크레인용 BIS 라이센스를 얻고 크레인용 BIS 표준 마크를
-          표시하는 방법에 대해 안내합니다.
+          법적 측면, 그리고 크레인용 BIS 라이센스를 얻고 크레인용 BIS 표준
+          마크를 표시하는 방법에 대해 안내합니다.
         </p>
 
         {/* Separator Line */}
@@ -199,7 +272,8 @@ const CranesKoreanMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          크레인용 BIS가 없으면 인증되지 않은 장비로 인해 다음이 발생할 수 있습니다:
+          크레인용 BIS가 없으면 인증되지 않은 장비로 인해 다음이 발생할 수
+          있습니다:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
@@ -211,8 +285,8 @@ const CranesKoreanMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          크레인용 BIS 마크는 제품이 인도의 강력한 품질 및 안전 규범을 준수한다는
-          점에 대해 소비자와 규제 당국 모두에게 신뢰를 제공합니다.
+          크레인용 BIS 마크는 제품이 인도의 강력한 품질 및 안전 규범을
+          준수한다는 점에 대해 소비자와 규제 당국 모두에게 신뢰를 제공합니다.
         </p>
 
         {/* Separator Line */}
@@ -234,15 +308,9 @@ const CranesKoreanMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>국내 및 외국 제조업체 모두에게 필요</li>
-          <li>
-            모든 주요 범주의 크레인에 적용되며 인도 표준에 따라 고시됨
-          </li>
-          <li>
-            제품 테스트, 공장 감사 및 지속적인 준수 평가가 의무화됨
-          </li>
-          <li>
-            인증 제품에 크레인용 BIS 마크 사용을 위한 라이센스 제공
-          </li>
+          <li>모든 주요 범주의 크레인에 적용되며 인도 표준에 따라 고시됨</li>
+          <li>제품 테스트, 공장 감사 및 지속적인 준수 평가가 의무화됨</li>
+          <li>인증 제품에 크레인용 BIS 마크 사용을 위한 라이센스 제공</li>
         </ul>
 
         {/* Separator Line */}
@@ -260,8 +328,9 @@ const CranesKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           마감일: 모든 크레인 제조업체/수입업체는 2026년 9월 1일까지 최신으로
-          Scheme X 하에서 크레인용 BIS 라이센스를 받아야 합니다. 그 이후 인증되지
-          않은 크레인은 인도에서 판매, 수입 또는 공공 입찰에 사용될 수 없습니다.
+          Scheme X 하에서 크레인용 BIS 라이센스를 받아야 합니다. 그 이후
+          인증되지 않은 크레인은 인도에서 판매, 수입 또는 공공 입찰에 사용될 수
+          없습니다.
         </p>
 
         {/* Separator Line */}
@@ -277,8 +346,8 @@ const CranesKoreanMainContentLeft = () => {
             향상된 안전성: 인증된 크레인은 기계적 고장과 사고를 최소화합니다.
           </li>
           <li>
-            시장 우위: 정부 기관 및 기업은 전자 입찰 및 대규모 프로젝트에서
-            BIS 인증 크레인을 선호합니다.
+            시장 우위: 정부 기관 및 기업은 전자 입찰 및 대규모 프로젝트에서 BIS
+            인증 크레인을 선호합니다.
           </li>
           <li>
             소비자 및 계약자 신뢰: 크레인용 BIS 마크는 품질과 신뢰성에 대한
@@ -289,7 +358,8 @@ const CranesKoreanMainContentLeft = () => {
             규제된 인도 시장에 쉽게 진입할 수 있게 해줍니다.
           </li>
           <li>
-            인도 법률 준수: 벌금, 몰수 및 정부 계약에서 제외되는 것을 방지합니다.
+            인도 법률 준수: 벌금, 몰수 및 정부 계약에서 제외되는 것을
+            방지합니다.
           </li>
         </ul>
 
@@ -323,8 +393,8 @@ const CranesKoreanMainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          장비 유형은 설계, 하중 운반 능력, 안전 및 성능에 대한 관련 인도 표준(IS
-          코드)을 준수해야 합니다.
+          장비 유형은 설계, 하중 운반 능력, 안전 및 성능에 대한 관련 인도
+          표준(IS 코드)을 준수해야 합니다.
         </p>
 
         {/* Separator Line */}
@@ -347,11 +417,12 @@ const CranesKoreanMainContentLeft = () => {
             공장 검사: BIS는 생산 현장 및 품질 시스템에 대한 검사를 수행합니다.
           </li>
           <li>
-            신청 및 문서화: 기술 보고서, 테스트 결과 및 품질 매뉴얼을 제시하세요.
+            신청 및 문서화: 기술 보고서, 테스트 결과 및 품질 매뉴얼을
+            제시하세요.
           </li>
           <li>
-            크레인용 BIS 라이센스: 승인되면 제조업체는 크레인용 BIS 마크를 적용할
-            권한을 갖습니다.
+            크레인용 BIS 라이센스: 승인되면 제조업체는 크레인용 BIS 마크를
+            적용할 권한을 갖습니다.
           </li>
           <li>
             지속적인 준수: 정기적인 감사 및 검사가 지속적인 준수를 보장합니다.
@@ -389,9 +460,9 @@ const CranesKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           크레인 제조업체, 수입업체, 수출업체의 경우 크레인용 BIS 라이센스를
-          보유하는 것이 중요하며, 표준을 준수하고 소비자 신뢰를 구축하며 BIS 또는
-          인도 정부와의 잠재적 충돌을 피하기 위해 크레인용 BIS 등록을 위한 온라인
-          신청 포털을 통해 동일한 신청을 할 수 있습니다.
+          보유하는 것이 중요하며, 표준을 준수하고 소비자 신뢰를 구축하며 BIS
+          또는 인도 정부와의 잠재적 충돌을 피하기 위해 크레인용 BIS 등록을 위한
+          온라인 신청 포털을 통해 동일한 신청을 할 수 있습니다.
         </p>
 
         <ServiceAuthorKorean />

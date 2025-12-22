@@ -19,9 +19,7 @@ const CentrifugesKorean = () => {
   return (
     <div className="relative w-full">
       <Helmet>
-        <title>
-          원심분리기 및 여과 또는 정제 기계용 BIS Scheme X 인증
-        </title>
+        <title>원심분리기 및 여과 또는 정제 기계용 BIS Scheme X 인증</title>
 
         {/* Meta Description */}
         <meta
@@ -70,7 +68,79 @@ const CentrifugesKorean = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/ko/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+        />
+
+        {/* Hreflang Tags for Multi-language Support - English is the default language */}
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+        />
+        <link
+          rel="alternate"
+          hreflang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai"
+        />
+        <link
+          rel="alternate"
+          hreflang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification"
+        />
+        <link
+          rel="alternate"
+          hreflang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
+        />
+        <link
+          rel="alternate"
+          hreflang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-ly-tam-va-thiet-bi-loc-hoac-tinh-che"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-centrifugas-y-maquinaria-de-filtrado-o-purificacion"
+        />
+        <link
+          rel="alternate"
+          hreflang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+        />
+        <link
+          rel="alternate"
+          hreflang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-sentrifus-dan-mesin-penyaring-atau-pemurnian"
+        />
+        <link
+          rel="alternate"
+          hreflang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-centrifughe-e-macchinari-di-filtrazione-o-purificazione"
+        />
+        <link
+          rel="alternate"
+          hreflang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-pan-wia-lae-khrueang-krong-rue-tham-hai-borisut"
+        />
+        <link
+          rel="alternate"
+          hreflang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-taard-almarkazi-wa-alat-altasfiya-aw-altanqiya"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
         />
       </Helmet>
 
@@ -111,9 +181,7 @@ const CentrifugesKoreanBreadcrumb = () => {
               </BreadcrumbSeparator>
 
               <BreadcrumbItem>
-                <BreadcrumbPage>
-                  원심분리기용 BIS 인증
-                </BreadcrumbPage>
+                <BreadcrumbPage>원심분리기용 BIS 인증</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -163,24 +231,25 @@ const CentrifugesKoreanMainContentLeft = () => {
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          원심분리기는 실험실, 제약, 식품 가공, 생명공학, 석유화학 및 채광 산업에서
-          널리 적용되는 중요한 기계입니다. 이러한 기계는 회전으로 작동하며, 빠른
-          회전으로 혼합물을 분리하는데, 이 분리는 정밀하고 안전하며 빠른 처리를
-          위해 필수적입니다.
+          원심분리기는 실험실, 제약, 식품 가공, 생명공학, 석유화학 및 채광
+          산업에서 널리 적용되는 중요한 기계입니다. 이러한 기계는 회전으로
+          작동하며, 빠른 회전으로 혼합물을 분리하는데, 이 분리는 정밀하고
+          안전하며 빠른 처리를 위해 필수적입니다.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
           다양한 산업에서 더 넓은 적용을 위해 원심분리기의 신뢰성과 안전성을
-          높이는 것이 중요합니다. 원심분리기의 품질 관리 매개변수를 유지하기 위해
-          BIS는 원심분리기용 Scheme -X 인증으로 알려진 BIS 인증 계획을 도입했습니다.
+          높이는 것이 중요합니다. 원심분리기의 품질 관리 매개변수를 유지하기
+          위해 BIS는 원심분리기용 Scheme -X 인증으로 알려진 BIS 인증 계획을
+          도입했습니다.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          이 글에서는 원심분리기용 BIS Scheme X 인증이 무엇인지, 원심분리기용 OTR이
-          무엇인지, 원심분리기용 공식 BIS 마크를 포함하여 원심분리기용 BIS 라이센스를
-          얻는 방법을 다룹니다.
+          이 글에서는 원심분리기용 BIS Scheme X 인증이 무엇인지, 원심분리기용
+          OTR이 무엇인지, 원심분리기용 공식 BIS 마크를 포함하여 원심분리기용 BIS
+          라이센스를 얻는 방법을 다룹니다.
         </p>
 
         {/* Separator Line */}
@@ -205,8 +274,8 @@ const CentrifugesKoreanMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          원심분리기용 BIS가 없으면 낮은 품질 또는 인증되지 않은 원심분리기의 사용으로
-          이어질 수 있으며, 이는 다음을 초래할 수 있습니다:
+          원심분리기용 BIS가 없으면 낮은 품질 또는 인증되지 않은 원심분리기의
+          사용으로 이어질 수 있으며, 이는 다음을 초래할 수 있습니다:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
@@ -218,7 +287,8 @@ const CentrifugesKoreanMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          원심분리기용 BIS 마크가 있는 BIS 인증 원심분리기는 보안, 품질 및 신뢰를 의미합니다.
+          원심분리기용 BIS 마크가 있는 BIS 인증 원심분리기는 보안, 품질 및
+          신뢰를 의미합니다.
         </p>
 
         {/* Separator Line */}
@@ -230,8 +300,8 @@ const CentrifugesKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          원심분리기의 BIS Scheme X 인증은 BIS 적합성 평가 규정 2018에 따른
-          의무 인증 계획입니다.
+          원심분리기의 BIS Scheme X 인증은 BIS 적합성 평가 규정 2018에 따른 의무
+          인증 계획입니다.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -243,12 +313,10 @@ const CentrifugesKoreanMainContentLeft = () => {
           <li>
             산업 및 연구개발 실험실에서 발견되는 모든 유형의 원심분리기에 적용
           </li>
+          <li>상당한 양의 제품 테스트, 감사 및 준수 검증이 필수입니다</li>
           <li>
-            상당한 양의 제품 테스트, 감사 및 준수 검증이 필수입니다
-          </li>
-          <li>
-            제조업체가 위에 언급된 원심분리기 인증을 기반으로 BIS 등록을 신청할 수
-            있도록 허용합니다.
+            제조업체가 위에 언급된 원심분리기 인증을 기반으로 BIS 등록을 신청할
+            수 있도록 허용합니다.
           </li>
         </ul>
 
@@ -267,9 +335,9 @@ const CentrifugesKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           마감일: 모든 제조업체 및 수입업체는 2026년 9월 1일까지 Scheme X 하에서
-          원심분리기의 유효한 BIS 라이센스를 받아야 합니다.
-          "이것은 인증되지 않은 원심분리기가 전국에서 판매, 수입 또는 입찰에 참여하는
-          것을 막을 것입니다,"라고 정부 관리들이 말했습니다.
+          원심분리기의 유효한 BIS 라이센스를 받아야 합니다. "이것은 인증되지
+          않은 원심분리기가 전국에서 판매, 수입 또는 입찰에 참여하는 것을 막을
+          것입니다,"라고 정부 관리들이 말했습니다.
         </p>
 
         {/* Separator Line */}
@@ -285,15 +353,16 @@ const CentrifugesKoreanMainContentLeft = () => {
             안전성 및 준수: 고속에서의 기계적 고장으로 인한 사고를 방지합니다.
           </li>
           <li>
-            품질 및 신뢰성: 인증된 원심분리기는 높은 정확도와 정밀도로 작동합니다.
+            품질 및 신뢰성: 인증된 원심분리기는 높은 정확도와 정밀도로
+            작동합니다.
           </li>
           <li>
             시장 접근: BIS 원심분리기 라이센스는 일반적으로 공공 기관의 조달에
             필요합니다.
           </li>
           <li>
-            소비자 신뢰: 원심분리기용 BIS 마크는 고객에게 제품 품질과 내구성에 대한
-            정보를 제공합니다.
+            소비자 신뢰: 원심분리기용 BIS 마크는 고객에게 제품 품질과 내구성에
+            대한 정보를 제공합니다.
           </li>
           <li>
             경쟁 우위: BIS 인증 브랜드/제조업체는 규제 시장 및 정부 입찰에서
@@ -325,10 +394,10 @@ const CentrifugesKoreanMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          이러한 모든 유형은 IS 16819:2018/ISO 12100:2010(기계 안전 - 설계에 대한 일반
-          원칙 - 위험 평가 및 위험 감소)과 같은 적용 가능한 인도 표준(IS 코드)을 충족해야
-          합니다. 모든 종류는 품질, 안전 및 에너지 효율을 위한 적절한 인도 표준(IS 코드)을
-          충족해야 합니다.
+          이러한 모든 유형은 IS 16819:2018/ISO 12100:2010(기계 안전 - 설계에
+          대한 일반 원칙 - 위험 평가 및 위험 감소)과 같은 적용 가능한 인도
+          표준(IS 코드)을 충족해야 합니다. 모든 종류는 품질, 안전 및 에너지
+          효율을 위한 적절한 인도 표준(IS 코드)을 충족해야 합니다.
         </p>
 
         {/* Separator Line */}
@@ -344,20 +413,22 @@ const CentrifugesKoreanMainContentLeft = () => {
             관련 표준 식별: 원심분리기 유형에 관련된 IS 코드를 참조하세요.
           </li>
           <li>
-            제품 테스트: BIS 인증 실험실에서 산업 표준이 요구하는 성능 및 안전 테스트를
-            수행하세요.
+            제품 테스트: BIS 인증 실험실에서 산업 표준이 요구하는 성능 및 안전
+            테스트를 수행하세요.
           </li>
           <li>
             공장 검사: BIS 관리자가 생산 현장의 품질 보증 시스템을 확인합니다.
           </li>
           <li>
-            신청 및 문서화: 기술 요구사항, 품질 핸드북 및 테스트 보고서를 제공하세요.
+            신청 및 문서화: 기술 요구사항, 품질 핸드북 및 테스트 보고서를
+            제공하세요.
           </li>
           <li>
             원심분리기용 BIS 라이센스 발급: 승인 후 BIS 마크를 붙일 수 있습니다.
           </li>
           <li>
-            지속적인 준수: BIS는 표준 준수를 위해 확인 및 예정되지 않은 감사를 수행합니다.
+            지속적인 준수: BIS는 표준 준수를 위해 확인 및 예정되지 않은 감사를
+            수행합니다.
           </li>
         </ul>
 
@@ -366,8 +437,8 @@ const CentrifugesKoreanMainContentLeft = () => {
         </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          2026년 9월 1일까지 모든 모델 원심분리기를 원심분리기용 BIS 인증으로 인증받지
-          않은 제조업체는 다음의 위험에 처합니다:
+          2026년 9월 1일까지 모든 모델 원심분리기를 원심분리기용 BIS 인증으로
+          인증받지 않은 제조업체는 다음의 위험에 처합니다:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
@@ -386,15 +457,15 @@ const CentrifugesKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          OTR 2024에서 원심분리기용 BIS Scheme X 인증의 구현은 인도의 산업 및 실험실
-          부문에 안전성, 효율성 및 품질을 가져오는 단계입니다.
+          OTR 2024에서 원심분리기용 BIS Scheme X 인증의 구현은 인도의 산업 및
+          실험실 부문에 안전성, 효율성 및 품질을 가져오는 단계입니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          제조업체, 수입업체 및 수출업체는 원심분리기용 BIS 인증을 확보하고, 원심분리기용
-          BIS 라이센스를 획득하며, 제품에 원심분리기용 BIS 마크를 부착함으로써 이
-          프로세스를 활용하고 있으며, 이는 제품이 현지 시장 규제 시스템 및 고객의 요구사항을
-          충족함을 보여줍니다.
+          제조업체, 수입업체 및 수출업체는 원심분리기용 BIS 인증을 확보하고,
+          원심분리기용 BIS 라이센스를 획득하며, 제품에 원심분리기용 BIS 마크를
+          부착함으로써 이 프로세스를 활용하고 있으며, 이는 제품이 현지 시장 규제
+          시스템 및 고객의 요구사항을 충족함을 보여줍니다.
         </p>
 
         <ServiceAuthorKorean />
@@ -402,4 +473,3 @@ const CentrifugesKoreanMainContentLeft = () => {
     </div>
   );
 };
-

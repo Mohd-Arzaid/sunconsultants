@@ -83,6 +83,78 @@ const CentrifugesGerman = () => {
           rel="canonical"
           href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
         />
+
+        {/* Hreflang Tags for Multi-language Support - English is the default language */}
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+        />
+        <link
+          rel="alternate"
+          hreflang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-sentorifugyu-oyobi-roka-matawa-joka-kikai"
+        />
+        <link
+          rel="alternate"
+          hreflang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-li-xin-ji-he-guo-lv-huo-jing-hua-ji-xie-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-centrifugeuses-et-machines-de-filtrage-ou-purification"
+        />
+        <link
+          rel="alternate"
+          hreflang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-zentrifugen-und-filter-oder-reinigungsmaschinen"
+        />
+        <link
+          rel="alternate"
+          hreflang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-ly-tam-va-thiet-bi-loc-hoac-tinh-che"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-centrifugas-y-maquinaria-de-filtrado-o-purificacion"
+        />
+        <link
+          rel="alternate"
+          hreflang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-wonsimbunligi-mich-yeorgwa-ttoneun-jeongje-gigye"
+        />
+        <link
+          rel="alternate"
+          hreflang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-sentrifus-dan-mesin-penyaring-atau-pemurnian"
+        />
+        <link
+          rel="alternate"
+          hreflang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-centrifughe-e-macchinari-di-filtrazione-o-purificazione"
+        />
+        <link
+          rel="alternate"
+          hreflang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-pan-wia-lae-khrueang-krong-rue-tham-hai-borisut"
+        />
+        <link
+          rel="alternate"
+          hreflang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-centrifuges-en-filter-of-zuiveringsmachines"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-taard-almarkazi-wa-alat-altasfiya-aw-altanqiya"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-centrifuges-and-filtering-or-purifying-machinery"
+        />
       </Helmet>
 
       <CentrifugesGermanBreadcrumb />

@@ -68,7 +68,79 @@ const ConstructionMachineryKorean = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://bis-certifications.com/ko/bis-seukim-x-injeung-geonseol-gigye"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-geonseol-gigye"
+        />
+
+        {/* Hreflang Tags for Multi-language Support - English is the default language */}
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-construction-machinery"
+        />
+        <link
+          rel="alternate"
+          hreflang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kensetsu-kikai"
+        />
+        <link
+          rel="alternate"
+          hreflang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-machines-de-construction"
+        />
+        <link
+          rel="alternate"
+          hreflang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-baumaschinen"
+        />
+        <link
+          rel="alternate"
+          hreflang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-xay-dung"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+        />
+        <link
+          rel="alternate"
+          hreflang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-geonseol-gigye"
+        />
+        <link
+          rel="alternate"
+          hreflang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
+        />
+        <link
+          rel="alternate"
+          hreflang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-macchinari-da-costruzione"
+        />
+        <link
+          rel="alternate"
+          hreflang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-thi-khuk-khuk"
+        />
+        <link
+          rel="alternate"
+          hreflang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-bouwmachines"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-alat-albina"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-construction-machinery"
         />
       </Helmet>
 
@@ -109,9 +181,7 @@ const ConstructionMachineryKoreanBreadcrumb = () => {
               </BreadcrumbSeparator>
 
               <BreadcrumbItem>
-                <BreadcrumbPage>
-                  건설 기계용 BIS Scheme X
-                </BreadcrumbPage>
+                <BreadcrumbPage>건설 기계용 BIS Scheme X</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -157,23 +227,25 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          굴착기, 로더, 불도저, 콘크리트 믹서 및 도로 롤러는 인도의 인프라 건설에
-          사용되는 주요 건설 기계입니다. 안전하고 신뢰할 수 있는 기계에 대한 높은
-          수요는 고속도로, 스마트 시티, 공장 및 주택에 대한 막대한 투자에서 비롯됩니다.
+          굴착기, 로더, 불도저, 콘크리트 믹서 및 도로 롤러는 인도의 인프라
+          건설에 사용되는 주요 건설 기계입니다. 안전하고 신뢰할 수 있는 기계에
+          대한 높은 수요는 고속도로, 스마트 시티, 공장 및 주택에 대한 막대한
+          투자에서 비롯됩니다.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          인도 표준국(BIS)은 건설 기계에 대한 품질, 서비스 및 안전 보장을 제공하기
-          위해 건설 기계에 대한 Scheme-X 하에서 BIS 인증을 의무화했습니다. 이는
-          장치가 인도에서 판매되거나 수입되기 전에 인도 표준을 준수하도록 보장합니다.
+          인도 표준국(BIS)은 건설 기계에 대한 품질, 서비스 및 안전 보장을
+          제공하기 위해 건설 기계에 대한 Scheme-X 하에서 BIS 인증을
+          의무화했습니다. 이는 장치가 인도에서 판매되거나 수입되기 전에 인도
+          표준을 준수하도록 보장합니다.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
           이 글에서는 건설 기계용 BIS Scheme X 인증, 건설 기계용 OTR 요구사항,
-          그리고 건설 기계용 BIS 라이센스 및 건설 기계용 BIS 마크를 얻는 프로세스에
-          대해 배우게 됩니다.
+          그리고 건설 기계용 BIS 라이센스 및 건설 기계용 BIS 마크를 얻는
+          프로세스에 대해 배우게 됩니다.
         </p>
 
         {/* Separator Line */}
@@ -223,9 +295,9 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Scheme X 인증은 제품에 대한 지침을 제공하는 인도 표준국(BIS) 적합성
-          평가 요구사항(2018)에 포함되어 있습니다. 이 계획에서 BIS는 제품의 품질을
-          결정하고 인간 건강 위험을 완화하는지 확인합니다.
+          BIS Scheme X 인증은 제품에 대한 지침을 제공하는 인도 표준국(BIS)
+          적합성 평가 요구사항(2018)에 포함되어 있습니다. 이 계획에서 BIS는
+          제품의 품질을 결정하고 인간 건강 위험을 완화하는지 확인합니다.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -234,16 +306,12 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>국내 및 외국 제조업체에게 의무</li>
-          <li>
-            모든 유형의 중장비 및 건설 장비를 포함합니다
-          </li>
+          <li>모든 유형의 중장비 및 건설 장비를 포함합니다</li>
           <li>
             제품 테스트 필수, 공장 방문 의무 및 준수 감사를 정기적으로 수행해야
             합니다
           </li>
-          <li>
-            건설 기계용 BIS 마크 사용을 승인합니다
-          </li>
+          <li>건설 기계용 BIS 마크 사용을 승인합니다</li>
         </ul>
 
         {/* Separator Line */}
@@ -260,9 +328,10 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          마감일: 모든 제조업체 및 수입업체는 2026년 9월 1일 이전에 Scheme X 하에서
-          건설 기계용 BIS 라이센스를 받아야 합니다. 이 날짜부터 인증되지 않은 장비는
-          공공 인프라 프로그램을 위해 생산, 운송 또는 판매될 수 없습니다.
+          마감일: 모든 제조업체 및 수입업체는 2026년 9월 1일 이전에 Scheme X
+          하에서 건설 기계용 BIS 라이센스를 받아야 합니다. 이 날짜부터 인증되지
+          않은 장비는 공공 인프라 프로그램을 위해 생산, 운송 또는 판매될 수
+          없습니다.
         </p>
 
         {/* Separator Line */}
@@ -279,8 +348,8 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
             줄입니다.
           </li>
           <li>
-            시장 접근 및 입찰 자격: BIS 인증 제품은 정부 및 공공 부문 기업 입찰에
-            참가할 수 있습니다.
+            시장 접근 및 입찰 자격: BIS 인증 제품은 정부 및 공공 부문 기업
+            입찰에 참가할 수 있습니다.
           </li>
           <li>
             소비자 및 계약자 신뢰: 건설 기계 BIS 마크는 모든 구매자에게 안전하고
@@ -304,7 +373,8 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          건설 기계용 BIS Scheme X 인증은 다음과 같은 다양한 범주의 장비에 적용됩니다:
+          건설 기계용 BIS Scheme X 인증은 다음과 같은 다양한 범주의 장비에
+          적용됩니다:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
@@ -319,8 +389,8 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           각 범주는 설계, 안전, 성능 등에 대해 IS 17055 (Part 7):2020, IS 17055
-          (Part 8):2020 및 IS 17055 (Part 12):2020에 따라 관련 인도 표준(IS 코드)을
-          충족해야 합니다.
+          (Part 8):2020 및 IS 17055 (Part 12):2020에 따라 관련 인도 표준(IS
+          코드)을 충족해야 합니다.
         </p>
 
         {/* Separator Line */}
@@ -358,17 +428,15 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          건설 기계용 OTR에 따라 2026년 9월 1일까지 건설 기계용 BIS 인증서의 대량
-          실패 또는 미발급은 다음과 같은 영향을 미칩니다:
+          건설 기계용 OTR에 따라 2026년 9월 1일까지 건설 기계용 BIS 인증서의
+          대량 실패 또는 미발급은 다음과 같은 영향을 미칩니다:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>인증되지 않은 장비의 판매 및 수입 금지</li>
           <li>대규모 벌금 및 제품 구류</li>
           <li>정부 프로젝트 및 수상에서 실격</li>
-          <li>
-            향후 수년간 평판에 대한 무제한 잠재적 손상
-          </li>
+          <li>향후 수년간 평판에 대한 무제한 잠재적 손상</li>
         </ul>
 
         {/* Separator Line */}
@@ -386,10 +454,10 @@ const ConstructionMachineryKoreanMainContentLeft = () => {
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          건설 기계 제조업체, 수입업체 및 수출업체의 경우, 건설 기계용 BIS 라이센스를
-          취득하고 건설 기계용 BIS 마크를 부착하는 것은 단순한 준수 요구사항이 아니라,
-          새로운 시장으로 확장하고, 번성하는 인도 건설 시장에 진입하며, 장기적으로
-          평판을 구축하기 위한 전략적 조치입니다.
+          건설 기계 제조업체, 수입업체 및 수출업체의 경우, 건설 기계용 BIS
+          라이센스를 취득하고 건설 기계용 BIS 마크를 부착하는 것은 단순한 준수
+          요구사항이 아니라, 새로운 시장으로 확장하고, 번성하는 인도 건설 시장에
+          진입하며, 장기적으로 평판을 구축하기 위한 전략적 조치입니다.
         </p>
 
         <ServiceAuthorKorean />

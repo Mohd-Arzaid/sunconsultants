@@ -70,6 +70,78 @@ const CompressorsKorean = () => {
           rel="canonical"
           href="https://bis-certifications.com/bis-seukim-x-injeung-apchukgi"
         />
+
+        {/* Hreflang Tags for Multi-language Support - English is the default language */}
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-compressors"
+        />
+        <link
+          rel="alternate"
+          hreflang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-konpuresa"
+        />
+        <link
+          rel="alternate"
+          hreflang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-ya-suo-ji-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-compresseurs"
+        />
+        <link
+          rel="alternate"
+          hreflang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-kompressoren"
+        />
+        <link
+          rel="alternate"
+          hreflang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-nen-khi"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-compresores"
+        />
+        <link
+          rel="alternate"
+          hreflang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-apchukgi"
+        />
+        <link
+          rel="alternate"
+          hreflang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-kompresor"
+        />
+        <link
+          rel="alternate"
+          hreflang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-compressori"
+        />
+        <link
+          rel="alternate"
+          hreflang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-kompresor"
+        />
+        <link
+          rel="alternate"
+          hreflang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-compressoren"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-daghitat"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-compressors"
+        />
       </Helmet>
 
       <CompressorsKoreanBreadcrumb />
@@ -155,9 +227,9 @@ const CompressorsKoreanMainContentLeft = () => {
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          압축기는 냉동, HVAC, 석유화학, 제조, 식품 가공 및 제약 응용 분야와 같은
-          다양한 산업에서 중요한 장비입니다. 급성장하는 인도 산업은 빠른 속도로
-          성장하고 있으며 압축기의 품질과 안전성이 최우선 관심사입니다.
+          압축기는 냉동, HVAC, 석유화학, 제조, 식품 가공 및 제약 응용 분야와
+          같은 다양한 산업에서 중요한 장비입니다. 급성장하는 인도 산업은 빠른
+          속도로 성장하고 있으며 압축기의 품질과 안전성이 최우선 관심사입니다.
         </p>
 
         {/* Introduction Paragraph 2 */}
@@ -191,9 +263,7 @@ const CompressorsKoreanMainContentLeft = () => {
           <li>에어컨/냉동 시스템</li>
           <li>가스 전송 라인 및 저장</li>
           <li>석유 및 가스 공정 시설</li>
-          <li>
-            발전 시설 및 화학 산업 시설
-          </li>
+          <li>발전 시설 및 화학 산업 시설</li>
           <li>식품 및 음료 생산</li>
         </ul>
 
@@ -239,15 +309,9 @@ const CompressorsKoreanMainContentLeft = () => {
         </h3>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
-          <li>
-            모든 제조업체(인도 및 외국 모두)에게 의무
-          </li>
-          <li>
-            인도 표준에 따라 고시된 다양한 유형의 압축기를 다룹니다
-          </li>
-          <li>
-            제3자 테스트, 공장 검사 및 정기 준수 확인 기능
-          </li>
+          <li>모든 제조업체(인도 및 외국 모두)에게 의무</li>
+          <li>인도 표준에 따라 고시된 다양한 유형의 압축기를 다룹니다</li>
+          <li>제3자 테스트, 공장 검사 및 정기 준수 확인 기능</li>
           <li>
             라이센스 취득자의 제품에 인증 제품으로 압축기용 BIS 마크 사용 허용
           </li>
@@ -268,8 +332,8 @@ const CompressorsKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           준수 마감일: 2026년 9월 1일까지 모든 제조업체 및 수입업체는 Scheme – X
-          하에서 압축기의 유효한 BIS 라이센스를 보유해야 합니다. 미준수 시 인도에서
-          인증되지 않은 압축기의 판매 및 수입이 완전히 금지됩니다.
+          하에서 압축기의 유효한 BIS 라이센스를 보유해야 합니다. 미준수 시
+          인도에서 인증되지 않은 압축기의 판매 및 수입이 완전히 금지됩니다.
         </p>
 
         {/* Separator Line */}
@@ -286,8 +350,8 @@ const CompressorsKoreanMainContentLeft = () => {
             도움이 됩니다.
           </li>
           <li>
-            시장 접근: BIS 인증 압축기는 공공 입찰 및 정부 프로젝트에서 사용할 수
-            있습니다.
+            시장 접근: BIS 인증 압축기는 공공 입찰 및 정부 프로젝트에서 사용할
+            수 있습니다.
           </li>
           <li>
             소비자 신뢰: 압축기용 BIS 마크는 구매자에게 제품이 인도 표준에
@@ -339,12 +403,10 @@ const CompressorsKoreanMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
+          <li>적용 가능한 표준 식별: 압축기의 적절한 IS 코드를 찾으세요.</li>
           <li>
-            적용 가능한 표준 식별: 압축기의 적절한 IS 코드를 찾으세요.
-          </li>
-          <li>
-            제품 테스트: BIS 인정 실험실에서 의무 성능, 안전 및 에너지 효율 테스트를
-            수행하세요.
+            제품 테스트: BIS 인정 실험실에서 의무 성능, 안전 및 에너지 효율
+            테스트를 수행하세요.
           </li>
           <li>
             공장 검사: BIS 담당자가 제조 절차 및 품질 관리 방법을 확인하기 위해
@@ -395,9 +457,9 @@ const CompressorsKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           압축기용 BIS 인증서를 받고 압축기용 BIS 인증서를 확보하는 프로세스를
-          거치는 제조업체, 수입업체 및 수출업체는 인도 소비자에게 제공하는 제품이
-          사용하기에 안전하고 환경 위험이 적으며 품질이 좋다고 간주되도록 보장함으로써
-          이 시장의 일부가 될 권리를 얻습니다.
+          거치는 제조업체, 수입업체 및 수출업체는 인도 소비자에게 제공하는
+          제품이 사용하기에 안전하고 환경 위험이 적으며 품질이 좋다고 간주되도록
+          보장함으로써 이 시장의 일부가 될 권리를 얻습니다.
         </p>
 
         <ServiceAuthorKorean />

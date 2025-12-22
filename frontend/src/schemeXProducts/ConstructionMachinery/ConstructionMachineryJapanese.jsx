@@ -45,7 +45,8 @@ const ConstructionMachineryMetaTags = () => {
     "建設機械、土工機械、鉱山機械のBISスキームX認証は、重要な産業セクターにおける安全性、品質、標準化を確保するために必須です";
   const keywords =
     "建設機械のBIS認証, 建設機械のBISスキームX認証, 建設機械のスキームX認証, 建設機械のBIS, 建設機械のOTR";
-  const canonicalUrl = window.location.href;
+  const canonicalUrl =
+    "https://bis-certifications.com/bis-sukiimu-x-ninshoo-kensetsu-kikai";
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Sun Certification Indiaオペレーション責任者";
@@ -68,6 +69,78 @@ const ConstructionMachineryMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Hreflang Tags for Multi-language Support - English is the default language */}
+      <link
+        rel="alternate"
+        hreflang="en"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-construction-machinery"
+      />
+      <link
+        rel="alternate"
+        hreflang="ja"
+        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kensetsu-kikai"
+      />
+      <link
+        rel="alternate"
+        hreflang="zh"
+        href="https://bis-certifications.com/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng"
+      />
+      <link
+        rel="alternate"
+        hreflang="fr"
+        href="https://bis-certifications.com/certification-bis-schema-x-pour-machines-de-construction"
+      />
+      <link
+        rel="alternate"
+        hreflang="de"
+        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-baumaschinen"
+      />
+      <link
+        rel="alternate"
+        hreflang="vi"
+        href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-xay-dung"
+      />
+      <link
+        rel="alternate"
+        hreflang="es"
+        href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+      />
+      <link
+        rel="alternate"
+        hreflang="ko"
+        href="https://bis-certifications.com/bis-seukim-x-injeung-geonseol-gigye"
+      />
+      <link
+        rel="alternate"
+        hreflang="id"
+        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
+      />
+      <link
+        rel="alternate"
+        hreflang="it"
+        href="https://bis-certifications.com/certificazione-bis-schema-x-per-macchinari-da-costruzione"
+      />
+      <link
+        rel="alternate"
+        hreflang="th"
+        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-thi-khuk-khuk"
+      />
+      <link
+        rel="alternate"
+        hreflang="nl"
+        href="https://bis-certifications.com/bis-schema-x-certificering-voor-bouwmachines"
+      />
+      <link
+        rel="alternate"
+        hreflang="ar"
+        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-alat-albina"
+      />
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-construction-machinery"
+      />
     </Helmet>
   );
 };

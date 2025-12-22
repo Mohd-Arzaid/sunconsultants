@@ -45,7 +45,8 @@ const DieselGeneratorMetaTags = () => {
     "BIS方案X柴油发电机及其组件认证是一个重要的监管举措，旨在在印度实现标准化并保障质量和安全";
   const keywords =
     "柴油发电机BIS认证, 柴油发电机BIS方案X认证, 柴油发电机方案X认证, 柴油发电机BIS, 柴油发电机OTR";
-  const canonicalUrl = window.location.href;
+  const canonicalUrl =
+    "https://bis-certifications.com/bis-fang-an-x-chai-you-fa-dian-ji-ren-zheng";
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
@@ -68,6 +69,78 @@ const DieselGeneratorMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Hreflang Tags for Multi-language Support - English is the default language */}
+      <link
+        rel="alternate"
+        hreflang="en"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-diesel-generators"
+      />
+      <link
+        rel="alternate"
+        hreflang="ja"
+        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-dizeru-hatsudenki"
+      />
+      <link
+        rel="alternate"
+        hreflang="zh"
+        href="https://bis-certifications.com/bis-fang-an-x-chai-you-fa-dian-ji-ren-zheng"
+      />
+      <link
+        rel="alternate"
+        hreflang="fr"
+        href="https://bis-certifications.com/certification-bis-schema-x-pour-generateurs-diesel"
+      />
+      <link
+        rel="alternate"
+        hreflang="de"
+        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-dieselgeneratoren"
+      />
+      <link
+        rel="alternate"
+        hreflang="vi"
+        href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-phat-dien-diesel"
+      />
+      <link
+        rel="alternate"
+        hreflang="es"
+        href="https://bis-certifications.com/certificacion-bis-scheme-x-para-generadores-diesel"
+      />
+      <link
+        rel="alternate"
+        hreflang="ko"
+        href="https://bis-certifications.com/bis-seukim-x-injeung-dijel-baljeongi"
+      />
+      <link
+        rel="alternate"
+        hreflang="id"
+        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-generator-diesel"
+      />
+      <link
+        rel="alternate"
+        hreflang="it"
+        href="https://bis-certifications.com/certificazione-bis-schema-x-per-generatori-diesel"
+      />
+      <link
+        rel="alternate"
+        hreflang="th"
+        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-khuean-ngan-fa-fa-diesel"
+      />
+      <link
+        rel="alternate"
+        hreflang="nl"
+        href="https://bis-certifications.com/bis-schema-x-certificering-voor-dieselgeneratoren"
+      />
+      <link
+        rel="alternate"
+        hreflang="ar"
+        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-mawalid-al-dizil"
+      />
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-diesel-generators"
+      />
     </Helmet>
   );
 };

@@ -23,7 +23,6 @@ const EPRCertificate = "/services-images/EPRCertificate.jpg";
 const LMPC = "/services-images/LMPC.jpg";
 const ISIMarkImage = "/services-images/ISIMark.jpg";
 
-
 const ConstructionMachineryIndonesian = () => {
   return (
     <div className="relative w-full">
@@ -47,7 +46,8 @@ const ConstructionMachineryMetaTags = () => {
     "Sertifikasi BIS Scheme X wajib untuk mesin konstruksi, penggalian tanah, dan pertambangan untuk memastikan keselamatan, kualitas, dan standardisasi di sektor industri yang kritis";
   const keywords =
     "Sertifikasi BIS untuk Mesin Konstruksi, Sertifikasi BIS Scheme X untuk Mesin Konstruksi, Sertifikasi Scheme X untuk Mesin Konstruksi, BIS untuk Mesin Konstruksi, OTR untuk Mesin Konstruksi";
-  const canonicalUrl = window.location.href;
+  const canonicalUrl =
+    "https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-konstruksi";
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
@@ -71,6 +71,78 @@ const ConstructionMachineryMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Hreflang Tags for Multi-language Support - English is the default language */}
+      <link
+        rel="alternate"
+        hreflang="en"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-construction-machinery"
+      />
+      <link
+        rel="alternate"
+        hreflang="ja"
+        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kensetsu-kikai"
+      />
+      <link
+        rel="alternate"
+        hreflang="zh"
+        href="https://bis-certifications.com/bis-fang-an-x-jian-zhu-ji-xie-ren-zheng"
+      />
+      <link
+        rel="alternate"
+        hreflang="fr"
+        href="https://bis-certifications.com/certification-bis-schema-x-pour-machines-de-construction"
+      />
+      <link
+        rel="alternate"
+        hreflang="de"
+        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-baumaschinen"
+      />
+      <link
+        rel="alternate"
+        hreflang="vi"
+        href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-xay-dung"
+      />
+      <link
+        rel="alternate"
+        hreflang="es"
+        href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-construccion"
+      />
+      <link
+        rel="alternate"
+        hreflang="ko"
+        href="https://bis-certifications.com/bis-seukim-x-injeung-geonseol-gigye"
+      />
+      <link
+        rel="alternate"
+        hreflang="id"
+        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-konstruksi"
+      />
+      <link
+        rel="alternate"
+        hreflang="it"
+        href="https://bis-certifications.com/certificazione-bis-schema-x-per-macchinari-da-costruzione"
+      />
+      <link
+        rel="alternate"
+        hreflang="th"
+        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-thi-khuk-khuk"
+      />
+      <link
+        rel="alternate"
+        hreflang="nl"
+        href="https://bis-certifications.com/bis-schema-x-certificering-voor-bouwmachines"
+      />
+      <link
+        rel="alternate"
+        hreflang="ar"
+        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-alat-albina"
+      />
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-construction-machinery"
+      />
     </Helmet>
   );
 };

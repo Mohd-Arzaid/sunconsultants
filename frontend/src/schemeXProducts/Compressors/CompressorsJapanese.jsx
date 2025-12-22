@@ -44,7 +44,8 @@ const CompressorsMetaTags = () => {
     "コンプレッサー、組立品、またはそのコンポーネントのBISスキームX認証は、2024年オムニバス技術規則の下で必須であり、製品の安全性とインドでの標準化を向上させます";
   const keywords =
     "コンプレッサーのBIS認証, コンプレッサーのBISスキームX認証, コンプレッサーのスキームX認証, コンプレッサーのBIS, コンプレッサーのOTR";
-  const canonicalUrl = window.location.href;
+  const canonicalUrl =
+    "https://bis-certifications.com/bis-sukiimu-x-ninshoo-konpuresa";
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Sun Certification Indiaオペレーション責任者";
@@ -67,6 +68,78 @@ const CompressorsMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Hreflang Tags for Multi-language Support - English is the default language */}
+      <link
+        rel="alternate"
+        hreflang="en"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-compressors"
+      />
+      <link
+        rel="alternate"
+        hreflang="ja"
+        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-konpuresa"
+      />
+      <link
+        rel="alternate"
+        hreflang="zh"
+        href="https://bis-certifications.com/bis-fang-an-x-ya-suo-ji-ren-zheng"
+      />
+      <link
+        rel="alternate"
+        hreflang="fr"
+        href="https://bis-certifications.com/certification-bis-schema-x-pour-compresseurs"
+      />
+      <link
+        rel="alternate"
+        hreflang="de"
+        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-kompressoren"
+      />
+      <link
+        rel="alternate"
+        hreflang="vi"
+        href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-nen-khi"
+      />
+      <link
+        rel="alternate"
+        hreflang="es"
+        href="https://bis-certifications.com/certificacion-bis-scheme-x-para-compresores"
+      />
+      <link
+        rel="alternate"
+        hreflang="ko"
+        href="https://bis-certifications.com/bis-seukim-x-injeung-apchukgi"
+      />
+      <link
+        rel="alternate"
+        hreflang="id"
+        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-kompresor"
+      />
+      <link
+        rel="alternate"
+        hreflang="it"
+        href="https://bis-certifications.com/certificazione-bis-schema-x-per-compressori"
+      />
+      <link
+        rel="alternate"
+        hreflang="th"
+        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-kompresor"
+      />
+      <link
+        rel="alternate"
+        hreflang="nl"
+        href="https://bis-certifications.com/bis-schema-x-certificering-voor-compressoren"
+      />
+      <link
+        rel="alternate"
+        hreflang="ar"
+        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-daghitat"
+      />
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-compressors"
+      />
     </Helmet>
   );
 };
