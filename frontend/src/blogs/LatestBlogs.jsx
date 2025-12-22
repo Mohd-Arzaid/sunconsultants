@@ -68,7 +68,7 @@ const blogs = [
     title: "BIS Certificate for Storage Unit – IS 17634:2022",
     description:
       "Get BIS Certificate for Storage Unit under IS 17634:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for cabinets, wardrobes, and storage furniture.",
-    slug: "/blogs/ISI-products/storage-unit-IS-17634:2022",
+    slug: "blogs/ISI-products/storage-unit-IS-17634:2022",
   },
   {
     id: 5,
