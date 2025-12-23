@@ -69,6 +69,73 @@ const GearsGearingsandTransmissionMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Hreflang Tags for Multi-language Support */}
+      <link
+        rel="alternate"
+        hreflang="en"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+      />
+      <link
+        rel="alternate"
+        hreflang="fr"
+        href="https://bis-certifications.com/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
+      />
+      <link
+        rel="alternate"
+        hreflang="de"
+        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
+      />
+      <link
+        rel="alternate"
+        hreflang="vi"
+        href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai"
+      />
+      <link
+        rel="alternate"
+        hreflang="es"
+        href="https://bis-certifications.com/certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
+      />
+      <link
+        rel="alternate"
+        hreflang="ko"
+        href="https://bis-certifications.com/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
+      />
+      <link
+        rel="alternate"
+        hreflang="id"
+        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
+      />
+      <link
+        rel="alternate"
+        hreflang="it"
+        href="https://bis-certifications.com/certificazione-bis-schema-x-per-ingranaggi-ingranamento-ed-elementi-di-trasmissione"
+      />
+      <link
+        rel="alternate"
+        hreflang="ja"
+        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso"
+      />
+      <link
+        rel="alternate"
+        hreflang="zh"
+        href="https://bis-certifications.com/bis-fang-an-x-chi-lun-chi-lun-xi-tong-he-chuan-dong-yuan-jian-ren-zheng"
+      />
+      <link
+        rel="alternate"
+        hreflang="th"
+        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-fueang-rab-khia-lae-ong-prakop-kan-song-kamlang"
+      />
+      <link
+        rel="alternate"
+        hreflang="nl"
+        href="https://bis-certifications.com/bis-schema-x-certificering-voor-tandwielen-overbrenging-en-transmissie-elementen"
+      />
+      <link
+        rel="alternate"
+        hreflang="ar"
+        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-turus-wa-anmatim-al-turus-wa-anasir-al-naql"
+      />
     </Helmet>
   );
 };
@@ -101,7 +168,8 @@ const GearsGearingsandTransmissionBreadcrumb = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificering voor Tandwielen, Overbrenging en Transmissie-elementen
+                    BIS Certificering voor Tandwielen, Overbrenging en
+                    Transmissie-elementen
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -134,7 +202,8 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         {/* Main Heading */}
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Schema X Certificering voor Tandwielen, Overbrenging en Transmissie-elementen
+          BIS Schema X Certificering voor Tandwielen, Overbrenging en
+          Transmissie-elementen
         </h1>
 
         {/* Main Image */}
@@ -149,34 +218,36 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          In een voortdurend veranderende industriële wereld zijn veiligheid en kwaliteit
-          van mechanische componenten van cruciaal belang. Volgens het Bureau of Indian Standards
-          moeten alle in India geproduceerde machines en elektrische componenten
-          voldoen aan de veiligheids- en kwaliteitsnormen die door BIS zijn vastgesteld en
-          uiteengezet in de Machine- en Elektrische Apparatuur Veiligheid
-          (Omnibus Technical Regulation) Order, 2024. Deze order omvat
-          mechanische modules, componenten en assemblage-onderdelen zoals tandwielen,
-          overbrengingselementen en verschillende transmissie-onderdelen die essentieel zijn voor
-          de werking van machines in elke industrie.
+          In een voortdurend veranderende industriële wereld zijn veiligheid en
+          kwaliteit van mechanische componenten van cruciaal belang. Volgens het
+          Bureau of Indian Standards moeten alle in India geproduceerde machines
+          en elektrische componenten voldoen aan de veiligheids- en
+          kwaliteitsnormen die door BIS zijn vastgesteld en uiteengezet in de
+          Machine- en Elektrische Apparatuur Veiligheid (Omnibus Technical
+          Regulation) Order, 2024. Deze order omvat mechanische modules,
+          componenten en assemblage-onderdelen zoals tandwielen,
+          overbrengingselementen en verschillende transmissie-onderdelen die
+          essentieel zijn voor de werking van machines in elke industrie.
         </p>
 
         {/* Introduction Paragraph 2 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          Alle fabrikanten, zowel binnenlands als buitenlands, zijn verplicht om te voldoen aan
-          de standaardvereisten voor Schema X Certificering op 1 september 2026
-          zoals vastgesteld door de order en geïnstitutionaliseerd door het
-          Ministerie van Zware Industrie. Alle fabrikanten in de tandwiel- en
-          versnellingsbakindustrie en alle gerelateerde transmissie-elementen moeten voldoen aan
-          deze regelgeving om toegang tot de markt te krijgen en normen te stellen
-          voor de industrie.
+          Alle fabrikanten, zowel binnenlands als buitenlands, zijn verplicht om
+          te voldoen aan de standaardvereisten voor Schema X Certificering op 1
+          september 2026 zoals vastgesteld door de order en
+          geïnstitutionaliseerd door het Ministerie van Zware Industrie. Alle
+          fabrikanten in de tandwiel- en versnellingsbakindustrie en alle
+          gerelateerde transmissie-elementen moeten voldoen aan deze regelgeving
+          om toegang tot de markt te krijgen en normen te stellen voor de
+          industrie.
         </p>
 
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
-          Deze blog bevat alle belangrijke informatie voor certificering van tandwielen,
-          versnellingsbakken en gerelateerde transmissie-onderdelen, waarom
-          dit waardevol is, de reikwijdte, voordelen van certificering en benodigde
-          documenten.
+          Deze blog bevat alle belangrijke informatie voor certificering van
+          tandwielen, versnellingsbakken en gerelateerde transmissie-onderdelen,
+          waarom dit waardevol is, de reikwijdte, voordelen van certificering en
+          benodigde documenten.
         </p>
 
         {/* Separator Line */}
@@ -184,7 +255,8 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
 
         {/* Why BIS is Important Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Waarom Schema X Belangrijk is voor Tandwielen, Overbrenging en Transmissie-elementen
+          Waarom Schema X Belangrijk is voor Tandwielen, Overbrenging en
+          Transmissie-elementen
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -201,26 +273,26 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Zonder BIS voor Tandwielen, Overbrenging en Transmissie-elementen zijn de risico's
-          zeer hoog:
+          Zonder BIS voor Tandwielen, Overbrenging en Transmissie-elementen zijn
+          de risico's zeer hoog:
         </p>
 
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            Tandwielstoringen die leiden tot schade en dure stilstandtijd
-          </li>
+          <li>Tandwielstoringen die leiden tot schade en dure stilstandtijd</li>
           <li>Gezondheidsrisico's in transport en zware industrie</li>
           <li>Inefficiënte energieoverdracht en energiedissipatie</li>
           <li>
-            Beperkte toegankelijkheid tot openbare aanbestedingen en inkoopkansen
+            Beperkte toegankelijkheid tot openbare aanbestedingen en
+            inkoopkansen
           </li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Uiteindelijk biedt Schema X certificering voor Tandwielen, Overbrenging en
-          Transmissie-elementen verbeterde duurzaamheid, minimaliseert
-          operationele risico's en is consistent met binnenlandse normen.
+          Uiteindelijk biedt Schema X certificering voor Tandwielen,
+          Overbrenging en Transmissie-elementen verbeterde duurzaamheid,
+          minimaliseert operationele risico's en is consistent met binnenlandse
+          normen.
         </p>
 
         {/* Separator Line */}
@@ -228,14 +300,16 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
 
         {/* What is BIS Scheme X Certification Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Wat is BIS Schema X Certificering voor Tandwielen, Overbrenging en Transmissie-elementen?
+          Wat is BIS Schema X Certificering voor Tandwielen, Overbrenging en
+          Transmissie-elementen?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Schema X Certificering voor Tandwielen, Overbrenging en Transmissie-elementen
-          maakt deel uit van de BIS Conformiteitsbeoordelingsregeling, 2018.
-          Het definieert strikte benchmarks voor ontwerp, materiaalkwaliteit
-          en operationele prestaties.
+          BIS Schema X Certificering voor Tandwielen, Overbrenging en
+          Transmissie-elementen maakt deel uit van de BIS
+          Conformiteitsbeoordelingsregeling, 2018. Het definieert strikte
+          benchmarks voor ontwerp, materiaalkwaliteit en operationele
+          prestaties.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -244,7 +318,10 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>Verplicht voor alle fabrikanten (India en buitenland)</li>
-          <li>Geschikt voor verschillende tandwielen, assen en transmissie-onderdelen</li>
+          <li>
+            Geschikt voor verschillende tandwielen, assen en
+            transmissie-onderdelen
+          </li>
           <li>Producttesten uitvoeren in door BIS goedgekeurde laboratoria</li>
           <li>Omvat fabrieksaudits om kwaliteitscontrole te valideren</li>
           <li>
@@ -261,14 +338,15 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Het Ministerie van Zware Industrie heeft de Omnibus Technische Regeling (OTR)
-          2024 aangenomen voor Tandwielen, Overbrenging en Transmissie-elementen.
+          Het Ministerie van Zware Industrie heeft de Omnibus Technische
+          Regeling (OTR) 2024 aangenomen voor Tandwielen, Overbrenging en
+          Transmissie-elementen.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
           Nalevingsdatum: Alle fabrikanten en importeurs zijn verplicht om
-          certificering te hebben op 1 september 2026. Na deze datum
-          kunnen niet-gecertificeerde goederen niet meer worden gemaakt, geïmporteerd
+          certificering te hebben op 1 september 2026. Na deze datum kunnen
+          niet-gecertificeerde goederen niet meer worden gemaakt, geïmporteerd
           of verkocht in India.
         </p>
 
@@ -277,7 +355,8 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
 
         {/* Advantages Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Voordelen van BIS Certificering voor Tandwielen, Overbrenging en Transmissie-elementen
+          Voordelen van BIS Certificering voor Tandwielen, Overbrenging en
+          Transmissie-elementen
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
@@ -286,20 +365,20 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
             in vitale systeemtoepassingen.
           </li>
           <li>
-            Marktconcurrentie: Gecertificeerde bedrijven genieten voorkeur
-            bij openbare en particuliere aanbestedingen.
+            Marktconcurrentie: Gecertificeerde bedrijven genieten voorkeur bij
+            openbare en particuliere aanbestedingen.
           </li>
           <li>
-            Klantvertrouwen: Kopers hebben vertrouwen in producten met
-            officiële BIS-erkenning.
+            Klantvertrouwen: Kopers hebben vertrouwen in producten met officiële
+            BIS-erkenning.
           </li>
           <li>
             Wettelijke Naleving: Geen boetes met OTR voor Tandwielen,
             Overbrenging en Transmissie-onderdelen.
           </li>
           <li>
-            Toegang tot Wereldmarkt: Stelt buitenlandse fabrikanten in staat om gemakkelijk
-            de Indiase markt te betreden.
+            Toegang tot Wereldmarkt: Stelt buitenlandse fabrikanten in staat om
+            gemakkelijk de Indiase markt te betreden.
           </li>
         </ul>
 
@@ -312,8 +391,8 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Schema X Certificering is van toepassing op verschillende Tandwielen, Overbrenging en
-          Transmissie-elementen zoals hieronder:
+          Schema X Certificering is van toepassing op verschillende Tandwielen,
+          Overbrenging en Transmissie-elementen zoals hieronder:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
@@ -331,8 +410,8 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
           Alle soorten moeten voldoen aan Indiase Normen (IS-code) zoals IS
           16819:2018/ISO 12100:2010 (Machineveiligheid Algemene Principes voor
           Ontwerp - Risicobeoordeling en Risicovermindering). Elk producttype
-          moet voldoen aan de relevante Indiase Normen met betrekking tot ontwerp
-          en prestaties.
+          moet voldoen aan de relevante Indiase Normen met betrekking tot
+          ontwerp en prestaties.
         </p>
 
         {/* Separator Line */}
@@ -340,7 +419,8 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
 
         {/* Process Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS Certificeringsprocedure voor Tandwielen, Overbrenging en Transmissie-elementen
+          BIS Certificeringsprocedure voor Tandwielen, Overbrenging en
+          Transmissie-elementen
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -350,21 +430,25 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
           <li>
-            Producttesten: Voer materiaal- en prestatietesten uit in
-            door BIS geaccrediteerde laboratoria.
+            Producttesten: Voer materiaal- en prestatietesten uit in door BIS
+            geaccrediteerde laboratoria.
           </li>
-          <li>Fabrieksaudit: BIS voert een kwaliteitsaudit uit op de productielocatie.</li>
+          <li>
+            Fabrieksaudit: BIS voert een kwaliteitsaudit uit op de
+            productielocatie.
+          </li>
           <li>
             Dien Documentatie in: Deel technische details, testdocumenten en
             kwaliteitshandboeken.
           </li>
           <li>
-            Licentieverlening: BIS verleent na controle van documenten op nauwkeurigheid
-            certificering en staat gebruik van het Standaardmerk toe.
+            Licentieverlening: BIS verleent na controle van documenten op
+            nauwkeurigheid certificering en staat gebruik van het Standaardmerk
+            toe.
           </li>
           <li>
-            Voortdurende Naleving: Regelmatige audits en hertesten om
-            de geldigheid van certificering te behouden.
+            Voortdurende Naleving: Regelmatige audits en hertesten om de
+            geldigheid van certificering te behouden.
           </li>
         </ul>
 
@@ -373,17 +457,17 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Niet-naleving van BIS Certificering voor Tandwielen, Overbrenging
-          en Transmissie-elementen onder OTR voor Tandwielen, Overbrenging en
+          Niet-naleving van BIS Certificering voor Tandwielen, Overbrenging en
+          Transmissie-elementen onder OTR voor Tandwielen, Overbrenging en
           Transmissie-elementen zal resulteren in:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
-          <li>
-            Verbod op verkoop en fabricage van niet-gecertificeerde items
-          </li>
+          <li>Verbod op verkoop en fabricage van niet-gecertificeerde items</li>
           <li>Inbeslagname van goederen en monetaire boetes</li>
-          <li>Niet in aanmerking komen voor overheidsaanbestedingen en contracten</li>
+          <li>
+            Niet in aanmerking komen voor overheidsaanbestedingen en contracten
+          </li>
           <li>Reputatieschade op lange termijn</li>
         </ul>
 
@@ -396,19 +480,19 @@ const GearsGearingsandTransmissionMainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Schema X Certificering voor Tandwielen, Overbrenging en Transmissie-elementen,
-          zoals aangekondigd onder OTR voor Tandwielen, Overbrenging
-          en Transmissie-elementen (2024) zal een cruciale stap zijn naar
-          verbeterde kwaliteits- en veiligheidsnormen voor engineering- en
-          productiestructuren in India.
+          BIS Schema X Certificering voor Tandwielen, Overbrenging en
+          Transmissie-elementen, zoals aangekondigd onder OTR voor Tandwielen,
+          Overbrenging en Transmissie-elementen (2024) zal een cruciale stap
+          zijn naar verbeterde kwaliteits- en veiligheidsnormen voor
+          engineering- en productiestructuren in India.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          Fabrikanten en importeurs van Tandwiel-, Overbrenging- en Vermogenstransmissie-
-          oplossingen die verkoop op de Indiase markt zoeken, zullen ontdekken dat
-          hun voordelen zullen toenemen en deuren zullen openen voor
-          marktvoordelen door Schema X certificering toe te passen voor Tandwielen,
-          Overbrenging en Vermogenstransmissiesystemen.
+          Fabrikanten en importeurs van Tandwiel-, Overbrenging- en
+          Vermogenstransmissie- oplossingen die verkoop op de Indiase markt
+          zoeken, zullen ontdekken dat hun voordelen zullen toenemen en deuren
+          zullen openen voor marktvoordelen door Schema X certificering toe te
+          passen voor Tandwielen, Overbrenging en Vermogenstransmissiesystemen.
         </p>
 
         <ServiceAuthorDutch />

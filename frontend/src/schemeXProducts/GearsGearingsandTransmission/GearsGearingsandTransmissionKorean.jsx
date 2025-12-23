@@ -19,9 +19,7 @@ const GearsGearingsandTransmissionKorean = () => {
   return (
     <div className="relative w-full">
       <Helmet>
-        <title>
-          기어, 기어링 및 전송 요소용 BIS Scheme X 인증
-        </title>
+        <title>기어, 기어링 및 전송 요소용 BIS Scheme X 인증</title>
 
         {/* Meta Description */}
         <meta
@@ -71,6 +69,73 @@ const GearsGearingsandTransmissionKorean = () => {
         <link
           rel="canonical"
           href="https://bis-certifications.com/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
+        />
+
+        {/* Hreflang Tags for Multi-language Support */}
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-gears-gearing-and-transmission-elements"
+        />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-roues-dentees-et-elements-de-transmission"
+        />
+        <link
+          rel="alternate"
+          hreflang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-zahnraeder-getriebe-und-uebertragungselemente"
+        />
+        <link
+          rel="alternate"
+          hreflang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-banh-rang-he-thong-truyen-dong-va-cac-bo-phan-truyen-tai"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-engranajes-engranajes-y-elementos-de-transmision"
+        />
+        <link
+          rel="alternate"
+          hreflang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-gie-gearing-jeonseung-yosu"
+        />
+        <link
+          rel="alternate"
+          hreflang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-roda-gigi-dan-elemen-transmisi"
+        />
+        <link
+          rel="alternate"
+          hreflang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-ingranaggi-ingranamento-ed-elementi-di-trasmissione"
+        />
+        <link
+          rel="alternate"
+          hreflang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-gia-gearing-oyobi-densha-yoso"
+        />
+        <link
+          rel="alternate"
+          hreflang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-chi-lun-chi-lun-xi-tong-he-chuan-dong-yuan-jian-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hreflang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-fueang-rab-khia-lae-ong-prakop-kan-song-kamlang"
+        />
+        <link
+          rel="alternate"
+          hreflang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-tandwielen-overbrenging-en-transmissie-elementen"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-turus-wa-anmatim-al-turus-wa-anasir-al-naql"
         />
       </Helmet>
 
@@ -212,9 +277,7 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
           <li>기어 고장으로 인한 고장 및 비용이 많이 드는 가동 중단</li>
           <li>운송 및 중공업에서의 건강 위험</li>
           <li>비효율적인 에너지 전송 및 에너지 소산</li>
-          <li>
-            공공 입찰 및 조달 기회에 대한 제한된 접근성
-          </li>
+          <li>공공 입찰 및 조달 기회에 대한 제한된 접근성</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -232,8 +295,8 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           기어, 기어링 및 전송 요소용 BIS Scheme X 인증은 BIS 적합성 평가 규정
-          2018의 일부입니다. 설계, 재료 품질 및 운영 성능에 대한 엄격한 벤치마크를
-          정의합니다.
+          2018의 일부입니다. 설계, 재료 품질 및 운영 성능에 대한 엄격한
+          벤치마크를 정의합니다.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -245,9 +308,7 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
           <li>다양한 기어, 샤프트 및 전송 부품에 적합</li>
           <li>BIS 승인 실험실에서 제품 테스트 수행</li>
           <li>품질 관리를 검증하기 위한 공장 감사 포함</li>
-          <li>
-            제품이 인증되면 BIS 표준 마크 사용 권한 부여
-          </li>
+          <li>제품이 인증되면 BIS 표준 마크 사용 권한 부여</li>
         </ul>
 
         {/* Separator Line */}
@@ -279,7 +340,8 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>
-            안전성 및 신뢰성: 중요한 시스템 응용의 감독되지 않은 고장을 방지합니다.
+            안전성 및 신뢰성: 중요한 시스템 응용의 감독되지 않은 고장을
+            방지합니다.
           </li>
           <li>
             시장 경쟁력: 인증된 회사는 공공 및 민간 입찰 모두에서 우선권을
@@ -289,9 +351,7 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
             고객 신뢰: 구매자는 공식 BIS 인정을 받은 제품에 대해 신뢰를
             가집니다.
           </li>
-          <li>
-            법적 준수: 기어, 기어링 및 전송 부품용 OTR에 따른 처벌 없음
-          </li>
+          <li>법적 준수: 기어, 기어링 및 전송 부품용 OTR에 따른 처벌 없음</li>
           <li>
             글로벌 시장 진입: 외국 제조업체가 인도 시장에 쉽게 진입할 수 있도록
             지원
@@ -307,7 +367,8 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Scheme X 인증은 다음과 같은 다양한 기어, 기어링 및 전송 요소에 적용됩니다:
+          Scheme X 인증은 다음과 같은 다양한 기어, 기어링 및 전송 요소에
+          적용됩니다:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
@@ -315,9 +376,7 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
           <li>기어 샤프트 및 커플링</li>
           <li>기어박스 및 전송 부품</li>
           <li>체인 및 벨트 드라이브 구성 요소</li>
-          <li>
-            항공 우주 및 로봇 공학, 고급 자동차, 오토바이에 사용되는 기어
-          </li>
+          <li>항공 우주 및 로봇 공학, 고급 자동차, 오토바이에 사용되는 기어</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
@@ -351,8 +410,8 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
             문서 제출: 기술 세부사항, 테스트 서류 및 품질 매뉴얼을 공유합니다.
           </li>
           <li>
-            라이센스 부여: BIS는 문서의 정확성을 확인한 후 인증을 부여하고
-            표준 마크 사용을 허용합니다.
+            라이센스 부여: BIS는 문서의 정확성을 확인한 후 인증을 부여하고 표준
+            마크 사용을 허용합니다.
           </li>
           <li>
             지속적인 준수: 인증의 유효성을 유지하기 위한 정기적인 감사 및
@@ -402,4 +461,3 @@ const GearsGearingsandTransmissionKoreanMainContentLeft = () => {
     </div>
   );
 };
-

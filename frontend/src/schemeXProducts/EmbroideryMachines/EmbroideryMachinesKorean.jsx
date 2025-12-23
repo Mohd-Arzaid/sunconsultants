@@ -70,6 +70,73 @@ const EmbroideryMachinesKorean = () => {
           rel="canonical"
           href="https://bis-certifications.com/bis-seukim-x-injeung-jasu-gigye"
         />
+
+        {/* Hreflang Tags for Multi-language Support */}
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-embroidery-machinery"
+        />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-machines-a-broderie"
+        />
+        <link
+          rel="alternate"
+          hreflang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-stickmaschinen"
+        />
+        <link
+          rel="alternate"
+          hreflang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-theu"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-bordado"
+        />
+        <link
+          rel="alternate"
+          hreflang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-jasu-gigye"
+        />
+        <link
+          rel="alternate"
+          hreflang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-bordir"
+        />
+        <link
+          rel="alternate"
+          hreflang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-macchine-da-ricamo"
+        />
+        <link
+          rel="alternate"
+          hreflang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-shishu-kikai"
+        />
+        <link
+          rel="alternate"
+          hreflang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-ci-xiu-ji-xie-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hreflang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-thai-rua"
+        />
+        <link
+          rel="alternate"
+          hreflang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-borduurmachines"
+        />
+        <link
+          rel="alternate"
+          hreflang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-alat-al-tatriz"
+        />
       </Helmet>
 
       <EmbroideryMachinesKoreanBreadcrumb />
@@ -109,9 +176,7 @@ const EmbroideryMachinesKoreanBreadcrumb = () => {
               </BreadcrumbSeparator>
 
               <BreadcrumbItem>
-                <BreadcrumbPage>
-                  자수 기계용 BIS Scheme X 인증
-                </BreadcrumbPage>
+                <BreadcrumbPage>자수 기계용 BIS Scheme X 인증</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -192,9 +257,7 @@ const EmbroideryMachinesKoreanMainContentLeft = () => {
         {/* Usage Areas */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
           <li>의류 및 겉옷 공장</li>
-          <li>
-            홈 텍스타일 생산(커튼, 침대 린넨, 쿠션 커버)
-          </li>
+          <li>홈 텍스타일 생산(커튼, 침대 린넨, 쿠션 커버)</li>
           <li>맞춤 자수 및 오뜨르 하우스</li>
           <li>수출 중심 섬유 공장</li>
         </ul>
@@ -259,9 +322,9 @@ const EmbroideryMachinesKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           마감일: 모든 제조업체 및 수입업체는 처벌 또는 기소를 피하기 위해
-          2026년 9월 1일까지 인도에서 판매되거나 수입되는 자수 기계용 BIS 라이센스를
-          받아야 합니다. 그 이후에는 비인증 자수 기계가 인도에서 거래되거나
-          상업적 목적으로 사용될 수 없습니다.
+          2026년 9월 1일까지 인도에서 판매되거나 수입되는 자수 기계용 BIS
+          라이센스를 받아야 합니다. 그 이후에는 비인증 자수 기계가 인도에서
+          거래되거나 상업적 목적으로 사용될 수 없습니다.
         </p>
 
         {/* Separator Line */}
@@ -282,11 +345,10 @@ const EmbroideryMachinesKoreanMainContentLeft = () => {
             필수입니다.
           </li>
           <li>
-            구매자 신뢰: 자수 기계는 BIS 마크가 표시되어 품질과 표준을 확인합니다.
+            구매자 신뢰: 자수 기계는 BIS 마크가 표시되어 품질과 표준을
+            확인합니다.
           </li>
-          <li>
-            규제 준수: 자수 기계용 OTR을 준수하며 처벌을 받지 않습니다.
-          </li>
+          <li>규제 준수: 자수 기계용 OTR을 준수하며 처벌을 받지 않습니다.</li>
           <li>
             수출 이점: 인도 구매자는 인증된 기계로 안심할 수 있고 국제 기업은
             인도에 더 쉽게 접근할 수 있습니다.
@@ -330,16 +392,12 @@ const EmbroideryMachinesKoreanMainContentLeft = () => {
         </h2>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-4">
-          <li>
-            관련 표준 식별: 자수 기계 모델과 관련된 IS 코드를 찾아보세요.
-          </li>
+          <li>관련 표준 식별: 자수 기계 모델과 관련된 IS 코드를 찾아보세요.</li>
           <li>
             제품 테스트: 기계는 BIS 인정 실험실에서 안전성 및 성능을 위해
             테스트됩니다.
           </li>
-          <li>
-            공장 검사: BIS 감사관이 공장에 와서 품질 관리를 평가합니다.
-          </li>
+          <li>공장 검사: BIS 감사관이 공장에 와서 품질 관리를 평가합니다.</li>
           <li>
             문서 및 신청: BIS에 기술 보고서, 매뉴얼 및 품질 문서를 제공합니다.
           </li>
@@ -348,7 +406,8 @@ const EmbroideryMachinesKoreanMainContentLeft = () => {
             표시할 수 있는 옵션을 갖게 됩니다.
           </li>
           <li>
-            지속적인 준수: 정기적인 검사 및 재테스트는 지속적인 준수를 보장합니다.
+            지속적인 준수: 정기적인 검사 및 재테스트는 지속적인 준수를
+            보장합니다.
           </li>
         </ul>
 
@@ -383,9 +442,9 @@ const EmbroideryMachinesKoreanMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-6">
           자수 기계 제조업체 및 수입업체의 관점에서 자수 기계용 BIS 등록을 받고
-          자수 기계용 BIS 마크를 부착하는 것은 법적 요구사항에 대한 준수일
-          뿐만 아니라 제품 품질, 시장 신뢰 및 인도에서 끊임없이 성장하는 섬유
-          산업에 대한 경쟁 우위에 대한 엄청난 구매를 의미합니다.
+          자수 기계용 BIS 마크를 부착하는 것은 법적 요구사항에 대한 준수일 뿐만
+          아니라 제품 품질, 시장 신뢰 및 인도에서 끊임없이 성장하는 섬유 산업에
+          대한 경쟁 우위에 대한 엄청난 구매를 의미합니다.
         </p>
 
         <ServiceAuthorKorean />
@@ -393,4 +452,3 @@ const EmbroideryMachinesKoreanMainContentLeft = () => {
     </div>
   );
 };
-
