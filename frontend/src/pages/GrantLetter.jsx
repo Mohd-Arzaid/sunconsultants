@@ -181,115 +181,96 @@ const AuditGallery = () => {
     {
       id: 1,
       image: "/Grant-Letter-Img/Grant-Letter-617-page-0001.webp",
-      description: "BIS Grant Letter - IS 617 Certification",
       alt: "BIS Certificate Grant Letter for Cast aluminium and its alloys - Ingots and castings for general engineering purposes under IS 617:1994 with expert assistance from Sun Certifications India",
     },
     {
       id: 2,
       image: "/Grant-Letter-Img/Grant-Letter-2590-page-0002.webp",
-      description: "BIS Grant Letter - IS 2590 Certification",
       alt: "BIS Certificate Grant Letter for Primary aluminium ingots for remelting for general engineering purpose under IS 2590:1987 with expert assistance from Sun Certifications India",
     },
     {
       id: 3,
       image: "/Grant-Letter-Img/Grant-letter-TITUS-page-0003.webp",
-      description: "BIS Grant Letter - TITUS Certification",
       alt: "BIS Certification Grant Letter for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 4,
       image: "/Grant-Letter-Img/Grant-letter-TITUS-page-0004.webp",
-      description: "BIS Grant Letter - TITUS Certification",
       alt: "BIS Certification Grant Letter for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 5,
       image: "/Grant-Letter-Img/Licence-document-Hanhmy-page-0007.webp",
-      description: "BIS License Document - Hanhmy",
       alt: "BIS License Grant Letter document for Hanhmy with expert assistance from Sun Certifications India",
     },
     {
       id: 6,
       image: "/Grant-Letter-Img/Licence-document-Sedo-Vina-page-0008.webp",
-      description: "BIS License Document - Sedo Vina",
       alt: "BIS License Grant Letter document for Sedo Vina with expert assistance from Sun Certifications India",
     },
     {
       id: 7,
       image: "/Grant-Letter-Img/Licence-leader-Art-page-0009.webp",
-      description: "BIS License Document - Leader Art",
       alt: "BIS License Grant Letter document for Leader Art with expert assistance from Sun Certifications India",
     },
     {
       id: 8,
       image: "/Grant-Letter-Img/License-document-BAMCO-page-00010.webp",
-      description: "BIS License Document - BAMCO",
       alt: "BIS License Grant Letter document for BAMCO with expert assistance from Sun Certifications India",
     },
     {
       id: 9,
       image: "/Grant-Letter-Img/733-grant-letter-0011.webp",
-      description: "BIS Grant Letter - IS 733 Certification",
       alt: "BIS Certification Grant Letter for Wrought aluminium and aluminium alloy bars, rods and sections under IS 733:1983 with expert assistance from Sun Certifications India",
     },
     {
       id: 10,
       image: "/Grant-Letter-Img/1285-grant-letter-0012.webp",
-      description: "BIS Grant Letter - IS 1285 Certification",
       alt: "BIS Certification Grant Letter for Wrought aluminium and aluminium alloys- Extruded round tube and hollow sections under IS 1285:2002 with expert assistance from Sun Certifications India",
     },
     {
       id: 11,
       image: "/Grant-Letter-Img/BIS-CERTIFICATE-NFAFPL-0013.webp",
-      description: "BIS Certificate - NFAFPL",
       alt: "BIS Certification Grant Letter for Diesel Engines - NOx Reduction Agent AUS 32 under IS 17042 (Part 1):2018 with expert assistance from Sun Certifications India",
     },
     {
       id: 12,
       image: "/Grant-Letter-Img/Chetak-Grant-Letter-0014.webp",
-      description: "BIS Grant Letter - Chetak",
       alt: "BIS Certification Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
     },
     {
       id: 13,
       image: "/Grant-Letter-Img/grant-letter-0015.webp",
-      description: "BIS Grant Letter Certification",
       alt: "BIS License Grant Letter for Sandal and Slippers Specification under IS 6721:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 14,
       image: "/Grant-Letter-Img/Kidz-Autobharat-Grant-Letter-0016.webp",
-      description: "BIS Grant Letter - Kidz Autobharat",
       alt: "BIS License Grant Letter for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for foreign manufacturer with expert assistance from Sun Certifications India",
     },
     {
       id: 15,
       image: "/Grant-Letter-Img/License-document-Thantawan-0017.webp",
-      description: "BIS License Document - Thantawan",
       alt: "BIS License Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
     },
     {
       id: 16,
       image: "/Grant-Letter-Img/License-Documents-IS-4581-0018.webp",
-      description: "BIS License Document - IS 4581",
       alt: "BIS Certification Grant Letter for Phosphorous Trichloride, pure and Analytical Reagent under IS 4581:1978 with expert assistance from Sun Certifications India",
     },
     {
       id: 17,
       image: "/Grant-Letter-Img/License-Documents-IS11744-0019.webp",
-      description: "BIS License Document - IS 11744",
       alt: "BIS Certification Grant Letter for Phosphorous Pentachloride, Technical under IS 11744:1986 with expert assistance from Sun Certifications India",
     },
     {
       id: 18,
       image: "/Grant-Letter-Img/Mita-Fastners-Grant-Letter-0020.webp",
-      description: "BIS Grant Letter - Mita Fastners",
       alt: "BIS Certification Grant Letter for Hexagon Head Bolts, Screws and Nuts of Product Grades A and B - Hexagon Head Screws under IS 1364 Part 2:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 19,
       image: "/Grant-Letter-Img/Profax-Grant-Letter-0021.webp",
-      description: "BIS Grant Letter - Profax",
       alt: "BIS License Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
     },
   ];
@@ -329,7 +310,7 @@ const AuditGallery = () => {
 
             <div className="flex flex-1 flex-col justify-between py-2 transition-all duration-300 group-hover:px-4">
               <p className="mt-2 max-w-full text-lg font-geist text-neutral-600">
-                {item.description || "BIS Grant Letter and License Document"}
+                {/* {item.description || "BIS Grant Letter and License Document"} */}
               </p>
             </div>
           </div>
