@@ -106,6 +106,12 @@ const BISCertificationFibreRopesPolyamide = lazy(() =>
 const BISCertificateForSteelWireRopes = lazy(() =>
   import("@/blogs/BISCertificationforSteelWireRopes")
 );
+const BISCertificationMixedPolyolefinFibreRopes = lazy(() =>
+  import("@/blogs/BISCertificationMixedPolyolefinFibreRopes")
+);
+const BISCertificationCompsitSyntheticFibre = lazy(() =>
+  import("@/blogs/BISCertificationCompsitSyntheticFibre")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -541,6 +547,22 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSteelWireRopes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationMixedPolyolefinFibreRopes />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCompsitSyntheticFibre />
           </Suspense>
         }
       />

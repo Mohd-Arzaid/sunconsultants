@@ -37,6 +37,7 @@ import SitemapSkeleton from "./components/ui/sitemap-skeleton";
 import InternationalAuditsSkeleton from "./components/ui/international-audits-skeleton";
 const InternationalAudits = lazy(() => import("./pages/InternationalAudits"));
 const GrantLetter = lazy(() => import("./pages/GrantLetter"));
+const AwardPage = lazy(() => import("./pages/AwardPage"));
 import ExhibitionSkeleton from "./components/ui/exhibition-skeleton";
 const Exhibition = lazy(() => import("./pages/Exhibition"));
 import WebinarSkeleton from "./components/ui/webinar-skeleton";
@@ -149,6 +150,14 @@ function App() {
           element={
             <Suspense fallback={<InternationalAuditsSkeleton />}>
               <GrantLetter />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/awards"
+          element={
+            <Suspense fallback={<InternationalAuditsSkeleton />}>
+              <AwardPage />
             </Suspense>
           }
         />

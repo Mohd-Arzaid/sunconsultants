@@ -247,6 +247,12 @@ export const NAVIGATION_DATA = {
       link: "/BIS-certification-grant-letter",
       icon: Award,
     },
+    {
+      id: 4,
+      name: "Awards",
+      link: "/awards",
+      icon: Award,
+    },
   ],
   faqs: [
     {

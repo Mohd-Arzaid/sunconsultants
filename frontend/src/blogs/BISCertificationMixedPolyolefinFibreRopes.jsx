@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateElectricFenceEnergizers = () => {
+const BISCertificationMixedPolyolefinFibreRopes = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -38,25 +38,25 @@ const BISCertificateElectricFenceEnergizers = () => {
   );
 };
 
-export default BISCertificateElectricFenceEnergizers;
+export default BISCertificationMixedPolyolefinFibreRopes;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Electric Fence Energizers | IS 302-2-76:1999 BIS License";
+    "BIS Certificate for Mixed Polyolefin Fibre Ropes IS 14929:2022 BIS License";
   const ogTitle =
-    "BIS Certification for Electric Fence Energizers – IS 302-2-76:1999 Guide";
+    "BIS Certification for Mixed Polyolefin Fibre Ropes – IS 14929:2022 Guide";
   const twitterTitle =
-    "BIS License for Electric Fence Energizers | IS 302-2-76:1999";
+    "BIS License for Mixed Polyolefin Fibre Ropes | IS 14929:2022";
   const metaDescription =
-    "Get BIS Certificate for Electric Fence Energizers under IS 302-2-76:1999. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Mixed Polyolefin Fibre Ropes under IS 14929:2022. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Electric Fence Energizers as per IS 302-2-76:1999. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Mixed Polyolefin Fibre Ropes as per IS 14929:2022. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Electric Fence Energizers under IS 302-2-76:1999. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Mixed Polyolefin Fibre Ropes under IS 14929:2022. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Electric Fence Energizers , BIS License for Electric Fence Energizers , IS 302-2-76:1999 , BIS Certification for Electric Fence Energizers";
+    "BIS Certificate for Mixed Polyolefin Fibre Ropes, BIS License for Mixed Polyolefin Fibre Ropes, IS 14929:2022, BIS Certification for Mixed Polyolefin Fibre Ropes";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999";
+    "https://bis-certifications.com/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -111,8 +111,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Electric Fence Energizers – IS
-                    302-2-76:1999
+                    BIS Certificate for Mixed Polyolefin Fibre Ropes – IS
+                    14929:2022
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -144,49 +144,52 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Electric Fence Energizers – Complete Guide to IS
-          302-2-76:1999
+          BIS Certification Mixed Polyolefin Fibre Ropes – Complete Guide to IS
+          14929:2022
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforElectricFenceEnergizers.png"
-            title="BIS License for Electric Fence Energizers"
-            alt="BIS Certificate for Electric Fence Energizers - IS 302-2-76:1999 BIS Certification"
+            src="/blogImages/BISLicenseforMixedPolyolefinFibreRopes.png"
+            title="BIS License for Mixed Polyolefin Fibre Ropes"
+            alt="BIS Certificate for Mixed Polyolefin Fibre Ropes - IS 14929:2022 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The demand for electric fence energizers has grown rapidly across
-          India due to increased focus on farm protection, livestock management,
-          perimeter security, and wildlife control. These devices play a
-          critical role in safeguarding crops, animals, and property by
-          delivering controlled electric pulses through fencing systems.
-          However, because electric fence energizers directly involve electrical
-          output, human contact risk, and fire hazards, safety and regulatory
-          compliance become non-negotiable.
+          Mixed polyolefin fibre ropes are widely used in marine operations,
+          ports and harbours, shipping, fishing, agriculture, material handling,
+          construction activities, offshore installations, and general
+          industrial applications. These ropes are manufactured using a blend of
+          polyolefin fibres, typically polypropylene and polyethylene, to
+          achieve a balance of strength, flexibility, abrasion resistance,
+          buoyancy, and cost-effectiveness. Due to their lightweight nature and
+          resistance to moisture, mixed polyolefin fibre ropes are preferred in
+          environments where corrosion resistance and ease of handling are
+          essential.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          In India, electric fence energizers fall under the scope of mandatory
-          BIS certification as per IS 302-2-76:1999. Any manufacturer or
-          importer intending to sell electric fence energizers in the Indian
-          market must obtain a BIS Certificate for Electric Fence Energizers
-          before commercialization. Without this approval, products are
-          considered non-compliant and illegal for sale.
+          Because these ropes are often used in load-bearing, mooring, towing,
+          lifting, and securing applications, any failure can result in serious
+          safety hazards, operational losses, and legal consequences. To ensure
+          consistent quality, safety, and performance, the Government of India
+          mandates BIS Certification for Mixed Polyolefin Fibre Ropes as per IS
+          14929:2022.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide is designed for manufacturers, importers,
-          foreign brands, startups, distributors, and e-commerce sellers who
-          want clarity on BIS Certification Electric Fence Energizers, including
-          legal requirements, testing, documentation, cost, timelines, and
-          compliance obligations. If you are planning to apply for a BIS License
-          / BIS Licence for Electric Fence Energizers, this page will walk you
-          through every step in a clear, practical, and compliance-focused
-          manner.
+          A valid BIS Certificate for Mixed Polyolefin Fibre Ropes is a legal
+          requirement for manufacturers and importers before these products can
+          be sold, distributed, or imported into India. This comprehensive guide
+          explains the BIS Certification for Mixed Polyolefin Fibre Ropes,
+          including applicable standards, testing requirements, documentation,
+          certification process, cost factors, and compliance obligations. This
+          page is essential reading for manufacturers, importers, foreign
+          suppliers, traders, and e-commerce sellers dealing with mixed
+          polyolefin fibre ropes in India.
         </p>
 
         {/* Separator Line */}
@@ -197,241 +200,270 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a conformity assessment system operated by the
-          Bureau of Indian Standards (BIS), the national standards body of
-          India. The BIS full form is Bureau of Indian Standards, established
-          under the BIS Act, 2016 to ensure quality, safety, reliability, and
-          consistency of products sold in India.
+          BIS Certification is a product conformity assessment system
+          administered by the Bureau of Indian Standards (BIS), the national
+          standards authority of India. BIS operates under the BIS Act, 2016 and
+          is responsible for formulating Indian Standards, certifying products,
+          and ensuring that goods sold in India meet prescribed safety and
+          quality benchmarks.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS Certificate signifies that a product conforms to the applicable
-          Indian Standard (IS) and meets prescribed safety, performance, and
-          quality benchmarks. It provides assurance to consumers and regulators
-          that the product has been tested and verified by BIS-recognized
-          systems.
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS Certificate meaning refers to official recognition that a
+          product conforms to a specific Indian Standard. Once certified, the
+          manufacturer is authorized to use the BIS Certification Mark, commonly
+          known as the ISI Mark, on the product and its packaging.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          ISI Mark and BIS Mark
+          ISI Mark Explanation
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          For electrical products like electric fence energizers, BIS
-          certification is granted under the ISI Mark Scheme. The BIS
-          certification mark (ISI mark) displayed on the product indicates
-          compliance with relevant BIS standards. Selling an ISI-marked product
-          without a valid BIS license is a punishable offense.
+          The ISI Mark indicates that:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>The product has been tested in a BIS-recognized laboratory</li>
+          <li>
+            The manufacturing facility has been evaluated by BIS officials
+          </li>
+          <li>
+            Continuous quality control and surveillance mechanisms are in place
+          </li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Why BIS Exists
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The core objective of BIS is to:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          BIS exists to:
         </p>
-
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect consumer safety</li>
-          <li>Prevent substandard and unsafe products</li>
-          <li>Harmonize Indian manufacturing with global benchmarks</li>
-          <li>Enforce mandatory compliance through BIS notifications</li>
+          <li>Protect consumer and worker safety</li>
+          <li>Prevent the sale of substandard products</li>
+          <li>Ensure uniformity in product quality</li>
+          <li>Support regulatory enforcement and fair trade</li>
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          For fibre ropes used in critical industrial and marine operations, BIS
+          certification ensures reliability and reduces safety risks.
+        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of IS 302-2-76:1999
+          Applicable BIS Standard for Mixed Polyolefin Fibre Ropes
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This standard specifies particular safety requirements for electric
-          fence energizers intended to be used with electric fence systems for:
+          The applicable Indian Standard for this product is:
         </p>
 
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Agricultural fencing</li>
-          <li>Livestock control</li>
-          <li>Wildlife deterrence</li>
-          <li>Perimeter security</li>
-        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          🔹 <strong>IS 14929:2022</strong> – Mixed Polyolefin Fibre Ropes
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          It covers energizers powered by:
+          This standard specifies the material requirements, construction
+          details, dimensional tolerances, mechanical properties, performance
+          characteristics, marking, and testing methods for mixed polyolefin
+          fibre ropes.
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Mains electricity</li>
-          <li>Battery-operated systems</li>
-          <li>Combined mains and battery sources</li>
-        </ul>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Safety and Testing Intent
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The standard is designed to address:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protection against electric shock</li>
-          <li>Output energy limitations</li>
-          <li>Pulse duration and repetition control</li>
-          <li>Insulation and creepage distances</li>
-          <li>Fire and overheating risks</li>
-          <li>Mechanical strength and enclosure safety</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance with IS 302-2-76:1999 is mandatory for:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Compliance with IS 14929:2022 is mandatory for:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers</li>
-          <li>Importers of foreign-manufactured energizers</li>
-          <li>Foreign manufacturers selling in India</li>
+          <li>Indian manufacturers of mixed polyolefin fibre ropes</li>
+          <li>Importers supplying these ropes in the Indian market</li>
+          <li>Foreign manufacturers selling through Indian entities</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Electric Fence Energizers
+          Why BIS Certification is Mandatory for Mixed Polyolefin Fibre Ropes
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Consumer and Animal Safety
+          1. Consumer & Worker Safety Risks
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Electric fence energizers generate high-voltage pulses. Improper
-          design or excessive output can cause serious injury, fire hazards, or
-          fatal accidents. BIS certification ensures output energy remains
-          within safe limits.
+          Mixed polyolefin fibre ropes are commonly used in:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Mooring and towing operations</li>
+          <li>Load securing and lifting</li>
+          <li>Fishing and aquaculture activities</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Failure of ropes during use can lead to injuries, accidents, vessel
+          damage, and operational downtime.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Legal Requirement in India
+          2. Government Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and the BIS Act, selling uncertified
-          electrical appliances is illegal. Products without BIS certification
-          may be seized, banned, or recalled.
+          Under BIS notifications and quality control regulations, products
+          covered by IS 14929:2022 cannot be legally sold without BIS
+          certification.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Regulatory Compliance
+          3. Legal Implications
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Authorities such as customs, market surveillance teams, and e-commerce
-          platforms demand valid BIS licenses for listing and clearance.
+          Non-compliance may result in:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Seizure of non-certified goods</li>
+          <li>Financial penalties</li>
+          <li>Prosecution under the BIS Act</li>
+          <li>Import clearance rejection</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Market and Brand Benefits
+          4. Market & Brand Benefits
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate India builds trust, improves brand credibility, and
-          allows smooth entry into organized retail and institutional markets.
+          A BIS License for Mixed Polyolefin Fibre Ropes enhances:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Customer trust and confidence</li>
+          <li>Acceptance in government and institutional procurement</li>
+          <li>Brand reputation in domestic and export markets</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Electric Fence Energizers
+          Step-by-Step BIS Certification Process for Mixed Polyolefin Fibre
+          Ropes
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The first step is to confirm product classification and identify IS
-          302-2-76:1999 as the applicable BIS standard. Product design, power
-          source, and application must align with the scope of the standard.
+          The first step is confirming that the product falls under IS
+          14929:2022. This includes identifying:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Fibre composition and blend ratio</li>
+          <li>Rope construction type</li>
+          <li>Diameter range and intended application</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Correct classification ensures accurate testing and faster approval.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit the BIS application online through the Manak
-          Online portal. The application includes:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Manufacturers must submit the BIS application online through the
+          official BIS portal. The application includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product details</li>
-          <li>Factory information</li>
-          <li>Applicable standard selection</li>
-          <li>Test report commitment</li>
+          <li>Product and factory details</li>
+          <li>Manufacturing process flow</li>
+          <li>Quality control systems</li>
+          <li>Test arrangements</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This step officially initiates the BIS registration / BIS certificate
-          registration process.
+          Accuracy and completeness of the BIS application are critical to avoid
+          delays.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
+          Fees & Cost Structure for BIS Licence
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certification cost typically includes:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS certificate cost includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Testing charges (lab-dependent)</li>
-          <li>Factory inspection fee</li>
-          <li>License fee</li>
-          <li>Annual marking fee</li>
+          <li>Application fees</li>
+          <li>Product testing charges</li>
+          <li>Factory inspection fees</li>
+          <li>Annual license and marking fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The overall cost of BIS certification depends on product complexity,
-          number of models, and testing requirements.
+          The overall BIS certification cost depends on product scope, testing
+          complexity, and audit requirements. Proper planning helps manage the
+          cost of BIS certification effectively.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Product Sample Testing
+          Product Sample Testing (as per IS 14929:2022)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Product samples are tested in BIS-recognized laboratories as per IS
-          302-2-76:1999. Testing ensures compliance with all safety and
-          performance parameters.
+          Product samples are tested in BIS-recognized laboratories to verify
+          compliance with the standard before certification proceeds.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
+        <p className="text-gray-600 text-base font-geist mb-4">
           BIS officials conduct a factory audit to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process</li>
-          <li>Quality control systems</li>
+          <li>Manufacturing capability and process control</li>
+          <li>Raw material handling</li>
           <li>In-house testing facilities</li>
-          <li>Consistency with submitted documents</li>
+          <li>Quality assurance and record-keeping systems</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Upon successful testing and inspection, BIS grants a BIS License for
-          Electric Fence Energizers, allowing use of the ISI mark with a unique
-          CM/L number.
+          Upon successful compliance, BIS grants the Bureau of Indian Standards
+          License, allowing the manufacturer to affix the ISI Mark on mixed
+          polyolefin fibre ropes.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          License holders must:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          After certification, manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Conduct routine testing</li>
-          <li>Maintain production records</li>
-          <li>Allow surveillance audits</li>
-          <li>Renew the license on time</li>
+          <li>Maintain consistent product quality</li>
+          <li>Comply with periodic surveillance audits</li>
+          <li>Inform BIS of any changes in material or process</li>
         </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Scope of BIS License as per IS 14929:2022
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS license specifies:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Approved rope constructions</li>
+          <li>Diameter ranges and linear density</li>
+          <li>Declared breaking strength values</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The license is valid only for the approved scope and manufacturing
+          location. Any modification requires BIS approval.
+        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -444,10 +476,9 @@ const MainContentLeft = () => {
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration proof</li>
+          <li>Factory registration certificate</li>
           <li>Manufacturing process flow chart</li>
-          <li>List of machinery</li>
-          <li>Quality control plan</li>
+          <li>List of machinery and testing equipment</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -456,37 +487,36 @@ const MainContentLeft = () => {
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Company incorporation certificate</li>
           <li>GST registration</li>
-          <li>Trademark authorization (if applicable)</li>
+          <li>Authorized signatory authorization</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product specification sheet</li>
-          <li>Circuit diagrams</li>
-          <li>User manual and safety instructions</li>
+          <li>Product specifications and drawings</li>
+          <li>Raw material specifications</li>
+          <li>In-house test procedures</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS application form</li>
-          <li>Test report from BIS-recognized lab</li>
-          <li>Authorization letter</li>
-          <li>Undertakings and declarations</li>
+          <li>Duly filled BIS application form</li>
+          <li>Test request letter</li>
+          <li>Marking and labeling details</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          These form the complete set of BIS CERTIFICATION DOCUMENTS.
+          These collectively form the mandatory BIS CERTIFICATION DOCUMENTS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 302-2-76:1999
+          Testing Requirements as per IS 14929:2022
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -501,65 +531,57 @@ const MainContentLeft = () => {
                   Clause
                 </TableHead>
                 <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirements
+                  Requirement
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  8
+                  6.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Protection Against Electric Shock
+                  Construction and manufacture
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  13.3
+                  6.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leakage current and electric strength at operating temperature
+                  Lay
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  5
+                  6.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Rating
+                  Labelling
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  10
+                  6.2
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Power Input and Current
+                  Packaging, invoicing and delivery length
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  11
+                  7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Heating
+                  Linear Density
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  13
+                  7
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leakage current and Electric strength at operating Temperature
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  16
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Leakage current and Electric strength
+                  Minimum Breaking Strength
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -577,32 +599,30 @@ const MainContentLeft = () => {
           Common Challenges & How to Avoid Them
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Test Failure
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          <strong>Cause:</strong> Non-compliant design or output parameters
-          <br />
-          <strong>Solution:</strong> Pre-compliance testing and design review
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Documentation Errors
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          <strong>Cause:</strong> Incomplete or inconsistent submissions
-          <br />
-          <strong>Solution:</strong> Expert-led document verification
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Factory Audit Delays
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>Cause:</strong> Unprepared quality systems
-          <br />
-          <strong>Solution:</strong> Audit readiness and mock inspections
-        </p>
+        <div className="space-y-3 mb-4">
+          <p className="text-gray-600 text-base font-geist">
+            <strong>Incorrect Product Classification</strong>
+            <br />
+            Solution: Conduct a pre-certification assessment before applying.
+          </p>
+          <p className="text-gray-600 text-base font-geist">
+            <strong>Test Failures</strong>
+            <br />
+            Solution: Align raw materials and manufacturing controls with IS
+            14929:2022.
+          </p>
+          <p className="text-gray-600 text-base font-geist">
+            <strong>Incomplete Documentation</strong>
+            <br />
+            Solution: Prepare BIS-specific documents carefully and
+            systematically.
+          </p>
+          <p className="text-gray-600 text-base font-geist">
+            <strong>Audit Non-Compliance</strong>
+            <br />
+            Solution: Maintain proper quality records and internal audits.
+          </p>
+        </div>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -611,12 +631,36 @@ const MainContentLeft = () => {
           Benefits of BIS Certification for Manufacturers & Importers
         </h2>
 
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Legal Benefits
+        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Legal authorization to sell in India</li>
-          <li>Access to government and institutional buyers</li>
-          <li>Enhanced consumer trust</li>
-          <li>Reduced product liability risks</li>
-          <li>Expansion into e-commerce and retail chains</li>
+          <li>Compliance with Indian regulations</li>
+          <li>Smooth customs clearance</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Commercial Benefits
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Eligibility for government and PSU tenders</li>
+          <li>Increased market acceptance</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Branding Benefits
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Use of BIS Mark</li>
+          <li>Improved customer confidence</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Market Expansion
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Entry into regulated industrial sectors</li>
+          <li>Long-term business growth</li>
         </ul>
 
         {/* Separator Line */}
@@ -626,24 +670,22 @@ const MainContentLeft = () => {
           Penalties for Non-Compliance
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Selling electric fence energizers without BIS certification can result
-          in:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Failure to obtain BIS certification may result in:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Heavy monetary penalties</li>
-          <li>Seizure of goods</li>
-          <li>Cancellation of import clearance</li>
-          <li>Criminal prosecution under BIS Act</li>
-          <li>Permanent market ban</li>
+          <li>Product seizure or recall</li>
+          <li>Import bans</li>
+          <li>Legal prosecution</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Electric Fence Energizers?
+          Who Needs BIS Certification for Mixed Polyolefin Fibre Ropes?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
@@ -651,36 +693,12 @@ const MainContentLeft = () => {
           <li>Importers</li>
           <li>Foreign manufacturers</li>
           <li>Traders and distributors</li>
-          <li>Online marketplace sellers</li>
+          <li>E-commerce sellers</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Anyone involved in placing the product on the Indian market must
-          ensure compliance.
-        </p>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why Choose Us for BIS Certification Consulting?
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          We provide end-to-end BIS certification consulting, including:
-        </p>
-
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Standard identification and applicability check</li>
-          <li>BIS application filing</li>
-          <li>Lab coordination and testing support</li>
-          <li>Factory audit preparation</li>
-          <li>Post-certification compliance management</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Our expertise ensures faster approvals, zero rejections, and complete
-          regulatory peace of mind.
+          Any entity placing these products in the Indian market must ensure BIS
+          compliance.
         </p>
 
         {/* Separator Line */}
@@ -691,169 +709,175 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Electric Fence Energizers under IS
-          302-2-76:1999 is not just a regulatory formality—it is a critical step
-          toward ensuring safety, legal compliance, and long-term market
-          success. With strict enforcement of BIS notifications and increasing
-          scrutiny on electrical products, manufacturers and importers must
-          prioritize BIS Certification Electric Fence Energizers to avoid
-          penalties and build consumer trust.
+          Obtaining a BIS Certificate for Mixed Polyolefin Fibre Ropes under IS
+          14929:2022 is both a legal requirement and a critical safety measure.
+          A valid BIS Certification / BIS License for Mixed Polyolefin Fibre
+          Ropes ensures product reliability, regulatory compliance, and market
+          credibility.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          If you are planning to apply for a BIS License / BIS Licence for
-          Electric Fence Energizers, professional guidance can significantly
-          reduce timelines, costs, and compliance risks. Stay compliant, stay
-          competitive, and ensure your products meet India&apos;s highest safety
-          standards.
+          For manufacturers and importers, BIS certification is not merely an
+          approval—it is a foundation for trust, safety, and long-term business
+          success. With the right technical preparation and expert support, the
+          BIS certification process in India can be completed smoothly and
+          efficiently.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          If you are planning to manufacture or import mixed polyolefin fibre
+          ropes in India, obtaining BIS certification is the smartest step
+          toward compliance and sustainable growth.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Electric Fence Energizers
+          FAQs – BIS Certification for Mixed Polyolefin Fibre Ropes
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              1. What is the BIS Full Form?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q1. Is BIS certification mandatory for electric fence energizers
-                in India?
-              </strong>
-              <br />
-              Yes, BIS certification under IS 302-2-76:1999 is mandatory.
+              BIS stands for Bureau of Indian Standards.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              2. Is BIS certification mandatory for mixed polyolefin fibre
+              ropes?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q2. What is the BIS certificate full form?</strong>
-              <br />
+              Yes, it is mandatory under IS 14929:2022.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              3. What is the BIS Certificate full form?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
               Bureau of Indian Standards Certificate.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              4. Can I apply for BIS certificate online?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q3. Can I import electric fence energizers without BIS license?
-              </strong>
-              <br />
-              No, imports without BIS certification are prohibited.
+              Yes, manufacturers can BIS apply online.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              5. How long does the BIS certification process take?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q4. What is the BIS license cost?</strong>
-              <br />
-              Cost varies based on testing, factory size, and number of models.
+              Typically 1–2 months, depending on readiness.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              6. What is the BIS certification cost?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q5. How long does the BIS certification process take?
-              </strong>
-              <br />
-              Typically 6–10 weeks if documentation and testing are complete.
+              The cost varies based on testing and audit scope.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              7. Do importers need BIS certification?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q6. Is the ISI mark mandatory?</strong>
-              <br />
-              Yes, ISI marking is compulsory after certification.
+              Yes, importers must ensure certified products.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              8. Can foreign manufacturers apply for BIS license?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q7. Can startups apply for BIS certification?</strong>
-              <br />
-              Yes, startups can apply if manufacturing setup is compliant.
+              Yes, through an Authorized Indian Representative.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              9. Is BIS registration the same as BIS license?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q8. Is BIS certification required for battery-operated
-                energizers?
-              </strong>
-              <br />
-              Yes, power source does not exempt certification.
+              No, fibre ropes require a BIS license.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              10. What happens if products fail testing?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q9. Can one license cover multiple models?</strong>
-              <br />
-              Yes, if models are technically similar.
+              Corrective actions and retesting are required.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              11. Is ISI marking mandatory after certification?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q10. What happens if my product fails testing?</strong>
-              <br />
-              Design modification and retesting are required.
+              Yes, ISI marking is compulsory.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              12. How long is the BIS license valid?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q11. Is BIS certification valid forever?</strong>
-              <br />
-              No, it must be renewed periodically.
+              Generally 1–2 years, renewable.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              13. Are surveillance audits compulsory?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q12. Are BIS audits mandatory after certification?
-              </strong>
-              <br />
-              Yes, surveillance audits are conducted.
+              Yes, BIS conducts periodic audits.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              14. Can the license scope be extended later?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q13. Can foreign manufacturers apply directly?</strong>
-              <br />
-              Yes, through an Authorized Indian Representative (AIR).
+              Yes, through a scope extension process.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              15. Can uncertified ropes be sold online?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q14. Is online BIS apply process available?</strong>
-              <br />
-              Yes, BIS applications are submitted online.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q15. What is BIS certificate meaning for consumers?
-              </strong>
-              <br />
-              It assures safety, quality, and regulatory compliance.
+              No, e-commerce sales also require BIS compliance.
             </p>
           </div>
         </div>
 
         <ManyUsersAlsoRead />
 
-        <FaqAuthorEng questionNumber={1} />
+        <FaqAuthorEng questionNumber={2} />
       </div>
     </div>
   );

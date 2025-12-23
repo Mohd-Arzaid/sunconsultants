@@ -167,6 +167,8 @@ const ServicesRightSideContentEng = () => {
     "/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022",
     "/blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022",
     "/blogs/ISI-products/steel-wire-ropes-IS-1804:2004",
+    "/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022",
+    "/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001",
   ];
 
   // Check if current path should show these components
@@ -1040,6 +1042,10 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Fibre Ropes - Polyamide - English Page";
     if (path.includes("/blogs/ISI-products/steel-wire-ropes-IS-1804:2004"))
       return "BIS Certificate for Steel Wire Ropes - English Page";
+    if (path.includes("/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022"))
+      return "BIS Certificate for Mixed Polyolefin Fibre Ropes - English Page";
+    if (path.includes("/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001"))
+      return "BIS Certificate for Composite Synthetic Fibre Ropes - English Page";
   };
 
   const [formData, setFormData] = useState({
