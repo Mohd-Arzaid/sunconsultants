@@ -10,7 +10,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { SlashIcon } from "lucide-react";
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
@@ -826,7 +825,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
+                India&apos;s Best Certificate Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>

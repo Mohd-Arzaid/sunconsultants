@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const BISCertificationFibreRopes = () => {
+const BISCertificationforFlatWovenWebbing = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +30,25 @@ const BISCertificationFibreRopes = () => {
   );
 };
 
-export default BISCertificationFibreRopes;
+export default BISCertificationforFlatWovenWebbing;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Fibre Ropes - Polyethylene | IS 8674:2013 BIS License";
+    "BIS Certificate for Flat Woven Webbing Slings | IS 15041:2001 BIS License";
   const ogTitle =
-    "BIS Certification for Fibre Ropes - Polyethylene - IS 8674:2013 Guide";
+    "BIS Certification for Flat Woven Webbing Slings – IS 15041:2001 Guide";
   const twitterTitle =
-    "BIS License for Fibre Ropes - Polyethylene | IS 8674:2013";
+    "BIS License for Flat Woven Webbing Slings | IS 15041:2001";
   const metaDescription =
-    "Get BIS Certificate for Fibre Ropes - Polyethylene under IS 8674:2013. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Flat Woven Webbing Slings under IS 15041:2001. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Fibre Ropes - Polyethylene as per IS 8674:2013. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Flat Woven Webbing Slings as per IS 15041:2001. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Fibre Ropes - Polyethylene under IS 8674:2013. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Flat Woven Webbing Slings under IS 15041:2001. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Fibre Ropes - Polyethylene, BIS License for Fibre Ropes - Polyethylene, IS 8674:2013, BIS Certification for Fibre Ropes - Polyethylene";
+    "BIS Certificate for Flat Woven Webbing Slings, BIS License for Flat Woven Webbing Slings, IS 15041:2001, BIS Certification for Flat Woven Webbing Slings";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022";
+    "https://bis-certifications.com/blogs/isi-products/flat-woven-webbing-slings-is-15041";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -103,8 +103,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Fibre Ropes – Polyethylene – IS
-                    8674:2013
+                    BIS Certificate for Flat Woven Webbing Slings – IS
+                    15041:2001
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -136,51 +136,49 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Fibre Ropes – Polyethylene – Complete Guide to IS
-          8674:2013
+          BIS Certification for Flat Woven Webbing Slings – Complete Guide to IS
+          15041:2001
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforFibreRopesPolyethylene.png"
-            title="BIS License for Fibre Ropes - Polyethylene"
-            alt="BIS Certificate for Fibre Ropes - Polyethylene - IS 8674:2013 BIS Certification"
+            src="/blogImages/BISLicenseforFlatWovenWebbingSlings.png"
+            title="BIS License for Flat Woven Webbing Slings"
+            alt="BIS Certificate for Flat Woven Webbing Slings - IS 15041:2001 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Polyethylene fibre ropes are widely used across India in marine
-          operations, fishing, ports, agriculture, construction, logistics,
-          transportation, and general industrial activities. Their lightweight
-          nature, high strength-to-weight ratio, resistance to moisture,
-          chemicals, and abrasion make them ideal for demanding environments.
-          However, when fibre ropes fail under load due to poor quality or
-          substandard manufacturing, the consequences can be severe—ranging from
-          equipment damage to serious injuries and even loss of life.
+          Flat woven webbing slings are widely used across industrial lifting,
+          material handling, construction, ports, warehouses, manufacturing
+          units, power plants, and logistics operations. These slings are
+          preferred over traditional chains and wire ropes due to their
+          lightweight nature, flexibility, load distribution capability, and
+          reduced risk of surface damage to lifted goods. However, because flat
+          woven webbing slings are directly involved in load-bearing and lifting
+          operations, any compromise in quality or strength can result in
+          serious accidents, equipment damage, or loss of life.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure safety, uniform quality, and performance reliability, the
-          Government of India has made BIS Certification for Fibre Ropes –
-          Polyethylene mandatory under IS 8674:2013. Any manufacturer or
-          importer supplying polyethylene fibre ropes in the Indian market must
-          obtain a valid BIS Certificate for Fibre Ropes – Polyethylene. Without
-          this certification, the product is considered non-compliant and may
-          face legal penalties, seizure, or prohibition from sale.
+          To ensure safety, reliability, and uniform quality, the Government of
+          India mandates compliance with IS 15041:2001 through BIS Certification
+          for Flat Woven Webbing Slings. A valid BIS Certificate for Flat Woven
+          Webbing Slings confirms that the product meets the prescribed Indian
+          Standard for design, construction, performance, testing, and marking
+          requirements.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This detailed product page is written for manufacturers, importers,
-          exporters, traders, distributors, marine suppliers, infrastructure
-          contractors, and e-commerce sellers. It explains the complete
-          framework of BIS Certification for Fibre Ropes – Polyethylene,
-          including standard requirements, testing procedures, documentation,
-          costs, timelines, and compliance responsibilities. If you are planning
-          to obtain a BIS License / BIS Licence for Fibre Ropes – Polyethylene,
-          this guide will help you navigate the process with clarity and
-          confidence.
+          This comprehensive guide explains everything you need to know about
+          BIS License for Flat Woven Webbing Slings, including applicability,
+          certification process, testing requirements, documents, cost,
+          timelines, penalties, and benefits. This page is specifically written
+          for manufacturers, foreign manufacturers, importers, industrial
+          suppliers, traders, and compliance professionals seeking accurate and
+          practical compliance guidance.
         </p>
 
         {/* Separator Line */}
@@ -191,269 +189,301 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product conformity assessment system
-          administered by the Bureau of Indian Standards (BIS), the national
-          standards authority of India. The BIS full form is Bureau of Indian
-          Standards, established under the BIS Act, 2016.
+          BIS Certification is a product conformity assessment scheme governed
+          by the Bureau of Indian Standards, which functions under the Ministry
+          of Consumer Affairs, Food & Public Distribution. BIS certification
+          ensures that products sold in India comply with Indian Standards (IS)
+          related to safety, performance, reliability, and quality consistency.
         </p>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate meaning refers to official recognition that a
-          product conforms to a specific Indian Standard (IS) and meets
-          prescribed requirements related to safety, strength, durability, and
-          performance. A BIS-certified product undergoes testing in
-          BIS-recognized laboratories and assessment through factory inspection
-          and quality audits.
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS certificate meaning refers to an official authorization issued
+          by BIS that permits a manufacturer to produce and sell a product
+          bearing the ISI Mark, confirming conformity with a specific Indian
+          Standard.
         </p>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          ISI Mark and BIS Certification Mark
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Products certified under BIS carry the BIS certification mark,
-          commonly known as the ISI Mark, along with a unique license number.
-          The BIS Mark assures buyers, inspectors, and regulatory authorities
-          that the product complies with applicable BIS Standards.
-        </p>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Exists
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          BIS exists to:
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The core objective of BIS certification is to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect users from unsafe and substandard products</li>
-          <li>Ensure consistency and reliability in manufacturing</li>
-          <li>Enforce government regulations through BIS notifications</li>
-          <li>Promote trust, quality, and fair trade in the Indian market</li>
+          <li>Protect end users from unsafe products</li>
+          <li>Ensure uniform quality benchmarks</li>
+          <li>Support fair trade and regulatory enforcement</li>
+          <li>Promote industrial standardization</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          ISI Mark and Its Importance
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS certification mark (ISI Mark) is the visible assurance of
+          compliance. For flat woven webbing slings, the ISI Mark confirms that:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>The sling has adequate breaking strength</li>
+          <li>The material and stitching meet safety requirements</li>
+          <li>
+            The product has passed laboratory testing and factory inspection
+          </li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Fibre Ropes – Polyethylene
+          Applicable BIS Standard for Flat Woven Webbing Slings
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          IS 8674:2013 – Indian Standard Explained
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>IS 15041:2001</strong> – Flat Woven Webbing Slings –
+          Specification
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for this product is IS 8674:2013,
-          titled &quot;Fibre Ropes — Polyethylene — Specification&quot;. This
-          standard defines requirements for polyethylene fibre ropes intended
-          for general-purpose and industrial applications.
+          The applicable Indian Standard for flat woven webbing slings is IS
+          15041:2001, which specifies requirements for synthetic flat woven
+          slings used for lifting and handling loads.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Scope of IS 8674:2013
+          Scope of IS 15041:2001
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The standard covers:
+          This standard covers:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Construction and classification of polyethylene fibre ropes</li>
-          <li>Raw material requirements and fibre characteristics</li>
-          <li>Rope diameter, linear density, and tolerances</li>
-          <li>Minimum breaking load and strength requirements</li>
-          <li>Marking, labeling, and packaging provisions</li>
+          <li>
+            Flat woven webbing slings made from synthetic fibres (such as
+            polyester)
+          </li>
+          <li>Slings with different end fittings and loop configurations</li>
+          <li>Slings intended for industrial lifting and material handling</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          IS 8674:2013 aims to ensure that polyethylene fibre ropes:
+          IS 15041:2001 is designed to ensure:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Deliver consistent tensile strength</li>
-          <li>Perform reliably under static and dynamic loads</li>
-          <li>Resist moisture, rot, and chemical exposure</li>
-          <li>Are safe for lifting, hauling, mooring, and tying operations</li>
+          <li>Adequate minimum breaking force</li>
+          <li>Uniform load-bearing capacity</li>
+          <li>Resistance to wear, abrasion, and stitching failure</li>
+          <li>Safe performance under rated working load limits</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance with IS 8674:2013 is mandatory for:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers of polyethylene fibre ropes</li>
-          <li>Importers bringing polyethylene ropes into India</li>
-          <li>Foreign manufacturers selling through Indian entities</li>
+          <li>Manufacturers of flat woven webbing slings in India</li>
+          <li>Importers and distributors of such slings</li>
+          <li>Foreign manufacturers supplying to the Indian market</li>
+          <li>Traders selling under private or own brands</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Fibre Ropes – Polyethylene
+          Why BIS Certification is Mandatory for Flat Woven Webbing Slings
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Consumer and Worker Safety Risks
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Polyethylene fibre ropes are frequently used in load-bearing and
-          safety-critical operations. Substandard ropes may break suddenly,
-          leading to accidents, injuries, equipment damage, and financial
-          losses.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Government Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and quality control regulations, fibre ropes
-          covered under IS 8674:2013 must be BIS certified before sale, supply,
-          or distribution in India.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Legal Implications
+          Safety Risks in Lifting Operations
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling polyethylene fibre ropes without BIS certification can result
+          Flat woven webbing slings are used to lift heavy machinery, steel
+          structures, containers, and industrial equipment. Failure can result
           in:
         </p>
+
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Seizure of goods</li>
-          <li>Monetary penalties</li>
-          <li>Cancellation of contracts and tenders</li>
-          <li>Prosecution under the BIS Act, 2016</li>
+          <li>Sudden load drop</li>
+          <li>Workplace injuries or fatalities</li>
+          <li>Damage to high-value goods</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Market and Brand Benefits
+          Regulatory and Government Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate for Fibre Ropes – Polyethylene improves market
-          acceptance, builds buyer trust, and enables participation in
-          government, PSU, marine, and infrastructure projects.
+          As per BIS notifications and quality control regulations, products
+          covered under IS 15041:2001 must be BIS certified before sale or
+          distribution in India.
         </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Legal Implications
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Selling or importing non-certified slings can lead to:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Seizure of goods</li>
+          <li>Monetary penalties</li>
+          <li>Prosecution under the BIS Act</li>
+          <li>Blacklisting from government and PSU tenders</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Market and Commercial Advantages
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          A valid BIS License for Flat Woven Webbing Slings provides:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Buyer confidence</li>
+          <li>Access to organized industrial markets</li>
+          <li>Eligibility for large infrastructure and EPC projects</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Fibre Ropes – Polyethylene
+          Step-by-Step BIS Certification Process for Flat Woven Webbing Slings
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The first step is confirming that the product falls under IS
-          8674:2013, including rope construction, diameter range, and intended
-          application.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The first step is confirming:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Product category (flat woven webbing sling)</li>
+          <li>Applicable standard: IS 15041:2001</li>
+          <li>Sling types, widths, and load capacities</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit the BIS application through the BIS apply
-          online portal. The application includes:
+          Manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product and model details</li>
-          <li>Manufacturing unit information</li>
-          <li>Applicable BIS standard</li>
-          <li>Quality control and testing details</li>
+          <li>Register on the BIS portal</li>
+          <li>Select IS 15041:2001 during application</li>
+          <li>Upload documents and product details</li>
+          <li>Pay the applicable BIS application fee</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This initiates the BIS certificate registration process.
+          This step is commonly referred to as BIS apply online or BIS
+          certificate registration.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
+          Fees & Cost Structure for BIS Licence
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certification cost generally includes:
+          The BIS certification cost includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Product testing charges</li>
-          <li>Factory inspection fee</li>
-          <li>License fee</li>
-          <li>Annual marking fee</li>
+          <li>Application and processing fees</li>
+          <li>Testing charges at BIS-recognized labs</li>
+          <li>Factory inspection charges</li>
+          <li>Annual license and marking fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The total cost of BIS certification depends on rope variants, diameter
-          ranges, and testing scope.
+          The overall cost of BIS certification depends on:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Number of sling variants</li>
+          <li>Load capacities</li>
+          <li>Testing complexity</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Product Sample Testing (Detailed Tests as per Standard)
+          Product Sample Testing (As per IS 15041:2001)
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Samples of polyethylene fibre ropes are tested in BIS-recognized
-          laboratories strictly as per IS 8674:2013.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Product samples are tested for:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Breaking strength</li>
+          <li>Elongation</li>
+          <li>Stitching efficiency</li>
+          <li>Width and thickness</li>
+          <li>Workmanship and finish</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials conduct a factory audit to verify:
+          BIS officials inspect:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process and controls</li>
-          <li>Raw material inspection procedures</li>
-          <li>In-process quality checks</li>
-          <li>Testing and calibration facilities</li>
+          <li>Manufacturing process</li>
+          <li>Stitching and finishing operations</li>
+          <li>Quality control system</li>
+          <li>In-house testing equipment</li>
+          <li>Raw material traceability</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          After successful testing and inspection, BIS grants the Bureau of
-          Indian Standards License, allowing use of the ISI Mark on certified
-          polyethylene fibre ropes.
+          Once testing and inspection are satisfactory:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>BIS grants the Bureau of Indian Standards License</li>
+          <li>
+            Manufacturer is authorized to affix the ISI Mark on certified slings
+          </li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          After certification, license holders must:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          After certification:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain consistent quality</li>
-          <li>Conduct routine testing</li>
-          <li>Allow surveillance inspections</li>
-          <li>Renew the BIS license periodically</li>
+          <li>Regular surveillance audits are conducted</li>
+          <li>Market samples may be tested</li>
+          <li>License renewal must be done on time</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Scope of BIS License as per IS 8674:2013
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS license applies to polyethylene fibre ropes intended for:
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Scope of BIS License as per IS 15041:2001
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          The BIS license specifies:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Marine and fishing operations</li>
-          <li>Ports, shipping, and logistics</li>
-          <li>Agriculture and general utility use</li>
-          <li>Industrial and commercial applications</li>
+          <li>Sling construction and material</li>
+          <li>Approved widths and load ratings</li>
+          <li>Manufacturing location</li>
         </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          The scope is strictly limited to ropes conforming to IS 8674:2013
-          specifications.
+          The license covers slings used in:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Industrial lifting</li>
+          <li>Warehousing and logistics</li>
+          <li>Construction and infrastructure projects</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Any change in design or process requires prior BIS approval.
         </p>
 
         {/* Separator Line */}
@@ -470,7 +500,6 @@ const MainContentLeft = () => {
           <li>Factory registration certificate</li>
           <li>Manufacturing process flow chart</li>
           <li>List of machinery and testing equipment</li>
-          <li>Quality control plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -486,10 +515,9 @@ const MainContentLeft = () => {
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product specifications and drawings</li>
-          <li>Rope construction and material details</li>
-          <li>Diameter and breaking load data</li>
-          <li>Internal test procedures</li>
+          <li>Product drawings and specifications</li>
+          <li>Raw material details</li>
+          <li>Quality control plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -497,33 +525,35 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS application form</li>
-          <li>Test reports from BIS-recognized labs</li>
+          <li>Test request details</li>
           <li>Undertakings and declarations</li>
         </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          These form the complete set of BIS CERTIFICATION DOCUMENTS.
+          These are collectively known as BIS CERTIFICATE DOCUMENTS or BIS
+          CERTIFICATION DOCUMENTS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 8674:2013
+          Testing Requirements as per IS 15041:2001
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Mandatory tests include:
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Mandatory testing includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Diameter and linear density measurement</li>
-          <li>Breaking load and tensile strength test</li>
+          <li>Minimum breaking force test</li>
           <li>Elongation test</li>
-          <li>Construction and lay verification</li>
-          <li>Visual inspection and finish quality</li>
-          <li>Marking and labeling compliance</li>
+          <li>Stitching efficiency test</li>
+          <li>Dimensional checks</li>
+          <li>Visual inspection and workmanship</li>
         </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          All testing must be conducted only in BIS-recognized laboratories.
+          Testing must be conducted only at BIS-recognized laboratories.
         </p>
 
         {/* Separator Line */}
@@ -534,28 +564,24 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Inconsistent Raw Material Quality
+          Common Issues
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Use controlled-grade polyethylene fibres and approved
-          suppliers.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Failure in breaking strength</li>
+          <li>Improper stitching patterns</li>
+          <li>Inadequate documentation</li>
+          <li>Incorrect marking or labeling</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Test Failures
+          Best Practices
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Conduct internal pre-testing and improve process
-          consistency.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Documentation Errors
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Prepare accurate and complete documents before BIS
-          submission.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Conduct internal pre-testing</li>
+          <li>Follow standard-approved stitching methods</li>
+          <li>Maintain proper batch records</li>
+          <li>Take expert compliance guidance</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -568,31 +594,34 @@ const MainContentLeft = () => {
           Legal Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Compliance with Indian regulations</li>
-          <li>Reduced risk of penalties and seizures</li>
+          <li>Full compliance with Indian regulations</li>
+          <li>Protection from enforcement actions</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Eligibility for government, PSU, and marine contracts</li>
-          <li>Improved acceptance by industrial buyers</li>
+          <li>Acceptance by industrial buyers</li>
+          <li>Eligibility for PSU and government projects</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Trust through BIS certification mark</li>
-          <li>Enhanced brand credibility</li>
+          <li>ISI Mark builds trust and credibility</li>
+          <li>Differentiation from unorganized suppliers</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Market Expansion
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Access to regulated domestic and export-oriented markets</li>
+          <li>
+            Easier entry into large-scale lifting and infrastructure projects
+          </li>
+          <li>Improved export credibility</li>
         </ul>
 
         {/* Separator Line */}
@@ -603,35 +632,30 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Failure to comply with BIS requirements can lead to:
+          Non-compliance may result in:
         </p>
+
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary penalties</li>
-          <li>Seizure of non-compliant products</li>
-          <li>Import and sales restrictions</li>
-          <li>Legal prosecution</li>
-          <li>Permanent market bans</li>
+          <li>Heavy fines</li>
+          <li>Seizure of goods</li>
+          <li>Suspension of business operations</li>
+          <li>Legal prosecution under the BIS Act</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Fibre Ropes – Polyethylene?
+          Who Needs BIS Certification for Flat Woven Webbing Slings?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
           <li>Importers</li>
-          <li>Foreign manufacturers</li>
-          <li>Traders and distributors</li>
-          <li>E-commerce sellers</li>
+          <li>Foreign manufacturers (with Indian representative)</li>
+          <li>Traders selling under own brand</li>
+          <li>E-commerce sellers supplying industrial slings</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Any entity placing polyethylene fibre ropes on the Indian market must
-          ensure BIS compliance.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -641,79 +665,78 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Fibre Ropes – Polyethylene under IS
-          8674:2013 is a legal necessity and a strategic advantage for
-          businesses operating in India. BIS Certification for Fibre Ropes –
-          Polyethylene ensures product safety, strength, and reliability while
-          protecting users and strengthening brand credibility.
+          BIS Certification for Flat Woven Webbing Slings under IS 15041:2001 is
+          essential for ensuring lifting safety, regulatory compliance, and
+          long-term market credibility. With increasing scrutiny on industrial
+          safety products, holding a valid BIS Certificate for Flat Woven
+          Webbing Slings protects businesses from legal risks while opening
+          doors to high-value industrial and infrastructure projects.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers and importers who secure a valid BIS License / BIS
-          Licence for Fibre Ropes – Polyethylene can confidently access
-          regulated markets, participate in high-value contracts, and avoid
-          legal risks. With proper preparation, accurate documentation, and
-          expert guidance, the BIS certification process becomes smooth,
-          efficient, and highly beneficial for long-term growth.
+          If you manufacture, import, or sell flat woven webbing slings in
+          India, obtaining a BIS License for Flat Woven Webbing Slings is not
+          optional—it is a critical compliance requirement. Professional BIS
+          consulting ensures faster approvals, error-free documentation, and
+          sustainable compliance success.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Fibre Ropes – Polyethylene
+          FAQs – BIS Certification for Flat Woven Webbing Slings
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q1. Is BIS certification mandatory for polyethylene fibre ropes in
-              India?
+              Q1. Is BIS certification mandatory for flat woven webbing slings?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS certification under IS 8674:2013 is mandatory.
+              Yes, BIS certification under IS 15041:2001 is mandatory in India.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q2. What is the BIS full form?
+              Q2. What is the BIS certificate full form?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Bureau of Indian Standards.
+              Bureau of Indian Standards Certificate.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q3. Can polyethylene ropes be sold without BIS certification?
+              Q3. How long does the BIS certification process take?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              No, uncertified ropes are illegal to sell in India.
+              Usually 30–60 working days.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q4. What is the BIS certificate cost?
+              Q4. What is the BIS certification cost?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              It depends on product variants and testing scope.
+              Cost varies depending on sling types and testing scope.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q5. How long does the BIS certification process take?
+              Q5. Can importers apply for BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Typically 6–10 weeks.
+              Yes, importers can apply with proper authorization.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q6. Is the ISI mark compulsory?
+              Q6. Is the ISI Mark compulsory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Yes, ISI marking is mandatory after certification.
@@ -722,61 +745,7 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q7. Can multiple rope diameters be covered under one license?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, subject to compliance and testing coverage.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q8. Is factory inspection mandatory?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS conducts factory audits.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q9. Can startups apply for BIS certification?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, if manufacturing facilities comply.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q10. Does BIS certification require renewal?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, periodic renewal is mandatory.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q11. What happens if product testing fails?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Corrective action and retesting are required.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q12. Are BIS-recognized labs compulsory?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, only BIS-approved labs are accepted.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q13. Can foreign manufacturers apply directly?
+              Q7. Can foreign manufacturers obtain BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Yes, through an Authorized Indian Representative.
@@ -785,24 +754,71 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q14. Are fishing ropes covered under this standard?
+              Q8. What tests are required under IS 15041:2001?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, if they conform to IS 8674:2013.
+              Breaking strength, elongation, stitching efficiency, and
+              dimensional checks.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q15. What does BIS certification mean for buyers?
+              Q9. Is factory inspection mandatory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              It assures safety, strength, and consistent quality.
+              Yes, BIS conducts a factory audit.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q10. Can multiple sling capacities be covered under one license?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, subject to testing and approval.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q11. What happens if non-certified slings are sold?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Penalties, seizures, and legal action may follow.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q12. Are renewals required for BIS licenses?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, licenses must be renewed periodically.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q13. Is BIS apply online mandatory?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, applications are submitted online.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q14. Can consultants reduce approval time?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, experienced consultants help avoid delays.
             </p>
           </div>
         </div>
 
         <ManyUsersAlsoRead />
+
         <FaqAuthorEng questionNumber={4} />
       </div>
     </div>

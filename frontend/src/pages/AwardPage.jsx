@@ -181,42 +181,42 @@ const AuditGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      image: "/Grant-Letter-Img/Grant-Letter-617-page-0001.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter01.webp",
       alt: "BIS Certificate Grant Letter for Cast aluminium and its alloys - Ingots and castings for general engineering purposes under IS 617:1994 with expert assistance from Sun Certifications India",
     },
     {
       id: 2,
-      image: "/Grant-Letter-Img/Grant-Letter-2590-page-0002.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter02.webp",
       alt: "BIS Certificate Grant Letter for Primary aluminium ingots for remelting for general engineering purpose under IS 2590:1987 with expert assistance from Sun Certifications India",
     },
     {
       id: 3,
-      image: "/Grant-Letter-Img/Grant-letter-TITUS-page-0003.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter03.webp",
       alt: "BIS Certification Grant Letter for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 4,
-      image: "/Grant-Letter-Img/Grant-letter-TITUS-page-0004.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter04.webp",
       alt: "BIS Certification Grant Letter for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 5,
-      image: "/Grant-Letter-Img/Licence-document-Hanhmy-page-0007.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter07.webp",
       alt: "BIS License Grant Letter document for Hanhmy with expert assistance from Sun Certifications India",
     },
     {
       id: 6,
-      image: "/Grant-Letter-Img/Licence-document-Sedo-Vina-page-0008.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter08.webp",
       alt: "BIS License Grant Letter document for Sedo Vina with expert assistance from Sun Certifications India",
     },
     {
       id: 7,
-      image: "/Grant-Letter-Img/Licence-leader-Art-page-0009.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter09.webp",
       alt: "BIS License Grant Letter document for Leader Art with expert assistance from Sun Certifications India",
     },
     {
       id: 8,
-      image: "/Grant-Letter-Img/License-document-BAMCO-page-00010.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter10.webp",
       alt: "BIS License Grant Letter document for BAMCO with expert assistance from Sun Certifications India",
     },
     {
@@ -226,12 +226,12 @@ const AuditGallery = () => {
     },
     {
       id: 10,
-      image: "/Grant-Letter-Img/1285-grant-letter-0012.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter12.webp",
       alt: "BIS Certification Grant Letter for Wrought aluminium and aluminium alloys- Extruded round tube and hollow sections under IS 1285:2002 with expert assistance from Sun Certifications India",
     },
     {
       id: 11,
-      image: "/Grant-Letter-Img/BIS-CERTIFICATE-NFAFPL-0013.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter13.webp",
       alt: "BIS Certification Grant Letter for Diesel Engines - NOx Reduction Agent AUS 32 under IS 17042 (Part 1):2018 with expert assistance from Sun Certifications India",
     },
     {
@@ -261,17 +261,17 @@ const AuditGallery = () => {
     },
     {
       id: 17,
-      image: "/Grant-Letter-Img/License-Documents-IS11744-0019.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter19.webp",
       alt: "BIS Certification Grant Letter for Phosphorous Pentachloride, Technical under IS 11744:1986 with expert assistance from Sun Certifications India",
     },
     {
       id: 18,
-      image: "/Grant-Letter-Img/Mita-Fastners-Grant-Letter-0020.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter20.webp",
       alt: "BIS Certification Grant Letter for Hexagon Head Bolts, Screws and Nuts of Product Grades A and B - Hexagon Head Screws under IS 1364 Part 2:2023 with expert assistance from Sun Certifications India",
     },
     {
       id: 19,
-      image: "/Grant-Letter-Img/Profax-Grant-Letter-0021.webp",
+      image: "/Grant-Letter-Img/BISCertificationGrantLetter21.webp",
       alt: "BIS License Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
     },
   ];

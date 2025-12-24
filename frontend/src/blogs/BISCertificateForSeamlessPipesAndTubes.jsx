@@ -10,7 +10,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { SlashIcon } from "lucide-react";
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
@@ -815,10 +814,10 @@ const MainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-4">
           The BIS Certificate for Seamless Pipes and Tubes under IS 17875:2022
           is a critical regulatory requirement ensuring that high-pressure
-          service pipes meet India's rigorous safety and quality standards. From
-          chemical composition to advanced non-destructive testing, BIS ensures
-          that every certified pipe is durable, defect-free, and capable of
-          performing under demanding industrial conditions.
+          service pipes meet India&apos;s rigorous safety and quality standards.
+          From chemical composition to advanced non-destructive testing, BIS
+          ensures that every certified pipe is durable, defect-free, and capable
+          of performing under demanding industrial conditions.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -951,7 +950,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
+                India&apos;s Best Certificate Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>

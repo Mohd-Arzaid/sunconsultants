@@ -16,8 +16,16 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHeader,
+  TableRow,
+  TableHead,
+} from "@/components/ui/table";
 
-const BISCertificationFibreRopes = () => {
+const BISCertificationPipeWrenches = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +38,25 @@ const BISCertificationFibreRopes = () => {
   );
 };
 
-export default BISCertificationFibreRopes;
+export default BISCertificationPipeWrenches;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Fibre Ropes - Polyethylene | IS 8674:2013 BIS License";
+    "BIS Certificate for Pipe Wrenches - Heavy Duty | IS 4003 (Part 2):1986 BIS License";
   const ogTitle =
-    "BIS Certification for Fibre Ropes - Polyethylene - IS 8674:2013 Guide";
+    "BIS Certification for Pipe Wrenches - Heavy Duty - IS 4003 (Part 2):1986 Guide";
   const twitterTitle =
-    "BIS License for Fibre Ropes - Polyethylene | IS 8674:2013";
+    "BIS License for Pipe Wrenches - Heavy Duty | IS 4003 (Part 2):1986";
   const metaDescription =
-    "Get BIS Certificate for Fibre Ropes - Polyethylene under IS 8674:2013. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Pipe Wrenches - Heavy Duty under IS 4003 (Part 2):1986. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Fibre Ropes - Polyethylene as per IS 8674:2013. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Pipe Wrenches - Heavy Duty as per IS 4003 (Part 2):1986. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Fibre Ropes - Polyethylene under IS 8674:2013. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Pipe Wrenches - Heavy Duty under IS 4003 (Part 2):1986. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Fibre Ropes - Polyethylene, BIS License for Fibre Ropes - Polyethylene, IS 8674:2013, BIS Certification for Fibre Ropes - Polyethylene";
+    "BIS Certificate for Pipe Wrenches - Heavy Duty, BIS License for Pipe Wrenches - Heavy Duty, IS 4003 (Part 2):1986, BIS Certification for Pipe Wrenches - Heavy Duty";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022";
+    "https://bis-certifications.com/blogs/isi-products/pipe-wrenches-is-4003";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -103,8 +111,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Fibre Ropes – Polyethylene – IS
-                    8674:2013
+                    BIS Certification Pipe Wrenches – Heavy Duty – IS 4003 (Part
+                    2):1986
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -132,55 +140,55 @@ const MainContent = () => {
 
 const MainContentLeft = () => {
   return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
+    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Fibre Ropes – Polyethylene – Complete Guide to IS
-          8674:2013
+          BIS Certification Pipe Wrenches – Heavy Duty – Complete Guide to IS
+          4003 (Part 2):1986
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforFibreRopesPolyethylene.png"
-            title="BIS License for Fibre Ropes - Polyethylene"
-            alt="BIS Certificate for Fibre Ropes - Polyethylene - IS 8674:2013 BIS Certification"
+            src="/blogImages/BISLicenseforPipeWrenches.png"
+            title="BIS License for Pipe Wrenches - Heavy Duty"
+            alt="BIS Certificate for Pipe Wrenches - Heavy Duty - IS 4003 (Part 2):1986 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Polyethylene fibre ropes are widely used across India in marine
-          operations, fishing, ports, agriculture, construction, logistics,
-          transportation, and general industrial activities. Their lightweight
-          nature, high strength-to-weight ratio, resistance to moisture,
-          chemicals, and abrasion make them ideal for demanding environments.
-          However, when fibre ropes fail under load due to poor quality or
-          substandard manufacturing, the consequences can be severe—ranging from
-          equipment damage to serious injuries and even loss of life.
+          Pipe Wrenches – Heavy Duty are essential hand tools used extensively
+          in plumbing, oil & gas installations, water supply projects, power
+          plants, refineries, construction sites, shipyards, and heavy
+          engineering industries. These tools are specifically designed to grip,
+          rotate, tighten, and loosen heavy metal pipes, fittings, and
+          cylindrical components where high torque is required. Due to their
+          application in high-load and safety-critical environments, any failure
+          in strength, jaw grip, or material quality can lead to severe
+          injuries, equipment damage, and costly operational shutdowns.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure safety, uniform quality, and performance reliability, the
-          Government of India has made BIS Certification for Fibre Ropes –
-          Polyethylene mandatory under IS 8674:2013. Any manufacturer or
-          importer supplying polyethylene fibre ropes in the Indian market must
-          obtain a valid BIS Certificate for Fibre Ropes – Polyethylene. Without
-          this certification, the product is considered non-compliant and may
-          face legal penalties, seizure, or prohibition from sale.
+          To prevent such risks and to maintain uniform quality standards, the
+          Government of India mandates compliance with Indian Standards for
+          heavy-duty hand tools. Obtaining a BIS Certificate for Pipe Wrenches –
+          Heavy Duty under IS 4003 (Part 2):1986 is therefore a mandatory
+          requirement for manufacturers and importers intending to sell these
+          tools in the Indian market. A valid BIS Certification for Pipe
+          Wrenches – Heavy Duty confirms that the product meets prescribed
+          standards for material strength, dimensional accuracy, gripping
+          performance, and durability.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This detailed product page is written for manufacturers, importers,
-          exporters, traders, distributors, marine suppliers, infrastructure
-          contractors, and e-commerce sellers. It explains the complete
-          framework of BIS Certification for Fibre Ropes – Polyethylene,
-          including standard requirements, testing procedures, documentation,
-          costs, timelines, and compliance responsibilities. If you are planning
-          to obtain a BIS License / BIS Licence for Fibre Ropes – Polyethylene,
-          this guide will help you navigate the process with clarity and
-          confidence.
+          This comprehensive product page is designed for manufacturers, foreign
+          manufacturers, importers, traders, distributors, hardware brands, EPC
+          contractors, and e-commerce sellers who need complete clarity on the
+          BIS License for Pipe Wrenches – Heavy Duty, including the BIS
+          certification process in India, testing requirements, documents, cost,
+          timelines, penalties, and long-term compliance obligations.
         </p>
 
         {/* Separator Line */}
@@ -191,10 +199,10 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product conformity assessment system
-          administered by the Bureau of Indian Standards (BIS), the national
-          standards authority of India. The BIS full form is Bureau of Indian
-          Standards, established under the BIS Act, 2016.
+          BIS Certification is a conformity assessment and product approval
+          system administered by the Bureau of Indian Standards, which is
+          India&apos;s apex body for standardization, quality certification, and
+          consumer safety.
         </p>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
@@ -202,258 +210,273 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate meaning refers to official recognition that a
-          product conforms to a specific Indian Standard (IS) and meets
-          prescribed requirements related to safety, strength, durability, and
-          performance. A BIS-certified product undergoes testing in
-          BIS-recognized laboratories and assessment through factory inspection
-          and quality audits.
+          The BIS Certificate meaning refers to official authorization issued by
+          BIS allowing a manufacturer to produce and sell a product that
+          conforms to a specific Indian Standard (IS) and to affix the ISI Mark
+          on such products.
         </p>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          ISI Mark and BIS Certification Mark
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Products certified under BIS carry the BIS certification mark,
-          commonly known as the ISI Mark, along with a unique license number.
-          The BIS Mark assures buyers, inspectors, and regulatory authorities
-          that the product complies with applicable BIS Standards.
-        </p>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Exists
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
+        <p className="text-gray-600 text-base font-geist mb-3">
           BIS exists to:
         </p>
-
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect users from unsafe and substandard products</li>
-          <li>Ensure consistency and reliability in manufacturing</li>
-          <li>Enforce government regulations through BIS notifications</li>
-          <li>Promote trust, quality, and fair trade in the Indian market</li>
+          <li>Protect consumers and industrial users from unsafe products</li>
+          <li>Ensure consistent quality across manufactured goods</li>
+          <li>Support legal enforcement of product standards</li>
+          <li>Promote standardization and trust in Indian manufacturing</li>
+        </ul>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          ISI Mark Explained
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS certification mark, commonly called the ISI Mark, is a symbol
+          of compliance and quality. For heavy-duty pipe wrenches, the ISI Mark
+          assures buyers that:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>The wrench meets IS 4003 (Part 2):1986</li>
+          <li>The tool has adequate strength and gripping performance</li>
+          <li>The product is legally approved for sale in India</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Fibre Ropes – Polyethylene
+          Applicable BIS Standard for Pipe Wrenches – Heavy Duty
         </h2>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          IS 8674:2013 – Indian Standard Explained
-        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>IS 4003 (Part 2):1986</strong> – Specification for Pipe
+          Wrenches (Heavy Duty)
+        </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for this product is IS 8674:2013,
-          titled &quot;Fibre Ropes — Polyethylene — Specification&quot;. This
-          standard defines requirements for polyethylene fibre ropes intended
-          for general-purpose and industrial applications.
+          The applicable Indian Standard for this product is IS 4003 (Part
+          2):1986, which lays down requirements for heavy-duty pipe wrenches
+          intended for professional and industrial use.
         </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Scope of IS 8674:2013
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The standard covers:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Construction and classification of polyethylene fibre ropes</li>
-          <li>Raw material requirements and fibre characteristics</li>
-          <li>Rope diameter, linear density, and tolerances</li>
-          <li>Minimum breaking load and strength requirements</li>
-          <li>Marking, labeling, and packaging provisions</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          IS 8674:2013 aims to ensure that polyethylene fibre ropes:
+          IS 4003 (Part 2):1986 aims to ensure that:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Deliver consistent tensile strength</li>
-          <li>Perform reliably under static and dynamic loads</li>
-          <li>Resist moisture, rot, and chemical exposure</li>
-          <li>Are safe for lifting, hauling, mooring, and tying operations</li>
+          <li>Pipe wrenches can withstand high torque without failure</li>
+          <li>Jaws provide secure grip without slipping</li>
+          <li>Handles and frames do not deform or crack under load</li>
+          <li>The tool performs safely in demanding industrial conditions</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance with IS 8674:2013 is mandatory for:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers of polyethylene fibre ropes</li>
-          <li>Importers bringing polyethylene ropes into India</li>
-          <li>Foreign manufacturers selling through Indian entities</li>
+          <li>Indian manufacturers of heavy-duty pipe wrenches</li>
+          <li>Importers and distributors</li>
+          <li>Foreign manufacturers supplying to India</li>
+          <li>Brands selling pipe wrenches under private labels</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Fibre Ropes – Polyethylene
+          Why BIS Certification is Mandatory for Pipe Wrenches – Heavy Duty
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Consumer and Worker Safety Risks
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Polyethylene fibre ropes are frequently used in load-bearing and
-          safety-critical operations. Substandard ropes may break suddenly,
-          leading to accidents, injuries, equipment damage, and financial
-          losses.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Government Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and quality control regulations, fibre ropes
-          covered under IS 8674:2013 must be BIS certified before sale, supply,
-          or distribution in India.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Legal Implications
+          Consumer and Workplace Safety Risks
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling polyethylene fibre ropes without BIS certification can result
-          in:
+          Heavy-duty pipe wrenches are used in high-force operations.
+          Substandard tools can cause:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Sudden jaw slippage</li>
+          <li>Tool breakage under load</li>
+          <li>Hand, wrist, or facial injuries</li>
+          <li>Damage to pipelines and fittings</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Government and Regulatory Compliance
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          As per BIS standards and applicable BIS notifications, heavy-duty pipe
+          wrenches covered under IS 4003 (Part 2):1986 must be BIS certified
+          before sale, distribution, or import into India.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Legal Implications
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Selling or importing non-certified pipe wrenches may result in:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Seizure of goods</li>
           <li>Monetary penalties</li>
-          <li>Cancellation of contracts and tenders</li>
-          <li>Prosecution under the BIS Act, 2016</li>
+          <li>Suspension of business operations</li>
+          <li>Legal action under the BIS Act</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Market and Brand Benefits
+          Market and Brand Benefits
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate for Fibre Ropes – Polyethylene improves market
-          acceptance, builds buyer trust, and enables participation in
-          government, PSU, marine, and infrastructure projects.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          A BIS License for Pipe Wrenches – Heavy Duty helps businesses:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Gain trust of contractors and industrial buyers</li>
+          <li>Qualify for government, PSU, and EPC tenders</li>
+          <li>Compete with established national and global brands</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Fibre Ropes – Polyethylene
+          Step-by-Step BIS Certification Process for Pipe Wrenches – Heavy Duty
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The first step is confirming that the product falls under IS
-          8674:2013, including rope construction, diameter range, and intended
-          application.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The first step is to confirm:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Product category: Pipe Wrenches – Heavy Duty</li>
+          <li>Applicable standard: IS 4003 (Part 2):1986</li>
+          <li>Sizes and variants to be covered under certification</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit the BIS application through the BIS apply
-          online portal. The application includes:
+          Manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product and model details</li>
-          <li>Manufacturing unit information</li>
-          <li>Applicable BIS standard</li>
-          <li>Quality control and testing details</li>
+          <li>Register on the BIS portal</li>
+          <li>Select the correct product and standard</li>
+          <li>Complete the BIS application form</li>
+          <li>Upload required documents</li>
+          <li>Pay the prescribed fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This initiates the BIS certificate registration process.
+          This stage is commonly referred to as BIS apply online or BIS
+          certificate registration.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
+          Fees & Cost Structure to get BIS Certificate
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
           The BIS certification cost generally includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
+          <li>Application and processing fees</li>
           <li>Product testing charges</li>
-          <li>Factory inspection fee</li>
-          <li>License fee</li>
-          <li>Annual marking fee</li>
+          <li>Factory inspection charges</li>
+          <li>License and marking fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The total cost of BIS certification depends on rope variants, diameter
-          ranges, and testing scope.
+          The overall cost of BIS certification depends on:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Number of wrench sizes and variants</li>
+          <li>Testing scope</li>
+          <li>Factory location and readiness</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Product Sample Testing (Detailed Tests as per Standard)
+          Product Sample Testing (As per IS 4003 Part 2:1986)
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Samples of polyethylene fibre ropes are tested in BIS-recognized
-          laboratories strictly as per IS 8674:2013.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Samples are sent to BIS-recognized laboratories for testing,
+          including:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Load and strength tests</li>
+          <li>Jaw gripping performance</li>
+          <li>Dimensional accuracy</li>
+          <li>Material quality checks</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials conduct a factory audit to verify:
+          A BIS officer conducts an on-site audit to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process and controls</li>
-          <li>Raw material inspection procedures</li>
-          <li>In-process quality checks</li>
-          <li>Testing and calibration facilities</li>
+          <li>Manufacturing process</li>
+          <li>Heat treatment and machining operations</li>
+          <li>Quality control system</li>
+          <li>Testing and inspection facilities</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          After successful testing and inspection, BIS grants the Bureau of
-          Indian Standards License, allowing use of the ISI Mark on certified
-          polyethylene fibre ropes.
+          Once all requirements are met:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>BIS issues the Bureau of Indian Standards License</li>
+          <li>
+            The manufacturer is authorized to use the ISI Mark on certified pipe
+            wrenches
+          </li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          After certification, license holders must:
+          After certification:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain consistent quality</li>
-          <li>Conduct routine testing</li>
-          <li>Allow surveillance inspections</li>
-          <li>Renew the BIS license periodically</li>
+          <li>Regular surveillance audits are conducted</li>
+          <li>Market samples may be tested</li>
+          <li>License renewal must be done periodically</li>
+          <li>Continuous compliance with IS 4003 (Part 2):1986 is mandatory</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Scope of BIS License as per IS 8674:2013
-        </h3>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Scope of BIS License as per IS 4003 (Part 2):1986
+        </h2>
+
         <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS license applies to polyethylene fibre ropes intended for:
+          The BIS license specifies:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Marine and fishing operations</li>
-          <li>Ports, shipping, and logistics</li>
-          <li>Agriculture and general utility use</li>
-          <li>Industrial and commercial applications</li>
+          <li>Approved heavy-duty pipe wrench design</li>
+          <li>Size range covered under certification</li>
+          <li>Manufacturing location</li>
         </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The license is applicable for:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Domestic retail and wholesale supply</li>
+          <li>Industrial and commercial usage</li>
+          <li>Infrastructure, plumbing, and utility projects</li>
+        </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          The scope is strictly limited to ropes conforming to IS 8674:2013
-          specifications.
+          Any change in material, design, or manufacturing process requires
+          prior BIS approval.
         </p>
 
         {/* Separator Line */}
@@ -467,10 +490,9 @@ const MainContentLeft = () => {
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration certificate</li>
+          <li>Factory registration or MSME certificate</li>
           <li>Manufacturing process flow chart</li>
-          <li>List of machinery and testing equipment</li>
-          <li>Quality control plan</li>
+          <li>List of machinery and in-house testing equipment</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -486,44 +508,110 @@ const MainContentLeft = () => {
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product specifications and drawings</li>
-          <li>Rope construction and material details</li>
-          <li>Diameter and breaking load data</li>
-          <li>Internal test procedures</li>
+          <li>Product drawings and specifications</li>
+          <li>Raw material details</li>
+          <li>Quality control and inspection plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS application form</li>
-          <li>Test reports from BIS-recognized labs</li>
-          <li>Undertakings and declarations</li>
+          <li>Completed BIS application form</li>
+          <li>Test request details</li>
+          <li>Declarations and undertakings</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          These form the complete set of BIS CERTIFICATION DOCUMENTS.
+          These are collectively known as BIS CERTIFICATE DOCUMENTS or BIS
+          CERTIFICATION DOCUMENTS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 8674:2013
+          Testing Requirements as per IS 4003 (Part 2):1986
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
           Mandatory tests include:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Diameter and linear density measurement</li>
-          <li>Breaking load and tensile strength test</li>
-          <li>Elongation test</li>
-          <li>Construction and lay verification</li>
-          <li>Visual inspection and finish quality</li>
-          <li>Marking and labeling compliance</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          All testing must be conducted only in BIS-recognized laboratories.
+
+        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Clause
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Requirements
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  3
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Dimensions
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  5
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Hardness
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  6.1
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Manufacture
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  7
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Workmanship and Finish
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  8
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Operation
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  11.1
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Static Load Test
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  13
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Packing
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
+          All tests must be conducted only at BIS-recognized laboratories.
         </p>
 
         {/* Separator Line */}
@@ -534,28 +622,24 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Inconsistent Raw Material Quality
+          Common Problems
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Use controlled-grade polyethylene fibres and approved
-          suppliers.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Failure in load or grip tests</li>
+          <li>Improper heat treatment</li>
+          <li>Dimensional non-conformities</li>
+          <li>Incomplete documentation</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Test Failures
+          Solutions & Best Practices
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Conduct internal pre-testing and improve process
-          consistency.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Documentation Errors
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Prepare accurate and complete documents before BIS
-          submission.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Conduct internal pre-testing</li>
+          <li>Follow controlled heat treatment procedures</li>
+          <li>Maintain proper inspection records</li>
+          <li>Engage experienced BIS consultants</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -568,31 +652,32 @@ const MainContentLeft = () => {
           Legal Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Compliance with Indian regulations</li>
-          <li>Reduced risk of penalties and seizures</li>
+          <li>Full compliance with Indian regulations</li>
+          <li>Protection from penalties and enforcement actions</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Eligibility for government, PSU, and marine contracts</li>
-          <li>Improved acceptance by industrial buyers</li>
+          <li>Acceptance by industrial buyers and contractors</li>
+          <li>Eligibility for government and PSU procurement</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Trust through BIS certification mark</li>
-          <li>Enhanced brand credibility</li>
+          <li>ISI Mark enhances trust and credibility</li>
+          <li>Differentiation from unorganized tool suppliers</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Market Expansion
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Access to regulated domestic and export-oriented markets</li>
+          <li>Easier entry into infrastructure and EPC projects</li>
+          <li>Stronger position in domestic and export markets</li>
         </ul>
 
         {/* Separator Line */}
@@ -603,35 +688,29 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Failure to comply with BIS requirements can lead to:
+          Non-compliance with BIS requirements can lead to:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary penalties</li>
-          <li>Seizure of non-compliant products</li>
-          <li>Import and sales restrictions</li>
-          <li>Legal prosecution</li>
-          <li>Permanent market bans</li>
+          <li>Heavy fines</li>
+          <li>Seizure of non-conforming products</li>
+          <li>Suspension or cancellation of business licenses</li>
+          <li>Legal prosecution under the BIS Act</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Fibre Ropes – Polyethylene?
+          Who Needs BIS Certification for Pipe Wrenches – Heavy Duty?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
           <li>Importers</li>
-          <li>Foreign manufacturers</li>
-          <li>Traders and distributors</li>
-          <li>E-commerce sellers</li>
+          <li>Foreign manufacturers (with Authorized Indian Representative)</li>
+          <li>Traders and distributors selling under own brand</li>
+          <li>E-commerce sellers listing heavy-duty pipe wrenches</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Any entity placing polyethylene fibre ropes on the Indian market must
-          ensure BIS compliance.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -641,61 +720,60 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Fibre Ropes – Polyethylene under IS
-          8674:2013 is a legal necessity and a strategic advantage for
-          businesses operating in India. BIS Certification for Fibre Ropes –
-          Polyethylene ensures product safety, strength, and reliability while
-          protecting users and strengthening brand credibility.
+          Obtaining a BIS Certificate for Pipe Wrenches – Heavy Duty under IS
+          4003 (Part 2):1986 is a crucial legal and quality requirement for
+          selling these tools in India. BIS Certification for Pipe Wrenches –
+          Heavy Duty ensures product safety, durability, and regulatory
+          compliance, while the BIS License for Pipe Wrenches – Heavy Duty
+          strengthens brand credibility and market acceptance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers and importers who secure a valid BIS License / BIS
-          Licence for Fibre Ropes – Polyethylene can confidently access
-          regulated markets, participate in high-value contracts, and avoid
-          legal risks. With proper preparation, accurate documentation, and
-          expert guidance, the BIS certification process becomes smooth,
-          efficient, and highly beneficial for long-term growth.
+          For manufacturers, importers, and sellers, timely compliance not only
+          avoids penalties but also opens doors to large industrial,
+          infrastructure, and government projects. With expert guidance and
+          structured compliance support, the BIS certification process becomes
+          smooth, faster, and fully aligned with Indian Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Fibre Ropes – Polyethylene
+          FAQs – BIS Certification for Pipe Wrenches – Heavy Duty
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q1. Is BIS certification mandatory for polyethylene fibre ropes in
-              India?
+              Q1. Is BIS certification mandatory for heavy-duty pipe wrenches?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS certification under IS 8674:2013 is mandatory.
+              Yes, compliance with IS 4003 (Part 2):1986 is mandatory in India.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q2. What is the BIS full form?
+              Q2. What is the BIS certificate full form?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Bureau of Indian Standards.
+              Bureau of Indian Standards Certificate.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q3. Can polyethylene ropes be sold without BIS certification?
+              Q3. How long does the BIS certification process take?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              No, uncertified ropes are illegal to sell in India.
+              Generally 30–60 working days.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q4. What is the BIS certificate cost?
+              Q4. What is the BIS certification cost?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               It depends on product variants and testing scope.
@@ -704,16 +782,16 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q5. How long does the BIS certification process take?
+              Q5. Can importers apply for BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Typically 6–10 weeks.
+              Yes, with proper manufacturer authorization.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q6. Is the ISI mark compulsory?
+              Q6. Is the ISI Mark compulsory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Yes, ISI marking is mandatory after certification.
@@ -722,61 +800,7 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q7. Can multiple rope diameters be covered under one license?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, subject to compliance and testing coverage.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q8. Is factory inspection mandatory?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS conducts factory audits.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q9. Can startups apply for BIS certification?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, if manufacturing facilities comply.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q10. Does BIS certification require renewal?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, periodic renewal is mandatory.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q11. What happens if product testing fails?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Corrective action and retesting are required.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q12. Are BIS-recognized labs compulsory?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, only BIS-approved labs are accepted.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q13. Can foreign manufacturers apply directly?
+              Q7. Can foreign manufacturers obtain BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Yes, through an Authorized Indian Representative.
@@ -785,25 +809,71 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q14. Are fishing ropes covered under this standard?
+              Q8. What tests are required under IS 4003 (Part 2):1986?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, if they conform to IS 8674:2013.
+              Strength, grip, dimensional, and workmanship tests.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q15. What does BIS certification mean for buyers?
+              Q9. Is factory inspection mandatory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              It assures safety, strength, and consistent quality.
+              Yes, BIS conducts an on-site audit.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q10. Can multiple sizes be covered under one license?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, subject to testing and approval.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q11. What happens if non-certified pipe wrenches are sold?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Penalties, seizure, and legal action may occur.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q12. Is BIS apply online mandatory?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, applications are submitted online only.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q13. Are renewals required for BIS licenses?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, periodic renewal is mandatory.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q14. Can consultants reduce approval delays?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, professional consultants help avoid errors and rejections.
             </p>
           </div>
         </div>
 
         <ManyUsersAlsoRead />
-        <FaqAuthorEng questionNumber={4} />
+
+        <FaqAuthorEng questionNumber={5} />
       </div>
     </div>
   );
@@ -811,11 +881,11 @@ const MainContentLeft = () => {
 
 const Services = () => {
   return (
-    <div className="pt-6 md:pt-8 pb-12 md:pb-16 overflow-x-hidden">
+    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Our Services
             </h2>
           </BoxReveal>

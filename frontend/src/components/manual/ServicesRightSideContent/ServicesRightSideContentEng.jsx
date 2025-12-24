@@ -169,6 +169,10 @@ const ServicesRightSideContentEng = () => {
     "/blogs/ISI-products/steel-wire-ropes-IS-1804:2004",
     "/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022",
     "/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001",
+    "/blogs/isi-products/manila-ropes-is-1084",
+    "/blogs/isi-products/flat-woven-webbing-slings-is-15041",
+    "/blogs/isi-products/combination-side-cutting-pliers-is-3650",
+    "/blogs/isi-products/pipe-wrenches-is-4003",
   ];
 
   // Check if current path should show these components
@@ -1042,10 +1046,30 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Fibre Ropes - Polyamide - English Page";
     if (path.includes("/blogs/ISI-products/steel-wire-ropes-IS-1804:2004"))
       return "BIS Certificate for Steel Wire Ropes - English Page";
-    if (path.includes("/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022"))
+    if (
+      path.includes(
+        "/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022"
+      )
+    )
       return "BIS Certificate for Mixed Polyolefin Fibre Ropes - English Page";
-    if (path.includes("/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001"))
+    if (
+      path.includes(
+        "/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001"
+      )
+    )
       return "BIS Certificate for Composite Synthetic Fibre Ropes - English Page";
+    if (path.includes("/blogs/isi-products/manila-ropes-is-1084"))
+      return "BIS Certificate for Manila Ropes - English Page";
+    if (path.includes("/blogs/isi-products/flat-woven-webbing-slings-is-15041"))
+      return "BIS Certificate for Flat Woven Webbing Slings - English Page";
+    if (
+      path.includes(
+        "/blogs/isi-products/combination-side-cutting-pliers-is-3650"
+      )
+    )
+      return "BIS Certificate for Combination Side Cutting Pliers - English Page";
+    if (path.includes("/blogs/isi-products/pipe-wrenches-is-4003"))
+      return "BIS Certificate for Pipe Wrenches - Heavy Duty - English Page";
   };
 
   const [formData, setFormData] = useState({

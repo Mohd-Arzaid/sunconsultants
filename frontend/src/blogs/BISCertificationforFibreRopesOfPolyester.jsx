@@ -10,21 +10,12 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { SlashIcon } from "lucide-react";
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHeader,
-  TableRow,
-  TableHead,
-} from "@/components/ui/table";
 
 const BISCertificateforFibreRopesOfPolyester = () => {
   return (
@@ -259,9 +250,10 @@ const MainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           The applicable Indian Standard for this product is IS 17609 : 2021,
-          titled "Fibre Ropes of Polyester — Specification". This standard
-          defines technical, dimensional, physical, and performance requirements
-          for polyester fibre ropes intended for various applications.
+          titled &quot;Fibre Ropes of Polyester — Specification&quot;. This
+          standard defines technical, dimensional, physical, and performance
+          requirements for polyester fibre ropes intended for various
+          applications.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -876,7 +868,7 @@ const Services = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
+                India&apos;s Best Certificate Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>

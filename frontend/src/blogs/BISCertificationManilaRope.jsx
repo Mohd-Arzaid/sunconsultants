@@ -16,8 +16,16 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHeader,
+  TableRow,
+  TableHead,
+} from "@/components/ui/table";
 
-const BISCertificationFibreRopes = () => {
+const BISCertificationManilaRope = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +38,22 @@ const BISCertificationFibreRopes = () => {
   );
 };
 
-export default BISCertificationFibreRopes;
+export default BISCertificationManilaRope;
 
 const MetaTags = () => {
-  const title =
-    "BIS Certificate for Fibre Ropes - Polyethylene | IS 8674:2013 BIS License";
-  const ogTitle =
-    "BIS Certification for Fibre Ropes - Polyethylene - IS 8674:2013 Guide";
-  const twitterTitle =
-    "BIS License for Fibre Ropes - Polyethylene | IS 8674:2013";
+  const title = "BIS Certificate for Manila Ropes | IS 1084:2005 BIS License";
+  const ogTitle = "BIS Certification for Manila Ropes – IS 1084:2005 Guide";
+  const twitterTitle = "BIS License for Manila Ropes | IS 1084:2005";
   const metaDescription =
-    "Get BIS Certificate for Fibre Ropes - Polyethylene under IS 8674:2013. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Manila Ropes under IS 1084:2005. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Fibre Ropes - Polyethylene as per IS 8674:2013. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Manila Ropes as per IS 1084:2005. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Fibre Ropes - Polyethylene under IS 8674:2013. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Manila Ropes under IS 1084:2005. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Fibre Ropes - Polyethylene, BIS License for Fibre Ropes - Polyethylene, IS 8674:2013, BIS Certification for Fibre Ropes - Polyethylene";
+    "BIS Certificate for Manila Ropes, BIS License for Manila Ropes, IS 1084:2005, BIS Certification for Manila Ropes";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022";
+    "https://bis-certifications.com/blogs/isi-products/manila-ropes-is-1084";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -103,8 +108,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Fibre Ropes – Polyethylene – IS
-                    8674:2013
+                    BIS Certificate for Manila Ropes – IS 1084:2005
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -132,55 +136,51 @@ const MainContent = () => {
 
 const MainContentLeft = () => {
   return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
+    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification Fibre Ropes – Polyethylene – Complete Guide to IS
-          8674:2013
+          BIS Certification Manila Rope – Complete Guide to IS 1084:2005
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforFibreRopesPolyethylene.png"
-            title="BIS License for Fibre Ropes - Polyethylene"
-            alt="BIS Certificate for Fibre Ropes - Polyethylene - IS 8674:2013 BIS Certification"
+            src="/blogImages/BISLicenseforManilaRopes.png"
+            title="BIS License for Manila Ropes"
+            alt="BIS Certificate for Manila Ropes - IS 1084:2005 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Polyethylene fibre ropes are widely used across India in marine
-          operations, fishing, ports, agriculture, construction, logistics,
-          transportation, and general industrial activities. Their lightweight
-          nature, high strength-to-weight ratio, resistance to moisture,
-          chemicals, and abrasion make them ideal for demanding environments.
-          However, when fibre ropes fail under load due to poor quality or
-          substandard manufacturing, the consequences can be severe—ranging from
-          equipment damage to serious injuries and even loss of life.
+          The demand for Manila Ropes continues to remain strong across marine
+          operations, shipping, agriculture, construction, industrial lifting,
+          packaging, and general-purpose utility applications. Known for their
+          natural fibre strength, flexibility, and durability, Manila ropes are
+          widely preferred where grip, abrasion resistance, and shock absorption
+          are critical. However, because these ropes are often used in
+          load-bearing and safety-critical environments, quality inconsistency
+          can lead to serious accidents, financial losses, and legal
+          consequences.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure safety, uniform quality, and performance reliability, the
-          Government of India has made BIS Certification for Fibre Ropes –
-          Polyethylene mandatory under IS 8674:2013. Any manufacturer or
-          importer supplying polyethylene fibre ropes in the Indian market must
-          obtain a valid BIS Certificate for Fibre Ropes – Polyethylene. Without
-          this certification, the product is considered non-compliant and may
-          face legal penalties, seizure, or prohibition from sale.
+          This is where BIS Certification for Manila Rope becomes extremely
+          important. In India, compliance with IS 1084:2005 is a regulatory
+          requirement for manufacturers and importers who want to sell or
+          distribute Manila ropes in the Indian market. Obtaining a BIS
+          Certificate for Manila Rope ensures that the product meets prescribed
+          Indian Standards for construction, performance, strength, and safety.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This detailed product page is written for manufacturers, importers,
-          exporters, traders, distributors, marine suppliers, infrastructure
-          contractors, and e-commerce sellers. It explains the complete
-          framework of BIS Certification for Fibre Ropes – Polyethylene,
-          including standard requirements, testing procedures, documentation,
-          costs, timelines, and compliance responsibilities. If you are planning
-          to obtain a BIS License / BIS Licence for Fibre Ropes – Polyethylene,
-          this guide will help you navigate the process with clarity and
-          confidence.
+          This detailed guide is written for Indian manufacturers, foreign
+          manufacturers, importers, traders, procurement managers, compliance
+          officers, and exporters who want complete clarity on BIS Certification
+          for Manila Rope, the BIS certification process in India, applicable
+          tests, documents, costs, timelines, and post-certification
+          responsibilities.
         </p>
 
         {/* Separator Line */}
@@ -191,269 +191,309 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product conformity assessment system
-          administered by the Bureau of Indian Standards (BIS), the national
-          standards authority of India. The BIS full form is Bureau of Indian
-          Standards, established under the BIS Act, 2016.
+          BIS Certification is a conformity assessment system administered by
+          the Bureau of Indian Standards, the national standards authority of
+          India. The primary objective of BIS is to ensure that products sold in
+          India conform to Indian Standards (IS) relating to quality, safety,
+          reliability, and performance.
         </p>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          BIS Certificate Meaning
-        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate meaning refers to official recognition that a
-          product conforms to a specific Indian Standard (IS) and meets
-          prescribed requirements related to safety, strength, durability, and
-          performance. A BIS-certified product undergoes testing in
-          BIS-recognized laboratories and assessment through factory inspection
-          and quality audits.
+          In simple terms, the BIS Certificate meaning refers to an official
+          approval granted by BIS that authorizes a manufacturer to use the ISI
+          Mark on products that comply with a specific Indian Standard.
         </p>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          ISI Mark and BIS Certification Mark
-        </h2>
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          BIS Certificate Full Form and Purpose
+        </h3>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>
+            <strong>BIS Certification full form:</strong> Bureau of Indian
+            Standards Certification
+          </li>
+          <li>
+            The certification assures consumers and regulators that the product
+            has been tested and manufactured under a controlled system as per
+            applicable standards.
+          </li>
+        </ul>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Products certified under BIS carry the BIS certification mark,
-          commonly known as the ISI Mark, along with a unique license number.
-          The BIS Mark assures buyers, inspectors, and regulatory authorities
-          that the product complies with applicable BIS Standards.
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          ISI Mark Explained
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The ISI Mark is the visible compliance symbol used on products
+          certified under BIS&apos;s product certification scheme. For Manila
+          ropes, the ISI Mark confirms compliance with IS 1084:2005 and
+          signifies:
         </p>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Consistent product quality</li>
+          <li>Verified tensile and performance characteristics</li>
+          <li>Legal permission to sell in India</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Why BIS Exists
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
           BIS exists to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect users from unsafe and substandard products</li>
-          <li>Ensure consistency and reliability in manufacturing</li>
-          <li>Enforce government regulations through BIS notifications</li>
-          <li>Promote trust, quality, and fair trade in the Indian market</li>
+          <li>Protect consumers from unsafe or substandard products</li>
+          <li>Promote standardization and quality culture</li>
+          <li>Support fair trade and industrial growth</li>
+          <li>Enable regulatory enforcement in the Indian market</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Fibre Ropes – Polyethylene
+          Applicable BIS Standard for Manila Rope
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          IS 8674:2013 – Indian Standard Explained
+          IS 1084:2005 – Specification for Manila Ropes
         </h3>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for this product is IS 8674:2013,
-          titled &quot;Fibre Ropes — Polyethylene — Specification&quot;. This
-          standard defines requirements for polyethylene fibre ropes intended
-          for general-purpose and industrial applications.
+          The applicable Indian Standard for Manila ropes is IS 1084:2005, which
+          specifies the constructional requirements, material quality,
+          performance parameters, dimensions, tolerances, and testing methods
+          for Manila fibre ropes.
         </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Scope of IS 8674:2013
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The standard covers:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Construction and classification of polyethylene fibre ropes</li>
-          <li>Raw material requirements and fibre characteristics</li>
-          <li>Rope diameter, linear density, and tolerances</li>
-          <li>Minimum breaking load and strength requirements</li>
-          <li>Marking, labeling, and packaging provisions</li>
-        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          IS 8674:2013 aims to ensure that polyethylene fibre ropes:
+          The standard is designed to ensure that:
         </p>
+
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Deliver consistent tensile strength</li>
-          <li>Perform reliably under static and dynamic loads</li>
-          <li>Resist moisture, rot, and chemical exposure</li>
-          <li>Are safe for lifting, hauling, mooring, and tying operations</li>
+          <li>Ropes have adequate breaking strength</li>
+          <li>Fibre quality and rope construction are consistent</li>
+          <li>Ropes perform safely under load without premature failure</li>
+          <li>
+            Users are protected from risks such as snapping, slippage, or fibre
+            degradation
+          </li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance with IS 8674:2013 is mandatory for:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers of polyethylene fibre ropes</li>
-          <li>Importers bringing polyethylene ropes into India</li>
-          <li>Foreign manufacturers selling through Indian entities</li>
+          <li>Indian manufacturers producing Manila ropes</li>
+          <li>Importers sourcing Manila ropes from overseas</li>
+          <li>Foreign manufacturers supplying to India</li>
+          <li>Traders selling ISI-marked Manila ropes</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Fibre Ropes – Polyethylene
+          Why BIS Certification is Mandatory for Manila Rope
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Consumer and Worker Safety Risks
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Polyethylene fibre ropes are frequently used in load-bearing and
-          safety-critical operations. Substandard ropes may break suddenly,
-          leading to accidents, injuries, equipment damage, and financial
-          losses.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Government Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and quality control regulations, fibre ropes
-          covered under IS 8674:2013 must be BIS certified before sale, supply,
-          or distribution in India.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Legal Implications
+          Consumer and Workplace Safety
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Selling polyethylene fibre ropes without BIS certification can result
-          in:
+          Manila ropes are frequently used for:
         </p>
+
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Seizure of goods</li>
-          <li>Monetary penalties</li>
-          <li>Cancellation of contracts and tenders</li>
-          <li>Prosecution under the BIS Act, 2016</li>
+          <li>Lifting and tying loads</li>
+          <li>Mooring and marine handling</li>
+          <li>Agricultural bundling</li>
+          <li>Temporary rigging</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Failure of a rope can result in serious injuries, fatalities, or
+          property damage. BIS certification ensures minimum safety performance.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Government Compliance
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Under various BIS notifications, rope products falling under mandatory
+          certification must comply with the relevant IS. Selling non-certified
+          products can attract enforcement action.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Legal Implications
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Without a BIS License for Manila Rope, manufacturers and importers may
+          face:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Product seizures</li>
+          <li>Heavy penalties</li>
+          <li>Business disruptions</li>
+          <li>Criminal liability in case of accidents</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Market and Brand Benefits
+          Market and Brand Benefits
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate for Fibre Ropes – Polyethylene improves market
-          acceptance, builds buyer trust, and enables participation in
-          government, PSU, marine, and infrastructure projects.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Certified products enjoy:
         </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Higher buyer trust</li>
+          <li>Eligibility for government and PSU tenders</li>
+          <li>Acceptance by large industrial buyers</li>
+          <li>Reduced rejection and dispute risks</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Fibre Ropes – Polyethylene
+          Step-by-Step BIS Certification Process for Manila Rope
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The first step is confirming that the product falls under IS
-          8674:2013, including rope construction, diameter range, and intended
-          application.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The first step is confirming that the product falls under IS 1084:2005
+          and determining:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Rope type and construction</li>
+          <li>Diameter range</li>
+          <li>End-use application</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit the BIS application through the BIS apply
-          online portal. The application includes:
+          The manufacturer must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product and model details</li>
-          <li>Manufacturing unit information</li>
-          <li>Applicable BIS standard</li>
-          <li>Quality control and testing details</li>
+          <li>Register on the BIS application portal</li>
+          <li>Select the appropriate product and standard</li>
+          <li>Submit the BIS application along with required documents</li>
+          <li>Pay the applicable government fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This initiates the BIS certificate registration process.
+          This step is often referred to as BIS apply online or BIS certificate
+          registration.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
+          Fees & Cost Structure for BIS License
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certification cost generally includes:
+          The BIS certification cost includes:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+        <ul className="list-disc ml-6 mb-3 space-y-2 text-gray-600 text-base font-geist">
           <li>Application fee</li>
-          <li>Product testing charges</li>
-          <li>Factory inspection fee</li>
           <li>License fee</li>
           <li>Annual marking fee</li>
+          <li>Sample testing charges</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The total cost of BIS certification depends on rope variants, diameter
-          ranges, and testing scope.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The overall cost of BIS certification depends on:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Number of rope sizes</li>
+          <li>Testing complexity</li>
+          <li>Factory location</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Product Sample Testing (Detailed Tests as per Standard)
+          Product Sample Testing (As per IS 1084:2005)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Samples of polyethylene fibre ropes are tested in BIS-recognized
-          laboratories strictly as per IS 8674:2013.
+          Samples are drawn and sent to BIS-recognized laboratories for testing
+          against the standard&apos;s requirements.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials conduct a factory audit to verify:
+          A BIS officer conducts a factory audit to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Manufacturing process and controls</li>
-          <li>Raw material inspection procedures</li>
-          <li>In-process quality checks</li>
-          <li>Testing and calibration facilities</li>
+          <li>Manufacturing infrastructure</li>
+          <li>Quality control system</li>
+          <li>Raw material handling</li>
+          <li>In-house testing facilities</li>
+          <li>Record maintenance</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          After successful testing and inspection, BIS grants the Bureau of
-          Indian Standards License, allowing use of the ISI Mark on certified
-          polyethylene fibre ropes.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          After successful testing and inspection:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>BIS issues the Bureau of Indian Standards License</li>
+          <li>
+            The manufacturer is authorized to use the ISI Mark on Manila ropes
+          </li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          After certification, license holders must:
+          Post-approval obligations include:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain consistent quality</li>
-          <li>Conduct routine testing</li>
-          <li>Allow surveillance inspections</li>
-          <li>Renew the BIS license periodically</li>
+          <li>Routine surveillance audits</li>
+          <li>Market sample testing</li>
+          <li>License renewal</li>
+          <li>Compliance with marking and labeling norms</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Scope of BIS License as per IS 8674:2013
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS license applies to polyethylene fibre ropes intended for:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Marine and fishing operations</li>
-          <li>Ports, shipping, and logistics</li>
-          <li>Agriculture and general utility use</li>
-          <li>Industrial and commercial applications</li>
-        </ul>
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Scope of BIS License as per IS 1084:2005
+        </h2>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          The scope is strictly limited to ropes conforming to IS 8674:2013
-          specifications.
+          This standard prescribes the requirements of the following types of
+          electromechanically made manila ropes:
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          <strong>a)</strong> Hawser-laid manila ropes of diameter 6 mm to 128
+          mm and with linear density from 32 to 11 380 ktex.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          <strong>b)</strong> Shroud-laid manila ropes of diameter 8 mm to 128
+          mm and with linear density from 54 to 11 380 ktex.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          <strong>c)</strong> Cable-laid manila ropes of diameter 40 to 144 mm
+          and with a linear density from 1 030 to 13 105 ktex.
+        </p>
+
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Any change in material, process, or location requires prior BIS
+          approval.
         </p>
 
         {/* Separator Line */}
@@ -469,8 +509,7 @@ const MainContentLeft = () => {
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Factory registration certificate</li>
           <li>Manufacturing process flow chart</li>
-          <li>List of machinery and testing equipment</li>
-          <li>Quality control plan</li>
+          <li>List of machinery and test equipment</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -486,44 +525,127 @@ const MainContentLeft = () => {
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product specifications and drawings</li>
-          <li>Rope construction and material details</li>
-          <li>Diameter and breaking load data</li>
-          <li>Internal test procedures</li>
+          <li>Product specifications</li>
+          <li>Raw material details</li>
+          <li>Quality control plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Application Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>BIS application form</li>
-          <li>Test reports from BIS-recognized labs</li>
+          <li>Completed BIS application form</li>
+          <li>Test request details</li>
           <li>Undertakings and declarations</li>
         </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          These form the complete set of BIS CERTIFICATION DOCUMENTS.
+          These are commonly referred to as BIS CERTIFICATE DOCUMENTS or BIS
+          CERTIFICATION DOCUMENTS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 8674:2013
+          Testing Requirements as per IS 1084:2005
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">
+        <p className="text-gray-600 text-base font-geist mb-4">
           Mandatory tests include:
         </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Diameter and linear density measurement</li>
-          <li>Breaking load and tensile strength test</li>
-          <li>Elongation test</li>
-          <li>Construction and lay verification</li>
-          <li>Visual inspection and finish quality</li>
-          <li>Marking and labeling compliance</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          All testing must be conducted only in BIS-recognized laboratories.
+
+        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
+          <Table className="min-w-full border-collapse">
+            <TableHeader>
+              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
+                  Clause
+                </TableHead>
+                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
+                  Requirements
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  6.1
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Manila Fibres
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  6.2
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Yarn
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  6.3
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Strands
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  6.4
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Ropes
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  6.5
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Lubrication
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  6.6
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Rot-proofing Treatment
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  8.1
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Mass of Coil
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  8.2
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Pitch
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  8.3
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Length of coil
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </div>
+
+        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
+          Testing must be conducted only at BIS-recognized laboratories.
         </p>
 
         {/* Separator Line */}
@@ -534,28 +656,24 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Inconsistent Raw Material Quality
+          Common Issues
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Use controlled-grade polyethylene fibres and approved
-          suppliers.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Incorrect rope construction</li>
+          <li>Failure in breaking strength tests</li>
+          <li>Incomplete documentation</li>
+          <li>Non-compliant marking</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Test Failures
+          Best Practices
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Conduct internal pre-testing and improve process
-          consistency.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Documentation Errors
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Prepare accurate and complete documents before BIS
-          submission.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Conduct pre-testing before official submission</li>
+          <li>Align production with IS requirements</li>
+          <li>Maintain proper records</li>
+          <li>Engage experienced BIS consultants</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -569,30 +687,31 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Compliance with Indian regulations</li>
-          <li>Reduced risk of penalties and seizures</li>
+          <li>Protection from enforcement actions</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Eligibility for government, PSU, and marine contracts</li>
-          <li>Improved acceptance by industrial buyers</li>
+          <li>Wider market acceptance</li>
+          <li>Eligibility for institutional buyers</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Trust through BIS certification mark</li>
-          <li>Enhanced brand credibility</li>
+          <li>Use of ISI Mark enhances credibility</li>
+          <li>Signals quality assurance</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Market Expansion
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Access to regulated domestic and export-oriented markets</li>
+          <li>Easier entry into organized retail</li>
+          <li>Acceptance by export-oriented buyers</li>
         </ul>
 
         {/* Separator Line */}
@@ -603,35 +722,201 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Failure to comply with BIS requirements can lead to:
+          Non-compliance can lead to:
         </p>
+
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary penalties</li>
-          <li>Seizure of non-compliant products</li>
-          <li>Import and sales restrictions</li>
-          <li>Legal prosecution</li>
-          <li>Permanent market bans</li>
+          <li>Monetary fines</li>
+          <li>Cancellation of business licenses</li>
+          <li>Product bans</li>
+          <li>Legal prosecution under BIS Act</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Fibre Ropes – Polyethylene?
+          Who Needs BIS Certification for Manila Rope?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
           <li>Importers</li>
-          <li>Foreign manufacturers</li>
-          <li>Traders and distributors</li>
-          <li>E-commerce sellers</li>
+          <li>Foreign manufacturers (with Indian representative)</li>
+          <li>Traders selling under own brand</li>
+          <li>E-commerce sellers listing Manila ropes</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Why Choose Us for BIS Certification Consulting?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          We provide end-to-end BIS Certification support, including:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Applicability assessment</li>
+          <li>Documentation preparation</li>
+          <li>Coordination with labs</li>
+          <li>Factory audit support</li>
+          <li>Faster approval handling</li>
+          <li>Post-certification compliance management</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Any entity placing polyethylene fibre ropes on the Indian market must
-          ensure BIS compliance.
+          Our experience in rope and fibre products ensures smooth, compliant,
+          and time-bound certification.
         </p>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          FAQs – BIS Certification for Manila Rope
+        </h2>
+
+        <div className="space-y-4 mb-4">
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q1. Is BIS Certification mandatory for Manila rope in India?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, Manila ropes must comply with IS 1084:2005 to be legally sold
+              in India.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q2. What is the BIS certificate meaning?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              It is official approval confirming product compliance with Indian
+              Standards.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q3. How long does BIS certification take?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Typically 30–60 working days, subject to testing and inspection.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q4. What is the BIS certificate cost?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Costs vary based on product range and testing requirements.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q5. Can importers apply for BIS certification?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, importers can apply with proper authorization.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q6. Is the ISI Mark mandatory?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, certified Manila ropes must carry the ISI Mark.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q7. Can foreign manufacturers get BIS certification?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, through an Authorized Indian Representative.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q8. What happens if non-certified ropes are sold?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Penalties, seizures, and legal action may follow.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q9. Is online application mandatory?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, BIS apply online through the official portal.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q10. Are renewals required?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, BIS licenses must be renewed periodically.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q11. Can multiple sizes be covered under one license?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, if tested and approved.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q12. Do traders need BIS certification?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              If selling under own brand, yes.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q13. Are BIS notifications applicable to ropes?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, relevant notifications mandate compliance.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q14. What labs are used for testing?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Only BIS-recognized laboratories.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q15. Can consultants speed up the process?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, experienced consultants reduce errors and delays.
+            </p>
+          </div>
+        </div>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -641,169 +926,23 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Fibre Ropes – Polyethylene under IS
-          8674:2013 is a legal necessity and a strategic advantage for
-          businesses operating in India. BIS Certification for Fibre Ropes –
-          Polyethylene ensures product safety, strength, and reliability while
-          protecting users and strengthening brand credibility.
+          Obtaining a BIS Certificate for Manila Rope under IS 1084:2005 is not
+          just a legal requirement but a strategic step toward ensuring safety,
+          quality, and market credibility. With rising regulatory enforcement
+          and buyer awareness, BIS Certification for Manila Rope protects
+          businesses from compliance risks while strengthening brand trust.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers and importers who secure a valid BIS License / BIS
-          Licence for Fibre Ropes – Polyethylene can confidently access
-          regulated markets, participate in high-value contracts, and avoid
-          legal risks. With proper preparation, accurate documentation, and
-          expert guidance, the BIS certification process becomes smooth,
-          efficient, and highly beneficial for long-term growth.
+          If you are planning to manufacture, import, or sell Manila ropes in
+          India, securing a BIS License for Manila Rope at the right time is
+          essential. Professional guidance ensures a smooth certification
+          journey, faster approvals, and long-term compliance success.
         </p>
 
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Fibre Ropes – Polyethylene
-        </h2>
-
-        <div className="space-y-4 mb-4">
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q1. Is BIS certification mandatory for polyethylene fibre ropes in
-              India?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS certification under IS 8674:2013 is mandatory.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q2. What is the BIS full form?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Bureau of Indian Standards.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q3. Can polyethylene ropes be sold without BIS certification?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              No, uncertified ropes are illegal to sell in India.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q4. What is the BIS certificate cost?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              It depends on product variants and testing scope.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q5. How long does the BIS certification process take?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Typically 6–10 weeks.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q6. Is the ISI mark compulsory?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, ISI marking is mandatory after certification.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q7. Can multiple rope diameters be covered under one license?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, subject to compliance and testing coverage.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q8. Is factory inspection mandatory?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS conducts factory audits.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q9. Can startups apply for BIS certification?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, if manufacturing facilities comply.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q10. Does BIS certification require renewal?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, periodic renewal is mandatory.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q11. What happens if product testing fails?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Corrective action and retesting are required.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q12. Are BIS-recognized labs compulsory?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, only BIS-approved labs are accepted.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q13. Can foreign manufacturers apply directly?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, through an Authorized Indian Representative.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q14. Are fishing ropes covered under this standard?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, if they conform to IS 8674:2013.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              Q15. What does BIS certification mean for buyers?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              It assures safety, strength, and consistent quality.
-            </p>
-          </div>
-        </div>
-
         <ManyUsersAlsoRead />
-        <FaqAuthorEng questionNumber={4} />
+
+        <FaqAuthorEng questionNumber={5} />
       </div>
     </div>
   );
@@ -811,11 +950,11 @@ const MainContentLeft = () => {
 
 const Services = () => {
   return (
-    <div className="pt-6 md:pt-8 pb-12 md:pb-16 overflow-x-hidden">
+    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Our Services
             </h2>
           </BoxReveal>

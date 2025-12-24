@@ -112,6 +112,18 @@ const BISCertificationMixedPolyolefinFibreRopes = lazy(() =>
 const BISCertificationCompsitSyntheticFibre = lazy(() =>
   import("@/blogs/BISCertificationCompsitSyntheticFibre")
 );
+const BISCertificationManilaRope = lazy(() =>
+  import("@/blogs/BISCertificationManilaRope")
+);
+const BISCertificationforFlatWovenWebbing = lazy(() =>
+  import("@/blogs/BISCertificationforFlatWovenWebbing")
+);
+const BISCertificationCombinationSideCuttingPliers = lazy(() =>
+  import("@/blogs/BISCertificationCombinationSideCuttingPliers")
+);
+const BISCertificationPipeWrenches = lazy(() =>
+  import("@/blogs/BISCertificationPipeWrenches")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -563,6 +575,38 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationCompsitSyntheticFibre />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/manila-ropes-is-1084"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationManilaRope />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/flat-woven-webbing-slings-is-15041"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationforFlatWovenWebbing />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/combination-side-cutting-pliers-is-3650"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationCombinationSideCuttingPliers />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/pipe-wrenches-is-4003"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationPipeWrenches />
           </Suspense>
         }
       />
