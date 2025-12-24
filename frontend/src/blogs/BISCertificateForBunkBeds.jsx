@@ -23,7 +23,7 @@ import {
   TableHeader,
   TableRow,
   TableHead,
-} from "@/components/ui/table";
+} from "@/components/ui/table"; 
 
 const BISCertificateForBunkBeds = () => {
   return (

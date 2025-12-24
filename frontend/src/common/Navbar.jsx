@@ -1,4 +1,3 @@
-
 import { Link, useNavigate } from "react-router-dom";
 
 import {
@@ -348,7 +347,7 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <Link to="/faqs">
                   <Button variant="link" className={STYLES.button}>
-                    FAQ'S
+                    FAQ&apos;S
                   </Button>
                 </Link>
               </NavigationMenuItem>
@@ -483,7 +482,7 @@ const Navbar = () => {
             {/* FAQ'S */}
             <Link to="/faqs" className="block w-full" onClick={closeMobileMenu}>
               <Button variant="ghost" className={STYLES.mobileButton}>
-                FAQ'S
+                FAQ&apos;S
               </Button>
             </Link>
 

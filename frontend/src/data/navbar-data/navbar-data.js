@@ -241,18 +241,18 @@ export const NAVIGATION_DATA = {
       link: "/seminars-and-exhibitions",
       icon: GalleryHorizontal,
     },
-    {
-      id: 3,
-      name: "Grant Letter",
-      link: "/BIS-certification-grant-letter",
-      icon: Award,
-    },
-    {
-      id: 4,
-      name: "Awards",
-      link: "/awards",
-      icon: Award,
-    },
+    // {
+    //   id: 3,
+    //   name: "Grant Letter",
+    //   link: "/BIS-certification-grant-letter",
+    //   icon: Award,
+    // },
+    // {
+    //   id: 4,
+    //   name: "Awards",
+    //   link: "/awards",
+    //   icon: Award,
+    // },
   ],
   faqs: [
     {
