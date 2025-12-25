@@ -6,18 +6,8 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import {
-  SlashIcon,
-  PhoneCall,
-  User,
-  Phone,
-  Mail,
-  MessageCircle,
-  SendHorizontal,
-} from "lucide-react";
+import { SlashIcon } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import { Helmet } from "react-helmet-async";
 import ServicesRightSideContentGerman from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentGerman";
@@ -84,67 +74,67 @@ const MetalCuttingMachinesGerman = () => {
         {/* Hreflang Tags for Multi-language Support */}
         <link
           rel="alternate"
-          hreflang="en"
+          hrefLang="en"
           href="https://bis-certifications.com/bis-scheme-x-certification-for-metal-cutting-machine-tools"
         />
         <link
           rel="alternate"
-          hreflang="fr"
+          hrefLang="fr"
           href="https://bis-certifications.com/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
         />
         <link
           rel="alternate"
-          hreflang="de"
+          hrefLang="de"
           href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
         />
         <link
           rel="alternate"
-          hreflang="vi"
+          hrefLang="vi"
           href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai"
         />
         <link
           rel="alternate"
-          hreflang="es"
+          hrefLang="es"
           href="https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
         />
         <link
           rel="alternate"
-          hreflang="ko"
+          hrefLang="ko"
           href="https://bis-certifications.com/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
         />
         <link
           rel="alternate"
-          hreflang="id"
+          hrefLang="id"
           href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam"
         />
         <link
           rel="alternate"
-          hreflang="it"
+          hrefLang="it"
           href="https://bis-certifications.com/certificazione-bis-schema-x-per-utensili-per-macchine-da-taglio-metalli"
         />
         <link
           rel="alternate"
-          hreflang="ja"
+          hrefLang="ja"
           href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"
         />
         <link
           rel="alternate"
-          hreflang="zh"
+          hrefLang="zh"
           href="https://bis-certifications.com/bis-fang-an-x-jin-shu-qie-xiao-ji-chuang-ren-zheng"
         />
         <link
           rel="alternate"
-          hreflang="th"
+          hrefLang="th"
           href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak"
         />
         <link
           rel="alternate"
-          hreflang="nl"
+          hrefLang="nl"
           href="https://bis-certifications.com/bis-schema-x-certificering-voor-metaalsnijmachines"
         />
         <link
           rel="alternate"
-          hreflang="ar"
+          hrefLang="ar"
           href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin"
         />
       </Helmet>
@@ -511,201 +501,6 @@ const MetalCuttingMachinesGermanMainContentLeft = () => {
         </p>
 
         <ServiceAuthorGerman />
-      </div>
-    </div>
-  );
-};
-
-const MetalCuttingMachinesGermanMainContentRight = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    phoneNumber: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
-
-  // Get current page URL and name for form submission
-  const currentUrl = window.location.href;
-  const currentPageName =
-    "SchemaX Produkt - BIS Zertifizierung für Metallschneidemaschinen";
-
-  // Add BASE_URL like other forms
-  const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
-
-    if (isSubmitting) return;
-
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      // Use BASE_URL like other forms
-      const response = await fetch(`${BASE_URL}/contact/submit-contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          pageUrl: currentUrl,
-          pageName: currentPageName,
-        }),
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setSubmitStatus({ type: "success", message: result.message });
-        setFormData({
-          fullName: "",
-          phoneNumber: "",
-          email: "",
-          message: "",
-        });
-      } else {
-        setSubmitStatus({ type: "error", message: result.message });
-      }
-    } catch (error) {
-      console.error("Form submission error:", error);
-      setSubmitStatus({
-        type: "error",
-        message: "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  return (
-    <div className="flex flex-col gap-6 w-full md:w-[360px] ">
-      <div className="w-full md:w-[360px] md:sticky md:top-[128px] md:self-start  p-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
-        {/* Header */}
-        <div className="flex gap-2 items-center">
-          <PhoneCall className="text-[#232327]" />
-          <div className="text-xl font-geist font-semibold text-[#232327]">
-            Kostenlosen Rückruf anfordern
-          </div>
-        </div>
-
-        {/* Intro Text */}
-        <p className="mt-3 text-sm text-gray-600 font-geist">
-          Hinterlassen Sie Ihre Daten unten und unsere Experten werden Sie
-          innerhalb von 24 Stunden zurückrufen, um Ihre regulatorischen
-          Compliance-Bedürfnisse zu besprechen.
-        </p>
-
-        {/* Status Message */}
-        {submitStatus && (
-          <div
-            className={`mt-4 p-3 rounded-lg text-sm font-geist ${
-              submitStatus.type === "success"
-                ? "bg-green-50 text-green-700 border border-green-200"
-                : "bg-red-50 text-red-700 border border-red-200"
-            }`}
-          >
-            {submitStatus.message}
-          </div>
-        )}
-
-        {/* Form */}
-        <form onSubmit={handleFormSubmit} className="mt-5 space-y-4">
-          {/* Name Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <User className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="text"
-              name="fullName"
-              value={formData.fullName}
-              onChange={handleInputChange}
-              required
-              placeholder="Ihr Name*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
-          </div>
-
-          {/* Phone Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <Phone className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="tel"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleInputChange}
-              required
-              placeholder="Telefonnummer*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
-          </div>
-
-          {/* Email Field */}
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <Mail className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-              placeholder="E-Mail-Adresse*"
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            />
-          </div>
-
-          {/* Message Field */}
-          <div className="relative">
-            <div className="absolute top-3 left-3 pointer-events-none">
-              <MessageCircle className="h-5 w-5 text-gray-400" />
-            </div>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-              placeholder="Erforderliche Zertifizierung*"
-              rows="3"
-              required
-              className="w-full py-2.5 pl-10 pr-3 font-geist bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-            ></textarea>
-          </div>
-
-          <Button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full mt-5 font-geist bg-[#212126] hover:bg-[#212126]/90 text-white group relative overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <span className="relative z-10 flex items-center">
-              {isSubmitting ? "Wird gesendet..." : "Rückruf anfordern"}
-              <SendHorizontal className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </span>
-            <span className="absolute top-0 left-0 w-0 h-full bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-          </Button>
-        </form>
-
-        {/* Privacy Note */}
-        <p className="mt-3 text-xs text-center text-gray-500 font-geist">
-          Durch das Absenden dieses Formulars stimmen Sie unserer{" "}
-          <a href="#" className="text-blue-600 hover:underline">
-            Datenschutzrichtlinie
-          </a>{" "}
-          zu und stimmen zu, kontaktiert zu werden.
-        </p>
       </div>
     </div>
   );

@@ -181,98 +181,17 @@ const AuditGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter01.webp",
-      alt: "BIS Certificate Grant Letter for Cast aluminium and its alloys - Ingots and castings for general engineering purposes under IS 617:1994 with expert assistance from Sun Certifications India",
+      image: "/AwardImg/Sun-Certification-Footwear-India-Expo.jpg",
+      title: "Sun Certification - Footwear India Expo",
+      alt: "Recognition trophy for Sun Certification India for their valuable contribution on BIS certifications at the 17th edition Footwear India Expo Delhi",
+      description: "Footwear India Expo",  
     },
     {
       id: 2,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter02.webp",
-      alt: "BIS Certificate Grant Letter for Primary aluminium ingots for remelting for general engineering purpose under IS 2590:1987 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 3,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter03.webp",
-      alt: "BIS Certification Grant Letter for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 4,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter04.webp",
-      alt: "BIS Certification Grant Letter for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 5,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter07.webp",
-      alt: "BIS License Grant Letter document for Hanhmy with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 6,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter08.webp",
-      alt: "BIS License Grant Letter document for Sedo Vina with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 7,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter09.webp",
-      alt: "BIS License Grant Letter document for Leader Art with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 8,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter10.webp",
-      alt: "BIS License Grant Letter document for BAMCO with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 9,
-      image: "/Grant-Letter-Img/733-grant-letter-0011.webp",
-      alt: "BIS Certification Grant Letter for Wrought aluminium and aluminium alloy bars, rods and sections under IS 733:1983 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 10,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter12.webp",
-      alt: "BIS Certification Grant Letter for Wrought aluminium and aluminium alloys- Extruded round tube and hollow sections under IS 1285:2002 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 11,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter13.webp",
-      alt: "BIS Certification Grant Letter for Diesel Engines - NOx Reduction Agent AUS 32 under IS 17042 (Part 1):2018 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 12,
-      image: "/Grant-Letter-Img/Chetak-Grant-Letter-0014.webp",
-      alt: "BIS Certification Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 13,
-      image: "/Grant-Letter-Img/grant-letter-0015.webp",
-      alt: "BIS License Grant Letter for Sandal and Slippers Specification under IS 6721:2023 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 14,
-      image: "/Grant-Letter-Img/Kidz-Autobharat-Grant-Letter-0016.webp",
-      alt: "BIS License Grant Letter for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for foreign manufacturer with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 15,
-      image: "/Grant-Letter-Img/License-document-Thantawan-0017.webp",
-      alt: "BIS License Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 16,
-      image: "/Grant-Letter-Img/License-Documents-IS-4581-0018.webp",
-      alt: "BIS Certification Grant Letter for Phosphorous Trichloride, pure and Analytical Reagent under IS 4581:1978 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 17,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter19.webp",
-      alt: "BIS Certification Grant Letter for Phosphorous Pentachloride, Technical under IS 11744:1986 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 18,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter20.webp",
-      alt: "BIS Certification Grant Letter for Hexagon Head Bolts, Screws and Nuts of Product Grades A and B - Hexagon Head Screws under IS 1364 Part 2:2023 with expert assistance from Sun Certifications India",
-    },
-    {
-      id: 19,
-      image: "/Grant-Letter-Img/BISCertificationGrantLetter21.webp",
-      alt: "BIS License Grant Letter for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India",
+      image: "/AwardImg/Sun-Certification-Agra-Footwear-Conclave.jpg",
+      title: "Sun Certification Recognition – Agra Footwear Conclave",
+      alt: "Recognition award presented to Sun Certification India for valuable support in understanding BIS certification at the Agra Footwear Conclave.",
+      description: "Strategic Partner to the Footwear Industry",
     },
   ];
 
@@ -292,11 +211,12 @@ const AuditGallery = () => {
           >
             <div className="aspect-[4/3] overflow-hidden rounded-xl">
               <img
-                alt={
-                  item.alt || item.description || `BIS Grant Letter ${item.id}`
-                }
+                alt={item.alt || item.description || `Award ${item.id}`}
                 title={
-                  item.alt || item.description || `BIS Grant Letter ${item.id}`
+                  item.title ||
+                  item.alt ||
+                  item.description ||
+                  `Award ${item.id}`
                 }
                 loading="lazy"
                 width="600"
@@ -310,37 +230,14 @@ const AuditGallery = () => {
             </div>
 
             <div className="flex flex-1 flex-col justify-between py-2 transition-all duration-300 group-hover:px-4">
-              <p className="mt-2 max-w-full text-lg font-geist text-neutral-600">
-                {/* {item.description || "BIS Grant Letter and License Document"} */}
-              </p>
+              {item.description && (
+                <p className="mt-2 max-w-full text-lg font-geist text-neutral-600">
+                  {item.description}
+                </p>
+              )}
             </div>
           </div>
         ))}
-
-        {/* Many More Grant Letters Card */}
-        <div
-          className="group relative mb-4 rounded-2xl"
-          style={{
-            opacity: 1,
-            filter: "blur(0px)",
-            transform: "none",
-            boxShadow: "rgba(0,0,0,0.1) 0px 0px 0px 0px",
-          }}
-        >
-          <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
-            <div className="text-center p-4">
-              <h3 className="text-gray-800 font-geist text-base md:text-lg font-bold mb-1 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
-                Many More Awards
-              </h3>
-              <p className="text-gray-500 font-geist text-xs font-medium uppercase tracking-widest mb-1">
-                Recognition Received
-              </p>
-              <p className="text-gray-400 font-geist text-xs italic">
-                Showcasing our excellence and achievements in BIS certification
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

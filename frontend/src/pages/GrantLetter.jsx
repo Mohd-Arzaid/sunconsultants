@@ -186,6 +186,8 @@ const AuditGallery = () => {
       id: 1,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter01.webp",
       alt: "BIS Certificate Grant Letter successfully obtained for Cast aluminium and its alloys - Ingots and castings for general engineering purposes under IS 617:1994 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS Certification Grant Letter for Cast Aluminium and Its Alloys under IS 617:1994",
     },
     {
       id: 2,
@@ -291,71 +293,117 @@ const AuditGallery = () => {
   return (
     <div>
       <div className="max-w-[88rem] mx-auto px-4 pb-12 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {galleryImages.map((item) => (
             <div
               key={item.id}
-              className="group relative mb-4 rounded-2xl cursor-pointer"
-              style={{
-                opacity: 1,
-                filter: "blur(0px)",
-                transform: "none",
-                boxShadow: "rgba(0,0,0,0.1) 0px 0px 0px 0px",
-              }}
+              className="group relative cursor-pointer"
               onClick={() => setSelectedImage(item)}
             >
-              <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gray-50 flex items-center justify-center">
-                <img
-                  alt={
-                    item.alt ||
-                    item.description ||
-                    `BIS Grant Letter ${item.id}`
-                  }
-                  title={
-                    item.alt ||
-                    item.description ||
-                    `BIS Grant Letter ${item.id}`
-                  }
-                  loading="lazy"
-                  width="600"
-                  height="450"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  decoding="async"
-                  className="w-full h-full object-contain transform transition-transform duration-700 md:group-hover:scale-105"
-                  src={item.image}
-                  style={{ color: "transparent" }}
-                />
+              {/* Card Container with enhanced shadow and hover effects */}
+              <div className="relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition-all duration-500 ease-out transform hover:-translate-y-2">
+                {/* Image Container */}
+                <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-50 flex items-center justify-center relative">
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+
+                  {/* View Icon on Hover */}
+                  <div className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-90 group-hover:scale-100">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-full p-4 shadow-xl">
+                      <svg
+                        className="w-8 h-8 text-[#1A8781]"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Image */}
+                  <img
+                    alt={
+                      item.alt ||
+                      item.description ||
+                      `BIS Grant Letter ${item.id}`
+                    }
+                    title={
+                      item.alt ||
+                      item.description ||
+                      `BIS Grant Letter ${item.id}`
+                    }
+                    loading="lazy"
+                    width="600"
+                    height="450"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    decoding="async"
+                    className="w-full h-full object-contain transform transition-all duration-700 group-hover:scale-110 shadow-input border border-neutral-200 rounded-2xl"
+                    src={item.image}
+                    style={{ color: "transparent" }}
+                  />
+                </div>
+
+                {/* Bottom Border Accent */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1A8781] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
 
-              <div className="flex flex-1 flex-col justify-between py-2 transition-all duration-300 group-hover:px-4">
-                <p className="mt-2 max-w-full text-lg font-geist text-neutral-600">
-                  {/* {item.description || "BIS Grant Letter and License Document"} */}
-                </p>
-              </div>
+              {/* Description below image */}
+              {item.description && (
+                <div className="mt-4 px-3">
+                  <p className="text-lg font-geist font-medium drop-shadow-lg text-neutral-800 text-left">
+                    {item.description}
+                  </p>
+                </div>
+              )}
             </div>
           ))}
 
           {/* Many More Grant Letters Card */}
-          <div
-            className="group relative mb-4 rounded-2xl"
-            style={{
-              opacity: 1,
-              filter: "blur(0px)",
-              transform: "none",
-              boxShadow: "rgba(0,0,0,0.1) 0px 0px 0px 0px",
-            }}
-          >
-            <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
-              <div className="text-center p-4">
-                <h3 className="text-gray-800 font-geist text-base md:text-lg font-bold mb-1 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight tracking-wide">
-                  Many More Grant Letters
-                </h3>
-                <p className="text-gray-500 font-geist text-xs font-medium uppercase tracking-widest mb-1">
-                  Issued Successfully
-                </p>
-                <p className="text-gray-400 font-geist text-xs italic">
-                  Showcasing our extensive BIS certification portfolio
-                </p>
+          <div className="group relative">
+            <div className="relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition-all duration-500 ease-out transform hover:-translate-y-2 border-2 border-dashed border-gray-300 hover:border-[#1A8781]/50">
+              <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center relative">
+                {/* Animated Background Pattern */}
+                <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 10px, #1A8781 10px, #1A8781 20px)`,
+                    }}
+                  ></div>
+                </div>
+
+                <div className="text-center p-6 relative z-10">
+                  <div className="mb-3 transform group-hover:scale-110 transition-transform duration-500">
+                    <svg
+                      className="w-12 h-12 mx-auto text-[#1A8781] opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-gray-800 font-geist text-lg md:text-xl font-bold mb-2 group-hover:text-[#1A8781] transition-colors duration-300 leading-tight">
+                    Many More Grant Letters
+                  </h3>
+                  <p className="text-gray-500 font-geist text-xs font-semibold uppercase tracking-widest mb-2">
+                    Issued Successfully
+                  </p>
+                  <p className="text-gray-400 font-geist text-xs italic">
+                    Showcasing our extensive BIS certification portfolio
+                  </p>
+                </div>
               </div>
             </div>
           </div>

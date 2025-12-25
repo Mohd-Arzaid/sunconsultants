@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import PropTypes from "prop-types";
 import HomeSEO from "@/components/manual/home-page-sections/HomeSEO";
 import Hero from "@/components/manual/home-page-sections/Hero";
 import LogoTicker from "@/components/manual/home-page-sections/LogoTicker";
@@ -17,10 +18,10 @@ import FooterSkeleton from "@/components/ui/footer-skeleton";
 // Lazy load OurServices component
 const OurServices = lazy(() =>
   import("@/components/manual/home-page-sections/OurServices")
-); 
+);
 
 // Lazy load AuditsMarquee component
-const AuditsMarquee = lazy(() =>
+const AuditsMarquee = lazy(() => 
   import("@/components/manual/home-page-sections/AuditsMarquee")
 );
 
@@ -143,6 +144,10 @@ const Home = ({ onVideoPopupChange }) => {
       </section>
     </main>
   );
+};
+
+Home.propTypes = {
+  onVideoPopupChange: PropTypes.func,
 };
 
 export default Home;
