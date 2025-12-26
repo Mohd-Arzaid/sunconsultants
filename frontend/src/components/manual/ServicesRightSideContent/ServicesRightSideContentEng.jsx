@@ -173,6 +173,9 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/flat-woven-webbing-slings-is-15041",
     "/blogs/isi-products/combination-side-cutting-pliers-is-3650",
     "/blogs/isi-products/pipe-wrenches-is-4003",
+    "/blogs/isi-products/ring-wrenches-is-2029",
+    "/blogs/isi-products/open-jaw-wrenches-is-2028",
+    "/blogs/isi-products/adjustable-wrenches-is-6149",
   ];
 
   // Check if current path should show these components
@@ -1070,6 +1073,12 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Combination Side Cutting Pliers - English Page";
     if (path.includes("/blogs/isi-products/pipe-wrenches-is-4003"))
       return "BIS Certificate for Pipe Wrenches - Heavy Duty - English Page";
+    if (path.includes("/blogs/isi-products/ring-wrenches-is-2029"))
+      return "BIS Certificate for Ring Wrenches - English Page";
+    if (path.includes("/blogs/isi-products/open-jaw-wrenches-is-2028"))
+      return "BIS Certificate for Open-Jaw Wrenches - English Page";
+    if (path.includes("/blogs/isi-products/adjustable-wrenches-is-6149"))
+      return "BIS Certificate for Adjustable Wrenches - English Page";
   };
 
   const [formData, setFormData] = useState({

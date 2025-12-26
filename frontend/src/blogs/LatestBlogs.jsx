@@ -319,6 +319,30 @@ const blogs = [
       "Get BIS Certificate for Pipe Wrenches (Heavy Duty) under IS 4003. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for heavy duty pipe wrenches.",
     slug: "blogs/isi-products/pipe-wrenches-is-4003",
   },
+  {
+    id: 37,
+    color: "#10B981", // Green
+    title: "BIS Certificate for Ring Wrenches – IS 2029:1998",
+    description:
+      "Ring Wrenches (also known as ring spanners) are indispensable hand tools used across automotive workshops, mechanical maintenance, heavy engineering",
+    slug: "blogs/isi-products/ring-wrenches-is-2029",
+  },
+  {
+    id: 38,
+    color: "#8B5CF6", // Purple
+    title: "BIS Certificate for Open-Jaw Wrenches – IS 2028:2004",
+    description:
+      "Get BIS Certificate for Open-Jaw Wrenches under IS 2028:2004. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for open-jaw wrenches (open-end spanners).",
+    slug: "blogs/isi-products/open-jaw-wrenches-is-2028",
+  },
+  {
+    id: 39,
+    color: "#EC4899", // Pink
+    title: "BIS Certificate for Adjustable Wrenches – IS 6149:1984",
+    description:
+      "Get BIS Certificate for Single-ended Open-jaw Adjustable Wrenches under IS 6149:1984. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for adjustable wrenches.",
+    slug: "blogs/isi-products/adjustable-wrenches-is-6149",
+  },
 ];
 
 // =============================

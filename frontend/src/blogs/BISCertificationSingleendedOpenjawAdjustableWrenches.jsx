@@ -25,7 +25,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 
-const BISCertificateForSteelWireRopes = () => {
+const BISCertificationSingleendedOpenjawAdjustableWrenches = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -38,23 +38,24 @@ const BISCertificateForSteelWireRopes = () => {
   );
 };
 
-export default BISCertificateForSteelWireRopes;
+export default BISCertificationSingleendedOpenjawAdjustableWrenches;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Steel Wire Ropes | IS 1804:2004 BIS License";
-  const ogTitle = "BIS Certification for Steel Wire Ropes - IS 1804:2004 Guide";
-  const twitterTitle = "BIS License for Steel Wire Ropes | IS 1804:2004";
+    "BIS Certificate for Adjustable Wrenches | IS 6149:1984 BIS License";
+  const ogTitle =
+    "BIS Certification for Adjustable Wrenches - IS 6149:1984 Guide";
+  const twitterTitle = "BIS License for Adjustable Wrenches | IS 6149:1984";
   const metaDescription =
-    "Get BIS Certificate for Steel Wire Ropes under IS 1804:2004. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Adjustable Wrenches under IS 6149:1984. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Steel Wire Ropes as per IS 1804:2004. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Adjustable Wrenches as per IS 6149:1984. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Steel Wire Ropes under IS 1804:2004. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Adjustable Wrenches under IS 6149:1984. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Steel Wire Ropes, BIS License for Steel Wire Ropes, IS 1804:2004, BIS Certification for Steel Wire Ropes";
+    "BIS Certificate for Adjustable Wrenches, BIS License for Adjustable Wrenches, IS 6149:1984, BIS Certification for Adjustable Wrenches";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/steel-wire-ropes-IS-1804:2004";
+    "https://bis-certifications.com/blogs/isi-products/adjustable-wrenches-is-6149";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -109,7 +110,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Steel Wire Ropes – IS 1804:2004
+                    BIS Certificate for Single-ended Open-jaw Adjustable
+                    Wrenches – IS 6149:1984
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -141,344 +143,320 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Steel Wire Ropes – Complete Guide to IS
-          1804:2004
+          BIS Certification Single-ended Open-jaw Adjustable Wrenches – Complete
+          Guide to IS 6149:1984
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforSteelWireRopes.png"
-            title="BIS License for Steel Wire Ropes"
-            alt="BIS Certificate for Steel Wire Ropes - IS 1804:2004 BIS Certification"
+            src="/blogImages/BISLicenseforAdjustableWrenches.png"
+            title="BIS License for Adjustable Wrenches"
+            alt="BIS Certificate for Single-ended Open-jaw Adjustable Wrenches - IS 6149:1984 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Steel wire ropes are critical industrial components widely used across
-          construction, mining, ports, shipping, elevators, cranes, oil & gas
-          installations, power plants, infrastructure projects, and material
-          handling systems. These ropes are designed to bear heavy loads,
-          withstand extreme tension, and perform reliably under demanding
-          operational conditions. Any failure in a steel wire rope can result in
-          serious accidents, equipment damage, loss of life, and large financial
-          liabilities.
+          Single-ended Open-jaw Adjustable Wrenches are versatile hand tools
+          widely used in mechanical maintenance, plumbing, automotive workshops,
+          fabrication units, construction sites, power plants, railways, and
+          household repair work. Their adjustable jaw mechanism allows a single
+          tool to accommodate multiple fastener sizes, making them highly
+          practical where speed, flexibility, and space constraints are
+          critical. However, because these wrenches are frequently used for
+          applying manual torque on nuts and bolts, poor-quality tools can slip,
+          deform, or fail unexpectedly—leading to injuries, damaged fasteners,
+          and unsafe working conditions.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure safety, uniform quality, and performance reliability, the
-          Government of India mandates BIS Certification for Steel Wire Ropes
-          under the applicable Indian Standard IS 1804:2004. Manufacturers and
-          importers must obtain a valid BIS Certificate for Steel Wire Ropes
-          before manufacturing, selling, importing, or distributing these
-          products in the Indian market.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide explains everything you need to know about
-          BIS Certification for Steel Wire Ropes, including the applicable
-          standard, certification process, testing requirements, documentation,
-          costs, and legal responsibilities. Whether you are a manufacturer,
-          importer, foreign supplier, trader, or e-commerce seller, this page
-          will help you understand how to get BIS certification in India for
-          steel wire ropes in a clear and compliant manner.
+          To ensure consistent quality, mechanical strength, and user safety,
+          India has established mandatory quality benchmarks for adjustable hand
+          tools. Obtaining a BIS Certificate for Single-ended Open-jaw
+          Adjustable Wrenches under IS 6149:1984 is a legal requirement for
+          manufacturers and importers supplying these products in the Indian
+          market. A valid BIS Certification for Single-ended Open-jaw Adjustable
+          Wrenches confirms that the product has been evaluated for dimensional
+          accuracy, jaw strength, adjustment mechanism reliability, torque
+          performance, and workmanship as per Indian Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          What is BIS Certification?
+          What is BIS Certification India?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product conformity assessment system operated
-          by the Bureau of Indian Standards (BIS), which is the National
-          Standards Body of India. BIS functions under the BIS Act, 2016, and
-          its core purpose is to ensure that products sold in India meet
-          established Indian Standards (IS) for safety, quality, and
-          performance.
+          Indian BIS or BIS Certification is a product conformity and quality
+          assurance system administered by the Bureau of Indian Standards, which
+          functions under the Government of India as the national authority for
+          standardization and certification.
         </p>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate meaning refers to official confirmation that a
-          product complies with the relevant Indian Standard. Once certified,
-          the manufacturer is authorized to use the BIS Certification Mark, also
-          known as the ISI Mark, on the product.
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS Certificate meaning refers to an official license issued by
+          BIS authorizing a manufacturer to produce and sell a product that
+          conforms to a specified Indian Standard (IS). This license allows the
+          manufacturer to affix the ISI Mark on certified products.
         </p>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The objectives of BIS certification include:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Protecting users from unsafe and substandard products</li>
+          <li>Ensuring uniform quality and interchangeability</li>
+          <li>Supporting regulatory enforcement</li>
+          <li>Building trust in Indian and imported goods</li>
+        </ul>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           ISI Mark Explanation
-        </h2>
-
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The ISI Mark is a symbol of trust and compliance. It indicates that:
+          The BIS certification mark, popularly known as the ISI Mark, is a
+          symbol of compliance and reliability. For adjustable wrenches, the ISI
+          Mark assures that:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>The product has passed testing in a BIS-recognized laboratory</li>
-          <li>The manufacturing unit has been audited by BIS</li>
-          <li>Ongoing surveillance and quality control are in place</li>
+          <li>The wrench meets IS 6149:1984 requirements</li>
+          <li>Jaw adjustment and gripping performance are verified</li>
+          <li>The product is legally approved for sale in India</li>
         </ul>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Exists
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS exists to:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect consumer and worker safety</li>
-          <li>Prevent circulation of substandard products</li>
-          <li>Ensure consistency in manufacturing quality</li>
-          <li>Support fair trade and regulatory enforcement</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For industrial products like steel wire ropes, BIS certification is
-          essential due to their safety-critical applications.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Steel Wire Ropes
+          Applicable BIS Standard for Single-ended Open-jaw Adjustable Wrenches
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for steel wire ropes is:
+          <strong>IS 6149:1984</strong> – Specification for Single-ended
+          Adjustable Spanners
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>IS 1804:2004</strong> – Steel Wire Ropes
+          The applicable Indian Standard for this product is IS 6149:1984, which
+          specifies requirements for single-ended open-jaw adjustable wrenches
+          (adjustable spanners).
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard specifies the technical requirements, construction
-          details, mechanical properties, performance parameters, testing
-          methods, and acceptance criteria for steel wire ropes intended for
-          general engineering and industrial use.
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Scope of IS 6149:1984
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          This standard covers:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Single-ended adjustable spanners with open jaws</li>
+          <li>Jaw opening ranges and adjustment mechanisms</li>
+          <li>Dimensional requirements and tolerances</li>
+          <li>Material composition and heat treatment</li>
+          <li>Mechanical strength and torque performance</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The standard aims to ensure:
+          IS 6149:1984 is designed to ensure that:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Adequate breaking load and tensile strength</li>
-          <li>Uniform wire construction and lay</li>
-          <li>Resistance to wear, fatigue, and deformation</li>
-          <li>Safe performance during service life</li>
+          <li>The adjustable jaw mechanism operates smoothly and securely</li>
+          <li>Jaw faces maintain proper alignment under load</li>
+          <li>
+            The wrench withstands specified torque without slipping or
+            deformation
+          </li>
+          <li>Users are protected from sudden tool failure</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance with IS 1804:2004 is mandatory for:
+          Compliance with IS 6149:1984 is mandatory for:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers of steel wire ropes</li>
-          <li>Importers supplying steel wire ropes in India</li>
-          <li>
-            Foreign manufacturers selling in India through Indian entities
-          </li>
+          <li>Indian manufacturers of adjustable wrenches</li>
+          <li>Importers and distributors</li>
+          <li>Foreign manufacturers supplying to India</li>
+          <li>Traders and brands selling under private labels</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Steel Wire Ropes
+          Why BIS Certification is Mandatory for Single-ended Open-jaw
+          Adjustable Wrenches
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Consumer & Worker Safety Risks
+          Consumer and Workplace Safety Risks
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Steel wire ropes are used in high-risk operations such as:
+          Non-compliant adjustable wrenches can result in:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Crane lifting</li>
-          <li>Elevator suspension</li>
-          <li>Mining hoists</li>
-          <li>Port and dock operations</li>
-        </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Failure of a rope can cause fatal accidents and large-scale damage.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Government Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and quality control regulations, steel wire
-          ropes covered by IS 1804:2004 cannot be legally sold without BIS
-          certification.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Legal Implications
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Non-compliance may lead to:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Seizure of goods</li>
-          <li>Heavy financial penalties</li>
-          <li>Prosecution under the BIS Act</li>
-          <li>Import restrictions and customs rejection</li>
+          <li>Jaw slippage during tightening or loosening</li>
+          <li>Rounded or damaged fasteners</li>
+          <li>Sudden tool deformation causing hand injuries</li>
+          <li>Reduced operational safety in industrial environments</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Market & Brand Benefits
+          Government and Regulatory Compliance of Indian BIS
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          As per applicable BIS notifications and quality control regulations,
+          adjustable hand tools covered under IS 6149:1984 must obtain BIS
+          certification before sale, distribution, or import into India.
+        </p>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Legal Implications
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS License for Steel Wire Ropes improves:
+          Selling non-certified adjustable wrenches can lead to:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Buyer confidence</li>
-          <li>Acceptance in government and PSU projects</li>
-          <li>Brand reputation and credibility</li>
+          <li>Seizure of products</li>
+          <li>Financial penalties</li>
+          <li>Suspension of business operations</li>
+          <li>Legal prosecution under the BIS Act</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Market and Brand Benefits
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          A BIS License for Single-ended Open-jaw Adjustable Wrenches helps
+          businesses:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Build trust with mechanics and industrial buyers</li>
+          <li>Qualify for government, PSU, and EPC tenders</li>
+          <li>Strengthen brand positioning against unorganized suppliers</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Steel Wire Ropes
+          Step-by-Step BIS Certification Process for Single-ended Open-jaw
+          Adjustable Wrenches
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The first step is confirming that the product falls under IS 1804:2004
-          and identifying:
+          The first step is to confirm:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Rope construction</li>
-          <li>Diameter range</li>
-          <li>Intended application</li>
+          <li>Product type: Single-ended open-jaw adjustable wrench</li>
+          <li>Applicable standard: IS 6149:1984</li>
+          <li>Jaw size range and variants to be covered</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Correct identification avoids delays and test failures.
-        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit a BIS application online through the
-          official BIS portal. The application includes:
+          Manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product details</li>
-          <li>Factory address and layout</li>
-          <li>Manufacturing process flow</li>
-          <li>Quality control arrangements</li>
+          <li>Register on the BIS portal</li>
+          <li>Select IS 6149:1984 in the BIS application</li>
+          <li>Upload required technical and legal documents</li>
+          <li>Pay applicable government fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Accuracy in the BIS application is critical for smooth processing.
+          This process is commonly referred to as BIS apply online or BIS
+          certificate registration.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
+          Fees & Cost Structure for BIS Certificate
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certificate cost includes:
+          The BIS certification cost typically includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fees</li>
-          <li>Sample testing charges</li>
-          <li>Factory inspection fees</li>
-          <li>Annual license fees</li>
+          <li>Application and processing fees</li>
+          <li>Product testing charges</li>
+          <li>Factory inspection charges</li>
+          <li>License and marking fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The cost of BIS certification depends on rope type, size range, and
-          testing complexity. Proper planning helps optimize the BIS
-          certification cost and BIS license cost.
+          The total cost of BIS certification depends on:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Number of wrench sizes</li>
+          <li>Testing complexity</li>
+          <li>Manufacturing location and readiness</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Product Sample Testing (as per IS 1804:2004)
+          Product Sample Testing (As per IS 6149:1984)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Samples are tested in BIS-recognized laboratories for compliance with
-          the standard before approval.
+          Samples are tested at BIS-recognized laboratories for:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Jaw opening accuracy</li>
+          <li>Torque resistance</li>
+          <li>Slippage resistance</li>
+          <li>Hardness and material strength</li>
+          <li>Dimensional conformity and finish</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials inspect the manufacturing unit to verify:
+          A BIS officer conducts an on-site audit to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Production capability</li>
-          <li>Raw material control</li>
-          <li>In-house testing facilities</li>
-          <li>Quality assurance systems</li>
+          <li>Manufacturing and machining processes</li>
+          <li>Heat treatment controls</li>
+          <li>Quality control system</li>
+          <li>In-house testing and inspection facilities</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Upon successful compliance, BIS grants the Bureau of Indian Standards
-          License, allowing the use of the ISI Mark on steel wire ropes.
+          After successful testing and inspection:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>BIS issues the Bureau of Indian Standards License</li>
+          <li>
+            The manufacturer is authorized to affix the ISI Mark on adjustable
+            wrenches
+          </li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          After certification, manufacturers must:
+          After certification:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain consistent quality</li>
-          <li>Comply with surveillance audits</li>
-          <li>Retest products when required</li>
+          <li>Periodic surveillance audits are conducted</li>
+          <li>Market samples may be drawn for testing</li>
+          <li>License renewal is mandatory</li>
+          <li>Continuous compliance with IS 6149:1984 is required</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of BIS License as per IS 1804:2004
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> This standard specifies the construction
-          particulars and other requirements of fibre main cores for steel wire
-          ropes using two types of fibre:
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-3 ml-6">
-          a) Natural, and
-        </p>
-        <p className="text-gray-600 text-base font-geist mb-4 ml-6">
-          b) Man-made.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> This standard is not applicable to ropes for mine
-          hoisting purposes.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>NOTE</strong> - Fibre cores may be adversely affected by high
-          ambient temperatures and as such when selecting fibre cores, the
-          limitation of specific fibres in this respect should be taken into
-          consideration.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -491,9 +469,9 @@ const MainContentLeft = () => {
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration certificate</li>
+          <li>Factory registration or MSME certificate</li>
           <li>Manufacturing process flow chart</li>
-          <li>List of machinery and testing equipment</li>
+          <li>List of machinery and in-house testing equipment</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -502,16 +480,16 @@ const MainContentLeft = () => {
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Company incorporation certificate</li>
           <li>GST registration</li>
-          <li>Authorized signatory letter</li>
+          <li>Trademark authorization (if applicable)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product specifications</li>
-          <li>Drawings and construction details</li>
-          <li>Raw material test certificates</li>
+          <li>Product drawings and specifications</li>
+          <li>Raw material details</li>
+          <li>Quality control and inspection plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -519,18 +497,20 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS application form</li>
-          <li>Test request letter</li>
-          <li>Marking and labeling details</li>
+          <li>Test request details</li>
+          <li>Declarations and undertakings</li>
         </ul>
+
         <p className="text-gray-600 text-base font-geist mb-4">
-          These collectively form the mandatory BIS CERTIFICATION DOCUMENTS.
+          These are collectively known as BIS CERTIFICATE DOCUMENTS or BIS
+          CERTIFICATION DOCUMENTS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 1804:2004
+          Testing Requirements as per IS 6149:1984
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
@@ -552,50 +532,18 @@ const MainContentLeft = () => {
             <TableBody>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4.1
+                  4
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  No. of strands
+                  Dimension
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4.2
+                  6
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Yarn Sizes
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  5.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Core lubrication – Water content and core lubricant content
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  5.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Lay Length
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Water soluble acids
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Salt
+                  Hardness
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
@@ -603,15 +551,40 @@ const MainContentLeft = () => {
                   7.1
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Length
+                  Manufacture, Workmanship and Finish (except play of moving
+                  components)
                 </TableCell>
               </TableRow>
               <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
                 <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2
+                  7.3
                 </TableCell>
                 <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Nominal diameter and nominal runnage of core/Core designation
+                  Protection against corrosion and rust
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  8.1
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Longitudinal Play of Adjustable Jaw
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  8.2
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Transverse Play of Adjustable Jaw
+                </TableCell>
+              </TableRow>
+              <TableRow className="hover:bg-white/50 transition-colors">
+                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
+                  8.3
+                </TableCell>
+                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
+                  Torque
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -619,7 +592,7 @@ const MainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          All tests must be conducted in BIS-recognized laboratories only.
+          All tests must be carried out only at BIS-recognized laboratories.
         </p>
 
         {/* Separator Line */}
@@ -630,32 +603,24 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Incorrect Standard Selection
+          Common Problems
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Conduct a pre-assessment before applying.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Jaw slippage during torque testing</li>
+          <li>Improper heat treatment</li>
+          <li>Excessive jaw play or backlash</li>
+          <li>Incomplete or incorrect documentation</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Test Failures
+          Solutions & Best Practices
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Align manufacturing controls with IS 1804:2004 requirements.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Incomplete Documentation
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Prepare BIS-specific documents carefully.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Audit Non-Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Maintain proper quality records and internal checks.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Conduct internal pre-testing before BIS submission</li>
+          <li>Maintain tight tolerances in jaw mechanism</li>
+          <li>Use calibrated inspection instruments</li>
+          <li>Engage experienced BIS consultants</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -668,7 +633,7 @@ const MainContentLeft = () => {
           Legal Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Full regulatory compliance</li>
+          <li>Compliance with Indian regulations</li>
           <li>Smooth customs clearance</li>
         </ul>
 
@@ -676,16 +641,16 @@ const MainContentLeft = () => {
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Eligibility for government tenders</li>
-          <li>Increased buyer acceptance</li>
+          <li>Eligibility for government and institutional tenders</li>
+          <li>Improved buyer acceptance</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Use of BIS Mark</li>
-          <li>Enhanced trust and credibility</li>
+          <li>Authorized use of BIS Mark</li>
+          <li>Enhanced trust and market credibility</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -693,7 +658,7 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Entry into regulated sectors</li>
-          <li>Long-term business sustainability</li>
+          <li>Long-term business growth</li>
         </ul>
 
         {/* Separator Line */}
@@ -704,93 +669,98 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          Non-compliance with BIS regulations may result in:
+          Failure to comply with BIS requirements may result in:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary penalties</li>
-          <li>Product seizure and recall</li>
-          <li>Import bans</li>
-          <li>Legal prosecution</li>
+          <li>Heavy monetary fines</li>
+          <li>Seizure of non-compliant products</li>
+          <li>Cancellation of trade licenses</li>
+          <li>Legal prosecution under the BIS Act</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Steel Wire Ropes?
+          Who Needs BIS Certification for Single-ended Open-jaw Adjustable
+          Wrenches?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
           <li>Importers</li>
-          <li>Foreign manufacturers</li>
-          <li>Traders and distributors</li>
-          <li>E-commerce sellers</li>
+          <li>Foreign manufacturers (with Authorized Indian Representative)</li>
+          <li>Traders and private-label sellers</li>
+          <li>E-commerce sellers listing adjustable wrenches</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Any entity placing steel wire ropes in the Indian market must ensure
-          BIS compliance.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Why Choose Us for BIS Certification Consulting?
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          We provide end-to-end BIS certification consulting services,
+          including:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Product applicability and compliance gap analysis</li>
+          <li>Documentation preparation and verification</li>
+          <li>Coordination with BIS-recognized laboratories</li>
+          <li>Factory inspection and audit support</li>
+          <li>Faster approvals with minimal queries</li>
+          <li>Post-certification compliance and renewal assistance</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Our expertise in hand tools and industrial hardware products ensures a
+          smooth, reliable, and fully compliant BIS certification journey.
+        </p>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Steel Wire Ropes under IS 1804:2004 is
-          a legal necessity and a critical safety requirement. A valid BIS
-          Certification / BIS License for Steel Wire Ropes ensures compliance
-          with Indian regulations, protects end users, and enhances market
-          credibility.
+          Obtaining a BIS Certificate for Single-ended Open-jaw Adjustable
+          Wrenches under IS 6149:1984 is a critical legal and quality
+          requirement for selling these tools in India. BIS Certification for
+          Single-ended Open-jaw Adjustable Wrenches ensures safety, durability,
+          and reliable performance, while the BIS License for Single-ended
+          Open-jaw Adjustable Wrenches strengthens brand credibility and
+          long-term market acceptance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For manufacturers and importers, BIS certification is not just about
-          approval—it is about long-term business sustainability, trust, and
-          access to regulated markets. With the right technical understanding
-          and expert support, the BIS certification process in India can be
-          completed smoothly and efficiently.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          If you are planning to manufacture or import steel wire ropes in
-          India, securing BIS certification is the smartest and safest step
-          forward.
+          For manufacturers, importers, and sellers, timely compliance not only
+          prevents penalties but also unlocks access to organized retail,
+          industrial buyers, and government projects. With expert guidance and
+          structured compliance support, the BIS certification process becomes
+          efficient, predictable, and fully aligned with Indian Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Steel Wire Ropes
+          FAQs – BIS Certification for Single-ended Open-jaw Adjustable Wrenches
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              1. What is the BIS Full Form?
+              Q1. Is BIS certification mandatory for adjustable open-jaw
+              wrenches?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              BIS stands for Bureau of Indian Standards.
+              Yes, compliance with IS 6149:1984 is mandatory in India.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              2. Is BIS certification mandatory for steel wire ropes?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS certification is mandatory under IS 1804:2004.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              3. What is the BIS Certificate full form?
+              Q2. What is the BIS certificate full form?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Bureau of Indian Standards Certificate.
@@ -799,43 +769,44 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              4. Can I apply for BIS certificate online?
+              Q3. How long does the BIS certification process take?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, you can BIS apply online through the official portal.
+              Generally 45–60 working days for Indian manufacturers and 90-120
+              days for foreign manufacturers.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              5. What is the BIS certification process India follows?
+              Q4. What is the BIS certification cost?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Application, testing, factory inspection, and license grant.
+              It depends on the number of sizes and testing scope.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              6. How long does BIS certification take?
+              Q5. Can importers apply for BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Usually 1–2 months, depending on readiness.
+              Yes, with proper authorization from the manufacturer.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              7. What is the BIS certification cost?
+              Q6. Is the ISI Mark compulsory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              It varies based on product scope and testing requirements.
+              Yes, ISI marking is mandatory after certification.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              8. Can foreign manufacturers apply for BIS license?
+              Q7. Can foreign manufacturers obtain BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Yes, through an Authorized Indian Representative.
@@ -844,70 +815,80 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              9. Is BIS registration the same as BIS license?
+              Q8. What tests are required under IS 6149:1984?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              No, steel wire ropes require a BIS license, not registration.
+              Torque, jaw slippage, hardness, and dimensional tests.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              10. What happens if testing fails?
+              Q9. Is factory inspection mandatory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Corrective actions and retesting are required.
+              Yes, BIS conducts an on-site audit.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              11. Is the BIS Mark mandatory on products?
+              Q10. Can multiple sizes be covered under one license?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, marking is compulsory after certification.
+              Yes, subject to testing and BIS approval.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              12. How long is the BIS license valid?
+              Q11. What happens if non-certified adjustable wrenches are sold?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Generally 1–2 years, renewable thereafter.
+              Penalties, seizure, and legal action may follow.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              13. Are surveillance audits mandatory?
+              Q12. Is BIS apply online mandatory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS conducts periodic surveillance audits.
+              Yes, all applications are submitted online.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              14. Can the license scope be expanded later?
+              Q13. Are renewals required for BIS licenses?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, through a scope extension procedure.
+              Yes, periodic renewal is mandatory.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              15. Can uncertified steel wire ropes be sold online?
+              Q14. Can consultants reduce approval delays?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              No, e-commerce sales also require BIS compliance.
+              Yes, professional consultants help avoid errors and rejections.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q15. Does BIS certification improve buyer confidence?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, it significantly improves trust and market acceptance.
             </p>
           </div>
         </div>
 
         <ManyUsersAlsoRead />
-        <FaqAuthorEng questionNumber={4} />
+
+        <FaqAuthorEng questionNumber={1} />
       </div>
     </div>
   );

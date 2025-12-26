@@ -119,6 +119,15 @@ const BISCertificationCombinationSideCuttingPliers = lazy(() =>
 const BISCertificationPipeWrenches = lazy(() =>
   import("@/blogs/BISCertificationPipeWrenches")
 );
+const BISCertificationRingWrenches = lazy(() =>
+  import("@/blogs/BISCertificationRingWrenches")
+);
+const BISCertificationOpenJawWrenches = lazy(() =>
+  import("@/blogs/BISCertificationOpenJawWrenches")
+);
+const BISCertificationSingleendedOpenjawAdjustableWrenches = lazy(() =>
+  import("@/blogs/BISCertificationSingleendedOpenjawAdjustableWrenches")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -594,6 +603,30 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationPipeWrenches />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/ring-wrenches-is-2029"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationRingWrenches />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/open-jaw-wrenches-is-2028"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationOpenJawWrenches />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/adjustable-wrenches-is-6149"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationSingleendedOpenjawAdjustableWrenches />
           </Suspense>
         }
       />

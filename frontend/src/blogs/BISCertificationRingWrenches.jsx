@@ -16,16 +16,8 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHeader,
-  TableRow,
-  TableHead,
-} from "@/components/ui/table";
 
-const BISCertificateForSteelWireRopes = () => {
+const BISCertificationRingWrenches = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -38,23 +30,22 @@ const BISCertificateForSteelWireRopes = () => {
   );
 };
 
-export default BISCertificateForSteelWireRopes;
+export default BISCertificationRingWrenches;
 
 const MetaTags = () => {
-  const title =
-    "BIS Certificate for Steel Wire Ropes | IS 1804:2004 BIS License";
-  const ogTitle = "BIS Certification for Steel Wire Ropes - IS 1804:2004 Guide";
-  const twitterTitle = "BIS License for Steel Wire Ropes | IS 1804:2004";
+  const title = "BIS Certificate for Ring Wrenches | IS 2029:1998 BIS License";
+  const ogTitle = "BIS Certification for Ring Wrenches - IS 2029:1998 Guide";
+  const twitterTitle = "BIS License for Ring Wrenches - | IS 2029:1998";
   const metaDescription =
-    "Get BIS Certificate for Steel Wire Ropes under IS 1804:2004. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Ring Wrenches under IS 2029:1998. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Steel Wire Ropes as per IS 1804:2004. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Ring Wrenches as per IS 2029:1998. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Steel Wire Ropes under IS 1804:2004. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Ring Wrenches under IS 2029:1998. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Steel Wire Ropes, BIS License for Steel Wire Ropes, IS 1804:2004, BIS Certification for Steel Wire Ropes";
+    "BIS Certificate for Ring Wrenches , BIS License for Ring Wrenches , IS 2029:1998 , BIS Certification for Ring Wrenches";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/steel-wire-ropes-IS-1804:2004";
+    "https://bis-certifications.com/blogs/isi-products/ring-wrenches-is-2029";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -109,7 +100,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Steel Wire Ropes – IS 1804:2004
+                    BIS Certificate for Ring Wrenches – IS 2029:1998
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -137,52 +128,45 @@ const MainContent = () => {
 
 const MainContentLeft = () => {
   return (
-    <div className="flex-1 overflow-y-auto pt-2 px-2 -mt-2 -mx-2">
+    <div className="flex-1 overflow-y-auto pt-2 px-2  -mt-2 -mx-2 ">
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Steel Wire Ropes – Complete Guide to IS
-          1804:2004
+          BIS Certification Ring Wrenches – Complete Guide to IS 2029:1998
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforSteelWireRopes.png"
-            title="BIS License for Steel Wire Ropes"
-            alt="BIS Certificate for Steel Wire Ropes - IS 1804:2004 BIS Certification"
+            src="/blogImages/BISLicenseforRingWrenches.png"
+            title="BIS License for Ring Wrenches"
+            alt="BIS Certificate for Ring Wrenches - IS 2029:1998 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Steel wire ropes are critical industrial components widely used across
-          construction, mining, ports, shipping, elevators, cranes, oil & gas
-          installations, power plants, infrastructure projects, and material
-          handling systems. These ropes are designed to bear heavy loads,
-          withstand extreme tension, and perform reliably under demanding
-          operational conditions. Any failure in a steel wire rope can result in
-          serious accidents, equipment damage, loss of life, and large financial
-          liabilities.
+          Ring Wrenches (also known as ring spanners) are indispensable hand
+          tools used across automotive workshops, mechanical maintenance, heavy
+          engineering, railways, power plants, construction sites, manufacturing
+          units, and industrial assembly lines. These tools are designed to
+          provide a firm, all-around grip on nuts and bolts, allowing higher
+          torque application with reduced risk of slippage compared to
+          open-ended spanners. Because ring wrenches are frequently used in
+          high-torque and precision fastening operations, inferior quality tools
+          can lead to rounded fasteners, tool breakage, hand injuries, and
+          operational delays.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To ensure safety, uniform quality, and performance reliability, the
-          Government of India mandates BIS Certification for Steel Wire Ropes
-          under the applicable Indian Standard IS 1804:2004. Manufacturers and
-          importers must obtain a valid BIS Certificate for Steel Wire Ropes
-          before manufacturing, selling, importing, or distributing these
-          products in the Indian market.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This comprehensive guide explains everything you need to know about
-          BIS Certification for Steel Wire Ropes, including the applicable
-          standard, certification process, testing requirements, documentation,
-          costs, and legal responsibilities. Whether you are a manufacturer,
-          importer, foreign supplier, trader, or e-commerce seller, this page
-          will help you understand how to get BIS certification in India for
-          steel wire ropes in a clear and compliant manner.
+          To ensure user safety, mechanical reliability, and consistent product
+          quality, the Government of India mandates compliance with Indian
+          Standards for hand tools. Obtaining a BIS Certificate for Ring
+          Wrenches under IS 2029:1998 is a mandatory requirement for
+          manufacturers and importers supplying ring wrenches in the Indian
+          market. A valid BIS Certification for Ring Wrenches confirms that the
+          product meets defined standards for material quality, dimensions,
+          mechanical strength, torque resistance, and workmanship.
         </p>
 
         {/* Separator Line */}
@@ -193,12 +177,11 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a product conformity assessment system operated
-          by the Bureau of Indian Standards (BIS), which is the National
-          Standards Body of India. BIS functions under the BIS Act, 2016, and
-          its core purpose is to ensure that products sold in India meet
-          established Indian Standards (IS) for safety, quality, and
-          performance.
+          BIS Certification is a conformity assessment system governed by the
+          Bureau of Indian Standards (BIS), the national standards body of
+          India. BIS operates under the BIS Act, 2016, with the objective of
+          ensuring that products sold in India meet defined Indian Standards
+          (IS) for safety, quality, and performance.
         </p>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
@@ -206,278 +189,286 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate meaning refers to official confirmation that a
-          product complies with the relevant Indian Standard. Once certified,
-          the manufacturer is authorized to use the BIS Certification Mark, also
-          known as the ISI Mark, on the product.
+          The BIS Certificate meaning refers to official authorization issued by
+          BIS allowing a manufacturer to produce and sell a product that
+          conforms to a specific Indian Standard (IS) and to affix the ISI Mark
+          on such products.
         </p>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          ISI Mark Explanation
-        </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          The ISI Mark is a symbol of trust and compliance. It indicates that:
+          The objectives of BIS certification include:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>The product has passed testing in a BIS-recognized laboratory</li>
-          <li>The manufacturing unit has been audited by BIS</li>
-          <li>Ongoing surveillance and quality control are in place</li>
+          <li>Protecting consumers and industrial users from unsafe tools</li>
+          <li>Ensuring uniform quality across manufacturers</li>
+          <li>Enabling regulatory enforcement</li>
+          <li>Promoting trust in Indian manufacturing</li>
         </ul>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Exists
+          ISI Mark Explained
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS exists to:
+          The BIS certification mark, popularly known as the ISI Mark, is a
+          symbol of compliance and reliability. For ring wrenches, the ISI Mark
+          indicates that:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect consumer and worker safety</li>
-          <li>Prevent circulation of substandard products</li>
-          <li>Ensure consistency in manufacturing quality</li>
-          <li>Support fair trade and regulatory enforcement</li>
+          <li>The tool complies with IS 2029:1998</li>
+          <li>Dimensional accuracy and torque strength are verified</li>
+          <li>The product is legally approved for sale in India</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          For industrial products like steel wire ropes, BIS certification is
-          essential due to their safety-critical applications.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Steel Wire Ropes
+          Applicable BIS Standard for Ring Wrenches
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for steel wire ropes is:
+          <strong>IS 2029:1998</strong> – Specification for Ring Spanners
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>IS 1804:2004</strong> – Steel Wire Ropes
+          The applicable Indian Standard for ring wrenches is IS 2029:1998,
+          which specifies requirements for ring spanners used for tightening and
+          loosening nuts and bolts.
         </p>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard specifies the technical requirements, construction
-          details, mechanical properties, performance parameters, testing
-          methods, and acceptance criteria for steel wire ropes intended for
-          general engineering and industrial use.
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Scope of IS 2029:1998
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          This standard covers:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Ring wrenches of different nominal sizes</li>
+          <li>Single-ended and double-ended ring spanners</li>
+          <li>Dimensional requirements and tolerances</li>
+          <li>Material quality and heat treatment</li>
+          <li>Mechanical and torque performance</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The standard aims to ensure:
+          IS 2029:1998 is designed to ensure that:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Adequate breaking load and tensile strength</li>
-          <li>Uniform wire construction and lay</li>
-          <li>Resistance to wear, fatigue, and deformation</li>
-          <li>Safe performance during service life</li>
+          <li>Ring wrenches can withstand specified torque loads</li>
+          <li>The ring profile fits fasteners accurately without slippage</li>
+          <li>Tools do not crack, bend, or fail during normal use</li>
+          <li>Users are protected from sudden tool failure</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance with IS 1804:2004 is mandatory for:
+          Compliance with IS 2029:1998 is mandatory for:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers of steel wire ropes</li>
-          <li>Importers supplying steel wire ropes in India</li>
-          <li>
-            Foreign manufacturers selling in India through Indian entities
-          </li>
+          <li>Indian manufacturers of ring wrenches</li>
+          <li>Importers and distributors</li>
+          <li>Foreign manufacturers supplying to India</li>
+          <li>Brands selling ring wrenches under private labels</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Steel Wire Ropes
+          Why BIS Certification is Mandatory for Ring Wrenches
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Consumer & Worker Safety Risks
+          Consumer and Workplace Safety Risks
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Steel wire ropes are used in high-risk operations such as:
+          Non-standard ring wrenches can lead to:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Crane lifting</li>
-          <li>Elevator suspension</li>
-          <li>Mining hoists</li>
-          <li>Port and dock operations</li>
+          <li>Rounding or slipping of nuts and bolts</li>
+          <li>Sudden tool breakage under torque</li>
+          <li>Hand, wrist, and finger injuries</li>
+          <li>Damage to machinery and components</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Failure of a rope can cause fatal accidents and large-scale damage.
-        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Government Compliance
+          Government and Regulatory Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and quality control regulations, steel wire
-          ropes covered by IS 1804:2004 cannot be legally sold without BIS
-          certification.
+          As per BIS notifications and applicable quality control regulations,
+          ring wrenches covered under IS 2029:1998 must obtain BIS certification
+          before being sold or imported into India.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Legal Implications
+          Legal Implications
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Non-compliance may lead to:
+          Selling non-certified ring wrenches may result in:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Seizure of goods</li>
-          <li>Heavy financial penalties</li>
-          <li>Prosecution under the BIS Act</li>
-          <li>Import restrictions and customs rejection</li>
+          <li>Financial penalties</li>
+          <li>Suspension of business activities</li>
+          <li>Legal action under the BIS Act</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Market & Brand Benefits
+          Market and Brand Benefits
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          A BIS License for Steel Wire Ropes improves:
+          A BIS License for Ring Wrenches helps businesses:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Buyer confidence</li>
-          <li>Acceptance in government and PSU projects</li>
-          <li>Brand reputation and credibility</li>
+          <li>Build trust with mechanics and industrial buyers</li>
+          <li>Qualify for government, PSU, and EPC tenders</li>
+          <li>Compete with established domestic and international brands</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Steel Wire Ropes
+          Step-by-Step BIS Certification Process for Ring Wrenches
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The first step is confirming that the product falls under IS 1804:2004
-          and identifying:
+          The first step is to confirm:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Rope construction</li>
-          <li>Diameter range</li>
-          <li>Intended application</li>
+          <li>Product type: Ring Wrenches</li>
+          <li>Applicable standard: IS 2029:1998</li>
+          <li>Sizes and variants to be covered</li>
         </ul>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Correct identification avoids delays and test failures.
-        </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit a BIS application online through the
-          official BIS portal. The application includes:
+          Manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product details</li>
-          <li>Factory address and layout</li>
-          <li>Manufacturing process flow</li>
-          <li>Quality control arrangements</li>
+          <li>Register on the BIS portal</li>
+          <li>Select IS 2029:1998 during application</li>
+          <li>Complete the BIS application form</li>
+          <li>Upload required documents</li>
+          <li>Pay applicable fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Accuracy in the BIS application is critical for smooth processing.
+          This step is commonly known as BIS apply online or BIS certificate
+          registration.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
+          Fees & Cost Structure for BIS Certificate
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certificate cost includes:
+          The BIS certification cost includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fees</li>
-          <li>Sample testing charges</li>
-          <li>Factory inspection fees</li>
-          <li>Annual license fees</li>
+          <li>Application and processing fees</li>
+          <li>Product testing charges</li>
+          <li>Factory inspection charges</li>
+          <li>License and marking fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The cost of BIS certification depends on rope type, size range, and
-          testing complexity. Proper planning helps optimize the BIS
-          certification cost and BIS license cost.
+          The overall cost of BIS certification depends on:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Number of wrench sizes</li>
+          <li>Testing complexity</li>
+          <li>Manufacturing location</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Product Sample Testing (as per IS 1804:2004)
+          Product Sample Testing (As per IS 2029:1998)
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Samples are tested in BIS-recognized laboratories for compliance with
-          the standard before approval.
+          Samples are tested at BIS-recognized laboratories for:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Torque resistance</li>
+          <li>Dimensional accuracy</li>
+          <li>Hardness and material strength</li>
+          <li>Surface finish and workmanship</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials inspect the manufacturing unit to verify:
+          A BIS officer conducts an on-site audit to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Production capability</li>
-          <li>Raw material control</li>
+          <li>Manufacturing and heat treatment processes</li>
+          <li>Quality control system</li>
           <li>In-house testing facilities</li>
-          <li>Quality assurance systems</li>
+          <li>Traceability of raw materials</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Upon successful compliance, BIS grants the Bureau of Indian Standards
-          License, allowing the use of the ISI Mark on steel wire ropes.
+          After successful testing and inspection:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>BIS issues the Bureau of Indian Standards License</li>
+          <li>
+            The manufacturer is authorized to use the ISI Mark on ring wrenches
+          </li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          After certification, manufacturers must:
+          Post-approval obligations include:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain consistent quality</li>
-          <li>Comply with surveillance audits</li>
-          <li>Retest products when required</li>
+          <li>Surveillance audits</li>
+          <li>Market sample testing</li>
+          <li>Timely license renewal</li>
+          <li>Ongoing compliance with IS 2029:1998</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of BIS License as per IS 1804:2004
+          Scope of BIS License as per IS 2029:1998
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.1</strong> This standard specifies the construction
-          particulars and other requirements of fibre main cores for steel wire
-          ropes using two types of fibre:
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS license specifies:
         </p>
-        <p className="text-gray-600 text-base font-geist mb-3 ml-6">
-          a) Natural, and
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Approved ring wrench sizes and designs</li>
+          <li>Manufacturing location</li>
+          <li>Applicable Indian Standard</li>
+        </ul>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The license is valid for:
         </p>
-        <p className="text-gray-600 text-base font-geist mb-4 ml-6">
-          b) Man-made.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Domestic retail and wholesale supply</li>
+          <li>Industrial and commercial usage</li>
+          <li>Automotive and engineering applications</li>
+        </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>1.2</strong> This standard is not applicable to ropes for mine
-          hoisting purposes.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>NOTE</strong> - Fibre cores may be adversely affected by high
-          ambient temperatures and as such when selecting fibre cores, the
-          limitation of specific fibres in this respect should be taken into
-          consideration.
+          Any change in material, design, or process requires prior BIS
+          approval.
         </p>
 
         {/* Separator Line */}
@@ -491,7 +482,7 @@ const MainContentLeft = () => {
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration certificate</li>
+          <li>Factory registration or MSME certificate</li>
           <li>Manufacturing process flow chart</li>
           <li>List of machinery and testing equipment</li>
         </ul>
@@ -502,16 +493,16 @@ const MainContentLeft = () => {
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Company incorporation certificate</li>
           <li>GST registration</li>
-          <li>Authorized signatory letter</li>
+          <li>Trademark authorization (if applicable)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product specifications</li>
-          <li>Drawings and construction details</li>
-          <li>Raw material test certificates</li>
+          <li>Product drawings and specifications</li>
+          <li>Raw material details</li>
+          <li>Quality control and inspection plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -519,278 +510,193 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS application form</li>
-          <li>Test request letter</li>
-          <li>Marking and labeling details</li>
+          <li>Test request details</li>
+          <li>Declarations and undertakings</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          These collectively form the mandatory BIS CERTIFICATION DOCUMENTS.
+          These are collectively referred to as BIS CERTIFICATE DOCUMENTS or BIS
+          CERTIFICATION DOCUMENTS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 1804:2004
-        </h2>
-
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Testing Requirements as per IS 2029:1998
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
           Mandatory tests include:
         </p>
-
-        <div className="mt-6 md:mt-8 overflow-x-auto rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075]">
-          <Table className="min-w-full border-collapse">
-            <TableHeader>
-              <TableRow className="bg-gradient-to-br from-blue-100/50 to-indigo-100/50">
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 border-r border-gray-300/50 text-[#1e1e1e]">
-                  Clause
-                </TableHead>
-                <TableHead className="font-semibold font-geist text-left text-base md:text-lg px-4 md:px-6 py-3 md:py-4 text-[#1e1e1e]">
-                  Requirement
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  No. of strands
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  4.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Yarn Sizes
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  5.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Core lubrication – Water content and core lubricant content
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  5.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Lay Length
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  6.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Water soluble acids
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  6.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Salt
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.1
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Length
-                </TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-white/50 transition-colors border-b border-gray-200/30 bg-white/30">
-                <TableCell className="font-medium font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 border-r border-gray-200/50 text-[#1e1e1e]">
-                  7.2
-                </TableCell>
-                <TableCell className="font-geist text-sm md:text-base px-4 md:px-6 py-3 md:py-4 text-gray-600">
-                  Nominal diameter and nominal runnage of core/Core designation
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </div>
-
-        <p className="text-gray-600 text-base pt-4 font-geist mb-4">
-          All tests must be conducted in BIS-recognized laboratories only.
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Torque test</li>
+          <li>Hardness test</li>
+          <li>Dimensional verification</li>
+          <li>Material and heat treatment checks</li>
+          <li>Visual inspection and finish assessment</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          All tests must be carried out only at BIS-recognized laboratories.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Common Challenges & How to Avoid Them
-        </h2>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Incorrect Standard Selection
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Conduct a pre-assessment before applying.
-        </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Test Failures
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Align manufacturing controls with IS 1804:2004 requirements.
-        </p>
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
+          Common Problems
+        </h4>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Failure in torque tests</li>
+          <li>Improper heat treatment</li>
+          <li>Dimensional non-conformities</li>
+          <li>Incomplete documentation</li>
+        </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Incomplete Documentation
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Prepare BIS-specific documents carefully.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Audit Non-Compliance
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Solution: Maintain proper quality records and internal checks.
-        </p>
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
+          Solutions & Best Practices
+        </h4>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Conduct internal pre-testing</li>
+          <li>Maintain strict process controls</li>
+          <li>Use calibrated measuring instruments</li>
+          <li>Engage experienced BIS consultants</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Benefits of BIS Certification for Manufacturers & Importers
-        </h2>
+        </h3>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
           Legal Benefits
-        </h3>
+        </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Full regulatory compliance</li>
-          <li>Smooth customs clearance</li>
+          <li>Full compliance with Indian regulations</li>
+          <li>Protection from penalties and enforcement actions</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
           Commercial Benefits
-        </h3>
+        </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Eligibility for government tenders</li>
-          <li>Increased buyer acceptance</li>
+          <li>Higher acceptance by distributors and workshops</li>
+          <li>Eligibility for institutional and government procurement</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
           Branding Benefits
-        </h3>
+        </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Use of BIS Mark</li>
-          <li>Enhanced trust and credibility</li>
+          <li>ISI Mark enhances credibility and trust</li>
+          <li>Differentiation from unorganized tool suppliers</li>
         </ul>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+        <h4 className="text-base font-geist font-medium text-[#1e1e1e] mb-2">
           Market Expansion
-        </h3>
+        </h4>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Entry into regulated sectors</li>
-          <li>Long-term business sustainability</li>
+          <li>Easier entry into organized retail and industrial markets</li>
+          <li>Improved export credibility</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Penalties for Non-Compliance
-        </h2>
-
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Non-compliance with BIS regulations may result in:
+          Non-compliance can result in:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Heavy monetary penalties</li>
-          <li>Product seizure and recall</li>
-          <li>Import bans</li>
-          <li>Legal prosecution</li>
+          <li>Heavy monetary fines</li>
+          <li>Seizure of products</li>
+          <li>Cancellation of trade licenses</li>
+          <li>Legal prosecution under the BIS Act</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Steel Wire Ropes?
-        </h2>
-
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Who Needs BIS Certification for Ring Wrenches?
+        </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
           <li>Importers</li>
-          <li>Foreign manufacturers</li>
-          <li>Traders and distributors</li>
-          <li>E-commerce sellers</li>
+          <li>Foreign manufacturers (with Authorized Indian Representative)</li>
+          <li>Traders and distributors selling under own brand</li>
+          <li>E-commerce sellers listing ring wrenches</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Any entity placing steel wire ropes in the Indian market must ensure
-          BIS compliance.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Why Choose Us for BIS Certification Consulting?
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          We provide end-to-end BIS certification consulting services,
+          including:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Applicability assessment and gap analysis</li>
+          <li>Documentation preparation and verification</li>
+          <li>Coordination with BIS-recognized laboratories</li>
+          <li>Factory audit and inspection support</li>
+          <li>Faster approvals with minimal queries</li>
+          <li>Post-certification compliance and renewals</li>
+        </ul>
+        <p className="text-gray-600 text-base font-geist mb-4">
+          Our expertise in hand tools and industrial hardware products ensures a
+          smooth, reliable, and fully compliant certification journey.
+        </p>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
           Conclusion
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Steel Wire Ropes under IS 1804:2004 is
-          a legal necessity and a critical safety requirement. A valid BIS
-          Certification / BIS License for Steel Wire Ropes ensures compliance
-          with Indian regulations, protects end users, and enhances market
-          credibility.
+          Obtaining a BIS Certificate for Ring Wrenches under IS 2029:1998 is a
+          crucial legal and quality requirement for selling these tools in
+          India. BIS Certification for Ring Wrenches ensures safety, strength,
+          and consistent performance, while the BIS License for Ring Wrenches
+          enhances brand trust and market acceptance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          For manufacturers and importers, BIS certification is not just about
-          approval—it is about long-term business sustainability, trust, and
-          access to regulated markets. With the right technical understanding
-          and expert support, the BIS certification process in India can be
-          completed smoothly and efficiently.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          If you are planning to manufacture or import steel wire ropes in
-          India, securing BIS certification is the smartest and safest step
-          forward.
+          For manufacturers, importers, and sellers, timely compliance not only
+          prevents penalties but also opens access to organized retail,
+          industrial buyers, and government projects. With professional guidance
+          and structured compliance support, the BIS certification process
+          becomes smooth, efficient, and fully aligned with Indian Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Steel Wire Ropes
+          FAQs – BIS Certification for Ring Wrenches
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              1. What is the BIS Full Form?
+              Q1. Is BIS certification mandatory for ring wrenches?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              BIS stands for Bureau of Indian Standards.
+              Yes, compliance with IS 2029:1998 is mandatory in India.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              2. Is BIS certification mandatory for steel wire ropes?
-            </h3>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS certification is mandatory under IS 1804:2004.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              3. What is the BIS Certificate full form?
+              Q2. What is the BIS certificate full form?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Bureau of Indian Standards Certificate.
@@ -799,43 +705,43 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              4. Can I apply for BIS certificate online?
+              Q3. How long does the BIS certification process take?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, you can BIS apply online through the official portal.
+              Usually 30–60 working days.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              5. What is the BIS certification process India follows?
+              Q4. What is the BIS certificate cost?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Application, testing, factory inspection, and license grant.
+              It depends on product variants and testing scope.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              6. How long does BIS certification take?
+              Q5. Can importers apply for BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Usually 1–2 months, depending on readiness.
+              Yes, with proper authorization from the manufacturer.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              7. What is the BIS certification cost?
+              Q6. Is the ISI Mark compulsory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              It varies based on product scope and testing requirements.
+              Yes, ISI marking is mandatory after certification.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              8. Can foreign manufacturers apply for BIS license?
+              Q7. Can foreign manufacturers obtain BIS certification?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
               Yes, through an Authorized Indian Representative.
@@ -844,70 +750,81 @@ const MainContentLeft = () => {
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              9. Is BIS registration the same as BIS license?
+              Q8. What tests are required under IS 2029:1998?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              No, steel wire ropes require a BIS license, not registration.
+              Torque, hardness, dimensional, and workmanship tests.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              10. What happens if testing fails?
+              Q9. Is factory inspection mandatory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Corrective actions and retesting are required.
+              Yes, BIS conducts an on-site audit.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              11. Is the BIS Mark mandatory on products?
+              Q10. Can multiple sizes be covered under one license?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, marking is compulsory after certification.
+              Yes, subject to testing and approval.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              12. How long is the BIS license valid?
+              Q11. What happens if non-certified ring wrenches are sold?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Generally 1–2 years, renewable thereafter.
+              Penalties, seizure, and legal action may follow.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              13. Are surveillance audits mandatory?
+              Q12. Is BIS apply online mandatory?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, BIS conducts periodic surveillance audits.
+              Yes, applications are submitted online only.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              14. Can the license scope be expanded later?
+              Q13. Are renewals required for BIS licenses?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              Yes, through a scope extension procedure.
+              Yes, periodic renewal is mandatory.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-              15. Can uncertified steel wire ropes be sold online?
+              Q14. Can consultants reduce approval delays?
             </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              No, e-commerce sales also require BIS compliance.
+              Yes, professional consultants help avoid errors and rejections.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q15. Does BIS certification improve market trust?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, it significantly improves buyer confidence and brand
+              credibility.
             </p>
           </div>
         </div>
 
         <ManyUsersAlsoRead />
-        <FaqAuthorEng questionNumber={4} />
+
+        <FaqAuthorEng questionNumber={5} />
       </div>
     </div>
   );
@@ -915,11 +832,11 @@ const MainContentLeft = () => {
 
 const Services = () => {
   return (
-    <div className="pt-6 md:pt-8 pb-12 md:pb-16 overflow-x-hidden">
+    <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <BoxReveal boxColor={"#B6B4DF"} duration={0.5}>
-            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist text-center text-[#1E1E1E]">
+            <h2 className="text-[30px] md:text-[48px] font-bold font-geist md:font-geist  text-center text-[#1E1E1E] ">
               Our Services
             </h2>
           </BoxReveal>
