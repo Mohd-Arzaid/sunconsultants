@@ -193,100 +193,140 @@ const AuditGallery = () => {
       id: 2,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter02.webp",
       alt: "BIS Certificate Grant Letter successfully obtained for Primary aluminium ingots for remelting for general engineering purpose under IS 2590:1987 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certificate grant letter for primary aluminium ingots under IS 2590:1987",
     },
     {
       id: 3,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter03.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS license grant letter for cabinet hinges under IS 18297:2023",
     },
     {
       id: 4,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter04.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Cabinet hinges under IS 18297:2023 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for cabinet hinges under IS 18297:2023",
     },
     {
       id: 5,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter05.jpg",
       alt: "BIS License Grant Letter successfully obtained for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for foreign manufacturer with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certificate grant letter for toys under IS 9873 Part 1:2019",
     },
     {
       id: 6,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter06.jpg",
+      description:
+        "BIS certification grant letter for toys under IS 9873 Part 1:2019",
     },
     {
       id: 7,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter07.webp",
       alt: "BIS Certificate Grant Letter successfully obtained for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for foreign manufacturer with expert assistance from Sun Certifications India.",
+      description:
+        "BIS license grant letter for toys under IS 9873 Part 1:2019",
     },
     {
       id: 8,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter08.webp",
       alt: "BIS Standard Mark Grant Letter successfully obtained for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for foreign manufacturer with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certificate grant letter for toys under IS 9873 Part 1:2019",
     },
     {
       id: 9,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter09.webp",
       alt: "BIS Grant Letter successfully obtained for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for foreign manufacturer with expert assistance from Sun Certifications India.",
+      description:
+        "BIS license grant letter for toys under IS 9873 Part 1:2019",
     },
     {
       id: 10,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter10.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Cast aluminium and its alloys - Ingots and castings for general engineering purposes under IS 617:1994 for foreign manufacturer with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certificate grant letter for cast aluminium & its alloys under IS 617:1994",
     },
     {
       id: 11,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter11.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Wrought aluminium and aluminium alloy bars, rods and sections under IS 733:1983 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for Wrought Aluminium and Aluminium Alloy Bars, Rods under IS 733:1983",
     },
     {
       id: 12,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter12.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Wrought aluminium and aluminium alloys- Extruded round tube and hollow sections under IS 1285:2002 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for Wrought Aluminium and Aluminium Alloys Extruded Round Tube and Hollow Sections under IS 1285:2023",
     },
     {
       id: 13,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter13.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Diesel Engines - NOx Reduction Agent AUS 32 under IS 17042 (Part 1):2018 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for Diesel Engine NOx Reducing Agent under IS 17042 Part 1:2020",
     },
     {
       id: 14,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter14.webp",
       alt: "BIS Certification Grant Letter successfully obtained for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS license grant letter for slippers and sandals under IS 6721:2023",
     },
     {
       id: 15,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter15.webp",
       alt: "BIS License Grant Letter successfully obtained for Sandal and Slippers Specification under IS 6721:2023 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certificate grant letter for slippers and sandals under IS 6721:2023",
     },
     {
       id: 16,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter16.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for electric toys under IS 15644:2006",
     },
     {
       id: 17,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter17.webp",
       alt: "BIS Licence Grant Letter successfully obtained for Safety of Toys Part I Safety Aspects Related to Mechanical and Physical Properties under IS 9873 (Part 1):2018 for foreign manufacturer with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for toys under IS 9873 Part 1:2023",
     },
     {
       id: 18,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter18.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Phosphorous Trichloride, pure and Analytical Reagent under IS 4581:1978 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for phosphorus trichloride under IS 4581:2021",
     },
     {
       id: 19,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter19.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Phosphorous Pentachloride, Technical under IS 11744:1986 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certificate grant letter for phosphorus pentachloride under IS 4581:2021",
     },
     {
       id: 20,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter20.webp",
       alt: "BIS Certification Grant Letter successfully obtained for Hexagon Head Bolts, Screws and Nuts of Product Grades A and B - Hexagon Head Screws under IS 1364 Part 2:2023 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for hexagon head bolts, screws and nuts under IS 1364 Part 2:2023",
     },
     {
       id: 21,
       image: "/Grant-Letter-Img/BISCertificationGrantLetter21.webp",
       alt: "BIS License Grant Letter successfully obtained for PVC sandal under IS 6721:1972 with expert assistance from Sun Certifications India.",
+      description:
+        "BIS certification grant letter for sandal slippers under IS 6721:2023",
     },
   ];
 

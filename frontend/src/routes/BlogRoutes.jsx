@@ -6,7 +6,6 @@ const BahrainBlog = lazy(() => import("@/blogs/BahrainBlog/BahrainBlog"));
 const LangBahrainBlog = lazy(() =>
   import("@/blogs/BahrainBlog/LangBahrainBlog")
 );
-const BunkBedsBlog = lazy(() => import("@/blogs/BunkBedsBlog"));
 const DubaiBlog = lazy(() => import("@/blogs/DubaiBlog/DubaiBlog"));
 const LangDubaiBlog = lazy(() => import("@/blogs/DubaiBlog/LangDubaiBlog"));
 const FranceBlog = lazy(() => import("@/blogs/FranceBlog/FranceBlog"));
@@ -40,7 +39,6 @@ const QatarBlog = lazy(() => import("@/blogs/QatarBlog/QatarBlog"));
 const RefinedZincBlog = lazy(() => import("@/blogs/RefinedZincBlog"));
 const LangSpainBlog = lazy(() => import("@/blogs/SpainBlog/LangSpainBlog"));
 const SpainBlog = lazy(() => import("@/blogs/SpainBlog/SpainBlog"));
-const StorageUnitsBlog = lazy(() => import("@/blogs/StorageUnitsBlog"));
 const LangThailandBlog = lazy(() =>
   import("@/blogs/ThailandBlog/LangThailandBlog")
 );
@@ -84,9 +82,6 @@ const BISCertificateForFlashlight = lazy(() =>
 );
 const BISCertificationSolarFlatPlate = lazy(() =>
   import("@/blogs/BISCertificationSolarFlatPlate")
-);
-const BISCertificateforGeneralPurposeChairsandStools = lazy(() =>
-  import("@/blogs/BISCertificateforGeneralPurposeChairsandStools")
 );
 const BISCertificateElectricFenceEnergizers = lazy(() =>
   import("@/blogs/BISCertificationElectricFenceEnergizers")
@@ -503,14 +498,6 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationSolarFlatPlate />
-          </Suspense>
-        }
-      />
-      <Route
-        path="/blogs/ISI-products/chairs-and-stools-IS-17632:2022"
-        element={
-          <Suspense fallback={<BlogsSkeleton />}>
-            <BISCertificateforGeneralPurposeChairsandStools />
           </Suspense>
         }
       />

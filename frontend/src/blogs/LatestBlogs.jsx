@@ -196,7 +196,7 @@ const blogs = [
     title: "BIS Certificate for Welded Pipes & Tubes – IS 17876:2022",
     description:
       "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for stainless steel welded pipes and tubes.",
-      slug: "blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024",
+    slug: "blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024",
   },
   {
     id: 22,
@@ -213,6 +213,111 @@ const blogs = [
     description:
       "Get BIS Certificate for Flashlight under IS 2083:2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for flashlights and torches.",
     slug: "blogs/ISI-products/flashlight-IS-2083:2024",
+  },
+  {
+    id: 24,
+    color: "#8B5CF6", // Purple
+    title: "BIS Certificate for Electric Fence Energizers – IS 302-2-76:1999",
+    description:
+      "Get BIS Certificate for Electric Fence Energizers under IS 302-2-76:1999. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for electric fence energizers.",
+    slug: "blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999",
+  },
+  {
+    id: 25,
+    color: "#10B981", // Green
+    title: "BIS Certificate for Solar Water Heating Systems – IS 16542:2016",
+    description:
+      "Get BIS Certificate for Solar Water Heating Systems under IS 16542:2016. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for solar water heating systems.",
+    slug: "blogs/ISI-products/solar-water-heating-systems-IS-16542:2016",
+  },
+  {
+    id: 26,
+    color: "#3B82F6", // Blue
+    title: "BIS Certificate for Solar Flat Plate Collector – IS 12933:2003",
+    description:
+      "Get BIS Certificate for Solar Flat Plate Collector under IS 12933:2003. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for solar flat plate collectors.",
+    slug: "blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003",
+  },
+  {
+    id: 27,
+    color: "#EC4899", // Pink
+    title: "BIS Certificate for Fibre Ropes of Polyester – IS 17609:2021",
+    description:
+      "Get BIS Certificate for Fibre Ropes of Polyester under IS 17609:2021. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyester fibre ropes.",
+    slug: "blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021",
+  },
+  {
+    id: 28,
+    color: "#EF4444", // Red
+    title: "BIS Certificate for Fibre Ropes – Polyethylene – IS 17636:2022",
+    description:
+      "Get BIS Certificate for Fibre Ropes (Polyethylene) under IS 17636:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyethylene fibre ropes.",
+    slug: "blogs/ISI-products/fibre-ropes-polyethylene-17636:2022",
+  },
+  {
+    id: 29,
+    color: "#F59E0B", // Amber/Orange
+    title: "BIS Certificate for Fibre Ropes – Polyamide – IS 4572:2022",
+    description:
+      "Get BIS Certificate for Fibre Ropes (Polyamide) under IS 4572:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyamide fibre ropes.",
+    slug: "blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022",
+  },
+  {
+    id: 30,
+    color: "#1E40AF", // Blue
+    title: "BIS Certificate for Steel Wire Ropes – IS 1804:2004",
+    description:
+      "Get BIS Certificate for Steel Wire Ropes under IS 1804:2004. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for steel wire ropes.",
+    slug: "blogs/ISI-products/steel-wire-ropes-IS-1804:2004",
+  },
+  {
+    id: 31,
+    color: "#8B5CF6", // Purple
+    title: "BIS Certificate for Mixed Polyolefin Fibre Ropes – IS 14929:2022",
+    description:
+      "Get BIS Certificate for Mixed Polyolefin Fibre Ropes under IS 14929:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for mixed polyolefin fibre ropes.",
+    slug: "blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022",
+  },
+  {
+    id: 32,
+    color: "#10B981", // Green
+    title:
+      "BIS Certificate for Composite Synthetic Fibre Ropes – IS 14928:2001",
+    description:
+      "Get BIS Certificate for Composite Synthetic Fibre Ropes under IS 14928:2001. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for composite synthetic fibre ropes.",
+    slug: "blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001",
+  },
+  {
+    id: 33,
+    color: "#3B82F6", // Blue
+    title: "BIS Certificate for Manila Ropes – IS 1084",
+    description:
+      "Get BIS Certificate for Manila Ropes under IS 1084. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for manila ropes.",
+    slug: "blogs/isi-products/manila-ropes-is-1084",
+  },
+  {
+    id: 34,
+    color: "#EC4899", // Pink
+    title: "BIS Certificate for Flat Woven Webbing Slings – IS 15041",
+    description:
+      "Get BIS Certificate for Flat Woven Webbing Slings under IS 15041. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for flat woven webbing slings.",
+    slug: "blogs/isi-products/flat-woven-webbing-slings-is-15041",
+  },
+  {
+    id: 35,
+    color: "#EF4444", // Red
+    title: "BIS Certificate for Combination Side Cutting Pliers – IS 3650",
+    description:
+      "Get BIS Certificate for Combination Side Cutting Pliers under IS 3650. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for combination side cutting pliers.",
+    slug: "blogs/isi-products/combination-side-cutting-pliers-is-3650",
+  },
+  {
+    id: 36,
+    color: "#F59E0B", // Amber/Orange
+    title: "BIS Certificate for Pipe Wrenches – Heavy Duty – IS 4003",
+    description:
+      "Get BIS Certificate for Pipe Wrenches (Heavy Duty) under IS 4003. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for heavy duty pipe wrenches.",
+    slug: "blogs/isi-products/pipe-wrenches-is-4003",
   },
 ];
 
