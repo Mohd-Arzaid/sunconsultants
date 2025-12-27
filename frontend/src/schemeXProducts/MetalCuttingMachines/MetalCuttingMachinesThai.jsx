@@ -69,6 +69,73 @@ import {
         <meta name="twitter:title" content={ogTitle} />
         <meta name="twitter:description" content={ogDescription} />
         <link rel="canonical" href={canonicalUrl} />
+
+        {/* Hreflang Tags for Multi-language Support */}
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+        />
+        <link
+          rel="alternate"
+          hrefLang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
+        />
+        <link
+          rel="alternate"
+          hrefLang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
+        />
+        <link
+          rel="alternate"
+          hrefLang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai"
+        />
+        <link
+          rel="alternate"
+          hrefLang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
+        />
+        <link
+          rel="alternate"
+          hrefLang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam"
+        />
+        <link
+          rel="alternate"
+          hrefLang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-utensili-per-macchine-da-taglio-metalli"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"
+        />
+        <link
+          rel="alternate"
+          hrefLang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-jin-shu-qie-xiao-ji-chuang-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hrefLang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak"
+        />
+        <link
+          rel="alternate"
+          hrefLang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-metaalsnijmachines"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin"
+        />
       </Helmet>
     );
   };

@@ -241,14 +241,22 @@ export const NAVIGATION_DATA = {
       link: "/seminars-and-exhibitions",
       icon: GalleryHorizontal,
     },
+  ],
+  about: [
     {
-      id: 3,
+      id: 1,
+      name: "About Us",
+      link: "/about",
+      icon: Building,
+    },
+    {
+      id: 2,
       name: "Grant Letter",
       link: "/BIS-certification-grant-letter",
       icon: Award,
     },
     {
-      id: 4,
+      id: 3,
       name: "Awards",
       link: "/awards",
       icon: Award,

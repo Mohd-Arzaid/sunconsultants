@@ -172,7 +172,7 @@ const AuditHero = () => {
 
       <p className="text-base md:text-lg text-center font-geist text-gray-600 max-w-xl md:max-w-xl mx-auto leading-relaxed">
         A collection of BIS grant letters and license documents issued across
-        various industries and standards
+        various industries and standards.
       </p>
     </div>
   );

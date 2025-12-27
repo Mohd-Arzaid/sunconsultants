@@ -70,6 +70,73 @@ const MetalCuttingMachinesKorean = () => {
           rel="canonical"
           href="https://bis-certifications.com/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
         />
+
+        {/* Hreflang Tags for Multi-language Support */}
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+        />
+        <link
+          rel="alternate"
+          hrefLang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
+        />
+        <link
+          rel="alternate"
+          hrefLang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
+        />
+        <link
+          rel="alternate"
+          hrefLang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai"
+        />
+        <link
+          rel="alternate"
+          hrefLang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
+        />
+        <link
+          rel="alternate"
+          hrefLang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam"
+        />
+        <link
+          rel="alternate"
+          hrefLang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-utensili-per-macchine-da-taglio-metalli"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"
+        />
+        <link
+          rel="alternate"
+          hrefLang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-jin-shu-qie-xiao-ji-chuang-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hrefLang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak"
+        />
+        <link
+          rel="alternate"
+          hrefLang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-metaalsnijmachines"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin"
+        />
       </Helmet>
 
       <MetalCuttingMachinesKoreanBreadcrumb />
@@ -109,9 +176,7 @@ const MetalCuttingMachinesKoreanBreadcrumb = () => {
               </BreadcrumbSeparator>
 
               <BreadcrumbItem>
-                <BreadcrumbPage>
-                  금속 절단 기계용 BIS 인증
-                </BreadcrumbPage>
+                <BreadcrumbPage>금속 절단 기계용 BIS 인증</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -157,11 +222,12 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
 
         {/* Introduction Paragraph 1 */}
         <p className="text-gray-600 text-base font-geist mb-4">
-          금속 절단은 인도의 엔진, 자동차, 항공우주 및 제조 산업을 뒷받침하는 핵심
-          제조 기술입니다. 이러한 기계는 CNC 선반과 밀링 머신부터 레이저 절단기에
-          이르기까지 다양하며, 전 산업에서 생산량을 높이고 비용을 낮추는 데 도움이
-          됩니다. 인도에서 고품질 기계에 대한 수요가 증가함에 따라 정부는 품질과
-          안전을 보장하기 위해 금속 절단 기계용 BIS 인증을 의무화했습니다.
+          금속 절단은 인도의 엔진, 자동차, 항공우주 및 제조 산업을 뒷받침하는
+          핵심 제조 기술입니다. 이러한 기계는 CNC 선반과 밀링 머신부터 레이저
+          절단기에 이르기까지 다양하며, 전 산업에서 생산량을 높이고 비용을
+          낮추는 데 도움이 됩니다. 인도에서 고품질 기계에 대한 수요가 증가함에
+          따라 정부는 품질과 안전을 보장하기 위해 금속 절단 기계용 BIS 인증을
+          의무화했습니다.
         </p>
 
         {/* Introduction Paragraph 2 */}
@@ -175,8 +241,8 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
         {/* Introduction Paragraph 3 */}
         <p className="text-gray-600 text-base font-geist mb-6">
           이 게시물은 금속 절단 기계용 Scheme X 인증, 금속 절단 기계용 2024 OTR
-          요구사항 및 금속 절단 기계용 BIS 마크를 부착하기 위해 금속 절단 기계용 BIS
-          라이센스를 취득하는 절차에 대한 정보를 제공합니다.
+          요구사항 및 금속 절단 기계용 BIS 마크를 부착하기 위해 금속 절단 기계용
+          BIS 라이센스를 취득하는 절차에 대한 정보를 제공합니다.
         </p>
 
         {/* Separator Line */}
@@ -207,15 +273,14 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
         {/* Problems with Non-Certified Equipment */}
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
           <li>가공 정확도가 낮고 수율이 낮음</li>
-          <li>
-            기계 고장 및 생산 가동 시간 대비 가동 중단 시간 손실
-          </li>
+          <li>기계 고장 및 생산 가동 시간 대비 가동 중단 시간 손실</li>
           <li>작업자에 대한 잠재적 위험</li>
           <li>공공 입찰 및 규제된 사업에서 제외</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          BIS 마크는 금속 절단 기계가 국에서 설정한 품질 기준을 준수함을 보장합니다.
+          BIS 마크는 금속 절단 기계가 국에서 설정한 품질 기준을 준수함을
+          보장합니다.
         </p>
 
         {/* Separator Line */}
@@ -227,9 +292,9 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          금속 절단 기계용 BIS Scheme X 인증은 BIS 적합성 평가 규정 2018에
-          따라 이루어지며, 제품이 산업 장비에 필요한 품질 표준을 충족하도록
-          보장하기 위해 제정되었습니다.
+          금속 절단 기계용 BIS Scheme X 인증은 BIS 적합성 평가 규정 2018에 따라
+          이루어지며, 제품이 산업 장비에 필요한 품질 표준을 충족하도록 보장하기
+          위해 제정되었습니다.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-3">
@@ -238,9 +303,7 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-2 mb-6">
           <li>인도 및 외국 제조업체에게 필수</li>
-          <li>
-            인도 표준에 따라 통지된 다양한 금속 절단 기계에 적용 가능
-          </li>
+          <li>인도 표준에 따라 통지된 다양한 금속 절단 기계에 적용 가능</li>
           <li>실험실 테스트, 공장 검사 및 정기 감사 포함</li>
           <li>금속 절단 기계용 BIS 마크 표시 권한 부여</li>
         </ul>
@@ -254,14 +317,14 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          중공업부의 금속 절단 기계용 종합 기술 규정(OTR)에 대한 2024년 명령에 따라
-          인증이 필수가 되었습니다.
+          중공업부의 금속 절단 기계용 종합 기술 규정(OTR)에 대한 2024년 명령에
+          따라 인증이 필수가 되었습니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
-          마감일: 2026년 9월 1일부터 금속 절단 기계의 모든 제조업체 및 수입업체에게
-          BIS 라이센스가 필수가 됩니다. 이 날짜부터 인증되지 않은 기계는 인도에서
-          판매, 수입 또는 설치할 수 없습니다.
+          마감일: 2026년 9월 1일부터 금속 절단 기계의 모든 제조업체 및
+          수입업체에게 BIS 라이센스가 필수가 됩니다. 이 날짜부터 인증되지 않은
+          기계는 인도에서 판매, 수입 또는 설치할 수 없습니다.
         </p>
 
         {/* Separator Line */}
@@ -277,18 +340,14 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
             제품 신뢰성: 기계는 정확성, 내구성 및 일관된 성능에 대해 인증됩니다.
           </li>
           <li>
-            시장 경쟁력: 금속 절단 기계용 BIS 라이센스는 여러 산업 및 정부 주문을
-            받기 위해 필수입니다.
+            시장 경쟁력: 금속 절단 기계용 BIS 라이센스는 여러 산업 및 정부
+            주문을 받기 위해 필수입니다.
           </li>
           <li>
             고객 신뢰: 금속 절단 기계용 BIS 마크는 구매자에게 신뢰를 줍니다.
           </li>
-          <li>
-            법적 준수: 금속 절단 기계용 OTR 및 BIS 준수
-          </li>
-          <li>
-            글로벌 이점: 외국 제조업체가 인도 시장에 쉽게 접근할 수 있음
-          </li>
+          <li>법적 준수: 금속 절단 기계용 OTR 및 BIS 준수</li>
+          <li>글로벌 이점: 외국 제조업체가 인도 시장에 쉽게 접근할 수 있음</li>
         </ul>
 
         {/* Separator Line */}
@@ -300,8 +359,8 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Scheme X 인증서는 금속 절단 기계의 다음 유형을 포함하지만 이에 국한되지
-          않습니다:
+          Scheme X 인증서는 금속 절단 기계의 다음 유형을 포함하지만 이에
+          국한되지 않습니다:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-4">
@@ -319,8 +378,8 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
         <p className="text-gray-600 text-base font-geist mb-6">
           이러한 모든 유형의 금속 절단 기계는 IS 17277 (Part 1): 2019 / ISO
           16092-1: 2017 (공작 기계 안전 프레스 Part 1 일반 안전 요구사항)과 같은
-          관련 인도 표준(IS 코드)을 준수해야 합니다. 모든 기계 모델은 안전성, 에너지
-          효율성 및 정확성에 대한 자체 IS 코드를 충족해야 합니다.
+          관련 인도 표준(IS 코드)을 준수해야 합니다. 모든 기계 모델은 안전성,
+          에너지 효율성 및 정확성에 대한 자체 IS 코드를 충족해야 합니다.
         </p>
 
         {/* Separator Line */}
@@ -344,15 +403,16 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
             실시합니다.
           </li>
           <li>
-            문서 제출: 기술 매뉴얼, 테스트 보고서 및 품질 보증 문서를 제공합니다.
+            문서 제출: 기술 매뉴얼, 테스트 보고서 및 품질 보증 문서를
+            제공합니다.
           </li>
           <li>
-            금속 절단 기계용 BIS 라이센스 부여: 제조업체는 이제 위 표준에 따라 제품
-            인증 하에 BIS 마크를 부착할 수 있습니다.
+            금속 절단 기계용 BIS 라이센스 부여: 제조업체는 이제 위 표준에 따라
+            제품 인증 하에 BIS 마크를 부착할 수 있습니다.
           </li>
           <li>
-            지속적인 준수: BIS와의 지속적인 준수를 보장하기 위해 정기적인 감시 및
-            감사가 실시됩니다.
+            지속적인 준수: BIS와의 지속적인 준수를 보장하기 위해 정기적인 감시
+            및 감사가 실시됩니다.
           </li>
         </ul>
 
@@ -381,14 +441,15 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          금속 절단 기계용 OTR(2024)의 금속 절단 기계용 BIS Scheme X 인증은 인도의
-          산업 정확성, 안전성 및 신뢰성에서 중요한 역할을 합니다.
+          금속 절단 기계용 OTR(2024)의 금속 절단 기계용 BIS Scheme X 인증은
+          인도의 산업 정확성, 안전성 및 신뢰성에서 중요한 역할을 합니다.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
           제조업체 및 수입업체에게 금속 절단 기계용 BIS 라이센스를 보유하고 금속
-          절단 기계에 BIS 마크를 부착하는 것은 단순한 준수 조치가 아니라 제품 우수성,
-          소비자 신뢰 및 시장 우위의 형태로 복리 수익을 제공하는 전략적 투자입니다.
+          절단 기계에 BIS 마크를 부착하는 것은 단순한 준수 조치가 아니라 제품
+          우수성, 소비자 신뢰 및 시장 우위의 형태로 복리 수익을 제공하는 전략적
+          투자입니다.
         </p>
 
         <ServiceAuthorKorean />
@@ -396,4 +457,3 @@ const MetalCuttingMachinesKoreanMainContentLeft = () => {
     </div>
   );
 };
-

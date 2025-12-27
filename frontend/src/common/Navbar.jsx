@@ -30,6 +30,7 @@ const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [updatesOpen, setUpdatesOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const mobileMenuRef = useRef(null);
   const faqIntervalRef = useRef(null);
 
@@ -114,6 +115,7 @@ const Navbar = () => {
     setServicesOpen(false);
     setUpdatesOpen(false);
     setGalleryOpen(false);
+    setAboutOpen(false);
   }, []);
 
   // Close mobile menu function
@@ -246,6 +248,8 @@ const Navbar = () => {
     updatesMobile: NAVIGATION_DATA.updates,
     gallery: createNavContent(NAVIGATION_DATA.gallery),
     galleryMobile: NAVIGATION_DATA.gallery,
+    about: createNavContent(NAVIGATION_DATA.about),
+    aboutMobile: NAVIGATION_DATA.about,
     faqs: createFaqNavContent(NAVIGATION_DATA.faqs),
     faqsMobile: NAVIGATION_DATA.faqs,
   };
@@ -292,11 +296,12 @@ const Navbar = () => {
 
               {/* About */}
               <NavigationMenuItem>
-                <Link to="/about">
-                  <Button variant="link" className={STYLES.button}>
-                    About
-                  </Button>
-                </Link>
+                <NavigationMenuTrigger className={STYLES.button}>
+                  About
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="p-4 w-[250px]">{navContent.about}</div>
+                </NavigationMenuContent>
               </NavigationMenuItem>
 
               {/* Services */}
@@ -388,24 +393,19 @@ const Navbar = () => {
               </Button>
             </Link>
 
-            {/* About */}
-            <Link
-              to="/about"
-              className="block w-full"
-              onClick={closeMobileMenu}
-            >
-              <Button variant="ghost" className={STYLES.mobileButton}>
-                About
-              </Button>
-            </Link>
-
-            {/* Services, Updates, Gallery */}
+            {/* Services, About, Updates, Gallery */}
             {[
               {
                 title: "Services",
                 items: navContent.categoriesMobile,
                 isOpen: servicesOpen,
                 setOpen: setServicesOpen,
+              },
+              {
+                title: "About",
+                items: navContent.aboutMobile,
+                isOpen: aboutOpen,
+                setOpen: setAboutOpen,
               },
               {
                 title: "Updates",

@@ -69,6 +69,73 @@ const MetalCuttingMachinesMetaTags = () => {
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Hreflang Tags for Multi-language Support */}
+      <link
+        rel="alternate"
+        hrefLang="en"
+        href="https://bis-certifications.com/bis-scheme-x-certification-for-metal-cutting-machine-tools"
+      />
+      <link
+        rel="alternate"
+        hrefLang="fr"
+        href="https://bis-certifications.com/certification-bis-schema-x-pour-outils-de-machines-de-coupe-metallique"
+      />
+      <link
+        rel="alternate"
+        hrefLang="de"
+        href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-metallschneidemaschinen"
+      />
+      <link
+        rel="alternate"
+        hrefLang="vi"
+        href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-cong-cu-cat-kim-loai"
+      />
+      <link
+        rel="alternate"
+        hrefLang="es"
+        href="https://bis-certifications.com/certificacion-bis-scheme-x-para-herramientas-de-corte-de-metal"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ko"
+        href="https://bis-certifications.com/bis-seukim-x-injeung-geumsog-jeoldan-gongjag-gigye"
+      />
+      <link
+        rel="alternate"
+        hrefLang="id"
+        href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-perkakas-mesin-pemotong-logam"
+      />
+      <link
+        rel="alternate"
+        hrefLang="it"
+        href="https://bis-certifications.com/certificazione-bis-schema-x-per-utensili-per-macchine-da-taglio-metalli"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ja"
+        href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-kinzoku-setsusaku-kousaku-kikai"
+      />
+      <link
+        rel="alternate"
+        hrefLang="zh"
+        href="https://bis-certifications.com/bis-fang-an-x-jin-shu-qie-xiao-ji-chuang-ren-zheng"
+      />
+      <link
+        rel="alternate"
+        hrefLang="th"
+        href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-tat-lohak"
+      />
+      <link
+        rel="alternate"
+        hrefLang="nl"
+        href="https://bis-certifications.com/bis-schema-x-certificering-voor-metaalsnijmachines"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ar"
+        href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-adawat-alat-qata-al-maadin"
+      />
     </Helmet>
   );
 };
@@ -154,7 +221,7 @@ const MetalCuttingMachinesMainContentLeft = () => {
           manifatturiere indiane. Queste macchine vanno dai torni CNC e
           fresatrici ai tagliatori laser e aiutano anche a mantenere alta la
           produzione e bassi i costi nelle industrie di tutto il mondo. Con
-          l'aumento della domanda di macchine di alta qualità in India, il
+          l&apos;aumento della domanda di macchine di alta qualità in India, il
           governo ha reso la Certificazione BIS per Macchine Utensili da Taglio
           Metalli obbligatoria per garantire qualità e sicurezza.
         </p>
@@ -225,8 +292,8 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* What is BIS Scheme X Certification Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Cos'è la Certificazione BIS Schema X per Macchine Utensili da Taglio
-          Metalli?
+          Cos&apos;è la Certificazione BIS Schema X per Macchine Utensili da
+          Taglio Metalli?
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -253,8 +320,8 @@ const MetalCuttingMachinesMainContentLeft = () => {
             routine
           </li>
           <li>
-            Autorizza l'apposizione del Marchio BIS per macchine utensili da
-            taglio metalli.
+            Autorizza l&apos;apposizione del Marchio BIS per macchine utensili
+            da taglio metalli.
           </li>
         </ul>
 
@@ -267,8 +334,8 @@ const MetalCuttingMachinesMainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          L'ordine del Dipartimento dell'Industria Pesante riguardante il
-          Regolamento Tecnico Omnibus (OTR) per Macchine Utensili da Taglio
+          L&apos;ordine del Dipartimento dell&apos;Industria Pesante riguardante
+          il Regolamento Tecnico Omnibus (OTR) per Macchine Utensili da Taglio
           Metalli nel 2024 ha reso la certificazione obbligatoria.
         </p>
 
@@ -303,8 +370,8 @@ const MetalCuttingMachinesMainContentLeft = () => {
             Metalli coltiva la fiducia negli acquirenti.
           </li>
           <li>
-            Conformità Legale: Conforme all'OTR per Macchine Utensili da Taglio
-            Metalli e BIS.
+            Conformità Legale: Conforme all&apos;OTR per Macchine Utensili da
+            Taglio Metalli e BIS.
           </li>
           <li>
             Vantaggio Globale: Accesso più facile per i produttori stranieri al
@@ -317,8 +384,8 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         {/* Types of Metal Cutting Machines Section */}
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Tipi di Macchine Utensili da Taglio Metalli Inclusi nell'Approvazione
-          Schema X
+          Tipi di Macchine Utensili da Taglio Metalli Inclusi
+          nell&apos;Approvazione Schema X
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
@@ -389,8 +456,8 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           La non conformità alla Certificazione BIS per Macchine Utensili da
-          Taglio Metalli sotto l'OTR per Macchine Utensili da Taglio Metalli può
-          comportare:
+          Taglio Metalli sotto l&apos;OTR per Macchine Utensili da Taglio
+          Metalli può comportare:
         </p>
 
         <ul className="list-disc list-inside text-base font-geist text-gray-600 space-y-1 mb-6">
@@ -398,7 +465,8 @@ const MetalCuttingMachinesMainContentLeft = () => {
           <li>Elevate sanzioni pecuniarie e sequestro dei prodotti</li>
           <li>Esclusione dai contratti governativi</li>
           <li>
-            Danni a lungo termine alla reputazione del marchio e dell'azienda
+            Danni a lungo termine alla reputazione del marchio e
+            dell&apos;azienda
           </li>
         </ul>
 
@@ -412,16 +480,16 @@ const MetalCuttingMachinesMainContentLeft = () => {
 
         <p className="text-gray-600 text-base font-geist mb-4">
           La Certificazione BIS Schema X per Macchine Utensili da Taglio Metalli
-          nell'OTR per Macchine Utensili da Taglio Metalli (2024) ha un ruolo
-          importante nella precisione, sicurezza e affidabilità dell'industria
-          indiana.
+          nell&apos;OTR per Macchine Utensili da Taglio Metalli (2024) ha un
+          ruolo importante nella precisione, sicurezza e affidabilità
+          dell&apos;industria indiana.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-6">
           Per i produttori e gli importatori, avere la Licenza BIS per Macchine
           Utensili da Taglio Metalli e apporre il marchio BIS sulle Macchine
-          Utensili da Taglio Metalli non è solo un'azione di conformità, è un
-          investimento strategico che offre ritorni molteplici in termini di
+          Utensili da Taglio Metalli non è solo un&apos;azione di conformità, è
+          un investimento strategico che offre ritorni molteplici in termini di
           eccellenza del prodotto, fiducia dei consumatori e superiorità sul
           mercato.
         </p>

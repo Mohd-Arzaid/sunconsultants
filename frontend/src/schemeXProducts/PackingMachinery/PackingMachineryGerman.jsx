@@ -80,6 +80,73 @@ const PackingMachineryGerman = () => {
           rel="canonical"
           href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-verpackungsmaschinen"
         />
+
+        {/* Hreflang Tags for Multi-language Support */}
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://bis-certifications.com/bis-scheme-x-certification-for-packing-machinery"
+        />
+        <link
+          rel="alternate"
+          hrefLang="fr"
+          href="https://bis-certifications.com/certification-bis-schema-x-pour-machines-de-conditionnement"
+        />
+        <link
+          rel="alternate"
+          hrefLang="de"
+          href="https://bis-certifications.com/bis-schema-x-zertifizierung-fuer-verpackungsmaschinen"
+        />
+        <link
+          rel="alternate"
+          hrefLang="vi"
+          href="https://bis-certifications.com/chung-nhan-bis-scheme-x-cho-may-moc-dong-goi"
+        />
+        <link
+          rel="alternate"
+          hrefLang="es"
+          href="https://bis-certifications.com/certificacion-bis-scheme-x-para-maquinaria-de-empaque"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ko"
+          href="https://bis-certifications.com/bis-seukim-x-injeung-pojang-gigye"
+        />
+        <link
+          rel="alternate"
+          hrefLang="id"
+          href="https://bis-certifications.com/sertifikasi-bis-skema-x-untuk-mesin-pengemasan"
+        />
+        <link
+          rel="alternate"
+          hrefLang="it"
+          href="https://bis-certifications.com/certificazione-bis-schema-x-per-macchinari-per-imballaggio"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ja"
+          href="https://bis-certifications.com/bis-sukiimu-x-ninshoo-pakkingu-kikai"
+        />
+        <link
+          rel="alternate"
+          hrefLang="zh"
+          href="https://bis-certifications.com/bis-fang-an-x-bao-zhuang-ji-xie-ren-zheng"
+        />
+        <link
+          rel="alternate"
+          hrefLang="th"
+          href="https://bis-certifications.com/kan-rap-rong-bis-phaen-x-samrab-khrueang-pack"
+        />
+        <link
+          rel="alternate"
+          hrefLang="nl"
+          href="https://bis-certifications.com/bis-schema-x-certificering-voor-verpakkingsmachines"
+        />
+        <link
+          rel="alternate"
+          hrefLang="ar"
+          href="https://bis-certifications.com/shahadat-bis-mukhatat-x-lil-maadat-al-taabia-wa-al-taghlif"
+        />
       </Helmet>
 
       <PackingMachineryGermanBreadcrumb />
