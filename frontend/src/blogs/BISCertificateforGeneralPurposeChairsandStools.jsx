@@ -55,7 +55,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Chairs & Stools , BIS License for Chairs & Stools , IS 17632:2022 , BIS Certification for Chairs & Stools";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/chairs-and-stools-IS-17632:2022";
+    "https://bis-certifications.com/blogs/isi-products/chairs-and-stools-is-17632";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

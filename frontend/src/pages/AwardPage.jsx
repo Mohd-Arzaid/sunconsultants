@@ -74,7 +74,7 @@ const MetaTags = () => {
     "Awards & Recognition: Sun Certifications India has been honored for excellence in BIS certification services. Explore our recognition certificates and industry awards.";
   const metaKeywords =
     "BIS certification awards, Sun Certifications awards, BIS certification recognition, Footwear India Expo, Agra Footwear Conclave, BIS certification excellence, certification service awards, BIS compliance recognition, Indian Standards awards, BIS certificate recognition";
-  const websiteUrl = "https://bis-certifications.com/awards";
+  const websiteUrl = "https://bis-certifications.com/awards-and-recognition";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -113,7 +113,7 @@ const MetaTags = () => {
               "@type": "ListItem",
               position: 2,
               name: "Awards & Recognition",
-              item: "https://bis-certifications.com/awards",
+              item: "https://bis-certifications.com/awards-and-recognition",
             },
           ],
         })}

@@ -54,7 +54,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Flashlight, BIS License for Flashlight, IS 2083:2024, BIS Certification for Flashlight";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/flashlight-IS-2083:2024";
+    "https://bis-certifications.com/blogs/isi-products/flashlight-is-2083";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

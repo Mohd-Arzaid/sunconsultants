@@ -56,7 +56,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Electric Fence Energizers , BIS License for Electric Fence Energizers , IS 302-2-76:1999 , BIS Certification for Electric Fence Energizers";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999";
+    "https://bis-certifications.com/blogs/isi-products/electric-fence-energizers-is-302-2-76";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

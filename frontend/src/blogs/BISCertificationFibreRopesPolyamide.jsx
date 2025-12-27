@@ -55,7 +55,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Fibre Ropes Polyamide, BIS License for Fibre Ropes Polyamide, IS 4572:2022, BIS Certification for Fibre Ropes Polyamide";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022";
+    "https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyamide-is-4572";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

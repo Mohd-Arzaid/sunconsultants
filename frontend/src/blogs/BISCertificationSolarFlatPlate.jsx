@@ -57,7 +57,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Solar Flat Plate Collector , BIS License for Solar Flat Plate Collector , IS 12933:2003 , BIS Certification for Solar Flat Plate Collector";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003";
+    "https://bis-certifications.com/blogs/isi-products/solar-flat-plate-collector-is-12933";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

@@ -48,7 +48,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Fibre Ropes of Polyester , BIS License for Fibre Ropes of Polyester , IS 17609:2021 , BIS Certification for Fibre Ropes of Polyester";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021";
+    "https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyster-is-17609";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

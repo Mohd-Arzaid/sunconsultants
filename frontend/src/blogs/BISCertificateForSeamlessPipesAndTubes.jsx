@@ -55,7 +55,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Seamless Pipes & Tubes, BIS License for Seamless Pipes & Tubes, IS 17875:2022, BIS Certification for Seamless Pipes & Tubes";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022";
+    "https://bis-certifications.com/blogs/isi-products/seamless-pipes-&-tubes-is-17875";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

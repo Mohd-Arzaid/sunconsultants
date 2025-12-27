@@ -57,7 +57,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Solar Water Heating Systems, BIS License for Solar Water Heating Systems, IS 16542:2016, BIS Certification for Solar Water Heating Systems";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016";
+    "https://bis-certifications.com/blogs/isi-products/solar-water-heating-systems-is-16542";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

@@ -154,7 +154,7 @@ function App() {
           }
         />
         <Route
-          path="/awards"
+          path="/awards-and-recognition"
           element={
             <Suspense fallback={<InternationalAuditsSkeleton />}>
               <AwardPage />

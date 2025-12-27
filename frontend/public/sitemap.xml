@@ -37,6 +37,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+     <loc>https://bis-certifications.com/awards-and-recognition</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bis-certifications.com/webinar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -3213,21 +3218,21 @@
   </url>
   <!-- BIS Certificate for Bunk Beds - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/bunk-beds-IS-17636:2022</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/bunk-beds-is-17636</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Beds - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/beds-IS-17635:2022</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/beds-is-17635</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Work Chairs - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/work-chairs-IS-17631:2022</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/work-chairs-is-17631</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -3241,7 +3246,7 @@
   </url>
   <!-- BIS Certificate for Storage Unit - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/storage-unit-IS-17634:2022</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/storage-unit-is-17634</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -3269,63 +3274,63 @@
   </url>
   <!-- BIS Certificate for Flashlight - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/flashlight-IS-2083:2024</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/flashlight-is-2083</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Electric Fence Energizers - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/electric-fence-energizers-is-302-2-76</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Solar Water Heating Systems - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/solar-water-heating-systems-is-16542</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Solar Flat Plate Collector - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/solar-flat-plate-collector-is-12933</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for General Purpose Chairs and Stools - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/chairs-and-stools-IS-17632:2022</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/chairs-and-stools-is-17632</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Fibre Ropes of Polyester - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyster-is-17609</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Fibre Ropes - Polyethylene - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyethylene-17636</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Fibre Ropes - Polyamide - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/fibre-ropes-polyamide-is-4572</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
   <!-- BIS Certificate for Steel Wire Ropes - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/steel-wire-ropes-IS-1804:2004</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/steel-wire-ropes-is-1804</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
@@ -3339,7 +3344,7 @@
   </url>
   <!-- BIS Certificate for Composite Synthetic Fibre Ropes - English -->
   <url>
-    <loc>https://bis-certifications.com/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001</loc>
+    <loc>https://bis-certifications.com/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

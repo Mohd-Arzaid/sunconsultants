@@ -54,7 +54,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Steel Wire Ropes, BIS License for Steel Wire Ropes, IS 1804:2004, BIS Certification for Steel Wire Ropes";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/steel-wire-ropes-IS-1804:2004";
+    "https://bis-certifications.com/blogs/isi-products/steel-wire-ropes-is-1804";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

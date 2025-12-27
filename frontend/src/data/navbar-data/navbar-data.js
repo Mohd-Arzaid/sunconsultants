@@ -258,7 +258,7 @@ export const NAVIGATION_DATA = {
     {
       id: 3,
       name: "Awards",
-      link: "/awards",
+      link: "/awards-and-recognition",
       icon: Award,
     },
   ],

@@ -60,7 +60,7 @@ const blogs = [
     title: "BIS Certificate for Bunk Beds – IS 17636:2022",
     description:
       "Get BIS Certificate for bunk beds under IS 17636:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "blogs/ISI-products/bunk-beds-IS-17636:2022",
+    slug: "blogs/isi-products/bunk-beds-is-17636",
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ const blogs = [
     title: "BIS Certificate for Storage Unit – IS 17634:2022",
     description:
       "Get BIS Certificate for Storage Unit under IS 17634:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for cabinets, wardrobes, and storage furniture.",
-    slug: "blogs/ISI-products/storage-unit-IS-17634:2022",
+    slug: "blogs/isi-products/storage-unit-is-17634",
   },
   {
     id: 5,
@@ -164,7 +164,7 @@ const blogs = [
     title: "BIS Certificate for Work Chairs – IS 17631:2022",
     description:
       "Get BIS Certificate for Work Chairs under IS 17631:2022. Complete compliance guide covering process, documents, testing requirements, fees, timeline, and benefits for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "blogs/ISI-products/work-chairs-IS-17631:2022",
+    slug: "blogs/isi-products/work-chairs-is-17631",
   },
   {
     id: 18,
@@ -172,7 +172,7 @@ const blogs = [
     title: "BIS Certificate for Chair & Stools – IS 17632:2022",
     description:
       "Get BIS Certificate for Chair & Stool under IS 17632:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for general purpose chairs and stools.",
-    slug: "blogs/ISI-products/chairs-and-stools-IS-17632:2022",
+    slug: "blogs/isi-products/chairs-and-stools-is-17632",
   },
   {
     id: 19,
@@ -180,7 +180,7 @@ const blogs = [
     title: "BIS Certificate for Tables & Desks – IS 17633:2022",
     description:
       "Get BIS Certificate for Tables & Desks under IS 17633:2022. Complete guide covering process, documents, testing requirements, cost, timeline, and compliance for BIS Certification in India. Mandatory for all manufacturers and importers.",
-    slug: "blogs/ISI-products/tables-&-desks-IS-17633:2022",
+    slug: "blogs/isi-products/tables-&-desks-is-17633",
   },
   {
     id: 20,
@@ -188,7 +188,7 @@ const blogs = [
     title: "BIS Certificate for Beds – IS 17635:2022",
     description:
       "Get BIS Certificate for beds under IS 17635:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for manufacturers and importers.",
-    slug: "blogs/ISI-products/beds-IS-17635:2022",
+    slug: "blogs/isi-products/beds-is-17635",
   },
   {
     id: 21,
@@ -196,7 +196,7 @@ const blogs = [
     title: "BIS Certificate for Welded Pipes & Tubes – IS 17876:2022",
     description:
       "Get BIS Certificate for Welded Pipes & Tubes under IS 17876:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for stainless steel welded pipes and tubes.",
-    slug: "blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024",
+    slug: "blogs/isi-products/welded-pipes-&-tubes-is-17876",
   },
   {
     id: 22,
@@ -204,7 +204,7 @@ const blogs = [
     title: "BIS Certificate for Seamless Pipes & Tubes – IS 17875:2022",
     description:
       "Get BIS Certificate for Seamless Pipes & Tubes under IS 17875:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for seamless steel pipes and tubes.",
-    slug: "blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022",
+    slug: "blogs/isi-products/seamless-pipes-&-tubes-is-17875",
   },
   {
     id: 23,
@@ -212,7 +212,7 @@ const blogs = [
     title: "BIS Certificate for Flashlight – IS 2083:2024",
     description:
       "Get BIS Certificate for Flashlight under IS 2083:2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for flashlights and torches.",
-    slug: "blogs/ISI-products/flashlight-IS-2083:2024",
+    slug: "blogs/isi-products/flashlight-is-2083",
   },
   {
     id: 24,
@@ -220,7 +220,7 @@ const blogs = [
     title: "BIS Certificate for Electric Fence Energizers – IS 302-2-76:1999",
     description:
       "Get BIS Certificate for Electric Fence Energizers under IS 302-2-76:1999. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for electric fence energizers.",
-    slug: "blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999",
+    slug: "blogs/isi-products/electric-fence-energizers-is-302-2-76",
   },
   {
     id: 25,
@@ -228,7 +228,7 @@ const blogs = [
     title: "BIS Certificate for Solar Water Heating Systems – IS 16542:2016",
     description:
       "Get BIS Certificate for Solar Water Heating Systems under IS 16542:2016. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for solar water heating systems.",
-    slug: "blogs/ISI-products/solar-water-heating-systems-IS-16542:2016",
+    slug: "blogs/isi-products/solar-water-heating-systems-is-16542",
   },
   {
     id: 26,
@@ -236,7 +236,7 @@ const blogs = [
     title: "BIS Certificate for Solar Flat Plate Collector – IS 12933:2003",
     description:
       "Get BIS Certificate for Solar Flat Plate Collector under IS 12933:2003. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for solar flat plate collectors.",
-    slug: "blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003",
+    slug: "blogs/isi-products/solar-flat-plate-collector-is-12933",
   },
   {
     id: 27,
@@ -244,7 +244,7 @@ const blogs = [
     title: "BIS Certificate for Fibre Ropes of Polyester – IS 17609:2021",
     description:
       "Get BIS Certificate for Fibre Ropes of Polyester under IS 17609:2021. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyester fibre ropes.",
-    slug: "blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021",
+    slug: "blogs/isi-products/fibre-ropes-polyster-is-17609",
   },
   {
     id: 28,
@@ -252,7 +252,7 @@ const blogs = [
     title: "BIS Certificate for Fibre Ropes – Polyethylene – IS 17636:2022",
     description:
       "Get BIS Certificate for Fibre Ropes (Polyethylene) under IS 17636:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyethylene fibre ropes.",
-    slug: "blogs/ISI-products/fibre-ropes-polyethylene-17636:2022",
+    slug: "blogs/isi-products/fibre-ropes-polyethylene-17636",
   },
   {
     id: 29,
@@ -260,7 +260,7 @@ const blogs = [
     title: "BIS Certificate for Fibre Ropes – Polyamide – IS 4572:2022",
     description:
       "Get BIS Certificate for Fibre Ropes (Polyamide) under IS 4572:2022. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for polyamide fibre ropes.",
-    slug: "blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022",
+    slug: "blogs/isi-products/fibre-ropes-polyamide-is-4572",
   },
   {
     id: 30,
@@ -268,7 +268,7 @@ const blogs = [
     title: "BIS Certificate for Steel Wire Ropes – IS 1804:2004",
     description:
       "Get BIS Certificate for Steel Wire Ropes under IS 1804:2004. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for steel wire ropes.",
-    slug: "blogs/ISI-products/steel-wire-ropes-IS-1804:2004",
+    slug: "blogs/isi-products/steel-wire-ropes-is-1804",
   },
   {
     id: 31,
@@ -285,7 +285,7 @@ const blogs = [
       "BIS Certificate for Composite Synthetic Fibre Ropes – IS 14928:2001",
     description:
       "Get BIS Certificate for Composite Synthetic Fibre Ropes under IS 14928:2001. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for composite synthetic fibre ropes.",
-    slug: "blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001",
+    slug: "blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928",
   },
   {
     id: 33,

@@ -150,25 +150,25 @@ const ServicesRightSideContentEng = () => {
     "/can-foreign-companies-get-bis-certification",
 
     // BIS CERTIFICATION PRODUCTS PATHS
-    "/blogs/ISI-products/bunk-beds-IS-17636:2022",
-    "/blogs/ISI-products/beds-IS-17635:2022",
-    "/blogs/ISI-products/work-chairs-IS-17631:2022",
-    "/blogs/ISI-products/chairs-and-stools-IS-17632:2022",
-    "/blogs/ISI-products/storage-unit-IS-17634:2022",
-    "/blogs/ISI-products/tables-&-desks-IS-17633:2022",
-    "/blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024",
-    "/blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022",
-    "/blogs/ISI-products/flashlight-IS-2083:2024",
-    "/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999",
-    "/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016",
-    "/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003",
-    "/blogs/ISI-products/chairs-and-stools-IS-17632:2022",
-    "/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021",
-    "/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022",
-    "/blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022",
-    "/blogs/ISI-products/steel-wire-ropes-IS-1804:2004",
+    "/blogs/isi-products/bunk-beds-is-17636",
+    "/blogs/isi-products/beds-is-17635",
+    "/blogs/isi-products/work-chairs-is-17631",
+    "/blogs/isi-products/chairs-and-stools-is-17632",
+    "/blogs/isi-products/storage-unit-is-17634",
+    "/blogs/isi-products/tables-&-desks-is-17633",
+    "/blogs/isi-products/welded-pipes-&-tubes-is-17876",
+    "/blogs/isi-products/seamless-pipes-&-tubes-is-17875",
+    "/blogs/isi-products/flashlight-is-2083",
+    "/blogs/isi-products/electric-fence-energizers-is-302-2-76",
+    "/blogs/isi-products/solar-water-heating-systems-is-16542",
+    "/blogs/isi-products/solar-flat-plate-collector-is-12933",
+    "/blogs/isi-products/chairs-and-stools-is-17632",
+    "/blogs/isi-products/fibre-ropes-polyster-is-17609",
+    "/blogs/isi-products/fibre-ropes-polyethylene-17636",
+    "/blogs/isi-products/fibre-ropes-polyamide-is-4572",
+    "/blogs/isi-products/steel-wire-ropes-is-1804",
     "/blogs/isi-products/mixed-polylefin-fibre-ropes-is-14929:2022",
-    "/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001",
+    "/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928",
     "/blogs/isi-products/manila-ropes-is-1084",
     "/blogs/isi-products/flat-woven-webbing-slings-is-15041",
     "/blogs/isi-products/combination-side-cutting-pliers-is-3650",
@@ -999,55 +999,45 @@ const ContactFormServicesRightSideContentEng = () => {
       return "Can Foreign Companies Get BIS Certification - English Page";
 
     // BIS CERTIFICATION PRODUCTS PATHS
-    if (path.includes("/blogs/ISI-products/bunk-beds-IS-17636:2022"))
+    if (path.includes("/blogs/isi-products/bunk-beds-is-17636"))
       return "BIS Certificate for Bunk Beds - English Page";
-    if (path.includes("/blogs/ISI-products/beds-IS-17635:2022"))
+    if (path.includes("/blogs/isi-products/beds-is-17635"))
       return "BIS Certificate for Beds - English Page";
-    if (path.includes("/blogs/ISI-products/work-chairs-IS-17631:2022"))
+    if (path.includes("/blogs/isi-products/work-chairs-is-17631"))
       return "BIS Certificate for Work Chairs - English Page";
-    if (path.includes("/blogs/ISI-products/chairs-and-stools-IS-17632:2022"))
+    if (path.includes("/blogs/isi-products/chairs-and-stools-is-17632"))
       return "BIS Certificate for Chair & Stools - English Page";
-    if (path.includes("/blogs/ISI-products/storage-unit-IS-17634:2022"))
+    if (path.includes("/blogs/isi-products/storage-unit-is-17634"))
       return "BIS Certificate for Storage Unit - English Page";
-    if (path.includes("/blogs/ISI-products/tables-&-desks-IS-17633:2022"))
+    if (path.includes("/blogs/isi-products/tables-&-desks-is-17633"))
       return "BIS Certificate for Tables & Desks - English Page";
-    if (path.includes("/blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024"))
+    if (path.includes("/blogs/isi-products/welded-pipes-&-tubes-is-17876"))
       return "BIS Certificate for Welded Pipes & Tubes - English Page";
-    if (
-      path.includes("/blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022")
-    )
+    if (path.includes("/blogs/isi-products/seamless-pipes-&-tubes-is-17875"))
       return "BIS Certificate for Seamless Pipes & Tubes - English Page";
-    if (path.includes("/blogs/ISI-products/flashlight-IS-2083:2024"))
+    if (path.includes("/blogs/isi-products/flashlight-is-2083"))
       return "BIS Certificate for Flashlight - English Page";
     if (
-      path.includes(
-        "/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999"
-      )
+      path.includes("/blogs/isi-products/electric-fence-energizers-is-302-2-76")
     )
       return "BIS Certificate for Electric Fence Energizers - English Page";
     if (
-      path.includes(
-        "/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016"
-      )
+      path.includes("/blogs/isi-products/solar-water-heating-systems-is-16542")
     )
       return "BIS Certificate for Solar Water Heating Systems - English Page";
     if (
-      path.includes(
-        "/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003"
-      )
+      path.includes("/blogs/isi-products/solar-flat-plate-collector-is-12933")
     )
       return "BIS Certificate for Solar Flat Plate Collector - English Page";
-    if (path.includes("/blogs/ISI-products/chairs-and-stools-IS-17632:2022"))
+    if (path.includes("/blogs/isi-products/chairs-and-stools-is-17632"))
       return "BIS Certificate for General Purpose Chairs and Stools - English Page";
-    if (path.includes("/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021"))
+    if (path.includes("/blogs/isi-products/fibre-ropes-polyster-is-17609"))
       return "BIS Certificate for Fibre Ropes of Polyester - English Page";
-    if (
-      path.includes("/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022")
-    )
+    if (path.includes("/blogs/isi-products/fibre-ropes-polyethylene-17636"))
       return "BIS Certificate for Fibre Ropes - Polyethylene - English Page";
-    if (path.includes("/blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022"))
+    if (path.includes("/blogs/isi-products/fibre-ropes-polyamide-is-4572"))
       return "BIS Certificate for Fibre Ropes - Polyamide - English Page";
-    if (path.includes("/blogs/ISI-products/steel-wire-ropes-IS-1804:2004"))
+    if (path.includes("/blogs/isi-products/steel-wire-ropes-is-1804"))
       return "BIS Certificate for Steel Wire Ropes - English Page";
     if (
       path.includes(
@@ -1057,7 +1047,7 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Mixed Polyolefin Fibre Ropes - English Page";
     if (
       path.includes(
-        "/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001"
+        "/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928"
       )
     )
       return "BIS Certificate for Composite Synthetic Fibre Ropes - English Page";

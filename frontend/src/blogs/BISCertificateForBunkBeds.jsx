@@ -23,7 +23,7 @@ import {
   TableHeader,
   TableRow,
   TableHead,
-} from "@/components/ui/table"; 
+} from "@/components/ui/table";
 
 const BISCertificateForBunkBeds = () => {
   return (
@@ -53,7 +53,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Bunk Beds, BIS License for Bunk Beds, IS 17636:2022, BIS Certification for Bunk Beds";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/bunk-beds-IS-17636:2022";
+    "https://bis-certifications.com/blogs/isi-products/bunk-beds-is-17636";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

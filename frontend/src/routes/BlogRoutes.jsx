@@ -431,7 +431,7 @@ export const BlogRoutes = () => {
 
       {/* BIS Certification Products Blogs */}
       <Route
-        path="/blogs/ISI-products/bunk-beds-IS-17636:2022"
+        path="/blogs/isi-products/bunk-beds-is-17636"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBunkBeds />
@@ -439,7 +439,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/beds-IS-17635:2022"
+        path="/blogs/isi-products/beds-is-17635"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForBeds />
@@ -447,7 +447,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/storage-unit-IS-17634:2022"
+        path="/blogs/isi-products/storage-unit-is-17634"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForStorageUnit />
@@ -455,7 +455,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/tables-&-desks-IS-17633:2022"
+        path="/blogs/isi-products/tables-&-desks-is-17633"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForTablesAndDesksUnit />
@@ -463,7 +463,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/work-chairs-IS-17631:2022"
+        path="/blogs/isi-products/work-chairs-is-17631"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWorkChairs />
@@ -471,7 +471,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/chairs-and-stools-IS-17632:2022"
+        path="/blogs/isi-products/chairs-and-stools-is-17632"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForChairAndStools />
@@ -479,7 +479,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/welded-pipes-&-tubes-IS-17876:2024"
+        path="/blogs/isi-products/welded-pipes-&-tubes-is-17876"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForWeldedPipesAndTubes />
@@ -487,7 +487,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/seamless-pipes-&-tubes-IS-17875:2022"
+        path="/blogs/isi-products/seamless-pipes-&-tubes-is-17875"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSeamlessPipesAndTubes />
@@ -495,7 +495,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/flashlight-IS-2083:2024"
+        path="/blogs/isi-products/flashlight-is-2083"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForFlashlight />
@@ -503,7 +503,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/solar-flat-plate-collector-IS-12933:2003"
+        path="/blogs/isi-products/solar-flat-plate-collector-is-12933"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationSolarFlatPlate />
@@ -511,7 +511,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/electric-fence-energizers-IS-302-2-76:1999"
+        path="/blogs/isi-products/electric-fence-energizers-is-302-2-76"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateElectricFenceEnergizers />
@@ -519,7 +519,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/solar-water-heating-systems-IS-16542:2016"
+        path="/blogs/isi-products/solar-water-heating-systems-is-16542"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForStorageWaterTank />
@@ -527,7 +527,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/fibre-ropes-polyster-IS-17609:2021"
+        path="/blogs/isi-products/fibre-ropes-polyster-is-17609"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationforFibreRopesOfPolyester />
@@ -535,7 +535,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/fibre-ropes-polyethylene-17636:2022"
+        path="/blogs/isi-products/fibre-ropes-polyethylene-17636"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationFibreRopes />
@@ -543,7 +543,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/fibre-ropes-polyamide-IS-4572:2022"
+        path="/blogs/isi-products/fibre-ropes-polyamide-is-4572"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationFibreRopesPolyamide />
@@ -551,7 +551,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/steel-wire-ropes-IS-1804:2004"
+        path="/blogs/isi-products/steel-wire-ropes-is-1804"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificateForSteelWireRopes />
@@ -567,7 +567,7 @@ export const BlogRoutes = () => {
         }
       />
       <Route
-        path="/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001"
+        path="/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928"
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationCompsitSyntheticFibre />

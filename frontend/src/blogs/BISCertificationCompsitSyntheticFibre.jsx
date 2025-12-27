@@ -56,7 +56,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Composite Synthetic Fibre Ropes, BIS License for Composite Synthetic Fibre Ropes, IS 14928:2001, BIS Certification for Composite Synthetic Fibre Ropes";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/compsite-synthetic-fibre-ropes-IS-14928:2001";
+    "https://bis-certifications.com/blogs/isi-products/compsite-synthetic-fibre-ropes-is-14928";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =

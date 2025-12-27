@@ -54,7 +54,7 @@ const MetaTags = () => {
   const metaKeywords =
     "BIS Certificate for Work Chairs, BIS License for Work Chairs, IS 17631:2022, BIS Certification for Work Chairs";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/ISI-products/work-chairs-IS-17631:2022";
+    "https://bis-certifications.com/blogs/isi-products/work-chairs-is-17631";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
