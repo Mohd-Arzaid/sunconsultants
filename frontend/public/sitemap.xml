@@ -3381,20 +3381,50 @@
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Ring Wrenches - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/ring-wrenches-is-2029</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Open-Jaw Wrenches - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/open-jaw-wrenches-is-2028</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>
   </url>
+  <!-- BIS Certificate for Adjustable Wrenches - English -->
   <url>
     <loc>https://bis-certifications.com/blogs/isi-products/adjustable-wrenches-is-6149</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/chain-pipe-wrenches-is-4123</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Air Purifier - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/battery-operated-air-purifier-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Foot Warmer & Heating Mats - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/foot-warmer-&-heating-mats-is-302</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-16</lastmod>
+  </url>
+  <!-- BIS Certificate for Battery Operated Toothbrush - English -->
+  <url>
+    <loc>https://bis-certifications.com/blogs/isi-products/battery-operated-tootbrush-is-302</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <lastmod>2025-01-16</lastmod>

@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const BISCertificateForStorageWaterTank = () => {
+const BISCertificationChainPipeWrenches = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +30,24 @@ const BISCertificateForStorageWaterTank = () => {
   );
 };
 
-export default BISCertificateForStorageWaterTank;
+export default BISCertificationChainPipeWrenches;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Solar Water Heating Systems | IS 16542:2016 BIS License";
+    "BIS Certificate for Chain Pipe Wrenches | IS 4123:1982 BIS License";
   const ogTitle =
-    "BIS Certification for Solar Water Heating Systems – IS 16542:2016 Guide";
-  const twitterTitle =
-    "BIS License for Solar Water Heating Systems | IS 16542:2016";
+    "BIS Certification for Chain Pipe Wrenches - IS 4123:1982 Guide";
+  const twitterTitle = "BIS License for Chain Pipe Wrenches | IS 4123:1982";
   const metaDescription =
-    "Get BIS Certificate for Solar Water Heating Systems under IS 16542:2016. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Chain Pipe Wrenches under IS 4123:1982. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Solar Water Heating Systems as per IS 16542:2016. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Chain Pipe Wrenches as per IS 4123:1982. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Solar Water Heating Systems under IS 16542:2016. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Chain Pipe Wrenches under IS 4123:1982. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Solar Water Heating Systems, BIS License for Solar Water Heating Systems, IS 16542:2016, BIS Certification for Solar Water Heating Systems";
+    "BIS Certificate for Chain Pipe Wrenches, BIS License for Chain Pipe Wrenches, IS 4123:1982, BIS Certification for Chain Pipe Wrenches";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/solar-water-heating-systems-is-16542";
+    "https://bis-certifications.com/blogs/isi-products/chain-pipe-wrenches-is-4123";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -103,8 +102,7 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Solar Water Heating Systems – IS
-                    16542:2016
+                    BIS Certificate for Chain Pipe Wrenches – IS 4123:1982
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -136,52 +134,48 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Storage Water Tank for All Glass Evacuated Tubes
-          Solar Water Heating Systems – Complete Guide to IS 16542:2016
+          BIS Certification Chain Pipe Wrenches – Complete Guide to IS 4123:1982
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforSolarWaterHeatingSystems.png"
-            title="BIS License for Solar Water Heating Systems"
-            alt="BIS Certificate for Solar Water Heating Systems - IS 16542:2016 BIS Certification"
+            src="/blogImages/BISLicenseforChainPipeWrenches.png"
+            title="BIS License for Chain Pipe Wrenches"
+            alt="BIS Certificate for Chain Pipe Wrenches - IS 4123:1982 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Indian renewable energy market is expanding rapidly, with solar
-          water heating systems becoming a preferred choice for residential,
-          commercial, and institutional buildings. Among all components of these
-          systems, the storage water tank for all glass evacuated tubes solar
-          water heating systems plays a critical role. It stores heated water,
-          maintains thermal efficiency, and ensures safe delivery of hot water
-          to end users. Because this component directly handles hot water under
-          pressure and varying temperatures, quality, durability, and safety
-          compliance are extremely important.
+          Chain Pipe Wrenches are specialized heavy-duty hand tools used for
+          gripping, tightening, and loosening large-diameter pipes, round
+          fittings, and cylindrical components where conventional pipe wrenches
+          are ineffective. These tools are extensively used in oil & gas
+          pipelines, refineries, power plants, petrochemical units, shipyards,
+          water supply projects, heavy engineering workshops, and infrastructure
+          construction sites. The gripping mechanism relies on a hardened chain
+          that wraps around the pipe, allowing uniform load distribution and
+          high torque application.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To regulate safety and performance, the Government of India has
-          mandated BIS Certification for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems under IS 16542:2016.
-          Manufacturers and importers cannot legally sell or distribute such
-          storage tanks in India without obtaining a valid BIS Certificate
-          India. Non-compliance can lead to penalties, market bans, and
-          rejection at customs.
+          Because chain pipe wrenches are used in high-stress, safety-critical
+          operations, any defect in material quality, chain strength, handle
+          design, or locking mechanism can result in slippage, sudden release,
+          tool failure, serious injuries, equipment damage, and costly
+          shutdowns. To prevent such risks and to standardize quality across the
+          market, the Government of India mandates compliance with Indian
+          Standards for these tools.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          This detailed product page is written for manufacturers, importers,
-          foreign suppliers, solar system assemblers, EPC contractors,
-          distributors, and e-commerce sellers who want to understand the BIS
-          Certification for Storage Water Tank for All Glass Evacuated Tubes
-          Solar Water Heating Systems, its process, documents, testing, cost,
-          and compliance responsibilities. If you are planning to apply for a
-          BIS License / BIS Licence for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems, this guide will serve as
-          a complete compliance roadmap.
+          Obtaining a BIS Certificate for Chain Pipe Wrenches under IS 4123:1982
+          is therefore a mandatory legal requirement for manufacturers and
+          importers selling chain pipe wrenches in India. A valid BIS
+          Certification for Chain Pipe Wrenches confirms that the product has
+          been tested and approved for strength, grip performance, dimensional
+          accuracy, and overall safety in accordance with Indian Standards.
         </p>
 
         {/* Separator Line */}
@@ -192,265 +186,264 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a conformity assessment scheme administered by
-          the Bureau of Indian Standards (BIS), the national standards body of
-          India. The BIS full form is Bureau of Indian Standards, established
-          under the BIS Act, 2016.
+          BIS Certification is a product conformity and quality assurance system
+          administered by the Bureau of Indian Standards, the national authority
+          responsible for standardization, testing, and certification of
+          products in India.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate meaning refers to official confirmation that a
-          product complies with the relevant BIS Standards and meets prescribed
-          requirements for safety, performance, reliability, and durability. A
-          BIS-certified product has been tested in BIS-recognized laboratories
-          and approved through a defined certification process.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS Certificate meaning refers to an official approval issued by
+          BIS confirming that a product conforms to the relevant Indian Standard
+          (IS) and is manufactured under a controlled quality system. This
+          certification allows the manufacturer to use the ISI Mark on the
+          certified product.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          BIS Mark / ISI Mark
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Products certified under BIS carry the BIS certification mark,
-          commonly known as the ISI Mark, along with a unique license number.
-          This mark indicates that the product conforms to the applicable Indian
-          Standard and is safe for use.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Why BIS Exists
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          BIS exists to:
+          BIS certification exists to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect consumers from unsafe and substandard products</li>
-          <li>Ensure consistency and quality in manufacturing</li>
-          <li>Support fair trade practices</li>
-          <li>Implement government regulations through BIS notifications</li>
+          <li>Protect users from unsafe and substandard products</li>
+          <li>Ensure consistent quality across manufacturers</li>
+          <li>Support enforcement of quality control regulations</li>
+          <li>Promote trust in Indian and imported industrial goods</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          ISI Mark Explanation
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS certification mark, commonly known as the ISI Mark, is a
+          visible symbol of compliance. For chain pipe wrenches, the ISI Mark
+          assures buyers that:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>The tool complies with IS 4123:1982</li>
+          <li>The chain and handle can withstand specified loads</li>
+          <li>The product is legally approved for sale in India</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Storage Water Tank for All Glass Evacuated
-          Tubes Solar Water Heating Systems
+          Applicable BIS Standard for Chain Pipe Wrenches
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          IS 16542:2016 – Indian Standard Explained
+          IS 4123:1982 – Specification for Chain Pipe Wrenches
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for this product is IS 16542:2016,
-          which specifies the requirements for storage water tanks used in all
-          glass evacuated tubes solar water heating systems.
+          The applicable Indian Standard for chain pipe wrenches is IS
+          4123:1982, which lays down requirements for design, materials,
+          dimensions, performance, and testing of chain pipe wrenches.
         </p>
 
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Scope of IS 4123:1982
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
           This standard covers:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Design and construction requirements of storage tanks</li>
-          <li>Material specifications (inner tank, outer body, insulation)</li>
-          <li>Thermal performance and heat retention</li>
-          <li>Resistance to corrosion and scaling</li>
-          <li>Structural integrity under operating conditions</li>
+          <li>Chain pipe wrenches of different sizes and capacities</li>
+          <li>Handle construction and chain assembly</li>
+          <li>Chain material, link dimensions, and strength</li>
+          <li>Dimensional tolerances and workmanship</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The intent of IS 16542:2016 is to ensure that storage water tanks:
+          IS 4123:1982 is designed to ensure that:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Withstand high water temperatures</li>
-          <li>Do not leak, burst, or corrode prematurely</li>
-          <li>Maintain insulation efficiency</li>
-          <li>Deliver safe and hygienic hot water</li>
+          <li>The chain provides uniform and secure grip on pipes</li>
+          <li>The wrench withstands high torque without failure</li>
+          <li>Handles and joints do not deform under load</li>
+          <li>The tool performs safely in heavy industrial applications</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Who Must Comply
+          Who Must Comply for BIS License for Pipe Wrenches
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance is mandatory for:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers of storage water tanks</li>
-          <li>Importers of solar water heating system tanks</li>
+          <li>Indian manufacturers of chain pipe wrenches</li>
+          <li>Importers and distributors</li>
           <li>Foreign manufacturers supplying to India</li>
+          <li>Traders and brands selling under private labels</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Storage Water Tank for All
-          Glass Evacuated Tubes Solar Water Heating Systems
+          Why BIS Certification is Mandatory for Chain Pipe Wrenches
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Consumer Safety Risks
+          Consumer and Workplace Safety Risks
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Non-standard chain pipe wrenches may lead to:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Chain slippage or breakage</li>
+          <li>Sudden release of high-torque load</li>
+          <li>Severe hand, arm, or body injuries</li>
+          <li>Damage to pipelines and fittings</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Government and Regulatory Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Storage tanks operate with hot water and pressure. Poor-quality tanks
-          can lead to leakage, bursting, scalding injuries, and property damage.
-          BIS certification minimizes these risks.
+          As per applicable BIS notifications and quality control regulations,
+          chain pipe wrenches covered under IS 4123:1982 must obtain BIS
+          certification before sale, import, or distribution in India.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Government Compliance
+          Legal Implications
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and quality control regulations, non-certified
-          products cannot be legally sold in India.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Selling non-certified chain pipe wrenches can result in:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Seizure of goods</li>
+          <li>Heavy financial penalties</li>
+          <li>Suspension of business operations</li>
+          <li>Legal action under the BIS Act</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Legal Implications
+          Market and Brand Benefits
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Selling without BIS certification may result in fines, seizure of
-          goods, and prosecution under the BIS Act, 2016.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          A BIS License for Chain Pipe Wrenches enables businesses to:
         </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Market & Brand Benefits
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate for Storage Water Tank for All Glass Evacuated Tubes
-          Solar Water Heating Systems enhances brand credibility and acceptance
-          in government, institutional, and retail markets.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Build trust with industrial buyers and EPC contractors</li>
+          <li>Qualify for government, PSU, and infrastructure tenders</li>
+          <li>Compete with established domestic and international brands</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Storage Water Tank for All
-          Glass Evacuated Tubes Solar Water Heating Systems
+          Step-by-Step BIS Certification Process for Chain Pipe Wrenches
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Applicability & Standard Identification
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The first step is confirming that the product falls under IS
-          16542:2016 and determining tank capacity, design type, and intended
-          application.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The first step involves confirming:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Product category: Chain Pipe Wrenches</li>
+          <li>Applicable standard: IS 4123:1982</li>
+          <li>Size range and capacity variants</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit the BIS application through the BIS apply
-          online portal. The application includes:
+          Manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product details</li>
-          <li>Factory information</li>
-          <li>Applicable BIS standard</li>
-          <li>Manufacturing and quality details</li>
+          <li>Register on the BIS portal</li>
+          <li>Select IS 4123:1982 in the BIS application</li>
+          <li>Upload required technical and legal documents</li>
+          <li>Pay the applicable government fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This step formally initiates the BIS certificate registration process.
+          This process is commonly known as BIS apply online or BIS certificate
+          registration.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Fees & Cost Structure
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS certification cost includes:
+          The BIS certification cost generally includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Application fee</li>
-          <li>Product testing charges</li>
-          <li>Factory inspection fee</li>
-          <li>License fee</li>
-          <li>Annual marking fee</li>
+          <li>Application and processing fees</li>
+          <li>Sample testing charges</li>
+          <li>Factory inspection charges</li>
+          <li>License and marking fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The overall cost of BIS certification depends on product type, tank
-          capacity variants, and testing scope.
+          The overall cost of BIS certification depends on:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Number of wrench sizes</li>
+          <li>Testing complexity</li>
+          <li>Manufacturing location</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Product Sample Testing
+          Product Sample Testing (As per IS 4123:1982)
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Samples are sent to BIS-recognized laboratories for testing as per IS
-          16542:2016.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Samples are tested at BIS-recognized laboratories for:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Chain tensile strength</li>
+          <li>Load and torque resistance</li>
+          <li>Dimensional accuracy</li>
+          <li>Handle strength and workmanship</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials inspect the manufacturing unit to verify:
+          A BIS officer conducts an on-site audit to verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Production capability</li>
-          <li>Quality control systems</li>
-          <li>Raw material checks</li>
-          <li>Testing facilities</li>
+          <li>Manufacturing and assembly processes</li>
+          <li>Chain manufacturing or sourcing control</li>
+          <li>Quality control system</li>
+          <li>In-house testing and inspection facilities</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          After successful testing and inspection, BIS grants the Bureau of
-          Indian Standards license, allowing use of the BIS Mark on certified
-          storage tanks.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          After successful testing and inspection:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>BIS issues the Bureau of Indian Standards License</li>
+          <li>
+            The manufacturer is authorized to affix the ISI Mark on chain pipe
+            wrenches
+          </li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Post-Certification Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          License holders must:
+          Post-certification obligations include:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain ongoing compliance</li>
-          <li>Conduct routine testing</li>
-          <li>Face surveillance audits</li>
-          <li>Renew the license periodically</li>
+          <li>Periodic surveillance audits</li>
+          <li>Market sample testing</li>
+          <li>Timely license renewal</li>
+          <li>Continuous compliance with IS 4123:1982</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of BIS License as per IS 16542:2016
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard specifies requirements of direct insertion type storage
-          water tank of water capacity up to 500 litre for use with all glass
-          evacuated tubes solar collector. This standard covers only vented type
-          storage water tank.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS license applies to storage water tanks intended for:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Domestic solar water heating systems</li>
-          <li>Residential buildings</li>
-          <li>Commercial establishments</li>
-          <li>Institutional installations</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The scope is limited strictly to tanks conforming to IS 16542:2016
-          specifications.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -463,17 +456,16 @@ const MainContentLeft = () => {
           Manufacturer Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Factory registration certificate</li>
-          <li>Manufacturing process flow</li>
+          <li>Factory registration or MSME certificate</li>
+          <li>Manufacturing process flow chart</li>
           <li>List of machinery and testing equipment</li>
-          <li>Quality control plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Company incorporation proof</li>
+          <li>Company incorporation certificate</li>
           <li>GST registration</li>
           <li>Trademark authorization (if applicable)</li>
         </ul>
@@ -483,9 +475,8 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Product drawings and specifications</li>
-          <li>Material details</li>
-          <li>Insulation specifications</li>
-          <li>Installation and user manual</li>
+          <li>Chain material and heat treatment details</li>
+          <li>Quality control and inspection plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -493,35 +484,35 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS application form</li>
-          <li>Test reports</li>
-          <li>Undertakings and declarations</li>
+          <li>Test request details</li>
+          <li>Declarations and undertakings</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          These collectively form the BIS CERTIFICATE DOCUMENTS.
+          These are collectively known as BIS CERTIFICATE DOCUMENTS or BIS
+          CERTIFICATION DOCUMENTS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 16542:2016
+          Testing Requirements as per IS 4123:1982
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
           Mandatory tests include:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Hydrostatic pressure test</li>
-          <li>Leakage test</li>
-          <li>Thermal performance and heat retention test</li>
-          <li>Insulation efficiency test</li>
-          <li>Corrosion resistance test</li>
-          <li>Material thickness verification</li>
+          <li>Chain tensile strength test</li>
+          <li>Load and torque test</li>
+          <li>Dimensional verification</li>
+          <li>Material and workmanship inspection</li>
+          <li>Functional grip performance test</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          All testing must be conducted only in BIS-recognized laboratories.
+          All testing must be conducted only at BIS-recognized laboratories.
         </p>
 
         {/* Separator Line */}
@@ -532,28 +523,24 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Design Non-Compliance
+          Common Problems
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>Solution:</strong> Review standard requirements before
-          production.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Failure in chain strength tests</li>
+          <li>Improper heat treatment of chain links</li>
+          <li>Dimensional non-conformities</li>
+          <li>Incomplete documentation</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Test Failures
+          Solutions & Best Practices
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>Solution:</strong> Conduct pre-testing and improve insulation
-          or materials.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Documentation Gaps
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>Solution:</strong> Prepare and verify all documents before
-          submission.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Conduct internal pre-testing</li>
+          <li>Use certified raw materials</li>
+          <li>Maintain strict process control</li>
+          <li>Engage experienced BIS consultants</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -566,53 +553,65 @@ const MainContentLeft = () => {
           Legal Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Compliance with Indian regulations</li>
-          <li>Smooth customs clearance</li>
+          <li>Full compliance with Indian regulations</li>
+          <li>Protection from penalties and enforcement actions</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Access to government and institutional tenders</li>
-          <li>Wider market acceptance</li>
+          <li>Higher acceptance by industrial buyers</li>
+          <li>Eligibility for PSU and infrastructure projects</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Trust through BIS certification mark</li>
-          <li>Enhanced brand reputation</li>
+          <li>ISI Mark enhances credibility and trust</li>
+          <li>Differentiation from unorganized suppliers</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Market Expansion
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Entry into organized solar and renewable energy markets</li>
+          <li>Easier access to large industrial markets</li>
+          <li>Improved export credibility</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems?
+          Penalties for Non-Compliance
+        </h2>
+
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Non-compliance may result in:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Heavy monetary fines</li>
+          <li>Seizure of products</li>
+          <li>Cancellation of licenses</li>
+          <li>Legal prosecution under the BIS Act</li>
+        </ul>
+
+        {/* Separator Line */}
+        <div className="h-px w-full bg-gray-300 my-6"></div>
+
+        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+          Who Needs BIS Certification for Chain Pipe Wrenches?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
           <li>Importers</li>
-          <li>Foreign manufacturers</li>
-          <li>Traders and distributors</li>
-          <li>E-commerce sellers</li>
+          <li>Foreign manufacturers (with Authorized Indian Representative)</li>
+          <li>Traders and industrial suppliers</li>
+          <li>E-commerce sellers listing chain pipe wrenches</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Anyone placing the product on the Indian market must ensure BIS
-          compliance.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -621,19 +620,23 @@ const MainContentLeft = () => {
           Why Choose Us for BIS Certification Consulting?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">We provide:</p>
-
+        <p className="text-gray-600 text-base font-geist mb-3">
+          We provide end-to-end BIS certification consulting services,
+          including:
+        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Complete BIS certification support</li>
-          <li>Standard identification and applicability check</li>
-          <li>Documentation and application filing</li>
-          <li>Testing and audit coordination</li>
-          <li>Post-license compliance support</li>
+          <li>Product applicability and gap analysis</li>
+          <li>Documentation preparation and verification</li>
+          <li>Coordination with BIS-recognized laboratories</li>
+          <li>Factory inspection and audit support</li>
+          <li>Faster approvals with minimal queries</li>
+          <li>Post-certification compliance and renewal support</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Our expertise ensures faster approvals, reduced cost, and zero
-          compliance risk.
+          Our expertise in industrial hand tools and heavy-duty equipment
+          ensures a smooth, reliable, and fully compliant BIS certification
+          journey.
         </p>
 
         {/* Separator Line */}
@@ -644,159 +647,163 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems under IS 16542:2016 is a
-          critical requirement for legally selling and distributing these
-          products in India. Beyond compliance, BIS Certification for Storage
-          Water Tank for All Glass Evacuated Tubes Solar Water Heating Systems
-          ensures safety, durability, and performance—key factors for long-term
-          success in the solar energy market.
+          Obtaining a BIS Certificate for Chain Pipe Wrenches under IS 4123:1982
+          is a crucial legal and quality requirement for selling these
+          heavy-duty tools in India. BIS Certification for Chain Pipe Wrenches
+          ensures safety, strength, and reliability, while the BIS License for
+          Chain Pipe Wrenches strengthens brand credibility and market
+          acceptance.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers and importers who secure a BIS License / BIS Licence for
-          Storage Water Tank for All Glass Evacuated Tubes Solar Water Heating
-          Systems not only avoid legal risks but also gain trust, credibility,
-          and competitive advantage. Timely certification, proper documentation,
-          and expert guidance can make the entire BIS certification process
-          smooth and efficient.
+          For manufacturers, importers, and sellers, timely compliance not only
+          prevents penalties but also unlocks access to high-value industrial,
+          infrastructure, and government projects. With expert guidance and
+          structured compliance support, the BIS certification process becomes
+          efficient, predictable, and fully aligned with Indian Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems
+          FAQs – BIS Certification for Chain Pipe Wrenches
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q1. Is BIS certification mandatory for chain pipe wrenches?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q1. Is BIS certification mandatory for storage water tanks used
-                in solar systems?
-              </strong>
-              <br />
-              Yes, BIS certification under IS 16542:2016 is mandatory.
+              Yes, compliance with IS 4123:1982 is mandatory in India.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q2. What is the BIS certificate full form?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q2. What is the BIS full form?</strong>
-              <br />
-              Bureau of Indian Standards.
+              Bureau of Indian Standards Certificate.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q3. How long does the BIS certification process take?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q3. Can I import storage water tanks without BIS certification?
-              </strong>
-              <br />
-              No, uncertified imports are prohibited.
+              Usually 45–60 working days for Indian manufacturers and 90-120
+              days for foreign manufacturers.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q4. What is the BIS certification cost?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q4. What is the BIS certificate cost?</strong>
-              <br />
-              Cost varies based on testing and factory size.
+              It depends on product size range and testing scope.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q5. Can importers apply for BIS certification?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q5. How long does BIS certification take?</strong>
-              <br />
-              Typically 6–10 weeks.
+              Yes, with proper manufacturer authorization.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q6. Is the ISI Mark compulsory?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q6. Is the BIS mark compulsory?</strong>
-              <br />
               Yes, ISI marking is mandatory after certification.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q7. Can foreign manufacturers obtain BIS certification?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q7. Can multiple tank sizes be covered under one license?
-              </strong>
-              <br />
-              Yes, subject to technical similarity.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q8. Are solar tank accessories also covered?</strong>
-              <br />
-              Only storage tanks covered under IS 16542:2016.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q9. Is factory inspection mandatory?</strong>
-              <br />
-              Yes, BIS conducts factory audits.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q10. Can startups apply for BIS certification?</strong>
-              <br />
-              Yes, if manufacturing setup complies.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q11. Does BIS certification need renewal?</strong>
-              <br />
-              Yes, periodic renewal is required.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q12. What happens if testing fails?</strong>
-              <br />
-              Product redesign and retesting are required.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q13. Are BIS-recognized labs mandatory?</strong>
-              <br />
-              Yes, only BIS-approved labs are accepted.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q14. Can foreign manufacturers apply directly?</strong>
-              <br />
               Yes, through an Authorized Indian Representative.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q8. What tests are required under IS 4123:1982?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q15. What does BIS certification mean for consumers?
-              </strong>
-              <br />
-              It ensures safety, quality, and reliability.
+              Chain strength, load, dimensional, and workmanship tests.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q9. Is factory inspection mandatory?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, BIS conducts an on-site audit.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q10. Can multiple sizes be covered under one license?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, subject to testing and approval.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q11. What happens if non-certified chain pipe wrenches are sold?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Penalties, seizure, and legal action may occur.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q12. Is BIS apply online mandatory?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, all applications are submitted online.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q13. Are renewals required for BIS licenses?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, periodic renewal is mandatory.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q14. Can consultants reduce approval delays?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, professional consultants help avoid errors.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q15. Does BIS certification improve buyer confidence?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, it significantly improves market trust.
             </p>
           </div>
         </div>

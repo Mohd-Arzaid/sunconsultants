@@ -343,6 +343,41 @@ const blogs = [
       "Get BIS Certificate for Single-ended Open-jaw Adjustable Wrenches under IS 6149:1984. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for adjustable wrenches.",
     slug: "blogs/isi-products/adjustable-wrenches-is-6149",
   },
+  {
+    id: 40,
+    color: "#DC2626", // Red
+    title: "BIS Certificate for Chain Pipe Wrenches – IS 4123:1982",
+    description:
+      "Get BIS Certificate for Chain Pipe Wrenches under IS 4123:1982. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for chain pipe wrenches used in heavy industrial applications.",
+    slug: "blogs/isi-products/chain-pipe-wrenches-is-4123",
+  },
+  {
+    id: 41,
+    color: "#10B981", // Green
+    title:
+      "BIS Certificate for Battery Operated Air Purifier – IS 302 (Part 1):2024",
+    description:
+      "Get BIS Certificate for Battery Operated Air Purifier under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India. Complete guide covering mandatory compliance requirements for battery operated air purifiers.",
+    slug: "blogs/isi-products/battery-operated-air-purifier-is-302",
+  },
+  {
+    id: 42,
+    color: "#F59E0B", // Amber/Orange
+    title:
+      "BIS Certification Foot Warmer and Heating Mats – Complete Guide to IS 302 (Part 1):2024",
+    description:
+      "Foot Warmers and Heating Mats have become increasingly popular in India due to changing lifestyles, rising awareness of personal comfort, and growing demand for localized heating solutions. These products are widely used in homes, offices, hospitals, hotels, hostels, clinics, and personal spaces, especially during winter seasons or in air-conditioned environments.",
+    slug: "blogs/isi-products/foot-warmer-&-heating-mats-is-302",
+  },
+  {
+    id: 43,
+    color: "#3B82F6", // Blue
+    title:
+      "BIS Certification Battery-Operated Toothbrush – Complete Guide to IS 302 (Part 1):2024",
+    description:
+      "The Indian oral-care market has witnessed rapid growth in recent years, with Battery-Operated Toothbrushes becoming a preferred choice among consumers seeking better hygiene, convenience, and effective plaque removal. These toothbrushes are widely used in homes, hotels, hospitals, travel kits, and personal care routines, especially by children, elderly users, and people with limited hand mobility.",
+    slug: "blogs/isi-products/battery-operated-tootbrush-is-302",
+  },
 ];
 
 // =============================

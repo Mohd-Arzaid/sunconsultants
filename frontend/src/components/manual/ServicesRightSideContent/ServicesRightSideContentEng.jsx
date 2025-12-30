@@ -176,6 +176,10 @@ const ServicesRightSideContentEng = () => {
     "/blogs/isi-products/ring-wrenches-is-2029",
     "/blogs/isi-products/open-jaw-wrenches-is-2028",
     "/blogs/isi-products/adjustable-wrenches-is-6149",
+    "/blogs/isi-products/chain-pipe-wrenches-is-4123",
+    "/blogs/isi-products/battery-operated-air-purifier-is-302",
+    "/blogs/isi-products/foot-warmer-&-heating-mats-is-302",
+    "/blogs/isi-products/battery-operated-tootbrush-is-302",
   ];
 
   // Check if current path should show these components
@@ -1069,6 +1073,16 @@ const ContactFormServicesRightSideContentEng = () => {
       return "BIS Certificate for Open-Jaw Wrenches - English Page";
     if (path.includes("/blogs/isi-products/adjustable-wrenches-is-6149"))
       return "BIS Certificate for Adjustable Wrenches - English Page";
+    if (path.includes("/blogs/isi-products/chain-pipe-wrenches-is-4123"))
+      return "BIS Certificate for Chain Pipe Wrenches - English Page";
+    if (
+      path.includes("/blogs/isi-products/battery-operated-air-purifier-is-302")
+    )
+      return "BIS Certificate for Battery Operated Air Purifier - English Page";
+    if (path.includes("/blogs/isi-products/foot-warmer-&-heating-mats-is-302"))
+      return "BIS Certificate for Foot Warmer & Heating Mats - English Page";
+    if (path.includes("/blogs/isi-products/battery-operated-tootbrush-is-302"))
+      return "BIS Certificate for Battery Operated Toothbrush - English Page";
   };
 
   const [formData, setFormData] = useState({

@@ -128,6 +128,18 @@ const BISCertificationOpenJawWrenches = lazy(() =>
 const BISCertificationSingleendedOpenjawAdjustableWrenches = lazy(() =>
   import("@/blogs/BISCertificationSingleendedOpenjawAdjustableWrenches")
 );
+const BISCertificationChainPipeWrenches = lazy(() =>
+  import("@/blogs/BISCertificationChainPipeWrenches")
+);
+const BISCertificateBatteryOperatedAirPurifier = lazy(() =>
+  import("@/blogs/BISCertificationBatteryOperatedAirPurifier")
+);
+const BISCertificateForFootWarmerandHeatingMats = lazy(() =>
+  import("@/blogs/BISCertificationFootWarmerandHeatingMats")
+);
+const BISCertificateForBatteryOperatedToothbrush = lazy(() =>
+  import("@/blogs/BISCertificationBatteryOperatedToothbrush")
+);
 
 export const BlogRoutes = () => {
   return (
@@ -627,6 +639,38 @@ export const BlogRoutes = () => {
         element={
           <Suspense fallback={<BlogsSkeleton />}>
             <BISCertificationSingleendedOpenjawAdjustableWrenches />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/chain-pipe-wrenches-is-4123"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificationChainPipeWrenches />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/battery-operated-air-purifier-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateBatteryOperatedAirPurifier />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/foot-warmer-&-heating-mats-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForFootWarmerandHeatingMats />
+          </Suspense>
+        }
+      />
+      <Route
+        path="/blogs/isi-products/battery-operated-tootbrush-is-302"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBatteryOperatedToothbrush />
           </Suspense>
         }
       />

@@ -17,7 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
 import FooterEng from "@/components/manual/Footer/FooterEng";
 
-const BISCertificateForStorageWaterTank = () => {
+const BISCertificateBatteryOperatedAirPurifier = () => {
   return (
     <div className="relative w-full">
       <MetaTags />
@@ -30,25 +30,25 @@ const BISCertificateForStorageWaterTank = () => {
   );
 };
 
-export default BISCertificateForStorageWaterTank;
+export default BISCertificateBatteryOperatedAirPurifier;
 
 const MetaTags = () => {
   const title =
-    "BIS Certificate for Solar Water Heating Systems | IS 16542:2016 BIS License";
+    "BIS Certificate for Battery Operated Air Purifier | IS 302 (Part 1):2024 BIS License";
   const ogTitle =
-    "BIS Certification for Solar Water Heating Systems – IS 16542:2016 Guide";
+    "BIS Certification for Battery Operated Air Purifier – IS 302 (Part 1):2024 Guide";
   const twitterTitle =
-    "BIS License for Solar Water Heating Systems | IS 16542:2016";
+    "BIS License for Battery Operated Air Purifier | IS 302 (Part 1):2024";
   const metaDescription =
-    "Get BIS Certificate for Solar Water Heating Systems under IS 16542:2016. Process, documents, testing, cost & timeline for BIS Certification in India.";
+    "Get BIS Certificate for Battery Operated Air Purifier under IS 302 (Part 1):2024. Process, documents, testing, cost & timeline for BIS Certification in India.";
   const ogDescription =
-    "Complete guide to BIS Certification for Solar Water Heating Systems as per IS 16542:2016. Know process, cost, documents, testing & BIS license benefits.";
+    "Complete guide to BIS Certification for Battery Operated Air Purifier as per IS 302 (Part 1):2024. Know process, cost, documents, testing & BIS license benefits.";
   const twitterDescription =
-    "Apply for BIS Certificate for Solar Water Heating Systems under IS 16542:2016. Learn BIS process, documents, testing, fees & timeline in India.";
+    "Apply for BIS Certificate for Battery Operated Air Purifier under IS 302 (Part 1):2024. Learn BIS process, documents, testing, fees & timeline in India.";
   const metaKeywords =
-    "BIS Certificate for Solar Water Heating Systems, BIS License for Solar Water Heating Systems, IS 16542:2016, BIS Certification for Solar Water Heating Systems";
+    "BIS Certificate for Battery Operated Air Purifier, BIS License for Battery Operated Air Purifier, IS 302 (Part 1):2024, BIS Certification for Battery Operated Air Purifier";
   const websiteUrl =
-    "https://bis-certifications.com/blogs/isi-products/solar-water-heating-systems-is-16542";
+    "https://bis-certifications.com/blogs/isi-products/battery-operated-air-purifier-is-302";
   const websiteName = "Sun Certifications India";
   const author = "Sun Certifications India";
   const publisher =
@@ -103,8 +103,8 @@ const BreadcrumbContent = () => {
 
                 <BreadcrumbItem className="flex-shrink-0">
                   <BreadcrumbPage className="whitespace-nowrap">
-                    BIS Certificate for Solar Water Heating Systems – IS
-                    16542:2016
+                    BIS Certificate for Battery Operated Air Purifier – IS 302
+                    (Part 1):2024
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -136,52 +136,42 @@ const MainContentLeft = () => {
       {/* Blog Content */}
       <div className="p-6 mb-6 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 shadow-[0_1px_5px_-4px_rgba(19,19,22,0.7),0_4px_8px_rgba(32,42,54,0.05)] ring-1 ring-gray-900/[0.075] transition-shadow hover:shadow-[0_1px_7px_-4px_rgba(19,19,22,0.8),0_4px_11px_rgba(32,42,54,0.05)] hover:ring-gray-900/[0.125]">
         <h1 className="text-xl md:text-2xl font-playfair font-bold text-[#1e1e1e] mb-4">
-          BIS Certification for Storage Water Tank for All Glass Evacuated Tubes
-          Solar Water Heating Systems – Complete Guide to IS 16542:2016
+          BIS Certification Battery Operated Air Purifier – Complete Guide to IS
+          302 (Part 1):2024
         </h1>
 
         {/* Featured Image */}
         <div className="mb-6">
           <img
-            src="/blogImages/BISLicenseforSolarWaterHeatingSystems.png"
-            title="BIS License for Solar Water Heating Systems"
-            alt="BIS Certificate for Solar Water Heating Systems - IS 16542:2016 BIS Certification"
+            src="/blogImages/BISLicenseforBatteryOperatedAirPurifier.png"
+            title="BIS License for Battery Operated Air Purifier"
+            alt="BIS Certificate for Battery Operated Air Purifier - IS 302 (Part 1):2024 BIS Certification"
             className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          The Indian renewable energy market is expanding rapidly, with solar
-          water heating systems becoming a preferred choice for residential,
-          commercial, and institutional buildings. Among all components of these
-          systems, the storage water tank for all glass evacuated tubes solar
-          water heating systems plays a critical role. It stores heated water,
-          maintains thermal efficiency, and ensures safe delivery of hot water
-          to end users. Because this component directly handles hot water under
-          pressure and varying temperatures, quality, durability, and safety
-          compliance are extremely important.
+          The demand for Battery Operated Air Purifiers in India has grown
+          rapidly due to rising air pollution levels, increasing health
+          awareness, and the need for portable, energy-efficient air
+          purification solutions. Unlike conventional plug-in air purifiers,
+          battery operated models are widely used in homes, offices, hospitals,
+          vehicles, hotels, schools, and personal spaces, especially where
+          uninterrupted power supply is not guaranteed. These appliances
+          directly interact with electrical, electronic, and battery components,
+          making electrical safety, fire protection, insulation integrity, and
+          user protection extremely critical.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          To regulate safety and performance, the Government of India has
-          mandated BIS Certification for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems under IS 16542:2016.
-          Manufacturers and importers cannot legally sell or distribute such
-          storage tanks in India without obtaining a valid BIS Certificate
-          India. Non-compliance can lead to penalties, market bans, and
-          rejection at customs.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This detailed product page is written for manufacturers, importers,
-          foreign suppliers, solar system assemblers, EPC contractors,
-          distributors, and e-commerce sellers who want to understand the BIS
-          Certification for Storage Water Tank for All Glass Evacuated Tubes
-          Solar Water Heating Systems, its process, documents, testing, cost,
-          and compliance responsibilities. If you are planning to apply for a
-          BIS License / BIS Licence for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems, this guide will serve as
-          a complete compliance roadmap.
+          To ensure consumer safety and regulatory compliance, the Government of
+          India has mandated conformity with Indian electrical safety standards.
+          Obtaining a BIS Certificate for Battery Operated Air Purifier under IS
+          302 (Part 1):2024 is a mandatory legal requirement for manufacturers
+          and importers before selling these products in the Indian market. A
+          valid BIS Certification for Battery Operated Air Purifier confirms
+          that the appliance has been tested for electrical, mechanical, and
+          thermal safety as per the latest Indian Standard.
         </p>
 
         {/* Separator Line */}
@@ -192,265 +182,260 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          BIS Certification is a conformity assessment scheme administered by
-          the Bureau of Indian Standards (BIS), the national standards body of
-          India. The BIS full form is Bureau of Indian Standards, established
-          under the BIS Act, 2016.
+          BIS Certification is India&apos;s official product conformity
+          assessment system governed by the Bureau of Indian Standards. BIS
+          functions under the Ministry of Consumer Affairs and is responsible
+          for ensuring that products sold in India meet defined standards of
+          safety, quality, and reliability.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Certificate Meaning
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The BIS Certificate meaning refers to official confirmation that a
-          product complies with the relevant BIS Standards and meets prescribed
-          requirements for safety, performance, reliability, and durability. A
-          BIS-certified product has been tested in BIS-recognized laboratories
-          and approved through a defined certification process.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          BIS Mark / ISI Mark
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Products certified under BIS carry the BIS certification mark,
-          commonly known as the ISI Mark, along with a unique license number.
-          This mark indicates that the product conforms to the applicable Indian
-          Standard and is safe for use.
+          The BIS Certificate meaning refers to an authorization issued by BIS
+          allowing a manufacturer to produce, import, and sell a product that
+          complies with a specific Indian Standard (IS). This certificate also
+          permits the use of the BIS certification mark (ISI Mark) on the
+          approved product.
         </p>
 
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Why BIS Exists
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
           BIS exists to:
         </p>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Protect consumers from unsafe and substandard products</li>
-          <li>Ensure consistency and quality in manufacturing</li>
-          <li>Support fair trade practices</li>
-          <li>Implement government regulations through BIS notifications</li>
+          <li>Protect consumers from unsafe electrical appliances</li>
+          <li>Prevent fire, electric shock, and battery-related hazards</li>
+          <li>Promote uniform product quality</li>
+          <li>Enable enforcement of safety regulations</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          ISI Mark Explanation
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The BIS Mark (ISI Mark) on a battery operated air purifier indicates
+          that:
+        </p>
+
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>The product complies with IS 302 (Part 1):2024</li>
+          <li>Electrical insulation and construction are safe</li>
+          <li>The appliance is legally approved for sale in India</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Applicable BIS Standard for Storage Water Tank for All Glass Evacuated
-          Tubes Solar Water Heating Systems
+          Applicable BIS Standard for Battery Operated Air Purifier
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          IS 16542:2016 – Indian Standard Explained
+          IS 302 (Part 1):2024 – Safety of Household and Similar Electrical
+          Appliances
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The applicable Indian Standard for this product is IS 16542:2016,
-          which specifies the requirements for storage water tanks used in all
-          glass evacuated tubes solar water heating systems.
+          The applicable Indian Standard for battery operated air purifiers is
+          IS 302 (Part 1):2024, which specifies general safety requirements for
+          electrical appliances intended for household and similar use.
         </p>
 
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Scope of IS 302 (Part 1):2024
+        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
           This standard covers:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Design and construction requirements of storage tanks</li>
-          <li>Material specifications (inner tank, outer body, insulation)</li>
-          <li>Thermal performance and heat retention</li>
-          <li>Resistance to corrosion and scaling</li>
-          <li>Structural integrity under operating conditions</li>
+          <li>
+            Electrical safety of appliances using batteries or hybrid power
+          </li>
+          <li>Protection against electric shock</li>
+          <li>Fire and overheating risks</li>
+          <li>Mechanical and construction safety</li>
+          <li>Insulation, creepage, and clearance requirements</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Safety, Performance & Testing Intent
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          The intent of IS 16542:2016 is to ensure that storage water tanks:
+          IS 302 (Part 1):2024 aims to ensure that:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Withstand high water temperatures</li>
-          <li>Do not leak, burst, or corrode prematurely</li>
-          <li>Maintain insulation efficiency</li>
-          <li>Deliver safe and hygienic hot water</li>
+          <li>
+            Battery powered appliances operate safely under normal and abnormal
+            conditions
+          </li>
+          <li>
+            Users are protected from electrical, thermal, and mechanical hazards
+          </li>
+          <li>Components do not overheat or cause fire</li>
+          <li>The appliance remains safe throughout its intended lifecycle</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Who Must Comply
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-3">
-          Compliance is mandatory for:
-        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Indian manufacturers of storage water tanks</li>
-          <li>Importers of solar water heating system tanks</li>
+          <li>Manufacturers of battery operated air purifiers in India</li>
+          <li>Importers and distributors</li>
           <li>Foreign manufacturers supplying to India</li>
+          <li>Brands selling air purifiers under private labels</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Why BIS Certification is Mandatory for Storage Water Tank for All
-          Glass Evacuated Tubes Solar Water Heating Systems
+          Why BIS Certification is Mandatory for Battery Operated Air Purifier
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          1. Consumer Safety Risks
+          Consumer Safety Risks
+        </h3>
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Non-certified air purifiers may cause:
+        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Electric shock due to poor insulation</li>
+          <li>Battery overheating or explosion</li>
+          <li>Fire hazards during charging or operation</li>
+          <li>Mechanical failure of internal components</li>
+        </ul>
+
+        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+          Government and Regulatory Compliance
         </h3>
         <p className="text-gray-600 text-base font-geist mb-4">
-          Storage tanks operate with hot water and pressure. Poor-quality tanks
-          can lead to leakage, bursting, scalding injuries, and property damage.
-          BIS certification minimizes these risks.
+          Under BIS notifications and electrical safety regulations, air
+          purifiers fall under mandatory certification. Selling without a BIS
+          Certificate India is illegal.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          2. Government Compliance
+          Legal Implications
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Under BIS notifications and quality control regulations, non-certified
-          products cannot be legally sold in India.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Non-compliance can result in:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Seizure of products</li>
+          <li>Heavy fines and penalties</li>
+          <li>Import bans</li>
+          <li>Criminal liability under BIS Act</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          3. Legal Implications
+          Market and Brand Benefits
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Selling without BIS certification may result in fines, seizure of
-          goods, and prosecution under the BIS Act, 2016.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          A BIS License for Battery Operated Air Purifier helps:
         </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          4. Market & Brand Benefits
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          A BIS Certificate for Storage Water Tank for All Glass Evacuated Tubes
-          Solar Water Heating Systems enhances brand credibility and acceptance
-          in government, institutional, and retail markets.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Build consumer trust</li>
+          <li>Enable listing on e-commerce platforms</li>
+          <li>Qualify for institutional and government procurement</li>
+          <li>Strengthen brand reputation</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Step-by-Step BIS Certification Process for Storage Water Tank for All
-          Glass Evacuated Tubes Solar Water Heating Systems
+          Step-by-Step BIS Certification Process for Battery Operated Air
+          Purifier
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Applicability & Standard Identification
+          Applicability & Standard Identification for BIS Licence
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The first step is confirming that the product falls under IS
-          16542:2016 and determining tank capacity, design type, and intended
-          application.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          The process begins by confirming:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Product type: Battery operated air purifier</li>
+          <li>Applicable standard: IS 302 (Part 1):2024</li>
+          <li>Voltage, battery type, charger configuration</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           BIS Online Application Process
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          Manufacturers must submit the BIS application through the BIS apply
-          online portal. The application includes:
+          Manufacturers must:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product details</li>
-          <li>Factory information</li>
-          <li>Applicable BIS standard</li>
-          <li>Manufacturing and quality details</li>
+          <li>Register on the BIS portal</li>
+          <li>Submit the BIS Application online</li>
+          <li>Upload technical and legal documents</li>
+          <li>Pay applicable government fees</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          This step formally initiates the BIS certificate registration process.
+          This step is commonly referred to as BIS apply online or BIS
+          certificate registration.
         </p>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Fees & Cost Structure
+          Fees & Cost Structure for BIS Certificate for Air Purifier
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
           The BIS certification cost includes:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Application fee</li>
-          <li>Product testing charges</li>
+          <li>Testing charges</li>
           <li>Factory inspection fee</li>
-          <li>License fee</li>
-          <li>Annual marking fee</li>
+          <li>License and marking fee</li>
         </ul>
         <p className="text-gray-600 text-base font-geist mb-4">
-          The overall cost of BIS certification depends on product type, tank
-          capacity variants, and testing scope.
+          The total cost of BIS certification depends on:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Product complexity</li>
+          <li>Battery and charger design</li>
+          <li>Manufacturing location</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Product Sample Testing
+          Product Sample Testing (As per IS 302 Part 1:2024)
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Samples are sent to BIS-recognized laboratories for testing as per IS
-          16542:2016.
+        <p className="text-gray-600 text-base font-geist mb-3">
+          Samples are tested in BIS-recognized laboratories for:
         </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Protection against electric shock</li>
+          <li>Heating and abnormal operation</li>
+          <li>Insulation resistance</li>
+          <li>Dielectric strength</li>
+          <li>Battery safety and charging safety</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Factory Inspection & Audit
         </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          BIS officials inspect the manufacturing unit to verify:
+          BIS officers verify:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Production capability</li>
-          <li>Quality control systems</li>
-          <li>Raw material checks</li>
-          <li>Testing facilities</li>
+          <li>Manufacturing process</li>
+          <li>Quality control system</li>
+          <li>Component traceability</li>
+          <li>In-house testing facilities</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Grant of BIS License & ISI Mark
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          After successful testing and inspection, BIS grants the Bureau of
-          Indian Standards license, allowing use of the BIS Mark on certified
-          storage tanks.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Post-Certification Compliance
-        </h3>
         <p className="text-gray-600 text-base font-geist mb-3">
-          License holders must:
+          After successful testing and inspection:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Maintain ongoing compliance</li>
-          <li>Conduct routine testing</li>
-          <li>Face surveillance audits</li>
-          <li>Renew the license periodically</li>
+          <li>BIS issues the Bureau of Indian Standards License</li>
+          <li>Manufacturer is authorized to use the BIS Mark</li>
         </ul>
-
-        {/* Separator Line */}
-        <div className="h-px w-full bg-gray-300 my-6"></div>
-
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Scope of BIS License as per IS 16542:2016
-        </h2>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          This standard specifies requirements of direct insertion type storage
-          water tank of water capacity up to 500 litre for use with all glass
-          evacuated tubes solar collector. This standard covers only vented type
-          storage water tank.
-        </p>
-
-        <p className="text-gray-600 text-base font-geist mb-3">
-          The BIS license applies to storage water tanks intended for:
-        </p>
-        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Domestic solar water heating systems</li>
-          <li>Residential buildings</li>
-          <li>Commercial establishments</li>
-          <li>Institutional installations</li>
-        </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          The scope is limited strictly to tanks conforming to IS 16542:2016
-          specifications.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -464,28 +449,27 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Factory registration certificate</li>
-          <li>Manufacturing process flow</li>
+          <li>Manufacturing process flow chart</li>
           <li>List of machinery and testing equipment</li>
-          <li>Quality control plan</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Legal Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Company incorporation proof</li>
+          <li>Company incorporation certificate</li>
           <li>GST registration</li>
-          <li>Trademark authorization (if applicable)</li>
+          <li>Brand authorization (if applicable)</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Technical Documents
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Product drawings and specifications</li>
-          <li>Material details</li>
-          <li>Insulation specifications</li>
-          <li>Installation and user manual</li>
+          <li>Circuit diagrams</li>
+          <li>Component datasheets</li>
+          <li>Battery and charger specifications</li>
+          <li>User manual and labels</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
@@ -493,35 +477,36 @@ const MainContentLeft = () => {
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS application form</li>
-          <li>Test reports</li>
-          <li>Undertakings and declarations</li>
+          <li>Test request form</li>
+          <li>Declarations and undertakings</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          These collectively form the BIS CERTIFICATE DOCUMENTS.
+          These are known as BIS CERTIFICATE DOCUMENTS or BIS CERTIFICATION
+          DOCUMENTS.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Testing Requirements as per IS 16542:2016
+          Testing Requirements as per IS 302 (Part 1):2024
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-3">
           Mandatory tests include:
         </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Hydrostatic pressure test</li>
-          <li>Leakage test</li>
-          <li>Thermal performance and heat retention test</li>
-          <li>Insulation efficiency test</li>
-          <li>Corrosion resistance test</li>
-          <li>Material thickness verification</li>
+          <li>Electric shock protection test</li>
+          <li>Heating and abnormal operation test</li>
+          <li>Insulation resistance test</li>
+          <li>Dielectric strength test</li>
+          <li>Battery charging safety test</li>
+          <li>Mechanical strength and stability test</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          All testing must be conducted only in BIS-recognized laboratories.
+          Testing must be done only at BIS-recognized labs.
         </p>
 
         {/* Separator Line */}
@@ -532,28 +517,24 @@ const MainContentLeft = () => {
         </h2>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Design Non-Compliance
+          Common Problems
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>Solution:</strong> Review standard requirements before
-          production.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Failure in heating or insulation tests</li>
+          <li>Unsafe battery configuration</li>
+          <li>Incomplete documentation</li>
+          <li>Non-compliant labeling</li>
+        </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Test Failures
+          Solutions & Best Practices
         </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>Solution:</strong> Conduct pre-testing and improve insulation
-          or materials.
-        </p>
-
-        <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          Documentation Gaps
-        </h3>
-        <p className="text-gray-600 text-base font-geist mb-4">
-          <strong>Solution:</strong> Prepare and verify all documents before
-          submission.
-        </p>
+        <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
+          <li>Conduct pre-compliance testing</li>
+          <li>Use certified components</li>
+          <li>Prepare accurate technical documents</li>
+          <li>Work with experienced BIS consultants</li>
+        </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -566,53 +547,48 @@ const MainContentLeft = () => {
           Legal Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Compliance with Indian regulations</li>
-          <li>Smooth customs clearance</li>
+          <li>Compliance with Indian law</li>
+          <li>Protection from penalties</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Commercial Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Access to government and institutional tenders</li>
-          <li>Wider market acceptance</li>
+          <li>Market access across India</li>
+          <li>Acceptance on e-commerce platforms</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Branding Benefits
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Trust through BIS certification mark</li>
-          <li>Enhanced brand reputation</li>
+          <li>BIS Mark enhances trust</li>
+          <li>Higher customer confidence</li>
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
           Market Expansion
         </h3>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Entry into organized solar and renewable energy markets</li>
+          <li>Easier entry into institutional markets</li>
+          <li>Long-term brand credibility</li>
         </ul>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          Who Needs BIS Certification for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems?
+          Who Needs BIS Certification for Battery Operated Air Purifier?
         </h2>
 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Indian manufacturers</li>
           <li>Importers</li>
-          <li>Foreign manufacturers</li>
-          <li>Traders and distributors</li>
-          <li>E-commerce sellers</li>
+          <li>Foreign manufacturers (with AIR)</li>
+          <li>Traders and brand owners</li>
+          <li>Online sellers and marketplaces</li>
         </ul>
-
-        <p className="text-gray-600 text-base font-geist mb-4">
-          Anyone placing the product on the Indian market must ensure BIS
-          compliance.
-        </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
@@ -621,19 +597,21 @@ const MainContentLeft = () => {
           Why Choose Us for BIS Certification Consulting?
         </h2>
 
-        <p className="text-gray-600 text-base font-geist mb-3">We provide:</p>
-
+        <p className="text-gray-600 text-base font-geist mb-3">
+          We offer end-to-end BIS certification services, including:
+        </p>
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
-          <li>Complete BIS certification support</li>
-          <li>Standard identification and applicability check</li>
-          <li>Documentation and application filing</li>
-          <li>Testing and audit coordination</li>
-          <li>Post-license compliance support</li>
+          <li>Applicability assessment</li>
+          <li>Documentation preparation</li>
+          <li>Lab testing coordination</li>
+          <li>Factory inspection support</li>
+          <li>Faster approvals</li>
+          <li>Post-certification compliance</li>
         </ul>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Our expertise ensures faster approvals, reduced cost, and zero
-          compliance risk.
+          Our expertise in electrical and electronic appliances ensures a smooth
+          and compliant certification journey.
         </p>
 
         {/* Separator Line */}
@@ -644,159 +622,164 @@ const MainContentLeft = () => {
         </h2>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Obtaining a BIS Certificate for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems under IS 16542:2016 is a
-          critical requirement for legally selling and distributing these
-          products in India. Beyond compliance, BIS Certification for Storage
-          Water Tank for All Glass Evacuated Tubes Solar Water Heating Systems
-          ensures safety, durability, and performance—key factors for long-term
-          success in the solar energy market.
+          Obtaining a BIS Certificate for Battery Operated Air Purifier under IS
+          302 (Part 1):2024 is not just a regulatory formality—it is a critical
+          safety and market requirement. BIS Certification for Battery Operated
+          Air Purifier ensures electrical safety, battery reliability, and
+          consumer protection, while the BIS License for Battery Operated Air
+          Purifier strengthens brand credibility and legal standing.
         </p>
 
         <p className="text-gray-600 text-base font-geist mb-4">
-          Manufacturers and importers who secure a BIS License / BIS Licence for
-          Storage Water Tank for All Glass Evacuated Tubes Solar Water Heating
-          Systems not only avoid legal risks but also gain trust, credibility,
-          and competitive advantage. Timely certification, proper documentation,
-          and expert guidance can make the entire BIS certification process
-          smooth and efficient.
+          For manufacturers and importers, timely compliance prevents penalties,
+          enables smooth market entry, and builds long-term trust. With expert
+          guidance and structured compliance support, the BIS certification
+          process becomes efficient, predictable, and fully aligned with Indian
+          Standards.
         </p>
 
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
         <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
-          FAQs – BIS Certification for Storage Water Tank for All Glass
-          Evacuated Tubes Solar Water Heating Systems
+          FAQs – BIS Certification for Battery Operated Air Purifier
         </h2>
 
         <div className="space-y-4 mb-4">
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q1. Is BIS certification mandatory for battery operated air
+              purifiers?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q1. Is BIS certification mandatory for storage water tanks used
-                in solar systems?
-              </strong>
-              <br />
-              Yes, BIS certification under IS 16542:2016 is mandatory.
+              Yes, it is mandatory under IS 302 (Part 1):2024.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q2. What is the BIS certificate full form?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q2. What is the BIS full form?</strong>
-              <br />
-              Bureau of Indian Standards.
+              Bureau of Indian Standards Certificate.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q3. How long does BIS certification take?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q3. Can I import storage water tanks without BIS certification?
-              </strong>
-              <br />
-              No, uncertified imports are prohibited.
+              Typically 6–8 weeks for Indian manufacturers and 12-16 weeks for
+              foreign manufacturers.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q4. What is the BIS certificate cost?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q4. What is the BIS certificate cost?</strong>
-              <br />
-              Cost varies based on testing and factory size.
+              It depends on testing and product complexity.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q5. Can importers apply for BIS certification?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q5. How long does BIS certification take?</strong>
-              <br />
-              Typically 6–10 weeks.
+              Yes, with proper authorization.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q6. Is ISI Mark mandatory?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q6. Is the BIS mark compulsory?</strong>
-              <br />
-              Yes, ISI marking is mandatory after certification.
+              Yes, after certification.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q7. Are battery safety tests included?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q7. Can multiple tank sizes be covered under one license?
-              </strong>
-              <br />
-              Yes, subject to technical similarity.
+              Yes, battery and charging safety are mandatory.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q8. Is factory inspection compulsory?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q8. Are solar tank accessories also covered?</strong>
-              <br />
-              Only storage tanks covered under IS 16542:2016.
+              Yes, for grant of license.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q9. Can multiple models be covered?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q9. Is factory inspection mandatory?</strong>
-              <br />
-              Yes, BIS conducts factory audits.
+              Yes, subject to testing approval.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q10. Is online application required?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q10. Can startups apply for BIS certification?</strong>
-              <br />
-              Yes, if manufacturing setup complies.
+              Yes, BIS apply online is mandatory.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q11. Can foreign brands get BIS certification?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q11. Does BIS certification need renewal?</strong>
-              <br />
-              Yes, periodic renewal is required.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q12. What happens if testing fails?</strong>
-              <br />
-              Product redesign and retesting are required.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q13. Are BIS-recognized labs mandatory?</strong>
-              <br />
-              Yes, only BIS-approved labs are accepted.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>Q14. Can foreign manufacturers apply directly?</strong>
-              <br />
               Yes, through an Authorized Indian Representative.
             </p>
           </div>
 
           <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q12. What happens if BIS rules are violated?
+            </h3>
             <p className="text-gray-600 text-base font-geist mb-2">
-              <strong>
-                Q15. What does BIS certification mean for consumers?
-              </strong>
-              <br />
-              It ensures safety, quality, and reliability.
+              Penalties, seizure, and legal action.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q13. Does BIS certification improve sales?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, it significantly boosts trust.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q14. Is renewal required?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, periodic renewal is mandatory.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
+              Q15. Can consultants speed up approval?
+            </h3>
+            <p className="text-gray-600 text-base font-geist mb-2">
+              Yes, experienced consultants reduce delays.
             </p>
           </div>
         </div>
