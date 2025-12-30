@@ -371,7 +371,7 @@ const MainContentLeft = () => {
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>Application fee</li>
           <li>Product testing charges</li>
-          <li>Factory inspection fee</li>
+          <li>Factory inspection fee</li> 
           <li>License fee</li>
           <li>Annual marking fee</li>
         </ul>
