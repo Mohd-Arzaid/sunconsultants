@@ -489,8 +489,8 @@ const MainContentLeft = () => {
         </ul>
 
         <h3 className="text-lg font-geist font-medium text-[#1e1e1e] mb-2">
-          BIS Application Documents
-        </h3>
+          BIS Application Documents 
+        </h3> 
         <ul className="list-disc ml-6 mb-4 space-y-2 text-gray-600 text-base font-geist">
           <li>BIS application form</li>
           <li>Test reports</li>

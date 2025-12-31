@@ -66,7 +66,7 @@ const FaqAuthorEng = ({ questionNumber = 1 }) => {
             <div className="pt-2 space-y-2">
               <div className="flex flex-col sm:flex-row gap-2">
                 <a
-                  href="https://www.linkedin.com/in/dhruv-aggarwal-44b116155"
+                  href="https://www.linkedin.com/company/sun-certifications-india/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 p-3 bg-gradient-to-r from-[#0077B5]/5 to-[#0077B5]/10 hover:from-[#0077B5]/10 hover:to-[#0077B5]/15 rounded-lg border border-[#0077B5]/10 hover:border-[#0077B5]/20 transition-all duration-200"
