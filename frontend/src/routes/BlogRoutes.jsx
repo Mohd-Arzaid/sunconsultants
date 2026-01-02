@@ -54,7 +54,10 @@ const VietnamBlog = lazy(() => import("@/blogs/VietnamBlog/VietnamBlog"));
 
 // BIS Certification Products Blogs
 const BISCertificateForBunkBeds = lazy(() =>
-  import("@/blogs/BISCertificateForBunkBeds")
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBeds")
+);
+const BISCertificateForBunkBedsJapanese = lazy(() =>
+  import("@/blogs/BISCertificateForBunkBeds/BISCertificateForBunkBedsJapanese")
 );
 const BISCertificateForBeds = lazy(() =>
   import("@/blogs/BISCertificateForBeds")
@@ -442,6 +445,16 @@ export const BlogRoutes = () => {
       />
 
       {/* BIS Certification Products Blogs */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
+      {/* Bunk beds page start */}
       <Route
         path="/blogs/isi-products/bunk-beds-is-17636"
         element={
@@ -450,6 +463,25 @@ export const BlogRoutes = () => {
           </Suspense>
         }
       />
+      <Route
+        path="/blogs/isi-products/nidan-beddo-is-17636"
+        element={
+          <Suspense fallback={<BlogsSkeleton />}>
+            <BISCertificateForBunkBedsJapanese />
+          </Suspense>
+        }
+      />
+
+      {/* Bunk beds page Pages End */}
+
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+      {/* ==================================================================== */}
+
       <Route
         path="/blogs/isi-products/beds-is-17635"
         element={
