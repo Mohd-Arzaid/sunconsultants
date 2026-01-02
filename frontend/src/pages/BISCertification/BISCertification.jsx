@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useLayoutEffect, useRef, useMemo } from "react";
+import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import {
   Accordion,
@@ -74,6 +75,11 @@ const BISCertificationMetaTags = () => {
   const author = "Sun Certifications India";
   const publisher =
     "Dhruv Aggarwal, Head of Operations at Sun Certification India";
+
+  // Set title immediately when component mounts (synchronously, before browser paints)
+  useLayoutEffect(() => {
+    document.title = title;
+  }, [title]);
 
   return (
     <Helmet>
@@ -700,9 +706,9 @@ const OverviewSection = () => {
         electronic device and is planning to sell it in the fast paced Indian
         Market. The device is unique, and safe and has also gained approvals in
         Europe. However, when the device is brought to the port in India, the
-        customs officers hold the device. The question is, "Why?" The answer is,
-        the device is supposed to have a BIS certification, which is a crucial
-        part to sell electronic products in India.
+        customs officers hold the device. The question is, &quot;Why?&quot; The
+        answer is, the device is supposed to have a BIS certification, which is
+        a crucial part to sell electronic products in India.
       </p>
 
       <p className="service-left-content-paragraph">
@@ -724,12 +730,12 @@ const OverviewSection = () => {
       </h2>
 
       <p className="service-left-content-paragraph">
-        BIS certification is India's national quality mark issued by the Bureau
-        of Indian Standards, the national certification body of India under the
-        Ministry of Consumer Affairs. BIS certification ensures that a product
-        conforms to the Indian Standards (IS) in regard to performance, safety,
-        and quality, allowing manufacturers (Indian or foreign) to use the
-        standard mark for market access, involving testing and audits.
+        BIS certification is India&apos;s national quality mark issued by the
+        Bureau of Indian Standards, the national certification body of India
+        under the Ministry of Consumer Affairs. BIS certification ensures that a
+        product conforms to the Indian Standards (IS) in regard to performance,
+        safety, and quality, allowing manufacturers (Indian or foreign) to use
+        the standard mark for market access, involving testing and audits.
       </p>
 
       <p className="service-left-content-paragraph">
@@ -1016,10 +1022,10 @@ const ConclusionSection = () => {
         India is one of the biggest growing economies in the world and gaining
         access to sell there can help an exporter grow. No matter if you are a
         manufacturer in India or abroad, the BIS license is needed to
-        manufacture or sell products in the Indian market. It's required, and it
-        unlocks business prospects with India's growing population. It's an
-        investment in safety, consumer trust, brand reputation, credibility, and
-        long-term growth.
+        manufacture or sell products in the Indian market. It&apos;s required,
+        and it unlocks business prospects with India&apos;s growing population.
+        It&apos;s an investment in safety, consumer trust, brand reputation,
+        credibility, and long-term growth.
       </p>
     </div>
   );
@@ -1207,8 +1213,8 @@ const SchemesSection = () => {
         include new products and technologies and emerging safety issues. For
         manufacturers, obtaining BIS registration under CRS is an added
         advantage since it helps in regulatory compliance and it also increases
-        customer's trust, company's reputation, and market access in the
-        electronics industry in India.
+        customer&apos;s trust, company&apos;s reputation, and market access in
+        the electronics industry in India.
       </p>
 
       <h3 className="service-left-content-heading-three">Hallmarking Scheme</h3>
@@ -1272,7 +1278,7 @@ const SchemesSection = () => {
         protective consumers and sustainability-oriented businesses. Eco Mark
         helps for the industry to trust and adopt green practices and for the
         consumers to trust that the products they buy are safe and
-        environmentally responsible. Eco Mark supports India's vision for
+        environmentally responsible. Eco Mark supports India&apos;s vision for
         enhanced quality protection with environmental protection under BIS.
       </p>
 
@@ -1296,15 +1302,15 @@ const SchemesSection = () => {
 
       <p className="service-left-content-paragraph">
         BIS is the national standards body of India and is the certifying body
-        for the enhancement of the organization's reputation and credibility
-        domestically and outside India. MSCS besides fostering accountability
-        through periodic supervision and recertification also frees up a
-        business to actively support public led programs like Make in India and
-        Atmanirbhar Bharat. Besides legal obligation, the scheme also helps in
-        cultivating a culture of integrity, efficiency and fair trading. MSCS
-        encourages the trade and investment by the certified companies and BIS
-        plays a crucial part in the development of the quality ecosystem of the
-        country.
+        for the enhancement of the organization&apos;s reputation and
+        credibility domestically and outside India. MSCS besides fostering
+        accountability through periodic supervision and recertification also
+        frees up a business to actively support public led programs like Make in
+        India and Atmanirbhar Bharat. Besides legal obligation, the scheme also
+        helps in cultivating a culture of integrity, efficiency and fair
+        trading. MSCS encourages the trade and investment by the certified
+        companies and BIS plays a crucial part in the development of the quality
+        ecosystem of the country.
       </p>
 
       <h3 className="service-left-content-heading-three">
@@ -1329,9 +1335,9 @@ const SchemesSection = () => {
       </p>
 
       <p className="service-left-content-paragraph">
-        The LRS is empowering India's assurance systems by maintaining equity in
-        testing outcomes and ensuring that all outcomes are consistent and
-        globally benchmarked, while accrediting only reliable and sound
+        The LRS is empowering India&apos;s assurance systems by maintaining
+        equity in testing outcomes and ensuring that all outcomes are consistent
+        and globally benchmarked, while accrediting only reliable and sound
         laboratories. To uphold integrity and transparency, BIS performs regular
         audits, proficiency tests, and surveillance of recognized schematic
         labs. Recognition of this certification enables BIS to improve trust
@@ -1530,7 +1536,7 @@ const BISCertificationFaq = () => {
         </h2>
 
         <p className="text-[#52525b] text-center text-[16px] md:text-[20px] font-geist">
-          Can't find the answer you are looking for?{" "}
+          Can&apos;t find the answer you are looking for?{" "}
           <a
             href="/contact"
             className="text-[#27272a] font-geist text-[20px] font-medium underline underline-offset-4 hover:text-[#1A8781] transition-colors"
@@ -1673,8 +1679,6 @@ const LanguageSelector = () => {
     },
   ];
 
-  const currentLanguage = languages.find((lang) => lang.path === currentPath);
-
   return (
     <div className=" bg-white">
       <div className="max-w-[88rem] mx-auto px-4 py-8 md:p-12">
@@ -1740,7 +1744,7 @@ const BISCertificationServices = () => {
             <div className="hidden md:flex items-center w-[608.46px] gap-3 h-[35px] mx-auto justify-center">
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
               <span className="uppercase font-poppins font-semibold text-[20px] text-[#008080]">
-                India's Best Certificate Consultant
+                India&apos;s Best Certificate Consultant
               </span>
               <Separator className="w-[94.46px] h-[2px] bg-[#008080]" />
             </div>
@@ -1889,7 +1893,7 @@ const BISCertificationServices = () => {
   );
 };
 
-const PointsListWithoutHeading = ({ points, linkMap }) => {
+const PointsListWithoutHeading = ({ points = [], linkMap = {} }) => {
   return (
     <div className="mt-[18px] md:mt-[18px]">
       <ul className="flex flex-col gap-3 list-none">
@@ -1915,4 +1919,9 @@ const PointsListWithoutHeading = ({ points, linkMap }) => {
       </ul>
     </div>
   );
+};
+
+PointsListWithoutHeading.propTypes = {
+  points: PropTypes.arrayOf(PropTypes.string).isRequired,
+  linkMap: PropTypes.object,
 };
