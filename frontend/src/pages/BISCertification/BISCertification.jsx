@@ -686,7 +686,7 @@ const OverviewSection = () => {
       </div>
       <h1 className="service-left-content-heading-two">
       BIS Certification in India | Complete Guide 
-ye daal do
+
       </h1>
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">
