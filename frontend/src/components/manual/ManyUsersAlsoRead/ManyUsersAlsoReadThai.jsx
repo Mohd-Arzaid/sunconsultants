@@ -1,27 +1,27 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
-const ManyUsersAlsoRead = () => {
+const ManyUsersAlsoReadThai = () => {
   const links = [
     {
-      title: "BIS Certification Complete Guide",
-      path: "/what-is-bis-certificate-indian-bis",
+      title: "คู่มือการรับรอง BIS แบบสมบูรณ์",
+      path: "/th/bis-certificate-khue-a-rai-bis-india",
     },
     {
-      title: "BIS Certification for Foreign Manufacturers",
-      path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+      title: "การรับรอง BIS สำหรับผู้ผลิตต่างประเทศ",
+      path: "/th/khumanam-kanraprong-bis-samrab-puuphlit-thangchat-bis-india",
     },
     {
-      title: "BIS Certification for Indian Manufacturers",
-      path: "/a-guide-to-bis-certification-indian-bis",
+      title: "การรับรอง BIS สำหรับผู้ผลิตอินเดีย",
+      path: "/th/bis-isi-mark-raprong",
     },
     {
-      title: "Scheme X Certification",
-      path: "/indian-bis-certification-under-scheme-x",
+      title: "การรับรองสคีม X",
+      path: "/th/bis-prathiap-india-taem-dai-tae-skema-x",
     },
     {
-      title: "CRS Registration",
-      path: "/what-is-crs-bis-or-crs-registration",
+      title: "การลงทะเบียน CRS",
+      path: "/th/crs-bis-khue-a-rai-rab-phit-thab-crs",
     },
   ];
 
@@ -29,7 +29,7 @@ const ManyUsersAlsoRead = () => {
     <div className="mt-8 mb-6">
       <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
         <h3 className="text-lg md:text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          Many of our users also read
+          ผู้ใช้หลายคนของเราก็อ่านเช่นกัน
         </h3>
         <div className="space-y-3">
           {links.map((link, index) => (
@@ -50,4 +50,4 @@ const ManyUsersAlsoRead = () => {
   );
 };
 
-export default ManyUsersAlsoRead;
+export default ManyUsersAlsoReadThai;

@@ -1,27 +1,27 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
-const ManyUsersAlsoRead = () => {
+const ManyUsersAlsoReadDutch = () => {
   const links = [
     {
-      title: "BIS Certification Complete Guide",
-      path: "/what-is-bis-certificate-indian-bis",
+      title: "Volledige gids voor BIS-certificering",
+      path: "/nl/wat-is-het-bis-certificaat-indiaas-bis",
     },
     {
-      title: "BIS Certification for Foreign Manufacturers",
-      path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
+      title: "BIS-certificering voor buitenlandse fabrikanten",
+      path: "/nl/gids-voor-bis-certificering-voor-buitenlandse-fabrikanten-indiaas-bis",
     },
     {
-      title: "BIS Certification for Indian Manufacturers",
-      path: "/a-guide-to-bis-certification-indian-bis",
+      title: "BIS-certificering voor Indiase fabrikanten",
+      path: "/nl/bis-isi-mark-certificering",
     },
     {
-      title: "Scheme X Certification",
-      path: "/indian-bis-certification-under-scheme-x",
+      title: "Schema X Certificering",
+      path: "/nl/indiaas-bis-certificaat-volgens-schema-x",
     },
     {
-      title: "CRS Registration",
-      path: "/what-is-crs-bis-or-crs-registration",
+      title: "CRS-registratie",
+      path: "/nl/wat-is-crs-bis-of-crs-registratie",
     },
   ];
 
@@ -29,7 +29,7 @@ const ManyUsersAlsoRead = () => {
     <div className="mt-8 mb-6">
       <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
         <h3 className="text-lg md:text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          Many of our users also read
+          Veel van onze gebruikers lezen ook
         </h3>
         <div className="space-y-3">
           {links.map((link, index) => (
@@ -50,4 +50,4 @@ const ManyUsersAlsoRead = () => {
   );
 };
 
-export default ManyUsersAlsoRead;
+export default ManyUsersAlsoReadDutch;

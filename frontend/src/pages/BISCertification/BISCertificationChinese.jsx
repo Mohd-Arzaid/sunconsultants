@@ -674,7 +674,8 @@ const OverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
       <h1 className="service-left-content-heading-two">
-        面向印度制造商的BIS ISI标志认证
+      印度BIS认证 | 完整指南 
+
       </h1>
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">

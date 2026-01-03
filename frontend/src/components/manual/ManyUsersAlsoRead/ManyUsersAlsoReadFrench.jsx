@@ -1,26 +1,26 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
-const ManyUsersAlsoRead = () => {
+const ManyUsersAlsoReadFrench = () => {
   const links = [
     {
-      title: "BIS Certification Complete Guide",
+      title: "Guide complet de certification BIS",
       path: "/what-is-bis-certificate-indian-bis",
     },
     {
-      title: "BIS Certification for Foreign Manufacturers",
+      title: "Certification BIS pour les fabricants étrangers",
       path: "/a-guide-to-bis-certification-for-foreign-manufacturers-indian-bis",
     },
     {
-      title: "BIS Certification for Indian Manufacturers",
+      title: "Certification BIS pour les fabricants indiens",
       path: "/a-guide-to-bis-certification-indian-bis",
     },
     {
-      title: "Scheme X Certification",
+      title: "Certification Scheme X",
       path: "/indian-bis-certification-under-scheme-x",
     },
     {
-      title: "CRS Registration",
+      title: "Enregistrement CRS",
       path: "/what-is-crs-bis-or-crs-registration",
     },
   ];
@@ -29,7 +29,7 @@ const ManyUsersAlsoRead = () => {
     <div className="mt-8 mb-6">
       <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
         <h3 className="text-lg md:text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
-          Many of our users also read
+          Beaucoup de nos utilisateurs lisent également
         </h3>
         <div className="space-y-3">
           {links.map((link, index) => (
@@ -50,4 +50,4 @@ const ManyUsersAlsoRead = () => {
   );
 };
 
-export default ManyUsersAlsoRead;
+export default ManyUsersAlsoReadFrench;

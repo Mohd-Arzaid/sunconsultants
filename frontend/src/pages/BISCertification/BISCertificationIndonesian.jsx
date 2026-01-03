@@ -678,7 +678,8 @@ const OverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
       <h1 className="service-left-content-heading-two">
-        Sertifikasi BIS Tanda ISI untuk Produsen India
+      Sertifikasi BIS di India | Panduan Lengkap 
+
       </h1>
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">

@@ -679,7 +679,8 @@ const OverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
       <h1 className="service-left-content-heading-two">
-        Chứng nhận Dấu BIS ISI cho Nhà sản xuất Ấn Độ
+      Chứng nhận BIS tại Ấn Độ | Hướng dẫn Hoàn chỉnh 
+
       </h1>
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">

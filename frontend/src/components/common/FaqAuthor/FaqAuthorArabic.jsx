@@ -1,6 +1,7 @@
 import { Mail, Linkedin } from "lucide-react";
+import PropTypes from "prop-types";
 
-const FaqAuthorEng = ({ questionNumber = 1 }) => {
+const FaqAuthorArabic = ({ questionNumber = 1 }) => {
   // Calculate which point to show based on rotation: (questionNumber - 1) % 5
   // Q1 -> 0 (point 1), Q2 -> 1 (point 2), Q3 -> 2 (point 3), Q4 -> 3 (point 4), Q5 -> 4 (point 5)
   // Q6 -> 0 (point 1), Q7 -> 1 (point 2), etc.
@@ -9,29 +10,29 @@ const FaqAuthorEng = ({ questionNumber = 1 }) => {
   // Define all 5 review points
   const reviewPoints = [
     {
-      title: "This response is reviewed by:",
+      title: "تمت مراجعة هذه الإجابة بواسطة:",
       content:
-        "Our Principal Regulatory Consultant, a former BIS Deputy Director General (Standardization). With over 30 years of service, he specializes in interpreting the Bureau of Indian Standards Act and simplifying complex certification workflows for Indian manufacturers.",
+        "استشارينا التنظيمي الرئيسي، نائب المدير العام السابق لـ BIS (التوحيد القياسي). مع أكثر من 30 عامًا من الخدمة، يتخصص في تفسير قانون مكتب المعايير الهندية وتبسيط سير عمل الشهادات المعقدة للمصنعين الهنود.",
     },
     {
-      title: "Technical Review By:",
+      title: "المراجعة التقنية بواسطة:",
       content:
-        "Our Senior Lead Auditor (Certification), a former BIS Scientist 'E' who served as the Head of Certification for the Northern Region. He has overseen 1,500+ factory inspections and advises on preventing common non-conformities during the application stage.",
+        "مدققنا الرئيسي الأول (الشهادات)، عالم BIS السابق 'E' الذي شغل منصب رئيس الشهادات للمنطقة الشمالية. أشرف على أكثر من 1500 فحص للمصانع وينصح بمنع عدم المطابقة الشائعة خلال مرحلة التطبيق.",
     },
     {
-      title: "Compliance Review:",
+      title: "مراجعة الامتثال:",
       content:
-        "This import compliance overview was reviewed by our Director of Foreign Trade Compliance, a former Senior BIS Officer (FMCS Dept). His expertise lies in navigating the Foreign Manufacturers Certification Scheme and resolving customs clearance hurdles for imported goods.",
+        "تمت مراجعة نظرة عامة على امتثال الاستيراد هذه من قبل مدير امتثال التجارة الخارجية لدينا، ضابط BIS الأول السابق (قسم FMCS). تكمن خبرته في التنقل في مخطط شهادة المصنعين الأجانب وحل عقبات التخليص الجمركي للبضائع المستوردة.",
     },
     {
-      title: "Regulatory Oversight:",
+      title: "الإشراف التنظيمي:",
       content:
-        "This compliance advisory was vetted by our Senior Consultant (Enforcement & Vigilance), a former BIS Director (Enforcement). He specializes in post-certification compliance, helping companies navigate surveillance audits and legal adherence to BIS mandates.",
+        "تم فحص هذه الاستشارة للامتثال من قبل استشاري الأول لدينا (الإنفاذ واليقظة)، مدير BIS السابق (الإنفاذ). يتخصص في امتثال ما بعد الشهادة، ومساعدة الشركات على التنقل في عمليات تدقيق المراقبة والالتزام القانوني بتوجيهات BIS.",
     },
     {
-      title: "Scrutinised by:",
+      title: "تم التدقيق بواسطة:",
       content:
-        "This documentation guide was reviewed by our Lead Application Specialist, a former BIS Section Head (Licensing & Scrutiny). With experience processing over 5,000 application files, he ensures that client submissions meet the strict administrative criteria to prevent rejection during the initial scrutiny stage.",
+        "تمت مراجعة دليل التوثيق هذا من قبل أخصائي التطبيقات الرئيسي لدينا، رئيس قسم BIS السابق (الترخيص والتدقيق). مع خبرة في معالجة أكثر من 5000 ملف تطبيق، يضمن أن تقديمات العملاء تلبي المعايير الإدارية الصارمة لمنع الرفض خلال مرحلة التدقيق الأولية.",
     },
   ];
 
@@ -73,8 +74,7 @@ const FaqAuthorEng = ({ questionNumber = 1 }) => {
                 >
                   <Linkedin className="w-4 h-4 text-[#0077B5]" />
                   <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                    <span className="font-medium">LinkedIn:</span> Connect with
-                    me
+                    <span className="font-medium">LinkedIn:</span> تواصل معي
                   </span>
                 </a>
 
@@ -84,7 +84,7 @@ const FaqAuthorEng = ({ questionNumber = 1 }) => {
                 >
                   <Mail className="w-4 h-4 text-[#1A8781]" />
                   <span className="font-geist text-[14px] md:text-[18px] text-[#42434d]">
-                    <span className="font-medium">Contact:</span>{" "}
+                    <span className="font-medium">اتصل:</span>{" "}
                     admin@bis-certifications.com
                   </span>
                 </a>
@@ -97,4 +97,8 @@ const FaqAuthorEng = ({ questionNumber = 1 }) => {
   );
 };
 
-export default FaqAuthorEng;
+FaqAuthorArabic.propTypes = {
+  questionNumber: PropTypes.number,
+};
+
+export default FaqAuthorArabic;

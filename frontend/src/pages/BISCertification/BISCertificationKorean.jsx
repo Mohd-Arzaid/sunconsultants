@@ -676,7 +676,8 @@ const OverviewSection = () => {
         <Separator className="service-left-content-separator" />
       </div>
       <h1 className="service-left-content-heading-two">
-        인도 제조업체를 위한 BIS ISI 마크 인증
+      인도 BIS 인증 | 완전한 가이드 
+
       </h1>
 
       <div className="flex justify-center mt-[20px] md:mt-[26px]">

@@ -1,5 +1,3 @@
-import FaqAuthorEng from "@/components/common/FaqAuthorEng";
-import ManyUsersAlsoRead from "@/components/manual/ManyUsersAlsoRead/ManyUsersAlsoRead";
 import ServicesRightSideContentJapanese from "@/components/manual/ServicesRightSideContent/ServicesRightSideContentJapanese";
 import {
   Breadcrumb,
@@ -15,7 +13,7 @@ import { Link } from "react-router-dom";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Separator } from "@/components/ui/separator";
 import VideoSection from "@/components/manual/home-page-sections/VideoSection";
-import FooterEng from "@/components/manual/Footer/FooterEng";
+import FooterJapanese from "@/components/manual/Footer/FooterJapanese";
 import {
   Table,
   TableBody,
@@ -24,6 +22,8 @@ import {
   TableRow,
   TableHead,
 } from "@/components/ui/table";
+import FaqAuthorJapanese from "../../components/common/FaqAuthor/FaqAuthorJapanese";
+import ManyUsersAlsoReadJapanese from "../../components/manual/ManyUsersAlsoRead/ManyUsersAlsoReadJapanese";
 
 const BISCertificateForBunkBedsJapanese = () => {
   return (
@@ -31,9 +31,9 @@ const BISCertificateForBunkBedsJapanese = () => {
       <MetaTags />
       <BreadcrumbContent />
       <MainContent />
-      <Services />
+      <ServicesJapanese />
       <VideoSection />
-      <FooterEng/>
+      <FooterJapanese />
     </div>
   );
 };
@@ -169,7 +169,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           BIS認証とは何ですか？
         </h2>
 
@@ -206,7 +206,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           二段ベッドに適用されるBIS規格は？（IS 17636:2022）
         </h2>
 
@@ -242,7 +242,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           二段ベッドにBIS認証が必要な理由
         </h2>
 
@@ -280,7 +280,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           二段ベッドのBIS認証プロセス（ステップバイステップ）（IS 17636:2022）
         </h2>
 
@@ -411,7 +411,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           二段ベッドのBISライセンスの範囲
         </h2>
 
@@ -428,7 +428,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           二段ベッドのBIS認証に必要な書類
         </h2>
 
@@ -487,7 +487,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           二段ベッドのテスト要件（IS 17636:2022）
         </h2>
 
@@ -595,7 +595,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           一般的な課題と回避方法
         </h2>
 
@@ -634,7 +634,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           製造業者と輸入業者にとってのBIS認証のメリット
         </h2>
 
@@ -653,7 +653,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           非準拠に対する罰則
         </h2>
 
@@ -677,7 +677,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           二段ベッドのBIS認証が必要なのは誰ですか？
         </h2>
 
@@ -702,7 +702,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           BIS認証コンサルティングで私たちを選ぶ理由
         </h2>
 
@@ -728,7 +728,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           よくある質問 — 二段ベッドのBIS認証
         </h2>
 
@@ -858,7 +858,7 @@ const MainContentLeft = () => {
         {/* Separator Line */}
         <div className="h-px w-full bg-gray-300 my-6"></div>
 
-        <h2 className="text-xl font-geist font-medium text-[#1e1e1e] mb-4">
+        <h2 className="text-xl font-geist font-semibold text-[#1e1e1e] mb-4">
           結論
         </h2>
 
@@ -871,15 +871,15 @@ const MainContentLeft = () => {
           製造業者、輸入業者、またはブランド所有者であるかどうかにかかわらず、BIS認証を取得することで、市場での地位を強化し、顧客の信頼を高め、新しいビジネス機会を開くことができます。私たちの専門コンサルティングチームは、二段ベッドのエンドツーエンドのBIS認証をサポートする準備ができています。
         </p>
 
-        <ManyUsersAlsoRead />
+        <ManyUsersAlsoReadJapanese />
 
-        <FaqAuthorEng questionNumber={5} />
+        <FaqAuthorJapanese questionNumber={5} />
       </div>
     </div>
   );
 };
 
-const Services = () => {
+const ServicesJapanese = () => {
   return (
     <div className="pt-6 md:pt-8 pb-12  md:pb-16  overflow-x-hidden ">
       <div className="max-w-[80rem] w-full mx-auto">
@@ -909,13 +909,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="BISロゴ"
+                title="BISロゴ"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Mark (ISI License) for Foreign Manufacture
+              外国製造業者向けBISマーク（ISIライセンス）
             </p>
           </Link>
 
@@ -926,13 +926,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/CDSCO.jpg"
-                alt="CDSCO Logo"
-                title="CDSCO Logo"
+                alt="CDSCOロゴ"
+                title="CDSCOロゴ"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              CDSCO Registration Certification
+              CDSCO登録認証
             </p>
           </Link>
 
@@ -943,13 +943,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BISCRS.jpg"
-                alt="BISCRS logo"
-                title="BISCRS logo"
+                alt="BISCRSロゴ"
+                title="BISCRSロゴ"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS (CRS) Registration
+              BIS（CRS）登録
             </p>
           </Link>
 
@@ -960,13 +960,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/PlasticWasteManagement.jpg"
-                alt="PlasticWasteManagement"
-                title="PlasticWasteManagement"
+                alt="プラスチック廃棄物管理"
+                title="プラスチック廃棄物管理"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              Plastic Waste Management
+              プラスチック廃棄物管理
             </p>
           </Link>
 
@@ -977,13 +977,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/EPRCertificate.jpg"
-                alt="EPRCertificate logo"
-                title="EPRCertificate logo"
+                alt="EPR証明書ロゴ"
+                title="EPR証明書ロゴ"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              EPR Certificate certifications
+              EPR証明書認証
             </p>
           </Link>
 
@@ -994,13 +994,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/LMPC.jpg"
-                alt="LMPC logo"
-                title="LMPC logo"
+                alt="LMPCロゴ"
+                title="LMPCロゴ"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              LMPC Certificate certifications
+              LMPC証明書認証
             </p>
           </Link>
 
@@ -1011,13 +1011,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/BIS.jpg"
-                alt="BIS Logo"
-                title="BIS Logo"
+                alt="BISロゴ"
+                title="BISロゴ"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              BIS Registration Certificate
+              BIS登録証明書
             </p>
           </Link>
 
@@ -1028,13 +1028,13 @@ const Services = () => {
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <img
                 src="/services-images/ISIMark.jpg"
-                alt="ISIMark logo"
-                title="ISIMark logo"
+                alt="ISIマークロゴ"
+                title="ISIマークロゴ"
                 className="w-[75px] h-[75px] md:w-[130px] md:h-[130px] rounded-full object-contain"
               />
             </div>
             <p className="text-sm md:text-xl w-full mt-8 md:mt-28 px-3 md:px-0 text-center font-geist md:font-roboto tracking-wide font-semibold text-black leading-tight md:leading-normal">
-              ISI MARK (BIS) for Indian Manufactures
+              インド製造業者向けISIマーク（BIS）
             </p>
           </Link>
         </div>
